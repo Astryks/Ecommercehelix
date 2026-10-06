@@ -18,6 +18,7 @@ model User {
   createdAt      DateTime           @default(now())
   track          String             @default("growing") // "starting" | "growing"
   country        String             @default("AU") // "AU" | "US", drives the calendar
+  salesTaxMode   String             @default("auto") // "auto" | "AU" | "NZ" | "UK" | "none": strip GST/VAT from sales
   onboardedAt    DateTime?
   isDemo         Boolean            @default(false) // created by the demo login; never linked to a real account
   accounts       Account[]

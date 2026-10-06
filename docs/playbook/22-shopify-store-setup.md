@@ -211,7 +211,7 @@ Surprise shipping costs are one of the main reasons people leave at checkout. Ma
 1. You must register for GST within 21 days of your GST turnover reaching $75,000 or more (this month plus the previous 11 months), or if you expect to reach it in the next 12 months. You can register earlier if you choose. See [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst).
 2. Prices shown to Australian shoppers should include GST once you are registered. In Shopify, open Settings, then Taxes and duties, and turn on "Include sales tax in product price and shipping rate". See [Shopify: taxes in Australia](https://help.shopify.com/en/manual/taxes/australia).
 3. If you are not registered, do not charge GST and do not call your invoices tax invoices.
-4. GST you collect belongs to the ATO, not you. When you type sales into Helix, use the amount without GST (Shopify's Gross sales and Net sales leave tax out; Total sales includes it). Helix treats every number you enter as before tax.
+4. GST you collect belongs to the ATO, not you. Helix takes it out for you: in Helix Settings, "My prices include GST/VAT" is on by default for Australian stores, so the sales you type (for example Shopify's Total sales, which includes tax) are divided by 1.1 before any profit maths. If you copy Shopify's Gross sales or Net sales reports instead, which already leave tax out, or you are not registered, switch it to "No". New Zealand (15%) and UK (20%) are there too.
 
 **US (sales tax):**
 

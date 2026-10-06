@@ -312,7 +312,7 @@ g.callout(3, 384, 172, 348, 196)
 save("shopify-1-yesterdays-numbers", g, [
     "In Shopify, open Analytics.",
     "Set the date to Yesterday.",
-    "Read Gross sales (before tax) and Orders. Type them into the Update yesterday box in Helix."])
+    "Read Total sales and Orders and type them into the Update yesterday box. Helix takes GST/VAT out if Settings say your prices include it. US stores: use Gross sales, which leaves sales tax out."])
 
 # ---------- Shopify 2: free shipping threshold ----------
 g = G("Set a free shipping amount", "Shopify admin", "#008060")

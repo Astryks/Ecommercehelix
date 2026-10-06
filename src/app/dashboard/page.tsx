@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ArrowRight, BarChart3, BookOpen, Boxes, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, getCompletions, getDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
+import { getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
 import { countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { costRatios, money, summarise } from "@/lib/today";
+import { taxLabel } from "@/lib/tax";
 import { termsIn } from "@/lib/glossary";
 import { guidesForDay } from "@/lib/guides";
 import { ProfitToday } from "@/components/dashboard/ProfitToday";
@@ -24,12 +25,13 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
   const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id)]);
+  const rawDays = await getRawDays(u.id);
   const today = isoDay();
   const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
   const yesterday = addDays(today, -1);
   const summary = summarise(days, yesterday, settings);
-  const yRow = days.find((d) => d.date === yesterday);
-  const r = costRatios(days);
+  const yRow = rawDays.find((d) => d.date === yesterday);
+  const r = costRatios(rawDays);
   const estimatePct = Math.round((r.cogs + r.fees + r.discounts + r.refunds) * 100);
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
@@ -130,7 +132,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
       )}
 
       <div className="mt-6">
-        <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} action={quickUpdate}
+        <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
           prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
       </div>
 

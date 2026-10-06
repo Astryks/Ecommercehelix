@@ -5,6 +5,7 @@ import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Set
 import { isoDay, addDays } from "./dates";
 import { toTrack, type TrackId } from "./tracks";
 import { toCountry, type Country } from "./seasons";
+import { dayExTax, productExTax, taxRate, toTaxMode, type SalesTaxMode } from "./tax";
 import { isDemoUserId, mayLinkByEmail } from "./demo-auth";
 import { exampleStock, exampleSuppliers, type StockItem, type Supplier } from "./stock";
 
@@ -14,7 +15,7 @@ import { exampleStock, exampleSuppliers, type StockItem, type Supplier } from ".
  *  - an in-memory store (demo mode) otherwise, so the app runs with zero keys.
  */
 
-export type Account = { userId: string; email: string; name: string; plan: PlanId; storeUrl: string | null; walletCents: number; track: TrackId; country: Country; onboarded: boolean };
+export type Account = { userId: string; email: string; name: string; plan: PlanId; storeUrl: string | null; walletCents: number; track: TrackId; country: Country; salesTaxMode: SalesTaxMode; onboarded: boolean };
 export type Completion = { taskId: string; completedOn: string };
 export type SeasonPlanRow = { planKey: string; addedOn: string };
 export type ApprovalRow = { id: string; taskId: string; title: string; detail: string; estAiCost: number; status: string; createdAt: string; decidedAt: string | null };
@@ -47,7 +48,7 @@ const toEnum = (p: PlanId) => p.toUpperCase() as "FREE" | "STARTER" | "GROWTH";
 export async function ensureUser(id: string, email: string, name: string): Promise<string> {
   if (!hasDb) {
     if (!mem.users.has(id)) {
-      mem.users.set(id, { userId: id, email, name, plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", onboarded: false });
+      mem.users.set(id, { userId: id, email, name, plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", salesTaxMode: "auto", onboarded: false });
       mem.days.set(id, exampleDays(isoDay()));
       mem.products.set(id, exampleProducts(isoDay()));
     }
@@ -67,7 +68,7 @@ export async function ensureUser(id: string, email: string, name: string): Promi
 }
 
 export async function getAccount(userId: string): Promise<Account> {
-  if (!hasDb) return mem.users.get(userId) ?? { userId, email: "", name: "", plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", onboarded: false };
+  if (!hasDb) return mem.users.get(userId) ?? { userId, email: "", name: "", plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", salesTaxMode: "auto", onboarded: false };
   const u = await prisma.user.findUnique({ where: { id: userId }, include: { subscription: true, stores: { orderBy: { createdAt: "desc" }, take: 1 } } });
   return {
     userId,
@@ -78,21 +79,23 @@ export async function getAccount(userId: string): Promise<Account> {
     walletCents: u?.subscription?.walletBalanceCents ?? 0,
     track: toTrack(u?.track),
     country: toCountry(u?.country),
+    salesTaxMode: toTaxMode(u?.salesTaxMode),
     onboarded: Boolean(u?.onboardedAt),
   };
 }
 
 /** Track and country, chosen at onboarding and changeable in Settings. */
-export async function saveProfile(userId: string, p: { track?: TrackId; country?: Country; onboarded?: boolean }) {
+export async function saveProfile(userId: string, p: { track?: TrackId; country?: Country; salesTaxMode?: SalesTaxMode; onboarded?: boolean }) {
   if (!hasDb) {
     const a = mem.users.get(userId);
     if (!a) return;
     if (p.track) a.track = p.track;
     if (p.country) a.country = p.country;
+    if (p.salesTaxMode) a.salesTaxMode = p.salesTaxMode;
     if (p.onboarded) a.onboarded = true;
     return;
   }
-  await prisma.user.update({ where: { id: userId }, data: { track: p.track, country: p.country, ...(p.onboarded ? { onboardedAt: new Date() } : {}) } });
+  await prisma.user.update({ where: { id: userId }, data: { track: p.track, country: p.country, salesTaxMode: p.salesTaxMode, ...(p.onboarded ? { onboardedAt: new Date() } : {}) } });
 }
 
 export async function setPlan(userId: string, plan: PlanId, stripe?: { customerId?: string; subscriptionId?: string; status?: string }) {
@@ -197,7 +200,24 @@ export async function saveSettings(userId: string, s: Settings) {
   await prisma.scorecardSettings.upsert({ where: { userId }, create: { userId, ...s }, update: s });
 }
 
+/** GST/VAT rate to strip from this user's sales (0 when their numbers are before tax). */
+export async function salesTaxRate(userId: string): Promise<number> {
+  if (!hasDb) {
+    const a = mem.users.get(userId);
+    return a ? taxRate(a.salesTaxMode, a.country) : 0;
+  }
+  const u = await prisma.user.findUnique({ where: { id: userId }, select: { salesTaxMode: true, country: true } });
+  return u ? taxRate(toTaxMode(u.salesTaxMode), toCountry(u.country)) : 0;
+}
+
+/** Days as used by every report: sales have GST/VAT taken out when "My prices include GST/VAT" applies. */
 export async function getDays(userId: string): Promise<DayInput[]> {
+  const [days, rate] = await Promise.all([getRawDays(userId), salesTaxRate(userId)]);
+  return rate > 0 ? days.map((d) => dayExTax(d, rate)) : days;
+}
+
+/** Days exactly as typed or imported. Use this when editing and saving, so tax is never taken out twice. */
+export async function getRawDays(userId: string): Promise<DayInput[]> {
   if (!hasDb) return [...(mem.days.get(userId) ?? [])].sort((a, b) => a.date.localeCompare(b.date));
   const rows = await prisma.scorecardDay.findMany({ where: { userId }, orderBy: { date: "asc" } });
   return rows.map((r) => {
@@ -230,9 +250,10 @@ export async function clearExampleData(userId: string) {
 }
 
 export async function getProducts(userId: string): Promise<ProductLine[]> {
-  if (!hasDb) return mem.products.get(userId) ?? [];
+  const rate = await salesTaxRate(userId);
+  if (!hasDb) return (mem.products.get(userId) ?? []).map((p) => productExTax(p, rate));
   const rows = await prisma.productSale.findMany({ where: { userId }, orderBy: { units: "desc" } });
-  return rows.map((r) => ({ date: r.date, sku: r.sku, name: r.name, units: r.units, price: r.price, unitCost: r.unitCost, example: r.example }));
+  return rows.map((r) => productExTax({ date: r.date, sku: r.sku, name: r.name, units: r.units, price: r.price, unitCost: r.unitCost, example: r.example }, rate));
 }
 
 export async function addProductLine(userId: string, p: ProductLine) {

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { BarChart3, Database, Info } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getDays, getSettings } from "@/lib/repo";
+import { getAccount, getDays, getSettings } from "@/lib/repo";
+import { taxLabel } from "@/lib/tax";
 import { getConnection } from "@/lib/meta/store";
 import { PERIODS, channels, costBreakdown, metricsFor, periodRanges, seriesFor, toPeriod } from "@/lib/analytics";
 import { metricCards } from "@/lib/metric-info";
@@ -28,6 +29,8 @@ function Panel({ title, sub, children }: { title: string; sub: string; children:
 export default async function Analytics({ searchParams }: PageProps<"/dashboard/analytics">) {
   const sp = await searchParams;
   const u = await requireUser();
+  const acct = await getAccount(u.id);
+  const taxNote = taxLabel(acct.salesTaxMode, acct.country);
   const [days, settings, conn] = await Promise.all([getDays(u.id), getSettings(u.id), getConnection(u.id)]);
   const period = toPeriod(sp.period);
   const meta = PERIODS.find((p) => p.id === period)!;
@@ -47,7 +50,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><BarChart3 className="h-7 w-7 text-cyan-600" aria-hidden /> Dashboard</h1>
-          <p className="mt-1 text-slate-600">Revenue, costs and profit, worked out for you from your daily numbers. Tap <Info className="inline h-4 w-4" aria-label="the i button" /> on any number for what it means and what good looks like.</p>
+          <p className="mt-1 text-slate-600">Revenue, costs and profit, worked out for you from your daily numbers. Tap <Info className="inline h-4 w-4" aria-label="the i button" /> on any number for what it means and what good looks like.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
         </div>
         <nav aria-label="Period" className="flex flex-col items-end gap-2">
           <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">

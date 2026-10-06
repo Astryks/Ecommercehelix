@@ -110,7 +110,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Onboarding: store link, track (Just starting or Growing), country | `/start` | Real |
 | Today: seasonal alert and prep plan, upcoming key dates, day N lesson + action for your track, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |
 | Calendar (AU and US key dates, countdowns, .ics export, subscribe links) | `/dashboard/calendar`, `/api/calendar` | Real; subscribe links need a public URL |
-| Settings (switch track and country) | `/dashboard/settings` | Real |
+| Settings (switch track and country; "My prices include GST/VAT": AU 10%, NZ 15%, UK 20% or before tax, default by country, so Helix strips tax from sales automatically) | `/dashboard/settings` | Real (`src/lib/tax.ts`, User.salesTaxMode) |
 | Seasonal nudges (weekly email and push) | `/api/cron/seasonal-nudges` | Message real; email sends only with `NUDGES_LIVE=1` and Resend keys; push is a stub |
 | Insights (proactive audit, cross-diagnosis) | `/dashboard/insights` | Rules engine real, signals EXAMPLE |
 | Approvals queue | `/dashboard/approvals` | Real; Meta paused drafts execute for real when connected |

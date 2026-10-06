@@ -163,7 +163,7 @@ D = [
  (21, "Daily numbers", "Start your 2-minute morning numbers",
   "Even with few sales, writing down yesterday's sales, orders and ad spend each morning builds the habit that later tells you what is working.",
   ["Go to Today and find the 'Update yesterday' box.",
-   "Type yesterday's sales (without GST or sales tax) and orders. Zero is fine.",
+   "Type yesterday's sales and orders as your store shows them. Zero is fine. If your prices include GST, Helix takes it out for you (Settings).",
    "Type any ad spend.",
    "Press Save. Do this every morning from now on."],
   5, "numbers", "1.6", "02", None, "Profit, every day"),

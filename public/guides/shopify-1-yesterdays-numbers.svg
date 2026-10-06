@@ -54,8 +54,11 @@
 <circle cx="896" cy="124" r="13" fill="#b8601d"/><text x="896" y="129" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
 <text x="920" y="129" font-size="14" fill="#e2e8f0">Set the date to Yesterday.</text>
 <circle cx="896" cy="161" r="13" fill="#b8601d"/><text x="896" y="166" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
-<text x="920" y="166" font-size="14" fill="#e2e8f0">Read Gross sales (before tax) and</text>
-<text x="920" y="185" font-size="14" fill="#e2e8f0">Orders. Type them into the Update</text>
-<text x="920" y="204" font-size="14" fill="#e2e8f0">yesterday box in Helix.</text>
+<text x="920" y="166" font-size="14" fill="#e2e8f0">Read Total sales and Orders and</text>
+<text x="920" y="185" font-size="14" fill="#e2e8f0">type them into the Update</text>
+<text x="920" y="204" font-size="14" fill="#e2e8f0">yesterday box. Helix takes GST/VAT</text>
+<text x="920" y="223" font-size="14" fill="#e2e8f0">out if Settings say your prices</text>
+<text x="920" y="242" font-size="14" fill="#e2e8f0">include it. US stores: use Gross</text>
+<text x="920" y="261" font-size="14" fill="#e2e8f0">sales, which leaves sales tax out.</text>
 <text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>
 <text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

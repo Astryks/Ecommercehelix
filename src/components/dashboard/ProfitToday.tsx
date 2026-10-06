@@ -9,11 +9,13 @@ type Props = {
   prefill: { revenue: number; orders: number; adMeta: number; adGoogle: number };
   metaSynced: boolean;
   estimatePct: number;
+  /** e.g. "GST (10%)" when Helix strips tax from sales; empty otherwise. */
+  taxNote?: string;
   action: (form: FormData) => Promise<void>;
 };
 
 /** Big profit number, one plain-English line, and the one quick form to update yesterday. */
-export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, action }: Props) {
+export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote, action }: Props) {
   const tone = { good: "text-emerald-600", ok: "text-slate-900", bad: "text-rose-600", empty: "text-slate-400" }[s.tone];
   const Icon = s.tone === "good" ? TrendingUp : s.tone === "bad" ? TrendingDown : null;
   return (
@@ -33,13 +35,13 @@ export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, action 
               ))}
             </dl>
           )}
-          <p className="mt-3 text-xs text-slate-500">Profit here means sales minus product cost, shipping, payment fees, discounts, refunds and ads. <Link href="/dashboard/scorecard" className="text-cyan-700 underline">See all your numbers</Link></p>
+          <p className="mt-3 text-xs text-slate-500">Profit here means sales minus product cost, shipping, payment fees, discounts, refunds and ads.{taxNote && <> Sales are shown without {taxNote}, because that tax belongs to the tax office (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>} <Link href="/dashboard/scorecard" className="text-cyan-700 underline">See all your numbers</Link></p>
         </div>
         <form action={action} className="border-t border-slate-100 bg-slate-50/70 p-6 lg:border-l lg:border-t-0">
           <p className="font-semibold">Update yesterday <span className="font-normal text-slate-500">(1 minute)</span></p>
           <input type="hidden" name="date" value={date} />
           <div className="mt-3 grid grid-cols-2 gap-3">
-            <label className="text-sm"><span className="text-slate-600">Sales ($)</span>
+            <label className="text-sm"><span className="text-slate-600">Sales ($){taxNote && <span className="ml-1 text-xs text-slate-500">incl. {taxNote.split(" ")[0]}</span>}</span>
               <input name="revenue" type="number" min="0" step="0.01" inputMode="decimal" defaultValue={prefill.revenue || ""} placeholder="0" className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-lg font-semibold" /></label>
             <label className="text-sm"><span className="text-slate-600">Orders</span>
               <input name="orders" type="number" min="0" step="1" inputMode="numeric" defaultValue={prefill.orders || ""} placeholder="0" className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-lg font-semibold" /></label>

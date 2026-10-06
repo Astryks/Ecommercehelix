@@ -404,7 +404,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. Go to Today and find the 'Update yesterday' box.
-2. Type yesterday's sales (without GST or sales tax) and orders. Zero is fine.
+2. Type yesterday's sales and orders as your store shows them. Zero is fine. If your prices include GST, Helix takes it out for you (Settings).
 3. Type any ad spend.
 4. Press Save. Do this every morning from now on.
 

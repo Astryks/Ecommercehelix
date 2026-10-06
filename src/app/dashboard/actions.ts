@@ -4,9 +4,10 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
 import {
-  completeTask, createApproval, decideApproval, getAccount, getDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
+  completeTask, createApproval, decideApproval, getAccount, getRawDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
 } from "@/lib/repo";
 import { seasonalAlerts, SEASON_TASK_ID, toCountry } from "@/lib/seasons";
+import { toTaxMode } from "@/lib/tax";
 import { toTrack } from "@/lib/tracks";
 import { isoDay } from "@/lib/dates";
 import { findActionable } from "@/lib/actionable";
@@ -110,7 +111,7 @@ export async function quickUpdate(form: FormData) {
   const date = String(form.get("date"));
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
   const n = (k: string) => Math.max(0, Number(form.get(k)) || 0);
-  const days = await getDays(u.id);
+  const days = await getRawDays(u.id);
   const merged = quickMerge(days.find((d) => d.date === date), date, { revenue: n("revenue"), orders: Math.round(n("orders")), adMeta: n("adMeta"), adGoogle: n("adGoogle") }, costRatios(days));
   await upsertDays(u.id, [merged]);
   await completeTask(u.id, await numbersHabitTask(u.id));
@@ -150,7 +151,7 @@ export async function addProduct(form: FormData) {
 /** Settings: switch track (Just starting / Growing) and country. Progress on each track is kept. */
 export async function saveProfileSettings(form: FormData) {
   const u = await requireUser();
-  await saveProfile(u.id, { track: toTrack(form.get("track")), country: toCountry(form.get("country")), onboarded: true });
+  await saveProfile(u.id, { track: toTrack(form.get("track")), country: toCountry(form.get("country")), ...(form.has("salesTaxMode") ? { salesTaxMode: toTaxMode(form.get("salesTaxMode")) } : {}), onboarded: true });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/settings?saved=1");
 }

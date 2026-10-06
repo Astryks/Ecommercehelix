@@ -1,6 +1,7 @@
 import { Check, Sprout, TrendingUp } from "lucide-react";
 import { TRACKS, type TrackId } from "@/lib/tracks";
 import { COUNTRIES, type Country } from "@/lib/seasons";
+import { TAX_OPTIONS, taxLabel, type SalesTaxMode } from "@/lib/tax";
 
 /** Two big radio cards. Put inside a <form>; submits name="track". */
 export function TrackPicker({ value }: { value?: TrackId }) {
@@ -47,6 +48,29 @@ export function CountryPicker({ value }: { value?: Country }) {
         ))}
       </div>
       <p className="mt-2 text-xs text-slate-500">More countries are coming. Pick the closest one for now.</p>
+    </fieldset>
+  );
+}
+
+/** "My prices include GST/VAT". Submits name="salesTaxMode". */
+export function TaxPicker({ value, country }: { value?: SalesTaxMode; country?: Country }) {
+  const applied = taxLabel(value ?? "auto", country ?? "AU");
+  return (
+    <fieldset>
+      <legend className="text-sm font-semibold text-slate-900">My prices include GST/VAT</legend>
+      <p className="mt-1 text-sm text-slate-600">GST and VAT you collect belong to the tax office, not to you. If the sales you type or import include tax (for example Shopify&apos;s Total sales or your order totals), Helix takes it out before working out profit. Costs are left as you enter them.</p>
+      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+        {TAX_OPTIONS.map((o) => (
+          <label key={o.id} className="cursor-pointer rounded-xl border-2 border-slate-200 bg-white px-4 py-3 text-sm has-[:checked]:border-cyan-500 has-[:checked]:bg-cyan-50">
+            <input type="radio" name="salesTaxMode" value={o.id} defaultChecked={(value ?? "auto") === o.id} className="sr-only" />
+            <span className="block font-semibold text-slate-900">{o.label}</span>
+            <span className="block text-xs text-slate-500">{o.hint}</span>
+          </label>
+        ))}
+      </div>
+      <p className="mt-2 text-xs text-slate-500">
+        {applied ? `Right now Helix removes ${applied} from your sales.` : "Right now Helix uses your sales exactly as entered."} Not sure? Shopify&apos;s Gross sales and Net sales reports already leave tax out, so pick &quot;No&quot; if you copy those. General information, not tax advice.
+      </p>
     </fieldset>
   );
 }

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { BookOpen, Download, RefreshCw, Upload } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getDays, getProducts, getSettings } from "@/lib/repo";
+import { getAccount, getDays, getProducts, getSettings } from "@/lib/repo";
+import { taxLabel } from "@/lib/tax";
 import { derive, flags, sum, FIELD_LABELS, type NUM_FIELDS } from "@/lib/scorecard";
 import { isoDay, prettyDay, weekStart, monthStart, addDays } from "@/lib/dates";
 import { Sparkline } from "@/components/dashboard/Sparkline";
@@ -22,6 +23,8 @@ const GROUPS: { title: string; fields: Field[] }[] = [
 
 export default async function Scorecard() {
   const u = await requireUser("/dashboard/scorecard");
+  const acct = await getAccount(u.id);
+  const taxNote = taxLabel(acct.salesTaxMode, acct.country);
   const [days, settings, products] = await Promise.all([getDays(u.id), getSettings(u.id), getProducts(u.id)]);
   const hasExample = days.some((d) => d.example) || products.some((p) => p.example);
   const latest = days.at(-1)?.date ?? isoDay();
@@ -88,7 +91,7 @@ export default async function Scorecard() {
             <h1 className="text-3xl font-bold tracking-tight">Your numbers</h1>
             {hasExample && <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>}
           </div>
-          <p className="mt-1 text-slate-600">All your numbers in one place, with this week and this month added up. For the quick version, use the profit box on Today. Showing <strong>{prettyDay(latest)}</strong>.</p>
+          <p className="mt-1 text-slate-600">All your numbers in one place, with this week and this month added up. For the quick version, use the profit box on Today. Showing <strong>{prettyDay(latest)}</strong>.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
         </div>
         <div className="flex flex-wrap gap-2">
           {["Shopify", "Meta", "Google"].map((s) => (
