@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "About" };
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-14">
-      <h2 className="text-2xl font-bold tracking-tight text-slate-900">{title}</h2>
+      <div className="rule-accent" /><h2 className="mt-5 text-3xl text-slate-900">{title}</h2>
       <div className="mt-4 space-y-4 text-lg leading-8 text-slate-700">{children}</div>
     </section>
   );
@@ -18,12 +18,13 @@ function Block({ title, children }: { title: string; children: React.ReactNode }
 export default function About() {
   return (
     <>
-      <div className="helix-glow text-white">
-        <SiteHeader />
-        <div className="mx-auto max-w-3xl px-5 pb-20 pt-12 text-center">
-          <HelixMark size={88} className="mx-auto" />
-          <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">About Ecommerce Helix</h1>
-          <p className="mt-4 text-lg text-slate-300">Grow your e-commerce business a little every day</p>
+      <SiteHeader />
+      <div className="border-b border-slate-200 bg-paper">
+        <div className="mx-auto max-w-3xl px-5 pb-20 pt-16 text-center">
+          <HelixMark size={84} className="mx-auto" />
+          <p className="eyebrow mt-8">About</p>
+          <h1 className="mt-3 text-5xl text-slate-900 sm:text-6xl">About Ecommerce Helix</h1>
+          <p className="mt-5 font-display text-xl italic text-slate-600">Grow your e-commerce business a little every day</p>
         </div>
       </div>
       <main className="mx-auto max-w-3xl px-5 py-16">
@@ -36,10 +37,10 @@ export default function About() {
           </p>
         </Block>
 
-        <figure className="my-16 rounded-3xl bg-ink p-10 text-center text-white">
-          <p className="text-sm font-semibold uppercase tracking-widest text-cyan-300">Our mission</p>
-          <blockquote className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-            <span className="grad-text">To strive to reach six figures and beyond, compounding every day</span>
+        <figure className="helix-glow my-16 rounded-xl p-10 text-center text-white">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Our mission</p>
+          <blockquote className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+            <span className="italic text-cyan-200">To strive to reach six figures and beyond, compounding every day</span>
           </blockquote>
           <figcaption className="mt-4 text-sm text-slate-400">An ambition we work toward with you, not a promise. Every store&apos;s path is different.</figcaption>
         </figure>

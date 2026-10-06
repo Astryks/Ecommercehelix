@@ -17,7 +17,7 @@ export default function Words() {
         <p className="mt-3 max-w-2xl text-slate-600">
           Every tricky word in Helix, explained in one line. You do not need to learn them all. Come back here whenever a word is new.
         </p>
-        <dl className="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">
+        <dl className="mt-10 divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white">
           {terms.map((t) => (
             <div key={t.term} id={t.term.toLowerCase().replace(/[^a-z0-9]+/g, "-")} className="grid gap-1 p-5 sm:grid-cols-[200px_1fr] sm:gap-6">
               <dt className="font-semibold text-slate-900">

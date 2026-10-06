@@ -12,7 +12,7 @@ export default function Learn() {
     <>
       <SiteHeader dark={false} />
       <main className="mx-auto w-full max-w-6xl px-5 py-14">
-        <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700">Learn</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Learn</p>
         <h1 className="mt-2 text-4xl font-bold tracking-tight">The Helix Playbook</h1>
         <p className="mt-3 max-w-2xl text-slate-600">
           {modules.length} modules and {modules.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons on running a profitable online store. Every daily task links to the lesson that explains it. Each module starts with a short &ldquo;In plain words&rdquo; box, and the drawings show where to click. Free for everyone.

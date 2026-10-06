@@ -495,3 +495,21 @@ Core tables (simplified; all rows carry `id`, `created_at`, `updated_at`; tenant
 | Tracks | Onboarding picks Just starting (28 lighter days: product and offer, Shopify store setup step by step, first small test campaign) or Growing (64 days: profit, scaling, retention, Black Friday) plus country; switch in Settings, progress kept per track | [daily-curriculum-starting.md](daily-curriculum-starting.md), [daily-curriculum.md](daily-curriculum.md) |
 | Seasonal alerts | Prominent banner on Today and the home page from the real date, at the right lead time for each key date (Black Friday from 12 weeks, Christmas cut-offs 8, Boxing Day and New Year 5, Valentine's Day 6, Mother's Day 8, EOFY 6, Father's Day 7). "Add the prep plan" inserts dated steps with Mark done and lesson links; also in the weekly report and the Monday nudge | `src/lib/seasons.ts`, Module 13, SOP 15 |
 
+
+## Visual design system
+
+Consulting-grade, but warm. The look borrows the habits that make top strategy firms and payment companies feel premium: a restrained palette, lots of white space, serif display headings with a clean sans body, thin rules instead of heavy boxes, and charts that use one accent for the thing to notice.
+
+| Token | Value | Use |
+| --- | --- | --- |
+| Paper | `#FAF7F2` (and `#F3EEE5` for bands) | Page background |
+| Ink | `#0B1F3A` | Text, primary buttons, sidebar, dark bands |
+| Accent (terracotta) | `#D9772B`, text `#9A4D16` | Eyebrows, links, emphasis, the one highlighted series |
+| Positive (sage) | `#2F7359` | Profit and on-track numbers |
+| Negative | `#B4372F` | Losses and break-even lines |
+| Warm greys | `#E6DFD3` rules to `#5D554C` secondary text | Borders, axes, context series |
+
+- Type: Source Serif 4 for headings and key numbers (`font-display`), Inter for body and data.
+- Tokens live in `src/app/globals.css` (`@theme`). The Tailwind palettes the app uses are remapped there (slate to warm greys and ink, cyan to terracotta, emerald and teal to sage, violet, indigo and sky to muted blue), so every page follows the same set. Chart colours live in `src/lib/palette.ts`.
+- Every text pairing used meets WCAG AA (4.5:1 or better) on paper and white. The accent at full strength is only used for large text, fills and icons; small accent text uses the darker `#9A4D16`.
+- The step-by-step drawings use terracotta callouts and an ink legend (`scripts/build_guides.py`).

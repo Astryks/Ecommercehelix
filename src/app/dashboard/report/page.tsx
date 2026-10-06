@@ -22,9 +22,9 @@ export default async function Report() {
       <h1 className="text-3xl font-bold tracking-tight">Weekly report</h1>
 
       {top && (
-        <section aria-labelledby="coming-h" className="mt-6 overflow-hidden rounded-2xl border border-orange-200 bg-white">
-          <div className="bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 px-6 py-4 text-slate-950">
-            <h2 id="coming-h" className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest"><CalendarClock className="h-4 w-4" aria-hidden /> Coming up (live, based on today&apos;s date)</h2>
+        <section aria-labelledby="coming-h" className="mt-6 overflow-hidden rounded-xl border border-orange-200 bg-white">
+          <div className="bg-cyan-100 px-6 py-4 text-slate-950">
+            <h2 id="coming-h" className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em]"><CalendarClock className="h-4 w-4" aria-hidden /> Coming up (live, based on today&apos;s date)</h2>
             <p className="mt-2 text-lg font-bold leading-snug">{top.headline}</p>
           </div>
           <div className="p-6 text-sm text-slate-700">
@@ -50,9 +50,9 @@ export default async function Report() {
         </section>
       )}
 
-      <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-amber-700">Example report</p>
+      <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">Example report</p>
       <p className="mt-1 text-slate-600">{R.week}</p>
-      <p className="mt-6 rounded-2xl bg-ink p-6 text-lg font-medium leading-8 text-white">{R.headline}</p>
+      <p className="mt-6 rounded-xl bg-ink p-6 text-lg font-medium leading-8 text-white">{R.headline}</p>
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {R.scorecard.map((s) => (
           <div key={s.label} className="card p-4">

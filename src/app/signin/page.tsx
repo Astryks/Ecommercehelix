@@ -25,8 +25,8 @@ export default async function SignIn({ searchParams }: PageProps<"/signin">) {
   if (!authProviders.dev && !authProviders.google && !authProviders.email) redirect("/");
 
   return (
-    <main className="helix-glow flex min-h-screen items-center justify-center px-5 py-16">
-      <div className="w-full max-w-md rounded-3xl bg-white p-8 shadow-2xl">
+    <main className="flex min-h-screen bg-paper items-center justify-center px-5 py-16">
+      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-8 shadow-[0_1px_0_rgba(11,31,58,0.03),0_24px_48px_-24px_rgba(11,31,58,0.18)]">
         <Link href="/"><Logo /></Link>
         <h1 className="mt-8 text-2xl font-bold tracking-tight">Sign in to Helix</h1>
         <p className="mt-1 text-sm text-slate-600">Grow your e-commerce business a little every day.</p>
@@ -42,7 +42,7 @@ export default async function SignIn({ searchParams }: PageProps<"/signin">) {
             </form>
           )}
           {authProviders.dev && (
-            <form action={dev} className="space-y-3 rounded-2xl border border-dashed border-amber-300 bg-amber-50 p-4">
+            <form action={dev} className="space-y-3 rounded-xl border border-dashed border-amber-300 bg-amber-50 p-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-amber-800">Demo account (no sign-in keys configured)</p>
               <p className="text-xs text-amber-900">Creates a new, separate test account every time. It is not linked to any email, so it cannot open anyone else&apos;s account.</p>
               <div>

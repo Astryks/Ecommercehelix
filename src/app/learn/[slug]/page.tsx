@@ -39,14 +39,14 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
           </ul>
         </aside>
         <main className="min-w-0">
-          <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700">Module {meta.number}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Module {meta.number}</p>
           <h1 className="mt-1 text-4xl font-bold tracking-tight">{mod.title}</h1>
           <article
-            className="prose prose-slate mt-8 max-w-none prose-headings:scroll-mt-6 prose-a:text-cyan-700 prose-h2:mt-12 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-table:text-sm prose-th:bg-slate-50 prose-th:px-3 prose-td:px-3 [&_h2_a]:no-underline [&_h3_a]:no-underline [&_h2_a]:text-slate-900 [&_h3_a]:text-slate-900 [&_details]:rounded-xl [&_details]:bg-slate-50 [&_details]:p-4 [&_summary]:cursor-pointer [&_summary]:font-medium [&_blockquote]:not-italic [&_blockquote]:rounded-2xl [&_blockquote]:border-l-4 [&_blockquote]:border-emerald-400 [&_blockquote]:bg-emerald-50 [&_blockquote]:px-6 [&_blockquote]:py-2 [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none [&_.guide]:block [&_.guide_img]:my-2 [&_.guide_img]:rounded-xl [&_.guide_img]:border [&_.guide_img]:border-slate-200"
+            className="prose prose-slate mt-8 max-w-none prose-headings:scroll-mt-6 prose-a:text-cyan-700 prose-h2:mt-12 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-table:text-sm prose-th:bg-slate-50 prose-th:px-3 prose-td:px-3 [&_h2_a]:no-underline [&_h3_a]:no-underline [&_h2_a]:text-slate-900 [&_h3_a]:text-slate-900 [&_details]:rounded-xl [&_details]:bg-slate-50 [&_details]:p-4 [&_summary]:cursor-pointer [&_summary]:font-medium [&_blockquote]:not-italic [&_blockquote]:rounded-xl [&_blockquote]:border-l-4 [&_blockquote]:border-emerald-400 [&_blockquote]:bg-emerald-50 [&_blockquote]:px-6 [&_blockquote]:py-2 [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none [&_.guide]:block [&_.guide_img]:my-2 [&_.guide_img]:rounded-xl [&_.guide_img]:border [&_.guide_img]:border-slate-200"
             dangerouslySetInnerHTML={{ __html: mod.html }}
           />
           {words.length > 0 && (
-            <section aria-labelledby="words-title" className="mt-14 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <section aria-labelledby="words-title" className="mt-14 rounded-xl border border-slate-200 bg-slate-50 p-6">
               <h2 id="words-title" className="text-lg font-semibold">Words to know in this module</h2>
               <dl className="mt-4 grid gap-x-8 gap-y-3 text-sm md:grid-cols-2">
                 {words.map((w) => (

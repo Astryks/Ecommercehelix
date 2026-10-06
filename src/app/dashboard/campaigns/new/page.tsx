@@ -25,7 +25,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
       <h1 className="mt-2 text-3xl font-bold tracking-tight">Build a campaign</h1>
       <p className="mt-1 max-w-3xl text-slate-600">Two ways to work. Either way, Helix never switches on spend: you press Launch.</p>
 
-      <div className="mt-6 inline-flex rounded-2xl bg-white p-1 ring-1 ring-slate-200" role="tablist" aria-label="Build mode">
+      <div className="mt-6 inline-flex rounded-xl bg-white p-1 ring-1 ring-slate-200" role="tablist" aria-label="Build mode">
         <Link role="tab" aria-selected={mode === "draft"} href="/dashboard/campaigns/new" className={`rounded-xl px-4 py-2 text-sm font-semibold ${mode === "draft" ? "bg-slate-900 text-white" : "text-slate-600"}`}>Draft &amp; you launch</Link>
         <Link role="tab" aria-selected={mode === "guide"} href="/dashboard/campaigns/new?mode=guide" className={`rounded-xl px-4 py-2 text-sm font-semibold ${mode === "guide" ? "bg-slate-900 text-white" : "text-slate-600"}`}>Guide me</Link>
       </div>
@@ -71,7 +71,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
               <h2 className="flex items-center gap-2 font-semibold"><Rocket className="h-4 w-4 text-violet-600" aria-hidden /> Before you press Launch</h2>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">{PRELAUNCH.map((p) => <li key={p} className="flex gap-2"><span className="mt-1 h-3.5 w-3.5 flex-none rounded border border-slate-300" aria-hidden />{p}</li>)}</ul>
             </section>
-            <section className="rounded-2xl bg-ink p-5 text-sm text-slate-300">
+            <section className="rounded-xl bg-ink p-5 text-sm text-slate-300">
               <p className="font-semibold text-white">What Helix will never do</p>
               <ul className="mt-2 list-disc space-y-1 pl-5">
                 <li>Launch, resume or unpause anything</li>
@@ -87,7 +87,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
             <h2 className="text-lg font-semibold">1. Pick a proven structure for your spend</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {STRUCTURES.map((s) => (
-                <div key={s.band} className="rounded-2xl border border-slate-200 p-4">
+                <div key={s.band} className="rounded-xl border border-slate-200 p-4">
                   <p className="font-semibold">{s.band}</p>
                   <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-blue-700">Meta</p>
                   <ul className="mt-1 list-disc space-y-1 pl-4 text-sm text-slate-700">{s.meta.map((m) => <li key={m}>{m}</li>)}</ul>
@@ -103,7 +103,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
             <p className="mt-1 text-sm text-slate-600">Original examples for a made-up linen brand. Adapt the structure, not the words.</p>
             <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {SWIPES.map((w) => (
-                <article key={w.hook} className="rounded-2xl border border-slate-200 p-4 text-sm">
+                <article key={w.hook} className="rounded-xl border border-slate-200 p-4 text-sm">
                   <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{w.format}</p>
                   <p className="mt-2 font-semibold text-slate-900">Hook: {w.hook}</p>
                   <p className="mt-2 text-slate-700">{w.primary}</p>

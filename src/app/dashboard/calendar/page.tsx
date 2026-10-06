@@ -54,7 +54,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
       <div className="mt-8 space-y-8">
         {months.map((m) => (
           <section key={m} aria-labelledby={`m-${m}`}>
-            <h2 id={`m-${m}`} className="text-xs font-semibold uppercase tracking-widest text-slate-500">{monthName(m + "-01")}</h2>
+            <h2 id={`m-${m}`} className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{monthName(m + "-01")}</h2>
             <ol className="mt-3 space-y-3">
               {events.filter((e) => e.date.startsWith(m)).map((e) => (
                 <li key={e.key} className="card flex gap-4 p-4">

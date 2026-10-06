@@ -1,9 +1,9 @@
 import { useId } from "react";
 
-type Props = { size?: number; className?: string; title?: string };
+type Props = { size?: number; className?: string; title?: string; dark?: boolean };
 
 /** Original Ecommerce Helix mark: two intertwined strands joined by rungs. */
-export function HelixMark({ size = 36, className, title = "Ecommerce Helix" }: Props) {
+export function HelixMark({ size = 36, className, title = "Ecommerce Helix", dark = false }: Props) {
   const id = useId().replace(/:/g, "");
   const a = `hxA${id}`;
   const b = `hxB${id}`;
@@ -18,16 +18,16 @@ export function HelixMark({ size = 36, className, title = "Ecommerce Helix" }: P
     >
       <defs>
         <linearGradient id={a} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#34D399" />
-          <stop offset="1" stopColor="#22D3EE" />
+          <stop offset="0" stopColor="#E38D4D" />
+          <stop offset="1" stopColor="#B8601D" />
         </linearGradient>
         <linearGradient id={b} x1="1" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#A78BFA" />
-          <stop offset="1" stopColor="#6366F1" />
+          <stop offset="0" stopColor={dark ? "#F3EEE5" : "#1D2F4A"} />
+          <stop offset="1" stopColor={dark ? "#D3C9B9" : "#0B1F3A"} />
         </linearGradient>
       </defs>
       <g transform="rotate(-18 32 32)">
-        <g stroke="#94A3B8" strokeOpacity={0.55} strokeWidth={2.2} strokeLinecap="round">
+        <g stroke={dark ? "#A59A8B" : "#A59A8B"} strokeOpacity={0.6} strokeWidth={2.2} strokeLinecap="round">
         <line x1="39.61" y1="9.25" x2="24.39" y2="9.25" />
         <line x1="43.77" y1="12.50" x2="20.23" y2="12.50" />
         <line x1="42.58" y1="15.75" x2="21.42" y2="15.75" />
@@ -52,9 +52,9 @@ export function HelixMark({ size = 36, className, title = "Ecommerce Helix" }: P
 export function Logo({ size = 34, dark = false }: { size?: number; dark?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2.5">
-      <HelixMark size={size} />
-      <span className={`text-lg font-semibold tracking-tight ${dark ? "text-white" : "text-slate-900"}`}>
-        Ecommerce <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500 bg-clip-text text-transparent">Helix</span>
+      <HelixMark size={size} dark={dark} />
+      <span className={`font-display text-[1.2rem] font-semibold tracking-tight ${dark ? "text-white" : "text-slate-900"}`}>
+        Ecommerce <span className={`italic ${dark ? "text-cyan-300" : "text-cyan-600"}`}>Helix</span>
       </span>
     </span>
   );

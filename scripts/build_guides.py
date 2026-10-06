@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "public", "guides")
 os.makedirs(OUT, exist_ok=True)
 W, H = 1200, 700
-PINK = "#e11d48"
+PINK = "#b8601d"  # Helix terracotta, used for the numbered callouts
 FONT = "font-family=\"Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif\""
 
 
@@ -72,14 +72,14 @@ class G:
     def svg(self, steps, note):
         head = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{escape(self.title)}" {FONT}>',
                 f'<title>{escape(self.title)}</title>',
-                f'<rect width="{W}" height="{H}" rx="18" fill="#f8fafc"/>',
+                f'<rect width="{W}" height="{H}" rx="18" fill="#faf7f2"/>',
                 # window
                 '<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>',
                 '<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>',
                 '<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>',
                 f'<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">{escape(self.app)} (simplified drawing)</text>']
         # legend
-        leg = [f'<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>']
+        leg = [f'<rect x="860" y="20" width="320" height="620" rx="14" fill="#0b1f3a"/>']
         tl = wrap(self.title, 28)
         for j, ln in enumerate(tl):
             leg.append(f'<text x="884" y="{56 + j * 24}" font-size="18" font-weight="800" fill="#fff">{escape(ln)}</text>')
@@ -346,13 +346,13 @@ save("shopify-2-free-shipping", g, [
     "Press Done, then Save."])
 
 # ---------- Helix 1: daily update ----------
-g = G("Update yesterday in Helix", "Ecommerce Helix", "#10b981")
-g.rect(20, 60, 160, 580, "#0b1020", "none", 0)
+g = G("Update yesterday in Helix", "Ecommerce Helix", "#0b1f3a")
+g.rect(20, 60, 160, 580, "#0b1f3a", "none", 0)
 for i, t in enumerate(["Today", "Insights", "Approvals", "Scorecard", "Campaigns"]):
     g.text(40, 100 + i * 36, t, 13, 700 if t == "Today" else 400, "#fff" if t == "Today" else "#94a3b8")
 g.rect(200, 84, 620, 250, "#fff", "#e2e8f0", 12)
 g.text(222, 116, "PROFIT YESTERDAY", 12, 700, "#64748b")
-g.text(222, 176, "$412", 56, 800, "#059669")
+g.text(222, 176, "$412", 56, 700, "#2f7359")
 g.text(222, 214, "What this means today: Better than your 7-day", 14, 400, "#334155")
 g.text(222, 234, "average of $361. Keep doing what worked.", 14, 400, "#334155")
 g.rect(200, 354, 620, 250, "#f8fafc", "#e2e8f0", 12)

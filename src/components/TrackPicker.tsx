@@ -13,7 +13,7 @@ export function TrackPicker({ value }: { value?: TrackId }) {
           const t = TRACKS[id];
           const Icon = id === "starting" ? Sprout : TrendingUp;
           return (
-            <label key={id} className="group relative cursor-pointer rounded-2xl border-2 border-slate-200 bg-white p-5 transition hover:border-slate-300 has-[:checked]:border-cyan-500 has-[:checked]:bg-cyan-50/40 has-[:checked]:ring-4 has-[:checked]:ring-cyan-100">
+            <label key={id} className="group relative cursor-pointer rounded-xl border-2 border-slate-200 bg-white p-5 transition hover:border-slate-300 has-[:checked]:border-cyan-500 has-[:checked]:bg-cyan-50/40 has-[:checked]:ring-4 has-[:checked]:ring-cyan-100">
               <input type="radio" name="track" value={id} defaultChecked={value ? value === id : id === "starting"} className="peer sr-only" required />
               <span className="absolute right-4 top-4 hidden h-6 w-6 items-center justify-center rounded-full bg-cyan-500 text-white peer-checked:flex"><Check className="h-4 w-4" aria-hidden /></span>
               <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${id === "starting" ? "bg-emerald-100 text-emerald-700" : "bg-violet-100 text-violet-700"}`}><Icon className="h-5 w-5" aria-hidden /></span>

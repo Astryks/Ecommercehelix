@@ -9,7 +9,7 @@ const countdown = (a: SeasonAlert) =>
 /** Public home page version: real date, links to the free prep plan. */
 export function SeasonalStrip({ alert }: { alert: SeasonAlert }) {
   return (
-    <div className="relative border-b border-amber-300/30 bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 text-slate-950">
+    <div className="relative border-b border-cyan-200 bg-cyan-100 text-slate-950">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3">
         <CalendarClock className="h-5 w-5 flex-none" aria-hidden />
         <p className="flex-1 text-sm font-semibold sm:text-base">
@@ -42,8 +42,8 @@ export function SeasonalAlertCard({ alert, others, planAdded, done, addAction, d
   const show = open.slice(0, 3);
   const rest = sorted.filter((t) => !show.includes(t));
   return (
-    <section id="season" aria-labelledby="season-h" className="overflow-hidden rounded-2xl border border-orange-200 bg-white shadow-sm">
-      <div className="bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 px-6 py-5 text-slate-950">
+    <section id="season" aria-labelledby="season-h" className="overflow-hidden rounded-xl border border-orange-200 bg-white shadow-sm">
+      <div className="bg-cyan-100 px-6 py-5 text-slate-950">
         <div className="flex flex-wrap items-center gap-2 text-xs font-bold">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/45 px-2.5 py-1"><CalendarClock className="h-3.5 w-3.5" aria-hidden /> Seasonal alert</span>
           <span className="rounded-full bg-slate-950/10 px-2.5 py-1">{countdown(alert)} ({prettyDay(alert.date)})</span>
@@ -68,7 +68,7 @@ export function SeasonalAlertCard({ alert, others, planAdded, done, addAction, d
             <span className="text-sm text-slate-500">{finished} of {total} steps done</span>
           </div>
           <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-100" aria-hidden>
-            <div className="h-full rounded-full bg-gradient-to-r from-amber-400 to-rose-400" style={{ width: `${(finished / total) * 100}%` }} />
+            <div className="h-full rounded-full bg-cyan-500" style={{ width: `${(finished / total) * 100}%` }} />
           </div>
           {show.length === 0 ? (
             <p className="mt-4 flex items-center gap-2 text-sm font-medium text-emerald-700"><CheckCircle2 className="h-4 w-4" aria-hidden /> Every step is done. Nice work.</p>

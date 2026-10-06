@@ -25,7 +25,7 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
     <main className="min-h-screen bg-mist px-5 py-10">
       <div className="mx-auto max-w-4xl">
         <Link href="/"><Logo size={30} /></Link>
-        <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-cyan-700">Step 1 of 1 · about 1 minute</p>
+        <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">Step 1 of 1 · about 1 minute</p>
         <h1 className="mt-1 text-3xl font-bold tracking-tight">Let&apos;s set up your plan</h1>
         <p className="mt-2 max-w-2xl text-slate-600">Three quick answers. Helix uses them to pick your daily lessons and the key sale dates in your calendar.</p>
         <form action={finishOnboarding} className="card mt-6 space-y-8 p-6 sm:p-8">

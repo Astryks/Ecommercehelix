@@ -69,12 +69,12 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   return (
     <div className="mx-auto max-w-7xl">
       {sp.welcome && (
-        <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
+        <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
           Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Your first audit is queued (live crawling is coming soon; Insights show example findings for now). Start with Day 1 below.
         </div>
       )}
       {!acct.onboarded && !sp.welcome && (
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
           <span><strong>New here?</strong> Tell Helix if you are just starting or already growing, and where your customers live. It takes a minute and picks the right lessons and sale dates for you.</span>
           <Link href="/start" className="btn-primary px-4 py-2 text-sm">Pick your track <ArrowRight className="h-4 w-4" aria-hidden /></Link>
         </div>
@@ -94,9 +94,9 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </div>
           <div className="card flex items-center gap-3 px-4 py-3">
             <svg viewBox="0 0 36 36" className="h-11 w-11 -rotate-90" aria-hidden>
-              <circle cx="18" cy="18" r="15.5" fill="none" stroke="#e2e8f0" strokeWidth="4" />
+              <circle cx="18" cy="18" r="15.5" fill="none" stroke="#e6dfd3" strokeWidth="4" />
               <circle cx="18" cy="18" r="15.5" fill="none" stroke="url(#cs)" strokeWidth="4" strokeLinecap="round" strokeDasharray={`${(score / 100) * 97.4} 97.4`} />
-              <defs><linearGradient id="cs"><stop offset="0" stopColor="#10b981" /><stop offset="1" stopColor="#8b5cf6" /></linearGradient></defs>
+              <defs><linearGradient id="cs"><stop offset="0" stopColor="#448b6f" /><stop offset="1" stopColor="#d9772b" /></linearGradient></defs>
             </svg>
             <div><p className="text-xs text-slate-500">Compound score</p><p className="text-xl font-bold">{score}<span className="text-sm font-medium text-slate-400">/100</span></p></div>
           </div>
@@ -157,7 +157,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                   <span className="text-slate-300">Stage {current.stage}: {current.stageName}</span>
                   <span className="flex items-center gap-1 text-slate-300"><Clock className="h-3.5 w-3.5" aria-hidden /> {current.minutes} min</span>
                 </div>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-widest text-cyan-300">Today&apos;s topic: {current.topic}</p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">Today&apos;s topic: {current.topic}</p>
                 <h3 className="mt-1 text-2xl font-bold tracking-tight">{current.title}</h3>
               </div>
               <div className="p-6">
@@ -268,7 +268,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
               <h2 id="road-h" className="font-semibold">{T.id === "starting" ? "Just starting roadmap" : "Your growth roadmap"}</h2>
               <span className="text-xs text-slate-500">{daysDone}/{DAYS.length} days</span>
             </div>
-            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="h-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500" style={{ width: `${(daysDone / DAYS.length) * 100}%` }} /></div>
+            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="h-full bg-cyan-500" style={{ width: `${(daysDone / DAYS.length) * 100}%` }} /></div>
             <ol className="mt-5 space-y-5">
               {STAGES.map((st) => {
                 const days = DAYS.filter((d) => d.stage === st.id);
@@ -283,7 +283,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                     </p>
                     <p className={`text-sm font-semibold ${locked ? "text-slate-400" : "text-slate-900"}`}>{locked && <Lock className="mr-1 inline h-3 w-3" aria-hidden />}{st.name}</p>
                     {expanded && (
-                      <ol className="relative mt-3 space-y-3 before:absolute before:bottom-2 before:left-[11px] before:top-2 before:w-0.5 before:bg-gradient-to-b before:from-emerald-400 before:via-cyan-400 before:to-violet-400">
+                      <ol className="relative mt-3 space-y-3 before:absolute before:bottom-2 before:left-[11px] before:top-2 before:w-0.5 before:bg-slate-200">
                         {days.map((d) => {
                           const s = status(d);
                           return (

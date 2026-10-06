@@ -94,7 +94,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
             </dl>
             {conn.status !== "active" && <p className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-2.5 text-sm text-rose-900">{conn.status === "expired" ? "Your Meta login has expired. Disconnect and connect again." : `Last sync failed: ${conn.lastSyncError}`}</p>}
 
-            <form action={pickMetaAssets} className="rounded-2xl border border-slate-200 p-4">
+            <form action={pickMetaAssets} className="rounded-xl border border-slate-200 p-4">
               <p className="font-semibold">1. Pick what Helix should use</p>
               {assetError && <p className="mt-2 text-sm text-rose-700">Could not load your accounts: {assetError}</p>}
               <div className="mt-3 grid gap-3 md:grid-cols-3">

@@ -35,7 +35,7 @@ export function NavLinks({ pending }: { pending: number }) {
             >
               <l.icon className="h-4 w-4" aria-hidden />
               {l.label}
-              {"highlight" in l && l.highlight && !active && <span className="ml-auto rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 px-1.5 text-[10px] font-bold text-slate-950">NEW</span>}
+              {"highlight" in l && l.highlight && !active && <span className="ml-auto rounded-full bg-cyan-500 px-1.5 text-[10px] font-bold text-slate-950">NEW</span>}
               {l.href === "/dashboard/approvals" && pending > 0 && (
                 <span className="ml-auto rounded-full bg-cyan-400 px-2 text-xs font-bold text-slate-950">{pending}</span>
               )}

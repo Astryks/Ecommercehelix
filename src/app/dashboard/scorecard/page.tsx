@@ -43,12 +43,12 @@ export default async function Scorecard() {
   const series = last14.map((d) => derive(d, settings, 1));
 
   const tiles = [
-    { label: "Net revenue", value: $(dDay.netRevenue), sub: `Target ${$(dDay.revenueTarget)}`, flag: fDay.target, spark: series.map((s) => s.netRevenue), color: "#0891b2", delta: dPrev ? dDay.netRevenue - dPrev.netRevenue : null },
-    { label: "Contribution profit", value: $(dDay.contribution), sub: `${pct(dDay.contributionPct)} of net revenue`, flag: fDay.contribution, spark: series.map((s) => s.contribution), color: "#059669", delta: dPrev ? dDay.contribution - dPrev.contribution : null },
-    { label: "MER (ad spend / revenue)", value: pct(dDay.merPct), sub: `Target ${pct(settings.targetMerPct)}`, flag: fDay.mer, spark: series.map((s) => s.merPct), color: "#7c3aed", delta: null },
-    { label: "Blended CAC", value: $(dDay.blendedCac, 2), sub: `aCPA ${$(dDay.aCpa, 2)} · break-even CPA ${$(dDay.breakEvenCpa, 2)}`, flag: dDay.blendedCac <= dDay.breakEvenCpa ? "green" as const : dDay.blendedCac <= dDay.breakEvenCpa * 1.3 ? "amber" as const : "red" as const, spark: series.map((s) => s.blendedCac), color: "#db2777", delta: null },
-    { label: "Orders · AOV", value: `${day.orders} · ${$(dDay.aov, 2)}`, sub: `CR ${pct(dDay.cr)} · RPV ${$(dDay.rpv, 2)}`, flag: null, spark: series.map((_, i) => last14[i].orders), color: "#0f172a", delta: null },
-    { label: "Variable cost ratio", value: pct(dDay.vcrPct), sub: `Break-even ROAS ${x(dDay.breakEvenRoas)}`, flag: fDay.vcr, spark: series.map((s) => s.vcrPct), color: "#d97706", delta: null },
+    { label: "Net revenue", value: $(dDay.netRevenue), sub: `Target ${$(dDay.revenueTarget)}`, flag: fDay.target, spark: series.map((s) => s.netRevenue), color: "#1d2f4a", delta: dPrev ? dDay.netRevenue - dPrev.netRevenue : null },
+    { label: "Contribution profit", value: $(dDay.contribution), sub: `${pct(dDay.contributionPct)} of net revenue`, flag: fDay.contribution, spark: series.map((s) => s.contribution), color: "#2f7359", delta: dPrev ? dDay.contribution - dPrev.contribution : null },
+    { label: "MER (ad spend / revenue)", value: pct(dDay.merPct), sub: `Target ${pct(settings.targetMerPct)}`, flag: fDay.mer, spark: series.map((s) => s.merPct), color: "#566a94", delta: null },
+    { label: "Blended CAC", value: $(dDay.blendedCac, 2), sub: `aCPA ${$(dDay.aCpa, 2)} · break-even CPA ${$(dDay.breakEvenCpa, 2)}`, flag: dDay.blendedCac <= dDay.breakEvenCpa ? "green" as const : dDay.blendedCac <= dDay.breakEvenCpa * 1.3 ? "amber" as const : "red" as const, spark: series.map((s) => s.blendedCac), color: "#9a4d16", delta: null },
+    { label: "Orders · AOV", value: `${day.orders} · ${$(dDay.aov, 2)}`, sub: `CR ${pct(dDay.cr)} · RPV ${$(dDay.rpv, 2)}`, flag: null, spark: series.map((_, i) => last14[i].orders), color: "#0b1f3a", delta: null },
+    { label: "Variable cost ratio", value: pct(dDay.vcrPct), sub: `Break-even ROAS ${x(dDay.breakEvenRoas)}`, flag: fDay.vcr, spark: series.map((s) => s.vcrPct), color: "#d9772b", delta: null },
   ];
 
   const rollRows: { label: string; get: (d: ReturnType<typeof derive>) => string; flag?: (d: ReturnType<typeof derive>) => "green" | "amber" | "red" }[] = [
@@ -155,7 +155,7 @@ export default async function Scorecard() {
           <section className="card p-5">
             <h2 className="font-semibold">New vs returning revenue · month to date</h2>
             <div className="mt-3 flex h-3 overflow-hidden rounded-full bg-slate-100" role="img" aria-label={`New ${newShare.toFixed(0)} percent, returning ${(100 - newShare).toFixed(0)} percent`}>
-              <div className="bg-gradient-to-r from-emerald-400 to-cyan-500" style={{ width: `${newShare}%` }} />
+              <div className="bg-cyan-500" style={{ width: `${newShare}%` }} />
               <div className="bg-violet-400" style={{ width: `${100 - newShare}%` }} />
             </div>
             <div className="mt-2 flex justify-between text-xs text-slate-600">

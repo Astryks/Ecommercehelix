@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Build a short main menu" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
 <title>Build a short main menu</title>
-<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect width="1200" height="700" rx="18" fill="#faf7f2"/>
 <rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
 <rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
 <circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
@@ -41,41 +41,41 @@
 <text x="250" y="576" font-size="13" font-weight="400" fill="#14532d" text-anchor="start">- Drag items to nest them under a parent</text>
 <rect x="710" y="590" width="100" height="32" rx="6" fill="#008060" stroke="#008060" stroke-width="1"/>
 <text x="760.0" y="611.0" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Save menu</text>
-<line x1="210" y1="230" x2="196" y2="220" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
-<circle cx="196" cy="220" r="5" fill="#e11d48"/>
-<circle cx="210" cy="230" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<line x1="210" y1="230" x2="196" y2="220" stroke="#b8601d" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="196" cy="220" r="5" fill="#b8601d"/>
+<circle cx="210" cy="230" r="17" fill="#b8601d" stroke="#fff" stroke-width="3"/>
 <text x="210" y="236" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
-<line x1="660" y1="154" x2="630" y2="154" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
-<circle cx="630" cy="154" r="5" fill="#e11d48"/>
-<circle cx="660" cy="154" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<line x1="660" y1="154" x2="630" y2="154" stroke="#b8601d" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="630" cy="154" r="5" fill="#b8601d"/>
+<circle cx="660" cy="154" r="17" fill="#b8601d" stroke="#fff" stroke-width="3"/>
 <text x="660" y="160" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
-<line x1="660" y1="226" x2="630" y2="226" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
-<circle cx="630" cy="226" r="5" fill="#e11d48"/>
-<circle cx="660" cy="226" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<line x1="660" y1="226" x2="630" y2="226" stroke="#b8601d" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="630" cy="226" r="5" fill="#b8601d"/>
+<circle cx="660" cy="226" r="17" fill="#b8601d" stroke="#fff" stroke-width="3"/>
 <text x="660" y="232" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
-<line x1="390" y1="446" x2="370" y2="446" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
-<circle cx="370" cy="446" r="5" fill="#e11d48"/>
-<circle cx="390" cy="446" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<line x1="390" y1="446" x2="370" y2="446" stroke="#b8601d" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="370" cy="446" r="5" fill="#b8601d"/>
+<circle cx="390" cy="446" r="17" fill="#b8601d" stroke="#fff" stroke-width="3"/>
 <text x="390" y="452" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">4</text>
-<line x1="830" y1="606" x2="810" y2="606" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
-<circle cx="810" cy="606" r="5" fill="#e11d48"/>
-<circle cx="830" cy="606" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<line x1="830" y1="606" x2="810" y2="606" stroke="#b8601d" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="810" cy="606" r="5" fill="#b8601d"/>
+<circle cx="830" cy="606" r="17" fill="#b8601d" stroke="#fff" stroke-width="3"/>
 <text x="830" y="612" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">5</text>
-<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0b1f3a"/>
 <text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Build a short main menu</text>
-<circle cx="896" cy="87" r="13" fill="#e11d48"/><text x="896" y="92" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<circle cx="896" cy="87" r="13" fill="#b8601d"/><text x="896" y="92" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
 <text x="920" y="92" font-size="14" fill="#e2e8f0">Open Online Store, then Navigation</text>
 <text x="920" y="111" font-size="14" fill="#e2e8f0">(Menus) and choose Main menu.</text>
-<circle cx="896" cy="143" r="13" fill="#e11d48"/><text x="896" y="148" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<circle cx="896" cy="143" r="13" fill="#b8601d"/><text x="896" y="148" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
 <text x="920" y="148" font-size="14" fill="#e2e8f0">Keep 4 to 5 top links, such as</text>
 <text x="920" y="167" font-size="14" fill="#e2e8f0">Shop, Bundles, Reviews, FAQ.</text>
-<circle cx="896" cy="199" r="13" fill="#e11d48"/><text x="896" y="204" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<circle cx="896" cy="199" r="13" fill="#b8601d"/><text x="896" y="204" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
 <text x="920" y="204" font-size="14" fill="#e2e8f0">Drag product types under Shop so</text>
 <text x="920" y="223" font-size="14" fill="#e2e8f0">they become a drop-down.</text>
-<circle cx="896" cy="255" r="13" fill="#e11d48"/><text x="896" y="260" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<circle cx="896" cy="255" r="13" fill="#b8601d"/><text x="896" y="260" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
 <text x="920" y="260" font-size="14" fill="#e2e8f0">Add items that link to collections</text>
 <text x="920" y="279" font-size="14" fill="#e2e8f0">or pages.</text>
-<circle cx="896" cy="311" r="13" fill="#e11d48"/><text x="896" y="316" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<circle cx="896" cy="311" r="13" fill="#b8601d"/><text x="896" y="316" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
 <text x="920" y="316" font-size="14" fill="#e2e8f0">Save, then check the menu on a</text>
 <text x="920" y="335" font-size="14" fill="#e2e8f0">phone.</text>
 <text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>

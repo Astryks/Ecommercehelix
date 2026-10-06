@@ -1,51 +1,171 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/*
+ * Helix design tokens. Consulting-grade, warm: off-white paper, deep navy ink,
+ * one terracotta accent, sage for positive numbers, muted warm greys.
+ * The Tailwind palettes the app already uses are remapped here so every page
+ * picks up the same restrained set: slate = warm greys into navy ink,
+ * cyan = terracotta accent, emerald/teal = sage, violet/indigo/sky = muted blue.
+ * Every text pairing used in the app meets WCAG AA on paper and white.
+ */
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-ink: #0b1024;
-  --color-ink-2: #121a36;
-  --color-mist: #f5f7fb;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-display), Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Semantic tokens */
+  --color-paper: #faf7f2;
+  --color-paper-2: #f3eee5;
+  --color-ink: #0b1f3a;
+  --color-ink-2: #142c4f;
+  --color-mist: #faf7f2;
+  --color-accent: #d9772b;
+  --color-accent-ink: #9a4d16;
+  --color-positive: #2f7359;
+  --color-negative: #b4372f;
+  --color-rule: #e6dfd3;
+
+  /* Warm greys that end in navy ink */
+  --color-slate-50: #f7f3ec;
+  --color-slate-100: #efe9df;
+  --color-slate-200: #e6dfd3;
+  --color-slate-300: #d3c9b9;
+  --color-slate-400: #a59a8b;
+  --color-slate-500: #776d61;
+  --color-slate-600: #5d554c;
+  --color-slate-700: #433e38;
+  --color-slate-800: #1d2f4a;
+  --color-slate-900: #0b1f3a;
+  --color-slate-950: #07162b;
+
+  /* Terracotta accent (was cyan) */
+  --color-cyan-50: #fdf5ee;
+  --color-cyan-100: #fae6d4;
+  --color-cyan-200: #f3cba7;
+  --color-cyan-300: #eba877;
+  --color-cyan-400: #e38d4d;
+  --color-cyan-500: #d9772b;
+  --color-cyan-600: #a8561a;
+  --color-cyan-700: #9a4d16;
+  --color-cyan-800: #7a3d13;
+  --color-cyan-900: #5e3011;
+  --color-cyan-950: #351a08;
+
+  /* Sage for positive numbers (was emerald and teal) */
+  --color-emerald-50: #eff6f2;
+  --color-emerald-100: #d9ebe2;
+  --color-emerald-200: #b5d7c6;
+  --color-emerald-300: #8bbea6;
+  --color-emerald-400: #62a387;
+  --color-emerald-500: #448b6f;
+  --color-emerald-600: #2f7359;
+  --color-emerald-700: #255c48;
+  --color-emerald-800: #1f4a3b;
+  --color-emerald-900: #1a3d31;
+  --color-emerald-950: #0d221b;
+  --color-teal-50: #eff6f2;
+  --color-teal-100: #d9ebe2;
+  --color-teal-500: #448b6f;
+  --color-teal-600: #2f7359;
+  --color-teal-700: #255c48;
+
+  /* Muted blue (was violet, indigo and sky) */
+  --color-violet-50: #f1f4f9;
+  --color-violet-100: #e2e8f2;
+  --color-violet-200: #c7d1e3;
+  --color-violet-300: #a1b0cc;
+  --color-violet-400: #7889ae;
+  --color-violet-500: #566a94;
+  --color-violet-600: #44567c;
+  --color-violet-700: #374665;
+  --color-violet-800: #2b3852;
+  --color-violet-900: #222d42;
+  --color-indigo-50: #f1f4f9;
+  --color-indigo-100: #e2e8f2;
+  --color-indigo-500: #566a94;
+  --color-indigo-600: #44567c;
+  --color-indigo-700: #374665;
+  --color-sky-50: #f1f4f9;
+  --color-sky-100: #e2e8f2;
+  --color-sky-500: #566a94;
+  --color-sky-600: #44567c;
+  --color-sky-700: #374665;
+
+  /* Warmer reds for losses and alerts */
+  --color-rose-50: #fcf1ef;
+  --color-rose-100: #f8dfda;
+  --color-rose-200: #efbdb4;
+  --color-rose-300: #e2958a;
+  --color-rose-400: #d26b5f;
+  --color-rose-500: #c24e42;
+  --color-rose-600: #b4372f;
+  --color-rose-700: #952b25;
+  --color-rose-800: #772420;
+  --color-rose-900: #5f1f1c;
 }
 
 html { scroll-behavior: smooth; }
 body {
-  background: #f5f7fb;
-  color: #0f172a;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-feature-settings: "ss01", "cv11";
 }
 
+/* Serif display headings, clean sans body. In the base layer so utilities (font-sans, font-bold) can still override. */
+@layer base {
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-optical-sizing: auto;
+  }
+  h3.uppercase, h2.uppercase { font-family: var(--font-sans); letter-spacing: 0.12em; }
+}
+.font-display { font-family: var(--font-serif); }
+.prose :where(h1, h2, h3, h4) { font-family: var(--font-serif); font-weight: 600; }
+.tabular, .tbl td { font-variant-numeric: tabular-nums; }
+
+/* Deep navy panel with a faint warm glow (used for the Today lesson header and dark bands) */
 .helix-glow {
   background:
-    radial-gradient(60% 50% at 20% 10%, rgba(52, 211, 153, 0.18), transparent 60%),
-    radial-gradient(50% 50% at 85% 20%, rgba(139, 92, 246, 0.22), transparent 60%),
-    radial-gradient(40% 40% at 60% 90%, rgba(34, 211, 238, 0.14), transparent 60%),
-    #0b1024;
+    radial-gradient(70% 90% at 100% 0%, rgba(217, 119, 43, 0.16), transparent 60%),
+    radial-gradient(60% 80% at 0% 100%, rgba(68, 139, 111, 0.12), transparent 60%),
+    var(--color-ink);
 }
 
+/* Emphasis text: the single warm accent, set in italic serif */
 .grad-text {
-  background-image: linear-gradient(90deg, #34d399, #22d3ee 45%, #a78bfa);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--color-accent);
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+/* Thin rule with a short accent lead, consulting style */
+.rule-accent { position: relative; border-top: 1px solid var(--color-rule); }
+.rule-accent::before { content: ""; position: absolute; left: 0; top: -1px; width: 48px; height: 2px; background: var(--color-accent); }
+
+@utility eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700;
 }
 
 @utility card {
-  @apply rounded-2xl border border-slate-200/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,0.04),0_8px_24px_-12px_rgba(15,23,42,0.12)];
+  @apply rounded-xl border border-slate-200 bg-white shadow-[0_1px_0_rgba(11,31,58,0.03)];
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500 disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 disabled:cursor-not-allowed disabled:opacity-50;
 }
-@utility btn-primary { @apply btn bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 hover:brightness-110; }
+@utility btn-primary { @apply btn bg-slate-900 text-white hover:bg-slate-800; }
+@utility btn-accent { @apply btn bg-cyan-500 text-slate-950 hover:bg-cyan-400; }
 @utility btn-dark { @apply btn bg-slate-900 text-white hover:bg-slate-800; }
-@utility btn-ghost { @apply btn border border-slate-300 bg-white text-slate-800 hover:bg-slate-50; }
+@utility btn-ghost { @apply btn border border-slate-300 bg-white text-slate-900 hover:bg-slate-50; }
 
 @utility input {
-  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/30;
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500/25;
 }
 
-.tbl th { @apply whitespace-nowrap px-2.5 py-2 text-left text-xs font-semibold uppercase tracking-wide text-slate-500; }
+.tbl th { @apply whitespace-nowrap border-b border-slate-300 px-2.5 py-2 text-left text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500; }
 .tbl td { @apply whitespace-nowrap px-2.5 py-2 text-sm text-slate-800; }
 .tbl tbody tr { @apply border-t border-slate-100; }
 .tbl tbody tr:hover { @apply bg-slate-50/70; }
