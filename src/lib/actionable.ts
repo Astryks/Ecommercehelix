@@ -1,12 +1,12 @@
 import { DAYS, dayTaskId } from "./seed/curriculum";
 import { FLOWS } from "./seed/flows";
-import { EXAMPLE_SIGNALS, runRules } from "./audit";
+import { EXAMPLE_SIGNALS, runRules, type Signals } from "./audit";
 import type { PlanId } from "./plans";
 
 export type Actionable = { id: string; title: string; detail: string; tier: PlanId; estAiCost: number };
 
 /** Resolve anything that can be delegated with "Do it for me": a curriculum day, an insight or an email flow. */
-export function findActionable(id: string): Actionable | null {
+export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): Actionable | null {
   const day = DAYS.find((d) => dayTaskId(d.day) === id);
   if (day?.doIt)
     return {
@@ -17,7 +17,7 @@ export function findActionable(id: string): Actionable | null {
       estAiCost: Math.round(day.minutes * 0.2) / 100 + 0.01,
     };
   if (id.startsWith("insight-")) {
-    const ins = runRules(EXAMPLE_SIGNALS).find((i) => `insight-${i.id}` === id);
+    const ins = runRules(signals).find((i) => `insight-${i.id}` === id);
     if (ins?.doIt)
       return {
         id,

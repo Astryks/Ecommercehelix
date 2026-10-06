@@ -7,15 +7,17 @@ _Last updated: 6 Oct 2026 (Sydney)._
 - Docs: README, compound daily plan, product design, pricing, MVP build plan, 18 SOPs, the 21-module Helix Playbook, the 64-day daily curriculum, audit engine design, email automation, execution model.
 - Web app (Next.js 16, Vercel-ready): marketing site, About, Learn, Auth.js sign-in, Stripe Checkout + webhook, dashboard with Today (day-by-day curriculum + insights + roadmap), Insights, Approvals, Daily scorecard, Campaign tracker, Campaign builder, Email automation, Ad Trends, Weekly report, Plan & billing. `npm run build` and `npm run lint` pass.
 - Runs with zero keys in demo mode (in-memory store, demo login, instant plan switching).
+- **Meta integration (real):** Facebook Login for Business connect, long-lived token stored encrypted (AES-256-GCM), ad account / Page / pixel picker, daily sync via Vercel Cron plus Sync now, insights into the Campaign tracker, scorecard ad spend and audit rules, paused-only draft creation after approval, full audit log, disconnect. Mock mode runs it all without a Meta app. Setup steps: docs/meta-setup.md. `npm test` covers the guardrail and encryption.
 
 ### Real vs stubbed
 
 | Real | Stubbed or seeded |
 | --- | --- |
-| Auth.js (Google, Resend magic link, demo credentials), JWT sessions, Prisma adapter when a DB exists | Live crawler, PageSpeed calls, Shopify/Meta/Google/Klaviyo/social API pulls |
-| Prisma schema (users, plans, tasks, approvals, scorecard days, product sales, settings) and dual DB/in-memory repository | Insight signals (EXAMPLE), campaign rows (EXAMPLE), flow status and revenue (EXAMPLE) |
-| Scorecard maths, rollups, RAG flags, CSV import, manual entry | Scorecard sync buttons (Shopify, Meta, Google) |
-| Cross-diagnosis rules engine and campaign recommendation rules | Pushing paused drafts to ad accounts; creating flows in Klaviyo/Shopify Email |
+| Auth.js (Google, Resend magic link, demo credentials), JWT sessions, Prisma adapter when a DB exists | Live crawler, PageSpeed calls, Shopify/Google/Klaviyo/social API pulls |
+| Meta: OAuth connect, encrypted tokens, asset picker, daily sync, paused drafts, audit log, disconnect (needs Sid's Meta app for live data; mock mode otherwise) | Meta App Review and Business Verification (Sid's steps in docs/meta-setup.md) |
+| Prisma schema (users, plans, tasks, approvals, scorecard days, product sales, settings, Meta connection, snapshot, drafts, audit log) and dual DB/in-memory repository | Non-Meta insight signals (EXAMPLE), Google and TikTok campaign rows (EXAMPLE), flow status and revenue (EXAMPLE) |
+| Scorecard maths, rollups, RAG flags, CSV import, manual entry, Meta ad spend sync | Scorecard sync for Shopify and Google |
+| Cross-diagnosis rules engine (Meta block fed by real data when connected) and campaign recommendation rules | Google paused drafts; pausing losing Meta ads (guardrail allows it, UI not built); creating flows in Klaviyo/Shopify Email |
 | Curriculum progression, streak, compound score, plan gating, approvals | LLM drafting (approval text is templated), wallet top-up |
 | Stripe Checkout + signed webhook setting the plan | Ad Trends pipeline and weekly report generation (seeded) |
 
@@ -33,7 +35,7 @@ _Last updated: 6 Oct 2026 (Sydney)._
 
 ## Open questions for Sid
 
-1. Which ad platform gets paused-draft builds first: Meta (bigger impact for most small stores) or Google?
+1. ~~Which ad platform first?~~ Decided: Meta first (6 Oct 2026). Next: create the Meta app and run docs/meta-setup.md.
 2. Shopify-only at launch, or also WooCommerce?
 3. Wallet minimum top-up: $10 (recommended) or $5? Should unused credit ever expire?
 4. Free-tier abuse controls: is email verification plus one free store per domain enough, or do we require a card for audits beyond the first?

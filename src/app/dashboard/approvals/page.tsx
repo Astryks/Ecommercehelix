@@ -25,7 +25,7 @@ export default async function Approvals() {
               <span className="rounded-full bg-violet-50 px-2.5 py-1 text-xs font-medium text-violet-700 ring-1 ring-violet-200">Est. AI cost ${a.estAiCost.toFixed(2)}</span>
             </div>
             <pre className="mt-3 whitespace-pre-wrap font-sans text-sm leading-6 text-slate-700">{a.detail}</pre>
-            <p className="mt-3 text-xs text-slate-500">Ad changes are created paused; launching and budget changes on live campaigns stay with you. Execution against live platforms is stubbed in this version: approving marks the task done and logs the decision.</p>
+            <p className="mt-3 text-xs text-slate-500">Ad campaigns are created paused in your own account; launching and budget changes on live campaigns stay with you. Meta drafts run for real when Meta is connected (see Connections). Other platforms are not connected yet, so approving those marks the task done and logs the decision.</p>
             <form action={decide} className="mt-4 flex gap-3">
               <input type="hidden" name="id" value={a.id} />
               <button name="decision" value="approve" className="btn-primary">Approve</button>

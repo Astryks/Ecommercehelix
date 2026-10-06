@@ -46,6 +46,7 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 | [docs/audit-engine.md](docs/audit-engine.md) | Proactive audits: schedules, crawler, PageSpeed, API pulls, cross-diagnosis rules, Insights. |
 | [docs/email-automation.md](docs/email-automation.md) | Nine email and SMS flows with draft copy; suggest, draft, approve, set up. |
 | [docs/execution-model.md](docs/execution-model.md) | Draft & you launch (paused drafts, user launches) and Guide me modes. What Helix may and may not do. |
+| [docs/meta-setup.md](docs/meta-setup.md) | Meta integration: the exact steps to create the Meta app, verification, App Review, redirect URIs and environment variables. |
 | [docs/compound-daily-plan.md](docs/compound-daily-plan.md) | The operating system: daily loop, weekly and monthly rhythm, 90-day roadmaps by store stage, thresholds and decision rules. |
 | [docs/product-design.md](docs/product-design.md) | Screens, wireframes, onboarding, approval flow, trends feed, reports, chat, engagement, data model and agent architecture. |
 | [docs/pricing.md](docs/pricing.md) | Tiers, per-action cost estimates, margin proof, guardrails so no step loses money. |
@@ -99,10 +100,11 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Sign-in (Google, email magic link, or demo login) | `/signin` | Real (Auth.js v5) |
 | Today: day N lesson + action, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |
 | Insights (proactive audit, cross-diagnosis) | `/dashboard/insights` | Rules engine real, signals EXAMPLE |
-| Approvals queue | `/dashboard/approvals` | Real; platform execution stubbed |
+| Approvals queue | `/dashboard/approvals` | Real; Meta paused drafts execute for real when connected |
+| Connections (Meta connect, asset picker, sync, disconnect, activity log) | `/dashboard/integrations`, `/api/meta/*`, `/api/cron/meta-sync` | Real (mock mode without a Meta app) |
 | Daily scorecard (entry, CSV import, rollups, flags, sparklines, products) | `/dashboard/scorecard` | Real; syncs stubbed; example data until cleared |
-| Campaign tracker (scale / hold / refresh / kill) | `/dashboard/campaigns` | Rules real, campaigns EXAMPLE |
-| Campaign builder (Draft & you launch, Guide me) | `/dashboard/campaigns/new` | Guide me real; paused-draft push stubbed |
+| Campaign tracker (scale / hold / refresh / kill) | `/dashboard/campaigns` | Real Meta rows when connected; Google and TikTok EXAMPLE |
+| Campaign builder (Draft & you launch, Guide me) | `/dashboard/campaigns/new` | Real paused-draft push to Meta after approval |
 | Email automation (9 flows with drafts) | `/dashboard/email` | Drafts real; Klaviyo/Shopify Email setup stubbed |
 | Ad Trends, Weekly report | `/dashboard/trends`, `/dashboard/report` | Seeded |
 | Plan & billing (Stripe Checkout + webhook) | `/dashboard/billing`, `/api/checkout`, `/api/stripe/webhook` | Real in test mode; instant plan switch in demo mode |
@@ -127,7 +129,13 @@ To go live, copy `.env.example` to `.env.local` and set:
 | `DATABASE_URL` | Postgres; then run `npm run db:push` |
 | `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` | Stripe test mode keys |
 | `STRIPE_PRICE_STARTER`, `STRIPE_PRICE_GROWTH` | Recurring price IDs |
-| `NEXT_PUBLIC_APP_URL` | Public URL used for redirects |
+| `NEXT_PUBLIC_APP_URL`, `APP_URL` | Public URL used for redirects (`APP_URL` wins for the Meta OAuth redirect) |
+| `META_APP_ID`, `META_APP_SECRET`, `META_CONFIG_ID` | Meta app and Facebook Login for Business configuration ([setup steps](docs/meta-setup.md)) |
+| `TOKEN_ENCRYPTION_KEY` | 32-byte key (`openssl rand -hex 32`) for AES-256-GCM token encryption |
+| `CRON_SECRET` | Protects the daily Meta sync cron |
+| `META_MOCK` | `1` forces mock Meta data. Without a Meta app, mock mode is automatic outside production |
+
+Tests: `npm test` (paused-only guardrail, token encryption, Graph client retries, insights mapping).
 
 Regenerate generated docs: `python3 scripts/build_curriculum.py` (curriculum JSON + doc) and `python3 scripts/build_email_doc.py`.
 

@@ -216,3 +216,30 @@ export async function addProductLine(userId: string, p: ProductLine) {
   }
   await prisma.productSale.create({ data: { userId, ...p, example: false } });
 }
+
+/** Write synced Meta spend and attributed revenue into the scorecard without touching other fields. */
+export async function setMetaSpend(userId: string, rows: { date: string; spend: number; revenue: number }[]) {
+  if (!hasDb) {
+    const list = mem.days.get(userId) ?? [];
+    for (const r of rows) {
+      const d = list.find((x) => x.date === r.date);
+      if (d) {
+        d.adMeta = r.spend;
+        d.metaRevenue = r.revenue;
+      } else {
+        const blank = { date: r.date, source: "meta", example: false } as DayInput;
+        for (const f of NUM_FIELDS) blank[f] = 0;
+        list.push({ ...blank, adMeta: r.spend, metaRevenue: r.revenue });
+      }
+    }
+    mem.days.set(userId, list);
+    return;
+  }
+  for (const r of rows) {
+    await prisma.scorecardDay.upsert({
+      where: { userId_date: { userId, date: r.date } },
+      create: { userId, date: r.date, source: "meta", adMeta: r.spend, metaRevenue: r.revenue },
+      update: { adMeta: r.spend, metaRevenue: r.revenue },
+    });
+  }
+}

@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { BookOpen, FileText, RefreshCw } from "lucide-react";
-import { EXAMPLE_CAMPAIGNS, EXAMPLE_TARGETS, metrics, recommend, type Recommendation } from "@/lib/campaigns";
+import { EXAMPLE_CAMPAIGNS, metrics, recommend, type Recommendation } from "@/lib/campaigns";
+import { requireUser } from "@/lib/session";
+import { getDays, getSettings } from "@/lib/repo";
+import { targetsFrom } from "@/lib/targets";
+import { getConnection, getSnapshot } from "@/lib/meta/store";
 
 const REC: Record<Recommendation, string> = {
   Scale: "bg-emerald-50 text-emerald-800 ring-emerald-200",
@@ -14,8 +18,13 @@ const $ = (n: number, dp = 0) => "$" + n.toLocaleString("en-AU", { minimumFracti
 export default async function Campaigns({ searchParams }: PageProps<"/dashboard/campaigns">) {
   const sp = await searchParams;
   const channel = typeof sp.channel === "string" ? sp.channel : "All";
-  const t = EXAMPLE_TARGETS;
-  const rows = EXAMPLE_CAMPAIGNS.filter((c) => channel === "All" || c.channel === channel).map((c) => ({ c, m: metrics(c), r: recommend(c, t) }));
+  const u = await requireUser("/dashboard/campaigns");
+  const [days, settings, snap, conn] = await Promise.all([getDays(u.id), getSettings(u.id), getSnapshot(u.id), getConnection(u.id)]);
+  const t = targetsFrom(days, settings);
+  const live = Boolean(snap);
+  // Meta rows come from the connected account when synced; Google and TikTok stay example rows for now.
+  const source = live ? [...snap!.campaigns, ...EXAMPLE_CAMPAIGNS.filter((c) => c.channel !== "Meta").map((c) => ({ ...c, source: "example" as const }))] : EXAMPLE_CAMPAIGNS;
+  const rows = source.filter((c) => channel === "All" || c.channel === channel).map((c) => ({ c, m: metrics(c), r: recommend(c, t) }));
   const totals = rows.reduce((a, { c }) => ({ spend: a.spend + c.spend, purchases: a.purchases + c.purchases, revenue: a.revenue + c.revenue, budget: a.budget + c.budget }), { spend: 0, purchases: 0, revenue: 0, budget: 0 });
   const counts = (["Scale", "Hold", "Refresh creative", "Kill"] as Recommendation[]).map((k) => [k, rows.filter((x) => x.r.rec === k).length] as const);
   const goodCold = t.aov * (t.targetMerPct / 100) * 2;
@@ -26,15 +35,20 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
         <div>
           <div className="flex items-center gap-2">
             <h1 className="text-3xl font-bold tracking-tight">Campaign tracker</h1>
-            <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
+            {live ? (
+              <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-emerald-800">Meta: live{conn?.mode === "mock" ? " (mock)" : ""}</span>
+            ) : (
+              <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
+            )}
           </div>
           <p className="mt-1 max-w-3xl text-slate-600">
             Every campaign, last 7 days, with a Helix call based on your targets: AOV {$(t.aov)}, target MER {t.targetMerPct}%, variable costs {t.vcrPct}%. Good cold CPA is {$(goodCold)}; bad is double that.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          {["Meta", "Google", "TikTok"].map((s) => (
-            <button key={s} disabled title="Coming soon" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> Connect {s}</button>
+          <Link href="/dashboard/integrations" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> {conn ? "Meta connected" : "Connect Meta"}</Link>
+          {["Google", "TikTok"].map((s) => (
+            <button key={s} disabled title="Coming soon" className="btn-ghost text-xs">Connect {s}</button>
           ))}
           <Link href="/dashboard/campaigns/new" className="btn-dark text-xs"><FileText className="h-3.5 w-3.5" aria-hidden /> New campaign</Link>
         </div>
@@ -74,7 +88,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
           <tbody>
             {rows.map(({ c, m, r }) => (
               <tr key={c.id} className="align-top">
-                <td><span className="inline-flex items-center gap-2"><span className={`h-2 w-2 rounded-full ${CH[c.channel]}`} aria-hidden />{c.channel}</span></td>
+                <td><span className="inline-flex items-center gap-2"><span className={`h-2 w-2 rounded-full ${CH[c.channel]}`} aria-hidden />{c.channel}</span>{live && <div className={`text-[10px] font-semibold uppercase ${c.source === "live" ? "text-emerald-700" : "text-amber-700"}`}>{c.source === "live" ? "Live" : "Example"}</div>}</td>
                 <td className="min-w-[13rem] max-w-[15rem] whitespace-normal! break-words font-mono text-xs">{c.name}<div className="break-normal font-sans text-[11px] text-slate-500">{c.objective} · {c.layer} audience</div></td>
                 <td>{$(c.budget)}</td>
                 <td>{$(c.spend)}</td>
@@ -94,7 +108,11 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
             ))}
           </tbody>
         </table>
-        <p className="border-t border-slate-100 px-5 py-3 text-xs text-slate-500">EXAMPLE DATA: these campaigns are made up to show how the tracker works. Connect an ad account (coming soon) to see your own.</p>
+        <p className="border-t border-slate-100 px-5 py-3 text-xs text-slate-500">
+          {live
+            ? `Meta rows: your account, last 7 days, synced ${new Date(snap!.syncedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })} Sydney. Google and TikTok rows are still example data.`
+            : "EXAMPLE DATA: these campaigns are made up to show how the tracker works. Connect Meta to see your own."}
+        </p>
       </section>
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">

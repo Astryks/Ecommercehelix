@@ -9,6 +9,10 @@ import {
 import { findActionable } from "@/lib/actionable";
 import { PLAN_RANK } from "@/lib/plans";
 import { NUM_FIELDS, parseCsv, type DayInput } from "@/lib/scorecard";
+import { signalsFor } from "@/lib/signals";
+import { createPausedDraft, draftInputFor } from "@/lib/meta/service";
+import { campaignParams, draftNames, starterCopy } from "@/lib/meta/drafts";
+import { logAudit } from "@/lib/meta/store";
 
 const VALID_ID = /^(day-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
 
@@ -21,11 +25,26 @@ export async function markDone(form: FormData) {
 
 export async function doItForMe(form: FormData) {
   const u = await requireUser();
-  const item = findActionable(String(form.get("taskId")));
+  const { signals } = await signalsFor(u.id);
+  const item = findActionable(String(form.get("taskId")), signals);
   if (!item) return;
   const acct = await getAccount(u.id);
   if (PLAN_RANK[acct.plan] < PLAN_RANK[item.tier]) redirect("/dashboard/billing?need=" + item.tier);
-  await createApproval(u.id, { taskId: item.id, title: item.title, detail: item.detail, estAiCost: item.estAiCost });
+  let detail = item.detail;
+  if (item.id === "build-meta-campaign") {
+    const { input, missing } = await draftInputFor(u.id);
+    if (!input) redirect("/dashboard/integrations?need=" + encodeURIComponent(missing.join(",")));
+    const n = draftNames(input);
+    const budget = campaignParams(input).daily_budget;
+    detail =
+      `Helix will create these in ${input.adAccountId}, all PAUSED:\n` +
+      `1. Campaign "${n.campaign}": Sales objective, ${input.currency} ${input.dailyBudget}/day campaign budget (${budget} in Meta's smallest currency unit), lowest cost bidding.\n` +
+      `2. Ad set "${n.adset}": ${input.country}, 18+, Advantage+ audience, automatic placements, optimising for purchases on your pixel.\n` +
+      `3. Three ads linking to ${input.storeUrl} with tracking tags:\n` +
+      starterCopy(input.storeUrl).map((c, i) => `   ${i + 1}. "${c.headline}": ${c.primary}`).join("\n") +
+      `\n\nThe copy is a starting point. Edit it and add your images or videos in Ads Manager, then press Launch yourself. Helix never turns on spend or changes live budgets.`;
+  }
+  await createApproval(u.id, { taskId: item.id, title: item.title, detail, estAiCost: item.estAiCost });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/approvals");
 }
@@ -33,8 +52,13 @@ export async function doItForMe(form: FormData) {
 export async function decide(form: FormData) {
   const u = await requireUser();
   const status = form.get("decision") === "approve" ? "approved" : "rejected";
-  const taskId = await decideApproval(u.id, String(form.get("id")), status);
-  if (status === "approved" && taskId) await completeTask(u.id, taskId);
+  const id = String(form.get("id"));
+  const taskId = await decideApproval(u.id, id, status);
+  if (taskId) await logAudit(u.id, { actor: "user", action: `approval.${status}`, target: taskId, outcome: "ok" });
+  if (status === "approved" && taskId) {
+    if (taskId === "build-meta-campaign") await createPausedDraft(u.id, id);
+    await completeTask(u.id, taskId);
+  }
   revalidatePath("/dashboard", "layout");
 }
 

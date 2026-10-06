@@ -10,21 +10,25 @@ datasource db {
 
 // ---------- Auth.js tables ----------
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  createdAt     DateTime  @default(now())
-  accounts      Account[]
-  sessions      Session[]
-  stores        Store[]
-  subscription  Subscription?
-  completions   TaskCompletion[]
-  approvals     Approval[]
-  scorecardDays ScorecardDay[]
-  productSales  ProductSale[]
-  settings      ScorecardSettings?
+  id             String             @id @default(cuid())
+  name           String?
+  email          String?            @unique
+  emailVerified  DateTime?
+  image          String?
+  createdAt      DateTime           @default(now())
+  accounts       Account[]
+  sessions       Session[]
+  stores         Store[]
+  subscription   Subscription?
+  completions    TaskCompletion[]
+  approvals      Approval[]
+  scorecardDays  ScorecardDay[]
+  productSales   ProductSale[]
+  settings       ScorecardSettings?
+  metaConnection MetaConnection?
+  metaSnapshot   MetaSnapshot?
+  metaDrafts     MetaDraft[]
+  auditLogs      AuditLog[]
 }
 
 model Account {
@@ -168,4 +172,71 @@ model ProductSale {
   unitCost Float // landed COGS per unit
   example  Boolean @default(false)
   user     User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ---------- Meta integration ----------
+// The access token is stored only as AES-256-GCM ciphertext (src/lib/crypto.ts), never in plain text.
+model MetaConnection {
+  userId            String    @id
+  mode              String    @default("live") // live | mock
+  fbUserId          String
+  fbUserName        String    @default("")
+  tokenEnc          String
+  tokenExpiresAt    DateTime?
+  scopes            String    @default("") // comma separated, as granted
+  adAccountId       String? // act_123
+  adAccountName     String?
+  currency          String?
+  timezone          String?
+  pageId            String?
+  pageName          String?
+  instagramId       String?
+  instagramUsername String?
+  pixelId           String?
+  pixelName         String?
+  status            String    @default("active") // active | error | expired
+  lastSyncAt        DateTime?
+  lastSyncError     String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  user              User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Latest synced insights (last 7 days, previous 7 days and daily spend) as JSON.
+model MetaSnapshot {
+  userId   String   @id
+  data     String
+  syncedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Paused drafts Helix created after an approval.
+model MetaDraft {
+  id          String   @id @default(cuid())
+  userId      String
+  approvalId  String?
+  status      String // created | partial | failed
+  campaignId  String?
+  adsetId     String?
+  adIds       String   @default("") // comma separated
+  creativeIds String   @default("")
+  error       String?
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Every external API call and every approved or blocked action.
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String
+  actor      String // helix | user | cron
+  action     String // e.g. meta.api, meta.connect, meta.draft
+  target     String
+  outcome    String // ok | error | blocked | retry
+  httpStatus Int?
+  detail     String   @default("{}")
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
 }

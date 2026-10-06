@@ -19,6 +19,9 @@ export type Campaign = {
   daysSinceEdit: number;
   status: "Active" | "Learning" | "Paused";
   testStage: "Testing" | "Scaling" | "Evergreen" | "Sale";
+  /** "live" rows come from a connected ad account; everything else is example data. */
+  source?: "live" | "example";
+  externalId?: string;
 };
 
 export type Targets = { aov: number; targetMerPct: number; vcrPct: number };

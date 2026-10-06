@@ -3,7 +3,7 @@ import { BookOpen, Check, CheckCircle2, Circle, Clock, Flame, GraduationCap, Loc
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, listApprovals, streakFrom } from "@/lib/repo";
 import { DAYS, STAGES, STAGE_TIER, AREA_STYLE, dayTaskId } from "@/lib/seed/curriculum";
-import { EXAMPLE_SIGNALS, runRules } from "@/lib/audit";
+import { insightsFor } from "@/lib/signals";
 import { PLAN_RANK, planName } from "@/lib/plans";
 import { isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
@@ -12,7 +12,7 @@ import { markDone, doItForMe } from "./actions";
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, completions, approvals] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id)]);
+  const [acct, completions, approvals, live] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id)]);
   const today = isoDay();
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
@@ -23,7 +23,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const ahead = sp.ahead === "1";
   const current = doneTodayDay && !ahead ? null : nextDay;
   const currentLocked = current ? !unlocked(current.stage) : false;
-  const insights = runRules(EXAMPLE_SIGNALS).filter((i) => !done.has(`insight-${i.id}`)).slice(0, 2);
+  const insights = live.insights.filter((i) => !done.has(`insight-${i.id}`)).slice(0, 2);
 
   const streak = streakFrom(completions);
   const daysDone = DAYS.filter((d) => done.has(dayTaskId(d.day))).length;

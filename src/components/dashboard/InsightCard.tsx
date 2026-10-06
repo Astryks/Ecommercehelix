@@ -19,7 +19,7 @@ export function InsightCard({ ins, plan, pending, compact = false }: { ins: Insi
         <span className="inline-flex items-center gap-1 rounded-full bg-violet-600 px-2.5 py-0.5 font-semibold text-white"><Sparkles className="h-3 w-3" aria-hidden /> Helix noticed</span>
         <span className={`rounded-full px-2.5 py-0.5 font-medium capitalize ring-1 ${SEV[ins.severity]}`}>{ins.severity} impact</span>
         <span className="rounded-full bg-slate-50 px-2.5 py-0.5 font-medium capitalize text-slate-600 ring-1 ring-slate-200">{ins.area}</span>
-        {ins.example && <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800">Example</span>}
+        {ins.example ? <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800">Example</span> : <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-emerald-800">Live data</span>}
         <span className="text-slate-400">Sources: {ins.source.join(", ")}</span>
       </div>
       <h3 className="mt-3 text-lg font-semibold tracking-tight">{ins.title}</h3>

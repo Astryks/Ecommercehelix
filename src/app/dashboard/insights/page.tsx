@@ -1,7 +1,9 @@
 import { CalendarClock, RefreshCw } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, listApprovals } from "@/lib/repo";
-import { EXAMPLE_SIGNALS, SITE_CHECKLIST_EXAMPLE, SOCIAL_CHECKLIST_EXAMPLE, runRules } from "@/lib/audit";
+import { SITE_CHECKLIST_EXAMPLE, SOCIAL_CHECKLIST_EXAMPLE } from "@/lib/audit";
+import { insightsFor } from "@/lib/signals";
+import Link from "next/link";
 import { InsightCard } from "@/components/dashboard/InsightCard";
 import { Flag } from "@/components/dashboard/Flag";
 
@@ -17,10 +19,10 @@ const SCHEDULE = [
 
 export default async function Insights() {
   const u = await requireUser("/dashboard/insights");
-  const [acct, completions, approvals] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id)]);
+  const [acct, completions, approvals, live] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id)]);
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
-  const all = runRules(EXAMPLE_SIGNALS);
+  const all = live.insights;
   const open = all.filter((i) => !done.has(`insight-${i.id}`));
   const resolved = all.length - open.length;
 
@@ -30,9 +32,13 @@ export default async function Insights() {
         <div>
           <div className="flex items-center gap-2">
             <h1 className="text-3xl font-bold tracking-tight">Insights</h1>
-            <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
+            {live.metaLive ? (
+              <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-emerald-800">Meta: live data</span>
+            ) : (
+              <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
+            )}
           </div>
-          <p className="mt-1 max-w-3xl text-slate-600">Helix audits your site and ad accounts on a schedule and connects the dots: is it the ad, the page, the offer or the checkout? {open.length} open, {resolved} resolved. {EXAMPLE_SIGNALS.period}.</p>
+          <p className="mt-1 max-w-3xl text-slate-600">Helix audits your site and ad accounts on a schedule and connects the dots: is it the ad, the page, the offer or the checkout? {open.length} open, {resolved} resolved. {live.signals.period}.{!live.metaLive && <> <Link className="text-cyan-700 underline" href="/dashboard/integrations">Connect Meta</Link> to use your own ad data.</>}</p>
         </div>
         <button disabled title="Live audits are coming soon" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> Run audit now</button>
       </header>
