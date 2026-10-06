@@ -4,6 +4,30 @@
 
 **Related:** [Module 5 Creative strategy](05-creative-strategy.md), [Module 6 Defining campaigns](06-defining-campaigns.md), [SOP 08 Creative briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md), [SOP 07 Creative testing](../sops/07-creative-testing.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to work with creators and make video ads people watch.
+>
+> **Why it matters:** Real people showing your product often sell better than polished brand ads.
+>
+> **Do this:**
+>
+> 1. Find 3 small creators who already like your kind of product.
+> 2. Send a short brief: the problem, the product, the opening line ideas.
+> 3. Run their best video as a partnership ad and compare cost per sale.
+>
+> **Words to know:**
+>
+> - **Creator:** A person who makes social content and can feature your product.
+> - **UGC:** Photos and videos made by real customers or creators instead of the brand.
+> - **Partnership ad:** An ad that runs from a creator's own account, so people see their name instead of yours.
+> - **Hook:** The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 19.1: Why other people's faces sell your product

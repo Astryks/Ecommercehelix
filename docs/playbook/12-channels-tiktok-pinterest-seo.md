@@ -4,6 +4,29 @@
 
 **Related SOP:** [10](../sops/10-tiktok-and-emerging-channels.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** When to add TikTok, Pinterest and search, and how to be found by AI assistants.
+>
+> **Why it matters:** New channels can help, but only after Meta and Google are working. Add one at a time.
+>
+> **Do this:**
+>
+> 1. Only start a new channel once your main ads are profitable.
+> 2. Reuse your best ads, edited for the new channel.
+> 3. Write clear product titles and descriptions so search engines understand them.
+>
+> **Words to know:**
+>
+> - **SEO:** Changes that help your store show up in Google without paying for ads.
+> - **Meta description:** The short summary under your page title in Google results.
+> - **Organic:** Unpaid: posts, search results and word of mouth that you do not pay to show.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 12.1: TikTok readiness

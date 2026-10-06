@@ -17,7 +17,7 @@
 
 1. **Fetch and parse.** Fetch the pages with a lightweight crawler. Do not run a full browser unless the page is client-rendered. Record page weight, image sizes, number of apps/scripts detected, and mobile viewport behaviour.
 2. **Clarity check (is it confusing?).**
-   - Can a stranger tell what is sold and for whom within 5 seconds of the homepage hero?
+   - Can a stranger tell what is sold and for whom within 5 seconds of landing on the homepage?
    - Is there a single clear call to action above the fold?
    - Is navigation simple, with best sellers easy to find?
 3. **Compelling check (is it convincing?).**

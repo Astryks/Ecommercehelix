@@ -16,7 +16,7 @@ Good signs: people search for the category or problem; the product has clear nam
 ## Structure (default)
 
 1. **Brand search:** a small campaign (often $20 to $30 a day) on your brand terms. Use target impression share or manual bidding. Expect a very low cost per sale and do not let it inflate your view of Google overall.
-2. **Shopping or feed-only Performance Max:** non-brand prospecting with brand terms excluded. Group products by hero products or by margin tier (custom labels), not by every collection.
+2. **Shopping or feed-only Performance Max:** non-brand prospecting with brand terms excluded. Group products by best sellers or by margin tier (custom labels), not by every collection.
 3. **Non-brand Search (optional):** high-intent terms you want control over. Up to 5 keywords per ad group (1 to 2 broad, the rest exact), up to 15 headlines with 1 to 2 pinned, shared negative lists. Do not over-segment.
 4. **Demand Gen or YouTube (Stage 2+):** short-form video discovery. Judge it with view-through and platform-comparable metrics, not last-click.
 

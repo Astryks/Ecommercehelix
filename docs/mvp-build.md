@@ -16,7 +16,7 @@
 ## Week 1: foundation and marketing site
 
 - [ ] Repo scaffold, lint, CI build on Vercel previews.
-- [ ] Marketing home (hero, how it works, strategies, pricing, trends teaser, FAQ), About page, brand and logo.
+- [ ] Marketing home (top banner, how it works, strategies, pricing, trends teaser, FAQ), About page, brand and logo.
 - [ ] Auth (magic link, Google), orgs, stores, memberships.
 - [ ] Prisma schema: users, stores, subscriptions, tasks, completions, approvals (expand to the full model in the product design doc over time).
 - [ ] Stripe products: Starter $29, Growth $59; Checkout; webhook sets plan. Dev fallback when keys are missing.

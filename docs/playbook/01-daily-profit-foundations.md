@@ -5,6 +5,30 @@
 **Time:** 60 to 90 minutes to set up, then 2 minutes a day.
 **Related SOPs:** [02 Scorecard](../sops/02-scorecard-and-unit-economics.md), [03 Constraint diagnosis](../sops/03-constraint-diagnosis.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Each morning you check one number: did yesterday make a profit?
+>
+> **Why it matters:** Sales can go up while you lose money. Profit is what pays you, so every other choice starts here.
+>
+> **Do this:**
+>
+> 1. Write down your costs once: product cost, shipping, payment fees and monthly bills.
+> 2. Each morning, type yesterday's sales, orders and ad spend into Helix (2 minutes).
+> 3. Read the profit number and the one line that tells you what to do today.
+>
+> **Words to know:**
+>
+> - **Profit:** What is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. This is the number Helix cares about most.
+> - **Revenue:** All the money customers paid. It looks good, but it is not what you keep.
+> - **Break-even ROAS:** The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
+> - **MER:** All ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 1.1: Why revenue is the wrong scoreboard
@@ -63,6 +87,18 @@ Each morning record (or let Helix sync): revenue, orders, units, sessions, ad sp
 | Blended CAC | Ad spend ÷ new-customer orders |
 
 **Backfill** 1 to 2 months so you can see trends from day one.
+
+<!-- guide:shopify-1-yesterdays-numbers -->
+![Find yesterday's numbers in Shopify](../../public/guides/shopify-1-yesterdays-numbers.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: reports and analytics](https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports)
+<!-- /guide:shopify-1-yesterdays-numbers -->
+
+<!-- guide:helix-1-daily-update -->
+![Update yesterday in Helix](../../public/guides/helix-1-daily-update.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:helix-1-daily-update -->
 
 ## Lesson 1.4: Healthy ranges
 

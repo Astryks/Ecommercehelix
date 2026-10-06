@@ -12,6 +12,8 @@ const REC: Record<Recommendation, string> = {
   Kill: "bg-rose-50 text-rose-700 ring-rose-200",
   "Refresh creative": "bg-amber-50 text-amber-800 ring-amber-200",
 };
+/** Plain words shown to the user for each internal call. */
+const LABEL: Record<Recommendation, string> = { Scale: "Spend more", Hold: "Wait", "Refresh creative": "New ads needed", Kill: "Stop" };
 const CH: Record<string, string> = { Meta: "bg-blue-600", Google: "bg-amber-500", TikTok: "bg-pink-500" };
 const $ = (n: number, dp = 0) => "$" + n.toLocaleString("en-AU", { minimumFractionDigits: dp, maximumFractionDigits: dp });
 
@@ -34,7 +36,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold tracking-tight">Campaign tracker</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Your ads</h1>
             {live ? (
               <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-emerald-800">Meta: live{conn?.mode === "mock" ? " (mock)" : ""}</span>
             ) : (
@@ -42,7 +44,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
             )}
           </div>
           <p className="mt-1 max-w-3xl text-slate-600">
-            Every campaign, last 7 days, with a Helix call based on your targets: AOV {$(t.aov)}, target MER {t.targetMerPct}%, variable costs {t.vcrPct}%. Good cold CPA is {$(goodCold)}; bad is double that.
+            Every campaign from the last 7 days, with one plain call from Helix: spend more, wait, new ads needed, or stop. For ads aimed at new customers, a good cost per sale for you is {$(goodCold)} or less. Double that ({$(goodCold * 2)}) loses money. These lines come from your own numbers: average order {$(t.aov)}, ad budget target {t.targetMerPct}% of sales, other costs {t.vcrPct}% of sales.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -60,10 +62,10 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {[
-          ["Spend (7d)", $(totals.spend)],
+          ["Spent (last 7 days)", $(totals.spend)],
           ["Daily budget", $(totals.budget)],
-          ["Purchases", totals.purchases.toString()],
-          ["Blended CPA · ROAS", `${$(totals.purchases ? totals.spend / totals.purchases : 0, 2)} · ${(totals.revenue / (totals.spend || 1)).toFixed(2)}x`],
+          ["Sales (orders)", totals.purchases.toString()],
+          ["Cost per sale · Sales per $1 of ads", `${$(totals.purchases ? totals.spend / totals.purchases : 0, 2)} · ${(totals.revenue / (totals.spend || 1)).toFixed(2)}x`],
         ].map(([k, v]) => (
           <div key={k} className="card p-5"><p className="text-sm text-slate-500">{k}</p><p className="mt-1 text-2xl font-bold">{v}</p></div>
         ))}
@@ -76,20 +78,34 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
         ))}
         <span className="mx-2 h-5 w-px bg-slate-300" aria-hidden />
         {counts.map(([k, n]) => (
-          <span key={k} className={`rounded-full px-3 py-1 text-xs font-semibold ring-1 ${REC[k]}`}>{k}: {n}</span>
+          <span key={k} className={`rounded-full px-3 py-1 text-xs font-semibold ring-1 ${REC[k]}`}>{LABEL[k]}: {n}</span>
         ))}
       </div>
 
       <section className="card mt-4 overflow-x-auto">
         <table className="tbl w-full">
-          <thead>
-            <tr><th>Channel</th><th>Campaign · objective</th><th>Budget /day</th><th>Spend 7d</th><th>Purch.</th><th>CPA</th><th>ROAS</th><th>CTR</th><th>CPM</th><th>Hook rate</th><th>Freq.</th><th>Status · stage</th><th>Helix recommendation</th></tr>
+          <thead className="[&_th]:whitespace-normal! [&_th]:align-bottom [&_th]:leading-tight">
+            <tr>
+              <th>Where</th>
+              <th>Campaign · goal</th>
+              <th title="How much it may spend each day">Budget /day</th>
+              <th>Spent 7d</th>
+              <th title="Orders from this campaign">Sales</th>
+              <th title="CPA: ad money spent for each sale. Lower is better.">Cost per sale</th>
+              <th title="ROAS: dollars of sales for each $1 of ads. Higher is better.">Sales per $1</th>
+              <th title="CTR: out of 100 people who saw it, how many clicked">Clicks per 100</th>
+              <th title="CPM: cost to show the ad 1,000 times">Cost per 1,000 views</th>
+              <th title="Hook rate: share who watched the first 3 seconds">Watched 3s</th>
+              <th title="Frequency: how many times the same person saw it">Times seen</th>
+              <th>Status</th>
+              <th>What to do</th>
+            </tr>
           </thead>
           <tbody>
             {rows.map(({ c, m, r }) => (
               <tr key={c.id} className="align-top">
                 <td><span className="inline-flex items-center gap-2"><span className={`h-2 w-2 rounded-full ${CH[c.channel]}`} aria-hidden />{c.channel}</span>{live && <div className={`text-[10px] font-semibold uppercase ${c.source === "live" ? "text-emerald-700" : "text-amber-700"}`}>{c.source === "live" ? "Live" : "Example"}</div>}</td>
-                <td className="min-w-[13rem] max-w-[15rem] whitespace-normal! break-words font-mono text-xs">{c.name}<div className="break-normal font-sans text-[11px] text-slate-500">{c.objective} · {c.layer} audience</div></td>
+                <td className="min-w-[11rem] max-w-[13rem] whitespace-normal! break-words font-mono text-xs">{c.name}<div className="break-normal font-sans text-[11px] text-slate-500">{c.objective} · {c.layer} audience</div></td>
                 <td>{$(c.budget)}</td>
                 <td>{$(c.spend)}</td>
                 <td>{c.purchases}</td>
@@ -101,7 +117,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
                 <td>{c.channel === "Google" ? "n/a" : c.frequency.toFixed(1)}</td>
                 <td><span className={`text-xs font-medium ${c.status === "Learning" ? "text-cyan-700" : c.status === "Paused" ? "text-slate-400" : "text-slate-700"}`}>{c.status}</span><div className="text-[11px] text-slate-500">{c.testStage}</div></td>
                 <td className="min-w-[15rem] max-w-[19rem] whitespace-normal!">
-                  <span className={`rounded-full px-2.5 py-0.5 text-xs font-bold ring-1 ${REC[r.rec]}`}>{r.rec}</span>
+                  <span className={`rounded-full px-2.5 py-0.5 text-xs font-bold ring-1 ${REC[r.rec]}`}>{LABEL[r.rec]}</span>
                   <p className="mt-1 text-xs leading-5 text-slate-600">{r.reason}</p>
                 </td>
               </tr>
@@ -117,14 +133,14 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
         <section className="card p-5">
-          <h2 className="font-semibold">How Helix makes the call</h2>
+          <h2 className="font-semibold">How Helix decides, in plain words</h2>
           <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-6 text-slate-700">
-            <li><strong>Hold</strong> if edited in the last 3 days, still learning, or spend is under one target CPA.</li>
-            <li><strong>Kill</strong> if CPA is at or above double the good line, or spend passes that line with no purchases.</li>
-            <li><strong>Refresh creative</strong> if frequency is high for the audience, outbound CTR is under 0.5%, or hook rate is under 20%.</li>
-            <li><strong>Scale</strong> if CPA is at or under the good line and frequency is healthy. You raise the budget by up to 20% a day; Helix gives you the exact number.</li>
-            <li><strong>Google</strong>: scale above 1.5x break-even ROAS, kill below break-even, otherwise optimise.</li>
-            <li>Good CPA = AOV × target MER × audience factor (cold 2, mixed 1.25, warm 1, hot 0.75).</li>
+            <li><strong>Wait</strong> if you changed it in the last 3 days, Meta is still learning, or it has not spent enough yet to judge (less than one good cost per sale).</li>
+            <li><strong>Stop</strong> if each sale costs double the good line or more, or it has spent that much with no sales at all.</li>
+            <li><strong>New ads needed</strong> if people have seen the ads too many times, fewer than 1 in 200 click, or fewer than 1 in 5 watch the first 3 seconds.</li>
+            <li><strong>Spend more</strong> if each sale costs less than the good line and people are not tired of the ads. Raise the budget by up to 20% a day; Helix tells you the exact amount.</li>
+            <li><strong>Google</strong>: spend more when sales per $1 are well above your break-even point (1.5 times), stop when below it, otherwise tidy it up.</li>
+            <li>The good line is worked out from your average order and your ad budget target. Ads for new customers get more room (2 times) than ads for past visitors or customers.</li>
           </ul>
         </section>
         <section className="card p-5">

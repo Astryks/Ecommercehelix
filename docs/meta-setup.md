@@ -79,7 +79,7 @@ In Development mode only people with a role on the app can connect. That is enou
 
 1. Deploy, sign in to Helix, open **Connections** and press **Connect Meta**.
 2. Approve the permissions. Pick your ad account, Page and pixel and press **Save choices**.
-3. Press **Sync now**. Check the Campaign tracker shows your campaigns and the scorecard shows Meta ad spend.
+3. Press **Sync now**. Check that Your ads (the campaign tracker) shows your campaigns and the scorecard shows Meta ad spend.
 4. Go to **Build a campaign**, press **Build paused drafts in my account** and approve it.
 5. Open Ads Manager: you should see one campaign, one ad set and three ads, all **Off**. Delete them by hand when done. Helix never deletes anything.
 6. Check **Connections > Activity log** lists every call.
@@ -104,7 +104,7 @@ For each permission, write one short paragraph on how Helix uses it and attach a
 
 1. Record the full flow in one take: sign in to Helix, press **Connect Meta**, the Meta login dialog, the permissions screen, and the return to Helix.
 2. Show the exact place each permission is used:
-   - `ads_read`: Sync now, then the Campaign tracker and scorecard ad spend.
+   - `ads_read`: Sync now, then Your ads (campaign tracker) and Your numbers (scorecard) ad spend.
    - `ads_management`: build a campaign, approve it, then show the paused campaign in Ads Manager.
    - `business_management`: the ad account picker listing business-owned accounts.
    - `pages_show_list` and `pages_read_engagement`: the Page picker.

@@ -2,6 +2,27 @@
 
 **Outcome:** the right tools for your stage, without app bloat.
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Which apps and tools you need at each stage, and which to skip.
+>
+> **Why it matters:** Too many apps slow your store and cost money. Fewer, better tools win.
+>
+> **Do this:**
+>
+> 1. List every app you pay for.
+> 2. Remove ones you do not use each week.
+> 3. Add a tool only when it solves a problem you have today.
+>
+> **Words to know:**
+>
+> - **Landing page:** The page someone lands on after clicking an ad.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 18.1: The stack by need and stage

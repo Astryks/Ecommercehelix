@@ -287,7 +287,7 @@ A side panel on every screen and a full-page view. It answers questions using th
 
 *Google*
 - Is Google right for my brand yet?
-- How should I split PMax asset groups for 5 to 6 hero products?
+- How should I split PMax asset groups for 5 to 6 best sellers?
 - My PMax campaign crashed after a Google update. What do I check?
 - Custom labels in Shopify or in a supplemental feed?
 
@@ -315,7 +315,7 @@ A side panel on every screen and a full-page view. It answers questions using th
 | --- | --- | --- |
 | Morning scorecard and Today | Email (v1), push (month 2) | On, 7:30am local |
 | Approval needed | In-app badge, email, push (month 2) | On |
-| Red-flag alert (site down, revenue crash, ad account disabled, stockout on hero product) | Email + push | On, any time |
+| Red-flag alert (site down, revenue crash, ad account disabled, best seller out of stock) | Email + push | On, any time |
 | Weekly report | Email + in-app | On (Growth) |
 | Wallet low ($2 left) and wallet empty | Email + in-app | On |
 | Streak reminder | Push, 6pm local, only if loop not done | On, easy to turn off |

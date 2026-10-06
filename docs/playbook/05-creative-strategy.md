@@ -4,6 +4,30 @@
 
 **Related SOPs:** [07 Creative testing](../sops/07-creative-testing.md), [08 Briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** A simple system for making ads: plan, write, film, test, repeat.
+>
+> **Why it matters:** The ad itself is the biggest lever you control. New, better ads are what keep sales growing.
+>
+> **Do this:**
+>
+> 1. Pick one reason to buy (an angle) and write 3 opening lines (hooks).
+> 2. Make 3 short ads, phone video is fine.
+> 3. Test them side by side and keep the one with the lowest cost per sale.
+>
+> **Words to know:**
+>
+> - **Creative:** The ad itself: the picture or video plus the words.
+> - **Hook:** The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
+> - **Angle:** The reason to buy that an ad focuses on, like saving time or looking good.
+> - **Hook rate:** Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 5.1: Why creative is the targeting now

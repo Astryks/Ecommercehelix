@@ -10,8 +10,8 @@ export default async function Approvals() {
   const history = rows.filter((r) => r.status !== "pending");
   return (
     <div className="mx-auto max-w-4xl">
-      <h1 className="text-3xl font-bold tracking-tight">Approvals</h1>
-      <p className="mt-1 text-slate-600">Helix never changes your store, ads or emails until you approve here.</p>
+      <h1 className="text-3xl font-bold tracking-tight">Waiting for your OK</h1>
+      <p className="mt-1 text-slate-600">Things Helix has prepared for you. Nothing changes in your store, ads or emails until you press approve here.</p>
       <section className="mt-8 space-y-4">
         {pending.length === 0 && (
           <div className="card p-8 text-center text-slate-600">

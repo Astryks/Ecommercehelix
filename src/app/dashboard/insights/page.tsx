@@ -31,14 +31,14 @@ export default async function Insights() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold tracking-tight">Insights</h1>
+            <h1 className="text-3xl font-bold tracking-tight">What to fix</h1>
             {live.metaLive ? (
               <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-emerald-800">Meta: live data</span>
             ) : (
               <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
             )}
           </div>
-          <p className="mt-1 max-w-3xl text-slate-600">Helix audits your site and ad accounts on a schedule and connects the dots: is it the ad, the page, the offer or the checkout? {open.length} open, {resolved} resolved. {live.signals.period}.{!live.metaLive && <> <Link className="text-cyan-700 underline" href="/dashboard/integrations">Connect Meta</Link> to use your own ad data.</>}</p>
+          <p className="mt-1 max-w-3xl text-slate-600">Helix checks your store and your ads and tells you, in plain words, what is holding sales back: the ad, the page, the offer or the checkout. Fix the top one first. {open.length} open, {resolved} resolved. {live.signals.period}.{!live.metaLive && <> <Link className="text-cyan-700 underline" href="/dashboard/integrations">Connect Meta</Link> to use your own ad data.</>}</p>
         </div>
         <button disabled title="Live audits are coming soon" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> Run audit now</button>
       </header>

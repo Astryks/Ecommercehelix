@@ -4,6 +4,30 @@
 
 **Related SOPs:** [05](../sops/05-meta-structure-and-scaling.md), [06](../sops/06-meta-daily-optimisation.md), [07](../sops/07-creative-testing.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to set up and run Facebook and Instagram ads in about 10 minutes a day.
+>
+> **Why it matters:** For most stores, Meta is where most new customers come from. Doing the basics well beats clever tricks.
+>
+> **Do this:**
+>
+> 1. Set up your pixel so Meta can see sales.
+> 2. Start one Sales campaign with broad targeting and 3 ads.
+> 3. Each day, check cost per sale against your target and act on the plain-English verdict in Helix.
+>
+> **Words to know:**
+>
+> - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
+> - **Advantage+:** Meta's automatic settings that let its system choose audience, placements or budget for you.
+> - **Learning phase:** The first days after you start or change an ad set, while Meta works out who to show it to. Results jump around, so wait.
+> - **CPA:** Cost per acquisition: how much ad money it took to get one sale.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 7.1: Account setup checklist
@@ -38,6 +62,30 @@ Keep text inside safe zones so Reels and Stories do not crop it.
 3. Launch in one go per batch.
 4. Expect 2 to 5 days before signals settle.
 5. Use ad scheduling only for specific needs (sale start times).
+
+<!-- guide:meta-1-create-sales-campaign -->
+![Start a Sales campaign in Meta Ads Manager](../../public/guides/meta-1-create-sales-campaign.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Meta: create a campaign in Ads Manager](https://www.facebook.com/business/help/1658289035439772)
+<!-- /guide:meta-1-create-sales-campaign -->
+
+<!-- guide:meta-2-budget-pixel-audience -->
+![Set budget, sales tracking and audience](../../public/guides/meta-2-budget-pixel-audience.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-2-budget-pixel-audience -->
+
+<!-- guide:meta-3-write-the-ad -->
+![Write the ad and add tracking](../../public/guides/meta-3-write-the-ad.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-3-write-the-ad -->
+
+<!-- guide:meta-4-review-helix-draft -->
+![Review a Helix draft and launch it](../../public/guides/meta-4-review-helix-draft.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-4-review-helix-draft -->
 
 ## Lesson 7.5: The learning phase
 - Big edits (creative swaps, audience changes, budget jumps over 20%) restart learning.

@@ -1,0 +1,456 @@
+[
+ {
+  "term": "Profit",
+  "aka": [
+   "contribution profit",
+   "contribution"
+  ],
+  "means": "What is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. This is the number Helix cares about most."
+ },
+ {
+  "term": "Revenue",
+  "aka": [
+   "sales",
+   "gross sales"
+  ],
+  "means": "All the money customers paid. It looks good, but it is not what you keep."
+ },
+ {
+  "term": "Fixed costs",
+  "aka": [],
+  "means": "Bills that stay the same each month, like rent, software, staff and your own wage."
+ },
+ {
+  "term": "Variable costs",
+  "aka": [
+   "variable cost"
+  ],
+  "means": "Costs that grow with every order: product cost, shipping and payment fees."
+ },
+ {
+  "term": "Product cost",
+  "aka": [
+   "COGS",
+   "cost of goods"
+  ],
+  "means": "What one item costs you to make or buy, including freight to your warehouse."
+ },
+ {
+  "term": "Margin",
+  "aka": [
+   "gross margin"
+  ],
+  "means": "The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin."
+ },
+ {
+  "term": "AOV",
+  "aka": [
+   "average order value"
+  ],
+  "means": "Average order value: total sales divided by number of orders."
+ },
+ {
+  "term": "ROAS",
+  "aka": [
+   "return on ad spend"
+  ],
+  "means": "Return on ad spend: how many dollars of sales you get for each $1 of ads. ROAS 3 means $3 of sales for $1 of ads."
+ },
+ {
+  "term": "Break-even ROAS",
+  "aka": [],
+  "means": "The ROAS where an order makes $0 profit after its costs. Below it, ads lose money."
+ },
+ {
+  "term": "CPA",
+  "aka": [
+   "cost per acquisition",
+   "cost per sale",
+   "cost per purchase"
+  ],
+  "means": "Cost per acquisition: how much ad money it took to get one sale."
+ },
+ {
+  "term": "Break-even CPA",
+  "aka": [],
+  "means": "The most you can pay in ads for one sale before that sale stops making money."
+ },
+ {
+  "term": "Target CPA",
+  "aka": [
+   "good CPA"
+  ],
+  "means": "The cost per sale you aim for so each sale still leaves you profit."
+ },
+ {
+  "term": "MER",
+  "aka": [
+   "marketing efficiency ratio"
+  ],
+  "means": "All ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales."
+ },
+ {
+  "term": "Conversion rate",
+  "aka": [
+   "CR"
+  ],
+  "means": "Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits."
+ },
+ {
+  "term": "Session",
+  "aka": [
+   "sessions"
+  ],
+  "means": "One visit to your store. One person can make several visits."
+ },
+ {
+  "term": "CTR",
+  "aka": [
+   "click-through rate",
+   "outbound CTR"
+  ],
+  "means": "Click-through rate: out of every 100 people who saw your ad, how many clicked."
+ },
+ {
+  "term": "CPM",
+  "aka": [],
+  "means": "Cost to show your ad 1,000 times."
+ },
+ {
+  "term": "Frequency",
+  "aka": [],
+  "means": "How many times, on average, the same person saw your ad."
+ },
+ {
+  "term": "Hook rate",
+  "aka": [],
+  "means": "Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention."
+ },
+ {
+  "term": "ThruPlay",
+  "aka": [
+   "thruplay rate"
+  ],
+  "means": "A video view of 15 seconds or more (or the whole video if it is shorter)."
+ },
+ {
+  "term": "Hook",
+  "aka": [
+   "hooks"
+  ],
+  "means": "The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling."
+ },
+ {
+  "term": "Angle",
+  "aka": [
+   "angles"
+  ],
+  "means": "The reason to buy that an ad focuses on, like saving time or looking good."
+ },
+ {
+  "term": "Creative",
+  "aka": [
+   "creatives"
+  ],
+  "means": "The ad itself: the picture or video plus the words."
+ },
+ {
+  "term": "UGC",
+  "aka": [
+   "user-generated content"
+  ],
+  "means": "Photos and videos made by real customers or creators instead of the brand."
+ },
+ {
+  "term": "Creator",
+  "aka": [
+   "creators"
+  ],
+  "means": "A person who makes social content and can feature your product."
+ },
+ {
+  "term": "Partnership ad",
+  "aka": [
+   "partnership ads",
+   "Spark ads",
+   "Spark ad"
+  ],
+  "means": "An ad that runs from a creator's own account, so people see their name instead of yours."
+ },
+ {
+  "term": "Campaign",
+  "aka": [
+   "campaigns"
+  ],
+  "means": "The top level in an ad account. It holds the goal, like getting sales."
+ },
+ {
+  "term": "Ad set",
+  "aka": [
+   "ad sets"
+  ],
+  "means": "The middle level in Meta. It holds who sees the ads, where, and often the budget."
+ },
+ {
+  "term": "Learning phase",
+  "aka": [
+   "learning"
+  ],
+  "means": "The first days after you start or change an ad set, while Meta works out who to show it to. Results jump around, so wait."
+ },
+ {
+  "term": "Pixel",
+  "aka": [],
+  "means": "A small piece of code on your store that tells Meta when someone views, adds to cart or buys."
+ },
+ {
+  "term": "Server events",
+  "aka": [
+   "Conversions API",
+   "CAPI"
+  ],
+  "means": "Sales sent to Meta straight from your store's server, so fewer sales go untracked."
+ },
+ {
+  "term": "UTM",
+  "aka": [
+   "UTMs",
+   "UTM tags"
+  ],
+  "means": "Tags added to the end of a link so your analytics can tell which ad or email a visitor came from."
+ },
+ {
+  "term": "Cold audience",
+  "aka": [
+   "cold",
+   "prospecting"
+  ],
+  "means": "People who have never heard of you."
+ },
+ {
+  "term": "Warm audience",
+  "aka": [
+   "warm"
+  ],
+  "means": "People who know you: they visited, followed or watched your videos."
+ },
+ {
+  "term": "Hot audience",
+  "aka": [
+   "hot",
+   "retargeting"
+  ],
+  "means": "People close to buying: they added to cart or started checkout."
+ },
+ {
+  "term": "Custom audience",
+  "aka": [
+   "custom audiences"
+  ],
+  "means": "A list Meta builds from your own data, like site visitors or customers."
+ },
+ {
+  "term": "Lookalike",
+  "aka": [
+   "lookalike audience"
+  ],
+  "means": "People Meta thinks are similar to a list you give it, like your best customers."
+ },
+ {
+  "term": "Broad targeting",
+  "aka": [
+   "broad"
+  ],
+  "means": "Letting Meta find buyers with few or no audience limits. Works best with strong ads."
+ },
+ {
+  "term": "Advantage+",
+  "aka": [
+   "Advantage+ audience"
+  ],
+  "means": "Meta's automatic settings that let its system choose audience, placements or budget for you."
+ },
+ {
+  "term": "PMax",
+  "aka": [
+   "Performance Max"
+  ],
+  "means": "A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign."
+ },
+ {
+  "term": "Brand search",
+  "aka": [],
+  "means": "Ads that show when people search your brand name. Cheap and usually very profitable."
+ },
+ {
+  "term": "Product feed",
+  "aka": [
+   "feed"
+  ],
+  "means": "The list of your products, prices and photos that Google and Meta read to make shopping ads."
+ },
+ {
+  "term": "Search terms",
+  "aka": [
+   "search terms report"
+  ],
+  "means": "The exact words people typed into Google before they saw or clicked your ad."
+ },
+ {
+  "term": "Negative keyword",
+  "aka": [
+   "negatives",
+   "negative keywords"
+  ],
+  "means": "A word you tell Google never to show your ads for, to stop wasted clicks."
+ },
+ {
+  "term": "Landing page",
+  "aka": [],
+  "means": "The page someone lands on after clicking an ad."
+ },
+ {
+  "term": "Above the fold",
+  "aka": [],
+  "means": "The part of a page you see before you scroll."
+ },
+ {
+  "term": "Funnel",
+  "aka": [],
+  "means": "The steps from seeing an ad to buying: visit, add to cart, checkout, order."
+ },
+ {
+  "term": "Add to cart rate",
+  "aka": [
+   "ATC rate"
+  ],
+  "means": "Out of every 100 visits, how many add something to the cart."
+ },
+ {
+  "term": "Express wallets",
+  "aka": [],
+  "means": "One-tap payment options like Apple Pay, Google Pay and Shop Pay."
+ },
+ {
+  "term": "Buy now pay later",
+  "aka": [
+   "BNPL"
+  ],
+  "means": "Payment options like Afterpay or Klarna that let shoppers split the cost."
+ },
+ {
+  "term": "Free shipping threshold",
+  "aka": [
+   "threshold"
+  ],
+  "means": "The order amount where shipping becomes free, like 'Free shipping over $100'."
+ },
+ {
+  "term": "Bundle",
+  "aka": [
+   "bundles"
+  ],
+  "means": "Two or more products sold together, often with a small saving."
+ },
+ {
+  "term": "Post-purchase offer",
+  "aka": [
+   "upsell"
+  ],
+  "means": "A one-click extra offer shown right after someone buys."
+ },
+ {
+  "term": "Guarantee",
+  "aka": [
+   "risk reversal"
+  ],
+  "means": "A clear promise that removes the fear of a bad purchase, like a 30-day money-back promise."
+ },
+ {
+  "term": "Flow",
+  "aka": [
+   "flows",
+   "automation"
+  ],
+  "means": "An email or text series that sends by itself when something happens, like a new sign-up."
+ },
+ {
+  "term": "Campaign email",
+  "aka": [
+   "campaign emails"
+  ],
+  "means": "A one-off email you send to your list, like a new arrival announcement."
+ },
+ {
+  "term": "Segment",
+  "aka": [
+   "segments"
+  ],
+  "means": "A smaller group of your list, like people who bought in the last 90 days."
+ },
+ {
+  "term": "Pop-up",
+  "aka": [],
+  "means": "A box on your site that asks visitors for their email, often with a small reward."
+ },
+ {
+  "term": "Abandoned checkout",
+  "aka": [],
+  "means": "When someone starts checkout but does not finish. A reminder email can bring them back."
+ },
+ {
+  "term": "LTV",
+  "aka": [
+   "lifetime value"
+  ],
+  "means": "How much a customer spends with you over time, not just on the first order."
+ },
+ {
+  "term": "Weeks of cover",
+  "aka": [],
+  "means": "How many weeks your stock will last at the current sales speed."
+ },
+ {
+  "term": "Cash forecast",
+  "aka": [],
+  "means": "A week-by-week list of money coming in and going out, so you can see tight weeks early."
+ },
+ {
+  "term": "SEO",
+  "aka": [
+   "search engine optimisation"
+  ],
+  "means": "Changes that help your store show up in Google without paying for ads."
+ },
+ {
+  "term": "Meta description",
+  "aka": [
+   "meta descriptions"
+  ],
+  "means": "The short summary under your page title in Google results."
+ },
+ {
+  "term": "Attribution",
+  "aka": [],
+  "means": "Deciding which ad or channel gets credit for a sale."
+ },
+ {
+  "term": "Holdout test",
+  "aka": [
+   "holdout"
+  ],
+  "means": "Turning something off for a while (or in one area) to see how many sales it really adds."
+ },
+ {
+  "term": "KPI",
+  "aka": [
+   "KPIs"
+  ],
+  "means": "Key performance indicator: one of the few numbers you watch to know if things are working."
+ },
+ {
+  "term": "Organic",
+  "aka": [],
+  "means": "Unpaid: posts, search results and word of mouth that you do not pay to show."
+ }
+]

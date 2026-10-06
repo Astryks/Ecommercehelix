@@ -64,7 +64,7 @@ The social presence audit uses the checklist in [Playbook Lesson 21.9](playbook/
 | Check | How | Fires when |
 | --- | --- | --- |
 | Mobile speed | PSI mobile performance score, LCP, INP, CLS | Score < 50 or LCP > 4s |
-| Hero clarity | Home above the fold has headline, value proposition, CTA | Missing headline or CTA in first viewport |
+| Top-of-page clarity | Home above the fold has headline, value proposition, CTA | Missing headline or CTA in first viewport |
 | Product page proof | Reviews widget and star rating near price | No reviews above the fold |
 | Shipping clarity | Shipping cost or threshold visible on product page or cart | Not found |
 | Free shipping threshold | Threshold vs AOV | Threshold > 1.5x AOV or < AOV |

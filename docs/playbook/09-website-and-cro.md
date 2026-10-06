@@ -4,6 +4,30 @@
 
 **Related SOPs:** [01 Audit](../sops/01-store-audit.md), [11 CRO](../sops/11-landing-pages-and-cro.md), [12 AOV](../sops/12-aov-and-cart-offers.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to turn more of your visitors into buyers, and get bigger orders.
+>
+> **Why it matters:** If more visitors buy, every ad dollar goes further without spending more.
+>
+> **Do this:**
+>
+> 1. Make the top of each product page clear: what it is, price, reviews, add to cart.
+> 2. Remove anything that slows checkout and turn on express payment buttons.
+> 3. Set a free shipping amount a bit above your average order.
+>
+> **Words to know:**
+>
+> - **Conversion rate:** Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits.
+> - **Above the fold:** The part of a page you see before you scroll.
+> - **Free shipping threshold:** The order amount where shipping becomes free, like 'Free shipping over $100'.
+> - **AOV:** Average order value: total sales divided by number of orders.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 9.1: The improvement system
@@ -14,7 +38,7 @@
 5. Repeat monthly.
 
 ## Lesson 9.2: Page checklists
-**Homepage above the fold:** promo bar, simple nav, hero with one message (separate mobile image), clear call to action, trust cue.
+**Homepage above the fold:** promo bar, simple nav, a top banner with one message (separate mobile image), clear call to action, trust cue.
 **Homepage below the fold:** best sellers, categories, reasons to buy, reviews, founder or story, press, email sign-up.
 **Product page above the fold:** title, one-line difference, star rating, price with anchor or bundle value, offer block, variant selector, add to cart, delivery estimate, key trust badges.
 **Product page below the fold:** reasons why, how to use, photo reviews, FAQs, comparison, guarantees, cross-sells.
@@ -50,6 +74,12 @@ Tiers (free shipping -> gift -> discount), bundles and bundle builders, cross-se
 
 ## Lesson 9.11: Shipping psychology
 Free shipping thresholds lift AOV; set just above median order value. Show delivery estimates. Offer express as a paid upgrade. Customers hate surprise shipping costs at checkout.
+
+<!-- guide:shopify-2-free-shipping -->
+![Set a free shipping amount in Shopify](../../public/guides/shopify-2-free-shipping.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: set up shipping rates](https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates/setting-up-shipping-rates)
+<!-- /guide:shopify-2-free-shipping -->
 
 ## Lesson 9.12: Promotions without destroying margin
 Prefer gifts, bundles, VIP early access and loyalty rewards over blanket discounts. If you want to step back from constant discounting, do it gradually: fewer sales, stronger value messaging, better offers to new customers only.

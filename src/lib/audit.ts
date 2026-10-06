@@ -54,7 +54,7 @@ export function runRules(s: Signals, example = true): Insight[] {
         { label: "Mobile speed score", value: String(s.site.mobileSpeedScore), benchmark: "50+" },
       ],
       why: "People stop, watch and click, then leave. Every extra click you pay for is wasted until the page matches the ad and loads fast on mobile.",
-      fix: ["Check the ad promise appears in the first screen of the landing page.", "Compress hero images and remove unused apps to improve mobile speed.", "Add reviews and the guarantee near add to cart.", "Test the mobile checkout yourself."],
+      fix: ["Check the ad promise appears in the first screen of the landing page.", "Compress the big top images and remove unused apps to improve mobile speed.", "Add reviews and the guarantee near add to cart.", "Test the mobile checkout yourself."],
       doIt: { label: "Draft landing page fixes", tier: "growth", estAiCost: 0.06 },
       learn: { slug: "20-ad-analysis-audiences-and-setup", anchor: "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout", label: "Cross-diagnosis" },
       source: ["meta", "shopify", "pagespeed"], example,

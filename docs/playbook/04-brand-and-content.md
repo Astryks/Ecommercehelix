@@ -2,6 +2,28 @@
 
 **Outcome:** a clear brand that people recognise, content pillars for each channel, and a plan to build community and reach.
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Your brand is how people recognise and remember you.
+>
+> **Why it matters:** People buy from brands they trust. A clear brand makes ads cheaper and customers more loyal.
+>
+> **Do this:**
+>
+> 1. Write one sentence on who you help and how.
+> 2. Pick 3 to 4 topics you will always post about.
+> 3. Post on a simple, steady schedule you can keep.
+>
+> **Words to know:**
+>
+> - **Organic:** Unpaid: posts, search results and word of mouth that you do not pay to show.
+> - **UGC:** Photos and videos made by real customers or creators instead of the brand.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 4.1: The brand core

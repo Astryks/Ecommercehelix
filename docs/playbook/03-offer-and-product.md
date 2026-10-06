@@ -4,6 +4,29 @@
 
 **Related SOPs:** [04 Offer design](../sops/04-offer-design.md), [16 Customer research](../sops/16-customer-research-and-reviews.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Your offer is what people get and why they should buy now.
+>
+> **Why it matters:** A great offer makes every ad and email work better. A weak one makes everything cost more.
+>
+> **Do this:**
+>
+> 1. Write down why a customer should buy from you instead of waiting.
+> 2. Add one reason to act now, like a bundle, a gift or free shipping over an amount.
+> 3. Check which products make the most profit and push those first.
+>
+> **Words to know:**
+>
+> - **Margin:** The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin.
+> - **Bundle:** Two or more products sold together, often with a small saving.
+> - **Guarantee:** A clear promise that removes the fear of a bad purchase, like a 30-day money-back promise.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 3.1: The five offer levers

@@ -85,10 +85,10 @@ export default async function Scorecard() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold tracking-tight">Daily scorecard</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Your numbers</h1>
             {hasExample && <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>}
           </div>
-          <p className="mt-1 text-slate-600">Two minutes a morning. Showing <strong>{prettyDay(latest)}</strong> with week-to-date and month-to-date rollups.</p>
+          <p className="mt-1 text-slate-600">All your numbers in one place, with this week and this month added up. For the quick version, use the profit box on Today. Showing <strong>{prettyDay(latest)}</strong>.</p>
         </div>
         <div className="flex flex-wrap gap-2">
           {["Shopify", "Meta", "Google"].map((s) => (

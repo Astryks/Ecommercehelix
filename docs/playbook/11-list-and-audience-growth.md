@@ -2,6 +2,29 @@
 
 **Outcome:** a growing owned audience that makes every launch and sale cheaper.
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Ways to collect more emails and followers you can reach for free.
+>
+> **Why it matters:** A bigger list makes every launch and sale cheaper, because you do not have to pay to reach them.
+>
+> **Do this:**
+>
+> 1. Add a pop-up with a clear reason to sign up.
+> 2. Run ads that collect emails when ad costs are low.
+> 3. Welcome every new subscriber with a short series.
+>
+> **Words to know:**
+>
+> - **Pop-up:** A box on your site that asks visitors for their email, often with a small reward.
+> - **Custom audience:** A list Meta builds from your own data, like site visitors or customers.
+> - **LTV:** How much a customer spends with you over time, not just on the first order.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 11.1: Why build the list

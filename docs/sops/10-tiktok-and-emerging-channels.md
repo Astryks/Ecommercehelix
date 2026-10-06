@@ -16,7 +16,7 @@ Add a channel only when (1) current channels are profitable, (2) there is creati
 1. **Organic first.** Post native content for a few weeks to learn which styles get traction. Build a bank of 10 to 15 ad-ready videos before spending.
 2. **Two campaigns.** Run one campaign optimising for an earlier action (view content or add to cart) alongside the purchase campaign, unless spend is high. Turning off the earlier-action campaign often raises purchase cost because the platform gets fewer signals.
 3. **Budget type.** Campaign-level budget lets the platform pick ad sets. Ad-set budget gives you control when testing creative styles.
-4. **Fatigue is fast.** Check every day or two. A creative can go from fine to very expensive within 3 to 4 days. Use leading metrics (cost per add to cart, cost per click, 25% and 50% view rates) to spot it early.
+4. **Fatigue is fast.** Check every day or two. A creative can go from fine to very expensive within 3 to 4 days. Use leading metrics (what each click costs, what each add to cart costs, and the share who watch 25% and 50% of the video) to spot it early.
 5. **When to turn off.** Turn off ads that take a large share of budget at a poor cost per purchase so the budget moves to better ads. Judge the whole channel against total MER.
 6. **Next steps when it works.** More iterations of winning hooks, catalog or shopping campaigns, bundles for AOV.
 

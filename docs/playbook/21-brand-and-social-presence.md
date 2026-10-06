@@ -4,6 +4,28 @@
 
 **Related:** [Module 4 Brand, content and community](04-brand-and-content.md), [Module 19 Creators, UGC and video ads](19-creators-ugc-and-video-ads.md), [Module 11 List and audience growth](11-list-and-audience-growth.md), [SOP 16 Customer research and reviews](../sops/16-customer-research-and-reviews.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to make your social profiles look trustworthy and match your ads.
+>
+> **Why it matters:** People check your profile before they buy. A good one turns ad viewers into followers and buyers.
+>
+> **Do this:**
+>
+> 1. Make your bio say who you help and link to your best page.
+> 2. Pin 3 posts: your best product, real reviews and your story.
+> 3. Post on a schedule you can keep.
+>
+> **Words to know:**
+>
+> - **Organic:** Unpaid: posts, search results and word of mouth that you do not pay to show.
+> - **UGC:** Photos and videos made by real customers or creators instead of the brand.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 21.1: Why your profile is part of every ad

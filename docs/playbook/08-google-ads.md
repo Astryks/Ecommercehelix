@@ -4,6 +4,30 @@
 
 **Related SOP:** [09](../sops/09-google-shopping-pmax-search.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to show your products on Google when people search for them.
+>
+> **Why it matters:** People on Google are already looking to buy. It catches demand your other ads create.
+>
+> **Do this:**
+>
+> 1. Connect your product list (Merchant Center).
+> 2. Start a Performance Max campaign and exclude your brand name.
+> 3. Once a week, block searches that cost money and never sell.
+>
+> **Words to know:**
+>
+> - **PMax:** A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign.
+> - **Product feed:** The list of your products, prices and photos that Google and Meta read to make shopping ads.
+> - **Search terms:** The exact words people typed into Google before they saw or clicked your ad.
+> - **Negative keyword:** A word you tell Google never to show your ads for, to stop wasted clicks.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 8.1: Foundations
@@ -20,9 +44,15 @@ Titles front-load search terms (brand, type, key attribute). Clean main images, 
 
 ## Lesson 8.3: Campaign structures
 - **Small accounts:** brand search + one feed-only PMax or Shopping campaign.
-- **Growing:** add non-brand search for top terms, PMax split by hero products or margin tiers.
+- **Growing:** add non-brand search for top terms, PMax split by best sellers or margin tiers.
 - **Larger:** new-customer focused campaigns, competitor search, Demand Gen, country splits.
 - **PMax vs standard Shopping:** PMax reaches across Google; standard Shopping gives query control. Many stores run feed-only PMax with brand exclusions plus brand search.
+
+<!-- guide:google-1-performance-max -->
+![Start a Performance Max campaign in Google Ads](../../public/guides/google-1-performance-max.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Google: about Performance Max campaigns](https://support.google.com/google-ads/answer/10724817)
+<!-- /guide:google-1-performance-max -->
 
 ## Lesson 8.4: Keyword research
 Start with commercial and transactional terms (buy, best, price, product type + attribute). Check volume and competition. Group by theme. Build small ad groups (up to 5 keywords). Maintain shared negative lists.
@@ -44,6 +74,12 @@ Use customer lists to tell Google who existing customers are. Choose whether cam
 - [ ] Budget-limited campaigns that hit target: raise budget.
 - [ ] Brand vs non-brand split.
 - [ ] Merchant Center diagnostics.
+
+<!-- guide:google-2-block-wasted-searches -->
+![Block searches that waste money](../../public/guides/google-2-block-wasted-searches.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Google: search terms report](https://support.google.com/google-ads/answer/2472708)
+<!-- /guide:google-2-block-wasted-searches -->
 
 ## Lesson 8.9: Demand Gen and YouTube
 Short-form video and image ads across YouTube, Discover and Gmail. Reuse your best social videos in vertical and horizontal. Judge with view-through and platform-comparable metrics plus total MER.

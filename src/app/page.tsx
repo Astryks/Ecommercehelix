@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ClipboardCheck, ListChecks, Search, Sparkles, TrendingUp, Flame, ShieldCheck, Clock } from "lucide-react";
+import { ArrowRight, ClipboardCheck, ListChecks, Search, Sparkles, TrendingUp, Flame, ShieldCheck, Clock, DollarSign, Scale, Target } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { HelixMark } from "@/components/Logo";
@@ -8,18 +8,25 @@ import { STRATEGIES } from "@/lib/seed/strategies";
 import { TRENDS } from "@/lib/seed/trends";
 
 const STEPS = [
-  { icon: Search, title: "Audit", text: "Paste your store URL. Helix keeps auditing speed, product pages, checkout, email and ads, connects the dots and ranks the fixes worth the most." },
-  { icon: ListChecks, title: "Daily plan", text: "Every day: one short lesson, one topic and one clear action, plus what Helix noticed in your store and ads. Fifteen focused minutes." },
-  { icon: ClipboardCheck, title: "Approve", text: "Tap 'I'll do it for you' and Helix drafts the work: fixes, ads, email flows. Nothing changes until you approve." },
-  { icon: TrendingUp, title: "Grow", text: "Your scorecard, streak and compound score show the gains stacking up. Small wins, every day, add up fast." },
+  { icon: Search, title: "Check", text: "Paste your store link. Helix checks your store, ads and emails and finds the fixes that will make you the most money." },
+  { icon: ListChecks, title: "One thing a day", text: "Each day you get one short lesson and one clear task, explained step by step. About 15 minutes." },
+  { icon: ClipboardCheck, title: "You approve", text: "Want Helix to do it for you? Tap the button. Helix prepares the work, and nothing changes until you say yes." },
+  { icon: TrendingUp, title: "Watch profit grow", text: "Add yesterday's numbers each morning and see your profit. Small daily wins add up fast." },
+];
+
+const PROFIT_POINTS = [
+  { icon: DollarSign, title: "Profit is the number that counts", text: "Sales and followers look nice. Profit is what pays you. Every lesson, task and alert in Helix is judged by one question: does it grow your profit?" },
+  { icon: Scale, title: "You need to spend on ads to make revenue", text: "It feels counter-intuitive, but for most stores, ads are how new customers find you. Helix makes sure you scale profitably. It sets a break-even target for your ads (the most you can pay for a sale and still make money), so you spend only while each sale is profitable, and pull back when it is not." },
+  { icon: Target, title: "Meta and Google still work", text: "Meta (Facebook and Instagram) and Google can seem saturated. Everyone says they are too crowded and too expensive. But they are still what works for most stores. The winners simply do the basics well, every day." },
 ];
 
 const FAQ = [
-  { q: "Is Helix an agency?", a: "No. Helix is software that works like a head of growth by your side. You keep ownership of your ad accounts, data and customers, and you approve every change." },
+  { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
   { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds campaigns inside your own Meta or Google account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. Prefer to build it yourself? Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
-  { q: "Which platforms work today?", a: "This version runs on manual entry and CSV import for the scorecard, with example data for ads. Shopify, Meta Ads, Google Ads and Klaviyo connections are on the roadmap and stubbed in the app." },
+  { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
   { q: "How does the AI balance work?", a: "Paid plans include a monthly AI allowance. Extra usage comes from a prepaid balance you top up. When it reaches $0, AI actions stop. You are never billed beyond what you loaded." },
-  { q: "I have never run ads. Is this for me?", a: "Yes. Every task comes with a plain-English guide and a Learn library, from unit economics to campaign planning, so you understand what is happening and why." },
+  { q: "I have never run ads. Is this for me?", a: "Yes. Every task is written in plain English with numbered steps and simple drawings that show where to click. Any tricky word is explained in one line, like ROAS: how many dollars of sales you get for each $1 of ads." },
+  { q: "Why does Helix talk about profit so much?", a: "Because profit is what you keep. A store can grow sales and still lose money. Helix shows profit first, sets a break-even line for your ads, and only suggests spending more while each sale still makes money." },
   { q: "Can Helix promise results?", a: "No honest tool can. Helix focuses on proven basics done consistently: know your numbers, test creative, fix the site, build your list, and compound small gains." },
 ];
 
@@ -32,7 +39,7 @@ export default function Home() {
         <section className="relative mx-auto max-w-6xl px-5 pb-24 pt-14 md:pt-20">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-cyan-200">
-              <Sparkles className="h-3.5 w-3.5" aria-hidden /> Your head of growth, by your side
+              <Sparkles className="h-3.5 w-3.5" aria-hidden /> Profit first. One small step a day.
             </span>
             <div className="mt-6 flex items-center gap-4">
               <HelixMark size={64} />
@@ -42,7 +49,7 @@ export default function Home() {
               Grow your e-commerce business <span className="grad-text">a little every day</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Helix audits your store, hands you the three tasks that matter most today, explains why, and does the work when you approve. Small daily wins that compound into a bigger business.
+              Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can do the work for you when you approve. Small daily wins add up to a bigger, more profitable business.
             </p>
             <form action="/start" method="get" className="mt-9 flex max-w-xl flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-2 backdrop-blur sm:flex-row">
               <label htmlFor="url" className="sr-only">Paste your store URL</label>
@@ -61,10 +68,37 @@ export default function Home() {
       </div>
 
       <main>
+        <section id="profit" aria-labelledby="profit-title" className="scroll-mt-10 bg-white py-24">
+          <div className="mx-auto max-w-6xl px-5">
+            <p className="text-sm font-semibold uppercase tracking-widest text-emerald-700">It is all about the bottom line</p>
+            <h2 id="profit-title" className="mt-2 text-4xl font-extrabold tracking-tight sm:text-6xl">
+              Profit, profit, <span className="bg-gradient-to-r from-emerald-500 to-cyan-500 bg-clip-text text-transparent">profit.</span>
+            </h2>
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">Not sales. Not followers. Not likes. Helix puts your profit at the top of the screen every day and helps you grow it one small step at a time.</p>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {PROFIT_POINTS.map((p) => (
+                <article key={p.title} className="rounded-2xl border border-slate-200 p-6">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700"><p.icon className="h-5 w-5" aria-hidden /></span>
+                  <h3 className="mt-4 text-lg font-semibold">{p.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{p.text}</p>
+                </article>
+              ))}
+            </div>
+            <div className="mt-10 grid items-center gap-6 rounded-3xl bg-slate-950 p-8 text-white md:grid-cols-[1fr_auto]">
+              <div>
+                <p className="text-sm text-slate-400">What you see every morning</p>
+                <p className="mt-1 text-5xl font-extrabold tracking-tight text-emerald-400">$412 <span className="text-lg font-medium text-slate-400">profit yesterday</span></p>
+                <p className="mt-2 max-w-xl text-slate-300">&ldquo;Better than your 7-day average of $361. Keep doing what worked and do today&apos;s lesson.&rdquo;</p>
+              </div>
+              <p className="text-2xl font-bold tracking-tight sm:text-3xl">Let&apos;s grow a little <span className="grad-text">every day.</span></p>
+            </div>
+          </div>
+        </section>
+
         <section id="how" className="scroll-mt-10 py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700">How it works</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Audit. Daily plan. Approve. Grow.</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Check. One thing a day. Approve. Grow.</h2>
             <ol className="mt-12 grid gap-6 md:grid-cols-4">
               {STEPS.map((s, i) => (
                 <li key={s.title} className="card relative p-6">
@@ -80,20 +114,22 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="strategies" className="scroll-mt-10 bg-white py-24">
+        <section id="strategies" className="scroll-mt-10 bg-slate-50 py-24">
           <div className="mx-auto max-w-6xl px-5">
-            <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700">Strategies</p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Proven plays, run with you</h2>
-            <p className="mt-3 max-w-2xl text-slate-600">Each strategy becomes a sequence of daily tasks. You learn the play, Helix handles the heavy lifting.</p>
+            <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700">Growth strategies</p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">One strategy at a time, explained simply</h2>
+            <p className="mt-3 max-w-2xl text-slate-600">For each one, Helix tells you what to do, why it matters and how to do it, step by step. Then it asks: want me to do it for you? You see the effect in your daily numbers.</p>
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {STRATEGIES.map((s) => (
                 <article key={s.id} className={`flex flex-col rounded-2xl border border-slate-200 bg-gradient-to-br ${s.tone} p-6`}>
                   <span className="text-3xl" aria-hidden>{s.emoji}</span>
                   <h3 className="mt-4 font-semibold text-slate-900">{s.title}</h3>
-                  <p className="mt-2 flex-1 text-sm leading-6 text-slate-700">{s.desc}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700"><strong>What:</strong> {s.what}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700"><strong>Why:</strong> {s.why}</p>
+                  <ol className="mt-2 flex-1 list-decimal space-y-1 pl-5 text-sm leading-6 text-slate-700">{s.how.map((h) => <li key={h}>{h}</li>)}</ol>
                   <div className="mt-4 rounded-xl bg-white/80 p-3 text-xs leading-5 text-slate-700">
-                    <span className="font-semibold text-slate-900">What Helix does for you: </span>
-                    {s.helix}
+                    <span className="font-semibold text-slate-900">Want me to do it for you? </span>{s.helix}
+                    <span className="mt-1 block text-slate-500">You will see it in: {s.watch}</span>
                   </div>
                 </article>
               ))}

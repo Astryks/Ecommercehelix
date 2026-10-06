@@ -1,19 +1,29 @@
 import Link from "next/link";
-import { BookOpen, Check, CheckCircle2, Circle, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
+import { BookOpen, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, getCompletions, listApprovals, streakFrom } from "@/lib/repo";
+import { getAccount, getCompletions, getDays, getSettings, listApprovals, streakFrom } from "@/lib/repo";
+import { costRatios, summarise } from "@/lib/today";
+import { termsIn } from "@/lib/glossary";
+import { guidesForDay } from "@/lib/guides";
+import { ProfitToday } from "@/components/dashboard/ProfitToday";
+import { getSnapshot } from "@/lib/meta/store";
 import { DAYS, STAGES, STAGE_TIER, AREA_STYLE, dayTaskId } from "@/lib/seed/curriculum";
 import { insightsFor } from "@/lib/signals";
 import { PLAN_RANK, planName } from "@/lib/plans";
-import { isoDay, prettyDay } from "@/lib/dates";
+import { addDays, isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
-import { markDone, doItForMe } from "./actions";
+import { markDone, doItForMe, quickUpdate } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, completions, approvals, live] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id)]);
+  const [acct, completions, approvals, live, days, settings, snap] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id)]);
   const today = isoDay();
+  const yesterday = addDays(today, -1);
+  const summary = summarise(days, yesterday, settings);
+  const yRow = days.find((d) => d.date === yesterday);
+  const r = costRatios(days);
+  const estimatePct = Math.round((r.cogs + r.fees + r.discounts + r.refunds) * 100);
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
   const unlocked = (stage: number) => PLAN_RANK[acct.plan] >= PLAN_RANK[STAGE_TIER[stage]];
@@ -45,7 +55,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <div>
           <p className="text-sm font-medium text-slate-500">{prettyDay(today)}</p>
           <h1 className="mt-1 text-3xl font-bold tracking-tight">Good to see you{u.name ? `, ${u.name}` : ""}</h1>
-          <p className="mt-1 text-slate-600">One lesson, one topic, one action. Plus what Helix noticed. About {totalMinutes} minutes.</p>
+          <p className="mt-1 text-slate-600">Update yesterday, see your profit, then do one small thing to grow it. About {totalMinutes + 1} minutes.</p>
         </div>
         <div className="flex gap-3">
           <div className="card flex items-center gap-3 px-4 py-3">
@@ -63,6 +73,11 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </div>
       </header>
 
+      <div className="mt-6">
+        <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} action={quickUpdate}
+          prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
+      </div>
+
       <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,1fr)_330px]">
         <section aria-labelledby="today-h" className="space-y-5">
           <h2 id="today-h" className="sr-only">Today</h2>
@@ -79,28 +94,63 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                 <h3 className="mt-1 text-2xl font-bold tracking-tight">{current.title}</h3>
               </div>
               <div className="p-6">
-                <div className="rounded-2xl bg-slate-50 p-4">
-                  <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500"><GraduationCap className="h-4 w-4" aria-hidden /> The lesson</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-700">{current.lesson}</p>
-                  <Link href={`/learn/${current.learn.slug}#${current.learn.anchor}`} className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-cyan-700 hover:underline">
-                    <BookOpen className="h-4 w-4" aria-hidden /> Read the full lesson: {current.learn.ref} {current.learn.label}
-                  </Link>
-                </div>
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500"><GraduationCap className="h-4 w-4" aria-hidden /> Why it matters</p>
+                <p className="mt-2 text-base leading-7 text-slate-700">{current.lesson}</p>
                 <p className="mt-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  The action <span className={`rounded-full px-2 py-0.5 normal-case ring-1 ${AREA_STYLE[current.area].chip}`}>{AREA_STYLE[current.area].label}</span>
+                  How to do it <span className={`rounded-full px-2 py-0.5 normal-case ring-1 ${AREA_STYLE[current.area].chip}`}>{AREA_STYLE[current.area].label}</span>
                 </p>
-                <ul className="mt-2 space-y-2">
-                  {current.steps.map((s) => (
-                    <li key={s} className="flex gap-2.5 text-sm text-slate-700"><Circle className="mt-0.5 h-4 w-4 flex-none text-slate-300" aria-hidden />{s}</li>
+                <ol className="mt-2 space-y-2.5">
+                  {current.steps.map((s, i) => (
+                    <li key={s} className="flex gap-3 text-[15px] leading-6 text-slate-800">
+                      <span className="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">{i + 1}</span>{s}
+                    </li>
                   ))}
-                </ul>
+                </ol>
+                {guidesForDay(current.day).length > 0 && (
+                  <details className="mt-5 rounded-xl border border-slate-200 p-4 text-sm" open={guidesForDay(current.day).length === 1}>
+                    <summary className="cursor-pointer font-semibold text-slate-700">Show me where to click ({guidesForDay(current.day).length} drawing{guidesForDay(current.day).length === 1 ? "" : "s"})</summary>
+                    <div className="mt-3 space-y-5">
+                      {guidesForDay(current.day).map((g, i) => (
+                        <figure key={g.file}>
+                          <a href={`/guides/${g.file}.svg`} target="_blank" rel="noreferrer">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={`/guides/${g.file}.svg`} alt={g.title} width={1200} height={700} loading="lazy" className="w-full rounded-lg border border-slate-200" />
+                          </a>
+                          <figcaption className="mt-1.5 text-xs text-slate-500">
+                            Step {i + 1}: {g.title}. A drawing, not a real screenshot; your screen may look a little different.
+                            {g.help && <> Official help: <a href={g.help.url} target="_blank" rel="noreferrer" className="text-cyan-700 underline">{g.help.label}</a></>}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </details>
+                )}
+                {current.watch && (
+                  <p className="mt-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+                    <strong>See the effect:</strong> keep updating yesterday&apos;s numbers each morning. Over the next 7 days, watch <strong>{current.watch}</strong>.
+                  </p>
+                )}
+                {(() => {
+                  const words = termsIn(`${current.title} ${current.lesson} ${current.steps.join(" ")}`, 4);
+                  return words.length ? (
+                    <details className="mt-4 rounded-xl bg-slate-50 px-4 py-3 text-sm">
+                      <summary className="cursor-pointer font-semibold text-slate-700">Words to know ({words.map((w) => w.term).join(", ")})</summary>
+                      <dl className="mt-2 space-y-1.5">{words.map((w) => <div key={w.term}><dt className="inline font-semibold">{w.term}: </dt><dd className="inline text-slate-600">{w.means}</dd></div>)}</dl>
+                    </details>
+                  ) : null;
+                })()}
+                <Link href={`/learn/${current.learn.slug}#${current.learn.anchor}`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-cyan-700 hover:underline">
+                  <BookOpen className="h-4 w-4" aria-hidden /> Want more detail? Read the lesson: {current.learn.label}
+                </Link>
                 {currentLocked ? (
                   <div className="mt-5 rounded-xl bg-violet-50 p-4 text-sm text-violet-900">
                     Stage {current.stage} of the guided programme is part of the {planName(STAGE_TIER[current.stage])} plan. The lesson stays free in Learn.
                     <Link href="/dashboard/billing" className="btn-primary mt-3 w-full sm:w-auto">Unlock Stage {current.stage}</Link>
                   </div>
                 ) : (
-                  <div className="mt-5 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-5">
+                  <div className="mt-5 border-t border-slate-100 pt-5">
+                    {current.doIt && <p className="mb-3 text-sm text-slate-700"><strong>Want me to do it for you?</strong> {current.doIt.label}. Nothing changes until you approve it.</p>}
+                    <div className="flex flex-wrap items-center gap-3">
                     {current.doIt ? (
                       pending.has(dayTaskId(current.day)) ? (
                         <Link href="/dashboard/approvals" className="btn-ghost"><Sparkles className="h-4 w-4 text-violet-600" aria-hidden /> Waiting for your approval</Link>
@@ -109,7 +159,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                           <input type="hidden" name="taskId" value={dayTaskId(current.day)} />
                           <button className="btn-dark">
                             {PLAN_RANK[acct.plan] >= PLAN_RANK[current.doIt.tier] ? <Wand2 className="h-4 w-4" aria-hidden /> : <Lock className="h-4 w-4" aria-hidden />}
-                            I&apos;ll do it for you{PLAN_RANK[acct.plan] >= PLAN_RANK[current.doIt.tier] ? "" : ` · ${planName(current.doIt.tier)}`}
+                            Yes, do it for me{PLAN_RANK[acct.plan] >= PLAN_RANK[current.doIt.tier] ? "" : ` · ${planName(current.doIt.tier)}`}
                           </button>
                         </form>
                       )
@@ -118,9 +168,9 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                     )}
                     <form action={markDone}>
                       <input type="hidden" name="taskId" value={dayTaskId(current.day)} />
-                      <button className="btn-ghost"><Check className="h-4 w-4 text-emerald-600" aria-hidden /> Mark done</button>
+                      <button className="btn-ghost"><Check className="h-4 w-4 text-emerald-600" aria-hidden /> {current.doIt ? "I did it myself" : "Mark done"}</button>
                     </form>
-                    {current.doIt && <span className="ml-auto text-xs text-slate-500">Helix: {current.doIt.label}</span>}
+                    </div>
                   </div>
                 )}
               </div>

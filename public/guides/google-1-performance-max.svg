@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Start a shopping campaign" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Start a shopping campaign</title>
+<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
+<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Google Ads (simplified drawing)</text>
+<rect x="20" y="60" width="180" height="580" rx="0" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<text x="40" y="100" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Overview</text>
+<text x="40" y="140" font-size="14" font-weight="700" fill="#1a73e8" text-anchor="start">Campaigns</text>
+<text x="40" y="180" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Insights and reports</text>
+<text x="40" y="220" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Tools</text>
+<text x="40" y="260" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Billing</text>
+<circle cx="250" cy="110" r="22" fill="#1a73e8"/><text x="250" y="118" font-size="26" fill="#fff" text-anchor="middle">+</text>
+<text x="282" y="116" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start">New campaign</text>
+<text x="230" y="176" font-size="16" font-weight="800" fill="#0f172a" text-anchor="start">What is your goal?</text>
+<rect x="230" y="190" width="138" height="70" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2"/>
+<text x="299" y="230" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Sales</text>
+<rect x="380" y="190" width="138" height="70" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="449" y="230" font-size="14" font-weight="500" fill="#0f172a" text-anchor="middle">Leads</text>
+<rect x="530" y="190" width="138" height="70" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="599" y="230" font-size="14" font-weight="500" fill="#0f172a" text-anchor="middle">Website traffic</text>
+<rect x="680" y="190" width="138" height="70" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="749" y="230" font-size="14" font-weight="500" fill="#0f172a" text-anchor="middle">Awareness</text>
+<text x="230" y="300" font-size="16" font-weight="800" fill="#0f172a" text-anchor="start">Campaign type</text>
+<rect x="230" y="314" width="138" height="60" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2"/>
+<text x="299" y="349" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Performance Max</text>
+<rect x="380" y="314" width="138" height="60" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="449" y="349" font-size="13" font-weight="500" fill="#0f172a" text-anchor="middle">Search</text>
+<rect x="530" y="314" width="138" height="60" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="599" y="349" font-size="13" font-weight="500" fill="#0f172a" text-anchor="middle">Shopping</text>
+<rect x="680" y="314" width="138" height="60" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="749" y="349" font-size="13" font-weight="500" fill="#0f172a" text-anchor="middle">Video</text>
+<text x="230" y="410" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Product list (Merchant Center)</text>
+<rect x="230" y="418" width="560" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="240" y="440.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">My store products</text>
+<text x="230" y="480" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Brand exclusions</text>
+<rect x="230" y="488" width="560" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="240" y="510.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Exclude: your brand name</text>
+<rect x="690" y="580" width="100" height="32" rx="6" fill="#1a73e8" stroke="#1a73e8" stroke-width="1"/>
+<text x="740.0" y="601.0" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Continue</text>
+<line x1="430" y1="110" x2="395" y2="110" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="395" cy="110" r="5" fill="#e11d48"/>
+<circle cx="430" cy="110" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="430" y="116" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<line x1="380" y1="225" x2="368" y2="225" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="368" cy="225" r="5" fill="#e11d48"/>
+<circle cx="380" cy="225" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="380" y="231" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<line x1="380" y1="344" x2="368" y2="344" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="368" cy="344" r="5" fill="#e11d48"/>
+<circle cx="380" cy="344" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="380" y="350" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<line x1="812" y1="432" x2="790" y2="432" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="790" cy="432" r="5" fill="#e11d48"/>
+<circle cx="812" cy="432" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="812" y="438" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<line x1="812" y1="502" x2="790" y2="502" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="790" cy="502" r="5" fill="#e11d48"/>
+<circle cx="812" cy="502" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="812" y="508" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Start a shopping campaign</text>
+<circle cx="896" cy="87" r="13" fill="#e11d48"/><text x="896" y="92" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<text x="920" y="92" font-size="14" fill="#e2e8f0">In Google Ads, press the + button</text>
+<text x="920" y="111" font-size="14" fill="#e2e8f0">to start a new campaign.</text>
+<circle cx="896" cy="143" r="13" fill="#e11d48"/><text x="896" y="148" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<text x="920" y="148" font-size="14" fill="#e2e8f0">Pick Sales as the goal.</text>
+<circle cx="896" cy="180" r="13" fill="#e11d48"/><text x="896" y="185" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<text x="920" y="185" font-size="14" fill="#e2e8f0">Pick Performance Max. It shows</text>
+<text x="920" y="204" font-size="14" fill="#e2e8f0">your products across Google.</text>
+<circle cx="896" cy="236" r="13" fill="#e11d48"/><text x="896" y="241" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<text x="920" y="241" font-size="14" fill="#e2e8f0">Link your product list from</text>
+<text x="920" y="260" font-size="14" fill="#e2e8f0">Merchant Center.</text>
+<circle cx="896" cy="292" r="13" fill="#e11d48"/><text x="896" y="297" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<text x="920" y="297" font-size="14" fill="#e2e8f0">Exclude your brand name, so this</text>
+<text x="920" y="316" font-size="14" fill="#e2e8f0">campaign finds new customers.</text>
+<text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

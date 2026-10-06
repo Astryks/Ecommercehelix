@@ -2,6 +2,8 @@
 
 A complete, original course for online store owners. Each module has lessons with steps, checklists, examples and a self-check. Helix links daily tasks to the lesson that explains them, so you learn while you work.
 
+**Plain words first.** Every module opens with a short "In plain words" box: what it is, why it matters, three steps to do, and the words to know. Any tricky word is explained in one line in the [glossary](../glossary.md). The setup lessons (Meta in modules 7 and 20, Google in 8 and 20, Shopify in 1 and 9) include numbered drawings that show where to click, with links to the official help pages. The drawings live in `public/guides/` and are made by `scripts/build_guides.py`; the plain-words boxes and drawing embeds are added by `scripts/plain_layer.py`.
+
 | # | Module | Best for |
 | --- | --- | --- |
 | 1 | [Daily profit foundations](01-daily-profit-foundations.md) | Everyone, start here |

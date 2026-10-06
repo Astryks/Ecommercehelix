@@ -10,7 +10,7 @@ export const STRUCTURES = [
   {
     band: "$100 to $500/day",
     meta: ["01 Cold: automated, broad, light exclusions", "02 Cold: manual, broad, harsh exclusions (new customers)", "03 Mixed: automated with existing-customer cap 10 to 20%", "04 Warm: visitors 180 days, engagers, minus purchasers", "Build campaign (always off) for staging ads"],
-    google: ["Brand search", "Feed-only PMax, hero products split out", "Non-brand search on 1 to 2 product themes"],
+    google: ["Brand search", "Feed-only PMax, best sellers split out", "Non-brand search on 1 to 2 product themes"],
     note: "Add one layer at a time. Each needs enough budget for several purchases a week.",
   },
   {

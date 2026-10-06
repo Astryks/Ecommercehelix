@@ -4,6 +4,30 @@
 
 **Related:** [Module 6 Defining campaigns](06-defining-campaigns.md), [Module 7 Meta ads](07-meta-ads.md), [Module 8 Google ads](08-google-ads.md), [Module 2 Diagnose and fix](02-diagnose-and-fix.md), [SOP 05](../sops/05-meta-structure-and-scaling.md), [SOP 06](../sops/06-meta-daily-optimisation.md), [SOP 09](../sops/09-google-shopping-pmax-search.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to set up ads correctly and read your results like a pro.
+>
+> **Why it matters:** Good setup means you can trust the numbers. Good reading means you fix the real problem.
+>
+> **Do this:**
+>
+> 1. Check that your pixel and sales tracking work before you spend.
+> 2. Set up your campaign step by step (drawings below).
+> 3. When results drop, check in order: the ad, the page, the offer, the checkout.
+>
+> **Words to know:**
+>
+> - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
+> - **UTM:** Tags added to the end of a link so your analytics can tell which ad or email a visitor came from.
+> - **Attribution:** Deciding which ad or channel gets credit for a sale.
+> - **Funnel:** The steps from seeing an ad to buying: visit, add to cart, checkout, order.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 20.1: Before you launch: tracking you can trust
@@ -65,6 +89,30 @@ Bad data leads to bad decisions. Check these once, then monthly:
 9. Preview on mobile in every placement. Check safe zones.
 10. Publish, then do not touch for 3 days unless something is broken.
 
+<!-- guide:meta-1-create-sales-campaign -->
+![Start a Sales campaign in Meta Ads Manager](../../public/guides/meta-1-create-sales-campaign.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Meta: create a campaign in Ads Manager](https://www.facebook.com/business/help/1658289035439772)
+<!-- /guide:meta-1-create-sales-campaign -->
+
+<!-- guide:meta-2-budget-pixel-audience -->
+![Set budget, sales tracking and audience](../../public/guides/meta-2-budget-pixel-audience.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-2-budget-pixel-audience -->
+
+<!-- guide:meta-3-write-the-ad -->
+![Write the ad and add tracking](../../public/guides/meta-3-write-the-ad.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-3-write-the-ad -->
+
+<!-- guide:meta-4-review-helix-draft -->
+![Review a Helix draft and launch it](../../public/guides/meta-4-review-helix-draft.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-4-review-helix-draft -->
+
 ## Lesson 20.4: Setting up Google step by step
 
 **Brand search**
@@ -79,13 +127,25 @@ Bad data leads to bad decisions. Check these once, then monthly:
 1. Fix the feed first: titles with the words people search, good images, correct price, availability, GTIN or brand, product type.
 2. Create PMax with Sales goal, linked Merchant Center, and only the feed (no extra creative assets) if you want it to behave like Shopping.
 3. Exclude your brand so brand demand stays in the cheap brand campaign.
-4. Split hero products into their own campaign when they deserve more budget.
+4. Split best sellers into their own campaign when they deserve more budget.
 5. Start with Maximise conversion value, then add a target ROAS once you have about 30+ conversions in 30 days. Set it near your target, not wishful.
 
 **Non-brand search**
 
 1. One campaign per product theme, tight keyword groups.
 2. Review the search terms report weekly. Add negatives. Promote converting terms to keywords and to feed titles.
+
+<!-- guide:google-1-performance-max -->
+![Start a Performance Max campaign in Google Ads](../../public/guides/google-1-performance-max.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Google: about Performance Max campaigns](https://support.google.com/google-ads/answer/10724817)
+<!-- /guide:google-1-performance-max -->
+
+<!-- guide:google-2-block-wasted-searches -->
+![Block searches that waste money](../../public/guides/google-2-block-wasted-searches.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Google: add negative keywords](https://support.google.com/google-ads/answer/2453972)
+<!-- /guide:google-2-block-wasted-searches -->
 
 ## Lesson 20.5: Setting up a TikTok campaign step by step
 

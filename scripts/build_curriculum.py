@@ -3,6 +3,7 @@ import json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 from curriculum_source import STAGES, D
+from glossary_source import G
 
 PB = os.path.join(ROOT, "docs", "playbook")
 files = sorted(f for f in os.listdir(PB) if re.match(r"\d\d-.*\.md$", f))
@@ -24,13 +25,15 @@ def find(ref):
 
 stage_of = lambda day: next(s for s in STAGES if day <= s[2])
 out = []
-for i, (_, topic, title, lesson, steps, minutes, area, ref, sop, doit) in enumerate(D):
+WATCH_DEFAULT = {"numbers": "Profit at the top of your dashboard", "site": "Conversion rate", "retention": "Email sales and profit", "ads": "Ad cost per sale (CPA) and profit", "learning": None}
+for i, (_, topic, title, lesson, steps, minutes, area, ref, sop, doit, watch) in enumerate(D):
     day = i + 1
     s = stage_of(day)
     out.append({
         "day": day, "stage": s[0], "stageName": s[1], "topic": topic, "title": title, "lesson": lesson,
         "steps": steps, "minutes": minutes, "area": area, "learn": find(ref), "sop": sop,
         "doIt": {"tier": doit[0], "label": doit[1]} if doit else None,
+        "watch": watch or WATCH_DEFAULT[area],
     })
 assert len(out) == STAGES[-1][2], (len(out), STAGES[-1][2])
 ranges = {}
@@ -42,6 +45,7 @@ json.dump({"stages": [{"id": s[0], "name": s[1], "range": ranges[s[0]]} for s in
           open(os.path.join(ROOT, "src", "lib", "seed", "curriculum.json"), "w"), indent=1, ensure_ascii=False)
 
 L = ["# Daily curriculum: one lesson, one topic, one action", "",
+     "Written in plain English: short sentences, numbered steps, and every term explained in [Words to know](glossary.md).", "",
      "Helix delivers the whole programme as a daily habit. Each day has **one short lesson**, **one topic** and **one clear action**, plus the offer: *I'll do it for you if you want.* Tapping that creates an approval; nothing changes until you approve.", "",
      "The sequence is ordered by store stage: numbers first, then conversion, retention, creative and ads, more channels, promotions and peak, then scale. Stores that already have a stage covered can mark days done and move on. After the last day the daily loop continues with tasks raised by [Insights](audit-engine.md) and the weekly rhythm from the [Compound Plan](compound-daily-plan.md).", "",
      "This file is generated from `scripts/curriculum_source.py` by `python3 scripts/build_curriculum.py`, which also writes `src/lib/seed/curriculum.json` for the app (Today screen and roadmap timeline).", "",
@@ -55,8 +59,17 @@ for s in STAGES:
     L.append("")
 L += ["## Day detail", ""]
 for d in out:
-    L += [f'### Day {d["day"]}: {d["title"]}', "", f'*Topic: {d["topic"]} · Stage {d["stage"]} · {d["minutes"]} minutes · SOP {d["sop"]}*', "", f'**Lesson.** {d["lesson"]}', "", "**Action.**", ""]
+    L += [f'### Day {d["day"]}: {d["title"]}', "", f'*Topic: {d["topic"]} · Stage {d["stage"]} · {d["minutes"]} minutes · SOP {d["sop"]}*', "", f'**Why it matters.** {d["lesson"]}', "", "**How to do it.**", ""]
     L += [f"{i+1}. {st}" for i, st in enumerate(d["steps"])]
-    L += ["", f'**I\'ll do it for you:** {d["doIt"]["label"]} ({d["doIt"]["tier"].title()} plan, with your approval).' if d["doIt"] else "**I'll do it for you:** not for this one. It is quick to do yourself and you learn the most by doing it.", ""]
+    L += ["", f'**Want me to do it for you?** {d["doIt"]["label"]} ({d["doIt"]["tier"].title()} plan, after you approve).' if d["doIt"] else "**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.", ""]
+    if d["watch"]:
+        L += [f'**See the effect.** Update your numbers each morning. Over the next 7 days, watch: {d["watch"]}.', ""]
 open(os.path.join(ROOT, "docs", "daily-curriculum.md"), "w").write("\n".join(L))
 print("days", len(out))
+
+# Glossary: app JSON plus docs/glossary.md
+json.dump([{"term": t, "aka": a, "means": m} for t, a, m in G], open(os.path.join(ROOT, "src", "lib", "seed", "glossary.json"), "w"), indent=1, ensure_ascii=False)
+GL = ["# Words to know", "", "Plain-English meanings for every term Helix uses. The app shows the relevant ones next to each lesson and daily task.", "", "Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum.py`.", ""]
+GL += [f"- **{t}**{(' (' + ', '.join(a) + ')') if a else ''}: {m}" for t, a, m in sorted(G, key=lambda x: x[0].lower())]
+open(os.path.join(ROOT, "docs", "glossary.md"), "w").write("\n".join(GL) + "\n")
+print("terms", len(G))

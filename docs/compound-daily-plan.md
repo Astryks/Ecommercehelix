@@ -104,7 +104,7 @@ Pick the next item from your **Site Fix List** (Helix builds this from the audit
 
 Examples of a single daily site action:
 - [ ] Add one missing reason-to-buy line under the product title on your best seller.
-- [ ] Replace one hero image with a mobile-first 4:5 version.
+- [ ] Replace the main top image with a mobile-first 4:5 version.
 - [ ] Add 3 photo reviews to the top of a product page.
 - [ ] Write one FAQ answer for the most common pre-sale question this week.
 - [ ] Fix one broken link, slow image or confusing menu item.
@@ -372,7 +372,7 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 | Over-discounting | Store-wide sale every month, customers wait for sales | Limit big sales to 3 or 4 peaks a year. Suggest gift-with-purchase or bundles instead. |
 | Email neglect | Flows built years ago, no campaigns, list going cold | Flow health check. Weekly campaign draft. |
 | Sale hangover panic | Revenue drops after a sale and ads get rebuilt | Expect it. Hold structure, warm up evergreen spend gradually. |
-| Stockout from success | Scaling sells out the hero product weeks early | Weeks-of-cover alert linked to ad budget suggestions. |
+| Stockout from success | Scaling sells out a best seller weeks early | Weeks-of-cover alert linked to ad budget suggestions. |
 | Tracking breaks silently | Two "primary" purchase conversions, pixel currency mismatch | Daily tracking sanity check against Shopify orders. |
 | Founder bottleneck | Every task waits for the owner | Weekly delegation suggestion with a ready-to-send SOP. |
 

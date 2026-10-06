@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Review a Helix draft and launch it" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Review a Helix draft and launch it</title>
+<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
+<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Meta Ads Manager (simplified drawing)</text>
+<rect x="20" y="60" width="56" height="580" rx="0" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<rect x="36" y="84" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="132" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="180" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="228" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="276" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="324" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<text x="96" y="92" font-size="18" font-weight="800" fill="#0f172a" text-anchor="start">Ads Manager</text>
+<rect x="96" y="108" width="140" height="36" rx="6" fill="#eff6ff" stroke="#1877f2" stroke-width="1"/>
+<text x="166" y="131" font-size="13" font-weight="700" fill="#1877f2" text-anchor="middle">Campaigns</text>
+<rect x="246" y="108" width="140" height="36" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="316" y="131" font-size="13" font-weight="500" fill="#334155" text-anchor="middle">Ad sets</text>
+<rect x="396" y="108" width="140" height="36" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="466" y="131" font-size="13" font-weight="500" fill="#334155" text-anchor="middle">Ads</text>
+<rect x="96" y="160" width="720" height="30" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<text x="110" y="180" font-size="12" font-weight="700" fill="#475569" text-anchor="start">Off/On</text>
+<text x="180" y="180" font-size="12" font-weight="700" fill="#475569" text-anchor="start">Campaign</text>
+<text x="470" y="180" font-size="12" font-weight="700" fill="#475569" text-anchor="start">Spent</text>
+<text x="560" y="180" font-size="12" font-weight="700" fill="#475569" text-anchor="start">Purchases</text>
+<text x="660" y="180" font-size="12" font-weight="700" fill="#475569" text-anchor="start">Cost per purchase</text>
+<rect x="96" y="192" width="720" height="46" rx="0" fill="#fff7ed" stroke="#f1f5f9" stroke-width="1"/>
+<rect x="112" y="205" width="36" height="20" rx="10" fill="#cbd5e1" stroke="none" stroke-width="1"/>
+<circle cx="122" cy="215" r="7" fill="#fff"/>
+<text x="180" y="214" font-size="13" font-weight="700" fill="#0f172a" text-anchor="start">Helix-Cold-Broad-TEST-20261006</text>
+<text x="180" y="230" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Off · draft by Helix</text>
+<text x="470" y="220" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$0</text>
+<text x="560" y="220" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">0</text>
+<text x="660" y="220" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">n/a</text>
+<rect x="96" y="238" width="720" height="46" rx="0" fill="#fff" stroke="#f1f5f9" stroke-width="1"/>
+<rect x="112" y="251" width="36" height="20" rx="10" fill="#1877f2" stroke="none" stroke-width="1"/>
+<circle cx="138" cy="261" r="7" fill="#fff"/>
+<text x="180" y="260" font-size="13" font-weight="500" fill="#0f172a" text-anchor="start">01-Auto-Cold-Broad-BAU</text>
+<text x="180" y="276" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Active</text>
+<text x="470" y="266" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$952</text>
+<text x="560" y="266" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">22</text>
+<text x="660" y="266" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$43.27</text>
+<rect x="96" y="284" width="720" height="46" rx="0" fill="#fff" stroke="#f1f5f9" stroke-width="1"/>
+<rect x="112" y="297" width="36" height="20" rx="10" fill="#1877f2" stroke="none" stroke-width="1"/>
+<circle cx="138" cy="307" r="7" fill="#fff"/>
+<text x="180" y="306" font-size="13" font-weight="500" fill="#0f172a" text-anchor="start">05-Warm-Visitors180</text>
+<text x="180" y="322" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Active</text>
+<text x="470" y="312" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$280</text>
+<text x="560" y="312" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">14</text>
+<text x="660" y="312" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$20.00</text>
+<text x="330" y="230" font-size="12" font-weight="700" fill="#1877f2" text-anchor="start">Edit</text>
+<rect x="92" y="188" width="728" height="54" rx="10" fill="none" stroke="#e11d48" stroke-width="3"/>
+<rect x="96" y="360" width="720" height="250" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<text x="116" y="390" font-size="15" font-weight="800" fill="#0f172a" text-anchor="start">Before you switch it on</text>
+<rect x="116" y="408" width="18" height="18" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+<text x="146" y="422" font-size="14" font-weight="400" fill="#0f172a" text-anchor="start">Change the text to sound like you</text>
+<rect x="116" y="452" width="18" height="18" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+<text x="146" y="466" font-size="14" font-weight="400" fill="#0f172a" text-anchor="start">Add your own video or photos</text>
+<rect x="116" y="496" width="18" height="18" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+<text x="146" y="510" font-size="14" font-weight="400" fill="#0f172a" text-anchor="start">Check the link opens the right page</text>
+<rect x="116" y="540" width="18" height="18" rx="4" fill="#fff" stroke="#94a3b8" stroke-width="1"/>
+<text x="146" y="554" font-size="14" font-weight="400" fill="#0f172a" text-anchor="start">Check the daily budget is what you want</text>
+<line x1="60" y1="215" x2="96" y2="215" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="96" cy="215" r="5" fill="#e11d48"/>
+<circle cx="60" cy="215" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="60" y="221" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<line x1="420" y1="270" x2="362" y2="226" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="362" cy="226" r="5" fill="#e11d48"/>
+<circle cx="420" cy="270" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="420" y="276" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<line x1="150" y1="300" x2="130" y2="215" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="130" cy="215" r="5" fill="#e11d48"/>
+<circle cx="150" cy="300" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="150" y="306" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Review a Helix draft and</text>
+<text x="884" y="80" font-size="18" font-weight="800" fill="#fff">launch it</text>
+<circle cx="896" cy="111" r="13" fill="#e11d48"/><text x="896" y="116" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<text x="920" y="116" font-size="14" fill="#e2e8f0">Find the campaign Helix made. It</text>
+<text x="920" y="135" font-size="14" fill="#e2e8f0">starts with &#x27;Helix&#x27; and is</text>
+<text x="920" y="154" font-size="14" fill="#e2e8f0">switched off.</text>
+<circle cx="896" cy="186" r="13" fill="#e11d48"/><text x="896" y="191" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<text x="920" y="191" font-size="14" fill="#e2e8f0">Press Edit. Change the words, add</text>
+<text x="920" y="210" font-size="14" fill="#e2e8f0">your own photos or videos, and</text>
+<text x="920" y="229" font-size="14" fill="#e2e8f0">check the budget.</text>
+<circle cx="896" cy="261" r="13" fill="#e11d48"/><text x="896" y="266" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<text x="920" y="266" font-size="14" fill="#e2e8f0">When you are happy, flip the</text>
+<text x="920" y="285" font-size="14" fill="#e2e8f0">switch to On. That is you</text>
+<text x="920" y="304" font-size="14" fill="#e2e8f0">launching it. Helix never does</text>
+<text x="920" y="323" font-size="14" fill="#e2e8f0">this step.</text>
+<text x="24" y="668" font-size="12" fill="#64748b">Helix only creates paused drafts. Nothing spends money until you switch it on.</text>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

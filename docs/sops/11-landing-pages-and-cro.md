@@ -22,7 +22,7 @@ Avoid high-effort, low-impact work. A cheap theme tweak shipped this week usuall
 **Homepage (above the fold)**
 - [ ] Promo bar with the current offer or shipping promise.
 - [ ] Simple navigation, best sellers easy to reach. Visual menus on mobile.
-- [ ] Hero with one message and one call to action. Separate 4:5 mobile image.
+- [ ] Top banner with one message and one call to action. Separate 4:5 mobile image.
 - [ ] Email capture pop-up (timed, easy to close on mobile). Modal pop-ups typically capture 5 to 10% of visitors; footer forms capture a tiny fraction of that.
 
 **Product page (treat it as a landing page)**

@@ -2,6 +2,28 @@
 
 **Outcome:** a careful, profitable way to sell into new countries.
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** A careful way to start selling in other countries.
+>
+> **Why it matters:** New countries can add growth, but only if shipping, prices and ads make sense there.
+>
+> **Do this:**
+>
+> 1. Start with the country that already buys from you most.
+> 2. Set local prices and clear shipping costs.
+> 3. Test small ad budgets before you go big.
+>
+> **Words to know:**
+>
+> - **Conversion rate:** Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits.
+> - **CPA:** Cost per acquisition: how much ad money it took to get one sale.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 15.1: Is there demand?

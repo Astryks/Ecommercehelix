@@ -21,7 +21,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
 
   return (
     <div className="mx-auto max-w-6xl">
-      <Link href="/dashboard/campaigns" className="text-sm font-medium text-cyan-700 hover:underline">Campaign tracker</Link>
+      <Link href="/dashboard/campaigns" className="text-sm font-medium text-cyan-700 hover:underline">Your ads</Link>
       <h1 className="mt-2 text-3xl font-bold tracking-tight">Build a campaign</h1>
       <p className="mt-1 max-w-3xl text-slate-600">Two ways to work. Either way, Helix never switches on spend: you press Launch.</p>
 

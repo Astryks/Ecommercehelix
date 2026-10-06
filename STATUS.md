@@ -5,9 +5,13 @@ _Last updated: 6 Oct 2026 (Sydney)._
 ## Current state
 
 - Docs: README, compound daily plan, product design, pricing, MVP build plan, 18 SOPs, the 21-module Helix Playbook, the 64-day daily curriculum, audit engine design, email automation, execution model.
-- Web app (Next.js 16, Vercel-ready): marketing site, About, Learn, Auth.js sign-in, Stripe Checkout + webhook, dashboard with Today (day-by-day curriculum + insights + roadmap), Insights, Approvals, Daily scorecard, Campaign tracker, Campaign builder, Email automation, Ad Trends, Weekly report, Plan & billing. `npm run build` and `npm run lint` pass.
+- Web app (Next.js 16, Vercel-ready): marketing site, About, Learn, Auth.js sign-in, Stripe Checkout + webhook, dashboard with Today (profit box + day-by-day curriculum + insights + roadmap), What to fix (insights), Waiting for your OK (approvals), Your numbers (scorecard), Your ads (campaign tracker), Campaign builder, Email automation, Ad Trends, Weekly report, Plan & billing. `npm run build` and `npm run lint` pass.
 - Runs with zero keys in demo mode (in-memory store, demo login, instant plan switching).
 - **Meta integration (real):** Facebook Login for Business connect, long-lived token stored encrypted (AES-256-GCM), ad account / Page / pixel picker, daily sync via Vercel Cron plus Sync now, insights into the Campaign tracker, scorecard ad spend and audit rules, paused-only draft creation after approval, full audit log, disconnect. Mock mode runs it all without a Meta app. Setup steps: docs/meta-setup.md. `npm test` covers the guardrail and encryption.
+- **Plain words (Sid, 6 Oct 2026):** every lesson, day and screen uses short, simple sentences with numbered steps, and any tricky word is explained in one line (68-term glossary at docs/glossary.md and /learn/words; a "Words to know" box appears automatically on lessons and days). Each of the 21 playbook modules opens with an "In plain words" box (`scripts/plain_layer.py`); the original lesson bodies below it are kept and are more detailed.
+- **Drawings that show where to click:** 9 numbered SVG guides in `public/guides/` (Meta x4, Google x2, Shopify x2, Helix x1, made by `scripts/build_guides.py`), embedded in modules 1, 7, 8, 9 and 20 with official help links. They are clearly labelled as drawings, not real screenshots.
+- **Today screen:** a big profit-yesterday number, a one-line "what this means today", and a one-minute form (sales, orders, Meta ads auto-filled when connected, Google ads). Each day's strategy shows what, why, numbered how, "Want me to do it for you?" and what to watch.
+- **Home page:** a "Profit, profit, profit." section: profit is what counts; you need to spend on ads to make revenue and Helix keeps it profitable with break-even targets; Meta and Google can seem saturated but still work for most stores; "Let's grow a little every day."
 
 ### Real vs stubbed
 

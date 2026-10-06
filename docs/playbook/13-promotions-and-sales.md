@@ -4,6 +4,28 @@
 
 **Related SOP:** [15](../sops/15-promo-calendar-and-sales.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to plan sales and launches so they make money, not just noise.
+>
+> **Why it matters:** Busy periods can make your year. Planned sales are far more profitable than last-minute ones.
+>
+> **Do this:**
+>
+> 1. Mark your big dates for the year.
+> 2. For each sale, set a profit target and the discount you can afford.
+> 3. Warm up your list and audiences before the sale starts.
+>
+> **Words to know:**
+>
+> - **Warm audience:** People who know you: they visited, followed or watched your videos.
+> - **Margin:** The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 13.1: The promotional rhythm

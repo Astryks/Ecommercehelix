@@ -36,3 +36,4 @@ npm-debug.log*
 # Auto-generated agent hint files from the Next.js CLI
 AGENTS.md
 CLAUDE.md
+__pycache__/

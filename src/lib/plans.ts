@@ -39,7 +39,7 @@ export const PLANS: {
       "Daily ad and site Insights with cross-diagnosis",
       "Campaigns built in your account as paused drafts. You press Launch",
       "One ad platform: Meta or Google",
-      "Campaign tracker with scale / hold / kill calls",
+      "Your ads, with a plain call on each: spend more, wait, new ads or stop",
       "Auto scorecard from Shopify + one ad platform",
     ],
   },

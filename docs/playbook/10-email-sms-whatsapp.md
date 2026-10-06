@@ -4,6 +4,30 @@
 
 **Related SOPs:** [13](../sops/13-email-sms-flows.md), [14](../sops/14-list-growth-and-campaigns.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Emails and texts that send themselves when someone does something, plus regular newsletters.
+>
+> **Why it matters:** Your list is free to reach. Good automatic emails earn money every day while you sleep.
+>
+> **Do this:**
+>
+> 1. Turn on the welcome, abandoned checkout and thank-you emails first.
+> 2. Send a helpful email to your list once or twice a week.
+> 3. Check sales from email each week and fix the weakest flow.
+>
+> **Words to know:**
+>
+> - **Flow:** An email or text series that sends by itself when something happens, like a new sign-up.
+> - **Abandoned checkout:** When someone starts checkout but does not finish. A reminder email can bring them back.
+> - **Segment:** A smaller group of your list, like people who bought in the last 90 days.
+> - **Campaign email:** A one-off email you send to your list, like a new arrival announcement.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 10.1: Sign-up forms

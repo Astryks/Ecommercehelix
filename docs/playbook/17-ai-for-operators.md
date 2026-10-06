@@ -2,6 +2,28 @@
 
 **Outcome:** you use AI to save hours each week safely, without handing it the keys.
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to use AI tools safely to save hours each week.
+>
+> **Why it matters:** AI can draft ads, emails and reports fast. You still check and approve.
+>
+> **Do this:**
+>
+> 1. Give your AI helper notes about your brand, customers and offers.
+> 2. Use it for first drafts, then edit in your own words.
+> 3. Never let it spend money or send messages without your approval.
+>
+> **Words to know:**
+>
+> - **Creative:** The ad itself: the picture or video plus the words.
+> - **Campaign email:** A one-off email you send to your list, like a new arrival announcement.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 17.1: An AI operating system

@@ -46,33 +46,33 @@ export function recommend(c: Campaign, t: Targets): { rec: Recommendation; reaso
   const breakEvenRoas = 1 / (1 - t.vcrPct / 100);
   const [fine, high] = FREQ[c.layer];
 
-  if (c.status === "Paused") return { rec: "Hold", reason: "Paused. Review before relaunching." };
+  if (c.status === "Paused") return { rec: "Hold", reason: "Switched off. Check it before you turn it back on." };
   if (c.status === "Learning" || c.daysSinceEdit < 3)
-    return { rec: "Hold", reason: `Edited ${c.daysSinceEdit} day(s) ago. Let it learn for 3 to 7 days.` };
+    return { rec: "Hold", reason: `Changed ${c.daysSinceEdit} day(s) ago. Leave it alone for 3 to 7 days so it can learn.` };
 
   if (c.channel === "Google") {
-    if (c.spend < 2 * good) return { rec: "Hold", reason: "Not enough spend to judge yet." };
-    if (m.roas >= breakEvenRoas * 1.5) return { rec: "Scale", reason: `ROAS ${m.roas.toFixed(2)} well above break-even ${breakEvenRoas.toFixed(2)}. Raise budget to $${Math.round(c.budget * 1.2)}/day in Google Ads (you make this change).` };
-    if (m.roas < breakEvenRoas) return { rec: "Kill", reason: `ROAS ${m.roas.toFixed(2)} below break-even ${breakEvenRoas.toFixed(2)}. Helix can pause it after your approval; then fix feed and negatives.` };
-    return { rec: "Hold", reason: `ROAS ${m.roas.toFixed(2)} between break-even and target. Optimise search terms and feed.` };
+    if (c.spend < 2 * good) return { rec: "Hold", reason: "Has not spent enough to judge yet. Check again in a few days." };
+    if (m.roas >= breakEvenRoas * 1.5) return { rec: "Scale", reason: `Making $${m.roas.toFixed(2)} of sales for each $1, well above your break-even of $${breakEvenRoas.toFixed(2)}. Raise the budget to $${Math.round(c.budget * 1.2)}/day in Google Ads (you make this change).` };
+    if (m.roas < breakEvenRoas) return { rec: "Kill", reason: `Making only $${m.roas.toFixed(2)} of sales for each $1, below your break-even of $${breakEvenRoas.toFixed(2)}, so it loses money. Helix can pause it after you approve. Then tidy the product list and block wasted searches.` };
+    return { rec: "Hold", reason: `Making $${m.roas.toFixed(2)} for each $1: above break-even but not great. Block searches that waste money and tidy the product list.` };
   }
 
-  if (c.spend < good) return { rec: "Hold", reason: `Spent $${c.spend.toFixed(0)}, under one target CPA ($${good.toFixed(0)}). Wait for signal.` };
+  if (c.spend < good) return { rec: "Hold", reason: `Spent $${c.spend.toFixed(0)} so far. Wait until it has spent at least $${good.toFixed(0)} (one good sale) before judging.` };
   if ((c.purchases === 0 && c.spend >= bad) || (m.cpa !== null && m.cpa >= bad))
-    return { rec: "Kill", reason: `CPA ${m.cpa ? "$" + m.cpa.toFixed(0) : "none"} vs bad line $${bad.toFixed(0)} for ${c.layer}. Helix can pause it after your approval.` };
+    return { rec: "Kill", reason: m.cpa ? `Each sale costs $${m.cpa.toFixed(0)}. Anything over $${bad.toFixed(0)} loses money here. Helix can pause it after you approve.` : `Spent $${c.spend.toFixed(0)} with no sales. Helix can pause it after you approve.` };
   if (c.frequency > high || (m.hookRate !== null && m.hookRate < 20) || m.ctr < 0.5)
     return {
       rec: "Refresh creative",
       reason:
         c.frequency > high
-          ? `Frequency ${c.frequency.toFixed(1)} above ${high} for ${c.layer}. Helix can add a new batch as paused ads.`
+          ? `The same people have seen these ads ${c.frequency.toFixed(1)} times (over ${high} is too many). Helix can add fresh ads, switched off for you to check.`
           : m.ctr < 0.5
-            ? `Outbound CTR ${m.ctr.toFixed(2)}% under 0.5%. New message or hooks.`
-            : `Hook rate ${m.hookRate?.toFixed(0)}% is weak. Test new first 3 seconds.`,
+            ? `Only ${m.ctr.toFixed(2)} in 100 people click (under 0.5 is low). Try a new message or new opening lines.`
+            : `Only ${m.hookRate?.toFixed(0)}% watch the first 3 seconds. Try a new opening.`,
     };
   if (m.cpa !== null && m.cpa <= good && c.frequency <= fine)
-    return { rec: "Scale", reason: `CPA $${m.cpa.toFixed(0)} at or under $${good.toFixed(0)}, frequency ${c.frequency.toFixed(1)}. Raise budget to $${Math.round(c.budget * 1.2)}/day in Ads Manager (you make this change).` };
-  return { rec: "Hold", reason: `CPA $${m.cpa?.toFixed(0)} between good ($${good.toFixed(0)}) and bad ($${bad.toFixed(0)}). Keep watching.` };
+    return { rec: "Scale", reason: `Each sale costs $${m.cpa.toFixed(0)}, at or under your good line of $${good.toFixed(0)}. Raise the budget to $${Math.round(c.budget * 1.2)}/day in Ads Manager (you make this change).` };
+  return { rec: "Hold", reason: `Each sale costs $${m.cpa?.toFixed(0)}: between good ($${good.toFixed(0)}) and too high ($${bad.toFixed(0)}). Keep watching.` };
 }
 
 export const EXAMPLE_TARGETS: Targets = { aov: 92, targetMerPct: 30, vcrPct: 40 };
@@ -86,7 +86,7 @@ export const EXAMPLE_CAMPAIGNS: Campaign[] = [
   { id: "c5", channel: "Meta", name: "05-Manual-Warm-Visitors180-BAU", objective: "Sales · Purchase", layer: "Warm", budget: 40, spend: 280, purchases: 14, revenue: 1330, impressions: 21000, clicks: 330, threeSecViews: 6900, frequency: 1.9, daysSinceEdit: 8, status: "Active", testStage: "Evergreen" },
   { id: "c6", channel: "Meta", name: "06-Manual-Hot-CartCheckout-BAU", objective: "Sales · Purchase", layer: "Hot", budget: 15, spend: 105, purchases: 1, revenue: 88, impressions: 6000, clicks: 60, threeSecViews: 0, frequency: 3.4, daysSinceEdit: 20, status: "Active", testStage: "Evergreen" },
   { id: "c7", channel: "Google", name: "G1-Brand-Search", objective: "Sales · Purchase", layer: "Warm", budget: 25, spend: 168, purchases: 19, revenue: 1820, impressions: 3100, clicks: 610, threeSecViews: 0, frequency: 1, daysSinceEdit: 30, status: "Active", testStage: "Evergreen" },
-  { id: "c8", channel: "Google", name: "G2-PMax-FeedOnly-Hero-NonBrand", objective: "Sales · tROAS 2.2", layer: "Cold", budget: 70, spend: 470, purchases: 9, revenue: 790, impressions: 61000, clicks: 900, threeSecViews: 0, frequency: 1, daysSinceEdit: 14, status: "Active", testStage: "Scaling" },
+  { id: "c8", channel: "Google", name: "G2-PMax-FeedOnly-BestSellers-NonBrand", objective: "Sales · tROAS 2.2", layer: "Cold", budget: 70, spend: 470, purchases: 9, revenue: 790, impressions: 61000, clicks: 900, threeSecViews: 0, frequency: 1, daysSinceEdit: 14, status: "Active", testStage: "Scaling" },
   { id: "c9", channel: "Google", name: "G3-Search-NonBrand-Linen", objective: "Sales · Max conv value", layer: "Cold", budget: 30, spend: 205, purchases: 1, revenue: 92, impressions: 4200, clicks: 140, threeSecViews: 0, frequency: 1, daysSinceEdit: 18, status: "Active", testStage: "Testing" },
   { id: "c10", channel: "TikTok", name: "T1-Purchase-Broad-Spark", objective: "Sales · Complete payment", layer: "Cold", budget: 50, spend: 340, purchases: 4, revenue: 350, impressions: 88000, clicks: 300, threeSecViews: 14100, frequency: 1.5, daysSinceEdit: 7, status: "Active", testStage: "Testing" },
 ];

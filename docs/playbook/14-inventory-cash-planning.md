@@ -4,6 +4,28 @@
 
 **Related SOP:** [17](../sops/17-inventory-cash-planning.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to keep the right amount of stock and enough cash in the bank.
+>
+> **Why it matters:** Running out of stock stops sales. Too much stock ties up cash you need for ads.
+>
+> **Do this:**
+>
+> 1. Check how many weeks of stock you have for your best sellers.
+> 2. Order before you drop below your safe level.
+> 3. Keep a simple 13-week cash forecast and update it weekly.
+>
+> **Words to know:**
+>
+> - **Weeks of cover:** How many weeks your stock will last at the current sales speed.
+> - **Cash forecast:** A week-by-week list of money coming in and going out, so you can see tight weeks early.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 14.1: Range planning

@@ -6,6 +6,30 @@ This module is the bridge between strategy and Ads Manager. The [campaign brief 
 
 **Related SOPs:** [05 Meta structure](../sops/05-meta-structure-and-scaling.md), [06 Meta daily optimisation](../sops/06-meta-daily-optimisation.md), [07 Creative testing](../sops/07-creative-testing.md), [09 Google](../sops/09-google-shopping-pmax-search.md), [15 Promo calendar](../sops/15-promo-calendar-and-sales.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to plan one ad campaign from start to finish.
+>
+> **Why it matters:** A plan with clear numbers tells you when to spend more, wait or stop, so you never guess.
+>
+> **Do this:**
+>
+> 1. Set your target cost per sale from your break-even numbers.
+> 2. Choose the goal (sales), the audience and the daily budget.
+> 3. Launch, wait for enough data, then decide: spend more, wait, new ads or stop.
+>
+> **Words to know:**
+>
+> - **Campaign:** The top level in an ad account. It holds the goal, like getting sales.
+> - **Ad set:** The middle level in Meta. It holds who sees the ads, where, and often the budget.
+> - **Target CPA:** The cost per sale you aim for so each sale still leaves you profit.
+> - **Break-even CPA:** The most you can pay in ads for one sale before that sale stops making money.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 6.1: Numbers first
@@ -149,7 +173,7 @@ Engaging ad, poor CPA = page or offer mismatch. Low CTR across a batch = message
 | --- | --- | --- |
 | Brand search | Protect your name cheaply | Small budget, impression share or manual bids, brand terms only |
 | Brand shopping (optional) | Show your products on brand searches | Low priority, brand queries |
-| Feed-only PMax / Shopping | Non-brand prospecting | Brand exclusions, products grouped by hero or margin tier, target ROAS above break-even |
+| Feed-only PMax / Shopping | Non-brand prospecting | Brand exclusions, products grouped by best sellers or margin tier, target ROAS above break-even |
 | Non-brand search | Control on high-intent terms | Max 5 keywords per ad group, shared negatives, up to 15 headlines |
 | Competitor search | Capture comparison shoppers | Honest comparison ads, monitor costs closely |
 | Demand Gen / YouTube | Visual discovery | Judge with view-through metrics |

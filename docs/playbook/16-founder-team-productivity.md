@@ -4,6 +4,27 @@
 
 **Related SOP:** [18](../sops/18-founder-rhythm-hiring.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** How to spend your time on what grows the business, and when to get help.
+>
+> **Why it matters:** You are the bottleneck. A simple weekly rhythm keeps you focused and calm.
+>
+> **Do this:**
+>
+> 1. Block 15 minutes each morning for your numbers and one task.
+> 2. Write down tasks you repeat and hand them off when you can.
+> 3. Hire for the job that frees most of your time first.
+>
+> **Words to know:**
+>
+> - **KPI:** Key performance indicator: one of the few numbers you watch to know if things are working.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 16.1: Personal operating basics

@@ -4,12 +4,13 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
 import {
-  completeTask, createApproval, decideApproval, getAccount, saveSettings, upsertDays, clearExampleData, addProductLine,
+  completeTask, createApproval, decideApproval, getAccount, getDays, saveSettings, upsertDays, clearExampleData, addProductLine,
 } from "@/lib/repo";
 import { findActionable } from "@/lib/actionable";
 import { PLAN_RANK } from "@/lib/plans";
 import { NUM_FIELDS, parseCsv, type DayInput } from "@/lib/scorecard";
 import { signalsFor } from "@/lib/signals";
+import { costRatios, quickMerge } from "@/lib/today";
 import { createPausedDraft, draftInputFor } from "@/lib/meta/service";
 import { campaignParams, draftNames, starterCopy } from "@/lib/meta/drafts";
 import { logAudit } from "@/lib/meta/store";
@@ -80,6 +81,19 @@ export async function saveDay(form: FormData) {
   const d = { date, source: "manual" } as DayInput;
   for (const f of NUM_FIELDS) d[f] = Math.max(0, Number(form.get(f)) || 0);
   await upsertDays(u.id, [d]);
+  await completeTask(u.id, "day-2");
+  revalidatePath("/dashboard", "layout");
+}
+
+/** The one quick form on Today: yesterday's sales, orders and ad spend. Costs are estimated from recent history. */
+export async function quickUpdate(form: FormData) {
+  const u = await requireUser();
+  const date = String(form.get("date"));
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
+  const n = (k: string) => Math.max(0, Number(form.get(k)) || 0);
+  const days = await getDays(u.id);
+  const merged = quickMerge(days.find((d) => d.date === date), date, { revenue: n("revenue"), orders: Math.round(n("orders")), adMeta: n("adMeta"), adGoogle: n("adGoogle") }, costRatios(days));
+  await upsertDays(u.id, [merged]);
   await completeTask(u.id, "day-2");
   revalidatePath("/dashboard", "layout");
 }

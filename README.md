@@ -91,6 +91,8 @@ Next.js on Vercel, Postgres, Stripe Billing, Vercel AI SDK with hosted LLMs and 
 
 ## The web app
 
+Everything is written in plain words: short sentences, numbered steps, and a one-line explanation for any tricky word ([glossary](docs/glossary.md), also at `/learn/words`). Setup lessons include numbered drawings that show where to click (`public/guides/`). The Today screen leads with yesterday's profit and one line on what it means.
+
 A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root and deploys to Vercel.
 
 | Area | Route | Status |
@@ -103,7 +105,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Approvals queue | `/dashboard/approvals` | Real; Meta paused drafts execute for real when connected |
 | Connections (Meta connect, asset picker, sync, disconnect, activity log) | `/dashboard/integrations`, `/api/meta/*`, `/api/cron/meta-sync` | Real (mock mode without a Meta app) |
 | Daily scorecard (entry, CSV import, rollups, flags, sparklines, products) | `/dashboard/scorecard` | Real; syncs stubbed; example data until cleared |
-| Campaign tracker (scale / hold / refresh / kill) | `/dashboard/campaigns` | Real Meta rows when connected; Google and TikTok EXAMPLE |
+| Your ads (campaign tracker: spend more / wait / new ads needed / stop) | `/dashboard/campaigns` | Real Meta rows when connected; Google and TikTok EXAMPLE |
 | Campaign builder (Draft & you launch, Guide me) | `/dashboard/campaigns/new` | Real paused-draft push to Meta after approval |
 | Email automation (9 flows with drafts) | `/dashboard/email` | Drafts real; Klaviyo/Shopify Email setup stubbed |
 | Ad Trends, Weekly report | `/dashboard/trends`, `/dashboard/report` | Seeded |

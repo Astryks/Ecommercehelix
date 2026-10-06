@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Write the ad and add tracking" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Write the ad and add tracking</title>
+<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
+<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Meta Ads Manager (simplified drawing)</text>
+<rect x="20" y="60" width="56" height="580" rx="0" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<rect x="36" y="84" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="132" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="180" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="228" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="276" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="36" y="324" width="24" height="24" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<text x="96" y="92" font-size="18" font-weight="800" fill="#0f172a" text-anchor="start">Ads Manager</text>
+<rect x="96" y="108" width="140" height="36" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="166" y="131" font-size="13" font-weight="500" fill="#334155" text-anchor="middle">Campaigns</text>
+<rect x="246" y="108" width="140" height="36" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="316" y="131" font-size="13" font-weight="500" fill="#334155" text-anchor="middle">Ad sets</text>
+<rect x="396" y="108" width="140" height="36" rx="6" fill="#eff6ff" stroke="#1877f2" stroke-width="1"/>
+<text x="466" y="131" font-size="13" font-weight="700" fill="#1877f2" text-anchor="middle">Ads</text>
+<rect x="96" y="160" width="420" height="460" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="116" y="190" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Identity</text>
+<rect x="116" y="198" width="380" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="220.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Your Facebook Page · Your Instagram</text>
+<text x="116" y="262" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Media</text>
+<rect x="116" y="270" width="380" height="70" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+<text x="306" y="312" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">+ Add video or image</text>
+<text x="116" y="368" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Primary text</text>
+<rect x="116" y="376" width="380" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="398.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Real reviews, easy returns...</text>
+<text x="116" y="428" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Headline</text>
+<rect x="116" y="436" width="380" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="458.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">See what customers love</text>
+<text x="116" y="488" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Website URL</text>
+<rect x="116" y="496" width="380" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="518.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">https://yourstore.com</text>
+<text x="116" y="548" font-size="12" font-weight="600" fill="#475569" text-anchor="start">URL parameters</text>
+<rect x="116" y="556" width="380" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="126" y="578.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">utm_source=facebook&amp;...</text>
+<rect x="536" y="160" width="280" height="400" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<text x="676" y="188" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">Preview</text>
+<rect x="566" y="204" width="220" height="300" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<rect x="578" y="236" width="196" height="180" rx="6" fill="#e2e8f0" stroke="none" stroke-width="1"/>
+<rect x="578" y="428" width="140" height="12" rx="4" fill="#cbd5e1" stroke="none" stroke-width="1"/>
+<rect x="578" y="452" width="110" height="28" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="633.0" y="471.0" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Shop now</text>
+<rect x="716" y="580" width="100" height="32" rx="6" fill="#1877f2" stroke="#1877f2" stroke-width="1"/>
+<text x="766.0" y="601.0" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Publish</text>
+<line x1="76" y1="214" x2="116" y2="214" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="116" cy="214" r="5" fill="#e11d48"/>
+<circle cx="76" cy="214" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="76" y="220" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<line x1="76" y1="305" x2="116" y2="305" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="116" cy="305" r="5" fill="#e11d48"/>
+<circle cx="76" cy="305" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="76" y="311" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<line x1="76" y1="394" x2="116" y2="394" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="116" cy="394" r="5" fill="#e11d48"/>
+<circle cx="76" cy="394" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="76" y="400" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<line x1="76" y1="570" x2="116" y2="570" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="116" cy="570" r="5" fill="#e11d48"/>
+<circle cx="76" cy="570" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="76" y="576" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<line x1="760" y1="540" x2="766" y2="580" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="766" cy="580" r="5" fill="#e11d48"/>
+<circle cx="760" cy="540" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="760" y="546" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Write the ad and add</text>
+<text x="884" y="80" font-size="18" font-weight="800" fill="#fff">tracking</text>
+<circle cx="896" cy="111" r="13" fill="#e11d48"/><text x="896" y="116" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<text x="920" y="116" font-size="14" fill="#e2e8f0">Choose your Facebook Page and</text>
+<text x="920" y="135" font-size="14" fill="#e2e8f0">Instagram account. The ad runs</text>
+<text x="920" y="154" font-size="14" fill="#e2e8f0">from them.</text>
+<circle cx="896" cy="186" r="13" fill="#e11d48"/><text x="896" y="191" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<text x="920" y="191" font-size="14" fill="#e2e8f0">Add your video or photo. Tall</text>
+<text x="920" y="210" font-size="14" fill="#e2e8f0">video works best.</text>
+<circle cx="896" cy="242" r="13" fill="#e11d48"/><text x="896" y="247" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<text x="920" y="247" font-size="14" fill="#e2e8f0">Write the main text and a short</text>
+<text x="920" y="266" font-size="14" fill="#e2e8f0">headline. Start with your best</text>
+<text x="920" y="285" font-size="14" fill="#e2e8f0">opening line.</text>
+<circle cx="896" cy="317" r="13" fill="#e11d48"/><text x="896" y="322" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<text x="920" y="322" font-size="14" fill="#e2e8f0">Add your store link and UTM tags,</text>
+<text x="920" y="341" font-size="14" fill="#e2e8f0">so you can see sales from this ad.</text>
+<circle cx="896" cy="373" r="13" fill="#e11d48"/><text x="896" y="378" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<text x="920" y="378" font-size="14" fill="#e2e8f0">Check the preview. Press Publish</text>
+<text x="920" y="397" font-size="14" fill="#e2e8f0">only when you are happy.</text>
+<text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

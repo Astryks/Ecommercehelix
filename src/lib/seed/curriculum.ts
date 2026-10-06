@@ -16,6 +16,8 @@ export type CurriculumDay = {
   learn: { slug: string; anchor: string; label: string; ref: string };
   sop: string;
   doIt: { tier: PlanId; label: string } | null;
+  /** Which dashboard number shows the effect of this day's action. */
+  watch: string | null;
 };
 
 export type Stage = { id: number; name: string; range: string };

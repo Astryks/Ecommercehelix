@@ -4,6 +4,29 @@
 
 **Related SOPs:** [03 Constraint diagnosis](../sops/03-constraint-diagnosis.md)
 
+
+<!-- plain:start -->
+> **In plain words**
+>
+> **What it is:** Before you change anything, find the one thing holding profit back.
+>
+> **Why it matters:** Fixing the wrong thing wastes weeks. Usually only one problem is the real blocker at a time.
+>
+> **Do this:**
+>
+> 1. Look at your numbers: visits, conversion rate, order value and ad costs.
+> 2. Find the weakest one compared with a healthy range.
+> 3. Fix only that one this week, then check again.
+>
+> **Words to know:**
+>
+> - **Conversion rate:** Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits.
+> - **AOV:** Average order value: total sales divided by number of orders.
+> - **CPA:** Cost per acquisition: how much ad money it took to get one sale.
+>
+> All words are explained in the [glossary](../glossary.md).
+<!-- plain:end -->
+
 ---
 
 ## Lesson 2.1: Three kinds of constraint

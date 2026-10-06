@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Set a free shipping amount" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Set a free shipping amount</title>
+<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
+<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Shopify admin (simplified drawing)</text>
+<rect x="20" y="60" width="180" height="580" rx="0" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+<text x="40" y="100" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Settings</text>
+<text x="40" y="140" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  General</text>
+<text x="40" y="180" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Payments</text>
+<text x="40" y="220" font-size="14" font-weight="700" fill="#008060" text-anchor="start">  Shipping and delivery</text>
+<text x="40" y="260" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Taxes</text>
+<text x="230" y="100" font-size="18" font-weight="800" fill="#0f172a" text-anchor="start">Shipping and delivery</text>
+<rect x="230" y="120" width="580" height="120" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="150" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">General shipping rates</text>
+<text x="250" y="176" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Domestic · Standard $9.95</text>
+<rect x="690" y="190" width="100" height="32" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="740.0" y="211.0" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Add rate</text>
+<rect x="20" y="60" width="820" height="580" fill="#0f172a" opacity="0.3"/>
+<rect x="300" y="250" width="460" height="330" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="324" y="284" font-size="17" font-weight="800" fill="#0f172a" text-anchor="start">Add rate</text>
+<text x="324" y="306" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Rate name</text>
+<rect x="324" y="314" width="410" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="334" y="336.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Free shipping</text>
+<text x="324" y="366" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Price</text>
+<rect x="324" y="374" width="410" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="334" y="396.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$0.00</text>
+<rect x="324" y="430" width="18" height="18" rx="4" fill="#008060" stroke="#008060" stroke-width="1"/>
+<text x="352" y="444" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Offer free shipping over a minimum amount</text>
+<text x="324" y="462" font-size="12" font-weight="600" fill="#475569" text-anchor="start">Minimum order amount</text>
+<rect x="324" y="470" width="410" height="34" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="334" y="492.0" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">$120.00</text>
+<rect x="654" y="530" width="80" height="32" rx="6" fill="#008060" stroke="#008060" stroke-width="1"/>
+<text x="694.0" y="551.0" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Done</text>
+<line x1="210" y1="220" x2="196" y2="220" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="196" cy="220" r="5" fill="#e11d48"/>
+<circle cx="210" cy="220" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="210" y="226" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<line x1="800" y1="206" x2="790" y2="206" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="790" cy="206" r="5" fill="#e11d48"/>
+<circle cx="800" cy="206" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="800" y="212" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<line x1="290" y1="440" x2="324" y2="440" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="324" cy="440" r="5" fill="#e11d48"/>
+<circle cx="290" cy="440" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="290" y="446" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<line x1="290" y1="492" x2="324" y2="492" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="324" cy="492" r="5" fill="#e11d48"/>
+<circle cx="290" cy="492" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="290" y="498" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<line x1="754" y1="546" x2="734" y2="546" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="734" cy="546" r="5" fill="#e11d48"/>
+<circle cx="754" cy="546" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="754" y="552" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Set a free shipping amount</text>
+<circle cx="896" cy="87" r="13" fill="#e11d48"/><text x="896" y="92" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<text x="920" y="92" font-size="14" fill="#e2e8f0">Open Settings, then Shipping and</text>
+<text x="920" y="111" font-size="14" fill="#e2e8f0">delivery.</text>
+<circle cx="896" cy="143" r="13" fill="#e11d48"/><text x="896" y="148" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<text x="920" y="148" font-size="14" fill="#e2e8f0">In your shipping rates, press Add</text>
+<text x="920" y="167" font-size="14" fill="#e2e8f0">rate.</text>
+<circle cx="896" cy="199" r="13" fill="#e11d48"/><text x="896" y="204" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<text x="920" y="204" font-size="14" fill="#e2e8f0">Name it Free shipping and turn on</text>
+<text x="920" y="223" font-size="14" fill="#e2e8f0">&#x27;offer free shipping over a</text>
+<text x="920" y="242" font-size="14" fill="#e2e8f0">minimum amount&#x27;.</text>
+<circle cx="896" cy="274" r="13" fill="#e11d48"/><text x="896" y="279" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<text x="920" y="279" font-size="14" fill="#e2e8f0">Type your amount: about 1.3 times</text>
+<text x="920" y="298" font-size="14" fill="#e2e8f0">your AOV.</text>
+<circle cx="896" cy="330" r="13" fill="#e11d48"/><text x="896" y="335" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<text x="920" y="335" font-size="14" fill="#e2e8f0">Press Done, then Save.</text>
+<text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

@@ -5,10 +5,10 @@ import { BarChart3, BookOpen, CalendarCheck, CreditCard, FileText, Inbox, Lightb
 
 const LINKS = [
   { href: "/dashboard", label: "Today", icon: CalendarCheck },
-  { href: "/dashboard/insights", label: "Insights", icon: Lightbulb },
-  { href: "/dashboard/approvals", label: "Approvals", icon: Inbox },
-  { href: "/dashboard/scorecard", label: "Daily scorecard", icon: BarChart3 },
-  { href: "/dashboard/campaigns", label: "Campaign tracker", icon: Megaphone },
+  { href: "/dashboard/insights", label: "What to fix", icon: Lightbulb },
+  { href: "/dashboard/approvals", label: "Waiting for your OK", icon: Inbox },
+  { href: "/dashboard/scorecard", label: "Your numbers", icon: BarChart3 },
+  { href: "/dashboard/campaigns", label: "Your ads", icon: Megaphone },
   { href: "/dashboard/email", label: "Email automation", icon: Mail },
   { href: "/dashboard/trends", label: "Ad Trends", icon: Sparkles },
   { href: "/dashboard/report", label: "Weekly report", icon: FileText },
