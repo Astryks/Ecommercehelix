@@ -1,16 +1,17 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getDays, getSeasonPlans, getSettings, listApprovals, streakFrom } from "@/lib/repo";
 import { countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
-import { costRatios, summarise } from "@/lib/today";
+import { costRatios, money, summarise } from "@/lib/today";
 import { termsIn } from "@/lib/glossary";
 import { guidesForDay } from "@/lib/guides";
 import { ProfitToday } from "@/components/dashboard/ProfitToday";
 import { getSnapshot } from "@/lib/meta/store";
 import { AREA_STYLE } from "@/lib/seed/curriculum";
 import { track } from "@/lib/tracks";
+import { metricsFor, periodRanges } from "@/lib/analytics";
 import { insightsFor } from "@/lib/signals";
 import { dayProgress } from "@/lib/progress";
 import { PLAN_RANK, planName } from "@/lib/plans";
@@ -56,6 +57,10 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   // Seasonal alerts from the real date: the most urgent one, plus any other active plan the user added.
   const alerts = seasonalAlerts(today, acct.country);
   const upcoming = upcomingEvents(today, acct.country, 200).slice(0, 6);
+  const wk = periodRanges("week", days.at(-1)?.date ?? yesterday);
+  const w = metricsFor(days, wk.cur, settings);
+  const wPrev = metricsFor(days, wk.prev, settings);
+  const wChange = wPrev.contribution ? Math.round(((w.contribution - wPrev.contribution) / Math.abs(wPrev.contribution)) * 100) : null;
   const planKeys = new Set(plans.map((p) => p.planKey));
   const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key));
   const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a));
@@ -126,6 +131,19 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} action={quickUpdate}
           prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
       </div>
+
+      <Link href="/dashboard/analytics" className="card mt-4 flex flex-wrap items-center justify-between gap-4 p-4 transition hover:ring-2 hover:ring-cyan-200">
+        <span className="flex items-center gap-3">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700"><BarChart3 className="h-5 w-5" aria-hidden /></span>
+          <span>
+            <span className="block font-semibold text-slate-900">Your Dashboard: last 7 days</span>
+            <span className="block text-sm text-slate-600">
+              Revenue {money(w.netRevenue)} · profit {money(w.contribution)}{wChange !== null ? ` (${wChange >= 0 ? "up" : "down"} ${Math.abs(wChange)}% on the week before)` : ""} · MER {w.merPct.toFixed(1)}%
+            </span>
+          </span>
+        </span>
+        <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See weekly, monthly and yearly charts <ArrowRight className="h-4 w-4" aria-hidden /></span>
+      </Link>
 
       <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,1fr)_330px]">
         <section aria-labelledby="today-h" className="space-y-5">

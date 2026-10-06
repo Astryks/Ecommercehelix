@@ -117,25 +117,81 @@ export function parseCsv(text: string): DayInput[] {
   return out;
 }
 
-/** Deterministic example data: last 21 days. */
-export function exampleDays(today: string): DayInput[] {
+/** Day after the 4th Thursday of November. Kept here so scorecard stays dependency-free. */
+function bfDate(y: number): string {
+  const first = new Date(Date.UTC(y, 10, 1)).getUTCDay();
+  const thu = 1 + ((4 - first + 7) % 7) + 21;
+  return `${y}-11-${String(thu + 1).padStart(2, "0")}`;
+}
+
+/** Seasonal demand for the older example history (Australian retail calendar). */
+function seasonFor(date: string): { demand: number; discount: number; roas: number; refunds: number } {
+  const y = Number(date.slice(0, 4));
+  const md = date.slice(5);
+  const bf = bfDate(y);
+  const dayDiff = Math.round((Date.parse(date) - Date.parse(bf)) / 86_400_000);
+  if (dayDiff >= -2 && dayDiff <= 3) return { demand: 2.7, discount: 0.2, roas: 1.45, refunds: 0.03 };
+  if (md >= "11-01" && dayDiff < -2) return { demand: 0.88, discount: 0.06, roas: 0.9, refunds: 0.02 };
+  if (md >= "12-01" && md <= "12-18") return { demand: 1.35, discount: 0.07, roas: 1.15, refunds: 0.02 };
+  if (md >= "12-19" && md <= "12-25") return { demand: 0.75, discount: 0.06, roas: 0.95, refunds: 0.02 };
+  if (md >= "12-26" || md <= "01-05") return { demand: 1.4, discount: 0.15, roas: 1.25, refunds: 0.03 };
+  if (md <= "01-31") return { demand: 0.85, discount: 0.06, roas: 0.95, refunds: 0.045 };
+  if (md >= "02-07" && md <= "02-13") return { demand: 1.15, discount: 0.06, roas: 1.05, refunds: 0.02 };
+  if (md >= "02-20" && md <= "03-20") return { demand: 0.95, discount: 0.06, roas: 0.72, refunds: 0.02 }; // tired ads: a red patch to learn from
+  if (md >= "05-01" && md <= "05-10") return { demand: 1.3, discount: 0.06, roas: 1.15, refunds: 0.02 };
+  if (md >= "06-15" && md <= "06-30") return { demand: 1.35, discount: 0.12, roas: 1.2, refunds: 0.025 };
+  if (md >= "08-25" && md <= "09-06") return { demand: 1.15, discount: 0.06, roas: 1.05, refunds: 0.02 };
+  return { demand: 1, discount: 0.06, roas: 1, refunds: 0.02 };
+}
+
+/**
+ * Deterministic EXAMPLE data for demo mode: two years of daily numbers (so year views can compare
+ * with the year before). The most recent 21 days use the original example pattern. Older days add
+ * growth (the store is about half the size two years ago), seasonality, sale peaks and one patch of
+ * tired ads. Every row is marked example: true and is cleared with "Clear example data".
+ */
+export function exampleDays(today: string, total = 730): DayInput[] {
   const out: DayInput[] = [];
-  for (let i = 21; i >= 1; i--) {
+  for (let i = total; i >= 1; i--) {
     const d = new Date(today + "T12:00:00Z");
     d.setUTCDate(d.getUTCDate() - i);
     const date = d.toISOString().slice(0, 10);
-    const wave = Math.sin(i * 0.9) * 0.18 + (21 - i) * 0.012;
-    const orders = Math.round(22 * (1 + wave));
-    const revenue = Math.round(orders * (88 + Math.cos(i) * 6));
-    const adMeta = Math.round(330 * (1 + wave * 0.6));
-    const adGoogle = Math.round(95 + Math.sin(i) * 12);
-    const adTiktok = i % 3 === 0 ? 40 : 30;
+    if (i <= 21) {
+      const wave = Math.sin(i * 0.9) * 0.18 + (21 - i) * 0.012;
+      const orders = Math.round(22 * (1 + wave));
+      const revenue = Math.round(orders * (88 + Math.cos(i) * 6));
+      const adMeta = Math.round(330 * (1 + wave * 0.6));
+      const adGoogle = Math.round(95 + Math.sin(i) * 12);
+      const adTiktok = i % 3 === 0 ? 40 : 30;
+      out.push({
+        date, orders, newCustomerOrders: Math.round(orders * 0.62), units: Math.round(orders * 1.45), sessions: Math.round(orders / 0.022),
+        revenue, newCustomerRevenue: Math.round(revenue * 0.58), discounts: Math.round(revenue * 0.06), refunds: Math.round(revenue * 0.02),
+        cogs: Math.round(revenue * 0.29), shipping: orders * 9, paymentFees: Math.round(revenue * 0.026),
+        adMeta, adGoogle, adTiktok, adOther: 0, otherMarketing: 25,
+        metaRevenue: Math.round(adMeta * 2.6), googleRevenue: Math.round(adGoogle * 3.4), tiktokRevenue: Math.round(adTiktok * 1.6),
+        source: "example", example: true,
+      });
+      continue;
+    }
+    const age = (i - 21) / (total - 21); // 0 = recent, 1 = two years ago
+    const g = 1 - 0.5 * age;
+    const s = seasonFor(date);
+    const dow = d.getUTCDay();
+    const weekly = [0.9, 1.06, 1.04, 1.02, 1.0, 0.98, 0.92][dow];
+    const noise = 1 + Math.sin(i * 1.7) * 0.08 + Math.cos(i * 0.31) * 0.05;
+    const orders = Math.max(1, Math.round(22 * g * s.demand * weekly * noise));
+    const revenue = Math.round(orders * (86 + Math.cos(i) * 6 + (s.discount > 0.1 ? 14 : 0)));
+    const adScale = g * Math.pow(s.demand, 0.8);
+    const adMeta = Math.round(330 * adScale * (1 + Math.sin(i * 0.23) * 0.07));
+    const adGoogle = Math.round(95 * g * Math.pow(s.demand, 0.6) + Math.sin(i) * 10);
+    const adTiktok = i < 240 ? (i % 3 === 0 ? 40 : 30) : 0;
+    const newShare = 0.62 + 0.14 * age;
     out.push({
-      date, orders, newCustomerOrders: Math.round(orders * 0.62), units: Math.round(orders * 1.45), sessions: Math.round(orders / 0.022),
-      revenue, newCustomerRevenue: Math.round(revenue * 0.58), discounts: Math.round(revenue * 0.06), refunds: Math.round(revenue * 0.02),
-      cogs: Math.round(revenue * 0.29), shipping: orders * 9, paymentFees: Math.round(revenue * 0.026),
-      adMeta, adGoogle, adTiktok, adOther: 0, otherMarketing: 25,
-      metaRevenue: Math.round(adMeta * 2.6), googleRevenue: Math.round(adGoogle * 3.4), tiktokRevenue: Math.round(adTiktok * 1.6),
+      date, orders, newCustomerOrders: Math.round(orders * newShare), units: Math.round(orders * 1.45), sessions: Math.round(orders / (0.021 + 0.004 * (s.demand - 1))),
+      revenue, newCustomerRevenue: Math.round(revenue * (newShare - 0.04)), discounts: Math.round(revenue * s.discount), refunds: Math.round(revenue * s.refunds),
+      cogs: Math.round(revenue * (0.3 + 0.02 * age)), shipping: orders * 9, paymentFees: Math.round(revenue * 0.026),
+      adMeta, adGoogle: Math.max(0, adGoogle), adTiktok, adOther: 0, otherMarketing: 25,
+      metaRevenue: Math.round(adMeta * 2.6 * s.roas * (1 + Math.sin(i * 0.37) * 0.1)), googleRevenue: Math.round(Math.max(0, adGoogle) * 3.3 * Math.sqrt(s.roas)), tiktokRevenue: Math.round(adTiktok * 1.6),
       source: "example", example: true,
     });
   }

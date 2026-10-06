@@ -115,6 +115,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Insights (proactive audit, cross-diagnosis) | `/dashboard/insights` | Rules engine real, signals EXAMPLE |
 | Approvals queue | `/dashboard/approvals` | Real; Meta paused drafts execute for real when connected |
 | Connections (Meta connect, asset picker, sync, disconnect, activity log) | `/dashboard/integrations`, `/api/meta/*`, `/api/cron/meta-sync` | Real (mock mode without a Meta app) |
+| Dashboard: week, month, year to date and last 12 months; revenue, costs, profit, ROAS/MER, channels, new vs returning, cost donut; every metric has a plain-words panel (what, how, what good looks like) and green/amber/red against your own break-even lines | `/dashboard/analytics` | Real maths from daily numbers and Meta sync (Recharts); Shopify and Google sync stubbed; two years of labelled example data in demo mode |
 | Daily scorecard (entry, CSV import, rollups, flags, sparklines, products) | `/dashboard/scorecard` | Real; syncs stubbed; example data until cleared |
 | Your ads (campaign tracker: spend more / wait / new ads needed / stop) | `/dashboard/campaigns` | Real Meta rows when connected; Google and TikTok EXAMPLE |
 | Campaign builder (Draft & you launch, Guide me) | `/dashboard/campaigns/new` | Real paused-draft push to Meta after approval |
@@ -149,7 +150,7 @@ To go live, copy `.env.example` to `.env.local` and set:
 | `NUDGES_LIVE` | `1` lets the seasonal nudge cron really send email (uses `AUTH_RESEND_KEY` and `EMAIL_FROM`). Otherwise it logs a stub |
 | `META_MOCK` | `1` forces mock Meta data. Without a Meta app, mock mode is automatic outside production |
 
-Tests: `npm test` (paused-only guardrail, token encryption, Graph client retries, insights mapping, day ordering, seasonal dates and nudges, calendar by country, .ics export, tracks).
+Tests: `npm test` (paused-only guardrail, token encryption, Graph client retries, insights mapping, day ordering, seasonal dates and nudges, calendar by country, .ics export, tracks, dashboard periods, break-even maths and ratings).
 
 Regenerate generated docs: `python3 scripts/build_curriculum.py` (curriculum JSON + doc) and `python3 scripts/build_email_doc.py`.
 

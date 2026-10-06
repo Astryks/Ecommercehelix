@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, BookOpen, CalendarCheck, CalendarDays, CreditCard, FileText, Inbox, Lightbulb, Link2, Mail, Megaphone, Settings, Sparkles } from "lucide-react";
+import { BarChart3, BookOpen, LineChart, CalendarCheck, CalendarDays, CreditCard, FileText, Inbox, Lightbulb, Link2, Mail, Megaphone, Settings, Sparkles } from "lucide-react";
 
 const LINKS = [
   { href: "/dashboard", label: "Today", icon: CalendarCheck },
+  { href: "/dashboard/analytics", label: "Dashboard", icon: LineChart, highlight: true },
   { href: "/dashboard/calendar", label: "Calendar", icon: CalendarDays },
   { href: "/dashboard/insights", label: "What to fix", icon: Lightbulb },
   { href: "/dashboard/approvals", label: "Waiting for your OK", icon: Inbox },
@@ -34,6 +35,7 @@ export function NavLinks({ pending }: { pending: number }) {
             >
               <l.icon className="h-4 w-4" aria-hidden />
               {l.label}
+              {"highlight" in l && l.highlight && !active && <span className="ml-auto rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400 px-1.5 text-[10px] font-bold text-slate-950">NEW</span>}
               {l.href === "/dashboard/approvals" && pending > 0 && (
                 <span className="ml-auto rounded-full bg-cyan-400 px-2 text-xs font-bold text-slate-950">{pending}</span>
               )}
