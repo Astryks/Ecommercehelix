@@ -3,6 +3,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { Marked } from "marked";
 import { STAGE_INFO, stageOfLesson, stageOfModule, type StageId } from "./stages";
+import { glossify, termsIn } from "./glossary";
+import { parseModuleSections, type ParsedLesson } from "./lesson-parse";
+import { lessonAction, type LessonAction } from "./lesson-actions";
 
 const DIR = path.join(process.cwd(), "docs", "playbook");
 const REPO = "https://github.com/Astryks/Ecommercehelix/blob/main/docs";
@@ -12,7 +15,7 @@ export function slugify(text: string) {
 }
 
 export type Lesson = { id: string; title: string; ref: string | null; stage: StageId };
-export type Module = { slug: string; number: number; title: string; outcome: string; plain: string; stage: StageId; lessons: Lesson[] };
+export type Module = { slug: string; number: number; title: string; outcome: string; plain: string; stage: StageId; lessons: Lesson[]; steps: number };
 
 export function listModules(): Module[] {
   return fs
@@ -29,17 +32,12 @@ export function listModules(): Module[] {
         const ref = m[1].match(/^Lesson (\d+\.\d+):/)?.[1] ?? null;
         return { id: slugify(m[1]), title: m[1], ref, stage: ref ? stageOfLesson(ref) : stageOfModule(number) };
       });
-      return { slug: f.replace(/\.md$/, ""), number, title, outcome, plain, stage: stageOfModule(number), lessons };
+      return { slug: f.replace(/\.md$/, ""), number, title, outcome, plain, stage: stageOfModule(number), lessons, steps: (md.match(/^\*\*Step \d+\.\*\*/gm) ?? []).length };
     });
 }
 
-export function renderModule(slug: string): { html: string; title: string; text: string } | null {
-  if (!/^\d\d-[a-z0-9-]+$/.test(slug)) return null;
-  const file = path.join(DIR, slug + ".md");
-  if (!fs.existsSync(file)) return null;
-  const md = fs.readFileSync(file, "utf8");
-  const title = (md.match(/^# (.+)$/m)?.[1] ?? slug).replace(/^Module \d+:\s*/, "");
-  const marked = new Marked({
+function makeMarked() {
+  return new Marked({
     gfm: true,
     renderer: {
       heading({ tokens, depth, text }) {
@@ -52,12 +50,7 @@ export function renderModule(slug: string): { html: string; title: string; text:
       },
       link({ href, tokens }) {
         const inner = this.parser.parseInline(tokens);
-        let url = href;
-        const local = href.match(/^(\d\d-[a-z0-9-]+)\.md(#.*)?$/);
-        if (local) url = `/learn/${local[1]}${local[2] ?? ""}`;
-        else if (/^\.\.\/glossary\.md(#.*)?$/.test(href)) url = "/learn/words";
-        else if (/^stages\.md(#.*)?$/.test(href)) url = "/learn#framework-h";
-        else if (href.startsWith("../")) url = `${REPO}/${href.replace(/^\.\.\//, "")}`;
+        const url = linkUrl(href);
         const ext = /^https?:/.test(url) && !url.startsWith("/");
         return `<a href="${url}"${ext ? ' target="_blank" rel="noreferrer"' : ""}>${inner}</a>`;
       },
@@ -69,7 +62,120 @@ export function renderModule(slug: string): { html: string; title: string; text:
       },
     },
   });
-  const html = marked.parse(md.replace(/^# .+$/m, ""), { async: false }) as string;
+}
+
+function linkUrl(href: string) {
+  const local = href.match(/^(\d\d-[a-z0-9-]+)\.md(#.*)?$/);
+  if (local) return `/learn/${local[1]}${local[2] ?? ""}`;
+  if (/^\.\.\/glossary\.md(#.*)?$/.test(href)) return "/learn/words";
+  if (/^stages\.md(#.*)?$/.test(href)) return "/learn#framework-h";
+  if (href.startsWith("../")) return `${REPO}/${href.replace(/^\.\.\//, "")}`;
+  return href;
+}
+
+function readModule(slug: string): string | null {
+  if (!/^\d\d-[a-z0-9-]+$/.test(slug)) return null;
+  const file = path.join(DIR, slug + ".md");
+  if (!fs.existsSync(file)) return null;
+  return fs.readFileSync(file, "utf8");
+}
+
+const plainText = (md: string) => md.replace(/<!--[\s\S]*?-->/g, "").replace(/\]\([^)]*\)/g, "]").replace(/[*_`>#|[\]]/g, "");
+
+export function renderModule(slug: string): { html: string; title: string; text: string } | null {
+  const md = readModule(slug);
+  if (md === null) return null;
+  const title = (md.match(/^# (.+)$/m)?.[1] ?? slug).replace(/^Module \d+:\s*/, "");
+  const html = makeMarked().parse(md.replace(/^# .+$/m, ""), { async: false }) as string;
   const text = md.replace(/<!--[\s\S]*?-->/g, "").replace(/\(([^)]*)\)/g, " ");
   return { html, title, text };
 }
+
+// ---------- step-format lessons ----------
+export type StepView = {
+  n: number;
+  html: string;
+  expectedHtml: string;
+  watchOutHtml: string | null;
+  action: LessonAction | null;
+  terms: { term: string; means: string }[];
+  links: { href: string; label: string }[];
+  meta: boolean;
+};
+export type LessonView = {
+  ref: string;
+  id: string;
+  heading: string;
+  title: string;
+  stage: { id: StageId; name: string; chip: string };
+  whyHtml: string;
+  noticeHtml: string | null;
+  doIt: LessonAction;
+  steps: StepView[];
+  extraHtml: string;
+  hasDrawing: boolean;
+};
+export type PageSection = { kind: "html"; html: string } | { kind: "lesson"; lesson: LessonView };
+
+function linksIn(md: string) {
+  return [...md.matchAll(/\[([^\]]+)\]\(([^)\s]+)\)/g)].map((m) => ({ label: m[1], href: linkUrl(m[2]) }));
+}
+
+function toView(l: ParsedLesson, marked: Marked): LessonView {
+  const seen = new Set<string>();
+  const md = (s: string) => glossify(marked.parse(s, { async: false }) as string, seen);
+  const stage = stageOfLesson(l.ref);
+  const extraHtml = l.extra ? (marked.parse(l.extra, { async: false }) as string) : "";
+  return {
+    ref: l.ref,
+    id: slugify(l.heading),
+    heading: l.heading,
+    title: l.title,
+    stage: { id: stage, name: STAGE_INFO[stage].name, chip: STAGE_INFO[stage].chip },
+    noticeHtml: l.notice ? (marked.parse(l.notice, { async: false }) as string) : null,
+    whyHtml: md(l.why),
+    doIt: lessonAction(l.doIt),
+    steps: l.steps.map((s) => {
+      const all = `${s.instruction} ${s.expected} ${s.watchOut ?? ""}`;
+      return {
+        n: s.n,
+        html: md(s.instruction),
+        expectedHtml: md(s.expected),
+        watchOutHtml: s.watchOut ? md(s.watchOut) : null,
+        action: s.action ? lessonAction(s.action) : null,
+        terms: termsIn(plainText(all), 6).map((t) => ({ term: t.term, means: t.means })),
+        links: linksIn(all),
+        meta: /\b(Meta|Ads Manager|Facebook|Instagram|ad set|campaign)\b/i.test(all) || Boolean(s.action?.startsWith("meta")),
+      };
+    }),
+    extraHtml,
+    hasDrawing: extraHtml.includes('class="guide"'),
+  };
+}
+
+/** A module split into plain sections and structured step lessons, for /learn/[slug]. */
+export function renderLessonPage(slug: string): { title: string; sections: PageSection[]; text: string; lessonCount: number; stepCount: number } | null {
+  const md = readModule(slug);
+  if (md === null) return null;
+  const marked = makeMarked();
+  const title = (md.match(/^# (.+)$/m)?.[1] ?? slug).replace(/^Module \d+:\s*/, "");
+  const sections: PageSection[] = parseModuleSections(md).map((s) =>
+    s.kind === "lesson" ? { kind: "lesson", lesson: toView(s, marked) } : { kind: "html", html: marked.parse(s.md, { async: false }) as string },
+  );
+  const lessons = sections.flatMap((s) => (s.kind === "lesson" ? [s.lesson] : []));
+  const text = md.replace(/<!--[\s\S]*?-->/g, "").replace(/\(([^)]*)\)/g, " ");
+  return { title, sections, text, lessonCount: lessons.length, stepCount: lessons.reduce((n, l) => n + l.steps.length, 0) };
+}
+
+/** Find one lesson (and optionally a step) by ref, for "Do it for me" requests. */
+export function findLesson(ref: string): (ParsedLesson & { slug: string }) | null {
+  const n = Number(ref.split(".")[0]);
+  const file = fs.readdirSync(DIR).find((f) => f.startsWith(String(n).padStart(2, "0") + "-") && f.endsWith(".md"));
+  if (!file) return null;
+  const md = fs.readFileSync(path.join(DIR, file), "utf8");
+  const l = parseModuleSections(md).find((s): s is ParsedLesson => s.kind === "lesson" && s.ref === ref);
+  return l ? { ...l, slug: file.replace(/\.md$/, "") } : null;
+}
+
+/** Plain text of a lesson step for approval details (no markdown). */
+export const plain = plainText;

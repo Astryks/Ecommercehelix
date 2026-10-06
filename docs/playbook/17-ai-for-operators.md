@@ -31,55 +31,93 @@
 ## Lesson 17.1: An AI operating system
 <!-- stage:grow -->
 
-AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business.
+**Why this matters:** AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business. A project with your context turns generic answers into useful ones.
 
-1. **Create a project** in your AI assistant.
-2. **Add your context** as files or notes:
-   - Your brand core (Module 4).
-   - Customer profiles.
-   - Your offers.
-   - Your cost drivers (Module 1).
-   - Your SOPs (how you do things).
-   - Your past winning ads and emails.
-3. **Better context gives better answers.** Update it when things change.
+**Step 1.** Create a project in your AI assistant (for example **Projects > New project**).
+
+**Expected result:** You have an empty project for your store.
+
+**Step 2.** Upload your brand core (Module 4), customer profiles, offers, cost drivers (Module 1), SOPs and past winning ads and emails.
+
+**Expected result:** The project holds your business context.
+
+**Step 3.** Update the files whenever something changes.
+
+**Expected result:** Answers stay current with your business.
 
 ## Lesson 17.2: High-value uses
 <!-- stage:grow -->
 
-These jobs save the most time.
+**Why this matters:** A handful of jobs save the most time with AI. Always read and edit what AI writes before you use it.
 
-1. **Ads:** hooks, scripts, briefs, versions of ad text, layouts for still images, resizing, and finding which parts of your ads win.
-2. **Email:** campaign drafts, subject lines and flow emails.
-3. **Website:** text for page sections, FAQs, landing page drafts, page audits, and digging into exported data to find why conversion dropped.
-4. **Ad accounts:** naming, building batches of ads, reviewing search terms and checking accounts for problems.
-5. **Operations:** customer support replies, entering invoices and stock reports.
-6. **Customer support agents:** AI that answers "where is my order?" and common questions, and passes anything sensitive to a person.
+**Step 1.** Use AI for ads: hooks, scripts, briefs, ad text versions, still-image layouts, resizing and finding which parts of your ads win.
 
-**Always:** read and edit what AI writes before you use it.
+**Expected result:** Your next ad batch is drafted faster.
+
+**Step 2.** Use AI for email: campaign drafts, subject lines and flow emails.
+
+**Expected result:** Email drafts take minutes, not hours.
+
+**Step 3.** Use AI for the website: section text, FAQs, landing page drafts, page audits and digging into exported data when conversion drops.
+
+**Expected result:** Site copy and audits are quicker.
+
+**Step 4.** Use AI for operations: ad account naming, search term reviews, support replies, invoice entry and stock reports.
+
+**Expected result:** Admin work shrinks.
+
+**Step 5.** Set up an AI support agent for "where is my order?" and common questions that hands anything sensitive to a person.
+
+**Expected result:** Routine questions are answered instantly.
 
 ## Lesson 17.3: Connectors and agents
 <!-- stage:grow -->
 
-1. **Connectors** let AI read your store, ad and email data.
-2. **Agents** can take steps for you, like creating a campaign.
-3. **Decision rule:** a person must approve every action that changes something (a "write" action).
-4. **Warning:** unofficial automation tools on ad accounts can trigger policy flags or even bans. Use official integrations that respect the platform's limits.
+**Why this matters:** Connectors let AI read your store, ad and email data, and agents can take steps for you. Any action that changes something must be approved by a person.
+
+**Step 1.** Connect AI only through official integrations that respect platform limits.
+
+**Expected result:** AI can read your data without risking a policy flag.
+
+**Watch out:** Unofficial automation tools on ad accounts can trigger policy flags or bans.
+
+**Step 2.** Set every write action (anything that changes something) to need your approval.
+
+**Expected result:** Nothing changes in your accounts without your click.
 
 ## Lesson 17.4: Safety rules
 <!-- stage:grow -->
 
-1. Never paste passwords or access tokens into an AI chat.
-2. Check every claim AI writes, especially health claims and before-and-after claims.
-3. Label AI-made people and voices where the rules require it.
-4. If someone uses AI to fake your content or your face, report it to the platform with proof.
+**Why this matters:** AI is powerful and fallible. Four rules keep you safe.
+
+**Step 1.** Never paste passwords or access tokens into an AI chat.
+
+**Expected result:** Your credentials stay private.
+
+**Step 2.** Check every claim AI writes, especially health and before-and-after claims.
+
+**Expected result:** Nothing false goes out under your name.
+
+**Step 3.** Label AI-made people and voices where rules require it, and report fakes of your content or face to the platform with proof.
+
+**Expected result:** You follow the rules and protect your brand.
 
 ## Lesson 17.5: How Helix applies this
 <!-- stage:grow -->
 
-1. Helix uses fixed rules for all maths (profit, MER, break-even), so the numbers are always exact.
-2. It uses smaller, cheaper AI models to read and sort information.
-3. It uses stronger AI models for judgement, like writing a brief.
-4. **It always asks before changing anything.** New campaigns are created as paused drafts, and you switch them on. See the [product design doc](../product-design.md).
+**Why this matters:** Helix applies the same rules to itself. Maths is always exact, AI is used only where it adds value, and nothing changes without your approval.
+
+**Step 1.** Know that Helix uses fixed rules for all maths (profit, MER, break-even), so numbers are always exact.
+
+**Expected result:** You can trust every number on the Dashboard.
+
+**Step 2.** Know that Helix uses smaller AI models to read and sort, and stronger models for judgement like writing a brief.
+
+**Expected result:** You know where AI is used.
+
+**Step 3.** Approve or reject each action in **Waiting for your OK**; new campaigns are created as paused drafts that you switch on. See the [product design doc](../product-design.md).
+
+**Expected result:** Every change in your accounts has your approval.
 
 ## Self-check
 

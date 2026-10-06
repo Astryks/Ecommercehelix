@@ -32,15 +32,17 @@ type Mem = {
   suppliers: Map<string, Supplier[]>;
   stock: Map<string, StockItem[]>;
   goals: Map<string, Goals>;
+  lessonSteps: Map<string, Set<string>>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map() });
 mem.seasonPlans ??= new Map(); // older hot-reloaded stores
 mem.suppliers ??= new Map();
 mem.stock ??= new Map();
 mem.goals ??= new Map();
+mem.lessonSteps ??= new Map();
 
 export const DEFAULT_SETTINGS: Settings = { monthlyRevenueTarget: 60000, targetMerPct: 30, fixedCostsMonthly: 9000 };
 
@@ -155,6 +157,25 @@ export function streakFrom(completions: Completion[], today = isoDay()): number 
     cursor = addDays(cursor, -1);
   }
   return n;
+}
+
+// ---------- lesson step progress ----------
+export async function getLessonSteps(userId: string): Promise<string[]> {
+  if (!hasDb) return [...(mem.lessonSteps.get(userId) ?? [])];
+  const rows = await prisma.lessonProgress.findMany({ where: { userId }, select: { stepKey: true } });
+  return rows.map((r) => r.stepKey);
+}
+
+export async function setLessonStep(userId: string, stepKey: string, done: boolean) {
+  if (!hasDb) {
+    const set = mem.lessonSteps.get(userId) ?? new Set<string>();
+    if (done) set.add(stepKey);
+    else set.delete(stepKey);
+    mem.lessonSteps.set(userId, set);
+    return;
+  }
+  if (done) await prisma.lessonProgress.upsert({ where: { userId_stepKey: { userId, stepKey } }, create: { userId, stepKey }, update: {} });
+  else await prisma.lessonProgress.deleteMany({ where: { userId, stepKey } });
 }
 
 // ---------- approvals ----------

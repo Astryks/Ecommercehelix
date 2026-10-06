@@ -35,43 +35,83 @@
 ## Lesson 8.1: Foundations
 <!-- stage:attract -->
 
-Do this once before you spend money. Tick each item.
+**Why this matters:** A clean Google foundation means every dollar is tracked and nothing changes without you. Do this once before you spend money, tick each step, and recheck tracking monthly.
 
-1. **You own the Google Ads account.** If an agency owns it, ask them to move it to you.
-2. **Your store is connected to Google** (the Google sales channel app in Shopify) **and to Merchant Center.** Merchant Center is where Google keeps your product list (feed).
-3. **Conversion tracking is set up.** Have **one** main (primary) conversion: purchase. Turn on enhanced conversions (it uses hashed customer details to match more sales). Check every month that no other action became a main conversion.
-4. **Google Analytics (GA4) is set up,** with events, ecommerce reports and audiences.
-5. **Audiences are built:** site visitors, buyers, your email list, and segments from your store platform.
-6. **Account settings are checked.** Turn off "auto-apply recommendations" unless you choose each one yourself.
-7. **Your naming pattern is used** (see Module 6, Lesson 6.7).
+**Step 1.** In Google Ads open **Admin > Access and security** and confirm you (not an agency) are an admin owner of the account.
+
+**Expected result:** Your own email is listed with Admin access. If an agency owns it, ask them in writing to transfer ownership to you.
+
+**Step 2.** In Shopify install the **Google & YouTube** app and connect your Google Ads account and Merchant Center (where Google keeps your product list, called a feed).
+
+**Expected result:** The app shows both accounts connected and products syncing.
+
+**Step 3.** In Google Ads go to **Goals > Conversions > Summary** and make **Purchase** the only primary (main) conversion, then turn on **Enhanced conversions** (hashed customer details that match more sales).
+
+**Expected result:** Only Purchase is marked Primary, and enhanced conversions show "Active".
+
+**Watch out:** Check this monthly. Other actions such as page views sometimes become primary and inflate results.
+
+**Step 4.** Set up Google Analytics 4 (GA4) with ecommerce events and link it to Google Ads under **Admin > Product links**.
+
+**Expected result:** GA4 shows purchases, and Google Ads lists GA4 as linked.
+
+**Step 5.** In **Tools > Shared library > Audience manager**, build site visitors, buyers and your email list (customer match).
+
+**Expected result:** Three audiences show in Audience manager.
+
+**Step 6.** In **Recommendations > Auto-apply**, turn off auto-applied recommendations, and name campaigns with the pattern from Lesson 6.7.
+
+**Expected result:** Google cannot change campaigns without your click, and names are consistent.
 
 ## Lesson 8.2: Product data
 <!-- stage:attract -->
 
-Shopping ads use your product list (feed). Better product data means better ads.
+**Why this matters:** Shopping ads are built from your product feed, so better product data means better ads and cheaper clicks. Most gains come from titles, images and fixing errors.
 
-1. **Product titles:** put the words people search first. Brand, product type, then the key feature (for example "Acme Linen Shirt, Men's, Relaxed Fit, Sand").
-2. **Main images:** clean, clear, product only.
-3. **Prices and shipping:** correct and matching your site.
-4. **GTINs** (barcode numbers): add them where you have them.
-5. **Custom labels:** tags you add yourself, like margin level, best seller or season. You use them to group products.
-6. **Fix every Merchant Center error.**
-7. **Group your products** into sets you want to bid on differently (for example best sellers in one group).
+**Step 1.** Rewrite product titles with search words first: brand, product type, then key feature (for example "Acme Linen Shirt, Men's, Relaxed Fit, Sand").
+
+**Expected result:** Your top 20 products have search-first titles.
+
+**Step 2.** Use a clean main image of the product only, on a plain background.
+
+**Expected result:** Main images show the product clearly with no text or logos over it.
+
+**Step 3.** Check prices and shipping in the feed match your site, and add GTINs (barcode numbers) where you have them.
+
+**Expected result:** Merchant Center shows no price or shipping mismatches.
+
+**Step 4.** Add custom labels (your own tags) such as margin level, best seller or season.
+
+**Expected result:** Products can be grouped and bid on by label.
+
+**Step 5.** In Merchant Center open **Products > Diagnostics** and fix every error.
+
+**Expected result:** The diagnostics page shows zero errors.
 
 ## Lesson 8.3: Campaign structures
 <!-- stage:attract -->
 
-Pick the setup that matches your size. The drawing below shows how to start a Performance Max campaign.
+**Why this matters:** The right Google setup depends on your size. Starting simple, then adding campaigns as you grow, keeps each campaign fed with enough data.
 
-1. **Small accounts:** brand search, plus one feed-only Performance Max or Shopping campaign.
-2. **Growing accounts:** add non-brand search for your top search terms. Split Performance Max by best sellers or margin level.
-3. **Larger accounts:** campaigns focused on new customers, competitor search, Demand Gen, and separate campaigns per country.
+**Step 1.** If you are small, run brand search plus one feed-only Performance Max (PMax: Google decides where to show your products across Search, Shopping, YouTube and Gmail) or Shopping campaign.
 
-**Performance Max or standard Shopping?**
+**Expected result:** You have two campaigns: brand search and a product campaign.
 
-- **Performance Max (PMax)** shows your products across all of Google: Search, Shopping, YouTube, Gmail and more. Google decides where.
-- **Standard Shopping** gives you more control over which searches you show up for.
-- **What many stores do:** a feed-only PMax campaign with your brand name excluded, plus a separate brand search campaign. "Feed-only" means you give it only your product list, no extra videos or images.
+**Step 2.** In the PMax campaign, give it only your product feed (no extra videos or images, which is what feed-only means) and exclude your brand name under **Brand exclusions**.
+
+**Expected result:** PMax spends on new searches, while brand search covers your name.
+
+**Step 3.** As you grow, add non-brand search for your top search terms and split PMax by best sellers or margin level.
+
+**Expected result:** Bigger accounts have more control over where money goes.
+
+**Step 4.** At larger scale, add new-customer campaigns, competitor search, Demand Gen and a campaign per country.
+
+**Expected result:** Each campaign has one clear job.
+
+**Watch out:** Standard Shopping gives more control over which searches you show for. Use it if PMax spends on searches you cannot control.
+
+### Good to know
 
 <!-- guide:google-1-performance-max -->
 ![Start a Performance Max campaign in Google Ads](../../public/guides/google-1-performance-max.svg)
@@ -82,52 +122,97 @@ Pick the setup that matches your size. The drawing below shows how to start a Pe
 ## Lesson 8.4: Keyword research
 <!-- stage:attract -->
 
-Keywords are the search words you want your ads to show for.
+**Why this matters:** Keywords are the search words you want your ads to show for. Buying words with clear intent bring buyers; vague words bring browsers.
 
-1. **Start with buying words.** For example "buy", "best", "price", or the product type plus a feature ("linen shirt men").
-2. **Check how often people search them** (volume) and how many others bid on them (competition).
-3. **Group them by theme.**
-4. **Build small ad groups** with at most 5 keywords each.
-5. **Keep shared lists of negative keywords.** These are words you never want to show up for (like "free" or "jobs").
+**Step 1.** List buying words: "buy", "best", "price", or the product type plus a feature ("linen shirt men").
+
+**Expected result:** You have 20 to 50 candidate keywords.
+
+**Step 2.** In **Tools > Keyword Planner**, check monthly searches and competition for each.
+
+**Expected result:** Each keyword has a volume and competition level.
+
+**Step 3.** Group keywords by theme into small ad groups of 5 keywords or fewer.
+
+**Expected result:** Each ad group is tightly themed.
+
+**Step 4.** Create a shared negative keyword list (words you never want to show for, like "free" or "jobs") in **Shared library > Negative keyword lists** and apply it to every campaign.
+
+**Expected result:** Wasted searches are blocked across the account.
 
 ## Lesson 8.5: Writing search ads
 <!-- stage:attract -->
 
-1. **Headlines.** Write up to 15. Mix: product plus benefit, the offer, proof (reviews, years in business), urgency, and your brand. Pin 1 or 2 so they always show.
-2. **Descriptions.** Give reasons to buy, your shipping and returns, and a call to action.
-3. **Assets (extras that make the ad bigger):**
-   - Sitelinks to your best collections.
-   - Callouts like "Free shipping" or "Free returns".
-   - Structured snippets (lists like styles or types).
-   - Images.
+**Why this matters:** Search ads are short, so every line has to earn its place. Mixing benefit, offer, proof and urgency lets Google find the best combination.
+
+**Step 1.** Write up to 15 headlines mixing product plus benefit, the offer, proof (reviews, years in business), urgency and your brand, and pin 1 or 2 so they always show.
+
+**Expected result:** The ad strength meter shows "Good" or "Excellent".
+
+**Step 2.** Write descriptions with reasons to buy, shipping and returns, and a call to action.
+
+**Expected result:** Each description answers "why here, why now".
+
+**Step 3.** Add assets: sitelinks to your best collections, callouts like "Free shipping", structured snippets (lists like styles or types) and images.
+
+**Expected result:** Your ad takes more space on the results page.
 
 ## Lesson 8.6: Target ROAS
 <!-- stage:grow -->
 
-Target ROAS tells Google how many dollars of sales you want for each $1 of ads.
+**Why this matters:** Target ROAS tells Google how many dollars of sales you want for each $1 of ads. Set it from your break-even, not a guess, and change it gently.
 
-1. **Work out break-even ROAS:** 1 ÷ (1 - VCR). Below this, sales lose money.
-2. **Set target ROAS above break-even.** Add room for the profit you want to keep. Lower it a little if new customers are worth more to you over time.
-3. **Change targets in small steps** (about 10% at a time).
-4. **Google updates its bidding from time to time.** Check your results again after each update.
+**Step 1.** Work out break-even ROAS as 1 divided by (1 minus VCR); with VCR at 45% that is about 1.82.
+
+**Expected result:** You have your break-even ROAS.
+
+<!-- do:metrics -->
+
+**Step 2.** In the campaign's **Bidding** settings, set target ROAS above break-even with room for profit (for example 2.4 if break-even is 1.82).
+
+**Expected result:** Google bids to a target that leaves profit.
+
+**Step 3.** Change targets in steps of about 10% at a time, and recheck results after each Google bidding update.
+
+**Expected result:** Bidding stays stable while you tune it.
 
 ## Lesson 8.7: New customer acquisition
 <!-- stage:attract -->
 
-1. **Upload your customer list** so Google knows who has already bought.
-2. **Choose one setting:** bid higher for new customers, or show ads only to new customers.
-3. **Decision rule:** accept a lower ROAS on new-customer campaigns only if those customers come back and buy again (their lifetime value supports it).
+**Why this matters:** New customers grow the store; repeat customers are cheaper to reach in other ways. Google can bid more for new customers or show ads only to them.
+
+**Step 1.** Upload your customer list in **Audience manager > Your data segments**.
+
+**Expected result:** Google knows who has already bought.
+
+**Step 2.** In the campaign's **Customer acquisition** setting, choose either "Bid higher for new customers" or "Only bid for new customers".
+
+**Expected result:** The campaign favours new buyers.
+
+**Watch out:** Accept a lower ROAS on new-customer campaigns only if those customers come back and buy again.
 
 ## Lesson 8.8: Weekly optimisation
 <!-- stage:attract -->
 
-Spend 10 to 20 minutes on this once a week. The drawing below shows how to block wasted searches.
+**Why this matters:** Ten to twenty minutes once a week keeps Google profitable. Most waste hides in the search terms report.
 
-1. **Search terms report.** See what people actually typed. Block searches that cost money and never sell (add them as negative keywords). Add searches that sell well as keywords.
-2. **Performance Max insights.** See which products, searches and assets do well.
-3. **Campaigns limited by budget.** If they hit your target, raise the budget.
-4. **Brand versus non-brand.** Check how much spend goes on people searching your name compared with new searches.
-5. **Merchant Center diagnostics.** Fix any new product errors.
+**Step 1.** Open **Insights and reports > Search terms**, add searches that cost money and never sell as negative keywords, and add searches that sell well as keywords.
+
+**Expected result:** Wasted searches are blocked and winners are targeted directly.
+
+**Step 2.** Check **Performance Max insights** for which products, searches and assets do well.
+
+**Expected result:** You know your top PMax products and themes.
+
+**Step 3.** Look for campaigns marked "Limited by budget"; if they hit your target, raise the budget by about 20%.
+
+**Expected result:** Profitable campaigns are not held back.
+
+**Step 4.** Compare brand and non-brand spend, then fix any new errors in **Merchant Center > Diagnostics**.
+
+**Expected result:** You know how much spend finds new searchers, and the feed is clean.
+
+### Good to know
 
 <!-- guide:google-2-block-wasted-searches -->
 ![Block searches that waste money](../../public/guides/google-2-block-wasted-searches.svg)
@@ -138,27 +223,57 @@ Spend 10 to 20 minutes on this once a week. The drawing below shows how to block
 ## Lesson 8.9: Demand Gen and YouTube
 <!-- stage:attract -->
 
-Demand Gen campaigns show short videos and images across YouTube, Discover (the Google app feed) and Gmail.
+**Why this matters:** Demand Gen campaigns show short videos and images across YouTube, Discover (the Google app feed) and Gmail. Your best social videos often work here with little change.
 
-1. Reuse your best social videos. Make both tall (vertical) and wide (horizontal) versions.
-2. Judge them by view-through results (people who saw the ad and bought later), numbers you can compare with other platforms, and your total MER.
+**Step 1.** Export your 3 best social videos in both vertical and horizontal versions.
+
+**Expected result:** You have Demand Gen-ready video files.
+
+**Step 2.** Create a Demand Gen campaign with those videos, aimed at your buyer and visitor audiences plus lookalikes.
+
+**Expected result:** The campaign is live with proven creative.
+
+**Step 3.** Judge it by view-through results (people who saw the ad and bought later) and your total MER on the Dashboard.
+
+**Expected result:** You judge it on the whole-store effect, not clicks alone.
+
+<!-- do:growth -->
 
 ## Lesson 8.10: Seasonality and sales
 <!-- stage:attract -->
 
-1. **Use a seasonality adjustment** for the first 1 to 2 days of a big sale. Tell Google to expect about 50% higher conversion rate. Remove it afterwards.
-2. **Add promotion assets and sale prices** to your product feed.
-3. **Raise budgets slowly before the event,** so campaigns are not short of money when the sale starts.
+**Why this matters:** Big sales change shopper behaviour overnight, and Google's bidding needs a nudge to keep up. Three settings make the difference.
+
+**Step 1.** In **Tools > Bid strategies > Advanced controls**, add a seasonality adjustment for the first 1 to 2 days of the sale, expecting about 50% higher conversion rate, then remove it after.
+
+**Expected result:** Google bids up for the sale's first days and returns to normal after.
+
+**Step 2.** Add promotion assets and sale prices to your product feed.
+
+**Expected result:** Shopping ads show the sale price.
+
+**Step 3.** Raise budgets slowly in the week before the event.
+
+**Expected result:** Campaigns are not short of money when the sale starts.
+
+<!-- do:bfcm -->
 
 ## Lesson 8.11: AI-driven changes in 2026
 <!-- stage:attract -->
 
-Google now adds more AI features automatically: AI Max for Search and Shopping, AI-written ad text, final URL expansion (Google picks which page to send people to) and ads in AI Mode answers.
+**Why this matters:** In 2026 Google adds more AI features automatically: AI Max for Search and Shopping, AI-written ad text, final URL expansion (Google picks the landing page) and ads in AI Mode answers. They can help, but only if you check what they do.
 
-1. Review any campaigns Google upgraded automatically.
-2. Read the AI-written ad text and check the pages it sends people to.
-3. Keep your brand exclusions in place.
-4. Check your search terms and negative keywords more often.
+**Step 1.** Open **Campaigns** and review any campaign Google upgraded automatically.
+
+**Expected result:** You know which campaigns now use AI features.
+
+**Step 2.** Read the AI-written ad text and check every page it sends people to.
+
+**Expected result:** Ads say only what you are happy with and land on the right pages.
+
+**Step 3.** Confirm your brand exclusions are still in place, and check search terms and negatives twice a week instead of once.
+
+**Expected result:** AI expansion does not spend on your brand or on junk searches.
 
 ## Self-check
 

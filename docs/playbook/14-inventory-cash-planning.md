@@ -33,30 +33,69 @@
 ## Lesson 14.1: Range planning
 <!-- stage:grow -->
 
-Your range is the set of products you sell. Plan it on purpose.
+**Why this matters:** Your range is the set of products you sell. Planning it on purpose puts your cash into styles that earn, and lets you test new ideas small before committing.
 
-1. **Choose categories** that earn the most and fit your brand.
-2. **Track every style** in a simple table: launch date, units sold, sell-through % (the share of stock you sold), margin, and your reorder decision.
-3. **Test new styles fast.** Order a small first run. Reorder the winners quickly.
-4. **Write a range plan:** how many styles per category, at which prices, and how many are new versus core (always in stock).
-5. **Forecast sensibly.** Forecast core products from their sales history. Forecast new products from similar past launches.
+**Step 1.** Choose the categories that earn the most and fit your brand, using last year's sales and margin by category.
+
+**Expected result:** You have a short list of focus categories.
+
+**Step 2.** Track every style in one table: launch date, units sold, sell-through % (share of stock sold), margin and your reorder decision.
+
+**Expected result:** Every style has a row you update monthly.
+
+<!-- do:stock -->
+
+**Step 3.** Order small first runs of new styles and reorder winners quickly.
+
+**Expected result:** New styles are tested with little cash at risk.
+
+**Step 4.** Write a range plan: styles per category, price points, and how many are new versus core (always in stock).
+
+**Expected result:** You have a one-page range plan.
+
+**Step 5.** Forecast core products from their sales history and new products from similar past launches.
+
+**Expected result:** Each product has a forecast based on evidence.
 
 ## Lesson 14.2: The weekly stock snapshot
 <!-- stage:grow -->
 
-Once a week, check your stock in one table. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
+**Why this matters:** A weekly stock check takes ten minutes and prevents the two expensive mistakes: selling out of a best seller and sitting on stock that will not move. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
 
-1. **Weeks of cover:** how many weeks your current stock will last at the current sales rate. Stock ÷ units sold per week.
-2. **ABC grades:** A items are the few products that make most of your sales. B items are the middle. C items sell slowly.
-3. **Reorder dates:** when to order, so new stock arrives before you run out.
-4. **Flags:** mark products with too little cover (about to sell out) and too much cover (cash stuck on shelves).
+**Step 1.** Open **Suppliers & stock** in Helix and update on-hand and on-order counts for each product.
 
-**Decision rule:** do not run ads hard on a product that is about to sell out.
+**Expected result:** Counts are current for this week.
+
+<!-- do:stock -->
+
+**Step 2.** Read weeks of cover (stock divided by units sold per week) for each product.
+
+**Expected result:** You know how long each product will last.
+
+**Step 3.** Grade products A, B or C: A items are the few that make most of your sales, B the middle, C slow sellers.
+
+**Expected result:** Every product has a grade.
+
+**Step 4.** Note reorder dates and flag products with too little cover (about to sell out) or too much (cash stuck on shelves).
+
+**Expected result:** You have a short list of products to reorder and products to clear.
+
+**Watch out:** Do not run ads hard on a product that is about to sell out.
 
 ## Lesson 14.3: Five cash levers
 <!-- stage:grow -->
 
-Stock ties up cash. Use these five levers to free it.
+**Why this matters:** Stock ties up cash, and cash is what lets you grow. Five levers free it up: buy cheaper, get better terms, pay later, lower the risk and sell faster.
+
+**Step 1.** Read the five levers in the table below and pick the one easiest to pull this month.
+
+**Expected result:** You have one lever chosen.
+
+**Step 2.** Take one action on it, for example asking your supplier for 30-day terms on the balance.
+
+**Expected result:** You have sent the request or made the change.
+
+### Good to know
 
 | Lever | Examples |
 | --- | --- |
@@ -69,123 +108,174 @@ Stock ties up cash. Use these five levers to free it.
 ## Lesson 14.4: Cash flow forecast
 <!-- stage:grow -->
 
-A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank.
+**Why this matters:** A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank, and stock deposits can drain the account months before the sales arrive.
 
-1. **Make a table for the next 3 to 12 months.**
-2. **For each month, list:**
-   - Cash at the start of the month.
-   - Money coming in from sales.
-   - Stock payments (deposits and final payments).
-   - Ad spend.
-   - Fixed costs.
-   - Tax.
-   - Loan repayments.
-3. **Update it every month.**
-4. **Put aside a share of profit for tax.** Ask your accountant how much.
+**Step 1.** Make a spreadsheet with one column per month for the next 3 to 12 months.
+
+**Expected result:** You have a blank forecast.
+
+**Step 2.** For each month, add rows for starting cash, sales income, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.
+
+**Expected result:** Every month shows an ending cash balance.
+
+**Step 3.** Put aside a share of profit for tax each month (ask your accountant how much).
+
+**Expected result:** Tax money sits in a separate account.
+
+**Step 4.** Update the forecast on the first business day of each month.
+
+**Expected result:** A monthly reminder is set and the forecast stays current.
+
+<!-- do:calendar -->
 
 ## Lesson 14.5: The debt decision
 <!-- stage:grow -->
 
-**Decision rule:** only borrow when both are true:
+**Why this matters:** Debt can speed up growth or sink a store. Borrow only when both tests below are true.
 
-1. The money will clearly earn more than it costs.
-2. You could still make the repayments in a bad month, according to your cash forecast.
+**Step 1.** Check the money will clearly earn more than it costs (for example stock for a product that already sells well, or extra stock for the busy season).
 
-**Good reasons to borrow:** stock for products that already sell well, or extra stock for the busy season.
+**Expected result:** You can name the return the money will make.
 
-**Bad reason to borrow:** to cover losses.
+**Step 2.** Check your cash forecast shows you could still make the repayments in a bad month.
+
+**Expected result:** Repayments fit even in your worst month.
+
+**Watch out:** Never borrow to cover losses.
 
 ## Lesson 14.6: Money mindset and finance help
 <!-- stage:grow -->
 
-1. Keep personal and business money in separate accounts.
-2. Pay yourself a set amount each month.
-3. Look at your numbers every week.
-4. Consider a part-time finance expert (a fractional CFO) once sales are bigger, or before you raise money from investors.
+**Why this matters:** Good money habits make the numbers easy to see and the business easy to run. Four habits cover most of it.
+
+**Step 1.** Open a separate business bank account if you do not have one, and move all business income and costs to it.
+
+**Expected result:** Personal and business money never mix.
+
+**Step 2.** Pay yourself a set amount on the same day each month.
+
+**Expected result:** Your wage is predictable and counted in fixed costs.
+
+**Step 3.** Book 15 minutes a week to look at your numbers in Helix.
+
+**Expected result:** A weekly money check is in your calendar.
+
+<!-- do:growth -->
+
+**Step 4.** Once sales are bigger, or before raising money, consider a part-time finance expert (a fractional CFO).
+
+**Expected result:** You know when outside finance help makes sense.
 
 ## Lesson 14.7: The year plan
 <!-- stage:grow -->
 
-1. **Find your growth rate.** Compare the last 12 months with the 12 months before.
-2. **Set a sales target for each month,** including your big sales peaks.
-3. **Work backwards.** From each month's target, work out the stock you need to buy and the marketing budget.
-4. **Make a marketing calendar:** launches, sales, events and content themes.
-5. **Review the plan** every 6 months.
+**Why this matters:** The year plan ties sales, stock and marketing together. Working backwards from monthly targets tells you what to buy and spend, and when.
+
+**Step 1.** Find your growth rate by comparing the last 12 months of sales with the 12 months before (Dashboard, **Year** view).
+
+**Expected result:** You have a growth percentage.
+
+<!-- do:growth -->
+
+**Step 2.** Set a sales target for each month, including your big sales peaks.
+
+**Expected result:** Twelve monthly targets are written down.
+
+<!-- do:goals -->
+
+**Step 3.** Work backwards from each month's target to the stock you need to buy and the marketing budget.
+
+**Expected result:** Each month has a stock order and an ad budget.
+
+**Step 4.** Make a marketing calendar of launches, sales, events and content themes, and review the plan every 6 months.
+
+**Expected result:** The calendar is filled and a 6-month review is booked.
+
+<!-- do:calendar -->
 
 ## Lesson 14.8: Finding and vetting suppliers
 <!-- stage:grow -->
 
-A good supplier makes a good product on time at a fair price, and tells you early when something goes wrong. Choose carefully, because changing supplier mid-season is slow and risky.
+**Why this matters:** A good supplier makes a good product on time at a fair price, and tells you early when something goes wrong. Changing supplier mid-season is slow and risky, so vet carefully up front. Helix keeps suppliers, minimums, lead times and terms on the Suppliers & stock page.
 
-**Find candidates:**
+**Step 1.** Write a one-page spec: materials, size, finish, packaging, certifications and your target landed cost.
 
-1. List what you need: materials, size, finish, packaging, certifications and your target landed cost.
-2. Search supplier marketplaces, trade shows and industry directories, and ask other founders for introductions. Shortlist 3 to 5.
-3. Local makers (in Australia or the US) usually cost more per unit but have shorter lead times, smaller minimums and simpler freight. They are often a good start or a top-up option.
+**Expected result:** Every supplier can quote against the same spec.
 
-**Factory or trading company?**
+**Step 2.** Search supplier marketplaces, trade shows and industry directories, ask other founders for introductions, and shortlist 3 to 5.
 
-1. A factory makes the product. A trading company buys from factories and resells. Both can be fine.
-2. Ask for the business licence and check that the listed business scope includes making your product.
-3. Ask for a live video walk through the production line, or pay an inspection company to visit.
-4. Trading companies help with small orders and many product types. Factories usually give better prices and more control once your volumes grow.
+**Expected result:** You have 3 to 5 candidates. Local makers cost more per unit but have shorter lead times and smaller minimums.
 
-**Samples:**
+**Step 3.** For each, ask for the business licence (check the business scope includes your product) and a live video walk-through of the production line, or pay an inspection company to visit.
 
-1. Order samples from at least 2 suppliers. Pay for them; it shows you are serious.
-2. Check them against your written spec: measurements, materials, stitching or finish, packaging.
-3. Wash, use and test them as a customer would for a week or two.
-4. Approve one "golden sample", sign it, and keep it. Production should match it.
+**Expected result:** You know whether each is a factory (makes the product) or a trading company (buys from factories), and both are verified.
 
-**Minimum order quantity (MOQ):**
+**Step 4.** Order paid samples from at least 2 suppliers and test them against your spec as a customer would for 1 to 2 weeks.
 
-1. The MOQ is the smallest order the supplier accepts. Ask what drives it (fabric rolls, colour runs, machine set-up).
-2. To lower it: fewer colours, a stock fabric, a higher unit price for the first run, or sharing materials across products.
-3. Do not buy more than you can sell in about 3 to 4 months just to hit a minimum. Cash tied up in slow stock is the most common way growing stores run out of money.
+**Expected result:** You have a winner and can approve a signed "golden sample" that production must match.
 
-**Landed cost:**
+**Step 5.** Ask what drives the MOQ (minimum order quantity) and lower it with fewer colours, a stock fabric or a higher first-run unit price.
 
-1. Landed cost = unit price + freight to your warehouse + import duty + other costs (packaging, inspection, bank fees, customs broker).
-2. Use landed cost as your product cost in Helix, not the supplier's price.
-3. Ask for quotes on the same terms (for example FOB, the price with goods loaded at the port) so you can compare suppliers fairly.
+**Expected result:** Your first order covers no more than 3 to 4 months of expected sales.
 
-**Quality checks:**
+**Watch out:** Cash tied up in slow stock is the most common way growing stores run out of money.
 
-1. Write a simple quality checklist from your golden sample.
-2. For larger orders, book a pre-shipment inspection before you pay the balance.
-3. Count and spot-check every delivery when it arrives, and record problems with photos.
+**Step 6.** Get quotes on the same terms (for example FOB: price with goods loaded at the port) and work out landed cost: unit price plus freight, duty and other costs (packaging, inspection, bank fees, broker).
 
-**Payment terms:**
+**Expected result:** Each supplier has a comparable landed cost, which you enter as product cost in Helix.
 
-1. A common first deal is a 30% deposit and 70% before shipping. As trust grows, ask for the balance after shipping or on 30-day terms.
-2. Have your own standard terms of trade written down and start from them. It is easier to negotiate from a written company policy than from a personal preference.
-3. Pay by traceable bank transfer to an account in the company's name. Be wary of last-minute changes to bank details; confirm by phone.
-4. Watch the exchange rate. If you pay in US dollars, a few cents' move can change your margin. Some founders buy currency ahead for big orders.
+<!-- do:stock -->
 
-**Work as partners:**
+**Step 7.** Agree payment terms (a common first deal is 30% deposit, 70% before shipping) from your own written terms of trade, paying by bank transfer to an account in the company's name.
 
-1. Act professionally: clear specs, clear dates, prompt replies and respectful emails.
-2. Share a code of conduct covering fair pay, safe conditions and no forced or child labour. Ask for audit reports if they have them.
-3. Share your forecast. Suppliers plan better, and treat you better, when they can see what is coming.
-4. As you grow, review suppliers once a year. Bigger volumes may open the door to larger factories with better prices.
+**Expected result:** Terms are in writing and you confirm any change of bank details by phone.
 
-> Helix keeps your suppliers, minimums, lead times and terms on the [Suppliers and stock page](/dashboard/stock).
+**Step 8.** Write a quality checklist from the golden sample, book a pre-shipment inspection for larger orders, and count and spot-check every delivery with photos.
+
+**Expected result:** Problems are caught before you pay the balance or list the stock.
+
+**Step 9.** Share a code of conduct (fair pay, safe conditions, no forced or child labour), share your forecast, and review suppliers yearly.
+
+**Expected result:** You have a documented, long-term partnership.
+
+**Watch out:** Watch the exchange rate when paying in US dollars. A few cents can change your margin.
 
 ## Lesson 14.9: Reorder points, lead times and stock-outs
 <!-- stage:grow -->
 
-Running out of a best seller loses sales and pauses your ads. Ordering too much ties up cash. A reorder point tells you exactly when to order.
+**Why this matters:** Running out of a best seller loses sales and pauses your ads, while ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths for every product.
 
-1. **Sales speed:** average units sold a day over the last 4 to 8 weeks. Leave out days when you were out of stock or running a big sale.
-2. **Lead time:** days from paying the deposit to stock being ready to sell: making, shipping, customs and receiving. Ask for each part.
-3. **Safety days:** a buffer for late ships and sales spikes. Start with 14 days; use more for long sea freight.
-4. **Reorder point = sales speed × (lead time + safety days).** When stock on hand plus stock on order falls to this number, place the order.
-5. **How many to order:** enough for the lead time, the safety days and the next 1 to 3 months of sales, minus what you have, and at least the supplier's minimum.
-6. **Peak season:** for Black Friday and Christmas, work back from the date. The last safe order date is the event date minus the lead time minus about a week to receive and list the stock. Peak week often sells 2 to 4 times a normal week.
+**Step 1.** Work out sales speed: average units a day over the last 4 to 8 weeks, leaving out stock-out days and big sale days.
 
-**Example:** you sell 2 shirts a day, the lead time is 50 days and you keep 14 safety days. The reorder point is 2 × 64 = 128 shirts. With 140 on hand and none on order, you have about 6 days before you must order.
+**Expected result:** You have units per day for each product.
 
-Helix does this maths for every product on the Suppliers and stock page, shows a countdown to each stock-out, and raises an alert on Today when it is time to order.
+**Step 2.** Find the lead time: days from paying the deposit to stock ready to sell (making, shipping, customs, receiving).
+
+**Expected result:** You have a lead time in days for each product.
+
+**Step 3.** Set safety days: start with 14, more for long sea freight.
+
+**Expected result:** Each product has a buffer.
+
+**Step 4.** In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.
+
+**Expected result:** Helix shows the reorder point (sales speed times lead time plus safety days) and a countdown to each stock-out.
+
+<!-- do:stock -->
+
+**Step 5.** When on-hand plus on-order falls to the reorder point, order enough for the lead time, safety days and the next 1 to 3 months, and at least the supplier's minimum.
+
+**Expected result:** An alert shows on Today when it is time to order, and stock arrives before you run out.
+
+**Step 6.** For Black Friday and Christmas, work out the last safe order date: event date minus lead time minus about a week to receive and list.
+
+**Expected result:** Peak stock is ordered in time. Peak week often sells 2 to 4 times a normal week.
+
+<!-- do:bfcm -->
+
+### Good to know
+
+**Example:** you sell 2 shirts a day, lead time is 50 days and you keep 14 safety days. The reorder point is 2 x 64 = 128 shirts. With 140 on hand and none on order, you have about 6 days before you must order.
 
 ## Self-check
 

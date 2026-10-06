@@ -33,56 +33,90 @@
 ## Lesson 4.1: The brand core
 <!-- stage:attract -->
 
-Your brand core is a one-page summary of who you are. Everything you write and post comes from it.
+**Why this matters:** Your brand core is a one-page summary of who you are, and everything you write and post comes from it. Brands without one end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
 
-Answer these five questions on one page:
+**Step 1.** Describe 2 or 3 types of customer, each with their goals, what frustrates them and where they spend time online.
 
-1. **Who is it for?** Describe 2 or 3 types of customer. For each: their goals, what frustrates them, and where they spend time online.
-2. **Why choose us?** Your brand promise in one sentence.
-3. **How do we sound?** Three words for your personality. Three words you never use.
-4. **What do we stand for?** Two or three values you can prove with things you actually do.
-5. **What is our story?** Why the brand exists, in under 100 words.
+**Expected result:** You have 2 or 3 short customer descriptions.
 
-**Why it matters:** brands without a clear core end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
+**Step 2.** Write your brand promise in one sentence (why choose us).
+
+**Expected result:** You have one promise sentence.
+
+**Step 3.** Pick three words for your personality and three words you never use.
+
+**Expected result:** You have a six-word voice guide.
+
+**Step 4.** Write two or three values, each with one thing you actually do that proves it.
+
+**Expected result:** Every value has proof, not just a claim.
+
+**Step 5.** Write your story in under 100 words: why the brand exists, then save all five answers on one page.
+
+**Expected result:** A one-page brand core is saved where your team, freelancers and AI tools can read it.
 
 ## Lesson 4.2: Customer profiles
 <!-- stage:attract -->
 
-A customer profile describes one type of buyer. Build it from real customer words, not guesses.
+**Why this matters:** A customer profile describes one type of buyer. Built from real customer words, it tells you what to say in ads, pages and emails. Built from guesses, it sends you the wrong way.
 
-**For each profile, write down:**
+**Step 1.** Collect 30 to 50 real customer quotes from reviews, a short survey and support emails ([SOP 16](../sops/16-customer-research-and-reviews.md) shows how).
 
-1. Age range and stage of life.
-2. The job they "hire" your product to do (the problem it solves for them).
-3. Their top 3 reasons for not buying (objections).
-4. The words they use to describe the problem and the product.
-5. Where they shop.
-6. What they compare you with.
+**Expected result:** You have a document of real quotes.
 
-**Where to find this:** reviews, customer surveys and support emails. [SOP 16](../sops/16-customer-research-and-reviews.md) shows you how to collect them.
+**Step 2.** For one profile, write the age range and stage of life, and the job they "hire" your product to do (the problem it solves for them).
+
+**Expected result:** The profile has a who and a why.
+
+**Step 3.** Add their top 3 objections and the exact words they use for the problem and the product.
+
+**Expected result:** The profile has phrases you can copy straight into ads.
+
+**Step 4.** Add where they shop and what they compare you with.
+
+**Expected result:** You know your real competitors and channels for this profile. Repeat for each profile.
 
 ## Lesson 4.3: Brand guidelines
 <!-- stage:attract -->
 
-Brand guidelines are a short guide that anyone can follow: a freelancer, a creator or an AI tool. It keeps everything looking and sounding like you.
+**Why this matters:** Brand guidelines are a short guide anyone can follow: a freelancer, a creator or an AI tool. People recognise a brand after seeing it many times looking the same way. Guidelines make that happen without you checking everything.
 
-**Include:**
+**Step 1.** Add your logo versions and the empty space to leave around them.
 
-1. Your logo versions and how much empty space to leave around it.
-2. Main and extra colours, with their colour codes.
-3. Fonts and sizes.
-4. Photo and video style: lighting, framing and props.
-5. Examples of your voice: good ones and bad ones.
-6. Do and don't examples for ads, emails and social posts.
+**Expected result:** The page shows each logo with a clear-space rule.
 
-**Why it matters:** people recognise a brand after seeing it many times, looking the same way each time.
+**Step 2.** Add your main and extra colours with their hex codes (for example #0B1F3A), and your fonts and sizes.
+
+**Expected result:** Anyone can match your colours and type exactly.
+
+**Step 3.** Describe your photo and video style: lighting, framing and props, with 3 example images.
+
+**Expected result:** A freelancer could shoot on-brand content from the page alone.
+
+**Step 4.** Add good and bad examples of your voice, plus do and don't examples for ads, emails and social posts.
+
+**Expected result:** The guide is finished and shared as one link or PDF.
 
 ## Lesson 4.4: Content pillars by channel
 <!-- stage:attract -->
 
-Content pillars are the 4 to 6 topics you always post about. Examples: product, education (how-to and tips), proof (reviews, results), community, promotions, and your story and values.
+**Why this matters:** Content pillars are the 4 to 6 topics you always post about, such as product, education, proof, community, promotions and your story. Each channel needs a different mix. Pillars stop you staring at a blank page.
 
-Each channel needs a different mix. Here is a starting point:
+**Step 1.** Write your own 4 to 6 pillars, starting from the examples above.
+
+**Expected result:** You have a named list of pillars.
+
+**Step 2.** Using the table below as a starting point, set the share of each pillar for each channel you use.
+
+**Expected result:** Each channel has a mix that adds up to 100%.
+
+**Step 3.** Plan one month of posts using that mix.
+
+**Expected result:** You have a month of post ideas, each tagged with a pillar and a channel.
+
+### Good to know
+
+**Each channel needs a different mix. Here is a starting point:**
 
 | Pillar | Instagram | TikTok | Email |
 | --- | --- | --- | --- |
@@ -91,56 +125,110 @@ Each channel needs a different mix. Here is a starting point:
 | Community and story | Medium | High (this is where TikTok reach comes from) | Low |
 | Promotion | Low | Low | High (people subscribe to hear about offers first) |
 
-**Do this:**
-
-1. Write down your own pillars and how much of each you want on each channel.
-2. Plan one month of posts using that mix.
-
 ## Lesson 4.5: Communication calendar
 <!-- stage:attract -->
 
-A communication calendar shows what you will post and send, and when.
+**Why this matters:** A communication calendar shows what you will post and send, and when. Planning around your sales dates means every post builds towards something.
 
-1. Mark your promotion dates first: launches, sales and big gifting days (like Mother's Day).
-2. Add product stories and education posts around those dates.
-3. Fill the gaps with community posts and customer proof.
-4. Always ask permission before you repost a customer's photo or video.
+**Step 1.** Mark your promotion dates first: launches, sales and big gifting days such as Mother's Day and Black Friday.
+
+**Expected result:** Your key dates are on the calendar.
+
+<!-- do:calendar -->
+
+**Step 2.** Add product stories and education posts in the 2 weeks around each date.
+
+**Expected result:** Each promotion has warm-up content before it.
+
+**Step 3.** Fill the gaps with community posts and customer proof.
+
+**Expected result:** Every week has at least 3 planned posts.
+
+**Step 4.** Before reposting any customer photo or video, message them and get written permission.
+
+**Expected result:** You have a saved "yes" for every customer post you use.
 
 ## Lesson 4.6: Organic content that also feeds ads
 <!-- stage:attract -->
 
-Organic content means free posts, not paid ads. Good organic posts are a free way to test ad ideas.
+**Why this matters:** Organic content means free posts, not paid ads. Good organic posts are a free way to test ad ideas, because the posts that hold attention usually make good ads.
 
-1. Post short videos 3 to 5 times a week.
-2. Watch which posts hold people's attention. Those are your next ad ideas.
-3. Use test or trial posting features where the platform has them. They show a post to people who do not follow you, so you can try ideas on new people.
-4. Reply to comments in the first hour after posting.
-5. For a small team, 3 to 5 short videos a week is realistic. Film them in one or two sessions a week.
+**Step 1.** Film 3 to 5 short videos in one or two sessions a week and post them across the week.
+
+**Expected result:** You publish 3 to 5 videos a week without filming every day.
+
+**Step 2.** After 48 hours, check each post's average watch time or hold rate in the platform's insights.
+
+**Expected result:** You know which 1 or 2 posts held attention best.
+
+**Step 3.** Use trial or test posting features where the platform has them, so a post reaches people who do not follow you.
+
+**Expected result:** You can try ideas on new people without risking your main feed.
+
+**Step 4.** Reply to every comment in the first hour after posting.
+
+**Expected result:** Comments get answered quickly, which tends to help reach.
+
+**Step 5.** Add the best-performing post to your ad ideas list.
+
+**Expected result:** Your next ad test starts from a proven idea.
 
 ## Lesson 4.7: Community
 <!-- stage:attract -->
 
-A community is a group of customers who talk to you and to each other.
+**Why this matters:** A community is a group of customers who talk to you and to each other. It brings repeat purchases, content ideas and early warnings about objections. It works best when people buy more than once.
 
-1. Give customers a place and a reason to talk. For example a private group, events, challenges, or featuring their photos and videos.
-2. Celebrate customers in your content. Make them the main character of the story, not the product.
-3. Read their questions. They give you new content ideas and show you new objections.
-4. **Decision rule:** community works best when people buy more than once. If people rarely buy again in your category, put your effort into reviews and creators instead.
+**Step 1.** Check your repeat purchase rate (Shopify: **Analytics > Reports > Customers over time**). If people rarely buy again in your category, put effort into reviews and creators instead and skip this lesson.
+
+**Expected result:** You know whether community is worth it for your store.
+
+**Step 2.** Give customers a place and a reason to talk: a private group, events, challenges or featuring their photos.
+
+**Expected result:** You have one community space with a clear reason to join.
+
+**Step 3.** Feature customers in your content as the main character, not the product.
+
+**Expected result:** At least one post a week stars a customer.
+
+**Step 4.** Read their questions weekly and add new ones to your objection list (Lesson 3.3).
+
+**Expected result:** Your content ideas and FAQ grow from real questions.
 
 ## Lesson 4.8: Personal brand and PR
 <!-- stage:attract -->
 
-1. **Be a visible founder.** It builds trust. It also gives you endless content: your opinions, behind the scenes, and lessons learned.
-2. **PR (getting into the media).** Pitch stories, not products: your founder journey, interesting data, trends. Then use press logos and quotes as proof in ads and on your site.
+**Why this matters:** A visible founder builds trust and gives you endless content. Media coverage adds proof you can reuse in ads and on your site.
+
+**Step 1.** Post one founder piece a week: an opinion, a behind-the-scenes moment or a lesson learned.
+
+**Expected result:** Your audience sees a real person behind the brand every week.
+
+**Step 2.** Pitch one story (not a product) to a journalist or podcast each month: your founder journey, interesting data or a trend.
+
+**Expected result:** You have sent a pitch and logged it.
+
+**Step 3.** When you get coverage, add the logo and a quote to your home page and ads.
+
+**Expected result:** Press proof appears where shoppers decide.
 
 ## Lesson 4.9: Influencer amplification
 <!-- stage:attract -->
 
-Influencers can spread your brand fast. Do it in three steps:
+**Why this matters:** Influencers (creators with an engaged audience) can spread your brand fast. The best results come from seeding widely, then paying the winners for usage rights and running their content as ads.
 
-1. Send free product to many creators.
-2. Pay the best ones for the right to use their content in your ads (usage rights).
-3. Run their content as partnership ads. These run from the creator's account, so people see the creator's name instead of yours. See Modules 5, 7 and 19.
+**Step 1.** Send free product to 20 or more creators who fit your customer profile.
+
+**Expected result:** Product is on its way to a wide group of creators.
+
+**Step 2.** Pay the best performers for usage rights (permission to use their content in your ads) for a set period, for example 3 months.
+
+**Expected result:** You have signed rights to run their content as ads.
+
+**Step 3.** Run their content as partnership ads, which run from the creator's account so people see the creator's name. See Modules 5, 7 and 19.
+
+**Expected result:** The ads are live and you can compare them with your own brand ads.
+
+<!-- do:meta-draft -->
 
 ## Self-check
 

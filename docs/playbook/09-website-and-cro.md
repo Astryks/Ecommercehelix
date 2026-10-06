@@ -35,178 +35,261 @@
 ## Lesson 9.1: The improvement system
 <!-- stage:convert -->
 
-CRO means conversion rate optimisation: getting more of your visitors to buy. Use this loop once a month.
+**Why this matters:** CRO (conversion rate optimisation) means getting more of your visitors to buy. A simple monthly loop beats random changes, because each fix is chosen for its likely payoff and then measured.
 
-1. **Find the gaps.** Score each page against the checklists in Lesson 9.2. List what is missing.
-2. **Make a plan.** Rank each gap by how much it should help, divided by how much work it is. Sort into quick wins, small builds and big builds.
-3. **Build.** Use apps or your theme settings first. Only pay for custom code once an idea has proven it works.
-4. **Measure.** Use heatmaps, session recordings, funnel reports and A/B tests (Lessons 9.8 and 9.9).
-5. **Repeat** every month.
+**Step 1.** Score each key page against the checklists in Lesson 9.2 and list every gap.
+
+**Expected result:** You have a list of missing items per page.
+
+<!-- do:insights -->
+
+**Step 2.** Rank each gap by expected impact divided by effort, and sort into quick wins, small builds and big builds.
+
+**Expected result:** Your list is in priority order with quick wins at the top.
+
+**Step 3.** Build the top quick wins using theme settings or apps first.
+
+**Expected result:** The quick wins are live. Pay for custom code only once an idea has proven it works.
+
+**Step 4.** Measure with heatmaps, session recordings, funnel reports and A/B tests (Lessons 9.8 and 9.9).
+
+**Expected result:** Each change has a before and after number.
+
+**Step 5.** Add a monthly reminder to repeat the loop.
+
+**Expected result:** The next review is in your calendar.
+
+<!-- do:calendar -->
 
 ## Lesson 9.2: Page checklists
 <!-- stage:convert -->
 
-"Above the fold" means what people see before they scroll.
+**Why this matters:** Each page type has a short list of things shoppers expect. Missing items cost sales quietly. Above the fold means what people see before they scroll, and on mobile that space is tiny, so it must work hard.
 
-**Homepage, above the fold:**
+**Step 1.** Check your home page above the fold on your phone: a promo bar (for example "Free shipping over $80"), a simple menu, a banner with one message and a separate mobile image, one clear button, and a trust sign (star rating, customer count or press logo).
 
-1. A promo bar at the very top (for example "Free shipping over $80").
-2. A simple menu.
-3. A top banner with one message. Use a separate image made for mobile.
-4. One clear button (call to action).
-5. A trust sign (star rating, number of happy customers, or a press logo).
+**Expected result:** All five items are visible without scrolling on a phone.
 
-**Homepage, below the fold:** best sellers, categories, reasons to buy, reviews, your founder story, press mentions, and an email sign-up.
+**Step 2.** Check below the fold on the home page: best sellers, categories, reasons to buy, reviews, founder story, press mentions and an email sign-up.
 
-**Product page, above the fold:**
+**Expected result:** Each section is present, in roughly that order.
 
-1. The product title.
-2. One line on what makes it different.
-3. Star rating.
-4. Price, with an anchor (a compare-at price) or the bundle value.
-5. An offer block (for example "Buy 2, save 10%").
-6. Size or colour picker.
-7. Add to cart button.
-8. Delivery estimate.
-9. Key trust badges (secure checkout, free returns).
+**Step 3.** Check each product page above the fold: title, one line on what makes it different, star rating, price with an anchor (compare-at price or bundle value), an offer block ("Buy 2, save 10%"), size or colour picker, Add to cart, delivery estimate and trust badges (secure checkout, free returns).
 
-**Product page, below the fold:** reasons to buy, how to use it, photo reviews, FAQs, a comparison, guarantees, and "goes well with" products.
+**Expected result:** All nine items show before scrolling on mobile.
 
-**Collection pages:**
+**Step 4.** Check below the fold on product pages: reasons to buy, how to use it, photo reviews, FAQs, a comparison, guarantees and "goes well with" products.
 
-1. Filters where people can pick several options and reset easily.
-2. Sort by best selling.
-3. Badges: new, best seller, low stock.
-4. Quick add to cart.
+**Expected result:** Shoppers who scroll find answers to every common doubt.
 
-**Cart and checkout:**
+**Step 5.** Check collection pages: multi-select filters with an easy reset, sort by best selling, badges (new, best seller, low stock) and quick add to cart.
 
-1. A progress bar towards free shipping or a free gift.
-2. A spot for one extra product (upsell).
-3. Express payment buttons (Shop Pay, Apple Pay, Google Pay, PayPal).
-4. No surprise fees.
-5. Trust badges and links to your policies.
-6. **Decision rule:** if an optional add-on annoys people (for example shipping protection that is ticked by default) and hurts conversion, remove it.
+**Expected result:** Shoppers can narrow and buy from a collection in a few taps.
+
+**Step 6.** Check cart and checkout: a progress bar to free shipping or a gift, one upsell spot, express pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal), no surprise fees, and trust badges with policy links.
+
+**Expected result:** Checkout has no surprises and the fastest pay options.
+
+**Watch out:** If an optional add-on annoys people (for example shipping protection ticked by default) and hurts conversion, remove it.
 
 ## Lesson 9.3: Accessibility basics
 <!-- stage:convert -->
 
-Accessibility means everyone can use your store, including people with poor eyesight or who use a keyboard instead of a mouse.
+**Why this matters:** Accessibility means everyone can use your store, including people with poor eyesight or who use a keyboard instead of a mouse. It is good for customers and often helps your Google ranking too.
 
-1. Strong colour contrast between text and background.
-2. Alt text on images (a short description for screen readers).
-3. The whole site works with just a keyboard.
-4. Font sizes that are easy to read.
-5. Labels on every form field.
-6. Captions on videos.
+**Step 1.** Run a free contrast check (for example WebAIM's contrast checker) on your text and button colours.
 
-This is good for customers, and often helps your Google ranking too.
+**Expected result:** Body text and buttons pass at least the AA level.
+
+**Step 2.** Add alt text (a short description for screen readers) to every product image in Shopify **Products > [product] > Media**.
+
+**Expected result:** Every image has a short, descriptive alt text.
+
+**Step 3.** Tab through your store with only the keyboard, from home page to checkout.
+
+**Expected result:** You can reach and use every link, button and form field.
+
+**Step 4.** Check font sizes (at least 16px body text on mobile), labels on every form field and captions on videos.
+
+**Expected result:** Text is easy to read, forms are labelled and videos have captions.
 
 ## Lesson 9.4: Speed
 <!-- stage:convert -->
 
-Most shoppers use a phone. A slow page loses them before they see what you sell.
+**Why this matters:** Most shoppers use a phone, and a slow page loses them before they see what you sell. Only fixes that save a second or more are worth chasing.
 
-1. Compress images and videos (make the files smaller).
-2. Remove apps and scripts you do not use.
-3. Lazy-load pictures and videos below the fold (they load only when people scroll to them).
-4. **Decision rule:** only chase fixes that save 1 to 2 seconds or more. Tiny gains are not worth the effort.
-5. Block bot traffic that skews your reports and slows the site.
+**Step 1.** Run your home page and a product page through PageSpeed Insights (pagespeed.web.dev) on mobile.
+
+**Expected result:** You have a load time and a list of the biggest issues.
+
+**Step 2.** Compress images and videos (aim for product images under about 300 KB).
+
+**Expected result:** Image files are smaller and pages load faster.
+
+**Step 3.** Remove apps and scripts you do not use, and lazy-load images and videos below the fold (they load only when people scroll to them).
+
+**Expected result:** Fewer scripts run on each page.
+
+**Step 4.** Turn on bot protection (for example Shopify's bot settings or your CDN) to block bot traffic that skews reports and slows the site.
+
+**Expected result:** Sessions in your reports reflect real people.
+
+**Watch out:** Only chase fixes that save 1 to 2 seconds or more. Tiny gains are not worth the effort.
 
 ## Lesson 9.5: Copy that sells
 <!-- stage:convert -->
 
-"Copy" means the words on your site.
+**Why this matters:** Copy means the words on your site. Specific words in your customers' own language sell; vague claims do not.
 
-1. Lead with the result the customer gets.
-2. Be specific ("dries in 2 hours", not "dries fast").
-3. Use your customers' own words. Reviews are the best source.
-4. Answer their worries.
-5. Keep sentences short.
-6. Use subheadings and bullet points.
-7. End with a clear button telling them what to do.
+**Step 1.** Rewrite the first line of each product description to lead with the result the customer gets.
+
+**Expected result:** The first line says what changes for the customer.
+
+**Step 2.** Replace vague claims with specific ones ("dries in 2 hours", not "dries fast"), using phrases from reviews.
+
+**Expected result:** Every claim is specific and in customer words.
+
+**Step 3.** Add answers to the top worries, then break the text into short sentences, subheadings and bullet points.
+
+**Expected result:** The page is easy to scan on a phone.
+
+**Step 4.** End each section with a clear button telling shoppers what to do.
+
+**Expected result:** There is always a next step visible.
 
 ## Lesson 9.6: Policies and service
 <!-- stage:convert -->
 
-Good service helps people decide to buy. Make sure you have:
+**Why this matters:** Good service helps people decide to buy. Clear policies and easy contact remove doubt before it stops a sale.
 
-1. A sale terms page: what is excluded and the dates.
-2. A returns policy in plain words.
-3. Shipping times for each region.
-4. Contact options that are easy to find.
-5. A help centre with the top questions.
-6. Automatic answers for order status and common questions.
+**Step 1.** Create a sale terms page listing exclusions and dates.
+
+**Expected result:** Shoppers can check sale rules in one click.
+
+**Step 2.** Write your returns policy in plain words and list shipping times for each region (Shopify **Settings > Policies**).
+
+**Expected result:** Returns and shipping times are clear and linked in the footer.
+
+**Step 3.** Make contact options easy to find and build a help centre with the top 10 questions.
+
+**Expected result:** Shoppers can find help without emailing you.
+
+**Step 4.** Set up automatic answers for order status and common questions in your help desk or chat app.
+
+**Expected result:** "Where is my order?" gets an instant answer.
 
 ## Lesson 9.7: Landing pages
 <!-- stage:convert -->
 
-A landing page is a page built for one ad or one offer.
+**Why this matters:** A landing page is a page built for one ad or one offer. Matching the page to the ad's message usually lifts conversion, and you can test one in 48 hours.
 
-**The usual order of sections:**
+**Step 1.** Pick one type: a listicle ("5 reasons..."), a comparison, a founder story, a bundle builder or a sale collection page.
 
-1. A hook headline.
-2. The problem.
-3. Your solution.
-4. 3 to 5 reasons to buy.
-5. Proof (reviews, results).
-6. The offer.
-7. FAQ.
-8. A final button.
+**Expected result:** You have chosen a page type that matches your ad.
 
-**Types of landing page:** a listicle ("5 reasons..."), a comparison, a founder story, a bundle builder, or a sale collection page (which also helps with Google search).
+**Step 2.** Build it in a page builder app with sections in this order: hook headline, the problem, your solution, 3 to 5 reasons to buy, proof, the offer, FAQ, final button.
 
-**How to test one:** build it in 48 hours with a page builder app. Send half the ad traffic to it and half to the normal product page. Keep the winner.
+**Expected result:** The page is live with all eight sections.
+
+**Step 3.** Send half the ad traffic to the new page and half to the normal product page.
+
+**Expected result:** Both pages get similar traffic from the same ads.
+
+<!-- do:meta-draft -->
+
+**Step 4.** After about 2 weeks, keep the page with the higher revenue per visit.
+
+**Expected result:** The winner becomes the default for that ad.
 
 ## Lesson 9.8: Measurement
 <!-- stage:convert -->
 
-1. **Heatmaps and session recordings** show where people click and scroll. Look for rage clicks (clicking again and again in frustration), dead clicks (clicking something that is not a link) and how far people scroll.
-2. **Store reports** show:
-   - Sessions (visits).
-   - The conversion funnel: sessions, then add to cart, then reached checkout, then purchase.
-   - Top landing pages.
-   - Phone versus computer.
-3. **Google Analytics** shows where visitors come from, which landing pages convert, and visits from AI assistants.
-4. **When conversion suddenly drops, check in this order:** tracking, site errors, payment methods, stock, price changes, where traffic came from, and competitor sales.
+**Why this matters:** Measuring shows you where shoppers get stuck. Heatmaps show behaviour, store reports show the funnel, and a fixed checklist finds the cause of sudden drops fast.
+
+**Step 1.** Install a heatmap and session recording tool (for example Microsoft Clarity, free) and watch 20 recordings of mobile visitors.
+
+**Expected result:** You have noted rage clicks (repeated frustrated clicks), dead clicks (clicks on things that are not links) and how far people scroll.
+
+**Step 2.** In Shopify **Analytics > Reports > Conversion rate breakdown**, read the funnel: sessions, then added to cart, then reached checkout, then purchased.
+
+**Expected result:** You know which step loses the most people.
+
+<!-- do:metrics -->
+
+**Step 3.** In Google Analytics, check traffic sources, landing pages that convert and visits from AI assistants.
+
+**Expected result:** You know where your best visitors come from.
+
+**Step 4.** When conversion suddenly drops, check in this order: tracking, site errors, payment methods, stock, price changes, traffic source and competitor sales.
+
+**Expected result:** You find the cause in minutes rather than days.
 
 ## Lesson 9.9: A/B testing
 <!-- stage:convert -->
 
-An A/B test shows two versions of a page to two halves of your visitors, to see which sells more.
+**Why this matters:** An A/B test shows two versions of a page to two halves of your visitors, to see which sells more. One change at a time, run to about 95% confidence, makes results trustworthy.
 
-1. Change only **one** thing.
-2. Split visitors 50/50.
-3. Wait until you are about 95% sure (your testing app shows this as "confidence" or "significance").
-4. Write every test and result in a log.
+**Step 1.** Pick one thing to change, for example a cart drawer versus a cart page.
 
-**Ideas to test:** menu layouts, a cart drawer versus a cart page, how you show a free gift, video on the product page, returns messages, versions of a pre-sale page.
+**Expected result:** The test changes only one thing.
 
-Small wins add up over time.
+**Step 2.** Set up the test in your testing app with a 50/50 split.
+
+**Expected result:** Each version gets half the visitors.
+
+**Step 3.** Wait until the app shows about 95% confidence (also called significance).
+
+**Expected result:** You have a result you can trust.
+
+**Step 4.** Write the test, result and decision in a test log.
+
+**Expected result:** Every test is recorded so wins add up and nothing is retested by accident.
 
 ## Lesson 9.10: Order value
 <!-- stage:convert -->
 
-AOV means average order value: total sales divided by number of orders. Raising it means each visitor is worth more.
+**Why this matters:** AOV (average order value: sales divided by orders) decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if fewer people do not buy as a result.
 
-1. **Tiers:** free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.
-2. **Bundles** and bundle builders (customers pick items for a set price).
-3. **"Goes well with" suggestions** in the cart.
-4. **A one-click offer after purchase** (on the thank-you page).
-5. **Quantity breaks** ("buy 3, save 15%").
-6. **Subscriptions** for things people use up (subscribe and save, with an easy skip).
+**Step 1.** Set tiers: free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.
 
-**Decision rule:** judge every order-value idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.
+**Expected result:** The cart shows shoppers what they unlock next.
+
+**Step 2.** Add a bundle or bundle builder (customers pick items for a set price).
+
+**Expected result:** At least one bundle is live on your best seller's page.
+
+**Step 3.** Add "goes well with" suggestions in the cart and a one-click offer on the thank-you page after purchase.
+
+**Expected result:** Shoppers see one relevant extra before and after paying.
+
+**Step 4.** Add quantity breaks ("buy 3, save 15%") and, for things people use up, subscriptions with an easy skip.
+
+**Expected result:** Repeat and bulk buyers have a reason to buy more.
+
+**Watch out:** Judge every order-value idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.
 
 ## Lesson 9.11: Shipping psychology
 <!-- stage:convert -->
 
-How you handle shipping changes how much people buy. The drawing below shows how to set a free shipping amount in Shopify.
+**Why this matters:** How you handle shipping changes how much people buy. Surprise shipping costs at checkout are one of the top reasons people leave, while a well-placed free shipping amount makes many add one more item.
 
-1. **Set a free shipping amount** a little above your typical order. Put it just above your median order value, which is often about 1.2 to 1.3 times your AOV. Many people add one more item to reach it.
-2. **Show delivery estimates** on the product page and in the cart.
-3. **Offer express shipping** as a paid upgrade.
-4. **Never surprise people with shipping costs at checkout.** It is one of the top reasons people leave without buying.
+**Step 1.** In Shopify **Analytics**, find your median order value, then set free shipping just above it (often about 1.2 to 1.3 times AOV) in **Settings > Shipping and delivery**.
+
+**Expected result:** A free shipping rate appears at your chosen amount.
+
+**Step 2.** Show delivery estimates on the product page and in the cart.
+
+**Expected result:** Shoppers know when it will arrive before checkout.
+
+**Step 3.** Add express shipping as a paid upgrade.
+
+**Expected result:** Shoppers in a hurry can pay to get it faster.
+
+**Step 4.** Show shipping costs before checkout (in the cart or on the product page).
+
+**Expected result:** No one meets a surprise cost at checkout.
+
+### Good to know
 
 <!-- guide:shopify-2-free-shipping -->
 ![Set a free shipping amount in Shopify](../../public/guides/shopify-2-free-shipping.svg)
@@ -217,39 +300,78 @@ How you handle shipping changes how much people buy. The drawing below shows how
 ## Lesson 9.12: Promotions without destroying margin
 <!-- stage:convert -->
 
-Margin is the share of each sale you keep. Big discounts eat it.
+**Why this matters:** Margin is the share of each sale you keep, and big store-wide discounts eat it. There are better ways to give people a reason to buy.
 
-1. **Use these instead of store-wide discounts:** free gifts, bundles, early access for your best customers, and loyalty rewards.
-2. **If you want to stop discounting so often, do it slowly:**
-   - Run fewer sales.
-   - Talk more about value.
-   - Keep better offers for new customers only.
+**Step 1.** Replace your next store-wide discount with a free gift, a bundle, early access for best customers or a loyalty reward.
+
+**Expected result:** Your next promotion protects margin.
+
+<!-- do:calendar -->
+
+**Step 2.** If you want to discount less often, run fewer sales, talk more about value, and keep the best offers for new customers only.
+
+**Expected result:** Discounts become rarer without a sudden drop in sales.
 
 ## Lesson 9.13: Special cases
 <!-- stage:convert -->
 
-1. **Expensive products that people think about for a long time:** more content, comparisons, payment plans, samples or swatches, consultations, and longer retargeting (showing ads to past visitors for longer).
-2. **Preorders and made-to-order:** clear dispatch dates, an option to pay a deposit, and progress updates.
-3. **Video shopping:** videos people can shop from, on product pages and the homepage.
-4. **Reviews:** a "wall of love" page, photo reviews, and review requests sent after people have used the product.
-5. **Site search:** add synonyms, push best sellers to the top, and never show a "no results" dead end.
-6. **Structured product details** (Shopify metafields): consistent product info, better filters, and easier for AI assistants to read.
-7. **Wholesale (B2B):** wholesale prices behind a login, and separate catalogs.
-8. **Selling overseas:** local currency and duties (see Module 15).
+**Why this matters:** Some stores have special needs: expensive products, preorders, video shopping, big catalogues, wholesale or overseas customers. Each has a few proven fixes.
+
+**Step 1.** For expensive, considered products, add comparisons, payment plans, samples or swatches, consultations, and run retargeting (ads to past visitors) for longer.
+
+**Expected result:** Long decisions have the content they need.
+
+**Step 2.** For preorders and made-to-order, show clear dispatch dates, offer a deposit option and send progress updates.
+
+**Expected result:** Preorder buyers know exactly what to expect.
+
+**Step 3.** Add shoppable videos, a "wall of love" review page and review requests sent after people have used the product.
+
+**Expected result:** Proof and video show on product and home pages.
+
+<!-- do:flow-review-request -->
+
+**Step 4.** Fix site search: add synonyms, push best sellers up and never show a "no results" dead end.
+
+**Expected result:** Every search shows something useful.
+
+**Step 5.** Fill in structured product details (Shopify metafields) and, if relevant, set up wholesale prices behind a login and local currency for overseas (Module 15).
+
+**Expected result:** Filters work better, AI assistants can read your products, and special buyer groups are served.
 
 ## Lesson 9.14: Working with developers
 <!-- stage:convert -->
 
-1. **Before adding an app, check:** cost, how much it slows the site, support, and how hard it is to remove later.
-2. **Get cost estimates** for custom work.
-3. **Choose a developer** by their past work and a small paid test job.
-4. **Write a development brief:** the goal, a user story ("As a shopper, I want..."), the design, how you will know it is done (acceptance criteria), and the deadline.
-5. **Decision rule:** only change your whole theme when the current one blocks several important fixes.
+**Why this matters:** Apps and developers can speed you up or slow your store down for years. A few checks before you commit keep costs and speed under control.
+
+**Step 1.** Before adding any app, check its cost, how much it slows the site, its support and how hard it is to remove.
+
+**Expected result:** Each new app has passed four checks.
+
+**Step 2.** Get written cost estimates for custom work and choose a developer by past work plus a small paid test job.
+
+**Expected result:** You hire on evidence.
+
+**Step 3.** Write a brief with the goal, a user story ("As a shopper, I want..."), the design, acceptance criteria (how you know it is done) and the deadline.
+
+**Expected result:** The developer knows exactly what done looks like.
+
+**Watch out:** Only change your whole theme when the current one blocks several important fixes.
 
 ## Lesson 9.15: Category patterns from store audits
 <!-- stage:convert -->
 
-Stores in the same category usually miss the same things.
+**Why this matters:** Stores in the same category usually miss the same things. Checking your category's common gaps is a fast way to find quick wins.
+
+**Step 1.** Find your category in the table below.
+
+**Expected result:** You have the list of common gaps for your category.
+
+**Step 2.** Check your store for each gap and add the ones you are missing to your CRO list (Lesson 9.1).
+
+**Expected result:** Your improvement list includes the category's common fixes.
+
+### Good to know
 
 | Category | What is usually missing |
 | --- | --- |

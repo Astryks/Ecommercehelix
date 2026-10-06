@@ -35,11 +35,21 @@
 ## Lesson 19.1: Why other people's faces sell your product
 <!-- stage:attract -->
 
-People trust people more than brands. When someone who looks like your customer explains why they switched, it feels more real than the brand saying "we love our product".
+**Why this matters:** People trust people more than brands. When someone who looks like your customer explains why they switched, it feels more real than the brand praising itself, and it gives ad platforms the variety of ages, styles and reasons they need to find new buyers. UGC (user-generated content) means photos and videos made by customers or creators instead of the brand.
 
-Creator content also gives you variety: different ages, styles, places and reasons to buy. Ad platforms need that variety to find new groups of buyers.
+**Step 1.** Read the four ways to work with creators in the table below (gifting, paid UGC, influencer or partnership, affiliate).
 
-UGC means user-generated content: photos and videos made by customers or creators instead of the brand.
+**Expected result:** You know what each costs and what you get.
+
+**Step 2.** Start with gifting and paid UGC: send product to 10 creators and pay 2 or 3 for ad-ready videos.
+
+**Expected result:** You have your first creator videos to test.
+
+**Step 3.** Keep working with the creators whose videos perform, and move the best ones up to paid partners.
+
+**Expected result:** Your creator roster grows from proven performers.
+
+### Good to know
 
 **Four ways to work with creators:**
 
@@ -50,57 +60,82 @@ UGC means user-generated content: photos and videos made by customers or creator
 | Influencer or partnership | A fee, commission, or both | Posts to their audience, plus permission to run ads from their account | Their audience is engaged and matches your customers |
 | Affiliate | Commission on each sale, and a discount code | Regular posts, often from many small creators | Products people buy again, with good margins |
 
-**What most stores do:**
-
-1. Start with gifting and paid UGC.
-2. Keep working with the people whose videos perform.
-3. Move the best ones up to paid partners.
-
 ## Lesson 19.2: Finding the right creators
 <!-- stage:attract -->
 
-Fit matters more than follower count. A creator with 4,000 engaged followers who already talks about your kind of product beats a 400,000-follower lifestyle account.
+**Why this matters:** Fit matters more than follower count. A creator with 4,000 engaged followers who already talks about your kind of product beats a 400,000-follower lifestyle account.
 
-**Where to look:**
+**Step 1.** Search your own tags and mentions on Instagram and TikTok for customers who already post about you.
 
-1. **Your own customers and posts that tag you.** Search your tags and mentions. People who already bought are the easiest yes.
-2. **Search the platform yourself.** Search for the problems your product solves, not your product name. Save creators whose videos you would actually stop to watch.
-3. **Creator marketplaces on the platforms.** Meta and TikTok have creator search tools. Filter by audience location, size and category.
-4. **Competitors' tags and comments.** Who already makes content for similar brands?
-5. **UGC marketplaces and agencies,** when you need paid-only videos fast.
+**Expected result:** You have a list of warm creator leads.
 
-**Score each creator out of 10** on:
+**Step 2.** Search the platforms for the problems your product solves (not your product name) and save creators you would stop to watch.
 
-1. Comfort on camera.
-2. Speaks to your kind of customer.
-3. Their style fits the platform (natural, not glossy).
-4. Their comments show a real community.
-5. They post regularly.
-6. Their values fit yours.
+**Expected result:** Your list grows with problem-focused creators.
 
-**Decision rule:** shortlist creators who score 7 or more.
+**Step 3.** Use Meta and TikTok creator marketplaces, filtering by audience location, size and category, and check who makes content for competitors.
+
+**Expected result:** You have 20 or more candidates.
+
+**Step 4.** Score each out of 10 across comfort on camera, speaking to your customer, natural platform style, real community in comments, regular posting and fitting values.
+
+**Expected result:** Each creator has a score.
+
+**Step 5.** Shortlist creators who score 7 or more.
+
+**Expected result:** You have a focused shortlist to contact.
+
+**Watch out:** For paid-only videos at speed, UGC marketplaces and agencies are a good backup.
 
 ## Lesson 19.3: Outreach and onboarding
 <!-- stage:attract -->
 
-**First message (change it to fit, keep it personal):**
+**Why this matters:** Good outreach is personal, offers product first and makes the ongoing money clear early. Creator videos often take 4 to 8 weeks to arrive, so start early.
+
+**Step 1.** Send a personal first message that mentions a specific video of theirs (template below).
+
+**Expected result:** Each message names something they made.
+
+**Step 2.** Offer product first, and money once their content works; mention the affiliate offer in the first or second message.
+
+**Expected result:** Creators know there is ongoing money in it.
+
+**Step 3.** Send a one-page brand overview: what you stand for, who you serve, what makes you different and three proof points.
+
+**Expected result:** Every creator has the same clear brand summary.
+
+**Step 4.** Track everyone in a sheet: name, account, platform, status (contacted, sent, posted, paid, partner), content links and results.
+
+**Expected result:** You can see the whole pipeline at a glance.
+
+**Step 5.** Brief creators for the busy season in September, not November, and keep months of stock and new products flowing to your best partners.
+
+**Expected result:** Creator content arrives in time for peak.
+
+<!-- do:bfcm -->
+
+### Good to know
 
 > Hi [name], I loved your video about [specific thing]. We make [product], built for people who [problem]. I think your audience would get a lot from it. Could I send you one to try, no strings attached? If you like it, we would love to talk about a paid collaboration and our affiliate program.
-
-**Rules that save time:**
-
-1. **Mention a specific video.** Messages that could go to anyone get ignored.
-2. **Offer product first. Offer money once their content works.** Then build up: more product plus a paid fee for the next video.
-3. **Mention the affiliate offer in your first or second message,** so they know there is ongoing money in it.
-4. **Send a one-page brand overview:** what you stand for, who you serve, what makes you different, and three proof points.
-5. **Track everyone in a simple sheet:** name, account, platform, status (contacted, sent, posted, paid, partner), links to content, and results.
-6. **Allow time.** Creator videos often take 4 to 8 weeks to arrive. Brief them for the busy season in September, not November.
-7. **Want them to keep featuring you?** Make sure you have stock for months, not weeks, and keep sending new products.
 
 ## Lesson 19.4: Deals, rates and usage rights
 <!-- stage:attract -->
 
-Agree these terms with every creator.
+**Why this matters:** Clear terms prevent disputes and let you use content the way you planned. Seven terms cover every creator deal.
+
+**Step 1.** For each creator, agree the seven terms in the table below: deliverables, usage rights, exclusivity, partnership ad access, payment, changes and disclosure.
+
+**Expected result:** Every term has an agreed answer.
+
+**Step 2.** Pay more for raw footage, several hooks, longer usage, exclusivity and partnership ad access.
+
+**Expected result:** Higher fees buy the extras you need.
+
+**Step 3.** Confirm the deal in writing, even if only a short email.
+
+**Expected result:** You have written terms for every creator.
+
+### Good to know
 
 | Term | What to agree | A typical starting point |
 | --- | --- | --- |
@@ -112,56 +147,74 @@ Agree these terms with every creator.
 | Changes | How many rounds of edits | 1 round |
 | Disclosure | A "Paid partnership" label or #ad | Always required by law |
 
-**Pay more for:** raw footage, several hooks, longer usage, exclusivity and partnership ad access.
-
-**Get everything in writing,** even if it is a short email confirming the deal.
-
 ## Lesson 19.5: Affiliate programmes that do not cannibalise you
 <!-- stage:attract -->
 
-An affiliate earns a commission on each sale they bring. "Cannibalise" means your own offers steal the sale from them.
+**Why this matters:** An affiliate earns a commission on each sale they bring. Cannibalising means your own offers steal the sale from them, and when that happens creators stop posting.
 
-**An example setup:** 10% off for the creator's audience, and 15% commission on orders over $100 from new customers.
+**Step 1.** Set up an example offer, such as 10% off for the creator's audience and 15% commission on orders over $100 from new customers.
 
-**Check it against your numbers.** The discount plus the commission must stay well under your break-even CPA (the most you can pay for a sale, see Module 1).
+**Expected result:** The offer is live in your affiliate app.
 
-**Avoid the offer clash:**
+**Step 2.** Check the discount plus commission stays well under your break-even CPA (Module 1).
 
-- If your site pop-up gives 15% off and the creator's code gives 10%, shoppers use your code. The creator earns nothing. Creators notice and stop posting.
-- **Fix it one of two ways:** make the creator code match your best public offer, or give creators something only they have (a bundle, a gift, or free express shipping).
+**Expected result:** Every affiliate sale still makes money.
 
-**Give affiliates a content guide** with:
+<!-- do:metrics -->
 
-1. Product facts, and the three main problems it solves.
-2. Angles and hooks that already work in your ads.
-3. A do and don't list (claims they cannot make).
-4. Examples of great affiliate videos.
-5. How and when they get paid.
+**Step 3.** Fix offer clashes: if your pop-up gives 15% and their code gives 10%, match the creator code to your best public offer or give creators something only they have (a bundle, a gift or free express shipping).
 
-**Recruit in batches.** Ten small affiliates posting twice a month beats one big name posting once.
+**Expected result:** Creator codes are always the best deal for their audience.
+
+**Step 4.** Give affiliates a content guide: product facts and top three problems solved, proven angles and hooks, a do and don't list, example videos, and how and when they get paid.
+
+**Expected result:** Affiliates can post without asking you questions.
+
+**Step 5.** Recruit in batches of 10 or more.
+
+**Expected result:** Ten small affiliates posting twice a month beat one big name posting once.
 
 ## Lesson 19.6: Partnership ads (whitelisting)
 <!-- stage:attract -->
 
-Partnership ads (also called whitelisting) are paid ads that run from a creator's account, or a founder or niche page, instead of your brand page. People see a familiar person, not an ad, so they stop and trust it more.
+**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account instead of your brand page. People see a familiar person, not an ad. Meta reports lower cost per customer when they sit inside normal sales campaigns; treat that as a reason to test, not a promise.
 
-Meta has reported lower cost per customer and higher click rates when partnership ads sit inside normal sales campaigns. Treat platform claims as a reason to test, not a promise.
+**Step 1.** Ask the creator's permission in writing and agree how long it lasts.
 
-**How to run them:**
+**Expected result:** You have written permission with an end date.
 
-1. **Ask permission in writing** and agree how long it lasts.
-2. **The creator connects your ad account** through the platform's partnership tools.
-3. **Choose the content:** their posts that already did well for free, or new videos made for ads.
-4. **Add them to your normal cold campaign as a new batch.** Do not create a separate campaign just for creators.
-5. **Make the brand clear in the first five seconds,** so the story does not drift away from the product.
-6. **Judge them with the same rules as every other ad:** cost per sale and hook rate (Module 6, Lesson 6.12).
+**Step 2.** Ask the creator to connect your ad account through Meta's partnership ad settings (Instagram **Settings > Business tools > Branded content**).
 
-**Ideas that work:** a creator explaining why your product costs what it does; a niche expert's "the one item I would keep"; a founder page telling the story behind a feature.
+**Expected result:** Their account shows in Ads Manager as an identity you can use.
+
+**Step 3.** Choose content: posts that already did well for free, or new videos made for ads.
+
+**Expected result:** You have picked 2 to 5 creator posts.
+
+**Step 4.** Add them to your normal cold campaign as a new batch (not a separate campaign) and make the brand clear in the first five seconds.
+
+**Expected result:** Partnership ads run alongside your other ads.
+
+<!-- do:meta-draft -->
+
+**Step 5.** Judge them by the same rules as every other ad: cost per sale and hook rate (Lesson 6.12).
+
+**Expected result:** Creator ads earn their budget on the same terms.
 
 ## Lesson 19.7: Video ad formats
 <!-- stage:attract -->
 
-Pick formats that fit the job and how well people know you (awareness stage, see Module 5, Lesson 5.5).
+**Why this matters:** The format is how a video tells its story: testimonial, demo, comparison and more. A healthy account has several formats live at once, matched to how well people know you.
+
+**Step 1.** Label each live video ad with its format from the table below.
+
+**Expected result:** You can see your current mix.
+
+**Step 2.** Add one format you are missing to your next batch, chosen to fit the audience's awareness stage (Lesson 5.5).
+
+**Expected result:** Your account has at least four formats live.
+
+### Good to know
 
 | Format | What it looks like | Best for |
 | --- | --- | --- |
@@ -179,40 +232,49 @@ Pick formats that fit the job and how well people know you (awareness stage, see
 | Reaction or stitch | Replying to a comment or a one-star review | Answering objections |
 | Still image and carousel | An image with a bold claim, review or offer | Warm audiences, sales, catalog |
 
-**Keep a mix.** A healthy account has several formats live at once, not ten versions of one talking head.
-
 ## Lesson 19.8: Hooks that win the first three seconds
 <!-- stage:attract -->
 
-The hook is the first 3 seconds. Every video has two hooks working together:
+**Why this matters:** Every video has two hooks working together in the first 3 seconds: what you see (the visual hook) and the first sentence (the spoken hook). They do not have to say the same thing. Hooks are what you test most.
 
-1. **The visual hook:** what you see in the first frame. Movement, an odd object, a result, a face mid-reaction, or bold text on screen.
-2. **The spoken hook:** the first sentence.
+**Step 1.** Collect hook ideas from customer reviews, support emails and competitors' one and two star reviews.
 
-They do not have to say the same thing. A strong spoken hook can pack in a lot without feeling heavy. For example, a dad saying he packs a full week of lunches every Sunday in 40 minutes.
+**Expected result:** You have a hook bank of 10 or more ideas.
 
-**Hook types to rotate:**
+**Step 2.** Write a visual hook for your next video: movement, an odd object, a result, a face mid-reaction or bold on-screen text.
 
-1. **Bold statement:** a confident claim you can back up.
-2. **Call out:** "If you have [problem], stop scrolling."
-3. **Curiosity gap:** "Nobody tells you this about [category]."
-4. **Gossip:** "I wasn't supposed to share this..."
-5. **Myth or friction:** "Most [products] are mostly filler. Here is what is actually inside."
-6. **One-star reply:** read a bad review (yours or one for the category) and answer it.
-7. **Price question:** "Why is this $120 when the supermarket one is $20?"
-8. **Result first:** show the result, then explain.
-9. **Opinion:** "Hot take: [common habit] is a waste of money."
-10. **A surprising fact:** a true number about the problem.
+**Expected result:** The first frame grabs attention with sound off.
 
-**Where to find hooks:** customer reviews, support emails, and competitors' one- and two-star reviews. They tell you what people hate, and what you do differently.
+**Step 3.** Write 3 spoken hooks from different types: bold statement, call out, curiosity gap, gossip, myth, one-star reply, price question, result first, opinion or surprising fact.
 
-**How to measure hooks:**
+**Expected result:** You have 3 openings to film.
 
-- **Hook rate** = 3-second views ÷ impressions (times the ad was shown). **Under 20% means the opening is not working.**
-- **Hold rate** = views to 50% (or ThruPlays, 15-second views) ÷ 3-second views. This tells you if the rest of the video keeps people.
+**Step 4.** After 7 days, check hook rate (3-second views divided by impressions) and hold rate (views to 50%, or ThruPlays, divided by 3-second views) in Ads Manager.
+
+**Expected result:** You know which opening works. Under 20% hook rate means the opening is not working.
+
+<!-- do:insights -->
 
 ## Lesson 19.9: Scripting
 <!-- stage:attract -->
+
+**Why this matters:** A script turns a hook into a sale. A simple five-part structure for 20 to 45 seconds works for most products, and rotating script ideas keeps ads fresh.
+
+**Step 1.** Draft your script in the five parts in the table below: hook, problem or setting, product and proof, answer a worry, call to action.
+
+**Expected result:** You have a 20 to 45 second script.
+
+**Step 2.** Pick a script idea to rotate in: bold statement and proof, four reasons, myth and friction, gossip, same product different problem, why now, let the product talk, or face the competition.
+
+**Expected result:** Your next batch uses a script idea you have not tried recently.
+
+**Step 3.** Write a specific call to action with a reason ("Tap Shop now and grab the starter kit, so it arrives before Friday") that matches the landing page offer.
+
+**Expected result:** The call to action is specific and matches the page.
+
+**Watch out:** Lots of views but few sales usually means a weak call to action or a hook that attracts the wrong people. Test 30 to 60 second versions when the product needs explaining.
+
+### Good to know
 
 **A simple structure for a 20 to 45 second video:**
 
@@ -224,54 +286,76 @@ They do not have to say the same thing. A strong spoken hook can pack in a lot w
 | Answer a worry | 25 to 35 | Price, quality, fit or delivery |
 | Call to action | Last 3 to 5 | What to do, and why now |
 
-**Script ideas to rotate** (the examples are made up):
-
-1. **Bold statement and proof:** one bold claim about one product, then a case study, fact or review that backs it up.
-2. **Four reasons:** "Four reasons I swapped my old water bottle."
-3. **Myth and friction:** name a common belief, explain why it is wrong, show your product as the fix.
-4. **Gossip and problem-solution:** a casual, insider tone that reveals a problem and the fix.
-5. **Same product, different problem:** one product, three types of person, three reasons to buy. For example a planner for students, parents and freelancers.
-6. **Why now:** link the product to a moment, like summer, back to school, a launch or a gift date.
-7. **Let the product talk:** the product "speaks" or is the main character.
-8. **Face the competition:** "We are not the only ones making this, but here is why ours is better."
-
-**Calls to action that work:**
-
-1. Be specific: "Tap Shop now and grab the starter kit."
-2. Give the reason: "so it arrives before Friday."
-3. Match the offer on the landing page.
-
-**Decision rule:** lots of views but few sales usually means a weak or missing call to action, or a hook that attracts the wrong people.
-
-**Length:** short videos still work. But 30 to 60 second videos with a real explanation or story often sell well when the product needs explaining. Test both.
-
 ## Lesson 19.10: Shooting on a phone
 <!-- stage:attract -->
 
-1. **Light:** face a window for natural light. Avoid only overhead light.
-2. **Format:** film tall (9:16) at 1080p or higher. Use the back camera when you can.
-3. **Sound:** clean audio matters more than video. Use a small clip-on microphone, or film in a quiet room with soft furnishings.
-4. **Hooks:** film several takes of the hook. The hook is what you test most.
-5. **B-roll:** film extra shots to cut in: product close-ups, the product in use, packaging, hands, results and settings.
-6. **Keep it natural:** real homes and real people beat studio polish in social feeds.
+**Why this matters:** A phone is enough to shoot ads that work. Light, sound and extra shots matter more than gear.
+
+**Step 1.** Face a window for natural light, and avoid overhead light only.
+
+**Expected result:** The face is evenly lit with no harsh shadows.
+
+**Step 2.** Film tall (9:16) at 1080p or higher, using the back camera when you can.
+
+**Expected result:** Footage is sharp and the right shape.
+
+**Step 3.** Use a clip-on microphone, or film in a quiet room with soft furnishings.
+
+**Expected result:** Audio is clean with no echo.
+
+**Step 4.** Film several takes of the hook, then B-roll: product close-ups, the product in use, packaging, hands, results and settings.
+
+**Expected result:** You have spare hooks and cutaway shots for editing.
 
 ## Lesson 19.11: Editing for performance
 <!-- stage:attract -->
 
-1. **Cut every 1 to 2 seconds** at the start. Remove pauses and filler words.
-2. **Add captions burned into the video.** Most people watch with the sound off. Keep text inside the safe zones.
-3. **Put bold hook text on screen** in the first frame.
-4. **Lay B-roll over the talking** to show what is being said.
-5. **Add quiet music** under the voice. Check the music licence allows ads.
-6. **Export each size:** 9:16 for Reels, Stories and TikTok; 4:5 for the feed; 1:1 when needed.
-7. **Make 3 to 5 hook versions of each winning video.** Change only the first three seconds.
-8. **AI editing tools** can resize, caption, translate and make versions fast. Label AI-made people or voices where platforms require it. Never fake reviews or results.
-9. **Before launch, check platform "auto-enhance" settings** so they do not change your message.
+**Why this matters:** Editing decides whether people watch past 3 seconds. Fast cuts, captions and several hook versions are what lift results.
+
+**Step 1.** Cut every 1 to 2 seconds at the start and remove pauses and filler words.
+
+**Expected result:** The opening moves fast.
+
+**Step 2.** Burn in captions inside the safe zones and add bold hook text on the first frame.
+
+**Expected result:** The video works with sound off.
+
+**Step 3.** Lay B-roll over talking and add quiet music with a licence that allows ads.
+
+**Expected result:** The video shows what is said and the music is cleared.
+
+**Step 4.** Export 9:16 (Reels, Stories, TikTok), 4:5 (feed) and 1:1 when needed.
+
+**Expected result:** You have every size.
+
+**Step 5.** Make 3 to 5 hook versions of each winning video, changing only the first three seconds.
+
+**Expected result:** Winners get fresh openings to test.
+
+**Watch out:** Label AI-made people or voices where required, never fake reviews, and check auto-enhance settings before launch.
 
 ## Lesson 19.12: The UGC brief
 <!-- stage:attract -->
 
-Send this to every creator. A clear brief is the difference between videos you can use and wasted product.
+**Why this matters:** A clear brief is the difference between videos you can use and wasted product. Send this one-page brief to every creator before they film.
+
+**Step 1.** Copy the brief below and fill in brand, product, link, who you are and who it is for.
+
+**Expected result:** The top of the brief is complete.
+
+**Step 2.** Fill in the goal, key message, proof points, must say and must not say.
+
+**Expected result:** The creator knows what to say and avoid.
+
+**Step 3.** Fill in format, 3 hooks, script outline, call to action and offer.
+
+**Expected result:** The creative direction is clear.
+
+**Step 4.** Fill in deliverables, B-roll list, do and don't, usage rights, deadline, payment, disclosure and example links, then send.
+
+**Expected result:** The creator has everything needed to deliver the first time.
+
+### Good to know
 
 ```
 UGC BRIEF
@@ -301,17 +385,27 @@ Examples we love: [links]
 ## Lesson 19.13: Building a creative engine
 <!-- stage:attract -->
 
-A creative engine is a steady weekly supply of new ads.
+**Why this matters:** A creative engine is a steady weekly supply of new ads. Accounts that keep winning are the ones that never run out of fresh, well-briefed creative.
 
-1. **Aim for 4 to 8 new ads a week** at small to medium spend. Make more as you spend more.
-2. **Keep a hook bank and a library of winners.** Tag each by angle, format, type of person and result.
-3. **Every Monday:**
-   - Review last week's results.
-   - Pick the winning idea.
-   - Brief new versions: new hooks, new creators, new formats with the same message.
-4. **Quality beats quantity.** One well-briefed idea with five hooks beats twenty random videos.
-5. **Borrow popular formats.** Take a structure that works on social right now and use it with your product and your story. Copy the format, never the content.
-6. **Speak to specific groups.** Niche groups (runners, new parents, gamers, nurses) respond to content made just for them.
+**Step 1.** Set a target of 4 to 8 new ads a week at small to medium spend, more as spend grows.
+
+**Expected result:** You have a weekly creative target.
+
+**Step 2.** Keep a hook bank and a library of winners, tagged by angle, format, type of person and result.
+
+**Expected result:** You can find any past winner in seconds.
+
+**Step 3.** Every Monday, review last week's results, pick the winning idea and brief new versions (new hooks, creators and formats with the same message).
+
+**Expected result:** A new batch is briefed every Monday.
+
+<!-- do:calendar -->
+
+**Step 4.** Borrow popular formats and speak to specific groups (runners, new parents, gamers, nurses).
+
+**Expected result:** Each batch includes a format that is working on social right now and a niche-focused ad.
+
+**Watch out:** Copy the format, never the content. One well-briefed idea with five hooks beats twenty random videos.
 
 ## Self-check
 

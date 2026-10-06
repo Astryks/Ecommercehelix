@@ -30,11 +30,21 @@
 ## Lesson 18.1: The stack by need and stage
 <!-- stage:grow -->
 
-Stages used below:
+**Why this matters:** The right tools depend on your stage: just starting, steady weekly sales (stage 1), or several channels with meaningful ad spend (stage 2). Buying tools too early slows your site and drains cash.
 
-- **Day one:** you are just starting.
-- **Stage 1:** you have steady sales every week.
-- **Stage 2:** you sell through several channels (for example Meta, Google and email) and spend a meaningful amount on ads.
+**Step 1.** Decide your stage: day one (just starting), stage 1 (steady sales every week) or stage 2 (several channels and meaningful ad spend).
+
+**Expected result:** You know which column of the table below applies to you.
+
+**Step 2.** For each need in the table below, compare what you use now with the suggestion for your stage.
+
+**Expected result:** You have a list of gaps and of tools you do not need yet.
+
+**Step 3.** Cancel tools that are ahead of your stage and add only the one gap that matters most.
+
+**Expected result:** Your stack fits your stage.
+
+### Good to know
 
 | Need | Type of tool | When to add it |
 | --- | --- | --- |
@@ -60,12 +70,25 @@ Stages used below:
 ## Lesson 18.2: Rules for adding a tool
 <!-- stage:grow -->
 
-Follow these four steps before you add any app.
+**Why this matters:** Every app costs money and speed. Four steps make sure each one earns its place.
 
-1. **Name the number it should improve.** For example "email sign-ups per 100 visitors".
-2. **Check the cost.** How much does it slow your site? What does it cost each month, as a share of sales?
-3. **Trial it for a set time,** for example 30 days.
-4. **Remove it if the number did not improve.**
+**Step 1.** Name the number the tool should improve, for example "email sign-ups per 100 visitors".
+
+**Expected result:** The tool has a target number.
+
+**Step 2.** Check its monthly cost as a share of sales and how much it slows your site.
+
+**Expected result:** You know its full cost.
+
+**Step 3.** Trial it for a set time, for example 30 days.
+
+**Expected result:** The trial has an end date in your calendar.
+
+<!-- do:calendar -->
+
+**Step 4.** Remove it if the number did not improve.
+
+**Expected result:** Only tools that move a number stay.
 
 ## Self-check
 

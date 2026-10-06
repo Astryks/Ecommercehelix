@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { listModules, renderModule } from "@/lib/learn";
+import { listModules, renderLessonPage } from "@/lib/learn";
+import { LessonSteps, PROSE } from "@/components/learn/LessonSteps";
 import { termsIn } from "@/lib/glossary";
 
 export function generateStaticParams() {
@@ -12,12 +13,12 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/learn/[slug]">): Promise<Metadata> {
   const { slug } = await params;
-  return { title: renderModule(slug)?.title ?? "Learn" };
+  return { title: renderLessonPage(slug)?.title ?? "Learn" };
 }
 
 export default async function LearnModule({ params }: PageProps<"/learn/[slug]">) {
   const { slug } = await params;
-  const mod = renderModule(slug);
+  const mod = renderLessonPage(slug);
   if (!mod) notFound();
   const modules = listModules();
   const idx = modules.findIndex((m) => m.slug === slug);
@@ -41,10 +42,24 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
         <main className="min-w-0">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Module {meta.number}</p>
           <h1 className="mt-1 text-4xl font-bold tracking-tight">{mod.title}</h1>
-          <article
-            className="prose prose-slate mt-8 max-w-none prose-headings:scroll-mt-6 prose-a:text-cyan-700 prose-h2:mt-12 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-table:text-sm prose-th:bg-slate-50 prose-th:px-3 prose-td:px-3 [&_h2_a]:no-underline [&_h3_a]:no-underline [&_h2_a]:text-slate-900 [&_h3_a]:text-slate-900 [&_details]:rounded-xl [&_details]:bg-slate-50 [&_details]:p-4 [&_summary]:cursor-pointer [&_summary]:font-medium [&_blockquote]:not-italic [&_blockquote]:rounded-xl [&_blockquote]:border-l-4 [&_blockquote]:border-emerald-400 [&_blockquote]:bg-emerald-50 [&_blockquote]:px-6 [&_blockquote]:py-2 [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none [&_.guide]:block [&_.guide_img]:my-2 [&_.guide_img]:rounded-xl [&_.guide_img]:border [&_.guide_img]:border-slate-200"
-            dangerouslySetInnerHTML={{ __html: mod.html }}
-          />
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600">
+            <span>{mod.lessonCount} lessons, {mod.stepCount} steps</span>
+            <span aria-hidden>·</span>
+            <span>One instruction at a time, each with the result to expect. Tick steps as you go; Helix remembers.</span>
+          </div>
+          <div className="mt-6">
+            {mod.sections.map((s, i) =>
+              s.kind === "lesson" ? (
+                <LessonSteps key={s.lesson.id} lesson={s.lesson} />
+              ) : (
+                <article
+                  key={i}
+                  className={`${PROSE} prose-headings:scroll-mt-6 prose-p:my-4 prose-h2:mt-12 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 [&_h2_a]:no-underline [&_h3_a]:no-underline [&_h2_a]:text-slate-900 [&_h3_a]:text-slate-900`}
+                  dangerouslySetInnerHTML={{ __html: s.html }}
+                />
+              ),
+            )}
+          </div>
           {words.length > 0 && (
             <section aria-labelledby="words-title" className="mt-14 rounded-xl border border-slate-200 bg-slate-50 p-6">
               <h2 id="words-title" className="text-lg font-semibold">Words to know in this module</h2>

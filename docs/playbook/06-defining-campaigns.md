@@ -37,7 +37,27 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.1: Numbers first
 <!-- stage:attract -->
 
-Never open Ads Manager until you know these five numbers. Module 1 explains each one.
+**Why this matters:** Never open Ads Manager until you know the five numbers that say whether an ad makes or loses money. They come from Module 1 and Helix works them out from your daily numbers. With them, every later decision is a simple comparison.
+
+**Step 1.** Open the Dashboard on **Month** and copy your target MER, break-even ROAS and break-even CPA from the metric cards.
+
+**Expected result:** You have three numbers written on your campaign brief.
+
+<!-- do:metrics -->
+
+**Step 2.** Work out target blended CPA (AOV times target MER), then set an allowance for cold campaigns of up to double that, as shown in the table below.
+
+**Expected result:** You have a target CPA and a cold CPA allowance.
+
+**Step 3.** Compare your target CPA with what similar stores pay to win a customer. If yours is lower, do not spend yet: fix offer, order size or margins first (Module 2).
+
+**Expected result:** You know whether your numbers can support paid ads today.
+
+**Watch out:** Only pay more for a first order based on lifetime value (what a customer spends over time) when you have real repeat data: the share who buy again within 12 months and the margin on their second order.
+
+### Good to know
+
+**Why cold campaigns get double:** ad platforms miss many sales that cold ads cause, because people see an ad and buy days later another way. So the cost per sale they report looks worse than it really is.
 
 | Number | What it means | How to work it out | Example (AOV $90, VCR 40%, FCR 15%, profit goal 15%) |
 | --- | --- | --- | --- |
@@ -47,16 +67,24 @@ Never open Ads Manager until you know these five numbers. Module 1 explains each
 | Target blended CPA | What you aim to pay per sale, across all customers | AOV x target MER | $27 |
 | Allowance for cold campaigns | What a campaign aimed at new people may show per sale | Target CPA x 2 | $54 |
 
-**Why cold campaigns get double:** ad platforms miss many of the sales that cold ads cause (people see an ad, then buy days later another way). So the cost per sale they report looks worse than it really is.
-
-**Decision rule:** if your **target** CPA is lower than what similar stores pay to win a customer, do not spend yet. First fix your offer, order size or margins (Module 2).
-
-**First order versus lifetime value:** if customers reliably buy again, you can afford to pay more for the first order. Only do this when you have real repeat data: the share of customers who buy again within 12 months, and the margin on their second order. Watch your cash, because the payback comes later.
-
 ## Lesson 6.2: Pick the job of the campaign
 <!-- stage:attract -->
 
-Each campaign has one job. The job decides which goal (objective) you choose in Ads Manager and what you tell the platform to aim for (optimise for).
+**Why this matters:** Each campaign has one job, and the job decides the objective (the goal you pick in Ads Manager) and what the platform optimises for (the action it hunts for). Pick the wrong one and the platform finds clickers instead of buyers.
+
+**Step 1.** Pick the job of your campaign from the table below, for example "Find new buyers".
+
+**Expected result:** You have one job written on the brief.
+
+**Step 2.** In Ads Manager click **Create**, choose the objective listed for that job (for new buyers: **Sales**), and set the conversion event it aims for (for new buyers: **Purchase**).
+
+**Expected result:** The campaign's objective and conversion event match the table.
+
+**Watch out:** Aim for the deepest step that happens at least about 25 to 50 times a week per campaign. With fewer, the platform cannot learn and results jump around.
+
+<!-- do:meta-draft -->
+
+### Good to know
 
 | Job | Objective to choose | Aim for |
 | --- | --- | --- |
@@ -67,21 +95,51 @@ Each campaign has one job. The job decides which goal (objective) you choose in 
 | Test ads cheaply on a new platform | Sales, aimed at an earlier step (view content, add to cart) when purchases are too few | The earlier step, then switch to purchase |
 | Show people products they looked at (catalog retargeting) | Sales with your product catalog | Purchase |
 
-**Decision rule:** aim for the deepest step (purchase is deepest) that happens at least about 25 to 50 times a week per campaign. With fewer, the platform cannot learn and results jump around.
-
 ## Lesson 6.3: Testing campaigns vs scaling campaigns
 <!-- stage:attract -->
 
-Keep testing and winning separate, so new tests do not upset what already works.
+**Why this matters:** Keeping testing and winning separate stops new tests from upsetting what already works. Three kinds of campaign do the job: scaling, testing and build.
 
-1. **Scaling campaigns** hold your proven ads and most of the budget (70 to 80%). Do not add new ads to them while they are winning.
-2. **A testing campaign** (or a test ad set) gets 20 to 30% of the budget and your new batches of ads. When an ad wins, move it to a scaling campaign by copying it. Keep the same post ID, so it keeps its likes and comments.
-3. **A build campaign** is a campaign that is always switched off. You build each ad there once, then copy it wherever you need it.
+**Step 1.** Create a **build campaign** that is always switched off, and build each new ad there once.
+
+**Expected result:** You have a paused campaign holding every ad you have made.
+
+**Step 2.** Create a **testing campaign** (or test ad set) with 20 to 30% of the budget and put each new batch of ads there.
+
+**Expected result:** New ads get a fixed, fair budget away from your winners.
+
+<!-- do:meta-draft -->
+
+**Step 3.** Keep proven ads in **scaling campaigns** with 70 to 80% of the budget, and do not add new ads to them while they are winning.
+
+**Expected result:** Scaling campaigns stay stable.
+
+**Step 4.** When a test ad wins, copy it into a scaling campaign using **Use existing post** so it keeps its post ID, likes and comments.
+
+**Expected result:** The winner runs in scaling with its social proof intact.
 
 ## Lesson 6.4: Account structure by spend
 <!-- stage:attract -->
 
-"Cold" means people who do not know you. "Warm" means people who visited or engaged. "Mixed" means both. Set up your account based on how much you spend each day.
+**Why this matters:** Cold means people who do not know you, warm means people who visited or engaged, and mixed means both. The right account structure depends on how much you spend a day. Too many campaigns for the budget starves each one of data.
+
+**Step 1.** Find your daily spend band in the table below and set up the campaigns listed for it.
+
+**Expected result:** Your account has the number and type of campaigns that suits your budget.
+
+<!-- do:meta-draft -->
+
+**Step 2.** Split the budget: when small, 70 to 80% cold and 20 to 30% warm; later, cold 30 to 50%, mixed 30 to 40%, warm 20 to 30%.
+
+**Expected result:** Each audience temperature gets its planned share.
+
+**Step 3.** Once results are stable, test one other setup at a time: campaign budget vs ad set budget, cost cap bidding (a hard limit on cost per purchase), exclusion strength, a 10 to 20% cap on spend to existing customers, or optimising for landing page views on very cold tests.
+
+**Expected result:** You are running one setup test with a clear start and end date.
+
+**Watch out:** Harsher exclusions (leaving out buyers, engagers and recent visitors) usually show a worse cost per sale but find more truly new customers.
+
+### Good to know
 
 | Daily ad spend | Suggested setup |
 | --- | --- |
@@ -91,100 +149,125 @@ Keep testing and winning separate, so new tests do not upset what already works.
 | $1,000 to $3,000 | Campaigns per country or product line. Separate sale campaigns during big events. |
 | $3,000 or more | A set test budget, creator and partnership ad campaigns, catalog video ads, more countries. |
 
-**Budget split:** when you are small, 70 to 80% cold and 20 to 30% warm. Later: cold 30 to 50%, mixed 30 to 40%, warm 20 to 30%.
-
-**Other setups to test once things are stable.** Test one at a time:
-
-1. **Campaign budget** (the platform splits money between ad sets) versus **ad set budget** (you decide each one).
-2. **Cost cap bidding,** when you need a hard limit on cost per purchase.
-3. **How many people to leave out (exclusions):**
-   - None.
-   - Light: recent buyers.
-   - Harsh: all buyers and people who engaged.
-   - Very harsh: also recent visitors.
-
-   Harsher exclusions usually show a worse cost per sale, but they find more truly new customers.
-4. **A cap on spend to existing customers** in automated Sales campaigns (for example, at most 10 to 20% to existing customers).
-5. **Aiming for landing page views** for very cold, broad tests where you mostly want reach.
-
 ## Lesson 6.5: Audiences
 <!-- stage:attract -->
 
-The audience is who sees your ads.
+**Why this matters:** The audience is who sees your ads. Today broad audiences with strong ads usually win, while custom audiences and lookalikes help with warm and test campaigns. Set them up once and reuse them.
 
-1. **Start broad.** Let the ads themselves find the right people. Only test interest targeting after you have winning ads.
-2. **Custom audiences** are lists of people who already know you:
-   - Site visitors (last 30 and 180 days).
-   - People who viewed a product, added to cart or started checkout.
-   - Buyers (last 180 days, and all time).
-   - People who engaged on social media.
-   - Your email list.
-3. **Lookalikes** are new people who look like your customers. 1% is the closest match and 10% is the widest. 3 to 5% is a sensible test.
-4. **Audience segments** (new, engaged, existing customers) are set once for the whole ad account. They let you see how much spend reaches new people.
-5. **Exclusions.** Leave employees and existing customers out of cold campaigns where it makes sense.
-6. **Countries.** A new country gets its own campaign once spend allows. Start with the country most like the one that already works.
+**Step 1.** For cold campaigns, start broad (Advantage+ audience, or country and age only) and only test interests after you have winning ads.
+
+**Expected result:** Your cold ad sets have no stacked interests.
+
+**Step 2.** In **Audiences**, create custom audiences: site visitors (30 and 180 days), product viewers, add to cart, checkout started, buyers (180 days and all time), social engagers and your email list.
+
+**Expected result:** All seven custom audiences show "Ready" in the Audiences list.
+
+**Step 3.** Create a 3 to 5% lookalike (new people similar to your customers; 1% is closest, 10% widest) from buyers to test.
+
+**Expected result:** A lookalike audience is ready for a test ad set.
+
+**Step 4.** In **Ad account settings > Audience segments**, set your engaged audience and existing customers.
+
+**Expected result:** Ads Manager can report how much spend reaches new people.
+
+**Step 5.** Exclude employees and existing customers from cold campaigns where it makes sense, and give each new country its own campaign once spend allows.
+
+**Expected result:** Cold spend goes to new people, and countries are reported separately.
 
 ## Lesson 6.6: Budgets
 <!-- stage:attract -->
 
-1. **Start with what you can afford to lose while learning.** A common minimum is 2 to 3 times your target CPA, per day, per campaign.
-2. **Never change the budget of a campaign that is working by more than 20% a day.** Bigger jumps can reset its learning.
-3. **When raising the budget stops working, add new campaigns instead** (this is called scaling horizontally).
-4. **Set spending limits** on ad sets and campaigns during big events, so they cannot overspend.
-5. **Judge by the week, not the day.** Daily budgets spend more on some days and less on others.
+**Why this matters:** Budget decides how fast the platform learns and how much you can lose while it does. A few rules stop the classic mistakes of starving campaigns or resetting them.
+
+**Step 1.** Set each new campaign's daily budget to 2 to 3 times your target CPA (for a $30 target CPA: $60 to $90 a day).
+
+**Expected result:** The campaign can get enough purchases to learn.
+
+**Step 2.** When a campaign is working, raise its budget by no more than 20% a day.
+
+**Expected result:** Learning is not reset by budget jumps.
+
+**Step 3.** When raising budget stops working, add a new campaign instead (scaling horizontally).
+
+**Expected result:** Growth continues without breaking the original.
+
+<!-- do:meta-draft -->
+
+**Step 4.** Before big events, set spending limits on campaigns and ad sets.
+
+**Expected result:** Nothing can overspend during the sale.
+
+**Watch out:** Judge by the week, not the day. Daily budgets spend more on some days and less on others.
 
 ## Lesson 6.7: Naming conventions
 <!-- stage:attract -->
 
-A naming convention is a fixed pattern for names. It lets you, your team and Helix read the account at a glance and compare results later.
+**Why this matters:** A naming convention is a fixed pattern for names. It lets you, your team and Helix read the account at a glance and compare results later. It takes five minutes to set up.
 
-**Campaign name pattern:**
+**Step 1.** Name every campaign with this pattern: `[Number]-[Auto/Manual]-[Cold/Mixed/Warm/Hot]-[Broad/Interest/LAL]-[None/Light/Harsh]-[BAU or Sale]`, for example `03-Manual-Cold-Broad-Harsh-BAU` (BAU means business as usual; LAL means lookalike).
 
-`[Number]-[Automation: Auto/Manual]-[Who: Cold/Mixed/Warm/Hot]-[Targeting: Broad/Interest/LAL]-[Exclusions: None/Light/Harsh]-[BAU or Sale]`
+**Expected result:** Every campaign name follows the pattern.
 
-Example: `03-Manual-Cold-Broad-Harsh-BAU`. (BAU means "business as usual", the normal campaigns outside sales. LAL means lookalike.)
+**Step 2.** Name every ad with this pattern: `[Batch]-[Concept]-[Pillar]-[Format]-[Hook]-[Creator]-[Date]`, for example `B14-OneStarRebuttal-Prove-Video-ReviewHook-Sam-2610`.
 
-**Ad name pattern:**
+**Expected result:** You can tell what any ad is from its name alone.
 
-`[Batch]-[Concept]-[Pillar]-[Format]-[Hook]-[Creator]-[Date]`
+**Step 3.** Rename your old campaigns to the same pattern.
 
-Example: `B14-OneStarRebuttal-Prove-Video-ReviewHook-Sam-2610`
-
-**Tip:** rename your old campaigns to this pattern, so your history becomes easy to read.
+**Expected result:** Your history is easy to read and compare.
 
 ## Lesson 6.8: Creative concepts, angles and hooks
 <!-- stage:attract -->
 
-1. **Concept:** the big idea. For example "answering a one-star review".
-2. **Angle:** why it matters to a specific person. For example "for tall men who can never find shirts that fit".
-3. **Hook:** the first 3 seconds.
-4. **Format:** video, still image, carousel (several swipeable cards), catalog, collection, or creator video.
+**Why this matters:** Four words describe every ad: concept (the big idea), angle (why it matters to a specific person), hook (the first 3 seconds) and format. Testing one of them per batch is what makes a test fair.
 
-**Decision rule:** each batch tests **one** thing. Keep products and prices similar within a batch, so the test is fair.
+**Step 1.** Write the concept for your next batch, for example "answering a one-star review".
+
+**Expected result:** The batch has one big idea.
+
+**Step 2.** Write the angle, for example "for tall men who can never find shirts that fit", and 3 hooks.
+
+**Expected result:** The batch has a target person and hook options.
+
+**Step 3.** Pick the format: video, still image, carousel (swipeable cards), catalog, collection or creator video.
+
+**Expected result:** The brief lists one format.
+
+**Watch out:** Each batch tests one thing. Keep products and prices similar within a batch.
 
 ## Lesson 6.9: Writing the creative brief
 <!-- stage:attract -->
 
-A creative brief is a one-page set of instructions for each ad. Include:
+**Why this matters:** A creative brief is a one-page set of instructions for each ad. It lets anyone, including a creator or an AI tool, produce an on-target ad without guessing.
 
-1. The goal, and who it is for (cold, warm or hot).
-2. The pillar (teach, prove, feel or stand for).
-3. The customer and their problem, in their own words.
-4. Three hook options.
-5. The key message.
-6. The proof.
-7. The offer and the call to action.
-8. Format and length.
-9. What must be shown and what must be avoided.
-10. The deadline.
-11. Usage rights.
+**Step 1.** Open the template in [SOP 08](../sops/08-creative-briefs-ugc-creators.md) and fill in the goal and who it is for (cold, warm or hot), the pillar, and the customer's problem in their own words.
 
-The full template is in [SOP 08](../sops/08-creative-briefs-ugc-creators.md).
+**Expected result:** The top half of the brief is done.
+
+**Step 2.** Add three hook options, the key message, the proof, and the offer with call to action.
+
+**Expected result:** The message section is done.
+
+**Step 3.** Add format and length, what must be shown and avoided, the deadline and usage rights.
+
+**Expected result:** The brief has all 11 parts and is ready to send.
 
 ## Lesson 6.10: Testing methodology
 <!-- stage:attract -->
 
-Use these default rules for every ad test.
+**Why this matters:** Most ad tests never get enough visitors to be statistically certain, so you need fair default rules instead. These keep tests consistent and stop you calling winners too early.
+
+**Step 1.** Set your test defaults from the table below: one thing changed per batch, the number of ads per batch for your budget, and the spend each ad gets before you judge it.
+
+**Expected result:** Your test rules are written at the top of your testing campaign notes.
+
+**Step 2.** Give the testing campaign 20 to 30% of your budget and wait out the learning time in the table before judging.
+
+**Expected result:** Tests run long enough to read.
+
+**Watch out:** To tell a 2% conversion rate from 3% with confidence you need a few thousand visitors for each version, so treat small numbers with care.
+
+### Good to know
 
 | Rule | Default |
 | --- | --- |
@@ -196,10 +279,26 @@ Use these default rules for every ad test.
 | Learning time | Do not edit for 3 to 7 days after launch |
 | Be careful with small numbers | Under about 10 purchases per ad, treat results as a hint, not proof |
 
-**Why spend rules matter:** to tell a 2% conversion rate from a 3% one with confidence, you need a few thousand visitors for each version. Most ad tests never get that many. So you use spend limits and early signs instead.
-
 ## Lesson 6.11: Reading metrics
 <!-- stage:attract -->
+
+**Why this matters:** Each metric tells you about one part of the journey, from stopping the scroll to buying. Reading them in order shows exactly where an ad breaks.
+
+**Step 1.** In Ads Manager click **Columns > Customise columns** and add hook rate, hold rate, outbound CTR, CPM, cost per outbound click, add to cart, cost per purchase, ROAS, frequency and reach, then save as a preset.
+
+**Expected result:** You see all the metrics in the table below in one view.
+
+**Step 2.** Compare each ad's numbers with the ranges in the table.
+
+**Expected result:** You know which step each weak ad fails at.
+
+**Step 3.** Read the pattern: engagement but poor cost per sale means the page or offer does not match the ad; low CTR across a batch means the message or offer is weak; rising CPM (cost per 1,000 impressions) with steady CTR means you have reached most of the audience or it is a busy season.
+
+**Expected result:** You have a likely cause for each problem, not just a symptom.
+
+<!-- do:insights -->
+
+### Good to know
 
 | Metric | What it tells you | What good looks like |
 | --- | --- | --- |
@@ -214,16 +313,26 @@ Use these default rules for every ad test.
 | Frequency | How often the same people see it | Within the limit for its audience |
 | Reach growth versus spend growth | Are you reaching new people as you spend more? | Reach should grow about as fast as spend |
 
-**How to read patterns:**
-
-1. People engage with the ad, but cost per sale is poor: the page or offer does not match the ad.
-2. Low CTR across a whole batch: the message or offer is weak.
-3. CPM rising while CTR stays steady: you have reached most of the audience, or it is a busy season.
-
 ## Lesson 6.12: Decision rules: scale, hold, refresh, kill
 <!-- stage:grow -->
 
-In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**.
+**Why this matters:** Four decisions cover every ad: scale, hold, refresh or kill. In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**. Using fixed rules removes emotion from the call.
+
+**Step 1.** Open **Your ads** in Helix and read the verdict next to each campaign.
+
+**Expected result:** Every campaign shows one of the four verdicts.
+
+<!-- do:insights -->
+
+**Step 2.** Check each verdict against the rules in the table below.
+
+**Expected result:** You agree with the verdict or know why not.
+
+**Step 3.** Act on one verdict today and write it in your decision log.
+
+**Expected result:** One change is made and recorded.
+
+### Good to know
 
 | Decision | When | What to do |
 | --- | --- | --- |
@@ -235,6 +344,24 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 ## Lesson 6.13: Google campaign definitions
 <!-- stage:attract -->
 
+**Why this matters:** Google campaigns each catch shoppers at a different moment, from searching your brand name to browsing YouTube. Knowing what each type is for stops you paying for the wrong clicks.
+
+**Step 1.** Read the campaign types in the table below and list which ones you run today.
+
+**Expected result:** You know your current Google setup by type.
+
+**Step 2.** Make sure brand search is running to protect your brand name from competitors.
+
+**Expected result:** Searches for your brand show your own ad first.
+
+**Step 3.** Give any new Google campaign about 2 weeks to learn and 4 weeks to judge, at $50 a day or more.
+
+**Expected result:** Each new campaign has a judge date in your calendar.
+
+<!-- do:calendar -->
+
+### Good to know
+
 | Campaign | What it is for | Key settings |
 | --- | --- | --- |
 | Brand search | Protect your own name cheaply when people search for it | Small budget. Bid for impression share or set bids yourself. Your brand words only. |
@@ -245,18 +372,36 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 | Demand Gen and YouTube | Visual ads to help people discover you | Judge with view-through results (people who saw the ad and bought later) |
 | Local | Visits to a physical shop | Only if you have a shop |
 
-**Timing:** a new Google campaign needs about 2 weeks to learn, then 4 weeks to judge, at $50 a day or more.
-
 ## Lesson 6.14: Promotional and seasonal campaigns
 <!-- stage:attract -->
 
-1. Build sale campaigns separately from your normal (BAU) campaigns.
-2. Copy your best normal cold campaign as the base for the sale's cold campaign.
-3. Warm and hot sale campaigns use ads that lead with the offer.
-4. Set spending limits. Plan the budget for each day of the sale.
-5. Expect some days to look poor (for example quiet days in the middle). Judge the whole event, not single days.
+**Why this matters:** Sale campaigns behave differently from your everyday ones. Building them separately, with daily budgets planned and judged as a whole event, protects your normal campaigns and your margin.
 
-### Black Friday plan (timeline)
+**Step 1.** Build sale campaigns separately from your BAU campaigns, copying your best cold campaign as the base for the sale's cold campaign.
+
+**Expected result:** Your sale has its own campaigns, built and paused before launch.
+
+<!-- do:meta-draft -->
+
+**Step 2.** Use offer-led ads in the warm and hot sale campaigns.
+
+**Expected result:** People who know you see the deal first.
+
+**Step 3.** Set spending limits and plan the budget for each day of the sale.
+
+**Expected result:** Every sale day has a planned budget and a cap.
+
+**Step 4.** Follow the Black Friday timeline in the table below, starting 10 to 12 weeks out.
+
+**Expected result:** Each phase of your plan has a date.
+
+**Watch out:** Judge the whole event, not single days. Quiet days in the middle are normal.
+
+<!-- do:bfcm -->
+
+### Good to know
+
+**Black Friday plan (timeline):**
 
 | When | What to do |
 | --- | --- |
@@ -274,18 +419,48 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 ## Lesson 6.15: Common campaign mistakes
 <!-- stage:attract -->
 
-1. Starting without break-even numbers.
-2. Too many campaigns for the budget, so each one gets too little data.
-3. Editing every day, so nothing ever finishes learning.
-4. Adding ads one at a time instead of in batches.
-5. Comparing cold campaigns with warm ones (warm always looks better).
-6. Having no new ads ready when you start spending more.
-7. Turning everything off after one bad day.
+**Why this matters:** Most wasted ad money comes from a handful of repeat mistakes. Checking for them takes two minutes.
+
+**Step 1.** Check you have break-even numbers written down before starting any campaign.
+
+**Expected result:** Every live campaign has a break-even CPA on its brief.
+
+**Step 2.** Count campaigns against budget: if any campaign gets fewer than about 25 purchases a week, merge it into another.
+
+**Expected result:** Each campaign gets enough data to learn.
+
+**Step 3.** Stop daily edits, add ads in batches rather than one at a time, and never compare cold campaigns with warm ones.
+
+**Expected result:** Your account changes in planned batches and cold is judged against cold.
+
+**Step 4.** Have new ads ready before spending more, and never turn everything off after one bad day.
+
+**Expected result:** You scale with fresh ads and judge on 7 days.
 
 ## Lesson 6.16: The campaign brief template
 <!-- stage:attract -->
 
-Copy this for every new campaign. Helix fills in the numbers from your scorecard.
+**Why this matters:** A campaign brief puts every decision on one page before you spend a dollar. Helix fills in the numbers from your scorecard when you press **New campaign** in **Your ads**.
+
+**Step 1.** In Helix open **Your ads > New campaign**, or copy the template below.
+
+**Expected result:** You have a blank brief with your numbers filled in.
+
+<!-- do:meta-draft -->
+
+**Step 2.** Fill in sections 1 to 5: name, channel, job, objective and products with offer.
+
+**Expected result:** The top of the brief is complete.
+
+**Step 3.** Fill in sections 6 to 12: numbers, audience, countries, budget with worst case, ad plan, landing page and tracking check.
+
+**Expected result:** Every setting is decided before you build.
+
+**Step 4.** Fill in sections 13 to 17: success, decision date, what you do if it wins, stop rule and approvals.
+
+**Expected result:** The brief tells you exactly when to scale or stop.
+
+### Good to know
 
 ```
 CAMPAIGN BRIEF

@@ -37,51 +37,79 @@
 ## Lesson 22.1: Plan before you build
 <!-- stage:convert -->
 
-A store takes days to build and minutes to judge. Plan first so you build only what a buyer needs.
+**Why this matters:** A store takes days to build and minutes to judge. Planning first means you build only what a buyer needs and know your numbers before the first sale. This takes about an hour.
 
-**Do this:**
+**Step 1.** Write your one-line promise: who it is for and the result they get.
 
-1. Write your one-line promise: who it is for and the result they get.
-2. List your products. For each, write the price, product cost and what one order costs you to send.
-3. Choose your launch country. Pick one (Australia or the US) and add more later.
-4. Pick a plan. Most new stores start on the cheapest plan that includes the features you need. Check current prices on [Shopify pricing](https://www.shopify.com/pricing).
-5. Collect what you will need: logo, 4 to 8 photos per product, your returns rule, your ABN (Australia) or EIN (US, if you have one), and a business bank account.
+**Expected result:** You can say in one sentence what you sell and who it is for.
 
-**Australia:** have your ABN ready. If you expect sales of $75,000 or more in a year, read [Lesson 22.10](#lesson-2210-taxes-gst-and-sales-tax-basics) before you set prices.
+**Step 2.** List your products with price, product cost and what one order costs you to send.
 
-**US:** decide which state you sell from. Your home state is where you are most likely to owe sales tax first.
+**Expected result:** You know your cost per order for each product.
 
-**Self-check:** can you say in one sentence what you sell and who it is for? Do you know your cost per order?
+<!-- do:numbers -->
+
+**Step 3.** Choose one launch country (Australia or the US) and add more later.
+
+**Expected result:** You have one launch country.
+
+**Step 4.** Pick the cheapest Shopify plan that has the features you need (check [Shopify pricing](https://www.shopify.com/pricing)).
+
+**Expected result:** You know your monthly platform cost.
+
+**Step 5.** Collect your logo, 4 to 8 photos per product, your returns rule, your ABN (Australia) or EIN (US, if you have one) and a business bank account.
+
+**Expected result:** Everything you need to build is in one folder.
+
+**Watch out:** Australia: if you expect $75,000 or more in sales in a year, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
 
 ## Lesson 22.2: Domain and email
 <!-- stage:convert -->
 
-Your domain is your web address. A store on its own domain looks more trustworthy than one on the free `myshopify.com` address.
+**Why this matters:** Your domain is your web address. A store on its own domain looks more trustworthy than one on the free myshopify.com address, and branded email lands in inboxes more reliably.
 
-**Do this:**
+**Step 1.** In Shopify **Settings > Domains**, buy a short domain that matches your brand or connect one you own (see [Shopify: domains](https://help.shopify.com/en/manual/domains)).
 
-1. Buy a short domain that matches your brand. Buy it inside Shopify, or connect one you already own. See [Shopify: domains](https://help.shopify.com/en/manual/domains).
-2. **Australia:** a `.com.au` needs an ABN. Many brands own both `.com.au` and `.com`. **US:** a `.com` is the normal choice.
-3. Make your main domain the one customers see. The `myshopify.com` address should redirect to it.
-4. Set up a branded email, such as hello@yourbrand.com. Use it for support and as the sender in your email tool.
-5. Send a test email to yourself and check it does not land in spam.
+**Expected result:** The domain shows as connected in Settings.
 
-**Self-check:** does typing your domain open your store? Do emails come from your own domain?
+**Watch out:** Australia: a .com.au needs an ABN, and many brands own both .com.au and .com. US: .com is the normal choice.
+
+**Step 2.** Set it as the primary domain so myshopify.com redirects to it.
+
+**Expected result:** Typing your domain opens your store.
+
+**Step 3.** Set up a branded email such as hello@yourbrand.com and use it for support and as the sender in your email tool.
+
+**Expected result:** Customer emails come from your own domain.
+
+**Step 4.** Send a test email to yourself.
+
+**Expected result:** It lands in your inbox, not spam.
 
 ## Lesson 22.3: Choose and set up a theme
 <!-- stage:convert -->
 
-The theme is the design of your store. A fast, simple theme beats a fancy slow one.
+**Why this matters:** The theme is the design of your store. A fast, simple theme beats a fancy slow one, and always editing a copy means you never break the live store.
 
-**Do this:**
+**Step 1.** In **Online Store > Themes**, start with a free Shopify theme such as Dawn (see [Shopify: themes](https://help.shopify.com/en/manual/online-store/themes)).
 
-1. Start with a free Shopify theme. Dawn and the other free themes are fast and well supported. See [Shopify: themes](https://help.shopify.com/en/manual/online-store/themes).
-2. Only pay for a theme if it has a feature you truly need and you have checked its speed on a phone.
-3. Set your brand basics once in Theme settings: logo, 2 to 3 colours, 1 to 2 fonts, button style.
-4. Always edit a copy. Duplicate the theme, make changes on the copy, preview it, then publish.
-5. Plan the menus for desktop and mobile separately. Phones need fewer, bigger links.
+**Expected result:** A fast, supported theme is installed.
 
-**Self-check:** does your store use no more than 2 fonts and 3 main colours? Are you working on a copy of the theme?
+**Watch out:** Only pay for a theme if it has a feature you truly need and you have checked its speed on a phone.
+
+**Step 2.** Click **Duplicate** on the theme and make all changes on the copy.
+
+**Expected result:** You are working on a copy, not the live theme.
+
+**Step 3.** In **Customize > Theme settings**, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.
+
+**Expected result:** Your store uses no more than 2 fonts and 3 main colours.
+
+**Step 4.** Plan menus for desktop and mobile separately, with fewer, bigger links on phones.
+
+**Expected result:** The mobile menu has 5 or fewer links.
+
+### Good to know
 
 <!-- guide:shopify-3-theme-editor -->
 ![Set up your theme safely in Shopify](../../public/guides/shopify-3-theme-editor.svg)
@@ -92,44 +120,54 @@ The theme is the design of your store. A fast, simple theme beats a fancy slow o
 ## Lesson 22.4: Build the home page
 <!-- stage:convert -->
 
-The home page should answer three questions in a few seconds: what is this, is it for me, and why should I trust it.
+**Why this matters:** The home page should answer three questions in a few seconds: what is this, is it for me, and why should I trust it. Build the top first, then the sections below in a proven order.
 
-**Top of the page (what people see first):**
+**Step 1.** In the theme editor, add a promo bar with one short line, such as your shipping offer or a guarantee.
 
-1. **Promo bar:** one short line, such as your shipping offer or a guarantee.
-2. **Header and menu:** logo plus 4 to 5 links at most, for example Shop, Bundles, Reviews, FAQ, About.
-3. **Banner:** a clear photo of the product in use, your promise in one line and one button ("Shop now").
-4. **Second row of links (optional):** small category tiles or icons so people jump straight to what they want. On mobile, a row people can scroll sideways works well.
+**Expected result:** The promo bar shows at the very top on every page.
 
-**Lower down, in this order:**
+**Step 2.** Set the header menu to your logo plus 4 to 5 links (for example Shop, Bundles, Reviews, FAQ, About).
 
-1. What makes you different, in 3 short points.
-2. Best sellers with prices.
-3. Reasons to buy, shown with icons or short lines.
-4. Proof: star rating, number of customers, press or awards.
-5. How it works, as 3 steps or a short video.
-6. Real customer photos and reviews.
-7. Expert or partner backing if you have it.
-8. Email sign-up and a simple footer with policies and contact.
+**Expected result:** The header is simple and uncluttered.
 
-**Self-check:** ask someone new to look at your home page on a phone for 5 seconds. Can they say what you sell?
+**Step 3.** Add a banner with a photo of the product in use, your promise in one line and one button ("Shop now"), plus an optional row of category tiles people can scroll sideways on mobile.
+
+**Expected result:** The top of the page says what you sell and gives one next step.
+
+**Step 4.** Below the banner add, in order: 3 points on what makes you different, best sellers with prices, reasons to buy, proof (rating, customer count, press), how it works in 3 steps, customer photos and reviews, expert backing if you have it, and an email sign-up with a simple footer.
+
+**Expected result:** The home page has every section in a logical order.
+
+**Step 5.** Show your home page on a phone to someone new for 5 seconds.
+
+**Expected result:** They can say what you sell.
 
 ## Lesson 22.5: Product pages: titles, photos and descriptions
 <!-- stage:convert -->
 
-Most buying decisions happen here. Answer every worry before the buyer has to ask.
+**Why this matters:** Most buying decisions happen on the product page. Answer every worry before the buyer has to ask, and keep price, rating and Add to cart visible on a phone.
 
-**Do this:**
+**Step 1.** Write a short title: product name plus the main thing it does or is made of ("Linen Shirt, Relaxed Fit").
 
-1. **Title:** the product name plus the main thing it does or is made of, such as "Linen Shirt, Relaxed Fit". Keep it short.
-2. **Photos:** at least 4. Include one on a plain background, one in use, one showing size or scale, and one close-up of the key detail. Use the same shape for every photo (square works everywhere).
-3. **Near the top:** price, star rating with review count, your promise line and the Add to cart button.
-4. **Description:** short lines, not long paragraphs. Lead with the result, then 3 to 5 key points, then what is included.
-5. **Questions that sell:** add a short FAQ under the button: sizing, materials, shipping time, returns, care.
-6. **Sticky add to cart:** on mobile, keep the button visible as people scroll (most themes have this setting).
-7. **SEO basics:** fill in the search title and description in plain words. See [Shopify: products](https://help.shopify.com/en/manual/products/add-update-products).
+**Expected result:** The title is clear and short.
 
-**Self-check:** on a phone, can you see the price, rating and Add to cart button without scrolling?
+**Step 2.** Upload at least 4 square photos: plain background, in use, size or scale, and a close-up of the key detail.
+
+**Expected result:** The gallery answers "what does it look like in real life".
+
+**Step 3.** Make sure price, star rating with review count, promise line and Add to cart sit near the top.
+
+**Expected result:** On a phone you see price, rating and Add to cart without scrolling.
+
+**Step 4.** Write the description as short lines: the result first, then 3 to 5 key points, then what is included, and add a short FAQ under the button (sizing, materials, shipping time, returns, care).
+
+**Expected result:** Common questions are answered on the page.
+
+**Step 5.** Turn on sticky Add to cart for mobile in theme settings, and fill in the search title and description in plain words (see [Shopify: products](https://help.shopify.com/en/manual/products/add-update-products)).
+
+**Expected result:** The button stays visible as people scroll, and Google shows a clean listing.
+
+### Good to know
 
 <!-- guide:shopify-4-add-product -->
 ![Add a product the right way in Shopify](../../public/guides/shopify-4-add-product.svg)
@@ -140,48 +178,73 @@ Most buying decisions happen here. Answer every worry before the buyer has to as
 ## Lesson 22.6: Variants and inventory
 <!-- stage:convert -->
 
-Variants are the options of one product, such as size or colour. Inventory is how many you have.
+**Why this matters:** Variants are the options of one product, such as size or colour, and inventory is how many you have. Setting them up properly stops overselling and lets Helix work out profit and shipping correctly.
 
-**Do this:**
+**Step 1.** Add options (Size, Colour) to one product instead of separate products (see [Shopify: variants](https://help.shopify.com/en/manual/products/variants)).
 
-1. Add options (Size, Colour) to one product instead of making separate products for each. See [Shopify: variants](https://help.shopify.com/en/manual/products/variants).
-2. Give each variant its own photo, price (if different), SKU and stock count.
-3. Turn on "Track quantity" so Shopify stops selling when you run out. See [Shopify: inventory](https://help.shopify.com/en/manual/products/inventory).
-4. Decide what happens at zero stock. Most new stores should stop selling. If you take pre-orders, say the ship date clearly.
-5. Fill in product cost on every variant. Helix uses it to work out your profit.
-6. Add weight to every variant so shipping rates calculate correctly.
+**Expected result:** One product page shows every option.
 
-**Self-check:** does every variant have a photo, SKU, stock count, cost and weight?
+**Step 2.** Give each variant its own photo, price if different, SKU and stock count.
+
+**Expected result:** Every variant is complete.
+
+**Step 3.** Turn on **Track quantity** and choose to stop selling at zero, or state a clear ship date if you take preorders (see [Shopify: inventory](https://help.shopify.com/en/manual/products/inventory)).
+
+**Expected result:** Shopify stops selling when you run out.
+
+**Step 4.** Fill in **Cost per item** and weight on every variant.
+
+**Expected result:** Helix can work out profit and Shopify can calculate shipping.
+
+<!-- do:stock -->
 
 ## Lesson 22.7: Reviews
 <!-- stage:convert -->
 
-People trust other customers more than they trust you. A review app collects and shows reviews for you.
+**Why this matters:** People trust other customers more than they trust you. A review app collects and shows reviews automatically, and honest replies to bad reviews build more trust than hiding them.
 
-**Do this:**
+**Step 1.** Install one review app that collects photo reviews and sends a request email after delivery.
 
-1. Install one review app that collects photo reviews and sends an automatic request email after delivery.
-2. Show the star rating under the product title and near the Add to cart button.
-3. Add a section of reviews with photos lower on the product page and on the home page.
-4. Ask early buyers, testers and friends who used the product for honest reviews. Never write fake reviews or pay for positive ones. Both breach consumer law in Australia and the US.
-5. Reply to negative reviews politely and fix the problem. Do not hide them.
+**Expected result:** Review requests go out automatically.
 
-**Self-check:** is your rating visible near the top of every product page?
+<!-- do:flow-review-request -->
+
+**Step 2.** Show the star rating under the product title and near Add to cart, plus a photo review section lower on product pages and the home page.
+
+**Expected result:** Your rating is visible near the top of every product page.
+
+**Step 3.** Ask early buyers, testers and friends who used the product for honest reviews.
+
+**Expected result:** Your first products have real reviews.
+
+**Watch out:** Never write fake reviews or pay for positive ones. Both breach consumer law in Australia and the US.
+
+**Step 4.** Reply to negative reviews politely and fix the problem.
+
+**Expected result:** Shoppers see you handle problems well.
 
 ## Lesson 22.8: Collections, menus and search
 <!-- stage:convert -->
 
-Collections are groups of products. Menus and search help people find them quickly.
+**Why this matters:** Collections are groups of products, and menus and search help people find them. A new visitor should reach any product in 3 taps or fewer.
 
-**Do this:**
+**Step 1.** Create collections for Best sellers, New, and one per product type, using automatic collections where you can (see [Shopify: collections](https://help.shopify.com/en/manual/products/collections)).
 
-1. Make a few clear collections: Best sellers, New, and one per product type. Use automatic collections where you can so they update themselves. See [Shopify: collections](https://help.shopify.com/en/manual/products/collections).
-2. Build the main menu with 4 to 5 links. Put deeper links in drop-downs. See [Shopify: menus](https://help.shopify.com/en/manual/online-store/menus-and-links).
-3. Turn on Shopify's own filters (size, colour, price, in stock). They are enough for most stores. Let people pick more than one option.
-4. Show a second photo when a shopper hovers over a product, and add a quick-add button if your theme allows.
-5. Test search: type your top 5 product words and a common misspelling. Fix what does not show up.
+**Expected result:** Collections update themselves as products change.
 
-**Self-check:** can a new visitor reach any product in 3 taps or fewer?
+**Step 2.** Build the main menu with 4 to 5 links and deeper links in drop-downs (see [Shopify: menus](https://help.shopify.com/en/manual/online-store/menus-and-links)).
+
+**Expected result:** Any product is 3 taps away.
+
+**Step 3.** Turn on Shopify's filters (size, colour, price, in stock) with multi-select, plus hover second photo and quick add if your theme allows.
+
+**Expected result:** Shoppers can narrow and add from collections.
+
+**Step 4.** Search for your top 5 product words and a common misspelling.
+
+**Expected result:** Every search returns the right products.
+
+### Good to know
 
 <!-- guide:shopify-5-menus -->
 ![Build a short main menu in Shopify](../../public/guides/shopify-5-menus.svg)
@@ -192,20 +255,27 @@ Collections are groups of products. Menus and search help people find them quick
 ## Lesson 22.9: Shipping zones, rates and a free-shipping amount
 <!-- stage:convert -->
 
-Surprise shipping costs are one of the main reasons people leave at checkout. Make shipping clear and simple.
+**Why this matters:** Surprise shipping costs are one of the main reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery ranges fix most of it.
 
-**Do this:**
+**Step 1.** In **Settings > Shipping and delivery**, create a zone for your home country.
 
-1. In Settings, open Shipping and delivery. Create a zone for your home country first.
-2. Add 1 or 2 rates: Standard and Express. Price them from your real carrier costs, or use calculated rates.
-3. Set a free-shipping amount a bit above your average order (about 1.2 to 1.4 times). This nudges people to add one more item.
-4. Show the free-shipping amount in the promo bar and near the Add to cart button. Test wording: "Free shipping over $X" often reads more simply than other phrasing.
-5. Write delivery times as a range ("arrives in 3 to 6 business days"). Do not promise exact dates you cannot control.
-6. Add international zones later, once your home country works.
+**Expected result:** A home country zone exists.
 
-**Australia:** compare Australia Post, Sendle and couriers. Remote areas can cost much more; set a separate rate if needed. **US:** compare USPS, UPS and FedEx rates through Shopify Shipping.
+**Step 2.** Add Standard and Express rates priced from real carrier costs, or use calculated rates.
 
-**Self-check:** does checkout show a clear shipping price and delivery range for your home country?
+**Expected result:** Checkout shows two clear options.
+
+**Step 3.** Set a free shipping amount about 1.2 to 1.4 times your average order, and show it in the promo bar and near Add to cart ("Free shipping over $X").
+
+**Expected result:** Shoppers see how close they are to free shipping.
+
+**Step 4.** Write delivery times as a range ("arrives in 3 to 6 business days").
+
+**Expected result:** Checkout shows a clear price and delivery range.
+
+**Watch out:** Australia: compare Australia Post, Sendle and couriers, and set a separate rate for remote areas if needed. US: compare USPS, UPS and FedEx in Shopify Shipping. Add international zones only once home works.
+
+### Good to know
 
 <!-- guide:shopify-2-free-shipping -->
 ![Set a free shipping amount in Shopify](../../public/guides/shopify-2-free-shipping.svg)
@@ -216,23 +286,35 @@ Surprise shipping costs are one of the main reasons people leave at checkout. Ma
 ## Lesson 22.10: Taxes: GST and sales tax basics
 <!-- stage:convert -->
 
+**Why this matters:** Tax set up wrong either costs you money or breaks the law. In Australia, GST registration is required once turnover reaches $75,000; in the US, sales tax depends on nexus (a strong enough connection to a state). Helix strips GST from your sales before any profit maths.
+
+**Step 1.** Australia: check whether your GST turnover (this month plus the previous 11) has reached $75,000 or will in the next 12 months, and register within 21 days if so (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
+
+**Expected result:** You know whether you must register.
+
+**Step 2.** Australia, once registered: in Shopify **Settings > Taxes and duties**, turn on **Include sales tax in product price and shipping rate** (see [Shopify: taxes in Australia](https://help.shopify.com/en/manual/taxes/australia)).
+
+**Expected result:** Prices shown to Australians include GST.
+
+**Watch out:** If you are not registered, do not charge GST and do not call invoices tax invoices.
+
+**Step 3.** In Helix **Settings**, leave **My prices include GST/VAT** on (default for Australia) if you type tax-inclusive totals such as Shopify's Total sales; switch it to No if you copy Gross or Net sales (already ex tax) or are not registered.
+
+**Expected result:** Helix divides sales by 1.1 before profit maths when needed. New Zealand (15%) and UK (20%) are there too.
+
+<!-- do:settings -->
+
+**Step 4.** US: list states where you have physical presence (home state, warehouse) and check each state's economic nexus threshold, often $100,000 of sales a year.
+
+**Expected result:** You know where you owe sales tax.
+
+**Step 5.** US: register with each state before collecting, then turn that state on in **Settings > Taxes and duties** (see [Shopify: US taxes](https://help.shopify.com/en/manual/taxes/us)).
+
+**Expected result:** Shopify collects tax only where you are registered and tracks your progress to other thresholds.
+
+### Good to know
+
 > **General information, not tax or legal advice.** Tax rules change and depend on your situation. Check with a registered tax agent or accountant before you decide.
-
-**Australia (GST):**
-
-1. You must register for GST within 21 days of your GST turnover reaching $75,000 or more (this month plus the previous 11 months), or if you expect to reach it in the next 12 months. You can register earlier if you choose. See [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst).
-2. Prices shown to Australian shoppers should include GST once you are registered. In Shopify, open Settings, then Taxes and duties, and turn on "Include sales tax in product price and shipping rate". See [Shopify: taxes in Australia](https://help.shopify.com/en/manual/taxes/australia).
-3. If you are not registered, do not charge GST and do not call your invoices tax invoices.
-4. GST you collect belongs to the ATO, not you. Helix takes it out for you: in Helix Settings, "My prices include GST/VAT" is on by default for Australian stores, so the sales you type (for example Shopify's Total sales, which includes tax) are divided by 1.1 before any profit maths. If you copy Shopify's Gross sales or Net sales reports instead, which already leave tax out, or you are not registered, switch it to "No". New Zealand (15%) and UK (20%) are there too.
-
-**US (sales tax):**
-
-1. You usually need to collect sales tax in states where you have a physical presence (nexus), such as your home state or a warehouse.
-2. Most states also have an economic nexus rule, often $100,000 of sales into that state in a year. Rules differ by state.
-3. Register with a state before you collect its tax. Then turn that state on in Shopify under Settings, then Taxes and duties. See [Shopify: US taxes](https://help.shopify.com/en/manual/taxes/us).
-4. Shopify can track how close you are to each state's threshold.
-
-**Self-check:** do you know whether you need to register, and have you set tax-inclusive (AU) or state-by-state (US) settings?
 
 <!-- guide:shopify-6-taxes -->
 ![Turn on tax settings in Shopify](../../public/guides/shopify-6-taxes.svg)
@@ -243,17 +325,25 @@ Surprise shipping costs are one of the main reasons people leave at checkout. Ma
 ## Lesson 22.11: Payments
 <!-- stage:convert -->
 
-Let people pay the way they like. Every extra step at checkout loses buyers.
+**Why this matters:** Let people pay the way they like, because every extra step at checkout loses buyers. Express wallets and a recognisable statement name cut drop-offs and disputes.
 
-**Do this:**
+**Step 1.** In **Settings > Payments**, turn on Shopify Payments if available in your country (see [Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments)).
 
-1. Turn on Shopify Payments if it is available in your country. It accepts cards and usually has lower total fees than a separate gateway. See [Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments).
-2. Turn on express buttons: Shop Pay, Apple Pay and Google Pay.
-3. Add PayPal. Many shoppers still prefer it. See [Shopify: PayPal](https://help.shopify.com/en/manual/payments/paypal).
-4. Consider one buy now, pay later option. **Australia:** Afterpay is widely known. **US:** Shop Pay Installments is built in. See [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments). Check the fee, because it is higher than a card fee.
-5. Set your payout bank account and statement name (the name that appears on bank statements). Make it match your brand so customers recognise the charge.
+**Expected result:** Cards are accepted with lower total fees.
 
-**Self-check:** can a shopper pay with a card, Shop Pay, Apple Pay and PayPal? Does your brand name show on statements?
+**Step 2.** Turn on Shop Pay, Apple Pay and Google Pay, and add PayPal (see [Shopify: PayPal](https://help.shopify.com/en/manual/payments/paypal)).
+
+**Expected result:** Checkout shows express buttons and PayPal.
+
+**Step 3.** Consider one buy now pay later option: Afterpay in Australia, Shop Pay Installments in the US (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
+
+**Expected result:** Shoppers can pay in parts. Check the fee, which is higher than a card fee.
+
+**Step 4.** Set your payout bank account and a statement name that matches your brand.
+
+**Expected result:** Customers recognise the charge on their bank statement.
+
+### Good to know
 
 <!-- guide:shopify-7-payments -->
 ![Turn on payments in Shopify](../../public/guides/shopify-7-payments.svg)
@@ -264,61 +354,79 @@ Let people pay the way they like. Every extra step at checkout loses buyers.
 ## Lesson 22.12: Policies and legal pages
 <!-- stage:convert -->
 
-Clear policies build trust and keep you within the law. Write them in plain words.
+**Why this matters:** Clear policies build trust and keep you within the law. Write them in plain words a 12-year-old could follow, and link them where buyers look.
 
-**Do this:**
+**Step 1.** In **Settings > Policies**, create Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
 
-1. Create Refund, Privacy, Terms of service, Shipping and Contact pages. Shopify has templates to start from. See [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos).
-2. Rewrite the templates in plain language. Add your own cut-off dates and delivery ranges.
-3. Link every policy in the footer and near checkout.
+**Expected result:** All five policy pages exist.
 
-**Australia:** under Australian Consumer Law, customers always have rights to a repair, replacement or refund when a product is faulty, not as described or not fit for purpose. Do not write "no refunds" or "no refunds on sale items". Change-of-mind returns are your choice. See [ACCC: consumer guarantees](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees).
+**Step 2.** Rewrite each in plain language with your own cut-off dates and delivery ranges.
 
-**US:** if you state a shipping time, the FTC mail order rule expects you to ship within it (or within 30 days if you state none), and to tell buyers about delays. See [FTC: mail order rule](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule).
+**Expected result:** The policies sound like you and match your real process.
 
-**Both:** only email people who agreed to it, and include an unsubscribe link in every marketing email.
+**Watch out:** Australia: customers always have rights to repair, replacement or refund for faulty or not-as-described products under Australian Consumer Law. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it, or ship within 30 days if you state none (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
+
+**Step 3.** Link every policy in the footer and near checkout.
+
+**Expected result:** Every policy is one click away.
+
+**Step 4.** Make sure you only email people who agreed, and every marketing email has an unsubscribe link.
+
+**Expected result:** Your email marketing is compliant.
+
+### Good to know
 
 > **General information, not legal advice.** Check your policies with a lawyer if you are unsure.
-
-**Self-check:** is every policy linked in the footer and written so a 12-year-old could follow it?
 
 ## Lesson 22.13: Essential apps (and only those)
 <!-- stage:convert -->
 
-Every app can slow your store and adds a monthly cost. Start with a small set.
+**Why this matters:** Every app can slow your store and adds a monthly cost. A small starter set covers almost everything a new store needs. See Module 18 for when to add more.
 
-**The starter set:**
+**Step 1.** Install the starter set only: a reviews app, Shopify Email or Klaviyo, the Facebook & Instagram and Google & YouTube sales channels, and (optionally) a post-purchase offer app; add subscriptions only if you sell refills.
 
-1. **Reviews:** collects and shows photo reviews.
-2. **Email and SMS:** Shopify Email or Klaviyo for sign-ups, welcome and abandoned checkout emails.
-3. **Facebook and Instagram** and **Google and YouTube** sales channels for tracking and product feeds.
-4. **Post-purchase offer (optional):** adds a one-click offer after checkout. This is one of the few features that truly needs an app.
-5. **Subscriptions (only if you sell refills or consumables).**
+**Expected result:** Your app list is short and every app has a job.
 
-**Rules:**
+**Step 2.** Before installing anything else, check whether your theme can already do it (badges, size charts and FAQs often are built in).
 
-1. Check if your theme can do it first. Many features (badges, size charts, FAQs) are built in.
-2. Install new apps on a copy of your theme and test speed before and after.
-3. Remove apps you stop using, and check they left no code behind.
+**Expected result:** You avoid apps for features you already have.
 
-See [Module 18](18-tool-stack.md) for when to add more.
+**Step 3.** Install new apps on a theme copy and test speed before and after.
 
-**Self-check:** can you name what each installed app does and what it costs each month?
+**Expected result:** No app slows the live store unnoticed.
+
+**Step 4.** Remove apps you stop using and check they left no code behind.
+
+**Expected result:** You can name what each app does and what it costs each month.
 
 ## Lesson 22.14: Tracking: Meta pixel, Google tag and analytics
 <!-- stage:attract -->
 
-Without tracking, you cannot tell which ads bring sales. Set it up before you spend a dollar on ads.
+**Why this matters:** Without tracking, you cannot tell which ads bring sales. Set it up before you spend a dollar on ads, then prove it works with one test order.
 
-**Do this:**
+**Step 1.** Install the **Facebook & Instagram** app and connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
 
-1. Install the **Facebook and Instagram** app from Shopify. Connect your Business account, ad account, page and pixel. See [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta).
-2. Set data sharing to the highest level. This turns on server events, which send sales to Meta even when a browser blocks the pixel.
-3. Install the **Google and YouTube** app. Connect Google Merchant Center, Google Ads and Google Analytics 4. See [Shopify: Google](https://help.shopify.com/en/manual/online-sales-channels/google).
-4. Check your privacy and cookie settings in Shopify's customer privacy settings. See [Shopify: customer events](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/customer-events).
-5. Place a test order (Lesson 22.16) and check a Purchase shows in Meta Events Manager and in Google.
+**Expected result:** The app shows all four connected.
 
-**Self-check:** does one test order show up as a Purchase in Meta and in Google?
+<!-- do:meta-connect -->
+
+**Step 2.** Set data sharing to **Maximum** to turn on server events.
+
+**Expected result:** Sales reach Meta even when a browser blocks the pixel.
+
+**Step 3.** Install the **Google & YouTube** app and connect Merchant Center, Google Ads and GA4 (see [Shopify: Google](https://help.shopify.com/en/manual/online-sales-channels/google)).
+
+**Expected result:** Google receives your products and purchases.
+
+**Step 4.** Check privacy and cookie settings in **Settings > Customer privacy** (see [Shopify: customer events](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/customer-events)).
+
+**Expected result:** Consent is handled for your markets.
+
+**Step 5.** Place a test order (Lesson 22.16) and check Meta Events Manager and Google for the Purchase.
+
+**Expected result:** One test order shows as a Purchase in both Meta and Google.
+
+### Good to know
 
 <!-- guide:shopify-8-meta-tracking -->
 ![Connect Meta tracking from Shopify](../../public/guides/shopify-8-meta-tracking.svg)
@@ -329,32 +437,50 @@ Without tracking, you cannot tell which ads bring sales. Set it up before you sp
 ## Lesson 22.15: Speed and mobile
 <!-- stage:convert -->
 
-Most shoppers are on a phone. A slow store wastes every ad dollar.
+**Why this matters:** Most shoppers are on a phone, and a slow store wastes every ad dollar. Aim for a product page that loads in about 3 seconds on mobile data.
 
-**Do this:**
+**Step 1.** Test your home page and a product page in [PageSpeed Insights](https://pagespeed.web.dev/) on mobile.
 
-1. Test your home page and a product page in [PageSpeed Insights](https://pagespeed.web.dev/). Look at the mobile score and Core Web Vitals.
-2. Shrink images before you upload them. Most photos look fine under 300 KB.
-3. Keep videos short and compressed. A video of many megabytes that plays on load slows everything down.
-4. Remove apps and sections you do not use.
-5. Open your store on your phone using mobile data and try to buy something. Fix anything that is hard to tap or read.
+**Expected result:** You have a mobile score and Core Web Vitals for both.
 
-**Self-check:** does your product page load in about 3 seconds on mobile data?
+**Step 2.** Shrink images to under about 300 KB before upload, and keep videos short and compressed.
+
+**Expected result:** Media files are small.
+
+**Step 3.** Remove apps and sections you do not use.
+
+**Expected result:** Fewer scripts load.
+
+**Step 4.** On your phone, using mobile data, try to buy something and fix anything hard to tap or read.
+
+**Expected result:** The product page loads in about 3 seconds and buying is easy.
 
 ## Lesson 22.16: Place test orders
 <!-- stage:convert -->
 
-A test order proves that payments, emails, stock and tracking all work together.
+**Why this matters:** A test order proves that payments, emails, stock and tracking all work together. It is the last step before real customers.
 
-**Do this:**
+**Step 1.** Turn on test mode for Shopify Payments, or use the Bogus Gateway (see [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders)).
 
-1. Turn on test mode for Shopify Payments, or use the Bogus Gateway. See [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders).
-2. Place an order on your phone as a customer would. Use a discount code if you have one.
-3. Check: the confirmation email arrived, stock went down by one, shipping and tax were right, and a Purchase showed in Meta and Google.
-4. Refund or cancel the test order, then turn test mode off.
-5. Place one small real order with your own card and refund it. This checks live payments.
+**Expected result:** Checkout accepts test card numbers.
 
-**Self-check:** did a real card payment go through and appear in your payouts?
+**Step 2.** Place an order on your phone as a customer would, with a discount code if you have one.
+
+**Expected result:** The order goes through.
+
+**Step 3.** Check the confirmation email arrived, stock dropped by one, shipping and tax were right, and a Purchase showed in Meta and Google.
+
+**Expected result:** Every system recorded the order correctly.
+
+**Step 4.** Refund or cancel the test order and turn test mode off.
+
+**Expected result:** The store is back in live mode.
+
+**Step 5.** Place one small real order with your own card and refund it.
+
+**Expected result:** A real card payment went through and appears in your payouts.
+
+### Good to know
 
 <!-- guide:shopify-9-test-order -->
 ![Place a test order in Shopify](../../public/guides/shopify-9-test-order.svg)
@@ -365,7 +491,23 @@ A test order proves that payments, emails, stock and tracking all work together.
 ## Lesson 22.17: Pre-launch checklist
 <!-- stage:convert -->
 
-Tick every item before you launch or turn on ads.
+**Why this matters:** One last checklist before you launch or turn on ads catches the small things that cost the first sales.
+
+**Step 1.** Go through every row of the table below and tick it off.
+
+**Expected result:** Every row is ticked.
+
+**Step 2.** Remove the store password in **Online Store > Preferences**.
+
+**Expected result:** Anyone can visit the store.
+
+**Step 3.** Start your 2-minute morning numbers in Helix and plan your first small test campaign.
+
+**Expected result:** Your first day of numbers is in and a test campaign brief is started.
+
+<!-- do:numbers -->
+
+### Good to know
 
 | Area | Check |
 | --- | --- |
@@ -383,4 +525,3 @@ Tick every item before you launch or turn on ads.
 | Speed | Mobile pages load in about 3 seconds |
 | Password | Store password removed when you are ready to launch |
 
-**Self-check:** every row ticked? Then start your 2-minute morning numbers in Helix and plan your first small test campaign.

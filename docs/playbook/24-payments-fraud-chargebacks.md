@@ -36,95 +36,163 @@
 ## Lesson 24.1: Your payment mix and what it really costs
 <!-- stage:grow -->
 
-Each way to pay has its own fee, payout speed and risk. The fee you see on the price page is rarely the whole cost.
+**Why this matters:** Each way to pay has its own fee, payout speed and risk. The fee on the price page is rarely the whole cost.
 
-**Do this:**
+**Step 1.** Download last month's payout reports from each provider (Shopify Payments, PayPal, buy now pay later).
 
-1. Download last month's payout reports from each provider (Shopify Payments, PayPal, buy now pay later).
-2. For each one, add up fees and divide by the sales it processed. That is your real fee rate.
-3. Add the hidden costs: currency conversion when you withdraw, fixed fees per order on small orders, and fees kept on refunds.
-4. Put your blended fee rate into Helix as payment fees so profit is right.
-5. Keep the methods your customers use. Drop any method under about 2% of orders that costs much more than cards.
-6. Check each provider's current fee page once a year. Fees change, and providers announce rises by email that is easy to miss.
+**Expected result:** You have one report per provider.
 
-**Australia:** buy now pay later is popular and often lifts order value, but its fee is usually several times a card fee. Check whether it pays for itself with your own numbers.
+**Step 2.** For each provider, divide total fees by the sales it processed.
 
-**US:** Shop Pay and Shop Pay Installments are built into Shopify. PayPal remains common. Compare installment fees with your margin before you promote them.
+**Expected result:** You have a real fee rate per provider.
 
-**Self-check:** do you know your real blended fee rate? Is it in your Helix numbers?
+**Step 3.** Add hidden costs: currency conversion on withdrawal, fixed per-order fees on small orders and fees kept on refunds.
+
+**Expected result:** Your fee rates include everything.
+
+**Step 4.** Enter your blended fee rate (all fees divided by all sales) in Helix as payment fees.
+
+**Expected result:** Helix profit uses your real fees.
+
+<!-- do:numbers -->
+
+**Step 5.** Keep the methods customers use, and drop any method under about 2% of orders that costs much more than cards.
+
+**Expected result:** Your payment list is lean.
+
+**Watch out:** Australia: buy now pay later often lifts order value but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before promoting them.
+
+**Step 6.** Check each provider's fee page once a year.
+
+**Expected result:** Fee rises never surprise you.
 
 ## Lesson 24.2: Holds, reserves and frozen payouts
 <!-- stage:grow -->
 
-A payment provider can hold part of your money if it sees risk: a new account, a sudden jump in sales, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
+**Why this matters:** A payment provider can hold part of your money if it sees risk: a new account, a sudden sales jump, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
 
-**Do this:**
+**Step 1.** Read each provider's rules on holds and reserves (money held back for a while in case of refunds) once.
 
-1. Read each provider's rules on holds and reserves (money held back for a while in case of refunds) once, so nothing surprises you.
-2. Before a big sale or launch, tell your providers the dates and expected sales. A spike they expect is less likely to trigger a hold.
-3. Add tracking to every order within a day. Providers release held money faster when orders show as delivered.
-4. Show honest delivery times. Pre-orders with long waits raise risk, so state the ship date clearly and keep customers updated.
-5. Keep at least one month of costs in cash, and have a second way to take payments ready to switch on.
-6. If money is held, ask the provider exactly what it needs (tracking, invoices, ID), send it all at once and diary a follow-up.
+**Expected result:** You know what triggers a hold.
 
-**Australia and US:** keep your business details, bank account and ID up to date in every provider. Out-of-date details are a common reason for a freeze.
+**Step 2.** Before a big sale or launch, tell your providers the dates and expected sales.
 
-**Self-check:** do you know each provider's hold rules? Do you have a cash buffer and a backup payment method?
+**Expected result:** An expected spike is less likely to trigger a hold.
+
+**Step 3.** Add tracking to every order within a day.
+
+**Expected result:** Held money is released faster because orders show as delivered.
+
+**Step 4.** Show honest delivery times and state pre-order ship dates clearly.
+
+**Expected result:** Customers know when to expect orders.
+
+**Step 5.** Keep at least one month of costs in cash and a second payment method ready to switch on.
+
+**Expected result:** A hold cannot stop the business.
+
+**Step 6.** If money is held, ask exactly what the provider needs (tracking, invoices, ID), send it all at once and diary a follow-up.
+
+**Expected result:** The hold is resolved as fast as possible.
+
+**Watch out:** Keep business details, bank account and ID current in every provider; out-of-date details are a common cause of freezes.
 
 ## Lesson 24.3: Chargebacks: how they work and how to answer
 <!-- stage:grow -->
 
-A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away; you then have a short window to prove the sale was fine.
+**Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away, and you have a short window to prove the sale was fine.
 
-**Do this:**
+**Step 1.** Open the chargeback in Shopify and note the response deadline, usually 7 to 21 days on Shopify Payments (see [Shopify: responding to chargebacks](https://help.shopify.com/en/manual/payments/chargebacks/chargeback-process)).
 
-1. Know the clocks. Customers usually have around 120 days to dispute. On Shopify Payments you usually have 7 to 21 days to respond, shown on the chargeback. Miss it and you lose. See [Shopify: responding to chargebacks](https://help.shopify.com/en/manual/payments/chargebacks/chargeback-process).
-2. Read the reason. "Product not received", "not as described" and "fraudulent" need different evidence.
-3. For "not received": tracking that shows delivery to the address the customer gave, plus any messages where they confirm details.
-4. For "not as described": your product page at the time, photos, your returns policy and any messages offering a fix.
-5. For "fraudulent": proof the real cardholder ordered: matching billing and shipping address, past orders from the same customer, and that they opened the tracking emails. These are the hardest to win, even with proof of delivery.
-6. Keep your answer short and factual. Put the strongest proof first.
-7. Contact the customer politely. Many disputes are confusion and the customer can withdraw them.
-8. Track your chargeback rate (disputes divided by orders). Card networks penalise stores with high rates. See [Shopify: resolving a chargeback](https://help.shopify.com/en/manual/payments/chargebacks/resolve-chargeback).
+**Expected result:** You know your deadline. Customers usually have about 120 days to dispute.
 
-**Australia and US:** for high-value orders, use delivery with signature. It is the strongest proof you can buy.
+**Step 2.** Read the reason: "not received", "not as described" or "fraudulent".
 
-**Self-check:** do you know where to see the deadline for each chargeback? Do you have a saved checklist of evidence for each reason?
+**Expected result:** You know which evidence you need.
+
+**Step 3.** For "not received", gather tracking showing delivery to the address given, plus any messages confirming details.
+
+**Expected result:** You have proof of delivery.
+
+**Step 4.** For "not as described", gather your product page at the time, photos, your returns policy and messages offering a fix.
+
+**Expected result:** You can show the product matched the listing.
+
+**Step 5.** For "fraudulent", gather proof the real cardholder ordered: matching billing and shipping address, past orders and opened tracking emails.
+
+**Expected result:** You have the strongest proof available. These are the hardest to win.
+
+**Step 6.** Write a short, factual response with the strongest proof first and submit it.
+
+**Expected result:** The response is submitted before the deadline.
+
+**Step 7.** Contact the customer politely, because many disputes are confusion they can withdraw.
+
+**Expected result:** Some disputes are withdrawn.
+
+**Step 8.** Track your chargeback rate (disputes divided by orders) monthly (see [Shopify: resolving a chargeback](https://help.shopify.com/en/manual/payments/chargebacks/resolve-chargeback)).
+
+**Expected result:** You catch a rising rate before card networks penalise you.
+
+**Watch out:** For high-value orders, use signature on delivery. It is the strongest proof you can buy.
 
 ## Lesson 24.4: Stopping fraud and card testing
 <!-- stage:grow -->
 
-Card testing is when fraudsters use your checkout to try stolen card numbers, usually with many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
+**Why this matters:** Card testing is when fraudsters use your checkout to try stolen card numbers, usually with many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
 
-**Do this:**
+**Step 1.** Learn the signs: bursts of small orders, the same cheap item, odd names or emails, many failed payments, or different addresses on one card.
 
-1. Watch for signs: bursts of small orders, the same cheap item, odd names or emails, many failed payments, or different addresses using the same card.
-2. Use your platform's protections. Shopify flags risky orders with its fraud analysis and protects checkout from many bots; Shopify Plus stores can switch on extra bot checks during busy periods. See [Shopify: preventing fraud](https://help.shopify.com/en/manual/payments/fraud-prevention/preventing-fraud) and [Shopify: bot protection](https://help.shopify.com/en/manual/checkout-settings/bot-protection).
-3. Read the fraud risk level on every order before you ship. Hold high-risk orders and contact the customer.
-4. If an order looks fraudulent, cancel and refund it before shipping. Refunding is cheaper than a chargeback.
-5. Turn on 3D Secure (an extra bank check) where your provider lets you, at least for high-risk orders.
-6. Be careful with gift cards and very large first orders shipped to forwarding addresses.
-7. If testing keeps happening, consider raising the minimum order or temporarily hiding your cheapest product.
+**Expected result:** You can spot card testing.
 
-**Australia and US:** report card fraud to your payment provider straight away. Keep a list of the emails and addresses used.
+**Step 2.** Use your platform's protections: Shopify's fraud analysis and checkout bot protection (see [Shopify: preventing fraud](https://help.shopify.com/en/manual/payments/fraud-prevention/preventing-fraud) and [bot protection](https://help.shopify.com/en/manual/checkout-settings/bot-protection)).
 
-**Self-check:** do you check the risk level before you ship? Do you know what your platform already blocks?
+**Expected result:** You know what Shopify already blocks.
+
+**Step 3.** Read the fraud risk level on every order before shipping, and hold high-risk orders while you contact the customer.
+
+**Expected result:** No high-risk order ships unchecked.
+
+**Step 4.** Cancel and refund any order that looks fraudulent before shipping.
+
+**Expected result:** You pay a refund instead of a chargeback.
+
+**Step 5.** Turn on 3D Secure (an extra bank check at payment) where your provider allows, at least for high-risk orders.
+
+**Expected result:** Risky payments get an extra check.
+
+**Step 6.** If testing keeps happening, raise the minimum order or hide your cheapest product for a while.
+
+**Expected result:** The attacks stop.
+
+**Watch out:** Be careful with gift cards and very large first orders going to parcel forwarding addresses.
 
 ## Lesson 24.5: Refunds, partial refunds and goodwill
 <!-- stage:grow -->
 
-A fast, fair refund is cheaper than a dispute. A clear rule saves you deciding each case from scratch.
+**Why this matters:** A fast, fair refund is cheaper than a dispute. A clear rule saves you deciding each case from scratch.
 
-**Do this:**
+**Step 1.** Write a one-page refund rule: when you refund in full, when you offer a partial refund or credit, and who approves it.
 
-1. Write your refund rules in one page: when you refund in full, when you offer a partial refund or credit, and who can approve it.
-2. Offer a fix first for small problems: a partial refund or store credit if the customer keeps the item.
-3. Refund through the original payment method. Sending money another way can cause a dispute anyway.
-4. Note every refund reason so you can fix the cause.
-5. Put refunds into Helix so profit stays true.
+**Expected result:** Your team can handle any refund the way you would.
 
-**Australia:** refunds for faulty items are a legal right under the consumer guarantees; goodwill is extra. See [ACCC: consumer guarantees](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees).
+**Step 2.** For small problems, offer a fix first: a partial refund or store credit if the customer keeps the item.
 
-**US:** state law and your own published policy set the rules. Keep your policy easy to find. See the [FTC](https://www.ftc.gov/business-guidance).
+**Expected result:** Fewer full refunds.
 
-**Self-check:** can anyone on your team handle a refund the same way you would?
+**Watch out:** Australia: refunds for faulty items are a legal right; goodwill is extra (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: state law and your published policy set the rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+
+**Step 3.** Always refund to the original payment method.
+
+**Expected result:** No dispute from money sent another way.
+
+**Step 4.** Note every refund reason.
+
+**Expected result:** You can fix the cause.
+
+**Step 5.** Enter refunds in Helix.
+
+**Expected result:** Profit stays true.
+
+<!-- do:numbers -->
+

@@ -35,31 +35,83 @@
 ## Lesson 7.1: Account setup checklist
 <!-- stage:attract -->
 
-Do this once before you spend money. Tick each item.
+**Why this matters:** Ten minutes of setup before you spend money prevents the most expensive Meta problems: lost sales tracking, hacked accounts and runaway spend. Do this once, tick each step, and check it again every quarter.
 
-1. **Your business is verified** in Meta Business settings. There are two admins, and every admin has two-factor login turned on (a code from your phone as well as a password).
-2. **Your pixel and server events are connected** through your store platform (for example the Facebook and Instagram app in Shopify). The pixel is a small piece of code that tells Meta when someone views, adds to cart or buys. Server events (Meta calls them Conversions API) send the same sales from your store's server, so fewer are missed. Check the currency matches your store.
-3. **Your product catalog is connected and up to date.** Sale prices should come through automatically.
-4. **Audience segments are set** (new people, engaged people, existing customers). This lets Meta report how much spend reaches new people.
-5. **Custom audiences are built:** visitors in the last 30 and 180 days, product viewers, add to cart, checkout, buyers, people who engaged on social, and your email list.
-6. **Your saved columns are set up** in Ads Manager, so you see the right numbers every day ([SOP 06](../sops/06-meta-daily-optimisation.md)).
-7. **An account spending limit is set** as a safety net.
-8. **Check for hacking each week.** Look for campaigns you did not create or sudden huge budgets. If you find any: turn them off, remove unknown people's access, contact Meta support and dispute the charges with your bank.
+**Step 1.** In Meta Business Settings (business.facebook.com/settings) go to **Security Centre**, start business verification, add a second admin under **Users > People**, and turn on two-factor authentication (a code from your phone as well as a password) for every admin.
+
+**Expected result:** Security Centre shows verification started or done, two admins, and two-factor on for both.
+
+**Watch out:** One admin is a single point of failure. If that person is locked out or hacked, you lose the account.
+
+**Step 2.** In Shopify install the **Facebook & Instagram** app, connect your pixel (a small piece of code that tells Meta when someone views, adds to cart or buys) and set data sharing to **Maximum** so server events (Conversions API: the same sales sent from your store's server) are on.
+
+**Expected result:** In Events Manager, your pixel shows Purchase events from both **Browser** and **Server**, and the currency matches your store.
+
+<!-- do:meta-connect -->
+
+**Step 3.** In the same app, connect your product catalog and check that sale prices come through.
+
+**Expected result:** **Commerce Manager > Catalog** lists your products with the right prices.
+
+**Step 4.** In **Ad account settings > Audience segments**, set your engaged audience and existing customers.
+
+**Expected result:** Ads Manager can report how much spend reaches new people.
+
+**Step 5.** Build custom audiences: visitors in the last 30 and 180 days, product viewers, add to cart, checkout started, buyers, social engagers and your email list.
+
+**Expected result:** All the audiences show "Ready" in **Audiences**.
+
+**Step 6.** Set up saved columns in Ads Manager (**Columns > Customise columns > Save as preset**) as in [SOP 06](../sops/06-meta-daily-optimisation.md).
+
+**Expected result:** One click shows the numbers you check every day.
+
+**Step 7.** In **Billing > Payment settings**, set an account spending limit as a safety net.
+
+**Expected result:** The account stops spending at your limit even if something goes wrong.
+
+**Step 8.** Every week, check for campaigns you did not create or sudden huge budgets.
+
+**Expected result:** A weekly check is in your calendar. If you find anything: turn it off, remove unknown access, contact Meta support and dispute the charges with your bank.
+
+<!-- do:calendar -->
 
 ## Lesson 7.2: Automated vs manual campaigns
 <!-- stage:attract -->
 
-There are two ways to run campaigns.
+**Why this matters:** Meta offers two ways to run campaigns. Automated (Advantage+) campaigns let Meta choose budget split, audience and placements; manual campaigns let you control audience, exclusions and placements. Most accounts use both, each for what it does best.
 
-- **Automated (Advantage+) campaigns** let Meta choose the budget split, the audience and where ads show.
-- **Manual campaigns** let you control the audience, who to leave out and where ads show.
+**Step 1.** Use an automated (Advantage+) Sales campaign for broad cold and mixed audiences.
 
-**What most accounts do:** use automated campaigns for broad cold and mixed audiences, and manual campaigns for warm audiences and specific tests.
+**Expected result:** Your main prospecting campaign is automated.
 
-**Watch out:** Meta may turn your ad into a carousel or collection automatically. If that breaks how your ad looks, turn that setting off.
+<!-- do:meta-draft -->
+
+**Step 2.** Use manual campaigns for warm audiences and for specific tests where you need control.
+
+**Expected result:** Warm and test campaigns are manual, with your chosen audiences.
+
+**Step 3.** In each ad, open **Advantage+ creative** options and turn off automatic carousel or collection conversion if it breaks how your ad looks.
+
+**Expected result:** Your ads show in the format you designed.
 
 ## Lesson 7.3: Ad formats
 <!-- stage:attract -->
+
+**Why this matters:** The format is the shape of the ad: video, image, carousel and more. Each format suits a different job, and the wrong one can hide a good message.
+
+**Step 1.** For each ad in your next batch, pick the format from the table below that matches its job (for example single video in 9:16 and 4:5 for most cold ads).
+
+**Expected result:** Every brief names one format.
+
+**Step 2.** Make each ad in both 4:5 (feed) and 9:16 (Stories and Reels) sizes.
+
+**Expected result:** Each ad fits every placement without cropping.
+
+**Step 3.** Keep all text inside the safe zones so Reels and Stories do not cut it off or cover it with buttons.
+
+**Expected result:** Previewing the ad in Ads Manager shows no text hidden behind buttons.
+
+### Good to know
 
 | Format | Best for |
 | --- | --- |
@@ -71,20 +123,32 @@ There are two ways to run campaigns.
 | Partnership ads | A creator's video run from the creator's own account |
 | Catalog product video | Product videos made automatically from templates |
 
-**Tip:** keep text inside the safe zones, so Reels and Stories do not cut it off or cover it with buttons.
-
 ## Lesson 7.4: Launching
 <!-- stage:attract -->
 
-Follow these steps each time you launch new ads. The drawings below show where to click.
+**Why this matters:** How you launch decides how fairly ads are tested and whether they keep their likes and comments. Building once, copying with the same post and launching in batches gives every ad a fair start.
 
-1. **Build new ads in your build campaign** (a campaign that is always switched off).
-2. **Copy them into the campaigns where they will run.** Choose "use existing post", so likes and comments carry over.
-3. **Launch a whole batch at once,** not one ad at a time.
-4. **Wait 2 to 5 days** before you judge. Early numbers jump around.
-5. **Only use ad scheduling for a specific reason,** like a sale that starts at a set time.
+**Step 1.** In your build campaign (always switched off), create the new ads.
 
-**With Helix:** Helix can build the campaign for you as a paused draft in your own account. You check it and switch it on.
+**Expected result:** New ads sit in the paused build campaign.
+
+<!-- do:meta-draft -->
+
+**Step 2.** Copy them into the campaigns where they will run and choose **Use existing post** so likes and comments carry over.
+
+**Expected result:** Each copy shows the same post ID as the original.
+
+**Step 3.** Switch on the whole batch at once, not one ad at a time.
+
+**Expected result:** All new ads start on the same day.
+
+**Step 4.** Wait 2 to 5 days before judging.
+
+**Expected result:** You judge on settled numbers, not early noise.
+
+**Watch out:** Only use ad scheduling for a specific reason, like a sale that starts at a set time.
+
+### Good to know
 
 <!-- guide:meta-1-create-sales-campaign -->
 ![Start a Sales campaign in Meta Ads Manager](../../public/guides/meta-1-create-sales-campaign.svg)
@@ -113,54 +177,103 @@ Follow these steps each time you launch new ads. The drawings below show where t
 ## Lesson 7.5: The learning phase
 <!-- stage:attract -->
 
-The learning phase is the first days after you start or change an ad set, while Meta works out who to show it to. Results are less stable during this time.
+**Why this matters:** The learning phase is the first days after you start or change an ad set, while Meta works out who to show it to. Results are unstable during learning, so knowing what resets it saves you from breaking good campaigns.
 
-1. **Big edits restart learning:** swapping or adding ads, changing the audience, or changing the budget by more than 20%.
-2. **New campaigns do not reset existing ones.** It is safe to launch a new campaign next to a working one.
-3. **A great cost per sale in week one can get worse in week two.** Judge on the last 7 days, not one day.
-4. **Do not keep moving winning ads into "the best campaign".** Copy them instead, so each campaign keeps what it has learned.
+**Step 1.** Before editing a live ad set, check whether the edit restarts learning: swapping or adding ads, changing the audience, or changing budget by more than 20%.
+
+**Expected result:** You only make big edits on purpose.
+
+**Step 2.** Launch new tests as new campaigns rather than editing working ones.
+
+**Expected result:** Existing campaigns keep their learning, because new campaigns do not reset them.
+
+**Step 3.** Judge results on the last 7 days, not one day.
+
+**Expected result:** A great week one followed by a weaker week two does not panic you.
+
+**Watch out:** Do not keep moving winning ads into "the best campaign". Copy them instead, so each campaign keeps what it learned.
 
 ## Lesson 7.6: Daily optimisation in 10 minutes
 <!-- stage:attract -->
 
-Do these five steps each day. [SOP 06](../sops/06-meta-daily-optimisation.md) has the full detail and numbers.
+**Why this matters:** Ten minutes a day keeps Meta healthy. Five steps in the same order every day turn a confusing dashboard into one clear action. In Helix, **Your ads** shows the verdicts for you.
 
-1. **Set your stance from your scorecard.** Push, careful push, hold or defend (see Module 1, Lesson 1.6).
-2. **Check campaign budgets and frequency** (how often the same people see your ads).
-3. **Grade each ad** into one of four groups:
-   - **Star:** great results. Keep it and give it more.
-   - **Steady:** fine results. Leave it.
-   - **Passenger:** spending little and not doing much. Leave it unless it starts spending.
-   - **Drain:** spending a lot with poor results. Turn it off.
-4. **Label each campaign:** winning, learning, shaky or dying.
-5. **Take one action and write it down** in your decision log.
+**Step 1.** Set your stance from your scorecard: push, careful push, hold or defend (Lesson 1.6).
 
-In Helix, Your ads shows this for you as Spend more, Wait, New ads needed or Stop.
+**Expected result:** You have one word for today.
+
+<!-- do:numbers -->
+
+**Step 2.** Check campaign budgets and frequency (how often the same people see your ads) in your saved columns.
+
+**Expected result:** You know whether any campaign is overspending or tiring its audience.
+
+**Step 3.** Grade each ad: **Star** (great: keep and give more), **Steady** (fine: leave), **Passenger** (little spend, little effect: leave unless it starts spending), **Drain** (lots of spend, poor results: turn off).
+
+**Expected result:** Every ad has a grade, and drains are switched off.
+
+**Step 4.** Label each campaign: winning, learning, shaky or dying.
+
+**Expected result:** Every campaign has a label.
+
+<!-- do:insights -->
+
+**Step 5.** Take one action and write it in your decision log. [SOP 06](../sops/06-meta-daily-optimisation.md) has the full detail and numbers.
+
+**Expected result:** One logged action a day, about 10 minutes in total.
 
 ## Lesson 7.7: Reach potential
 <!-- stage:attract -->
 
-Ask: how many people can this ad reach before the same people see it twice on average (frequency of 2)?
+**Why this matters:** Reach potential is how many people an ad can reach before the same people see it twice on average (a frequency of 2). An ad with a tiny reach cannot grow, even if its cost per sale is great.
 
-- An ad with a big reach and an OK cost per sale can grow. You can spend more on it.
-- An ad with a tiny reach before frequency climbs cannot grow, even if its cost per sale is great.
+**Step 1.** In Ads Manager add **Reach** and **Frequency** columns and sort ads by reach over the last 7 days.
 
-**Decision rule:** to spend more, pair a low-cost ad with an ad that reaches lots of people.
+**Expected result:** You can see which ads reach many people and which reach few.
+
+**Step 2.** Mark ads with big reach and an OK cost per sale as growth candidates.
+
+**Expected result:** You have a short list of ads that can take more spend.
+
+**Step 3.** To spend more, pair your low-cost, low-reach ad with a high-reach ad in the same campaign.
+
+**Expected result:** The campaign can grow without frequency climbing fast.
 
 ## Lesson 7.8: Managing expensive cold campaigns
 <!-- stage:attract -->
 
-Cold campaigns (aimed at new people) always look expensive. That is because Meta misses many of the sales they cause: people see the ad, then buy days later another way.
+**Why this matters:** Cold campaigns aimed at new people always look expensive, because Meta misses many sales they cause when people buy days later another way. Judging them wrongly leads to cutting the campaigns that feed the whole store.
 
-1. Compare cold campaigns with other cold campaigns, never with warm ones.
-2. Watch the share of orders that come from new customers.
-3. Judge them by your total MER trend (all ad spend ÷ all sales).
-4. **Decision rule:** cut cold spend only when MER gets worse **and** orders from new customers fall.
+**Step 1.** Compare cold campaigns only with other cold campaigns, never with warm ones.
+
+**Expected result:** Your cold campaigns are ranked against each other.
+
+**Step 2.** Watch the share of orders from new customers each week.
+
+**Expected result:** You know whether cold spend is still bringing new buyers.
+
+**Step 3.** Judge cold spend by your total MER trend on the Dashboard.
+
+**Expected result:** You see the whole-store effect, not Meta's partial view.
+
+**Watch out:** Cut cold spend only when MER gets worse and orders from new customers fall.
+
+<!-- do:growth -->
 
 ## Lesson 7.9: Metrics by funnel layer
 <!-- stage:attract -->
 
-The funnel layer is how well the audience knows you. Each layer has its own numbers to watch and its own cost-per-sale allowance.
+**Why this matters:** The funnel layer is how well the audience knows you: cold, mixed, warm or hot. Each layer has its own numbers to watch and its own allowance for cost per sale.
+
+**Step 1.** Label each campaign with its layer using the naming pattern from Lesson 6.7.
+
+**Expected result:** Every campaign name shows Cold, Mixed, Warm or Hot.
+
+**Step 2.** Compare each campaign with the metrics and CPA allowance for its layer in the table below.
+
+**Expected result:** You judge each campaign against the right benchmark.
+
+### Good to know
 
 | Layer | Who | Main numbers to watch |
 | --- | --- | --- |
@@ -172,32 +285,63 @@ The funnel layer is how well the audience knows you. Each layer has its own numb
 ## Lesson 7.10: Scaling challenge
 <!-- stage:grow -->
 
-A scaling challenge is a planned 2 to 4 week push to spend more.
+**Why this matters:** A scaling challenge is a planned 2 to 4 week push to spend more. Done with new ads ready and a loss limit set, even a failed challenge teaches you what is holding you back.
 
-1. **Prepare new ads first.**
-2. **Set the most you are willing to lose** before you start.
-3. **Raise budgets 10 to 20% a day.**
-4. **Track reach growth against spend growth.**
-5. **Hold each new level for 10 to 14 days.**
+**Step 1.** Prepare 6 to 10 new ads before you start.
 
-**What to do with the results:**
+**Expected result:** Fresh ads are ready to add as frequency rises.
 
-- If spend went up much faster than reach, add new ads or leave fewer people out (loosen exclusions).
-- If MER did not settle at the new level, go back a step and find out why.
-- A failed test still teaches you something: it shows you the next thing holding you back.
+**Step 2.** Write down the most you are willing to lose.
+
+**Expected result:** You have a dollar limit that ends the challenge.
+
+**Step 3.** Raise budgets 10 to 20% a day and track reach growth against spend growth.
+
+**Expected result:** You can see whether new spend is finding new people.
+
+**Step 4.** Hold each new level for 10 to 14 days.
+
+**Expected result:** MER has time to settle at each level.
+
+**Step 5.** Read the result: if spend grew much faster than reach, add new ads or loosen exclusions; if MER did not settle, go back a step and find out why.
+
+**Expected result:** You have a clear next action, whether the challenge worked or not.
+
+<!-- do:growth -->
 
 ## Lesson 7.11: Attribution settings
 <!-- stage:attract -->
 
-Attribution is how a platform decides which ad gets credit for a sale. Meta's default (for example, 7 days after a click and 1 day after a view) is not the full truth.
+**Why this matters:** Attribution is how a platform decides which ad gets credit for a sale. Meta's default (for example 7 days after a click and 1 day after a view) is not the full truth, so you need a cross-check.
 
-1. Meta offers attribution options that try to count only the sales the ad truly caused (incremental sales). Holdout tests do the same: you hide ads from a group of people and compare.
-2. Always check against your real sales in Shopify and your MER.
+**Step 1.** In Ads Manager click **Columns > Compare attribution settings** and look at the incremental option where it is available (it tries to count only sales the ad truly caused).
 
-See Module 20, Lesson 20.9 for how to run a holdout test.
+**Expected result:** You can see how much of Meta's reported sales are likely extra sales.
+
+**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify and with your MER on the Dashboard.
+
+**Expected result:** You trust the store's numbers first and Meta's second.
+
+<!-- do:growth -->
+
+**Step 3.** When spend is big enough, run a holdout test (hide ads from a group and compare), as in Lesson 20.9.
+
+**Expected result:** You have a measured answer to how many sales ads really cause.
 
 ## Lesson 7.12: Troubleshooting
 <!-- stage:attract -->
+
+**Why this matters:** Meta throws up a handful of common problems, from ads that will not spend to strange labels. Each has a known fix.
+
+**Step 1.** Find your problem in the table below.
+
+**Expected result:** You have the matching fix.
+
+**Step 2.** Apply the fix and note it in your decision log with the date.
+
+**Expected result:** The problem is fixed, and you can find what you did if it comes back.
+
+### Good to know
 
 | Problem | What to check |
 | --- | --- |

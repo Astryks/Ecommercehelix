@@ -36,28 +36,64 @@
 ## Lesson 1.1: Why revenue is the wrong scoreboard
 <!-- stage:grow -->
 
-Revenue is all the money customers paid you. It feels good, but it does not tell you what you kept.
+**Why this matters:** Revenue (all the money customers paid you) feels like success, but it does not tell you what you kept. A $5,000 day can still lose money once ads, product cost and shipping are paid, and ad platforms each claim the same sale, so their totals add up to more sales than you really had. This lesson gets you a real starting point so you can see the gap for yourself.
 
-- A $5,000 day can still lose money. Ads, product cost and shipping can eat all of it.
-- The numbers inside ad platforms are even less reliable. Meta, Google and TikTok each take credit for the same sale. Add up what each one claims and you often get more sales than you really had.
+**Step 1.** Open your store admin (Shopify: **Analytics > Reports > Total sales over time**), set the date range to last month and write down **Net sales** (sales after discounts and refunds).
 
-The number that matters is **contribution profit**. It means: sales, minus the costs that come with each order, minus ad spend. Then take away a daily share of your fixed bills (rent, software, wages). What is left is a good estimate of **net profit**: what the business really earned that day.
+**Expected result:** You have one dollar figure for last month's net sales written in a note or on paper.
 
-**Do this now**
+**Watch out:** Use the figure without GST or VAT. That tax belongs to the government, not to you.
 
-1. Write down last month's revenue.
-2. Write down last month's total ad spend.
-3. Write down how much profit you think you made.
-4. Keep this guess. At the end of this module you will compare it with the real number.
+**Step 2.** Add up last month's ad spend from every platform (Meta: **Ads Manager > Campaigns**, date range last month, total in the **Amount spent** column; Google Ads: **Campaigns > Cost**) and write down the total.
+
+**Expected result:** You have one total ad spend figure for last month.
+
+**Step 3.** Write down how much profit you think you made last month, as a single dollar number, before you do any maths.
+
+**Expected result:** A guessed profit figure sits next to your sales and ad spend.
+
+**Step 4.** Save the three numbers where you will find them again (a note on your phone, or the notes field in Helix Settings).
+
+**Expected result:** You can find the note later. At the end of this module you compare your guess with the real contribution profit (sales minus order costs minus ads) and net profit (what is left after fixed bills too).
 
 ## Lesson 1.2: Your cost drivers
 <!-- stage:grow -->
 
-Cost drivers are your average costs. They turn sales into profit. You set them up once and check them every 3 months.
+**Why this matters:** Cost drivers are your average costs, and they are what turn sales into profit. Get them roughly right once and every profit number in Helix becomes trustworthy. You set them up in about 30 minutes and check them every 3 months.
 
-There are two kinds of cost.
+**Step 1.** Work out your **product cost %**: in Shopify go to **Analytics > Reports > Gross profit by product** (it needs "Cost per item" filled in on each product), or take your top 10 sellers and divide the landed unit cost (price paid plus freight and duty) by the selling price.
 
-### Variable costs: they grow with every order
+**Expected result:** You have one percentage, usually somewhere between 20% and 40% for most online stores.
+
+**Watch out:** Use prices without GST or VAT, and include freight and duty, not just the factory price.
+
+**Step 2.** Work out your **shipping and fulfilment cost per order**: take last month's carrier or warehouse (3PL, a company that stores and ships for you) invoices and divide by the number of orders shipped.
+
+**Expected result:** You have a dollar amount per order, for example $9.
+
+**Step 3.** Add **packaging per order** (boxes, mailers, tape, inserts) by dividing last month's packaging spend by orders.
+
+**Expected result:** You have a second per-order figure, often $0.50 to $2.
+
+**Step 4.** Find your **payment fee %**: in Shopify go to **Settings > Payments** and read the card rate, or divide last month's total fees (from your payouts page) by sales.
+
+**Expected result:** You have a percentage, usually 1.75% to 3.5% depending on card mix and buy now pay later use.
+
+**Step 5.** List every **fixed cost** for a month: staff and contractors, a fair wage for yourself, software and apps, rent, insurance, accounting, loan interest and fixed marketing that is not ad spend (photo shoots, free product for creators, agency fees).
+
+**Expected result:** You have one monthly total for fixed costs.
+
+**Watch out:** Include your own wage even if you do not pay it yet. Leaving it out makes the business look healthier than it is.
+
+**Step 6.** In Helix open **Your numbers > Targets and fixed costs**, type the monthly fixed cost total into **Fixed costs per month** and click **Save targets**.
+
+**Expected result:** The Dashboard's net profit now takes off a daily share of your fixed costs (monthly total divided by 30.4).
+
+<!-- do:numbers -->
+
+### Good to know
+
+**Variable costs: they grow with every order:**
 
 | Cost | How to work it out |
 | --- | --- |
@@ -67,15 +103,7 @@ There are two kinds of cost.
 | Payment fees | What Shopify Payments, Stripe or PayPal charge. If you do not know, use 2.6%. Your payment reports show the real figure. |
 | Other per-order costs | Marketplace commission, a free gift with each order, shipping protection you pay for, buy now pay later fees. |
 
-### Fixed costs: they stay the same no matter how many orders you get
-
-- Staff and contractors.
-- Your own pay.
-- Software and apps.
-- Rent, insurance, accounting, loan interest.
-- **Fixed marketing** that is not ad spend: photo shoots, free product sent to creators, agency fees.
-
-### Common questions
+**Common questions**
 
 1. **Is my own wage a cost?** Yes. Put a fair wage for yourself into fixed costs, even if you do not pay it yet. If you leave it out, the business will look healthier than it is.
 2. **Do I include GST or VAT?** No. Use sales and costs without the tax you collect and pass on to the government.
@@ -91,16 +119,31 @@ There are two kinds of cost.
 ## Lesson 1.3: The daily scorecard
 <!-- stage:grow -->
 
-The scorecard is a short daily record of your key numbers. In Helix it lives in **Your numbers**, and the quick version is the profit box on **Today**.
+**Why this matters:** The scorecard is a short daily record of the numbers that decide profit. In Helix it lives in **Your numbers**, and the quick version is the profit box on **Today**. You type in a handful of numbers and Helix works out the rest, so you never do the maths yourself.
 
-**Each morning, record these (or let Helix fill them in):**
+**Step 1.** Each morning open Shopify **Analytics** with the date set to **Yesterday** and note **Gross sales**, **Orders**, **Discounts**, **Returns** and **Sessions** (a session is one visit to your store).
 
-1. Revenue (sales).
-2. Orders.
-3. Units sold.
-4. Sessions (visits to your store).
-5. Ad spend for each channel (Meta, Google, others).
-6. Discounts and refunds.
+**Expected result:** You have five numbers for yesterday, taking under a minute.
+
+**Step 2.** Note yesterday's ad spend for each channel (Meta **Amount spent**, Google **Cost**, TikTok **Cost**), or skip Meta if it is connected in Helix, because Helix syncs it every morning.
+
+**Expected result:** You have one spend figure per channel you advertise on.
+
+<!-- do:meta-connect -->
+
+**Step 3.** In Helix open **Today**, type yesterday's sales, orders and ad spend into **Update yesterday** and click **Save and show my profit**, or use **Your numbers > Enter a day** for the full set.
+
+**Expected result:** The profit box shows yesterday's profit with a plain-English line, and the Dashboard updates.
+
+<!-- do:numbers -->
+
+**Step 4.** Fill in the past 1 to 2 months in one go: download the template in **Your numbers > Import CSV**, paste one row per day and click **Import**.
+
+**Expected result:** The Dashboard shows trends from day one instead of a single day.
+
+**Watch out:** Dates must be in YYYY-MM-DD format, for example 2026-10-05, or the row is skipped.
+
+### Good to know
 
 **Helix then works out the rest for you:**
 
@@ -118,8 +161,6 @@ The scorecard is a short daily record of your key numbers. In Helix it lives in 
 | Cost per visit | What ads paid for each visit | Ad spend ÷ sessions |
 | Blended CAC | What ads paid for each new customer | Ad spend ÷ orders from new customers |
 
-**Fill in the past too.** Add your numbers for the last 1 to 2 months. Then you can see trends from day one. In Helix you can upload a CSV file to do this in one go.
-
 <!-- guide:shopify-1-yesterdays-numbers -->
 ![Find yesterday's numbers in Shopify](../../public/guides/shopify-1-yesterdays-numbers.svg)
 
@@ -135,7 +176,27 @@ The scorecard is a short daily record of your key numbers. In Helix it lives in 
 ## Lesson 1.4: Healthy ranges
 <!-- stage:grow -->
 
-Use this table to see if each number is fine or needs attention.
+**Why this matters:** A number on its own means little until you know whether it is healthy. These ranges tell you at a glance what is fine, what to watch and what needs action. Helix colours each one green, amber or red for you.
+
+**Step 1.** Open **Dashboard** in Helix and pick **Month** so you are looking at the last 30 days.
+
+**Expected result:** You see metric cards with a coloured dot on each.
+
+<!-- do:growth -->
+
+**Step 2.** Compare your net profit % (net profit divided by net sales) with the table below: 10% or more is healthy, 0 to 10% is thin, below 0% means you are losing money.
+
+**Expected result:** You know which band your profit sits in.
+
+**Step 3.** Compare your MER (marketing efficiency ratio: all ad spend divided by net sales) with your target MER from Lesson 1.5, and your VCR (variable cost ratio: product, shipping, packaging and fees divided by net sales) with the table.
+
+**Expected result:** You know whether ads or order costs are the bigger squeeze.
+
+**Step 4.** Write down the one number furthest outside its healthy range.
+
+**Expected result:** You have a single number to work on first, which Module 2 shows you how to fix.
+
+### Good to know
 
 | Number | Healthy | Warning sign |
 | --- | --- | --- |
@@ -147,51 +208,56 @@ Use this table to see if each number is fine or needs attention.
 ## Lesson 1.5: Your target MER and break-even numbers
 <!-- stage:grow -->
 
-These numbers tell you how much you can spend on ads and still make money. They are the "line in the sand" for every ad decision.
+**Why this matters:** These numbers tell you how much you can spend on ads and still make money. They are the line in the sand for every ad decision, and once Helix knows your costs it calculates them for you. Doing it by hand once helps you trust them.
 
-**Step 1. Work out your target MER (the share of sales you can spend on ads).**
+**Step 1.** Calculate your target MER: 100% minus VCR minus FCR (fixed cost ratio: fixed costs divided by net sales) minus the profit % you want. Example: 100 - 40 - 15 - 15 = 30%.
 
-Target MER % = 100% - VCR - FCR - the profit % you want.
+**Expected result:** You have a target MER, for example 30%, meaning you can spend $30 on ads for every $100 of sales, averaged over new and returning customers.
 
-Example: VCR 40%, FCR 15%, and you want 15% profit. 100 - 40 - 15 - 15 = 30%. So on a $100 order you can spend $30 on ads, averaged across all customers (new and returning).
+**Step 2.** Type that figure into **Your numbers > Targets and fixed costs > Target MER (%)** and click **Save targets**.
 
-**Step 2. Work out break-even ROAS for each ad channel.**
+**Expected result:** Helix rates your MER green at or under this target on every screen.
 
-ROAS means return on ad spend: dollars of sales for each $1 of ads. Break-even ROAS is the point where a sale makes $0.
+<!-- do:numbers -->
 
-Break-even ROAS = 1 ÷ (1 - VCR).
+**Step 3.** Calculate break-even ROAS (return on ad spend: sales from ads divided by ad spend) as 1 divided by (1 minus VCR). With VCR at 40%, 1 / 0.6 = 1.67.
 
-With VCR 40%: 1 ÷ 0.6 = 1.67. If a channel brings in less than $1.67 of sales per $1 of ads, each sale loses money, even before fixed costs.
+**Expected result:** You know that any channel bringing back less than $1.67 for each $1 of ads loses money on every sale, before fixed costs.
 
-**Step 3. Work out break-even CPA.**
+**Step 4.** Calculate break-even CPA (cost per acquisition: ad spend for one sale) as AOV (average order value) times (1 minus VCR). With AOV $100 and VCR 40%: $60.
 
-CPA means cost per acquisition: the ad money it took to get one sale. Break-even CPA is the most you can pay for one sale before it loses money.
+**Expected result:** You know the most you can pay for one sale before it loses money.
 
-Break-even CPA = AOV x (1 - VCR).
+**Step 5.** Calculate target CPA as AOV times target MER. In the example: $100 x 30% = $30.
 
-With AOV $100 and VCR 40%: 100 x 0.6 = $60.
+**Expected result:** You have a three-zone rule: cost per sale under $30 is good, $30 to $60 means watch it, above $60 means the ad loses money on every sale.
 
-**Step 4. Work out target CPA.**
-
-Target CPA is the cost per sale you aim for so each sale leaves you profit.
-
-Target CPA = AOV x target MER. In the example: $100 x 30% = $30.
-
-**Decision rule:** cost per sale under target CPA is good. Between target and break-even, watch it. Above break-even, the ad loses money on every sale.
+**Watch out:** Helix shows break-even ROAS and CPA on the Dashboard from your real numbers. If your hand maths differs a lot, check your cost drivers in Lesson 1.2.
 
 ## Lesson 1.6: A 2-minute morning routine
 <!-- stage:grow -->
 
-Do this every morning, before anything else.
+**Why this matters:** Two minutes each morning stops small problems from becoming expensive ones. You read one number, choose how hard to push today, and check nothing is broken. Over weeks, the decision log becomes your best teacher.
 
-1. **Read yesterday's profit.** Open Today in Helix (or your scorecard) and read the profit estimate.
-2. **Pick today's stance.** Compare your MER for the last 3 days and for the month so far with your target MER. Then pick one:
-   - **Push:** MER is under target and profit is good. You can spend more on ads.
-   - **Careful push:** MER is close to target. Spend a little more, and watch closely.
-   - **Hold:** MER is at target. Keep spending the same.
-   - **Defend:** MER is over target. Cut spend on the weakest ads and fix the cause.
-3. **Check for emergencies.** Is the site up? Does checkout work? Is tracking still counting sales? Is a best seller out of stock?
-4. **Write one line in your decision log.** What you decided today and why. Looking back at this log is how you learn.
+**Step 1.** Open **Today** in Helix and read the **Profit yesterday** number and the sentence under it.
+
+**Expected result:** You know if yesterday made money and how it compares with your 7-day average.
+
+<!-- do:numbers -->
+
+**Step 2.** Compare your MER for the last 3 days and month to date with your target MER, then pick one stance: **Push** (under target, profit good: spend more), **Careful push** (close to target: spend a little more and watch), **Hold** (at target: keep spend the same) or **Defend** (over target: cut the weakest ads and fix the cause).
+
+**Expected result:** You have one word for today's stance.
+
+**Step 3.** Check for emergencies: load your store on your phone, add a product to cart and reach checkout, confirm yesterday's sales show in Meta Events Manager, and check your best seller is in stock.
+
+**Expected result:** Site, checkout, tracking and stock are all confirmed working, or you have found the one thing to fix first.
+
+**Watch out:** A sudden drop in reported sales with normal orders in Shopify usually means tracking broke, not that ads stopped working.
+
+**Step 4.** Write one line in your decision log: what you decided and why (for example "Hold: MER 31% vs 30% target, waiting on new ads").
+
+**Expected result:** Your log has a dated entry you can look back on next week.
 
 ## Example
 

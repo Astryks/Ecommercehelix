@@ -35,159 +35,282 @@
 ## Lesson 10.1: Sign-up forms
 <!-- stage:convert -->
 
-A sign-up form (often a pop-up) asks visitors for their email or phone number.
+**Why this matters:** A sign-up form (often a pop-up) asks visitors for their email or phone number, and it feeds every flow and campaign you send. A good form signs up 3 to 10 of every 100 visitors. A weak one wastes your traffic.
 
-1. **Choose a reason to sign up (incentive):**
-   - Dollars off ($10 off) if your orders are big.
-   - Percent off (10% off) if your orders are small.
-   - A free gift.
-   - Early access to new products.
-   - Entry into a competition.
-2. **Use small steps (micro-commitment).** First ask one easy one-click question ("What are you shopping for?"). Then ask for the email. Then the phone number. People who answer the first question are more likely to finish.
-3. **Game-style forms** (like spin to win) can get more sign-ups. Watch the cost of the discounts and the quality of the list.
-4. **Location-based forms** show offers or text sign-ups that suit each region.
-5. **When to show it:** after a few seconds or when people scroll; when they move to leave on a computer (exit intent). Never show it to people who already subscribed.
-6. **Test one thing at a time.** Aim for more than 3 sign-ups per 100 visitors. With a strong offer, 6 to 10 is possible.
+**Step 1.** Pick one incentive: dollars off (for example $10 off) if your orders are big, percent off (10% off) if they are small, a free gift, early access or a competition entry.
+
+**Expected result:** Your form has one clear reason to sign up.
+
+**Step 2.** In your email app (Klaviyo, Omnisend or Shopify Email) build a multi-step form: first a one-click question ("What are you shopping for?"), then email, then phone number.
+
+**Expected result:** The form asks an easy question first, which raises completion (micro-commitment).
+
+**Step 3.** Set the trigger to show after about 5 to 8 seconds or 30% scroll, plus exit intent on desktop (when the mouse moves to leave), and hide it from existing subscribers.
+
+**Expected result:** The form shows at the right moment and never to people already on the list.
+
+**Watch out:** Game-style forms (spin to win) can lift sign-ups, but watch the cost of discounts and the quality of the list.
+
+**Step 4.** Add location rules if you sell to several regions, so each region sees offers and text sign-ups that suit it.
+
+**Expected result:** Overseas visitors see a relevant offer.
+
+**Step 5.** After 2 weeks, check sign-up rate in the form's report and test one change at a time.
+
+**Expected result:** You are above 3 sign-ups per 100 visitors, or have a test running to get there. With a strong offer, 6 to 10 is possible.
 
 ## Lesson 10.2: The five core flows and extras
 <!-- stage:convert -->
 
-A flow is a series of emails or texts that sends itself when someone does something. Set up these five first. Timings are in [SOP 13](../sops/13-email-sms-flows.md).
+**Why this matters:** A flow is a series of emails or texts that sends itself when someone does something. Five core flows earn money every day without you lifting a finger. Timings are in [SOP 13](../sops/13-email-sms-flows.md).
 
-1. **Welcome:** someone joins your list.
-2. **Browse abandonment:** someone looked at products but did not add to cart.
-3. **Cart abandonment:** someone added to cart but did not start checkout.
-4. **Checkout abandonment:** someone started checkout but did not pay.
-5. **Post-purchase:** someone just bought.
+**Step 1.** Set up the **Welcome** flow, triggered when someone joins your list.
 
-**Then add these:** win-back (people who stopped buying), back in stock, price drop, replenishment (time to reorder), VIP (best customers), birthday, sunset (removing people who never open), review request, and a cross-sell after the first purchase.
+**Expected result:** New subscribers get your first email within minutes.
+
+<!-- do:flow-welcome -->
+
+**Step 2.** Set up **Browse abandonment**, triggered when someone views a product but does not add to cart.
+
+**Expected result:** Browsers get a reminder of what they looked at.
+
+<!-- do:flow-browse-abandonment -->
+
+**Step 3.** Set up **Cart abandonment**, triggered when someone adds to cart but does not start checkout.
+
+**Expected result:** Cart abandoners get a reminder within a few hours.
+
+<!-- do:flow-abandoned-cart -->
+
+**Step 4.** Set up **Checkout abandonment**, triggered when someone starts checkout but does not pay.
+
+**Expected result:** The highest-intent shoppers get a reminder within about an hour.
+
+<!-- do:flow-abandoned-checkout -->
+
+**Step 5.** Set up **Post-purchase**, triggered when someone buys.
+
+**Expected result:** New buyers get thanks, how-to tips and a cross-sell.
+
+<!-- do:flow-post-purchase -->
+
+**Step 6.** Then add the extras one at a time: win-back, back in stock, price drop, replenishment, VIP, birthday, sunset (removing people who never open), review request and a cross-sell after the first purchase.
+
+**Expected result:** Your flow list grows month by month.
+
+<!-- do:flow-win-back -->
 
 ## Lesson 10.3: Writing emails that get clicks
 <!-- stage:convert -->
 
-1. Mix plain-text emails from the founder with designed emails.
-2. Plain-text style emails can still include images.
-3. Use countdown timers only for real deadlines. When the time is up, show a message, not zeros.
-4. Use what people told you in your forms to personalise (for example product interest, skin type or size). This is called zero-party data.
-5. Have one main button (call to action) per email.
+**Why this matters:** Emails that get clicks feel personal and have one clear job. Mixing plain founder emails with designed ones keeps your list interested.
+
+**Step 1.** Alternate plain-text style emails from the founder (images are fine) with designed emails.
+
+**Expected result:** Your next four campaigns include at least one founder-style email.
+
+**Step 2.** Use what subscribers told you in forms (zero-party data, such as product interest, skin type or size) to personalise the content.
+
+**Expected result:** Different subscribers see different product picks.
+
+**Step 3.** Give each email one main button (call to action).
+
+**Expected result:** Every email has one obvious next step.
+
+**Watch out:** Use countdown timers only for real deadlines, and show a message (not zeros) when time is up.
 
 ## Lesson 10.4: Segments
 <!-- stage:grow -->
 
-A segment is a group of people on your list who share something. Send different emails to different groups.
+**Why this matters:** A segment is a group of people on your list who share something. Sending to the right segment keeps emails out of spam folders and makes each message more relevant.
 
-**Useful segments:**
+**Step 1.** In your email app, create segments: engaged in the last 30, 60 and 90 days, buyers, repeat buyers and VIPs (your best customers).
 
-1. Engaged in the last 30, 60 or 90 days (opened or clicked).
-2. Buyers.
-3. Repeat buyers.
-4. VIPs (your best customers).
-5. Window shoppers: looked recently but never bought.
-6. Lapsed: used to buy, but stopped.
-7. By product interest.
+**Expected result:** The segments show live counts.
 
-**Decision rule:** send most of your campaign emails to engaged segments. It keeps your emails out of spam folders.
+**Step 2.** Add window shoppers (looked recently, never bought), lapsed buyers (used to buy, stopped) and product-interest segments.
+
+**Expected result:** You can target each stage of the customer journey.
+
+**Step 3.** Send most campaign emails to the engaged 60 or 90 day segment.
+
+**Expected result:** Open rates rise and spam complaints fall.
 
 ## Lesson 10.5: Campaign cadence and ideas
 <!-- stage:grow -->
 
-A campaign email is a one-off email to your list (like a newsletter). Cadence means how often you send.
+**Why this matters:** A campaign email is a one-off email to your list, like a newsletter, and cadence means how often you send. Building up slowly keeps your list healthy while you learn what they like.
 
-1. **Build up slowly:** start with 2 a month, then weekly, then 2 to 4 a week.
-2. **Ideas to send:** new arrivals, how-to tips, customer stories, behind the scenes, notes from the founder, gift guides, myth busting, customer photos and videos, seasonal moments, limited bundles, and short flash sales (keep these rare).
+**Step 1.** Start at 2 campaign emails a month, move to weekly after a month, then 2 to 4 a week if engagement holds.
+
+**Expected result:** You have a written send schedule.
+
+<!-- do:calendar -->
+
+**Step 2.** Fill the schedule from this list: new arrivals, how-to tips, customer stories, behind the scenes, founder notes, gift guides, myth busting, customer photos, seasonal moments, limited bundles and rare flash sales.
+
+**Expected result:** You have a month of email ideas.
 
 ## Lesson 10.6: Reviewing performance
 <!-- stage:convert -->
 
-Check these numbers each month.
+**Why this matters:** Monthly reviews show where emails leak money. Fixing the weakest step first gives the biggest gain for the least work.
+
+**Step 1.** Open your email app's reports and record the flow and campaign numbers shown in the table below for last month.
+
+**Expected result:** You have one line of numbers for flows and one for campaigns.
+
+**Step 2.** Find the weakest step: low opens means work on the subject line, low clicks means work on content and the button, clicks but few orders means work on the landing page.
+
+**Expected result:** You have one fix to make this month.
+
+### Good to know
 
 | | Open rate | Click rate | Other |
 | --- | --- | --- | --- |
 | Flows | Above 35% | Above 1% | Revenue per recipient going up |
 | Campaigns | About 35 to 40% | About 1.3% | Unsubscribes under 0.3% |
 
-**Fix the weakest step first:**
-
-1. Low opens: work on the subject line.
-2. Low clicks: work on the content and the button.
-3. Clicks but few orders: work on the page they land on.
-
 ## Lesson 10.7: A/B testing framework
 <!-- stage:convert -->
 
-1. Write down your guess (hypothesis). For example "a question in the subject line gets more opens".
-2. Change one thing only: the subject line, send time, offer or layout.
-3. Split your list into two groups.
-4. Make sure each group is big enough (at least a few thousand people if you can).
-5. Write down the result.
-6. Use the winner from then on.
+**Why this matters:** Email A/B tests show what your list responds to. One change, two big enough groups and a written guess make results trustworthy.
+
+**Step 1.** Write a hypothesis (your guess), for example "a question in the subject line gets more opens".
+
+**Expected result:** The test has a written guess.
+
+**Step 2.** Change one thing only (subject line, send time, offer or layout) and split the list into two groups of at least a few thousand each if you can.
+
+**Expected result:** The test is fair and big enough to read.
+
+**Step 3.** Record the result and use the winner from then on.
+
+**Expected result:** Your test log grows and your emails improve each month.
 
 ## Lesson 10.8: Deliverability
 <!-- stage:convert -->
 
-Deliverability means your emails reach the inbox, not the spam folder.
+**Why this matters:** Deliverability means your emails reach the inbox, not spam. Without it, the best email in the world earns nothing. Most of it is one-time setup.
 
-1. **Authenticate your domain.** Set up SPF, DKIM and DMARC. These are settings that prove your emails really come from you. Your email platform has a step-by-step guide.
-2. **Warm up slowly** on a new account. Each send should go to no more than about 1.5 times as many people as the last one. Send to engaged people first.
-3. **Remove bad addresses,** like typos in the domain (gmial.com).
-4. **Stop emailing people who never open** (a sunset flow).
-5. **Watch for bounce spikes** with one email provider (for example only Outlook addresses bouncing).
-6. **Avoid spammy formatting** in sale emails: all caps, lots of exclamation marks, one big image with no text.
+**Step 1.** In your email app's domain settings, follow the guide to add SPF, DKIM and DMARC records (settings that prove your emails really come from you) at your domain host.
+
+**Expected result:** The email app shows your sending domain as verified or authenticated.
+
+**Step 2.** On a new account, warm up slowly: each send goes to no more than about 1.5 times as many people as the last, engaged people first.
+
+**Expected result:** Sends grow steadily without bounce or spam spikes.
+
+**Step 3.** Remove bad addresses such as domain typos (gmial.com) and set up a sunset flow for people who never open.
+
+**Expected result:** Your list holds only reachable, interested people.
+
+**Step 4.** Watch bounce rates by email provider each week, and avoid all caps, lots of exclamation marks and single-image emails.
+
+**Expected result:** You catch problems with one provider (for example only Outlook bouncing) early.
 
 ## Lesson 10.9: Platform costs
 <!-- stage:grow -->
 
-Email platforms often charge by the number of people (profiles) on your list.
+**Why this matters:** Email platforms often charge by the number of people (profiles) on your list. Cleaning the list saves money and improves deliverability at the same time.
 
-1. Remove or suppress people who have not opened in a long time.
-2. Archive old lists.
-3. If the cost per profile is more than they are worth to you, compare other platforms.
+**Step 1.** Suppress or remove people who have not opened or clicked in 180 days.
+
+**Expected result:** Your billable profile count drops.
+
+**Step 2.** Archive old lists you no longer send to.
+
+**Expected result:** Only active lists remain.
+
+**Step 3.** If cost per profile is more than a profile is worth to you, compare two other platforms.
+
+**Expected result:** You know whether to stay or switch.
 
 ## Lesson 10.10: SMS
 <!-- stage:convert -->
 
-Text messages get read fast but cost more than email. Use them for big moments only.
+**Why this matters:** Text messages get read fast but cost more than email. Used for big moments only, they earn well; used every day, they drive unsubscribes.
 
-1. **Send a text where an email did not work:** in the welcome flow and the checkout reminder.
-2. **Use them for sale launches and last chance.**
-3. **Register your sender name** where the law requires it (for example in Australia).
-4. **Respect quiet hours.** No texts late at night.
-5. **Keep it short,** with one link.
+**Step 1.** Add a text step in the welcome flow and checkout reminder, for people who did not act on the email.
+
+**Expected result:** SMS only goes out where email did not work.
+
+<!-- do:flow-abandoned-checkout -->
+
+**Step 2.** Use texts for sale launches and last chance messages.
+
+**Expected result:** Your sale plan has two SMS sends.
+
+**Step 3.** Register your sender name where the law requires it (for example in Australia), respect quiet hours and keep each text short with one link.
+
+**Expected result:** Texts arrive from your registered name, at sensible times, with one clear link.
 
 ## Lesson 10.11: WhatsApp and chat commerce
 <!-- stage:convert -->
 
-WhatsApp and similar chat apps work well where your customers already use them.
+**Why this matters:** WhatsApp and similar chat apps work well where your customers already use them, especially for VIPs and expensive products people want to ask about first.
 
-1. Use them for VIPs, launches and selling through conversation.
-2. Only message people who opted in.
-3. Use approved templates for marketing messages.
-4. Set up quick replies for common questions.
-5. Selling through chat works well for expensive products people want to ask about first.
+**Step 1.** Set up WhatsApp Business and only message people who opted in.
+
+**Expected result:** You have an opted-in WhatsApp list.
+
+**Step 2.** Get templates approved for marketing messages and set up quick replies for common questions.
+
+**Expected result:** You can send approved promotions and answer common questions in one tap.
+
+**Step 3.** Use chat for VIPs, launches and selling through conversation.
+
+**Expected result:** High-value customers can buy through a conversation.
 
 ## Lesson 10.12: Loyalty
 <!-- stage:grow -->
 
-A loyalty program rewards people who buy again.
+**Why this matters:** A loyalty program rewards people who buy again. It only pays off when enough customers already come back, and it must be measured by repeat purchases, not points.
 
-1. **Decision rule:** only start one when more than about 15 to 20% of customers already buy again.
-2. **Choose rewards your margin can afford:** points or cashback.
-3. **Add VIP levels** with early access.
-4. **Add referral rewards** (a reward when a customer brings a friend).
-5. **Measure the change in repeat purchase rate,** not how many points you gave out.
+**Step 1.** Check your repeat purchase rate in Shopify **Analytics > Reports > Customers over time**. Start a loyalty program only if more than about 15 to 20% of customers already buy again.
+
+**Expected result:** You know whether loyalty is worth it yet.
+
+**Step 2.** Choose rewards your margin can afford (points or cashback) and add VIP levels with early access.
+
+**Expected result:** The program is set up with costed rewards.
+
+<!-- do:flow-vip -->
+
+**Step 3.** Add referral rewards for customers who bring a friend.
+
+**Expected result:** Customers can share a referral link.
+
+**Step 4.** After 90 days, measure the change in repeat purchase rate.
+
+**Expected result:** You know whether the program changed behaviour.
 
 ## Lesson 10.13: Sale email and SMS schedule
 <!-- stage:convert -->
 
-Plan emails and texts for every big sale in this order.
+**Why this matters:** Big sales live or die on email and SMS. A fixed schedule from tease to thank-you makes sure every phase gets a message, and nobody gets spammed.
 
-1. **Before the sale:** build excitement. Get sign-ups and send teasers.
-2. **Launch:** send an email and a text.
-3. **Middle of the sale:** give a new reason to buy (a new product, a bundle, a gift).
-4. **Last chance:** send an email and a text.
-5. **After the sale:** look after new buyers. Say thank you, show how to use the product, share results, and offer a small time-limited deal.
+**Step 1.** Before the sale, run sign-ups and send teasers.
 
-**Also:** switch your abandonment flows to sale versions at a set time, and switch them back afterwards.
+**Expected result:** Your early-access list is growing.
+
+<!-- do:bfcm -->
+
+**Step 2.** On launch, send one email and one text.
+
+**Expected result:** Your list hears about the sale first.
+
+**Step 3.** Mid-sale, send a new reason to buy (a new product, a bundle or a gift).
+
+**Expected result:** The middle of the sale has fresh news.
+
+**Step 4.** On the last day, send a last chance email and text.
+
+**Expected result:** Final-day urgency reaches everyone.
+
+**Step 5.** After the sale, send new buyers thanks, how-to tips, results and a small time-limited deal, and switch your abandonment flows back from sale versions.
+
+**Expected result:** New buyers are looked after and flows are back to normal.
 
 ## Self-check
 

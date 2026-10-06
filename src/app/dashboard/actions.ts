@@ -11,7 +11,9 @@ import { toTaxMode } from "@/lib/tax";
 import { BIZ_TASK_ID } from "@/lib/business";
 import { toTrack } from "@/lib/tracks";
 import { isoDay } from "@/lib/dates";
-import { findActionable } from "@/lib/actionable";
+import { findActionable, type Actionable } from "@/lib/actionable";
+import { lessonAction, LESSON_TASK_ID, parseLessonTaskId } from "@/lib/lesson-actions";
+import { findLesson, plain } from "@/lib/learn";
 import { PLAN_RANK } from "@/lib/plans";
 import { NUM_FIELDS, parseCsv, type DayInput } from "@/lib/scorecard";
 import { signalsFor } from "@/lib/signals";
@@ -25,7 +27,7 @@ const VALID_ID = /^(day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build
 export async function markDone(form: FormData) {
   const u = await requireUser();
   const taskId = String(form.get("taskId"));
-  if (VALID_ID.test(taskId) || SEASON_TASK_ID.test(taskId) || BIZ_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
+  if (VALID_ID.test(taskId) || LESSON_TASK_ID.test(taskId) || SEASON_TASK_ID.test(taskId) || BIZ_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
   revalidatePath("/dashboard", "layout");
 }
 
@@ -48,7 +50,8 @@ export async function addPrepPlan(form: FormData) {
 export async function doItForMe(form: FormData) {
   const u = await requireUser();
   const { signals } = await signalsFor(u.id);
-  const item = findActionable(String(form.get("taskId")), signals);
+  const taskId = String(form.get("taskId"));
+  const item = LESSON_TASK_ID.test(taskId) ? lessonActionable(taskId, signals) : findActionable(taskId, signals);
   if (!item) return;
   const acct = await getAccount(u.id);
   if (PLAN_RANK[acct.plan] < PLAN_RANK[item.tier]) redirect("/dashboard/billing?need=" + item.tier);
@@ -69,6 +72,34 @@ export async function doItForMe(form: FormData) {
   await createApproval(u.id, { taskId: item.id, title: item.title, detail, estAiCost: item.estAiCost });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/approvals");
+}
+
+/**
+ * "Do it for me" on a Learn lesson or step. Steps tagged with a Meta draft or an
+ * email flow reuse those actions; tool steps open the tool; anything else is
+ * filed as a done-for-you request in "Waiting for your OK".
+ */
+function lessonActionable(taskId: string, signals: Parameters<typeof findActionable>[1]): Actionable | null {
+  const t = parseLessonTaskId(taskId);
+  const lesson = t && findLesson(t.ref);
+  if (!t || !lesson) return null;
+  const step = t.step ? lesson.steps.find((s) => s.n === t.step) : null;
+  if (t.step && !step) return null;
+  const action = lessonAction(step ? step.action : lesson.doIt);
+  if (action.kind === "link") redirect(action.href);
+  if (action.kind === "delegate") return findActionable(action.actionableId, signals);
+  const where = `Lesson ${lesson.ref}: ${lesson.title}`;
+  const steps = step ? [step] : lesson.steps;
+  return {
+    id: taskId,
+    title: step ? `Done for you: ${where}, step ${step.n}` : `Done for you: ${where}`,
+    detail:
+      `You asked Helix to do this for you. Here is the plan. Nothing changes in your accounts until you approve, and we will tell you if we need access or a file from you.\n\n` +
+      steps.map((s) => `Step ${s.n}. ${plain(s.instruction)}\n   Done when: ${plain(s.expected)}`).join("\n") +
+      `\n\nWhy: ${plain(lesson.why)}`,
+    tier: "starter",
+    estAiCost: 0.02 * steps.length,
+  };
 }
 
 export async function decide(form: FormData) {

@@ -31,43 +31,85 @@
 ## Lesson 15.1: Is there demand?
 <!-- stage:grow -->
 
-Before you expand, check that people in the new country want your products.
+**Why this matters:** Expanding to a country with no demand burns cash on shipping, ads and setup. A quick check of your own data shows where people already want what you sell.
 
-1. Look at your orders and site visits by country.
-2. Check how often people there search for your product type.
-3. See if competitors already sell there.
-4. Check where your social media followers and engagement come from.
+**Step 1.** In Shopify **Analytics > Reports > Sales by billing country** and **Sessions by country**, list your top 5 countries outside home for the last 12 months.
 
-**Decision rule:** expand first to the country that already buys from you.
+**Expected result:** You have a ranked list of countries with orders and visits.
+
+**Step 2.** Check search demand for your product type in each (Google Keyword Planner, set to that country).
+
+**Expected result:** Each country has a monthly search volume.
+
+**Step 3.** Check whether competitors already sell there and where your social followers come from (Instagram **Insights > Audience > Top locations**).
+
+**Expected result:** Each country has a competition and audience note.
+
+**Step 4.** Pick the country that already buys from you most.
+
+**Expected result:** You have one first country to expand to.
 
 ## Lesson 15.2: Recalculate unit economics per country
 <!-- stage:grow -->
 
-Unit economics means what each order earns after its costs. These change in a new country.
+**Why this matters:** Unit economics means what each order earns after its costs, and those costs change in a new country. Shipping, duties, taxes and the exchange rate can turn a profitable product into a loss.
 
-1. Your landed cost changes with shipping, import duties, taxes and the exchange rate.
-2. Make a separate set of cost drivers (see Module 1, Lesson 1.2) for each country.
-3. Include duties and import fees per order.
+**Step 1.** Work out landed cost for the new country: product cost plus shipping there, import duties, taxes and exchange rate effects.
+
+**Expected result:** You have a per-order cost for the new country.
+
+**Step 2.** Make a separate set of cost drivers for that country (as in Lesson 1.2), including duties and import fees per order.
+
+**Expected result:** The new country has its own break-even ROAS and CPA.
+
+<!-- do:numbers -->
 
 ## Lesson 15.3: Pricing
 <!-- stage:grow -->
 
-1. **Set a local price,** not just your price converted. Use the local currency and round to normal local price points (for example 49 euros, not 47.83).
-2. **Decide who pays the duties.** Delivered duty paid (DDP) means you include duties in the price, so there is no surprise bill at the door. It usually sells better.
+**Why this matters:** Local prices in local currency, rounded to normal price points, sell better than converted prices. Deciding who pays duties up front avoids angry customers at the door.
+
+**Step 1.** In Shopify **Settings > Markets > [country] > Products and pricing**, set local prices in local currency, rounded to normal price points (for example 49 euros, not 47.83).
+
+**Expected result:** Shoppers in that country see clean local prices.
+
+**Step 2.** Choose delivered duty paid (DDP: you include duties in the price) in your Markets or shipping app settings.
+
+**Expected result:** Customers pay no surprise bill at delivery, which usually sells better.
 
 ## Lesson 15.4: Product and promotion
 <!-- stage:grow -->
 
-Change these for each country:
+**Why this matters:** What sells at home may need tweaks abroad. Five changes cover most of it.
 
-1. Sizing (for example US sizes versus European sizes).
-2. Which products you show first.
-3. Seasons. The other half of the world has summer when you have winter.
-4. Key dates and holidays.
-5. Your messages and spelling.
+**Step 1.** Convert sizing for the country (for example US versus European sizes) on size charts.
+
+**Expected result:** Size charts show local sizes.
+
+**Step 2.** Choose which products to show first for that country, based on its seasons and tastes.
+
+**Expected result:** The country's home page features the right products.
+
+**Step 3.** Add the country's key dates and holidays to your calendar, and adjust messages and spelling.
+
+**Expected result:** Promotions and copy fit the local market.
+
+<!-- do:calendar -->
 
 ## Lesson 15.5: Shipping options and logistics
 <!-- stage:grow -->
+
+**Why this matters:** How you ship overseas decides delivery time, cost and returns. There are three main options, each suiting a different stage.
+
+**Step 1.** Compare the three shipping options in the table below for your first country.
+
+**Expected result:** You have chosen ship from home, a local 3PL or direct from factory.
+
+**Step 2.** Look up the country's duty threshold (order value below which no duty is charged) and the courier's per-order fees for collecting duties and taxes.
+
+**Expected result:** You know the extra cost per order and have added it to your cost drivers.
+
+### Good to know
 
 | Option | When to use it |
 | --- | --- |
@@ -75,24 +117,33 @@ Change these for each country:
 | A local 3PL (a warehouse in that country that packs and ships for you) | Once demand is proven. Delivery is faster and returns are easier. |
 | Shipping direct from the factory | Can be cheaper for some products. Check delivery times and quality. |
 
-**Also know:**
-
-1. The duty threshold: the order value below which no duty is charged.
-2. Fees that couriers charge per order to collect duties and taxes.
-
 ## Lesson 15.6: One store or an expansion store?
 <!-- stage:grow -->
 
-1. **One store with multi-market settings** (Shopify Markets) is simpler. Start here.
-2. **A separate store for a region** helps when the products, prices, content or apps need to be very different.
+**Why this matters:** One store with multi-market settings is simpler and is where to start. A separate store only makes sense when products, prices, content or apps need to be very different.
+
+**Step 1.** Set up the new country in Shopify **Settings > Markets** on your existing store.
+
+**Expected result:** The country is live as a market on your main store.
+
+**Step 2.** Only open a separate regional store if the product range, pricing, content or apps must be very different.
+
+**Expected result:** You run one store unless there is a clear reason not to.
 
 ## Lesson 15.7: Reporting and campaigns
 <!-- stage:grow -->
 
-1. **Make a report that shows MER by country** (ad spend ÷ sales, for each country).
-2. **Campaigns:**
-   - Once spend allows, start a separate campaign for each new country.
-   - Or run one worldwide campaign to discover where demand is, then give the winning countries their own campaigns.
+**Why this matters:** Each country needs its own report and, once spend allows, its own campaign. Otherwise one strong country hides a weak one.
+
+**Step 1.** Build a report showing MER by country (ad spend divided by sales for each country).
+
+**Expected result:** You can see which countries are profitable.
+
+**Step 2.** Either start a separate campaign per country once spend allows, or run one worldwide campaign to discover demand and then give winning countries their own campaigns.
+
+**Expected result:** Each strong country has its own campaign and budget.
+
+<!-- do:meta-draft -->
 
 ## Self-check
 

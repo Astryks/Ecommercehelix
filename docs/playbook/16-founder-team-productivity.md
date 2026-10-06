@@ -32,94 +32,173 @@
 ## Lesson 16.1: Personal operating basics
 <!-- stage:grow -->
 
-You are the most important part of the business. Look after how you work.
+**Why this matters:** You are the most important part of the business. How you sleep, plan and handle messages decides the quality of every other decision. Seven basics protect your best hours.
 
-1. **Sleep.** Protect it. Your decisions and mood depend on it.
-2. **Calendar.** Block time for focused work first. Fit meetings around it.
-3. **Messages.** Check them at set times, not all day. Turn off notifications you do not need.
-4. **Meetings.** Every meeting has an agenda, one owner and a decision. End early when you can.
-5. **One thing at a time.** Work in focused blocks of 25 or 45 minutes.
-6. **Know what your hour is worth.** Work out a price for your hour. Hand off work that is worth less than that.
-7. **Say no** to anything that does not help this cycle's priorities (Lesson 16.3).
+**Step 1.** Set a fixed bedtime and wake time for weekdays and protect them.
+
+**Expected result:** You sleep about the same hours every night.
+
+**Step 2.** Block your focus time in the calendar first each week, then fit meetings around it.
+
+**Expected result:** Your calendar has protected focus blocks.
+
+**Step 3.** Check messages at set times (for example 9am, 1pm, 4pm) and turn off notifications you do not need.
+
+**Expected result:** You are not pulled away all day.
+
+**Step 4.** Give every meeting an agenda, one owner and a decision.
+
+**Expected result:** Meetings end with a decision, often early.
+
+**Step 5.** Work in focused blocks of 25 or 45 minutes on one thing at a time.
+
+**Expected result:** You finish deep tasks without switching.
+
+**Step 6.** Work out what your hour is worth (for example target yearly profit divided by working hours) and hand off work worth less than that.
+
+**Expected result:** You have a list of tasks to delegate.
+
+**Step 7.** Say no to anything that does not help this cycle's priorities (Lesson 16.3).
+
+**Expected result:** Your week matches your priorities.
 
 ## Lesson 16.2: Win the day and the week
 <!-- stage:grow -->
 
-1. **Every day:** do the Helix routine (update yesterday, read your profit, do one task), plus one block of time on your top priority.
-2. **Every Monday:** spend 30 minutes planning the week. Set priorities, plan your calendar and decide what to hand off.
-3. **Every Friday:** spend 15 minutes reviewing the week. What worked? What did not?
+**Why this matters:** A small daily and weekly rhythm keeps you on top of the business in under an hour a week. The Helix routine is built for exactly this.
+
+**Step 1.** Every day, do the Helix routine (update yesterday, read your profit, do one task) plus one focus block on your top priority.
+
+**Expected result:** Each day ends with your numbers in and one priority moved forward.
+
+<!-- do:numbers -->
+
+**Step 2.** Every Monday, spend 30 minutes planning the week: priorities, calendar and what to hand off.
+
+**Expected result:** A Monday planning slot is in your calendar.
+
+**Step 3.** Every Friday, spend 15 minutes reviewing what worked and what did not.
+
+**Expected result:** A Friday review slot is in your calendar.
 
 ## Lesson 16.3: Six-week priority cycles
 <!-- stage:grow -->
 
-Work in cycles of six weeks.
+**Why this matters:** Working in six-week cycles stops you chasing everything at once. One or two priorities with real time behind them beat ten half-done projects.
 
-1. Pick only 1 or 2 priorities for the cycle.
-2. Spend 8 to 12 hours a week on them.
-3. Check progress once a week.
-4. At the end of the cycle, review what you achieved and pick the next priorities.
+**Step 1.** Pick 1 or 2 priorities for the next six weeks.
+
+**Expected result:** You have one or two written priorities.
+
+**Step 2.** Block 8 to 12 hours a week for them.
+
+**Expected result:** The hours are in your calendar.
+
+**Step 3.** Check progress every Friday, and at the end of the cycle review and pick the next priorities.
+
+**Expected result:** You have a weekly check and a review date at week six.
+
+<!-- do:calendar -->
 
 ## Lesson 16.4: Interruption filter
 <!-- stage:grow -->
 
-When something interrupts you, ask three questions:
+**Why this matters:** Interruptions eat founder time. Three quick questions decide what deserves your attention now.
 
-1. Can the problem be explained in one sentence?
-2. Am I the right person to deal with it?
-3. Does it need doing right now?
+**Step 1.** When interrupted, ask: can it be explained in one sentence, am I the right person, and does it need doing now?
 
-If the answer to any is no: say no, hand it to someone else, or do it later.
+**Expected result:** You can answer the three questions in seconds.
+
+**Step 2.** If any answer is no, say no, hand it to someone else or schedule it for later.
+
+**Expected result:** Only true urgent, yours-to-do issues get your attention now.
 
 ## Lesson 16.5: Hiring
 <!-- stage:grow -->
 
-1. **Describe each role by its results,** not just tasks. For example "answer every customer email within 4 hours".
-2. **Test with a real work sample** before you hire.
-3. **Plan 3 to 6 months ahead.** Hiring and training take time.
-4. **Write down how the work is done (SOPs) before you hand it over.**
-5. **For senior people:**
-   - Write down what they must achieve in 12 months.
-   - Check references carefully.
-   - Start with a paid trial project.
+**Why this matters:** Hiring the right person at the right time frees you to grow the business. Hiring by results and testing with real work avoids expensive mistakes.
+
+**Step 1.** Describe the role by results, not tasks (for example "answer every customer email within 4 hours").
+
+**Expected result:** The role description has measurable results.
+
+**Step 2.** Write the SOPs (how the work is done) before you hand it over.
+
+**Expected result:** A new hire can follow written steps from day one.
+
+**Step 3.** Plan 3 to 6 months ahead, and test candidates with a real paid work sample.
+
+**Expected result:** You hire on evidence, with time to train.
+
+**Step 4.** For senior people, write what they must achieve in 12 months, check references carefully and start with a paid trial project.
+
+**Expected result:** Senior hires have clear goals and have proven themselves.
 
 ## Lesson 16.6: Conflict resolution
 <!-- stage:grow -->
 
-1. Name the issue clearly.
-2. Listen fully, without interrupting.
-3. Separate facts from feelings.
-4. Agree on the result you both want.
-5. Write down who will do what.
-6. Follow up to check it happened.
+**Why this matters:** Conflict handled well builds trust; avoided, it festers. Six steps keep it about the issue, not the person.
+
+**Step 1.** Name the issue clearly in one sentence, then listen fully without interrupting.
+
+**Expected result:** Both sides feel heard.
+
+**Step 2.** Separate facts from feelings, and agree on the result you both want.
+
+**Expected result:** You have a shared goal.
+
+**Step 3.** Write down who will do what by when, and follow up to check it happened.
+
+**Expected result:** There is a written agreement and a follow-up date.
 
 ## Lesson 16.7: Agencies vs in-house
 <!-- stage:grow -->
 
-1. **Own your accounts and data.** Ad accounts, ads, customer lists and reports must be in your name.
-2. **Ask agencies to report on MER and contribution profit,** not just ROAS.
-3. **If you bring the work in-house,** start with the daily ad check (Module 7, Lesson 7.6). Keep specialists for the gaps.
+**Why this matters:** Agencies can help, but only if you own the accounts and judge them on profit. If you bring work in-house, start with the daily ad check.
+
+**Step 1.** Check that ad accounts, ads, customer lists and reports are in your name (Meta **Business Settings > Ad accounts**, Google **Admin > Access**).
+
+**Expected result:** You own every account and asset.
+
+**Step 2.** Ask your agency to report on MER and contribution profit, not just ROAS.
+
+**Expected result:** Agency reports show profit numbers.
+
+**Step 3.** If you bring work in-house, start with the daily ad check (Lesson 7.6) and keep specialists for the gaps.
+
+**Expected result:** You run the daily check yourself.
 
 ## Lesson 16.8: Resilience
 <!-- stage:grow -->
 
-1. Bad days happen. Judge on the last 3 days and the month, not one day.
-2. Keep a "wins" file of good results and kind customer messages.
-3. Keep your decision log, so you can see you made sensible choices.
-4. Talk to other founders.
-5. During busy seasons, plan your sleep and exercise like any other task.
+**Why this matters:** Bad days happen in every store. Resilience is mostly habits that stop one bad day from feeling like a bad business.
+
+**Step 1.** Judge results on the last 3 days and month to date, not one day.
+
+**Expected result:** One bad day does not change your plans.
+
+<!-- do:growth -->
+
+**Step 2.** Keep a wins file of good results and kind customer messages, and keep your decision log.
+
+**Expected result:** You can see your progress and sensible choices when it gets hard.
+
+**Step 3.** Talk to other founders regularly, and in busy seasons plan sleep and exercise like any other task.
+
+**Expected result:** You have support and protected recovery time.
 
 ## Lesson 16.9: Capital and exit thinking
 <!-- stage:grow -->
 
-**Ways to fund growth:**
+**Why this matters:** There are five ways to fund growth, from reinvesting profit to selling shares. Running the business as if a buyer will check it one day keeps every option open.
 
-1. Put profit back into the business.
-2. Get longer payment terms from suppliers.
-3. Inventory finance (loans for stock).
-4. Revenue-based funding (you repay a share of sales).
-5. Selling shares (equity), including crowdfunding.
+**Step 1.** List your funding options: reinvested profit, longer supplier terms, inventory finance (loans for stock), revenue-based funding (repay a share of sales) or selling shares (including crowdfunding).
 
-**Run the business as if a buyer will check it one day:** clean numbers, written processes, and customer data that you own.
+**Expected result:** You know which options fit your stage.
+
+**Step 2.** Keep clean numbers, written processes and customer data you own.
+
+**Expected result:** The business would pass a buyer's or lender's check.
 
 ## Self-check
 

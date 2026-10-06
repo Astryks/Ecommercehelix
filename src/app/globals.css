@@ -169,3 +169,15 @@ body {
 .tbl td { @apply whitespace-nowrap px-2.5 py-2 text-sm text-slate-800; }
 .tbl tbody tr { @apply border-t border-slate-100; }
 .tbl tbody tr:hover { @apply bg-slate-50/70; }
+
+/* Glossary tooltips on the first use of a term in each lesson (see glossify in src/lib/glossary.ts). */
+.gloss { position: relative; cursor: help; text-decoration: underline dotted var(--color-accent); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+.gloss:focus { outline: 2px solid var(--color-accent); outline-offset: 2px; border-radius: 2px; }
+.gloss::after {
+  content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%);
+  width: max-content; max-width: min(320px, 80vw); padding: 8px 12px; border-radius: 10px;
+  background: var(--color-ink); color: #faf7f2; font-family: var(--font-sans); font-size: 13px; line-height: 1.45; font-weight: 400; font-style: normal;
+  text-align: left; white-space: normal; box-shadow: 0 8px 24px rgb(11 31 58 / 0.18); z-index: 40;
+  opacity: 0; pointer-events: none; transition: opacity 120ms ease;
+}
+.gloss:hover::after, .gloss:focus::after { opacity: 1; }
