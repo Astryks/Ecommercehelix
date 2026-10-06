@@ -6,6 +6,7 @@ import { isoDay, addDays } from "./dates";
 import { toTrack, type TrackId } from "./tracks";
 import { toCountry, type Country } from "./seasons";
 import { isDemoUserId, mayLinkByEmail } from "./demo-auth";
+import { exampleStock, exampleSuppliers, type StockItem, type Supplier } from "./stock";
 
 /**
  * Data access with two backends:
@@ -26,12 +27,16 @@ type Mem = {
   products: Map<string, ProductLine[]>;
   settings: Map<string, Settings>;
   seasonPlans: Map<string, SeasonPlanRow[]>;
+  suppliers: Map<string, Supplier[]>;
+  stock: Map<string, StockItem[]>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map() });
 mem.seasonPlans ??= new Map(); // older hot-reloaded stores
+mem.suppliers ??= new Map();
+mem.stock ??= new Map();
 
 export const DEFAULT_SETTINGS: Settings = { monthlyRevenueTarget: 60000, targetMerPct: 30, fixedCostsMonthly: 9000 };
 
@@ -290,4 +295,93 @@ export async function listNudgeRecipients(): Promise<{ userId: string; email: st
   if (!hasDb) return [...mem.users.values()].map((u) => ({ userId: u.userId, email: u.email, name: u.name }));
   const rows = await prisma.user.findMany({ select: { id: true, email: true, name: true } });
   return rows.map((r) => ({ userId: r.id, email: r.email ?? "", name: r.name ?? "" }));
+}
+
+// ---------- suppliers and stock ----------
+const supplierOut = (r: { id: string; name: string; contact: string; country: string; kind: string; moq: number; leadTimeDays: number; paymentTerms: string; notes: string; example: boolean }): Supplier =>
+  ({ ...r, kind: (["factory", "trading"].includes(r.kind) ? r.kind : "unknown") as Supplier["kind"] });
+
+/** Example suppliers and stock are added once, so a new account can see how the page works. */
+async function seedStock(userId: string) {
+  if (!hasDb) {
+    if (!mem.suppliers.has(userId)) {
+      mem.suppliers.set(userId, exampleSuppliers());
+      mem.stock.set(userId, exampleStock());
+    }
+    return;
+  }
+  const u = await prisma.user.findUnique({ where: { id: userId }, select: { stockSeeded: true } });
+  if (!u || u.stockSeeded) return;
+  const sup = exampleSuppliers();
+  const ids = new Map<string, string>();
+  for (const s of sup) {
+    const { id, ...data } = s;
+    const row = await prisma.supplier.create({ data: { ...data, example: true, userId } });
+    ids.set(id, row.id);
+  }
+  for (const i of exampleStock()) {
+    const { id: _id, supplierId, ...data } = i;
+    void _id;
+    await prisma.stockItem.create({ data: { ...data, example: true, userId, supplierId: supplierId ? ids.get(supplierId) ?? null : null } });
+  }
+  await prisma.user.update({ where: { id: userId }, data: { stockSeeded: true } });
+}
+
+export async function getSuppliers(userId: string): Promise<Supplier[]> {
+  await seedStock(userId);
+  if (!hasDb) return mem.suppliers.get(userId) ?? [];
+  return (await prisma.supplier.findMany({ where: { userId }, orderBy: { createdAt: "asc" } })).map(supplierOut);
+}
+
+export async function getStock(userId: string): Promise<StockItem[]> {
+  await seedStock(userId);
+  if (!hasDb) return mem.stock.get(userId) ?? [];
+  const rows = await prisma.stockItem.findMany({ where: { userId }, orderBy: { sku: "asc" } });
+  return rows.map(({ userId: _u, updatedAt: _t, ...r }) => { void _u; void _t; return r; });
+}
+
+export async function addSupplier(userId: string, s: Omit<Supplier, "id" | "example">) {
+  await seedStock(userId);
+  if (!hasDb) {
+    const list = mem.suppliers.get(userId) ?? [];
+    list.push({ ...s, id: `sup-${Date.now().toString(36)}-${list.length}`, example: false });
+    mem.suppliers.set(userId, list);
+    return;
+  }
+  await prisma.supplier.create({ data: { ...s, userId } });
+}
+
+/** Add a product or update the one with the same SKU. */
+export async function upsertStockItem(userId: string, i: Omit<StockItem, "id" | "example">) {
+  await seedStock(userId);
+  if (!hasDb) {
+    const list = mem.stock.get(userId) ?? [];
+    const at = list.findIndex((x) => x.sku.toLowerCase() === i.sku.toLowerCase());
+    if (at >= 0) list[at] = { ...list[at], ...i, example: false };
+    else list.push({ ...i, id: `st-${Date.now().toString(36)}-${list.length}`, example: false });
+    mem.stock.set(userId, list);
+    return;
+  }
+  await prisma.stockItem.upsert({ where: { userId_sku: { userId, sku: i.sku } }, create: { ...i, userId }, update: { ...i, example: false } });
+}
+
+/** Quick update from the stock table: new counts and sales speed. */
+export async function updateStockCounts(userId: string, id: string, c: { onHand: number; onOrder: number; dailySales: number }) {
+  if (!hasDb) {
+    const it = (mem.stock.get(userId) ?? []).find((x) => x.id === id);
+    if (it) Object.assign(it, c, { example: false });
+    return;
+  }
+  await prisma.stockItem.updateMany({ where: { id, userId }, data: { ...c, example: false } });
+}
+
+export async function clearExampleStock(userId: string) {
+  await seedStock(userId);
+  if (!hasDb) {
+    mem.stock.set(userId, (mem.stock.get(userId) ?? []).filter((x) => !x.example));
+    mem.suppliers.set(userId, (mem.suppliers.get(userId) ?? []).filter((x) => !x.example));
+    return;
+  }
+  await prisma.stockItem.deleteMany({ where: { userId, example: true } });
+  await prisma.supplier.deleteMany({ where: { userId, example: true } });
 }

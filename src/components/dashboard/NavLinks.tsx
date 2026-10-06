@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, BookOpen, LineChart, CalendarCheck, CalendarDays, CreditCard, FileText, Inbox, Lightbulb, Link2, Mail, Megaphone, Settings, Sparkles } from "lucide-react";
+import { BarChart3, BookOpen, Boxes, LineChart, CalendarCheck, CalendarDays, CreditCard, FileText, Inbox, Lightbulb, Link2, Mail, Megaphone, Settings, Sparkles } from "lucide-react";
 
 const LINKS = [
   { href: "/dashboard", label: "Today", icon: CalendarCheck },
@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/dashboard/insights", label: "What to fix", icon: Lightbulb },
   { href: "/dashboard/approvals", label: "Waiting for your OK", icon: Inbox },
   { href: "/dashboard/scorecard", label: "Your numbers", icon: BarChart3 },
+  { href: "/dashboard/stock", label: "Suppliers & stock", icon: Boxes },
   { href: "/dashboard/campaigns", label: "Your ads", icon: Megaphone },
   { href: "/dashboard/email", label: "Email automation", icon: Mail },
   { href: "/dashboard/trends", label: "Ad Trends", icon: Sparkles },

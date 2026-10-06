@@ -34,6 +34,9 @@ model User {
   metaDrafts     MetaDraft[]
   auditLogs      AuditLog[]
   seasonPlans    SeasonPlan[]
+  suppliers      Supplier[]
+  stockItems     StockItem[]
+  stockSeeded    Boolean            @default(false) // example suppliers and stock added once
 }
 
 model Account {
@@ -256,4 +259,47 @@ model SeasonPlan {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, planKey])
+}
+
+// ---------- Suppliers and stock (src/lib/stock.ts) ----------
+model Supplier {
+  id           String      @id @default(cuid())
+  userId       String
+  name         String
+  contact      String      @default("")
+  country      String      @default("")
+  kind         String      @default("unknown") // factory | trading | unknown
+  moq          Int         @default(0)
+  leadTimeDays Int         @default(45)
+  paymentTerms String      @default("")
+  notes        String      @default("")
+  example      Boolean     @default(false)
+  createdAt    DateTime    @default(now())
+  user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items        StockItem[]
+
+  @@index([userId])
+}
+
+model StockItem {
+  id             String    @id @default(cuid())
+  userId         String
+  sku            String
+  name           String
+  supplierId     String?
+  unitCost       Float     @default(0)
+  freightPerUnit Float     @default(0)
+  dutyPct        Float     @default(0)
+  otherPerUnit   Float     @default(0)
+  onHand         Int       @default(0)
+  onOrder        Int       @default(0)
+  dailySales     Float     @default(0) // units a day; typed today, synced from Shopify later
+  leadTimeDays   Int? // overrides the supplier lead time
+  safetyDays     Int       @default(14)
+  example        Boolean   @default(false)
+  updatedAt      DateTime  @updatedAt
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  supplier       Supplier? @relation(fields: [supplierId], references: [id], onDelete: SetNull)
+
+  @@unique([userId, sku])
 }

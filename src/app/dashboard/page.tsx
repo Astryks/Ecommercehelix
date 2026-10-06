@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowRight, BarChart3, BookOpen, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, Boxes, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, getCompletions, getDays, getSeasonPlans, getSettings, listApprovals, streakFrom } from "@/lib/repo";
+import { getAccount, getCompletions, getDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
+import { stockAlerts, stockRows } from "@/lib/stock";
 import { countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { costRatios, money, summarise } from "@/lib/today";
@@ -22,8 +23,9 @@ import { markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, completions, approvals, live, days, settings, snap, plans] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id)]);
+  const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id)]);
   const today = isoDay();
+  const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
   const yesterday = addDays(today, -1);
   const summary = summarise(days, yesterday, settings);
   const yRow = days.find((d) => d.date === yesterday);
@@ -144,6 +146,22 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </span>
         <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See weekly, monthly and yearly charts <ArrowRight className="h-4 w-4" aria-hidden /></span>
       </Link>
+
+
+      {stockAlertRows.length > 0 && (
+        <Link href="/dashboard/stock" className="card mt-4 flex flex-wrap items-center justify-between gap-4 border-l-4 border-l-rose-500 p-4 transition hover:ring-2 hover:ring-cyan-200">
+          <span className="flex items-center gap-3">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700"><Boxes className="h-5 w-5" aria-hidden /></span>
+            <span>
+              <span className="block font-semibold text-slate-900">Stock: {stockAlertRows.length} product{stockAlertRows.length === 1 ? "" : "s"} to reorder{stockItems.some((i) => i.example) ? " (example data)" : ""}</span>
+              <span className="block text-sm text-slate-600">
+                {stockAlertRows.slice(0, 2).map((r) => r.status === "out" ? `${r.name} is out of stock` : r.daysUntilOrder !== null && r.daysUntilOrder <= 0 ? `${r.name}: order today (${r.daysLeft} days of stock left)` : `${r.name}: order within ${r.daysUntilOrder} days`).join(" · ")}
+              </span>
+            </span>
+          </span>
+          <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See reorder dates <ArrowRight className="h-4 w-4" aria-hidden /></span>
+        </Link>
+      )}
 
       <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,1fr)_330px]">
         <section aria-labelledby="today-h" className="space-y-5">

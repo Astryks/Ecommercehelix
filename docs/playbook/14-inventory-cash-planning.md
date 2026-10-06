@@ -103,13 +103,88 @@ A cash flow forecast shows how much cash you will have each month. Profit is not
 4. **Make a marketing calendar:** launches, sales, events and content themes.
 5. **Review the plan** every 6 months.
 
+## Lesson 14.8: Finding and vetting suppliers
+
+A good supplier makes a good product on time at a fair price, and tells you early when something goes wrong. Choose carefully, because changing supplier mid-season is slow and risky.
+
+**Find candidates:**
+
+1. List what you need: materials, size, finish, packaging, certifications and your target landed cost.
+2. Search supplier marketplaces, trade shows and industry directories, and ask other founders for introductions. Shortlist 3 to 5.
+3. Local makers (in Australia or the US) usually cost more per unit but have shorter lead times, smaller minimums and simpler freight. They are often a good start or a top-up option.
+
+**Factory or trading company?**
+
+1. A factory makes the product. A trading company buys from factories and resells. Both can be fine.
+2. Ask for the business licence and check that the listed business scope includes making your product.
+3. Ask for a live video walk through the production line, or pay an inspection company to visit.
+4. Trading companies help with small orders and many product types. Factories usually give better prices and more control once your volumes grow.
+
+**Samples:**
+
+1. Order samples from at least 2 suppliers. Pay for them; it shows you are serious.
+2. Check them against your written spec: measurements, materials, stitching or finish, packaging.
+3. Wash, use and test them as a customer would for a week or two.
+4. Approve one "golden sample", sign it, and keep it. Production should match it.
+
+**Minimum order quantity (MOQ):**
+
+1. The MOQ is the smallest order the supplier accepts. Ask what drives it (fabric rolls, colour runs, machine set-up).
+2. To lower it: fewer colours, a stock fabric, a higher unit price for the first run, or sharing materials across products.
+3. Do not buy more than you can sell in about 3 to 4 months just to hit a minimum. Cash tied up in slow stock is the most common way growing stores run out of money.
+
+**Landed cost:**
+
+1. Landed cost = unit price + freight to your warehouse + import duty + other costs (packaging, inspection, bank fees, customs broker).
+2. Use landed cost as your product cost in Helix, not the supplier's price.
+3. Ask for quotes on the same terms (for example FOB, the price with goods loaded at the port) so you can compare suppliers fairly.
+
+**Quality checks:**
+
+1. Write a simple quality checklist from your golden sample.
+2. For larger orders, book a pre-shipment inspection before you pay the balance.
+3. Count and spot-check every delivery when it arrives, and record problems with photos.
+
+**Payment terms:**
+
+1. A common first deal is a 30% deposit and 70% before shipping. As trust grows, ask for the balance after shipping or on 30-day terms.
+2. Have your own standard terms of trade written down and start from them. It is easier to negotiate from a written company policy than from a personal preference.
+3. Pay by traceable bank transfer to an account in the company's name. Be wary of last-minute changes to bank details; confirm by phone.
+4. Watch the exchange rate. If you pay in US dollars, a few cents' move can change your margin. Some founders buy currency ahead for big orders.
+
+**Work as partners:**
+
+1. Act professionally: clear specs, clear dates, prompt replies and respectful emails.
+2. Share a code of conduct covering fair pay, safe conditions and no forced or child labour. Ask for audit reports if they have them.
+3. Share your forecast. Suppliers plan better, and treat you better, when they can see what is coming.
+4. As you grow, review suppliers once a year. Bigger volumes may open the door to larger factories with better prices.
+
+> Helix keeps your suppliers, minimums, lead times and terms on the [Suppliers and stock page](/dashboard/stock).
+
+## Lesson 14.9: Reorder points, lead times and stock-outs
+
+Running out of a best seller loses sales and pauses your ads. Ordering too much ties up cash. A reorder point tells you exactly when to order.
+
+1. **Sales speed:** average units sold a day over the last 4 to 8 weeks. Leave out days when you were out of stock or running a big sale.
+2. **Lead time:** days from paying the deposit to stock being ready to sell: making, shipping, customs and receiving. Ask for each part.
+3. **Safety days:** a buffer for late ships and sales spikes. Start with 14 days; use more for long sea freight.
+4. **Reorder point = sales speed × (lead time + safety days).** When stock on hand plus stock on order falls to this number, place the order.
+5. **How many to order:** enough for the lead time, the safety days and the next 1 to 3 months of sales, minus what you have, and at least the supplier's minimum.
+6. **Peak season:** for Black Friday and Christmas, work back from the date. The last safe order date is the event date minus the lead time minus about a week to receive and list the stock. Peak week often sells 2 to 4 times a normal week.
+
+**Example:** you sell 2 shirts a day, the lead time is 50 days and you keep 14 safety days. The reorder point is 2 × 64 = 128 shirts. With 140 on hand and none on order, you have about 6 days before you must order.
+
+Helix does this maths for every product on the Suppliers and stock page, shows a countdown to each stock-out, and raises an alert on Today when it is time to order.
+
 ## Self-check
 
 1. Name the five cash levers.
 2. When is borrowing reasonable?
+3. What is the reorder point for a product that sells 3 a day with a 40-day lead time and 14 safety days?
 
 <details><summary>Answers</summary>
 
 1. Get it cheaper, get better supplier terms, pay later, lower the risk, sell faster.
 2. When the money clearly earns more than it costs and you could make repayments in a bad month. Usually for stock that already sells well.
+3. 3 × (40 + 14) = 162 units.
 </details>
