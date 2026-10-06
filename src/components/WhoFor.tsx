@@ -10,7 +10,7 @@ export function WhoFor() {
           <li key={b.id} className={`flex flex-col rounded-xl border p-6 ${i === 1 ? "border-cyan-300 bg-cyan-50/50" : "border-slate-200 bg-white"}`}>
             <div className="flex items-center justify-between">
               <span className="font-display text-4xl italic text-slate-300" aria-hidden>{i + 1}</span>
-              <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${b.fit === "Best fit" ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-slate-50 text-slate-700 ring-slate-200"}`}>{b.fit}</span>
+              <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${b.fit === "Most value" ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-slate-50 text-slate-700 ring-slate-200"}`}>{b.fit}</span>
             </div>
             <h3 className="mt-3 font-display text-2xl text-slate-900">{b.name}</h3>
             <p className="mt-1 font-semibold text-cyan-800">{b.range}</p>

@@ -35,6 +35,12 @@ export type GoalStep = {
   bench: string;
 };
 
+/** The headline for the goals ladder everywhere it appears. */
+export const GOALS_HEADLINE = {
+  title: "The goal is profit, not just revenue",
+  order: "Chase these in order: site visits, click-through rate, add-to-cart rate, conversion rate, average order value, ROAS and MER, cost per acquisition, contribution margin, and finally net profit.",
+};
+
 export const LADDER: GoalStep[] = [
   { key: "sessions", bench: "Grows with ads, content and email", label: "Site visits (sessions)", short: "Visits", stage: "attract", better: "up", unit: "count",
     plain: "How many times people came to your store this month.",

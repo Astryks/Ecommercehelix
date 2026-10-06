@@ -4,6 +4,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { HelixMark } from "@/components/Logo";
 import { StageTrio } from "@/components/StageTrio";
+import { WHO_HEADLINE } from "@/lib/audience";
+import { GOALS_HEADLINE, LADDER } from "@/lib/goals";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -83,9 +85,24 @@ export default function About() {
         </Block>
 
         <Block title="Who Helix is for">
+          <p className="font-display text-2xl leading-snug text-slate-900">{WHO_HEADLINE.title}.</p>
+          <p>{WHO_HEADLINE.body}</p>
           <p>
-            Owners of online stores from their first sale to about $10M a year. Helix fits best from $0 to about $1M a year, while you still make most of the calls yourself: <strong>Just starting</strong> (no sales yet, or your first orders), <strong>Growing</strong> (up to about $1M a year) and <strong>Scaling</strong> (about $1M to $10M a year). <Link href="/learn/goals" className="text-cyan-700 underline">See the bands and the goals to aim at</Link>.
+            In bands: <strong>Just starting</strong> (no sales yet, or under about $10k a month), <strong>Growing</strong> (about $10k to $100k a month, up to about $1M a year, where Helix adds the most) and <strong>Scaling</strong> (about $1M to $10M a year). <Link href="/learn/goals" className="text-cyan-700 underline">See the bands and the goals to aim at</Link>.
           </p>
+        </Block>
+
+        <Block title="The goal is profit, not just revenue">
+          <p>
+            Sales are easy to celebrate and easy to buy with discounts and ad spend. Profit is what pays you. {GOALS_HEADLINE.order}
+          </p>
+          <ol className="grid gap-2 text-base sm:grid-cols-3">
+            {LADDER.map((s, i) => (
+              <li key={s.key} className={`rounded-lg border px-3 py-2 ${s.key === "netProfit" ? "border-emerald-300 bg-emerald-50 font-semibold text-emerald-900" : "border-slate-200 bg-white"}`}>
+                <span className="mr-2 text-slate-400">{i + 1}</span>{s.label}
+              </li>
+            ))}
+          </ol>
         </Block>
 
         <Block title="A head of growth by your side">

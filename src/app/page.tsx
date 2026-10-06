@@ -12,6 +12,8 @@ import { BFCM_CRITICAL, primaryAlert } from "@/lib/seasons";
 import { BfcmTimeline, bfcmStageIndex } from "@/components/BfcmPlan";
 import { GoalsLadder, VanityNote } from "@/components/GoalsLadder";
 import { WhoFor } from "@/components/WhoFor";
+import { WHO_HEADLINE } from "@/lib/audience";
+import { GOALS_HEADLINE } from "@/lib/goals";
 import { isoDay } from "@/lib/dates";
 
 // Rebuild at least hourly so the seasonal alert follows the real date.
@@ -44,7 +46,7 @@ const AGENCY_ROWS = [
 ];
 
 const FAQ = [
-  { q: "Who is Helix for?", a: "Owners of online stores from their very first sale to about $10M a year. It fits best from $0 to about $1M a year, while you still make most of the calls yourself. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
+  { q: "Who is Helix for?", a: "Helix is built for stores doing $10k to $100k a month that want to reach a $1M year, profitably. That is where it adds the most. It also works from your very first sale, and keeps helping as you scale toward $10M a year. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
   { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
   { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds campaigns inside your own Meta or Google account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. Prefer to build it yourself? Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
   { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
@@ -139,8 +141,8 @@ export default function Home() {
         <section id="who" aria-labelledby="who-title" className="scroll-mt-10 border-t border-slate-200 bg-paper py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Who Helix is for</p>
-            <h2 id="who-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">From your first sale to <span className="grad-text">about $10M a year</span></h2>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Helix is built for owners who make the calls themselves. It fits best from $0 to about $1M a year in sales, and it keeps helping as you scale toward $10M. Tell Helix where you are when you sign up, and it picks your lessons and suggested goals to match.</p>
+            <h2 id="who-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Built for stores doing <span className="grad-text">$10k to $100k a month</span> that want to reach a $1M year, profitably</h2>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{WHO_HEADLINE.body}</p>
             <div className="mt-12"><WhoFor /></div>
           </div>
         </section>
@@ -149,9 +151,9 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="eyebrow">What to aim at</p>
-              <h2 id="goals-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">Nine numbers. <span className="grad-text">One goal.</span></h2>
-              <p className="mt-5 text-lg leading-8 text-slate-600">Visits, clicks, add-to-carts, sales and order value are the rungs of the ladder. Each one feeds the next, and they all lead to the only number that pays you: net profit.</p>
-              <p className="mt-4 text-lg leading-8 text-slate-600">Set monthly targets when you sign up. Helix checks them against your real results on Today and the Dashboard, so you always know which rung to work on next.</p>
+              <h2 id="goals-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">The goal is profit, <span className="grad-text">not just revenue.</span></h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">{GOALS_HEADLINE.order}</p>
+              <p className="mt-4 text-lg leading-8 text-slate-600">Each rung feeds the next. Set monthly targets when you sign up, and Helix checks them against your real results on Today and the Dashboard, so you always know which number to work on next.</p>
               <VanityNote className="mt-6" />
               <Link href="/learn/goals" className="btn-ghost mt-6">What good looks like for each number <ArrowRight className="h-4 w-4" aria-hidden /></Link>
             </div>
