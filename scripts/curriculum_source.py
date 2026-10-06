@@ -407,7 +407,7 @@ D = [
    "Write the offer in one line."],
   20, "retention", "13.4", "15", ("growth", "Work out the profit on each offer"), "Profit during the sale"),
  (52, "Black Friday", "Start your Black Friday plan",
-  "The biggest sale of the year is won weeks before it starts. Set your target, offer, stock, email list, ads and site speed.",
+  "The biggest sale of the year is won months before it starts. Planning begins in August: test ads and offers early, then set your target, offer, stock, email list, ads and site speed.",
   ["Set a sales and profit target.",
    "Choose the offer.",
    "Check you have enough stock of your best sellers.",

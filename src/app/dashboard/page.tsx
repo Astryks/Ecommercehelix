@@ -3,8 +3,11 @@ import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check,
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
-import { countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
+import { bfcmTip, countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
+import { BfcmTipStrip } from "@/components/BfcmPlan";
+import { GoalsLadder } from "@/components/GoalsLadder";
+import { goalsFor } from "@/lib/goals-server";
 import { costRatios, money, summarise } from "@/lib/today";
 import { taxLabel } from "@/lib/tax";
 import { adminDueSoon } from "@/lib/business";
@@ -29,7 +32,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
   const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id)]);
-  const rawDays = await getRawDays(u.id);
+  const [rawDays, goalData] = await Promise.all([getRawDays(u.id), goalsFor(u.id)]);
   const today = isoDay();
   const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
   const adminSoon = adminDueSoon(today, acct.country, new Set(completions.map((c) => c.taskId)));
@@ -71,8 +74,10 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const wPrev = metricsFor(days, wk.prev, settings);
   const wChange = wPrev.contribution ? Math.round(((w.contribution - wPrev.contribution) / Math.abs(wPrev.contribution)) * 100) : null;
   const planKeys = new Set(plans.map((p) => p.planKey));
-  const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key));
-  const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a));
+  // Black Friday stays on Today from 1 August even when another date is closer: it is the big one.
+  const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key) || (a.eventKey === "black-friday" && !a.reviewing));
+  const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a) && !a.reviewing);
+  const tip = bfcmTip(today);
   const currentStage = nextDay?.stage ?? STAGES.length;
 
   return (
@@ -118,6 +123,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </div>
       ))}
 
+      {tip && <div className="mt-6"><BfcmTipStrip tip={tip} /></div>}
+
       {upcoming.length > 0 && (
         <section aria-labelledby="upcoming-h" className="mt-6">
           <div className="flex items-baseline justify-between">
@@ -153,6 +160,15 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </span>
         <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See weekly, monthly and yearly charts <ArrowRight className="h-4 w-4" aria-hidden /></span>
       </Link>
+
+      <section aria-labelledby="goals-h" className="card mt-4 p-4">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="goals-h" className="font-semibold text-slate-900">Your monthly goals, last 30 days</h2>
+          <Link href="/dashboard/goals" className="text-sm font-medium text-cyan-700 hover:underline">{goalData.isDefault ? "Set your goals" : "See or change your goals"}</Link>
+        </div>
+        <p className="mt-0.5 text-xs text-slate-500">From visits down to net profit. Revenue is the vanity number; profit is the goal.</p>
+        <div className="mt-3"><GoalsLadder variant="track" compact goals={goalData.goals} merPct={goalData.merPct} actuals={goalData.actuals} /></div>
+      </section>
 
 
       {stockAlertRows.length > 0 && (

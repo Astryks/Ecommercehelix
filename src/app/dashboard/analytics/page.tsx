@@ -8,6 +8,8 @@ import { PERIODS, channels, costBreakdown, metricsFor, periodRanges, seriesFor, 
 import { metricCards } from "@/lib/metric-info";
 import { addDays, isoDay } from "@/lib/dates";
 import { MetricCard } from "@/components/analytics/MetricCard";
+import { GoalsLadder } from "@/components/GoalsLadder";
+import { goalsFor } from "@/lib/goals-server";
 import { ChannelBars, Donut, NewReturning, ProfitTrend, RevenueCostsProfit, RoasMer } from "@/components/analytics/Charts";
 
 const GROUPS = [
@@ -31,7 +33,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
   const u = await requireUser();
   const acct = await getAccount(u.id);
   const taxNote = taxLabel(acct.salesTaxMode, acct.country);
-  const [days, settings, conn] = await Promise.all([getDays(u.id), getSettings(u.id), getConnection(u.id)]);
+  const [days, settings, conn, goalData] = await Promise.all([getDays(u.id), getSettings(u.id), getConnection(u.id), goalsFor(u.id)]);
   const period = toPeriod(sp.period);
   const meta = PERIODS.find((p) => p.id === period)!;
   const latest = days.at(-1)?.date ?? addDays(isoDay(), -1);
@@ -121,6 +123,15 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
           <NewReturning data={series} />
         </Panel>
       </div>
+
+      <section id="goals" aria-labelledby="goals-h" className="card mt-6 scroll-mt-6 p-5">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="goals-h" className="font-semibold">Monthly goals vs the last 30 days</h2>
+          <span className="flex gap-4 text-sm"><Link href="/learn/goals" className="text-cyan-700 underline">What each number means</Link><Link href="/dashboard/goals" className="font-medium text-cyan-700 underline">{goalData.isDefault ? "Set your goals" : "Change your goals"}</Link></span>
+        </div>
+        <p className="mt-0.5 text-xs text-slate-500">The goals ladder in funnel order, from visits to net profit. Revenue is the vanity number; net profit is the goal. Always the last 30 days, whatever period is picked above.</p>
+        <div className="mt-4"><GoalsLadder variant="track" goals={goalData.goals} merPct={goalData.merPct} actuals={goalData.actuals} /></div>
+      </section>
 
       <section className="card mt-6 p-5 text-sm">
         <h2 className="flex items-center gap-2 font-semibold"><Database className="h-4 w-4" aria-hidden /> Where these numbers come from</h2>

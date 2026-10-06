@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ClipboardCheck, ListChecks, Search, Sparkles, TrendingUp, Flame, ShieldCheck, Clock, DollarSign, Scale, Target } from "lucide-react";
+import { AlertTriangle, ArrowRight, Check, ClipboardCheck, GraduationCap, KeyRound, ShieldAlert, X, ListChecks, Search, Sparkles, TrendingUp, Flame, ShieldCheck, Clock, DollarSign, Scale, Target } from "lucide-react";
 import { StageTrio } from "@/components/StageTrio";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -8,7 +8,10 @@ import { Pricing } from "@/components/marketing/Pricing";
 import { STRATEGIES } from "@/lib/seed/strategies";
 import { TRENDS } from "@/lib/seed/trends";
 import { SeasonalStrip } from "@/components/SeasonalBanner";
-import { primaryAlert } from "@/lib/seasons";
+import { BFCM_CRITICAL, primaryAlert } from "@/lib/seasons";
+import { BfcmTimeline, bfcmStageIndex } from "@/components/BfcmPlan";
+import { GoalsLadder, VanityNote } from "@/components/GoalsLadder";
+import { WhoFor } from "@/components/WhoFor";
 import { isoDay } from "@/lib/dates";
 
 // Rebuild at least hourly so the seasonal alert follows the real date.
@@ -27,7 +30,21 @@ const PROFIT_POINTS = [
   { icon: Target, title: "Meta and Google still work", text: "Meta (Facebook and Instagram) and Google can seem saturated. Everyone says they are too crowded and too expensive. But they are still what works for most stores. The winners simply do the basics well, every day." },
 ];
 
+const FEAR_POINTS = [
+  { icon: ShieldAlert, title: "Why small tests fail", text: "Meta and Google need enough sales to learn who buys from you. A tiny budget, or switching ads off after three days, means they never get there. Helix tells you what a fair test costs at your prices before you spend a dollar." },
+  { icon: Scale, title: "A safe limit on every dollar", text: "Helix works out your break-even cost per sale from your own numbers. You can see when an ad is making money, when to give it more and when to stop." },
+  { icon: GraduationCap, title: "Learn how it really works", text: "Short daily lessons and click-by-click drawings show you how campaigns, audiences and creative fit together. Helix can build campaigns as paused drafts, so nothing spends until you press go." },
+];
+
+const AGENCY_ROWS = [
+  ["A high monthly retainer, whether or not sales grow", "A low monthly plan. Your money goes into ads and stock, not fees"],
+  ["Reports that are hard to check", "Your real profit every morning, worked out from your own numbers"],
+  ["The less you understand, the more you need them", "Every suggestion comes with the why, so you understand your business better each week"],
+  ["The know-how leaves when the contract ends", "The skills you learn stay with you and your team"],
+];
+
 const FAQ = [
+  { q: "Who is Helix for?", a: "Owners of online stores from their very first sale to about $10M a year. It fits best from $0 to about $1M a year, while you still make most of the calls yourself. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
   { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
   { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds campaigns inside your own Meta or Google account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. Prefer to build it yourself? Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
   { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
@@ -119,6 +136,29 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="who" aria-labelledby="who-title" className="scroll-mt-10 border-t border-slate-200 bg-paper py-24">
+          <div className="mx-auto max-w-6xl px-5">
+            <p className="eyebrow">Who Helix is for</p>
+            <h2 id="who-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">From your first sale to <span className="grad-text">about $10M a year</span></h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Helix is built for owners who make the calls themselves. It fits best from $0 to about $1M a year in sales, and it keeps helping as you scale toward $10M. Tell Helix where you are when you sign up, and it picks your lessons and suggested goals to match.</p>
+            <div className="mt-12"><WhoFor /></div>
+          </div>
+        </section>
+
+        <section id="goals" aria-labelledby="goals-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="eyebrow">What to aim at</p>
+              <h2 id="goals-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">Nine numbers. <span className="grad-text">One goal.</span></h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">Visits, clicks, add-to-carts, sales and order value are the rungs of the ladder. Each one feeds the next, and they all lead to the only number that pays you: net profit.</p>
+              <p className="mt-4 text-lg leading-8 text-slate-600">Set monthly targets when you sign up. Helix checks them against your real results on Today and the Dashboard, so you always know which rung to work on next.</p>
+              <VanityNote className="mt-6" />
+              <Link href="/learn/goals" className="btn-ghost mt-6">What good looks like for each number <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+            </div>
+            <GoalsLadder variant="teaser" />
+          </div>
+        </section>
+
         <section id="profit" aria-labelledby="profit-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">It is all about the bottom line</p>
@@ -145,6 +185,58 @@ export default function Home() {
               </div>
               <p className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Let&apos;s grow a little <span className="italic text-cyan-300">every day.</span></p>
             </div>
+          </div>
+        </section>
+
+        <section id="ads-fear" aria-labelledby="fear-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-24">
+          <div className="mx-auto max-w-6xl px-5">
+            <p className="eyebrow">Nervous about ads?</p>
+            <h2 id="fear-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Most owners are scared to advertise. <span className="grad-text">Helix shows you how it really works.</span></h2>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">It usually goes like this. You are worried about wasting money, so you put a little into Meta or Google, nothing much comes back after a week, and you decide ads are not for you. But a tiny budget switched off early never had a fair chance. Helix explains how Meta and Google ads actually work, in plain words, so you can spend with a plan instead of a knot in your stomach.</p>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {FEAR_POINTS.map((p) => (
+                <article key={p.title} className="card p-6">
+                  <p.icon className="h-5 w-5 text-cyan-600" aria-hidden />
+                  <h3 className="mt-4 text-xl text-slate-900">{p.title}</h3>
+                  <p className="mt-2 text-[15px] leading-7 text-slate-600">{p.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="agencies" aria-labelledby="agency-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[0.95fr_1.05fr]">
+            <div>
+              <p className="eyebrow flex items-center gap-2"><KeyRound className="h-3.5 w-3.5" aria-hidden /> Stay in control</p>
+              <h2 id="agency-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">You do not need an expensive agency <span className="grad-text">to grow</span></h2>
+              <p className="mt-5 text-lg leading-8 text-slate-600">Many owners pay an agency a high monthly retainer and still do not see results. It is hard to check what is working, because full transparency is rarely in an agency&apos;s interest: the less you understand, the more you need them.</p>
+              <p className="mt-4 text-lg leading-8 text-slate-600">Helix turns that around. Your ad accounts, data and customers stay yours, you see every number, and you learn why each decision is made. Take control of your business, grow it a little every day, and let compounding work for you.</p>
+              <p className="mt-4 text-sm text-slate-500">Good agencies do exist. If you work with one, Helix helps you read their results with your own eyes.</p>
+            </div>
+            <div className="card overflow-hidden p-0">
+              <div className="grid grid-cols-2 border-b border-slate-200 bg-paper-2 text-xs font-semibold uppercase tracking-[0.14em]">
+                <p className="px-5 py-3 text-slate-500">A typical agency</p>
+                <p className="border-l border-slate-200 px-5 py-3 text-emerald-700">With Helix</p>
+              </div>
+              {AGENCY_ROWS.map(([a, h]) => (
+                <div key={a} className="grid grid-cols-2 border-b border-slate-100 text-sm leading-6 last:border-b-0">
+                  <p className="flex gap-2 px-5 py-4 text-slate-600"><X className="mt-1 h-4 w-4 flex-none text-rose-500" aria-hidden />{a}</p>
+                  <p className="flex gap-2 border-l border-slate-100 px-5 py-4 text-slate-800"><Check className="mt-1 h-4 w-4 flex-none text-emerald-600" aria-hidden />{h}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="bfcm" aria-labelledby="bfcm-title" className="helix-glow scroll-mt-10 py-24 text-white">
+          <div className="mx-auto max-w-6xl px-5">
+            <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300"><AlertTriangle className="h-3.5 w-3.5" aria-hidden /> Black Friday and Cyber Monday, all year</p>
+            <h2 id="bfcm-title" className="mt-3 max-w-4xl text-4xl sm:text-5xl">{BFCM_CRITICAL.title}</h2>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-200"><strong className="font-semibold text-white">{BFCM_CRITICAL.lead}</strong> {BFCM_CRITICAL.body}</p>
+            <p className="mt-4 max-w-3xl text-slate-300">Helix starts your plan on 1 August, puts every step on Today and your calendar on the right date, and adds the whole plan in one click. The rest of the year, it nudges you to keep testing so you start the season ahead.</p>
+            <div className="mt-10"><BfcmTimeline current={bfcmStageIndex(isoDay())} dark /></div>
+            <Link href="/start" className="btn mt-10 border border-white/25 text-white hover:bg-white/10">Get the free Black Friday plan <ArrowRight className="h-4 w-4" aria-hidden /></Link>
           </div>
         </section>
 

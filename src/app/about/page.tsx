@@ -63,19 +63,28 @@ export default function About() {
         </Block>
         <div className="mt-8"><StageTrio compact /></div>
 
-        <Block title="Why Black Friday matters">
+        <Block title="Why Black Friday matters all year">
           <p>
-            For most online stores, the Black Friday and Cyber Monday window is the biggest sales period of the year. How it goes is usually decided weeks before it starts: the offer you choose, the creative you prepare, the size of your email list, the stock you hold and how fast your site loads under pressure.
+            For many online stores, Black Friday and Cyber Monday is the biggest sales window of the year. How it goes is decided months before it starts: the ads and offers you have tested, the stock you ordered in time, the size of your email list and how ready your site is for the rush.
           </p>
-          <p>Helix starts you on that runway early, so the big weekend is a plan you run rather than a scramble.</p>
+          <p>
+            The stores that do best start testing in August, order stock and lock the offer in September, build in October and launch in November with what they already know works. Helix starts your plan on 1 August, puts each step on Today and your calendar, and nudges you to keep testing through the rest of the year, so the big weekend is a plan you run rather than a scramble.
+          </p>
         </Block>
 
         <Block title="Why you should stay in control">
           <p>
-            Handing everything to an outside agency can feel like a relief. The risk is that you slowly lose sight of your own business: who your customers are, what your data says and where your money goes. When the relationship ends, the knowledge often leaves with it.
+            Handing everything to an outside agency can feel like a relief. But many owners pay a high monthly retainer and still do not see results, and it is hard to check, because full transparency is rarely in an agency&apos;s interest: the less you understand, the more you need them. Over time you can lose sight of your own business: who your customers are, what your data says and where your money goes. When the contract ends, the know-how often leaves with it.
           </p>
           <p>
-            We believe owners should hold the keys. Your ad accounts, your customer list and your numbers should stay yours, and you should understand the decisions being made with them.
+            We believe owners should hold the keys. Your ad accounts, your customer list and your numbers should stay yours, and you should understand the decisions being made with them. Helix helps you take control and grow your business a little every day, so each small gain builds on the last and compounding works for you, not for someone else&apos;s retainer.
+          </p>
+          <p className="text-base text-slate-500">Good agencies do exist. If you work with one, Helix helps you read their results with your own eyes.</p>
+        </Block>
+
+        <Block title="Who Helix is for">
+          <p>
+            Owners of online stores from their first sale to about $10M a year. Helix fits best from $0 to about $1M a year, while you still make most of the calls yourself: <strong>Just starting</strong> (no sales yet, or your first orders), <strong>Growing</strong> (up to about $1M a year) and <strong>Scaling</strong> (about $1M to $10M a year). <Link href="/learn/goals" className="text-cyan-700 underline">See the bands and the goals to aim at</Link>.
           </p>
         </Block>
 

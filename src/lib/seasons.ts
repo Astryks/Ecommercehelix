@@ -16,9 +16,9 @@ export const COUNTRIES: { id: Country; name: string; flag: string }[] = [
 ];
 export const toCountry = (v: unknown): Country => (v === "US" ? "US" : "AU");
 
-export type Kind = "sale" | "gifting" | "seasonal" | "admin";
+export type Kind = "sale" | "gifting" | "seasonal" | "admin" | "prep";
 export type Learn = { slug: string; anchor: string; label: string };
-export type PrepTask = { id: string; offset: number; title: string; steps: string[]; learn?: Learn };
+export type PrepTask = { id: string; offset: number; title: string; steps: string[]; learn?: Learn; /** Fixed [month, day] in the event's year, instead of the offset. */ fixed?: [number, number] };
 export type SeasonEvent = {
   key: string;
   name: string;
@@ -28,8 +28,12 @@ export type SeasonEvent = {
   date: (year: number) => string;
   /** Start showing the alert this many days before the event. */
   leadDays: number;
+  /** Optional fixed start date (e.g. 1 August for Black Friday). Overrides leadDays. */
+  startDate?: (year: number) => string;
   /** Stop showing it this many days after the event (negative = before it). */
   endOffset: number;
+  /** Keep the plan open this many days after the event for the review steps (shown last, never as "coming up"). */
+  reviewDays?: number;
   headline: (ctx: AlertCtx) => string;
   why: string;
   tasks: PrepTask[];
@@ -46,6 +50,8 @@ export type SeasonAlert = {
   headline: string;
   why: string;
   tasks: PlannedTask[];
+  /** True after the event, while only the review steps are left. */
+  reviewing: boolean;
 };
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -87,6 +93,9 @@ const LEARN = {
   pricing: L("03-offer-and-product", "lesson-36-make-yes-easy-pricing", "Lesson 3.6"),
 };
 
+/** A prep task's due date for an event on `date`. */
+const dueOf = (t: PrepTask, date: string) => (t.fixed ? ymd(Number(date.slice(0, 4)), t.fixed[0], t.fixed[1]) : addDays(date, t.offset));
+
 const weeks = (n: number) => (n === 1 ? "1 week" : `${n} weeks`);
 const days = (n: number) => (n === 1 ? "1 day" : `${n} days`);
 
@@ -126,41 +135,83 @@ export const EVENTS: SeasonEvent[] = [
     countries: ["AU", "US"],
     kind: "sale",
     date: blackFriday,
-    leadDays: 84,
+    leadDays: 118,
+    startDate: (y) => ymd(y, 8, 1),
     endOffset: 4,
-    why: "Black Friday is the biggest sales weekend of the year. Stock takes weeks to arrive, and ads and emails need to be built before the rush.",
+    reviewDays: 50,
+    why: "For many stores, Black Friday and Cyber Monday is the biggest sales window of the year. The stores that do best do not start in November. They start testing ads and offers months before, so by launch day they already know what sells.",
     headline: ({ daysTo, weeksTo, month }) =>
-      daysTo > 42 ? `It's ${month}. Black Friday planning needs to start now: order stock, lock your offer, start creative.`
-      : daysTo > 14 ? `Black Friday is ${weeks(weeksTo)} away. Build your sale campaigns (switched off), plan your emails and grow your list now.`
-      : daysTo > 0 ? `Black Friday is ${days(daysTo)} away. Freeze site changes, test every discount code and start your hype ads.`
-      : `Black Friday weekend is live. Check MER every day against your plan and refresh ads halfway through.`,
+      daysTo < -4 ? "Black Friday and Cyber Monday are done: review what worked and write next year's test plan while it is fresh."
+      : daysTo <= 0 ? "Black Friday weekend is live: check your results every day, put more behind the winners and refresh ads halfway through."
+      : daysTo <= 14 ? `Black Friday is ${days(daysTo)} away: freeze site changes, test every discount code and start your hype ads.`
+      : month === "August" ? "It's August, and Black Friday starts now: look back at last year, set your targets and start testing ads and offers."
+      : month === "September" ? "It's September, time to commit for Black Friday: order stock, lock your offer and scale the tests that are winning."
+      : month === "October" ? "It's October, the build month for Black Friday: finalise your ads, warm up your audiences, build your emails and load stock."
+      : `Black Friday is ${weeks(weeksTo)} away: campaigns built and paused, emails loaded, stock in and counted.`,
     tasks: [
-      { id: "offer", offset: -56, title: "Set your target and lock your offer", steps: [
-        "Write down a sales target for the weekend and the most you will spend on ads.",
-        "Pick one simple offer (for example 25% off sitewide, or a gift with purchase).",
-        "Check the offer still leaves profit after product cost, shipping and ads.",
+      // August: look back, test, grow the list
+      { id: "lookback", offset: -118, fixed: [8, 1], title: "Look back at last year and set your targets", steps: [
+        "Pull last year's Black Friday to Cyber Monday numbers: sales, orders, ad spend, profit and what sold out.",
+        "No sale last year? Use 3 times a normal week as your starting point.",
+        "Write down this year's sales target, the most you will spend on ads and the profit you want to keep.",
       ], learn: LEARN.bigSale },
-      { id: "stock", offset: -56, title: "Order stock and gifts", steps: [
-        "Look at last year's sale (or 3 times a normal week if this is your first).",
-        "Order enough of your best sellers to cover it, plus any free gifts.",
-        "Ask your supplier for the latest date stock can still arrive.",
-      ], learn: LEARN.stock },
-      { id: "creative", offset: -49, title: "Brief your sale ads", steps: [
-        "Plan 5 to 10 new ads: product close-ups, customer videos and a clear offer image.",
-        "Book any creators now. They get busy in November.",
+      { id: "angles", offset: -111, title: "Start testing ad angles and creatives", steps: [
+        "Pick 3 to 5 different reasons to buy (the problem you solve, a gift idea, a customer story, a bold claim you can prove).",
+        "Make 2 or 3 simple ads for each and run them on a small daily budget you are happy to learn with.",
+        "Each week, keep a list of the winners: the ads with the lowest cost per sale. November ads get built from this list.",
       ], learn: LEARN.brief },
-      { id: "list", offset: -42, title: "Grow your email and SMS list", steps: [
-        "Run an 'early access' sign-up so people join before the sale.",
-        "Spend a little more on new-customer ads now, while they are cheaper.",
+      { id: "list", offset: -104, title: "Start building your email and SMS list", steps: [
+        "Add or refresh your sign-up pop-up with a reason to join (early access, a gift or first pick of stock).",
+        "Every subscriber you add now is a customer you can reach in November without paying for an ad.",
+        "Spend a little on new-customer ads now, while ads are cheaper than in November.",
       ], learn: LEARN.list },
-      { id: "emails", offset: -35, title: "Plan your sale emails and texts", steps: [
-        "Write the schedule: teaser, early access, launch, reminder, last chance.",
-        "Load them into your email tool and set them to send.",
+      { id: "offertest", offset: -97, title: "Test your offer ideas early", steps: [
+        "Pick 2 or 3 offers you could run (for example 20% off, a gift with purchase or a bundle price).",
+        "Check each one still leaves profit after product cost, shipping and ads.",
+        "Try them on small audiences or emails now so you know which one people respond to.",
+      ], learn: LEARN.pricing },
+      // September: commit
+      { id: "stock", offset: -84, title: "Order stock 10 to 12 weeks out", steps: [
+        "Size the order from last year's sale (or 3 times a normal week) for your best sellers, plus any free gifts.",
+        "Ask your supplier for the latest date stock can still arrive, and add a buffer for delays.",
+        "Check you have the cash for it in your cash flow forecast.",
+      ], learn: LEARN.stock },
+      { id: "offer", offset: -77, title: "Lock your offer", steps: [
+        "Pick the offer that tested best and still leaves profit.",
+        "Write it in one short line a customer understands in 2 seconds.",
+        "Decide the start and end dates, and whether your list gets early access.",
+      ], learn: LEARN.bigSale },
+      { id: "scale", offset: -70, title: "Scale your winning tests", steps: [
+        "Move budget from the ads that lost to the ads that won, in steps of about 20% every few days.",
+        "Make new versions of the winners: new opening lines, new faces, new formats.",
+        "Book any creators now. They get busy in October and November.",
+      ], learn: LEARN.seasonalAds },
+      // October: build
+      { id: "creative", offset: -56, title: "Finalise your sale creatives", steps: [
+        "Build 5 to 10 sale ads from your winning angles, with the offer clear in the first second.",
+        "Make versions for feed, stories and reels, plus a simple offer image.",
+        "Match your site banner and emails to the same look and message.",
+      ], learn: LEARN.brief },
+      { id: "warmup", offset: -49, title: "Warm up your audiences", steps: [
+        "Keep spending on new-customer ads so more people know you before the sale.",
+        "Grow your warm audiences: video viewers, social followers and site visitors.",
+        "Push the early-access sign-up hard. These are the people who buy first.",
+      ], learn: LEARN.list },
+      { id: "emails", offset: -42, title: "Build your email and SMS flows", steps: [
+        "Write the schedule: teaser, early access, launch, reminder, last chance and Cyber Monday.",
+        "Check your welcome and abandoned cart flows are on and up to date.",
+        "Load everything into your email tool and set the send times.",
       ], learn: LEARN.saleEmails },
+      { id: "loaded", offset: -35, title: "Load stock and get ready to ship", steps: [
+        "Check the stock has arrived, is counted and is showing on the site.",
+        "Order extra packaging and plan who packs orders during the rush.",
+        "Set your shipping times and Christmas cut-off message.",
+      ], learn: LEARN.shipping },
       { id: "campaigns", offset: -28, title: "Build your sale campaigns, switched off", steps: [
         "Set up the sale campaigns in Ads Manager now, paused, so launch day is one click.",
         "Helix can draft a paused campaign for you from the Builder.",
       ], learn: LEARN.seasonalAds },
+      // November: launch
       { id: "freeze", offset: -14, title: "Freeze the site and test every code", steps: [
         "No big theme or app changes from now until the sale ends.",
         "Place a test order with every discount code on phone and desktop.",
@@ -173,9 +224,19 @@ export const EVENTS: SeasonEvent[] = [
         "Switch on the sale campaigns and send the launch email.",
         "Check the site, codes and stock every few hours.",
       ], learn: LEARN.running },
-      { id: "review", offset: 7, title: "Review the sale", steps: [
+      { id: "monitor", offset: 1, title: "Check results daily and scale the winners", steps: [
+        "Each morning, check sales, ad spend, MER and stock against your plan.",
+        "Put more behind the ads that sell, and switch off the ones that do not.",
+        "Refresh ads halfway through, and send the Cyber Monday last-chance email and text.",
+      ], learn: LEARN.running },
+      // December and January: review
+      { id: "review", offset: 14, title: "Review the sale", steps: [
         "Compare sales, ad spend and profit against your target.",
         "Write 3 things to keep and 3 to change for next year.",
+      ], learn: LEARN.after },
+      { id: "nextyear", offset: 45, title: "Write next year's test plan", steps: [
+        "List the ad angles, offers and products that won, and the ones that did not.",
+        "Write down what you will test from February so next year's sale starts ahead.",
       ], learn: LEARN.after },
     ],
   },
@@ -388,6 +449,9 @@ export const CALENDAR_ONLY: CalendarOnly[] = [
     note: "The Monday after Black Friday. Usually the last big day of the sale weekend. Plan a final reminder email and text." },
 ];
 
+/** Days before the event that the alert (and prep plan) starts. */
+export const leadFor = (ev: SeasonEvent, year: number) => (ev.startDate ? daysBetween(ev.startDate(year), ev.date(year)) : ev.leadDays);
+
 export type CalendarEntry = {
   key: string;
   eventKey: string;
@@ -402,6 +466,8 @@ export type CalendarEntry = {
   planSteps?: number;
   /** Business admin dates: the playbook lesson ref, e.g. "26.1". */
   lesson?: string;
+  /** Black Friday prep steps: the plan they belong to, e.g. "black-friday-2027". */
+  planKey?: string;
 };
 
 /** Every key date for a country in the next `horizon` days, soonest first. */
@@ -414,7 +480,7 @@ export function upcomingEvents(today: string, country: Country, horizon = 365): 
       const date = ev.date(year);
       const daysTo = daysBetween(today, date);
       if (daysTo < 0 || daysTo > horizon) continue;
-      out.push({ key: `${ev.key}-${year}`, eventKey: ev.key, name: ev.name, date, daysTo, kind: ev.kind, note: ev.why, prepFrom: addDays(date, -ev.leadDays), planSteps: ev.tasks.length });
+      out.push({ key: `${ev.key}-${year}`, eventKey: ev.key, name: ev.name, date, daysTo, kind: ev.kind, note: ev.why, prepFrom: addDays(date, -leadFor(ev, year)), planSteps: ev.tasks.length });
     }
     for (const ev of CALENDAR_ONLY) {
       if (!ev.countries.includes(country)) continue;
@@ -432,7 +498,8 @@ export const countdownText = (daysTo: number) => (daysTo === 0 ? "today" : daysT
 function toAlert(ev: SeasonEvent, year: number, today: string): SeasonAlert | null {
   const date = ev.date(year);
   const daysTo = daysBetween(today, date);
-  if (daysTo > ev.leadDays || daysTo < -ev.endOffset) return null;
+  const reviewing = daysTo < -ev.endOffset;
+  if (daysTo > leadFor(ev, year) || daysTo < -Math.max(ev.endOffset, ev.reviewDays ?? 0)) return null;
   const key = `${ev.key}-${year}`;
   const month = MONTHS[Number(today.slice(5, 7)) - 1];
   const ctx: AlertCtx = { today, date, daysTo, weeksTo: Math.max(1, Math.round(daysTo / 7)), month };
@@ -445,9 +512,10 @@ function toAlert(ev: SeasonEvent, year: number, today: string): SeasonAlert | nu
     headline: ev.headline(ctx),
     why: ev.why,
     tasks: ev.tasks.map((t) => {
-      const due = addDays(date, t.offset);
+      const due = dueOf(t, date);
       return { ...t, taskId: `season-${key}-${t.id}`, due, overdue: due < today };
     }),
+    reviewing,
   };
 }
 
@@ -459,7 +527,8 @@ export function seasonalAlerts(today: string, country: Country = "AU"): SeasonAl
     const a = toAlert(ev, year, today);
     if (a) out.push(a);
   }
-  return out.sort((a, b) => a.daysTo - b.daysTo || a.name.localeCompare(b.name));
+  // Review-only plans go last, so an upcoming date always comes first.
+  return out.sort((a, b) => Number(a.reviewing) - Number(b.reviewing) || a.daysTo - b.daysTo || a.name.localeCompare(b.name));
 }
 
 /** The one alert to show prominently. Events that have already started stay on top while they run. */
@@ -476,7 +545,7 @@ export function alertByKey(key: string, today: string): SeasonAlert | null {
   const date = ev.date(Number(m[2]));
   const daysTo = daysBetween(today, date);
   // Build with a wide window so a plan stays viewable after the alert ends.
-  return toAlert({ ...ev, leadDays: Math.max(ev.leadDays, daysTo), endOffset: Math.max(ev.endOffset, -daysTo) }, Number(m[2]), today);
+  return toAlert({ ...ev, startDate: undefined, leadDays: Math.max(leadFor(ev, Number(m[2])), daysTo), endOffset: Math.max(ev.endOffset, -daysTo) }, Number(m[2]), today);
 }
 
 /** Next undone tasks: anything due now (overdue or today) first, then the next upcoming one. */
@@ -485,3 +554,75 @@ export function nextTasks(alert: SeasonAlert, done: Set<string>, n = 3): Planned
 }
 
 export const SEASON_TASK_ID = /^season-[a-z-]+-\d{4}-[a-z]+$/;
+
+// ---------- Black Friday and Cyber Monday, all year ----------
+
+/** Why BFCM matters. Shown on the home page, the Today banner and the calendar. */
+export const BFCM_CRITICAL = {
+  title: "Black Friday is won months before November",
+  lead: "For many stores, Black Friday and Cyber Monday is the biggest sales window of the year. For some, those four days bring in more than a normal month.",
+  body: "The stores that do best do not start in November. They start testing ads and offers in August, order stock in September and build in October, so by launch day they already know which ads, offers and products sell. Stores that start in November are guessing, with the most expensive ads of the year.",
+};
+
+export type BfcmStage = { months: string; title: string; taskIds: string[] };
+/** The staged plan, month by month. Task ids point at the Black Friday prep plan above. */
+export const BFCM_STAGES: BfcmStage[] = [
+  { months: "August", title: "Look back, set targets, start testing", taskIds: ["lookback", "angles", "list", "offertest"] },
+  { months: "September", title: "Order stock, lock the offer, scale winners", taskIds: ["stock", "offer", "scale"] },
+  { months: "October", title: "Build creatives, warm up, load stock", taskIds: ["creative", "warmup", "emails", "loaded", "campaigns"] },
+  { months: "November", title: "Launch, check daily, scale winners", taskIds: ["freeze", "hype", "launch", "monitor"] },
+  { months: "December and January", title: "Review and plan next year", taskIds: ["review", "nextyear"] },
+];
+
+const bfEvent = () => EVENTS.find((e) => e.key === "black-friday")!;
+
+/** The Black Friday plan's tasks, by id, for showing the staged plan. */
+export const bfcmTask = (id: string) => bfEvent().tasks.find((t) => t.id === id);
+
+export type BfcmTip = { title: string; text: string; daysToPlanning: number };
+const TIPS: Record<number, string> = {
+  1: "Write down which ads, offers and products won last Black Friday while you still remember. That list is where next year's tests start.",
+  2: "Test one new ad angle this month and note the winner. The ads you run in November will be built from what wins now.",
+  3: "Try a different offer on a small audience or one email: a bundle, a gift with purchase or free shipping. Learn which one people respond to before it matters.",
+  4: "Every email and SMS subscriber you add now is someone you can reach on Black Friday without paying for an ad. Check your sign-up pop-up this week.",
+  5: "Note which products sell fastest and how long your supplier takes. You will need both numbers when you order Black Friday stock in September.",
+  6: "Use your mid-year sale as a practice run: test the offer, the emails and how your site copes with a rush. Write down what to change.",
+  7: "Black Friday planning starts on 1 August. Find last year's numbers now so you can set your targets on day one.",
+};
+
+/**
+ * A light "test now for Black Friday" nudge for the months outside the main plan.
+ * Returns null while the Black Friday plan itself is showing (1 August to the review).
+ */
+export function bfcmTip(today: string): BfcmTip | null {
+  const y = Number(today.slice(0, 4));
+  for (const year of [y - 1, y]) {
+    const date = blackFriday(year);
+    const d = daysBetween(today, date);
+    if (d <= leadFor(bfEvent(), year) && d >= -(bfEvent().reviewDays ?? 0)) return null;
+  }
+  const month = Number(today.slice(5, 7));
+  const start = month >= 8 ? ymd(y + 1, 8, 1) : ymd(y, 8, 1);
+  return { title: "Test now for Black Friday", text: TIPS[month] ?? TIPS[1], daysToPlanning: daysBetween(today, start) };
+}
+
+/**
+ * Black Friday prep steps as calendar entries, on their due dates, so the calendar shows the
+ * whole runway from August to November. Only future steps within the horizon are listed.
+ */
+export function bfcmPlanEntries(today: string, country: Country, horizon = 365): CalendarEntry[] {
+  const ev = bfEvent();
+  if (!ev.countries.includes(country)) return [];
+  const y = Number(today.slice(0, 4));
+  const out: CalendarEntry[] = [];
+  for (const year of [y - 1, y, y + 1]) {
+    const date = ev.date(year);
+    for (const t of ev.tasks) {
+      const due = dueOf(t, date);
+      const daysTo = daysBetween(today, due);
+      if (daysTo < 0 || daysTo > horizon || t.offset === 0) continue;
+      out.push({ key: `bfcm-${year}-${t.id}`, eventKey: "black-friday-prep", name: `Black Friday prep: ${t.title}`, date: due, daysTo, kind: "prep", note: t.steps[0], prepFrom: undefined, planKey: `black-friday-${year}` });
+    }
+  }
+  return out;
+}

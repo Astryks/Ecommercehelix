@@ -28,6 +28,9 @@ export default function Learn() {
           <Link href="/learn/words" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-cyan-800 hover:border-cyan-300">
             New to this? Start with the words to know (one line each)
           </Link>
+          <Link href="/learn/goals" className="ml-2 mt-2 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-800 hover:border-emerald-300">
+            The goals ladder: the 9 numbers to aim at, from visits to net profit
+          </Link>
         </p>
         <section aria-labelledby="framework-h" className="mt-10">
           <h2 id="framework-h" className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Three stages: Attract, Convert, Grow</h2>

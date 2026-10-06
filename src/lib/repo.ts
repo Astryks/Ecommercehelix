@@ -5,6 +5,7 @@ import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Set
 import { isoDay, addDays } from "./dates";
 import { toTrack, type TrackId } from "./tracks";
 import { toCountry, type Country } from "./seasons";
+import type { Goals } from "./goals";
 import { dayExTax, productExTax, taxRate, toTaxMode, type SalesTaxMode } from "./tax";
 import { isDemoUserId, mayLinkByEmail } from "./demo-auth";
 import { exampleStock, exampleSuppliers, type StockItem, type Supplier } from "./stock";
@@ -30,14 +31,16 @@ type Mem = {
   seasonPlans: Map<string, SeasonPlanRow[]>;
   suppliers: Map<string, Supplier[]>;
   stock: Map<string, StockItem[]>;
+  goals: Map<string, Goals>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map() });
 mem.seasonPlans ??= new Map(); // older hot-reloaded stores
 mem.suppliers ??= new Map();
 mem.stock ??= new Map();
+mem.goals ??= new Map();
 
 export const DEFAULT_SETTINGS: Settings = { monthlyRevenueTarget: 60000, targetMerPct: 30, fixedCostsMonthly: 9000 };
 
@@ -186,6 +189,19 @@ export async function decideApproval(userId: string, id: string, status: "approv
   if (!row || row.status !== "pending") return;
   await prisma.approval.update({ where: { id }, data: { status, decidedAt: new Date() } });
   return row.taskId;
+}
+
+// ---------- monthly goals ladder ----------
+/** The user's monthly goals, or null when they have not set any (callers fall back to track defaults). */
+export async function getGoals(userId: string): Promise<Goals | null> {
+  if (!hasDb) return mem.goals.get(userId) ?? null;
+  const r = await prisma.monthlyGoals.findUnique({ where: { userId } });
+  return r ? { sessions: r.sessions, ctrPct: r.ctrPct, atcPct: r.atcPct, crPct: r.crPct, aov: r.aov, cpa: r.cpa, contributionPct: r.contributionPct, netProfit: r.netProfit } : null;
+}
+
+export async function saveGoals(userId: string, goals: Goals) {
+  if (!hasDb) return void mem.goals.set(userId, goals);
+  await prisma.monthlyGoals.upsert({ where: { userId }, create: { userId, ...goals }, update: goals });
 }
 
 // ---------- scorecard ----------

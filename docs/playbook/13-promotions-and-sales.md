@@ -135,8 +135,8 @@ Grow your sale plan as you gain experience.
 
 Plan the whole busy season, not just one weekend.
 
-1. **Early autumn:** grow your list.
-2. **Black Friday and Cyber Monday.**
+1. **All year:** test ad angles and offers and grow your list, so you know what works before the busy season.
+2. **Black Friday and Cyber Monday.** For many stores this is the biggest sales window of the year, so plan it in stages. August: look back at last year, set targets and start testing ads and offers. September: order stock 10 to 12 weeks out, lock the offer and scale the winning tests. October: finalise creative, warm up audiences, build email flows and load stock. November: launch, check results daily and scale the winners. December and January: review and write next year's test plan.
 3. **Gifting campaigns** with delivery cut-off dates ("order by the 18th for Christmas").
 4. **Boxing Day and the quiet weeks after.** Some call this the "fifth quarter". Ad costs drop, so new customers can be cheaper to win.
 5. **End of financial year sales** matter in some countries (for example June in Australia).

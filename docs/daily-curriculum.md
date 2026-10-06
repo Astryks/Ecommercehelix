@@ -1031,7 +1031,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 *Topic: Black Friday · Stage 6 · 30 minutes · SOP 15*
 
-**Why it matters.** The biggest sale of the year is won weeks before it starts. Set your target, offer, stock, email list, ads and site speed.
+**Why it matters.** The biggest sale of the year is won months before it starts. Planning begins in August: test ads and offers early, then set your target, offer, stock, email list, ads and site speed.
 
 **How to do it.**
 

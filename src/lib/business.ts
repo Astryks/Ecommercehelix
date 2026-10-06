@@ -1,5 +1,5 @@
 import { addDays } from "./dates";
-import { daysBetween, upcomingEvents, type CalendarEntry, type Country } from "./seasons";
+import { bfcmPlanEntries, daysBetween, upcomingEvents, type CalendarEntry, type Country } from "./seasons";
 
 /**
  * Run your business: the 13 operating topics store owners ask about most (fulfilment, shipping,
@@ -144,7 +144,7 @@ export function calendarWithAdmin(today: string, country: Country, horizon = 365
     key: a.key, eventKey: a.adminKey, name: a.name, date: a.date, daysTo: a.daysTo, kind: "admin", note: a.note, lesson: a.lesson,
     prepFrom: addDays(a.date, -(ADMIN_DATES.find((d) => d.key === a.adminKey)?.remindDays ?? 14)),
   }));
-  return [...upcomingEvents(today, country, horizon), ...admin].sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name));
+  return [...upcomingEvents(today, country, horizon), ...bfcmPlanEntries(today, country, horizon), ...admin].sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name));
 }
 
 /** "26.1" -> the playbook file slug for module 26. */

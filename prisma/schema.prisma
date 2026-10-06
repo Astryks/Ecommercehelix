@@ -37,6 +37,7 @@ model User {
   seasonPlans    SeasonPlan[]
   suppliers      Supplier[]
   stockItems     StockItem[]
+  monthlyGoals   MonthlyGoals?
   stockSeeded    Boolean            @default(false) // example suppliers and stock added once
 }
 
@@ -138,6 +139,21 @@ model ScorecardSettings {
   targetMerPct         Float  @default(30)
   fixedCostsMonthly    Float  @default(9000)
   user                 User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+/// Monthly goals ladder, set in onboarding or on /dashboard/goals. MER target lives in ScorecardSettings.
+model MonthlyGoals {
+  userId          String   @id
+  sessions        Int      @default(30000)
+  ctrPct          Float    @default(1.2)
+  atcPct          Float    @default(7.5)
+  crPct           Float    @default(2.2)
+  aov             Float    @default(92)
+  cpa             Float    @default(28)
+  contributionPct Float    @default(20)
+  netProfit       Float    @default(3000)
+  updatedAt       DateTime @updatedAt
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model ScorecardDay {

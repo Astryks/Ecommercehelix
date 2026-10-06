@@ -7,12 +7,14 @@ import { calendarWithAdmin } from "@/lib/business";
 import { lessonLink } from "@/lib/lesson-links";
 import { isoDay, prettyDay } from "@/lib/dates";
 import { appUrl } from "@/lib/meta/config";
+import { BfcmCritical } from "@/components/BfcmPlan";
 
 const KIND: Record<Kind, { label: string; chip: string }> = {
   sale: { label: "Sale", chip: "bg-rose-50 text-rose-700 ring-rose-200" },
   gifting: { label: "Gifting", chip: "bg-violet-50 text-violet-700 ring-violet-200" },
   seasonal: { label: "Seasonal", chip: "bg-sky-50 text-sky-700 ring-sky-200" },
   admin: { label: "Business admin", chip: "bg-slate-100 text-slate-700 ring-slate-300" },
+  prep: { label: "Black Friday prep", chip: "bg-orange-50 text-orange-800 ring-orange-200" },
 };
 const monthName = (iso: string) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-AU", { month: "long", year: "numeric", timeZone: "UTC" });
 
@@ -36,7 +38,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><CalendarDays className="h-7 w-7 text-cyan-600" aria-hidden /> Calendar</h1>
-          <p className="mt-1 max-w-2xl text-slate-600">Every key sale and gifting date for the next 12 months, plus business admin dates like BAS, tax returns and security checks. Big dates come with a prep plan, and Helix warns you on Today before each one.</p>
+          <p className="mt-1 max-w-2xl text-slate-600">Every key sale and gifting date for the next 12 months, plus business admin dates like BAS, tax returns and security checks. Big dates come with a prep plan, and Helix warns you on Today before each one. Black Friday prep starts on 1 August, and each step is on its own date below.</p>
         </div>
         <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold" role="tablist" aria-label="Country">
           {COUNTRIES.map((c) => (
@@ -45,6 +47,8 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
           ))}
         </div>
       </div>
+
+      <div className="mt-6"><BfcmCritical today={today} /></div>
 
       <div className="card mt-6 flex flex-wrap items-center gap-3 p-4 text-sm">
         <span className="font-semibold text-slate-800">Add these dates to your own calendar:</span>
@@ -60,8 +64,8 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
             <h2 id={`m-${m}`} className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{monthName(m + "-01")}</h2>
             <ol className="mt-3 space-y-3">
               {events.filter((e) => e.date.startsWith(m)).map((e) => (
-                <li key={e.key} className="card flex gap-4 p-4">
-                  <div className="flex w-16 flex-none flex-col items-center justify-center rounded-xl bg-slate-900 py-2 text-white">
+                <li key={e.key} className={`card flex gap-4 p-4 ${e.kind === "prep" ? "border-l-4 border-l-orange-400" : ""}`}>
+                  <div className={`flex w-16 flex-none flex-col items-center justify-center rounded-xl py-2 text-white ${e.kind === "prep" ? "bg-cyan-700" : "bg-slate-900"}`}>
                     <span className="text-[11px] font-semibold uppercase">{new Date(e.date + "T12:00:00Z").toLocaleDateString("en-AU", { month: "short", timeZone: "UTC" })}</span>
                     <span className="text-2xl font-bold leading-none">{Number(e.date.slice(8))}</span>
                   </div>
@@ -80,6 +84,14 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
                           : <span className="text-slate-600">{e.planSteps}-step prep plan. Helix alerts you on Today from {prettyDay(e.prepFrom!)}.</span>}
                       </p>
                     ) : null}
+                    {e.kind === "prep" && e.planKey && (
+                      <p className="mt-2 flex flex-wrap items-center gap-2 text-xs">
+                        <ListPlus className="h-3.5 w-3.5 text-orange-600" aria-hidden />
+                        {added.has(e.planKey) ? <Link href="/dashboard#season" className="font-semibold text-emerald-700 underline">In your Black Friday prep plan on Today</Link>
+                          : active.has(e.planKey) ? <Link href="/dashboard#season" className="font-semibold text-orange-700 underline">Part of the Black Friday prep plan. Add it on Today in one click</Link>
+                          : <span className="text-slate-600">Part of the Black Friday prep plan. Helix adds it to Today from 1 August.</span>}
+                      </p>
+                    )}
                     {e.kind === "admin" && e.lesson && (() => {
                       const l = lessonLink(e.lesson);
                       return l ? <p className="mt-2 text-xs"><Link href={l.href} className="font-semibold text-cyan-700 underline">Lesson {e.lesson}: {l.title}</Link> <span className="text-slate-500">· General information, not tax or legal advice.</span></p> : null;

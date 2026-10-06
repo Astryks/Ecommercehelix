@@ -2,9 +2,10 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, CalendarClock, Check, CheckCircle2, ListPlus, Mail } from "lucide-react";
 import { addDays, prettyDay } from "@/lib/dates";
 import type { SeasonAlert } from "@/lib/seasons";
+import { BfcmTimeline, bfcmStageIndex } from "@/components/BfcmPlan";
 
 const countdown = (a: SeasonAlert) =>
-  a.daysTo > 1 ? `${a.daysTo} days to ${a.name}` : a.daysTo === 1 ? `${a.name} is tomorrow` : a.daysTo === 0 ? `${a.name} is today` : `${a.name} is on now`;
+  a.reviewing ? `${a.name} review` : a.daysTo > 1 ? `${a.daysTo} days to ${a.name}` : a.daysTo === 1 ? `${a.name} is tomorrow` : a.daysTo === 0 ? `${a.name} is today` : `${a.name} is on now`;
 
 /** Public home page version: real date, links to the free prep plan. */
 export function SeasonalStrip({ alert }: { alert: SeasonAlert }) {
@@ -41,15 +42,23 @@ export function SeasonalAlertCard({ alert, others, planAdded, done, addAction, d
   const open = sorted.filter((t) => !done.has(t.taskId));
   const show = open.slice(0, 3);
   const rest = sorted.filter((t) => !show.includes(t));
+  const bfcm = alert.eventKey === "black-friday" && !alert.reviewing;
   return (
     <section id="season" aria-labelledby="season-h" className="overflow-hidden rounded-xl border border-orange-200 bg-white shadow-sm">
       <div className="bg-cyan-100 px-6 py-5 text-slate-950">
         <div className="flex flex-wrap items-center gap-2 text-xs font-bold">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/45 px-2.5 py-1"><CalendarClock className="h-3.5 w-3.5" aria-hidden /> Seasonal alert</span>
           <span className="rounded-full bg-slate-950/10 px-2.5 py-1">{countdown(alert)} ({prettyDay(alert.date)})</span>
+          {bfcm && <span className="rounded-full bg-slate-950 px-2.5 py-1 text-white">Critical: the biggest sales window of the year for many stores</span>}
         </div>
         <h2 id="season-h" className="mt-3 text-xl font-bold leading-snug tracking-tight sm:text-2xl">{alert.headline}</h2>
         <p className="mt-2 max-w-3xl text-sm text-slate-900/80">{alert.why}</p>
+        {bfcm && (
+          <div className="mt-4">
+            <p className="mb-2 text-xs font-bold uppercase tracking-[0.14em] text-slate-900/70">The plan, month by month</p>
+            <BfcmTimeline current={bfcmStageIndex(addDays(alert.date, -alert.daysTo))} showTasks={false} />
+          </div>
+        )}
         {!planAdded && (
           <form action={addAction} className="mt-4 flex flex-wrap items-center gap-3">
             <input type="hidden" name="planKey" value={alert.key} />

@@ -27,7 +27,7 @@ describe("calendar dates", () => {
     expect(us).not.toContain("boxing-day");
     expect(us).not.toContain("eofy");
   });
-  it("keeps Black Friday as the October alert in both countries", () => {
+  it("keeps Black Friday as the October alert in both countries (it starts in August)", () => {
     expect(primaryAlert("2026-10-06", "AU")?.eventKey).toBe("black-friday");
     expect(primaryAlert("2026-10-06", "US")?.eventKey).toBe("black-friday");
     expect(primaryAlert("2027-05-20", "US")?.eventKey).toBe("fathers-day-us");
@@ -48,6 +48,8 @@ describe("ics export", () => {
     expect(ics).toContain("DTSTART;VALUE=DATE:20261127");
     expect(ics).toContain("SUMMARY:Start prep: Christmas shipping cut-offs");
     expect(ics).toContain("SUMMARY:Click Frenzy");
+    expect(ics).toContain("SUMMARY:Black Friday prep: Warm up your audiences");
+    expect(ics).toContain("DTSTART;VALUE=DATE:20270801");
   });
 });
 
