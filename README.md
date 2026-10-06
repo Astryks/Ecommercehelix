@@ -41,9 +41,9 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 
 | Doc | What it covers |
 | --- | --- |
-| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 21 modules of original lessons, checklists, examples and self-checks (also served in the app at /learn). |
+| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 22 modules of original lessons, checklists, examples and self-checks (also served in the app at /learn). |
 | [docs/daily-curriculum.md](docs/daily-curriculum.md) | The Growing track: 64 days, one lesson, one topic, one action per day, ordered by store stage (generated). |
-| [docs/daily-curriculum-starting.md](docs/daily-curriculum-starting.md) | The Just starting track: 21 lighter days for new founders (product and offer, store basics, first small test campaign) (generated). |
+| [docs/daily-curriculum-starting.md](docs/daily-curriculum-starting.md) | The Just starting track: 28 lighter days for new founders (product and offer, Shopify store setup step by step, first small test campaign) (generated). |
 | [docs/audit-engine.md](docs/audit-engine.md) | Proactive audits: schedules, crawler, PageSpeed, API pulls, cross-diagnosis rules, Insights. |
 | [docs/email-automation.md](docs/email-automation.md) | Nine email and SMS flows with draft copy; suggest, draft, approve, set up. |
 | [docs/execution-model.md](docs/execution-model.md) | Draft & you launch (paused drafts, user launches) and Guide me modes. What Helix may and may not do. |
@@ -98,14 +98,14 @@ Everything is written in plain words: short sentences, numbered steps, and a one
 
 **Calendar.** `/dashboard/calendar` lists every key date for the next 12 months by country (Australia and United States to start), with countdowns: Black Friday, Cyber Monday, Click Frenzy, Singles Day, Christmas cut-offs, Boxing Day, Easter, back to school, Valentine's Day, Mother's Day, Father's Day (AU and US), EOFY, Memorial Day, Fourth of July, Labor Day, Halloween and Thanksgiving. Today shows an "Upcoming key dates" strip with the next six. Export as `.ics` (`/api/calendar?country=AU&download=1`) or subscribe (Google Calendar and webcal links; these need a public URL).
 
-**Two tracks.** Onboarding (`/start`) asks for the store link, the track and the country. **Just starting** (new founders with little or no sales): 21 lighter days covering product and offer checks, store basics and a first small-budget test campaign. **Growing** (stores with regular sales): the 64-day programme covering profit tracking, scaling, retention and Black Friday. Switch any time in Settings (`/dashboard/settings`); progress on each track is kept.
+**Two tracks.** Onboarding (`/start`) asks for the store link, the track and the country. **Just starting** (new founders with little or no sales): 28 lighter days covering product and offer checks, a step-by-step Shopify store setup and a first small-budget test campaign. **Growing** (stores with regular sales): the 64-day programme covering profit tracking, scaling, retention and Black Friday. Switch any time in Settings (`/dashboard/settings`); progress on each track is kept.
 
 A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root and deploys to Vercel.
 
 | Area | Route | Status |
 | --- | --- | --- |
 | Marketing home, About, pricing, FAQ | `/`, `/about` | Real |
-| Learn (21 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
+| Learn (22 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
 | Sign-in (Google, email magic link, or demo login) | `/signin` | Real (Auth.js v5) |
 | Onboarding: store link, track (Just starting or Growing), country | `/start` | Real |
 | Today: seasonal alert and prep plan, upcoming key dates, day N lesson + action for your track, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |

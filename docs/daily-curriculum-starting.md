@@ -24,29 +24,36 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 6 | Remove the risk | Make buying feel safe | [3.5 Remove risk](playbook/03-offer-and-product.md#lesson-35-remove-risk) | 10 min | Guide |
 | 7 | First proof | Collect your first reviews and photos | [3.3 Stack belief](playbook/03-offer-and-product.md#lesson-33-stack-belief) | 15 min | Guide |
 
-## Stage 2: Get your store ready (Days 8 to 14)
+## Stage 2: Set up your Shopify store (Days 8 to 20)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 8 | The 5-second test | Check your home page makes sense in 5 seconds | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 10 min | Free: Run a store check-up on your home page |
-| 9 | Product page basics | Tick off the product page basics | [9.5 Copy that sells](playbook/09-website-and-cro.md#lesson-95-copy-that-sells) | 15 min | Starter: Draft product page copy for your top product |
-| 10 | Shipping and returns | Write shipping and returns in plain words | [9.6 Policies and service](playbook/09-website-and-cro.md#lesson-96-policies-and-service) | 10 min | Guide |
-| 11 | Speed and phone check | Check your store on a phone | [9.4 Speed](playbook/09-website-and-cro.md#lesson-94-speed) | 10 min | Guide |
-| 12 | Start your list | Add an email sign-up and a welcome email | [10.1 Sign-up forms](playbook/10-email-sms-whatsapp.md#lesson-101-sign-up-forms) | 15 min | Starter: Draft your welcome email |
-| 13 | Tracking | Install the Meta pixel and Google tag | [20.1 Before you launch: tracking you can trust](playbook/20-ad-analysis-audiences-and-setup.md#lesson-201-before-you-launch-tracking-you-can-trust) | 15 min | Guide |
-| 14 | Daily numbers | Start your 2-minute morning numbers | [1.6 A 2-minute morning routine](playbook/01-daily-profit-foundations.md#lesson-16-a-2-minute-morning-routine) | 5 min | Guide |
+| 8 | Plan the store | Plan your store before you build | [22.1 Plan before you build](playbook/22-shopify-store-setup.md#lesson-221-plan-before-you-build) | 15 min | Guide |
+| 9 | Domain and email | Connect your own domain and email | [22.2 Domain and email](playbook/22-shopify-store-setup.md#lesson-222-domain-and-email) | 15 min | Guide |
+| 10 | Theme | Pick a free theme and set your brand basics | [22.3 Choose and set up a theme](playbook/22-shopify-store-setup.md#lesson-223-choose-and-set-up-a-theme) | 15 min | Guide |
+| 11 | Home page | Build a home page that makes sense in 5 seconds | [22.4 Build the home page](playbook/22-shopify-store-setup.md#lesson-224-build-the-home-page) | 15 min | Free: Run a store check-up on your home page |
+| 12 | Product page | Set up your first product page | [22.5 Product pages: titles, photos and descriptions](playbook/22-shopify-store-setup.md#lesson-225-product-pages-titles-photos-and-descriptions) | 15 min | Starter: Draft product page copy for your top product |
+| 13 | Options, stock and reviews | Add variants, stock and a review app | [22.6 Variants and inventory](playbook/22-shopify-store-setup.md#lesson-226-variants-and-inventory) | 15 min | Guide |
+| 14 | Collections and menu | Group products and build your menu | [22.8 Collections, menus and search](playbook/22-shopify-store-setup.md#lesson-228-collections-menus-and-search) | 15 min | Guide |
+| 15 | Shipping | Set shipping rates and a free-shipping amount | [22.9 Shipping zones, rates and a free-shipping amount](playbook/22-shopify-store-setup.md#lesson-229-shipping-zones-rates-and-a-free-shipping-amount) | 15 min | Guide |
+| 16 | Taxes and payments | Check your tax settings and turn on payments | [22.10 Taxes: GST and sales tax basics](playbook/22-shopify-store-setup.md#lesson-2210-taxes-gst-and-sales-tax-basics) | 15 min | Guide |
+| 17 | Policies | Write your policies in plain words | [22.12 Policies and legal pages](playbook/22-shopify-store-setup.md#lesson-2212-policies-and-legal-pages) | 15 min | Guide |
+| 18 | Apps and email | Add your starter apps and email sign-up | [22.13 Essential apps (and only those)](playbook/22-shopify-store-setup.md#lesson-2213-essential-apps-and-only-those) | 15 min | Starter: Draft your welcome email |
+| 19 | Tracking | Install the Meta pixel and Google tag | [22.14 Tracking: Meta pixel, Google tag and analytics](playbook/22-shopify-store-setup.md#lesson-2214-tracking-meta-pixel-google-tag-and-analytics) | 15 min | Guide |
+| 20 | Test and launch check | Place a test order and tick the launch checklist | [22.16 Place test orders](playbook/22-shopify-store-setup.md#lesson-2216-place-test-orders) | 15 min | Guide |
 
-## Stage 3: Your first small test campaign (Days 15 to 21)
+## Stage 3: Your first small test campaign (Days 21 to 28)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 15 | Test budget | Set your test budget and your stop rule | [1.5 Your target MER and break-even numbers](playbook/01-daily-profit-foundations.md#lesson-15-your-target-mer-and-break-even-numbers) | 10 min | Guide |
-| 16 | Simple ads | Film 3 simple ads on your phone | [19.10 Shooting on a phone](playbook/19-creators-ugc-and-video-ads.md#lesson-1910-shooting-on-a-phone) | 15 min | Guide |
-| 17 | Words that stop the scroll | Write the first line for each ad | [5.7 Hooks (first 0 to 3 seconds)](playbook/05-creative-strategy.md#lesson-57-hooks-first-0-to-3-seconds) | 10 min | Starter: Draft 3 opening lines and ad text for each video |
-| 18 | Build the test | Set up your first campaign, paused | [20.3 Setting up a Meta sales campaign step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-203-setting-up-a-meta-sales-campaign-step-by-step) | 15 min | Starter: Build the test campaign as a paused draft in your account |
-| 19 | Launch and wait | Launch the test and leave it alone | [7.5 The learning phase](playbook/07-meta-ads.md#lesson-75-the-learning-phase) | 5 min | Guide |
-| 20 | Read the results | Read what your test is telling you | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Guide |
-| 21 | Your next step | Decide what to do next | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Guide |
+| 21 | Daily numbers | Start your 2-minute morning numbers | [1.6 A 2-minute morning routine](playbook/01-daily-profit-foundations.md#lesson-16-a-2-minute-morning-routine) | 5 min | Guide |
+| 22 | Test budget | Set your test budget and your stop rule | [1.5 Your target MER and break-even numbers](playbook/01-daily-profit-foundations.md#lesson-15-your-target-mer-and-break-even-numbers) | 10 min | Guide |
+| 23 | Simple ads | Film 3 simple ads on your phone | [19.10 Shooting on a phone](playbook/19-creators-ugc-and-video-ads.md#lesson-1910-shooting-on-a-phone) | 15 min | Guide |
+| 24 | Words that stop the scroll | Write the first line for each ad | [5.7 Hooks (first 0 to 3 seconds)](playbook/05-creative-strategy.md#lesson-57-hooks-first-0-to-3-seconds) | 10 min | Starter: Draft 3 opening lines and ad text for each video |
+| 25 | Build the test | Set up your first campaign, paused | [20.3 Setting up a Meta sales campaign step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-203-setting-up-a-meta-sales-campaign-step-by-step) | 15 min | Starter: Build the test campaign as a paused draft in your account |
+| 26 | Launch and wait | Launch the test and leave it alone | [7.5 The learning phase](playbook/07-meta-ads.md#lesson-75-the-learning-phase) | 5 min | Guide |
+| 27 | Read the results | Read what your test is telling you | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Guide |
+| 28 | Your next step | Decide what to do next | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Guide |
 
 ## Day detail
 
@@ -167,92 +174,194 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 8: Check your home page makes sense in 5 seconds
+### Day 8: Plan your store before you build
 
-*Topic: The 5-second test · Stage 2 · 10 minutes · SOP 11*
+*Topic: Plan the store · Stage 2 · 15 minutes · SOP 11*
 
-**Why it matters.** Visitors who are confused leave. Your home page must say what you sell and who it is for straight away.
+**Why it matters.** Building without a plan means pages nobody needs and missing pieces you find too late. Twenty minutes of planning saves days.
 
 **How to do it.**
 
-1. Open your home page on your phone.
-2. Ask someone new to look for 5 seconds, then tell you what you sell and who it is for.
-3. If they cannot, put your one-line promise and a clear product photo at the very top.
-4. Have one main button, such as 'Shop now', above the fold (the part you see without scrolling).
+1. Write your one-line promise from Day 5 at the top of a page.
+2. List each product with its price, product cost and cost to send one order.
+3. Pick one launch country (Australia or the US) and a Shopify plan from the pricing page.
+4. Gather your logo, 4 to 8 photos per product, your returns rule and your ABN (AU) or business details (US).
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+### Day 9: Connect your own domain and email
+
+*Topic: Domain and email · Stage 2 · 15 minutes · SOP 11*
+
+**Why it matters.** A store on its own web address looks more trustworthy than a free myshopify.com address, and emails from your domain are less likely to land in spam.
+
+**How to do it.**
+
+1. Buy a short domain that matches your brand in Shopify, or connect one you own.
+2. Australia: a .com.au needs an ABN. US: a .com is the normal choice.
+3. Make your own domain the main one customers see.
+4. Set up hello@yourbrand (or similar) and send yourself a test email.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
+
+### Day 10: Pick a free theme and set your brand basics
+
+*Topic: Theme · Stage 2 · 15 minutes · SOP 11*
+
+**Why it matters.** A fast, simple theme beats a fancy slow one. Setting colours and fonts once keeps every page looking the same.
+
+**How to do it.**
+
+1. In Online Store, open Themes. Start with a free theme such as Dawn.
+2. Duplicate the theme and make changes on the copy.
+3. In Theme settings, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.
+4. Preview on your phone before you publish.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
+
+### Day 11: Build a home page that makes sense in 5 seconds
+
+*Topic: Home page · Stage 2 · 15 minutes · SOP 11*
+
+**Why it matters.** Visitors who are confused leave. The top of your home page must say what you sell, who it is for and why to trust you.
+
+**How to do it.**
+
+1. Add a promo bar with one short line, such as your shipping offer.
+2. Keep the menu to 4 to 5 links.
+3. Add a banner: a clear product photo, your promise line and one 'Shop now' button.
+4. Below it add best sellers, reasons to buy, reviews and how it works.
+5. Ask someone new to look for 5 seconds and say what you sell.
 
 **Want me to do it for you?** Run a store check-up on your home page (Free plan, after you approve).
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 9: Tick off the product page basics
+### Day 12: Set up your first product page
 
-*Topic: Product page basics · Stage 2 · 15 minutes · SOP 11*
+*Topic: Product page · Stage 2 · 15 minutes · SOP 11*
 
-**Why it matters.** Most buying decisions happen on the product page. A few basics answer the questions that stop people buying.
+**Why it matters.** Most buying decisions happen on the product page. Answering worries up front turns visitors into buyers.
 
 **How to do it.**
 
-1. Use at least 4 clear photos, including one that shows the size or the product in use.
-2. Put the price, your promise line and the Add to cart button near the top.
-3. Answer the main worries in short lines: size or fit, quality, shipping time, returns.
-4. Add your best reviews.
+1. Add the product with a short title: name plus what it is or does.
+2. Upload at least 4 photos: plain background, in use, size, close-up.
+3. Put price, rating and Add to cart near the top. Write the description as short lines.
+4. Add a short FAQ: sizing, materials, shipping time, returns.
+5. Fill in product cost so Helix can work out your profit.
 
 **Want me to do it for you?** Draft product page copy for your top product (Starter plan, after you approve).
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 10: Write shipping and returns in plain words
+### Day 13: Add variants, stock and a review app
 
-*Topic: Shipping and returns · Stage 2 · 10 minutes · SOP 11*
+*Topic: Options, stock and reviews · Stage 2 · 15 minutes · SOP 16*
 
-**Why it matters.** Surprise shipping costs are one of the top reasons people leave at checkout. Say the cost and timing clearly, early.
+**Why it matters.** Wrong stock numbers cause oversold orders and refunds. Reviews near the top of the page build trust from day one.
 
 **How to do it.**
 
-1. Write how long delivery takes and what it costs, in one or two lines.
-2. Show it on the product page, not only on a policy page.
-3. If you offer free shipping over an amount, show that amount clearly.
-4. Write your returns steps as 3 simple numbered steps.
+1. Add options such as size or colour as variants of one product.
+2. Give each variant a photo, SKU, stock count, cost and weight. Turn on Track quantity.
+3. Install one review app that asks for photo reviews after delivery.
+4. Ask early buyers or testers for honest reviews. Never write fake ones.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 11: Check your store on a phone
+### Day 14: Group products and build your menu
 
-*Topic: Speed and phone check · Stage 2 · 10 minutes · SOP 11*
+*Topic: Collections and menu · Stage 2 · 15 minutes · SOP 11*
 
-**Why it matters.** Most shoppers visit on a phone. A slow or clumsy mobile store wastes every ad dollar you spend later.
+**Why it matters.** If people cannot find a product quickly, they leave. A short menu and clear groups get them there in a few taps.
 
 **How to do it.**
 
-1. Open your store on your phone using mobile data, not wifi.
-2. Time how long the home page and a product page take to load. Aim for about 3 seconds or less.
-3. Try to buy something. Note anything that is hard to tap or read.
-4. Remove apps you do not use and shrink very large images.
+1. Make collections: Best sellers, New, and one per product type.
+2. Build the main menu with 4 to 5 links. Put product types in a drop-down.
+3. Turn on filters for size, colour, price and in stock.
+4. Search for your top 5 product words and fix anything that does not show up.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 12: Add an email sign-up and a welcome email
+### Day 15: Set shipping rates and a free-shipping amount
 
-*Topic: Start your list · Stage 2 · 15 minutes · SOP 13*
+*Topic: Shipping · Stage 2 · 15 minutes · SOP 11*
 
-**Why it matters.** Most visitors will not buy on the first visit. An email sign-up lets you invite them back for free.
+**Why it matters.** Surprise shipping costs are one of the top reasons people leave at checkout. Clear rates and a free-shipping amount fix that and lift order size.
 
 **How to do it.**
 
-1. Turn on a sign-up pop-up in your email tool (for example Klaviyo or Shopify Email).
-2. Offer a small reason to join, such as a first-order gift or early access.
-3. Write one welcome email: say hello, repeat your promise, show your best seller.
-4. Test it by signing up yourself.
+1. In Settings, open Shipping and delivery and set up your home country.
+2. Add a Standard and an Express rate from your real carrier costs.
+3. Set free shipping over an amount about 1.3 times your average order.
+4. Show delivery as a range, such as '3 to 6 business days', on the product page.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
+
+### Day 16: Check your tax settings and turn on payments
+
+*Topic: Taxes and payments · Stage 2 · 15 minutes · SOP 11*
+
+**Why it matters.** Getting tax wrong is costly to fix later, and every missing payment option loses buyers. This is general information, not tax advice.
+
+**How to do it.**
+
+1. Australia: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.
+2. US: turn on sales tax only for states where you have registered.
+3. Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.
+4. Set your statement name to your brand. Ask a registered tax agent or accountant if unsure.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit at the top of your dashboard.
+
+### Day 17: Write your policies in plain words
+
+*Topic: Policies · Stage 2 · 15 minutes · SOP 11*
+
+**Why it matters.** Clear policies build trust and keep you within consumer law. Templates are a start, but they need your own details.
+
+**How to do it.**
+
+1. Create Refund, Privacy, Terms, Shipping and Contact pages from Shopify's templates.
+2. Rewrite them in plain words with your own delivery ranges and cut-off dates.
+3. Australia: never write 'no refunds'. Customers always have rights for faulty items.
+4. Link every policy in the footer.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
+
+### Day 18: Add your starter apps and email sign-up
+
+*Topic: Apps and email · Stage 2 · 15 minutes · SOP 13*
+
+**Why it matters.** Most visitors will not buy on the first visit. An email sign-up lets you invite them back for free. Keep apps few so the store stays fast.
+
+**How to do it.**
+
+1. Install only the starter set: reviews, email, and the Facebook and Google channels.
+2. Turn on a sign-up pop-up with a small reason to join.
+3. Write one welcome email: hello, your promise and your best seller.
+4. Sign up yourself to test it.
 
 **Want me to do it for you?** Draft your welcome email (Starter plan, after you approve).
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Email sign-ups.
 
-### Day 13: Install the Meta pixel and Google tag
+### Day 19: Install the Meta pixel and Google tag
 
 *Topic: Tracking · Stage 2 · 15 minutes · SOP 05*
 
@@ -260,25 +369,42 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. In Shopify, install the Facebook and Instagram app and the Google app.
-2. Connect your Meta account and turn on the pixel (a small piece of code that tells Meta when someone buys).
-3. Connect your Google account so Google can see your sales too.
-4. Place a small test order and check it shows up in both.
+1. Install the Facebook and Instagram app. Connect your Business account, ad account, Page and pixel.
+2. Set data sharing to Maximum to turn on server events.
+3. Install the Google and YouTube app and connect Merchant Center and Analytics.
+4. You will check both with a test order tomorrow.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 14: Start your 2-minute morning numbers
+### Day 20: Place a test order and tick the launch checklist
 
-*Topic: Daily numbers · Stage 2 · 5 minutes · SOP 02*
+*Topic: Test and launch check · Stage 2 · 15 minutes · SOP 11*
+
+**Why it matters.** A test order proves that payments, emails, stock and tracking all work together before real customers find a problem.
+
+**How to do it.**
+
+1. Check your store speed on a phone using mobile data.
+2. Turn on test mode and place an order on your phone.
+3. Check the email, stock, shipping, tax, and the Purchase in Meta and Google.
+4. Turn test mode off. Tick the pre-launch checklist and remove the store password.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
+
+### Day 21: Start your 2-minute morning numbers
+
+*Topic: Daily numbers · Stage 3 · 5 minutes · SOP 02*
 
 **Why it matters.** Even with few sales, writing down yesterday's sales, orders and ad spend each morning builds the habit that later tells you what is working.
 
 **How to do it.**
 
 1. Go to Today and find the 'Update yesterday' box.
-2. Type yesterday's sales and orders. Zero is fine.
+2. Type yesterday's sales (without GST or sales tax) and orders. Zero is fine.
 3. Type any ad spend.
 4. Press Save. Do this every morning from now on.
 
@@ -286,7 +412,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit, every day.
 
-### Day 15: Set your test budget and your stop rule
+### Day 22: Set your test budget and your stop rule
 
 *Topic: Test budget · Stage 3 · 10 minutes · SOP 06*
 
@@ -303,7 +429,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) compared with your break-even.
 
-### Day 16: Film 3 simple ads on your phone
+### Day 23: Film 3 simple ads on your phone
 
 *Topic: Simple ads · Stage 3 · 15 minutes · SOP 08*
 
@@ -320,7 +446,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 17: Write the first line for each ad
+### Day 24: Write the first line for each ad
 
 *Topic: Words that stop the scroll · Stage 3 · 10 minutes · SOP 07*
 
@@ -337,7 +463,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 18: Set up your first campaign, paused
+### Day 25: Set up your first campaign, paused
 
 *Topic: Build the test · Stage 3 · 15 minutes · SOP 05*
 
@@ -346,7 +472,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. In Ads Manager, create a Sales campaign.
-2. Set the daily budget from Day 15. Leave the audience broad (your country, adults).
+2. Set the daily budget from Day 22. Leave the audience broad (your country, adults).
 3. Add your 3 ads and link them to your best product page.
 4. Leave it paused. Check the link, the pixel and the text, then save.
 
@@ -354,7 +480,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 19: Launch the test and leave it alone
+### Day 26: Launch the test and leave it alone
 
 *Topic: Launch and wait · Stage 3 · 5 minutes · SOP 06*
 
@@ -371,7 +497,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 20: Read what your test is telling you
+### Day 27: Read what your test is telling you
 
 *Topic: Read the results · Stage 3 · 15 minutes · SOP 06*
 
@@ -388,7 +514,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 21: Decide what to do next
+### Day 28: Decide what to do next
 
 *Topic: Your next step · Stage 3 · 10 minutes · SOP 06*
 

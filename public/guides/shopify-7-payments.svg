@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Turn on payments" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Turn on payments</title>
+<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
+<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Shopify admin (simplified drawing)</text>
+<rect x="20" y="60" width="180" height="580" rx="0" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+<text x="40" y="100" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Settings</text>
+<text x="40" y="140" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  General</text>
+<text x="40" y="180" font-size="14" font-weight="700" fill="#008060" text-anchor="start">  Payments</text>
+<text x="40" y="220" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Checkout</text>
+<text x="40" y="260" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Taxes and duties</text>
+<text x="230" y="100" font-size="18" font-weight="800" fill="#0f172a" text-anchor="start">Payments</text>
+<rect x="230" y="120" width="580" height="150" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="150" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Shopify Payments</text>
+<text x="250" y="174" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Cards · Shop Pay · Apple Pay · Google Pay</text>
+<rect x="250" y="196" width="110" height="32" rx="6" fill="#008060" stroke="#008060" stroke-width="1"/>
+<text x="305.0" y="217.0" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Activate</text>
+<text x="380" y="216" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">Statement name: YOURBRAND</text>
+<rect x="230" y="290" width="580" height="70" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="330" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">PayPal</text>
+<rect x="690" y="310" width="100" height="32" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="740.0" y="331.0" font-size="13" font-weight="600" fill="#0f172a" text-anchor="middle">Activate</text>
+<rect x="230" y="380" width="580" height="110" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="410" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Buy now, pay later</text>
+<text x="250" y="436" font-size="13" font-weight="400" fill="#475569" text-anchor="start">AU: Afterpay app  ·  US: Shop Pay Installments</text>
+<text x="250" y="460" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">Check the fee first. It is higher than a card fee.</text>
+<rect x="750" y="400" width="36" height="20" rx="10" fill="#008060" stroke="none" stroke-width="1"/>
+<circle cx="776" cy="410" r="7" fill="#fff"/>
+<rect x="230" y="510" width="580" height="100" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="540" font-size="15" font-weight="700" fill="#0f172a" text-anchor="start">Payouts</text>
+<text x="250" y="566" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Bank account ending 1234 · paid every business day</text>
+<line x1="210" y1="140" x2="196" y2="140" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="196" cy="140" r="5" fill="#e11d48"/>
+<circle cx="210" cy="140" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="210" y="146" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<line x1="380" y1="212" x2="360" y2="212" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="360" cy="212" r="5" fill="#e11d48"/>
+<circle cx="380" cy="212" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="380" y="218" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<line x1="640" y1="210" x2="600" y2="216" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="600" cy="216" r="5" fill="#e11d48"/>
+<circle cx="640" cy="210" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="640" y="216" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<line x1="830" y1="326" x2="790" y2="326" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="790" cy="326" r="5" fill="#e11d48"/>
+<circle cx="830" cy="326" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="830" y="332" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<line x1="830" y1="410" x2="786" y2="410" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="786" cy="410" r="5" fill="#e11d48"/>
+<circle cx="830" cy="410" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="830" y="416" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<line x1="830" y1="560" x2="810" y2="560" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="810" cy="560" r="5" fill="#e11d48"/>
+<circle cx="830" cy="560" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="830" y="566" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">6</text>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Turn on payments</text>
+<circle cx="896" cy="87" r="13" fill="#e11d48"/><text x="896" y="92" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<text x="920" y="92" font-size="14" fill="#e2e8f0">Open Settings, then Payments.</text>
+<circle cx="896" cy="124" r="13" fill="#e11d48"/><text x="896" y="129" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<text x="920" y="129" font-size="14" fill="#e2e8f0">Activate Shopify Payments for</text>
+<text x="920" y="148" font-size="14" fill="#e2e8f0">cards and express buttons.</text>
+<circle cx="896" cy="180" r="13" fill="#e11d48"/><text x="896" y="185" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<text x="920" y="185" font-size="14" fill="#e2e8f0">Set the statement name to your</text>
+<text x="920" y="204" font-size="14" fill="#e2e8f0">brand.</text>
+<circle cx="896" cy="236" r="13" fill="#e11d48"/><text x="896" y="241" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<text x="920" y="241" font-size="14" fill="#e2e8f0">Activate PayPal.</text>
+<circle cx="896" cy="273" r="13" fill="#e11d48"/><text x="896" y="278" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
+<text x="920" y="278" font-size="14" fill="#e2e8f0">Add one buy now, pay later option</text>
+<text x="920" y="297" font-size="14" fill="#e2e8f0">if the fee suits you.</text>
+<circle cx="896" cy="329" r="13" fill="#e11d48"/><text x="896" y="334" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">6</text>
+<text x="920" y="334" font-size="14" fill="#e2e8f0">Add your bank account for payouts.</text>
+<text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

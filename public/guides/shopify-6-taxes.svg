@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Turn on tax settings" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Turn on tax settings</title>
+<rect width="1200" height="700" rx="18" fill="#f8fafc"/>
+<rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
+<rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
+<circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Shopify admin (simplified drawing)</text>
+<rect x="20" y="60" width="180" height="580" rx="0" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+<text x="40" y="100" font-size="14" font-weight="400" fill="#334155" text-anchor="start">Settings</text>
+<text x="40" y="140" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  General</text>
+<text x="40" y="180" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Payments</text>
+<text x="40" y="220" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Shipping and delivery</text>
+<text x="40" y="260" font-size="14" font-weight="700" fill="#008060" text-anchor="start">  Taxes and duties</text>
+<text x="40" y="300" font-size="14" font-weight="400" fill="#334155" text-anchor="start">  Policies</text>
+<text x="230" y="100" font-size="18" font-weight="800" fill="#0f172a" text-anchor="start">Taxes and duties</text>
+<rect x="230" y="120" width="580" height="170" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="150" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Regions</text>
+<rect x="250" y="166" width="540" height="42" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<text x="266" y="192" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Australia</text>
+<text x="560" y="192" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Collecting GST (10%)</text>
+<rect x="250" y="218" width="540" height="42" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+<text x="266" y="244" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">United States</text>
+<text x="560" y="244" font-size="13" font-weight="400" fill="#475569" text-anchor="start">Collecting in 1 state</text>
+<rect x="230" y="310" width="580" height="130" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+<text x="250" y="340" font-size="14" font-weight="700" fill="#0f172a" text-anchor="start">Tax calculations</text>
+<rect x="250" y="360" width="18" height="18" rx="4" fill="#008060" stroke="#008060" stroke-width="1"/>
+<text x="278" y="374" font-size="13" font-weight="400" fill="#0f172a" text-anchor="start">Include sales tax in product price and shipping rate</text>
+<text x="278" y="396" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">Turn on for Australia (prices shown include GST)</text>
+<text x="278" y="416" font-size="12" font-weight="400" fill="#64748b" text-anchor="start">Leave off for a US-only store (tax added at checkout)</text>
+<rect x="230" y="460" width="580" height="150" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1"/>
+<text x="250" y="490" font-size="14" font-weight="700" fill="#9a3412" text-anchor="start">General information, not tax advice.</text>
+<text x="250" y="516" font-size="13" font-weight="400" fill="#9a3412" text-anchor="start">AU: register for GST at $75,000 GST turnover.</text>
+<text x="250" y="540" font-size="13" font-weight="400" fill="#9a3412" text-anchor="start">US: register in a state before you collect its tax.</text>
+<text x="250" y="564" font-size="13" font-weight="400" fill="#9a3412" text-anchor="start">Check with a registered tax agent or accountant.</text>
+<line x1="210" y1="260" x2="196" y2="260" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="196" cy="260" r="5" fill="#e11d48"/>
+<circle cx="210" cy="260" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="210" y="266" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<line x1="830" y1="186" x2="790" y2="186" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="790" cy="186" r="5" fill="#e11d48"/>
+<circle cx="830" cy="186" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="830" y="192" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<line x1="830" y1="238" x2="790" y2="238" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="790" cy="238" r="5" fill="#e11d48"/>
+<circle cx="830" cy="238" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="830" y="244" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<line x1="206" y1="369" x2="248" y2="369" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="248" cy="369" r="5" fill="#e11d48"/>
+<circle cx="206" cy="369" r="17" fill="#e11d48" stroke="#fff" stroke-width="3"/>
+<text x="206" y="375" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<rect x="860" y="20" width="320" height="620" rx="14" fill="#0f172a"/>
+<text x="884" y="56" font-size="18" font-weight="800" fill="#fff">Turn on tax settings</text>
+<circle cx="896" cy="87" r="13" fill="#e11d48"/><text x="896" y="92" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+<text x="920" y="92" font-size="14" fill="#e2e8f0">Open Settings, then Taxes and</text>
+<text x="920" y="111" font-size="14" fill="#e2e8f0">duties.</text>
+<circle cx="896" cy="143" r="13" fill="#e11d48"/><text x="896" y="148" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+<text x="920" y="148" font-size="14" fill="#e2e8f0">Australia: add your ABN and turn</text>
+<text x="920" y="167" font-size="14" fill="#e2e8f0">on GST once you are registered.</text>
+<circle cx="896" cy="199" r="13" fill="#e11d48"/><text x="896" y="204" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+<text x="920" y="204" font-size="14" fill="#e2e8f0">US: turn on each state only after</text>
+<text x="920" y="223" font-size="14" fill="#e2e8f0">you register there.</text>
+<circle cx="896" cy="255" r="13" fill="#e11d48"/><text x="896" y="260" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+<text x="920" y="260" font-size="14" fill="#e2e8f0">Australia: tick &#x27;include sales tax</text>
+<text x="920" y="279" font-size="14" fill="#e2e8f0">in product price&#x27;. US: leave it</text>
+<text x="920" y="298" font-size="14" fill="#e2e8f0">off.</text>
+<text x="24" y="668" font-size="12" fill="#64748b">General information, not tax advice. Labels on your screen may look a little different.</text>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

@@ -173,11 +173,11 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                     </li>
                   ))}
                 </ol>
-                {guidesForDay(current.day).length > 0 && (
-                  <details className="mt-5 rounded-xl border border-slate-200 p-4 text-sm" open={guidesForDay(current.day).length === 1}>
-                    <summary className="cursor-pointer font-semibold text-slate-700">Show me where to click ({guidesForDay(current.day).length} drawing{guidesForDay(current.day).length === 1 ? "" : "s"})</summary>
+                {guidesForDay(current.day, T.id).length > 0 && (
+                  <details className="mt-5 rounded-xl border border-slate-200 p-4 text-sm" open={guidesForDay(current.day, T.id).length === 1}>
+                    <summary className="cursor-pointer font-semibold text-slate-700">Show me where to click ({guidesForDay(current.day, T.id).length} drawing{guidesForDay(current.day, T.id).length === 1 ? "" : "s"})</summary>
                     <div className="mt-3 space-y-5">
-                      {guidesForDay(current.day).map((g, i) => (
+                      {guidesForDay(current.day, T.id).map((g, i) => (
                         <figure key={g.file}>
                           <a href={`/guides/${g.file}.svg`} target="_blank" rel="noreferrer">
                             {/* eslint-disable-next-line @next/next/no-img-element */}

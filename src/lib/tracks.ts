@@ -22,9 +22,9 @@ export const TRACKS: Record<TrackId, Track> = {
     who: "Pick this if you are launching, or you make only a few sales a month.",
     covers: [
       "Check your product and offer: who it is for, is there demand, and a price that leaves profit",
-      "Get your store ready: a clear home page, product page basics, shipping info, email sign-up, tracking",
+      "Set up your Shopify store step by step: domain, theme, home and product pages, shipping, taxes, payments, policies, apps, tracking and a test order",
       "Run your first small test campaign with a budget you can afford and a clear stop rule",
-      "Lighter lessons: 5 to 15 minutes a day, 21 days",
+      "Lighter lessons: 5 to 15 minutes a day, 28 days",
     ],
     days: START_DAYS,
     stages: START_STAGES,

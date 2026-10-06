@@ -295,7 +295,7 @@ for i, t in enumerate(["Home", "Orders", "Products", "Customers", "Analytics", "
     g.text(40, 100 + i * 40, t, 14, 700 if t == "Analytics" else 400, g.accent if t == "Analytics" else "#334155")
 g.rect(230, 84, 150, 32, "#fff", "#cbd5e1", 6)
 g.text(246, 105, "Yesterday ▾", 13, 600)
-cards = [("Total sales", "$2,184"), ("Orders", "24"), ("Sessions", "1,090"), ("Conversion rate", "2.2%"), ("Average order value", "$91")]
+cards = [("Gross sales", "$2,184"), ("Orders", "24"), ("Sessions", "1,090"), ("Conversion rate", "2.2%"), ("Average order value", "$91")]
 for i, (k, v) in enumerate(cards):
     x = 230 + (i % 3) * 196
     y = 140 + (i // 3) * 120
@@ -312,7 +312,7 @@ g.callout(3, 384, 172, 348, 196)
 save("shopify-1-yesterdays-numbers", g, [
     "In Shopify, open Analytics.",
     "Set the date to Yesterday.",
-    "Read Total sales and Orders. Type them into the Update yesterday box in Helix."])
+    "Read Gross sales (before tax) and Orders. Type them into the Update yesterday box in Helix."])
 
 # ---------- Shopify 2: free shipping threshold ----------
 g = G("Set a free shipping amount", "Shopify admin", "#008060")
@@ -374,4 +374,249 @@ save("helix-1-daily-update", g, [
     "Press Save.",
     "Read your profit and the one line that tells you what to do today."],
     "This is Helix itself. Your numbers stay private to your account.")
+# ---------- Shopify store setup (module 22) ----------
+SHOP = "#008060"
+
+
+def shop_frame(g, active, items=("Home", "Orders", "Products", "Customers", "Analytics", "Online Store", "Settings")):
+    g.rect(20, 60, 180, 580, "#f1f5f9", "#e2e8f0", 0)
+    for i, t in enumerate(items):
+        on = t == active
+        if on:
+            g.rect(30, 82 + i * 40, 160, 30, "#e3f1ec", "none", 6)
+        g.text(44, 102 + i * 40, t, 14, 700 if on else 400, SHOP if on else "#334155")
+
+
+# Shopify 3: theme editor
+g = G("Set up your theme safely", "Shopify admin", SHOP)
+shop_frame(g, "Online Store")
+g.text(230, 100, "Themes", 18, 800)
+g.rect(230, 120, 580, 150, "#fff", "#e2e8f0", 10)
+g.rect(250, 140, 170, 110, "#e2e8f0", "none", 8)
+g.text(440, 166, "Current theme: Dawn", 15, 700)
+g.text(440, 190, "Last saved: today", 13, 400, "#64748b")
+g.button(440, 214, 110, "Customize")
+g.button(560, 214, 40, "...", False)
+g.rect(600, 246, 190, 92, "#fff", "#cbd5e1", 8)
+for i, t in enumerate(["Preview", "Duplicate", "Edit code"]):
+    g.text(616, 270 + i * 26, t, 13, 700 if t == "Duplicate" else 400, SHOP if t == "Duplicate" else "#334155")
+g.rect(230, 360, 580, 120, "#fff", "#e2e8f0", 10)
+g.text(250, 390, "Theme library", 14, 700)
+g.rect(250, 404, 120, 60, "#e2e8f0", "none", 6)
+g.text(386, 428, "Copy of Dawn (edit this one)", 13, 600)
+g.button(386, 440, 90, "Customize", False, 28)
+g.button(486, 440, 80, "Publish", False, 28)
+g.rect(230, 500, 580, 110, "#f0fdf4", "#86efac", 10)
+g.text(250, 530, "In Customize > Theme settings set:", 14, 700, "#14532d")
+g.text(250, 556, "Logo · 2 to 3 colours · 1 to 2 fonts · button style", 13, 400, "#14532d")
+g.text(250, 580, "Then edit sections: header, banner, featured products", 13, 400, "#14532d")
+g.callout(1, 210, 230, 196, 220)
+g.callout(2, 580, 330, 640, 296)
+g.callout(3, 400, 490, 430, 456)
+g.callout(4, 210, 555, 230, 555)
+g.callout(5, 590, 490, 526, 456)
+save("shopify-3-theme-editor", g, [
+    "Open Online Store, then Themes.",
+    "Press the ... button on your theme and choose Duplicate.",
+    "On the copy, press Customize to make your changes.",
+    "Set logo, colours, fonts and buttons once in Theme settings.",
+    "Preview on a phone, then Publish the copy."])
+
+# Shopify 4: add a product
+g = G("Add a product the right way", "Shopify admin", SHOP)
+shop_frame(g, "Products")
+g.text(230, 100, "Add product", 18, 800)
+g.field(230, 124, 360, "Title", "Linen Shirt, Relaxed Fit")
+g.text(230, 196, "Description", 12, 600, "#475569")
+g.rect(230, 204, 360, 90, "#fff", "#cbd5e1", 6)
+for i, t in enumerate(["Stays cool on hot days.", "- 100% linen  - Relaxed fit  - Machine wash"]):
+    g.text(242, 228 + i * 22, t, 13)
+g.text(230, 316, "Media", 12, 600, "#475569")
+for i in range(4):
+    g.rect(230 + i * 92, 324, 82, 82, "#e2e8f0", "#cbd5e1", 6)
+g.field(230, 428, 170, "Price", "$89.00")
+g.field(420, 428, 170, "Cost per item", "$24.00")
+g.rect(230, 492, 18, 18, SHOP, SHOP, 4)
+g.text(258, 506, "Track quantity", 13)
+g.field(230, 530, 170, "Quantity", "120")
+g.field(420, 530, 170, "Weight", "0.3 kg")
+g.rect(620, 124, 190, 120, "#fff", "#e2e8f0", 10)
+g.text(636, 150, "Status", 13, 700)
+g.rect(636, 162, 158, 30, "#fff", "#cbd5e1", 6)
+g.text(648, 182, "Draft ▾", 13)
+g.rect(620, 260, 190, 150, "#fff", "#e2e8f0", 10)
+g.text(636, 286, "Search listing", 13, 700)
+g.text(636, 310, "Title and description", 12, 400, "#64748b")
+g.text(636, 330, "people see in Google", 12, 400, "#64748b")
+g.button(710, 590, 100, "Save")
+g.callout(1, 610, 150, 590, 150)
+g.callout(2, 610, 360, 598, 360)
+g.callout(3, 210, 458, 230, 458)
+g.callout(4, 210, 556, 230, 556)
+g.callout(5, 830, 320, 810, 320)
+g.callout(6, 830, 606, 810, 606)
+save("shopify-4-add-product", g, [
+    "Write a short title: product name plus what it is or does.",
+    "Add at least 4 photos: plain background, in use, size, close-up.",
+    "Type the price and cost per item. Helix uses cost for profit.",
+    "Turn on Track quantity and add the weight.",
+    "Fill in the search listing in plain words.",
+    "Save as Draft, check it, then set it to Active."])
+
+# Shopify 5: menus
+g = G("Build a short main menu", "Shopify admin", SHOP)
+shop_frame(g, "Online Store")
+g.text(230, 100, "Menus > Main menu", 18, 800)
+g.rect(230, 120, 580, 330, "#fff", "#e2e8f0", 10)
+items = [("Shop", 0), ("Best sellers", 1), ("New", 1), ("Shirts", 1), ("Bundles", 0), ("Reviews", 0), ("FAQ", 0), ("About", 0)]
+for i, (t, lvl) in enumerate(items):
+    y = 140 + i * 36
+    g.rect(250 + lvl * 30, y, 380 - lvl * 30, 28, "#f8fafc", "#e2e8f0", 6)
+    g.text(266 + lvl * 30, y + 19, ("⋮⋮  " if True else "") + t, 13, 600 if lvl == 0 else 400)
+g.button(250, 432, 120, "+ Add menu item", False, 28)
+g.rect(230, 470, 580, 140, "#f0fdf4", "#86efac", 10)
+g.text(250, 500, "Rules of thumb", 14, 700, "#14532d")
+for i, t in enumerate(["4 to 5 top links, the rest in drop-downs", "Make a separate, shorter menu for mobile", "Drag items to nest them under a parent"]):
+    g.text(250, 528 + i * 24, f"- {t}", 13, 400, "#14532d")
+g.button(710, 590, 100, "Save menu")
+g.callout(1, 210, 230, 196, 220)
+g.callout(2, 660, 154, 630, 154)
+g.callout(3, 660, 226, 630, 226)
+g.callout(4, 390, 446, 370, 446)
+g.callout(5, 830, 606, 810, 606)
+save("shopify-5-menus", g, [
+    "Open Online Store, then Navigation (Menus) and choose Main menu.",
+    "Keep 4 to 5 top links, such as Shop, Bundles, Reviews, FAQ.",
+    "Drag product types under Shop so they become a drop-down.",
+    "Add items that link to collections or pages.",
+    "Save, then check the menu on a phone."])
+
+# Shopify 6: taxes
+g = G("Turn on tax settings", "Shopify admin", SHOP)
+g.rect(20, 60, 180, 580, "#f1f5f9", "#e2e8f0", 0)
+for i, t in enumerate(["Settings", "  General", "  Payments", "  Shipping and delivery", "  Taxes and duties", "  Policies"]):
+    g.text(40, 100 + i * 40, t, 14, 700 if "Taxes" in t else 400, SHOP if "Taxes" in t else "#334155")
+g.text(230, 100, "Taxes and duties", 18, 800)
+g.rect(230, 120, 580, 170, "#fff", "#e2e8f0", 10)
+g.text(250, 150, "Regions", 14, 700)
+for i, (c, st) in enumerate([("Australia", "Collecting GST (10%)"), ("United States", "Collecting in 1 state")]):
+    g.rect(250, 166 + i * 52, 540, 42, "#f8fafc", "#e2e8f0", 6)
+    g.text(266, 192 + i * 52, c, 14, 700)
+    g.text(560, 192 + i * 52, st, 13, 400, "#475569")
+g.rect(230, 310, 580, 130, "#fff", "#e2e8f0", 10)
+g.text(250, 340, "Tax calculations", 14, 700)
+g.rect(250, 360, 18, 18, SHOP, SHOP, 4)
+g.text(278, 374, "Include sales tax in product price and shipping rate", 13)
+g.text(278, 396, "Turn on for Australia (prices shown include GST)", 12, 400, "#64748b")
+g.text(278, 416, "Leave off for a US-only store (tax added at checkout)", 12, 400, "#64748b")
+g.rect(230, 460, 580, 150, "#fff7ed", "#fdba74", 10)
+g.text(250, 490, "General information, not tax advice.", 14, 700, "#9a3412")
+g.text(250, 516, "AU: register for GST at $75,000 GST turnover.", 13, 400, "#9a3412")
+g.text(250, 540, "US: register in a state before you collect its tax.", 13, 400, "#9a3412")
+g.text(250, 564, "Check with a registered tax agent or accountant.", 13, 400, "#9a3412")
+g.callout(1, 210, 260, 196, 260)
+g.callout(2, 830, 186, 790, 186)
+g.callout(3, 830, 238, 790, 238)
+g.callout(4, 206, 369, 248, 369)
+save("shopify-6-taxes", g, [
+    "Open Settings, then Taxes and duties.",
+    "Australia: add your ABN and turn on GST once you are registered.",
+    "US: turn on each state only after you register there.",
+    "Australia: tick 'include sales tax in product price'. US: leave it off."],
+    "General information, not tax advice. Labels on your screen may look a little different.")
+
+# Shopify 7: payments
+g = G("Turn on payments", "Shopify admin", SHOP)
+g.rect(20, 60, 180, 580, "#f1f5f9", "#e2e8f0", 0)
+for i, t in enumerate(["Settings", "  General", "  Payments", "  Checkout", "  Taxes and duties"]):
+    g.text(40, 100 + i * 40, t, 14, 700 if "Payments" in t else 400, SHOP if "Payments" in t else "#334155")
+g.text(230, 100, "Payments", 18, 800)
+g.rect(230, 120, 580, 150, "#fff", "#e2e8f0", 10)
+g.text(250, 150, "Shopify Payments", 15, 700)
+g.text(250, 174, "Cards · Shop Pay · Apple Pay · Google Pay", 13, 400, "#475569")
+g.button(250, 196, 110, "Activate")
+g.text(380, 216, "Statement name: YOURBRAND", 13, 600)
+g.rect(230, 290, 580, 70, "#fff", "#e2e8f0", 10)
+g.text(250, 330, "PayPal", 15, 700)
+g.button(690, 310, 100, "Activate", False)
+g.rect(230, 380, 580, 110, "#fff", "#e2e8f0", 10)
+g.text(250, 410, "Buy now, pay later", 15, 700)
+g.text(250, 436, "AU: Afterpay app  ·  US: Shop Pay Installments", 13, 400, "#475569")
+g.text(250, 460, "Check the fee first. It is higher than a card fee.", 12, 400, "#64748b")
+g.toggle(750, 400, True)
+g.rect(230, 510, 580, 100, "#fff", "#e2e8f0", 10)
+g.text(250, 540, "Payouts", 15, 700)
+g.text(250, 566, "Bank account ending 1234 · paid every business day", 13, 400, "#475569")
+g.callout(1, 210, 140, 196, 140)
+g.callout(2, 380, 212, 360, 212)
+g.callout(3, 640, 210, 600, 216)
+g.callout(4, 830, 326, 790, 326)
+g.callout(5, 830, 410, 786, 410)
+g.callout(6, 830, 560, 810, 560)
+save("shopify-7-payments", g, [
+    "Open Settings, then Payments.",
+    "Activate Shopify Payments for cards and express buttons.",
+    "Set the statement name to your brand.",
+    "Activate PayPal.",
+    "Add one buy now, pay later option if the fee suits you.",
+    "Add your bank account for payouts."])
+
+# Shopify 8: Facebook and Instagram app (pixel and server events)
+g = G("Connect Meta tracking from Shopify", "Shopify admin", SHOP)
+shop_frame(g, "Facebook & Instagram", ("Home", "Orders", "Products", "Online Store", "Facebook & Instagram", "Google & YouTube", "Settings"))
+g.text(230, 100, "Facebook & Instagram > Settings", 18, 800)
+g.rect(230, 120, 580, 200, "#fff", "#e2e8f0", 10)
+for i, (k, v) in enumerate([("Business account", "Your Brand"), ("Ad account", "Your Brand Ads"), ("Facebook Page", "Your Brand"), ("Pixel (dataset)", "Your Brand Pixel")]):
+    g.text(250, 152 + i * 40, k, 13, 600, "#475569")
+    g.text(470, 152 + i * 40, v, 13, 700)
+    g.text(760, 152 + i * 40, "✓", 15, 800, SHOP)
+g.rect(230, 340, 580, 150, "#fff", "#e2e8f0", 10)
+g.text(250, 370, "Customer data sharing", 14, 700)
+for i, t in enumerate(["Standard", "Enhanced", "Maximum (recommended)"]):
+    y = 392 + i * 30
+    sel = "Maximum" in t
+    g.add(f'<circle cx="262" cy="{y}" r="8" fill="{SHOP if sel else "#fff"}" stroke="#94a3b8"/>')
+    g.text(280, y + 5, t, 13, 700 if sel else 400)
+g.rect(230, 510, 580, 100, "#f0fdf4", "#86efac", 10)
+g.text(250, 540, "Check it works: place a test order, then open", 13, 400, "#14532d")
+g.text(250, 562, "Meta Events Manager and look for a Purchase event.", 13, 400, "#14532d")
+g.callout(1, 210, 260, 196, 260)
+g.callout(2, 830, 220, 790, 220)
+g.callout(3, 600, 452, 450, 452)
+g.callout(4, 830, 556, 810, 556)
+save("shopify-8-meta-tracking", g, [
+    "Install the Facebook & Instagram app from the Shopify App Store.",
+    "Connect your Business account, ad account, Page and pixel.",
+    "Set data sharing to Maximum. This turns on server events.",
+    "Place a test order and look for a Purchase in Events Manager."])
+
+# Shopify 9: test order
+g = G("Place a test order", "Shopify admin", SHOP)
+g.rect(20, 60, 180, 580, "#f1f5f9", "#e2e8f0", 0)
+for i, t in enumerate(["Settings", "  Payments", "  Checkout", "  Notifications"]):
+    g.text(40, 100 + i * 40, t, 14, 700 if "Payments" in t else 400, SHOP if "Payments" in t else "#334155")
+g.text(230, 100, "Shopify Payments > Manage", 18, 800)
+g.rect(230, 120, 580, 80, "#fff", "#e2e8f0", 10)
+g.text(250, 152, "Test mode", 15, 700)
+g.text(250, 176, "Use test card numbers. No real money moves.", 13, 400, "#475569")
+g.toggle(750, 150, True)
+g.rect(230, 220, 580, 250, "#fff", "#e2e8f0", 10)
+g.text(250, 250, "After the test order, check:", 14, 700)
+for i, t in enumerate(["Order confirmation email arrived", "Stock went down by 1", "Shipping and tax look right", "Purchase seen in Meta and Google", "Order shows in Orders"]):
+    g.rect(250, 266 + i * 38, 18, 18, SHOP, SHOP, 4)
+    g.text(278, 280 + i * 38, t, 13)
+g.rect(230, 490, 580, 120, "#fff7ed", "#fdba74", 10)
+g.text(250, 520, "Then:", 14, 700, "#9a3412")
+g.text(250, 546, "Cancel the test order and turn test mode OFF.", 13, 400, "#9a3412")
+g.text(250, 570, "Place one small real order with your own card and refund it.", 13, 400, "#9a3412")
+g.callout(1, 210, 140, 196, 140)
+g.callout(2, 830, 160, 786, 160)
+g.callout(3, 830, 340, 810, 340)
+g.callout(4, 830, 550, 810, 550)
+save("shopify-9-test-order", g, [
+    "Open Settings, then Payments, then Manage Shopify Payments.",
+    "Turn on Test mode and buy something on your phone with a test card.",
+    "Tick each check: email, stock, shipping, tax, tracking.",
+    "Cancel it, turn test mode off, then do one small real order and refund it."])
+
 print("guides", len([f for f in os.listdir(OUT) if f.endswith('.svg')]))

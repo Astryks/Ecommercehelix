@@ -7,13 +7,13 @@
   },
   {
    "id": 2,
-   "name": "Get your store ready",
-   "range": "Days 8 to 14"
+   "name": "Set up your Shopify store",
+   "range": "Days 8 to 20"
   },
   {
    "id": 3,
    "name": "Your first small test campaign",
-   "range": "Days 15 to 21"
+   "range": "Days 21 to 28"
   }
  ],
  "days": [
@@ -203,23 +203,99 @@
   {
    "day": 8,
    "stage": 2,
-   "stageName": "Get your store ready",
-   "topic": "The 5-second test",
-   "title": "Check your home page makes sense in 5 seconds",
-   "lesson": "Visitors who are confused leave. Your home page must say what you sell and who it is for straight away.",
+   "stageName": "Set up your Shopify store",
+   "topic": "Plan the store",
+   "title": "Plan your store before you build",
+   "lesson": "Building without a plan means pages nobody needs and missing pieces you find too late. Twenty minutes of planning saves days.",
    "steps": [
-    "Open your home page on your phone.",
-    "Ask someone new to look for 5 seconds, then tell you what you sell and who it is for.",
-    "If they cannot, put your one-line promise and a clear product photo at the very top.",
-    "Have one main button, such as 'Shop now', above the fold (the part you see without scrolling)."
+    "Write your one-line promise from Day 5 at the top of a page.",
+    "List each product with its price, product cost and cost to send one order.",
+    "Pick one launch country (Australia or the US) and a Shopify plan from the pricing page.",
+    "Gather your logo, 4 to 8 photos per product, your returns rule and your ABN (AU) or business details (US)."
    ],
-   "minutes": 10,
+   "minutes": 15,
+   "area": "learning",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-221-plan-before-you-build",
+    "label": "Plan before you build",
+    "ref": "22.1"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": null
+  },
+  {
+   "day": 9,
+   "stage": 2,
+   "stageName": "Set up your Shopify store",
+   "topic": "Domain and email",
+   "title": "Connect your own domain and email",
+   "lesson": "A store on its own web address looks more trustworthy than a free myshopify.com address, and emails from your domain are less likely to land in spam.",
+   "steps": [
+    "Buy a short domain that matches your brand in Shopify, or connect one you own.",
+    "Australia: a .com.au needs an ABN. US: a .com is the normal choice.",
+    "Make your own domain the main one customers see.",
+    "Set up hello@yourbrand (or similar) and send yourself a test email."
+   ],
+   "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-92-page-checklists",
-    "label": "Page checklists",
-    "ref": "9.2"
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-222-domain-and-email",
+    "label": "Domain and email",
+    "ref": "22.2"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 10,
+   "stage": 2,
+   "stageName": "Set up your Shopify store",
+   "topic": "Theme",
+   "title": "Pick a free theme and set your brand basics",
+   "lesson": "A fast, simple theme beats a fancy slow one. Setting colours and fonts once keeps every page looking the same.",
+   "steps": [
+    "In Online Store, open Themes. Start with a free theme such as Dawn.",
+    "Duplicate the theme and make changes on the copy.",
+    "In Theme settings, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.",
+    "Preview on your phone before you publish."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-223-choose-and-set-up-a-theme",
+    "label": "Choose and set up a theme",
+    "ref": "22.3"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 11,
+   "stage": 2,
+   "stageName": "Set up your Shopify store",
+   "topic": "Home page",
+   "title": "Build a home page that makes sense in 5 seconds",
+   "lesson": "Visitors who are confused leave. The top of your home page must say what you sell, who it is for and why to trust you.",
+   "steps": [
+    "Add a promo bar with one short line, such as your shipping offer.",
+    "Keep the menu to 4 to 5 links.",
+    "Add a banner: a clear product photo, your promise line and one 'Shop now' button.",
+    "Below it add best sellers, reasons to buy, reviews and how it works.",
+    "Ask someone new to look for 5 seconds and say what you sell."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-224-build-the-home-page",
+    "label": "Build the home page",
+    "ref": "22.4"
    },
    "sop": "11",
    "doIt": {
@@ -229,25 +305,26 @@
    "watch": "Conversion rate"
   },
   {
-   "day": 9,
+   "day": 12,
    "stage": 2,
-   "stageName": "Get your store ready",
-   "topic": "Product page basics",
-   "title": "Tick off the product page basics",
-   "lesson": "Most buying decisions happen on the product page. A few basics answer the questions that stop people buying.",
+   "stageName": "Set up your Shopify store",
+   "topic": "Product page",
+   "title": "Set up your first product page",
+   "lesson": "Most buying decisions happen on the product page. Answering worries up front turns visitors into buyers.",
    "steps": [
-    "Use at least 4 clear photos, including one that shows the size or the product in use.",
-    "Put the price, your promise line and the Add to cart button near the top.",
-    "Answer the main worries in short lines: size or fit, quality, shipping time, returns.",
-    "Add your best reviews."
+    "Add the product with a short title: name plus what it is or does.",
+    "Upload at least 4 photos: plain background, in use, size, close-up.",
+    "Put price, rating and Add to cart near the top. Write the description as short lines.",
+    "Add a short FAQ: sizing, materials, shipping time, returns.",
+    "Fill in product cost so Helix can work out your profit."
    ],
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-95-copy-that-sells",
-    "label": "Copy that sells",
-    "ref": "9.5"
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-225-product-pages-titles-photos-and-descriptions",
+    "label": "Product pages: titles, photos and descriptions",
+    "ref": "22.5"
    },
    "sop": "11",
    "doIt": {
@@ -257,75 +334,150 @@
    "watch": "Conversion rate"
   },
   {
-   "day": 10,
+   "day": 13,
    "stage": 2,
-   "stageName": "Get your store ready",
-   "topic": "Shipping and returns",
-   "title": "Write shipping and returns in plain words",
-   "lesson": "Surprise shipping costs are one of the top reasons people leave at checkout. Say the cost and timing clearly, early.",
+   "stageName": "Set up your Shopify store",
+   "topic": "Options, stock and reviews",
+   "title": "Add variants, stock and a review app",
+   "lesson": "Wrong stock numbers cause oversold orders and refunds. Reviews near the top of the page build trust from day one.",
    "steps": [
-    "Write how long delivery takes and what it costs, in one or two lines.",
-    "Show it on the product page, not only on a policy page.",
-    "If you offer free shipping over an amount, show that amount clearly.",
-    "Write your returns steps as 3 simple numbered steps."
+    "Add options such as size or colour as variants of one product.",
+    "Give each variant a photo, SKU, stock count, cost and weight. Turn on Track quantity.",
+    "Install one review app that asks for photo reviews after delivery.",
+    "Ask early buyers or testers for honest reviews. Never write fake ones."
    ],
-   "minutes": 10,
+   "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-96-policies-and-service",
-    "label": "Policies and service",
-    "ref": "9.6"
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-226-variants-and-inventory",
+    "label": "Variants and inventory",
+    "ref": "22.6"
+   },
+   "sop": "16",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 14,
+   "stage": 2,
+   "stageName": "Set up your Shopify store",
+   "topic": "Collections and menu",
+   "title": "Group products and build your menu",
+   "lesson": "If people cannot find a product quickly, they leave. A short menu and clear groups get them there in a few taps.",
+   "steps": [
+    "Make collections: Best sellers, New, and one per product type.",
+    "Build the main menu with 4 to 5 links. Put product types in a drop-down.",
+    "Turn on filters for size, colour, price and in stock.",
+    "Search for your top 5 product words and fix anything that does not show up."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-228-collections-menus-and-search",
+    "label": "Collections, menus and search",
+    "ref": "22.8"
    },
    "sop": "11",
    "doIt": null,
    "watch": "Conversion rate"
   },
   {
-   "day": 11,
+   "day": 15,
    "stage": 2,
-   "stageName": "Get your store ready",
-   "topic": "Speed and phone check",
-   "title": "Check your store on a phone",
-   "lesson": "Most shoppers visit on a phone. A slow or clumsy mobile store wastes every ad dollar you spend later.",
+   "stageName": "Set up your Shopify store",
+   "topic": "Shipping",
+   "title": "Set shipping rates and a free-shipping amount",
+   "lesson": "Surprise shipping costs are one of the top reasons people leave at checkout. Clear rates and a free-shipping amount fix that and lift order size.",
    "steps": [
-    "Open your store on your phone using mobile data, not wifi.",
-    "Time how long the home page and a product page take to load. Aim for about 3 seconds or less.",
-    "Try to buy something. Note anything that is hard to tap or read.",
-    "Remove apps you do not use and shrink very large images."
+    "In Settings, open Shipping and delivery and set up your home country.",
+    "Add a Standard and an Express rate from your real carrier costs.",
+    "Set free shipping over an amount about 1.3 times your average order.",
+    "Show delivery as a range, such as '3 to 6 business days', on the product page."
    ],
-   "minutes": 10,
+   "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-94-speed",
-    "label": "Speed",
-    "ref": "9.4"
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-229-shipping-zones-rates-and-a-free-shipping-amount",
+    "label": "Shipping zones, rates and a free-shipping amount",
+    "ref": "22.9"
    },
    "sop": "11",
    "doIt": null,
    "watch": "Conversion rate"
   },
   {
-   "day": 12,
+   "day": 16,
    "stage": 2,
-   "stageName": "Get your store ready",
-   "topic": "Start your list",
-   "title": "Add an email sign-up and a welcome email",
-   "lesson": "Most visitors will not buy on the first visit. An email sign-up lets you invite them back for free.",
+   "stageName": "Set up your Shopify store",
+   "topic": "Taxes and payments",
+   "title": "Check your tax settings and turn on payments",
+   "lesson": "Getting tax wrong is costly to fix later, and every missing payment option loses buyers. This is general information, not tax advice.",
    "steps": [
-    "Turn on a sign-up pop-up in your email tool (for example Klaviyo or Shopify Email).",
-    "Offer a small reason to join, such as a first-order gift or early access.",
-    "Write one welcome email: say hello, repeat your promise, show your best seller.",
-    "Test it by signing up yourself."
+    "Australia: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.",
+    "US: turn on sales tax only for states where you have registered.",
+    "Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.",
+    "Set your statement name to your brand. Ask a registered tax agent or accountant if unsure."
+   ],
+   "minutes": 15,
+   "area": "numbers",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-2210-taxes-gst-and-sales-tax-basics",
+    "label": "Taxes: GST and sales tax basics",
+    "ref": "22.10"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Profit at the top of your dashboard"
+  },
+  {
+   "day": 17,
+   "stage": 2,
+   "stageName": "Set up your Shopify store",
+   "topic": "Policies",
+   "title": "Write your policies in plain words",
+   "lesson": "Clear policies build trust and keep you within consumer law. Templates are a start, but they need your own details.",
+   "steps": [
+    "Create Refund, Privacy, Terms, Shipping and Contact pages from Shopify's templates.",
+    "Rewrite them in plain words with your own delivery ranges and cut-off dates.",
+    "Australia: never write 'no refunds'. Customers always have rights for faulty items.",
+    "Link every policy in the footer."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-2212-policies-and-legal-pages",
+    "label": "Policies and legal pages",
+    "ref": "22.12"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 18,
+   "stage": 2,
+   "stageName": "Set up your Shopify store",
+   "topic": "Apps and email",
+   "title": "Add your starter apps and email sign-up",
+   "lesson": "Most visitors will not buy on the first visit. An email sign-up lets you invite them back for free. Keep apps few so the store stays fast.",
+   "steps": [
+    "Install only the starter set: reviews, email, and the Facebook and Google channels.",
+    "Turn on a sign-up pop-up with a small reason to join.",
+    "Write one welcome email: hello, your promise and your best seller.",
+    "Sign up yourself to test it."
    ],
    "minutes": 15,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-101-sign-up-forms",
-    "label": "Sign-up forms",
-    "ref": "10.1"
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-2213-essential-apps-and-only-those",
+    "label": "Essential apps (and only those)",
+    "ref": "22.13"
    },
    "sop": "13",
    "doIt": {
@@ -335,40 +487,65 @@
    "watch": "Email sign-ups"
   },
   {
-   "day": 13,
+   "day": 19,
    "stage": 2,
-   "stageName": "Get your store ready",
+   "stageName": "Set up your Shopify store",
    "topic": "Tracking",
    "title": "Install the Meta pixel and Google tag",
    "lesson": "Without tracking you cannot tell which ads bring sales. Set it up before you spend a single dollar on ads.",
    "steps": [
-    "In Shopify, install the Facebook and Instagram app and the Google app.",
-    "Connect your Meta account and turn on the pixel (a small piece of code that tells Meta when someone buys).",
-    "Connect your Google account so Google can see your sales too.",
-    "Place a small test order and check it shows up in both."
+    "Install the Facebook and Instagram app. Connect your Business account, ad account, Page and pixel.",
+    "Set data sharing to Maximum to turn on server events.",
+    "Install the Google and YouTube app and connect Merchant Center and Analytics.",
+    "You will check both with a test order tomorrow."
    ],
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-201-before-you-launch-tracking-you-can-trust",
-    "label": "Before you launch: tracking you can trust",
-    "ref": "20.1"
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-2214-tracking-meta-pixel-google-tag-and-analytics",
+    "label": "Tracking: Meta pixel, Google tag and analytics",
+    "ref": "22.14"
    },
    "sop": "05",
    "doIt": null,
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 14,
+   "day": 20,
    "stage": 2,
-   "stageName": "Get your store ready",
+   "stageName": "Set up your Shopify store",
+   "topic": "Test and launch check",
+   "title": "Place a test order and tick the launch checklist",
+   "lesson": "A test order proves that payments, emails, stock and tracking all work together before real customers find a problem.",
+   "steps": [
+    "Check your store speed on a phone using mobile data.",
+    "Turn on test mode and place an order on your phone.",
+    "Check the email, stock, shipping, tax, and the Purchase in Meta and Google.",
+    "Turn test mode off. Tick the pre-launch checklist and remove the store password."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "22-shopify-store-setup",
+    "anchor": "lesson-2216-place-test-orders",
+    "label": "Place test orders",
+    "ref": "22.16"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 21,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
    "topic": "Daily numbers",
    "title": "Start your 2-minute morning numbers",
    "lesson": "Even with few sales, writing down yesterday's sales, orders and ad spend each morning builds the habit that later tells you what is working.",
    "steps": [
     "Go to Today and find the 'Update yesterday' box.",
-    "Type yesterday's sales and orders. Zero is fine.",
+    "Type yesterday's sales (without GST or sales tax) and orders. Zero is fine.",
     "Type any ad spend.",
     "Press Save. Do this every morning from now on."
    ],
@@ -385,7 +562,7 @@
    "watch": "Profit, every day"
   },
   {
-   "day": 15,
+   "day": 22,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Test budget",
@@ -410,7 +587,7 @@
    "watch": "Ad cost per sale (CPA) compared with your break-even"
   },
   {
-   "day": 16,
+   "day": 23,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Simple ads",
@@ -435,7 +612,7 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 17,
+   "day": 24,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Words that stop the scroll",
@@ -463,7 +640,7 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 18,
+   "day": 25,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Build the test",
@@ -471,7 +648,7 @@
    "lesson": "Building the campaign paused lets you check everything calmly before any money is spent.",
    "steps": [
     "In Ads Manager, create a Sales campaign.",
-    "Set the daily budget from Day 15. Leave the audience broad (your country, adults).",
+    "Set the daily budget from Day 22. Leave the audience broad (your country, adults).",
     "Add your 3 ads and link them to your best product page.",
     "Leave it paused. Check the link, the pixel and the text, then save."
    ],
@@ -491,7 +668,7 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 19,
+   "day": 26,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Launch and wait",
@@ -516,7 +693,7 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 20,
+   "day": 27,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Read the results",
@@ -541,7 +718,7 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 21,
+   "day": 28,
    "stage": 3,
    "stageName": "Your first small test campaign",
    "topic": "Your next step",

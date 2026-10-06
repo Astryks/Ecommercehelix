@@ -4,6 +4,7 @@ Plain-English meanings for every term Helix uses. The app shows the relevant one
 
 Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum.py`.
 
+- **3PL** (third-party logistics, fulfilment centre): Third-party logistics: a warehouse company that stores your stock and packs and ships your orders.
 - **Abandoned checkout**: When someone starts checkout but does not finish. A reminder email can bring them back.
 - **Above the fold**: The part of a page you see before you scroll.
 - **Ad set** (ad sets): The middle level in Meta. It holds who sees the ads, where, and often the budget.
@@ -12,6 +13,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Angle** (angles): The reason to buy that an ad focuses on, like saving time or looking good.
 - **AOV** (average order value): Average order value: total sales divided by number of orders.
 - **Attribution**: Deciding which ad or channel gets credit for a sale.
+- **BAS** (business activity statement): Business activity statement: the form Australian businesses lodge with the ATO to report and pay GST.
 - **Brand search**: Ads that show when people search your brand name. Cheap and usually very profitable.
 - **Break-even CPA**: The most you can pay in ads for one sale before that sale stops making money.
 - **Break-even ROAS**: The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
@@ -20,7 +22,9 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Buy now pay later** (BNPL): Payment options like Afterpay or Klarna that let shoppers split the cost.
 - **Campaign** (campaigns): The top level in an ad account. It holds the goal, like getting sales.
 - **Campaign email** (campaign emails): A one-off email you send to your list, like a new arrival announcement.
+- **Card testing**: When fraudsters use your checkout to try many stolen card numbers with small orders.
 - **Cash forecast**: A week-by-week list of money coming in and going out, so you can see tight weeks early.
+- **Chargeback** (chargebacks, dispute): When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale.
 - **Cold audience** (cold, prospecting): People who have never heard of you.
 - **Conversion rate** (CR): Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits.
 - **CPA** (cost per acquisition, cost per sale, cost per purchase): Cost per acquisition: how much ad money it took to get one sale.
@@ -29,26 +33,35 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Creator** (creators): A person who makes social content and can feature your product.
 - **CTR** (click-through rate, outbound CTR): Click-through rate: out of every 100 people who saw your ad, how many clicked.
 - **Custom audience** (custom audiences): A list Meta builds from your own data, like site visitors or customers.
+- **DAP** (delivered at place, DDU): Delivered at place: the customer pays any import taxes when the parcel arrives.
+- **DDP** (delivered duty paid): Delivered duty paid: you pay the import taxes so the customer pays nothing extra on delivery.
+- **Domain** (domain name): Your store's web address, like yourbrand.com.
+- **Duties** (import duty, customs duty): Taxes charged by a country on goods coming in from overseas.
 - **Express wallets**: One-tap payment options like Apple Pay, Google Pay and Shop Pay.
 - **Fixed costs**: Bills that stay the same each month, like rent, software, staff and your own wage.
 - **Flow** (flows, automation): An email or text series that sends by itself when something happens, like a new sign-up.
 - **Free shipping threshold** (threshold): The order amount where shipping becomes free, like 'Free shipping over $100'.
 - **Frequency**: How many times, on average, the same person saw your ad.
 - **Funnel**: The steps from seeing an ad to buying: visit, add to cart, checkout, order.
+- **GST** (goods and services tax): Goods and services tax: 10% in Australia (15% in New Zealand), added to most sales once you are registered.
 - **Guarantee** (risk reversal): A clear promise that removes the fear of a bad purchase, like a 30-day money-back promise.
 - **Holdout test** (holdout): Turning something off for a while (or in one area) to see how many sales it really adds.
 - **Hook** (hooks): The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
 - **Hook rate**: Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention.
 - **Hot audience** (hot, retargeting): People close to buying: they added to cart or started checkout.
 - **KPI** (KPIs): Key performance indicator: one of the few numbers you watch to know if things are working.
+- **Landed cost**: What one unit really costs once it reaches your warehouse: product, freight, duties and fees.
 - **Landing page**: The page someone lands on after clicking an ad.
+- **Lead time** (lead times): How long it takes from placing an order with your supplier to having stock ready to sell.
 - **Learning phase** (learning): The first days after you start or change an ad set, while Meta works out who to show it to. Results jump around, so wait.
 - **Lookalike** (lookalike audience): People Meta thinks are similar to a list you give it, like your best customers.
 - **LTV** (lifetime value): How much a customer spends with you over time, not just on the first order.
 - **Margin** (gross margin): The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin.
 - **MER** (marketing efficiency ratio): All ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales.
 - **Meta description** (meta descriptions): The short summary under your page title in Google results.
+- **MOQ** (minimum order quantity): Minimum order quantity: the smallest order a supplier will accept.
 - **Negative keyword** (negatives, negative keywords): A word you tell Google never to show your ads for, to stop wasted clicks.
+- **Nexus** (economic nexus): In the US, a link with a state (like a warehouse there, or enough sales into it) that means you must collect its sales tax.
 - **Organic**: Unpaid: posts, search results and word of mouth that you do not pay to show.
 - **Partnership ad** (partnership ads, Spark ads, Spark ad): An ad that runs from a creator's own account, so people see their name instead of yours.
 - **Pixel**: A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
@@ -58,17 +71,31 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Product cost** (COGS, cost of goods): What one item costs you to make or buy, including freight to your warehouse.
 - **Product feed** (feed): The list of your products, prices and photos that Google and Meta read to make shopping ads.
 - **Profit** (contribution profit, contribution): What is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. This is the number Helix cares about most.
+- **Reconciliation** (reconcile): Matching the money in your bank with the sales, fees and refunds in your books.
+- **Reorder point**: The stock level at which you should order more so you do not run out.
+- **Return rate**: The share of orders that customers send back.
 - **Revenue** (sales, gross sales): All the money customers paid. It looks good, but it is not what you keep.
+- **Revenue-based financing** (revenue based financing): A loan you repay as a share of your daily sales, so payments rise and fall with sales.
+- **Reverse charge**: A rule where the buyer, not the overseas seller, accounts for the GST on a business purchase, such as some ad bills.
 - **ROAS** (return on ad spend): Return on ad spend: how many dollars of sales you get for each $1 of ads. ROAS 3 means $3 of sales for $1 of ads.
+- **Safety stock** (safety days): Extra stock (or days of stock) you keep in case sales jump or a shipment is late.
+- **Sales tax** (state sales tax): In the US, a tax set by each state (and some cities) that the seller collects at checkout.
 - **Search terms** (search terms report): The exact words people typed into Google before they saw or clicked your ad.
 - **Segment** (segments): A smaller group of your list, like people who bought in the last 90 days.
 - **SEO** (search engine optimisation): Changes that help your store show up in Google without paying for ads.
 - **Server events** (Conversions API, CAPI): Sales sent to Meta straight from your store's server, so fewer sales go untracked.
 - **Session** (sessions): One visit to your store. One person can make several visits.
+- **Shipping protection** (shipping insurance): An optional fee at checkout that covers lost, stolen or damaged parcels.
+- **SKU** (SKUs): Stock keeping unit: a short code you give each product option so you can track it.
 - **Target CPA** (good CPA): The cost per sale you aim for so each sale still leaves you profit.
+- **Test order** (test orders): A pretend order you place yourself to check payments, emails and tracking work.
+- **Theme** (themes): The design template for your Shopify store. It controls how every page looks.
 - **ThruPlay** (thruplay rate): A video view of 15 seconds or more (or the whole video if it is shorter).
+- **Two-factor authentication** (2FA): A second check, like a code from an app, needed to log in. It stops most account takeovers.
 - **UGC** (user-generated content): Photos and videos made by real customers or creators instead of the brand.
 - **UTM** (UTMs, UTM tags): Tags added to the end of a link so your analytics can tell which ad or email a visitor came from.
 - **Variable costs** (variable cost): Costs that grow with every order: product cost, shipping and payment fees.
+- **Variant** (variants): One option of a product, like a size or colour, with its own stock and price.
+- **VAT** (value added tax): Value added tax: the UK and EU version of GST, usually included in the shown price.
 - **Warm audience** (warm): People who know you: they visited, followed or watched your videos.
 - **Weeks of cover**: How many weeks your stock will last at the current sales speed.

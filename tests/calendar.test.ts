@@ -1,3 +1,4 @@
+import { guidesForDay } from "@/lib/guides";
 import { describe, expect, it } from "vitest";
 import { easterSunday, nthWeekday, primaryAlert, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { buildIcs } from "@/lib/ics";
@@ -52,17 +53,22 @@ describe("ics export", () => {
 
 describe("tracks", () => {
   it("has a lighter Just starting track and the full Growing track", () => {
-    expect(TRACKS.starting.days).toHaveLength(21);
+    expect(TRACKS.starting.days).toHaveLength(28);
     expect(TRACKS.growing.days).toHaveLength(64);
     expect(Math.max(...TRACKS.starting.days.map((d) => d.minutes))).toBeLessThanOrEqual(15);
     expect(toTrack("starting")).toBe("starting");
     expect(toTrack("nonsense")).toBe("growing");
   });
   it("keeps progress separate per track", () => {
-    expect(dayByTaskId("start-18")?.day.title).toBe("Set up your first campaign, paused");
+    expect(dayByTaskId("start-25")?.day.title).toBe("Set up your first campaign, paused");
     expect(dayByTaskId("day-1")?.track.id).toBe("growing");
     const T = TRACKS.starting;
-    const p = dayProgress({ days: T.days, doneIds: new Set(["day-1", "day-2", "start-14"]), completedToday: [], ahead: false, unlocked: () => true, taskId: T.taskId });
+    const p = dayProgress({ days: T.days, doneIds: new Set(["day-1", "day-2", "start-21"]), completedToday: [], ahead: false, unlocked: () => true, taskId: T.taskId });
     expect(p.nextDay?.day).toBe(1);
+  });
+  it("shows Shopify drawings on the Just starting store setup days only", () => {
+    expect(guidesForDay(2, "starting")).toHaveLength(0);
+    expect(guidesForDay(16, "starting").map((g) => g.file)).toEqual(["shopify-6-taxes", "shopify-7-payments"]);
+    expect(guidesForDay(2).map((g) => g.file)).toContain("shopify-1-yesterdays-numbers");
   });
 });

@@ -452,5 +452,188 @@
   "term": "Organic",
   "aka": [],
   "means": "Unpaid: posts, search results and word of mouth that you do not pay to show."
+ },
+ {
+  "term": "Theme",
+  "aka": [
+   "themes"
+  ],
+  "means": "The design template for your Shopify store. It controls how every page looks."
+ },
+ {
+  "term": "Variant",
+  "aka": [
+   "variants"
+  ],
+  "means": "One option of a product, like a size or colour, with its own stock and price."
+ },
+ {
+  "term": "SKU",
+  "aka": [
+   "SKUs"
+  ],
+  "means": "Stock keeping unit: a short code you give each product option so you can track it."
+ },
+ {
+  "term": "Domain",
+  "aka": [
+   "domain name"
+  ],
+  "means": "Your store's web address, like yourbrand.com."
+ },
+ {
+  "term": "Test order",
+  "aka": [
+   "test orders"
+  ],
+  "means": "A pretend order you place yourself to check payments, emails and tracking work."
+ },
+ {
+  "term": "GST",
+  "aka": [
+   "goods and services tax"
+  ],
+  "means": "Goods and services tax: 10% in Australia (15% in New Zealand), added to most sales once you are registered."
+ },
+ {
+  "term": "BAS",
+  "aka": [
+   "business activity statement"
+  ],
+  "means": "Business activity statement: the form Australian businesses lodge with the ATO to report and pay GST."
+ },
+ {
+  "term": "Sales tax",
+  "aka": [
+   "state sales tax"
+  ],
+  "means": "In the US, a tax set by each state (and some cities) that the seller collects at checkout."
+ },
+ {
+  "term": "Nexus",
+  "aka": [
+   "economic nexus"
+  ],
+  "means": "In the US, a link with a state (like a warehouse there, or enough sales into it) that means you must collect its sales tax."
+ },
+ {
+  "term": "VAT",
+  "aka": [
+   "value added tax"
+  ],
+  "means": "Value added tax: the UK and EU version of GST, usually included in the shown price."
+ },
+ {
+  "term": "Reverse charge",
+  "aka": [],
+  "means": "A rule where the buyer, not the overseas seller, accounts for the GST on a business purchase, such as some ad bills."
+ },
+ {
+  "term": "Duties",
+  "aka": [
+   "import duty",
+   "customs duty"
+  ],
+  "means": "Taxes charged by a country on goods coming in from overseas."
+ },
+ {
+  "term": "DDP",
+  "aka": [
+   "delivered duty paid"
+  ],
+  "means": "Delivered duty paid: you pay the import taxes so the customer pays nothing extra on delivery."
+ },
+ {
+  "term": "DAP",
+  "aka": [
+   "delivered at place",
+   "DDU"
+  ],
+  "means": "Delivered at place: the customer pays any import taxes when the parcel arrives."
+ },
+ {
+  "term": "3PL",
+  "aka": [
+   "third-party logistics",
+   "fulfilment centre"
+  ],
+  "means": "Third-party logistics: a warehouse company that stores your stock and packs and ships your orders."
+ },
+ {
+  "term": "Chargeback",
+  "aka": [
+   "chargebacks",
+   "dispute"
+  ],
+  "means": "When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale."
+ },
+ {
+  "term": "Card testing",
+  "aka": [],
+  "means": "When fraudsters use your checkout to try many stolen card numbers with small orders."
+ },
+ {
+  "term": "Two-factor authentication",
+  "aka": [
+   "2FA"
+  ],
+  "means": "A second check, like a code from an app, needed to log in. It stops most account takeovers."
+ },
+ {
+  "term": "Reconciliation",
+  "aka": [
+   "reconcile"
+  ],
+  "means": "Matching the money in your bank with the sales, fees and refunds in your books."
+ },
+ {
+  "term": "Landed cost",
+  "aka": [],
+  "means": "What one unit really costs once it reaches your warehouse: product, freight, duties and fees."
+ },
+ {
+  "term": "MOQ",
+  "aka": [
+   "minimum order quantity"
+  ],
+  "means": "Minimum order quantity: the smallest order a supplier will accept."
+ },
+ {
+  "term": "Lead time",
+  "aka": [
+   "lead times"
+  ],
+  "means": "How long it takes from placing an order with your supplier to having stock ready to sell."
+ },
+ {
+  "term": "Reorder point",
+  "aka": [],
+  "means": "The stock level at which you should order more so you do not run out."
+ },
+ {
+  "term": "Safety stock",
+  "aka": [
+   "safety days"
+  ],
+  "means": "Extra stock (or days of stock) you keep in case sales jump or a shipment is late."
+ },
+ {
+  "term": "Return rate",
+  "aka": [],
+  "means": "The share of orders that customers send back."
+ },
+ {
+  "term": "Shipping protection",
+  "aka": [
+   "shipping insurance"
+  ],
+  "means": "An optional fee at checkout that covers lost, stolen or damaged parcels."
+ },
+ {
+  "term": "Revenue-based financing",
+  "aka": [
+   "revenue based financing"
+  ],
+  "means": "A loan you repay as a share of your daily sales, so payments rise and fall with sales."
  }
 ]

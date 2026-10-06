@@ -16,7 +16,7 @@
 <rect x="230" y="84" width="150" height="32" rx="6" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
 <text x="246" y="105" font-size="13" font-weight="600" fill="#0f172a" text-anchor="start">Yesterday ▾</text>
 <rect x="230" y="140" width="182" height="100" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
-<text x="246" y="170" font-size="13" font-weight="600" fill="#475569" text-anchor="start">Total sales</text>
+<text x="246" y="170" font-size="13" font-weight="600" fill="#475569" text-anchor="start">Gross sales</text>
 <text x="246" y="210" font-size="26" font-weight="800" fill="#0f172a" text-anchor="start">$2,184</text>
 <rect x="426" y="140" width="182" height="100" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
 <text x="442" y="170" font-size="13" font-weight="600" fill="#475569" text-anchor="start">Orders</text>
@@ -54,8 +54,8 @@
 <circle cx="896" cy="124" r="13" fill="#e11d48"/><text x="896" y="129" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
 <text x="920" y="129" font-size="14" fill="#e2e8f0">Set the date to Yesterday.</text>
 <circle cx="896" cy="161" r="13" fill="#e11d48"/><text x="896" y="166" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
-<text x="920" y="166" font-size="14" fill="#e2e8f0">Read Total sales and Orders. Type</text>
-<text x="920" y="185" font-size="14" fill="#e2e8f0">them into the Update yesterday box</text>
-<text x="920" y="204" font-size="14" fill="#e2e8f0">in Helix.</text>
+<text x="920" y="166" font-size="14" fill="#e2e8f0">Read Gross sales (before tax) and</text>
+<text x="920" y="185" font-size="14" fill="#e2e8f0">Orders. Type them into the Update</text>
+<text x="920" y="204" font-size="14" fill="#e2e8f0">yesterday box in Helix.</text>
 <text x="24" y="668" font-size="12" fill="#64748b">Screens change often. Labels on your screen may look a little different.</text>
 <text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>

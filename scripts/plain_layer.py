@@ -141,6 +141,12 @@ PLAIN = {
        "Pin 3 posts: your best product, real reviews and your story.",
        "Post on a schedule you can keep."],
       ["Organic", "UGC"]),
+ 22: ("Step by step, how to set up a Shopify store that is ready to take real orders.",
+      "A clear, fast, trustworthy store makes every ad dollar go further. Mistakes in tax, payments or tracking are hard to fix later.",
+      ["Get your domain, pick a free theme and build the home and product pages.",
+       "Set shipping, taxes, payments and plain-language policies.",
+       "Install tracking, check speed on a phone and place a test order before launch."],
+      ["Theme", "Domain", "Variant", "GST", "Sales tax", "Test order"]),
 }
 
 # (module file prefix, lesson heading prefix, guide file, alt text, official help label, url)
@@ -161,6 +167,14 @@ GUIDES = [
  ("09", "## Lesson 9.11", "shopify-2-free-shipping", "Set a free shipping amount in Shopify", "Shopify: set up shipping rates", "https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates/setting-up-shipping-rates"),
  ("01", "## Lesson 1.3", "shopify-1-yesterdays-numbers", "Find yesterday's numbers in Shopify", "Shopify: reports and analytics", "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports"),
  ("01", "## Lesson 1.3", "helix-1-daily-update", "Update yesterday in Helix", None, None),
+ ("22", "## Lesson 22.3", "shopify-3-theme-editor", "Set up your theme safely in Shopify", "Shopify: themes", "https://help.shopify.com/en/manual/online-store/themes"),
+ ("22", "## Lesson 22.5", "shopify-4-add-product", "Add a product the right way in Shopify", "Shopify: adding products", "https://help.shopify.com/en/manual/products/add-update-products"),
+ ("22", "## Lesson 22.8", "shopify-5-menus", "Build a short main menu in Shopify", "Shopify: menus and links", "https://help.shopify.com/en/manual/online-store/menus-and-links"),
+ ("22", "## Lesson 22.9", "shopify-2-free-shipping", "Set a free shipping amount in Shopify", "Shopify: set up shipping rates", "https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates/setting-up-shipping-rates"),
+ ("22", "## Lesson 22.10", "shopify-6-taxes", "Turn on tax settings in Shopify", "Shopify: taxes", "https://help.shopify.com/en/manual/taxes"),
+ ("22", "## Lesson 22.11", "shopify-7-payments", "Turn on payments in Shopify", "Shopify Payments", "https://help.shopify.com/en/manual/payments/shopify-payments"),
+ ("22", "## Lesson 22.14", "shopify-8-meta-tracking", "Connect Meta tracking from Shopify", "Shopify: Facebook and Instagram", "https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta"),
+ ("22", "## Lesson 22.16", "shopify-9-test-order", "Place a test order in Shopify", "Shopify: test orders", "https://help.shopify.com/en/manual/checkout-settings/test-orders"),
 ]
 
 START, END = "<!-- plain:start -->", "<!-- plain:end -->"

@@ -29,7 +29,7 @@ export async function markDone(form: FormData) {
 
 /** The "daily numbers" day in the user's track: Growing day 2, Just starting day 14. */
 async function numbersHabitTask(userId: string) {
-  return (await getAccount(userId)).track === "starting" ? "start-14" : "day-2";
+  return (await getAccount(userId)).track === "starting" ? "start-21" : "day-2";
 }
 
 /** One click: add a seasonal prep plan (its tasks then show on Today with due dates). */
