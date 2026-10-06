@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { BookOpen, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getDays, getSeasonPlans, getSettings, listApprovals, streakFrom } from "@/lib/repo";
-import { seasonalAlerts } from "@/lib/seasons";
+import { countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { costRatios, summarise } from "@/lib/today";
 import { termsIn } from "@/lib/glossary";
 import { guidesForDay } from "@/lib/guides";
 import { ProfitToday } from "@/components/dashboard/ProfitToday";
 import { getSnapshot } from "@/lib/meta/store";
-import { DAYS, STAGES, STAGE_TIER, AREA_STYLE, dayTaskId } from "@/lib/seed/curriculum";
+import { AREA_STYLE } from "@/lib/seed/curriculum";
+import { track } from "@/lib/tracks";
 import { insightsFor } from "@/lib/signals";
 import { dayProgress } from "@/lib/progress";
 import { PLAN_RANK, planName } from "@/lib/plans";
@@ -29,6 +30,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const estimatePct = Math.round((r.cogs + r.fees + r.discounts + r.refunds) * 100);
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
+  const T = track(acct.track);
+  const { days: DAYS, stages: STAGES, stageTier: STAGE_TIER, taskId: dayTaskId } = T;
   const unlocked = (stage: number) => PLAN_RANK[acct.plan] >= PLAN_RANK[STAGE_TIER[stage]];
 
   const prog = dayProgress({
@@ -51,7 +54,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
 
   const status = prog.status;
   // Seasonal alerts from the real date: the most urgent one, plus any other active plan the user added.
-  const alerts = seasonalAlerts(today);
+  const alerts = seasonalAlerts(today, acct.country);
+  const upcoming = upcomingEvents(today, acct.country, 200).slice(0, 6);
   const planKeys = new Set(plans.map((p) => p.planKey));
   const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key));
   const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a));
@@ -64,9 +68,17 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Your first audit is queued (live crawling is coming soon; Insights show example findings for now). Start with Day 1 below.
         </div>
       )}
+      {!acct.onboarded && !sp.welcome && (
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
+          <span><strong>New here?</strong> Tell Helix if you are just starting or already growing, and where your customers live. It takes a minute and picks the right lessons and sale dates for you.</span>
+          <Link href="/start" className="btn-primary px-4 py-2 text-sm">Pick your track <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+        </div>
+      )}
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm font-medium text-slate-500">{prettyDay(today)}</p>
+          <p className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">{prettyDay(today)}
+            <Link href="/dashboard/settings" className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${T.id === "starting" ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : "bg-violet-50 text-violet-700 ring-violet-200"}`}>Track: {T.name} · change</Link>
+          </p>
           <h1 className="mt-1 text-3xl font-bold tracking-tight">Good to see you{u.name ? `, ${u.name}` : ""}</h1>
           <p className="mt-1 text-slate-600">Update yesterday, see your profit, then do one small thing to grow it. About {totalMinutes + 1} minutes.</p>
         </div>
@@ -91,6 +103,24 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <SeasonalAlertCard alert={a} others={i === shownAlerts.length - 1 ? otherAlerts : []} planAdded={planKeys.has(a.key)} done={done} addAction={addPrepPlan} doneAction={markDone} />
         </div>
       ))}
+
+      {upcoming.length > 0 && (
+        <section aria-labelledby="upcoming-h" className="mt-6">
+          <div className="flex items-baseline justify-between">
+            <h2 id="upcoming-h" className="flex items-center gap-2 text-sm font-semibold text-slate-700"><CalendarDays className="h-4 w-4" aria-hidden /> Upcoming key dates ({acct.country === "US" ? "United States" : "Australia"})</h2>
+            <Link href="/dashboard/calendar" className="text-sm font-medium text-cyan-700 hover:underline">Full calendar</Link>
+          </div>
+          <ol className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {upcoming.map((e) => (
+              <li key={e.key} className="card px-3 py-2.5">
+                <p className="truncate text-sm font-semibold text-slate-900" title={e.name}>{e.name}</p>
+                <p className="text-xs text-slate-500">{prettyDay(e.date)}{e.approx ? " (approx.)" : ""}</p>
+                <p className={`mt-1 text-xs font-bold ${e.daysTo <= 14 ? "text-rose-600" : e.daysTo <= 60 ? "text-orange-600" : "text-slate-600"}`}>{countdownText(e.daysTo)}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       <div className="mt-6">
         <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} action={quickUpdate}
@@ -196,7 +226,10 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
             </article>
           ) : (
             <article className="card p-6">
-              <p className="flex items-center gap-2 text-sm font-semibold text-emerald-700"><CheckCircle2 className="h-5 w-5" aria-hidden /> Today&apos;s lesson is done. Small steps, compounding.</p>
+              <p className="flex items-center gap-2 text-sm font-semibold text-emerald-700"><CheckCircle2 className="h-5 w-5" aria-hidden /> {nextDay ? "Today's lesson is done. Small steps, compounding." : `You finished the ${T.name} track.`}</p>
+              {!nextDay && T.id === "starting" && (
+                <p className="mt-2 text-sm text-slate-600">Getting regular sales now? Switch to the <strong>Growing</strong> track for profit tracking, scaling, retention and Black Friday. <Link className="text-cyan-700 underline" href="/dashboard/settings">Switch in Settings</Link></p>
+              )}
               {nextDay && (
                 <p className="mt-2 text-sm text-slate-600">
                   Tomorrow: <strong>Day {nextDay.day}: {nextDay.title}</strong>. <Link className="text-cyan-700 underline" href="/dashboard?ahead=1">Start it now instead</Link>
@@ -214,7 +247,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <aside aria-labelledby="road-h" className="xl:sticky xl:top-8 xl:self-start">
           <div className="card p-5">
             <div className="flex items-baseline justify-between">
-              <h2 id="road-h" className="font-semibold">Your growth roadmap</h2>
+              <h2 id="road-h" className="font-semibold">{T.id === "starting" ? "Just starting roadmap" : "Your growth roadmap"}</h2>
               <span className="text-xs text-slate-500">{daysDone}/{DAYS.length} days</span>
             </div>
             <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="h-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500" style={{ width: `${(daysDone / DAYS.length) * 100}%` }} /></div>
@@ -254,7 +287,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                 );
               })}
             </ol>
-            {acct.plan !== "growth" && <Link href="/dashboard/billing" className="btn-primary mt-5 w-full">Unlock the full roadmap</Link>}
+            {STAGES.some((st) => !unlocked(st.id)) && <Link href="/dashboard/billing" className="btn-primary mt-5 w-full">Unlock the full roadmap</Link>}
           </div>
         </aside>
       </div>

@@ -1,0 +1,569 @@
+{
+ "stages": [
+  {
+   "id": 1,
+   "name": "Check your product and offer",
+   "range": "Days 1 to 7"
+  },
+  {
+   "id": 2,
+   "name": "Get your store ready",
+   "range": "Days 8 to 14"
+  },
+  {
+   "id": 3,
+   "name": "Your first small test campaign",
+   "range": "Days 15 to 21"
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "Who it is for",
+   "title": "Write who your product is for",
+   "lesson": "If you try to sell to everyone, your ads and pages speak to no one. One clear sentence about your buyer makes every later step easier.",
+   "steps": [
+    "Finish this sentence: 'My product is for [person] who wants [result] but struggles with [problem].'",
+    "Keep it under 25 words.",
+    "Read it to a friend. Ask them to say it back in their own words.",
+    "If they get it wrong, make the sentence simpler and try again.",
+    "Save the final sentence. You will use it in your ads and on your home page."
+   ],
+   "minutes": 10,
+   "area": "learning",
+   "learn": {
+    "slug": "04-brand-and-content",
+    "anchor": "lesson-42-customer-profiles",
+    "label": "Customer profiles",
+    "ref": "4.2"
+   },
+   "sop": "16",
+   "doIt": null,
+   "watch": null
+  },
+  {
+   "day": 2,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "Is there demand?",
+   "title": "Check that people already want it",
+   "lesson": "The cheapest test is the one you run before spending on ads. If people already search for, talk about and buy products like yours, you are in a good place.",
+   "steps": [
+    "Search Google for what you sell. Write down 3 competitors that come up.",
+    "Read 20 reviews of those competitors. Note what people love and what they complain about.",
+    "Search TikTok or Instagram for the product type. Do people post about it?",
+    "Give your idea a score from 1 to 5 for demand. Under 3? Look at how to make the product or offer more different."
+   ],
+   "minutes": 15,
+   "area": "learning",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-37-product-market-fit-snapshot",
+    "label": "Product-market fit snapshot",
+    "ref": "3.7"
+   },
+   "sop": "16",
+   "doIt": null,
+   "watch": null
+  },
+  {
+   "day": 3,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "Your cost per sale",
+   "title": "Work out what one sale really costs you",
+   "lesson": "A sale can lose money even at a good price. You need to know every cost that comes with one order before you set prices or spend on ads.",
+   "steps": [
+    "Write your product cost (what you pay the supplier for one unit).",
+    "Add packaging and the shipping you pay to send it.",
+    "Add payment fees. Use about 3% of the price if you are not sure.",
+    "Add the total. This is your cost per sale before ads.",
+    "Price minus this cost is what you have left to pay for ads and keep as profit."
+   ],
+   "minutes": 10,
+   "area": "numbers",
+   "learn": {
+    "slug": "01-daily-profit-foundations",
+    "anchor": "lesson-12-your-cost-drivers",
+    "label": "Your cost drivers",
+    "ref": "1.2"
+   },
+   "sop": "02",
+   "doIt": {
+    "tier": "free",
+    "label": "Work out your cost per sale from your prices"
+   },
+   "watch": "Profit at the top of your dashboard"
+  },
+  {
+   "day": 4,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "A price that leaves profit",
+   "title": "Check your price leaves room for ads",
+   "lesson": "New stores often price too low and then cannot afford ads. A simple check now saves months of selling at a loss.",
+   "steps": [
+    "Take your price and your cost per sale from yesterday.",
+    "Aim for a price of at least 3 times your product cost. Many small stores need this to cover ads and still make money.",
+    "If you are below that, look at bundles, a higher-value version, or a cheaper supplier.",
+    "Write down the most you could pay in ads for one sale and still break even: price minus cost per sale."
+   ],
+   "minutes": 10,
+   "area": "numbers",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-36-make-yes-easy-pricing",
+    "label": "Make yes easy (pricing)",
+    "ref": "3.6"
+   },
+   "sop": "04",
+   "doIt": null,
+   "watch": "Profit at the top of your dashboard"
+  },
+  {
+   "day": 5,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "Your promise",
+   "title": "Write your one-line promise",
+   "lesson": "People decide in seconds. A clear promise tells them what they get and why it is better, before they scroll away.",
+   "steps": [
+    "Write one line: the result your customer gets, not the features.",
+    "Add why it is different, in plain words. For example: 'Soft as cotton, dries in an hour.'",
+    "Cut any word a 12-year-old would not understand.",
+    "Put the line at the top of your home page and under your product title."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-32-sharpen-the-promise",
+    "label": "Sharpen the promise",
+    "ref": "3.2"
+   },
+   "sop": "04",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft 5 promise lines for you to choose from"
+   },
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 6,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "Remove the risk",
+   "title": "Make buying feel safe",
+   "lesson": "A new store has no reputation yet. Clear returns, a simple guarantee and visible contact details make a stranger feel safe enough to buy.",
+   "steps": [
+    "Write your returns rule in one plain sentence, for example '30 days to change your mind'.",
+    "Add it near the Add to cart button and in your footer.",
+    "Show a real email address or chat button on every page.",
+    "If you can, add a guarantee in one line."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-35-remove-risk",
+    "label": "Remove risk",
+    "ref": "3.5"
+   },
+   "sop": "04",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 7,
+   "stage": 1,
+   "stageName": "Check your product and offer",
+   "topic": "First proof",
+   "title": "Collect your first reviews and photos",
+   "lesson": "People trust other customers more than they trust you. Even 5 honest reviews with photos make a big difference for a new store.",
+   "steps": [
+    "List everyone who has bought or tried the product, including friends and family.",
+    "Ask each one for a short honest review and, if possible, a photo.",
+    "Install a review app on your store if you do not have one.",
+    "Add the best 3 reviews near the top of your product page."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-33-stack-belief",
+    "label": "Stack belief",
+    "ref": "3.3"
+   },
+   "sop": "16",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 8,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "The 5-second test",
+   "title": "Check your home page makes sense in 5 seconds",
+   "lesson": "Visitors who are confused leave. Your home page must say what you sell and who it is for straight away.",
+   "steps": [
+    "Open your home page on your phone.",
+    "Ask someone new to look for 5 seconds, then tell you what you sell and who it is for.",
+    "If they cannot, put your one-line promise and a clear product photo at the very top.",
+    "Have one main button, such as 'Shop now', above the fold (the part you see without scrolling)."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-92-page-checklists",
+    "label": "Page checklists",
+    "ref": "9.2"
+   },
+   "sop": "11",
+   "doIt": {
+    "tier": "free",
+    "label": "Run a store check-up on your home page"
+   },
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 9,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "Product page basics",
+   "title": "Tick off the product page basics",
+   "lesson": "Most buying decisions happen on the product page. A few basics answer the questions that stop people buying.",
+   "steps": [
+    "Use at least 4 clear photos, including one that shows the size or the product in use.",
+    "Put the price, your promise line and the Add to cart button near the top.",
+    "Answer the main worries in short lines: size or fit, quality, shipping time, returns.",
+    "Add your best reviews."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-95-copy-that-sells",
+    "label": "Copy that sells",
+    "ref": "9.5"
+   },
+   "sop": "11",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft product page copy for your top product"
+   },
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 10,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "Shipping and returns",
+   "title": "Write shipping and returns in plain words",
+   "lesson": "Surprise shipping costs are one of the top reasons people leave at checkout. Say the cost and timing clearly, early.",
+   "steps": [
+    "Write how long delivery takes and what it costs, in one or two lines.",
+    "Show it on the product page, not only on a policy page.",
+    "If you offer free shipping over an amount, show that amount clearly.",
+    "Write your returns steps as 3 simple numbered steps."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-96-policies-and-service",
+    "label": "Policies and service",
+    "ref": "9.6"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 11,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "Speed and phone check",
+   "title": "Check your store on a phone",
+   "lesson": "Most shoppers visit on a phone. A slow or clumsy mobile store wastes every ad dollar you spend later.",
+   "steps": [
+    "Open your store on your phone using mobile data, not wifi.",
+    "Time how long the home page and a product page take to load. Aim for about 3 seconds or less.",
+    "Try to buy something. Note anything that is hard to tap or read.",
+    "Remove apps you do not use and shrink very large images."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-94-speed",
+    "label": "Speed",
+    "ref": "9.4"
+   },
+   "sop": "11",
+   "doIt": null,
+   "watch": "Conversion rate"
+  },
+  {
+   "day": 12,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "Start your list",
+   "title": "Add an email sign-up and a welcome email",
+   "lesson": "Most visitors will not buy on the first visit. An email sign-up lets you invite them back for free.",
+   "steps": [
+    "Turn on a sign-up pop-up in your email tool (for example Klaviyo or Shopify Email).",
+    "Offer a small reason to join, such as a first-order gift or early access.",
+    "Write one welcome email: say hello, repeat your promise, show your best seller.",
+    "Test it by signing up yourself."
+   ],
+   "minutes": 15,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-101-sign-up-forms",
+    "label": "Sign-up forms",
+    "ref": "10.1"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft your welcome email"
+   },
+   "watch": "Email sign-ups"
+  },
+  {
+   "day": 13,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "Tracking",
+   "title": "Install the Meta pixel and Google tag",
+   "lesson": "Without tracking you cannot tell which ads bring sales. Set it up before you spend a single dollar on ads.",
+   "steps": [
+    "In Shopify, install the Facebook and Instagram app and the Google app.",
+    "Connect your Meta account and turn on the pixel (a small piece of code that tells Meta when someone buys).",
+    "Connect your Google account so Google can see your sales too.",
+    "Place a small test order and check it shows up in both."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-201-before-you-launch-tracking-you-can-trust",
+    "label": "Before you launch: tracking you can trust",
+    "ref": "20.1"
+   },
+   "sop": "05",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 14,
+   "stage": 2,
+   "stageName": "Get your store ready",
+   "topic": "Daily numbers",
+   "title": "Start your 2-minute morning numbers",
+   "lesson": "Even with few sales, writing down yesterday's sales, orders and ad spend each morning builds the habit that later tells you what is working.",
+   "steps": [
+    "Go to Today and find the 'Update yesterday' box.",
+    "Type yesterday's sales and orders. Zero is fine.",
+    "Type any ad spend.",
+    "Press Save. Do this every morning from now on."
+   ],
+   "minutes": 5,
+   "area": "numbers",
+   "learn": {
+    "slug": "01-daily-profit-foundations",
+    "anchor": "lesson-16-a-2-minute-morning-routine",
+    "label": "A 2-minute morning routine",
+    "ref": "1.6"
+   },
+   "sop": "02",
+   "doIt": null,
+   "watch": "Profit, every day"
+  },
+  {
+   "day": 15,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Test budget",
+   "title": "Set your test budget and your stop rule",
+   "lesson": "Your first campaign is a test, not a bet. Decide how much you can afford to learn with, and when to stop, before you start.",
+   "steps": [
+    "Pick a total test budget you can afford to lose, for example $150 to $300.",
+    "Split it over 7 to 10 days. That is often $20 to $30 a day.",
+    "Write your stop rule: if one ad spends twice your break-even cost per sale with no sale, turn it off.",
+    "Write your keep rule: if an ad gets sales at or under your break-even cost, keep it running."
+   ],
+   "minutes": 10,
+   "area": "numbers",
+   "learn": {
+    "slug": "01-daily-profit-foundations",
+    "anchor": "lesson-15-your-target-mer-and-break-even-numbers",
+    "label": "Your target MER and break-even numbers",
+    "ref": "1.5"
+   },
+   "sop": "06",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) compared with your break-even"
+  },
+  {
+   "day": 16,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Simple ads",
+   "title": "Film 3 simple ads on your phone",
+   "lesson": "You do not need a studio. Simple, real-looking phone videos often beat polished ads, especially for new brands.",
+   "steps": [
+    "Film 3 short videos (10 to 20 seconds) on your phone in good daylight.",
+    "Video 1: you or a customer using the product. Video 2: a close-up of the key detail. Video 3: the problem, then your product solving it.",
+    "Hold the phone upright (vertical).",
+    "Add short captions, because many people watch with the sound off."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-1910-shooting-on-a-phone",
+    "label": "Shooting on a phone",
+    "ref": "19.10"
+   },
+   "sop": "08",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 17,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Words that stop the scroll",
+   "title": "Write the first line for each ad",
+   "lesson": "The first 3 seconds and the first line decide if anyone watches. One clear line about the problem or result works best.",
+   "steps": [
+    "For each video, write a first line that names the problem or the result, for example 'Tired of bottles that leak in your bag?'",
+    "Write a short main text: the promise, one proof point and the offer.",
+    "Add a clear button such as 'Shop now'.",
+    "Read each one out loud. Cut anything that sounds like an ad from a big company."
+   ],
+   "minutes": 10,
+   "area": "ads",
+   "learn": {
+    "slug": "05-creative-strategy",
+    "anchor": "lesson-57-hooks-first-0-to-3-seconds",
+    "label": "Hooks (first 0 to 3 seconds)",
+    "ref": "5.7"
+   },
+   "sop": "07",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft 3 opening lines and ad text for each video"
+   },
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 18,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Build the test",
+   "title": "Set up your first campaign, paused",
+   "lesson": "Building the campaign paused lets you check everything calmly before any money is spent.",
+   "steps": [
+    "In Ads Manager, create a Sales campaign.",
+    "Set the daily budget from Day 15. Leave the audience broad (your country, adults).",
+    "Add your 3 ads and link them to your best product page.",
+    "Leave it paused. Check the link, the pixel and the text, then save."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-203-setting-up-a-meta-sales-campaign-step-by-step",
+    "label": "Setting up a Meta sales campaign step by step",
+    "ref": "20.3"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "starter",
+    "label": "Build the test campaign as a paused draft in your account"
+   },
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 19,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Launch and wait",
+   "title": "Launch the test and leave it alone",
+   "lesson": "New campaigns go through a learning phase while Meta works out who to show them to. Changing things every day restarts it and wastes money.",
+   "steps": [
+    "Press Launch on your paused campaign.",
+    "Do not change budgets or ads for 3 days unless an ad hits your stop rule.",
+    "Keep doing your 2-minute morning numbers.",
+    "Note each day's spend, clicks and any sales."
+   ],
+   "minutes": 5,
+   "area": "ads",
+   "learn": {
+    "slug": "07-meta-ads",
+    "anchor": "lesson-75-the-learning-phase",
+    "label": "The learning phase",
+    "ref": "7.5"
+   },
+   "sop": "06",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 20,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Read the results",
+   "title": "Read what your test is telling you",
+   "lesson": "Even without many sales, the numbers show where the problem is: the ad, the page, or the offer.",
+   "steps": [
+    "Check how many people clicked (CTR, the share of viewers who click). Under about 1% often means the ad needs work.",
+    "If people click but do not add to cart, the product page or price is the problem.",
+    "If people add to cart but do not buy, check shipping costs and checkout.",
+    "Write down the one biggest problem."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout",
+    "label": "Cross-diagnosis: is it the ad, the page, the offer or the checkout?",
+    "ref": "20.7"
+   },
+   "sop": "06",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 21,
+   "stage": 3,
+   "stageName": "Your first small test campaign",
+   "topic": "Your next step",
+   "title": "Decide what to do next",
+   "lesson": "A test ends with a decision. Keep what works, fix the biggest problem, and plan the next small test.",
+   "steps": [
+    "Turn off any ad that broke your stop rule.",
+    "Keep any ad that got sales at or under break-even.",
+    "Pick one fix for the biggest problem from yesterday: a new ad, a page change, or a better offer.",
+    "When you are getting regular sales, switch to the Growing track in Settings."
+   ],
+   "minutes": 10,
+   "area": "learning",
+   "learn": {
+    "slug": "07-meta-ads",
+    "anchor": "lesson-76-daily-optimisation-in-10-minutes",
+    "label": "Daily optimisation in 10 minutes",
+    "ref": "7.6"
+   },
+   "sop": "06",
+   "doIt": null,
+   "watch": null
+  }
+ ]
+}

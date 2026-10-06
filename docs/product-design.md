@@ -490,5 +490,7 @@ Core tables (simplified; all rows carry `id`, `created_at`, `updated_at`; tenant
 | Campaign builder | Draft & you launch (paused drafts in the user's account) and Guide me (structures, original example ads, click-by-click checklists) | [execution-model.md](execution-model.md) |
 | Email automation | Nine flows with drafts; set up after approval | [email-automation.md](email-automation.md) |
 | Learn | The 21-module playbook, linked from every day and insight | [playbook/](playbook/README.md) |
+| Calendar | Key dates for the next 12 months by country (AU, US) with countdowns, notes, prep-plan status, .ics export and subscribe links; an Upcoming strip on Today | `src/lib/seasons.ts`, `src/lib/ics.ts` |
+| Tracks | Onboarding picks Just starting (21 lighter days: product and offer, store basics, first small test campaign) or Growing (64 days: profit, scaling, retention, Black Friday) plus country; switch in Settings, progress kept per track | [daily-curriculum-starting.md](daily-curriculum-starting.md), [daily-curriculum.md](daily-curriculum.md) |
 | Seasonal alerts | Prominent banner on Today and the home page from the real date, at the right lead time for each key date (Black Friday from 12 weeks, Christmas cut-offs 8, Boxing Day and New Year 5, Valentine's Day 6, Mother's Day 8, EOFY 6, Father's Day 7). "Add the prep plan" inserts dated steps with Mark done and lesson links; also in the weekly report and the Monday nudge | `src/lib/seasons.ts`, Module 13, SOP 15 |
 

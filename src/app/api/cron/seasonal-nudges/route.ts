@@ -3,7 +3,7 @@ import { isoDay } from "@/lib/dates";
 import { appUrl } from "@/lib/meta/config";
 import { logAudit } from "@/lib/meta/store";
 import { buildNudge, deliverNudge } from "@/lib/nudges";
-import { getCompletions, getSeasonPlans, listNudgeRecipients } from "@/lib/repo";
+import { getAccount, getCompletions, getSeasonPlans, listNudgeRecipients } from "@/lib/repo";
 import { primaryAlert } from "@/lib/seasons";
 
 export const dynamic = "force-dynamic";
@@ -17,11 +17,14 @@ export const maxDuration = 300;
 export async function GET(req: NextRequest) {
   const secret = process.env.CRON_SECRET;
   if (!secret || req.headers.get("authorization") !== `Bearer ${secret}`) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
-  const alert = primaryAlert(isoDay());
-  if (!alert) return NextResponse.json({ alert: null, sent: 0 });
+  const today = isoDay();
   let sent = 0, skipped = 0;
+  const keys = new Set<string>();
   for (const u of await listNudgeRecipients()) {
-    const [plans, comps] = await Promise.all([getSeasonPlans(u.userId), getCompletions(u.userId)]);
+    const [plans, comps, acct] = await Promise.all([getSeasonPlans(u.userId), getCompletions(u.userId), getAccount(u.userId)]);
+    const alert = primaryAlert(today, acct.country); // each user's own country calendar
+    if (!alert) { skipped++; continue; }
+    keys.add(alert.key);
     const nudge = buildNudge(alert, {
       name: u.name,
       planAdded: plans.some((p) => p.planKey === alert.key),
@@ -33,5 +36,5 @@ export async function GET(req: NextRequest) {
     await logAudit(u.userId, { actor: "system", action: "nudge.seasonal", target: alert.key, outcome: d.email, detail: { subject: nudge.email.subject, push: d.push } });
     sent++;
   }
-  return NextResponse.json({ alert: alert.key, sent, skipped });
+  return NextResponse.json({ alerts: [...keys], sent, skipped });
 }

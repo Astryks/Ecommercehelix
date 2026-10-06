@@ -1,4 +1,6 @@
-# Daily curriculum: one lesson, one topic, one action
+Check your tools and choose your next focus
+
+This is the **Growing** track, for stores that already make sales. New founders start with the [Just starting track](daily-curriculum-starting.md).
 
 Written in plain English: short sentences, numbered steps, and every term explained in [Words to know](glossary.md).
 

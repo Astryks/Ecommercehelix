@@ -3,6 +3,8 @@ import { hasDb, prisma } from "./db";
 import type { PlanId } from "./plans";
 import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Settings, NUM_FIELDS } from "./scorecard";
 import { isoDay, addDays } from "./dates";
+import { toTrack, type TrackId } from "./tracks";
+import { toCountry, type Country } from "./seasons";
 
 /**
  * Data access with two backends:
@@ -10,7 +12,7 @@ import { isoDay, addDays } from "./dates";
  *  - an in-memory store (demo mode) otherwise, so the app runs with zero keys.
  */
 
-export type Account = { userId: string; email: string; name: string; plan: PlanId; storeUrl: string | null; walletCents: number };
+export type Account = { userId: string; email: string; name: string; plan: PlanId; storeUrl: string | null; walletCents: number; track: TrackId; country: Country; onboarded: boolean };
 export type Completion = { taskId: string; completedOn: string };
 export type SeasonPlanRow = { planKey: string; addedOn: string };
 export type ApprovalRow = { id: string; taskId: string; title: string; detail: string; estAiCost: number; status: string; createdAt: string; decidedAt: string | null };
@@ -39,7 +41,7 @@ const toEnum = (p: PlanId) => p.toUpperCase() as "FREE" | "STARTER" | "GROWTH";
 export async function ensureUser(id: string, email: string, name: string): Promise<string> {
   if (!hasDb) {
     if (!mem.users.has(id)) {
-      mem.users.set(id, { userId: id, email, name, plan: "free", storeUrl: null, walletCents: 0 });
+      mem.users.set(id, { userId: id, email, name, plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", onboarded: false });
       mem.days.set(id, exampleDays(isoDay()));
       mem.products.set(id, exampleProducts(isoDay()));
     }
@@ -58,7 +60,7 @@ export async function ensureUser(id: string, email: string, name: string): Promi
 }
 
 export async function getAccount(userId: string): Promise<Account> {
-  if (!hasDb) return mem.users.get(userId) ?? { userId, email: "", name: "", plan: "free", storeUrl: null, walletCents: 0 };
+  if (!hasDb) return mem.users.get(userId) ?? { userId, email: "", name: "", plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", onboarded: false };
   const u = await prisma.user.findUnique({ where: { id: userId }, include: { subscription: true, stores: { orderBy: { createdAt: "desc" }, take: 1 } } });
   return {
     userId,
@@ -67,7 +69,23 @@ export async function getAccount(userId: string): Promise<Account> {
     plan: toPlan(u?.subscription?.plan ?? "FREE"),
     storeUrl: u?.stores[0]?.url ?? null,
     walletCents: u?.subscription?.walletBalanceCents ?? 0,
+    track: toTrack(u?.track),
+    country: toCountry(u?.country),
+    onboarded: Boolean(u?.onboardedAt),
   };
+}
+
+/** Track and country, chosen at onboarding and changeable in Settings. */
+export async function saveProfile(userId: string, p: { track?: TrackId; country?: Country; onboarded?: boolean }) {
+  if (!hasDb) {
+    const a = mem.users.get(userId);
+    if (!a) return;
+    if (p.track) a.track = p.track;
+    if (p.country) a.country = p.country;
+    if (p.onboarded) a.onboarded = true;
+    return;
+  }
+  await prisma.user.update({ where: { id: userId }, data: { track: p.track, country: p.country, ...(p.onboarded ? { onboardedAt: new Date() } : {}) } });
 }
 
 export async function setPlan(userId: string, plan: PlanId, stripe?: { customerId?: string; subscriptionId?: string; status?: string }) {

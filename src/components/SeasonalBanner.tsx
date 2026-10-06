@@ -16,7 +16,7 @@ export function SeasonalStrip({ alert }: { alert: SeasonAlert }) {
           {alert.headline}
           <span className="ml-2 whitespace-nowrap rounded-full bg-white/40 px-2 py-0.5 text-xs font-bold">{countdown(alert)}</span>
         </p>
-        <Link href="/signin?next=/dashboard" className="inline-flex items-center gap-1.5 rounded-lg bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
+        <Link href="/start" className="inline-flex items-center gap-1.5 rounded-lg bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
           Get the free prep plan <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
       </div>

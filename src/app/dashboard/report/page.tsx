@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CalendarClock } from "lucide-react";
 import { WEEKLY_REPORT as R } from "@/lib/seed/report";
 import { requireUser } from "@/lib/session";
-import { getCompletions, getSeasonPlans } from "@/lib/repo";
+import { getAccount, getCompletions, getSeasonPlans } from "@/lib/repo";
 import { nextTasks, seasonalAlerts } from "@/lib/seasons";
 import { buildNudge } from "@/lib/nudges";
 import { appUrl } from "@/lib/meta/config";
@@ -10,9 +10,9 @@ import { isoDay, prettyDay } from "@/lib/dates";
 
 export default async function Report() {
   const u = await requireUser();
-  const [plans, comps] = await Promise.all([getSeasonPlans(u.id), getCompletions(u.id)]);
+  const [plans, comps, acct] = await Promise.all([getSeasonPlans(u.id), getCompletions(u.id), getAccount(u.id)]);
   const today = isoDay();
-  const alerts = seasonalAlerts(today);
+  const alerts = seasonalAlerts(today, acct.country);
   const done = new Set(comps.map((c) => c.taskId));
   const top = alerts[0];
   const planAdded = Boolean(top && plans.some((p) => p.planKey === top.key));

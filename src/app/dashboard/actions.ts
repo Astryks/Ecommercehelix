@@ -4,9 +4,10 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
 import {
-  completeTask, createApproval, decideApproval, getAccount, getDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan,
+  completeTask, createApproval, decideApproval, getAccount, getDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
 } from "@/lib/repo";
-import { seasonalAlerts, SEASON_TASK_ID } from "@/lib/seasons";
+import { seasonalAlerts, SEASON_TASK_ID, toCountry } from "@/lib/seasons";
+import { toTrack } from "@/lib/tracks";
 import { isoDay } from "@/lib/dates";
 import { findActionable } from "@/lib/actionable";
 import { PLAN_RANK } from "@/lib/plans";
@@ -17,7 +18,7 @@ import { createPausedDraft, draftInputFor } from "@/lib/meta/service";
 import { campaignParams, draftNames, starterCopy } from "@/lib/meta/drafts";
 import { logAudit } from "@/lib/meta/store";
 
-const VALID_ID = /^(day-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
+const VALID_ID = /^(day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
 
 export async function markDone(form: FormData) {
   const u = await requireUser();
@@ -26,11 +27,17 @@ export async function markDone(form: FormData) {
   revalidatePath("/dashboard", "layout");
 }
 
+/** The "daily numbers" day in the user's track: Growing day 2, Just starting day 14. */
+async function numbersHabitTask(userId: string) {
+  return (await getAccount(userId)).track === "starting" ? "start-14" : "day-2";
+}
+
 /** One click: add a seasonal prep plan (its tasks then show on Today with due dates). */
 export async function addPrepPlan(form: FormData) {
   const u = await requireUser();
   const key = String(form.get("planKey"));
-  if (!seasonalAlerts(isoDay()).some((a) => a.key === key)) return;
+  const acct = await getAccount(u.id);
+  if (!seasonalAlerts(isoDay(), acct.country).some((a) => a.key === key)) return;
   await addSeasonPlan(u.id, key);
   await logAudit(u.id, { actor: "user", action: "season.plan_added", target: key, outcome: "ok" });
   revalidatePath("/dashboard", "layout");
@@ -93,7 +100,7 @@ export async function saveDay(form: FormData) {
   const d = { date, source: "manual" } as DayInput;
   for (const f of NUM_FIELDS) d[f] = Math.max(0, Number(form.get(f)) || 0);
   await upsertDays(u.id, [d]);
-  await completeTask(u.id, "day-2");
+  await completeTask(u.id, await numbersHabitTask(u.id));
   revalidatePath("/dashboard", "layout");
 }
 
@@ -106,7 +113,7 @@ export async function quickUpdate(form: FormData) {
   const days = await getDays(u.id);
   const merged = quickMerge(days.find((d) => d.date === date), date, { revenue: n("revenue"), orders: Math.round(n("orders")), adMeta: n("adMeta"), adGoogle: n("adGoogle") }, costRatios(days));
   await upsertDays(u.id, [merged]);
-  await completeTask(u.id, "day-2");
+  await completeTask(u.id, await numbersHabitTask(u.id));
   revalidatePath("/dashboard", "layout");
 }
 
@@ -138,4 +145,12 @@ export async function addProduct(form: FormData) {
     unitCost: Math.max(0, Number(form.get("unitCost")) || 0),
   });
   revalidatePath("/dashboard/scorecard");
+}
+
+/** Settings: switch track (Just starting / Growing) and country. Progress on each track is kept. */
+export async function saveProfileSettings(form: FormData) {
+  const u = await requireUser();
+  await saveProfile(u.id, { track: toTrack(form.get("track")), country: toCountry(form.get("country")), onboarded: true });
+  revalidatePath("/dashboard", "layout");
+  redirect("/dashboard/settings?saved=1");
 }

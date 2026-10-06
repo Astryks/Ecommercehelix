@@ -9,11 +9,21 @@ import { addDays } from "./dates";
  * Everything here is pure, so it is easy to test and safe to run anywhere.
  */
 
+export type Country = "AU" | "US";
+export const COUNTRIES: { id: Country; name: string; flag: string }[] = [
+  { id: "AU", name: "Australia", flag: "AU" },
+  { id: "US", name: "United States", flag: "US" },
+];
+export const toCountry = (v: unknown): Country => (v === "US" ? "US" : "AU");
+
+export type Kind = "sale" | "gifting" | "seasonal";
 export type Learn = { slug: string; anchor: string; label: string };
 export type PrepTask = { id: string; offset: number; title: string; steps: string[]; learn?: Learn };
 export type SeasonEvent = {
   key: string;
   name: string;
+  countries: Country[];
+  kind: Kind;
   /** Event date for a given year, YYYY-MM-DD. */
   date: (year: number) => string;
   /** Start showing the alert this many days before the event. */
@@ -113,6 +123,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "black-friday",
     name: "Black Friday",
+    countries: ["AU", "US"],
+    kind: "sale",
     date: blackFriday,
     leadDays: 84,
     endOffset: 4,
@@ -170,6 +182,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "christmas",
     name: "Christmas shipping cut-offs",
+    countries: ["AU", "US"],
+    kind: "gifting",
     date: (y) => ymd(y, 12, 25),
     leadDays: 56,
     endOffset: -3,
@@ -207,6 +221,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "boxing-day",
     name: "Boxing Day and New Year sales",
+    countries: ["AU"],
+    kind: "sale",
     date: (y) => ymd(y, 12, 26),
     leadDays: 35,
     endOffset: 10,
@@ -243,6 +259,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "valentines",
     name: "Valentine's Day",
+    countries: ["AU", "US"],
+    kind: "gifting",
     date: (y) => ymd(y, 2, 14),
     leadDays: 42,
     endOffset: -1,
@@ -255,6 +273,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "mothers-day",
     name: "Mother's Day",
+    countries: ["AU", "US"],
+    kind: "gifting",
     date: (y) => nthWeekday(y, 5, 0, 2),
     leadDays: 56,
     endOffset: -1,
@@ -267,6 +287,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "eofy",
     name: "End of financial year (EOFY)",
+    countries: ["AU"],
+    kind: "sale",
     date: (y) => ymd(y, 6, 30),
     leadDays: 42,
     endOffset: 0,
@@ -296,6 +318,8 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "fathers-day",
     name: "Father's Day",
+    countries: ["AU"],
+    kind: "gifting",
     date: (y) => nthWeekday(y, 9, 0, 1),
     leadDays: 49,
     endOffset: -1,
@@ -305,7 +329,103 @@ export const EVENTS: SeasonEvent[] = [
       : `Father's Day is ${days(daysTo)} away. Show your last order date everywhere and send the reminder emails.`,
     tasks: giftTasks("Father's Day"),
   },
+  {
+    key: "fathers-day-us",
+    name: "Father's Day (US)",
+    countries: ["US"],
+    kind: "gifting",
+    date: (y) => nthWeekday(y, 6, 0, 3),
+    leadDays: 49,
+    endOffset: -1,
+    why: "Father's Day in the US (third Sunday of June) is a strong gifting date. Stock and gift ideas need to be ready early.",
+    headline: ({ weeksTo, daysTo }) =>
+      daysTo > 14 ? `Father's Day is ${weeks(weeksTo)} away. Pick your gift range, build bundles and plan your gift ads.`
+      : `Father's Day is ${days(daysTo)} away. Show your last order date everywhere and send the reminder emails.`,
+    tasks: giftTasks("Father's Day"),
+  },
 ];
+
+/** Easter Sunday (Gregorian, anonymous algorithm). */
+export function easterSunday(y: number): string {
+  const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4;
+  const f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30;
+  const i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const month = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
+  return ymd(y, month, day);
+}
+
+/** Last given weekday (0 = Sunday) of a month. */
+export function lastWeekday(year: number, month: number, weekday: number): string {
+  const lastDay = new Date(Date.UTC(year, month, 0)).getUTCDate();
+  const dow = new Date(Date.UTC(year, month - 1, lastDay)).getUTCDay();
+  return ymd(year, month, lastDay - ((dow - weekday + 7) % 7));
+}
+
+/** Calendar-only dates: shown on the Calendar page and Upcoming strip, no prep plan. */
+export type CalendarOnly = { key: string; name: string; countries: Country[]; kind: Kind; date: (y: number) => string; note: string; approx?: string };
+export const CALENDAR_ONLY: CalendarOnly[] = [
+  { key: "back-to-school-au", name: "Back to school", countries: ["AU"], kind: "seasonal", date: (y) => ymd(y, 1, 27),
+    note: "School goes back from late January to early February, depending on the state. Shopping peaks in the 2 weeks before.", approx: "Varies by state" },
+  { key: "easter", name: "Easter long weekend", countries: ["AU", "US"], kind: "seasonal", date: (y) => addDays(easterSunday(y), -2),
+    note: "Good Friday to Easter Monday. Good for gifting and treats. Check carrier closures and set shipping expectations." },
+  { key: "memorial-day", name: "Memorial Day sales", countries: ["US"], kind: "sale", date: (y) => lastWeekday(y, 5, 1),
+    note: "Last Monday of May. A big long-weekend sale and the unofficial start of summer." },
+  { key: "july-4", name: "Fourth of July sales", countries: ["US"], kind: "sale", date: (y) => ymd(y, 7, 4),
+    note: "Independence Day. A popular summer sale weekend in the US." },
+  { key: "back-to-school-us", name: "Back to school", countries: ["US"], kind: "seasonal", date: (y) => ymd(y, 8, 1),
+    note: "Shopping runs from mid-July to early September. The busiest weeks are late July and early August.", approx: "Season, not one day" },
+  { key: "labor-day", name: "Labor Day sales", countries: ["US"], kind: "sale", date: (y) => nthWeekday(y, 9, 1, 1),
+    note: "First Monday of September. A long-weekend sale that closes out summer." },
+  { key: "halloween", name: "Halloween", countries: ["US"], kind: "seasonal", date: (y) => ymd(y, 10, 31),
+    note: "Big for costumes, decor and treats. Many stores also use it to start teasing Black Friday." },
+  { key: "click-frenzy", name: "Click Frenzy", countries: ["AU"], kind: "sale", date: (y) => nthWeekday(y, 11, 2, 2),
+    note: "A big Australian online sale event, usually over 3 days in mid-November. Decide by late October if you join it or keep your offer for Black Friday.", approx: "Usually the 2nd week of November. Check the official dates" },
+  { key: "singles-day", name: "Singles Day (11.11)", countries: ["AU", "US"], kind: "sale", date: (y) => ymd(y, 11, 11),
+    note: "The world's biggest online shopping day, started in China. Some stores run a one-day 11.11 offer as an early taste of Black Friday." },
+  { key: "thanksgiving", name: "Thanksgiving", countries: ["US"], kind: "seasonal", date: (y) => nthWeekday(y, 11, 4, 4),
+    note: "Fourth Thursday of November. Black Friday starts the next day; many US stores open their sale on Thanksgiving." },
+  { key: "cyber-monday", name: "Cyber Monday", countries: ["AU", "US"], kind: "sale", date: (y) => addDays(blackFriday(y), 3),
+    note: "The Monday after Black Friday. Usually the last big day of the sale weekend. Plan a final reminder email and text." },
+];
+
+export type CalendarEntry = {
+  key: string;
+  eventKey: string;
+  name: string;
+  date: string;
+  daysTo: number;
+  kind: Kind;
+  note: string;
+  approx?: string;
+  /** For dates with a prep plan: when Helix starts alerting. */
+  prepFrom?: string;
+  planSteps?: number;
+};
+
+/** Every key date for a country in the next `horizon` days, soonest first. */
+export function upcomingEvents(today: string, country: Country, horizon = 365): CalendarEntry[] {
+  const y = Number(today.slice(0, 4));
+  const out: CalendarEntry[] = [];
+  for (const year of [y - 1, y, y + 1, y + 2]) {
+    for (const ev of EVENTS) {
+      if (!ev.countries.includes(country)) continue;
+      const date = ev.date(year);
+      const daysTo = daysBetween(today, date);
+      if (daysTo < 0 || daysTo > horizon) continue;
+      out.push({ key: `${ev.key}-${year}`, eventKey: ev.key, name: ev.name, date, daysTo, kind: ev.kind, note: ev.why, prepFrom: addDays(date, -ev.leadDays), planSteps: ev.tasks.length });
+    }
+    for (const ev of CALENDAR_ONLY) {
+      if (!ev.countries.includes(country)) continue;
+      const date = ev.date(year);
+      const daysTo = daysBetween(today, date);
+      if (daysTo < 0 || daysTo > horizon) continue;
+      out.push({ key: `${ev.key}-${year}`, eventKey: ev.key, name: ev.name, date, daysTo, kind: ev.kind, note: ev.note, approx: ev.approx });
+    }
+  }
+  return out.sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name));
+}
+
+export const countdownText = (daysTo: number) => (daysTo === 0 ? "today" : daysTo === 1 ? "tomorrow" : `in ${daysTo} days`);
 
 function toAlert(ev: SeasonEvent, year: number, today: string): SeasonAlert | null {
   const date = ev.date(year);
@@ -330,10 +450,10 @@ function toAlert(ev: SeasonEvent, year: number, today: string): SeasonAlert | nu
 }
 
 /** Active alerts for a date, most urgent (soonest event) first. */
-export function seasonalAlerts(today: string): SeasonAlert[] {
+export function seasonalAlerts(today: string, country: Country = "AU"): SeasonAlert[] {
   const y = Number(today.slice(0, 4));
   const out: SeasonAlert[] = [];
-  for (const ev of EVENTS) for (const year of [y - 1, y, y + 1]) {
+  for (const ev of EVENTS.filter((e) => e.countries.includes(country))) for (const year of [y - 1, y, y + 1]) {
     const a = toAlert(ev, year, today);
     if (a) out.push(a);
   }
@@ -341,8 +461,8 @@ export function seasonalAlerts(today: string): SeasonAlert[] {
 }
 
 /** The one alert to show prominently. Events that have already started stay on top while they run. */
-export function primaryAlert(today: string): SeasonAlert | null {
-  return seasonalAlerts(today)[0] ?? null;
+export function primaryAlert(today: string, country: Country = "AU"): SeasonAlert | null {
+  return seasonalAlerts(today, country)[0] ?? null;
 }
 
 /** Find an alert by plan key (e.g. "black-friday-2026"), even if it is no longer active. */

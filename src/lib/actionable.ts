@@ -1,4 +1,4 @@
-import { DAYS, dayTaskId } from "./seed/curriculum";
+import { dayByTaskId } from "./tracks";
 import { FLOWS } from "./seed/flows";
 import { EXAMPLE_SIGNALS, runRules, type Signals } from "./audit";
 import type { PlanId } from "./plans";
@@ -7,11 +7,12 @@ export type Actionable = { id: string; title: string; detail: string; tier: Plan
 
 /** Resolve anything that can be delegated with "Do it for me": a curriculum day, an insight or an email flow. */
 export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): Actionable | null {
-  const day = DAYS.find((d) => dayTaskId(d.day) === id);
+  const found = dayByTaskId(id);
+  const day = found?.day;
   if (day?.doIt)
     return {
       id,
-      title: `Day ${day.day}: ${day.doIt.label}`,
+      title: `${found!.track.id === "starting" ? "Just starting, day" : "Day"} ${day.day}: ${day.doIt.label}`,
       detail: `Helix prepared "${day.title}". Here is the plan. Nothing goes live until you approve.\n\n` + day.steps.map((s, i) => `${i + 1}. ${s}`).join("\n"),
       tier: day.doIt.tier,
       estAiCost: Math.round(day.minutes * 0.2) / 100 + 0.01,

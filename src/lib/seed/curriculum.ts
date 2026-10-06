@@ -1,4 +1,5 @@
 import data from "./curriculum.json";
+import starting from "./curriculum-starting.json";
 import type { PlanId } from "../plans";
 
 export type Area = "numbers" | "ads" | "site" | "retention" | "learning";
@@ -30,6 +31,12 @@ export const DAYS = data.days as CurriculumDay[];
 export const STAGE_TIER: Record<number, PlanId> = { 1: "free", 2: "free", 3: "starter", 4: "starter", 5: "starter", 6: "growth", 7: "growth" };
 
 export const dayTaskId = (d: number) => `day-${d}`;
+
+/** "Just starting" track (generated from scripts/curriculum_starting_source.py). All three stages are free; "Do it for me" still needs the plan shown. */
+export const START_STAGES = starting.stages as Stage[];
+export const START_DAYS = starting.days as CurriculumDay[];
+export const START_STAGE_TIER: Record<number, PlanId> = { 1: "free", 2: "free", 3: "free" };
+export const startTaskId = (d: number) => `start-${d}`;
 
 export const AREA_STYLE: Record<Area, { label: string; chip: string }> = {
   numbers: { label: "Numbers", chip: "bg-sky-50 text-sky-700 ring-sky-200" },
