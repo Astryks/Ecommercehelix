@@ -40,7 +40,7 @@ Strong for planned purchases (home, wedding, fashion, gifting). Search-like beha
 | Helix can do (with approval) | The user does |
 | --- | --- |
 | Assess readiness for a channel from data | Decide to start a channel |
-| Draft launch plans, budgets and creative briefs | Create accounts, verify business, set billing |
+| Draft launch plans, budget suggestions and creative briefs; build paused drafts once connected | Create accounts, verify business, set billing, press Launch |
 | Read TikTok performance (when the connector ships) | Approve any campaign changes |
 | Draft product FAQ and structured product data fixes | Approve site changes |
 

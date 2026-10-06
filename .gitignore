@@ -22,3 +22,17 @@ coverage/
 *.swp
 .idea/
 .vscode/
+
+# Next.js / tooling
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+*.pem
+npm-debug.log*
+.pnp.*
+/prisma/dev.db*
+
+# Auto-generated agent hint files from the Next.js CLI
+AGENTS.md
+CLAUDE.md

@@ -1,0 +1,144 @@
+[
+  {
+    "id": "welcome",
+    "name": "Welcome series",
+    "trigger": "Joins the email or SMS list (pop-up, footer, competition)",
+    "goal": "Turn a new subscriber into a first-time buyer",
+    "exitWhen": "Places an order",
+    "discount": "Deliver the sign-up incentive in email 1. Never send a bigger code later in the flow.",
+    "benchmark": "Often 3 to 6% of store revenue once list growth is steady",
+    "tier": "growth",
+    "example": { "status": "live", "revenue30d": 2140 },
+    "emails": [
+      { "delay": "Immediately", "channel": "Email", "subject": "Welcome in. Here's your 10% off", "preview": "Plus the story behind [Brand]", "body": "Thanks for joining. Your code is WELCOME10, ready to use today. We started [Brand] because [one-line founder reason]. Our best sellers are a good place to start: [3 products with one line each]." },
+      { "delay": "1 day", "channel": "Email", "subject": "Why people switch to [Brand]", "preview": "Three reasons, from real customers", "body": "Three reasons customers tell us they switched: [reason + short review], [reason + short review], [reason + short review]. Your code is still waiting." },
+      { "delay": "3 days", "channel": "Email", "subject": "Your questions, answered", "preview": "Sizing, shipping, returns", "body": "Answer the top 4 questions from support: fit or sizing, shipping times, returns, care. Link to the guarantee." },
+      { "delay": "5 days", "channel": "SMS", "subject": "SMS reminder", "preview": "", "body": "[Brand]: your 10% code WELCOME10 ends tomorrow night. Shop: [link] Reply STOP to opt out" },
+      { "delay": "6 days", "channel": "Email", "subject": "Last day for your welcome code", "preview": "After tonight it's gone", "body": "Short reminder with your best-selling product, top review and a clear button." }
+    ]
+  },
+  {
+    "id": "abandoned-checkout",
+    "name": "Abandoned checkout",
+    "trigger": "Started checkout, no order within 1 hour",
+    "goal": "Recover high-intent shoppers",
+    "exitWhen": "Places an order",
+    "discount": "No discount in email 1. Optional small incentive in the last message for new customers only.",
+    "benchmark": "Commonly the highest revenue-per-recipient flow",
+    "tier": "growth",
+    "example": { "status": "live", "revenue30d": 3380 },
+    "emails": [
+      { "delay": "1 hour", "channel": "Email", "subject": "Did something go wrong?", "preview": "Your cart is saved", "body": "Show the cart items, a reassuring line about shipping and returns, and one review. Button: Complete my order." },
+      { "delay": "4 hours", "channel": "SMS", "subject": "SMS", "preview": "", "body": "[Brand]: your cart is saved. Free shipping over $[threshold]. Finish here: [link] Reply STOP to opt out" },
+      { "delay": "24 hours", "channel": "Email", "subject": "Still thinking it over?", "preview": "Here's what others said", "body": "Address the top objection (price, fit, delivery). Add guarantee and 3 reviews." },
+      { "delay": "48 hours", "channel": "Email", "subject": "A little something to help you decide", "preview": "For first orders only", "body": "New customers only: free shipping or a small gift. Returning customers get a reminder without incentive." }
+    ]
+  },
+  {
+    "id": "abandoned-cart",
+    "name": "Abandoned cart",
+    "trigger": "Added to cart, did not start checkout within 2 hours",
+    "goal": "Bring back shoppers who showed interest",
+    "exitWhen": "Starts checkout or orders",
+    "discount": "None by default.",
+    "benchmark": "Lower than checkout recovery but larger volume",
+    "tier": "growth",
+    "example": { "status": "not set up", "revenue30d": 0 },
+    "emails": [
+      { "delay": "2 hours", "channel": "Email", "subject": "You left something behind", "preview": "Still in stock, for now", "body": "Product image, price, one benefit, one review, button back to cart." },
+      { "delay": "1 day", "channel": "Email", "subject": "Pairs well with...", "preview": "Customers also bought", "body": "Show the cart item plus a complementary product or bundle that reaches the free shipping threshold." }
+    ]
+  },
+  {
+    "id": "browse-abandonment",
+    "name": "Browse abandonment",
+    "trigger": "Viewed a product twice or more in 24 hours, no add to cart (known subscriber)",
+    "goal": "Help undecided shoppers choose",
+    "exitWhen": "Adds to cart or orders",
+    "discount": "None.",
+    "benchmark": "High volume, lower conversion; keep it helpful, not pushy",
+    "tier": "growth",
+    "example": { "status": "not set up", "revenue30d": 0 },
+    "emails": [
+      { "delay": "4 hours", "channel": "Email", "subject": "Still deciding on [Product]?", "preview": "A quick guide", "body": "One-paragraph guide to the product: who it suits, how it compares to the alternative, top review." },
+      { "delay": "2 days", "channel": "Email", "subject": "Our most loved picks", "preview": "Based on what you looked at", "body": "Three related best sellers with short reasons." }
+    ]
+  },
+  {
+    "id": "post-purchase",
+    "name": "Post-purchase",
+    "trigger": "First order placed",
+    "goal": "Reduce buyer's remorse and returns, set up the second order",
+    "exitWhen": "Second order",
+    "discount": "None in the thank-you. A loyalty or referral offer later.",
+    "benchmark": "Improves repeat rate and reduces support tickets",
+    "tier": "growth",
+    "example": { "status": "live", "revenue30d": 760 },
+    "emails": [
+      { "delay": "Immediately after order", "channel": "Email", "subject": "Thank you, [Name]. Here's what happens next", "preview": "Shipping, tracking and a tip", "body": "Thank you from the founder, shipping timeline, how to get the best out of the product." },
+      { "delay": "On delivery + 2 days", "channel": "Email", "subject": "How to get the most from [Product]", "preview": "3 quick tips", "body": "Usage tips or a short video. Link to support." },
+      { "delay": "14 days", "channel": "Email", "subject": "Customers who bought this also love", "preview": "Picked for you", "body": "Cross-sell based on the first product. Loyalty or referral offer." }
+    ]
+  },
+  {
+    "id": "review-request",
+    "name": "Review request",
+    "trigger": "Order delivered + 7 to 14 days (based on how long the product takes to show results)",
+    "goal": "Collect reviews, photos and UGC",
+    "exitWhen": "Leaves a review",
+    "discount": "Optional small reward for photo or video reviews (follow platform and local rules; never pay for positive reviews only).",
+    "benchmark": "Review volume feeds product page conversion and ad hooks",
+    "tier": "growth",
+    "example": { "status": "live", "revenue30d": 0 },
+    "emails": [
+      { "delay": "Delivery + 10 days", "channel": "Email", "subject": "Quick question about your [Product]", "preview": "One click to rate", "body": "Star rating inside the email, ask for a photo. Short and personal." },
+      { "delay": "Delivery + 17 days", "channel": "SMS", "subject": "SMS", "preview": "", "body": "[Brand]: how's your [Product]? A 30-second review helps a small business a lot: [link] Reply STOP to opt out" }
+    ]
+  },
+  {
+    "id": "replenishment",
+    "name": "Replenishment",
+    "trigger": "Days since order reaches the typical usage period for a consumable (for example 25 days for a 30-day supply)",
+    "goal": "Win the reorder before they run out",
+    "exitWhen": "Reorders",
+    "discount": "Subscribe-and-save option rather than a code.",
+    "benchmark": "Strong for consumables: skincare, supplements, food, pet",
+    "tier": "growth",
+    "example": { "status": "not set up", "revenue30d": 0 },
+    "emails": [
+      { "delay": "Usage period - 5 days", "channel": "Email", "subject": "Running low on [Product]?", "preview": "Reorder in one click", "body": "One-click reorder link, option to subscribe and save." },
+      { "delay": "Usage period", "channel": "SMS", "subject": "SMS", "preview": "", "body": "[Brand]: time for a refill? Reorder in 1 tap: [link] Reply STOP to opt out" }
+    ]
+  },
+  {
+    "id": "win-back",
+    "name": "Win-back",
+    "trigger": "No order for 1.5 to 2x your typical repeat interval (for example 120 days)",
+    "goal": "Re-engage lapsed customers before they are gone",
+    "exitWhen": "Orders",
+    "discount": "Lead with what's new. Incentive only in the final email.",
+    "benchmark": "Lifts repeat revenue; also cleans the list (suppress non-openers after)",
+    "tier": "growth",
+    "example": { "status": "not set up", "revenue30d": 0 },
+    "emails": [
+      { "delay": "Day 0", "channel": "Email", "subject": "It's been a while. Here's what's new", "preview": "New arrivals and favourites", "body": "New products, improvements, best sellers. No discount." },
+      { "delay": "Day 7", "channel": "Email", "subject": "We saved you something", "preview": "A thank-you for coming back", "body": "Small incentive, clear expiry." },
+      { "delay": "Day 14", "channel": "Email", "subject": "Should we stay in touch?", "preview": "One click to keep hearing from us", "body": "Ask to confirm interest; suppress if no engagement to protect deliverability." }
+    ]
+  },
+  {
+    "id": "vip",
+    "name": "VIP and loyalty",
+    "trigger": "Third order, or lifetime spend above your top 10% threshold",
+    "goal": "Recognise your best customers and keep them",
+    "exitWhen": "n/a (ongoing segment)",
+    "discount": "Early access, gifts and surprise perks over blanket discounts.",
+    "benchmark": "Top customers often drive a large share of profit",
+    "tier": "growth",
+    "example": { "status": "not set up", "revenue30d": 0 },
+    "emails": [
+      { "delay": "On qualifying", "channel": "Email", "subject": "You're one of our favourite people", "preview": "A thank-you from the founder", "body": "Personal thank-you, VIP perks: early access to launches and sales, a gift on the next order." },
+      { "delay": "Before each launch or sale", "channel": "Email", "subject": "VIP early access starts now", "preview": "24 hours before everyone else", "body": "Early access link, limited quantity note if true." }
+    ]
+  }
+]

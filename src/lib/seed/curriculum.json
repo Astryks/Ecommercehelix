@@ -1,0 +1,1729 @@
+{
+ "stages": [
+  {
+   "id": 1,
+   "name": "Know your numbers",
+   "range": "Days 1 to 7"
+  },
+  {
+   "id": 2,
+   "name": "Make the store convert",
+   "range": "Days 8 to 17"
+  },
+  {
+   "id": 3,
+   "name": "Capture and keep customers",
+   "range": "Days 18 to 26"
+  },
+  {
+   "id": 4,
+   "name": "Brand, creative and ads engine",
+   "range": "Days 27 to 46"
+  },
+  {
+   "id": 5,
+   "name": "Google and more channels",
+   "range": "Days 47 to 52"
+  },
+  {
+   "id": 6,
+   "name": "Offers, promotions and peak",
+   "range": "Days 53 to 58"
+  },
+  {
+   "id": 7,
+   "name": "Scale and systems",
+   "range": "Days 59 to 64"
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "Profit, not revenue",
+   "title": "Set up your cost drivers",
+   "lesson": "Revenue tells you how busy you were. Contribution profit tells you if it was worth it: sales minus product cost, shipping, fees and marketing. Today you give Helix the costs it needs to calculate that every day.",
+   "steps": [
+    "Open the Scorecard settings card.",
+    "Enter monthly fixed costs (staff, software, rent, your wage).",
+    "Enter a monthly revenue target you believe in.",
+    "Enter a target MER, or use 30% for now.",
+    "Save."
+   ],
+   "minutes": 10,
+   "area": "numbers",
+   "learn": {
+    "slug": "01-daily-profit-foundations",
+    "anchor": "lesson-12-your-cost-drivers",
+    "label": "Your cost drivers",
+    "ref": "1.2"
+   },
+   "sop": "02",
+   "doIt": {
+    "tier": "free",
+    "label": "Pre-fill cost drivers from your store data"
+   }
+  },
+  {
+   "day": 2,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "The daily scorecard",
+   "title": "Enter yesterday's numbers",
+   "lesson": "A two-minute scorecard each morning is the heartbeat of a growing store. You will see contribution profit, MER and your flags before you make any decision.",
+   "steps": [
+    "Open the Scorecard and add yesterday: orders, sales, discounts, refunds.",
+    "Add product cost, shipping and payment fees.",
+    "Add ad spend for each channel.",
+    "Check the green, amber and red flags.",
+    "Write one line on what you will do today."
+   ],
+   "minutes": 5,
+   "area": "numbers",
+   "learn": {
+    "slug": "01-daily-profit-foundations",
+    "anchor": "lesson-13-the-daily-scorecard",
+    "label": "The daily scorecard",
+    "ref": "1.3"
+   },
+   "sop": "02",
+   "doIt": {
+    "tier": "starter",
+    "label": "Sync yesterday's numbers automatically"
+   }
+  },
+  {
+   "day": 3,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "Break-even targets",
+   "title": "Work out your break-even ROAS and CPA",
+   "lesson": "Every ad decision needs a line in the sand. Break-even ROAS is 1 ÷ (1 − variable cost %). Break-even CPA is what you can spend to win an order without losing money on it.",
+   "steps": [
+    "Open the Scorecard and read your variable cost ratio.",
+    "Note break-even ROAS and break-even CPA from the channel card.",
+    "Set a good CPA for cold traffic (about AOV × target MER × 2).",
+    "Write all three on a sticky note near your desk."
+   ],
+   "minutes": 10,
+   "area": "numbers",
+   "learn": {
+    "slug": "01-daily-profit-foundations",
+    "anchor": "lesson-15-your-target-mer-and-break-even-numbers",
+    "label": "Your target MER and break-even numbers",
+    "ref": "1.5"
+   },
+   "sop": "02",
+   "doIt": null
+  },
+  {
+   "day": 4,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "Find the constraint",
+   "title": "Diagnose what is holding profit back",
+   "lesson": "Growth stalls for one of three reasons: costs are too high, conversion is too low, or there is not enough traffic. Fixing the wrong one wastes months.",
+   "steps": [
+    "Compare your numbers with the healthy ranges in Lesson 1.4.",
+    "Mark which KPI is furthest out of range.",
+    "Pick the matching situation in Lesson 2.2.",
+    "Choose one fix to work on this week."
+   ],
+   "minutes": 15,
+   "area": "numbers",
+   "learn": {
+    "slug": "02-diagnose-and-fix",
+    "anchor": "lesson-22-the-five-situations",
+    "label": "The five situations",
+    "ref": "2.2"
+   },
+   "sop": "03",
+   "doIt": {
+    "tier": "starter",
+    "label": "Run the diagnosis on your data"
+   }
+  },
+  {
+   "day": 5,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "Store audit",
+   "title": "Pick your top 3 audit fixes",
+   "lesson": "Helix crawls your store and checks speed, proof, shipping clarity, email capture and trust. Today you choose the three fixes worth the most and put them in your plan.",
+   "steps": [
+    "Open Insights and read the site audit findings.",
+    "Sort by impact.",
+    "Pick three you can do in under an hour each.",
+    "Schedule them for this week."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-92-page-checklists",
+    "label": "Page checklists",
+    "ref": "9.2"
+   },
+   "sop": "01",
+   "doIt": {
+    "tier": "free",
+    "label": "Run a fresh site audit"
+   }
+  },
+  {
+   "day": 6,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "Customer research",
+   "title": "Read 30 reviews and 10 support emails",
+   "lesson": "Your customers already wrote your best ads and product page copy. Their words reveal the problem, the doubt and the moment they decided to buy.",
+   "steps": [
+    "Export or open your last 30 reviews and 10 support emails.",
+    "Copy repeated phrases into a doc under: problem, doubt, result.",
+    "Note the top 3 objections.",
+    "Star 5 lines that could become ad hooks."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "04-brand-and-content",
+    "anchor": "lesson-42-customer-profiles",
+    "label": "Customer profiles",
+    "ref": "4.2"
+   },
+   "sop": "16",
+   "doIt": {
+    "tier": "starter",
+    "label": "Summarise reviews into themes and hooks"
+   }
+  },
+  {
+   "day": 7,
+   "stage": 1,
+   "stageName": "Know your numbers",
+   "topic": "Weekly rhythm",
+   "title": "Run your first weekly review",
+   "lesson": "Daily actions compound when you look back each week. Ten minutes on Sunday or Monday keeps you honest about what worked.",
+   "steps": [
+    "Read your week-to-date numbers on the Scorecard.",
+    "List what you did this week.",
+    "Write one thing you learned.",
+    "Choose next week's single priority."
+   ],
+   "minutes": 10,
+   "area": "learning",
+   "learn": {
+    "slug": "16-founder-team-productivity",
+    "anchor": "lesson-162-win-the-day-and-the-week",
+    "label": "Win the day and the week",
+    "ref": "16.2"
+   },
+   "sop": "18",
+   "doIt": null
+  },
+  {
+   "day": 8,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Site speed",
+   "title": "Fix the biggest mobile speed problem",
+   "lesson": "Most of your shoppers are on phones. A slow product page loses buyers before they see your offer.",
+   "steps": [
+    "Open Insights and check the PageSpeed result.",
+    "Compress oversized images on your top product page.",
+    "Remove one app or script you no longer use.",
+    "Re-test and note the new score."
+   ],
+   "minutes": 20,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-94-speed",
+    "label": "Speed",
+    "ref": "9.4"
+   },
+   "sop": "11",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft a speed fix list for your developer"
+   }
+  },
+  {
+   "day": 9,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Proof",
+   "title": "Add photo reviews above the fold on your best seller",
+   "lesson": "Proof near the price is one of the cheapest ways to lift conversion, and every channel benefits.",
+   "steps": [
+    "Open your best-selling product page.",
+    "Pick 3 reviews with photos that answer common doubts.",
+    "Place them under the price or add-to-cart area.",
+    "Check on your phone."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-92-page-checklists",
+    "label": "Page checklists",
+    "ref": "9.2"
+   },
+   "sop": "11",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft the review block layout"
+   }
+  },
+  {
+   "day": 10,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Offer clarity",
+   "title": "Answer your top 3 objections on the product page",
+   "lesson": "If a shopper has to guess about fit, quality or delivery, they leave. Answer the doubts before they ask.",
+   "steps": [
+    "Take the 3 objections from Day 6.",
+    "Write a one-line answer for each.",
+    "Add them as short FAQs or icons near add to cart.",
+    "Link your guarantee."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-33-stack-belief",
+    "label": "Stack belief",
+    "ref": "3.3"
+   },
+   "sop": "04",
+   "doIt": {
+    "tier": "starter",
+    "label": "Write the objection answers for you"
+   }
+  },
+  {
+   "day": 11,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Shipping",
+   "title": "Set a free shipping threshold that lifts order value",
+   "lesson": "A threshold set a little above your average order nudges people to add one more item without giving away margin.",
+   "steps": [
+    "Check your AOV on the Scorecard.",
+    "Set the threshold at about 1.2 to 1.4 × AOV.",
+    "Show it in the announcement bar and the cart.",
+    "Check the margin still works."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-911-shipping-psychology",
+    "label": "Shipping psychology",
+    "ref": "9.11"
+   },
+   "sop": "12",
+   "doIt": {
+    "tier": "growth",
+    "label": "Set up the threshold message (with approval)"
+   }
+  },
+  {
+   "day": 12,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Checkout",
+   "title": "Remove one checkout friction",
+   "lesson": "Shoppers who add to cart but do not check out usually hit a surprise: shipping cost, limited payment options or a forced account.",
+   "steps": [
+    "Do a test checkout on your phone.",
+    "Turn on express wallets and buy now pay later if missing.",
+    "Make guest checkout available.",
+    "Show delivery time before the last step."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-910-order-value",
+    "label": "Order value",
+    "ref": "9.10"
+   },
+   "sop": "11",
+   "doIt": null
+  },
+  {
+   "day": 13,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Home page",
+   "title": "Make your hero say what you sell and why it is better",
+   "lesson": "Visitors decide in seconds. Your first screen needs a clear headline, the main benefit, proof and one button.",
+   "steps": [
+    "Look at your home page on a phone.",
+    "Rewrite the headline: what it is plus the main benefit.",
+    "Add a proof line (rating, customers, press).",
+    "Use one clear button."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-95-copy-that-sells",
+    "label": "Copy that sells",
+    "ref": "9.5"
+   },
+   "sop": "11",
+   "doIt": {
+    "tier": "starter",
+    "label": "Write 3 headline options"
+   }
+  },
+  {
+   "day": 14,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Risk reversal",
+   "title": "Write a guarantee you are proud of",
+   "lesson": "A clear guarantee removes the fear of a bad purchase. It often lifts conversion more than a discount.",
+   "steps": [
+    "Check your current returns policy.",
+    "Write a simple promise in one sentence.",
+    "Add it to product pages, cart and FAQ.",
+    "Make sure your team can honour it."
+   ],
+   "minutes": 10,
+   "area": "site",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-35-remove-risk",
+    "label": "Remove risk",
+    "ref": "3.5"
+   },
+   "sop": "04",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft your guarantee wording"
+   }
+  },
+  {
+   "day": 15,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Bundles",
+   "title": "Create one bundle that raises AOV",
+   "lesson": "Bundles help shoppers buy the complete solution and lift order value without a store-wide discount.",
+   "steps": [
+    "Find products often bought together.",
+    "Create one bundle with a small saving or a gift.",
+    "Feature it on the related product pages.",
+    "Track its sales on the Scorecard product table."
+   ],
+   "minutes": 20,
+   "area": "site",
+   "learn": {
+    "slug": "03-offer-and-product",
+    "anchor": "lesson-36-make-yes-easy-pricing",
+    "label": "Make yes easy (pricing)",
+    "ref": "3.6"
+   },
+   "sop": "12",
+   "doIt": {
+    "tier": "growth",
+    "label": "Suggest bundles from your order data"
+   }
+  },
+  {
+   "day": 16,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Navigation",
+   "title": "Tidy your menu and best collection page",
+   "lesson": "If people cannot find it, they cannot buy it. Clear collections and filters make browsing easy.",
+   "steps": [
+    "Limit your menu to the categories people shop by.",
+    "Put best sellers first in your top collection.",
+    "Add filters for size or type if relevant.",
+    "Check search returns sensible results."
+   ],
+   "minutes": 20,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-92-page-checklists",
+    "label": "Page checklists",
+    "ref": "9.2"
+   },
+   "sop": "11",
+   "doIt": null
+  },
+  {
+   "day": 17,
+   "stage": 2,
+   "stageName": "Make the store convert",
+   "topic": "Post-purchase",
+   "title": "Add a one-click post-purchase offer",
+   "lesson": "The moment after buying is when trust is highest. A relevant add-on at a small saving lifts AOV.",
+   "steps": [
+    "Choose a low-cost complementary product.",
+    "Set up a post-purchase offer in your checkout app.",
+    "Keep it to one offer.",
+    "Review take rate next week."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "09-website-and-cro",
+    "anchor": "lesson-910-order-value",
+    "label": "Order value",
+    "ref": "9.10"
+   },
+   "sop": "12",
+   "doIt": {
+    "tier": "growth",
+    "label": "Configure the offer (with approval)"
+   }
+  },
+  {
+   "day": 18,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "Email capture",
+   "title": "Launch a pop-up that converts above 3%",
+   "lesson": "Every visitor who leaves without buying and without subscribing is gone. A good pop-up turns traffic into a list you own.",
+   "steps": [
+    "Pick an incentive (10% off, free shipping, or a guide).",
+    "Show it after 8 to 10 seconds or on exit intent.",
+    "Ask for email, then phone on step two.",
+    "Track the sign-up rate weekly."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-101-sign-up-forms",
+    "label": "Sign-up forms",
+    "ref": "10.1"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft the pop-up copy and settings"
+   }
+  },
+  {
+   "day": 19,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "Welcome series",
+   "title": "Turn on your welcome series",
+   "lesson": "New subscribers are at peak interest. A 3 to 6 email welcome series introduces your brand and converts first orders while you sleep.",
+   "steps": [
+    "Open Email automation in Helix.",
+    "Review the welcome drafts.",
+    "Approve, then check it is live in your email platform.",
+    "Send yourself a test."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "label": "The five core flows and extras",
+    "ref": "10.2"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft and set up the welcome series"
+   }
+  },
+  {
+   "day": 20,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "Checkout recovery",
+   "title": "Turn on abandoned checkout",
+   "lesson": "People who started checkout were close. A timely, helpful reminder brings many back, usually without a discount.",
+   "steps": [
+    "Open Email automation.",
+    "Review the abandoned checkout drafts.",
+    "Keep incentives for new customers only, last message only.",
+    "Approve and test."
+   ],
+   "minutes": 15,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "label": "The five core flows and extras",
+    "ref": "10.2"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft and set up abandoned checkout"
+   }
+  },
+  {
+   "day": 21,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "Cart and browse",
+   "title": "Add cart and browse abandonment",
+   "lesson": "Not everyone reaches checkout. Gentle cart and browse reminders help undecided shoppers choose.",
+   "steps": [
+    "Review the cart and browse drafts.",
+    "Add a product guide or best-sellers block.",
+    "Exclude people who already ordered.",
+    "Approve and test."
+   ],
+   "minutes": 15,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "label": "The five core flows and extras",
+    "ref": "10.2"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft and set up both flows"
+   }
+  },
+  {
+   "day": 22,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "After the order",
+   "title": "Set up post-purchase and review requests",
+   "lesson": "What happens after the first order decides if there is a second. Thank, guide and ask for a review at the right time.",
+   "steps": [
+    "Review the post-purchase and review request drafts.",
+    "Time the review ask to when results show.",
+    "Add usage tips.",
+    "Approve and test."
+   ],
+   "minutes": 15,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "label": "The five core flows and extras",
+    "ref": "10.2"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft and set up both flows"
+   }
+  },
+  {
+   "day": 23,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "Repeat customers",
+   "title": "Plan win-back, replenishment and VIP",
+   "lesson": "Lapsed and loyal customers need different messages. Win-back reminds, replenishment times the reorder, VIP rewards your best people.",
+   "steps": [
+    "Find your typical days between orders.",
+    "Choose which of the three flows fit your products.",
+    "Review the drafts.",
+    "Approve the ones that fit."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-1012-loyalty",
+    "label": "Loyalty",
+    "ref": "10.12"
+   },
+   "sop": "13",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft and set up the flows that fit"
+   }
+  },
+  {
+   "day": 24,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "Email campaigns",
+   "title": "Plan two campaign emails a week",
+   "lesson": "Flows catch moments; campaigns build the relationship. Mix education, stories, product and offers.",
+   "steps": [
+    "Pick two weekly send days.",
+    "Plan 4 weeks of topics: story, education, best sellers, new arrivals.",
+    "Segment engaged vs unengaged.",
+    "Schedule next week's first send."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-105-campaign-cadence-and-ideas",
+    "label": "Campaign cadence and ideas",
+    "ref": "10.5"
+   },
+   "sop": "14",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft next week's emails"
+   }
+  },
+  {
+   "day": 25,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "SMS and chat",
+   "title": "Decide if SMS or WhatsApp fits your store",
+   "lesson": "SMS and chat are powerful for launches and recovery but cost more per message. Use them for moments that matter.",
+   "steps": [
+    "Check your platform's SMS cost.",
+    "Add phone capture as step two of your pop-up.",
+    "Use SMS for launches, sale starts and checkout recovery.",
+    "Always include opt-out."
+   ],
+   "minutes": 10,
+   "area": "retention",
+   "learn": {
+    "slug": "10-email-sms-whatsapp",
+    "anchor": "lesson-1010-sms",
+    "label": "SMS",
+    "ref": "10.10"
+   },
+   "sop": "13",
+   "doIt": null
+  },
+  {
+   "day": 26,
+   "stage": 3,
+   "stageName": "Capture and keep customers",
+   "topic": "List growth",
+   "title": "Plan a list-building competition",
+   "lesson": "A well-run giveaway with partner brands can add thousands of subscribers before a big sale.",
+   "steps": [
+    "Choose a prize your ideal customer wants (not cash).",
+    "Invite 2 to 4 non-competing partner brands.",
+    "Set entry: email plus phone, bonus entries for sharing.",
+    "Plan a welcome offer for new entrants."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "11-list-and-audience-growth",
+    "anchor": "lesson-113-running-a-competition",
+    "label": "Running a competition",
+    "ref": "11.3"
+   },
+   "sop": "14",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft the competition plan and partner outreach"
+   }
+  },
+  {
+   "day": 27,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Brand core",
+   "title": "Write your brand core in one page",
+   "lesson": "Clear brand foundations make every ad, email and page easier: who you serve, what you believe, how you sound.",
+   "steps": [
+    "Write your mission in one sentence.",
+    "Describe your best customer.",
+    "List 3 things you do differently.",
+    "Choose 3 words for your tone."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "04-brand-and-content",
+    "anchor": "lesson-41-the-brand-core",
+    "label": "The brand core",
+    "ref": "4.1"
+   },
+   "sop": "16",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft your brand core from your site"
+   }
+  },
+  {
+   "day": 28,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Social profile",
+   "title": "Make your Instagram and TikTok profiles convert",
+   "lesson": "Many people who see your ad tap your profile before they buy. Your bio, link, highlights and pinned posts should prove you are real, show what you sell and give the next step.",
+   "steps": [
+    "Rewrite your bio: what you sell, your proof, a reason to tap now.",
+    "Point the link to a fast page with 3 to 5 clear options and UTMs.",
+    "Create highlights: Reviews, Best sellers, How to use, Shipping.",
+    "Pin your best product video, strongest proof and brand story."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "21-brand-and-social-presence",
+    "anchor": "lesson-212-profile-checklist-instagram-tiktok-facebook",
+    "label": "Profile checklist (Instagram, TikTok, Facebook)",
+    "ref": "21.2"
+   },
+   "sop": "16",
+   "doIt": {
+    "tier": "starter",
+    "label": "Audit your profiles and draft the bio and highlights"
+   }
+  },
+  {
+   "day": 29,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Posting rhythm",
+   "title": "Set a posting cadence you can keep for 12 weeks",
+   "lesson": "Consistency beats volume. A simple weekly rhythm built on proof, education, story and product keeps your profile alive and feeds your ads with tested content.",
+   "steps": [
+    "Choose your cadence for your stage (Lesson 21.4).",
+    "Plan next week across the four pillars.",
+    "Batch-film on one day.",
+    "Schedule the posts."
+   ],
+   "minutes": 25,
+   "area": "learning",
+   "learn": {
+    "slug": "21-brand-and-social-presence",
+    "anchor": "lesson-214-posting-cadence-you-can-keep",
+    "label": "Posting cadence you can keep",
+    "ref": "21.4"
+   },
+   "sop": "16",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft a 4-week content calendar"
+   }
+  },
+  {
+   "day": 30,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Organic reach",
+   "title": "Test hooks with trial reels and social search",
+   "lesson": "Social platforms are search engines now. Say your keywords out loud and on screen, and test new hooks on non-followers before posting to everyone.",
+   "steps": [
+    "Pick your best organic video.",
+    "Make 3 new openings with keywords spoken and on screen.",
+    "Post them as trial or test reels where available.",
+    "After 24 hours, post the winner to everyone and log it as an ad candidate."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "21-brand-and-social-presence",
+    "anchor": "lesson-215-growing-organic-reach",
+    "label": "Growing organic reach",
+    "ref": "21.5"
+   },
+   "sop": "16",
+   "doIt": null
+  },
+  {
+   "day": 31,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Creative strategy",
+   "title": "Map angles to awareness stages",
+   "lesson": "Different people need different messages: some do not know they have the problem, some are comparing options. Your creative should cover each stage.",
+   "steps": [
+    "List 3 problems your product solves.",
+    "Write one angle for unaware, problem-aware and solution-aware buyers.",
+    "Pick one angle to test first.",
+    "Save them in your angle bank."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "05-creative-strategy",
+    "anchor": "lesson-55-awareness-stages",
+    "label": "Awareness stages",
+    "ref": "5.5"
+   },
+   "sop": "07",
+   "doIt": {
+    "tier": "starter",
+    "label": "Suggest angles for each stage"
+   }
+  },
+  {
+   "day": 32,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Hooks",
+   "title": "Build a bank of 20 hooks",
+   "lesson": "The first three seconds decide if anyone watches. Mine hooks from reviews, support emails and competitor complaints.",
+   "steps": [
+    "Use your Day 6 notes.",
+    "Write 20 hooks across types: bold claim, call out, curiosity, one-star rebuttal, result first.",
+    "Pair each with a visual idea.",
+    "Star your top 5."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-198-hooks-that-win-the-first-three-seconds",
+    "label": "Hooks that win the first three seconds",
+    "ref": "19.8"
+   },
+   "sop": "07",
+   "doIt": {
+    "tier": "starter",
+    "label": "Write 20 hooks from your reviews"
+   }
+  },
+  {
+   "day": 33,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Creators",
+   "title": "Shortlist 10 creators",
+   "lesson": "Real people explaining why they love your product build trust faster than brand ads. Fit beats follower count.",
+   "steps": [
+    "Search the problems you solve on Instagram and TikTok.",
+    "Check your tagged posts and customers.",
+    "Score each creator out of 10.",
+    "Save 10 to your creator tracker."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-192-finding-the-right-creators",
+    "label": "Finding the right creators",
+    "ref": "19.2"
+   },
+   "sop": "08",
+   "doIt": {
+    "tier": "starter",
+    "label": "Find creators that match your niche"
+   }
+  },
+  {
+   "day": 34,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Outreach and affiliates",
+   "title": "Contact 5 creators with a gifting and affiliate offer",
+   "lesson": "Start with product, pay more once content performs, and give creators an offer that does not clash with your own pop-up code.",
+   "steps": [
+    "Write a personal message mentioning one of their videos.",
+    "Offer product plus your affiliate deal.",
+    "Check your public offer does not beat their code.",
+    "Send 5 today and log them."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-195-affiliate-programmes-that-do-not-cannibalise-you",
+    "label": "Affiliate programmes that do not cannibalise you",
+    "ref": "19.5"
+   },
+   "sop": "08",
+   "doIt": {
+    "tier": "starter",
+    "label": "Draft personal outreach messages"
+   }
+  },
+  {
+   "day": 35,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "UGC brief",
+   "title": "Write a UGC brief",
+   "lesson": "A clear brief is the difference between usable content and wasted product. Hooks, key message, proof and deliverables in one page.",
+   "steps": [
+    "Open the UGC brief template in Lesson 19.12.",
+    "Fill in key message, proof points and must-not-say.",
+    "Add 3 hooks to film separately.",
+    "Send to your creators."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-1912-the-ugc-brief",
+    "label": "The UGC brief",
+    "ref": "19.12"
+   },
+   "sop": "08",
+   "doIt": {
+    "tier": "starter",
+    "label": "Fill in the brief for you"
+   }
+  },
+  {
+   "day": 36,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Scripting",
+   "title": "Script one 30-second video ad",
+   "lesson": "Hook, problem, product and proof, objection, call to action. A simple structure keeps videos tight and selling.",
+   "steps": [
+    "Pick your top angle and hook.",
+    "Write the script in five parts.",
+    "Read it aloud and cut anything that drags.",
+    "Write 3 alternative hooks."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-199-scripting",
+    "label": "Scripting",
+    "ref": "19.9"
+   },
+   "sop": "07",
+   "doIt": {
+    "tier": "starter",
+    "label": "Write 3 script options"
+   }
+  },
+  {
+   "day": 37,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Shoot and edit",
+   "title": "Shoot and edit a phone video",
+   "lesson": "You do not need a studio. Natural light, clear audio, quick cuts and captions beat polish on social feeds.",
+   "steps": [
+    "Film by a window, vertical, with the back camera.",
+    "Shoot the hook 3 ways.",
+    "Edit: fast cuts, captions, text hook in frame one.",
+    "Export 9:16 and 4:5."
+   ],
+   "minutes": 45,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-1911-editing-for-performance",
+    "label": "Editing for performance",
+    "ref": "19.11"
+   },
+   "sop": "07",
+   "doIt": null
+  },
+  {
+   "day": 38,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Tracking",
+   "title": "Check your tracking is trustworthy",
+   "lesson": "Wrong data leads to wrong decisions. Confirm purchases are tracked once, with the right value.",
+   "steps": [
+    "Check pixel and server events are connected.",
+    "Make Purchase the only primary conversion.",
+    "Place a test order and confirm value.",
+    "Add UTMs to your ads."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-201-before-you-launch-tracking-you-can-trust",
+    "label": "Before you launch: tracking you can trust",
+    "ref": "20.1"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "starter",
+    "label": "Run a tracking check"
+   }
+  },
+  {
+   "day": 39,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Audiences",
+   "title": "Set up your target audiences",
+   "lesson": "Broad targeting with strong creative is the default, but you still need custom audiences for warm and hot layers and exclusions.",
+   "steps": [
+    "Set account audience segments (engaged, existing customers).",
+    "Create visitors 30/180, add to cart, checkout, purchasers, engagers.",
+    "Upload your customer list.",
+    "Create one lookalike for later tests."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-202-setting-up-target-audiences",
+    "label": "Setting up target audiences",
+    "ref": "20.2"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "starter",
+    "label": "Create the audiences in your account (with approval)"
+   }
+  },
+  {
+   "day": 40,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Define the campaign",
+   "title": "Fill in a campaign brief",
+   "lesson": "Every campaign starts with numbers and a kill rule, not with Ads Manager. The brief makes the decision obvious later.",
+   "steps": [
+    "Open the campaign brief template.",
+    "Set target CPA, budget and test period.",
+    "Choose objective, layer and structure.",
+    "Write the kill and scale rules."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "06-defining-campaigns",
+    "anchor": "lesson-616-the-campaign-brief-template",
+    "label": "The campaign brief template",
+    "ref": "6.16"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "starter",
+    "label": "Fill in the brief with you"
+   }
+  },
+  {
+   "day": 41,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Campaign setup",
+   "title": "Build your first structured Meta campaign",
+   "lesson": "Follow the setup steps once, carefully, and you can repeat them for every test.",
+   "steps": [
+    "Create a Sales campaign with your naming convention.",
+    "Set budget at 2 to 3 × target CPA per day.",
+    "Add 3 to 6 ads testing one variable.",
+    "Check enhancements and preview, then press Launch yourself."
+   ],
+   "minutes": 30,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-203-setting-up-a-meta-sales-campaign-step-by-step",
+    "label": "Setting up a Meta sales campaign step by step",
+    "ref": "20.3"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "starter",
+    "label": "Build it in your account as paused drafts. You press Launch"
+   }
+  },
+  {
+   "day": 42,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Structure",
+   "title": "Match your account structure to your spend",
+   "lesson": "Small budgets need simple structures. Add layers only as spend grows.",
+   "steps": [
+    "Find your daily spend band in Lesson 6.4.",
+    "Compare with your current campaigns.",
+    "Merge or pause what does not fit.",
+    "Rename campaigns to the convention."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "06-defining-campaigns",
+    "anchor": "lesson-64-account-structure-by-spend",
+    "label": "Account structure by spend",
+    "ref": "6.4"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "starter",
+    "label": "Suggest a restructure"
+   }
+  },
+  {
+   "day": 43,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Daily grading",
+   "title": "Grade your ads and pause the drains",
+   "lesson": "Ten minutes a day: pause ads that spent twice your good CPA without results, feed the winners, leave learning ads alone.",
+   "steps": [
+    "Open the Campaign tracker.",
+    "Read each Helix recommendation.",
+    "Pause kills. Raise scales by up to 20% yourself in Ads Manager.",
+    "Log what you changed."
+   ],
+   "minutes": 10,
+   "area": "ads",
+   "learn": {
+    "slug": "07-meta-ads",
+    "anchor": "lesson-76-daily-optimisation-in-10-minutes",
+    "label": "Daily optimisation in 10 minutes",
+    "ref": "7.6"
+   },
+   "sop": "06",
+   "doIt": {
+    "tier": "starter",
+    "label": "Pause the drains for you and prepare budget changes for you to make"
+   }
+  },
+  {
+   "day": 44,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Analysis",
+   "title": "Find where your funnel leaks",
+   "lesson": "Good ad, poor sales means the page. Lots of carts, few checkouts means checkout. Strong site, weak clicks means creative. Diagnose before you fix.",
+   "steps": [
+    "Open Insights.",
+    "Read the cross-diagnosis findings.",
+    "Match each to the table in Lesson 20.7.",
+    "Pick one fix for this week."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout",
+    "label": "Cross-diagnosis: is it the ad, the page, the offer or the checkout?",
+    "ref": "20.7"
+   },
+   "sop": "06",
+   "doIt": {
+    "tier": "starter",
+    "label": "Explain your funnel leaks"
+   }
+  },
+  {
+   "day": 45,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Partnership ads",
+   "title": "Launch one partnership ad",
+   "lesson": "Running a creator's post from their handle shows a familiar face instead of a brand ad. Add it to your normal campaign as a new batch.",
+   "steps": [
+    "Ask a creator with a strong post for permission.",
+    "Connect through the platform's partnership tools.",
+    "Add the post to your cold campaign.",
+    "Judge it on the same rules."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "19-creators-ugc-and-video-ads",
+    "anchor": "lesson-196-partnership-ads-whitelisting",
+    "label": "Partnership ads (whitelisting)",
+    "ref": "19.6"
+   },
+   "sop": "08",
+   "doIt": {
+    "tier": "starter",
+    "label": "Add it to your campaign as a paused ad"
+   }
+  },
+  {
+   "day": 46,
+   "stage": 4,
+   "stageName": "Brand, creative and ads engine",
+   "topic": "Creative iteration",
+   "title": "Run your weekly creative report",
+   "lesson": "Winners tell you what to make next. Iterate on the winning concept with new hooks, creators and formats.",
+   "steps": [
+    "List last week's top 3 ads by CPA and hook rate.",
+    "Write why each won.",
+    "Brief 4 to 8 new variations.",
+    "Retire tired ads."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "05-creative-strategy",
+    "anchor": "lesson-511-macro-and-micro-iteration",
+    "label": "Macro and micro iteration",
+    "ref": "5.11"
+   },
+   "sop": "07",
+   "doIt": {
+    "tier": "starter",
+    "label": "Build the creative report"
+   }
+  },
+  {
+   "day": 47,
+   "stage": 5,
+   "stageName": "Google and more channels",
+   "topic": "Product feed",
+   "title": "Rewrite titles for your top 10 products",
+   "lesson": "Google Shopping matches searches to your feed. Titles with the words people search are the biggest lever.",
+   "steps": [
+    "Find search terms that convert.",
+    "Rewrite titles: brand, product type, key attribute, size or colour.",
+    "Check images and prices.",
+    "Resubmit the feed."
+   ],
+   "minutes": 25,
+   "area": "ads",
+   "learn": {
+    "slug": "08-google-ads",
+    "anchor": "lesson-82-product-data",
+    "label": "Product data",
+    "ref": "8.2"
+   },
+   "sop": "09",
+   "doIt": {
+    "tier": "starter",
+    "label": "Rewrite feed titles (with approval)"
+   }
+  },
+  {
+   "day": 48,
+   "stage": 5,
+   "stageName": "Google and more channels",
+   "topic": "Google structure",
+   "title": "Set up brand search and feed-only PMax",
+   "lesson": "Keep cheap brand searches in their own campaign, and let PMax prospect with your feed while brand is excluded.",
+   "steps": [
+    "Create or check a brand search campaign.",
+    "Create feed-only PMax with brand excluded.",
+    "Start with maximise conversion value.",
+    "Note the date for review."
+   ],
+   "minutes": 30,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-204-setting-up-google-step-by-step",
+    "label": "Setting up Google step by step",
+    "ref": "20.4"
+   },
+   "sop": "09",
+   "doIt": {
+    "tier": "starter",
+    "label": "Build both campaigns as paused drafts"
+   }
+  },
+  {
+   "day": 49,
+   "stage": 5,
+   "stageName": "Google and more channels",
+   "topic": "Search terms",
+   "title": "Add negatives from your search terms",
+   "lesson": "Search terms with spend and no sales are pure waste. Ten minutes a week stops the leak.",
+   "steps": [
+    "Open the search terms report.",
+    "Sort by cost.",
+    "Add irrelevant terms as negatives.",
+    "Move converting terms into titles and keywords."
+   ],
+   "minutes": 10,
+   "area": "ads",
+   "learn": {
+    "slug": "08-google-ads",
+    "anchor": "lesson-88-weekly-optimisation",
+    "label": "Weekly optimisation",
+    "ref": "8.8"
+   },
+   "sop": "09",
+   "doIt": {
+    "tier": "starter",
+    "label": "Find and add negatives (with approval)"
+   }
+  },
+  {
+   "day": 50,
+   "stage": 5,
+   "stageName": "Google and more channels",
+   "topic": "TikTok",
+   "title": "Check if TikTok is right for you yet",
+   "lesson": "TikTok rewards native, entertaining content and volume. Be ready before you spend.",
+   "steps": [
+    "Check the readiness list in Lesson 12.1.",
+    "Post 3 organic videos this week.",
+    "Reuse your best UGC as Spark ads later.",
+    "Decide: now or next quarter."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "12-channels-tiktok-pinterest-seo",
+    "anchor": "lesson-121-tiktok-readiness",
+    "label": "TikTok readiness",
+    "ref": "12.1"
+   },
+   "sop": "10",
+   "doIt": null
+  },
+  {
+   "day": 51,
+   "stage": 5,
+   "stageName": "Google and more channels",
+   "topic": "Search and discovery",
+   "title": "Fix SEO basics on your top pages",
+   "lesson": "Organic search is free traffic that compounds. Start with titles, descriptions and useful content on your best pages.",
+   "steps": [
+    "Write unique titles and meta descriptions for top 5 pages.",
+    "Add helpful copy to your top collection.",
+    "Fix broken links.",
+    "Submit your sitemap."
+   ],
+   "minutes": 25,
+   "area": "site",
+   "learn": {
+    "slug": "12-channels-tiktok-pinterest-seo",
+    "anchor": "lesson-128-seo-step-by-step",
+    "label": "SEO step by step",
+    "ref": "12.8"
+   },
+   "sop": "10",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft titles and descriptions"
+   }
+  },
+  {
+   "day": 52,
+   "stage": 5,
+   "stageName": "Google and more channels",
+   "topic": "AI search",
+   "title": "Get ready for AI shopping assistants",
+   "lesson": "Shoppers now ask assistants for recommendations. Clean product data and clear policies make you easier to recommend.",
+   "steps": [
+    "Check product attributes and descriptions are complete.",
+    "Make return and shipping policies clear.",
+    "Check eligibility for agentic storefronts in your platform.",
+    "Add FAQ content to top products."
+   ],
+   "minutes": 15,
+   "area": "site",
+   "learn": {
+    "slug": "12-channels-tiktok-pinterest-seo",
+    "anchor": "lesson-129-ai-search-and-agentic-commerce",
+    "label": "AI search and agentic commerce",
+    "ref": "12.9"
+   },
+   "sop": "10",
+   "doIt": null
+  },
+  {
+   "day": 53,
+   "stage": 6,
+   "stageName": "Offers, promotions and peak",
+   "topic": "Promotional rhythm",
+   "title": "Map your next 90 days of promotions",
+   "lesson": "Planned moments beat random discounts. Mix launches, value-adds and a few real sales.",
+   "steps": [
+    "List key dates in your market.",
+    "Plan one moment per month: launch, gift edit or sale.",
+    "Decide offer type for each.",
+    "Add to your calendar."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "13-promotions-and-sales",
+    "anchor": "lesson-131-the-promotional-rhythm",
+    "label": "The promotional rhythm",
+    "ref": "13.1"
+   },
+   "sop": "15",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft your promo calendar"
+   }
+  },
+  {
+   "day": 54,
+   "stage": 6,
+   "stageName": "Offers, promotions and peak",
+   "topic": "Sale offers",
+   "title": "Design a sale offer that protects margin",
+   "lesson": "Tiered offers, gifts and bundles often beat blanket discounts. Check every offer against your break-even numbers.",
+   "steps": [
+    "Choose offer type: tiered, gift, bundle or percent.",
+    "Model margin on the Scorecard.",
+    "Plan a mid-sale boost.",
+    "Write the offer in one line."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "13-promotions-and-sales",
+    "anchor": "lesson-134-the-big-sale-step-by-step",
+    "label": "The big sale, step by step",
+    "ref": "13.4"
+   },
+   "sop": "15",
+   "doIt": {
+    "tier": "growth",
+    "label": "Model offer options"
+   }
+  },
+  {
+   "day": 55,
+   "stage": 6,
+   "stageName": "Offers, promotions and peak",
+   "topic": "Black Friday",
+   "title": "Start your Black Friday plan",
+   "lesson": "The biggest sales window of the year is decided weeks before. Target, offer, stock, list, creative and site speed.",
+   "steps": [
+    "Set the revenue target.",
+    "Choose the offer.",
+    "Check stock for best sellers.",
+    "Book creative and email dates on the timeline."
+   ],
+   "minutes": 30,
+   "area": "retention",
+   "learn": {
+    "slug": "06-defining-campaigns",
+    "anchor": "lesson-614-promotional-and-seasonal-campaigns",
+    "label": "Promotional and seasonal campaigns",
+    "ref": "6.14"
+   },
+   "sop": "15",
+   "doIt": {
+    "tier": "growth",
+    "label": "Build your timeline"
+   }
+  },
+  {
+   "day": 56,
+   "stage": 6,
+   "stageName": "Offers, promotions and peak",
+   "topic": "Launches",
+   "title": "Plan your next product launch",
+   "lesson": "Waitlist, VIP early access, launch day and a mid-launch push turn a new product into an event.",
+   "steps": [
+    "Pick the launch date.",
+    "Open a waitlist page now.",
+    "Plan hype emails and creative.",
+    "Plan the 24-hour mid-launch push."
+   ],
+   "minutes": 20,
+   "area": "retention",
+   "learn": {
+    "slug": "13-promotions-and-sales",
+    "anchor": "lesson-132-launch-phases",
+    "label": "Launch phases",
+    "ref": "13.2"
+   },
+   "sop": "15",
+   "doIt": {
+    "tier": "growth",
+    "label": "Draft the launch plan"
+   }
+  },
+  {
+   "day": 57,
+   "stage": 6,
+   "stageName": "Offers, promotions and peak",
+   "topic": "Stock",
+   "title": "Run a weekly stock snapshot",
+   "lesson": "Ads on products that are about to sell out waste money; overstock ties up cash. Know your weeks of cover.",
+   "steps": [
+    "List stock on hand for top 10 products.",
+    "Divide by weekly sales to get weeks of cover.",
+    "Flag under 4 weeks and over 20 weeks.",
+    "Plan reorders or promotions."
+   ],
+   "minutes": 20,
+   "area": "numbers",
+   "learn": {
+    "slug": "14-inventory-cash-planning",
+    "anchor": "lesson-142-the-weekly-stock-snapshot",
+    "label": "The weekly stock snapshot",
+    "ref": "14.2"
+   },
+   "sop": "17",
+   "doIt": {
+    "tier": "growth",
+    "label": "Build the stock snapshot"
+   }
+  },
+  {
+   "day": 58,
+   "stage": 6,
+   "stageName": "Offers, promotions and peak",
+   "topic": "Cash",
+   "title": "Build a 13-week cash forecast",
+   "lesson": "Profit is not cash. A simple forecast shows when stock, ads and bills hit, so peak season does not catch you short.",
+   "steps": [
+    "List cash in and out for the next 13 weeks.",
+    "Include stock orders and ad spend.",
+    "Find the lowest point.",
+    "Pick a lever if it is tight."
+   ],
+   "minutes": 30,
+   "area": "numbers",
+   "learn": {
+    "slug": "14-inventory-cash-planning",
+    "anchor": "lesson-144-cash-flow-forecast",
+    "label": "Cash flow forecast",
+    "ref": "14.4"
+   },
+   "sop": "17",
+   "doIt": null
+  },
+  {
+   "day": 59,
+   "stage": 7,
+   "stageName": "Scale and systems",
+   "topic": "Scaling",
+   "title": "Scale a winner safely",
+   "lesson": "Raise budgets in steps while MER holds. When vertical steps stop working, copy winners into new campaigns.",
+   "steps": [
+    "Pick one campaign with CPA under target for a week.",
+    "Raise the budget by 20% in Ads Manager (you make this change).",
+    "Watch MER for 3 days.",
+    "Repeat or hold."
+   ],
+   "minutes": 10,
+   "area": "ads",
+   "learn": {
+    "slug": "02-diagnose-and-fix",
+    "anchor": "lesson-27-the-scale-test",
+    "label": "The scale test",
+    "ref": "2.7"
+   },
+   "sop": "05",
+   "doIt": {
+    "tier": "growth",
+    "label": "Prepare each budget step for you to make in Ads Manager"
+   }
+  },
+  {
+   "day": 60,
+   "stage": 7,
+   "stageName": "Scale and systems",
+   "topic": "Attribution",
+   "title": "Run a simple holdout test",
+   "lesson": "Platforms all claim the same sale. A holdout shows what is truly adding sales.",
+   "steps": [
+    "Choose one campaign or channel.",
+    "Pause it for a week (or in one region).",
+    "Compare total sales and MER.",
+    "Decide to keep, cut or change."
+   ],
+   "minutes": 15,
+   "area": "ads",
+   "learn": {
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-209-attribution-and-incrementality",
+    "label": "Attribution and incrementality",
+    "ref": "20.9"
+   },
+   "sop": "06",
+   "doIt": null
+  },
+  {
+   "day": 61,
+   "stage": 7,
+   "stageName": "Scale and systems",
+   "topic": "New markets",
+   "title": "Check if a second country makes sense",
+   "lesson": "Expansion multiplies what already works. Check demand and unit economics before you spend.",
+   "steps": [
+    "Check where traffic and orders already come from.",
+    "Recalculate costs for that country.",
+    "Check shipping and duties.",
+    "Decide: test now or later."
+   ],
+   "minutes": 20,
+   "area": "numbers",
+   "learn": {
+    "slug": "15-international-expansion",
+    "anchor": "lesson-151-is-there-demand",
+    "label": "Is there demand?",
+    "ref": "15.1"
+   },
+   "sop": "17",
+   "doIt": null
+  },
+  {
+   "day": 62,
+   "stage": 7,
+   "stageName": "Scale and systems",
+   "topic": "Team and focus",
+   "title": "Delegate one recurring task",
+   "lesson": "Your time is the scarcest resource. Hand off one repeatable task so you can work on growth.",
+   "steps": [
+    "List tasks you did this week.",
+    "Mark the ones someone else could do.",
+    "Write a short SOP for one.",
+    "Hand it to a team member, freelancer or Helix."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "16-founder-team-productivity",
+    "anchor": "lesson-165-hiring",
+    "label": "Hiring",
+    "ref": "16.5"
+   },
+   "sop": "18",
+   "doIt": null
+  },
+  {
+   "day": 63,
+   "stage": 7,
+   "stageName": "Scale and systems",
+   "topic": "AI for operators",
+   "title": "Hand one weekly job to AI",
+   "lesson": "AI is best at the repeatable work: summarising reviews, drafting emails, writing ad variants, checking data. Pick one job, give it clear context and check the output.",
+   "steps": [
+    "Pick one weekly task (report, email draft, review summary).",
+    "Write the context: brand, customer, rules, examples.",
+    "Run it and check every fact.",
+    "Save the prompt so it is repeatable."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "17-ai-for-operators",
+    "anchor": "lesson-172-high-value-uses",
+    "label": "High-value uses",
+    "ref": "17.2"
+   },
+   "sop": "18",
+   "doIt": {
+    "tier": "starter",
+    "label": "Set this up as a weekly Helix job"
+   }
+  },
+  {
+   "day": 64,
+   "stage": 7,
+   "stageName": "Scale and systems",
+   "topic": "Your operating system",
+   "title": "Review your tools and set your next cycle",
+   "lesson": "Tools should save time, not add noise. Then pick the next six-week priority and let the daily loop continue.",
+   "steps": [
+    "List your apps and their monthly cost.",
+    "Cancel one you do not use (Lesson 18.2 rules).",
+    "Choose your next six-week priority (Lesson 16.3).",
+    "Keep your streak going tomorrow."
+   ],
+   "minutes": 20,
+   "area": "learning",
+   "learn": {
+    "slug": "18-tool-stack",
+    "anchor": "lesson-182-rules-for-adding-a-tool",
+    "label": "Rules for adding a tool",
+    "ref": "18.2"
+   },
+   "sop": "18",
+   "doIt": null
+  }
+ ]
+}

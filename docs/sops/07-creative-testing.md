@@ -27,7 +27,7 @@ Balance each month's ads across four pillars so you are not "playing the same no
 | **Feel** | Fears and desires, the moment of relief, identity and status |
 | **Stand for** | Founder opinion, "us versus them", behind the scenes, values |
 
-**Who is the hero?** Rotate framing: the product as hero, the brand as hero, the result as hero, the customer as hero. Customer-as-hero framing tends to travel furthest.
+**Who is the focus?** Rotate the focus between the product, the brand, the result and the customer. Ads centred on the customer tend to travel furthest.
 
 ## Hooks (first 0 to 3 seconds)
 
@@ -44,7 +44,7 @@ Most viewers leave in the first quarter of a video. Win the first seconds:
 1. **Review last batch.** Grade each ad (Star, Steady, Passenger, Drain). Write one line on why winners won (hook, angle, creator, format).
 2. **Pick the variable** for the next batch based on what is weakest (hooks if thumb-stop rate is low, angles if click-through is low, offer if conversion is low).
 3. **Write briefs** (SOP 08) for 4 to 15 ads depending on spend.
-4. **Build in the Ad Vault.** Name ads with the naming pattern so tests are easy to read later.
+4. **Stage in the build campaign.** Name ads with the naming pattern so tests are easy to read later.
 5. **Launch** into the testing campaign or the campaign that needs a refresh.
 6. **Wait for signal:** about 1 to 1.5x target CPA spent per ad, or early signals for high-priced products (outbound CTR, cost per click, add to carts, how fast frequency builds).
 7. **Grade and log** in the creative library: concept, pillar, hook, format, creator, result.
@@ -64,6 +64,6 @@ Most viewers leave in the first quarter of a video. Win the first seconds:
 | Grade batches and summarise what won and why | Film, source or approve creative assets |
 | Suggest the next variable and draft briefs | Approve briefs |
 | Generate copy variants and static variants from existing assets (wallet-metered) | Approve any AI-generated asset before use |
-| Build ads into the Ad Vault, then duplicate into campaigns | Approve the launch |
+| Build ads into the build campaign, then duplicate them into campaigns as paused ads | Switch the new ads on yourself |
 
 **Related:** SOP 06, 08, Trends feed (product design).

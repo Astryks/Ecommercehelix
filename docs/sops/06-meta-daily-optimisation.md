@@ -50,7 +50,7 @@ Only grade an ad once it has spent at least the good CPP threshold.
 | --- | --- | --- |
 | Winning | At least one Star, MER on target | Do not add ads. |
 | Learning | Changed in the last 3 to 7 days | Leave alone. |
-| Shaky | No Star, Steady ads with rising frequency | Prepare a batch in the Ad Vault, add in 1 to 2 days. |
+| Shaky | No Star, Steady ads with rising frequency | Prepare a batch in the build campaign, add in 1 to 2 days. |
 | Dying | No Star and under 30% of the original batch still running | Add a batch now, or close the campaign. |
 
 Batch size by daily campaign spend: up to $100 is 4 to 8 ads; $100 to $500 is 8 to 12; over $500 is 12 to 15. Adding ads resets learning, so add them in one go, not one at a time.
@@ -65,13 +65,13 @@ Delivery, budget, amount spent, purchases, cost per purchase, purchase value, RO
 
 ## Who does what
 
-| Helix can do (with approval) | The user does |
+| Helix can do | The user does |
 | --- | --- |
 | Pull data and grade ads daily (read-only) | Review the grade list (30 seconds) |
 | Pause Drain ads (one approval can cover "pause all Drains today") | Approve, or set an auto-approve rule for pauses only |
-| Move budgets within cap and the 20% rule | Approve budget moves |
-| Duplicate ads from the Ad Vault into campaigns | Approve the batch |
+| Prepare budget moves within the 20% rule (exact values and deep links) | Make the budget change in Ads Manager |
+| Duplicate ads from a build campaign into campaigns, added paused | Switch the new ads on |
 
-**Auto-approve option (opt-in, Growth):** users may allow Helix to pause ads that meet the Drain rule without asking, within limits (max 3 pauses a day, never the last active ad in a campaign). Budget increases always need a tap.
+**Auto-pause option (proposed, opt-in, Growth):** users may allow Helix to pause ads that meet the Drain rule without asking, within limits (max 3 pauses a day, never the last active ad in a campaign). Pausing only reduces spend. Helix never raises, lowers or resumes spend itself. See [Execution model](../execution-model.md).
 
 **Related:** SOP 05, 07.

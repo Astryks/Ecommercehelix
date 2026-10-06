@@ -39,6 +39,8 @@
 
 ## Week 4: approvals and Meta writes
 
+_All Meta and Google writes create **paused** entities; there is no code path that edits budgets on live campaigns or launches anything (see [execution-model.md](execution-model.md))._
+
 - [ ] Approval cards with preview, AI cost, spend impact versus cap, expiry, undo.
 - [ ] Executor: pause ads, budget change within cap and the 20% rule, duplicate ads from a paused staging campaign. Idempotency, revert payloads.
 - [ ] Append-only audit log and activity feed.
@@ -60,6 +62,10 @@
 - [ ] Admin margin dashboard.
 - [ ] Golden-set evaluation for plans and diagnoses.
 - [ ] Private beta with 10 to 20 stores; measure cost per active store per day.
+
+## Status of the scaffold (6 Oct 2026)
+
+Already built in the repo: marketing site, About, Learn, auth, Stripe, Today with the 64-day curriculum, Insights (rules engine on example signals), Approvals, Daily scorecard, Campaign tracker, Campaign builder, Email automation, Trends and Weekly report (seeded). The weeks above now mainly add the real connectors, crawler, LLM drafting and executors.
 
 ## Month 2
 

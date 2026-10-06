@@ -6,10 +6,10 @@ Helix should feel like a great agency account manager: it knows your numbers, te
 
 ## 1. Design principles
 
-1. **Three tasks, never more.** The Today screen shows at most three tasks. Everything else waits on the Roadmap.
+1. **One lesson, one topic, one action.** The Today screen shows the day's curriculum step (short lesson, topic, action, "I'll do it for you") plus at most two insights from the latest audit. Everything else waits on the Roadmap. See [daily-curriculum.md](daily-curriculum.md).
 2. **Why, how, how long.** Every task has a one-line reason tied to a number, a time estimate and a checklist.
 3. **Two buttons.** **Do it for me** (Helix prepares, you approve) or **I'll do it** (step-by-step guide). A third, quieter **Skip** teaches Helix your preferences.
-4. **Ask before acting.** No write action reaches Meta, Google, Shopify or the email platform without an explicit approval with preview, cost estimate, spend cap and undo.
+4. **Ask before acting, and never switch on spend.** No write action reaches Meta, Google, Shopify or the email platform without an explicit approval with preview, cost estimate and undo. Campaigns are pushed as **paused drafts** and the owner presses Launch; budget edits on live campaigns are always made by the owner. See [Execution model](execution-model.md).
 5. **Speak human.** No jargon without a tooltip. Show money, not acronyms, first ("You made about $186 yesterday").
 6. **Show progress.** Compound score, streaks and a visible roadmap make small daily work feel like it adds up, because it does.
 7. **Honest by default.** Label estimates as estimates. Say when data is missing. Never invent benchmarks for a store we cannot see.
@@ -152,7 +152,8 @@ Every **Do it for me** creates an approval card. The queue lives in a tab and as
 - Approvals expire (24 hours by default; budget changes 12 hours) because data moves.
 - Before executing, the executor re-checks the live state. If things changed materially, the card goes back for re-approval.
 - Bundled approvals are allowed only for the same action type ("pause all 3 Drains").
-- Optional auto-approve rules (Growth, opt-in): pausing Drains within limits, scheduling already-approved emails. Never for budget increases, new campaigns, site publishes or sends to a full list.
+- Optional auto-approve rules (Growth, opt-in, proposed): pausing Drains within limits, scheduling already-approved emails. Never for budgets, launches, new campaigns, site publishes or sends to a full list.
+- Ad execution follows **Draft & you launch**: anything Helix creates in an ad account is paused; budget, bid and target changes on live campaigns are prepared by Helix and made by the owner. Users without a connected account get **Guide me** mode (structures, original example ads, click-by-click checklists).
 
 ---
 
@@ -171,7 +172,7 @@ The agency-style view of everything Helix can take on, grouped by area, with sta
 |  ADS                                                              |
 |  [✓] Meta structure review               done                     |
 |  [→] Daily ad grading and pauses         active                   |
-|  [ ] Ad Vault and first test batch       next week                |
+|  [ ] Build campaign and first test batch       next week                |
 |  [🔒] Google Shopping setup              Growth plan              |
 |  SITE                                                             |
 |  [→] Site Fix List (3 of 10 done)        active                   |
@@ -453,7 +454,7 @@ Core tables (simplified; all rows carry `id`, `created_at`, `updated_at`; tenant
 
 **Tools (via Vercel AI SDK tool calling)**
 - `read_*`: `read_scorecard`, `read_ad_grades`, `read_search_terms`, `read_flows`, `read_products`, `read_findings`, `search_sops`. Read-only, safe to call.
-- `draft_*`: `draft_budget_change`, `draft_pause_ads`, `draft_ad_batch`, `draft_negative_keywords`, `draft_email`, `draft_flow`, `draft_theme_edit`. Each returns a proposed Action object; it creates an approval card, not a change.
+- `draft_*`: `draft_budget_change` (produces instructions for the owner, never an API write on a live campaign), `draft_pause_ads`, `draft_ad_batch` (created paused), `draft_negative_keywords`, `draft_email`, `draft_flow`, `draft_theme_edit`. Each returns a proposed Action object; it creates an approval card, not a change.
 - The executor holds provider credentials and runs the Action only with a valid, unexpired approval id signed by the server.
 
 **Guardrails**
@@ -474,3 +475,18 @@ Core tables (simplified; all rows carry `id`, `created_at`, `updated_at`; tenant
 **Evaluation**
 - Golden set of 50 anonymised store scenarios with expected diagnoses and tasks; run on every prompt or model change.
 - Track: task completion rate, approval rate, revert rate, user-rated usefulness, cost per active store per day.
+
+---
+
+## 15. v1 app additions (built)
+
+| Screen | What it does | Source of truth |
+| --- | --- | --- |
+| Today | Day N of the 64-day curriculum (lesson, topic, action, "I'll do it for you", Mark done), up to two insights, streak, compound score, right-hand roadmap by stage with done / today / next / locked-by-plan | [daily-curriculum.md](daily-curriculum.md) |
+| Insights | Proactive audit results with evidence, why it matters, suggested fix, Do it for me or Show me how; site and social checklists; audit schedule | [audit-engine.md](audit-engine.md) |
+| Daily scorecard | Manual entry and CSV import of daily orders, sales, discounts, refunds, COGS, shipping, fees, ad spend by channel, other marketing; computed gross profit, contribution, MER, blended CAC, aCPA, channel ROAS, break-even ROAS and CPA, new vs returning, target vs actual, WTD/MTD, sparklines, RAG flags; product table | Module 1, SOP 02 |
+| Campaign tracker | Every campaign with CPA, ROAS, CTR, CPM, hook rate, status, stage and a scale / hold / refresh / kill call from SOP rules | Module 6, SOP 06 |
+| Campaign builder | Draft & you launch (paused drafts in the user's account) and Guide me (structures, original example ads, click-by-click checklists) | [execution-model.md](execution-model.md) |
+| Email automation | Nine flows with drafts; set up after approval | [email-automation.md](email-automation.md) |
+| Learn | The 21-module playbook, linked from every day and insight | [playbook/](playbook/README.md) |
+

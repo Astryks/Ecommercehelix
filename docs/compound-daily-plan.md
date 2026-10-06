@@ -87,7 +87,7 @@ Pick **one** from the list. Helix chooses for you based on the stance above.
 
 - [ ] **Scale:** raise budget by up to 20% on the campaign with the best cost per purchase that still has low frequency.
 - [ ] **Cut:** turn off the ad that has spent at least your "bad" cost-per-purchase threshold with no purchase, or that has a bad cost per purchase **and** high frequency.
-- [ ] **Refresh:** if a campaign has no strong ads left and fewer than 30% of its original ads still perform, load a new batch from your Ad Vault.
+- [ ] **Refresh:** if a campaign has no strong ads left and fewer than 30% of its original ads still perform, load a new batch from your build campaign.
 - [ ] **Launch a test:** put a new batch of 4 to 8 ads (testing one variable) live in your testing campaign.
 - [ ] **Google check:** add 5 negative keywords from the search-terms report, or fix one Merchant Center product error.
 - [ ] **Do nothing on purpose:** if a campaign is in learning or was changed in the last 3 days, leave it alone. Write "held" in the log.
@@ -344,7 +344,7 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 
 | Days | Do | Exit criteria |
 | --- | --- | --- |
-| 1 to 30 | Full Meta structure across cold, mixed, warm and hot layers. Daily grading. Ad Vault for staging new ads. Google: feed-only Shopping or PMax plus a separate brand search campaign. Monthly economics review. | Funnel split within ranges. Search terms reviewed weekly. Monthly review done. |
+| 1 to 30 | Full Meta structure across cold, mixed, warm and hot layers. Daily grading. A build campaign for staging new ads. Google: feed-only Shopping or PMax plus a separate brand search campaign. Monthly economics review. | Funnel split within ranges. Search terms reviewed weekly. Monthly review done. |
 | 31 to 60 | Creator and UGC pipeline: brief 4 to 10 creators a month. 70/30 iterate vs new. Site testing program: one test running at all times. Email: 1 to 2 campaigns a week with segmentation. | Creative velocity of 8+ new ads a week. One site test called per fortnight. |
 | 61 to 90 | Plan the next big sale or launch (SOP 15). Demand planning for stock (SOP 17). Consider a second country or channel if profitable. Hire or outsource the first repeatable role (editor, VA, customer service). | 90-day promo calendar set. Stock cover in band. One role delegated with a written SOP. |
 
@@ -356,7 +356,7 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 | --- | --- | --- |
 | 1 to 30 | Cohort analysis by first-order month and by channel. Weekly demand snapshot (weeks of cover, ABC grades). Rolling 3 to 12 month cash forecast. Supplier terms review. | Cohort report live. Cash forecast live. One supplier term improved. |
 | 31 to 60 | Advanced creative: dedicated test campaign, partnership ads with creators, catalog video, new formats from the Trends feed. Google: margin-tier campaigns, new vs returning segmentation, Demand Gen tests. Loyalty only if repeat rate is above 15 to 20%. | Two new channels or formats tested with clear results. |
-| 61 to 90 | Org chart for the next 12 months. Outcome-based job descriptions. Six-week priority cycles. Pre-loaded year plan (revenue target, back-solved stock and marketing). | Year plan signed off. Next two hires planned with work-sample tests. |
+| 61 to 90 | Org chart for the next 12 months. Outcome-based job descriptions. Six-week priority cycles. A full-year plan built in advance (revenue target, with stock and marketing worked back from it). | Year plan signed off. Next two hires planned with work-sample tests. |
 
 ---
 

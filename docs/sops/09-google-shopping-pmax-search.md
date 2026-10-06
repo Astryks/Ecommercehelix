@@ -62,8 +62,8 @@ AI Max for Search and for Shopping, query-matched text, final URL expansion and 
 | Helix can do (with approval) | The user does |
 | --- | --- |
 | Read account, feed diagnostics, search terms (read-only) | Approve structure and targets |
-| Draft negatives lists, feed title rewrites, new campaigns (paused) | Approve and publish |
-| Adjust budgets and targets within cap | Own billing and account verification |
+| Draft negatives lists and feed title rewrites (with approval); build new campaigns as paused drafts | Approve; launch new campaigns yourself |
+| Prepare budget and target ROAS changes with exact values | Make the change in Google Ads; own billing and verification |
 | Weekly Google summary in the report | Decide on new channels |
 
 **Related:** SOP 02, 05.

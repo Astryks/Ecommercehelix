@@ -2,7 +2,9 @@
 
 **ecommercehelix.com**
 
-Ecommerce Helix is a growth copilot for online store owners. You paste your store URL. Helix audits the store, scores it, and builds a short plan for today and this week. Each day you get at most three tasks. Each task says why it matters, how to do it, and how long it takes. You can do the task yourself with a step-by-step guide, or press **Do it for me**. Helix then prepares the change and asks for your approval before it touches anything.
+*Grow your e-commerce business a little every day.*
+
+Ecommerce Helix is a growth copilot for online store owners. You paste your store URL. Helix keeps auditing the store, the ad accounts, email and social profiles, and connects the dots (is it the ad, the page, the offer or the checkout?). Every day you get **one short lesson, one topic and one clear action**, plus up to two things Helix noticed. You can do it yourself with a step-by-step guide, or say **I'll do it for you**. Helix then prepares the work and asks for your approval. In ad accounts it builds **paused drafts** and you press Launch: Helix never turns on spend.
 
 Think of it as a good ad agency account manager who never sleeps. It watches your numbers, tells you what to fix first, shows you which ad formats are working right now, and keeps a roadmap of what it can take off your plate. It does not take over without asking. You keep oversight and the final call on every change, every dollar of ad spend and every email that goes out.
 
@@ -28,9 +30,9 @@ Small improvements to traffic, conversion, order value and margin multiply toget
 
 | Plan | Price | What you get |
 | --- | --- | --- |
-| Free | $0 | 3 store audits and 3 daily plans a month. Guides only, no bot actions. |
-| Starter | $29/mo | Daily plans, approval queue, one ad platform (Meta or Google), about $3 of AI usage included at cost. |
-| Growth | $59/mo | Meta and Google, email and SMS flows, scorecards and weekly reports, about $8 of AI usage included at cost. |
+| Free | $0 | Daily programme Days 1 to 17, monthly site audit, manual scorecard, Guide me ad builder, full Learn library. |
+| Starter | $29/mo | Days 1 to 52, "I'll do it for you" with approval, daily Insights, one ad platform (Meta or Google) with paused-draft campaign builds, about $3 of AI usage included at cost. |
+| Growth | $59/mo | All 64 days, Meta and Google, email and SMS flows drafted and set up after approval, weekly report, about $8 of AI usage included at cost. |
 | AI wallet | prepaid | Extra AI work billed at 2x provider cost. Stops at a $0 balance. Never auto-charges. |
 
 Ad spend always runs on your own ad accounts and your own card. Helix never resells media. Full unit economics: [docs/pricing.md](docs/pricing.md).
@@ -39,6 +41,11 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 
 | Doc | What it covers |
 | --- | --- |
+| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 21 modules of original lessons, checklists, examples and self-checks (also served in the app at /learn). |
+| [docs/daily-curriculum.md](docs/daily-curriculum.md) | The 64-day programme: one lesson, one topic, one action per day, ordered by store stage (generated). |
+| [docs/audit-engine.md](docs/audit-engine.md) | Proactive audits: schedules, crawler, PageSpeed, API pulls, cross-diagnosis rules, Insights. |
+| [docs/email-automation.md](docs/email-automation.md) | Nine email and SMS flows with draft copy; suggest, draft, approve, set up. |
+| [docs/execution-model.md](docs/execution-model.md) | Draft & you launch (paused drafts, user launches) and Guide me modes. What Helix may and may not do. |
 | [docs/compound-daily-plan.md](docs/compound-daily-plan.md) | The operating system: daily loop, weekly and monthly rhythm, 90-day roadmaps by store stage, thresholds and decision rules. |
 | [docs/product-design.md](docs/product-design.md) | Screens, wireframes, onboarding, approval flow, trends feed, reports, chat, engagement, data model and agent architecture. |
 | [docs/pricing.md](docs/pricing.md) | Tiers, per-action cost estimates, margin proof, guardrails so no step loses money. |
@@ -73,17 +80,58 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 
 1. **Profit first.** The north star is daily contribution profit, not revenue or platform ROAS.
 2. **Fix the real constraint.** Ads only fix ad problems. Helix diagnoses before it prescribes.
-3. **Ask before acting.** Every write action (ads, site, email) goes through an approval card with a preview, a cost estimate, a spend cap and an undo path.
-4. **Extremely easy to follow.** Three tasks a day at most, each with a time estimate and a checklist.
+3. **Ask before acting, never switch on spend.** Every write action (ads, site, email) goes through an approval card with a preview, a cost estimate and an undo path. Ad campaigns are created paused; the owner launches and makes budget changes.
+4. **Extremely easy to follow.** One lesson, one topic, one action a day, plus at most two insights.
 5. **Never lose money on a step.** Every AI action is costed before it runs. Free usage is hard-capped. Paid usage is prepaid.
 
 ## Stack (v1)
 
 Next.js on Vercel, Postgres, Stripe Billing, Vercel AI SDK with hosted LLMs and tool calling, SOPs as RAG documents. PWA push approvals in month 2. Native app later. No GPUs or custom model training in v1.
 
-## Status
+## The web app
 
-Docs-first. No application code yet. See [STATUS.md](STATUS.md).
+A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root and deploys to Vercel.
+
+| Area | Route | Status |
+| --- | --- | --- |
+| Marketing home, About, pricing, FAQ | `/`, `/about` | Real |
+| Learn (21 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
+| Sign-in (Google, email magic link, or demo login) | `/signin` | Real (Auth.js v5) |
+| Today: day N lesson + action, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |
+| Insights (proactive audit, cross-diagnosis) | `/dashboard/insights` | Rules engine real, signals EXAMPLE |
+| Approvals queue | `/dashboard/approvals` | Real; platform execution stubbed |
+| Daily scorecard (entry, CSV import, rollups, flags, sparklines, products) | `/dashboard/scorecard` | Real; syncs stubbed; example data until cleared |
+| Campaign tracker (scale / hold / refresh / kill) | `/dashboard/campaigns` | Rules real, campaigns EXAMPLE |
+| Campaign builder (Draft & you launch, Guide me) | `/dashboard/campaigns/new` | Guide me real; paused-draft push stubbed |
+| Email automation (9 flows with drafts) | `/dashboard/email` | Drafts real; Klaviyo/Shopify Email setup stubbed |
+| Ad Trends, Weekly report | `/dashboard/trends`, `/dashboard/report` | Seeded |
+| Plan & billing (Stripe Checkout + webhook) | `/dashboard/billing`, `/api/checkout`, `/api/stripe/webhook` | Real in test mode; instant plan switch in demo mode |
+
+### Run locally
+
+```bash
+npm install          # also runs prisma generate
+npm run dev          # http://localhost:3000
+```
+
+With no environment variables the app runs in **demo mode**: in-memory data (resets on restart), a demo login form, and plan changes without payment. A banner says so.
+
+To go live, copy `.env.example` to `.env.local` and set:
+
+| Variable | Purpose |
+| --- | --- |
+| `AUTH_SECRET` | Auth.js secret (`npx auth secret`) |
+| `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` | Google sign-in |
+| `AUTH_RESEND_KEY`, `EMAIL_FROM` | Email magic links (needs the database) |
+| `ALLOW_DEV_LOGIN` | `true` keeps the demo login on even with providers (never in production) |
+| `DATABASE_URL` | Postgres; then run `npm run db:push` |
+| `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` | Stripe test mode keys |
+| `STRIPE_PRICE_STARTER`, `STRIPE_PRICE_GROWTH` | Recurring price IDs |
+| `NEXT_PUBLIC_APP_URL` | Public URL used for redirects |
+
+Regenerate generated docs: `python3 scripts/build_curriculum.py` (curriculum JSON + doc) and `python3 scripts/build_email_doc.py`.
+
+See [STATUS.md](STATUS.md) for what is stubbed and the open questions.
 
 ## Independence note
 

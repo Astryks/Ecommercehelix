@@ -25,7 +25,7 @@
 - Brief sale creative: announcement, offer explainer, best sellers, gift guides, last chance.
 
 **1 to 2 weeks out**
-- Build sale campaigns separately from evergreen ones. Load creative into the Ad Vault.
+- Build sale campaigns separately from evergreen ones. Load creative into the build campaign.
 - Build the hype page (sign up for early access).
 - Clone abandonment flows into sale versions.
 - Test discount logic and gift thresholds on the live store.

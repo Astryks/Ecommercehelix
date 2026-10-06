@@ -24,11 +24,11 @@ Use Meta's audience segment settings (new, engaged, existing customers) so repor
 | Daily Meta spend | Campaigns |
 | --- | --- |
 | Under $100 | 1 Cold (broad, Advantage+ sales or manual broad) + 1 Warm. Start around 70 to 80% Cold. |
-| $100 to $500 | Cold, Mixed, Warm, plus a paused **Ad Vault** campaign for staging new ads |
+| $100 to $500 | Cold, Mixed, Warm, plus a paused **build campaign** for staging new ads |
 | $500 to $1,000 | Add a second Cold campaign with a different exclusion setting, or a separate testing campaign |
 | $1,000+ | Add campaigns per country or per major product line. Separate sale campaigns from evergreen ones during big events. |
 
-**Ad Vault.** A campaign that always stays off. Build every new ad there first, then duplicate into the live campaigns that need it. This avoids rebuilding the same ad several times and keeps naming consistent.
+**Build campaign.** A campaign that always stays off. Build every new ad there first, then duplicate into the live campaigns that need it. This avoids rebuilding the same ad several times and keeps naming consistent.
 
 **Naming.** Use a fixed pattern so humans and Helix can read the account at a glance:
 `[Layer]-[Type]-[Audience]-[Exclusions]-[Offer or BAU]` for campaigns, and
@@ -39,7 +39,7 @@ Use Meta's audience segment settings (new, engaged, existing customers) so repor
 1. Audit the current account: active campaigns, spend split, audiences, exclusions, frequency, learning status.
 2. Propose the target structure for the spend bracket. Show what stays, what merges, what pauses.
 3. Create audiences: website visitors (30/180 days), engagers, email list, purchasers (180 days, all time), and a 1% to 5% lookalike of purchasers if useful. Broad targeting is the default for Cold; test interests only after you have winning ads.
-4. Build the Ad Vault and load the best existing ads into it.
+4. Create a build campaign and load the best existing ads into it.
 5. Launch new campaigns with the best 4 to 8 proven ads each. Do not turn off the old structure the same day. Shift budget over 1 to 2 weeks in steps of no more than 20% a day.
 6. Set up saved columns (SOP 06).
 
@@ -57,10 +57,10 @@ Use Meta's audience segment settings (new, engaged, existing customers) so repor
 | Helix can do (with approval) | The user does |
 | --- | --- |
 | Audit structure and propose changes (read-only) | Approve the target structure |
-| Create audiences, the Ad Vault and draft campaigns, all paused | Review drafts and press Approve to publish |
-| Change budgets within the user's daily spend cap | Set the spend cap and payment method in Meta |
+| Create audiences, a build campaign and draft campaigns in your account, all paused | Review the drafts in Ads Manager and press Launch yourself |
+| Prepare budget changes (exact new value and a deep link) | Make every budget change on live campaigns yourself; set the spend cap and payment method |
 | Rename campaigns and ads to the naming pattern | Confirm business verification and policy issues |
 
-**Guardrails:** Helix never creates a campaign that is live on creation, never raises total daily spend above the user's cap, and logs every change with a one-tap revert.
+**Guardrails:** Helix never turns on spend. Everything it creates is paused, it never edits budgets on live campaigns, and it logs every change with a one-tap revert. See [Execution model](../execution-model.md). Without a connected account, Helix runs in Guide me mode: structures, original example ads and a click-by-click build checklist.
 
 **Related:** SOP 06, 07.
