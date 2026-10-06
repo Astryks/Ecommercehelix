@@ -1,0 +1,24 @@
+# Private research and source material never goes in this public repo
+research/
+transcripts/
+**/research/
+**/transcripts/
+*.transcript.txt
+
+# App
+node_modules/
+.next/
+.vercel/
+dist/
+coverage/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
