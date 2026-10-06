@@ -139,7 +139,7 @@ To go live, copy `.env.example` to `.env.local` and set:
 | `AUTH_SECRET` | Auth.js secret (`npx auth secret`) |
 | `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` | Google sign-in |
 | `AUTH_RESEND_KEY`, `EMAIL_FROM` | Email magic links (needs the database) |
-| `ALLOW_DEV_LOGIN` | `true` keeps the demo login on even with providers (never in production) |
+| `ALLOW_DEV_LOGIN` | `true` keeps the demo login on next to real providers, in local development only (ignored in production). The demo login is on automatically while no Google or Resend login is configured, and every demo sign-in creates a new, isolated test account labelled "Demo account" |
 | `DATABASE_URL` | Postgres; then run `npm run db:push` |
 | `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` | Stripe test mode keys |
 | `STRIPE_PRICE_STARTER`, `STRIPE_PRICE_GROWTH` | Recurring price IDs |

@@ -5,6 +5,7 @@ import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Set
 import { isoDay, addDays } from "./dates";
 import { toTrack, type TrackId } from "./tracks";
 import { toCountry, type Country } from "./seasons";
+import { isDemoUserId, mayLinkByEmail } from "./demo-auth";
 
 /**
  * Data access with two backends:
@@ -48,8 +49,9 @@ export async function ensureUser(id: string, email: string, name: string): Promi
     return id;
   }
   let user = await prisma.user.findUnique({ where: { id } });
-  if (!user && email) user = await prisma.user.findUnique({ where: { email } });
-  if (!user) user = await prisma.user.create({ data: { id, email: email || null, name } });
+  // Never link a demo session to an existing user by email (see src/lib/demo-auth.ts).
+  if (!user && mayLinkByEmail(id, email)) user = await prisma.user.findUnique({ where: { email } });
+  if (!user) user = await prisma.user.create({ data: { id, email: email || null, name, isDemo: isDemoUserId(id) } });
   const sub = await prisma.subscription.findUnique({ where: { userId: user.id } });
   if (!sub) {
     await prisma.subscription.create({ data: { userId: user.id } });

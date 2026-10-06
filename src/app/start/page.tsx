@@ -6,6 +6,8 @@ import { Logo } from "@/components/Logo";
 import { CountryPicker, TrackPicker } from "@/components/TrackPicker";
 import { ensureUser, getAccount } from "@/lib/repo";
 import { finishOnboarding } from "./actions";
+import { DemoAccountNotice } from "@/components/DemoAccountNotice";
+import { isDemoUserId } from "@/lib/demo-auth";
 
 export const dynamic = "force-dynamic";
 
@@ -18,6 +20,8 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
   const id = await ensureUser(s.user.id, s.user.email ?? "", s.user.name ?? "");
   const acct = await getAccount(id);
   return (
+    <>
+    {isDemoUserId(id) && <DemoAccountNotice />}
     <main className="min-h-screen bg-mist px-5 py-10">
       <div className="mx-auto max-w-4xl">
         <Link href="/"><Logo size={30} /></Link>
@@ -36,5 +40,6 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
         </form>
       </div>
     </main>
+    </>
   );
 }

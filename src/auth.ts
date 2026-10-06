@@ -5,12 +5,15 @@ import Credentials from "next-auth/providers/credentials";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { hasDb, prisma } from "@/lib/db";
 
-const hasGoogle = Boolean(process.env.AUTH_GOOGLE_ID && process.env.AUTH_GOOGLE_SECRET);
-const hasEmail = Boolean(hasDb && process.env.AUTH_RESEND_KEY);
+import { authProviderFlags, createDemoIdentity, isDemoUserId } from "@/lib/demo-auth";
 
-/** Dev login is on when no real provider is configured, or explicitly enabled. Never use in production with real users. */
-export const devLoginEnabled = process.env.ALLOW_DEV_LOGIN === "true" || (!hasGoogle && !hasEmail);
-export const authProviders = { google: hasGoogle, email: hasEmail, dev: devLoginEnabled };
+/**
+ * Demo login is on only while no real provider (Google or Resend magic links) is configured.
+ * Each demo sign-in creates a new isolated test user; see src/lib/demo-auth.ts.
+ */
+export const authProviders = authProviderFlags(process.env);
+const { google: hasGoogle, email: hasEmail } = authProviders;
+export const devLoginEnabled = authProviders.dev;
 
 const providers: NextAuthConfig["providers"] = [];
 if (hasGoogle) providers.push(Google);
@@ -19,12 +22,12 @@ if (devLoginEnabled)
   providers.push(
     Credentials({
       id: "dev",
-      name: "Demo login",
-      credentials: { email: { label: "Email" }, name: { label: "Name" } },
+      name: "Demo account",
+      credentials: { name: { label: "Name" } },
+      // Ignores any email sent with the form: a demo login always gets a brand new test user.
       authorize: async (c) => {
-        const email = String(c?.email ?? "").trim().toLowerCase() || "demo@helix.local";
-        const name = String(c?.name ?? "").trim() || email.split("@")[0];
-        return { id: "dev-" + email.replace(/[^a-z0-9]/g, "-"), email, name };
+        const { id, email, name } = createDemoIdentity(c?.name);
+        return { id, email, name };
       },
     }),
   );
@@ -42,7 +45,10 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       return token;
     },
     session({ session, token }) {
-      if (session.user) session.user.id = (token.uid as string) ?? token.sub ?? "";
+      if (session.user) {
+        session.user.id = (token.uid as string) ?? token.sub ?? "";
+        session.user.isDemo = isDemoUserId(session.user.id);
+      }
       return session;
     },
   },
