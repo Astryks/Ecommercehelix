@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Emails and texts that send themselves when someone does something, plus regular newsletters.
 >
 > **Why it matters:** Your list is free to reach. Good automatic emails earn money every day while you sleep.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 10.1: Sign-up forms
+<!-- stage:convert -->
 
 A sign-up form (often a pop-up) asks visitors for their email or phone number.
 
@@ -47,6 +50,7 @@ A sign-up form (often a pop-up) asks visitors for their email or phone number.
 6. **Test one thing at a time.** Aim for more than 3 sign-ups per 100 visitors. With a strong offer, 6 to 10 is possible.
 
 ## Lesson 10.2: The five core flows and extras
+<!-- stage:convert -->
 
 A flow is a series of emails or texts that sends itself when someone does something. Set up these five first. Timings are in [SOP 13](../sops/13-email-sms-flows.md).
 
@@ -59,6 +63,7 @@ A flow is a series of emails or texts that sends itself when someone does someth
 **Then add these:** win-back (people who stopped buying), back in stock, price drop, replenishment (time to reorder), VIP (best customers), birthday, sunset (removing people who never open), review request, and a cross-sell after the first purchase.
 
 ## Lesson 10.3: Writing emails that get clicks
+<!-- stage:convert -->
 
 1. Mix plain-text emails from the founder with designed emails.
 2. Plain-text style emails can still include images.
@@ -67,6 +72,7 @@ A flow is a series of emails or texts that sends itself when someone does someth
 5. Have one main button (call to action) per email.
 
 ## Lesson 10.4: Segments
+<!-- stage:grow -->
 
 A segment is a group of people on your list who share something. Send different emails to different groups.
 
@@ -83,6 +89,7 @@ A segment is a group of people on your list who share something. Send different 
 **Decision rule:** send most of your campaign emails to engaged segments. It keeps your emails out of spam folders.
 
 ## Lesson 10.5: Campaign cadence and ideas
+<!-- stage:grow -->
 
 A campaign email is a one-off email to your list (like a newsletter). Cadence means how often you send.
 
@@ -90,6 +97,7 @@ A campaign email is a one-off email to your list (like a newsletter). Cadence me
 2. **Ideas to send:** new arrivals, how-to tips, customer stories, behind the scenes, notes from the founder, gift guides, myth busting, customer photos and videos, seasonal moments, limited bundles, and short flash sales (keep these rare).
 
 ## Lesson 10.6: Reviewing performance
+<!-- stage:convert -->
 
 Check these numbers each month.
 
@@ -105,6 +113,7 @@ Check these numbers each month.
 3. Clicks but few orders: work on the page they land on.
 
 ## Lesson 10.7: A/B testing framework
+<!-- stage:convert -->
 
 1. Write down your guess (hypothesis). For example "a question in the subject line gets more opens".
 2. Change one thing only: the subject line, send time, offer or layout.
@@ -114,6 +123,7 @@ Check these numbers each month.
 6. Use the winner from then on.
 
 ## Lesson 10.8: Deliverability
+<!-- stage:convert -->
 
 Deliverability means your emails reach the inbox, not the spam folder.
 
@@ -125,6 +135,7 @@ Deliverability means your emails reach the inbox, not the spam folder.
 6. **Avoid spammy formatting** in sale emails: all caps, lots of exclamation marks, one big image with no text.
 
 ## Lesson 10.9: Platform costs
+<!-- stage:grow -->
 
 Email platforms often charge by the number of people (profiles) on your list.
 
@@ -133,6 +144,7 @@ Email platforms often charge by the number of people (profiles) on your list.
 3. If the cost per profile is more than they are worth to you, compare other platforms.
 
 ## Lesson 10.10: SMS
+<!-- stage:convert -->
 
 Text messages get read fast but cost more than email. Use them for big moments only.
 
@@ -143,6 +155,7 @@ Text messages get read fast but cost more than email. Use them for big moments o
 5. **Keep it short,** with one link.
 
 ## Lesson 10.11: WhatsApp and chat commerce
+<!-- stage:convert -->
 
 WhatsApp and similar chat apps work well where your customers already use them.
 
@@ -153,6 +166,7 @@ WhatsApp and similar chat apps work well where your customers already use them.
 5. Selling through chat works well for expensive products people want to ask about first.
 
 ## Lesson 10.12: Loyalty
+<!-- stage:grow -->
 
 A loyalty program rewards people who buy again.
 
@@ -163,6 +177,7 @@ A loyalty program rewards people who buy again.
 5. **Measure the change in repeat purchase rate,** not how many points you gave out.
 
 ## Lesson 10.13: Sale email and SMS schedule
+<!-- stage:convert -->
 
 Plan emails and texts for every big sale in this order.
 

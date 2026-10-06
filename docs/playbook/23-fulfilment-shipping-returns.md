@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How orders get packed, shipped and returned without eating your profit.
 >
 > **Why it matters:** Shipping and returns are often your biggest costs after the product. Late or lost parcels lose customers for good.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 23.1: Do you need a 3PL yet?
+<!-- stage:grow -->
 
 Packing orders yourself is cheap at first and expensive later, because your hours stop going into growth. A 3PL (a warehouse company that stores and ships for you) makes sense when packing takes more of your week than selling does.
 
@@ -51,6 +54,7 @@ Packing orders yourself is cheap at first and expensive later, because your hour
 **Self-check:** do you know your true cost per order today, including your time? Do your three quotes compare the same month of orders?
 
 ## Lesson 23.2: Moving to a 3PL without losing orders
+<!-- stage:grow -->
 
 Most moves go wrong in the handover week: stock counts do not match, barcodes are missing or orders get stuck between systems.
 
@@ -69,6 +73,7 @@ Most moves go wrong in the handover week: stock counts do not match, barcodes ar
 **Self-check:** did the warehouse count match what you sent? Did all three test orders arrive with tracking?
 
 ## Lesson 23.3: Shipping rates, carriers and delays
+<!-- stage:grow -->
 
 Shipping is often the second biggest cost after the product. Know it before you set prices and free shipping rules.
 
@@ -89,6 +94,7 @@ Shipping is often the second biggest cost after the product. Know it before you 
 **Self-check:** do you know your average shipping cost per order, and is it in your Helix numbers? Do you have a second carrier ready?
 
 ## Lesson 23.4: Shipping protection and lost or damaged parcels
+<!-- stage:grow -->
 
 Some parcels will go missing or arrive broken. Decide in advance who pays, how fast you fix it and whether you offer optional protection at checkout.
 
@@ -108,6 +114,7 @@ Some parcels will go missing or arrive broken. Decide in advance who pays, how f
 **Self-check:** do you know what lost and damaged parcels cost you last month? Is any protection fee opt-in and clearly priced?
 
 ## Lesson 23.5: Returns and exchanges that cost less
+<!-- stage:grow -->
 
 Every return costs you twice: the refund and the handling. Your goal is fewer returns and more exchanges, while always meeting the law.
 
@@ -128,6 +135,7 @@ Every return costs you twice: the refund and the handling. Your goal is fewer re
 **Self-check:** do you know your return rate and your top return reason? Does your policy meet the law in each country you sell to?
 
 ## Lesson 23.6: When a spreadsheet stops working for stock
+<!-- stage:grow -->
 
 A spreadsheet works for a handful of products. It breaks when you have many variants, more than one location, or purchase orders in transit.
 

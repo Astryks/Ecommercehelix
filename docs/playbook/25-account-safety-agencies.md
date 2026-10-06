@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Keep your ad accounts, store and email safe, and owned by you.
 >
 > **Why it matters:** A hacked or disabled ad account can stop your sales overnight or spend thousands of dollars in hours.
@@ -30,6 +32,7 @@
 ---
 
 ## Lesson 25.1: Lock down every account
+<!-- stage:grow -->
 
 One stolen password can cost more than a bad month of sales. Thieves target ad accounts because they can spend your money quickly.
 
@@ -48,6 +51,7 @@ One stolen password can cost more than a bad month of sales. Thieves target ad a
 **Self-check:** does every account have two-factor turned on with an app or key? Are there two admins you trust on each ad account?
 
 ## Lesson 25.2: Set up your Meta business the safe way
+<!-- stage:grow -->
 
 Meta keeps your ad accounts, Pages, pixel and people in a business portfolio (formerly Business Manager). Whoever owns the portfolio controls everything in it.
 
@@ -67,6 +71,7 @@ Meta keeps your ad accounts, Pages, pixel and people in a business portfolio (fo
 **Self-check:** is your ad account owned by your own portfolio? Is there a spending limit and a backup payment method?
 
 ## Lesson 25.3: When your ad account is disabled or restricted
+<!-- stage:grow -->
 
 Accounts get restricted for failed payments, policy flags, identity checks or unusual activity. Most cases can be fixed if you stay calm and follow Meta's process.
 
@@ -85,6 +90,7 @@ Accounts get restricted for failed payments, policy flags, identity checks or un
 **Self-check:** do you know where Account Quality is? Do you have other channels ready if ads pause for a week?
 
 ## Lesson 25.4: Hacked: the first hour
+<!-- stage:grow -->
 
 Speed matters. A hacked ad account can spend thousands in a few hours.
 
@@ -104,6 +110,7 @@ Speed matters. A hacked ad account can spend thousands in a few hours.
 **Self-check:** do you know who to call at your bank, and where the hacked page is, before anything happens?
 
 ## Lesson 25.5: Working with agencies, and leaving one
+<!-- stage:grow -->
 
 An agency can save time, but your accounts, data and history must stay yours. See also [Lesson 16.7](16-founder-team-productivity.md#lesson-167-agencies-vs-in-house).
 
@@ -122,6 +129,7 @@ An agency can save time, but your accounts, data and history must stay yours. Se
 **Self-check:** do you own every account in your list? Does your contract say so?
 
 ## Lesson 25.6: Trusted sender names for texts and emails
+<!-- stage:grow -->
 
 Phone networks and inbox providers now check that messages really come from you. Unregistered senders end up labelled or in spam.
 

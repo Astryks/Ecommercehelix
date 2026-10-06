@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** When to add TikTok, Pinterest and search, and how to be found by AI assistants.
 >
 > **Why it matters:** New channels can help, but only after Meta and Google are working. Add one at a time.
@@ -30,6 +32,7 @@
 ---
 
 ## Lesson 12.1: TikTok readiness
+<!-- stage:attract -->
 
 Get ready before you spend money on TikTok ads.
 
@@ -41,6 +44,7 @@ Get ready before you spend money on TikTok ads.
 **Decision rule:** only start TikTok ads once Meta and Google are profitable.
 
 ## Lesson 12.2: Structures by spend
+<!-- stage:attract -->
 
 | Daily spend | Setup |
 | --- | --- |
@@ -51,6 +55,7 @@ Get ready before you spend money on TikTok ads.
 **Budgets:** a campaign budget lets TikTok share money between ad groups. An ad group budget lets you control each test.
 
 ## Lesson 12.3: Spark ads and creators
+<!-- stage:attract -->
 
 Spark ads run normal TikTok posts (yours or a creator's) as ads. They keep the post's likes and comments.
 
@@ -60,6 +65,7 @@ Spark ads run normal TikTok posts (yours or a creator's) as ads. They keep the p
 Creator videos are the main fuel for TikTok ads. See Module 19.
 
 ## Lesson 12.4: Optimising TikTok
+<!-- stage:attract -->
 
 1. **Check every day or two.** TikTok ads get tired fast, sometimes in 3 to 4 days.
 2. **Watch early warning signs:** what each add to cart costs, cost per click, and how much of the video people watch. These get worse before cost per sale does.
@@ -69,6 +75,7 @@ Creator videos are the main fuel for TikTok ads. See Module 19.
 6. **Judge the channel by your total MER** (all ad spend ÷ all sales). A new channel usually starts at about 10% of your total ad budget.
 
 ## Lesson 12.5: TikTok search
+<!-- stage:attract -->
 
 Many people use TikTok like a search engine.
 
@@ -77,12 +84,14 @@ Many people use TikTok like a search engine.
 3. Make videos that answer common questions about your product type.
 
 ## Lesson 12.6: TikTok Shop
+<!-- stage:attract -->
 
 TikTok Shop lets people buy without leaving TikTok. It includes automated campaigns that aim for total sales (GMV), affiliate creators, and live shopping.
 
 **Decision rule:** check your margin after TikTok's commission and fees before you commit.
 
 ## Lesson 12.7: Pinterest
+<!-- stage:attract -->
 
 **Free (organic) Pinterest:**
 
@@ -100,6 +109,7 @@ TikTok Shop lets people buy without leaving TikTok. It includes automated campai
 **Measuring Pinterest:** people take longer to decide, so use longer attribution windows. Count sales after views and saves, not only clicks. Compare with your total MER.
 
 ## Lesson 12.8: SEO step by step
+<!-- stage:attract -->
 
 SEO means search engine optimisation: getting found in Google without paying for ads.
 
@@ -124,6 +134,7 @@ SEO means search engine optimisation: getting found in Google without paying for
 5. **Get mentioned on other sites:** brand mentions, press and partnerships.
 
 ## Lesson 12.9: AI search and agentic commerce
+<!-- stage:attract -->
 
 More shoppers now ask AI assistants (like ChatGPT, Gemini or Perplexity) what to buy. Some assistants can even shop for them. This is called agentic commerce.
 
@@ -134,6 +145,7 @@ More shoppers now ask AI assistants (like ChatGPT, Gemini or Perplexity) what to
 5. **Track visits from AI assistants** in Google Analytics.
 
 ## Lesson 12.10: Instagram shopping
+<!-- stage:attract -->
 
 1. Set up your shop in Meta Commerce Manager.
 2. Connect your product catalog and keep it in sync.

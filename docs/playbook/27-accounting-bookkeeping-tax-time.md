@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Keep clean books, record stock properly and make tax time a checklist.
 >
 > **Why it matters:** Messy books hide your real profit and make tax time slow and expensive.
@@ -33,6 +35,7 @@
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant before you act. Your structure, state and situation change the answer.
 
 ## Lesson 27.1: Choose your structure and your helpers
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -53,6 +56,7 @@ Your business structure changes how you pay tax and what you are personally liab
 **Self-check:** are your helpers registered? Do you know exactly what your monthly fee covers?
 
 ## Lesson 27.2: Connect your store to your books cleanly
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -74,6 +78,7 @@ Copying every order into your accounting software creates thousands of lines tha
 **Self-check:** do your clearing accounts fall back towards zero each month? Is every bank line reconciled?
 
 ## Lesson 27.3: Cost of goods and stock in your books
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -94,6 +99,7 @@ Stock you hold is an asset, not an expense, until it sells. Getting this right i
 **Self-check:** is stock on your balance sheet, not in expenses? When is your next full count?
 
 ## Lesson 27.4: Records and the monthly close
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -115,6 +121,7 @@ A short monthly routine keeps tax time simple and gives you numbers you can trus
 **Self-check:** did you close last month within two weeks of it ending? Is tax money in its own account?
 
 ## Lesson 27.5: End of financial year in Australia
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -134,6 +141,7 @@ The Australian financial year ends on 30 June. Helix puts these steps on your ca
 **Self-check:** is your stocktake date in your calendar? Do you know your tax return due date?
 
 ## Lesson 27.6: Year end and tax season in the US
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a CPA or enrolled agent.
 

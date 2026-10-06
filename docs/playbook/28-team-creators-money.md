@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Hire help, pay creators and suppliers safely, choose funding wisely and look after yourself.
 >
 > **Why it matters:** The right help buys back your time, and the wrong deal or funding can cost you for years.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 28.1: Your first hire
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant, and the official sources below.
 
@@ -52,6 +55,7 @@ Your first hire should give you back the hours you spend on work that does not n
 **Self-check:** can you name the 10 hours a week your first hire would take off you? Have you checked employee versus contractor?
 
 ## Lesson 28.2: Working well with a virtual assistant
+<!-- stage:grow -->
 
 A remote assistant can be a great first hire if the work is written down and access is safe.
 
@@ -70,6 +74,7 @@ A remote assistant can be a great first hire if the work is written down and acc
 **Self-check:** is every task they do written down? Do they have their own logins?
 
 ## Lesson 28.3: Paying creators: agreements, disclosure and tax
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -91,6 +96,7 @@ Creators are paid in different ways: free product, a flat fee, commission, or a 
 **Self-check:** does every creator deal have written usage rights and dates? Are all posts labelled?
 
 ## Lesson 28.4: Paying overseas suppliers and managing currency
+<!-- stage:grow -->
 
 > **General information, not financial advice.** Check with your accountant or bank.
 
@@ -110,6 +116,7 @@ When you pay in another currency, the exchange rate margin can cost more than th
 **Self-check:** do you know the total cost of your last supplier payment? Do you confirm bank details by phone?
 
 ## Lesson 28.5: Funding growth: comparing financing offers
+<!-- stage:grow -->
 
 > **General information, not financial advice.** Check with your accountant before you borrow.
 
@@ -129,6 +136,7 @@ Revenue-based financing, platform cash advances and bank loans can fund stock fo
 **Self-check:** do you know the true cost of each offer and what you would buy with it? Can you still pay it back if sales drop by a quarter?
 
 ## Lesson 28.6: Keep tool and subscription costs in check
+<!-- stage:grow -->
 
 Apps and tools creep up quietly. Many charge by contacts, orders or users, so the bill grows with you even when value does not.
 
@@ -146,6 +154,7 @@ Apps and tools creep up quietly. Many charge by contacts, orders or users, so th
 **Self-check:** do you know your total monthly tool spend? When did you last clean your email list?
 
 ## Lesson 28.7: Founder load: stress, burnout and getting help
+<!-- stage:grow -->
 
 Running a store can be lonely, and money worries can keep you awake. Looking after yourself is part of running the business. See also [Lesson 16.8](16-founder-team-productivity.md#lesson-168-resilience).
 
@@ -165,6 +174,7 @@ Running a store can be lonely, and money worries can keep you awake. Looking aft
 **Self-check:** when did you last take a full day off? Who could you call this week?
 
 ## Lesson 28.8: Should you sell on Amazon?
+<!-- stage:grow -->
 
 Amazon can add sales, but it has its own fees, rules and competition. Decide with numbers, not fear of missing out.
 

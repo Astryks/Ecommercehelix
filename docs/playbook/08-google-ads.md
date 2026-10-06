@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to show your products on Google when people search for them.
 >
 > **Why it matters:** People on Google are already looking to buy. It catches demand your other ads create.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 8.1: Foundations
+<!-- stage:attract -->
 
 Do this once before you spend money. Tick each item.
 
@@ -43,6 +46,7 @@ Do this once before you spend money. Tick each item.
 7. **Your naming pattern is used** (see Module 6, Lesson 6.7).
 
 ## Lesson 8.2: Product data
+<!-- stage:attract -->
 
 Shopping ads use your product list (feed). Better product data means better ads.
 
@@ -55,6 +59,7 @@ Shopping ads use your product list (feed). Better product data means better ads.
 7. **Group your products** into sets you want to bid on differently (for example best sellers in one group).
 
 ## Lesson 8.3: Campaign structures
+<!-- stage:attract -->
 
 Pick the setup that matches your size. The drawing below shows how to start a Performance Max campaign.
 
@@ -75,6 +80,7 @@ Pick the setup that matches your size. The drawing below shows how to start a Pe
 <!-- /guide:google-1-performance-max -->
 
 ## Lesson 8.4: Keyword research
+<!-- stage:attract -->
 
 Keywords are the search words you want your ads to show for.
 
@@ -85,6 +91,7 @@ Keywords are the search words you want your ads to show for.
 5. **Keep shared lists of negative keywords.** These are words you never want to show up for (like "free" or "jobs").
 
 ## Lesson 8.5: Writing search ads
+<!-- stage:attract -->
 
 1. **Headlines.** Write up to 15. Mix: product plus benefit, the offer, proof (reviews, years in business), urgency, and your brand. Pin 1 or 2 so they always show.
 2. **Descriptions.** Give reasons to buy, your shipping and returns, and a call to action.
@@ -95,6 +102,7 @@ Keywords are the search words you want your ads to show for.
    - Images.
 
 ## Lesson 8.6: Target ROAS
+<!-- stage:grow -->
 
 Target ROAS tells Google how many dollars of sales you want for each $1 of ads.
 
@@ -104,12 +112,14 @@ Target ROAS tells Google how many dollars of sales you want for each $1 of ads.
 4. **Google updates its bidding from time to time.** Check your results again after each update.
 
 ## Lesson 8.7: New customer acquisition
+<!-- stage:attract -->
 
 1. **Upload your customer list** so Google knows who has already bought.
 2. **Choose one setting:** bid higher for new customers, or show ads only to new customers.
 3. **Decision rule:** accept a lower ROAS on new-customer campaigns only if those customers come back and buy again (their lifetime value supports it).
 
 ## Lesson 8.8: Weekly optimisation
+<!-- stage:attract -->
 
 Spend 10 to 20 minutes on this once a week. The drawing below shows how to block wasted searches.
 
@@ -126,6 +136,7 @@ Spend 10 to 20 minutes on this once a week. The drawing below shows how to block
 <!-- /guide:google-2-block-wasted-searches -->
 
 ## Lesson 8.9: Demand Gen and YouTube
+<!-- stage:attract -->
 
 Demand Gen campaigns show short videos and images across YouTube, Discover (the Google app feed) and Gmail.
 
@@ -133,12 +144,14 @@ Demand Gen campaigns show short videos and images across YouTube, Discover (the 
 2. Judge them by view-through results (people who saw the ad and bought later), numbers you can compare with other platforms, and your total MER.
 
 ## Lesson 8.10: Seasonality and sales
+<!-- stage:attract -->
 
 1. **Use a seasonality adjustment** for the first 1 to 2 days of a big sale. Tell Google to expect about 50% higher conversion rate. Remove it afterwards.
 2. **Add promotion assets and sale prices** to your product feed.
 3. **Raise budgets slowly before the event,** so campaigns are not short of money when the sale starts.
 
 ## Lesson 8.11: AI-driven changes in 2026
+<!-- stage:attract -->
 
 Google now adds more AI features automatically: AI Max for Search and Shopping, AI-written ad text, final URL expansion (Google picks which page to send people to) and ads in AI Mode answers.
 

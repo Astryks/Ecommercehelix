@@ -6,6 +6,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Which apps and tools you need at each stage, and which to skip.
 >
 > **Why it matters:** Too many apps slow your store and cost money. Fewer, better tools win.
@@ -26,6 +28,7 @@
 ---
 
 ## Lesson 18.1: The stack by need and stage
+<!-- stage:grow -->
 
 Stages used below:
 
@@ -55,6 +58,7 @@ Stages used below:
 | Packaging | A sustainable packaging supplier | Early |
 
 ## Lesson 18.2: Rules for adding a tool
+<!-- stage:grow -->
 
 Follow these four steps before you add any app.
 

@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Ways to collect more emails and followers you can reach for free.
 >
 > **Why it matters:** A bigger list makes every launch and sale cheaper, because you do not have to pay to reach them.
@@ -30,6 +32,7 @@
 ---
 
 ## Lesson 11.1: Why build the list
+<!-- stage:attract -->
 
 Your email and SMS list is an audience you own. You can reach it for free, any time.
 
@@ -37,6 +40,7 @@ Your email and SMS list is an audience you own. You can reach it for free, any t
 - **The big idea:** collect emails when ads are cheap (for example in quiet months). Then sell to those people when ads are expensive (for example around Black Friday). This is one of the most reliable ways to grow.
 
 ## Lesson 11.2: Competition types
+<!-- stage:attract -->
 
 A competition (giveaway) can add thousands of subscribers quickly. There are four kinds.
 
@@ -50,6 +54,7 @@ A competition (giveaway) can add thousands of subscribers quickly. There are fou
 **Decision rule:** choose a prize that only your kind of customer wants: your own products, or an experience linked to them. Never a general gadget like a phone or a gift card, which attracts prize hunters.
 
 ## Lesson 11.3: Running a competition
+<!-- stage:attract -->
 
 1. **Pick the type and the prize.** Check your local rules for promotions (some places need a permit).
 2. **Build the entry form.** Put one on a page in your store, and make a pop-up version too.
@@ -60,10 +65,12 @@ A competition (giveaway) can add thousands of subscribers quickly. There are fou
 7. **Measure the result:** cost per email, and how many entrants buy within 90 days.
 
 ## Lesson 11.4: Fill the funnel before peaks
+<!-- stage:attract -->
 
 Start growing your list 6 to 10 weeks before a big sale. Combine it with an excitement page (a page teasing the sale) and an early-access list.
 
 ## Lesson 11.5: Social growth tactics
+<!-- stage:attract -->
 
 1. Put a small ad budget behind your best free Reels (boost them).
 2. Sell through replies in direct messages.

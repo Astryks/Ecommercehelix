@@ -6,6 +6,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** A careful way to start selling in other countries.
 >
 > **Why it matters:** New countries can add growth, but only if shipping, prices and ads make sense there.
@@ -27,6 +29,7 @@
 ---
 
 ## Lesson 15.1: Is there demand?
+<!-- stage:grow -->
 
 Before you expand, check that people in the new country want your products.
 
@@ -38,6 +41,7 @@ Before you expand, check that people in the new country want your products.
 **Decision rule:** expand first to the country that already buys from you.
 
 ## Lesson 15.2: Recalculate unit economics per country
+<!-- stage:grow -->
 
 Unit economics means what each order earns after its costs. These change in a new country.
 
@@ -46,11 +50,13 @@ Unit economics means what each order earns after its costs. These change in a ne
 3. Include duties and import fees per order.
 
 ## Lesson 15.3: Pricing
+<!-- stage:grow -->
 
 1. **Set a local price,** not just your price converted. Use the local currency and round to normal local price points (for example 49 euros, not 47.83).
 2. **Decide who pays the duties.** Delivered duty paid (DDP) means you include duties in the price, so there is no surprise bill at the door. It usually sells better.
 
 ## Lesson 15.4: Product and promotion
+<!-- stage:grow -->
 
 Change these for each country:
 
@@ -61,6 +67,7 @@ Change these for each country:
 5. Your messages and spelling.
 
 ## Lesson 15.5: Shipping options and logistics
+<!-- stage:grow -->
 
 | Option | When to use it |
 | --- | --- |
@@ -74,11 +81,13 @@ Change these for each country:
 2. Fees that couriers charge per order to collect duties and taxes.
 
 ## Lesson 15.6: One store or an expansion store?
+<!-- stage:grow -->
 
 1. **One store with multi-market settings** (Shopify Markets) is simpler. Start here.
 2. **A separate store for a region** helps when the products, prices, content or apps need to be very different.
 
 ## Lesson 15.7: Reporting and campaigns
+<!-- stage:grow -->
 
 1. **Make a report that shows MER by country** (ad spend ÷ sales, for each country).
 2. **Campaigns:**

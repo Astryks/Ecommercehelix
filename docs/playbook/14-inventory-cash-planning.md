@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to keep the right amount of stock and enough cash in the bank.
 >
 > **Why it matters:** Running out of stock stops sales. Too much stock ties up cash you need for ads.
@@ -29,6 +31,7 @@
 ---
 
 ## Lesson 14.1: Range planning
+<!-- stage:grow -->
 
 Your range is the set of products you sell. Plan it on purpose.
 
@@ -39,6 +42,7 @@ Your range is the set of products you sell. Plan it on purpose.
 5. **Forecast sensibly.** Forecast core products from their sales history. Forecast new products from similar past launches.
 
 ## Lesson 14.2: The weekly stock snapshot
+<!-- stage:grow -->
 
 Once a week, check your stock in one table. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
 
@@ -50,6 +54,7 @@ Once a week, check your stock in one table. [SOP 17](../sops/17-inventory-cash-p
 **Decision rule:** do not run ads hard on a product that is about to sell out.
 
 ## Lesson 14.3: Five cash levers
+<!-- stage:grow -->
 
 Stock ties up cash. Use these five levers to free it.
 
@@ -62,6 +67,7 @@ Stock ties up cash. Use these five levers to free it.
 | Sell it faster | Promote products with too much cover, bundles, clearance with gentle tools (gifts, bundles) |
 
 ## Lesson 14.4: Cash flow forecast
+<!-- stage:grow -->
 
 A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank.
 
@@ -78,6 +84,7 @@ A cash flow forecast shows how much cash you will have each month. Profit is not
 4. **Put aside a share of profit for tax.** Ask your accountant how much.
 
 ## Lesson 14.5: The debt decision
+<!-- stage:grow -->
 
 **Decision rule:** only borrow when both are true:
 
@@ -89,6 +96,7 @@ A cash flow forecast shows how much cash you will have each month. Profit is not
 **Bad reason to borrow:** to cover losses.
 
 ## Lesson 14.6: Money mindset and finance help
+<!-- stage:grow -->
 
 1. Keep personal and business money in separate accounts.
 2. Pay yourself a set amount each month.
@@ -96,6 +104,7 @@ A cash flow forecast shows how much cash you will have each month. Profit is not
 4. Consider a part-time finance expert (a fractional CFO) once sales are bigger, or before you raise money from investors.
 
 ## Lesson 14.7: The year plan
+<!-- stage:grow -->
 
 1. **Find your growth rate.** Compare the last 12 months with the 12 months before.
 2. **Set a sales target for each month,** including your big sales peaks.
@@ -104,6 +113,7 @@ A cash flow forecast shows how much cash you will have each month. Profit is not
 5. **Review the plan** every 6 months.
 
 ## Lesson 14.8: Finding and vetting suppliers
+<!-- stage:grow -->
 
 A good supplier makes a good product on time at a fair price, and tells you early when something goes wrong. Choose carefully, because changing supplier mid-season is slow and risky.
 
@@ -162,6 +172,7 @@ A good supplier makes a good product on time at a fair price, and tells you earl
 > Helix keeps your suppliers, minimums, lead times and terms on the [Suppliers and stock page](/dashboard/stock).
 
 ## Lesson 14.9: Reorder points, lead times and stock-outs
+<!-- stage:grow -->
 
 Running out of a best seller loses sales and pauses your ads. Ordering too much ties up cash. A reorder point tells you exactly when to order.
 

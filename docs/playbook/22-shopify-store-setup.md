@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Step by step, how to set up a Shopify store that is ready to take real orders.
 >
 > **Why it matters:** A clear, fast, trustworthy store makes every ad dollar go further. Mistakes in tax, payments or tracking are hard to fix later.
@@ -33,6 +35,7 @@
 ---
 
 ## Lesson 22.1: Plan before you build
+<!-- stage:convert -->
 
 A store takes days to build and minutes to judge. Plan first so you build only what a buyer needs.
 
@@ -51,6 +54,7 @@ A store takes days to build and minutes to judge. Plan first so you build only w
 **Self-check:** can you say in one sentence what you sell and who it is for? Do you know your cost per order?
 
 ## Lesson 22.2: Domain and email
+<!-- stage:convert -->
 
 Your domain is your web address. A store on its own domain looks more trustworthy than one on the free `myshopify.com` address.
 
@@ -65,6 +69,7 @@ Your domain is your web address. A store on its own domain looks more trustworth
 **Self-check:** does typing your domain open your store? Do emails come from your own domain?
 
 ## Lesson 22.3: Choose and set up a theme
+<!-- stage:convert -->
 
 The theme is the design of your store. A fast, simple theme beats a fancy slow one.
 
@@ -85,6 +90,7 @@ The theme is the design of your store. A fast, simple theme beats a fancy slow o
 <!-- /guide:shopify-3-theme-editor -->
 
 ## Lesson 22.4: Build the home page
+<!-- stage:convert -->
 
 The home page should answer three questions in a few seconds: what is this, is it for me, and why should I trust it.
 
@@ -109,6 +115,7 @@ The home page should answer three questions in a few seconds: what is this, is i
 **Self-check:** ask someone new to look at your home page on a phone for 5 seconds. Can they say what you sell?
 
 ## Lesson 22.5: Product pages: titles, photos and descriptions
+<!-- stage:convert -->
 
 Most buying decisions happen here. Answer every worry before the buyer has to ask.
 
@@ -131,6 +138,7 @@ Most buying decisions happen here. Answer every worry before the buyer has to as
 <!-- /guide:shopify-4-add-product -->
 
 ## Lesson 22.6: Variants and inventory
+<!-- stage:convert -->
 
 Variants are the options of one product, such as size or colour. Inventory is how many you have.
 
@@ -146,6 +154,7 @@ Variants are the options of one product, such as size or colour. Inventory is ho
 **Self-check:** does every variant have a photo, SKU, stock count, cost and weight?
 
 ## Lesson 22.7: Reviews
+<!-- stage:convert -->
 
 People trust other customers more than they trust you. A review app collects and shows reviews for you.
 
@@ -160,6 +169,7 @@ People trust other customers more than they trust you. A review app collects and
 **Self-check:** is your rating visible near the top of every product page?
 
 ## Lesson 22.8: Collections, menus and search
+<!-- stage:convert -->
 
 Collections are groups of products. Menus and search help people find them quickly.
 
@@ -180,6 +190,7 @@ Collections are groups of products. Menus and search help people find them quick
 <!-- /guide:shopify-5-menus -->
 
 ## Lesson 22.9: Shipping zones, rates and a free-shipping amount
+<!-- stage:convert -->
 
 Surprise shipping costs are one of the main reasons people leave at checkout. Make shipping clear and simple.
 
@@ -203,6 +214,7 @@ Surprise shipping costs are one of the main reasons people leave at checkout. Ma
 <!-- /guide:shopify-2-free-shipping -->
 
 ## Lesson 22.10: Taxes: GST and sales tax basics
+<!-- stage:convert -->
 
 > **General information, not tax or legal advice.** Tax rules change and depend on your situation. Check with a registered tax agent or accountant before you decide.
 
@@ -229,6 +241,7 @@ Surprise shipping costs are one of the main reasons people leave at checkout. Ma
 <!-- /guide:shopify-6-taxes -->
 
 ## Lesson 22.11: Payments
+<!-- stage:convert -->
 
 Let people pay the way they like. Every extra step at checkout loses buyers.
 
@@ -249,6 +262,7 @@ Let people pay the way they like. Every extra step at checkout loses buyers.
 <!-- /guide:shopify-7-payments -->
 
 ## Lesson 22.12: Policies and legal pages
+<!-- stage:convert -->
 
 Clear policies build trust and keep you within the law. Write them in plain words.
 
@@ -269,6 +283,7 @@ Clear policies build trust and keep you within the law. Write them in plain word
 **Self-check:** is every policy linked in the footer and written so a 12-year-old could follow it?
 
 ## Lesson 22.13: Essential apps (and only those)
+<!-- stage:convert -->
 
 Every app can slow your store and adds a monthly cost. Start with a small set.
 
@@ -291,6 +306,7 @@ See [Module 18](18-tool-stack.md) for when to add more.
 **Self-check:** can you name what each installed app does and what it costs each month?
 
 ## Lesson 22.14: Tracking: Meta pixel, Google tag and analytics
+<!-- stage:attract -->
 
 Without tracking, you cannot tell which ads bring sales. Set it up before you spend a dollar on ads.
 
@@ -311,6 +327,7 @@ Without tracking, you cannot tell which ads bring sales. Set it up before you sp
 <!-- /guide:shopify-8-meta-tracking -->
 
 ## Lesson 22.15: Speed and mobile
+<!-- stage:convert -->
 
 Most shoppers are on a phone. A slow store wastes every ad dollar.
 
@@ -325,6 +342,7 @@ Most shoppers are on a phone. A slow store wastes every ad dollar.
 **Self-check:** does your product page load in about 3 seconds on mobile data?
 
 ## Lesson 22.16: Place test orders
+<!-- stage:convert -->
 
 A test order proves that payments, emails, stock and tracking all work together.
 
@@ -345,6 +363,7 @@ A test order proves that payments, emails, stock and tracking all work together.
 <!-- /guide:shopify-9-test-order -->
 
 ## Lesson 22.17: Pre-launch checklist
+<!-- stage:convert -->
 
 Tick every item before you launch or turn on ads.
 

@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to turn more of your visitors into buyers, and get bigger orders.
 >
 > **Why it matters:** If more visitors buy, every ad dollar goes further without spending more.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 9.1: The improvement system
+<!-- stage:convert -->
 
 CRO means conversion rate optimisation: getting more of your visitors to buy. Use this loop once a month.
 
@@ -41,6 +44,7 @@ CRO means conversion rate optimisation: getting more of your visitors to buy. Us
 5. **Repeat** every month.
 
 ## Lesson 9.2: Page checklists
+<!-- stage:convert -->
 
 "Above the fold" means what people see before they scroll.
 
@@ -85,6 +89,7 @@ CRO means conversion rate optimisation: getting more of your visitors to buy. Us
 6. **Decision rule:** if an optional add-on annoys people (for example shipping protection that is ticked by default) and hurts conversion, remove it.
 
 ## Lesson 9.3: Accessibility basics
+<!-- stage:convert -->
 
 Accessibility means everyone can use your store, including people with poor eyesight or who use a keyboard instead of a mouse.
 
@@ -98,6 +103,7 @@ Accessibility means everyone can use your store, including people with poor eyes
 This is good for customers, and often helps your Google ranking too.
 
 ## Lesson 9.4: Speed
+<!-- stage:convert -->
 
 Most shoppers use a phone. A slow page loses them before they see what you sell.
 
@@ -108,6 +114,7 @@ Most shoppers use a phone. A slow page loses them before they see what you sell.
 5. Block bot traffic that skews your reports and slows the site.
 
 ## Lesson 9.5: Copy that sells
+<!-- stage:convert -->
 
 "Copy" means the words on your site.
 
@@ -120,6 +127,7 @@ Most shoppers use a phone. A slow page loses them before they see what you sell.
 7. End with a clear button telling them what to do.
 
 ## Lesson 9.6: Policies and service
+<!-- stage:convert -->
 
 Good service helps people decide to buy. Make sure you have:
 
@@ -131,6 +139,7 @@ Good service helps people decide to buy. Make sure you have:
 6. Automatic answers for order status and common questions.
 
 ## Lesson 9.7: Landing pages
+<!-- stage:convert -->
 
 A landing page is a page built for one ad or one offer.
 
@@ -150,6 +159,7 @@ A landing page is a page built for one ad or one offer.
 **How to test one:** build it in 48 hours with a page builder app. Send half the ad traffic to it and half to the normal product page. Keep the winner.
 
 ## Lesson 9.8: Measurement
+<!-- stage:convert -->
 
 1. **Heatmaps and session recordings** show where people click and scroll. Look for rage clicks (clicking again and again in frustration), dead clicks (clicking something that is not a link) and how far people scroll.
 2. **Store reports** show:
@@ -161,6 +171,7 @@ A landing page is a page built for one ad or one offer.
 4. **When conversion suddenly drops, check in this order:** tracking, site errors, payment methods, stock, price changes, where traffic came from, and competitor sales.
 
 ## Lesson 9.9: A/B testing
+<!-- stage:convert -->
 
 An A/B test shows two versions of a page to two halves of your visitors, to see which sells more.
 
@@ -174,6 +185,7 @@ An A/B test shows two versions of a page to two halves of your visitors, to see 
 Small wins add up over time.
 
 ## Lesson 9.10: Order value
+<!-- stage:convert -->
 
 AOV means average order value: total sales divided by number of orders. Raising it means each visitor is worth more.
 
@@ -187,6 +199,7 @@ AOV means average order value: total sales divided by number of orders. Raising 
 **Decision rule:** judge every order-value idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.
 
 ## Lesson 9.11: Shipping psychology
+<!-- stage:convert -->
 
 How you handle shipping changes how much people buy. The drawing below shows how to set a free shipping amount in Shopify.
 
@@ -202,6 +215,7 @@ How you handle shipping changes how much people buy. The drawing below shows how
 <!-- /guide:shopify-2-free-shipping -->
 
 ## Lesson 9.12: Promotions without destroying margin
+<!-- stage:convert -->
 
 Margin is the share of each sale you keep. Big discounts eat it.
 
@@ -212,6 +226,7 @@ Margin is the share of each sale you keep. Big discounts eat it.
    - Keep better offers for new customers only.
 
 ## Lesson 9.13: Special cases
+<!-- stage:convert -->
 
 1. **Expensive products that people think about for a long time:** more content, comparisons, payment plans, samples or swatches, consultations, and longer retargeting (showing ads to past visitors for longer).
 2. **Preorders and made-to-order:** clear dispatch dates, an option to pay a deposit, and progress updates.
@@ -223,6 +238,7 @@ Margin is the share of each sale you keep. Big discounts eat it.
 8. **Selling overseas:** local currency and duties (see Module 15).
 
 ## Lesson 9.14: Working with developers
+<!-- stage:convert -->
 
 1. **Before adding an app, check:** cost, how much it slows the site, support, and how hard it is to remove later.
 2. **Get cost estimates** for custom work.
@@ -231,6 +247,7 @@ Margin is the share of each sale you keep. Big discounts eat it.
 5. **Decision rule:** only change your whole theme when the current one blocks several important fixes.
 
 ## Lesson 9.15: Category patterns from store audits
+<!-- stage:convert -->
 
 Stores in the same category usually miss the same things.
 

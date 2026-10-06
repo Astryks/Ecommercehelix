@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to spend your time on what grows the business, and when to get help.
 >
 > **Why it matters:** You are the bottleneck. A simple weekly rhythm keeps you focused and calm.
@@ -28,6 +30,7 @@
 ---
 
 ## Lesson 16.1: Personal operating basics
+<!-- stage:grow -->
 
 You are the most important part of the business. Look after how you work.
 
@@ -40,12 +43,14 @@ You are the most important part of the business. Look after how you work.
 7. **Say no** to anything that does not help this cycle's priorities (Lesson 16.3).
 
 ## Lesson 16.2: Win the day and the week
+<!-- stage:grow -->
 
 1. **Every day:** do the Helix routine (update yesterday, read your profit, do one task), plus one block of time on your top priority.
 2. **Every Monday:** spend 30 minutes planning the week. Set priorities, plan your calendar and decide what to hand off.
 3. **Every Friday:** spend 15 minutes reviewing the week. What worked? What did not?
 
 ## Lesson 16.3: Six-week priority cycles
+<!-- stage:grow -->
 
 Work in cycles of six weeks.
 
@@ -55,6 +60,7 @@ Work in cycles of six weeks.
 4. At the end of the cycle, review what you achieved and pick the next priorities.
 
 ## Lesson 16.4: Interruption filter
+<!-- stage:grow -->
 
 When something interrupts you, ask three questions:
 
@@ -65,6 +71,7 @@ When something interrupts you, ask three questions:
 If the answer to any is no: say no, hand it to someone else, or do it later.
 
 ## Lesson 16.5: Hiring
+<!-- stage:grow -->
 
 1. **Describe each role by its results,** not just tasks. For example "answer every customer email within 4 hours".
 2. **Test with a real work sample** before you hire.
@@ -76,6 +83,7 @@ If the answer to any is no: say no, hand it to someone else, or do it later.
    - Start with a paid trial project.
 
 ## Lesson 16.6: Conflict resolution
+<!-- stage:grow -->
 
 1. Name the issue clearly.
 2. Listen fully, without interrupting.
@@ -85,12 +93,14 @@ If the answer to any is no: say no, hand it to someone else, or do it later.
 6. Follow up to check it happened.
 
 ## Lesson 16.7: Agencies vs in-house
+<!-- stage:grow -->
 
 1. **Own your accounts and data.** Ad accounts, ads, customer lists and reports must be in your name.
 2. **Ask agencies to report on MER and contribution profit,** not just ROAS.
 3. **If you bring the work in-house,** start with the daily ad check (Module 7, Lesson 7.6). Keep specialists for the gaps.
 
 ## Lesson 16.8: Resilience
+<!-- stage:grow -->
 
 1. Bad days happen. Judge on the last 3 days and the month, not one day.
 2. Keep a "wins" file of good results and kind customer messages.
@@ -99,6 +109,7 @@ If the answer to any is no: say no, hand it to someone else, or do it later.
 5. During busy seasons, plan your sleep and exercise like any other task.
 
 ## Lesson 16.9: Capital and exit thinking
+<!-- stage:grow -->
 
 **Ways to fund growth:**
 

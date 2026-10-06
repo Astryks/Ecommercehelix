@@ -9,6 +9,8 @@ import { costRatios, money, summarise } from "@/lib/today";
 import { taxLabel } from "@/lib/tax";
 import { adminDueSoon } from "@/lib/business";
 import { lessonLink } from "@/lib/lesson-links";
+import { STAGE_INFO, stageOfLesson } from "@/lib/stages";
+import { StageChip } from "@/components/StageTrio";
 import { termsIn } from "@/lib/glossary";
 import { guidesForDay } from "@/lib/guides";
 import { ProfitToday } from "@/components/dashboard/ProfitToday";
@@ -203,6 +205,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                   <span className="rounded-full bg-white/15 px-2.5 py-1 font-bold">Day {current.day} of {DAYS.length}</span>
                   <span className="text-slate-300">Stage {current.stage}: {current.stageName}</span>
                   <span className="flex items-center gap-1 text-slate-300"><Clock className="h-3.5 w-3.5" aria-hidden /> {current.minutes} min</span>
+                  <span className="ml-auto"><StageChip id={stageOfLesson(current.learn.ref)} withTagline /></span>
                 </div>
                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">Today&apos;s topic: {current.topic}</p>
                 <h3 className="mt-1 text-2xl font-bold tracking-tight">{current.title}</h3>
@@ -340,7 +343,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                                 {s === "done" ? <Check className="h-3.5 w-3.5" aria-hidden /> : s === "locked" ? <Lock className="h-3 w-3" aria-hidden /> : d.day}
                               </span>
                               <div className={s === "locked" ? "opacity-60" : ""}>
-                                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Day {d.day} · <span className={s === "today" || s === "tomorrow" ? "text-cyan-600" : s === "done" ? "text-emerald-600" : ""}>{s === "today" ? "today" : s === "tomorrow" ? "up next (tomorrow)" : s}</span></p>
+                                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Day {d.day} · <span className={s === "today" || s === "tomorrow" ? "text-cyan-600" : s === "done" ? "text-emerald-600" : ""}>{s === "today" ? "today" : s === "tomorrow" ? "up next (tomorrow)" : s}</span> · <span className={STAGE_INFO[stageOfLesson(d.learn.ref)].ink}>{STAGE_INFO[stageOfLesson(d.learn.ref)].name}</span></p>
                                 <p className="text-sm leading-5 text-slate-800">{d.title}</p>
                               </div>
                             </li>

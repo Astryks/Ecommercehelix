@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to make your social profiles look trustworthy and match your ads.
 >
 > **Why it matters:** People check your profile before they buy. A good one turns ad viewers into followers and buyers.
@@ -29,6 +31,7 @@
 ---
 
 ## Lesson 21.1: Why your profile is part of every ad
+<!-- stage:attract -->
 
 Many people who see an ad do not click it. They tap your name to check you out first.
 
@@ -43,6 +46,7 @@ Think of each profile as a mini landing page with three jobs:
 3. **Give the next step.**
 
 ## Lesson 21.2: Profile checklist (Instagram, TikTok, Facebook)
+<!-- stage:attract -->
 
 Go through each item on every platform.
 
@@ -66,6 +70,7 @@ Go through each item on every platform.
 **Match your ads:** the product, offer and look in your ads should also be on your profile. If your ad says "free shipping this week" and your profile does not mention it, trust drops.
 
 ## Lesson 21.3: What to post: content pillars for social
+<!-- stage:attract -->
 
 Content pillars are the topics you always post about. Use these four (they build on [Lesson 4.4](04-brand-and-content.md#lesson-44-content-pillars-by-channel)):
 
@@ -84,6 +89,7 @@ Content pillars are the topics you always post about. Use these four (they build
 4. Series ("Day 8 of packing every order myself", "Customer outfit of the week"). They give people a reason to come back.
 
 ## Lesson 21.4: Posting cadence you can keep
+<!-- stage:attract -->
 
 Cadence means how often you post.
 
@@ -101,6 +107,7 @@ Cadence means how often you post.
 4. **Put most of the value in the first quarter of the video.** Say the key points twice.
 
 ## Lesson 21.5: Growing organic reach
+<!-- stage:attract -->
 
 Organic reach means people who see your posts without you paying.
 
@@ -113,6 +120,7 @@ Organic reach means people who see your posts without you paying.
 7. **Be helpful off the platform.** Answer questions in forums and communities where your customers ask for recommendations (for example Reddit threads that show up in Google). Be helpful, say who you are, and never spam.
 
 ## Lesson 21.6: Social proof and reviews on social
+<!-- stage:convert -->
 
 1. Turn reviews into Instagram highlights, carousels and videos where you read them out.
 2. Ask happy customers to tag you. Reshare their posts to Stories (with permission) and save them to a highlight.
@@ -120,6 +128,7 @@ Organic reach means people who see your posts without you paying.
 4. Reply to bad reviews publicly and kindly, then fix the problem privately. Future customers judge your reply more than the complaint.
 
 ## Lesson 21.7: Community, not just audience
+<!-- stage:attract -->
 
 People buy from brands they feel part of.
 
@@ -130,6 +139,7 @@ People buy from brands they feel part of.
 5. Share the feedback you acted on ("You asked for bigger sizes. Here they are.").
 
 ## Lesson 21.8: Social shops
+<!-- stage:attract -->
 
 Instagram, Facebook and TikTok shops let people buy without leaving the app. Before you turn one on:
 
@@ -141,6 +151,7 @@ Instagram, Facebook and TikTok shops let people buy without leaving the app. Bef
 See also [Lesson 12.6 TikTok Shop](12-channels-tiktok-pinterest-seo.md#lesson-126-tiktok-shop) and [Lesson 12.10 Instagram shopping](12-channels-tiktok-pinterest-seo.md#lesson-1210-instagram-shopping).
 
 ## Lesson 21.9: The social presence audit (what Helix checks)
+<!-- stage:attract -->
 
 Helix checks your social profiles as part of its regular audit. It uses public information, plus account insights once you connect.
 

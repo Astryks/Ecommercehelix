@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** What each way to pay costs you, and how to keep your money safe from holds, fraud and disputes.
 >
 > **Why it matters:** A payout hold or a wave of chargebacks can leave you unable to pay suppliers, even in a record month.
@@ -32,6 +34,7 @@
 ---
 
 ## Lesson 24.1: Your payment mix and what it really costs
+<!-- stage:grow -->
 
 Each way to pay has its own fee, payout speed and risk. The fee you see on the price page is rarely the whole cost.
 
@@ -51,6 +54,7 @@ Each way to pay has its own fee, payout speed and risk. The fee you see on the p
 **Self-check:** do you know your real blended fee rate? Is it in your Helix numbers?
 
 ## Lesson 24.2: Holds, reserves and frozen payouts
+<!-- stage:grow -->
 
 A payment provider can hold part of your money if it sees risk: a new account, a sudden jump in sales, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
 
@@ -68,6 +72,7 @@ A payment provider can hold part of your money if it sees risk: a new account, a
 **Self-check:** do you know each provider's hold rules? Do you have a cash buffer and a backup payment method?
 
 ## Lesson 24.3: Chargebacks: how they work and how to answer
+<!-- stage:grow -->
 
 A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away; you then have a short window to prove the sale was fine.
 
@@ -87,6 +92,7 @@ A chargeback is when a customer asks their bank to reverse a card payment. The b
 **Self-check:** do you know where to see the deadline for each chargeback? Do you have a saved checklist of evidence for each reason?
 
 ## Lesson 24.4: Stopping fraud and card testing
+<!-- stage:grow -->
 
 Card testing is when fraudsters use your checkout to try stolen card numbers, usually with many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
 
@@ -105,6 +111,7 @@ Card testing is when fraudsters use your checkout to try stolen card numbers, us
 **Self-check:** do you check the risk level before you ship? Do you know what your platform already blocks?
 
 ## Lesson 24.5: Refunds, partial refunds and goodwill
+<!-- stage:grow -->
 
 A fast, fair refund is cheaper than a dispute. A clear rule saves you deciding each case from scratch.
 

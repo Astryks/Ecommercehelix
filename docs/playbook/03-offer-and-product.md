@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Your offer is what people get and why they should buy now.
 >
 > **Why it matters:** A great offer makes every ad and email work better. A weak one makes everything cost more.
@@ -30,6 +32,7 @@
 ---
 
 ## Lesson 3.1: The five offer levers
+<!-- stage:convert -->
 
 Your offer is everything a customer gets and every reason they have to buy now. You can make it stronger by pulling five levers.
 
@@ -42,6 +45,7 @@ Your offer is everything a customer gets and every reason they have to buy now. 
 | **Easy yes** | Is it simple and fair? | How you present the price, bundles, a higher-priced option shown next to it, payment options, free shipping. |
 
 ## Lesson 3.2: Sharpen the promise
+<!-- stage:convert -->
 
 The promise is the main result your product gives. Make it clear in one line.
 
@@ -51,6 +55,7 @@ The promise is the main result your product gives. Make it clear in one line.
 4. Combine these into one line. Use it under your product title. Use it again as the opening line of an ad.
 
 ## Lesson 3.3: Stack belief
+<!-- stage:convert -->
 
 People do not buy until they believe the product will work for them. Build that belief on purpose.
 
@@ -61,6 +66,7 @@ People do not buy until they believe the product will work for them. Build that 
 **Example:** a store selling a high-priced item added a short home trial. Sales from the same visitors went up about three times, and returns stayed low.
 
 ## Lesson 3.4: Real scarcity
+<!-- stage:convert -->
 
 Scarcity means there is a real reason the product may not be available later. It gives people a reason to act now.
 
@@ -74,6 +80,7 @@ Scarcity means there is a real reason the product may not be available later. It
 **Never** use fake countdown timers or made-up stock counts. They destroy trust and may break consumer law.
 
 ## Lesson 3.5: Remove risk
+<!-- stage:convert -->
 
 Shoppers worry about making a bad purchase. Remove as much of that worry as you can.
 
@@ -87,6 +94,7 @@ Shoppers worry about making a bad purchase. Remove as much of that worry as you 
 **Decision rule:** generous returns usually add more sales than they cost. After you change your returns policy, measure your return rate for 60 days to check.
 
 ## Lesson 3.6: Make yes easy (pricing)
+<!-- stage:convert -->
 
 How you show the price changes how people feel about it. Test these ideas one at a time.
 
@@ -98,6 +106,7 @@ How you show the price changes how people feel about it. Test these ideas one at
 6. **Buy now pay later** (Afterpay, Klarna, Shop Pay Installments). It helps with higher prices because people can pay in parts.
 
 ## Lesson 3.7: Product-market fit snapshot
+<!-- stage:grow -->
 
 This shows which products deserve more ad money. Do it once a month.
 
@@ -112,6 +121,7 @@ This shows which products deserve more ad money. Do it once a month.
 | Low spend, poor return | Let it sell without ads, or stop selling it. |
 
 ## Lesson 3.8: New product pipeline
+<!-- stage:grow -->
 
 New products keep the store growing. Use a simple process.
 
@@ -121,6 +131,7 @@ New products keep the store growing. Use a simple process.
 4. **Review after 30 days.** Use the snapshot in Lesson 3.7.
 
 ## Lesson 3.9: Offers expire
+<!-- stage:convert -->
 
 An offer that works today will not work forever. Competitors copy it, the market changes and customers get used to it.
 

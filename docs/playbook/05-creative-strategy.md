@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** A simple system for making ads: plan, write, film, test, repeat.
 >
 > **Why it matters:** The ad itself is the biggest lever you control. New, better ads are what keep sales growing.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 5.1: Why creative is the targeting now
+<!-- stage:attract -->
 
 "Creative" means the ad itself: the picture or video plus the words.
 
@@ -39,6 +42,7 @@
 - People see endless ads every day. To keep winning, you need a steady supply of new and varied ads.
 
 ## Lesson 5.2: The creative management cycle
+<!-- stage:attract -->
 
 Making ads works best as a loop you repeat every week or two.
 
@@ -50,6 +54,7 @@ Making ads works best as a loop you repeat every week or two.
 6. **Learn.** Score each ad. Write down why the winners won. Use that in the next brief.
 
 ## Lesson 5.3: Pillars and framing
+<!-- stage:attract -->
 
 Every ad does one of four jobs. These are your creative pillars.
 
@@ -63,6 +68,7 @@ Then choose what the ad focuses on: the product, the brand, the result, or the c
 **Tip:** customer-focused ads show the person and their life after using the product. These often reach the most people.
 
 ## Lesson 5.4: Stand-out stack
+<!-- stage:attract -->
 
 What makes you different comes in layers:
 
@@ -77,6 +83,7 @@ What makes you different comes in layers:
 **Decision rule:** during a sale, lead with the offer. Outside of sales, lead with the product and proof.
 
 ## Lesson 5.5: Awareness stages
+<!-- stage:attract -->
 
 People are at different stages of knowing about you. Each stage needs a different ad.
 
@@ -91,6 +98,7 @@ People are at different stages of knowing about you. Each stage needs a differen
 **Decision rule:** cold audiences (people who have never heard of you) need the early stages. Warm audiences (people who visited or engaged) need the later stages.
 
 ## Lesson 5.6: Psychological drivers
+<!-- stage:attract -->
 
 These are the deep reasons people buy: belonging, status, fear of missing out, curiosity, relief, self-improvement, convenience and value.
 
@@ -99,6 +107,7 @@ These are the deep reasons people buy: belonging, status, fear of missing out, c
 3. For launches, lead with curiosity and status.
 
 ## Lesson 5.7: Hooks (first 0 to 3 seconds)
+<!-- stage:attract -->
 
 The hook is the first line or first 3 seconds of an ad. Its only job is to make people stop scrolling. Most viewers leave in the first quarter of a video, so the hook matters most.
 
@@ -116,6 +125,7 @@ The hook is the first line or first 3 seconds of an ad. Its only job is to make 
 **Tip:** a bold headline on a still image can work as well as a clever video hook.
 
 ## Lesson 5.8: Script frameworks
+<!-- stage:attract -->
 
 A script framework is a proven order for the parts of an ad. Pick one and fill it in.
 
@@ -140,6 +150,7 @@ A script framework is a proven order for the parts of an ad. Pick one and fill i
 State the offer and any minimum clearly: "20% off your first order, free shipping over $80".
 
 ## Lesson 5.9: Emotion arcs for launches and sales
+<!-- stage:attract -->
 
 During a launch or sale, feelings change day by day. Change your ads to match.
 
@@ -150,6 +161,7 @@ During a launch or sale, feelings change day by day. Change your ads to match.
 5. **After:** gratitude. Say thank you and share results.
 
 ## Lesson 5.10: Native-feeling ads
+<!-- stage:attract -->
 
 "Native" ads look like normal posts in the feed, not like ads. They usually do better.
 
@@ -160,6 +172,7 @@ During a launch or sale, feelings change day by day. Change your ads to match.
 5. Borrow popular formats from your feed and use them with your product and your words. Never copy someone else's content.
 
 ## Lesson 5.11: Macro and micro iteration
+<!-- stage:attract -->
 
 Iteration means making new versions. There are two kinds.
 
@@ -173,10 +186,12 @@ Iteration means making new versions. There are two kinds.
 3. The biggest mistake is testing everything at once with no idea of what you are trying to learn. Write down your guess (hypothesis) before each test.
 
 ## Lesson 5.12: Signal-rich content
+<!-- stage:attract -->
 
 Make it obvious who the ad is for. Show a clear niche, a clear use, and a clear type of person on screen. This helps the platform find the right people. Speak directly to specific groups (for example new mums, trail runners, home bakers).
 
 ## Lesson 5.13: Urgency without scarcity
+<!-- stage:attract -->
 
 You can give people a reason to buy now without a discount:
 
@@ -188,6 +203,7 @@ You can give people a reason to buy now without a discount:
 6. Delivery cut-off dates ("order by Friday for Christmas").
 
 ## Lesson 5.14: Convert the considerers
+<!-- stage:convert -->
 
 Warm audiences are people who know you but have not bought. They need answers:
 
@@ -199,6 +215,7 @@ Warm audiences are people who know you but have not bought. They need answers:
 6. Creator testimonials.
 
 ## Lesson 5.15: Creators, partnership ads and affiliates
+<!-- stage:attract -->
 
 1. **Brief every creator** (a one-page set of instructions). Include: the goal, the audience, the key message, what they must say, what they must not say, 3 hook options, what to deliver, usage rights and the deadline.
 2. **Example terms:** a 10% off code for their audience, and 15% commission on sales from new customers.
@@ -208,6 +225,7 @@ Warm audiences are people who know you but have not bought. They need answers:
 See Module 19 for the full creator playbook.
 
 ## Lesson 5.16: Production tools
+<!-- stage:attract -->
 
 1. **Templates for still images.** Keep text inside the safe zones so it is not covered by buttons. Make mobile sizes: 4:5 (feed) and 9:16 (stories and reels).
 2. **Phone video editor basics:** cut out silences, add captions, add a text hook, and export at the platform's sizes.
@@ -215,6 +233,7 @@ See Module 19 for the full creator playbook.
 4. **Check platform "auto-enhance" settings** before launch. They can change your ad in ways you do not want.
 
 ## Lesson 5.17: Big brand moments
+<!-- stage:attract -->
 
 Watch what large brands do around seasons and cultural moments. Then adapt the idea to your size: trend formats, collaborations with other brands, playful takes on trends.
 

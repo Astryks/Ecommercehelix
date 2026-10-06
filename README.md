@@ -41,7 +41,7 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 
 | Doc | What it covers |
 | --- | --- |
-| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 28 modules of original lessons, checklists, examples and self-checks (also served in the app at /learn). |
+| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 28 modules of original lessons, checklists, examples and self-checks, organised into three stages: Attract, Convert, Grow ([stages.md](docs/playbook/stages.md)). Also served in the app at /learn. |
 | [docs/daily-curriculum.md](docs/daily-curriculum.md) | The Growing track: 64 days, one lesson, one topic, one action per day, ordered by store stage (generated). |
 | [docs/daily-curriculum-starting.md](docs/daily-curriculum-starting.md) | The Just starting track: 28 lighter days for new founders (product and offer, Shopify store setup step by step, first small test campaign) (generated). |
 | [docs/audit-engine.md](docs/audit-engine.md) | Proactive audits: schedules, crawler, PageSpeed, API pulls, cross-diagnosis rules, Insights. |
@@ -105,7 +105,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Area | Route | Status |
 | --- | --- | --- |
 | Marketing home, About, pricing, FAQ | `/`, `/about` | Real |
-| Learn (28 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
+| Learn (28 playbook modules rendered from `docs/playbook`, grouped into Attract, Convert, Grow with a stage chip on every module and lesson) | `/learn`, `/learn/[slug]` | Real, static (`src/lib/stage-map.json`) |
 | Sign-in (Google, email magic link, or demo login) | `/signin` | Real (Auth.js v5) |
 | Onboarding: store link, track (Just starting or Growing), country | `/start` | Real |
 | Today: seasonal alert and prep plan, upcoming key dates, day N lesson + action for your track, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |

@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** When you must register for GST or sales tax, and how tax and duties change prices across borders.
 >
 > **Why it matters:** Tax mistakes grow quietly and come back with penalties. Knowing the thresholds early keeps you in control.
@@ -37,6 +39,7 @@
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant before you act. Rules change often and depend on your situation. Every lesson in this module links the official source so you can confirm the current rule.
 
 ## Lesson 26.1: GST in Australia: register, charge and lodge
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -58,6 +61,7 @@ GST is 10% on most sales in Australia once you are registered. The money you col
 **Self-check:** do you know your GST turnover for the last 12 months? Is GST money moved to its own account each week?
 
 ## Lesson 26.2: GST on what you buy: ads, apps and imports
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -76,6 +80,7 @@ Many of your costs come from overseas: ads, apps, software and stock. GST works 
 **Self-check:** has every overseas supplier got your ABN? Are your import GST amounts on your BAS?
 
 ## Lesson 26.3: US sales tax: nexus, registering and filing
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -95,6 +100,7 @@ There is no national sales tax in the US. Each state sets its own rules, and you
 **Self-check:** do you know which states you have nexus in? Have you registered before collecting?
 
 ## Lesson 26.4: Selling to the UK, EU and Canada
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
@@ -116,6 +122,7 @@ Selling abroad means charging the customer's tax, or leaving them to pay it on d
 **Self-check:** for each country you sell to, do you know who pays import tax and whether you must register?
 
 ## Lesson 26.5: Duties, tariffs and the end of US de minimis
+<!-- stage:grow -->
 
 > **General information, not tax or legal advice.** Check with a registered tax agent, customs broker or accountant.
 

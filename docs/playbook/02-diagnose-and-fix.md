@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Before you change anything, find the one thing holding profit back.
 >
 > **Why it matters:** Fixing the wrong thing wastes weeks. Usually only one problem is the real blocker at a time.
@@ -30,6 +32,7 @@
 ---
 
 ## Lesson 2.1: Three kinds of constraint
+<!-- stage:grow -->
 
 A constraint is the one thing that limits your profit right now. There are three kinds.
 
@@ -42,6 +45,7 @@ A constraint is the one thing that limits your profit right now. There are three
 Most stores are short of sales (throughput), even when the owner thinks they have an "ads problem".
 
 ## Lesson 2.2: The five situations
+<!-- stage:grow -->
 
 Look at your scorecard. Which of these five sounds like you? Each one has a different next move.
 
@@ -52,6 +56,7 @@ Look at your scorecard. Which of these five sounds like you? Each one has a diff
 5. **Everything is borderline:** fix MER first, then VCR (order costs), then grow.
 
 ## Lesson 2.3: Fixing variable costs
+<!-- stage:grow -->
 
 Variable costs are the costs that come with each order. Work through this list.
 
@@ -64,6 +69,7 @@ Variable costs are the costs that come with each order. Work through this list.
 7. **Fees.** Check payment and app fees as a share of sales.
 
 ## Lesson 2.4: Fixing fixed costs
+<!-- stage:grow -->
 
 Fixed costs stay the same no matter how many orders you get.
 
@@ -73,6 +79,7 @@ Fixed costs stay the same no matter how many orders you get.
 4. Remember the other fix: grow sales. Then fixed costs become a smaller share.
 
 ## Lesson 2.5: Fixing marketing costs (high MER)
+<!-- stage:grow -->
 
 High MER means ads eat too much of your sales. Do not rush to change the ads. Follow these steps in order.
 
@@ -92,6 +99,7 @@ High MER means ads eat too much of your sales. Do not rush to change the ads. Fo
 - Fashion stores often have a lower RPV but more visitors.
 
 ## Lesson 2.6: When several KPIs are high at once
+<!-- stage:grow -->
 
 A KPI is a key number you track. If several are bad at once, do not try to fix everything.
 
@@ -100,6 +108,7 @@ A KPI is a key number you track. If several are bad at once, do not try to fix e
 3. Usually that is MER (it is fast to change) or VCR (it has the biggest lasting effect).
 
 ## Lesson 2.7: The scale test
+<!-- stage:grow -->
 
 "Scaling" means spending more on ads to get more sales. Do it as a planned test, not a leap.
 

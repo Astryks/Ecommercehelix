@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Your brand is how people recognise and remember you.
 >
 > **Why it matters:** People buy from brands they trust. A clear brand makes ads cheaper and customers more loyal.
@@ -29,6 +31,7 @@
 ---
 
 ## Lesson 4.1: The brand core
+<!-- stage:attract -->
 
 Your brand core is a one-page summary of who you are. Everything you write and post comes from it.
 
@@ -43,6 +46,7 @@ Answer these five questions on one page:
 **Why it matters:** brands without a clear core end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
 
 ## Lesson 4.2: Customer profiles
+<!-- stage:attract -->
 
 A customer profile describes one type of buyer. Build it from real customer words, not guesses.
 
@@ -58,6 +62,7 @@ A customer profile describes one type of buyer. Build it from real customer word
 **Where to find this:** reviews, customer surveys and support emails. [SOP 16](../sops/16-customer-research-and-reviews.md) shows you how to collect them.
 
 ## Lesson 4.3: Brand guidelines
+<!-- stage:attract -->
 
 Brand guidelines are a short guide that anyone can follow: a freelancer, a creator or an AI tool. It keeps everything looking and sounding like you.
 
@@ -73,6 +78,7 @@ Brand guidelines are a short guide that anyone can follow: a freelancer, a creat
 **Why it matters:** people recognise a brand after seeing it many times, looking the same way each time.
 
 ## Lesson 4.4: Content pillars by channel
+<!-- stage:attract -->
 
 Content pillars are the 4 to 6 topics you always post about. Examples: product, education (how-to and tips), proof (reviews, results), community, promotions, and your story and values.
 
@@ -91,6 +97,7 @@ Each channel needs a different mix. Here is a starting point:
 2. Plan one month of posts using that mix.
 
 ## Lesson 4.5: Communication calendar
+<!-- stage:attract -->
 
 A communication calendar shows what you will post and send, and when.
 
@@ -100,6 +107,7 @@ A communication calendar shows what you will post and send, and when.
 4. Always ask permission before you repost a customer's photo or video.
 
 ## Lesson 4.6: Organic content that also feeds ads
+<!-- stage:attract -->
 
 Organic content means free posts, not paid ads. Good organic posts are a free way to test ad ideas.
 
@@ -110,6 +118,7 @@ Organic content means free posts, not paid ads. Good organic posts are a free wa
 5. For a small team, 3 to 5 short videos a week is realistic. Film them in one or two sessions a week.
 
 ## Lesson 4.7: Community
+<!-- stage:attract -->
 
 A community is a group of customers who talk to you and to each other.
 
@@ -119,11 +128,13 @@ A community is a group of customers who talk to you and to each other.
 4. **Decision rule:** community works best when people buy more than once. If people rarely buy again in your category, put your effort into reviews and creators instead.
 
 ## Lesson 4.8: Personal brand and PR
+<!-- stage:attract -->
 
 1. **Be a visible founder.** It builds trust. It also gives you endless content: your opinions, behind the scenes, and lessons learned.
 2. **PR (getting into the media).** Pitch stories, not products: your founder journey, interesting data, trends. Then use press logos and quotes as proof in ads and on your site.
 
 ## Lesson 4.9: Influencer amplification
+<!-- stage:attract -->
 
 Influencers can spread your brand fast. Do it in three steps:
 

@@ -10,6 +10,8 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to plan one ad campaign from start to finish.
 >
 > **Why it matters:** A plan with clear numbers tells you when to spend more, wait or stop, so you never guess.
@@ -33,6 +35,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ---
 
 ## Lesson 6.1: Numbers first
+<!-- stage:attract -->
 
 Never open Ads Manager until you know these five numbers. Module 1 explains each one.
 
@@ -51,6 +54,7 @@ Never open Ads Manager until you know these five numbers. Module 1 explains each
 **First order versus lifetime value:** if customers reliably buy again, you can afford to pay more for the first order. Only do this when you have real repeat data: the share of customers who buy again within 12 months, and the margin on their second order. Watch your cash, because the payback comes later.
 
 ## Lesson 6.2: Pick the job of the campaign
+<!-- stage:attract -->
 
 Each campaign has one job. The job decides which goal (objective) you choose in Ads Manager and what you tell the platform to aim for (optimise for).
 
@@ -66,6 +70,7 @@ Each campaign has one job. The job decides which goal (objective) you choose in 
 **Decision rule:** aim for the deepest step (purchase is deepest) that happens at least about 25 to 50 times a week per campaign. With fewer, the platform cannot learn and results jump around.
 
 ## Lesson 6.3: Testing campaigns vs scaling campaigns
+<!-- stage:attract -->
 
 Keep testing and winning separate, so new tests do not upset what already works.
 
@@ -74,6 +79,7 @@ Keep testing and winning separate, so new tests do not upset what already works.
 3. **A build campaign** is a campaign that is always switched off. You build each ad there once, then copy it wherever you need it.
 
 ## Lesson 6.4: Account structure by spend
+<!-- stage:attract -->
 
 "Cold" means people who do not know you. "Warm" means people who visited or engaged. "Mixed" means both. Set up your account based on how much you spend each day.
 
@@ -102,6 +108,7 @@ Keep testing and winning separate, so new tests do not upset what already works.
 5. **Aiming for landing page views** for very cold, broad tests where you mostly want reach.
 
 ## Lesson 6.5: Audiences
+<!-- stage:attract -->
 
 The audience is who sees your ads.
 
@@ -118,6 +125,7 @@ The audience is who sees your ads.
 6. **Countries.** A new country gets its own campaign once spend allows. Start with the country most like the one that already works.
 
 ## Lesson 6.6: Budgets
+<!-- stage:attract -->
 
 1. **Start with what you can afford to lose while learning.** A common minimum is 2 to 3 times your target CPA, per day, per campaign.
 2. **Never change the budget of a campaign that is working by more than 20% a day.** Bigger jumps can reset its learning.
@@ -126,6 +134,7 @@ The audience is who sees your ads.
 5. **Judge by the week, not the day.** Daily budgets spend more on some days and less on others.
 
 ## Lesson 6.7: Naming conventions
+<!-- stage:attract -->
 
 A naming convention is a fixed pattern for names. It lets you, your team and Helix read the account at a glance and compare results later.
 
@@ -144,6 +153,7 @@ Example: `B14-OneStarRebuttal-Prove-Video-ReviewHook-Sam-2610`
 **Tip:** rename your old campaigns to this pattern, so your history becomes easy to read.
 
 ## Lesson 6.8: Creative concepts, angles and hooks
+<!-- stage:attract -->
 
 1. **Concept:** the big idea. For example "answering a one-star review".
 2. **Angle:** why it matters to a specific person. For example "for tall men who can never find shirts that fit".
@@ -153,6 +163,7 @@ Example: `B14-OneStarRebuttal-Prove-Video-ReviewHook-Sam-2610`
 **Decision rule:** each batch tests **one** thing. Keep products and prices similar within a batch, so the test is fair.
 
 ## Lesson 6.9: Writing the creative brief
+<!-- stage:attract -->
 
 A creative brief is a one-page set of instructions for each ad. Include:
 
@@ -171,6 +182,7 @@ A creative brief is a one-page set of instructions for each ad. Include:
 The full template is in [SOP 08](../sops/08-creative-briefs-ugc-creators.md).
 
 ## Lesson 6.10: Testing methodology
+<!-- stage:attract -->
 
 Use these default rules for every ad test.
 
@@ -187,6 +199,7 @@ Use these default rules for every ad test.
 **Why spend rules matter:** to tell a 2% conversion rate from a 3% one with confidence, you need a few thousand visitors for each version. Most ad tests never get that many. So you use spend limits and early signs instead.
 
 ## Lesson 6.11: Reading metrics
+<!-- stage:attract -->
 
 | Metric | What it tells you | What good looks like |
 | --- | --- | --- |
@@ -208,6 +221,7 @@ Use these default rules for every ad test.
 3. CPM rising while CTR stays steady: you have reached most of the audience, or it is a busy season.
 
 ## Lesson 6.12: Decision rules: scale, hold, refresh, kill
+<!-- stage:grow -->
 
 In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**.
 
@@ -219,6 +233,7 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 | **Kill (Stop)** | It has spent the "bad" amount (2 times the good CPA for its audience) with poor results or no purchases. | Turn it off today. |
 
 ## Lesson 6.13: Google campaign definitions
+<!-- stage:attract -->
 
 | Campaign | What it is for | Key settings |
 | --- | --- | --- |
@@ -233,6 +248,7 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 **Timing:** a new Google campaign needs about 2 weeks to learn, then 4 weeks to judge, at $50 a day or more.
 
 ## Lesson 6.14: Promotional and seasonal campaigns
+<!-- stage:attract -->
 
 1. Build sale campaigns separately from your normal (BAU) campaigns.
 2. Copy your best normal cold campaign as the base for the sale's cold campaign.
@@ -256,6 +272,7 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 | After | Turn normal campaigns back up slowly. Welcome new buyers. Compare results with the target. |
 
 ## Lesson 6.15: Common campaign mistakes
+<!-- stage:attract -->
 
 1. Starting without break-even numbers.
 2. Too many campaigns for the budget, so each one gets too little data.
@@ -266,6 +283,7 @@ In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**
 7. Turning everything off after one bad day.
 
 ## Lesson 6.16: The campaign brief template
+<!-- stage:attract -->
 
 Copy this for every new campaign. Helix fills in the numbers from your scorecard.
 

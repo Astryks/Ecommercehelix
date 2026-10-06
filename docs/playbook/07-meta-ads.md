@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to set up and run Facebook and Instagram ads in about 10 minutes a day.
 >
 > **Why it matters:** For most stores, Meta is where most new customers come from. Doing the basics well beats clever tricks.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 7.1: Account setup checklist
+<!-- stage:attract -->
 
 Do this once before you spend money. Tick each item.
 
@@ -44,6 +47,7 @@ Do this once before you spend money. Tick each item.
 8. **Check for hacking each week.** Look for campaigns you did not create or sudden huge budgets. If you find any: turn them off, remove unknown people's access, contact Meta support and dispute the charges with your bank.
 
 ## Lesson 7.2: Automated vs manual campaigns
+<!-- stage:attract -->
 
 There are two ways to run campaigns.
 
@@ -55,6 +59,7 @@ There are two ways to run campaigns.
 **Watch out:** Meta may turn your ad into a carousel or collection automatically. If that breaks how your ad looks, turn that setting off.
 
 ## Lesson 7.3: Ad formats
+<!-- stage:attract -->
 
 | Format | Best for |
 | --- | --- |
@@ -69,6 +74,7 @@ There are two ways to run campaigns.
 **Tip:** keep text inside the safe zones, so Reels and Stories do not cut it off or cover it with buttons.
 
 ## Lesson 7.4: Launching
+<!-- stage:attract -->
 
 Follow these steps each time you launch new ads. The drawings below show where to click.
 
@@ -105,6 +111,7 @@ Follow these steps each time you launch new ads. The drawings below show where t
 <!-- /guide:meta-4-review-helix-draft -->
 
 ## Lesson 7.5: The learning phase
+<!-- stage:attract -->
 
 The learning phase is the first days after you start or change an ad set, while Meta works out who to show it to. Results are less stable during this time.
 
@@ -114,6 +121,7 @@ The learning phase is the first days after you start or change an ad set, while 
 4. **Do not keep moving winning ads into "the best campaign".** Copy them instead, so each campaign keeps what it has learned.
 
 ## Lesson 7.6: Daily optimisation in 10 minutes
+<!-- stage:attract -->
 
 Do these five steps each day. [SOP 06](../sops/06-meta-daily-optimisation.md) has the full detail and numbers.
 
@@ -130,6 +138,7 @@ Do these five steps each day. [SOP 06](../sops/06-meta-daily-optimisation.md) ha
 In Helix, Your ads shows this for you as Spend more, Wait, New ads needed or Stop.
 
 ## Lesson 7.7: Reach potential
+<!-- stage:attract -->
 
 Ask: how many people can this ad reach before the same people see it twice on average (frequency of 2)?
 
@@ -139,6 +148,7 @@ Ask: how many people can this ad reach before the same people see it twice on av
 **Decision rule:** to spend more, pair a low-cost ad with an ad that reaches lots of people.
 
 ## Lesson 7.8: Managing expensive cold campaigns
+<!-- stage:attract -->
 
 Cold campaigns (aimed at new people) always look expensive. That is because Meta misses many of the sales they cause: people see the ad, then buy days later another way.
 
@@ -148,6 +158,7 @@ Cold campaigns (aimed at new people) always look expensive. That is because Meta
 4. **Decision rule:** cut cold spend only when MER gets worse **and** orders from new customers fall.
 
 ## Lesson 7.9: Metrics by funnel layer
+<!-- stage:attract -->
 
 The funnel layer is how well the audience knows you. Each layer has its own numbers to watch and its own cost-per-sale allowance.
 
@@ -159,6 +170,7 @@ The funnel layer is how well the audience knows you. Each layer has its own numb
 | Hot | Added to cart or started checkout | Cost per sale compared with 0.75 times target, frequency |
 
 ## Lesson 7.10: Scaling challenge
+<!-- stage:grow -->
 
 A scaling challenge is a planned 2 to 4 week push to spend more.
 
@@ -175,6 +187,7 @@ A scaling challenge is a planned 2 to 4 week push to spend more.
 - A failed test still teaches you something: it shows you the next thing holding you back.
 
 ## Lesson 7.11: Attribution settings
+<!-- stage:attract -->
 
 Attribution is how a platform decides which ad gets credit for a sale. Meta's default (for example, 7 days after a click and 1 day after a view) is not the full truth.
 
@@ -184,6 +197,7 @@ Attribution is how a platform decides which ad gets credit for a sale. Meta's de
 See Module 20, Lesson 20.9 for how to run a holdout test.
 
 ## Lesson 7.12: Troubleshooting
+<!-- stage:attract -->
 
 | Problem | What to check |
 | --- | --- |

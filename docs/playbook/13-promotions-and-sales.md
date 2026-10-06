@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to plan sales and launches so they make money, not just noise.
 >
 > **Why it matters:** Busy periods can make your year. Planned sales are far more profitable than last-minute ones.
@@ -29,6 +31,7 @@
 ---
 
 ## Lesson 13.1: The promotional rhythm
+<!-- stage:convert -->
 
 Plan four kinds of promotion across the year.
 
@@ -38,6 +41,7 @@ Plan four kinds of promotion across the year.
 4. **Clearing stock.** Sell slow stock with gentle tools first: a free gift with purchase, bundles, VIP codes or gift cards. Only use deep discounts as a last resort.
 
 ## Lesson 13.2: Launch phases
+<!-- stage:convert -->
 
 A launch has four phases.
 
@@ -47,12 +51,14 @@ A launch has four phases.
 4. **After launch:** share reviews, results and restock news.
 
 ## Lesson 13.3: New product drop campaign structure
+<!-- stage:convert -->
 
 1. **If you spend a lot:** make a separate launch campaign.
 2. **If you spend less:** add launch ads to your normal cold and warm campaigns.
 3. **Either way:** warm audiences and your email list get first access. Keep your normal (evergreen) campaigns running.
 
 ## Lesson 13.4: The big sale, step by step
+<!-- stage:convert -->
 
 1. **Set the target.** Take last year's sales for this event and multiply by your growth rate. Check it against your list size, budget and stock.
 2. **Build the offer.** A main offer, plus free gift levels (spend $100, get a gift), plus something new mid-sale, plus a perk for VIPs. Check your margin at every level.
@@ -64,6 +70,7 @@ A launch has four phases.
 8. **Check stock and shipping.** Enough stock, enough packing staff, gift stock, and shipping cut-off dates.
 
 ## Lesson 13.5: Hype phase
+<!-- stage:convert -->
 
 The hype phase builds excitement before the sale starts.
 
@@ -72,6 +79,7 @@ The hype phase builds excitement before the sale starts.
 3. Move budget from normal campaigns to the hype campaign slowly. Never cut normal campaigns to zero: they lose what they have learned and you lose the steady flow of new customers.
 
 ## Lesson 13.6: Running the sale
+<!-- stage:convert -->
 
 1. **Set up these sale campaigns:**
    - A copy of your best cold campaign.
@@ -86,6 +94,7 @@ The hype phase builds excitement before the sale starts.
 6. **Finish strong:** last-chance ads, final emails and texts.
 
 ## Lesson 13.7: After the sale
+<!-- stage:grow -->
 
 1. **Expect a slow period** afterwards. That is normal.
 2. **Turn normal campaigns back up in steps,** not all at once.
@@ -94,6 +103,7 @@ The hype phase builds excitement before the sale starts.
 5. **Write down one thing to improve** for the next event.
 
 ## Lesson 13.8: If the sale is failing
+<!-- stage:convert -->
 
 **Check these causes:**
 
@@ -112,6 +122,7 @@ The hype phase builds excitement before the sale starts.
 5. Extend the sale, but only if it will not damage trust (customers notice fake "last chances").
 
 ## Lesson 13.9: Experience levels
+<!-- stage:convert -->
 
 Grow your sale plan as you gain experience.
 
@@ -120,6 +131,7 @@ Grow your sale plan as you gain experience.
 3. **Advanced:** a daily budget plan, a plan across every channel (Meta, Google, email, SMS, free posts, creators), and sales targets for each product.
 
 ## Lesson 13.10: Key dates and beyond Black Friday
+<!-- stage:grow -->
 
 Plan the whole busy season, not just one weekend.
 
@@ -131,6 +143,7 @@ Plan the whole busy season, not just one weekend.
 6. **Valentine's Day, Mother's Day and Father's Day** suit gift selections.
 
 ## Lesson 13.11: Cross-channel checklist
+<!-- stage:convert -->
 
 Tick each item before a big sale.
 

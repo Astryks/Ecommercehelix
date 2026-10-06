@@ -6,6 +6,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to use AI tools safely to save hours each week.
 >
 > **Why it matters:** AI can draft ads, emails and reports fast. You still check and approve.
@@ -27,6 +29,7 @@
 ---
 
 ## Lesson 17.1: An AI operating system
+<!-- stage:grow -->
 
 AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business.
 
@@ -41,6 +44,7 @@ AI assistants (like ChatGPT, Claude or Gemini) work much better when they know a
 3. **Better context gives better answers.** Update it when things change.
 
 ## Lesson 17.2: High-value uses
+<!-- stage:grow -->
 
 These jobs save the most time.
 
@@ -54,6 +58,7 @@ These jobs save the most time.
 **Always:** read and edit what AI writes before you use it.
 
 ## Lesson 17.3: Connectors and agents
+<!-- stage:grow -->
 
 1. **Connectors** let AI read your store, ad and email data.
 2. **Agents** can take steps for you, like creating a campaign.
@@ -61,6 +66,7 @@ These jobs save the most time.
 4. **Warning:** unofficial automation tools on ad accounts can trigger policy flags or even bans. Use official integrations that respect the platform's limits.
 
 ## Lesson 17.4: Safety rules
+<!-- stage:grow -->
 
 1. Never paste passwords or access tokens into an AI chat.
 2. Check every claim AI writes, especially health claims and before-and-after claims.
@@ -68,6 +74,7 @@ These jobs save the most time.
 4. If someone uses AI to fake your content or your face, report it to the platform with proof.
 
 ## Lesson 17.5: How Helix applies this
+<!-- stage:grow -->
 
 1. Helix uses fixed rules for all maths (profit, MER, break-even), so the numbers are always exact.
 2. It uses smaller, cheaper AI models to read and sort information.

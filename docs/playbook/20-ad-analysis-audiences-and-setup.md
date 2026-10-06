@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to set up ads correctly and read your results like a pro.
 >
 > **Why it matters:** Good setup means you can trust the numbers. Good reading means you fix the real problem.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 20.1: Before you launch: tracking you can trust
+<!-- stage:attract -->
 
 Bad data leads to bad decisions. Check these once, then every month.
 
@@ -43,6 +46,7 @@ Bad data leads to bad decisions. Check these once, then every month.
 7. **Every ad link has UTM tags.** UTMs are labels added to the end of a link (like `?utm_source=facebook`) so Google Analytics can tell which channel and campaign each visit came from.
 
 ## Lesson 20.2: Setting up target audiences
+<!-- stage:attract -->
 
 ### Meta
 
@@ -95,6 +99,7 @@ The layer is how well the audience knows you (see Module 6).
 | Existing customers | Bought before | Buyers, for launches and products people reorder |
 
 ## Lesson 20.3: Setting up a Meta sales campaign step by step
+<!-- stage:attract -->
 
 The drawings below show each step in Ads Manager.
 
@@ -136,6 +141,7 @@ The drawings below show each step in Ads Manager.
 <!-- /guide:meta-4-review-helix-draft -->
 
 ## Lesson 20.4: Setting up Google step by step
+<!-- stage:attract -->
 
 The drawings below show how to start a Performance Max campaign and block wasted searches.
 
@@ -172,6 +178,7 @@ The drawings below show how to start a Performance Max campaign and block wasted
 <!-- /guide:google-2-block-wasted-searches -->
 
 ## Lesson 20.5: Setting up a TikTok campaign step by step
+<!-- stage:attract -->
 
 1. **Objective:** Sales (website conversions, or TikTok Shop).
 2. **Pixel event:** Complete payment.
@@ -181,6 +188,7 @@ The drawings below show how to start a Performance Max campaign and block wasted
 6. **Judge it on your total MER as well as TikTok's reported return.** TikTok often causes sales that show up under other channels.
 
 ## Lesson 20.6: The metric tree
+<!-- stage:attract -->
 
 Sales from ads come from a chain of steps. Find the weak link.
 
@@ -199,6 +207,7 @@ Spend
 **How to use it:** improve one link and everything below it moves. For example, a 20% better CTR with the same page means 20% more buyers for the same spend.
 
 ## Lesson 20.7: Cross-diagnosis: is it the ad, the page, the offer or the checkout?
+<!-- stage:attract -->
 
 This is the most useful table in the playbook. Helix runs the same rules for you in **What to fix**.
 
@@ -218,6 +227,7 @@ This is the most useful table in the playbook. Helix runs the same rules for you
 | Lots of refunds after a campaign | The ad promised too much | Make claims match reality. Improve size or fit guidance. |
 
 ## Lesson 20.8: Breakdowns that reveal problems
+<!-- stage:attract -->
 
 Breakdowns split your results by group in Ads Manager. Look at them weekly, not daily.
 
@@ -229,6 +239,7 @@ Breakdowns split your results by group in Ads Manager. Look at them weekly, not 
 6. **New versus existing customers:** how much of your spend reaches new people?
 
 ## Lesson 20.9: Attribution and incrementality
+<!-- stage:attract -->
 
 Every platform claims credit for the same sale. Incrementality means sales that would not have happened without the ad. Use these rules:
 
@@ -239,6 +250,7 @@ Every platform claims credit for the same sale. Incrementality means sales that 
 5. **Ask buyers after they purchase:** "Where did you first hear about us?" Combine the answers with your data.
 
 ## Lesson 20.10: Your analysis rhythm
+<!-- stage:grow -->
 
 | When | Time | What to do |
 | --- | --- | --- |
@@ -248,6 +260,7 @@ Every platform claims credit for the same sale. Incrementality means sales that 
 | Every 3 months | Half a day | A holdout test, a review of your account setup, and the budget plan for the next busy season. |
 
 ## Lesson 20.11: Reporting that leads to decisions
+<!-- stage:grow -->
 
 Every report answers four questions:
 
@@ -259,6 +272,7 @@ Every report answers four questions:
 **Avoid dashboards with 40 numbers.** If a number would not change a decision, drop it.
 
 ## Lesson 20.12: Common analysis mistakes
+<!-- stage:attract -->
 
 1. Judging an ad after one day or $10 of spend.
 2. Comparing ROAS with other stores or other seasons, instead of with your own break-even.

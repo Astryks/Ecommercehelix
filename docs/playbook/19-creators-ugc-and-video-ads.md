@@ -8,6 +8,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Attract (get seen by people who want what you sell). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** How to work with creators and make video ads people watch.
 >
 > **Why it matters:** Real people showing your product often sell better than polished brand ads.
@@ -31,6 +33,7 @@
 ---
 
 ## Lesson 19.1: Why other people's faces sell your product
+<!-- stage:attract -->
 
 People trust people more than brands. When someone who looks like your customer explains why they switched, it feels more real than the brand saying "we love our product".
 
@@ -54,6 +57,7 @@ UGC means user-generated content: photos and videos made by customers or creator
 3. Move the best ones up to paid partners.
 
 ## Lesson 19.2: Finding the right creators
+<!-- stage:attract -->
 
 Fit matters more than follower count. A creator with 4,000 engaged followers who already talks about your kind of product beats a 400,000-follower lifestyle account.
 
@@ -77,6 +81,7 @@ Fit matters more than follower count. A creator with 4,000 engaged followers who
 **Decision rule:** shortlist creators who score 7 or more.
 
 ## Lesson 19.3: Outreach and onboarding
+<!-- stage:attract -->
 
 **First message (change it to fit, keep it personal):**
 
@@ -93,6 +98,7 @@ Fit matters more than follower count. A creator with 4,000 engaged followers who
 7. **Want them to keep featuring you?** Make sure you have stock for months, not weeks, and keep sending new products.
 
 ## Lesson 19.4: Deals, rates and usage rights
+<!-- stage:attract -->
 
 Agree these terms with every creator.
 
@@ -111,6 +117,7 @@ Agree these terms with every creator.
 **Get everything in writing,** even if it is a short email confirming the deal.
 
 ## Lesson 19.5: Affiliate programmes that do not cannibalise you
+<!-- stage:attract -->
 
 An affiliate earns a commission on each sale they bring. "Cannibalise" means your own offers steal the sale from them.
 
@@ -134,6 +141,7 @@ An affiliate earns a commission on each sale they bring. "Cannibalise" means you
 **Recruit in batches.** Ten small affiliates posting twice a month beats one big name posting once.
 
 ## Lesson 19.6: Partnership ads (whitelisting)
+<!-- stage:attract -->
 
 Partnership ads (also called whitelisting) are paid ads that run from a creator's account, or a founder or niche page, instead of your brand page. People see a familiar person, not an ad, so they stop and trust it more.
 
@@ -151,6 +159,7 @@ Meta has reported lower cost per customer and higher click rates when partnershi
 **Ideas that work:** a creator explaining why your product costs what it does; a niche expert's "the one item I would keep"; a founder page telling the story behind a feature.
 
 ## Lesson 19.7: Video ad formats
+<!-- stage:attract -->
 
 Pick formats that fit the job and how well people know you (awareness stage, see Module 5, Lesson 5.5).
 
@@ -173,6 +182,7 @@ Pick formats that fit the job and how well people know you (awareness stage, see
 **Keep a mix.** A healthy account has several formats live at once, not ten versions of one talking head.
 
 ## Lesson 19.8: Hooks that win the first three seconds
+<!-- stage:attract -->
 
 The hook is the first 3 seconds. Every video has two hooks working together:
 
@@ -202,6 +212,7 @@ They do not have to say the same thing. A strong spoken hook can pack in a lot w
 - **Hold rate** = views to 50% (or ThruPlays, 15-second views) ÷ 3-second views. This tells you if the rest of the video keeps people.
 
 ## Lesson 19.9: Scripting
+<!-- stage:attract -->
 
 **A simple structure for a 20 to 45 second video:**
 
@@ -235,6 +246,7 @@ They do not have to say the same thing. A strong spoken hook can pack in a lot w
 **Length:** short videos still work. But 30 to 60 second videos with a real explanation or story often sell well when the product needs explaining. Test both.
 
 ## Lesson 19.10: Shooting on a phone
+<!-- stage:attract -->
 
 1. **Light:** face a window for natural light. Avoid only overhead light.
 2. **Format:** film tall (9:16) at 1080p or higher. Use the back camera when you can.
@@ -244,6 +256,7 @@ They do not have to say the same thing. A strong spoken hook can pack in a lot w
 6. **Keep it natural:** real homes and real people beat studio polish in social feeds.
 
 ## Lesson 19.11: Editing for performance
+<!-- stage:attract -->
 
 1. **Cut every 1 to 2 seconds** at the start. Remove pauses and filler words.
 2. **Add captions burned into the video.** Most people watch with the sound off. Keep text inside the safe zones.
@@ -256,6 +269,7 @@ They do not have to say the same thing. A strong spoken hook can pack in a lot w
 9. **Before launch, check platform "auto-enhance" settings** so they do not change your message.
 
 ## Lesson 19.12: The UGC brief
+<!-- stage:attract -->
 
 Send this to every creator. A clear brief is the difference between videos you can use and wasted product.
 
@@ -285,6 +299,7 @@ Examples we love: [links]
 ```
 
 ## Lesson 19.13: Building a creative engine
+<!-- stage:attract -->
 
 A creative engine is a steady weekly supply of new ads.
 

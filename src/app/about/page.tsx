@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { HelixMark } from "@/components/Logo";
+import { StageTrio } from "@/components/StageTrio";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -51,6 +52,16 @@ export default function About() {
           </p>
           <p>Helix turns that habit into a short daily plan: up to three tasks, the reason behind each one, and a checklist to get it done.</p>
         </Block>
+
+        <Block title="Attract, Convert, Grow">
+          <p>
+            Everything Helix teaches fits into three stages. <strong>Attract</strong> gets the right people to your store with ads, creative, content and social. <strong>Convert</strong> turns those visits into sales with a strong offer, a store people trust, a smooth checkout and emails that bring them back. <strong>Grow</strong> keeps more of every sale and scales it: daily profit, safer budgets, repeat customers, stock, suppliers and the admin that holds it together.
+          </p>
+          <p>
+            Every module and lesson is tagged with its stage, and Today shows which one your lesson is in, so you always know whether you are working on getting buyers in, turning them into customers or growing the profit. <Link href="/learn" className="text-cyan-700 underline">See the stages in Learn</Link>.
+          </p>
+        </Block>
+        <div className="mt-8"><StageTrio compact /></div>
 
         <Block title="Why Black Friday matters">
           <p>

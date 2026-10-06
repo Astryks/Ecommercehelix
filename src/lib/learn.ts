@@ -2,6 +2,7 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { Marked } from "marked";
+import { STAGE_INFO, stageOfLesson, stageOfModule, type StageId } from "./stages";
 
 const DIR = path.join(process.cwd(), "docs", "playbook");
 const REPO = "https://github.com/Astryks/Ecommercehelix/blob/main/docs";
@@ -10,7 +11,8 @@ export function slugify(text: string) {
   return text.toLowerCase().trim().replace(/<[^>]+>/g, "").replace(/[^\p{L}\p{N}\s-]/gu, "").replace(/\s/g, "-");
 }
 
-export type Module = { slug: string; number: number; title: string; outcome: string; plain: string; lessons: { id: string; title: string }[] };
+export type Lesson = { id: string; title: string; ref: string | null; stage: StageId };
+export type Module = { slug: string; number: number; title: string; outcome: string; plain: string; stage: StageId; lessons: Lesson[] };
 
 export function listModules(): Module[] {
   return fs
@@ -22,8 +24,12 @@ export function listModules(): Module[] {
       const title = (md.match(/^# (.+)$/m)?.[1] ?? f).replace(/^Module \d+:\s*/, "");
       const outcome = md.match(/\*\*Outcome:\*\*\s*(.+)/)?.[1] ?? "";
       const plain = md.match(/\*\*What it is:\*\*\s*(.+)/)?.[1] ?? outcome;
-      const lessons = [...md.matchAll(/^## (.+)$/gm)].map((m) => ({ id: slugify(m[1]), title: m[1] }));
-      return { slug: f.replace(/\.md$/, ""), number: Number(f.slice(0, 2)), title, outcome, plain, lessons };
+      const number = Number(f.slice(0, 2));
+      const lessons = [...md.matchAll(/^## (.+)$/gm)].map((m): Lesson => {
+        const ref = m[1].match(/^Lesson (\d+\.\d+):/)?.[1] ?? null;
+        return { id: slugify(m[1]), title: m[1], ref, stage: ref ? stageOfLesson(ref) : stageOfModule(number) };
+      });
+      return { slug: f.replace(/\.md$/, ""), number, title, outcome, plain, stage: stageOfModule(number), lessons };
     });
 }
 
@@ -39,7 +45,10 @@ export function renderModule(slug: string): { html: string; title: string; text:
       heading({ tokens, depth, text }) {
         const inner = this.parser.parseInline(tokens);
         const id = slugify(text);
-        return `<h${depth} id="${id}"><a href="#${id}" class="no-underline">${inner}</a></h${depth}>\n`;
+        const ref = depth === 2 ? text.match(/^Lesson (\d+\.\d+):/)?.[1] : undefined;
+        const st = ref ? STAGE_INFO[stageOfLesson(ref)] : null;
+        const chip = st ? ` <span class="stage-chip not-prose ml-2 inline-flex translate-y-[-3px] items-center rounded-full px-2.5 py-0.5 align-middle font-sans text-[11px] font-semibold uppercase tracking-wide ring-1 ${st.chip}">${st.name}</span>` : "";
+        return `<h${depth} id="${id}"><a href="#${id}" class="no-underline">${inner}</a>${chip}</h${depth}>\n`;
       },
       link({ href, tokens }) {
         const inner = this.parser.parseInline(tokens);
@@ -47,6 +56,7 @@ export function renderModule(slug: string): { html: string; title: string; text:
         const local = href.match(/^(\d\d-[a-z0-9-]+)\.md(#.*)?$/);
         if (local) url = `/learn/${local[1]}${local[2] ?? ""}`;
         else if (/^\.\.\/glossary\.md(#.*)?$/.test(href)) url = "/learn/words";
+        else if (/^stages\.md(#.*)?$/.test(href)) url = "/learn#framework-h";
         else if (href.startsWith("../")) url = `${REPO}/${href.replace(/^\.\.\//, "")}`;
         const ext = /^https?:/.test(url) && !url.startsWith("/");
         return `<a href="${url}"${ext ? ' target="_blank" rel="noreferrer"' : ""}>${inner}</a>`;

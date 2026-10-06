@@ -9,6 +9,8 @@
 <!-- plain:start -->
 > **In plain words**
 >
+> **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
+>
 > **What it is:** Each morning you check one number: did yesterday make a profit?
 >
 > **Why it matters:** Sales can go up while you lose money. Profit is what pays you, so every other choice starts here.
@@ -32,6 +34,7 @@
 ---
 
 ## Lesson 1.1: Why revenue is the wrong scoreboard
+<!-- stage:grow -->
 
 Revenue is all the money customers paid you. It feels good, but it does not tell you what you kept.
 
@@ -48,6 +51,7 @@ The number that matters is **contribution profit**. It means: sales, minus the c
 4. Keep this guess. At the end of this module you will compare it with the real number.
 
 ## Lesson 1.2: Your cost drivers
+<!-- stage:grow -->
 
 Cost drivers are your average costs. They turn sales into profit. You set them up once and check them every 3 months.
 
@@ -85,6 +89,7 @@ There are two kinds of cost.
 10. **I have several stores or regions.** Keep one scorecard per store or currency, then look at them combined.
 
 ## Lesson 1.3: The daily scorecard
+<!-- stage:grow -->
 
 The scorecard is a short daily record of your key numbers. In Helix it lives in **Your numbers**, and the quick version is the profit box on **Today**.
 
@@ -128,6 +133,7 @@ The scorecard is a short daily record of your key numbers. In Helix it lives in 
 <!-- /guide:helix-1-daily-update -->
 
 ## Lesson 1.4: Healthy ranges
+<!-- stage:grow -->
 
 Use this table to see if each number is fine or needs attention.
 
@@ -139,6 +145,7 @@ Use this table to see if each number is fine or needs attention.
 | FCR (fixed bills as a share of sales) | 10 to 20% | Above 30% |
 
 ## Lesson 1.5: Your target MER and break-even numbers
+<!-- stage:grow -->
 
 These numbers tell you how much you can spend on ads and still make money. They are the "line in the sand" for every ad decision.
 
@@ -173,6 +180,7 @@ Target CPA = AOV x target MER. In the example: $100 x 30% = $30.
 **Decision rule:** cost per sale under target CPA is good. Between target and break-even, watch it. Above break-even, the ad loses money on every sale.
 
 ## Lesson 1.6: A 2-minute morning routine
+<!-- stage:grow -->
 
 Do this every morning, before anything else.
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, ClipboardCheck, ListChecks, Search, Sparkles, TrendingUp, Flame, ShieldCheck, Clock, DollarSign, Scale, Target } from "lucide-react";
+import { StageTrio } from "@/components/StageTrio";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { HelixMark } from "@/components/Logo";
@@ -109,6 +110,15 @@ export default function Home() {
       </div>
 
       <main>
+        <section id="framework" aria-labelledby="framework-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+          <div className="mx-auto max-w-6xl px-5">
+            <p className="eyebrow">The Helix framework</p>
+            <h2 id="framework-title" className="mt-3 text-4xl text-slate-900 sm:text-6xl">Attract. Convert. <span className="grad-text">Grow.</span></h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Every store grows the same way: bring the right people in, turn them into buyers, then keep more of every sale and do it again. Every Helix lesson sits in one of these three stages, and Today shows you which one you are working on.</p>
+            <div className="mt-12"><StageTrio hrefFor={(id) => `/learn#${id}`} /></div>
+          </div>
+        </section>
+
         <section id="profit" aria-labelledby="profit-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">It is all about the bottom line</p>
