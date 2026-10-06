@@ -635,5 +635,78 @@
    "revenue based financing"
   ],
   "means": "A loan you repay as a share of your daily sales, so payments rise and fall with sales."
+ },
+ {
+  "term": "Payout",
+  "aka": [
+   "payouts"
+  ],
+  "means": "The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts."
+ },
+ {
+  "term": "Payment reserve",
+  "aka": [
+   "rolling reserve",
+   "payout hold"
+  ],
+  "means": "Part of your sales that a payment provider holds back for a while in case of refunds or chargebacks."
+ },
+ {
+  "term": "3D Secure",
+  "aka": [
+   "3DS"
+  ],
+  "means": "An extra check where the shopper's bank asks them to confirm a card payment, often in their banking app."
+ },
+ {
+  "term": "IOSS",
+  "aka": [
+   "Import One-Stop Shop"
+  ],
+  "means": "The EU scheme that lets a seller charge EU VAT at checkout on parcels worth up to 150 euros and pay it in one country."
+ },
+ {
+  "term": "De minimis",
+  "aka": [],
+  "means": "A value below which imported parcels skip duty or tax. The US ended its $800 de minimis for all countries in August 2025."
+ },
+ {
+  "term": "Stocktake",
+  "aka": [
+   "stock take",
+   "inventory count"
+  ],
+  "means": "Counting every unit you hold, usually at the end of the financial year, so your books match the shelf."
+ },
+ {
+  "term": "Clearing account",
+  "aka": [
+   "clearing accounts"
+  ],
+  "means": "A holding account in your books where a payment provider's sales and fees sit until the payout lands in the bank."
+ },
+ {
+  "term": "Contractor",
+  "aka": [
+   "contractors"
+  ],
+  "means": "Someone who runs their own business and does work for you, rather than being your employee."
+ },
+ {
+  "term": "Usage rights",
+  "aka": [],
+  "means": "Permission to use a creator's content in a stated place (such as paid ads) for a stated time."
+ },
+ {
+  "term": "Business portfolio",
+  "aka": [
+   "Business Manager"
+  ],
+  "means": "Meta's home for your business assets: ad accounts, Pages, pixels and the people who can use them."
+ },
+ {
+  "term": "Partner access",
+  "aka": [],
+  "means": "Letting an agency or freelancer use your ad account through their own business, while you keep ownership."
  }
 ]

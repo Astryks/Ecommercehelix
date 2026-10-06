@@ -8,6 +8,7 @@ import {
 } from "@/lib/repo";
 import { seasonalAlerts, SEASON_TASK_ID, toCountry } from "@/lib/seasons";
 import { toTaxMode } from "@/lib/tax";
+import { BIZ_TASK_ID } from "@/lib/business";
 import { toTrack } from "@/lib/tracks";
 import { isoDay } from "@/lib/dates";
 import { findActionable } from "@/lib/actionable";
@@ -24,7 +25,7 @@ const VALID_ID = /^(day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build
 export async function markDone(form: FormData) {
   const u = await requireUser();
   const taskId = String(form.get("taskId"));
-  if (VALID_ID.test(taskId) || SEASON_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
+  if (VALID_ID.test(taskId) || SEASON_TASK_ID.test(taskId) || BIZ_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
   revalidatePath("/dashboard", "layout");
 }
 

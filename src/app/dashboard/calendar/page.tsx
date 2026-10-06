@@ -2,7 +2,9 @@ import Link from "next/link";
 import { BellRing, CalendarDays, Download, ExternalLink, ListPlus } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getSeasonPlans } from "@/lib/repo";
-import { COUNTRIES, countdownText, seasonalAlerts, toCountry, upcomingEvents, type Kind } from "@/lib/seasons";
+import { COUNTRIES, countdownText, seasonalAlerts, toCountry, type Kind } from "@/lib/seasons";
+import { calendarWithAdmin } from "@/lib/business";
+import { lessonLink } from "@/lib/lesson-links";
 import { isoDay, prettyDay } from "@/lib/dates";
 import { appUrl } from "@/lib/meta/config";
 
@@ -10,6 +12,7 @@ const KIND: Record<Kind, { label: string; chip: string }> = {
   sale: { label: "Sale", chip: "bg-rose-50 text-rose-700 ring-rose-200" },
   gifting: { label: "Gifting", chip: "bg-violet-50 text-violet-700 ring-violet-200" },
   seasonal: { label: "Seasonal", chip: "bg-sky-50 text-sky-700 ring-sky-200" },
+  admin: { label: "Business admin", chip: "bg-slate-100 text-slate-700 ring-slate-300" },
 };
 const monthName = (iso: string) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-AU", { month: "long", year: "numeric", timeZone: "UTC" });
 
@@ -19,7 +22,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
   const [acct, plans] = await Promise.all([getAccount(u.id), getSeasonPlans(u.id)]);
   const country = sp.country ? toCountry(sp.country) : acct.country;
   const today = isoDay();
-  const events = upcomingEvents(today, country, 365);
+  const events = calendarWithAdmin(today, country, 365);
   const active = new Set(seasonalAlerts(today, country).map((a) => a.key));
   const added = new Set(plans.map((p) => p.planKey));
   const base = appUrl();
@@ -33,7 +36,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><CalendarDays className="h-7 w-7 text-cyan-600" aria-hidden /> Calendar</h1>
-          <p className="mt-1 max-w-2xl text-slate-600">Every key sale and gifting date for the next 12 months, with a countdown. Big dates come with a prep plan, and Helix warns you on Today weeks before each one.</p>
+          <p className="mt-1 max-w-2xl text-slate-600">Every key sale and gifting date for the next 12 months, plus business admin dates like BAS, tax returns and security checks. Big dates come with a prep plan, and Helix warns you on Today before each one.</p>
         </div>
         <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold" role="tablist" aria-label="Country">
           {COUNTRIES.map((c) => (
@@ -77,6 +80,10 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
                           : <span className="text-slate-600">{e.planSteps}-step prep plan. Helix alerts you on Today from {prettyDay(e.prepFrom!)}.</span>}
                       </p>
                     ) : null}
+                    {e.kind === "admin" && e.lesson && (() => {
+                      const l = lessonLink(e.lesson);
+                      return l ? <p className="mt-2 text-xs"><Link href={l.href} className="font-semibold text-cyan-700 underline">Lesson {e.lesson}: {l.title}</Link> <span className="text-slate-500">· General information, not tax or legal advice.</span></p> : null;
+                    })()}
                   </div>
                   <div className="flex-none text-right">
                     <p className={`text-sm font-bold ${e.daysTo <= 14 ? "text-rose-600" : e.daysTo <= 60 ? "text-orange-600" : "text-slate-700"}`}>{countdownText(e.daysTo)}</p>

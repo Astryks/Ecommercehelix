@@ -41,7 +41,7 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 
 | Doc | What it covers |
 | --- | --- |
-| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 22 modules of original lessons, checklists, examples and self-checks (also served in the app at /learn). |
+| [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 28 modules of original lessons, checklists, examples and self-checks (also served in the app at /learn). |
 | [docs/daily-curriculum.md](docs/daily-curriculum.md) | The Growing track: 64 days, one lesson, one topic, one action per day, ordered by store stage (generated). |
 | [docs/daily-curriculum-starting.md](docs/daily-curriculum-starting.md) | The Just starting track: 28 lighter days for new founders (product and offer, Shopify store setup step by step, first small test campaign) (generated). |
 | [docs/audit-engine.md](docs/audit-engine.md) | Proactive audits: schedules, crawler, PageSpeed, API pulls, cross-diagnosis rules, Insights. |
@@ -105,7 +105,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Area | Route | Status |
 | --- | --- | --- |
 | Marketing home, About, pricing, FAQ | `/`, `/about` | Real |
-| Learn (22 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
+| Learn (28 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
 | Sign-in (Google, email magic link, or demo login) | `/signin` | Real (Auth.js v5) |
 | Onboarding: store link, track (Just starting or Growing), country | `/start` | Real |
 | Today: seasonal alert and prep plan, upcoming key dates, day N lesson + action for your track, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |
@@ -116,6 +116,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Approvals queue | `/dashboard/approvals` | Real; Meta paused drafts execute for real when connected |
 | Connections (Meta connect, asset picker, sync, disconnect, activity log) | `/dashboard/integrations`, `/api/meta/*`, `/api/cron/meta-sync` | Real (mock mode without a Meta app) |
 | Dashboard: week, month, year to date and last 12 months; revenue, costs, profit, ROAS/MER, channels, new vs returning, cost donut; every metric has a plain-words panel (what, how, what good looks like) and green/amber/red against your own break-even lines | `/dashboard/analytics` | Real maths from daily numbers and Meta sync (Recharts); Shopify and Google sync stubbed; two years of labelled example data in demo mode |
+| Run your business: 13 operating topics (fulfilment and 3PLs, shipping, returns, stock systems, payments and holds, chargebacks and fraud, account safety, ad accounts and agencies, GST and BAS, US sales tax, selling abroad, books and tax time, team and money) linking to playbook modules 23 to 28; key thresholds with official sources; dated admin reminders (BAS, AU tax return, EOFY, 1099-NEC, US tax day, estimated tax, quarterly security checks) on Today, the calendar and the .ics feed | `/dashboard/business` | Real (`src/lib/business.ts`); general information, not tax or legal advice |
 | Suppliers & stock: supplier list (factory vs trading company, MOQ, lead time, terms), landed cost, reorder point = sales a day × (lead time + safety days), stock-out countdown, suggested order size, Black Friday last safe order dates, reorder alerts on Today | `/dashboard/stock` | Real maths (`src/lib/stock.ts`), Prisma models `Supplier` and `StockItem` with in-memory fallback; Shopify inventory and sales sync stubbed (labelled example data; sales a day typed by hand) |
 | Daily scorecard (entry, CSV import, rollups, flags, sparklines, products) | `/dashboard/scorecard` | Real; syncs stubbed; example data until cleared |
 | Your ads (campaign tracker: spend more / wait / new ads needed / stop) | `/dashboard/campaigns` | Real Meta rows when connected; Google and TikTok EXAMPLE |

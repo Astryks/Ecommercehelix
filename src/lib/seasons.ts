@@ -16,7 +16,7 @@ export const COUNTRIES: { id: Country; name: string; flag: string }[] = [
 ];
 export const toCountry = (v: unknown): Country => (v === "US" ? "US" : "AU");
 
-export type Kind = "sale" | "gifting" | "seasonal";
+export type Kind = "sale" | "gifting" | "seasonal" | "admin";
 export type Learn = { slug: string; anchor: string; label: string };
 export type PrepTask = { id: string; offset: number; title: string; steps: string[]; learn?: Learn };
 export type SeasonEvent = {
@@ -400,6 +400,8 @@ export type CalendarEntry = {
   /** For dates with a prep plan: when Helix starts alerting. */
   prepFrom?: string;
   planSteps?: number;
+  /** Business admin dates: the playbook lesson ref, e.g. "26.1". */
+  lesson?: string;
 };
 
 /** Every key date for a country in the next `horizon` days, soonest first. */

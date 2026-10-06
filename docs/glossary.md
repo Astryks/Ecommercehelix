@@ -4,6 +4,7 @@ Plain-English meanings for every term Helix uses. The app shows the relevant one
 
 Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum.py`.
 
+- **3D Secure** (3DS): An extra check where the shopper's bank asks them to confirm a card payment, often in their banking app.
 - **3PL** (third-party logistics, fulfilment centre): Third-party logistics: a warehouse company that stores your stock and packs and ships your orders.
 - **Abandoned checkout**: When someone starts checkout but does not finish. A reminder email can bring them back.
 - **Above the fold**: The part of a page you see before you scroll.
@@ -19,13 +20,16 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Break-even ROAS**: The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
 - **Broad targeting** (broad): Letting Meta find buyers with few or no audience limits. Works best with strong ads.
 - **Bundle** (bundles): Two or more products sold together, often with a small saving.
+- **Business portfolio** (Business Manager): Meta's home for your business assets: ad accounts, Pages, pixels and the people who can use them.
 - **Buy now pay later** (BNPL): Payment options like Afterpay or Klarna that let shoppers split the cost.
 - **Campaign** (campaigns): The top level in an ad account. It holds the goal, like getting sales.
 - **Campaign email** (campaign emails): A one-off email you send to your list, like a new arrival announcement.
 - **Card testing**: When fraudsters use your checkout to try many stolen card numbers with small orders.
 - **Cash forecast**: A week-by-week list of money coming in and going out, so you can see tight weeks early.
 - **Chargeback** (chargebacks, dispute): When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale.
+- **Clearing account** (clearing accounts): A holding account in your books where a payment provider's sales and fees sit until the payout lands in the bank.
 - **Cold audience** (cold, prospecting): People who have never heard of you.
+- **Contractor** (contractors): Someone who runs their own business and does work for you, rather than being your employee.
 - **Conversion rate** (CR): Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits.
 - **CPA** (cost per acquisition, cost per sale, cost per purchase): Cost per acquisition: how much ad money it took to get one sale.
 - **CPM**: Cost to show your ad 1,000 times.
@@ -35,6 +39,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Custom audience** (custom audiences): A list Meta builds from your own data, like site visitors or customers.
 - **DAP** (delivered at place, DDU): Delivered at place: the customer pays any import taxes when the parcel arrives.
 - **DDP** (delivered duty paid): Delivered duty paid: you pay the import taxes so the customer pays nothing extra on delivery.
+- **De minimis**: A value below which imported parcels skip duty or tax. The US ended its $800 de minimis for all countries in August 2025.
 - **Domain** (domain name): Your store's web address, like yourbrand.com.
 - **Duties** (import duty, customs duty): Taxes charged by a country on goods coming in from overseas.
 - **Express wallets**: One-tap payment options like Apple Pay, Google Pay and Shop Pay.
@@ -49,6 +54,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Hook** (hooks): The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
 - **Hook rate**: Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention.
 - **Hot audience** (hot, retargeting): People close to buying: they added to cart or started checkout.
+- **IOSS** (Import One-Stop Shop): The EU scheme that lets a seller charge EU VAT at checkout on parcels worth up to 150 euros and pay it in one country.
 - **KPI** (KPIs): Key performance indicator: one of the few numbers you watch to know if things are working.
 - **Landed cost**: What one unit really costs once it reaches your warehouse: product, freight, duties and fees.
 - **Landing page**: The page someone lands on after clicking an ad.
@@ -63,7 +69,10 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Negative keyword** (negatives, negative keywords): A word you tell Google never to show your ads for, to stop wasted clicks.
 - **Nexus** (economic nexus): In the US, a link with a state (like a warehouse there, or enough sales into it) that means you must collect its sales tax.
 - **Organic**: Unpaid: posts, search results and word of mouth that you do not pay to show.
+- **Partner access**: Letting an agency or freelancer use your ad account through their own business, while you keep ownership.
 - **Partnership ad** (partnership ads, Spark ads, Spark ad): An ad that runs from a creator's own account, so people see their name instead of yours.
+- **Payment reserve** (rolling reserve, payout hold): Part of your sales that a payment provider holds back for a while in case of refunds or chargebacks.
+- **Payout** (payouts): The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts.
 - **Pixel**: A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
 - **PMax** (Performance Max): A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign.
 - **Pop-up**: A box on your site that asks visitors for their email, often with a small reward.
@@ -87,12 +96,14 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Session** (sessions): One visit to your store. One person can make several visits.
 - **Shipping protection** (shipping insurance): An optional fee at checkout that covers lost, stolen or damaged parcels.
 - **SKU** (SKUs): Stock keeping unit: a short code you give each product option so you can track it.
+- **Stocktake** (stock take, inventory count): Counting every unit you hold, usually at the end of the financial year, so your books match the shelf.
 - **Target CPA** (good CPA): The cost per sale you aim for so each sale still leaves you profit.
 - **Test order** (test orders): A pretend order you place yourself to check payments, emails and tracking work.
 - **Theme** (themes): The design template for your Shopify store. It controls how every page looks.
 - **ThruPlay** (thruplay rate): A video view of 15 seconds or more (or the whole video if it is shorter).
 - **Two-factor authentication** (2FA): A second check, like a code from an app, needed to log in. It stops most account takeovers.
 - **UGC** (user-generated content): Photos and videos made by real customers or creators instead of the brand.
+- **Usage rights**: Permission to use a creator's content in a stated place (such as paid ads) for a stated time.
 - **UTM** (UTMs, UTM tags): Tags added to the end of a link so your analytics can tell which ad or email a visitor came from.
 - **Variable costs** (variable cost): Costs that grow with every order: product cost, shipping and payment fees.
 - **Variant** (variants): One option of a product, like a size or colour, with its own stock and price.

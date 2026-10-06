@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BarChart3, BookOpen, Boxes, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
@@ -7,6 +7,8 @@ import { countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { costRatios, money, summarise } from "@/lib/today";
 import { taxLabel } from "@/lib/tax";
+import { adminDueSoon } from "@/lib/business";
+import { lessonLink } from "@/lib/lesson-links";
 import { termsIn } from "@/lib/glossary";
 import { guidesForDay } from "@/lib/guides";
 import { ProfitToday } from "@/components/dashboard/ProfitToday";
@@ -28,6 +30,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const rawDays = await getRawDays(u.id);
   const today = isoDay();
   const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
+  const adminSoon = adminDueSoon(today, acct.country, new Set(completions.map((c) => c.taskId)));
   const yesterday = addDays(today, -1);
   const summary = summarise(days, yesterday, settings);
   const yRow = rawDays.find((d) => d.date === yesterday);
@@ -163,6 +166,30 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </span>
           <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See reorder dates <ArrowRight className="h-4 w-4" aria-hidden /></span>
         </Link>
+      )}
+
+      {adminSoon.length > 0 && (
+        <section aria-labelledby="admin-h" className="card mt-4 border-l-4 border-l-slate-700 p-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 id="admin-h" className="flex items-center gap-2 font-semibold text-slate-900"><Briefcase className="h-5 w-5 text-slate-700" aria-hidden /> Business admin coming up</h2>
+            <Link href="/dashboard/business" className="text-sm font-semibold text-cyan-700 hover:underline">Run your business <ArrowRight className="inline h-4 w-4" aria-hidden /></Link>
+          </div>
+          <ul className="mt-2 divide-y divide-slate-100">
+            {adminSoon.map((a) => {
+              const l = lessonLink(a.lesson);
+              return (
+                <li key={a.key} className="flex flex-wrap items-center gap-3 py-2.5">
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-semibold text-slate-900">{a.name} <span className={`ml-1 font-bold ${a.daysTo <= 14 ? "text-rose-600" : "text-orange-600"}`}>{countdownText(a.daysTo)}</span> <span className="font-normal text-slate-500">· {prettyDay(a.date)}</span></p>
+                    <p className="text-xs text-slate-600">{a.note} {l && <Link href={l.href} className="font-semibold text-cyan-700 underline">How to do it</Link>}</p>
+                  </div>
+                  <form action={markDone}><input type="hidden" name="taskId" value={a.taskId} /><button className="btn-ghost text-xs">Mark done</button></form>
+                </li>
+              );
+            })}
+          </ul>
+          <p className="mt-1 text-[11px] text-slate-500">General information, not tax or legal advice. Check with a registered tax agent or accountant.</p>
+        </section>
       )}
 
       <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,1fr)_330px]">

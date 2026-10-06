@@ -1,5 +1,6 @@
 import { addDays } from "./dates";
-import { COUNTRIES, upcomingEvents, type Country } from "./seasons";
+import { COUNTRIES, type Country } from "./seasons";
+import { calendarWithAdmin } from "./business";
 
 /** iCalendar (RFC 5545) export of the key retail dates, with a "start prep" entry for dates that have a prep plan. */
 
@@ -32,7 +33,7 @@ export function buildIcs(today: string, country: Country, opts: { baseUrl: strin
     L.push("BEGIN:VEVENT", `UID:${uid}@ecommercehelix.com`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${d8(date)}`, `DTEND;VALUE=DATE:${d8(addDays(date, 1))}`,
       `SUMMARY:${esc(summary)}`, `DESCRIPTION:${esc(desc)}`, "TRANSP:TRANSPARENT", "END:VEVENT");
   };
-  for (const e of upcomingEvents(today, country, 400)) {
+  for (const e of calendarWithAdmin(today, country, 400)) {
     ev(`${country}-${e.key}`, e.date, e.name, e.note + (e.approx ? ` (Date is approximate: ${e.approx}.)` : ""));
     if (e.prepFrom && e.planSteps && e.prepFrom >= today)
       ev(`${country}-${e.key}-prep`, e.prepFrom, `Start prep: ${e.name}`, `Helix starts your ${e.name} prep plan today (${e.planSteps} steps). Open Today: ${opts.baseUrl}/dashboard#season`);

@@ -96,4 +96,16 @@ G = [
  ("Return rate", [], "The share of orders that customers send back."),
  ("Shipping protection", ["shipping insurance"], "An optional fee at checkout that covers lost, stolen or damaged parcels."),
  ("Revenue-based financing", ["revenue based financing"], "A loan you repay as a share of your daily sales, so payments rise and fall with sales."),
+ ("Payout", ["payouts"], "The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts."),
+ ("Payment reserve", ["rolling reserve", "payout hold"], "Part of your sales that a payment provider holds back for a while in case of refunds or chargebacks."),
+ ("3D Secure", ["3DS"], "An extra check where the shopper's bank asks them to confirm a card payment, often in their banking app."),
+ ("IOSS", ["Import One-Stop Shop"], "The EU scheme that lets a seller charge EU VAT at checkout on parcels worth up to 150 euros and pay it in one country."),
+ ("De minimis", [], "A value below which imported parcels skip duty or tax. The US ended its $800 de minimis for all countries in August 2025."),
+ ("Stocktake", ["stock take", "inventory count"], "Counting every unit you hold, usually at the end of the financial year, so your books match the shelf."),
+ ("Clearing account", ["clearing accounts"], "A holding account in your books where a payment provider's sales and fees sit until the payout lands in the bank."),
+ ("Contractor", ["contractors"], "Someone who runs their own business and does work for you, rather than being your employee."),
+ ("Usage rights", [], "Permission to use a creator's content in a stated place (such as paid ads) for a stated time."),
+ ("Business portfolio", ["Business Manager"], "Meta's home for your business assets: ad accounts, Pages, pixels and the people who can use them."),
+ ("Partner access", [], "Letting an agency or freelancer use your ad account through their own business, while you keep ownership."),
+
 ]
