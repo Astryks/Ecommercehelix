@@ -1,5 +1,7 @@
 # SOP 05: Meta account structure and scaling
 
+> **In plain words.** Keep your Meta (Facebook and Instagram) ads simple: one campaign to find new customers, one to remind past visitors, and a place to test new ads. Raise budgets in small steps, only while sales stay profitable.
+
 **Purpose.** Give Meta a simple structure that separates new customers from warm audiences, gives creative room to be tested, and can be scaled in safe steps.
 
 **Copilot triggers**

@@ -1,5 +1,7 @@
 # SOP 07: Creative testing
 
+> **In plain words.** On Meta and TikTok the ad itself now decides who sees it. So keep testing new ads every week, keep what works, stop what does not, and write down what you learn.
+
 **Purpose.** Creative is now the main targeting lever on Meta and TikTok. The algorithm finds the audience; the ad decides who stops. This SOP keeps a steady flow of tests, learns from each batch and builds a library of proven ideas.
 
 **Copilot triggers**

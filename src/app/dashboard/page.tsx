@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { BookOpen, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, getCompletions, getDays, getSettings, listApprovals, streakFrom } from "@/lib/repo";
+import { getAccount, getCompletions, getDays, getSeasonPlans, getSettings, listApprovals, streakFrom } from "@/lib/repo";
+import { seasonalAlerts } from "@/lib/seasons";
+import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { costRatios, summarise } from "@/lib/today";
 import { termsIn } from "@/lib/glossary";
 import { guidesForDay } from "@/lib/guides";
@@ -9,15 +11,16 @@ import { ProfitToday } from "@/components/dashboard/ProfitToday";
 import { getSnapshot } from "@/lib/meta/store";
 import { DAYS, STAGES, STAGE_TIER, AREA_STYLE, dayTaskId } from "@/lib/seed/curriculum";
 import { insightsFor } from "@/lib/signals";
+import { dayProgress } from "@/lib/progress";
 import { PLAN_RANK, planName } from "@/lib/plans";
 import { addDays, isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
-import { markDone, doItForMe, quickUpdate } from "./actions";
+import { markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, completions, approvals, live, days, settings, snap] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id)]);
+  const [acct, completions, approvals, live, days, settings, snap, plans] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id)]);
   const today = isoDay();
   const yesterday = addDays(today, -1);
   const summary = summarise(days, yesterday, settings);
@@ -28,10 +31,16 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
   const unlocked = (stage: number) => PLAN_RANK[acct.plan] >= PLAN_RANK[STAGE_TIER[stage]];
 
-  const doneTodayDay = completions.find((c) => c.taskId.startsWith("day-") && c.completedOn === today);
-  const nextDay = DAYS.find((d) => !done.has(dayTaskId(d.day)));
-  const ahead = sp.ahead === "1";
-  const current = doneTodayDay && !ahead ? null : nextDay;
+  const prog = dayProgress({
+    days: DAYS,
+    doneIds: done,
+    completedToday: completions.filter((c) => c.completedOn === today).map((c) => c.taskId),
+    ahead: sp.ahead === "1",
+    unlocked,
+    taskId: dayTaskId,
+  });
+  const nextDay = prog.nextDay;
+  const current = prog.current ?? null;
   const currentLocked = current ? !unlocked(current.stage) : false;
   const insights = live.insights.filter((i) => !done.has(`insight-${i.id}`)).slice(0, 2);
 
@@ -40,8 +49,12 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const score = Math.min(100, 40 + 3 * completions.length + 2 * streak);
   const totalMinutes = (current?.minutes ?? 0) + insights.length * 10;
 
-  const status = (d: (typeof DAYS)[number]) =>
-    done.has(dayTaskId(d.day)) ? "done" : !unlocked(d.stage) ? "locked" : d.day === nextDay?.day ? "today" : "next";
+  const status = prog.status;
+  // Seasonal alerts from the real date: the most urgent one, plus any other active plan the user added.
+  const alerts = seasonalAlerts(today);
+  const planKeys = new Set(plans.map((p) => p.planKey));
+  const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key));
+  const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a));
   const currentStage = nextDay?.stage ?? STAGES.length;
 
   return (
@@ -72,6 +85,12 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </div>
         </div>
       </header>
+
+      {shownAlerts.map((a, i) => (
+        <div key={a.key} className="mt-6">
+          <SeasonalAlertCard alert={a} others={i === shownAlerts.length - 1 ? otherAlerts : []} planAdded={planKeys.has(a.key)} done={done} addAction={addPrepPlan} doneAction={markDone} />
+        </div>
+      ))}
 
       <div className="mt-6">
         <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} action={quickUpdate}
@@ -219,11 +238,11 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                           return (
                             <li key={d.day} className="relative flex gap-3">
                               <span className={`relative z-10 flex h-6 w-6 flex-none items-center justify-center rounded-full text-[10px] font-bold ring-4 ring-white ${
-                                s === "done" ? "bg-emerald-500 text-white" : s === "today" ? "bg-cyan-500 text-white" : s === "locked" ? "bg-slate-200 text-slate-500" : "border border-slate-300 bg-white text-slate-500"}`}>
+                                s === "done" ? "bg-emerald-500 text-white" : s === "today" || s === "tomorrow" ? "bg-cyan-500 text-white" : s === "locked" ? "bg-slate-200 text-slate-500" : "border border-slate-300 bg-white text-slate-500"}`}>
                                 {s === "done" ? <Check className="h-3.5 w-3.5" aria-hidden /> : s === "locked" ? <Lock className="h-3 w-3" aria-hidden /> : d.day}
                               </span>
                               <div className={s === "locked" ? "opacity-60" : ""}>
-                                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Day {d.day} · <span className={s === "today" ? "text-cyan-600" : s === "done" ? "text-emerald-600" : ""}>{s}</span></p>
+                                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Day {d.day} · <span className={s === "today" || s === "tomorrow" ? "text-cyan-600" : s === "done" ? "text-emerald-600" : ""}>{s === "today" ? "today" : s === "tomorrow" ? "up next (tomorrow)" : s}</span></p>
                                 <p className="text-sm leading-5 text-slate-800">{d.title}</p>
                               </div>
                             </li>

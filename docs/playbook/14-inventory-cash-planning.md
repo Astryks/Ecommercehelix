@@ -1,8 +1,8 @@
 # Module 14: Inventory, cash and the year plan
 
-**Outcome:** the right stock at the right time, a cash forecast you trust, and a year plan that ties revenue, stock and marketing together.
+**Outcome:** the right stock at the right time, a cash forecast you trust, and a plan for the year that ties sales, stock and marketing together.
 
-**Related SOP:** [17](../sops/17-inventory-cash-planning.md)
+**Related SOP:** [17 Inventory and cash planning](../sops/17-inventory-cash-planning.md)
 
 
 <!-- plain:start -->
@@ -29,45 +29,87 @@
 ---
 
 ## Lesson 14.1: Range planning
-1. Choose categories that earn the most and fit your brand.
-2. Track styles and their sell-through (a style tracker: launch date, units, sell-through %, margin, reorder decision).
-3. Accelerate entry: test new styles in small runs, reorder winners fast.
-4. Range plan: how many styles per category, price points, new vs core.
-5. Forecast stability: core products forecast from history; new products from comparable launches.
+
+Your range is the set of products you sell. Plan it on purpose.
+
+1. **Choose categories** that earn the most and fit your brand.
+2. **Track every style** in a simple table: launch date, units sold, sell-through % (the share of stock you sold), margin, and your reorder decision.
+3. **Test new styles fast.** Order a small first run. Reorder the winners quickly.
+4. **Write a range plan:** how many styles per category, at which prices, and how many are new versus core (always in stock).
+5. **Forecast sensibly.** Forecast core products from their sales history. Forecast new products from similar past launches.
 
 ## Lesson 14.2: The weekly stock snapshot
-Weeks of cover, ABC grades, reorder dates (Lesson in SOP 17). Flags for low and excess cover.
+
+Once a week, check your stock in one table. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
+
+1. **Weeks of cover:** how many weeks your current stock will last at the current sales rate. Stock ÷ units sold per week.
+2. **ABC grades:** A items are the few products that make most of your sales. B items are the middle. C items sell slowly.
+3. **Reorder dates:** when to order, so new stock arrives before you run out.
+4. **Flags:** mark products with too little cover (about to sell out) and too much cover (cash stuck on shelves).
+
+**Decision rule:** do not run ads hard on a product that is about to sell out.
 
 ## Lesson 14.3: Five cash levers
+
+Stock ties up cash. Use these five levers to free it.
+
 | Lever | Examples |
 | --- | --- |
-| Get it cheaper | Volume pricing, alternative suppliers, cheaper freight modes, packaging changes |
-| Influence suppliers | Lower deposits, staged production, longer terms, consignment |
-| Pay for it later | Trade finance, supplier terms, inventory finance (compare true cost) |
-| Reduce risk | Smaller first runs, preorders, safety stock only on A items |
-| Sell it faster | Promote high-cover items, bundles, clearance with soft tools |
+| Get it cheaper | Better prices on bigger orders, other suppliers, cheaper freight (sea instead of air), packaging changes |
+| Get better terms from suppliers | Smaller deposits, production in stages, more time to pay, consignment (pay only when it sells) |
+| Pay for it later | Trade finance, supplier credit, inventory loans. Always compare the true cost. |
+| Lower the risk | Smaller first orders, preorders, extra safety stock only for A items |
+| Sell it faster | Promote products with too much cover, bundles, clearance with gentle tools (gifts, bundles) |
 
 ## Lesson 14.4: Cash flow forecast
-Monthly for 3 to 12 months: opening cash, revenue receipts, stock payments (deposits and balances), ad spend, fixed costs, tax, debt. Update monthly. Set aside a tax share of profit (confirm with an accountant).
+
+A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank.
+
+1. **Make a table for the next 3 to 12 months.**
+2. **For each month, list:**
+   - Cash at the start of the month.
+   - Money coming in from sales.
+   - Stock payments (deposits and final payments).
+   - Ad spend.
+   - Fixed costs.
+   - Tax.
+   - Loan repayments.
+3. **Update it every month.**
+4. **Put aside a share of profit for tax.** Ask your accountant how much.
 
 ## Lesson 14.5: The debt decision
-Borrow only when the return on the money is clearly higher than its cost and the repayment fits the cash forecast in a bad month. Common uses: stock for proven demand, peak-season inventory. Avoid borrowing to fund losses.
+
+**Decision rule:** only borrow when both are true:
+
+1. The money will clearly earn more than it costs.
+2. You could still make the repayments in a bad month, according to your cash forecast.
+
+**Good reasons to borrow:** stock for products that already sell well, or extra stock for the busy season.
+
+**Bad reason to borrow:** to cover losses.
 
 ## Lesson 14.6: Money mindset and finance help
-Separate personal and business money. Pay yourself a set amount. Review numbers weekly. A fractional CFO can help at higher revenue or before raising money.
+
+1. Keep personal and business money in separate accounts.
+2. Pay yourself a set amount each month.
+3. Look at your numbers every week.
+4. Consider a part-time finance expert (a fractional CFO) once sales are bigger, or before you raise money from investors.
 
 ## Lesson 14.7: The year plan
-1. Growth rate from your history (for example last 12 months vs prior 12).
-2. Monthly revenue target including peaks.
-3. Back-solve stock purchases and marketing budget per month.
-4. Marketing calendar: launches, sales, events, content themes; review every 6 months and at the half-year mark.
+
+1. **Find your growth rate.** Compare the last 12 months with the 12 months before.
+2. **Set a sales target for each month,** including your big sales peaks.
+3. **Work backwards.** From each month's target, work out the stock you need to buy and the marketing budget.
+4. **Make a marketing calendar:** launches, sales, events and content themes.
+5. **Review the plan** every 6 months.
 
 ## Self-check
+
 1. Name the five cash levers.
 2. When is borrowing reasonable?
 
 <details><summary>Answers</summary>
 
-1. Get it cheaper, influence suppliers, pay later, reduce risk, sell faster.
-2. When the return clearly exceeds the cost and repayments fit a bad-month forecast, typically for proven stock.
+1. Get it cheaper, get better supplier terms, pay later, lower the risk, sell faster.
+2. When the money clearly earns more than it costs and you could make repayments in a bad month. Usually for stock that already sells well.
 </details>

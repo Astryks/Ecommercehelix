@@ -1,10 +1,13 @@
 # SOP 15: Promo calendar and sale playbook
 
+> **In plain words.** Plan the year's launches and sales ahead, so big days are big and profitable and customers do not learn to wait for discounts. Helix now warns you weeks ahead of each key date on Today and the home page, and one click adds a dated prep plan.
+
 **Purpose.** Plan a year of launches and sales so revenue peaks are big and profitable, and the store does not train customers to wait for discounts.
 
 **Copilot triggers**
 - Monthly review (rolling 90-day calendar).
 - 6 to 8 weeks before a big seasonal sale (Black Friday, end of financial year, local holidays).
+- Automatic seasonal alerts from the real date (`src/lib/seasons.ts`). Black Friday shows from 12 weeks out, Christmas cut-offs from 8 weeks, Boxing Day and New Year from 5 weeks, Valentine's Day 6, Mother's Day 8, EOFY 6, Father's Day 7. Each alert offers a one-click prep plan with dated steps, appears in the weekly report, and is sent as a Monday email and push reminder.
 - The user asks "how should I run my sale?" or "how much should I spend during the sale?".
 
 ## Calendar principles

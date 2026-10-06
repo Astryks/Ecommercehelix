@@ -1,5 +1,7 @@
 # SOP 13: Email and SMS flows
 
+> **In plain words.** Flows are emails and texts that send by themselves when someone does something, like joining your list or leaving a cart. Set them up once and they earn every day without more ad spend.
+
 **Purpose.** Build the automated messages that earn money every day without new ad spend. For most stores, flows should make about half of email revenue and campaigns the other half.
 
 **Copilot triggers**

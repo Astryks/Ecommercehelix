@@ -1,5 +1,7 @@
 # SOP 06: Meta daily optimisation
 
+> **In plain words.** A 5 to 10 minute check each day. First stop what is losing money. Then give more budget to what is working. Then decide if a campaign needs new ads.
+
 **Purpose.** A 5 to 10 minute daily routine that turns off what is losing, feeds what is winning and decides when a campaign needs new ads. Defence first, then offence.
 
 **Copilot triggers**

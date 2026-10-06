@@ -19,7 +19,7 @@ Status in the app: the Email automation page lists all flows with **example** st
 
 | Flow | Trigger | Goal | Example status |
 | --- | --- | --- | --- |
-| [Welcome series](#welcome) | Joins the email or SMS list (pop-up, footer, competition) | Turn a new subscriber into a first-time buyer | live |
+| [Welcome series](#welcome-series) | Joins the email or SMS list (pop-up, footer, competition) | Turn a new subscriber into a first-time buyer | live |
 | [Abandoned checkout](#abandoned-checkout) | Started checkout, no order within 1 hour | Recover high-intent shoppers | live |
 | [Abandoned cart](#abandoned-cart) | Added to cart, did not start checkout within 2 hours | Bring back shoppers who showed interest | not set up |
 | [Browse abandonment](#browse-abandonment) | Viewed a product twice or more in 24 hours, no add to cart (known subscriber) | Help undecided shoppers choose | not set up |
@@ -27,7 +27,7 @@ Status in the app: the Email automation page lists all flows with **example** st
 | [Review request](#review-request) | Order delivered + 7 to 14 days (based on how long the product takes to show results) | Collect reviews, photos and UGC | live |
 | [Replenishment](#replenishment) | Days since order reaches the typical usage period for a consumable (for example 25 days for a 30-day supply) | Win the reorder before they run out | not set up |
 | [Win-back](#win-back) | No order for 1.5 to 2x your typical repeat interval (for example 120 days) | Re-engage lapsed customers before they are gone | not set up |
-| [VIP and loyalty](#vip) | Third order, or lifetime spend above your top 10% threshold | Recognise your best customers and keep them | not set up |
+| [VIP and loyalty](#vip-and-loyalty) | Third order, or lifetime spend above your top 10% threshold | Recognise your best customers and keep them | not set up |
 
 <a id="welcome"></a>
 ### Welcome series

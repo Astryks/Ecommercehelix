@@ -1,5 +1,7 @@
 # SOP 10: TikTok and emerging channels
 
+> **In plain words.** Only add a new channel like TikTok or Pinterest once your main ads are working and profitable. Start small, with a test budget and a clear rule for when to stop or grow.
+
 **Purpose.** Decide when a new channel is worth it and launch it without wasting money. Covers TikTok ads, TikTok Shop, Pinterest, AI shopping surfaces and AI search visibility.
 
 **Copilot triggers**

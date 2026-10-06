@@ -1,5 +1,7 @@
 # SOP 08: Creative briefs, UGC and creators
 
+> **In plain words.** You need new ads every week, and they do not have to be expensive. Write a short brief (one page of instructions), work with everyday creators, and use the words your customers already use.
+
 **Purpose.** Produce enough native-feeling creative every week without a big budget, using a simple brief format, a creator pipeline and the customer's own words.
 
 **Copilot triggers**

@@ -1,5 +1,7 @@
 # SOP 18: Founder rhythm, hiring and agencies
 
+> **In plain words.** Spend your own time on the few things that grow the business. Hire people or agencies only for a clear, measurable result.
+
 **Purpose.** Protect the founder's time for the few things that grow the business, and add people (or agencies) only for clear outcomes.
 
 **Copilot triggers**

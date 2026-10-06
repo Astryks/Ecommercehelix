@@ -1,5 +1,7 @@
 # SOP 04: Offer design
 
+> **In plain words.** An offer is the reason to buy now instead of later, like a bundle, a gift or free shipping over a set amount. A better offer helps every ad, email and page at once, as long as it still leaves profit.
+
 **Purpose.** Make the reason to buy now stronger than the reasons to wait. A better offer lifts conversion on every channel at once, so it is one of the highest-leverage fixes in the plan.
 
 **Copilot triggers**

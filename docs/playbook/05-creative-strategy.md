@@ -1,6 +1,6 @@
 # Module 5: Creative strategy
 
-**Outcome:** a repeatable system to plan, write, film, test and iterate ads that stop the scroll and sell.
+**Outcome:** a simple system you can repeat to plan, write, film, test and improve ads that make people stop scrolling and buy.
 
 **Related SOPs:** [07 Creative testing](../sops/07-creative-testing.md), [08 Briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md)
 
@@ -32,132 +32,205 @@
 
 ## Lesson 5.1: Why creative is the targeting now
 
-Ad platforms find the buyers; your creative decides who stops. Broad targeting with diverse creative usually beats narrow targeting with one style. There is an unlimited supply of competing creative, so volume and variety matter.
+"Creative" means the ad itself: the picture or video plus the words.
+
+- Today, ad platforms like Meta find the buyers for you. Your creative decides who stops to look.
+- So a wide audience with lots of different ads usually beats a narrow audience with one style of ad.
+- People see endless ads every day. To keep winning, you need a steady supply of new and varied ads.
 
 ## Lesson 5.2: The creative management cycle
 
-1. **Research:** reviews, comments, competitors, trends.
-2. **Plan:** pick pillars, angles and the variable to test.
-3. **Brief:** one page per concept.
-4. **Produce:** in-house, creators, AI-assisted edits.
-5. **Launch:** in batches.
-6. **Learn:** grade, write why winners won, feed the next brief.
+Making ads works best as a loop you repeat every week or two.
+
+1. **Research.** Read reviews and comments. Look at competitors' ads and at trends.
+2. **Plan.** Pick the topic (pillar), the reason to buy (angle) and the one thing you will test.
+3. **Brief.** Write one page per ad idea (concept).
+4. **Produce.** Make the ads yourself, with creators, or with AI tools to edit.
+5. **Launch.** Put new ads live in batches, not one at a time.
+6. **Learn.** Score each ad. Write down why the winners won. Use that in the next brief.
 
 ## Lesson 5.3: Pillars and framing
 
-Four pillars: **Teach** (reasons why, demos), **Prove** (reviews, results, tests), **Feel** (fears and desires, emotion), **Stand for** (opinions, myths, us vs them).
-Rotate the focus: product, brand, result, or customer. Customer-focused ads show the person and their life after the product; they often travel furthest.
+Every ad does one of four jobs. These are your creative pillars.
+
+1. **Teach:** give reasons why and show demos.
+2. **Prove:** show reviews, results and tests.
+3. **Feel:** speak to fears and wishes. Use emotion.
+4. **Stand for:** share opinions, bust myths, show "us versus them".
+
+Then choose what the ad focuses on: the product, the brand, the result, or the customer.
+
+**Tip:** customer-focused ads show the person and their life after using the product. These often reach the most people.
 
 ## Lesson 5.4: Stand-out stack
 
-What makes you different, layered: product feature -> benefit -> proof -> brand personality -> offer. Each ad should lead with one layer and support it with one or two more. During sales, the offer layer leads; outside sales, product and proof lead.
+What makes you different comes in layers:
+
+1. Product feature (what it has).
+2. Benefit (what that does for the customer).
+3. Proof (why they should believe it).
+4. Brand personality (how it feels to buy from you).
+5. Offer (the deal).
+
+**How to use it:** each ad leads with one layer and backs it up with one or two others.
+
+**Decision rule:** during a sale, lead with the offer. Outside of sales, lead with the product and proof.
 
 ## Lesson 5.5: Awareness stages
 
-| Stage | What they know | Ad approach |
-| --- | --- | --- |
-| Unaware | Not the problem | Story, curiosity, entertainment, relatable moment |
-| Problem aware | The problem | Name the pain, show the cost of not solving it |
-| Solution aware | Solutions exist | Why your approach is better, comparisons |
-| Product aware | Your product | Proof, objections, offer |
-| Most aware | Ready | Offer, urgency, reminder |
+People are at different stages of knowing about you. Each stage needs a different ad.
 
-Cold audiences need the first stages; warm audiences need the later ones.
+| Stage | What they know | What the ad should do |
+| --- | --- | --- |
+| Unaware | They do not know they have the problem | Tell a story, spark curiosity, entertain, show a moment they relate to. |
+| Problem aware | They know the problem | Name the pain. Show what it costs them not to fix it. |
+| Solution aware | They know fixes exist | Show why your way is better. Compare. |
+| Product aware | They know your product | Show proof, answer objections, make the offer. |
+| Most aware | They are ready to buy | Offer, a reason to buy now, a reminder. |
+
+**Decision rule:** cold audiences (people who have never heard of you) need the early stages. Warm audiences (people who visited or engaged) need the later stages.
 
 ## Lesson 5.6: Psychological drivers
 
-Belonging, status, fear of missing out, curiosity, relief, self-improvement, convenience, value. Pick one per ad. For sales, value and urgency lead; for launches, curiosity and status lead.
+These are the deep reasons people buy: belonging, status, fear of missing out, curiosity, relief, self-improvement, convenience and value.
+
+1. Pick **one** driver per ad.
+2. For sales, lead with value and urgency.
+3. For launches, lead with curiosity and status.
 
 ## Lesson 5.7: Hooks (first 0 to 3 seconds)
 
-Most viewers leave in the first quarter of a video. Hook types:
-- Movement or a surprising first frame.
-- Niche call-out.
-- Bold statement ("We roast every bag the day it ships").
-- One-star review read aloud, then rebutted.
-- Price shock or comparison ("$39 vs $495, same smell?").
-- Result first.
-- Curiosity gap.
-- Gossip-style "I can't believe..." opener.
-A bold headline on a static can be as effective as a clever video hook.
+The hook is the first line or first 3 seconds of an ad. Its only job is to make people stop scrolling. Most viewers leave in the first quarter of a video, so the hook matters most.
+
+**Types of hook to try:**
+
+1. Movement, or a surprising first picture.
+2. Calling out a niche ("For runners with flat feet...").
+3. A bold statement ("We roast every bag the day it ships").
+4. Reading a one-star review out loud, then answering it.
+5. A price shock or comparison ("$39 vs $495, same smell?").
+6. Showing the result first.
+7. A curiosity gap (a question the viewer wants answered).
+8. A gossip-style opener ("I can't believe...").
+
+**Tip:** a bold headline on a still image can work as well as a clever video hook.
 
 ## Lesson 5.8: Script frameworks
 
-| Framework | Shape |
-| --- | --- |
-| Problem, agitate, solve | Pain -> why it gets worse -> product -> proof -> call to action |
-| N reasons why | Hook -> 3 to 5 reasons -> offer. Make the reasons about the customer's life, not the product's specs. |
-| Myth and friction | "Everyone says X. Here's why that's wrong" -> truth -> product |
-| Bold statement | One big claim -> 3 supports -> call to action |
-| Day in the life | Routine -> moment of need -> product -> result |
-| Comparison | Us vs the usual option, honest and specific |
-| Why now | Season, event, life moment -> product -> time-bound reason |
-| Founder opinion | Strong view -> story -> invitation |
-| Steps | "3 outfits, 3 ways, 3 steps" structures for how-to |
+A script framework is a proven order for the parts of an ad. Pick one and fill it in.
 
-**Call to action scripting:** be specific (what to do, what they get, why now). Mention the offer and threshold clearly ("20% off your first order, free shipping over $80").
+| Framework | The order |
+| --- | --- |
+| Problem, make it worse, solve | Pain, then why it gets worse, then the product, then proof, then what to do next. |
+| N reasons why | Hook, then 3 to 5 reasons, then the offer. Make the reasons about the customer's life, not product specs. |
+| Myth buster | "Everyone says X. Here's why that's wrong", then the truth, then the product. |
+| Bold statement | One big claim, then 3 things that back it up, then what to do next. |
+| Day in the life | Their routine, then the moment they need it, then the product, then the result. |
+| Comparison | You versus the usual option. Be honest and specific. |
+| Why now | A season, event or life moment, then the product, then a time-limited reason. |
+| Founder opinion | A strong view, then a story, then an invitation. |
+| Steps | "3 outfits, 3 ways, 3 steps" style how-to. |
+
+**The call to action** (the line telling people what to do) must be specific:
+
+1. What to do ("Tap Shop now").
+2. What they get.
+3. Why now.
+
+State the offer and any minimum clearly: "20% off your first order, free shipping over $80".
 
 ## Lesson 5.9: Emotion arcs for launches and sales
 
-Plan creative to move with the event: anticipation (teasers), excitement (launch), reassurance (proof, reviews), urgency (ending soon), gratitude (thank you, results). Change creative as the sale moves through phases.
+During a launch or sale, feelings change day by day. Change your ads to match.
+
+1. **Before:** anticipation. Use teasers.
+2. **Launch day:** excitement.
+3. **During:** reassurance. Use proof and reviews.
+4. **Near the end:** urgency ("ends tonight").
+5. **After:** gratitude. Say thank you and share results.
 
 ## Lesson 5.10: Native-feeling ads
 
-- Shot on a phone, real people, real places.
-- Movement in the first 3 to 5 seconds.
-- Every one to two seconds something changes (cut, angle, text, zoom) in longer edits.
-- Captions for sound-off.
-- Adapt popular formats from your feed to your product ("skin" a format, never copy content).
+"Native" ads look like normal posts in the feed, not like ads. They usually do better.
+
+1. Film on a phone, with real people in real places.
+2. Have movement in the first 3 to 5 seconds.
+3. In longer videos, change something every 1 to 2 seconds: a cut, a new angle, text, or a zoom.
+4. Add captions. Many people watch with the sound off.
+5. Borrow popular formats from your feed and use them with your product and your words. Never copy someone else's content.
 
 ## Lesson 5.11: Macro and micro iteration
 
-- **Macro:** new concepts, new angles, new pillars (about 30% of output).
-- **Micro:** new hooks, new first frames, new creators, new lengths, new captions on proven concepts (about 70%).
-Winning patterns: more spend goes to winners as you scale; diverse concepts give the platform more to match; the biggest mistake is testing everything at once with no hypothesis.
+Iteration means making new versions. There are two kinds.
+
+- **Macro (about 30% of what you make):** brand new ideas, new reasons to buy, new pillars.
+- **Micro (about 70%):** new versions of ads that already work. Change the hook, the first frame, the creator, the length or the captions.
+
+**What works:**
+
+1. As you spend more, give more of the budget to winners.
+2. Varied ideas give the platform more options to match to different people.
+3. The biggest mistake is testing everything at once with no idea of what you are trying to learn. Write down your guess (hypothesis) before each test.
 
 ## Lesson 5.12: Signal-rich content
 
-Ads that tell the platform who they are for (clear niche, clear use case, clear person on screen) help delivery find the right people. Speak to subcultures directly.
+Make it obvious who the ad is for. Show a clear niche, a clear use, and a clear type of person on screen. This helps the platform find the right people. Speak directly to specific groups (for example new mums, trail runners, home bakers).
 
 ## Lesson 5.13: Urgency without scarcity
 
-When you do not want to discount: seasonal timing ("before summer"), events, limited bundles, gift-with-purchase for a period, "why now" content, delivery cut-off dates.
+You can give people a reason to buy now without a discount:
+
+1. Seasonal timing ("before summer").
+2. Events.
+3. Limited bundles.
+4. A free gift with purchase for a set time.
+5. "Why now" content.
+6. Delivery cut-off dates ("order by Friday for Christmas").
 
 ## Lesson 5.14: Convert the considerers
 
-Warm audiences need answers: comparisons, reviews, FAQs on video, guarantees, "what you get" breakdowns, and creator testimonials.
+Warm audiences are people who know you but have not bought. They need answers:
+
+1. Comparisons.
+2. Reviews.
+3. FAQ videos.
+4. Your guarantee.
+5. "What you get" breakdowns.
+6. Creator testimonials.
 
 ## Lesson 5.15: Creators, partnership ads and affiliates
 
-- Brief: goal, audience, key message, must-say, must-not-say, 3 hook options, deliverables, usage rights, deadline.
-- Example terms: 10% off code for their audience, 15% commission on new-customer sales.
-- Partnership ads (running creator content from their handle) often lower acquisition cost when added to normal campaigns. Get written permission.
-- Affiliates need a simple content guide: product facts, angles that work, examples.
+1. **Brief every creator** (a one-page set of instructions). Include: the goal, the audience, the key message, what they must say, what they must not say, 3 hook options, what to deliver, usage rights and the deadline.
+2. **Example terms:** a 10% off code for their audience, and 15% commission on sales from new customers.
+3. **Partnership ads** run a creator's video from their own account. Adding them to your normal campaigns often lowers the cost per new customer. Get written permission first.
+4. **Affiliates** (people paid a commission per sale) need a simple guide: product facts, angles that work, and examples.
+
+See Module 19 for the full creator playbook.
 
 ## Lesson 5.16: Production tools
 
-- Design templates for statics (keep inside safe zones, mobile 4:5 and 9:16).
-- Phone video editor basics: cut silence, add captions, add text hooks, export at platform specs.
-- AI-assisted editing for resizing, variants and voice-over (label synthetic people and voices where required; never fake reviews).
-- Review platform auto-enhancements before launch.
+1. **Templates for still images.** Keep text inside the safe zones so it is not covered by buttons. Make mobile sizes: 4:5 (feed) and 9:16 (stories and reels).
+2. **Phone video editor basics:** cut out silences, add captions, add a text hook, and export at the platform's sizes.
+3. **AI editing tools** can resize, make versions and add voice-overs. Label AI-made people and voices where the rules require it. Never fake reviews.
+4. **Check platform "auto-enhance" settings** before launch. They can change your ad in ways you do not want.
 
 ## Lesson 5.17: Big brand moments
 
-Study what large brands do around seasons and cultural moments; adapt the idea at your scale (trend formats, collaborations, playful takes on trends).
+Watch what large brands do around seasons and cultural moments. Then adapt the idea to your size: trend formats, collaborations with other brands, playful takes on trends.
 
 ## Self-check
 
-1. What share of output should be iterations of proven concepts?
+1. What share of your ads should be new versions of ideas that already work?
 2. Which awareness stage suits a one-star-review hook?
-3. Name three urgency tools that are not discounts.
-4. What is "skinning" a format?
-5. What should a creator brief always include about rights?
+3. Name three reasons to buy now that are not discounts.
+4. What does it mean to borrow a format?
+5. What should a creator brief always say about rights?
 
 <details><summary>Answers</summary>
 
 1. About 70%.
-2. Product aware (it answers an objection about your product).
-3. Seasonal timing, gift-with-purchase window, delivery cut-off, limited bundles, events (any three).
-4. Using a popular structure with your own product and words.
-5. Usage rights: where, how long, and whether you can run it as an ad.
+2. Product aware. It answers an objection about your product.
+3. Any three of: seasonal timing, a free gift for a set time, delivery cut-off dates, limited bundles, events.
+4. Using a popular structure with your own product and your own words.
+5. Usage rights: where you can use it, for how long, and if you can run it as an ad.
 </details>

@@ -320,6 +320,7 @@ A side panel on every screen and a full-page view. It answers questions using th
 | Wallet low ($2 left) and wallet empty | Email + in-app | On |
 | Streak reminder | Push, 6pm local, only if loop not done | On, easy to turn off |
 | Trends digest | Email | Weekly |
+| Seasonal nudge (the current seasonal alert plus your next prep steps, or an invite to add the plan) | Email + push, Mondays 8am local (`/api/cron/seasonal-nudges`) | On while an alert is active and the plan is unfinished |
 
 Quiet hours: no non-critical notifications from 9pm to 7am local.
 
@@ -489,4 +490,5 @@ Core tables (simplified; all rows carry `id`, `created_at`, `updated_at`; tenant
 | Campaign builder | Draft & you launch (paused drafts in the user's account) and Guide me (structures, original example ads, click-by-click checklists) | [execution-model.md](execution-model.md) |
 | Email automation | Nine flows with drafts; set up after approval | [email-automation.md](email-automation.md) |
 | Learn | The 21-module playbook, linked from every day and insight | [playbook/](playbook/README.md) |
+| Seasonal alerts | Prominent banner on Today and the home page from the real date, at the right lead time for each key date (Black Friday from 12 weeks, Christmas cut-offs 8, Boxing Day and New Year 5, Valentine's Day 6, Mother's Day 8, EOFY 6, Father's Day 7). "Add the prep plan" inserts dated steps with Mark done and lesson links; also in the weekly report and the Monday nudge | `src/lib/seasons.ts`, Module 13, SOP 15 |
 

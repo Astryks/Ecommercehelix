@@ -1,5 +1,7 @@
 # SOP 17: Inventory, cash and planning
 
+> **In plain words.** Growth should not break the business. Never run out of your best sellers, do not get stuck with slow stock, and always know how much cash you will have in the coming months.
+
 **Purpose.** Make sure growth does not break the business: never run out of best sellers, never drown in slow stock, and always know the cash position months ahead.
 
 **Copilot triggers**

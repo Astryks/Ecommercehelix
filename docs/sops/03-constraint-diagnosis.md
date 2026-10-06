@@ -1,5 +1,7 @@
 # SOP 03: Constraint diagnosis
 
+> **In plain words.** Find the one thing holding profit back most, and fix that first. If ads are the problem, fix ads. If visitors arrive but do not buy, fix the site. If sales are fine but profit is thin, fix costs.
+
 **Purpose.** Find the single biggest thing holding profit back, so Helix suggests the right fix. Ads only fix ad problems. Site problems need site fixes. Cost problems need cost fixes.
 
 **Copilot triggers**

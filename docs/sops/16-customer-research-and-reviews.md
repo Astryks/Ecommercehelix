@@ -1,5 +1,7 @@
 # SOP 16: Customer research and reviews
 
+> **In plain words.** Ask customers why they bought and what nearly stopped them. Use their words in your ads, pages and offers, and collect reviews, because proof makes every future sale cheaper.
+
 **Purpose.** Use the customer's own words to write offers, pages and ads that convert, and build the proof that lowers the cost of every future sale.
 
 **Copilot triggers**

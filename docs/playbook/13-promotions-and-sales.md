@@ -1,8 +1,8 @@
 # Module 13: Promotions, launches and big sales
 
-**Outcome:** a year of revenue peaks that are planned, profitable and repeatable, and a sale playbook from target to post-sale.
+**Outcome:** a year of sales peaks that are planned, profitable and easy to repeat, and a step-by-step plan for every big sale, from setting the target to the weeks after.
 
-**Related SOP:** [15](../sops/15-promo-calendar-and-sales.md)
+**Related SOP:** [15 Promo calendar and sales](../sops/15-promo-calendar-and-sales.md)
 
 
 <!-- plain:start -->
@@ -29,69 +29,127 @@
 ---
 
 ## Lesson 13.1: The promotional rhythm
-Four promotion types through the year:
-- **Awareness with new:** product drops on a regular day and time (1 to 3 items).
-- **Relevance with events:** gifting days and cultural moments with curated edits, not store-wide discounts.
-- **Revenue peaks:** 3 to 4 big events a year.
-- **Liquidation:** clear slow stock with soft tools (gift with purchase, bundles, VIP codes, gift cards) before deep discounts.
+
+Plan four kinds of promotion across the year.
+
+1. **New products.** Release 1 to 3 new items on a regular day and time (for example the first Thursday of the month, 7pm). People learn to look out for them.
+2. **Events.** Gifting days and cultural moments (Mother's Day, Valentine's Day). Use a curated selection, not a store-wide discount.
+3. **Big sales peaks.** 3 to 4 big events a year.
+4. **Clearing stock.** Sell slow stock with gentle tools first: a free gift with purchase, bundles, VIP codes or gift cards. Only use deep discounts as a last resort.
 
 ## Lesson 13.2: Launch phases
-Pre-launch (tease, waitlist, early access sign-ups) -> launch (VIPs first, then everyone) -> mid-launch drop (new colour or bundle for 24 hours) -> post-launch (reviews, results, restock news).
+
+A launch has four phases.
+
+1. **Before launch:** tease the product. Open a waitlist and early-access sign-ups.
+2. **Launch:** your VIPs (best customers) get it first, then everyone.
+3. **Middle of the launch:** release something new for 24 hours, like a new colour or a bundle.
+4. **After launch:** share reviews, results and restock news.
 
 ## Lesson 13.3: New product drop campaign structure
-Use a dedicated launch campaign or add launch creative to cold and warm campaigns depending on spend. Warm audiences and the list get first access. Keep evergreen running.
+
+1. **If you spend a lot:** make a separate launch campaign.
+2. **If you spend less:** add launch ads to your normal cold and warm campaigns.
+3. **Either way:** warm audiences and your email list get first access. Keep your normal (evergreen) campaigns running.
 
 ## Lesson 13.4: The big sale, step by step
-1. **Target:** last year's event revenue x growth rate, cross-checked with list size, budget and stock.
-2. **Offer stack:** headline offer + gift tiers + mid-sale drop + VIP perk. Check margin per tier.
-3. **Sale theme:** a name, look and message that cut through competitors' noise.
-4. **Media plan:** daily budget curve for hype, launch, mid-sale and finish; split evergreen vs sale campaigns.
-5. **Creative planner:** pieces for each phase and layer.
-6. **Email and SMS schedule** (Module 10).
-7. **Site:** sale landing pages, banners, code freeze, discount testing.
-8. **Stock and fulfilment:** cover, packing capacity, gift stock, shipping cut-offs.
+
+1. **Set the target.** Take last year's sales for this event and multiply by your growth rate. Check it against your list size, budget and stock.
+2. **Build the offer.** A main offer, plus free gift levels (spend $100, get a gift), plus something new mid-sale, plus a perk for VIPs. Check your margin at every level.
+3. **Pick a theme.** A name, a look and a message that stand out from competitors' noise.
+4. **Plan the ad budget.** Set a daily budget for each phase: excitement, launch, middle and finish. Decide the split between normal and sale campaigns.
+5. **Plan the ads.** List the ads you need for each phase and each audience (cold, warm, hot).
+6. **Plan emails and texts** (see Module 10, Lesson 10.13).
+7. **Prepare the site.** Sale landing pages and banners. Stop changing site code 2 weeks before. Test every discount code.
+8. **Check stock and shipping.** Enough stock, enough packing staff, gift stock, and shipping cut-off dates.
 
 ## Lesson 13.5: Hype phase
-3 to 5 days of sign-up ads and teasers. Track hype metrics: cost per sign-up, landing page conversion to sign-up. Shift evergreen budget gradually, not to zero.
+
+The hype phase builds excitement before the sale starts.
+
+1. Run sign-up ads and teasers for 3 to 5 days.
+2. Track cost per sign-up, and how many landing page visitors sign up.
+3. Move budget from normal campaigns to the hype campaign slowly. Never cut normal campaigns to zero: they lose what they have learned and you lose the steady flow of new customers.
 
 ## Lesson 13.6: Running the sale
-- Sale campaigns: copy of best cold campaign, combined-audience cold with exclusions, mixed with no exclusions, warm (all and split), hot (add to cart and checkout).
-- Use spending limits to prevent overspend.
-- Daily check: MER by day vs plan, stock, site speed, creative fatigue.
-- Some days look bad (quiet middle days); judge across the event.
-- Mid-sale moves: new offer, refreshed creative, email with a new reason.
-- Finish line: last-chance creative, final emails and SMS.
+
+1. **Set up these sale campaigns:**
+   - A copy of your best cold campaign.
+   - A cold campaign using combined audiences, with exclusions (people left out).
+   - A mixed campaign with no exclusions.
+   - Warm campaigns (all warm people, and split by group).
+   - Hot campaigns (people who added to cart or started checkout).
+2. **Set spending limits** so nothing overspends.
+3. **Check every day:** MER for the day against your plan, stock, site speed, and whether ads are getting tired.
+4. **Some days will look bad,** especially quiet days in the middle. Judge the whole event.
+5. **Mid-sale moves:** a new offer, fresh ads, and an email with a new reason to buy.
+6. **Finish strong:** last-chance ads, final emails and texts.
 
 ## Lesson 13.7: After the sale
-Expect a hangover. Ramp evergreen back in steps. Nurture new buyers. Review: revenue vs target, MER, new customers, stock left, what to repeat. Plan the next event's improvement.
+
+1. **Expect a slow period** afterwards. That is normal.
+2. **Turn normal campaigns back up in steps,** not all at once.
+3. **Look after new buyers** with your post-purchase emails.
+4. **Review:** sales against target, MER, new customers, stock left, and what to repeat.
+5. **Write down one thing to improve** for the next event.
 
 ## Lesson 13.8: If the sale is failing
-Check: offer strength vs competitors, creative clarity (offer in the first seconds), site issues, list size, timing. Escape moves: add a gift tier, a mid-sale drop, a stronger email, shift budget to warm audiences, extend only if it will not damage trust.
+
+**Check these causes:**
+
+1. Is your offer weaker than competitors'?
+2. Is the offer clear in the first seconds of your ads?
+3. Is something wrong with the site?
+4. Is your list too small?
+5. Is the timing off?
+
+**Ways to rescue it:**
+
+1. Add a free gift level.
+2. Release something new mid-sale.
+3. Send a stronger email.
+4. Move budget to warm audiences.
+5. Extend the sale, but only if it will not damage trust (customers notice fake "last chances").
 
 ## Lesson 13.9: Experience levels
-- **Starter:** one offer, simple schedule, sale versions of flows.
-- **Seasoned:** tiers, hype, mid-sale drop, separate sale campaigns.
-- **Advanced:** budget curves by day, cross-channel plan (Meta, Google, email, SMS, organic, creators), sell-through targets per product.
+
+Grow your sale plan as you gain experience.
+
+1. **Starter:** one offer, a simple schedule, sale versions of your email flows.
+2. **Seasoned:** gift levels, a hype phase, a mid-sale release, separate sale campaigns.
+3. **Advanced:** a daily budget plan, a plan across every channel (Meta, Google, email, SMS, free posts, creators), and sales targets for each product.
 
 ## Lesson 13.10: Key dates and beyond Black Friday
-Plan the whole peak season: list-building in early autumn, Black Friday and Cyber Monday, gifting campaigns with delivery cut-offs ("customers by Christmas"), boxing day and the quiet weeks after (sometimes called the "fifth quarter", when ad costs drop and new customers can be cheaper). End of financial year sales matter in some countries. Valentine's, Mother's and Father's Day suit gift edits.
+
+Plan the whole busy season, not just one weekend.
+
+1. **Early autumn:** grow your list.
+2. **Black Friday and Cyber Monday.**
+3. **Gifting campaigns** with delivery cut-off dates ("order by the 18th for Christmas").
+4. **Boxing Day and the quiet weeks after.** Some call this the "fifth quarter". Ad costs drop, so new customers can be cheaper to win.
+5. **End of financial year sales** matter in some countries (for example June in Australia).
+6. **Valentine's Day, Mother's Day and Father's Day** suit gift selections.
 
 ## Lesson 13.11: Cross-channel checklist
-- [ ] Meta and Google sale campaigns built and off.
-- [ ] Feed sale prices and promotion assets.
-- [ ] Email and SMS scheduled; flows swapped.
-- [ ] Organic posts and creator posts scheduled.
-- [ ] Site banners, landing pages, discount logic tested.
-- [ ] Customer service macros for sale questions.
+
+Tick each item before a big sale.
+
+1. Meta and Google sale campaigns are built and switched off.
+2. Sale prices and promotion assets are in your product feed.
+3. Emails and texts are scheduled, and flows are switched to sale versions.
+4. Free posts and creator posts are scheduled.
+5. Site banners, landing pages and discount rules are tested.
+6. Customer service has saved replies for common sale questions.
 
 ## Self-check
-1. How many big revenue peaks a year?
-2. What do you use before deep discounts to clear stock?
-3. Why not cut evergreen spend to zero during hype?
+
+1. How many big sales peaks should you plan each year?
+2. What do you try before deep discounts to clear stock?
+3. Why not cut normal ad spend to zero during the hype phase?
 
 <details><summary>Answers</summary>
 
 1. Three to four.
-2. Gift with purchase, bundles, VIP codes, gift cards.
-3. Campaigns lose learning and new-customer flow; shift gradually instead.
+2. A free gift with purchase, bundles, VIP codes or gift cards.
+3. Campaigns lose what they have learned and you lose the flow of new customers. Move budget across slowly instead.
 </details>

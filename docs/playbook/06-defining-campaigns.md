@@ -1,8 +1,8 @@
 # Module 6: Defining campaigns
 
-**Outcome:** you can plan any ad campaign from scratch: set the numbers it must hit, choose the objective and structure, define audiences and budgets, name it properly, brief the creative, test it fairly, read the results and decide to scale, hold, refresh or kill.
+**Outcome:** you can plan any ad campaign from scratch. You set the numbers it must hit, choose the goal and setup, pick the audience and budget, name it properly, brief the ads, test them fairly, read the results and decide: spend more, wait, make new ads, or stop.
 
-This module is the bridge between strategy and Ads Manager. The [campaign brief template](#lesson-616-the-campaign-brief-template) at the end is what Helix fills in with you when you press "New campaign brief" in the Campaign tracker.
+This module connects your plan to Ads Manager (the place where you build Meta ads). The [campaign brief template](#lesson-616-the-campaign-brief-template) at the end is what Helix fills in with you when you press "New campaign" in Your ads.
 
 **Related SOPs:** [05 Meta structure](../sops/05-meta-structure-and-scaling.md), [06 Meta daily optimisation](../sops/06-meta-daily-optimisation.md), [07 Creative testing](../sops/07-creative-testing.md), [09 Google](../sops/09-google-shopping-pmax-search.md), [15 Promo calendar](../sops/15-promo-calendar-and-sales.md)
 
@@ -34,230 +34,281 @@ This module is the bridge between strategy and Ads Manager. The [campaign brief 
 
 ## Lesson 6.1: Numbers first
 
-Never open Ads Manager before you know these five numbers:
+Never open Ads Manager until you know these five numbers. Module 1 explains each one.
 
-| Number | Formula | Example (AOV $90, VCR 40%, FCR 15%, profit goal 15%) |
-| --- | --- | --- |
-| Target MER | 100% - VCR - FCR - profit goal | 30% |
-| Break-even ROAS | 1 ÷ (1 - VCR) | 1.67 |
-| Break-even CPA | AOV x (1 - VCR) | $54 |
-| Target blended CPA | AOV x target MER | $27 |
-| Cold-campaign CPA allowance | Target CPA x 2 (attribution undercounts cold) | $54 |
+| Number | What it means | How to work it out | Example (AOV $90, VCR 40%, FCR 15%, profit goal 15%) |
+| --- | --- | --- | --- |
+| Target MER | The share of all sales you can spend on ads | 100% - VCR - FCR - profit goal | 30% |
+| Break-even ROAS | Sales per $1 of ads where a sale makes $0 | 1 ÷ (1 - VCR) | 1.67 |
+| Break-even CPA | The most you can pay for one sale before it loses money | AOV x (1 - VCR) | $54 |
+| Target blended CPA | What you aim to pay per sale, across all customers | AOV x target MER | $27 |
+| Allowance for cold campaigns | What a campaign aimed at new people may show per sale | Target CPA x 2 | $54 |
 
-If your **target** CPA is below what similar stores pay to acquire a customer, fix offer, AOV or margins before spending (Module 2).
+**Why cold campaigns get double:** ad platforms miss many of the sales that cold ads cause (people see an ad, then buy days later another way). So the cost per sale they report looks worse than it really is.
 
-**First-order vs lifetime:** if customers reliably buy again, you can pay more for the first order. Only do this with real repeat data (12-month repeat rate and second-order margin), and keep cash flow in mind.
+**Decision rule:** if your **target** CPA is lower than what similar stores pay to win a customer, do not spend yet. First fix your offer, order size or margins (Module 2).
+
+**First order versus lifetime value:** if customers reliably buy again, you can afford to pay more for the first order. Only do this when you have real repeat data: the share of customers who buy again within 12 months, and the margin on their second order. Watch your cash, because the payback comes later.
 
 ## Lesson 6.2: Pick the job of the campaign
 
-| Job | Objective to choose | Optimise for |
+Each campaign has one job. The job decides which goal (objective) you choose in Ads Manager and what you tell the platform to aim for (optimise for).
+
+| Job | Objective to choose | Aim for |
 | --- | --- | --- |
 | Find new buyers | Sales | Purchase |
-| Re-engage visitors and subscribers | Sales | Purchase (sometimes add to cart for low volume) |
-| Grow the list | Leads, or sales to a sign-up page | Lead or complete registration |
-| Build hype before a launch or sale | Leads or engagement | Sign-ups |
-| Test creative cheaply on new platforms | Sales with an earlier event (view content, add to cart) when purchase volume is too low | Earlier event, then switch to purchase |
-| Catalog retargeting | Sales with catalog | Purchase |
+| Bring back visitors and subscribers | Sales | Purchase (if sales are few, sometimes add to cart) |
+| Grow your email list | Leads, or Sales sending people to a sign-up page | Lead, or completed sign-up |
+| Build excitement before a launch or sale | Leads or Engagement | Sign-ups |
+| Test ads cheaply on a new platform | Sales, aimed at an earlier step (view content, add to cart) when purchases are too few | The earlier step, then switch to purchase |
+| Show people products they looked at (catalog retargeting) | Sales with your product catalog | Purchase |
 
-Rule: optimise for the deepest event you can get at least roughly 25 to 50 times a week per campaign. Fewer and delivery becomes unstable.
+**Decision rule:** aim for the deepest step (purchase is deepest) that happens at least about 25 to 50 times a week per campaign. With fewer, the platform cannot learn and results jump around.
 
 ## Lesson 6.3: Testing campaigns vs scaling campaigns
 
-- **Scaling campaigns** hold proven ads and most of the budget (70 to 80%). You avoid adding ads while they are winning.
-- **Testing campaign** (or a test ad set) gets 20 to 30% of budget and new batches. Winners graduate to scaling campaigns by duplicating the ad (keep the post ID to keep likes and comments).
-- **Build campaign:** a campaign that is always off, where you build ads once before duplicating them where needed.
+Keep testing and winning separate, so new tests do not upset what already works.
+
+1. **Scaling campaigns** hold your proven ads and most of the budget (70 to 80%). Do not add new ads to them while they are winning.
+2. **A testing campaign** (or a test ad set) gets 20 to 30% of the budget and your new batches of ads. When an ad wins, move it to a scaling campaign by copying it. Keep the same post ID, so it keeps its likes and comments.
+3. **A build campaign** is a campaign that is always switched off. You build each ad there once, then copy it wherever you need it.
 
 ## Lesson 6.4: Account structure by spend
 
-| Daily spend | Suggested structure |
+"Cold" means people who do not know you. "Warm" means people who visited or engaged. "Mixed" means both. Set up your account based on how much you spend each day.
+
+| Daily ad spend | Suggested setup |
 | --- | --- |
-| Under $100 | 1 Cold sales campaign (broad) with your best 4 to 8 ads, 1 Warm campaign. 70 to 80% to Cold. |
-| $100 to $500 | Cold, Mixed, Warm, plus testing and a build campaign |
-| $500 to $1,000 | Add a second Cold campaign with different exclusions or a different automated setup |
-| $1,000 to $3,000 | Campaigns per country or product line, separate sale campaigns in events |
-| $3,000+ | Dedicated test budget, creator/partnership campaigns, catalog video, more countries |
+| Under $100 | 1 cold Sales campaign with broad targeting and your best 4 to 8 ads, plus 1 warm campaign. Put 70 to 80% of the budget into cold. |
+| $100 to $500 | Cold, mixed and warm campaigns, plus a testing campaign and a build campaign. |
+| $500 to $1,000 | Add a second cold campaign with different exclusions (people you leave out) or a different automated setup. |
+| $1,000 to $3,000 | Campaigns per country or product line. Separate sale campaigns during big events. |
+| $3,000 or more | A set test budget, creator and partnership ad campaigns, catalog video ads, more countries. |
 
-Starting splits: 70 to 80% Cold and 20 to 30% Warm when small. Later: Cold 30 to 50%, Mixed 30 to 40%, Warm 20 to 30%.
+**Budget split:** when you are small, 70 to 80% cold and 20 to 30% warm. Later: cold 30 to 50%, mixed 30 to 40%, warm 20 to 30%.
 
-**Alternative structures worth testing once stable** (one at a time):
-- Campaign budget (platform allocates) vs ad set budget (you allocate).
-- Cost cap bidding when you need a hard ceiling on cost per purchase.
-- Exclusion levels: none, light (recent buyers), harsh (all buyers and engaged), very harsh (also recent visitors). Harsher exclusions usually show worse CPA but find more new customers.
-- Existing-customer budget caps in automated sales campaigns (for example 10 to 20% maximum to existing customers).
-- Landing page view optimisation for very cold, broad reach tests.
+**Other setups to test once things are stable.** Test one at a time:
+
+1. **Campaign budget** (the platform splits money between ad sets) versus **ad set budget** (you decide each one).
+2. **Cost cap bidding,** when you need a hard limit on cost per purchase.
+3. **How many people to leave out (exclusions):**
+   - None.
+   - Light: recent buyers.
+   - Harsh: all buyers and people who engaged.
+   - Very harsh: also recent visitors.
+
+   Harsher exclusions usually show a worse cost per sale, but they find more truly new customers.
+4. **A cap on spend to existing customers** in automated Sales campaigns (for example, at most 10 to 20% to existing customers).
+5. **Aiming for landing page views** for very cold, broad tests where you mostly want reach.
 
 ## Lesson 6.5: Audiences
 
-- **Broad first.** Let creative do the targeting. Test interests only after you have winning ads.
-- **Custom audiences:** site visitors (30 and 180 days), product viewers, add to cart, checkout, purchasers (180 days, all time), social engagers, email list.
-- **Lookalikes:** 1% is closest, 10% is broadest. Often 3 to 5% is a sensible test.
-- **Audience segments** (new, engaged, existing customers) set at account level let you see the share of spend reaching new people.
-- **Exclusions:** employees and existing customers from Cold where it makes sense.
-- **Countries:** new country = new campaign once spend allows; start in the next most similar market.
+The audience is who sees your ads.
+
+1. **Start broad.** Let the ads themselves find the right people. Only test interest targeting after you have winning ads.
+2. **Custom audiences** are lists of people who already know you:
+   - Site visitors (last 30 and 180 days).
+   - People who viewed a product, added to cart or started checkout.
+   - Buyers (last 180 days, and all time).
+   - People who engaged on social media.
+   - Your email list.
+3. **Lookalikes** are new people who look like your customers. 1% is the closest match and 10% is the widest. 3 to 5% is a sensible test.
+4. **Audience segments** (new, engaged, existing customers) are set once for the whole ad account. They let you see how much spend reaches new people.
+5. **Exclusions.** Leave employees and existing customers out of cold campaigns where it makes sense.
+6. **Countries.** A new country gets its own campaign once spend allows. Start with the country most like the one that already works.
 
 ## Lesson 6.6: Budgets
 
-1. Start with what you can afford to lose while learning: a common floor is about 2 to 3x your target CPA per day per campaign.
-2. Never change a budget more than 20% a day on a performing campaign.
-3. Scale horizontally (new campaigns) when vertical steps stop working.
-4. Use spending limits on ad sets and campaigns during big events to prevent overspend.
-5. Daily budgets may overspend on some days and underspend on others; judge weekly.
+1. **Start with what you can afford to lose while learning.** A common minimum is 2 to 3 times your target CPA, per day, per campaign.
+2. **Never change the budget of a campaign that is working by more than 20% a day.** Bigger jumps can reset its learning.
+3. **When raising the budget stops working, add new campaigns instead** (this is called scaling horizontally).
+4. **Set spending limits** on ad sets and campaigns during big events, so they cannot overspend.
+5. **Judge by the week, not the day.** Daily budgets spend more on some days and less on others.
 
 ## Lesson 6.7: Naming conventions
 
-Names let you, your team and Helix read the account at a glance and analyse results later.
+A naming convention is a fixed pattern for names. It lets you, your team and Helix read the account at a glance and compare results later.
 
-**Campaign:** `[Number]-[Automation: Auto/Manual]-[Layer: Cold/Mixed/Warm/Hot]-[Targeting: Broad/Interest/LAL]-[Exclusions: None/Light/Harsh]-[BAU or Sale]`
-Example: `03-Manual-Cold-Broad-Harsh-BAU`
+**Campaign name pattern:**
 
-**Ad:** `[Batch]-[Concept]-[Pillar]-[Format]-[Hook]-[Creator]-[Date]`
+`[Number]-[Automation: Auto/Manual]-[Who: Cold/Mixed/Warm/Hot]-[Targeting: Broad/Interest/LAL]-[Exclusions: None/Light/Harsh]-[BAU or Sale]`
+
+Example: `03-Manual-Cold-Broad-Harsh-BAU`. (BAU means "business as usual", the normal campaigns outside sales. LAL means lookalike.)
+
+**Ad name pattern:**
+
+`[Batch]-[Concept]-[Pillar]-[Format]-[Hook]-[Creator]-[Date]`
+
 Example: `B14-OneStarRebuttal-Prove-Video-ReviewHook-Sam-2610`
 
-Rename old campaigns to the convention so history becomes readable.
+**Tip:** rename your old campaigns to this pattern, so your history becomes easy to read.
 
 ## Lesson 6.8: Creative concepts, angles and hooks
 
-- **Concept:** the big idea (for example "one-star review rebuttal").
-- **Angle:** the reason it matters to a specific person (for example "for tall men who can never find shirts that fit").
-- **Hook:** the first 3 seconds.
-- **Format:** video, static, carousel, catalog, collection, creator.
-One batch tests one variable. Keep products and price points comparable within a batch.
+1. **Concept:** the big idea. For example "answering a one-star review".
+2. **Angle:** why it matters to a specific person. For example "for tall men who can never find shirts that fit".
+3. **Hook:** the first 3 seconds.
+4. **Format:** video, still image, carousel (several swipeable cards), catalog, collection, or creator video.
+
+**Decision rule:** each batch tests **one** thing. Keep products and prices similar within a batch, so the test is fair.
 
 ## Lesson 6.9: Writing the creative brief
 
-For each ad: goal and layer, pillar, customer and problem in their words, 3 hook options, key message, proof, offer and call to action, format and length, must-show and must-avoid, deadline, usage rights. (Full template in SOP 08.)
+A creative brief is a one-page set of instructions for each ad. Include:
+
+1. The goal, and who it is for (cold, warm or hot).
+2. The pillar (teach, prove, feel or stand for).
+3. The customer and their problem, in their own words.
+4. Three hook options.
+5. The key message.
+6. The proof.
+7. The offer and the call to action.
+8. Format and length.
+9. What must be shown and what must be avoided.
+10. The deadline.
+11. Usage rights.
+
+The full template is in [SOP 08](../sops/08-creative-briefs-ugc-creators.md).
 
 ## Lesson 6.10: Testing methodology
 
+Use these default rules for every ad test.
+
 | Rule | Default |
 | --- | --- |
-| Variables per batch | 1 |
-| Ads per batch | 4 to 8 under $100/day per campaign, 8 to 12 at $100 to $500, 12 to 15 above |
-| Spend before judging an ad | 1 to 1.5x target CPA (more for cold) |
-| High-priced products | Use early signals: outbound CTR, cost per click, add-to-cart rate, how fast frequency builds |
-| Budget for tests | 20 to 30% of total |
-| Learning time | Avoid edits for 3 to 7 days after launch |
-| Statistical caution | Under about 10 purchases per ad, treat results as directional |
+| Things you change per batch | 1 |
+| Ads per batch | 4 to 8 under $100 a day per campaign. 8 to 12 at $100 to $500. 12 to 15 above that. |
+| Spend before you judge an ad | 1 to 1.5 times target CPA (more for cold ads) |
+| Expensive products | Judge on early signs: outbound CTR, cost per click, add to cart rate, and how fast frequency rises |
+| Budget for tests | 20 to 30% of the total |
+| Learning time | Do not edit for 3 to 7 days after launch |
+| Be careful with small numbers | Under about 10 purchases per ad, treat results as a hint, not proof |
 
-**Sample size intuition:** to tell a 2% from a 3% conversion rate with reasonable confidence you need on the order of a few thousand visitors per variant. That is why ad tests lean on spend thresholds and leading indicators.
+**Why spend rules matter:** to tell a 2% conversion rate from a 3% one with confidence, you need a few thousand visitors for each version. Most ad tests never get that many. So you use spend limits and early signs instead.
 
 ## Lesson 6.11: Reading metrics
 
-| Metric | Tells you | Healthy signal |
+| Metric | What it tells you | What good looks like |
 | --- | --- | --- |
-| Hook rate (3-second views ÷ impressions) | Does the first frame stop people? | Rough guide 25 to 35%+ on video |
-| Hold rate (watch to 50% or ThruPlay ÷ 3-second views) | Does the story keep them? | Rising with iterations |
-| Outbound CTR | Does the ad make them want to click? | 1 to 1.5%+, below 0.5% is a problem |
-| CPM | Cost to reach 1,000 people | Compare over time and season, not across stores |
-| Cost per outbound click | Combined effect of CPM and CTR | Must be low relative to RPV |
-| Add to cart rate | Does the page convert interest? | Compare with site average |
-| CPA / cost per purchase | Efficiency | Versus target for the layer |
-| ROAS (platform) | Attributed return | Versus break-even and against MER trend |
-| Frequency | How often the same people see it | Within layer limits |
-| Reach vs spend growth | Are you reaching new people as you scale? | Reach should grow roughly with spend |
+| Hook rate (3-second views ÷ impressions) | Does the first moment stop people? | About 25 to 35% or more on video |
+| Hold rate (views to 50%, or ThruPlays, ÷ 3-second views) | Does the story keep them watching? | Going up as you make new versions |
+| Outbound CTR | Does the ad make people want to click to your site? | 1 to 1.5% or more. Below 0.5% is a problem. |
+| CPM | Cost to show the ad 1,000 times | Compare with your own past and season, not other stores |
+| Cost per outbound click | CPM and CTR combined | Must be low compared with RPV (what a visit earns) |
+| Add to cart rate | Does the page turn interest into carts? | Compare with your site average |
+| CPA (cost per purchase) | How efficient the ad is | Compare with the target for its audience |
+| ROAS (as the platform reports it) | Sales the platform credits to the ad, per $1 | Compare with break-even, and with your MER trend |
+| Frequency | How often the same people see it | Within the limit for its audience |
+| Reach growth versus spend growth | Are you reaching new people as you spend more? | Reach should grow about as fast as spend |
 
-Engaging ad, poor CPA = page or offer mismatch. Low CTR across a batch = message or offer. Rising CPM with steady CTR = saturation or season.
+**How to read patterns:**
+
+1. People engage with the ad, but cost per sale is poor: the page or offer does not match the ad.
+2. Low CTR across a whole batch: the message or offer is weak.
+3. CPM rising while CTR stays steady: you have reached most of the audience, or it is a busy season.
 
 ## Lesson 6.12: Decision rules: scale, hold, refresh, kill
 
-| Decision | When | Action |
+In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**.
+
+| Decision | When | What to do |
 | --- | --- | --- |
-| **Scale** | CPA at or under target, frequency fine, 3-day and month-to-date MER on target | +20% budget a day, or copy the ad into another campaign |
-| **Hold** | Learning, recently edited, or results mixed but improving | No changes for 3 days |
-| **Refresh creative** | No strong ads left, frequency high, or fewer than 30% of the batch still performing | Load a new batch from your creative backlog |
-| **Kill** | Spent the "bad" threshold (2x good CPA for its layer) with poor results or zero purchases | Turn off today |
+| **Scale (Spend more)** | Cost per sale is at or under target, frequency is fine, and MER for the last 3 days and the month so far is on target. | Add 20% to the budget a day, or copy the ad into another campaign. |
+| **Hold (Wait)** | It is still learning, was edited recently, or results are mixed but getting better. | Make no changes for 3 days. |
+| **Refresh creative (New ads needed)** | No strong ads are left, frequency is high, or fewer than 30% of the batch still perform. | Launch a new batch from your list of ad ideas. |
+| **Kill (Stop)** | It has spent the "bad" amount (2 times the good CPA for its audience) with poor results or no purchases. | Turn it off today. |
 
 ## Lesson 6.13: Google campaign definitions
 
-| Campaign | Purpose | Key settings |
+| Campaign | What it is for | Key settings |
 | --- | --- | --- |
-| Brand search | Protect your name cheaply | Small budget, impression share or manual bids, brand terms only |
-| Brand shopping (optional) | Show your products on brand searches | Low priority, brand queries |
-| Feed-only PMax / Shopping | Non-brand prospecting | Brand exclusions, products grouped by best sellers or margin tier, target ROAS above break-even |
-| Non-brand search | Control on high-intent terms | Max 5 keywords per ad group, shared negatives, up to 15 headlines |
-| Competitor search | Capture comparison shoppers | Honest comparison ads, monitor costs closely |
-| Demand Gen / YouTube | Visual discovery | Judge with view-through metrics |
-| Local | Physical store visits | Only if you have a shop |
+| Brand search | Protect your own name cheaply when people search for it | Small budget. Bid for impression share or set bids yourself. Your brand words only. |
+| Brand shopping (optional) | Show your products when people search your name | Low priority, brand searches |
+| Feed-only Performance Max or Shopping | Find new customers from your product list | Leave out your brand name. Group products by best sellers or margin level. Set a target ROAS above break-even. |
+| Non-brand search | Control over high-intent search words | At most 5 keywords per ad group. A shared list of blocked words (negative keywords). Up to 15 headlines. |
+| Competitor search | Reach people comparing you with competitors | Honest comparison ads. Watch costs closely. |
+| Demand Gen and YouTube | Visual ads to help people discover you | Judge with view-through results (people who saw the ad and bought later) |
+| Local | Visits to a physical shop | Only if you have a shop |
 
-New campaigns: about 2 weeks learning + 4 weeks evaluation at $50+/day.
+**Timing:** a new Google campaign needs about 2 weeks to learn, then 4 weeks to judge, at $50 a day or more.
 
 ## Lesson 6.14: Promotional and seasonal campaigns
 
-- Build sale campaigns separately from evergreen (BAU) campaigns.
-- Copy your best evergreen cold campaign as the base for the sale cold campaign.
-- Warm and hot sale campaigns carry offer-led creative.
-- Set spending limits. Plan the budget curve by day.
-- Expect MER to look poor on some days (for example quiet mid-sale days); judge across the whole event.
+1. Build sale campaigns separately from your normal (BAU) campaigns.
+2. Copy your best normal cold campaign as the base for the sale's cold campaign.
+3. Warm and hot sale campaigns use ads that lead with the offer.
+4. Set spending limits. Plan the budget for each day of the sale.
+5. Expect some days to look poor (for example quiet days in the middle). Judge the whole event, not single days.
 
 ### Black Friday plan (timeline)
 
-| When | Do |
+| When | What to do |
 | --- | --- |
-| 10 to 12 weeks out | Revenue target from last year and recent growth. Offer structure. Order stock and gifts. Start list-building. |
-| 8 weeks | Brief sale creative (announcement, offer explainer, best sellers, gift guides, last chance). Plan landing pages. |
-| 6 weeks | Build sale email and SMS schedule. Book creators. Confirm site speed and checkout. |
-| 4 weeks | Build sale campaigns (off) and the hype campaign. Load creative into the build campaign. |
-| 2 weeks | Freeze site code. Test discounts, gift thresholds, catalog sale prices. |
-| 5 to 3 days | Hype phase: sign-up ads, teaser emails. Shift evergreen budget gradually. |
-| Launch day | VIP early access, then everyone. Launch email + SMS. Sale campaigns on. |
-| Mid-sale | New drop or limited bundle for 24 hours. Refresh creative. |
-| Last 48 hours | Last-chance emails, SMS, urgency creative. |
-| After | Ramp evergreen back up slowly. Nurture new buyers. Review against target. |
+| 10 to 12 weeks before | Set a sales target from last year and recent growth. Choose the offer. Order stock and free gifts. Start growing your email list. |
+| 8 weeks | Brief the sale ads: the announcement, how the offer works, best sellers, gift guides, last chance. Plan landing pages. |
+| 6 weeks | Plan the sale emails and texts. Book creators. Check site speed and checkout. |
+| 4 weeks | Build the sale campaigns (switched off) and the excitement campaign. Load ads into the build campaign. |
+| 2 weeks | Stop changing the website code. Test discount codes, free gift minimums and sale prices in your catalog. |
+| 5 to 3 days before | Excitement phase: sign-up ads and teaser emails. Move normal budget across slowly. |
+| Launch day | Early access for your best customers, then everyone. Send the launch email and text. Turn sale campaigns on. |
+| Middle of the sale | Release something new or a limited bundle for 24 hours. Refresh the ads. |
+| Last 48 hours | Last-chance emails and texts, and ads that stress the deadline. |
+| After | Turn normal campaigns back up slowly. Welcome new buyers. Compare results with the target. |
 
 ## Lesson 6.15: Common campaign mistakes
 
-- Starting without break-even numbers.
-- Too many campaigns for the budget (data split too thin).
-- Editing daily so nothing leaves learning.
-- Adding ads one at a time.
-- Judging cold campaigns against warm ones.
-- No creative ready when scaling.
-- Turning everything off after a bad day.
+1. Starting without break-even numbers.
+2. Too many campaigns for the budget, so each one gets too little data.
+3. Editing every day, so nothing ever finishes learning.
+4. Adding ads one at a time instead of in batches.
+5. Comparing cold campaigns with warm ones (warm always looks better).
+6. Having no new ads ready when you start spending more.
+7. Turning everything off after one bad day.
 
 ## Lesson 6.16: The campaign brief template
 
-Copy this for every new campaign. Helix pre-fills it from your scorecard.
+Copy this for every new campaign. Helix fills in the numbers from your scorecard.
 
 ```
 CAMPAIGN BRIEF
 
-1. Name (convention):
+1. Name (use the naming pattern):
 2. Channel: Meta / Google / TikTok / Pinterest / other
-3. Job of the campaign: new buyers / warm / list growth / hype / catalog / sale
-4. Objective and optimisation event:
+3. Job of the campaign: new buyers / warm / list growth / excitement / catalog / sale
+4. Objective, and what it aims for:
 5. Products and offer:
 6. Numbers
    - AOV:            - VCR:           - Target MER:
-   - Break-even CPA: - Target CPA:    - Layer CPA allowance:
+   - Break-even CPA: - Target CPA:    - CPA allowance for this audience:
    - Break-even ROAS:
-7. Audience: broad / interests / lookalike / custom. Exclusions:
+7. Audience: broad / interests / lookalike / custom. Who to leave out:
 8. Countries and placements:
-9. Budget: daily $____  test period ____ days  max loss you accept $____
-10. Creative plan: concepts, angles, hooks, formats, number of ads, variable tested
-11. Landing page: URL, does it match the ad message? (Y/N)
-12. Tracking check: pixel + server events firing, purchase is the only primary conversion (Y/N)
-13. Success criteria: CPA <= ____ after ____ spend; outbound CTR >= ____
+9. Budget: daily $____  test period ____ days  most you accept losing $____
+10. Ad plan: concepts, angles, hooks, formats, number of ads, the one thing tested
+11. Landing page: URL. Does it match the ad's message? (Y/N)
+12. Tracking check: pixel and server events working, purchase is the only main conversion (Y/N)
+13. Success looks like: CPA <= ____ after spending ____; outbound CTR >= ____
 14. Decision date:
-15. Scale plan if it wins: +20%/day to $____, then copy winners to ____
-16. Kill rule: spend ____ with CPA above ____ or zero purchases
-17. Approvals: who approves launch and budget changes
+15. If it wins: +20% a day up to $____, then copy winners to ____
+16. Stop rule: spend ____ with CPA above ____, or no purchases
+17. Approvals: who approves the launch and budget changes
 ```
 
 ## Self-check
 
-1. Break-even CPA with AOV $120 and VCR 35%?
-2. Why separate testing from scaling campaigns?
-3. How many ads in a batch at $250/day?
-4. A cold ad has 0.4% outbound CTR after enough spend. Decision?
-5. Name the Google campaign that protects your brand name.
+1. AOV is $120 and VCR is 35%. What is break-even CPA?
+2. Why keep testing and scaling campaigns apart?
+3. How many ads go in a batch at $250 a day?
+4. A cold ad has 0.4% outbound CTR after enough spend. What do you decide?
+5. Which Google campaign protects your brand name?
 6. What happens 5 to 3 days before a big sale?
 
 <details><summary>Answers</summary>
 
 1. 120 x 0.65 = $78.
-2. So proven campaigns are not reset by new ads, and tests get a fair, fixed budget.
+2. So new ads do not reset proven campaigns, and tests get a fair, fixed budget.
 3. 8 to 12.
-4. Kill or rework the message; the click problem is creative or offer.
+4. Stop it, or rework the message. A click problem comes from the ad or the offer.
 5. Brand search.
-6. Hype phase: sign-up ads and teaser emails, gradual budget shift.
+6. The excitement phase: sign-up ads and teaser emails, and a slow move of budget across.
 </details>

@@ -1,5 +1,7 @@
 # SOP 02: Daily scorecard and unit economics
 
+> **In plain words.** Each morning you see one number: did the store make money yesterday? You enter your costs once (product cost, shipping, fees). After that, sales minus all costs and ad spend gives your profit for the day.
+
 **Purpose.** Give the owner one honest number each morning: did we make money yesterday? Set up the cost drivers once so Helix can estimate daily contribution profit, MER and the store's own target MER.
 
 **Copilot triggers**

@@ -6,6 +6,12 @@ import { HelixMark } from "@/components/Logo";
 import { Pricing } from "@/components/marketing/Pricing";
 import { STRATEGIES } from "@/lib/seed/strategies";
 import { TRENDS } from "@/lib/seed/trends";
+import { SeasonalStrip } from "@/components/SeasonalBanner";
+import { primaryAlert } from "@/lib/seasons";
+import { isoDay } from "@/lib/dates";
+
+// Rebuild at least hourly so the seasonal alert follows the real date.
+export const revalidate = 3600;
 
 const STEPS = [
   { icon: Search, title: "Check", text: "Paste your store link. Helix checks your store, ads and emails and finds the fixes that will make you the most money." },
@@ -31,8 +37,10 @@ const FAQ = [
 ];
 
 export default function Home() {
+  const alert = primaryAlert(isoDay());
   return (
     <>
+      {alert && <SeasonalStrip alert={alert} />}
       <div className="helix-glow relative overflow-hidden text-white">
         <SiteHeader />
         <HelixMark size={560} className="pointer-events-none absolute -right-32 top-10 opacity-[0.08]" title="" />

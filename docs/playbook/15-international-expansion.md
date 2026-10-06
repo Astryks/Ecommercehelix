@@ -1,6 +1,6 @@
 # Module 15: International expansion
 
-**Outcome:** a careful, profitable way to sell into new countries.
+**Outcome:** a careful, profitable way to start selling in new countries.
 
 
 <!-- plain:start -->
@@ -27,37 +27,71 @@
 ---
 
 ## Lesson 15.1: Is there demand?
-Check existing orders and traffic by country, search volume, competitor presence, and social engagement by location. Expand first to the country that already buys from you.
+
+Before you expand, check that people in the new country want your products.
+
+1. Look at your orders and site visits by country.
+2. Check how often people there search for your product type.
+3. See if competitors already sell there.
+4. Check where your social media followers and engagement come from.
+
+**Decision rule:** expand first to the country that already buys from you.
 
 ## Lesson 15.2: Recalculate unit economics per country
-Landed cost changes with shipping, duties, taxes and currency. Build a separate cost driver set (Module 1) per market, including duties and import fees per order.
+
+Unit economics means what each order earns after its costs. These change in a new country.
+
+1. Your landed cost changes with shipping, import duties, taxes and the exchange rate.
+2. Make a separate set of cost drivers (see Module 1, Lesson 1.2) for each country.
+3. Include duties and import fees per order.
 
 ## Lesson 15.3: Pricing
-Price for the local market (local currency, rounded local price points), not just a currency conversion. Decide whether duties are included in the price (delivered duty paid usually converts better).
+
+1. **Set a local price,** not just your price converted. Use the local currency and round to normal local price points (for example 49 euros, not 47.83).
+2. **Decide who pays the duties.** Delivered duty paid (DDP) means you include duties in the price, so there is no surprise bill at the door. It usually sells better.
 
 ## Lesson 15.4: Product and promotion
-Adapt sizing, product mix, seasons (opposite hemisphere), key dates and messaging for each market.
+
+Change these for each country:
+
+1. Sizing (for example US sizes versus European sizes).
+2. Which products you show first.
+3. Seasons. The other half of the world has summer when you have winter.
+4. Key dates and holidays.
+5. Your messages and spelling.
 
 ## Lesson 15.5: Shipping options and logistics
-| Option | When |
+
+| Option | When to use it |
 | --- | --- |
-| Ship from home | Testing, low volume |
-| Local 3PL | Proven demand, faster delivery, lower returns friction |
-| Factory-direct DTC fulfilment | Lower cost for some categories, check delivery times and quality |
-Know duty thresholds and third-party duty and tax fees per order.
+| Ship from home | While testing, and while orders are few |
+| A local 3PL (a warehouse in that country that packs and ships for you) | Once demand is proven. Delivery is faster and returns are easier. |
+| Shipping direct from the factory | Can be cheaper for some products. Check delivery times and quality. |
+
+**Also know:**
+
+1. The duty threshold: the order value below which no duty is charged.
+2. Fees that couriers charge per order to collect duties and taxes.
 
 ## Lesson 15.6: One store or an expansion store?
-Multi-market settings in one store are simpler. A separate store per region helps when catalogs, pricing, content or apps must differ a lot.
+
+1. **One store with multi-market settings** (Shopify Markets) is simpler. Start here.
+2. **A separate store for a region** helps when the products, prices, content or apps need to be very different.
 
 ## Lesson 15.7: Reporting and campaigns
-Custom reports for MER by country. Start with a campaign per new country once spend allows, or a worldwide campaign to discover demand, then split out the winners.
+
+1. **Make a report that shows MER by country** (ad spend ÷ sales, for each country).
+2. **Campaigns:**
+   - Once spend allows, start a separate campaign for each new country.
+   - Or run one worldwide campaign to discover where demand is, then give the winning countries their own campaigns.
 
 ## Self-check
+
 1. Where should you expand first?
-2. Why recalculate cost drivers per country?
+2. Why work out your costs again for each country?
 
 <details><summary>Answers</summary>
 
-1. The country already buying from you.
-2. Shipping, duties, taxes and currency change your margins.
+1. The country that already buys from you.
+2. Shipping, duties, taxes and exchange rates change your margins.
 </details>

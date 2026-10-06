@@ -1,5 +1,7 @@
 # SOP 11: Landing pages and site CRO
 
+> **In plain words.** Make more money from every visitor, which makes every ad cheaper. Fix things in this order: make the site clear, then convincing, then easy to buy from, then add ways to buy more.
+
 **Purpose.** Raise revenue per visit so every channel becomes cheaper. Work in order: make the site clear, then convincing, then remove friction, then sell harder.
 
 **Copilot triggers**

@@ -1,5 +1,7 @@
 # SOP 12: Order value and cart offers
 
+> **In plain words.** Get people to spend a bit more per order without giving away profit. Use bundles, a free shipping threshold a little above your usual order, and simple add-ons in the cart.
+
 **Purpose.** Lift average order value without cutting margin, so each paid visit is worth more.
 
 **Copilot triggers**

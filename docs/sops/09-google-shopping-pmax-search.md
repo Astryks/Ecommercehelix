@@ -1,5 +1,7 @@
 # SOP 09: Google Shopping, Performance Max and Search
 
+> **In plain words.** Google ads reach people who are already searching for what you sell. Keep a clean product feed (the list of products Google reads), start with a simple setup, and only spend where it stays profitable.
+
 **Purpose.** Capture people already searching for what the store sells, at a return the economics can afford, with a clean product feed and a simple structure.
 
 **Copilot triggers**

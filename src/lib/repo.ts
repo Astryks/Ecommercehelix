@@ -12,6 +12,7 @@ import { isoDay, addDays } from "./dates";
 
 export type Account = { userId: string; email: string; name: string; plan: PlanId; storeUrl: string | null; walletCents: number };
 export type Completion = { taskId: string; completedOn: string };
+export type SeasonPlanRow = { planKey: string; addedOn: string };
 export type ApprovalRow = { id: string; taskId: string; title: string; detail: string; estAiCost: number; status: string; createdAt: string; decidedAt: string | null };
 
 type Mem = {
@@ -21,11 +22,13 @@ type Mem = {
   days: Map<string, DayInput[]>;
   products: Map<string, ProductLine[]>;
   settings: Map<string, Settings>;
+  seasonPlans: Map<string, SeasonPlanRow[]>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map() });
+mem.seasonPlans ??= new Map(); // older hot-reloaded stores
 
 export const DEFAULT_SETTINGS: Settings = { monthlyRevenueTarget: 60000, targetMerPct: 30, fixedCostsMonthly: 9000 };
 
@@ -242,4 +245,29 @@ export async function setMetaSpend(userId: string, rows: { date: string; spend: 
       update: { adMeta: r.spend, metaRevenue: r.revenue },
     });
   }
+}
+
+// ---------- seasonal prep plans ----------
+export async function getSeasonPlans(userId: string): Promise<SeasonPlanRow[]> {
+  if (!hasDb) return mem.seasonPlans.get(userId) ?? [];
+  const rows = await prisma.seasonPlan.findMany({ where: { userId }, orderBy: { createdAt: "asc" } });
+  return rows.map((r) => ({ planKey: r.planKey, addedOn: r.addedOn }));
+}
+
+export async function addSeasonPlan(userId: string, planKey: string) {
+  const addedOn = isoDay();
+  if (!hasDb) {
+    const list = mem.seasonPlans.get(userId) ?? [];
+    if (!list.some((p) => p.planKey === planKey)) list.push({ planKey, addedOn });
+    mem.seasonPlans.set(userId, list);
+    return;
+  }
+  await prisma.seasonPlan.upsert({ where: { userId_planKey: { userId, planKey } }, create: { userId, planKey, addedOn }, update: {} });
+}
+
+/** Everyone to consider for a nudge, with their email. */
+export async function listNudgeRecipients(): Promise<{ userId: string; email: string; name: string }[]> {
+  if (!hasDb) return [...mem.users.values()].map((u) => ({ userId: u.userId, email: u.email, name: u.name }));
+  const rows = await prisma.user.findMany({ select: { id: true, email: true, name: true } });
+  return rows.map((r) => ({ userId: r.id, email: r.email ?? "", name: r.name ?? "" }));
 }

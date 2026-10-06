@@ -29,6 +29,7 @@ model User {
   metaSnapshot   MetaSnapshot?
   metaDrafts     MetaDraft[]
   auditLogs      AuditLog[]
+  seasonPlans    SeasonPlan[]
 }
 
 model Account {
@@ -239,4 +240,16 @@ model AuditLog {
   user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, createdAt])
+}
+
+// A seasonal prep plan the user added with one click (see src/lib/seasons.ts).
+model SeasonPlan {
+  id        String   @id @default(cuid())
+  userId    String
+  planKey   String // e.g. "black-friday-2026"
+  addedOn   String // YYYY-MM-DD in the user's time zone
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, planKey])
 }

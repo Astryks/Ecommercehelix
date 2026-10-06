@@ -1,6 +1,6 @@
 # Module 20: Ad performance analysis, audiences and campaign setup
 
-**Outcome:** you can set up target audiences and campaigns correctly on Meta, Google and TikTok, read performance like an analyst, find the real cause of a problem (ad, page, offer or checkout), and report it in a way that leads to a clear decision.
+**Outcome:** you can set up audiences and campaigns correctly on Meta, Google and TikTok, read your results like an analyst, find the real cause of a problem (the ad, the page, the offer or the checkout), and report it in a way that leads to a clear decision.
 
 **Related:** [Module 6 Defining campaigns](06-defining-campaigns.md), [Module 7 Meta ads](07-meta-ads.md), [Module 8 Google ads](08-google-ads.md), [Module 2 Diagnose and fix](02-diagnose-and-fix.md), [SOP 05](../sops/05-meta-structure-and-scaling.md), [SOP 06](../sops/06-meta-daily-optimisation.md), [SOP 09](../sops/09-google-shopping-pmax-search.md)
 
@@ -32,62 +32,84 @@
 
 ## Lesson 20.1: Before you launch: tracking you can trust
 
-Bad data leads to bad decisions. Check these once, then monthly:
+Bad data leads to bad decisions. Check these once, then every month.
 
-- [ ] Pixel or tag plus server-side events (conversions API, enhanced conversions) connected through your store platform.
-- [ ] Purchase is the only primary conversion for sales campaigns. Add to cart and others are secondary.
-- [ ] Purchase value and currency pass correctly. Test with a real order and refund it.
-- [ ] Event deduplication is on (browser and server events are not double counted).
-- [ ] Domain verified; consent banner set up for your markets.
-- [ ] Your store's own analytics (orders, sessions) is the source of truth for revenue. Platforms are for direction.
-- [ ] UTM parameters on every ad so your analytics can split traffic by channel and campaign.
+1. **Your pixel (or Google tag) and server events are connected** through your store platform. Server events are called Conversions API on Meta and enhanced conversions on Google. They send sales from your store's server, so fewer are missed.
+2. **Purchase is the only main (primary) conversion** for sales campaigns. Add to cart and other actions are secondary.
+3. **The purchase value and currency come through correctly.** Test it with a real order, then refund it.
+4. **Deduplication is on.** This stops the same sale being counted twice (once from the browser, once from the server).
+5. **Your domain is verified,** and a consent (cookie) banner is set up for the countries you sell to.
+6. **Your store's own reports are the truth** for sales and visits. Ad platforms are only for direction.
+7. **Every ad link has UTM tags.** UTMs are labels added to the end of a link (like `?utm_source=facebook`) so Google Analytics can tell which channel and campaign each visit came from.
 
 ## Lesson 20.2: Setting up target audiences
 
-**Meta**
+### Meta
 
-1. Define account-level audience segments: engaged audience (site visitors, social engagers) and existing customers (upload your customer list, connect your store). This lets reports show how much spend reaches brand-new people.
-2. Build custom audiences: site visitors 30 and 180 days, product viewers 30 days, add to cart 14 days, checkout started 7 days, purchasers 180 days and all time, Instagram and Facebook engagers 365 days, video viewers 50% 90 days, email subscribers.
-3. Build lookalikes from purchasers or high-value customers (1%, 3 to 5%, 10%) for later tests.
-4. Default cold targeting: broad (country, age 18 to 65+, all genders unless the product is clearly gendered). Use audience suggestions only as hints.
-5. Exclusions for cold: none, light (recent purchasers), or harsh (all purchasers and engagers). Choose based on whether you want efficiency or strictly new customers.
-6. In automated sales campaigns, cap spend on existing customers (often 10 to 20%).
+1. **Set up audience segments for the whole account.**
+   - Engaged audience: site visitors and people who engaged on social.
+   - Existing customers: upload your customer list, or connect your store.
+   - This lets reports show how much spend reaches brand-new people.
+2. **Build custom audiences** (lists of people who already know you):
+   - Site visitors: last 30 and 180 days.
+   - Product viewers: last 30 days.
+   - Added to cart: last 14 days.
+   - Started checkout: last 7 days.
+   - Buyers: last 180 days, and all time.
+   - Instagram and Facebook engagers: last 365 days.
+   - People who watched 50% of a video: last 90 days.
+   - Email subscribers.
+3. **Build lookalikes** (new people similar to your buyers or best customers) at 1%, 3 to 5% and 10%, for later tests.
+4. **Default cold targeting is broad:** your country, age 18 to 65+, all genders (unless the product is clearly for one gender). Treat Meta's audience suggestions as hints only.
+5. **Choose exclusions for cold campaigns** (people to leave out):
+   - None.
+   - Light: recent buyers.
+   - Harsh: all buyers and people who engaged.
 
-**Google**
+   Choose based on what you want more: a lower cost per sale, or strictly new customers.
+6. **In automated Sales campaigns, cap spend on existing customers,** often at 10 to 20%.
 
-1. Customer match list (upload customers) to use as a signal and for exclusions.
-2. Remarketing lists: all visitors 30 and 540 days, cart abandoners, purchasers.
-3. For PMax, add audience signals (customer list, your own search terms, visitors). Signals guide, they do not restrict.
-4. For search, the keyword is the audience. Build negative keyword lists for jobs, free, DIY, competitor brands you will not bid on.
+### Google
 
-**TikTok**
+1. **Upload a customer match list** (your customers) to use as a hint and to leave customers out.
+2. **Build remarketing lists:** all visitors (last 30 and 540 days), people who left a cart, and buyers.
+3. **Add audience signals to Performance Max:** your customer list, search words you use, and visitors. Signals guide Google. They do not limit who sees the ads.
+4. **For Search, the keyword is the audience.** Build negative keyword lists for words you never want: "jobs", "free", "DIY", and competitor brands you will not bid on.
 
-1. Broad targeting with country and age is the default.
-2. Custom audiences: site visitors, video viewers, profile engagers, customer list.
-3. Spark ads use creator or your own organic posts so the engagement stays on the post.
+### TikTok
 
-**Audience by layer** (see Module 6):
+1. **Broad targeting** with country and age is the default.
+2. **Custom audiences:** site visitors, video viewers, people who engaged with your profile, and your customer list.
+3. **Spark ads** use creator posts or your own free posts, so the likes and comments stay on the post.
+
+### Audiences by layer
+
+The layer is how well the audience knows you (see Module 6).
 
 | Layer | Who | Example targeting |
 | --- | --- | --- |
-| Cold | Never interacted | Broad, harsh or light exclusions |
-| Mixed | Anyone, platform decides | Automated sales campaign, existing-customer cap |
-| Warm | Engaged, not bought | Visitors 180d, engagers, video viewers, excluding purchasers |
-| Hot | Close to buying | Add to cart 14d, checkout 7d, excluding purchasers 7d |
-| Existing customers | Bought before | Purchasers, for launches and repeat products |
+| Cold | Never interacted with you | Broad, with harsh or light exclusions |
+| Mixed | Anyone; the platform decides | Automated Sales campaign with a cap on existing customers |
+| Warm | Engaged but not bought | Visitors (180 days), engagers, video viewers, leaving out buyers |
+| Hot | Close to buying | Added to cart (14 days), started checkout (7 days), leaving out buyers from the last 7 days |
+| Existing customers | Bought before | Buyers, for launches and products people reorder |
 
 ## Lesson 20.3: Setting up a Meta sales campaign step by step
 
-1. Write the campaign brief first (Module 6, Lesson 6.16): target CPA, audience layer, budget, kill rule.
-2. Create campaign: objective **Sales**. Choose automated (platform-optimised) or manual setup.
-3. Name it using your convention, for example `03-Manual-Cold-Broad-Light-TEST-B16`.
-4. Budget: campaign budget for automated, ad set budget for tight tests. Start at about 2 to 3x target CPA per day.
-5. Conversion: website, event Purchase, attribution 7-day click, 1-day view (or what you use consistently).
-6. Audience: per Lesson 20.2. Advantage placements on unless you have a reason.
-7. Ads: upload 3 to 6 ads per ad set, all testing one variable. Add primary text, headline, link with UTMs.
-8. Check creative enhancements. Turn off anything that changes your message.
-9. Preview on mobile in every placement. Check safe zones.
-10. Publish, then do not touch for 3 days unless something is broken.
+The drawings below show each step in Ads Manager.
+
+1. **Write the campaign brief first** (Module 6, Lesson 6.16). Know your target CPA, the audience layer, the budget and the stop rule.
+2. **Create the campaign.** Choose the objective **Sales**. Then choose automated (Advantage+) or manual setup.
+3. **Name it** with your naming pattern, for example `03-Manual-Cold-Broad-Light-TEST-B16`.
+4. **Set the budget.** Use a campaign budget for automated campaigns. Use an ad set budget for tight tests. Start at about 2 to 3 times your target CPA per day.
+5. **Set the conversion.** Choose Website, the event Purchase, and the attribution setting 7-day click, 1-day view (or whatever setting you always use, so results are comparable).
+6. **Set the audience** as in Lesson 20.2. Leave Advantage+ placements on unless you have a good reason.
+7. **Add the ads.** Upload 3 to 6 ads per ad set, all testing one thing. Add the main text, the headline, and your link with UTM tags.
+8. **Check "creative enhancements".** Turn off anything that changes your message.
+9. **Preview on mobile** in every placement. Check text is inside the safe zones.
+10. **Publish. Then do not touch it for 3 days** unless something is broken.
+
+**With Helix:** Helix can build steps 2 to 7 for you as a paused draft in your own account. You check it and switch it on.
 
 <!-- guide:meta-1-create-sales-campaign -->
 ![Start a Sales campaign in Meta Ads Manager](../../public/guides/meta-1-create-sales-campaign.svg)
@@ -115,25 +137,27 @@ Bad data leads to bad decisions. Check these once, then monthly:
 
 ## Lesson 20.4: Setting up Google step by step
 
-**Brand search**
+The drawings below show how to start a Performance Max campaign and block wasted searches.
 
-1. Search campaign, Sales goal, bidding Maximise conversions or target impression share.
-2. Keywords: brand name and common misspellings, exact and phrase.
-3. Ads: responsive search ads with sitelinks, callouts and price or promotion assets.
-4. Budget: enough never to be limited.
+### Brand search (people searching your name)
 
-**Shopping or PMax (feed-only)**
+1. Create a Search campaign with the Sales goal. Choose the bidding "Maximise conversions" or "Target impression share".
+2. Keywords: your brand name and common misspellings, as exact and phrase match.
+3. Ads: responsive search ads with sitelinks, callouts, and price or promotion assets.
+4. Budget: enough that it is never "limited by budget".
 
-1. Fix the feed first: titles with the words people search, good images, correct price, availability, GTIN or brand, product type.
-2. Create PMax with Sales goal, linked Merchant Center, and only the feed (no extra creative assets) if you want it to behave like Shopping.
-3. Exclude your brand so brand demand stays in the cheap brand campaign.
-4. Split best sellers into their own campaign when they deserve more budget.
-5. Start with Maximise conversion value, then add a target ROAS once you have about 30+ conversions in 30 days. Set it near your target, not wishful.
+### Shopping or feed-only Performance Max
 
-**Non-brand search**
+1. **Fix your product feed first:** titles with the words people search, good images, correct prices, availability, GTIN (barcode) or brand, and product type.
+2. **Create Performance Max** with the Sales goal and your linked Merchant Center. Give it only the feed, with no extra images or videos, if you want it to behave like Shopping.
+3. **Exclude your brand name,** so people searching your name are handled by the cheap brand campaign.
+4. **Split best sellers into their own campaign** when they deserve more budget.
+5. **Bidding:** start with "Maximise conversion value". Once you have about 30 or more conversions in 30 days, add a target ROAS. Set it near your real target, not a wish.
 
-1. One campaign per product theme, tight keyword groups.
-2. Review the search terms report weekly. Add negatives. Promote converting terms to keywords and to feed titles.
+### Non-brand search
+
+1. One campaign per product theme, with small, tight keyword groups.
+2. Check the search terms report every week. Add negative keywords. Add searches that sell as keywords, and use those words in your product titles.
 
 <!-- guide:google-1-performance-max -->
 ![Start a Performance Max campaign in Google Ads](../../public/guides/google-1-performance-max.svg)
@@ -149,114 +173,114 @@ Bad data leads to bad decisions. Check these once, then monthly:
 
 ## Lesson 20.5: Setting up a TikTok campaign step by step
 
-1. Objective: Sales (website conversions or Shop).
-2. Pixel event: Complete payment.
-3. Targeting: broad. Budget: enough for several conversions a day per ad group.
-4. Ads: native-looking vertical videos, Spark ads where possible, 3 to 5 per ad group.
-5. Give it a week. TikTok's learning is noisier than Meta's.
-6. Judge on blended MER as well as platform return, because TikTok often drives sales that show up elsewhere.
+1. **Objective:** Sales (website conversions, or TikTok Shop).
+2. **Pixel event:** Complete payment.
+3. **Targeting:** broad. **Budget:** enough for several sales a day per ad group.
+4. **Ads:** natural-looking tall videos, Spark ads where you can, 3 to 5 per ad group.
+5. **Give it a week.** TikTok's learning is jumpier than Meta's.
+6. **Judge it on your total MER as well as TikTok's reported return.** TikTok often causes sales that show up under other channels.
 
 ## Lesson 20.6: The metric tree
 
-Revenue from ads breaks into a chain. Find the weak link:
+Sales from ads come from a chain of steps. Find the weak link.
 
 ```
 Spend
- └─ CPM (cost to reach people)
-     └─ CTR (do they click?)          ← creative and message
+ └─ CPM (cost to show the ad 1,000 times)
+     └─ CTR (out of 100 who see it, how many click)   ← the ad and its message
          └─ Cost per click
-             └─ Landing page view rate  ← speed, tracking
-                 └─ Add to cart rate     ← product page, offer, price
-                     └─ Checkout rate    ← shipping cost, trust, payment options
+             └─ Landing page view rate                  ← page speed, tracking
+                 └─ Add to cart rate                     ← product page, offer, price
+                     └─ Checkout rate                    ← shipping cost, trust, payment options
                          └─ Purchase rate
-                             └─ AOV      ← bundles, thresholds, upsells
+                             └─ AOV (average order)      ← bundles, free shipping amount, upsells
 ```
 
-Change one link and everything below moves. A 20% better CTR with the same page means 20% more buyers for the same spend.
+**How to use it:** improve one link and everything below it moves. For example, a 20% better CTR with the same page means 20% more buyers for the same spend.
 
 ## Lesson 20.7: Cross-diagnosis: is it the ad, the page, the offer or the checkout?
 
-This is the most useful table in the playbook. Helix runs the same rules automatically in Insights.
+This is the most useful table in the playbook. Helix runs the same rules for you in **What to fix**.
 
 | What you see | Likely cause | What to check and fix |
 | --- | --- | --- |
-| Good hook rate and CTR, low conversion rate | Landing page or offer | Page speed on mobile, message match between ad and page, offer clarity above the fold, trust (reviews, guarantee), mobile checkout |
-| High add-to-cart rate, low checkout completion | Checkout friction | Shipping cost surprise, slow or long checkout, missing payment options (wallets, buy now pay later), forced account creation, delivery time unclear |
-| Strong site conversion from other traffic, weak CTR on ads | Creative | New hooks, new angles, new formats; check the offer is in the ad |
-| Low hook rate, OK CTR from those who watch | Opening seconds | Re-cut the first 3 seconds; test visual and verbal hooks |
-| Good hook rate, low hold rate | Body of the video | Tighten the middle, show the product sooner, add proof |
-| Rising frequency and CPM, falling CTR | Creative fatigue or audience saturation | Load a new creative batch; broaden; check reach is growing with spend |
-| CPM jumps across all campaigns | Season or auction pressure | Expect it in peak periods; protect margin, lean on email and SMS |
-| Platform ROAS fine, MER getting worse | Over-attribution or retargeting taking credit | Shift budget to cold, check new customer share, run a holdout test |
-| Clicks fine, landing page views low | Slow page or broken tracking | Test page speed, check pixel fires on load |
-| Good conversion, low AOV | Order value levers missing | Free shipping threshold, bundles, gift with purchase, post-purchase upsell |
-| Lots of views, few clicks | Weak CTA or wrong audience | Clear call to action, offer in the ad, hook that attracts buyers not browsers |
-| High refunds after a campaign | Ad overpromises | Align claims with reality, improve size or fit guidance |
+| Good hook rate and CTR, but few visitors buy | The landing page or offer | Mobile page speed. Does the page match the ad? Is the offer clear at the top? Trust (reviews, guarantee). Mobile checkout. |
+| Lots of add to carts, but few finish checkout | Something in checkout puts people off | Surprise shipping cost, a slow or long checkout, missing payment options (Apple Pay, buy now pay later), forced account sign-up, unclear delivery time. |
+| Visitors from other channels buy well, but ads get few clicks | The ad itself | New hooks, new angles, new formats. Check the offer is in the ad. |
+| Low hook rate, but OK CTR from people who watch | The first seconds | Re-cut the first 3 seconds. Test new visual and spoken hooks. |
+| Good hook rate, low hold rate | The middle of the video | Tighten the middle, show the product sooner, add proof. |
+| Frequency and CPM rising, CTR falling | People are tired of the ads, or the audience is used up | Launch a new batch of ads. Go broader. Check reach grows with spend. |
+| CPM jumps across all campaigns | The season, or more advertisers competing | Expect it in busy periods. Protect your margin and lean on email and SMS. |
+| Platform ROAS looks fine, but MER is getting worse | Platforms taking credit for sales they did not cause, often retargeting | Move budget to cold, check the share of new customers, run a holdout test (Lesson 20.9). |
+| Plenty of clicks, few landing page views | A slow page or broken tracking | Test page speed. Check the pixel fires when the page loads. |
+| Good conversion, small orders | Missing ways to raise order value | Free shipping amount, bundles, a free gift, an offer after purchase. |
+| Lots of views, few clicks | Weak call to action, or the wrong people | A clear call to action, the offer in the ad, a hook that attracts buyers not browsers. |
+| Lots of refunds after a campaign | The ad promised too much | Make claims match reality. Improve size or fit guidance. |
 
 ## Lesson 20.8: Breakdowns that reveal problems
 
-Use breakdowns weekly, not daily:
+Breakdowns split your results by group in Ads Manager. Look at them weekly, not daily.
 
-- **Placement:** is one placement burning spend at a high CPA?
-- **Age and gender:** are you paying for people who never buy? Adjust creative before restricting targeting.
-- **Device:** a mobile conversion rate far below desktop usually means a mobile UX problem.
-- **Time:** day of week patterns help plan launches and emails.
-- **Country or region:** separate countries when spend allows.
-- **New vs existing customers:** how much of spend reaches new people?
+1. **Placement:** is one placement (for example Audience Network) spending a lot at a high cost per sale?
+2. **Age and gender:** are you paying for people who never buy? Change the ads before you narrow the targeting.
+3. **Device:** if phones convert far worse than computers, your mobile site has a problem.
+4. **Time:** day-of-week patterns help you plan launches and emails.
+5. **Country or region:** give countries their own campaigns when spend allows.
+6. **New versus existing customers:** how much of your spend reaches new people?
 
 ## Lesson 20.9: Attribution and incrementality
 
-Platforms each claim credit for the same sale. Rules of thumb:
+Every platform claims credit for the same sale. Incrementality means sales that would not have happened without the ad. Use these rules:
 
-1. **MER first.** Total ad spend ÷ total revenue from your store is the honest number.
-2. **Platform metrics for direction**, especially when comparing ads inside one platform.
-3. **New-customer CAC** (ad spend ÷ new customers) tells you if growth is real.
-4. **Holdout tests:** pause a channel or campaign in one region, or for a week, and see what happens to total sales. If sales do not drop, it was not incremental.
-5. **Post-purchase survey:** ask "Where did you first hear about us?" Combine with data.
+1. **MER first.** Total ad spend ÷ total sales from your store is the honest number.
+2. **Use platform numbers for direction,** especially to compare ads inside one platform.
+3. **Track new-customer CAC** (ad spend ÷ number of new customers). It tells you if growth is real.
+4. **Run holdout tests.** Pause a channel or campaign in one region, or for one week, and watch total sales. If sales do not drop, those ads were not adding sales.
+5. **Ask buyers after they purchase:** "Where did you first hear about us?" Combine the answers with your data.
 
 ## Lesson 20.10: Your analysis rhythm
 
-| When | Time | What |
+| When | Time | What to do |
 | --- | --- | --- |
-| Daily | 10 min | Scorecard (MER, contribution), kill drains, scale winners, check spend pacing |
-| Weekly | 45 min | Creative report (hook, hold, CTR, CPA by concept), breakdowns, search terms, new batch brief |
-| Monthly | 2 hours | MER and contribution vs target, new customer share, channel mix, test results, next month's plan |
-| Quarterly | Half day | Holdout or incrementality test, structure review, budget plan for the next peak |
+| Daily | 10 minutes | Read your scorecard (MER, contribution profit). Stop money-wasting ads. Give more to winners. Check spend is on pace. |
+| Weekly | 45 minutes | Ad report (hook rate, hold rate, CTR and cost per sale by idea), breakdowns, search terms, brief the next batch. |
+| Monthly | 2 hours | MER and contribution profit against target, share of new customers, channel mix, test results, next month's plan. |
+| Every 3 months | Half a day | A holdout test, a review of your account setup, and the budget plan for the next busy season. |
 
 ## Lesson 20.11: Reporting that leads to decisions
 
 Every report answers four questions:
 
-1. **What happened?** Three numbers: revenue, contribution profit, MER vs target.
+1. **What happened?** Three numbers: sales, contribution profit, and MER compared with target.
 2. **Why?** The one or two biggest causes, with evidence.
 3. **What did we do?** Actions taken this period.
-4. **What next?** The next three actions, with owners and dates.
+4. **What next?** The next three actions, with who owns each one and by when.
 
-Avoid dashboards with 40 metrics. If a metric does not change a decision, drop it.
+**Avoid dashboards with 40 numbers.** If a number would not change a decision, drop it.
 
 ## Lesson 20.12: Common analysis mistakes
 
-- Judging an ad after one day or $10 of spend.
-- Comparing ROAS across stores or seasons instead of against your own break-even.
-- Turning off an ad set that platform says is "bad" while MER is improving.
-- Reading CTR without checking what happens after the click.
-- Editing campaigns daily so they never leave learning.
-- Trusting the sum of platform-attributed revenue (it is usually more than your real revenue).
+1. Judging an ad after one day or $10 of spend.
+2. Comparing ROAS with other stores or other seasons, instead of with your own break-even.
+3. Turning off an ad set the platform calls "bad" while your MER is getting better.
+4. Reading CTR without checking what happens after the click.
+5. Editing campaigns every day, so they never finish learning.
+6. Trusting the total of what each platform says it earned. It is usually more than your real sales.
 
 ## Self-check
 
 1. Hook rate 35%, CTR 1.6%, conversion rate 0.6%. Where is the problem?
-2. Add to cart rate is double your benchmark but few checkouts. First three things to check?
-3. Platform ROAS is stable but MER is rising. What might be going on?
-4. Why start Google PMax as feed-only with brand excluded?
+2. Your add to cart rate is double normal, but few people check out. What three things do you check first?
+3. Platform ROAS is stable but MER is rising. What might be happening?
+4. Why start Google Performance Max as feed-only, with your brand excluded?
 5. Name four custom audiences to build on day one.
 
 <details><summary>Answers</summary>
 
-1. The ad works; the page or offer does not. Check speed, message match, offer clarity, trust and mobile checkout.
-2. Shipping cost surprise, checkout steps and payment options, forced account creation.
-3. Retargeting or over-attribution is taking credit while fewer new customers arrive. Shift to cold, check new customer share, test a holdout.
-4. It behaves like Shopping (clearer data) and stops PMax claiming cheap brand searches as its own wins.
-5. Any four of: visitors 30 and 180 days, product viewers, add to cart, checkout started, purchasers, engagers, video viewers, email list.
+1. The ad works. The page or offer does not. Check speed, whether the page matches the ad, how clear the offer is, trust signs and mobile checkout.
+2. Surprise shipping cost, checkout steps and payment options, and forced account sign-up.
+3. Retargeting or double-counting is taking credit while fewer new customers arrive. Move budget to cold, check the share of new customers, and run a holdout test.
+4. It behaves like Shopping (clearer data), and it stops Performance Max claiming cheap brand searches as its own wins.
+5. Any four of: visitors (30 and 180 days), product viewers, add to cart, started checkout, buyers, engagers, video viewers, email list.
 
 </details>

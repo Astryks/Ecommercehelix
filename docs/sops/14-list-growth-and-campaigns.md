@@ -1,5 +1,7 @@
 # SOP 14: List growth and campaign calendar
 
+> **In plain words.** Grow your own email and SMS list so you rely less on paid ads. Then send to it at a steady pace: often enough to earn, not so often that people leave.
+
 **Purpose.** Grow an owned audience (email and SMS) that lowers dependence on paid ads, and send campaigns at a steady rhythm that earns without burning the list.
 
 **Copilot triggers**

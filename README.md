@@ -93,6 +93,8 @@ Next.js on Vercel, Postgres, Stripe Billing, Vercel AI SDK with hosted LLMs and 
 
 Everything is written in plain words: short sentences, numbered steps, and a one-line explanation for any tricky word ([glossary](docs/glossary.md), also at `/learn/words`). Setup lessons include numbered drawings that show where to click (`public/guides/`). The Today screen leads with yesterday's profit and one line on what it means.
 
+**Proactive seasonal calendar.** From the real date, Helix shows a prominent alert on Today and the home page at the right lead time for each key date: Black Friday (from 12 weeks out; in October it reads "It's October. Black Friday planning needs to start now: order stock, lock your offer, start creative."), Christmas shipping cut-offs, Boxing Day and New Year sales, Valentine's Day, Mother's Day, EOFY and Father's Day (Australian dates). One click on "Add the prep plan" adds dated steps to Today, each with plain instructions and a lesson link. The same alert appears in the weekly report and goes out as a Monday email and push reminder (`/api/cron/seasonal-nudges`). Logic: `src/lib/seasons.ts`, messages: `src/lib/nudges.ts`.
+
 A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root and deploys to Vercel.
 
 | Area | Route | Status |
@@ -100,7 +102,8 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Marketing home, About, pricing, FAQ | `/`, `/about` | Real |
 | Learn (21 playbook modules rendered from `docs/playbook`) | `/learn`, `/learn/[slug]` | Real, static |
 | Sign-in (Google, email magic link, or demo login) | `/signin` | Real (Auth.js v5) |
-| Today: day N lesson + action, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |
+| Today: seasonal alert and prep plan, day N lesson + action, two insights, streak, compound score, right-hand roadmap | `/dashboard` | Real logic, seeded curriculum |
+| Seasonal nudges (weekly email and push) | `/api/cron/seasonal-nudges` | Message real; email sends only with `NUDGES_LIVE=1` and Resend keys; push is a stub |
 | Insights (proactive audit, cross-diagnosis) | `/dashboard/insights` | Rules engine real, signals EXAMPLE |
 | Approvals queue | `/dashboard/approvals` | Real; Meta paused drafts execute for real when connected |
 | Connections (Meta connect, asset picker, sync, disconnect, activity log) | `/dashboard/integrations`, `/api/meta/*`, `/api/cron/meta-sync` | Real (mock mode without a Meta app) |
@@ -108,7 +111,7 @@ A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root an
 | Your ads (campaign tracker: spend more / wait / new ads needed / stop) | `/dashboard/campaigns` | Real Meta rows when connected; Google and TikTok EXAMPLE |
 | Campaign builder (Draft & you launch, Guide me) | `/dashboard/campaigns/new` | Real paused-draft push to Meta after approval |
 | Email automation (9 flows with drafts) | `/dashboard/email` | Drafts real; Klaviyo/Shopify Email setup stubbed |
-| Ad Trends, Weekly report | `/dashboard/trends`, `/dashboard/report` | Seeded |
+| Ad Trends, Weekly report | `/dashboard/trends`, `/dashboard/report` | Seeded, except the live "Coming up" seasonal section |
 | Plan & billing (Stripe Checkout + webhook) | `/dashboard/billing`, `/api/checkout`, `/api/stripe/webhook` | Real in test mode; instant plan switch in demo mode |
 
 ### Run locally
@@ -134,10 +137,11 @@ To go live, copy `.env.example` to `.env.local` and set:
 | `NEXT_PUBLIC_APP_URL`, `APP_URL` | Public URL used for redirects (`APP_URL` wins for the Meta OAuth redirect) |
 | `META_APP_ID`, `META_APP_SECRET`, `META_CONFIG_ID` | Meta app and Facebook Login for Business configuration ([setup steps](docs/meta-setup.md)) |
 | `TOKEN_ENCRYPTION_KEY` | 32-byte key (`openssl rand -hex 32`) for AES-256-GCM token encryption |
-| `CRON_SECRET` | Protects the daily Meta sync cron |
+| `CRON_SECRET` | Protects the cron routes (daily Meta sync, Monday seasonal nudges) |
+| `NUDGES_LIVE` | `1` lets the seasonal nudge cron really send email (uses `AUTH_RESEND_KEY` and `EMAIL_FROM`). Otherwise it logs a stub |
 | `META_MOCK` | `1` forces mock Meta data. Without a Meta app, mock mode is automatic outside production |
 
-Tests: `npm test` (paused-only guardrail, token encryption, Graph client retries, insights mapping).
+Tests: `npm test` (paused-only guardrail, token encryption, Graph client retries, insights mapping, day ordering, seasonal dates and nudges).
 
 Regenerate generated docs: `python3 scripts/build_curriculum.py` (curriculum JSON + doc) and `python3 scripts/build_email_doc.py`.
 

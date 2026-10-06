@@ -2,7 +2,7 @@
 
 **Outcome:** your time goes to the few things that grow the business, the right people join at the right time, and you stay steady through bad weeks.
 
-**Related SOP:** [18](../sops/18-founder-rhythm-hiring.md)
+**Related SOP:** [18 Founder rhythm and hiring](../sops/18-founder-rhythm-hiring.md)
 
 
 <!-- plain:start -->
@@ -28,44 +28,95 @@
 ---
 
 ## Lesson 16.1: Personal operating basics
-- **Sleep:** protect it; decisions and mood depend on it.
-- **Calendar:** block focus time first, then meetings.
-- **Messages:** check at set times, not constantly. Turn off non-essential notifications.
-- **Meetings:** agenda, owner, decision, end early.
-- **Single-tasking:** one thing at a time in focused sprints (25 or 45 minutes).
-- **Know your worth:** price your hour; delegate work below it.
-- **Say no:** to anything that does not move this cycle's priorities.
+
+You are the most important part of the business. Look after how you work.
+
+1. **Sleep.** Protect it. Your decisions and mood depend on it.
+2. **Calendar.** Block time for focused work first. Fit meetings around it.
+3. **Messages.** Check them at set times, not all day. Turn off notifications you do not need.
+4. **Meetings.** Every meeting has an agenda, one owner and a decision. End early when you can.
+5. **One thing at a time.** Work in focused blocks of 25 or 45 minutes.
+6. **Know what your hour is worth.** Work out a price for your hour. Hand off work that is worth less than that.
+7. **Say no** to anything that does not help this cycle's priorities (Lesson 16.3).
 
 ## Lesson 16.2: Win the day and the week
-Daily: the Helix loop plus one priority block. Weekly: 30-minute plan on Monday (priorities, calendar, delegation), 15-minute review on Friday.
+
+1. **Every day:** do the Helix routine (update yesterday, read your profit, do one task), plus one block of time on your top priority.
+2. **Every Monday:** spend 30 minutes planning the week. Set priorities, plan your calendar and decide what to hand off.
+3. **Every Friday:** spend 15 minutes reviewing the week. What worked? What did not?
 
 ## Lesson 16.3: Six-week priority cycles
-1 or 2 priorities, 8 to 12 hours a week, weekly check-in, end-of-cycle review.
+
+Work in cycles of six weeks.
+
+1. Pick only 1 or 2 priorities for the cycle.
+2. Spend 8 to 12 hours a week on them.
+3. Check progress once a week.
+4. At the end of the cycle, review what you achieved and pick the next priorities.
 
 ## Lesson 16.4: Interruption filter
-One sentence problem? Right person? Needed now? If not: no, delegate or later.
+
+When something interrupts you, ask three questions:
+
+1. Can the problem be explained in one sentence?
+2. Am I the right person to deal with it?
+3. Does it need doing right now?
+
+If the answer to any is no: say no, hand it to someone else, or do it later.
 
 ## Lesson 16.5: Hiring
-Outcome-based roles, work-sample tests, plan 3 to 6 months ahead, written SOPs before handover. Senior hires: define the result in 12 months, check references deeply, start with a trial project.
+
+1. **Describe each role by its results,** not just tasks. For example "answer every customer email within 4 hours".
+2. **Test with a real work sample** before you hire.
+3. **Plan 3 to 6 months ahead.** Hiring and training take time.
+4. **Write down how the work is done (SOPs) before you hand it over.**
+5. **For senior people:**
+   - Write down what they must achieve in 12 months.
+   - Check references carefully.
+   - Start with a paid trial project.
 
 ## Lesson 16.6: Conflict resolution
-Name the issue, listen fully, separate facts from feelings, agree on the outcome, write down actions, follow up.
+
+1. Name the issue clearly.
+2. Listen fully, without interrupting.
+3. Separate facts from feelings.
+4. Agree on the result you both want.
+5. Write down who will do what.
+6. Follow up to check it happened.
 
 ## Lesson 16.7: Agencies vs in-house
-Own your accounts and data. Demand reporting on MER and contribution profit. If you bring work in-house, start with daily optimisation (this course) and keep specialists for gaps.
+
+1. **Own your accounts and data.** Ad accounts, ads, customer lists and reports must be in your name.
+2. **Ask agencies to report on MER and contribution profit,** not just ROAS.
+3. **If you bring the work in-house,** start with the daily ad check (Module 7, Lesson 7.6). Keep specialists for the gaps.
 
 ## Lesson 16.8: Resilience
-Bad days happen. Judge on 3-day and monthly trends. Keep a wins file and a decision log. Talk to peers. Plan for sleep and exercise during peaks.
+
+1. Bad days happen. Judge on the last 3 days and the month, not one day.
+2. Keep a "wins" file of good results and kind customer messages.
+3. Keep your decision log, so you can see you made sensible choices.
+4. Talk to other founders.
+5. During busy seasons, plan your sleep and exercise like any other task.
 
 ## Lesson 16.9: Capital and exit thinking
-Options: profit reinvestment, supplier terms, inventory finance, revenue-based funding, equity (including crowdfunding). Run the business as if a buyer will inspect it: clean numbers, documented processes, owned customer data.
+
+**Ways to fund growth:**
+
+1. Put profit back into the business.
+2. Get longer payment terms from suppliers.
+3. Inventory finance (loans for stock).
+4. Revenue-based funding (you repay a share of sales).
+5. Selling shares (equity), including crowdfunding.
+
+**Run the business as if a buyer will check it one day:** clean numbers, written processes, and customer data that you own.
 
 ## Self-check
+
 1. What are the three interruption questions?
 2. What should you own when working with an agency?
 
 <details><summary>Answers</summary>
 
-1. One-sentence problem? Right person? Needed now?
-2. Ad accounts, data, creative and customer lists.
+1. Can it be said in one sentence? Am I the right person? Does it need doing now?
+2. The ad accounts, data, ads (creative) and customer lists.
 </details>

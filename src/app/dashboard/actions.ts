@@ -4,8 +4,10 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
 import {
-  completeTask, createApproval, decideApproval, getAccount, getDays, saveSettings, upsertDays, clearExampleData, addProductLine,
+  completeTask, createApproval, decideApproval, getAccount, getDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan,
 } from "@/lib/repo";
+import { seasonalAlerts, SEASON_TASK_ID } from "@/lib/seasons";
+import { isoDay } from "@/lib/dates";
 import { findActionable } from "@/lib/actionable";
 import { PLAN_RANK } from "@/lib/plans";
 import { NUM_FIELDS, parseCsv, type DayInput } from "@/lib/scorecard";
@@ -20,7 +22,17 @@ const VALID_ID = /^(day-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
 export async function markDone(form: FormData) {
   const u = await requireUser();
   const taskId = String(form.get("taskId"));
-  if (VALID_ID.test(taskId)) await completeTask(u.id, taskId);
+  if (VALID_ID.test(taskId) || SEASON_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
+  revalidatePath("/dashboard", "layout");
+}
+
+/** One click: add a seasonal prep plan (its tasks then show on Today with due dates). */
+export async function addPrepPlan(form: FormData) {
+  const u = await requireUser();
+  const key = String(form.get("planKey"));
+  if (!seasonalAlerts(isoDay()).some((a) => a.key === key)) return;
+  await addSeasonPlan(u.id, key);
+  await logAudit(u.id, { actor: "user", action: "season.plan_added", target: key, outcome: "ok" });
   revalidatePath("/dashboard", "layout");
 }
 

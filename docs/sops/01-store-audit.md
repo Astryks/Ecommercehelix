@@ -1,5 +1,7 @@
 # SOP 01: Store audit
 
+> **In plain words.** Helix looks at your store like a first-time shopper would. It gives you a score out of 100, a list of the 10 fixes most likely to make you money (each pointing at the exact page), and a plan for your first week.
+
 **Purpose.** Turn a pasted store URL into a score, a ranked fix list and a first-week plan within a few minutes. The audit is the first impression of Helix, so it must be specific to the store, never generic.
 
 **Copilot triggers**
