@@ -1,16 +1,53 @@
 # STATUS
 
-_Last updated: 6 Oct 2026, 2:30 PM (Sydney)._
+_Last updated: 13 Oct 2026, about 8 AM (Sydney)._
 
 ## At a glance
 
-- **Live:** https://ecommercehelix.com (Vercel, Next.js 16). `www` redirects to the apex.
-- **Database:** Neon Postgres (Free, `ecommercehelix-db`, us-east-1), connected to Production and Preview. Schema changes are applied to the production database (additive only) before the code is pushed.
-- **Sign-in:** Resend email magic link (domain `ecommercehelix.com`, `AUTH_RESEND_KEY` and `EMAIL_FROM` set) plus the demo login (each demo sign-in gets its own isolated test account, labelled "Demo account"). Google sign-in is ready in code but needs Sid's OAuth keys.
-- **Deploys:** every push to `main` on GitHub (`Astryks/Ecommercehelix`) builds and deploys to production.
-- **Checks:** `npm test` (vitest), `npm run lint`, `npm run build`, plus the 8-gram originality check and banned-term check against private research, all green before each push.
+- **Live:** https://ecommercehelix.com (Vercel project `ecommercehelix`, Next.js 16). `www` redirects to the apex. Every push to `main` on GitHub (`Astryks/Ecommercehelix`) deploys to production.
+- **Database:** Neon Postgres via Prisma. Schema changes are additive only and are applied to the production database before the code is pushed. Note: this build machine cannot reach Neon's port 5432, so changes are applied with `prisma migrate diff` (old schema to new schema, no drops allowed) run over Neon's HTTPS driver with the unpooled URL pulled from Vercel into a temp file that is deleted straight after.
+- **Sign-in:** Resend email magic links are live. The demo login is on (each demo sign-in is a fresh, isolated test account). Google sign-in is optional and needs Sid's OAuth keys.
+- **Checks before every push:** `npm test` (vitest, 161 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
+- **Content:** 267 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29), plus the Helix Course (20 goals).
+- **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
-## What Helix does today
+## What is new since 6 Oct 2026
+
+**The Helix Course (13 Oct).** A guided program on top of the lessons. One goal at a time, in plain words with a measurable finish line, on the profit-first ladder: your numbers, then Attract, Convert, Grow, then run the business. Three tracks: Just starting ($0 to $10k a month), Growing ($10k to $100k) and Scaling (over $100k). 20 goals, 16 per track. Each goal runs over 5 to 11 days; a day has 1 task on light days and up to 5 on busy ones. Every task is one action with the expected result, a time estimate, a link to the lesson step, Do it for me and Guide me. Ticking a day unlocks the next; hitting the finish line (checked from real daily numbers where possible, otherwise confirmed by the owner) unlocks the next goal with a small celebration. Sale prep (Black Friday from 1 August, Christmas, EOFY and more) and tax dates (BAS, EOFY, US dates) slot into the day when due within a week. Today now leads with Your goal (progress bar), Today's tasks and Why this matters. `/course` shows the whole path (done, current, locked, with day counts) and `/course/goal/<id>` shows each goal's days. Progress: new `CourseState` table plus the existing task and lesson-step tables, so ticks are shared with the lessons. Design: `docs/playbook/course.md`. Code: `src/lib/course-plan.ts`, `src/lib/course.ts`, `src/app/course`, `src/components/course`. Tests: `tests/course.test.ts`.
+
+**Content audit and new lessons (13 Oct).** Every Helix title and heading was checked against the private research titles and branded phrases. 26 lesson and module titles were renamed to plain, original wording that says what you do (for example "Say clearly what the customer gets", "Your yearly sales calendar", "A 10-minute weekly stock check"). 9 overlapping lessons were merged into one each (for example community, content pillars, hiring, agencies, resilience, speed, tracking and policies); old step ticks, links and page anchors still work through `src/lib/lesson-aliases.json`. New Module 29, "Customers, partners and the weekly rhythm": 16 lessons (5 Attract, 3 Convert, 8 Grow) on customer words, the worry behind the purchase, repurposing content, referrals, partner brands, guest spots, a weekly story email, buying-question emails, leading numbers, a 30-minute weekly numbers meeting, playbooks, owners, a 90-day plan, a quarterly reset, a one-page direction and a wins file.
+
+**Growth dashboard and key metrics (13 Oct).** `/dashboard/growth`: revenue, costs and net profit by Day, Week, Month and Year, change against the previous period in % and $, profit year to date, margin against benchmark bands, a profit trend line and a plain line such as "Profit is up 57% on last week ($396 more)". `/dashboard/metrics`: a 14-card grid with a good number for each, and a clear label on every card: You fill this in (with exactly where to find the number), Helix fills this automatically, or Automatic once you connect Meta (with a Connect button). The daily form is simpler: grouped fields (Shopify, ads, costs, more), examples and where to find each number, blank costs estimated from recent days, and calculated values shown read-only. New optional add-to-cart field (`ScorecardDay.addToCarts`).
+
+**6 Oct (launch day):** production went live; lessons in steps (all 260, Do it for me, Guide me, glossary tooltips); sharper messages and the goals ladder; Black Friday all year; Attract, Convert, Grow tagging; Run your business modules 23 to 28; GST/VAT setting; Suppliers and stock; restyle; Shopify store setup module and the 28-day Just starting track; isolated demo login; visual Dashboard; calendar by country with .ics; Meta integration; the first web app, curriculum, audit engine, email automation and product docs.
+
+## Commits since 6 Oct 2026
+
+| Commit | Date | What |
+|---|---|---|
+| (this commit) | 13 Oct | STATUS rewrite; /course sign-in redirect returns to /course |
+| 39d8e78 | 13 Oct | The Helix Course |
+| 6ecebdc | 13 Oct | Content audit, 9 merged lessons, 26 renamed titles, Module 29 |
+| 14ee485 | 13 Oct | Growth dashboard, key metrics panel, simpler daily form |
+| a2d3ad0 | 6 Oct | Lessons in steps (all 260) |
+| 06d2ca0 | 6 Oct | Sharper messages and the nine objectives |
+| 1a19b8c | 6 Oct | Black Friday all year, who Helix is for, goals ladder |
+| 42f9a9c | 6 Oct | Attract, Convert, Grow tagging |
+| eabe529 | 6 Oct | Run your business modules 23 to 28 |
+| ce022fc | 6 Oct | GST/VAT setting |
+| 7fb2c68 | 6 Oct | Suppliers and stock |
+| 337b503 | 6 Oct | Restyle |
+| 2243d3a | 6 Oct | Shopify store setup module 22, 28-day Just starting track |
+| bc0bbff | 6 Oct | Isolated demo login |
+| 95cb468 | 6 Oct | Visual Dashboard |
+| 28fd4f0 | 6 Oct | Calendar by country, .ics, two tracks |
+| 166bc0f | 6 Oct | Plain step-by-step lessons, seasonal alerts |
+| 930d8be | 6 Oct | Plain words, profit-first Today, guides |
+| 5640890 | 6 Oct | Meta integration |
+| d65bcf4 | 6 Oct | Web app, curriculum, audit engine, email automation |
+| 9308bfd | 6 Oct | Product docs and 18 SOPs |
+
+## Live features
 
 **The framework: Attract, Convert, Grow.** All learning content sits in three stages. **Attract** gets the right buyers in (ads, content, social, SEO, creatives, audiences). **Convert** turns visits into sales (site, offer, CRO, checkout, email flows, pricing, promotions). **Grow** keeps more of every sale, then scales (profit numbers, scaling budgets, retention and LTV, stock and suppliers, international, team, AI and tools, Run your business). Stages live in `src/lib/stage-map.json` (module default plus lesson overrides) and `src/lib/stages.ts`. Shown as a visual trio on the home page, Learn and About, a chip on every lesson, the stage of the current lesson on Today and a label on each roadmap day. Tested in `tests/stages.test.ts`.
 
@@ -39,37 +76,50 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 - **Black Friday all year** (above) and a new FAQ, "Who is Helix for?".
 
 **Other features (all live):**
-- **Today:** profit-yesterday box with a one-minute update form, the day's lesson and action for your track (Just starting 28 days, Growing 64 days), up to two insights, seasonal alerts and prep plans, upcoming key dates, stock and admin reminders, goals ladder, streak and compound score, roadmap.
+- **Today:** Your goal, Today's tasks and Why this matters from the Helix Course, profit-yesterday box with a one-minute update form, the day's lesson and action for your track (Just starting 28 days, Growing 64 days), up to two insights, seasonal alerts and prep plans, upcoming key dates, stock and admin reminders, goals ladder, streak and compound score, roadmap.
 - **Dashboard** (`/dashboard/analytics`): week, month, year-to-date and last-12-months views compared with the previous period; revenue vs costs vs profit, profit trend, cost donut, ROAS and MER with the break-even line, channels, new vs returning; 16+ metric cards with plain-words explanations; ratings against the user's own break-even lines (`src/lib/analytics.ts`, `src/lib/metric-info.ts`, tested). Demo mode seeds two years of labelled example days.
 - **Calendar** (`/dashboard/calendar`): every key date for 12 months for AU and US, countdowns, prep-plan status, business admin dates and Black Friday prep steps; `.ics` download and Google/webcal subscribe (`/api/calendar`).
 - **Seasonal alerts and nudges:** Black Friday, Christmas cut-offs, Boxing Day and New Year, Valentine's Day, Mother's Day, EOFY, Father's Day (AU and US). Weekly report "Coming up" section. `/api/cron/seasonal-nudges` (Mondays 08:00 Sydney) builds a nudge per user; email sends only with `NUDGES_LIVE=1`; push is a stub.
 - **Suppliers & stock** (`/dashboard/stock`): suppliers, landed cost, reorder points, stock-out countdowns, Black Friday last safe order dates, reorder alerts on Today.
 - **Run your business** (`/dashboard/business`): modules 23 to 28 with AU and US versions, 13 topics, verified thresholds, dated admin reminders (BAS, tax returns, EOFY, 1099-NEC, estimated tax, security checks). General information, not advice.
 - **GST/VAT setting:** "My prices include GST/VAT" strips tax from sales before any profit maths (`src/lib/tax.ts`).
-- **Learn:** 28-module Helix Playbook in plain words, each lesson tagged with a stage, "In plain words" boxes, a 106-term glossary (`/learn/words`), 16 drawings that show where to click, and the goals ladder guide.
+- **Learn:** 29-module Helix Playbook (267 lessons) in plain words, each lesson tagged with a stage, "In plain words" boxes, a 106-term glossary (`/learn/words`), 16 drawings that show where to click, and the goals ladder guide.
 - **Meta integration (real):** Facebook Login for Business connect, encrypted long-lived token, asset picker, daily sync plus Sync now, insights into the campaign tracker and audit rules, paused-only drafts after approval, audit log, disconnect. Mock mode without a Meta app. Setup: `docs/meta-setup.md`.
 - **Other screens:** What to fix (insights), Waiting for your OK (approvals), Your numbers (scorecard and CSV import), Your ads, campaign builder, Email automation, Ad Trends, Weekly report, Connections, Settings (track, country, GST/VAT), Plan & billing (Stripe Checkout and webhook, waiting for keys).
 
+- **Your course** (`/course`), **Growth** (`/dashboard/growth`) and **Key metrics** (`/dashboard/metrics`) are in the sidebar.
+
+## Integrations
+
+| Integration | State | What is needed |
+|---|---|---|
+| Resend email sign-in | Live | Nothing |
+| Meta (Facebook and Instagram ads) | Built: connect, encrypted tokens, daily sync, paused drafts, audit log. Runs in mock mode | Sid creates the Meta developer app, completes Business Verification and App Review (`docs/meta-setup.md`), then adds `META_APP_ID` and `META_APP_SECRET` |
+| Stripe billing | Built: Checkout and signed webhook | Secret key, webhook secret and price IDs for Starter and Growth |
+| Google sign-in | Built, optional | `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET` |
+| Shopify | Stock sync stubbed; sales, sessions and add-to-cart are typed in | Shopify app and API access to sync automatically |
+| Google Ads, TikTok, Klaviyo | Example data only | API access later |
+
+## Next steps and blockers (in priority order)
+
+1. **Stripe keys and price IDs (blocker for revenue).** Paid plans cannot be bought until they are set.
+2. **Meta developer app and verification (blocker for live ad data).** Unlocks automatic spend, ROAS and CTR on the metrics panel and live paused drafts.
+3. **Logo redesign: pending Sid's pick.** Recommendation: a compounding-curve double helix, with a minimal tile favicon.
+4. **Shopify sync.** Fills sessions, sales and add-to-cart automatically, so more course finish lines check themselves.
+5. **Course polish.** Course-specific Do it for me actions for the new Module 29 lessons; a weekly email that recaps the current goal; let owners pick a goal out of order; a finish-line history.
+6. **Old anchors for merged lessons** that lived in a different module land on the old module page (top), not the new lesson. Add a small redirect map on the module page.
+7. **Decide when to switch off the demo login** on production.
+8. **Google sign-in** if wanted.
+9. **Google Ads, TikTok and Klaviyo connections** to replace example data.
+10. Answer the open questions below.
+
 ## Waiting on Sid
 
-1. **Stripe:** secret key, webhook secret and the price IDs for Starter ($29) and Growth ($59). Until then, paid plans cannot be bought on the live site.
-2. **Meta:** create the Meta app, complete Business Verification and App Review (steps in `docs/meta-setup.md`), then add `META_APP_ID` and `META_APP_SECRET` in Vercel. Until then Meta runs in mock mode.
-3. **Google sign-in (optional):** an OAuth client ID and secret (`AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET`) if you want "Continue with Google" next to email sign-in.
-4. **Demo login on production:** `ALLOW_DEV_LOGIN` is on so people can try Helix. Decide when to switch it off.
-
-### Real vs stubbed
-
-| Real | Stubbed or seeded |
-| --- | --- |
-| Auth.js (Google, Resend magic link, demo credentials), JWT sessions, Prisma adapter when a DB exists | Live crawler, PageSpeed calls, Shopify/Google/Klaviyo/social API pulls |
-| Meta: OAuth connect, encrypted tokens, asset picker, daily sync, paused drafts, audit log, disconnect (needs Sid's Meta app for live data; mock mode otherwise) | Meta App Review and Business Verification (Sid's steps in docs/meta-setup.md) |
-| Prisma schema (users, plans, tasks, approvals, scorecard days, product sales, settings, Meta connection, snapshot, drafts, audit log) and dual DB/in-memory repository | Non-Meta insight signals (EXAMPLE), Google and TikTok campaign rows (EXAMPLE), flow status and revenue (EXAMPLE) |
-| Scorecard maths, rollups, RAG flags, CSV import, manual entry, Meta ad spend sync | Scorecard sync for Shopify and Google |
-| Cross-diagnosis rules engine (Meta block fed by real data when connected) and campaign recommendation rules | Google paused drafts; pausing losing Meta ads (guardrail allows it, UI not built); creating flows in Klaviyo/Shopify Email |
-| Curriculum progression, streak, compound score, plan gating, approvals | LLM drafting (approval text is templated), wallet top-up |
-| Stripe Checkout + signed webhook setting the plan | Ad Trends pipeline and weekly report generation (seeded) |
-| Seasonal alerts, prep plans and nudge messages from the real date; Black Friday plan from 1 August with calendar steps and year-round nudges | Push notifications (stub); nudge email sending is off unless `NUDGES_LIVE=1` |
-| Monthly goals ladder: targets, actuals from daily numbers and Meta CTR, ratings | Add-to-cart rate actuals (need Shopify sync) |
+1. Stripe secret key, webhook secret and price IDs.
+2. Meta app, Business Verification and App Review.
+3. Logo pick (recommended: compounding-curve double helix, minimal tile favicon).
+4. Google OAuth keys (optional).
+5. When to turn off the demo login.
 
 ## Decisions made
 
@@ -105,15 +155,3 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 18. Goals ladder: are the suggested starting goals right for each track (Growing: 30,000 visits, 1.2% CTR, 7.5% add to cart, 2.2% conversion, $92 AOV, 30% MER, $28 CPA, 20% contribution, $3,000 net profit; Just starting: 3,000 visits, 1% CTR, 6%, 1.5%, $60, 35% MER, $21, 10%, $0 or more)?
 19. Black Friday: should the August to January plan also run for Click Frenzy and Singles Day stores, or stay focused on BFCM? Should the Monday nudge email go out every week from August, or fortnightly until October?
 
-## Changelog: 6 Oct 2026 (Sydney)
-
-- **Today, about 2:45 PM:** sharper messages: "Built for stores doing $10k to $100k a month that want to reach a $1M year, profitably" and "The goal is profit, not just revenue" with the nine objectives in order, on home, About, onboarding and `/learn/goals`.
-- **Today, about 2:30 PM:** Black Friday all year (plan from 1 August in five stages, Today banner, calendar steps, home and About messages, year-round test nudges), home messages on fear of advertising and on agencies (merged into About), who Helix is for (revenue bands), the goals ladder (home, `/learn/goals`, onboarding targets, `/dashboard/goals`, Today and Dashboard against actuals, new `MonthlyGoals` table), STATUS rewrite.
-- **2:01 PM:** Attract, Convert, Grow: every module and lesson tagged with a stage, trio on home, Learn and About.
-- **1:55 PM:** Run your business: modules 23 to 28, business hub, dated admin reminders.
-- **1:46 PM:** GST/VAT setting.
-- **1:41 PM:** Suppliers & stock.
-- **1:37 PM:** Restyle (paper, navy ink, terracotta accent, sage positives, serif headings) and new logo colours.
-- **1:31 PM:** Shopify store setup module 22 and the 28-day Just starting track; demo login isolated per sign-in.
-- **1:21 PM:** Visual Dashboard.
-- **Earlier today:** production went live at ecommercehelix.com (Vercel, Neon, Resend email sign-in, GitHub auto-deploy).
