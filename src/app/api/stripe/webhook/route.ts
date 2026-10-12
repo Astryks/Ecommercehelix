@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 import { stripe, planForPrice } from "@/lib/stripe";
-import { setPlan, setPlanBySubscription } from "@/lib/repo";
+import { planForStatus } from "@/lib/billing";
+import { setPlan, setPlanBySubscription, setBillingStatusByCustomer } from "@/lib/repo";
 import type { PlanId } from "@/lib/plans";
+
+const idOf = (x: string | { id: string } | null | undefined) => (typeof x === "string" ? x : x?.id);
 
 export async function POST(req: Request) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
@@ -20,24 +23,28 @@ export async function POST(req: Request) {
       const cs = event.data.object as Stripe.Checkout.Session;
       const userId = cs.client_reference_id ?? cs.metadata?.userId;
       const plan = (cs.metadata?.plan ?? "starter") as PlanId;
-      if (userId)
-        await setPlan(userId, plan, {
-          customerId: typeof cs.customer === "string" ? cs.customer : cs.customer?.id,
-          subscriptionId: typeof cs.subscription === "string" ? cs.subscription : cs.subscription?.id,
-          status: "active",
-        });
+      if (userId && cs.mode === "subscription")
+        await setPlan(userId, plan, { customerId: idOf(cs.customer), subscriptionId: idOf(cs.subscription), status: "active" });
       break;
     }
+    case "customer.subscription.created":
     case "customer.subscription.updated": {
       const sub = event.data.object as Stripe.Subscription;
-      const plan = planForPrice(sub.items.data[0]?.price?.id);
-      const active = sub.status === "active" || sub.status === "trialing";
-      await setPlanBySubscription(sub.id, active ? plan : "free", sub.status);
+      const plan = planForStatus(sub.status, planForPrice(sub.items.data[0]?.price?.id));
+      await setPlanBySubscription(sub.id, plan, sub.status, { userId: sub.metadata?.userId, customerId: idOf(sub.customer) });
       break;
     }
     case "customer.subscription.deleted": {
+      // Downgrade to Free. Only plan and status change: the Meta connection and prep plans stay.
       const sub = event.data.object as Stripe.Subscription;
-      await setPlanBySubscription(sub.id, "free", "canceled");
+      await setPlanBySubscription(sub.id, "free", "canceled", { userId: sub.metadata?.userId, customerId: idOf(sub.customer) });
+      break;
+    }
+    case "invoice.payment_failed": {
+      // Stripe retries the card; the plan stays during the retries and drops to Free if the subscription ends.
+      const inv = event.data.object as Stripe.Invoice;
+      const customerId = idOf(inv.customer);
+      if (customerId) await setBillingStatusByCustomer(customerId, "past_due");
       break;
     }
   }

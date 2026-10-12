@@ -13,6 +13,14 @@ _Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 
 ## What is new since 6 Oct 2026
 
+**Stripe billing, test mode live (13 Oct).**
+- Checkout is on in Stripe **test mode** (sandbox "E-commerce Helix sandbox", AU, AUD). Products: Helix Starter A$29 a month (`helix_starter_monthly`) and Helix Growth A$59 a month (`helix_growth_monthly`). Prices show as A$ on the pricing section and billing page.
+- Webhook: `https://ecommercehelix.com/api/stripe/webhook` for checkout.session.completed, customer.subscription.created, updated and deleted, invoice.payment_failed and invoice.paid. Plan and status update in the `Subscription` table.
+- Customer portal (`/api/billing/portal`, "Manage billing" on the billing page): change plan, card, invoices, cancel at period end. Paying users who pick another plan go to the portal, so a sub is never orphaned.
+- Cancel: the plan drops to Free and only plan and status change, so the Meta connection and prep plans stay (Sid's decision). Failed payment: status becomes past_due, a notice asks for a new card, the plan stays while Stripe retries and drops to Free if the subscription ends or becomes unpaid.
+- Env vars (Production and Preview): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, STRIPE_PRICE_STARTER, STRIPE_PRICE_GROWTH. No publishable key is needed (server-side Checkout redirect). No schema change.
+- **To go live:** activate the Stripe account (business details, bank account), switch the dashboard to live mode, create the same two products and prices (same lookup keys) and a live webhook to the same URL with the same events, set up the live customer portal, then swap the four env vars for the live values and redeploy.
+
 **The name, simpler Meta ads, honest Google (13 Oct, late morning).**
 - About now tells the story behind the name: the double helix of DNA, how cells copy it to grow, and how a business grows by copying what works every day, with you as the owner and Helix as your tool. A short version sits on the home page.
 - Meta lessons rewritten to one action per step with exact Ads Manager click paths and what to do if the screen looks different: 7.1, 7.2, 7.4, 7.6, 7.7, 7.10 and 20.3. New 7.13 "Launch your first Meta ad in 30 minutes" (setup check, budget from the marketing guide, 3 to 5 ads, Advantage+ Sales, or Do it for me as a paused draft you switch on) and 7.14 "Find your way around Ads Manager" with an annotated drawing. Both open the first traffic goals of the course.

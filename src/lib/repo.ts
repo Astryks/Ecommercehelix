@@ -125,9 +125,25 @@ export async function setPlan(userId: string, plan: PlanId, stripe?: { customerI
   });
 }
 
-export async function setPlanBySubscription(subscriptionId: string, plan: PlanId, status: string) {
+/** Update by Stripe subscription id; falls back to the user id from metadata when the id is not stored yet. Only plan and status change, so a downgrade keeps the Meta connection, prep plans and all other data. */
+export async function setPlanBySubscription(subscriptionId: string, plan: PlanId, status: string, fallback?: { userId?: string; customerId?: string }) {
   if (!hasDb) return;
-  await prisma.subscription.updateMany({ where: { stripeSubscriptionId: subscriptionId }, data: { plan: toEnum(plan), status } });
+  const r = await prisma.subscription.updateMany({ where: { stripeSubscriptionId: subscriptionId }, data: { plan: toEnum(plan), status } });
+  if (r.count === 0 && fallback?.userId && (await prisma.user.findUnique({ where: { id: fallback.userId } })))
+    await setPlan(fallback.userId, plan, { customerId: fallback.customerId, subscriptionId, status });
+}
+
+/** Status only (for invoice.payment_failed). */
+export async function setBillingStatusByCustomer(customerId: string, status: string) {
+  if (!hasDb) return;
+  await prisma.subscription.updateMany({ where: { stripeCustomerId: customerId }, data: { status } });
+}
+
+export type BillingInfo = { status: string; customerId: string | null; subscriptionId: string | null };
+export async function getBilling(userId: string): Promise<BillingInfo> {
+  if (!hasDb) return { status: "active", customerId: null, subscriptionId: null };
+  const s = await prisma.subscription.findUnique({ where: { userId } });
+  return { status: s?.status ?? "active", customerId: s?.stripeCustomerId ?? null, subscriptionId: s?.stripeSubscriptionId ?? null };
 }
 
 export async function setStore(userId: string, url: string) {

@@ -19,7 +19,7 @@ export function Pricing() {
               <h3 className="text-lg font-semibold">{p.name}</h3>
               <p className={`mt-1 text-sm ${p.highlight ? "text-slate-300" : "text-slate-600"}`}>{p.blurb}</p>
               <p className="mt-6 flex items-baseline gap-1">
-                <span className="font-display text-5xl font-semibold tracking-tight">${p.price}</span>
+                <span className="font-display text-5xl font-semibold tracking-tight">{p.price === 0 ? "$0" : `A$${p.price}`}</span>
                 <span className={p.highlight ? "text-slate-400" : "text-slate-500"}>/month</span>
               </p>
               <p className={`mt-2 text-xs font-medium ${p.highlight ? "text-cyan-300" : "text-cyan-700"}`}>{p.aiAllowance}</p>

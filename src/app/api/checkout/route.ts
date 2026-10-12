@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { auth } from "@/auth";
-import { ensureUser, setPlan } from "@/lib/repo";
+import { ensureUser, setPlan, getBilling } from "@/lib/repo";
 import { stripe, priceFor } from "@/lib/stripe";
 import type { PlanId } from "@/lib/plans";
 
@@ -14,6 +14,12 @@ export async function POST(req: Request) {
   if (!["free", "starter", "growth"].includes(plan)) return NextResponse.json({ error: "bad plan" }, { status: 400 });
 
   const price = priceFor(plan);
+  const billing = await getBilling(userId);
+  // Already paying through Stripe: plan changes and cancelling happen in the customer portal.
+  if (stripe && billing.subscriptionId && billing.customerId && billing.status !== "canceled") {
+    const portal = await stripe.billingPortal.sessions.create({ customer: billing.customerId, return_url: `${base}/dashboard/billing` });
+    return NextResponse.redirect(portal.url, 303);
+  }
   if (!stripe || !price || plan === "free") {
     // Demo mode (no Stripe keys) or downgrade: set the plan directly.
     await setPlan(userId, plan);
@@ -23,7 +29,7 @@ export async function POST(req: Request) {
     mode: "subscription",
     line_items: [{ price, quantity: 1 }],
     client_reference_id: userId,
-    customer_email: s.user.email ?? undefined,
+    ...(billing.customerId ? { customer: billing.customerId } : { customer_email: s.user.email ?? undefined }),
     metadata: { userId, plan },
     subscription_data: { metadata: { userId, plan } },
     success_url: `${base}/dashboard/billing?success=1`,
