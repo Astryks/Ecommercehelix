@@ -130,8 +130,24 @@ export async function saveDay(form: FormData) {
   const u = await requireUser();
   const date = String(form.get("date"));
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return;
+  // Blank boxes keep what is saved for that day; blank costs are estimated from recent days.
+  const raw = await getRawDays(u.id);
+  const existing = raw.find((x) => x.date === date && !x.example);
   const d = { date, source: "manual" } as DayInput;
-  for (const f of NUM_FIELDS) d[f] = Math.max(0, Number(form.get(f)) || 0);
+  const blank = new Set<string>();
+  for (const f of NUM_FIELDS) {
+    const v = form.get(f);
+    if (v === null || String(v).trim() === "") {
+      blank.add(f);
+      d[f] = Number(existing?.[f]) || 0;
+    } else d[f] = Math.max(0, Number(v) || 0);
+  }
+  const r = costRatios(raw);
+  const round = (n: number) => Math.round(n * 100) / 100;
+  if (blank.has("cogs") && !d.cogs) d.cogs = round(d.revenue * r.cogs);
+  if (blank.has("shipping") && !d.shipping) d.shipping = round(d.orders * r.shippingPerOrder);
+  if (blank.has("paymentFees") && !d.paymentFees) d.paymentFees = round(d.revenue * r.fees);
+  if (existing?.source === "meta" && blank.has("adMeta")) d.source = "meta";
   await upsertDays(u.id, [d]);
   await completeTask(u.id, await numbersHabitTask(u.id));
   revalidatePath("/dashboard", "layout");

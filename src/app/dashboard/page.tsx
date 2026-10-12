@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { GrowthLinks } from "@/components/dashboard/GrowthLinks";
+import { changeOf, comparison, plainLine, totalsFor } from "@/lib/growth";
 import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
@@ -73,6 +75,10 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const w = metricsFor(days, wk.cur, settings);
   const wPrev = metricsFor(days, wk.prev, settings);
   const wChange = wPrev.contribution ? Math.round(((w.contribution - wPrev.contribution) / Math.abs(wPrev.contribution)) * 100) : null;
+  const gCmp = days.length ? comparison("week", days[days.length - 1].date) : null;
+  const gNow = gCmp ? totalsFor(days, gCmp.cur, settings) : null;
+  const gPrev = gCmp ? totalsFor(days, gCmp.prev, settings) : null;
+  const growthLine = gCmp && gNow && gPrev && gPrev.dataDays ? plainLine("Net profit", changeOf(gNow.profit, gPrev.profit), gCmp.vsWord) : undefined;
   const planKeys = new Set(plans.map((p) => p.planKey));
   // Black Friday stays on Today from 1 August even when another date is closer: it is the big one.
   const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key) || (a.eventKey === "black-friday" && !a.reviewing));
@@ -160,6 +166,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </span>
         <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See weekly, monthly and yearly charts <ArrowRight className="h-4 w-4" aria-hidden /></span>
       </Link>
+
+      <GrowthLinks profitLine={growthLine} />
 
       <section aria-labelledby="goals-h" className="card mt-4 p-4">
         <div className="flex flex-wrap items-baseline justify-between gap-2">

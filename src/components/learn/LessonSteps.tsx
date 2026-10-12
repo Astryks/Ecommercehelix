@@ -60,7 +60,7 @@ function GuidePanel({ step, lesson }: { step: StepView; lesson: LessonView }) {
             Helix shortcut: <Link href={step.action.href} className="font-medium text-cyan-700 underline">{step.action.label}</Link>.
           </li>
         )}
-        <li>Check you got the expected result. If not, re-read the watch out line or ask Helix to do it.</li>
+        <li>Check you got the expected result in the green box.{step.watchOutHtml ? " If not, read the watch out line." : ""} Still stuck? Press Do it for me and Helix takes it from here.</li>
         {lesson.hasDrawing && (
           <li>
             There is a drawing for this lesson under <a href={`#${lesson.id}-more`} className="font-medium text-cyan-700 underline">Good to know</a>.

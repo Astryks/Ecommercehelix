@@ -165,6 +165,7 @@ model ScorecardDay {
   newCustomerOrders  Int     @default(0)
   units              Int     @default(0)
   sessions           Int     @default(0)
+  addToCarts         Int     @default(0) // sessions with an add to cart (optional)
   revenue            Float   @default(0) // gross sales
   newCustomerRevenue Float   @default(0)
   discounts          Float   @default(0)

@@ -1,31 +1,28 @@
 import Link from "next/link";
 import { BookOpen, Download, RefreshCw, Upload } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, getDays, getProducts, getSettings } from "@/lib/repo";
+import { getAccount, getDays, getProducts, getRawDays, getSettings } from "@/lib/repo";
+import { getConnection } from "@/lib/meta/store";
+import { costRatios } from "@/lib/today";
+import { taxRate } from "@/lib/tax";
+import { DailyInputForm } from "@/components/dashboard/DailyInputForm";
 import { taxLabel } from "@/lib/tax";
-import { derive, flags, sum, FIELD_LABELS, type NUM_FIELDS } from "@/lib/scorecard";
+import { derive, flags, sum } from "@/lib/scorecard";
 import { isoDay, prettyDay, weekStart, monthStart, addDays } from "@/lib/dates";
 import { Sparkline } from "@/components/dashboard/Sparkline";
 import { Flag } from "@/components/dashboard/Flag";
-import { saveDay, importCsv, clearExamples, saveScorecardSettings, addProduct } from "../actions";
+import { importCsv, clearExamples, saveScorecardSettings, addProduct } from "../actions";
 
 const $ = (n: number, dp = 0) => (n < 0 ? "-" : "") + "$" + Math.abs(n).toLocaleString("en-AU", { minimumFractionDigits: dp, maximumFractionDigits: dp });
 const pct = (n: number) => n.toFixed(1) + "%";
 const x = (n: number) => (n ? n.toFixed(2) + "x" : "n/a");
 
-type Field = (typeof NUM_FIELDS)[number];
-const GROUPS: { title: string; fields: Field[] }[] = [
-  { title: "Sales", fields: ["orders", "newCustomerOrders", "units", "sessions", "revenue", "newCustomerRevenue", "discounts", "refunds"] },
-  { title: "Variable costs", fields: ["cogs", "shipping", "paymentFees"] },
-  { title: "Marketing spend", fields: ["adMeta", "adGoogle", "adTiktok", "adOther", "otherMarketing"] },
-  { title: "Platform-attributed sales (for channel ROAS)", fields: ["metaRevenue", "googleRevenue", "tiktokRevenue"] },
-];
-
 export default async function Scorecard() {
   const u = await requireUser("/dashboard/scorecard");
   const acct = await getAccount(u.id);
   const taxNote = taxLabel(acct.salesTaxMode, acct.country);
-  const [days, settings, products] = await Promise.all([getDays(u.id), getSettings(u.id), getProducts(u.id)]);
+  const [days, settings, products, rawDays, conn] = await Promise.all([getDays(u.id), getSettings(u.id), getProducts(u.id), getRawDays(u.id), getConnection(u.id)]);
+  const ratios = costRatios(rawDays);
   const hasExample = days.some((d) => d.example) || products.some((p) => p.example);
   const latest = days.at(-1)?.date ?? isoDay();
   const byDate = new Map(days.map((d) => [d.date, d]));
@@ -198,29 +195,15 @@ export default async function Scorecard() {
       </section>
 
       <div className="mt-6 grid gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
-        <section className="card p-5" id="entry">
-          <h2 className="font-semibold">Enter a day</h2>
-          <p className="text-sm text-slate-500">Manual entry. Saving a date that exists overwrites it. Sync from Shopify, Meta and Google is coming.</p>
-          <form action={saveDay} className="mt-4 space-y-5">
-            <div className="max-w-xs">
-              <label htmlFor="date" className="text-sm font-medium">Date</label>
-              <input id="date" name="date" type="date" required defaultValue={isoDay()} className="input mt-1" />
-            </div>
-            {GROUPS.map((g) => (
-              <fieldset key={g.title}>
-                <legend className="text-xs font-semibold uppercase tracking-wide text-slate-500">{g.title}</legend>
-                <div className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                  {g.fields.map((f) => (
-                    <div key={f}>
-                      <label htmlFor={f} className="text-xs font-medium text-slate-700">{FIELD_LABELS[f]}</label>
-                      <input id={f} name={f} type="number" min="0" step="any" inputMode="decimal" className="input mt-1" placeholder="0" />
-                    </div>
-                  ))}
-                </div>
-              </fieldset>
-            ))}
-            <button className="btn-primary">Save day</button>
-          </form>
+        <section className="card scroll-mt-6 p-5" id="entry">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <h2 className="font-semibold">Fill in a day</h2>
+            <Link href="/dashboard/metrics" className="text-xs font-medium text-cyan-700 underline">Which numbers do I need?</Link>
+          </div>
+          <p className="text-sm text-slate-500">A few boxes from Shopify and your ad accounts. Helix works out the rest.{taxNote && <> Type sales as Shopify shows them; Helix takes out {taxNote}.</>}</p>
+          <div className="mt-4">
+            <DailyInputForm defaultDate={addDays(isoDay(), -1)} recent={rawDays.slice(-21)} settings={settings} ratios={ratios} taxRate={taxRate(acct.salesTaxMode, acct.country)} metaConnected={Boolean(conn)} />
+          </div>
         </section>
 
         <div className="space-y-6">
@@ -236,7 +219,7 @@ export default async function Scorecard() {
               </div>
             </form>
           </section>
-          <section className="card p-5">
+          <section className="card scroll-mt-6 p-5" id="targets">
             <h2 className="font-semibold">Targets and fixed costs</h2>
             <form action={saveScorecardSettings} className="mt-3 space-y-3">
               {([

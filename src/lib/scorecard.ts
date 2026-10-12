@@ -4,6 +4,8 @@ export type DayInput = {
   newCustomerOrders: number;
   units: number;
   sessions: number;
+  /** Sessions with an add to cart (optional, Shopify Analytics). */
+  addToCarts?: number;
   revenue: number;
   newCustomerRevenue: number;
   discounts: number;
@@ -28,13 +30,13 @@ export type Settings = { monthlyRevenueTarget: number; targetMerPct: number; fix
 export type ProductLine = { date: string; sku: string; name: string; units: number; price: number; unitCost: number; example?: boolean };
 
 export const NUM_FIELDS = [
-  "orders", "newCustomerOrders", "units", "sessions", "revenue", "newCustomerRevenue", "discounts", "refunds",
+  "orders", "newCustomerOrders", "units", "sessions", "addToCarts", "revenue", "newCustomerRevenue", "discounts", "refunds",
   "cogs", "shipping", "paymentFees", "adMeta", "adGoogle", "adTiktok", "adOther", "otherMarketing",
   "metaRevenue", "googleRevenue", "tiktokRevenue",
 ] as const;
 
 export const FIELD_LABELS: Record<(typeof NUM_FIELDS)[number], string> = {
-  orders: "Orders", newCustomerOrders: "New-customer orders", units: "Units sold", sessions: "Sessions",
+  orders: "Orders", newCustomerOrders: "New-customer orders", units: "Units sold", sessions: "Sessions", addToCarts: "Sessions with an add to cart",
   revenue: "Gross sales ($)", newCustomerRevenue: "New-customer sales ($)", discounts: "Discounts ($)", refunds: "Refunds ($)",
   cogs: "Product cost / COGS ($)", shipping: "Shipping and fulfilment ($)", paymentFees: "Payment fees ($)",
   adMeta: "Meta ad spend ($)", adGoogle: "Google ad spend ($)", adTiktok: "TikTok ad spend ($)", adOther: "Other ad spend ($)",
@@ -46,7 +48,7 @@ export type Derived = ReturnType<typeof derive>;
 const div = (a: number, b: number) => (b ? a / b : 0);
 
 export function sum(days: DayInput[]): DayInput {
-  const z = { date: "", orders: 0, newCustomerOrders: 0, units: 0, sessions: 0, revenue: 0, newCustomerRevenue: 0, discounts: 0, refunds: 0, cogs: 0, shipping: 0, paymentFees: 0, adMeta: 0, adGoogle: 0, adTiktok: 0, adOther: 0, otherMarketing: 0, metaRevenue: 0, googleRevenue: 0, tiktokRevenue: 0 } as DayInput;
+  const z = { date: "", orders: 0, newCustomerOrders: 0, units: 0, sessions: 0, addToCarts: 0, revenue: 0, newCustomerRevenue: 0, discounts: 0, refunds: 0, cogs: 0, shipping: 0, paymentFees: 0, adMeta: 0, adGoogle: 0, adTiktok: 0, adOther: 0, otherMarketing: 0, metaRevenue: 0, googleRevenue: 0, tiktokRevenue: 0 } as DayInput;
   for (const d of days) for (const f of NUM_FIELDS) z[f] += Number(d[f]) || 0;
   return z;
 }
@@ -75,6 +77,7 @@ export function derive(d: DayInput, s: Settings, dayCount = 1) {
     aov,
     rpv: div(netRevenue, d.sessions),
     cr: div(d.orders, d.sessions) * 100,
+    atcRate: div(d.addToCarts ?? 0, d.sessions) * 100,
     roasMeta: div(d.metaRevenue, d.adMeta),
     roasGoogle: div(d.googleRevenue, d.adGoogle),
     roasTiktok: div(d.tiktokRevenue, d.adTiktok),
@@ -164,7 +167,7 @@ export function exampleDays(today: string, total = 730): DayInput[] {
       const adGoogle = Math.round(95 + Math.sin(i) * 12);
       const adTiktok = i % 3 === 0 ? 40 : 30;
       out.push({
-        date, orders, newCustomerOrders: Math.round(orders * 0.62), units: Math.round(orders * 1.45), sessions: Math.round(orders / 0.022),
+        date, orders, newCustomerOrders: Math.round(orders * 0.62), units: Math.round(orders * 1.45), sessions: Math.round(orders / 0.022), addToCarts: Math.round((orders / 0.022) * 0.068),
         revenue, newCustomerRevenue: Math.round(revenue * 0.58), discounts: Math.round(revenue * 0.06), refunds: Math.round(revenue * 0.02),
         cogs: Math.round(revenue * 0.29), shipping: orders * 9, paymentFees: Math.round(revenue * 0.026),
         adMeta, adGoogle, adTiktok, adOther: 0, otherMarketing: 25,
@@ -187,7 +190,7 @@ export function exampleDays(today: string, total = 730): DayInput[] {
     const adTiktok = i < 240 ? (i % 3 === 0 ? 40 : 30) : 0;
     const newShare = 0.62 + 0.14 * age;
     out.push({
-      date, orders, newCustomerOrders: Math.round(orders * newShare), units: Math.round(orders * 1.45), sessions: Math.round(orders / (0.021 + 0.004 * (s.demand - 1))),
+      date, orders, newCustomerOrders: Math.round(orders * newShare), units: Math.round(orders * 1.45), sessions: Math.round(orders / (0.021 + 0.004 * (s.demand - 1))), addToCarts: Math.round((orders / (0.021 + 0.004 * (s.demand - 1))) * (0.064 + Math.sin(i * 0.5) * 0.006)),
       revenue, newCustomerRevenue: Math.round(revenue * (newShare - 0.04)), discounts: Math.round(revenue * s.discount), refunds: Math.round(revenue * s.refunds),
       cogs: Math.round(revenue * (0.3 + 0.02 * age)), shipping: orders * 9, paymentFees: Math.round(revenue * 0.026),
       adMeta, adGoogle: Math.max(0, adGoogle), adTiktok, adOther: 0, otherMarketing: 25,
