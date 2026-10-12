@@ -1,5 +1,6 @@
 import "server-only";
 import { canonicalStepKeys } from "./lesson-alias";
+import { toCourseTrack, type CourseState } from "./course-plan";
 import { hasDb, prisma } from "./db";
 import type { PlanId } from "./plans";
 import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Settings, NUM_FIELDS } from "./scorecard";
@@ -34,16 +35,18 @@ type Mem = {
   stock: Map<string, StockItem[]>;
   goals: Map<string, Goals>;
   lessonSteps: Map<string, Set<string>>;
+  course: Map<string, CourseState>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map(), course: new Map() });
 mem.seasonPlans ??= new Map(); // older hot-reloaded stores
 mem.suppliers ??= new Map();
 mem.stock ??= new Map();
 mem.goals ??= new Map();
 mem.lessonSteps ??= new Map();
+mem.course ??= new Map();
 
 export const DEFAULT_SETTINGS: Settings = { monthlyRevenueTarget: 60000, targetMerPct: 30, fixedCostsMonthly: 9000 };
 
@@ -443,4 +446,31 @@ export async function clearExampleStock(userId: string) {
   }
   await prisma.stockItem.deleteMany({ where: { userId, example: true } });
   await prisma.supplier.deleteMany({ where: { userId, example: true } });
+}
+
+export async function uncompleteTask(userId: string, taskId: string) {
+  if (!hasDb) {
+    mem.completions.set(userId, (mem.completions.get(userId) ?? []).filter((c) => c.taskId !== taskId));
+    return;
+  }
+  await prisma.taskCompletion.deleteMany({ where: { userId, taskId } });
+}
+
+// ---------- the Helix Course ----------
+const split = (s: string) => s.split(",").filter(Boolean);
+
+/** The user's course state. Null until they first open the course. */
+export async function getCourseState(userId: string): Promise<CourseState | null> {
+  if (!hasDb) return mem.course.get(userId) ?? null;
+  const r = await prisma.courseState.findUnique({ where: { userId } });
+  return r ? { track: toCourseTrack(r.track), goalId: r.goalId, doneGoals: split(r.doneGoals), confirmed: split(r.confirmed), baselineAov: r.baselineAov, celebrate: r.celebrate } : null;
+}
+
+export async function saveCourseState(userId: string, s: CourseState) {
+  if (!hasDb) {
+    mem.course.set(userId, { ...s });
+    return;
+  }
+  const data = { track: s.track, goalId: s.goalId, doneGoals: s.doneGoals.join(","), confirmed: s.confirmed.join(","), baselineAov: s.baselineAov, celebrate: s.celebrate };
+  await prisma.courseState.upsert({ where: { userId }, create: { userId, ...data }, update: data });
 }

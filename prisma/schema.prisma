@@ -39,6 +39,7 @@ model User {
   stockItems     StockItem[]
   monthlyGoals   MonthlyGoals?
   lessonProgress LessonProgress[]
+  courseState    CourseState?
   stockSeeded    Boolean            @default(false) // example suppliers and stock added once
 }
 
@@ -331,4 +332,17 @@ model LessonProgress {
   user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([userId, stepKey])
+}
+
+/// The Helix Course: which goal the user is on. Task ticks live in TaskCompletion (ids start with "course-").
+model CourseState {
+  userId      String   @id
+  track       String   @default("growing") // "starting" | "growing" | "scaling"
+  goalId      String   @default("")
+  doneGoals   String   @default("") // comma-separated goal ids, in the order finished
+  confirmed   String   @default("") // goals the user confirmed themselves
+  baselineAov Float    @default(0) // AOV when the current goal started (for "raise AOV by 10%")
+  celebrate   String? // goal id just finished, cleared once the celebration is seen
+  updatedAt   DateTime @updatedAt
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

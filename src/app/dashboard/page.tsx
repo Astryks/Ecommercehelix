@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { GrowthLinks } from "@/components/dashboard/GrowthLinks";
+import { getCourse } from "@/lib/course";
+import { Celebration, GoalCard } from "@/components/course/GoalCard";
 import { changeOf, comparison, plainLine, totalsFor } from "@/lib/growth";
 import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
@@ -34,7 +36,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
   const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id)]);
-  const [rawDays, goalData] = await Promise.all([getRawDays(u.id), goalsFor(u.id)]);
+  const [rawDays, goalData, course] = await Promise.all([getRawDays(u.id), goalsFor(u.id), getCourse(u.id)]);
   const today = isoDay();
   const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
   const adminSoon = adminDueSoon(today, acct.country, new Set(completions.map((c) => c.taskId)));
@@ -122,6 +124,9 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </div>
         </div>
       </header>
+
+      <Celebration view={course} />
+      <GoalCard view={course} />
 
       {shownAlerts.map((a, i) => (
         <div key={a.key} className="mt-6">

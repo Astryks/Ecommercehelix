@@ -181,3 +181,8 @@ body {
   opacity: 0; pointer-events: none; transition: opacity 120ms ease;
 }
 .gloss:hover::after, .gloss:focus::after { opacity: 1; }
+
+/* Course: a small, quiet celebration when a goal is finished */
+.celebrate .confetti { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, #d9772b 2px, transparent 2.5px), radial-gradient(circle, #2f7359 2px, transparent 2.5px), radial-gradient(circle, #0b1f3a 1.5px, transparent 2px); background-size: 46px 46px, 62px 62px, 38px 38px; background-position: 0 0, 20px 14px, 9px 30px; opacity: 0; animation: helix-confetti 2.4s ease-out 1; }
+@keyframes helix-confetti { 0% { opacity: 0.9; transform: translateY(-24px); } 100% { opacity: 0; transform: translateY(24px); } }
+@media (prefers-reduced-motion: reduce) { .celebrate .confetti { animation: none; } }
