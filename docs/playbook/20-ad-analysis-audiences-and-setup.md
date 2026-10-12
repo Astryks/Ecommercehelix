@@ -63,6 +63,36 @@
 
 **Expected result:** Google Analytics shows visits by channel and campaign.
 
+**Step 7.** Install the **Facebook & Instagram** app and connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
+
+**Expected result:** The app shows all four connected.
+
+<!-- do:meta-connect -->
+
+**Step 8.** Set data sharing to **Maximum** to turn on server events.
+
+**Expected result:** Sales reach Meta even when a browser blocks the pixel.
+
+**Step 9.** Install the **Google & YouTube** app and connect Merchant Center, Google Ads and GA4 (see [Shopify: Google](https://help.shopify.com/en/manual/online-sales-channels/google)).
+
+**Expected result:** Google receives your products and purchases.
+
+**Step 10.** Check privacy and cookie settings in **Settings > Customer privacy** (see [Shopify: customer events](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/customer-events)).
+
+**Expected result:** Consent is handled for your markets.
+
+**Step 11.** Place a test order (Lesson 22.16) and check Meta Events Manager and Google for the Purchase.
+
+**Expected result:** One test order shows as a Purchase in both Meta and Google.
+
+### Good to know
+
+<!-- guide:shopify-8-meta-tracking -->
+![Connect Meta tracking from Shopify](../../public/guides/shopify-8-meta-tracking.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)
+<!-- /guide:shopify-8-meta-tracking -->
+
 ## Lesson 20.2: Setting up target audiences
 <!-- stage:attract -->
 

@@ -85,23 +85,6 @@
 | Facebook page | Same bio and link, a current cover image, reviews managed, and the page connected to your ad account. |
 | TikTok | Bio link turned on (not every account can yet), playlists for series, pinned videos. |
 
-## Lesson 21.3: What to post: content pillars for social
-<!-- stage:attract -->
-
-**Why this matters:** Content pillars are the topics you always post about. Four pillars cover social, and a rough mix stops your feed from feeling like one long ad. They build on [Lesson 4.4](04-brand-and-content.md#lesson-44-content-pillars-by-channel).
-
-**Step 1.** Set your four pillars: proof (reviews, customer photos, press, numbers), education (how to use and choose, myths, care), story (founder, behind the scenes, values) and product and offer (launches, restocks, bundles, sales).
-
-**Expected result:** You have four named pillars.
-
-**Step 2.** Plan next month at roughly 40% education and proof, 30% story and community, 30% product and offer.
-
-**Expected result:** Your plan follows the mix.
-
-**Step 3.** Fill gaps with ideas that never run out: reviews and comments, support questions ("You asked, we answered"), calm answers to negative comments, and a recurring series.
-
-**Expected result:** You have more ideas than posting slots.
-
 ## Lesson 21.4: Posting cadence you can keep
 <!-- stage:attract -->
 
@@ -168,29 +151,6 @@
 **Step 3.** Keep shop ratings healthy where you sell through social shops, and reply to bad reviews publicly and kindly before fixing the problem privately.
 
 **Expected result:** Future customers see a calm, helpful reply.
-
-## Lesson 21.7: Community, not just audience
-<!-- stage:attract -->
-
-**Why this matters:** People buy from brands they feel part of. Five habits turn followers into a community.
-
-**Step 1.** Run a poll letting customers help decide something (a colour, name or flavour).
-
-**Expected result:** Customers have a say in a decision.
-
-**Step 2.** Feature customers as the faces of a collection.
-
-**Expected result:** Real customers appear in your marketing.
-
-**Step 3.** Run a small event, meetup or live session, and reward your biggest fans with early access, gifts or a VIP group.
-
-**Expected result:** Your keenest fans feel looked after.
-
-<!-- do:flow-vip -->
-
-**Step 4.** Share feedback you acted on ("You asked for bigger sizes. Here they are.").
-
-**Expected result:** Customers see their voice changes things.
 
 ## Lesson 21.8: Social shops
 <!-- stage:attract -->

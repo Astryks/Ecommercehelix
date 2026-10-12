@@ -113,7 +113,7 @@
 
 **Expected result:** You know whether to run another one.
 
-## Lesson 11.4: Fill the funnel before peaks
+## Lesson 11.4: Grow your list before big sale dates
 <!-- stage:attract -->
 
 **Why this matters:** List growth pays off most just before big sales, when ads get expensive. Starting 6 to 10 weeks early fills the funnel while attention is still cheap.

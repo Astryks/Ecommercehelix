@@ -171,7 +171,7 @@
 | Flows | Above 35% | Above 1% | Revenue per recipient going up |
 | Campaigns | About 35 to 40% | About 1.3% | Unsubscribes under 0.3% |
 
-## Lesson 10.7: A/B testing framework
+## Lesson 10.7: How to run a fair email split test
 <!-- stage:convert -->
 
 **Why this matters:** Email A/B tests show what your list responds to. One change, two big enough groups and a written guess make results trustworthy.

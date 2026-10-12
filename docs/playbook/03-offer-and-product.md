@@ -31,7 +31,7 @@
 
 ---
 
-## Lesson 3.1: The five offer levers
+## Lesson 3.1: Five ways to make an offer stronger
 <!-- stage:convert -->
 
 **Why this matters:** Your offer is everything a customer gets and every reason they have to buy now rather than later. When ads and site are fine but sales are slow, the offer is usually the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
@@ -54,7 +54,7 @@
 | **Safety** | What if it goes wrong? | Easy returns, trials, a guarantee, sizing help, support that is easy to reach, fast dispatch. |
 | **Easy yes** | Is it simple and fair? | How you present the price, bundles, a higher-priced option shown next to it, payment options, free shipping. |
 
-## Lesson 3.2: Sharpen the promise
+## Lesson 3.2: Say clearly what the customer gets
 <!-- stage:convert -->
 
 **Why this matters:** The promise is the main result your product gives. If shoppers cannot repeat it back in one line, they will not buy. Reviews hold the exact words that sell.
@@ -77,7 +77,7 @@
 
 **Watch out:** Lead with the result, not the feature. "Sleep through the night" beats "Memory foam core".
 
-## Lesson 3.3: Stack belief
+## Lesson 3.3: Give people reasons to believe you
 <!-- stage:convert -->
 
 **Why this matters:** People do not buy until they believe the product will work for them. Each objection (a reason not to buy) that you answer with proof removes a barrier. Stores that answer objections on purpose often see large jumps in conversion from the same visitors.
@@ -125,7 +125,7 @@
 
 <!-- do:flow-browse-abandonment -->
 
-## Lesson 3.5: Remove risk
+## Lesson 3.5: Take the risk off the buyer
 <!-- stage:convert -->
 
 **Why this matters:** Shoppers worry about making a bad purchase. Every worry you remove turns more visits into orders. Generous, clear policies usually add more sales than they cost.
@@ -154,7 +154,7 @@
 
 **Watch out:** After changing your returns policy, measure your return rate for 60 days to check it pays off.
 
-## Lesson 3.6: Make yes easy (pricing)
+## Lesson 3.6: Pricing that is easy to accept
 <!-- stage:convert -->
 
 **Why this matters:** How you show the price changes how people feel about it. Small framing changes can lift conversion or let you keep more per order. Test one idea at a time so you know what worked.
@@ -179,7 +179,7 @@
 
 **Expected result:** You know which one your customers prefer, and shoppers can pay in parts.
 
-## Lesson 3.7: Product-market fit snapshot
+## Lesson 3.7: Check people really want your product
 <!-- stage:grow -->
 
 **Why this matters:** Not every product deserves your ad money. A monthly snapshot shows which ones to push, which to test more and which to stop. It takes about 20 minutes.
@@ -207,7 +207,7 @@
 | High spend, poor return | Fix the product page and offer, or cut the spend. |
 | Low spend, poor return | Let it sell without ads, or stop selling it. |
 
-## Lesson 3.8: New product pipeline
+## Lesson 3.8: A steady flow of new products
 <!-- stage:grow -->
 
 **Why this matters:** New products keep a store growing, but launching untested ideas ties up cash. A simple pipeline lets you test cheaply first and launch with a plan.

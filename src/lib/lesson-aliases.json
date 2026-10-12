@@ -1,0 +1,190 @@
+{
+ "lessons": {
+  "21.7": {
+   "to": "4.7",
+   "steps": {
+    "1": 5,
+    "2": 6,
+    "3": 7,
+    "4": 8
+   }
+  },
+  "21.3": {
+   "to": "4.4",
+   "steps": {
+    "1": 4,
+    "2": 5,
+    "3": 6
+   }
+  },
+  "5.15": {
+   "to": "19.6",
+   "steps": {
+    "1": 6,
+    "2": 7,
+    "3": 8,
+    "4": 9
+   }
+  },
+  "16.5": {
+   "to": "28.1",
+   "steps": {
+    "1": 3,
+    "2": 7,
+    "3": 8,
+    "4": 9
+   }
+  },
+  "16.7": {
+   "to": "25.5",
+   "steps": {
+    "1": 8,
+    "2": 9,
+    "3": 10
+   }
+  },
+  "16.8": {
+   "to": "28.7",
+   "steps": {
+    "1": 7,
+    "2": 8,
+    "3": 9
+   }
+  },
+  "22.15": {
+   "to": "9.4",
+   "steps": {
+    "1": 1,
+    "2": 5,
+    "3": 6,
+    "4": 7
+   }
+  },
+  "22.14": {
+   "to": "20.1",
+   "steps": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 10,
+    "5": 11
+   }
+  },
+  "9.6": {
+   "to": "22.12",
+   "steps": {
+    "1": 5,
+    "2": 6,
+    "3": 7,
+    "4": 8
+   }
+  }
+ },
+ "anchors": {
+  "lesson-217-community-not-just-audience": {
+   "ref": "4.7"
+  },
+  "lesson-213-what-to-post-content-pillars-for-social": {
+   "ref": "4.4"
+  },
+  "lesson-515-creators-partnership-ads-and-affiliates": {
+   "ref": "19.6"
+  },
+  "lesson-165-hiring": {
+   "ref": "28.1"
+  },
+  "lesson-167-agencies-vs-in-house": {
+   "ref": "25.5"
+  },
+  "lesson-168-resilience": {
+   "ref": "28.7"
+  },
+  "lesson-2215-speed-and-mobile": {
+   "ref": "9.4"
+  },
+  "lesson-2214-tracking-meta-pixel-google-tag-and-analytics": {
+   "ref": "20.1"
+  },
+  "lesson-96-policies-and-service": {
+   "ref": "22.12"
+  },
+  "lesson-142-the-weekly-stock-snapshot": {
+   "ref": "14.2"
+  },
+  "lesson-512-signal-rich-content": {
+   "ref": "5.12"
+  },
+  "lesson-513-urgency-without-scarcity": {
+   "ref": "5.13"
+  },
+  "lesson-514-convert-the-considerers": {
+   "ref": "5.14"
+  },
+  "lesson-56-psychological-drivers": {
+   "ref": "5.6"
+  },
+  "lesson-55-awareness-stages": {
+   "ref": "5.5"
+  },
+  "lesson-131-the-promotional-rhythm": {
+   "ref": "13.1"
+  },
+  "lesson-133-new-product-drop-campaign-structure": {
+   "ref": "13.3"
+  },
+  "lesson-135-hype-phase": {
+   "ref": "13.5"
+  },
+  "lesson-1310-key-dates-and-beyond-black-friday": {
+   "ref": "13.10"
+  },
+  "lesson-145-the-debt-decision": {
+   "ref": "14.5"
+  },
+  "lesson-162-win-the-day-and-the-week": {
+   "ref": "16.2"
+  },
+  "lesson-31-the-five-offer-levers": {
+   "ref": "3.1"
+  },
+  "lesson-32-sharpen-the-promise": {
+   "ref": "3.2"
+  },
+  "lesson-33-stack-belief": {
+   "ref": "3.3"
+  },
+  "lesson-35-remove-risk": {
+   "ref": "3.5"
+  },
+  "lesson-36-make-yes-easy-pricing": {
+   "ref": "3.6"
+  },
+  "lesson-37-product-market-fit-snapshot": {
+   "ref": "3.7"
+  },
+  "lesson-38-new-product-pipeline": {
+   "ref": "3.8"
+  },
+  "lesson-107-ab-testing-framework": {
+   "ref": "10.7"
+  },
+  "lesson-171-an-ai-operating-system": {
+   "ref": "17.1"
+  },
+  "lesson-49-influencer-amplification": {
+   "ref": "4.9"
+  },
+  "lesson-1913-building-a-creative-engine": {
+   "ref": "19.13"
+  },
+  "lesson-163-six-week-priority-cycles": {
+   "ref": "16.3"
+  },
+  "lesson-114-fill-the-funnel-before-peaks": {
+   "ref": "11.4"
+  },
+  "lesson-133-launching-a-new-product-campaign-set-up": {
+   "ref": "13.3"
+  }
+ }
+}

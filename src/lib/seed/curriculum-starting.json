@@ -60,8 +60,8 @@
    "area": "learning",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-37-product-market-fit-snapshot",
-    "label": "Product-market fit snapshot",
+    "anchor": "lesson-37-check-people-really-want-your-product",
+    "label": "Check people really want your product",
     "ref": "3.7"
    },
    "sop": "16",
@@ -114,8 +114,8 @@
    "area": "numbers",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-36-make-yes-easy-pricing",
-    "label": "Make yes easy (pricing)",
+    "anchor": "lesson-36-pricing-that-is-easy-to-accept",
+    "label": "Pricing that is easy to accept",
     "ref": "3.6"
    },
    "sop": "04",
@@ -139,8 +139,8 @@
    "area": "site",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-32-sharpen-the-promise",
-    "label": "Sharpen the promise",
+    "anchor": "lesson-32-say-clearly-what-the-customer-gets",
+    "label": "Say clearly what the customer gets",
     "ref": "3.2"
    },
    "sop": "04",
@@ -154,7 +154,7 @@
    "day": 6,
    "stage": 1,
    "stageName": "Check your product and offer",
-   "topic": "Remove the risk",
+   "topic": "Take the risk off",
    "title": "Make buying feel safe",
    "lesson": "A new store has no reputation yet. Clear returns, a simple guarantee and visible contact details make a stranger feel safe enough to buy.",
    "steps": [
@@ -167,8 +167,8 @@
    "area": "site",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-35-remove-risk",
-    "label": "Remove risk",
+    "anchor": "lesson-35-take-the-risk-off-the-buyer",
+    "label": "Take the risk off the buyer",
     "ref": "3.5"
    },
    "sop": "04",
@@ -192,8 +192,8 @@
    "area": "site",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-33-stack-belief",
-    "label": "Stack belief",
+    "anchor": "lesson-33-give-people-reasons-to-believe-you",
+    "label": "Give people reasons to believe you",
     "ref": "3.3"
    },
    "sop": "16",
@@ -502,10 +502,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-2214-tracking-meta-pixel-google-tag-and-analytics",
-    "label": "Tracking: Meta pixel, Google tag and analytics",
-    "ref": "22.14"
+    "slug": "20-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-201-before-you-launch-tracking-you-can-trust",
+    "label": "Before you launch: tracking you can trust",
+    "ref": "20.1"
    },
    "sop": "05",
    "doIt": null,

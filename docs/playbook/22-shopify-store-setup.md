@@ -378,6 +378,22 @@
 
 > **General information, not legal advice.** Check your policies with a lawyer if you are unsure.
 
+**Step 5.** Create a sale terms page listing exclusions and dates.
+
+**Expected result:** Shoppers can check sale rules in one click.
+
+**Step 6.** Write your returns policy in plain words and list shipping times for each region (Shopify **Settings > Policies**).
+
+**Expected result:** Returns and shipping times are clear and linked in the footer.
+
+**Step 7.** Make contact options easy to find and build a help centre with the top 10 questions.
+
+**Expected result:** Shoppers can find help without emailing you.
+
+**Step 8.** Set up automatic answers for order status and common questions in your help desk or chat app.
+
+**Expected result:** "Where is my order?" gets an instant answer.
+
 ## Lesson 22.13: Essential apps (and only those)
 <!-- stage:convert -->
 
@@ -398,62 +414,6 @@
 **Step 4.** Remove apps you stop using and check they left no code behind.
 
 **Expected result:** You can name what each app does and what it costs each month.
-
-## Lesson 22.14: Tracking: Meta pixel, Google tag and analytics
-<!-- stage:attract -->
-
-**Why this matters:** Without tracking, you cannot tell which ads bring sales. Set it up before you spend a dollar on ads, then prove it works with one test order.
-
-**Step 1.** Install the **Facebook & Instagram** app and connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
-
-**Expected result:** The app shows all four connected.
-
-<!-- do:meta-connect -->
-
-**Step 2.** Set data sharing to **Maximum** to turn on server events.
-
-**Expected result:** Sales reach Meta even when a browser blocks the pixel.
-
-**Step 3.** Install the **Google & YouTube** app and connect Merchant Center, Google Ads and GA4 (see [Shopify: Google](https://help.shopify.com/en/manual/online-sales-channels/google)).
-
-**Expected result:** Google receives your products and purchases.
-
-**Step 4.** Check privacy and cookie settings in **Settings > Customer privacy** (see [Shopify: customer events](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/customer-events)).
-
-**Expected result:** Consent is handled for your markets.
-
-**Step 5.** Place a test order (Lesson 22.16) and check Meta Events Manager and Google for the Purchase.
-
-**Expected result:** One test order shows as a Purchase in both Meta and Google.
-
-### Good to know
-
-<!-- guide:shopify-8-meta-tracking -->
-![Connect Meta tracking from Shopify](../../public/guides/shopify-8-meta-tracking.svg)
-
-*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)
-<!-- /guide:shopify-8-meta-tracking -->
-
-## Lesson 22.15: Speed and mobile
-<!-- stage:convert -->
-
-**Why this matters:** Most shoppers are on a phone, and a slow store wastes every ad dollar. Aim for a product page that loads in about 3 seconds on mobile data.
-
-**Step 1.** Test your home page and a product page in [PageSpeed Insights](https://pagespeed.web.dev/) on mobile.
-
-**Expected result:** You have a mobile score and Core Web Vitals for both.
-
-**Step 2.** Shrink images to under about 300 KB before upload, and keep videos short and compressed.
-
-**Expected result:** Media files are small.
-
-**Step 3.** Remove apps and sections you do not use.
-
-**Expected result:** Fewer scripts load.
-
-**Step 4.** On your phone, using mobile data, try to buy something and fix anything hard to tap or read.
-
-**Expected result:** The product page loads in about 3 seconds and buying is easy.
 
 ## Lesson 22.16: Place test orders
 <!-- stage:convert -->

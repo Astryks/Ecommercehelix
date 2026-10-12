@@ -223,8 +223,8 @@
    "area": "learning",
    "learn": {
     "slug": "16-founder-team-productivity",
-    "anchor": "lesson-162-win-the-day-and-the-week",
-    "label": "Win the day and the week",
+    "anchor": "lesson-162-plan-each-day-and-each-week",
+    "label": "Plan each day and each week",
     "ref": "16.2"
    },
    "sop": "18",
@@ -304,8 +304,8 @@
    "area": "site",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-33-stack-belief",
-    "label": "Stack belief",
+    "anchor": "lesson-33-give-people-reasons-to-believe-you",
+    "label": "Give people reasons to believe you",
     "ref": "3.3"
    },
    "sop": "04",
@@ -414,8 +414,8 @@
    "area": "site",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-35-remove-risk",
-    "label": "Remove risk",
+    "anchor": "lesson-35-take-the-risk-off-the-buyer",
+    "label": "Take the risk off the buyer",
     "ref": "3.5"
    },
    "sop": "04",
@@ -442,8 +442,8 @@
    "area": "site",
    "learn": {
     "slug": "03-offer-and-product",
-    "anchor": "lesson-36-make-yes-easy-pricing",
-    "label": "Make yes easy (pricing)",
+    "anchor": "lesson-36-pricing-that-is-easy-to-accept",
+    "label": "Pricing that is easy to accept",
     "ref": "3.6"
    },
    "sop": "12",
@@ -882,8 +882,8 @@
    "area": "ads",
    "learn": {
     "slug": "05-creative-strategy",
-    "anchor": "lesson-55-awareness-stages",
-    "label": "Awareness stages",
+    "anchor": "lesson-55-how-much-your-buyer-already-knows",
+    "label": "How much your buyer already knows",
     "ref": "5.5"
    },
    "sop": "07",
@@ -1489,8 +1489,8 @@
    "area": "retention",
    "learn": {
     "slug": "13-promotions-and-sales",
-    "anchor": "lesson-131-the-promotional-rhythm",
-    "label": "The promotional rhythm",
+    "anchor": "lesson-131-your-yearly-sales-calendar",
+    "label": "Your yearly sales calendar",
     "ref": "13.1"
    },
    "sop": "15",
@@ -1601,8 +1601,8 @@
    "area": "numbers",
    "learn": {
     "slug": "14-inventory-cash-planning",
-    "anchor": "lesson-142-the-weekly-stock-snapshot",
-    "label": "The weekly stock snapshot",
+    "anchor": "lesson-142-a-10-minute-weekly-stock-check",
+    "label": "A 10-minute weekly stock check",
     "ref": "14.2"
    },
    "sop": "17",
@@ -1731,10 +1731,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "16-founder-team-productivity",
-    "anchor": "lesson-165-hiring",
-    "label": "Hiring",
-    "ref": "16.5"
+    "slug": "28-team-creators-money",
+    "anchor": "lesson-281-your-first-hire",
+    "label": "Your first hire",
+    "ref": "28.1"
    },
    "sop": "18",
    "doIt": null,

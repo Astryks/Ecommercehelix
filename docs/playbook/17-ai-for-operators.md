@@ -28,7 +28,7 @@
 
 ---
 
-## Lesson 17.1: An AI operating system
+## Lesson 17.1: Set up AI helpers for daily work
 <!-- stage:grow -->
 
 **Why this matters:** AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business. A project with your context turns generic answers into useful ones.

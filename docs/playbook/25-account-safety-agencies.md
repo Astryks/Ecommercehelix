@@ -184,7 +184,7 @@
 ## Lesson 25.5: Working with agencies, and leaving one
 <!-- stage:grow -->
 
-**Why this matters:** An agency can save time, but your accounts, data and history must stay yours. See also [Lesson 16.7](16-founder-team-productivity.md#lesson-167-agencies-vs-in-house).
+**Why this matters:** An agency can save time, but your accounts, data and history must stay yours.
 
 **Step 1.** Before you sign, list what you must own: ad accounts, pixel and datasets, Shopify, domain, email tool and Google Ads, and give the agency partner or user access only.
 
@@ -217,6 +217,18 @@
 **Expected result:** You see the effect of each change.
 
 <!-- do:growth -->
+
+**Step 8.** Check that ad accounts, ads, customer lists and reports are in your name (Meta **Business Settings > Ad accounts**, Google **Admin > Access**).
+
+**Expected result:** You own every account and asset.
+
+**Step 9.** Ask your agency to report on MER and contribution profit, not just ROAS.
+
+**Expected result:** Agency reports show profit numbers.
+
+**Step 10.** If you bring work in-house, start with the daily ad check (Lesson 7.6) and keep specialists for the gaps.
+
+**Expected result:** You run the daily check yourself.
 
 ## Lesson 25.6: Trusted sender names for texts and emails
 <!-- stage:grow -->

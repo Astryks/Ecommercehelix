@@ -6,6 +6,7 @@ import { STAGE_INFO, stageOfLesson, stageOfModule, type StageId } from "./stages
 import { glossify, termsIn } from "./glossary";
 import { parseModuleSections, type ParsedLesson } from "./lesson-parse";
 import { lessonAction, type LessonAction } from "./lesson-actions";
+import { oldAnchorsFor } from "./lesson-alias";
 
 const DIR = path.join(process.cwd(), "docs", "playbook");
 const REPO = "https://github.com/Astryks/Ecommercehelix/blob/main/docs";
@@ -46,7 +47,8 @@ function makeMarked() {
         const ref = depth === 2 ? text.match(/^Lesson (\d+\.\d+):/)?.[1] : undefined;
         const st = ref ? STAGE_INFO[stageOfLesson(ref)] : null;
         const chip = st ? ` <span class="stage-chip not-prose ml-2 inline-flex translate-y-[-3px] items-center rounded-full px-2.5 py-0.5 align-middle font-sans text-[11px] font-semibold uppercase tracking-wide ring-1 ${st.chip}">${st.name}</span>` : "";
-        return `<h${depth} id="${id}"><a href="#${id}" class="no-underline">${inner}</a>${chip}</h${depth}>\n`;
+        const alias = ref ? oldAnchorsFor(ref).map((a) => `<span id="${a}" aria-hidden="true"></span>`).join("") : "";
+        return `${alias}<h${depth} id="${id}"><a href="#${id}" class="no-underline">${inner}</a>${chip}</h${depth}>\n`;
       },
       link({ href, tokens }) {
         const inner = this.parser.parseInline(tokens);

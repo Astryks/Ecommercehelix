@@ -1,4 +1,4 @@
-# Module 9: Website, conversion and order value
+# Module 9: Your store: more sales per visit and bigger orders
 
 **Outcome:** a store that turns more visits into sales. It is clear, convincing, easy to buy from, and good at making orders bigger.
 
@@ -136,6 +136,18 @@
 
 **Watch out:** Only chase fixes that save 1 to 2 seconds or more. Tiny gains are not worth the effort.
 
+**Step 5.** Shrink images to under about 300 KB before upload, and keep videos short and compressed.
+
+**Expected result:** Media files are small.
+
+**Step 6.** Remove apps and sections you do not use.
+
+**Expected result:** Fewer scripts load.
+
+**Step 7.** On your phone, using mobile data, try to buy something and fix anything hard to tap or read.
+
+**Expected result:** The product page loads in about 3 seconds and buying is easy.
+
 ## Lesson 9.5: Copy that sells
 <!-- stage:convert -->
 
@@ -156,27 +168,6 @@
 **Step 4.** End each section with a clear button telling shoppers what to do.
 
 **Expected result:** There is always a next step visible.
-
-## Lesson 9.6: Policies and service
-<!-- stage:convert -->
-
-**Why this matters:** Good service helps people decide to buy. Clear policies and easy contact remove doubt before it stops a sale.
-
-**Step 1.** Create a sale terms page listing exclusions and dates.
-
-**Expected result:** Shoppers can check sale rules in one click.
-
-**Step 2.** Write your returns policy in plain words and list shipping times for each region (Shopify **Settings > Policies**).
-
-**Expected result:** Returns and shipping times are clear and linked in the footer.
-
-**Step 3.** Make contact options easy to find and build a help centre with the top 10 questions.
-
-**Expected result:** Shoppers can find help without emailing you.
-
-**Step 4.** Set up automatic answers for order status and common questions in your help desk or chat app.
-
-**Expected result:** "Where is my order?" gets an instant answer.
 
 ## Lesson 9.7: Landing pages
 <!-- stage:convert -->

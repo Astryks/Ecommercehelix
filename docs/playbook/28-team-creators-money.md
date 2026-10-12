@@ -35,7 +35,7 @@
 ## Lesson 28.1: Your first hire
 <!-- stage:grow -->
 
-**Why this matters:** Your first hire should give you back the hours you spend on work that does not need you. See also [Lesson 16.5](16-founder-team-productivity.md#lesson-165-hiring).
+**Why this matters:** Your first hire should give you back the hours you spend on work that does not need you.
 
 **Step 1.** For two weeks, log every task and its time, and mark each: only I can do it, someone could do it with a checklist, or it should stop.
 
@@ -66,6 +66,18 @@
 ### Good to know
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant, and the official sources below.
+
+**Step 7.** Write the SOPs (how the work is done) before you hand it over.
+
+**Expected result:** A new hire can follow written steps from day one.
+
+**Step 8.** Plan 3 to 6 months ahead, and test candidates with a real paid work sample.
+
+**Expected result:** You hire on evidence, with time to train.
+
+**Step 9.** For senior people, write what they must achieve in 12 months, check references carefully and start with a paid trial project.
+
+**Expected result:** Senior hires have clear goals and have proven themselves.
 
 ## Lesson 28.2: Working well with a virtual assistant
 <!-- stage:grow -->
@@ -175,7 +187,7 @@
 ## Lesson 28.5: Funding growth: comparing financing offers
 <!-- stage:grow -->
 
-**Why this matters:** Revenue-based financing, platform cash advances and bank loans can fund stock for a proven product, but they make things worse when they fund losses. See also [Lesson 14.5](14-inventory-cash-planning.md#lesson-145-the-debt-decision).
+**Why this matters:** Revenue-based financing, platform cash advances and bank loans can fund stock for a proven product, but they make things worse when they fund losses. See also [Lesson 14.5](14-inventory-cash-planning.md#lesson-145-should-you-borrow-weighing-up-a-loan).
 
 **Step 1.** Write down exactly what you would buy and its payback, such as more stock of a product that already sells at a profit.
 
@@ -245,7 +257,7 @@
 ## Lesson 28.7: Founder load: stress, burnout and getting help
 <!-- stage:grow -->
 
-**Why this matters:** Running a store can be lonely, and money worries can keep you awake. Looking after yourself is part of running the business. See also [Lesson 16.8](16-founder-team-productivity.md#lesson-168-resilience).
+**Why this matters:** Running a store can be lonely, and money worries can keep you awake. Looking after yourself is part of running the business.
 
 **Step 1.** Look at numbers on a schedule: profit each morning in Helix and cash once a week.
 
@@ -278,6 +290,20 @@
 **Australia:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners, and the Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
 
 **US:** call or text 988 for the Suicide and Crisis Lifeline at any hour. See [988lifeline.org](https://988lifeline.org/).
+
+**Step 7.** Judge results on the last 3 days and month to date, not one day.
+
+**Expected result:** One bad day does not change your plans.
+
+<!-- do:growth -->
+
+**Step 8.** Keep a wins file of good results and kind customer messages, and keep your decision log.
+
+**Expected result:** You can see your progress and sensible choices when it gets hard.
+
+**Step 9.** Talk to other founders regularly, and in busy seasons plan sleep and exercise like any other task.
+
+**Expected result:** You have support and protected recovery time.
 
 ## Lesson 28.8: Should you sell on Amazon?
 <!-- stage:grow -->

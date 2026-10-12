@@ -30,7 +30,7 @@
 
 ---
 
-## Lesson 13.1: The promotional rhythm
+## Lesson 13.1: Your yearly sales calendar
 <!-- stage:convert -->
 
 **Why this matters:** A year of promotions works best as a rhythm, so customers learn when to look and you are never scrambling. Four kinds of promotion cover the year, and only one of them needs deep discounts, as a last resort.
@@ -80,7 +80,7 @@
 
 **Expected result:** Proof keeps sales going after the launch week.
 
-## Lesson 13.3: New product drop campaign structure
+## Lesson 13.3: Launching a new product: how to build the campaigns
 <!-- stage:convert -->
 
 **Why this matters:** How you structure a product drop depends on your spend. Either way, your warm audiences and email list should get first access while normal campaigns keep running.
@@ -132,10 +132,10 @@
 
 <!-- do:bfcm -->
 
-## Lesson 13.5: Hype phase
+## Lesson 13.5: The build-up before a launch
 <!-- stage:convert -->
 
-**Why this matters:** The hype phase builds excitement before the sale starts, so launch day begins with a crowd. Moving budget across slowly protects the campaigns that bring new customers every day.
+**Why this matters:** The build-up builds excitement before the sale starts, so launch day begins with a crowd. Moving budget across slowly protects the campaigns that bring new customers every day.
 
 **Step 1.** Run sign-up ads and teasers for 3 to 5 days before the sale.
 
@@ -231,7 +231,7 @@
 
 **Expected result:** Each sale is a little more sophisticated than the last.
 
-## Lesson 13.10: Key dates and beyond Black Friday
+## Lesson 13.10: Key dates through the year
 <!-- stage:grow -->
 
 **Why this matters:** Plan the whole busy season, not one weekend. For many stores Black Friday and Cyber Monday is the biggest window of the year, and it is won months before November. Helix adds the staged plan to your calendar from 1 August.
@@ -293,7 +293,7 @@
 
 1. How many big sales peaks should you plan each year?
 2. What do you try before deep discounts to clear stock?
-3. Why not cut normal ad spend to zero during the hype phase?
+3. Why not cut normal ad spend to zero during the build-up?
 
 <details><summary>Answers</summary>
 

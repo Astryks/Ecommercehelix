@@ -300,7 +300,7 @@ A side panel on every screen and a full-page view. It answers questions using th
 
 *Sales and ops*
 - What day should I launch my Black Friday sale?
-- How much should evergreen budgets drop during the hype phase?
+- How much should evergreen budgets drop during the build-up before a sale?
 - I will sell out two weeks before stock lands. Slow ads or air-freight?
 - Can my ads say "20% off sitewide" if some ranges are excluded?
 - Should I ditch my agency and bring marketing in-house?

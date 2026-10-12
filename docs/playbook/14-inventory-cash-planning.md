@@ -57,7 +57,7 @@
 
 **Expected result:** Each product has a forecast based on evidence.
 
-## Lesson 14.2: The weekly stock snapshot
+## Lesson 14.2: A 10-minute weekly stock check
 <!-- stage:grow -->
 
 **Why this matters:** A weekly stock check takes ten minutes and prevents the two expensive mistakes: selling out of a best seller and sitting on stock that will not move. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
@@ -128,7 +128,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 14.5: The debt decision
+## Lesson 14.5: Should you borrow? Weighing up a loan
 <!-- stage:grow -->
 
 **Why this matters:** Debt can speed up growth or sink a store. Borrow only when both tests below are true.

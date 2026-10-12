@@ -112,7 +112,7 @@
 
 **Watch out:** During a sale, lead with the offer. Outside sales, lead with product and proof.
 
-## Lesson 5.5: Awareness stages
+## Lesson 5.5: How much your buyer already knows
 <!-- stage:attract -->
 
 **Why this matters:** People are at different stages of knowing about you, from never having heard of the problem to ready to buy. Each stage needs a different ad. Matching the ad to the stage stops you shouting offers at strangers.
@@ -139,10 +139,10 @@
 | Product aware | They know your product | Show proof, answer objections, make the offer. |
 | Most aware | They are ready to buy | Offer, a reason to buy now, a reminder. |
 
-## Lesson 5.6: Psychological drivers
+## Lesson 5.6: Why people buy: the motives behind a purchase
 <!-- stage:attract -->
 
-**Why this matters:** Psychological drivers are the deep reasons people buy: belonging, status, fear of missing out, curiosity, relief, self-improvement, convenience and value. One driver per ad keeps the message sharp.
+**Why this matters:** Buying motives are the deep reasons people buy: belonging, status, fear of missing out, curiosity, relief, self-improvement, convenience and value. One driver per ad keeps the message sharp.
 
 **Step 1.** Pick one driver for each ad in your next batch and write it on the brief.
 
@@ -263,10 +263,10 @@
 
 **Watch out:** The biggest mistake is testing everything at once with no idea what you are trying to learn.
 
-## Lesson 5.12: Signal-rich content
+## Lesson 5.12: Content that shows the ad system who buys
 <!-- stage:attract -->
 
-**Why this matters:** Signal-rich content makes it obvious who the ad is for, which helps the platform find the right people. A clear niche, a clear use and a clear type of person on screen beat a generic message.
+**Why this matters:** Content that is clear about its buyer makes it obvious who the ad is for, which helps the platform find the right people. A clear niche, a clear use and a clear type of person on screen beat a generic message.
 
 **Step 1.** For your next ad, name one specific group (for example new mums, trail runners or home bakers) and show that type of person using the product.
 
@@ -276,7 +276,7 @@
 
 **Expected result:** The ad speaks directly to one group.
 
-## Lesson 5.13: Urgency without scarcity
+## Lesson 5.13: Reasons to buy now, without fake shortages
 <!-- stage:attract -->
 
 **Why this matters:** You can give people a reason to buy now without a discount, which protects your margin. There are six honest options.
@@ -291,7 +291,7 @@
 
 **Expected result:** Shoppers see the reason to act now in the ad and on the page.
 
-## Lesson 5.14: Convert the considerers
+## Lesson 5.14: Win over people who are still deciding
 <!-- stage:convert -->
 
 **Why this matters:** Warm audiences know you but have not bought yet. They need answers, not more awareness ads.
@@ -305,29 +305,6 @@
 **Expected result:** Warm visitors see an ad that answers their doubts.
 
 <!-- do:meta-draft -->
-
-## Lesson 5.15: Creators, partnership ads and affiliates
-<!-- stage:attract -->
-
-**Why this matters:** Creators, partnership ads and affiliates bring faces and voices you cannot produce yourself. Clear briefs and written permission keep it profitable and safe. Module 19 has the full playbook.
-
-**Step 1.** Brief every creator on one page: goal, audience, key message, must say, must not say, 3 hook options, deliverables, usage rights and deadline.
-
-**Expected result:** Each creator has a written brief before filming.
-
-**Step 2.** Offer simple terms, for example a 10% off code for their audience and 15% commission on new-customer sales.
-
-**Expected result:** Every creator has written terms.
-
-**Step 3.** Get written permission, then run the creator's video as a partnership ad from their account inside your normal campaigns.
-
-**Expected result:** Partnership ads are live, often at a lower cost per new customer.
-
-<!-- do:meta-draft -->
-
-**Step 4.** Give affiliates (people paid a commission per sale) a simple guide with product facts, angles that work and examples.
-
-**Expected result:** Affiliates have what they need to post without asking you.
 
 ## Lesson 5.16: Production tools
 <!-- stage:attract -->

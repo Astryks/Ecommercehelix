@@ -10,7 +10,7 @@
 - Monthly review. Quarterly year-plan update.
 - The user asks "should I slow down ads or air-freight stock?".
 
-## Weekly demand snapshot (10 minutes)
+## A 10-minute weekly stock check
 
 1. For each product: units sold per week (4-week average), units on hand, units on order and arrival date.
 2. Weeks of cover = (on hand + arriving before stockout) ÷ weekly sales.

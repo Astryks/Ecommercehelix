@@ -22,7 +22,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 4 | Find the bottleneck | Find the one thing holding profit back | [2.2 The five situations](playbook/02-diagnose-and-fix.md#lesson-22-the-five-situations) | 15 min | Starter: Look at your numbers and tell you the bottleneck |
 | 5 | Store check-up | Pick your top 3 store fixes | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 10 min | Free: Run a fresh store check-up |
 | 6 | Listen to customers | Read 30 reviews and 10 customer emails | [4.2 Customer profiles](playbook/04-brand-and-content.md#lesson-42-customer-profiles) | 20 min | Starter: Read your reviews and pull out the themes |
-| 7 | Weekly check-in | Do your first weekly review | [16.2 Win the day and the week](playbook/16-founder-team-productivity.md#lesson-162-win-the-day-and-the-week) | 10 min | Guide |
+| 7 | Weekly check-in | Do your first weekly review | [16.2 Plan each day and each week](playbook/16-founder-team-productivity.md#lesson-162-plan-each-day-and-each-week) | 10 min | Guide |
 
 ## Stage 2: Turn more visitors into buyers (Days 8 to 17)
 
@@ -30,12 +30,12 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | --- | --- | --- | --- | --- | --- |
 | 8 | Speed | Fix the biggest speed problem on your phone | [9.4 Speed](playbook/09-website-and-cro.md#lesson-94-speed) | 20 min | Growth: Write a speed fix list for your developer |
 | 9 | Reviews | Put photo reviews near the price on your best seller | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 10 min | Growth: Lay out the review section for you |
-| 10 | Answer worries | Answer your top 3 worries on the product page | [3.3 Stack belief](playbook/03-offer-and-product.md#lesson-33-stack-belief) | 15 min | Starter: Write the answers for you |
+| 10 | Answer worries | Answer your top 3 worries on the product page | [3.3 Give people reasons to believe you](playbook/03-offer-and-product.md#lesson-33-give-people-reasons-to-believe-you) | 15 min | Starter: Write the answers for you |
 | 11 | Shipping | Set a free shipping amount that makes orders bigger | [9.11 Shipping psychology](playbook/09-website-and-cro.md#lesson-911-shipping-psychology) | 15 min | Growth: Set up the free shipping message (after you approve) |
 | 12 | Checkout | Remove one thing that stops people paying | [9.10 Order value](playbook/09-website-and-cro.md#lesson-910-order-value) | 15 min | Guide |
 | 13 | Home page | Make the top of your home page say what you sell | [9.5 Copy that sells](playbook/09-website-and-cro.md#lesson-95-copy-that-sells) | 15 min | Starter: Write 3 headline options for you |
-| 14 | Guarantee | Write a guarantee you are proud of | [3.5 Remove risk](playbook/03-offer-and-product.md#lesson-35-remove-risk) | 10 min | Starter: Write your guarantee for you |
-| 15 | Bundles | Make one bundle that raises order size | [3.6 Make yes easy (pricing)](playbook/03-offer-and-product.md#lesson-36-make-yes-easy-pricing) | 20 min | Growth: Suggest bundles from your order history |
+| 14 | Guarantee | Write a guarantee you are proud of | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Starter: Write your guarantee for you |
+| 15 | Bundles | Make one bundle that raises order size | [3.6 Pricing that is easy to accept](playbook/03-offer-and-product.md#lesson-36-pricing-that-is-easy-to-accept) | 20 min | Growth: Suggest bundles from your order history |
 | 16 | Menu | Tidy your menu and your best collection page | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 20 min | Guide |
 | 17 | After checkout | Add a one-click offer after people buy | [9.10 Order value](playbook/09-website-and-cro.md#lesson-910-order-value) | 15 min | Growth: Set up the offer (after you approve) |
 
@@ -61,7 +61,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 28 | Social profile | Make your Instagram and TikTok profiles sell | [21.2 Profile checklist (Instagram, TikTok, Facebook)](playbook/21-brand-and-social-presence.md#lesson-212-profile-checklist-instagram-tiktok-facebook) | 20 min | Starter: Check your profiles and write your bio and highlights |
 | 29 | Posting plan | Pick a posting plan you can keep for 12 weeks | [21.4 Posting cadence you can keep](playbook/21-brand-and-social-presence.md#lesson-214-posting-cadence-you-can-keep) | 25 min | Starter: Write a 4-week posting calendar |
 | 30 | Free reach | Test new video openings on people who do not follow you | [21.5 Growing organic reach](playbook/21-brand-and-social-presence.md#lesson-215-growing-organic-reach) | 20 min | Guide |
-| 31 | Ad ideas | Write ad ideas for people at different stages | [5.5 Awareness stages](playbook/05-creative-strategy.md#lesson-55-awareness-stages) | 20 min | Starter: Suggest ad ideas for each group |
+| 31 | Ad ideas | Write ad ideas for people at different stages | [5.5 How much your buyer already knows](playbook/05-creative-strategy.md#lesson-55-how-much-your-buyer-already-knows) | 20 min | Starter: Suggest ad ideas for each group |
 | 32 | Openings | Write 20 ad openings | [19.8 Hooks that win the first three seconds](playbook/19-creators-ugc-and-video-ads.md#lesson-198-hooks-that-win-the-first-three-seconds) | 20 min | Starter: Write 20 openings from your reviews |
 | 33 | Creators | Make a list of 10 creators | [19.2 Finding the right creators](playbook/19-creators-ugc-and-video-ads.md#lesson-192-finding-the-right-creators) | 20 min | Starter: Find creators that suit your store |
 | 34 | Contact creators | Message 5 creators with a product and commission offer | [19.5 Affiliate programmes that do not cannibalise you](playbook/19-creators-ugc-and-video-ads.md#lesson-195-affiliate-programmes-that-do-not-cannibalise-you) | 20 min | Starter: Write personal messages for you |
@@ -93,11 +93,11 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 53 | Sales calendar | Plan your next 90 days of promotions | [13.1 The promotional rhythm](playbook/13-promotions-and-sales.md#lesson-131-the-promotional-rhythm) | 20 min | Growth: Write your promotions calendar |
+| 53 | Sales calendar | Plan your next 90 days of promotions | [13.1 Your yearly sales calendar](playbook/13-promotions-and-sales.md#lesson-131-your-yearly-sales-calendar) | 20 min | Growth: Write your promotions calendar |
 | 54 | Sale offers | Design a sale offer that keeps your profit | [13.4 The big sale, step by step](playbook/13-promotions-and-sales.md#lesson-134-the-big-sale-step-by-step) | 20 min | Growth: Work out the profit on each offer |
 | 55 | Black Friday | Start your Black Friday plan | [6.14 Promotional and seasonal campaigns](playbook/06-defining-campaigns.md#lesson-614-promotional-and-seasonal-campaigns) | 30 min | Growth: Build your timeline |
 | 56 | Product launch | Plan your next product launch | [13.2 Launch phases](playbook/13-promotions-and-sales.md#lesson-132-launch-phases) | 20 min | Growth: Write the launch plan |
-| 57 | Stock | Do a weekly stock check | [14.2 The weekly stock snapshot](playbook/14-inventory-cash-planning.md#lesson-142-the-weekly-stock-snapshot) | 20 min | Growth: Make the stock check for you |
+| 57 | Stock | Do a weekly stock check | [14.2 A 10-minute weekly stock check](playbook/14-inventory-cash-planning.md#lesson-142-a-10-minute-weekly-stock-check) | 20 min | Growth: Make the stock check for you |
 | 58 | Cash | Make a 13-week cash plan | [14.4 Cash flow forecast](playbook/14-inventory-cash-planning.md#lesson-144-cash-flow-forecast) | 30 min | Guide |
 
 ## Stage 7: Grow bigger, work smarter (Days 59 to 64)
@@ -107,7 +107,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 59 | Grow a winner | Spend more on a winning campaign, safely | [2.7 The scale test](playbook/02-diagnose-and-fix.md#lesson-27-the-scale-test) | 10 min | Growth: Tell you each budget step to make in Ads Manager |
 | 60 | Test what works | Turn one thing off to see what it really adds | [20.9 Attribution and incrementality](playbook/20-ad-analysis-audiences-and-setup.md#lesson-209-attribution-and-incrementality) | 15 min | Guide |
 | 61 | New countries | Check if selling in a second country makes sense | [15.1 Is there demand?](playbook/15-international-expansion.md#lesson-151-is-there-demand) | 20 min | Guide |
-| 62 | Hand it off | Hand one regular task to someone else | [16.5 Hiring](playbook/16-founder-team-productivity.md#lesson-165-hiring) | 20 min | Guide |
+| 62 | Hand it off | Hand one regular task to someone else | [28.1 Your first hire](playbook/28-team-creators-money.md#lesson-281-your-first-hire) | 20 min | Guide |
 | 63 | AI helpers | Give one weekly job to AI | [17.2 High-value uses](playbook/17-ai-for-operators.md#lesson-172-high-value-uses) | 20 min | Starter: Set this up as a weekly Helix job |
 | 64 | Your setup | Check your tools and choose your next focus | [18.2 Rules for adding a tool](playbook/18-tool-stack.md#lesson-182-rules-for-adding-a-tool) | 20 min | Guide |
 

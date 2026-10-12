@@ -201,6 +201,24 @@
 
 **Expected result:** Creator ads earn their budget on the same terms.
 
+**Step 6.** Brief every creator on one page: goal, audience, key message, must say, must not say, 3 hook options, deliverables, usage rights and deadline.
+
+**Expected result:** Each creator has a written brief before filming.
+
+**Step 7.** Offer simple terms, for example a 10% off code for their audience and 15% commission on new-customer sales.
+
+**Expected result:** Every creator has written terms.
+
+**Step 8.** Get written permission, then run the creator's video as a partnership ad from their account inside your normal campaigns.
+
+**Expected result:** Partnership ads are live, often at a lower cost per new customer.
+
+<!-- do:meta-draft -->
+
+**Step 9.** Give affiliates (people paid a commission per sale) a simple guide with product facts, angles that work and examples.
+
+**Expected result:** Affiliates have what they need to post without asking you.
+
 ## Lesson 19.7: Video ad formats
 <!-- stage:attract -->
 
@@ -382,10 +400,10 @@ Deadline: ______   Payment: ______   Disclosure: required
 Examples we love: [links]
 ```
 
-## Lesson 19.13: Building a creative engine
+## Lesson 19.13: Make new ads every week, on a schedule
 <!-- stage:attract -->
 
-**Why this matters:** A creative engine is a steady weekly supply of new ads. Accounts that keep winning are the ones that never run out of fresh, well-briefed creative.
+**Why this matters:** A weekly ad-making habit is a steady weekly supply of new ads. Accounts that keep winning are the ones that never run out of fresh, well-briefed creative.
 
 **Step 1.** Set a target of 4 to 8 new ads a week at small to medium spend, more as spend grows.
 

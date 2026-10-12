@@ -1,4 +1,5 @@
 import "server-only";
+import { canonicalStepKeys } from "./lesson-alias";
 import { hasDb, prisma } from "./db";
 import type { PlanId } from "./plans";
 import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Settings, NUM_FIELDS } from "./scorecard";
@@ -161,9 +162,9 @@ export function streakFrom(completions: Completion[], today = isoDay()): number 
 
 // ---------- lesson step progress ----------
 export async function getLessonSteps(userId: string): Promise<string[]> {
-  if (!hasDb) return [...(mem.lessonSteps.get(userId) ?? [])];
+  if (!hasDb) return canonicalStepKeys([...(mem.lessonSteps.get(userId) ?? [])]);
   const rows = await prisma.lessonProgress.findMany({ where: { userId }, select: { stepKey: true } });
-  return rows.map((r) => r.stepKey);
+  return canonicalStepKeys(rows.map((r) => r.stepKey));
 }
 
 export async function setLessonStep(userId: string, stepKey: string, done: boolean) {

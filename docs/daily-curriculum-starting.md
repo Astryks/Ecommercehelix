@@ -17,12 +17,12 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Who it is for | Write who your product is for | [4.2 Customer profiles](playbook/04-brand-and-content.md#lesson-42-customer-profiles) | 10 min | Guide |
-| 2 | Is there demand? | Check that people already want it | [3.7 Product-market fit snapshot](playbook/03-offer-and-product.md#lesson-37-product-market-fit-snapshot) | 15 min | Guide |
+| 2 | Is there demand? | Check that people already want it | [3.7 Check people really want your product](playbook/03-offer-and-product.md#lesson-37-check-people-really-want-your-product) | 15 min | Guide |
 | 3 | Your cost per sale | Work out what one sale really costs you | [1.2 Your cost drivers](playbook/01-daily-profit-foundations.md#lesson-12-your-cost-drivers) | 10 min | Free: Work out your cost per sale from your prices |
-| 4 | A price that leaves profit | Check your price leaves room for ads | [3.6 Make yes easy (pricing)](playbook/03-offer-and-product.md#lesson-36-make-yes-easy-pricing) | 10 min | Guide |
-| 5 | Your promise | Write your one-line promise | [3.2 Sharpen the promise](playbook/03-offer-and-product.md#lesson-32-sharpen-the-promise) | 10 min | Starter: Draft 5 promise lines for you to choose from |
-| 6 | Remove the risk | Make buying feel safe | [3.5 Remove risk](playbook/03-offer-and-product.md#lesson-35-remove-risk) | 10 min | Guide |
-| 7 | First proof | Collect your first reviews and photos | [3.3 Stack belief](playbook/03-offer-and-product.md#lesson-33-stack-belief) | 15 min | Guide |
+| 4 | A price that leaves profit | Check your price leaves room for ads | [3.6 Pricing that is easy to accept](playbook/03-offer-and-product.md#lesson-36-pricing-that-is-easy-to-accept) | 10 min | Guide |
+| 5 | Your promise | Write your one-line promise | [3.2 Say clearly what the customer gets](playbook/03-offer-and-product.md#lesson-32-say-clearly-what-the-customer-gets) | 10 min | Starter: Draft 5 promise lines for you to choose from |
+| 6 | Take the risk off | Make buying feel safe | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Guide |
+| 7 | First proof | Collect your first reviews and photos | [3.3 Give people reasons to believe you](playbook/03-offer-and-product.md#lesson-33-give-people-reasons-to-believe-you) | 15 min | Guide |
 
 ## Stage 2: Set up your Shopify store (Days 8 to 20)
 
@@ -39,7 +39,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 16 | Taxes and payments | Check your tax settings and turn on payments | [22.10 Taxes: GST and sales tax basics](playbook/22-shopify-store-setup.md#lesson-2210-taxes-gst-and-sales-tax-basics) | 15 min | Guide |
 | 17 | Policies | Write your policies in plain words | [22.12 Policies and legal pages](playbook/22-shopify-store-setup.md#lesson-2212-policies-and-legal-pages) | 15 min | Guide |
 | 18 | Apps and email | Add your starter apps and email sign-up | [22.13 Essential apps (and only those)](playbook/22-shopify-store-setup.md#lesson-2213-essential-apps-and-only-those) | 15 min | Starter: Draft your welcome email |
-| 19 | Tracking | Install the Meta pixel and Google tag | [22.14 Tracking: Meta pixel, Google tag and analytics](playbook/22-shopify-store-setup.md#lesson-2214-tracking-meta-pixel-google-tag-and-analytics) | 15 min | Guide |
+| 19 | Tracking | Install the Meta pixel and Google tag | [20.1 Before you launch: tracking you can trust](playbook/20-ad-analysis-audiences-and-setup.md#lesson-201-before-you-launch-tracking-you-can-trust) | 15 min | Guide |
 | 20 | Test and launch check | Place a test order and tick the launch checklist | [22.16 Place test orders](playbook/22-shopify-store-setup.md#lesson-2216-place-test-orders) | 15 min | Guide |
 
 ## Stage 3: Your first small test campaign (Days 21 to 28)
@@ -142,7 +142,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 ### Day 6: Make buying feel safe
 
-*Topic: Remove the risk · Stage 1 · 10 minutes · SOP 04*
+*Topic: Take the risk off · Stage 1 · 10 minutes · SOP 04*
 
 **Why it matters.** A new store has no reputation yet. Clear returns, a simple guarantee and visible contact details make a stranger feel safe enough to buy.
 

@@ -62,7 +62,7 @@
 
 **Expected result:** Your week matches your priorities.
 
-## Lesson 16.2: Win the day and the week
+## Lesson 16.2: Plan each day and each week
 <!-- stage:grow -->
 
 **Why this matters:** A small daily and weekly rhythm keeps you on top of the business in under an hour a week. The Helix routine is built for exactly this.
@@ -81,10 +81,10 @@
 
 **Expected result:** A Friday review slot is in your calendar.
 
-## Lesson 16.3: Six-week priority cycles
+## Lesson 16.3: A few priorities at a time, in short planning blocks
 <!-- stage:grow -->
 
-**Why this matters:** Working in six-week cycles stops you chasing everything at once. One or two priorities with real time behind them beat ten half-done projects.
+**Why this matters:** Working in short planning blocks stops you chasing everything at once. One or two priorities with real time behind them beat ten half-done projects.
 
 **Step 1.** Pick 1 or 2 priorities for the next six weeks.
 
@@ -113,27 +113,6 @@
 
 **Expected result:** Only true urgent, yours-to-do issues get your attention now.
 
-## Lesson 16.5: Hiring
-<!-- stage:grow -->
-
-**Why this matters:** Hiring the right person at the right time frees you to grow the business. Hiring by results and testing with real work avoids expensive mistakes.
-
-**Step 1.** Describe the role by results, not tasks (for example "answer every customer email within 4 hours").
-
-**Expected result:** The role description has measurable results.
-
-**Step 2.** Write the SOPs (how the work is done) before you hand it over.
-
-**Expected result:** A new hire can follow written steps from day one.
-
-**Step 3.** Plan 3 to 6 months ahead, and test candidates with a real paid work sample.
-
-**Expected result:** You hire on evidence, with time to train.
-
-**Step 4.** For senior people, write what they must achieve in 12 months, check references carefully and start with a paid trial project.
-
-**Expected result:** Senior hires have clear goals and have proven themselves.
-
 ## Lesson 16.6: Conflict resolution
 <!-- stage:grow -->
 
@@ -150,42 +129,6 @@
 **Step 3.** Write down who will do what by when, and follow up to check it happened.
 
 **Expected result:** There is a written agreement and a follow-up date.
-
-## Lesson 16.7: Agencies vs in-house
-<!-- stage:grow -->
-
-**Why this matters:** Agencies can help, but only if you own the accounts and judge them on profit. If you bring work in-house, start with the daily ad check.
-
-**Step 1.** Check that ad accounts, ads, customer lists and reports are in your name (Meta **Business Settings > Ad accounts**, Google **Admin > Access**).
-
-**Expected result:** You own every account and asset.
-
-**Step 2.** Ask your agency to report on MER and contribution profit, not just ROAS.
-
-**Expected result:** Agency reports show profit numbers.
-
-**Step 3.** If you bring work in-house, start with the daily ad check (Lesson 7.6) and keep specialists for the gaps.
-
-**Expected result:** You run the daily check yourself.
-
-## Lesson 16.8: Resilience
-<!-- stage:grow -->
-
-**Why this matters:** Bad days happen in every store. Resilience is mostly habits that stop one bad day from feeling like a bad business.
-
-**Step 1.** Judge results on the last 3 days and month to date, not one day.
-
-**Expected result:** One bad day does not change your plans.
-
-<!-- do:growth -->
-
-**Step 2.** Keep a wins file of good results and kind customer messages, and keep your decision log.
-
-**Expected result:** You can see your progress and sensible choices when it gets hard.
-
-**Step 3.** Talk to other founders regularly, and in busy seasons plan sleep and exercise like any other task.
-
-**Expected result:** You have support and protected recovery time.
 
 ## Lesson 16.9: Capital and exit thinking
 <!-- stage:grow -->

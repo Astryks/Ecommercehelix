@@ -1,5 +1,6 @@
 import "server-only";
 import { listModules } from "./learn";
+import { canonicalRef } from "./lesson-alias";
 
 let cache: Map<string, { href: string; title: string }> | null = null;
 
@@ -14,5 +15,5 @@ export function lessonLink(ref: string): { href: string; title: string } | null 
       }
     }
   }
-  return cache.get(ref) ?? null;
+  return cache.get(canonicalRef(ref)) ?? null;
 }

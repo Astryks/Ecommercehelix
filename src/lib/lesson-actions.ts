@@ -21,6 +21,8 @@ const LINKS: Record<string, { href: string; label: string }> = {
   bfcm: { href: "/dashboard/calendar", label: "Open your sale prep plan" },
   insights: { href: "/dashboard/insights", label: "See what Helix found" },
   settings: { href: "/dashboard/settings", label: "Open settings" },
+  email: { href: "/dashboard/email", label: "Open email automation" },
+  course: { href: "/course", label: "Open your course path" },
 };
 
 const FLOW_IDS = ["welcome", "abandoned-checkout", "abandoned-cart", "browse-abandonment", "post-purchase", "review-request", "replenishment", "win-back", "vip"];

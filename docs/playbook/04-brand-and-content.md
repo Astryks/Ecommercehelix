@@ -125,6 +125,18 @@
 | Community and story | Medium | High (this is where TikTok reach comes from) | Low |
 | Promotion | Low | Low | High (people subscribe to hear about offers first) |
 
+**Step 4.** Set your four pillars: proof (reviews, customer photos, press, numbers), education (how to use and choose, myths, care), story (founder, behind the scenes, values) and product and offer (launches, restocks, bundles, sales).
+
+**Expected result:** You have four named pillars.
+
+**Step 5.** Plan next month at roughly 40% education and proof, 30% story and community, 30% product and offer.
+
+**Expected result:** Your plan follows the mix.
+
+**Step 6.** Fill gaps with ideas that never run out: reviews and comments, support questions ("You asked, we answered"), calm answers to negative comments, and a recurring series.
+
+**Expected result:** You have more ideas than posting slots.
+
 ## Lesson 4.5: Communication calendar
 <!-- stage:attract -->
 
@@ -194,6 +206,24 @@
 
 **Expected result:** Your content ideas and FAQ grow from real questions.
 
+**Step 5.** Run a poll letting customers help decide something (a colour, name or flavour).
+
+**Expected result:** Customers have a say in a decision.
+
+**Step 6.** Feature customers as the faces of a collection.
+
+**Expected result:** Real customers appear in your marketing.
+
+**Step 7.** Run a small event, meetup or live session, and reward your biggest fans with early access, gifts or a VIP group.
+
+**Expected result:** Your keenest fans feel looked after.
+
+<!-- do:flow-vip -->
+
+**Step 8.** Share feedback you acted on ("You asked for bigger sizes. Here they are.").
+
+**Expected result:** Customers see their voice changes things.
+
 ## Lesson 4.8: Personal brand and PR
 <!-- stage:attract -->
 
@@ -211,7 +241,7 @@
 
 **Expected result:** Press proof appears where shoppers decide.
 
-## Lesson 4.9: Influencer amplification
+## Lesson 4.9: Boost creator posts with ad spend
 <!-- stage:attract -->
 
 **Why this matters:** Influencers (creators with an engaged audience) can spread your brand fast. The best results come from seeding widely, then paying the winners for usage rights and running their content as ads.

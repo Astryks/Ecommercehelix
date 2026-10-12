@@ -77,20 +77,20 @@ const L = (slug: string, anchor: string, label: string): Learn => ({ slug, ancho
 const PROMO = "13-promotions-and-sales";
 const LEARN = {
   bigSale: L(PROMO, "lesson-134-the-big-sale-step-by-step", "Lesson 13.4"),
-  hype: L(PROMO, "lesson-135-hype-phase", "Lesson 13.5"),
+  hype: L(PROMO, "lesson-135-the-build-up-before-a-launch", "Lesson 13.5"),
   running: L(PROMO, "lesson-136-running-the-sale", "Lesson 13.6"),
   after: L(PROMO, "lesson-137-after-the-sale", "Lesson 13.7"),
-  keyDates: L(PROMO, "lesson-1310-key-dates-and-beyond-black-friday", "Lesson 13.10"),
+  keyDates: L(PROMO, "lesson-1310-key-dates-through-the-year", "Lesson 13.10"),
   checklist: L(PROMO, "lesson-1311-cross-channel-checklist", "Lesson 13.11"),
-  rhythm: L(PROMO, "lesson-131-the-promotional-rhythm", "Lesson 13.1"),
-  stock: L("14-inventory-cash-planning", "lesson-142-the-weekly-stock-snapshot", "Lesson 14.2"),
+  rhythm: L(PROMO, "lesson-131-your-yearly-sales-calendar", "Lesson 13.1"),
+  stock: L("14-inventory-cash-planning", "lesson-142-a-10-minute-weekly-stock-check", "Lesson 14.2"),
   cash: L("14-inventory-cash-planning", "lesson-144-cash-flow-forecast", "Lesson 14.4"),
   seasonalAds: L("06-defining-campaigns", "lesson-614-promotional-and-seasonal-campaigns", "Lesson 6.14"),
   brief: L("19-creators-ugc-and-video-ads", "lesson-1912-the-ugc-brief", "Lesson 19.12"),
-  list: L("11-list-and-audience-growth", "lesson-114-fill-the-funnel-before-peaks", "Lesson 11.4"),
+  list: L("11-list-and-audience-growth", "lesson-114-grow-your-list-before-big-sale-dates", "Lesson 11.4"),
   saleEmails: L("10-email-sms-whatsapp", "lesson-1013-sale-email-and-sms-schedule", "Lesson 10.13"),
   shipping: L("09-website-and-cro", "lesson-911-shipping-psychology", "Lesson 9.11"),
-  pricing: L("03-offer-and-product", "lesson-36-make-yes-easy-pricing", "Lesson 3.6"),
+  pricing: L("03-offer-and-product", "lesson-36-pricing-that-is-easy-to-accept", "Lesson 3.6"),
 };
 
 /** A prep task's due date for an event on `date`. */

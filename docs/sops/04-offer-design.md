@@ -11,7 +11,7 @@
 - A competitor sale or a new competitor is detected in the Trends feed or by the user.
 - Launch of a new product.
 
-## The five offer levers (Helix names)
+## Five ways to make an offer stronger
 
 1. **Promise.** What does the customer get, and who do they become? Write both the "move towards" outcome (look good, save time, feel confident) and the "move away from" pain (embarrassment, waste, discomfort). Add the change in how others see them.
 2. **Belief.** List every reason someone would not buy. Answer each one with evidence: demo, comparison, reviews, guarantee, expert or creator proof, founder story. Example from practice: adding a short home trial to a high-priced product can triple conversion while returns stay low.

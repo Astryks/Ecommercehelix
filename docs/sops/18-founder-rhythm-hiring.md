@@ -10,7 +10,7 @@
 - The user asks "should I hire someone?", "should I fire my agency?", or "how do I find a freelancer?".
 - Revenue approaching a stage boundary.
 
-## Six-week priority cycle
+## Short planning blocks: a few priorities at a time
 
 1. Pick one or two big priorities for the next six weeks. Each must move a scorecard number.
 2. Block 8 to 12 hours a week for them in the calendar.

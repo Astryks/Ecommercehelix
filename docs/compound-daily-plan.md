@@ -209,7 +209,7 @@ The daily loop stays the same. The theme decides which "one action" Helix picks 
 
 ## 6. Quarterly rhythm (half a day)
 
-- [ ] **Six-week priority cycles.** Choose one or two big priorities for the next six weeks (for example "launch Google Shopping", "rebuild the welcome flow", "fix shipping costs"). Block 8 to 12 hours a week for them.
+- [ ] **A few priorities at a time.** Choose one or two big priorities for the next six weeks (for example "launch Google Shopping", "rebuild the welcome flow", "fix shipping costs"). Block 8 to 12 hours a week for them.
 - [ ] **Pricing and offer.** Test a price change, a new bundle, a guarantee, or free-shipping threshold.
 - [ ] **Hiring and ops.** What will break if revenue doubles? Plan roles 3 to 6 months ahead. Hire for outcomes, test with a paid work sample.
 - [ ] **Channel review.** Add a channel only when current channels are profitable and you have creative to feed it.
@@ -354,9 +354,9 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 
 | Days | Do | Exit criteria |
 | --- | --- | --- |
-| 1 to 30 | Cohort analysis by first-order month and by channel. Weekly demand snapshot (weeks of cover, ABC grades). Rolling 3 to 12 month cash forecast. Supplier terms review. | Cohort report live. Cash forecast live. One supplier term improved. |
+| 1 to 30 | Cohort analysis by first-order month and by channel. Weekly stock check (weeks of cover, ABC grades). Rolling 3 to 12 month cash forecast. Supplier terms review. | Cohort report live. Cash forecast live. One supplier term improved. |
 | 31 to 60 | Advanced creative: dedicated test campaign, partnership ads with creators, catalog video, new formats from the Trends feed. Google: margin-tier campaigns, new vs returning segmentation, Demand Gen tests. Loyalty only if repeat rate is above 15 to 20%. | Two new channels or formats tested with clear results. |
-| 61 to 90 | Org chart for the next 12 months. Outcome-based job descriptions. Six-week priority cycles. A full-year plan built in advance (revenue target, with stock and marketing worked back from it). | Year plan signed off. Next two hires planned with work-sample tests. |
+| 61 to 90 | Org chart for the next 12 months. Outcome-based job descriptions. Short planning blocks with a few priorities. A full-year plan built in advance (revenue target, with stock and marketing worked back from it). | Year plan signed off. Next two hires planned with work-sample tests. |
 
 ---
 
