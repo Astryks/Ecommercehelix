@@ -35,8 +35,8 @@ Goals follow the profit-first order. Every track starts the same way: **1. Set u
 | 2 | Fill in your numbers 7 days in a row | 7 of the last 7 days are filled in with your real numbers. | 6 | Your numbers | Just starting, Growing, Scaling | Free | Your numbers |
 | 3 | Learn the numbers that run your store | You know your break-even MER, your target MER and your monthly sales and profit goals, and they are saved in Helix. | 6 | Your numbers | Just starting, Growing, Scaling | Free | You confirm |
 | 4 | Get your store ready to take orders | A real test order goes through checkout and lands in your inbox. | 11 | Your numbers | Just starting | Free | You confirm |
-| 5 | Get your first 100 site visits a day | An average of 100 sessions a day over the last 7 days. | 10 | Attract | Just starting | Starter | Your numbers |
-| 6 | Get 1,000 site visits a day while ads stay profitable | 1,000 sessions a day on average over 7 days, with ad spend at or under your target MER. | 8 | Attract | Growing, Scaling | Starter | Your numbers |
+| 5 | Get your first 100 site visits a day | An average of 100 sessions a day over the last 7 days. | 17 | Attract | Just starting | Starter | Your numbers |
+| 6 | Get 1,000 site visits a day while ads stay profitable | 1,000 sessions a day on average over 7 days, with ad spend at or under your target MER. | 14 | Attract | Growing, Scaling | Starter | Your numbers |
 | 7 | Add 500 people to your email list | 500 new subscribers since you started this goal (check your email tool). | 6 | Attract | Just starting, Growing, Scaling | Starter | You confirm |
 | 8 | Get your first 10 orders from referrals and partners | 10 orders came through a referral link, partner code or guest feature. | 5 | Attract | Just starting, Growing, Scaling | Starter | You confirm |
 | 9 | Get add-to-cart above 8% | 8% or more of sessions add something to the cart, over 7 days. | 8 | Convert | Just starting, Growing, Scaling | Starter | Your numbers |
@@ -87,13 +87,13 @@ Each goal's tasks are the steps of the lessons listed, in order. Days follow a l
 
 **Finish line:** An average of 100 sessions a day over the last 7 days.  
 **Why this matters:** You need steady visitors before you can learn what makes people buy.  
-**Lessons:** 4.2, 21.2, 29.3, 6.1, 6.2, 7.1, 7.4 · **Days:** 10 (1, 3, 3, 2, 5, 2, 4, 2, 2, 4 tasks, about 10, 35, 25, 25, 45, 20, 35, 35, 15, 40 min)
+**Lessons:** 7.14, 7.13, 4.2, 21.2, 29.3, 6.1, 6.2, 7.1, 7.4 · **Days:** 17 (1, 3, 4, 2, 4, 3, 4, 2, 2, 3, 2, 3, 1, 3, 3, 2, 3 tasks, about 5, 20, 35, 20, 40, 35, 35, 25, 20, 25, 20, 25, 15, 20, 45, 20, 25 min)
 
 ### Get 1,000 site visits a day while ads stay profitable
 
 **Finish line:** 1,000 sessions a day on average over 7 days, with ad spend at or under your target MER.  
 **Why this matters:** More of the right visitors is the fastest lever, but only if each sale still makes money.  
-**Lessons:** 5.1, 5.7, 6.3, 6.12, 7.6, 19.12 · **Days:** 8 (1, 2, 3, 2, 5, 3, 4, 2 tasks, about 5, 15, 35, 35, 45, 25, 45, 25 min)
+**Lessons:** 7.14, 7.13, 5.1, 5.7, 6.3, 6.12, 7.6, 19.12 · **Days:** 14 (1, 3, 4, 2, 4, 3, 3, 2, 2, 3, 2, 3, 1, 3 tasks, about 5, 20, 35, 20, 40, 20, 35, 35, 20, 25, 15, 35, 10, 35 min)
 
 ### Add 500 people to your email list
 
@@ -198,6 +198,8 @@ Goal: Set up your profit dashboard, day 2:
 Module 29 (Customers, partners and the weekly rhythm) fills gaps the course needed: customer words, the worry behind the purchase, repurposing content, referrals, partner brands, guest spots, a weekly story email, buying-question emails, leading numbers, a weekly numbers meeting, playbooks, owners, a 90-day plan, a quarterly reset, a one-page direction and a wins file. Five are Attract, three Convert and eight Grow.
 
 Later additions: Lessons 1.7 to 1.9 (sales, costs and profit in plain English; setting up the profit dashboard; how much to spend on marketing) power the first and third goals. Lessons 3.10 (subscribe and save), 9.16 (when conversion suddenly drops), 13.12 (a smaller sale between the big ones), 23.7 (customer service that keeps customers) and 28.9 (selling to shops) fill topics the course was missing and are tasks in the conversion, margin, returning customer and $100k goals.
+
+Lessons 7.14 (find your way around Ads Manager) and 7.13 (launch your first Meta ad in 30 minutes) open the first traffic goals.
 
 ## Where the code lives
 

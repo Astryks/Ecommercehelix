@@ -139,45 +139,49 @@
 ## Lesson 20.3: Setting up a Meta sales campaign step by step
 <!-- stage:attract -->
 
-**Why this matters:** A Meta sales campaign set up correctly in ten steps gives every ad a fair test. Helix can build steps 2 to 7 for you as a paused draft in your own account, which you check and switch on.
+**Why this matters:** A Meta sales campaign set up the same careful way every time gives each ad a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account, which you check and switch on. New to Ads Manager? Do Lesson 7.14 first, and Lesson 7.13 for your very first ad.
 
-**Step 1.** Write the campaign brief first (Lesson 6.16): target CPA, audience layer, budget and stop rule.
+**Step 1.** Write the campaign brief first (Lesson 6.16): target cost per purchase, who it is for, daily budget and when you will stop it.
 
 **Expected result:** The brief is finished before you open Ads Manager.
 
-**Step 2.** In Ads Manager click **Create**, choose **Sales**, then automated (Advantage+) or manual setup.
+**Step 2.** In Ads Manager click **+ Create**, choose **Sales**, click **Continue**, then pick **Advantage+ sales campaign** for new customers or **Manual sales campaign** for a controlled test.
 
 **Expected result:** A new Sales campaign is open.
 
 <!-- do:meta-draft -->
 
-**Step 3.** Name it with your pattern, for example `03-Manual-Cold-Broad-Light-TEST-B16`.
+**Step 3.** Click the campaign name field and name it with your pattern, for example `03-Manual-Cold-Broad-TEST-B16` (Lesson 6.7).
 
-**Expected result:** The name follows Lesson 6.7.
+**Expected result:** The name shows the number, type, audience and test.
 
-**Step 4.** Set the budget at about 2 to 3 times your target CPA per day: campaign budget for automated, ad set budget for tight tests.
+**Step 4.** In the budget box, set a daily budget of about 2 to 3 times your target cost per purchase. It sits on the campaign for Advantage+ and on the ad set for manual tests.
 
-**Expected result:** The budget is set and written on the brief.
+**Expected result:** The budget matches your brief.
 
-**Step 5.** Set the conversion: Website, event **Purchase**, attribution **7-day click, 1-day view** (or your usual setting, so results compare).
+**Step 5.** At the ad set level, under **Conversion**, choose **Website**, your pixel and the event **Purchase**.
 
-**Expected result:** The ad set optimises for purchases.
+**Expected result:** The ad set is set to find purchases.
 
-**Step 6.** Set the audience as in Lesson 20.2 and leave Advantage+ placements on unless you have a good reason.
+**Step 6.** Under **Attribution setting** (click **Show more options** if you cannot see it), keep **7-day click, 1-day view** or whatever your other campaigns use, so results compare.
+
+**Expected result:** All your campaigns count sales the same way.
+
+**Step 7.** Set the audience as in Lesson 20.2 and leave **Advantage+ placements** on.
 
 **Expected result:** Audience and placements match the brief.
 
-**Step 7.** Add 3 to 6 ads per ad set, all testing one thing, with main text, headline and a link with UTM tags.
+**Step 8.** At the ad level, add 3 to 6 ads that test one thing, each with main text, headline and a link with UTM tags (Lesson 20.1). Use **Duplicate** in the ad panel to make each extra ad.
 
 **Expected result:** Each ad has text, headline and a tagged link.
 
-**Step 8.** Turn off any creative enhancements that change your message, and preview on mobile in every placement.
+**Step 9.** In each ad, open **Advantage+ creative > Edit**, switch off changes that alter your message, and check the preview on the right for Feed, Stories and Reels.
 
-**Expected result:** Text sits inside safe zones and the ad looks as designed.
+**Expected result:** Text sits inside the safe areas and each ad looks as designed.
 
-**Step 9.** Publish, then do not touch it for 3 days unless something is broken.
+**Step 10.** Click **Publish** (bottom right), then do not touch the campaign for 3 days unless something is broken.
 
-**Expected result:** The campaign is live and learning undisturbed.
+**Expected result:** **Delivery** shows "In review", then "Learning", and the campaign learns undisturbed.
 
 ### Good to know
 
@@ -208,27 +212,55 @@
 ## Lesson 20.4: Setting up Google step by step
 <!-- stage:attract -->
 
-**Why this matters:** Google works best with three building blocks: brand search to protect your name, a feed-only Performance Max or Shopping campaign for products, and non-brand search once you know your best terms. Build them in that order.
+**Why this matters:** Google works best with three simple campaigns, built in this order: **brand search** (your ad shows when people search your store's name), a **Performance Max** campaign fed by your product list (Google shows your products across Shopping, Search, YouTube and Gmail), and later **non-brand search** for the terms that sell. Helix does not connect to Google Ads yet, so you build these yourself. For your very first campaign, Lesson 8.12 has the full beginner walk-through, including creating the account.
 
-**Step 1.** Create a brand search campaign: Search, Sales goal, bidding **Maximise conversions** or **Target impression share**, keywords of your brand and misspellings in exact and phrase match, responsive search ads with sitelinks, callouts and price or promotion assets.
+**Words you will see:** **Merchant Center** is where Google keeps your product list (the **feed**). A **keyword** is a search you want to show up for. **Match type** controls how closely a search must match: **exact** (that search or very close) and **phrase** (searches containing it). **ROAS** is sales divided by ad spend.
 
-**Expected result:** Searches for your name show your ad, and the campaign is never "Limited by budget".
+**Step 1.** Do Lesson 8.1 first, so the Shopify **Google & YouTube** app is connected and **Purchase** is your primary conversion.
 
-**Step 2.** Fix your product feed: search-first titles, good images, correct prices and availability, GTIN or brand, and product type.
+**Expected result:** In Google Ads, **Goals > Conversions > Summary** shows Purchase as Primary and "Recording conversions".
 
-**Expected result:** Merchant Center shows no errors.
+**Step 2.** In Merchant Center (merchants.google.com), open **Products > Needs attention** and fix each listed issue, starting with the products that sell most.
 
-**Step 3.** Create Performance Max with the Sales goal and your Merchant Center, giving it only the feed, and add your brand name as a brand exclusion.
+**Expected result:** Your best sellers show as approved, with no errors. Missing GTINs (barcodes) can be fixed in Shopify on each product's variant.
 
-**Expected result:** PMax behaves like Shopping and leaves brand searches to the brand campaign.
+**Step 3.** In Google Ads click **+ Create** (or the **+ New campaign** button on the Campaigns page), choose **Sales**, then **Search**, and name it "01-Search-Brand".
 
-**Step 4.** Start bidding on **Maximise conversion value**, then add a target ROAS near your real target once you have about 30 conversions in 30 days, and split best sellers into their own campaign when they deserve more budget.
+**Expected result:** A new Search campaign is open on its settings page.
 
-**Expected result:** Bidding is tuned to real data.
+**Step 4.** Under **Bidding** choose **Target impression share** (about 90%, anywhere on the page, with a maximum cost per click of about $0.50 to $1), set a daily budget of $5 to $10, and untick **Search partners** and **Display Network**.
 
-**Step 5.** Add non-brand search with one campaign per product theme and tight keyword groups, and check search terms weekly.
+**Expected result:** The brand campaign has a budget, Maximise conversions bidding and Search only.
 
-**Expected result:** New searchers find you and wasted searches are blocked.
+**Step 5.** In the ad group, add your store name and common misspellings as keywords, typed as `[your brand]` (exact) and `"your brand"` (phrase).
+
+**Expected result:** The ad group has 2 to 6 brand keywords.
+
+**Step 6.** Write one responsive search ad: up to 15 headlines and 4 descriptions about your store, your best sellers and your offer, then add 4 sitelinks (Best sellers, New in, Shipping, Reviews). Click **Publish campaign**.
+
+**Expected result:** The brand campaign is live and "Eligible". Searches for your name show your ad.
+
+**Step 7.** Click **+ Create** again, choose **Sales**, then **Performance Max**, select your Merchant Center account when asked, and name it "02-PMax-Products".
+
+**Expected result:** A new Performance Max campaign is connected to your product feed.
+
+**Step 8.** Set **Bidding** to **Conversion value** (Maximise conversion value) without a target ROAS for now, and a daily budget from your marketing guide (Lesson 1.9).
+
+**Expected result:** The campaign has a budget and value bidding.
+
+**Step 9.** In the asset group, remove any extra images, videos and text Google adds so it runs mainly from your product feed, and add your brand name under **Brand exclusions** (in campaign settings) so brand searches stay with the brand campaign. Click **Publish campaign**.
+
+**Expected result:** Performance Max is live and runs on your products, not your brand name. If you cannot remove every asset, leave the minimum Google requires.
+
+**Step 10.** After about 30 purchases in 30 days, open the Performance Max campaign settings, tick **Set a target return on ad spend** and enter a target near your break-even ROAS from your profit setup.
+
+**Expected result:** Bidding now aims at profitable sales.
+
+**Step 11.** Once brand search and Performance Max are steady, add a non-brand Search campaign per product theme (for example "linen sheets") with 5 to 15 phrase and exact keywords each, and each week open **Insights and reports > Search terms** and add wasted searches as negative keywords.
+
+**Expected result:** New searchers find you, and searches that never buy are blocked.
+
+**Watch out:** Your screen may look a little different, because Google changes its menus often. Look for the same words (Create, Campaigns, Bidding, Brand exclusions, Search terms), or use the search box at the top of Google Ads.
 
 ### Good to know
 

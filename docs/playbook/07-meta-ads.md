@@ -35,64 +35,74 @@
 ## Lesson 7.1: Account setup checklist
 <!-- stage:attract -->
 
-**Why this matters:** Ten minutes of setup before you spend money prevents the most expensive Meta problems: lost sales tracking, hacked accounts and runaway spend. Do this once, tick each step, and check it again every quarter.
+**Why this matters:** Ten minutes of setup before you spend money prevents the most expensive Meta problems: lost sales tracking, hacked accounts and runaway spend. Do it once, one step at a time, and check it again every quarter.
 
-**Step 1.** In Meta Business Settings (business.facebook.com/settings) go to **Security Centre**, start business verification, add a second admin under **Users > People**, and turn on two-factor authentication (a code from your phone as well as a password) for every admin.
+**Where things live:** **Ads Manager** (adsmanager.facebook.com) is where you build and watch ads. **Business Settings** (business.facebook.com/settings) is where people, security and payment live. **Events Manager** is where your pixel lives. If you land in **Meta Business Suite** instead, click **All tools** (the grid icon in the left menu) and pick the tool by name.
 
-**Expected result:** Security Centre shows verification started or done, two admins, and two-factor on for both.
+**Step 1.** Go to business.facebook.com/settings, click **Users > People**, then **Add**, and invite a second person you trust as an admin.
+
+**Expected result:** **People** lists two admins.
 
 **Watch out:** One admin is a single point of failure. If that person is locked out or hacked, you lose the account.
 
-**Step 2.** In Shopify install the **Facebook & Instagram** app, connect your pixel (a small piece of code that tells Meta when someone views, adds to cart or buys) and set data sharing to **Maximum** so server events (Conversions API: the same sales sent from your store's server) are on.
+**Step 2.** In the same Business Settings, open **Security Centre** and switch on **Two-factor authentication** (a code from your phone as well as a password) for everyone.
 
-**Expected result:** In Events Manager, your pixel shows Purchase events from both **Browser** and **Server**, and the currency matches your store.
+**Expected result:** Security Centre shows two-factor required for all admins.
+
+**Step 3.** Still in **Security Centre**, click **Start verification** and follow the prompts to verify your business with your business name, address and phone.
+
+**Expected result:** Verification shows "In review" or "Verified". If you do not see the button, your business may already be verified or not yet eligible: skip and come back later.
+
+**Step 4.** In Shopify, open **Apps**, search for **Facebook & Instagram**, install it and log in with your Facebook account.
+
+**Expected result:** The app shows your business, ad account, Page and pixel as connected.
 
 <!-- do:meta-connect -->
 
-**Step 3.** In the same app, connect your product catalog and check that sale prices come through.
+**Step 5.** In the Facebook & Instagram app, open **Settings > Data sharing** and choose **Maximum**. This sends sales to Meta from your browser (the pixel, a small piece of tracking code) and from your store's server (the Conversions API), so fewer sales go missing.
 
-**Expected result:** **Commerce Manager > Catalog** lists your products with the right prices.
+**Expected result:** Data sharing reads "Maximum".
 
-**Step 4.** In **Ad account settings > Audience segments**, set your engaged audience and existing customers.
+**Step 6.** Open **Events Manager** (All tools > Events Manager), click your pixel, and look at the **Purchase** row in the **Overview** tab.
 
-**Expected result:** Ads Manager can report how much spend reaches new people.
+**Expected result:** Purchase shows events from both **Browser** and **Server**, in your store's currency. If it shows nothing, place a small test order and check again in an hour.
 
-**Step 5.** Build custom audiences: visitors in the last 30 and 180 days, product viewers, add to cart, checkout started, buyers, social engagers and your email list.
-
-**Expected result:** All the audiences show "Ready" in **Audiences**.
-
-**Step 6.** Set up saved columns in Ads Manager (**Columns > Customise columns > Save as preset**) as in [SOP 06](../sops/06-meta-daily-optimisation.md).
-
-**Expected result:** One click shows the numbers you check every day.
-
-**Step 7.** In **Billing > Payment settings**, set an account spending limit as a safety net.
+**Step 7.** Back in Ads Manager, click the menu (three lines, top left) **> Billing and payments > Payment settings**, find **Account spending limit** and set a limit you are comfortable with.
 
 **Expected result:** The account stops spending at your limit even if something goes wrong.
 
-**Step 8.** Every week, check for campaigns you did not create or sudden huge budgets.
+**Step 8.** In Ads Manager, click **Columns** (above the table) **> Customise columns**, tick Results, Cost per result, Amount spent, Purchase ROAS, CTR (link) and Frequency, then click **Save as preset** and name it "Daily".
 
-**Expected result:** A weekly check is in your calendar. If you find anything: turn it off, remove unknown access, contact Meta support and dispute the charges with your bank.
+**Expected result:** Choosing **Columns > Daily** shows the numbers you check every day.
+
+**Step 9.** Add a weekly 5-minute calendar reminder to look in Ads Manager for campaigns you did not create or budgets that jumped.
+
+**Expected result:** A weekly check is in your calendar. If you ever find something odd: turn it off, remove unknown people in Business Settings, contact Meta support and dispute the charge with your bank.
 
 <!-- do:calendar -->
+
+**Step 10.** Later, once you have a few hundred visitors: in Ads Manager open **Audiences** (All tools > Audiences), click **Create audience > Custom audience > Website** and make "All visitors, last 30 days". Repeat for 180 days and for purchasers.
+
+**Expected result:** The audiences show "Ready" (they can take a few hours to fill).
 
 ## Lesson 7.2: Automated vs manual campaigns
 <!-- stage:attract -->
 
-**Why this matters:** Meta offers two ways to run campaigns. Automated (Advantage+) campaigns let Meta choose budget split, audience and placements; manual campaigns let you control audience, exclusions and placements. Most accounts use both, each for what it does best.
+**Why this matters:** Meta offers two ways to run a sales campaign. **Advantage+** (automated) lets Meta choose who sees the ad, where and how the budget is split. **Manual** lets you choose the audience, exclusions and placements. Start with Advantage+ for new customers; use manual only when you need control.
 
-**Step 1.** Use an automated (Advantage+) Sales campaign for broad cold and mixed audiences.
+**Step 1.** In Ads Manager click **+ Create**, choose **Sales**, click **Continue**, then pick **Advantage+ sales campaign** (on some screens this is an **Advantage+ on** switch near the top, left on).
 
-**Expected result:** Your main prospecting campaign is automated.
+**Expected result:** Your main campaign for new customers is an Advantage+ Sales campaign.
 
 <!-- do:meta-draft -->
 
-**Step 2.** Use manual campaigns for warm audiences and for specific tests where you need control.
+**Step 2.** Only for warm audiences (people who visited or engaged) or a test that needs control, repeat **+ Create > Sales > Continue** and pick **Manual sales campaign** (or switch Advantage+ off).
 
-**Expected result:** Warm and test campaigns are manual, with your chosen audiences.
+**Expected result:** Warm and test campaigns are manual, with the audience you chose.
 
-**Step 3.** In each ad, open **Advantage+ creative** options and turn off automatic carousel or collection conversion if it breaks how your ad looks.
+**Step 3.** At the ad level, scroll to **Advantage+ creative**, click **Edit** and switch off any change that alters how your ad looks (for example automatic carousels or added music).
 
-**Expected result:** Your ads show in the format you designed.
+**Expected result:** The preview on the right shows your ad as you designed it.
 
 ## Lesson 7.3: Ad formats
 <!-- stage:attract -->
@@ -126,23 +136,27 @@
 ## Lesson 7.4: Launching
 <!-- stage:attract -->
 
-**Why this matters:** How you launch decides how fairly ads are tested and whether they keep their likes and comments. Building once, copying with the same post and launching in batches gives every ad a fair start.
+**Why this matters:** How you launch decides how fairly ads are tested and whether they keep their likes and comments. Build new ads in a switched-off campaign, copy them across with the same post, and switch them on together.
 
-**Step 1.** In your build campaign (always switched off), create the new ads.
+**Step 1.** In Ads Manager, open your switched-off build campaign (its On/Off switch is grey), click **Ads**, then **+ Create** and make each new ad.
 
-**Expected result:** New ads sit in the paused build campaign.
+**Expected result:** The new ads sit in the paused build campaign, with "Off" under **Delivery**.
 
 <!-- do:meta-draft -->
 
-**Step 2.** Copy them into the campaigns where they will run and choose **Use existing post** so likes and comments carry over.
+**Step 2.** Tick the new ads, click **Duplicate**, choose the live campaign and ad set they should run in, and click **Duplicate** again.
 
-**Expected result:** Each copy shows the same post ID as the original.
+**Expected result:** Copies of the ads appear in the live ad set, still switched off.
 
-**Step 3.** Switch on the whole batch at once, not one ad at a time.
+**Step 3.** Open each copy, and in the ad's **Ad setup** section choose **Use existing post**, then pick the original ad's post, so likes and comments carry over.
 
-**Expected result:** All new ads start on the same day.
+**Expected result:** Each copy shows the same post as the original. If you do not see **Use existing post**, the original has not been published yet: publish it in the build campaign first.
 
-**Step 4.** Wait 2 to 5 days before judging.
+**Step 4.** Tick all the new copies and switch their On/Off toggles on together, then click **Publish** (bottom right) if Meta asks.
+
+**Expected result:** All the new ads start on the same day, with **Delivery** showing "In review", then "Learning" or "Active".
+
+**Step 5.** Leave them alone for 2 to 5 days before judging.
 
 **Expected result:** You judge on settled numbers, not early noise.
 
@@ -204,7 +218,7 @@
 
 <!-- do:numbers -->
 
-**Step 2.** Check campaign budgets and frequency (how often the same people see your ads) in your saved columns.
+**Step 2.** In Ads Manager set the date to **Last 7 days**, choose **Columns > Daily**, and on the **Campaigns** tab read each campaign's **Amount spent** and **Frequency** (how many times the same person has seen your ads).
 
 **Expected result:** You know whether any campaign is overspending or tiring its audience.
 
@@ -227,7 +241,7 @@
 
 **Why this matters:** Reach potential is how many people an ad can reach before the same people see it twice on average (a frequency of 2). An ad with a tiny reach cannot grow, even if its cost per sale is great.
 
-**Step 1.** In Ads Manager add **Reach** and **Frequency** columns and sort ads by reach over the last 7 days.
+**Step 1.** In Ads Manager open the **Ads** tab, set the date to **Last 7 days**, click **Columns > Customise columns**, tick **Reach** and **Frequency**, click **Apply**, then click the **Reach** column header to sort.
 
 **Expected result:** You can see which ads reach many people and which reach few.
 
@@ -295,7 +309,7 @@
 
 **Expected result:** You have a dollar limit that ends the challenge.
 
-**Step 3.** Raise budgets 10 to 20% a day and track reach growth against spend growth.
+**Step 3.** Each day, click the campaign (Advantage+) or ad set (manual) name, raise the **Daily budget** by 10 to 20%, click **Publish**, and note spend and reach in a sheet.
 
 **Expected result:** You can see whether new spend is finding new people.
 
@@ -351,6 +365,97 @@
 | "Data restrictions applied" | Meta has put your store in a sensitive category. Ask for a review. |
 | Instagram sells worse than Facebook | Usually fine. Judge both together. Only remove a placement with strong proof. |
 | You reached the limit on ads | Archive dead ads. Combine ad sets. |
+
+## Lesson 7.13: Launch your first Meta ad in 30 minutes
+<!-- stage:attract -->
+
+**Why this matters:** Most people stall on their first ad because Ads Manager has hundreds of settings. You need about eight of them. This lesson walks you through a simple, sensible first campaign: one Sales campaign, one ad set, 3 to 5 ads and a budget you have already decided you can afford. Or let Helix build it for you as a paused draft.
+
+**Words you will see:** a **campaign** holds the goal (Sales). An **ad set** holds the budget, who sees it and where. An **ad** is the video or image people see. The **pixel** tells Meta when someone buys. **Advantage+** means Meta makes some choices for you, which works well for most new stores.
+
+**Step 1.** Check your setup: in Events Manager (Ads Manager menu **> All tools > Events Manager**) your pixel shows **Purchase** events from your store. If it does not, do Lesson 7.1 steps 4 to 6 first.
+
+**Expected result:** You can see Purchase events, so Meta can learn who buys.
+
+<!-- do:meta-connect -->
+
+**Step 2.** Decide your daily budget from your profit setup and Lesson 1.9. Under about $5,000 a month in sales: $20 to $50 a day for two weeks. Above that: about 2 times your break-even cost per purchase each day, kept inside your marketing % guide.
+
+**Expected result:** You have one daily budget written down, for example $30 a day.
+
+<!-- do:profit -->
+
+**Step 3.** Get 3 to 5 ads ready: short videos or images of your best seller, each with a different first line or opening (the "hook"), in 4:5 (feed) and 9:16 (Stories and Reels) sizes.
+
+**Expected result:** 3 to 5 files in a folder, plus one main text and one headline you can reuse.
+
+**Step 4.** Want Helix to build it? Click **Do it for me**. Helix creates the campaign, ad set and ads in your own ad account as a **paused** draft: nothing spends until you switch it on. Then skip to Step 9.
+
+**Expected result:** A paused campaign named by Helix appears in Ads Manager, with "Off" under **Delivery**.
+
+<!-- do:meta-draft -->
+
+**Step 5.** Building it yourself: in Ads Manager click **+ Create**, choose **Sales**, click **Continue**, keep **Advantage+ sales campaign** (or the **Advantage+ on** switch), name it "01-Sales-First" and click **Next**.
+
+**Expected result:** The campaign settings page is open with Sales as the goal.
+
+**Step 6.** In the budget box set your daily budget from Step 2, and under **Conversion** check that your pixel is selected and the event is **Purchase**.
+
+**Expected result:** Budget and Purchase event are set. If you see **Conversion location**, choose **Website**.
+
+**Step 7.** Leave the audience on Meta's suggestion and placements on **Advantage+ placements**, then click **Next** to reach the ad.
+
+**Expected result:** You are on the ad screen. If Meta shows a country box, set it to the countries you ship to.
+
+**Step 8.** Upload your 3 to 5 files (as separate ads, or using **Add media** where Meta offers several in one ad), paste your main text and headline, enter your product page link, and check the preview on the right on a phone layout.
+
+**Expected result:** Every ad shows the right image or video, text and link, with nothing cut off.
+
+**Step 9.** Click **Publish** (bottom right). For a Helix draft, open it in Ads Manager, check the budget, ads and link, then switch its On/Off toggle on.
+
+**Expected result:** **Delivery** shows "In review", then "Learning" within a day.
+
+**Step 10.** Leave it alone for 3 days. Then compare cost per purchase with your break-even cost per purchase from your profit setup.
+
+**Expected result:** After 3 days you know whether each ad is under, near or over break-even, and you keep the best ones running.
+
+**Watch out:** Every edit during the first days restarts Meta's learning. Change nothing for 3 days unless something is broken, such as a wrong link.
+
+## Lesson 7.14: Find your way around Ads Manager
+<!-- stage:attract -->
+
+**Why this matters:** Ads Manager looks busy, but you only use a handful of parts. Knowing what each one is for turns it from scary into a simple table you check for 5 minutes a day.
+
+![Find your way around Meta Ads Manager](../../public/guides/meta-0-ads-manager-map.svg)
+
+**The parts that matter:**
+
+1. **Ad account** (top left): make sure it shows your store's account.
+2. **Campaigns, Ad sets, Ads** tabs: three levels, from big (the goal) to small (what people see). Ticking a campaign filters the other tabs to it.
+3. **+ Create**: starts a new campaign.
+4. **Columns**: chooses which numbers the table shows. Save a "Daily" preset (Lesson 7.1).
+5. **On/Off switch**: blue means on and spending; grey means off.
+6. **Delivery**: **Active** (running), **Learning** (Meta is still working out who buys), **In review** (Meta is checking the ad), **Off**, or **Rejected** (click it to see why).
+7. **Results** and **Cost per result**: for a Sales campaign, purchases and the cost of each purchase. **Amount spent** is what you paid. **ROAS** (return on ad spend) is sales divided by spend.
+8. **Date range** (top right): set it to **Last 7 days** for daily checks.
+
+**Step 1.** Open Ads Manager (adsmanager.facebook.com, or Meta Business Suite **> All tools > Ads Manager**) and check the ad account name at the top left.
+
+**Expected result:** You are in your store's ad account.
+
+**Step 2.** Set the date range at the top right to **Last 7 days**.
+
+**Expected result:** The table shows the last week.
+
+**Step 3.** Click **Columns** and choose your **Daily** preset (or **Performance** if you have not made one yet).
+
+**Expected result:** You see Results, Cost per result, Amount spent and ROAS.
+
+**Step 4.** Click the **Campaigns** tab, then click a campaign name to open its edit panel, and look at the three levels (campaign, ad set, ad) without changing anything. Close it with **X** or **Close**.
+
+**Expected result:** You know where the budget, the audience and the ads live.
+
+**Watch out:** Your screen may look a little different, because Meta tests new layouts. Look for the same words: Create, Columns, Delivery, Results. If a menu is missing, try the three-line menu at the top left or search the help centre for its name.
 
 ## Self-check
 

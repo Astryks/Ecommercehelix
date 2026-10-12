@@ -38,12 +38,14 @@ type Mem = {
   lessonSteps: Map<string, Set<string>>;
   course: Map<string, CourseState>;
   profit: Map<string, ProfitInputs>;
+  events: Map<string, ProgressEventRow[]>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
 if (g.__helixMem && !g.__helixMem.profit) g.__helixMem.profit = new Map();
+if (g.__helixMem && !g.__helixMem.events) g.__helixMem.events = new Map();
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map(), course: new Map(), profit: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map(), course: new Map(), profit: new Map(), events: new Map() });
 mem.seasonPlans ??= new Map(); // older hot-reloaded stores
 mem.suppliers ??= new Map();
 mem.stock ??= new Map();
@@ -491,4 +493,69 @@ export async function getProfitSetup(userId: string): Promise<ProfitInputs | nul
 export async function saveProfitSetup(userId: string, p: ProfitInputs) {
   if (!hasDb) return void mem.profit.set(userId, { ...p });
   await prisma.profitSetup.upsert({ where: { userId }, create: { userId, ...p }, update: p });
+}
+
+// ---------- progress history ----------
+export type ProgressEventRow = { kind: string; ref: string; at: string };
+
+/** Record one compact event (a finished goal, a saved profit setup). */
+export async function logEvent(userId: string, kind: string, ref = "") {
+  if (!hasDb) {
+    const l = mem.events.get(userId) ?? [];
+    l.push({ kind, ref, at: new Date().toISOString() });
+    mem.events.set(userId, l);
+    return;
+  }
+  await prisma.progressEvent.create({ data: { userId, kind, ref } });
+}
+
+/** History for the progress page. `since` limits rows (free plans see the last 30 days). Indexed by user. */
+export async function getHistory(userId: string, since: string | null) {
+  const sinceDate = since ? new Date(since + "T00:00:00Z") : undefined;
+  if (!hasDb) {
+    const ev = (mem.events.get(userId) ?? []).filter((e) => !since || e.at >= since);
+    const comps = (mem.completions.get(userId) ?? []).filter((c) => !since || c.completedOn >= since);
+    const steps = [...(mem.lessonSteps.get(userId) ?? [])].map((k) => ({ stepKey: k, at: new Date().toISOString() }));
+    return { joined: null as string | null, events: ev, completions: comps, steps };
+  }
+  const [u, ev, comps, steps] = await Promise.all([
+    prisma.user.findUnique({ where: { id: userId }, select: { createdAt: true } }),
+    prisma.progressEvent.findMany({ where: { userId, ...(sinceDate ? { at: { gte: sinceDate } } : {}) }, orderBy: { at: "asc" }, take: 2000 }),
+    prisma.taskCompletion.findMany({ where: { userId, ...(since ? { completedOn: { gte: since } } : {}) }, select: { taskId: true, completedOn: true }, orderBy: { completedOn: "asc" }, take: 5000 }),
+    prisma.lessonProgress.findMany({ where: { userId, ...(sinceDate ? { doneAt: { gte: sinceDate } } : {}) }, select: { stepKey: true, doneAt: true }, take: 5000 }),
+  ]);
+  return {
+    joined: u?.createdAt.toISOString() ?? null,
+    events: ev.map((e) => ({ kind: e.kind, ref: e.ref, at: e.at.toISOString() })),
+    completions: comps,
+    steps: steps.map((s) => ({ stepKey: s.stepKey, at: s.doneAt.toISOString() })),
+  };
+}
+
+/** Everything Helix stores about a user, for "Download my data". Tokens are never included. */
+export async function exportAccount(userId: string) {
+  if (!hasDb) return { account: mem.users.get(userId) ?? null, days: mem.days.get(userId) ?? [], completions: mem.completions.get(userId) ?? [], course: mem.course.get(userId) ?? null, profit: mem.profit.get(userId) ?? null };
+  const [user, days, completions, lessons, course, profit, goals, settings, products, suppliers, events] = await Promise.all([
+    prisma.user.findUnique({ where: { id: userId }, select: { email: true, name: true, createdAt: true, track: true, country: true, salesTaxMode: true } }),
+    prisma.scorecardDay.findMany({ where: { userId } }),
+    prisma.taskCompletion.findMany({ where: { userId }, select: { taskId: true, completedOn: true } }),
+    prisma.lessonProgress.findMany({ where: { userId }, select: { stepKey: true, doneAt: true } }),
+    prisma.courseState.findUnique({ where: { userId } }),
+    prisma.profitSetup.findUnique({ where: { userId } }),
+    prisma.monthlyGoals.findUnique({ where: { userId } }),
+    prisma.scorecardSettings.findUnique({ where: { userId } }),
+    prisma.productSale.findMany({ where: { userId } }),
+    prisma.supplier.findMany({ where: { userId } }),
+    prisma.progressEvent.findMany({ where: { userId } }),
+  ]);
+  return { exportedAt: new Date().toISOString(), user, days, completions, lessons, course, profit, goals, settings, products, suppliers, events };
+}
+
+/** Permanently delete the user and everything linked to them (all tables cascade from User). */
+export async function deleteAccount(userId: string) {
+  if (!hasDb) {
+    for (const m of Object.values(mem)) (m as Map<string, unknown>).delete(userId);
+    return;
+  }
+  await prisma.user.delete({ where: { id: userId } });
 }

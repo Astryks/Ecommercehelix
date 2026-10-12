@@ -104,7 +104,7 @@ export const GOALS: GoalDef[] = [
     title: "Get your first 100 site visits a day",
     finishLine: "An average of 100 sessions a day over the last 7 days.",
     why: "You need steady visitors before you can learn what makes people buy.",
-    lessons: ["4.2", "21.2", "29.3", "6.1", "6.2", "7.1", "7.4"],
+    lessons: ["7.14", "7.13", "4.2", "21.2", "29.3", "6.1", "6.2", "7.1", "7.4"],
     finish: { kind: "metric", label: "Sessions a day (7-day average)", unit: "count", target: 100, value: (c) => c.sessionsPerDay7, minDays: 5 },
   },
   {
@@ -112,7 +112,7 @@ export const GOALS: GoalDef[] = [
     title: "Get 1,000 site visits a day while ads stay profitable",
     finishLine: "1,000 sessions a day on average over 7 days, with ad spend at or under your target MER.",
     why: "More of the right visitors is the fastest lever, but only if each sale still makes money.",
-    lessons: ["5.1", "5.7", "6.3", "6.12", "7.6", "19.12"],
+    lessons: ["8.13", "8.12", "7.14", "7.13", "5.1", "5.7", "6.3", "6.12", "7.6", "19.12"],
     finish: { kind: "metric", label: "Sessions a day (7-day average)", unit: "count", target: 1000, value: (c) => c.sessionsPerDay7, extra: (c) => c.merPct30 <= c.targetMerPct, minDays: 5 },
   },
   {

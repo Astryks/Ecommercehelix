@@ -51,7 +51,7 @@
 
 **Watch out:** Check this monthly. Other actions such as page views sometimes become primary and inflate results.
 
-**Step 4.** Set up Google Analytics 4 (GA4) with ecommerce events and link it to Google Ads under **Admin > Product links**.
+**Step 4.** In Shopify's **Google & YouTube** app, connect Google Analytics 4 (GA4), then in Google Ads open **Admin > Linked accounts** (sometimes **Product links**) and link GA4.
 
 **Expected result:** GA4 shows purchases, and Google Ads lists GA4 as linked.
 
@@ -59,9 +59,13 @@
 
 **Expected result:** Three audiences show in Audience manager.
 
-**Step 6.** In **Recommendations > Auto-apply**, turn off auto-applied recommendations, and name campaigns with the pattern from Lesson 6.7.
+**Step 6.** In Google Ads open **Recommendations**, click **Auto-apply** (top right) and untick every auto-applied recommendation.
 
-**Expected result:** Google cannot change campaigns without your click, and names are consistent.
+**Expected result:** Google cannot change your campaigns without your click.
+
+**Step 7.** Rename each campaign with the pattern from Lesson 6.7 (click the campaign name, then the pencil next to it).
+
+**Expected result:** Every campaign name shows its number, type and job.
 
 ## Lesson 8.2: Product data
 <!-- stage:attract -->
@@ -274,6 +278,88 @@
 **Step 3.** Confirm your brand exclusions are still in place, and check search terms and negatives twice a week instead of once.
 
 **Expected result:** AI expansion does not spend on your brand or on junk searches.
+
+## Lesson 8.12: Launch your first Google campaign in 45 minutes
+<!-- stage:attract -->
+
+**Why this matters:** Google Ads tries to rush new owners into a guided "smart" campaign that spends money in places you cannot see. This lesson skips that and sets up the two campaigns most Shopify stores should start with: brand search (cheap, protects your name) and Performance Max fed by your products. Helix does not connect to Google Ads yet, so you follow these steps yourself.
+
+**Words you will see:** **Merchant Center** holds your product list (the **feed**). **Performance Max** (PMax) shows your products across Shopping, Search, YouTube and Gmail. **Conversion** means a purchase Google can count. **Impression share** is how often your ad shows when someone searches your name.
+
+**Step 1.** Go to ads.google.com and click **Start now**. When it asks you to create a campaign, look for **Switch to Expert Mode** or **Create an account without a campaign** (small link, usually at the bottom) and click it.
+
+**Expected result:** You are creating an account, not a campaign.
+
+**Step 2.** Choose your country, time zone and currency carefully, untick personalised strategist calls and promotional emails, then click **Submit** or **Continue**.
+
+**Expected result:** The account is created. Time zone and currency cannot be changed later, so double-check them first.
+
+**Step 3.** Add a payment method under **Billing** (the menu on the left, or the tools icon on older screens).
+
+**Expected result:** Billing shows a saved card or bank account.
+
+**Step 4.** In Shopify, open **Apps**, install **Google & YouTube**, click **Get started** and connect your Google account, Merchant Center and Google Ads account. If it offers to create a campaign, skip it.
+
+**Expected result:** The app shows green ticks for your accounts, products syncing, **Conversion measurement** and **Conversion event settings**.
+
+**Step 5.** In Google Ads open **Goals > Conversions > Summary**, click **Edit goal** on Purchases and check Purchase is **Primary**. Set any other actions (page view, add to cart) to **Secondary** and save.
+
+**Expected result:** Only Purchase counts as a result, so Google optimises for sales.
+
+**Step 6.** Build brand search: click **+ Create > Campaign**, choose **Sales** with the **Purchase** goal, then **Search**, and name it "01-Search-Brand".
+
+**Expected result:** A new Search campaign is open.
+
+**Step 7.** Under **Bidding**, choose **Target impression share**, set **Anywhere on results page** to about 90% and a **Maximum CPC bid limit** (the most you will pay per click) of about $0.50 to $1.
+
+**Expected result:** Your ad shows for most searches of your name at a capped cost per click.
+
+**Step 8.** Under **Networks**, untick **Search partners** and **Display Network**. Under **Locations**, add the countries you ship to and, in **Location options**, choose **Presence** (people in or regularly in your locations).
+
+**Expected result:** The campaign runs only on Google search, for people where you ship.
+
+**Step 9.** Add your brand name and misspellings as keywords (`[your brand]` and `"your brand"`), write one responsive search ad with 10 to 15 headlines and 4 descriptions, set a daily budget of $5 to $10 and click **Publish campaign**.
+
+**Expected result:** Brand search is live with status "Eligible" (it may say "Under review" for a few hours).
+
+**Step 10.** Build Performance Max: **+ Create > Campaign > Sales > Performance Max**, choose your Merchant Center feed, set **Bidding** to **Conversion value** with no target yet, and a daily budget from your marketing guide (Lesson 1.9).
+
+**Expected result:** A Performance Max campaign is connected to your products with a budget.
+
+**Step 11.** In the asset group, remove extra headlines, images, videos and sitelinks where Google lets you (click **Edit**, then the **x** next to each), and in campaign settings add your brand name under **Brand exclusions**. Click **Publish campaign**.
+
+**Expected result:** Performance Max runs mainly from your product feed and leaves brand searches to the brand campaign.
+
+**Step 12.** Leave both campaigns for 7 days, then compare spend, purchases and ROAS with your break-even ROAS from your profit setup.
+
+**Expected result:** You know whether each campaign is above or below break-even, and Lesson 8.8 shows what to change.
+
+**Watch out:** Google often suggests "recommendations" that raise budgets or add broad keywords. Do not apply them without reading each one, and keep auto-apply off (Lesson 8.1).
+
+## Lesson 8.13: Find your way around Google Ads
+<!-- stage:attract -->
+
+**Why this matters:** Google Ads hides a lot behind menus. You only need a few screens: campaigns, search terms, conversions and recommendations.
+
+**The parts that matter:** the **account picker** (top), the left menu with **Campaigns**, **Goals** (conversions), **Insights and reports** (search terms), **Tools** and **Billing**; the **date range** (top right); the table with **Cost**, **Conversions**, **Conv. value** and **Conv. value / cost** (this is ROAS); and the **Status** column (**Eligible** means running, **Limited** means held back by budget or bids).
+
+**Step 1.** Open ads.google.com and check the account name and ID (top of the page) is your store's account.
+
+**Expected result:** You are in the right account.
+
+**Step 2.** Click **Campaigns** in the left menu and set the date range (top right) to **Last 7 days**.
+
+**Expected result:** The table shows last week's campaigns.
+
+**Step 3.** Click **Columns** (the bars icon above the table), add **Conv. value** and **Conv. value / cost**, and click **Apply**.
+
+**Expected result:** You can see sales and ROAS for each campaign.
+
+**Step 4.** Click **Insights and reports > Search terms** to see what people typed before clicking your ads.
+
+**Expected result:** You know where to find wasted searches each week.
+
+**Watch out:** Google moves menus often. If you cannot find a page, use the search box at the top of Google Ads and type its name (for example "search terms").
 
 ## Self-check
 

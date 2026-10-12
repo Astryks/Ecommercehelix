@@ -33,10 +33,16 @@ export default function About() {
       <main className="mx-auto max-w-3xl px-5 py-16">
         <Block title="Why the name">
           <p>
-            A helix is a spiral, the shape of a corkscrew or a spiral staircase. Each turn takes you a little higher than the last. The double helix of DNA carries the instructions for growth in every living thing.
+            Helix comes from the double helix: two spiral strands, like a twisted ladder, wound around each other inside almost every cell of your body. That spiral is DNA, the instruction manual for growth.
           </p>
           <p>
-            That is what we want Helix to be for your store: clear instructions for growth, and a staircase you climb a little higher every day, step by step.
+            Your body grows the same way every living thing does. A cell divides to make a new cell. Before it divides, it has to make a copy of its DNA, so the new cell knows exactly what to do. The double helix is what makes that copying so reliable. The two strands unzip, and each one becomes the template for building a new partner strand. One spiral becomes two matching spirals, and every new cell starts with the same instructions. Repeat that faithfully, again and again, and a single cell grows into a whole living body.
+          </p>
+          <p>
+            A business grows in a similar way. Find what works, write it down, and copy it reliably every day: the ad that sells, the email that brings customers back, the habit of checking your numbers each morning. Small things done well and repeated, so the growth builds on itself.
+          </p>
+          <p>
+            <strong>You are the owner.</strong> It is your business, your vision and your call. Helix is simply a tool that puts you in control: it shows you the numbers, lays out the next step and does the busy work when you ask. The point is not just a bigger store. It is more freedom with your time and your choices, more room to create beautiful products for the world, and a clearer path to bringing your vision to life.
           </p>
         </Block>
 

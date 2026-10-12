@@ -48,7 +48,7 @@ const AGENCY_ROWS = [
 const FAQ = [
   { q: "Who is Helix for?", a: "Helix is built for stores doing $10k to $100k a month that want to reach a $1M year, profitably. That is where it adds the most. It also works from your very first sale, and keeps helping as you scale toward $10M a year. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
   { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
-  { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds campaigns inside your own Meta or Google account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. Prefer to build it yourself? Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
+  { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds Meta campaigns inside your own ad account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. For Google Ads, and if you prefer to build it yourself, Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
   { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
   { q: "How does the AI balance work?", a: "Paid plans include a monthly AI allowance. Extra usage comes from a prepaid balance you top up. When it reaches $0, AI actions stop. You are never billed beyond what you loaded." },
   { q: "I have never run ads. Is this for me?", a: "Yes. Every task is written in plain English with numbered steps and simple drawings that show where to click. Any tricky word is explained in one line, like ROAS: how many dollars of sales you get for each $1 of ads." },
@@ -187,6 +187,9 @@ export default function Home() {
               </div>
               <p className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">Let&apos;s grow a little <span className="italic text-cyan-300">every day.</span></p>
             </div>
+            <p className="mx-auto mt-8 max-w-3xl text-center text-[15px] leading-7 text-slate-600">
+              <strong className="text-slate-900">Why Helix?</strong> Named after the double helix of DNA, the instruction manual that lets living things grow by copying what works, faithfully, cell by cell. You own the business; Helix is the tool that helps you copy what works every day, so growth builds on itself. <Link href="/about" className="font-medium text-cyan-700 underline">The story behind the name</Link>
+            </p>
           </div>
         </section>
 

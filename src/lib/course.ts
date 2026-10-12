@@ -6,7 +6,7 @@ import { addDays, isoDay } from "./dates";
 import { metricsFor } from "./analytics";
 import { adminDueSoon } from "./business";
 import { nextTasks, seasonalAlerts } from "./seasons";
-import { getAccount, getCompletions, getCourseState, getLessonSteps, getProfitSetup, getRawDays, getSettings, saveCourseState } from "./repo";
+import { getAccount, getCompletions, getCourseState, getLessonSteps, getProfitSetup, getRawDays, getSettings, logEvent, saveCourseState } from "./repo";
 import {
   buildDays, canonicalGoalId, currentDay, goalTier, finishStatus, goalsFor, nextGoalId, toCourseTrack, slotDated,
   type CourseDay, type CourseState, type CourseTrack, type DatedTask, type FinishCtx, type FinishStatus, type GoalDef, type GoalTier, type LessonInfo,
@@ -115,6 +115,7 @@ export async function getCourse(userId: string, today = isoDay()): Promise<Cours
     const next = nextGoalId(state.track, doneGoals);
     state = { ...state, doneGoals, goalId: next ?? "", celebrate: g.id, baselineAov: ctxFor(state).aov7 };
     changed = true;
+    await logEvent(userId, "goal_done", g.id);
   }
   if (changed) await saveCourseState(userId, state);
 

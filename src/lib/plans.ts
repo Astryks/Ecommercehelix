@@ -54,7 +54,7 @@ export const PLANS: {
       "Everything in Starter",
       "The full course: Grow and Run goals (margin, returning customers, $100k months, scaling)",
       "90-day plans, weekly meeting, playbooks and handing work to a team",
-      "Meta and Google together",
+      "Google Ads guided setup: Performance Max and Search, step by step (Google connection coming soon)",
       "Email and SMS flows drafted and set up after approval",
       "Weekly agency-style report",
       "Site edit drafts with preview (beta)",

@@ -1,17 +1,23 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 9 AM (Sydney)._
+_Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 
 ## At a glance
 
 - **Live:** https://ecommercehelix.com (Vercel project `ecommercehelix`, Next.js 16). `www` redirects to the apex. Every push to `main` on GitHub (`Astryks/Ecommercehelix`) deploys to production.
 - **Database:** Neon Postgres via Prisma. Schema changes are additive only and are applied to the production database before the code is pushed. Note: this build machine cannot reach Neon's port 5432, so changes are applied with `prisma migrate diff` (old schema to new schema, no drops allowed) run over Neon's HTTPS driver with the unpooled URL pulled from Vercel into a temp file that is deleted straight after.
 - **Sign-in:** Resend email magic links are live. The demo login is on (each demo sign-in is a fresh, isolated test account). Google sign-in is optional and needs Sid's OAuth keys.
-- **Checks before every push:** `npm test` (vitest, 166 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
+- **Checks before every push:** `npm test` (vitest, 168 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
 ## What is new since 6 Oct 2026
+
+**The name, simpler Meta ads, honest Google (13 Oct, late morning).**
+- About now tells the story behind the name: the double helix of DNA, how cells copy it to grow, and how a business grows by copying what works every day, with you as the owner and Helix as your tool. A short version sits on the home page.
+- Meta lessons rewritten to one action per step with exact Ads Manager click paths and what to do if the screen looks different: 7.1, 7.2, 7.4, 7.6, 7.7, 7.10 and 20.3. New 7.13 "Launch your first Meta ad in 30 minutes" (setup check, budget from the marketing guide, 3 to 5 ads, Advantage+ Sales, or Do it for me as a paused draft you switch on) and 7.14 "Find your way around Ads Manager" with an annotated drawing. Both open the first traffic goals of the course.
+- Google: guidance only, no Google Ads connection yet. Lesson 20.4 rewritten as an 11-step brand Search and Performance Max setup with click paths; 8.1 split into single actions. The Growth plan now says "Google Ads guided setup ... (Google connection coming soon)" instead of "Meta and Google together".
+- **Downgrades (Sid decided):** a user who moves to Free keeps an existing Meta connection and any prep plans already added. Only new Meta connections and new prep plans need a paid plan.
 
 **Profit first, marketing guide, free and paid (13 Oct, later).**
 - **New course order.** Goal 1 on every track is now **Set up your profit dashboard**, then **Fill in your numbers 7 days in a row**, then **Learn the numbers that run your store** (break-even, target MER, marketing spend, monthly goals), then Attract, Convert, Grow and Run. Old progress on the former first goal carries over.
@@ -29,6 +35,10 @@ _Last updated: 13 Oct 2026, about 9 AM (Sydney)._
 **Growth dashboard and key metrics (13 Oct).** `/dashboard/growth`: revenue, costs and net profit by Day, Week, Month and Year, change against the previous period in % and $, profit year to date, margin against benchmark bands, a profit trend line and a plain line such as "Profit is up 57% on last week ($396 more)". `/dashboard/metrics`: a 14-card grid with a good number for each, and a clear label on every card: You fill this in (with exactly where to find the number), Helix fills this automatically, or Automatic once you connect Meta (with a Connect button). The daily form is simpler: grouped fields (Shopify, ads, costs, more), examples and where to find each number, blank costs estimated from recent days, and calculated values shown read-only. New optional add-to-cart field (`ScorecardDay.addToCarts`).
 
 **6 Oct (launch day):** production went live; lessons in steps (all 260, Do it for me, Guide me, glossary tooltips); sharper messages and the goals ladder; Black Friday all year; Attract, Convert, Grow tagging; Run your business modules 23 to 28; GST/VAT setting; Suppliers and stock; restyle; Shopify store setup module and the 28-day Just starting track; isolated demo login; visual Dashboard; calendar by country with .ics; Meta integration; the first web app, curriculum, audit engine, email automation and product docs.
+
+**Accounts and Your progress (13 Oct).** Owners create an account with an emailed sign-in link (Auth.js plus Resend; Google sign-in optional); the account row is created on first sign-in. Settings now has **Download my data** (`/api/account/export`, one JSON file, no tokens) and **Delete my account** (type DELETE; every table cascades). New **Your progress** page (`/dashboard/progress`): goals finished with dates, tasks done, current and best streak, profit trend (by month since joining), a monthly recap and a day-by-day timeline of tasks, lesson steps and goals. Free shows the last 30 days, paid plans the full history. Built from existing task, lesson-step and daily-number tables plus one tiny additive `ProgressEvent` table (goal finished, profit set up), indexed on user and time and applied to the database first. No new services, no cron. Code: `src/lib/history.ts`, `src/app/dashboard/progress`, tests in `tests/history.test.ts`.
+
+**Running costs (estimate, Oct 2026 list prices).** 100 users: about $0 to $20 a month (Neon free, Vercel Pro $20 if on Pro, Resend free, AI under $5). 1,000 users: about $45 to $90 (Neon Launch about $19 to $30, Vercel Pro $20, Resend Pro $20 once sign-in links pass 3,000 a month, AI about $10 to $30 if insights are cached daily). 10,000 users: about $250 to $600 (Neon Scale or higher compute about $70 to $200, Vercel Pro plus usage $20 to $150, Resend about $35 to $90 for 50k to 100k emails, AI $100 to $300). Risks: Neon free tier caps storage at 0.5 GB and compute hours; Resend free is 3,000 emails a month and 100 a day, so sign-in links alone can hit it; Vercel Hobby is not for commercial use. History adds roughly 100 bytes per event, so 10,000 users is a few MB a year.
 
 ## Commits since 6 Oct 2026
 
@@ -109,7 +119,8 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 | Stripe billing | Built: Checkout and signed webhook | Secret key, webhook secret and price IDs for Starter and Growth |
 | Google sign-in | Built, optional | `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET` |
 | Shopify | Stock sync stubbed; sales, sessions and add-to-cart are typed in | Shopify app and API access to sync automatically |
-| Google Ads, TikTok, Klaviyo | Example data only | API access later |
+| Google Ads | Guidance only: lessons 8.1 to 8.11 and 20.4; example rows in Your ads | Developer token, OAuth client with the adwords scope and verification, manager account |
+| TikTok, Klaviyo | Example data only | API access later |
 
 ## Next steps and blockers (in priority order)
 
@@ -118,7 +129,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 3. **Logo redesign: pending Sid's pick.** Recommendation: a compounding-curve double helix, with a minimal tile favicon.
 4. **Shopify sync.** Fills sessions, sales and add-to-cart automatically, so more course finish lines check themselves.
 5. **Course polish.** Course-specific Do it for me actions for the new Module 29 lessons; a weekly email that recaps the current goal; let owners pick a goal out of order; a finish-line history.
-6. **Plan changes for downgrades:** a user who drops to Free keeps their Meta connection and existing prep plans; decide whether to pause syncing.
+6. **Google Ads connection** (not built): needs a Google Ads API developer token (apply in a manager account, basic access review), a Google Cloud OAuth client with the `adwords` scope and app verification, a manager (MCC) account to link customers, then sync of spend and conversions and paused-draft builds like Meta.
 7. **Decide when to switch off the demo login** on production.
 8. **Google sign-in** if wanted.
 9. **Google Ads, TikTok and Klaviyo connections** to replace example data.

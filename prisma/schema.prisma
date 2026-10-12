@@ -41,6 +41,7 @@ model User {
   lessonProgress LessonProgress[]
   courseState    CourseState?
   profitSetup    ProfitSetup?
+  progressEvents ProgressEvent[]
   stockSeeded    Boolean            @default(false) // example suppliers and stock added once
 }
 
@@ -364,4 +365,16 @@ model ProfitSetup {
   ordersPerMonth    Int      @default(0)
   updatedAt         DateTime @updatedAt
   user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+/// Compact progress events for the history page (goal finished, profit setup saved). Ticks live in TaskCompletion and LessonProgress.
+model ProgressEvent {
+  id     String   @id @default(cuid())
+  userId String
+  kind   String // "goal_done" | "profit_setup"
+  ref    String   @default("")
+  at     DateTime @default(now())
+  user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, at])
 }
