@@ -2,7 +2,7 @@
 
 **How to grow an online store a little every day, and let the gains multiply.**
 
-This is the operating system behind Ecommerce Helix. The app turns it into three tasks a day, but it also works on paper. Every number below is a starting default. Helix tunes it to your store once it has your data.
+This is the operating system behind E-commerce Helix. The app turns it into three tasks a day, but it also works on paper. Every number below is a starting default. Helix tunes it to your store once it has your data.
 
 ---
 

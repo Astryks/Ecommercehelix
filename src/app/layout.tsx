@@ -6,9 +6,9 @@ const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const serif = Source_Serif_4({ variable: "--font-serif-display", subsets: ["latin"], axes: ["opsz"] });
 
 export const metadata: Metadata = {
-  title: { default: "Ecommerce Helix: Grow your e-commerce business a little every day", template: "%s · Ecommerce Helix" },
+  title: { default: "E-commerce Helix: Grow your e-commerce business a little every day", template: "%s · E-commerce Helix" },
   description:
-    "Ecommerce Helix audits your store, gives you three high-impact tasks a day, and does the work when you approve. Grow your e-commerce business a little every day.",
+    "E-commerce Helix audits your store, gives you three high-impact tasks a day, and does the work when you approve. Grow your e-commerce business a little every day.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
 };
 

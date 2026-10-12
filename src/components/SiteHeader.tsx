@@ -6,7 +6,7 @@ export function SiteHeader({ dark = false }: { dark?: boolean }) {
   return (
     <header className={dark ? "relative z-20" : "relative z-20 border-b border-slate-200 bg-paper/90 backdrop-blur"}>
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Main">
-        <Link href="/" aria-label="Ecommerce Helix home">
+        <Link href="/" aria-label="E-commerce Helix home">
           <Logo dark={dark} />
         </Link>
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">

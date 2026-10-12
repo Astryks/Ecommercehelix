@@ -1,4 +1,4 @@
-# Ecommerce Helix pricing and unit economics
+# E-commerce Helix pricing and unit economics
 
 **Rule:** Helix never loses money on any step. Free usage is hard-capped. Paid AI usage is either inside a plan allowance priced into the subscription, or prepaid in a wallet at 2x provider cost. Ad spend always runs on the customer's own ad accounts and payment methods.
 

@@ -90,7 +90,7 @@ class G:
                 leg.append(f'<text x="920" y="{y + j * 19}" font-size="14" fill="#e2e8f0">{escape(ln)}</text>')
             y += 19 * len(wrap(s, 34)) + 18
         foot = [f'<text x="24" y="668" font-size="12" fill="#64748b">{escape(note)}</text>',
-                '<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>']
+                '<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">E-commerce Helix guide · not a real screenshot</text></svg>']
         return "\n".join(head + self.p + leg + foot)
 
 
@@ -346,7 +346,7 @@ save("shopify-2-free-shipping", g, [
     "Press Done, then Save."])
 
 # ---------- Helix 1: daily update ----------
-g = G("Update yesterday in Helix", "Ecommerce Helix", "#0b1f3a")
+g = G("Update yesterday in Helix", "E-commerce Helix", "#0b1f3a")
 g.rect(20, 60, 160, 580, "#0b1f3a", "none", 0)
 for i, t in enumerate(["Today", "Insights", "Approvals", "Scorecard", "Campaigns"]):
     g.text(40, 100 + i * 36, t, 13, 700 if t == "Today" else 400, "#fff" if t == "Today" else "#94a3b8")

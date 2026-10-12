@@ -13,7 +13,7 @@ Graph API and Marketing API version used: **v26.0** (released 29 July 2026). Cha
 1. Go to [developers.facebook.com](https://developers.facebook.com/) and log in with the Facebook account that is an admin of your business portfolio.
 2. Click **My Apps**, then **Create app**.
 3. Pick the use case **Create and manage ads with the Marketing API**. If asked for an app type, pick **Business**.
-4. Name it "Ecommerce Helix" and add your contact email.
+4. Name it "E-commerce Helix" and add your contact email.
 5. Connect it to your business portfolio (the one that owns ecommercehelix.com).
 6. In the app dashboard, add the product **Facebook Login for Business**.
 

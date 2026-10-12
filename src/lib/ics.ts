@@ -26,7 +26,7 @@ export function buildIcs(today: string, country: Country, opts: { baseUrl: strin
   const name = COUNTRIES.find((c) => c.id === country)?.name ?? country;
   const stamp = opts.stamp ?? new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z");
   const L = [
-    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Ecommerce Helix//Key retail dates//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//E-commerce Helix//Key retail dates//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
     `X-WR-CALNAME:${esc(`Helix key retail dates (${name})`)}`, "REFRESH-INTERVAL;VALUE=DURATION:P1D", "X-PUBLISHED-TTL:P1D",
   ];
   const ev = (uid: string, date: string, summary: string, desc: string) => {

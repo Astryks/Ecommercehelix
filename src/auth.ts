@@ -17,7 +17,30 @@ export const devLoginEnabled = authProviders.dev;
 
 const providers: NextAuthConfig["providers"] = [];
 if (hasGoogle) providers.push(Google);
-if (hasEmail) providers.push(Resend({ from: process.env.EMAIL_FROM ?? "Helix <hello@example.com>" }));
+/** Sender shows the brand name; only the address comes from EMAIL_FROM. */
+const BRAND = "E-commerce Helix";
+const fromAddress = (process.env.EMAIL_FROM ?? "hello@example.com").match(/<([^>]+)>/)?.[1] ?? (process.env.EMAIL_FROM ?? "hello@example.com").trim();
+const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+if (hasEmail)
+  providers.push(
+    Resend({
+      from: `${BRAND} <${fromAddress}>`,
+      async sendVerificationRequest({ identifier, url, provider }) {
+        const res = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${provider.apiKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            from: provider.from,
+            to: identifier,
+            subject: `Sign in to ${BRAND}`,
+            text: `Sign in to ${BRAND}\n\n${url}\n\nIf you did not ask for this email, you can ignore it.`,
+            html: `<div style="font-family:system-ui,sans-serif;max-width:480px;margin:auto;padding:24px"><h1 style="font-size:20px">Sign in to ${BRAND}</h1><p><a href="${esc(url)}" style="display:inline-block;background:#0891b2;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none">Sign in</a></p><p style="color:#64748b;font-size:13px">If you did not ask for this email, you can ignore it.</p></div>`,
+          }),
+        });
+        if (!res.ok) throw new Error(`Resend error ${res.status}`);
+      },
+    }),
+  );
 if (devLoginEnabled)
   providers.push(
     Credentials({

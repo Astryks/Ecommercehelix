@@ -2,8 +2,8 @@ import { useId } from "react";
 
 type Props = { size?: number; className?: string; title?: string; dark?: boolean };
 
-/** Original Ecommerce Helix mark: two intertwined strands joined by rungs. */
-export function HelixMark({ size = 36, className, title = "Ecommerce Helix", dark = false }: Props) {
+/** Original E-commerce Helix mark: two intertwined strands joined by rungs. */
+export function HelixMark({ size = 36, className, title = "E-commerce Helix", dark = false }: Props) {
   const id = useId().replace(/:/g, "");
   const a = `hxA${id}`;
   const b = `hxB${id}`;

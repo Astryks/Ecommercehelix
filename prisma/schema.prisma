@@ -1,4 +1,4 @@
-// Ecommerce Helix minimal schema (v1). Run: npx prisma migrate dev
+// E-commerce Helix minimal schema (v1). Run: npx prisma migrate dev
 generator client {
   provider = "prisma-client-js"
 }

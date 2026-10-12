@@ -1,4 +1,4 @@
-# Ecommerce Helix: MVP build plan (6 weeks)
+# E-commerce Helix: MVP build plan (6 weeks)
 
 **Goal:** a responsive web app where a store owner pastes a URL, gets an audit and score, sees a Today screen with up to three tasks, can approve "Do it for me" actions for Meta (first) and Google, and pays through Stripe. Docs-first, then a thin vertical slice, then connectors.
 

@@ -1,10 +1,10 @@
-# Ecommerce Helix
+# E-commerce Helix
 
 **ecommercehelix.com**
 
 *Grow your e-commerce business a little every day.*
 
-Ecommerce Helix is a growth copilot for online store owners. You paste your store URL. Helix keeps auditing the store, the ad accounts, email and social profiles, and connects the dots (is it the ad, the page, the offer or the checkout?). Every day you get **one short lesson, one topic and one clear action**, plus up to two things Helix noticed. You can do it yourself with a step-by-step guide, or say **I'll do it for you**. Helix then prepares the work and asks for your approval. In ad accounts it builds **paused drafts** and you press Launch: Helix never turns on spend.
+E-commerce Helix is a growth copilot for online store owners. You paste your store URL. Helix keeps auditing the store, the ad accounts, email and social profiles, and connects the dots (is it the ad, the page, the offer or the checkout?). Every day you get **one short lesson, one topic and one clear action**, plus up to two things Helix noticed. You can do it yourself with a step-by-step guide, or say **I'll do it for you**. Helix then prepares the work and asks for your approval. In ad accounts it builds **paused drafts** and you press Launch: Helix never turns on spend.
 
 Think of it as a good ad agency account manager who never sleeps. It watches your numbers, tells you what to fix first, shows you which ad formats are working right now, and keeps a roadmap of what it can take off your plate. It does not take over without asking. You keep oversight and the final call on every change, every dollar of ad spend and every email that goes out.
 
@@ -162,4 +162,4 @@ See [STATUS.md](STATUS.md) for what is stubbed and the open questions.
 
 ## Independence note
 
-Ecommerce Helix playbooks are original operating procedures written for this product. They are based on widely used e-commerce growth practice (unit economics, creative testing, conversion rate optimisation, lifecycle marketing). They do not reproduce or republish any third-party course, coaching program or paid community content.
+E-commerce Helix playbooks are original operating procedures written for this product. They are based on widely used e-commerce growth practice (unit economics, creative testing, conversion rate optimisation, lifecycle marketing). They do not reproduce or republish any third-party course, coaching program or paid community content.

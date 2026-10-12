@@ -13,6 +13,8 @@ _Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 
 ## What is new since 6 Oct 2026
 
+**Brand spelling (13 Oct).** The brand is written **E-commerce Helix** everywhere users see it (titles, metadata, header, footer, About, home, guides, sign-in emails, docs). The domain, repo and code names stay `ecommercehelix`. Sign-in emails now use our own template: subject "Sign in to E-commerce Helix", sender name "E-commerce Helix" (address still from `EMAIL_FROM`). **For Sid:** in Stripe, set the public business name to "E-commerce Helix" and upload the logo and brand colour (Settings, Business, Public details and Branding) so Checkout, the portal and receipts match.
+
 **Stripe billing, test mode live (13 Oct).**
 - Checkout is on in Stripe **test mode** (sandbox "E-commerce Helix sandbox", AU, AUD). Products: Helix Starter A$29 a month (`helix_starter_monthly`) and Helix Growth A$59 a month (`helix_growth_monthly`). Prices show as A$ on the pricing section and billing page.
 - Webhook: `https://ecommercehelix.com/api/stripe/webhook` for checkout.session.completed, customer.subscription.created, updated and deleted, invoice.payment_failed and invoice.paid. Plan and status update in the `Subscription` table.
@@ -153,7 +155,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 
 ## Decisions made
 
-- Name: **Ecommerce Helix** (ecommercehelix.com). Tagline: "Grow your e-commerce business a little every day".
+- Name: **E-commerce Helix** (ecommercehelix.com). Tagline: "Grow your e-commerce business a little every day".
 - Positioning: a growth copilot that behaves like a head of growth by your side. Every day: one lesson, one topic, one action, plus up to two insights. Ask before acting.
 - Execution model (Sid, 6 Oct 2026): **Draft & you launch** by default. Helix pushes campaigns into the user's own Meta/Google account as paused drafts; the user presses Launch. Budget edits on live campaigns are always made by the user. **Guide me** mode for users without connected accounts. See docs/execution-model.md.
 - Proactive audits (site, ads, email, social) with cross-diagnosis rules feed Today and Insights. See docs/audit-engine.md.

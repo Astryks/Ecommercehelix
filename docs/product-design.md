@@ -1,4 +1,4 @@
-# Ecommerce Helix: product design
+# E-commerce Helix: product design
 
 Helix should feel like a great agency account manager: it knows your numbers, tells you the one thing to do next, explains why in plain words, offers to do it for you, and never acts without asking. This doc covers the experience, the screens, the data model and the agent architecture for the v1 web app (responsive, desktop and mobile web), with PWA push approvals in month 2.
 
@@ -30,7 +30,7 @@ Helix should feel like a great agency account manager: it knows your numbers, te
 
 ```
 +--------------------------------------------------------------+
-|  ECOMMERCE HELIX                                             |
+|  E-COMMERCE HELIX                                             |
 |                                                              |
 |   Your growth copilot. Paste your store and get a plan.      |
 |                                                              |

@@ -4,7 +4,7 @@
 <rect x="20" y="20" width="820" height="620" rx="14" fill="#fff" stroke="#cbd5e1"/>
 <rect x="20" y="20" width="820" height="40" rx="14" fill="#f1f5f9"/><rect x="20" y="46" width="820" height="14" fill="#f1f5f9"/>
 <circle cx="44" cy="40" r="6" fill="#fca5a5"/><circle cx="64" cy="40" r="6" fill="#fcd34d"/><circle cx="84" cy="40" r="6" fill="#86efac"/>
-<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">Ecommerce Helix (simplified drawing)</text>
+<text x="430" y="45" font-size="13" fill="#64748b" text-anchor="middle">E-commerce Helix (simplified drawing)</text>
 <rect x="20" y="60" width="160" height="580" rx="0" fill="#0b1f3a" stroke="none" stroke-width="1"/>
 <text x="40" y="100" font-size="13" font-weight="700" fill="#fff" text-anchor="start">Today</text>
 <text x="40" y="136" font-size="13" font-weight="400" fill="#94a3b8" text-anchor="start">Insights</text>
@@ -69,4 +69,4 @@
 <text x="920" y="297" font-size="14" fill="#e2e8f0">Read your profit and the one line</text>
 <text x="920" y="316" font-size="14" fill="#e2e8f0">that tells you what to do today.</text>
 <text x="24" y="668" font-size="12" fill="#64748b">This is Helix itself. Your numbers stay private to your account.</text>
-<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">Ecommerce Helix guide · not a real screenshot</text></svg>
+<text x="1176" y="668" font-size="12" fill="#64748b" text-anchor="end">E-commerce Helix guide · not a real screenshot</text></svg>

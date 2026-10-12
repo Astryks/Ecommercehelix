@@ -26,7 +26,7 @@ export default function About() {
         <div className="mx-auto max-w-3xl px-5 pb-20 pt-16 text-center">
           <HelixMark size={84} className="mx-auto" />
           <p className="eyebrow mt-8">About</p>
-          <h1 className="mt-3 text-5xl text-slate-900 sm:text-6xl">About Ecommerce Helix</h1>
+          <h1 className="mt-3 text-5xl text-slate-900 sm:text-6xl">About E-commerce Helix</h1>
           <p className="mt-5 font-display text-xl italic text-slate-600">Grow your e-commerce business a little every day</p>
         </div>
       </div>
