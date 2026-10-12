@@ -34,7 +34,8 @@ _Last updated: 13 Oct 2026, about 9 AM (Sydney)._
 
 | Commit | Date | What |
 |---|---|---|
-| (this commit) | 13 Oct | Profit setup and new goal order, marketing % guide, free and paid gating, gap lessons, anchor redirects, Black Friday catch-up, shorter days, STATUS |
+| (this commit) | 13 Oct | STATUS: commit hashes and deploy check |
+| 8854b87 | 13 Oct | Profit setup and new goal order, marketing % guide, free and paid gating, gap lessons, anchor redirects, Black Friday catch-up, shorter days, STATUS |
 | a1e4f7b | 13 Oct | STATUS rewrite; /course sign-in redirect returns to /course |
 | 39d8e78 | 13 Oct | The Helix Course |
 | 6ecebdc | 13 Oct | Content audit, 9 merged lessons, 26 renamed titles, Module 29 |
