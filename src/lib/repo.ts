@@ -1,6 +1,7 @@
 import "server-only";
 import { canonicalStepKeys } from "./lesson-alias";
 import { toCourseTrack, type CourseState } from "./course-plan";
+import type { ProfitInputs } from "./profit-setup";
 import { hasDb, prisma } from "./db";
 import type { PlanId } from "./plans";
 import { exampleDays, exampleProducts, type DayInput, type ProductLine, type Settings, NUM_FIELDS } from "./scorecard";
@@ -36,11 +37,13 @@ type Mem = {
   goals: Map<string, Goals>;
   lessonSteps: Map<string, Set<string>>;
   course: Map<string, CourseState>;
+  profit: Map<string, ProfitInputs>;
 };
 const g = globalThis as unknown as { __helixMem?: Mem };
+if (g.__helixMem && !g.__helixMem.profit) g.__helixMem.profit = new Map();
 const mem: Mem =
   g.__helixMem ??
-  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map(), course: new Map() });
+  (g.__helixMem = { users: new Map(), completions: new Map(), approvals: new Map(), days: new Map(), products: new Map(), settings: new Map(), seasonPlans: new Map(), suppliers: new Map(), stock: new Map(), goals: new Map(), lessonSteps: new Map(), course: new Map(), profit: new Map() });
 mem.seasonPlans ??= new Map(); // older hot-reloaded stores
 mem.suppliers ??= new Map();
 mem.stock ??= new Map();
@@ -473,4 +476,19 @@ export async function saveCourseState(userId: string, s: CourseState) {
   }
   const data = { track: s.track, goalId: s.goalId, doneGoals: s.doneGoals.join(","), confirmed: s.confirmed.join(","), baselineAov: s.baselineAov, celebrate: s.celebrate };
   await prisma.courseState.upsert({ where: { userId }, create: { userId, ...data }, update: data });
+}
+
+// ---------- profit setup ----------
+export async function getProfitSetup(userId: string): Promise<ProfitInputs | null> {
+  if (!hasDb) return mem.profit.get(userId) ?? null;
+  const r = await prisma.profitSetup.findUnique({ where: { userId } });
+  if (!r) return null;
+  const { userId: _u, updatedAt: _t, ...rest } = r;
+  void _u; void _t;
+  return rest;
+}
+
+export async function saveProfitSetup(userId: string, p: ProfitInputs) {
+  if (!hasDb) return void mem.profit.set(userId, { ...p });
+  await prisma.profitSetup.upsert({ where: { userId }, create: { userId, ...p }, update: p });
 }

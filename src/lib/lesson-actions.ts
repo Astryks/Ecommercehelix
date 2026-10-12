@@ -23,6 +23,7 @@ const LINKS: Record<string, { href: string; label: string }> = {
   settings: { href: "/dashboard/settings", label: "Open settings" },
   email: { href: "/dashboard/email", label: "Open email automation" },
   course: { href: "/course", label: "Open your course path" },
+  profit: { href: "/dashboard/profit", label: "Open profit setup" },
 };
 
 const FLOW_IDS = ["welcome", "abandoned-checkout", "abandoned-cart", "browse-abandonment", "post-purchase", "review-request", "replenishment", "win-back", "vip"];

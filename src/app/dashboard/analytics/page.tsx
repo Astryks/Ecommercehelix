@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { PLAN_RANK } from "@/lib/plans";
+import { lessonLink } from "@/lib/lesson-links";
+import { UpgradePrompt } from "@/components/UpgradePrompt";
 import { BarChart3, Database, Info } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getDays, getSettings } from "@/lib/repo";
@@ -34,7 +37,11 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
   const acct = await getAccount(u.id);
   const taxNote = taxLabel(acct.salesTaxMode, acct.country);
   const [days, settings, conn, goalData] = await Promise.all([getDays(u.id), getSettings(u.id), getConnection(u.id), goalsFor(u.id)]);
-  const period = toPeriod(sp.period);
+  const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
+  const askedPeriod = toPeriod(sp.period);
+  // Week and month are free; year to date and 12 months are paid.
+  const blocked = !paid && (askedPeriod === "ytd" || askedPeriod === "l12m");
+  const period = blocked ? "month" : askedPeriod;
   const meta = PERIODS.find((p) => p.id === period)!;
   const latest = days.at(-1)?.date ?? addDays(isoDay(), -1);
   const { cur, prev, curLabel, prevLabel } = periodRanges(period, latest);
@@ -58,7 +65,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
           <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
             {GROUPS.map((g) => (
               <Link key={g.id} href={`/dashboard/analytics?period=${g.id === "year" ? (meta.group === "year" ? period : "ytd") : g.id}`} aria-current={meta.group === g.id ? "page" : undefined}
-                className={`rounded-lg px-4 py-1.5 ${meta.group === g.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{g.label}</Link>
+                className={`rounded-lg px-4 py-1.5 ${meta.group === g.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{g.label}{!paid && g.id === "year" ? <span className="ml-1 text-[10px] font-bold text-[#D9772B]">PRO</span> : null}</Link>
             ))}
           </div>
           {meta.group === "year" && (
@@ -72,7 +79,8 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
         </nav>
       </div>
 
-      <p className="mt-4 text-sm text-slate-600"><strong>{meta.label}</strong> ({meta.sub}): {curLabel}. Compared with {prevLabel}.</p>
+      {blocked && <div className="mt-4"><UpgradePrompt need="starter" forKey="history" compact title="Year to date and 12-month views are on Starter" body="Compare this year with last year and see every month side by side. Here are your last 30 days in the meantime." /></div>}
+      <p className="mt-4 text-sm text-slate-600"><strong>{meta.label}</strong> ({meta.sub}): {curLabel}. Compared with {prevLabel}. <Link href={lessonLink("1.7")?.href ?? "/learn"} className="text-cyan-700 underline">Sales, costs and profit in plain English</Link></p>
 
       {m.exampleDays > 0 && (
         <div className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">

@@ -8,7 +8,7 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl px-5">
         <p className="eyebrow">Pricing</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Less than one day of agency fees. Every month.</h2>
-        <p className="mt-3 max-w-2xl text-slate-600">Start free. Upgrade when Helix is finding you more than it costs.</p>
+        <p className="mt-3 max-w-2xl text-slate-600">Start free with a real profit dashboard and the first course goals. Upgrade when you want Helix to help you grow, step by step.</p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {PLANS.map((p) => (
             <div

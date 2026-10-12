@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CheckCircle2, Link2, RefreshCw, ShieldCheck, Unplug } from "lucide-react";
 import { requireUser } from "@/lib/session";
+import { getAccount } from "@/lib/repo";
+import { PLAN_RANK } from "@/lib/plans";
 import { metaMode, META_SCOPES, GRAPH_VERSION } from "@/lib/meta/config";
 import { getConnection, listAudit, listDrafts } from "@/lib/meta/store";
 import { listAssets } from "@/lib/meta/service";
@@ -24,6 +26,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
   const sp = await searchParams;
   const u = await requireUser("/dashboard/integrations");
   const mode = metaMode();
+  const paid = PLAN_RANK[(await getAccount(u.id)).plan] >= PLAN_RANK.starter;
   const [conn, audit, drafts] = await Promise.all([getConnection(u.id), listAudit(u.id, 30), listDrafts(u.id)]);
   let assets: Awaited<ReturnType<typeof listAssets>> | null = null;
   let assetError = "";
@@ -59,7 +62,8 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
             </p>
           </div>
           {!conn && mode !== "off" && (
-            <a href="/api/meta/connect" className="btn-dark"><Link2 className="h-4 w-4" aria-hidden /> Connect Meta</a>
+            paid ? <a href="/api/meta/connect" className="btn-dark"><Link2 className="h-4 w-4" aria-hidden /> Connect Meta</a>
+              : <Link href="/dashboard/billing?need=starter&for=meta" className="btn-dark"><Link2 className="h-4 w-4" aria-hidden /> Connect Meta · Starter</Link>
           )}
         </div>
 

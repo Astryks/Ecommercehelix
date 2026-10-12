@@ -234,3 +234,25 @@
 
 **Expected result:** There is one source of truth for stock and it is accurate.
 
+## Lesson 23.7: Customer service that keeps customers
+<!-- stage:grow -->
+
+**Why this matters:** Most questions are the same handful: where is my order, can I change my size, how do I return this. Fast, friendly answers turn a worried buyer into a repeat buyer, and good automation takes most of the load off you.
+
+**Step 1.** Read your last 50 customer emails and messages and group them by question. Count the top five.
+
+**Expected result:** A list of your five most common questions, with how often each comes up.
+
+**Step 2.** Write a saved reply for each of the five in your own voice, and put the answers on your FAQ and order confirmation pages so fewer people need to ask.
+
+**Expected result:** Five saved replies, and the same answers on your site.
+
+**Step 3.** Bring email, chat and social messages into one shared inbox (Shopify Inbox or a help desk app), and switch on an automatic order tracking reply.
+
+**Expected result:** Every message lands in one place, and "where is my order" gets an instant answer.
+
+**Step 4.** Set a reply target (for example within one business day) and check each week how many messages missed it.
+
+**Expected result:** You know your reply time and which questions still take the longest.
+
+**Watch out:** Never argue in public replies. Move complaints to private messages quickly, fix the problem, then thank the customer publicly.

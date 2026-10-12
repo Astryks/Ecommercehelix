@@ -1,17 +1,26 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 8 AM (Sydney)._
+_Last updated: 13 Oct 2026, about 9 AM (Sydney)._
 
 ## At a glance
 
 - **Live:** https://ecommercehelix.com (Vercel project `ecommercehelix`, Next.js 16). `www` redirects to the apex. Every push to `main` on GitHub (`Astryks/Ecommercehelix`) deploys to production.
 - **Database:** Neon Postgres via Prisma. Schema changes are additive only and are applied to the production database before the code is pushed. Note: this build machine cannot reach Neon's port 5432, so changes are applied with `prisma migrate diff` (old schema to new schema, no drops allowed) run over Neon's HTTPS driver with the unpooled URL pulled from Vercel into a temp file that is deleted straight after.
 - **Sign-in:** Resend email magic links are live. The demo login is on (each demo sign-in is a fresh, isolated test account). Google sign-in is optional and needs Sid's OAuth keys.
-- **Checks before every push:** `npm test` (vitest, 161 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
-- **Content:** 267 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29), plus the Helix Course (20 goals).
+- **Checks before every push:** `npm test` (vitest, 166 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
+- **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
 ## What is new since 6 Oct 2026
+
+**Profit first, marketing guide, free and paid (13 Oct, later).**
+- **New course order.** Goal 1 on every track is now **Set up your profit dashboard**, then **Fill in your numbers 7 days in a row**, then **Learn the numbers that run your store** (break-even, target MER, marketing spend, monthly goals), then Attract, Convert, Grow and Run. Old progress on the former first goal carries over.
+- **Profit setup** (`/dashboard/profit`, sidebar): enter selling price, product cost, freight and duty, packaging, shipping to the customer, payment fees, marketing per order, Shopify and app subscriptions, other monthly costs and orders a month. A live waterfall shows where each sale goes down to net profit, plus landed cost, gross margin, profit before marketing, break-even cost per purchase, break-even MER and ROAS, and a month's profit. Saving can also set fixed costs for the daily numbers. New additive `ProfitSetup` table (applied to production first).
+- **New lessons:** 1.7 Sales, costs and profit in plain English (with a waterfall drawing and a worked $60 example), 1.8 Set up your profit dashboard, 1.9 How much to spend on marketing. Growth, Key metrics, Dashboard and Profit setup link to 1.7.
+- **Marketing as a % of sales** (guide, not rule) on Profit setup, Growth and Key metrics: your share against the band for your size and your own break-even line. Under about $5k a month: no % target, a small fixed test budget judged by cost per purchase. Growing: about 10% to 30%. Scaling: about 15% to 25%, more while contribution stays positive. Break-even MER = profit before marketing / sales; break-even ROAS = 1 / break-even MER.
+- **Free and paid, enforced in code.** Free: profit dashboard, daily numbers, key metrics, Growth by day and week, Dashboard week and month, the numbers goals of the course, every lesson, top 3 fixes from the monthly audit. Starter: Attract and Convert goals, Do it for me, Meta connect (gated in the connect route), seasonal prep plans (gated in the server action), all fixes, month, year and 12-month history. Growth: Grow and Run goals. Course ticks and confirms check the plan on the server. Friendly upgrade notes appear at the moment of value (next course goal, month view, more fixes, Connect Meta, prep plan). Checkout stays behind the existing Stripe flag.
+- **Gaps closed:** 3.10 Subscribe and save, 9.16 When conversion suddenly drops, 13.12 A smaller sale between the big ones, 23.7 Customer service that keeps customers, 28.9 Selling to shops, each added to a course goal. A private coverage map was made against the private research (kept off-repo).
+- **Fixes:** old links to renamed or merged lessons now jump to the exact lesson, even across modules; Black Friday steps that have already passed show as one catch-up line instead of many overdue tasks; course time estimates are capped (no task over 20 minutes, no day over an hour).
 
 **The Helix Course (13 Oct).** A guided program on top of the lessons. One goal at a time, in plain words with a measurable finish line, on the profit-first ladder: your numbers, then Attract, Convert, Grow, then run the business. Three tracks: Just starting ($0 to $10k a month), Growing ($10k to $100k) and Scaling (over $100k). 20 goals, 16 per track. Each goal runs over 5 to 11 days; a day has 1 task on light days and up to 5 on busy ones. Every task is one action with the expected result, a time estimate, a link to the lesson step, Do it for me and Guide me. Ticking a day unlocks the next; hitting the finish line (checked from real daily numbers where possible, otherwise confirmed by the owner) unlocks the next goal with a small celebration. Sale prep (Black Friday from 1 August, Christmas, EOFY and more) and tax dates (BAS, EOFY, US dates) slot into the day when due within a week. Today now leads with Your goal (progress bar), Today's tasks and Why this matters. `/course` shows the whole path (done, current, locked, with day counts) and `/course/goal/<id>` shows each goal's days. Progress: new `CourseState` table plus the existing task and lesson-step tables, so ticks are shared with the lessons. Design: `docs/playbook/course.md`. Code: `src/lib/course-plan.ts`, `src/lib/course.ts`, `src/app/course`, `src/components/course`. Tests: `tests/course.test.ts`.
 
@@ -25,7 +34,8 @@ _Last updated: 13 Oct 2026, about 8 AM (Sydney)._
 
 | Commit | Date | What |
 |---|---|---|
-| (this commit) | 13 Oct | STATUS rewrite; /course sign-in redirect returns to /course |
+| (this commit) | 13 Oct | Profit setup and new goal order, marketing % guide, free and paid gating, gap lessons, anchor redirects, Black Friday catch-up, shorter days, STATUS |
+| a1e4f7b | 13 Oct | STATUS rewrite; /course sign-in redirect returns to /course |
 | 39d8e78 | 13 Oct | The Helix Course |
 | 6ecebdc | 13 Oct | Content audit, 9 merged lessons, 26 renamed titles, Module 29 |
 | 14ee485 | 13 Oct | Growth dashboard, key metrics panel, simpler daily form |
@@ -83,11 +93,11 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 - **Suppliers & stock** (`/dashboard/stock`): suppliers, landed cost, reorder points, stock-out countdowns, Black Friday last safe order dates, reorder alerts on Today.
 - **Run your business** (`/dashboard/business`): modules 23 to 28 with AU and US versions, 13 topics, verified thresholds, dated admin reminders (BAS, tax returns, EOFY, 1099-NEC, estimated tax, security checks). General information, not advice.
 - **GST/VAT setting:** "My prices include GST/VAT" strips tax from sales before any profit maths (`src/lib/tax.ts`).
-- **Learn:** 29-module Helix Playbook (267 lessons) in plain words, each lesson tagged with a stage, "In plain words" boxes, a 106-term glossary (`/learn/words`), 16 drawings that show where to click, and the goals ladder guide.
+- **Learn:** 29-module Helix Playbook (275 lessons) in plain words, each lesson tagged with a stage, "In plain words" boxes, a 106-term glossary (`/learn/words`), 16 drawings that show where to click, and the goals ladder guide.
 - **Meta integration (real):** Facebook Login for Business connect, encrypted long-lived token, asset picker, daily sync plus Sync now, insights into the campaign tracker and audit rules, paused-only drafts after approval, audit log, disconnect. Mock mode without a Meta app. Setup: `docs/meta-setup.md`.
 - **Other screens:** What to fix (insights), Waiting for your OK (approvals), Your numbers (scorecard and CSV import), Your ads, campaign builder, Email automation, Ad Trends, Weekly report, Connections, Settings (track, country, GST/VAT), Plan & billing (Stripe Checkout and webhook, waiting for keys).
 
-- **Your course** (`/course`), **Growth** (`/dashboard/growth`) and **Key metrics** (`/dashboard/metrics`) are in the sidebar.
+- **Profit setup** (`/dashboard/profit`), **Your course** (`/course`), **Growth** (`/dashboard/growth`) and **Key metrics** (`/dashboard/metrics`) are in the sidebar.
 
 ## Integrations
 
@@ -107,7 +117,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 3. **Logo redesign: pending Sid's pick.** Recommendation: a compounding-curve double helix, with a minimal tile favicon.
 4. **Shopify sync.** Fills sessions, sales and add-to-cart automatically, so more course finish lines check themselves.
 5. **Course polish.** Course-specific Do it for me actions for the new Module 29 lessons; a weekly email that recaps the current goal; let owners pick a goal out of order; a finish-line history.
-6. **Old anchors for merged lessons** that lived in a different module land on the old module page (top), not the new lesson. Add a small redirect map on the module page.
+6. **Plan changes for downgrades:** a user who drops to Free keeps their Meta connection and existing prep plans; decide whether to pause syncing.
 7. **Decide when to switch off the demo login** on production.
 8. **Google sign-in** if wanted.
 9. **Google Ads, TikTok and Klaviyo connections** to replace example data.
@@ -128,7 +138,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 - Execution model (Sid, 6 Oct 2026): **Draft & you launch** by default. Helix pushes campaigns into the user's own Meta/Google account as paused drafts; the user presses Launch. Budget edits on live campaigns are always made by the user. **Guide me** mode for users without connected accounts. See docs/execution-model.md.
 - Proactive audits (site, ads, email, social) with cross-diagnosis rules feed Today and Insights. See docs/audit-engine.md.
 - Email automation: Helix suggests missing flows, drafts them and sets them up after approval. See docs/email-automation.md.
-- Pricing: Free $0 (daily programme Days 1 to 17, monthly audit, no bot actions, hard cost cap), Starter $29 (Days 1 to 52, approval queue, paused-draft builds, one of Meta or Google, about $3 AI included at cost), Growth $59 (all 64 days, Meta and Google, email flows set up after approval, scorecards, weekly report, about $8 AI included at cost). Extra AI via prepaid wallet at 2x provider cost, stops at $0. Ad spend stays on the customer's own accounts.
+- Pricing (updated 13 Oct): Free $0 (profit dashboard, daily numbers, key metrics, basic growth chart, the numbers goals of the course, every lesson, top 3 audit fixes, hard AI cost cap), Starter $29 (Attract and Convert goals, Do it for me, Meta sync and paused drafts, seasonal prep plans, all fixes and AI help, full dashboard history, about $3 AI included at cost), Growth $59 (Grow and Run goals, team and playbooks, Meta and Google, email flows set up after approval, weekly report, about $8 AI included at cost). Extra AI via prepaid wallet at 2x provider cost, stops at $0. Ad spend stays on the customer's own accounts.
 - Stack: Next.js on Vercel, Postgres, Prisma, Auth.js, Stripe, Vercel AI SDK with hosted models, SOPs as RAG. PWA push approvals in month 2. Native app later. No GPUs or fine-tuning in v1.
 - Model routing: rules first (no LLM), Flash-Lite for extraction, Haiku 4.5 for daily writing and chat, Sonnet 5.5 for weekly reports and diagnosis.
 - All playbooks are original Helix SOPs. Private research material stays outside this repo (`research/` and `transcripts/` are gitignored).

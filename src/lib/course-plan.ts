@@ -38,6 +38,7 @@ export type FinishCtx = {
   merPct30: number;
   targetMerPct: number;
   costsEntered: boolean;
+  profitSetup: boolean;
   baselineAov: number;
 };
 
@@ -64,22 +65,30 @@ const GS: CourseTrack[] = ["growing", "scaling"];
 export const GOALS: GoalDef[] = [
   // ---- Your numbers ----
   {
-    id: "true-profit", phase: "numbers", tracks: ALL,
-    title: "Know your true profit per order",
-    finishLine: "Your product, shipping and fee costs are in Helix and at least one real day shows profit after every cost.",
-    why: "Sales feel good, but profit is what you keep. You cannot grow safely until you know what one order really leaves you.",
-    lessons: ["1.1", "1.2", "1.5"],
-    finish: { kind: "metric", label: "Real days with costs entered", unit: "days", target: 1, value: (c) => (c.costsEntered ? Math.max(1, c.realDays7) : 0), minDays: 0 },
-    rhythm: [1, 3, 3, 4],
+    id: "profit-dashboard", phase: "numbers", tracks: ALL,
+    title: "Set up your profit dashboard",
+    finishLine: "Your price, product, freight, packaging, shipping, fees, subscriptions and marketing costs are saved in Profit setup.",
+    why: "Sales feel good, but profit is what you keep. Five minutes entering your costs shows what one order and one month really leave you, and every other screen in Helix uses it.",
+    lessons: ["1.7", "1.8", "1.2"],
+    finish: { kind: "metric", label: "Profit setup saved", unit: "count", target: 1, value: (c) => (c.profitSetup ? 1 : 0), minDays: 0 },
+    rhythm: [2, 3, 3],
   },
   {
     id: "daily-numbers", phase: "numbers", tracks: ALL,
     title: "Fill in your numbers 7 days in a row",
     finishLine: "7 of the last 7 days are filled in with your real numbers.",
     why: "A daily 2-minute check catches a bad ad or a cost blow-out in one day instead of one month.",
-    lessons: ["1.3", "1.4", "1.6"],
+    lessons: ["1.3", "1.6"],
     finish: { kind: "metric", label: "Days filled in (last 7)", unit: "days", target: 7, value: (c) => c.realDays7, minDays: 0 },
     rhythm: [2, 2, 1, 1, 1, 1, 1, 1],
+  },
+  {
+    id: "key-numbers", phase: "numbers", tracks: ALL,
+    title: "Learn the numbers that run your store",
+    finishLine: "You know your break-even MER, your target MER and your monthly sales and profit goals, and they are saved in Helix.",
+    why: "A handful of numbers tell you whether to push, hold or fix. Knowing your limits before you spend more on growth keeps every next goal profitable.",
+    lessons: ["1.1", "1.4", "1.5", "1.9"],
+    finish: { kind: "self", label: "Break-even, target MER and monthly goals saved" },
   },
   {
     id: "store-ready", phase: "numbers", tracks: ["starting"],
@@ -136,7 +145,7 @@ export const GOALS: GoalDef[] = [
     title: "Get your conversion rate to 2.5%",
     finishLine: "2.5% or more of sessions become an order, over 7 days.",
     why: "Going from 1.5% to 2.5% conversion makes every ad dollar work almost twice as hard.",
-    lessons: ["3.3", "3.5", "9.4", "22.12", "9.8"],
+    lessons: ["3.3", "3.5", "9.4", "22.12", "9.8", "9.16"],
     finish: { kind: "metric", label: "Conversion rate (7 days)", unit: "pct", target: 2.5, value: (c) => c.crPct7, minDays: 5 },
   },
   {
@@ -169,7 +178,7 @@ export const GOALS: GoalDef[] = [
     title: "Get net profit margin to 10%",
     finishLine: "Net profit is 10% or more of sales over the last 30 days.",
     why: "Ten cents of every dollar kept is what lets you survive a bad month and fund the next stage.",
-    lessons: ["2.1", "2.3", "2.4", "2.5"],
+    lessons: ["2.1", "2.3", "2.4", "2.5", "13.12"],
     finish: { kind: "metric", label: "Net profit margin (30 days)", unit: "pct", target: 10, value: (c) => c.marginPct30, minDays: 20 },
   },
   {
@@ -177,7 +186,7 @@ export const GOALS: GoalDef[] = [
     title: "Get 25% of sales from returning customers",
     finishLine: "A quarter of sales over 30 days come from people who bought before.",
     why: "Returning customers cost almost nothing to win back, so they are the most profitable sales you make.",
-    lessons: ["10.4", "10.12", "4.7"],
+    lessons: ["10.4", "10.12", "4.7", "3.10", "23.7"],
     finish: { kind: "metric", label: "Returning customer share (30 days)", unit: "pct", target: 25, value: (c) => c.returningPct30, minDays: 20 },
   },
   {
@@ -185,7 +194,7 @@ export const GOALS: GoalDef[] = [
     title: "Reach $100k a month with at least 10% profit",
     finishLine: "$100,000 in sales over 30 days and a net margin of 10% or more.",
     why: "This is the jump from a busy shop to a real business that can pay a team and its owner.",
-    lessons: ["2.7", "7.10", "8.6", "15.1"],
+    lessons: ["2.7", "7.10", "8.6", "15.1", "28.9"],
     finish: { kind: "metric", label: "Sales, last 30 days", unit: "money", target: 100_000, value: (c) => c.revenue30, extra: (c) => c.marginPct30 >= 10, minDays: 20 },
   },
   {
@@ -232,6 +241,14 @@ export const GOALS: GoalDef[] = [
   },
 ];
 
+/** Which plan a goal needs. The numbers goals are free; growth goals need a paid plan. */
+export type GoalTier = "free" | "starter" | "growth";
+export const goalTier = (g: Pick<GoalDef, "phase">): GoalTier => (g.phase === "numbers" ? "free" : g.phase === "grow" || g.phase === "run" ? "growth" : "starter");
+
+/** Old goal ids that were renamed, so saved progress carries over. */
+export const GOAL_ALIASES: Record<string, string> = { "true-profit": "profit-dashboard" };
+export const canonicalGoalId = (id: string) => GOAL_ALIASES[id] ?? id;
+
 export const goalsFor = (track: CourseTrack) => GOALS.filter((g) => g.tracks.includes(track));
 
 // ---------- days and tasks ----------
@@ -259,7 +276,7 @@ const DEFAULT_RHYTHM = [1, 3, 4, 2, 5, 3, 4, 2, 3, 4, 2, 3];
 export function estimateMinutes(instruction: string): number {
   const s = instruction.toLowerCase();
   if (/\b(for two weeks|each month|every week|after four weeks|each quarter|on a hard day|when featured)\b/.test(s)) return 5;
-  if (/\b(record|write|rewrite|draft|build|install|set up|create|shoot|film|list \d|send)\b/.test(s)) return /\b(\d{2,} |ten|five|three)\b/.test(s) ? 30 : 20;
+  if (/\b(record|write|rewrite|draft|build|install|set up|create|shoot|film|list \d|send)\b/.test(s)) return /\b(\d{2,} |ten|five|three)\b/.test(s) ? 20 : 15;
   if (/\b(check|open|pick|choose|book|turn on|confirm|read)\b/.test(s)) return 5;
   return 10;
 }

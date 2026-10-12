@@ -245,6 +245,29 @@
 
 **Expected result:** You have a fresh lever score and one change to test.
 
+## Lesson 3.10: Subscribe and save: repeat orders without asking
+<!-- stage:grow -->
+
+**Why this matters:** If customers use your product up (coffee, skincare, supplements, pet food, cleaning refills), a subscription turns one sale into many and makes next month's sales predictable. It suits products people reorder on a rhythm; it does not suit one-off purchases.
+
+**Step 1.** Check whether your product fits: look at customers who bought twice and work out the usual gap between orders.
+
+**Expected result:** You know your typical reorder gap (for example 30 or 60 days), or that repeat buying is too rare for a subscription.
+
+**Step 2.** Install a subscription app from the Shopify App Store and offer one simple plan: a small saving (5% to 15%) or free shipping, delivered every reorder gap, with easy skip and cancel.
+
+**Expected result:** The product page shows "One-time purchase" and "Subscribe and save" options.
+
+**Step 3.** Add a subscription offer to your post-purchase email for repeat-use products, sent a few days before the first order is likely to run out.
+
+**Expected result:** First-time buyers are invited to subscribe at the moment they would reorder anyway.
+
+**Step 4.** Each month, check active subscribers, cancellations and the reasons given, and fix the top reason.
+
+**Expected result:** You know how many subscribers you have and why people leave.
+
+**Watch out:** Hiding the cancel button or making it hard to skip creates chargebacks and angry reviews. Make leaving easy and most people stay longer.
+
 ## Self-check
 
 1. Which lever does a free returns policy belong to?

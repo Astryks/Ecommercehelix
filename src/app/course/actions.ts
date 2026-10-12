@@ -2,9 +2,17 @@
 
 import { revalidatePath } from "next/cache";
 import { requireUser } from "@/lib/session";
-import { completeTask, getCourseState, saveCourseState, setLessonStep, uncompleteTask } from "@/lib/repo";
+import { completeTask, getAccount, getCourseState, saveCourseState, setLessonStep, uncompleteTask } from "@/lib/repo";
 import { stepKey } from "@/lib/lesson-actions";
-import { COURSE_TASK_ID, GOALS, toCourseTrack } from "@/lib/course-plan";
+import { COURSE_TASK_ID, GOALS, goalTier, toCourseTrack } from "@/lib/course-plan";
+import { PLAN_RANK } from "@/lib/plans";
+
+/** Paid goals are enforced here too, not just hidden in the page. */
+async function allowedGoal(userId: string, goalId: string) {
+  const g = GOALS.find((x) => x.id === goalId);
+  if (!g) return false;
+  return PLAN_RANK[(await getAccount(userId)).plan] >= PLAN_RANK[goalTier(g)];
+}
 import { SEASON_TASK_ID } from "@/lib/seasons";
 import { BIZ_TASK_ID } from "@/lib/business";
 
@@ -19,6 +27,7 @@ export async function toggleCourseTask(form: FormData) {
   const id = String(form.get("taskId") ?? "");
   const done = form.get("done") === "1";
   if (COURSE_TASK_ID.test(id)) {
+    if (!(await allowedGoal(u.id, id.replace(/^course-/, "").replace(/-\d{1,2}-\d{1,2}-s\d{1,2}$/, "")))) return;
     const ref = String(form.get("ref") ?? "");
     const step = Number(form.get("step"));
     if (done) await completeTask(u.id, id);
@@ -45,7 +54,7 @@ export async function confirmGoal(form: FormData) {
   const u = await requireUser();
   const id = String(form.get("goalId") ?? "");
   const s = await getCourseState(u.id);
-  if (!s || !GOALS.some((g) => g.id === id) || s.confirmed.includes(id)) return;
+  if (!s || !(await allowedGoal(u.id, id)) || s.confirmed.includes(id)) return;
   await saveCourseState(u.id, { ...s, confirmed: [...s.confirmed, id] });
   refresh();
 }

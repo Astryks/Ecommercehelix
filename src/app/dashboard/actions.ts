@@ -26,8 +26,11 @@ const VALID_ID = /^(day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build
 
 export async function markDone(form: FormData) {
   const u = await requireUser();
-  const taskId = String(form.get("taskId"));
-  if (VALID_ID.test(taskId) || LESSON_TASK_ID.test(taskId) || SEASON_TASK_ID.test(taskId) || BIZ_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
+  // One id, or several when catching up on past seasonal steps in one go.
+  for (const v of form.getAll("taskId").slice(0, 40)) {
+    const taskId = String(v);
+    if (VALID_ID.test(taskId) || LESSON_TASK_ID.test(taskId) || SEASON_TASK_ID.test(taskId) || BIZ_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
+  }
   revalidatePath("/dashboard", "layout");
 }
 
@@ -42,6 +45,8 @@ export async function addPrepPlan(form: FormData) {
   const key = String(form.get("planKey"));
   const acct = await getAccount(u.id);
   if (!seasonalAlerts(isoDay(), acct.country).some((a) => a.key === key)) return;
+  // Tracked seasonal plans on Today are a paid feature; the guides stay free.
+  if (PLAN_RANK[acct.plan] < PLAN_RANK.starter) redirect("/dashboard/billing?need=starter&for=season");
   await addSeasonPlan(u.id, key);
   await logAudit(u.id, { actor: "user", action: "season.plan_added", target: key, outcome: "ok" });
   revalidatePath("/dashboard", "layout");

@@ -289,6 +289,29 @@
 
 **Expected result:** The team can answer fast during the rush.
 
+## Lesson 13.12: A smaller sale between the big ones
+<!-- stage:convert -->
+
+**Why this matters:** Relying on one big sale a year makes cash flow lumpy and leaves stock sitting for months. One or two smaller, planned sales (for example at the end of the financial year or the change of season) clear old stock and bring lapsed customers back, without training buyers to wait for discounts.
+
+**Step 1.** Pick one window at least 8 weeks away from your biggest sale, and choose the reason for it: clearing a season's stock, end of financial year, or a birthday for the brand.
+
+**Expected result:** You have one date range of 3 to 5 days and a reason customers will believe.
+
+**Step 2.** Choose what goes on sale: slow stock and last season's colours first, best sellers only at a smaller discount or not at all. Check the margin on each with your profit setup.
+
+**Expected result:** A list of products and discounts where every line still makes money after marketing.
+
+**Step 3.** Plan it in Helix Calendar: one teaser email 3 days before, a launch email and SMS, a reminder on the middle day and a last-chance email, plus ads to past buyers and site visitors.
+
+**Expected result:** The sale and its messages are on your calendar with dates.
+
+**Step 4.** After it ends, record sales, profit, units cleared and new versus returning customers, and note one thing to change next time.
+
+**Expected result:** You know whether the sale made money and whether to repeat it.
+
+**Watch out:** More than four sales a year and customers start waiting for the next one. Keep sales planned, rare and with a clear reason.
+
 ## Self-check
 
 1. How many big sales peaks should you plan each year?

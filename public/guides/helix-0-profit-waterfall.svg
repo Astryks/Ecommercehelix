@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="Where a $60 sale goes: from sales down to net profit" font-family="Inter, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title>Where a $60 sale goes</title>
+<rect width="1200" height="620" rx="18" fill="#FAF7F2"/>
+<text x="80" y="58" font-family="Source Serif 4, Georgia, serif" font-size="30" font-weight="600" fill="#0B1F3A">Where a $60 sale goes</text>
+<text x="80" y="88" font-size="16" fill="#475569">Each cost takes a layer off the sale. What is left at the end is profit.</text>
+<line x1="60" y1="520" x2="1160" y2="520" stroke="#cbd5e1"/>
+<rect x="80" y="100.0" width="105" height="420.0" rx="4" fill="#0B1F3A"/>
+<text x="132.5" y="92.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">$60.00</text>
+<text x="132.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Sales</text>
+<rect x="207" y="100.0" width="105" height="84.0" rx="4" fill="#D9772B"/>
+<text x="259.5" y="92.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$12.00</text>
+<text x="259.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Product cost</text>
+<rect x="334" y="184.0" width="105" height="21.0" rx="4" fill="#D9772B"/>
+<text x="386.5" y="176.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$3.00</text>
+<text x="386.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Freight and</text>
+<text x="386.5" y="562" text-anchor="middle" font-size="14" fill="#334155">duty</text>
+<rect x="461" y="205.0" width="105" height="9.5" rx="4" fill="#D9772B"/>
+<text x="513.5" y="197.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$1.35</text>
+<text x="513.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Payment fees</text>
+<rect x="588" y="214.4" width="105" height="10.5" rx="4" fill="#D9772B"/>
+<text x="640.5" y="206.4" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$1.50</text>
+<text x="640.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Packaging</text>
+<rect x="715" y="224.9" width="105" height="63.0" rx="4" fill="#D9772B"/>
+<text x="767.5" y="216.9" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$9.00</text>
+<text x="767.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Shipping to</text>
+<text x="767.5" y="562" text-anchor="middle" font-size="14" fill="#334155">customer</text>
+<rect x="842" y="288.0" width="105" height="105.0" rx="4" fill="#D9772B"/>
+<text x="894.5" y="280.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$15.00</text>
+<text x="894.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Marketing</text>
+<rect x="969" y="393.0" width="105" height="20.3" rx="4" fill="#D9772B"/>
+<text x="1021.5" y="385.0" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">-$2.90</text>
+<text x="1021.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Fixed costs</text>
+<rect x="1096" y="413.2" width="105" height="106.8" rx="4" fill="#8FA98B"/>
+<text x="1148.5" y="405.2" text-anchor="middle" font-size="15" font-weight="600" fill="#0B1F3A">$15.25</text>
+<text x="1148.5" y="544" text-anchor="middle" font-size="14" fill="#334155">Net profit</text>
+<text x="80" y="598" font-size="14" fill="#64748b">Landed cost $15. Gross margin 75%. Profit before marketing $33.15 (55%). Net profit $15.25 (25%).</text>
+</svg>

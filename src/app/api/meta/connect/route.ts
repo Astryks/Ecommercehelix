@@ -1,6 +1,8 @@
 import { randomBytes } from "node:crypto";
 import { NextResponse, type NextRequest } from "next/server";
 import { requireUser } from "@/lib/session";
+import { getAccount } from "@/lib/repo";
+import { PLAN_RANK } from "@/lib/plans";
 import { DIALOG_URL, META_SCOPES, appUrl, metaMode, redirectUri } from "@/lib/meta/config";
 
 export const dynamic = "force-dynamic";
@@ -8,7 +10,9 @@ export const dynamic = "force-dynamic";
 /** Starts Facebook Login for Business. A random state is kept in an httpOnly cookie and checked on return. */
 export async function GET(req: NextRequest) {
   const origin = req.nextUrl.origin;
-  await requireUser("/dashboard/integrations");
+  const u = await requireUser("/dashboard/integrations");
+  // Meta sync and paused drafts are paid features.
+  if (PLAN_RANK[(await getAccount(u.id)).plan] < PLAN_RANK.starter) return NextResponse.redirect(`${appUrl(origin)}/dashboard/billing?need=starter&for=meta`);
   const mode = metaMode();
   if (mode === "off") return NextResponse.redirect(`${appUrl(origin)}/dashboard/integrations?error=not_configured`);
   const state = randomBytes(24).toString("base64url");

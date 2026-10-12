@@ -6,6 +6,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { listModules, renderLessonPage } from "@/lib/learn";
 import { LessonSteps, PROSE } from "@/components/learn/LessonSteps";
 import { termsIn } from "@/lib/glossary";
+import { AnchorRedirect } from "@/components/learn/AnchorRedirect";
+import { oldAnchorLinks } from "@/lib/lesson-links";
 
 export function generateStaticParams() {
   return listModules().map((m) => ({ slug: m.slug }));
@@ -29,6 +31,7 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
   return (
     <>
       <SiteHeader dark={false} />
+      <AnchorRedirect map={oldAnchorLinks()} />
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-12 lg:grid-cols-[240px_minmax(0,1fr)]">
         <aside className="lg:sticky lg:top-6 lg:max-h-[calc(100vh-3rem)] lg:self-start lg:overflow-y-auto">
           <Link href="/learn" className="text-sm font-medium text-cyan-700 hover:underline">All modules</Link>

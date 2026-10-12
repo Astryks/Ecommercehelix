@@ -1,6 +1,6 @@
 import "server-only";
 import { listModules } from "./learn";
-import { canonicalRef } from "./lesson-alias";
+import { canonicalRef, ANCHORS } from "./lesson-alias";
 
 let cache: Map<string, { href: string; title: string }> | null = null;
 
@@ -16,4 +16,14 @@ export function lessonLink(ref: string): { href: string; title: string } | null 
     }
   }
   return cache.get(canonicalRef(ref)) ?? null;
+}
+
+/** Every old heading anchor mapped to the exact lesson link it now lives at. */
+export function oldAnchorLinks(): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [a, v] of Object.entries(ANCHORS)) {
+    const l = lessonLink(v.ref);
+    if (l) out[a] = l.href;
+  }
+  return out;
 }

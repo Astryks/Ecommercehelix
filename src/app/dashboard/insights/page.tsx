@@ -1,5 +1,7 @@
 import { CalendarClock, RefreshCw } from "lucide-react";
 import { requireUser } from "@/lib/session";
+import { PLAN_RANK } from "@/lib/plans";
+import { UpgradePrompt } from "@/components/UpgradePrompt";
 import { getAccount, getCompletions, listApprovals } from "@/lib/repo";
 import { SITE_CHECKLIST_EXAMPLE, SOCIAL_CHECKLIST_EXAMPLE } from "@/lib/audit";
 import { insightsFor } from "@/lib/signals";
@@ -23,6 +25,7 @@ export default async function Insights() {
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
   const all = live.insights;
+  const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const open = all.filter((i) => !done.has(`insight-${i.id}`));
   const resolved = all.length - open.length;
 
@@ -45,7 +48,8 @@ export default async function Insights() {
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
         <div className="space-y-5">
-          {open.map((ins) => <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} />)}
+          {(paid ? open : open.slice(0, 3)).map((ins) => <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} />)}
+          {!paid && open.length > 3 && <UpgradePrompt need="starter" forKey="dfm" title={`${open.length - 3} more fixes found`} body="Free shows your top 3 fixes from the monthly audit. Starter shows every fix daily, with cross-diagnosis of ads and site, and can do them for you once you approve." />}
           {open.length === 0 && <div className="card p-8 text-center text-slate-600">All clear. Helix will raise new insights after the next audit.</div>}
         </div>
         <aside className="space-y-6">

@@ -4,6 +4,14 @@ import { getAccount } from "@/lib/repo";
 import { PLANS, planName } from "@/lib/plans";
 import { stripe } from "@/lib/stripe";
 
+const NEED_FOR: Record<string, string> = {
+  season: "A tracked seasonal prep plan with due dates on Today",
+  meta: "Connecting Meta for daily ad sync and paused drafts",
+  course: "That part of your course",
+  history: "Month, year and 12-month views",
+  dfm: "\u201cDo it for me\u201d for that task",
+};
+
 export default async function Billing({ searchParams }: PageProps<"/dashboard/billing">) {
   const sp = await searchParams;
   const u = await requireUser("/dashboard/billing");
@@ -14,7 +22,7 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
       <p className="mt-1 text-slate-600">You are on <strong>{planName(acct.plan)}</strong>.</p>
       {sp.dev === "1" && <p className="mt-4 rounded-xl bg-amber-50 p-3 text-sm text-amber-900">Demo mode: Stripe keys are not set, so your plan changed instantly with no payment.</p>}
       {sp.success && <p className="mt-4 rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">Payment received. Your plan updates as soon as Stripe confirms (usually seconds).</p>}
-      {sp.need && <p className="mt-4 rounded-xl bg-violet-50 p-3 text-sm text-violet-900">&quot;Do it for me&quot; for that task needs the {planName(String(sp.need) as "starter")} plan. Guides stay free.</p>}
+      {sp.need && <p className="mt-4 rounded-xl bg-violet-50 p-3 text-sm text-violet-900">{NEED_FOR[String(sp.for ?? "")] ?? "\u201cDo it for me\u201d for that task"} needs the {planName(String(sp.need) === "growth" ? "growth" : "starter")} plan. Your profit dashboard, daily numbers and every lesson stay free.</p>}
       <div className="mt-8 grid gap-5 md:grid-cols-3">
         {PLANS.map((p) => {
           const current = p.id === acct.plan;

@@ -7,6 +7,9 @@ import { metricsFor } from "@/lib/analytics";
 import { addDays, isoDay } from "@/lib/dates";
 import { keyMetrics, splitBySource, type KeyMetric, type Tone } from "@/lib/key-metrics";
 import { taxLabel } from "@/lib/tax";
+import { lessonLink } from "@/lib/lesson-links";
+import { marketingBandProps } from "@/lib/marketing-read";
+import { MarketingBand } from "@/components/profit/MarketingBand";
 
 export const metadata = { title: "Key metrics" };
 
@@ -79,6 +82,10 @@ export default async function Metrics() {
       </div>
 
       <p className="mt-4 text-sm text-slate-600"><strong>{counts.green}</strong> of {list.length} look good{counts.fix ? <>, <strong className="text-rose-700">{counts.fix}</strong> need fixing</> : null}. Compared with the 7 days before where it helps.</p>
+
+      <p className="mt-2 text-sm text-slate-600">New to these words? Start with <Link href={lessonLink("1.7")?.href ?? "/learn"} className="font-medium text-cyan-700 underline">Sales, costs and profit in plain English</Link>, then set up <Link href="/dashboard/profit" className="font-medium text-cyan-700 underline">your profit dashboard</Link>.</p>
+
+      <div className="mt-4"><MarketingBand {...marketingBandProps(days, settings, latest)} /></div>
 
       <section aria-label="Who fills in what" className="mt-4 grid gap-4 md:grid-cols-3">
         <div className="rounded-2xl border border-cyan-200 bg-cyan-50/60 p-5">

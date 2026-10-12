@@ -40,6 +40,7 @@ model User {
   monthlyGoals   MonthlyGoals?
   lessonProgress LessonProgress[]
   courseState    CourseState?
+  profitSetup    ProfitSetup?
   stockSeeded    Boolean            @default(false) // example suppliers and stock added once
 }
 
@@ -345,4 +346,22 @@ model CourseState {
   celebrate   String? // goal id just finished, cleared once the celebration is seen
   updatedAt   DateTime @updatedAt
   user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+/// Profit setup: the unit costs behind profit per order (Goal 1 of the course).
+model ProfitSetup {
+  userId            String   @id
+  price             Float    @default(0)
+  productCost       Float    @default(0)
+  freightDuty       Float    @default(0)
+  packaging         Float    @default(0)
+  shipToCustomer    Float    @default(0)
+  feePct            Float    @default(1.75)
+  feeFixed          Float    @default(0.3)
+  marketingPerOrder Float    @default(0)
+  subscriptions     Float    @default(0)
+  otherFixed        Float    @default(0)
+  ordersPerMonth    Int      @default(0)
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

@@ -374,6 +374,29 @@
 | Food | What it tastes like, freshness, bundles, subscriptions |
 | Pets | Proof for specific pets, refills |
 
+## Lesson 9.16: When conversion suddenly drops: a 20-minute check
+<!-- stage:convert -->
+
+**Why this matters:** A conversion rate that halves overnight is almost never because shoppers changed their minds. It is usually something broken, a change in who is visiting, or a tracking fault. Checking in the right order finds the cause in minutes instead of days.
+
+**Step 1.** Confirm the drop is real. Compare orders in Shopify (not ad platform numbers) for the last 3 days with the same days last week, and check sessions too.
+
+**Expected result:** You know whether orders really fell, or only reported conversions or sessions changed.
+
+**Step 2.** Buy something yourself on your phone and on a computer: add to cart, reach checkout, pay with a real card and a wallet (Apple Pay or Google Pay), then refund it.
+
+**Expected result:** Every step works, or you have found the broken step (often a payment method, discount code or a new app).
+
+**Step 3.** Look at what changed in the last 7 days: theme edits, new or updated apps, prices, shipping rates, a sold-out best seller, or a new ad sending different visitors. Undo the most likely change first.
+
+**Expected result:** You have a short list of recent changes, and the most likely cause has been undone or fixed.
+
+**Step 4.** Split conversion by device and by traffic source in Shopify Analytics. A drop on one device points at the site; a drop from one source points at that traffic.
+
+**Expected result:** You know whether the problem is the site, one device, or one traffic source.
+
+**Watch out:** Do not cut ad spend in a panic before Step 2. If checkout is broken, every channel looks bad at once.
+
 ## Self-check
 
 1. What is the funnel you watch in store reports?

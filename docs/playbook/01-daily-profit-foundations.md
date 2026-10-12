@@ -259,6 +259,85 @@
 
 **Expected result:** Your log has a dated entry you can look back on next week.
 
+## Lesson 1.7: Sales, costs and profit in plain English
+<!-- stage:grow -->
+
+**Why this matters:** Most new owners look at sales and feel rich, then wonder where the money went. Sales is not what you keep. Once you can see every layer that comes off a sale, you know which lever to pull.
+
+**Sales** (also called **revenue**) is what customers pay you. In Helix it is shown without GST/VAT, because that money belongs to the tax office. From there, each cost takes a layer off:
+
+1. **Product cost (COGS):** making or buying the item.
+2. **Freight and duty:** getting it from the factory to you. Product cost plus freight and duty is your **landed cost**. Sales minus landed cost is **gross profit**, and as a share of sales it is **gross margin**.
+3. **Payment fees:** what Shopify Payments, PayPal or buy now pay later keep, usually about 1.75% plus 30 cents in Australia.
+4. **Packaging:** mailer, box, tissue and inserts.
+5. **Shipping to the customer:** the postage you pay. What is left now is **profit before marketing**, the money one order leaves to pay for ads and bills.
+6. **Marketing:** ads and other marketing. What is left now is **contribution**.
+7. **Fixed costs:** Shopify and app subscriptions, wages, rent and software, spread over your orders. What is left is **net profit**.
+
+![Where a $60 sale goes](../../public/guides/helix-0-profit-waterfall.svg)
+
+**Worked example: a $60 product made overseas.** It costs $12 to make and $3 to ship in with duty, so landed cost is $15 and gross margin is 75%. Payment fees take $1.35, packaging $1.50 and postage $9, leaving $33.15 before marketing. Ads cost $15 per order, leaving $18.15. Shopify, apps and other bills of $580 a month over 200 orders is $2.90 an order. Net profit is **$15.25 an order (25%)**, or about $3,050 a month. If ads crept up to $33 an order, every sale would lose money even though sales look the same.
+
+**Step 1.** Write down one of your products and its selling price, then next to it write a cost for each of the seven layers in this lesson (product, freight and duty, payment fees, packaging, shipping, marketing, fixed costs), even as a guess.
+
+**Expected result:** You have a rough cost for every layer of one order.
+
+**Step 2.** Take the layers away from the price, top to bottom, and circle the biggest one.
+
+**Expected result:** You know your rough profit per order and the single biggest cost eating it.
+
+**Watch out:** Free shipping is not free. If you do not charge for postage, the whole postage cost is a layer you pay on every order.
+
+## Lesson 1.8: Set up your profit dashboard
+<!-- stage:grow -->
+
+**Why this matters:** Every number Helix shows you later (profit yesterday, break-even, how much you can spend on ads) depends on knowing your costs. Five minutes here makes every other screen honest.
+
+**Step 1.** Open **Profit setup** in Helix. Enter your selling price, product cost, freight and duty, packaging, shipping to the customer and payment fees for a typical order. Use your best seller, or an average order if you sell many products.
+
+**Expected result:** The waterfall on the right shows your profit per order and your break-even numbers.
+
+<!-- do:profit -->
+
+**Step 2.** Enter your monthly costs: your Shopify or website plan, every app subscription, and any wages, rent or software. Then enter how many orders you get in a usual month, or your goal if you are just starting.
+
+**Expected result:** You can see your net profit for a month at that number of orders.
+
+**Step 3.** Enter marketing per order (last month's ad spend divided by orders), tick "Use my monthly costs as fixed costs" and save.
+
+**Expected result:** Profit setup is saved and your dashboard uses your real fixed costs.
+
+**Watch out:** Check your app list in Shopify settings. Forgotten subscriptions of $10 to $50 each often add up to hundreds a month.
+
+## Lesson 1.9: How much to spend on marketing
+<!-- stage:grow -->
+
+**Why this matters:** Spend too little and the store never grows. Spend too much and every sale loses money. A share of sales gives you a sense check, and your own margin tells you the hard limit.
+
+**Your hard limit comes from your margin, not from a rule.** Take profit before marketing as a share of sales. That is your **break-even MER**: marketing at that share of sales leaves exactly zero. **Break-even ROAS** is 1 divided by it. In the $60 example, profit before marketing is $33.15, so break-even MER is 55% and break-even ROAS is 1.81. Your **break-even cost per purchase** is the same $33.15: pay more than that in ads to win one order and you lose money on it.
+
+**Guides by stage (guides, not rules):**
+
+- **Before your first sales or under about $5,000 a month:** a percentage target means little yet. Set a small fixed test budget you can afford to lose, for example $20 to $50 a day for two weeks, and judge each test by cost per purchase against your break-even cost per purchase.
+- **Growing (about $5,000 to $100,000 a month):** total marketing commonly runs at about 10% to 30% of sales, depending on your margin and stage. Newer brands buying growth sit near the top; brands with lots of returning customers sit lower.
+- **Scaling (over about $100,000 a month):** many brands sit around 15% to 25% of sales on all marketing. Spending more is fine while contribution margin stays positive and returning customers grow, because those customers pay back the cost of winning them.
+
+High margin products can afford a higher share; low margin products cannot. Always leave room between your marketing share and your break-even for fixed costs and profit.
+
+**Step 1.** Open **Profit setup** and read your break-even MER, break-even ROAS and break-even cost per purchase.
+
+**Expected result:** You know the marketing share at which you stop making money.
+
+**Step 2.** Pick a target MER below break-even that leaves room for your fixed costs and profit (for example break-even 55%, target 25%), and save it in **Settings**. If you are pre-sales, set a fixed daily test budget instead.
+
+**Expected result:** You have a target MER, or a fixed test budget, written down.
+
+**Step 3.** Open **Growth** and compare your marketing share with the guide band for your size.
+
+**Expected result:** You know whether you are under, inside or over the usual range, and what that means for your margin.
+
+**Watch out:** Count all marketing, not just Meta: Google, TikTok, influencers, discount codes paid to creators and agency fees all belong in marketing share.
+
 ## Example
 
 A candle store had this day:

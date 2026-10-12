@@ -4,6 +4,8 @@ import { confirmGoal, dismissCelebration } from "@/app/course/actions";
 import { fmtFinish, PHASES, dayDone } from "@/lib/course-plan";
 import type { CourseView } from "@/lib/course";
 import { CourseTaskRow, DatedTaskRow } from "./CourseTasks";
+import { UpgradePrompt } from "@/components/UpgradePrompt";
+import { goalDays } from "@/lib/course";
 
 export function Celebration({ view }: { view: CourseView }) {
   if (!view.celebrate) return null;
@@ -54,10 +56,18 @@ export function GoalCard({ view, compact = false }: { view: CourseView; compact?
           <div className="mt-1 h-2.5 overflow-hidden rounded-full bg-white/15" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={f.pct} aria-label="Progress to the finish line">
             <div className="h-full rounded-full bg-accent transition-all" style={{ width: `${f.pct}%` }} />
           </div>
-          {c.goal.finish.kind === "metric" && !f.enoughData && <p className="mt-1.5 text-xs text-white/70">Helix checks this from your real daily numbers. <Link href="/dashboard/scorecard#entry" className="underline">Add your numbers</Link> so it can tell when you hit it.</p>}
+          {c.goal.id === "profit-dashboard" && !f.met && <p className="mt-1.5 text-xs text-white/70"><Link href="/dashboard/profit" className="underline">Open Profit setup</Link> and save your costs to reach the finish line.</p>}
+          {c.goal.finish.kind === "metric" && !f.enoughData && c.goal.id !== "profit-dashboard" && <p className="mt-1.5 text-xs text-white/70">Helix checks this from your real daily numbers. <Link href="/dashboard/scorecard#entry" className="underline">Add your numbers</Link> so it can tell when you hit it.</p>}
         </div>
       </div>
 
+      {c.needs ? (
+        <div className="space-y-3 p-5">
+          <p className="rounded-xl bg-emerald-50 px-4 py-2.5 text-sm text-slate-800"><strong>Why this matters:</strong> {c.goal.why}</p>
+          <UpgradePrompt need={c.needs} forKey="course" title={`You finished the free goals. Goal ${c.n} is next.`}
+            body={`${c.goal.title} is part of the ${PHASES[c.goal.phase].name} goals: ${goalDays(c.goal).length} days of short tasks with a finish line Helix checks from your numbers. Upgrade to keep going. You can still read every lesson in Learn for free.`} />
+        </div>
+      ) : (
       <div className="p-5">
         <p className="rounded-xl bg-emerald-50 px-4 py-2.5 text-sm text-slate-800"><Sparkles className="mr-1.5 inline h-4 w-4 text-positive" aria-hidden /><strong>Why this matters:</strong> {c.goal.why}</p>
 
@@ -82,6 +92,7 @@ export function GoalCard({ view, compact = false }: { view: CourseView; compact?
           </div>
         )}
       </div>
+      )}
     </section>
   );
 }

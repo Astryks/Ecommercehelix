@@ -6,12 +6,13 @@ import { addDays, isoDay } from "./dates";
 import { metricsFor } from "./analytics";
 import { adminDueSoon } from "./business";
 import { nextTasks, seasonalAlerts } from "./seasons";
-import { getAccount, getCompletions, getCourseState, getLessonSteps, getRawDays, getSettings, saveCourseState } from "./repo";
+import { getAccount, getCompletions, getCourseState, getLessonSteps, getProfitSetup, getRawDays, getSettings, saveCourseState } from "./repo";
 import {
-  buildDays, currentDay, finishStatus, goalsFor, nextGoalId, toCourseTrack, slotDated,
-  type CourseDay, type CourseState, type CourseTrack, type DatedTask, type FinishCtx, type FinishStatus, type GoalDef, type LessonInfo,
+  buildDays, canonicalGoalId, currentDay, goalTier, finishStatus, goalsFor, nextGoalId, toCourseTrack, slotDated,
+  type CourseDay, type CourseState, type CourseTrack, type DatedTask, type FinishCtx, type FinishStatus, type GoalDef, type GoalTier, type LessonInfo,
 } from "./course-plan";
 import type { DayInput, Settings } from "./scorecard";
+import { PLAN_RANK, type PlanId } from "./plans";
 
 const lessonCache = new Map<string, LessonInfo | null>();
 export function lookupLesson(ref: string): LessonInfo | null {
@@ -30,7 +31,7 @@ export function goalDays(g: GoalDef): CourseDay[] {
 }
 
 /** Finish-line numbers from real (not example) days. */
-export function finishCtx(raw: DayInput[], s: Settings, baselineAov: number, today = isoDay()): FinishCtx {
+export function finishCtx(raw: DayInput[], s: Settings, baselineAov: number, today = isoDay(), profitSetup = false): FinishCtx {
   const real = raw.filter((d) => !d.example);
   const y = addDays(today, -1);
   const r7 = { from: addDays(y, -6), to: y };
@@ -53,11 +54,18 @@ export function finishCtx(raw: DayInput[], s: Settings, baselineAov: number, tod
     merPct30: m30.merPct,
     targetMerPct: s.targetMerPct,
     costsEntered: real.some((d) => d.cogs > 0 && d.revenue > 0),
+    profitSetup,
     baselineAov,
   };
 }
 
-export type GoalPathItem = { goal: GoalDef; n: number; days: number; status: "done" | "current" | "locked" };
+export type GoalPathItem = { goal: GoalDef; n: number; days: number; status: "done" | "current" | "locked"; needs: Exclude<GoalTier, "free"> | null };
+
+/** The plan a goal needs, or null when the user's plan already covers it. */
+export const goalNeeds = (g: GoalDef, plan: PlanId): Exclude<GoalTier, "free"> | null => {
+  const t = goalTier(g);
+  return PLAN_RANK[plan] >= PLAN_RANK[t] || t === "free" ? null : t;
+};
 export type CourseView = {
   track: CourseTrack;
   path: GoalPathItem[];
@@ -69,6 +77,8 @@ export type CourseView = {
     allDaysDone: boolean;
     finish: FinishStatus;
     dated: DatedTask[];
+    /** Set when this goal needs a higher plan: show an upgrade prompt instead of tasks. */
+    needs: Exclude<GoalTier, "free"> | null;
   };
   done: Set<string>;
   celebrate: GoalDef | null;
@@ -78,15 +88,17 @@ export type CourseView = {
 /** Load (and if needed advance) the user's course. Finishing a goal unlocks the next one. */
 export async function getCourse(userId: string, today = isoDay()): Promise<CourseView> {
   const [acct, completions, steps, raw, settings, saved] = await Promise.all([getAccount(userId), getCompletions(userId), getLessonSteps(userId), getRawDays(userId), getSettings(userId), getCourseState(userId)]);
+  const profit = await getProfitSetup(userId);
   const stepSet = new Set(steps);
   const done = new Set(completions.map((c) => c.taskId));
-  let state: CourseState = saved ?? { track: toCourseTrack(acct.track), goalId: "", doneGoals: [], confirmed: [], baselineAov: 0, celebrate: null };
+  const fixIds = (s: CourseState): CourseState => ({ ...s, goalId: canonicalGoalId(s.goalId), doneGoals: s.doneGoals.map(canonicalGoalId), confirmed: s.confirmed.map(canonicalGoalId) });
+  let state: CourseState = saved ? fixIds(saved) : { track: toCourseTrack(acct.track), goalId: "", doneGoals: [], confirmed: [], baselineAov: 0, celebrate: null };
   const goals = goalsFor(state.track);
   // A course task is also done when its lesson step was ticked on the lesson page.
   for (const g of goals) for (const d of goalDays(g)) for (const t of d.tasks) if (stepSet.has(stepKey(t.lessonRef, t.step))) done.add(t.id);
 
-  const ctxFor = (s: CourseState) => finishCtx(raw, settings, s.baselineAov, today);
-  let changed = !saved;
+  const ctxFor = (s: CourseState) => finishCtx(raw, settings, s.baselineAov, today, Boolean(profit));
+  let changed = !saved || (saved.goalId !== state.goalId || saved.doneGoals.join() !== state.doneGoals.join());
   if (!state.goalId || !goals.some((g) => g.id === state.goalId)) {
     state = { ...state, goalId: nextGoalId(state.track, state.doneGoals) ?? "", baselineAov: ctxFor(state).aov7 };
     changed = true;
@@ -94,6 +106,7 @@ export async function getCourse(userId: string, today = isoDay()): Promise<Cours
   // Advance while the current goal's finish line is met and its days are done.
   for (let guard = 0; guard < goals.length && state.goalId; guard++) {
     const g = goals.find((x) => x.id === state.goalId)!;
+    if (goalNeeds(g, acct.plan)) break;
     const days = goalDays(g);
     const cd = currentDay(days, done);
     const f = finishStatus(g, ctxFor(state), cd.allDone ? days.length : cd.n - 1, days.length, state.confirmed.includes(g.id));
@@ -105,23 +118,28 @@ export async function getCourse(userId: string, today = isoDay()): Promise<Cours
   }
   if (changed) await saveCourseState(userId, state);
 
-  const path: GoalPathItem[] = goals.map((g, i) => ({ goal: g, n: i + 1, days: goalDays(g).length, status: state.doneGoals.includes(g.id) ? "done" : g.id === state.goalId ? "current" : "locked" }));
+  const path: GoalPathItem[] = goals.map((g, i) => ({ goal: g, n: i + 1, days: goalDays(g).length, status: state.doneGoals.includes(g.id) ? "done" : g.id === state.goalId ? "current" : "locked", needs: goalNeeds(g, acct.plan) }));
   const cur = goals.find((g) => g.id === state.goalId) ?? null;
   let current: CourseView["current"] = null;
   if (cur) {
     const days = goalDays(cur);
     const cd = currentDay(days, done);
     const finish = finishStatus(cur, ctxFor(state), cd.allDone ? days.length : cd.n - 1, days.length, state.confirmed.includes(cur.id));
-    current = { goal: cur, n: path.find((p) => p.goal.id === cur.id)!.n, days, day: cd.n, allDaysDone: cd.allDone, finish, dated: slotDated(days[cd.n - 1]?.tasks ?? [], datedTasks(today, acct.country, done), today, done) };
+    current = { goal: cur, n: path.find((p) => p.goal.id === cur.id)!.n, days, day: cd.n, allDaysDone: cd.allDone, finish, dated: slotDated(days[cd.n - 1]?.tasks ?? [], datedTasks(today, acct.country, done, PLAN_RANK[acct.plan] >= PLAN_RANK.starter), today, done), needs: goalNeeds(cur, acct.plan) };
   }
   return { track: state.track, path, current, done, celebrate: goals.find((g) => g.id === state.celebrate) ?? null, finished: !cur };
 }
 
 /** Sale prep from the seasonal calendar and tax dates, as dated tasks. */
-export function datedTasks(today: string, country: "AU" | "US", done: Set<string>): DatedTask[] {
+export function datedTasks(today: string, country: "AU" | "US", done: Set<string>, seasonal = true): DatedTask[] {
   const out: DatedTask[] = [];
-  for (const a of seasonalAlerts(today, country).filter((x) => !x.reviewing).slice(0, 3)) {
-    for (const t of nextTasks(a, done, 2)) out.push({ id: t.taskId, title: t.title, due: t.due, why: `${a.name} prep`, href: "/dashboard/calendar", minutes: 15, kind: "season" });
+  for (const a of seasonal ? seasonalAlerts(today, country).filter((x) => !x.reviewing).slice(0, 3) : []) {
+    // Steps well past their date are summarised as one catch-up line, not a pile of overdue tasks.
+    const open = nextTasks(a, done, 99);
+    const past = open.filter((t) => t.due < addDays(today, -7));
+    if (past.length > 1) out.push({ id: past[0].taskId, title: `Catch up: ${past.length} earlier ${a.name} steps have passed. Do the one that still helps most (start with "${past[0].title}") and skip the rest on the calendar.`, due: today, why: `${a.name} prep`, href: "/dashboard/calendar", minutes: 15, kind: "season" });
+    const fresh = past.length > 1 ? open.filter((t) => !past.includes(t)) : open;
+    for (const t of fresh.slice(0, 2)) out.push({ id: t.taskId, title: t.title, due: t.due, why: `${a.name} prep`, href: "/dashboard/calendar", minutes: 15, kind: "season" });
   }
   for (const b of adminDueSoon(today, country, done, 2).filter((x) => x.daysTo <= 14)) {
     out.push({ id: b.taskId, title: b.name, due: b.date, why: "Tax and admin date", href: lessonLink(b.lesson)?.href ?? "/dashboard/business", minutes: 20, kind: "admin" });

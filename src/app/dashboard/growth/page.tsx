@@ -9,6 +9,11 @@ import { GRAINS, MARGIN_BANDS, changeOf, comparison, growthSeries, marginBand, p
 import { Sparkline } from "@/components/dashboard/Sparkline";
 import { GrowthChart, MarginChart } from "@/components/analytics/GrowthCharts";
 import { PALETTE } from "@/lib/palette";
+import { PLAN_RANK } from "@/lib/plans";
+import { lessonLink } from "@/lib/lesson-links";
+import { marketingBandProps } from "@/lib/marketing-read";
+import { MarketingBand } from "@/components/profit/MarketingBand";
+import { UpgradePrompt } from "@/components/UpgradePrompt";
 
 export const metadata = { title: "Growth" };
 
@@ -48,7 +53,11 @@ export default async function Growth({ searchParams }: PageProps<"/dashboard/gro
   const sp = await searchParams;
   const u = await requireUser("/dashboard/growth");
   const [acct, days, settings, conn] = await Promise.all([getAccount(u.id), getDays(u.id), getSettings(u.id), getConnection(u.id)]);
-  const grain = toGrain(sp.g);
+  const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
+  const asked = toGrain(sp.g);
+  // Day and week are free; month and year history are paid.
+  const blocked = !paid && (asked === "month" || asked === "year");
+  const grain = blocked ? "week" : asked;
   const g = GRAINS.find((x) => x.id === grain)!;
   const latest = days.at(-1)?.date ?? addDays(isoDay(), -1);
   const series = growthSeries(days, grain, latest, settings);
@@ -76,10 +85,13 @@ export default async function Growth({ searchParams }: PageProps<"/dashboard/gro
         </div>
         <nav aria-label="Period" className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
           {GRAINS.map((x) => (
-            <Link key={x.id} href={`/dashboard/growth?g=${x.id}`} aria-current={grain === x.id ? "page" : undefined} className={`rounded-lg px-4 py-1.5 ${grain === x.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{x.label}</Link>
+            <Link key={x.id} href={`/dashboard/growth?g=${x.id}`} aria-current={grain === x.id ? "page" : undefined} className={`rounded-lg px-4 py-1.5 ${grain === x.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{x.label}{!paid && (x.id === "month" || x.id === "year") ? <span className="ml-1 text-[10px] font-bold text-[#D9772B]">PRO</span> : null}</Link>
           ))}
         </nav>
       </div>
+
+      {blocked && <div className="mt-4"><UpgradePrompt need="starter" forKey="history" compact title="Month and year views are on Starter" body="See your profit month by month and year on year, with the full history of every number you have entered. Here is your weekly view in the meantime." /></div>}
+      <p className="mt-3 text-sm text-slate-600">New to these words? <Link href={lessonLink("1.7")?.href ?? "/learn"} className="font-medium text-cyan-700 underline">Sales, costs and profit in plain English</Link> · <Link href="/dashboard/profit" className="font-medium text-cyan-700 underline">Your profit setup</Link></p>
 
       <section className={`mt-5 rounded-2xl border px-5 py-4 ${headTone}`} aria-live="polite">
         <p className="font-display text-2xl font-semibold tracking-tight text-slate-900">
@@ -89,6 +101,8 @@ export default async function Growth({ searchParams }: PageProps<"/dashboard/gro
           {hasPrev ? plainLine("Revenue", revC, cmp.vsWord) : "Add a few more days of numbers to see the change."} Margin is {pct(cur.marginPct)}, which is <strong>{band.label.split(":")[0].toLowerCase()}</strong>. Now: {cmp.curLabel}. Compared with {cmp.prevLabel}.
         </p>
       </section>
+
+      <div className="mt-5"><MarketingBand {...marketingBandProps(days, settings, latest)} /></div>
 
       {exampleShare > 0 && (
         <div className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">

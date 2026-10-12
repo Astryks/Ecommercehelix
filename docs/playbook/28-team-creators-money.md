@@ -336,3 +336,25 @@
 
 **Expected result:** You have a keep or stop decision. Marketplaces usually collect US sales tax for you (see [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing)).
 
+## Lesson 28.9: Selling to shops: a simple wholesale start
+<!-- stage:grow -->
+
+**Why this matters:** Shops that stock your product put it in front of people who never see your ads. Margins are lower per unit, but orders are bigger and there is no ad cost per sale. Done carefully, wholesale adds steady volume.
+
+**Step 1.** Work out your wholesale price: most shops expect to buy at about half the retail price. Check with your profit setup that landed cost, packaging and freight still leave a profit at that price.
+
+**Expected result:** A wholesale price for each product that still makes money, or a list of products that cannot be sold wholesale.
+
+**Step 2.** Write simple terms on one page: minimum order, payment terms (upfront for first orders), delivery times, and a promise not to undercut your stockists on your own site outside planned sales.
+
+**Expected result:** A one-page wholesale terms sheet.
+
+**Step 3.** List 20 independent shops whose customers match yours. Send each a short, personal email with photos, prices and your terms, and offer a small first order.
+
+**Expected result:** 20 shops contacted, with replies tracked in a simple sheet.
+
+**Step 4.** Set up wholesale ordering in Shopify (a separate price list or a wholesale app) and keep wholesale stock separate in your stock check.
+
+**Expected result:** Stockists can reorder without emails back and forth, and retail stock is protected.
+
+**Watch out:** Big chains can ask for long payment terms, returns of unsold stock and heavy discounts. Start with independent shops, and only say yes to terms your cash flow can carry.

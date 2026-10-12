@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { parseModuleSections, type ParsedLesson } from "@/lib/lesson-parse";
-import { buildDays, COURSE_TASK_ID, currentDay, dayDone, estimateMinutes, finishStatus, GOALS, goalsFor, nextGoalId, slotDated, type FinishCtx, type Lookup } from "@/lib/course-plan";
+import { canonicalGoalId, goalTier, buildDays, COURSE_TASK_ID, currentDay, dayDone, estimateMinutes, finishStatus, GOALS, goalsFor, nextGoalId, slotDated, type FinishCtx, type Lookup } from "@/lib/course-plan";
 
 const PB = path.join(__dirname, "..", "docs", "playbook");
 const lessons = new Map<string, ParsedLesson>();
@@ -12,7 +12,7 @@ const lookup: Lookup = (ref) => {
   const l = lessons.get(ref);
   return l ? { ref, title: l.title, href: `/learn/x#${ref}`, steps: l.steps.map((s) => ({ n: s.n, instruction: s.instruction, expected: s.expected, action: s.action })) } : null;
 };
-const ctx = (o: Partial<FinishCtx> = {}): FinishCtx => ({ realDays7: 7, realDays30: 30, sessionsPerDay7: 0, atcPct7: null, crPct7: 0, aov7: 0, marginPct30: 0, revenue30: 0, revenuePrev30: 0, returningPct30: 0, merPct30: 30, targetMerPct: 30, costsEntered: false, baselineAov: 50, ...o });
+const ctx = (o: Partial<FinishCtx> = {}): FinishCtx => ({ realDays7: 7, realDays30: 30, sessionsPerDay7: 0, atcPct7: null, crPct7: 0, aov7: 0, marginPct30: 0, revenue30: 0, revenuePrev30: 0, returningPct30: 0, merPct30: 30, targetMerPct: 30, costsEntered: false, profitSetup: false, baselineAov: 50, ...o });
 
 describe("Helix Course plan", () => {
   it("links every goal to real lessons and builds days of 1 to 5 tasks", () => {
@@ -42,7 +42,7 @@ describe("Helix Course plan", () => {
     for (const t of ["starting", "growing", "scaling"] as const) {
       const ph = goalsFor(t).map((g) => order.indexOf(g.phase));
       expect([...ph].sort((a, b) => a - b)).toEqual(ph);
-      expect(goalsFor(t)[0].id).toBe("true-profit");
+      expect(goalsFor(t)[0].id).toBe("profit-dashboard");
     }
   });
   it("uses plain copy with no em-dashes", () => {
@@ -74,8 +74,8 @@ describe("Helix Course plan", () => {
     expect(finishStatus(self, ctx(), 4, 4, true).met).toBe(true);
   });
   it("moves to the next goal in order", () => {
-    expect(nextGoalId("starting", [])).toBe("true-profit");
-    expect(nextGoalId("starting", ["true-profit"])).toBe("daily-numbers");
+    expect(nextGoalId("starting", [])).toBe("profit-dashboard");
+    expect(nextGoalId("starting", ["profit-dashboard"])).toBe("daily-numbers");
     expect(nextGoalId("growing", goalsFor("growing").map((g) => g.id))).toBeNull();
   });
   it("slots up to two dated tasks due within a week", () => {
@@ -89,6 +89,22 @@ describe("Helix Course plan", () => {
   });
   it("estimates time from the kind of step", () => {
     expect(estimateMinutes("Open Shopify and check the report.")).toBe(5);
-    expect(estimateMinutes("Write the role as outcomes.")).toBe(20);
+    expect(estimateMinutes("Write the role as outcomes.")).toBe(15);
+  });
+  it("puts profit dashboard, daily numbers and key numbers first, all free", () => {
+    for (const t of ["starting", "growing", "scaling"] as const) {
+      expect(goalsFor(t).slice(0, 3).map((g) => g.id)).toEqual(["profit-dashboard", "daily-numbers", "key-numbers"]);
+      for (const g of goalsFor(t)) expect(goalTier(g)).toBe(g.phase === "numbers" ? "free" : g.phase === "attract" || g.phase === "convert" ? "starter" : "growth");
+    }
+    expect(canonicalGoalId("true-profit")).toBe("profit-dashboard");
+  });
+  it("finishes the profit dashboard goal once profit setup is saved", () => {
+    const g = GOALS.find((x) => x.id === "profit-dashboard")!;
+    expect(finishStatus(g, ctx(), 3, 3, false).met).toBe(false);
+    expect(finishStatus(g, ctx({ profitSetup: true }), 3, 3, false).met).toBe(true);
+  });
+  it("keeps every course day under an hour", () => {
+    for (const g of GOALS) for (const d of buildDays(g, lookup)) expect(d.tasks.reduce((n, t) => n + t.minutes, 0), `${g.id} day ${d.n}`).toBeLessThanOrEqual(60);
   });
 });
+

@@ -6,7 +6,7 @@ import aliases from "./lesson-aliases.json";
  */
 type Merged = Record<string, { to: string; steps: Record<string, number> }>;
 const MERGED = aliases.lessons as Merged;
-const ANCHORS = aliases.anchors as Record<string, { ref: string }>;
+export const ANCHORS = aliases.anchors as Record<string, { ref: string }>;
 
 /** "21.7" -> "4.7" for a merged lesson; any other ref is returned unchanged. */
 export const canonicalRef = (ref: string) => MERGED[ref]?.to ?? ref;

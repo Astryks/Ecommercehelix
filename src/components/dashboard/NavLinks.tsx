@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Route, Gauge, TrendingUp, BarChart3, BookOpen, Boxes, Briefcase, LineChart, CalendarCheck, CalendarDays, CreditCard, FileText, Inbox, Lightbulb, Link2, Mail, Megaphone, Settings, Sparkles, Target } from "lucide-react";
+import { PiggyBank, Route, Gauge, TrendingUp, BarChart3, BookOpen, Boxes, Briefcase, LineChart, CalendarCheck, CalendarDays, CreditCard, FileText, Inbox, Lightbulb, Link2, Mail, Megaphone, Settings, Sparkles, Target } from "lucide-react";
 
 const LINKS = [
   { href: "/dashboard", label: "Today", icon: CalendarCheck },
   { href: "/course", label: "Your course", icon: Route },
+  { href: "/dashboard/profit", label: "Profit setup", icon: PiggyBank },
   { href: "/dashboard/analytics", label: "Dashboard", icon: LineChart, highlight: true },
   { href: "/dashboard/growth", label: "Growth", icon: TrendingUp },
   { href: "/dashboard/metrics", label: "Key metrics", icon: Gauge },
