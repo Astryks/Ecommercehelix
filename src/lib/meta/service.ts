@@ -155,7 +155,7 @@ export async function draftInputFor(userId: string): Promise<{ input: DraftInput
   const acct = await getAccount(userId);
   const storeUrl = acct.storeUrl ? (acct.storeUrl.startsWith("http") ? acct.storeUrl : `https://${acct.storeUrl}`) : "https://example.com";
   const [days, settings] = await Promise.all([getDays(userId), getSettings(userId)]);
-  const country = conn.timezone?.startsWith("Australia") ? "AU" : conn.timezone?.startsWith("Pacific/Auckland") ? "NZ" : conn.timezone?.startsWith("Europe/London") ? "GB" : conn.timezone?.startsWith("America") ? "US" : "AU";
+  const country = acct.country || "AU";
   if (missing.length) return { input: null, missing };
   return {
     missing,

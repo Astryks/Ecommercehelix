@@ -5,7 +5,7 @@ import { stepKey } from "./lesson-actions";
 import { addDays, isoDay } from "./dates";
 import { metricsFor } from "./analytics";
 import { adminDueSoon } from "./business";
-import { nextTasks, seasonalAlerts } from "./seasons";
+import { nextTasks, seasonalAlerts, type Country } from "./seasons";
 import { getAccount, getCompletions, getCourseState, getLessonSteps, getProfitSetup, getRawDays, getSettings, logEvent, saveCourseState } from "./repo";
 import {
   buildDays, canonicalGoalId, currentDay, goalTier, finishStatus, goalsFor, nextGoalId, toCourseTrack, slotDated,
@@ -132,7 +132,7 @@ export async function getCourse(userId: string, today = isoDay()): Promise<Cours
 }
 
 /** Sale prep from the seasonal calendar and tax dates, as dated tasks. */
-export function datedTasks(today: string, country: "AU" | "US", done: Set<string>, seasonal = true): DatedTask[] {
+export function datedTasks(today: string, country: Country, done: Set<string>, seasonal = true): DatedTask[] {
   const out: DatedTask[] = [];
   for (const a of seasonal ? seasonalAlerts(today, country).filter((x) => !x.reviewing).slice(0, 3) : []) {
     // Steps well past their date are summarised as one catch-up line, not a pile of overdue tasks.

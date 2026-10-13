@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, Book, Boxes, Briefcase, CalendarClock, Check, Cre
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions } from "@/lib/repo";
 import { isoDay, prettyDay } from "@/lib/dates";
-import { countdownText } from "@/lib/seasons";
+import { countdownText, countryName } from "@/lib/seasons";
 import { THRESHOLDS, THRESHOLDS_CHECKED, TOPICS, adminDates, type Topic } from "@/lib/business";
 import { lessonLink } from "@/lib/lesson-links";
 import { markDone } from "../actions";
@@ -21,7 +21,7 @@ export default async function RunYourBusiness() {
   const done = new Set(comps.map((c) => c.taskId));
   const today = isoDay();
   const coming = adminDates(today, acct.country, 120).slice(0, 6);
-  const countryName = acct.country === "US" ? "United States" : "Australia";
+  const countryLabel = countryName(acct.country);
 
   return (
     <div className="mx-auto max-w-6xl">
@@ -32,9 +32,12 @@ export default async function RunYourBusiness() {
         <strong>General information, not tax or legal advice.</strong> Check with a registered tax agent or accountant before you act. Rules change; every number below links to the official source.
       </p>
 
+      {coming.length === 0 ? (
+        <p className="card mt-6 p-5 text-sm text-slate-600">We don&apos;t have a tax-date list for {countryLabel} yet, so there are no admin reminders here. Your sale dates are in the <Link href="/dashboard/calendar" className="text-cyan-700 underline">calendar</Link>.</p>
+      ) : (
       <section aria-labelledby="coming-h" className="card mt-6 p-5">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 id="coming-h" className="flex items-center gap-2 text-lg font-semibold"><CalendarClock className="h-5 w-5 text-orange-600" aria-hidden /> Coming up ({countryName})</h2>
+          <h2 id="coming-h" className="flex items-center gap-2 text-lg font-semibold"><CalendarClock className="h-5 w-5 text-orange-600" aria-hidden /> Coming up ({countryLabel})</h2>
           <Link href="/dashboard/calendar" className="text-sm font-semibold text-cyan-700 hover:underline">Full calendar <ArrowRight className="inline h-4 w-4" aria-hidden /></Link>
         </div>
         <ul className="mt-3 divide-y divide-slate-100">
@@ -64,6 +67,7 @@ export default async function RunYourBusiness() {
         </ul>
         <p className="mt-2 text-xs text-slate-500">Helix shows each of these on Today when it is close (for example, BAS from 4 weeks before). Change country in <Link href="/dashboard/settings" className="underline">Settings</Link>.</p>
       </section>
+      )}
 
       <h2 className="mt-10 text-xl font-semibold">The 13 topics</h2>
       <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">

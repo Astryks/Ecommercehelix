@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BellRing, CalendarDays, Download, ExternalLink, ListPlus } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getSeasonPlans } from "@/lib/repo";
-import { COUNTRIES, countdownText, seasonalAlerts, toCountry, type Kind } from "@/lib/seasons";
+import { countryName, countdownText, seasonalAlerts, toCountry, type Kind } from "@/lib/seasons";
 import { calendarWithAdmin } from "@/lib/business";
 import { lessonLink } from "@/lib/lesson-links";
 import { isoDay, prettyDay } from "@/lib/dates";
@@ -41,7 +41,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
           <p className="mt-1 max-w-2xl text-slate-600">Every key sale and gifting date for the next 12 months, plus business admin dates like BAS, tax returns and security checks. Big dates come with a prep plan, and Helix warns you on Today before each one. Black Friday prep starts on 1 August, and each step is on its own date below.</p>
         </div>
         <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold" role="tablist" aria-label="Country">
-          {COUNTRIES.map((c) => (
+          {[...new Set([acct.country, "AU", "US"])].map((id) => ({ id, name: countryName(id) })).map((c) => (
             <Link key={c.id} href={`/dashboard/calendar?country=${c.id}`} role="tab" aria-selected={country === c.id}
               className={`rounded-lg px-3 py-1.5 ${country === c.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{c.name}</Link>
           ))}
@@ -107,7 +107,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
           </section>
         ))}
       </div>
-      <p className="mt-8 text-xs text-slate-500">Showing {COUNTRIES.find((c) => c.id === country)?.name} dates. Change your default country in <Link href="/dashboard/settings" className="underline">Settings</Link>.</p>
+      <p className="mt-8 text-xs text-slate-500">Showing {countryName(country)} dates{country !== "AU" && country !== "US" ? " (the worldwide set: Black Friday, Cyber Monday, Christmas, Valentine\u2019s Day, Singles Day and Mother\u2019s Day where we know the date)" : ""}. Change your default country in <Link href="/dashboard/settings" className="underline">Settings</Link>.</p>
     </div>
   );
 }

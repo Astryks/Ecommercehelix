@@ -7,7 +7,7 @@ import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check,
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
-import { bfcmTip, countdownText, seasonalAlerts, upcomingEvents } from "@/lib/seasons";
+import { bfcmTip, countdownText, seasonalAlerts, upcomingEvents, countryName } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { BfcmTipStrip } from "@/components/BfcmPlan";
 import { GoalsLadder } from "@/components/GoalsLadder";
@@ -139,7 +139,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
       {upcoming.length > 0 && (
         <section aria-labelledby="upcoming-h" className="mt-6">
           <div className="flex items-baseline justify-between">
-            <h2 id="upcoming-h" className="flex items-center gap-2 text-sm font-semibold text-slate-700"><CalendarDays className="h-4 w-4" aria-hidden /> Upcoming key dates ({acct.country === "US" ? "United States" : "Australia"})</h2>
+            <h2 id="upcoming-h" className="flex items-center gap-2 text-sm font-semibold text-slate-700"><CalendarDays className="h-4 w-4" aria-hidden /> Upcoming key dates ({countryName(acct.country)})</h2>
             <Link href="/dashboard/calendar" className="text-sm font-medium text-cyan-700 hover:underline">Full calendar</Link>
           </div>
           <ol className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">

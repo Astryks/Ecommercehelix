@@ -9,7 +9,7 @@ import type { DayInput, ProductLine } from "./scorecard";
 export type SalesTaxMode = "auto" | "AU" | "NZ" | "UK" | "none";
 
 export const TAX_OPTIONS: { id: SalesTaxMode; label: string; hint: string }[] = [
-  { id: "auto", label: "Use my country's default", hint: "Australia: prices include 10% GST. US: sales are entered before tax." },
+  { id: "auto", label: "Use my country's default", hint: "For example Australia 10% GST, New Zealand 15%, UK 20% VAT, Germany 19%. US and Canada: sales are entered before tax." },
   { id: "AU", label: "Yes, Australian GST (10%)", hint: "Helix divides sales by 1.10." },
   { id: "NZ", label: "Yes, New Zealand GST (15%)", hint: "Helix divides sales by 1.15." },
   { id: "UK", label: "Yes, UK VAT (20%)", hint: "Helix divides sales by 1.20." },
@@ -20,23 +20,48 @@ const RATES: Record<Exclude<SalesTaxMode, "auto" | "none">, number> = { AU: 0.1,
 
 export const toTaxMode = (v: unknown): SalesTaxMode => (v === "AU" || v === "NZ" || v === "UK" || v === "none" ? v : "auto");
 
-/** The mode that actually applies: "auto" follows the country (AU stores show GST-inclusive prices; US prices are before sales tax). */
-export function effectiveTaxMode(mode: SalesTaxMode, country: Country): Exclude<SalesTaxMode, "auto"> {
+/**
+ * Standard GST/VAT rate where shop prices normally include it. Countries not listed
+ * (the US, Canada and anywhere we do not know) default to "before tax", and the
+ * settings page asks the owner to choose.
+ */
+export const DEFAULT_TAX: Record<string, { rate: number; name: "GST" | "VAT" }> = {
+  AU: { rate: 0.1, name: "GST" }, NZ: { rate: 0.15, name: "GST" }, SG: { rate: 0.09, name: "GST" }, IN: { rate: 0.18, name: "GST" }, MY: { rate: 0.1, name: "VAT" },
+  GB: { rate: 0.2, name: "VAT" }, IE: { rate: 0.23, name: "VAT" }, DE: { rate: 0.19, name: "VAT" }, FR: { rate: 0.2, name: "VAT" }, IT: { rate: 0.22, name: "VAT" },
+  ES: { rate: 0.21, name: "VAT" }, PT: { rate: 0.23, name: "VAT" }, NL: { rate: 0.21, name: "VAT" }, BE: { rate: 0.21, name: "VAT" }, LU: { rate: 0.17, name: "VAT" },
+  AT: { rate: 0.2, name: "VAT" }, CH: { rate: 0.081, name: "VAT" }, SE: { rate: 0.25, name: "VAT" }, DK: { rate: 0.25, name: "VAT" }, NO: { rate: 0.25, name: "VAT" },
+  FI: { rate: 0.255, name: "VAT" }, PL: { rate: 0.23, name: "VAT" }, CZ: { rate: 0.21, name: "VAT" }, GR: { rate: 0.24, name: "VAT" }, HU: { rate: 0.27, name: "VAT" },
+  RO: { rate: 0.21, name: "VAT" }, HR: { rate: 0.25, name: "VAT" }, SK: { rate: 0.23, name: "VAT" }, SI: { rate: 0.22, name: "VAT" }, EE: { rate: 0.24, name: "VAT" },
+  LV: { rate: 0.21, name: "VAT" }, LT: { rate: 0.21, name: "VAT" }, CY: { rate: 0.19, name: "VAT" }, MT: { rate: 0.18, name: "VAT" }, BG: { rate: 0.2, name: "VAT" },
+  IS: { rate: 0.24, name: "VAT" }, ZA: { rate: 0.15, name: "VAT" }, AE: { rate: 0.05, name: "VAT" }, SA: { rate: 0.15, name: "VAT" }, MX: { rate: 0.16, name: "VAT" },
+  JP: { rate: 0.1, name: "GST" },
+};
+const BEFORE_TAX_COUNTRIES = new Set(["US", "CA"]);
+
+/** True when we have no default for this country, so the owner should pick in Settings. */
+export const taxNeedsChoice = (mode: SalesTaxMode, country: Country) => mode === "auto" && !DEFAULT_TAX[country] && !BEFORE_TAX_COUNTRIES.has(country);
+
+/** The mode that actually applies: "auto" follows the country's default; unknown countries count as before tax. */
+export function effectiveTaxMode(mode: SalesTaxMode, country: Country): Exclude<SalesTaxMode, "auto"> | "country" {
   if (mode !== "auto") return mode;
-  return country === "AU" ? "AU" : "none";
+  if (country === "AU") return "AU";
+  return DEFAULT_TAX[country] ? "country" : "none";
 }
 
 /** Tax rate as a fraction, e.g. 0.1 for Australian GST. 0 when prices are before tax. */
 export function taxRate(mode: SalesTaxMode, country: Country): number {
   const m = effectiveTaxMode(mode, country);
-  return m === "none" ? 0 : RATES[m];
+  if (m === "none") return 0;
+  return m === "country" ? DEFAULT_TAX[country].rate : RATES[m];
 }
 
 /** Short label for notes, e.g. "GST (10%)" or "VAT (20%)". Empty when no tax is stripped. */
 export function taxLabel(mode: SalesTaxMode, country: Country): string {
   const m = effectiveTaxMode(mode, country);
   if (m === "none") return "";
-  return `${m === "UK" ? "VAT" : "GST"} (${Math.round(RATES[m] * 100)}%)`;
+  const name = m === "country" ? DEFAULT_TAX[country].name : m === "UK" ? "VAT" : "GST";
+  const pct = Math.round(taxRate(mode, country) * 1000) / 10;
+  return `${name} (${pct}%)`;
 }
 
 const round2 = (n: number) => Math.round(n * 100) / 100;

@@ -9,12 +9,31 @@ import { addDays } from "./dates";
  * Everything here is pure, so it is easy to test and safe to run anywhere.
  */
 
-export type Country = "AU" | "US";
+/** ISO 3166-1 alpha-2 code, e.g. "AU", "GB", "DE". Any real country is accepted. */
+export type Country = string;
+/** Which date list a country uses: Australia, the US, or the worldwide set for everyone else. */
+export type Region = "AU" | "US" | "GLOBAL";
+
+const ISO =
+  "AD AE AF AG AI AL AM AO AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GT GU GW GY HK HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TG TH TL TJ TK TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW".split(" ");
+const NAMES = new Intl.DisplayNames(["en"], { type: "region" });
+export const countryName = (c: Country) => {
+  try { return NAMES.of(c) ?? c; } catch { return c; }
+};
+/** Every country, Australia and the US first, then A to Z by name. */
 export const COUNTRIES: { id: Country; name: string; flag: string }[] = [
   { id: "AU", name: "Australia", flag: "AU" },
   { id: "US", name: "United States", flag: "US" },
+  ...ISO.filter((c) => c !== "AU" && c !== "US").map((c) => ({ id: c, name: countryName(c), flag: c })).sort((a, b) => a.name.localeCompare(b.name)),
 ];
-export const toCountry = (v: unknown): Country => (v === "US" ? "US" : "AU");
+const VALID = new Set(ISO);
+/** Keep any valid country code ("UK" is read as GB). Anything else falls back to Australia. */
+export const toCountry = (v: unknown): Country => {
+  const c = String(v ?? "").trim().toUpperCase();
+  const code = c === "UK" ? "GB" : c;
+  return VALID.has(code) ? code : "AU";
+};
+export const regionOf = (c: Country): Region => (c === "AU" || c === "US" ? c : "GLOBAL");
 
 export type Kind = "sale" | "gifting" | "seasonal" | "admin" | "prep";
 export type Learn = { slug: string; anchor: string; label: string };
@@ -22,7 +41,7 @@ export type PrepTask = { id: string; offset: number; title: string; steps: strin
 export type SeasonEvent = {
   key: string;
   name: string;
-  countries: Country[];
+  countries: Region[];
   kind: Kind;
   /** Event date for a given year, YYYY-MM-DD. */
   date: (year: number) => string;
@@ -132,7 +151,7 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "black-friday",
     name: "Black Friday",
-    countries: ["AU", "US"],
+    countries: ["AU", "US", "GLOBAL"],
     kind: "sale",
     date: blackFriday,
     leadDays: 118,
@@ -243,7 +262,7 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "christmas",
     name: "Christmas shipping cut-offs",
-    countries: ["AU", "US"],
+    countries: ["AU", "US", "GLOBAL"],
     kind: "gifting",
     date: (y) => ymd(y, 12, 25),
     leadDays: 56,
@@ -320,7 +339,7 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "valentines",
     name: "Valentine's Day",
-    countries: ["AU", "US"],
+    countries: ["AU", "US", "GLOBAL"],
     kind: "gifting",
     date: (y) => ymd(y, 2, 14),
     leadDays: 42,
@@ -334,7 +353,7 @@ export const EVENTS: SeasonEvent[] = [
   {
     key: "mothers-day",
     name: "Mother's Day",
-    countries: ["AU", "US"],
+    countries: ["AU", "US", "GLOBAL"],
     kind: "gifting",
     date: (y) => nthWeekday(y, 5, 0, 2),
     leadDays: 56,
@@ -423,7 +442,7 @@ export function lastWeekday(year: number, month: number, weekday: number): strin
 }
 
 /** Calendar-only dates: shown on the Calendar page and Upcoming strip, no prep plan. */
-export type CalendarOnly = { key: string; name: string; countries: Country[]; kind: Kind; date: (y: number) => string; note: string; approx?: string };
+export type CalendarOnly = { key: string; name: string; countries: Region[]; kind: Kind; date: (y: number) => string; note: string; approx?: string };
 export const CALENDAR_ONLY: CalendarOnly[] = [
   { key: "back-to-school-au", name: "Back to school", countries: ["AU"], kind: "seasonal", date: (y) => ymd(y, 1, 27),
     note: "School goes back from late January to early February, depending on the state. Shopping peaks in the 2 weeks before.", approx: "Varies by state" },
@@ -441,11 +460,11 @@ export const CALENDAR_ONLY: CalendarOnly[] = [
     note: "Big for costumes, decor and treats. Many stores also use it to start teasing Black Friday." },
   { key: "click-frenzy", name: "Click Frenzy", countries: ["AU"], kind: "sale", date: (y) => nthWeekday(y, 11, 2, 2),
     note: "A big Australian online sale event, usually over 3 days in mid-November. Decide by late October if you join it or keep your offer for Black Friday.", approx: "Usually the 2nd week of November. Check the official dates" },
-  { key: "singles-day", name: "Singles Day (11.11)", countries: ["AU", "US"], kind: "sale", date: (y) => ymd(y, 11, 11),
+  { key: "singles-day", name: "Singles Day (11.11)", countries: ["AU", "US", "GLOBAL"], kind: "sale", date: (y) => ymd(y, 11, 11),
     note: "The world's biggest online shopping day, started in China. Some stores run a one-day 11.11 offer as an early taste of Black Friday." },
   { key: "thanksgiving", name: "Thanksgiving", countries: ["US"], kind: "seasonal", date: (y) => nthWeekday(y, 11, 4, 4),
     note: "Fourth Thursday of November. Black Friday starts the next day; many US stores open their sale on Thanksgiving." },
-  { key: "cyber-monday", name: "Cyber Monday", countries: ["AU", "US"], kind: "sale", date: (y) => addDays(blackFriday(y), 3),
+  { key: "cyber-monday", name: "Cyber Monday", countries: ["AU", "US", "GLOBAL"], kind: "sale", date: (y) => addDays(blackFriday(y), 3),
     note: "The Monday after Black Friday. Usually the last big day of the sale weekend. Plan a final reminder email and text." },
 ];
 
@@ -470,20 +489,38 @@ export type CalendarEntry = {
   planKey?: string;
 };
 
+/** Mother's Day by country where we know it. Unknown countries skip it. */
+export function mothersDay(country: Country, y: number): string | null {
+  if (["GB", "IE", "IM", "JE", "GG"].includes(country)) return addDays(easterSunday(y), -21);
+  if (["ES", "PT", "LT", "HU"].includes(country)) return nthWeekday(y, 5, 0, 1);
+  if (country === "FR" || country === "SE" || country === "DO") return lastWeekday(y, 5, 0);
+  if (country === "MX") return ymd(y, 5, 10);
+  if (["AU", "US", "CA", "NZ", "DE", "IT", "JP", "NL", "BE", "CH", "AT", "DK", "FI", "BR", "ZA", "SG", "HK", "PH", "MY", "IN", "CN", "TW", "GR", "TR", "CL", "PE", "CO", "VE", "EC", "UY", "EE", "LV", "IS"].includes(country)) return nthWeekday(y, 5, 0, 2);
+  return null;
+}
+
+/** An event as it applies to one country (Mother's Day moves; unknown dates are dropped). */
+function localise<T extends { key: string; countries: Region[]; date: (y: number) => string }>(ev: T, country: Country): T | null {
+  if (!ev.countries.includes(regionOf(country))) return null;
+  if (ev.key !== "mothers-day" || regionOf(country) !== "GLOBAL") return ev;
+  if (mothersDay(country, 2026) === null) return null;
+  return { ...ev, date: (y: number) => mothersDay(country, y)! };
+}
+const eventsFor = (country: Country) => EVENTS.map((e) => localise(e, country)).filter((e): e is SeasonEvent => e !== null);
+const calendarOnlyFor = (country: Country) => CALENDAR_ONLY.map((e) => localise(e, country)).filter((e): e is CalendarOnly => e !== null);
+
 /** Every key date for a country in the next `horizon` days, soonest first. */
 export function upcomingEvents(today: string, country: Country, horizon = 365): CalendarEntry[] {
   const y = Number(today.slice(0, 4));
   const out: CalendarEntry[] = [];
   for (const year of [y - 1, y, y + 1, y + 2]) {
-    for (const ev of EVENTS) {
-      if (!ev.countries.includes(country)) continue;
+    for (const ev of eventsFor(country)) {
       const date = ev.date(year);
       const daysTo = daysBetween(today, date);
       if (daysTo < 0 || daysTo > horizon) continue;
       out.push({ key: `${ev.key}-${year}`, eventKey: ev.key, name: ev.name, date, daysTo, kind: ev.kind, note: ev.why, prepFrom: addDays(date, -leadFor(ev, year)), planSteps: ev.tasks.length });
     }
-    for (const ev of CALENDAR_ONLY) {
-      if (!ev.countries.includes(country)) continue;
+    for (const ev of calendarOnlyFor(country)) {
       const date = ev.date(year);
       const daysTo = daysBetween(today, date);
       if (daysTo < 0 || daysTo > horizon) continue;
@@ -523,7 +560,7 @@ function toAlert(ev: SeasonEvent, year: number, today: string): SeasonAlert | nu
 export function seasonalAlerts(today: string, country: Country = "AU"): SeasonAlert[] {
   const y = Number(today.slice(0, 4));
   const out: SeasonAlert[] = [];
-  for (const ev of EVENTS.filter((e) => e.countries.includes(country))) for (const year of [y - 1, y, y + 1]) {
+  for (const ev of eventsFor(country)) for (const year of [y - 1, y, y + 1]) {
     const a = toAlert(ev, year, today);
     if (a) out.push(a);
   }
@@ -612,7 +649,7 @@ export function bfcmTip(today: string): BfcmTip | null {
  */
 export function bfcmPlanEntries(today: string, country: Country, horizon = 365): CalendarEntry[] {
   const ev = bfEvent();
-  if (!ev.countries.includes(country)) return [];
+  if (!ev.countries.includes(regionOf(country))) return [];
   const y = Number(today.slice(0, 4));
   const out: CalendarEntry[] = [];
   for (const year of [y - 1, y, y + 1]) {
