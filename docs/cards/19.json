@@ -1,0 +1,97 @@
+{
+"19.1": {"intro": "People trust people more than brands. When someone like your customer explains why they love it, it feels real. UGC means photos and videos made by customers or creators, not the brand.",
+ "steps": [
+  {"say": "Read the four ways to work with creators in the lesson's table: gifting, paid UGC, influencer or partnership, and affiliate.", "check": "You know what each costs and what you get.", "lost": "Read just gifting and paid UGC."},
+  {"say": "Start with gifting and paid UGC. Send product to 10 creators. Pay 2 or 3 for videos ready to use as ads.", "check": "You have your first creator videos to test.", "lost": "Send product to 3 creators."},
+  {"say": "Keep working with creators whose videos do well. Move the best ones up to paid partners.", "check": "Your creator team grows from proven people.", "lost": "Message your best creator again."}
+ ]},
+"19.2": {"intro": "Fit matters more than follower count. 4,000 followers who care about your kind of product beat 400,000 who don't.",
+ "steps": [
+  {"say": "Search your own tags and mentions on Instagram and TikTok. Find customers who already post about you.", "check": "You have a list of warm creator leads.", "lost": "Check who tagged you this month."},
+  {"say": "Search for the problems your product solves (not your product name). Save creators you'd stop to watch.", "check": "Your list grows with creators who talk about that problem.", "lost": "Search one problem. Save 3 creators."},
+  {"say": "Use the Meta and TikTok creator marketplaces. Filter by audience location, size and category. Check who makes content for competitors.", "check": "You have 20 or more people to choose from.", "lost": "Find 5 creators in the marketplace."},
+  {"say": "Score each out of 10 on: comfortable on camera, speaks to your customer, natural style for the platform, real community in comments, posts often, and shares your values.", "check": "Each creator has a score.", "lost": "Score your top 3 out of 10."},
+  {"say": "Shortlist creators who score 7 or more.", "check": "You have a short list to contact.", "careful": "Need paid videos fast? UGC marketplaces and agencies are a good backup.", "lost": "Keep only the 7s and up."}
+ ]},
+"19.3": {"intro": "Good outreach is personal and offers product first. Creator videos often take 4 to 8 weeks, so start early.",
+ "steps": [
+  {"say": "Send a personal first message that mentions one of their videos by name (the lesson has a template).", "check": "Each message names something they made.", "lost": "Mention one video you liked."},
+  {"say": "Offer product first, and money once their content works. Mention the affiliate offer in the first or second message.", "check": "Creators know there's ongoing money in it.", "lost": "Offer a free product first."},
+  {"say": "Send a one-page brand overview: what you stand for, who you serve, what makes you different, and three proof points.", "check": "Every creator has the same clear summary.", "lost": "Write 4 lines about your brand."},
+  {"say": "Track everyone in a sheet: name, account, platform, status (contacted, sent, posted, paid, partner), content links and results.", "check": "You see the whole pipeline at a glance.", "lost": "Make a sheet with name and status."},
+  {"say": "Brief creators for the busy season in September, not November. Keep stock and new products flowing to your best partners.", "check": "Creator content arrives in time for the busy season.", "lost": "Put \"brief creators\" in September."}
+ ]},
+"19.4": {"intro": "Clear deals stop arguments later, and let you use the videos the way you planned.",
+ "steps": [
+  {"say": "Agree the seven terms in the lesson's table for each creator: what they deliver, usage rights, exclusivity, partnership ad access, payment, changes, and disclosure.", "check": "Every term has an agreed answer.", "lost": "Agree what they deliver and what you pay."},
+  {"say": "Expect to pay more for raw footage, several hooks, longer usage, exclusivity and partnership ad access.", "check": "Higher fees buy the extras you need.", "lost": "Only pay extra for what you'll really use."},
+  {"say": "Confirm the deal in writing, even just a short email.", "check": "You have written terms for every creator.", "lost": "Send one email that lists the deal."}
+ ]},
+"19.5": {"intro": "An affiliate earns a commission on each sale they bring. If your own offers steal their sales, they stop posting.",
+ "steps": [
+  {"say": "Set up an example offer: 10% off for the creator's audience, and 15% commission on orders over $100 from new customers.", "check": "The offer is live in your affiliate app.", "lost": "Set 10% off and 15% commission."},
+  {"say": "Check the discount plus the commission stays well under your break-even CPA (Module 1). Example: on a $120 order, 10% off is $12, and 15% of the $108 paid is $16.20. Together that's $28.20.", "check": "Every affiliate sale still makes money.", "lost": "Discount + commission must be less than break-even CPA."},
+  {"say": "Fix clashes. If your pop-up gives 15% and their code gives 10%, match their code to your best public offer, or give creators something only they have (a bundle, gift or free express shipping).", "check": "Creator codes are always the best deal for their audience.", "lost": "Make the creator code as good as your pop-up."},
+  {"say": "Give affiliates a content guide: product facts and top three problems solved, angles and hooks that work, a do and don't list, example videos, and how and when they get paid.", "check": "Affiliates can post without asking you questions.", "lost": "Write the top three problems your product solves."},
+  {"say": "Recruit in groups of 10 or more.", "check": "Ten small affiliates posting twice a month beat one big name posting once.", "lost": "Invite 10 at once."}
+ ]},
+"19.6": {"intro": "Partnership ads (whitelisting) run from a creator's account instead of yours. People see a familiar face. Meta reports lower cost per customer in normal sales campaigns, so it's worth a test, not a promise.",
+ "steps": [
+  {"say": "Ask the creator's permission in writing. Agree how long it lasts.", "check": "You have written permission with an end date.", "lost": "Email them asking for permission, with an end date."},
+  {"say": "Ask the creator to connect your ad account (Instagram **Settings > Business tools > Branded content**).", "check": "Their account shows in Ads Manager as an identity you can use.", "lost": "Send them the menu path."},
+  {"say": "Choose content: posts that already did well for free, or new videos made for ads.", "check": "You've picked 2 to 5 creator posts.", "lost": "Pick their best post."},
+  {"say": "Add them to your normal cold campaign as a new batch (not a new campaign). Make the brand clear in the first five seconds.", "check": "Partnership ads run alongside your other ads.", "lost": "Add one to your cold campaign."},
+  {"say": "Judge them like every other ad: cost per sale and hook rate (Lesson 6.12).", "check": "Creator ads earn their budget on the same rules.", "lost": "Check cost per sale."},
+  {"say": "Brief every creator on one page: goal, audience, key message, must say, must not say, 3 hook ideas, what they deliver, usage rights and deadline.", "check": "Each creator has a written brief before filming.", "lost": "Write the goal and the deadline."},
+  {"say": "Offer simple terms. Example: a 10% off code for their audience and 15% commission on new-customer sales.", "check": "Every creator has written terms.", "lost": "Offer 10% off and 15% commission."},
+  {"say": "With written permission, run the creator's video as a partnership ad from their account, inside your normal campaigns.", "check": "Partnership ads are live, often at a lower cost per new customer.", "lost": "Turn on one partnership ad."},
+  {"say": "Give affiliates (people paid per sale) a simple guide with product facts, angles that work and examples.", "check": "Affiliates have what they need to post without asking you.", "lost": "Send them a one-page guide."}
+ ]},
+"19.7": {"intro": "A format is how a video tells its story: testimonial, demo, comparison and more. Healthy accounts run several at once.",
+ "steps": [
+  {"say": "Label each live video ad with its format from the lesson's table.", "check": "You can see your current mix.", "lost": "Label your 3 top ads."},
+  {"say": "Add one missing format to your next batch. Pick it to fit how well people know you (Lesson 5.5).", "check": "You have at least four formats live.", "lost": "Add one format you don't have yet."}
+ ]},
+"19.8": {"intro": "The first 3 seconds have two hooks: what you see and the first sentence. They don't have to match. Hooks are what you test most.",
+ "steps": [
+  {"say": "Collect hook ideas from customer reviews, support emails, and competitors' one and two star reviews.", "check": "You have a hook bank of 10 or more ideas.", "lost": "Write 3 hooks from your reviews."},
+  {"say": "Write a visual hook for your next video: movement, an odd object, a result, a face mid-reaction, or bold on-screen text.", "check": "The first frame grabs attention with the sound off.", "lost": "Start the video with the result."},
+  {"say": "Write 3 spoken hooks of different types: bold statement, call out, curiosity, gossip, myth, one-star reply, price question, result first, opinion or surprising fact.", "check": "You have 3 openings to film.", "lost": "Write one bold statement hook."},
+  {"say": "After 7 days, check in Ads Manager: hook rate (3-second views ÷ impressions) and hold rate (views to 50%, or ThruPlays, ÷ 3-second views).", "check": "You know which opening works. Under 20% hook rate means the opening isn't working.", "lost": "3-second views ÷ impressions. Under 20%? Change the hook."}
+ ]},
+"19.9": {"intro": "A script turns a hook into a sale. A simple five-part shape, 20 to 45 seconds long, works for most products.",
+ "steps": [
+  {"say": "Draft your script in five parts (see the lesson's table): hook, problem or setting, product and proof, answer a worry, call to action.", "check": "You have a 20 to 45 second script.", "lost": "Write one line for each of the five parts."},
+  {"say": "Pick a script idea to rotate in: bold statement and proof, four reasons, myth and friction, gossip, same product different problem, why now, let the product talk, or face the competition.", "check": "Your next batch uses an idea you haven't tried lately.", "lost": "Try \"four reasons\"."},
+  {"say": "Write a call to action with a reason (\"Tap Shop now and grab the starter kit, so it arrives before Friday\"). Make it match the page's offer.", "check": "The call to action is clear and matches the page.", "careful": "Lots of views but few sales usually means a weak call to action, or a hook that pulls the wrong people. Try 30 to 60 second versions when the product needs explaining.", "lost": "End with: tap Shop now, plus one reason."}
+ ]},
+"19.10": {"intro": "A phone is enough. Light, sound and extra shots matter more than fancy gear.",
+ "steps": [
+  {"say": "Face a window for natural light. Avoid only overhead light.", "check": "The face is evenly lit with no harsh shadows.", "lost": "Stand facing a window."},
+  {"say": "Film tall (9:16) at 1080p or higher. Use the back camera when you can.", "check": "Footage is sharp and the right shape.", "lost": "Hold the phone upright."},
+  {"say": "Use a clip-on microphone, or film in a quiet room with soft things like cushions and curtains.", "check": "Sound is clean with no echo.", "lost": "Film in a quiet room."},
+  {"say": "Film several takes of the hook. Then film extra shots: product close-ups, the product in use, packaging, hands, results and places.", "check": "You have spare hooks and extra shots for editing.", "lost": "Film the hook 3 times."}
+ ]},
+"19.11": {"intro": "Editing decides if people watch past 3 seconds. Fast cuts, captions and several hooks lift results.",
+ "steps": [
+  {"say": "Cut every 1 to 2 seconds at the start. Remove pauses and filler words.", "check": "The opening moves fast.", "lost": "Cut out the pauses."},
+  {"say": "Add captions inside the safe zones. Add bold hook text on the first frame.", "check": "The video works with the sound off.", "lost": "Add captions."},
+  {"say": "Put extra shots over the talking. Add quiet music with a licence that allows ads.", "check": "The video shows what's said, and the music is cleared.", "lost": "Add one product close-up over the talking."},
+  {"say": "Export 9:16 (Reels, Stories, TikTok), 4:5 (feed) and 1:1 when needed.", "check": "You have every size.", "lost": "Export 9:16 first."},
+  {"say": "Make 3 to 5 hook versions of each winning video. Change only the first three seconds.", "check": "Winners get fresh openings to test.", "careful": "Label AI-made people or voices where required. Never fake reviews. Check auto-enhance settings before launch.", "lost": "Make one new opening for your best video."}
+ ]},
+"19.12": {"intro": "A clear brief means videos you can use, not wasted product. Send a one-page brief before they film.",
+ "steps": [
+  {"say": "Copy the lesson's brief. Fill in brand, product, link, who you are and who it's for.", "check": "The top of the brief is done.", "lost": "Fill in brand and product."},
+  {"say": "Fill in the goal, key message, proof points, must say and must not say.", "check": "The creator knows what to say and what to avoid.", "lost": "Write one must say and one must not say."},
+  {"say": "Fill in format, 3 hooks, script outline, call to action and offer.", "check": "The direction is clear.", "lost": "Write 3 hooks."},
+  {"say": "Fill in what they deliver, the extra shots list, do and don't, usage rights, deadline, payment, disclosure and example links. Then send it.", "check": "The creator has everything to get it right the first time.", "lost": "Add the deadline. Send it."}
+ ]},
+"19.13": {"intro": "A weekly ad-making habit means you never run out of fresh ads. That's how accounts keep winning.",
+ "steps": [
+  {"say": "Set a goal of 4 to 8 new ads a week at small to medium spend. More as spend grows.", "check": "You have a weekly ad goal.", "lost": "Aim for 4 new ads this week."},
+  {"say": "Keep a hook bank and a library of winners. Tag them by angle, format, type of person and result.", "check": "You can find any past winner in seconds.", "lost": "Save your best ad in a \"winners\" folder."},
+  {"say": "Every Monday, look at last week's results. Pick the winning idea. Brief new versions (new hooks, creators and formats, same message).", "check": "A new batch is briefed every Monday.", "lost": "On Monday, pick last week's winner."},
+  {"say": "Borrow popular formats. Speak to specific groups (runners, new parents, gamers, nurses).", "check": "Each batch has a format working on social right now, and an ad for one specific group.", "careful": "Copy the format, never the content. One well-briefed idea with five hooks beats twenty random videos.", "lost": "Make one ad for one specific group."}
+ ]}
+}
