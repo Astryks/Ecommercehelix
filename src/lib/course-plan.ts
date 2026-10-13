@@ -78,7 +78,7 @@ export const GOALS: GoalDef[] = [
     title: "Fill in your numbers 7 days in a row",
     finishLine: "7 of the last 7 days are filled in with your real numbers.",
     why: "A daily 2-minute check catches a bad ad or a cost blow-out in one day instead of one month.",
-    lessons: ["1.3", "1.6"],
+    lessons: ["1.3", "1.6", "1.10"],
     finish: { kind: "metric", label: "Days filled in (last 7)", unit: "days", target: 7, value: (c) => c.realDays7, minDays: 0 },
     rhythm: [2, 2, 1, 1, 1, 1, 1, 1],
   },

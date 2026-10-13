@@ -216,6 +216,7 @@ export default async function Scorecard() {
               <div className="flex flex-wrap gap-2">
                 <button className="btn-dark"><Upload className="h-4 w-4" aria-hidden /> Import</button>
                 <a href="/scorecard-template.csv" download className="btn-ghost"><Download className="h-4 w-4" aria-hidden /> Template</a>
+                <a href="/downloads/helix-metrics-tracker.xlsx" download className="btn-ghost"><Download className="h-4 w-4" aria-hidden /> Spreadsheet to track by hand</a>
               </div>
             </form>
           </section>

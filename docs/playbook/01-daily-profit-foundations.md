@@ -386,6 +386,64 @@ Working it out step by step:
 
 **What it shows:** MER (ads) looks fine. The real squeeze is VCR at 48%. Shipping costs $9 on a $60 order, which is 15% of every sale. The fix is cheaper shipping and bigger orders, not ads.
 
+## Lesson 1.10: Track your numbers in a spreadsheet
+<!-- stage:grow -->
+
+**Why this matters:** Writing your numbers down every day is how you see trouble early. A simple sheet does the maths for you, so you only type what happened.
+
+**Step 1.** Download the Helix tracking sheet.
+
+1. Open [the sheet download](/downloads/helix-metrics-tracker.xlsx).
+2. Save it somewhere you can find it, like your Desktop.
+
+**Expected result:** You have a file called helix-metrics-tracker.xlsx.
+
+**Step 2.** Open it in the app you like.
+
+- Excel or Numbers: double-click the file.
+- Google Sheets: go to sheets.google.com, click **File**, then **Import**, then **Upload**, and pick the file.
+
+**Expected result:** You see a tab called **Start here** with short instructions.
+
+**Step 3.** Click the **Daily** tab at the bottom.
+
+**Expected result:** You see yellow boxes (you type here) and blue boxes (they work themselves out).
+
+**Step 4.** In the first yellow row, type yesterday's date in **Date**.
+
+**Expected result:** The date shows like 2026-10-12.
+
+**Step 5.** Type yesterday's sales in **Sales**. Find it in Shopify: click **Analytics**, then look at **Total sales** for yesterday.
+
+**Expected result:** A number shows in the Sales box.
+
+**Step 6.** Type yesterday's orders in **Orders** and visits in **Visits**. Both are on the same Shopify **Analytics** page (visits are called **Sessions**).
+
+**Expected result:** Two more numbers are filled in.
+
+**Step 7.** Type what you spent on ads. Meta: open Ads Manager and copy **Amount spent** for yesterday. Google: open Google Ads and copy **Cost**.
+
+**Expected result:** The blue **Total ad spend** box now shows the two added together.
+
+**Step 8.** Type your costs: **Product cost**, **Shipping cost** and **Payment fees**. Not sure? Use the numbers from your Helix **Profit** setup.
+
+**Expected result:** The blue **Profit** box fills in. Green means you made money. Red means you lost money.
+
+**Step 9.** Read the blue boxes.
+
+- **ROAS** (return on ad spend): sales for each $1 of ads.
+- **Conversion rate**: how many in 100 visits bought.
+- **AOV** (average order value): what one order is worth.
+- **MER** (marketing efficiency ratio): ad spend as a share of sales. Lower is better.
+
+**Expected result:** You can say, in one sentence, whether yesterday made money.
+
+**Step 10.** Each Monday, open the **Summary** tab.
+
+**Expected result:** You see your totals for every day you filled in, including total profit.
+
+**Watch out:** Only type in the yellow boxes. If you type over a blue box, download a fresh copy and paste your yellow rows back in.
+
 ## Self-check
 
 1. Why are the sales numbers inside ad platforms a poor scoreboard?
