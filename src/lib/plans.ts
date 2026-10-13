@@ -81,7 +81,7 @@ export const PLANS: Plan[] = [
     suits: "Stores at about A$30k a month or more, or with a team or VA, focused on margin and repeat customers.",
     features: [
       "Everything in Starter",
-      "The full course: Grow and Run goals (margin, returning customers, $100k months, scaling)",
+      "The full course: Grow and Run goals (margin, returning customers, a $1M-a-year pace, scaling)",
       "90-day plans, a weekly meeting agenda and handover playbooks for a team",
       "Email flow blueprints: all 9 flows with full draft copy to paste into Klaviyo or Shopify Email",
       "Google Ads guided setup: Performance Max and Search, step by step. Guidance only, Helix does not connect to your Google account",

@@ -24,8 +24,8 @@ Goals follow the profit-first order. Every track starts the same way: **1. Set u
 | Track | Monthly sales | Who it suits |
 |---|---|---|
 | Just starting | $0 to $10k | Launching, or a few sales a week |
-| Growing | $10k to $100k | Regular sales, ready for more profit |
-| Scaling | Over $100k | Needs systems and a team |
+| Growing | $10k to $80k | Regular sales, ready for more profit |
+| Scaling | Over $80k | Needs systems and a team |
 
 ## All goals in order
 
@@ -46,7 +46,7 @@ Goals follow the profit-first order. Every track starts the same way: **1. Set u
 | 13 | Reach $10k a month in sales | $10,000 or more in sales over the last 30 days. | 6 | Grow | Just starting | Growth | Your numbers |
 | 14 | Get net profit margin to 10% | Net profit is 10% or more of sales over the last 30 days. | 9 | Grow | Growing, Scaling | Growth | Your numbers |
 | 15 | Get 25% of sales from returning customers | A quarter of sales over 30 days come from people who bought before. | 8 | Grow | Growing, Scaling | Growth | Your numbers |
-| 16 | Reach $100k a month with at least 10% profit | $100,000 in sales over 30 days and a net margin of 10% or more. | 7 | Grow | Growing | Growth | Your numbers |
+| 16 | Reach a $1M-a-year pace with at least 10% profit | $84,000 in sales over 30 days (about $1M a year) and a net margin of 10% or more. | 7 | Grow | Growing | Growth | Your numbers |
 | 17 | Grow sales 20% month on month while ads stay profitable | Sales over the last 30 days are 20% higher than the 30 days before, with MER at or under target. | 5 | Grow | Scaling | Growth | Your numbers |
 | 18 | Set your 90-day plan | One goal, three monthly checkpoints and up to three projects, written on one page. | 6 | Run the business | Just starting, Growing, Scaling | Growth | You confirm |
 | 19 | Run a weekly numbers meeting | Four weekly meetings held, each ending with one fix and an owner. | 5 | Run the business | Just starting, Growing, Scaling | Growth | You confirm |
@@ -149,9 +149,9 @@ Each goal's tasks are the steps of the lessons listed, in order. Days follow a l
 **Why this matters:** Returning customers cost almost nothing to win back, so they are the most profitable sales you make.  
 **Lessons:** 10.4, 10.12, 4.7, 3.10, 23.7 · **Days:** 8 (1, 2, 4, 2, 5, 3, 4, 2 tasks, about 20, 30, 30, 15, 45, 30, 40, 15 min)
 
-### Reach $100k a month with at least 10% profit
+### Reach a $1M-a-year pace with at least 10% profit
 
-**Finish line:** $100,000 in sales over 30 days and a net margin of 10% or more.  
+**Finish line:** $84,000 in sales over 30 days (about $1M a year) and a net margin of 10% or more.  
 **Why this matters:** This is the jump from a busy shop to a real business that can pay a team and its owner.  
 **Lessons:** 2.7, 7.10, 8.6, 15.1, 28.9 · **Days:** 7 (1, 3, 4, 2, 5, 2, 4 tasks, about 20, 40, 45, 15, 45, 10, 55 min)
 
@@ -197,7 +197,7 @@ Goal: Set up your profit dashboard, day 2:
 
 Module 29 (Customers, partners and the weekly rhythm) fills gaps the course needed: customer words, the worry behind the purchase, repurposing content, referrals, partner brands, guest spots, a weekly story email, buying-question emails, leading numbers, a weekly numbers meeting, playbooks, owners, a 90-day plan, a quarterly reset, a one-page direction and a wins file. Five are Attract, three Convert and eight Grow.
 
-Later additions: Lessons 1.7 to 1.9 (sales, costs and profit in plain English; setting up the profit dashboard; how much to spend on marketing) power the first and third goals. Lessons 3.10 (subscribe and save), 9.16 (when conversion suddenly drops), 13.12 (a smaller sale between the big ones), 23.7 (customer service that keeps customers) and 28.9 (selling to shops) fill topics the course was missing and are tasks in the conversion, margin, returning customer and $100k goals.
+Later additions: Lessons 1.7 to 1.9 (sales, costs and profit in plain English; setting up the profit dashboard; how much to spend on marketing) power the first and third goals. Lessons 3.10 (subscribe and save), 9.16 (when conversion suddenly drops), 13.12 (a smaller sale between the big ones), 23.7 (customer service that keeps customers) and 28.9 (selling to shops) fill topics the course was missing and are tasks in the conversion, margin, returning customer and $1M-a-year goals.
 
 Lessons 7.14 (find your way around Ads Manager) and 7.13 (launch your first Meta ad in 30 minutes) open the first traffic goals.
 

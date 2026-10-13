@@ -80,7 +80,7 @@ export type MarketingBand = { stage: "pre" | "growing" | "scaling"; low: number 
 export function marketingGuide(monthlySales: number): MarketingBand {
   if (monthlySales < 5000)
     return { stage: "pre", low: null, high: null, title: "No percentage target yet", guide: "Before your first sales, or under about $5,000 a month, a percentage of sales means little. Set a small fixed test budget you can afford to lose (for example $20 to $50 a day for two weeks) and judge each test by its cost per purchase against your break-even cost per purchase." };
-  if (monthlySales < 100_000)
+  if (monthlySales < 80_000)
     return { stage: "growing", low: 10, high: 30, title: "Guide: 10% to 30% of sales", guide: "Growing stores commonly spend about 10% to 30% of sales on all marketing, depending on margin and stage. Newer brands buying growth sit near the top. Stay below your break-even MER, and leave room for profit." };
   return { stage: "scaling", low: 15, high: 25, title: "Guide: 15% to 25% of sales", guide: "Many scaling brands sit around 15% to 25% of sales on all marketing. Spending more is fine while contribution margin stays positive and more customers come back to buy again." };
 }

@@ -143,7 +143,7 @@ export default function Home() {
         <section id="who" aria-labelledby="who-title" className="scroll-mt-10 border-t border-slate-200 bg-paper py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Who Helix is for</p>
-            <h2 id="who-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Built for stores doing <span className="grad-text">$10k to $100k a month</span> that want to reach a $1M year, profitably</h2>
+            <h2 id="who-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Built for stores doing <span className="grad-text">$10k to $80k a month</span> that want to reach a $1M year, profitably</h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{WHO_HEADLINE.body}</p>
             <div className="mt-12"><WhoFor /></div>
           </div>

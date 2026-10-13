@@ -350,8 +350,8 @@ Want to add every cost too? Use **Your numbers > Enter a day** instead.
 **Guides by stage (guides, not rules):**
 
 - **Before your first sales or under about $5,000 a month:** a percentage target means little yet. Set a small fixed test budget you can afford to lose, for example $20 to $50 a day for two weeks, and judge each test by cost per purchase against your break-even cost per purchase.
-- **Growing (about $5,000 to $100,000 a month):** total marketing commonly runs at about 10% to 30% of sales, depending on your margin and stage. Newer brands buying growth sit near the top; brands with lots of returning customers sit lower.
-- **Scaling (over about $100,000 a month):** many brands sit around 15% to 25% of sales on all marketing. Spending more is fine while contribution margin stays positive and returning customers grow, because those customers pay back the cost of winning them.
+- **Growing (about $5,000 to $80,000 a month):** total marketing commonly runs at about 10% to 30% of sales, depending on your margin and stage. Newer brands buying growth sit near the top; brands with lots of returning customers sit lower.
+- **Scaling (over about $80,000 a month):** many brands sit around 15% to 25% of sales on all marketing. Spending more is fine while contribution margin stays positive and returning customers grow, because those customers pay back the cost of winning them.
 
 High margin products can afford a higher share; low margin products cannot. Always leave room between your marketing share and your break-even for fixed costs and profit.
 

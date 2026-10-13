@@ -76,9 +76,9 @@ describe("who Helix is for", () => {
     expect(BANDS.map((b) => b.name)).toEqual(["Just starting", "Growing", "Scaling"]);
     expect(BANDS[1].range).toBe("Up to about $1M a year");
     expect(BANDS[2].range).toBe("About $1M to $10M a year");
-    expect(BANDS[1].monthly).toBe("About $10k to $100k a month");
+    expect(BANDS[1].monthly).toBe("About $10k to $80k a month");
     expect(BANDS.filter((b) => b.fit === "Most value").map((b) => b.id)).toEqual(["growing"]);
-    expect(WHO_HEADLINE.title).toMatch(/\$10k to \$100k a month/);
-    expect(MILESTONES).toContain("First $100k month");
+    expect(WHO_HEADLINE.title).toMatch(/\$10k to \$80k a month/);
+    expect(MILESTONES).toContain("First $1M year");
   });
 });

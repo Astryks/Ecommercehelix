@@ -10,8 +10,8 @@ export type Phase = "numbers" | "attract" | "convert" | "grow" | "run";
 
 export const COURSE_TRACKS: { id: CourseTrack; name: string; band: string; who: string }[] = [
   { id: "starting", name: "Just starting", band: "$0 to $10k a month", who: "Launching, or a few sales a week." },
-  { id: "growing", name: "Growing", band: "$10k to $100k a month", who: "Regular sales, ready for more profit." },
-  { id: "scaling", name: "Scaling", band: "Over $100k a month", who: "A real business that needs systems and a team." },
+  { id: "growing", name: "Growing", band: "$10k to $80k a month", who: "Regular sales, ready for more profit." },
+  { id: "scaling", name: "Scaling", band: "Over $80k a month", who: "A real business that needs systems and a team." },
 ];
 export const toCourseTrack = (v: unknown): CourseTrack => (v === "starting" || v === "scaling" ? v : "growing");
 
@@ -191,11 +191,11 @@ export const GOALS: GoalDef[] = [
   },
   {
     id: "100k-month", phase: "grow", tracks: ["growing"],
-    title: "Reach $100k a month with at least 10% profit",
-    finishLine: "$100,000 in sales over 30 days and a net margin of 10% or more.",
+    title: "Reach a $1M-a-year pace with at least 10% profit",
+    finishLine: "$84,000 in sales over 30 days (about $1M a year) and a net margin of 10% or more.",
     why: "This is the jump from a busy shop to a real business that can pay a team and its owner.",
     lessons: ["2.7", "7.10", "8.6", "15.1", "28.9"],
-    finish: { kind: "metric", label: "Sales, last 30 days", unit: "money", target: 100_000, value: (c) => c.revenue30, extra: (c) => c.marginPct30 >= 10, minDays: 20 },
+    finish: { kind: "metric", label: "Sales, last 30 days", unit: "money", target: 84_000, value: (c) => c.revenue30, extra: (c) => c.marginPct30 >= 10, minDays: 20 },
   },
   {
     id: "scale-20", phase: "grow", tracks: ["scaling"],
