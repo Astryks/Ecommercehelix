@@ -45,7 +45,7 @@ export function CourseTaskRow({ t, done, locked = false }: { t: CourseTask; done
               ) : (
                 <form action={doItForMe}>
                   <input type="hidden" name="taskId" value={lessonTaskId(t.lessonRef, t.step)} />
-                  <button className="btn-dark !px-3 !py-1.5 !text-xs" title="Helix prepares it and asks for your OK before anything changes"><Wand2 className="h-3.5 w-3.5" aria-hidden /> Do it for me</button>
+                  <button className="btn-dark !px-3 !py-1.5 !text-xs" title="Helix gives you a checklist, or builds Meta drafts for your OK"><Wand2 className="h-3.5 w-3.5" aria-hidden /> Help me do it</button>
                 </form>
               )}
               <details className="group">
@@ -54,7 +54,7 @@ export function CourseTaskRow({ t, done, locked = false }: { t: CourseTask; done
                   <li>Open <Link href={t.href} className="font-medium text-cyan-700 underline">the lesson</Link> and find step {t.step}.</li>
                   <li>Do only that one thing. It takes about {t.minutes} minutes.</li>
                   <li>Check you have: {t.expected}</li>
-                  <li>Tick the box here. Stuck? Press Do it for me.</li>
+                  <li>Tick the box here. Stuck? Press Help me do it.</li>
                 </ol>
               </details>
             </div>

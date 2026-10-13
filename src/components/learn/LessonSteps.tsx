@@ -23,8 +23,8 @@ function DoItButton({ action, taskId, small = false }: { action: LessonAction; t
   return (
     <form action={doItForMe}>
       <input type="hidden" name="taskId" value={taskId} />
-      <button className={cls} title="Helix prepares it and asks for your OK before anything changes">
-        <Wand2 className="h-4 w-4" aria-hidden /> {action.kind === "delegate" ? action.label : "Do it for me"}
+      <button className={cls} title={action.kind === "delegate" ? "Helix prepares it and asks for your OK before anything changes" : "Helix gives you a checklist for this step"}>
+        <Wand2 className="h-4 w-4" aria-hidden /> {action.kind === "delegate" ? action.label : "Give me a checklist"}
       </button>
     </form>
   );

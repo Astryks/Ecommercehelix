@@ -50,7 +50,7 @@ export default async function Insights() {
           {!demo && <StoreCheck runs={runs} storeUrl={acct.storeUrl} canRecheck={paid} />}
           {!demo && <h2 className="pt-2 text-lg font-semibold">Ads and funnel {live.metaLive ? "" : "(example data until Meta is connected)"}</h2>}
           {(paid ? open : open.slice(0, 3)).map((ins) => <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} />)}
-          {!paid && open.length > 3 && <UpgradePrompt need="starter" forKey="dfm" title={`${open.length - 3} more fixes found`} body="Free shows your top 3 fixes. Starter shows every fix, with a step-by-step checklist for each." />}
+          {!paid && demo && open.length > 3 && <UpgradePrompt need="starter" forKey="dfm" title={`${open.length - 3} more fixes found`} body="Free shows your top 3 fixes. Starter shows every fix, with a step-by-step checklist for each." />}
           {open.length === 0 && <div className="card p-8 text-center text-slate-600">All clear. Helix will raise new insights after the next audit.</div>}
         </div>
         <aside className="space-y-6">

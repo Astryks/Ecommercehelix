@@ -11,6 +11,10 @@ const NEED_FOR: Record<string, string> = {
   course: "That part of your course",
   history: "Month, year and 12-month views",
   dfm: "\u201cDo it for me\u201d for that task",
+  recheck: "A monthly re-check of your store",
+  plan: "The rest of your 12-week plan",
+  flows: "All 9 email flows, ready to paste",
+  "meta-draft": "Helix building this as a paused draft in your Meta account",
 };
 
 export default async function Billing({ searchParams }: PageProps<"/dashboard/billing">) {

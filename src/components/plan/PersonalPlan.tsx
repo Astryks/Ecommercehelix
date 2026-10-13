@@ -6,6 +6,7 @@ import { topFixes } from "@/lib/site-audit/checks";
 import { blockHref, type PlanState } from "@/lib/plan-state";
 import { PLAN_RANK, planName, type PlanId } from "@/lib/plans";
 import { FindingRow } from "@/components/store-check/StoreCheck";
+import { UpgradePrompt } from "@/components/UpgradePrompt";
 
 /** The big "Step N today" button. */
 export function StepToday({ s }: { s: PlanState }) {
@@ -41,6 +42,15 @@ export function Timeline({ s, plan: userPlan }: { s: PlanState; plan: PlanId }) 
   );
 }
 
+/** At most one upgrade prompt, at the moment it helps. */
+function PlanPrompt({ s, plan }: { s: PlanState; plan: PlanId }) {
+  if (s.diag.diagnosis.bottleneck === "leaky-bucket" && PLAN_RANK[plan] < PLAN_RANK.growth)
+    return <div className="mt-4"><UpgradePrompt compact need="growth" forKey="flows" title="Your biggest leak is repeat customers" body="Growth has all 9 email flows written and ready to paste into Klaviyo or Shopify Email." /></div>;
+  if (PLAN_RANK[plan] < PLAN_RANK.starter && s.plan.some((b) => b.tier !== "free"))
+    return <div className="mt-4"><UpgradePrompt compact need="starter" forKey="plan" title={`Weeks ${s.plan[3].weeks[0]} to ${s.total} of your plan are on Starter`} body="Weeks 1 to 4 are free: profit, your numbers and your top store fixes. Starter adds the step-by-step sprints, a monthly store re-check and Meta drafts." /></div>;
+  return null;
+}
+
 /** The diagnosis, top store fixes, the 12-week timeline and Step 1. Used at the end of onboarding and on /dashboard/plan. */
 export function PersonalPlan({ s, storeUrl, plan }: { s: PlanState; storeUrl: string | null; plan: PlanId }) {
   const d = s.diag.diagnosis;
@@ -68,6 +78,7 @@ export function PersonalPlan({ s, storeUrl, plan }: { s: PlanState; storeUrl: st
         <h2 className="text-lg font-semibold">Your {s.total}-week plan</h2>
         <p className="text-sm text-slate-600">Week {s.week} of {s.total}.{s.total > 12 ? " Stretched to fit 1 to 2 hours a week." : ""} One step at a time. You can redo the questions any time.</p>
         <Timeline s={s} plan={plan} />
+        <PlanPrompt s={s} plan={plan} />
         <Link href="/start?step=2&restart=1" className="mt-3 inline-block text-xs text-slate-500 underline">Answer the questions again</Link>
       </section>
     </div>

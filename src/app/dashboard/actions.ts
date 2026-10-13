@@ -59,7 +59,7 @@ export async function doItForMe(form: FormData) {
   const item = LESSON_TASK_ID.test(taskId) ? lessonActionable(taskId, signals) : findActionable(taskId, signals);
   if (!item) return;
   const acct = await getAccount(u.id);
-  if (PLAN_RANK[acct.plan] < PLAN_RANK[item.tier]) redirect("/dashboard/billing?need=" + item.tier);
+  if (PLAN_RANK[acct.plan] < PLAN_RANK[item.tier]) redirect("/dashboard/billing?need=" + item.tier + "&for=" + (item.id === "build-meta-campaign" ? "meta-draft" : item.id.startsWith("flow-") ? "flows" : "dfm"));
   let detail = item.detail;
   if (item.id === "build-meta-campaign") {
     const { input, missing } = await draftInputFor(u.id);

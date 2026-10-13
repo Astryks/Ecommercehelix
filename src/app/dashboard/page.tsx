@@ -341,11 +341,10 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                 {currentLocked ? (
                   <div className="mt-5 rounded-xl bg-violet-50 p-4 text-sm text-violet-900">
                     Stage {current.stage} of the guided programme is part of the {planName(STAGE_TIER[current.stage])} plan. The lesson stays free in Learn.
-                    <Link href="/dashboard/billing" className="btn-primary mt-3 w-full sm:w-auto">Unlock Stage {current.stage}</Link>
                   </div>
                 ) : (
                   <div className="mt-5 border-t border-slate-100 pt-5">
-                    {current.doIt && <p className="mb-3 text-sm text-slate-700"><strong>Want me to do it for you?</strong> {current.doIt.label}. Nothing changes until you approve it.</p>}
+                    {current.doIt && <p className="mb-3 text-sm text-slate-700"><strong>Want a checklist for this?</strong> {current.doIt.label}.</p>}
                     <div className="flex flex-wrap items-center gap-3">
                     {current.doIt ? (
                       pending.has(dayTaskId(current.day)) ? (
@@ -434,7 +433,6 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
                 );
               })}
             </ol>
-            {STAGES.some((st) => !unlocked(st.id)) && <Link href="/dashboard/billing" className="btn-primary mt-5 w-full">Unlock the full roadmap</Link>}
           </div>
         </aside>
       </div>

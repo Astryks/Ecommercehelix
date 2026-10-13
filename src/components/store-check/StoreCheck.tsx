@@ -5,6 +5,7 @@ import { lessonLink } from "@/lib/lesson-links";
 import { topFixes, changesSince, type Finding } from "@/lib/site-audit/checks";
 import type { AuditRunRow } from "@/lib/site-audit/run";
 import { checkNow } from "@/app/dashboard/store-check/actions";
+import { UpgradePrompt } from "@/components/UpgradePrompt";
 
 const ICON = {
   high: <AlertTriangle className="h-4 w-4 text-rose-600" aria-hidden />,
@@ -84,6 +85,7 @@ export function StoreCheck({ runs, storeUrl, limit = 5, back = "/dashboard/insig
           <ul className="divide-y divide-slate-100">{good.map((f) => <FindingRow key={f.id} f={f} />)}</ul>
         </>
       )}
+      {last.ok && !canRecheck && <div className="mt-4"><UpgradePrompt compact need="starter" forKey="recheck" title="Re-check your store every month" body="Starter checks your store each month and shows exactly what you fixed and what's new." /></div>}
       {last.ok && <p className="mt-3 text-xs text-slate-500">Some apps load tracking and pop-ups later, so &quot;not seen&quot; means not seen in your page source.</p>}
     </section>
   );
