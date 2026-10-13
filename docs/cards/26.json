@@ -1,0 +1,44 @@
+{
+"26.1": {"intro": "GST is 10% on most Australian sales once you're registered. The GST you collect belongs to the ATO (the tax office), not you. So put it aside.",
+ "steps": [
+  {"say": "Check your GST turnover (this month plus the previous 11). Register within 21 days of it reaching $75,000, or as soon as you expect to reach it in the next 12 months.", "check": "You know if you must register.", "lost": "Add up 12 months of sales. Is it $75,000 or more?"},
+  {"say": "Once registered, show prices to Australians with GST included, and issue tax invoices.", "check": "Checkout prices include GST.", "lost": "Not registered? Skip this card."},
+  {"say": "Open a separate bank account. Each week, move one eleventh of your GST-inclusive sales into it. Example: $1,100 in sales ÷ 11 = $100.", "check": "The GST bill is already saved when it's due.", "lost": "Sales ÷ 11. Move that amount."},
+  {"say": "Lodge your BAS (business activity statement) on time. Quarterly due dates are 28 October, 28 February, 28 April and 28 July.", "check": "The dates are in your calendar. Lodging online may add two weeks, except for the December quarter.", "lost": "Put the four dates in your calendar."},
+  {"say": "Claim GST credits on business costs that include GST, like local stock and services. Keep the tax invoices.", "check": "Your BAS includes your credits.", "lost": "Keep every tax invoice."},
+  {"say": "In Helix **Settings**, keep **My prices include GST/VAT** on.", "check": "Helix profit leaves GST out.", "careful": "New Zealand: exports are usually GST-free. But if low-value sales (NZ$1,000 or less) to NZ consumers pass NZ$60,000 in 12 months, you must register for NZ GST at 15%. US sellers into Australia must register once sales to Australian consumers pass A$75,000.", "lost": "Leave it switched on."}
+ ]},
+"26.2": {"intro": "Lots of costs come from overseas: ads, apps, software and stock. GST works differently on each.",
+ "steps": [
+  {"say": "If registered, give every overseas supplier of services and apps (ads, Shopify apps, software) your ABN, and say you're GST registered.", "check": "Their invoices no longer include GST.", "lost": "Add your ABN in your Meta billing settings."},
+  {"say": "If a supplier charged GST wrongly, ask them for a refund.", "check": "The wrong GST comes back. You generally don't owe reverse-charge GST on fully business purchases.", "lost": "Email them asking for the GST back."},
+  {"say": "Not registered? Don't say you are. Pay GST like any customer.", "check": "Your supplier records are correct.", "lost": "Not registered? Leave your ABN off."},
+  {"say": "For stock imports over A$1,000, pay GST and any duty at the border through your broker or forwarder. Keep the paperwork. Claim that GST on your BAS.", "check": "Import GST shows as a credit on your BAS.", "lost": "Keep the import paperwork."},
+  {"say": "Record stock cost without GST in your books and in Helix.", "check": "Your cost of goods is ex GST.", "careful": "US: there's no GST. Give suppliers a resale certificate so you don't pay sales tax on stock you resell, and check your state's use tax rules.", "lost": "Enter stock cost without GST."}
+ ]},
+"26.3": {"intro": "The US has no national sales tax. Each state has its own rules. You collect a state's tax only once you have nexus there (a strong enough link to it).",
+ "steps": [
+  {"say": "List states where you have physical nexus: where you live, have staff, or store stock (including in a third-party warehouse).", "check": "You have a list of physical nexus states.", "lost": "Write your home state."},
+  {"say": "Check each state's economic nexus threshold. It's often $100,000 a year. California and Texas are $500,000. New York is over $500,000 plus over 100 sales.", "check": "You know each state's threshold.", "lost": "Check your biggest state's threshold."},
+  {"say": "In Shopify **Settings > Taxes and duties**, watch how close you are to each threshold.", "check": "You see thresholds before you cross them.", "lost": "Open **Taxes and duties**."},
+  {"say": "Register with a state before collecting its tax. Then turn that state on in Shopify.", "check": "Shopify collects tax only where you're registered.", "lost": "Register first, then turn it on."},
+  {"say": "File and pay on the state's schedule (monthly, quarterly or yearly), including nil returns if asked.", "check": "Every filing is on time.", "careful": "Marketplaces like Amazon usually collect for you on their sales, but your own store is yours to handle. Non-US sellers face the same thresholds, even without a US company or warehouse.", "lost": "Put your filing dates in your calendar."}
+ ]},
+"26.4": {"intro": "Selling overseas means charging the customer's tax, or leaving them to pay it at the door. Surprise fees cause refused parcels and angry reviews.",
+ "steps": [
+  {"say": "Decide who pays import tax and duty: you at checkout (DDP, delivered duty paid) or the customer on delivery (DAP, delivered at place).", "check": "You have one rule per country. DDP means more paperwork but smoother delivery.", "lost": "Pick DDP or DAP for one country."},
+  {"say": "UK: for parcels of £135 or less, register for UK VAT, charge it at checkout, and pay HMRC.", "check": "UK VAT is collected at checkout.", "lost": "Don't sell to the UK yet? Skip."},
+  {"say": "EU: for parcels up to 150 euros, use IOSS (import one stop shop) to charge EU VAT at checkout and file in one country, usually through an EU intermediary.", "check": "EU VAT is collected at checkout.", "lost": "Don't sell to the EU yet? Skip."},
+  {"say": "Canada: if taxable sales of goods to Canada pass C$30,000 in 12 months, register for GST/HST.", "check": "You know if you must register in Canada.", "lost": "Check your Canada sales for 12 months."},
+  {"say": "Use Shopify Markets to show local prices and collect duties at checkout where you can.", "check": "Shoppers see a full local price.", "lost": "Turn on local prices in Markets."},
+  {"say": "Work out profit per country again, with tax, duty and shipping (Lesson 15.2).", "check": "You know which countries make money.", "careful": "Australian goods may get lower UK duty under the Australia-UK free trade agreement. US goods may get lower Canada duty under the US-Mexico-Canada agreement, if origin rules are met.", "lost": "Work out profit for one country."}
+ ]},
+"26.5": {"intro": "Duties are taxes on imported goods. They depend on what the product is, where it was made, and its value. They change your landed cost.",
+ "steps": [
+  {"say": "Find the HS code (tariff code) for each product, with your forwarder or broker.", "check": "Every product has a code. A wrong code means a wrong duty.", "lost": "Ask your broker for your best seller's code."},
+  {"say": "Write down the country of origin for each product: where it was made, not where it ships from.", "check": "Every product has an origin.", "lost": "Where was your best seller made?"},
+  {"say": "Add duty, freight and broker fees to landed cost in Helix **Suppliers & stock**.", "check": "Product margins include duty.", "lost": "Add duty to your best seller."},
+  {"say": "When rates change, decide product by product.\n\n1. Work out the new margin for each product.\n2. For each one, pick one fix:\n\n- A higher price.\n- Cheaper shipping.\n- A new place to make it.\n- A lower margin for now.", "check": "You have a decision for each affected product.", "lost": "Pick one fix for your best seller."},
+  {"say": "Keep import paperwork as long as your tax records.", "check": "Paperwork is filed.", "careful": "US: since 29 August 2025 the $800 de minimis rule no longer applies, so low-value parcels pay duty. Compare per-parcel duty with bulk shipping to a US warehouse. Australia: imports over A$1,000 need a customs declaration, and free trade agreements can cut duty with a certificate of origin.", "lost": "Put import papers in one folder."}
+ ]}
+}
