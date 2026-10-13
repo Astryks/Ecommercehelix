@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: { siteName: SITE_NAME, type: "website", locale: "en_AU", url: "/" },
   twitter: { card: "summary_large_image" },
-  // TODO(Sid): add verification: { google: "...", other: { "msvalidate.01": "..." } } after Search Console / Bing setup.
+  verification: { google: "Vq1JkgDh_HtDkARRBnRMbfzvuobGKb7NSdX47U-bTo4" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
