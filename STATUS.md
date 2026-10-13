@@ -1,6 +1,6 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 11 AM (Sydney)._
+_Last updated: 13 Oct 2026, about 11:25 AM (Sydney)._
 
 ## At a glance
 
@@ -31,7 +31,9 @@ _Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 
 ## What is new since 6 Oct 2026
 
-**Brand spelling (13 Oct).** The brand is written **E-commerce Helix** everywhere users see it (titles, metadata, header, footer, About, home, guides, sign-in emails, docs). The domain, repo and code names stay `ecommercehelix`. Sign-in emails now use our own template: subject "Sign in to E-commerce Helix", sender name "E-commerce Helix" (address still from `EMAIL_FROM`). **For Sid:** in Stripe, set the public business name to "E-commerce Helix" and upload the logo and brand colour (Settings, Business, Public details and Branding) so Checkout, the portal and receipts match.
+**Brand spelling (13 Oct).** The brand is written **E-commerce Helix** everywhere users see it (titles, metadata, header, footer, About, home, guides, sign-in emails, docs). The domain, repo and code names stay `ecommercehelix`. Sign-in emails now use our own template: subject "Sign in to E-commerce Helix", sender name "E-commerce Helix" (address still from `EMAIL_FROM`).
+
+**Logo option B live (13 Oct, ~11 AM).** Sid picked the coral double helix rising up and to the right. It is live on production as the site mark (`public/logo.svg`), favicon, apple touch icon and PWA icons (`icon-192.png`, `icon-512.png`, `manifest.ts`). Commit `0e6a721`, deployment READY. **For Sid:** in Stripe, set the public business name to "E-commerce Helix" and upload this logo and brand colour (Settings, Business, Public details and Branding) so Checkout, the portal and receipts match. Then buy Helix Starter once on the live site, confirm the payment lands, refund and cancel it.
 
 **Stripe billing, test mode live (13 Oct).**
 - Checkout is on in Stripe **test mode** (sandbox "E-commerce Helix sandbox", AU, AUD). Products: Helix Starter A$29 a month (`helix_starter_monthly`) and Helix Growth A$59 a month (`helix_growth_monthly`). Prices show as A$ on the pricing section and billing page.
@@ -72,7 +74,10 @@ _Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 
 | Commit | Date | What |
 |---|---|---|
-| (this commit) | 13 Oct | STATUS: commit hashes and deploy check |
+| (this commit) | 13 Oct | STATUS: logo B live, Stripe confirm next, honest Growth Google wording |
+| 0e6a721 | 13 Oct | Logo option B: coral double helix mark, lockup, favicon, apple icon, PWA icons |
+| 9ac2bd1 | 13 Oct | STATUS: Stripe checkout is live in production |
+| e9903cd | 13 Oct | Brand spelling E-commerce Helix everywhere, branded sign-in email |
 | 8854b87 | 13 Oct | Profit setup and new goal order, marketing % guide, free and paid gating, gap lessons, anchor redirects, Black Friday catch-up, shorter days, STATUS |
 | a1e4f7b | 13 Oct | STATUS rewrite; /course sign-in redirect returns to /course |
 | 39d8e78 | 13 Oct | The Helix Course |
@@ -134,7 +139,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 - **GST/VAT setting:** "My prices include GST/VAT" strips tax from sales before any profit maths (`src/lib/tax.ts`).
 - **Learn:** 29-module Helix Playbook (275 lessons) in plain words, each lesson tagged with a stage, "In plain words" boxes, a 106-term glossary (`/learn/words`), 16 drawings that show where to click, and the goals ladder guide.
 - **Meta integration (real):** Facebook Login for Business connect, encrypted long-lived token, asset picker, daily sync plus Sync now, insights into the campaign tracker and audit rules, paused-only drafts after approval, audit log, disconnect. Mock mode without a Meta app. Setup: `docs/meta-setup.md`.
-- **Other screens:** What to fix (insights), Waiting for your OK (approvals), Your numbers (scorecard and CSV import), Your ads, campaign builder, Email automation, Ad Trends, Weekly report, Connections, Settings (track, country, GST/VAT), Plan & billing (Stripe Checkout and webhook, waiting for keys).
+- **Other screens:** What to fix (insights), Waiting for your OK (approvals), Your numbers (scorecard and CSV import), Your ads, campaign builder, Email automation, Ad Trends, Weekly report, Connections, Settings (track, country, GST/VAT), Plan & billing (Stripe Checkout, portal and webhook live).
 
 - **Profit setup** (`/dashboard/profit`), **Your course** (`/course`), **Growth** (`/dashboard/growth`) and **Key metrics** (`/dashboard/metrics`) are in the sidebar.
 
@@ -144,7 +149,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 |---|---|---|
 | Resend email sign-in | Live | Nothing |
 | Meta (Facebook and Instagram ads) | Built: connect, encrypted tokens, daily sync, paused drafts, audit log. Runs in mock mode | Sid creates the Meta developer app, completes Business Verification and App Review (`docs/meta-setup.md`), then adds `META_APP_ID` and `META_APP_SECRET` |
-| Stripe billing | Built: Checkout and signed webhook | Secret key, webhook secret and price IDs for Starter and Growth |
+| Stripe billing | Live in production (Checkout, webhook, portal; Starter A$29, Growth A$59) | Sid: one real Starter purchase then refund/cancel; set public business name, support email and logo in Stripe |
 | Google sign-in | Built, optional | `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET` |
 | Shopify | Stock sync stubbed; sales, sessions and add-to-cart are typed in | Shopify app and API access to sync automatically |
 | Google Ads | Guidance only: lessons 8.1 to 8.11 and 20.4; example rows in Your ads | Developer token, OAuth client with the adwords scope and verification, manager account |
@@ -152,24 +157,22 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 
 ## Next steps and blockers (in priority order)
 
-1. **Stripe keys and price IDs (blocker for revenue).** Paid plans cannot be bought until they are set.
+1. **Confirm live Stripe once.** Sid buys Helix Starter on production, checks the payment and plan update, then refunds and cancels. Also set Stripe public business name, support email and logo (option B) under Public details and Branding.
 2. **Meta developer app and verification (blocker for live ad data).** Unlocks automatic spend, ROAS and CTR on the metrics panel and live paused drafts.
-3. **Logo redesign: pending Sid's pick.** Recommendation: a compounding-curve double helix, with a minimal tile favicon.
-4. **Shopify sync.** Fills sessions, sales and add-to-cart automatically, so more course finish lines check themselves.
-5. **Course polish.** Course-specific Do it for me actions for the new Module 29 lessons; a weekly email that recaps the current goal; let owners pick a goal out of order; a finish-line history.
-6. **Google Ads connection** (not built): needs a Google Ads API developer token (apply in a manager account, basic access review), a Google Cloud OAuth client with the `adwords` scope and app verification, a manager (MCC) account to link customers, then sync of spend and conversions and paused-draft builds like Meta.
-7. **Decide when to switch off the demo login** on production.
-8. **Google sign-in** if wanted.
-9. **Google Ads, TikTok and Klaviyo connections** to replace example data.
-10. Answer the open questions below.
+3. **Shopify sync.** Fills sessions, sales and add-to-cart automatically, so more course finish lines check themselves.
+4. **Course polish.** Course-specific Do it for me actions for the new Module 29 lessons; a weekly email that recaps the current goal; let owners pick a goal out of order; a finish-line history.
+5. **Google Ads connection** (not built): needs a Google Ads API developer token (apply in a manager account, basic access review), a Google Cloud OAuth client with the `adwords` scope and app verification, a manager (MCC) account to link customers, then sync of spend and conversions and paused-draft builds like Meta.
+6. **Decide when to switch off the demo login** on production.
+7. **Google sign-in** if wanted.
+8. **Google Ads, TikTok and Klaviyo connections** to replace example data.
+9. Answer the open questions below.
 
 ## Waiting on Sid
 
-1. Stripe secret key, webhook secret and price IDs.
+1. One real Helix Starter purchase on live checkout, then refund and cancel; set Stripe public business name to "E-commerce Helix", support email and logo option B.
 2. Meta app, Business Verification and App Review.
-3. Logo pick (recommended: compounding-curve double helix, minimal tile favicon).
-4. Google OAuth keys (optional).
-5. When to turn off the demo login.
+3. Google OAuth keys (optional).
+4. When to turn off the demo login.
 
 ## Decisions made
 
@@ -178,7 +181,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 - Execution model (Sid, 6 Oct 2026): **Draft & you launch** by default. Helix pushes campaigns into the user's own Meta/Google account as paused drafts; the user presses Launch. Budget edits on live campaigns are always made by the user. **Guide me** mode for users without connected accounts. See docs/execution-model.md.
 - Proactive audits (site, ads, email, social) with cross-diagnosis rules feed Today and Insights. See docs/audit-engine.md.
 - Email automation: Helix suggests missing flows, drafts them and sets them up after approval. See docs/email-automation.md.
-- Pricing (updated 13 Oct): Free $0 (profit dashboard, daily numbers, key metrics, basic growth chart, the numbers goals of the course, every lesson, top 3 audit fixes, hard AI cost cap), Starter $29 (Attract and Convert goals, Do it for me, Meta sync and paused drafts, seasonal prep plans, all fixes and AI help, full dashboard history, about $3 AI included at cost), Growth $59 (Grow and Run goals, team and playbooks, Meta and Google, email flows set up after approval, weekly report, about $8 AI included at cost). Extra AI via prepaid wallet at 2x provider cost, stops at $0. Ad spend stays on the customer's own accounts.
+- Pricing (updated 13 Oct): Free $0 (profit dashboard, daily numbers, key metrics, basic growth chart, the numbers goals of the course, every lesson, top 3 audit fixes, hard AI cost cap), Starter $29 (Attract and Convert goals, Do it for me, Meta sync and paused drafts, seasonal prep plans, all fixes and AI help, full dashboard history, about $3 AI included at cost), Growth $59 (Grow and Run goals, team and playbooks, Meta plus Google Ads guided setup with connection coming soon, email flows set up after approval, weekly report, about $8 AI included at cost). Extra AI via prepaid wallet at 2x provider cost, stops at $0. Ad spend stays on the customer's own accounts.
 - Stack: Next.js on Vercel, Postgres, Prisma, Auth.js, Stripe, Vercel AI SDK with hosted models, SOPs as RAG. PWA push approvals in month 2. Native app later. No GPUs or fine-tuning in v1.
 - Model routing: rules first (no LLM), Flash-Lite for extraction, Haiku 4.5 for daily writing and chat, Sonnet 5.5 for weekly reports and diagnosis.
 - All playbooks are original Helix SOPs. Private research material stays outside this repo (`research/` and `transcripts/` are gitignored).
@@ -198,7 +201,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 12. Pausing losing ads: may Helix pause after a per-action approval (it only reduces spend), and should we offer an opt-in auto-pause rule? Currently: pause with approval, no auto-pause.
 13. Plan gating of the daily programme: Free Days 1 to 17, Starter to Day 52, Growth all 64. The Just starting track (21 days) is free in full, with Do it for me still gated. Happy with that split?
 14. Social profile audit: public-data checks only at launch, or request Instagram/TikTok/Facebook account access for insights?
-15. ~~Vercel project and Postgres provider?~~ Decided: Vercel and Neon (6 Oct 2026). Stripe price IDs are still needed (see Waiting on Sid).
+15. ~~Vercel project and Postgres provider?~~ Decided: Vercel and Neon (6 Oct 2026). ~~Stripe price IDs~~ Live checkout is on; Sid still confirms one real Starter payment (see Waiting on Sid).
 16. Calendar: which other countries next (UK, NZ, Canada)? Should Helix fetch official Click Frenzy dates each year instead of the approximate rule?
 17. Who Helix is for: is the headline right ("built for stores doing $10k to $100k a month that want to reach a $1M year, profitably")? Bands: Just starting under about $10k a month, Growing about $10k to $100k a month (most value), Scaling about $1M to $10M a year.
 18. Goals ladder: are the suggested starting goals right for each track (Growing: 30,000 visits, 1.2% CTR, 7.5% add to cart, 2.2% conversion, $92 AOV, 30% MER, $28 CPA, 20% contribution, $3,000 net profit; Just starting: 3,000 visits, 1% CTR, 6%, 1.5%, $60, 35% MER, $21, 10%, $0 or more)?

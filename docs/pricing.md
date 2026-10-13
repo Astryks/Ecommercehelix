@@ -12,8 +12,8 @@ All costs below are **estimates** in USD, based on list prices for hosted models
 | Store audits | 3 a month | Unlimited re-audits (cached weekly) | Unlimited re-audits (cached weekly) |
 | Daily plans (Today screen) | 3 a month | Every day | Every day |
 | Guides ("I'll do it") | Yes | Yes | Yes |
-| Scorecard | Manual entry | Auto from Shopify + one ad platform | Auto from Shopify, Meta, Google |
-| Approval queue and bot actions | No | Yes, **one of Meta or Google** | Yes, **Meta and Google** |
+| Scorecard | Manual entry | Auto from Shopify + Meta (when connected) | Auto from Shopify + Meta; Google Ads guided setup (connection coming soon) |
+| Approval queue and bot actions | No | Yes, **Meta** (paused drafts you launch) | Yes, **Meta** now; Google connection coming soon |
 | Email and SMS flow drafts (Klaviyo) | Guides only | Guides only | Yes |
 | Weekly agency-style report | No | No | Yes |
 | Site edit drafts with preview (Shopify) | No | No | Yes (beta) |
