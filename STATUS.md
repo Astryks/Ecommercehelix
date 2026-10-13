@@ -225,3 +225,7 @@ Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h
 - Revenue line is now "Built for stores doing $10k to $80k a month that want to reach a $1M year, profitably" (a9de7c6).
 - Accuracy audit fixed arithmetic, contradictions, platform facts (Google seasonality path, TikTok Shop website checkout), false Helix claims (AI, social audit, weekly report, Monday email), and softened benchmarks to "a common guide".
 - Open: Meta app keys are missing in production, so "Meta connects today" is not true yet. NUDGES_LIVE is off.
+
+## 13 Oct 2026: handwriting only for purple text
+- Permanent Marker and Kalam are now used only for purple text (big purple headings and numbers, purple accents, the "Helix" in the logo). All ink text (card titles, subheadings, questions, buttons, labels, nav, "E-commerce" in the logo) is Nunito, normal or semibold.
+- Revenue bands checked: Growing "About $10k to $80k a month", Scaling "About $80k a month and up". No $100k-a-month text left (the old card was a stale deploy).

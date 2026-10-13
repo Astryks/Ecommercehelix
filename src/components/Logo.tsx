@@ -19,13 +19,13 @@ export function HelixMark({ size = 36, className, title = "E-commerce Helix", da
   );
 }
 
-/** Lockup: mark + "E-commerce Helix" wordmark in marker lettering, "Helix" in purple. */
+/** Lockup: mark + "E-commerce Helix" wordmark "E-commerce" in Nunito, "Helix" in purple Kalam. */
 export function Logo({ size = 34, dark = false }: { size?: number; dark?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2">
       <HelixMark size={size} dark={dark} />
-      <span className={`font-hand text-[1.4rem] leading-none ${dark ? "text-white" : "text-[#1A1718]"}`}>
-        E-commerce <span className={dark ? "text-[#B0ABEF]" : "text-[#5A50D6]"}>Helix</span>
+      <span className={`text-[1.35rem] font-semibold leading-none tracking-tight ${dark ? "text-white" : "text-[#1A1718]"}`}>
+        E-commerce <span className={`font-hand text-[1.45rem] ${dark ? "text-[#B0ABEF]" : "text-[#5A50D6]"}`}>Helix</span>
       </span>
     </span>
   );

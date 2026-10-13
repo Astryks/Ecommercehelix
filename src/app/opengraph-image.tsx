@@ -10,8 +10,8 @@ export default async function OgImage() {
   return new ImageResponse(
     (
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: 80, background: "#F2F1EC", color: "#1A1718" }}>
-        <div style={{ display: "flex", fontSize: 44, color: "#1A1718", fontWeight: 700, fontFamily: kalam ? "Kalam" : undefined }}>E-commerce&nbsp;<span style={{ color: "#5A50D6" }}>Helix</span></div>
-        <div style={{ fontSize: 72, fontWeight: 700, marginTop: 24, lineHeight: 1.1, color: "#5A50D6" }}>Grow your e-commerce business a little every day</div>
+        <div style={{ display: "flex", fontSize: 44, color: "#1A1718", fontWeight: 700 }}>E-commerce&nbsp;<span style={{ color: "#5A50D6", fontFamily: kalam ? "Kalam" : undefined }}>Helix</span></div>
+        <div style={{ fontSize: 72, fontWeight: 700, marginTop: 24, lineHeight: 1.1, color: "#5A50D6", fontFamily: kalam ? "Kalam" : undefined }}>Grow your e-commerce business a little every day</div>
         <div style={{ fontSize: 32, marginTop: 32, color: "#3A3634" }}>Daily profit dashboard · One clear task a day · You approve every change</div>
       </div>
     ),
