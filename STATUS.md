@@ -284,3 +284,8 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 - **I'm lost:** small button bottom-right on every dashboard screen. Reopens the current card in a shorter, calmer version; with no progress it restarts at Step 1, understand your business.
 - Schema (additive, applied to Neon before push): ProfitSetup.productName, CourseState.cardDeck/cardIndex/cardDay/cardsToday.
 - Not done: lesson step text is the existing playbook wording split one step per card (already one instruction each), not hand-rewritten for a 10-year-old; the "I'm lost" version uses the first sentence of each step. Production signed-in screenshots not possible (demo login is off in production); dashboard and setup deck screenshots were taken from the same build run locally, lesson-as-cards from production. Screenshots: /workspace/reports/helix/screenshots/28-*.png.
+
+## 13 Oct 2026: one path on Today, child-simple card text (in progress)
+- Today: "Your one step today", the course goal card and the "New here? / New: your personal plan" banners are gone. The next-card hero is the only call to action; it carries a small optional "answer a few questions" link when onboarding or the diagnosis is not done. Goal celebration stays.
+- Child-simple rewrites live in docs/cards/NN.json (per lesson: intro; per step: say, check, careful, lost). A deck uses the rewrite only when its step count matches the lesson, otherwise it falls back to the playbook text. A test checks every file.
+- Done: modules 1 and 2 (17 lessons, 74 steps), each with its own "I'm lost" text. Remaining: modules 3 to 29 (264 lessons, about 1,100 steps), which still show the playbook step text and the first-sentence I'm lost fallback. Add a docs/cards/NN.json per module to continue.
