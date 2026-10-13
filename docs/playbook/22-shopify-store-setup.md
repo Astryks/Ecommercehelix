@@ -10,7 +10,7 @@
 >
 > **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
 >
-> **What it is:** Step by step, how to set up a Shopify store that is ready to take real orders.
+> **What it is:** We build your Shopify store one small step at a time, until it is ready for real orders.
 >
 > **Why it matters:** A clear, fast, trustworthy store makes every ad dollar go further. Mistakes in tax, payments or tracking are hard to fix later.
 >

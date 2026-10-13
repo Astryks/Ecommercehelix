@@ -351,3 +351,7 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 - Auto-renew notice added to the home pricing section, the billing page and Stripe Checkout (custom submit text with a link to /terms).
 - Removed "check with a lawyer" wording (legal pages, docs/legal-pages.md, Lesson 22.12 note).
 - For Sid: when Stripe goes live, check the live-mode customer portal also cancels at period end.
+
+## Originality check (2026-10-14)
+- Method: `python3 scripts/originality-check.py <private transcript dirs>` (the paths are passed in when you run it, and no source text is stored in the repo). Text is lowercased and punctuation is stripped. Every text file in docs/ (md, cards json, html, csv, py) and src/ is compared with every private transcript and PDF-text file, 384 Helix files in all. The script looks for shared 8-word runs. It skips runs made only of stopwords or common terms, plus month lists and country-code lists. It also does sentence-to-sentence difflib matching (ratio > 0.75), with a shortlist built from shared 4-grams. As a separate pass, I ran 6-grams with no frequency whitelist.
+- Results: 3 files had 8-gram overlaps at first. Two were month-name arrays in code, which were false positives. One was a generic phrase in playbook/22, and I reworded it anyway. After that: 0 8-gram overlaps, 0 near-paraphrase sentence pairs, and 0 hits for source or coach names (checked against the banned-terms list plus community and coach names). The 6-gram pass only finds everyday phrases (e.g. "give people a reason to buy").
