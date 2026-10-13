@@ -253,7 +253,7 @@ Checked about 5:05 PM Sydney against production deploy dpl_GicRmVUwEaJzEQSK9akXJ
 | --- | --- | --- |
 | Git and deploy | Works | origin/main matched the live commit; clean tree apart from the legal-email worker's change, which was then pushed |
 | Public pages | Works | home, about, learn, a lesson (/learn/words), privacy, terms, data-deletion, signin: 200. /course and /start: 307 to sign-in (expected). No errors in recent runtime logs |
-| Sign-in email | Untested | Resend provider live, AUTH_RESEND_KEY and EMAIL_FROM set. No real send; no test inbox |
+| Sign-in email | Untested | Resend provider live, AUTH_RESEND_KEY and EMAIL_FROM set. 13 Oct 5:20 PM: still not sent; the bot has no test inbox yet and needs Sid to pick its address |
 | Stripe account | Works | charges and payouts enabled, name "E-commerce Helix", descriptor "E-COMMERCE HELIX", nothing currently due |
 | Stripe prices | Works | Starter A$29/mo and Growth A$59/mo, both active, live |
 | Stripe webhook | Works | /api/stripe/webhook enabled with 6 subscription and invoice events; no pending deliveries. No real payment events yet |
@@ -263,5 +263,11 @@ Checked about 5:05 PM Sydney against production deploy dpl_GicRmVUwEaJzEQSK9akXJ
 | Meta env and connect route | Works | META_APP_ID, META_APP_SECRET, META_CONFIG_ID, META_PUBLIC set. /api/meta/connect redirects signed-out users to sign-in. The data-deletion callback rejects an empty POST with 400 |
 | Meta connect with a real account | Needs Sid | Plus app review and business verification |
 | Crons | Works | meta-sync daily, site-audit (store re-check) daily and seasonal-nudges weekly in vercel.json. CRON_SECRET set; unauthenticated cron call returns 401 |
-| Store check | Untested live | Only reachable when signed in. checkStore() was run locally against allbirds.com and returned 10 findings |
+| Store check | Untested live | Only reachable when signed in, so it waits on the sign-in email test. The box's DNS now returns 198.18.x proxy addresses, so the SSRF guard (correctly) refuses every store when run from the box. Production runtime logs for the last 24h: no errors |
 | Legal pages | Needs Sid | Lawyer review |
+
+## Stripe branding (13 Oct 2026)
+
+- Icon and logo PNGs exported from the option B logo (commit 0e6a721) and uploaded to Stripe: icon file_1UPz1TIPhQ2XB9EXIZPrSnvx (512px), logo file_1UPz1aIPhQ2XB9EXp26btcoE (1024px). Copies are in docs/brand/.
+- Setting branding failed. Stripe only lets the API change branding on connected accounts, not on your own account ("You cannot use this method on your own account"). This is a Stripe rule, not a missing key permission.
+- Needs Sid: Stripe Dashboard > Settings > Branding. Upload docs/brand/stripe-icon-512.png and stripe-logo-1024.png, brand colour #5A50D6, accent #1A1718. The business name is already "E-commerce Helix".
