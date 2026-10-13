@@ -1,15 +1,40 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 11:25 AM (Sydney)._
+_Last updated: 13 Oct 2026, about 9:10 PM (Sydney)._
 
 ## At a glance
 
 - **Live:** https://ecommercehelix.com (Vercel project `ecommercehelix`, Next.js 16). `www` redirects to the apex. Every push to `main` on GitHub (`Astryks/Ecommercehelix`) deploys to production.
 - **Database:** Neon Postgres via Prisma. Schema changes are additive only and are applied to the production database before the code is pushed. Note: this build machine cannot reach Neon's port 5432, so changes are applied with `prisma migrate diff` (old schema to new schema, no drops allowed) run over Neon's HTTPS driver with the unpooled URL pulled from Vercel into a temp file that is deleted straight after.
 - **Sign-in:** Resend email magic links are live. The demo login is on (each demo sign-in is a fresh, isolated test account). Google sign-in is optional and needs Sid's OAuth keys.
-- **Checks before every push:** `npm test` (vitest, 198 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
+- **Checks before every push:** `npm test` (vitest, 207 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
+
+
+## Launch-readiness audit (13 Oct 2026, evening Sydney)
+
+**Verified**
+- Git clean and in sync with origin/main at start (`c8aebeb`); that production deploy was READY on Vercel.
+- `npm test` (207 tests) and `npm run build` pass. `npm run lint` has 4 small pre-existing errors (unescaped quotes on scorecard and settings pages, one prefer-const in diagnosis.ts); they do not block the build.
+- Maths reviewed: profit waterfall (sales down through each cost to net profit; layers add up), break-even MER/ROAS/CPA, marketing % of sales bands, dashboard metrics (blended ROAS, MER, contribution, net after fixed share), week/month/YTD/12-month ranges and buckets. New unit tests in `tests/maths-audit.test.ts`.
+- Store audit runs on the user's own saved store URL, with private-address and redirect guards. Card deck and next card follow setup, then the current goal's lessons, then the rest.
+- Every user-data query is scoped by the signed-in user's id (approvals checked with id and userId). Cron routes return 401 without the secret.
+- Live smoke test: public pages, sitemap, robots, llms.txt, share image and calendar feed return 200; signed-in pages redirect to sign-in; no 500s after the fix below.
+
+**Fixed**
+- Checkout: a missing Stripe price env var (or missing Stripe keys in production) could grant a paid plan without payment. Now it returns 503 instead.
+- Checkout: an empty POST returned 500; now 400.
+- Store check: the `back` field could redirect to another site; it now only allows dashboard paths.
+
+## Open items
+
+- Meta "Save choice" fix is pending (asset picker save).
+- Scheduling the 15 to 18 Oct social posts is pending.
+- Test accounts (helixtest@mail.grokbot.com) are in the production database; remove them before launch or keep them marked as test.
+- Sid to decide whether to show the ABN on the legal pages.
+- Add the Instagram website link in the app.
+- Not checked end to end: a signed-in run through dashboard, profit, cards and checkout on live, and a real Stripe live-mode purchase and refund.
 
 ## SEO and AI-search pass (13 Oct 2026, about 12:40 PM Sydney)
 

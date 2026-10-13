@@ -5,7 +5,8 @@ import { stripe, priceFor } from "@/lib/stripe";
 import type { PlanId } from "@/lib/plans";
 
 export async function POST(req: Request) {
-  const form = await req.formData();
+  const form = await req.formData().catch(() => null);
+  if (!form) return NextResponse.json({ error: "bad request" }, { status: 400 });
   const plan = String(form.get("plan") ?? "") as PlanId;
   const base = process.env.NEXT_PUBLIC_APP_URL ?? new URL(req.url).origin;
   const s = await auth();
