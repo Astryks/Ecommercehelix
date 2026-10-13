@@ -268,6 +268,6 @@ Checked about 5:05 PM Sydney against production deploy dpl_GicRmVUwEaJzEQSK9akXJ
 
 ## Stripe branding (13 Oct 2026)
 
-- Icon and logo PNGs exported from the option B logo (commit 0e6a721) and uploaded to Stripe: icon file_1UPz1TIPhQ2XB9EXIZPrSnvx (512px), logo file_1UPz1aIPhQ2XB9EXp26btcoE (1024px). Copies are in docs/brand/.
+- Icon and logo PNGs regenerated from the current live purple and ink helix (public/logo.svg). Earlier coral uploads to Stripe are unused. Copies are in docs/brand/.
 - Setting branding failed. Stripe only lets the API change branding on connected accounts, not on your own account ("You cannot use this method on your own account"). This is a Stripe rule, not a missing key permission.
 - Needs Sid: Stripe Dashboard > Settings > Branding. Upload docs/brand/stripe-icon-512.png and stripe-logo-1024.png, brand colour #5A50D6, accent #1A1718. The business name is already "E-commerce Helix".
