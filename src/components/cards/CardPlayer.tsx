@@ -23,7 +23,7 @@ type Props = {
 
 const LS = (deck: string) => `helix-cards-${deck}`;
 const num = (s: string | undefined) => Math.max(0, Number(s) || 0);
-const $ = (n: number) => (n < 0 ? "-" : "") + "$" + Math.abs(n).toFixed(2);
+const $ = (n: number) => (n < 0 ? "-" : "") + "$" + Math.abs(n).toLocaleString("en-AU", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 function Dots({ n, at }: { n: number; at: number }) {
   // Up to 12 dots; long decks show a window around the current card.
@@ -139,7 +139,7 @@ export function CardPlayer({ deckId, deckTitle, cards, start, lost = false, next
       <p className="text-center text-xs font-semibold uppercase tracking-wide text-slate-500">{deckTitle}</p>
       <div className="mt-3"><Dots n={cards.length} at={i} /></div>
       <section className="card mt-5 min-h-[320px] p-7" aria-live="polite">
-        {lost && card.simpleHtml && (
+        {lost && (
           <p className="mb-3 flex items-center gap-2 text-sm font-semibold"><HeartHandshake className="h-4 w-4 text-[#5A50D6]" aria-hidden /> Okay, don&apos;t worry. Let&apos;s make this one even smaller.</p>
         )}
         <h2 className="font-hand text-3xl text-[#5A50D6]">{card.title}</h2>
