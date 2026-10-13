@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Kalam, Nunito, Shantell_Sans } from "next/font/google";
+import { Kalam, Nunito, Permanent_Marker } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, organizationLd, websiteLd } from "@/lib/seo";
 
 // Whiteboard style: purple marker headings, handwritten accents, a clean rounded body for long reading.
 const body = Nunito({ variable: "--font-body", subsets: ["latin"] });
-const marker = Shantell_Sans({ variable: "--font-marker", subsets: ["latin"], weight: "700" });
+const marker = Permanent_Marker({ variable: "--font-marker", subsets: ["latin"], weight: "400" });
 const hand = Kalam({ variable: "--font-hand-accent", subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
