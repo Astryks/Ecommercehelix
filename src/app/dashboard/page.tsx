@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { GrowthLinks } from "@/components/dashboard/GrowthLinks";
 import { getCourse } from "@/lib/course";
-import { Celebration, GoalCard } from "@/components/course/GoalCard";
+import { Celebration } from "@/components/course/GoalCard";
 import { changeOf, comparison, plainLine, totalsFor } from "@/lib/growth";
 import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
@@ -15,7 +15,6 @@ import { goalsFor } from "@/lib/goals-server";
 import { costRatios, money, summarise } from "@/lib/today";
 import { taxLabel } from "@/lib/tax";
 import { planState } from "@/lib/plan-state";
-import { StepToday } from "@/components/plan/PersonalPlan";
 import { BOTTLENECKS } from "@/lib/diagnosis";
 import { adminDueSoon } from "@/lib/business";
 import { lessonLink } from "@/lib/lesson-links";
@@ -106,7 +105,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <p className="text-sm text-slate-500">{prettyDay(today)}</p>
           <h1 className="text-3xl font-bold tracking-tight">Today</h1>
         </header>
-        <NextCardHero uc={uc} />
+        <NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
             <span className="font-semibold text-slate-800">Your plan: week {st.week} of {st.total}</span>
@@ -114,12 +113,6 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </div>
           <div className="mt-2 h-2 rounded-full bg-slate-100" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}><div className="h-2 rounded-full bg-cyan-500" style={{ width: `${Math.max(4, pct)}%` }} /></div>
           <p className="mt-2 text-xs text-slate-500">Focus: {BOTTLENECKS[st.diag.diagnosis.bottleneck].goalLabel}</p>
-        </section>
-        <section className="card p-6">
-          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Your one step today</p>
-          <h2 className="mt-1 text-xl font-semibold">{st.current.title}</h2>
-          <p className="mt-1 text-slate-600">{st.current.what}</p>
-          <div className="mt-4"><StepToday s={st} /></div>
         </section>
         {profitSet && (
           <section aria-label="Your numbers">
@@ -137,22 +130,10 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
 
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="mb-6"><NextCardHero uc={uc} /></div>
+      <div className="mb-6"><NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
           Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Start with your profit dashboard, then Day 1 below. Your store check is in What to fix.
-        </div>
-      )}
-      {acct.onboarded && !diag && (
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
-          <span><strong>New: your personal plan.</strong> Answer 10 quick questions and Helix finds the one thing holding your store back and checks your store. Your lessons and progress stay as they are.</span>
-          <Link href="/start?step=2" className="btn-primary px-4 py-2 text-sm">Get my plan <ArrowRight className="h-4 w-4" aria-hidden /></Link>
-        </div>
-      )}
-      {!acct.onboarded && !sp.welcome && (
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
-          <span><strong>New here?</strong> Answer a few quick questions and Helix builds your plan. About 2 minutes.</span>
-          <Link href="/start" className="btn-primary px-4 py-2 text-sm">Build my plan <ArrowRight className="h-4 w-4" aria-hidden /></Link>
         </div>
       )}
       <header className="flex flex-wrap items-end justify-between gap-4">
@@ -180,7 +161,6 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
       </header>
 
       <Celebration view={course} />
-      <GoalCard view={course} />
 
       {shownAlerts.map((a, i) => (
         <div key={a.key} className="mt-6">

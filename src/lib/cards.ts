@@ -37,7 +37,17 @@ export function firstSentence(s: string, max = 200) {
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-export function lessonDeck(l: ParsedLesson, slug: string | null): Deck {
+export type SimpleStep = { say: string; check: string; careful?: string; lost: string };
+export type SimpleLesson = { intro: string; steps: SimpleStep[] };
+
+/** Child-simple rewrites live in docs/cards/NN.json, one entry per lesson ref, one per step. */
+export function loadSimple(moduleNumber: number): Record<string, SimpleLesson> {
+  const f = path.join(process.cwd(), "docs", "cards", String(moduleNumber).padStart(2, "0") + ".json");
+  return fs.existsSync(f) ? (JSON.parse(fs.readFileSync(f, "utf8")) as Record<string, SimpleLesson>) : {};
+}
+
+export function lessonDeck(l: ParsedLesson, slug: string | null, simple?: SimpleLesson): Deck {
+  if (simple && simple.steps.length === l.steps.length) return simpleDeck(l, slug, simple);
   const n = l.steps.length;
   const cards: Card[] = [
     {
@@ -66,6 +76,35 @@ export function lessonDeck(l: ParsedLesson, slug: string | null): Deck {
   return { id: l.ref, title: l.title, slug, cards };
 }
 
+function simpleDeck(l: ParsedLesson, slug: string | null, x: SimpleLesson): Deck {
+  const n = l.steps.length;
+  return {
+    id: l.ref,
+    title: l.title,
+    slug,
+    cards: [
+      { key: `${l.ref}-intro`, kind: "talk", title: "Okay, don't worry.", html: `<p>This little deck is about <strong>${esc(l.title)}</strong>.</p>${md(x.intro)}`, simpleHtml: "<p>Take a breath. You don't need to know anything yet. Just tap Next.</p>" },
+      ...x.steps.map((s, i): Card => ({
+        key: `${l.ref}-s${l.steps[i].n}`,
+        kind: "step",
+        title: `Step ${i + 1} of ${n}`,
+        html: md(s.say),
+        expectedHtml: md(s.check),
+        watchHtml: s.careful ? md(s.careful) : undefined,
+        simpleHtml: md(s.lost) + "<p>That's the whole card. Tap Next when it's done.</p>",
+      })),
+      { key: `${l.ref}-done`, kind: "done", title: "You did it!", html: `<p>That's every card in <strong>${esc(l.title)}</strong>. Nice and steady. Tap Next for the next little deck, or stop here for today.</p>` },
+    ],
+  };
+}
+
+export function simpleCoverage() {
+  const { decks } = load();
+  let rewritten = 0;
+  decks.forEach((d) => { if (d.cards[0].simpleHtml?.startsWith("<p>Take a breath. You don't need to know anything yet. Just tap Next.</p>")) rewritten++; });
+  return { rewritten, total: decks.size };
+}
+
 let cache: { order: string[]; decks: Map<string, Deck> } | null = null;
 
 function load() {
@@ -74,9 +113,10 @@ function load() {
   const order: string[] = [];
   for (const m of listModules()) {
     const text = fs.readFileSync(path.join(DIR, m.slug + ".md"), "utf8");
+    const simple = loadSimple(m.number);
     for (const s of parseModuleSections(text)) {
       if (s.kind !== "lesson" || !s.steps.length) continue;
-      decks.set(s.ref, lessonDeck(s, m.slug));
+      decks.set(s.ref, lessonDeck(s, m.slug, simple[s.ref]));
       order.push(s.ref);
     }
   }

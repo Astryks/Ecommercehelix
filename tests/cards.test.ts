@@ -31,3 +31,21 @@ describe("card decks", () => {
     expect(d.cards[0].html).toContain("It helps.");
   });
 });
+
+describe("simple rewrites", () => {
+  it("every rewrite file matches its lessons step for step", async () => {
+    const fs = await import("node:fs");
+    const { listModules } = await import("@/lib/learn");
+    const { loadSimple } = await import("@/lib/cards");
+    for (const m of listModules()) {
+      const simple = loadSimple(m.number);
+      for (const [ref, x] of Object.entries(simple)) {
+        const d = getDeck(ref);
+        expect(d, ref).toBeTruthy();
+        expect(x.steps.length, ref).toBe(d!.cards.length - 2);
+        for (const s of x.steps) { expect(s.say && s.check && s.lost, ref).toBeTruthy(); }
+      }
+      void fs;
+    }
+  });
+});

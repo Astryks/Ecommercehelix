@@ -1,0 +1,77 @@
+{
+"1.1": {"intro": "Sales can look big and still leave you with no money. Today we just write down three numbers. That's it.",
+ "steps": [
+  {"say": "Find how much you sold last month.\n\n1. In Shopify, click **Analytics**, then **Reports**.\n2. Click **Total sales over time**.\n3. At the top, set the date to **Last month**.\n4. Write down the **Net sales** number.", "check": "You have one number written down. That's last month's sales.", "careful": "Use the number without GST or VAT. That tax is not your money.", "lost": "Open Shopify. Go to **Analytics**. Find last month's **Net sales**. Write that one number down."},
+  {"say": "Now write down what you spent on ads last month.\n\n- Meta: open **Ads Manager**, pick last month, and read **Amount spent**.\n- Google: open Google Ads and read **Cost** for last month.\n\nAdd them together.", "check": "You have one number for all your ads last month.", "lost": "Find what you paid for ads last month. Just one total. No ads? Write 0."},
+  {"say": "Guess how much money you kept last month. Don't do any maths. Just guess one number.", "check": "Your guess sits next to your other two numbers.", "lost": "Write any guess. It's okay to be wrong. We check it later."},
+  {"say": "Save your three numbers somewhere safe, like a note on your phone.", "check": "You can find the note again later.", "lost": "Put the three numbers in a phone note. Done."}
+ ]},
+"1.2": {"intro": "Every sale has costs. Once you know them, every number in Helix makes sense. We'll find them one at a time.",
+ "steps": [
+  {"say": "Find what your products cost you, as a percent of the price.\n\nIn Shopify, open **Analytics > Reports > Gross profit by product**. This needs **Cost per item** filled in on each product.\n\nNo cost per item yet? Take your best sellers. For each one, divide what one cost you (including freight and duty) by its price.", "check": "You have one percent. For many stores it's between 20% and 40%.", "careful": "Use prices without GST or VAT. Count freight and duty, not just the factory price.", "lost": "Pick your best seller. Divide what one costs you by what you sell it for. That's your product cost %."},
+  {"say": "Find what shipping costs you for one order. Take last month's shipping bills. Divide by how many orders you sent.", "check": "You have one dollar amount, like $9.", "lost": "Shipping bills last month, divided by orders sent. One number."},
+  {"say": "Find what packaging costs for one order. Add up last month's boxes, mailers and tape. Divide by orders.", "check": "You have a small number, often $0.50 to $2.", "lost": "Packaging spend last month, divided by orders. A guess is fine."},
+  {"say": "Find your payment fee. In Shopify, go to **Settings > Payments** and read the card rate.", "check": "You have a percent. It's often 1.75% to 3.5%.", "lost": "Look in **Settings > Payments**. Write the card fee percent."},
+  {"say": "List your bills that stay the same each month. Think: staff, apps, rent, insurance, accounting, loans, and a fair pay for you.", "check": "You have one monthly total.", "careful": "Count your own pay, even if you don't take it yet. Otherwise the business looks better than it is.", "lost": "Write down every monthly bill. Add them up. One total."},
+  {"say": "Put that monthly total into Helix.\n\n1. Open **Your numbers**, then **Targets and fixed costs**.\n2. Type it into **Fixed costs per month**.\n3. Click **Save targets**.", "check": "Helix now takes a little of your monthly bills off each day's profit.", "lost": "Open **Your numbers**. Type your monthly bills total. Click **Save targets**."}
+ ]},
+"1.3": {"intro": "Each morning you jot down a few numbers. Helix does all the maths. It takes about a minute.",
+ "steps": [
+  {"say": "Open Shopify **Analytics**. Set the date to **Yesterday**. Write down **Gross sales**, **Orders**, **Discounts**, **Returns** and **Sessions**.", "check": "You have five numbers for yesterday.", "lost": "Shopify, **Analytics**, **Yesterday**. Copy the five numbers."},
+  {"say": "Write down what you spent on ads yesterday, one number for each place you advertise. If Meta is connected in Helix, skip Meta. Helix gets it for you each morning.", "check": "You have one spend number for each ad place.", "lost": "Yesterday's ad spend. One number each. No ads? Skip this card."},
+  {"say": "Put yesterday into Helix.\n\n1. Open **Today**.\n2. In **Update yesterday**, type sales, orders and ad spend.\n3. Click **Save and show my profit**.", "check": "The profit box shows yesterday's profit in a simple sentence.", "lost": "On **Today**, fill in **Update yesterday** and click save."},
+  {"say": "Want to add a month or two at once?\n\n1. Open **Your numbers** and find **Import CSV**.\n2. Download the template.\n3. Paste one row per day.\n4. Save it, click **Import**, and pick the file.", "check": "Your Dashboard shows trends, not just one day.", "careful": "Write dates like 2026-10-05. Other date styles get skipped.", "lost": "This one is optional. You can skip it and come back later."}
+ ]},
+"1.4": {"intro": "A number only means something when you know if it's good. Helix colours them green, amber or red for you.",
+ "steps": [
+  {"say": "Open **Dashboard** in Helix. Pick **Month**.", "check": "You see cards with a coloured dot on each.", "lost": "Click **Dashboard**, then **Month**. Look at the dots."},
+  {"say": "Look at your net profit %. 10% or more is healthy. 5% to 10% is thin. Under 5% is a warning.", "check": "You know which group your profit is in.", "lost": "Find net profit %. Is it green, amber or red? That's all."},
+  {"say": "Look at two more: MER (ads compared with sales) and VCR (order costs compared with sales). Check their colours.", "check": "You know if ads or order costs squeeze you more.", "lost": "Which dot is redder: MER or VCR? Remember that one."},
+  {"say": "Write down the one number that is furthest from healthy.", "check": "You have one number to fix first.", "lost": "Pick the reddest number. Write it down."}
+ ]},
+"1.5": {"intro": "These numbers tell you how much you can spend on ads and still make money. Helix works them out, but doing it once by hand helps you trust them.",
+ "steps": [
+  {"say": "Work out your target MER: start at 100, take away your VCR %, your fixed cost %, and the profit % you want.\n\nExample: 100 - 40 - 15 - 15 = 30%.", "check": "You have a target, like 30%. That means up to $30 of ads for every $100 of sales.", "lost": "Use the example if you're unsure: 30%. You can change it later."},
+  {"say": "Put it in Helix: **Your numbers > Targets and fixed costs > Target MER (%)**. Click **Save targets**.", "check": "Helix shows MER green when you're at or under this target.", "lost": "Type your target MER and click **Save targets**."},
+  {"say": "Work out break-even ROAS: 1 divided by (1 minus your VCR).\n\nWith VCR at 40%: 1 / 0.6 = 1.67.", "check": "If ads bring back less than $1.67 for each $1, every sale loses money (before monthly bills).", "lost": "Helix shows this on the Dashboard. You can just read it there."},
+  {"say": "Work out break-even cost per sale: your average order times (1 minus VCR).\n\nWith a $100 order and VCR 40%: $60.", "check": "You know the most you can pay in ads for one sale.", "lost": "Average order × (1 − VCR). Or read it on the Dashboard."},
+  {"say": "Work out your target cost per sale: your average order times your target MER.\n\nExample: $100 × 30% = $30.", "check": "Under $30 is good. $30 to $60, watch it. Over $60, each sale loses money.", "careful": "Helix shows these from your real numbers. If your maths is very different, check your costs in Lesson 1.2.", "lost": "Average order × target MER. That's your target cost per sale."}
+ ]},
+"1.6": {"intro": "Two minutes each morning keeps small problems small. You read, decide, and check.",
+ "steps": [
+  {"say": "Open **Today** in Helix. Read **Profit yesterday** and the sentence under it.", "check": "You know if yesterday made money.", "lost": "Open **Today**. Read one number."},
+  {"say": "Compare your recent MER with your target. Pick one word:\n\n- **Push**: under target. Spend more.\n- **Careful push**: close. Spend a little more.\n- **Hold**: on target. Keep it the same.\n- **Defend**: over target. Cut the weakest ads.", "check": "You have one word for today.", "lost": "Not sure? Pick **Hold**. Keep ads the same today."},
+  {"say": "Quick safety check.\n\n1. On your phone, open your store.\n2. Add a product to the cart and go to checkout. Don't pay.\n3. In Meta Events Manager, check yesterday's purchases show up.\n4. Check your best seller is in stock.", "check": "Everything works, or you found the one thing to fix.", "careful": "If ad sales drop but Shopify orders are normal, tracking probably broke. The ads may be fine.", "lost": "Open your store on your phone. Try to reach checkout. That's the most important bit."},
+  {"say": "Write one line: what you decided and why. For example: \"Hold: MER 31%, target 30%.\"", "check": "You have a dated note to look back on.", "lost": "Write today's word and one reason."}
+ ]},
+"1.7": {"intro": "Sales is not what you keep. Lots of little costs come off first. Let's see them.",
+ "steps": [
+  {"say": "Pick one product. Write its price. Next to it, guess each cost: product, freight and duty, payment fee, packaging, shipping, marketing, and a share of monthly bills.", "check": "You have a guess for every cost.", "lost": "One product, its price, and its costs. Guesses are fine."},
+  {"say": "Take each cost away from the price. Circle the biggest cost.", "check": "You know roughly what one order leaves you, and the biggest cost.", "careful": "Free shipping isn't free. If customers don't pay postage, you do.", "lost": "Price minus costs. Circle the biggest cost."}
+ ]},
+"1.8": {"intro": "Five minutes here makes every other screen in Helix honest.",
+ "steps": [
+  {"say": "Fill in one usual order.\n\n1. Open **Profit** in Helix.\n2. Pick your best seller.\n3. Type its price.\n4. Type each cost: product, freight and duty, packaging, shipping, payment fees.", "check": "You see what one order leaves you.", "lost": "Open **Profit**. Type your best seller's price and costs."},
+  {"say": "Type your monthly bills: your shop plan, apps, wages, rent, software. Then type how many orders you get in a usual month.", "check": "You can see a month's profit at that many orders.", "lost": "Monthly bills, then orders a month. Guesses are okay."},
+  {"say": "Type marketing per order (last month's ads ÷ orders). Tick **Use my monthly costs as fixed costs**. Click save.", "check": "It's saved. Your dashboard uses your real costs now.", "careful": "Check your apps list in Shopify. Small forgotten subscriptions add up.", "lost": "Type ads per order, tick the box, save."}
+ ]},
+"1.9": {"intro": "Too little marketing and the store doesn't grow. Too much and you lose money. Let's find your safe zone.",
+ "steps": [
+  {"say": "Open **Profit setup**. Read your break-even MER, break-even ROAS and break-even cost per purchase.", "check": "You know where ads stop making you money.", "lost": "Open **Profit** and find the break-even numbers."},
+  {"say": "Pick a target MER well under your break-even. For example: break-even 55%, target 25%.\n\nType it in **Settings > Target MER**. No sales yet? Write a small daily test budget instead, like $20 a day.", "check": "You have a target, or a test budget, written down.", "lost": "Choose a number well below break-even. Save it in **Settings**."},
+  {"say": "Open **Growth**. Compare your marketing with the guide for your size.", "check": "You know if you're under, inside or over the usual range.", "careful": "Count all marketing, not just Meta: Google, TikTok, creators, agency fees.", "lost": "Open **Growth**. Read where you sit."}
+ ]},
+"1.10": {"intro": "A simple sheet can do the maths for you. You just type what happened.",
+ "steps": [
+  {"say": "Download the [Helix tracking sheet](/downloads/helix-metrics-tracker.xlsx) and save it on your Desktop.", "check": "You have a file called helix-metrics-tracker.xlsx.", "lost": "Click the link. Save the file."},
+  {"say": "Open it. Excel or Numbers: double-click it. Google Sheets: open a blank sheet, click **File**, **Import**, **Upload**, and pick the file.", "check": "You see a tab called **Start here**.", "lost": "Double-click the file to open it."},
+  {"say": "Click the **Daily** tab at the bottom.", "check": "You see yellow boxes (you type) and blue boxes (they work themselves out).", "lost": "Click **Daily** at the bottom."},
+  {"say": "In the first yellow row, type yesterday's date in **Date**.", "check": "The date shows like 2026-10-12.", "lost": "Type yesterday's date."},
+  {"say": "Type yesterday's sales in **Sales**. Find it in Shopify **Analytics** under **Total sales**.", "check": "A number shows in Sales.", "lost": "Copy yesterday's sales into **Sales**."},
+  {"say": "Type yesterday's orders in **Orders** and visits in **Visits**. Shopify calls visits **Sessions**.", "check": "Two more boxes are filled.", "lost": "Orders, then visits. Both are in Shopify **Analytics**."},
+  {"say": "Type yesterday's ad spend: Meta **Amount spent** into **Meta ad spend**, Google **Cost** into **Google ad spend**.", "check": "The blue **Total ad spend** box adds them up.", "lost": "Type what you spent on ads. No ads? Type 0."},
+  {"say": "Type yesterday's costs: **Product cost**, **Shipping cost**, **Payment fees**. Not sure? Use the numbers from your Helix **Profit** page.", "check": "The blue **Profit** box fills in. Green means you made money.", "lost": "Fill the three cost boxes. Guesses from your Profit page are fine."},
+  {"say": "Read the blue boxes: ROAS (sales for each $1 of ads), conversion rate (buyers per 100 visits), AOV (one order's value), MER (ads compared with sales; lower is better).", "check": "You can say if yesterday made money.", "lost": "Look at the **Profit** box. Green or red?"},
+  {"say": "Every Monday, open the **Summary** tab.", "check": "You see your totals, including profit.", "careful": "Only type in yellow boxes. If you type over a blue one, download a fresh copy.", "lost": "On Mondays, click **Summary**."}
+ ]}
+}
