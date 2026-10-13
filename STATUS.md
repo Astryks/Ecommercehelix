@@ -229,3 +229,9 @@ Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h
 ## 13 Oct 2026: handwriting only for purple text
 - Permanent Marker and Kalam are now used only for purple text (big purple headings and numbers, purple accents, the "Helix" in the logo). All ink text (card titles, subheadings, questions, buttons, labels, nav, "E-commerce" in the logo) is Nunito, normal or semibold.
 - Revenue bands checked: Growing "About $10k to $80k a month", Scaling "About $80k a month and up". No $100k-a-month text left (the old card was a stale deploy).
+
+## 13 Oct 2026: real Meta integration on in production
+- Production env: META_APP_ID, META_APP_SECRET, META_CONFIG_ID (Sensitive), META_PUBLIC=0. Existing APP_URL, TOKEN_ENCRYPTION_KEY, CRON_SECRET kept. No META_MOCK.
+- Instagram is optional (no instagram_basic): Pages are listed without the Instagram field if Meta refuses it.
+- Copy: Meta connection is open to early testers now and opens to all stores after Meta's approval. Integrations page says so while META_PUBLIC is not 1.
+- Next: Sid connects his own ad account; publish privacy, terms and data deletion pages; Business Verification and App Review; then set META_PUBLIC=1 and switch the app to Live.

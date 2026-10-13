@@ -4,7 +4,10 @@ export const GRAPH_BASE = `https://graph.facebook.com/${GRAPH_VERSION}`;
 export const DIALOG_URL = `https://www.facebook.com/${GRAPH_VERSION}/dialog/oauth`;
 
 /** Permissions requested. With Facebook Login for Business these live in the configuration (META_CONFIG_ID). */
-export const META_SCOPES = ["ads_management", "ads_read", "business_management", "pages_show_list", "pages_read_engagement", "instagram_basic"];
+export const META_SCOPES = ["ads_management", "ads_read", "business_management", "pages_show_list", "pages_read_engagement"];
+/** Instagram is optional: the Login configuration does not ask for instagram_basic, so ads run with the Page identity unless an Instagram account is linked. */
+/** META_PUBLIC=1 once Meta has approved the app (App Review and business verification). Until then only app testers can connect. */
+export const metaPublic = () => process.env.META_PUBLIC === "1";
 
 export type MetaMode = "live" | "mock" | "off";
 

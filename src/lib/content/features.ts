@@ -47,7 +47,7 @@ export const FEATURES: Feature[] = [
       { h2: "Why small ad tests fail", body: ["Meta needs enough sales to learn who buys from you. A tiny budget, or switching ads off after three days, means it never gets there. Helix tells you what a fair test costs at your prices before you spend a dollar."] },
       { h2: "Learn it as you go", body: ["Lessons such as \"Launch your first Meta ad in 30 minutes\" and \"Find your way around Ads Manager\" walk you through every click, with drawings of where to click and what to do if your screen looks different."] },
     ],
-    plan: "Meta connection and paused-draft campaigns are on the Starter and Growth plans. The lessons are free to read.",
+    plan: "Meta connection and paused-draft campaigns are on the Starter and Growth plans. Meta connection is open to early testers now and opens to all stores after Meta's approval. The lessons are free to read.",
     guides: ["break-even-roas-explained", "how-to-scale-a-dtc-brand-profitably"],
     faq: [
       { q: "Will Helix spend money on my ad account?", a: "No. Campaigns are created as paused drafts. You review and launch them yourself, and budget changes on live campaigns are yours to make." },

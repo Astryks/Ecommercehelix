@@ -68,7 +68,9 @@ export async function listAssets(userId: string, adAccountId?: string | null) {
   const { g } = await graphForUser(userId, "user");
   const [accounts, pages] = await Promise.all([
     g.getAll<AdAccount>("me/adaccounts", { fields: "id,account_id,name,currency,timezone_name,account_status" }, 3),
-    g.getAll<Page>("me/accounts", { fields: "id,name,instagram_business_account{id,username}" }, 3),
+    // The Instagram field needs instagram_basic, which is optional. Fall back to plain Pages without it.
+    g.getAll<Page>("me/accounts", { fields: "id,name,instagram_business_account{id,username}" }, 3)
+      .catch(() => g.getAll<Page>("me/accounts", { fields: "id,name" }, 3)),
   ]);
   const act = adAccountId && accounts.some((a) => a.id === adAccountId) ? adAccountId : null;
   const pixels = act ? await g.getAll<Pixel>(`${act}/adspixels`, { fields: "id,name,last_fired_time" }, 2) : [];

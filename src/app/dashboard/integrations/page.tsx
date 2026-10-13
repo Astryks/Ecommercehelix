@@ -3,7 +3,7 @@ import { CheckCircle2, Link2, RefreshCw, ShieldCheck, Unplug } from "lucide-reac
 import { requireUser } from "@/lib/session";
 import { getAccount } from "@/lib/repo";
 import { PLAN_RANK } from "@/lib/plans";
-import { metaMode, META_SCOPES, GRAPH_VERSION } from "@/lib/meta/config";
+import { metaMode, metaPublic, META_SCOPES, GRAPH_VERSION } from "@/lib/meta/config";
 import { getConnection, listAudit, listDrafts } from "@/lib/meta/store";
 import { listAssets } from "@/lib/meta/service";
 import { disconnectMetaAction, pickMetaAssets, syncMetaNow } from "./actions";
@@ -14,8 +14,8 @@ const MSG: Record<string, [string, string]> = {
   synced: ["ok", "Synced. Your campaign tracker, scorecard ad spend and insights are up to date."],
   disconnected: ["ok", "Meta is disconnected. Helix deleted your token and synced data."],
   state: ["err", "That sign-in link expired or did not match. Please try again."],
-  denied: ["err", "You cancelled the Meta sign-in. Nothing was connected."],
-  exchange: ["err", "Meta did not accept the sign-in. Check the app settings in docs/meta-setup.md."],
+  denied: ["err", "The Meta sign-in did not finish, so nothing was connected. While Helix waits for Meta's approval, only invited testers can connect."],
+  exchange: ["err", "Meta did not accept the sign-in. While Helix waits for Meta's approval, only invited testers can connect. It opens to all stores after Meta's approval."],
   sync: ["err", "The sync failed. See the activity log below."],
   not_configured: ["err", "The Meta app is not set up on this server yet."],
 };
@@ -58,7 +58,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
               {conn && <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-emerald-800">Connected</span>}
             </div>
             <p className="mt-2 text-sm text-slate-600">
-              {mode === "mock" ? "No Meta app is configured, so this uses realistic sample data and makes no network calls. Everything else works the same, including the paused-only safety checks." : mode === "off" ? "The Meta app is not configured on this server yet." : `Uses Facebook Login for Business and Marketing API ${GRAPH_VERSION}.`}
+              {mode === "mock" ? "No Meta app is configured, so this uses realistic sample data and makes no network calls. Everything else works the same, including the paused-only safety checks." : mode === "off" ? "The Meta app is not configured on this server yet." : `Uses Facebook Login for Business and Marketing API ${GRAPH_VERSION}.${metaPublic() ? "" : " Early access: only invited testers can connect while Meta reviews Helix. It opens to all stores after Meta's approval."}`}
             </p>
           </div>
           {!conn && mode !== "off" && (

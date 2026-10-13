@@ -6,6 +6,17 @@ This is the checklist to switch the Meta integration from mock mode to your real
 
 Graph API and Marketing API version used: **v26.0** (released 29 July 2026). Change it with `META_GRAPH_VERSION` if Meta releases a newer one.
 
+## Status (13 Oct 2026)
+
+- [x] Meta app "E-commerce Helix" created (App ID 1561690459063773), Development mode.
+- [x] Facebook Login for Business configuration 1659839255540941 with ads_management, ads_read, business_management, pages_show_list, pages_read_engagement. `instagram_basic` is not included, and Helix treats Instagram as optional.
+- [x] Redirect URI https://ecommercehelix.com/api/meta/callback registered.
+- [x] Vercel Production env set: META_APP_ID, META_APP_SECRET, META_CONFIG_ID (Sensitive), META_PUBLIC=0. APP_URL, TOKEN_ENCRYPTION_KEY and CRON_SECRET were already set and were kept. META_MOCK is not set.
+- [x] Connect redirect checked: goes to facebook.com/v26.0/dialog/oauth with the app ID, config ID and the redirect URI above.
+- [ ] Sid connects his own ad account in Helix (needs a Starter or Growth plan on his account) and checks sync and a paused draft.
+- [ ] Publish Privacy Policy, Terms of Service and data deletion pages (not on the site yet) and add them in App settings > Basic.
+- [ ] Business Verification, then App Review for the permissions above (Advanced Access). Then switch the app to Live and set META_PUBLIC=1.
+
 ---
 
 ## 1. Create the Meta developer app

@@ -54,7 +54,7 @@ export const PLANS: Plan[] = [
       "Everything in Free",
       "Course goals for Attract and Convert: traffic, email list, add to cart, conversion, order value",
       "A monthly re-check of your store with a fix list that quotes your pages",
-      "Meta connected: daily ad spend and results synced into your profit",
+      "Meta connected: daily ad spend and results synced into your profit (open to early testers now, all stores after Meta's approval)",
       "Meta campaigns built as paused drafts in your own account. You press Launch",
       "Black Friday and seasonal prep plans with due dates on Today",
       "Full history: month, year to date and 12 months",
