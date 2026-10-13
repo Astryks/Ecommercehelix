@@ -22,7 +22,7 @@ Before opening Ads Manager, read the scorecard stance (Push, Careful push, Hold,
 
 ## Step 2. Campaign level: direct money
 
-1. Check each campaign's spend share against the layer ranges (SOP 05). Move budget toward the layer that is under-funded and performing, max 20% a day.
+1. Check each campaign's spend share against the layer ranges (SOP 05). Move budget toward the layer that is under-funded and performing. A common guide is no more than 20% a day, so learning is not reset.
 2. Check campaign frequency against the layer target. High frequency in Cold means the creative pool is exhausted or the budget is too high for the audience.
 3. Check the audience segment split (share of spend on new vs engaged vs existing).
 

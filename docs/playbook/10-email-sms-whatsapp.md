@@ -182,6 +182,8 @@
 
 ### Good to know
 
+A common guide (open rates are inflated by Apple Mail privacy, so trust clicks and sales more):
+
 | | Open rate | Click rate | Other |
 | --- | --- | --- | --- |
 | Flows | Above 35% | Above 1% | Revenue per recipient going up |

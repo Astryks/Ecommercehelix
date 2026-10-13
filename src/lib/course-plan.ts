@@ -144,7 +144,7 @@ export const GOALS: GoalDef[] = [
     id: "conversion-2-5", phase: "convert", tracks: ALL,
     title: "Get your conversion rate to 2.5%",
     finishLine: "2.5% or more of sessions become an order, over 7 days.",
-    why: "Going from 1.5% to 2.5% conversion makes every ad dollar work almost twice as hard.",
+    why: "Going from 1.5% to 2.5% conversion brings about two thirds more sales from the same ad spend.",
     lessons: ["3.3", "3.5", "9.4", "22.12", "9.8", "9.16"],
     finish: { kind: "metric", label: "Conversion rate (7 days)", unit: "pct", target: 2.5, value: (c) => c.crPct7, minDays: 5 },
   },

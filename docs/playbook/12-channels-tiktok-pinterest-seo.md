@@ -232,14 +232,15 @@
 ## Lesson 12.10: Instagram shopping
 <!-- stage:attract -->
 
-**Why this matters:** Instagram shopping lets people tap a product in a post and buy. It is free once your catalog is connected.
+**Why this matters:** Instagram shopping lets people tap a product in a post and go straight to it on your store. Since September 2025 every Meta shop sends buyers to your own website checkout. It is free once your catalog is connected.
 
 **Step 1.** Set up your shop on Facebook and Instagram.
 
-1. Open Meta Commerce Manager and click **Add shop**.
-2. Connect your product catalog when it asks.
+1. Open Meta Commerce Manager and click **Get started**.
+2. Pick Shopify as your platform, then follow the **Set up your shop** checklist (catalog, shipping and your checkout link).
+3. Click **Publish shop**.
 
-**Expected result:** Commerce Manager shows your shop as approved.
+**Expected result:** Commerce Manager shows your shop as in review. Approval can take up to 4 weeks.
 
 **Step 2.** Turn on catalog sync from your store so prices and stock stay current.
 

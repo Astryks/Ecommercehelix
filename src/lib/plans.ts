@@ -85,7 +85,7 @@ export const PLANS: Plan[] = [
       "90-day plans, a weekly meeting agenda and handover playbooks for a team",
       "Email flow blueprints: all 9 flows with full draft copy to paste into Klaviyo or Shopify Email",
       "Google Ads guided setup: Performance Max and Search, step by step. Guidance only, Helix does not connect to your Google account",
-      "Weekly report",
+      "Weekly report page: what is coming up and your next prep steps (a full personal weekly report is coming)",
     ],
     doItForMe: [
       "Everything Starter does for you.",

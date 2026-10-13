@@ -131,7 +131,7 @@ export function SeasonalAlertCard({ alert, others, planAdded, done, addAction, d
         {others.length > 0 && (
           <span><strong className="text-slate-800">Also coming up:</strong> {others.map((o) => `${o.name} (${prettyDay(o.date)})`).join(", ")}</span>
         )}
-        <span className="inline-flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" aria-hidden /> Helix also sends this in your weekly report and as a Monday email and push reminder.</span>
+        <span className="inline-flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" aria-hidden /> Helix also shows this in your weekly report.</span>
       </div>
     </section>
   );

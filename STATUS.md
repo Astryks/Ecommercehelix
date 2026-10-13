@@ -220,3 +220,8 @@ Underlines (Oct 13, later): highlight underline is now a filled, tapered signatu
 Underline (Oct 13, later): now a bold marker stroke, about 14% of the font size at its fullest, solid #5A50D6, sitting below descenders; headings with a highlight get extra line height. Highlights added to the About, Playbook and module page headings.
 Reference match (Oct 13, later): fonts and underline matched to Sid's "explained with a vampire." reference. Big headings and numbers: Permanent Marker (closest to the reference's marker capitals). Subheadings (h2 to h4), eyebrow labels, intro lines (.lead), summaries and form labels: Kalam Bold (closest match to the reference handwriting). Long body and lesson steps stay Nunito. Underline is now a near-even marker swipe about 10% of the font size, almost flat, soft rounded ends, overshooting both ends, a small gap below the descenders.
 Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h2s (text-3xl and up) and big numbers; card and section titles, h3 and smaller, and the logo wordmark are Kalam Bold mixed case ("E-commerce Helix", Helix in purple) in header, footer, sidebar, sign-in, email and the share image (Kalam loaded from Google Fonts with fallback).
+
+## 13 Oct 2026: revenue line and accuracy audit
+- Revenue line is now "Built for stores doing $10k to $80k a month that want to reach a $1M year, profitably" (a9de7c6).
+- Accuracy audit fixed arithmetic, contradictions, platform facts (Google seasonality path, TikTok Shop website checkout), false Helix claims (AI, social audit, weekly report, Monday email), and softened benchmarks to "a common guide".
+- Open: Meta app keys are missing in production, so "Meta connects today" is not true yet. NUDGES_LIVE is off.

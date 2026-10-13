@@ -105,15 +105,15 @@
 ## Lesson 17.5: How Helix applies this
 <!-- stage:grow -->
 
-**Why this matters:** Helix applies the same rules to itself. Maths is always exact, AI is used only where it adds value, and nothing changes without your approval.
+**Why this matters:** Helix applies the same rules to itself. Maths is always exact, Helix does not use AI today, and nothing changes without your approval.
 
 **Step 1.** Know that Helix uses fixed rules for all maths (profit, MER, break-even), so numbers are always exact.
 
 **Expected result:** You can trust every number on the Dashboard.
 
-**Step 2.** Know that Helix uses smaller AI models to read and sort, and stronger models for judgement like writing a brief.
+**Step 2.** Know that Helix does not use AI today. If that changes, Helix will say exactly what the AI does and what it costs.
 
-**Expected result:** You know where AI is used.
+**Expected result:** You know Helix's advice comes from plain rules you can check.
 
 **Step 3.** Approve or reject each action in **Waiting for your OK**; new campaigns are created as paused drafts that you switch on. See the [product design doc](../product-design.md).
 

@@ -116,7 +116,7 @@ Each goal's tasks are the steps of the lessons listed, in order. Days follow a l
 ### Get your conversion rate to 2.5%
 
 **Finish line:** 2.5% or more of sessions become an order, over 7 days.  
-**Why this matters:** Going from 1.5% to 2.5% conversion makes every ad dollar work almost twice as hard.  
+**Why this matters:** Going from 1.5% to 2.5% conversion brings about two thirds more sales from the same ad spend.  
 **Lessons:** 3.3, 3.5, 9.4, 22.12, 9.8, 9.16 · **Days:** 10 (1, 3, 4, 1, 5, 2, 4, 2, 2, 4 tasks, about 10, 35, 30, 20, 45, 15, 50, 25, 10, 35 min)
 
 ### Switch on the five core email flows

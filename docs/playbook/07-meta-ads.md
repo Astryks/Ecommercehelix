@@ -231,7 +231,7 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 **Why this matters:** The learning phase is the first days after you start or change an ad set, while Meta works out who to show it to. Results are unstable during learning, so knowing what resets it saves you from breaking good campaigns.
 
-**Step 1.** Before editing a live ad set, check whether the edit restarts learning: swapping or adding ads, changing the audience, or changing budget by more than 20%.
+**Step 1.** Before editing a live ad set, check whether the edit restarts learning: swapping or adding ads, changing the audience, or a big budget change (a common guide is more than 20%).
 
 **Expected result:** You only make big edits on purpose.
 
@@ -536,7 +536,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 <details><summary>Answers</summary>
 
-1. Any two of: a budget change over 20%, adding or swapping ads, changing the audience.
+1. Any two of: a big budget change (a common guide is over 20%), adding or swapping ads, changing the audience.
 2. It reaches few people before the same people see it again and again.
 3. Against other cold campaigns, and by your total MER and new-customer trend.
 4. Turn it off, remove unknown access, secure the admin logins, contact Meta support and dispute the charges.

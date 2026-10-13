@@ -220,7 +220,7 @@ export function runRules(s: Signals, example = true): Insight[] {
 export const EXAMPLE_SIGNALS: Signals = {
   period: "Last 7 days (example)",
   site: { mobileSpeedScore: 38, lcpSeconds: 4.6, hasPopup: true, reviewsAboveFold: false, shippingInfoOnPdp: false, freeShipThreshold: 150, trustItemsMissing: ["guarantee", "payment badges"] },
-  funnel: { sessions: 7400, cr: 2.2, mobileCr: 1.4, desktopCr: 3.3, atcRate: 9.1, atcBenchmark: 7.5, checkoutCompletion: 34, aov: 92 },
+  funnel: { sessions: 7400, cr: 2.2, mobileCr: 1.4, desktopCr: 3.3, atcRate: 9.1, atcBenchmark: 8, checkoutCompletion: 34, aov: 92 },
   meta: { hookRate: 31, ctr: 1.4, lpCr: 0.9, storeCr: 2.2, freqNow: 2.3, freqPrev: 1.7, cpmNow: 12.1, cpmPrev: 10.2, ctrNow: 1.1, ctrPrev: 1.4, roasNow: 2.5, roasPrev: 2.55, merNow: 26.9, merPrev: 23.1, thruplayRate: 12 },
   google: { brandSharePct: 31, wastedTerms: [{ term: "free linen shirt pattern", spend: 64 }, { term: "linen shirt jobs", spend: 41 }], targetCpa: 55 },
   email: { revenueSharePct: 11, missingFlows: ["Abandoned cart", "Browse abandonment", "Win-back"] },

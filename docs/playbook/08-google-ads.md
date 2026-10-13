@@ -258,12 +258,12 @@
 
 **Step 1.** Tell Google a sale is coming.
 
-1. Open **Tools**, then **Bid strategies**, then **Advanced controls**.
+1. Click **Tools**, then **Budgets and bidding**, then **Seasonality adjustments** (Google may label it **Adjustments**, then **Seasonal**).
 2. Add a seasonality adjustment for the first 1 to 2 days of the sale.
-3. Set the expected conversion rate change to about +50%.
-4. After the sale, delete it.
+3. Set the expected conversion rate change to what you saw in past sales. Google's own example is +50% for a 3-day sale.
+4. Set the end date to the last day of the sale. Google goes back to normal by itself.
 
-**Expected result:** Google bids up for the sale's first days and returns to normal after.
+**Expected result:** The adjustment shows as scheduled for the sale dates.
 
 **Step 2.** Add promotion assets and sale prices to your product feed.
 

@@ -59,7 +59,7 @@ Design rules:
 
 ## 3. Site audit checklist (crawler + PageSpeed)
 
-The social presence audit uses the checklist in [Playbook Lesson 21.9](playbook/21-brand-and-social-presence.md#lesson-219-the-social-presence-audit-what-helix-checks).
+The social presence audit uses the checklist in [Playbook Lesson 21.9](playbook/21-brand-and-social-presence.md#lesson-219-the-social-presence-audit-what-to-check).
 
 | Check | How | Fires when |
 | --- | --- | --- |

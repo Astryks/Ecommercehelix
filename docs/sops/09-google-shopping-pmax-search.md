@@ -34,7 +34,7 @@ Good signs: people search for the category or problem; the product has clear nam
 - Breakeven ROAS = 1 ÷ margin after variable costs (for example 60% margin means 1.67).
 - Target ROAS = breakeven adjusted for the profit you want to keep. New-customer campaigns can run nearer breakeven.
 - Levers are budget and target. Change one at a time, by modest steps.
-- During the first 1 to 2 days of a big sale, a temporary seasonality adjustment (about +50% expected conversion rate) helps bidding catch up. Do not leave it on longer.
+- During the first 1 to 2 days of a big sale, a temporary seasonality adjustment helps bidding catch up. Use the lift you saw in past sales (Google's example is +50% for a 3-day sale), keep it to 1 to 7 days, and let it end on its own.
 
 ## Feed optimisation
 

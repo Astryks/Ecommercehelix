@@ -146,7 +146,7 @@
 2. In **Update yesterday**, type yesterday's sales, orders and ad spend.
 3. Click **Save and show my profit**.
 
-Want to add every cost too? Use **Your numbers > Enter a day** instead.
+Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Expected result:** The profit box shows yesterday's profit with a plain-English line, and the Dashboard updates.
 
@@ -205,7 +205,7 @@ Want to add every cost too? Use **Your numbers > Enter a day** instead.
 
 <!-- do:growth -->
 
-**Step 2.** Compare your net profit % (net profit divided by net sales) with the table below: 10% or more is healthy, 0 to 10% is thin, below 0% means you are losing money.
+**Step 2.** Compare your net profit % (net profit divided by net sales) with the table below. A common guide: 10% or more is healthy, 5 to 10% is thin, below 5% is a warning sign.
 
 **Expected result:** You know which band your profit sits in.
 
@@ -219,7 +219,7 @@ Want to add every cost too? Use **Your numbers > Enter a day** instead.
 
 ### Good to know
 
-| Number | Healthy | Warning sign |
+| Number | Healthy (a common guide) | Warning sign |
 | --- | --- | --- |
 | Net profit | 10 to 20% of sales | Below 5% |
 | MER % (ads as a share of sales) | 20 to 35%. It falls as more customers come back and buy again. | Above 45% |

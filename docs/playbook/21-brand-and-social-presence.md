@@ -169,28 +169,26 @@
 
 **Expected result:** In-app orders are profitable and land in your normal systems.
 
-## Lesson 21.9: The social presence audit (what Helix checks)
+## Lesson 21.9: The social presence audit (what to check)
 <!-- stage:attract -->
 
-**Why this matters:** Helix checks your social profiles in its regular audit, using public information plus account insights once you connect. Knowing the checks lets you fix things before the audit flags them.
+**Why this matters:** A profile that is out of date or does not match your ads loses buyers who come to check you out. Helix does not check your social profiles yet, so this table is your own 10-minute check.
 
 **Step 1.** Read the checks in the table below.
 
-**Expected result:** You know what Helix looks at.
+**Expected result:** You know what to look at.
 
-**Step 2.** Open **What to fix** in Helix to see any social findings.
+**Step 2.** Open your Instagram profile and mark each row in the table as pass or fail.
 
-**Expected result:** You see flagged items with evidence.
-
-<!-- do:insights -->
+**Expected result:** You have a short list of rows that fail.
 
 **Step 3.** Fix one flagged item this week.
 
-**Expected result:** Your next audit shows one less issue.
+**Expected result:** One less row fails when you check again next month.
 
 ### Good to know
 
-| Check | Helix flags it when |
+| Check | Fails when |
 | --- | --- |
 | Bio says what you sell | No product or category word in the name or bio |
 | Link works on mobile | The link is missing, broken or slow, or goes to a general home page with no UTM tags |
