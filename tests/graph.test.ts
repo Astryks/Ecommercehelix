@@ -105,3 +105,12 @@ describe("paused draft payloads", () => {
     await expect(g.post(`${input.adAccountId}/ads`, { ...adParams(input, "1", "2", 1), status: "ACTIVE" }, { approved: true })).rejects.toBeInstanceOf(GuardrailError);
   });
 });
+
+import { isRevokedCode } from "@/lib/meta/graph";
+describe("isRevokedCode", () => {
+  it("treats OAuthException 190 as revoked only", () => {
+    expect(isRevokedCode(190)).toBe(true);
+    expect(isRevokedCode(17)).toBe(false);
+    expect(isRevokedCode(undefined)).toBe(false);
+  });
+});

@@ -4,7 +4,7 @@ import { getAccount, getDays, getSettings, setMetaSpend } from "../repo";
 import { addDays, isoDay } from "../dates";
 import { suggestedTestBudget, targetsFrom } from "../targets";
 import { metaMode, redirectUri, type MetaMode } from "./config";
-import { createGraph, fetchTransport, GraphError, type CallLog } from "./graph";
+import { createGraph, fetchTransport, GraphError, isRevokedCode, type CallLog } from "./graph";
 import { mockTransport } from "./mock";
 import { adParams, adsetParams, campaignParams, creativeParams, starterCopy, type DraftInput } from "./drafts";
 import { dailySpend, INSIGHT_FIELDS, normalise, toTrackerCampaign, type InsightRow, type MetaAdSet, type MetaCampaign, type MetaSnapshot } from "./insights";
@@ -14,16 +14,18 @@ type Actor = "user" | "helix" | "cron";
 const aad = (userId: string) => `meta:${userId}`;
 const keyFor = (mode: MetaMode) => loadKey(process.env.TOKEN_ENCRYPTION_KEY, mode === "mock");
 
-function graphFor(userId: string, mode: MetaMode, actor: Actor, token?: string) {
+function graphFor(userId: string, mode: MetaMode, actor: Actor, token?: string, onLog?: (l: CallLog) => Promise<void>) {
   return createGraph({
     token,
     appSecret: mode === "live" ? process.env.META_APP_SECRET : undefined,
     transport: mode === "mock" ? mockTransport : fetchTransport,
-    log: (l: CallLog) =>
-      logAudit(userId, {
+    log: async (l: CallLog) => {
+      await logAudit(userId, {
         actor, action: "meta.api", target: `${l.method} ${l.path}`, outcome: l.outcome, httpStatus: l.httpStatus,
         detail: { attempt: l.attempt, ms: l.durationMs, code: l.errorCode, message: l.message, params: l.paramKeys, mode },
-      }),
+      });
+      if (onLog) await onLog(l);
+    },
   });
 }
 
@@ -31,7 +33,20 @@ async function graphForUser(userId: string, actor: Actor) {
   const conn = await getConnection(userId);
   if (!conn) throw new Error("Meta is not connected.");
   const token = decrypt(conn.tokenEnc, keyFor(conn.mode), aad(userId));
-  return { conn, g: graphFor(userId, conn.mode, actor, token) };
+  let cleared = false;
+  // Access revoked or token invalid at Meta (OAuthException 190): clear the stored connection automatically.
+  const onLog = async (l: CallLog) => {
+    if (cleared || l.outcome !== "error" || !isRevokedCode(l.errorCode)) return;
+    cleared = true;
+    await clearRevokedConnection(userId, actor, `${l.method} ${l.path}`);
+  };
+  return { conn, g: graphFor(userId, conn.mode, actor, token, onLog) };
+}
+
+/** Remove the token and synced Meta data after Meta reports the access is gone. */
+export async function clearRevokedConnection(userId: string, actor: Actor | "meta", reason: string) {
+  await deleteMetaData(userId);
+  await logAudit(userId, { actor, action: "meta.revoked", target: "meta", outcome: "ok", detail: { reason } });
 }
 
 /** OAuth callback: code -> short-lived token -> long-lived token (about 60 days), stored encrypted. */
@@ -129,9 +144,10 @@ export async function syncUser(userId: string, actor: Actor = "user"): Promise<{
   } catch (e) {
     const msg = (e as Error).message;
     const expired = e instanceof GraphError && e.code === 190;
-    if (conn) await updateConnection(userId, { lastSyncError: msg, status: expired ? "expired" : "error" });
+    // On 190 the connection has already been cleared by graphForUser.
+    if (conn && !expired) await updateConnection(userId, { lastSyncError: msg, status: "error" });
     await logAudit(userId, { actor, action: "meta.sync", target: conn?.adAccountId ?? "meta", outcome: "error", detail: { message: msg } });
-    return { ok: false, error: expired ? "Your Meta login has expired. Please reconnect." : msg };
+    return { ok: false, error: expired ? "Meta access was removed or expired, so Helix disconnected it. Please reconnect." : msg };
   }
 }
 

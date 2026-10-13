@@ -24,6 +24,11 @@ export type CallLog = {
 
 type GraphErrorBody = { error?: { message?: string; code?: number; error_subcode?: number; is_transient?: boolean } };
 
+/** OAuthException 190: access token invalid, expired or the user removed the app. */
+export function isRevokedCode(code: number | undefined): boolean {
+  return code === 190;
+}
+
 export class GraphError extends Error {
   constructor(message: string, public code?: number, public httpStatus?: number, public retryAfterMs?: number) {
     super(message);
