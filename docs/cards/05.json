@@ -1,0 +1,97 @@
+{
+"5.1": {"intro": "These days, the ad itself picks who stops to look. So having lots of different ads matters a lot.",
+ "steps": [
+  {"say": "Open Meta Ads Manager. Click the **Ads** tab. Count how many different ad ideas are live. Resized copies don't count.", "check": "You have a number. Fewer than 6 ideas usually means you need more ads.", "lost": "Count your live ads with different ideas. Write the number."},
+  {"say": "Check your main ad set for new people uses a wide audience: Advantage+ audience, or just country and age.", "check": "Your audience is wide, and your ads do the picking.", "lost": "Open your main ad set. Is the audience wide? Yes or no."},
+  {"say": "Set a goal for new ads, like 4 to 8 new ads every two weeks.", "check": "You wrote down how many new ads you'll make.", "lost": "Write: \"4 new ads every two weeks.\""}
+ ]},
+"5.2": {"intro": "Making ads works best as a loop. Each loop makes the next ads smarter.",
+ "steps": [
+  {"say": "**Research** for 20 minutes: read reviews and comments, and look at other brands' ads in the Meta Ad Library (facebook.com/ads/library).", "check": "You have 3 to 5 notes.", "lost": "Read five reviews. Write three notes."},
+  {"say": "**Plan**: pick the topic, the reason to buy, and the one thing you'll test.", "check": "You have a one-line test plan.", "lost": "Write: \"I'm testing ___ against ___.\""},
+  {"say": "**Brief**: write one page per ad idea, using the template in Lesson 6.9.", "check": "Each idea has a page anyone could make it from.", "lost": "Write a short page for one idea."},
+  {"say": "**Make** the ads: yourself, with creators, or with AI editing tools.", "check": "You have files in 4:5 and 9:16 sizes.", "lost": "Make one ad in two sizes: 4:5 and 9:16."},
+  {"say": "**Launch** the new ads together on the same day.", "check": "They all start together, so it's fair.", "lost": "Turn on all new ads on one day."},
+  {"say": "**Learn**: after 7 days, score each ad. Write one line on why each winner won.", "check": "Your next brief starts from what you learned.", "lost": "After a week, write why your best ad won."}
+ ]},
+"5.3": {"intro": "Every ad does one of four jobs: teach, prove, feel, or stand for something. Use all four.",
+ "steps": [
+  {"say": "Label each live ad with one job: **Teach** (demos), **Prove** (reviews, results), **Feel** (fears and wishes) or **Stand for** (opinions, myth busting).", "check": "Every ad has one label.", "lost": "Give each ad one word: Teach, Prove, Feel or Stand for."},
+  {"say": "For your next ad, choose what it's about: the product, the brand, the result, or the customer.", "check": "Your next brief names one job and one focus.", "lost": "Pick one: product, brand, result or customer."},
+  {"say": "Make at least one ad about the customer: show them and their life after using the product.", "check": "You have a customer ad. These often reach the most people.", "lost": "Make one ad that shows a happy customer."}
+ ]},
+"5.4": {"intro": "What makes you different comes in layers. Each ad leads with one layer.",
+ "steps": [
+  {"say": "Write one line each: **feature** (what it has), **benefit** (what that does for them), **proof** (why believe it), **personality** (how buying from you feels), **offer** (the deal).", "check": "You have five lines.", "lost": "Write one line for each of the five words."},
+  {"say": "For your next ad, pick one layer to lead with, and one or two to back it up.", "check": "The brief names a lead layer.", "careful": "During a sale, lead with the offer. Other times, lead with product and proof.", "lost": "Pick one layer to lead your next ad."}
+ ]},
+"5.5": {"intro": "Some people have never heard of you. Some are ready to buy. Each needs a different ad.", 
+ "steps": [
+  {"say": "Read the five stages in the lesson table. Label each live ad with the stage it talks to.", "check": "Every ad has a stage.", "lost": "For each ad: is it for strangers, or for people who know you?"},
+  {"say": "Check strangers see early-stage ads, and visitors see later-stage ads.", "check": "Each audience gets ads made for it.", "lost": "Strangers get intro ads. Visitors get \"ready to buy\" ads."},
+  {"say": "Make one new ad for the stage you're missing most.", "check": "Your next batch covers a missing stage.", "lost": "Make one ad for the stage with no ads."}
+ ]},
+"5.6": {"intro": "People buy for deep reasons: belonging, status, curiosity, relief, value and more. One reason per ad.",
+ "steps": [
+  {"say": "For each ad in your next batch, pick one reason people buy. Write it on the brief.", "check": "Each brief names exactly one reason.", "lost": "Pick one reason per ad."},
+  {"say": "Match the feeling to the moment.\n\n1. Sale ads: show the saving and the end date.\n2. Launch ads: tease what's new and who it's for.", "check": "Sale and launch ads use different reasons.", "lost": "Sale ad: saving + end date. That's it."}
+ ]},
+"5.7": {"intro": "The hook is the first 3 seconds. Its only job is to stop people scrolling.",
+ "steps": [
+  {"say": "Write 3 different hooks for your next ad. Ideas: movement or a surprising first picture, calling out a group (\"For runners with flat feet...\"), the result first, a one-star review answered, or a curious question.", "check": "You have 3 hooks of different types.", "lost": "Write three different first lines."},
+  {"say": "Make one version of the ad for each hook. Keep everything else the same.", "check": "You have 3 ads that only differ in the first 3 seconds.", "lost": "Same ad, three different starts."},
+  {"say": "After 7 days, compare hook rate in Ads Manager (3-second plays ÷ impressions).", "check": "You know your best hook. Above about 25% is good for most accounts.", "careful": "A bold line on a still picture can work too. Test pictures as well.", "lost": "After a week, see which start kept the most people."}
+ ]},
+"5.8": {"intro": "A script framework is a proven order for the parts of an ad. It stops rambling.",
+ "steps": [
+  {"say": "Pick one framework from the lesson table, like \"problem, make it worse, solve\" or \"N reasons why\".", "check": "Your brief names the framework.", "lost": "Pick \"problem, make it worse, solve\"."},
+  {"say": "Fill in each part in one or two lines.", "check": "You have a script of 20 to 45 seconds.", "lost": "One line for each part."},
+  {"say": "End with a clear ask: what to do (\"Tap Shop now\"), what they get, and why now. State the offer and any minimum (\"20% off your first order, free shipping over $80\").", "check": "Your ending has all three parts.", "lost": "End with: do this, get this, because now."}
+ ]},
+"5.9": {"intro": "During a launch or sale, the mood changes each day. Match your ads to it.",
+ "steps": [
+  {"say": "Before launch, run teaser ads that build excitement.", "check": "Teasers run 3 to 7 days before launch.", "lost": "Run one teaser ad a few days before."},
+  {"say": "On launch day, switch to excited ads. During the sale, add reviews for reassurance.", "check": "Ads change on launch day and again mid-sale.", "lost": "Launch day: excited ad. Mid-sale: review ad."},
+  {"say": "In the last 24 hours, run \"ends tonight\" ads. Afterwards, post a thank-you.", "check": "The last day and the day after have their own message.", "lost": "Last day: \"ends tonight\". After: \"thank you\"."}
+ ]},
+"5.10": {"intro": "Ads that look like normal posts usually do better. A phone and a real person are enough.",
+ "steps": [
+  {"say": "Film on a phone with a real person in a real place.", "check": "It looks like a post a friend would share.", "lost": "Film a real person with your phone."},
+  {"say": "Add movement in the first 3 to 5 seconds. In longer videos, change something every 1 to 2 seconds: a cut, angle, text or zoom.", "check": "The video never sits still for long.", "lost": "Make something move in the first few seconds."},
+  {"say": "Add captions to every video.", "check": "It makes sense with the sound off.", "lost": "Turn on captions."},
+  {"say": "Use a popular format from your feed, with your own product and your own words.", "check": "Familiar shape, but every word and shot is yours.", "careful": "Never copy someone else's content.", "lost": "Borrow the style, not the content."}
+ ]},
+"5.11": {"intro": "Make about 30% brand-new ideas and 70% new versions of ads that already work. Guess before you test.",
+ "steps": [
+  {"say": "Split your next batch: about 30% new ideas, 70% new versions of winners (new hook, first picture, creator, length or captions).", "check": "Your plan shows the split.", "lost": "For every 10 ads: 3 new, 7 versions of winners."},
+  {"say": "Write a guess for each ad. For example: \"A review hook will beat the demo hook.\"", "check": "Every new ad has a written guess.", "lost": "Write one guess per ad."},
+  {"say": "As spend grows, give more money to proven winners.", "check": "Winners get most spend. New ideas get enough to be judged.", "careful": "Don't test everything at once without knowing what you want to learn.", "lost": "Give your best ad the most money."}
+ ]},
+"5.12": {"intro": "When it's clear who an ad is for, Meta finds those people more easily.",
+ "steps": [
+  {"say": "For your next ad, name one group (like new mums, trail runners or home bakers). Show that kind of person using it.", "check": "Viewers can tell in 3 seconds who it's for.", "lost": "Pick one group. Show one of them in the ad."},
+  {"say": "Say the group's name out loud or on screen in the first line.", "check": "The ad talks to one group.", "lost": "Start with: \"For ___ ...\""}
+ ]},
+"5.13": {"intro": "You can give people a reason to buy now without a discount. That protects your profit.",
+ "steps": [
+  {"say": "Pick one honest reason to buy now this month: the season, an event, a limited bundle, a gift for a set time, or a delivery cut-off (\"order by Friday for Christmas\").", "check": "You have one reason with a real date.", "lost": "Pick one real date reason."},
+  {"say": "Add it to one ad and to the top of your product pages.", "check": "Shoppers see why to act now.", "lost": "Put the reason on your product page."}
+ ]},
+"5.14": {"intro": "People who know you but haven't bought need answers, not more introductions.",
+ "steps": [
+  {"say": "Make one ad for them: a comparison, reviews, an FAQ video, your guarantee, \"what you get\", or a creator talking about it.", "check": "You have one ad that answers doubts.", "lost": "Make one ad with three reviews."},
+  {"say": "Show it to people who visited or engaged in the last 30 days.", "check": "Warm visitors see an ad that answers their doubts.", "lost": "Choose \"visited in the last 30 days\" as the audience."}
+ ]},
+"5.16": {"intro": "Good tools make ads faster and keep them looking right everywhere.",
+ "steps": [
+  {"say": "Make picture templates in 4:5 (feed) and 9:16 (stories and reels). Keep text inside the safe zones.", "check": "Text is never covered by buttons.", "lost": "Make two sizes. Keep text away from the edges."},
+  {"say": "In your phone editor, cut silences, add captions and a text hook, and export in each size.", "check": "Each video is ready in both sizes.", "lost": "Cut the quiet bits. Add captions. Export."},
+  {"say": "Let AI help.\n\n1. Use an AI tool to resize your ad and make versions.\n2. Add an AI voice-over if you want.\n3. Label AI-made people and voices where the platform's rules say so.", "check": "More versions in less time, labelled where needed.", "careful": "Never fake reviews with AI.", "lost": "Use an AI tool to resize one ad."},
+  {"say": "Before launch, scroll to the creative options in the ad. Find the auto-enhance settings. Turn off any you don't want.", "check": "The ad shows exactly as you made it.", "lost": "Check auto-enhance settings before you publish."}
+ ]},
+"5.17": {"intro": "Big brands spend a lot on seasonal moments. Watching them gives you free ideas.",
+ "steps": [
+  {"say": "Once a month, write down 3 campaigns big brands run around a season or moment.", "check": "You have a short list of ideas.", "lost": "Write one big-brand idea you liked."},
+  {"say": "Make one smaller version: a trend format, a team-up with another small brand, or a playful take.", "check": "Your next batch has one moment-led ad.", "lost": "Make one ad inspired by it, in your own way."}
+ ]}
+}

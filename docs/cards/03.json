@@ -1,0 +1,68 @@
+{
+"3.1": {"intro": "Your offer is what people get, and why they should buy now. We'll find its weakest part.",
+ "steps": [
+  {"say": "Score your main product from 1 to 5 on each of these: **promise**, **belief**, **urgency**, **safety**, **easy yes**.", "check": "You have five scores on one line.", "lost": "Give each word a score from 1 to 5. Guess fast."},
+  {"say": "Circle the lowest score. Open its lesson: promise 3.2, belief 3.3, urgency 3.4, safety 3.5, easy yes 3.6.", "check": "You know the one thing to work on this week.", "lost": "Circle the smallest number. That's your job this week."}
+ ]},
+"3.2": {"intro": "People buy when they can say what they'll get in one line. Your reviews already have the words.",
+ "steps": [
+  {"say": "Read your 20 newest 4 and 5 star reviews. Copy the words people use for what they got.", "check": "You have 5 to 10 phrases in customers' words.", "lost": "Read five good reviews. Copy your favourite phrases."},
+  {"say": "Write one sentence about the problem your product takes away. Use their words.", "check": "You have one problem sentence, like \"No more tangled cables in your bag\".", "lost": "Finish this: \"No more ...\""},
+  {"say": "Write one sentence about how others will see your customer after they buy.", "check": "You have a \"how others see me\" sentence.", "lost": "Finish this: \"People will think I'm ...\""},
+  {"say": "Make one promise line.\n\n1. Join your sentences into one line of 15 words or fewer.\n2. In Shopify, open **Products** and pick the product.\n3. Paste the line at the top of **Description**.\n4. Use the same line to start your next ad.", "check": "The same promise is on your product page and in an ad.", "careful": "Say the result, not the feature. \"Sleep through the night\" beats \"Memory foam core\".", "lost": "Write one short line about what people get. Put it at the top of your product page."}
+ ]},
+"3.3": {"intro": "People don't buy until they believe it will work for them. Let's answer their worries with proof.",
+ "steps": [
+  {"say": "List 20 reasons someone might not buy. Look in support emails, reviews and return notes.", "check": "You have a list of 20 worries.", "lost": "Write five reasons people might not buy. Five is fine to start."},
+  {"say": "Sort them into six groups: price, quality, fit or size, trust, timing, and \"do I need it?\".", "check": "You can see which group is biggest.", "lost": "Put each worry in a group. Which group has the most?"},
+  {"say": "Next to each worry, write one proof: a review, a photo, a guarantee, a fact or a demo video.", "check": "Each worry has something you can show.", "lost": "Pick one worry. Find one review or photo that answers it."},
+  {"say": "Add the answers to your product page FAQ, your ads and your welcome emails. Start with the biggest group.", "check": "Top worries are answered in at least three places.", "lost": "Add one answer to your product page FAQ."}
+ ]},
+"3.4": {"intro": "If there's a real reason something might run out, people act sooner. It must be true.",
+ "steps": [
+  {"say": "Pick one honest reason it might run out: a small batch, a preorder with a ship date, a short seasonal colour, or low stock.", "check": "You picked one you can stand behind.", "lost": "Pick one true reason it might run out."},
+  {"say": "Write that reason in one sentence on the product page. For example: \"Batch 4 of 6: 300 made, ships 14 November\".", "check": "Shoppers can see why it might go.", "lost": "Write one honest sentence about why it might run out."},
+  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
+ ]},
+"3.5": {"intro": "Shoppers worry about buying the wrong thing. Each worry you remove means more orders.",
+ "steps": [
+  {"say": "Turn on photo reviews in your review app. Email recent buyers and ask for a photo with their review.", "check": "Your best sellers show reviews with photos.", "lost": "Ask three happy customers for a photo review."},
+  {"say": "Add a size chart to every product where fit matters.", "check": "A size guide link sits above **Add to cart**.", "lost": "Add a size chart to your best seller. No sizes? Skip this card."},
+  {"say": "Turn on live chat for your opening hours. Shopify Inbox is free.", "check": "A chat bubble shows on your store, and messages reach your phone.", "lost": "Install Shopify Inbox. Turn it on."},
+  {"say": "Add a real face: a photo of you and two sentences on your About page.", "check": "Shoppers can see a real person.", "lost": "Add one photo of you to your About page."},
+  {"say": "Write a shipping promise you can keep, like \"Ships within 24 hours, Monday to Friday\". Add a clear returns policy. Show both near the price.", "check": "On a phone, you see shipping time and returns without scrolling.", "careful": "After changing returns, watch your return rate for 60 days to check it's worth it.", "lost": "Write one line: when it ships. Put it near the price."}
+ ]},
+"3.6": {"intro": "How a price looks changes how it feels. Try one small idea at a time.",
+ "steps": [
+  {"say": "Add a cost-per-use line under the price. For example \"Under $1 a day\" for a $29 monthly product.", "check": "The price feels smaller, but it's the same.", "lost": "Divide the price by days used. Write that under the price."},
+  {"say": "Try one higher price on one product for two weeks, for example $39 to $49.", "check": "You can compare sales and profit. Often sales barely change and you keep more.", "lost": "Raise one price. Check again in two weeks."},
+  {"say": "Show a bigger option, or the full bundle value, next to the single price.", "check": "The single price looks like better value.", "lost": "Put a bigger option next to your normal one."},
+  {"say": "Add a middle option that makes your favourite option look like the obvious pick.", "check": "More shoppers choose your favourite option.", "lost": "Add a middle option. Watch what people pick."},
+  {"say": "Test free shipping against a lower price. Then turn on pay-in-parts (like Afterpay, Klarna or Shop Pay Installments) in **Settings > Payments** for pricier items.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
+ ]},
+"3.7": {"intro": "Not every product deserves your ad money. A quick monthly check shows which ones do.",
+ "steps": [
+  {"say": "For each product, write last month's ad spend, sales, return (sales ÷ ad spend), units sold and margin.", "check": "One row per product, five numbers each.", "lost": "Start with your top 3 products. Five numbers each."},
+  {"say": "Put each product in one of the four boxes in the lesson table. Do the action for that box.", "check": "Every product has a box and a next step.", "lost": "Is each product's return good or bad? Is spend high or low? That picks its box."},
+  {"say": "In your next weekly check, move ad money towards the \"good return\" products.", "check": "More of your spend goes to products that pay it back.", "lost": "Give a bit more ad money to your best-return product."}
+ ]},
+"3.8": {"intro": "New products help you grow. Test them cheaply first so you don't lock up cash.",
+ "steps": [
+  {"say": "Start an ideas list: customer requests, reviews, search terms, and things that go with your best sellers.", "check": "You have at least 5 ideas, each with a reason.", "lost": "Write three product ideas and why."},
+  {"say": "Test your best idea cheaply: a waitlist page, a preorder, a small batch, or asking 5 creators.", "check": "You have real proof people want it, like sign-ups or preorders.", "lost": "Make a simple waitlist page for one idea."},
+  {"say": "Plan the launch (Module 13): build excitement, early access, a launch offer, and ads ready.", "check": "The launch has dates, an offer and ads before day one.", "lost": "Write a launch date and one launch offer."},
+  {"say": "After 30 days, check the new product with the snapshot from Lesson 3.7.", "check": "It's in one of the four boxes, with a next step.", "lost": "Set a reminder for 30 days after launch."}
+ ]},
+"3.9": {"intro": "Offers get old. Others copy them. A regular check keeps yours fresh.",
+ "steps": [
+  {"say": "Add a calendar reminder every 3 months: review my offer.", "check": "The next review date is in your calendar.", "lost": "Add one calendar reminder for 3 months from today."},
+  {"say": "If sales from visitors drop for 2 weeks and you can't find why, redo the five scores from Lesson 3.1.", "check": "You have fresh scores and one change to try.", "lost": "Sales slow for 2 weeks? Go back to Lesson 3.1."}
+ ]},
+"3.10": {"intro": "If people use your product up, a subscription can turn one sale into many. It only suits things people reorder.",
+ "steps": [
+  {"say": "Look at customers who bought twice. How many days between their orders, usually?", "check": "You know your reorder gap, like 30 or 60 days, or that repeats are too rare.", "lost": "Find two repeat customers. Count the days between orders."},
+  {"say": "Install a subscription app from the Shopify App Store. Offer one simple plan: a small saving (5% to 15%) or free shipping, every reorder gap, with easy skip and cancel.", "check": "The product page shows \"One-time purchase\" and \"Subscribe and save\".", "lost": "Install a subscription app. Make one simple plan."},
+  {"say": "Send an email offering the subscription a few days before the first order likely runs out.", "check": "New buyers get the offer right when they'd reorder.", "lost": "Add one subscription email after purchase."},
+  {"say": "Each month, check subscribers, cancels and the reasons. Fix the top reason.", "check": "You know how many subscribers you have and why people leave.", "careful": "Make cancelling and skipping easy. Hiding it causes chargebacks and angry reviews.", "lost": "Once a month, read why people cancelled. Fix the most common one."}
+ ]}
+}
