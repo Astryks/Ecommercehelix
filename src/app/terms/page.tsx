@@ -44,8 +44,8 @@ export default function Terms() {
         <p>Apart from those rights, we do not give refunds for change of mind or for part months. If something has gone wrong, email <Mail /> and we will look at it fairly. Consumers in other countries keep any rights their local law gives them that cannot be excluded.</p>
       </Sec>
 
-      <Sec title="Meta, Google and your ad spend">
-        <p>Campaigns Helix builds are created paused in your own ad account. Nothing spends money until you review it and switch it on in Meta. You are responsible for your ads, your ad spend and following Meta&apos;s advertising policies and terms. Connecting Meta or signing in with Google is optional, and your use of those services is also covered by their own terms. How we handle data from them is in our <Link className={a} href="/privacy">privacy policy</Link>.</p>
+      <Sec title="Meta, Google, Shopify and your ad spend">
+        <p>Campaigns Helix builds are created paused in your own ad account, and only after you press Approve in Helix. Nothing spends money until you review it and switch it on in Meta or Google Ads. You are responsible for your ads, your ad spend and following Meta&apos;s and Google&apos;s advertising policies and terms. AI-written text (summaries, ad copy drafts and help answers) can be wrong, so check it before you use it. Connecting Meta, Shopify or Google Ads, or signing in with Google, is optional, and your use of those services is also covered by their own terms. How we handle data from them is in our <Link className={a} href="/privacy">privacy policy</Link>.</p>
       </Sec>
 
       <Sec title="Acceptable use">

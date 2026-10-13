@@ -19,6 +19,7 @@ import { NUM_FIELDS, parseCsv, type DayInput } from "@/lib/scorecard";
 import { signalsFor } from "@/lib/signals";
 import { costRatios, quickMerge } from "@/lib/today";
 import { createPausedDraft, draftInputFor } from "@/lib/meta/service";
+import { createPausedGoogleCampaign, getGoogleAds } from "@/lib/google-ads/service";
 import { campaignParams, draftNames, starterCopy } from "@/lib/meta/drafts";
 import { logAudit } from "@/lib/meta/store";
 
@@ -74,6 +75,11 @@ export async function doItForMe(form: FormData) {
       starterCopy(input.storeUrl).map((c, i) => `   ${i + 1}. "${c.headline}": ${c.primary}`).join("\n") +
       `\n\nThe copy is a starting point. Edit it and add your images or videos in Ads Manager, then press Launch yourself. Helix never turns on spend or changes live budgets.`;
   }
+  if (item.id === "build-google-campaign") {
+    const g = await getGoogleAds(u.id);
+    if (!g?.customerId) redirect("/dashboard/integrations?need=google_account");
+    detail = detail.replace("your own Google Ads account", `Google Ads account ${g.customerName ?? g.customerId}`);
+  }
   await createApproval(u.id, { taskId: item.id, title: item.title, detail, estAiCost: item.estAiCost });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/approvals");
@@ -115,6 +121,7 @@ export async function decide(form: FormData) {
   if (taskId) await logAudit(u.id, { actor: "user", action: `approval.${status}`, target: taskId, outcome: "ok" });
   if (status === "approved" && taskId) {
     if (taskId === "build-meta-campaign") await createPausedDraft(u.id, id);
+    if (taskId === "build-google-campaign") await createPausedGoogleCampaign(u.id, id);
     await completeTask(u.id, taskId);
   }
   revalidatePath("/dashboard", "layout");

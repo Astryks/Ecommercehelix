@@ -28,6 +28,14 @@ export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): 
         estAiCost: ins.doIt.estAiCost,
       };
   }
+  if (id === "build-google-campaign")
+    return {
+      id,
+      title: "Build a Google Search test campaign in your Google Ads account (paused)",
+      detail: "Helix will create in your own Google Ads account, PAUSED:\n1. A daily budget sized from your numbers (between 10 and 100 in your account currency)\n2. A Search campaign named Helix-Search-TEST-<date>, Maximise conversions, Google Search only\n\nYou then add ad groups, keywords and ads in Google Ads (the Guide me tab has the steps) and turn it on yourself. Nothing spends until you do. Helix never changes budgets on live campaigns.",
+      tier: "starter",
+      estAiCost: 0,
+    };
   if (id === "build-meta-campaign")
     return {
       id,

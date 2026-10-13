@@ -17,6 +17,9 @@ export default function Privacy() {
           <li><strong>Onboarding answers.</strong> Your country, revenue band and answers to the quick questions.</li>
           <li><strong>Progress.</strong> Lessons, cards and tasks you finish, plans, approvals and a log of actions in your account.</li>
           <li><strong>Meta data, only if you connect Meta.</strong> See below.</li>
+          <li><strong>Shopify data, only if you connect Shopify.</strong> See below.</li>
+          <li><strong>Google Ads data, only if you connect Google Ads.</strong> See below.</li>
+          <li><strong>What you ask the AI helper.</strong> If you use an AI feature, the question you type or the data it summarises, and the answer. See below.</li>
           <li><strong>Billing status.</strong> Your plan and your Stripe customer and subscription IDs. We never see or store your card number.</li>
           <li><strong>Basic technical data.</strong> Our hosting provider processes IP addresses and request logs to deliver and protect the site.</li>
         </ul>
@@ -35,9 +38,19 @@ export default function Privacy() {
         <p><strong>Meta Platform Terms.</strong> We use Meta data only to show you your own results and build drafts you asked for. We do not sell it, license it, share it with advertisers or data brokers, use it to build profiles of people, or use it for any purpose other than providing Helix to you.</p>
       </Sec>
 
+      <Sec title="Shopify data">
+        <p>If you choose to connect Shopify, you approve Helix on Shopify&apos;s own screen. Helix asks only for read access to orders, products and inventory. Once a day it reads, for your store only: order dates, totals, discounts, refunds and line items (product name, SKU, quantity, price), product unit costs, product counts and stock levels. It turns these into daily totals and product lines in your dashboard. Helix does not store customer names, emails, phone numbers or addresses, and it never changes anything in your store.</p>
+        <p>Your Shopify access token is encrypted (AES-256-GCM) before it is stored. Disconnect any time under Connections: we remove our access at Shopify and delete the token and the product lines that came from Shopify. Uninstalling Helix in your Shopify admin does the same. We also handle Shopify&apos;s privacy requests (customer data requests, customer erasure and shop erasure).</p>
+      </Sec>
+
       <Sec title="Google data">
-        <p>Google sign-in is optional. If you use it, Helix receives only your basic profile (email address, name and photo) to create and sign in to your account. Helix does not connect to Google Ads or any other Google account data today.</p>
-        <p><strong>Google API Services User Data Policy.</strong> Helix&apos;s use and transfer of information received from Google APIs follows the <a className={a} href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We use it only to sign you in, never for advertising, never sell it, and do not let people read it except with your permission, for security, or where the law requires.</p>
+        <p>Google sign-in is optional. If you use it, Helix receives only your basic profile (email address, name and photo) to create and sign in to your account.</p>
+        <p>If you choose to connect Google Ads, you sign in on Google&apos;s own screen and grant the Google Ads permission. Helix then reads the Google Ads accounts you can access (so you can pick one) and, once a day, campaign results for that account: campaign names and status, spend, clicks, impressions, conversions and conversion value. When you approve it in Helix, Helix creates a new Search campaign and budget in that account, always paused. It never switches on spend or changes live budgets. The Google refresh token is encrypted (AES-256-GCM) before it is stored. Disconnect any time under Connections: we revoke our access at Google and delete the token and synced data. You can also remove Helix in your Google Account under Third-party connections.</p>
+        <p><strong>Google API Services User Data Policy.</strong> Helix&apos;s use and transfer of information received from Google APIs follows the <a className={a} href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We use it only to sign you in and to show you your own ad results and build drafts you asked for, never for advertising, never sell it, never use it to train AI models, and do not let people read it except with your permission, for security, or where the law requires.</p>
+      </Sec>
+
+      <Sec title="AI features">
+        <p>Some features can use AI to write short text: a plain-English summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. They only run when you press the button. Helix sends the request through the Vercel AI Gateway to the model provider (currently Google&apos;s Gemini models). We send only what the feature needs, such as your store link, store check findings, product name, plan and the question you typed. We do not send your email, name or tokens. Answers are cached so the same request is not sent twice, and each call is logged (feature, size and cost) to enforce monthly limits. We do not use your data to train AI models. If AI is off or a limit is reached, Helix shows its standard advice instead.</p>
       </Sec>
 
       <Sec title="Why we use it (and our legal bases)">
@@ -51,14 +64,14 @@ export default function Privacy() {
       </Sec>
 
       <Sec title="What we do not do">
-        <p>We do not sell or rent your personal information, and we do not share it for cross-context behavioural advertising. Helix does not use AI today, so your data is not sent to any AI service. There are no analytics or advertising trackers on the site. We do not make automated decisions that have legal or similarly significant effects on you.</p>
+        <p>We do not sell or rent your personal information, and we do not share it for cross-context behavioural advertising. Your data is only sent to an AI service when you press an AI button, as described above, and we never use it to train AI models. There are no analytics or advertising trackers on the site. We do not make automated decisions that have legal or similarly significant effects on you.</p>
       </Sec>
 
       <Sec title="Cookies and local storage">
         <p>We only use what is needed to run the site:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>a session cookie that keeps you signed in (and related security cookies used by our sign-in system),</li>
-          <li>a short-lived security cookie during Meta sign-in,</li>
+          <li>short-lived security cookies during Meta, Shopify and Google Ads sign-in,</li>
           <li>your browser&apos;s local storage to remember lesson ticks and card positions on your device.</li>
         </ul>
         <p>No tracking or advertising cookies, so there is no cookie banner. Clearing your browser data removes them; you will be signed out.</p>
@@ -74,7 +87,9 @@ export default function Privacy() {
               <tr><td className="py-2 pr-4 font-semibold">Resend</td><td className="py-2 pr-4">Sign-in and service emails</td><td className="py-2">United States</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Stripe</td><td className="py-2 pr-4">Payments and subscriptions (card details go straight to Stripe)</td><td className="py-2">United States and other Stripe locations</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Meta</td><td className="py-2 pr-4">Only if you connect it: reading your ad results, creating paused drafts</td><td className="py-2">United States and other Meta locations</td></tr>
-              <tr><td className="py-2 pr-4 font-semibold">Google</td><td className="py-2 pr-4">Only if you use Google sign-in</td><td className="py-2">United States and other Google locations</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Shopify</td><td className="py-2 pr-4">Only if you connect it: reading your orders, products and stock</td><td className="py-2">Canada, United States and other Shopify locations</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Google</td><td className="py-2 pr-4">Only if you use Google sign-in or connect Google Ads (reading ad results, creating paused campaigns). Also the AI model provider behind the AI features</td><td className="py-2">United States and other Google locations</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Vercel AI Gateway</td><td className="py-2 pr-4">Only when you use an AI feature: routes the request to the AI model provider</td><td className="py-2">United States and global edge network</td></tr>
             </tbody>
           </table>
         </div>
@@ -88,13 +103,15 @@ export default function Privacy() {
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Account data</strong>: while your account is open. When you delete your account, it is deleted from our database straight away.</li>
           <li><strong>Meta data</strong>: until you disconnect Meta or delete your account. The token expires by itself after about 60 days.</li>
+          <li><strong>Shopify and Google Ads data</strong>: until you disconnect, uninstall or delete your account.</li>
+          <li><strong>AI answers and usage logs</strong>: until you delete your account.</li>
           <li><strong>Billing records</strong>: Stripe keeps its own payment records for as long as the law requires.</li>
           <li><strong>Backups and logs</strong>: held by our providers and removed within their normal retention windows.</li>
         </ul>
       </Sec>
 
       <Sec title="Keeping it safe">
-        <p>All traffic uses HTTPS. Meta tokens are encrypted. No system is perfectly secure; if a data breach is likely to cause you serious harm, we will tell you and the OAIC as the Notifiable Data Breaches scheme requires (and EEA/UK regulators where the GDPR requires).</p>
+        <p>All traffic uses HTTPS. Meta, Shopify and Google tokens are encrypted. No system is perfectly secure; if a data breach is likely to cause you serious harm, we will tell you and the OAIC as the Notifiable Data Breaches scheme requires (and EEA/UK regulators where the GDPR requires).</p>
       </Sec>
 
       <Sec title="Your rights">

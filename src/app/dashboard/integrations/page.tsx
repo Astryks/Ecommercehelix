@@ -7,6 +7,7 @@ import { metaMode, metaPublic, META_SCOPES, GRAPH_VERSION } from "@/lib/meta/con
 import { getConnection, listAudit, listDrafts } from "@/lib/meta/store";
 import { listAssets } from "@/lib/meta/service";
 import { disconnectMetaAction, pickMetaAssets, syncMetaNow } from "./actions";
+import { GoogleAdsCard, MORE_MSG, ShopifyCard } from "./more";
 
 const MSG: Record<string, [string, string]> = {
   connected: ["ok", "Meta is connected. Now pick your ad account, Page and pixel."],
@@ -50,12 +51,21 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
       assetError = (e as Error).message;
     }
   }
+  for (const [k, v] of Object.entries(MORE_MSG)) MSG[k] = v;
+  if (sp.shopify === "soon") sp.shopify_soon = "1";
+  if (sp.google === "soon") sp.google_soon = "1";
   const flash = Object.keys(MSG).find((k) => sp[k] !== undefined || sp.error === k);
 
   return (
     <div className="mx-auto max-w-5xl">
       <h1 className="text-3xl font-bold tracking-tight">Connections</h1>
-      <p className="mt-1 max-w-3xl text-slate-600">Connect your ad accounts so Helix can read your results every day and build new campaigns as paused drafts. Helix never turns on spend.</p>
+      <p className="mt-1 max-w-3xl text-slate-600">Connect your store and ad accounts so Helix can read your results every day and build new campaigns as paused drafts. Helix never turns on spend.</p>
+      <div className="mt-4 grid gap-3 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-4">
+        <p><strong className="text-slate-900">Official sign-in.</strong> You connect on Shopify&apos;s, Google&apos;s or Meta&apos;s own screen. Helix never sees your password.</p>
+        <p><strong className="text-slate-900">Encrypted tokens.</strong> Access tokens are encrypted (AES-256-GCM) before they are stored.</p>
+        <p><strong className="text-slate-900">Disconnect any time.</strong> One click removes Helix&apos;s access and deletes the token and synced data.</p>
+        <p><strong className="text-slate-900">Nothing spends without you.</strong> New campaigns are created paused, only after you press Approve in Helix.</p>
+      </div>
 
       {flash && (
         <p className={`mt-4 rounded-xl px-4 py-2.5 text-sm ${MSG[flash][0] === "ok" ? "border border-emerald-200 bg-emerald-50 text-emerald-900" : "border border-rose-200 bg-rose-50 text-rose-900"}`}>{MSG[flash][1]}</p>
@@ -155,6 +165,9 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
         )}
       </section>
 
+      <ShopifyCard userId={u.id} paid={paid} />
+      <GoogleAdsCard userId={u.id} paid={paid} />
+
       {drafts.length > 0 && (
         <section className="card mt-6 p-6">
           <h2 className="font-semibold">Paused drafts Helix created</h2>
@@ -173,7 +186,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
 
       <section className="card mt-6 p-6">
         <h2 className="flex items-center gap-2 font-semibold"><ShieldCheck className="h-4 w-4 text-emerald-600" aria-hidden /> Activity log</h2>
-        <p className="mt-1 text-sm text-slate-600">Every call Helix makes to Meta, and every action you approved or Helix blocked.</p>
+        <p className="mt-1 text-sm text-slate-600">Every call Helix makes to Meta, Shopify and Google, and every action you approved or Helix blocked.</p>
         {audit.length === 0 ? (
           <p className="mt-3 text-sm text-slate-500">Nothing yet.</p>
         ) : (
@@ -195,8 +208,8 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
       </section>
 
       <section className="mt-6 grid gap-4 md:grid-cols-3">
-        {["Google Ads", "Shopify", "Klaviyo"].map((n) => (
-          <div key={n} className="card p-5 text-sm"><p className="font-semibold">{n}</p><p className="mt-1 text-slate-500">Coming next.</p></div>
+        {["Klaviyo", "Google Analytics", "TikTok Ads"].map((n) => (
+          <div key={n} className="card p-5 text-sm"><p className="font-semibold">{n}</p><p className="mt-1 text-slate-500">Coming soon.</p></div>
         ))}
       </section>
     </div>

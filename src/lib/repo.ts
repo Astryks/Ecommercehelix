@@ -632,3 +632,80 @@ export async function saveProductName(userId: string, name: string) {
   if (!hasDb) return void memNames.set(userId, name);
   await prisma.profitSetup.upsert({ where: { userId }, create: { userId, productName: name }, update: { productName: name } });
 }
+
+// ---------- synced integrations (Shopify sales, Google Ads spend) ----------
+export type ShopifyDay = { date: string; orders: number; units: number; revenue: number; discounts: number; refunds: number; cogs: number };
+
+/** Write Shopify sales into the scorecard without touching ad spend or other typed fields. cogs is only written when Shopify knows the unit costs. */
+export async function setShopifySales(userId: string, rows: ShopifyDay[]) {
+  const pick = (r: ShopifyDay) => ({ orders: r.orders, units: r.units, revenue: r.revenue, discounts: r.discounts, refunds: r.refunds, ...(r.cogs > 0 ? { cogs: r.cogs } : {}) });
+  if (!hasDb) {
+    const list = mem.days.get(userId) ?? [];
+    for (const r of rows) {
+      const d = list.find((x) => x.date === r.date);
+      if (d) Object.assign(d, pick(r), { source: "shopify" });
+      else {
+        const blank = { date: r.date, source: "shopify", example: false } as DayInput;
+        for (const f of NUM_FIELDS) blank[f] = 0;
+        list.push({ ...blank, ...pick(r) });
+      }
+    }
+    mem.days.set(userId, list);
+    return;
+  }
+  for (const r of rows) {
+    await prisma.scorecardDay.upsert({
+      where: { userId_date: { userId, date: r.date } },
+      create: { userId, date: r.date, source: "shopify", ...pick(r) },
+      update: { ...pick(r), source: "shopify", example: false },
+    });
+  }
+}
+
+/** Replace the Shopify product lines for the synced dates (typed lines are kept). */
+export async function setShopifyProducts(userId: string, dates: string[], lines: ProductLine[]) {
+  if (!hasDb) {
+    const keep = (mem.products.get(userId) ?? []).filter((p) => !(dates.includes(p.date) && (p as ProductLine & { source?: string }).source === "shopify"));
+    mem.products.set(userId, [...keep, ...lines.map((l) => ({ ...l, example: false, source: "shopify" }))]);
+    return;
+  }
+  await prisma.productSale.deleteMany({ where: { userId, source: "shopify", date: { in: dates } } });
+  if (lines.length) await prisma.productSale.createMany({ data: lines.map((l) => ({ userId, ...l, example: false, source: "shopify" })) });
+}
+
+/** Update on-hand counts for stock items the user already tracks, matched by SKU. */
+export async function setShopifyStock(userId: string, rows: { sku: string; onHand: number; unitCost: number; dailySales: number }[]) {
+  if (!hasDb || rows.length === 0) return;
+  const items = await prisma.stockItem.findMany({ where: { userId, sku: { in: rows.map((r) => r.sku) } }, select: { id: true, sku: true, unitCost: true } });
+  for (const it of items) {
+    const r = rows.find((x) => x.sku === it.sku)!;
+    await prisma.stockItem.update({ where: { id: it.id }, data: { onHand: r.onHand, dailySales: r.dailySales, ...(it.unitCost === 0 && r.unitCost > 0 ? { unitCost: r.unitCost } : {}) } });
+  }
+}
+
+/** Write synced Google Ads spend and conversion value into the scorecard without touching other fields. */
+export async function setGoogleSpend(userId: string, rows: { date: string; spend: number; revenue: number }[]) {
+  if (!hasDb) {
+    const list = mem.days.get(userId) ?? [];
+    for (const r of rows) {
+      const d = list.find((x) => x.date === r.date);
+      if (d) {
+        d.adGoogle = r.spend;
+        d.googleRevenue = r.revenue;
+      } else {
+        const blank = { date: r.date, source: "google", example: false } as DayInput;
+        for (const f of NUM_FIELDS) blank[f] = 0;
+        list.push({ ...blank, adGoogle: r.spend, googleRevenue: r.revenue });
+      }
+    }
+    mem.days.set(userId, list);
+    return;
+  }
+  for (const r of rows) {
+    await prisma.scorecardDay.upsert({
+      where: { userId_date: { userId, date: r.date } },
+      create: { userId, date: r.date, source: "google", adGoogle: r.spend, googleRevenue: r.revenue },
+      update: { adGoogle: r.spend, googleRevenue: r.revenue },
+    });
+  }
+}

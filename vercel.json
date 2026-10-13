@@ -12,6 +12,14 @@
     {
       "path": "/api/cron/site-audit",
       "schedule": "0 17 * * *"
+    },
+    {
+      "path": "/api/cron/shopify-sync",
+      "schedule": "30 18 * * *"
+    },
+    {
+      "path": "/api/cron/google-ads-sync",
+      "schedule": "15 19 * * *"
     }
   ]
 }

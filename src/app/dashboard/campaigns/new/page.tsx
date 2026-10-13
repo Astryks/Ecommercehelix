@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { AiBox } from "@/components/AiBox";
+import { aiAdCopy } from "../../ai-actions";
 import { BookOpen, Check, ImageIcon, Lock, Rocket, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getDays, getSettings, listApprovals } from "@/lib/repo";
 import { targetsFrom } from "@/lib/targets";
 import { getConnection, listDrafts } from "@/lib/meta/store";
+import { getGoogleAds } from "@/lib/google-ads/service";
 import { PLAN_RANK } from "@/lib/plans";
 import { STRUCTURES, SWIPES, META_STEPS, GOOGLE_STEPS, PRELAUNCH } from "@/lib/seed/builder";
 import { doItForMe } from "../../actions";
@@ -15,6 +18,8 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
   const [acct, approvals, days, settings, conn, drafts] = await Promise.all([getAccount(u.id), listApprovals(u.id), getDays(u.id), getSettings(u.id), getConnection(u.id), listDrafts(u.id)]);
   const ready = Boolean(conn?.adAccountId && conn.pageId && conn.pixelId);
   const pending = approvals.some((a) => a.taskId === "build-meta-campaign" && a.status === "pending");
+  const pendingG = approvals.some((a) => a.taskId === "build-google-campaign" && a.status === "pending");
+  const gads = await getGoogleAds(u.id);
   const canDo = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const t = targetsFrom(days, settings);
   const goodCpa = t.aov * (t.targetMerPct / 100) * 2;
@@ -34,7 +39,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
         <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
           <section className="card p-6">
             <h2 className="text-lg font-semibold">Helix builds it in your account, paused</h2>
-            <p className="mt-1 text-sm text-slate-600">Helix pushes everything below into your own Meta ad account as paused drafts. You review it in Ads Manager and press Launch. Google is coming next.</p>
+            <p className="mt-1 text-sm text-slate-600">Helix pushes everything below into your own Meta ad account as paused drafts. You review it in Ads Manager and press Launch. With Google Ads connected, Helix can also create a paused Search campaign after you approve.</p>
             <p className={`mt-3 rounded-xl px-3 py-2 text-sm ${ready ? "bg-emerald-50 text-emerald-900" : "bg-amber-50 text-amber-900"}`}>
               {ready ? <>Ready: {conn!.adAccountName}, {conn!.pageName}, {conn!.pixelName}{conn!.mode === "mock" ? " (mock mode)" : ""}.</> : <>First <Link className="underline" href="/dashboard/integrations">connect Meta</Link> and pick your ad account, Page and pixel.</>}
             </p>
@@ -62,6 +67,14 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
                   <button className="btn-dark">{canDo ? <Wand2 className="h-4 w-4" aria-hidden /> : <Lock className="h-4 w-4" aria-hidden />}{canDo ? "Build paused drafts in my account" : "Build paused drafts · Starter"}</button>
                 </form>
               )}
+              {gads?.customerId && (pendingG ? (
+                <Link href="/dashboard/approvals" className="btn-ghost">Google draft waiting for your approval</Link>
+              ) : (
+                <form action={doItForMe}>
+                  <input type="hidden" name="taskId" value="build-google-campaign" />
+                  <button className="btn-ghost" disabled={!canDo}><Wand2 className="h-4 w-4" aria-hidden /> Build a paused Google Search campaign</button>
+                </form>
+              ))}
               {drafts[0]?.campaignId && <Link href="/dashboard/integrations" className="btn-ghost">Last draft: {drafts[0].status}, {drafts[0].adIds.length} paused ads</Link>}
               <Link href="/learn/06-defining-campaigns#lesson-616-the-campaign-brief-template" className="btn-ghost"><BookOpen className="h-4 w-4 text-cyan-700" aria-hidden /> Campaign brief template</Link>
             </div>
@@ -111,6 +124,11 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
                 </article>
               ))}
             </div>
+          </section>
+          <section className="card p-6">
+            <h2 className="text-lg font-semibold">Copy drafts for your store</h2>
+            <p className="mt-1 text-sm text-slate-600">3 primary texts and 3 headlines written for your store. Text only: Helix does not send this anywhere. Edit before you use it.</p>
+            <div className="mt-3"><AiBox action={aiAdCopy} label="Draft my ad copy" /></div>
           </section>
           <section className="grid gap-6 lg:grid-cols-2">
             {[["3. Build it in Meta Ads Manager", META_STEPS], ["4. Build it in Google Ads", GOOGLE_STEPS]].map(([title, steps]) => (

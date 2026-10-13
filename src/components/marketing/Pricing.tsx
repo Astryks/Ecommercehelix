@@ -8,7 +8,7 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl px-5">
         <p className="eyebrow">Pricing</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Less than one day of agency fees. Every month.</h2>
-        <p className="mt-3 max-w-2xl text-slate-600">Start free with a real profit dashboard and the first course goals. Upgrade when you want a full growth plan and Meta set up for you as paused drafts.</p>
+        <p className="mt-3 max-w-2xl text-slate-600">Start free with a real profit dashboard and the first course goals. Upgrade when you want a full growth plan, your ad accounts connected and campaigns set up for you as paused drafts.</p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {PLANS.map((p) => (
             <div
@@ -30,7 +30,13 @@ export function Pricing() {
           ))}
         </div>
         <p className="mt-6 text-sm text-slate-600">Prices in Australian dollars. Paid plans are monthly subscriptions that renew automatically until you cancel. Cancel any time in Plan &amp; billing; you keep paid features to the end of the month you paid for. See our <Link href="/terms" className="underline">Terms</Link>.</p>
-        <p className="mt-6 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700"><strong>Plain and honest.</strong> Helix is self-serve software. It guides you step by step, and the only things it builds in your accounts are Meta campaigns as paused drafts. Nothing goes live until you press Launch.</p>
+        <p className="mt-6 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700"><strong>Plain and honest.</strong> Helix is self-serve software. It guides you step by step, and the only things it builds in your accounts are ad campaigns as paused drafts (Meta today, Google Ads coming soon), and only after you press Approve in Helix. Nothing spends until you turn it on in the ad platform.</p>
+        <div className="mt-4 grid gap-3 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-4">
+          <p className="rounded-xl border border-slate-200 px-4 py-3"><strong className="text-slate-900">Official sign-in.</strong> You connect Meta, Shopify or Google on their own screens. Helix never sees your passwords.</p>
+          <p className="rounded-xl border border-slate-200 px-4 py-3"><strong className="text-slate-900">Encrypted tokens.</strong> Access tokens are encrypted before they are stored. Shopify access is read-only.</p>
+          <p className="rounded-xl border border-slate-200 px-4 py-3"><strong className="text-slate-900">Disconnect any time.</strong> One click removes Helix&apos;s access and deletes the token and synced data.</p>
+          <p className="rounded-xl border border-slate-200 px-4 py-3"><strong className="text-slate-900">AI with limits.</strong> Optional AI write-ups have a monthly allowance per plan. When it runs out you still get Helix&apos;s standard advice.</p>
+        </div>
       </div>
     </section>
   );

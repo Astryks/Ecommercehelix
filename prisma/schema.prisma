@@ -10,43 +10,49 @@ datasource db {
 
 // ---------- Auth.js tables ----------
 model User {
-  id             String             @id @default(cuid())
-  name           String?
-  email          String?            @unique
-  emailVerified  DateTime?
-  image          String?
-  createdAt      DateTime           @default(now())
-  track          String             @default("growing") // "starting" | "growing"
-  country        String             @default("AU") // ISO 3166 alpha-2, drives the calendar and tax default
-  salesTaxMode   String             @default("auto") // "auto" | "AU" | "NZ" | "UK" | "none": strip GST/VAT from sales
-  onboardedAt    DateTime?
-  isDemo         Boolean            @default(false) // created by the demo login; never linked to a real account
-  accounts       Account[]
-  sessions       Session[]
-  stores         Store[]
-  subscription   Subscription?
-  completions    TaskCompletion[]
-  approvals      Approval[]
-  scorecardDays  ScorecardDay[]
-  productSales   ProductSale[]
-  settings       ScorecardSettings?
-  metaConnection MetaConnection?
-  metaSnapshot   MetaSnapshot?
-  metaDrafts     MetaDraft[]
-  auditLogs      AuditLog[]
-  seasonPlans    SeasonPlan[]
-  suppliers      Supplier[]
-  stockItems     StockItem[]
-  monthlyGoals   MonthlyGoals?
-  lessonProgress LessonProgress[]
-  courseState    CourseState?
-  profitSetup    ProfitSetup?
-  progressEvents ProgressEvent[]
-  stockSeeded    Boolean            @default(false) // example suppliers and stock added once
-  diagnosis      Json? // answers to the onboarding questions, plus the bottleneck and starting goal
-  diagnosedAt    DateTime?
-  planStartedAt  DateTime? // when the personal 12-week plan started
-  auditRuns      AuditRun[]
+  id                  String               @id @default(cuid())
+  name                String?
+  email               String?              @unique
+  emailVerified       DateTime?
+  image               String?
+  createdAt           DateTime             @default(now())
+  track               String               @default("growing") // "starting" | "growing"
+  country             String               @default("AU") // ISO 3166 alpha-2, drives the calendar and tax default
+  salesTaxMode        String               @default("auto") // "auto" | "AU" | "NZ" | "UK" | "none": strip GST/VAT from sales
+  onboardedAt         DateTime?
+  isDemo              Boolean              @default(false) // created by the demo login; never linked to a real account
+  accounts            Account[]
+  sessions            Session[]
+  stores              Store[]
+  subscription        Subscription?
+  completions         TaskCompletion[]
+  approvals           Approval[]
+  scorecardDays       ScorecardDay[]
+  productSales        ProductSale[]
+  settings            ScorecardSettings?
+  metaConnection      MetaConnection?
+  metaSnapshot        MetaSnapshot?
+  metaDrafts          MetaDraft[]
+  auditLogs           AuditLog[]
+  seasonPlans         SeasonPlan[]
+  suppliers           Supplier[]
+  stockItems          StockItem[]
+  monthlyGoals        MonthlyGoals?
+  lessonProgress      LessonProgress[]
+  courseState         CourseState?
+  profitSetup         ProfitSetup?
+  progressEvents      ProgressEvent[]
+  stockSeeded         Boolean              @default(false) // example suppliers and stock added once
+  diagnosis           Json? // answers to the onboarding questions, plus the bottleneck and starting goal
+  diagnosedAt         DateTime?
+  planStartedAt       DateTime? // when the personal 12-week plan started
+  auditRuns           AuditRun[]
+  shopifyConnection   ShopifyConnection?
+  googleAdsConnection GoogleAdsConnection?
+  googleAdsSnapshot   GoogleAdsSnapshot?
+  googleAdsDrafts     GoogleAdsDraft[]
+  aiUsage             AiUsage[]
+  aiCache             AiCache[]
 }
 
 model Account {
@@ -205,6 +211,7 @@ model ProductSale {
   price    Float // average selling price per unit
   unitCost Float // landed COGS per unit
   example  Boolean @default(false)
+  source   String  @default("manual") // manual | shopify
   user     User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
@@ -402,4 +409,93 @@ model AuditRun {
   user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, startedAt])
+}
+
+// ---------- Shopify integration ----------
+// Offline access token, stored only as AES-256-GCM ciphertext (src/lib/crypto.ts). Aggregates only: no customer names, emails or addresses.
+model ShopifyConnection {
+  userId        String    @id
+  shop          String // example.myshopify.com
+  tokenEnc      String
+  scopes        String    @default("")
+  shopName      String    @default("")
+  currency      String?
+  productCount  Int       @default(0)
+  status        String    @default("active") // active | error | uninstalled
+  lastSyncAt    DateTime?
+  lastSyncError String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([shop])
+}
+
+// ---------- Google Ads integration ----------
+// Refresh token stored only as AES-256-GCM ciphertext.
+model GoogleAdsConnection {
+  userId          String    @id
+  googleEmail     String    @default("")
+  tokenEnc        String
+  scopes          String    @default("")
+  customerId      String? // 1234567890, no dashes
+  customerName    String?
+  loginCustomerId String?
+  currency        String?
+  status          String    @default("active") // active | error | expired
+  lastSyncAt      DateTime?
+  lastSyncError   String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model GoogleAdsSnapshot {
+  userId   String   @id
+  data     String
+  syncedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Paused Google Ads campaigns Helix created after an approval.
+model GoogleAdsDraft {
+  id         String   @id @default(cuid())
+  userId     String
+  approvalId String?
+  status     String // created | failed
+  campaignId String?
+  budgetId   String?
+  error      String?
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ---------- AI usage ----------
+// One row per AI call (or cache hit). Drives per-user monthly caps and the global spend kill-switch.
+model AiUsage {
+  id           String   @id @default(cuid())
+  userId       String
+  kind         String // audit | adcopy | help
+  model        String
+  inputTokens  Int      @default(0)
+  outputTokens Int      @default(0)
+  costUsd      Float    @default(0)
+  cached       Boolean  @default(false)
+  ok           Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([createdAt])
+}
+
+model AiCache {
+  key       String   @id // sha256 of kind + prompt
+  userId    String
+  kind      String
+  text      String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
 }

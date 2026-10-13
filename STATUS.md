@@ -1,6 +1,6 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 9:45 PM (Sydney)._
+_Last updated: 13 Oct 2026, about 9:50 PM (Sydney)._
 
 ## At a glance
 
@@ -11,6 +11,18 @@ _Last updated: 13 Oct 2026, about 9:45 PM (Sydney)._
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
+
+## Integrations build (13 Oct 2026, about 9:30 PM Sydney)
+
+**Live in code (switched on by env vars; each shows "Coming soon" without them and never errors):**
+- **Shopify** (`src/lib/shopify`, `/api/shopify/{install,callback,webhooks}`, cron `/api/cron/shopify-sync` 18:30 UTC). Per-user OAuth, read-only scopes `read_orders,read_products,read_inventory`, expiring offline token + refresh token stored AES-256-GCM encrypted. First sync 60 days, daily 7 days: orders, units, gross sales, discounts, refunds, COGS into Scorecard (so the profit waterfall fills itself), product lines into Profit (`ProductSale.source = shopify`), on-hand stock for tracked SKUs. `app/uninstalled` and the 3 GDPR webhooks with HMAC check. No customer personal data stored. Needs `SHOPIFY_API_KEY`, `SHOPIFY_API_SECRET` (docs/shopify-setup.md). **Status: coming soon** (env not set).
+- **Google Ads** (`src/lib/google-ads`, `/api/google-ads/{connect,callback}`, cron `/api/cron/google-ads-sync` 19:15 UTC). Per-user OAuth (adwords scope, offline), refresh token encrypted, account picker, daily GAQL 30-day campaign report into Scorecard `adGoogle`/`googleRevenue` (ROAS by channel, MER), snapshot table on Connections. "Build a paused Google Search campaign" goes through Approvals; only on Approve does Helix create a budget + Search campaign with `status: PAUSED` (guarded by `assertPaused`). API v25. Needs `GOOGLE_ADS_CLIENT_ID`, `GOOGLE_ADS_CLIENT_SECRET`, `GOOGLE_ADS_DEVELOPER_TOKEN` with Basic Access (docs/google-ads-setup.md). **Status: coming soon** (env not set).
+- **AI layer** (`src/lib/ai`, `src/app/dashboard/ai-actions.ts`, `AiBox`). AI SDK v7 through the Vercel AI Gateway, model `google/gemini-2.5-flash-lite`, 400 max output tokens. Store-check summary (Insights), ad copy drafts (Campaigns → Build), "I'm lost" help (Today and /dashboard/help). Caps per month: Free 3, Starter 50, Growth 150; cached answers do not count. Usage logged in `AiUsage`, cache in `AiCache`. Global kill-switch `AI_MONTHLY_BUDGET_USD` (default 25) and `AI_DISABLED=1`. Falls back to rule-based text on any failure. Auth is Vercel OIDC on deployments; needs AI Gateway credits on the team (docs/ai-setup.md).
+- Spend safety: Meta and Google campaigns are only created paused, only after Approve.
+- Copy: plans (Shopify and Google marked coming soon, AI allowances), pricing security panel, Connections security panel, terms, privacy (Shopify, Google Ads, Vercel AI Gateway and the model provider added as processors).
+- Schema (additive, applied to Neon before push): tables ShopifyConnection, GoogleAdsConnection, GoogleAdsSnapshot, GoogleAdsDraft, AiUsage, AiCache; column ProductSale.source.
+
+**Not done / next:** Shopify order webhooks for near-real-time sync (daily cron only); `read_all_orders` for more than 60 days; Google Ads ad groups, keywords and ads in the paused draft (campaign + budget only); GA4 sessions; Klaviyo.
 
 ## Launch-readiness audit (13 Oct 2026, evening Sydney)
 

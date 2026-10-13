@@ -46,3 +46,51 @@ export async function disconnectMetaAction() {
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/integrations?disconnected=1");
 }
+
+// ---------- Shopify and Google Ads ----------
+import { disconnectShopify, syncShopify } from "@/lib/shopify/service";
+import { disconnectGoogleAds, pickCustomer, syncGoogleAds } from "@/lib/google-ads/service";
+
+export async function syncShopifyNow() {
+  const u = await requireUser("/dashboard/integrations");
+  const r = await syncShopify(u.id, "user", 60);
+  revalidatePath("/dashboard", "layout");
+  redirect(`/dashboard/integrations?${r.ok ? "shopify_synced=1" : "error=shopify_sync"}`);
+}
+
+export async function disconnectShopifyAction() {
+  const u = await requireUser("/dashboard/integrations");
+  await disconnectShopify(u.id);
+  revalidatePath("/dashboard", "layout");
+  redirect("/dashboard/integrations?shopify_disconnected=1");
+}
+
+export async function pickGoogleCustomer(form: FormData) {
+  const u = await requireUser("/dashboard/integrations");
+  const id = String(form.get("customerId") ?? "");
+  const login = String(form.get("loginCustomerId") ?? "");
+  if (!/^\d{6,12}$/.test(id.replace(/-/g, "")) || (login && !/^\d{6,12}$/.test(login.replace(/-/g, "")))) redirect("/dashboard/integrations?error=google_pick");
+  let ok = true;
+  try {
+    await pickCustomer(u.id, id, login || undefined);
+  } catch {
+    ok = false;
+  }
+  if (ok) await syncGoogleAds(u.id, "user");
+  revalidatePath("/dashboard", "layout");
+  redirect(`/dashboard/integrations?${ok ? "google_saved=1" : "error=google_pick"}`);
+}
+
+export async function syncGoogleNow() {
+  const u = await requireUser("/dashboard/integrations");
+  const r = await syncGoogleAds(u.id, "user");
+  revalidatePath("/dashboard", "layout");
+  redirect(`/dashboard/integrations?${r.ok ? "google_synced=1" : "error=google_sync"}`);
+}
+
+export async function disconnectGoogleAction() {
+  const u = await requireUser("/dashboard/integrations");
+  await disconnectGoogleAds(u.id);
+  revalidatePath("/dashboard", "layout");
+  redirect("/dashboard/integrations?google_disconnected=1");
+}

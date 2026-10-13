@@ -51,7 +51,7 @@ export const FEATURES: Feature[] = [
     guides: ["break-even-roas-explained", "how-to-scale-a-dtc-brand-profitably"],
     faq: [
       { q: "Will Helix spend money on my ad account?", a: "No. Campaigns are created as paused drafts. You review and launch them yourself, and budget changes on live campaigns are yours to make." },
-      { q: "Does Helix run Google Ads too?", a: "Google Ads is guidance only for now: a step-by-step Performance Max and Search setup on the Growth plan. A Google Ads connection is coming." },
+      { q: "Does Helix run Google Ads too?", a: "Google Ads is guidance only for now: a step-by-step Performance Max and Search setup on the Growth plan. A Google Ads connection is coming soon: read your daily results for ROAS by channel and build Search campaigns as paused drafts after you approve." },
     ],
   },
   {

@@ -1,0 +1,12 @@
+# AI layer (Vercel AI Gateway)
+
+Three optional buttons use AI: the store check "Write my summary" (Insights), "Draft my ad copy" (Campaigns → Build) and "I'm lost" help (Today). Each runs only when pressed.
+
+- **SDK and routing:** AI SDK `generateText` with a plain `provider/model` string, so it goes through the Vercel AI Gateway. Default model `google/gemini-2.5-flash-lite` (US$0.10 in / US$0.40 out per million tokens per the gateway's `/v1/models`, Oct 2026). Change with `AI_MODEL`; if you do, also set `AI_PRICE_IN_PER_M` and `AI_PRICE_OUT_PER_M` so the spend log stays right.
+- **Auth:** on Vercel, OIDC (`VERCEL_OIDC_TOKEN`) is automatic. The team needs AI Gateway enabled with credits (Vercel dashboard → AI Gateway; a payment method unlocks the free monthly credit, then top up). Elsewhere set `AI_GATEWAY_API_KEY`.
+- **Limits:** max 400 output tokens, input cut to 6,000 characters, 20 s timeout. Per-user monthly caps on non-cached calls: Free 3, Starter 50, Growth 150 (`src/lib/ai/config.ts`). Identical requests are answered from the `AiCache` table and do not count.
+- **Kill-switch:** `AI_MONTHLY_BUDGET_USD` (default 25). When the month's logged spend across all users reaches it, every AI call stops until the 1st (UTC). `AI_DISABLED=1` turns AI off at once. Also consider a budget on the gateway itself (`vercel ai-gateway budgets set`).
+- **Logging:** every call and cache hit is a row in `AiUsage` (user, feature, model, tokens, cost, cached, ok). Requests carry `user` and `feature:<kind>` tags for the gateway's own reports.
+- **Fallback:** if AI is off, capped, over budget or errors, the button returns Helix's rule-based text (`src/lib/ai/fallbacks.ts`) and says so.
+
+Estimated cost: a call is about 1,000 to 1,500 input and up to 400 output tokens, roughly US$0.0003. 50 calls (Starter cap) ≈ US$0.015 a user a month; 150 (Growth) ≈ US$0.05.

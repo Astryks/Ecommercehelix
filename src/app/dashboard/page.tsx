@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { AiBox } from "@/components/AiBox";
+import { aiHelp } from "./ai-actions";
 import { GrowthLinks } from "@/components/dashboard/GrowthLinks";
 import { getCourse } from "@/lib/course";
 import { Celebration } from "@/components/course/GoalCard";
@@ -420,6 +422,11 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </div>
         </aside>
       </div>
+      <section aria-labelledby="lost-h" className="card mt-6 p-5">
+        <h2 id="lost-h" className="font-semibold">I&apos;m lost</h2>
+        <p className="mt-1 text-sm text-slate-600">Tell Helix where you are stuck and it points you to the next step.</p>
+        <div className="mt-3"><AiBox action={aiHelp} label="Help me" question placeholder="e.g. I don't know where to start with ads" /></div>
+      </section>
     </div>
   );
 }

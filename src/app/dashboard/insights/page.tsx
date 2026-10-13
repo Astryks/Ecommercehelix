@@ -1,4 +1,6 @@
 import { CalendarClock } from "lucide-react";
+import { AiBox } from "@/components/AiBox";
+import { aiAuditWriteup } from "../ai-actions";
 import { StoreCheck } from "@/components/store-check/StoreCheck";
 import { auditRuns } from "@/lib/site-audit/run";
 import { isDemoUserId } from "@/lib/demo-auth";
@@ -48,6 +50,13 @@ export default async function Insights() {
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
         <div className="space-y-5">
           {!demo && <StoreCheck runs={runs} storeUrl={acct.storeUrl} canRecheck={paid} />}
+          {!demo && runs.length > 0 && (
+            <section className="card p-5">
+              <h2 className="font-semibold">Plain-English summary</h2>
+              <p className="mt-1 text-sm text-slate-600">A short write-up of your latest store check and the 3 fixes to do first.</p>
+              <div className="mt-3"><AiBox action={aiAuditWriteup} label="Write my summary" /></div>
+            </section>
+          )}
           {!demo && <h2 className="pt-2 text-lg font-semibold">Ads and funnel {live.metaLive ? "" : "(example data until Meta is connected)"}</h2>}
           {(paid ? open : open.slice(0, 3)).map((ins) => <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} />)}
           {!paid && demo && open.length > 3 && <UpgradePrompt need="starter" forKey="dfm" title={`${open.length - 3} more fixes found`} body="Free shows your top 3 fixes. Starter shows every fix, with a step-by-step checklist for each." />}
