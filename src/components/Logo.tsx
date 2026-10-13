@@ -24,7 +24,7 @@ export function Logo({ size = 34, dark = false }: { size?: number; dark?: boolea
   return (
     <span className="inline-flex items-center gap-2">
       <HelixMark size={size} dark={dark} />
-      <span className={`font-display text-[1.3rem] leading-none ${dark ? "text-white" : "text-[#1A1718]"}`}>
+      <span className={`font-hand text-[1.4rem] leading-none ${dark ? "text-white" : "text-[#1A1718]"}`}>
         E-commerce <span className={dark ? "text-[#B0ABEF]" : "text-[#5A50D6]"}>Helix</span>
       </span>
     </span>

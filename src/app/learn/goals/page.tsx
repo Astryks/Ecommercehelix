@@ -31,7 +31,7 @@ export default function GoalsGuide() {
 
         <section aria-labelledby="who-h" className="mt-16">
           <h2 id="who-h" className="text-3xl text-slate-900">Who Helix is for</h2>
-          <p className="mt-3 max-w-3xl font-display text-xl text-slate-900">{WHO_HEADLINE.title}.</p>
+          <p className="mt-3 max-w-3xl font-hand text-xl text-slate-900">{WHO_HEADLINE.title}.</p>
           <p className="mt-2 max-w-3xl text-slate-600">{WHO_HEADLINE.body}</p>
           <div className="mt-6"><WhoFor /></div>
         </section>

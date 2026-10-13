@@ -38,7 +38,7 @@ function BigCard({ label, value, change, vs, spark, color, goodWhenUp = true, un
   return (
     <div className="card flex flex-col p-5">
       <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">{label}</p>
-      <p className="mt-2 font-display text-[34px] font-semibold leading-none tracking-tight text-slate-900 tabular">{value}</p>
+      <p className="mt-2 font-hand text-[34px] font-semibold leading-none tracking-tight text-slate-900 tabular">{value}</p>
       <div className="mt-3 flex flex-wrap items-center gap-2">
         {change ? <ChangeChip c={change} goodWhenUp={goodWhenUp} unit={unit} /> : <span className="text-xs text-slate-500">No earlier data yet</span>}
         <span className="text-xs text-slate-500">vs {vs}</span>
@@ -94,7 +94,7 @@ export default async function Growth({ searchParams }: PageProps<"/dashboard/gro
       <p className="mt-3 text-sm text-slate-600">New to these words? <Link href={lessonLink("1.7")?.href ?? "/learn"} className="font-medium text-cyan-700 underline">Sales, costs and profit in plain English</Link> · <Link href="/dashboard/profit" className="font-medium text-cyan-700 underline">Your profit setup</Link></p>
 
       <section className={`mt-5 rounded-2xl border px-5 py-4 ${headTone}`} aria-live="polite">
-        <p className="font-display text-2xl font-semibold tracking-tight text-slate-900">
+        <p className="font-hand text-2xl font-semibold tracking-tight text-slate-900">
           {hasPrev ? plainLine("Profit", profitC, cmp.vsWord) : `Profit so far: ${money(cur.profit)}.`}
         </p>
         <p className="mt-1 text-sm text-slate-700">

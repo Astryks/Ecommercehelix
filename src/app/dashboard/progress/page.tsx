@@ -66,7 +66,7 @@ export default async function ProgressPage() {
       </section>
 
       <section className="card mt-5 p-5" aria-label="Profit trend">
-        <h2 className="font-display text-xl font-semibold text-[#1A1718]">Profit {paid ? "by month since you started" : "by week, last 30 days"}</h2>
+        <h2 className="font-hand text-xl font-semibold text-[#1A1718]">Profit {paid ? "by month since you started" : "by week, last 30 days"}</h2>
         {real.length === 0 ? <p className="mt-2 text-sm text-slate-600">Add your real daily numbers and your profit trend appears here. <Link href="/dashboard/scorecard#entry" className="text-cyan-700 underline">Add today&apos;s numbers</Link></p> : (
           <ol className="mt-4 flex h-44 items-end gap-2">
             {trend.map((t) => (
@@ -82,7 +82,7 @@ export default async function ProgressPage() {
 
       <div className="mt-5 grid gap-5 lg:grid-cols-2">
         <section className="card p-5" aria-label="Monthly recap">
-          <h2 className="font-display text-xl font-semibold text-[#1A1718]">Monthly recap</h2>
+          <h2 className="font-hand text-xl font-semibold text-[#1A1718]">Monthly recap</h2>
           {months.length === 0 ? <p className="mt-2 text-sm text-slate-600">Tick your first task and your recap starts here.</p> : (
             <table className="mt-3 w-full text-sm">
               <thead><tr className="text-left text-xs text-slate-500"><th className="py-1">Month</th><th>Active days</th><th>Tasks</th><th>Lesson steps</th><th>Goals</th></tr></thead>
@@ -91,7 +91,7 @@ export default async function ProgressPage() {
           )}
         </section>
         <section className="card p-5" aria-label="Goals finished">
-          <h2 className="font-display text-xl font-semibold text-[#1A1718]">Goals finished</h2>
+          <h2 className="font-hand text-xl font-semibold text-[#1A1718]">Goals finished</h2>
           {goalsDone.length === 0 ? <p className="mt-2 text-sm text-slate-600">Your first finished goal will show here with its date. <Link href="/course" className="text-cyan-700 underline">Open your course</Link></p> : (
             <ul className="mt-3 space-y-2 text-sm">{[...goalsDone].reverse().map((g) => <li key={g.ref + g.at} className="flex justify-between gap-3"><span className="font-medium">{goalTitle(g.ref)}</span><span className="text-slate-500">{dayName(g.at.slice(0, 10))}</span></li>)}</ul>
           )}
@@ -99,7 +99,7 @@ export default async function ProgressPage() {
       </div>
 
       <section className="card mt-5 p-5" aria-label="Timeline">
-        <h2 className="font-display text-xl font-semibold text-[#1A1718]">Timeline</h2>
+        <h2 className="font-hand text-xl font-semibold text-[#1A1718]">Timeline</h2>
         {days.length === 0 ? <p className="mt-2 text-sm text-slate-600">Nothing yet. Every task and lesson step you tick appears here, day by day.</p> : (
           <ol className="mt-3 space-y-3 border-l-2 border-slate-200 pl-4">
             {days.slice(0, 60).map((d) => (

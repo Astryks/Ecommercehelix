@@ -27,12 +27,12 @@ export default async function Settings({ searchParams }: PageProps<"/dashboard/s
       </form>
       <section id="account" className="card mt-6 space-y-6 p-6 sm:p-8">
         <div>
-          <h2 className="font-display text-xl font-semibold text-[#1A1718]">Your data</h2>
+          <h2 className="font-hand text-xl font-semibold text-[#1A1718]">Your data</h2>
           <p className="mt-1 text-sm text-slate-600">Download everything Helix stores about you as one file: your numbers, tasks, lessons, plans and settings. Connection passwords and tokens are never included.</p>
           <a href="/api/account/export" className="btn-ghost mt-3 inline-block px-5 py-2">Download my data</a>
         </div>
         <div className="border-t border-slate-200 pt-6">
-          <h2 className="font-display text-xl font-semibold text-rose-800">Delete my account</h2>
+          <h2 className="font-hand text-xl font-semibold text-rose-800">Delete my account</h2>
           <p className="mt-1 text-sm text-slate-600">This permanently deletes your account and everything in it. It cannot be undone. If you pay for a plan, cancel it under Billing first. Type DELETE to confirm.</p>
           {sp.delete === "confirm" && <p className="mt-2 text-sm text-rose-700">Please type DELETE in capitals to confirm.</p>}
           <form action={deleteMyAccount} className="mt-3 flex flex-wrap gap-2">

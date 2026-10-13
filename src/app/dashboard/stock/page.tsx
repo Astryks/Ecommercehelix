@@ -189,7 +189,7 @@ export default async function Stock() {
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
         <details className="card p-5" open={!rows.length}>
-          <summary className="flex cursor-pointer items-center gap-2 font-display text-lg font-semibold"><Plus className="h-4 w-4 text-cyan-700" aria-hidden /> Add or update a product</summary>
+          <summary className="flex cursor-pointer items-center gap-2 font-hand text-lg font-semibold"><Plus className="h-4 w-4 text-cyan-700" aria-hidden /> Add or update a product</summary>
           <form action={saveStockItem} className="mt-4 grid grid-cols-2 gap-3 text-sm">
             <label>SKU<input name="sku" required className="input mt-1" placeholder="LIN-SH-01" /></label>
             <label>Product name<input name="name" required className="input mt-1" placeholder="Linen Shirt" /></label>
@@ -214,7 +214,7 @@ export default async function Stock() {
         </details>
 
         <details className="card p-5">
-          <summary className="flex cursor-pointer items-center gap-2 font-display text-lg font-semibold"><Truck className="h-4 w-4 text-cyan-700" aria-hidden /> Add a supplier</summary>
+          <summary className="flex cursor-pointer items-center gap-2 font-hand text-lg font-semibold"><Truck className="h-4 w-4 text-cyan-700" aria-hidden /> Add a supplier</summary>
           <form action={saveSupplier} className="mt-4 grid grid-cols-2 gap-3 text-sm">
             <label className="col-span-2">Name<input name="name" required className="input mt-1" /></label>
             <label>Contact (email or phone)<input name="contact" className="input mt-1" /></label>

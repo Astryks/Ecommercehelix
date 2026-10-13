@@ -21,7 +21,7 @@ export function StageTrio({ counts, hrefFor, compact = false }: {
               <span className={`flex h-11 w-11 items-center justify-center rounded-xl bg-white ring-1 ${s.chip}`}><Icon className="h-5 w-5" aria-hidden /></span>
               <span className={`font-display text-4xl italic ${s.ink} opacity-30`} aria-hidden>{s.step}</span>
             </div>
-            <h3 className="mt-4 font-display text-2xl text-slate-900">{s.name}</h3>
+            <h3 className="mt-4 font-hand text-2xl text-slate-900">{s.name}</h3>
             <p className={`mt-1 font-semibold ${s.ink}`}>{s.tagline}</p>
             {!compact && <p className="mt-2 text-sm leading-6 text-slate-600">{s.blurb}</p>}
             {!compact && (

@@ -92,7 +92,7 @@ export default function About() {
         </Block>
 
         <Block title="Who Helix is for">
-          <p className="font-display text-2xl leading-snug text-slate-900">{WHO_HEADLINE.title}.</p>
+          <p className="font-hand text-2xl leading-snug text-slate-900">{WHO_HEADLINE.title}.</p>
           <p>{WHO_HEADLINE.body}</p>
           <p>
             In bands: <strong>Just starting</strong> (no sales yet, or under about $10k a month), <strong>Growing</strong> (about $10k to $100k a month, up to about $1M a year, where Helix adds the most) and <strong>Scaling</strong> (about $1M to $10M a year). <Link href="/learn/goals" className="text-cyan-700 underline">See the bands and the goals to aim at</Link>.

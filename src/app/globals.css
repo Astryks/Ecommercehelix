@@ -123,9 +123,11 @@ body {
     line-height: 1.15;
   }
   /* Subheadings in the reference's handwriting (Kalam Bold, the closest free match to "explained with a vampire."). */
-  h2, h3, h4 { font-family: var(--font-hand); font-weight: 700; letter-spacing: 0; line-height: 1.25; }
+  h2, h3, h4, h5, h6 { font-family: var(--font-hand); font-weight: 700; letter-spacing: 0; line-height: 1.25; }
   h3.uppercase, h2.uppercase { font-family: var(--font-sans); font-weight: 700; letter-spacing: 0.12em; }
 }
+/* Permanent Marker capitals only for page headings, big section headings and big numbers; everything smaller is Kalam Bold. */
+h1, h2:is(.text-3xl, .text-4xl, .text-5xl, .text-6xl, [class*="sm:text-4xl"], [class*="sm:text-5xl"]) { font-family: var(--font-serif); font-weight: 400; letter-spacing: 0.01em; }
 /* Big headings in the purple marker, except on dark panels. Unlayered so it wins over text-slate-900 utilities. */
 h1:not(.text-white):not(:where(.helix-glow, .bg-slate-900, .bg-slate-950) *),
 h2:not(.text-white):not(.uppercase):not(:where(.helix-glow, .bg-slate-900, .bg-slate-950) *) { color: var(--color-accent); }

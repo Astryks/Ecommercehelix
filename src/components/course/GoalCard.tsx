@@ -13,7 +13,7 @@ export function Celebration({ view }: { view: CourseView }) {
   return (
     <section className="celebrate relative mt-4 overflow-hidden rounded-2xl border border-emerald-200 bg-gradient-to-r from-emerald-50 via-white to-amber-50 p-5" aria-live="polite">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="flex items-center gap-3 font-display text-xl font-semibold text-slate-900">
+        <p className="flex items-center gap-3 font-hand text-xl font-semibold text-slate-900">
           <PartyPopper className="h-7 w-7 text-accent" aria-hidden /> Goal done: {view.celebrate.title}.
         </p>
         <form action={dismissCelebration}><button className="btn-ghost !px-3 !py-1.5 !text-xs">Nice, thanks</button></form>
@@ -46,7 +46,7 @@ export function GoalCard({ view, compact = false }: { view: CourseView; compact?
           <span className="flex items-center gap-1.5"><Flag className="h-3.5 w-3.5" aria-hidden /> Your goal · {c.n} of {total} · {PHASES[c.goal.phase].name}</span>
           <Link href="/course" className="flex items-center gap-1 normal-case tracking-normal text-white/80 hover:text-white"><Route className="h-3.5 w-3.5" aria-hidden /> See the whole path</Link>
         </div>
-        <h2 id="goal-h" className="mt-2 font-display text-2xl font-semibold leading-tight">Goal {c.n}: {c.goal.title}</h2>
+        <h2 id="goal-h" className="mt-2 font-hand text-2xl font-semibold leading-tight">Goal {c.n}: {c.goal.title}</h2>
         <p className="mt-1 text-sm text-white/80"><strong className="text-white">Finish line:</strong> {c.goal.finishLine}</p>
         <div className="mt-3">
           <div className="flex items-baseline justify-between text-xs text-white/80">

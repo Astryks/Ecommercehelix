@@ -30,7 +30,7 @@ export function ProfitForm({ initial, action, saved }: { initial: ProfitInputs; 
       <form action={action} className="card space-y-5 p-5">
         {(["order", "month"] as const).map((grp) => (
           <fieldset key={grp} className="space-y-3">
-            <legend className="font-display text-lg font-semibold text-[#1A1718]">{grp === "order" ? "For one order" : "Each month"}</legend>
+            <legend className="font-hand text-lg font-semibold text-[#1A1718]">{grp === "order" ? "For one order" : "Each month"}</legend>
             {FIELDS.filter((f) => f.group === grp).map((f) => (
               <label key={f.k} className="block">
                 <span className="text-sm font-medium text-slate-800">{f.label}</span>
@@ -52,7 +52,7 @@ export function ProfitForm({ initial, action, saved }: { initial: ProfitInputs; 
 
       <div className="space-y-4">
         <section className="card p-5" aria-label="Where each sale goes">
-          <h2 className="font-display text-xl font-semibold text-[#1A1718]">Where {money(v.price)} goes</h2>
+          <h2 className="font-hand text-xl font-semibold text-[#1A1718]">Where {money(v.price)} goes</h2>
           <p className="text-xs text-slate-500">Sales (also called revenue) is what the customer pays. Each cost takes a layer off until what is left is profit.</p>
           <ol className="mt-4 space-y-2">
             <li className="grid grid-cols-[9rem_1fr_5rem] items-center gap-2 text-sm">
@@ -89,14 +89,14 @@ export function ProfitForm({ initial, action, saved }: { initial: ProfitInputs; 
           ].map(([t, n, h]) => (
             <div key={t} className="card p-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{t}</p>
-              <p className="mt-1 font-display text-2xl font-semibold tabular text-[#1A1718]">{n}</p>
+              <p className="mt-1 font-hand text-2xl font-semibold tabular text-[#1A1718]">{n}</p>
               <p className="text-xs text-slate-500">{h}</p>
             </div>
           ))}
         </section>
 
         <section className="card p-5" aria-label="Per month">
-          <h2 className="font-display text-lg font-semibold text-[#1A1718]">A month at {v.ordersPerMonth.toLocaleString("en-AU")} orders</h2>
+          <h2 className="font-hand text-lg font-semibold text-[#1A1718]">A month at {v.ordersPerMonth.toLocaleString("en-AU")} orders</h2>
           <dl className="mt-2 grid grid-cols-2 gap-y-1 text-sm">
             <dt>Sales</dt><dd className="text-right tabular">{whole(w.month.sales)}</dd>
             <dt>Marketing</dt><dd className="text-right tabular">-{whole(w.month.marketing)}</dd>

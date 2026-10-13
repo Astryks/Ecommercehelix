@@ -20,7 +20,7 @@ export function BfcmTimeline({ current = null, showTasks = true, dark = false }:
               <span className={`text-xs font-semibold uppercase tracking-[0.14em] ${dark ? "text-cyan-300" : "text-cyan-700"}`}>{s.months}</span>
               {on && <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold uppercase ${dark ? "bg-cyan-300 text-slate-950" : "bg-cyan-500 text-white"}`}>Now</span>}
             </div>
-            <p className={`mt-1.5 font-display text-base font-semibold leading-snug ${dark ? "text-white" : "text-slate-900"}`}>{s.title}</p>
+            <p className={`mt-1.5 font-hand text-base font-semibold leading-snug ${dark ? "text-white" : "text-slate-900"}`}>{s.title}</p>
             {showTasks && (
               <ul className={`mt-2 space-y-1 text-xs leading-5 ${dark ? "text-slate-300" : "text-slate-600"}`}>
                 {s.taskIds.map((id) => bfcmTask(id)).filter(Boolean).map((t) => (
@@ -40,7 +40,7 @@ export function BfcmCritical({ today, compact = false }: { today: string; compac
   return (
     <section aria-labelledby="bfcm-critical-h" className="rounded-xl border border-cyan-200 bg-cyan-50/60 p-5">
       <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-cyan-800"><AlertTriangle className="h-4 w-4" aria-hidden /> Critical for many stores</p>
-      <h2 id="bfcm-critical-h" className="mt-2 font-display text-xl font-semibold text-slate-900 sm:text-2xl">{BFCM_CRITICAL.title}</h2>
+      <h2 id="bfcm-critical-h" className="mt-2 font-hand text-xl font-semibold text-slate-900 sm:text-2xl">{BFCM_CRITICAL.title}</h2>
       <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700"><strong className="font-semibold text-slate-900">{BFCM_CRITICAL.lead}</strong> {BFCM_CRITICAL.body}</p>
       <div className="mt-4"><BfcmTimeline current={bfcmStageIndex(today)} showTasks={!compact} /></div>
     </section>

@@ -82,13 +82,13 @@ function MorningBrief() {
           {[["Sales", "$2,184"], ["Ad cost per sale", "$17.70"], ["Break-even", "$31.40"]].map(([k, v]) => (
             <div key={k} className="px-2 py-3">
               <dt className="text-[11px] uppercase tracking-[0.12em] text-slate-500">{k}</dt>
-              <dd className="mt-1 font-display text-lg font-semibold tabular-nums">{v}</dd>
+              <dd className="mt-1 font-hand text-lg font-semibold tabular-nums">{v}</dd>
             </div>
           ))}
         </dl>
         <div className="mt-5 rounded-lg bg-paper-2 p-4">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-700">Today, 15 minutes</p>
-          <p className="mt-1 font-display text-lg font-semibold leading-snug">Set a free-shipping amount a little above your average order</p>
+          <p className="mt-1 font-hand text-lg font-semibold leading-snug">Set a free-shipping amount a little above your average order</p>
           <p className="mt-1 text-sm text-slate-600">Step by step, with a drawing of where to click. Or let Helix do it after you approve.</p>
         </div>
       </div>
@@ -174,7 +174,7 @@ export default function Home() {
               {PROFIT_POINTS.map((p, i) => (
                 <article key={p.title} className="md:px-8 md:first:pl-0 md:last:pr-0">
                   <div className="rule-accent pt-5">
-                    <span className="flex items-center gap-3 text-sm font-semibold text-cyan-700"><span className="font-display text-2xl">0{i + 1}</span><p.icon className="h-4 w-4" aria-hidden /></span>
+                    <span className="flex items-center gap-3 text-sm font-semibold text-cyan-700"><span className="font-hand text-2xl">0{i + 1}</span><p.icon className="h-4 w-4" aria-hidden /></span>
                   </div>
                   <h3 className="mt-3 text-xl text-slate-900">{p.title}</h3>
                   <p className="mt-3 text-[15px] leading-7 text-slate-600">{p.text}</p>
@@ -343,7 +343,7 @@ export default function Home() {
             <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
               {HOME_FAQ.map((f) => (
                 <details key={f.q} className="group py-5">
-                  <summary className="cursor-pointer list-none font-display text-lg font-semibold text-slate-900 marker:hidden">
+                  <summary className="cursor-pointer list-none font-hand text-lg font-semibold text-slate-900 marker:hidden">
                     <span className="flex items-center justify-between gap-4">{f.q}<span className="font-sans text-xl font-normal text-cyan-600 transition group-open:rotate-45">+</span></span>
                   </summary>
                   <p className="mt-3 text-[15px] leading-7 text-slate-600">{f.a}</p>

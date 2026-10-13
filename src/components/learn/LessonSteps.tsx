@@ -152,7 +152,7 @@ export function LessonSteps({ lesson }: { lesson: LessonView }) {
 
   return (
     <section ref={ref} aria-labelledby={lesson.id} className="mt-12 scroll-mt-6 border-t border-slate-200 pt-8">
-      <h2 id={lesson.id} className="font-display text-2xl font-semibold tracking-tight text-slate-900">
+      <h2 id={lesson.id} className="font-hand text-2xl font-semibold tracking-tight text-slate-900">
         <a href={`#${lesson.id}`} className="no-underline">{lesson.heading}</a>
         <span className={`ml-2 inline-flex translate-y-[-3px] items-center rounded-full px-2.5 py-0.5 align-middle font-sans text-[11px] font-semibold uppercase tracking-wide ring-1 ${lesson.stage.chip}`}>{lesson.stage.name}</span>
       </h2>
@@ -224,7 +224,7 @@ export function LessonSteps({ lesson }: { lesson: LessonView }) {
 
       {lesson.extraHtml && (
         <div id={`${lesson.id}-more`} className="mt-6 scroll-mt-6">
-          <h3 className="font-display text-lg font-semibold text-slate-900">Good to know</h3>
+          <h3 className="font-hand text-lg font-semibold text-slate-900">Good to know</h3>
           <div className={`${PROSE} mt-2 text-[15px] [&_p]:my-3`} dangerouslySetInnerHTML={{ __html: lesson.extraHtml }} />
         </div>
       )}

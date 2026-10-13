@@ -12,7 +12,7 @@ export function WhoFor() {
               <span className="font-display text-4xl italic text-slate-300" aria-hidden>{i + 1}</span>
               <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${b.fit === "Most value" ? "bg-emerald-50 text-emerald-800 ring-emerald-200" : "bg-slate-50 text-slate-700 ring-slate-200"}`}>{b.fit}</span>
             </div>
-            <h3 className="mt-3 font-display text-2xl text-slate-900">{b.name}</h3>
+            <h3 className="mt-3 font-hand text-2xl text-slate-900">{b.name}</h3>
             <p className="mt-1 font-semibold text-cyan-800">{b.range}</p>
             <p className="text-sm text-slate-500">{b.monthly}</p>
             <p className="mt-3 flex-1 text-[15px] leading-7 text-slate-600">{b.focus}</p>
