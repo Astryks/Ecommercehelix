@@ -104,23 +104,23 @@ export default function Home() {
       <SiteHeader />
       <div className="relative overflow-hidden bg-paper">
         <HelixMark size={620} className="pointer-events-none absolute -right-40 -top-24 opacity-[0.05]" title="" />
-        <section className="relative mx-auto grid max-w-6xl items-center gap-14 px-5 pb-24 pt-16 md:pt-24 lg:grid-cols-[1.15fr_0.85fr]">
+        <section className="relative mx-auto grid max-w-6xl hero-sec items-center gap-14 px-5 pb-24 pt-10 md:pt-16 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             <p className="eyebrow flex items-center gap-2"><Sparkles className="h-3.5 w-3.5" aria-hidden /> Profit first. One small step a day.</p>
-            <h1 className="mt-6 text-5xl leading-[1.04] text-slate-900 sm:text-6xl lg:text-[4.25rem]">
+            <h1 className="hero-h1 mt-5 text-5xl leading-[1.04] text-slate-900 sm:text-6xl lg:text-[4.25rem]">
               Grow your <span className="whitespace-nowrap">e-commerce</span> business <span className="grad-text">a little every day</span>
             </h1>
-            <p className="lead mt-7 max-w-xl text-xl leading-8 text-slate-700">
+            <p className="hero-lead lead mt-6 max-w-xl text-xl leading-8 text-slate-700">
               Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can do the work for you when you approve. Small daily wins add up to a bigger, more profitable business.
             </p>
-            <form action="/start" method="get" className="mt-9 flex max-w-xl flex-col gap-2 rounded-xl border border-slate-300 bg-white p-2 shadow-[0_1px_0_rgba(26,23,24,0.04)] sm:flex-row">
+            <form action="/start" method="get" className="hero-form mt-8 flex max-w-xl flex-col gap-2 rounded-xl border border-slate-300 bg-white p-2 shadow-[0_1px_0_rgba(26,23,24,0.04)] sm:flex-row">
               <label htmlFor="url" className="sr-only">Paste your store URL</label>
               <input id="url" name="url" type="text" required placeholder="Paste your store URL, e.g. yourstore.com" className="flex-1 rounded-lg bg-transparent px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 focus:outline-none" />
               <button className="btn-primary px-6 py-3 text-base" type="submit">
                 Get my free audit <ArrowRight className="h-4 w-4" aria-hidden />
               </button>
             </form>
-            <ul className="mt-6 flex flex-wrap gap-x-7 gap-y-2 text-sm text-slate-600">
+            <ul className="hero-trust mt-6 flex flex-wrap gap-x-7 gap-y-2 text-sm text-slate-600">
               <li className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-emerald-600" aria-hidden /> Nothing changes without your approval</li>
               <li className="flex items-center gap-2"><Clock className="h-4 w-4 text-cyan-600" aria-hidden /> 15 minutes a day</li>
               <li className="flex items-center gap-2"><Flame className="h-4 w-4 text-cyan-600" aria-hidden /> Free to start</li>
