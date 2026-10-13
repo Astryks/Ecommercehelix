@@ -20,7 +20,12 @@ export async function POST(req: Request) {
     const portal = await stripe.billingPortal.sessions.create({ customer: billing.customerId, return_url: `${base}/dashboard/billing` });
     return NextResponse.redirect(portal.url, 303);
   }
-  if (!stripe || !price || plan === "free") {
+  // A paid plan is never granted without a real payment when billing is configured,
+  // and never in production. A missing price env var must not hand out a free upgrade.
+  if (plan !== "free" && (stripe ? !price : process.env.VERCEL_ENV === "production")) {
+    return NextResponse.json({ error: "Billing is not available right now. Please try again later." }, { status: 503 });
+  }
+  if (!stripe || plan === "free") {
     // Demo mode (no Stripe keys) or downgrade: set the plan directly.
     await setPlan(userId, plan);
     return NextResponse.redirect(new URL(`/dashboard/billing?dev=${stripe ? 0 : 1}&plan=${plan}`, base), 303);
