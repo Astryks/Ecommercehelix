@@ -15,6 +15,9 @@ import { GoalsLadder } from "@/components/GoalsLadder";
 import { goalsFor } from "@/lib/goals-server";
 import { ChannelBars, Donut, NewReturning, ProfitTrend, RevenueCostsProfit, RoasMer } from "@/components/analytics/Charts";
 
+const CALM = ["revenue", "orders", "mer"];
+const fmt$ = (n: number) => (n < 0 ? "-" : "") + "$" + Math.round(Math.abs(n)).toLocaleString("en-AU");
+
 const GROUPS = [
   { id: "week", label: "Week" },
   { id: "month", label: "Month" },
@@ -59,7 +62,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><BarChart3 className="h-7 w-7 text-cyan-600" aria-hidden /> Dashboard</h1>
-          <p className="mt-1 text-slate-600">Revenue, costs and profit, worked out for you from your daily numbers. Tap <Info className="inline h-4 w-4" aria-label="the i button" /> on any number for what it means and what good looks like.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
+          <p className="mt-1 text-slate-600">How your shop is doing, in one line first. Tap <Info className="inline h-4 w-4" aria-label="the i button" /> on any number for what it means and what good looks like.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
         </div>
         <nav aria-label="Period" className="flex flex-col items-end gap-2">
           <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
@@ -88,15 +91,31 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
         </div>
       )}
 
+      <section aria-label="Headline" className={`mt-4 rounded-2xl border p-6 ${m.netProfit >= 0 ? "border-emerald-100 bg-emerald-50/60" : "border-amber-100 bg-amber-50/60"}`}>
+        <p className="text-sm font-medium text-slate-600">Profit for {meta.label.toLowerCase()}, after all costs</p>
+        <p className="mt-1 text-4xl font-bold tracking-tight text-slate-800">{fmt$(m.netProfit)}</p>
+        <p className="mt-2 text-slate-700">{m.dataDays === 0 ? "No numbers in this period yet. Add a day in Your numbers and this fills in." : m.netProfit >= 0 ? `From ${fmt$(m.netRevenue)} of sales you kept ${fmt$(m.netProfit)} after products, shipping, fees, ads and running costs.` : `Costs were ${fmt$(-m.netProfit)} more than sales brought in. Check the "Where the money went" chart under more detail to see the biggest cost.`}</p>
+      </section>
+
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        {cards.filter((c) => CALM.includes(c.key)).map((c) => <MetricCard key={c.key} c={c} />)}
+      </div>
+
+      <div className="mt-6">
+        <Panel title="Sales, costs and profit" sub={`By ${bucketWord}. Bars are sales and costs. The line is what you kept.`}>
+          <RevenueCostsProfit data={series} />
+        </Panel>
+      </div>
+
+      <details className="mt-6">
+        <summary className="btn-ghost cursor-pointer list-none">Show more detail</summary>
+        <p className="mt-3 text-sm text-slate-500">Everything below is extra. Look at it once a week, not every day.</p>
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {cards.map((c) => <MetricCard key={c.key} c={c} />)}
+        {cards.filter((c) => !CALM.includes(c.key)).map((c) => <MetricCard key={c.key} c={c} />)}
       </div>
       <p className="mt-2 text-xs text-slate-500">Green, amber and red compare with your own break-even lines and the targets in Your numbers. Ranges in the explanations are general guides, not guarantees.</p>
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
-        <Panel title="Revenue vs costs vs profit" sub={`By ${bucketWord}. Costs are product, shipping, fees, ads and other marketing. The line is contribution profit.`}>
-          <RevenueCostsProfit data={series} />
-        </Panel>
         <Panel title="Profit trend" sub={`By ${bucketWord}, with the dashed line showing ${prevWord} for comparison. Net profit also takes off fixed costs.`}>
           <ProfitTrend data={series} prevLabel={prevWord} />
         </Panel>
@@ -131,6 +150,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
           <NewReturning data={series} />
         </Panel>
       </div>
+      </details>
 
       <section id="goals" aria-labelledby="goals-h" className="card mt-6 scroll-mt-6 p-5">
         <div className="flex flex-wrap items-baseline justify-between gap-2">

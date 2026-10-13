@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, Download, RefreshCw, Upload } from "lucide-react";
+import { BookOpen, Download, Upload } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount, getDays, getProducts, getRawDays, getSettings } from "@/lib/repo";
 import { getConnection } from "@/lib/meta/store";
@@ -88,16 +88,29 @@ export default async function Scorecard() {
             <h1 className="text-3xl font-bold tracking-tight">Your numbers</h1>
             {hasExample && <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>}
           </div>
-          <p className="mt-1 text-slate-600">All your numbers in one place, with this week and this month added up. For the quick version, use the profit box on Today. Showing <strong>{prettyDay(latest)}</strong>.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
+          <p className="mt-1 text-slate-600">One headline first. Tap "Show more detail" when you want the full picture. Showing <strong>{prettyDay(latest)}</strong>.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
         </div>
         <div className="flex flex-wrap gap-2">
-          {["Shopify", "Meta", "Google"].map((s) => (
-            <button key={s} disabled title="Coming soon" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> Sync {s}</button>
-          ))}
           <Link href="/learn/01-daily-profit-foundations" className="btn-ghost text-xs"><BookOpen className="h-3.5 w-3.5" aria-hidden /> How to read this</Link>
         </div>
       </header>
 
+      <section aria-label="Headline" className={`mt-6 rounded-2xl border p-6 ${dDay.contribution >= 0 ? "border-emerald-100 bg-emerald-50/60" : "border-amber-100 bg-amber-50/60"}`}>
+        <p className="text-sm font-medium text-slate-600">Profit on {prettyDay(latest)}, after products, shipping, fees and ads</p>
+        <p className="mt-1 text-4xl font-bold tracking-tight text-slate-800">{$(dDay.contribution)}</p>
+        <p className="mt-2 text-slate-700">{day.orders === 0 && dDay.netRevenue === 0 ? "No numbers for this day yet. Fill in a day below and Helix does the maths." : dDay.contribution >= 0 ? `You kept ${$(dDay.contribution)} from ${$(dDay.netRevenue)} of sales. That is money in your pocket before rent and wages.` : `You spent ${$(-dDay.contribution)} more than you made. One day is fine. If it happens three days in a row, look at your ad spend first.`}</p>
+        <p className="mt-1 text-sm text-slate-600">This month so far: {$(dM.contribution)} profit from {$(dM.netRevenue)} of sales.</p>
+      </section>
+
+      <section aria-label="Three numbers" className="mt-4 grid gap-4 sm:grid-cols-3">
+        <div className="card p-5"><p className="text-sm text-slate-500">Orders</p><p className="mt-1 text-2xl font-semibold text-slate-800">{day.orders}</p><p className="mt-1 text-xs text-slate-500">How many people bought.</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Average order</p><p className="mt-1 text-2xl font-semibold text-slate-800">{$(dDay.aov, 2)}</p><p className="mt-1 text-xs text-slate-500">What one order is worth. Higher means each customer is worth more.</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Ads as a share of sales</p><p className="mt-1 text-2xl font-semibold text-slate-800">{pct(dDay.merPct)}</p><p className="mt-1 text-xs text-slate-500">Your goal is {pct(settings.targetMerPct)} or lower. Lower means ads cost you less per sale.</p></div>
+      </section>
+
+      <details className="group mt-6">
+        <summary className="btn-ghost cursor-pointer list-none">Show more detail</summary>
+        <p className="mt-3 text-sm text-slate-500">Everything below is extra. You do not need it every day.</p>
       <section aria-label="Key numbers" className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {tiles.map((t) => (
           <div key={t.label} className="card p-5">
@@ -193,6 +206,7 @@ export default async function Scorecard() {
           </tbody>
         </table>
       </section>
+      </details>
 
       <div className="mt-6 grid gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <section className="card scroll-mt-6 p-5" id="entry">
@@ -246,7 +260,9 @@ export default async function Scorecard() {
         </div>
       </div>
 
-      <section className="card mt-6 overflow-x-auto">
+      <details className="mt-6">
+        <summary className="btn-ghost cursor-pointer list-none">Show products</summary>
+      <section className="card mt-3 overflow-x-auto">
         <h2 className="px-5 pt-5 font-semibold">Products · month to date</h2>
         <table className="tbl mt-2 w-full">
           <thead><tr><th>SKU</th><th>Product</th><th>Units</th><th>Avg price</th><th>Revenue</th><th>Unit cost</th><th>COGS</th><th>Margin</th><th>Margin %</th></tr></thead>
@@ -272,6 +288,7 @@ export default async function Scorecard() {
           <button className="btn-dark">Add product</button>
         </form>
       </section>
+      </details>
     </div>
   );
 }

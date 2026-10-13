@@ -207,3 +207,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 18. Goals ladder: are the suggested starting goals right for each track (Growing: 30,000 visits, 1.2% CTR, 7.5% add to cart, 2.2% conversion, $92 AOV, 30% MER, $28 CPA, 20% contribution, $3,000 net profit; Just starting: 3,000 visits, 1% CTR, 6%, 1.5%, $60, 35% MER, $21, 10%, $0 or more)?
 19. Black Friday: should the August to January plan also run for Click Frenzy and Singles Day stores, or stay focused on BFCM? Should the Monday nudge email go out every week from August, or fortnightly until October?
 
+
+## Onboarding redesign (Oct 2026)
+Shipped in stages, each its own commit: 1 honest plan copy, 2 all countries, 3 real per-site store check (no AI, quotes the store, monthly re-check cron for paid users, SSRF guard, timeouts, size cap), 4 ten diagnostic questions to bottleneck and starting goal, 5 personal 12-week plan with "Step 1 today", 6 simpler Today and 7-item sidebar with progressive unlock, 7 upgrade prompts only at moments of need, 8 lesson audit (one action per step, plain words, exact clicks, expected results; scripts/lint_lessons.py), 9 downloadable metrics tracker (public/downloads, built by scripts/build_tracker.py) plus Lesson 1.10, 10 calm dashboards (one headline, three numbers, detail behind "Show more detail").
+Open: lint still flags ~40 list-style steps; store check not yet seen running from Vercel for a real paid user; "Do it for me" only real for Meta drafts.
