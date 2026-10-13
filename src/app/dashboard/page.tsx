@@ -5,7 +5,7 @@ import { Celebration, GoalCard } from "@/components/course/GoalCard";
 import { changeOf, comparison, plainLine, totalsFor } from "@/lib/growth";
 import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getDiagnosis, getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
+import { getProfitSetup, getDiagnosis, getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
 import { bfcmTip, countdownText, seasonalAlerts, upcomingEvents, countryName } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
@@ -14,6 +14,9 @@ import { GoalsLadder } from "@/components/GoalsLadder";
 import { goalsFor } from "@/lib/goals-server";
 import { costRatios, money, summarise } from "@/lib/today";
 import { taxLabel } from "@/lib/tax";
+import { planState } from "@/lib/plan-state";
+import { StepToday } from "@/components/plan/PersonalPlan";
+import { BOTTLENECKS } from "@/lib/diagnosis";
 import { adminDueSoon } from "@/lib/business";
 import { lessonLink } from "@/lib/lesson-links";
 import { STAGE_INFO, stageOfLesson } from "@/lib/stages";
@@ -87,6 +90,47 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a) && !a.reviewing);
   const tip = bfcmTip(today);
   const currentStage = nextDay?.stage ?? STAGES.length;
+
+  // Calm Today for people on a personal plan: progress, one step, and your numbers. Everything else is one tap away.
+  const st = diag && sp.full !== "1" ? await planState(u.id) : null;
+  if (st) {
+    const profitSet = Boolean(await getProfitSetup(u.id));
+    const bfSoon = alerts.find((a) => !a.reviewing && a.daysTo <= 42);
+    const pct = Math.round(((st.plan.indexOf(st.current)) / st.plan.length) * 100);
+    return (
+      <div className="mx-auto max-w-3xl space-y-5">
+        {sp.welcome && <p className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">Welcome to Helix. Your plan is ready. Do one step a day and you&apos;re on track.</p>}
+        <header>
+          <p className="text-sm text-slate-500">{prettyDay(today)}</p>
+          <h1 className="text-3xl font-bold tracking-tight">Today</h1>
+        </header>
+        <section className="card p-6">
+          <div className="flex items-baseline justify-between text-sm">
+            <span className="font-semibold text-slate-800">Your plan: week {st.week} of {st.total}</span>
+            <Link href="/dashboard/plan" className="text-cyan-700 hover:underline">See the plan</Link>
+          </div>
+          <div className="mt-2 h-2 rounded-full bg-slate-100" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}><div className="h-2 rounded-full bg-cyan-500" style={{ width: `${Math.max(4, pct)}%` }} /></div>
+          <p className="mt-2 text-xs text-slate-500">Focus: {BOTTLENECKS[st.diag.diagnosis.bottleneck].goalLabel}</p>
+        </section>
+        <section className="card p-6">
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Your one step today</p>
+          <h2 className="mt-1 text-xl font-semibold">{st.current.title}</h2>
+          <p className="mt-1 text-slate-600">{st.current.what}</p>
+          <div className="mt-4"><StepToday s={st} /></div>
+        </section>
+        {profitSet && (
+          <section aria-label="Your numbers">
+            <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
+              prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
+          </section>
+        )}
+        {bfSoon && (
+          <p className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900"><strong>{bfSoon.name} is {countdownText(bfSoon.daysTo)}.</strong> <Link href="/dashboard/calendar" className="underline">See your prep plan</Link></p>
+        )}
+        <Link href="/dashboard?full=1" className="block text-center text-xs text-slate-500 hover:underline">Show everything on Today</Link>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-7xl">
