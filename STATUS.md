@@ -210,4 +210,5 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 
 ## Onboarding redesign (Oct 2026)
 Shipped in stages, each its own commit: 1 honest plan copy, 2 all countries, 3 real per-site store check (no AI, quotes the store, monthly re-check cron for paid users, SSRF guard, timeouts, size cap), 4 ten diagnostic questions to bottleneck and starting goal, 5 personal 12-week plan with "Step 1 today", 6 simpler Today and 7-item sidebar with progressive unlock, 7 upgrade prompts only at moments of need, 8 lesson audit (one action per step, plain words, exact clicks, expected results; scripts/lint_lessons.py), 9 downloadable metrics tracker (public/downloads, built by scripts/build_tracker.py) plus Lesson 1.10, 10 calm dashboards (one headline, three numbers, detail behind "Show more detail").
-Open: lint still flags ~40 list-style steps; store check not yet seen running from Vercel for a real paid user; "Do it for me" only real for Meta drafts.
+Open: store check not yet seen running from Vercel for a real paid user; "Do it for me" only real for Meta drafts.
+Lesson step audit follow-up (Oct 13): rewrote the last 40 flagged steps into goal + single-action sub-steps; scripts/lint_lessons.py now reports 0 of 1190 steps flagged. Step numbers unchanged.

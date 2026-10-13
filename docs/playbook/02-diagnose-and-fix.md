@@ -104,7 +104,10 @@
 
 **Expected result:** You can compare conversion rate and profit per order before and after.
 
-**Step 6.** Add a bundle or "buy more, save more" tier (see Module 9) and check payment and app fees as a share of sales.
+**Step 6.** Raise your order size and trim fees.
+
+1. Add a bundle or a "buy more, save more" deal (see Module 9).
+2. In Shopify, look at payment and app fees for last month. Divide them by sales.
 
 **Expected result:** Average order value goes up and fees are under about 3% of sales.
 
@@ -152,7 +155,10 @@
 
 **Expected result:** You have named the weak half of RPV.
 
-**Step 4.** If RPV is healthy, open Meta Ads Manager and check outbound CTR (click-through rate: out of 100 people who see the ad, how many click to your site). Below 0.5% means the message or the ad itself is weak.
+**Step 4.** If each visit earns enough, look at clicks next.
+
+1. In Meta Ads Manager, find the **Outbound CTR** column. CTR (click-through rate) is how many people out of 100 who see the ad click to your site.
+2. Below 0.5% means the message or the ad itself is weak.
 
 **Expected result:** You know whether the ad is getting clicks.
 

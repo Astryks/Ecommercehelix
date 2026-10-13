@@ -148,7 +148,10 @@
 
 **Expected result:** Each brief names exactly one driver.
 
-**Step 2.** For sale ads, use value and urgency. For launch ads, use curiosity and status.
+**Step 2.** Match the feeling to the moment.
+
+1. Sale ads: show the saving and the end date.
+2. Launch ads: tease what is new and who it is for.
 
 **Expected result:** Your sale and launch ads pull on different drivers.
 
@@ -157,7 +160,13 @@
 
 **Why this matters:** The hook is the first line or first 3 seconds of an ad. Its only job is to stop the scroll, and most viewers leave in the first quarter of a video, so the hook matters most.
 
-**Step 1.** Write 3 hooks for your next ad, each from a different type: movement or a surprising first picture, calling out a niche ("For runners with flat feet..."), a bold statement, a one-star review read aloud and answered, a price comparison, the result first, a curiosity gap or a gossip-style opener.
+**Step 1.** Write 3 hooks (the first 3 seconds) for your next ad, each a different type.
+
+- Movement or a surprising first picture.
+- Calling out a group ("For runners with flat feet...").
+- A bold statement, or the result first.
+- A one-star review read out and answered.
+- A price comparison, a question that makes people curious, or a gossip-style opener.
 
 **Expected result:** You have 3 hook options of different types.
 
@@ -319,13 +328,21 @@
 
 **Expected result:** Each video is ready in both sizes.
 
-**Step 3.** Use AI tools to resize, make versions and add voice-overs, labelling AI-made people and voices where rules require it.
+**Step 3.** Let AI tools do the busy work.
+
+1. Use an AI tool to resize your ad and make a few versions.
+2. Add an AI voice-over if you want one.
+3. Label AI-made people and voices where the platform's rules say so.
 
 **Expected result:** You have more versions in less time, with labels where needed.
 
 **Watch out:** Never fake reviews with AI.
 
-**Step 4.** Before launch, check the platform's auto-enhance settings in the ad's creative options and turn off any that change your ad in ways you do not want.
+**Step 4.** Before launch, check the automatic changes.
+
+1. In the ad, scroll to the creative options.
+2. Find the auto-enhance settings.
+3. Turn off any that change your ad in a way you do not want.
 
 **Expected result:** The ad shows exactly as you designed it.
 

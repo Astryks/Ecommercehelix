@@ -91,7 +91,11 @@
 
 **Expected result:** A hold cannot stop the business.
 
-**Step 6.** If money is held, ask exactly what the provider needs (tracking, invoices, ID), send it all at once and diary a follow-up.
+**Step 6.** If money is held, give the provider everything in one go.
+
+1. Ask exactly what they need, for example tracking, invoices or ID.
+2. Send it all in one reply.
+3. Add a follow-up date to your Helix calendar.
 
 **Expected result:** The hold is resolved as fast as possible.
 

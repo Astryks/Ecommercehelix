@@ -58,7 +58,10 @@
 
 **Expected result:** No one shares a login and no single person can lock you out.
 
-**Step 6.** Every quarter, remove people who no longer work with you and check admins and partners.
+**Step 6.** Every quarter, tidy who has access.
+
+1. Remove people who no longer work with you.
+2. Look over the admin and partner lists for anyone you do not know.
 
 **Expected result:** The access check is on your Helix calendar.
 
@@ -204,7 +207,11 @@
 
 **Expected result:** You have everything needed to run ads yourself.
 
-**Step 5.** On the last day, remove their access, change shared passwords and check nothing still bills to their card.
+**Step 5.** On the last day, close everything off.
+
+1. Remove their access from every account.
+2. Change any shared passwords.
+3. Look at billing to make sure nothing still charges their card.
 
 **Expected result:** The agency has no access.
 

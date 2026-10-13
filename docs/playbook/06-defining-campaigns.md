@@ -162,7 +162,15 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Your cold ad sets have no stacked interests.
 
-**Step 2.** In **Audiences**, create custom audiences: site visitors (30 and 180 days), product viewers, add to cart, checkout started, buyers (180 days and all time), social engagers and your email list.
+**Step 2.** In **Audiences**, click **Create audience**, then **Custom audience**, once for each of these.
+
+1. Site visitors, 30 days. Then again for 180 days.
+2. Product viewers.
+3. Added to cart.
+4. Checkout started.
+5. Buyers, 180 days. Then again for all time.
+6. People who engaged on Facebook or Instagram.
+7. Your email list (upload it).
 
 **Expected result:** All seven custom audiences show "Ready" in the Audiences list.
 
@@ -300,7 +308,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** You know which step each weak ad fails at.
 
-**Step 3.** Read the pattern: engagement but poor cost per sale means the page or offer does not match the ad; low CTR across a batch means the message or offer is weak; rising CPM (cost per 1,000 impressions) with steady CTR means you have reached most of the audience or it is a busy season.
+**Step 3.** Match what you see to a likely cause.
+
+- Likes and comments but costly sales: the page or offer does not match the ad.
+- Low CTR (click rate) across a whole batch: the message or offer is weak.
+- CPM (cost per 1,000 views) rising while CTR holds: you have reached most of the audience, or it is a busy season.
 
 **Expected result:** You have a likely cause for each problem, not just a symptom.
 

@@ -75,7 +75,11 @@
 
 **Expected result:** You hire on evidence, with time to train.
 
-**Step 9.** For senior people, write what they must achieve in 12 months, check references carefully and start with a paid trial project.
+**Step 9.** For senior hires, test before you commit.
+
+1. Write what they must achieve in 12 months.
+2. Call at least two references.
+3. Start with a paid trial project.
 
 **Expected result:** Senior hires have clear goals and have proven themselves.
 

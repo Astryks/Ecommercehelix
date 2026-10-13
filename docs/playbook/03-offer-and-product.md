@@ -71,7 +71,13 @@
 
 **Expected result:** You have a "how others see me" sentence.
 
-**Step 4.** Combine the three into one line of 15 words or fewer, then add it under your product title (Shopify: **Products > [product] > Description**, first line) and use it as the first line of your next ad.
+**Step 4.** Turn it into one promise line.
+
+1. Join the three into one line of 15 words or fewer.
+2. In Shopify, open **Products**.
+3. Pick the product.
+4. Paste the line as the first line of **Description**.
+5. Use the same line as the first line of your next ad.
 
 **Expected result:** The same promise line appears on the product page and in an ad.
 

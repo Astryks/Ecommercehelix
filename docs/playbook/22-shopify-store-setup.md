@@ -134,7 +134,16 @@
 
 **Expected result:** The top of the page says what you sell and gives one next step.
 
-**Step 4.** Below the banner add, in order: 3 points on what makes you different, best sellers with prices, reasons to buy, proof (rating, customer count, press), how it works in 3 steps, customer photos and reviews, expert backing if you have it, and an email sign-up with a simple footer.
+**Step 4.** Below the banner, add these sections in this order. Use **Add section** in the theme editor for each.
+
+1. 3 points on what makes you different.
+2. Best sellers with prices.
+3. Reasons to buy.
+4. Proof: rating, customer count, press.
+5. How it works, in 3 steps.
+6. Customer photos and reviews.
+7. Expert backing, if you have it.
+8. Email sign-up and a simple footer.
 
 **Expected result:** The home page has every section in a logical order.
 

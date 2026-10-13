@@ -92,7 +92,10 @@
 
 **Expected result:** All 3 arrive and tracking reaches the customer.
 
-**Step 6.** For the first month, compare the warehouse stock report with Shopify every week and check any gap bigger than a few units.
+**Step 6.** For the first month, match stock every week.
+
+1. Put the warehouse stock report next to Shopify's **Inventory** page.
+2. Ask the warehouse about any gap bigger than a few units.
 
 **Expected result:** Stock numbers stay in step.
 

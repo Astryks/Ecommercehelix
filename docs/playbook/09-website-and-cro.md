@@ -312,7 +312,12 @@
 
 **Why this matters:** Some stores have special needs: expensive products, preorders, video shopping, big catalogues, wholesale or overseas customers. Each has a few proven fixes.
 
-**Step 1.** For expensive, considered products, add comparisons, payment plans, samples or swatches, consultations, and run retargeting (ads to past visitors) for longer.
+**Step 1.** For pricey products people think about for a while, give them what they need to decide.
+
+- A comparison table with other options.
+- Payment plans.
+- Samples, swatches or a quick call.
+- Retargeting (ads to past visitors) that runs for 30 days or more.
 
 **Expected result:** Long decisions have the content they need.
 
@@ -418,7 +423,7 @@
 
 **Expected result:** The fix is live on your store.
 
-**Step 4.** On your phone, open the page you changed and check it looks right.
+**Step 4.** On your phone, open the page you changed and look over the whole page.
 
 **Expected result:** The change shows on a phone and nothing else moved or broke.
 

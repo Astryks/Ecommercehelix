@@ -317,12 +317,13 @@
 
 **Step 4.** Connect Shopify to Google.
 
-1. In Shopify, click **Apps** and install **Google & YouTube**.
-2. Click **Get started**.
-3. Connect your Google account.
-4. Connect Merchant Center.
-5. Connect Google Ads.
-6. If it offers to make a campaign, click skip.
+1. In Shopify, click **Apps** and search for **Google & YouTube**.
+2. Click **Install**.
+3. Click **Get started**.
+4. Connect your Google account.
+5. Connect Merchant Center.
+6. Connect Google Ads.
+7. If it offers to make a campaign, click skip.
 
 **Expected result:** The app shows green ticks for your accounts, products syncing, **Conversion measurement** and **Conversion event settings**.
 

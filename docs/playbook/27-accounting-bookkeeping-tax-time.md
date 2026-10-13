@@ -43,7 +43,11 @@
 
 **Expected result:** You know which helper you need for what.
 
-**Step 2.** Ask every candidate: How many online stores do you look after? How do you handle Shopify payouts, stock and product cost? What does the monthly fee include?
+**Step 2.** Ask every candidate the same three questions.
+
+- How many online stores do you look after?
+- How do you handle Shopify payouts, stock and product cost?
+- What does the monthly fee include?
 
 **Expected result:** You can compare candidates on the same answers.
 
@@ -183,7 +187,11 @@
 
 <!-- do:calendar -->
 
-**Step 2.** Before 30 June, do your stocktake, write off dead stock and check team super is paid on time.
+**Step 2.** Before 30 June, finish the year-end jobs.
+
+1. Count your stock (stocktake).
+2. Write off stock that will never sell.
+3. Make sure team super is paid on time.
 
 **Expected result:** Stock and super are done.
 

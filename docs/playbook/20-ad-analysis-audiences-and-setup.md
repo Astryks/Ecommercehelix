@@ -102,7 +102,16 @@
 
 **Expected result:** Reports show how much spend reaches brand-new people.
 
-**Step 2.** On Meta, build custom audiences: visitors 30 and 180 days, product viewers 30 days, add to cart 14 days, checkout started 7 days, buyers 180 days and all time, Instagram and Facebook engagers 365 days, 50% video viewers 90 days, and email subscribers.
+**Step 2.** On Meta, click **Audiences**, then **Create audience**, then **Custom audience**, once for each.
+
+- Visitors, 30 days. Visitors, 180 days.
+- Product viewers, 30 days.
+- Added to cart, 14 days.
+- Checkout started, 7 days.
+- Buyers, 180 days. Buyers, all time.
+- Instagram and Facebook engagers, 365 days.
+- People who watched half a video, 90 days.
+- Email subscribers (upload the list).
 
 **Expected result:** Every custom audience shows "Ready".
 
@@ -114,11 +123,20 @@
 
 **Expected result:** Cold campaigns reach new people on purpose.
 
-**Step 5.** On Google, upload a customer match list, build remarketing lists (visitors 30 and 540 days, cart abandoners, buyers), add audience signals to Performance Max, and build negative keyword lists ("jobs", "free", "DIY", competitor brands you will not bid on).
+**Step 5.** On Google, give it signals and words to avoid.
+
+1. In **Audience manager**, upload your customer list as a customer match list.
+2. Make remarketing lists: visitors 30 days, visitors 540 days, cart abandoners, buyers.
+3. In your Performance Max campaign, add these as audience signals.
+4. Make a negative keyword list with words like "jobs", "free", "DIY" and brands you will not bid on.
 
 **Expected result:** Google has signals to guide it and words to avoid.
 
-**Step 6.** On TikTok, use broad targeting by country and age, build custom audiences (visitors, video viewers, profile engagers, customer list), and use Spark ads to keep likes and comments on posts.
+**Step 6.** On TikTok, copy the same layers.
+
+1. Target broad: just country and age.
+2. Make custom audiences: visitors, video viewers, profile engagers, customer list.
+3. Run Spark ads so posts keep their likes and comments.
 
 **Expected result:** TikTok has the same audience layers as Meta.
 
@@ -248,7 +266,7 @@
 
 **Expected result:** The brand campaign is live and "Eligible". Searches for your name show your ad.
 
-**Step 7.** Start a Performance Max campaign (Google's all-in-one campaign).
+**Step 7.** Start a Performance Max (PMax) campaign, Google's all-in-one campaign.
 
 1. Click **+ Create** again.
 2. Choose **Sales**, then **Performance Max**.
@@ -281,7 +299,8 @@
 
 1. Make a Search campaign for one theme, for example "linen sheets".
 2. Add 5 to 15 keywords, typed as "phrase" and [exact].
-3. Each week, open **Insights and reports**, then **Search terms**, and add wasted searches as negative keywords.
+3. Each week, open **Insights and reports**, then **Search terms**.
+4. Tick searches that never buy and click **Add as negative keyword**.
 
 **Expected result:** New searchers find you, and searches that never buy are blocked.
 

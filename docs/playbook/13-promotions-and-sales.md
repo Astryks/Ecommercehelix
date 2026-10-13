@@ -85,7 +85,10 @@
 
 **Why this matters:** How you structure a product drop depends on your spend. Either way, your warm audiences and email list should get first access while normal campaigns keep running.
 
-**Step 1.** If you spend a lot (roughly $1,000 a day or more), make a separate launch campaign; if less, add launch ads to your normal cold and warm campaigns.
+**Step 1.** Choose where launch ads go.
+
+- Spend about $1,000 a day or more: make a separate launch campaign.
+- Spend less: add launch ads to your normal cold and warm campaigns.
 
 **Expected result:** Launch ads have a home that fits your budget.
 
@@ -240,7 +243,13 @@
 
 **Expected result:** You have proven ads and a bigger list by August.
 
-**Step 2.** Follow the Black Friday stages: August review last year, set targets and test; September order stock 10 to 12 weeks out, lock the offer and scale winners; October finalise creative, warm audiences, build flows and load stock; November launch, check daily and scale winners; December and January review and plan next year.
+**Step 2.** Put the Black Friday stages in your Helix calendar.
+
+- August: review last year. Set targets. Test new ads.
+- September: order stock 10 to 12 weeks out. Lock the offer.
+- October: finish ads. Warm up audiences. Build email flows.
+- November: launch. Check numbers daily.
+- December and January: review and plan next year.
 
 **Expected result:** Every stage is on your calendar with dates.
 
@@ -306,7 +315,10 @@
 
 **Expected result:** The sale and its messages are on your calendar with dates.
 
-**Step 4.** After it ends, record sales, profit, units cleared and new versus returning customers, and note one thing to change next time.
+**Step 4.** After it ends, write down how it went.
+
+1. Record sales, profit, units cleared, and new versus returning customers.
+2. Write one thing to change next time.
 
 **Expected result:** You know whether the sale made money and whether to repeat it.
 

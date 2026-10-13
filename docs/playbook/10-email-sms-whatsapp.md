@@ -55,17 +55,23 @@
 
 **Expected result:** Overseas visitors see a relevant offer.
 
-**Step 5.** After 2 weeks, check sign-up rate in the form's report and test one change at a time.
+**Step 5.** After 2 weeks, measure and improve.
+
+1. Open the form's report and find the sign-up rate.
+2. Change one thing (the offer, the headline or the timing) and wait another 2 weeks.
 
 **Expected result:** You are above 3 sign-ups per 100 visitors, or have a test running to get there. With a strong offer, 6 to 10 is possible.
 
 **Step 6.** Put a sign-up form inside a page too, not only as a pop-up.
 
-1. In your email app (for example Klaviyo), make a new **Embedded** form and copy its form ID or code.
-2. In Shopify, click **Online Store**, then **Themes**, then **Customize**.
-3. Open the page you want (your home page or an "About" page) and click **Add section** or **Add block**.
-4. Pick your email app's form block (or **Custom Liquid**) and paste the form ID or code.
-5. Click **Save**.
+1. In your email app (for example Klaviyo), make a new **Embedded** form.
+2. Copy its form ID or code.
+3. In Shopify, click **Online Store**, then **Themes**, then **Customize**.
+4. Open the page you want (your home page or an "About" page).
+5. Click **Add section** or **Add block**.
+6. Pick your email app's form block (or **Custom Liquid**).
+7. Paste the form ID or code.
+8. Click **Save**.
 
 **Expected result:** The form shows inside the page, and a test sign-up appears in your email list within a minute.
 
@@ -300,7 +306,10 @@
 
 **Why this matters:** Big sales live or die on email and SMS. A fixed schedule from tease to thank-you makes sure every phase gets a message, and nobody gets spammed.
 
-**Step 1.** Before the sale, run sign-ups and send teasers.
+**Step 1.** Before the sale, build your early-access list.
+
+1. Two weeks before, turn on an "early access" sign-up form.
+2. Each week, send one teaser email to that list.
 
 **Expected result:** Your early-access list is growing.
 

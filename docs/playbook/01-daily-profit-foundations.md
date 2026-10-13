@@ -359,7 +359,12 @@ High margin products can afford a higher share; low margin products cannot. Alwa
 
 **Expected result:** You know the marketing share at which you stop making money.
 
-**Step 2.** Pick a target MER below break-even that leaves room for your fixed costs and profit (for example break-even 55%, target 25%), and save it in **Settings**. If you are pre-sales, set a fixed daily test budget instead.
+**Step 2.** Choose your target MER (ads as a share of sales).
+
+1. Pick a number well below your break-even, for example break-even 55%, target 25%. The gap pays your fixed costs and your profit.
+2. In Helix, open **Settings**.
+3. Type it in **Target MER**.
+4. No sales yet? Write down a fixed daily test budget instead, for example $20 a day.
 
 **Expected result:** You have a target MER, or a fixed test budget, written down.
 
@@ -401,7 +406,9 @@ Working it out step by step:
 **Step 2.** Open it in the app you like.
 
 - Excel or Numbers: double-click the file.
-- Google Sheets: go to sheets.google.com, click **File**, then **Import**, then **Upload**, and pick the file.
+- Google Sheets: go to sheets.google.com and open a blank sheet.
+- Click **File**, then **Import**.
+- Click **Upload** and pick the file.
 
 **Expected result:** You see a tab called **Start here** with short instructions.
 
@@ -421,11 +428,18 @@ Working it out step by step:
 
 **Expected result:** Two more numbers are filled in.
 
-**Step 7.** Type what you spent on ads. Meta: open Ads Manager and copy **Amount spent** for yesterday. Google: open Google Ads and copy **Cost**.
+**Step 7.** Type what you spent on ads yesterday.
+
+1. Meta: in Ads Manager, find **Amount spent** for yesterday. Type it in **Meta ad spend**.
+2. Google: in Google Ads, find **Cost** for yesterday. Type it in **Google ad spend**.
 
 **Expected result:** The blue **Total ad spend** box now shows the two added together.
 
-**Step 8.** Type your costs: **Product cost**, **Shipping cost** and **Payment fees**. Not sure? Use the numbers from your Helix **Profit** setup.
+**Step 8.** Type your costs for yesterday.
+
+1. Type what the products cost you in **Product cost**.
+2. Type what you paid to ship in **Shipping cost**.
+3. Type card and PayPal fees in **Payment fees**. Not sure of any number? Use the one from your Helix **Profit** page.
 
 **Expected result:** The blue **Profit** box fills in. Green means you made money. Red means you lost money.
 

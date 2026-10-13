@@ -197,7 +197,15 @@
 
 <!-- do:stock -->
 
-**Step 4.** When rates change, recheck margin per product and choose: raise prices, change shipping, change where you make, or accept a lower margin for now.
+**Step 4.** When rates change, decide per product.
+
+1. Work out the new margin for each product.
+2. For each one, pick one fix from this list.
+
+- A higher price.
+- Cheaper shipping.
+- A new place to make it.
+- A lower margin for now.
 
 **Expected result:** You have a decision for each affected product.
 

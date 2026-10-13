@@ -86,7 +86,11 @@
 
 **Expected result:** You have a code for each post you want to run.
 
-**Step 2.** In TikTok Ads Manager, create an ad, choose **Spark ad** and paste the code.
+**Step 2.** Run the creator's post as an ad.
+
+1. In TikTok Ads Manager, create an ad.
+2. Choose **Spark ad**.
+3. Paste the code the creator sent you.
 
 **Expected result:** The creator's post runs as an ad with its likes and comments.
 
@@ -107,7 +111,12 @@
 
 **Expected result:** TikTok gets the data it needs again.
 
-**Step 4.** When things work, make new hooks, try catalog or video shopping ads, use bundles to raise order size, then add new campaigns.
+**Step 4.** When things work, grow one move at a time.
+
+1. Make new hooks for your best ad.
+2. Try catalog or video shopping ads.
+3. Offer bundles to raise order size.
+4. Add a new campaign only after these.
 
 **Expected result:** Growth comes from new creative and campaigns, not just more budget.
 
@@ -175,7 +184,11 @@
 
 **Why this matters:** SEO (search engine optimisation) means getting found in Google without paying for ads. It takes months to build but keeps paying. Five steps cover most of it.
 
-**Step 1.** Research keywords: start with buying searches ("buy linen shirt", "best linen shirt"), check volume, difficulty (how hard to rank) and intent, and pick about 10 per category.
+**Step 1.** Find the words people search when they want to buy.
+
+1. List buying searches for each category, like "buy linen shirt" or "best linen shirt".
+2. In a keyword tool, look up how many people search each one and the difficulty (how hard it is to rank).
+3. Keep about 10 per category.
 
 **Expected result:** Each category has a list of target keywords.
 
@@ -221,7 +234,10 @@
 
 **Why this matters:** Instagram shopping lets people tap a product in a post and buy. It is free once your catalog is connected.
 
-**Step 1.** In Meta Commerce Manager, set up your shop and connect your product catalog.
+**Step 1.** Set up your shop on Facebook and Instagram.
+
+1. Open Meta Commerce Manager and click **Add shop**.
+2. Connect your product catalog when it asks.
 
 **Expected result:** Commerce Manager shows your shop as approved.
 
