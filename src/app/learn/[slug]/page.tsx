@@ -47,7 +47,7 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
         </aside>
         <main className="min-w-0">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Module {meta.number}</p>
-          <h1 className="mt-1 text-4xl font-bold tracking-tight">{mod.title}</h1>
+          <h1 className="mt-1 text-4xl font-bold tracking-tight">{mod.title.split(" ").slice(0, -1).join(" ")} <span className="grad-text">{mod.title.split(" ").at(-1)}</span></h1>
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-slate-600">
             <span>{mod.lessonCount} lessons, {mod.stepCount} steps</span>
             <span aria-hidden>·</span>
