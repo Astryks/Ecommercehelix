@@ -235,3 +235,9 @@ Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h
 - Instagram is optional (no instagram_basic): Pages are listed without the Instagram field if Meta refuses it.
 - Copy: Meta connection is open to early testers now and opens to all stores after Meta's approval. Integrations page says so while META_PUBLIC is not 1.
 - Next: Sid connects his own ad account; publish privacy, terms and data deletion pages; Business Verification and App Review; then set META_PUBLIC=1 and switch the app to Live.
+
+## 13 Oct 2026: legal pages
+- New /privacy, /terms, /data-deletion (drafts, need a lawyer's review; see docs/legal-pages.md). Contact email is a placeholder.
+- Meta data deletion callback: POST /api/meta/data-deletion (verifies signed_request with META_APP_SECRET, deletes that Facebook user's Meta data, returns url and confirmation_code).
+- Deleting an account now also revokes Meta access and cancels any Stripe subscription (best effort).
+- Links: site footer, sign-in, billing, dashboard sidebar, onboarding.

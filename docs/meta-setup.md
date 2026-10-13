@@ -14,7 +14,8 @@ Graph API and Marketing API version used: **v26.0** (released 29 July 2026). Cha
 - [x] Vercel Production env set: META_APP_ID, META_APP_SECRET, META_CONFIG_ID (Sensitive), META_PUBLIC=0. APP_URL, TOKEN_ENCRYPTION_KEY and CRON_SECRET were already set and were kept. META_MOCK is not set.
 - [x] Connect redirect checked: goes to facebook.com/v26.0/dialog/oauth with the app ID, config ID and the redirect URI above.
 - [ ] Sid connects his own ad account in Helix (needs a Starter or Growth plan on his account) and checks sync and a paused draft.
-- [ ] Publish Privacy Policy, Terms of Service and data deletion pages (not on the site yet) and add them in App settings > Basic.
+- [x] Privacy Policy, Terms of Service and data deletion pages published (drafts, see docs/legal-pages.md).
+- [ ] Add them in App settings > Basic: Privacy Policy URL https://ecommercehelix.com/privacy, Terms of Service URL https://ecommercehelix.com/terms, User data deletion: Data deletion callback URL https://ecommercehelix.com/api/meta/data-deletion (or instructions URL https://ecommercehelix.com/data-deletion).
 - [ ] Business Verification, then App Review for the permissions above (Advanced Access). Then switch the app to Live and set META_PUBLIC=1.
 
 ---

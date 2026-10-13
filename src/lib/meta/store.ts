@@ -132,3 +132,10 @@ export async function listDrafts(userId: string): Promise<DraftRow[]> {
   const rows = await prisma.metaDraft.findMany({ where: { userId }, orderBy: { createdAt: "desc" }, take: 20 });
   return rows.map((r) => ({ ...r, adIds: r.adIds ? r.adIds.split(",") : [], creativeIds: r.creativeIds ? r.creativeIds.split(",") : [], createdAt: r.createdAt.toISOString() }));
 }
+
+/** Helix users linked to a Facebook user id (used by Meta's data deletion callback). */
+export async function usersForFbUser(fbUserId: string): Promise<string[]> {
+  if (!hasDb) return [...mem.conns.values()].filter((c) => c.fbUserId === fbUserId).map((c) => c.userId);
+  const rows = await prisma.metaConnection.findMany({ where: { fbUserId }, select: { userId: true } });
+  return rows.map((r) => r.userId);
+}

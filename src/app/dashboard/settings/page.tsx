@@ -33,7 +33,7 @@ export default async function Settings({ searchParams }: PageProps<"/dashboard/s
         </div>
         <div className="border-t border-slate-200 pt-6">
           <h2 className="font-hand text-xl font-semibold text-rose-800">Delete my account</h2>
-          <p className="mt-1 text-sm text-slate-600">This permanently deletes your account and everything in it. It cannot be undone. If you pay for a plan, cancel it under Billing first. Type DELETE to confirm.</p>
+          <p className="mt-1 text-sm text-slate-600">This permanently deletes your account and everything in it. It cannot be undone. It also removes Helix's access to your Meta account and cancels any paid plan at Stripe straight away. Type DELETE to confirm.</p>
           {sp.delete === "confirm" && <p className="mt-2 text-sm text-rose-700">Please type DELETE in capitals to confirm.</p>}
           <form action={deleteMyAccount} className="mt-3 flex flex-wrap gap-2">
             <input name="confirm" aria-label="Type DELETE to confirm" placeholder="DELETE" className="rounded-lg border border-slate-300 px-3 py-2 text-sm" autoComplete="off" />

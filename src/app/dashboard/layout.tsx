@@ -1,3 +1,4 @@
+import { LegalLinks } from "@/components/legal/LegalLinks";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { NavLinks } from "@/components/dashboard/NavLinks";
@@ -38,6 +39,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
             <p className="mt-3 text-xs"><span className="rounded-full bg-cyan-500 px-2 py-0.5 font-bold text-slate-950">{planName(acct.plan)}</span></p>
             <form action={out} className="mt-3"><button className="text-xs text-slate-400 underline hover:text-white">Sign out</button></form>
           </div>
+          <LegalLinks className="mt-3 block px-2 pb-2 text-xs text-slate-400" />
           </div>
         </aside>
         <div className="min-w-0 flex-1 px-4 py-6 sm:px-8 lg:py-10">{children}</div>

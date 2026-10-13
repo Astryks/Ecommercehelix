@@ -51,7 +51,7 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
           );
         })}
       </div>
-      <p className="mt-8 text-xs text-slate-500">Plan prices are in Australian dollars (AUD). Moving to Free keeps your Meta connection and prep plans. Checkout: {stripe ? "Stripe" : "not configured (demo)"}.</p>
+      <p className="mt-8 text-xs text-slate-500">Plan prices are in Australian dollars (AUD). Moving to Free keeps your Meta connection and prep plans. Checkout: {stripe ? "Stripe" : "not configured (demo)"}. Billed monthly, cancel any time. See our <a className="underline" href="/terms">Terms</a> and <a className="underline" href="/privacy">Privacy policy</a>.</p>
     </div>
   );
 }

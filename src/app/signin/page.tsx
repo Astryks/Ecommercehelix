@@ -53,6 +53,7 @@ export default async function SignIn({ searchParams }: PageProps<"/signin">) {
             </form>
           )}
         </div>
+        <p className="mt-6 text-xs text-slate-500">By signing in you agree to our <Link className="underline" href="/terms">Terms</Link> and <Link className="underline" href="/privacy">Privacy policy</Link>.</p>
       </div>
     </main>
   );

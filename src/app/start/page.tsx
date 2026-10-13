@@ -1,3 +1,4 @@
+import { LegalLinks } from "@/components/legal/LegalLinks";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ArrowRight } from "lucide-react";
@@ -75,6 +76,7 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
             </>
           )}
         </div>
+        <LegalLinks className="mt-10 block text-center text-xs text-slate-500" />
       </main>
     </>
   );
