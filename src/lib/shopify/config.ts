@@ -88,3 +88,28 @@ export function aggregateOrders(orders: ShopifyOrder[], tz: string) {
     products: [...prods.values()].filter((p) => p.units > 0).map((p) => ({ date: p.date, sku: p.sku.slice(0, 120), name: p.name.slice(0, 200), units: p.units, price: r2(p.sales / p.units), unitCost: r2(p.cost / p.units) })),
   };
 }
+
+export const UNINSTALL_WEBHOOK_URI = "https://ecommercehelix.com/api/shopify/webhooks";
+export const WEBHOOKS_Q = `query HelixWebhooks { webhookSubscriptions(first: 25, topics: [APP_UNINSTALLED]) { nodes { id uri } } }`;
+export const WEBHOOK_CREATE_M = `mutation HelixWebhookCreate($topic: WebhookSubscriptionTopic!, $webhookSubscription: WebhookSubscriptionInput!) {
+  webhookSubscriptionCreate(topic: $topic, webhookSubscription: $webhookSubscription) { webhookSubscription { id } userErrors { field message } }
+}`;
+type Gql = <T>(query: string, variables?: Record<string, unknown>) => Promise<T>;
+
+/** Idempotent: creates the APP_UNINSTALLED subscription only when none points at our endpoint. Never throws. */
+export async function ensureUninstallWebhookWith(gql: Gql, uri = UNINSTALL_WEBHOOK_URI): Promise<{ ok: boolean; created: boolean; error?: string }> {
+  try {
+    const list = await gql<{ webhookSubscriptions: { nodes: { id: string; uri: string }[] } }>(WEBHOOKS_Q);
+    if (list.webhookSubscriptions.nodes.some((n) => n.uri === uri)) return { ok: true, created: false };
+    const r = await gql<{ webhookSubscriptionCreate: { webhookSubscription: { id: string } | null; userErrors: { field?: string[]; message: string }[] } }>(WEBHOOK_CREATE_M, { topic: "APP_UNINSTALLED", webhookSubscription: { uri } });
+    const errs = r.webhookSubscriptionCreate.userErrors;
+    if (errs.length) {
+      // A race or an existing subscription is not a failure.
+      if (errs.every((e) => /already been taken|already exists/i.test(e.message))) return { ok: true, created: false };
+      return { ok: false, created: false, error: errs.map((e) => e.message).join("; ").slice(0, 300) };
+    }
+    return { ok: true, created: true };
+  } catch (e) {
+    return { ok: false, created: false, error: (e as Error).message.slice(0, 300) };
+  }
+}

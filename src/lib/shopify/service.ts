@@ -3,7 +3,7 @@ import { decrypt, encrypt, loadKey } from "../crypto";
 import { hasDb, prisma } from "../db";
 import { setShopifyProducts, setShopifySales, setShopifyStock } from "../repo";
 import { logAudit } from "../meta/store";
-import { aggregateOrders, SHOPIFY_API_VERSION, SHOPIFY_SCOPES, shopifyMode, type ShopifyOrder } from "./config";
+import { aggregateOrders, ensureUninstallWebhookWith, SHOPIFY_API_VERSION, SHOPIFY_SCOPES, shopifyMode, type ShopifyOrder } from "./config";
 
 type Actor = "user" | "cron" | "shopify";
 const aad = (userId: string) => `shopify:${userId}`;
@@ -88,6 +88,22 @@ async function gql<T>(userId: string, shop: string, token: string, actor: Actor,
   return j.data as T;
 }
 
+/** Registers APP_UNINSTALLED for the user's shop (idempotent). Non-fatal: errors are logged and returned. */
+export async function ensureUninstallWebhook(userId: string, actor: Actor = "user") {
+  const conn = await getShopify(userId);
+  if (!conn || shopifyMode() !== "live") return { ok: false, created: false, error: "not connected" };
+  try {
+    const token = await accessToken(userId, conn.shop);
+    const r = await ensureUninstallWebhookWith(<T,>(q: string, v?: Record<string, unknown>) => gql<T>(userId, conn.shop, token, actor, q, v));
+    if (r.created || !r.ok) await logAudit(userId, { actor, action: "shopify.webhook", target: conn.shop, outcome: r.ok ? "ok" : "error", detail: r.ok ? { topic: "APP_UNINSTALLED" } : { message: r.error } });
+    return r;
+  } catch (e) {
+    const message = (e as Error).message.slice(0, 300);
+    await logAudit(userId, { actor, action: "shopify.webhook", target: conn.shop, outcome: "error", detail: { message } }).catch(() => {});
+    return { ok: false, created: false, error: message };
+  }
+}
+
 const SHOP_Q = `query HelixShop { shop { name currencyCode ianaTimezone } productsCount { count } }`;
 // Aggregates only: no customer, email or address fields are requested.
 const ORDERS_Q = `query HelixOrders($q: String!, $after: String) {
@@ -167,6 +183,7 @@ export async function syncAllShopify(deadlineMs = 240_000) {
   const out: { userId: string; ok: boolean }[] = [];
   for (const r of rows) {
     if (Date.now() - start > deadlineMs) break;
+    await ensureUninstallWebhook(r.userId, "cron");
     out.push({ userId: r.userId, ...(await syncShopify(r.userId, "cron", 7)) });
   }
   return out;

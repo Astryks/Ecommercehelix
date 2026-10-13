@@ -4,7 +4,7 @@ import { requireUser } from "@/lib/session";
 import { appUrl } from "@/lib/meta/config";
 import { logAudit } from "@/lib/meta/store";
 import { normaliseShop, shopifyMode, verifyQueryHmac } from "@/lib/shopify/config";
-import { connectShopify, syncShopify } from "@/lib/shopify/service";
+import { connectShopify, ensureUninstallWebhook, syncShopify } from "@/lib/shopify/service";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 120;
@@ -33,6 +33,7 @@ export async function GET(req: NextRequest) {
     await logAudit(u.id, { actor: "user", action: "shopify.connect", target: shop, outcome: "error", detail: { message: (e as Error).message } });
     return back("error=shopify_exchange");
   }
+  await ensureUninstallWebhook(u.id, "user"); // non-fatal
   const r = await syncShopify(u.id, "user", 60);
   return back(r.ok ? "shopify_connected=1" : "shopify_connected=1&error=shopify_sync");
 }
