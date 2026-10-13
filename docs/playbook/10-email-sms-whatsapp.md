@@ -59,6 +59,16 @@
 
 **Expected result:** You are above 3 sign-ups per 100 visitors, or have a test running to get there. With a strong offer, 6 to 10 is possible.
 
+**Step 6.** Put a sign-up form inside a page too, not only as a pop-up.
+
+1. In your email app (for example Klaviyo), make a new **Embedded** form and copy its form ID or code.
+2. In Shopify, click **Online Store**, then **Themes**, then **Customize**.
+3. Open the page you want (your home page or an "About" page) and click **Add section** or **Add block**.
+4. Pick your email app's form block (or **Custom Liquid**) and paste the form ID or code.
+5. Click **Save**.
+
+**Expected result:** The form shows inside the page, and a test sign-up appears in your email list within a minute.
+
 ## Lesson 10.2: The five core flows and extras
 <!-- stage:convert -->
 

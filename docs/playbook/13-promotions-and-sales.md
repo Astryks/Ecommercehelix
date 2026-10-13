@@ -166,7 +166,7 @@
 
 **Expected result:** Nothing can overspend.
 
-**Step 3.** Each day, check MER against plan, stock, site speed and ad fatigue.
+**Step 3.** Each day, check MER (total ad spend as a share of total sales) against plan, stock, site speed and ad fatigue.
 
 **Expected result:** You catch problems the same day.
 

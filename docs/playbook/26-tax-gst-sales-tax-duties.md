@@ -94,7 +94,7 @@
 
 **Expected result:** Your supplier records are correct.
 
-**Step 4.** For stock imports over A$1,000, pay GST and any duty at the border through your broker or forwarder, keep the paperwork, and claim that GST on your BAS.
+**Step 4.** For stock imports over A$1,000, pay GST and any duty at the border through your broker or forwarder, keep the paperwork, and claim that GST on your BAS (the Australian tax form for GST).
 
 **Expected result:** Import GST appears as a credit on your BAS.
 

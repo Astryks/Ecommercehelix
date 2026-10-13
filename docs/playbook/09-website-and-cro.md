@@ -264,7 +264,11 @@
 
 **Why this matters:** How you handle shipping changes how much people buy. Surprise shipping costs at checkout are one of the top reasons people leave, while a well-placed free shipping amount makes many add one more item.
 
-**Step 1.** In Shopify **Analytics**, find your median order value, then set free shipping just above it (often about 1.2 to 1.3 times AOV) in **Settings > Shipping and delivery**.
+**Step 1.** Set your free shipping amount.
+
+1. In Shopify **Analytics**, find your average order value (AOV).
+2. Multiply it by 1.25. That's your free shipping amount.
+3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.
 
 **Expected result:** A free shipping rate appears at your chosen amount.
 
@@ -396,6 +400,31 @@
 **Expected result:** You know whether the problem is the site, one device, or one traffic source.
 
 **Watch out:** Do not cut ad spend in a panic before Step 2. If checkout is broken, every channel looks bad at once.
+
+## Lesson 9.17: Your store gap check
+<!-- stage:convert -->
+
+**Why this matters:** A gap check compares your store with what buyers expect to see, so you fix the biggest gaps first instead of guessing.
+
+**Step 1.** Open **What to fix** in Helix and look at **Your store check**.
+
+**Expected result:** You see up to 5 fixes, each quoting something from your own store.
+
+**Step 2.** Pick the top fix only. Write it at the top of a note.
+
+**Expected result:** You have one fix to work on, not five.
+
+**Step 3.** Open the lesson linked under that fix and do its steps.
+
+**Expected result:** The fix is live on your store.
+
+**Step 4.** On your phone, open the page you changed and check it looks right.
+
+**Expected result:** The change shows on a phone and nothing else moved or broke.
+
+**Step 5.** On Starter, wait for your monthly re-check. On Free, tick the fix done and move to the next one.
+
+**Expected result:** The fix no longer shows in your list, or is ticked as done.
 
 ## Self-check
 

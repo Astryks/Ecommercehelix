@@ -39,7 +39,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Never open Ads Manager until you know the five numbers that say whether an ad makes or loses money. They come from Module 1 and Helix works them out from your daily numbers. With them, every later decision is a simple comparison.
 
-**Step 1.** Open the Dashboard on **Month** and copy your target MER, break-even ROAS and break-even CPA from the metric cards.
+**Step 1.** Open the Dashboard on **Month** and copy your target MER, break-even ROAS (sales for each $1 of ads) and break-even CPA from the metric cards.
 
 **Expected result:** You have three numbers written on your campaign brief.
 
@@ -76,7 +76,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** You have one job written on the brief.
 
-**Step 2.** In Ads Manager click **Create**, choose the objective listed for that job (for new buyers: **Sales**), and set the conversion event it aims for (for new buyers: **Purchase**).
+**Step 2.** Create the campaign for this job.
+
+1. In Ads Manager, click **Create**.
+2. Choose the goal listed for this job. For new buyers, that's **Sales**.
+3. Set what it aims for. For new buyers, that's **Purchase**.
 
 **Expected result:** The campaign's objective and conversion event match the table.
 
@@ -284,7 +288,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Each metric tells you about one part of the journey, from stopping the scroll to buying. Reading them in order shows exactly where an ad breaks.
 
-**Step 1.** In Ads Manager click **Columns > Customise columns** and add hook rate, hold rate, outbound CTR, CPM, cost per outbound click, add to cart, cost per purchase, ROAS, frequency and reach, then save as a preset.
+**Step 1.** Make a "Creative" view in Ads Manager.
+
+1. Click **Columns**, then **Customise columns**.
+2. Tick: hook rate, hold rate, outbound CTR, CPM, cost per outbound click, add to cart, cost per purchase, ROAS, frequency and reach.
+3. Tick **Save as preset**, name it "Creative" and click **Apply**.
 
 **Expected result:** You see all the metrics in the table below in one view.
 

@@ -145,7 +145,11 @@
 
 **Expected result:** The brief is finished before you open Ads Manager.
 
-**Step 2.** In Ads Manager click **+ Create**, choose **Sales**, click **Continue**, then pick **Advantage+ sales campaign** for new customers or **Manual sales campaign** for a controlled test.
+**Step 2.** Start the campaign.
+
+1. In Ads Manager, click **+ Create**.
+2. Choose **Sales** and click **Continue**.
+3. Pick **Advantage+ sales campaign** for new customers, or **Manual sales campaign** for a controlled test.
 
 **Expected result:** A new Sales campaign is open.
 
@@ -175,7 +179,11 @@
 
 **Expected result:** Each ad has text, headline and a tagged link.
 
-**Step 9.** In each ad, open **Advantage+ creative > Edit**, switch off changes that alter your message, and check the preview on the right for Feed, Stories and Reels.
+**Step 9.** Stop Meta changing your ad.
+
+1. In each ad, open **Advantage+ creative**, then **Edit**.
+2. Switch off anything that changes your words or picture.
+3. Check the preview on the right for Feed, Stories and Reels.
 
 **Expected result:** Text sits inside the safe areas and each ad looks as designed.
 
@@ -240,23 +248,40 @@
 
 **Expected result:** The brand campaign is live and "Eligible". Searches for your name show your ad.
 
-**Step 7.** Click **+ Create** again, choose **Sales**, then **Performance Max**, select your Merchant Center account when asked, and name it "02-PMax-Products".
+**Step 7.** Start a Performance Max campaign (Google's all-in-one campaign).
+
+1. Click **+ Create** again.
+2. Choose **Sales**, then **Performance Max**.
+3. Pick your Merchant Center account when asked.
+4. Name it "02-PMax-Products".
 
 **Expected result:** A new Performance Max campaign is connected to your product feed.
 
-**Step 8.** Set **Bidding** to **Conversion value** (Maximise conversion value) without a target ROAS for now, and a daily budget from your marketing guide (Lesson 1.9).
+**Step 8.** Set **Bidding** to **Conversion value** (Maximise conversion value) without a target ROAS (sales for each $1 of ads) for now, and a daily budget from your marketing guide (Lesson 1.9).
 
 **Expected result:** The campaign has a budget and value bidding.
 
-**Step 9.** In the asset group, remove any extra images, videos and text Google adds so it runs mainly from your product feed, and add your brand name under **Brand exclusions** (in campaign settings) so brand searches stay with the brand campaign. Click **Publish campaign**.
+**Step 9.** Keep it on your products, then publish.
+
+1. In the asset group, remove extra images, videos and text Google added, so it runs mainly from your product feed.
+2. In campaign settings, add your brand name under **Brand exclusions**. Brand searches then stay with your brand campaign.
+3. Click **Publish campaign**.
 
 **Expected result:** Performance Max is live and runs on your products, not your brand name. If you cannot remove every asset, leave the minimum Google requires.
 
-**Step 10.** After about 30 purchases in 30 days, open the Performance Max campaign settings, tick **Set a target return on ad spend** and enter a target near your break-even ROAS from your profit setup.
+**Step 10.** After about 30 purchases in 30 days, add a target.
+
+1. Open the Performance Max campaign settings.
+2. Tick **Set a target return on ad spend**.
+3. Type a target near your break-even ROAS (sales for each $1 of ads). Helix shows it in **Profit**.
 
 **Expected result:** Bidding now aims at profitable sales.
 
-**Step 11.** Once brand search and Performance Max are steady, add a non-brand Search campaign per product theme (for example "linen sheets") with 5 to 15 phrase and exact keywords each, and each week open **Insights and reports > Search terms** and add wasted searches as negative keywords.
+**Step 11.** Once brand search and Performance Max are steady, add one Search campaign per product theme.
+
+1. Make a Search campaign for one theme, for example "linen sheets".
+2. Add 5 to 15 keywords, typed as "phrase" and [exact].
+3. Each week, open **Insights and reports**, then **Search terms**, and add wasted searches as negative keywords.
 
 **Expected result:** New searchers find you, and searches that never buy are blocked.
 
@@ -293,7 +318,7 @@
 
 **Expected result:** Ads look like TikTok posts and keep their social proof.
 
-**Step 4.** Give it a week, then judge on total MER on the Dashboard as well as TikTok's reported return.
+**Step 4.** Give it a week, then judge on total MER (total ad spend as a share of total sales) on the Dashboard as well as TikTok's reported return.
 
 **Expected result:** You judge TikTok on its whole-store effect.
 
@@ -441,7 +466,7 @@ Spend
 
 **Why this matters:** A report is only useful if it leads to a decision. Four questions do that; dashboards with 40 numbers do not.
 
-**Step 1.** Start each report with what happened: sales, contribution profit and MER against target.
+**Step 1.** Start each report with what happened: sales, contribution profit and MER (total ad spend as a share of total sales) against target.
 
 **Expected result:** Three numbers open every report.
 
@@ -470,7 +495,7 @@ Spend
 
 **Expected result:** ROAS is always read against break-even.
 
-**Step 3.** Do not turn off an ad set the platform calls "bad" while your MER is improving, and check what happens after the click before trusting CTR.
+**Step 3.** Do not turn off an ad set the platform calls "bad" while your MER is improving, and check what happens after the click before trusting CTR (how many in 100 people clicked).
 
 **Expected result:** Decisions follow store results.
 

@@ -186,7 +186,7 @@
 
 **Expected result:** You have three planned spend levels.
 
-**Step 2.** Next to each step, write the MER you expect, a few points higher each time (for example 28%, 31%, 34%).
+**Step 2.** Next to each step, write the MER (total ad spend as a share of total sales) you expect, a few points higher each time (for example 28%, 31%, 34%).
 
 **Expected result:** You have expected results that allow for each extra sale costing a bit more.
 

@@ -38,7 +38,12 @@
 
 **Why this matters:** Revenue (all the money customers paid you) feels like success, but it does not tell you what you kept. A $5,000 day can still lose money once ads, product cost and shipping are paid, and ad platforms each claim the same sale, so their totals add up to more sales than you really had. This lesson gets you a real starting point so you can see the gap for yourself.
 
-**Step 1.** Open your store admin (Shopify: **Analytics > Reports > Total sales over time**), set the date range to last month and write down **Net sales** (sales after discounts and refunds).
+**Step 1.** Find last month's sales in your store.
+
+1. In Shopify, click **Analytics**, then **Reports**.
+2. Click **Total sales over time**.
+3. Set the date at the top to **Last month**.
+4. Write down the **Net sales** number (sales after discounts and refunds).
 
 **Expected result:** You have one dollar figure for last month's net sales written in a note or on paper.
 
@@ -85,7 +90,11 @@
 
 **Watch out:** Include your own wage even if you do not pay it yet. Leaving it out makes the business look healthier than it is.
 
-**Step 6.** In Helix open **Your numbers > Targets and fixed costs**, type the monthly fixed cost total into **Fixed costs per month** and click **Save targets**.
+**Step 6.** Save your fixed costs in Helix.
+
+1. Open **Your numbers**, then **Targets and fixed costs**.
+2. Type your monthly total into **Fixed costs per month**.
+3. Click **Save targets**.
 
 **Expected result:** The Dashboard's net profit now takes off a daily share of your fixed costs (monthly total divided by 30.4).
 
@@ -131,13 +140,25 @@
 
 <!-- do:meta-connect -->
 
-**Step 3.** In Helix open **Today**, type yesterday's sales, orders and ad spend into **Update yesterday** and click **Save and show my profit**, or use **Your numbers > Enter a day** for the full set.
+**Step 3.** Add yesterday's numbers in Helix.
+
+1. Open **Today** in Helix.
+2. In **Update yesterday**, type yesterday's sales, orders and ad spend.
+3. Click **Save and show my profit**.
+
+Want to add every cost too? Use **Your numbers > Enter a day** instead.
 
 **Expected result:** The profit box shows yesterday's profit with a plain-English line, and the Dashboard updates.
 
 <!-- do:numbers -->
 
-**Step 4.** Fill in the past 1 to 2 months in one go: download the template in **Your numbers > Import CSV**, paste one row per day and click **Import**.
+**Step 4.** Add the last 1 to 2 months in one go.
+
+1. Open **Your numbers** and find **Import CSV**.
+2. Click to download the template.
+3. Open it and paste one row per day.
+4. Save the file.
+5. Click **Import** and pick the file.
 
 **Expected result:** The Dashboard shows trends from day one instead of a single day.
 
@@ -249,7 +270,12 @@
 
 **Expected result:** You have one word for today's stance.
 
-**Step 3.** Check for emergencies: load your store on your phone, add a product to cart and reach checkout, confirm yesterday's sales show in Meta Events Manager, and check your best seller is in stock.
+**Step 3.** Do a 3-minute emergency check.
+
+1. On your phone, open your store.
+2. Add a product to the cart and go to checkout. You don't need to pay.
+3. In Meta Events Manager, check yesterday's purchases are showing.
+4. Check your best seller is in stock.
 
 **Expected result:** Site, checkout, tracking and stock are all confirmed working, or you have found the one thing to fix first.
 
@@ -293,7 +319,12 @@
 
 **Why this matters:** Every number Helix shows you later (profit yesterday, break-even, how much you can spend on ads) depends on knowing your costs. Five minutes here makes every other screen honest.
 
-**Step 1.** Open **Profit setup** in Helix. Enter your selling price, product cost, freight and duty, packaging, shipping to the customer and payment fees for a typical order. Use your best seller, or an average order if you sell many products.
+**Step 1.** Enter the costs of one typical order in **Profit setup**.
+
+1. Open **Profit** in Helix.
+2. Pick your best seller (or an average order if you sell many products).
+3. Type its selling price.
+4. Type each cost: product, freight and duty, packaging, shipping to the customer, payment fees.
 
 **Expected result:** The waterfall on the right shows your profit per order and your break-even numbers.
 

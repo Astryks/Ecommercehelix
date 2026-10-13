@@ -45,7 +45,11 @@
 
 **Expected result:** The app shows both accounts connected and products syncing.
 
-**Step 3.** In Google Ads go to **Goals > Conversions > Summary** and make **Purchase** the only primary (main) conversion, then turn on **Enhanced conversions** (hashed customer details that match more sales).
+**Step 3.** Tell Google that a purchase is the only thing that counts.
+
+1. In Google Ads, click **Goals**, then **Conversions**, then **Summary**.
+2. Make **Purchase** the only **Primary** (main) action. Set the others to **Secondary**.
+3. Turn on **Enhanced conversions**. It sends scrambled customer details so Google can match more sales.
 
 **Expected result:** Only Purchase is marked Primary, and enhanced conversions show "Active".
 
@@ -200,7 +204,11 @@
 
 **Why this matters:** Ten to twenty minutes once a week keeps Google profitable. Most waste hides in the search terms report.
 
-**Step 1.** Open **Insights and reports > Search terms**, add searches that cost money and never sell as negative keywords, and add searches that sell well as keywords.
+**Step 1.** Clean up your searches once a week.
+
+1. Open **Insights and reports**, then **Search terms**.
+2. Tick searches that cost money but never sell. Click **Add as negative keyword**.
+3. Tick searches that sell well. Click **Add as keyword**.
 
 **Expected result:** Wasted searches are blocked and winners are targeted directly.
 
@@ -237,7 +245,7 @@
 
 **Expected result:** The campaign is live with proven creative.
 
-**Step 3.** Judge it by view-through results (people who saw the ad and bought later) and your total MER on the Dashboard.
+**Step 3.** Judge it by view-through results (people who saw the ad and bought later) and your total MER (total ad spend as a share of total sales) on the Dashboard.
 
 **Expected result:** You judge it on the whole-store effect, not clicks alone.
 
@@ -248,7 +256,12 @@
 
 **Why this matters:** Big sales change shopper behaviour overnight, and Google's bidding needs a nudge to keep up. Three settings make the difference.
 
-**Step 1.** In **Tools > Bid strategies > Advanced controls**, add a seasonality adjustment for the first 1 to 2 days of the sale, expecting about 50% higher conversion rate, then remove it after.
+**Step 1.** Tell Google a sale is coming.
+
+1. Open **Tools**, then **Bid strategies**, then **Advanced controls**.
+2. Add a seasonality adjustment for the first 1 to 2 days of the sale.
+3. Set the expected conversion rate change to about +50%.
+4. After the sale, delete it.
 
 **Expected result:** Google bids up for the sale's first days and returns to normal after.
 
@@ -286,7 +299,11 @@
 
 **Words you will see:** **Merchant Center** holds your product list (the **feed**). **Performance Max** (PMax) shows your products across Shopping, Search, YouTube and Gmail. **Conversion** means a purchase Google can count. **Impression share** is how often your ad shows when someone searches your name.
 
-**Step 1.** Go to ads.google.com and click **Start now**. When it asks you to create a campaign, look for **Switch to Expert Mode** or **Create an account without a campaign** (small link, usually at the bottom) and click it.
+**Step 1.** Make your Google Ads account without a campaign.
+
+1. Go to ads.google.com and click **Start now**.
+2. When it asks you to make a campaign, look for a small link near the bottom: **Switch to Expert Mode** or **Create an account without a campaign**.
+3. Click it.
 
 **Expected result:** You are creating an account, not a campaign.
 
@@ -298,11 +315,23 @@
 
 **Expected result:** Billing shows a saved card or bank account.
 
-**Step 4.** In Shopify, open **Apps**, install **Google & YouTube**, click **Get started** and connect your Google account, Merchant Center and Google Ads account. If it offers to create a campaign, skip it.
+**Step 4.** Connect Shopify to Google.
+
+1. In Shopify, click **Apps** and install **Google & YouTube**.
+2. Click **Get started**.
+3. Connect your Google account.
+4. Connect Merchant Center.
+5. Connect Google Ads.
+6. If it offers to make a campaign, click skip.
 
 **Expected result:** The app shows green ticks for your accounts, products syncing, **Conversion measurement** and **Conversion event settings**.
 
-**Step 5.** In Google Ads open **Goals > Conversions > Summary**, click **Edit goal** on Purchases and check Purchase is **Primary**. Set any other actions (page view, add to cart) to **Secondary** and save.
+**Step 5.** Check purchases are what Google aims for.
+
+1. In Google Ads, click **Goals**, then **Conversions**, then **Summary**.
+2. Click **Edit goal** on Purchases. Check it says **Primary**.
+3. Set page view and add to cart to **Secondary**.
+4. Click **Save**.
 
 **Expected result:** Only Purchase counts as a result, so Google optimises for sales.
 
@@ -310,19 +339,38 @@
 
 **Expected result:** A new Search campaign is open.
 
-**Step 7.** Under **Bidding**, choose **Target impression share**, set **Anywhere on results page** to about 90% and a **Maximum CPC bid limit** (the most you will pay per click) of about $0.50 to $1.
+**Step 7.** Set the bidding.
+
+1. Under **Bidding**, choose **Target impression share**.
+2. Set **Anywhere on results page** to 90%.
+3. Set **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1.
 
 **Expected result:** Your ad shows for most searches of your name at a capped cost per click.
 
-**Step 8.** Under **Networks**, untick **Search partners** and **Display Network**. Under **Locations**, add the countries you ship to and, in **Location options**, choose **Presence** (people in or regularly in your locations).
+**Step 8.** Choose where the ads show.
+
+1. Under **Networks**, untick **Search partners** and **Display Network**.
+2. Under **Locations**, add the countries you ship to.
+3. Open **Location options** and choose **Presence** (people who are in those places).
 
 **Expected result:** The campaign runs only on Google search, for people where you ship.
 
-**Step 9.** Add your brand name and misspellings as keywords (`[your brand]` and `"your brand"`), write one responsive search ad with 10 to 15 headlines and 4 descriptions, set a daily budget of $5 to $10 and click **Publish campaign**.
+**Step 9.** Add keywords and an ad, then publish.
+
+1. Add your brand name as keywords, typed both ways: `[your brand]` and `"your brand"`. Add common misspellings too.
+2. Write one ad with 10 to 15 short headlines and 4 descriptions.
+3. Set the daily budget to $5 to $10.
+4. Click **Publish campaign**.
 
 **Expected result:** Brand search is live with status "Eligible" (it may say "Under review" for a few hours).
 
-**Step 10.** Build Performance Max: **+ Create > Campaign > Sales > Performance Max**, choose your Merchant Center feed, set **Bidding** to **Conversion value** with no target yet, and a daily budget from your marketing guide (Lesson 1.9).
+**Step 10.** Build a Performance Max campaign (Google's all-in-one shopping campaign).
+
+1. Click **+ Create**, then **Campaign**.
+2. Choose **Sales**, then **Performance Max**.
+3. Pick your Merchant Center product feed.
+4. Under **Bidding**, choose **Conversion value**. Leave the target empty for now.
+5. Set a daily budget inside your marketing guide (Lesson 1.9).
 
 **Expected result:** A Performance Max campaign is connected to your products with a budget.
 
@@ -330,7 +378,7 @@
 
 **Expected result:** Performance Max runs mainly from your product feed and leaves brand searches to the brand campaign.
 
-**Step 12.** Leave both campaigns for 7 days, then compare spend, purchases and ROAS with your break-even ROAS from your profit setup.
+**Step 12.** Leave both campaigns for 7 days, then compare spend, purchases and ROAS (sales for each $1 of ads) with your break-even ROAS from your profit setup.
 
 **Expected result:** You know whether each campaign is above or below break-even, and Lesson 8.8 shows what to change.
 
@@ -351,7 +399,11 @@
 
 **Expected result:** The table shows last week's campaigns.
 
-**Step 3.** Click **Columns** (the bars icon above the table), add **Conv. value** and **Conv. value / cost**, and click **Apply**.
+**Step 3.** Show sales value in your table.
+
+1. Click **Columns** (the bars icon above the table).
+2. Add **Conv. value** and **Conv. value / cost**.
+3. Click **Apply**.
 
 **Expected result:** You can see sales and ROAS for each campaign.
 

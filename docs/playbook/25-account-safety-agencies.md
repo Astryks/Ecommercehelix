@@ -222,7 +222,7 @@
 
 **Expected result:** You own every account and asset.
 
-**Step 9.** Ask your agency to report on MER and contribution profit, not just ROAS.
+**Step 9.** Ask your agency to report on MER (total ad spend as a share of total sales) and contribution profit, not just ROAS (sales for each $1 of ads).
 
 **Expected result:** Agency reports show profit numbers.
 

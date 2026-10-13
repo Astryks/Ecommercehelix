@@ -53,13 +53,23 @@
 
 **Expected result:** Verification shows "In review" or "Verified". If you do not see the button, your business may already be verified or not yet eligible: skip and come back later.
 
-**Step 4.** In Shopify, open **Apps**, search for **Facebook & Instagram**, install it and log in with your Facebook account.
+**Step 4.** Install the Facebook & Instagram app in Shopify.
+
+1. In Shopify, click **Apps**.
+2. Search for **Facebook & Instagram**.
+3. Click **Install**.
+4. Log in with your Facebook account when it asks.
 
 **Expected result:** The app shows your business, ad account, Page and pixel as connected.
 
 <!-- do:meta-connect -->
 
-**Step 5.** In the Facebook & Instagram app, open **Settings > Data sharing** and choose **Maximum**. This sends sales to Meta from your browser (the pixel, a small piece of tracking code) and from your store's server (the Conversions API), so fewer sales go missing.
+**Step 5.** Turn data sharing up to Maximum.
+
+1. In the Facebook & Instagram app in Shopify, open **Settings**, then **Data sharing**.
+2. Choose **Maximum**.
+
+This sends sales to Meta from the shopper's browser (the pixel) and from your store (the Conversions API), so fewer sales go missing.
 
 **Expected result:** Data sharing reads "Maximum".
 
@@ -67,11 +77,21 @@
 
 **Expected result:** Purchase shows events from both **Browser** and **Server**, in your store's currency. If it shows nothing, place a small test order and check again in an hour.
 
-**Step 7.** Back in Ads Manager, click the menu (three lines, top left) **> Billing and payments > Payment settings**, find **Account spending limit** and set a limit you are comfortable with.
+**Step 7.** Set a spending limit so ads can never spend more than you choose.
+
+1. In Ads Manager, click the menu (three lines, top left).
+2. Click **Billing and payments**, then **Payment settings**.
+3. Find **Account spending limit** and click **Set limit**.
+4. Type the most you are happy to spend in total, and save.
 
 **Expected result:** The account stops spending at your limit even if something goes wrong.
 
-**Step 8.** In Ads Manager, click **Columns** (above the table) **> Customise columns**, tick Results, Cost per result, Amount spent, Purchase ROAS, CTR (link) and Frequency, then click **Save as preset** and name it "Daily".
+**Step 8.** Make a simple "Daily" view in Ads Manager.
+
+1. Click **Columns** (above the table), then **Customise columns**.
+2. Tick: Results, Cost per result, Amount spent, Purchase ROAS (sales for each $1 of ads), CTR (link) (how many in 100 clicked) and Frequency (how often each person saw it).
+3. Tick **Save as preset** and name it "Daily".
+4. Click **Apply**.
 
 **Expected result:** Choosing **Columns > Daily** shows the numbers you check every day.
 
@@ -81,7 +101,12 @@
 
 <!-- do:calendar -->
 
-**Step 10.** Later, once you have a few hundred visitors: in Ads Manager open **Audiences** (All tools > Audiences), click **Create audience > Custom audience > Website** and make "All visitors, last 30 days". Repeat for 180 days and for purchasers.
+**Step 10.** Later, once you have a few hundred visitors, save your visitor lists.
+
+1. In Ads Manager, open **All tools**, then **Audiences**.
+2. Click **Create audience**, then **Custom audience**, then **Website**.
+3. Make "All visitors, last 30 days" and save.
+4. Do the same for 180 days, and for purchasers.
 
 **Expected result:** The audiences show "Ready" (they can take a few hours to fill).
 
@@ -90,7 +115,11 @@
 
 **Why this matters:** Meta offers two ways to run a sales campaign. **Advantage+** (automated) lets Meta choose who sees the ad, where and how the budget is split. **Manual** lets you choose the audience, exclusions and placements. Start with Advantage+ for new customers; use manual only when you need control.
 
-**Step 1.** In Ads Manager click **+ Create**, choose **Sales**, click **Continue**, then pick **Advantage+ sales campaign** (on some screens this is an **Advantage+ on** switch near the top, left on).
+**Step 1.** Start a new sales campaign.
+
+1. In Ads Manager, click **+ Create**.
+2. Choose **Sales** and click **Continue**.
+3. Pick **Advantage+ sales campaign**. On some screens this is an **Advantage+ on** switch near the top: leave it on.
 
 **Expected result:** Your main campaign for new customers is an Advantage+ Sales campaign.
 
@@ -138,13 +167,22 @@
 
 **Why this matters:** How you launch decides how fairly ads are tested and whether they keep their likes and comments. Build new ads in a switched-off campaign, copy them across with the same post, and switch them on together.
 
-**Step 1.** In Ads Manager, open your switched-off build campaign (its On/Off switch is grey), click **Ads**, then **+ Create** and make each new ad.
+**Step 1.** Make the new ads in your switched-off build campaign.
+
+1. In Ads Manager, open the build campaign (its On/Off switch is grey).
+2. Click the **Ads** tab.
+3. Click **+ Create** and make one new ad. Repeat for each ad.
 
 **Expected result:** The new ads sit in the paused build campaign, with "Off" under **Delivery**.
 
 <!-- do:meta-draft -->
 
-**Step 2.** Tick the new ads, click **Duplicate**, choose the live campaign and ad set they should run in, and click **Duplicate** again.
+**Step 2.** Copy the new ads into your live campaign.
+
+1. Tick the new ads.
+2. Click **Duplicate**.
+3. Choose the live campaign and ad set.
+4. Click **Duplicate** again.
 
 **Expected result:** Copies of the ads appear in the live ad set, still switched off.
 
@@ -241,7 +279,12 @@
 
 **Why this matters:** Reach potential is how many people an ad can reach before the same people see it twice on average (a frequency of 2). An ad with a tiny reach cannot grow, even if its cost per sale is great.
 
-**Step 1.** In Ads Manager open the **Ads** tab, set the date to **Last 7 days**, click **Columns > Customise columns**, tick **Reach** and **Frequency**, click **Apply**, then click the **Reach** column header to sort.
+**Step 1.** See which ads reach the most people.
+
+1. In Ads Manager, open the **Ads** tab.
+2. Set the date to **Last 7 days**.
+3. Click **Columns**, then **Customise columns**. Tick **Reach** and **Frequency** and click **Apply**.
+4. Click the **Reach** column header to sort.
 
 **Expected result:** You can see which ads reach many people and which reach few.
 
@@ -266,7 +309,7 @@
 
 **Expected result:** You know whether cold spend is still bringing new buyers.
 
-**Step 3.** Judge cold spend by your total MER trend on the Dashboard.
+**Step 3.** Judge cold spend by your total MER (total ad spend as a share of total sales) trend on the Dashboard.
 
 **Expected result:** You see the whole-store effect, not Meta's partial view.
 
@@ -283,7 +326,7 @@
 
 **Expected result:** Every campaign name shows Cold, Mixed, Warm or Hot.
 
-**Step 2.** Compare each campaign with the metrics and CPA allowance for its layer in the table below.
+**Step 2.** Compare each campaign with the metrics and CPA (ad cost for one sale) allowance for its layer in the table below.
 
 **Expected result:** You judge each campaign against the right benchmark.
 
@@ -309,7 +352,12 @@
 
 **Expected result:** You have a dollar limit that ends the challenge.
 
-**Step 3.** Each day, click the campaign (Advantage+) or ad set (manual) name, raise the **Daily budget** by 10 to 20%, click **Publish**, and note spend and reach in a sheet.
+**Step 3.** Each day, raise the budget a little.
+
+1. Click the campaign name (Advantage+) or the ad set name (manual).
+2. Raise **Daily budget** by 10 to 20%.
+3. Click **Publish**.
+4. Write today's spend and reach in your tracking sheet.
 
 **Expected result:** You can see whether new spend is finding new people.
 
@@ -317,7 +365,10 @@
 
 **Expected result:** MER has time to settle at each level.
 
-**Step 5.** Read the result: if spend grew much faster than reach, add new ads or loosen exclusions; if MER did not settle, go back a step and find out why.
+**Step 5.** Read the result.
+
+- Spend grew much faster than reach? Add new ads, or remove some exclusions.
+- MER (total ad spend as a share of total sales) didn't settle? Go back one budget step and find out why.
 
 **Expected result:** You have a clear next action, whether the challenge worked or not.
 
@@ -332,7 +383,7 @@
 
 **Expected result:** You can see how much of Meta's reported sales are likely extra sales.
 
-**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify and with your MER on the Dashboard.
+**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify and with your MER (total ad spend as a share of total sales) on the Dashboard.
 
 **Expected result:** You trust the store's numbers first and Meta's second.
 
@@ -379,7 +430,10 @@
 
 <!-- do:meta-connect -->
 
-**Step 2.** Decide your daily budget from your profit setup and Lesson 1.9. Under about $5,000 a month in sales: $20 to $50 a day for two weeks. Above that: about 2 times your break-even cost per purchase each day, kept inside your marketing % guide.
+**Step 2.** Pick your daily budget.
+
+- Selling under about $5,000 a month? Use $20 to $50 a day for two weeks.
+- Selling more? Use about 2 times your break-even cost per sale each day (Helix shows it in **Profit**), and stay inside your marketing % guide from Lesson 1.9.
 
 **Expected result:** You have one daily budget written down, for example $30 a day.
 
@@ -389,13 +443,20 @@
 
 **Expected result:** 3 to 5 files in a folder, plus one main text and one headline you can reuse.
 
-**Step 4.** Want Helix to build it? Click **Do it for me**. Helix creates the campaign, ad set and ads in your own ad account as a **paused** draft: nothing spends until you switch it on. Then skip to Step 9.
+**Step 4.** Want Helix to build it? Click **Do it for me**, then skip to Step 9.
+
+Helix makes the campaign, ad set and ads in your own ad account, switched off (paused). Nothing spends until you switch it on.
 
 **Expected result:** A paused campaign named by Helix appears in Ads Manager, with "Off" under **Delivery**.
 
 <!-- do:meta-draft -->
 
-**Step 5.** Building it yourself: in Ads Manager click **+ Create**, choose **Sales**, click **Continue**, keep **Advantage+ sales campaign** (or the **Advantage+ on** switch), name it "01-Sales-First" and click **Next**.
+**Step 5.** Building it yourself? Create the campaign.
+
+1. In Ads Manager, click **+ Create**.
+2. Choose **Sales** and click **Continue**.
+3. Keep **Advantage+ sales campaign** (or the **Advantage+ on** switch).
+4. Name it "01-Sales-First" and click **Next**.
 
 **Expected result:** The campaign settings page is open with Sales as the goal.
 
@@ -407,11 +468,20 @@
 
 **Expected result:** You are on the ad screen. If Meta shows a country box, set it to the countries you ship to.
 
-**Step 8.** Upload your 3 to 5 files (as separate ads, or using **Add media** where Meta offers several in one ad), paste your main text and headline, enter your product page link, and check the preview on the right on a phone layout.
+**Step 8.** Add your ads.
+
+1. Click **Add media** and upload your 3 to 5 images or videos.
+2. Paste your main text into **Primary text**.
+3. Paste your headline into **Headline**.
+4. Paste your product page link into **Website URL**.
+5. Look at the preview on the right and pick the phone view. Check nothing is cut off.
 
 **Expected result:** Every ad shows the right image or video, text and link, with nothing cut off.
 
-**Step 9.** Click **Publish** (bottom right). For a Helix draft, open it in Ads Manager, check the budget, ads and link, then switch its On/Off toggle on.
+**Step 9.** Go live.
+
+- Built it yourself? Click **Publish** (bottom right).
+- Helix built it? Open it in Ads Manager. Check the budget, the ads and the link. Then click its On/Off switch so it turns blue.
 
 **Expected result:** **Delivery** shows "In review", then "Learning" within a day.
 

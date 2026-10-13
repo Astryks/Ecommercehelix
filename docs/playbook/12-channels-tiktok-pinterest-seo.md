@@ -48,7 +48,11 @@
 
 **Expected result:** TikTok Events Manager shows Purchase events coming in.
 
-**Step 4.** In TikTok Ads Manager, set custom columns: spend, CPA, add to cart, cost per add to cart, CTR, CPC (cost per click), 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.
+**Step 4.** Make a simple view in TikTok Ads Manager.
+
+1. Click **Custom columns**.
+2. Tick: spend, CPA (ad cost for one sale), add to cart, cost per add to cart, CTR, CPC (cost per click), 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.
+3. Save it.
 
 **Expected result:** One saved view shows every number you need.
 
@@ -107,7 +111,7 @@
 
 **Expected result:** Growth comes from new creative and campaigns, not just more budget.
 
-**Step 5.** Judge TikTok by your total MER on the Dashboard, starting at about 10% of your total ad budget.
+**Step 5.** Judge TikTok by your total MER (total ad spend as a share of total sales) on the Dashboard, starting at about 10% of your total ad budget.
 
 **Expected result:** You see TikTok's effect on the whole store.
 
@@ -162,7 +166,7 @@
 
 <!-- do:calendar -->
 
-**Step 4.** Measure with a longer attribution window, counting sales after views and saves as well as clicks, and compare with your total MER.
+**Step 4.** Measure with a longer attribution window, counting sales after views and saves as well as clicks, and compare with your total MER (total ad spend as a share of total sales).
 
 **Expected result:** You judge Pinterest fairly for its slower decisions.
 

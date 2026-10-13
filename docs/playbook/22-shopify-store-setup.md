@@ -184,7 +184,7 @@
 
 **Expected result:** One product page shows every option.
 
-**Step 2.** Give each variant its own photo, price if different, SKU and stock count.
+**Step 2.** Give each variant its own photo, price if different, SKU (your code for each product version) and stock count.
 
 **Expected result:** Every variant is complete.
 
