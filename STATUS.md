@@ -201,15 +201,19 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 
 ## Next steps and blockers (in priority order)
 
-1. **Confirm live Stripe once.** Sid buys Helix Starter on production, checks the payment and plan update, then refunds and cancels. Also set Stripe public business name, support email and logo (option B) under Public details and Branding.
-2. **Meta developer app and verification (blocker for live ad data).** Unlocks automatic spend, ROAS and CTR on the metrics panel and live paused drafts.
-3. **Shopify sync.** Fills sessions, sales and add-to-cart automatically, so more course finish lines check themselves.
-4. **Course polish.** Course-specific Do it for me actions for the new Module 29 lessons; a weekly email that recaps the current goal; let owners pick a goal out of order; a finish-line history.
-5. **Google Ads connection** (not built): needs a Google Ads API developer token (apply in a manager account, basic access review), a Google Cloud OAuth client with the `adwords` scope and app verification, a manager (MCC) account to link customers, then sync of spend and conversions and paused-draft builds like Meta.
-6. **Decide when to switch off the demo login** on production.
-7. **Google sign-in** if wanted.
-8. **Google Ads, TikTok and Klaviyo connections** to replace example data.
-9. Answer the open questions below.
+_Updated 13 Oct 2026, 10:10 PM Sydney. Pick up here next session._
+
+1. **Google Ads (check in a few days).** Built and deployed; shows "coming soon" until the developer token is set.
+   - Check Explorer/Basic access status at https://console.cloud.google.com/google/ads-apis/overview?project=astryks (applied 13 Oct, under review). Manager account "E-commerce Helix" 965-774-7394.
+   - When approved: copy the developer token into Vercel Production as `GOOGLE_ADS_DEVELOPER_TOKEN` (stdin, never printed), redeploy, test connect with Sid's account.
+   - Record the demo video (consent flow, Helix web client, how Ads data is used), upload unlisted to YouTube, add on https://console.cloud.google.com/auth/scopes?project=astryks, then submit verification at https://console.cloud.google.com/auth/verification/submit?project=astryks. Scope justification already saved. Consent app name is "Astryks" (shared project `astryks`); branding verified and published.
+   - `GOOGLE_ADS_CLIENT_ID` / `GOOGLE_ADS_CLIENT_SECRET` are set; client JSON is in /home/box/.secrets/ on the box.
+2. **Meta "Save choice" fix** for the asset picker: confirm it's fixed, pick Sid's store ad account and Page, then refund his A$29 and give his account Starter free.
+3. **Shopify** is live (unlisted Dev Dashboard app 434903482369, org Astryks, version e-commerce-helix-1, `SHOPIFY_API_KEY`/`SECRET` set). APP_UNINSTALLED is registered per shop by code (`7e64baf`). Before any App Store listing: add compliance webhooks via `/workspace/shopify-app/shopify.app.toml` (needs a Shopify CLI login as support@astryks.com), turn on expiring offline tokens, add the privacy URL, and move protected customer data from Draft to submitted. Test a real store connect end to end.
+4. **AI** is live (Vercel AI Gateway free US$5 a month credit, `google/gemini-2.5-flash-lite`, per-plan caps, `AI_MONTHLY_BUDGET_USD`, `AI_DISABLED` kill switch). Watch usage on the Vercel AI Gateway page.
+5. **Not yet clicked through live:** saving the profit setup, finishing a card deck, running a store check, a live payment and refund.
+6. **Later:** Shopify order webhooks (near real time), `read_all_orders` for more than 60 days, Google draft ad groups, keywords and ads, GA4, TikTok, Klaviyo; course polish (weekly recap email, goal picking, finish-line history).
+7. Vercel connector lacks access to the astryks team; reconnect it with that team selected (the CLI works meanwhile).
 
 ## Waiting on Sid
 
