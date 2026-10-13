@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 /*
- * Helix design tokens: hand-drawn whiteboard. Paper #F2F1EC, ink #1A1718, one purple marker #6258DF
+ * Helix design tokens: hand-drawn whiteboard. Paper #F2F1EC, ink #1A1718, one purple marker #5A50D6
  * (sampled from Sid's reference). Old palettes (slate, cyan, violet, indigo, sky) are remapped here so
  * every page picks up the same set. Text pairings meet WCAG AA on paper and white.
  */
@@ -12,14 +12,14 @@
   --font-hand: var(--font-hand-accent), "Comic Sans MS", cursive;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* Semantic tokens: whiteboard paper, ink, one purple marker (sampled #6258DF). */
+  /* Semantic tokens: whiteboard paper, ink, one purple marker (sampled #5A50D6). */
   --color-paper: #f2f1ec;
   --color-paper-2: #e9e7e0;
   --color-ink: #1a1718;
   --color-ink-2: #2b2729;
   --color-mist: #f2f1ec;
-  --color-accent: #6258df;
-  --color-accent-ink: #4b42c9;
+  --color-accent: #5A50D6;
+  --color-accent-ink: #453CBF;
   --color-positive: #2f7359;
   --color-negative: #b4372f;
   --color-rule: #dedcd4;
@@ -43,9 +43,9 @@
   --color-cyan-200: #d2cff6;
   --color-cyan-300: #b0abef;
   --color-cyan-400: #8c86ea;
-  --color-cyan-500: #6258df;
-  --color-cyan-600: #5249d3;
-  --color-cyan-700: #4b42c9;
+  --color-cyan-500: #5A50D6;
+  --color-cyan-600: #4F46CC;
+  --color-cyan-700: #453CBF;
   --color-cyan-800: #3a3399;
   --color-cyan-900: #2e2880;
   --color-cyan-950: #1c184f;
@@ -76,21 +76,21 @@
   --color-violet-200: #d2cff6;
   --color-violet-300: #b0abef;
   --color-violet-400: #8c86ea;
-  --color-violet-500: #6258df;
-  --color-violet-600: #5249d3;
-  --color-violet-700: #4b42c9;
+  --color-violet-500: #5A50D6;
+  --color-violet-600: #4F46CC;
+  --color-violet-700: #453CBF;
   --color-violet-800: #3a3399;
   --color-violet-900: #2e2880;
   --color-indigo-50: #f3f2fd;
   --color-indigo-100: #e8e6fb;
-  --color-indigo-500: #6258df;
-  --color-indigo-600: #5249d3;
-  --color-indigo-700: #4b42c9;
+  --color-indigo-500: #5A50D6;
+  --color-indigo-600: #4F46CC;
+  --color-indigo-700: #453CBF;
   --color-sky-50: #f3f2fd;
   --color-sky-100: #e8e6fb;
-  --color-sky-500: #6258df;
-  --color-sky-600: #5249d3;
-  --color-sky-700: #4b42c9;
+  --color-sky-500: #5A50D6;
+  --color-sky-600: #4F46CC;
+  --color-sky-700: #453CBF;
 
   /* Soft reds for losses and alerts */
   --color-rose-50: #fcf1ef;
@@ -118,8 +118,8 @@ body {
 @layer base {
   h1, h2, h3, .font-display {
     font-family: var(--font-serif);
-    font-weight: 400;
-    letter-spacing: 0.005em;
+    font-weight: 700;
+    letter-spacing: -0.005em;
     line-height: 1.15;
   }
   h3.uppercase, h2.uppercase { font-family: var(--font-sans); font-weight: 700; letter-spacing: 0.12em; }
@@ -127,9 +127,9 @@ body {
 /* Big headings in the purple marker, except on dark panels. Unlayered so it wins over text-slate-900 utilities. */
 h1:not(.text-white):not(:where(.helix-glow, .bg-slate-900, .bg-slate-950) *),
 h2:not(.text-white):not(.uppercase):not(:where(.helix-glow, .bg-slate-900, .bg-slate-950) *) { color: var(--color-accent); }
-.font-display { font-family: var(--font-serif); font-weight: 400; }
+.font-display { font-family: var(--font-serif); font-weight: 700; }
 .font-hand { font-family: var(--font-hand); }
-.prose :where(h1, h2, h3, h4) { font-family: var(--font-serif); font-weight: 400; }
+.prose :where(h1, h2, h3, h4) { font-family: var(--font-serif); font-weight: 700; }
 .prose :where(h1, h2) { color: var(--color-accent); }
 .prose :where(a) { color: var(--color-accent-ink); }
 .tabular, .tbl td { font-variant-numeric: tabular-nums; }
@@ -138,7 +138,7 @@ a { text-underline-offset: 3px; }
 /* Dark ink panel with a faint purple glow */
 .helix-glow {
   background:
-    radial-gradient(70% 90% at 100% 0%, rgba(98, 88, 223, 0.28), transparent 60%),
+    radial-gradient(70% 90% at 100% 0%, rgba(90, 80, 214, 0.28), transparent 60%),
     var(--color-ink);
 }
 
@@ -148,7 +148,7 @@ a { text-underline-offset: 3px; }
   font-family: var(--font-serif);
   font-style: normal;
   padding-bottom: 0.12em;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 40 4, 80 10, 120 6 S 180 5, 198 7' fill='none' stroke='%236258DF' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") bottom left / 100% 0.32em no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M3 6 L197 6' fill='none' stroke='%235A50D6' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") bottom left / 100% 0.32em no-repeat;
 }
 :where(.helix-glow, .bg-slate-900) .grad-text { color: #b0abef; }
 
@@ -198,6 +198,6 @@ a { text-underline-offset: 3px; }
 .gloss:hover::after, .gloss:focus::after { opacity: 1; }
 
 /* Course: a small, quiet celebration when a goal is finished */
-.celebrate .confetti { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, #6258DF 2px, transparent 2.5px), radial-gradient(circle, #2f7359 2px, transparent 2.5px), radial-gradient(circle, #1A1718 1.5px, transparent 2px); background-size: 46px 46px, 62px 62px, 38px 38px; background-position: 0 0, 20px 14px, 9px 30px; opacity: 0; animation: helix-confetti 2.4s ease-out 1; }
+.celebrate .confetti { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, #5A50D6 2px, transparent 2.5px), radial-gradient(circle, #2f7359 2px, transparent 2.5px), radial-gradient(circle, #1A1718 1.5px, transparent 2px); background-size: 46px 46px, 62px 62px, 38px 38px; background-position: 0 0, 20px 14px, 9px 30px; opacity: 0; animation: helix-confetti 2.4s ease-out 1; }
 @keyframes helix-confetti { 0% { opacity: 0.9; transform: translateY(-24px); } 100% { opacity: 0; transform: translateY(24px); } }
 @media (prefers-reduced-motion: reduce) { .celebrate .confetti { animation: none; } }

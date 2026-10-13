@@ -85,7 +85,7 @@ export default async function Growth({ searchParams }: PageProps<"/dashboard/gro
         </div>
         <nav aria-label="Period" className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
           {GRAINS.map((x) => (
-            <Link key={x.id} href={`/dashboard/growth?g=${x.id}`} aria-current={grain === x.id ? "page" : undefined} className={`rounded-lg px-4 py-1.5 ${grain === x.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{x.label}{!paid && (x.id === "month" || x.id === "year") ? <span className="ml-1 text-[10px] font-bold text-[#6258DF]">PRO</span> : null}</Link>
+            <Link key={x.id} href={`/dashboard/growth?g=${x.id}`} aria-current={grain === x.id ? "page" : undefined} className={`rounded-lg px-4 py-1.5 ${grain === x.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{x.label}{!paid && (x.id === "month" || x.id === "year") ? <span className="ml-1 text-[10px] font-bold text-[#5A50D6]">PRO</span> : null}</Link>
           ))}
         </nav>
       </div>

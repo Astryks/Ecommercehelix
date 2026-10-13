@@ -21,7 +21,7 @@ export default async function ProfitPage({ searchParams }: PageProps<"/dashboard
     <div className="mx-auto max-w-6xl">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><PiggyBank className="h-7 w-7 text-[#6258DF]" aria-hidden /> Profit setup</h1>
+          <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><PiggyBank className="h-7 w-7 text-[#5A50D6]" aria-hidden /> Profit setup</h1>
           <p className="mt-1 max-w-2xl text-slate-600">Enter what one order costs you, layer by layer. Helix shows the profit you keep per order and per month, and uses it across your dashboard. About 5 minutes.</p>
         </div>
         {plain && <Link href={plain.href} className="btn-ghost"><BookOpen className="h-4 w-4" aria-hidden /> Sales, costs and profit in plain English</Link>}

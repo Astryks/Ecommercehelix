@@ -137,11 +137,11 @@ export function seriesFor(days: DayInput[], id: PeriodId, latest: string, s: Set
 export function costBreakdown(m: Metrics) {
   return [
     { name: "Product cost (COGS)", value: m.cogs, color: "#1A1718" },
-    { name: "Shipping", value: m.shipping, color: "#4B42C9" },
+    { name: "Shipping", value: m.shipping, color: "#453CBF" },
     { name: "Payment fees", value: m.fees, color: "#B0ABEF" },
-    { name: "Meta ads", value: m.t.adMeta, color: "#6258DF" },
+    { name: "Meta ads", value: m.t.adMeta, color: "#5A50D6" },
     { name: "Google ads", value: m.t.adGoogle, color: "#B0ABEF" },
-    { name: "TikTok ads", value: m.t.adTiktok, color: "#4B42C9" },
+    { name: "TikTok ads", value: m.t.adTiktok, color: "#453CBF" },
     { name: "Other ads", value: m.t.adOther, color: "#D2CFF6" },
     { name: "Other marketing", value: m.otherMarketing, color: "#8F8B84" },
     { name: "Fixed costs (share)", value: Math.max(0, m.fixedCosts), color: "#C9C6BD" },

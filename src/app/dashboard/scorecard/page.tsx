@@ -46,9 +46,9 @@ export default async function Scorecard() {
     { label: "Net revenue", value: $(dDay.netRevenue), sub: `Target ${$(dDay.revenueTarget)}`, flag: fDay.target, spark: series.map((s) => s.netRevenue), color: "#2B2729", delta: dPrev ? dDay.netRevenue - dPrev.netRevenue : null },
     { label: "Contribution profit", value: $(dDay.contribution), sub: `${pct(dDay.contributionPct)} of net revenue`, flag: fDay.contribution, spark: series.map((s) => s.contribution), color: "#2f7359", delta: dPrev ? dDay.contribution - dPrev.contribution : null },
     { label: "MER (ad spend / revenue)", value: pct(dDay.merPct), sub: `Target ${pct(settings.targetMerPct)}`, flag: fDay.mer, spark: series.map((s) => s.merPct), color: "#8C86EA", delta: null },
-    { label: "Blended CAC", value: $(dDay.blendedCac, 2), sub: `aCPA ${$(dDay.aCpa, 2)} · break-even CPA ${$(dDay.breakEvenCpa, 2)}`, flag: dDay.blendedCac <= dDay.breakEvenCpa ? "green" as const : dDay.blendedCac <= dDay.breakEvenCpa * 1.3 ? "amber" as const : "red" as const, spark: series.map((s) => s.blendedCac), color: "#4B42C9", delta: null },
+    { label: "Blended CAC", value: $(dDay.blendedCac, 2), sub: `aCPA ${$(dDay.aCpa, 2)} · break-even CPA ${$(dDay.breakEvenCpa, 2)}`, flag: dDay.blendedCac <= dDay.breakEvenCpa ? "green" as const : dDay.blendedCac <= dDay.breakEvenCpa * 1.3 ? "amber" as const : "red" as const, spark: series.map((s) => s.blendedCac), color: "#453CBF", delta: null },
     { label: "Orders · AOV", value: `${day.orders} · ${$(dDay.aov, 2)}`, sub: `CR ${pct(dDay.cr)} · RPV ${$(dDay.rpv, 2)}`, flag: null, spark: series.map((_, i) => last14[i].orders), color: "#1A1718", delta: null },
-    { label: "Variable cost ratio", value: pct(dDay.vcrPct), sub: `Break-even ROAS ${x(dDay.breakEvenRoas)}`, flag: fDay.vcr, spark: series.map((s) => s.vcrPct), color: "#6258DF", delta: null },
+    { label: "Variable cost ratio", value: pct(dDay.vcrPct), sub: `Break-even ROAS ${x(dDay.breakEvenRoas)}`, flag: fDay.vcr, spark: series.map((s) => s.vcrPct), color: "#5A50D6", delta: null },
   ];
 
   const rollRows: { label: string; get: (d: ReturnType<typeof derive>) => string; flag?: (d: ReturnType<typeof derive>) => "green" | "amber" | "red" }[] = [

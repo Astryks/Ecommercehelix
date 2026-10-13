@@ -59,26 +59,26 @@
 <text x="168" y="552" font-size="15" font-weight="700" fill="#1A1718">Ad set</text><text x="168" y="574" font-size="13" fill="#55514C">Budget, pixel and Purchase event, audience, placements</text>
 <rect x="192" y="604" width="580" height="64" rx="8" fill="#fff" stroke="#C9C6BD"/>
 <text x="208" y="630" font-size="15" font-weight="700" fill="#1A1718">Ad</text><text x="208" y="652" font-size="13" fill="#55514C">Video or image, main text, headline, link, Publish</text>
-<circle cx="892" cy="90" r="14" fill="#6258DF"/><text x="892" y="95" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<circle cx="892" cy="90" r="14" fill="#5A50D6"/><text x="892" y="95" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">1</text>
 <text x="916" y="90" font-size="15" font-weight="700" fill="#1A1718">Pick the right ad account</text><text x="916" y="112" font-size="13" fill="#55514C">Top left. Wrong account, wrong data.</text>
-<circle cx="892" cy="180" r="14" fill="#6258DF"/><text x="892" y="185" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<circle cx="892" cy="180" r="14" fill="#5A50D6"/><text x="892" y="185" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">2</text>
 <text x="916" y="180" font-size="15" font-weight="700" fill="#1A1718">Campaigns, Ad sets, Ads</text><text x="916" y="202" font-size="13" fill="#55514C">Three tabs, from big to small.</text>
-<circle cx="892" cy="270" r="14" fill="#6258DF"/><text x="892" y="275" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<circle cx="892" cy="270" r="14" fill="#5A50D6"/><text x="892" y="275" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">3</text>
 <text x="916" y="270" font-size="15" font-weight="700" fill="#1A1718">+ Create</text><text x="916" y="292" font-size="13" fill="#55514C">Starts a new campaign.</text>
-<circle cx="892" cy="360" r="14" fill="#6258DF"/><text x="892" y="365" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<circle cx="892" cy="360" r="14" fill="#5A50D6"/><text x="892" y="365" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">4</text>
 <text x="916" y="360" font-size="15" font-weight="700" fill="#1A1718">Columns</text><text x="916" y="382" font-size="13" fill="#55514C">Choose which numbers you see.</text>
-<circle cx="892" cy="450" r="14" fill="#6258DF"/><text x="892" y="455" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<circle cx="892" cy="450" r="14" fill="#5A50D6"/><text x="892" y="455" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">5</text>
 <text x="916" y="450" font-size="15" font-weight="700" fill="#1A1718">On/Off switch</text><text x="916" y="472" font-size="13" fill="#55514C">Blue is on and spending.</text>
-<circle cx="892" cy="540" r="14" fill="#6258DF"/><text x="892" y="545" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<circle cx="892" cy="540" r="14" fill="#5A50D6"/><text x="892" y="545" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">6</text>
 <text x="916" y="540" font-size="15" font-weight="700" fill="#1A1718">Delivery</text><text x="916" y="562" font-size="13" fill="#55514C">Active, Learning, Off or In review.</text>
-<circle cx="892" cy="630" r="14" fill="#6258DF"/><text x="892" y="635" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<circle cx="892" cy="630" r="14" fill="#5A50D6"/><text x="892" y="635" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">7</text>
 <text x="916" y="630" font-size="15" font-weight="700" fill="#1A1718">Results and cost per result</text><text x="916" y="652" font-size="13" fill="#55514C">Purchases and cost per purchase.</text>
-<circle cx="316" cy="84" r="11" fill="#6258DF"/><text x="316" y="88" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text>
-<circle cx="470" cy="132" r="11" fill="#6258DF"/><text x="470" y="136" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text>
-<circle cx="196" cy="166" r="11" fill="#6258DF"/><text x="196" y="170" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text>
-<circle cx="836" cy="166" r="11" fill="#6258DF"/><text x="836" y="170" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">4</text>
-<circle cx="150" cy="262" r="11" fill="#6258DF"/><text x="150" y="266" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">5</text>
-<circle cx="400" cy="232" r="11" fill="#6258DF"/><text x="400" y="236" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">6</text>
-<circle cx="520" cy="232" r="11" fill="#6258DF"/><text x="520" y="236" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">7</text>
+<circle cx="316" cy="84" r="11" fill="#5A50D6"/><text x="316" y="88" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<circle cx="470" cy="132" r="11" fill="#5A50D6"/><text x="470" y="136" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<circle cx="196" cy="166" r="11" fill="#5A50D6"/><text x="196" y="170" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<circle cx="836" cy="166" r="11" fill="#5A50D6"/><text x="836" y="170" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<circle cx="150" cy="262" r="11" fill="#5A50D6"/><text x="150" y="266" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<circle cx="400" cy="232" r="11" fill="#5A50D6"/><text x="400" y="236" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<circle cx="520" cy="232" r="11" fill="#5A50D6"/><text x="520" y="236" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">7</text>
 <text x="20" y="748" font-size="13" fill="#6B6760">Drawing, not a real screenshot. Labels on your screen may look a little different.</text>
 </svg>

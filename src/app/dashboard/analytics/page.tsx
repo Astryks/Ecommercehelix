@@ -68,7 +68,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
           <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
             {GROUPS.map((g) => (
               <Link key={g.id} href={`/dashboard/analytics?period=${g.id === "year" ? (meta.group === "year" ? period : "ytd") : g.id}`} aria-current={meta.group === g.id ? "page" : undefined}
-                className={`rounded-lg px-4 py-1.5 ${meta.group === g.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{g.label}{!paid && g.id === "year" ? <span className="ml-1 text-[10px] font-bold text-[#6258DF]">PRO</span> : null}</Link>
+                className={`rounded-lg px-4 py-1.5 ${meta.group === g.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{g.label}{!paid && g.id === "year" ? <span className="ml-1 text-[10px] font-bold text-[#5A50D6]">PRO</span> : null}</Link>
             ))}
           </div>
           {meta.group === "year" && (

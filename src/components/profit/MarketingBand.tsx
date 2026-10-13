@@ -15,7 +15,7 @@ export function MarketingBand({ marketingPct, monthlySales, breakEvenMerPct, exa
     <section aria-label="Marketing as a share of sales" className={`rounded-2xl border p-5 ${TONE[r.tone]}`}>
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h2 className="flex items-center gap-2 font-semibold text-slate-900"><Megaphone className="h-4 w-4 text-[#6258DF]" aria-hidden /> Marketing as a share of sales</h2>
+          <h2 className="flex items-center gap-2 font-semibold text-slate-900"><Megaphone className="h-4 w-4 text-[#5A50D6]" aria-hidden /> Marketing as a share of sales</h2>
           <p className="mt-0.5 text-xs text-slate-600">{g.title}. A guide, not a rule.{example ? " Shown with example data." : ""}</p>
         </div>
         <Link href={lessonLink("1.9")?.href ?? "/learn"} className="btn-ghost !px-3 !py-1.5 !text-xs"><BookOpen className="h-3.5 w-3.5" aria-hidden /> How much to spend</Link>

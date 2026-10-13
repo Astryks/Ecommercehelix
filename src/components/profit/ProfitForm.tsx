@@ -64,7 +64,7 @@ export function ProfitForm({ initial, action, saved }: { initial: ProfitInputs; 
               <li key={l.key} className="grid grid-cols-[9rem_1fr_5rem] items-center gap-2 text-sm" title={l.plain}>
                 <span className="text-slate-700">{l.label}</span>
                 <span className="relative h-6">
-                  <span className="absolute inset-y-0 rounded bg-[#6258DF]/80" style={{ left: bar(l.left), width: bar(l.cost) }} />
+                  <span className="absolute inset-y-0 rounded bg-[#5A50D6]/80" style={{ left: bar(l.left), width: bar(l.cost) }} />
                 </span>
                 <span className="text-right text-rose-700 tabular">-{money(l.cost)}</span>
               </li>

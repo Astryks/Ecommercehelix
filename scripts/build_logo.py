@@ -9,7 +9,7 @@ import cairosvg
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-PURPLE, INK, PAPER = "#6258DF", "#1A1718", "#F2F1EC"
+PURPLE, INK, PAPER = "#5A50D6", "#1A1718", "#F2F1EC"
 random.seed(7)
 
 def pt(x, y):  # rotate -40 degrees around the centre so the helix rises to the right

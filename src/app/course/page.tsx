@@ -47,7 +47,7 @@ export default async function CoursePage() {
                     <div className={`rounded-xl border px-4 py-3 ${p.status === "current" ? "border-cyan-300 bg-white shadow-sm" : p.status === "done" ? "border-emerald-200 bg-emerald-50/50" : "border-slate-200 bg-white/60"}`}>
                       <div className="flex flex-wrap items-baseline justify-between gap-2">
                         <Link href={`/course/goal/${p.goal.id}`} className={`font-semibold ${p.status === "locked" ? "text-slate-500" : "text-slate-900 hover:text-cyan-700"}`}>Goal {p.n}: {p.goal.title}</Link>
-                        <span className="text-xs text-slate-500">{p.days} days · {p.status === "done" ? "Done" : p.status === "current" ? "You are here" : "Locked"}{p.needs ? <span className="ml-1.5 rounded-full bg-[#6258DF]/10 px-2 py-0.5 font-semibold text-[#B85F1C]">{planName(p.needs)}</span> : p.goal.phase === "numbers" ? <span className="ml-1.5 rounded-full bg-emerald-50 px-2 py-0.5 font-semibold text-emerald-700">Free</span> : null}</span>
+                        <span className="text-xs text-slate-500">{p.days} days · {p.status === "done" ? "Done" : p.status === "current" ? "You are here" : "Locked"}{p.needs ? <span className="ml-1.5 rounded-full bg-[#5A50D6]/10 px-2 py-0.5 font-semibold text-[#B85F1C]">{planName(p.needs)}</span> : p.goal.phase === "numbers" ? <span className="ml-1.5 rounded-full bg-emerald-50 px-2 py-0.5 font-semibold text-emerald-700">Free</span> : null}</span>
                       </div>
                       <p className="mt-0.5 text-sm text-slate-600">Finish line: {p.goal.finishLine}</p>
                     </div>

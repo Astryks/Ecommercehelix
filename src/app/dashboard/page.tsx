@@ -168,7 +168,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
             <svg viewBox="0 0 36 36" className="h-11 w-11 -rotate-90" aria-hidden>
               <circle cx="18" cy="18" r="15.5" fill="none" stroke="#DEDCD4" strokeWidth="4" />
               <circle cx="18" cy="18" r="15.5" fill="none" stroke="url(#cs)" strokeWidth="4" strokeLinecap="round" strokeDasharray={`${(score / 100) * 97.4} 97.4`} />
-              <defs><linearGradient id="cs"><stop offset="0" stopColor="#448b6f" /><stop offset="1" stopColor="#6258DF" /></linearGradient></defs>
+              <defs><linearGradient id="cs"><stop offset="0" stopColor="#448b6f" /><stop offset="1" stopColor="#5A50D6" /></linearGradient></defs>
             </svg>
             <div><p className="text-xs text-slate-500">Compound score</p><p className="text-xl font-bold">{score}<span className="text-sm font-medium text-slate-400">/100</span></p></div>
           </div>
