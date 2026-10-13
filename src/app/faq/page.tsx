@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ConsultCta } from "@/components/ConsultCta";
+import { StartCta } from "@/components/StartCta";
 import { JsonLd } from "@/components/JsonLd";
 import { HOME_FAQ } from "@/lib/content/faq";
 import { FEATURES } from "@/lib/content/features";
@@ -10,7 +10,7 @@ import { faqLd, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "FAQ: E-commerce Helix Questions Answered",
-  description: "Answers to common questions about E-commerce Helix: who it is for, whether it is an agency, ad spend, platforms, pricing, AI balance and results.",
+  description: "Answers to common questions about E-commerce Helix: who it is for, whether it is an agency or consultant, ad spend, platforms, pricing, AI balance and results.",
   path: "/faq",
 });
 
@@ -35,7 +35,7 @@ export default function Faq() {
             </dl>
           </section>
         ))}
-        <ConsultCta />
+        <StartCta />
       </main>
       <SiteFooter />
       <JsonLd data={faqLd(ALL)} />

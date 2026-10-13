@@ -1,7 +1,7 @@
 /** Shared FAQ, shown on the home page and /faq (with FAQPage JSON-LD). */
 export const HOME_FAQ = [
   { q: "Who is Helix for?", a: "Helix is built for stores doing $10k to $100k a month that want to reach a $1M year, profitably. That is where it adds the most. It also works from your very first sale, and keeps helping as you scale toward $10M a year. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
-  { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
+  { q: "Is Helix an agency or a consultant?", a: "No. Helix is self-serve software that guides you to grow your store yourself. There are no calls or consultants. Your ad accounts, data and customers stay yours, and you approve every change." },
   { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds Meta campaigns inside your own ad account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. For Google Ads, and if you prefer to build it yourself, Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
   { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
   { q: "How does the AI balance work?", a: "Paid plans include a monthly AI allowance. Extra usage comes from a prepaid balance you top up. When it reaches $0, AI actions stop. You are never billed beyond what you loaded." },

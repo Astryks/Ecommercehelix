@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://ecommercehelix.com";
 export const SITE_NAME = "E-commerce Helix";
 export const SITE_DESCRIPTION =
-  "E-commerce Helix is growth software for online store owners: a daily profit dashboard, one clear growth task a day, Meta ads built as paused drafts, and email flows drafted for your approval.";
+  "E-commerce Helix is self-serve growth software for online store owners: a daily profit dashboard, one clear growth task a day, Meta ads built as paused drafts, and email flows drafted for your approval.";
 
 export const OG_IMAGE = { url: "/opengraph-image", width: 1200, height: 630, alt: "E-commerce Helix: grow your e-commerce business a little every day" };
 
@@ -31,7 +31,6 @@ export function organizationLd() {
     url: SITE_URL,
     logo: abs("/icon-512.png"),
     description: SITE_DESCRIPTION,
-    // TODO(Sid): add contactPoint, address/areaServed and sameAs (social profiles) once confirmed.
   };
 }
 
@@ -56,15 +55,19 @@ export function softwareLd() {
   };
 }
 
+/** Feature pages describe the software (self-serve), not a service. */
 export function serviceLd(s: { name: string; description: string; path: string; serviceType: string }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: s.name,
-    serviceType: s.serviceType,
+    "@type": "SoftwareApplication",
+    name: `${SITE_NAME}: ${s.name}`,
+    applicationCategory: "BusinessApplication",
+    applicationSubCategory: s.serviceType,
+    operatingSystem: "Web",
     description: s.description,
     url: abs(s.path),
-    provider: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    offers: { "@type": "Offer", price: "0", priceCurrency: "AUD", name: "Free" },
     audience: { "@type": "BusinessAudience", audienceType: "E-commerce business owners" },
   };
 }

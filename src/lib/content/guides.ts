@@ -80,54 +80,53 @@ Helix audits your store, ads and emails, then turns the biggest conversion fixes
   },
   {
     slug: "when-to-hire-an-ecommerce-consultant",
-    title: "When to Hire an E-commerce Consultant or Agency (and When Not To)",
-    description: "Should you hire an e-commerce growth consultant or agency? How to tell if you are ready, what to ask, how to judge results, and what you can do yourself first.",
-    h1: "When to hire an e-commerce consultant or agency, and when not to",
-    published: D, updated: D, features: ["daily-growth-plan", "profit-dashboard"],
+    title: "Do You Need an E-commerce Consultant? A Self-Serve Alternative",
+    description: "Thinking of hiring an e-commerce consultant or agency? See what you can do yourself first with a self-serve growth app: know your numbers, follow a daily plan and grow your store.",
+    h1: "Do you need an e-commerce consultant? A self-serve alternative",
+    published: D, updated: "2026-10-13", features: ["daily-growth-plan", "profit-dashboard"],
     body: `
-At some point most store owners wonder whether they should pay an e-commerce growth consultant or agency to take over. Sometimes that is the right call. Often it is too early, or the wrong kind of help. This guide helps you decide.
+At some point most store owners wonder whether they should pay an e-commerce consultant or agency to take over. Before you sign a retainer, it is worth knowing how much of the work you can do yourself, with the right guidance, for a fraction of the cost.
 
-## Signs you are ready for outside help
+## What owners usually hope outside help will do
 
-- **You know your numbers.** You can say what a customer is worth to you, what you can afford to pay for a sale, and what your margin is after all costs.
-- **The basics are in place.** Tracking works, your store converts reasonably, and you have core email flows running.
-- **Your time is the bottleneck.** You know what needs doing, but you cannot do it all and run the business.
-- **You have budget for both the fee and the work.** An agency fee is not the same as an ad budget or a stock budget. You need room for all three.
+- **Explain the numbers.** What a customer is worth, what you can afford to pay for a sale, and your margin after all costs.
+- **Set the priorities.** Which fix or campaign to do first, and what to ignore.
+- **Keep things moving.** A steady rhythm of tasks, instead of bursts of effort.
 
-## Signs it is too early
+All three can be learned and run by you. Software can show the numbers, rank the fixes and hand you one clear task a day.
 
-- You are not sure whether you make a profit on each order.
-- You hope someone else will "find" what works because you have not tested anything yet.
-- The fee would take money that should go into ads or stock.
+## Signs you can grow it yourself first
 
-In these cases, the most valuable thing you can do is learn the fundamentals yourself. They do not leave when a contract ends.
+- You are not yet sure whether you make a profit on each order.
+- You have not tested offers, ads or emails in a structured way.
+- A monthly fee would take money that should go into ads or stock.
 
-## Consultant, agency, freelancer or software?
+In these cases, the most valuable thing you can do is learn the fundamentals yourself. They stay with you and your business.
 
-- **Consultant:** strategy and advice. Best when you have a team to carry out the work.
-- **Agency:** strategy and execution, usually on a monthly retainer. Best when you need hands as well as heads.
-- **Freelancer:** a specific skill, such as ad buying, email or design.
-- **Software and courses:** a structured plan you carry out yourself, at a lower cost, while building your own skill.
+## Consultant, agency, freelancer or self-serve software?
 
-These are not mutually exclusive. Many owners learn the basics with a tool, then bring in a specialist for one channel once it is working.
+- **Consultant:** strategy and advice, usually charged by the hour or project.
+- **Agency:** strategy and execution, usually on a monthly retainer.
+- **Freelancer:** one specific skill, such as ad buying, email or design.
+- **Self-serve software:** a structured plan you carry out yourself, at a lower cost, while building your own skill and keeping full control.
 
-## Questions to ask before you hire
+## What a self-serve growth app should give you
 
-1. How will you measure success, and is it profit or only revenue?
-2. Who owns the ad accounts, email platform and data? (The answer should be: you.)
-3. What will you do in the first 30, 60 and 90 days?
-4. What do you need from me each week?
-5. How do I end the contract, and what do I keep?
+1. A profit view first, not just revenue.
+2. Your ad accounts, email platform and data stay yours.
+3. A clear plan for the next 30, 60 and 90 days.
+4. Short tasks with step-by-step instructions you can finish in minutes.
+5. Nothing changed in your store or ad accounts without your approval.
 
-Ask for examples you can verify, and be wary of guaranteed results. Nobody honest can promise them.
+Be wary of anyone, person or tool, who guarantees results. Nobody honest can promise them.
 
-## How to judge results once you hire
+## How to judge your own results
 
-Track the same numbers every week: revenue, ad spend, cost per sale against your break-even, returning customer rate and, above all, profit. Reports that are hard to check are a warning sign. If you understand the numbers yourself you can have a much better conversation with any partner. See [break-even ROAS explained](/guides/break-even-roas-explained).
+Track the same numbers every week: revenue, ad spend, cost per sale against your break-even, returning customer rate and, above all, profit. When you understand the numbers yourself, every decision gets easier. See [break-even ROAS explained](/guides/break-even-roas-explained).
 
-## A middle path
+## The self-serve alternative
 
-E-commerce Helix is not an agency. It is software that works like a growth expert by your side: a [daily growth plan](/features/daily-growth-plan), a [profit dashboard](/features/profit-dashboard), and tools that prepare work for your approval. If you already work with an agency, Helix helps you read their results with your own eyes.
+E-commerce Helix is self-serve software, not an agency or consultancy. It guides you to grow your store yourself: a [daily growth plan](/features/daily-growth-plan), a [profit dashboard](/features/profit-dashboard), and tools that prepare drafts inside the app for your approval. Start free and get your daily growth plan in a minute.
 `,
   },
   {

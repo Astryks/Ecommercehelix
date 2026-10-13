@@ -77,7 +77,7 @@ export const FEATURES: Feature[] = [
   {
     slug: "daily-growth-plan",
     name: "Daily e-commerce growth plan",
-    serviceType: "E-commerce growth coaching software",
+    serviceType: "E-commerce growth app",
     title: "E-commerce Growth Plan: One Clear Task a Day",
     description: "A daily e-commerce growth plan for store owners: one short lesson and one clear task a day, about 15 minutes, ordered for your stage from first sale to scaling.",
     h1: "A daily e-commerce growth plan, one 15-minute task at a time",
@@ -91,7 +91,7 @@ export const FEATURES: Feature[] = [
     guides: ["shopify-growth-checklist", "when-to-hire-an-ecommerce-consultant"],
     faq: [
       { q: "How long does the daily task take?", a: "About 15 minutes for the lesson and task, plus about two minutes to add yesterday's numbers." },
-      { q: "Is this an agency or a course?", a: "Neither exactly. Helix is software that works like a growth expert by your side: a course, a daily plan and tools that can prepare the work for your approval." },
+      { q: "Is this an agency, a consultant or a course?", a: "Neither. Helix is self-serve software that guides you to grow your store yourself: lessons, a daily plan and in-app tools that prepare drafts for your approval." },
     ],
   },
   {

@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-5">
         <div className="md:col-span-2">
           <Logo dark />
-          <p className="mt-4 max-w-sm text-sm leading-6">Grow your e-commerce business a little every day. A head of growth by your side that explains every step and only acts with your approval.</p>
+          <p className="mt-4 max-w-sm text-sm leading-6">Grow your e-commerce business a little every day. Self-serve growth software that guides you step by step and only acts with your approval.</p>
         </div>
         <div>
           <h3 className="text-sm font-semibold text-white">Product</h3>

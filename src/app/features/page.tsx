@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ConsultCta } from "@/components/ConsultCta";
+import { StartCta } from "@/components/StartCta";
 import { FEATURES } from "@/lib/content/features";
 import { pageMeta } from "@/lib/seo";
 
@@ -19,7 +19,7 @@ export default function Features() {
       <main className="mx-auto w-full max-w-6xl px-5 py-14">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Features", path: "/features" }]} />
         <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">E-commerce growth tools for store owners</h1>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">Helix is software that works like a growth expert by your side. It explains every step and only acts with your approval.</p>
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">Helix is self-serve software that guides you to grow your store yourself. It explains every step and only acts with your approval.</p>
         <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f) => (
             <li key={f.slug}>
@@ -31,7 +31,7 @@ export default function Features() {
           ))}
         </ul>
         <p className="mt-10"><Link className="font-medium text-cyan-800 hover:underline" href="/guides">Read the free guides for e-commerce owners</Link></p>
-        <ConsultCta />
+        <StartCta />
       </main>
       <SiteFooter />
     </>

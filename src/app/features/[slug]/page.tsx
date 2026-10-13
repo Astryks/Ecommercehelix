@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ConsultCta } from "@/components/ConsultCta";
+import { StartCta } from "@/components/StartCta";
 import { JsonLd } from "@/components/JsonLd";
 import { FEATURES, featureBySlug } from "@/lib/content/features";
 import { articleBySlug } from "@/lib/content/guides";
@@ -62,7 +62,7 @@ export default async function FeaturePage({ params }: PageProps<"/features/[slug
             {others.map((o) => <li key={o.slug}><Link className="text-cyan-800 underline" href={`/features/${o.slug}`}>{o.name}</Link></li>)}
           </ul>
         </section>
-        <ConsultCta />
+        <StartCta />
       </main>
       <SiteFooter />
       <JsonLd data={[serviceLd({ name: f.name, description: f.description, path, serviceType: f.serviceType }), faqLd(f.faq)]} />

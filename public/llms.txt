@@ -1,6 +1,6 @@
 # E-commerce Helix
 
-> E-commerce Helix (https://ecommercehelix.com) is growth software for e-commerce business owners. It audits your store, shows your real profit every morning, gives you one short lesson and one clear task a day (about 15 minutes), and can prepare the work for you, but nothing changes until you approve it. It is not an agency.
+> E-commerce Helix (https://ecommercehelix.com) is growth software for e-commerce business owners. It audits your store, shows your real profit every morning, gives you one short lesson and one clear task a day (about 15 minutes), and can prepare the work for you, but nothing changes until you approve it. It is self-serve software: not an agency or consultancy, with no calls or done-for-you services. Owners sign up and start free at https://ecommercehelix.com/start.
 
 Who it is for: online store owners, built mainly for stores doing about $10k to $100k a month that want to reach a $1M year profitably; it also works from the first sale. Plans: Free (A$0), Starter (A$29/month), Growth (A$59/month), each with a capped AI allowance and prepaid top-ups that stop at $0.
 
@@ -16,7 +16,7 @@ What works today: profit dashboard (manual or CSV numbers), Meta (Facebook and I
 
 ## Guides
 - [How to increase your e-commerce conversion rate](https://ecommercehelix.com/guides/how-to-increase-ecommerce-conversion-rate)
-- [When to hire an e-commerce consultant or agency](https://ecommercehelix.com/guides/when-to-hire-an-ecommerce-consultant)
+- [Do you need an e-commerce consultant? A self-serve alternative](https://ecommercehelix.com/guides/when-to-hire-an-ecommerce-consultant)
 - [Shopify growth checklist](https://ecommercehelix.com/guides/shopify-growth-checklist)
 - [How to reduce cart abandonment](https://ecommercehelix.com/guides/how-to-reduce-cart-abandonment)
 - [E-commerce SEO basics](https://ecommercehelix.com/guides/ecommerce-seo-basics)

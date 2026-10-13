@@ -15,21 +15,19 @@ _Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 
 **Done**
 - Root metadata: `metadataBase` is now always `https://ecommercehelix.com` (was the env var, falling back to localhost). Every public page has its own title, meta description, canonical, Open Graph and Twitter tags, and a generated 1200x630 share image (`/opengraph-image`). Sign-in is `noindex`.
-- JSON-LD: Organization and WebSite on every page; SoftwareApplication with the real A$0 / A$29 / A$59 offers and FAQPage on home; Service + FAQPage on each feature page; Article on each guide; BreadcrumbList on features, guides and FAQ; FAQPage on /faq.
+- JSON-LD: Organization and WebSite on every page; SoftwareApplication with the real A$0 / A$29 / A$59 offers and FAQPage on home; SoftwareApplication + FAQPage on each feature page; Article on each guide; BreadcrumbList on features, guides and FAQ; FAQPage on /faq.
 - New pages: `/features` plus 6 feature landing pages (profit-dashboard, daily-growth-plan, meta-ads, email-automation, black-friday-plan, store-audit); `/guides` plus 8 long-form guides; `/faq`. All facts are taken from the existing site copy, plans and docs. Each ends with a "Start free" call to action.
 - Internal links: header (Features, Guides), footer (all features, FAQ page), home "What Helix does / Free guides" section, related guides and features on every new page.
 - `robots.txt` (app/robots.ts): allows Googlebot, Bingbot, Google-Extended, GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Applebot, Applebot-Extended and `*`; blocks /dashboard, /course, /api/, /signin. `sitemap.xml` (app/sitemap.ts) lists 51 public URLs including all 29 Learn modules. `/llms.txt` summarises the business.
 - Checks: build, 170 tests, every sitemap URL has one H1, canonical and og:image, all 142 JSON-LD blocks parse, 87 internal links return 200.
 
-**Note on positioning.** The brief described a consulting business, but the site itself says Helix is software and "not an agency". Pages target "growth software/tools" and owner questions ("when to hire an e-commerce consultant"), not "agency/consultant" services. Amazon and marketplace growth is not offered on the site, so it is not targeted.
+**Positioning (Sid, 13 Oct).** E-commerce Helix is self-serve software that guides owners to grow their store. No consulting, no agency, no calls, no done-for-you service, and no location or ABN anywhere. CTAs are "Start free" and "Get your daily growth plan" (both go to /start, the onboarding behind sign-in). Feature pages use SoftwareApplication JSON-LD (not Service). The guide at `/guides/when-to-hire-an-ecommerce-consultant` is now "Do you need an e-commerce consultant? A self-serve alternative" (same URL, so no redirect). Site keywords target self-serve terms (e-commerce growth app, Shopify growth tool, DIY e-commerce marketing, e-commerce coach app, alternative to hiring an e-commerce agency). `locale en_AU` and A$ pricing stay; no address or areaServed. `/start` is not in the sitemap because signed-out visitors are redirected to sign-in.
 
 **For Sid**
-- Google Search Console: add the domain property `ecommercehelix.com` (DNS TXT in Vercel) and submit `https://ecommercehelix.com/sitemap.xml`.
+- Google Search Console: verification meta tag is in layout.tsx; submit `https://ecommercehelix.com/sitemap.xml`.
 - Bing Webmaster Tools: import from Search Console (covers Copilot and feeds ChatGPT search) and submit the sitemap.
-- Google Business Profile: only if E-commerce Helix has a business address or service area you want listed (it is online software, so this is optional).
-- Facts to fill in (left out on purpose, nothing invented): business contact email or phone, location / area served (prices are A$ but no location is stated), ABN or legal entity name, founder name and bio for About and Organization JSON-LD, social profile URLs (`sameAs`), any real customer results, testimonials or reviews (none are on the site, so none were added). Add them in `src/lib/seo.ts` (`organizationLd`) and on /about.
-- Consider: a real contact page or consult booking link if you want a "book a call" CTA (CTAs currently go to /start, which redirects to sign-in); `/start` is not in the sitemap because it redirects.
-- Later: more guides on owner questions, Australia-specific content if you serve Australia first, an Amazon/marketplace page only if Helix adds that.
+- Optional facts for Organization JSON-LD and /about (nothing invented): support email, founder name and bio, social profile URLs (`sameAs`), real customer results or reviews. Add them in `src/lib/seo.ts` (`organizationLd`).
+- Later: more guides on owner questions; an Amazon/marketplace page only if Helix adds that.
 
 ## What is new since 6 Oct 2026
 
@@ -192,7 +190,6 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 3. Wallet minimum top-up: $10 (recommended) or $5? Should unused credit ever expire?
 4. Free-tier abuse controls: is email verification plus one free store per domain enough, or do we require a card for audits beyond the first?
 5. Launch market: Australia first (GST-inclusive pricing in AUD?) or US first (USD, GST-free)?
-6. Keep or drop a human "done with you" review add-on for later?
 7. Brand voice: friendly coach, or crisp operator? Any words to avoid?
 8. Legal: terms of service and liability wording for approved bot actions on ad accounts and stores; who reviews?
 9. Meta and Google developer app approvals: who owns the business verification and app review submissions?

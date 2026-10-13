@@ -5,7 +5,7 @@ import { marked } from "marked";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ConsultCta } from "@/components/ConsultCta";
+import { StartCta } from "@/components/StartCta";
 import { JsonLd } from "@/components/JsonLd";
 import { ARTICLES, articleBySlug } from "@/lib/content/guides";
 import { featureBySlug } from "@/lib/content/features";
@@ -47,7 +47,7 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
             {more.map((o) => <li key={o.slug}><Link className="text-cyan-800 underline" href={`/guides/${o.slug}`}>{o.h1}</Link></li>)}
           </ul>
         </section>
-        <ConsultCta />
+        <StartCta />
       </main>
       <SiteFooter />
       <JsonLd data={articleLd({ title: a.title, description: a.description, path, published: a.published, updated: a.updated })} />

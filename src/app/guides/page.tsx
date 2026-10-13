@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ConsultCta } from "@/components/ConsultCta";
+import { StartCta } from "@/components/StartCta";
 import { ARTICLES } from "@/lib/content/guides";
 import { pageMeta } from "@/lib/seo";
 
@@ -30,7 +30,7 @@ export default function Guides() {
             </li>
           ))}
         </ul>
-        <ConsultCta />
+        <StartCta />
       </main>
       <SiteFooter />
     </>
