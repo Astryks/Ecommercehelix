@@ -244,3 +244,24 @@ Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h
 
 ## 13 Oct 2026: legal contact email
 - Legal pages now use support@astryks.com (mailto link). No placeholders left.
+
+## Launch readiness (13 Oct 2026)
+
+Checked about 5:05 PM Sydney against production deploy dpl_GicRmVUwEaJzEQSK9akXJAsLhMzo (commit 265448f, Ready). Commit 4c32c05 (legal email) landed during the check and deploys on its own.
+
+| Item | Status | Notes |
+| --- | --- | --- |
+| Git and deploy | Works | origin/main matched the live commit; clean tree apart from the legal-email worker's change, which was then pushed |
+| Public pages | Works | home, about, learn, a lesson (/learn/words), privacy, terms, data-deletion, signin: 200. /course and /start: 307 to sign-in (expected). No errors in recent runtime logs |
+| Sign-in email | Untested | Resend provider live, AUTH_RESEND_KEY and EMAIL_FROM set. No real send; no test inbox |
+| Stripe account | Works | charges and payouts enabled, name "E-commerce Helix", descriptor "E-COMMERCE HELIX", nothing currently due |
+| Stripe prices | Works | Starter A$29/mo and Growth A$59/mo, both active, live |
+| Stripe webhook | Works | /api/stripe/webhook enabled with 6 subscription and invoice events; no pending deliveries. No real payment events yet |
+| Checkout Session (live key) | Works | Live Starter session created (A$29) and expired straight away |
+| Billing portal | Works | Key has the permission (a missing-customer error, not a permission error). Portal config exists |
+| Real purchase and refund | Needs Sid | |
+| Meta env and connect route | Works | META_APP_ID, META_APP_SECRET, META_CONFIG_ID, META_PUBLIC set. /api/meta/connect redirects signed-out users to sign-in. The data-deletion callback rejects an empty POST with 400 |
+| Meta connect with a real account | Needs Sid | Plus app review and business verification |
+| Crons | Works | meta-sync daily, site-audit (store re-check) daily and seasonal-nudges weekly in vercel.json. CRON_SECRET set; unauthenticated cron call returns 401 |
+| Store check | Untested live | Only reachable when signed in. checkStore() was run locally against allbirds.com and returned 10 findings |
+| Legal pages | Needs Sid | Lawyer review |
