@@ -33,13 +33,15 @@ import { dayProgress } from "@/lib/progress";
 import { PLAN_RANK, planName } from "@/lib/plans";
 import { addDays, isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
+import { NextCardHero } from "@/components/cards/NextCardHero";
+import { userCards } from "@/lib/cards-user";
 import { markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
   const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers, diag] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id), getDiagnosis(u.id)]);
-  const [rawDays, goalData, course] = await Promise.all([getRawDays(u.id), goalsFor(u.id), getCourse(u.id)]);
+  const [rawDays, goalData, course, uc] = await Promise.all([getRawDays(u.id), goalsFor(u.id), getCourse(u.id), userCards(u.id)]);
   const today = isoDay();
   const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
   const adminSoon = adminDueSoon(today, acct.country, new Set(completions.map((c) => c.taskId)));
@@ -104,6 +106,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <p className="text-sm text-slate-500">{prettyDay(today)}</p>
           <h1 className="text-3xl font-bold tracking-tight">Today</h1>
         </header>
+        <NextCardHero uc={uc} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
             <span className="font-semibold text-slate-800">Your plan: week {st.week} of {st.total}</span>
@@ -174,6 +177,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           </div>
         </div>
       </header>
+      <div className="mt-6"><NextCardHero uc={uc} /></div>
 
       <Celebration view={course} />
       <GoalCard view={course} />

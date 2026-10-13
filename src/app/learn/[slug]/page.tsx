@@ -56,7 +56,7 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
           <div className="mt-6">
             {mod.sections.map((s, i) =>
               s.kind === "lesson" ? (
-                <LessonSteps key={s.lesson.id} lesson={s.lesson} />
+                <LessonSteps key={s.lesson.id} lesson={s.lesson} slug={slug} />
               ) : (
                 <article
                   key={i}

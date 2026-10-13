@@ -1,3 +1,4 @@
+import { LostButton } from "@/components/cards/LostButton";
 import { LegalLinks } from "@/components/legal/LegalLinks";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
@@ -44,6 +45,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
         </aside>
         <div className="min-w-0 flex-1 px-4 py-6 sm:px-8 lg:py-10">{children}</div>
       </div>
+      <LostButton />
     </div>
   );
 }

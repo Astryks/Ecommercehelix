@@ -349,6 +349,10 @@ model CourseState {
   confirmed   String   @default("") // goals the user confirmed themselves
   baselineAov Float    @default(0) // AOV when the current goal started (for "raise AOV by 10%")
   celebrate   String? // goal id just finished, cleared once the celebration is seen
+  cardDeck    String   @default("") // card player: current deck ("setup" or a lesson ref like "7.1")
+  cardIndex   Int      @default(0) // card player: card within that deck
+  cardDay     String   @default("") // YYYY-MM-DD of cardsToday
+  cardsToday  Int      @default(0) // cards moved past on cardDay
   updatedAt   DateTime @updatedAt
   user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
@@ -356,6 +360,7 @@ model CourseState {
 /// Profit setup: the unit costs behind profit per order (Goal 1 of the course).
 model ProfitSetup {
   userId            String   @id
+  productName       String   @default("") // what they sell, from the "I'm lost" walkthrough
   price             Float    @default(0)
   productCost       Float    @default(0)
   freightDuty       Float    @default(0)

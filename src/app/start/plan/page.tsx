@@ -20,7 +20,12 @@ export default async function StartPlan() {
       <div className="mx-auto max-w-3xl">
         <Link href="/"><Logo size={30} /></Link>
         <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700">Step 3 of 3 · your plan</p>
-        <div className="mt-2"><PersonalPlan s={st} storeUrl={acct.storeUrl} plan={acct.plan} /></div>
+        <section className="card mt-4 p-6">
+          <h2 className="font-hand text-2xl text-[#5A50D6]">Start with your first card</h2>
+          <p className="mt-1 text-[#1A1718]">Your plan becomes little cards, one tiny step each. The first ones help Helix understand your business.</p>
+          <Link href="/dashboard/cards" className="btn-primary mt-4 px-5 py-3">Open my first card</Link>
+        </section>
+        <div className="mt-6"><PersonalPlan s={st} storeUrl={acct.storeUrl} plan={acct.plan} /></div>
         <Link href="/dashboard" className="mt-6 inline-block text-sm font-semibold text-slate-600 hover:underline">Or go to Today</Link>
       </div>
     </main>

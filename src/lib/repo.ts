@@ -602,3 +602,31 @@ export async function saveDiagnosis(userId: string, d: import("./diagnosis").Dia
   const prev = await prisma.user.findUnique({ where: { id: userId }, select: { planStartedAt: true } });
   await prisma.user.update({ where: { id: userId }, data: { diagnosis: d as object, diagnosedAt: now, ...(!prev?.planStartedAt || restartPlan ? { planStartedAt: now } : {}) } });
 }
+
+// ---------- card player ----------
+export type CardState = { deck: string; index: number; day: string; today: number };
+const memCards = new Map<string, CardState>();
+const memNames = new Map<string, string>();
+
+export async function getCardState(userId: string): Promise<CardState> {
+  if (!hasDb) return memCards.get(userId) ?? { deck: "", index: 0, day: "", today: 0 };
+  const r = await prisma.courseState.findUnique({ where: { userId }, select: { cardDeck: true, cardIndex: true, cardDay: true, cardsToday: true } });
+  return { deck: r?.cardDeck ?? "", index: r?.cardIndex ?? 0, day: r?.cardDay ?? "", today: r?.cardsToday ?? 0 };
+}
+
+export async function saveCardState(userId: string, s: CardState) {
+  if (!hasDb) return void memCards.set(userId, { ...s });
+  const data = { cardDeck: s.deck, cardIndex: s.index, cardDay: s.day, cardsToday: s.today };
+  await prisma.courseState.upsert({ where: { userId }, create: { userId, ...data }, update: data });
+}
+
+export async function getProductName(userId: string): Promise<string> {
+  if (!hasDb) return memNames.get(userId) ?? "";
+  const r = await prisma.profitSetup.findUnique({ where: { userId }, select: { productName: true } });
+  return r?.productName ?? "";
+}
+
+export async function saveProductName(userId: string, name: string) {
+  if (!hasDb) return void memNames.set(userId, name);
+  await prisma.profitSetup.upsert({ where: { userId }, create: { userId, productName: name }, update: { productName: name } });
+}
