@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, CalendarClock, Check, CheckCircle2, ListPlus, Mail } from "lucide-react";
+import { ArrowRight, BookOpen, CalendarClock, Check, CheckCircle2, ChevronDown, ListPlus, Mail } from "lucide-react";
 import { addDays, prettyDay } from "@/lib/dates";
 import type { SeasonAlert } from "@/lib/seasons";
 import { BfcmTimeline, bfcmStageIndex } from "@/components/BfcmPlan";
@@ -43,8 +43,9 @@ export function SeasonalAlertCard({ alert, others, planAdded, done, addAction, d
   const show = open.slice(0, 3);
   const rest = sorted.filter((t) => !show.includes(t));
   const bfcm = alert.eventKey === "black-friday" && !alert.reviewing;
-  return (
-    <section id="season" aria-labelledby="season-h" className="overflow-hidden rounded-xl border border-orange-200 bg-white shadow-sm">
+  const compact = alert.eventKey === "black-friday";
+  const card = (
+    <section id={compact ? undefined : "season"} aria-labelledby="season-h" className={compact ? "overflow-hidden border-t border-slate-200 bg-white" : "overflow-hidden rounded-xl border border-orange-200 bg-white shadow-sm"}>
       <div className="bg-cyan-100 px-6 py-5 text-slate-950">
         <div className="flex flex-wrap items-center gap-2 text-xs font-bold">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/45 px-2.5 py-1"><CalendarClock className="h-3.5 w-3.5" aria-hidden /> Seasonal alert</span>
@@ -134,5 +135,17 @@ export function SeasonalAlertCard({ alert, others, planAdded, done, addAction, d
         <span className="inline-flex items-center gap-1.5"><Mail className="h-3.5 w-3.5" aria-hidden /> Helix also shows this in your weekly report.</span>
       </div>
     </section>
+  );
+  if (!compact) return card;
+  // Black Friday stays a calm one-line prompt on the dashboard; tap to see the full plan.
+  return (
+    <details id="season" className="group overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
+        <CalendarClock className="h-4 w-4 flex-none text-cyan-600" aria-hidden />
+        <span className="min-w-0 flex-1 truncate"><strong className="font-semibold text-slate-900">{countdown(alert)}.</strong> {planAdded ? `Prep plan: ${finished} of ${total} steps done.` : "A short prep plan is ready when you are."}</span>
+        <span className="inline-flex flex-none items-center gap-1 text-xs font-medium text-cyan-700">Show <ChevronDown className="h-3.5 w-3.5 transition-transform group-open:rotate-180" aria-hidden /></span>
+      </summary>
+      {card}
+    </details>
   );
 }

@@ -1,0 +1,34 @@
+{
+"11.1": {"intro": "Your email and text list is an audience you own. You can reach it for free, any time. Collect emails when ads are cheap, sell when ads are pricey.",
+ "steps": [
+  {"say": "In your email app, check how big your list is, and how many were active in the last 90 days.", "check": "You know how big your own audience is today.", "lost": "Find your list size. Write it down."},
+  {"say": "Set a list growth goal for the next quiet months. Example: +2,000 subscribers before October.", "check": "You have a written goal with a date.", "lost": "Write one number and one date."},
+  {"say": "Plan one list-building push (a better form, a competition, or lead ads) in a month when ads are cheap.", "check": "The push is in your calendar.", "lost": "Pick one month. Put \"list push\" in your calendar."}
+ ]},
+"11.2": {"intro": "A competition (giveaway) can add thousands of subscribers fast. The prize decides if you get future buyers or just prize hunters.",
+ "steps": [
+  {"say": "Read the four competition types in the lesson's table. Pick one.", "check": "You've chosen a type.", "lost": "Pick the first type in the table."},
+  {"say": "Choose a prize only your kind of customer wants: your own products, or an experience linked to them.", "check": "The prize will attract future buyers, not prize hunters.", "careful": "Never offer a general gadget like a phone or a gift card.", "lost": "Make the prize a bundle of your own products."}
+ ]},
+"11.3": {"intro": "A good competition has seven parts, from rules to checking who buys. The follow-up emails matter most.",
+ "steps": [
+  {"say": "Pick the type and prize. Check your local promotion rules (some places need a permit).", "check": "You know the competition is legal where you run it.", "lost": "Look up your local giveaway rules."},
+  {"say": "Build the entry form on a store page, and as a pop-up.", "check": "People can enter on your site two ways.", "lost": "Make the entry page first."},
+  {"say": "Make the content: a prize picture, a short video, and clear steps to enter.", "check": "The content is ready.", "lost": "Take one nice photo of the prize."},
+  {"say": "Run ads to broad audiences with a Leads campaign, or a Sales campaign that sends people to the entry page.", "check": "Ads are live and entries are coming in.", "lost": "Start one Leads campaign."},
+  {"say": "Set up a welcome flow for people who enter, with a small offer.", "check": "Every person who enters gets welcome emails.", "lost": "Turn on a welcome flow for entrants."},
+  {"say": "After the draw, announce the winner. Send everyone else a \"sorry you didn't win\" offer.", "check": "Non-winners get a reason to buy.", "lost": "Send one \"sorry you didn't win\" email."},
+  {"say": "Measure the cost per email, and how many entrants buy within 90 days.", "check": "You know if you should run another one.", "lost": "Divide ad spend by new emails. That's cost per email."}
+ ]},
+"11.4": {"intro": "Growing your list pays off most just before big sales, when ads get pricey. Start 6 to 10 weeks early.",
+ "steps": [
+  {"say": "Find the date 6 to 10 weeks before your next big sale. Start a list-growth push then.", "check": "The start date is in your calendar.", "lost": "Count back 8 weeks from your sale. Mark it."},
+  {"say": "Build an excitement page that teases the sale, with an early-access sign-up.", "check": "Visitors can join an early-access list.", "lost": "Make one page with an early-access form."}
+ ]},
+"11.5": {"intro": "Four simple moves grow your followers and customers alongside your list.",
+ "steps": [
+  {"say": "Put a small budget (like $5 to $10 a day) behind your best free Reels.", "check": "Your best free posts reach new people.", "lost": "Boost your best Reel for $5 a day."},
+  {"say": "Answer direct messages with helpful replies and product links.", "check": "Messages turn into sales.", "lost": "Reply to one message with a product link."},
+  {"say": "Turn on comment filters and blocked words. Team up with a brand whose products go well with yours.", "check": "Comments stay clean, and you reach a partner's audience.", "lost": "Turn on comment filters."}
+ ]}
+}
