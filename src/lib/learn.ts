@@ -9,7 +9,6 @@ import { lessonAction, type LessonAction } from "./lesson-actions";
 import { oldAnchorsFor } from "./lesson-alias";
 
 const DIR = path.join(process.cwd(), "docs", "playbook");
-const REPO = "https://github.com/Astryks/Ecommercehelix/blob/main/docs";
 
 export function slugify(text: string) {
   return text.toLowerCase().trim().replace(/<[^>]+>/g, "").replace(/[^\p{L}\p{N}\s-]/gu, "").replace(/\s/g, "-");
@@ -71,7 +70,7 @@ function linkUrl(href: string) {
   if (local) return `/learn/${local[1]}${local[2] ?? ""}`;
   if (/^\.\.\/glossary\.md(#.*)?$/.test(href)) return "/learn/words";
   if (/^stages\.md(#.*)?$/.test(href)) return "/learn#framework-h";
-  if (href.startsWith("../")) return `${REPO}/${href.replace(/^\.\.\//, "")}`;
+  if (href.startsWith("../")) return "/learn";
   return href;
 }
 

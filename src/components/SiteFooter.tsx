@@ -35,7 +35,6 @@ export function SiteFooter() {
             <li><Link className="hover:text-white" href="/privacy">Privacy</Link></li>
             <li><Link className="hover:text-white" href="/terms">Terms</Link></li>
             <li><Link className="hover:text-white" href="/data-deletion">Data deletion</Link></li>
-            <li><a className="hover:text-white" href="https://github.com/Astryks/Ecommercehelix">GitHub</a></li>
           </ul>
         </div>
       </div>
