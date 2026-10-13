@@ -117,14 +117,14 @@ export const FEATURES: Feature[] = [
     name: "E-commerce store audit and conversion rate optimisation",
     serviceType: "Conversion rate optimisation",
     title: "E-commerce Store Audit & Conversion Rate Optimisation",
-    description: "Paste your store link and Helix checks your store, ads and emails for the fixes most likely to make you money, then turns them into daily conversion tasks.",
+    description: "Paste your store link and Helix reads your home page and a product page, then lists the fixes most likely to make you money, quoting your own pages.",
     h1: "A store audit that turns into conversion fixes you can do today",
-    intro: "Paste your store link. Helix checks your store, ads and emails and finds the fixes that will make you the most money, then turns them into short daily tasks.",
+    intro: "Paste your store link. Helix reads your home page, a product page and your cart with plain page reads, no AI, and lists the top fixes, quoting what it saw.",
     sections: [
-      { h2: "What the audit looks at", body: ["The audit looks across the parts of your business that decide whether a visit becomes a sale: your offer, how much people trust the store, product pages, checkout, shipping thresholds and the emails that bring shoppers back."] },
+      { h2: "What the audit looks at", body: ["Page titles and descriptions, phone fit, page weight, product description length and photos, reviews near the price, shipping and returns messages, your free shipping amount against your typical price, express payments, email sign-up tools and tracking pixels seen in your page source."] },
       { h2: "From audit to action", body: ["Findings become tasks on your Today list, each with the reason and step-by-step instructions. A typical example: set a free-shipping amount a little above your average order."] },
     ],
-    plan: "Store check lessons are free to read.",
+    plan: "A one-off store check is on the Free plan. A monthly re-check that shows what changed is on Starter and Growth.",
     guides: ["how-to-increase-ecommerce-conversion-rate", "how-to-reduce-cart-abandonment", "ecommerce-seo-basics"],
     faq: [
       { q: "Does Helix change my store automatically?", a: "No. Helix never edits your store. It tells you what to fix and how." },

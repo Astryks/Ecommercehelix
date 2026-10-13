@@ -17,7 +17,7 @@ model User {
   image          String?
   createdAt      DateTime           @default(now())
   track          String             @default("growing") // "starting" | "growing"
-  country        String             @default("AU") // "AU" | "US", drives the calendar
+  country        String             @default("AU") // ISO 3166 alpha-2, drives the calendar and tax default
   salesTaxMode   String             @default("auto") // "auto" | "AU" | "NZ" | "UK" | "none": strip GST/VAT from sales
   onboardedAt    DateTime?
   isDemo         Boolean            @default(false) // created by the demo login; never linked to a real account
@@ -43,6 +43,10 @@ model User {
   profitSetup    ProfitSetup?
   progressEvents ProgressEvent[]
   stockSeeded    Boolean            @default(false) // example suppliers and stock added once
+  diagnosis      Json? // answers to the onboarding questions, plus the bottleneck and starting goal
+  diagnosedAt    DateTime?
+  planStartedAt  DateTime? // when the personal 12-week plan started
+  auditRuns      AuditRun[]
 }
 
 model Account {
@@ -377,4 +381,20 @@ model ProgressEvent {
   user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, at])
+}
+
+// One store check: plain server fetches of the home page, a product page and the cart, then heuristics.
+model AuditRun {
+  id         String    @id @default(cuid())
+  userId     String
+  url        String
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  ok         Boolean   @default(false)
+  findings   Json // Finding[]: quote, severity, fix, lesson link
+  facts      Json? // what was seen, used to compare month to month
+  error      String?
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
 }

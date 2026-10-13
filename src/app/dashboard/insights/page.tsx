@@ -1,4 +1,7 @@
-import { CalendarClock, RefreshCw } from "lucide-react";
+import { CalendarClock } from "lucide-react";
+import { StoreCheck } from "@/components/store-check/StoreCheck";
+import { auditRuns } from "@/lib/site-audit/run";
+import { isDemoUserId } from "@/lib/demo-auth";
 import { requireUser } from "@/lib/session";
 import { PLAN_RANK } from "@/lib/plans";
 import { UpgradePrompt } from "@/components/UpgradePrompt";
@@ -10,18 +13,15 @@ import { InsightCard } from "@/components/dashboard/InsightCard";
 import { Flag } from "@/components/dashboard/Flag";
 
 const SCHEDULE = [
-  ["Site crawl + checklist", "Weekly (Mon 4:00)"],
-  ["PageSpeed mobile + desktop", "Weekly"],
-  ["Shopify sales and funnel", "Daily 5:00"],
-  ["Meta ad insights", "Daily 5:30"],
-  ["Google Ads + search terms", "Daily 5:30"],
-  ["Email flows and revenue", "Daily 6:00"],
-  ["Instagram, TikTok, Facebook profiles", "Weekly"],
+  ["Store check", "Once on Free, monthly on Starter and Growth"],
+  ["Meta ad results", "Daily, when Meta is connected"],
+  ["Shopify, Google Ads, email, social", "Not connected yet"],
 ];
 
 export default async function Insights() {
   const u = await requireUser("/dashboard/insights");
-  const [acct, completions, approvals, live] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id)]);
+  const [acct, completions, approvals, live, runs] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), auditRuns(u.id, 2)]);
+  const demo = isDemoUserId(u.id);
   const done = new Set(completions.map((c) => c.taskId));
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
   const all = live.insights;
@@ -43,18 +43,19 @@ export default async function Insights() {
           </div>
           <p className="mt-1 max-w-3xl text-slate-600">Helix checks your store and your ads and tells you, in plain words, what is holding sales back: the ad, the page, the offer or the checkout. Fix the top one first. {open.length} open, {resolved} resolved. {live.signals.period}.{!live.metaLive && <> <Link className="text-cyan-700 underline" href="/dashboard/integrations">Connect Meta</Link> to use your own ad data.</>}</p>
         </div>
-        <button disabled title="Live audits are coming soon" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> Run audit now</button>
       </header>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
         <div className="space-y-5">
+          {!demo && <StoreCheck runs={runs} storeUrl={acct.storeUrl} canRecheck={paid} />}
+          {!demo && <h2 className="pt-2 text-lg font-semibold">Ads and funnel {live.metaLive ? "" : "(example data until Meta is connected)"}</h2>}
           {(paid ? open : open.slice(0, 3)).map((ins) => <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} />)}
           {!paid && open.length > 3 && <UpgradePrompt need="starter" forKey="dfm" title={`${open.length - 3} more fixes found`} body="Free shows your top 3 fixes. Starter shows every fix, with a step-by-step checklist for each." />}
           {open.length === 0 && <div className="card p-8 text-center text-slate-600">All clear. Helix will raise new insights after the next audit.</div>}
         </div>
         <aside className="space-y-6">
-          <section className="card p-5">
-            <h2 className="font-semibold">Site audit checklist</h2>
+          {demo && <section className="card p-5">
+            <h2 className="font-semibold">Site audit checklist (example)</h2>
             <ul className="mt-3 space-y-2.5">
               {SITE_CHECKLIST_EXAMPLE.map((c) => (
                 <li key={c.check} className="flex items-start gap-2 text-sm">
@@ -63,9 +64,9 @@ export default async function Insights() {
                 </li>
               ))}
             </ul>
-          </section>
+          </section>}
           <section className="card p-5">
-            <h2 className="font-semibold">Social presence checklist</h2>
+            <h2 className="font-semibold">Social presence checklist (example)</h2>
             <ul className="mt-3 space-y-2.5">
               {SOCIAL_CHECKLIST_EXAMPLE.map((c) => (
                 <li key={c.check} className="flex items-start gap-2 text-sm">
@@ -76,11 +77,11 @@ export default async function Insights() {
             </ul>
           </section>
           <section className="card p-5">
-            <h2 className="flex items-center gap-2 font-semibold"><CalendarClock className="h-4 w-4 text-cyan-700" aria-hidden /> Audit schedule</h2>
+            <h2 className="flex items-center gap-2 font-semibold"><CalendarClock className="h-4 w-4 text-cyan-700" aria-hidden /> What Helix checks, and when</h2>
             <ul className="mt-3 space-y-2 text-sm">
               {SCHEDULE.map(([k, v]) => <li key={k} className="flex justify-between gap-3"><span className="text-slate-700">{k}</span><span className="text-right text-slate-500">{v}</span></li>)}
             </ul>
-            <p className="mt-3 text-xs text-slate-500">Times are your store&apos;s local time. Connections to Shopify, Meta, Google, Klaviyo and social profiles are stubbed in this version.</p>
+            <p className="mt-3 text-xs text-slate-500">The store check reads your public pages only. It never logs in or changes anything.</p>
           </section>
         </aside>
       </div>
