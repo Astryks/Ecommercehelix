@@ -183,7 +183,7 @@ export async function importCsv(form: FormData) {
 export async function clearExamples() {
   const u = await requireUser();
   await clearExampleData(u.id);
-  revalidatePath("/dashboard/scorecard");
+  revalidatePath("/dashboard", "layout");
 }
 
 export async function addProduct(form: FormData) {

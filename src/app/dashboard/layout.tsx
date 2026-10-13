@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { NavLinks } from "@/components/dashboard/NavLinks";
 import { DemoBanner } from "@/components/DemoBanner";
+import { ExampleBanner } from "@/components/dashboard/ExampleBanner";
+import { NeedHelp } from "@/components/NeedHelp";
 import { DemoAccountNotice } from "@/components/DemoAccountNotice";
 import { isDemoUserId } from "@/lib/demo-auth";
 import { requireUser } from "@/lib/session";
@@ -28,6 +30,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
     <div className="min-h-screen bg-mist">
       <DemoBanner />
       {isDemoUserId(u.id) && <DemoAccountNotice />}
+      <ExampleBanner userId={u.id} />
       <div className="lg:flex lg:min-h-screen">
         <aside className="bg-ink px-4 lg:w-64 lg:flex-none">
           <div className="py-5 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col">
@@ -40,6 +43,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
             <p className="mt-3 text-xs"><span className="rounded-full bg-cyan-500 px-2 py-0.5 font-bold text-slate-950">{planName(acct.plan)}</span></p>
             <form action={out} className="mt-3"><button className="text-xs text-slate-400 underline hover:text-white">Sign out</button></form>
           </div>
+          <NeedHelp dark guidesHref="/dashboard/help" className="mt-3" />
           <LegalLinks className="mt-3 block px-2 pb-2 text-xs text-slate-400" />
           </div>
         </aside>

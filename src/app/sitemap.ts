@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/guides", 0.8),
     ...ARTICLES.map((a) => page(`/guides/${a.slug}`, 0.8, new Date(a.updated))),
     page("/faq", 0.7),
+    page("/help", 0.5),
     page("/about", 0.6),
     page("/privacy", 0.3),
     page("/terms", 0.3),

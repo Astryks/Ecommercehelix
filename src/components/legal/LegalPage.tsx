@@ -4,7 +4,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 export const LEGAL_UPDATED = "13 October 2026";
 /** Contact inbox for privacy, terms and deletion requests. */
-export const LEGAL_EMAIL = "support@astryks.com";
+export { SUPPORT_EMAIL as LEGAL_EMAIL } from "@/lib/support";
+import { SUPPORT_EMAIL as LEGAL_EMAIL } from "@/lib/support";
 
 export function Mail() {
   return <a className="break-all text-cyan-700 underline" href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>;
