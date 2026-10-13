@@ -254,9 +254,9 @@
 
 **Expected result:** A new Search campaign is open on its settings page.
 
-**Step 4.** Under **Bidding** choose **Target impression share** (about 90%, anywhere on the page, with a maximum cost per click of about $0.50 to $1), set a daily budget of $5 to $10, and untick **Search partners** and **Display Network**.
+**Step 4.** Under **Bidding** choose **Target impression share**, set **Anywhere on results page** to 90% and **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1, set a daily budget of $5 to $10, and untick **Search partners** and **Display Network**.
 
-**Expected result:** The brand campaign has a budget, Maximise conversions bidding and Search only.
+**Expected result:** The brand campaign has a $5 to $10 daily budget, Target impression share bidding with a capped cost per click, and runs on Search only.
 
 **Step 5.** In the ad group, add your store name and common misspellings as keywords, typed as `[your brand]` (exact) and `"your brand"` (phrase).
 
