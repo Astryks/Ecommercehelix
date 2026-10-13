@@ -82,7 +82,7 @@ export async function doItForMe(form: FormData) {
 /**
  * "Do it for me" on a Learn lesson or step. Steps tagged with a Meta draft or an
  * email flow reuse those actions; tool steps open the tool; anything else is
- * filed as a done-for-you request in "Waiting for your OK".
+ * filed as a checklist in "Waiting for your OK".
  */
 function lessonActionable(taskId: string, signals: Parameters<typeof findActionable>[1]): Actionable | null {
   const t = parseLessonTaskId(taskId);
@@ -97,9 +97,9 @@ function lessonActionable(taskId: string, signals: Parameters<typeof findActiona
   const steps = step ? [step] : lesson.steps;
   return {
     id: taskId,
-    title: step ? `Done for you: ${where}, step ${step.n}` : `Done for you: ${where}`,
+    title: step ? `Your checklist: ${where}, step ${step.n}` : `Your checklist: ${where}`,
     detail:
-      `You asked Helix to do this for you. Here is the plan. Nothing changes in your accounts until you approve, and we will tell you if we need access or a file from you.\n\n` +
+      `Here's your checklist. Helix can't do this one for you yet, so follow the steps and press Approve when it's done to mark it complete.\n\n` +
       steps.map((s) => `Step ${s.n}. ${plain(s.instruction)}\n   Done when: ${plain(s.expected)}`).join("\n") +
       `\n\nWhy: ${plain(lesson.why)}`,
     tier: "starter",

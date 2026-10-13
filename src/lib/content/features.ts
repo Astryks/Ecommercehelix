@@ -59,19 +59,19 @@ export const FEATURES: Feature[] = [
     name: "E-commerce email and SMS flows",
     serviceType: "E-commerce email marketing and retention",
     title: "E-commerce Email Flows: Abandoned Cart, Welcome & Retention",
-    description: "Set up the email and SMS flows that bring shoppers back: welcome, abandoned checkout and cart, post-purchase, win-back and VIP. Drafted in your voice, live only after you approve.",
-    h1: "Email and SMS flows that bring shoppers back, set up with your approval",
-    intro: "Email is usually the cheapest sale you will ever make, because the customer already knows you. Helix finds the flows your store is missing, drafts them in your brand voice and sets them up only after you say yes.",
+    description: "The email and SMS flows that bring shoppers back: welcome, abandoned checkout and cart, post-purchase, win-back and VIP. Full draft copy and timing, ready to paste into your email platform.",
+    h1: "Email and SMS flows that bring shoppers back, written and ready to paste",
+    intro: "Email is usually the cheapest sale you will ever make, because the customer already knows you. Helix lists the flows most stores need, with the timing, discount rules and every message written out, so you can paste them into Klaviyo or Shopify Email.",
     sections: [
       { h2: "The flows every store should have", body: ["Helix compares your setup against a core set of automated flows and suggests the ones you are missing, with the reason."], list: ["Welcome series for new subscribers", "Abandoned checkout and abandoned cart reminders", "Browse abandonment for undecided shoppers", "Post-purchase and review requests", "Replenishment for consumable products", "Win-back for lapsed customers", "VIP and loyalty for your best buyers"] },
-      { h2: "Suggest, draft, approve, set up", body: ["Each flow arrives in your approval queue with the messages, timing and discount rules. You edit, approve or reject. Discounts follow your offer rules, such as new customers only, and nothing goes live without your approval."] },
+      { h2: "Copy you paste, not a black box", body: ["Each flow comes with the trigger, the exit rule, the discount rule and every message. You copy it into your email platform and switch it on yourself. Helix does not connect to Klaviyo or Shopify Email yet."] },
       { h2: "Prefer to do it yourself?", body: ["Every flow can also be built by hand with the step-by-step email lessons in the Helix Playbook."] },
     ],
-    plan: "Drafting and setting up email and SMS flows is on the Growth plan. The email lessons are free to read.",
+    plan: "Ready-to-paste copy for all 9 flows is on the Growth plan. The email lessons are free to read.",
     guides: ["email-flows-every-store-needs", "how-to-reduce-cart-abandonment"],
     faq: [
-      { q: "Which email platforms does Helix work with?", a: "Helix is designed to set up flows in Klaviyo and to prepare content with a guided setup for Shopify Email and Shopify Flow. The Klaviyo connection is listed as coming next, so check the app for what is live today." },
-      { q: "Will Helix send emails to my customers without asking?", a: "No. Every flow starts as a draft and goes live only after you approve it." },
+      { q: "Which email platforms does Helix work with?", a: "Any platform you can paste into, such as Klaviyo or Shopify Email. Helix does not connect to them yet, so you set up the flow yourself using the copy and steps it gives you." },
+      { q: "Will Helix send emails to my customers without asking?", a: "No. Helix never sends emails. You switch flows on in your own email platform." },
     ],
   },
   {
@@ -85,13 +85,13 @@ export const FEATURES: Feature[] = [
     sections: [
       { h2: "Built around three stages: Attract, Convert, Grow", body: ["Attract brings the right people to your store with ads, creative, content and social. Convert turns visits into sales with a strong offer, a store people trust, a smooth checkout and emails that bring them back. Grow helps you keep more of every sale and scale it."] },
       { h2: "A course that matches your stage", body: ["Pick Just starting or Growing when you sign up. Helix is built for stores doing about $10k to $100k a month that want to reach a $1M year profitably, and it also works from your very first sale. Goals start with your profit dashboard and your numbers, then move through traffic, email list, add to cart, conversion and order value, then margin, returning customers and scaling."] },
-      { h2: "Do it yourself, or tap \"Do it for me\"", body: ["Every task has numbered steps and simple drawings. On paid plans you can ask Helix to prepare the work, and nothing changes until you approve it."] },
+      { h2: "Do it yourself, or tap \"Do it for me\"", body: ["Every task has numbered steps and simple drawings. On paid plans, Helix builds Meta campaigns for you as paused drafts. Everything else is a clear checklist you follow."] },
     ],
     plan: "The first goals are free. Attract and Convert goals are on Starter, and the full course, including Grow and Run goals, 90-day plans and team playbooks, is on Growth.",
     guides: ["shopify-growth-checklist", "when-to-hire-an-ecommerce-consultant"],
     faq: [
       { q: "How long does the daily task take?", a: "About 15 minutes for the lesson and task, plus about two minutes to add yesterday's numbers." },
-      { q: "Is this an agency, a consultant or a course?", a: "Neither. Helix is self-serve software that guides you to grow your store yourself: lessons, a daily plan and in-app tools that prepare drafts for your approval." },
+      { q: "Is this an agency, a consultant or a course?", a: "Neither. Helix is self-serve software that guides you to grow your store yourself: lessons, a daily plan and in-app tools, plus Meta campaigns built as paused drafts." },
     ],
   },
   {
@@ -122,12 +122,12 @@ export const FEATURES: Feature[] = [
     intro: "Paste your store link. Helix checks your store, ads and emails and finds the fixes that will make you the most money, then turns them into short daily tasks.",
     sections: [
       { h2: "What the audit looks at", body: ["The audit looks across the parts of your business that decide whether a visit becomes a sale: your offer, how much people trust the store, product pages, checkout, shipping thresholds and the emails that bring shoppers back."] },
-      { h2: "From audit to action", body: ["Findings become tasks on your Today list, each with the reason and step-by-step instructions. A typical example: set a free-shipping amount a little above your average order. On paid plans, Helix can prepare site edit drafts with a preview (beta) for your approval."] },
+      { h2: "From audit to action", body: ["Findings become tasks on your Today list, each with the reason and step-by-step instructions. A typical example: set a free-shipping amount a little above your average order."] },
     ],
-    plan: "A monthly site audit is on the Free plan. Site edit drafts (beta) are on Growth.",
+    plan: "Store check lessons are free to read.",
     guides: ["how-to-increase-ecommerce-conversion-rate", "how-to-reduce-cart-abandonment", "ecommerce-seo-basics"],
     faq: [
-      { q: "Does Helix change my store automatically?", a: "No. Helix suggests and prepares changes. Nothing changes until you approve it." },
+      { q: "Does Helix change my store automatically?", a: "No. Helix never edits your store. It tells you what to fix and how." },
     ],
   },
 ];

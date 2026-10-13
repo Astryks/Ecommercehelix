@@ -255,7 +255,7 @@ Track checkout completion rate and recovered revenue from your reminder flows ea
 - [The email flows every store needs](/guides/email-flows-every-store-needs)
 - [How to increase your e-commerce conversion rate](/guides/how-to-increase-ecommerce-conversion-rate)
 
-Helix finds missing reminder flows, drafts them in your brand voice and sets them up after you approve. See [email automation](/features/email-automation).
+Helix gives you ready-to-paste copy and timing for each reminder flow. See [email automation](/features/email-automation).
 `,
   },
   {

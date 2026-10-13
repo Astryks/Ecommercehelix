@@ -92,7 +92,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
     <div className="mx-auto max-w-7xl">
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
-          Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Your first audit is queued (live crawling is coming soon; Insights show example findings for now). Start with Day 1 below.
+          Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Start with your profit dashboard, then Day 1 below. Insights show example findings until your store check is live.
         </div>
       )}
       {!acct.onboarded && !sp.welcome && (

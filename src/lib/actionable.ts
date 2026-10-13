@@ -13,7 +13,7 @@ export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): 
     return {
       id,
       title: `${found!.track.id === "starting" ? "Just starting, day" : "Day"} ${day.day}: ${day.doIt.label}`,
-      detail: `Helix prepared "${day.title}". Here is the plan. Nothing goes live until you approve.\n\n` + day.steps.map((s, i) => `${i + 1}. ${s}`).join("\n"),
+      detail: `Here's your checklist for "${day.title}". Helix does not do these steps for you. Approving marks the task done.\n\n` + day.steps.map((s, i) => `${i + 1}. ${s}`).join("\n"),
       tier: day.doIt.tier,
       estAiCost: Math.round(day.minutes * 0.2) / 100 + 0.01,
     };
@@ -23,7 +23,7 @@ export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): 
       return {
         id,
         title: `Insight: ${ins.doIt.label}`,
-        detail: `${ins.title}\n\nEvidence:\n` + ins.evidence.map((e) => `- ${e.label}: ${e.value}${e.benchmark ? ` (${e.benchmark})` : ""}`).join("\n") + `\n\nHelix will:\n` + ins.fix.map((f, i) => `${i + 1}. ${f}`).join("\n"),
+        detail: `${ins.title}\n\nEvidence:\n` + ins.evidence.map((e) => `- ${e.label}: ${e.value}${e.benchmark ? ` (${e.benchmark})` : ""}`).join("\n") + `\n\nHere's your checklist:\n` + ins.fix.map((f, i) => `${i + 1}. ${f}`).join("\n"),
         tier: ins.doIt.tier,
         estAiCost: ins.doIt.estAiCost,
       };
@@ -32,7 +32,7 @@ export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): 
     return {
       id,
       title: "Build a cold test campaign in your Meta account (paused)",
-      detail: "Helix will create in your own ad account, all PAUSED:\n1. Campaign 03-Manual-Cold-Broad-Light-TEST-B16 (Sales, Purchase)\n2. One ad set: broad, AU, 18 to 65+, purchasers 180d excluded, suggested budget written into the draft\n3. Four ads with 3 primary texts, 3 headlines and UTMs\n\nNothing spends until you open Ads Manager and press Launch. Helix never changes budgets on live campaigns.",
+      detail: "Helix will create in your own ad account, all PAUSED:\n1. Campaign 03-Manual-Cold-Broad-Light-TEST-B16 (Sales, Purchase)\n2. One ad set: broad, your country, 18 to 65+, purchasers 180d excluded, suggested budget written into the draft\n3. Four ads with 3 primary texts, 3 headlines and UTMs\n\nNothing spends until you open Ads Manager and press Launch. Helix never changes budgets on live campaigns.",
       tier: "starter",
       estAiCost: 0.05,
     };
@@ -41,8 +41,8 @@ export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): 
     if (f)
       return {
         id,
-        title: `Set up the ${f.name.toLowerCase()} flow`,
-        detail: `Trigger: ${f.trigger}\nExit when: ${f.exitWhen}\nDiscount rule: ${f.discount}\n\nMessages:\n` + f.emails.map((e, i) => `${i + 1}. ${e.delay} · ${e.channel}${e.channel === "Email" ? ` · "${e.subject}"` : ""}\n   ${e.body}`).join("\n") + `\n\nOn approval Helix creates the templates and flow in your email platform as a draft, then switches it live after a final check.`,
+        title: `Copy for the ${f.name.toLowerCase()} flow`,
+        detail: `Trigger: ${f.trigger}\nExit when: ${f.exitWhen}\nDiscount rule: ${f.discount}\n\nMessages:\n` + f.emails.map((e, i) => `${i + 1}. ${e.delay} · ${e.channel}${e.channel === "Email" ? ` · "${e.subject}"` : ""}\n   ${e.body}`).join("\n") + `\n\nHelix will give you this copy to paste into your email platform. Helix does not connect to Klaviyo or Shopify Email yet, so you build and switch on the flow yourself.`,
         tier: f.tier,
         estAiCost: 0.02 * f.emails.length,
       };

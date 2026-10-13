@@ -10,7 +10,7 @@ import { faqLd, pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta({
   title: "FAQ: E-commerce Helix Questions Answered",
-  description: "Answers to common questions about E-commerce Helix: who it is for, whether it is an agency or consultant, ad spend, platforms, pricing, AI balance and results.",
+  description: "Answers to common questions about E-commerce Helix: who it is for, whether it is an agency or consultant, ad spend, platforms, pricing and results.",
   path: "/faq",
 });
 

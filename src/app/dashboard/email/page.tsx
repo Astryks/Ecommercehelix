@@ -22,7 +22,7 @@ export default async function EmailAutomation() {
             <h1 className="text-3xl font-bold tracking-tight">Email automation</h1>
             <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
           </div>
-          <p className="mt-1 max-w-3xl text-slate-600">Helix suggests the flows you are missing, drafts every message in your voice, and sets them up in Klaviyo or Shopify Email after you approve.</p>
+          <p className="mt-1 max-w-3xl text-slate-600">Every flow most stores need, with timing, discount rules and full copy to paste into Klaviyo or Shopify Email. Helix does not connect to them yet.</p>
         </div>
         <div className="flex gap-2">
           <button disabled title="Coming soon" className="btn-ghost text-xs">Connect Klaviyo</button>

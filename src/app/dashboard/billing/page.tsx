@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { PlanDetails } from "@/components/plans/PlanDetails";
 import { requireUser } from "@/lib/session";
 import { getAccount, getBilling } from "@/lib/repo";
 import { CURRENCY_LABEL } from "@/lib/billing";
@@ -40,22 +40,14 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
               <input type="hidden" name="plan" value={p.id} />
               <h2 className="text-lg font-semibold">{p.name}</h2>
               <p className="mt-1 text-3xl font-bold">{p.price === 0 ? "$0" : `${CURRENCY_LABEL}${p.price}`}<span className="text-sm font-medium text-slate-500">/mo</span></p>
-              <p className="mt-1 text-xs text-cyan-700">{p.aiAllowance}</p>
-              <ul className="mt-4 flex-1 space-y-2 text-sm">
-                {p.features.map((f) => <li key={f} className="flex gap-2"><Check className="mt-0.5 h-4 w-4 flex-none text-emerald-600" aria-hidden />{f}</li>)}
-              </ul>
+              <p className="mt-1 text-sm text-slate-600">{p.blurb}</p>
+              <PlanDetails p={p} />
               <button disabled={current} className={`mt-6 ${current ? "btn-ghost" : "btn-primary"}`}>{current ? "Current plan" : p.price === 0 ? "Switch to Free" : `Upgrade to ${p.name}`}</button>
             </form>
           );
         })}
       </div>
-      <section className="card mt-8 p-6">
-        <h2 className="font-semibold">AI balance</h2>
-        <p className="mt-1 text-3xl font-bold">${(acct.walletCents / 100).toFixed(2)}</p>
-        <p className="mt-2 text-sm text-slate-600">AI usage from a prepaid balance, stops at $0. Your plan allowance is used first, then this balance. No overage billing.</p>
-        <button disabled className="btn-ghost mt-4">Top up (coming soon)</button>
-        <p className="mt-2 text-xs text-slate-500">Plan prices are in Australian dollars (AUD). Moving to Free keeps your Meta connection and prep plans. Checkout: {stripe ? "Stripe test mode" : "not configured (demo)"}.</p>
-      </section>
+      <p className="mt-8 text-xs text-slate-500">Plan prices are in Australian dollars (AUD). Moving to Free keeps your Meta connection and prep plans. Checkout: {stripe ? "Stripe" : "not configured (demo)"}.</p>
     </div>
   );
 }

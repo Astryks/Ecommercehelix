@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { PlanDetails } from "@/components/plans/PlanDetails";
 import { PLANS } from "@/lib/plans";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl px-5">
         <p className="eyebrow">Pricing</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Less than one day of agency fees. Every month.</h2>
-        <p className="mt-3 max-w-2xl text-slate-600">Start free with a real profit dashboard and the first course goals. Upgrade when you want Helix to help you grow, step by step.</p>
+        <p className="mt-3 max-w-2xl text-slate-600">Start free with a real profit dashboard and the first course goals. Upgrade when you want a full growth plan and Meta set up for you as paused drafts.</p>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {PLANS.map((p) => (
             <div
@@ -22,24 +22,14 @@ export function Pricing() {
                 <span className="font-display text-5xl font-semibold tracking-tight">{p.price === 0 ? "$0" : `A$${p.price}`}</span>
                 <span className={p.highlight ? "text-slate-400" : "text-slate-500"}>/month</span>
               </p>
-              <p className={`mt-2 text-xs font-medium ${p.highlight ? "text-cyan-300" : "text-cyan-700"}`}>{p.aiAllowance}</p>
-              <ul className="mt-6 flex-1 space-y-3 text-sm">
-                {p.features.map((f) => (
-                  <li key={f} className="flex gap-2.5">
-                    <Check className={`mt-0.5 h-4 w-4 flex-none ${p.highlight ? "text-emerald-300" : "text-emerald-600"}`} aria-hidden />
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
+              <PlanDetails p={p} dark={!!p.highlight} />
               <Link href="/dashboard/billing" className={`mt-8 ${p.highlight ? "btn-primary" : "btn-ghost"}`}>
                 {p.price === 0 ? "Start free" : `Choose ${p.name}`}
               </Link>
             </div>
           ))}
         </div>
-        <p className="mt-8 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700">
-          <strong>AI usage from a prepaid balance, stops at $0.</strong> Each plan includes an AI allowance. If you want more, top up your balance. When it reaches $0, AI actions pause until you top up. No surprise bills, ever.
-        </p>
+        <p className="mt-8 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700"><strong>Plain and honest.</strong> Helix is self-serve software. It guides you step by step, and the only things it builds in your accounts are Meta campaigns as paused drafts. Nothing goes live until you press Launch.</p>
       </div>
     </section>
   );
