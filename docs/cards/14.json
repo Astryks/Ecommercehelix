@@ -1,0 +1,69 @@
+{
+"14.1": {"intro": "Your range is all the products you sell. Planning it puts your cash into products that earn.",
+ "steps": [
+  {"say": "Choose the categories that earn the most and fit your brand. Use last year's sales and margin by category.", "check": "You have a short list of focus categories.", "lost": "Find your top earning category."},
+  {"say": "Track every style in one table: launch date, units sold, sell-through % (share of stock sold), margin, and whether you'll reorder.", "check": "Every style has a row you update monthly.", "lost": "Make a table with your top 5 products."},
+  {"say": "Order small first runs of new styles. Reorder winners quickly.", "check": "New styles are tested with little cash at risk.", "lost": "Order a small amount of the next new thing."},
+  {"say": "Write a range plan: styles per category, price points, and how many are new versus core (always in stock).", "check": "You have a one-page range plan.", "lost": "List your core products."},
+  {"say": "Forecast core products from their sales history. Forecast new ones from similar past launches.", "check": "Each product has a forecast based on proof.", "lost": "Forecast your best seller from last year."}
+ ]},
+"14.2": {"intro": "A 10-minute weekly stock check stops two pricey mistakes: running out of a best seller, and stock that won't sell.",
+ "steps": [
+  {"say": "In Helix, open **Suppliers & stock**. Update on-hand and on-order counts for each product.", "check": "Counts are up to date this week.", "lost": "Update the count for your best seller."},
+  {"say": "Read weeks of cover: stock divided by units sold per week. Example: 60 in stock ÷ 15 a week = 4 weeks.", "check": "You know how long each product will last.", "lost": "Stock ÷ weekly sales = weeks left."},
+  {"say": "Grade products A, B or C. A items are the few that make most of your sales, B the middle, C the slow ones.", "check": "Every product has a grade.", "lost": "Mark your top sellers as A."},
+  {"say": "Note reorder dates. Flag products with too little cover (about to sell out) or too much (cash stuck on shelves).", "check": "You have a short list to reorder and a short list to clear.", "careful": "Don't push ads hard on a product that's about to sell out.", "lost": "Flag anything with under 4 weeks left."}
+ ]},
+"14.3": {"intro": "Stock ties up cash, and cash lets you grow. Five levers free it up: buy cheaper, better terms, pay later, lower risk, sell faster.",
+ "steps": [
+  {"say": "Read the five levers in the lesson's table. Pick the easiest one for this month.", "check": "You've chosen one lever.", "lost": "Pick \"pay later\". It's often the easiest."},
+  {"say": "Take one action on it. Example: ask your supplier for 30-day terms on the balance.", "check": "You've sent the request or made the change.", "lost": "Send your supplier one email asking for 30 days."}
+ ]},
+"14.4": {"intro": "A cash forecast shows how much money you'll have each month. Profit isn't the same as cash in the bank.",
+ "steps": [
+  {"say": "Make a spreadsheet with one column per month for the next 3 to 12 months.", "check": "You have a blank forecast.", "lost": "Make a sheet with 3 month columns."},
+  {"say": "For each month, add rows: starting cash, sales income, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.", "check": "Every month shows an ending cash number.", "lost": "Starting cash + money in − money out = ending cash."},
+  {"say": "Put some profit aside for tax every month. Ask your accountant how much.", "check": "Tax money sits in a separate account.", "lost": "Open a separate tax savings account."},
+  {"say": "Update the forecast on the first business day of each month.", "check": "A monthly reminder is set, and the forecast stays fresh.", "lost": "Set a reminder for the 1st of each month."}
+ ]},
+"14.5": {"intro": "Borrowing can speed you up or sink you. Only borrow when both checks pass.",
+ "steps": [
+  {"say": "Check the money will clearly earn more than it costs. Example: stock for a product that already sells well.", "check": "You can name what the money will earn.", "lost": "Will it earn more than it costs? Yes or no."},
+  {"say": "Check your cash forecast shows you could still pay it back in a bad month.", "check": "Repayments fit even in your worst month.", "careful": "Never borrow to cover losses.", "lost": "Look at your worst month. Could you still pay?"}
+ ]},
+"14.6": {"intro": "Good money habits make the numbers easy to see. Four habits do most of it.",
+ "steps": [
+  {"say": "Open a separate business bank account if you don't have one. Move all business money in and out through it.", "check": "Personal and business money never mix.", "lost": "Open a business bank account."},
+  {"say": "Pay yourself a set amount on the same day each month.", "check": "Your wage is steady and counted in fixed costs.", "lost": "Pick one pay day each month."},
+  {"say": "Book 15 minutes a week to look at your numbers in Helix.", "check": "A weekly money check is in your calendar.", "lost": "Add a 15-minute weekly reminder."},
+  {"say": "Once sales are bigger, or before raising money, think about a part-time finance expert (a fractional CFO).", "check": "You know when outside money help makes sense.", "lost": "Still small? Skip this for now."}
+ ]},
+"14.7": {"intro": "The year plan ties sales, stock and marketing together. Work backwards from monthly targets.",
+ "steps": [
+  {"say": "Find your growth rate. Compare the last 12 months of sales with the 12 months before (Dashboard, **Year** view). Example: $120,000 vs $100,000 is 20% growth.", "check": "You have a growth percentage.", "lost": "Open the **Year** view. Compare the two numbers."},
+  {"say": "Set a sales target for each month, including your big sales.", "check": "Twelve monthly targets are written down.", "lost": "Write next month's target first."},
+  {"say": "Work backwards from each month's target to the stock you need to buy and the ad budget.", "check": "Each month has a stock order and an ad budget.", "lost": "For next month, write the stock and ad budget."},
+  {"say": "Make a marketing calendar of launches, sales, events and themes. Review the plan every 6 months.", "check": "The calendar is filled and a 6-month review is booked.", "lost": "Book a review in 6 months."}
+ ]},
+"14.8": {"intro": "A good supplier makes a good product on time at a fair price, and tells you early about problems. Check carefully up front. Helix keeps supplier details on the Suppliers & stock page.",
+ "steps": [
+  {"say": "Write a one-page spec: materials, size, finish, packaging, certifications, and the landed cost you want.", "check": "Every supplier can quote against the same spec.", "lost": "Write the materials and size on one page."},
+  {"say": "Search supplier marketplaces, trade shows and industry lists. Ask other founders for introductions. Shortlist 3 to 5.", "check": "You have 3 to 5 options. Local makers cost more each but are quicker and have smaller minimums.", "lost": "Find 3 suppliers."},
+  {"say": "Ask each for their business licence (check it covers your product) and a live video tour of the production line. Or pay an inspection company to visit.", "check": "You know if each is a factory (makes it) or a trading company (buys from factories), and both are checked.", "lost": "Ask for a live video tour."},
+  {"say": "Order paid samples from at least 2 suppliers. Test them like a customer would for 1 to 2 weeks.", "check": "You have a winner, and can approve a signed \"golden sample\" that production must match.", "lost": "Order 2 samples. Use them for a week."},
+  {"say": "Ask what sets the MOQ (minimum order quantity). Lower it with fewer colours, a stock fabric, or a higher price per unit on the first run.", "check": "Your first order covers no more than 3 to 4 months of expected sales.", "careful": "Cash stuck in slow stock is the most common way growing stores run out of money.", "lost": "Ask: can I order fewer if I pick fewer colours?"},
+  {"say": "Get quotes on the same terms (like FOB: price with goods loaded at the port). Work out landed cost: unit price plus freight, duty and other costs (packaging, inspection, bank fees, broker).", "check": "Each supplier has a landed cost you can compare. Enter it as product cost in Helix.", "lost": "Unit price + freight + duty + extras = landed cost."},
+  {"say": "Agree payment terms from your own written terms of trade. A common first deal is 30% deposit, 70% before shipping. Pay by bank transfer to an account in the company's name.", "check": "Terms are in writing. You confirm any change of bank details by phone.", "lost": "Bank details changed? Phone them to check."},
+  {"say": "Write a quality checklist from the golden sample. Book an inspection before shipping for bigger orders. Count and spot-check every delivery with photos.", "check": "Problems are caught before you pay the balance or list the stock.", "lost": "Count every delivery. Take photos."},
+  {"say": "Share a code of conduct (fair pay, safe conditions, no forced or child labour) and your forecast. Review suppliers every year.", "check": "You have a written, long-term partnership.", "careful": "Watch the exchange rate when paying in US dollars. A few cents can change your margin.", "lost": "Send your supplier a code of conduct."}
+ ]},
+"14.9": {"intro": "Running out loses sales. Ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths.",
+ "steps": [
+  {"say": "Work out sales speed: average units a day over the last 4 to 8 weeks. Leave out sold-out days and big sale days.", "check": "You have units per day for each product.", "lost": "Units sold ÷ days = sales speed."},
+  {"say": "Find the lead time: days from paying the deposit to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
+  {"say": "Set safety days. Start with 14. Use more for long sea freight.", "check": "Each product has a buffer.", "lost": "Use 14."},
+  {"say": "In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.", "check": "Helix shows the reorder point (sales speed × (lead time + safety days)) and a countdown to each sell-out. Example: 3 a day × (45 + 14) days = 177 units.", "lost": "Enter the three numbers for your best seller."},
+  {"say": "When on-hand plus on-order falls to the reorder point, order enough for the lead time, safety days and the next 1 to 3 months. Order at least the supplier's minimum.", "check": "An alert shows on Today when it's time to order, and stock arrives before you run out.", "lost": "Alert on Today? Place the order."},
+  {"say": "For Black Friday and Christmas, work out the last safe order date: event date, minus lead time, minus about a week to receive and list.", "check": "Peak stock is ordered in time. Peak week often sells 2 to 4 times a normal week.", "lost": "Event date − lead time − 1 week = order by."}
+ ]}
+}
