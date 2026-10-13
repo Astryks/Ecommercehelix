@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LegalPage, Sec, LEGAL_EMAIL, OPERATOR } from "@/components/legal/LegalPage";
+import { LegalPage, Sec, Mail, OPERATOR } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = { title: "Terms of service | E-commerce Helix", description: "The terms for using E-commerce Helix.", alternates: { canonical: "/terms" } };
 
@@ -38,7 +38,7 @@ export default function Terms() {
         <p>You can stop at any time by deleting your account under Settings. We may close accounts that break these terms, and will give notice where we reasonably can.</p>
       </Sec>
       <Sec title="Law and contact">
-        <p>These terms are governed by the law of New South Wales, Australia, and the courts of New South Wales have jurisdiction. Questions: {LEGAL_EMAIL}.</p>
+        <p>These terms are governed by the law of New South Wales, Australia, and the courts of New South Wales have jurisdiction. Questions: <Mail />.</p>
       </Sec>
     </LegalPage>
   );

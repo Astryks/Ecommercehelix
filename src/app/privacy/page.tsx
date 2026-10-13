@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LegalPage, Sec, LEGAL_EMAIL, OPERATOR } from "@/components/legal/LegalPage";
+import { LegalPage, Sec, Mail, OPERATOR } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = { title: "Privacy policy | E-commerce Helix", description: "What E-commerce Helix collects, why, where it is kept and how to export or delete it.", alternates: { canonical: "/privacy" } };
 
@@ -60,7 +60,7 @@ export default function Privacy() {
         </ul>
       </Sec>
       <Sec title="Contact and complaints">
-        <p>Email {LEGAL_EMAIL}. We aim to reply within 30 days. If you are not happy with our answer, you can complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.</p>
+        <p>Email <Mail />. We aim to reply within 30 days. If you are not happy with our answer, you can complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.</p>
       </Sec>
       <Sec title="Changes">
         <p>If we change this policy we will update the date at the top, and tell you by email if the change is important.</p>

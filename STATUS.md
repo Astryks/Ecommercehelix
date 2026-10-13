@@ -237,7 +237,10 @@ Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h
 - Next: Sid connects his own ad account; publish privacy, terms and data deletion pages; Business Verification and App Review; then set META_PUBLIC=1 and switch the app to Live.
 
 ## 13 Oct 2026: legal pages
-- New /privacy, /terms, /data-deletion (drafts, need a lawyer's review; see docs/legal-pages.md). Contact email is a placeholder.
+- New /privacy, /terms, /data-deletion (drafts, need a lawyer's review; see docs/legal-pages.md). Contact email is support@astryks.com.
 - Meta data deletion callback: POST /api/meta/data-deletion (verifies signed_request with META_APP_SECRET, deletes that Facebook user's Meta data, returns url and confirmation_code).
 - Deleting an account now also revokes Meta access and cancels any Stripe subscription (best effort).
 - Links: site footer, sign-in, billing, dashboard sidebar, onboarding.
+
+## 13 Oct 2026: legal contact email
+- Legal pages now use support@astryks.com (mailto link). No placeholders left.

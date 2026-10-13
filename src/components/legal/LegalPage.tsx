@@ -3,8 +3,12 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const LEGAL_UPDATED = "13 October 2026";
-/** Contact inbox for privacy, terms and deletion requests. PLACEHOLDER until Sid confirms a real inbox. */
-export const LEGAL_EMAIL = "[contact email to be confirmed]";
+/** Contact inbox for privacy, terms and deletion requests. */
+export const LEGAL_EMAIL = "support@astryks.com";
+
+export function Mail() {
+  return <a className="text-cyan-700 underline" href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>;
+}
 export const OPERATOR = "Siddharth Mehta, a sole trader (ABN 74 309 712 800) in New South Wales, Australia";
 
 export function LegalPage({ title, intro, children }: { title: string; intro: string; children: ReactNode }) {

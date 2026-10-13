@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LegalPage, Sec, LEGAL_EMAIL } from "@/components/legal/LegalPage";
+import { LegalPage, Sec, Mail } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = { title: "Data deletion | E-commerce Helix", description: "How to delete your E-commerce Helix data, including data from Meta.", alternates: { canonical: "/data-deletion" } };
 
@@ -28,7 +28,7 @@ export default async function DataDeletion({ searchParams }: PageProps<"/data-de
         </ol>
       </Sec>
       <Sec title="Option 3: email us">
-        <p>Email {LEGAL_EMAIL} from the address you sign in with and ask us to delete your account. We will confirm within 30 days.</p>
+        <p>Email <Mail /> from the address you sign in with and ask us to delete your account. We will confirm within 30 days.</p>
       </Sec>
     </LegalPage>
   );
