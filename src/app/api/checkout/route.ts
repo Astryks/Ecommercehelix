@@ -32,6 +32,7 @@ export async function POST(req: Request) {
     ...(billing.customerId ? { customer: billing.customerId } : { customer_email: s.user.email ?? undefined }),
     metadata: { userId, plan },
     subscription_data: { metadata: { userId, plan } },
+    custom_text: { submit: { message: `This subscription renews automatically every month at the price shown until you cancel. Cancel any time in Plan & billing on E-commerce Helix; you keep paid features to the end of the month you paid for. Terms: ${base}/terms` } },
     success_url: `${base}/dashboard/billing?success=1`,
     cancel_url: `${base}/dashboard/billing?canceled=1`,
   });

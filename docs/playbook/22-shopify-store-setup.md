@@ -385,7 +385,7 @@
 
 ### Good to know
 
-> **General information, not legal advice.** Check your policies with a lawyer if you are unsure.
+> **General information, not legal advice.**
 
 **Step 5.** Create a sale terms page listing exclusions and dates.
 

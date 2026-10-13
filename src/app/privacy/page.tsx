@@ -2,68 +2,122 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPage, Sec, Mail, OPERATOR } from "@/components/legal/LegalPage";
 
-export const metadata: Metadata = { title: "Privacy policy | E-commerce Helix", description: "What E-commerce Helix collects, why, where it is kept and how to export or delete it.", alternates: { canonical: "/privacy" } };
+export const metadata: Metadata = { title: "Privacy policy | E-commerce Helix", description: "What E-commerce Helix collects, why, who helps us run it, where it is kept, how long, and your rights.", alternates: { canonical: "/privacy" } };
+
+const a = "text-cyan-700 underline";
 
 export default function Privacy() {
   return (
-    <LegalPage title="Privacy policy" intro={`E-commerce Helix ("Helix", "we") is run by ${OPERATOR}. This page explains, in plain English, what we collect, why, where it is kept and what you can do about it. We follow the Australian Privacy Principles in the Privacy Act 1988, and we aim to meet the GDPR and UK GDPR for people in Europe and the UK.`}>
+    <LegalPage title="Privacy policy" intro={`E-commerce Helix ("Helix", "we", "us") is run by ${OPERATOR}. This page explains in plain English what we collect, why, who helps us, where it is kept, how long we keep it and what you can do about it. We follow the Australian Privacy Principles (APPs) in the Privacy Act 1988 (Cth). If you are in the European Economic Area or the UK, we are the controller of your personal data under the GDPR and UK GDPR. If you are in California, the CCPA section below also applies.`}>
       <Sec title="What we collect">
         <ul className="list-disc space-y-2 pl-6">
-          <li><strong>Your sign-in details.</strong> Your email address (and your name and photo if you sign in with Google). Sign-in links are sent by email through Resend.</li>
+          <li><strong>Sign-in details.</strong> Your email address. If you sign in with Google, also your name and profile photo from Google. Sign-in links are emailed through Resend.</li>
           <li><strong>Your store link and store check results.</strong> If you give us your store link, Helix reads your public home page, one product page and robots.txt, and keeps the results and the fix list.</li>
-          <li><strong>The numbers you enter.</strong> Daily sales, orders, ad spend, costs, product and stock details, suppliers, goals and anything you upload by CSV.</li>
-          <li><strong>Your onboarding answers.</strong> Your country, revenue band and the answers to the quick questions.</li>
-          <li><strong>Your progress.</strong> Lessons and tasks you finish, plans, approvals and a log of actions in your account.</li>
-          <li><strong>Meta data, only if you connect Meta.</strong> See the next section.</li>
-          <li><strong>Billing status.</strong> Your plan, and the Stripe customer and subscription IDs. Not your card details.</li>
+          <li><strong>Business numbers you enter.</strong> Daily sales, orders, ad spend, costs, prices, product and stock details, suppliers, goals and anything you upload by CSV.</li>
+          <li><strong>Onboarding answers.</strong> Your country, revenue band and answers to the quick questions.</li>
+          <li><strong>Progress.</strong> Lessons, cards and tasks you finish, plans, approvals and a log of actions in your account.</li>
+          <li><strong>Meta data, only if you connect Meta.</strong> See below.</li>
+          <li><strong>Billing status.</strong> Your plan and your Stripe customer and subscription IDs. We never see or store your card number.</li>
+          <li><strong>Basic technical data.</strong> Our hosting provider processes IP addresses and request logs to deliver and protect the site.</li>
         </ul>
+        <p>We do not ask for sensitive information (such as health, religion or political views). Please do not enter it. You can use the public lessons without giving us anything.</p>
       </Sec>
+
       <Sec title="Meta (Facebook and Instagram) data">
-        <p>If you choose to connect Meta, you sign in with Facebook Login for Business and grant permissions on Meta&apos;s own screen. With those permissions Helix reads:</p>
+        <p>If you choose to connect Meta, you sign in with Facebook Login for Business and grant permissions on Meta&apos;s own screen. Helix then reads:</p>
         <ul className="list-disc space-y-2 pl-6">
           <li>your Facebook user ID and name,</li>
           <li>the ad accounts, Facebook Pages (and any linked Instagram account) and pixels you can access, so you can pick which ones to use,</li>
           <li>campaign results (spend, sales, cost per sale and similar insights), once a day.</li>
         </ul>
         <p>When you ask it to, Helix creates new campaigns in your ad account as paused drafts. It never switches on spend or changes live budgets.</p>
-        <p>Your Meta access token is encrypted (AES-256-GCM) before it is stored. It lasts about 60 days, after which Meta asks you to reconnect. You can disconnect at any time under Connections in Helix, which removes our access at Meta and deletes the token and synced data. You can also remove Helix in your Facebook settings under Business Integrations.</p>
-        <p>We use Meta data only to show you your results and build drafts for you. We do not sell it, share it with advertisers or data brokers, or use it to build profiles for anyone else, as Meta&apos;s Platform Terms require.</p>
+        <p>Your Meta access token is encrypted (AES-256-GCM) before it is stored. It lasts about 60 days, then Meta asks you to reconnect. Disconnect any time under Connections in Helix: we remove our access at Meta and delete the token and synced data. You can also remove Helix in Facebook under Business Integrations, and Meta tells us to delete your data.</p>
+        <p><strong>Meta Platform Terms.</strong> We use Meta data only to show you your own results and build drafts you asked for. We do not sell it, license it, share it with advertisers or data brokers, use it to build profiles of people, or use it for any purpose other than providing Helix to you.</p>
       </Sec>
-      <Sec title="Why we use it">
-        <p>To run the service you signed up for (your contract with us), to keep your account secure, to send sign-in links and service emails, and to bill paid plans. We do not send marketing emails without your consent.</p>
+
+      <Sec title="Google data">
+        <p>Google sign-in is optional. If you use it, Helix receives only your basic profile (email address, name and photo) to create and sign in to your account. Helix does not connect to Google Ads or any other Google account data today.</p>
+        <p><strong>Google API Services User Data Policy.</strong> Helix&apos;s use and transfer of information received from Google APIs follows the <a className={a} href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We use it only to sign you in, never for advertising, never sell it, and do not let people read it except with your permission, for security, or where the law requires.</p>
       </Sec>
-      <Sec title="No selling, no AI, no ad tracking">
-        <p>We do not sell or rent your data. Helix does not use AI today, so your data is not sent to any AI service. There are no analytics or advertising trackers on the site.</p>
-      </Sec>
-      <Sec title="Cookies">
-        <p>We only use cookies needed to run the site: a session cookie that keeps you signed in, and a short-lived security cookie during Meta sign-in. No tracking or advertising cookies.</p>
-      </Sec>
-      <Sec title="Who helps us run Helix">
+
+      <Sec title="Why we use it (and our legal bases)">
         <ul className="list-disc space-y-2 pl-6">
-          <li><strong>Vercel</strong> hosts the website and app.</li>
-          <li><strong>Neon</strong> hosts the database, in the United States (AWS us-east-1).</li>
-          <li><strong>Resend</strong> sends sign-in and service emails.</li>
-          <li><strong>Stripe</strong> handles payments. Card details go straight to Stripe and never touch our servers.</li>
-          <li><strong>Meta</strong>, only if you connect it.</li>
+          <li><strong>To provide Helix to you</strong>: your account, dashboard, lessons, store check and connections. GDPR basis: performance of our contract with you.</li>
+          <li><strong>To bill paid plans</strong> and keep tax records. Basis: contract and legal obligation.</li>
+          <li><strong>To keep Helix secure</strong> and prevent abuse. Basis: our legitimate interests in running a safe service.</li>
+          <li><strong>To send sign-in links and service emails</strong> (such as receipts and important changes). Basis: contract.</li>
+          <li><strong>Marketing emails</strong>: only with your consent, which you can withdraw at any time.</li>
         </ul>
-        <p>This means your data is stored and processed outside Australia, mainly in the United States. We pick providers that protect data to a standard similar to the Australian Privacy Principles, and rely on their standard contractual protections for European and UK data.</p>
       </Sec>
+
+      <Sec title="What we do not do">
+        <p>We do not sell or rent your personal information, and we do not share it for cross-context behavioural advertising. Helix does not use AI today, so your data is not sent to any AI service. There are no analytics or advertising trackers on the site. We do not make automated decisions that have legal or similarly significant effects on you.</p>
+      </Sec>
+
+      <Sec title="Cookies and local storage">
+        <p>We only use what is needed to run the site:</p>
+        <ul className="list-disc space-y-2 pl-6">
+          <li>a session cookie that keeps you signed in (and related security cookies used by our sign-in system),</li>
+          <li>a short-lived security cookie during Meta sign-in,</li>
+          <li>your browser&apos;s local storage to remember lesson ticks and card positions on your device.</li>
+        </ul>
+        <p>No tracking or advertising cookies, so there is no cookie banner. Clearing your browser data removes them; you will be signed out.</p>
+      </Sec>
+
+      <Sec title="Who helps us run Helix (subprocessors)">
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[32rem] text-left text-sm">
+            <thead><tr className="border-b border-slate-300"><th className="py-2 pr-4">Provider</th><th className="py-2 pr-4">What for</th><th className="py-2">Where</th></tr></thead>
+            <tbody className="divide-y divide-slate-200">
+              <tr><td className="py-2 pr-4 font-semibold">Vercel</td><td className="py-2 pr-4">Website and app hosting</td><td className="py-2">United States and global edge network</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Neon</td><td className="py-2 pr-4">Database</td><td className="py-2">United States (AWS us-east-1)</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Resend</td><td className="py-2 pr-4">Sign-in and service emails</td><td className="py-2">United States</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Stripe</td><td className="py-2 pr-4">Payments and subscriptions (card details go straight to Stripe)</td><td className="py-2">United States and other Stripe locations</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Meta</td><td className="py-2 pr-4">Only if you connect it: reading your ad results, creating paused drafts</td><td className="py-2">United States and other Meta locations</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Google</td><td className="py-2 pr-4">Only if you use Google sign-in</td><td className="py-2">United States and other Google locations</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </Sec>
+
+      <Sec title="Sending data overseas">
+        <p>Your data is stored and processed outside Australia, mainly in the United States. Under APP 8 we take reasonable steps so these providers protect it to a standard similar to the APPs. For data from the EEA or UK, we rely on our providers&apos; data processing terms, including the European Commission&apos;s Standard Contractual Clauses and the UK Addendum, or the EU-US Data Privacy Framework where a provider is certified.</p>
+      </Sec>
+
       <Sec title="How long we keep it">
-        <p>We keep your data while your account is open. When you delete your account, your data is deleted from our database straight away. Stripe keeps its own billing records as the law requires. Backups held by our database host roll off within their normal retention window.</p>
-      </Sec>
-      <Sec title="Your choices and rights">
         <ul className="list-disc space-y-2 pl-6">
-          <li><strong>See and export:</strong> Settings, then <em>Download my data</em>, gives you everything in one file.</li>
-          <li><strong>Correct:</strong> change your details and numbers in the app, or email us.</li>
-          <li><strong>Delete:</strong> Settings, then <em>Delete my account</em>. See <Link className="text-cyan-700 underline" href="/data-deletion">data deletion</Link> for every option.</li>
-          <li>If you are in Europe or the UK you can also object to or restrict our use of your data, and complain to your local data protection authority.</li>
+          <li><strong>Account data</strong>: while your account is open. When you delete your account, it is deleted from our database straight away.</li>
+          <li><strong>Meta data</strong>: until you disconnect Meta or delete your account. The token expires by itself after about 60 days.</li>
+          <li><strong>Billing records</strong>: Stripe keeps its own payment records for as long as the law requires.</li>
+          <li><strong>Backups and logs</strong>: held by our providers and removed within their normal retention windows.</li>
         </ul>
       </Sec>
-      <Sec title="Contact and complaints">
-        <p>Email <Mail />. We aim to reply within 30 days. If you are not happy with our answer, you can complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.</p>
+
+      <Sec title="Keeping it safe">
+        <p>All traffic uses HTTPS. Meta tokens are encrypted. No system is perfectly secure; if a data breach is likely to cause you serious harm, we will tell you and the OAIC as the Notifiable Data Breaches scheme requires (and EEA/UK regulators where the GDPR requires).</p>
       </Sec>
+
+      <Sec title="Your rights">
+        <ul className="list-disc space-y-2 pl-6">
+          <li><strong>Access and export:</strong> Settings, then <em>Download my data</em>, gives you everything in one file.</li>
+          <li><strong>Correct:</strong> change your details and numbers in the app, or email us.</li>
+          <li><strong>Delete:</strong> Settings, then <em>Delete my account</em>. See <Link className={a} href="/data-deletion">data deletion</Link> for every option.</li>
+          <li><strong>EEA and UK:</strong> you can also object to or restrict our use of your data, ask for portability, withdraw consent, and complain to your local data protection authority (in the UK, the ICO).</li>
+          <li><strong>California (CCPA):</strong> you can ask to know what personal information we collect, use and disclose, ask us to delete or correct it, and you will not be treated differently for using these rights. We do not sell or share personal information, so there is nothing to opt out of. The categories we collect are listed above: identifiers, commercial information about your subscription, internet activity on Helix, and business data you enter.</li>
+        </ul>
+        <p>Email <Mail /> from your sign-in address to use any right. We may need to confirm it is you. We reply within 30 days (or sooner where the law requires).</p>
+      </Sec>
+
+      <Sec title="Children">
+        <p>Helix is for business owners aged 18 or over. It is not directed at children, and we do not knowingly collect data from anyone under 18. If you think a child has given us data, email us and we will delete it.</p>
+      </Sec>
+
+      <Sec title="Complaints">
+        <p>Email <Mail /> first and we will try to fix it. If you are not happy with our answer, you can complain to the Office of the Australian Information Commissioner at <a className={a} href="https://www.oaic.gov.au">oaic.gov.au</a>, or your local data protection authority.</p>
+      </Sec>
+
       <Sec title="Changes">
-        <p>If we change this policy we will update the date at the top, and tell you by email if the change is important.</p>
+        <p>If we change this policy we will update the date at the top, and email you before an important change takes effect.</p>
       </Sec>
     </LegalPage>
   );

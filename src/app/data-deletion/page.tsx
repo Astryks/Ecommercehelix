@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalPage, Sec, Mail } from "@/components/legal/LegalPage";
 
 export const metadata: Metadata = { title: "Data deletion | E-commerce Helix", description: "How to delete your E-commerce Helix data, including data from Meta.", alternates: { canonical: "/data-deletion" } };
@@ -19,7 +20,7 @@ export default async function DataDeletion({ searchParams }: PageProps<"/data-de
           <li>Optional: click <strong>Download my data</strong> to keep a copy.</li>
           <li>Under <strong>Delete my account</strong>, type DELETE and click the button.</li>
         </ol>
-        <p>Everything in your account is deleted straight away. This also removes Helix&apos;s access to your Meta account and cancels any paid plan at Stripe.</p>
+        <p>Everything in your account is deleted from our database straight away. This also removes Helix&apos;s access to your Meta account and cancels any paid plan at Stripe immediately, so you are not charged again. Stripe keeps its own payment records as the law requires, and our providers&apos; backups roll off within their normal retention windows.</p>
       </Sec>
       <Sec title="Option 2: remove only your Meta data">
         <ol className="list-decimal space-y-2 pl-6">
@@ -28,7 +29,10 @@ export default async function DataDeletion({ searchParams }: PageProps<"/data-de
         </ol>
       </Sec>
       <Sec title="Option 3: email us">
-        <p>Email <Mail /> from the address you sign in with and ask us to delete your account. We will confirm within 30 days.</p>
+        <p>Email <Mail /> from the address you sign in with and ask us to delete your account. We will confirm within 30 days. We may ask you to confirm it is you.</p>
+      </Sec>
+      <Sec title="More about your data">
+        <p>Our <Link className="text-cyan-700 underline" href="/privacy">privacy policy</Link> explains what we keep, for how long and your other rights.</p>
       </Sec>
     </LegalPage>
   );

@@ -29,7 +29,8 @@ export function Pricing() {
             </div>
           ))}
         </div>
-        <p className="mt-8 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700"><strong>Plain and honest.</strong> Helix is self-serve software. It guides you step by step, and the only things it builds in your accounts are Meta campaigns as paused drafts. Nothing goes live until you press Launch.</p>
+        <p className="mt-6 text-sm text-slate-600">Prices in Australian dollars. Paid plans are monthly subscriptions that renew automatically until you cancel. Cancel any time in Plan &amp; billing; you keep paid features to the end of the month you paid for. See our <Link href="/terms" className="underline">Terms</Link>.</p>
+        <p className="mt-6 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700"><strong>Plain and honest.</strong> Helix is self-serve software. It guides you step by step, and the only things it builds in your accounts are Meta campaigns as paused drafts. Nothing goes live until you press Launch.</p>
       </div>
     </section>
   );

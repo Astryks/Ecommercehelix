@@ -237,7 +237,7 @@ Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h
 - Next: Sid connects his own ad account; publish privacy, terms and data deletion pages; Business Verification and App Review; then set META_PUBLIC=1 and switch the app to Live.
 
 ## 13 Oct 2026: legal pages
-- New /privacy, /terms, /data-deletion (drafts, need a lawyer's review; see docs/legal-pages.md). Contact email is support@astryks.com.
+- /privacy, /terms, /data-deletion (see docs/legal-pages.md). Contact email is support@astryks.com.
 - Meta data deletion callback: POST /api/meta/data-deletion (verifies signed_request with META_APP_SECRET, deletes that Facebook user's Meta data, returns url and confirmation_code).
 - Deleting an account now also revokes Meta access and cancels any Stripe subscription (best effort).
 - Links: site footer, sign-in, billing, dashboard sidebar, onboarding.
@@ -293,3 +293,11 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 - Lesson 20.4 Step 4 fixed (13 Oct ~6:40 PM): brand search uses Target impression share (90%, anywhere on results page) with a Maximum CPC bid limit of $0.50 to $1, the same as Lesson 8.12; the expected result now matches (it wrongly said Maximise conversions).
 - Dashboard: the seasonal Black Friday box is now a collapsed one-line prompt (countdown plus "A short prep plan is ready when you are" or "Prep plan: X of Y steps done") that expands on tap to the full plan. Other seasonal alerts are unchanged.
 - 13 Oct ~5:40 PM: brand-new account (helixtest+fresh1013b@mail.grokbot.com, magic link) first visit to /dashboard and /course returned 200 with no 5xx; the first-visit fix db4b450 is in the live deploy. Screenshots 30-*.png.
+
+## 13 Oct 2026 (~7:45 PM Sydney): legal pages hardened
+- /privacy: APPs, GDPR/UK GDPR controller, legal bases, rights, overseas transfers (APP 8, SCCs/UK Addendum/DPF), CCPA (no sale or share), subprocessor table (Vercel, Neon us-east-1, Resend, Stripe, Meta if connected, Google if used for sign-in), cookies and local storage, retention, breach notification, Meta Platform Terms and Google API Limited Use statements, under-18s, OAIC complaints.
+- /terms: operator Astryks (sole trader, NSW), no guarantee of results and not advice, 18+, A$29/A$59 monthly, auto-renewal, failed payments, cancel at period end and prorated plan changes (matches the Stripe portal config, checked in test mode), account deletion cancels immediately, ACL guarantees in the standard wording (not excluded), acceptable use, liability limited to the extent permitted by law, NSW law.
+- /data-deletion: Stripe records and backups noted, link to privacy.
+- Auto-renew notice added to the home pricing section, the billing page and Stripe Checkout (custom submit text with a link to /terms).
+- Removed "check with a lawyer" wording (legal pages, docs/legal-pages.md, Lesson 22.12 note).
+- For Sid: when Stripe goes live, check the live-mode customer portal also cancels at period end.
