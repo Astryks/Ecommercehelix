@@ -1,0 +1,33 @@
+{
+"17.1": {"intro": "AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business.",
+ "steps": [
+  {"say": "Make a project in your AI assistant (for example **Projects > New project**).", "check": "You have an empty project for your store.", "lost": "Click **New project**."},
+  {"say": "Upload your brand core (Module 4), customer profiles, offers, cost drivers (Module 1), how-you-do-things notes, and past winning ads and emails.", "check": "The project holds your business info.", "lost": "Upload your brand core first."},
+  {"say": "Update the files whenever something changes.", "check": "Answers stay up to date with your business.", "lost": "Changed a price? Update the file."}
+ ]},
+"17.2": {"intro": "A few jobs save the most time with AI. Always read and fix what AI writes before you use it.",
+ "steps": [
+  {"say": "Use AI for ads: hooks, scripts, briefs, ad text versions, picture layouts, resizing, and finding which parts of your ads win.", "check": "Your next batch of ads is drafted faster.", "lost": "Ask AI for 10 hooks."},
+  {"say": "Use AI for email: campaign drafts, subject lines and flow emails.", "check": "Email drafts take minutes, not hours.", "lost": "Ask AI for 5 subject lines."},
+  {"say": "Use AI for the website: section text, FAQs, landing page drafts, page checks, and digging into exported data when sales drop.", "check": "Site words and checks are quicker.", "lost": "Ask AI to draft 5 FAQs."},
+  {"say": "Use AI for admin: ad account naming, search term reviews, support replies, invoice entry and stock reports.", "check": "Admin work shrinks.", "lost": "Ask AI to draft one support reply."},
+  {"say": "Set up an AI support helper for \"where is my order?\" and common questions. It must hand anything sensitive to a person.", "check": "Simple questions get answered instantly.", "lost": "Start with \"where is my order?\" only."}
+ ]},
+"17.3": {"intro": "Connectors let AI read your data. Agents can take steps for you. Anything that changes something must be approved by a person.",
+ "steps": [
+  {"say": "Connect AI only through official integrations that follow platform rules.", "check": "AI can read your data without risking a policy flag.", "careful": "Unofficial automation tools on ad accounts can trigger policy flags or bans.", "lost": "Only use official connections."},
+  {"say": "Set every write action (anything that changes something) to need your approval.", "check": "Nothing changes in your accounts without your click.", "lost": "Turn on \"ask me first\"."}
+ ]},
+"17.4": {"intro": "AI is powerful, but it makes mistakes. These rules keep you safe.",
+ "steps": [
+  {"say": "Never paste passwords or access tokens into an AI chat.", "check": "Your logins stay private.", "lost": "No passwords in AI. Ever."},
+  {"say": "Check every claim AI writes, especially health and before-and-after claims.", "check": "Nothing false goes out under your name.", "lost": "Read it. Is every claim true?"},
+  {"say": "Label AI-made people and voices where rules need it. Report fakes of your content or face to the platform, with proof.", "check": "You follow the rules and protect your brand.", "lost": "Add an \"AI-made\" label where needed."}
+ ]},
+"17.5": {"intro": "Helix follows the same rules. Maths is always exact, Helix doesn't use AI today, and nothing changes without your OK.",
+ "steps": [
+  {"say": "Helix uses fixed rules for all maths (profit, MER, break-even). So the numbers are always exact.", "check": "You can trust every number on the Dashboard.", "lost": "Helix maths is fixed rules, not guesses."},
+  {"say": "Helix doesn't use AI today. If that changes, Helix will say exactly what the AI does and what it costs.", "check": "You know Helix's advice comes from plain rules you can check.", "lost": "No AI in Helix today."},
+  {"say": "Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on.", "check": "Every change in your accounts has your OK.", "lost": "Open **Waiting for your OK**."}
+ ]}
+}

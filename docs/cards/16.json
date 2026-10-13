@@ -1,0 +1,40 @@
+{
+"16.1": {"intro": "You're the most important part of the business. How you sleep, plan and handle messages shapes every decision.",
+ "steps": [
+  {"say": "Set a fixed bedtime and wake time for weekdays. Protect them.", "check": "You sleep about the same hours every night.", "lost": "Pick one bedtime. Stick to it this week."},
+  {"say": "Each week, block your focus time in the calendar first. Fit meetings around it.", "check": "Your calendar has protected focus blocks.", "lost": "Block one 2-hour focus slot."},
+  {"say": "Check messages at set times (like 9am, 1pm, 4pm). Turn off notifications you don't need.", "check": "You're not pulled away all day.", "lost": "Turn off one noisy notification."},
+  {"say": "Give every meeting an agenda, one owner and a decision.", "check": "Meetings end with a decision, often early.", "lost": "Write 3 agenda points for your next meeting."},
+  {"say": "Work in blocks of 25 or 45 minutes on one thing at a time.", "check": "You finish deep tasks without switching.", "lost": "Set a 25-minute timer. Do one thing."},
+  {"say": "Work out what your hour is worth (like target yearly profit ÷ working hours). Example: $100,000 ÷ 2,000 hours = $50 an hour. Hand off work worth less.", "check": "You have a list of tasks to hand off.", "lost": "Write one task someone else could do."},
+  {"say": "Say no to anything that doesn't help this cycle's priorities (Lesson 16.3).", "check": "Your week matches your priorities.", "lost": "Say no to one thing this week."}
+ ]},
+"16.2": {"intro": "A small daily and weekly rhythm keeps you on top of things in under an hour a week. The Helix routine is made for this.",
+ "steps": [
+  {"say": "Every day, do the Helix routine (update yesterday, read your profit, do one task), plus one focus block on your top priority.", "check": "Each day ends with your numbers in and one priority moved forward.", "lost": "Update yesterday's numbers in Helix."},
+  {"say": "Every Monday, spend 30 minutes planning the week: priorities, calendar and what to hand off.", "check": "A Monday planning slot is in your calendar.", "lost": "Add a 30-minute Monday slot."},
+  {"say": "Every Friday, spend 15 minutes looking at what worked and what didn't.", "check": "A Friday review slot is in your calendar.", "lost": "Add a 15-minute Friday slot."}
+ ]},
+"16.3": {"intro": "One or two priorities with real time behind them beat ten half-done projects.",
+ "steps": [
+  {"say": "Pick 1 or 2 priorities for the next six weeks.", "check": "You have one or two written priorities.", "lost": "Write your one big priority."},
+  {"say": "Block 8 to 12 hours a week for them.", "check": "The hours are in your calendar.", "lost": "Block 2 hours a day, 4 days a week."},
+  {"say": "Check progress every Friday. At the end of six weeks, review and pick the next priorities.", "check": "You have a weekly check and a review date at week six.", "lost": "Put a review in your calendar 6 weeks from now."}
+ ]},
+"16.4": {"intro": "Interruptions eat your time. Three quick questions decide what needs you now.",
+ "steps": [
+  {"say": "When interrupted, ask: can it be explained in one sentence? Am I the right person? Does it need doing now?", "check": "You can answer the three questions in seconds.", "lost": "Ask: does this need me, right now?"},
+  {"say": "If any answer is no, say no, hand it to someone else, or schedule it for later.", "check": "Only truly urgent things that are yours get your attention now.", "lost": "Not urgent? Put it in your calendar for later."}
+ ]},
+"16.6": {"intro": "Handling a disagreement well builds trust. Keep it about the issue, not the person.",
+ "steps": [
+  {"say": "Name the issue in one sentence. Then listen fully without interrupting.", "check": "Both sides feel heard.", "lost": "Say the problem in one sentence. Then listen."},
+  {"say": "Separate facts from feelings. Agree on the result you both want.", "check": "You have a shared goal.", "lost": "Ask: what do we both want?"},
+  {"say": "Write down who will do what by when. Follow up to check it happened.", "check": "There's a written agreement and a follow-up date.", "lost": "Write one line: who, what, by when."}
+ ]},
+"16.9": {"intro": "There are five ways to pay for growth. Running the business as if a buyer will check it one day keeps every door open.",
+ "steps": [
+  {"say": "List your funding options: profit put back in, longer supplier terms, inventory finance (loans for stock), revenue-based funding (pay back a share of sales), or selling shares (including crowdfunding).", "check": "You know which options fit your stage.", "lost": "Start with profit put back in."},
+  {"say": "Keep clean numbers, written processes, and customer data you own.", "check": "The business would pass a buyer's or lender's check.", "lost": "Write down one process you do every week."}
+ ]}
+}

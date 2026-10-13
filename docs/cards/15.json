@@ -1,0 +1,40 @@
+{
+"15.1": {"intro": "Selling to a country with no demand burns cash. A quick look at your own data shows where people already want your stuff.",
+ "steps": [
+  {"say": "In Shopify, open **Analytics > Reports > Sales by billing country** and **Sessions by country**. List your top 5 countries outside home for the last 12 months.", "check": "You have a ranked list of countries with orders and visits.", "lost": "Open **Sales by billing country**. Write the top 5."},
+  {"say": "Check how many people search for your type of product in each country (Google Keyword Planner, set to that country).", "check": "Each country has a monthly search number.", "lost": "Check search numbers for your top country."},
+  {"say": "Check if competitors already sell there, and where your social followers live (Instagram **Insights > Audience > Top locations**).", "check": "Each country has a note on competitors and followers.", "lost": "Open **Top locations** in Instagram."},
+  {"say": "Pick the country that already buys from you the most.", "check": "You have one first country to grow into.", "lost": "Circle the top country on your list."}
+ ]},
+"15.2": {"intro": "Costs change in a new country. Shipping, duties, taxes and exchange rates can turn a winner into a loss.",
+ "steps": [
+  {"say": "Work out landed cost for the new country: product cost, plus shipping there, import duties, taxes and exchange rate effects.", "check": "You have a cost per order for the new country.", "lost": "Product cost + shipping + duty + tax = landed cost."},
+  {"say": "Make a separate set of cost drivers for that country (like Lesson 1.2), including duties and import fees per order.", "check": "The new country has its own break-even ROAS and CPA.", "lost": "Copy your cost drivers. Add duties."}
+ ]},
+"15.3": {"intro": "Local prices in local money, rounded nicely, sell better than converted prices. Decide who pays duties up front.",
+ "steps": [
+  {"say": "In Shopify **Settings > Markets > [country] > Products and pricing**, set local prices in local money, rounded to normal prices (like 49 euros, not 47.83).", "check": "Shoppers there see clean local prices.", "lost": "Round your best seller's price to a nice number."},
+  {"say": "Choose delivered duty paid (DDP: duties are included in your price) in your Markets or shipping app settings.", "check": "Customers get no surprise bill at the door. That usually sells better.", "lost": "Turn on DDP."}
+ ]},
+"15.4": {"intro": "What sells at home may need small changes overseas.",
+ "steps": [
+  {"say": "Change sizing for the country (like US versus European sizes) on your size charts.", "check": "Size charts show local sizes.", "lost": "Add local sizes to one size chart."},
+  {"say": "Choose which products show first for that country, based on its seasons and tastes.", "check": "That country's home page shows the right products.", "lost": "Is it summer or winter there? Show those products."},
+  {"say": "Add the country's key dates and holidays to your calendar. Adjust messages and spelling.", "check": "Sales and words fit the local market.", "lost": "Add one local holiday to your calendar."}
+ ]},
+"15.5": {"intro": "How you ship overseas decides delivery time, cost and returns. There are three main ways.",
+ "steps": [
+  {"say": "Compare the three shipping options in the lesson's table for your first country.", "check": "You've picked ship from home, a local 3PL (warehouse company) or direct from the factory.", "lost": "Just starting? Ship from home."},
+  {"say": "Look up the country's duty threshold (orders below this value pay no duty) and the courier's fees per order for collecting duties and taxes.", "check": "You know the extra cost per order and added it to your cost drivers.", "lost": "Find the duty threshold for your country."}
+ ]},
+"15.6": {"intro": "One store with Markets settings is simpler. Start there.",
+ "steps": [
+  {"say": "Set up the new country in Shopify **Settings > Markets** on your current store.", "check": "The country is live as a market on your main store.", "lost": "Open **Settings > Markets**. Add the country."},
+  {"say": "Only open a separate store if the products, prices, content or apps must be very different.", "check": "You run one store unless there's a clear reason not to.", "lost": "Keep one store for now."}
+ ]},
+"15.7": {"intro": "Each country needs its own report. Otherwise a strong country can hide a weak one.",
+ "steps": [
+  {"say": "Make a report showing MER by country (ad spend divided by sales, for each country).", "check": "You can see which countries make a profit.", "lost": "Ad spend ÷ sales for one country."},
+  {"say": "Either start a separate campaign per country once spend allows, or run one worldwide campaign to find demand, then give winning countries their own.", "check": "Each strong country has its own campaign and budget.", "lost": "Give your best country its own campaign."}
+ ]}
+}
