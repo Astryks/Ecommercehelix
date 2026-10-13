@@ -1,13 +1,13 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 9:10 PM (Sydney)._
+_Last updated: 13 Oct 2026, about 9:45 PM (Sydney)._
 
 ## At a glance
 
 - **Live:** https://ecommercehelix.com (Vercel project `ecommercehelix`, Next.js 16). `www` redirects to the apex. Every push to `main` on GitHub (`Astryks/Ecommercehelix`) deploys to production.
 - **Database:** Neon Postgres via Prisma. Schema changes are additive only and are applied to the production database before the code is pushed. Note: this build machine cannot reach Neon's port 5432, so changes are applied with `prisma migrate diff` (old schema to new schema, no drops allowed) run over Neon's HTTPS driver with the unpooled URL pulled from Vercel into a temp file that is deleted straight after.
 - **Sign-in:** Resend email magic links are live. The demo login is on (each demo sign-in is a fresh, isolated test account). Google sign-in is optional and needs Sid's OAuth keys.
-- **Checks before every push:** `npm test` (vitest, 207 tests), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
+- **Checks before every push:** `npm test` (vitest, 210 tests), `npm run lint` (0 errors), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
@@ -27,14 +27,21 @@ _Last updated: 13 Oct 2026, about 9:10 PM (Sydney)._
 - Checkout: an empty POST returned 500; now 400.
 - Store check: the `back` field could redirect to another site; it now only allows dashboard paths.
 
+## Polish pass (13 Oct 2026, about 9:45 PM Sydney)
+
+- Legal pages and footer name the business as **Astryks** only (no ABN, no personal name). Terms keep governing law (NSW) and consumer-law rights. Commit `07a38fa`.
+- The 4 lint errors are fixed. Dashboard return paths may now carry a query string safely (`src/lib/safe-back.ts`, tested). `07a38fa`.
+- **Need help?** box in the dashboard sidebar (support@astryks.com, prefilled subject), "Help and support" in the site footer, and step-by-step guides at `/help` and `/dashboard/help` for steps Helix cannot do itself: daily numbers by hand or CSV, Meta spend while Meta is not connected, reconnecting Meta for a missing Page/account/pixel, store check blocked by a password, Google Ads, billing, data download and deletion. `9b90f43`.
+- New accounts start with example numbers; every dashboard page now says so with a **Clear examples** button. `9b90f43`.
+- Signed-in pass on live (magic-link test account): all 25 dashboard pages, course and start return 200 with no NaN/undefined in visible text; free plan gating shows upgrade notes (year views, course goals, Meta connect); checkout for Starter redirects to Stripe Checkout (live mode, not paid); bad plan returns 400; portal without a subscription goes back to billing. The test accounts (helixtest@, helixtest+fresh1013b@, helixtest+audit1013@mail.grokbot.com) were then deleted from production.
+
 ## Open items
 
 - Meta "Save choice" fix is pending (asset picker save).
 - Scheduling the 15 to 18 Oct social posts is pending.
-- Test accounts (helixtest@mail.grokbot.com) are in the production database; remove them before launch or keep them marked as test.
-- Sid to decide whether to show the ABN on the legal pages.
 - Add the Instagram website link in the app.
-- Not checked end to end: a signed-in run through dashboard, profit, cards and checkout on live, and a real Stripe live-mode purchase and refund.
+- Free users still see a "Profit this year so far" card on Growth while month and year views are Starter; decide whether that is a teaser or should be gated.
+- Not tested end to end: server-action flows by click (saving profit setup, finishing a card deck, store check run) and a real live-mode purchase and refund.
 
 ## SEO and AI-search pass (13 Oct 2026, about 12:40 PM Sydney)
 
