@@ -213,7 +213,9 @@ _Updated 13 Oct 2026, 10:10 PM Sydney. Pick up here next session._
 4. **AI** is live (Vercel AI Gateway free US$5 a month credit, `google/gemini-2.5-flash-lite`, per-plan caps, `AI_MONTHLY_BUDGET_USD`, `AI_DISABLED` kill switch). Watch usage on the Vercel AI Gateway page.
 5. **Not yet clicked through live:** saving the profit setup, finishing a card deck, running a store check, a live payment and refund.
 6. **Later:** Shopify order webhooks (near real time), `read_all_orders` for more than 60 days, Google draft ad groups, keywords and ads, GA4, TikTok, Klaviyo; course polish (weekly recap email, goal picking, finish-line history).
-7. Vercel connector lacks access to the astryks team; reconnect it with that team selected (the CLI works meanwhile).
+7. **Closed Facebook group for paying members (reminder for Sid).** Create a private "E-commerce Helix Members" group linked to the Page so Starter and Growth subscribers can share ideas and wins with each other (owners value the community side). Later: invite link inside the dashboard for paid plans only, membership questions to check the Helix email, and remove members when they cancel.
+8. Social posts v2 (57 redesigned, 12 animated) are in `docs/social/v2/` and approved by Sid; not posted yet. Old Instagram posts are being removed. Post the new set when Sid says.
+9. Vercel connector lacks access to the astryks team; reconnect it with that team selected (the CLI works meanwhile).
 
 ## Waiting on Sid
 
