@@ -27,7 +27,7 @@ export default async function Settings({ searchParams }: PageProps<"/dashboard/s
       </form>
       <section id="account" className="card mt-6 space-y-6 p-6 sm:p-8">
         <div>
-          <h2 className="font-display text-xl font-semibold text-[#0B1F3A]">Your data</h2>
+          <h2 className="font-display text-xl font-semibold text-[#1A1718]">Your data</h2>
           <p className="mt-1 text-sm text-slate-600">Download everything Helix stores about you as one file: your numbers, tasks, lessons, plans and settings. Connection passwords and tokens are never included.</p>
           <a href="/api/account/export" className="btn-ghost mt-3 inline-block px-5 py-2">Download my data</a>
         </div>

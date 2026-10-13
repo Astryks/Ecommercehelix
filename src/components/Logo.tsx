@@ -1,61 +1,31 @@
-import { useId } from "react";
+import { INK_A, INK_B, PUR_A, PUR_B, RUNGS } from "./logo-paths";
 
 type Props = { size?: number; className?: string; title?: string; dark?: boolean };
 
-/** E-commerce Helix mark (option B): coral to red-orange double helix rising bottom-left to top-right. */
+/** E-commerce Helix mark: a sketchy double helix rising to the right, one purple strand and one ink strand. */
 export function HelixMark({ size = 36, className, title = "E-commerce Helix", dark = false }: Props) {
-  const id = useId().replace(/:/g, "");
-  const a = `hxA${id}`;
-  const b = `hxB${id}`;
-  // Over/under gaps are painted in the surface colour so the strands read as woven.
-  const gap = dark ? "#0B1F3A" : "#FAF7F2";
+  const ink = dark ? "#F2F1EC" : "#1A1718";
+  const purple = dark ? "#B0ABEF" : "#6258DF";
   return (
-    <svg
-      viewBox="0 0 512 512"
-      width={size}
-      height={size}
-      className={className}
-      role="img"
-      aria-label={title || undefined}
-      aria-hidden={title ? undefined : true}
-    >
-      <defs>
-        <linearGradient id={a} gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="390" y2="0">
-          <stop offset="0" stopColor="#FF8A70" />
-          <stop offset="1" stopColor="#F2603F" />
-        </linearGradient>
-        <linearGradient id={b} gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="390" y2="0">
-          <stop offset="0" stopColor="#E8452C" />
-          <stop offset="1" stopColor="#B8321C" />
-        </linearGradient>
-      </defs>
-      <g transform="translate(256 256) rotate(-45) translate(-195.0 0)" fill="none" strokeLinecap="round"><g stroke="#F08A73" strokeWidth="15.0" strokeLinecap="round"><line x1="92.9" y1="30.1" x2="92.9" y2="-30.1"/>
-        <line x1="130.0" y1="56.5" x2="130.0" y2="-56.5"/>
-        <line x1="167.1" y1="30.1" x2="167.1" y2="-30.1"/>
-        <line x1="241.4" y1="-49.6" x2="241.4" y2="49.6"/>
-        <line x1="278.6" y1="-49.6" x2="278.6" y2="49.6"/>
-        <line x1="352.9" y1="30.1" x2="352.9" y2="-30.1"/>
-        </g><path d="M0.00,70.00 L3.25,69.78 L6.50,69.14 L9.75,68.07 L13.00,66.57 L16.25,64.67 L19.50,62.37 L22.75,59.68 L26.00,56.63 L29.25,53.23 L32.50,49.50 L35.75,45.46 L39.00,41.14 L42.25,36.57 L45.50,31.78 L48.75,26.79 L52.00,21.63 L55.25,16.34 L58.50,10.95 L61.75,5.49 L65.00,0.00 L68.25,-5.49 L71.50,-10.95 L74.75,-16.34 L78.00,-21.63 L81.25,-26.79 L84.50,-31.78 L87.75,-36.57 L91.00,-41.14 L94.25,-45.46 L97.50,-49.50 L100.75,-53.23 L104.00,-56.63 L107.25,-59.68 L110.50,-62.37 L113.75,-64.67 L117.00,-66.57 L120.25,-68.07 L123.50,-69.14 L126.75,-69.78 L130.00,-70.00" stroke={`url(#${a})`} strokeWidth="30"/>
-        <path d="M260.00,70.00 L263.25,69.78 L266.50,69.14 L269.75,68.07 L273.00,66.57 L276.25,64.67 L279.50,62.37 L282.75,59.68 L286.00,56.63 L289.25,53.23 L292.50,49.50 L295.75,45.46 L299.00,41.14 L302.25,36.57 L305.50,31.78 L308.75,26.79 L312.00,21.63 L315.25,16.34 L318.50,10.95 L321.75,5.49 L325.00,0.00 L328.25,-5.49 L331.50,-10.95 L334.75,-16.34 L338.00,-21.63 L341.25,-26.79 L344.50,-31.78 L347.75,-36.57 L351.00,-41.14 L354.25,-45.46 L357.50,-49.50 L360.75,-53.23 L364.00,-56.63 L367.25,-59.68 L370.50,-62.37 L373.75,-64.67 L377.00,-66.57 L380.25,-68.07 L383.50,-69.14 L386.75,-69.78 L390.00,-70.00" stroke={`url(#${a})`} strokeWidth="30"/>
-        <path d="M130.00,70.00 L133.25,69.78 L136.50,69.14 L139.75,68.07 L143.00,66.57 L146.25,64.67 L149.50,62.37 L152.75,59.68 L156.00,56.63 L159.25,53.23 L162.50,49.50 L165.75,45.46 L169.00,41.14 L172.25,36.57 L175.50,31.78 L178.75,26.79 L182.00,21.63 L185.25,16.34 L188.50,10.95 L191.75,5.49 L195.00,0.00 L198.25,-5.49 L201.50,-10.95 L204.75,-16.34 L208.00,-21.63 L211.25,-26.79 L214.50,-31.78 L217.75,-36.57 L221.00,-41.14 L224.25,-45.46 L227.50,-49.50 L230.75,-53.23 L234.00,-56.63 L237.25,-59.68 L240.50,-62.37 L243.75,-64.67 L247.00,-66.57 L250.25,-68.07 L253.50,-69.14 L256.75,-69.78 L260.00,-70.00" stroke={`url(#${b})`} strokeWidth="30"/>
-        <path d="M161.20,-51.03 L162.89,-49.03 L164.58,-46.95 L166.27,-44.79 L167.96,-42.56 L169.65,-40.25 L171.34,-37.88 L173.03,-35.44 L174.72,-32.95 L176.41,-30.40 L178.10,-27.80 L179.79,-25.15 L181.48,-22.47 L183.17,-19.74 L184.86,-16.98 L186.55,-14.20 L188.24,-11.38 L189.93,-8.56 L191.62,-5.71 L193.31,-2.86 L195.00,-0.00 L196.69,2.86 L198.38,5.71 L200.07,8.56 L201.76,11.38 L203.45,14.20 L205.14,16.98 L206.83,19.74 L208.52,22.47 L210.21,25.15 L211.90,27.80 L213.59,30.40 L215.28,32.95 L216.97,35.44 L218.66,37.88 L220.35,40.25 L222.04,42.56 L223.73,44.79 L225.42,46.95 L227.11,49.03 L228.80,51.03" stroke={gap} strokeWidth="44" strokeLinecap="butt"/>
-        <path d="M130.00,-70.00 L133.25,-69.78 L136.50,-69.14 L139.75,-68.07 L143.00,-66.57 L146.25,-64.67 L149.50,-62.37 L152.75,-59.68 L156.00,-56.63 L159.25,-53.23 L162.50,-49.50 L165.75,-45.46 L169.00,-41.14 L172.25,-36.57 L175.50,-31.78 L178.75,-26.79 L182.00,-21.63 L185.25,-16.34 L188.50,-10.95 L191.75,-5.49 L195.00,-0.00 L198.25,5.49 L201.50,10.95 L204.75,16.34 L208.00,21.63 L211.25,26.79 L214.50,31.78 L217.75,36.57 L221.00,41.14 L224.25,45.46 L227.50,49.50 L230.75,53.23 L234.00,56.63 L237.25,59.68 L240.50,62.37 L243.75,64.67 L247.00,66.57 L250.25,68.07 L253.50,69.14 L256.75,69.78 L260.00,70.00" stroke={`url(#${a})`} strokeWidth="30"/>
-        <path d="M31.20,-51.03 L32.89,-49.03 L34.58,-46.95 L36.27,-44.79 L37.96,-42.56 L39.65,-40.25 L41.34,-37.88 L43.03,-35.44 L44.72,-32.95 L46.41,-30.40 L48.10,-27.80 L49.79,-25.15 L51.48,-22.47 L53.17,-19.74 L54.86,-16.98 L56.55,-14.20 L58.24,-11.38 L59.93,-8.56 L61.62,-5.71 L63.31,-2.86 L65.00,-0.00 L66.69,2.86 L68.38,5.71 L70.07,8.56 L71.76,11.38 L73.45,14.20 L75.14,16.98 L76.83,19.74 L78.52,22.47 L80.21,25.15 L81.90,27.80 L83.59,30.40 L85.28,32.95 L86.97,35.44 L88.66,37.88 L90.35,40.25 L92.04,42.56 L93.73,44.79 L95.42,46.95 L97.11,49.03 L98.80,51.03" stroke={gap} strokeWidth="44" strokeLinecap="butt"/>
-        <path d="M0.00,-70.00 L3.25,-69.78 L6.50,-69.14 L9.75,-68.07 L13.00,-66.57 L16.25,-64.67 L19.50,-62.37 L22.75,-59.68 L26.00,-56.63 L29.25,-53.23 L32.50,-49.50 L35.75,-45.46 L39.00,-41.14 L42.25,-36.57 L45.50,-31.78 L48.75,-26.79 L52.00,-21.63 L55.25,-16.34 L58.50,-10.95 L61.75,-5.49 L65.00,-0.00 L68.25,5.49 L71.50,10.95 L74.75,16.34 L78.00,21.63 L81.25,26.79 L84.50,31.78 L87.75,36.57 L91.00,41.14 L94.25,45.46 L97.50,49.50 L100.75,53.23 L104.00,56.63 L107.25,59.68 L110.50,62.37 L113.75,64.67 L117.00,66.57 L120.25,68.07 L123.50,69.14 L126.75,69.78 L130.00,70.00" stroke={`url(#${b})`} strokeWidth="30"/>
-        <path d="M291.20,-51.03 L292.89,-49.03 L294.58,-46.95 L296.27,-44.79 L297.96,-42.56 L299.65,-40.25 L301.34,-37.88 L303.03,-35.44 L304.72,-32.95 L306.41,-30.40 L308.10,-27.80 L309.79,-25.15 L311.48,-22.47 L313.17,-19.74 L314.86,-16.98 L316.55,-14.20 L318.24,-11.38 L319.93,-8.56 L321.62,-5.71 L323.31,-2.86 L325.00,-0.00 L326.69,2.86 L328.38,5.71 L330.07,8.56 L331.76,11.38 L333.45,14.20 L335.14,16.98 L336.83,19.74 L338.52,22.47 L340.21,25.15 L341.90,27.80 L343.59,30.40 L345.28,32.95 L346.97,35.44 L348.66,37.88 L350.35,40.25 L352.04,42.56 L353.73,44.79 L355.42,46.95 L357.11,49.03 L358.80,51.03" stroke={gap} strokeWidth="44" strokeLinecap="butt"/>
-        <path d="M260.00,-70.00 L263.25,-69.78 L266.50,-69.14 L269.75,-68.07 L273.00,-66.57 L276.25,-64.67 L279.50,-62.37 L282.75,-59.68 L286.00,-56.63 L289.25,-53.23 L292.50,-49.50 L295.75,-45.46 L299.00,-41.14 L302.25,-36.57 L305.50,-31.78 L308.75,-26.79 L312.00,-21.63 L315.25,-16.34 L318.50,-10.95 L321.75,-5.49 L325.00,-0.00 L328.25,5.49 L331.50,10.95 L334.75,16.34 L338.00,21.63 L341.25,26.79 L344.50,31.78 L347.75,36.57 L351.00,41.14 L354.25,45.46 L357.50,49.50 L360.75,53.23 L364.00,56.63 L367.25,59.68 L370.50,62.37 L373.75,64.67 L377.00,66.57 L380.25,68.07 L383.50,69.14 L386.75,69.78 L390.00,70.00" stroke={`url(#${b})`} strokeWidth="30"/>
-        </g>
+    <svg viewBox="0 0 512 512" width={size} height={size} className={className} role="img" aria-label={title || undefined} aria-hidden={title ? undefined : true}>
+      <g fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <path d={RUNGS} stroke={ink} strokeWidth="9" opacity="0.85" />
+        <path d={INK_A} stroke={ink} strokeWidth="26" />
+        <path d={INK_B} stroke={ink} strokeWidth="7" opacity="0.6" />
+        <path d={PUR_A} stroke={purple} strokeWidth="30" />
+        <path d={PUR_B} stroke={purple} strokeWidth="8" opacity="0.55" />
+      </g>
     </svg>
   );
 }
 
-/** Lockup: mark + "E-commerce Helix" wordmark (serif, italic coral "Helix"). */
+/** Lockup: mark + "E-commerce Helix" wordmark in marker lettering, "Helix" in purple. */
 export function Logo({ size = 34, dark = false }: { size?: number; dark?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2">
       <HelixMark size={size} dark={dark} />
-      <span className={`font-display text-[1.2rem] font-semibold tracking-tight ${dark ? "text-white" : "text-[#1F2A44]"}`}>
-        E-commerce <span className={`italic ${dark ? "text-[#FF8A70]" : "text-[#E8452C]"}`}>Helix</span>
+      <span className={`font-display text-[1.45rem] leading-none ${dark ? "text-white" : "text-[#1A1718]"}`}>
+        E-commerce <span className={dark ? "text-[#B0ABEF]" : "text-[#6258DF]"}>Helix</span>
       </span>
     </span>
   );

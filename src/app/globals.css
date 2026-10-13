@@ -2,57 +2,57 @@
 @plugin "@tailwindcss/typography";
 
 /*
- * Helix design tokens. Consulting-grade, warm: off-white paper, deep navy ink,
- * one terracotta accent, sage for positive numbers, muted warm greys.
- * The Tailwind palettes the app already uses are remapped here so every page
- * picks up the same restrained set: slate = warm greys into navy ink,
- * cyan = terracotta accent, emerald/teal = sage, violet/indigo/sky = muted blue.
- * Every text pairing used in the app meets WCAG AA on paper and white.
+ * Helix design tokens: hand-drawn whiteboard. Paper #F2F1EC, ink #1A1718, one purple marker #6258DF
+ * (sampled from Sid's reference). Old palettes (slate, cyan, violet, indigo, sky) are remapped here so
+ * every page picks up the same set. Text pairings meet WCAG AA on paper and white.
  */
 @theme inline {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-serif-display), "Iowan Old Style", "Times New Roman", serif;
+  --font-sans: var(--font-body), ui-rounded, ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-marker), "Comic Sans MS", cursive;
+  --font-hand: var(--font-hand-accent), "Comic Sans MS", cursive;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  /* Semantic tokens */
-  --color-paper: #faf7f2;
-  --color-paper-2: #f3eee5;
-  --color-ink: #0b1f3a;
-  --color-ink-2: #142c4f;
-  --color-mist: #faf7f2;
-  --color-accent: #d9772b;
-  --color-accent-ink: #9a4d16;
+  /* Semantic tokens: whiteboard paper, ink, one purple marker (sampled #6258DF). */
+  --color-paper: #f2f1ec;
+  --color-paper-2: #e9e7e0;
+  --color-ink: #1a1718;
+  --color-ink-2: #2b2729;
+  --color-mist: #f2f1ec;
+  --color-accent: #6258df;
+  --color-accent-ink: #4b42c9;
   --color-positive: #2f7359;
   --color-negative: #b4372f;
-  --color-rule: #e6dfd3;
+  --color-rule: #dedcd4;
 
-  /* Warm greys that end in navy ink */
-  --color-slate-50: #f7f3ec;
-  --color-slate-100: #efe9df;
-  --color-slate-200: #e6dfd3;
-  --color-slate-300: #d3c9b9;
-  --color-slate-400: #a59a8b;
-  --color-slate-500: #776d61;
-  --color-slate-600: #5d554c;
-  --color-slate-700: #433e38;
-  --color-slate-800: #1d2f4a;
-  --color-slate-900: #0b1f3a;
-  --color-slate-950: #07162b;
+  /* Neutral warm greys that end in ink */
+  --color-slate-50: #f7f6f2;
+  --color-slate-100: #ecebe5;
+  --color-slate-200: #dedcd4;
+  --color-slate-300: #c9c6bd;
+  --color-slate-400: #8f8b84;
+  --color-slate-500: #6b6760;
+  --color-slate-600: #55514c;
+  --color-slate-700: #3a3634;
+  --color-slate-800: #2b2729;
+  --color-slate-900: #1a1718;
+  --color-slate-950: #100e0f;
 
-  /* Terracotta accent (was cyan) */
-  --color-cyan-50: #fdf5ee;
-  --color-cyan-100: #fae6d4;
-  --color-cyan-200: #f3cba7;
-  --color-cyan-300: #eba877;
-  --color-cyan-400: #e38d4d;
-  --color-cyan-500: #d9772b;
-  --color-cyan-600: #a8561a;
-  --color-cyan-700: #9a4d16;
-  --color-cyan-800: #7a3d13;
-  --color-cyan-900: #5e3011;
-  --color-cyan-950: #351a08;
+  /* Purple marker (was cyan, then terracotta) */
+  --color-cyan-50: #f3f2fd;
+  --color-cyan-100: #e8e6fb;
+  --color-cyan-200: #d2cff6;
+  --color-cyan-300: #b0abef;
+  --color-cyan-400: #8c86ea;
+  --color-cyan-500: #6258df;
+  --color-cyan-600: #5249d3;
+  --color-cyan-700: #4b42c9;
+  --color-cyan-800: #3a3399;
+  --color-cyan-900: #2e2880;
+  --color-cyan-950: #1c184f;
+  --color-amber-50: #fbf6ea;
+  --color-orange-50: #fbf6ea;
 
-  /* Sage for positive numbers (was emerald and teal) */
+  /* Sage for positive numbers */
   --color-emerald-50: #eff6f2;
   --color-emerald-100: #d9ebe2;
   --color-emerald-200: #b5d7c6;
@@ -70,29 +70,29 @@
   --color-teal-600: #2f7359;
   --color-teal-700: #255c48;
 
-  /* Muted blue (was violet, indigo and sky) */
-  --color-violet-50: #f1f4f9;
-  --color-violet-100: #e2e8f2;
-  --color-violet-200: #c7d1e3;
-  --color-violet-300: #a1b0cc;
-  --color-violet-400: #7889ae;
-  --color-violet-500: #566a94;
-  --color-violet-600: #44567c;
-  --color-violet-700: #374665;
-  --color-violet-800: #2b3852;
-  --color-violet-900: #222d42;
-  --color-indigo-50: #f1f4f9;
-  --color-indigo-100: #e2e8f2;
-  --color-indigo-500: #566a94;
-  --color-indigo-600: #44567c;
-  --color-indigo-700: #374665;
-  --color-sky-50: #f1f4f9;
-  --color-sky-100: #e2e8f2;
-  --color-sky-500: #566a94;
-  --color-sky-600: #44567c;
-  --color-sky-700: #374665;
+  /* Violet, indigo and sky all become the same purple family */
+  --color-violet-50: #f3f2fd;
+  --color-violet-100: #e8e6fb;
+  --color-violet-200: #d2cff6;
+  --color-violet-300: #b0abef;
+  --color-violet-400: #8c86ea;
+  --color-violet-500: #6258df;
+  --color-violet-600: #5249d3;
+  --color-violet-700: #4b42c9;
+  --color-violet-800: #3a3399;
+  --color-violet-900: #2e2880;
+  --color-indigo-50: #f3f2fd;
+  --color-indigo-100: #e8e6fb;
+  --color-indigo-500: #6258df;
+  --color-indigo-600: #5249d3;
+  --color-indigo-700: #4b42c9;
+  --color-sky-50: #f3f2fd;
+  --color-sky-100: #e8e6fb;
+  --color-sky-500: #6258df;
+  --color-sky-600: #5249d3;
+  --color-sky-700: #4b42c9;
 
-  /* Warmer reds for losses and alerts */
+  /* Soft reds for losses and alerts */
   --color-rose-50: #fcf1ef;
   --color-rose-100: #f8dfda;
   --color-rose-200: #efbdb4;
@@ -109,63 +109,78 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--color-paper);
   color: var(--color-ink);
-  font-feature-settings: "ss01", "cv11";
+  font-size: 17px;
+  line-height: 1.6;
+  font-synthesis: none;
 }
 
-/* Serif display headings, clean sans body. In the base layer so utilities (font-sans, font-bold) can still override. */
+/* Marker headings, friendly rounded body. Single-weight marker fonts, so no fake bold or italic. */
 @layer base {
   h1, h2, h3, .font-display {
     font-family: var(--font-serif);
-    font-weight: 600;
-    letter-spacing: -0.012em;
-    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    line-height: 1.15;
   }
-  h3.uppercase, h2.uppercase { font-family: var(--font-sans); letter-spacing: 0.12em; }
+  h3.uppercase, h2.uppercase { font-family: var(--font-sans); font-weight: 700; letter-spacing: 0.12em; }
 }
-.font-display { font-family: var(--font-serif); }
-.prose :where(h1, h2, h3, h4) { font-family: var(--font-serif); font-weight: 600; }
+/* Big headings in the purple marker, except on dark panels. Unlayered so it wins over text-slate-900 utilities. */
+h1:not(.text-white):not(:where(.helix-glow, .bg-slate-900, .bg-slate-950) *),
+h2:not(.text-white):not(.uppercase):not(:where(.helix-glow, .bg-slate-900, .bg-slate-950) *) { color: var(--color-accent); }
+.font-display { font-family: var(--font-serif); font-weight: 400; }
+.font-hand { font-family: var(--font-hand); }
+.prose :where(h1, h2, h3, h4) { font-family: var(--font-serif); font-weight: 400; }
+.prose :where(h1, h2) { color: var(--color-accent); }
+.prose :where(a) { color: var(--color-accent-ink); }
 .tabular, .tbl td { font-variant-numeric: tabular-nums; }
+a { text-underline-offset: 3px; }
 
-/* Deep navy panel with a faint warm glow (used for the Today lesson header and dark bands) */
+/* Dark ink panel with a faint purple glow */
 .helix-glow {
   background:
-    radial-gradient(70% 90% at 100% 0%, rgba(217, 119, 43, 0.16), transparent 60%),
-    radial-gradient(60% 80% at 0% 100%, rgba(68, 139, 111, 0.12), transparent 60%),
+    radial-gradient(70% 90% at 100% 0%, rgba(98, 88, 223, 0.28), transparent 60%),
     var(--color-ink);
 }
 
-/* Emphasis text: the single warm accent, set in italic serif */
-.grad-text {
+/* Key words: purple marker with a hand-drawn underline stroke */
+.grad-text, .scribble {
   color: var(--color-accent);
   font-family: var(--font-serif);
-  font-style: italic;
+  font-style: normal;
+  padding-bottom: 0.12em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 40 4, 80 10, 120 6 S 180 5, 198 7' fill='none' stroke='%236258DF' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") bottom left / 100% 0.32em no-repeat;
 }
+:where(.helix-glow, .bg-slate-900) .grad-text { color: #b0abef; }
 
-/* Thin rule with a short accent lead, consulting style */
-.rule-accent { position: relative; border-top: 1px solid var(--color-rule); }
-.rule-accent::before { content: ""; position: absolute; left: 0; top: -1px; width: 48px; height: 2px; background: var(--color-accent); }
+/* Thin sketchy rule with a short purple lead */
+.rule-accent { position: relative; border-top: 1.5px solid var(--color-rule); }
+.rule-accent::before { content: ""; position: absolute; left: 0; top: -2px; width: 56px; height: 3px; border-radius: 3px; background: var(--color-accent); }
 
 @utility eyebrow {
-  @apply text-xs font-semibold uppercase tracking-[0.18em] text-cyan-700;
+  @apply text-sm font-normal tracking-[0.04em] text-cyan-700;
+  font-family: var(--font-hand);
+  font-size: 1.05rem;
 }
 
 @utility card {
-  @apply rounded-xl border border-slate-200 bg-white shadow-[0_1px_0_rgba(11,31,58,0.03)];
+  @apply border-[1.5px] border-slate-300 bg-[#fbfaf7];
+  border-radius: 14px 18px 13px 17px / 17px 13px 18px 14px;
 }
 
 @utility btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600 disabled:cursor-not-allowed disabled:opacity-50;
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-bold transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700 disabled:cursor-not-allowed disabled:opacity-50;
+  border-radius: 10px 13px 11px 12px / 12px 10px 13px 11px;
 }
-@utility btn-primary { @apply btn bg-slate-900 text-white hover:bg-slate-800; }
-@utility btn-accent { @apply btn bg-cyan-500 text-slate-950 hover:bg-cyan-400; }
-@utility btn-dark { @apply btn bg-slate-900 text-white hover:bg-slate-800; }
-@utility btn-ghost { @apply btn border border-slate-300 bg-white text-slate-900 hover:bg-slate-50; }
+@utility btn-primary { @apply btn bg-cyan-500 text-white hover:bg-cyan-700; }
+@utility btn-accent { @apply btn bg-cyan-500 text-white hover:bg-cyan-700; }
+@utility btn-dark { @apply btn bg-cyan-500 text-white hover:bg-cyan-700; }
+@utility btn-ghost { @apply btn border-[1.5px] border-slate-900 bg-transparent text-slate-900 hover:bg-cyan-50; }
 
 @utility input {
-  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500/25;
+  @apply w-full rounded-lg border-[1.5px] border-slate-300 bg-white px-3 py-2 text-base text-slate-900 placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/25;
 }
 
-.tbl th { @apply whitespace-nowrap border-b border-slate-300 px-2.5 py-2 text-left text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500; }
+.tbl th { @apply whitespace-nowrap border-b border-slate-300 px-2.5 py-2 text-left text-[11px] font-bold uppercase tracking-[0.12em] text-slate-500; }
 .tbl td { @apply whitespace-nowrap px-2.5 py-2 text-sm text-slate-800; }
 .tbl tbody tr { @apply border-t border-slate-100; }
 .tbl tbody tr:hover { @apply bg-slate-50/70; }
@@ -176,13 +191,13 @@ body {
 .gloss::after {
   content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%);
   width: max-content; max-width: min(320px, 80vw); padding: 8px 12px; border-radius: 10px;
-  background: var(--color-ink); color: #faf7f2; font-family: var(--font-sans); font-size: 13px; line-height: 1.45; font-weight: 400; font-style: normal;
-  text-align: left; white-space: normal; box-shadow: 0 8px 24px rgb(11 31 58 / 0.18); z-index: 40;
+  background: var(--color-ink); color: #f2f1ec; font-family: var(--font-sans); font-size: 13px; line-height: 1.45; font-weight: 400; font-style: normal;
+  text-align: left; white-space: normal; box-shadow: 0 8px 24px rgb(26 23 24 / 0.18); z-index: 40;
   opacity: 0; pointer-events: none; transition: opacity 120ms ease;
 }
 .gloss:hover::after, .gloss:focus::after { opacity: 1; }
 
 /* Course: a small, quiet celebration when a goal is finished */
-.celebrate .confetti { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, #d9772b 2px, transparent 2.5px), radial-gradient(circle, #2f7359 2px, transparent 2.5px), radial-gradient(circle, #0b1f3a 1.5px, transparent 2px); background-size: 46px 46px, 62px 62px, 38px 38px; background-position: 0 0, 20px 14px, 9px 30px; opacity: 0; animation: helix-confetti 2.4s ease-out 1; }
+.celebrate .confetti { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, #6258DF 2px, transparent 2.5px), radial-gradient(circle, #2f7359 2px, transparent 2.5px), radial-gradient(circle, #1A1718 1.5px, transparent 2px); background-size: 46px 46px, 62px 62px, 38px 38px; background-position: 0 0, 20px 14px, 9px 30px; opacity: 0; animation: helix-confetti 2.4s ease-out 1; }
 @keyframes helix-confetti { 0% { opacity: 0.9; transform: translateY(-24px); } 100% { opacity: 0; transform: translateY(24px); } }
 @media (prefers-reduced-motion: reduce) { .celebrate .confetti { animation: none; } }

@@ -43,12 +43,12 @@ export default async function Scorecard() {
   const series = last14.map((d) => derive(d, settings, 1));
 
   const tiles = [
-    { label: "Net revenue", value: $(dDay.netRevenue), sub: `Target ${$(dDay.revenueTarget)}`, flag: fDay.target, spark: series.map((s) => s.netRevenue), color: "#1d2f4a", delta: dPrev ? dDay.netRevenue - dPrev.netRevenue : null },
+    { label: "Net revenue", value: $(dDay.netRevenue), sub: `Target ${$(dDay.revenueTarget)}`, flag: fDay.target, spark: series.map((s) => s.netRevenue), color: "#2B2729", delta: dPrev ? dDay.netRevenue - dPrev.netRevenue : null },
     { label: "Contribution profit", value: $(dDay.contribution), sub: `${pct(dDay.contributionPct)} of net revenue`, flag: fDay.contribution, spark: series.map((s) => s.contribution), color: "#2f7359", delta: dPrev ? dDay.contribution - dPrev.contribution : null },
-    { label: "MER (ad spend / revenue)", value: pct(dDay.merPct), sub: `Target ${pct(settings.targetMerPct)}`, flag: fDay.mer, spark: series.map((s) => s.merPct), color: "#566a94", delta: null },
-    { label: "Blended CAC", value: $(dDay.blendedCac, 2), sub: `aCPA ${$(dDay.aCpa, 2)} · break-even CPA ${$(dDay.breakEvenCpa, 2)}`, flag: dDay.blendedCac <= dDay.breakEvenCpa ? "green" as const : dDay.blendedCac <= dDay.breakEvenCpa * 1.3 ? "amber" as const : "red" as const, spark: series.map((s) => s.blendedCac), color: "#9a4d16", delta: null },
-    { label: "Orders · AOV", value: `${day.orders} · ${$(dDay.aov, 2)}`, sub: `CR ${pct(dDay.cr)} · RPV ${$(dDay.rpv, 2)}`, flag: null, spark: series.map((_, i) => last14[i].orders), color: "#0b1f3a", delta: null },
-    { label: "Variable cost ratio", value: pct(dDay.vcrPct), sub: `Break-even ROAS ${x(dDay.breakEvenRoas)}`, flag: fDay.vcr, spark: series.map((s) => s.vcrPct), color: "#d9772b", delta: null },
+    { label: "MER (ad spend / revenue)", value: pct(dDay.merPct), sub: `Target ${pct(settings.targetMerPct)}`, flag: fDay.mer, spark: series.map((s) => s.merPct), color: "#8C86EA", delta: null },
+    { label: "Blended CAC", value: $(dDay.blendedCac, 2), sub: `aCPA ${$(dDay.aCpa, 2)} · break-even CPA ${$(dDay.breakEvenCpa, 2)}`, flag: dDay.blendedCac <= dDay.breakEvenCpa ? "green" as const : dDay.blendedCac <= dDay.breakEvenCpa * 1.3 ? "amber" as const : "red" as const, spark: series.map((s) => s.blendedCac), color: "#4B42C9", delta: null },
+    { label: "Orders · AOV", value: `${day.orders} · ${$(dDay.aov, 2)}`, sub: `CR ${pct(dDay.cr)} · RPV ${$(dDay.rpv, 2)}`, flag: null, spark: series.map((_, i) => last14[i].orders), color: "#1A1718", delta: null },
+    { label: "Variable cost ratio", value: pct(dDay.vcrPct), sub: `Break-even ROAS ${x(dDay.breakEvenRoas)}`, flag: fDay.vcr, spark: series.map((s) => s.vcrPct), color: "#6258DF", delta: null },
   ];
 
   const rollRows: { label: string; get: (d: ReturnType<typeof derive>) => string; flag?: (d: ReturnType<typeof derive>) => "green" | "amber" | "red" }[] = [
@@ -97,7 +97,7 @@ export default async function Scorecard() {
 
       <section aria-label="Headline" className={`mt-6 rounded-2xl border p-6 ${dDay.contribution >= 0 ? "border-emerald-100 bg-emerald-50/60" : "border-amber-100 bg-amber-50/60"}`}>
         <p className="text-sm font-medium text-slate-600">Profit on {prettyDay(latest)}, after products, shipping, fees and ads</p>
-        <p className="mt-1 text-4xl font-bold tracking-tight text-slate-800">{$(dDay.contribution)}</p>
+        <p className="mt-1 font-display text-5xl text-cyan-500">{$(dDay.contribution)}</p>
         <p className="mt-2 text-slate-700">{day.orders === 0 && dDay.netRevenue === 0 ? "No numbers for this day yet. Fill in a day below and Helix does the maths." : dDay.contribution >= 0 ? `You kept ${$(dDay.contribution)} from ${$(dDay.netRevenue)} of sales. That is money in your pocket before rent and wages.` : `You spent ${$(-dDay.contribution)} more than you made. One day is fine. If it happens three days in a row, look at your ad spend first.`}</p>
         <p className="mt-1 text-sm text-slate-600">This month so far: {$(dM.contribution)} profit from {$(dM.netRevenue)} of sales.</p>
       </section>

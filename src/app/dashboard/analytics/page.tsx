@@ -68,7 +68,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
           <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
             {GROUPS.map((g) => (
               <Link key={g.id} href={`/dashboard/analytics?period=${g.id === "year" ? (meta.group === "year" ? period : "ytd") : g.id}`} aria-current={meta.group === g.id ? "page" : undefined}
-                className={`rounded-lg px-4 py-1.5 ${meta.group === g.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{g.label}{!paid && g.id === "year" ? <span className="ml-1 text-[10px] font-bold text-[#D9772B]">PRO</span> : null}</Link>
+                className={`rounded-lg px-4 py-1.5 ${meta.group === g.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-50"}`}>{g.label}{!paid && g.id === "year" ? <span className="ml-1 text-[10px] font-bold text-[#6258DF]">PRO</span> : null}</Link>
             ))}
           </div>
           {meta.group === "year" && (
@@ -93,7 +93,7 @@ export default async function Analytics({ searchParams }: PageProps<"/dashboard/
 
       <section aria-label="Headline" className={`mt-4 rounded-2xl border p-6 ${m.netProfit >= 0 ? "border-emerald-100 bg-emerald-50/60" : "border-amber-100 bg-amber-50/60"}`}>
         <p className="text-sm font-medium text-slate-600">Profit for {meta.label.toLowerCase()}, after all costs</p>
-        <p className="mt-1 text-4xl font-bold tracking-tight text-slate-800">{fmt$(m.netProfit)}</p>
+        <p className="mt-1 font-display text-5xl text-cyan-500">{fmt$(m.netProfit)}</p>
         <p className="mt-2 text-slate-700">{m.dataDays === 0 ? "No numbers in this period yet. Add a day in Your numbers and this fills in." : m.netProfit >= 0 ? `From ${fmt$(m.netRevenue)} of sales you kept ${fmt$(m.netProfit)} after products, shipping, fees, ads and running costs.` : `Costs were ${fmt$(-m.netProfit)} more than sales brought in. Check the "Where the money went" chart under more detail to see the biggest cost.`}</p>
       </section>
 

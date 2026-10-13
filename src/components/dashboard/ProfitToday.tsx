@@ -23,7 +23,7 @@ export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote
       <div className="grid gap-0 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
         <div className="p-6">
           <p id="profit-h" className="text-sm font-semibold uppercase tracking-wide text-slate-500">Profit yesterday · {prettyDay(date)}</p>
-          <p className={`mt-1 flex items-center gap-3 text-5xl font-extrabold tracking-tight sm:text-6xl ${tone}`}>
+          <p className={`mt-1 flex items-center gap-3 font-display text-5xl sm:text-6xl ${tone}`}>
             {s.hasDay ? money(s.profit) : "$ ?"}
             {s.hasDay && Icon && <Icon className="h-9 w-9" aria-hidden />}
           </p>

@@ -26,7 +26,7 @@ export default async function SignIn({ searchParams }: PageProps<"/signin">) {
 
   return (
     <main className="flex min-h-screen bg-paper items-center justify-center px-5 py-16">
-      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-8 shadow-[0_1px_0_rgba(11,31,58,0.03),0_24px_48px_-24px_rgba(11,31,58,0.18)]">
+      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-8 shadow-[0_1px_0_rgba(26,23,24,0.03),0_24px_48px_-24px_rgba(26,23,24,0.18)]">
         <Link href="/"><Logo /></Link>
         <h1 className="mt-8 text-2xl font-bold tracking-tight">Sign in to Helix</h1>
         <p className="mt-1 text-sm text-slate-600">Grow your e-commerce business a little every day.</p>

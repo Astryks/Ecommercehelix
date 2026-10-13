@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Caveat_Brush, Kalam, Nunito } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, organizationLd, websiteLd } from "@/lib/seo";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
-const serif = Source_Serif_4({ variable: "--font-serif-display", subsets: ["latin"], axes: ["opsz"] });
+// Whiteboard style: purple marker headings, handwritten accents, a clean rounded body for long reading.
+const body = Nunito({ variable: "--font-body", subsets: ["latin"] });
+const marker = Caveat_Brush({ variable: "--font-marker", subsets: ["latin"], weight: "400" });
+const hand = Kalam({ variable: "--font-hand-accent", subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: { default: "E-commerce Helix: Grow your e-commerce business a little every day", template: "%s · E-commerce Helix" },
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} ${serif.variable} h-full antialiased`}>
+    <html lang="en" className={`${body.variable} ${marker.variable} ${hand.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         {children}
         <JsonLd data={[organizationLd(), websiteLd()]} />

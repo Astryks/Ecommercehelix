@@ -34,7 +34,7 @@ if (hasEmail)
             to: identifier,
             subject: `Sign in to ${BRAND}`,
             text: `Sign in to ${BRAND}\n\n${url}\n\nIf you did not ask for this email, you can ignore it.`,
-            html: `<div style="font-family:system-ui,sans-serif;max-width:480px;margin:auto;padding:24px"><h1 style="font-size:20px">Sign in to ${BRAND}</h1><p><a href="${esc(url)}" style="display:inline-block;background:#0891b2;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none">Sign in</a></p><p style="color:#64748b;font-size:13px">If you did not ask for this email, you can ignore it.</p></div>`,
+            html: `<div style="font-family:Nunito,system-ui,sans-serif;max-width:480px;margin:auto;padding:24px;background:#F2F1EC;color:#1A1718"><h1 style="font-size:24px;color:#6258DF;font-family:'Caveat Brush','Comic Sans MS',cursive;font-weight:400">Sign in to ${BRAND}</h1><p><a href="${esc(url)}" style="display:inline-block;background:#6258DF;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none">Sign in</a></p><p style="color:#55514C;font-size:13px">If you did not ask for this email, you can ignore it.</p></div>`,
           }),
         });
         if (!res.ok) throw new Error(`Resend error ${res.status}`);

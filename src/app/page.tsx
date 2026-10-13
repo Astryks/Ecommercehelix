@@ -69,13 +69,13 @@ function MorningBrief() {
       <div className="px-6 pb-6 pt-5">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Profit yesterday</p>
         <p className="mt-1 flex items-baseline gap-3">
-          <span className="font-display text-5xl font-semibold tracking-tight text-emerald-700">$412</span>
+          <span className="font-display text-5xl text-cyan-500">$412</span>
           <span className="text-sm font-medium text-emerald-700">+14% vs 7-day average</span>
         </p>
         <svg viewBox="0 0 280 72" className="mt-4 h-16 w-full" role="img" aria-label="Profit for the last 7 days, rising">
-          <line x1="0" y1="71" x2="280" y2="71" stroke="#e6dfd3" />
+          <line x1="0" y1="71" x2="280" y2="71" stroke="#DEDCD4" />
           {bars.map((b, i) => (
-            <rect key={i} x={i * 40 + 6} y={71 - b} width="28" height={b} rx="2" fill={i === bars.length - 1 ? "#2f7359" : "#d3c9b9"} />
+            <rect key={i} x={i * 40 + 6} y={71 - b} width="28" height={b} rx="2" fill={i === bars.length - 1 ? "#2f7359" : "#C9C6BD"} />
           ))}
         </svg>
         <dl className="mt-5 grid grid-cols-3 divide-x divide-slate-200 border-y border-slate-200 text-center">
@@ -113,7 +113,7 @@ export default function Home() {
             <p className="mt-7 max-w-xl text-lg leading-8 text-slate-600">
               Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can do the work for you when you approve. Small daily wins add up to a bigger, more profitable business.
             </p>
-            <form action="/start" method="get" className="mt-9 flex max-w-xl flex-col gap-2 rounded-xl border border-slate-300 bg-white p-2 shadow-[0_1px_0_rgba(11,31,58,0.04)] sm:flex-row">
+            <form action="/start" method="get" className="mt-9 flex max-w-xl flex-col gap-2 rounded-xl border border-slate-300 bg-white p-2 shadow-[0_1px_0_rgba(26,23,24,0.04)] sm:flex-row">
               <label htmlFor="url" className="sr-only">Paste your store URL</label>
               <input id="url" name="url" type="text" required placeholder="Paste your store URL, e.g. yourstore.com" className="flex-1 rounded-lg bg-transparent px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 focus:outline-none" />
               <button className="btn-primary px-6 py-3 text-base" type="submit">

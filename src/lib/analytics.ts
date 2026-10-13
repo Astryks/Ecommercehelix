@@ -136,15 +136,15 @@ export function seriesFor(days: DayInput[], id: PeriodId, latest: string, s: Set
 
 export function costBreakdown(m: Metrics) {
   return [
-    { name: "Product cost (COGS)", value: m.cogs, color: "#0b1f3a" },
-    { name: "Shipping", value: m.shipping, color: "#44567c" },
-    { name: "Payment fees", value: m.fees, color: "#a1b0cc" },
-    { name: "Meta ads", value: m.t.adMeta, color: "#d9772b" },
-    { name: "Google ads", value: m.t.adGoogle, color: "#eba877" },
-    { name: "TikTok ads", value: m.t.adTiktok, color: "#9a4d16" },
-    { name: "Other ads", value: m.t.adOther, color: "#f3cba7" },
-    { name: "Other marketing", value: m.otherMarketing, color: "#a59a8b" },
-    { name: "Fixed costs (share)", value: Math.max(0, m.fixedCosts), color: "#d3c9b9" },
+    { name: "Product cost (COGS)", value: m.cogs, color: "#1A1718" },
+    { name: "Shipping", value: m.shipping, color: "#4B42C9" },
+    { name: "Payment fees", value: m.fees, color: "#B0ABEF" },
+    { name: "Meta ads", value: m.t.adMeta, color: "#6258DF" },
+    { name: "Google ads", value: m.t.adGoogle, color: "#B0ABEF" },
+    { name: "TikTok ads", value: m.t.adTiktok, color: "#4B42C9" },
+    { name: "Other ads", value: m.t.adOther, color: "#D2CFF6" },
+    { name: "Other marketing", value: m.otherMarketing, color: "#8F8B84" },
+    { name: "Fixed costs (share)", value: Math.max(0, m.fixedCosts), color: "#C9C6BD" },
   ].filter((c) => c.value > 0).map((c) => ({ ...c, value: Math.round(c.value) }));
 }
 
