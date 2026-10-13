@@ -11,6 +11,26 @@ _Last updated: 13 Oct 2026, about 11 AM (Sydney)._
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
+## SEO and AI-search pass (13 Oct 2026, about 12:40 PM Sydney)
+
+**Done**
+- Root metadata: `metadataBase` is now always `https://ecommercehelix.com` (was the env var, falling back to localhost). Every public page has its own title, meta description, canonical, Open Graph and Twitter tags, and a generated 1200x630 share image (`/opengraph-image`). Sign-in is `noindex`.
+- JSON-LD: Organization and WebSite on every page; SoftwareApplication with the real A$0 / A$29 / A$59 offers and FAQPage on home; Service + FAQPage on each feature page; Article on each guide; BreadcrumbList on features, guides and FAQ; FAQPage on /faq.
+- New pages: `/features` plus 6 feature landing pages (profit-dashboard, daily-growth-plan, meta-ads, email-automation, black-friday-plan, store-audit); `/guides` plus 8 long-form guides; `/faq`. All facts are taken from the existing site copy, plans and docs. Each ends with a "Start free" call to action.
+- Internal links: header (Features, Guides), footer (all features, FAQ page), home "What Helix does / Free guides" section, related guides and features on every new page.
+- `robots.txt` (app/robots.ts): allows Googlebot, Bingbot, Google-Extended, GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Applebot, Applebot-Extended and `*`; blocks /dashboard, /course, /api/, /signin. `sitemap.xml` (app/sitemap.ts) lists 51 public URLs including all 29 Learn modules. `/llms.txt` summarises the business.
+- Checks: build, 170 tests, every sitemap URL has one H1, canonical and og:image, all 142 JSON-LD blocks parse, 87 internal links return 200.
+
+**Note on positioning.** The brief described a consulting business, but the site itself says Helix is software and "not an agency". Pages target "growth software/tools" and owner questions ("when to hire an e-commerce consultant"), not "agency/consultant" services. Amazon and marketplace growth is not offered on the site, so it is not targeted.
+
+**For Sid**
+- Google Search Console: add the domain property `ecommercehelix.com` (DNS TXT in Vercel) and submit `https://ecommercehelix.com/sitemap.xml`.
+- Bing Webmaster Tools: import from Search Console (covers Copilot and feeds ChatGPT search) and submit the sitemap.
+- Google Business Profile: only if E-commerce Helix has a business address or service area you want listed (it is online software, so this is optional).
+- Facts to fill in (left out on purpose, nothing invented): business contact email or phone, location / area served (prices are A$ but no location is stated), ABN or legal entity name, founder name and bio for About and Organization JSON-LD, social profile URLs (`sameAs`), any real customer results, testimonials or reviews (none are on the site, so none were added). Add them in `src/lib/seo.ts` (`organizationLd`) and on /about.
+- Consider: a real contact page or consult booking link if you want a "book a call" CTA (CTAs currently go to /start, which redirects to sign-in); `/start` is not in the sitemap because it redirects.
+- Later: more guides on owner questions, Australia-specific content if you serve Australia first, an Amazon/marketplace page only if Helix adds that.
+
 ## What is new since 6 Oct 2026
 
 **Brand spelling (13 Oct).** The brand is written **E-commerce Helix** everywhere users see it (titles, metadata, header, footer, About, home, guides, sign-in emails, docs). The domain, repo and code names stay `ecommercehelix`. Sign-in emails now use our own template: subject "Sign in to E-commerce Helix", sender name "E-commerce Helix" (address still from `EMAIL_FROM`). **For Sid:** in Stripe, set the public business name to "E-commerce Helix" and upload the logo and brand colour (Settings, Business, Public details and Branding) so Checkout, the portal and receipts match.

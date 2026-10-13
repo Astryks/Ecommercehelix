@@ -1,0 +1,31 @@
+# E-commerce Helix
+
+> E-commerce Helix (https://ecommercehelix.com) is growth software for e-commerce business owners. It audits your store, shows your real profit every morning, gives you one short lesson and one clear task a day (about 15 minutes), and can prepare the work for you, but nothing changes until you approve it. It is not an agency.
+
+Who it is for: online store owners, built mainly for stores doing about $10k to $100k a month that want to reach a $1M year profitably; it also works from the first sale. Plans: Free (A$0), Starter (A$29/month), Growth (A$59/month), each with a capped AI allowance and prepaid top-ups that stop at $0.
+
+What works today: profit dashboard (manual or CSV numbers), Meta (Facebook and Instagram) ad sync with campaigns built as paused drafts the owner launches, monthly site audit, daily course and lessons, Black Friday and seasonal plans, email and SMS flows drafted for approval. Google Ads is guided setup only (connection coming). Shopify, Google Ads and Klaviyo connections are planned.
+
+## Features
+- [Profit dashboard](https://ecommercehelix.com/features/profit-dashboard): daily profit, profit per order, break-even cost per sale
+- [Daily growth plan](https://ecommercehelix.com/features/daily-growth-plan): one task a day across Attract, Convert, Grow
+- [Meta ads](https://ecommercehelix.com/features/meta-ads): Facebook and Instagram ads as paused drafts
+- [Email automation](https://ecommercehelix.com/features/email-automation): welcome, abandoned cart, retention flows
+- [Black Friday plan](https://ecommercehelix.com/features/black-friday-plan): 12-week BFCM plan
+- [Store audit](https://ecommercehelix.com/features/store-audit): conversion rate optimisation tasks
+
+## Guides
+- [How to increase your e-commerce conversion rate](https://ecommercehelix.com/guides/how-to-increase-ecommerce-conversion-rate)
+- [When to hire an e-commerce consultant or agency](https://ecommercehelix.com/guides/when-to-hire-an-ecommerce-consultant)
+- [Shopify growth checklist](https://ecommercehelix.com/guides/shopify-growth-checklist)
+- [How to reduce cart abandonment](https://ecommercehelix.com/guides/how-to-reduce-cart-abandonment)
+- [E-commerce SEO basics](https://ecommercehelix.com/guides/ecommerce-seo-basics)
+- [Break-even ROAS explained](https://ecommercehelix.com/guides/break-even-roas-explained)
+- [The email flows every store needs](https://ecommercehelix.com/guides/email-flows-every-store-needs)
+- [How to scale a DTC brand profitably](https://ecommercehelix.com/guides/how-to-scale-a-dtc-brand-profitably)
+
+## More
+- [FAQ](https://ecommercehelix.com/faq)
+- [About](https://ecommercehelix.com/about)
+- [The Helix Playbook (free lessons)](https://ecommercehelix.com/learn)
+- [Start free](https://ecommercehelix.com/start)

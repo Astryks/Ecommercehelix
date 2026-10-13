@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { signIn, authProviders } from "@/auth";
 import { Logo } from "@/components/Logo";
 
-export const metadata: Metadata = { title: "Sign in" };
+export const metadata: Metadata = { title: "Sign in", robots: { index: false, follow: true } };
 
 export default async function SignIn({ searchParams }: PageProps<"/signin">) {
   const sp = await searchParams;

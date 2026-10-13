@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -6,7 +7,7 @@ import { listModules } from "@/lib/learn";
 import { StageTrio } from "@/components/StageTrio";
 import { STAGE_INFO, STAGE_ORDER, type StageId } from "@/lib/stages";
 
-export const metadata: Metadata = { title: "Learn" };
+export const metadata: Metadata = pageMeta({ title: "The Helix Playbook: Free E-commerce Lessons", description: "Free step-by-step lessons on running a profitable online store: ads, conversion, email, profit and scaling, organised into Attract, Convert and Grow.", path: "/learn" });
 
 export default function Learn() {
   const modules = listModules();

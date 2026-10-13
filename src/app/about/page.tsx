@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -7,7 +8,7 @@ import { StageTrio } from "@/components/StageTrio";
 import { WHO_HEADLINE } from "@/lib/audience";
 import { GOALS_HEADLINE, LADDER } from "@/lib/goals";
 
-export const metadata: Metadata = { title: "About" };
+export const metadata: Metadata = pageMeta({ title: "About E-commerce Helix: Why We Built It", description: "The story behind E-commerce Helix: growth software that helps online store owners grow profit a little every day, with every change explained and approved by you.", path: "/about" });
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (

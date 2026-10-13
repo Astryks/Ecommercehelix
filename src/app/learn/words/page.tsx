@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { GLOSSARY } from "@/lib/glossary";
 
-export const metadata: Metadata = { title: "Words to know" };
+export const metadata: Metadata = pageMeta({ title: "E-commerce Words to Know, Explained in One Line", description: "Plain-English meanings of the e-commerce terms store owners meet: ROAS, AOV, conversion rate, break-even and more.", path: "/learn/words" });
 
 export default function Words() {
   const terms = [...GLOSSARY].sort((a, b) => a.term.localeCompare(b.term));

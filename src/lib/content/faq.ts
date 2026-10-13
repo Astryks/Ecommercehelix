@@ -1,0 +1,11 @@
+/** Shared FAQ, shown on the home page and /faq (with FAQPage JSON-LD). */
+export const HOME_FAQ = [
+  { q: "Who is Helix for?", a: "Helix is built for stores doing $10k to $100k a month that want to reach a $1M year, profitably. That is where it adds the most. It also works from your very first sale, and keeps helping as you scale toward $10M a year. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
+  { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
+  { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds Meta campaigns inside your own ad account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. For Google Ads, and if you prefer to build it yourself, Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
+  { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
+  { q: "How does the AI balance work?", a: "Paid plans include a monthly AI allowance. Extra usage comes from a prepaid balance you top up. When it reaches $0, AI actions stop. You are never billed beyond what you loaded." },
+  { q: "I have never run ads. Is this for me?", a: "Yes. Every task is written in plain English with numbered steps and simple drawings that show where to click. Any tricky word is explained in one line, like ROAS: how many dollars of sales you get for each $1 of ads." },
+  { q: "Why does Helix talk about profit so much?", a: "Because profit is what you keep. A store can grow sales and still lose money. Helix shows profit first, sets a break-even line for your ads, and only suggests spending more while each sale still makes money." },
+  { q: "Can Helix promise results?", a: "No honest tool can. Helix focuses on proven basics done consistently: know your numbers, test creative, fix the site, build your list, and compound small gains." },
+];

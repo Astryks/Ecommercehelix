@@ -11,7 +11,8 @@ export function SiteHeader({ dark = false }: { dark?: boolean }) {
         </Link>
         <div className="hidden items-center gap-8 text-sm font-medium md:flex">
           <Link className={link} href="/#how">How it works</Link>
-          <Link className={link} href="/#strategies">Strategies</Link>
+          <Link className={link} href="/features">Features</Link>
+          <Link className={link} href="/guides">Guides</Link>
           <Link className={link} href="/#pricing">Pricing</Link>
           <Link className={link} href="/learn">Learn</Link>
           <Link className={link} href="/about">About</Link>

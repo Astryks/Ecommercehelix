@@ -15,6 +15,17 @@ import { WhoFor } from "@/components/WhoFor";
 import { WHO_HEADLINE } from "@/lib/audience";
 import { GOALS_HEADLINE } from "@/lib/goals";
 import { isoDay } from "@/lib/dates";
+import { HOME_FAQ } from "@/lib/content/faq";
+import { JsonLd } from "@/components/JsonLd";
+import { faqLd, pageMeta, softwareLd } from "@/lib/seo";
+import { FEATURES } from "@/lib/content/features";
+import { ARTICLES } from "@/lib/content/guides";
+
+export const metadata = pageMeta({
+  title: "E-commerce Growth Software: Grow Your Online Store Profitably",
+  description: "E-commerce Helix helps store owners grow profitably: a daily profit dashboard, one clear growth task a day, Meta ads as paused drafts and email flows set up with your approval. Free to start.",
+  path: "/",
+});
 
 // Rebuild at least hourly so the seasonal alert follows the real date.
 export const revalidate = 3600;
@@ -45,16 +56,7 @@ const AGENCY_ROWS = [
   ["The know-how leaves when the contract ends", "The skills you learn stay with you and your team"],
 ];
 
-const FAQ = [
-  { q: "Who is Helix for?", a: "Helix is built for stores doing $10k to $100k a month that want to reach a $1M year, profitably. That is where it adds the most. It also works from your very first sale, and keeps helping as you scale toward $10M a year. Pick Just starting or Growing when you sign up, and Helix sets your lessons and goals to match." },
-  { q: "Is Helix an agency?", a: "No. Helix is software that works like a growth expert by your side. Your ad accounts, data and customers stay yours, and you approve every change." },
-  { q: "Will Helix spend money on my ad accounts?", a: "No. Helix builds Meta campaigns inside your own ad account as paused drafts. You review them and press Launch yourself, and every budget change on a live campaign is yours to make. For Google Ads, and if you prefer to build it yourself, Guide me mode gives you proven structures, example ads and a click-by-click checklist." },
-  { q: "Which platforms work today?", a: "Meta (Facebook and Instagram ads) connects today: Helix reads your results each morning and can build new campaigns as paused drafts. You add sales in one quick form or by CSV. Shopify, Google Ads and Klaviyo connections come next." },
-  { q: "How does the AI balance work?", a: "Paid plans include a monthly AI allowance. Extra usage comes from a prepaid balance you top up. When it reaches $0, AI actions stop. You are never billed beyond what you loaded." },
-  { q: "I have never run ads. Is this for me?", a: "Yes. Every task is written in plain English with numbered steps and simple drawings that show where to click. Any tricky word is explained in one line, like ROAS: how many dollars of sales you get for each $1 of ads." },
-  { q: "Why does Helix talk about profit so much?", a: "Because profit is what you keep. A store can grow sales and still lose money. Helix shows profit first, sets a break-even line for your ads, and only suggests spending more while each sale still makes money." },
-  { q: "Can Helix promise results?", a: "No honest tool can. Helix focuses on proven basics done consistently: know your numbers, test creative, fix the site, build your list, and compound small gains." },
-];
+
 
 function MorningBrief() {
   const bars = [38, 44, 31, 52, 47, 58, 64];
@@ -311,12 +313,35 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="explore" aria-labelledby="explore-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-24">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2">
+            <div>
+              <p className="eyebrow">What Helix does</p>
+              <h2 id="explore-title" className="mt-3 text-3xl text-slate-900">Tools to grow your online store</h2>
+              <ul className="mt-6 space-y-3">
+                {FEATURES.map((f) => (
+                  <li key={f.slug}><Link className="font-medium text-cyan-800 hover:underline" href={`/features/${f.slug}`}>{f.name}</Link></li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="eyebrow">Free guides</p>
+              <h2 className="mt-3 text-3xl text-slate-900">Guides for e-commerce owners</h2>
+              <ul className="mt-6 space-y-3">
+                {ARTICLES.map((a) => (
+                  <li key={a.slug}><Link className="font-medium text-cyan-800 hover:underline" href={`/guides/${a.slug}`}>{a.h1}</Link></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section id="faq" className="scroll-mt-10 py-24">
           <div className="mx-auto max-w-3xl px-5">
             <p className="eyebrow">FAQ</p>
             <h2 className="mt-3 text-3xl text-slate-900 sm:text-5xl">Good questions</h2>
             <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
-              {FAQ.map((f) => (
+              {HOME_FAQ.map((f) => (
                 <details key={f.q} className="group py-5">
                   <summary className="cursor-pointer list-none font-display text-lg font-semibold text-slate-900 marker:hidden">
                     <span className="flex items-center justify-between gap-4">{f.q}<span className="font-sans text-xl font-normal text-cyan-600 transition group-open:rotate-45">+</span></span>
@@ -332,6 +357,7 @@ export default function Home() {
         </section>
       </main>
       <SiteFooter />
+      <JsonLd data={[softwareLd(), faqLd(HOME_FAQ)]} />
     </>
   );
 }

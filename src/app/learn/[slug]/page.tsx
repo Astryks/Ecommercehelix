@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -15,7 +16,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/learn/[slug]">): Promise<Metadata> {
   const { slug } = await params;
-  return { title: renderLessonPage(slug)?.title ?? "Learn" };
+  const title = renderLessonPage(slug)?.title ?? "Learn";
+  const m = listModules().find((x) => x.slug === slug);
+  return pageMeta({ title, description: (m?.plain ?? `${title}: a free step-by-step lesson from the Helix Playbook.`).slice(0, 160), path: `/learn/${slug}`, type: "article" });
 }
 
 export default async function LearnModule({ params }: PageProps<"/learn/[slug]">) {

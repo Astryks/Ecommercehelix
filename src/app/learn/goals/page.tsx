@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -8,7 +9,7 @@ import { WhoFor } from "@/components/WhoFor";
 import { WHO_HEADLINE } from "@/lib/audience";
 import { GOALS_HEADLINE } from "@/lib/goals";
 
-export const metadata: Metadata = { title: "The goals ladder: what to aim at" };
+export const metadata: Metadata = pageMeta({ title: "The E-commerce Goals Ladder: What to Aim At", description: "The nine numbers to aim at as an online store, from visits to net profit, and how they connect.", path: "/learn/goals" });
 
 export default function GoalsGuide() {
   return (
