@@ -5,7 +5,7 @@ import { Celebration, GoalCard } from "@/components/course/GoalCard";
 import { changeOf, comparison, plainLine, totalsFor } from "@/lib/growth";
 import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
+import { getDiagnosis, getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
 import { bfcmTip, countdownText, seasonalAlerts, upcomingEvents, countryName } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
@@ -35,7 +35,7 @@ import { markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id)]);
+  const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers, diag] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id), getDiagnosis(u.id)]);
   const [rawDays, goalData, course] = await Promise.all([getRawDays(u.id), goalsFor(u.id), getCourse(u.id)]);
   const today = isoDay();
   const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
@@ -95,10 +95,16 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Start with your profit dashboard, then Day 1 below. Your store check is in What to fix.
         </div>
       )}
+      {acct.onboarded && !diag && (
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
+          <span><strong>New: your personal plan.</strong> Answer 10 quick questions and Helix finds the one thing holding your store back and checks your store. Your lessons and progress stay as they are.</span>
+          <Link href="/start?step=2" className="btn-primary px-4 py-2 text-sm">Get my plan <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+        </div>
+      )}
       {!acct.onboarded && !sp.welcome && (
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-cyan-200 bg-cyan-50 p-4 text-sm text-cyan-900">
-          <span><strong>New here?</strong> Tell Helix if you are just starting or already growing, and where your customers live. It takes a minute and picks the right lessons and sale dates for you.</span>
-          <Link href="/start" className="btn-primary px-4 py-2 text-sm">Pick your track <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+          <span><strong>New here?</strong> Answer a few quick questions and Helix builds your plan. About 2 minutes.</span>
+          <Link href="/start" className="btn-primary px-4 py-2 text-sm">Build my plan <ArrowRight className="h-4 w-4" aria-hidden /></Link>
         </div>
       )}
       <header className="flex flex-wrap items-end justify-between gap-4">

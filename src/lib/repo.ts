@@ -575,3 +575,30 @@ export async function deleteAccount(userId: string) {
   }
   await prisma.user.delete({ where: { id: userId } });
 }
+
+// ---------- diagnosis and personal plan ----------
+const memDiag = ((globalThis as unknown as { __helixDiag?: Map<string, { d: import("./diagnosis").Diagnosis; at: string; planStart: string | null }> }).__helixDiag ??= new Map());
+
+export type DiagnosisRow = { diagnosis: import("./diagnosis").Diagnosis; diagnosedAt: string; planStartedAt: string | null };
+
+export async function getDiagnosis(userId: string): Promise<DiagnosisRow | null> {
+  if (!hasDb) {
+    const m = memDiag.get(userId);
+    return m ? { diagnosis: m.d, diagnosedAt: m.at, planStartedAt: m.planStart } : null;
+  }
+  const u = await prisma.user.findUnique({ where: { id: userId }, select: { diagnosis: true, diagnosedAt: true, planStartedAt: true } });
+  if (!u?.diagnosis || !u.diagnosedAt) return null;
+  return { diagnosis: u.diagnosis as unknown as import("./diagnosis").Diagnosis, diagnosedAt: u.diagnosedAt.toISOString(), planStartedAt: u.planStartedAt?.toISOString() ?? null };
+}
+
+/** Save the answers and result. Starts the 12-week plan the first time (or when restarted). */
+export async function saveDiagnosis(userId: string, d: import("./diagnosis").Diagnosis, restartPlan = false) {
+  const now = new Date();
+  if (!hasDb) {
+    const prev = memDiag.get(userId);
+    memDiag.set(userId, { d, at: now.toISOString(), planStart: !prev?.planStart || restartPlan ? now.toISOString() : prev.planStart });
+    return;
+  }
+  const prev = await prisma.user.findUnique({ where: { id: userId }, select: { planStartedAt: true } });
+  await prisma.user.update({ where: { id: userId }, data: { diagnosis: d as object, diagnosedAt: now, ...(!prev?.planStartedAt || restartPlan ? { planStartedAt: now } : {}) } });
+}
