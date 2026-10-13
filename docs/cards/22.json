@@ -1,0 +1,111 @@
+{
+"22.1": {"intro": "A store takes days to build and minutes to judge. Plan first, so you only build what buyers need. It takes about an hour.",
+ "steps": [
+  {"say": "Write your one-line promise: who it's for and what they get.", "check": "You can say in one sentence what you sell and who it's for.", "lost": "Finish this: \"For ___ who want ___.\""},
+  {"say": "List your products with price, product cost, and what one order costs to send.", "check": "You know your cost per order for each product.", "lost": "Write it for your main product."},
+  {"say": "Choose one launch country (Australia or the US). Add more later.", "check": "You have one launch country.", "lost": "Pick your home country."},
+  {"say": "Pick the cheapest Shopify plan with the features you need (check Shopify's pricing page).", "check": "You know your monthly platform cost.", "lost": "Start with the cheapest plan."},
+  {"say": "Collect your logo, 4 to 8 photos per product, your returns rule, your ABN (Australia) or EIN (US, if you have one), and a business bank account.", "check": "Everything you need to build is in one folder.", "careful": "Australia: expect $75,000 or more in sales in a year? Read Lesson 22.10 before setting prices. US: your home state is where you're most likely to owe sales tax first.", "lost": "Make one folder. Put your logo in it."}
+ ]},
+"22.2": {"intro": "Your domain is your web address. Your own domain looks more trustworthy, and branded email reaches inboxes better.",
+ "steps": [
+  {"say": "In Shopify **Settings > Domains**, buy a short domain that matches your brand, or connect one you own.", "check": "The domain shows as connected in Settings.", "careful": "Australia: a .com.au needs an ABN, and many brands own both .com.au and .com. US: .com is normal.", "lost": "Open **Settings > Domains**."},
+  {"say": "Set it as the primary domain, so myshopify.com sends people to it.", "check": "Typing your domain opens your store.", "lost": "Click **Set as primary**."},
+  {"say": "Set up a branded email like hello@yourbrand.com. Use it for support and as the sender in your email tool.", "check": "Customer emails come from your own domain.", "lost": "Make hello@ your address."},
+  {"say": "Send a test email to yourself.", "check": "It lands in your inbox, not spam.", "lost": "Send one test email."}
+ ]},
+"22.3": {"intro": "The theme is your store's design. Fast and simple beats fancy and slow. Always edit a copy, so you never break the live store.",
+ "steps": [
+  {"say": "In **Online Store > Themes**, start with a free Shopify theme like Dawn.", "check": "A fast, supported theme is installed.", "careful": "Only pay for a theme if it has a feature you truly need, and you've checked its speed on a phone.", "lost": "Use Dawn. It's free."},
+  {"say": "Click **Duplicate** on the theme. Make all changes on the copy.", "check": "You're working on a copy, not the live theme.", "lost": "Click **Duplicate**."},
+  {"say": "In **Customize > Theme settings**, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.", "check": "Your store uses no more than 2 fonts and 3 main colours.", "lost": "Upload your logo."},
+  {"say": "Plan menus for computer and phone separately. Phones get fewer, bigger links.", "check": "The mobile menu has 5 or fewer links.", "lost": "Keep 5 links on mobile."}
+ ]},
+"22.4": {"intro": "The home page answers three questions in seconds: what is this, is it for me, and can I trust it?",
+ "steps": [
+  {"say": "In the theme editor, add a promo bar with one short line, like your shipping offer or a guarantee.", "check": "The promo bar shows at the very top of every page.", "lost": "Add a promo bar: \"Free shipping over $X\"."},
+  {"say": "Set the header menu to your logo plus 4 to 5 links (like Shop, Bundles, Reviews, FAQ, About).", "check": "The header is simple and tidy.", "lost": "Keep 4 links."},
+  {"say": "Add a banner: a photo of the product in use, your promise in one line, and one button (\"Shop now\"). You can add a row of category tiles people swipe on mobile.", "check": "The top of the page says what you sell and gives one next step.", "lost": "Add one photo, one line, one button."},
+  {"say": "Below the banner, add these sections in order. Use **Add section** for each.\n\n1. 3 points on what makes you different.\n2. Best sellers with prices.\n3. Reasons to buy.\n4. Proof: rating, customer count, press.\n5. How it works, in 3 steps.\n6. Customer photos and reviews.\n7. Expert backing, if you have it.\n8. Email sign-up and a simple footer.", "check": "The home page has every section in order.", "lost": "Add best sellers first."},
+  {"say": "Show your home page on a phone to someone new for 5 seconds.", "check": "They can say what you sell.", "lost": "Ask one person: what do I sell?"}
+ ]},
+"22.5": {"intro": "Most buying decisions happen on the product page. Answer every worry before they ask.",
+ "steps": [
+  {"say": "Write a short title: product name plus the main thing it does or is made of (\"Linen Shirt, Relaxed Fit\").", "check": "The title is clear and short.", "lost": "Name plus one feature."},
+  {"say": "Upload at least 4 square photos: plain background, in use, size or scale, and a close-up of the key detail.", "check": "The photos show what it looks like in real life.", "lost": "Add one photo of it being used."},
+  {"say": "Make sure price, star rating with review count, promise line and Add to cart sit near the top.", "check": "On a phone you see price, rating and Add to cart without scrolling.", "lost": "Check Add to cart shows without scrolling."},
+  {"say": "Write the description as short lines: the result first, then 3 to 5 key points, then what's included. Add a short FAQ under the button (sizing, materials, shipping time, returns, care).", "check": "Common questions are answered on the page.", "lost": "Add 3 FAQs under the button."},
+  {"say": "Turn on sticky Add to cart for mobile in theme settings. Fill in the search title and description in plain words.", "check": "The button stays visible as people scroll, and Google shows a clean listing.", "lost": "Turn on sticky Add to cart."}
+ ]},
+"22.6": {"intro": "Variants are a product's options, like size or colour. Inventory is how many you have. Set them up right so you don't oversell.",
+ "steps": [
+  {"say": "Add options (Size, Colour) to one product, instead of making separate products.", "check": "One product page shows every option.", "lost": "Add Size as an option."},
+  {"say": "Give each variant its own photo, price if different, SKU (your code for each version) and stock count.", "check": "Every variant is complete.", "lost": "Add a stock count to each variant."},
+  {"say": "Turn on **Track quantity** and choose to stop selling at zero. Taking preorders? Show a clear ship date.", "check": "Shopify stops selling when you run out.", "lost": "Tick **Track quantity**."},
+  {"say": "Fill in **Cost per item** and weight on every variant.", "check": "Helix can work out profit, and Shopify can work out shipping.", "lost": "Fill in **Cost per item** for your best seller."}
+ ]},
+"22.7": {"intro": "People trust other customers more than you. A review app collects reviews for you. Honest replies to bad reviews build trust.",
+ "steps": [
+  {"say": "Install one review app that collects photo reviews and sends a request email after delivery.", "check": "Review requests go out by themselves.", "lost": "Install one review app."},
+  {"say": "Show the star rating under the product title and near Add to cart. Add a photo review section lower on product pages and the home page.", "check": "Your rating shows near the top of every product page.", "lost": "Show stars under the title."},
+  {"say": "Ask early buyers, testers and friends who used the product for honest reviews.", "check": "Your first products have real reviews.", "careful": "Never write fake reviews or pay for good ones. Both break consumer law in Australia and the US.", "lost": "Ask 3 real users for an honest review."},
+  {"say": "Reply to bad reviews politely, and fix the problem.", "check": "Shoppers see you handle problems well.", "lost": "Reply kindly to one review."}
+ ]},
+"22.8": {"intro": "Collections are groups of products. A new visitor should reach any product in 3 taps or fewer.",
+ "steps": [
+  {"say": "Make collections for Best sellers, New, and one per product type. Use automatic collections where you can.", "check": "Collections update themselves as products change.", "lost": "Make a Best sellers collection."},
+  {"say": "Build the main menu with 4 to 5 links, with deeper links in drop-downs.", "check": "Any product is 3 taps away.", "lost": "Add 4 links to the main menu."},
+  {"say": "Turn on Shopify's filters (size, colour, price, in stock) with multi-select. Add a second photo on hover and quick add if your theme allows.", "check": "Shoppers can narrow down and add from collections.", "lost": "Turn on the size filter."},
+  {"say": "Search your store for your top 5 product words and one common misspelling.", "check": "Every search shows the right products.", "lost": "Search one product word."}
+ ]},
+"22.9": {"intro": "Surprise shipping costs make people leave. Simple rates, a free shipping amount and honest delivery times fix most of it.",
+ "steps": [
+  {"say": "In **Settings > Shipping and delivery**, make a zone for your home country.", "check": "A home country zone exists.", "lost": "Add your home country zone."},
+  {"say": "Add Standard and Express rates priced from real carrier costs, or use calculated rates.", "check": "Checkout shows two clear options.", "lost": "Add a Standard rate."},
+  {"say": "Set a free shipping amount about 1.2 to 1.4 times your average order. Example: $50 average, so $60 to $70. Show it in the promo bar and near Add to cart (\"Free shipping over $X\").", "check": "Shoppers see how close they are to free shipping.", "lost": "Average order × 1.3 = free shipping amount."},
+  {"say": "Write delivery times as a range (\"arrives in 3 to 6 business days\").", "check": "Checkout shows a clear price and delivery range.", "careful": "Australia: compare Australia Post, Sendle and couriers, and set a separate remote area rate if needed. US: compare USPS, UPS and FedEx in Shopify Shipping. Add overseas zones only once home works.", "lost": "Write \"3 to 6 business days\"."}
+ ]},
+"22.10": {"intro": "Tax set up wrong costs money or breaks the law. Australia: GST registration is needed once turnover reaches $75,000. US: sales tax depends on nexus (a strong enough link to a state). Helix takes GST out of your sales before any profit maths.",
+ "steps": [
+  {"say": "Australia: check if your GST turnover (this month plus the previous 11) has reached $75,000, or will in the next 12 months. If so, register within 21 days (the ATO website explains how).", "check": "You know if you must register.", "lost": "Add up the last 12 months of sales. Is it $75,000 or more?"},
+  {"say": "Australia, once registered: in Shopify **Settings > Taxes and duties**, turn on **Include sales tax in product price and shipping rate**.", "check": "Prices shown to Australians include GST.", "careful": "Not registered? Don't charge GST, and don't call invoices tax invoices.", "lost": "Not registered yet? Skip this card."},
+  {"say": "In Helix **Settings**, leave **My prices include GST/VAT** on (the default for Australia) if you type totals with tax in, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already ex tax), or you're not registered.", "check": "Helix divides sales by 1.1 before profit maths when needed. Example: $110 becomes $100. New Zealand (15%) and UK (20%) are there too.", "lost": "Typing Total sales? Leave it on."},
+  {"say": "US: list states where you have a physical presence (home state, warehouse). Check each state's economic nexus threshold, often $100,000 of sales a year.", "check": "You know where you owe sales tax.", "lost": "Start with your home state."},
+  {"say": "US: register with each state before collecting. Then turn that state on in **Settings > Taxes and duties**.", "check": "Shopify collects tax only where you're registered, and tracks your progress to other thresholds.", "lost": "Register first. Then turn the state on."}
+ ]},
+"22.11": {"intro": "Let people pay the way they like. Every extra step at checkout loses buyers.",
+ "steps": [
+  {"say": "In **Settings > Payments**, turn on Shopify Payments if it's available in your country.", "check": "Cards are accepted with lower total fees.", "lost": "Turn on Shopify Payments."},
+  {"say": "Turn on Shop Pay, Apple Pay and Google Pay. Add PayPal.", "check": "Checkout shows express buttons and PayPal.", "lost": "Turn on Apple Pay."},
+  {"say": "Think about one buy now pay later option: Afterpay in Australia, Shop Pay Installments in the US.", "check": "Shoppers can pay in parts. Check the fee, which is higher than a card fee.", "lost": "Check the fee before you turn it on."},
+  {"say": "Set your payout bank account, and a statement name that matches your brand.", "check": "Customers recognise the charge on their bank statement.", "lost": "Set the statement name to your brand."}
+ ]},
+"22.12": {"intro": "Clear policies build trust and keep you within the law. Write them so a 12-year-old could follow them.",
+ "steps": [
+  {"say": "In **Settings > Policies**, create Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates.", "check": "All five policy pages exist.", "lost": "Make the Refund policy first."},
+  {"say": "Rewrite each in plain words with your own cut-off dates and delivery ranges.", "check": "The policies sound like you and match what you really do.", "careful": "Australia: under Australian Consumer Law, customers always have rights to repair, replacement or refund for faulty or not-as-described products. Never write \"no refunds\" or \"no refunds on sale items\". US: if you state a shipping time, the FTC mail order rule expects you to meet it, or ship within 30 days if you state none.", "lost": "Rewrite one policy in plain words."},
+  {"say": "Link every policy in the footer and near checkout.", "check": "Every policy is one click away.", "lost": "Add policy links to the footer."},
+  {"say": "Only email people who said yes. Every marketing email needs an unsubscribe link.", "check": "Your email marketing follows the rules.", "lost": "Check your emails have an unsubscribe link."}
+ ]},
+"22.13": {"intro": "Every app can slow your store and costs money each month. A small starter set covers almost everything. Module 18 says when to add more.",
+ "steps": [
+  {"say": "Install the starter set only: a reviews app, Shopify Email or Klaviyo, the Facebook & Instagram and Google & YouTube sales channels, and (optional) an after-purchase offer app. Add subscriptions only if you sell refills.", "check": "Your app list is short and every app has a job.", "lost": "Install a reviews app and an email app."},
+  {"say": "Before installing anything else, check if your theme can already do it (badges, size charts and FAQs often are built in).", "check": "You skip apps for things you already have.", "lost": "Check your theme settings first."},
+  {"say": "Install new apps on a theme copy. Test speed before and after.", "check": "No app slows the live store without you noticing.", "lost": "Test speed before and after."},
+  {"say": "Remove apps you stop using. Check they left no code behind.", "check": "You can name what each app does and what it costs each month.", "lost": "Remove one app you don't use."}
+ ]},
+"22.16": {"intro": "A test order proves payments, emails, stock and tracking all work together. It's the last step before real customers.",
+ "steps": [
+  {"say": "Turn on test mode for Shopify Payments, or use the Bogus Gateway.", "check": "Checkout accepts test card numbers.", "lost": "Turn on test mode."},
+  {"say": "Place an order on your phone like a customer would. Use a discount code if you have one.", "check": "The order goes through.", "lost": "Buy one thing on your phone."},
+  {"say": "Check the confirmation email arrived, stock dropped by one, shipping and tax were right, and a Purchase showed in Meta and Google.", "check": "Every system recorded the order correctly.", "lost": "Check the confirmation email arrived."},
+  {"say": "Refund or cancel the test order. Turn test mode off.", "check": "The store is back in live mode.", "lost": "Turn test mode off."},
+  {"say": "Place one small real order with your own card. Refund it.", "check": "A real card payment went through and shows in your payouts.", "lost": "Buy one cheap thing with your card. Refund it."}
+ ]},
+"22.17": {"intro": "One last checklist before you launch or turn on ads catches the small things.",
+ "steps": [
+  {"say": "Go through every row of the lesson's table and tick it off.", "check": "Every row is ticked.", "lost": "Tick the first 5 rows."},
+  {"say": "Remove the store password in **Online Store > Preferences**.", "check": "Anyone can visit the store.", "lost": "Open **Preferences**. Remove the password."},
+  {"say": "Start your 2-minute morning numbers in Helix. Plan your first small test campaign.", "check": "Your first day of numbers is in, and a test campaign brief is started.", "lost": "Enter today's numbers in Helix."}
+ ]}
+}
