@@ -73,8 +73,8 @@ export async function ensureUser(id: string, email: string, name: string): Promi
   if (!user && mayLinkByEmail(id, email)) user = await prisma.user.findUnique({ where: { email } });
   if (!user) user = await prisma.user.create({ data: { id, email: email || null, name, isDemo: isDemoUserId(id) } });
   const sub = await prisma.subscription.findUnique({ where: { userId: user.id } });
-  if (!sub) {
-    await prisma.subscription.create({ data: { userId: user.id } });
+  // Pages call this in parallel on a first visit; skipDuplicates means only the first call seeds.
+  if (!sub && (await prisma.subscription.createMany({ data: [{ userId: user.id }], skipDuplicates: true })).count > 0) {
     await prisma.scorecardDay.createMany({ data: exampleDays(isoDay()).map((d) => ({ ...d, userId: user!.id })), skipDuplicates: true });
     await prisma.productSale.createMany({ data: exampleProducts(isoDay()).map((p) => ({ ...p, userId: user!.id })) });
   }
@@ -395,6 +395,9 @@ async function seedStock(userId: string) {
   }
   const u = await prisma.user.findUnique({ where: { id: userId }, select: { stockSeeded: true } });
   if (!u || u.stockSeeded) return;
+  // Claim the seeding first so parallel first-visit calls don't both insert the same SKUs.
+  const claimed = await prisma.user.updateMany({ where: { id: userId, stockSeeded: false }, data: { stockSeeded: true } });
+  if (claimed.count === 0) return;
   const sup = exampleSuppliers();
   const ids = new Map<string, string>();
   for (const s of sup) {
@@ -407,7 +410,6 @@ async function seedStock(userId: string) {
     void _id;
     await prisma.stockItem.create({ data: { ...data, example: true, userId, supplierId: supplierId ? ids.get(supplierId) ?? null : null } });
   }
-  await prisma.user.update({ where: { id: userId }, data: { stockSeeded: true } });
 }
 
 export async function getSuppliers(userId: string): Promise<Supplier[]> {
