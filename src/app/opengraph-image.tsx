@@ -5,7 +5,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OgImage() {
-  // Wordmark in Kalam Bold, the same handwriting as the site. Falls back to the default font if Google Fonts is unreachable.
+  // Kalam Bold for all text (wordmark included), the same handwriting as the site. Falls back to the default font if Google Fonts is unreachable.
   const kalam = await loadKalam();
   return new ImageResponse(
     (
@@ -21,7 +21,7 @@ export default async function OgImage() {
 
 async function loadKalam(): Promise<ArrayBuffer | null> {
   try {
-    const css = await (await fetch("https://fonts.googleapis.com/css2?family=Kalam:wght@700&text=E-commerce%20Helix", { signal: AbortSignal.timeout(4000) })).text();
+    const css = await (await fetch("https://fonts.googleapis.com/css2?family=Kalam:wght@700", { signal: AbortSignal.timeout(4000) })).text();
     const url = css.match(/src: url\((.+?)\) format/)?.[1];
     return url ? await (await fetch(url, { signal: AbortSignal.timeout(4000) })).arrayBuffer() : null;
   } catch {
