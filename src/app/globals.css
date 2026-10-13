@@ -147,8 +147,12 @@ a { text-underline-offset: 3px; }
   color: var(--color-accent);
   font-family: var(--font-serif);
   font-style: normal;
-  padding-bottom: 0.12em;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M3 6 L197 6' fill='none' stroke='%235A50D6' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") bottom left / 100% 0.32em no-repeat;
+  padding-bottom: 0.16em;
+  padding-right: 0.1em; /* small overshoot past the word */
+  margin-right: -0.1em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  /* Signature-style stroke: straight, rising about 3 degrees, thin start, full middle, flicked end. Filled shape so it tapers. */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M1 12.6 C 40 11.9, 90 10, 140 7.6 C 165 6.3, 185 4.8, 199 2.2 C 199.6 2.1, 199.8 2.6, 199.2 3 C 185 7, 165 9.6, 140 11.4 C 92 13.6, 42 13.9, 1.4 13.5 C 0.8 13.3, 0.6 12.7, 1 12.6 Z' fill='%235A50D6'/%3E%3C/svg%3E") bottom left / 100% 0.46em no-repeat;
 }
 :where(.helix-glow, .bg-slate-900) .grad-text { color: #b0abef; }
 
