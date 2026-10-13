@@ -98,7 +98,8 @@ export function diagnose(a: Answers): Diagnosis {
     "leaky-bucket": ["email-flows", "grow"], "ready-to-scale": ["1000-visits", "attract"],
   };
   const track: TrackId = smallRev ? "starting" : "growing";
-  let [startGoal, stage] = start[b];
+  const [firstGoal, stage] = start[b];
+  let startGoal = firstGoal;
   if (track === "starting" && startGoal === "1000-visits") startGoal = "first-100-visits";
   if (track === "starting" && startGoal === "aov-plus-10") startGoal = "add-to-cart-8";
   return { answers: a, bottleneck: b, sentence, startGoal, stage, weeks: a.hours === "1-2" ? 24 : 12, track };

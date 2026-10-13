@@ -9,7 +9,7 @@ export const LEGAL_EMAIL = "support@astryks.com";
 export function Mail() {
   return <a className="break-all text-cyan-700 underline" href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>;
 }
-export const OPERATOR = "Astryks (Siddharth Mehta, a sole trader, ABN 74 309 712 800, New South Wales, Australia)";
+export const OPERATOR = "Astryks";
 
 export function LegalPage({ title, intro, children }: { title: string; intro: string; children: ReactNode }) {
   return (

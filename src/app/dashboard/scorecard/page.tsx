@@ -88,7 +88,7 @@ export default async function Scorecard() {
             <h1 className="text-3xl font-bold tracking-tight">Your numbers</h1>
             {hasExample && <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>}
           </div>
-          <p className="mt-1 text-slate-600">One headline first. Tap "Show more detail" when you want the full picture. Showing <strong>{prettyDay(latest)}</strong>.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
+          <p className="mt-1 text-slate-600">One headline first. Tap &ldquo;Show more detail&rdquo; when you want the full picture. Showing <strong>{prettyDay(latest)}</strong>.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <Link href="/learn/01-daily-profit-foundations" className="btn-ghost text-xs"><BookOpen className="h-3.5 w-3.5" aria-hidden /> How to read this</Link>
