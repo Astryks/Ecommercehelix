@@ -10,7 +10,7 @@ import { disconnectMetaAction, pickMetaAssets, syncMetaNow } from "./actions";
 
 const MSG: Record<string, [string, string]> = {
   connected: ["ok", "Meta is connected. Now pick your ad account, Page and pixel."],
-  saved: ["ok", "Saved. If you just picked an ad account, now pick its pixel, then press Sync now."],
+  saved: ["ok", "Saved. Pick a pixel too if this ad account has one, then press Sync now."],
   synced: ["ok", "Synced. Your campaign tracker, scorecard ad spend and insights are up to date."],
   disconnected: ["ok", "Meta is disconnected. Helix deleted your token and synced data."],
   state: ["err", "That sign-in link expired or did not match. Please try again."],
@@ -18,6 +18,19 @@ const MSG: Record<string, [string, string]> = {
   exchange: ["err", "Meta did not accept the sign-in. While Helix waits for Meta's approval, only invited testers can connect. It opens to all stores after Meta's approval."],
   sync: ["err", "The sync failed. See the activity log below."],
   not_configured: ["err", "The Meta app is not set up on this server yet."],
+  pick_account: ["err", "Choose an ad account, then press Save choices."],
+  pick_invalid: ["err", "That choice did not look right. Reload the page and pick again."],
+  pick_account_missing: ["err", "That ad account is not shared with Helix. Reconnect Meta and tick it when Facebook asks which ad accounts to share."],
+  pick_no_accounts: ["err", "Meta did not share any ad accounts with Helix. Reconnect Meta and tick your store's ad account when Facebook asks which ones to share."],
+  revoked: ["err", "Meta access was removed or expired, so Helix disconnected it. Please reconnect."],
+  pick_failed: ["err", "Helix could not save your choice because Meta did not respond properly. Please try again in a minute."],
+};
+
+/** Extra notes shown after a successful save. */
+const SAVE_NOTES: Record<string, string> = {
+  page_missing: "The Page you picked is not shared with Helix, so it was skipped. If you created it after connecting, press Disconnect, then Connect Meta again and tick the new Page when Facebook asks which Pages to share.",
+  no_page: "No Page is saved yet. Pick the Page your ads should run from.",
+  pixel_missing: "The pixel you picked is not on this ad account, so it was skipped.",
 };
 
 const when = (iso: string | null) => (iso ? new Date(iso).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" }) + " Sydney" : "never");
@@ -47,6 +60,9 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
       {flash && (
         <p className={`mt-4 rounded-xl px-4 py-2.5 text-sm ${MSG[flash][0] === "ok" ? "border border-emerald-200 bg-emerald-50 text-emerald-900" : "border border-rose-200 bg-rose-50 text-rose-900"}`}>{MSG[flash][1]}</p>
       )}
+      {flash === "saved" && Object.keys(SAVE_NOTES).filter((k) => sp[k] !== undefined).map((k) => (
+        <p key={k} className="mt-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-900">{SAVE_NOTES[k]}</p>
+      ))}
 
       <section className="card mt-6 p-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
@@ -101,6 +117,9 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
             <form action={pickMetaAssets} className="rounded-xl border border-slate-200 p-4">
               <p className="font-semibold">1. Pick what Helix should use</p>
               {assetError && <p className="mt-2 text-sm text-rose-700">Could not load your accounts: {assetError}</p>}
+              {assets && !assetError && assets.accounts.length === 0 && <p className="mt-2 text-sm text-rose-700">Meta did not share any ad accounts with Helix. Disconnect, then Connect Meta again and tick your store&apos;s ad account.</p>}
+              {assets?.pixelError && <p className="mt-2 text-sm text-amber-800">Could not load pixels for this ad account ({assets.pixelError}). You can still save the ad account and Page.</p>}
+              <p className="mt-2 text-xs text-slate-500">Made a new Page after connecting? It only appears here once you reconnect Meta and tick it when Facebook asks which Pages to share.</p>
               <div className="mt-3 grid gap-3 md:grid-cols-3">
                 <label className="text-sm"><span className="text-slate-600">Ad account</span>
                   <select name="adAccountId" defaultValue={conn.adAccountId ?? ""} className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
@@ -116,7 +135,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
                 </label>
                 <label className="text-sm"><span className="text-slate-600">Pixel (tracks sales)</span>
                   <select name="pixelId" defaultValue={conn.pixelId ?? ""} className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
-                    <option value="">{conn.adAccountId ? "Choose a pixel" : "Save an ad account first"}</option>
+                    <option value="">{conn.adAccountId ? (assets?.pixels.length ? "Choose a pixel" : "No pixel on this ad account (optional)") : "Save an ad account first"}</option>
                     {assets?.pixels.map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}
                   </select>
                 </label>

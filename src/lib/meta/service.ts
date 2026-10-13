@@ -88,24 +88,44 @@ export async function listAssets(userId: string, adAccountId?: string | null) {
       .catch(() => g.getAll<Page>("me/accounts", { fields: "id,name" }, 3)),
   ]);
   const act = adAccountId && accounts.some((a) => a.id === adAccountId) ? adAccountId : null;
-  const pixels = act ? await g.getAll<Pixel>(`${act}/adspixels`, { fields: "id,name,last_fired_time" }, 2) : [];
-  return { accounts, pages, pixels };
+  // Pixels are optional: a failed lookup must not block picking the ad account or Page.
+  let pixelError = "";
+  const pixels = act
+    ? await g.getAll<Pixel>(`${act}/adspixels`, { fields: "id,name,last_fired_time" }, 2).catch((e: Error) => {
+        pixelError = e.message;
+        return [] as Pixel[];
+      })
+    : [];
+  return { accounts, pages, pixels, pixelError };
 }
 
-/** Save the picked ad account, page and pixel. IDs are checked against what the token can actually see. */
-export async function selectAssets(userId: string, pick: { adAccountId: string; pageId: string; pixelId: string }) {
+export type SelectResult = { adAccountName: string; pageSaved: boolean; pageMissing: boolean; pixelSaved: boolean; pixelMissing: boolean };
+
+/** Thrown when the pick cannot be saved; message is safe to show to the user. */
+export class AssetPickError extends Error {}
+
+/**
+ * Save the picked ad account, Page and pixel. IDs are checked against what the token can actually see.
+ * The ad account is required; a Page or pixel the token cannot see is skipped (reported back) instead of failing the save.
+ */
+export async function selectAssets(userId: string, pick: { adAccountId: string; pageId: string; pixelId: string }): Promise<SelectResult> {
   const { accounts, pages, pixels } = await listAssets(userId, pick.adAccountId);
+  if (accounts.length === 0) throw new AssetPickError("Meta did not share any ad accounts with Helix. Reconnect Meta and tick your store's ad account when Facebook asks which ones to share.");
   const acct = accounts.find((a) => a.id === pick.adAccountId);
-  const page = pages.find((p) => p.id === pick.pageId) ?? null;
-  const pixel = pixels.find((p) => p.id === pick.pixelId) ?? null;
-  if (!acct) throw new Error("That ad account is not available to this login.");
+  if (!acct) throw new AssetPickError("That ad account is not shared with Helix. Reconnect Meta and tick it when Facebook asks which ad accounts to share.");
+  const page = pick.pageId ? pages.find((p) => p.id === pick.pageId) ?? null : null;
+  const pixel = pick.pixelId ? pixels.find((p) => p.id === pick.pixelId) ?? null : null;
   await updateConnection(userId, {
     adAccountId: acct.id, adAccountName: acct.name, currency: acct.currency, timezone: acct.timezone_name,
     pageId: page?.id ?? null, pageName: page?.name ?? null,
     instagramId: page?.instagram_business_account?.id ?? null, instagramUsername: page?.instagram_business_account?.username ?? null,
     pixelId: pixel?.id ?? null, pixelName: pixel?.name ?? null,
   });
-  await logAudit(userId, { actor: "user", action: "meta.select_assets", target: acct.id, outcome: "ok", detail: { page: page?.id, pixel: pixel?.id } });
+  const result: SelectResult = {
+    adAccountName: acct.name, pageSaved: !!page, pageMissing: !!pick.pageId && !page, pixelSaved: !!pixel, pixelMissing: !!pick.pixelId && !pixel,
+  };
+  await logAudit(userId, { actor: "user", action: "meta.select_assets", target: acct.id, outcome: "ok", detail: { page: page?.id, pixel: pixel?.id, pageMissing: result.pageMissing, pixelMissing: result.pixelMissing } });
+  return result;
 }
 
 /** Pull last-7-day campaign insights, account trends and 14 days of daily spend. Read only. */
