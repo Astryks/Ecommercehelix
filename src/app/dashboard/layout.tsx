@@ -40,8 +40,8 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
           <div className="py-5 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col">
           <Link href="/" className="block px-2"><Logo dark size={30} /></Link>
           <nav className="mt-6 lg:flex-1" aria-label="Dashboard"><NavLinks pending={pending} /></nav>
-          <div className="mt-4 hidden rounded-xl bg-white/5 p-4 text-sm text-slate-300 lg:block">
-            <p className="font-medium text-white">{u.name || u.email}</p>
+          <div className="mt-4 hidden min-w-0 rounded-xl bg-white/5 p-4 text-sm text-slate-300 lg:block">
+            <p className="truncate font-medium text-white" title={u.name || u.email || undefined}>{u.name || u.email}</p>
             {isDemoUserId(u.id) && <p className="mt-1 text-xs font-semibold text-amber-300">Demo account</p>}
             <p className="mt-0.5 truncate text-xs text-slate-400">{acct.storeUrl ?? "No store connected yet"}</p>
             <p className="mt-3 text-xs"><span className="rounded-full bg-cyan-500 px-2 py-0.5 font-bold text-slate-950">{planName(acct.plan)}</span></p>
