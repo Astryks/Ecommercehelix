@@ -36,6 +36,9 @@ import { addDays, isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
 import { NextCardHero } from "@/components/cards/NextCardHero";
 import { userCards } from "@/lib/cards-user";
+import { seasonTasksFor } from "@/lib/season-tasks";
+import { bannerFor } from "@/lib/season-calendar";
+import { waterfall } from "@/lib/profit-setup";
 import { TodayTasks } from "@/components/dashboard/TodayTasks";
 import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
 import { MilestoneToast } from "@/components/dashboard/MilestoneToast";
@@ -103,7 +106,12 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const dayTask: TodayTask | null = current && !currentLocked ? { id: "day", title: current.title, why: current.steps[0] ?? current.topic, minutes: current.minutes, guideHref: `/learn/${current.learn.slug}#${current.learn.anchor}`, taskId: dayTaskId(current.day), kind: "day" } : null;
   const ins0 = insights[0];
   const insightTask: TodayTask | null = ins0 ? { id: "insight", title: ins0.title, why: ins0.why, minutes: 10, guideHref: `/learn/${ins0.learn.slug}${ins0.learn.anchor ? `#${ins0.learn.anchor}` : ""}`, taskId: `insight-${ins0.id}`, kind: "insight" } : null;
-  const seasonTasks: TodayTask[] = shownAlerts.filter((a) => planKeys.has(a.key)).flatMap((a) => nextTasks(a, done, 1).map((t) => ({ id: t.taskId, title: `${a.name}: ${t.title}`, why: t.steps[0] ?? "", minutes: 15, guideHref: t.learn ? `/learn/${t.learn.slug}#${t.learn.anchor}` : "/dashboard/calendar", taskId: t.taskId, kind: "season" as const })));
+  const setupRow = await getProfitSetup(u.id);
+  const wf = setupRow ? waterfall(setupRow) : null;
+  const recent = rawDays.filter((d) => !d.example && d.date >= addDays(today, -28));
+  const dailyUnits = recent.length ? recent.reduce((a, d) => a + d.units, 0) / 28 : 0;
+  const seasonTasks: TodayTask[] = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl })
+    .map((t) => ({ id: t.taskId, title: (t.catchUp ? "Catch up: " : "") + t.title, why: `${t.why} ${t.steps[0]}`, minutes: 15, guideHref: t.guideHref, taskId: t.taskId, kind: "season" as const }));
   const todayTasks = pickTodayTasks({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done });
   const [earned, seen] = await Promise.all([achievementsForUser(u.id), seenAchievements(u.id)]);
   const celebrate = nextToCelebrate(earned, seen);
@@ -125,7 +133,6 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const st = diag && sp.full !== "1" ? await planState(u.id) : null;
   if (st) {
     const profitSet = Boolean(await getProfitSetup(u.id));
-    const bfSoon = alerts.find((a) => !a.reviewing && a.daysTo <= 42);
     const pct = Math.round(((st.plan.indexOf(st.current)) / st.plan.length) * 100);
     return (
       <div className="mx-auto max-w-3xl space-y-5">
@@ -151,9 +158,15 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
               prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
           </section>
         )}
-        {bfSoon && (
-          <p className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900"><strong>{bfSoon.name} is {countdownText(bfSoon.daysTo)}.</strong> <Link href="/dashboard/calendar" className="underline">See your prep plan</Link></p>
-        )}
+        {(() => {
+          const bn = bannerFor(today, acct.country);
+          return (
+            <p className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900" data-banner={bn.key}>
+              <strong>{bn.text}</strong> <span className="whitespace-nowrap font-semibold">({bn.badge})</span>{" "}
+              <Link href="/dashboard/calendar" className="underline">See the calendar</Link>
+            </p>
+          );
+        })()}
         <Link href="/dashboard?full=1" className="block text-center text-xs text-slate-500 hover:underline">Show everything on Today</Link>
       </div>
     );

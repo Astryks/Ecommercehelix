@@ -1,3 +1,4 @@
+import type { Banner } from "@/lib/season-calendar";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CalendarClock, Check, CheckCircle2, ChevronDown, ListPlus, Mail } from "lucide-react";
 import { addDays, prettyDay } from "@/lib/dates";
@@ -8,6 +9,24 @@ const countdown = (a: SeasonAlert) =>
   a.reviewing ? `${a.name} review` : a.daysTo > 1 ? `${a.daysTo} days to ${a.name}` : a.daysTo === 1 ? `${a.name} is tomorrow` : a.daysTo === 0 ? `${a.name} is today` : `${a.name} is on now`;
 
 /** Public home page version: real date, links to the free prep plan. */
+/** Site-wide banner from the seasonal calendar (src/lib/season-calendar.ts). Same look as before. */
+export function CalendarStrip({ banner }: { banner: Banner }) {
+  return (
+    <div className="relative border-b border-cyan-200 bg-cyan-100 text-slate-950" data-banner={banner.key}>
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3">
+        <CalendarClock className="h-5 w-5 flex-none" aria-hidden />
+        <p className="flex-1 text-sm font-semibold sm:text-base">
+          {banner.text}
+          <span className="ml-2 whitespace-nowrap rounded-full bg-white/40 px-2 py-0.5 text-xs font-bold">{banner.badge}</span>
+        </p>
+        <Link href="/start" className="inline-flex items-center gap-1.5 rounded-lg bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
+          {banner.cta} <ArrowRight className="h-4 w-4" aria-hidden />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 export function SeasonalStrip({ alert }: { alert: SeasonAlert }) {
   return (
     <div className="relative border-b border-cyan-200 bg-cyan-100 text-slate-950">

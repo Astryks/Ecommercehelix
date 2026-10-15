@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
 import {
-  completeTask, createApproval, decideApproval, getAccount, getRawDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
+  completeTask, createApproval, decideApproval, getAccount, getProfitSetup, getRawDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
 } from "@/lib/repo";
 import { seasonalAlerts, SEASON_TASK_ID, toCountry } from "@/lib/seasons";
 import { toTaxMode } from "@/lib/tax";
@@ -55,6 +55,8 @@ export async function addPrepPlan(form: FormData) {
 
 export async function doItForMe(form: FormData) {
   const u = await requireUser();
+  const seasonId = String(form.get("taskId"));
+  if (SEASON_TASK_ID.test(seasonId) && /-(plan|creators|codes|dress|live|review)$/.test(seasonId)) await seasonDoItForMe(u.id, seasonId);
   const { signals } = await signalsFor(u.id);
   const taskId = String(form.get("taskId"));
   const item = LESSON_TASK_ID.test(taskId) ? lessonActionable(taskId, signals) : findActionable(taskId, signals);
@@ -122,6 +124,11 @@ export async function decide(form: FormData) {
   if (status === "approved" && taskId) {
     if (taskId === "build-meta-campaign") await createPausedDraft(u.id, id);
     if (taskId === "build-google-campaign") await createPausedGoogleCampaign(u.id, id);
+    if (/^season-.+-codes$/.test(taskId)) {
+      const { hasDb, prisma } = await import("@/lib/db");
+      const ek = taskId.replace(/^season-/, "").replace(/-codes$/, "");
+      if (hasDb) await prisma.promoDraft.updateMany({ where: { userId: u.id, eventKey: ek }, data: { status: "approved" } });
+    }
     await completeTask(u.id, taskId);
   }
   revalidatePath("/dashboard", "layout");
@@ -221,4 +228,35 @@ export async function markMilestonesSeen(keys: string[]) {
   const u = await requireUser();
   const { markAchievementsSeen } = await import("@/lib/community");
   await markAchievementsSeen(u.id, keys.filter((k) => /^[a-z0-9-]{2,40}$/.test(k)).slice(0, 30));
+}
+
+/**
+ * Do it for me on a seasonal step. Helix writes the checklist (and, for the discount step, the exact
+ * discount) into Waiting for your OK. Nothing changes in the store and nothing is spent: the Shopify
+ * connection is read-only, so the user creates the code; the draft only records what to make.
+ */
+async function seasonDoItForMe(userId: string, taskId: string) {
+  const { seasonTaskById, safeDiscountPct, promoCode } = await import("@/lib/season-tasks");
+  const { CAL_EVENTS } = await import("@/lib/season-calendar");
+  const { waterfall } = await import("@/lib/profit-setup");
+  const setup = await getProfitSetup(userId);
+  const wf = setup ? waterfall(setup) : null;
+  const ctx = { profitPerOrder: wf?.beforeMarketing, price: setup?.price };
+  const t = seasonTaskById(taskId, isoDay(), ctx);
+  if (!t) return;
+  const acct = await getAccount(userId);
+  if (PLAN_RANK[acct.plan] < PLAN_RANK.starter) redirect("/dashboard/billing?need=starter&for=season");
+  let detail = `Here's your checklist for "${t.title}". Helix has not changed your store or spent anything.\n\n` + t.steps.map((s, i) => `${i + 1}. ${s}`).join("\n");
+  if (t.stage === "codes") {
+    const ev = CAL_EVENTS.find((e) => e.key === t.eventKey)!;
+    const s = ev.span(t.year)!;
+    const draft = { code: promoCode(ev, t.year), percent: safeDiscountPct(ctx), startsOn: s.start, endsOn: s.end };
+    const { hasDb, prisma } = await import("@/lib/db");
+    if (hasDb) await prisma.promoDraft.upsert({ where: { userId_eventKey: { userId, eventKey: `${t.eventKey}-${t.year}` } }, create: { userId, eventKey: `${t.eventKey}-${t.year}`, ...draft }, update: { ...draft, status: "draft" } });
+    detail = `Helix prepared this discount as a paused draft. It is not live and your store has not changed.\n\nCode: ${draft.code}\nValue: ${draft.percent}% off the order\nStarts: ${draft.startsOn}\nEnds: ${draft.endsOn}\n\nTo make it live, press Approve, then in Shopify: Discounts, Create discount, Amount off order. Type ${draft.code}, choose Percentage ${draft.percent}, set the start and end dates, and Save. Place a test order to check it.`;
+  }
+  await createApproval(userId, { taskId, title: t.title, detail, estAiCost: 0 });
+  await logAudit(userId, { actor: "user", action: "season.do_it_for_me", target: taskId, outcome: "ok" });
+  revalidatePath("/dashboard", "layout");
+  redirect("/dashboard/approvals");
 }

@@ -29,7 +29,8 @@
     "26": "grow",
     "27": "grow",
     "28": "grow",
-    "29": "grow"
+    "29": "grow",
+    "30": "convert"
   },
   "lessons": {
     "3.7": "grow",
@@ -55,6 +56,8 @@
     "29.6": "attract",
     "29.7": "convert",
     "29.8": "convert",
-    "3.10": "grow"
+    "3.10": "grow",
+    "30.2": "attract",
+    "30.6": "grow"
   }
 }

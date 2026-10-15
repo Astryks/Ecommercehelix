@@ -7,8 +7,9 @@ import { HelixMark } from "@/components/Logo";
 import { Pricing } from "@/components/marketing/Pricing";
 import { STRATEGIES } from "@/lib/seed/strategies";
 import { TRENDS } from "@/lib/seed/trends";
-import { SeasonalStrip } from "@/components/SeasonalBanner";
-import { BFCM_CRITICAL, primaryAlert } from "@/lib/seasons";
+import { CalendarStrip } from "@/components/SeasonalBanner";
+import { bannerFor } from "@/lib/season-calendar";
+import { BFCM_CRITICAL } from "@/lib/seasons";
 import { BfcmTimeline, bfcmStageIndex } from "@/components/BfcmPlan";
 import { GoalsLadder, VanityNote } from "@/components/GoalsLadder";
 import { WhoFor } from "@/components/WhoFor";
@@ -97,10 +98,10 @@ function MorningBrief() {
 }
 
 export default function Home() {
-  const alert = primaryAlert(isoDay());
+  const banner = bannerFor(isoDay(), "US");
   return (
     <>
-      {alert && <SeasonalStrip alert={alert} />}
+      <CalendarStrip banner={banner} />
       <SiteHeader />
       <div className="relative overflow-hidden bg-paper">
         <HelixMark size={620} className="pointer-events-none absolute -right-40 -top-24 opacity-[0.05]" title="" />
