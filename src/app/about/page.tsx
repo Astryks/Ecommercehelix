@@ -12,9 +12,9 @@ export const metadata: Metadata = pageMeta({ title: "About E-commerce Helix: Why
 
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <section className="mt-14">
-      <div className="rule-accent" /><h2 className="mt-5 text-3xl text-slate-900">{title}</h2>
-      <div className="mt-4 space-y-4 text-lg leading-8 text-slate-700">{children}</div>
+    <section className="mt-section first:mt-0">
+      <div className="rule-accent" /><h2 className="mt-block text-3xl text-slate-900">{title}</h2>
+      <div className="mt-lead space-y-4 text-lg leading-8 text-slate-700">{children}</div>
     </section>
   );
 }
@@ -24,14 +24,13 @@ export default function About() {
     <>
       <SiteHeader />
       <div className="border-b border-slate-200 bg-paper">
-        <div className="mx-auto max-w-3xl px-5 pb-20 pt-16 text-center">
+        <div className="mx-auto max-w-3xl px-5 pb-section pt-page text-center">
           <HelixMark size={84} className="mx-auto" />
-          <p className="eyebrow mt-8">About</p>
-          <h1 className="mt-3 text-5xl text-slate-900 sm:text-6xl">About E-commerce <span className="grad-text">Helix</span></h1>
-          <p className="lead mt-5 text-2xl text-slate-700">Grow your e-commerce business a little every day</p>
+          <h1 className="mt-8 text-5xl text-slate-900 sm:text-6xl">About E-commerce <span className="grad-text">Helix</span></h1>
+          <p className="lead text-2xl text-slate-700">Grow your e-commerce business a little every day</p>
         </div>
       </div>
-      <main className="mx-auto max-w-3xl px-5 py-16">
+      <main className="mx-auto max-w-3xl px-5 pb-section pt-block">
         <Block title="Why the name">
           <p>
             Helix comes from the double helix: two spiral strands, like a twisted ladder, wound around each other inside almost every cell of your body. That spiral is DNA, the instruction manual for growth.
@@ -45,9 +44,12 @@ export default function About() {
           <p>
             <strong>You are the owner.</strong> It is your business, your vision and your call. Helix is simply a tool that puts you in control: it shows you the numbers, lays out the next step and does the busy work when you ask. The point is not just a bigger store. It is more freedom with your time and your choices, more room to create beautiful products for the world, and a clearer path to bringing your vision to life.
           </p>
+          <p>
+            <strong>The real secret?</strong> Surround yourself with people who are building. They don&apos;t need to make anything like your product, just share the same mindset of getting a little better every day. Help each other out, share what works, share your numbers, give honest feedback and push each other. Then watch your business and your friendships compound.
+          </p>
         </Block>
 
-        <figure className="helix-glow my-16 rounded-xl p-10 text-center text-white">
+        <figure className="helix-glow my-section rounded-xl p-card sm:p-10 text-center text-white">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">Our mission</p>
           <blockquote className="mt-4 font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
             <span className="italic text-cyan-200">To strive to reach six figures and beyond, compounding every day</span>
