@@ -100,5 +100,14 @@
   {"say": "Compare ROAS with your own break-even, not other stores or other seasons.", "check": "ROAS is always read against break-even.", "lost": "Is ROAS above your break-even? That's the question."},
   {"say": "Don't turn off an ad set the platform calls \"bad\" while your MER is improving. Check what happens after the click before trusting CTR (how many in 100 people clicked).", "check": "Decisions follow store results.", "lost": "MER getting better? Leave it on."},
   {"say": "Stop daily edits. Never trust the total of what each platform says it earned.", "check": "Campaigns finish learning and your numbers stay honest.", "lost": "No edits today."}
+ ]},
+"20.13": {"intro": "Google Analytics shows where buyers come from and where people leave.",
+ "steps": [
+  {"say": "Check GA4 is connected (Lesson 8.1). Open GA4 and go to **Reports > Acquisition > Traffic acquisition**.", "check": "A table of visits and sales by channel, like paid social, organic search and email.", "lost": "Open the traffic report."},
+  {"say": "Set the date to the last 30 days. Sort by **Key events** or **Purchases**.", "check": "You can see which channels bring buyers, not just visitors.", "lost": "Look at the last 30 days of buyers."},
+  {"say": "Look for a big row called **Unassigned** or **(not set)**. If it is large, add tracking tags (UTMs) to your ads, emails and social links.", "check": "Most visits sit in a named channel.", "lost": "Big 'Unassigned' row? Tag your links."},
+  {"say": "Go to **Reports > Monetization > Ecommerce purchases**, or the shopping behaviour report. Read how many people viewed a product, added to cart, started checkout and bought.", "check": "You can see the step where the most people leave.", "lost": "Find where most people leave."},
+  {"say": "Fix that one step first. Product page leaks go to Lesson 9.2. Checkout leaks go to Lesson 9.16.", "check": "One clear fix, picked from data instead of a guess.", "lost": "Fix that one step."},
+  {"say": "Optional: in **Admin > Audiences**, make an audience of people who added to cart but did not buy in the last 30 days. Link it to Google Ads to show them reminder ads (Lesson 8.7).", "check": "A warm audience you can reach again.", "lost": "Optional: make an audience of cart leavers."}
  ]}
 }

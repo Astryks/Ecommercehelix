@@ -360,6 +360,37 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Watch out:** Plain does not mean messy. Short lines, no spelling mistakes, and one clear ask.
 
+## Lesson 10.15: Ask shoppers what they want, then use the answers
+<!-- stage:convert -->
+
+**Why this matters:** When a shopper tells you what they need, you can send them the right products instead of guessing. Answers given on purpose are more useful than clicks. They also make every email feel like it was written for that person.
+
+**Step 1.** Pick one question that splits your customers into groups. For example: "What is your skin type?", "Who are you shopping for?" or "Which size is your dog?"
+
+**Expected result:** One question with 3 to 5 simple answers.
+
+**Step 2.** Add the question to your sign-up form, as a second step after the email box (Lesson 10.1).
+
+**Expected result:** New subscribers can tap one answer in a second.
+
+**Step 3.** In your email app, check the answer saves to each person's profile. Most apps call this a custom field or profile property.
+
+**Expected result:** You can see the answer on a test profile.
+
+**Step 4.** In your welcome flow (Lesson 10.2), add a split based on the answer. Send each group an email with the 3 products that suit them best.
+
+**Expected result:** Each group gets product picks that fit them.
+
+**Step 5.** For people who did not answer, add a one-click question in the second welcome email. Make each answer a button that saves the answer.
+
+**Expected result:** More of your list has an answer.
+
+**Step 6.** After 30 days, compare clicks and sales from the matched emails with your old welcome emails (Lesson 10.6).
+
+**Expected result:** You know if the answers lift sales. Then use the same groups in sale emails (Lesson 10.4).
+
+**Watch out:** Ask only what you will use. Every extra question means fewer people finish the form.
+
 ## Self-check
 
 1. What is a micro-commitment form?

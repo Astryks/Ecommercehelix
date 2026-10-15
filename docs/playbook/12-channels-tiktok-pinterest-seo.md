@@ -250,6 +250,41 @@
 
 **Expected result:** Shoppers can tap to see and buy products.
 
+## Lesson 12.11: Start a YouTube channel that keeps selling
+<!-- stage:attract -->
+
+**Why this matters:** A post on most apps fades in a day. A good YouTube video can be found in search for years. People who watch a full "how to" video already trust you before they visit your store.
+
+**Step 1.** List 10 questions your customers ask before they buy. Use reviews, emails and the search box in YouTube itself (type a word and read the suggestions).
+
+**Expected result:** 10 questions real people search for, like "how to choose a running backpack".
+
+**Step 2.** Pick the 3 questions that link best to your products. Each will be one video.
+
+**Expected result:** A plan for your first 3 videos.
+
+**Step 3.** Write each title as the question or the result people want. Keep it under 60 characters.
+
+**Expected result:** 3 clear titles, like "How to Pick a Running Backpack (3 Easy Checks)".
+
+**Step 4.** Film each video on your phone. Answer the question in the first 30 seconds, then show more detail. Show your product as one helpful example, not a hard sell.
+
+**Expected result:** 3 videos of 4 to 10 minutes that teach something useful.
+
+**Step 5.** Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.
+
+**Expected result:** Thumbnails you can read on a small phone screen.
+
+**Step 6.** In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).
+
+**Expected result:** You can see sales from YouTube in your store reports.
+
+**Step 7.** Post one video every 2 weeks for 3 months. In **YouTube Studio > Analytics**, check which titles get the most clicks and the longest watching time.
+
+**Expected result:** You know which topics work, and you make more like them.
+
+**Watch out:** Results are slow. Most channels take months to grow. Judge it after 3 months, not 3 days.
+
 ## Self-check
 
 1. How many ad-ready videos should you have before paying for TikTok ads?

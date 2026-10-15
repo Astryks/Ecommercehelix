@@ -413,6 +413,91 @@
 
 **Watch out:** Check your rights before you reuse creator content. Some deals only allow use for a set time (Lesson 19.4).
 
+## Lesson 5.20: Tell a short story in an ad
+<!-- stage:attract -->
+
+**Why this matters:** People remember stories much better than lists of features. A tiny story with a problem, a turn and a happy ending keeps people watching. It also makes your product the hero without shouting.
+
+**Step 1.** Pick one real moment from a customer review or your own life. It should show the problem your product fixes.
+
+**Expected result:** One sentence, like "My hands cracked every winter, even with three creams."
+
+**Step 2.** Write the story in three short lines. Line 1: the problem. Line 2: the moment things changed (finding your product). Line 3: life now.
+
+**Expected result:** Three lines you can read out loud in under 20 seconds.
+
+**Step 3.** Add a "villain" if there is one. The villain is the thing that caused the problem, like cheap glue, cold wind or a confusing old way of doing things.
+
+**Expected result:** The viewer knows what to be annoyed at, and your product beats it.
+
+**Step 4.** Film it as one person talking to the camera, or as a voice-over on clips of the product in use. Put the problem in the first 3 seconds (Lesson 5.7).
+
+**Expected result:** A 20 to 40 second video that starts with the problem.
+
+**Step 5.** Run it next to your normal ads for one week. Compare how long people watch (hold rate) and cost per sale (Lesson 6.11).
+
+**Expected result:** You know if stories work for your product, and you make 2 more if they do.
+
+**Watch out:** Keep it true. Use real customer words, with their permission (Lesson 29.1). A made-up story breaks trust fast.
+
+## Lesson 5.21: Borrow what is already popular
+<!-- stage:attract -->
+
+**Why this matters:** You do not have to invent every idea. Formats that are already popular on social media are proven to hold attention. Put your product inside them, speak to a small group of real fans, and give people a reason to wonder what happens next.
+
+**Step 1.** Spend 15 minutes scrolling TikTok or Instagram Reels. Save 5 posts that grabbed you, from any kind of account, not just stores.
+
+**Expected result:** A saved folder with 5 posts that hold attention.
+
+**Step 2.** For each one, write down the format in a few words. For example: "split screen, before and after", "list of 3 mistakes" or "reacting to a comment".
+
+**Expected result:** 5 formats you could copy without copying the content.
+
+**Step 3.** Pick one small group of people who love your kind of product. For example: night-shift nurses, new dog owners or people who camp in winter. Write the words they use and the jokes they share.
+
+**Expected result:** One group, with 5 of their own words or in-jokes.
+
+**Step 4.** Make one ad that uses a saved format, speaks to that group, and opens with a question or a surprise. For example, "Nobody told me this about winter camping..." Answer it later in the video.
+
+**Expected result:** One new ad that feels made for that group and makes people want to keep watching.
+
+**Step 5.** Test it with your normal ads (Lesson 6.10). Keep the format if it wins, and try it with a second group next week.
+
+**Expected result:** A short list of formats and groups that work for your store.
+
+**Watch out:** Borrow the shape, never the words, music or footage of someone else's post. Check you have the rights to any sound you use.
+
+## Lesson 5.22: Make simple ads with free apps
+<!-- stage:attract -->
+
+**Why this matters:** You do not need a designer to make good ads. A free design app (like Canva) and a free phone video editor (like CapCut) are enough for most small stores. Learning the basics once saves you money every week.
+
+**Step 1.** Open the design app. Make a new design in the size 1080 x 1350 (for feeds). Make a second one in 1080 x 1920 (for stories and reels).
+
+**Expected result:** Two blank designs in the right sizes.
+
+**Step 2.** Add your logo, your brand colours and your fonts to the app's brand settings (Lesson 4.3).
+
+**Expected result:** Every new design can use your brand look in one tap.
+
+**Step 3.** Make one still ad: one product photo, one short headline (under 8 words) and one review star line. Keep the words away from the top and bottom edges, where buttons cover them.
+
+**Expected result:** A clean image ad that you can read in 2 seconds.
+
+**Step 4.** Open the video app. Add 3 to 5 short clips of your product. Cut any slow or silent parts.
+
+**Expected result:** A video under 30 seconds with no dead moments.
+
+**Step 5.** Add captions with the auto-caption tool. Then add a text hook on the first second.
+
+**Expected result:** People who watch with the sound off still understand the ad.
+
+**Step 6.** Export in both sizes and save each one as a template to reuse next week.
+
+**Expected result:** Next week's ads take half the time.
+
+**Watch out:** Only use music and stock clips the app says are allowed in ads. Some free sounds are for personal posts only.
+
 ## Self-check
 
 1. What share of your ads should be new versions of ideas that already work?

@@ -529,6 +529,37 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Watch out:** Your screen may look a little different, because Meta tests new layouts. Look for the same words: Create, Columns, Delivery, Results. If a menu is missing, try the three-line menu at the top left. Or search the help centre for its name.
 
+## Lesson 7.15: Cost caps, bid caps and value rules
+<!-- stage:grow -->
+
+**Why this matters:** By default, Meta spends your whole budget and tries to get the most sales. Caps and rules let you tell Meta the most you will pay, or which buyers are worth more to you. Used well, they protect profit. Used too early, they stop your ads from spending at all.
+
+**Step 1.** Only try this when a campaign already has at least 50 sales a week and steady results. Check in Ads Manager on the **Campaigns** tab.
+
+**Expected result:** You know if the campaign is ready. If not, keep the default setting.
+
+**Step 2.** Find your break-even cost per sale from Lesson 1.5. Write it down.
+
+**Expected result:** One number, for example $40.
+
+**Step 3.** Duplicate the campaign. In the copy, open the ad set and find **Performance goal > Cost per result goal** (Meta calls this a cost cap). Type a number a little under break-even, for example $36.
+
+**Expected result:** A test copy that tries to keep each sale under your number.
+
+**Step 4.** Set the budget a bit higher than normal. Caps often spend less than the budget, so a bigger budget gives Meta room.
+
+**Expected result:** The capped copy is not starved of money.
+
+**Step 5.** Run both for 7 days. Compare total sales and cost per sale.
+
+**Expected result:** You know if the cap made you more profit. If it barely spent, raise the cap by 10% and try again.
+
+**Step 6.** Optional: in **Ad account settings**, look for **Value rules**. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.
+
+**Expected result:** At most one rule, backed by your own numbers.
+
+**Watch out:** A bid cap (a hard limit on each bid) is stricter than a cost cap. It can stop delivery completely. Leave bid caps for experienced accounts.
+
 ## Self-check
 
 1. Name two edits that restart learning.

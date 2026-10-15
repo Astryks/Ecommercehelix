@@ -62,5 +62,15 @@
   {"say": "Set up your shop on Facebook and Instagram.\n\n1. Open Meta Commerce Manager. Click **Get started**.\n2. Pick Shopify, then follow the **Set up your shop** checklist (catalog, shipping and your checkout link).\n3. Click **Publish shop**.", "check": "Commerce Manager shows your shop as in review. Approval can take up to 4 weeks.", "lost": "Open Commerce Manager. Click **Get started**."},
   {"say": "Turn on catalog sync from your store, so prices and stock stay up to date.", "check": "Catalog changes show within a day.", "lost": "Turn on catalog sync."},
   {"say": "Tag products in your posts and Reels.", "check": "Shoppers can tap to see and buy.", "lost": "Tag one product in one post."}
+ ]},
+"12.11": {"intro": "A helpful YouTube video can bring buyers for years.",
+ "steps": [
+  {"say": "List 10 questions your customers ask before they buy. Use reviews, emails and the search box in YouTube itself (type a word and read the suggestions).", "check": "10 questions real people search for, like \"how to choose a running backpack\".", "lost": "Write 10 questions customers ask."},
+  {"say": "Pick the 3 questions that link best to your products. Each will be one video.", "check": "A plan for your first 3 videos.", "lost": "Pick 3."},
+  {"say": "Write each title as the question or the result people want. Keep it under 60 characters.", "check": "3 clear titles, like \"How to Pick a Running Backpack (3 Easy Checks)\".", "lost": "Make each title the question."},
+  {"say": "Film each video on your phone. Answer the question in the first 30 seconds, then show more detail. Show your product as one helpful example, not a hard sell.", "check": "3 videos of 4 to 10 minutes that teach something useful.", "lost": "Answer it in the first 30 seconds."},
+  {"say": "Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.", "check": "Thumbnails you can read on a small phone screen.", "lost": "Big picture, 3 words or fewer."},
+  {"say": "In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).", "check": "You can see sales from YouTube in your store reports.", "lost": "Add a tagged link to your product."},
+  {"say": "Post one video every 2 weeks for 3 months. In **YouTube Studio > Analytics**, check which titles get the most clicks and the longest watching time.", "check": "You know which topics work, and you make more like them.", "lost": "Post every 2 weeks and check what works."}
  ]}
 }

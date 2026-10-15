@@ -93,5 +93,30 @@
  "steps": [
   {"say": "Once a month, write down 3 campaigns big brands run around a season or moment.", "check": "You have a short list of ideas.", "lost": "Write one big-brand idea you liked."},
   {"say": "Make one smaller version: a trend format, a team-up with another small brand, or a playful take.", "check": "Your next batch has one moment-led ad.", "lost": "Make one ad inspired by it, in your own way."}
+ ]},
+"5.20": {"intro": "A tiny true story keeps people watching. Your product is the hero.",
+ "steps": [
+  {"say": "Pick one real moment from a customer review or your own life. It should show the problem your product fixes.", "check": "One sentence, like \"My hands cracked every winter, even with three creams.\"", "lost": "Think of one time the problem annoyed someone."},
+  {"say": "Write the story in three short lines. Line 1: the problem. Line 2: the moment things changed (finding your product). Line 3: life now.", "check": "Three lines you can read out loud in under 20 seconds.", "lost": "Problem. Change. Now."},
+  {"say": "Add a \"villain\" if there is one. The villain is the thing that caused the problem, like cheap glue, cold wind or a confusing old way of doing things.", "check": "The viewer knows what to be annoyed at, and your product beats it.", "lost": "What caused the problem? That is the villain."},
+  {"say": "Film it as one person talking to the camera, or as a voice-over on clips of the product in use. Put the problem in the first 3 seconds (Lesson 5.7).", "check": "A 20 to 40 second video that starts with the problem.", "lost": "Say the problem first, then show the product."},
+  {"say": "Run it next to your normal ads for one week. Compare how long people watch (hold rate) and cost per sale (Lesson 6.11).", "check": "You know if stories work for your product, and you make 2 more if they do.", "lost": "Run it for a week and compare."}
+ ]},
+"5.21": {"intro": "Use popular shapes of posts, talk to one small group of fans, and make people curious.",
+ "steps": [
+  {"say": "Spend 15 minutes scrolling TikTok or Instagram Reels. Save 5 posts that grabbed you, from any kind of account, not just stores.", "check": "A saved folder with 5 posts that hold attention.", "lost": "Scroll for 15 minutes and save 5 posts you liked."},
+  {"say": "For each one, write down the format in a few words. For example: \"split screen, before and after\", \"list of 3 mistakes\" or \"reacting to a comment\".", "check": "5 formats you could copy without copying the content.", "lost": "Name the shape of each post in a few words."},
+  {"say": "Pick one small group of people who love your kind of product. For example: night-shift nurses, new dog owners or people who camp in winter. Write the words they use and the jokes they share.", "check": "One group, with 5 of their own words or in-jokes.", "lost": "Pick one group of fans and write their words."},
+  {"say": "Make one ad that uses a saved format, speaks to that group, and opens with a question or a surprise. For example, \"Nobody told me this about winter camping...\" Answer it later in the video.", "check": "One new ad that feels made for that group and makes people want to keep watching.", "lost": "Use one shape, talk to that group, start with a question."},
+  {"say": "Test it with your normal ads (Lesson 6.10). Keep the format if it wins, and try it with a second group next week.", "check": "A short list of formats and groups that work for your store.", "lost": "Test it like any other ad."}
+ ]},
+"5.22": {"intro": "Two free apps are enough to make good ads. Learn the basics once.",
+ "steps": [
+  {"say": "Open the design app. Make a new design in the size 1080 x 1350 (for feeds). Make a second one in 1080 x 1920 (for stories and reels).", "check": "Two blank designs in the right sizes.", "lost": "Make two blank designs: 1080 x 1350 and 1080 x 1920."},
+  {"say": "Add your logo, your brand colours and your fonts to the app's brand settings (Lesson 4.3).", "check": "Every new design can use your brand look in one tap.", "lost": "Add your logo and colours once."},
+  {"say": "Make one still ad: one product photo, one short headline (under 8 words) and one review star line. Keep the words away from the top and bottom edges, where buttons cover them.", "check": "A clean image ad that you can read in 2 seconds.", "lost": "One photo, a few words, some stars."},
+  {"say": "Open the video app. Add 3 to 5 short clips of your product. Cut any slow or silent parts.", "check": "A video under 30 seconds with no dead moments.", "lost": "Put in 3 to 5 clips and cut the slow bits."},
+  {"say": "Add captions with the auto-caption tool. Then add a text hook on the first second.", "check": "People who watch with the sound off still understand the ad.", "lost": "Tap auto-captions, then add a first line of text."},
+  {"say": "Export in both sizes and save each one as a template to reuse next week.", "check": "Next week's ads take half the time.", "lost": "Save both sizes and keep the file as a template."}
  ]}
 }

@@ -522,6 +522,37 @@ Spend
 
 **Expected result:** Campaigns finish learning and your numbers stay honest.
 
+## Lesson 20.13: Read Google Analytics in 15 minutes
+<!-- stage:attract -->
+
+**Why this matters:** Your store reports say what sold. Google Analytics 4 (GA4, Google's free website report tool) shows where visitors came from and where they left. That tells you which channel to grow and which page to fix.
+
+**Step 1.** Check GA4 is connected (Lesson 8.1). Open GA4 and go to **Reports > Acquisition > Traffic acquisition**.
+
+**Expected result:** A table of visits and sales by channel, like paid social, organic search and email.
+
+**Step 2.** Set the date to the last 30 days. Sort by **Key events** or **Purchases**.
+
+**Expected result:** You can see which channels bring buyers, not just visitors.
+
+**Step 3.** Look for a big row called **Unassigned** or **(not set)**. If it is large, add tracking tags (UTMs) to your ads, emails and social links.
+
+**Expected result:** Most visits sit in a named channel.
+
+**Step 4.** Go to **Reports > Monetization > Ecommerce purchases**, or the shopping behaviour report. Read how many people viewed a product, added to cart, started checkout and bought.
+
+**Expected result:** You can see the step where the most people leave.
+
+**Step 5.** Fix that one step first. Product page leaks go to Lesson 9.2. Checkout leaks go to Lesson 9.16.
+
+**Expected result:** One clear fix, picked from data instead of a guess.
+
+**Step 6.** Optional: in **Admin > Audiences**, make an audience of people who added to cart but did not buy in the last 30 days. Link it to Google Ads to show them reminder ads (Lesson 8.7).
+
+**Expected result:** A warm audience you can reach again.
+
+**Watch out:** GA4 and your ad apps count sales in different ways, so numbers will not match. Use GA4 to compare channels and find leaks. Use your store for the real sales total.
+
 ## Self-check
 
 1. Hook rate 35%, CTR 1.6%, conversion rate 0.6%. Where is the problem?

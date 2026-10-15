@@ -84,5 +84,14 @@
   {"say": "In the middle of the sale, send a new reason to buy (a new product, a bundle or a gift).", "check": "The middle of the sale has fresh news.", "lost": "Send one email with a new bundle."},
   {"say": "On the last day, send a last chance email and text.", "check": "Everyone hears it's ending.", "lost": "Send one \"last chance\" email."},
   {"say": "After the sale, send new buyers thanks, how-to tips, results and a small time-limited deal. Switch your abandonment flows back from the sale versions.", "check": "New buyers are looked after and flows are back to normal.", "lost": "Switch your flows back to normal."}
+ ]},
+"10.15": {"intro": "Ask one question, save the answer and send each person products that fit them.",
+ "steps": [
+  {"say": "Pick one question that splits your customers into groups. For example: \"What is your skin type?\", \"Who are you shopping for?\" or \"Which size is your dog?\"", "check": "One question with 3 to 5 simple answers.", "lost": "Pick one easy question with a few answers."},
+  {"say": "Add the question to your sign-up form, as a second step after the email box (Lesson 10.1).", "check": "New subscribers can tap one answer in a second.", "lost": "Put it after the email box."},
+  {"say": "In your email app, check the answer saves to each person's profile. Most apps call this a custom field or profile property.", "check": "You can see the answer on a test profile.", "lost": "Check the answer saves."},
+  {"say": "In your welcome flow (Lesson 10.2), add a split based on the answer. Send each group an email with the 3 products that suit them best.", "check": "Each group gets product picks that fit them.", "lost": "Send each group the products that suit them."},
+  {"say": "For people who did not answer, add a one-click question in the second welcome email. Make each answer a button that saves the answer.", "check": "More of your list has an answer.", "lost": "Ask again with buttons in email 2."},
+  {"say": "After 30 days, compare clicks and sales from the matched emails with your old welcome emails (Lesson 10.6).", "check": "You know if the answers lift sales. Then use the same groups in sale emails (Lesson 10.4).", "lost": "Compare after 30 days."}
  ]}
 }

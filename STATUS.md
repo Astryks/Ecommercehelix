@@ -16,6 +16,11 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 10. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
 11. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
 
+## Independent coverage check (15 Oct 2026, late evening)
+- Re-checked every private research video and transcript one by one (1,115 + 386 = 1,501 items; private matrix kept outside the repo). Before: 1,110 covered, 23 partial, 3 gaps, 365 out of scope (intros, admin, partner listings, tool walkthroughs, coaching-only material). After: 1,136 covered, 0 partial, 0 gaps.
+- 321 items have no transcript or local video; they were judged from their titles only and are listed in the private report for a separate check.
+- **7 new lessons (304 in total), in our own words, slotted into the guided path:** 5.20 Tell a short story in an ad; 5.21 Borrow what is already popular; 5.22 Make simple ads with free apps; 7.15 Cost caps, bid caps and value rules (Grow tag); 10.15 Ask shoppers what they want, then use the answers; 12.11 Start a YouTube channel that keeps selling; 20.13 Read Google Analytics in 15 minutes. Each has a simple card deck with "I'm lost" lines. Lesson-count test now at least 304.
+
 ## QA fixes (15 Oct 2026, night)
 
 - CSV import: dates written in words keep the right day, blank cells no longer wipe saved numbers, Shopify shipping charges (what customers paid) are no longer counted as a shipping cost.
