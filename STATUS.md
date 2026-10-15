@@ -1,6 +1,6 @@
 # STATUS
 
-_Last updated: 13 Oct 2026, about 9:50 PM (Sydney)._
+_Last updated: 15 Oct 2026, afternoon (Sydney)._
 
 ## At a glance
 
@@ -11,6 +11,25 @@ _Last updated: 13 Oct 2026, about 9:50 PM (Sydney)._
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
+
+## Simpler app, USD prices and the seasonal calendar (15 Oct 2026, Sydney)
+
+**For Sid (action needed)**
+- **Create the closed Facebook group for paying members**, then set `FACEBOOK_GROUP_URL` in Vercel (Production) and redeploy. Until then, paying members see "Opening soon" on Community and free users see an upgrade prompt.
+- **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel. Moderators see a "Wins waiting for a check" list on Community. Nothing shows on the wall until a moderator presses Show it.
+- **Stripe currency:** the site now shows **US$29 / US$59** everywhere (home, /pricing, billing, terms, JSON-LD offers now USD). The Stripe prices are still the **AUD** ones (A$29 / A$59): the Stripe secret key is a sensitive Vercel variable that cannot be pulled to the build box, so USD Price objects could not be created from here. To finish: in Stripe create two monthly USD prices (Starter 29, Growth 59; e.g. lookup keys `helix_starter_monthly_usd`, `helix_growth_monthly_usd`), then set `STRIPE_PRICE_STARTER` and `STRIPE_PRICE_GROWTH` to the new price ids and redeploy. Until then Checkout would show A$ amounts.
+- **Monday scorecard email** is built but off: set `SCORECARD_EMAIL_LIVE=1` to send (cron `/api/cron/monday-scorecard`, Sundays 21:00 UTC = Mondays 8 AM Sydney). Without it, it only logs.
+
+**What changed**
+- Homepage hero: more room between the purple underline and the paragraph; the URL box still shows without scrolling at 1280x720 and 1024x600.
+- FAQ "Does Helix use AI?" now explains the small, writing-only AI with monthly allowances and no training on user data. Other "no AI" lines (store check copy) reworded. Terms gained "AI features", "Community and the Wins wall" and "Store reviews and emails"; privacy lists wins and review requests and how long they are kept. Legal date 15 Oct 2026.
+- **Five places in the app** (sidebar on desktop, bottom bar on phones): **Today** ("Here's what to do today": 1 to 3 tasks, each with Guide me, Do it for me, Done, and an I'm lost link; plus a weekly plan card and a milestone toast), **Numbers** (`/dashboard/numbers`: daily sales bars for the last 4 or 8 weeks with a Week/Month toggle; tap a day for sales, orders, cost of goods (unit cost x units when not synced), ad spend (Meta, Google), shipping, fees, other costs, profit, margin, ROAS, MER, ad cost per order and break-even ROAS; manual entry and connect prompts), **Learn** (`/dashboard/learn`: every lesson under Attract, Convert or Grow, grouped by module, with done ticks; template library at `/dashboard/learn/templates`), **Progress** (adds achievements: profit milestones, streaks, first ad, first lesson, goals), **Community** (members group button from `FACEBOOK_GROUP_URL`, weekly Wins wall with moderation).
+- Everything else (approvals, connections, billing, ads, what to fix, stock, calendar, email flows, trends, weekly report, business admin, plan, help, review my store) is one tap away on **Settings**. All old URLs still work, so no redirects were needed.
+- **Review my store** (`/dashboard/review`): request form emailed to support@astryks.com through Resend (max 2 a week per user).
+- **Seasonal calendar** (`src/lib/season-calendar.ts`): the home banner and the Today prompt are worked out from the date. Prep copy with a countdown ("It's October, the build month for Black Friday and Cyber Monday. 43 days to go"), "happening now" during the event, then the next event; a calm quiet-time line when nothing is near. US events: Valentine's, Mother's Day, Father's Day, Memorial Day, 4th of July, Labor Day, Halloween, Thanksgiving, Black Friday/Cyber Monday, Christmas, New Year. Worldwide: Ramadan/Eid al-Fitr, Diwali, Lunar New Year, Singles' Day, Boxing Day, Easter. Easter and nth-weekday dates are computed; moon-based dates (Lunar New Year, Ramadan, Eid, Diwali) are in a checked table for 2026 to 2030 (extend `LUNAR` before 2030 ends; a test fails if a year is missing). Overlaps: running events first, then weight (Black Friday highest, from 1 August), then soonest.
+- **Seasonal steps on Today** (`src/lib/season-tasks.ts`): about 10 to 7 weeks out plan the offer and order stock (uses the store's profit per order to suggest a safe discount and its daily units for a stock number), 6 to 4 weeks creators (outreach template, gifting, personal codes), 3 weeks discount codes (Shopify click path; Do it for me saves a paused `PromoDraft` and a checklist in Waiting for your OK; Helix never creates or turns on a discount), 2 weeks to 1 day dress the store, warm up and write emails, during the event check numbers daily, up to 7 days after review results. Earlier steps not done show as "Catch up". New **Module 30, Seasonal sales, step by step** (6 lessons) in Helix's own words.
+- Tests: 247 (new: tasks, numbers, achievements, scorecard email, calendar boundaries, the day after Cyber Monday, year rollover, moving dates, which task shows in which week). Lint has 0 errors (fixed the old Connections page error).
+- **Schema (additive, applied to Neon before the push):** new tables `Win`, `ReviewRequest`, `AchievementSeen`, `PromoDraft` (all cascade on user delete). No column changes.
 
 ## Integrations build (13 Oct 2026, about 9:30 PM Sydney)
 
@@ -32,7 +51,7 @@ _Last updated: 13 Oct 2026, about 9:50 PM (Sydney)._
 - Maths reviewed: profit waterfall (sales down through each cost to net profit; layers add up), break-even MER/ROAS/CPA, marketing % of sales bands, dashboard metrics (blended ROAS, MER, contribution, net after fixed share), week/month/YTD/12-month ranges and buckets. New unit tests in `tests/maths-audit.test.ts`.
 - Store audit runs on the user's own saved store URL, with private-address and redirect guards. Card deck and next card follow setup, then the current goal's lessons, then the rest.
 - Every user-data query is scoped by the signed-in user's id (approvals checked with id and userId). Cron routes return 401 without the secret.
-- Live smoke test: public pages, sitemap, robots, llms.txt, share image and calendar feed return 200; signed-in pages redirect to sign-in; no 500s after the fix below.
+- Live check: public pages, sitemap, robots, llms.txt, share image and calendar feed return 200; signed-in pages redirect to sign-in; no 500s after the fix below.
 
 **Fixed**
 - Checkout: a missing Stripe price env var (or missing Stripe keys in production) could grant a paid plan without payment. Now it returns 503 instead.

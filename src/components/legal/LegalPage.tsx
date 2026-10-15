@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-export const LEGAL_UPDATED = "13 October 2026";
+export const LEGAL_UPDATED = "15 October 2026";
 /** Contact inbox for privacy, terms and deletion requests. */
 export { SUPPORT_EMAIL as LEGAL_EMAIL } from "@/lib/support";
 import { SUPPORT_EMAIL as LEGAL_EMAIL } from "@/lib/support";

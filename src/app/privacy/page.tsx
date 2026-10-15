@@ -20,6 +20,7 @@ export default function Privacy() {
           <li><strong>Shopify data, only if you connect Shopify.</strong> See below.</li>
           <li><strong>Google Ads data, only if you connect Google Ads.</strong> See below.</li>
           <li><strong>What you ask the AI helper.</strong> If you use an AI feature, the question you type or the data it summarises, and the answer. See below.</li>
+          <li><strong>Community posts and requests.</strong> Wins you share on the Wins wall (with your first name), and store review requests you send us (your store link, your note and your email address, sent to our support inbox).</li>
           <li><strong>Billing status.</strong> Your plan and your Stripe customer and subscription IDs. We never see or store your card number.</li>
           <li><strong>Basic technical data.</strong> Our hosting provider processes IP addresses and request logs to deliver and protect the site.</li>
         </ul>
@@ -105,6 +106,7 @@ export default function Privacy() {
           <li><strong>Meta data</strong>: until you disconnect Meta or delete your account. The token expires by itself after about 60 days.</li>
           <li><strong>Shopify and Google Ads data</strong>: until you disconnect, uninstall or delete your account.</li>
           <li><strong>AI answers and usage logs</strong>: until you delete your account.</li>
+          <li><strong>Wins and store review requests</strong>: until you delete your account or ask us to remove them. Copies of review emails stay in our support inbox for up to 2 years.</li>
           <li><strong>Billing records</strong>: Stripe keeps its own payment records for as long as the law requires.</li>
           <li><strong>Backups and logs</strong>: held by our providers and removed within their normal retention windows.</li>
         </ul>
