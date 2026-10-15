@@ -141,7 +141,8 @@ export function CardPlayer({ deckId, deckTitle, cards, start, lost = false, next
     </label>
   );
 
-  const doneToday = todayLeft !== null && moved >= todayLeft && todayLeft > 0;
+  // Only say "done for today" when there is real deck left; with one card to go, finishing the deck is the better nudge.
+  const doneToday = todayLeft !== null && moved >= todayLeft && todayLeft > 0 && cards.length - 1 - i > 1;
 
   return (
     <div className="mx-auto max-w-xl">
