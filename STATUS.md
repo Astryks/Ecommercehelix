@@ -16,6 +16,16 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 10. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
 11. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
 
+## QA fixes (15 Oct 2026, night)
+
+- CSV import: dates written in words keep the right day, blank cells no longer wipe saved numbers, Shopify shipping charges (what customers paid) are no longer counted as a shipping cost.
+- Daily table: cells show new values after an import, a failed save turns red and retries, Add a day uses your local date.
+- Card deck: Finish saves the last answers before moving on. Setup and profit forms read "$60" and "1,75" instead of saving 0.
+- Contact form: the "we got it" email goes to signed-in members only and never repeats the message. Members are limited to 5 messages an hour (kept in the audit log, no schema change); signed-out visitors keep the per-server limit. Typed text stays after an error.
+- Lesson checklist: ticks are kept per account, guest ticks are merged once and cleared, failed saves retry with a note, finished lessons open on the last step.
+- Store check: one check at a time (per server), 10-minute wait after a failed check.
+- Deferred: SSRF hardening that pins the checked IP for the fetch (DNS rebinding). Low risk, needs a custom fetch dispatcher.
+
 ## Learn is now one guided path (15 Oct 2026, evening)
 
 - /dashboard/learn: one "Your next lesson" card, then a numbered 7-step path with progress per step; "See entire course" timeline now runs in path order. Attract / Convert / Grow are small tags only.
