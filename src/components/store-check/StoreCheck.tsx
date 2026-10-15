@@ -6,6 +6,8 @@ import { topFixes, changesSince, type Finding } from "@/lib/site-audit/checks";
 import type { AuditRunRow } from "@/lib/site-audit/run";
 import { checkNow } from "@/app/dashboard/store-check/actions";
 import { UpgradePrompt } from "@/components/UpgradePrompt";
+import { Suspense } from "react";
+import { CheckedNote } from "./CheckedNote";
 
 const ICON = {
   high: <AlertTriangle className="h-4 w-4 text-rose-600" aria-hidden />,
@@ -44,6 +46,7 @@ export function StoreCheck({ runs, storeUrl, limit = 5, back = "/dashboard/insig
     <form action={checkNow}>
       <input type="hidden" name="back" value={back} />
       <button className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> {label}</button>
+      <Suspense fallback={null}><CheckedNote /></Suspense>
     </form>
   );
   if (!last)

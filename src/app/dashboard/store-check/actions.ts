@@ -6,11 +6,10 @@ import { requireUser } from "@/lib/session";
 import { safeDashboardPath, withParam } from "@/lib/safe-back";
 import { getAccount } from "@/lib/repo";
 import { PLAN_RANK } from "@/lib/plans";
-import { auditRuns, runAndSave } from "@/lib/site-audit/run";
+import { auditRuns, isCheckRunning, runAndSave } from "@/lib/site-audit/run";
+import { checkGate } from "@/lib/site-audit/gate";
 
-const HOURS_BETWEEN_MANUAL = 6;
-
-/** "Check my store now". Free: the first check (or a retry after a failed one). Paid: again after 6 hours. */
+/** "Check my store now". Rules live in checkGate (src/lib/site-audit/gate.ts). */
 export async function checkNow(form: FormData) {
   const u = await requireUser();
   const back = safeDashboardPath(form.get("back"));
@@ -18,8 +17,9 @@ export async function checkNow(form: FormData) {
   if (!acct.storeUrl) redirect("/dashboard/settings?need=store");
   const [last] = await auditRuns(u.id, 1);
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
-  if (last?.ok && !paid) redirect("/dashboard/billing?need=starter&for=recheck");
-  if (last?.ok && Date.now() - Date.parse(last.startedAt) < HOURS_BETWEEN_MANUAL * 3_600_000) redirect(withParam(back, "checked", "recent"));
+  const gate = checkGate({ last, paid, running: isCheckRunning(u.id) });
+  if (gate === "upgrade") redirect("/dashboard/billing?need=starter&for=recheck");
+  if (gate !== "ok") redirect(withParam(back, "checked", gate));
   await runAndSave(u.id, acct.storeUrl!);
   revalidatePath("/dashboard", "layout");
   redirect(back);

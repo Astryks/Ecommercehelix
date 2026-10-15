@@ -57,8 +57,17 @@ const toRow = (r: { id: string; url: string; startedAt: Date; finishedAt: Date |
   findings: (r.findings as Finding[]) ?? [], facts: (r.facts as Facts) ?? null, error: r.error,
 });
 
+/** Runs in progress on this server, so a double tap does not start two checks. */
+const running = new Map<string, number>();
+export const isCheckRunning = (userId: string, now = Date.now()) => (running.get(userId) ?? 0) > now - 2 * 60_000;
+
 /** Run a check and store it. Never throws: a failed check is saved with a plain error. */
 export async function runAndSave(userId: string, url: string): Promise<AuditRunRow> {
+  running.set(userId, Date.now());
+  try { return await runAndSaveInner(userId, url); } finally { running.delete(userId); }
+}
+
+async function runAndSaveInner(userId: string, url: string): Promise<AuditRunRow> {
   const startedAt = new Date();
   let row: Omit<AuditRunRow, "id">;
   try {
