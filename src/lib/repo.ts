@@ -301,6 +301,17 @@ export async function upsertDays(userId: string, days: DayInput[]) {
   }
 }
 
+/** Change one number on one day without rewriting the rest of the row (two quick edits cannot undo each other). */
+export async function setDayField(userId: string, base: DayInput, field: (typeof NUM_FIELDS)[number], value: number) {
+  if (!hasDb) return upsertDays(userId, [{ ...base, [field]: value }]);
+  const { date } = base;
+  await prisma.scorecardDay.upsert({
+    where: { userId_date: { userId, date } },
+    create: { userId, ...base, [field]: value, example: false, source: base.source ?? "manual" },
+    update: { [field]: value, example: false },
+  });
+}
+
 export async function clearExampleData(userId: string) {
   if (!hasDb) {
     mem.days.set(userId, (mem.days.get(userId) ?? []).filter((d) => !d.example));

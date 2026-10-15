@@ -1,7 +1,7 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { requireUser } from "@/lib/session";
-import { getRawDays, upsertDays } from "@/lib/repo";
+import { clearExampleData, getRawDays, setDayField, upsertDays } from "@/lib/repo";
 import { NUM_FIELDS, sum, type DayInput } from "@/lib/scorecard";
 import type { ImportDay } from "@/lib/csv-import";
 
@@ -27,17 +27,21 @@ export async function saveCell(date: string, field: string, value: number): Prom
   if (!YMD.test(date) || !isField(field)) return { ok: false };
   const days = await getRawDays(u.id);
   const cur = days.find((d) => d.date === date) ?? blank(date);
-  await upsertDays(u.id, [{ ...cur, [field]: clamp(field, value), source: cur.source === "csv" ? "csv" : "manual" }]);
+  await setDayField(u.id, { ...cur, source: cur.source === "csv" ? "csv" : "manual" }, field, clamp(field, value));
   revalidatePath("/dashboard", "layout");
   return { ok: true };
 }
 
 /** Merge imported days by date: only the mapped columns change, so nothing is duplicated or wiped. */
-export async function importDays(rows: ImportDay[]): Promise<{ ok: boolean; added: number; updated: number; error?: string }> {
+export async function importDays(rows: ImportDay[]): Promise<{ ok: boolean; added: number; updated: number; clearedExamples?: boolean; error?: string }> {
   const u = await requireUser("/dashboard/numbers/table");
   const list = Array.isArray(rows) ? rows.filter((r) => r && YMD.test(r.date)).slice(0, 3000) : [];
   if (!list.length) return { ok: false, added: 0, updated: 0, error: "No rows with a date to import." };
-  const existing = new Map((await getRawDays(u.id)).map((d) => [d.date, d]));
+  // Your first real import replaces the example numbers, so real and example data never mix.
+  const before = await getRawDays(u.id);
+  const clearedExamples = before.some((d) => d.example);
+  if (clearedExamples) await clearExampleData(u.id);
+  const existing = new Map(before.filter((d) => !d.example).map((d) => [d.date, d]));
   let added = 0, updated = 0;
   const out = list.map((r) => {
     const cur = existing.get(r.date);
@@ -48,5 +52,5 @@ export async function importDays(rows: ImportDay[]): Promise<{ ok: boolean; adde
   });
   await upsertDays(u.id, out);
   revalidatePath("/dashboard", "layout");
-  return { ok: true, added, updated };
+  return { ok: true, added, updated, clearedExamples };
 }
