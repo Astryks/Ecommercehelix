@@ -235,6 +235,9 @@ a { text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .celebrate .confetti { animation: none; } }
 
 /* A tagline right under a heading with the marker underline gets more room, everywhere. */
+/* The marker underline hangs below the heading's line box (the span's 0.2em bottom padding plus its background).
+   Reserve that overhang inside the heading, so the visible gap from the underline to the tagline is the token. */
+:where(h1, h2):has(> .grad-text) { padding-bottom: var(--ul-overhang, 0.33em); }
 :where(h1, h2):has(> .grad-text) + :where(p, div) { margin-top: var(--space-lead-underlined); }
 
 /* Shared page heading styles (dashboard and simple public pages). */
