@@ -81,11 +81,12 @@ try {
 // 5) Tag older Helix prices still used by subscriptions, so members on them keep their plan without *_LEGACY env vars.
 let tagged = 0, after;
 do {
-  const page = await api("GET", `subscriptions?status=all&limit=100&expand[]=data.items.data.price.product${after ? `&starting_after=${after}` : ""}`);
+  const page = await api("GET", `subscriptions?status=all&limit=100&expand[]=data.items.data.price${after ? `&starting_after=${after}` : ""}`);
   for (const sub of page.data) for (const it of sub.items.data) {
     const pr = it.price;
     if (pr.metadata?.helix_plan) continue;
-    const name = (typeof pr.product === "object" ? pr.product.name : "") || pr.nickname || "";
+    const prodId = typeof pr.product === "string" ? pr.product : pr.product?.id;
+    const name = (prodId ? (await api("GET", `products/${prodId}`)).name : "") || pr.nickname || "";
     const plan = /growth/i.test(name) ? "growth" : /starter/i.test(name) ? "starter" : null;
     if (plan) { await api("POST", `prices/${pr.id}`, { metadata: { helix_plan: plan } }); pr.metadata = { helix_plan: plan }; tagged++; console.log(`Older price ${pr.id} (${pr.currency.toUpperCase()}) tagged as ${plan}. Optional: add it to STRIPE_PRICE_${plan.toUpperCase()}_LEGACY.`); }
   }
