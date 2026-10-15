@@ -71,10 +71,24 @@ async function accessToken(userId: string, shop: string): Promise<string> {
   const key = loadKey();
   const t = JSON.parse(decrypt(enc, key, aad(userId))) as Tokens;
   if (!t.expiresAt || t.expiresAt - Date.now() > 300_000) return t.access;
-  if (!t.refresh) throw new Error("Shopify login expired. Please reconnect.");
-  const j = await tokenPost(shop, { client_id: process.env.SHOPIFY_API_KEY!, client_secret: process.env.SHOPIFY_API_SECRET!, grant_type: "refresh_token", refresh_token: t.refresh });
+  const expired = async (why: string) => {
+    await patch(userId, { status: "expired", lastSyncError: "Shopify login expired. Please reconnect." });
+    await logAudit(userId, { actor: "cron", action: "shopify.token_refresh", target: shop, outcome: "error", detail: { reason: why } }).catch(() => {});
+    return new Error("Shopify login expired. Please reconnect.");
+  };
+  if (!t.refresh || (t.refreshExpiresAt && t.refreshExpiresAt <= Date.now())) throw await expired(t.refresh ? "refresh token expired" : "no refresh token");
+  let j: Awaited<ReturnType<typeof tokenPost>>;
+  try {
+    j = await tokenPost(shop, { client_id: process.env.SHOPIFY_API_KEY!, client_secret: process.env.SHOPIFY_API_SECRET!, grant_type: "refresh_token", refresh_token: t.refresh });
+  } catch (e) {
+    // 400/401 means the refresh token was rejected; anything else (network, 5xx) is transient.
+    if (/\((400|401)/.test((e as Error).message)) throw await expired((e as Error).message.slice(0, 200));
+    throw e;
+  }
   const next = tokensFrom(j);
-  await patch(userId, { tokenEnc: encrypt(JSON.stringify(next), key, aad(userId)) });
+  // Shopify may omit a new refresh token; keep the old one and its expiry in that case.
+  if (!next.refresh) Object.assign(next, { refresh: t.refresh, refreshExpiresAt: t.refreshExpiresAt });
+  await patch(userId, { tokenEnc: encrypt(JSON.stringify(next), key, aad(userId)), status: "active" });
   return next.access;
 }
 

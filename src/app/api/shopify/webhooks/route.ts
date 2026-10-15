@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
   const raw = await req.text();
   if (!secret || !verifyWebhookHmac(raw, req.headers.get("x-shopify-hmac-sha256"), secret)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   const topic = req.headers.get("x-shopify-topic") ?? "";
-  let body: { shop_domain?: string; myshopify_domain?: string; domain?: string } = {};
+  let body: { shop_domain?: string; myshopify_domain?: string; domain?: string; customer?: { id?: number }; orders_requested?: number[]; orders_to_redact?: number[]; data_request?: { id?: number } } = {};
   try {
     body = JSON.parse(raw);
   } catch {
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
   for (const userId of users) {
     if (topic === "app/uninstalled") await deleteShopifyData(userId, "shopify", "app/uninstalled");
     else if (topic === "shop/redact") await deleteShopifyData(userId, "shopify", "shop/redact", true);
-    else await logAudit(userId, { actor: "shopify", action: `shopify.${topic.replace("/", ".")}`, target: shop!, outcome: "ok", detail: { note: "Helix stores no customer personal data for this shop." } });
+    else await logAudit(userId, { actor: "shopify", action: `shopify.${topic.replace("/", ".")}`, target: shop!, outcome: "ok", detail: { note: "Helix stores no customer personal data for this shop, so there is nothing to export or erase.", customerId: body.customer?.id ?? null, dataRequestId: body.data_request?.id ?? null, orders: (body.orders_requested ?? body.orders_to_redact ?? []).length } });
   }
   return NextResponse.json({ ok: true });
 }
