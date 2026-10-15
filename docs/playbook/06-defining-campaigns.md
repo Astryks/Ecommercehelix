@@ -267,7 +267,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.10: Testing methodology
 <!-- stage:attract -->
 
-**Why this matters:** Most ad tests never get enough visitors to be statistically certain, so you need fair default rules instead. These keep tests consistent and stop you calling winners too early.
+**Why this matters:** Most ad tests never get enough visitors to be sure of the result, so you need fair default rules instead. These keep tests the same each time and stop you calling winners too early.
 
 **Step 1.** Set your test rules from the table below. Change one thing per batch. Use the number of ads per batch that fits your budget, and the spend each ad gets before you judge it.
 

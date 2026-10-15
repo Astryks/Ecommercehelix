@@ -215,7 +215,7 @@
 
 **Step 1.** Make your brand facts the same everywhere (site, marketplaces, social bios) and grow your reviews.
 
-**Expected result:** AI assistants find consistent facts and plenty of proof.
+**Expected result:** AI helpers find the same facts everywhere and plenty of proof.
 
 **Step 2.** Check your robots.txt lets trusted AI tools read your site. Keep product data clean, and add FAQ sections and clear shipping and returns pages.
 

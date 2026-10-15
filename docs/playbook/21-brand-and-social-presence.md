@@ -88,7 +88,7 @@
 ## Lesson 21.4: Posting cadence you can keep
 <!-- stage:attract -->
 
-**Why this matters:** Cadence means how often you post. Being consistent beats posting a lot, and batching makes it easy to keep up for 12 weeks.
+**Why this matters:** Cadence means how often you post. Being steady beats posting a lot, and batching makes it easy to keep up for 12 weeks.
 
 **Step 1.** Pick the cadence in the table below that matches your stage.
 

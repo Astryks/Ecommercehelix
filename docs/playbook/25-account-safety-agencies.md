@@ -1,6 +1,6 @@
 # Module 25: Account safety, ad accounts and agencies
 
-**Outcome:** every account that runs your business is locked down and owned by you. You know what to do in the first hour of a hack, how to get a disabled ad account reviewed, and how to work with or leave an agency without losing your history.
+**Outcome:** every account that runs your business is locked down and owned by you. You will know what to do in the first hour of a hack and how to get a blocked ad account reviewed. You will also know how to work with or leave an agency without losing your history.
 
 **Related:** [Module 7 Meta ads in practice](07-meta-ads.md), [Module 20 Ad analysis, audiences and campaign setup](20-ad-analysis-audiences-and-setup.md), [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md)
 
@@ -36,11 +36,11 @@
 
 **Why this matters:** One stolen password can cost more than a bad month of sales. Thieves target ad accounts because they can spend your money fast. An hour of lock-down work closes most doors.
 
-**Step 1.** List every account the business depends on: email and domain, Shopify, Meta, Google, TikTok, your email tool, payment providers, bank and domain registrar.
+**Step 1.** List every account the business needs. That is email and domain, Shopify, Meta, Google, TikTok, your email tool, payment providers, bank and the place you bought your domain.
 
 **Expected result:** You have one list of every account.
 
-**Step 2.** Turn on two-factor authentication (a second check after your password) on each, using an authenticator app or security key, not text messages.
+**Step 2.** Turn on two-factor authentication (a second check after your password) on each one. Use an authenticator app or security key, not text messages.
 
 **Expected result:** Every account asks for a second check at login.
 
@@ -78,7 +78,7 @@
 
 **Why this matters:** Meta keeps your ad accounts, Pages, pixel and people in a business portfolio (formerly Business Manager). Whoever owns the portfolio controls everything in it, so it must be you.
 
-**Step 1.** Create the business portfolio yourself with your business email, and make yourself and one trusted person admins (see [Meta Business Help Centre](https://www.facebook.com/business/help)).
+**Step 1.** Make the business portfolio yourself with your business email. Make yourself and one trusted person admins (see [Meta Business Help Centre](https://www.facebook.com/business/help)).
 
 **Expected result:** You own the portfolio and have a backup admin.
 
@@ -102,7 +102,7 @@
 
 **Expected result:** Both are correct; they cannot be changed later without a new ad account.
 
-**Watch out:** Australia: if GST registered, add your ABN in Meta billing so you are not charged GST, and check your card's international fee (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
+**Watch out:** Australia: if you are registered for GST, add your ABN in Meta billing so you are not charged GST. Check your card's overseas fee too (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
 
 **Step 7.** Connect the ad account to Helix.
 
@@ -123,7 +123,7 @@
 
 **Expected result:** Billing shows no outstanding balance.
 
-**Step 3.** If Meta asks for identity checks (photo ID or video selfie), complete them in the official app or Help Centre only.
+**Step 3.** If Meta asks you to prove who you are (photo ID or video selfie), only do it in the official app or Help Centre.
 
 **Expected result:** The identity check is submitted through an official channel.
 
@@ -182,18 +182,18 @@
 
 **Expected result:** The account is locked down.
 
-**Watch out:** If a fake store or ad was set up in your name, tell customers and report the fake pages to Meta.
+**Watch out:** If someone set up a fake store or ad in your name, tell your customers. Report the fake pages to Meta.
 
 ## Lesson 25.5: Working with agencies, and leaving one
 <!-- stage:grow -->
 
 **Why this matters:** An agency can save time, but your accounts, data and history must stay yours.
 
-**Step 1.** Before you sign, list what you must own: ad accounts, pixel and datasets, Shopify, domain, email tool and Google Ads, and give the agency partner or user access only.
+**Step 1.** Before you sign, list what you must own: ad accounts, pixel and datasets, Shopify, domain, email tool and Google Ads. Give the agency partner or user access only.
 
 **Expected result:** Every account is owned by you.
 
-**Step 2.** Put in the contract: you own all accounts, content and data, plus the notice period, handover steps and reports you get.
+**Step 2.** Put this in the contract: you own all accounts, content and data. Add the notice period, handover steps and the reports you get.
 
 **Expected result:** The contract states you own everything.
 
@@ -203,7 +203,7 @@
 
 **Expected result:** You understand every report.
 
-**Step 4.** To leave, give notice and ask for a handover pack: campaign notes, audiences, creative files and any logins they set up.
+**Step 4.** To leave, give notice and ask for a handover pack. It should have campaign notes, audiences, ad files and any logins they set up.
 
 **Expected result:** You have everything needed to run ads yourself.
 
@@ -215,7 +215,7 @@
 
 **Expected result:** The agency has no access.
 
-**Step 6.** If the agency owns your ad account, ask in writing for a transfer, or create a new account in your portfolio and share your pixel to it.
+**Step 6.** If the agency owns your ad account, ask in writing for it to be moved to you. Or make a new account in your portfolio and share your pixel to it.
 
 **Expected result:** You run ads from an account you own. Past campaign history may stay behind, but pixel data is yours.
 
@@ -225,11 +225,11 @@
 
 <!-- do:growth -->
 
-**Step 8.** Check that ad accounts, ads, customer lists and reports are in your name (Meta **Business Settings > Ad accounts**, Google **Admin > Access**).
+**Step 8.** Check that ad accounts, ads, customer lists and reports are in your name. Look in Meta **Business Settings > Ad accounts** and Google **Admin > Access**.
 
 **Expected result:** You own every account and asset.
 
-**Step 9.** Ask your agency to report on MER (total ad spend as a share of total sales) and contribution profit, not just ROAS (sales for each $1 of ads).
+**Step 9.** Ask your agency to report on MER (total ad spend as a share of total sales) and contribution profit. ROAS (sales for each $1 of ads) alone is not enough.
 
 **Expected result:** Agency reports show profit numbers.
 
@@ -242,7 +242,7 @@
 
 **Why this matters:** Phone networks and inbox providers now check that messages really come from you. Unregistered senders get labelled or sent to spam.
 
-**Step 1.** In your email tool's settings, authenticate your sending domain with SPF, DKIM and DMARC (three records that prove email is really from you).
+**Step 1.** In your email tool's settings, set up SPF, DKIM and DMARC for your sending domain. These three records prove email is really from you.
 
 **Expected result:** The tool shows the domain as authenticated.
 
@@ -254,7 +254,7 @@
 
 **Expected result:** Texts show your business name, not "Unverified".
 
-**Watch out:** Australia: since 1 July 2026 business name senders must be on the national SMS Sender ID Register, matching your business name, trademark or domain (see [ACMA](https://www.acma.gov.au/sending-text-messages-your-business-or-organisation-name)). US: standard numbers need carrier registration (10DLC) and toll-free numbers need verification.
+**Watch out:** Australia: since 1 July 2026, texts sent with a business name must be on the national SMS Sender ID Register. The name must match your business name, trademark or domain (see [ACMA](https://www.acma.gov.au/sending-text-messages-your-business-or-organisation-name)). US: standard numbers need carrier registration (10DLC) and toll-free numbers need verification.
 
 **Step 4.** Use the same sender name everywhere.
 

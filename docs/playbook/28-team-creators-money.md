@@ -1,6 +1,6 @@
 # Module 28: Team, creators and money
 
-**Outcome:** you hire the right first helper on the right terms, pay creators with clear agreements, pay overseas suppliers without losing money on currency or scams, compare funding offers by their true cost, keep tool bills in check, look after yourself, and decide calmly whether Amazon is worth adding.
+**Outcome:** you hire the right first helper on the right terms and pay creators with clear agreements. You pay overseas suppliers without losing money to currency or scams. You compare loans by their true cost, keep tool bills in check, look after yourself, and decide calmly if Amazon is worth adding.
 
 **Related:** [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 19 Creators, UGC and video ads](19-creators-ugc-and-video-ads.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 18 Choosing your tool stack](18-tool-stack.md)
 
@@ -37,7 +37,7 @@
 
 **Why this matters:** Your first hire should give you back the hours you spend on work that does not need you.
 
-**Step 1.** For two weeks, log every task and its time, and mark each: only I can do it, someone could do it with a checklist, or it should stop.
+**Step 1.** For two weeks, log every task and its time. Mark each one: only I can do it, someone could do it with a checklist, or it should stop.
 
 **Expected result:** You have a task log with every task marked.
 
@@ -123,7 +123,7 @@
 
 **Why this matters:** Creators are paid with free product, a flat fee, commission or a mix. Clear written terms prevent arguments later. For rates and usage, see [Lesson 19.4](19-creators-ugc-and-video-ads.md#lesson-194-deals-rates-and-usage-rights).
 
-**Step 1.** Split every quote into parts: making the content, posting it, usage rights (using it in your ads, and for how long), exclusivity and raw footage.
+**Step 1.** Split every price into parts: making the content, posting it, and usage rights (using it in your ads, and for how long). Add exclusivity and raw footage.
 
 **Expected result:** You know what each part costs.
 
@@ -158,7 +158,7 @@
 
 **Why this matters:** When you pay in another currency, the exchange rate margin can cost more than the bank fee. Invoice scams also target importers, so confirm before you pay.
 
-**Step 1.** For one real payment, compare total cost with your bank and at least one money transfer provider: your rate against the mid-market rate, plus fees.
+**Step 1.** For one real payment, compare the total cost at your bank and at least one money transfer service. Check your rate against the mid-market rate, plus fees.
 
 **Expected result:** You know the cheapest way to pay.
 
@@ -170,7 +170,7 @@
 
 **Expected result:** Terms are written down.
 
-**Step 4.** Before any first payment or change of bank details, call the supplier on a number you already have to confirm the account.
+**Step 4.** Before any first payment or change of bank details, call the supplier to check the account. Use a number you already have.
 
 **Expected result:** Bank details are verified by phone.
 
@@ -191,9 +191,9 @@
 ## Lesson 28.5: Funding growth: comparing financing offers
 <!-- stage:grow -->
 
-**Why this matters:** Revenue-based financing, platform cash advances and bank loans can fund stock for a proven product, but they make things worse when they fund losses. See also [Lesson 14.5](14-inventory-cash-planning.md#lesson-145-should-you-borrow-weighing-up-a-loan).
+**Why this matters:** Revenue-based loans, platform cash advances and bank loans can pay for stock of a proven product. But they make things worse when they pay for losses. See also [Lesson 14.5](14-inventory-cash-planning.md#lesson-145-should-you-borrow-weighing-up-a-loan).
 
-**Step 1.** Write down exactly what you would buy and its payback, such as more stock of a product that already sells at a profit.
+**Step 1.** Write down exactly what you would buy and how it pays back. For example: more stock of a product that already sells at a profit.
 
 **Expected result:** You have a clear use for the money.
 
@@ -238,7 +238,7 @@
 
 **Watch out:** Uninstall apps properly in Shopify; some leave code or keep billing.
 
-**Step 3.** Remove email and SMS contacts who have not opened or clicked for a long time, after a last win-back message (see [Module 10](10-email-sms-whatsapp.md)).
+**Step 3.** Remove email and SMS contacts who have not opened or clicked for a long time. Send a last win-back message first (see [Module 10](10-email-sms-whatsapp.md)).
 
 **Expected result:** Your contact-based bill drops.
 
@@ -291,7 +291,7 @@
 
 ### Good to know
 
-**Australia:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners, and the Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
+**Australia:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
 
 **US:** call or text 988 for the Suicide and Crisis Lifeline at any hour. See [988lifeline.org](https://988lifeline.org/).
 
@@ -324,7 +324,7 @@
 
 **Expected result:** You know profit per unit after all fees.
 
-**Step 3.** Choose how to sell: as a seller (you set prices and listings) or, if invited, as a wholesale supplier to Amazon.
+**Step 3.** Choose how to sell. You can be a seller (you set prices and listings) or, if invited, a wholesale supplier to Amazon.
 
 **Expected result:** You have a selling model.
 
@@ -349,7 +349,7 @@
 
 **Expected result:** A wholesale price for each product that still makes money, or a list of products that cannot be sold wholesale.
 
-**Step 2.** Write simple terms on one page: minimum order, payment terms (upfront for first orders), delivery times, and a promise not to undercut your stockists on your own site outside planned sales.
+**Step 2.** Write simple terms on one page: minimum order, payment terms (upfront for first orders) and delivery times. Promise not to undercut your stockists on your own site outside planned sales.
 
 **Expected result:** A one-page wholesale terms sheet.
 
@@ -357,7 +357,7 @@
 
 **Expected result:** 20 shops contacted, with replies tracked in a simple sheet.
 
-**Step 4.** Set up wholesale ordering in Shopify (a separate price list or a wholesale app) and keep wholesale stock separate in your stock check.
+**Step 4.** Set up wholesale ordering in Shopify, with a separate price list or a wholesale app. Keep wholesale stock separate in your stock check.
 
 **Expected result:** Stockists can reorder without emails back and forth, and retail stock is protected.
 

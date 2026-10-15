@@ -1,6 +1,6 @@
 # Module 24: Payments, fraud and chargebacks
 
-**Outcome:** you know what each way of paying really costs you, you keep payouts flowing during big sales, you stop card-testing bots and risky orders before they ship, and you answer chargebacks with the right evidence on time.
+**Outcome:** you know what each way of paying really costs you, and you keep payouts flowing during big sales. You stop card-testing bots and risky orders before they ship. You answer chargebacks with the right proof on time.
 
 **Related:** [Module 22 Shopify store setup](22-shopify-store-setup.md), [Module 23 Fulfilment, shipping and returns](23-fulfilment-shipping-returns.md), [Module 25 Account safety, ad accounts and agencies](25-account-safety-agencies.md), [Module 27 Accounting, bookkeeping and tax time](27-accounting-bookkeeping-tax-time.md)
 
@@ -10,9 +10,9 @@
 >
 > **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
 >
-> **What it is:** What each way to pay costs you, and how to keep your money safe from holds, fraud and disputes.
+> **What it is:** What each way to pay costs you. And how to keep your money safe from holds, fraud and disputes.
 >
-> **Why it matters:** A payout hold or a wave of chargebacks can leave you unable to pay suppliers, even in a record month.
+> **Why it matters:** A payout hold or a wave of chargebacks can leave you unable to pay suppliers. That can happen even in a record month.
 >
 > **Do this:**
 >
@@ -25,8 +25,8 @@
 > - **Chargeback:** When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale.
 > - **Card testing:** When fraudsters use your checkout to try many stolen card numbers with small orders.
 > - **Payout:** The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts.
-> - **Payment reserve:** Part of your sales that a payment provider holds back for a while in case of refunds or chargebacks.
-> - **3D Secure:** An extra check where the shopper's bank asks them to confirm a card payment, often in their banking app.
+> - **Payment reserve:** Part of your sales that a payment provider holds back for a while. It covers refunds or chargebacks.
+> - **3D Secure:** An extra check where the shopper's bank asks them to confirm a card payment. It often happens in their banking app.
 >
 > All words are explained in the [glossary](../glossary.md).
 <!-- plain:end -->
@@ -69,7 +69,7 @@
 ## Lesson 24.2: Holds, reserves and frozen payouts
 <!-- stage:grow -->
 
-**Why this matters:** A payment provider can hold part of your money if it sees risk: a new account, a sudden sales jump, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
+**Why this matters:** A payment provider can hold part of your money if it sees risk. For example: a new account, a sudden jump in sales, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
 
 **Step 1.** Read each provider's rules on holds and reserves (money held back for a while in case of refunds) once.
 
@@ -106,7 +106,7 @@
 
 **Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away, and you have a short window to prove the sale was fine.
 
-**Step 1.** Open the chargeback in Shopify and note the response deadline, usually 7 to 21 days on Shopify Payments (see [Shopify: responding to chargebacks](https://help.shopify.com/en/manual/payments/chargebacks/chargeback-process)).
+**Step 1.** Open the chargeback in Shopify and note the deadline to reply. It is usually 7 to 21 days on Shopify Payments (see [Shopify: responding to chargebacks](https://help.shopify.com/en/manual/payments/chargebacks/chargeback-process)).
 
 **Expected result:** You know your deadline. Customers usually have about 120 days to dispute.
 
@@ -143,9 +143,9 @@
 ## Lesson 24.4: Stopping fraud and card testing
 <!-- stage:grow -->
 
-**Why this matters:** Card testing is when fraudsters use your checkout to try stolen card numbers, usually with many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
+**Why this matters:** Card testing is when crooks use your checkout to try stolen card numbers. They usually place many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
 
-**Step 1.** Learn the signs: bursts of small orders, the same cheap item, odd names or emails, many failed payments, or different addresses on one card.
+**Step 1.** Learn the signs. Look for bursts of small orders, the same cheap item, odd names or emails, many failed payments, or different addresses on one card.
 
 **Expected result:** You can spot card testing.
 
@@ -176,7 +176,7 @@
 
 **Why this matters:** A fast, fair refund is cheaper than a dispute. A clear rule saves you deciding each case from scratch.
 
-**Step 1.** Write a one-page refund rule: when you refund in full, when you offer a partial refund or credit, and who approves it.
+**Step 1.** Write a one-page refund rule. Say when you refund in full, when you offer part refunds or credit, and who says yes.
 
 **Expected result:** Your team can handle any refund the way you would.
 

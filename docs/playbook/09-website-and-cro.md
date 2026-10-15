@@ -251,7 +251,7 @@
 
 **Step 3.** Add "goes well with" suggestions in the cart and a one-click offer on the thank-you page after purchase.
 
-**Expected result:** Shoppers see one relevant extra before and after paying.
+**Expected result:** Shoppers see one useful extra before and after paying.
 
 **Step 4.** Add quantity breaks ("buy 3, save 15%") and, for things people use up, subscriptions with an easy skip.
 

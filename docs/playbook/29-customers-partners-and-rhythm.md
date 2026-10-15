@@ -1,6 +1,6 @@
 # Module 29: Customers, partners and the weekly rhythm
 
-**Outcome:** you write in your customers' own words, get new buyers through referrals, partner brands and other people's audiences, send a weekly email people look forward to, and run the business on a few leading numbers, a short weekly meeting, written playbooks, clear owners and a 90-day plan.
+**Outcome:** you write in your customers' own words and get new buyers through referrals, partner brands and other people's audiences. You send a weekly email people look forward to. You run the business on a few early-warning numbers, a short weekly meeting, written playbooks, clear owners and a 90-day plan.
 
 **Related:** [Module 4 Brand and content](04-brand-and-content.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md), [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 28 Team, creators and money](28-team-creators-money.md)
 
@@ -10,9 +10,9 @@
 >
 > **Stage:** Mixed. Lessons 29.2 to 29.6 are Attract, 29.1, 29.7 and 29.8 are Convert, and 29.9 to 29.16 are Grow. See [Attract, Convert, Grow](stages.md).
 >
-> **What it is:** The habits that grow a store without more ad spend: customer words, referrals, partners, a weekly email, and a simple way to run the week.
+> **What it is:** The habits that grow a store without more ad spend. Customer words, referrals, partners, a weekly email, and a simple way to run the week.
 >
-> **Why it matters:** Ads get harder every year. Stores that keep growing have customers who bring friends, partners who send buyers, and an owner who runs the business on a weekly rhythm instead of in a rush.
+> **Why it matters:** Ads get harder every year. Stores that keep growing have customers who bring friends and partners who send buyers. The owner runs the business on a weekly rhythm instead of in a rush.
 >
 > **Do this:**
 >
@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **Referral:** A new customer sent to you by an existing one, usually in return for a reward for both.
-> - **Leading number:** A number that moves before sales do, such as add-to-cart rate or email sign-ups, so you can act early.
+> - **Leading number:** A number that moves before sales do, like add-to-cart rate or email sign-ups. It lets you act early.
 > - **Playbook:** A short written how-to for a task, so anyone on the team can do it the same way.
 > - **Owner (of a number):** The one person who watches a number and acts when it slips.
 >
@@ -37,11 +37,11 @@
 
 **Why this matters:** People buy when they read their own thoughts back. Copy written in your customers' words beats copy written in yours, in ads, on product pages and in emails.
 
-**Step 1.** Open a blank document called "Customer words". Copy in 30 phrases from your 5-star reviews, your 1 to 3-star reviews, your customer emails and any competitor reviews on Amazon or Google.
+**Step 1.** Open a blank document called "Customer words". Copy in 30 phrases from your 5-star reviews and your 1 to 3-star reviews. Add phrases from customer emails and any rival reviews on Amazon or Google.
 
 **Expected result:** You have 30 real phrases, each with where it came from.
 
-**Step 2.** Sort them under four headings: what annoyed them before, what they were afraid of, what they hoped for, and what surprised them after buying.
+**Step 2.** Sort them under four headings. What annoyed them before? What were they afraid of? What did they hope for? What surprised them after buying?
 
 **Expected result:** Each heading has at least five phrases.
 
@@ -51,7 +51,7 @@
 
 <!-- do:flow-review-request -->
 
-**Step 4.** Rewrite the first line of your best product page and one ad using a phrase from the list, word for word where you can.
+**Step 4.** Rewrite the first line of your best product page and one ad. Use a phrase from the list, word for word where you can.
 
 **Expected result:** One page and one ad now open with a real customer phrase.
 
@@ -60,21 +60,21 @@
 ## Lesson 29.2: Find the worry behind the purchase
 <!-- stage:attract -->
 
-**Why this matters:** Most stores talk about the problem everyone already mentions. The worry people feel but rarely say (looking silly, wasting money, letting someone down) is what makes a message feel personal and stops the scroll.
+**Why this matters:** Most stores talk about the problem everyone already mentions. The worry people feel but rarely say makes a message feel personal and stops the scroll. It might be looking silly, wasting money or letting someone down.
 
 **Step 1.** Write the obvious problem your product solves in one line, for example "my dog pulls on the lead".
 
 **Expected result:** One plain line describing the obvious problem.
 
-**Step 2.** Under it, write what the customer feels but does not post about, using your customer words list (Lesson 29.1), for example "I dread walking him past other dogs because people stare".
+**Step 2.** Under it, write what the customer feels but does not post about. Use your customer words list (Lesson 29.1). For example: "I dread walking him past other dogs because people stare".
 
 **Expected result:** One to three unspoken worries, each in a customer's voice.
 
-**Step 3.** Write one thing they probably do not know yet that would change how they see the problem, for example "pulling is usually a harness fit issue, not a training issue".
+**Step 3.** Write one thing they probably do not know yet that would change how they see the problem. For example: "pulling is usually a harness fit issue, not a training issue".
 
 **Expected result:** One surprising, true insight you can teach.
 
-**Step 4.** Turn each line into an ad hook or email subject line and test the unspoken worry against your current best hook.
+**Step 4.** Turn each line into an ad hook or email subject line. Test the unspoken worry against your current best hook.
 
 **Expected result:** A new hook is live in a test next to your current winner.
 
@@ -89,11 +89,11 @@
 
 **Expected result:** One proven piece is chosen.
 
-**Step 2.** Write out its main points (or get a transcript from your phone or an AI tool) and list five short ideas inside it.
+**Step 2.** Write out its main points, or get a transcript from your phone or an AI tool. List five short ideas inside it.
 
 **Expected result:** Five standalone ideas, each one sentence.
 
-**Step 3.** Turn each idea into one format: a short video, a carousel, a story poll, an email section and an ad hook.
+**Step 3.** Turn each idea into one format. Make a short video, a carousel, a story poll, an email section and an ad hook.
 
 **Expected result:** You have at least ten pieces from one starting point.
 
@@ -108,7 +108,7 @@
 
 **Why this matters:** A friend's recommendation is the cheapest, most trusted way to win a customer. Most stores never ask, or ask at the wrong time.
 
-**Step 1.** Choose a two-sided reward you can afford from your numbers: for example $15 off for the friend and $15 credit for the customer. Check it stays under your break-even cost per order (Lesson 1.5).
+**Step 1.** Choose a two-sided reward you can afford from your numbers. For example: $15 off for the friend and $15 credit for the customer. Check it stays under your break-even cost per order (Lesson 1.5).
 
 **Expected result:** A reward that both sides value and that still makes a profit.
 
@@ -116,7 +116,7 @@
 
 **Expected result:** Each customer can share a personal link or code.
 
-**Step 3.** Ask at the happy moment: in the email the day after delivery, on the thank-you page and inside the parcel with a printed card.
+**Step 3.** Ask at the happy moment. Use the email the day after delivery, the thank-you page, and a printed card in the parcel.
 
 **Expected result:** The ask appears in three places at the moment people feel best about you.
 
@@ -129,13 +129,13 @@
 ## Lesson 29.5: Team up with brands that share your customer
 <!-- stage:attract -->
 
-**Why this matters:** Another brand that sells something different to the same people can introduce you to thousands of warm buyers for the cost of a good offer.
+**Why this matters:** Another brand that sells something different to the same people can introduce you to thousands of warm buyers. It costs you only a good offer.
 
-**Step 1.** List 10 brands your customer also buys from that do not compete with you (for a baby clothes store: nappy bags, baby carriers, sleep coaches).
+**Step 1.** List 10 brands your customer also buys from that do not compete with you. For a baby clothes store: nappy bags, baby carriers, sleep coaches.
 
 **Expected result:** A list of 10 brands with a contact name or email for each.
 
-**Step 2.** Pick one simple idea to offer each: a joint giveaway, a gift-with-purchase swap, a shared bundle or an email swap where you each feature the other.
+**Step 2.** Pick one simple idea to offer each one. Try a joint giveaway, swapping free gifts, a shared bundle, or featuring each other in your emails.
 
 **Expected result:** One clear, low-effort idea per brand.
 
@@ -158,7 +158,7 @@
 
 **Expected result:** Five targets with the host's contact details.
 
-**Step 2.** Write three story angles only you can tell: why you started, a surprising thing you learned about your customers, and a useful tip.
+**Step 2.** Write three story ideas only you can tell. Why you started, a surprising thing you learned about your customers, and a useful tip.
 
 **Expected result:** Three angles, two lines each.
 
@@ -173,13 +173,13 @@
 ## Lesson 29.7: A weekly story email
 <!-- stage:convert -->
 
-**Why this matters:** Sale-only emails train people to wait for discounts. A short weekly email with a story, a useful idea and one product keeps your brand in mind and sells at full price.
+**Why this matters:** Sale-only emails train people to wait for discounts. A short weekly email with a story, a useful idea and one product keeps your brand in mind. It sells at full price.
 
 **Step 1.** Pick one fixed day and time for your weekly email.
 
 **Expected result:** A recurring slot is in your calendar.
 
-**Step 2.** Write it in four parts: a subject that sounds like a friend, a short story from the week (a customer, a product decision, a mistake), the lesson in one line, and one product that fits.
+**Step 2.** Write it in four parts. A subject that sounds like a friend. A short story from the week (a customer, a product choice, a mistake). The lesson in one line. One product that fits.
 
 **Expected result:** A 150 to 250-word email in that order.
 
@@ -198,11 +198,11 @@
 
 **Why this matters:** Most people who sign up do not buy straight away because a question is holding them back. Answering those questions in a short email series removes the blockers one at a time.
 
-**Step 1.** List the five questions you get asked most before people buy (sizing, delivery time, returns, how it compares, is it worth the price).
+**Step 1.** List the five questions people ask most before they buy. For example: sizing, delivery time, returns, how it compares, and is it worth the price.
 
 **Expected result:** Five questions ranked by how often they come up.
 
-**Step 2.** Write one short email per question with a straight answer, proof (a review or photo) and a link to the best product.
+**Step 2.** Write one short email per question. Give a straight answer, proof (a review or photo) and a link to the best product.
 
 **Expected result:** Five emails drafted.
 
@@ -217,7 +217,7 @@
 
 **Why this matters:** Sales and profit tell you what already happened. A few leading numbers warn you a week early, while you can still act.
 
-**Step 1.** Pick five to seven numbers: at least two results (net profit, revenue) and three leading ones (sessions, add-to-cart rate, conversion rate, cost per order, email sign-ups).
+**Step 1.** Pick five to seven numbers. Take at least two results (net profit, sales) and three early-warning ones (sessions, add-to-cart rate, conversion rate, cost per order, email sign-ups).
 
 **Expected result:** A short list of five to seven numbers.
 
@@ -238,13 +238,13 @@
 ## Lesson 29.10: Run a 30-minute weekly numbers meeting
 <!-- stage:grow -->
 
-**Why this matters:** Checking in every week gives you 52 chances a year to correct course, instead of discovering problems at the end of a quarter.
+**Why this matters:** Checking in every week gives you 52 chances a year to change course. Otherwise you find problems at the end of a quarter.
 
 **Step 1.** Book 30 minutes at the same time each week, even if it is just you.
 
 **Expected result:** A recurring meeting is in your calendar.
 
-**Step 2.** Run the same order every time: wins (3 minutes), numbers green or red against target (5 minutes), the one red number to fix (15 minutes), and who does what by when (7 minutes).
+**Step 2.** Run the same order every time. Wins (3 minutes). Numbers green or red against target (5 minutes). The one red number to fix (15 minutes). Who does what by when (7 minutes).
 
 **Expected result:** The meeting ends with one fix and a named owner.
 
@@ -284,7 +284,7 @@
 
 **Expected result:** Five to eight jobs listed.
 
-**Step 2.** Write one owner next to each, even if it is you for most of them, and the number each owner watches.
+**Step 2.** Write one owner next to each, even if it is you for most. Add the number each owner watches.
 
 **Expected result:** Every job has one owner and one number.
 
@@ -297,7 +297,7 @@
 
 **Why this matters:** A year is too far ahead to plan in detail, and a week is too short to change much. Ninety days is long enough for real progress and short enough to stay focused.
 
-**Step 1.** Write one goal for the next 90 days with a number and a date, for example "$8,000 net profit a month by 31 March".
+**Step 1.** Write one goal for the next 90 days with a number and a date. For example: "$8,000 net profit a month by 31 March".
 
 **Expected result:** One measurable goal.
 
@@ -309,7 +309,7 @@
 
 **Expected result:** A short list of blockers with a plan for each.
 
-**Step 4.** Choose no more than three projects that move the goal, and put the first step of each in this week's tasks.
+**Step 4.** Choose no more than three projects that move the goal. Put the first step of each in this week's tasks.
 
 **Expected result:** Three projects, each with a first step scheduled.
 
@@ -335,17 +335,17 @@
 ## Lesson 29.15: Write a one-page direction for the business
 <!-- stage:grow -->
 
-**Why this matters:** When you know who you serve, what you stand for and what you will not do, daily decisions get faster and new team members make choices you agree with.
+**Why this matters:** When you know who you serve, what you stand for and what you will not do, daily choices get faster. New team members also make choices you agree with.
 
 **Step 1.** Write one sentence on who you serve and the change you make for them.
 
 **Expected result:** A one-sentence purpose.
 
-**Step 2.** Write three to five rules you run the business by, each with an example, such as "We answer every message the same day".
+**Step 2.** Write three to five rules you run the business by, each with an example. For example: "We answer every message the same day".
 
 **Expected result:** Three to five rules with examples.
 
-**Step 3.** Write where you want the business to be in three years in numbers (revenue, profit, team size) and one sentence on how life looks for you.
+**Step 3.** Write where you want the business to be in three years in numbers: sales, profit and team size. Add one sentence on how your life looks.
 
 **Expected result:** A three-year picture on one page.
 

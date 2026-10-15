@@ -1,6 +1,6 @@
 # Module 27: Accounting, bookkeeping and tax time
 
-**Outcome:** you have the right helpers, your store and your books agree each month, your stock and product costs are recorded properly, and tax time in June (Australia) or the new year (US) is a checklist, not a panic.
+**Outcome:** you have the right helpers, and your store and your books agree each month. Your stock and product costs are recorded properly. Tax time in June (Australia) or the new year (US) is a checklist, not a panic.
 
 **Related:** [Module 26 Tax, GST, sales tax and duties](26-tax-gst-sales-tax-duties.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md), [Module 24 Payments, fraud and chargebacks](24-payments-fraud-chargebacks.md)
 
@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **Reconciliation:** Matching the money in your bank with the sales, fees and refunds in your books.
-> - **Clearing account:** A holding account in your books where a payment provider's sales and fees sit until the payout lands in the bank.
+> - **Clearing account:** A holding account in your books. A payment provider's sales and fees sit there until the payout lands in the bank.
 > - **Stocktake:** Counting every unit you hold, usually at the end of the financial year, so your books match the shelf.
 > - **Landed cost:** What one unit really costs once it reaches your warehouse: product, freight, duties and fees.
 >
@@ -39,7 +39,7 @@
 
 **Why this matters:** Your business structure changes how you pay tax and what you are personally liable for. A good accountant pays for themselves, while a poor bookkeeper can cost you a year of clean-up.
 
-**Step 1.** Learn the two roles: a bookkeeper keeps records up to date weekly or monthly; an accountant or tax agent prepares returns, gives tax advice and helps you plan.
+**Step 1.** Learn the two roles. A bookkeeper keeps records up to date each week or month. An accountant or tax agent does tax returns, gives tax advice and helps you plan.
 
 **Expected result:** You know which helper you need for what.
 
@@ -51,7 +51,7 @@
 
 **Expected result:** You can compare candidates on the same answers.
 
-**Step 3.** Choose a fixed monthly fee with a written list of what is included and what costs extra (such as tax returns or catch-up work).
+**Step 3.** Choose a fixed monthly fee with a written list of what is included. Also list what costs extra, like tax returns or catch-up work.
 
 **Expected result:** There are no surprise bills.
 
@@ -63,7 +63,7 @@
 
 **Expected result:** Your structure still suits the business.
 
-**Watch out:** Australia: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register); common structures are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)); non-residents owning a US company need a cross-border specialist.
+**Watch out:** Australia: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)); non-residents owning a US company need a cross-border specialist.
 
 ### Good to know
 
@@ -78,11 +78,11 @@
 
 **Expected result:** All records live in one place.
 
-**Step 2.** Install a connector app that records each payout as one entry split into sales, shipping charged, discounts, refunds, GST or sales tax, and fees.
+**Step 2.** Install a connector app that records each payout as one entry. It splits it into sales, shipping charged, discounts, refunds, GST or sales tax, and fees.
 
 **Expected result:** Each payout is one tidy entry. Compare connectors on price and payment method support.
 
-**Step 3.** Create a clearing account (a holding account) for each payment provider: Shopify Payments, PayPal and each buy now pay later provider.
+**Step 3.** Make a clearing account (a holding account) for each payment provider. That means Shopify Payments, PayPal and each buy now pay later provider.
 
 **Expected result:** Sales go in, payouts and fees come out, and the balance falls back towards zero.
 
@@ -125,7 +125,7 @@
 
 <!-- do:calendar -->
 
-**Step 4.** Write off damaged, lost or unsellable stock with a note of why, and ask your accountant how to value slow stock.
+**Step 4.** Write off damaged, lost or unsellable stock with a note of why. Ask your accountant how to value slow stock.
 
 **Expected result:** Dead stock is no longer counted as an asset.
 
@@ -133,7 +133,7 @@
 
 **Expected result:** Periods compare fairly.
 
-**Watch out:** Australia: count on or near 30 June; small businesses whose stock value changes by $5,000 or less may skip the formal adjustment (see [ATO](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock)). US: count on or near 31 December or your year end (see [IRS Publication 538](https://www.irs.gov/publications/p538)).
+**Watch out:** Australia: count stock on or near 30 June. Small businesses whose stock value changes by $5,000 or less may skip the formal step (see [ATO](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock)). US: count on or near 31 December or your year end (see [IRS Publication 538](https://www.irs.gov/publications/p538)).
 
 ### Good to know
 
@@ -195,7 +195,7 @@
 
 **Expected result:** Stock and super are done.
 
-**Watch out:** From 1 July 2026, employers pay super with each payday and it must reach the fund within 7 business days (see [ATO: Payday Super](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super/about-payday-super)).
+**Watch out:** From 1 July 2026, employers pay super with each payday. It must reach the fund within 7 business days (see [ATO: Payday Super](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super/about-payday-super)).
 
 **Step 3.** Before 30 June, gather receipts for big purchases and check which costs fall in this year.
 
@@ -209,7 +209,7 @@
 
 **Expected result:** BAS is lodged.
 
-**Step 6.** Lodge your income tax return by 31 October yourself, or be on a registered tax agent's client list before then to lodge later (see [ATO](https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-with-a-registered-tax-agent)).
+**Step 6.** Send in your income tax return by 31 October yourself. Or join a registered tax agent's client list before then, so you can send it later (see [ATO](https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-with-a-registered-tax-agent)).
 
 **Expected result:** Your return date is known and met.
 
@@ -230,7 +230,7 @@
 
 **Expected result:** You have a W-9 for each contractor.
 
-**Step 3.** By 31 January, send Form 1099-NEC to contractors paid $2,000 or more in 2026 and file it with the IRS (the 2025 limit was $600) (see [IRS instructions](https://www.irs.gov/instructions/i1099mec)).
+**Step 3.** By 31 January, send Form 1099-NEC to contractors you paid $2,000 or more in 2026, and file it with the IRS. The 2025 limit was $600 (see [IRS instructions](https://www.irs.gov/instructions/i1099mec)).
 
 **Expected result:** All 1099s are sent and filed.
 
@@ -238,7 +238,7 @@
 
 **Expected result:** Those returns are filed.
 
-**Step 5.** By 15 April, file individual and C corporation returns and pay the first estimated tax; later estimates usually fall in June, September and January.
+**Step 5.** By 15 April, file personal and C corporation returns and pay the first estimated tax. Later payments usually fall in June, September and January.
 
 **Expected result:** Returns are filed and estimates are on the calendar.
 

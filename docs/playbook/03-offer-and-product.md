@@ -144,7 +144,7 @@
 
 **Step 2.** Add a size chart or sizing tool to every product where fit matters.
 
-**Expected result:** Each relevant product page has a size guide link above the Add to cart button.
+**Expected result:** Each product page that needs one has a size guide link above the Add to cart button.
 
 **Step 3.** Turn on live chat (Shopify Inbox is free) for your opening hours.
 

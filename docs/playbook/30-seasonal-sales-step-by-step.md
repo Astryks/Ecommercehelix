@@ -1,6 +1,6 @@
 # Module 30: Seasonal sales, step by step
 
-**Outcome:** for any big date in the year, you know what to do 10 weeks out, 6 weeks out, 3 weeks out, 2 weeks out, while the sale runs and the week after, one small step at a time.
+**Outcome:** for any big date in the year, you know what to do at each point, one small step at a time. That means 10, 6, 3 and 2 weeks out, while the sale runs and the week after.
 
 **Related:** [Module 13 Promotions and sales](13-promotions-and-sales.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md), [Module 14 Stock and cash](14-inventory-cash-planning.md)
 
@@ -73,7 +73,7 @@
 ## Lesson 30.3: Set up a discount code in Shopify
 <!-- stage:convert -->
 
-**Why this matters:** A code that is ready, tested and set to start and stop by itself means no late-night scramble on the big day.
+**Why this matters:** A code that is ready, tested and set to start and stop by itself means no late-night rush on the big day.
 
 **Step 1.** In Shopify admin, open **Discounts** in the left menu. Press **Create discount**.
 
@@ -110,7 +110,7 @@
 
 **Expected result:** The first thing a visitor sees is the offer.
 
-**Step 2.** Make one collection for the event, such as "Gifts under $50", and add an announcement bar at the top of every page.
+**Step 2.** Make one collection for the event, like "Gifts under $50". Add an announcement bar at the top of every page.
 
 **Expected result:** One click from the banner takes people to the collection.
 

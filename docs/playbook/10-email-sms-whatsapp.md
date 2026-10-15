@@ -53,7 +53,7 @@
 
 **Step 4.** Add location rules if you sell to several regions, so each region sees offers and text sign-ups that suit it.
 
-**Expected result:** Overseas visitors see a relevant offer.
+**Expected result:** Overseas visitors see an offer that fits them.
 
 **Step 5.** After 2 weeks, measure and improve.
 
@@ -138,7 +138,7 @@
 ## Lesson 10.4: Segments
 <!-- stage:grow -->
 
-**Why this matters:** A segment is a group of people on your list who share something. Sending to the right segment keeps emails out of spam folders and makes each message more relevant.
+**Why this matters:** A segment is a group of people on your list who share something. Sending to the right segment keeps emails out of spam folders and makes each message more useful.
 
 **Step 1.** In your email app, make groups: people who engaged in the last 30, 60 and 90 days, buyers, repeat buyers and VIPs (your best customers).
 
