@@ -20,7 +20,7 @@ async function applySub(sub: SubLike & { customer?: string | { id: string } | nu
   if (row && row.subscriptionId === sub.id && isStale(created, row.lastEventAt)) return "stale";
   // Never let an old or second subscription overwrite a different live one.
   if (row?.subscriptionId && row.subscriptionId !== sub.id && ["active", "trialing", "past_due"].includes(row.status) && !["active", "trialing", "past_due"].includes(sub.status)) return "other-sub";
-  const f = subFields(sub, (p) => planForPrice(p));
+  const f = subFields(sub, (p, price) => planForPrice(p, process.env, price));
   await writeSub(userId, { ...f, customerId: idOf(sub.customer), subscriptionId: sub.id, lastEventAt: new Date(created * 1000) });
   const nowCanceling = (f.cancelAtPeriodEnd && !row?.cancelAtPeriodEnd) || (sub.status === "canceled" && row?.status !== "canceled" && !row?.cancelAtPeriodEnd);
   if (nowCanceling && row?.email)

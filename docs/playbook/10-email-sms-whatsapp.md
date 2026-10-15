@@ -49,9 +49,9 @@
 
 **Expected result:** The form shows at the right moment and never to people already on the list.
 
-**Watch out:** Game-style forms (spin to win) can lift sign-ups, but watch the cost of discounts and the quality of the list.
+**Watch out:** Game-style forms (spin to win) can lift sign-ups. But watch the cost of discounts and the quality of the list.
 
-**Step 4.** Add location rules if you sell to several regions, so each region sees offers and text sign-ups that suit it.
+**Step 4.** If you sell to several regions, add location rules. Then each region sees offers and text sign-ups that suit it.
 
 **Expected result:** Overseas visitors see an offer that fits them.
 
@@ -110,7 +110,7 @@
 
 <!-- do:flow-post-purchase -->
 
-**Step 6.** Then add the extras one at a time. Win-back, back in stock, price drop, time to reorder, VIP and birthday. Also a clean-up flow (removing people who never open), review request, and a "you may also like" email after the first order.
+**Step 6.** Then add the extras one at a time. Win-back, back in stock, price drop, time to reorder, VIP and birthday. Also a clean-up flow (removing people who never open) and a review request. And a "you may also like" email after the first order.
 
 **Expected result:** Your flow list grows month by month.
 
@@ -140,7 +140,7 @@
 
 **Why this matters:** A segment is a group of people on your list who share something. Sending to the right segment keeps emails out of spam folders and makes each message more useful.
 
-**Step 1.** In your email app, make groups: people who engaged in the last 30, 60 and 90 days, buyers, repeat buyers and VIPs (your best customers).
+**Step 1.** In your email app, make groups. Use people who engaged in the last 30, 60 and 90 days, buyers, repeat buyers and VIPs.
 
 **Expected result:** The segments show live counts.
 
@@ -172,7 +172,7 @@
 
 **Why this matters:** Monthly reviews show where emails leak money. Fixing the weakest step first gives the biggest gain for the least work.
 
-**Step 1.** Open your email app's reports and record the flow and campaign numbers shown in the table below for last month.
+**Step 1.** Open your email app's reports. Write down last month's flow and campaign numbers shown in the table below.
 
 **Expected result:** You have one line of numbers for flows and one for campaigns.
 
@@ -211,7 +211,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Why this matters:** Deliverability means your emails reach the inbox, not spam. Without it, the best email in the world earns nothing. Most of it is one-time setup.
 
-**Step 1.** In your email app's domain settings, follow the guide to add SPF, DKIM and DMARC records at your domain host. These settings prove your emails really come from you.
+**Step 1.** Open your email app's domain settings. Follow the guide to add SPF, DKIM and DMARC records at your domain host. These settings prove your emails really come from you.
 
 **Expected result:** The email app shows your sending domain as verified or authenticated.
 
@@ -219,11 +219,11 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** Sends grow steadily without bounce or spam spikes.
 
-**Step 3.** Remove bad addresses such as domain typos (gmial.com) and set up a sunset flow for people who never open.
+**Step 3.** Remove bad addresses, like typos (gmial.com). Set up a clean-up flow for people who never open.
 
 **Expected result:** Your list holds only reachable, interested people.
 
-**Step 4.** Watch bounce rates by email provider each week, and avoid all caps, lots of exclamation marks and single-image emails.
+**Step 4.** Watch bounce rates by email provider each week. Avoid all caps, lots of exclamation marks and emails that are one big image.
 
 **Expected result:** You catch problems with one provider (for example only Outlook bouncing) early.
 
@@ -249,7 +249,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Why this matters:** Text messages get read fast but cost more than email. Used for big moments only, they earn well; used every day, they drive unsubscribes.
 
-**Step 1.** Add a text step in the welcome flow and checkout reminder, for people who did not act on the email.
+**Step 1.** Add a text step in the welcome flow and checkout reminder. It is for people who did not act on the email.
 
 **Expected result:** SMS only goes out where email did not work.
 

@@ -1,6 +1,6 @@
 # Module 22: Shopify store setup
 
-**Outcome:** a Shopify store that is ready to take real orders. It has your own domain, a fast theme, and clear home and product pages. Shipping, taxes and payments work, and policies are plain. It has a small set of apps, tracking for your ads, and a test order that went all the way through.
+**Outcome:** a Shopify store that is ready to take real orders. It has your own domain, a fast theme, and clear home and product pages. Shipping, taxes and payments work, and policies are plain. It has a small set of apps and tracking for your ads. And a test order went all the way through.
 
 **Related:** [Module 9 Website, conversion and order value](09-website-and-cro.md), [Module 18 Choosing your tool stack](18-tool-stack.md), [Module 7 Meta ads in practice](07-meta-ads.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md)
 
@@ -10,7 +10,7 @@
 >
 > **Stage:** Convert (turn visits into sales). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
 >
-> **What it is:** We build your Shopify store one small step at a time, until it is ready for real orders.
+> **What it is:** We build your Shopify store one small step at a time. We stop when it is ready for real orders.
 >
 > **Why it matters:** A clear, fast, trustworthy store makes every ad dollar go further. Mistakes in tax, payments or tracking are hard to fix later.
 >
@@ -25,8 +25,8 @@
 > - **Theme:** The design template for your Shopify store. It controls how every page looks.
 > - **Domain:** Your store's web address, like yourbrand.com.
 > - **Variant:** One option of a product, like a size or colour, with its own stock and price.
-> - **GST:** Goods and services tax: 10% in Australia (15% in New Zealand), added to most sales once you are registered.
-> - **Sales tax:** In the US, a tax set by each state (and some cities) that the seller collects at checkout.
+> - **GST:** Goods and services tax. It is 10% in Australia (15% in New Zealand), added to most sales once you register.
+> - **Sales tax:** In the US, a tax set by each state (and some cities). The seller collects it at checkout.
 > - **Test order:** A pretend order you place yourself to check payments, emails and tracking work.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -61,7 +61,7 @@
 
 **Expected result:** Everything you need to build is in one folder.
 
-**Watch out:** Australia: if you expect $75,000 or more in sales in a year, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
+**Watch out:** Australia: if you expect $75,000 or more in sales a year, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
 
 ## Lesson 22.2: Domain and email
 <!-- stage:convert -->
@@ -89,7 +89,7 @@
 ## Lesson 22.3: Choose and set up a theme
 <!-- stage:convert -->
 
-**Why this matters:** The theme is the design of your store. A fast, simple theme beats a fancy slow one, and always editing a copy means you never break the live store.
+**Why this matters:** The theme is the design of your store. A fast, simple theme beats a fancy slow one. Always edit a copy, so you never break the live store.
 
 **Step 1.** In **Online Store > Themes**, start with a free Shopify theme such as Dawn (see [Shopify: themes](https://help.shopify.com/en/manual/online-store/themes)).
 
@@ -101,7 +101,7 @@
 
 **Expected result:** You are working on a copy, not the live theme.
 
-**Step 3.** In **Customize > Theme settings**, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.
+**Step 3.** In **Customize > Theme settings**, set your logo, 2 to 3 colours and 1 to 2 fonts. Pick a button style.
 
 **Expected result:** Your store uses no more than 2 fonts and 3 main colours.
 
@@ -122,15 +122,15 @@
 
 **Why this matters:** The home page should answer three questions in a few seconds. What is this? Is it for me? Why should I trust it? Build the top first, then the sections below in a proven order.
 
-**Step 1.** In the theme editor, add a promo bar with one short line, such as your shipping offer or a guarantee.
+**Step 1.** In the theme editor, add a promo bar with one short line. Use your shipping offer or a guarantee.
 
 **Expected result:** The promo bar shows at the very top on every page.
 
-**Step 2.** Set the header menu to your logo plus 4 to 5 links (for example Shop, Bundles, Reviews, FAQ, About).
+**Step 2.** Set the header menu to your logo plus 4 to 5 links. For example: Shop, Bundles, Reviews, FAQ, About.
 
 **Expected result:** The header is simple and uncluttered.
 
-**Step 3.** Add a banner with a photo of the product in use, your promise in one line and one button ("Shop now"). You can add a row of category tiles people swipe sideways on phones.
+**Step 3.** Add a banner with a photo of the product in use. Add your promise in one line and one button ("Shop now"). You can add a row of category tiles people swipe sideways on phones.
 
 **Expected result:** The top of the page says what you sell and gives one next step.
 
@@ -154,13 +154,13 @@
 ## Lesson 22.5: Product pages: titles, photos and descriptions
 <!-- stage:convert -->
 
-**Why this matters:** Most buying decisions happen on the product page. Answer every worry before the buyer has to ask, and keep price, rating and Add to cart visible on a phone.
+**Why this matters:** Most buying decisions happen on the product page. Answer every worry before the buyer has to ask. Keep price, rating and Add to cart easy to see on a phone.
 
-**Step 1.** Write a short title: product name plus the main thing it does or is made of ("Linen Shirt, Relaxed Fit").
+**Step 1.** Write a short title: the product name plus what it does or is made of. For example: "Linen Shirt, Relaxed Fit".
 
 **Expected result:** The title is clear and short.
 
-**Step 2.** Upload at least 4 square photos: plain background, in use, size or scale, and a close-up of the key detail.
+**Step 2.** Upload at least 4 square photos. Show a plain background, the product in use, its size, and a close-up of the key detail.
 
 **Expected result:** The gallery answers "what does it look like in real life".
 
@@ -168,7 +168,7 @@
 
 **Expected result:** On a phone you see price, rating and Add to cart without scrolling.
 
-**Step 4.** Write the description as short lines: the result first, then 3 to 5 key points, then what is included. Add a short FAQ under the button: sizing, materials, shipping time, returns and care.
+**Step 4.** Write the description as short lines. Put the result first, then 3 to 5 key points, then what is included. Add a short FAQ under the button: sizing, materials, shipping time, returns and care.
 
 **Expected result:** Common questions are answered on the page.
 
@@ -187,13 +187,13 @@
 ## Lesson 22.6: Variants and inventory
 <!-- stage:convert -->
 
-**Why this matters:** Variants are the options of one product, such as size or colour, and inventory is how many you have. Setting them up properly stops overselling and lets Helix work out profit and shipping correctly.
+**Why this matters:** Variants are the options of one product, like size or colour. Inventory is how many you have. Setting them up properly stops overselling and lets Helix work out profit and shipping correctly.
 
 **Step 1.** Add options (Size, Colour) to one product instead of separate products (see [Shopify: variants](https://help.shopify.com/en/manual/products/variants)).
 
 **Expected result:** One product page shows every option.
 
-**Step 2.** Give each variant its own photo, price if different, SKU (your code for each product version) and stock count.
+**Step 2.** Give each variant its own photo, and its own price if it differs. Add a SKU (your code for each version) and a stock count.
 
 **Expected result:** Every variant is complete.
 
@@ -237,7 +237,7 @@
 
 **Why this matters:** Collections are groups of products, and menus and search help people find them. A new visitor should reach any product in 3 taps or fewer.
 
-**Step 1.** Create collections for Best sellers, New, and one per product type, using automatic collections where you can (see [Shopify: collections](https://help.shopify.com/en/manual/products/collections)).
+**Step 1.** Make collections for Best sellers, New, and one per product type. Use automatic collections where you can (see [Shopify: collections](https://help.shopify.com/en/manual/products/collections)).
 
 **Expected result:** Collections update themselves as products change.
 
@@ -297,7 +297,7 @@
 
 **Why this matters:** Tax set up wrong either costs you money or breaks the law. In Australia, you must register for GST once sales reach $75,000 a year. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
 
-**Step 1.** Australia: check if your GST turnover (this month plus the last 11) has reached $75,000, or will in the next 12 months. If so, register within 21 days (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
+**Step 1.** Australia: check your GST turnover (this month plus the last 11). Has it reached $75,000, or will it in the next 12 months? If so, register within 21 days (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
 
 **Expected result:** You know whether you must register.
 
@@ -307,7 +307,7 @@
 
 **Watch out:** If you are not registered, do not charge GST and do not call invoices tax invoices.
 
-**Step 3.** In Helix **Settings**, leave **My prices include GST/VAT** on (the default for Australia) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
+**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Leave it on (the Australian default) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
 
 **Expected result:** Helix divides sales by 1.1 before profit maths when needed. New Zealand (15%) and UK (20%) are there too.
 
@@ -344,7 +344,7 @@
 
 **Expected result:** Checkout shows express buttons and PayPal.
 
-**Step 3.** Consider one buy now pay later option: Afterpay in Australia, Shop Pay Installments in the US (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
+**Step 3.** Think about one buy now pay later option. Use Afterpay in Australia or Shop Pay Installments in the US (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
 
 **Expected result:** Shoppers can pay in parts. Check the fee, which is higher than a card fee.
 
@@ -365,7 +365,7 @@
 
 **Why this matters:** Clear policies build trust and keep you within the law. Write them in plain words a 12-year-old could follow, and link them where buyers look.
 
-**Step 1.** In **Settings > Policies**, make Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
+**Step 1.** Go to **Settings > Policies**. Make Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
 
 **Expected result:** All five policy pages exist.
 
@@ -373,7 +373,7 @@
 
 **Expected result:** The policies sound like you and match your real process.
 
-**Watch out:** Australia: customers always have rights to repair, replacement or refund for faulty or not-as-described products under Australian Consumer Law. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it. If you state none, ship within 30 days (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
+**Watch out:** Australia: under Australian Consumer Law, customers always have rights for faulty or wrong products. They can get a repair, replacement or refund. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it. If you state none, ship within 30 days (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
 
 **Step 3.** Link every policy in the footer and near checkout.
 
@@ -408,7 +408,7 @@
 
 **Why this matters:** Every app can slow your store and adds a monthly cost. A small starter set covers almost everything a new store needs. See Module 18 for when to add more.
 
-**Step 1.** Install the starter set only. That is a reviews app, Shopify Email or Klaviyo, the Facebook & Instagram and Google & YouTube channels, and maybe an after-purchase offer app. Add subscriptions only if you sell refills.
+**Step 1.** Install the starter set only. That is a reviews app, plus Shopify Email or Klaviyo. Add the Facebook & Instagram and Google & YouTube channels, and maybe an after-purchase offer app. Add subscriptions only if you sell refills.
 
 **Expected result:** Your app list is short and every app has a job.
 
@@ -460,7 +460,7 @@
 ## Lesson 22.17: Pre-launch checklist
 <!-- stage:convert -->
 
-**Why this matters:** One last checklist before you launch or turn on ads catches the small things that cost the first sales.
+**Why this matters:** Do one last checklist before you launch or turn on ads. It catches the small things that cost the first sales.
 
 **Step 1.** Go through every row of the table below and tick it off.
 

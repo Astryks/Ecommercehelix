@@ -24,7 +24,7 @@
 >
 > - **Reconciliation:** Matching the money in your bank with the sales, fees and refunds in your books.
 > - **Clearing account:** A holding account in your books. A payment provider's sales and fees sit there until the payout lands in the bank.
-> - **Stocktake:** Counting every unit you hold, usually at the end of the financial year, so your books match the shelf.
+> - **Stocktake:** Counting every unit you hold, usually at the end of the financial year. Then your books match the shelf.
 > - **Landed cost:** What one unit really costs once it reaches your warehouse: product, freight, duties and fees.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -63,7 +63,7 @@
 
 **Expected result:** Your structure still suits the business.
 
-**Watch out:** Australia: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)); non-residents owning a US company need a cross-border specialist.
+**Watch out:** Australia: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)). If you live overseas and own a US company, get a cross-border expert.
 
 ### Good to know
 
@@ -115,7 +115,7 @@
 
 **Expected result:** Stock values are complete and ex GST.
 
-**Step 2.** Each month or quarter, work out COGS (cost of goods sold): opening stock value plus purchases minus closing stock value.
+**Step 2.** Each month or quarter, work out COGS (cost of goods sold). That is opening stock value plus purchases minus closing stock value.
 
 **Expected result:** You have COGS for the period.
 
@@ -142,13 +142,13 @@
 ## Lesson 27.4: Records and the monthly close
 <!-- stage:grow -->
 
-**Why this matters:** A short monthly routine, called the monthly close, keeps tax time simple and gives you numbers you can trust. Aim to finish within two weeks of month end.
+**Why this matters:** A short monthly routine, called the monthly close, keeps tax time simple. It gives you numbers you can trust. Aim to finish within two weeks of month end.
 
 **Step 1.** Reconcile all bank accounts, cards and payment clearing accounts.
 
 **Expected result:** Every balance matches.
 
-**Step 2.** Attach a receipt or invoice to every expense, using a receipt app or by forwarding emails to your accounting software.
+**Step 2.** Attach a receipt or bill to every cost. Use a receipt app, or forward emails to your accounting software.
 
 **Expected result:** No expense is missing a receipt.
 
@@ -170,7 +170,7 @@
 
 **Expected result:** The year's records are in one place.
 
-**Watch out:** Keep most records for 5 years in Australia (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)) and at least 3 years in the US (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
+**Watch out:** Keep most records for 5 years in Australia (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). Keep them at least 3 years in the US (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
 
 ### Good to know
 
@@ -230,7 +230,7 @@
 
 **Expected result:** You have a W-9 for each contractor.
 
-**Step 3.** By 31 January, send Form 1099-NEC to contractors you paid $2,000 or more in 2026, and file it with the IRS. The 2025 limit was $600 (see [IRS instructions](https://www.irs.gov/instructions/i1099mec)).
+**Step 3.** By 31 January, send Form 1099-NEC to contractors you paid $2,000 or more in 2026. File it with the IRS too. The 2025 limit was $600 (see [IRS instructions](https://www.irs.gov/instructions/i1099mec)).
 
 **Expected result:** All 1099s are sent and filed.
 

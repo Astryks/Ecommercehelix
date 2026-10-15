@@ -1,6 +1,6 @@
 # Module 16: Founder rhythm, team and resilience
 
-**Outcome:** your time goes to the few things that grow the business, and the right people join at the right time. You also stay steady through bad weeks.
+**Outcome:** your time goes to the few things that grow the business. The right people join at the right time. You also stay steady through bad weeks.
 
 **Related SOP:** [18 Founder rhythm and hiring](../sops/18-founder-rhythm-hiring.md)
 
@@ -65,7 +65,7 @@
 ## Lesson 16.2: Plan each day and each week
 <!-- stage:grow -->
 
-**Why this matters:** A small daily and weekly rhythm keeps you on top of the business in under an hour a week. The Helix routine is built for exactly this.
+**Why this matters:** A small daily and weekly rhythm keeps you on top of the business. It takes under an hour a week. The Helix routine is built for exactly this.
 
 **Step 1.** Every day, do the Helix routine: update yesterday, read your profit and do one task. Add one focus block on your top priority.
 
@@ -135,7 +135,7 @@
 
 **Why this matters:** There are five ways to fund growth, from reinvesting profit to selling shares. Running the business as if a buyer will check it one day keeps every option open.
 
-**Step 1.** List your ways to get money. Use your own profit, longer supplier terms, stock loans, revenue-based funding (you repay a share of sales) or selling shares (including crowdfunding).
+**Step 1.** List your ways to get money. Use your own profit, longer supplier terms or stock loans. Or revenue-based funding (you repay a share of sales), or selling shares (including crowdfunding).
 
 **Expected result:** You know which options fit your stage.
 

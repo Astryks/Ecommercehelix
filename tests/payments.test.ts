@@ -10,6 +10,9 @@ describe("prices", () => {
     expect(planForPrice("price_s_usd", ENV)).toBe("starter");
     expect(planForPrice("price_s_aud", ENV)).toBe("starter");
     expect(planForPrice("price_g_old", ENV)).toBe("growth");
+    expect(planForPrice("price_unknown", ENV, { metadata: { helix_plan: "growth" } })).toBe("growth");
+    expect(planForPrice("price_unknown", ENV, { lookup_key: "helix_starter_usd_monthly" })).toBe("starter");
+    expect(planForPrice("price_unknown", ENV, { metadata: { helix_plan: "admin" } })).toBe("free");
     expect(planForPrice("price_hacker", ENV)).toBe("free");
     expect(planForPrice(null, ENV)).toBe("free");
     expect(priceFor("growth", ENV)).toBe("price_g_usd");

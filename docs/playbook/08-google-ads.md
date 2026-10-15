@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **PMax:** A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign.
-> - **Product feed:** The list of your products, prices and photos that Google and Meta read to make shopping ads.
+> - **Product feed:** The list of your products, prices and photos. Google and Meta read it to make shopping ads.
 > - **Search terms:** The exact words people typed into Google before they saw or clicked your ad.
 > - **Negative keyword:** A word you tell Google never to show your ads for, to stop wasted clicks.
 >
@@ -67,14 +67,14 @@
 
 **Expected result:** Google cannot change your campaigns without your click.
 
-**Step 7.** Rename each campaign with the pattern from Lesson 6.7 (click the campaign name, then the pencil next to it).
+**Step 7.** Rename each campaign with the pattern from Lesson 6.7. Click the campaign name, then the pencil next to it.
 
 **Expected result:** Every campaign name shows its number, type and job.
 
 ## Lesson 8.2: Product data
 <!-- stage:attract -->
 
-**Why this matters:** Shopping ads are built from your product feed, so better product data means better ads and cheaper clicks. Most gains come from titles, images and fixing errors.
+**Why this matters:** Shopping ads are built from your product feed. Better product data means better ads and cheaper clicks. Most gains come from titles, images and fixing errors.
 
 **Step 1.** Rewrite product titles with search words first: brand, product type, then main feature. For example: "Acme Linen Shirt, Men's, Relaxed Fit, Sand".
 
@@ -84,7 +84,7 @@
 
 **Expected result:** Main images show the product clearly with no text or logos over it.
 
-**Step 3.** Check prices and shipping in the feed match your site, and add GTINs (barcode numbers) where you have them.
+**Step 3.** Check prices and shipping in the feed match your site. Add GTINs (barcode numbers) where you have them.
 
 **Expected result:** Merchant Center shows no price or shipping mismatches.
 
@@ -105,11 +105,11 @@
 
 **Expected result:** You have two campaigns: brand search and a product campaign.
 
-**Step 2.** In the PMax campaign, give it only your product feed, with no extra videos or images (that is what feed-only means). Leave out your brand name under **Brand exclusions**.
+**Step 2.** In the PMax campaign, give it only your product feed. Add no extra videos or images (that is what feed-only means). Leave out your brand name under **Brand exclusions**.
 
 **Expected result:** PMax spends on new searches, while brand search covers your name.
 
-**Step 3.** As you grow, add non-brand search for your top search terms and split PMax by best sellers or margin level.
+**Step 3.** As you grow, add non-brand search for your top search words. Split PMax by best sellers or margin level.
 
 **Expected result:** Bigger accounts have more control over where money goes.
 
@@ -161,7 +161,7 @@
 
 **Expected result:** Each description answers "why here, why now".
 
-**Step 3.** Add assets: sitelinks to your best collections, callouts like "Free shipping", structured snippets (lists like styles or types) and images.
+**Step 3.** Add extras: sitelinks to your best collections and callouts like "Free shipping". Add structured snippets (lists like styles or types) and images.
 
 **Expected result:** Your ad takes more space on the results page.
 
@@ -170,7 +170,7 @@
 
 **Why this matters:** Target ROAS tells Google how many dollars of sales you want for each $1 of ads. Set it from your break-even, not a guess, and change it gently.
 
-**Step 1.** Work out break-even ROAS as 1 divided by (1 minus VCR); with VCR at 45% that is about 1.82.
+**Step 1.** Work out break-even ROAS: 1 divided by (1 minus VCR). With VCR at 45%, that is about 1.82.
 
 **Expected result:** You have your break-even ROAS.
 
@@ -193,7 +193,7 @@
 
 **Expected result:** Google knows who has already bought.
 
-**Step 2.** In the campaign's **Customer acquisition** setting, choose either "Bid higher for new customers" or "Only bid for new customers".
+**Step 2.** Open the campaign's **Customer acquisition** setting. Choose "Bid higher for new customers" or "Only bid for new customers".
 
 **Expected result:** The campaign favours new buyers.
 
@@ -278,7 +278,7 @@
 ## Lesson 8.11: AI-driven changes in 2026
 <!-- stage:attract -->
 
-**Why this matters:** In 2026 Google turns on more AI features by itself. These include AI Max for Search and Shopping, AI-written ad text, Google picking the landing page, and ads in AI Mode answers. They can help, but only if you check what they do.
+**Why this matters:** In 2026 Google turns on more AI features by itself. These include AI Max for Search and Shopping, and AI-written ad text. Google may also pick the landing page and show ads in AI Mode answers. They can help, but only if you check what they do.
 
 **Step 1.** Open **Campaigns** and review any campaign Google upgraded automatically.
 
@@ -288,14 +288,14 @@
 
 **Expected result:** Ads say only what you are happy with and land on the right pages.
 
-**Step 3.** Confirm your brand exclusions are still in place, and check search terms and negatives twice a week instead of once.
+**Step 3.** Check your brand exclusions are still in place. Check search terms and negatives twice a week instead of once.
 
 **Expected result:** AI expansion does not spend on your brand or on junk searches.
 
 ## Lesson 8.12: Launch your first Google campaign in 45 minutes
 <!-- stage:attract -->
 
-**Why this matters:** Google Ads tries to rush new owners into a guided "smart" campaign. It spends money in places you cannot see. This lesson skips that. It sets up the two campaigns most Shopify stores should start with: brand search (cheap, and it protects your name) and Performance Max fed by your products. Helix does not connect to Google Ads yet, so you follow these steps yourself.
+**Why this matters:** Google Ads tries to rush new owners into a guided "smart" campaign. It spends money in places you cannot see. This lesson skips that. It sets up the two campaigns most Shopify stores should start with. One is brand search, which is cheap and protects your name. The other is Performance Max fed by your products. Helix does not connect to Google Ads yet, so you follow these steps yourself.
 
 **Words you will see:** **Merchant Center** holds your product list (the **feed**). **Performance Max** (PMax) shows your products across Shopping, Search, YouTube and Gmail. **Conversion** means a purchase Google can count. **Impression share** is how often your ad shows when someone searches your name.
 
@@ -307,7 +307,7 @@
 
 **Expected result:** You are creating an account, not a campaign.
 
-**Step 2.** Choose your country, time zone and currency carefully, untick personalised strategist calls and promotional emails, then click **Submit** or **Continue**.
+**Step 2.** Choose your country, time zone and currency carefully. Untick strategist calls and promo emails, then click **Submit** or **Continue**.
 
 **Expected result:** The account is created. Time zone and currency cannot be changed later, so double-check them first.
 
@@ -336,7 +336,7 @@
 
 **Expected result:** Only Purchase counts as a result, so Google optimises for sales.
 
-**Step 6.** Build brand search: click **+ Create > Campaign**, choose **Sales** with the **Purchase** goal, then **Search**, and name it "01-Search-Brand".
+**Step 6.** Build brand search: click **+ Create > Campaign** and choose **Sales** with the **Purchase** goal. Then pick **Search** and name it "01-Search-Brand".
 
 **Expected result:** A new Search campaign is open.
 
@@ -375,7 +375,7 @@
 
 **Expected result:** A Performance Max campaign is connected to your products with a budget.
 
-**Step 11.** In the asset group, remove extra headlines, images, videos and sitelinks where Google lets you (click **Edit**, then the **x** next to each). In campaign settings, add your brand name under **Brand exclusions**. Click **Publish campaign**.
+**Step 11.** In the asset group, remove extra headlines, images, videos and sitelinks where Google lets you. Click **Edit**, then the **x** next to each. In campaign settings, add your brand name under **Brand exclusions**. Click **Publish campaign**.
 
 **Expected result:** Performance Max runs mainly from your product feed and leaves brand searches to the brand campaign.
 
@@ -390,7 +390,7 @@
 
 **Why this matters:** Google Ads hides a lot behind menus. You only need a few screens: campaigns, search terms, conversions and recommendations.
 
-**The parts that matter:** the **account picker** (top), the left menu with **Campaigns**, **Goals** (conversions), **Insights and reports** (search terms), **Tools** and **Billing**; the **date range** (top right); the table with **Cost**, **Conversions**, **Conv. value** and **Conv. value / cost** (this is ROAS); and the **Status** column (**Eligible** means running, **Limited** means held back by budget or bids).
+**The parts that matter:** the **account picker** is at the top. The left menu has **Campaigns**, **Goals** (conversions), **Insights and reports** (search terms), **Tools** and **Billing**. The **date range** is at the top right. The table shows **Cost**, **Conversions** and conversion value per cost (this is ROAS). In the **Status** column, **Eligible** means running. **Limited** means held back by budget or bids.
 
 **Step 1.** Open ads.google.com and check the account name and ID (top of the page) is your store's account.
 

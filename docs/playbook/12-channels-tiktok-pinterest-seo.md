@@ -34,9 +34,9 @@
 ## Lesson 12.1: TikTok readiness
 <!-- stage:attract -->
 
-**Why this matters:** TikTok can bring cheap attention, but only once you have videos that work there and tracking in place. Getting ready first stops you paying to learn what free posts could teach you. Only start TikTok ads once Meta and Google are profitable.
+**Why this matters:** TikTok can bring cheap attention. But only once you have videos that work there and tracking in place. Getting ready first stops you paying to learn what free posts could teach you. Only start TikTok ads once Meta and Google are profitable.
 
-**Step 1.** Post free (organic) TikTok videos 3 to 5 times a week for a month to learn what works for you.
+**Step 1.** Post free TikTok videos 3 to 5 times a week for a month. Learn what works for you.
 
 **Expected result:** You know which video styles get views and comments.
 
@@ -51,7 +51,7 @@
 **Step 4.** Make a simple view in TikTok Ads Manager.
 
 1. Click **Custom columns**.
-2. Tick: spend, CPA (ad cost for one sale), add to cart, cost per add to cart, CTR and CPC (cost per click). Also tick 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.
+2. Tick: spend, CPA (ad cost for one sale), add to cart and cost per add to cart. Also tick CTR and CPC (cost per click). Also tick 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.
 3. Save it.
 
 **Expected result:** One saved view shows every number you need.
@@ -80,7 +80,7 @@
 ## Lesson 12.3: Spark ads and creators
 <!-- stage:attract -->
 
-**Why this matters:** Spark ads run normal TikTok posts, yours or a creator's, as ads, keeping the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 19).
+**Why this matters:** Spark ads run normal TikTok posts as ads, yours or a creator's. They keep the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 19).
 
 **Step 1.** Ask the creator to make an authorisation code in their TikTok settings (**Creator tools > Ad settings**). They send it to you.
 
@@ -99,7 +99,7 @@
 
 **Why this matters:** TikTok ads tire fast, sometimes in 3 to 4 days, so they need closer watching than Meta. Early signs warn you before cost per sale gets worse.
 
-**Step 1.** Check TikTok every day or two. Watch for early warning signs: cost per click going up, cost per add to cart going up, and fewer people watching the videos.
+**Step 1.** Check TikTok every day or two. Watch for early warning signs. Cost per click goes up, cost per add to cart goes up, or fewer people watch the videos.
 
 **Expected result:** You spot tired ads before CPA rises.
 
@@ -107,7 +107,7 @@
 
 **Expected result:** Spend moves to working ads.
 
-**Step 3.** If cost per sale goes up after you turn off an earlier-step campaign (like add to cart), turn it back on.
+**Step 3.** Did cost per sale go up after you turned off an earlier-step campaign (like add to cart)? Turn it back on.
 
 **Expected result:** TikTok gets the data it needs again.
 
@@ -187,12 +187,12 @@
 **Step 1.** Find the words people search when they want to buy.
 
 1. List buying searches for each category, like "buy linen shirt" or "best linen shirt".
-2. In a keyword tool, look up how many people search each one and the difficulty (how hard it is to rank).
+2. In a keyword tool, look up how many people search each one. Also check how hard it is to rank.
 3. Keep about 10 per category.
 
 **Expected result:** Each category has a list of target keywords.
 
-**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3), a page title and a meta description (the summary under your link in Google, about 150 to 160 characters). Build collection pages around a keyword, link between your own pages, and add alt text to images.
+**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3) and a page title. It also needs a meta description: the summary under your link in Google, about 150 to 160 characters. Build collection pages around a keyword, link between your own pages, and add alt text to images.
 
 **Expected result:** Every key page has a keyword-led title, meta description and one H1.
 
@@ -225,14 +225,14 @@
 
 **Expected result:** Your products are eligible for AI shopping results.
 
-**Step 4.** Get talked about on forums, review sites and videos, and track AI assistant visits in Google Analytics (referral sources).
+**Step 4.** Get talked about on forums, review sites and videos. Track visits from AI helpers in Google Analytics (referral sources).
 
 **Expected result:** You know how much traffic AI assistants send.
 
 ## Lesson 12.10: Instagram shopping
 <!-- stage:attract -->
 
-**Why this matters:** Instagram shopping lets people tap a product in a post and go straight to it on your store. Since September 2025 every Meta shop sends buyers to your own website checkout. It is free once your catalog is connected.
+**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since September 2025 every Meta shop sends buyers to your own website checkout. It is free once your catalog is connected.
 
 **Step 1.** Set up your shop on Facebook and Instagram.
 
@@ -260,5 +260,5 @@
 
 1. About 10 to 15.
 2. About 150 to 160 characters.
-3. Clear site content, clean product data, reviews, brand facts that are the same everywhere, and mentions on other sites and platforms.
+3. Clear site content, clean product data and reviews. Brand facts that are the same everywhere, and mentions on other sites.
 </details>

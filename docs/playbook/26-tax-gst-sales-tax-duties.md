@@ -1,6 +1,6 @@
 # Module 26: Tax, GST, sales tax and duties
 
-**Outcome:** you know when you must register for GST or sales tax, and how to keep tax money apart from your money. You know which dates matter. You also know how VAT, duties and tariffs change your prices when you sell or buy overseas.
+**Outcome:** you know when you must register for GST or sales tax. You know how to keep tax money apart from your money. You know which dates matter. You also know how VAT, duties and tariffs change your prices when you sell or buy overseas.
 
 **Related:** [Module 22 Shopify store setup](22-shopify-store-setup.md), [Module 15 International expansion](15-international-expansion.md), [Module 27 Accounting, bookkeeping and tax time](27-accounting-bookkeeping-tax-time.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md)
 
@@ -10,7 +10,7 @@
 >
 > **Stage:** Grow (keep more of every sale, then scale). Every lesson below is tagged with its stage; see [Attract, Convert, Grow](stages.md).
 >
-> **What it is:** When you must register for GST or sales tax, and how tax and duties change prices across borders.
+> **What it is:** When you must register for GST or sales tax. And how tax and duties change prices across borders.
 >
 > **Why it matters:** Tax mistakes grow quietly and come back with penalties. Knowing the thresholds early keeps you in control.
 >
@@ -22,7 +22,7 @@
 >
 > **Words to know:**
 >
-> - **GST:** Goods and services tax: 10% in Australia (15% in New Zealand), added to most sales once you are registered.
+> - **GST:** Goods and services tax. It is 10% in Australia (15% in New Zealand), added to most sales once you register.
 > - **BAS:** Business activity statement: the form Australian businesses lodge with the ATO to report and pay GST.
 > - **Nexus:** In the US, a link with a state, like a warehouse there or enough sales into it. It means you must collect that state's sales tax.
 > - **VAT:** Value added tax: the UK and EU version of GST, usually included in the shown price.
@@ -43,7 +43,7 @@
 
 **Why this matters:** GST (goods and services tax) is 10% on most Australian sales once you are registered. The money you collect is held for the ATO (Australian Taxation Office), not earned by you, so set it aside.
 
-**Step 1.** Check your GST turnover (this month plus the last 11). Register within 21 days of it reaching $75,000, or as soon as you expect to reach it in the next 12 months (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
+**Step 1.** Check your GST turnover (this month plus the last 11). Register within 21 days of reaching $75,000. Or register as soon as you expect to reach it within 12 months (see [ATO: GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
 
 **Expected result:** You know whether you must register.
 
@@ -61,7 +61,7 @@
 
 <!-- do:calendar -->
 
-**Step 5.** Claim GST credits on business costs that include GST, such as local stock and services, keeping the tax invoices.
+**Step 5.** Claim GST credits on business costs that include GST, like local stock and services. Keep the tax invoices.
 
 **Expected result:** Your BAS includes your credits.
 
@@ -69,7 +69,7 @@
 
 **Expected result:** Helix profit leaves GST out.
 
-**Watch out:** New Zealand: exports are usually GST-free. But if small sales (NZ$1,000 or less) to NZ shoppers pass NZ$60,000 in 12 months, you must register for NZ GST at 15% (see [IRD](https://www.ird.govt.nz/gst/gst-for-overseas-businesses/gst-on-low-value-imported-goods/registering-for-gst-on-low-value-imported-goods)). US sellers into Australia must register once sales to Australian consumers pass A$75,000 (see [ATO](https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses)).
+**Watch out:** New Zealand: exports are usually GST-free. But small sales (NZ$1,000 or less) to NZ shoppers may pass NZ$60,000 in 12 months. Then you must register for NZ GST at 15% (see [IRD](https://www.ird.govt.nz/gst/gst-for-overseas-businesses/gst-on-low-value-imported-goods/registering-for-gst-on-low-value-imported-goods)). US sellers into Australia must register once sales to Australian consumers pass A$75,000 (see [ATO](https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses)).
 
 <!-- do:settings -->
 
@@ -94,7 +94,7 @@
 
 **Expected result:** Your supplier records are correct.
 
-**Step 4.** For stock imports over A$1,000, pay GST and any duty at the border through your broker or shipping agent. Keep the paperwork, and claim that GST back on your BAS (the Australian tax form for GST).
+**Step 4.** For stock imports over A$1,000, pay GST and any duty at the border. Do it through your broker or shipping agent. Keep the paperwork, and claim that GST back on your BAS (the Australian tax form for GST).
 
 **Expected result:** Import GST appears as a credit on your BAS.
 
@@ -115,15 +115,15 @@
 
 **Why this matters:** The US has no national sales tax. Each state sets its own rules. You only collect a state's tax once you have nexus there (a strong enough link to that state).
 
-**Step 1.** List states where you have physical nexus: where you live, have staff or store stock, including in a third-party warehouse.
+**Step 1.** List states where you have physical nexus. That is where you live, have staff or keep stock, including in a hired warehouse.
 
 **Expected result:** You have a list of physical nexus states.
 
-**Step 2.** Check each state's sales limit for economic nexus, often $100,000 a year. California and Texas use $500,000, and New York uses over $500,000 plus over 100 sales (see [California CDTFA](https://cdtfa.ca.gov/industry/wayfair/) and [Streamlined Sales Tax](https://www.streamlinedsalestax.org/)).
+**Step 2.** Check each state's sales limit for economic nexus, often $100,000 a year. California and Texas use $500,000. New York uses over $500,000 plus over 100 sales (see [California CDTFA](https://cdtfa.ca.gov/industry/wayfair/) and [Streamlined Sales Tax](https://www.streamlinedsalestax.org/)).
 
 **Expected result:** You know each state's threshold.
 
-**Step 3.** In Shopify **Settings > Taxes and duties**, watch how close you are to each threshold (see [Shopify: US taxes](https://help.shopify.com/en/manual/taxes/us)).
+**Step 3.** Open Shopify **Settings > Taxes and duties**. Watch how close you are to each limit (see [Shopify: US taxes](https://help.shopify.com/en/manual/taxes/us)).
 
 **Expected result:** You see thresholds before you cross them.
 
@@ -135,7 +135,7 @@
 
 **Expected result:** Every filing is on time.
 
-**Watch out:** Marketplaces such as Amazon usually collect for you on their sales, but your own store is yours to handle. Non-US sellers face the same thresholds even without a US company or warehouse.
+**Watch out:** Marketplaces like Amazon usually collect for you on their sales. Your own store is yours to handle. Non-US sellers face the same thresholds even without a US company or warehouse.
 
 <!-- do:calendar -->
 
@@ -152,11 +152,11 @@
 
 **Expected result:** You have one rule per country. DDP means more paperwork but smoother delivery.
 
-**Step 2.** UK: for parcels of £135 or less, register for UK VAT, charge it at checkout and pay HMRC (see [GOV.UK](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk)).
+**Step 2.** UK: for parcels of £135 or less, register for UK VAT. Charge it at checkout and pay HMRC (see [GOV.UK](https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk)).
 
 **Expected result:** UK VAT is collected at checkout.
 
-**Step 3.** EU: for parcels up to 150 euros, use IOSS (import one stop shop). You charge EU VAT at checkout and file in one country, usually through an EU agent (see [EU VAT One Stop Shop](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en)).
+**Step 3.** EU: for parcels up to 150 euros, use IOSS (import one stop shop). You charge EU VAT at checkout and file in one country. Usually you use an EU agent (see [EU VAT One Stop Shop](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en)).
 
 **Expected result:** EU VAT is collected at checkout.
 
@@ -213,7 +213,7 @@
 
 **Expected result:** Paperwork is filed.
 
-**Watch out:** US: since 29 August 2025, the $800 de minimis rule is gone, so small parcels pay duty. Compare duty per parcel with shipping in bulk to a US warehouse (see [CBP](https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs)). Australia: imports over A$1,000 need a customs declaration; free trade agreements can cut duty with a certificate of origin (see [ABF](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing)).
+**Watch out:** US: since 29 August 2025, the $800 de minimis rule is gone, so small parcels pay duty. Compare duty per parcel with shipping in bulk to a US warehouse (see [CBP](https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs)). Australia: imports over A$1,000 need a customs form. Trade deals can cut duty with a certificate of origin (see [ABF](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing)).
 
 ### Good to know
 

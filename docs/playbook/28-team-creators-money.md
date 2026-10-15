@@ -1,6 +1,6 @@
 # Module 28: Team, creators and money
 
-**Outcome:** you hire the right first helper on the right terms and pay creators with clear agreements. You pay overseas suppliers without losing money to currency or scams. You compare loans by their true cost, keep tool bills in check, look after yourself, and decide calmly if Amazon is worth adding.
+**Outcome:** you hire the right first helper on the right terms and pay creators with clear agreements. You pay overseas suppliers without losing money to currency or scams. You compare loans by their true cost and keep tool bills in check. You look after yourself, and decide calmly if Amazon is worth adding.
 
 **Related:** [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 19 Creators, UGC and video ads](19-creators-ugc-and-video-ads.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 18 Choosing your tool stack](18-tool-stack.md)
 
@@ -12,7 +12,7 @@
 >
 > **What it is:** Hire help, pay creators and suppliers safely, choose funding wisely and look after yourself.
 >
-> **Why it matters:** The right help buys back your time, and the wrong deal or funding can cost you for years.
+> **Why it matters:** The right help buys back your time. The wrong deal or loan can cost you for years.
 >
 > **Do this:**
 >
@@ -23,8 +23,8 @@
 > **Words to know:**
 >
 > - **Contractor:** Someone who runs their own business and does work for you, rather than being your employee.
-> - **Usage rights:** Permission to use a creator's content in a stated place (such as paid ads) for a stated time.
-> - **Revenue-based financing:** A loan you repay as a share of your daily sales, so payments rise and fall with sales.
+> - **Usage rights:** Permission to use a creator's content in one place, like paid ads. It lasts for a set time.
+> - **Revenue-based financing:** A loan you repay as a share of your daily sales. Payments rise and fall with sales.
 > - **Creator:** A person who makes social content and can feature your product.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -35,7 +35,7 @@
 ## Lesson 28.1: Your first hire
 <!-- stage:grow -->
 
-**Why this matters:** Your first hire should give you back the hours you spend on work that does not need you.
+**Why this matters:** Your first hire should give you back hours. Pick work that does not need you.
 
 **Step 1.** For two weeks, log every task and its time. Mark each one: only I can do it, someone could do it with a checklist, or it should stop.
 
@@ -61,11 +61,11 @@
 
 **Expected result:** You know which rules apply.
 
-**Watch out:** Australia: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/); super is paid each payday from 1 July 2026. US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
+**Watch out:** Australia: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). From 1 July 2026, super is paid each payday. US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
 
 ### Good to know
 
-> **General information, not tax or legal advice.** Check with a registered tax agent or accountant, and the official sources below.
+> **General information, not tax or legal advice.** Check with a registered tax agent or accountant. Also check the official sources below.
 
 **Step 7.** Write the SOPs (how the work is done) before you hand it over.
 
@@ -86,7 +86,7 @@
 ## Lesson 28.2: Working well with a virtual assistant
 <!-- stage:grow -->
 
-**Why this matters:** A remote assistant can be a great first hire if the work is written down and access is safe.
+**Why this matters:** A remote helper can be a great first hire. The work must be written down and access must be safe.
 
 **Step 1.** Record your screen doing each task once while talking through it, then turn it into a short checklist.
 
@@ -123,11 +123,11 @@
 
 **Why this matters:** Creators are paid with free product, a flat fee, commission or a mix. Clear written terms prevent arguments later. For rates and usage, see [Lesson 19.4](19-creators-ugc-and-video-ads.md#lesson-194-deals-rates-and-usage-rights).
 
-**Step 1.** Split every price into parts: making the content, posting it, and usage rights (using it in your ads, and for how long). Add exclusivity and raw footage.
+**Step 1.** Split every price into parts: making the content and posting it. Then usage rights: using it in your ads, and for how long. Add exclusivity and raw footage.
 
 **Expected result:** You know what each part costs.
 
-**Step 2.** Put it in writing: deliverables, dates, revisions, usage rights, payment date and what happens if a post is late.
+**Step 2.** Put it in writing: what they make, dates, changes and usage rights. Add the payment date and what happens if a post is late.
 
 **Expected result:** Every deal has a written agreement.
 
@@ -166,7 +166,7 @@
 
 **Expected result:** You avoid a double conversion.
 
-**Step 3.** Agree payment terms in writing: deposit, balance timing and what happens if goods are late or faulty (see [Lesson 14.8](14-inventory-cash-planning.md#lesson-148-finding-and-vetting-suppliers)).
+**Step 3.** Agree payment terms in writing: the deposit and when the rest is paid. Say what happens if goods are late or faulty (see [Lesson 14.8](14-inventory-cash-planning.md#lesson-148-finding-and-vetting-suppliers)).
 
 **Expected result:** Terms are written down.
 
@@ -201,7 +201,7 @@
 
 **Expected result:** Offers sit side by side.
 
-**Step 3.** Work out true cost: (total repaid minus amount received) divided by amount received, then factor in speed of repayment.
+**Step 3.** Work out the true cost: total repaid minus amount received, divided by amount received. Then think about how fast you repay.
 
 **Expected result:** You know the real cost. A flat fee repaid in 4 months costs far more per year than over 12 months.
 
@@ -320,7 +320,7 @@
 
 **Watch out:** Australia's Amazon marketplace is smaller than the US one, so check demand first.
 
-**Step 2.** Use Amazon's fee calculator to work out profit per unit: price minus referral fee, fulfilment fee, storage, ads and returns.
+**Step 2.** Use Amazon's fee calculator to work out profit per unit. Take the price and subtract referral fee, shipping fee, storage, ads and returns.
 
 **Expected result:** You know profit per unit after all fees.
 
@@ -347,7 +347,7 @@
 
 **Step 1.** Work out your wholesale price: most shops expect to buy at about half the retail price. Check with your profit setup that landed cost, packaging and freight still leave a profit at that price.
 
-**Expected result:** A wholesale price for each product that still makes money, or a list of products that cannot be sold wholesale.
+**Expected result:** A wholesale price for each product that still makes money. Or a list of products you cannot sell wholesale.
 
 **Step 2.** Write simple terms on one page: minimum order, payment terms (upfront for first orders) and delivery times. Promise not to undercut your stockists on your own site outside planned sales.
 

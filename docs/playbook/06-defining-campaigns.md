@@ -2,7 +2,7 @@
 
 **Outcome:** you can plan any ad campaign from scratch. First you set the numbers it must hit and choose the goal and setup. Then you pick the audience and budget, name it well and brief the ads. Last, you test fairly, read the results and decide: spend more, wait, make new ads, or stop.
 
-This module connects your plan to Ads Manager (the place where you build Meta ads). The [campaign brief template](#lesson-616-the-campaign-brief-template) at the end is what Helix fills in with you when you press "New campaign" in Your ads.
+This module connects your plan to Ads Manager (the place where you build Meta ads). The [campaign brief template](#lesson-616-the-campaign-brief-template) is at the end. Helix fills it in with you when you press "New campaign" in Your ads.
 
 **Related SOPs:** [05 Meta structure](../sops/05-meta-structure-and-scaling.md), [06 Meta daily optimisation](../sops/06-meta-daily-optimisation.md), [07 Creative testing](../sops/07-creative-testing.md), [09 Google](../sops/09-google-shopping-pmax-search.md), [15 Promo calendar](../sops/15-promo-calendar-and-sales.md)
 
@@ -14,7 +14,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 >
 > **What it is:** How to plan one ad campaign from start to finish.
 >
-> **Why it matters:** A plan with clear numbers tells you when to spend more, wait or stop, so you never guess.
+> **Why it matters:** A plan with clear numbers tells you when to spend more, wait or stop. So you never guess.
 >
 > **Do this:**
 >
@@ -37,7 +37,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.1: Numbers first
 <!-- stage:attract -->
 
-**Why this matters:** Never open Ads Manager until you know the five numbers that say whether an ad makes or loses money. They come from Module 1 and Helix works them out from your daily numbers. With them, every later decision is a simple comparison.
+**Why this matters:** Learn the five numbers that say if an ad makes or loses money. Only then open Ads Manager. They come from Module 1 and Helix works them out from your daily numbers. With them, every later decision is a simple comparison.
 
 **Step 1.** Open the Dashboard on **Month**. Copy your target MER, break-even ROAS (sales for each $1 of ads) and break-even CPA from the cards.
 
@@ -125,7 +125,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.4: Account structure by spend
 <!-- stage:attract -->
 
-**Why this matters:** Cold means people who do not know you, warm means people who visited or engaged, and mixed means both. The right account structure depends on how much you spend a day. Too many campaigns for the budget starves each one of data.
+**Why this matters:** Cold means people who do not know you. Warm means people who visited or engaged. Mixed means both. The right account structure depends on how much you spend a day. Too many campaigns for the budget starves each one of data.
 
 **Step 1.** Find your daily spend band in the table below and set up the campaigns listed for it.
 
@@ -137,7 +137,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Each audience temperature gets its planned share.
 
-**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget vs ad set budget, a cost cap (a hard limit on cost per purchase), how many people you leave out, a 10 to 20% cap on spend to past buyers, or landing page views for very cold tests.
+**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget or ad set budget, or a cost cap (a hard limit on cost per purchase). Or how many people you leave out, or a 10 to 20% cap on spend to past buyers. Or landing page views for very cold tests.
 
 **Expected result:** You are running one setup test with a clear start and end date.
 
@@ -216,7 +216,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** A naming convention is a fixed pattern for names. It lets you, your team and Helix read the account at a glance and compare results later. It takes five minutes to set up.
 
-**Step 1.** Name every campaign with this pattern: `[Number]-[Auto/Manual]-[Cold/Mixed/Warm/Hot]-[Broad/Interest/LAL]-[None/Light/Harsh]-[BAU or Sale]`, for example `03-Manual-Cold-Broad-Harsh-BAU` (BAU means business as usual; LAL means lookalike).
+**Step 1.** Name every campaign with this pattern: `[Number]-[Auto/Manual]-[Cold/Mixed/Warm/Hot]-[Broad/Interest/LAL]-[None/Light/Harsh]-[BAU or Sale]`. For example: `03-Manual-Cold-Broad-Harsh-BAU`. BAU means business as usual, and LAL means lookalike.
 
 **Expected result:** Every campaign name follows the pattern.
 
@@ -252,7 +252,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** A creative brief is a one-page set of instructions for each ad. It lets anyone, including a creator or an AI tool, produce an on-target ad without guessing.
 
-**Step 1.** Open the template in [SOP 08](../sops/08-creative-briefs-ugc-creators.md). Fill in the goal, who it is for (cold, warm or hot), the pillar, and the customer's problem in their own words.
+**Step 1.** Open the template in [SOP 08](../sops/08-creative-briefs-ugc-creators.md). Fill in the goal and who it is for (cold, warm or hot). Add the pillar, and the customer's problem in their own words.
 
 **Expected result:** The top half of the brief is done.
 
@@ -267,9 +267,9 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.10: Testing methodology
 <!-- stage:attract -->
 
-**Why this matters:** Most ad tests never get enough visitors to be sure of the result, so you need fair default rules instead. These keep tests the same each time and stop you calling winners too early.
+**Why this matters:** Most ad tests never get enough visitors to be sure. So you need fair default rules instead. These keep tests the same each time and stop you calling winners too early.
 
-**Step 1.** Set your test rules from the table below. Change one thing per batch. Use the number of ads per batch that fits your budget, and the spend each ad gets before you judge it.
+**Step 1.** Set your test rules from the table below. Change one thing per batch. Use the number of ads per batch that fits your budget. Set the spend each ad gets before you judge it.
 
 **Expected result:** Your test rules are written at the top of your testing campaign notes.
 
@@ -299,7 +299,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 **Step 1.** Make a "Creative" view in Ads Manager.
 
 1. Click **Columns**, then **Customise columns**.
-2. Tick: hook rate, hold rate, outbound CTR, CPM, cost per outbound click, add to cart, cost per purchase, ROAS, frequency and reach.
+2. Tick: hook rate, hold rate, outbound CTR, CPM and cost per outbound click. Also tick add to cart, cost per purchase, ROAS, frequency and reach.
 3. Tick **Save as preset**, name it "Creative" and click **Apply**.
 
 **Expected result:** You see all the metrics in the table below in one view.
@@ -312,7 +312,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 - Likes and comments but costly sales: the page or offer does not match the ad.
 - Low CTR (click rate) across a whole batch: the message or offer is weak.
-- CPM (cost per 1,000 views) going up while CTR stays the same: you have reached most of the audience, or it is a busy season.
+- CPM (cost per 1,000 views) going up while CTR stays the same: you have reached most of the audience. Or it is a busy season.
 
 **Expected result:** You have a likely cause for each problem, not just a symptom.
 
@@ -445,7 +445,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Every live campaign has a break-even CPA on its brief.
 
-**Step 2.** Count campaigns against budget: if any campaign gets fewer than about 25 purchases a week, merge it into another.
+**Step 2.** Count campaigns against budget. If a campaign gets fewer than about 25 purchases a week, merge it into another.
 
 **Expected result:** Each campaign gets enough data to learn.
 
@@ -472,11 +472,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** The top of the brief is complete.
 
-**Step 3.** Fill in sections 6 to 12: numbers, audience, countries, budget with worst case, ad plan, landing page and tracking check.
+**Step 3.** Fill in sections 6 to 12. They cover numbers, audience, countries, budget with worst case, ad plan, landing page and tracking check.
 
 **Expected result:** Every setting is decided before you build.
 
-**Step 4.** Fill in sections 13 to 17: success, decision date, what you do if it wins, stop rule and approvals.
+**Step 4.** Fill in sections 13 to 17. They cover success, decision date, what you do if it wins, stop rule and approvals.
 
 **Expected result:** The brief tells you exactly when to scale or stop.
 

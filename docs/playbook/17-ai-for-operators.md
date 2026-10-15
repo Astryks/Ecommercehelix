@@ -37,7 +37,7 @@
 
 **Expected result:** You have an empty project for your store.
 
-**Step 2.** Upload your brand core (Module 4), customer profiles, offers, cost drivers (Module 1), SOPs and past winning ads and emails.
+**Step 2.** Upload your brand core (Module 4), customer profiles, offers and costs (Module 1). Add your SOPs and past winning ads and emails.
 
 **Expected result:** The project holds your business context.
 
@@ -50,7 +50,7 @@
 
 **Why this matters:** A handful of jobs save the most time with AI. Always read and edit what AI writes before you use it.
 
-**Step 1.** Use AI for ads. It can write hooks, scripts, briefs and new ad text, lay out still images, resize, and find which parts of your ads win.
+**Step 1.** Use AI for ads. It can write hooks, scripts, briefs and new ad text. It can lay out still images, resize, and find which parts of your ads win.
 
 **Expected result:** Your next ad batch is drafted faster.
 

@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **Weeks of cover:** How many weeks your stock will last at the current sales speed.
-> - **Cash forecast:** A week-by-week list of money coming in and going out, so you can see tight weeks early.
+> - **Cash forecast:** A week-by-week list of money coming in and going out. It shows tight weeks early.
 >
 > All words are explained in the [glossary](../glossary.md).
 <!-- plain:end -->
@@ -35,7 +35,7 @@
 
 **Why this matters:** Your range is the set of products you sell. Planning it on purpose puts your cash into styles that earn, and lets you test new ideas small before committing.
 
-**Step 1.** Choose the categories that earn the most and fit your brand, using last year's sales and margin by category.
+**Step 1.** Choose the categories that earn the most and fit your brand. Use last year's sales and margin by category.
 
 **Expected result:** You have a short list of focus categories.
 
@@ -49,7 +49,7 @@
 
 **Expected result:** New styles are tested with little cash at risk.
 
-**Step 4.** Write a range plan: styles per category, price points, and how many are new versus core (always in stock).
+**Step 4.** Write a range plan: styles per category and price points. Note how many are new and how many are core (always in stock).
 
 **Expected result:** You have a one-page range plan.
 
@@ -108,7 +108,7 @@
 ## Lesson 14.4: Cash flow forecast
 <!-- stage:grow -->
 
-**Why this matters:** A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank, and stock deposits can drain the account months before the sales arrive.
+**Why this matters:** A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank. Stock deposits can drain the account months before the sales arrive.
 
 **Step 1.** Make a spreadsheet with one column per month for the next 3 to 12 months.
 
@@ -171,7 +171,7 @@
 
 **Why this matters:** The year plan ties sales, stock and marketing together. Working backwards from monthly targets tells you what to buy and spend, and when.
 
-**Step 1.** Find your growth rate by comparing the last 12 months of sales with the 12 months before (Dashboard, **Year** view).
+**Step 1.** Find your growth rate. Compare the last 12 months of sales with the 12 months before (Dashboard, **Year** view).
 
 **Expected result:** You have a growth percentage.
 
@@ -243,7 +243,7 @@
 ## Lesson 14.9: Reorder points, lead times and stock-outs
 <!-- stage:grow -->
 
-**Why this matters:** Running out of a best seller loses sales and pauses your ads, while ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths for every product.
+**Why this matters:** Running out of a best seller loses sales and pauses your ads. Ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths for every product.
 
 **Step 1.** Work out sales speed: average units a day over the last 4 to 8 weeks. Leave out days you were sold out and big sale days.
 
@@ -259,11 +259,11 @@
 
 **Step 4.** In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.
 
-**Expected result:** Helix shows the reorder point (sales speed times lead time plus safety days) and a countdown to each stock-out.
+**Expected result:** Helix shows the reorder point and a countdown to each stock-out. The reorder point is sales speed times lead time plus safety days.
 
 <!-- do:stock -->
 
-**Step 5.** When stock on hand plus on order drops to the reorder point, place an order. Order enough for the lead time, safety days and the next 1 to 3 months, and at least the supplier's minimum.
+**Step 5.** When stock on hand plus on order drops to the reorder point, place an order. Order enough for the lead time, safety days and the next 1 to 3 months. Order at least the supplier's minimum.
 
 **Expected result:** An alert shows on Today when it is time to order, and stock arrives before you run out.
 
@@ -281,7 +281,7 @@
 
 1. Name the five cash levers.
 2. When is borrowing reasonable?
-3. What is the reorder point for a product that sells 3 a day with a 40-day lead time and 14 safety days?
+3. A product sells 3 a day, with a 40-day lead time and 14 safety days. What is its reorder point?
 
 <details><summary>Answers</summary>
 

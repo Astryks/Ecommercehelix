@@ -15,7 +15,7 @@ export async function cancelAtPeriodEnd() {
   const b = await getBilling(u.id);
   if (!stripe || !b.subscriptionId) redirect("/dashboard/billing?noportal=1");
   const sub = await stripe.subscriptions.update(b.subscriptionId, { cancel_at_period_end: true });
-  await writeSub(u.id, { ...subFields(sub as unknown as SubLike, (p) => planForPrice(p)) });
+  await writeSub(u.id, { ...subFields(sub as unknown as SubLike, (p, price) => planForPrice(p, process.env, price)) });
   await logAudit(u.id, { actor: "user", action: "billing.cancel", target: b.subscriptionId, outcome: "ok" });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/billing?cancelled=1");
@@ -27,7 +27,7 @@ export async function resumeSubscription() {
   const b = await getBilling(u.id);
   if (!stripe || !b.subscriptionId) redirect("/dashboard/billing");
   const sub = await stripe.subscriptions.update(b.subscriptionId, { cancel_at_period_end: false });
-  await writeSub(u.id, { ...subFields(sub as unknown as SubLike, (p) => planForPrice(p)) });
+  await writeSub(u.id, { ...subFields(sub as unknown as SubLike, (p, price) => planForPrice(p, process.env, price)) });
   await logAudit(u.id, { actor: "user", action: "billing.resume", target: b.subscriptionId, outcome: "ok" });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/billing?resumed=1");

@@ -35,7 +35,7 @@
 
 **Why this matters:** Your brand core is a one-page summary of who you are. Everything you write and post comes from it. Brands without one end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
 
-**Step 1.** Describe 2 or 3 types of customer, each with their goals, what frustrates them and where they spend time online.
+**Step 1.** Describe 2 or 3 types of customer. Note their goals, what bugs them and where they spend time online.
 
 **Expected result:** You have 2 or 3 short customer descriptions.
 
@@ -51,7 +51,7 @@
 
 **Expected result:** Every value has proof, not just a claim.
 
-**Step 5.** Write your story in under 100 words: why the brand exists, then save all five answers on one page.
+**Step 5.** Write your story in under 100 words: why the brand exists. Then save all five answers on one page.
 
 **Expected result:** A one-page brand core is saved where your team, freelancers and AI tools can read it.
 
@@ -60,7 +60,7 @@
 
 **Why this matters:** A customer profile describes one type of buyer. Built from real customer words, it tells you what to say in ads, pages and emails. Built from guesses, it sends you the wrong way.
 
-**Step 1.** Collect 30 to 50 real customer quotes from reviews, a short survey and support emails ([SOP 16](../sops/16-customer-research-and-reviews.md) shows how).
+**Step 1.** Collect 30 to 50 real customer quotes. Use reviews, a short survey and support emails ([SOP 16](../sops/16-customer-research-and-reviews.md) shows how).
 
 **Expected result:** You have a document of real quotes.
 
@@ -93,7 +93,7 @@
 
 **Expected result:** A freelancer could shoot on-brand content from the page alone.
 
-**Step 4.** Add good and bad examples of your voice, plus do and don't examples for ads, emails and social posts.
+**Step 4.** Add good and bad examples of your voice. Add do and don't examples for ads, emails and social posts.
 
 **Expected result:** The guide is finished and shared as one link or PDF.
 
@@ -106,7 +106,7 @@
 
 **Expected result:** You have a named list of pillars.
 
-**Step 2.** Using the table below as a starting point, set the share of each pillar for each channel you use.
+**Step 2.** Start from the table below. Set how much of each pillar goes on each channel you use.
 
 **Expected result:** Each channel has a mix that adds up to 100%.
 
@@ -163,9 +163,9 @@
 ## Lesson 4.6: Organic content that also feeds ads
 <!-- stage:attract -->
 
-**Why this matters:** Organic content means free posts, not paid ads. Good organic posts are a free way to test ad ideas, because the posts that hold attention usually make good ads.
+**Why this matters:** Organic content means free posts, not paid ads. Good free posts are a free way to test ad ideas. Posts that hold attention usually make good ads.
 
-**Step 1.** Film 3 to 5 short videos in one or two sessions a week and post them across the week.
+**Step 1.** Film 3 to 5 short videos in one or two sessions a week. Post them across the week.
 
 **Expected result:** You publish 3 to 5 videos a week without filming every day.
 

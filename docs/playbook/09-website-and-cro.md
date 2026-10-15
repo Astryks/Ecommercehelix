@@ -43,7 +43,7 @@
 
 <!-- do:insights -->
 
-**Step 2.** Rank each gap by expected impact divided by effort, and sort into quick wins, small builds and big builds.
+**Step 2.** Rank each gap by how much it helps divided by how much work it is. Sort into quick wins, small builds and big builds.
 
 **Expected result:** Your list is in priority order with quick wins at the top.
 
@@ -64,9 +64,9 @@
 ## Lesson 9.2: Page checklists
 <!-- stage:convert -->
 
-**Why this matters:** Each page type has a short list of things shoppers expect. Missing items cost sales quietly. Above the fold means what people see before they scroll, and on mobile that space is tiny, so it must work hard.
+**Why this matters:** Each page type has a short list of things shoppers expect. Missing items cost sales quietly. Above the fold means what people see before they scroll. On a phone that space is tiny, so it must work hard.
 
-**Step 1.** Check the top of your home page on your phone, before you scroll. You want a promo bar ("Free shipping over $80"), a simple menu, and a banner with one message and its own phone image. Add one clear button and a trust sign (star rating, customer count or press logo).
+**Step 1.** Check the top of your home page on your phone, before you scroll. You want a promo bar ("Free shipping over $80") and a simple menu. Add a banner with one message and its own phone image. Add one clear button and a trust sign (star rating, customer count or press logo).
 
 **Expected result:** All five items are visible without scrolling on a phone.
 
@@ -74,7 +74,7 @@
 
 **Expected result:** Each section is present, in roughly that order.
 
-**Step 3.** Check the top of each product page. You want the title, one line on what makes it different, star rating and price with a compare-at price or bundle value. Add an offer ("Buy 2, save 10%"), size or colour picker, Add to cart, delivery estimate and trust badges (secure checkout, free returns).
+**Step 3.** Check the top of each product page. You want the title and one line on what makes it different. Add the star rating, and the price with a compare-at price or bundle value. Add an offer ("Buy 2, save 10%"), a size or colour picker and Add to cart. Add a delivery estimate and trust badges (secure checkout, free returns).
 
 **Expected result:** All nine items show before scrolling on mobile.
 
@@ -82,7 +82,7 @@
 
 **Expected result:** Shoppers who scroll find answers to every common doubt.
 
-**Step 5.** Check collection pages. Look for filters you can combine with an easy reset, sort by best selling, badges (new, best seller, low stock) and quick add to cart.
+**Step 5.** Check collection pages. Look for filters you can combine with an easy reset, and sort by best selling. Add badges (new, best seller, low stock) and quick add to cart.
 
 **Expected result:** Shoppers can narrow and buy from a collection in a few taps.
 
@@ -101,7 +101,7 @@
 
 **Expected result:** Body text and buttons pass at least the AA level.
 
-**Step 2.** Add alt text (a short description for screen readers) to every product image in Shopify **Products > [product] > Media**.
+**Step 2.** Add alt text to every product image in Shopify **Products > [product] > Media**. Alt text is a short description for screen readers.
 
 **Expected result:** Every image has a short, descriptive alt text.
 
@@ -109,7 +109,7 @@
 
 **Expected result:** You can reach and use every link, button and form field.
 
-**Step 4.** Check font sizes (at least 16px body text on mobile), labels on every form field and captions on videos.
+**Step 4.** Check font sizes (at least 16px on phones). Every form field needs a label, and every video needs captions.
 
 **Expected result:** Text is easy to read, forms are labelled and videos have captions.
 
@@ -174,11 +174,11 @@
 
 **Why this matters:** A landing page is a page built for one ad or one offer. Matching the page to the ad's message usually lifts conversion, and you can test one in 48 hours.
 
-**Step 1.** Pick one type: a listicle ("5 reasons..."), a comparison, a founder story, a bundle builder or a sale collection page.
+**Step 1.** Pick one type: a list ("5 reasons..."), a comparison or a founder story. Or a bundle builder, or a sale collection page.
 
 **Expected result:** You have chosen a page type that matches your ad.
 
-**Step 2.** Build it in a page builder app with sections in this order: hook headline, the problem, your answer, 3 to 5 reasons to buy, proof, the offer, FAQ, final button.
+**Step 2.** Build it in a page builder app with sections in this order. Hook headline, the problem, your answer, 3 to 5 reasons to buy, proof, the offer, FAQ, final button.
 
 **Expected result:** The page is live with all eight sections.
 
@@ -197,9 +197,9 @@
 
 **Why this matters:** Measuring shows you where shoppers get stuck. Heatmaps show behaviour, store reports show the funnel, and a fixed checklist finds the cause of sudden drops fast.
 
-**Step 1.** Install a heatmap and session recording tool (for example Microsoft Clarity, free) and watch 20 recordings of mobile visitors.
+**Step 1.** Install a heatmap and recording tool, like Microsoft Clarity (free). Watch 20 recordings of phone visitors.
 
-**Expected result:** You have noted rage clicks (many angry clicks), dead clicks (clicks on things that are not links) and how far people scroll.
+**Expected result:** You have noted rage clicks (many angry clicks) and dead clicks (clicks on things that are not links). You know how far people scroll.
 
 **Step 2.** In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the steps: sessions, added to cart, reached checkout, then bought.
 
@@ -239,9 +239,9 @@
 ## Lesson 9.10: Order value
 <!-- stage:convert -->
 
-**Why this matters:** AOV (average order value: sales divided by orders) decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if fewer people do not buy as a result.
+**Why this matters:** AOV is average order value: sales divided by orders. It decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if fewer people do not buy as a result.
 
-**Step 1.** Set levels: free shipping at one amount, a free gift at a higher amount, and a discount at a higher one again.
+**Step 1.** Set levels. Free shipping at one amount, a free gift at a higher amount, and a discount at a higher one again.
 
 **Expected result:** The cart shows shoppers what they unlock next.
 
@@ -297,7 +297,7 @@
 
 **Why this matters:** Margin is the share of each sale you keep, and big store-wide discounts eat it. There are better ways to give people a reason to buy.
 
-**Step 1.** Replace your next store-wide discount with a free gift, a bundle, early access for best customers or a loyalty reward.
+**Step 1.** Swap your next store-wide discount for a free gift or a bundle. Or try early access for best customers, or a loyalty reward.
 
 **Expected result:** Your next promotion protects margin.
 
@@ -325,7 +325,7 @@
 
 **Expected result:** Preorder buyers know exactly what to expect.
 
-**Step 3.** Add shoppable videos, a "wall of love" review page and review requests sent after people have used the product.
+**Step 3.** Add videos people can shop from and a "wall of love" review page. Ask for reviews after people have used the product.
 
 **Expected result:** Proof and video show on product and home pages.
 
@@ -348,7 +348,7 @@
 
 **Expected result:** Each new app has passed four checks.
 
-**Step 2.** Get written cost estimates for custom work and choose a developer by past work plus a small paid test job.
+**Step 2.** Get written prices for custom work. Choose a developer by their past work plus a small paid test job.
 
 **Expected result:** You hire on evidence.
 
@@ -367,7 +367,7 @@
 
 **Expected result:** You have the list of common gaps for your category.
 
-**Step 2.** Check your store for each gap and add the ones you are missing to your CRO list (Lesson 9.1).
+**Step 2.** Check your store for each gap. Add the ones you are missing to your CRO list (Lesson 9.1).
 
 **Expected result:** Your improvement list includes the category's common fixes.
 
@@ -394,7 +394,7 @@
 
 **Step 2.** Buy something yourself on your phone and on a computer. Add to cart, reach checkout and pay with a real card and a wallet (Apple Pay or Google Pay). Then refund it.
 
-**Expected result:** Every step works, or you have found the broken step (often a payment method, discount code or a new app).
+**Expected result:** Every step works, or you found the broken one. It is often a payment method, discount code or new app.
 
 **Step 3.** Look at what changed in the last 7 days. Think about theme edits, new or updated apps, prices and shipping rates. Also a sold-out best seller, or a new ad sending different visitors. Undo the most likely change first.
 

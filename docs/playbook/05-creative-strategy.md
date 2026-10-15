@@ -1,6 +1,6 @@
 # Module 5: Creative strategy
 
-**Outcome:** a simple system you can repeat to plan, write, film, test and improve ads that make people stop scrolling and buy.
+**Outcome:** a simple system you can repeat. You plan, write, film, test and improve ads that stop the scroll and sell.
 
 **Related SOPs:** [07 Creative testing](../sops/07-creative-testing.md), [08 Briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md)
 
@@ -45,7 +45,7 @@
 
 **Expected result:** Your targeting is wide and your ads do the targeting.
 
-**Step 3.** Set a goal for a steady supply of new ads, for example 4 to 8 new ads every two weeks.
+**Step 3.** Set a goal for a steady flow of new ads. For example: 4 to 8 new ads every two weeks.
 
 **Expected result:** You have a written creative volume target. Lesson 5.2 shows how to hit it.
 
@@ -54,7 +54,7 @@
 
 **Why this matters:** Making ads works best as a loop you repeat every week or two. Each turn of the loop makes the next batch smarter, because winners teach you why they won.
 
-**Step 1.** **Research:** spend 20 minutes reading reviews and comments, browsing competitors' ads in the Meta Ad Library (facebook.com/ads/library) and noting trends.
+**Step 1.** **Research:** spend 20 minutes reading reviews and comments. Browse rivals' ads in the Meta Ad Library (facebook.com/ads/library) and note trends.
 
 **Expected result:** You have 3 to 5 notes on what buyers say and what others run.
 
@@ -183,7 +183,7 @@
 ## Lesson 5.8: Script frameworks
 <!-- stage:attract -->
 
-**Why this matters:** A script framework is a proven order for the parts of an ad. Picking one stops rambling. It also makes sure every ad ends with a clear call to action: the line that tells people what to do.
+**Why this matters:** A script framework is a proven order for the parts of an ad. Picking one stops rambling. It also makes sure every ad ends with a clear call to action. That is the line that tells people what to do.
 
 **Step 1.** Pick one framework from the table below, such as "problem, make it worse, solve" or "N reasons why".
 
@@ -193,7 +193,7 @@
 
 **Expected result:** You have a draft script of 20 to 45 seconds.
 
-**Step 3.** End with a clear call to action: what to do ("Tap Shop now"), what they get, and why now. State the offer and any minimum clearly ("20% off your first order, free shipping over $80").
+**Step 3.** End with a clear call to action. Say what to do ("Tap Shop now"), what they get, and why now. State the offer and any minimum clearly ("20% off your first order, free shipping over $80").
 
 **Expected result:** The script ends with a call to action that has all three parts.
 
@@ -275,7 +275,7 @@
 ## Lesson 5.12: Content that shows the ad system who buys
 <!-- stage:attract -->
 
-**Why this matters:** When an ad is clear about who it is for, the platform can find the right people more easily. A clear niche, a clear use and a clear type of person on screen beat a generic message.
+**Why this matters:** Make it clear who an ad is for. Then the platform finds the right people more easily. A clear niche, a clear use and a clear type of person on screen beat a generic message.
 
 **Step 1.** For your next ad, name one clear group, like new mums, trail runners or home bakers. Show that kind of person using the product.
 
@@ -290,7 +290,7 @@
 
 **Why this matters:** You can give people a reason to buy now without a discount, which protects your margin. There are six honest options.
 
-**Step 1.** Pick one reason to buy now for this month. For example: the season ("before summer"), an event, a limited bundle, a free gift for a set time, or a delivery cut-off ("order by Friday for Christmas").
+**Step 1.** Pick one reason to buy now for this month. For example: the season ("before summer"), an event or a limited bundle. Or a free gift for a set time, or a delivery cut-off ("order by Friday for Christmas").
 
 **Expected result:** You have one urgency reason with a real date.
 

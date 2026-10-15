@@ -33,7 +33,7 @@
 ## Lesson 21.1: Why your profile is part of every ad
 <!-- stage:attract -->
 
-**Why this matters:** Many people who see an ad do not click it; they tap your name to check you out first. If they find three old posts, no reviews and a broken link, they leave. A strong profile makes every ad dollar work harder, for free.
+**Why this matters:** Many people who see an ad do not click it. They tap your name to check you out first. If they find three old posts, no reviews and a broken link, they leave. A strong profile makes every ad dollar work harder, for free.
 
 **Step 1.** Open your Instagram, TikTok and Facebook profiles on your phone as a stranger would. Log out or use a private window.
 
@@ -94,7 +94,7 @@
 
 **Expected result:** You have a weekly posting target per platform.
 
-**Step 2.** Batch your work: film once a week, then schedule the whole week in Meta Business Suite or a scheduler.
+**Step 2.** Batch your work. Film once a week, then schedule the whole week in Meta Business Suite or a scheduler.
 
 **Expected result:** A week of posts is scheduled in one sitting.
 
@@ -144,7 +144,7 @@
 
 **Expected result:** Reviews are visible on your profile.
 
-**Step 2.** Ask happy customers to tag you, then reshare their posts to Stories with permission and save them to a highlight.
+**Step 2.** Ask happy customers to tag you. With permission, reshare their posts to Stories and save them to a highlight.
 
 **Expected result:** Customer posts fill a highlight.
 
@@ -172,7 +172,7 @@
 ## Lesson 21.9: The social presence audit (what to check)
 <!-- stage:attract -->
 
-**Why this matters:** A profile that is out of date or does not match your ads loses buyers who come to check you out. Helix does not check your social profiles yet, so this table is your own 10-minute check.
+**Why this matters:** Some buyers come to check out your profile. If it is out of date or does not match your ads, you lose them. Helix does not check your social profiles yet, so this table is your own 10-minute check.
 
 **Step 1.** Read the checks in the table below.
 

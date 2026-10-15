@@ -41,7 +41,7 @@
 
 **Expected result:** Each country has a monthly search volume.
 
-**Step 3.** Check whether competitors already sell there and where your social followers come from (Instagram **Insights > Audience > Top locations**).
+**Step 3.** Check if rivals already sell there. See where your social followers come from (Instagram **Insights > Audience > Top locations**).
 
 **Expected result:** Each country has a competition and audience note.
 
@@ -52,9 +52,9 @@
 ## Lesson 15.2: Recalculate unit economics per country
 <!-- stage:grow -->
 
-**Why this matters:** Unit economics means what each order earns after its costs, and those costs change in a new country. Shipping, duties, taxes and the exchange rate can turn a profitable product into a loss.
+**Why this matters:** Unit economics means what each order earns after its costs. Those costs change in a new country. Shipping, duties, taxes and the exchange rate can turn a profitable product into a loss.
 
-**Step 1.** Work out landed cost for the new country: product cost plus shipping there, import duties, taxes and exchange rate effects.
+**Step 1.** Work out landed cost for the new country. Add product cost, shipping there, import duties, taxes and exchange rate effects.
 
 **Expected result:** You have a per-order cost for the new country.
 

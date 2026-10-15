@@ -1,6 +1,6 @@
 # Module 19: Creators, UGC and video ads
 
-**Outcome:** you can find and sign creators and run partnership ads (ads from a creator's own account). You can build an affiliate program that does not clash with your own offers, and make video ads that stop the scroll. You will learn to write hooks and scripts, pick formats, film and edit. You will also brief creators so they deliver what you need the first time.
+**Outcome:** you can find and sign creators and run partnership ads (ads from a creator's own account). You can build an affiliate program that does not clash with your own offers. You can also make video ads that stop the scroll. You will learn to write hooks and scripts, pick formats, film and edit. You will also brief creators so they deliver what you need the first time.
 
 **Related:** [Module 5 Creative strategy](05-creative-strategy.md), [Module 6 Defining campaigns](06-defining-campaigns.md), [SOP 08 Creative briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md), [SOP 07 Creative testing](../sops/07-creative-testing.md)
 
@@ -24,7 +24,7 @@
 >
 > - **Creator:** A person who makes social content and can feature your product.
 > - **UGC:** Photos and videos made by real customers or creators instead of the brand.
-> - **Partnership ad:** An ad that runs from a creator's own account, so people see their name instead of yours.
+> - **Partnership ad:** An ad that runs from a creator's own account. People see their name instead of yours.
 > - **Hook:** The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -37,11 +37,11 @@
 
 **Why this matters:** People trust people more than brands. When someone like your customer explains why they switched, it feels more real than a brand praising itself. It also gives ad platforms the mix of ages, styles and reasons they need to find new buyers. UGC (user-generated content) means photos and videos made by customers or creators instead of the brand.
 
-**Step 1.** Read the four ways to work with creators in the table below (gifting, paid UGC, influencer or partnership, affiliate).
+**Step 1.** Read the four ways to work with creators in the table below. They are gifting, paid UGC, influencer or partnership, and affiliate.
 
 **Expected result:** You know what each costs and what you get.
 
-**Step 2.** Start with gifting and paid UGC: send product to 10 creators and pay 2 or 3 for ad-ready videos.
+**Step 2.** Start with gifting and paid UGC. Send product to 10 creators and pay 2 or 3 for videos ready for ads.
 
 **Expected result:** You have your first creator videos to test.
 
@@ -73,11 +73,11 @@
 
 **Expected result:** Your list grows with problem-focused creators.
 
-**Step 3.** Use Meta and TikTok creator marketplaces, filtering by audience location, size and category, and check who makes content for competitors.
+**Step 3.** Use Meta and TikTok creator marketplaces. Filter by audience location, size and category. Check who makes content for rivals.
 
 **Expected result:** You have 20 or more candidates.
 
-**Step 4.** Score each one out of 10. Look at comfort on camera, speaking to your customer, natural style, a real community in comments, regular posting and shared values.
+**Step 4.** Score each one out of 10. Look at comfort on camera and speaking to your customer. Check natural style, a real community in comments, regular posting and shared values.
 
 **Expected result:** Each creator has a score.
 
@@ -96,11 +96,11 @@
 
 **Expected result:** Each message names something they made.
 
-**Step 2.** Offer product first, and money once their content works; mention the affiliate offer in the first or second message.
+**Step 2.** Offer product first, and money once their content works. Mention the affiliate offer in the first or second message.
 
 **Expected result:** Creators know there is ongoing money in it.
 
-**Step 3.** Send a one-page brand overview: what you stand for, who you serve, what makes you different and three proof points.
+**Step 3.** Send a one-page brand overview. Say what you stand for, who you serve, what makes you different, and give three proofs.
 
 **Expected result:** Every creator has the same clear brand summary.
 
@@ -177,7 +177,7 @@
 ## Lesson 19.6: Partnership ads (whitelisting)
 <!-- stage:attract -->
 
-**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account instead of your brand page. People see a familiar person, not an ad. Meta reports a lower cost per customer when these ads sit inside normal sales campaigns. Treat that as a reason to test, not a promise.
+**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account. They do not run from your brand page. People see a familiar person, not an ad. Meta reports a lower cost per customer when these ads sit inside normal sales campaigns. Treat that as a reason to test, not a promise.
 
 **Step 1.** Ask the creator's permission in writing and agree how long it lasts.
 
@@ -209,13 +209,13 @@
 
 **Expected result:** Every creator has written terms.
 
-**Step 8.** Get written permission, then run the creator's video as a partnership ad from their account inside your normal campaigns.
+**Step 8.** Get written permission. Then run the creator's video as a partnership ad from their account, inside your normal campaigns.
 
 **Expected result:** Partnership ads are live, often at a lower cost per new customer.
 
 <!-- do:meta-draft -->
 
-**Step 9.** Give affiliates (people paid a commission per sale) a simple guide with product facts, angles that work and examples.
+**Step 9.** Give affiliates (people paid per sale) a simple guide. Include product facts, angles that work and examples.
 
 **Expected result:** Affiliates have what they need to post without asking you.
 
@@ -228,7 +228,7 @@
 
 **Expected result:** You can see your current mix.
 
-**Step 2.** Add one format you are missing to your next batch, chosen to fit the audience's awareness stage (Lesson 5.5).
+**Step 2.** Add one format you are missing to your next batch. Pick it to fit how much the audience knows (Lesson 5.5).
 
 **Expected result:** Your account has at least four formats live.
 
@@ -263,7 +263,7 @@
 
 **Expected result:** The first frame grabs attention with sound off.
 
-**Step 3.** Write 3 spoken hooks of different types. Try a bold claim, a call out, a curious gap, gossip, a myth, a reply to a one-star review, a price question, the result first, an opinion or a surprising fact.
+**Step 3.** Write 3 spoken hooks of different types. Try a bold claim, a call out, a curious gap or gossip. Or a myth, a reply to a one-star review or a price question. Or the result first, an opinion or a surprising fact.
 
 **Expected result:** You have 3 openings to film.
 
@@ -286,7 +286,7 @@
 
 **Expected result:** Your next batch uses a script idea you have not tried recently.
 
-**Step 3.** Write a clear call to action with a reason, like "Tap Shop now and grab the starter kit, so it arrives before Friday". It should match the offer on the landing page.
+**Step 3.** Write a clear call to action with a reason. For example: "Tap Shop now and grab the starter kit, so it arrives before Friday". It should match the offer on the landing page.
 
 **Expected result:** The call to action is specific and matches the page.
 
@@ -321,7 +321,7 @@
 
 **Expected result:** Audio is clean with no echo.
 
-**Step 4.** Film several takes of the hook, then B-roll: product close-ups, the product in use, packaging, hands, results and settings.
+**Step 4.** Film several takes of the hook. Then film extra clips: close-ups, the product in use, packaging, hands, results and settings.
 
 **Expected result:** You have spare hooks and cutaway shots for editing.
 
@@ -405,7 +405,7 @@ Examples we love: [links]
 
 **Why this matters:** A weekly ad-making habit is a steady weekly supply of new ads. Accounts that keep winning are the ones that never run out of fresh, well-briefed creative.
 
-**Step 1.** Set a target of 4 to 8 new ads a week at small to medium spend, more as spend grows.
+**Step 1.** Aim for 4 to 8 new ads a week at small to medium spend. Make more as spend grows.
 
 **Expected result:** You have a weekly creative target.
 

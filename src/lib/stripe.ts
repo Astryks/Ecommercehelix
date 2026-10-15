@@ -17,9 +17,11 @@ export function priceFor(plan: PlanId, env: Env = process.env): string | undefin
  * who joined on an earlier price (for example the first AUD prices) keep their plan after the switch to USD.
  * An unknown price grants nothing.
  */
-export function planForPrice(priceId?: string | null, env: Env = process.env): PlanId {
+export function planForPrice(priceId?: string | null, env: Env = process.env, price?: { lookup_key?: string | null; metadata?: Record<string, string> | null } | null): PlanId {
   if (!priceId) return "free";
   if (priceId === env.STRIPE_PRICE_GROWTH || list(env.STRIPE_PRICE_GROWTH_LEGACY).includes(priceId)) return "growth";
   if (priceId === env.STRIPE_PRICE_STARTER || list(env.STRIPE_PRICE_STARTER_LEGACY).includes(priceId)) return "starter";
-  return "free";
+  // Prices tagged by scripts/stripe-setup.mjs (new USD prices and older ones) carry their plan, so old members keep access.
+  const tag = price?.metadata?.helix_plan ?? price?.lookup_key?.match(/^helix_(starter|growth)_/)?.[1];
+  return tag === "growth" || tag === "starter" ? tag : "free";
 }

@@ -34,13 +34,13 @@
 ## Lesson 3.1: Five ways to make an offer stronger
 <!-- stage:convert -->
 
-**Why this matters:** Your offer is everything a customer gets and every reason they have to buy now rather than later. When ads and site are fine but sales are slow, the offer is usually the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
+**Why this matters:** Your offer is everything a customer gets. It is also every reason they have to buy now, not later. When ads and site are fine but sales are slow, the offer is usually the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
 
 **Step 1.** Read the five levers in the table below: promise, belief, urgency, safety and easy yes. Score your main product from 1 to 5 on each.
 
-**Expected result:** You have five scores on one line, for example "Promise 4, Belief 2, Urgency 3, Safety 4, Easy yes 3".
+**Expected result:** You have five scores on one line. For example: "Promise 4, Belief 2, Urgency 3, Safety 4, Easy yes 3".
 
-**Step 2.** Circle the lowest score and open the matching lesson: promise 3.2, belief 3.3, urgency 3.4, safety 3.5, easy yes 3.6.
+**Step 2.** Circle the lowest score and open its lesson. Promise is 3.2, belief 3.3, urgency 3.4, safety 3.5 and easy yes 3.6.
 
 **Expected result:** You know which single lever to work on this week.
 
@@ -96,11 +96,11 @@
 
 **Expected result:** Every objection sits under one heading, and you can see which group is biggest.
 
-**Step 3.** Write one proof for each objection (a review quote, a photo, a guarantee, a stat or a demo video).
+**Step 3.** Write one proof for each worry. Use a review quote, a photo, a guarantee, a number or a demo video.
 
 **Expected result:** Each objection has an answer you can show, not just claim.
 
-**Step 4.** Add the answers to the product page FAQ, your ads and your welcome emails, starting with the biggest group.
+**Step 4.** Add the answers to the product page FAQ, your ads and your welcome emails. Start with the biggest group.
 
 **Expected result:** The top objections are answered in at least three places shoppers see.
 
@@ -115,7 +115,7 @@
 
 **Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law.
 
-**Step 1.** Pick one honest way to show scarcity that fits your product. For example: a small batch with a number, a preorder with a clear ship date, a colour for a short time, or low-stock alerts.
+**Step 1.** Pick one honest way to show scarcity that fits your product. For example: a small batch with a number, or a preorder with a clear ship date. Or a colour for a short time, or low-stock alerts.
 
 **Expected result:** You have chosen one method you can stand behind.
 
@@ -136,7 +136,7 @@
 
 **Why this matters:** Shoppers worry about making a bad purchase. Every worry you remove turns more visits into orders. Generous, clear policies usually add more sales than they cost.
 
-**Step 1.** Turn on photo reviews in your review app and email recent buyers asking for a photo with their review.
+**Step 1.** Turn on photo reviews in your review app. Email recent buyers and ask for a photo with their review.
 
 **Expected result:** Your best sellers show reviews with customer photos.
 
@@ -177,7 +177,7 @@
 
 **Expected result:** The single price looks like better value beside it.
 
-**Step 4.** Add a decoy middle option that makes the option you want people to pick look like the obvious choice.
+**Step 4.** Add a middle option that makes your favourite option look like the clear choice.
 
 **Expected result:** More shoppers pick your target option.
 
@@ -226,7 +226,7 @@
 
 **Expected result:** You have real demand evidence, such as waitlist sign-ups or preorders.
 
-**Step 3.** Launch with a plan from Module 13: build excitement, give early access, prepare a launch offer and have ads ready.
+**Step 3.** Launch with a plan from Module 13. Build excitement, give early access, prepare a launch offer and have ads ready.
 
 **Expected result:** The launch has dates, an offer and ads ready before day one.
 
@@ -256,7 +256,7 @@
 
 **Why this matters:** Some products get used up, like coffee, skincare, vitamins, pet food or cleaning refills. A subscription turns one sale into many and makes next month easier to predict. It suits products people reorder on a rhythm; it does not suit one-off purchases.
 
-**Step 1.** Check whether your product fits: look at customers who bought twice and work out the usual gap between orders.
+**Step 1.** Check if your product fits. Look at customers who bought twice, and find the usual gap between orders.
 
 **Expected result:** You know how long people usually wait before they buy again (for example 30 or 60 days). Or you know repeat buying is too rare for a subscription.
 

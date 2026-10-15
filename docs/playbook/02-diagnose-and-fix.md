@@ -139,7 +139,7 @@
 
 **Why this matters:** High MER means ads eat too much of your sales. Changing the ads is often the wrong fix. The problem can be the site, the offer or a short-term shock. Follow these steps in order before you touch a campaign.
 
-**Step 1.** Look for a short-term shock in the last 7 days. For example: your best seller is out of stock, it is the slow week after a sale, or a rival is having a sale. It could also be the season, tracking that stopped counting sales, or your site being down.
+**Step 1.** Look for a short-term shock in the last 7 days. For example: your best seller is out of stock, or it is the slow week after a sale. Or a rival is having a sale. It could also be the season, tracking that stopped counting sales, or your site being down.
 
 **Expected result:** You have either found a shock (fix it or wait it out) or ruled one out.
 
@@ -175,7 +175,7 @@
 
 **Why this matters:** A KPI (key performance indicator) is one of the key numbers you track. When several are bad at once, trying to fix them all spreads you too thin. Fix the one worth the most dollars first.
 
-**Step 1.** For each bad number, guess how much profit a month it would add if it went back to normal. For example: MER from 38% to 30% on $40,000 sales = $3,200.
+**Step 1.** For each bad number, imagine it went back to normal. Guess how much more profit you would make a month. For example: MER from 38% to 30% on $40,000 sales = $3,200.
 
 **Expected result:** You have a dollar figure next to each bad number.
 

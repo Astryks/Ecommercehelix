@@ -34,7 +34,7 @@
 ## Lesson 11.1: Why build the list
 <!-- stage:attract -->
 
-**Why this matters:** Your email and SMS list is an audience you own and can reach for free, any time. Each engaged subscriber earns a little every month. Collecting emails when ads are cheap and selling when ads are expensive is one of the most reliable ways to grow.
+**Why this matters:** Your email and SMS list is an audience you own and can reach for free, any time. Each engaged subscriber earns a little every month. Collect emails when ads are cheap, and sell when ads are costly. It is one of the most reliable ways to grow.
 
 **Step 1.** Check your list size and the share engaged in the last 90 days in your email app.
 
@@ -93,7 +93,7 @@
 
 **Expected result:** The creative is ready.
 
-**Step 4.** Run ads to broad audiences with a Leads campaign, or a Sales campaign sending people to the entry page.
+**Step 4.** Run ads to broad audiences with a Leads campaign. Or use a Sales campaign that sends people to the entry page.
 
 **Expected result:** Ads are live and entries are coming in.
 
@@ -141,7 +141,7 @@
 
 **Expected result:** DMs turn into sales.
 
-**Step 3.** Turn on comment filters and blocked words, and team up with a brand whose products go well with yours.
+**Step 3.** Turn on comment filters and blocked words. Team up with a brand whose products go well with yours.
 
 **Expected result:** Comments stay clean and you reach a partner's audience.
 

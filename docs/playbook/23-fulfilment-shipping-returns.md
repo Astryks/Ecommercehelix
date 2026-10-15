@@ -25,7 +25,7 @@
 > - **3PL:** Third-party logistics: a warehouse company that stores your stock and packs and ships your orders.
 > - **Return rate:** The share of orders that customers send back.
 > - **Shipping protection:** An optional fee at checkout that covers lost, stolen or damaged parcels.
-> - **Lead time:** How long it takes from placing an order with your supplier to having stock ready to sell.
+> - **Lead time:** How long it takes from ordering from your supplier to having stock ready to sell.
 >
 > All words are explained in the [glossary](../glossary.md).
 <!-- plain:end -->
@@ -37,11 +37,11 @@
 
 **Why this matters:** Packing orders yourself is cheap at first and expensive later, because your hours stop going into growth. A 3PL is a warehouse company that stores and ships for you. It makes sense when packing takes more of your week than selling does.
 
-**Step 1.** For one normal week, write down how many orders you sent and how many hours packing, labelling and drop-offs took.
+**Step 1.** For one normal week, write down how many orders you sent. Note the hours spent packing, labelling and dropping off.
 
 **Expected result:** You have orders per week and packing hours per week.
 
-**Step 2.** Work out your cost per order today: packaging plus labels plus postage plus your time at a fair hourly rate.
+**Step 2.** Work out your cost per order today. Add packaging, labels, postage, and your time at a fair hourly rate.
 
 **Expected result:** You have one true cost per order, including your time.
 
@@ -49,7 +49,7 @@
 
 **Expected result:** You have 3 quotes for the same workload.
 
-**Watch out:** Australia: most warehouses are in Sydney, Melbourne or Brisbane, so ask for delivery times to Perth and regional areas. US: one central warehouse reaches most addresses in 2 to 5 days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
+**Watch out:** Australia: most warehouses are in Sydney, Melbourne or Brisbane. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in 2 to 5 days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
 
 **Step 4.** Compare the full monthly bill, not just pick and pack. Include receiving, storage (per pallet, shelf or cubic metre) and packaging. Add monthly minimums, set-up, returns and busy-season extras.
 
@@ -72,7 +72,7 @@
 
 **Why this matters:** Most moves to a warehouse go wrong in the handover week. Stock counts do not match, barcodes are missing or orders get stuck between systems. A careful switch avoids all three.
 
-**Step 1.** Give every product and variant its own SKU (your own product code) and a barcode before anything ships (see [Module 22](22-shopify-store-setup.md)).
+**Step 1.** Give every product and variant its own SKU (your product code) and a barcode. Do it before anything ships (see [Module 22](22-shopify-store-setup.md)).
 
 **Expected result:** Every variant has a SKU and barcode.
 
@@ -80,7 +80,7 @@
 
 **Expected result:** The warehouse knows what is arriving and does not charge extra for unlabelled cartons.
 
-**Step 3.** Ask the warehouse to count everything on arrival and send you the count, then fix gaps before you switch.
+**Step 3.** Ask the warehouse to count everything when it arrives and send you the count. Fix gaps before you switch.
 
 **Expected result:** Their count matches what you sent.
 
@@ -120,7 +120,7 @@
 
 **Watch out:** Australia: compare the national post with private couriers, especially over 1 kg and for WA and regional areas. US: compare USPS, UPS and FedEx; ground is often cheaper for heavy parcels and USPS for small light ones.
 
-**Step 3.** Work out your average shipping cost per order from last month's invoices and enter it in Helix under shipping.
+**Step 3.** Work out your average shipping cost per order from last month's bills. Enter it in Helix under shipping.
 
 **Expected result:** Helix shows true profit including shipping.
 
@@ -159,7 +159,7 @@
 
 **Expected result:** Some of the cost comes back.
 
-**Step 4.** If you offer shipping protection, make it opt-in: unticked by default with the price shown (see [Shopify app store requirements](https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements)).
+**Step 4.** If you offer shipping protection, let buyers choose it. Leave it unticked, with the price shown (see [Shopify app store requirements](https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements)).
 
 **Expected result:** Customers choose it; it is never pre-selected.
 
@@ -194,7 +194,7 @@
 
 **Expected result:** More returns become exchanges.
 
-**Watch out:** In Australia, customers have the right to a repair, replacement or refund for faulty products, whatever your policy says. Never write "no refunds" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** In Australia, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 5.** Make returns easy to start with a form or portal, checking the portal's price against your return volume.
 
@@ -215,17 +215,17 @@
 
 **Why this matters:** A spreadsheet works for a handful of products. It breaks when you have many variants, more than one location, or purchase orders in transit.
 
-**Step 1.** Start with the Helix [Suppliers and stock](/dashboard/stock) page for reorder points, stock-out dates and order-by dates (see [Lesson 14.9](14-inventory-cash-planning.md)).
+**Step 1.** Start with the Helix [Suppliers and stock](/dashboard/stock) page. It shows reorder points, stock-out dates and order-by dates (see [Lesson 14.9](14-inventory-cash-planning.md)).
 
 **Expected result:** Each product shows when to reorder.
 
 <!-- do:stock -->
 
-**Step 2.** Move to stock software when 2 or more of these are true. You have over about 100 variants, more than one warehouse, frequent stock mistakes, or you spend hours each week on stock.
+**Step 2.** Move to stock software when 2 or more of these are true. You have over about 100 variants or more than one warehouse. Or you make stock mistakes often, or spend hours each week on stock.
 
 **Expected result:** You know whether you need software yet.
 
-**Step 3.** Before you buy, list what you need. For example: purchase orders, landed cost (product plus freight, duties and fees), several locations, bundles and a link to your accounts.
+**Step 3.** Before you buy, list what you need. For example: purchase orders and landed cost (product plus freight, duties and fees). Or several locations, bundles and a link to your accounts.
 
 **Expected result:** You have a short requirements list.
 
@@ -240,7 +240,7 @@
 ## Lesson 23.7: Customer service that keeps customers
 <!-- stage:grow -->
 
-**Why this matters:** Most questions are the same few. Where is my order? Can I change my size? How do I return this? Fast, friendly answers turn a worried buyer into a repeat buyer, and good automation takes most of the load off you.
+**Why this matters:** Most questions are the same few. Where is my order? Can I change my size? How do I return this? Fast, friendly answers turn a worried buyer into a repeat buyer. Good automation takes most of the work off you.
 
 **Step 1.** Read your last 50 customer emails and messages and group them by question. Count the top five.
 
@@ -254,7 +254,7 @@
 
 **Expected result:** Every message lands in one place, and "where is my order" gets an instant answer.
 
-**Step 4.** Set a reply target (for example within one business day) and check each week how many messages missed it.
+**Step 4.** Set a reply target, like within one business day. Check each week how many messages missed it.
 
 **Expected result:** You know your reply time and which questions still take the longest.
 

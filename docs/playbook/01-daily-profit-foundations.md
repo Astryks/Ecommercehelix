@@ -57,16 +57,16 @@
 
 **Expected result:** A guessed profit figure sits next to your sales and ad spend.
 
-**Step 4.** Save the three numbers somewhere easy to find, like a note on your phone or the notes field in Helix Settings.
+**Step 4.** Save the three numbers somewhere easy to find. A note on your phone works, or the notes field in Helix Settings.
 
-**Expected result:** You can find the note later. At the end of this module you check your guess. You compare it with your real contribution profit (sales minus order costs minus ads) and net profit (what is left after fixed bills too).
+**Expected result:** You can find the note later. At the end of this module you check your guess. You compare it with your real contribution profit (sales minus order costs and ads). You also compare it with net profit (what is left after bills).
 
 ## Lesson 1.2: Your cost drivers
 <!-- stage:grow -->
 
 **Why this matters:** Cost drivers are your average costs, and they are what turn sales into profit. Get them roughly right once and every profit number in Helix becomes trustworthy. You set them up in about 30 minutes and check them every 3 months.
 
-**Step 1.** Work out your **product cost %**. In Shopify, go to **Analytics > Reports > Gross profit by product** (each product needs "Cost per item" filled in). Or take your top 10 sellers and divide the landed cost of one unit (price paid plus freight and duty) by the selling price.
+**Step 1.** Work out your **product cost %**. In Shopify, go to **Analytics > Reports > Gross profit by product** (each product needs "Cost per item" filled in). Or take your top 10 sellers. Divide the landed cost of one unit (price paid plus freight and duty) by the selling price.
 
 **Expected result:** You have one percentage, usually somewhere between 20% and 40% for most online stores.
 
@@ -243,7 +243,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Step 3.** Work out break-even ROAS: 1 divided by (1 minus VCR). ROAS (return on ad spend) is sales from ads divided by ad spend. With VCR at 40%, 1 / 0.6 = 1.67.
 
-**Expected result:** You know the line. Any channel that brings back less than $1.67 for each $1 of ads loses money on every sale, before fixed costs.
+**Expected result:** You know the line. Any channel that brings back less than $1.67 for each $1 of ads loses money on every sale. That is before fixed costs.
 
 **Step 4.** Work out break-even CPA: AOV times (1 minus VCR). CPA is the ad spend for one sale, and AOV is your average order value. With AOV $100 and VCR 40%: $60.
 
@@ -266,7 +266,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 <!-- do:numbers -->
 
-**Step 2.** Compare your MER for the last 3 days and this month with your target MER. Then pick one plan: **Push** (under target, good profit: spend more), **Careful push** (close to target: spend a bit more and watch), **Hold** (at target: keep spend the same) or **Defend** (over target: cut the weakest ads and fix the cause).
+**Step 2.** Compare your MER for the last 3 days and this month with your target MER. Then pick one plan. **Push:** under target with good profit, so spend more. **Careful push:** close to target, so spend a bit more and watch. **Hold:** at target, so keep spend the same. **Defend:** over target, so cut the weakest ads and fix the cause.
 
 **Expected result:** You have one word for today's stance.
 
@@ -304,7 +304,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Worked example: a $60 product made overseas.** It costs $12 to make and $3 to ship in with duty. So the landed cost is $15 and you keep 75% after product cost. Payment fees take $1.35, packaging $1.50 and postage $9, leaving $33.15 before marketing. Ads cost $15 per order, leaving $18.15. Shopify, apps and other bills of $580 a month over 200 orders is $2.90 an order. Net profit is **$15.25 an order (25%)**, or about $3,050 a month. If ads crept up to $33 an order, every sale would lose money even though sales look the same.
 
-**Step 1.** Write down one product and its price. Next to it, write a cost for each of the seven layers in this lesson, even if you have to guess. The layers are product, freight and duty, payment fees, packaging, shipping, marketing and fixed costs.
+**Step 1.** Write down one product and its price. Next to it, write a cost for each of the seven layers in this lesson. Guess if you have to. The layers are product, freight and duty, payment fees, packaging, shipping, marketing and fixed costs.
 
 **Expected result:** You have a rough cost for every layer of one order.
 

@@ -1,6 +1,32 @@
 # STATUS
 
-_Last updated: 15 Oct 2026, 2:45 PM (Sydney)._
+_Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
+
+## Needs Sid (only these are left)
+
+1. **Stripe: run one setup script (about 5 minutes).** The Stripe secret key in Vercel is stored as a "sensitive" variable, so nobody (and no tool) can read it back, so the USD prices, webhook events and portal could not be created from here.
+   - On your computer, in the repo: `STRIPE_SECRET_KEY=sk_live_... node scripts/stripe-setup.mjs` (use the same key as in Vercel; run with `sk_test_...` first if you want a dry run in test mode).
+   - It creates "Helix Starter" US$29/month and "Helix Growth" US$59/month (monthly only, as on the site; no yearly plan is offered), makes sure the webhook `https://ecommercehelix.com/api/stripe/webhook` exists with the 6 events (`checkout.session.completed`, `customer.subscription.created/updated/deleted`, `invoice.paid`, `invoice.payment_failed`), sets the customer portal (cancel at period end, update card, invoices, switch plan, return to Plan and billing), tries the brand colours, and tags older AUD prices so current members keep their plan automatically.
+   - Then in Vercel > ecommercehelix > Settings > Environment Variables, for Production and Preview: set `STRIPE_PRICE_STARTER` and `STRIPE_PRICE_GROWTH` to the two IDs it prints. If it printed a new webhook signing secret, set `STRIPE_WEBHOOK_SECRET` to it. Optional: put the old price IDs in `STRIPE_PRICE_STARTER_LEGACY` / `STRIPE_PRICE_GROWTH_LEGACY` (not required: the script's tags already cover them). Redeploy.
+   - Then: one real Starter purchase on the live site, cancel in Plan and billing, check access stays until the period end, refund in Stripe.
+   - Branding: if the script says branding could not be set, Stripe Dashboard > Settings > Branding: name "E-commerce Helix", support email, logo option B, colour #5A50D6.
+2. **TikTok (paused by Sid).** When ready: create the app at https://business-api.tiktok.com/portal, redirect URL `https://ecommercehelix.com/api/tiktok/callback`, then set `TIKTOK_APP_ID` and `TIKTOK_APP_SECRET` in Vercel. Spend sync is built after that (small additive table).
+3. **Meta app review** (so people who are not testers can connect Meta): Business Verification in Meta Business Settings > Security Centre, then App Review for `ads_read`, `ads_management`, `business_management`, `pages_read_engagement` with the screen recording described in `docs/meta-setup.md`.
+4. **Meta "Save choice" check** on Settings > Connections: sign in as yourself, pick your ad account, Page and pixel, press Save choice and confirm it sticks (the fix shipped; it needs your real Meta account to confirm). Then refund your A$29 and set your account to Starter free.
+5. **Google Ads check-in:** once Google approves the developer token (https://console.cloud.google.com/google/ads-apis/overview?project=astryks), send it to me or set `GOOGLE_ADS_DEVELOPER_TOKEN` in Vercel Production, then connect your Google Ads account on /dashboard/connect and check the first sync.
+6. **GitHub Support purge for PR #12:** paste the ready text in `docs/github-support-pr12.md` into https://support.github.com/contact ("Removing sensitive data").
+7. **Lesson videos** (when recorded): add the URLs to `VIDEOS` in `src/app/dashboard/learn/page.tsx` (or send them and I add them).
+8. **Social v3:** say OK before the 50 new posts are scheduled.
+
+## Done today (15 Oct 2026)
+
+- **Emails live:** `EMAILS_LIVE=1`, `SCORECARD_EMAIL_LIVE=1` and `NUDGES_LIVE=1` set in Vercel Production (the Resend key `AUTH_RESEND_KEY` and `EMAIL_FROM` are already set). Welcome, daily steps, sale date, win-back, alerts, Monday scorecard and nudges now send; receipts and payment emails send from the webhook. `RESEND_API_KEY` is not needed (the code falls back to `AUTH_RESEND_KEY`).
+- **Secrets:** `CRON_SECRET` and `TOKEN_ENCRYPTION_KEY` already exist in Production and Preview (not regenerated, so saved Meta/Shopify/Google tokens stay readable).
+- **Stripe code ready for USD:** new prices are recognised by ID or by their `helix_plan` tag / lookup key, so the switch cannot lock out current members. Setup script `scripts/stripe-setup.mjs`.
+- **Lessons:** every sentence across all 30 modules is now 20 words or under (the only longer lines are the 12 "Related:" lines, which are lists of links, not sentences). Start of today: average 13.6 words, 290 over 25, 722 over 20. Now: average 11.5, 0 over 20.
+- **Planning tools, automation, billing and emails:** see the dated sections below.
+- Community join button for paid members: still not seen with a paid account; it shows once you buy Starter (step 1).
+- Scheduled Google Sheets refresh: still a one-off import (re-run by hand); low priority, no Sid action needed.
 
 ## At a glance
 
@@ -33,7 +59,7 @@ _Last updated: 15 Oct 2026, 2:45 PM (Sydney)._
 - Private Facebook group **E-commerce Helix Members**: https://www.facebook.com/groups/1313305624157403/ . Page is admin, membership questions set, cover added, 6 starter posts with the Welcome post pinned. `FACEBOOK_GROUP_URL` set in Vercel (Production and Preview). Assets in `docs/social/fb-group` (cover, posts.md, images).
 - Social v3 (`docs/social/v3`, 50 new posts, 17 animated): in progress. **Needs Sid's OK before anything is scheduled.**
 
-**Open items**
+**Open items (superseded by "Needs Sid" at the top)**
 - TikTok developer app: being set up now. Then set `TIKTOK_APP_ID` and `TIKTOK_APP_SECRET` (redirect `https://ecommercehelix.com/api/tiktok/callback`).
 - TikTok daily spend sync (token storage needs a small additive table) once the app is approved.
 - Scheduled Google Sheets refresh (today it is a one-off import, re-run by hand).

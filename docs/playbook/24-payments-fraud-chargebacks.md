@@ -24,7 +24,7 @@
 >
 > - **Chargeback:** When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale.
 > - **Card testing:** When fraudsters use your checkout to try many stolen card numbers with small orders.
-> - **Payout:** The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts.
+> - **Payout:** The money your payment provider sends to your bank. It takes out its fees, refunds and any held amounts first.
 > - **Payment reserve:** Part of your sales that a payment provider holds back for a while. It covers refunds or chargebacks.
 > - **3D Secure:** An extra check where the shopper's bank asks them to confirm a card payment. It often happens in their banking app.
 >
@@ -56,7 +56,7 @@
 
 <!-- do:numbers -->
 
-**Step 5.** Keep the methods customers use, and drop any method under about 2% of orders that costs much more than cards.
+**Step 5.** Keep the ways to pay that customers use. Drop any under about 2% of orders that costs much more than cards.
 
 **Expected result:** Your payment list is lean.
 
@@ -71,7 +71,7 @@
 
 **Why this matters:** A payment provider can hold part of your money if it sees risk. For example: a new account, a sudden jump in sales, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
 
-**Step 1.** Read each provider's rules on holds and reserves (money held back for a while in case of refunds) once.
+**Step 1.** Read each provider's rules on holds and reserves once. A reserve is money held back for a while in case of refunds.
 
 **Expected result:** You know what triggers a hold.
 
@@ -99,12 +99,12 @@
 
 **Expected result:** The hold is resolved as fast as possible.
 
-**Watch out:** Keep business details, bank account and ID current in every provider; out-of-date details are a common cause of freezes.
+**Watch out:** Keep business details, bank account and ID up to date with every provider. Old details often cause freezes.
 
 ## Lesson 24.3: Chargebacks: how they work and how to answer
 <!-- stage:grow -->
 
-**Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away, and you have a short window to prove the sale was fine.
+**Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away. You have a short time to prove the sale was fine.
 
 **Step 1.** Open the chargeback in Shopify and note the deadline to reply. It is usually 7 to 21 days on Shopify Payments (see [Shopify: responding to chargebacks](https://help.shopify.com/en/manual/payments/chargebacks/chargeback-process)).
 
@@ -118,11 +118,11 @@
 
 **Expected result:** You have proof of delivery.
 
-**Step 4.** For "not as described", gather your product page at the time, photos, your returns policy and messages offering a fix.
+**Step 4.** For "not as described", gather your product page at the time and photos. Add your returns policy and messages offering a fix.
 
 **Expected result:** You can show the product matched the listing.
 
-**Step 5.** For "fraudulent", gather proof the real cardholder ordered: matching billing and shipping address, past orders and opened tracking emails.
+**Step 5.** For "fraudulent", prove the real cardholder ordered. Show matching billing and shipping address, past orders and opened tracking emails.
 
 **Expected result:** You have the strongest proof available. These are the hardest to win.
 
@@ -145,7 +145,7 @@
 
 **Why this matters:** Card testing is when crooks use your checkout to try stolen card numbers. They usually place many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
 
-**Step 1.** Learn the signs. Look for bursts of small orders, the same cheap item, odd names or emails, many failed payments, or different addresses on one card.
+**Step 1.** Learn the signs. Look for bursts of small orders, the same cheap item, or odd names or emails. Also many failed payments, or different addresses on one card.
 
 **Expected result:** You can spot card testing.
 
@@ -153,7 +153,7 @@
 
 **Expected result:** You know what Shopify already blocks.
 
-**Step 3.** Read the fraud risk level on every order before shipping, and hold high-risk orders while you contact the customer.
+**Step 3.** Read the fraud risk level on every order before shipping. Hold high-risk orders while you contact the customer.
 
 **Expected result:** No high-risk order ships unchecked.
 
@@ -161,7 +161,7 @@
 
 **Expected result:** You pay a refund instead of a chargeback.
 
-**Step 5.** Turn on 3D Secure (an extra bank check at payment) where your provider allows, at least for high-risk orders.
+**Step 5.** Turn on 3D Secure where your provider allows, at least for high-risk orders. It is an extra bank check at payment.
 
 **Expected result:** Risky payments get an extra check.
 
@@ -180,7 +180,7 @@
 
 **Expected result:** Your team can handle any refund the way you would.
 
-**Step 2.** For small problems, offer a fix first: a partial refund or store credit if the customer keeps the item.
+**Step 2.** For small problems, offer a fix first. Give a part refund or store credit if the customer keeps the item.
 
 **Expected result:** Fewer full refunds.
 

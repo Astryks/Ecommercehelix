@@ -1,6 +1,6 @@
 # Module 20: Ad performance analysis, audiences and campaign setup
 
-**Outcome:** you can set up audiences and campaigns the right way on Meta, Google and TikTok. You can read your results, find the real cause of a problem (the ad, the page, the offer or the checkout), and report it so it leads to a clear choice.
+**Outcome:** you can set up audiences and campaigns the right way on Meta, Google and TikTok. You can read your results and find the real cause of a problem. It may be the ad, the page, the offer or the checkout. Then you report it so it leads to a clear choice.
 
 **Related:** [Module 6 Defining campaigns](06-defining-campaigns.md), [Module 7 Meta ads](07-meta-ads.md), [Module 8 Google ads](08-google-ads.md), [Module 2 Diagnose and fix](02-diagnose-and-fix.md), [SOP 05](../sops/05-meta-structure-and-scaling.md), [SOP 06](../sops/06-meta-daily-optimisation.md), [SOP 09](../sops/09-google-shopping-pmax-search.md)
 
@@ -22,7 +22,7 @@
 >
 > **Words to know:**
 >
-> - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
+> - **Pixel:** A small piece of code on your store. It tells Meta when someone views, adds to cart or buys.
 > - **UTM:** Tags added to the end of a link. They tell your reports which ad or email a visitor came from.
 > - **Attribution:** Deciding which ad or channel gets credit for a sale.
 > - **Funnel:** The steps from seeing an ad to buying: visit, add to cart, checkout, order.
@@ -51,7 +51,7 @@
 
 **Expected result:** The test purchase shows the right amount and currency.
 
-**Step 4.** Check deduplication is on (the same sale is not counted twice from browser and server) in Events Manager's event details.
+**Step 4.** In Events Manager's event details, check deduplication is on. It stops one sale being counted twice, from browser and server.
 
 **Expected result:** Events Manager shows deduplicated purchase events.
 
@@ -115,11 +115,11 @@
 
 **Expected result:** Every custom audience shows "Ready".
 
-**Step 3.** On Meta, build lookalikes of buyers or best customers at 1%, 3 to 5% and 10% for later tests.
+**Step 3.** On Meta, build lookalikes of buyers or best customers. Make them at 1%, 3 to 5% and 10% for later tests.
 
 **Expected result:** Three lookalike sizes are ready.
 
-**Step 4.** Set cold targeting to broad: your country, age 18 to 65+, all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Cap spend on past customers in automatic Sales campaigns at 10 to 20%.
+**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Cap spend on past customers in automatic Sales campaigns at 10 to 20%.
 
 **Expected result:** Cold campaigns reach new people on purpose.
 
@@ -157,7 +157,7 @@
 ## Lesson 20.3: Setting up a Meta sales campaign step by step
 <!-- stage:attract -->
 
-**Why this matters:** A Meta sales campaign set up the same careful way every time gives each ad a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account. You check it and switch it on. New to Ads Manager? Do Lesson 7.14 first, and Lesson 7.13 for your very first ad.
+**Why this matters:** Set up each Meta sales campaign the same careful way. Then every ad gets a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account. You check it and switch it on. New to Ads Manager? Do Lesson 7.14 first, and Lesson 7.13 for your very first ad.
 
 **Step 1.** Write the campaign brief first (Lesson 6.16). Include target cost per purchase, who it is for, daily budget and when you will stop it.
 
@@ -177,7 +177,7 @@
 
 **Expected result:** The name shows the number, type, audience and test.
 
-**Step 4.** In the budget box, set a daily budget of about 2 to 3 times your target cost per purchase. It sits on the campaign for Advantage+ and on the ad set for manual tests.
+**Step 4.** In the budget box, set a daily budget. Make it about 2 to 3 times your target cost per purchase. It sits on the campaign for Advantage+ and on the ad set for manual tests.
 
 **Expected result:** The budget matches your brief.
 
@@ -242,7 +242,7 @@
 
 **Words you will see:** **Merchant Center** is where Google keeps your product list (the **feed**). A **keyword** is a search you want to show up for. **Match type** controls how closely a search must match: **exact** (that search or very close) and **phrase** (searches containing it). **ROAS** is sales divided by ad spend.
 
-**Step 1.** Do Lesson 8.1 first, so the Shopify **Google & YouTube** app is connected and **Purchase** is your primary conversion.
+**Step 1.** Do Lesson 8.1 first. The Shopify **Google & YouTube** app must be connected, with **Purchase** as your main conversion.
 
 **Expected result:** In Google Ads, **Goals > Conversions > Summary** shows Purchase as Primary and "Recording conversions".
 
@@ -254,7 +254,7 @@
 
 **Expected result:** A new Search campaign is open on its settings page.
 
-**Step 4.** Under **Bidding**, choose **Target impression share** and set **Anywhere on results page** to 90%. Set **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1, and a daily budget of $5 to $10. Untick **Search partners** and **Display Network**.
+**Step 4.** Under **Bidding**, choose **Target impression share** and set **Anywhere on results page** to 90%. Set **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1. Set a daily budget of $5 to $10. Untick **Search partners** and **Display Network**.
 
 **Expected result:** The brand campaign has a $5 to $10 daily budget and Target impression share bidding. Cost per click is capped, and it runs on Search only.
 
@@ -262,7 +262,7 @@
 
 **Expected result:** The ad group has 2 to 6 brand keywords.
 
-**Step 6.** Write one responsive search ad with up to 15 headlines and 4 descriptions about your store, best sellers and offer. Then add 4 sitelinks: Best sellers, New in, Shipping, Reviews. Click **Publish campaign**.
+**Step 6.** Write one responsive search ad. Use up to 15 headlines and 4 descriptions about your store, best sellers and offer. Then add 4 sitelinks: Best sellers, New in, Shipping, Reviews. Click **Publish campaign**.
 
 **Expected result:** The brand campaign is live and "Eligible". Searches for your name show your ad.
 
@@ -337,7 +337,7 @@
 
 **Expected result:** Ads look like TikTok posts and keep their social proof.
 
-**Step 4.** Give it a week. Then judge it on total MER on the Dashboard (total ad spend as a share of total sales), as well as TikTok's own numbers.
+**Step 4.** Give it a week. Then judge it on total MER on the Dashboard, as well as TikTok's own numbers. MER is total ad spend as a share of total sales.
 
 **Expected result:** You judge TikTok on its whole-store effect.
 
@@ -346,7 +346,7 @@
 ## Lesson 20.6: The metric tree
 <!-- stage:attract -->
 
-**Why this matters:** Sales from ads come from a chain of steps, from showing the ad to the size of the order. Improve one link and everything below it moves, so finding the weak link is the fastest win.
+**Why this matters:** Sales from ads come from a chain of steps. It runs from showing the ad to the size of the order. Improve one link and everything below it moves, so finding the weak link is the fastest win.
 
 **Step 1.** Read the metric tree below from top to bottom and write your current number next to each step.
 
@@ -417,7 +417,7 @@ Spend
 
 **Expected result:** You know your best and worst placements.
 
-**Step 2.** Break down by age and gender, and change the ads before you narrow targeting if some groups never buy.
+**Step 2.** Break down by age and gender. If some groups never buy, change the ads before you narrow targeting.
 
 **Expected result:** You know who buys and who does not.
 
@@ -448,7 +448,7 @@ Spend
 
 **Expected result:** You know whether growth is real.
 
-**Step 4.** Run a holdout test: pause a channel or campaign in one region or for one week and watch total sales.
+**Step 4.** Run a holdout test. Pause a channel or campaign in one region or for one week, and watch total sales.
 
 **Expected result:** If sales do not drop, those ads were not adding sales.
 
@@ -459,7 +459,7 @@ Spend
 ## Lesson 20.10: Your analysis rhythm
 <!-- stage:grow -->
 
-**Why this matters:** A fixed rhythm of daily, weekly, monthly and quarterly checks means nothing is missed and nothing is over-checked.
+**Why this matters:** Keep a fixed rhythm of daily, weekly, monthly and quarterly checks. Then nothing is missed or checked too often.
 
 **Step 1.** Put the daily, weekly, monthly and quarterly checks from the table below into your calendar.
 
@@ -536,6 +536,6 @@ Spend
 2. Surprise shipping cost, checkout steps and payment options, and forced account sign-up.
 3. Retargeting or double-counting is taking credit while fewer new customers arrive. Move budget to cold, check the share of new customers, and run a holdout test.
 4. It behaves like Shopping (clearer data), and it stops Performance Max claiming cheap brand searches as its own wins.
-5. Any four of: visitors (30 and 180 days), product viewers, add to cart, started checkout, buyers, engagers, video viewers, email list.
+5. Any four of: visitors (30 and 180 days), product viewers, add to cart and started checkout. Or buyers, engagers, video viewers and email list.
 
 </details>

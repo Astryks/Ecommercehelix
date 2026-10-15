@@ -41,7 +41,7 @@
 
 <!-- do:calendar -->
 
-**Step 2.** Add gifting events and cultural moments (Mother's Day, Valentine's Day) with a curated selection rather than a store-wide discount.
+**Step 2.** Add gift days and cultural moments (Mother's Day, Valentine's Day). Offer a picked selection, not a store-wide discount.
 
 **Expected result:** Each event has a product selection planned.
 
@@ -103,13 +103,13 @@
 
 **Why this matters:** A big sale is a project with eight parts, from the target to the shipping cut-offs. Planning each part in order is what makes a sale profitable and repeatable.
 
-**Step 1.** Set the target: last year's sales for this event times your growth rate, checked against list size, budget and stock.
+**Step 1.** Set the target: last year's sales for this event times your growth rate. Check it against list size, budget and stock.
 
 **Expected result:** You have a sales target you can resource.
 
 <!-- do:goals -->
 
-**Step 2.** Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale and a VIP extra. Check your margin at every level.
+**Step 2.** Build the offer: a main offer and free gift levels (spend $100, get a gift). Add something new mid-sale and a VIP extra. Check your margin at every level.
 
 **Expected result:** Every offer level still makes money.
 
@@ -121,11 +121,11 @@
 
 **Expected result:** Every sale day has a planned budget.
 
-**Step 5.** List the ads needed for each phase and audience (cold, warm, hot), and plan emails and texts (Lesson 10.13).
+**Step 5.** List the ads needed for each phase and audience (cold, warm, hot). Plan emails and texts too (Lesson 10.13).
 
 **Expected result:** Creative and messages are planned for every phase.
 
-**Step 6.** Prepare the site: sale landing pages and banners, a code freeze 2 weeks before, and every discount code tested.
+**Step 6.** Get the site ready: sale pages and banners, and no site changes for 2 weeks before. Test every discount code.
 
 **Expected result:** The site is ready and stable before launch.
 
@@ -157,7 +157,7 @@
 ## Lesson 13.6: Running the sale
 <!-- stage:convert -->
 
-**Why this matters:** Running the sale is a daily routine: the right campaigns, spending limits, a daily check and a strong finish. Judge the whole event, not single days.
+**Why this matters:** Running the sale is a daily routine. You need the right campaigns, spending limits, a daily check and a strong finish. Judge the whole event, not single days.
 
 **Step 1.** Set up sale campaigns. Copy your best cold campaign. Add a cold campaign with combined audiences and people left out, and a mixed campaign that leaves nobody out. Then add warm campaigns, and hot campaigns for add to cart and checkout.
 
@@ -237,9 +237,9 @@
 ## Lesson 13.10: Key dates through the year
 <!-- stage:grow -->
 
-**Why this matters:** Plan the whole busy season, not one weekend. For many stores Black Friday and Cyber Monday is the biggest window of the year, and it is won months before November. Helix adds the staged plan to your calendar from 1 August.
+**Why this matters:** Plan the whole busy season, not one weekend. For many stores, Black Friday and Cyber Monday is the biggest time of the year. It is won months before November. Helix adds the staged plan to your calendar from 1 August.
 
-**Step 1.** Year-round, test ad angles and offers and grow your list, so you know what works before the busy season.
+**Step 1.** All year, test ad angles and offers and grow your list. Then you know what works before the busy season.
 
 **Expected result:** You have proven ads and a bigger list by August.
 
@@ -263,7 +263,7 @@
 
 **Expected result:** You have a plan for late December and January.
 
-**Step 5.** Add end of financial year sales where they matter (June in Australia) and Valentine's, Mother's and Father's Day gift selections.
+**Step 5.** Add end of financial year sales where they matter (June in Australia). Add gift picks for Valentine's, Mother's and Father's Day.
 
 **Expected result:** Your year has every key date planned.
 
@@ -311,7 +311,7 @@
 
 **Expected result:** A list of products and discounts where every line still makes money after marketing.
 
-**Step 3.** Plan it in Helix Calendar. Send one teaser email 3 days before, a launch email and SMS, a reminder on the middle day and a last-chance email. Add ads to past buyers and site visitors.
+**Step 3.** Plan it in Helix Calendar. Send one teaser email 3 days before, then a launch email and SMS. Send a reminder on the middle day and a last-chance email. Add ads to past buyers and site visitors.
 
 **Expected result:** The sale and its messages are on your calendar with dates.
 

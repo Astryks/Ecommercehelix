@@ -16,12 +16,12 @@ export const CURRENCY_LABEL = "US$";
 export const CANCEL_LINE = "Cancel anytime, in one click. No lock-in.";
 
 /** The bits of a Stripe subscription Helix stores. Period end lives on the subscription item in current Stripe API versions. */
-export type SubLike = { id: string; status: string; cancel_at_period_end?: boolean | null; current_period_end?: number | null; items: { data: { current_period_end?: number | null; price?: { id: string } | null }[] } };
-export function subFields(sub: SubLike, planFor: (priceId?: string | null) => PlanId) {
+export type SubLike = { id: string; status: string; cancel_at_period_end?: boolean | null; current_period_end?: number | null; items: { data: { current_period_end?: number | null; price?: { id: string; lookup_key?: string | null; metadata?: Record<string, string> | null } | null }[] } };
+export function subFields(sub: SubLike, planFor: (priceId?: string | null, price?: { lookup_key?: string | null; metadata?: Record<string, string> | null } | null) => PlanId) {
   const item = sub.items.data[0];
   const priceId = item?.price?.id ?? null;
   const end = item?.current_period_end ?? sub.current_period_end ?? null;
-  return { plan: planForStatus(sub.status, planFor(priceId)), status: sub.status, cancelAtPeriodEnd: Boolean(sub.cancel_at_period_end), currentPeriodEnd: end ? new Date(end * 1000) : null, priceId };
+  return { plan: planForStatus(sub.status, planFor(priceId, item?.price)), status: sub.status, cancelAtPeriodEnd: Boolean(sub.cancel_at_period_end), currentPeriodEnd: end ? new Date(end * 1000) : null, priceId };
 }
 
 /** Ignore an event older than the newest one already applied (Stripe can deliver out of order). */

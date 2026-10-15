@@ -30,9 +30,9 @@
 ## Lesson 18.1: The stack by need and stage
 <!-- stage:grow -->
 
-**Why this matters:** The right tools depend on your stage. You may be just starting, have steady weekly sales (stage 1), or run several channels with real ad spend (stage 2). Buying tools too early slows your site and drains cash.
+**Why this matters:** The right tools depend on your stage. You may be just starting or have steady weekly sales (stage 1). Or you run several channels with real ad spend (stage 2). Buying tools too early slows your site and drains cash.
 
-**Step 1.** Decide your stage: day one (just starting), stage 1 (steady sales every week) or stage 2 (several channels and real ad spend).
+**Step 1.** Decide your stage. Day one is just starting. Stage 1 is steady sales every week. Stage 2 is several channels and real ad spend.
 
 **Expected result:** You know which column of the table below applies to you.
 

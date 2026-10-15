@@ -1,6 +1,6 @@
 # Module 29: Customers, partners and the weekly rhythm
 
-**Outcome:** you write in your customers' own words and get new buyers through referrals, partner brands and other people's audiences. You send a weekly email people look forward to. You run the business on a few early-warning numbers, a short weekly meeting, written playbooks, clear owners and a 90-day plan.
+**Outcome:** you write in your customers' own words and get new buyers through referrals, partner brands and other people's audiences. You send a weekly email people look forward to. You run the business on a few early-warning numbers and a short weekly meeting. You have written playbooks, clear owners and a 90-day plan.
 
 **Related:** [Module 4 Brand and content](04-brand-and-content.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md), [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 28 Team, creators and money](28-team-creators-money.md)
 
@@ -22,9 +22,9 @@
 >
 > **Words to know:**
 >
-> - **Referral:** A new customer sent to you by an existing one, usually in return for a reward for both.
+> - **Referral:** A new customer sent to you by an existing one. Usually both get a reward.
 > - **Leading number:** A number that moves before sales do, like add-to-cart rate or email sign-ups. It lets you act early.
-> - **Playbook:** A short written how-to for a task, so anyone on the team can do it the same way.
+> - **Playbook:** A short written how-to for a task. Anyone on the team can then do it the same way.
 > - **Owner (of a number):** The one person who watches a number and acts when it slips.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -45,7 +45,7 @@
 
 **Expected result:** Each heading has at least five phrases.
 
-**Step 3.** Send your last 50 customers a one-question email: "What nearly stopped you buying?" Add the answers to the document.
+**Step 3.** Send your last 50 customers a one-question email. Ask: "What nearly stopped you buying?" Add the answers to the list.
 
 **Expected result:** You have at least 10 new answers in their words.
 
@@ -112,7 +112,7 @@
 
 **Expected result:** A reward that both sides value and that still makes a profit.
 
-**Step 2.** Install a referral app from the Shopify App Store (search "referral") or use a unique discount code per customer.
+**Step 2.** Install a referral app from the Shopify App Store (search "referral"). Or give each customer their own discount code.
 
 **Expected result:** Each customer can share a personal link or code.
 
@@ -129,7 +129,7 @@
 ## Lesson 29.5: Team up with brands that share your customer
 <!-- stage:attract -->
 
-**Why this matters:** Another brand that sells something different to the same people can introduce you to thousands of warm buyers. It costs you only a good offer.
+**Why this matters:** Another brand that sells something different to the same people can help a lot. It can introduce you to thousands of warm buyers. It costs you only a good offer.
 
 **Step 1.** List 10 brands your customer also buys from that do not compete with you. For a baby clothes store: nappy bags, baby carriers, sleep coaches.
 
@@ -143,7 +143,7 @@
 
 **Expected result:** Ten partnership emails sent this week.
 
-**Step 4.** Run the first partnership that says yes, use a unique code to track it, and repeat with whoever performs best.
+**Step 4.** Run the first partnership that says yes, with its own code to track it. Repeat with whoever does best.
 
 **Expected result:** One live partnership with tracked orders.
 
@@ -217,7 +217,7 @@
 
 **Why this matters:** Sales and profit tell you what already happened. A few leading numbers warn you a week early, while you can still act.
 
-**Step 1.** Pick five to seven numbers. Take at least two results (net profit, sales) and three early-warning ones (sessions, add-to-cart rate, conversion rate, cost per order, email sign-ups).
+**Step 1.** Pick five to seven numbers. Take at least two results (net profit, sales). Add three early-warning ones (sessions, add-to-cart rate, conversion rate, cost per order, email sign-ups).
 
 **Expected result:** A short list of five to seven numbers.
 
@@ -227,7 +227,7 @@
 
 <!-- do:numbers -->
 
-**Step 3.** Set a target for each based on that history, aiming a little higher than your average, not a guess.
+**Step 3.** Set a target for each from that history. Aim a little higher than your average, not a guess.
 
 **Expected result:** Each number has a realistic target.
 
@@ -295,7 +295,7 @@
 ## Lesson 29.13: Your 90-day plan on one page
 <!-- stage:grow -->
 
-**Why this matters:** A year is too far ahead to plan in detail, and a week is too short to change much. Ninety days is long enough for real progress and short enough to stay focused.
+**Why this matters:** A year is too far ahead to plan in detail. A week is too short to change much. Ninety days is long enough for real progress and short enough to stay focused.
 
 **Step 1.** Write one goal for the next 90 days with a number and a date. For example: "$8,000 net profit a month by 31 March".
 
@@ -335,7 +335,7 @@
 ## Lesson 29.15: Write a one-page direction for the business
 <!-- stage:grow -->
 
-**Why this matters:** When you know who you serve, what you stand for and what you will not do, daily choices get faster. New team members also make choices you agree with.
+**Why this matters:** Know who you serve, what you stand for and what you will not do. Then daily choices get faster. New team members also make choices you agree with.
 
 **Step 1.** Write one sentence on who you serve and the change you make for them.
 

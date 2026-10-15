@@ -1,6 +1,6 @@
 # Module 30: Seasonal sales, step by step
 
-**Outcome:** for any big date in the year, you know what to do at each point, one small step at a time. That means 10, 6, 3 and 2 weeks out, while the sale runs and the week after.
+**Outcome:** for any big date in the year, you know what to do at each point. You go one small step at a time. That means 10, 6, 3 and 2 weeks out, while the sale runs and the week after.
 
 **Related:** [Module 13 Promotions and sales](13-promotions-and-sales.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md), [Module 14 Stock and cash](14-inventory-cash-planning.md)
 
@@ -45,7 +45,7 @@
 
 **Expected result:** One offer written down, such as "15% off everything" or "free tote over $60".
 
-**Step 3.** Look at how many of your best seller you sell on a normal day. Plan for about three times that on each sale day, and order now so it lands at least two weeks early.
+**Step 3.** Look at how many of your best seller you sell on a normal day. Plan for about three times that on each sale day. Order now so it arrives at least two weeks early.
 
 **Expected result:** Your stock order is placed, with an arrival date before the sale.
 
@@ -73,7 +73,7 @@
 ## Lesson 30.3: Set up a discount code in Shopify
 <!-- stage:convert -->
 
-**Why this matters:** A code that is ready, tested and set to start and stop by itself means no late-night rush on the big day.
+**Why this matters:** Get a code ready, tested and set to start and stop by itself. Then there is no late-night rush on the big day.
 
 **Step 1.** In Shopify admin, open **Discounts** in the left menu. Press **Create discount**.
 
@@ -104,7 +104,7 @@
 ## Lesson 30.4: Dress your store, warm up and write your emails
 <!-- stage:convert -->
 
-**Why this matters:** Shoppers decide fast. When the store looks ready for the day and your emails are written, every visit has a clear path to buy.
+**Why this matters:** Shoppers decide fast. Get the store ready for the day and write your emails. Then every visit has a clear path to buy.
 
 **Step 1.** Add a homepage banner with the offer and the end date.
 
@@ -145,12 +145,12 @@
 
 **Expected result:** Nothing has sold out by surprise and no message waits more than a day.
 
-**Watch out:** If an ad is below break-even two days in a row, lower its budget a little in your ad account. Do not make big changes in a rush.
+**Watch out:** Is an ad below break-even two days in a row? Lower its budget a little in your ad account. Do not make big changes in a rush.
 
 ## Lesson 30.6: Review the results
 <!-- stage:grow -->
 
-**Why this matters:** The best plan for next year is written the week after this one, while you still remember what happened.
+**Why this matters:** Write next year's plan the week after this one. You will still remember what happened.
 
 **Step 1.** In Numbers, add up the event days: sales, orders, ad spend and profit.
 
