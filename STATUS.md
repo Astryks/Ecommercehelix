@@ -10,8 +10,16 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 4. **Meta "Save choice" check** on Settings > Connections: sign in as yourself, pick your ad account, Page and pixel, press Save choice and confirm it sticks (the fix shipped; it needs your real Meta account to confirm). Then refund your A$29 and set your account to Starter free.
 5. **Google Ads check-in:** once Google approves the developer token (https://console.cloud.google.com/google/ads-apis/overview?project=astryks), send it to me or set `GOOGLE_ADS_DEVELOPER_TOKEN` in Vercel Production, then connect your Google Ads account on /dashboard/connect and check the first sync.
 6. **GitHub Support purge for PR #12:** paste the ready text in `docs/github-support-pr12.md` into https://support.github.com/contact ("Removing sensitive data").
-7. **Lesson videos** (when recorded): add the URLs to `VIDEOS` in `src/app/dashboard/learn/page.tsx` (or send them and I add them).
+7. **Lesson videos** (when recorded): send the URLs and I add them (free YouTube picks per path step live in `src/lib/learn-path.json`).
 8. **Social v3:** say OK before the 50 new posts are scheduled.
+
+## Learn is now one guided path (15 Oct 2026, evening)
+
+- /dashboard/learn: one "Your next lesson" card, then a numbered 7-step path with progress per step; "See entire course" timeline now runs in path order. Attract / Convert / Grow are small tags only.
+- Steps (lessons): 1 Start here (13), 2 Know your customer and your offer (16), 3 Get your store ready to sell (43), 4 Plan your ads (56), 5 Set up your first ad (24), 6 Read your results and improve (26), 7 Grow (109). Total 287, same as before; a test checks every lesson is in the path exactly once.
+- Each step has a page at /dashboard/learn/path/<id>. "Set up your first ad" opens with "Before you start" and a numbered "Do it in this order" list.
+- 1 to 2 free YouTube videos per step, checked with YouTube oEmbed on 15 Oct (list in `src/lib/learn-path.json`).
+- Progress: lesson refs, files and links did not change, so every saved completion and started step still counts. No schema change, no data migration needed.
 
 ## Done today (15 Oct 2026)
 
