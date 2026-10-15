@@ -2,6 +2,8 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
+import { completeTask } from "@/lib/repo";
+import { COSTS_TASK } from "@/lib/seed/curriculum";
 import { getProfitSetup, getSettings, logEvent, saveProfitSetup, saveSettings } from "@/lib/repo";
 import type { ProfitInputs } from "@/lib/profit-setup";
 import { readAmount } from "@/lib/amount";
@@ -16,6 +18,8 @@ export async function saveProfit(form: FormData) {
   })) as ProfitInputs;
   const first = !(await getProfitSetup(u.id));
   await saveProfitSetup(u.id, p);
+  // Saving your costs finishes the Today task "Tell Helix your costs".
+  await completeTask(u.id, COSTS_TASK).catch(() => null);
   if (first) await logEvent(u.id, "profit_setup");
   if (form.get("useFixed")) {
     const s = await getSettings(u.id);

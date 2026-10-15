@@ -1,6 +1,8 @@
 "use server";
 import { revalidatePath } from "next/cache";
 import { requireUser } from "@/lib/session";
+import { completeTask } from "@/lib/repo";
+import { COSTS_TASK } from "@/lib/seed/curriculum";
 import { getCardState, getProfitSetup, logEvent, saveCardState, saveProductName, saveProfitSetup } from "@/lib/repo";
 import { getDeck } from "@/lib/cards";
 import { isoDay } from "@/lib/dates";
@@ -39,6 +41,8 @@ export async function saveSetupAnswers(values: Record<string, string>) {
   }
   const clean = Object.fromEntries((Object.keys(BLANK) as (keyof ProfitInputs)[]).map((k) => [k, p[k]])) as ProfitInputs;
   await saveProfitSetup(u.id, clean);
+  // Saving your costs finishes the Today task "Tell Helix your costs".
+  await completeTask(u.id, COSTS_TASK).catch(() => null);
   if (name) await saveProductName(u.id, name);
   if (!existing) await logEvent(u.id, "profit_setup");
   revalidatePath("/dashboard", "layout");

@@ -31,6 +31,8 @@ export const DAYS = data.days as CurriculumDay[];
 export const STAGE_TIER: Record<number, PlanId> = { 1: "free", 2: "free", 3: "starter", 4: "starter", 5: "starter", 6: "growth", 7: "growth" };
 
 export const dayTaskId = (d: number) => `day-${d}`;
+/** Day 1, "Tell Helix your costs": done when the profit setup is saved. */
+export const COSTS_TASK = dayTaskId(1);
 
 /** "Just starting" track (generated from scripts/curriculum_starting_source.py). All three stages are free; "Do it for me" still needs the plan shown. */
 export const START_STAGES = starting.stages as Stage[];
