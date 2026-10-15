@@ -60,7 +60,7 @@
 
 **Expected result:** Your payment list is lean.
 
-**Watch out:** Australia: buy now pay later often lifts order value but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before promoting them.
+**Watch out:** Outside the US: buy now pay later often lifts order value but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before promoting them.
 
 **Step 6.** Check each provider's fee page once a year.
 
@@ -184,7 +184,7 @@
 
 **Expected result:** Fewer full refunds.
 
-**Watch out:** Australia: refunds for faulty items are a legal right; goodwill is extra (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: state law and your published policy set the rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** Outside the US: refunds for faulty items are a legal right; goodwill is extra (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: state law and your published policy set the rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 3.** Always refund to the original payment method.
 

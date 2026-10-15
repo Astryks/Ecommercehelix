@@ -210,7 +210,7 @@
    "steps": [
     "Write your one-line promise from Day 5 at the top of a page.",
     "List each product with its price, product cost and cost to send one order.",
-    "Pick one launch country (Australia or the US) and a Shopify plan from the pricing page.",
+    "Pick one launch country (for example, where you live) and a Shopify plan from the pricing page.",
     "Gather your logo, 4 to 8 photos per product, your returns rule and your ABN (AU) or business details (US)."
    ],
    "minutes": 15,
@@ -234,7 +234,7 @@
    "lesson": "A store on its own web address looks more trustworthy than a free myshopify.com address, and emails from your domain are less likely to land in spam.",
    "steps": [
     "Buy a short domain that matches your brand in Shopify, or connect one you own.",
-    "Australia: a .com.au needs an ABN. US: a .com is the normal choice.",
+    "Outside the US: a .com.au needs an ABN. US: a .com is the normal choice.",
     "Make your own domain the main one customers see.",
     "Set up hello@yourbrand (or similar) and send yourself a test email."
    ],
@@ -416,7 +416,7 @@
    "title": "Check your tax settings and turn on payments",
    "lesson": "Getting tax wrong is costly to fix later, and every missing payment option loses buyers. This is general information, not tax advice.",
    "steps": [
-    "Australia: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.",
+    "Outside the US: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.",
     "US: turn on sales tax only for states where you have registered.",
     "Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.",
     "Set your statement name to your brand. Ask a registered tax agent or accountant if unsure."
@@ -443,7 +443,7 @@
    "steps": [
     "Create Refund, Privacy, Terms, Shipping and Contact pages from Shopify's templates.",
     "Rewrite them in plain words with your own delivery ranges and cut-off dates.",
-    "Australia: never write 'no refunds'. Customers always have rights for faulty items.",
+    "Outside the US: never write 'no refunds'. Customers always have rights for faulty items.",
     "Link every policy in the footer."
    ],
    "minutes": 15,

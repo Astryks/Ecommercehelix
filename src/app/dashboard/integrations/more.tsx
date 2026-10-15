@@ -28,7 +28,7 @@ export const MORE_MSG: Record<string, [string, string]> = {
   google_sync: ["err", "The Google Ads sync failed. See the activity log below."],
 };
 
-const when = (iso: string | null) => (iso ? new Date(iso).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" }) + " Sydney" : "never");
+const when = (iso: string | null) => (iso ? new Date(iso).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })  : "never");
 const Soon = () => <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-600">Coming soon</span>;
 const On = () => <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-emerald-800">Connected</span>;
 

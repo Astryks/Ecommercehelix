@@ -64,7 +64,7 @@
   {"say": "Put the Black Friday stages in your Helix calendar.\n\n- August: review last year. Set targets. Test new ads.\n- September: order stock 10 to 12 weeks out. Lock the offer.\n- October: finish ads. Warm up audiences. Build email flows.\n- November: launch. Check numbers daily.\n- December and January: review and plan next year.", "check": "Every stage is in your calendar with dates.", "lost": "Find this month on the list. Do that part."},
   {"say": "Add gift campaigns with delivery cut-off dates (\"order by the 18th for Christmas\").", "check": "Shoppers know the last safe day to order.", "lost": "Add your Christmas order-by date to your site."},
   {"say": "Plan for Boxing Day and the quiet weeks after (sometimes called the fifth quarter). Ad costs drop then, so new customers can be cheaper.", "check": "You have a plan for late December and January.", "lost": "Plan one January campaign."},
-  {"say": "Add end of financial year sales where they matter (June in Australia), and Valentine's, Mother's and Father's Day gift picks.", "check": "Your year has every key date planned.", "lost": "Add Mother's Day to your calendar."}
+  {"say": "Add end of financial year sales where they matter (June in some countries), and Valentine's, Mother's and Father's Day gift picks.", "check": "Your year has every key date planned.", "lost": "Add Mother's Day to your calendar."}
  ]},
 "13.11": {"intro": "Big sales use every channel at once. One missed setting can cost a day of sales. Tick this list a week before.",
  "steps": [

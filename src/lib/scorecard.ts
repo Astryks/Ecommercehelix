@@ -127,7 +127,7 @@ function bfDate(y: number): string {
   return `${y}-11-${String(thu + 1).padStart(2, "0")}`;
 }
 
-/** Seasonal demand for the older example history (Australian retail calendar). */
+/** Seasonal demand for the older example history (retail calendar). */
 function seasonFor(date: string): { demand: number; discount: number; roas: number; refunds: number } {
   const y = Number(date.slice(0, 4));
   const md = date.slice(5);

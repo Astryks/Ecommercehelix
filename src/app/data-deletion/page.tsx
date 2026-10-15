@@ -28,8 +28,8 @@ export default async function DataDeletion({ searchParams }: PageProps<"/data-de
           <li>Or, on Facebook, go to <strong>Settings and privacy</strong>, then <strong>Settings</strong>, then <strong>Business integrations</strong>, find E-commerce Helix and click <strong>Remove</strong>. Meta then tells Helix, and Helix deletes the Meta data it holds for you.</li>
         </ol>
       </Sec>
-      <Sec title="Option 3: email us">
-        <p>Email <Mail /> from the address you sign in with and ask us to delete your account. We will confirm within 30 days. We may ask you to confirm it is you.</p>
+      <Sec title="Option 3: contact us">
+        <p>Contact us through <Mail /> using the address you sign in with and ask us to delete your account. We will confirm within 30 days. We may ask you to confirm it is you.</p>
       </Sec>
       <Sec title="More about your data">
         <p>Our <Link className="text-cyan-700 underline" href="/privacy">privacy policy</Link> explains what we keep, for how long and your other rights.</p>

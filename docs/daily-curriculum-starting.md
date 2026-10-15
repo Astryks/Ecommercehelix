@@ -184,7 +184,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Write your one-line promise from Day 5 at the top of a page.
 2. List each product with its price, product cost and cost to send one order.
-3. Pick one launch country (Australia or the US) and a Shopify plan from the pricing page.
+3. Pick one launch country (for example, where you live) and a Shopify plan from the pricing page.
 4. Gather your logo, 4 to 8 photos per product, your returns rule and your ABN (AU) or business details (US).
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
@@ -198,7 +198,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. Buy a short domain that matches your brand in Shopify, or connect one you own.
-2. Australia: a .com.au needs an ABN. US: a .com is the normal choice.
+2. Outside the US: a .com.au needs an ABN. US: a .com is the normal choice.
 3. Make your own domain the main one customers see.
 4. Set up hello@yourbrand (or similar) and send yourself a test email.
 
@@ -318,7 +318,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Australia: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.
+1. Outside the US: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.
 2. US: turn on sales tax only for states where you have registered.
 3. Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.
 4. Set your statement name to your brand. Ask a registered tax agent or accountant if unsure.
@@ -337,7 +337,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Create Refund, Privacy, Terms, Shipping and Contact pages from Shopify's templates.
 2. Rewrite them in plain words with your own delivery ranges and cut-off dates.
-3. Australia: never write 'no refunds'. Customers always have rights for faulty items.
+3. Outside the US: never write 'no refunds'. Customers always have rights for faulty items.
 4. Link every policy in the footer.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.

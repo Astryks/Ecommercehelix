@@ -71,7 +71,7 @@
 
 **Expected result:** You hear about strange activity within minutes.
 
-**Watch out:** Report cybercrime in Australia at [ReportCyber](https://www.cyber.gov.au/report-and-recover/report) and in the US at the [FBI's IC3](https://www.ic3.gov/).
+**Watch out:** Report cybercrime in some countries at [ReportCyber](https://www.cyber.gov.au/report-and-recover/report) and in the US at the [FBI's IC3](https://www.ic3.gov/).
 
 ## Lesson 25.2: Set up your Meta business the safe way
 <!-- stage:grow -->
@@ -102,7 +102,7 @@
 
 **Expected result:** Both are correct; they cannot be changed later without a new ad account.
 
-**Watch out:** Australia: if you are registered for GST, add your ABN in Meta billing. Then you are not charged GST. Check your card's overseas fee too (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
+**Watch out:** Outside the US: if you are registered for GST, add your ABN in Meta billing. Then you are not charged GST. Check your card's overseas fee too (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
 
 **Step 7.** Connect the ad account to Helix.
 
@@ -254,7 +254,7 @@
 
 **Expected result:** Texts show your business name, not "Unverified".
 
-**Watch out:** Australia: since 1 July 2026, business names on texts must be on the national SMS Sender ID Register. The name must match your business name, trademark or domain (see [ACMA](https://www.acma.gov.au/sending-text-messages-your-business-or-organisation-name)). US: standard numbers need carrier registration (10DLC) and toll-free numbers need verification.
+**Watch out:** Outside the US: since 1 July 2026, business names on texts must be on the national SMS Sender ID Register. The name must match your business name, trademark or domain (see [ACMA](https://www.acma.gov.au/sending-text-messages-your-business-or-organisation-name)). US: standard numbers need carrier registration (10DLC) and toll-free numbers need verification.
 
 **Step 4.** Use the same sender name everywhere.
 

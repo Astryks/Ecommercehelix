@@ -4,7 +4,7 @@ import { canonicalRef, ANCHORS } from "./lesson-alias";
 
 let cache: Map<string, { href: string; title: string }> | null = null;
 
-/** "26.1" -> { href: "/learn/26-...#lesson-261-...", title: "GST in Australia: ..." }. */
+/** "26.1" -> { href: "/learn/26-...#lesson-261-...", title: "GST: ..." }. */
 export function lessonLink(ref: string): { href: string; title: string } | null {
   if (!cache) {
     cache = new Map();

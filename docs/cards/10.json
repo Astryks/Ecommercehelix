@@ -62,7 +62,7 @@
  "steps": [
   {"say": "Add a text step to the welcome flow and the checkout reminder, for people who didn't act on the email.", "check": "Texts only go out where email didn't work.", "lost": "Add one text to the checkout reminder."},
   {"say": "Use texts for sale launches and last chance messages.", "check": "Your sale plan has two texts.", "lost": "Plan one text for your next sale launch."},
-  {"say": "Register your sender name where the law needs it (like in Australia). Respect quiet hours. Keep each text short with one link.", "check": "Texts come from your registered name, at sensible times, with one link.", "lost": "Keep texts short, with one link."}
+  {"say": "Register your sender name where the law needs it (like in some countries). Respect quiet hours. Keep each text short with one link.", "check": "Texts come from your registered name, at sensible times, with one link.", "lost": "Keep texts short, with one link."}
  ]},
 "10.11": {"intro": "WhatsApp works well where your customers already use it, especially for VIPs and pricey products.",
  "steps": [

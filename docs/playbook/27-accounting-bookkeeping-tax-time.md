@@ -1,6 +1,6 @@
 # Module 27: Accounting, bookkeeping and tax time
 
-**Outcome:** you have the right helpers, and your store and your books agree each month. Your stock and product costs are recorded properly. Tax time in June (Australia) or the new year (US) is a checklist, not a panic.
+**Outcome:** you have the right helpers, and your store and your books agree each month. Your stock and product costs are recorded properly. Tax time, whenever your financial year ends, is a checklist, not a panic.
 
 **Related:** [Module 26 Tax, GST, sales tax and duties](26-tax-gst-sales-tax-duties.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md), [Module 24 Payments, fraud and chargebacks](24-payments-fraud-chargebacks.md)
 
@@ -63,7 +63,7 @@
 
 **Expected result:** Your structure still suits the business.
 
-**Watch out:** Australia: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)). If you live overseas and own a US company, get a cross-border expert.
+**Watch out:** Outside the US: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)). If you live overseas and own a US company, get a cross-border expert.
 
 ### Good to know
 
@@ -98,7 +98,7 @@
 
 **Expected result:** The two agree, or you know why (usually missing costs or stock changes).
 
-**Watch out:** Australia: check GST codes, especially on overseas costs with no GST (see [ATO record keeping](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep sales tax in its own liability account, never in sales (see [IRS recordkeeping](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping)).
+**Watch out:** Outside the US: check GST codes, especially on overseas costs with no GST (see [ATO record keeping](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep sales tax in its own liability account, never in sales (see [IRS recordkeeping](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping)).
 
 <!-- do:growth -->
 
@@ -133,7 +133,7 @@
 
 **Expected result:** Periods compare fairly.
 
-**Watch out:** Australia: count stock on or near 30 June. Small businesses whose stock value changes by $5,000 or less may skip the formal step (see [ATO](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock)). US: count on or near 31 December or your year end (see [IRS Publication 538](https://www.irs.gov/publications/p538)).
+**Watch out:** Outside the US: count stock on or near 30 June. Small businesses whose stock value changes by $5,000 or less may skip the formal step (see [ATO](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock)). US: count on or near 31 December or your year end (see [IRS Publication 538](https://www.irs.gov/publications/p538)).
 
 ### Good to know
 
@@ -170,16 +170,16 @@
 
 **Expected result:** The year's records are in one place.
 
-**Watch out:** Keep most records for 5 years in Australia (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). Keep them at least 3 years in the US (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
+**Watch out:** Keep most records for 5 years in some countries (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). Keep them at least 3 years in the US (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
 
 ### Good to know
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 27.5: End of financial year in Australia
+## Lesson 27.5: End of financial year
 <!-- stage:grow -->
 
-**Why this matters:** The Australian financial year ends on 30 June. Helix puts these steps on your calendar from May so nothing is rushed.
+**Why this matters:** Some financial years end on 30 June. Helix puts these steps on your calendar from May so nothing is rushed.
 
 **Step 1.** In early May, book a planning chat with your accountant about expected profit and tax.
 

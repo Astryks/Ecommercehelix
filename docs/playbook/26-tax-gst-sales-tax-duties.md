@@ -22,8 +22,8 @@
 >
 > **Words to know:**
 >
-> - **GST:** Goods and services tax. It is 10% in Australia (15% in New Zealand), added to most sales once you register.
-> - **BAS:** Business activity statement: the form Australian businesses lodge with the ATO to report and pay GST.
+> - **GST:** Goods and services tax. It is a percentage set by each country (often 10% to 15%), added to most sales once you register.
+> - **BAS:** Business activity statement: the form some businesses lodge with their tax office to report and pay GST.
 > - **Nexus:** In the US, a link with a state, like a warehouse there or enough sales into it. It means you must collect that state's sales tax.
 > - **VAT:** Value added tax: the UK and EU version of GST, usually included in the shown price.
 > - **IOSS:** An EU scheme for parcels worth up to 150 euros. The seller charges EU VAT at checkout and pays it in one country.
@@ -38,16 +38,16 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant before you act. Rules change often and depend on your situation. Every lesson in this module links the official source so you can confirm the current rule.
 
-## Lesson 26.1: GST in Australia: register, charge and lodge
+## Lesson 26.1: GST: register, charge and lodge
 <!-- stage:grow -->
 
-**Why this matters:** GST (goods and services tax) is 10% on most Australian sales once you are registered. The money you collect is held for the ATO (Australian Taxation Office), not earned by you, so set it aside.
+**Why this matters:** GST (goods and services tax) is 10% on most local sales once you are registered. The money you collect is held for the ATO (the tax office), not earned by you, so set it aside.
 
 **Step 1.** Check your GST turnover (this month plus the last 11). Register within 21 days of reaching $75,000. Or register as soon as you expect to reach it within 12 months (see [ATO: GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
 
 **Expected result:** You know whether you must register.
 
-**Step 2.** Once registered, show prices to Australians with GST included and issue tax invoices.
+**Step 2.** Once registered, show prices to local customers with GST included and issue tax invoices.
 
 **Expected result:** Checkout prices include GST.
 
@@ -69,7 +69,7 @@
 
 **Expected result:** Helix profit leaves GST out.
 
-**Watch out:** New Zealand: exports are usually GST-free. But small sales (NZ$1,000 or less) to NZ shoppers may pass NZ$60,000 in 12 months. Then you must register for NZ GST at 15% (see [IRD](https://www.ird.govt.nz/gst/gst-for-overseas-businesses/gst-on-low-value-imported-goods/registering-for-gst-on-low-value-imported-goods)). US sellers into Australia must register once sales to Australian consumers pass A$75,000 (see [ATO](https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses)).
+**Watch out:** New Zealand: exports are usually GST-free. But small sales (NZ$1,000 or less) to NZ shoppers may pass NZ$60,000 in 12 months. Then you must register for NZ GST at 15% (see [IRD](https://www.ird.govt.nz/gst/gst-for-overseas-businesses/gst-on-low-value-imported-goods/registering-for-gst-on-low-value-imported-goods)). Overseas sellers into GST countries often must register once local sales pass a threshold (see [ATO](https://www.ato.gov.au/businesses-and-organisations/international-tax-for-business/gst-for-non-resident-businesses)).
 
 <!-- do:settings -->
 
@@ -94,7 +94,7 @@
 
 **Expected result:** Your supplier records are correct.
 
-**Step 4.** For stock imports over A$1,000, pay GST and any duty at the border. Do it through your broker or shipping agent. Keep the paperwork, and claim that GST back on your BAS (the Australian tax form for GST).
+**Step 4.** For stock imports over A$1,000, pay GST and any duty at the border. Do it through your broker or shipping agent. Keep the paperwork, and claim that GST back on your BAS (the tax form for GST).
 
 **Expected result:** Import GST appears as a credit on your BAS.
 
@@ -172,7 +172,7 @@
 
 **Expected result:** You know which countries make money.
 
-**Watch out:** Goods made in Australia may pay less UK duty under the Australia-UK trade deal. Goods made in the US may pay less Canada duty under the US-Mexico-Canada deal, if the origin rules are met.
+**Watch out:** Goods made in some countries may pay less UK duty under a trade deal. Goods made in the US may pay less Canada duty under the US-Mexico-Canada deal, if the origin rules are met.
 
 ### Good to know
 
@@ -213,7 +213,7 @@
 
 **Expected result:** Paperwork is filed.
 
-**Watch out:** US: since 29 August 2025, the $800 de minimis rule is gone, so small parcels pay duty. Compare duty per parcel with shipping in bulk to a US warehouse (see [CBP](https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs)). Australia: imports over A$1,000 need a customs form. Trade deals can cut duty with a certificate of origin (see [ABF](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing)).
+**Watch out:** US: since 29 August 2025, the $800 de minimis rule is gone, so small parcels pay duty. Compare duty per parcel with shipping in bulk to a US warehouse (see [CBP](https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs)). Outside the US: imports over A$1,000 need a customs form. Trade deals can cut duty with a certificate of origin (see [ABF](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing)).
 
 ### Good to know
 

@@ -3,14 +3,11 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const LEGAL_UPDATED = "15 October 2026";
-/** Contact inbox for privacy, terms and deletion requests. */
-export { SUPPORT_EMAIL as LEGAL_EMAIL } from "@/lib/support";
-import { SUPPORT_EMAIL as LEGAL_EMAIL } from "@/lib/support";
 
 export function Mail() {
-  return <a className="break-all text-cyan-700 underline" href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>;
+  return <a className="text-cyan-700 underline" href="/contact">our contact page</a>;
 }
-export const OPERATOR = "Astryks";
+export const OPERATOR = "E-commerce Helix";
 
 export function LegalPage({ title, intro, children }: { title: string; intro: string; children: ReactNode }) {
   return (
@@ -21,7 +18,7 @@ export function LegalPage({ title, intro, children }: { title: string; intro: st
         <p className="mt-2 text-sm text-slate-500">Last updated {LEGAL_UPDATED}</p>
         <p className="mt-4 text-slate-700">{intro}</p>
         <div className="legal mt-8 space-y-8 break-words text-slate-800">{children}</div>
-        <p className="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-500">Questions about this page? Email <Mail />.</p>
+        <p className="mt-12 border-t border-slate-200 pt-6 text-sm text-slate-500">Questions about this page? Use <Mail />.</p>
       </main>
       <SiteFooter />
     </div>

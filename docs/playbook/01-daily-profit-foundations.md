@@ -294,7 +294,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 1. **Product cost (COGS):** making or buying the item.
 2. **Freight and duty:** getting it from the factory to you. Product cost plus freight and duty is your **landed cost**. Sales minus landed cost is **gross profit**, and as a share of sales it is **gross margin**.
-3. **Payment fees:** what Shopify Payments, PayPal or buy now pay later keep, usually about 1.75% plus 30 cents in Australia.
+3. **Payment fees:** what Shopify Payments, PayPal or buy now pay later keep, usually about 1.75% plus 30 cents in some countries.
 4. **Packaging:** mailer, box, tissue and inserts.
 5. **Shipping to the customer:** the postage you pay. What is left now is **profit before marketing**, the money one order leaves to pay for ads and bills.
 6. **Marketing:** ads and other marketing. What is left now is **contribution**.

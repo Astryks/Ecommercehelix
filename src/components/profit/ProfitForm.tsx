@@ -11,7 +11,7 @@ const FIELDS: { k: keyof ProfitInputs; label: string; hint: string; group: "orde
   { k: "freightDuty", label: "Freight and duty", hint: "Getting it to you: shipping from the factory, duty, customs. Per order.", group: "order" },
   { k: "packaging", label: "Packaging", hint: "Mailer, box, tissue, inserts.", group: "order" },
   { k: "shipToCustomer", label: "Shipping to the customer", hint: "Postage you pay, after any shipping the customer pays.", group: "order" },
-  { k: "feePct", label: "Payment fee %", hint: "Shopify Payments in Australia is about 1.75%.", group: "order" },
+  { k: "feePct", label: "Payment fee %", hint: "Shopify Payments is often about 1.75% to 2.9%.", group: "order" },
   { k: "feeFixed", label: "Payment fee per order", hint: "Usually about $0.30.", group: "order" },
   { k: "marketingPerOrder", label: "Marketing per order", hint: "Last month's ad and marketing spend divided by orders. Use 0 if you do not know yet.", group: "order" },
   { k: "subscriptions", label: "Shopify or website and apps", hint: "Monthly plan plus every app and tool subscription.", group: "month" },

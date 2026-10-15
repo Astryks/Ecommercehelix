@@ -44,7 +44,7 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-xs">© {new Date().getFullYear()} Astryks. E-commerce Helix is run by Astryks. Results vary. Helix gives guidance, not guarantees.</div>
+      <div className="border-t border-white/10 py-5 text-center text-xs">© {new Date().getFullYear()} E-commerce Helix. Results vary. Helix gives guidance, not guarantees.</div>
     </footer>
   );
 }

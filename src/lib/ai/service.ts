@@ -75,7 +75,7 @@ export async function aiText(userId: string, kind: AiKind, system: string, promp
   }
 }
 
-const RULES = "Write in plain Australian English for a small online store owner. Be short and specific. No hype, no emojis, no markdown headings. Never promise results. Never invent numbers that are not in the input.";
+const RULES = "Write in plain English for a small online store owner. Be short and specific. No hype, no emojis, no markdown headings. Never promise results. Never invent numbers that are not in the input.";
 
 export const PROMPTS = {
   audit: `You turn a store check's findings into a short write-up. ${RULES} Give: one sentence on the overall state, then the top 3 fixes in order, each one line starting with "1.", "2.", "3.". Under 150 words.`,

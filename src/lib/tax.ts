@@ -9,8 +9,8 @@ import type { DayInput, ProductLine } from "./scorecard";
 export type SalesTaxMode = "auto" | "AU" | "NZ" | "UK" | "none";
 
 export const TAX_OPTIONS: { id: SalesTaxMode; label: string; hint: string }[] = [
-  { id: "auto", label: "Use my country's default", hint: "For example Australia 10% GST, New Zealand 15%, UK 20% VAT, Germany 19%. US and Canada: sales are entered before tax." },
-  { id: "AU", label: "Yes, Australian GST (10%)", hint: "Helix divides sales by 1.10." },
+  { id: "auto", label: "Use my country's default", hint: "For example 10% GST in some countries, New Zealand 15%, UK 20% VAT, Germany 19%. US and Canada: sales are entered before tax." },
+  { id: "AU", label: "Yes, GST (10%)", hint: "Helix divides sales by 1.10." },
   { id: "NZ", label: "Yes, New Zealand GST (15%)", hint: "Helix divides sales by 1.15." },
   { id: "UK", label: "Yes, UK VAT (20%)", hint: "Helix divides sales by 1.20." },
   { id: "none", label: "No, my sales numbers are before tax", hint: "Pick this if you are not registered, or you copy Gross or Net sales from Shopify reports." },
@@ -48,7 +48,7 @@ export function effectiveTaxMode(mode: SalesTaxMode, country: Country): Exclude<
   return DEFAULT_TAX[country] ? "country" : "none";
 }
 
-/** Tax rate as a fraction, e.g. 0.1 for Australian GST. 0 when prices are before tax. */
+/** Tax rate as a fraction, e.g. 0.1 for GST. 0 when prices are before tax. */
 export function taxRate(mode: SalesTaxMode, country: Country): number {
   const m = effectiveTaxMode(mode, country);
   if (m === "none") return 0;

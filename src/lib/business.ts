@@ -31,7 +31,7 @@ export const TOPICS: Topic[] = [
   { id: "chargebacks", title: "Chargebacks and fraud", icon: "shield-alert", summary: "The deadlines, the evidence for each reason, and how to stop card-testing bots before they cost you.", lessons: ["24.3", "24.4"] },
   { id: "security", title: "Account safety", icon: "lock", summary: "Two-factor sign-in on every account, two trusted admins, a spending limit, and the first hour after a hack.", lessons: ["25.1", "25.4", "25.6"] },
   { id: "ad-accounts", title: "Ad accounts and agencies", icon: "megaphone", summary: "Own your business portfolio, get a disabled account reviewed the right way, and leave an agency with your data.", lessons: ["25.2", "25.3", "25.5"] },
-  { id: "gst", title: "GST and BAS (Australia, NZ)", icon: "receipt", summary: "The $75,000 threshold, GST on ads and imports, BAS due dates, and New Zealand GST on low-value goods.", lessons: ["26.1", "26.2"], tax: true },
+  { id: "gst", title: "GST and BAS", icon: "receipt", summary: "The $75,000 threshold, GST on ads and imports, BAS due dates, and New Zealand GST on low-value goods.", lessons: ["26.1", "26.2"], tax: true },
   { id: "sales-tax", title: "US sales tax", icon: "landmark", summary: "Physical and economic nexus, the state thresholds, registering before you collect, and filing on time.", lessons: ["26.3"], tax: true },
   { id: "abroad", title: "Selling abroad, VAT and duties", icon: "globe", summary: "UK VAT under £135, EU IOSS up to 150 euros, Canada GST/HST, tariff codes and the end of US de minimis.", lessons: ["26.4", "26.5"], tax: true },
   { id: "books", title: "Books, accountants and tax time", icon: "book", summary: "Registered helpers, clean payout entries, stock and product cost in your books, the monthly close and year-end steps.", lessons: ["27.1", "27.2", "27.3", "27.4", "27.5", "27.6"], tax: true },
@@ -42,8 +42,8 @@ export const THRESHOLDS_CHECKED = "2026-10-06";
 
 /** Key numbers, each checked against the official source on THRESHOLDS_CHECKED. */
 export const THRESHOLDS: { where: string; rule: string; source: { label: string; url: string } }[] = [
-  { where: "Australia", rule: "Register for GST within 21 days of GST turnover reaching $75,000 (this month plus the previous 11), or when you expect to.", source: { label: "ATO", url: "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst" } },
-  { where: "Australia", rule: "Quarterly BAS due 28 October, 28 February, 28 April and 28 July.", source: { label: "ATO", url: "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas" } },
+  { where: "GST (10%)", rule: "Register for GST within 21 days of GST turnover reaching $75,000 (this month plus the previous 11), or when you expect to.", source: { label: "ATO", url: "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst" } },
+  { where: "GST (10%)", rule: "Quarterly BAS due 28 October, 28 February, 28 April and 28 July.", source: { label: "ATO", url: "https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/due-dates-for-lodging-and-paying-your-bas" } },
   { where: "New Zealand", rule: "Overseas sellers register for 15% GST once sales of goods worth NZ$1,000 or less to NZ consumers pass NZ$60,000 in 12 months.", source: { label: "IRD", url: "https://www.ird.govt.nz/gst/gst-for-overseas-businesses/gst-on-low-value-imported-goods/registering-for-gst-on-low-value-imported-goods" } },
   { where: "US states", rule: "Economic nexus is often $100,000 of sales a year into a state; California and Texas use $500,000; New York uses more than $500,000 and more than 100 sales.", source: { label: "California CDTFA", url: "https://cdtfa.ca.gov/industry/wayfair/" } },
   { where: "US imports", rule: "The $800 de minimis exemption has been suspended for all countries since 29 August 2025. Low-value parcels pay duty.", source: { label: "US Customs", url: "https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs" } },
@@ -51,7 +51,7 @@ export const THRESHOLDS: { where: string; rule: string; source: { label: string;
   { where: "UK", rule: "Overseas sellers register for UK VAT and charge it at checkout on parcels worth £135 or less.", source: { label: "GOV.UK", url: "https://www.gov.uk/guidance/vat-and-overseas-goods-sold-directly-to-customers-in-the-uk" } },
   { where: "EU", rule: "IOSS covers parcels worth up to 150 euros; most non-EU sellers need an EU intermediary.", source: { label: "European Commission", url: "https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en" } },
   { where: "Canada", rule: "Non-resident sellers of goods generally register for GST/HST once Canadian sales pass C$30,000 in 12 months.", source: { label: "CRA", url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html" } },
-  { where: "Australia (team)", rule: "From 1 July 2026, super is paid with each payday and must reach the fund within 7 business days.", source: { label: "ATO", url: "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super/about-payday-super" } },
+  { where: "Team (super)", rule: "From 1 July 2026, super is paid with each payday and must reach the fund within 7 business days.", source: { label: "ATO", url: "https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super/about-payday-super" } },
 ];
 
 // ---------- Dated admin reminders ----------

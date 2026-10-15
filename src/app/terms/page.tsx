@@ -8,7 +8,7 @@ const a = "text-cyan-700 underline";
 
 export default function Terms() {
   return (
-    <LegalPage title="Terms of service" intro={`These terms are an agreement between you and ${OPERATOR}, who runs E-commerce Helix ("Helix", "we", "us"). By creating an account or using Helix you agree to them. Please read the billing part carefully: paid plans renew automatically every month until you cancel.`}>
+    <LegalPage title="Terms of service" intro={`These terms are an agreement between you and ${OPERATOR} ("Helix", "we", "us"). By creating an account or using Helix you agree to them. Please read the billing part carefully: paid plans renew automatically every month until you cancel.`}>
       <Sec title="What Helix is">
         <p>Helix is self-serve software for e-commerce store owners: lessons, a daily plan, a profit dashboard, a store check and, on paid plans, a Meta connection that reads your ad results and builds campaigns as paused drafts. There are no calls, no consulting and no done-for-you service.</p>
       </Sec>
@@ -40,8 +40,8 @@ export default function Terms() {
       </Sec>
 
       <Sec title="Refunds and your consumer rights">
-        <p>Our services come with guarantees that cannot be excluded under the Australian Consumer Law. For major failures with the service, you are entitled to cancel your service contract and to a refund for the unused portion, or to compensation for its reduced value. You are also entitled to be compensated for any other reasonably foreseeable loss or damage. If a failure does not amount to a major failure, you are entitled to have problems with the service rectified in a reasonable time and, if this is not done, to cancel your contract and obtain a refund for the unused portion.</p>
-        <p>Apart from those rights, we do not give refunds for change of mind or for part months. If something has gone wrong, email <Mail /> and we will look at it fairly. Consumers in other countries keep any rights their local law gives them that cannot be excluded.</p>
+        <p>Our services come with guarantees that cannot be excluded under consumer law. For major failures with the service, you are entitled to cancel your service contract and to a refund for the unused portion, or to compensation for its reduced value. You are also entitled to be compensated for any other reasonably foreseeable loss or damage. If a failure does not amount to a major failure, you are entitled to have problems with the service rectified in a reasonable time and, if this is not done, to cancel your contract and obtain a refund for the unused portion.</p>
+        <p>Apart from those rights, we do not give refunds for change of mind or for part months. If something has gone wrong, contact us through <Mail /> and we will look at it fairly. Consumers in other countries keep any rights their local law gives them that cannot be excluded.</p>
       </Sec>
 
       <Sec title="Meta, Google, Shopify and your ad spend">
@@ -86,7 +86,7 @@ export default function Terms() {
         <ul className="list-disc space-y-2 pl-6">
           <li>we are not liable for lost profits, lost sales, ad spend, lost data or indirect or consequential loss,</li>
           <li>our total liability to you is limited to the amount you paid us in the 12 months before the claim,</li>
-          <li>where the Australian Consumer Law lets us limit our liability for a failure to meet a guarantee, our liability is limited to supplying the service again or paying the cost of having it supplied again.</li>
+          <li>where consumer law lets us limit our liability for a failure to meet a guarantee, our liability is limited to supplying the service again or paying the cost of having it supplied again.</li>
         </ul>
         <p>Nothing in these terms limits liability that cannot be limited by law, such as for fraud.</p>
       </Sec>
@@ -100,7 +100,7 @@ export default function Terms() {
       </Sec>
 
       <Sec title="Governing law and contact">
-        <p>These terms are governed by the law of New South Wales, Australia, and you and we submit to the courts of New South Wales. This does not take away any right you have to bring a claim where you live under consumer law. Questions or complaints: <Mail />.</p>
+        <p>These terms are governed by the laws that apply where we operate, and you and we submit to the courts there. This does not take away any right you have to bring a claim where you live under consumer law. Questions or complaints: <Mail />.</p>
       </Sec>
     </LegalPage>
   );

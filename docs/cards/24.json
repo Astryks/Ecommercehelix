@@ -5,7 +5,7 @@
   {"say": "For each provider, divide total fees by the sales it handled. Example: $180 ÷ $9,000 = 2%.", "check": "You have a real fee rate per provider.", "lost": "Fees ÷ sales."},
   {"say": "Add hidden costs: currency conversion when you withdraw, fixed per-order fees on small orders, and fees kept on refunds.", "check": "Your fee rates include everything.", "lost": "Add the currency fee if you have one."},
   {"say": "Enter your blended fee rate (all fees ÷ all sales) in Helix as payment fees.", "check": "Helix profit uses your real fees.", "lost": "Enter one fee rate in Helix."},
-  {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Australia: buy now pay later often lifts order value, but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before pushing them.", "lost": "Remove one rarely used, pricey method."},
+  {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Outside the US: buy now pay later often lifts order value, but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before pushing them.", "lost": "Remove one rarely used, pricey method."},
   {"say": "Check each provider's fee page once a year.", "check": "Fee rises never surprise you.", "lost": "Put a yearly reminder in your calendar."}
  ]},
 "24.2": {"intro": "A payment provider can hold some of your money if it sees risk. A hold in the busy season could stop you paying suppliers.",
@@ -40,7 +40,7 @@
 "24.5": {"intro": "A fast, fair refund is cheaper than a dispute. A clear rule means you don't decide each case from scratch.",
  "steps": [
   {"say": "Write a one-page refund rule: when you refund in full, when you offer a part refund or credit, and who approves it.", "check": "Your team can handle any refund the way you would.", "lost": "Write when you give a full refund."},
-  {"say": "For small problems, offer a fix first: a part refund or store credit if the customer keeps the item.", "check": "Fewer full refunds.", "careful": "Australia: refunds for faulty items are a legal right. Goodwill is extra. US: state law and your published policy set the rules.", "lost": "Offer a part refund for a small problem."},
+  {"say": "For small problems, offer a fix first: a part refund or store credit if the customer keeps the item.", "check": "Fewer full refunds.", "careful": "Outside the US: refunds for faulty items are a legal right. Goodwill is extra. US: state law and your published policy set the rules.", "lost": "Offer a part refund for a small problem."},
   {"say": "Always refund to the original payment method.", "check": "No disputes from money sent another way.", "lost": "Refund to the same card."},
   {"say": "Write down every refund reason.", "check": "You can fix the cause.", "lost": "Write the reason for this refund."},
   {"say": "Enter refunds in Helix.", "check": "Profit stays true.", "lost": "Enter this week's refunds."}

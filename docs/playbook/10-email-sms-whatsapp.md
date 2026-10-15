@@ -259,7 +259,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** Your sale plan has two SMS sends.
 
-**Step 3.** Register your sender name where the law says you must (for example in Australia). Respect quiet hours, and keep each text short with one link.
+**Step 3.** Register your sender name where the law says you must (in some countries). Respect quiet hours, and keep each text short with one link.
 
 **Expected result:** Texts arrive from your registered name, at sensible times, with one clear link.
 

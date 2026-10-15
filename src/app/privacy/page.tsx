@@ -8,7 +8,7 @@ const a = "text-cyan-700 underline";
 
 export default function Privacy() {
   return (
-    <LegalPage title="Privacy policy" intro={`E-commerce Helix ("Helix", "we", "us") is run by ${OPERATOR}. This page explains in plain English what we collect, why, who helps us, where it is kept, how long we keep it and what you can do about it. We follow the Australian Privacy Principles (APPs) in the Privacy Act 1988 (Cth). If you are in the European Economic Area or the UK, we are the controller of your personal data under the GDPR and UK GDPR. If you are in California, the CCPA section below also applies.`}>
+    <LegalPage title="Privacy policy" intro={`${OPERATOR} ("Helix", "we", "us") runs this service. This page explains in plain English what we collect, why, who helps us, where it is kept, how long we keep it and what you can do about it. We follow the privacy laws that apply where we operate. If you are in the European Economic Area or the UK, we are the controller of your personal data under the GDPR and UK GDPR. If you are in California, the CCPA section below also applies.`}>
       <Sec title="What we collect">
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Sign-in details.</strong> Your email address. If you sign in with Google, also your name and profile photo from Google. Sign-in links are emailed through Resend.</li>
@@ -97,7 +97,7 @@ export default function Privacy() {
       </Sec>
 
       <Sec title="Sending data overseas">
-        <p>Your data is stored and processed outside Australia, mainly in the United States. Under APP 8 we take reasonable steps so these providers protect it to a standard similar to the APPs. For data from the EEA or UK, we rely on our providers&apos; data processing terms, including the European Commission&apos;s Standard Contractual Clauses and the UK Addendum, or the EU-US Data Privacy Framework where a provider is certified.</p>
+        <p>Your data is stored and processed by our providers, mainly in the United States. We take reasonable steps so these providers protect it to a standard similar to the privacy laws we follow. For data from the EEA or UK, we rely on our providers&apos; data processing terms, including the European Commission&apos;s Standard Contractual Clauses and the UK Addendum, or the EU-US Data Privacy Framework where a provider is certified.</p>
       </Sec>
 
       <Sec title="How long we keep it">
@@ -124,7 +124,7 @@ export default function Privacy() {
           <li><strong>EEA and UK:</strong> you can also object to or restrict our use of your data, ask for portability, withdraw consent, and complain to your local data protection authority (in the UK, the ICO).</li>
           <li><strong>California (CCPA):</strong> you can ask to know what personal information we collect, use and disclose, ask us to delete or correct it, and you will not be treated differently for using these rights. We do not sell or share personal information, so there is nothing to opt out of. The categories we collect are listed above: identifiers, commercial information about your subscription, internet activity on Helix, and business data you enter.</li>
         </ul>
-        <p>Email <Mail /> from your sign-in address to use any right. We may need to confirm it is you. We reply within 30 days (or sooner where the law requires).</p>
+        <p>Contact us through <Mail /> using your sign-in address to use any right. We may need to confirm it is you. We reply within 30 days (or sooner where the law requires).</p>
       </Sec>
 
       <Sec title="Children">
@@ -132,7 +132,7 @@ export default function Privacy() {
       </Sec>
 
       <Sec title="Complaints">
-        <p>Email <Mail /> first and we will try to fix it. If you are not happy with our answer, you can complain to the Office of the Australian Information Commissioner at <a className={a} href="https://www.oaic.gov.au">oaic.gov.au</a>, or your local data protection authority.</p>
+        <p>Contact us through <Mail /> first and we will try to fix it. If you are not happy with our answer, you can complain to the privacy regulator where we operate or your local data protection authority.</p>
       </Sec>
 
       <Sec title="Changes">

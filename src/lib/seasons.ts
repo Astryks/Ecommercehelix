@@ -5,7 +5,7 @@ import { addDays } from "./dates";
  *
  * Every big retail date has a lead time. Stock, offers and creative take weeks,
  * so Helix starts warning you well before the day. Dates are Sydney-local
- * (Australian defaults: EOFY is 30 June, Father's Day is in September).
+ * (local defaults: EOFY is 30 June, Father's Day is in September).
  * Everything here is pure, so it is easy to test and safe to run anywhere.
  */
 
@@ -20,7 +20,7 @@ const NAMES = new Intl.DisplayNames(["en"], { type: "region" });
 export const countryName = (c: Country) => {
   try { return NAMES.of(c) ?? c; } catch { return c; }
 };
-/** Every country, Australia and the US first, then A to Z by name. */
+/** Every country, most countries first, then A to Z by name. */
 export const COUNTRIES: { id: Country; name: string; flag: string }[] = [
   { id: "AU", name: "Australia", flag: "AU" },
   { id: "US", name: "United States", flag: "US" },
@@ -372,7 +372,7 @@ export const EVENTS: SeasonEvent[] = [
     date: (y) => ymd(y, 6, 30),
     leadDays: 42,
     endOffset: 0,
-    why: "In Australia many shoppers and businesses buy before 30 June. It is also the time to clear slow stock before your stocktake.",
+    why: "In some countries many shoppers and businesses buy before 30 June. It is also the time to clear slow stock before your stocktake.",
     headline: ({ weeksTo, daysTo }) =>
       daysTo > 10 ? `End of financial year is ${weeks(weeksTo)} away. Plan your EOFY sale and clear slow stock before 30 June.`
       : `EOFY is ${days(daysTo)} away. Launch your sale, send the reminders and get ready for stocktake.`,
@@ -403,7 +403,7 @@ export const EVENTS: SeasonEvent[] = [
     date: (y) => nthWeekday(y, 9, 0, 1),
     leadDays: 49,
     endOffset: -1,
-    why: "Father's Day (first Sunday of September in Australia) is a strong gifting date. Stock and gift ideas need to be ready early.",
+    why: "Father's Day (first Sunday of September in some countries) is a strong gifting date. Stock and gift ideas need to be ready early.",
     headline: ({ weeksTo, daysTo }) =>
       daysTo > 14 ? `Father's Day is ${weeks(weeksTo)} away. Pick your gift range, build bundles and plan your gift ads.`
       : `Father's Day is ${days(daysTo)} away. Show your last order date everywhere and send the reminder emails.`,
@@ -459,7 +459,7 @@ export const CALENDAR_ONLY: CalendarOnly[] = [
   { key: "halloween", name: "Halloween", countries: ["US"], kind: "seasonal", date: (y) => ymd(y, 10, 31),
     note: "Big for costumes, decor and treats. Many stores also use it to start teasing Black Friday." },
   { key: "click-frenzy", name: "Click Frenzy", countries: ["AU"], kind: "sale", date: (y) => nthWeekday(y, 11, 2, 2),
-    note: "A big Australian online sale event, usually over 3 days in mid-November. Decide by late October if you join it or keep your offer for Black Friday.", approx: "Usually the 2nd week of November. Check the official dates" },
+    note: "A big online sale event, usually over 3 days in mid-November. Decide by late October if you join it or keep your offer for Black Friday.", approx: "Usually the 2nd week of November. Check the official dates" },
   { key: "singles-day", name: "Singles Day (11.11)", countries: ["AU", "US", "GLOBAL"], kind: "sale", date: (y) => ymd(y, 11, 11),
     note: "The world's biggest online shopping day, started in China. Some stores run a one-day 11.11 offer as an early taste of Black Friday." },
   { key: "thanksgiving", name: "Thanksgiving", countries: ["US"], kind: "seasonal", date: (y) => nthWeekday(y, 11, 4, 4),

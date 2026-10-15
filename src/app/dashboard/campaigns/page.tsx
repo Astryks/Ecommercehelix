@@ -126,7 +126,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
         </table>
         <p className="border-t border-slate-100 px-5 py-3 text-xs text-slate-500">
           {live
-            ? `Meta rows: your account, last 7 days, synced ${new Date(snap!.syncedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })} Sydney. Google and TikTok rows are still example data.`
+            ? `Meta rows: your account, last 7 days, synced ${new Date(snap!.syncedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })}. Google and TikTok rows are still example data.`
             : "EXAMPLE DATA: these campaigns are made up to show how the tracker works. Connect Meta to see your own."}
         </p>
       </section>

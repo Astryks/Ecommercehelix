@@ -61,7 +61,7 @@
 
 **Expected result:** You know which rules apply.
 
-**Watch out:** Australia: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). From 1 July 2026, super is paid each payday. US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
+**Watch out:** Outside the US: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). From 1 July 2026, super is paid each payday. US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
 
 ### Good to know
 
@@ -139,7 +139,7 @@
 
 **Expected result:** All posts are disclosed.
 
-**Watch out:** Australia: see [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf); GST registered creators add GST. US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
+**Watch out:** Outside the US: see [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf); GST registered creators add GST. US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
 
 **Step 5.** Pay on time and keep invoices.
 
@@ -174,7 +174,7 @@
 
 **Expected result:** Bank details are verified by phone.
 
-**Watch out:** Never trust new bank details sent only by email. Report scams at [Scamwatch](https://www.scamwatch.gov.au/) (Australia) or the [FTC](https://reportfraud.ftc.gov/) (US).
+**Watch out:** Never trust new bank details sent only by email. Report scams at [Scamwatch](https://www.scamwatch.gov.au/) or the [FTC](https://reportfraud.ftc.gov/) (US).
 
 **Step 5.** If paying by card, check surcharges and your card's foreign transaction fee.
 
@@ -217,7 +217,7 @@
 
 **Expected result:** There are no hidden traps.
 
-**Watch out:** Look at [business.gov.au grants](https://business.gov.au/grants-and-programs) (Australia) and [SBA loans](https://www.sba.gov/funding-programs/loans) (US).
+**Watch out:** Look at [business.gov.au grants](https://business.gov.au/grants-and-programs) and [SBA loans](https://www.sba.gov/funding-programs/loans) (US).
 
 ### Good to know
 
@@ -291,7 +291,7 @@
 
 ### Good to know
 
-**Australia:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
+**Support lines:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
 
 **US:** call or text 988 for the Suicide and Crisis Lifeline at any hour. See [988lifeline.org](https://988lifeline.org/).
 
@@ -318,7 +318,7 @@
 
 **Expected result:** You know the competition.
 
-**Watch out:** Australia's Amazon marketplace is smaller than the US one, so check demand first.
+**Watch out:** Smaller Amazon marketplaces outside the US have less demand, so check demand first.
 
 **Step 2.** Use Amazon's fee calculator to work out profit per unit. Take the price and subtract referral fee, shipping fee, storage, ads and returns.
 

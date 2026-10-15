@@ -25,7 +25,7 @@
 > - **Theme:** The design template for your Shopify store. It controls how every page looks.
 > - **Domain:** Your store's web address, like yourbrand.com.
 > - **Variant:** One option of a product, like a size or colour, with its own stock and price.
-> - **GST:** Goods and services tax. It is 10% in Australia (15% in New Zealand), added to most sales once you register.
+> - **GST:** Goods and services tax. It is a percentage set by each country (often 10% to 15%), added to most sales once you register.
 > - **Sales tax:** In the US, a tax set by each state (and some cities). The seller collects it at checkout.
 > - **Test order:** A pretend order you place yourself to check payments, emails and tracking work.
 >
@@ -49,7 +49,7 @@
 
 <!-- do:numbers -->
 
-**Step 3.** Choose one launch country (Australia or the US) and add more later.
+**Step 3.** Choose one launch country (for example, where you live) and add more later.
 
 **Expected result:** You have one launch country.
 
@@ -57,11 +57,11 @@
 
 **Expected result:** You know your monthly platform cost.
 
-**Step 5.** Gather your logo, 4 to 8 photos per product and your returns rule. Also your ABN (Australia) or EIN (US, if you have one) and a business bank account.
+**Step 5.** Gather your logo, 4 to 8 photos per product and your returns rule. Also your ABN or EIN (US, if you have one) and a business bank account.
 
 **Expected result:** Everything you need to build is in one folder.
 
-**Watch out:** Australia: if you expect $75,000 or more in sales a year, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
+**Watch out:** Outside the US: if you expect $75,000 or more in sales a year, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
 
 ## Lesson 22.2: Domain and email
 <!-- stage:convert -->
@@ -72,7 +72,7 @@
 
 **Expected result:** The domain shows as connected in Settings.
 
-**Watch out:** Australia: a .com.au needs an ABN, and many brands own both .com.au and .com. US: .com is the normal choice.
+**Watch out:** Outside the US: a .com.au needs an ABN, and many brands own both .com.au and .com. US: .com is the normal choice.
 
 **Step 2.** Set it as the primary domain so myshopify.com redirects to it.
 
@@ -228,7 +228,7 @@
 
 **Expected result:** Your first products have real reviews.
 
-**Watch out:** Never write fake reviews or pay for positive ones. Both breach consumer law in Australia and the US.
+**Watch out:** Never write fake reviews or pay for positive ones. Both breach consumer law in most countries.
 
 **Step 4.** Reply to negative reviews politely and fix the problem.
 
@@ -284,7 +284,7 @@
 
 **Expected result:** Checkout shows a clear price and delivery range.
 
-**Watch out:** Australia: compare Australia Post, Sendle and couriers, and set a separate rate for remote areas if needed. US: compare USPS, UPS and FedEx in Shopify Shipping. Add international zones only once home works.
+**Watch out:** Outside the US: compare the national post and couriers, and set a separate rate for remote areas if needed. US: compare USPS, UPS and FedEx in Shopify Shipping. Add international zones only once home works.
 
 ### Good to know
 
@@ -297,19 +297,19 @@
 ## Lesson 22.10: Taxes: GST and sales tax basics
 <!-- stage:convert -->
 
-**Why this matters:** Tax set up wrong either costs you money or breaks the law. In Australia, you must register for GST once sales reach $75,000 a year. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
+**Why this matters:** Tax set up wrong either costs you money or breaks the law. In many countries, you must register for GST once sales reach $75,000 a year. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
 
-**Step 1.** Australia: check your GST turnover (this month plus the last 11). Has it reached $75,000, or will it in the next 12 months? If so, register within 21 days (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
+**Step 1.** Outside the US: check your GST turnover (this month plus the last 11). Has it reached $75,000, or will it in the next 12 months? If so, register within 21 days (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
 
 **Expected result:** You know whether you must register.
 
-**Step 2.** Australia, once registered: in Shopify, go to **Settings > Taxes and duties**. Turn on **Include sales tax in product price and shipping rate** (see [Shopify: taxes in Australia](https://help.shopify.com/en/manual/taxes/australia)).
+**Step 2.** Once registered for GST: in Shopify, go to **Settings > Taxes and duties**. Turn on **Include sales tax in product price and shipping rate** (see [Shopify: taxes](https://help.shopify.com/en/manual/taxes/australia)).
 
-**Expected result:** Prices shown to Australians include GST.
+**Expected result:** Prices shown to local customers include GST.
 
 **Watch out:** If you are not registered, do not charge GST and do not call invoices tax invoices.
 
-**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Leave it on (the Australian default) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
+**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Leave it on (the default) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
 
 **Expected result:** Helix divides sales by 1.1 before profit maths when needed. New Zealand (15%) and UK (20%) are there too.
 
@@ -346,7 +346,7 @@
 
 **Expected result:** Checkout shows express buttons and PayPal.
 
-**Step 3.** Think about one buy now pay later option. Use Afterpay in Australia or Shop Pay Installments in the US (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
+**Step 3.** Think about one buy now pay later option. Use Afterpay or Shop Pay Installments in the US (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
 
 **Expected result:** Shoppers can pay in parts. Check the fee, which is higher than a card fee.
 
@@ -375,7 +375,7 @@
 
 **Expected result:** The policies sound like you and match your real process.
 
-**Watch out:** Australia: under Australian Consumer Law, customers always have rights for faulty or wrong products. They can get a repair, replacement or refund. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it. If you state none, ship within 30 days (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
+**Watch out:** Outside the US: under consumer law, customers always have rights for faulty or wrong products. They can get a repair, replacement or refund. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it. If you state none, ship within 30 days (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
 
 **Step 3.** Link every policy in the footer and near checkout.
 

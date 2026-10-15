@@ -263,7 +263,7 @@
 
 **Expected result:** You have a plan for late December and January.
 
-**Step 5.** Add end of financial year sales where they matter (June in Australia). Add gift picks for Valentine's, Mother's and Father's Day.
+**Step 5.** Add end of financial year sales where they matter (June in some countries). Add gift picks for Valentine's, Mother's and Father's Day.
 
 **Expected result:** Your year has every key date planned.
 

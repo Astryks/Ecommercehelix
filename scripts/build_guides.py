@@ -151,7 +151,7 @@ g.rect(456, 160, 360, 460, "#fff", "#e2e8f0", 10)
 g.text(476, 190, "Ad set", 15, 800)
 g.field(476, 214, 320, "Conversion location", "Website")
 g.field(476, 274, 320, "Pixel and event", "My store pixel · Purchase")
-g.field(476, 334, 320, "Location", "Australia")
+g.field(476, 334, 320, "Location", "Your country")
 g.text(476, 404, "Advantage+ audience", 12, 600, "#475569")
 g.toggle(756, 392, True)
 g.text(476, 444, "Placements", 12, 600, "#475569")
@@ -499,7 +499,7 @@ for i, t in enumerate(["Settings", "  General", "  Payments", "  Shipping and de
 g.text(230, 100, "Taxes and duties", 18, 800)
 g.rect(230, 120, 580, 170, "#fff", "#e2e8f0", 10)
 g.text(250, 150, "Regions", 14, 700)
-for i, (c, st) in enumerate([("Australia", "Collecting GST (10%)"), ("United States", "Collecting in 1 state")]):
+for i, (c, st) in enumerate([("Your country", "Collecting GST (10%)"), ("United States", "Collecting in 1 state")]):
     g.rect(250, 166 + i * 52, 540, 42, "#f8fafc", "#e2e8f0", 6)
     g.text(266, 192 + i * 52, c, 14, 700)
     g.text(560, 192 + i * 52, st, 13, 400, "#475569")
@@ -507,7 +507,7 @@ g.rect(230, 310, 580, 130, "#fff", "#e2e8f0", 10)
 g.text(250, 340, "Tax calculations", 14, 700)
 g.rect(250, 360, 18, 18, SHOP, SHOP, 4)
 g.text(278, 374, "Include sales tax in product price and shipping rate", 13)
-g.text(278, 396, "Turn on for Australia (prices shown include GST)", 12, 400, "#64748b")
+g.text(278, 396, "Turn on where you charge GST (prices shown include GST)", 12, 400, "#64748b")
 g.text(278, 416, "Leave off for a US-only store (tax added at checkout)", 12, 400, "#64748b")
 g.rect(230, 460, 580, 150, "#fff7ed", "#fdba74", 10)
 g.text(250, 490, "General information, not tax advice.", 14, 700, "#9a3412")
@@ -520,9 +520,9 @@ g.callout(3, 830, 238, 790, 238)
 g.callout(4, 206, 369, 248, 369)
 save("shopify-6-taxes", g, [
     "Open Settings, then Taxes and duties.",
-    "Australia: add your ABN and turn on GST once you are registered.",
+    "Outside the US: add your ABN and turn on GST once you are registered.",
     "US: turn on each state only after you register there.",
-    "Australia: tick 'include sales tax in product price'. US: leave it off."],
+    "Outside the US: tick 'include sales tax in product price'. US: leave it off."],
     "General information, not tax advice. Labels on your screen may look a little different.")
 
 # Shopify 7: payments

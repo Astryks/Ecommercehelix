@@ -40,7 +40,7 @@
 <text x="486" y="304.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">My store pixel · Purchase</text>
 <text x="476" y="334" font-size="12" font-weight="600" fill="#55514C" text-anchor="start">Location</text>
 <rect x="476" y="342" width="320" height="34" rx="6" fill="#fff" stroke="#C9C6BD" stroke-width="1"/>
-<text x="486" y="364.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">Australia</text>
+<text x="486" y="364.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">Your country</text>
 <text x="476" y="404" font-size="12" font-weight="600" fill="#55514C" text-anchor="start">Advantage+ audience</text>
 <rect x="756" y="392" width="36" height="20" rx="10" fill="#1877f2" stroke="none" stroke-width="1"/>
 <circle cx="782" cy="402" r="7" fill="#fff"/>

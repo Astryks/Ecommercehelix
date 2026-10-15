@@ -6,7 +6,7 @@
   {"say": "Write the role as results. Example: \"every customer email answered within one business day\".", "check": "Success can be measured.", "lost": "Write one result for the role."},
   {"say": "Give shortlisted people a small paid trial task that matches the real work.", "check": "You see real work before hiring.", "lost": "Pay for one small test task."},
   {"say": "Agree terms in writing: hours or deliverables, rate, notice, confidentiality, and that their work belongs to you.", "check": "A signed agreement exists.", "lost": "Put the rate and hours in writing."},
-  {"say": "Check if the person is an employee or contractor, based on how the work really happens, not the label.", "check": "You know which rules apply.", "careful": "Australia: check the ATO's employee or contractor guide and Fair Work. Super is paid each payday from 1 July 2026. US: the IRS looks at control and independence (W-2 or 1099).", "lost": "Read the official employee or contractor guide."}
+  {"say": "Check if the person is an employee or contractor, based on how the work really happens, not the label.", "check": "You know which rules apply.", "careful": "Outside the US: check the ATO's employee or contractor guide and Fair Work. Super is paid each payday from 1 July 2026. US: the IRS looks at control and independence (W-2 or 1099).", "lost": "Read the official employee or contractor guide."}
  ]},
 "28.2": {"intro": "A remote assistant can be a great first hire, if the work is written down and access is safe.",
  "steps": [
@@ -23,7 +23,7 @@
   {"say": "Split every quote into parts: making the content, posting it, usage rights (using it in your ads, and for how long), exclusivity, and raw footage.", "check": "You know what each part costs.", "lost": "Ask: what's the price for usage rights?"},
   {"say": "Put it in writing: deliverables, dates, revisions, usage rights, payment date, and what happens if a post is late.", "check": "Every deal has a written agreement.", "lost": "Write the dates and the payment."},
   {"say": "Count gifting costs (product, shipping, your time) when you compare it with paid work.", "check": "You compare deals fairly.", "lost": "Add up product + shipping for one gift."},
-  {"say": "Make sure every paid or gifted post is clearly labelled as an ad.", "check": "All posts are disclosed.", "careful": "Australia: follow the ACCC's influencer guidance. GST registered creators add GST. US: follow the FTC's disclosure guide. Creators paid $2,000 or more in 2026 usually need a 1099-NEC (Lesson 27.6).", "lost": "Ask them to add \"ad\" to the post."},
+  {"say": "Make sure every paid or gifted post is clearly labelled as an ad.", "check": "All posts are disclosed.", "careful": "Outside the US: follow the ACCC's influencer guidance. GST registered creators add GST. US: follow the FTC's disclosure guide. Creators paid $2,000 or more in 2026 usually need a 1099-NEC (Lesson 27.6).", "lost": "Ask them to add \"ad\" to the post."},
   {"say": "Pay on time and keep invoices.", "check": "Records are complete.", "lost": "Save the invoice."},
   {"say": "Track each creator's sales from their code or link, and how their content does as an ad.", "check": "You know which creators to book again.", "lost": "Check sales from one creator's code."}
  ]},
@@ -32,7 +32,7 @@
   {"say": "For one real payment, compare the total cost with your bank and at least one money transfer provider: your rate against the mid-market rate, plus fees.", "check": "You know the cheapest way to pay.", "lost": "Compare one payment two ways."},
   {"say": "Pay in the supplier's currency when that's cheaper than letting them convert.", "check": "You avoid converting twice.", "lost": "Ask which currency is cheaper."},
   {"say": "Agree payment terms in writing: deposit, balance timing, and what happens if goods are late or faulty (Lesson 14.8).", "check": "Terms are written down.", "lost": "Write the deposit and balance dates."},
-  {"say": "Before any first payment, or change of bank details, call the supplier on a number you already have to confirm the account.", "check": "Bank details are checked by phone.", "careful": "Never trust new bank details sent only by email. Report scams to Scamwatch (Australia) or the FTC (US).", "lost": "New bank details? Call them first."},
+  {"say": "Before any first payment, or change of bank details, call the supplier on a number you already have to confirm the account.", "check": "Bank details are checked by phone.", "careful": "Never trust new bank details sent only by email. Report scams to Scamwatch or the FTC (US).", "lost": "New bank details? Call them first."},
   {"say": "If paying by card, check surcharges and your card's foreign transaction fee.", "check": "You know the card's true cost.", "lost": "Check your card's foreign fee."},
   {"say": "For big payments due months ahead, ask your provider about fixing a rate in advance.", "check": "Your future cost is locked in.", "lost": "Ask about fixing the rate."}
  ]},
@@ -43,7 +43,7 @@
   {"say": "Work out the true cost: (total repaid − amount received) ÷ amount received. Example: ($11,000 − $10,000) ÷ $10,000 = 10%. Then think about speed.", "check": "You know the real cost. A flat fee repaid in 4 months costs far more per year than over 12 months.", "lost": "Extra you pay ÷ what you get."},
   {"say": "Check what happens if sales drop. Share-of-sales repayments slow down. Fixed weekly ones don't.", "check": "You know your downside.", "lost": "Ask: what if sales drop?"},
   {"say": "Add repayments to your cash forecast before you sign.", "check": "You can afford it even if sales drop by a quarter.", "lost": "Add repayments to your cash sheet."},
-  {"say": "Read for personal guarantees, early repayment rules, and what the lender can take if you stop paying.", "check": "There are no hidden traps.", "careful": "Look at business.gov.au grants (Australia) and SBA loans (US).", "lost": "Look for \"personal guarantee\" in the contract."}
+  {"say": "Read for personal guarantees, early repayment rules, and what the lender can take if you stop paying.", "check": "There are no hidden traps.", "careful": "Look at business.gov.au grants and SBA loans (US).", "lost": "Look for \"personal guarantee\" in the contract."}
  ]},
 "28.6": {"intro": "App and tool bills creep up quietly. Many charge by contacts, orders or users, so the bill grows with you.",
  "steps": [
@@ -65,7 +65,7 @@
  ]},
 "28.8": {"intro": "Amazon can add sales, but it has its own fees, rules and competition. Decide with numbers.",
  "steps": [
-  {"say": "Search Amazon for your product type. Note prices, review counts, and whether copies already exist.", "check": "You know the competition.", "careful": "Australia's Amazon marketplace is smaller than the US one, so check demand first.", "lost": "Search Amazon for your product."},
+  {"say": "Search Amazon for your product type. Note prices, review counts, and whether copies already exist.", "check": "You know the competition.", "careful": "Smaller Amazon marketplaces outside the US have less demand, so check demand first.", "lost": "Search Amazon for your product."},
   {"say": "Use Amazon's fee calculator to work out profit per unit: price minus referral fee, fulfilment fee, storage, ads and returns.", "check": "You know profit per unit after all fees.", "lost": "Put your best seller in the fee calculator."},
   {"say": "Choose how to sell: as a seller (you set prices and listings) or, if invited, as a wholesale supplier to Amazon.", "check": "You have a selling model.", "lost": "Most start as a seller."},
   {"say": "Register your trademark and enrol in Amazon's brand registry before you list.", "check": "Your brand is protected.", "lost": "Register your trademark first."},

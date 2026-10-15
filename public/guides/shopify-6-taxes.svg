@@ -16,7 +16,7 @@
 <rect x="230" y="120" width="580" height="170" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
 <text x="250" y="150" font-size="14" font-weight="700" fill="#1A1718" text-anchor="start">Regions</text>
 <rect x="250" y="166" width="540" height="42" rx="6" fill="#F7F6F2" stroke="#DEDCD4" stroke-width="1"/>
-<text x="266" y="192" font-size="14" font-weight="700" fill="#1A1718" text-anchor="start">Australia</text>
+<text x="266" y="192" font-size="14" font-weight="700" fill="#1A1718" text-anchor="start">Your country</text>
 <text x="560" y="192" font-size="13" font-weight="400" fill="#55514C" text-anchor="start">Collecting GST (10%)</text>
 <rect x="250" y="218" width="540" height="42" rx="6" fill="#F7F6F2" stroke="#DEDCD4" stroke-width="1"/>
 <text x="266" y="244" font-size="14" font-weight="700" fill="#1A1718" text-anchor="start">United States</text>
@@ -25,7 +25,7 @@
 <text x="250" y="340" font-size="14" font-weight="700" fill="#1A1718" text-anchor="start">Tax calculations</text>
 <rect x="250" y="360" width="18" height="18" rx="4" fill="#008060" stroke="#008060" stroke-width="1"/>
 <text x="278" y="374" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">Include sales tax in product price and shipping rate</text>
-<text x="278" y="396" font-size="12" font-weight="400" fill="#6B6760" text-anchor="start">Turn on for Australia (prices shown include GST)</text>
+<text x="278" y="396" font-size="12" font-weight="400" fill="#6B6760" text-anchor="start">Turn on where you charge GST (prices shown include GST)</text>
 <text x="278" y="416" font-size="12" font-weight="400" fill="#6B6760" text-anchor="start">Leave off for a US-only store (tax added at checkout)</text>
 <rect x="230" y="460" width="580" height="150" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1"/>
 <text x="250" y="490" font-size="14" font-weight="700" fill="#9a3412" text-anchor="start">General information, not tax advice.</text>
@@ -54,13 +54,13 @@
 <text x="920" y="92" font-size="14" fill="#DEDCD4">Open Settings, then Taxes and</text>
 <text x="920" y="111" font-size="14" fill="#DEDCD4">duties.</text>
 <circle cx="896" cy="143" r="13" fill="#453CBF"/><text x="896" y="148" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">2</text>
-<text x="920" y="148" font-size="14" fill="#DEDCD4">Australia: add your ABN and turn</text>
+<text x="920" y="148" font-size="14" fill="#DEDCD4">Outside the US: add your ABN and turn</text>
 <text x="920" y="167" font-size="14" fill="#DEDCD4">on GST once you are registered.</text>
 <circle cx="896" cy="199" r="13" fill="#453CBF"/><text x="896" y="204" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">3</text>
 <text x="920" y="204" font-size="14" fill="#DEDCD4">US: turn on each state only after</text>
 <text x="920" y="223" font-size="14" fill="#DEDCD4">you register there.</text>
 <circle cx="896" cy="255" r="13" fill="#453CBF"/><text x="896" y="260" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
-<text x="920" y="260" font-size="14" fill="#DEDCD4">Australia: tick &#x27;include sales tax</text>
+<text x="920" y="260" font-size="14" fill="#DEDCD4">Outside the US: tick &#x27;include sales tax</text>
 <text x="920" y="279" font-size="14" fill="#DEDCD4">in product price&#x27;. US: leave it</text>
 <text x="920" y="298" font-size="14" fill="#DEDCD4">off.</text>
 <text x="24" y="668" font-size="12" fill="#6B6760">General information, not tax advice. Labels on your screen may look a little different.</text>

@@ -34,7 +34,7 @@ const SAVE_NOTES: Record<string, string> = {
   pixel_missing: "The pixel you picked is not on this ad account, so it was skipped.",
 };
 
-const when = (iso: string | null) => (iso ? new Date(iso).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" }) + " Sydney" : "never");
+const when = (iso: string | null) => (iso ? new Date(iso).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })  : "never");
 
 export default async function Integrations({ searchParams }: PageProps<"/dashboard/integrations">) {
   const sp = await searchParams;
@@ -161,7 +161,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
               <Link href="/dashboard/campaigns/new" className="btn-ghost text-sm">Build a paused draft</Link>
               <form action={disconnectMetaAction} className="ml-auto"><button className="btn-ghost text-sm text-rose-700"><Unplug className="h-4 w-4" aria-hidden /> Disconnect</button></form>
             </div>
-            <p className="text-xs text-slate-500">Helix syncs automatically every morning at about 6:00 Sydney time.</p>
+            <p className="text-xs text-slate-500">Helix syncs automatically early every morning.</p>
           </div>
         )}
       </section>

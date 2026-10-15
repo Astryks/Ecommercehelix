@@ -14,7 +14,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Angle** (angles): The reason to buy that an ad focuses on, like saving time or looking good.
 - **AOV** (average order value): Average order value: total sales divided by number of orders.
 - **Attribution**: Deciding which ad or channel gets credit for a sale.
-- **BAS** (business activity statement): Business activity statement: the form Australian businesses lodge with the ATO to report and pay GST.
+- **BAS** (business activity statement): Business activity statement: the form some businesses lodge with their tax office to report and pay GST.
 - **Brand search**: Ads that show when people search your brand name. Cheap and usually very profitable.
 - **Break-even CPA**: The most you can pay in ads for one sale before that sale stops making money.
 - **Break-even ROAS**: The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
@@ -48,7 +48,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Free shipping threshold** (threshold): The order amount where shipping becomes free, like 'Free shipping over $100'.
 - **Frequency**: How many times, on average, the same person saw your ad.
 - **Funnel**: The steps from seeing an ad to buying: visit, add to cart, checkout, order.
-- **GST** (goods and services tax): Goods and services tax: 10% in Australia (15% in New Zealand), added to most sales once you are registered.
+- **GST** (goods and services tax): Goods and services tax: a percentage set by each country (often 10% to 15%), added to most sales once you are registered.
 - **Guarantee** (risk reversal): A clear promise that removes the fear of a bad purchase, like a 30-day money-back promise.
 - **Holdout test** (holdout): Turning something off for a while (or in one area) to see how many sales it really adds.
 - **Hook** (hooks): The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.

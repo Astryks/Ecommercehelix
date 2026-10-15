@@ -115,7 +115,7 @@ export function exampleSuppliers(): Supplier[] {
   return [
     { id: "ex-sup-1", name: "Example: Linen mill (factory)", contact: "sales@example-mill.test", country: "China", kind: "factory", moq: 300, leadTimeDays: 50, paymentTerms: "30% deposit, 70% before shipping", notes: "Sample approved. Ask for a pre-shipment inspection.", example: true },
     { id: "ex-sup-2", name: "Example: Cotton tees (trading company)", contact: "hello@example-trade.test", country: "China", kind: "trading", moq: 200, leadTimeDays: 35, paymentTerms: "50% deposit, 50% on shipping", notes: "Check who the real factory is before a big order.", example: true },
-    { id: "ex-sup-3", name: "Example: Local cap maker", contact: "orders@example-caps.test", country: "Australia", kind: "factory", moq: 100, leadTimeDays: 21, paymentTerms: "Net 14 after delivery", notes: "", example: true },
+    { id: "ex-sup-3", name: "Example: Local cap maker", contact: "orders@example-caps.test", country: "Local", kind: "factory", moq: 100, leadTimeDays: 21, paymentTerms: "Net 14 after delivery", notes: "", example: true },
   ];
 }
 export function exampleStock(): StockItem[] {
