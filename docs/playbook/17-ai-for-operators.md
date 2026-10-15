@@ -50,7 +50,7 @@
 
 **Why this matters:** A handful of jobs save the most time with AI. Always read and edit what AI writes before you use it.
 
-**Step 1.** Use AI for ads: hooks, scripts, briefs, ad text versions, still-image layouts, resizing and finding which parts of your ads win.
+**Step 1.** Use AI for ads. It can write hooks, scripts, briefs and new ad text, lay out still images, resize, and find which parts of your ads win.
 
 **Expected result:** Your next ad batch is drafted faster.
 
@@ -58,7 +58,7 @@
 
 **Expected result:** Email drafts take minutes, not hours.
 
-**Step 3.** Use AI for the website: section text, FAQs, landing page drafts, page audits and digging into exported data when conversion drops.
+**Step 3.** Use AI for the website. It can write section text, FAQs and landing page drafts, check pages, and dig into your data when conversion drops.
 
 **Expected result:** Site copy and audits are quicker.
 
@@ -66,7 +66,7 @@
 
 **Expected result:** Admin work shrinks.
 
-**Step 5.** Set up an AI support agent for "where is my order?" and common questions that hands anything sensitive to a person.
+**Step 5.** Set up an AI helper for "where is my order?" and common questions. Make sure it hands anything sensitive to a person.
 
 **Expected result:** Routine questions are answered instantly.
 
@@ -98,7 +98,7 @@
 
 **Expected result:** Nothing false goes out under your name.
 
-**Step 3.** Label AI-made people and voices where rules require it, and report fakes of your content or face to the platform with proof.
+**Step 3.** Label AI-made people and voices where the rules say you must. If someone fakes your content or face, report it to the platform with proof.
 
 **Expected result:** You follow the rules and protect your brand.
 
@@ -115,7 +115,7 @@
 
 **Expected result:** You know Helix's advice comes from plain rules you can check.
 
-**Step 3.** Approve or reject each action in **Waiting for your OK**; new campaigns are created as paused drafts that you switch on. See the [product design doc](../product-design.md).
+**Step 3.** Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on. See the [product design doc](../product-design.md).
 
 **Expected result:** Every change in your accounts has your approval.
 

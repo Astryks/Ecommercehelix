@@ -1,6 +1,6 @@
 # Module 22: Shopify store setup
 
-**Outcome:** a Shopify store that is ready to take real orders. It has your own domain, a fast theme, clear home and product pages, working shipping, taxes and payments, plain policies, a small set of apps, tracking for your ads, and a test order that went through from start to finish.
+**Outcome:** a Shopify store that is ready to take real orders. It has your own domain, a fast theme, and clear home and product pages. Shipping, taxes and payments work, and policies are plain. It has a small set of apps, tracking for your ads, and a test order that went all the way through.
 
 **Related:** [Module 9 Website, conversion and order value](09-website-and-cro.md), [Module 18 Choosing your tool stack](18-tool-stack.md), [Module 7 Meta ads in practice](07-meta-ads.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md)
 
@@ -57,7 +57,7 @@
 
 **Expected result:** You know your monthly platform cost.
 
-**Step 5.** Collect your logo, 4 to 8 photos per product, your returns rule, your ABN (Australia) or EIN (US, if you have one) and a business bank account.
+**Step 5.** Gather your logo, 4 to 8 photos per product and your returns rule. Also your ABN (Australia) or EIN (US, if you have one) and a business bank account.
 
 **Expected result:** Everything you need to build is in one folder.
 
@@ -66,9 +66,9 @@
 ## Lesson 22.2: Domain and email
 <!-- stage:convert -->
 
-**Why this matters:** Your domain is your web address. A store on its own domain looks more trustworthy than one on the free myshopify.com address, and branded email lands in inboxes more reliably.
+**Why this matters:** Your domain is your web address. A store on its own domain looks more trustworthy than the free myshopify.com address. Emails from your own domain also land in inboxes more often.
 
-**Step 1.** In Shopify **Settings > Domains**, buy a short domain that matches your brand or connect one you own (see [Shopify: domains](https://help.shopify.com/en/manual/domains)).
+**Step 1.** In Shopify, go to **Settings > Domains**. Buy a short domain that matches your brand, or connect one you own (see [Shopify: domains](https://help.shopify.com/en/manual/domains)).
 
 **Expected result:** The domain shows as connected in Settings.
 
@@ -78,7 +78,7 @@
 
 **Expected result:** Typing your domain opens your store.
 
-**Step 3.** Set up a branded email such as hello@yourbrand.com and use it for support and as the sender in your email tool.
+**Step 3.** Set up a brand email like hello@yourbrand.com. Use it for support and as the sender in your email tool.
 
 **Expected result:** Customer emails come from your own domain.
 
@@ -95,7 +95,7 @@
 
 **Expected result:** A fast, supported theme is installed.
 
-**Watch out:** Only pay for a theme if it has a feature you truly need and you have checked its speed on a phone.
+**Watch out:** Only pay for a theme if it has a feature you truly need. Check its speed on a phone first.
 
 **Step 2.** Click **Duplicate** on the theme and make all changes on the copy.
 
@@ -120,7 +120,7 @@
 ## Lesson 22.4: Build the home page
 <!-- stage:convert -->
 
-**Why this matters:** The home page should answer three questions in a few seconds: what is this, is it for me, and why should I trust it. Build the top first, then the sections below in a proven order.
+**Why this matters:** The home page should answer three questions in a few seconds. What is this? Is it for me? Why should I trust it? Build the top first, then the sections below in a proven order.
 
 **Step 1.** In the theme editor, add a promo bar with one short line, such as your shipping offer or a guarantee.
 
@@ -130,7 +130,7 @@
 
 **Expected result:** The header is simple and uncluttered.
 
-**Step 3.** Add a banner with a photo of the product in use, your promise in one line and one button ("Shop now"), plus an optional row of category tiles people can scroll sideways on mobile.
+**Step 3.** Add a banner with a photo of the product in use, your promise in one line and one button ("Shop now"). You can add a row of category tiles people swipe sideways on phones.
 
 **Expected result:** The top of the page says what you sell and gives one next step.
 
@@ -168,11 +168,11 @@
 
 **Expected result:** On a phone you see price, rating and Add to cart without scrolling.
 
-**Step 4.** Write the description as short lines: the result first, then 3 to 5 key points, then what is included, and add a short FAQ under the button (sizing, materials, shipping time, returns, care).
+**Step 4.** Write the description as short lines: the result first, then 3 to 5 key points, then what is included. Add a short FAQ under the button: sizing, materials, shipping time, returns and care.
 
 **Expected result:** Common questions are answered on the page.
 
-**Step 5.** Turn on sticky Add to cart for mobile in theme settings, and fill in the search title and description in plain words (see [Shopify: products](https://help.shopify.com/en/manual/products/add-update-products)).
+**Step 5.** Turn on sticky Add to cart for phones in theme settings. Fill in the search title and description in plain words (see [Shopify: products](https://help.shopify.com/en/manual/products/add-update-products)).
 
 **Expected result:** The button stays visible as people scroll, and Google shows a clean listing.
 
@@ -197,7 +197,7 @@
 
 **Expected result:** Every variant is complete.
 
-**Step 3.** Turn on **Track quantity** and choose to stop selling at zero, or state a clear ship date if you take preorders (see [Shopify: inventory](https://help.shopify.com/en/manual/products/inventory)).
+**Step 3.** Turn on **Track quantity** and choose to stop selling at zero. If you take preorders, state a clear ship date (see [Shopify: inventory](https://help.shopify.com/en/manual/products/inventory)).
 
 **Expected result:** Shopify stops selling when you run out.
 
@@ -218,7 +218,7 @@
 
 <!-- do:flow-review-request -->
 
-**Step 2.** Show the star rating under the product title and near Add to cart, plus a photo review section lower on product pages and the home page.
+**Step 2.** Show the star rating under the product title and near Add to cart. Add a photo review section lower on product pages and the home page.
 
 **Expected result:** Your rating is visible near the top of every product page.
 
@@ -245,7 +245,7 @@
 
 **Expected result:** Any product is 3 taps away.
 
-**Step 3.** Turn on Shopify's filters (size, colour, price, in stock) with multi-select, plus hover second photo and quick add if your theme allows.
+**Step 3.** Turn on Shopify's filters (size, colour, price, in stock) and let people pick more than one. If your theme allows, add a second photo on hover and quick add.
 
 **Expected result:** Shoppers can narrow and add from collections.
 
@@ -274,7 +274,7 @@
 
 **Expected result:** Checkout shows two clear options.
 
-**Step 3.** Set a free shipping amount about 1.2 to 1.4 times your average order, and show it in the promo bar and near Add to cart ("Free shipping over $X").
+**Step 3.** Set free shipping at about 1.2 to 1.4 times your average order. Show it in the promo bar and near Add to cart ("Free shipping over $X").
 
 **Expected result:** Shoppers see how close they are to free shipping.
 
@@ -295,29 +295,29 @@
 ## Lesson 22.10: Taxes: GST and sales tax basics
 <!-- stage:convert -->
 
-**Why this matters:** Tax set up wrong either costs you money or breaks the law. In Australia, GST registration is required once turnover reaches $75,000; in the US, sales tax depends on nexus (a strong enough connection to a state). Helix strips GST from your sales before any profit maths.
+**Why this matters:** Tax set up wrong either costs you money or breaks the law. In Australia, you must register for GST once sales reach $75,000 a year. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
 
-**Step 1.** Australia: check whether your GST turnover (this month plus the previous 11) has reached $75,000 or will in the next 12 months, and register within 21 days if so (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
+**Step 1.** Australia: check if your GST turnover (this month plus the last 11) has reached $75,000, or will in the next 12 months. If so, register within 21 days (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
 
 **Expected result:** You know whether you must register.
 
-**Step 2.** Australia, once registered: in Shopify **Settings > Taxes and duties**, turn on **Include sales tax in product price and shipping rate** (see [Shopify: taxes in Australia](https://help.shopify.com/en/manual/taxes/australia)).
+**Step 2.** Australia, once registered: in Shopify, go to **Settings > Taxes and duties**. Turn on **Include sales tax in product price and shipping rate** (see [Shopify: taxes in Australia](https://help.shopify.com/en/manual/taxes/australia)).
 
 **Expected result:** Prices shown to Australians include GST.
 
 **Watch out:** If you are not registered, do not charge GST and do not call invoices tax invoices.
 
-**Step 3.** In Helix **Settings**, leave **My prices include GST/VAT** on (default for Australia) if you type tax-inclusive totals such as Shopify's Total sales; switch it to No if you copy Gross or Net sales (already ex tax) or are not registered.
+**Step 3.** In Helix **Settings**, leave **My prices include GST/VAT** on (the default for Australia) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
 
 **Expected result:** Helix divides sales by 1.1 before profit maths when needed. New Zealand (15%) and UK (20%) are there too.
 
 <!-- do:settings -->
 
-**Step 4.** US: list states where you have physical presence (home state, warehouse) and check each state's economic nexus threshold, often $100,000 of sales a year.
+**Step 4.** US: list the states where you are physically present (home state, warehouse). Check each state's sales limit for economic nexus, often $100,000 a year.
 
 **Expected result:** You know where you owe sales tax.
 
-**Step 5.** US: register with each state before collecting, then turn that state on in **Settings > Taxes and duties** (see [Shopify: US taxes](https://help.shopify.com/en/manual/taxes/us)).
+**Step 5.** US: register with each state before you collect tax. Then turn that state on in **Settings > Taxes and duties** (see [Shopify: US taxes](https://help.shopify.com/en/manual/taxes/us)).
 
 **Expected result:** Shopify collects tax only where you are registered and tracks your progress to other thresholds.
 
@@ -365,7 +365,7 @@
 
 **Why this matters:** Clear policies build trust and keep you within the law. Write them in plain words a 12-year-old could follow, and link them where buyers look.
 
-**Step 1.** In **Settings > Policies**, create Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
+**Step 1.** In **Settings > Policies**, make Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
 
 **Expected result:** All five policy pages exist.
 
@@ -373,7 +373,7 @@
 
 **Expected result:** The policies sound like you and match your real process.
 
-**Watch out:** Australia: customers always have rights to repair, replacement or refund for faulty or not-as-described products under Australian Consumer Law. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it, or ship within 30 days if you state none (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
+**Watch out:** Australia: customers always have rights to repair, replacement or refund for faulty or not-as-described products under Australian Consumer Law. Never write "no refunds" or "no refunds on sale items" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: if you state a shipping time, the FTC mail order rule expects you to meet it. If you state none, ship within 30 days (see [FTC](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
 
 **Step 3.** Link every policy in the footer and near checkout.
 
@@ -408,11 +408,11 @@
 
 **Why this matters:** Every app can slow your store and adds a monthly cost. A small starter set covers almost everything a new store needs. See Module 18 for when to add more.
 
-**Step 1.** Install the starter set only: a reviews app, Shopify Email or Klaviyo, the Facebook & Instagram and Google & YouTube sales channels, and (optionally) a post-purchase offer app; add subscriptions only if you sell refills.
+**Step 1.** Install the starter set only. That is a reviews app, Shopify Email or Klaviyo, the Facebook & Instagram and Google & YouTube channels, and maybe an after-purchase offer app. Add subscriptions only if you sell refills.
 
 **Expected result:** Your app list is short and every app has a job.
 
-**Step 2.** Before installing anything else, check whether your theme can already do it (badges, size charts and FAQs often are built in).
+**Step 2.** Before you install anything else, check if your theme can already do it. Badges, size charts and FAQs are often built in.
 
 **Expected result:** You avoid apps for features you already have.
 
@@ -437,7 +437,7 @@
 
 **Expected result:** The order goes through.
 
-**Step 3.** Check the confirmation email arrived, stock dropped by one, shipping and tax were right, and a Purchase showed in Meta and Google.
+**Step 3.** Check the order email arrived and stock dropped by one. Check shipping and tax were right, and a Purchase showed in Meta and Google.
 
 **Expected result:** Every system recorded the order correctly.
 

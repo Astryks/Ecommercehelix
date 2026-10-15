@@ -1,6 +1,6 @@
 # Module 21: Brand and social presence
 
-**Outcome:** your Instagram, TikTok and Facebook profiles look like a brand people can trust, match what your ads promise, and turn curious ad viewers into followers, subscribers and buyers. You have a posting schedule you can keep and a simple way to reach more people for free.
+**Outcome:** your Instagram, TikTok and Facebook profiles look like a brand people can trust and match what your ads promise. They turn curious ad viewers into followers, subscribers and buyers. You have a posting schedule you can keep and a simple way to reach more people for free.
 
 **Related:** [Module 4 Brand, content and community](04-brand-and-content.md), [Module 19 Creators, UGC and video ads](19-creators-ugc-and-video-ads.md), [Module 11 List and audience growth](11-list-and-audience-growth.md), [SOP 16 Customer research and reviews](../sops/16-customer-research-and-reviews.md)
 
@@ -35,11 +35,11 @@
 
 **Why this matters:** Many people who see an ad do not click it; they tap your name to check you out first. If they find three old posts, no reviews and a broken link, they leave. A strong profile makes every ad dollar work harder, for free.
 
-**Step 1.** Open your Instagram, TikTok and Facebook profiles on your phone as a stranger would (logged out or in a private window).
+**Step 1.** Open your Instagram, TikTok and Facebook profiles on your phone as a stranger would. Log out or use a private window.
 
 **Expected result:** You see each profile the way an ad viewer does.
 
-**Step 2.** For each profile, check it does three jobs: proves you are real, shows what you sell and gives a clear next step.
+**Step 2.** Check each profile does three jobs. It proves you are real, shows what you sell and gives a clear next step.
 
 **Expected result:** You have a list of which job each profile fails.
 
@@ -62,7 +62,7 @@
 
 **Expected result:** All three profiles pass the checklist.
 
-**Step 3.** Check that the product, offer and look in your current ads also appear on each profile (for example "free shipping this week").
+**Step 3.** Check that the product, offer and look in your ads also show on each profile. For example: "free shipping this week".
 
 **Expected result:** Ads and profiles tell the same story, so trust does not drop when people tap through.
 
@@ -98,7 +98,7 @@
 
 **Expected result:** A week of posts is scheduled in one sitting.
 
-**Step 3.** Make every post good enough to run as an ad later, with most of the value in the first quarter of the video and key points said twice.
+**Step 3.** Make every post good enough to run as an ad later. Put most of the value in the first quarter of the video, and say key points twice.
 
 **Expected result:** Your best free posts can become ads, partnership ads or Spark ads.
 
@@ -115,7 +115,7 @@
 
 **Why this matters:** Organic reach means people who see your posts without you paying. Seven tactics grow it, from trial reels to replying fast.
 
-**Step 1.** Use trial reels or test posts to show a reel to non-followers first, check after 24 hours and share winners with everyone.
+**Step 1.** Use trial reels or test posts to show a reel to non-followers first. Check after 24 hours and share winners with everyone.
 
 **Expected result:** You test hooks without cluttering your feed.
 
@@ -131,7 +131,7 @@
 
 **Expected result:** Your content reaches partners' audiences and gets early engagement.
 
-**Step 5.** Start a broadcast channel or close group for your keenest fans, and answer questions helpfully in forums where customers ask for recommendations (say who you are, never spam).
+**Step 5.** Start a broadcast channel or close group for your keenest fans. Help in forums where people ask for tips, but say who you are and never spam.
 
 **Expected result:** Fans get early access and new customers find you off-platform.
 
@@ -148,7 +148,7 @@
 
 **Expected result:** Customer posts fill a highlight.
 
-**Step 3.** Keep shop ratings healthy where you sell through social shops, and reply to bad reviews publicly and kindly before fixing the problem privately.
+**Step 3.** Keep shop ratings healthy where you sell through social shops. Reply to bad reviews kindly in public, then fix the problem in private.
 
 **Expected result:** Future customers see a calm, helpful reply.
 
@@ -165,7 +165,7 @@
 
 **Expected result:** Buyers know what to expect, protecting your shop score.
 
-**Step 3.** Check which store features do not work in the in-app checkout (for example thank-you page offers), check seller fees, and confirm in-app orders flow into your store and email platform.
+**Step 3.** Check which store features do not work in the in-app checkout, like thank-you page offers. Check seller fees, and make sure in-app orders reach your store and email tool.
 
 **Expected result:** In-app orders are profitable and land in your normal systems.
 

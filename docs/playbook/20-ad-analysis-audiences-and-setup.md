@@ -1,6 +1,6 @@
 # Module 20: Ad performance analysis, audiences and campaign setup
 
-**Outcome:** you can set up audiences and campaigns correctly on Meta, Google and TikTok, read your results like an analyst, find the real cause of a problem (the ad, the page, the offer or the checkout), and report it in a way that leads to a clear decision.
+**Outcome:** you can set up audiences and campaigns the right way on Meta, Google and TikTok. You can read your results, find the real cause of a problem (the ad, the page, the offer or the checkout), and report it so it leads to a clear choice.
 
 **Related:** [Module 6 Defining campaigns](06-defining-campaigns.md), [Module 7 Meta ads](07-meta-ads.md), [Module 8 Google ads](08-google-ads.md), [Module 2 Diagnose and fix](02-diagnose-and-fix.md), [SOP 05](../sops/05-meta-structure-and-scaling.md), [SOP 06](../sops/06-meta-daily-optimisation.md), [SOP 09](../sops/09-google-shopping-pmax-search.md)
 
@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
-> - **UTM:** Tags added to the end of a link so your analytics can tell which ad or email a visitor came from.
+> - **UTM:** Tags added to the end of a link. They tell your reports which ad or email a visitor came from.
 > - **Attribution:** Deciding which ad or channel gets credit for a sale.
 > - **Funnel:** The steps from seeing an ad to buying: visit, add to cart, checkout, order.
 >
@@ -37,7 +37,7 @@
 
 **Why this matters:** Bad data leads to bad decisions, and a broken pixel can make good ads look like failures. Check tracking once now, then every month. Your store's own reports are the truth; ad platforms are only for direction.
 
-**Step 1.** In Meta Events Manager and Google Ads **Goals > Conversions**, confirm the pixel (or Google tag) and server events (Conversions API on Meta, enhanced conversions on Google) are connected through your store platform.
+**Step 1.** Open Meta Events Manager and Google Ads **Goals > Conversions**. Check that the pixel (or Google tag) and server events are connected through your store. Server events are the Conversions API on Meta and enhanced conversions on Google.
 
 **Expected result:** Both show purchases from browser and server.
 
@@ -55,15 +55,15 @@
 
 **Expected result:** Events Manager shows deduplicated purchase events.
 
-**Step 5.** Verify your domain (Meta **Business Settings > Brand safety > Domains**) and set up a consent (cookie) banner for the countries you sell to.
+**Step 5.** Verify your domain (Meta **Business Settings > Brand safety > Domains**). Set up a cookie banner for the countries you sell to.
 
 **Expected result:** The domain shows Verified and the banner appears for visitors who need it.
 
-**Step 6.** Add UTM tags (labels on the end of a link, like `?utm_source=facebook`) to every ad link, using the URL parameters field in each ad.
+**Step 6.** Add UTM tags to every ad link, like `?utm_source=facebook`. Use the URL parameters field in each ad.
 
 **Expected result:** Google Analytics shows visits by channel and campaign.
 
-**Step 7.** Install the **Facebook & Instagram** app and connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
+**Step 7.** Install the **Facebook & Instagram** app. Connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
 
 **Expected result:** The app shows all four connected.
 
@@ -96,9 +96,9 @@
 ## Lesson 20.2: Setting up target audiences
 <!-- stage:attract -->
 
-**Why this matters:** Audiences tell each platform who already knows you, so cold campaigns find new people and warm campaigns reach the right ones. Set them up once on Meta, Google and TikTok, then reuse them in every campaign.
+**Why this matters:** Audiences tell each platform who already knows you. Then cold campaigns find new people and warm campaigns reach the right ones. Set them up once on Meta, Google and TikTok, then reuse them in every campaign.
 
-**Step 1.** On Meta, set account-wide audience segments in **Ad account settings > Audience segments**: engaged audience (visitors and social engagers) and existing customers (customer list or store connection).
+**Step 1.** On Meta, set audience groups for the whole account in **Ad account settings > Audience segments**. Add your engaged audience (visitors and social engagers) and existing customers (customer list or store link).
 
 **Expected result:** Reports show how much spend reaches brand-new people.
 
@@ -119,7 +119,7 @@
 
 **Expected result:** Three lookalike sizes are ready.
 
-**Step 4.** Set cold targeting to broad (your country, age 18 to 65+, all genders unless the product is clearly for one), choose cold exclusions (none, light: recent buyers, or harsh: all buyers and engagers), and cap existing-customer spend in automated Sales campaigns at 10 to 20%.
+**Step 4.** Set cold targeting to broad: your country, age 18 to 65+, all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Cap spend on past customers in automatic Sales campaigns at 10 to 20%.
 
 **Expected result:** Cold campaigns reach new people on purpose.
 
@@ -157,9 +157,9 @@
 ## Lesson 20.3: Setting up a Meta sales campaign step by step
 <!-- stage:attract -->
 
-**Why this matters:** A Meta sales campaign set up the same careful way every time gives each ad a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account, which you check and switch on. New to Ads Manager? Do Lesson 7.14 first, and Lesson 7.13 for your very first ad.
+**Why this matters:** A Meta sales campaign set up the same careful way every time gives each ad a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account. You check it and switch it on. New to Ads Manager? Do Lesson 7.14 first, and Lesson 7.13 for your very first ad.
 
-**Step 1.** Write the campaign brief first (Lesson 6.16): target cost per purchase, who it is for, daily budget and when you will stop it.
+**Step 1.** Write the campaign brief first (Lesson 6.16). Include target cost per purchase, who it is for, daily budget and when you will stop it.
 
 **Expected result:** The brief is finished before you open Ads Manager.
 
@@ -185,7 +185,7 @@
 
 **Expected result:** The ad set is set to find purchases.
 
-**Step 6.** Under **Attribution setting** (click **Show more options** if you cannot see it), keep **7-day click, 1-day view** or whatever your other campaigns use, so results compare.
+**Step 6.** Find **Attribution setting** (click **Show more options** if you cannot see it). Keep **7-day click, 1-day view**, or whatever your other campaigns use, so results compare.
 
 **Expected result:** All your campaigns count sales the same way.
 
@@ -193,7 +193,7 @@
 
 **Expected result:** Audience and placements match the brief.
 
-**Step 8.** At the ad level, add 3 to 6 ads that test one thing, each with main text, headline and a link with UTM tags (Lesson 20.1). Use **Duplicate** in the ad panel to make each extra ad.
+**Step 8.** At the ad level, add 3 to 6 ads that test one thing. Each needs main text, a headline and a link with UTM tags (Lesson 20.1). Use **Duplicate** in the ad panel to make each extra ad.
 
 **Expected result:** Each ad has text, headline and a tagged link.
 
@@ -238,7 +238,7 @@
 ## Lesson 20.4: Setting up Google step by step
 <!-- stage:attract -->
 
-**Why this matters:** Google works best with three simple campaigns, built in this order: **brand search** (your ad shows when people search your store's name), a **Performance Max** campaign fed by your product list (Google shows your products across Shopping, Search, YouTube and Gmail), and later **non-brand search** for the terms that sell. Helix does not connect to Google Ads yet, so you build these yourself. For your very first campaign, Lesson 8.12 has the full beginner walk-through, including creating the account.
+**Why this matters:** Google works best with three simple campaigns, built in this order. First **brand search**: your ad shows when people search your store's name. Then **Performance Max** fed by your product list, which shows your products across Shopping, Search, YouTube and Gmail. Later, **non-brand search** for the words that sell. Helix does not connect to Google Ads yet, so you build these yourself. For your very first campaign, Lesson 8.12 has the full beginner walk-through, including creating the account.
 
 **Words you will see:** **Merchant Center** is where Google keeps your product list (the **feed**). A **keyword** is a search you want to show up for. **Match type** controls how closely a search must match: **exact** (that search or very close) and **phrase** (searches containing it). **ROAS** is sales divided by ad spend.
 
@@ -246,23 +246,23 @@
 
 **Expected result:** In Google Ads, **Goals > Conversions > Summary** shows Purchase as Primary and "Recording conversions".
 
-**Step 2.** In Merchant Center (merchants.google.com), open **Products > Needs attention** and fix each listed issue, starting with the products that sell most.
+**Step 2.** In Merchant Center (merchants.google.com), open **Products > Needs attention**. Fix each issue, starting with the products that sell most.
 
 **Expected result:** Your best sellers show as approved, with no errors. Missing GTINs (barcodes) can be fixed in Shopify on each product's variant.
 
-**Step 3.** In Google Ads click **+ Create** (or the **+ New campaign** button on the Campaigns page), choose **Sales**, then **Search**, and name it "01-Search-Brand".
+**Step 3.** In Google Ads, click **+ Create** (or **+ New campaign** on the Campaigns page). Choose **Sales**, then **Search**, and name it "01-Search-Brand".
 
 **Expected result:** A new Search campaign is open on its settings page.
 
-**Step 4.** Under **Bidding** choose **Target impression share**, set **Anywhere on results page** to 90% and **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1, set a daily budget of $5 to $10, and untick **Search partners** and **Display Network**.
+**Step 4.** Under **Bidding**, choose **Target impression share** and set **Anywhere on results page** to 90%. Set **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1, and a daily budget of $5 to $10. Untick **Search partners** and **Display Network**.
 
-**Expected result:** The brand campaign has a $5 to $10 daily budget, Target impression share bidding with a capped cost per click, and runs on Search only.
+**Expected result:** The brand campaign has a $5 to $10 daily budget and Target impression share bidding. Cost per click is capped, and it runs on Search only.
 
-**Step 5.** In the ad group, add your store name and common misspellings as keywords, typed as `[your brand]` (exact) and `"your brand"` (phrase).
+**Step 5.** In the ad group, add your store name and common misspellings as keywords. Type them as `[your brand]` (exact) and `"your brand"` (phrase).
 
 **Expected result:** The ad group has 2 to 6 brand keywords.
 
-**Step 6.** Write one responsive search ad: up to 15 headlines and 4 descriptions about your store, your best sellers and your offer, then add 4 sitelinks (Best sellers, New in, Shipping, Reviews). Click **Publish campaign**.
+**Step 6.** Write one responsive search ad with up to 15 headlines and 4 descriptions about your store, best sellers and offer. Then add 4 sitelinks: Best sellers, New in, Shipping, Reviews. Click **Publish campaign**.
 
 **Expected result:** The brand campaign is live and "Eligible". Searches for your name show your ad.
 
@@ -275,7 +275,7 @@
 
 **Expected result:** A new Performance Max campaign is connected to your product feed.
 
-**Step 8.** Set **Bidding** to **Conversion value** (Maximise conversion value) without a target ROAS (sales for each $1 of ads) for now, and a daily budget from your marketing guide (Lesson 1.9).
+**Step 8.** Set **Bidding** to **Conversion value** (Maximise conversion value) with no target ROAS for now. Set a daily budget from your marketing guide (Lesson 1.9).
 
 **Expected result:** The campaign has a budget and value bidding.
 
@@ -304,7 +304,7 @@
 
 **Expected result:** New searchers find you, and searches that never buy are blocked.
 
-**Watch out:** Your screen may look a little different, because Google changes its menus often. Look for the same words (Create, Campaigns, Bidding, Brand exclusions, Search terms), or use the search box at the top of Google Ads.
+**Watch out:** Your screen may look a little different, because Google changes its menus often. Look for the same words (Create, Campaigns, Bidding, Brand exclusions, Search terms). Or use the search box at the top of Google Ads.
 
 ### Good to know
 
@@ -323,7 +323,7 @@
 ## Lesson 20.5: Setting up a TikTok campaign step by step
 <!-- stage:attract -->
 
-**Why this matters:** TikTok campaigns follow the same logic as Meta with a few differences: a different purchase event name, jumpier learning and sales that often show up under other channels.
+**Why this matters:** TikTok campaigns work like Meta with a few differences. The purchase event has a different name, learning is jumpier, and sales often show up under other channels.
 
 **Step 1.** Create a campaign with the **Sales** objective (website conversions or TikTok Shop) and the pixel event **Complete payment**.
 
@@ -337,7 +337,7 @@
 
 **Expected result:** Ads look like TikTok posts and keep their social proof.
 
-**Step 4.** Give it a week, then judge on total MER (total ad spend as a share of total sales) on the Dashboard as well as TikTok's reported return.
+**Step 4.** Give it a week. Then judge it on total MER on the Dashboard (total ad spend as a share of total sales), as well as TikTok's own numbers.
 
 **Expected result:** You judge TikTok on its whole-store effect.
 
@@ -350,7 +350,7 @@
 
 **Step 1.** Read the metric tree below from top to bottom and write your current number next to each step.
 
-**Expected result:** You have a number for CPM, CTR, cost per click, landing page view rate, add to cart rate, checkout rate, purchase rate and AOV.
+**Expected result:** You have a number for CPM, CTR, cost per click and landing page view rate. You also have add to cart rate, checkout rate, purchase rate and AOV.
 
 <!-- do:metrics -->
 
@@ -413,7 +413,7 @@ Spend
 
 **Why this matters:** Breakdowns split your results by group in Ads Manager and reveal problems hidden in averages. Look at them weekly, not daily.
 
-**Step 1.** In Ads Manager click **Breakdown > By delivery > Placement** and check whether one placement (for example Audience Network) spends a lot at a high cost per sale.
+**Step 1.** In Ads Manager, click **Breakdown > By delivery > Placement**. Check if one placement (like Audience Network) spends a lot at a high cost per sale.
 
 **Expected result:** You know your best and worst placements.
 
@@ -421,7 +421,7 @@ Spend
 
 **Expected result:** You know who buys and who does not.
 
-**Step 3.** Break down by device and time: if phones convert far worse than computers, fix the mobile site; note day-of-week patterns for launches and emails.
+**Step 3.** Break down by device and time. If phones sell far worse than computers, fix the phone site. Note which days of the week work best for launches and emails.
 
 **Expected result:** You have device and timing insights.
 
@@ -485,7 +485,7 @@ Spend
 
 **Why this matters:** A report is only useful if it leads to a decision. Four questions do that; dashboards with 40 numbers do not.
 
-**Step 1.** Start each report with what happened: sales, contribution profit and MER (total ad spend as a share of total sales) against target.
+**Step 1.** Start each report with what happened. Show sales, contribution profit and MER (total ad spend as a share of total sales) against target.
 
 **Expected result:** Three numbers open every report.
 
@@ -514,7 +514,7 @@ Spend
 
 **Expected result:** ROAS is always read against break-even.
 
-**Step 3.** Do not turn off an ad set the platform calls "bad" while your MER is improving, and check what happens after the click before trusting CTR (how many in 100 people clicked).
+**Step 3.** Do not turn off an ad set the platform calls "bad" while your MER is getting better. Check what happens after the click before you trust CTR (how many in 100 people clicked).
 
 **Expected result:** Decisions follow store results.
 

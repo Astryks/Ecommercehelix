@@ -1,6 +1,6 @@
 # Module 19: Creators, UGC and video ads
 
-**Outcome:** you can find and sign creators, run partnership ads (ads from a creator's own account), build an affiliate program that does not clash with your own offers, and make video ads that stop the scroll. You will know how to write hooks and scripts, pick formats, film and edit, and brief creators so they deliver what you need the first time.
+**Outcome:** you can find and sign creators and run partnership ads (ads from a creator's own account). You can build an affiliate program that does not clash with your own offers, and make video ads that stop the scroll. You will learn to write hooks and scripts, pick formats, film and edit. You will also brief creators so they deliver what you need the first time.
 
 **Related:** [Module 5 Creative strategy](05-creative-strategy.md), [Module 6 Defining campaigns](06-defining-campaigns.md), [SOP 08 Creative briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md), [SOP 07 Creative testing](../sops/07-creative-testing.md)
 
@@ -35,7 +35,7 @@
 ## Lesson 19.1: Why other people's faces sell your product
 <!-- stage:attract -->
 
-**Why this matters:** People trust people more than brands. When someone who looks like your customer explains why they switched, it feels more real than the brand praising itself, and it gives ad platforms the variety of ages, styles and reasons they need to find new buyers. UGC (user-generated content) means photos and videos made by customers or creators instead of the brand.
+**Why this matters:** People trust people more than brands. When someone like your customer explains why they switched, it feels more real than a brand praising itself. It also gives ad platforms the mix of ages, styles and reasons they need to find new buyers. UGC (user-generated content) means photos and videos made by customers or creators instead of the brand.
 
 **Step 1.** Read the four ways to work with creators in the table below (gifting, paid UGC, influencer or partnership, affiliate).
 
@@ -69,7 +69,7 @@
 
 **Expected result:** You have a list of warm creator leads.
 
-**Step 2.** Search the platforms for the problems your product solves (not your product name) and save creators you would stop to watch.
+**Step 2.** Search the platforms for the problems your product solves, not your product name. Save creators you would stop to watch.
 
 **Expected result:** Your list grows with problem-focused creators.
 
@@ -77,7 +77,7 @@
 
 **Expected result:** You have 20 or more candidates.
 
-**Step 4.** Score each out of 10 across comfort on camera, speaking to your customer, natural platform style, real community in comments, regular posting and fitting values.
+**Step 4.** Score each one out of 10. Look at comfort on camera, speaking to your customer, natural style, a real community in comments, regular posting and shared values.
 
 **Expected result:** Each creator has a score.
 
@@ -108,7 +108,7 @@
 
 **Expected result:** You can see the whole pipeline at a glance.
 
-**Step 5.** Brief creators for the busy season in September, not November, and keep months of stock and new products flowing to your best partners.
+**Step 5.** Brief creators for the busy season in September, not November. Keep stock and new products flowing to your best partners for months.
 
 **Expected result:** Creator content arrives in time for peak.
 
@@ -123,7 +123,7 @@
 
 **Why this matters:** Clear terms prevent disputes and let you use content the way you planned. Seven terms cover every creator deal.
 
-**Step 1.** For each creator, agree the seven terms in the table below: deliverables, usage rights, exclusivity, partnership ad access, payment, changes and disclosure.
+**Step 1.** For each creator, agree the seven terms in the table below. They are deliverables, usage rights, exclusivity, partnership ad access, payment, changes and disclosure.
 
 **Expected result:** Every term has an agreed answer.
 
@@ -152,7 +152,7 @@
 
 **Why this matters:** An affiliate earns a commission on each sale they bring. Cannibalising means your own offers steal the sale from them, and when that happens creators stop posting.
 
-**Step 1.** Set up an example offer, such as 10% off for the creator's audience and 15% commission on orders over $100 from new customers.
+**Step 1.** Set up a sample offer. For example: 10% off for the creator's audience, and 15% commission on orders over $100 from new customers.
 
 **Expected result:** The offer is live in your affiliate app.
 
@@ -162,11 +162,11 @@
 
 <!-- do:metrics -->
 
-**Step 3.** Fix offer clashes: if your pop-up gives 15% and their code gives 10%, match the creator code to your best public offer or give creators something only they have (a bundle, a gift or free express shipping).
+**Step 3.** Fix offer clashes. If your pop-up gives 15% and their code gives 10%, match the creator code to your best public offer. Or give creators something only they have, like a bundle, a gift or free express shipping.
 
 **Expected result:** Creator codes are always the best deal for their audience.
 
-**Step 4.** Give affiliates a content guide: product facts and top three problems solved, proven angles and hooks, a do and don't list, example videos, and how and when they get paid.
+**Step 4.** Give affiliates a content guide. Include product facts and the top three problems it solves, proven angles and hooks, and a do and don't list. Add sample videos, and how and when they get paid.
 
 **Expected result:** Affiliates can post without asking you questions.
 
@@ -177,13 +177,13 @@
 ## Lesson 19.6: Partnership ads (whitelisting)
 <!-- stage:attract -->
 
-**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account instead of your brand page. People see a familiar person, not an ad. Meta reports lower cost per customer when they sit inside normal sales campaigns; treat that as a reason to test, not a promise.
+**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account instead of your brand page. People see a familiar person, not an ad. Meta reports a lower cost per customer when these ads sit inside normal sales campaigns. Treat that as a reason to test, not a promise.
 
 **Step 1.** Ask the creator's permission in writing and agree how long it lasts.
 
 **Expected result:** You have written permission with an end date.
 
-**Step 2.** Ask the creator to connect your ad account through Meta's partnership ad settings (Instagram **Settings > Business tools > Branded content**).
+**Step 2.** Ask the creator to connect your ad account in Meta's partnership ad settings. On Instagram that is **Settings > Business tools > Branded content**.
 
 **Expected result:** Their account shows in Ads Manager as an identity you can use.
 
@@ -191,7 +191,7 @@
 
 **Expected result:** You have picked 2 to 5 creator posts.
 
-**Step 4.** Add them to your normal cold campaign as a new batch (not a separate campaign) and make the brand clear in the first five seconds.
+**Step 4.** Add them to your normal cold campaign as a new batch, not a separate campaign. Make the brand clear in the first five seconds.
 
 **Expected result:** Partnership ads run alongside your other ads.
 
@@ -201,7 +201,7 @@
 
 **Expected result:** Creator ads earn their budget on the same terms.
 
-**Step 6.** Brief every creator on one page: goal, audience, key message, must say, must not say, 3 hook options, deliverables, usage rights and deadline.
+**Step 6.** Brief every creator on one page. Include the goal, audience, key message, must say, must not say, 3 hook ideas, deliverables, usage rights and deadline.
 
 **Expected result:** Each creator has a written brief before filming.
 
@@ -253,21 +253,21 @@
 ## Lesson 19.8: Hooks that win the first three seconds
 <!-- stage:attract -->
 
-**Why this matters:** Every video has two hooks working together in the first 3 seconds: what you see (the visual hook) and the first sentence (the spoken hook). They do not have to say the same thing. Hooks are what you test most.
+**Why this matters:** Every video has two hooks working together in the first 3 seconds. One is what you see (the visual hook). The other is the first sentence (the spoken hook). They do not have to say the same thing. Hooks are what you test most.
 
 **Step 1.** Collect hook ideas from customer reviews, support emails and competitors' one and two star reviews.
 
 **Expected result:** You have a hook bank of 10 or more ideas.
 
-**Step 2.** Write a visual hook for your next video: movement, an odd object, a result, a face mid-reaction or bold on-screen text.
+**Step 2.** Write a visual hook for your next video. Try movement, an odd object, a result, a face mid-reaction or bold text on screen.
 
 **Expected result:** The first frame grabs attention with sound off.
 
-**Step 3.** Write 3 spoken hooks from different types: bold statement, call out, curiosity gap, gossip, myth, one-star reply, price question, result first, opinion or surprising fact.
+**Step 3.** Write 3 spoken hooks of different types. Try a bold claim, a call out, a curious gap, gossip, a myth, a reply to a one-star review, a price question, the result first, an opinion or a surprising fact.
 
 **Expected result:** You have 3 openings to film.
 
-**Step 4.** After 7 days, check hook rate (3-second views divided by impressions) and hold rate (views to 50%, or ThruPlays, divided by 3-second views) in Ads Manager.
+**Step 4.** After 7 days, check two numbers in Ads Manager. Hook rate is 3-second views divided by impressions. Hold rate is views to 50% (or ThruPlays) divided by 3-second views.
 
 **Expected result:** You know which opening works. Under 20% hook rate means the opening is not working.
 
@@ -278,19 +278,19 @@
 
 **Why this matters:** A script turns a hook into a sale. A simple five-part structure for 20 to 45 seconds works for most products, and rotating script ideas keeps ads fresh.
 
-**Step 1.** Draft your script in the five parts in the table below: hook, problem or setting, product and proof, answer a worry, call to action.
+**Step 1.** Draft your script in the five parts in the table below. They are the hook, the problem or setting, product and proof, answering a worry, and the call to action.
 
 **Expected result:** You have a 20 to 45 second script.
 
-**Step 2.** Pick a script idea to rotate in: bold statement and proof, four reasons, myth and friction, gossip, same product different problem, why now, let the product talk, or face the competition.
+**Step 2.** Pick a script idea to rotate in. Try a bold claim and proof, four reasons, a myth, gossip, or the same product for a different problem. Or try why now, let the product talk, or face the rivals.
 
 **Expected result:** Your next batch uses a script idea you have not tried recently.
 
-**Step 3.** Write a specific call to action with a reason ("Tap Shop now and grab the starter kit, so it arrives before Friday") that matches the landing page offer.
+**Step 3.** Write a clear call to action with a reason, like "Tap Shop now and grab the starter kit, so it arrives before Friday". It should match the offer on the landing page.
 
 **Expected result:** The call to action is specific and matches the page.
 
-**Watch out:** Lots of views but few sales usually means a weak call to action or a hook that attracts the wrong people. Test 30 to 60 second versions when the product needs explaining.
+**Watch out:** Lots of views but few sales usually means a weak call to action. Or the hook draws the wrong people. Test 30 to 60 second versions when the product needs explaining.
 
 ### Good to know
 
@@ -413,7 +413,7 @@ Examples we love: [links]
 
 **Expected result:** You can find any past winner in seconds.
 
-**Step 3.** Every Monday, review last week's results, pick the winning idea and brief new versions (new hooks, creators and formats with the same message).
+**Step 3.** Every Monday, look at last week's results and pick the winning idea. Brief new versions with the same message: new hooks, creators and formats.
 
 **Expected result:** A new batch is briefed every Monday.
 

@@ -1,6 +1,6 @@
 # Module 23: Fulfilment, shipping and returns
 
-**Outcome:** orders leave on time, shipping costs are known before you set prices, delivery problems have a plan, and returns cost you less each month. You know when to hand packing to a warehouse partner and how to move without losing orders.
+**Outcome:** orders leave on time and you know shipping costs before you set prices. Delivery problems have a plan, and returns cost you less each month. You know when to hand packing to a warehouse partner and how to move without losing orders.
 
 **Related:** [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 22 Shopify store setup](22-shopify-store-setup.md), [Module 26 Tax, GST, sales tax and duties](26-tax-gst-sales-tax-duties.md), [Module 9 Website, conversion and order value](09-website-and-cro.md)
 
@@ -35,7 +35,7 @@
 ## Lesson 23.1: Do you need a 3PL yet?
 <!-- stage:grow -->
 
-**Why this matters:** Packing orders yourself is cheap at first and expensive later, because your hours stop going into growth. A 3PL (third party logistics: a warehouse company that stores and ships for you) makes sense when packing takes more of your week than selling does.
+**Why this matters:** Packing orders yourself is cheap at first and expensive later, because your hours stop going into growth. A 3PL is a warehouse company that stores and ships for you. It makes sense when packing takes more of your week than selling does.
 
 **Step 1.** For one normal week, write down how many orders you sent and how many hours packing, labelling and drop-offs took.
 
@@ -45,13 +45,13 @@
 
 **Expected result:** You have one true cost per order, including your time.
 
-**Step 3.** Ask at least 3 warehouses to quote on the same sample month: orders per month, units per order, number of products, carton sizes and pallets or shelves of stock.
+**Step 3.** Ask at least 3 warehouses for a price on the same sample month. Give orders per month, units per order, number of products, carton sizes, and pallets or shelves of stock.
 
 **Expected result:** You have 3 quotes for the same workload.
 
-**Watch out:** Australia: most warehouses are in Sydney, Melbourne or Brisbane, so ask for delivery times to Perth and regional areas. US: one central warehouse reaches most addresses in 2 to 5 days by ground; stock held in a state can create sales tax duties there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
+**Watch out:** Australia: most warehouses are in Sydney, Melbourne or Brisbane, so ask for delivery times to Perth and regional areas. US: one central warehouse reaches most addresses in 2 to 5 days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
 
-**Step 4.** Compare the full monthly bill, not just pick and pack: receiving, storage (per pallet, shelf or cubic metre), packaging, monthly minimums, set-up, returns handling and peak surcharges.
+**Step 4.** Compare the full monthly bill, not just pick and pack. Include receiving, storage (per pallet, shelf or cubic metre) and packaging. Add monthly minimums, set-up, returns and busy-season extras.
 
 **Expected result:** You can see the real total for each quote.
 
@@ -59,7 +59,7 @@
 
 **Expected result:** You can see fees the price sheet leaves out.
 
-**Step 6.** Ask 3 service questions: the daily order cut-off time, the error rate they measure, and what they do when they make a mistake.
+**Step 6.** Ask 3 service questions. What is the daily order cut-off time? What error rate do they measure? What do they do when they make a mistake?
 
 **Expected result:** You know how reliable each warehouse is.
 
@@ -70,9 +70,9 @@
 ## Lesson 23.2: Moving to a 3PL without losing orders
 <!-- stage:grow -->
 
-**Why this matters:** Most moves to a warehouse go wrong in the handover week: stock counts do not match, barcodes are missing or orders get stuck between systems. A careful switch avoids all three.
+**Why this matters:** Most moves to a warehouse go wrong in the handover week. Stock counts do not match, barcodes are missing or orders get stuck between systems. A careful switch avoids all three.
 
-**Step 1.** Give every product and variant a unique SKU (stock keeping unit: your own product code) and a barcode before anything ships (see [Module 22](22-shopify-store-setup.md)).
+**Step 1.** Give every product and variant its own SKU (your own product code) and a barcode before anything ships (see [Module 22](22-shopify-store-setup.md)).
 
 **Expected result:** Every variant has a SKU and barcode.
 
@@ -126,7 +126,7 @@
 
 <!-- do:numbers -->
 
-**Step 4.** Choose a rule: free shipping over an amount, a flat rate, or real-time rates, with any free shipping amount a little above your average order (see [Lesson 9.11](09-website-and-cro.md#lesson-911-shipping-psychology)).
+**Step 4.** Choose a rule: free shipping over an amount, a flat rate, or live rates. Set any free shipping amount a little above your average order (see [Lesson 9.11](09-website-and-cro.md#lesson-911-shipping-psychology)).
 
 **Expected result:** You have one clear shipping rule.
 
@@ -134,7 +134,7 @@
 
 **Expected result:** Fewer "where is my order" emails.
 
-**Step 6.** Write a disruption plan: a second carrier you can switch to, an email you can send in minutes and a store banner.
+**Step 6.** Write a plan for delivery problems. Have a second carrier you can switch to, an email you can send in minutes, and a store banner.
 
 **Expected result:** You can react to a postal delay the same day.
 
@@ -145,13 +145,13 @@
 ## Lesson 23.4: Shipping protection and lost or damaged parcels
 <!-- stage:grow -->
 
-**Why this matters:** Some parcels will go missing or arrive broken. Decide in advance who pays, how fast you fix it and whether you offer optional shipping protection (a small opt-in fee that covers loss or damage).
+**Why this matters:** Some parcels will go missing or arrive broken. Decide early who pays and how fast you fix it. Also decide if you offer shipping protection: a small fee the buyer can choose that covers loss or damage.
 
 **Step 1.** Track lost and damaged parcels for one month: how many, what they cost and which carrier.
 
 **Expected result:** You know the monthly cost of lost and damaged parcels.
 
-**Step 2.** Write a simple rule, such as: resend or refund once the carrier marks a parcel lost or the customer sends a photo of damage.
+**Step 2.** Write a simple rule. For example: resend or refund once the carrier marks a parcel lost, or the customer sends a photo of damage.
 
 **Expected result:** Anyone on your team can handle a claim the same way.
 
@@ -182,7 +182,7 @@
 
 **Expected result:** You have a return rate per product.
 
-**Step 2.** Record a reason for every return (too small, too big, not as pictured, faulty, changed mind) and fix the top reason first.
+**Step 2.** Record a reason for every return: too small, too big, not as pictured, faulty or changed mind. Fix the top reason first.
 
 **Expected result:** You know your number one return reason.
 
@@ -194,7 +194,7 @@
 
 **Expected result:** More returns become exchanges.
 
-**Watch out:** Australia: customers have rights to repair, replacement or refund for faulty products whatever your policy says; never write "no refunds" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** In Australia, customers have the right to a repair, replacement or refund for faulty products, whatever your policy says. Never write "no refunds" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 5.** Make returns easy to start with a form or portal, checking the portal's price against your return volume.
 
@@ -221,11 +221,11 @@
 
 <!-- do:stock -->
 
-**Step 2.** Move to inventory software when 2 or more are true: over about 100 variants, more than one warehouse, frequent stock mistakes, or hours each week spent on stock.
+**Step 2.** Move to stock software when 2 or more of these are true. You have over about 100 variants, more than one warehouse, frequent stock mistakes, or you spend hours each week on stock.
 
 **Expected result:** You know whether you need software yet.
 
-**Step 3.** Before you buy, list what you need: purchase orders, landed cost (product plus freight, duties and fees), multiple locations, bundles and an accounting link.
+**Step 3.** Before you buy, list what you need. For example: purchase orders, landed cost (product plus freight, duties and fees), several locations, bundles and a link to your accounts.
 
 **Expected result:** You have a short requirements list.
 
@@ -240,17 +240,17 @@
 ## Lesson 23.7: Customer service that keeps customers
 <!-- stage:grow -->
 
-**Why this matters:** Most questions are the same handful: where is my order, can I change my size, how do I return this. Fast, friendly answers turn a worried buyer into a repeat buyer, and good automation takes most of the load off you.
+**Why this matters:** Most questions are the same few. Where is my order? Can I change my size? How do I return this? Fast, friendly answers turn a worried buyer into a repeat buyer, and good automation takes most of the load off you.
 
 **Step 1.** Read your last 50 customer emails and messages and group them by question. Count the top five.
 
 **Expected result:** A list of your five most common questions, with how often each comes up.
 
-**Step 2.** Write a saved reply for each of the five in your own voice, and put the answers on your FAQ and order confirmation pages so fewer people need to ask.
+**Step 2.** Write a saved reply for each of the five in your own voice. Put the answers on your FAQ and order pages, so fewer people need to ask.
 
 **Expected result:** Five saved replies, and the same answers on your site.
 
-**Step 3.** Bring email, chat and social messages into one shared inbox (Shopify Inbox or a help desk app), and switch on an automatic order tracking reply.
+**Step 3.** Bring email, chat and social messages into one shared inbox (Shopify Inbox or a help desk app). Switch on an automatic order tracking reply.
 
 **Expected result:** Every message lands in one place, and "where is my order" gets an instant answer.
 
