@@ -25,18 +25,23 @@ const FIELD_OPTIONS: [Target, string][] = [["", "Ignore"], ["date", "Date"], ["o
 
 const money = (n: number) => (n < 0 ? "-$" : "$") + Math.abs(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
 const fmtCalc = (k: keyof Calc, v: number) => (k === "profit" || k === "aov" ? money(v) : k === "roas" ? (v ? `${v.toFixed(2)}x` : "-") : `${v.toFixed(1)}%`);
-const today = () => new Date().toISOString().slice(0, 10);
+// Local date (not UTC), so "today" is right in every time zone.
+const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 
 function Cell({ date, field, value, isMoney, save }: { date: string; field: string; value: number; isMoney: boolean; save: Actions["saveCell"] }) {
   const [v, setV] = useState(String(value || ""));
-  const [state, setState] = useState<"idle" | "saving" | "saved">("idle");
+  const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const last = useRef(String(value || ""));
   const commit = async () => {
     if (v === last.current) return;
+    const n = Number(v);
+    if (v !== "" && !Number.isFinite(n)) { setState("error"); return; }
     setState("saving");
-    const r = await save(date, field, Number(v) || 0);
+    let ok = false;
+    try { ok = (await save(date, field, n || 0)).ok; } catch { ok = false; }
+    if (!ok) { setState("error"); return; } // keep last as is, so the next blur tries again
     last.current = v;
-    setState(r.ok ? "saved" : "idle");
+    setState("saved");
     setTimeout(() => setState("idle"), 1200);
   };
   return (
@@ -45,7 +50,8 @@ function Cell({ date, field, value, isMoney, save }: { date: string; field: stri
       <span className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-400">{isMoney ? "$" : ""}</span>
       <input id={`${date}-${field}`} inputMode="decimal" value={v} placeholder="0" onChange={(e) => setV(e.target.value.replace(/[^0-9.]/g, ""))} onBlur={commit}
         onKeyDown={(e) => { if (e.key === "Enter") (e.target as HTMLInputElement).blur(); }}
-        className={`w-24 rounded-md border border-transparent bg-transparent py-1 pr-2 text-right tabular-nums hover:border-slate-300 focus:border-cyan-500 focus:bg-white focus:outline-none ${isMoney ? "pl-5" : "pl-2"} ${state === "saved" ? "bg-emerald-50" : ""}`} />
+        className={`w-24 rounded-md border border-transparent bg-transparent py-1 pr-2 text-right tabular-nums hover:border-slate-300 focus:border-cyan-500 focus:bg-white focus:outline-none ${isMoney ? "pl-5" : "pl-2"} ${state === "saved" ? "bg-emerald-50" : ""} ${state === "error" ? "!border-rose-400 bg-rose-50" : ""}`}
+        aria-invalid={state === "error" || undefined} title={state === "error" ? "Not saved. Check the number and try again." : undefined} />
       {state === "saving" && <Loader2 className="absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 animate-spin text-slate-400" aria-hidden />}
     </td>
   );
@@ -186,7 +192,7 @@ export function DailyTable({ raw, calc, actions }: { raw: Raw[]; calc: Calc[]; a
                 return (
                   <tr key={String(r.date)} className="border-t border-slate-100 bg-white">
                     <th scope="row" className="sticky left-0 z-10 whitespace-nowrap bg-white px-3 py-1.5 text-left font-medium text-slate-900 shadow-[1px_0_0_#dedcd4]">{String(r.date)}</th>
-                    {EDIT.map(([k, , m]) => <Cell key={k} date={String(r.date)} field={k} value={Number(r[k]) || 0} isMoney={m} save={actions.saveCell} />)}
+                    {EDIT.map(([k, , m]) => <Cell key={`${k}-${Number(r[k]) || 0}`} date={String(r.date)} field={k} value={Number(r[k]) || 0} isMoney={m} save={actions.saveCell} />)}
                     {CALC.map(([k], i) => <td key={k} className={`whitespace-nowrap bg-slate-50 px-3 py-1.5 text-slate-700 ${i === 0 ? "border-l border-slate-300 font-semibold " + ((c?.profit ?? 0) < 0 ? "text-rose-700" : "text-emerald-700") : ""}`}>{c ? fmtCalc(k, Number(c[k])) : "-"}</td>)}
                   </tr>
                 );
