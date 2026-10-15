@@ -17,7 +17,7 @@ export function SiteHeader({ dark = false }: { dark?: boolean }) {
         </div>
         <div className="flex items-center gap-3 sm:gap-4">
           <Link href="/signin" className={`hidden text-sm font-medium sm:inline ${link}`}>Sign in</Link>
-          <Link href="/dashboard" className="btn-primary">Open Helix</Link>
+          <Link href="/dashboard" className="btn-primary whitespace-nowrap px-3 sm:px-5">Open Helix</Link>
           {/* Phones: a simple menu that works without JavaScript. */}
           <details className="group relative md:hidden">
             <summary className={`flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-lg ring-1 [&::-webkit-details-marker]:hidden ${dark ? "text-white ring-white/30" : "text-slate-800 ring-slate-300"}`} aria-label="Menu">
