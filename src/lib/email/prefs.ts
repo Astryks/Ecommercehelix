@@ -3,16 +3,16 @@ import { hasDb, prisma } from "../db";
 import type { PlanId } from "../plans";
 import { PLAN_RANK } from "../plans";
 
-export type MarketingKind = "daily" | "event" | "winback" | "scorecard";
-export const MARKETING_KINDS: MarketingKind[] = ["daily", "event", "winback", "scorecard"];
-export type Prefs = { dailyTasks: boolean | null; events: boolean; winback: boolean; scorecard: boolean; timezone: string; unsubToken: string };
+export type MarketingKind = "daily" | "event" | "winback" | "scorecard" | "alerts";
+export const MARKETING_KINDS: MarketingKind[] = ["daily", "event", "winback", "scorecard", "alerts"];
+export type Prefs = { dailyTasks: boolean | null; events: boolean; winback: boolean; scorecard: boolean; alerts: boolean; timezone: string; unsubToken: string };
 
-const DEFAULT: Prefs = { dailyTasks: null, events: true, winback: true, scorecard: true, timezone: "Australia/Sydney", unsubToken: "" };
+const DEFAULT: Prefs = { dailyTasks: null, events: true, winback: true, scorecard: true, alerts: true, timezone: "Australia/Sydney", unsubToken: "" };
 
 export async function getPrefs(userId: string): Promise<Prefs> {
   if (!hasDb) return { ...DEFAULT, unsubToken: `mem-${userId}` };
   const r = await prisma.emailPrefs.upsert({ where: { userId }, create: { userId }, update: {} });
-  return { dailyTasks: r.dailyTasks, events: r.events, winback: r.winback, scorecard: r.scorecard, timezone: r.timezone, unsubToken: r.unsubToken };
+  return { dailyTasks: r.dailyTasks, events: r.events, winback: r.winback, scorecard: r.scorecard, alerts: r.alerts, timezone: r.timezone, unsubToken: r.unsubToken };
 }
 
 export async function savePrefs(userId: string, p: Partial<Omit<Prefs, "unsubToken">>) {
@@ -23,7 +23,7 @@ export async function savePrefs(userId: string, p: Partial<Omit<Prefs, "unsubTok
 /** One-click unsubscribe by token. kind "all" switches off every marketing email. */
 export async function unsubscribe(token: string, kind: string): Promise<boolean> {
   if (!hasDb || !token) return false;
-  const data = kind === "daily" ? { dailyTasks: false } : kind === "event" ? { events: false } : kind === "winback" ? { winback: false } : kind === "scorecard" ? { scorecard: false } : { dailyTasks: false, events: false, winback: false, scorecard: false };
+  const data = kind === "daily" ? { dailyTasks: false } : kind === "event" ? { events: false } : kind === "winback" ? { winback: false } : kind === "scorecard" ? { scorecard: false } : kind === "alerts" ? { alerts: false } : { dailyTasks: false, events: false, winback: false, scorecard: false, alerts: false };
   const r = await prisma.emailPrefs.updateMany({ where: { unsubToken: token }, data });
   return r.count > 0;
 }
@@ -35,6 +35,7 @@ export function allowed(p: Prefs, plan: PlanId, kind: string): boolean {
   if (kind === "event") return p.events;
   if (kind === "winback") return p.winback;
   if (kind === "scorecard") return p.scorecard;
+  if (kind === "alerts") return p.alerts;
   return true; // transactional
 }
 

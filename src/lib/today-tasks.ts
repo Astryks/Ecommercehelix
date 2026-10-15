@@ -46,7 +46,7 @@ export const ROUTINE_TASK_ID = /^routine-[a-z]+-\d{4}-\d{2}-\d{2}$/;
  * Morning check: quick looks (numbers, ads). Main focus: one seasonal step (tagged), the plan's lesson, one fix.
  * Before you finish: write one win, glance at tomorrow. Done tasks stay on the list with a tick so the bar can fill.
  */
-export function planToday(i: TodayInputs & { hasAds?: boolean; seasonTag?: string; tip?: { text: string; href: string; label: string } }, max = 7): TodayPlan {
+export function planToday(i: TodayInputs & { hasAds?: boolean; seasonTag?: string; tip?: { text: string; href: string; label: string }; alerts?: { key: string; kind: string; title: string; why: string; href: string }[]; review?: { saved: boolean; worst: string | null } }, max = 7): TodayPlan {
   const d = i.today;
   const r = (key: string, t: Omit<PlannedTask, "id" | "taskId" | "done" | "kind"> & { kind?: TodayTask["kind"] }): PlannedTask => {
     const taskId = key === "numbers" ? `numbers-${d}` : `routine-${key}-${d}`;
@@ -60,6 +60,16 @@ export function planToday(i: TodayInputs & { hasAds?: boolean; seasonTag?: strin
   const pushMain = (t: TodayTask | null | undefined, tag?: string) => {
     if (t && !main.some((m) => m.taskId === t.taskId)) main.push({ ...t, done: i.done.has(t.taskId), tag, lessonHref: t.guideHref, lessonLabel: t.kind === "season" ? "Season lesson" : "Lesson" });
   };
+  // Monday review first on Mondays, then alerts from the numbers (cash, stock, products, ad check), then the season step.
+  if (i.review) {
+    const tid = `routine-review-${d}`;
+    main.push({ id: tid, taskId: tid, kind: "numbers", title: "Monday review: five numbers, one fix", why: i.review.worst ? `Helix flagged ${i.review.worst} as the one to work on.` : "15 minutes to see last week and pick one fix.", minutes: 15, guideHref: "#review", lessonHref: "#review", lessonLabel: "Open the review", done: i.review.saved || i.done.has(tid), tag: "Weekly" });
+  }
+  const TAG: Record<string, string> = { cash: "Cash", reorder: "Stock", product: "Profit", adcheck: "Ad check" };
+  for (const a of i.alerts ?? []) {
+    const tid = `alert-${a.key}`;
+    main.push({ id: tid, taskId: tid, kind: "numbers", title: a.title, why: a.why, minutes: 10, guideHref: a.href, lessonHref: a.href, lessonLabel: "Open the tool", done: false, tag: TAG[a.kind] ?? "Alert" });
+  }
   pushMain(i.season[0], i.seasonTag ?? "Season");
   pushMain(i.day);
   pushMain(i.insight);

@@ -8,6 +8,8 @@ import { numbersDays, totals } from "@/lib/numbers";
 import { addDays, isoDay } from "@/lib/dates";
 import { NumbersChart } from "@/components/dashboard/NumbersChart";
 import { LostLink } from "@/components/dashboard/LostLink";
+import { ToolsGrid } from "@/components/tools/ToolsGrid";
+import { computeTools } from "@/lib/tools/server";
 
 export const metadata = { title: "Numbers" };
 
@@ -23,6 +25,7 @@ export default async function NumbersPage({ searchParams }: PageProps<"/dashboar
   const rows = numbersDays(days, settings, yesterday, 56, unitCost);
   const wk = totals(rows.slice(-7));
   const example = days.some((d) => d.example);
+  const tools = await computeTools(u.id);
   const day = typeof sp.day === "string" && /^\d{4}-\d{2}-\d{2}$/.test(sp.day) ? sp.day : undefined;
   return (
     <div className="mx-auto max-w-5xl space-y-5">
@@ -53,6 +56,7 @@ export default async function NumbersPage({ searchParams }: PageProps<"/dashboar
         </div>
         <div className="mt-3"><NumbersChart days={rows} initialDay={day} shopify={Boolean(shop)} meta={Boolean(meta)} google={Boolean(ga?.customerId)} /></div>
       </section>
+      <ToolsGrid t={tools} />
       {!unitCost && (
         <section className="card p-5">
           <h2 className="font-hand text-xl text-cyan-700">Set your unit cost once</h2>

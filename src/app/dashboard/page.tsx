@@ -48,6 +48,9 @@ import { mondayOf, seenAchievements } from "@/lib/community";
 import { planToday, type TodayTask } from "@/lib/today-tasks";
 import { siteContent } from "@/lib/site-content";
 import { getShopify } from "@/lib/shopify/service";
+import { computeTools, openAlerts, getReview, lastReview } from "@/lib/tools/server";
+import { MondayReview } from "@/components/tools/MondayReview";
+import { saveWeeklyReview } from "./numbers/tools/actions";
 import { markMilestonesSeen, markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
@@ -115,8 +118,13 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const rawSeason = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl });
   const seasonTasks: TodayTask[] = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl })
     .map((t) => ({ id: t.taskId, title: (t.catchUp ? "Catch up: " : "") + t.title, why: `${t.why} ${t.steps[0]}`, minutes: 15, guideHref: t.guideHref, taskId: t.taskId, kind: "season" as const }));
+  const tools = await computeTools(u.id, today);
+  const week = mondayOf(today);
+  const [toolAlerts, reviewRow, prevReview] = await Promise.all([openAlerts(u.id), getReview(u.id, week), lastReview(u.id, week)]);
+  const dow = new Date(today + "T12:00:00Z").getUTCDay();
+  const showReview = dow >= 1 && dow <= 3 && (!reviewRow || dow === 1);
   const hasAds = recent.some((d) => d.adMeta + d.adGoogle + d.adTiktok > 0);
-  const todayPlan = planToday({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done, hasAds, seasonTag: rawSeason[0]?.eventName, tip: (() => { const c = siteContent(today, acct.country); return { text: c.tip.text, href: c.tip.cta.href, label: c.tip.cta.label }; })() });
+  const todayPlan = planToday({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done, hasAds, seasonTag: rawSeason[0]?.eventName, alerts: toolAlerts.slice(0, 3), review: showReview ? { saved: Boolean(reviewRow), worst: tools.review.worst?.name ?? null } : undefined, tip: (() => { const c = siteContent(today, acct.country); return { text: c.tip.text, href: c.tip.cta.href, label: c.tip.cta.label }; })() });
   const [earned, seen] = await Promise.all([achievementsForUser(u.id), seenAchievements(u.id)]);
   const celebrate = nextToCelebrate(earned, seen);
   const unseen = earned.filter((a) => !seen.has(a.key)).map((a) => a.key);
@@ -135,6 +143,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </section>
       )}
       {celebrate && <MilestoneToast title={celebrate.title} note={celebrate.note} keys={unseen} markSeen={markMilestonesSeen} />}
+      {showReview && <div className="mb-5"><MondayReview r={tools.review} saved={reviewRow ? { fixText: reviewRow.fixText } : null} lastFix={prevReview?.fixText ?? null} action={saveWeeklyReview} /></div>}
       <TodayTasks plan={todayPlan} doneAction={markDone} doAction={doItForMe} />
       <div className="mt-5"><WeekPlan items={weekItems} weekOf={prettyDay(mondayOf(today))} /></div>
     </>

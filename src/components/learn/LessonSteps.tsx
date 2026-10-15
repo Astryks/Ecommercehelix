@@ -9,6 +9,14 @@ import { lessonTaskId, stepKey } from "@/lib/lesson-actions";
 import { doItForMe } from "@/app/dashboard/actions";
 import { toggleStep, useLessonProgress } from "./progress-store";
 
+/** Plain first sentence of some lesson HTML, for the "In short" and "Do this now" lines. */
+export function firstSentence(html: string, max = 160) {
+  const t = html.replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
+  const m = t.match(/^(.{20,}?[.!?])(\s|$)/);
+  const out = (m ? m[1] : t).trim();
+  return out.length > max ? out.slice(0, max - 1).replace(/\s+\S*$/, "") + "…" : out;
+}
+
 export const PROSE =
   "prose prose-slate max-w-none prose-a:text-cyan-700 prose-p:my-0 prose-table:text-sm prose-th:bg-slate-50 prose-th:px-3 prose-td:px-3 [&_details]:rounded-xl [&_details]:bg-slate-50 [&_details]:p-4 [&_summary]:cursor-pointer [&_summary]:font-medium [&_blockquote]:not-italic [&_blockquote]:rounded-xl [&_blockquote]:border-l-4 [&_blockquote]:border-emerald-400 [&_blockquote]:bg-emerald-50 [&_blockquote]:px-6 [&_blockquote]:py-2 [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none [&_.guide]:block [&_.guide_img]:my-2 [&_.guide_img]:rounded-xl [&_.guide_img]:border [&_.guide_img]:border-slate-200";
 
@@ -159,6 +167,19 @@ export function LessonSteps({ lesson, slug }: { lesson: LessonView; slug?: strin
       {slug && <p className="mt-2"><Link href={`/learn/${slug}/cards/${lesson.ref}`} className="text-sm font-semibold text-cyan-700 underline">View as cards, one small step at a time</Link></p>}
 
       {lesson.noticeHtml && <div className={`${PROSE} mt-4 text-sm`} dangerouslySetInnerHTML={{ __html: lesson.noticeHtml }} />}
+
+      <div className="mt-4 grid gap-3 sm:grid-cols-2" data-testid="lesson-summary">
+        <div className="rounded-xl bg-white px-4 py-3 ring-1 ring-slate-200">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">In short</p>
+          <p className="mt-1 text-[15px] leading-6 text-slate-900">{firstSentence(lesson.whyHtml)}</p>
+        </div>
+        {(() => { const next = lesson.steps.find((x) => !isDone(x.n)); return next ? (
+          <div className="rounded-xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-800">Do this now</p>
+            <p className="mt-1 text-[15px] leading-6 text-slate-900">Step {next.n}: {firstSentence(next.html)}</p>
+          </div>) : (
+          <div className="rounded-xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200"><p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-800">Done</p><p className="mt-1 text-[15px] text-slate-900">All steps done. Nice work.</p></div>); })()}
+      </div>
 
       <div className="mt-4 rounded-xl bg-slate-50 px-5 py-4 ring-1 ring-slate-200">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Why this matters</p>

@@ -444,3 +444,29 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 - **Crons:** `/api/cron/emails?slot=0..23`, one daily cron per UTC hour (the Vercel plan is Hobby, which allows daily crons only), all with `CRON_SECRET`. Scheduled emails only send when `EMAILS_LIVE=1`; without it the cron reports what it would send. Receipts, payment and cancellation emails send from the webhook as soon as Resend is set.
 - **Schema (additive, applied to Neon before push):** Subscription.cancelAtPeriodEnd/currentPeriodEnd/priceId/lastEventAt; new StripeEvent, EmailPrefs, EmailSent.
 - **Env vars:** `EMAILS_LIVE=1` (to start scheduled emails), `RESEND_API_KEY` (optional, falls back to the existing `AUTH_RESEND_KEY`), `EMAIL_FROM` (existing), `STRIPE_PRICE_STARTER_LEGACY`, `STRIPE_PRICE_GROWTH_LEGACY`, USD `STRIPE_PRICE_STARTER/GROWTH`, existing `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `CRON_SECRET`.
+
+## 15 Oct 2026 (~4 PM): planning tools (the 10 gaps) and automation
+**Where they live:** Numbers > "Plan ahead" (each card shows a live headline) opens a sub-page under `/dashboard/numbers/…`. Routines live on Today.
+1. **Plan my year** (`/forecast`): 12 months of sales, ad budget at target MER, orders and profit, shaped by your own last year once you have 10+ months (otherwise a normal retail year), with big sale dates per month. Optional yearly goal.
+2. **Cash plan** (`/cash`): 13 weeks of money in, ads, product costs, stock orders and bills; low weeks in red. Only manual input: bank balance and the "warn me below" floor.
+3. **Stock buy plan** (`/stock-plan`): weeks of cover, order-by date, order size raised for sale dates inside the lead time (e.g. Black Friday ~2.5x), cash per order (feeds the cash plan).
+4. **Customer value** (`/customers`): orders per customer, 12-month value and profit per customer, returning share, month-by-month table. Estimate from daily new/returning totals (true per-customer groups need order-level Shopify data later).
+5. **New customer ad cost** (`/ad-cost`): ad spend / new-customer sales, last 4 weeks, with target and break-even and a 12-week trend.
+6. **Monday review** (Today, Mon to Wed until saved): five numbers pre-filled (sales, profit after ads, orders, MER, conversion), vs last week and target, the biggest problem flagged, pick one fix (or your own); last week's fix shown next Monday. Saved in `WeeklyReview`.
+7. **Profit per product** (`/products`): price, landed cost, shipping and packing, fees and an ads share per unit; red under break-even, amber under 10%.
+8. **General guides** (`/benchmarks`): ranges by store size (from your sales) and type (you pick). Labelled as Helix rules of thumb, not survey data.
+9. **Monthly ad check** (`/ad-check`): connection, pixel, MER vs target, cost per sale vs break-even, frequency, CTR, account set-up; score and the top 3 fixes added to Today once a month.
+10. **My targets** (`/targets`): now (30 days), next step and stretch per metric; next moves up as you hit it.
+
+**What is automated now**
+- Daily cron `/api/cron/tools` (6:30 AM Sydney, after the Shopify/Meta/Google syncs) recalculates forecast, cash plan, buy plan, customers, ad cost, targets and the ad check for every store and saves them (`ToolSnapshot`).
+- It opens alerts that become Today tasks (Main focus, tagged Cash / Stock / Profit / Ad check): cash under your floor in the next 13 weeks, products to reorder now or out of stock, products losing money (3+ sold), the monthly ad check's 3 fixes. Alerts that no longer apply close by themselves; ticking one on Today closes it.
+- Optional "Heads-up alerts" email for new alerts (Settings > Emails, on by default, one-click unsubscribe; sends when `EMAILS_LIVE=1`).
+- Monday review numbers and the flagged problem fill themselves; the ad check runs itself monthly.
+- Benchmarks pick your store size from sales; targets and stretch goals recalc daily.
+- Tools read Shopify (sales, products, stock and sales speed), Meta and Google Ads data already synced daily; pages always compute fresh.
+- **Manual only where no data exists:** bank balance + cash floor, optional yearly goal, store type, supplier lead times and stock not in Shopify.
+
+**Lessons readability:** every lesson now opens with "In short" (one sentence) and "Do this now" (your next undone step), above "Why this matters", and keeps the one-step-at-a-time cards. Check of all 30 modules: average sentence 13.6 words; 290 of 4,656 sentences are over 25 words. **Still open:** a hand rewrite of those long sentences (and the plain-words pass at a 10-year-old level) across all modules was not done in this pass.
+
+Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, WeeklyReview; EmailPrefs.alerts. No new env vars.

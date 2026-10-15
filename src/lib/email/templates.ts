@@ -80,3 +80,8 @@ export function scorecardHtmlEmail(c: Ctx, subject: string, text: string): Email
   const lines = text.split("\n").filter((l) => l && !/^Hi\b/.test(l) && !/^Open Helix:/.test(l) && !/^You get this email/.test(l));
   return layout(c, { kind: "scorecard", marketing: true, subject, preheader: lines[1] ?? subject, title: "Your week in Helix", paras: lines, button: { label: "Open Helix", href: `${c.baseUrl}/dashboard` } });
 }
+
+export function alertsEmail(c: Ctx, alerts: { title: string; why: string }[]): Email {
+  return layout(c, { kind: "alerts", marketing: true, subject: alerts.length === 1 ? `Heads-up: ${alerts[0].title}` : `Heads-up: ${alerts.length} things need you`, preheader: alerts[0]?.why ?? "", title: "A quick heads-up",
+    paras: ["Helix spotted something in your numbers. It is on your Today list too."], list: alerts.map((a) => `${a.title}. ${a.why}`), button: { label: "Open Today", href: `${c.baseUrl}/dashboard` } });
+}

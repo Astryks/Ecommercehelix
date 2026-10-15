@@ -1,4 +1,5 @@
 "use server";
+import { resolveAlert } from "@/lib/tools/server";
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -30,6 +31,7 @@ export async function markDone(form: FormData) {
   // One id, or several when catching up on past seasonal steps in one go.
   for (const v of form.getAll("taskId").slice(0, 40)) {
     const taskId = String(v);
+    if (/^alert-[\w.-]{3,120}$/.test(taskId)) { await resolveAlert(u.id, taskId.slice(6)); continue; }
     if (VALID_ID.test(taskId) || LESSON_TASK_ID.test(taskId) || SEASON_TASK_ID.test(taskId) || BIZ_TASK_ID.test(taskId)) await completeTask(u.id, taskId);
   }
   revalidatePath("/dashboard", "layout");

@@ -12,7 +12,7 @@ async function save(form: FormData) {
   "use server";
   const u = await requireUser("/dashboard/settings/emails");
   const tz = String(form.get("timezone") ?? "");
-  await savePrefs(u.id, { dailyTasks: form.get("daily") === "on", events: form.get("events") === "on", winback: form.get("winback") === "on", scorecard: form.get("scorecard") === "on", ...(ZONES.includes(tz) ? { timezone: tz } : {}) });
+  await savePrefs(u.id, { dailyTasks: form.get("daily") === "on", events: form.get("events") === "on", winback: form.get("winback") === "on", scorecard: form.get("scorecard") === "on", alerts: form.get("alerts") === "on", ...(ZONES.includes(tz) ? { timezone: tz } : {}) });
   revalidatePath("/dashboard/settings/emails");
 }
 
@@ -34,6 +34,7 @@ export default async function EmailSettings({ searchParams }: PageProps<"/dashbo
       {sp.saved && <p className="rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">Saved.</p>}
       <form action={save} className="space-y-3">
         {row("daily", "Today's steps, each morning", "Your 5 to 7 small steps for the day, at about 7 AM your time. On by default for paid plans.", dailyOn(p, acct.plan))}
+        {row("alerts", "Heads-up alerts", "When cash may get tight, stock needs ordering, or a product loses money. Also shown on Today.", p.alerts)}
         {row("events", "Big sale dates", "A heads-up before dates like Black Friday, Christmas and Mother's Day, with a simple plan.", p.events)}
         {row("scorecard", "Monday scorecard", "Last week's sales and profit in plain words, on Monday morning.", p.scorecard)}
         {row("winback", "News if you leave", "One friendly note two weeks after a paid plan ends.", p.winback)}

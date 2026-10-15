@@ -59,6 +59,10 @@ model User {
   promoDrafts         PromoDraft[]
   emailPrefs          EmailPrefs?
   emailsSent          EmailSent[]
+  toolInputs          ToolInput[]
+  toolSnapshots       ToolSnapshot[]
+  toolAlerts          ToolAlert[]
+  weeklyReviews       WeeklyReview[]
 }
 
 model Account {
@@ -580,6 +584,7 @@ model EmailPrefs {
   events     Boolean  @default(true)
   winback    Boolean  @default(true)
   scorecard  Boolean  @default(true)
+  alerts     Boolean  @default(true) // low cash, reorder and break-even alerts by email
   timezone   String   @default("Australia/Sydney")
   unsubToken String   @unique @default(cuid())
   updatedAt  DateTime @updatedAt
@@ -595,4 +600,58 @@ model EmailSent {
   user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, kind, key])
+}
+
+// ---------- Planning tools ----------
+/// Manual inputs only where no synced data exists (bank balance, cash floor, yearly goal, store type).
+model ToolInput {
+  userId    String
+  kind      String // cash | forecast | store
+  data      Json
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, kind])
+}
+
+/// Daily recalculated results (forecast, cash, buy plan, customers, targets, ad check).
+model ToolSnapshot {
+  userId     String
+  kind       String
+  data       Json
+  computedAt DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, kind])
+}
+
+/// Alerts that become Today tasks (and an optional email): low cash, reorder, product under break-even, ad check fixes.
+model ToolAlert {
+  id         String    @id @default(cuid())
+  userId     String
+  key        String // e.g. cash-2026-11-02, reorder-SKU1, product-SKU2, adcheck-2026-10-pixel
+  kind       String // cash | reorder | product | adcheck
+  title      String
+  why        String
+  href       String
+  createdOn  String // YYYY-MM-DD
+  resolvedAt DateTime?
+  emailed    Boolean   @default(false)
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, key])
+}
+
+model WeeklyReview {
+  id      String   @id @default(cuid())
+  userId  String
+  week    String // Monday, YYYY-MM-DD
+  data    Json // the five numbers as shown
+  flagged String?
+  fixId   String?
+  fixText String?
+  savedAt DateTime @default(now())
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, week])
 }
