@@ -53,6 +53,10 @@ model User {
   googleAdsDrafts     GoogleAdsDraft[]
   aiUsage             AiUsage[]
   aiCache             AiCache[]
+  wins                Win[]
+  reviewRequests      ReviewRequest[]
+  achievementsSeen    AchievementSeen[]
+  promoDrafts         PromoDraft[]
 }
 
 model Account {
@@ -498,4 +502,59 @@ model AiCache {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
+}
+
+/// Weekly Wins wall: members share a small win; it shows only after a moderator approves it.
+model Win {
+  id        String    @id @default(cuid())
+  userId    String
+  text      String
+  firstName String    @default("")
+  weekOf    String // YYYY-MM-DD, the Monday of the week it was shared
+  status    String    @default("pending") // "pending" | "approved" | "rejected"
+  createdAt DateTime  @default(now())
+  decidedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([status, weekOf])
+  @@index([userId])
+}
+
+/// "Review my store" requests (also emailed to support).
+model ReviewRequest {
+  id        String   @id @default(cuid())
+  userId    String
+  storeUrl  String
+  question  String   @default("")
+  emailed   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+/// Achievements the user has already been shown a celebration for.
+model AchievementSeen {
+  userId String
+  key    String
+  seenAt DateTime @default(now())
+  user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, key])
+}
+
+/// A discount Helix prepared for a seasonal event. It stays a draft until the user approves and sets it up.
+model PromoDraft {
+  id        String   @id @default(cuid())
+  userId    String
+  eventKey  String // e.g. "black-friday-2026"
+  code      String
+  percent   Int
+  startsOn  String // YYYY-MM-DD
+  endsOn    String // YYYY-MM-DD
+  status    String   @default("draft") // "draft" | "approved" | "dismissed"
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, eventKey])
 }

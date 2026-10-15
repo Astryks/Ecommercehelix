@@ -12,12 +12,12 @@ const NOTE: Record<string, string> = {
 };
 
 /** A button (or a question box) that asks a server action for a short AI text, with a rule-based fallback. */
-export function AiBox({ action, label, question, placeholder }: { action: (prev: AiState, form: FormData) => Promise<AiState>; label: string; question?: boolean; placeholder?: string }) {
+export function AiBox({ action, label, question, placeholder, defaultValue }: { action: (prev: AiState, form: FormData) => Promise<AiState>; label: string; question?: boolean; placeholder?: string; defaultValue?: string }) {
   const [state, run, pending] = useActionState(action, null);
   return (
     <div>
       <form action={run} className={question ? "flex flex-col gap-2 sm:flex-row" : ""}>
-        {question && <input name="q" maxLength={600} required placeholder={placeholder ?? "Where are you stuck?"} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm" />}
+        {question && <input name="q" maxLength={600} required defaultValue={defaultValue} placeholder={placeholder ?? "Where are you stuck?"} className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm" />}
         <button className="btn-ghost whitespace-nowrap text-sm" disabled={pending}><Sparkles className="h-4 w-4 text-violet-600" aria-hidden /> {pending ? "Thinking..." : label}</button>
       </form>
       {state && (

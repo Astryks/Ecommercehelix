@@ -9,6 +9,8 @@ import { bestStreak, monthly, timeline } from "@/lib/history";
 import { GOALS } from "@/lib/course-plan";
 import { lessonLink } from "@/lib/lesson-links";
 import { UpgradePrompt } from "@/components/UpgradePrompt";
+import { achievementsForUser } from "@/lib/achievements-server";
+import { LostLink } from "@/components/dashboard/LostLink";
 
 export const metadata = { title: "Your progress" };
 
@@ -23,7 +25,7 @@ export default async function ProgressPage() {
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const today = isoDay();
   const since = paid ? null : addDays(today, -30);
-  const [h, raw, settings] = await Promise.all([getHistory(u.id, since), getRawDays(u.id), getSettings(u.id)]);
+  const [h, raw, settings, earned] = await Promise.all([getHistory(u.id, since), getRawDays(u.id), getSettings(u.id), achievementsForUser(u.id)]);
   const days = timeline(h);
   const months = monthly(h);
   const dates = h.completions.map((c) => c.completedOn);
@@ -63,6 +65,13 @@ export default async function ProgressPage() {
           const I = Icon as typeof Trophy;
           return <div key={t as string} className="card p-4"><p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-slate-500"><I className="h-3.5 w-3.5" aria-hidden /> {t as string}</p><p className="mt-1 font-display text-3xl font-semibold text-[#1A1718]">{v as string}</p></div>;
         })}
+      </section>
+
+      <section className="card mt-5 p-5" aria-label="Achievements">
+        <div className="flex items-baseline justify-between gap-2"><h2 className="font-hand text-xl text-cyan-700">Achievements</h2><LostLink about="How achievements work" /></div>
+        {earned.length === 0 ? <p className="mt-2 text-sm text-slate-700">Your first one comes with your first task. Open Today and do one small step.</p> : (
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">{earned.map((a) => <li key={a.key} className="flex items-start gap-2 rounded-lg bg-white p-3 text-sm"><Trophy className="mt-0.5 h-4 w-4 flex-none text-amber-500" aria-hidden /><span><span className="block font-semibold text-slate-900">{a.title}</span><span className="text-slate-600">{a.note}</span></span></li>)}</ul>
+        )}
       </section>
 
       <section className="card mt-5 p-5" aria-label="Profit trend">

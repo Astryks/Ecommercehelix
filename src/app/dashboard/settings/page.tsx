@@ -1,5 +1,7 @@
 import { requireUser } from "@/lib/session";
-import { getAccount, getCompletions } from "@/lib/repo";
+import { getAccount, getCompletions, listApprovals } from "@/lib/repo";
+import { SettingsHub } from "@/components/dashboard/SettingsHub";
+import { signOut } from "@/auth";
 import { CountryPicker, TaxPicker, TrackPicker } from "@/components/TrackPicker";
 import { TRACKS } from "@/lib/tracks";
 import { saveProfileSettings } from "../actions";
@@ -8,7 +10,11 @@ import { deleteMyAccount } from "./account-actions";
 export default async function Settings({ searchParams }: PageProps<"/dashboard/settings">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, comps] = await Promise.all([getAccount(u.id), getCompletions(u.id)]);
+  const [acct, comps, approvals] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id)]);
+  async function out() {
+    "use server";
+    await signOut({ redirectTo: "/" });
+  }
   const done = new Set(comps.map((c) => c.taskId));
   const progress = (["starting", "growing"] as const).map((id) => {
     const t = TRACKS[id];
@@ -17,6 +23,10 @@ export default async function Settings({ searchParams }: PageProps<"/dashboard/s
   return (
     <div className="mx-auto max-w-4xl">
       <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
+      <p className="mt-1 text-slate-600">All your tools live here. Pick one.</p>
+      <div className="mt-5"><SettingsHub pending={approvals.filter((a) => a.status === "pending").length} /></div>
+      <form action={out} className="mt-4"><button className="text-sm text-slate-600 underline">Sign out ({acct.email})</button></form>
+      <h2 id="profile" className="mt-10 text-xl font-semibold text-slate-900">Your track, country and tax</h2>
       <p className="mt-1 text-slate-600">Change your track, country and how Helix treats GST/VAT. Your progress on each track is kept: {progress.join(" · ")}.</p>
       {sp.saved && <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">Saved. Today and your calendar now follow these settings.</p>}
       <form action={saveProfileSettings} className="card mt-6 space-y-8 p-6 sm:p-8">

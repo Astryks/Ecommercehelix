@@ -51,10 +51,11 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
       assetError = (e as Error).message;
     }
   }
-  for (const [k, v] of Object.entries(MORE_MSG)) MSG[k] = v;
-  if (sp.shopify === "soon") sp.shopify_soon = "1";
-  if (sp.google === "soon") sp.google_soon = "1";
-  const flash = Object.keys(MSG).find((k) => sp[k] !== undefined || sp.error === k);
+  const ALL_MSG: Record<string, [string, string]> = { ...MSG, ...MORE_MSG };
+  const q: Record<string, string | string[] | undefined> = { ...sp };
+  if (q.shopify === "soon") q.shopify_soon = "1";
+  if (q.google === "soon") q.google_soon = "1";
+  const flash = Object.keys(ALL_MSG).find((k) => q[k] !== undefined || q.error === k);
 
   return (
     <div className="mx-auto max-w-5xl">
@@ -68,7 +69,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
       </div>
 
       {flash && (
-        <p className={`mt-4 rounded-xl px-4 py-2.5 text-sm ${MSG[flash][0] === "ok" ? "border border-emerald-200 bg-emerald-50 text-emerald-900" : "border border-rose-200 bg-rose-50 text-rose-900"}`}>{MSG[flash][1]}</p>
+        <p className={`mt-4 rounded-xl px-4 py-2.5 text-sm ${ALL_MSG[flash][0] === "ok" ? "border border-emerald-200 bg-emerald-50 text-emerald-900" : "border border-rose-200 bg-rose-50 text-rose-900"}`}>{ALL_MSG[flash][1]}</p>
       )}
       {flash === "saved" && Object.keys(SAVE_NOTES).filter((k) => sp[k] !== undefined).map((k) => (
         <p key={k} className="mt-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-900">{SAVE_NOTES[k]}</p>

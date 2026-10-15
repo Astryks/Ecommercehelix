@@ -9,12 +9,12 @@ export type Actionable = { id: string; title: string; detail: string; tier: Plan
 export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): Actionable | null {
   const found = dayByTaskId(id);
   const day = found?.day;
-  if (day?.doIt)
+  if (day)
     return {
       id,
-      title: `${found!.track.id === "starting" ? "Just starting, day" : "Day"} ${day.day}: ${day.doIt.label}`,
+      title: `${found!.track.id === "starting" ? "Just starting, day" : "Day"} ${day.day}: ${day.doIt?.label ?? day.title}`,
       detail: `Here's your checklist for "${day.title}". Helix does not do these steps for you. Approving marks the task done.\n\n` + day.steps.map((s, i) => `${i + 1}. ${s}`).join("\n"),
-      tier: day.doIt.tier,
+      tier: day.doIt?.tier ?? "starter",
       estAiCost: Math.round(day.minutes * 0.2) / 100 + 0.01,
     };
   if (id.startsWith("insight-")) {

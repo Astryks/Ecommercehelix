@@ -23,7 +23,7 @@ import { createPausedGoogleCampaign, getGoogleAds } from "@/lib/google-ads/servi
 import { campaignParams, draftNames, starterCopy } from "@/lib/meta/drafts";
 import { logAudit } from "@/lib/meta/store";
 
-const VALID_ID = /^(day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
+const VALID_ID = /^(numbers-\d{4}-\d{2}-\d{2}|day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
 
 export async function markDone(form: FormData) {
   const u = await requireUser();
@@ -214,4 +214,11 @@ export async function saveProfileSettings(form: FormData) {
   await saveProfile(u.id, { track: toTrack(form.get("track")), country: toCountry(form.get("country")), ...(form.has("salesTaxMode") ? { salesTaxMode: toTaxMode(form.get("salesTaxMode")) } : {}), onboarded: true });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/settings?saved=1");
+}
+
+/** The celebration toast was shown: remember it so it shows once. */
+export async function markMilestonesSeen(keys: string[]) {
+  const u = await requireUser();
+  const { markAchievementsSeen } = await import("@/lib/community");
+  await markAchievementsSeen(u.id, keys.filter((k) => /^[a-z0-9-]{2,40}$/.test(k)).slice(0, 30));
 }

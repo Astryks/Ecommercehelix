@@ -9,7 +9,7 @@ import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check,
 import { requireUser } from "@/lib/session";
 import { getProfitSetup, getDiagnosis, getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
 import { stockAlerts, stockRows } from "@/lib/stock";
-import { bfcmTip, countdownText, seasonalAlerts, upcomingEvents, countryName } from "@/lib/seasons";
+import { nextTasks, bfcmTip, countdownText, seasonalAlerts, upcomingEvents, countryName } from "@/lib/seasons";
 import { SeasonalAlertCard } from "@/components/SeasonalBanner";
 import { BfcmTipStrip } from "@/components/BfcmPlan";
 import { GoalsLadder } from "@/components/GoalsLadder";
@@ -36,7 +36,14 @@ import { addDays, isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
 import { NextCardHero } from "@/components/cards/NextCardHero";
 import { userCards } from "@/lib/cards-user";
-import { markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
+import { TodayTasks } from "@/components/dashboard/TodayTasks";
+import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
+import { MilestoneToast } from "@/components/dashboard/MilestoneToast";
+import { achievementsForUser } from "@/lib/achievements-server";
+import { nextToCelebrate } from "@/lib/achievements";
+import { mondayOf, seenAchievements } from "@/lib/community";
+import { pickTodayTasks, type TodayTask } from "@/lib/today-tasks";
+import { markMilestonesSeen, markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
@@ -93,6 +100,26 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a) && !a.reviewing);
   const tip = bfcmTip(today);
   const currentStage = nextDay?.stage ?? STAGES.length;
+  const dayTask: TodayTask | null = current && !currentLocked ? { id: "day", title: current.title, why: current.steps[0] ?? current.topic, minutes: current.minutes, guideHref: `/learn/${current.learn.slug}#${current.learn.anchor}`, taskId: dayTaskId(current.day), kind: "day" } : null;
+  const ins0 = insights[0];
+  const insightTask: TodayTask | null = ins0 ? { id: "insight", title: ins0.title, why: ins0.why, minutes: 10, guideHref: `/learn/${ins0.learn.slug}${ins0.learn.anchor ? `#${ins0.learn.anchor}` : ""}`, taskId: `insight-${ins0.id}`, kind: "insight" } : null;
+  const seasonTasks: TodayTask[] = shownAlerts.filter((a) => planKeys.has(a.key)).flatMap((a) => nextTasks(a, done, 1).map((t) => ({ id: t.taskId, title: `${a.name}: ${t.title}`, why: t.steps[0] ?? "", minutes: 15, guideHref: t.learn ? `/learn/${t.learn.slug}#${t.learn.anchor}` : "/dashboard/calendar", taskId: t.taskId, kind: "season" as const })));
+  const todayTasks = pickTodayTasks({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done });
+  const [earned, seen] = await Promise.all([achievementsForUser(u.id), seenAchievements(u.id)]);
+  const celebrate = nextToCelebrate(earned, seen);
+  const unseen = earned.filter((a) => !seen.has(a.key)).map((a) => a.key);
+  const weekItems: WeekItem[] = [
+    ...DAYS.filter((d) => unlocked(d.stage) && !done.has(dayTaskId(d.day))).slice(0, 4).map((d) => ({ label: d.title, href: `/learn/${d.learn.slug}#${d.learn.anchor}`, done: false })),
+    ...seasonTasks.slice(0, 1).map((t) => ({ label: t.title, href: t.guideHref, done: false })),
+    { label: "Add your numbers each day (2 minutes)", href: "/dashboard/numbers", done: Boolean(yRow) },
+  ];
+  const tasksBox = (
+    <>
+      {celebrate && <MilestoneToast title={celebrate.title} note={celebrate.note} keys={unseen} markSeen={markMilestonesSeen} />}
+      <TodayTasks tasks={todayTasks} doneAction={markDone} doAction={doItForMe} />
+      <div className="mt-5"><WeekPlan items={weekItems} weekOf={prettyDay(mondayOf(today))} /></div>
+    </>
+  );
 
   // Calm Today for people on a personal plan: progress, one step, and your numbers. Everything else is one tap away.
   const st = diag && sp.full !== "1" ? await planState(u.id) : null;
@@ -106,7 +133,9 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <header>
           <p className="text-sm text-slate-500">{prettyDay(today)}</p>
           <h1 className="text-3xl font-bold tracking-tight">Today</h1>
+          <p className="mt-1 text-slate-700">Here&apos;s what to do today. One step at a time.</p>
         </header>
+        {tasksBox}
         <NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
@@ -132,6 +161,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
 
   return (
     <div className="mx-auto max-w-7xl">
+      <div className="mb-6">{tasksBox}</div>
       <div className="mb-6"><NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
