@@ -11,10 +11,10 @@ export async function sendContact(_prev: ContactResult | null, f: FormData): Pro
   if (get("website")) return { ok: true };
   const input = { name: get("name"), email: get("email"), topic: get("topic"), message: get("message") };
   const err = validateContact(input);
-  if (err) return { ok: false, error: err };
+  if (err) return { ok: false, error: err, values: input };
   const h = await headers();
   const ip = (h.get("x-forwarded-for") ?? "").split(",")[0].trim() || "unknown";
-  if (rateLimited(`ip:${ip}`) || rateLimited(`em:${input.email.toLowerCase()}`)) return { ok: false, error: "You have sent a few messages already. Please wait a few minutes and try again." };
+  if (rateLimited(`ip:${ip}`) || rateLimited(`em:${input.email.toLowerCase()}`)) return { ok: false, error: "You have sent a few messages already. Please wait a few minutes and try again.", values: input };
   let account: { id: string; plan: string } | undefined;
   const s = await auth().catch(() => null);
   if (s?.user?.id) {
@@ -25,6 +25,13 @@ export async function sendContact(_prev: ContactResult | null, f: FormData): Pro
       if (sub) plan = String(sub.plan);
     }
     account = { id, plan };
+    // Lasting limit for members (works across servers): 5 messages an hour, kept in the audit log.
+    if (hasDb) {
+      const recent = await prisma.auditLog.count({ where: { userId: id, action: "contact.send", createdAt: { gte: new Date(Date.now() - 3_600_000) } } }).catch(() => 0);
+      if (recent >= 5) return { ok: false, error: "You have sent a few messages already. Please wait a little and try again.", values: input };
+    }
   }
-  return deliverContact(input, account);
+  const r = await deliverContact(input, account);
+  if (r.ok && account && hasDb) await prisma.auditLog.create({ data: { userId: account.id, actor: "user", action: "contact.send", target: "support", outcome: "ok" } }).catch(() => null);
+  return r.ok ? r : { ...r, values: input };
 }

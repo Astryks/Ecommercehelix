@@ -3,7 +3,7 @@ import "server-only";
 export const CONTACT_TOPICS = ["General question", "Billing and plans", "Technical problem", "Connecting my store or ads", "Feedback or idea", "Privacy or data"] as const;
 
 export type ContactInput = { name: string; email: string; topic: string; message: string; website?: string };
-export type ContactResult = { ok: boolean; error?: string; id?: string };
+export type ContactResult = { ok: boolean; error?: string; id?: string; values?: { name: string; email: string; topic: string; message: string } };
 
 const EMAIL_RE = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]{2,}$/;
 
@@ -26,6 +26,16 @@ export function rateLimited(key: string, max = 5, windowMs = 10 * 60_000): boole
   list.push(now); hits.set(key, list);
   if (hits.size > 5000) hits.clear();
   return false;
+}
+
+/** The short "we got it" email. Pure, so it is tested: it never includes the message text. */
+export function confirmationEmail(i: ContactInput, replyTo: string) {
+  return {
+    to: i.email,
+    reply_to: replyTo,
+    subject: "We got your message - E-commerce Helix",
+    text: `Hi ${clean(i.name)},\n\nThanks for getting in touch about "${clean(i.topic)}". A real person will reply, usually within one business day.\n\nE-commerce Helix`,
+  };
 }
 
 async function resend(body: Record<string, unknown>): Promise<{ ok: boolean; id?: string }> {
@@ -60,11 +70,8 @@ export async function deliverContact(i: ContactInput, account?: { id: string; pl
   const sent = await resend({ to, reply_to: i.email, subject: `[Helix contact] ${clean(i.topic)}: ${clean(i.name).slice(0, 60)}`, text: lines.join("\n") });
   if (!sent.ok) return { ok: false, error: "Sorry, your message could not be sent right now. Please try again in a few minutes." };
   console.log("contact: accepted by Resend", sent.id);
-  await resend({
-    to: i.email,
-    reply_to: to,
-    subject: "We got your message - E-commerce Helix",
-    text: `Hi ${clean(i.name)},\n\nThanks for getting in touch. A real person will reply, usually within one business day.\n\nYour message (${i.topic}):\n${i.message}\n\nE-commerce Helix`,
-  });
+  // Only signed-in members get a copy, and it never repeats what was typed,
+  // so the form cannot be used to send messages to someone else's inbox.
+  if (account) await resend(confirmationEmail(i, to));
   return { ok: true, id: sent.id };
 }
