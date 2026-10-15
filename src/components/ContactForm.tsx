@@ -40,8 +40,8 @@ export function ContactForm({ action, name = "", email = "", topic = "" }: {
       <label className="block text-sm font-semibold text-slate-800">Message
         <textarea name="message" required minLength={10} maxLength={5000} rows={6} defaultValue={kept?.message ?? ""} className={field} placeholder="Tell us what you were trying to do and what happened. Screenshots help, we can ask for them by email." />
       </label>
-      <div aria-hidden className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
-        <label>Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
+      <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+        <label>Leave this empty<input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" /></label>
       </div>
       {state?.error && <p className="text-sm font-medium text-rose-700" role="alert">{state.error}</p>}
       <button disabled={pending} className="btn-primary inline-flex items-center gap-2 disabled:opacity-60">

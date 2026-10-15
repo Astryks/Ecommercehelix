@@ -64,7 +64,7 @@ export default async function DashboardLearn() {
           const tags = STAGE_ORDER.filter((s) => g.lessons.some((l) => l.stage === s));
           return (
             <li key={g.p.id}>
-              <Link href={`/dashboard/learn/path/${g.p.id}`} className={`flex items-start gap-4 rounded-2xl border bg-white p-4 hover:ring-2 hover:ring-[#5A50D6]/30 ${here ? "border-[#5A50D6]" : "border-slate-200"}`}>
+              <Link href={`/dashboard/learn/path/${g.p.id}`} aria-label={`Step ${g.p.n}: ${g.p.title}. ${d} of ${g.lessons.length} lessons done${here ? ". You are here" : ""}`} className={`flex items-start gap-4 rounded-2xl border bg-white p-4 hover:ring-2 hover:ring-[#5A50D6]/30 ${here ? "border-[#5A50D6]" : "border-slate-200"}`}>
                 <span className={`grid h-10 w-10 flex-none place-items-center rounded-full text-lg font-bold ${d === g.lessons.length ? "bg-emerald-500 text-white" : here ? "bg-[#5A50D6] text-white" : "bg-slate-100 text-slate-700"}`}>{d === g.lessons.length ? <CheckCircle2 className="h-5 w-5" aria-label="Done" /> : g.p.n}</span>
                 <span className="min-w-0 flex-1">
                   <span className="flex flex-wrap items-baseline gap-2">
@@ -108,7 +108,7 @@ export default async function DashboardLearn() {
                     const Icon = st === "done" ? CheckCircle2 : st === "started" ? CircleDot : locked ? Lock : Circle;
                     return (
                       <li key={l.ref}>
-                        <Link href={`/learn/${l.module.slug}#${l.id}`} className={`flex items-start gap-2 rounded-lg px-2 py-1 text-sm hover:underline ${here ? "bg-[#5A50D6]/10 font-semibold text-slate-900" : locked ? "text-slate-500" : "text-slate-800"}`} aria-current={here ? "step" : undefined}>
+                        <Link href={`/learn/${l.module.slug}#${l.id}`} aria-label={`Lesson ${num.get(l.ref)}: ${short(l.title)}, ${st === "done" ? "done" : st === "started" ? "started" : "not started"}`} className={`flex items-start gap-2 rounded-lg px-2 py-1 text-sm hover:underline ${here ? "bg-[#5A50D6]/10 font-semibold text-slate-900" : locked ? "text-slate-500" : "text-slate-800"}`} aria-current={here ? "step" : undefined}>
                           <span className="w-7 flex-none text-right tabular-nums text-slate-400">{num.get(l.ref)}.</span>
                           <Icon className={`mt-0.5 h-4 w-4 flex-none ${st === "done" ? "text-emerald-600" : st === "started" ? "text-[#5A50D6]" : "text-slate-300"}`} aria-label={st === "done" ? "Done" : st === "started" ? "Started" : locked ? "Locked" : "Not started"} />
                           <span>{short(l.title)} <span className={`ml-1 rounded-full px-1.5 text-[10px] font-semibold ring-1 ${STAGE_INFO[l.stage].chip}`}>{STAGE_INFO[l.stage].name}</span></span>

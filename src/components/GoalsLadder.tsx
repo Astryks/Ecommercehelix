@@ -102,8 +102,8 @@ function LadderStepper() {
               {last ? <Trophy className="h-4 w-4" aria-hidden /> : i + 1}
             </span>
             <div className={`flex min-h-14 min-w-0 flex-1 flex-col justify-center gap-1 rounded-xl border px-4 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-4 ${last ? "border-[#2F7359] bg-[#EFF6F2] shadow-sm" : "border-slate-200 bg-white"}`}>
-              <p className="flex min-w-0 items-center gap-2">
-                <span className={`truncate font-semibold ${last ? "text-[#1F4D3B]" : "text-slate-900"}`}>{s.label}</span>
+              <p className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+                <span className={`min-w-0 break-words font-semibold ${last ? "text-[#1F4D3B]" : "text-slate-900"}`}>{s.label}</span>
                 <span className={`flex-none rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide ${tone.chip}`}>{STAGE_INFO[s.stage].name}</span>
               </p>
               <span className={`min-w-0 text-sm sm:max-w-[45%] sm:text-right ${last ? "font-semibold text-[#1F4D3B]" : "text-slate-600"}`}>{s.bench}</span>
