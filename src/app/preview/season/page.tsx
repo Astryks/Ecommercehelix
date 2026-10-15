@@ -19,7 +19,7 @@ export default async function SeasonPreview({ searchParams }: { searchParams: Pr
         <p className="text-sm text-slate-500">Preview for {date} ({c.mode === "event" ? `event: ${c.eventKey}` : "evergreen tip"})</p>
         <h1 className="hero-h1 text-5xl leading-[1.04] text-slate-900">Grow your e-commerce business <span className="grad-text">a little every day</span></h1>
         <p className="lead text-xl leading-8 text-slate-700">{c.heroLine}</p>
-        {c.heroExtra && <p className="text-base font-semibold text-[#5A50D6]">{c.heroExtra}</p>}
+        {c.heroExtra && <p className="font-hand text-xl text-[#5A50D6]">{c.heroExtra}</p>}
         <div className="card p-4 text-sm text-slate-800">
           <p><strong>Featured lesson:</strong> <Link className="text-cyan-700 underline" href={c.featuredLesson.href}>{c.featuredLesson.label}</Link></p>
           <p className="mt-1"><strong>Template highlights:</strong> {c.templates.map((id) => TEMPLATES.find((t) => t.id === id)?.title).join(", ")}</p>
