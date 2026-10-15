@@ -1,4 +1,3 @@
-import "server-only";
 /** What happens when a paid membership starts or ends. The webhook calls this. */
 import { notify } from "../email/notify";
 import { hasDb, prisma } from "../db";

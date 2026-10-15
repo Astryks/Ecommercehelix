@@ -1,4 +1,3 @@
-import "server-only";
 /**
  * Members Facebook group lists, kept as events in the existing audit log (no schema change).
  * Without a database (local demo) the events live in memory.
