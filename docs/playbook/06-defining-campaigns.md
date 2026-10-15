@@ -1,6 +1,6 @@
 # Module 6: Defining campaigns
 
-**Outcome:** you can plan any ad campaign from scratch. You set the numbers it must hit, choose the goal and setup, pick the audience and budget, name it properly, brief the ads, test them fairly, read the results and decide: spend more, wait, make new ads, or stop.
+**Outcome:** you can plan any ad campaign from scratch. First you set the numbers it must hit and choose the goal and setup. Then you pick the audience and budget, name it well and brief the ads. Last, you test fairly, read the results and decide: spend more, wait, make new ads, or stop.
 
 This module connects your plan to Ads Manager (the place where you build Meta ads). The [campaign brief template](#lesson-616-the-campaign-brief-template) at the end is what Helix fills in with you when you press "New campaign" in Your ads.
 
@@ -39,13 +39,13 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Never open Ads Manager until you know the five numbers that say whether an ad makes or loses money. They come from Module 1 and Helix works them out from your daily numbers. With them, every later decision is a simple comparison.
 
-**Step 1.** Open the Dashboard on **Month** and copy your target MER, break-even ROAS (sales for each $1 of ads) and break-even CPA from the metric cards.
+**Step 1.** Open the Dashboard on **Month**. Copy your target MER, break-even ROAS (sales for each $1 of ads) and break-even CPA from the cards.
 
 **Expected result:** You have three numbers written on your campaign brief.
 
 <!-- do:metrics -->
 
-**Step 2.** Work out target blended CPA (AOV times target MER), then set an allowance for cold campaigns of up to double that, as shown in the table below.
+**Step 2.** Work out your target CPA across all ads: AOV times target MER. Cold campaigns may cost up to double that, as the table below shows.
 
 **Expected result:** You have a target CPA and a cold CPA allowance.
 
@@ -53,11 +53,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** You know whether your numbers can support paid ads today.
 
-**Watch out:** Only pay more for a first order based on lifetime value (what a customer spends over time) when you have real repeat data: the share who buy again within 12 months and the margin on their second order.
+**Watch out:** Only pay more for a first order because of lifetime value when you have real repeat data. Lifetime value is what a customer spends over time. You need the share who buy again within 12 months, and the margin on their second order.
 
 ### Good to know
 
-**Why cold campaigns get double:** ad platforms miss many sales that cold ads cause, because people see an ad and buy days later another way. So the cost per sale they report looks worse than it really is.
+**Why cold campaigns get double:** ad platforms miss many sales that cold ads cause. People often see an ad and then buy days later another way. So the cost per sale they report looks worse than it really is.
 
 | Number | What it means | How to work it out | Example (AOV $90, VCR 40%, FCR 15%, profit goal 15%) |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.2: Pick the job of the campaign
 <!-- stage:attract -->
 
-**Why this matters:** Each campaign has one job, and the job decides the objective (the goal you pick in Ads Manager) and what the platform optimises for (the action it hunts for). Pick the wrong one and the platform finds clickers instead of buyers.
+**Why this matters:** Each campaign has one job. The job decides the objective (the goal you pick in Ads Manager) and the action the platform hunts for. Pick the wrong one and the platform finds clickers instead of buyers.
 
 **Step 1.** Pick the job of your campaign from the table below, for example "Find new buyers".
 
@@ -108,17 +108,17 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** You have a paused campaign holding every ad you have made.
 
-**Step 2.** Create a **testing campaign** (or test ad set) with 20 to 30% of the budget and put each new batch of ads there.
+**Step 2.** Make a **testing campaign** (or test ad set) with 20 to 30% of the budget. Put each new batch of ads there.
 
 **Expected result:** New ads get a fixed, fair budget away from your winners.
 
 <!-- do:meta-draft -->
 
-**Step 3.** Keep proven ads in **scaling campaigns** with 70 to 80% of the budget, and do not add new ads to them while they are winning.
+**Step 3.** Keep proven ads in **scaling campaigns** with 70 to 80% of the budget. Do not add new ads to them while they are winning.
 
 **Expected result:** Scaling campaigns stay stable.
 
-**Step 4.** When a test ad wins, copy it into a scaling campaign using **Use existing post** so it keeps its post ID, likes and comments.
+**Step 4.** When a test ad wins, copy it into a scaling campaign with **Use existing post**. That way it keeps its post ID, likes and comments.
 
 **Expected result:** The winner runs in scaling with its social proof intact.
 
@@ -133,15 +133,15 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 <!-- do:meta-draft -->
 
-**Step 2.** Split the budget: when small, 70 to 80% cold and 20 to 30% warm; later, cold 30 to 50%, mixed 30 to 40%, warm 20 to 30%.
+**Step 2.** Split the budget. When you are small: 70 to 80% cold and 20 to 30% warm. Later: 30 to 50% cold, 30 to 40% mixed and 20 to 30% warm.
 
 **Expected result:** Each audience temperature gets its planned share.
 
-**Step 3.** Once results are stable, test one other setup at a time: campaign budget vs ad set budget, cost cap bidding (a hard limit on cost per purchase), exclusion strength, a 10 to 20% cap on spend to existing customers, or optimising for landing page views on very cold tests.
+**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget vs ad set budget, a cost cap (a hard limit on cost per purchase), how many people you leave out, a 10 to 20% cap on spend to past buyers, or landing page views for very cold tests.
 
 **Expected result:** You are running one setup test with a clear start and end date.
 
-**Watch out:** Harsher exclusions (leaving out buyers, engagers and recent visitors) usually show a worse cost per sale but find more truly new customers.
+**Watch out:** Leaving out more people (buyers, engagers and recent visitors) usually shows a worse cost per sale. But it finds more truly new customers.
 
 ### Good to know
 
@@ -158,7 +158,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** The audience is who sees your ads. Today broad audiences with strong ads usually win, while custom audiences and lookalikes help with warm and test campaigns. Set them up once and reuse them.
 
-**Step 1.** For cold campaigns, start broad (Advantage+ audience, or country and age only) and only test interests after you have winning ads.
+**Step 1.** For cold campaigns, start broad: Advantage+ audience, or just country and age. Only test interests once you have winning ads.
 
 **Expected result:** Your cold ad sets have no stacked interests.
 
@@ -174,7 +174,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** All seven custom audiences show "Ready" in the Audiences list.
 
-**Step 3.** Create a 3 to 5% lookalike (new people similar to your customers; 1% is closest, 10% widest) from buyers to test.
+**Step 3.** Make a 3 to 5% lookalike from your buyers to test. A lookalike is new people who are like your customers (1% is closest, 10% widest).
 
 **Expected result:** A lookalike audience is ready for a test ad set.
 
@@ -182,7 +182,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Ads Manager can report how much spend reaches new people.
 
-**Step 5.** Exclude employees and existing customers from cold campaigns where it makes sense, and give each new country its own campaign once spend allows.
+**Step 5.** Leave staff and past buyers out of cold campaigns where it makes sense. Give each new country its own campaign once you can afford it.
 
 **Expected result:** Cold spend goes to new people, and countries are reported separately.
 
@@ -191,7 +191,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Budget decides how fast the platform learns and how much you can lose while it does. A few rules stop the classic mistakes of starving campaigns or resetting them.
 
-**Step 1.** Set each new campaign's daily budget to 2 to 3 times your target CPA (for a $30 target CPA: $60 to $90 a day).
+**Step 1.** Set each new campaign's daily budget to 2 to 3 times your target CPA. For a $30 target CPA, that is $60 to $90 a day.
 
 **Expected result:** The campaign can get enough purchases to learn.
 
@@ -231,7 +231,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 ## Lesson 6.8: Creative concepts, angles and hooks
 <!-- stage:attract -->
 
-**Why this matters:** Four words describe every ad: concept (the big idea), angle (why it matters to a specific person), hook (the first 3 seconds) and format. Testing one of them per batch is what makes a test fair.
+**Why this matters:** Four words describe every ad. Concept is the big idea. Angle is why it matters to one kind of person. Hook is the first 3 seconds. Then there is the format. Testing one of them per batch is what makes a test fair.
 
 **Step 1.** Write the concept for your next batch, for example "answering a one-star review".
 
@@ -252,7 +252,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** A creative brief is a one-page set of instructions for each ad. It lets anyone, including a creator or an AI tool, produce an on-target ad without guessing.
 
-**Step 1.** Open the template in [SOP 08](../sops/08-creative-briefs-ugc-creators.md) and fill in the goal and who it is for (cold, warm or hot), the pillar, and the customer's problem in their own words.
+**Step 1.** Open the template in [SOP 08](../sops/08-creative-briefs-ugc-creators.md). Fill in the goal, who it is for (cold, warm or hot), the pillar, and the customer's problem in their own words.
 
 **Expected result:** The top half of the brief is done.
 
@@ -269,15 +269,15 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Most ad tests never get enough visitors to be statistically certain, so you need fair default rules instead. These keep tests consistent and stop you calling winners too early.
 
-**Step 1.** Set your test defaults from the table below: one thing changed per batch, the number of ads per batch for your budget, and the spend each ad gets before you judge it.
+**Step 1.** Set your test rules from the table below. Change one thing per batch. Use the number of ads per batch that fits your budget, and the spend each ad gets before you judge it.
 
 **Expected result:** Your test rules are written at the top of your testing campaign notes.
 
-**Step 2.** Give the testing campaign 20 to 30% of your budget and wait out the learning time in the table before judging.
+**Step 2.** Give the testing campaign 20 to 30% of your budget. Wait out the learning time in the table before you judge.
 
 **Expected result:** Tests run long enough to read.
 
-**Watch out:** To tell a 2% conversion rate from 3% with confidence you need a few thousand visitors for each version, so treat small numbers with care.
+**Watch out:** To be sure a 3% conversion rate beats 2%, you need a few thousand visitors for each version. So be careful with small numbers.
 
 ### Good to know
 
@@ -312,7 +312,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 - Likes and comments but costly sales: the page or offer does not match the ad.
 - Low CTR (click rate) across a whole batch: the message or offer is weak.
-- CPM (cost per 1,000 views) rising while CTR holds: you have reached most of the audience, or it is a busy season.
+- CPM (cost per 1,000 views) going up while CTR stays the same: you have reached most of the audience, or it is a busy season.
 
 **Expected result:** You have a likely cause for each problem, not just a symptom.
 
@@ -374,7 +374,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Searches for your brand show your own ad first.
 
-**Step 3.** Give any new Google campaign about 2 weeks to learn and 4 weeks to judge, at $50 a day or more.
+**Step 3.** Give any new Google campaign about 2 weeks to learn and 4 weeks before you judge it. Spend $50 a day or more.
 
 **Expected result:** Each new campaign has a judge date in your calendar.
 
@@ -397,7 +397,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Sale campaigns behave differently from your everyday ones. Building them separately, with daily budgets planned and judged as a whole event, protects your normal campaigns and your margin.
 
-**Step 1.** Build sale campaigns separately from your BAU campaigns, copying your best cold campaign as the base for the sale's cold campaign.
+**Step 1.** Build sale campaigns apart from your everyday campaigns. Copy your best cold campaign as the start of the sale's cold campaign.
 
 **Expected result:** Your sale has its own campaigns, built and paused before launch.
 
@@ -449,7 +449,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Each campaign gets enough data to learn.
 
-**Step 3.** Stop daily edits, add ads in batches rather than one at a time, and never compare cold campaigns with warm ones.
+**Step 3.** Stop daily edits and add ads in batches, not one at a time. Never compare cold campaigns with warm ones.
 
 **Expected result:** Your account changes in planned batches and cold is judged against cold.
 

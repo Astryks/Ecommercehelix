@@ -1,6 +1,6 @@
 # Module 7: Meta ads in practice
 
-**Outcome:** you can build and run a Meta (Facebook and Instagram) ad account in about 10 minutes a day, and spend more without breaking what works.
+**Outcome:** you can build and run a Meta (Facebook and Instagram) ad account in about 10 minutes a day. And you can spend more without breaking what works.
 
 **Related SOPs:** [05 Meta structure and scaling](../sops/05-meta-structure-and-scaling.md), [06 Meta daily optimisation](../sops/06-meta-daily-optimisation.md), [07 Creative testing](../sops/07-creative-testing.md)
 
@@ -24,7 +24,7 @@
 >
 > - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
 > - **Advantage+:** Meta's automatic settings that let its system choose audience, placements or budget for you.
-> - **Learning phase:** The first days after you start or change an ad set, while Meta works out who to show it to. Results jump around, so wait.
+> - **Learning phase:** The first days after you start or change an ad set. Meta is working out who to show it to. Results jump around, so wait.
 > - **CPA:** Cost per acquisition: how much ad money it took to get one sale.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -35,9 +35,9 @@
 ## Lesson 7.1: Account setup checklist
 <!-- stage:attract -->
 
-**Why this matters:** Ten minutes of setup before you spend money prevents the most expensive Meta problems: lost sales tracking, hacked accounts and runaway spend. Do it once, one step at a time, and check it again every quarter.
+**Why this matters:** Ten minutes of setup before you spend money stops the most costly Meta problems. These are lost sales tracking, hacked accounts and spending that runs away. Do it once, one step at a time, and check it again every quarter.
 
-**Where things live:** **Ads Manager** (adsmanager.facebook.com) is where you build and watch ads. **Business Settings** (business.facebook.com/settings) is where people, security and payment live. **Events Manager** is where your pixel lives. If you land in **Meta Business Suite** instead, click **All tools** (the grid icon in the left menu) and pick the tool by name.
+**Where things live:** **Ads Manager** (adsmanager.facebook.com) is where you build and watch ads. **Business Settings** (business.facebook.com/settings) is where people, security and payment live. **Events Manager** is where your pixel lives. If you land in **Meta Business Suite** instead, click **All tools** (the grid icon in the left menu). Then pick the tool by name.
 
 **Step 1.** Go to business.facebook.com/settings, click **Users > People**, then **Add**, and invite a second person you trust as an admin.
 
@@ -45,11 +45,11 @@
 
 **Watch out:** One admin is a single point of failure. If that person is locked out or hacked, you lose the account.
 
-**Step 2.** In the same Business Settings, open **Security Centre** and switch on **Two-factor authentication** (a code from your phone as well as a password) for everyone.
+**Step 2.** In the same Business Settings, open **Security Centre**. Switch on **Two-factor authentication** for everyone: a code from your phone as well as a password.
 
 **Expected result:** Security Centre shows two-factor required for all admins.
 
-**Step 3.** Still in **Security Centre**, click **Start verification** and follow the prompts to verify your business with your business name, address and phone.
+**Step 3.** Still in **Security Centre**, click **Start verification**. Follow the steps to verify your business with its name, address and phone.
 
 **Expected result:** Verification shows "In review" or "Verified". If you do not see the button, your business may already be verified or not yet eligible: skip and come back later.
 
@@ -69,11 +69,11 @@
 1. In the Facebook & Instagram app in Shopify, open **Settings**, then **Data sharing**.
 2. Choose **Maximum**.
 
-This sends sales to Meta from the shopper's browser (the pixel) and from your store (the Conversions API), so fewer sales go missing.
+This sends sales to Meta from the shopper's browser (the pixel) and from your store (the Conversions API). That way fewer sales go missing.
 
 **Expected result:** Data sharing reads "Maximum".
 
-**Step 6.** Open **Events Manager** (All tools > Events Manager), click your pixel, and look at the **Purchase** row in the **Overview** tab.
+**Step 6.** Open **Events Manager** (All tools > Events Manager) and click your pixel. Look at the **Purchase** row in the **Overview** tab.
 
 **Expected result:** Purchase shows events from both **Browser** and **Server**, in your store's currency. If it shows nothing, place a small test order and check again in an hour.
 
@@ -89,15 +89,15 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 **Step 8.** Make a simple "Daily" view in Ads Manager.
 
 1. Click **Columns** (above the table), then **Customise columns**.
-2. Tick: Results, Cost per result, Amount spent, Purchase ROAS (sales for each $1 of ads), CTR (link) (how many in 100 clicked) and Frequency (how often each person saw it).
+2. Tick: Results, Cost per result, Amount spent and Purchase ROAS (sales for each $1 of ads). Also tick CTR (link), which is how many in 100 clicked, and Frequency, which is how often each person saw it.
 3. Tick **Save as preset** and name it "Daily".
 4. Click **Apply**.
 
 **Expected result:** Choosing **Columns > Daily** shows the numbers you check every day.
 
-**Step 9.** Add a weekly 5-minute calendar reminder to look in Ads Manager for campaigns you did not create or budgets that jumped.
+**Step 9.** Add a weekly 5-minute reminder to your calendar. Look in Ads Manager for campaigns you did not make or budgets that jumped.
 
-**Expected result:** A weekly check is in your calendar. If you ever find something odd: turn it off, remove unknown people in Business Settings, contact Meta support and dispute the charge with your bank.
+**Expected result:** A weekly check is in your calendar. If you ever find something odd, turn it off and remove unknown people in Business Settings. Then contact Meta support and dispute the charge with your bank.
 
 <!-- do:calendar -->
 
@@ -125,11 +125,11 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 <!-- do:meta-draft -->
 
-**Step 2.** Only for warm audiences (people who visited or engaged) or a test that needs control, repeat **+ Create > Sales > Continue** and pick **Manual sales campaign** (or switch Advantage+ off).
+**Step 2.** Only for warm audiences (people who visited or engaged) or a test that needs control: repeat **+ Create > Sales > Continue**. Pick **Manual sales campaign** (or switch Advantage+ off).
 
 **Expected result:** Warm and test campaigns are manual, with the audience you chose.
 
-**Step 3.** At the ad level, scroll to **Advantage+ creative**, click **Edit** and switch off any change that alters how your ad looks (for example automatic carousels or added music).
+**Step 3.** At the ad level, scroll to **Advantage+ creative** and click **Edit**. Switch off anything that changes how your ad looks, like automatic carousels or added music.
 
 **Expected result:** The preview on the right shows your ad as you designed it.
 
@@ -138,7 +138,7 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 **Why this matters:** The format is the shape of the ad: video, image, carousel and more. Each format suits a different job, and the wrong one can hide a good message.
 
-**Step 1.** For each ad in your next batch, pick the format from the table below that matches its job (for example single video in 9:16 and 4:5 for most cold ads).
+**Step 1.** For each ad in your next batch, pick the format from the table below that fits its job. For most cold ads, that is a single video in 9:16 and 4:5.
 
 **Expected result:** Every brief names one format.
 
@@ -146,7 +146,7 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 **Expected result:** Each ad fits every placement without cropping.
 
-**Step 3.** Keep all text inside the safe zones so Reels and Stories do not cut it off or cover it with buttons.
+**Step 3.** Keep all text inside the safe zones. Then Reels and Stories will not cut it off or cover it with buttons.
 
 **Expected result:** Previewing the ad in Ads Manager shows no text hidden behind buttons.
 
@@ -186,7 +186,7 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 **Expected result:** Copies of the ads appear in the live ad set, still switched off.
 
-**Step 3.** Open each copy, and in the ad's **Ad setup** section choose **Use existing post**, then pick the original ad's post, so likes and comments carry over.
+**Step 3.** Open each copy and find the ad's **Ad setup** section. Choose **Use existing post** and pick the first ad's post, so likes and comments carry over.
 
 **Expected result:** Each copy shows the same post as the original. If you do not see **Use existing post**, the original has not been published yet: publish it in the build campaign first.
 
@@ -229,9 +229,9 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 ## Lesson 7.5: The learning phase
 <!-- stage:attract -->
 
-**Why this matters:** The learning phase is the first days after you start or change an ad set, while Meta works out who to show it to. Results are unstable during learning, so knowing what resets it saves you from breaking good campaigns.
+**Why this matters:** The learning phase is the first days after you start or change an ad set. Meta is still working out who to show it to. Results are unstable during learning, so knowing what resets it saves you from breaking good campaigns.
 
-**Step 1.** Before editing a live ad set, check whether the edit restarts learning: swapping or adding ads, changing the audience, or a big budget change (a common guide is more than 20%).
+**Step 1.** Before you edit a live ad set, check if the edit restarts learning. These do: swapping or adding ads, changing the audience, or a big budget change (often more than 20%).
 
 **Expected result:** You only make big edits on purpose.
 
@@ -256,11 +256,11 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 <!-- do:numbers -->
 
-**Step 2.** In Ads Manager set the date to **Last 7 days**, choose **Columns > Daily**, and on the **Campaigns** tab read each campaign's **Amount spent** and **Frequency** (how many times the same person has seen your ads).
+**Step 2.** In Ads Manager, set the date to **Last 7 days** and choose **Columns > Daily**. On the **Campaigns** tab, read each campaign's **Amount spent** and **Frequency** (how many times the same person saw your ads).
 
 **Expected result:** You know whether any campaign is overspending or tiring its audience.
 
-**Step 3.** Grade each ad: **Star** (great: keep and give more), **Steady** (fine: leave), **Passenger** (little spend, little effect: leave unless it starts spending), **Drain** (lots of spend, poor results: turn off).
+**Step 3.** Grade each ad. **Star:** great, keep it and give it more. **Steady:** fine, leave it. **Passenger:** little spend, little effect, leave it unless it starts spending. **Drain:** lots of spend, poor results, turn it off.
 
 **Expected result:** Every ad has a grade, and drains are switched off.
 
@@ -299,7 +299,7 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 ## Lesson 7.8: Managing expensive cold campaigns
 <!-- stage:attract -->
 
-**Why this matters:** Cold campaigns aimed at new people always look expensive, because Meta misses many sales they cause when people buy days later another way. Judging them wrongly leads to cutting the campaigns that feed the whole store.
+**Why this matters:** Cold campaigns for new people always look costly. Meta misses many of the sales they cause, because people buy days later another way. Judging them wrongly leads to cutting the campaigns that feed the whole store.
 
 **Step 1.** Compare cold campaigns only with other cold campaigns, never with warm ones.
 
@@ -326,7 +326,7 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 **Expected result:** Every campaign name shows Cold, Mixed, Warm or Hot.
 
-**Step 2.** Compare each campaign with the metrics and CPA (ad cost for one sale) allowance for its layer in the table below.
+**Step 2.** Compare each campaign with the numbers in the table below for its layer. That includes how much it may pay for one sale (CPA).
 
 **Expected result:** You judge each campaign against the right benchmark.
 
@@ -377,13 +377,13 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 ## Lesson 7.11: Attribution settings
 <!-- stage:attract -->
 
-**Why this matters:** Attribution is how a platform decides which ad gets credit for a sale. Meta's default (for example 7 days after a click and 1 day after a view) is not the full truth, so you need a cross-check.
+**Why this matters:** Attribution is how a platform decides which ad gets credit for a sale. Meta's default (for example 7 days after a click and 1 day after a view) is not the full truth. So you need a second check.
 
-**Step 1.** In Ads Manager click **Columns > Compare attribution settings** and look at the incremental option where it is available (it tries to count only sales the ad truly caused).
+**Step 1.** In Ads Manager, click **Columns > Compare attribution settings**. Look at the incremental option where you have it. It tries to count only sales the ad truly caused.
 
 **Expected result:** You can see how much of Meta's reported sales are likely extra sales.
 
-**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify and with your MER (total ad spend as a share of total sales) on the Dashboard.
+**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify. Also check your MER on the Dashboard (total ad spend as a share of total sales).
 
 **Expected result:** You trust the store's numbers first and Meta's second.
 
@@ -420,11 +420,11 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 ## Lesson 7.13: Launch your first Meta ad in 30 minutes
 <!-- stage:attract -->
 
-**Why this matters:** Most people stall on their first ad because Ads Manager has hundreds of settings. You need about eight of them. This lesson walks you through a simple, sensible first campaign: one Sales campaign, one ad set, 3 to 5 ads and a budget you have already decided you can afford. Or let Helix build it for you as a paused draft.
+**Why this matters:** Most people stall on their first ad because Ads Manager has hundreds of settings. You need about eight of them. This lesson walks you through a simple first campaign. You make one Sales campaign, one ad set and 3 to 5 ads, with a budget you already know you can afford. Or let Helix build it for you as a paused draft.
 
 **Words you will see:** a **campaign** holds the goal (Sales). An **ad set** holds the budget, who sees it and where. An **ad** is the video or image people see. The **pixel** tells Meta when someone buys. **Advantage+** means Meta makes some choices for you, which works well for most new stores.
 
-**Step 1.** Check your setup: in Events Manager (Ads Manager menu **> All tools > Events Manager**) your pixel shows **Purchase** events from your store. If it does not, do Lesson 7.1 steps 4 to 6 first.
+**Step 1.** Check your setup. In Events Manager (Ads Manager menu **> All tools > Events Manager**), your pixel should show **Purchase** events from your store. If it does not, do Lesson 7.1 steps 4 to 6 first.
 
 **Expected result:** You can see Purchase events, so Meta can learn who buys.
 
@@ -433,13 +433,13 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 **Step 2.** Pick your daily budget.
 
 - Selling under about $5,000 a month? Use $20 to $50 a day for two weeks.
-- Selling more? Use about 2 times your break-even cost per sale each day (Helix shows it in **Profit**), and stay inside your marketing % guide from Lesson 1.9.
+- Selling more? Use about 2 times your break-even cost per sale each day (Helix shows it in **Profit**). Stay inside your marketing % guide from Lesson 1.9.
 
 **Expected result:** You have one daily budget written down, for example $30 a day.
 
 <!-- do:profit -->
 
-**Step 3.** Get 3 to 5 ads ready: short videos or images of your best seller, each with a different first line or opening (the "hook"), in 4:5 (feed) and 9:16 (Stories and Reels) sizes.
+**Step 3.** Get 3 to 5 ads ready. Use short videos or images of your best seller, each with a different opening line (the "hook"). Make them in 4:5 (feed) and 9:16 (Stories and Reels) sizes.
 
 **Expected result:** 3 to 5 files in a folder, plus one main text and one headline you can reuse.
 
@@ -460,7 +460,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Expected result:** The campaign settings page is open with Sales as the goal.
 
-**Step 6.** In the budget box set your daily budget from Step 2, and under **Conversion** check that your pixel is selected and the event is **Purchase**.
+**Step 6.** In the budget box, set your daily budget from Step 2. Under **Conversion**, check your pixel is picked and the event is **Purchase**.
 
 **Expected result:** Budget and Purchase event are set. If you see **Conversion location**, choose **Website**.
 
@@ -487,7 +487,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Step 10.** Leave it alone for 3 days. Then compare cost per purchase with your break-even cost per purchase from your profit setup.
 
-**Expected result:** After 3 days you know whether each ad is under, near or over break-even, and you keep the best ones running.
+**Expected result:** After 3 days you know if each ad is under, near or over break-even. Keep the best ones running.
 
 **Watch out:** Every edit during the first days restarts Meta's learning. Change nothing for 3 days unless something is broken, such as a wrong link.
 
@@ -505,11 +505,11 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 3. **+ Create**: starts a new campaign.
 4. **Columns**: chooses which numbers the table shows. Save a "Daily" preset (Lesson 7.1).
 5. **On/Off switch**: blue means on and spending; grey means off.
-6. **Delivery**: **Active** (running), **Learning** (Meta is still working out who buys), **In review** (Meta is checking the ad), **Off**, or **Rejected** (click it to see why).
+6. **Delivery**: **Active** means running. **Learning** means Meta is still working out who buys. **In review** means Meta is checking the ad. It can also say **Off**, or **Rejected** (click it to see why).
 7. **Results** and **Cost per result**: for a Sales campaign, purchases and the cost of each purchase. **Amount spent** is what you paid. **ROAS** (return on ad spend) is sales divided by spend.
 8. **Date range** (top right): set it to **Last 7 days** for daily checks.
 
-**Step 1.** Open Ads Manager (adsmanager.facebook.com, or Meta Business Suite **> All tools > Ads Manager**) and check the ad account name at the top left.
+**Step 1.** Open Ads Manager (adsmanager.facebook.com, or Meta Business Suite **> All tools > Ads Manager**). Check the ad account name at the top left.
 
 **Expected result:** You are in your store's ad account.
 
@@ -521,7 +521,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Expected result:** You see Results, Cost per result, Amount spent and ROAS.
 
-**Step 4.** Click the **Campaigns** tab, then click a campaign name to open its edit panel, and look at the three levels (campaign, ad set, ad) without changing anything. Close it with **X** or **Close**.
+**Step 4.** Click the **Campaigns** tab, then click a campaign name to open it. Look at the three levels (campaign, ad set, ad), but do not change anything. Close it with **X** or **Close**.
 
 **Expected result:** You know where the budget, the audience and the ads live.
 

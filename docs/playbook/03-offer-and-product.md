@@ -1,6 +1,6 @@
 # Module 3: Offer and product
 
-**Outcome:** a reason to buy now that beats every reason to wait, and a simple way to judge which products deserve your ad money.
+**Outcome:** a reason to buy now that beats every reason to wait. Plus a simple way to judge which products deserve your ad money.
 
 **Related SOPs:** [04 Offer design](../sops/04-offer-design.md), [16 Customer research](../sops/16-customer-research-and-reviews.md)
 
@@ -36,7 +36,7 @@
 
 **Why this matters:** Your offer is everything a customer gets and every reason they have to buy now rather than later. When ads and site are fine but sales are slow, the offer is usually the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
 
-**Step 1.** Read the five levers in the table below (promise, belief, urgency, safety, easy yes) and score your main product from 1 to 5 on each.
+**Step 1.** Read the five levers in the table below: promise, belief, urgency, safety and easy yes. Score your main product from 1 to 5 on each.
 
 **Expected result:** You have five scores on one line, for example "Promise 4, Belief 2, Urgency 3, Safety 4, Easy yes 3".
 
@@ -59,7 +59,7 @@
 
 **Why this matters:** The promise is the main result your product gives. If shoppers cannot repeat it back in one line, they will not buy. Reviews hold the exact words that sell.
 
-**Step 1.** Read your 20 most recent 4 and 5 star reviews and copy the phrases customers use for the result they got.
+**Step 1.** Read your 20 newest 4 and 5 star reviews. Copy the words customers use for the result they got.
 
 **Expected result:** You have a list of 5 to 10 phrases in customers' own words.
 
@@ -113,17 +113,17 @@
 ## Lesson 3.4: Real scarcity
 <!-- stage:convert -->
 
-**Why this matters:** Scarcity means there is a real reason the product may not be available later, which gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law.
+**Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law.
 
-**Step 1.** Pick one honest scarcity method that fits your product: a limited production run or numbered batch, a preorder with a clear ship date, a seasonal range or colour for a short time, or low-stock alerts.
+**Step 1.** Pick one honest way to show scarcity that fits your product. For example: a small batch with a number, a preorder with a clear ship date, a colour for a short time, or low-stock alerts.
 
 **Expected result:** You have chosen one method you can stand behind.
 
-**Step 2.** Write the reason in one sentence on the product page, for example "Batch 4 of 6: 300 made, ships 14 November".
+**Step 2.** Write the reason in one sentence on the product page. For example: "Batch 4 of 6: 300 made, ships 14 November".
 
 **Expected result:** Shoppers can see why it might not be available later.
 
-**Step 3.** Set up a low-stock email to people who viewed the product and to your best customers when stock falls below about 2 weeks of sales.
+**Step 3.** Set up a low-stock email for when stock drops below about 2 weeks of sales. Send it to people who viewed the product and to your best customers.
 
 **Expected result:** An email goes out automatically when stock gets low.
 
@@ -154,7 +154,7 @@
 
 **Expected result:** Shoppers can see a real person behind the store.
 
-**Step 5.** Write a dispatch promise you can keep (for example "Ships within 24 hours, Monday to Friday") and a clear returns policy, and show both near the price.
+**Step 5.** Write a shipping promise you can keep, like "Ships within 24 hours, Monday to Friday". Add a clear returns policy, and show both near the price.
 
 **Expected result:** Dispatch time and returns are visible without scrolling on mobile.
 
@@ -181,7 +181,7 @@
 
 **Expected result:** More shoppers pick your target option.
 
-**Step 5.** Test free shipping against a lower price, then turn on buy now pay later (Afterpay, Klarna or Shop Pay Installments) in **Settings > Payments** for higher-priced items.
+**Step 5.** Test free shipping against a lower price. For pricier items, turn on buy now pay later (Afterpay, Klarna or Shop Pay Installments) in **Settings > Payments**.
 
 **Expected result:** You know which one your customers prefer, and shoppers can pay in parts.
 
@@ -190,13 +190,13 @@
 
 **Why this matters:** Not every product deserves your ad money. A monthly snapshot shows which ones to push, which to test more and which to stop. It takes about 20 minutes.
 
-**Step 1.** For each product, write down last month's ad spend, sales, return (sales divided by ad spend), units sold and margin (share of price you keep after product cost).
+**Step 1.** For each product, write down last month's ad spend, sales, units sold and margin. Also write its return: sales divided by ad spend.
 
 **Expected result:** You have one row per product with five numbers.
 
-**Step 2.** Put each product into one of the four boxes in the table below and do the action listed for that box.
+**Step 2.** Put each product into one of the four boxes in the table below. Then do the action listed for that box.
 
-**Expected result:** Every product has a box and a next step, for example "low spend, good return: make new ads and give it more budget".
+**Expected result:** Every product has a box and a next step. For example: "low spend, good return: make new ads and give it more budget".
 
 **Step 3.** Move ad budget towards the "good return" boxes in your next weekly review.
 
@@ -247,24 +247,24 @@
 
 <!-- do:calendar -->
 
-**Step 2.** When conversion rate drops for 2 weeks and you cannot find another cause, review the offer straight away using the five levers in Lesson 3.1.
+**Step 2.** If conversion rate drops for 2 weeks and you cannot find another cause, check the offer right away. Use the five levers in Lesson 3.1.
 
 **Expected result:** You have a fresh lever score and one change to test.
 
 ## Lesson 3.10: Subscribe and save: repeat orders without asking
 <!-- stage:grow -->
 
-**Why this matters:** If customers use your product up (coffee, skincare, supplements, pet food, cleaning refills), a subscription turns one sale into many and makes next month's sales predictable. It suits products people reorder on a rhythm; it does not suit one-off purchases.
+**Why this matters:** Some products get used up, like coffee, skincare, vitamins, pet food or cleaning refills. A subscription turns one sale into many and makes next month easier to predict. It suits products people reorder on a rhythm; it does not suit one-off purchases.
 
 **Step 1.** Check whether your product fits: look at customers who bought twice and work out the usual gap between orders.
 
-**Expected result:** You know your typical reorder gap (for example 30 or 60 days), or that repeat buying is too rare for a subscription.
+**Expected result:** You know how long people usually wait before they buy again (for example 30 or 60 days). Or you know repeat buying is too rare for a subscription.
 
-**Step 2.** Install a subscription app from the Shopify App Store and offer one simple plan: a small saving (5% to 15%) or free shipping, delivered every reorder gap, with easy skip and cancel.
+**Step 2.** Install a subscription app from the Shopify App Store. Offer one simple plan: a small saving (5% to 15%) or free shipping, with easy skip and cancel.
 
 **Expected result:** The product page shows "One-time purchase" and "Subscribe and save" options.
 
-**Step 3.** Add a subscription offer to your post-purchase email for repeat-use products, sent a few days before the first order is likely to run out.
+**Step 3.** Add a subscription offer to your after-purchase email for products people reuse. Send it a few days before the first order is likely to run out.
 
 **Expected result:** First-time buyers are invited to subscribe at the moment they would reorder anyway.
 

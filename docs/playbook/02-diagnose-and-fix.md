@@ -36,13 +36,13 @@
 
 **Why this matters:** A constraint is the one thing limiting your profit right now. Fixing anything else first wastes time and money. Most stores are short of sales even when the owner thinks they have an "ads problem".
 
-**Step 1.** Open the Dashboard on **Month** and write down orders, net sales, MER and contribution margin (contribution profit divided by net sales).
+**Step 1.** Open the Dashboard on **Month**. Write down orders, net sales, MER and contribution margin (contribution profit divided by net sales).
 
 **Expected result:** You have four numbers to diagnose from.
 
 <!-- do:growth -->
 
-**Step 2.** Match them to one of the three kinds in the table below: **throughput** (not enough sales), **efficiency** (costs too high) or **capacity** (you cannot keep up with orders).
+**Step 2.** Match them to one of the three kinds in the table below. **Throughput** means not enough sales. **Efficiency** means costs are too high. **Capacity** means you cannot keep up with orders.
 
 **Expected result:** You have named one constraint.
 
@@ -63,13 +63,13 @@
 
 **Why this matters:** The same tactic can help one store and hurt another. Your scorecard puts you in one of five situations, and each has a different next move. Picking the right one stops you scaling a leaky store or cutting a healthy one.
 
-**Step 1.** Check your net profit % for the last 30 days on the Dashboard. If it is 10% or more, your situation is **healthy profit**: grow and win every customer you can serve at a profit.
+**Step 1.** Check your net profit % for the last 30 days on the Dashboard. If it is 10% or more, your profit is **healthy**. Grow, and win every customer you can serve at a profit.
 
 **Expected result:** You know whether you are in the healthy group.
 
 <!-- do:growth -->
 
-**Step 2.** If profit is under 10%, check which cost share is out of range: **fixed costs heavy** (grow carefully, because doubling sales halves their share), **variable costs heavy** (pause growth and fix cost per order first) or **marketing heavy** (MER high: find where buyers drop out before touching ads, see Lesson 2.5).
+**Step 2.** If profit is under 10%, find the cost share that is too high. **Fixed costs heavy:** grow carefully, because doubling sales halves their share. **Variable costs heavy:** pause growth and fix cost per order first. **Marketing heavy:** MER is high, so find where buyers drop out before you touch the ads (see Lesson 2.5).
 
 **Expected result:** You have picked one of the three cost situations.
 
@@ -82,21 +82,21 @@
 
 **Why this matters:** Variable costs come with every order, so a small fix pays back on every sale for good. Most stores can take several points off without customers noticing. Work down the list and stop when VCR is back under about 45%.
 
-**Step 1.** Email your top supplier asking for the price at the next order quantity up, and a quote for simpler packaging spec.
+**Step 1.** Email your main supplier. Ask for the price at the next order size up, and a price for simpler packaging.
 
-**Expected result:** You have a written quote you can compare against the cash a bigger order (MOQ, minimum order quantity) would tie up.
+**Expected result:** You have a written price. Compare it with the cash a bigger order would tie up (MOQ means minimum order quantity).
 
-**Step 2.** If shipping is above 15% of sales, ask two carriers for rate quotes using last month's parcel count and weights.
+**Step 2.** If shipping is over 15% of sales, ask two carriers for prices. Give them last month's parcel count and weights.
 
 **Expected result:** You have two quotes to compare with your current cost per order.
 
-**Watch out:** Boxes that fit the product better often cut cost more than a new carrier, because many carriers charge by size as well as weight.
+**Watch out:** Boxes that fit the product better often save more than a new carrier. Many carriers charge by size as well as weight.
 
-**Step 3.** Set a free shipping threshold about 20% above your average order value, and charge for express delivery (Shopify: **Settings > Shipping and delivery**).
+**Step 3.** Set free shipping at about 20% above your average order value. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
 
 **Expected result:** New orders either pay for shipping or grow to qualify for free shipping.
 
-**Step 4.** Move your higher-margin products (margin: the share of price you keep after product cost) to the first row of your home page and into your ads.
+**Step 4.** Put your higher-margin products in the first row of your home page and in your ads. Margin is the share of the price you keep after product cost.
 
 **Expected result:** Sales mix shifts towards products that leave more profit per order.
 
@@ -116,7 +116,7 @@
 
 **Why this matters:** Fixed costs stay the same however many orders you get. Cutting waste helps, but the bigger fix is often growing sales so fixed costs become a smaller share. Do both deliberately.
 
-**Step 1.** Export your bank and card statements for the last 3 months and list every subscription with its monthly cost.
+**Step 1.** Download your bank and card statements for the last 3 months. List every subscription and what it costs each month.
 
 **Expected result:** You have one list of every recurring charge.
 
@@ -124,7 +124,7 @@
 
 **Expected result:** Your monthly fixed costs drop by the total of the cancelled tools.
 
-**Step 3.** For each role and agency, write one line on what it produces and whether that is tied to a result you can measure.
+**Step 3.** For each role and agency, write one line on what it makes. Note if that links to a result you can measure.
 
 **Expected result:** You know which costs earn their keep and which need a conversation.
 
@@ -137,21 +137,21 @@
 ## Lesson 2.5: Fixing marketing costs (high MER)
 <!-- stage:grow -->
 
-**Why this matters:** High MER means ads eat too much of your sales. Changing the ads is often the wrong fix, because the problem can be the site, the offer or a short-term shock. Follow these steps in order before you touch a campaign.
+**Why this matters:** High MER means ads eat too much of your sales. Changing the ads is often the wrong fix. The problem can be the site, the offer or a short-term shock. Follow these steps in order before you touch a campaign.
 
-**Step 1.** Check for a short-term shock in the last 7 days: best seller out of stock, the slow week after a sale, a competitor's sale, the season, tracking that stopped counting sales, or site downtime.
+**Step 1.** Look for a short-term shock in the last 7 days. For example: your best seller is out of stock, it is the slow week after a sale, or a rival is having a sale. It could also be the season, tracking that stopped counting sales, or your site being down.
 
 **Expected result:** You have either found a shock (fix it or wait it out) or ruled one out.
 
-**Step 2.** Look at RPV (revenue per visit: net sales divided by sessions) on the Dashboard. Healthy for many stores is $2.50 to $4, below $2 is hard work and below $1 makes profitable ads very hard.
+**Step 2.** Look at RPV (revenue per visit: net sales divided by sessions) on the Dashboard. Many healthy stores sit at $2.50 to $4. Below $2 is hard work, and below $1 makes ads very hard to run at a profit.
 
 **Expected result:** You know whether RPV is healthy.
 
-**Watch out:** Fashion stores often run a lower RPV with more visitors, so compare with your own last 90 days too.
+**Watch out:** Fashion stores often have lower RPV with more visitors. So compare with your own last 90 days too.
 
 <!-- do:metrics -->
 
-**Step 3.** If RPV is low, split it: check whether AOV is low or conversion rate (orders divided by sessions) is low, and work on the site or offer (Modules 3 and 9), not the ads.
+**Step 3.** If RPV is low, split it in two. Check if AOV is low or if conversion rate (orders divided by sessions) is low. Then work on the site or offer (Modules 3 and 9), not the ads.
 
 **Expected result:** You have named the weak half of RPV.
 
@@ -166,20 +166,20 @@
 
 **Expected result:** You know whether clicks are affordable.
 
-**Step 6.** Check frequency (how often the same person saw the ad in 7 days) and look for ads with lots of likes and clicks but no sales.
+**Step 6.** Check frequency: how often the same person saw the ad in 7 days. Look for ads with lots of likes and clicks but no sales.
 
-**Expected result:** You have found tired ads (high frequency) or a page that does not match the ad's promise (clicks but no sales).
+**Expected result:** You have found tired ads (high frequency). Or you found a page that does not match what the ad promised (clicks but no sales).
 
 ## Lesson 2.6: When several KPIs are high at once
 <!-- stage:grow -->
 
 **Why this matters:** A KPI (key performance indicator) is one of the key numbers you track. When several are bad at once, trying to fix them all spreads you too thin. Fix the one worth the most dollars first.
 
-**Step 1.** For each bad number, estimate how many dollars of profit a month it would add if it went back to its healthy range (for example: MER from 38% to 30% on $40,000 sales = $3,200).
+**Step 1.** For each bad number, guess how much profit a month it would add if it went back to normal. For example: MER from 38% to 30% on $40,000 sales = $3,200.
 
 **Expected result:** You have a dollar figure next to each bad number.
 
-**Step 2.** Pick the one with the biggest dollar figure and write it in your decision log as this month's focus.
+**Step 2.** Pick the one with the biggest dollar number. Write it in your decision log as this month's focus.
 
 **Expected result:** You have one focus, usually MER (fast to change) or VCR (the biggest lasting effect).
 
@@ -192,7 +192,7 @@
 
 **Expected result:** You have three planned spend levels.
 
-**Step 2.** Next to each step, write the MER (total ad spend as a share of total sales) you expect, a few points higher each time (for example 28%, 31%, 34%).
+**Step 2.** Next to each step, write the MER you expect (total ad spend as a share of total sales). Make it a few points higher each time, for example 28%, 31%, 34%.
 
 **Expected result:** You have expected results that allow for each extra sale costing a bit more.
 
@@ -204,7 +204,7 @@
 
 **Expected result:** You have a dollar limit that ends the test.
 
-**Step 5.** Make sure at least 3 to 5 new ads are ready, then raise to the first step and hold it for 10 to 14 days.
+**Step 5.** Make sure you have at least 3 to 5 new ads ready. Then raise to the first step and hold it for 10 to 14 days.
 
 **Expected result:** MER usually gets worse at first, then settles. If it settles, move to the next step; if not, go back one step and find out why.
 

@@ -1,6 +1,6 @@
 # Module 4: Brand, content and community
 
-**Outcome:** a clear brand that people recognise, a few content topics for each channel, and a plan to build a community and reach more people.
+**Outcome:** a clear brand that people know. Plus a few post topics for each channel, and a plan to build a community and reach more people.
 
 **Related SOPs:** [16 Customer research and reviews](../sops/16-customer-research-and-reviews.md)
 
@@ -33,7 +33,7 @@
 ## Lesson 4.1: The brand core
 <!-- stage:attract -->
 
-**Why this matters:** Your brand core is a one-page summary of who you are, and everything you write and post comes from it. Brands without one end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
+**Why this matters:** Your brand core is a one-page summary of who you are. Everything you write and post comes from it. Brands without one end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
 
 **Step 1.** Describe 2 or 3 types of customer, each with their goals, what frustrates them and where they spend time online.
 
@@ -64,7 +64,7 @@
 
 **Expected result:** You have a document of real quotes.
 
-**Step 2.** For one profile, write the age range and stage of life, and the job they "hire" your product to do (the problem it solves for them).
+**Step 2.** For one profile, write their age range and stage of life. Then write the job they "hire" your product to do: the problem it solves.
 
 **Expected result:** The profile has a who and a why.
 
@@ -100,7 +100,7 @@
 ## Lesson 4.4: Content pillars by channel
 <!-- stage:attract -->
 
-**Why this matters:** Content pillars are the 4 to 6 topics you always post about, such as product, education, proof, community, promotions and your story. Each channel needs a different mix. Pillars stop you staring at a blank page.
+**Why this matters:** Content pillars are the 4 to 6 topics you always post about. For example: product, teaching, proof, community, sales and your story. Each channel needs a different mix. Pillars stop you staring at a blank page.
 
 **Step 1.** Write your own 4 to 6 pillars, starting from the examples above.
 
@@ -125,7 +125,7 @@
 | Community and story | Medium | High (this is where TikTok reach comes from) | Low |
 | Promotion | Low | Low | High (people subscribe to hear about offers first) |
 
-**Step 4.** Set your four pillars: proof (reviews, customer photos, press, numbers), education (how to use and choose, myths, care), story (founder, behind the scenes, values) and product and offer (launches, restocks, bundles, sales).
+**Step 4.** Set your four pillars. **Proof:** reviews, customer photos, press, numbers. **Teaching:** how to use and choose, myths, care. **Story:** founder, behind the scenes, values. **Product and offer:** launches, restocks, bundles, sales.
 
 **Expected result:** You have four named pillars.
 
@@ -133,7 +133,7 @@
 
 **Expected result:** Your plan follows the mix.
 
-**Step 6.** Fill gaps with ideas that never run out: reviews and comments, support questions ("You asked, we answered"), calm answers to negative comments, and a recurring series.
+**Step 6.** Fill gaps with ideas that never run out. Use reviews and comments, support questions ("You asked, we answered"), calm replies to negative comments, and a regular series.
 
 **Expected result:** You have more ideas than posting slots.
 
@@ -173,7 +173,7 @@
 
 **Expected result:** You know which 1 or 2 posts held attention best.
 
-**Step 3.** Use trial or test posting features where the platform has them, so a post reaches people who do not follow you.
+**Step 3.** Use trial or test posts where the platform has them. That way a post reaches people who do not follow you.
 
 **Expected result:** You can try ideas on new people without risking your main feed.
 
@@ -214,7 +214,7 @@
 
 **Expected result:** Real customers appear in your marketing.
 
-**Step 7.** Run a small event, meetup or live session, and reward your biggest fans with early access, gifts or a VIP group.
+**Step 7.** Run a small event, meetup or live session. Reward your biggest fans with early access, gifts or a VIP group.
 
 **Expected result:** Your keenest fans feel looked after.
 
@@ -233,7 +233,7 @@
 
 **Expected result:** Your audience sees a real person behind the brand every week.
 
-**Step 2.** Pitch one story (not a product) to a journalist or podcast each month: your founder journey, interesting data or a trend.
+**Step 2.** Each month, pitch one story to a journalist or podcast, not a product. It could be your founder story, interesting data or a trend.
 
 **Expected result:** You have sent a pitch and logged it.
 
@@ -250,7 +250,7 @@
 
 **Expected result:** Product is on its way to a wide group of creators.
 
-**Step 2.** Pay the best performers for usage rights (permission to use their content in your ads) for a set period, for example 3 months.
+**Step 2.** Pay the best creators for usage rights for a set time, for example 3 months. Usage rights mean you may use their content in your ads.
 
 **Expected result:** You have signed rights to run their content as ads.
 

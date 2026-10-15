@@ -37,11 +37,11 @@
 
 **Why this matters:** Creative means the ad itself: the picture or video plus the words. Ad platforms like Meta now find the buyers for you, so your creative decides who stops to look. A wide audience with many different ads usually beats a narrow audience with one style of ad.
 
-**Step 1.** Open Meta Ads Manager, go to the **Ads** tab and count how many distinct ads (different ideas, not just resizes) are live right now.
+**Step 1.** Open Meta Ads Manager and go to the **Ads** tab. Count how many different ads are live right now (different ideas, not just new sizes).
 
 **Expected result:** You have a count. Fewer than 6 live ideas usually means the account is short of creative.
 
-**Step 2.** Check that your main prospecting ad set uses a broad audience (Advantage+ audience, or country and age only) rather than stacked interests.
+**Step 2.** Check that your main ad set for new people uses a broad audience. That means Advantage+ audience, or just country and age, not a stack of interests.
 
 **Expected result:** Your targeting is wide and your ads do the targeting.
 
@@ -85,7 +85,7 @@
 
 **Why this matters:** Every ad does one of four jobs, called creative pillars: teach, prove, feel or stand for something. Covering all four gives the platform more ways to reach different people.
 
-**Step 1.** Label each of your live ads with one pillar: **Teach** (reasons and demos), **Prove** (reviews, results, tests), **Feel** (fears and wishes) or **Stand for** (opinions, myth busting, us versus them).
+**Step 1.** Label each live ad with one pillar. **Teach:** reasons and demos. **Prove:** reviews, results, tests. **Feel:** fears and wishes. **Stand for:** opinions, myth busting, us versus them.
 
 **Expected result:** Every ad has one pillar label.
 
@@ -102,7 +102,7 @@
 
 **Why this matters:** What makes you different comes in layers: feature, benefit, proof, personality and offer. Each ad should lead with one layer and back it with one or two others, so the message stays clear.
 
-**Step 1.** Write one line for each layer: product feature (what it has), benefit (what that does for the customer), proof (why believe it), brand personality (how it feels to buy from you) and offer (the deal).
+**Step 1.** Write one line for each layer. Feature: what it has. Benefit: what that does for the customer. Proof: why believe it. Personality: how it feels to buy from you. Offer: the deal.
 
 **Expected result:** You have five lines, your stand-out stack.
 
@@ -115,13 +115,13 @@
 ## Lesson 5.5: How much your buyer already knows
 <!-- stage:attract -->
 
-**Why this matters:** People are at different stages of knowing about you, from never having heard of the problem to ready to buy. Each stage needs a different ad. Matching the ad to the stage stops you shouting offers at strangers.
+**Why this matters:** People are at different stages of knowing about you. Some have never heard of the problem, and some are ready to buy. Each stage needs a different ad. Matching the ad to the stage stops you shouting offers at strangers.
 
-**Step 1.** Read the five stages in the table below and label each of your live ads with the stage it speaks to.
+**Step 1.** Read the five stages in the table below. Label each live ad with the stage it speaks to.
 
 **Expected result:** Every ad has a stage label.
 
-**Step 2.** Check that your cold audiences (people who have never heard of you) see early-stage ads and your warm audiences (visitors and engagers) see later-stage ads.
+**Step 2.** Check that cold audiences (people who do not know you) see early-stage ads. Warm audiences (visitors and people who engaged) should see later-stage ads.
 
 **Expected result:** Each audience is getting ads made for its stage.
 
@@ -142,7 +142,7 @@
 ## Lesson 5.6: Why people buy: the motives behind a purchase
 <!-- stage:attract -->
 
-**Why this matters:** Buying motives are the deep reasons people buy: belonging, status, fear of missing out, curiosity, relief, self-improvement, convenience and value. One driver per ad keeps the message sharp.
+**Why this matters:** Buying motives are the deep reasons people buy. They include belonging, status, fear of missing out, curiosity, relief, getting better, ease and value. One driver per ad keeps the message sharp.
 
 **Step 1.** Pick one driver for each ad in your next batch and write it on the brief.
 
@@ -158,7 +158,7 @@
 ## Lesson 5.7: Hooks (first 0 to 3 seconds)
 <!-- stage:attract -->
 
-**Why this matters:** The hook is the first line or first 3 seconds of an ad. Its only job is to stop the scroll, and most viewers leave in the first quarter of a video, so the hook matters most.
+**Why this matters:** The hook is the first line or first 3 seconds of an ad. Its only job is to stop the scroll. Most viewers leave in the first quarter of a video, so the hook matters most.
 
 **Step 1.** Write 3 hooks (the first 3 seconds) for your next ad, each a different type.
 
@@ -183,7 +183,7 @@
 ## Lesson 5.8: Script frameworks
 <!-- stage:attract -->
 
-**Why this matters:** A script framework is a proven order for the parts of an ad. Picking one stops rambling and makes sure every ad ends with a clear call to action (the line telling people what to do).
+**Why this matters:** A script framework is a proven order for the parts of an ad. Picking one stops rambling. It also makes sure every ad ends with a clear call to action: the line that tells people what to do.
 
 **Step 1.** Pick one framework from the table below, such as "problem, make it worse, solve" or "N reasons why".
 
@@ -193,7 +193,7 @@
 
 **Expected result:** You have a draft script of 20 to 45 seconds.
 
-**Step 3.** End with a specific call to action: what to do ("Tap Shop now"), what they get, and why now, stating the offer and any minimum clearly ("20% off your first order, free shipping over $80").
+**Step 3.** End with a clear call to action: what to do ("Tap Shop now"), what they get, and why now. State the offer and any minimum clearly ("20% off your first order, free shipping over $80").
 
 **Expected result:** The script ends with a call to action that has all three parts.
 
@@ -239,7 +239,7 @@
 
 **Expected result:** The footage looks like a post a friend would share.
 
-**Step 2.** Put movement in the first 3 to 5 seconds and change something every 1 to 2 seconds in longer videos (a cut, a new angle, text or a zoom).
+**Step 2.** Put movement in the first 3 to 5 seconds. In longer videos, change something every 1 to 2 seconds: a cut, a new angle, text or a zoom.
 
 **Expected result:** The edit never sits still for long.
 
@@ -256,13 +256,13 @@
 ## Lesson 5.11: Macro and micro iteration
 <!-- stage:attract -->
 
-**Why this matters:** Iteration means making new versions. About 30% of what you make should be brand new ideas (macro) and about 70% new versions of ads that already work (micro). Writing down what you expect before each test is what makes it a test.
+**Why this matters:** Iteration means making new versions. About 30% of what you make should be brand new ideas (big swings). About 70% should be new versions of ads that already work (small tweaks). Writing down what you expect before each test is what makes it a test.
 
-**Step 1.** Split your next batch roughly 30/70: 30% new angles or pillars, 70% new versions of winners with a changed hook, first frame, creator, length or captions.
+**Step 1.** Split your next batch about 30/70. 30% are new angles or pillars. 70% are new versions of winners with a new hook, first frame, creator, length or captions.
 
 **Expected result:** Your batch plan shows the split.
 
-**Step 2.** Write a hypothesis (your guess) for each ad, for example "A review-led hook will beat the demo hook on hook rate".
+**Step 2.** Write a guess for each ad. For example: "A review hook will beat the demo hook on hook rate".
 
 **Expected result:** Every new ad has a written guess.
 
@@ -275,9 +275,9 @@
 ## Lesson 5.12: Content that shows the ad system who buys
 <!-- stage:attract -->
 
-**Why this matters:** Content that is clear about its buyer makes it obvious who the ad is for, which helps the platform find the right people. A clear niche, a clear use and a clear type of person on screen beat a generic message.
+**Why this matters:** When an ad is clear about who it is for, the platform can find the right people more easily. A clear niche, a clear use and a clear type of person on screen beat a generic message.
 
-**Step 1.** For your next ad, name one specific group (for example new mums, trail runners or home bakers) and show that type of person using the product.
+**Step 1.** For your next ad, name one clear group, like new mums, trail runners or home bakers. Show that kind of person using the product.
 
 **Expected result:** Someone watching can tell in 3 seconds who the ad is for.
 
@@ -290,7 +290,7 @@
 
 **Why this matters:** You can give people a reason to buy now without a discount, which protects your margin. There are six honest options.
 
-**Step 1.** Pick one reason to buy now for this month: seasonal timing ("before summer"), an event, a limited bundle, a free gift with purchase for a set time, "why now" content or a delivery cut-off ("order by Friday for Christmas").
+**Step 1.** Pick one reason to buy now for this month. For example: the season ("before summer"), an event, a limited bundle, a free gift for a set time, or a delivery cut-off ("order by Friday for Christmas").
 
 **Expected result:** You have one urgency reason with a real date.
 
@@ -305,7 +305,7 @@
 
 **Why this matters:** Warm audiences know you but have not bought yet. They need answers, not more awareness ads.
 
-**Step 1.** Make one ad for warm audiences from this list: a comparison, reviews, an FAQ video, your guarantee, a "what you get" breakdown or a creator testimonial.
+**Step 1.** Make one ad for warm audiences. Pick from: a comparison, reviews, an FAQ video, your guarantee, a "what you get" breakdown or a creator review.
 
 **Expected result:** You have at least one answer-led ad.
 
@@ -355,7 +355,7 @@
 
 **Expected result:** You have a short list of ideas.
 
-**Step 2.** Adapt one to your size: a trend format, a collaboration with another small brand or a playful take on a trend.
+**Step 2.** Make one fit your size. Try a trend format, a team-up with another small brand, or a playful take on a trend.
 
 **Expected result:** Your next batch includes one moment-led ad.
 

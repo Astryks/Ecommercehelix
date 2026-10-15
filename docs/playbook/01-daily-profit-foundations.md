@@ -1,6 +1,6 @@
 # Module 1: Daily profit foundations
 
-**Outcome:** every morning you know if yesterday made money, and you know the few numbers that guide every other choice in this course.
+**Outcome:** every morning you know if yesterday made money. You also know the few numbers that guide every other choice in this course.
 
 **Time:** 60 to 90 minutes to set up once, then 2 minutes a day.
 **Related SOPs:** [02 Scorecard](../sops/02-scorecard-and-unit-economics.md), [03 Constraint diagnosis](../sops/03-constraint-diagnosis.md)
@@ -36,7 +36,7 @@
 ## Lesson 1.1: Why revenue is the wrong scoreboard
 <!-- stage:grow -->
 
-**Why this matters:** Revenue (all the money customers paid you) feels like success, but it does not tell you what you kept. A $5,000 day can still lose money once ads, product cost and shipping are paid, and ad platforms each claim the same sale, so their totals add up to more sales than you really had. This lesson gets you a real starting point so you can see the gap for yourself.
+**Why this matters:** Revenue (all the money customers paid you) feels like success. But it does not tell you what you kept. A $5,000 day can still lose money once you pay for ads, products and shipping. Ad platforms also each claim the same sale, so their totals add up to more sales than you really had. This lesson gets you a real starting point so you can see the gap for yourself.
 
 **Step 1.** Find last month's sales in your store.
 
@@ -49,30 +49,30 @@
 
 **Watch out:** Use the figure without GST or VAT. That tax belongs to the government, not to you.
 
-**Step 2.** Add up last month's ad spend from every platform (Meta: **Ads Manager > Campaigns**, date range last month, total in the **Amount spent** column; Google Ads: **Campaigns > Cost**) and write down the total.
+**Step 2.** Add up last month's ad spend from every platform and write down the total. In Meta, go to **Ads Manager > Campaigns**, pick last month and read the **Amount spent** column. In Google Ads, read **Campaigns > Cost**.
 
 **Expected result:** You have one total ad spend figure for last month.
 
-**Step 3.** Write down how much profit you think you made last month, as a single dollar number, before you do any maths.
+**Step 3.** Guess how much profit you made last month. Write it down as one dollar number before you do any maths.
 
 **Expected result:** A guessed profit figure sits next to your sales and ad spend.
 
-**Step 4.** Save the three numbers where you will find them again (a note on your phone, or the notes field in Helix Settings).
+**Step 4.** Save the three numbers somewhere easy to find, like a note on your phone or the notes field in Helix Settings.
 
-**Expected result:** You can find the note later. At the end of this module you compare your guess with the real contribution profit (sales minus order costs minus ads) and net profit (what is left after fixed bills too).
+**Expected result:** You can find the note later. At the end of this module you check your guess. You compare it with your real contribution profit (sales minus order costs minus ads) and net profit (what is left after fixed bills too).
 
 ## Lesson 1.2: Your cost drivers
 <!-- stage:grow -->
 
 **Why this matters:** Cost drivers are your average costs, and they are what turn sales into profit. Get them roughly right once and every profit number in Helix becomes trustworthy. You set them up in about 30 minutes and check them every 3 months.
 
-**Step 1.** Work out your **product cost %**: in Shopify go to **Analytics > Reports > Gross profit by product** (it needs "Cost per item" filled in on each product), or take your top 10 sellers and divide the landed unit cost (price paid plus freight and duty) by the selling price.
+**Step 1.** Work out your **product cost %**. In Shopify, go to **Analytics > Reports > Gross profit by product** (each product needs "Cost per item" filled in). Or take your top 10 sellers and divide the landed cost of one unit (price paid plus freight and duty) by the selling price.
 
 **Expected result:** You have one percentage, usually somewhere between 20% and 40% for most online stores.
 
 **Watch out:** Use prices without GST or VAT, and include freight and duty, not just the factory price.
 
-**Step 2.** Work out your **shipping and fulfilment cost per order**: take last month's carrier or warehouse (3PL, a company that stores and ships for you) invoices and divide by the number of orders shipped.
+**Step 2.** Work out your **shipping and packing cost per order**. Take last month's bills from your carrier or warehouse (a 3PL is a company that stores and ships for you). Divide by the number of orders you shipped.
 
 **Expected result:** You have a dollar amount per order, for example $9.
 
@@ -80,11 +80,11 @@
 
 **Expected result:** You have a second per-order figure, often $0.50 to $2.
 
-**Step 4.** Find your **payment fee %**: in Shopify go to **Settings > Payments** and read the card rate, or divide last month's total fees (from your payouts page) by sales.
+**Step 4.** Find your **payment fee %**. In Shopify, go to **Settings > Payments** and read the card rate. Or divide last month's total fees (on your payouts page) by sales.
 
 **Expected result:** You have a percentage, usually 1.75% to 3.5% depending on card mix and buy now pay later use.
 
-**Step 5.** List every **fixed cost** for a month: staff and contractors, a fair wage for yourself, software and apps, rent, insurance, accounting, loan interest and fixed marketing that is not ad spend (photo shoots, free product for creators, agency fees).
+**Step 5.** List every **fixed cost** for one month. Include staff and helpers, a fair wage for yourself, software and apps, rent, insurance and accounting. Add loan interest and any marketing that is not ad spend (photo shoots, free product for creators, agency fees).
 
 **Expected result:** You have one monthly total for fixed costs.
 
@@ -96,7 +96,7 @@
 2. Type your monthly total into **Fixed costs per month**.
 3. Click **Save targets**.
 
-**Expected result:** The Dashboard's net profit now takes off a daily share of your fixed costs (monthly total divided by 30.4).
+**Expected result:** The Dashboard's net profit now takes off a daily share of your fixed costs. That share is your monthly total divided by 30.4.
 
 <!-- do:numbers -->
 
@@ -116,13 +116,13 @@
 
 1. **Is my own wage a cost?** Yes. Put a fair wage for yourself into fixed costs, even if you do not pay it yet. If you leave it out, the business will look healthier than it is.
 2. **Do I include GST or VAT?** No. Use sales and costs without the tax you collect and pass on to the government.
-3. **How do I handle returns?** Use sales after refunds (net revenue). If returns are big for you, add a returns cost per order: return postage plus stock you have to throw away.
+3. **How do I handle returns?** Use sales after refunds (net revenue). If you get lots of returns, add a returns cost per order. That is the return postage plus any stock you have to throw away.
 4. **What about tariffs and duties on orders sent overseas?** Add them as a per-order cost for that country. Or keep a separate scorecard for each country.
 5. **I make my products myself.** Your product cost % includes materials and the labour for each unit. Production staff on a salary go in fixed costs.
 6. **I sell wholesale and retail.** Keep online retail separate. Give wholesale a fair share of the fixed costs.
 7. **My costs will change soon.** Save each version of your costs with a start date. That keeps your past numbers accurate.
 8. **I cannot get an exact average product cost.** Start with a sensible estimate from your top 10 sellers. A rough number you use every day beats a perfect number you never use.
-9. **What happens to product cost during a sale?** Product cost % goes up when you discount, because the price drops while the cost stays the same. Use a separate cost setting for sale periods.
+9. **What happens to product cost during a sale?** Product cost % goes up when you give a discount. The price drops, but the cost stays the same. Use a separate cost setting for sale periods.
 10. **I have several stores or regions.** Keep one scorecard per store or currency, then look at them combined.
 
 ## Lesson 1.3: The daily scorecard
@@ -130,11 +130,11 @@
 
 **Why this matters:** The scorecard is a short daily record of the numbers that decide profit. In Helix it lives in **Your numbers**, and the quick version is the profit box on **Today**. You type in a handful of numbers and Helix works out the rest, so you never do the maths yourself.
 
-**Step 1.** Each morning open Shopify **Analytics** with the date set to **Yesterday** and note **Gross sales**, **Orders**, **Discounts**, **Returns** and **Sessions** (a session is one visit to your store).
+**Step 1.** Each morning, open Shopify **Analytics** and set the date to **Yesterday**. Note **Gross sales**, **Orders**, **Discounts**, **Returns** and **Sessions** (a session is one visit to your store).
 
 **Expected result:** You have five numbers for yesterday, taking under a minute.
 
-**Step 2.** Note yesterday's ad spend for each channel (Meta **Amount spent**, Google **Cost**, TikTok **Cost**), or skip Meta if it is connected in Helix, because Helix syncs it every morning.
+**Step 2.** Note yesterday's ad spend for each channel: Meta **Amount spent**, Google **Cost** and TikTok **Cost**. If Meta is connected in Helix, skip it, because Helix brings it in every morning.
 
 **Expected result:** You have one spend figure per channel you advertise on.
 
@@ -209,7 +209,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Expected result:** You know which band your profit sits in.
 
-**Step 3.** Compare your MER (marketing efficiency ratio: all ad spend divided by net sales) with your target MER from Lesson 1.5, and your VCR (variable cost ratio: product, shipping, packaging and fees divided by net sales) with the table.
+**Step 3.** Compare your MER with your target MER from Lesson 1.5. MER is all ad spend divided by net sales. Then compare your VCR with the table. VCR is product, shipping, packaging and fees divided by net sales.
 
 **Expected result:** You know whether ads or order costs are the bigger squeeze.
 
@@ -229,29 +229,29 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 ## Lesson 1.5: Your target MER and break-even numbers
 <!-- stage:grow -->
 
-**Why this matters:** These numbers tell you how much you can spend on ads and still make money. They are the line in the sand for every ad decision, and once Helix knows your costs it calculates them for you. Doing it by hand once helps you trust them.
+**Why this matters:** These numbers tell you how much you can spend on ads and still make money. They are the line you should not cross with any ad choice. Once Helix knows your costs, it works them out for you. Doing it by hand once helps you trust them.
 
-**Step 1.** Calculate your target MER: 100% minus VCR minus FCR (fixed cost ratio: fixed costs divided by net sales) minus the profit % you want. Example: 100 - 40 - 15 - 15 = 30%.
+**Step 1.** Work out your target MER: 100% minus VCR, minus FCR, minus the profit % you want. FCR is your fixed costs divided by net sales. Example: 100 - 40 - 15 - 15 = 30%.
 
-**Expected result:** You have a target MER, for example 30%, meaning you can spend $30 on ads for every $100 of sales, averaged over new and returning customers.
+**Expected result:** You have a target MER, for example 30%. That means you can spend $30 on ads for every $100 of sales, across new and returning customers.
 
-**Step 2.** Type that figure into **Your numbers > Targets and fixed costs > Target MER (%)** and click **Save targets**.
+**Step 2.** Type that number into **Your numbers > Targets and fixed costs > Target MER (%)**. Then click **Save targets**.
 
 **Expected result:** Helix rates your MER green at or under this target on every screen.
 
 <!-- do:numbers -->
 
-**Step 3.** Calculate break-even ROAS (return on ad spend: sales from ads divided by ad spend) as 1 divided by (1 minus VCR). With VCR at 40%, 1 / 0.6 = 1.67.
+**Step 3.** Work out break-even ROAS: 1 divided by (1 minus VCR). ROAS (return on ad spend) is sales from ads divided by ad spend. With VCR at 40%, 1 / 0.6 = 1.67.
 
-**Expected result:** You know that any channel bringing back less than $1.67 for each $1 of ads loses money on every sale, before fixed costs.
+**Expected result:** You know the line. Any channel that brings back less than $1.67 for each $1 of ads loses money on every sale, before fixed costs.
 
-**Step 4.** Calculate break-even CPA (cost per acquisition: ad spend for one sale) as AOV (average order value) times (1 minus VCR). With AOV $100 and VCR 40%: $60.
+**Step 4.** Work out break-even CPA: AOV times (1 minus VCR). CPA is the ad spend for one sale, and AOV is your average order value. With AOV $100 and VCR 40%: $60.
 
 **Expected result:** You know the most you can pay for one sale before it loses money.
 
 **Step 5.** Calculate target CPA as AOV times target MER. In the example: $100 x 30% = $30.
 
-**Expected result:** You have a three-zone rule: cost per sale under $30 is good, $30 to $60 means watch it, above $60 means the ad loses money on every sale.
+**Expected result:** You have a simple three-zone rule. Under $30 per sale is good. $30 to $60 means watch it. Over $60 means the ad loses money on every sale.
 
 **Watch out:** Helix shows break-even ROAS and CPA on the Dashboard from your real numbers. If your hand maths differs a lot, check your cost drivers in Lesson 1.2.
 
@@ -266,7 +266,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 <!-- do:numbers -->
 
-**Step 2.** Compare your MER for the last 3 days and month to date with your target MER, then pick one stance: **Push** (under target, profit good: spend more), **Careful push** (close to target: spend a little more and watch), **Hold** (at target: keep spend the same) or **Defend** (over target: cut the weakest ads and fix the cause).
+**Step 2.** Compare your MER for the last 3 days and this month with your target MER. Then pick one plan: **Push** (under target, good profit: spend more), **Careful push** (close to target: spend a bit more and watch), **Hold** (at target: keep spend the same) or **Defend** (over target: cut the weakest ads and fix the cause).
 
 **Expected result:** You have one word for today's stance.
 
@@ -277,11 +277,11 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 3. In Meta Events Manager, check yesterday's purchases are showing.
 4. Check your best seller is in stock.
 
-**Expected result:** Site, checkout, tracking and stock are all confirmed working, or you have found the one thing to fix first.
+**Expected result:** You have checked that your site, checkout, tracking and stock all work. Or you have found the one thing to fix first.
 
-**Watch out:** A sudden drop in reported sales with normal orders in Shopify usually means tracking broke, not that ads stopped working.
+**Watch out:** Sometimes reported sales drop but Shopify orders look normal. That usually means tracking broke, not that the ads stopped working.
 
-**Step 4.** Write one line in your decision log: what you decided and why (for example "Hold: MER 31% vs 30% target, waiting on new ads").
+**Step 4.** Write one line in your decision log: what you chose and why. For example: "Hold: MER 31% vs 30% target, waiting on new ads".
 
 **Expected result:** Your log has a dated entry you can look back on next week.
 
@@ -302,9 +302,9 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 ![Where a $60 sale goes](../../public/guides/helix-0-profit-waterfall.svg)
 
-**Worked example: a $60 product made overseas.** It costs $12 to make and $3 to ship in with duty, so landed cost is $15 and gross margin is 75%. Payment fees take $1.35, packaging $1.50 and postage $9, leaving $33.15 before marketing. Ads cost $15 per order, leaving $18.15. Shopify, apps and other bills of $580 a month over 200 orders is $2.90 an order. Net profit is **$15.25 an order (25%)**, or about $3,050 a month. If ads crept up to $33 an order, every sale would lose money even though sales look the same.
+**Worked example: a $60 product made overseas.** It costs $12 to make and $3 to ship in with duty. So the landed cost is $15 and you keep 75% after product cost. Payment fees take $1.35, packaging $1.50 and postage $9, leaving $33.15 before marketing. Ads cost $15 per order, leaving $18.15. Shopify, apps and other bills of $580 a month over 200 orders is $2.90 an order. Net profit is **$15.25 an order (25%)**, or about $3,050 a month. If ads crept up to $33 an order, every sale would lose money even though sales look the same.
 
-**Step 1.** Write down one of your products and its selling price, then next to it write a cost for each of the seven layers in this lesson (product, freight and duty, payment fees, packaging, shipping, marketing, fixed costs), even as a guess.
+**Step 1.** Write down one product and its price. Next to it, write a cost for each of the seven layers in this lesson, even if you have to guess. The layers are product, freight and duty, payment fees, packaging, shipping, marketing and fixed costs.
 
 **Expected result:** You have a rough cost for every layer of one order.
 
@@ -317,7 +317,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 ## Lesson 1.8: Set up your profit dashboard
 <!-- stage:grow -->
 
-**Why this matters:** Every number Helix shows you later (profit yesterday, break-even, how much you can spend on ads) depends on knowing your costs. Five minutes here makes every other screen honest.
+**Why this matters:** Every number Helix shows you later depends on knowing your costs. That includes yesterday's profit, break-even and how much you can spend on ads. Five minutes here makes every other screen honest.
 
 **Step 1.** Enter the costs of one typical order in **Profit setup**.
 
@@ -334,7 +334,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Expected result:** You can see your net profit for a month at that number of orders.
 
-**Step 3.** Enter marketing per order (last month's ad spend divided by orders), tick "Use my monthly costs as fixed costs" and save.
+**Step 3.** Enter marketing per order (last month's ad spend divided by orders). Tick "Use my monthly costs as fixed costs" and save.
 
 **Expected result:** Profit setup is saved and your dashboard uses your real fixed costs.
 
@@ -345,13 +345,13 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Why this matters:** Spend too little and the store never grows. Spend too much and every sale loses money. A share of sales gives you a sense check, and your own margin tells you the hard limit.
 
-**Your hard limit comes from your margin, not from a rule.** Take profit before marketing as a share of sales. That is your **break-even MER**: marketing at that share of sales leaves exactly zero. **Break-even ROAS** is 1 divided by it. In the $60 example, profit before marketing is $33.15, so break-even MER is 55% and break-even ROAS is 1.81. Your **break-even cost per purchase** is the same $33.15: pay more than that in ads to win one order and you lose money on it.
+**Your hard limit comes from your margin, not from a rule.** Take profit before marketing as a share of sales. That is your **break-even MER**: marketing at that share of sales leaves exactly zero. **Break-even ROAS** is 1 divided by it. In the $60 example, profit before marketing is $33.15, so break-even MER is 55% and break-even ROAS is 1.81. Your **break-even cost per purchase** is the same $33.15. If you pay more than that in ads to win one order, you lose money on it.
 
 **Guides by stage (guides, not rules):**
 
-- **Before your first sales or under about $5,000 a month:** a percentage target means little yet. Set a small fixed test budget you can afford to lose, for example $20 to $50 a day for two weeks, and judge each test by cost per purchase against your break-even cost per purchase.
-- **Growing (about $5,000 to $80,000 a month):** total marketing commonly runs at about 10% to 30% of sales, depending on your margin and stage. Newer brands buying growth sit near the top; brands with lots of returning customers sit lower.
-- **Scaling (over about $80,000 a month):** many brands sit around 15% to 25% of sales on all marketing. Spending more is fine while contribution margin stays positive and returning customers grow, because those customers pay back the cost of winning them.
+- **Before your first sales or under about $5,000 a month:** a percentage target means little yet. Set a small test budget you can afford to lose, like $20 to $50 a day for two weeks. Judge each test by its cost per purchase against your break-even cost per purchase.
+- **Growing (about $5,000 to $80,000 a month):** total marketing is often about 10% to 30% of sales. It depends on your margin and how far along you are. Newer brands buying growth sit near the top; brands with lots of returning customers sit lower.
+- **Scaling (over about $80,000 a month):** many brands sit around 15% to 25% of sales on all marketing. Spending more is fine while your contribution margin stays above zero and returning customers grow. Those customers pay back the cost of winning them.
 
 High margin products can afford a higher share; low margin products cannot. Always leave room between your marketing share and your break-even for fixed costs and profit.
 
@@ -370,9 +370,9 @@ High margin products can afford a higher share; low margin products cannot. Alwa
 
 **Step 3.** Open **Growth** and compare your marketing share with the guide band for your size.
 
-**Expected result:** You know whether you are under, inside or over the usual range, and what that means for your margin.
+**Expected result:** You know if you are under, inside or over the usual range. You also know what that means for your margin.
 
-**Watch out:** Count all marketing, not just Meta: Google, TikTok, influencers, discount codes paid to creators and agency fees all belong in marketing share.
+**Watch out:** Count all marketing, not just Meta. Google, TikTok, influencers, codes paid to creators and agency fees all count.
 
 ## Example
 
@@ -384,7 +384,7 @@ A candle store had this day:
 
 Working it out step by step:
 
-1. Variable costs = 1,800 x 0.306 (product cost + fees) + 30 x $10.20 (fulfilment + packaging) = $551 + $306 = $857. That is 48% of sales (VCR 48%).
+1. Variable costs = 1,800 x 0.306 (product cost + fees) + 30 x $10.20 (shipping + packing). That is $551 + $306 = $857. That is 48% of sales (VCR 48%).
 2. Contribution profit = 1,800 - 857 - 520 = $423.
 3. Fixed costs per day = $9,000 ÷ 30 = $300. Net profit is about $123, or 7% of sales.
 4. MER = 520 ÷ 1,800 = 29%. RPV = $2.00 per visit. AOV = $60.
