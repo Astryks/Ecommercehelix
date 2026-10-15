@@ -20,6 +20,14 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 - 321 items have no transcript or local video; they were judged from their titles only and are listed in the private report for a separate check.
 - **7 new lessons (304 in total), in our own words, slotted into the guided path:** 5.20 Tell a short story in an ad; 5.21 Borrow what is already popular; 5.22 Make simple ads with free apps; 7.15 Cost caps, bid caps and value rules (Grow tag); 10.15 Ask shoppers what they want, then use the answers; 12.11 Start a YouTube channel that keeps selling; 20.13 Read Google Analytics in 15 minutes. Each has a simple card deck with "I'm lost" lines. Lesson-count test now at least 304.
 
+## Spacing pass and members group workflow (16 Oct 2026)
+
+- **Spacing:** shared tokens in `src/app/globals.css` (`--space-eyebrow`, `--space-lead`, `--space-lead-underlined`, `--space-block`, `--space-section`, `--space-page`, `--space-card`; tighter on phones) used as Tailwind `mt-eyebrow`, `mt-lead`, `mt-lead-ul`, `mt-block`, `py-section`, `pt-page`, `p-card`, plus `page-title` / `page-lead` and `PageHero` / `PageHeader` in `src/components/ui`. Taglines under an underlined heading get more room everywhere. The repeated "About" eyebrow is gone. Lesson pages no longer scroll sideways on phones. Screenshots in `/workspace/reports/helix/spacing-1016/` on the build box.
+- **About:** new "The real secret?" paragraph after "You are the owner."
+- **Members Facebook group:** when someone starts (or restarts) a paid plan, Stripe's webhook sends them a "join our community" email once per subscription (skipped if `FB_GROUP_URL` / `FACEBOOK_GROUP_URL` is unset), shows the group link on Plan and billing, and puts them on "to approve" (off "to remove"). When paid ends, people who were let in go on "to remove". Lists are events in the existing audit log (no schema change).
+- Owner email to support@astryks.com every day at 9am Sydney (`/api/cron/community-digest`, only when something new is waiting): To approve and To remove, one signed 7-day button per person (marks done, then opens the group's member requests or a member search), plus Open dashboard. Links are signed with `AUTH_SECRET`.
+- `/admin/community` (owners in `WINS_MODERATORS`): tabs Pending approval, To remove, Done with counts and search; Copy name, Open in Facebook, Mark done and bulk Mark selected done.
+
 ## QA fixes (15 Oct 2026, night)
 
 - CSV import: dates written in words keep the right day, blank cells no longer wipe saved numbers, Shopify shipping charges (what customers paid) are no longer counted as a shipping cost.
