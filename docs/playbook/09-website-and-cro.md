@@ -148,7 +148,7 @@
 
 **Expected result:** The product page loads in about 3 seconds and buying is easy.
 
-## Lesson 9.5: Copy that sells
+## Lesson 9.5: Words that help people buy
 <!-- stage:convert -->
 
 **Why this matters:** Copy means the words on your site. Specific words in your customers' own language sell; vague claims do not.
@@ -430,6 +430,64 @@
 **Step 5.** On Starter, wait for your monthly re-check. On Free, tick the fix done and move to the next one.
 
 **Expected result:** The fix no longer shows in your list, or is ticked as done.
+
+## Lesson 9.18: A product-finder quiz
+<!-- stage:convert -->
+
+**Why this matters:** When you sell many products, shoppers can freeze. A short quiz asks a few questions and points them to the right one. Their answers also tell you what they want, so your emails can match.
+
+**Step 1.** Write down the 3 to 5 questions you would ask a shopper in person. For example: skin type, main worry, budget.
+
+**Expected result:** A short list of questions, each with 2 to 4 answers.
+
+**Step 2.** Match each mix of answers to one product or bundle.
+
+**Expected result:** Every path through the quiz ends on a product.
+
+**Step 3.** Install a quiz app from the Shopify App Store (search "product quiz"). Build your questions in it.
+
+**Expected result:** The quiz works on a phone and takes under a minute.
+
+**Step 4.** Ask for an email just before the result. Send the answers to your email tool as tags or fields.
+
+**Expected result:** Each quiz email lands in your list with their answers saved.
+
+**Step 5.** Add a "Find your match" button to your home page and menu. Send quiz takers a welcome email that talks about their answers.
+
+**Expected result:** Quiz takers get a product pick and emails that fit them.
+
+**Step 6.** After 30 days, compare conversion for quiz takers with everyone else.
+
+**Expected result:** You know if the quiz earns its place. Quiz takers often buy at a higher rate.
+
+**Watch out:** Keep it short. Each extra question loses some people. Five questions is plenty.
+
+## Lesson 9.19: Video on product pages
+<!-- stage:convert -->
+
+**Why this matters:** Photos show what a product looks like. Video shows it working. A short clip of a real person using it answers questions that words cannot.
+
+**Step 1.** Pick your best-selling product. Gather 3 short clips: someone using it, a close-up, and a customer talking about it.
+
+**Expected result:** 3 clips, each under 30 seconds, filmed upright on a phone.
+
+**Step 2.** Add one clip as the second item in the product photos, after the main photo.
+
+**Expected result:** Shoppers see the product moving within one swipe.
+
+**Step 3.** Make sure the clips play muted and have captions. Keep each file small so the page stays fast (Lesson 9.4).
+
+**Expected result:** The page loads as fast as before on a phone.
+
+**Step 4.** If you have many clips, try a shoppable video app from the Shopify App Store. It shows a row of clips with a buy button on each.
+
+**Expected result:** Shoppers can watch and add to cart without leaving the video.
+
+**Step 5.** Test for 2 weeks with and without the video (Lesson 9.9). Compare add-to-cart rate.
+
+**Expected result:** You know if video helps this product, and you add it to the next best seller.
+
+**Watch out:** Ad clips that worked well often make great product page clips. Reuse them, but check your rights first (Lesson 19.4).
 
 ## Self-check
 

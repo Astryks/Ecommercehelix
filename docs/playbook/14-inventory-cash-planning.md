@@ -277,6 +277,64 @@
 
 **Example:** you sell 2 shirts a day, lead time is 50 days and you keep 14 safety days. The reorder point is 2 x 64 = 128 shirts. With 140 on hand and none on order, you have about 6 days before you must order.
 
+## Lesson 14.10: Clear slow stock without cheapening your brand
+<!-- stage:grow -->
+
+**Why this matters:** Stock that does not sell is cash stuck on a shelf. It also costs money to store. Clearing it in a planned way turns it back into cash, without training everyone to wait for discounts.
+
+**Step 1.** List products with more than 6 months of stock at current sales speed. Helix shows weeks of cover on the stock plan.
+
+**Expected result:** A list of slow products and how much cash is tied up in each.
+
+**Step 2.** Try gentle fixes first: show it higher on the home page, add it to a bundle, or make it a free gift.
+
+**Expected result:** Some slow stock starts selling at full price or inside bundles.
+
+**Step 3.** For what is left, pick one clearance idea. Ideas: a mystery box at a fixed price, a "last chance" page, or "seconds" for slightly faulty items.
+
+**Expected result:** One clear, time-limited way to sell the rest.
+
+**Step 4.** Offer it to your email list first, for a short window. Keep it off your main ads and away from your best sellers.
+
+**Expected result:** The stock sells mostly to existing fans, and new shoppers still see full prices.
+
+**Step 5.** Price so you at least get your cost back, if you can. Stop when the stock is gone or the window ends.
+
+**Expected result:** Cash back in the bank and space for products that sell.
+
+**Step 6.** Note why it was slow: wrong size, colour, timing or too big an order. Use that next time you order (Lesson 14.1).
+
+**Expected result:** Your next order is smaller for that kind of product.
+
+**Watch out:** If you clear stock every month, the real problem is ordering too much. Fix the buying, not the selling.
+
+## Lesson 14.11: Sold out? Pre-orders and back-in-stock lists
+<!-- stage:convert -->
+
+**Why this matters:** A sold-out page with no next step loses the sale forever. A back-in-stock alert or a pre-order keeps the shopper. It also tells you how much to order next.
+
+**Step 1.** Install a back-in-stock app, or use the one in your email tool. Turn on a "Notify me" button for sold-out products.
+
+**Expected result:** Sold-out pages show a "Notify me" button instead of a dead end.
+
+**Step 2.** Write a short email for when stock returns. Say it is back, show the product, and add one button.
+
+**Expected result:** People on the list get an email the moment stock arrives.
+
+**Step 3.** For products with a firm delivery date, turn on pre-orders. Show the ship date clearly on the product page and at checkout.
+
+**Expected result:** Shoppers can buy now and know when it will ship.
+
+**Step 4.** Take payment only if you are sure of the date. If you are not sure, collect a waitlist instead.
+
+**Expected result:** You never hold money for stock that might not come.
+
+**Step 5.** Count sign-ups for each product. Add them to your next order size (Lesson 14.9).
+
+**Expected result:** Your next order matches real demand.
+
+**Watch out:** If a pre-order date slips, email buyers at once with the new date and an easy refund. Silence turns into chargebacks.
+
 ## Self-check
 
 1. Name the five cash levers.

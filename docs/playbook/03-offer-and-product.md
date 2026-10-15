@@ -274,6 +274,33 @@
 
 **Watch out:** Hiding the cancel button or making it hard to skip creates chargebacks and angry reviews. Make leaving easy and most people stay longer.
 
+## Lesson 3.11: Raise prices and lean less on discounts
+<!-- stage:grow -->
+
+**Why this matters:** Costs go up every year. If your prices never move, your profit quietly shrinks. Constant sales also teach shoppers to wait for a code. A small, well-explained price rise often makes more profit than a big sale.
+
+**Step 1.** For your top 5 products, write the price, the full cost (Lesson 1.2) and the profit per sale.
+
+**Expected result:** You can see which products earn too little.
+
+**Step 2.** Work out a new price that is 5% to 10% higher. Check what rivals charge for something similar.
+
+**Expected result:** Each product has a new price that still feels fair next to rivals.
+
+**Step 3.** Tell your email list a week before the change. Say why in one honest line, and let them buy at the old price until a set date.
+
+**Expected result:** Loyal customers feel looked after, and you get a small rush of orders.
+
+**Step 4.** Change the prices on the date you said. Watch conversion rate and orders for 2 weeks.
+
+**Expected result:** Profit per order goes up. If conversion drops by more than the price rise, roll back part of it.
+
+**Step 5.** Count your sales last year. Plan fewer, bigger moments (Lesson 13.1). Between them, use free gifts or bundles instead of money off.
+
+**Expected result:** Fewer than one store-wide discount a month, and full-price sales go up.
+
+**Watch out:** Never put the price up and then "discount" it back down to the old price. Shoppers notice, and in many places it breaks the law.
+
 ## Self-check
 
 1. Which lever does a free returns policy belong to?

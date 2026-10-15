@@ -26,6 +26,12 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 - Store check: one check at a time (per server), 10-minute wait after a failed check.
 - Deferred: SSRF hardening that pins the checked IP for the fetch (DNS rebinding). Low risk, needs a custom fetch dispatcher.
 
+## Learning coverage check (15 Oct 2026, evening)
+- Checked the playbook against all private research videos and transcripts (two programmes, about 1,500 lessons, grouped into 129 topics). Before: 115 covered, 5 partial, 7 missing, 2 out of scope. After: all 127 in-scope topics covered. The private inventory and matrix stay outside the repo.
+- **10 new lessons (297 in total), in our own words, each slotted into the guided path next to its closest lesson:** 2.8 Why each extra ad dollar buys a bit less; 3.11 Raise prices and lean less on discounts; 5.18 One product, many kinds of buyer; 5.19 Keep a creative library; 9.18 A product-finder quiz; 9.19 Video on product pages; 10.14 Plain-text emails that feel personal; 14.10 Clear slow stock without cheapening your brand; 14.11 Sold out? Pre-orders and back-in-stock lists; 22.18 Sell to people near you.
+- **Extended:** 7.12 (ad scheduling and spending limits rows), 22.5 (custom product fields). Lesson 9.5 renamed "Words that help people buy" (ref unchanged). Stage tags added for 3.11 (Grow) and 14.11 (Convert). Lesson-count test now at least 297.
+- **Checks:** 8-gram originality check, banned-term check and heading check against the private research; repo and live pages searched for outside brand and programme names. Results in the commit notes below.
+
 ## Learn is now one guided path (15 Oct 2026, evening)
 
 - /dashboard/learn: one "Your next lesson" card, then a numbered 7-step path with progress per step; "See entire course" timeline now runs in path order. Attract / Convert / Grow are small tags only.

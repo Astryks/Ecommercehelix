@@ -184,6 +184,8 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: adding products](https://help.shopify.com/en/manual/products/add-update-products)
 <!-- /guide:shopify-4-add-product -->
 
+**Extra details on every page:** Shopify lets you add your own fields to products, called metafields. Use them for things like care steps, sizing or ingredients. Then your theme shows them in the same spot on every product page. Find them under **Settings**, then **Custom data**.
+
 ## Lesson 22.6: Variants and inventory
 <!-- stage:convert -->
 
@@ -493,4 +495,31 @@
 | Tracking | Test Purchase seen in Meta and Google |
 | Speed | Mobile pages load in about 3 seconds |
 | Password | Store password removed when you are ready to launch |
+
+## Lesson 22.18: Sell to people near you
+<!-- stage:convert -->
+
+**Why this matters:** Local shoppers can get your products the same day, with no shipping cost. Pickup and local delivery remove a big reason people leave the cart. Local ads can also reach people who walk past your door.
+
+**Step 1.** In Shopify, go to **Settings**, then **Shipping and delivery**. Turn on **Local pickup** if people can collect from you.
+
+**Expected result:** Pickup shows as a free option at checkout for nearby shoppers.
+
+**Step 2.** On the same page, set up **Local delivery** with a delivery area and a price. A small fee or free over a set amount works well.
+
+**Expected result:** Nearby shoppers see a local delivery option at checkout.
+
+**Step 3.** Add a line to your promo bar or home page, such as "Free pickup in Newtown".
+
+**Expected result:** Local shoppers learn about it before checkout.
+
+**Step 4.** If you have a shop front, claim your free Google Business Profile. Add opening hours, photos and a link to your store.
+
+**Expected result:** You show up on Google Maps for people searching near you.
+
+**Step 5.** Try a small local ad with a tight area around you, about $10 a day for 2 weeks. Use a Meta ad with a location set, or a Google campaign aimed at your area.
+
+**Expected result:** You know if local ads bring orders or visits at a cost you can afford.
+
+**Watch out:** Only offer a delivery area you can really reach on time. One late local order hurts more than a slow parcel.
 

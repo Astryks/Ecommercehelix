@@ -33,7 +33,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 10 | Answer worries | Answer your top 3 worries on the product page | [3.3 Give people reasons to believe you](playbook/03-offer-and-product.md#lesson-33-give-people-reasons-to-believe-you) | 15 min | Starter: Write the answers for you |
 | 11 | Shipping | Set a free shipping amount that makes orders bigger | [9.11 Shipping psychology](playbook/09-website-and-cro.md#lesson-911-shipping-psychology) | 15 min | Growth: Set up the free shipping message (after you approve) |
 | 12 | Checkout | Remove one thing that stops people paying | [9.10 Order value](playbook/09-website-and-cro.md#lesson-910-order-value) | 15 min | Guide |
-| 13 | Home page | Make the top of your home page say what you sell | [9.5 Copy that sells](playbook/09-website-and-cro.md#lesson-95-copy-that-sells) | 15 min | Starter: Write 3 headline options for you |
+| 13 | Home page | Make the top of your home page say what you sell | [9.5 Words that help people buy](playbook/09-website-and-cro.md#lesson-95-words-that-help-people-buy) | 15 min | Starter: Write 3 headline options for you |
 | 14 | Guarantee | Write a guarantee you are proud of | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Starter: Write your guarantee for you |
 | 15 | Bundles | Make one bundle that raises order size | [3.6 Pricing that is easy to accept](playbook/03-offer-and-product.md#lesson-36-pricing-that-is-easy-to-accept) | 20 min | Growth: Suggest bundles from your order history |
 | 16 | Menu | Tidy your menu and your best collection page | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 20 min | Guide |

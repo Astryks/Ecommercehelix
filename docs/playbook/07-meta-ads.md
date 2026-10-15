@@ -416,6 +416,8 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 | "Data restrictions applied" | Meta has put your store in a sensitive category. Ask for a review. |
 | Instagram sells worse than Facebook | Usually fine. Judge both together. Only remove a placement with strong proof. |
 | You reached the limit on ads | Archive dead ads. Combine ad sets. |
+| You want ads to run only at certain hours | Ad scheduling needs a lifetime budget. Most stores do better leaving ads on all day. Test it only with clear proof that some hours lose money. |
+| You keep overspending in a sale | Set a spending limit on the campaign or the account before the sale starts. |
 
 ## Lesson 7.13: Launch your first Meta ad in 30 minutes
 <!-- stage:attract -->

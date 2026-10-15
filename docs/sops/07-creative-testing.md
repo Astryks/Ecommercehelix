@@ -26,7 +26,7 @@ Balance each month's ads across four pillars so you are not "playing the same no
 | --- | --- |
 | **Teach** | Reasons why, how it works, demo, comparisons, myth-busting |
 | **Prove** | Reviews read aloud, customer using it, before and after, unboxing, creator tests |
-| **Feel** | Fears and desires, the moment of relief, identity and status |
+| **Feel** | Worries and hopes, the moment of relief, identity and status |
 | **Stand for** | Founder opinion, "us versus them", behind the scenes, values |
 
 **Who is the focus?** Rotate the focus between the product, the brand, the result and the customer. Ads centred on the customer tend to travel furthest.

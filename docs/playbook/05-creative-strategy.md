@@ -359,6 +359,60 @@
 
 **Expected result:** Your next batch includes one moment-led ad.
 
+## Lesson 5.18: One product, many kinds of buyer
+<!-- stage:attract -->
+
+**Why this matters:** One product often solves different problems for different groups. A water bottle is for gym fans, hikers, office workers and parents. Ads made for each group feel personal. They also give the ad system more ways to find buyers.
+
+**Step 1.** List every type of person who has bought from you. Look at reviews, customer emails and your social followers.
+
+**Expected result:** A list of at least 5 groups, like "new mums" or "weekend campers".
+
+**Step 2.** For each group, write the one problem your product solves for them. Use their words if you can (Lesson 29.1).
+
+**Expected result:** Each group has its own problem in one line.
+
+**Step 3.** Pick the 3 biggest groups. Make one ad for each that shows that person, in their place, with their problem.
+
+**Expected result:** 3 ads that look and sound different from each other.
+
+**Step 4.** Run them side by side in your testing campaign (Lesson 6.10) for at least 7 days.
+
+**Expected result:** You learn which group buys most cheaply.
+
+**Step 5.** Make 2 more ads for the winning group. Keep one new group in testing every month.
+
+**Expected result:** Your ads cover several groups, and you always have a new one being tested.
+
+**Watch out:** Changing only the colour or the words is not a new group. The person, the place and the problem should all change.
+
+## Lesson 5.19: Keep a creative library
+<!-- stage:attract -->
+
+**Why this matters:** Good photos, clips and past ads get lost in phones and old folders. A tidy library means you make new ads faster. You also stop paying twice for the same kind of shoot.
+
+**Step 1.** Make one shared folder called "Creative library" in Google Drive or Dropbox. Inside it, make folders for Photos, Raw video, Finished ads and Reviews.
+
+**Expected result:** One place where every file goes.
+
+**Step 2.** Move your best files into it. Name each one the same way: date, product, type, who made it. For example "2026-10 bottle UGC Sam".
+
+**Expected result:** You can find any file by searching its name.
+
+**Step 3.** Make a simple sheet with one row per finished ad. Add the ad name, the hook, the group it speaks to and its result (Lesson 6.7).
+
+**Expected result:** A list that shows which ideas won and which lost.
+
+**Step 4.** Each Friday, add the week's new files and results. It takes about 15 minutes.
+
+**Expected result:** The library stays up to date without a big clean-up.
+
+**Step 5.** Before you brief new ads, look at your top 5 winners. Reuse their hooks with fresh clips.
+
+**Expected result:** New ads start from proven ideas, not a blank page.
+
+**Watch out:** Check your rights before you reuse creator content. Some deals only allow use for a set time (Lesson 19.4).
+
 ## Self-check
 
 1. What share of your ads should be new versions of ideas that already work?

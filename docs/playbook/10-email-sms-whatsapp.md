@@ -333,6 +333,33 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** New buyers are looked after and flows are back to normal.
 
+## Lesson 10.14: Plain-text emails that feel personal
+<!-- stage:convert -->
+
+**Why this matters:** Designed emails look like ads. A short plain email looks like a note from a person. Plain emails often get more replies and land in the main inbox more often.
+
+**Step 1.** Pick one email in a flow to test. A good first choice is the second welcome email or the abandoned checkout email.
+
+**Expected result:** You know which email you will change.
+
+**Step 2.** Make a copy and remove the header, big images and buttons, keeping your name at the bottom.
+
+**Expected result:** An email that is mostly text, like one from a friend.
+
+**Step 3.** Write it as the founder in 60 to 120 words: one idea, one question and one plain product link.
+
+**Expected result:** A short, warm email with one link.
+
+**Step 4.** Send from a real name, like "Sam from your store", and let replies reach a real inbox.
+
+**Expected result:** People can reply, and someone reads the replies.
+
+**Step 5.** Split test it against the designed version for 2 weeks (Lesson 10.7). Compare clicks and orders, not just opens.
+
+**Expected result:** You know which style wins for that email.
+
+**Watch out:** Plain does not mean messy. Short lines, no spelling mistakes, and one clear ask.
+
 ## Self-check
 
 1. What is a micro-commitment form?

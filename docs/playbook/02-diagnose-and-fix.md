@@ -222,6 +222,33 @@ A store makes $50,000 a month. MER is 20%, VCR 40%, FCR 30%, and profit 10%.
 
 **What it shows:** the store's problem was heavy fixed costs. Growth was the fix, even though ads got less efficient.
 
+## Lesson 2.8: Why each extra ad dollar buys a bit less
+<!-- stage:grow -->
+
+**Why this matters:** Your first $100 of ads reaches the people most likely to buy. Each extra $100 reaches people who are a little less keen. So cost per order creeps up as you spend more. Know where that line is, and you can grow without losing money.
+
+**Step 1.** Open your scorecard. Write down your weekly ad spend and new orders for the last 8 weeks.
+
+**Expected result:** A small table with 8 rows of spend and orders.
+
+**Step 2.** Sort the weeks from lowest to highest spend. Work out cost per order for each week (spend divided by orders).
+
+**Expected result:** You can see whether cost per order rises as spend goes up.
+
+**Step 3.** Divide the extra spend in your two biggest weeks by the extra orders they brought, compared with your two smallest weeks.
+
+**Expected result:** One number: the cost of the extra orders. For example, an extra $600 for 10 extra orders is $60 each.
+
+**Step 4.** Compare that number with your break-even cost per order (Lesson 1.5). If it is higher, you are past your safe spend for now.
+
+**Expected result:** You know if your next dollar makes or loses money.
+
+**Step 5.** Raise spend by about 20% a week. Stop when the extra orders cost more than break-even.
+
+**Expected result:** Spend grows only while each step still pays for itself. To grow past that point, make new ads or a better offer first.
+
+**Watch out:** Average cost per order can look fine while the last orders lose money. Always check the extra orders, not just the average.
+
 ## Self-check
 
 1. Which kind of constraint is most common?
