@@ -1,4 +1,5 @@
-import { HELP_GUIDES, SUPPORT_EMAIL, supportMailto } from "@/lib/support";
+import Link from "next/link";
+import { HELP_GUIDES } from "@/lib/support";
 
 export function HelpGuides() {
   return (
@@ -10,7 +11,7 @@ export function HelpGuides() {
           <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-sm text-slate-800">
             {g.steps.map((s, i) => <li key={i}>{s}</li>)}
           </ol>
-          <p className="mt-3 text-xs text-slate-500">Stuck on a step? <a className="underline" href={supportMailto(g.title)}>Email {SUPPORT_EMAIL}</a>.</p>
+          <p className="mt-3 text-xs text-slate-500">Stuck on a step? <Link className="underline" href="/contact">Contact us</Link>.</p>
         </section>
       ))}
     </div>

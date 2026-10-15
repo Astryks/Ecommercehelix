@@ -74,11 +74,11 @@ describe("goals ladder", () => {
 describe("who Helix is for", () => {
   it("has three bands from $0 to about $10M a year and the milestones between", () => {
     expect(BANDS.map((b) => b.name)).toEqual(["Just starting", "Growing", "Scaling"]);
-    expect(BANDS[1].range).toBe("Up to about $1M a year");
+    expect(BANDS[1].range).toBe("Toward a $1M year, profitably");
     expect(BANDS[2].range).toBe("About $1M to $10M a year");
-    expect(BANDS[1].monthly).toBe("About $10k to $80k a month");
-    expect(BANDS.filter((b) => b.fit === "Most value").map((b) => b.id)).toEqual(["growing"]);
-    expect(WHO_HEADLINE.title).toMatch(/\$10k to \$80k a month/);
+    expect(BANDS[1].monthly).toBe("$10k to $30k a month");
+    expect(BANDS.filter((b) => b.fit === "Best fit").map((b) => b.id)).toEqual(["growing"]);
+    expect(WHO_HEADLINE.title).toMatch(/\$10k to \$30k a month/);
     expect(MILESTONES).toContain("First $1M year");
   });
 });

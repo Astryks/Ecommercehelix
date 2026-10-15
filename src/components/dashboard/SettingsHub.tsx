@@ -18,6 +18,7 @@ const ITEMS = [
   { href: "/dashboard/plan", label: "Your plan", note: "Your week-by-week plan.", icon: Route },
   { href: "/dashboard/review", label: "Review my store", note: "Ask a person to look at your store.", icon: Store },
   { href: "/dashboard/help", label: "Help", note: "Step-by-step guides and support.", icon: LifeBuoy },
+  { href: "/dashboard/contact", label: "Contact us", note: "Send the Helix team a message.", icon: LifeBuoy },
 ];
 
 export function SettingsHub({ pending }: { pending: number }) {

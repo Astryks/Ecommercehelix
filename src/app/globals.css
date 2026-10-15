@@ -234,3 +234,35 @@ a { text-underline-offset: 3px; }
 /* When a Numbers day panel is open, shrink the floating "I'm lost" button to an icon so it never covers the figures. */
 body:has([data-testid="day-panel"]) .lost-fab { padding: 0.625rem; gap: 0; }
 body:has([data-testid="day-panel"]) .lost-fab .lost-fab-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Supporting accents: purple stays primary; these swap the local marker colour for variety.
+ * Text values are AA (>= 4.5:1) on paper and white. */
+.accent-pink { --color-accent: #C2306F; --color-accent-ink: #A3255C; --accent-tint: #FFE3EF; }
+.accent-coral { --color-accent: #C2410C; --color-accent-ink: #9A3412; --accent-tint: #FFE8DC; }
+.accent-mint { --color-accent: #2F7359; --color-accent-ink: #255C48; --accent-tint: #DDF1E7; }
+.accent-purple { --color-accent: #5A50D6; --color-accent-ink: #453CBF; --accent-tint: #E8E6FB; }
+.accent-text { color: var(--color-accent); }
+.accent-chip { background: var(--accent-tint, #E8E6FB); color: var(--color-accent-ink); }
+
+/* Swipe colours for supporting accents */
+.grad-text.accent-pink, .scribble.accent-pink { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3.5 5.4 C 40 4.6, 90 5.3, 140 4.7 C 165 4.4, 185 4.6, 196.5 4.1 C 199.6 4.1, 199.8 11.4, 196.6 11.5 C 170 11.9, 120 11.3, 70 12.1 C 45 12.5, 20 12.2, 3.8 12.6 C 0.4 12.6, 0.3 5.5, 3.5 5.4 Z' fill='%23FF7EB6'/%3E%3C/svg%3E"); }
+.grad-text.accent-coral, .scribble.accent-coral { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3.5 5.4 C 40 4.6, 90 5.3, 140 4.7 C 165 4.4, 185 4.6, 196.5 4.1 C 199.6 4.1, 199.8 11.4, 196.6 11.5 C 170 11.9, 120 11.3, 70 12.1 C 45 12.5, 20 12.2, 3.8 12.6 C 0.4 12.6, 0.3 5.5, 3.5 5.4 Z' fill='%23FF8A5B'/%3E%3C/svg%3E"); }
+.grad-text.accent-mint, .scribble.accent-mint { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3.5 5.4 C 40 4.6, 90 5.3, 140 4.7 C 165 4.4, 185 4.6, 196.5 4.1 C 199.6 4.1, 199.8 11.4, 196.6 11.5 C 170 11.9, 120 11.3, 70 12.1 C 45 12.5, 20 12.2, 3.8 12.6 C 0.4 12.6, 0.3 5.5, 3.5 5.4 Z' fill='%2362A387'/%3E%3C/svg%3E"); }
+
+/* Micro-animations: CSS only, transform/opacity/background-size (no layout), off for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .card, a.btn, .btn, button { transition: transform .18s ease, box-shadow .18s ease; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px -12px rgb(26 23 24 / .25); }
+  [data-variant="bold"] a:hover { transform: translateY(-1px); }
+  @keyframes helix-pulse { 0%,100% { opacity: 1; } 50% { opacity: .78; } }
+  [data-variant="bold"] p > span { animation: helix-pulse 2.8s ease-in-out infinite; }
+  @keyframes helix-grow { from { transform: scaleY(0); } }
+  .helix-bars rect { transform-box: fill-box; transform-origin: bottom; animation: helix-grow .7s cubic-bezier(.2,.7,.2,1) both; }
+  .helix-bars rect:nth-child(2){animation-delay:.05s}.helix-bars rect:nth-child(3){animation-delay:.1s}.helix-bars rect:nth-child(4){animation-delay:.15s}.helix-bars rect:nth-child(5){animation-delay:.2s}.helix-bars rect:nth-child(6){animation-delay:.25s}.helix-bars rect:nth-child(7){animation-delay:.3s}
+  @supports (animation-timeline: view()) {
+    @keyframes helix-rise { from { opacity: 0; transform: translateY(14px); } }
+    @keyframes helix-draw { from { background-size: 0% 0.2em; } }
+    main section h2, main .card, main .rule-accent { animation: helix-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 40%; }
+    main h2 .grad-text { animation: helix-draw linear both; animation-timeline: view(); animation-range: entry 20% entry 70%; }
+  }
+}

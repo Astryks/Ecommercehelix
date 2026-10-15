@@ -3,7 +3,6 @@ import { getAccount } from "@/lib/repo";
 import { addReviewRequest } from "@/lib/community";
 import { redirect } from "next/navigation";
 import { LostLink } from "@/components/dashboard/LostLink";
-import { SUPPORT_EMAIL } from "@/lib/support";
 
 export const metadata = { title: "Review my store" };
 
@@ -37,7 +36,7 @@ export default async function ReviewPage({ searchParams }: PageProps<"/dashboard
           <textarea name="question" rows={4} maxLength={1500} className="input mt-1" placeholder="e.g. People add to cart but don't buy." />
         </label>
         <button className="btn-primary text-sm">Send my request</button>
-        <p className="text-xs text-slate-500">This goes to {SUPPORT_EMAIL}. It is general feedback on your store, not a promise of results.</p>
+        <p className="text-xs text-slate-500">This goes to the Helix team. It is general feedback on your store, not a promise of results.</p>
       </form>
     </div>
   );

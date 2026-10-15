@@ -24,7 +24,7 @@ import { ARTICLES } from "@/lib/content/guides";
 
 export const metadata = pageMeta({
   title: "E-commerce Growth Software: Grow Your Online Store Profitably",
-  description: "E-commerce Helix helps store owners grow profitably: a daily profit dashboard, one clear growth task a day, Meta ads as paused drafts and email flows set up with your approval. Free to start.",
+  description: "Built for stores doing $10k–$30k a month. E-commerce Helix helps you reach $1M, profitably: a daily profit dashboard, one clear growth task a day, Meta ads as paused drafts and email flows set up with your approval. Free to start.",
   path: "/",
 });
 
@@ -73,7 +73,7 @@ function MorningBrief() {
           <span className="font-display text-5xl text-cyan-500">$412</span>
           <span className="text-sm font-medium text-emerald-700">+14% vs 7-day average</span>
         </p>
-        <svg viewBox="0 0 280 72" className="mt-4 h-16 w-full" role="img" aria-label="Profit for the last 7 days, rising">
+        <svg viewBox="0 0 280 72" className="helix-bars mt-4 h-16 w-full" role="img" aria-label="Profit for the last 7 days, rising">
           <line x1="0" y1="71" x2="280" y2="71" stroke="#DEDCD4" />
           {bars.map((b, i) => (
             <rect key={i} x={i * 40 + 6} y={71 - b} width="28" height={b} rx="2" fill={i === bars.length - 1 ? "#2f7359" : "#C9C6BD"} />
@@ -97,6 +97,9 @@ function MorningBrief() {
   );
 }
 
+/** Supporting accents cycled across cards so purple leads without being everywhere. */
+const ACCENTS = ["accent-purple", "accent-pink", "accent-mint"] as const;
+
 export default function Home() {
   const content = siteContent(isoDay(), "US");
   const banner = content.banner;
@@ -112,7 +115,10 @@ export default function Home() {
             <h1 className="hero-h1 mt-5 text-5xl leading-[1.04] text-slate-900 sm:text-6xl lg:text-[4.25rem]">
               Grow your <span className="whitespace-nowrap">e-commerce</span> business <span className="grad-text">a little every day</span>
             </h1>
-            <p className="hero-lead lead mt-10 max-w-xl text-xl leading-8 text-slate-700">
+            <p className="accent-pink accent-chip mt-5 inline-flex flex-wrap items-center gap-x-1.5 rounded-2xl px-3.5 py-1.5 text-sm font-semibold" data-testid="hero-audience">
+              Built for stores doing $10k–$30k a month. <span className="font-hand text-base">We help you reach $1M, profitably.</span>
+            </p>
+            <p className="hero-lead lead mt-6 max-w-xl text-xl leading-8 text-slate-700">
               {content.heroLine}
             </p>
             {content.heroExtra && <p className="hero-extra font-hand mt-3 max-w-xl text-xl text-[#5A50D6]" data-testid="hero-extra">{content.heroExtra}</p>}
@@ -146,19 +152,19 @@ export default function Home() {
         <section id="who" aria-labelledby="who-title" className="scroll-mt-10 border-t border-slate-200 bg-paper py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Who Helix is for</p>
-            <h2 id="who-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Built for stores doing <span className="grad-text">$10k to $80k a month</span> that want to reach a $1M year, profitably</h2>
+            <h2 id="who-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Built for stores doing <span className="grad-text accent-pink">$10k to $30k a month</span> that want to reach $1M, profitably</h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{WHO_HEADLINE.body}</p>
             <div className="mt-12"><WhoFor /></div>
           </div>
         </section>
 
         <section id="goals" aria-labelledby="goals-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
-          <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <div>
               <p className="eyebrow">What to aim at</p>
-              <h2 id="goals-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">The goal is profit, <span className="grad-text">not just revenue.</span></h2>
-              <p className="mt-5 text-lg leading-8 text-slate-600">{GOALS_HEADLINE.order}</p>
-              <p className="mt-4 text-lg leading-8 text-slate-600">Each rung feeds the next. Set monthly targets when you sign up, and Helix checks them against your real results on Today and the Dashboard, so you always know which number to work on next.</p>
+              <h2 id="goals-title" className="mt-3 text-4xl text-slate-900 sm:text-5xl">The goal is profit, <span className="grad-text accent-mint">not just revenue.</span></h2>
+              <p className="mt-5 text-lg leading-7 text-slate-600">{GOALS_HEADLINE.order}</p>
+              <p className="mt-3 text-lg leading-7 text-slate-600">Each rung feeds the next. Set monthly targets when you sign up, and Helix checks them against your real results on Today and the Dashboard, so you always know which number to work on next.</p>
               <VanityNote className="mt-6" />
               <Link href="/learn/goals" className="btn-ghost mt-6">What good looks like for each number <ArrowRight className="h-4 w-4" aria-hidden /></Link>
             </div>
@@ -175,9 +181,9 @@ export default function Home() {
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Not sales. Not followers. Not likes. Helix puts your profit at the top of the screen every day and helps you grow it one small step at a time.</p>
             <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-slate-200">
               {PROFIT_POINTS.map((p, i) => (
-                <article key={p.title} className="md:px-8 md:first:pl-0 md:last:pr-0">
+                <article key={p.title} className={`md:px-8 md:first:pl-0 md:last:pr-0 ${ACCENTS[i % 3]}`}>
                   <div className="rule-accent pt-5">
-                    <span className="flex items-center gap-3 text-sm font-semibold text-cyan-700"><span className="font-hand text-2xl">0{i + 1}</span><p.icon className="h-4 w-4" aria-hidden /></span>
+                    <span className="flex items-center gap-3 text-sm font-semibold accent-text"><span className="font-hand text-2xl">0{i + 1}</span><p.icon className="h-4 w-4" aria-hidden /></span>
                   </div>
                   <h3 className="mt-3 text-xl text-slate-900">{p.title}</h3>
                   <p className="mt-3 text-[15px] leading-7 text-slate-600">{p.text}</p>
@@ -201,12 +207,12 @@ export default function Home() {
         <section id="ads-fear" aria-labelledby="fear-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-24">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Nervous about ads?</p>
-            <h2 id="fear-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Most owners are scared to advertise. <span className="grad-text">Helix shows you how it really works.</span></h2>
+            <h2 id="fear-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Most owners are scared to advertise. <span className="grad-text accent-coral">Helix shows you how it really works.</span></h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">It usually goes like this. You are worried about wasting money, so you put a little into Meta or Google, nothing much comes back after a week, and you decide ads are not for you. But a tiny budget switched off early never had a fair chance. Helix explains how Meta and Google ads actually work, in plain words, so you can spend with a plan instead of a knot in your stomach.</p>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
-              {FEAR_POINTS.map((p) => (
-                <article key={p.title} className="card p-6">
-                  <p.icon className="h-5 w-5 text-cyan-600" aria-hidden />
+              {FEAR_POINTS.map((p, i) => (
+                <article key={p.title} className={`card p-6 ${ACCENTS[(i + 1) % 3]}`}>
+                  <span className="accent-chip inline-flex h-9 w-9 items-center justify-center rounded-lg"><p.icon className="h-5 w-5" aria-hidden /></span>
                   <h3 className="mt-4 text-xl text-slate-900">{p.title}</h3>
                   <p className="mt-2 text-[15px] leading-7 text-slate-600">{p.text}</p>
                 </article>
@@ -256,10 +262,10 @@ export default function Home() {
             <h2 className="mt-3 text-3xl text-slate-900 sm:text-5xl">Check. One thing a day. Approve. Grow.</h2>
             <ol className="mt-14 grid gap-10 md:grid-cols-4 md:gap-8">
               {STEPS.map((s, i) => (
-                <li key={s.title} className="rule-accent pt-6">
+                <li key={s.title} className={`rule-accent pt-6 ${ACCENTS[i % 3]}`}>
                   <span className="flex items-center justify-between">
                     <span className="font-display text-4xl font-semibold text-slate-300">{i + 1}</span>
-                    <s.icon className="h-5 w-5 text-cyan-600" aria-hidden />
+                    <s.icon className="h-5 w-5 accent-text" aria-hidden />
                   </span>
                   <h3 className="mt-4 text-xl text-slate-900">{s.title}</h3>
                   <p className="mt-2 text-[15px] leading-7 text-slate-600">{s.text}</p>
@@ -341,8 +347,7 @@ export default function Home() {
 
         <section id="faq" className="scroll-mt-10 py-24">
           <div className="mx-auto max-w-3xl px-5">
-            <p className="eyebrow">FAQ</p>
-            <h2 className="mt-3 text-3xl text-slate-900 sm:text-5xl">Good questions</h2>
+            <h2 className="text-3xl text-slate-900 sm:text-5xl">FAQ</h2>
             <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">
               {HOME_FAQ.map((f) => (
                 <details key={f.q} className="group py-5">

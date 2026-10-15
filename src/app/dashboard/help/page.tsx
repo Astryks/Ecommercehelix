@@ -1,7 +1,7 @@
 import { HelpGuides } from "@/components/HelpGuides";
 import { AiBox } from "@/components/AiBox";
 import { aiHelp } from "../ai-actions";
-import { SUPPORT_EMAIL, supportMailto } from "@/lib/support";
+import Link from "next/link";
 
 export default async function DashboardHelp({ searchParams }: PageProps<"/dashboard/help">) {
   const sp = await searchParams;
@@ -9,7 +9,7 @@ export default async function DashboardHelp({ searchParams }: PageProps<"/dashbo
   return (
     <div className="mx-auto max-w-3xl">
       <h1 className="text-2xl font-semibold">Help</h1>
-      <p className="mt-2 text-slate-700">Where Helix cannot do a step for you, here is exactly how to do it. Still stuck? Email <a className="underline" href={supportMailto()}>{SUPPORT_EMAIL}</a>. A real person replies, usually within one business day.</p>
+      <p className="mt-2 text-slate-700">Where Helix cannot do a step for you, here is exactly how to do it. Still stuck? <Link className="underline" href="/dashboard/contact">Contact us</Link>. A real person replies, usually within one business day.</p>
       <section className="card mt-6 p-5">
         <h2 className="font-semibold">I&apos;m lost</h2>
         <p className="mt-1 text-sm text-slate-600">Tell Helix where you are stuck and it points you to the next step.</p>

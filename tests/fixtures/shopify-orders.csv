@@ -1,0 +1,5 @@
+Name,Email,Financial Status,Created at,Subtotal,Shipping,Discount Amount,Refunded Amount,Lineitem name
+#1001,a@x.com,paid,2026-10-01 10:12:00 -0400,"1,200.00",10.00,20.00,0,Mug
+#1001,a@x.com,,2026-10-01 10:12:00 -0400,,,,,Plate
+#1002,b@x.com,paid,2026-10-01 15:00:00 -0400,80.00,5.00,0,0,Cup
+#1003,c@x.com,paid,2026-10-02 09:00:00 -0400,50.50,0,0,10,Cup

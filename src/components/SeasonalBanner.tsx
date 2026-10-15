@@ -10,16 +10,23 @@ const countdown = (a: SeasonAlert) =>
 
 /** Public home page version: real date, links to the free prep plan. */
 /** Site-wide banner from the seasonal calendar (src/lib/season-calendar.ts). Same look as before. */
+const BOLD_KEYS = new Set(["bfcm", "black-friday", "cyber-monday"]);
+
 export function CalendarStrip({ banner }: { banner: Banner & { href?: string } }) {
+  // Big retail events get a bold ink bar with a warm amber accent; everything else stays calm.
+  const bold = BOLD_KEYS.has(banner.key.replace(/-\d{4}$/, ""));
+  const wrap = bold ? "border-b border-[#2b2729] bg-[#1A1718] text-white" : "border-b border-cyan-200 bg-cyan-100 text-slate-950";
+  const pill = bold ? "bg-[#FFB347] text-[#1A1718]" : "bg-white/40";
+  const btn = bold ? "bg-[#FFB347] text-[#1A1718] hover:bg-[#FFC46B] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" : "bg-slate-950 text-white hover:bg-slate-800";
   return (
-    <div className="relative border-b border-cyan-200 bg-cyan-100 text-slate-950" data-banner={banner.key}>
+    <div className={`relative ${wrap}`} data-banner={banner.key} data-variant={bold ? "bold" : "calm"}>
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3">
-        <CalendarClock className="h-5 w-5 flex-none" aria-hidden />
+        <CalendarClock className={`h-5 w-5 flex-none ${bold ? "text-[#FFB347]" : ""}`} aria-hidden />
         <p className="flex-1 text-sm font-semibold sm:text-base">
           {banner.text}
-          <span className="ml-2 whitespace-nowrap rounded-full bg-white/40 px-2 py-0.5 text-xs font-bold">{banner.badge}</span>
+          <span className={`ml-2 whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-bold ${pill}`}>{banner.badge}</span>
         </p>
-        <Link href={banner.href ?? "/start"} className="inline-flex items-center gap-1.5 rounded-lg bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
+        <Link href={banner.href ?? "/start"} className={`inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-sm font-semibold ${btn}`}>
           {banner.cta} <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
       </div>

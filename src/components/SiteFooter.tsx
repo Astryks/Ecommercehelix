@@ -33,6 +33,7 @@ export function SiteFooter() {
             <li><Link className="hover:text-white" href="/about">About</Link></li>
             <li><Link className="hover:text-white" href="/faq">FAQ</Link></li>
             <li><Link className="hover:text-white" href="/help">Help and support</Link></li>
+            <li><Link className="hover:text-white" href="/contact">Contact us</Link></li>
             <li><Link className="hover:text-white" href="/privacy">Privacy</Link></li>
             <li><Link className="hover:text-white" href="/terms">Terms</Link></li>
             <li><Link className="hover:text-white" href="/data-deletion">Data deletion</Link></li>

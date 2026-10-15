@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { HelpGuides } from "@/components/HelpGuides";
-import { SUPPORT_EMAIL, supportMailto } from "@/lib/support";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Help and support",
@@ -16,7 +16,7 @@ export default function HelpPage() {
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl px-5 py-10 sm:py-12">
         <h1 className="text-3xl sm:text-4xl">Help and support</h1>
-        <p className="mt-3 text-slate-700">Some steps need your own accounts, so you do them and Helix shows you how. Each guide below is a few short steps. Still stuck? Email <a className="underline" href={supportMailto()}>{SUPPORT_EMAIL}</a> and a real person will reply, usually within one business day.</p>
+        <p className="mt-3 text-slate-700">Some steps need your own accounts, so you do them and Helix shows you how. Each guide below is a few short steps. Still stuck? <Link className="underline" href="/contact">Contact us</Link> and a real person will reply, usually within one business day.</p>
         <div className="mt-8"><HelpGuides /></div>
       </main>
       <SiteFooter />
