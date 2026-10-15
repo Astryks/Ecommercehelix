@@ -48,7 +48,7 @@ function StepTips({ step, lesson }: { step: StepView; lesson: LessonView }) {
   );
 }
 
-export function LessonSteps({ lesson, slug, next = null }: { lesson: LessonView; slug?: string; next?: NextLesson }) {
+export function LessonSteps({ lesson, next = null }: { lesson: LessonView; slug?: string; next?: NextLesson }) {
   const { done, loaded } = useLessonProgress();
   const [chosen, setChosen] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
@@ -75,7 +75,6 @@ export function LessonSteps({ lesson, slug, next = null }: { lesson: LessonView;
         <a href={`#${lesson.id}`} className="no-underline">{lesson.heading}</a>
         <span className={`ml-2 inline-flex translate-y-[-3px] items-center rounded-full px-2.5 py-0.5 align-middle font-sans text-[11px] font-semibold uppercase tracking-wide ring-1 ${lesson.stage.chip}`}>{lesson.stage.name}</span>
       </h2>
-      {slug && <p className="mt-2"><Link href={`/learn/${slug}/cards/${lesson.ref}`} className="text-sm font-semibold text-cyan-700 underline">View as cards, one small step at a time</Link></p>}
 
       {lesson.noticeHtml && <div className={`${PROSE} mt-4 text-sm`} dangerouslySetInnerHTML={{ __html: lesson.noticeHtml }} />}
 

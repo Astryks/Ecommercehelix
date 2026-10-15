@@ -338,7 +338,7 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 | 31 to 60 | Sharpen the offer (risk reversal, proof, bundle). Build one landing page for the best ad angle and test it against the product page. Start a review-request flow. | One winning ad angle with repeatable CPP within target. Pop-up sign-up rate above 3%. |
 | 61 to 90 | Scale the winner in 20% steps. Add cart tiers for AOV. Start a weekly email campaign. Consider Google Shopping (feed-only) only if Meta is profitable and the feed is clean. | Positive contribution profit for 4 straight weeks. MER at or under target. |
 
-### Stage 2: $10k to $80k a month
+### Stage 2: $10k to $30k a month
 
 **Focus:** systemise creative and spread fixed costs by growing.
 
@@ -348,7 +348,7 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 | 31 to 60 | Creator and UGC pipeline: brief 4 to 10 creators a month. 70/30 iterate vs new. Site testing program: one test running at all times. Email: 1 to 2 campaigns a week with segmentation. | Creative velocity of 8+ new ads a week. One site test called per fortnight. |
 | 61 to 90 | Plan the next big sale or launch (SOP 15). Demand planning for stock (SOP 17). Consider a second country or channel if profitable. Hire or outsource the first repeatable role (editor, VA, customer service). | 90-day promo calendar set. Stock cover in band. One role delegated with a written SOP. |
 
-### Stage 3: $80k+ a month
+### Stage 3: $30k to $80k+ a month
 
 **Focus:** protect margin, build the team, and plan peaks a year ahead.
 

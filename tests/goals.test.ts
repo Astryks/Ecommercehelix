@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { DEFAULT_GOALS, DEFAULT_MER, GOAL_KEYS, LADDER, actualsFrom, fmtGoal, goalsFromForm, impliedMonth, merFromForm, rateGoal, targetOf } from "@/lib/goals";
+import { DEFAULT_GOALS, MILLION_YEAR_GOAL, DEFAULT_MER, GOAL_KEYS, LADDER, actualsFrom, fmtGoal, goalsFromForm, impliedMonth, merFromForm, rateGoal, targetOf } from "@/lib/goals";
 import { metricsFor } from "@/lib/analytics";
 import { WHO_HEADLINE, BANDS, MILESTONES } from "@/lib/audience";
 import type { DayInput } from "@/lib/scorecard";
@@ -26,10 +26,16 @@ describe("goals ladder", () => {
       // CPA target = what MER allows on one average order (within $1).
       expect(Math.abs(g.cpa - g.aov * (DEFAULT_MER[t] / 100))).toBeLessThanOrEqual(1);
     }
-    const m = impliedMonth(DEFAULT_GOALS.growing, 30, 9000);
-    expect(Math.round(m.revenue)).toBe(60720);
-    expect(Math.round(m.netProfit)).toBe(3144);
+    const m = impliedMonth(DEFAULT_GOALS.growing, 30, 2500);
+    expect(Math.round(m.revenue)).toBe(20160);
+    expect(Math.round(m.netProfit)).toBe(1532);
     expect(m.roas).toBeCloseTo(3.33, 2);
+  });
+  it("has a $1M-a-year end goal that adds up", () => {
+    const g = MILLION_YEAR_GOAL;
+    const monthly = g.sessions * (g.crPct / 100) * g.aov;
+    expect(Math.round(monthly * 12 / 1000)).toBeGreaterThanOrEqual(1000);
+    expect(Math.abs(g.cpa - g.aov * (g.merPct / 100))).toBeLessThanOrEqual(1);
   });
   it("reads goals from a form, keeping fallbacks for blank or bad fields", () => {
     const f = new FormData();
@@ -75,7 +81,8 @@ describe("who Helix is for", () => {
   it("has three bands from $0 to about $10M a year and the milestones between", () => {
     expect(BANDS.map((b) => b.name)).toEqual(["Just starting", "Growing", "Scaling"]);
     expect(BANDS[1].range).toBe("Toward a $1M year, profitably");
-    expect(BANDS[2].range).toBe("About $1M to $10M a year");
+    expect(BANDS[2].range).toBe("On the way to a $1M year and beyond");
+    expect(BANDS[2].monthly).toBe("$30k to $80k+ a month");
     expect(BANDS[1].monthly).toBe("$10k to $30k a month");
     expect(BANDS.filter((b) => b.fit === "Best fit").map((b) => b.id)).toEqual(["growing"]);
     expect(WHO_HEADLINE.title).toMatch(/\$10k to \$30k a month/);

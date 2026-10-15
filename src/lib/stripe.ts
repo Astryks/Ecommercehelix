@@ -14,7 +14,7 @@ export function priceFor(plan: PlanId, env: Env = process.env): string | undefin
 
 /**
  * Which plan a price grants. Also accepts older prices (STRIPE_PRICE_*_LEGACY, comma-separated), so members
- * who joined on an earlier price (for example the first AUD prices) keep their plan after the switch to USD.
+ * who joined on an earlier price (for example the first, pre-USD prices) keep their plan after the switch to USD.
  * An unknown price grants nothing.
  */
 export function planForPrice(priceId?: string | null, env: Env = process.env, price?: { lookup_key?: string | null; metadata?: Record<string, string> | null } | null): PlanId {

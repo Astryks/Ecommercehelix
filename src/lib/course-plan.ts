@@ -10,8 +10,8 @@ export type Phase = "numbers" | "attract" | "convert" | "grow" | "run";
 
 export const COURSE_TRACKS: { id: CourseTrack; name: string; band: string; who: string }[] = [
   { id: "starting", name: "Just starting", band: "$0 to $10k a month", who: "Launching, or a few sales a week." },
-  { id: "growing", name: "Growing", band: "$10k to $80k a month", who: "Regular sales, ready for more profit." },
-  { id: "scaling", name: "Scaling", band: "Over $80k a month", who: "A real business that needs systems and a team." },
+  { id: "growing", name: "Growing", band: "$10k to $30k a month", who: "Regular sales, ready for more profit." },
+  { id: "scaling", name: "Scaling", band: "$30k to $80k+ a month", who: "A real business that needs systems and a team." },
 ];
 export const toCourseTrack = (v: unknown): CourseTrack => (v === "starting" || v === "scaling" ? v : "growing");
 

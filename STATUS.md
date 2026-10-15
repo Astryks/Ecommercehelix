@@ -1,17 +1,20 @@
 # STATUS
 
-_Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
+_Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 
 ## Needs Sid (only these are left)
 
 1. **Stripe: one real purchase + refund (5 minutes).** Setup is done (15 Oct 2026, live mode). Left for you: buy Starter (US$29) on the live site with your own card, open Plan and billing > Manage, cancel, check access stays until the period end, then refund in Stripe. Also set branding by hand (Stripe does not allow it via the API on your own account): Dashboard > Settings > Branding: name "E-commerce Helix", logo option B, colour #5A50D6, accent #1A1718.
 2. **TikTok (paused by Sid).** When ready: create the app at https://business-api.tiktok.com/portal, redirect URL `https://ecommercehelix.com/api/tiktok/callback`, then set `TIKTOK_APP_ID` and `TIKTOK_APP_SECRET` in Vercel. Spend sync is built after that (small additive table).
 3. **Meta app review** (so people who are not testers can connect Meta): Business Verification in Meta Business Settings > Security Centre, then App Review for `ads_read`, `ads_management`, `business_management`, `pages_read_engagement` with the screen recording described in `docs/meta-setup.md`.
-4. **Meta "Save choice" check** on Settings > Connections: sign in as yourself, pick your ad account, Page and pixel, press Save choice and confirm it sticks (the fix shipped; it needs your real Meta account to confirm). Then refund your A$29 and set your account to Starter free.
+4. **Meta "Save choice" check** on Settings > Connections: sign in as yourself, pick your ad account, Page and pixel, press Save choice and confirm it sticks (the fix shipped; it needs your real Meta account to confirm). Then refund your earlier Starter payment and set your account to Starter free.
 5. **Google Ads check-in:** once Google approves the developer token (https://console.cloud.google.com/google/ads-apis/overview?project=astryks), send it to me or set `GOOGLE_ADS_DEVELOPER_TOKEN` in Vercel Production, then connect your Google Ads account on /dashboard/connect and check the first sync.
-6. **GitHub Support purge for PR #12:** paste the ready text in `docs/github-support-pr12.md` into https://support.github.com/contact ("Removing sensitive data").
+6. **GitHub Support request (old cached research commits):** ask GitHub Support to remove the old cached commits 79bd6e9, d93fb8b, ac984ea, 90a2d45 and d785342 from Astryks/Astryks PR #12. Ready text: `docs/github-support-pr12.md`; send it at https://support.github.com/contact ("Removing sensitive data").
 7. **Lesson videos** (when recorded): send the URLs and I add them (free YouTube picks per path step live in `src/lib/learn-path.json`).
 8. **Social v3:** say OK before the 50 new posts are scheduled.
+9. **Closed Facebook group for paying members:** the group is live and linked from Community. Check the join button once with a paid account, and remove members who cancel (by hand for now).
+10. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
+11. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
 
 ## Learn is now one guided path (15 Oct 2026, evening)
 
@@ -27,14 +30,14 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 
 - **Homepage polish + contact form + Daily table (evening):** Black Friday/Cyber Monday banner is now a bold ink bar with an amber countdown pill and button (other seasons keep the calm lavender bar). Supporting accents (pink, coral, mint) on some headline swipes, cards and icons; purple stays primary. Hero now says "Built for stores doing $10k–$30k a month. We help you reach $1M, profitably." (also in meta description, Who-for section, FAQ). Stage cards and milestones stepper redesigned; goals ladder is a clean vertical stepper with no overflow. FAQ heading is just "FAQ". CSS-only micro-animations (scroll-driven where supported, off for reduced motion). New Contact form at /contact and /dashboard/contact (honeypot, rate limit, server validation; Resend to `CONTACT_TO`, reply-to the sender, confirmation to the sender); visible support email removed from Help pages and Need help box (legal pages keep it). Numbers > Daily table: inline editable cells with autosave, Add a day, Upload CSV (Shopify Sales over time / Orders export, Meta, Google, TikTok, generic) with column mapping, preview and merge by date, blank template, empty state. No schema change was needed.
 
-- **Stripe (LIVE mode) done:** ran `scripts/stripe-setup.mjs` with the live restricted key (re-run safe: a second run reused the same prices). Starter US$29/month `price_1UQgTxIPhQ2XB9EXaLmzuM5g`, Growth US$59/month `price_1UQgTyIPhQ2XB9EXamkfPgUR` set as `STRIPE_PRICE_STARTER/GROWTH` (Production + Preview, sensitive). Old AUD prices moved to `STRIPE_PRICE_STARTER_LEGACY` / `STRIPE_PRICE_GROWTH_LEGACY` and tagged `helix_plan`. Webhook `https://ecommercehelix.com/api/stripe/webhook` enabled with all 6 events (existing endpoint, signing secret unchanged). Customer portal: cancel at period end, update card, invoices, switch plans, return to /dashboard/billing. Checkout verified opening at US$29 / US$59 (not paid).
+- **Stripe (LIVE mode) done:** ran `scripts/stripe-setup.mjs` with the live restricted key (re-run safe: a second run reused the same prices). Starter US$29/month `price_1UQgTxIPhQ2XB9EXaLmzuM5g`, Growth US$59/month `price_1UQgTyIPhQ2XB9EXamkfPgUR` set as `STRIPE_PRICE_STARTER/GROWTH` (Production + Preview, sensitive). Old prices moved to `STRIPE_PRICE_STARTER_LEGACY` / `STRIPE_PRICE_GROWTH_LEGACY` and tagged `helix_plan`. Webhook `https://ecommercehelix.com/api/stripe/webhook` enabled with all 6 events (existing endpoint, signing secret unchanged). Customer portal: cancel at period end, update card, invoices, switch plans, return to /dashboard/billing. Checkout verified opening at US$29 / US$59 (not paid).
 
 - **Emails live:** `EMAILS_LIVE=1`, `SCORECARD_EMAIL_LIVE=1` and `NUDGES_LIVE=1` set in Vercel Production (the Resend key `AUTH_RESEND_KEY` and `EMAIL_FROM` are already set). Welcome, daily steps, sale date, win-back, alerts, Monday scorecard and nudges now send; receipts and payment emails send from the webhook. `RESEND_API_KEY` is not needed (the code falls back to `AUTH_RESEND_KEY`).
 - **Secrets:** `CRON_SECRET` and `TOKEN_ENCRYPTION_KEY` already exist in Production and Preview (not regenerated, so saved Meta/Shopify/Google tokens stay readable).
 - **Stripe code ready for USD:** new prices are recognised by ID or by their `helix_plan` tag / lookup key, so the switch cannot lock out current members. Setup script `scripts/stripe-setup.mjs`.
 - **Lessons:** every sentence across all 30 modules is now 20 words or under (the only longer lines are the 12 "Related:" lines, which are lists of links, not sentences). Start of today: average 13.6 words, 290 over 25, 722 over 20. Now: average 11.5, 0 over 20.
 - **Planning tools, automation, billing and emails:** see the dated sections below.
-- Community join button for paid members: still not seen with a paid account; it shows once you buy Starter (step 1).
+- **Cleanup (15 Oct, evening):** audience line and stage bands now match everywhere (Just starting under $10k a month, Growing $10k to $30k, Scaling $30k to $80k+; "Built for stores doing $10k to $30k a month, we help you reach $1M profitably"). New default goals from the benchmark review (Growing: 14,000 visits, 1.5% CTR, 6.5% add to cart, 1.6% conversion, $90 AOV, 30% MER, $27 CPA, 20% contribution, $1,500 net a month; Just starting: 5,000, 1.2%, 5%, 1.4%, $65, 35%, $23, 10%, $0+), plus a $1M-year end goal on /learn/goals (about 60k visits, 1.6%, $87, 25% MER, about $22 CPA, 25% contribution). Only defaults changed; saved user targets are untouched. Guide ranges: conversion 0.8/1.4/2.6%, AOV $60/$100/$150, contribution 10/20/30%. Store size switches to Scaling at $30k a month. Leftover A$/AUD text removed. Lesson "View as cards" link and the course-task "Guide me" button replaced by the inline checklist. Instagram link (@ecommercehelix) in the footer and Organization JSON-LD `sameAs`. Learn path videos: step 1 profit map (Common Thread Collective), step 3 Shopify conversion video (Learn With Shopify), step 6 brand finance literacy (Commerce Roundtable), step 7 Klaviyo email and SMS (Klaviyo); all checked with YouTube oEmbed.
 - Scheduled Google Sheets refresh: still a one-off import (re-run by hand); low priority, no Sid action needed.
 
 ## At a glance
@@ -68,32 +71,18 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 - Private Facebook group **E-commerce Helix Members**: https://www.facebook.com/groups/1313305624157403/ . Page is admin, membership questions set, cover added, 6 starter posts with the Welcome post pinned. `FACEBOOK_GROUP_URL` set in Vercel (Production and Preview). Assets in `docs/social/fb-group` (cover, posts.md, images).
 - Social v3 (`docs/social/v3`, 50 new posts, 17 animated): in progress. **Needs Sid's OK before anything is scheduled.**
 
-**Open items (superseded by "Needs Sid" at the top)**
-- TikTok developer app: being set up now. Then set `TIKTOK_APP_ID` and `TIKTOK_APP_SECRET` (redirect `https://ecommercehelix.com/api/tiktok/callback`).
-- TikTok daily spend sync (token storage needs a small additive table) once the app is approved.
-- Scheduled Google Sheets refresh (today it is a one-off import, re-run by hand).
-- Lesson videos (Learn shows "Video coming soon" placeholders; add URLs in `VIDEOS` in `src/app/dashboard/learn/page.tsx`).
-- Stripe branding (Dashboard only, see below) and USD Stripe prices.
-- Live-mode Stripe customer portal check (cancel at period end) when Stripe goes live.
-- Paid-account check of Community (the test account is Free, so the group join button has not been seen live).
-- Google Ads check-in (connection and first sync on a real account).
-- Meta "Save choice" fix on Connections (ad account / Page / pixel picker).
-- GitHub Support purge request for PR #12.
-- Meta app review, so users who are not testers can connect Meta.
-- Local branch `audit-pass` is fully merged but still checked out in a second worktree (`/workspace/eh-audit`), so it was left in place.
-
 ## Simpler app, USD prices and the seasonal calendar (15 Oct 2026, Sydney)
 
 **For Sid (action needed)**
-- **Closed Facebook group: done (15 Oct 2026).** Group created at https://www.facebook.com/groups/1313305624157403/ and `FACEBOOK_GROUP_URL` set in Vercel (Production and Preview); paying members see the join button on Community, free users see an upgrade prompt.
-- **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel. Moderators see a "Wins waiting for a check" list on Community. Nothing shows on the wall until a moderator presses Show it.
-- **Stripe currency:** the site now shows **US$29 / US$59** everywhere (home, /pricing, billing, terms, JSON-LD offers now USD). The Stripe prices are still the **AUD** ones (A$29 / A$59): the Stripe secret key is a sensitive Vercel variable that cannot be pulled to the build box, so USD Price objects could not be created from here. To finish: in Stripe create two monthly USD prices (Starter 29, Growth 59; e.g. lookup keys `helix_starter_monthly_usd`, `helix_growth_monthly_usd`), then set `STRIPE_PRICE_STARTER` and `STRIPE_PRICE_GROWTH` to the new price ids and redeploy. Until then Checkout would show A$ amounts.
-- **Monday scorecard email** is built but off: set `SCORECARD_EMAIL_LIVE=1` to send (cron `/api/cron/monday-scorecard`, Sundays 21:00 UTC = Mondays 8 AM Sydney). Without it, it only logs.
+- Closed Facebook group: created at https://www.facebook.com/groups/1313305624157403/, `FACEBOOK_GROUP_URL` set; paying members see the join button on Community, free users see an upgrade prompt.
+- Wins wall: moderators (`WINS_MODERATORS`) see a "Wins waiting for a check" list on Community. Nothing shows until a moderator presses Show it.
+- Prices are USD everywhere (site, JSON-LD, terms, Stripe live prices; see "Stripe (LIVE mode) done" above).
+- Monday scorecard email: live (`SCORECARD_EMAIL_LIVE=1`; cron `/api/cron/monday-scorecard`, Mondays 8 AM Sydney).
 
 **What changed**
 - Homepage hero: more room between the purple underline and the paragraph; the URL box still shows without scrolling at 1280x720 and 1024x600.
 - FAQ "Does Helix use AI?" now explains the small, writing-only AI with monthly allowances and no training on user data. Other "no AI" lines (store check copy) reworded. Terms gained "AI features", "Community and the Wins wall" and "Store reviews and emails"; privacy lists wins and review requests and how long they are kept. Legal date 15 Oct 2026.
-- **Five places in the app** (sidebar on desktop, bottom bar on phones): **Today** ("Here's what to do today": 1 to 3 tasks, each with Guide me, Do it for me, Done, and an I'm lost link; plus a weekly plan card and a milestone toast), **Numbers** (`/dashboard/numbers`: daily sales bars for the last 4 or 8 weeks with a Week/Month toggle; tap a day for sales, orders, cost of goods (unit cost x units when not synced), ad spend (Meta, Google), shipping, fees, other costs, profit, margin, ROAS, MER, ad cost per order and break-even ROAS; manual entry and connect prompts), **Learn** (`/dashboard/learn`: every lesson under Attract, Convert or Grow, grouped by module, with done ticks; template library at `/dashboard/learn/templates`), **Progress** (adds achievements: profit milestones, streaks, first ad, first lesson, goals), **Community** (members group button from `FACEBOOK_GROUP_URL`, weekly Wins wall with moderation).
+- **Five places in the app** (sidebar on desktop, bottom bar on phones): **Today** ("Here's what to do today": tasks in time blocks (see `df24f21`), each with Do it for me, Done, and an I'm lost link; plus a weekly plan card and a milestone toast), **Numbers** (`/dashboard/numbers`: daily sales bars for the last 4 or 8 weeks with a Week/Month toggle; tap a day for sales, orders, cost of goods (unit cost x units when not synced), ad spend (Meta, Google), shipping, fees, other costs, profit, margin, ROAS, MER, ad cost per order and break-even ROAS; manual entry and connect prompts), **Learn** (`/dashboard/learn`: every lesson under Attract, Convert or Grow, grouped by module, with done ticks; template library at `/dashboard/learn/templates`), **Progress** (adds achievements: profit milestones, streaks, first ad, first lesson, goals), **Community** (members group button from `FACEBOOK_GROUP_URL`, weekly Wins wall with moderation).
 - Everything else (approvals, connections, billing, ads, what to fix, stock, calendar, email flows, trends, weekly report, business admin, plan, help, review my store) is one tap away on **Settings**. All old URLs still work, so no redirects were needed.
 - **Review my store** (`/dashboard/review`): request form emailed to support@astryks.com through Resend (max 2 a week per user).
 - **Seasonal calendar** (`src/lib/season-calendar.ts`): the home banner and the Today prompt are worked out from the date. Prep copy with a countdown ("It's October, the build month for Black Friday and Cyber Monday. 43 days to go"), "happening now" during the event, then the next event; a calm quiet-time line when nothing is near. US events: Valentine's, Mother's Day, Father's Day, Memorial Day, 4th of July, Labor Day, Halloween, Thanksgiving, Black Friday/Cyber Monday, Christmas, New Year. Worldwide: Ramadan/Eid al-Fitr, Diwali, Lunar New Year, Singles' Day, Boxing Day, Easter. Easter and nth-weekday dates are computed; moon-based dates (Lunar New Year, Ramadan, Eid, Diwali) are in a checked table for 2026 to 2030 (extend `LUNAR` before 2030 ends; a test fails if a year is missing). Overlaps: running events first, then weight (Black Friday highest, from 1 August), then soonest.
@@ -138,9 +127,6 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 
 ## Open items
 
-- Meta "Save choice" fix is pending (asset picker save).
-- Scheduling the 15 to 18 Oct social posts is pending.
-- Add the Instagram website link in the app.
 - Free users still see a "Profit this year so far" card on Growth while month and year views are Starter; decide whether that is a teaser or should be gated.
 - Not tested end to end: server-action flows by click (saving profit setup, finishing a card deck, store check run) and a real live-mode purchase and refund.
 
@@ -148,18 +134,18 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 
 **Done**
 - Root metadata: `metadataBase` is now always `https://ecommercehelix.com` (was the env var, falling back to localhost). Every public page has its own title, meta description, canonical, Open Graph and Twitter tags, and a generated 1200x630 share image (`/opengraph-image`). Sign-in is `noindex`.
-- JSON-LD: Organization and WebSite on every page; SoftwareApplication with the real A$0 / A$29 / A$59 offers and FAQPage on home; SoftwareApplication + FAQPage on each feature page; Article on each guide; BreadcrumbList on features, guides and FAQ; FAQPage on /faq.
+- JSON-LD: Organization and WebSite on every page; SoftwareApplication with the real US$0 / US$29 / US$59 offers (priceCurrency USD) and FAQPage on home; SoftwareApplication + FAQPage on each feature page; Article on each guide; BreadcrumbList on features, guides and FAQ; FAQPage on /faq.
 - New pages: `/features` plus 6 feature landing pages (profit-dashboard, daily-growth-plan, meta-ads, email-automation, black-friday-plan, store-audit); `/guides` plus 8 long-form guides; `/faq`. All facts are taken from the existing site copy, plans and docs. Each ends with a "Start free" call to action.
 - Internal links: header (Features, Guides), footer (all features, FAQ page), home "What Helix does / Free guides" section, related guides and features on every new page.
 - `robots.txt` (app/robots.ts): allows Googlebot, Bingbot, Google-Extended, GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Applebot, Applebot-Extended and `*`; blocks /dashboard, /course, /api/, /signin. `sitemap.xml` (app/sitemap.ts) lists 51 public URLs including all 29 Learn modules. `/llms.txt` summarises the business.
 - Checks: build, 170 tests, every sitemap URL has one H1, canonical and og:image, all 142 JSON-LD blocks parse, 87 internal links return 200.
 
-**Positioning (Sid, 13 Oct).** E-commerce Helix is self-serve software that guides owners to grow their store. No consulting, no agency, no calls, no done-for-you service, and no location or ABN anywhere. CTAs are "Start free" and "Get your daily growth plan" (both go to /start, the onboarding behind sign-in). Feature pages use SoftwareApplication JSON-LD (not Service). The guide at `/guides/when-to-hire-an-ecommerce-consultant` is now "Do you need an e-commerce consultant? A self-serve alternative" (same URL, so no redirect). Site keywords target self-serve terms (e-commerce growth app, Shopify growth tool, DIY e-commerce marketing, e-commerce coach app, alternative to hiring an e-commerce agency). `locale en_AU` and A$ pricing stay; no address or areaServed. `/start` is not in the sitemap because signed-out visitors are redirected to sign-in.
+**Positioning (Sid, 13 Oct).** E-commerce Helix is self-serve software that guides owners to grow their store. No consulting, no agency, no calls, no done-for-you service, and no location or ABN anywhere. CTAs are "Start free" and "Get your daily growth plan" (both go to /start, the onboarding behind sign-in). Feature pages use SoftwareApplication JSON-LD (not Service). The guide at `/guides/when-to-hire-an-ecommerce-consultant` is now "Do you need an e-commerce consultant? A self-serve alternative" (same URL, so no redirect). Site keywords target self-serve terms (e-commerce growth app, Shopify growth tool, DIY e-commerce marketing, e-commerce coach app, alternative to hiring an e-commerce agency). `locale en_AU` stays; prices are in USD; no address or areaServed. `/start` is not in the sitemap because signed-out visitors are redirected to sign-in.
 
 **For Sid**
 - Google Search Console: verification meta tag is in layout.tsx; submit `https://ecommercehelix.com/sitemap.xml`.
 - Bing Webmaster Tools: import from Search Console (covers Copilot and feeds ChatGPT search) and submit the sitemap.
-- Optional facts for Organization JSON-LD and /about (nothing invented): support email, founder name and bio, social profile URLs (`sameAs`), real customer results or reviews. Add them in `src/lib/seo.ts` (`organizationLd`).
+- Optional facts for Organization JSON-LD and /about (nothing invented): support email, founder name and bio, more social profile URLs (`sameAs`; Instagram is already in), real customer results or reviews. Add them in `src/lib/seo.ts` (`organizationLd`).
 - Later: more guides on owner questions; an Amazon/marketplace page only if Helix adds that.
 
 ## What is new since 6 Oct 2026
@@ -169,7 +155,7 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 **Logo option B live (13 Oct, ~11 AM).** Sid picked the coral double helix rising up and to the right. It is live on production as the site mark (`public/logo.svg`), favicon, apple touch icon and PWA icons (`icon-192.png`, `icon-512.png`, `manifest.ts`). Commit `0e6a721`, deployment READY. **For Sid:** in Stripe, set the public business name to "E-commerce Helix" and upload this logo and brand colour (Settings, Business, Public details and Branding) so Checkout, the portal and receipts match. Then buy Helix Starter once on the live site, confirm the payment lands, refund and cancel it.
 
 **Stripe billing, test mode live (13 Oct).**
-- Checkout is on in Stripe **test mode** (sandbox "E-commerce Helix sandbox", AU, AUD). Products: Helix Starter A$29 a month (`helix_starter_monthly`) and Helix Growth A$59 a month (`helix_growth_monthly`). Prices show as A$ on the pricing section and billing page.
+- Checkout is on in Stripe **test mode** (sandbox "E-commerce Helix sandbox"). Products: Helix Starter (`helix_starter_monthly`) and Helix Growth (`helix_growth_monthly`). The first prices were local-currency ones; live prices are now US$29 and US$59.
 - Webhook: `https://ecommercehelix.com/api/stripe/webhook` for checkout.session.completed, customer.subscription.created, updated and deleted, invoice.payment_failed and invoice.paid. Plan and status update in the `Subscription` table.
 - Customer portal (`/api/billing/portal`, "Manage billing" on the billing page): change plan, card, invoices, cancel at period end. Paying users who pick another plan go to the portal, so a sub is never orphaned.
 - Cancel: the plan drops to Free and only plan and status change, so the Meta connection and prep plans stay (Sid's decision). Failed payment: status becomes past_due, a notice asks for a new card, the plan stays while Stripe retries and drops to Free if the subscription ends or becomes unpaid.
@@ -187,11 +173,11 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 - **Profit setup** (`/dashboard/profit`, sidebar): enter selling price, product cost, freight and duty, packaging, shipping to the customer, payment fees, marketing per order, Shopify and app subscriptions, other monthly costs and orders a month. A live waterfall shows where each sale goes down to net profit, plus landed cost, gross margin, profit before marketing, break-even cost per purchase, break-even MER and ROAS, and a month's profit. Saving can also set fixed costs for the daily numbers. New additive `ProfitSetup` table (applied to production first).
 - **New lessons:** 1.7 Sales, costs and profit in plain English (with a waterfall drawing and a worked $60 example), 1.8 Set up your profit dashboard, 1.9 How much to spend on marketing. Growth, Key metrics, Dashboard and Profit setup link to 1.7.
 - **Marketing as a % of sales** (guide, not rule) on Profit setup, Growth and Key metrics: your share against the band for your size and your own break-even line. Under about $5k a month: no % target, a small fixed test budget judged by cost per purchase. Growing: about 10% to 30%. Scaling: about 15% to 25%, more while contribution stays positive. Break-even MER = profit before marketing / sales; break-even ROAS = 1 / break-even MER.
-- **Free and paid, enforced in code.** Free: profit dashboard, daily numbers, key metrics, Growth by day and week, Dashboard week and month, the numbers goals of the course, every lesson, top 3 fixes from the monthly audit. Starter: Attract and Convert goals, Do it for me, Meta connect (gated in the connect route), seasonal prep plans (gated in the server action), all fixes, month, year and 12-month history. Growth: Grow and Run goals. Course ticks and confirms check the plan on the server. Friendly upgrade notes appear at the moment of value (next course goal, month view, more fixes, Connect Meta, prep plan). Checkout is live: Stripe live mode is set up in production (Helix Starter A$29/month and Helix Growth A$59/month, live webhook, customer portal). Preview deployments still use Stripe test mode.
+- **Free and paid, enforced in code.** Free: profit dashboard, daily numbers, key metrics, Growth by day and week, Dashboard week and month, the numbers goals of the course, every lesson, top 3 fixes from the monthly audit. Starter: Attract and Convert goals, Do it for me, Meta connect (gated in the connect route), seasonal prep plans (gated in the server action), all fixes, month, year and 12-month history. Growth: Grow and Run goals. Course ticks and confirms check the plan on the server. Friendly upgrade notes appear at the moment of value (next course goal, month view, more fixes, Connect Meta, prep plan). Checkout is live: Stripe live mode is set up in production (Helix Starter US$29/month and Helix Growth US$59/month, live webhook, customer portal). Preview deployments still use Stripe test mode.
 - **Gaps closed:** 3.10 Subscribe and save, 9.16 When conversion suddenly drops, 13.12 A smaller sale between the big ones, 23.7 Customer service that keeps customers, 28.9 Selling to shops, each added to a course goal. A private coverage map was made against the private research (kept off-repo).
 - **Fixes:** old links to renamed or merged lessons now jump to the exact lesson, even across modules; Black Friday steps that have already passed show as one catch-up line instead of many overdue tasks; course time estimates are capped (no task over 20 minutes, no day over an hour).
 
-**The Helix Course (13 Oct).** A guided program on top of the lessons. One goal at a time, in plain words with a measurable finish line, on the profit-first ladder: your numbers, then Attract, Convert, Grow, then run the business. Three tracks: Just starting ($0 to $10k a month), Growing ($10k to $100k) and Scaling (over $100k). 20 goals, 16 per track. Each goal runs over 5 to 11 days; a day has 1 task on light days and up to 5 on busy ones. Every task is one action with the expected result, a time estimate, a link to the lesson step, Do it for me and Guide me. Ticking a day unlocks the next; hitting the finish line (checked from real daily numbers where possible, otherwise confirmed by the owner) unlocks the next goal with a small celebration. Sale prep (Black Friday from 1 August, Christmas, EOFY and more) and tax dates (BAS, EOFY, US dates) slot into the day when due within a week. Today now leads with Your goal (progress bar), Today's tasks and Why this matters. `/course` shows the whole path (done, current, locked, with day counts) and `/course/goal/<id>` shows each goal's days. Progress: new `CourseState` table plus the existing task and lesson-step tables, so ticks are shared with the lessons. Design: `docs/playbook/course.md`. Code: `src/lib/course-plan.ts`, `src/lib/course.ts`, `src/app/course`, `src/components/course`. Tests: `tests/course.test.ts`.
+**The Helix Course (13 Oct).** A guided program on top of the lessons. One goal at a time, in plain words with a measurable finish line, on the profit-first ladder: your numbers, then Attract, Convert, Grow, then run the business. Three tracks: Just starting (under $10k a month), Growing ($10k to $30k) and Scaling ($30k to $80k+). 20 goals, 16 per track. Each goal runs over 5 to 11 days; a day has 1 task on light days and up to 5 on busy ones. Every task is one action with the expected result, a time estimate, a link to the lesson step, Do it for me and a short inline checklist. Ticking a day unlocks the next; hitting the finish line (checked from real daily numbers where possible, otherwise confirmed by the owner) unlocks the next goal with a small celebration. Sale prep (Black Friday from 1 August, Christmas, EOFY and more) and tax dates (BAS, EOFY, US dates) slot into the day when due within a week. Today now leads with Your goal (progress bar), Today's tasks and Why this matters. `/course` shows the whole path (done, current, locked, with day counts) and `/course/goal/<id>` shows each goal's days. Progress: new `CourseState` table plus the existing task and lesson-step tables, so ticks are shared with the lessons. Design: `docs/playbook/course.md`. Code: `src/lib/course-plan.ts`, `src/lib/course.ts`, `src/app/course`, `src/components/course`. Tests: `tests/course.test.ts`.
 
 **Content audit and new lessons (13 Oct).** Every Helix title and heading was checked against the private research titles and branded phrases. 26 lesson and module titles were renamed to plain, original wording that says what you do (for example "Say clearly what the customer gets", "Your yearly sales calendar", "A 10-minute weekly stock check"). 9 overlapping lessons were merged into one each (for example community, content pillars, hiring, agencies, resilience, speed, tracking and policies); old step ticks, links and page anchors still work through `src/lib/lesson-aliases.json`. New Module 29, "Customers, partners and the weekly rhythm": 16 lessons (5 Attract, 3 Convert, 8 Grow) on customer words, the worry behind the purchase, repurposing content, referrals, partner brands, guest spots, a weekly story email, buying-question emails, leading numbers, a 30-minute weekly numbers meeting, playbooks, owners, a 90-day plan, a quarterly reset, a one-page direction and a wins file.
 
@@ -238,7 +224,7 @@ _Last updated: 15 Oct 2026, about 4:30 PM (Sydney)._
 
 **The framework: Attract, Convert, Grow.** All learning content sits in three stages. **Attract** gets the right buyers in (ads, content, social, SEO, creatives, audiences). **Convert** turns visits into sales (site, offer, CRO, checkout, email flows, pricing, promotions). **Grow** keeps more of every sale, then scales (profit numbers, scaling budgets, retention and LTV, stock and suppliers, international, team, AI and tools, Run your business). Stages live in `src/lib/stage-map.json` (module default plus lesson overrides) and `src/lib/stages.ts`. Shown as a visual trio on the home page, Learn and About, a chip on every lesson, the stage of the current lesson on Today and a label on each roadmap day. Tested in `tests/stages.test.ts`.
 
-**Who it is for (new, 6 Oct 2026).** Headline (`WHO_HEADLINE` in `src/lib/audience.ts`, on the home page `#who`, About, onboarding and `/learn/goals`): **"Built for stores doing $10k to $100k a month that want to reach a $1M year, profitably."** Three revenue bands: **Just starting** ($0 to first sales, under about $10k a month, great start), **Growing** (about $10k to $100k a month, up to about $1M a year, most value), **Scaling** (about $1M to $10M a year, good fit). Milestones: first sale, first $10k month, first $100k month, first $1M year, first $10M year. The bands line up with the stages in `docs/compound-daily-plan.md` (under $10k, $10k to $100k, $100k+ a month).
+**Who it is for (updated 15 Oct 2026).** Headline (`WHO_HEADLINE` in `src/lib/audience.ts`, on the home page `#who`, About, onboarding and `/learn/goals`): **"Built for stores doing $10k to $30k a month, we help you reach $1M profitably."** Three bands, the same everywhere (site copy, stage cards, course tracks, `benchmarks.ts` `sizeFor`, About): **Just starting** (under $10k a month), **Growing** ($10k to $30k a month, best fit), **Scaling** ($30k to $80k+ a month, on the way to a $1M year and beyond). Milestones: first sale, first $10k month, first $1M year, first $10M year.
 
 **Goals ladder (new, 6 Oct 2026).** Nine numbers in funnel order, each with a stage and a benchmark that matches the Dashboard explanations: site visits (Attract), CTR (Attract, 1%+ solid, 1.2%+ strong), add-to-cart rate (Convert, about 7.5%+), conversion rate (Convert, 2%+ solid), AOV (Convert), ROAS and MER (Grow, MER 20 to 35%), CPA (Grow, below break-even), contribution margin (Grow, 15%+), and **net profit** (Grow, the goal). Headline everywhere (`GOALS_HEADLINE` in `src/lib/goals.ts`): **"The goal is profit, not just revenue."** On the home page `#goals`, About (ordered list), onboarding (the goals fieldset shows the nine in order) and `/learn/goals`. Where it shows:
 - Home page short section (`#goals`).
@@ -282,7 +268,7 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 |---|---|---|
 | Resend email sign-in | Live | Nothing |
 | Meta (Facebook and Instagram ads) | Built: connect, encrypted tokens, daily sync, paused drafts, audit log. Runs in mock mode | Sid creates the Meta developer app, completes Business Verification and App Review (`docs/meta-setup.md`), then adds `META_APP_ID` and `META_APP_SECRET` |
-| Stripe billing | Live in production (Checkout, webhook, portal; Starter A$29, Growth A$59) | Sid: one real Starter purchase then refund/cancel; set public business name, support email and logo in Stripe |
+| Stripe billing | Live in production (Checkout, webhook, portal; Starter US$29, Growth US$59) | Sid: one real Starter purchase then refund/cancel; set public business name, support email and logo in Stripe |
 | Google sign-in | Built, optional | `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET` |
 | Shopify | Stock sync stubbed; sales, sessions and add-to-cart are typed in | Shopify app and API access to sync automatically |
 | Google Ads | Guidance only: lessons 8.1 to 8.11 and 20.4; example rows in Your ads | Developer token, OAuth client with the adwords scope and verification, manager account |
@@ -292,26 +278,18 @@ Where it shows: a "Critical" Black Friday card on Today from 1 August with the m
 
 _Updated 13 Oct 2026, 10:10 PM Sydney. Pick up here next session._
 
+(Sid's actions are in "Needs Sid" at the top; Meta "Save choice", the Facebook group and the GitHub Support request live there.)
+
 1. **Google Ads (check in a few days).** Built and deployed; shows "coming soon" until the developer token is set.
    - Check Explorer/Basic access status at https://console.cloud.google.com/google/ads-apis/overview?project=astryks (applied 13 Oct, under review). Manager account "E-commerce Helix" 965-774-7394.
    - When approved: copy the developer token into Vercel Production as `GOOGLE_ADS_DEVELOPER_TOKEN` (stdin, never printed), redeploy, test connect with Sid's account.
    - Record the demo video (consent flow, Helix web client, how Ads data is used), upload unlisted to YouTube, add on https://console.cloud.google.com/auth/scopes?project=astryks, then submit verification at https://console.cloud.google.com/auth/verification/submit?project=astryks. Scope justification already saved. Consent app name is "Astryks" (shared project `astryks`); branding verified and published.
    - `GOOGLE_ADS_CLIENT_ID` / `GOOGLE_ADS_CLIENT_SECRET` are set; client JSON is in /home/box/.secrets/ on the box.
-2. **Meta "Save choice" fix** for the asset picker: confirm it's fixed, pick Sid's store ad account and Page, then refund his A$29 and give his account Starter free.
-3. **Shopify** is live (unlisted Dev Dashboard app 434903482369, org Astryks, version e-commerce-helix-1, `SHOPIFY_API_KEY`/`SECRET` set). APP_UNINSTALLED is registered per shop by code (`7e64baf`). Before any App Store listing: add compliance webhooks via `/workspace/shopify-app/shopify.app.toml` (needs a Shopify CLI login as support@astryks.com), turn on expiring offline tokens, add the privacy URL, and move protected customer data from Draft to submitted. Test a real store connect end to end.
-4. **AI** is live (Vercel AI Gateway free US$5 a month credit, `google/gemini-2.5-flash-lite`, per-plan caps, `AI_MONTHLY_BUDGET_USD`, `AI_DISABLED` kill switch). Watch usage on the Vercel AI Gateway page.
-5. **Not yet clicked through live:** saving the profit setup, finishing a card deck, running a store check, a live payment and refund.
-6. **Later:** Shopify order webhooks (near real time), `read_all_orders` for more than 60 days, Google draft ad groups, keywords and ads, GA4, TikTok, Klaviyo; course polish (weekly recap email, goal picking, finish-line history).
-7. **Closed Facebook group for paying members (created 15 Oct 2026, linked from Community).** Was: create a private "E-commerce Helix Members" group linked to the Page so Starter and Growth subscribers can share ideas and wins with each other (owners value the community side). Later: invite link inside the dashboard for paid plans only, membership questions to check the Helix email, and remove members when they cancel.
-8. Social posts v2 (57 redesigned, 12 animated) are in `docs/social/v2/` and approved by Sid; not posted yet. Old Instagram posts are being removed. Post the new set when Sid says.
-9. Vercel connector lacks access to the astryks team; reconnect it with that team selected (the CLI works meanwhile).
-
-## Waiting on Sid
-
-1. One real Helix Starter purchase on live checkout, then refund and cancel; set Stripe public business name to "E-commerce Helix", support email and logo option B.
-2. Meta app, Business Verification and App Review.
-3. Google OAuth keys (optional).
-4. When to turn off the demo login.
+2. **Shopify** is live (unlisted Dev Dashboard app 434903482369, org Astryks, version e-commerce-helix-1, `SHOPIFY_API_KEY`/`SECRET` set). APP_UNINSTALLED is registered per shop by code (`7e64baf`). Before any App Store listing: add compliance webhooks via `/workspace/shopify-app/shopify.app.toml` (needs a Shopify CLI login as support@astryks.com), turn on expiring offline tokens, add the privacy URL, and move protected customer data from Draft to submitted. Test a real store connect end to end.
+3. **AI** is live (Vercel AI Gateway free US$5 a month credit, `google/gemini-2.5-flash-lite`, per-plan caps, `AI_MONTHLY_BUDGET_USD`, `AI_DISABLED` kill switch). Watch usage on the Vercel AI Gateway page.
+4. **Not yet clicked through live:** saving the profit setup, finishing a card deck, running a store check, a live payment and refund.
+5. **Later:** Shopify order webhooks (near real time), `read_all_orders` for more than 60 days, Google draft ad groups, keywords and ads, GA4, TikTok, Klaviyo; course polish (weekly recap email, goal picking, finish-line history).
+6. Vercel connector lacks access to the astryks team; reconnect it with that team selected (the CLI works meanwhile).
 
 ## Decisions made
 
@@ -331,7 +309,7 @@ _Updated 13 Oct 2026, 10:10 PM Sydney. Pick up here next session._
 2. Shopify-only at launch, or also WooCommerce?
 3. Wallet minimum top-up: $10 (recommended) or $5? Should unused credit ever expire?
 4. Free-tier abuse controls: is email verification plus one free store per domain enough, or do we require a card for audits beyond the first?
-5. Launch market: Australia first (GST-inclusive pricing in AUD?) or US first (USD, GST-free)?
+5. ~~Launch market and currency?~~ Decided: prices in USD for everyone (15 Oct 2026). GST notes stay only for Australian sellers.
 7. Brand voice: friendly coach, or crisp operator? Any words to avoid?
 8. Legal: terms of service and liability wording for approved bot actions on ad accounts and stores; who reviews?
 9. Meta and Google developer app approvals: who owns the business verification and app review submissions?
@@ -342,8 +320,8 @@ _Updated 13 Oct 2026, 10:10 PM Sydney. Pick up here next session._
 14. Social profile audit: public-data checks only at launch, or request Instagram/TikTok/Facebook account access for insights?
 15. ~~Vercel project and Postgres provider?~~ Decided: Vercel and Neon (6 Oct 2026). ~~Stripe price IDs~~ Live checkout is on; Sid still confirms one real Starter payment (see Waiting on Sid).
 16. Calendar: which other countries next (UK, NZ, Canada)? Should Helix fetch official Click Frenzy dates each year instead of the approximate rule?
-17. Who Helix is for: is the headline right ("built for stores doing $10k to $100k a month that want to reach a $1M year, profitably")? Bands: Just starting under about $10k a month, Growing about $10k to $100k a month (most value), Scaling about $1M to $10M a year.
-18. Goals ladder: are the suggested starting goals right for each track (Growing: 30,000 visits, 1.2% CTR, 7.5% add to cart, 2.2% conversion, $92 AOV, 30% MER, $28 CPA, 20% contribution, $3,000 net profit; Just starting: 3,000 visits, 1% CTR, 6%, 1.5%, $60, 35% MER, $21, 10%, $0 or more)?
+17. ~~Who Helix is for?~~ Decided (15 Oct 2026): "Built for stores doing $10k to $30k a month, we help you reach $1M profitably". Bands: Just starting under $10k, Growing $10k to $30k, Scaling $30k to $80k+ a month.
+18. ~~Goals ladder starting goals?~~ Updated 15 Oct 2026 from the benchmark review (see "Cleanup" under Done today).
 19. Black Friday: should the August to January plan also run for Click Frenzy and Singles Day stores, or stay focused on BFCM? Should the Monday nudge email go out every week from August, or fortnightly until October?
 
 
@@ -361,13 +339,13 @@ Reference match (Oct 13, later): fonts and underline matched to Sid's "explained
 Type split (Oct 13, later): Permanent Marker capitals only for h1, big section h2s (text-3xl and up) and big numbers; card and section titles, h3 and smaller, and the logo wordmark are Kalam Bold mixed case ("E-commerce Helix", Helix in purple) in header, footer, sidebar, sign-in, email and the share image (Kalam loaded from Google Fonts with fallback).
 
 ## 13 Oct 2026: revenue line and accuracy audit
-- Revenue line is now "Built for stores doing $10k to $80k a month that want to reach a $1M year, profitably" (a9de7c6).
+- Revenue line was changed to $10k to $80k here (a9de7c6); since replaced by $10k to $30k (15 Oct).
 - Accuracy audit fixed arithmetic, contradictions, platform facts (Google seasonality path, TikTok Shop website checkout), false Helix claims (AI, social audit, weekly report, Monday email), and softened benchmarks to "a common guide".
 - Open: Meta app keys are missing in production, so "Meta connects today" is not true yet. NUDGES_LIVE is off.
 
 ## 13 Oct 2026: handwriting only for purple text
 - Permanent Marker and Kalam are now used only for purple text (big purple headings and numbers, purple accents, the "Helix" in the logo). All ink text (card titles, subheadings, questions, buttons, labels, nav, "E-commerce" in the logo) is Nunito, normal or semibold.
-- Revenue bands checked: Growing "About $10k to $80k a month", Scaling "About $80k a month and up". No $100k-a-month text left (the old card was a stale deploy).
+- (Bands from this day are superseded; see "Who it is for".)
 
 ## 13 Oct 2026: real Meta integration on in production
 - Production env: META_APP_ID, META_APP_SECRET, META_CONFIG_ID (Sensitive), META_PUBLIC=0. Existing APP_URL, TOKEN_ENCRYPTION_KEY, CRON_SECRET kept. No META_MOCK.
@@ -394,9 +372,9 @@ Checked about 5:05 PM Sydney against production deploy dpl_GicRmVUwEaJzEQSK9akXJ
 | Public pages | Works | home, about, learn, a lesson (/learn/words), privacy, terms, data-deletion, signin: 200. /course and /start: 307 to sign-in (expected). No errors in recent runtime logs |
 | Sign-in email | Works | 13 Oct 5:19 PM: link sent to helixtest@mail.grokbot.com (bot test inbox), arrived within a minute from login@ecommercehelix.com, link signed in (session OK) |
 | Stripe account | Works | charges and payouts enabled, name "E-commerce Helix", descriptor "E-COMMERCE HELIX", nothing currently due |
-| Stripe prices | Works | Starter A$29/mo and Growth A$59/mo, both active, live |
+| Stripe prices | Works | First prices (local currency), active then; replaced by the live US$29 / US$59 prices on 15 Oct |
 | Stripe webhook | Works | /api/stripe/webhook enabled with 6 subscription and invoice events; no pending deliveries. No real payment events yet |
-| Checkout Session (live key) | Works | Live Starter session created (A$29) and expired straight away |
+| Checkout Session (live key) | Works | Live Starter session created and expired straight away |
 | Billing portal | Works | Key has the permission (a missing-customer error, not a permission error). Portal config exists |
 | Real purchase and refund | Needs Sid | |
 | Meta env and connect route | Works | META_APP_ID, META_APP_SECRET, META_CONFIG_ID, META_PUBLIC set. /api/meta/connect redirects signed-out users to sign-in. The data-deletion callback rejects an empty POST with 400 |
@@ -419,7 +397,7 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 - **One path:** the dashboard (both views) now leads with **Your next card** (today's 3 cards), metrics below. After the plan (/start/plan) the first button is "Open my first card". Player at /dashboard/cards: one card at a time, Back/Next, progress dots, a short "typing" pause, resume where you left off (saved on the server in CourseState: cardDeck, cardIndex, cardDay, cardsToday).
 - **Order:** setup deck "Understand your business" first (until profit setup exists), then the current course goal's lessons, then every other lesson in playbook order.
 - **Setup deck (10 cards):** Okay, don't worry / What do you sell? / price (ex GST, divide by 1.1 for 10% GST) / product cost / postage / payment fee (1.75% + $0.30 prefilled, change if different) / ads per order / orders a month / what one order leaves you / done. Answers save into ProfitSetup (new column productName) once a price is entered, so Profit and the dashboard fill in. Checked: $40 price, $8 cost, $9 postage, 1.75% + $0.30 fee ($1.00), $5 ads leaves $17.00; 120 orders a month is $2,040.00 before monthly bills.
-- **Every lesson is a deck:** 281 lessons, 1,739 cards (intro "Okay, don't worry" + one card per step with "You'll know it worked when" and "Careful" + done card). "View as cards" on every lesson at /learn/[slug]/cards/[ref] (public, progress on the device).
+- **Every lesson is a deck:** 281 lessons, 1,739 cards (intro "Okay, don't worry" + one card per step with "You'll know it worked when" and "Careful" + done card). Card decks still open at /learn/[slug]/cards/[ref]; since 15 Oct the lesson page itself is the one-step view with an inline checklist, so the "View as cards" link was removed.
 - **I'm lost:** small button bottom-right on every dashboard screen. Reopens the current card in a shorter, calmer version; with no progress it restarts at Step 1, understand your business.
 - Schema (additive, applied to Neon before push): ProfitSetup.productName, CourseState.cardDeck/cardIndex/cardDay/cardsToday.
 - Update (13 Oct evening): every lesson now has a hand-written child-simple deck with its own "I'm lost" text (see the next section). Production signed-in screenshots not possible (demo login is off in production); dashboard and setup deck screenshots were taken from the same build run locally, lesson-as-cards from production. Screenshots: /workspace/reports/helix/screenshots/28-*.png.
@@ -435,7 +413,7 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 
 ## 13 Oct 2026 (~7:45 PM Sydney): legal pages hardened
 - /privacy: APPs, GDPR/UK GDPR controller, legal bases, rights, overseas transfers (APP 8, SCCs/UK Addendum/DPF), CCPA (no sale or share), subprocessor table (Vercel, Neon us-east-1, Resend, Stripe, Meta if connected, Google if used for sign-in), cookies and local storage, retention, breach notification, Meta Platform Terms and Google API Limited Use statements, under-18s, OAIC complaints.
-- /terms: operator Astryks (sole trader, NSW), no guarantee of results and not advice, 18+, A$29/A$59 monthly, auto-renewal, failed payments, cancel at period end and prorated plan changes (matches the Stripe portal config, checked in test mode), account deletion cancels immediately, ACL guarantees in the standard wording (not excluded), acceptable use, liability limited to the extent permitted by law, NSW law.
+- /terms: operator Astryks (sole trader, NSW), no guarantee of results and not advice, 18+, US$29/US$59 monthly, auto-renewal, failed payments, cancel at period end and prorated plan changes (matches the Stripe portal config, checked in test mode), account deletion cancels immediately, ACL guarantees in the standard wording (not excluded), acceptable use, liability limited to the extent permitted by law, NSW law.
 - /data-deletion: Stripe records and backups noted, link to privacy.
 - Auto-renew notice added to the home pricing section, the billing page and Stripe Checkout (custom submit text with a link to /terms).
 - Removed "check with a lawyer" wording (legal pages, docs/legal-pages.md, Lesson 22.12 note).
@@ -470,7 +448,7 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
   4. `invoice.paid` was not handled (past_due never cleared): now restores active and sends a receipt.
   5. Cancel at period end and period end were not stored: new columns `cancelAtPeriodEnd`, `currentPeriodEnd`, `priceId` (read from the subscription item, as current Stripe API versions put it there).
   6. Double subscriptions were possible if the webhook was slow: checkout now asks Stripe for any live subscription on the customer first; checkout sessions use an idempotency key.
-  7. Price IDs vs USD display: Stripe prices are still the first AUD ones. `planForPrice` now also accepts `STRIPE_PRICE_STARTER_LEGACY` / `STRIPE_PRICE_GROWTH_LEGACY` (comma lists), so after Sid creates USD prices and sets them as `STRIPE_PRICE_*`, current AUD members keep their plan. **Needs Sid:** create USD prices (29, 59), set `STRIPE_PRICE_STARTER/GROWTH` to them and the old ids in the `_LEGACY` vars.
+  7. Price IDs: old prices are accepted through `STRIPE_PRICE_STARTER_LEGACY` / `STRIPE_PRICE_GROWTH_LEGACY`, so earlier members keep their plan. Done: USD prices are live.
   8. Open redirect on sign-in (`next=//other-site`): now same-site paths only.
   9. Portal return URL now goes back to Plan and billing; signature check kept; no secrets in code.
   - Gating: active, trialing and past_due (grace while Stripe retries) keep the plan; cancel at period end keeps it until Stripe ends the subscription; canceled, unpaid and incomplete drop to Free.

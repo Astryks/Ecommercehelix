@@ -4,18 +4,18 @@
  */
 export type Size = "starting" | "growing" | "scaling";
 export type Category = "fashion" | "beauty" | "home" | "food" | "other";
-export const SIZE_LABEL: Record<Size, string> = { starting: "Under $10k a month", growing: "$10k to $100k a month", scaling: "Over $100k a month" };
+export const SIZE_LABEL: Record<Size, string> = { starting: "Under $10k a month", growing: "$10k to $30k a month", scaling: "$30k to $80k+ a month" };
 export const CATEGORY_LABEL: Record<Category, string> = { fashion: "Clothes and accessories", beauty: "Beauty and health", home: "Home and gifts", food: "Food and drink", other: "Something else" };
 
 export type MetricId = "cr" | "aov" | "repeat" | "mer" | "contribution" | "net";
 export type Guide = { id: MetricId; name: string; unit: "%" | "$"; low: number; good: number; great: number; higherIsBetter: boolean; note: string };
 
 const BASE: Guide[] = [
-  { id: "cr", name: "Conversion rate", unit: "%", low: 1.5, good: 2.5, great: 3.5, higherIsBetter: true, note: "Share of visits that buy." },
-  { id: "aov", name: "Average order", unit: "$", low: 40, good: 70, great: 100, higherIsBetter: true, note: "Depends a lot on what you sell. Bundles lift it." },
+  { id: "cr", name: "Conversion rate", unit: "%", low: 0.8, good: 1.4, great: 2.6, higherIsBetter: true, note: "Share of visits that buy." },
+  { id: "aov", name: "Average order", unit: "$", low: 60, good: 100, great: 150, higherIsBetter: true, note: "Depends a lot on what you sell. Bundles lift it." },
   { id: "repeat", name: "Orders from returning buyers", unit: "%", low: 15, good: 25, great: 40, higherIsBetter: true, note: "Emails and a good product bring people back." },
   { id: "mer", name: "Ad spend as % of sales (MER)", unit: "%", low: 35, good: 25, great: 15, higherIsBetter: false, note: "Lower is better, as long as sales grow." },
-  { id: "contribution", name: "Profit after ads, before bills", unit: "%", low: 5, good: 15, great: 25, higherIsBetter: true, note: "What each sale leaves to pay your bills and you." },
+  { id: "contribution", name: "Profit after ads, before bills", unit: "%", low: 10, good: 20, great: 30, higherIsBetter: true, note: "What each sale leaves to pay your bills and you." },
   { id: "net", name: "Net profit", unit: "%", low: 0, good: 10, great: 15, higherIsBetter: true, note: "What is left after every cost." },
 ];
 
@@ -33,7 +33,7 @@ export function guidesFor(size: Size, cat: Category): { guides: Guide[]; categor
   };
   return { guides: g, categoryNote: notes[cat] };
 }
-export const sizeFor = (monthlySales: number): Size => (monthlySales >= 100_000 ? "scaling" : monthlySales >= 10_000 ? "growing" : "starting");
+export const sizeFor = (monthlySales: number): Size => (monthlySales >= 30_000 ? "scaling" : monthlySales >= 10_000 ? "growing" : "starting");
 export function band(v: number | null, g: Guide): "great" | "good" | "low" | "none" {
   if (v === null || !Number.isFinite(v)) return "none";
   return g.higherIsBetter ? (v >= g.great ? "great" : v >= g.good ? "good" : "low") : v <= g.great ? "great" : v <= g.good ? "good" : "low";

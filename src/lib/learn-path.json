@@ -1,5 +1,5 @@
 {
- "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos verified via YouTube oEmbed on 15 Oct 2026.",
+ "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos verified via YouTube oEmbed on 15 Oct 2026 (re-checked 15 Oct evening after swaps).",
  "steps": [
   {
    "n": 1,
@@ -23,9 +23,9 @@
    ],
    "videos": [
     {
-     "title": "How to Start a Shopify Store (From SHOPIFY OFFICIAL)",
-     "channel": "Learn With Shopify",
-     "url": "https://www.youtube.com/watch?v=QcY0anzk8Is"
+     "title": "How to Build a Map to Profitable Growth",
+     "channel": "Common Thread Collective",
+     "url": "https://www.youtube.com/watch?v=vBSFVM6rg60"
     },
     {
      "title": "The OFFICIAL Shopify Tutorial For Beginners (Part 1)",
@@ -127,9 +127,9 @@
      "url": "https://www.youtube.com/watch?v=eWWOJL1y8Qw"
     },
     {
-     "title": "How to create a high converting Shopify product page 2025 (copy this)",
-     "channel": "Beast Of Ecom",
-     "url": "https://www.youtube.com/watch?v=zW7h47-WJdM"
+     "title": "8 Ways to Increase Your Shopify Conversion Rates Today",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=vNIcSMLyutc"
     }
    ]
   },
@@ -291,6 +291,11 @@
      "title": "How To Analyse Facebook Ads The RIGHT Way",
      "channel": "Ben Heath",
      "url": "https://www.youtube.com/watch?v=mycqb92wJqk"
+    },
+    {
+     "title": "The New Type of Brand Financial Literacy",
+     "channel": "Commerce Roundtable",
+     "url": "https://www.youtube.com/watch?v=8ZCJwh6kSvs"
     }
    ]
   },
@@ -417,9 +422,9 @@
      "url": "https://www.youtube.com/watch?v=TiWvFACTiCc"
     },
     {
-     "title": "Everything On Email Marketing FULL COURSE FREE",
-     "channel": "Boyuan Zhao",
-     "url": "https://www.youtube.com/watch?v=B8Z4LCe4BsA"
+     "title": "Klaviyo Email and SMS: Build Better Omnichannel Campaigns",
+     "channel": "Klaviyo",
+     "url": "https://www.youtube.com/watch?v=mtsxKVtdv44"
     }
    ]
   }

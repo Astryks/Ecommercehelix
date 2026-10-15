@@ -75,9 +75,12 @@ export const GOAL_KEYS: (keyof Goals)[] = ["sessions", "ctrPct", "atcPct", "crPc
 
 /** Suggested starting goals for each track. MER comes from Your numbers (default 30%). */
 export const DEFAULT_GOALS: Record<TrackId, Goals> = {
-  starting: { sessions: 3000, ctrPct: 1, atcPct: 6, crPct: 1.5, aov: 60, cpa: 21, contributionPct: 10, netProfit: 0 },
-  growing: { sessions: 30000, ctrPct: 1.2, atcPct: 7.5, crPct: 2.2, aov: 92, cpa: 28, contributionPct: 20, netProfit: 3000 },
+  starting: { sessions: 5000, ctrPct: 1.2, atcPct: 5, crPct: 1.4, aov: 65, cpa: 23, contributionPct: 10, netProfit: 0 },
+  growing: { sessions: 14000, ctrPct: 1.5, atcPct: 6.5, crPct: 1.6, aov: 90, cpa: 27, contributionPct: 20, netProfit: 1500 },
 };
+
+/** The end of the ladder: roughly what a $1M year (about $83k a month) looks like. Shown as the end goal, never saved as a target. */
+export const MILLION_YEAR_GOAL = { sessions: 60000, crPct: 1.6, aov: 87, merPct: 25, cpa: 22, contributionPct: 25 } as const;
 export const DEFAULT_MER: Record<TrackId, number> = { starting: 35, growing: 30 };
 
 const LIMITS: Record<keyof Goals, [number, number]> = {

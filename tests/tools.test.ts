@@ -66,7 +66,8 @@ describe("planning tools", () => {
   });
   it("benchmarks: size from sales, bands both directions", () => {
     expect(sizeFor(5000)).toBe("starting");
-    expect(sizeFor(50000)).toBe("growing");
+    expect(sizeFor(20000)).toBe("growing");
+    expect(sizeFor(50000)).toBe("scaling");
     const g = guidesFor("growing", "beauty").guides;
     expect(band(3.6, g.find((x) => x.id === "cr")!)).toBe("great");
     expect(band(40, g.find((x) => x.id === "mer")!)).toBe("low");

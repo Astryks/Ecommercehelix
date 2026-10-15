@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CalendarClock, Check, Clock, Compass, Wand2 } from "lucide-react";
+import { CalendarClock, Check, Clock, ListChecks, Wand2 } from "lucide-react";
 import { doItForMe } from "@/app/dashboard/actions";
 import { toggleCourseTask } from "@/app/course/actions";
 import { lessonAction, lessonTaskId } from "@/lib/lesson-actions";
@@ -48,15 +48,16 @@ export function CourseTaskRow({ t, done, locked = false }: { t: CourseTask; done
                   <button className="btn-dark !px-3 !py-1.5 !text-xs" title="Helix gives you a checklist, or builds Meta drafts for your OK"><Wand2 className="h-3.5 w-3.5" aria-hidden /> Help me do it</button>
                 </form>
               )}
-              <details className="group">
-                <summary className="btn-ghost !px-3 !py-1.5 !text-xs cursor-pointer list-none"><Compass className="h-3.5 w-3.5 text-violet-600" aria-hidden /> Guide me</summary>
-                <ol className="mt-2 list-decimal space-y-1 rounded-xl border border-violet-200 bg-violet-50/60 p-3 pl-7 text-sm text-slate-700">
-                  <li>Open <Link href={t.href} className="font-medium text-cyan-700 underline">the lesson</Link> and find step {t.step}.</li>
-                  <li>Do only that one thing. It takes about {t.minutes} minutes.</li>
-                  <li>Check you have: {t.expected}</li>
-                  <li>Tick the box here. Stuck? Press Help me do it.</li>
-                </ol>
-              </details>
+            </div>
+          )}
+          {!locked && !done && (
+            <div className="mt-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3" data-testid="task-checklist">
+              <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-slate-600"><ListChecks className="h-3.5 w-3.5 text-cyan-700" aria-hidden /> Checklist</p>
+              <ol className="mt-1 list-decimal space-y-1 pl-5 text-sm text-slate-700">
+                <li>Open <Link href={t.href} className="font-medium text-cyan-700 underline">step {t.step} of the lesson</Link>.</li>
+                <li>Do just that one step. It takes about {t.minutes} minutes.</li>
+                <li>Tick the box when you have: {t.expected}</li>
+              </ol>
             </div>
           )}
         </div>

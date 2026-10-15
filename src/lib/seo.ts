@@ -1,3 +1,4 @@
+import { SOCIALS } from "./social";
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://ecommercehelix.com";
@@ -31,6 +32,7 @@ export function organizationLd() {
     url: SITE_URL,
     logo: abs("/icon-512.png"),
     description: SITE_DESCRIPTION,
+    sameAs: SOCIALS.map((s) => s.url),
   };
 }
 

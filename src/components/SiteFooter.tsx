@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 import { FEATURES } from "@/lib/content/features";
+import { SOCIALS } from "@/lib/social";
 
 export function SiteFooter() {
   return (
@@ -9,6 +10,9 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <Logo dark />
           <p className="mt-4 max-w-sm text-sm leading-6">Grow your e-commerce business a little every day. Self-serve growth software that guides you step by step and only acts with your approval.</p>
+          <ul className="mt-4 flex gap-4 text-sm" aria-label="Follow Helix">
+            {SOCIALS.map((s) => <li key={s.name}><a className="text-white underline-offset-2 hover:underline" href={s.url} target="_blank" rel="noopener noreferrer">{s.name} {s.handle}</a></li>)}
+          </ul>
         </div>
         <div>
           <h3 className="text-sm font-semibold text-white">Product</h3>

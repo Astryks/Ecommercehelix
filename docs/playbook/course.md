@@ -24,8 +24,8 @@ Goals follow the profit-first order. Every track starts the same way: **1. Set u
 | Track | Monthly sales | Who it suits |
 |---|---|---|
 | Just starting | $0 to $10k | Launching, or a few sales a week |
-| Growing | $10k to $80k | Regular sales, ready for more profit |
-| Scaling | Over $80k | Needs systems and a team |
+| Growing | $10k to $30k | Regular sales, ready for more profit |
+| Scaling | $30k to $80k+ | Needs systems and a team |
 
 ## All goals in order
 
