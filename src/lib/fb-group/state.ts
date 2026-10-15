@@ -30,3 +30,10 @@ export function transition(before: { plan?: string | null; status?: string | nul
   const now = isActivePaid(after.plan, after.status);
   return !was && now ? "activated" : was && !now ? "deactivated" : null;
 }
+
+export type CommunityAccess = { kind: "member"; url: string } | { kind: "soon" } | { kind: "locked" };
+/** Who may see the members group link. Used by Plan and billing and the About page. */
+export function communityAccess(acct: { plan?: string | null; status?: string | null } | null, url: string | null | undefined): CommunityAccess {
+  if (!acct || !isActivePaid(acct.plan, acct.status)) return { kind: "locked" };
+  return url ? { kind: "member", url } : { kind: "soon" };
+}

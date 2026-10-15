@@ -3,6 +3,8 @@ import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { Suspense } from "react";
+import { CommunityBlock, CommunityCard } from "@/components/about/CommunityBlock";
 import { HelixMark } from "@/components/Logo";
 import { StageTrio } from "@/components/StageTrio";
 import { WHO_HEADLINE } from "@/lib/audience";
@@ -47,6 +49,9 @@ export default function About() {
           <p>
             <strong>The real secret?</strong> Surround yourself with people who are building. They don&apos;t need to make anything like your product, just share the same mindset of getting a little better every day. Help each other out, share what works, share your numbers, give honest feedback and push each other. Then watch your business and your friendships compound.
           </p>
+          <Suspense fallback={<CommunityCard access={{ kind: "locked" }} />}>
+            <CommunityBlock />
+          </Suspense>
         </Block>
 
         <figure className="helix-glow my-section rounded-xl p-card sm:p-10 text-center text-white">
