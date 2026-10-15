@@ -23,7 +23,7 @@ export default function Learn() {
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Learn</p>
         <h1 className="mt-2 text-4xl font-bold tracking-tight">The Helix <span className="grad-text">Playbook</span></h1>
         <p className="mt-3 max-w-2xl text-slate-600">
-          {modules.length} modules and {modules.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons ({modules.reduce((a, m) => a + m.steps, 0)} steps) on running a profitable online store. Every lesson is a short &ldquo;why this matters&rdquo;, then one instruction at a time with the result you should see, a <strong>Do it for me</strong> button and a <strong>Guide me</strong> option. Tick steps as you go and Helix remembers. Hover any dotted word for a plain meaning. Free for everyone.
+          {modules.length} modules and {modules.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons ({modules.reduce((a, m) => a + m.steps, 0)} steps) on running a profitable online store. Every lesson is a short &ldquo;why this matters&rdquo;, then one instruction at a time with the result you should see and simple tips. Press <strong>Done, next step</strong> or tick the checklist; Helix remembers. Hover any dotted word for a plain meaning. Free for everyone.
         </p>
         <p className="mt-4">
           <Link href="/learn/words" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-cyan-800 hover:border-cyan-300">

@@ -31,6 +31,14 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
   const prev = modules[idx - 1];
   const next = modules[idx + 1];
   const words = termsIn(mod.text, 14);
+  const lessonList = mod.sections.flatMap((s) => (s.kind === "lesson" ? [s.lesson] : []));
+  const nextFor = (id: string) => {
+    const k = lessonList.findIndex((l) => l.id === id);
+    const n = lessonList[k + 1];
+    if (n) return { heading: n.heading, href: `#${n.id}` };
+    const nl = next?.lessons[0];
+    return next ? { heading: nl ? nl.title : `Module ${next.number}: ${next.title}`, href: `/learn/${next.slug}${nl ? `#${nl.id}` : ""}` } : null;
+  };
   return (
     <>
       <SiteHeader dark={false} />
@@ -56,7 +64,7 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
           <div className="mt-6">
             {mod.sections.map((s, i) =>
               s.kind === "lesson" ? (
-                <LessonSteps key={s.lesson.id} lesson={s.lesson} slug={slug} />
+                <LessonSteps key={s.lesson.id} lesson={s.lesson} slug={slug} next={nextFor(s.lesson.id)} />
               ) : (
                 <article
                   key={i}

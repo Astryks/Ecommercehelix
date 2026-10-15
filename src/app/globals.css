@@ -266,3 +266,9 @@ body:has([data-testid="day-panel"]) .lost-fab .lost-fab-label { position: absolu
     main h2 .grad-text { animation: helix-draw linear both; animation-timeline: view(); animation-range: entry 20% entry 70%; }
   }
 }
+
+/* Lesson finished: a small pop (transform/opacity only). */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes helix-pop { 0% { opacity: 0; transform: scale(.92); } 60% { opacity: 1; transform: scale(1.03); } 100% { transform: scale(1); } }
+  .helix-celebrate { animation: helix-pop .5s cubic-bezier(.2,.8,.2,1) both; }
+}
