@@ -1,16 +1,51 @@
 # STATUS
 
-_Last updated: 15 Oct 2026, afternoon (Sydney)._
+_Last updated: 15 Oct 2026, 2:45 PM (Sydney)._
 
 ## At a glance
 
 - **Live:** https://ecommercehelix.com (Vercel project `ecommercehelix`, Next.js 16). `www` redirects to the apex. Every push to `main` on GitHub (`Astryks/Ecommercehelix`) deploys to production.
 - **Database:** Neon Postgres via Prisma. Schema changes are additive only and are applied to the production database before the code is pushed. Note: this build machine cannot reach Neon's port 5432, so changes are applied with `prisma migrate diff` (old schema to new schema, no drops allowed) run over Neon's HTTPS driver with the unpooled URL pulled from Vercel into a temp file that is deleted straight after.
 - **Sign-in:** Resend email magic links are live. The demo login is on (each demo sign-in is a fresh, isolated test account). Google sign-in is optional and needs Sid's OAuth keys.
-- **Checks before every push:** `npm test` (vitest, 210 tests), `npm run lint` (0 errors), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
+- **Checks before every push:** `npm test` (vitest, 259 tests), `npm run lint` (0 errors), `tsc`, `npm run build`, the 8-gram originality check and the banned-term check against the private research, plus a title check (5-gram and near-match) of every heading.
 - **Content:** 275 lessons in 29 modules (260 rewritten into steps on 6 Oct, 9 overlapping lessons merged on 13 Oct, 16 new lessons in Module 29, 8 more on 13 Oct for profit setup, marketing spend and gaps), plus the Helix Course (21 goals).
 - **Research:** private research from two paid courses, kept off-repo. Nothing in this repo copies its wording, names or titles.
 
+
+
+## Today, 15 Oct 2026: everything shipped, social, community and open items
+
+**Shipped to main (all live on ecommercehelix.com)**
+- `82d386c` Hero spacing, all prices in USD, FAQ answer on AI (writing only, monthly limits, never trained on user data).
+- `37b7138` Five-tab app (Today, Numbers, Learn, Progress, Community; bottom bar on phones; the rest under Settings) plus extras: Monday scorecard email, milestone celebrations, Review my store, template library, wins wall.
+- `87c5bf9` Date-driven seasonal calendar (computed dates for holidays that move each year, banner, timed Today tasks per event, Module 30 lessons, tests). `1a4f0f7` terms and privacy for USD, AI, community and reviews.
+- `e1a558a` Numbers: the floating "I'm lost" button shrinks to an icon while a day panel is open, so it no longer covers the figures.
+- `1be920a` Site-wide content engine (`src/content/site-content.ts`): event banners and hero line, 23 weekly tips, template highlights; new dates EOFY, mid-July deal days, back to school; daily revalidate cron; preview-only date simulator `/preview/season?asOf=`.
+- `df24f21` Today in time blocks: Morning check, Main focus, Before you finish; 5 to 7 tasks with time, why, link, done tick; season tag; progress bar. (Replaces the older "1 to 3 tasks" list described further down.)
+- `edf1b09` Connect your tools (`/dashboard/connect`): Shopify OAuth + custom app token, Meta, Google Ads, Google Sheets import, TikTok placeholder, CSV/manual; daily table `/dashboard/numbers/table` with CSV export.
+- `0a62303` Learn: Attract | Convert | Grow columns of video cards (placeholders) and a "See entire course" timeline with progress, soft locks and "You are here".
+- `7368c3c` Font fix: the purple hero event line uses the handwriting font.
+- Screenshots: `/workspace/helix-shots/` on the build box (not in the repo).
+
+**Social and community**
+- Old v1 Facebook scheduled posts: all 33 deleted.
+- Social v2 (`docs/social/v2`: schedule.csv, schedule.md, manifest.csv, contact sheet, statics, animated MP4s, all small enough for the repo; the source pack is also at `/workspace/reports/helix/social-v2` on the build box): post 1 published 15 Oct. 28 posts are scheduled daily at 19:00 Sydney on Instagram and Facebook through 12 Nov, with the time-sensitive Black Friday, Cyber Monday, Christmas and gift posts moved first. The remaining 21 (posts 26-28, 30-32, 37-50; 13 Nov to 2 Dec) get booked automatically once they fall inside Meta's 29-day scheduling limit.
+- Private Facebook group **E-commerce Helix Members**: https://www.facebook.com/groups/1313305624157403/ . Page is admin, membership questions set, cover added, 6 starter posts with the Welcome post pinned. `FACEBOOK_GROUP_URL` set in Vercel (Production and Preview). Assets in `docs/social/fb-group` (cover, posts.md, images).
+- Social v3 (`docs/social/v3`, 50 new posts, 17 animated): in progress. **Needs Sid's OK before anything is scheduled.**
+
+**Open items**
+- TikTok developer app: being set up now. Then set `TIKTOK_APP_ID` and `TIKTOK_APP_SECRET` (redirect `https://ecommercehelix.com/api/tiktok/callback`).
+- TikTok daily spend sync (token storage needs a small additive table) once the app is approved.
+- Scheduled Google Sheets refresh (today it is a one-off import, re-run by hand).
+- Lesson videos (Learn shows "Video coming soon" placeholders; add URLs in `VIDEOS` in `src/app/dashboard/learn/page.tsx`).
+- Stripe branding (Dashboard only, see below) and USD Stripe prices.
+- Live-mode Stripe customer portal check (cancel at period end) when Stripe goes live.
+- Paid-account check of Community (the test account is Free, so the group join button has not been seen live).
+- Google Ads check-in (connection and first sync on a real account).
+- Meta "Save choice" fix on Connections (ad account / Page / pixel picker).
+- GitHub Support purge request for PR #12.
+- Meta app review, so users who are not testers can connect Meta.
+- Local branch `audit-pass` is fully merged but still checked out in a second worktree (`/workspace/eh-audit`), so it was left in place.
 
 ## Simpler app, USD prices and the seasonal calendar (15 Oct 2026, Sydney)
 
