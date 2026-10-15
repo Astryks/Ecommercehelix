@@ -1,6 +1,6 @@
 # Module 13: Promotions, launches and big sales
 
-**Outcome:** a year of sales peaks that are planned, profitable and easy to repeat, and a step-by-step plan for every big sale, from setting the target to the weeks after.
+**Outcome:** a year of sales peaks that are planned, make a profit and are easy to repeat. Plus a step-by-step plan for every big sale, from setting the target to the weeks after.
 
 **Related SOP:** [15 Promo calendar and sales](../sops/15-promo-calendar-and-sales.md)
 
@@ -33,9 +33,9 @@
 ## Lesson 13.1: Your yearly sales calendar
 <!-- stage:convert -->
 
-**Why this matters:** A year of promotions works best as a rhythm, so customers learn when to look and you are never scrambling. Four kinds of promotion cover the year, and only one of them needs deep discounts, as a last resort.
+**Why this matters:** A year of sales works best as a rhythm. Customers learn when to look, and you are never rushing. Four kinds of promotion cover the year, and only one of them needs deep discounts, as a last resort.
 
-**Step 1.** Pick a regular day and time for new product releases (for example the first Thursday of each month, 7pm) and put the next 6 on your calendar.
+**Step 1.** Pick a regular day and time for new products, like the first Thursday of each month at 7pm. Put the next 6 on your calendar.
 
 **Expected result:** Your release dates are set and repeat monthly.
 
@@ -109,7 +109,7 @@
 
 <!-- do:goals -->
 
-**Step 2.** Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale and a VIP perk, checking margin at every level.
+**Step 2.** Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale and a VIP extra. Check your margin at every level.
 
 **Expected result:** Every offer level still makes money.
 
@@ -117,7 +117,7 @@
 
 **Expected result:** The sale has a name and a visual style.
 
-**Step 4.** Plan the ad budget per day for each phase (hype, launch, middle, finish) and the split between normal and sale campaigns.
+**Step 4.** Plan the ad budget per day for each part of the sale (hype, launch, middle, finish). Also plan the split between normal and sale campaigns.
 
 **Expected result:** Every sale day has a planned budget.
 
@@ -159,7 +159,7 @@
 
 **Why this matters:** Running the sale is a daily routine: the right campaigns, spending limits, a daily check and a strong finish. Judge the whole event, not single days.
 
-**Step 1.** Set up sale campaigns: a copy of your best cold campaign, a cold campaign with combined audiences and exclusions, a mixed campaign with no exclusions, warm campaigns, and hot campaigns (add to cart and checkout).
+**Step 1.** Set up sale campaigns. Copy your best cold campaign. Add a cold campaign with combined audiences and people left out, and a mixed campaign that leaves nobody out. Then add warm campaigns, and hot campaigns for add to cart and checkout.
 
 **Expected result:** All sale campaigns are built and paused before launch.
 
@@ -169,7 +169,7 @@
 
 **Expected result:** Nothing can overspend.
 
-**Step 3.** Each day, check MER (total ad spend as a share of total sales) against plan, stock, site speed and ad fatigue.
+**Step 3.** Each day, check MER (total ad spend as a share of total sales) against your plan. Also check stock, site speed and tired ads.
 
 **Expected result:** You catch problems the same day.
 
@@ -188,7 +188,7 @@
 ## Lesson 13.7: After the sale
 <!-- stage:grow -->
 
-**Why this matters:** After a sale there is always a slow period, and how you handle it decides how many new buyers you keep. A short review makes the next event better.
+**Why this matters:** After a sale there is always a slow time. How you handle it decides how many new buyers you keep. A short review makes the next event better.
 
 **Step 1.** Turn normal campaigns back up in steps over a week, not all at once.
 
@@ -211,11 +211,11 @@
 
 **Why this matters:** When a sale is behind plan, the cause is usually one of five things. Find it fast, then use a rescue move that does not damage trust.
 
-**Step 1.** Check the five causes: an offer weaker than competitors', an offer that is not clear in the first seconds of ads, a site problem, a list that is too small, or bad timing.
+**Step 1.** Check the five causes. The offer is weaker than rivals', or not clear in the first seconds of ads. There is a site problem, the list is too small, or the timing is bad.
 
 **Expected result:** You have named the likely cause.
 
-**Step 2.** Pick one rescue move: add a free gift level, release something new mid-sale, send a stronger email or move budget to warm audiences.
+**Step 2.** Pick one rescue move. Add a free gift level, release something new mid-sale, send a stronger email or move budget to warm audiences.
 
 **Expected result:** A rescue move is live within hours.
 
@@ -226,7 +226,7 @@
 
 **Why this matters:** Your sale plan should grow with your experience. Starting simple and adding layers each time keeps sales profitable while you learn.
 
-**Step 1.** Find your level: starter (one offer, simple schedule, sale versions of flows), seasoned (gift levels, hype phase, mid-sale release, separate sale campaigns) or advanced (daily budget plan, every channel planned, product sales targets).
+**Step 1.** Find your level. **Starter:** one offer, a simple plan, sale versions of flows. **Seasoned:** gift levels, a hype phase, a mid-sale release, separate sale campaigns. **Advanced:** a daily budget plan, every channel planned, sales targets per product.
 
 **Expected result:** You know your level.
 
@@ -259,7 +259,7 @@
 
 **Expected result:** Shoppers know the last safe order date.
 
-**Step 4.** Plan for Boxing Day and the quiet weeks after (sometimes called the fifth quarter), when ad costs drop and new customers can be cheaper.
+**Step 4.** Plan for Boxing Day and the quiet weeks after. Ad costs drop then, so new customers can be cheaper.
 
 **Expected result:** You have a plan for late December and January.
 
@@ -301,17 +301,17 @@
 ## Lesson 13.12: A smaller sale between the big ones
 <!-- stage:convert -->
 
-**Why this matters:** Relying on one big sale a year makes cash flow lumpy and leaves stock sitting for months. One or two smaller, planned sales (for example at the end of the financial year or the change of season) clear old stock and bring lapsed customers back, without training buyers to wait for discounts.
+**Why this matters:** Relying on one big sale a year makes cash flow lumpy and leaves stock sitting for months. One or two smaller planned sales clear old stock and bring back past customers. Good times are the end of the financial year or the change of season. This way buyers do not learn to wait for discounts.
 
-**Step 1.** Pick one window at least 8 weeks away from your biggest sale, and choose the reason for it: clearing a season's stock, end of financial year, or a birthday for the brand.
+**Step 1.** Pick one window at least 8 weeks away from your biggest sale. Choose the reason: clearing a season's stock, end of financial year, or your brand's birthday.
 
 **Expected result:** You have one date range of 3 to 5 days and a reason customers will believe.
 
-**Step 2.** Choose what goes on sale: slow stock and last season's colours first, best sellers only at a smaller discount or not at all. Check the margin on each with your profit setup.
+**Step 2.** Choose what goes on sale. Put slow stock and last season's colours first. Give best sellers a smaller discount or none. Check the margin on each with your profit setup.
 
 **Expected result:** A list of products and discounts where every line still makes money after marketing.
 
-**Step 3.** Plan it in Helix Calendar: one teaser email 3 days before, a launch email and SMS, a reminder on the middle day and a last-chance email, plus ads to past buyers and site visitors.
+**Step 3.** Plan it in Helix Calendar. Send one teaser email 3 days before, a launch email and SMS, a reminder on the middle day and a last-chance email. Add ads to past buyers and site visitors.
 
 **Expected result:** The sale and its messages are on your calendar with dates.
 

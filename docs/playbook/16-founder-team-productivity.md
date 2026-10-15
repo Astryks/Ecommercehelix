@@ -1,6 +1,6 @@
 # Module 16: Founder rhythm, team and resilience
 
-**Outcome:** your time goes to the few things that grow the business, the right people join at the right time, and you stay steady through bad weeks.
+**Outcome:** your time goes to the few things that grow the business, and the right people join at the right time. You also stay steady through bad weeks.
 
 **Related SOP:** [18 Founder rhythm and hiring](../sops/18-founder-rhythm-hiring.md)
 
@@ -54,7 +54,7 @@
 
 **Expected result:** You finish deep tasks without switching.
 
-**Step 6.** Work out what your hour is worth (for example target yearly profit divided by working hours) and hand off work worth less than that.
+**Step 6.** Work out what your hour is worth, for example target yearly profit divided by working hours. Hand off work worth less than that.
 
 **Expected result:** You have a list of tasks to delegate.
 
@@ -67,7 +67,7 @@
 
 **Why this matters:** A small daily and weekly rhythm keeps you on top of the business in under an hour a week. The Helix routine is built for exactly this.
 
-**Step 1.** Every day, do the Helix routine (update yesterday, read your profit, do one task) plus one focus block on your top priority.
+**Step 1.** Every day, do the Helix routine: update yesterday, read your profit and do one task. Add one focus block on your top priority.
 
 **Expected result:** Each day ends with your numbers in and one priority moved forward.
 
@@ -105,7 +105,7 @@
 
 **Why this matters:** Interruptions eat founder time. Three quick questions decide what deserves your attention now.
 
-**Step 1.** When interrupted, ask: can it be explained in one sentence, am I the right person, and does it need doing now?
+**Step 1.** When someone interrupts you, ask three things. Can it be explained in one sentence? Am I the right person? Does it need doing now?
 
 **Expected result:** You can answer the three questions in seconds.
 
@@ -135,7 +135,7 @@
 
 **Why this matters:** There are five ways to fund growth, from reinvesting profit to selling shares. Running the business as if a buyer will check it one day keeps every option open.
 
-**Step 1.** List your funding options: reinvested profit, longer supplier terms, inventory finance (loans for stock), revenue-based funding (repay a share of sales) or selling shares (including crowdfunding).
+**Step 1.** List your ways to get money. Use your own profit, longer supplier terms, stock loans, revenue-based funding (you repay a share of sales) or selling shares (including crowdfunding).
 
 **Expected result:** You know which options fit your stage.
 

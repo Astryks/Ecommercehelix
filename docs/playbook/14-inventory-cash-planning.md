@@ -1,6 +1,6 @@
 # Module 14: Inventory, cash and the year plan
 
-**Outcome:** the right stock at the right time, a cash forecast you trust, and a plan for the year that ties sales, stock and marketing together.
+**Outcome:** the right stock at the right time, and a cash plan you trust. Plus a plan for the year that ties sales, stock and marketing together.
 
 **Related SOP:** [17 Inventory and cash planning](../sops/17-inventory-cash-planning.md)
 
@@ -39,7 +39,7 @@
 
 **Expected result:** You have a short list of focus categories.
 
-**Step 2.** Track every style in one table: launch date, units sold, sell-through % (share of stock sold), margin and your reorder decision.
+**Step 2.** Track every style in one table. Note the launch date, units sold, sell-through % (share of stock sold), margin and whether you will reorder.
 
 **Expected result:** Every style has a row you update monthly.
 
@@ -60,7 +60,7 @@
 ## Lesson 14.2: A 10-minute weekly stock check
 <!-- stage:grow -->
 
-**Why this matters:** A weekly stock check takes ten minutes and prevents the two expensive mistakes: selling out of a best seller and sitting on stock that will not move. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
+**Why this matters:** A weekly stock check takes ten minutes. It stops two costly mistakes: selling out of a best seller, and sitting on stock that will not sell. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
 
 **Step 1.** Open **Suppliers & stock** in Helix and update on-hand and on-order counts for each product.
 
@@ -72,11 +72,11 @@
 
 **Expected result:** You know how long each product will last.
 
-**Step 3.** Grade products A, B or C: A items are the few that make most of your sales, B the middle, C slow sellers.
+**Step 3.** Grade products A, B or C. A items are the few that make most of your sales. B is the middle, and C is slow sellers.
 
 **Expected result:** Every product has a grade.
 
-**Step 4.** Note reorder dates and flag products with too little cover (about to sell out) or too much (cash stuck on shelves).
+**Step 4.** Note reorder dates. Flag products with too little stock (about to sell out) or too much (cash stuck on shelves).
 
 **Expected result:** You have a short list of products to reorder and products to clear.
 
@@ -114,7 +114,7 @@
 
 **Expected result:** You have a blank forecast.
 
-**Step 2.** For each month, add rows for starting cash, sales income, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.
+**Step 2.** For each month, add rows for starting cash, sales money and stock payments (deposits and balances). Add ad spend, fixed costs, tax and loan repayments too.
 
 **Expected result:** Every month shows an ending cash balance.
 
@@ -133,7 +133,7 @@
 
 **Why this matters:** Debt can speed up growth or sink a store. Borrow only when both tests below are true.
 
-**Step 1.** Check the money will clearly earn more than it costs (for example stock for a product that already sells well, or extra stock for the busy season).
+**Step 1.** Check the money will clearly earn more than it costs. For example: stock for a product that already sells well, or extra stock for the busy season.
 
 **Expected result:** You can name the return the money will make.
 
@@ -148,7 +148,7 @@
 
 **Why this matters:** Good money habits make the numbers easy to see and the business easy to run. Four habits cover most of it.
 
-**Step 1.** Open a separate business bank account if you do not have one, and move all business income and costs to it.
+**Step 1.** If you do not have one, open a separate business bank account. Move all business money in and out through it.
 
 **Expected result:** Personal and business money never mix.
 
@@ -196,7 +196,7 @@
 ## Lesson 14.8: Finding and vetting suppliers
 <!-- stage:grow -->
 
-**Why this matters:** A good supplier makes a good product on time at a fair price, and tells you early when something goes wrong. Changing supplier mid-season is slow and risky, so vet carefully up front. Helix keeps suppliers, minimums, lead times and terms on the Suppliers & stock page.
+**Why this matters:** A good supplier makes a good product on time at a fair price. They also tell you early when something goes wrong. Changing supplier mid-season is slow and risky, so vet carefully up front. Helix keeps suppliers, minimums, lead times and terms on the Suppliers & stock page.
 
 **Step 1.** Write a one-page spec: materials, size, finish, packaging, certifications and your target landed cost.
 
@@ -206,35 +206,35 @@
 
 **Expected result:** You have 3 to 5 candidates. Local makers cost more per unit but have shorter lead times and smaller minimums.
 
-**Step 3.** For each, ask for the business licence (check the business scope includes your product) and a live video walk-through of the production line, or pay an inspection company to visit.
+**Step 3.** Ask each one for their business licence, and check it covers your product. Ask for a live video tour of the factory floor, or pay an inspection company to visit.
 
-**Expected result:** You know whether each is a factory (makes the product) or a trading company (buys from factories), and both are verified.
+**Expected result:** You know if each one is a factory (makes the product) or a trading company (buys from factories). Both are checked.
 
-**Step 4.** Order paid samples from at least 2 suppliers and test them against your spec as a customer would for 1 to 2 weeks.
+**Step 4.** Order paid samples from at least 2 suppliers. Test them against your spec as a customer would, for 1 to 2 weeks.
 
 **Expected result:** You have a winner and can approve a signed "golden sample" that production must match.
 
-**Step 5.** Ask what drives the MOQ (minimum order quantity) and lower it with fewer colours, a stock fabric or a higher first-run unit price.
+**Step 5.** Ask what sets the MOQ (minimum order quantity). Lower it with fewer colours, a stock fabric or a higher price per unit on the first run.
 
 **Expected result:** Your first order covers no more than 3 to 4 months of expected sales.
 
 **Watch out:** Cash tied up in slow stock is the most common way growing stores run out of money.
 
-**Step 6.** Get quotes on the same terms (for example FOB: price with goods loaded at the port) and work out landed cost: unit price plus freight, duty and other costs (packaging, inspection, bank fees, broker).
+**Step 6.** Get prices on the same terms, for example FOB (price with goods loaded at the port). Work out landed cost: unit price plus freight, duty and other costs like packaging, inspection, bank fees and broker.
 
 **Expected result:** Each supplier has a comparable landed cost, which you enter as product cost in Helix.
 
 <!-- do:stock -->
 
-**Step 7.** Agree payment terms (a common first deal is 30% deposit, 70% before shipping) from your own written terms of trade, paying by bank transfer to an account in the company's name.
+**Step 7.** Agree how you will pay, using your own written terms. A common first deal is 30% deposit and 70% before shipping. Pay by bank transfer to an account in the company's name.
 
 **Expected result:** Terms are in writing and you confirm any change of bank details by phone.
 
-**Step 8.** Write a quality checklist from the golden sample, book a pre-shipment inspection for larger orders, and count and spot-check every delivery with photos.
+**Step 8.** Write a quality checklist from the approved sample. Book an inspection before shipping for bigger orders. Count and spot-check every delivery with photos.
 
 **Expected result:** Problems are caught before you pay the balance or list the stock.
 
-**Step 9.** Share a code of conduct (fair pay, safe conditions, no forced or child labour), share your forecast, and review suppliers yearly.
+**Step 9.** Share a code of conduct: fair pay, safe work, and no forced or child labour. Share your forecast, and review suppliers every year.
 
 **Expected result:** You have a documented, long-term partnership.
 
@@ -245,7 +245,7 @@
 
 **Why this matters:** Running out of a best seller loses sales and pauses your ads, while ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths for every product.
 
-**Step 1.** Work out sales speed: average units a day over the last 4 to 8 weeks, leaving out stock-out days and big sale days.
+**Step 1.** Work out sales speed: average units a day over the last 4 to 8 weeks. Leave out days you were sold out and big sale days.
 
 **Expected result:** You have units per day for each product.
 
@@ -263,11 +263,11 @@
 
 <!-- do:stock -->
 
-**Step 5.** When on-hand plus on-order falls to the reorder point, order enough for the lead time, safety days and the next 1 to 3 months, and at least the supplier's minimum.
+**Step 5.** When stock on hand plus on order drops to the reorder point, place an order. Order enough for the lead time, safety days and the next 1 to 3 months, and at least the supplier's minimum.
 
 **Expected result:** An alert shows on Today when it is time to order, and stock arrives before you run out.
 
-**Step 6.** For Black Friday and Christmas, work out the last safe order date: event date minus lead time minus about a week to receive and list.
+**Step 6.** For Black Friday and Christmas, work out the last safe order date. That is the event date, minus lead time, minus about a week to receive and list.
 
 **Expected result:** Peak stock is ordered in time. Peak week often sells 2 to 4 times a normal week.
 

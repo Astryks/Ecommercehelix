@@ -33,7 +33,7 @@
 
 **Why this matters:** Expanding to a country with no demand burns cash on shipping, ads and setup. A quick check of your own data shows where people already want what you sell.
 
-**Step 1.** In Shopify **Analytics > Reports > Sales by billing country** and **Sessions by country**, list your top 5 countries outside home for the last 12 months.
+**Step 1.** In Shopify, open **Analytics > Reports > Sales by billing country** and **Sessions by country**. List your top 5 countries outside home for the last 12 months.
 
 **Expected result:** You have a ranked list of countries with orders and visits.
 
@@ -58,7 +58,7 @@
 
 **Expected result:** You have a per-order cost for the new country.
 
-**Step 2.** Make a separate set of cost drivers for that country (as in Lesson 1.2), including duties and import fees per order.
+**Step 2.** Make a separate list of costs for that country (as in Lesson 1.2). Include duties and import fees per order.
 
 **Expected result:** The new country has its own break-even ROAS and CPA.
 
@@ -69,7 +69,7 @@
 
 **Why this matters:** Local prices in local currency, rounded to normal price points, sell better than converted prices. Deciding who pays duties up front avoids angry customers at the door.
 
-**Step 1.** In Shopify **Settings > Markets > [country] > Products and pricing**, set local prices in local currency, rounded to normal price points (for example 49 euros, not 47.83).
+**Step 1.** In Shopify, go to **Settings > Markets > [country] > Products and pricing**. Set prices in local money, rounded to normal prices (49 euros, not 47.83).
 
 **Expected result:** Shoppers in that country see clean local prices.
 
@@ -105,7 +105,7 @@
 
 **Expected result:** You have chosen ship from home, a local 3PL or direct from factory.
 
-**Step 2.** Look up the country's duty threshold (order value below which no duty is charged) and the courier's per-order fees for collecting duties and taxes.
+**Step 2.** Look up the country's duty threshold: the order value below which there is no duty. Also look up the courier's fee per order for collecting duties and taxes.
 
 **Expected result:** You know the extra cost per order and have added it to your cost drivers.
 
@@ -139,7 +139,7 @@
 
 **Expected result:** You can see which countries are profitable.
 
-**Step 2.** Either start a separate campaign per country once spend allows, or run one worldwide campaign to discover demand and then give winning countries their own campaigns.
+**Step 2.** You can start a separate campaign per country once you can afford it. Or run one worldwide campaign to find demand, then give winning countries their own campaigns.
 
 **Expected result:** Each strong country has its own campaign and budget.
 

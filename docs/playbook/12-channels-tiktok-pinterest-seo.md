@@ -1,6 +1,6 @@
 # Module 12: TikTok, Pinterest, SEO and AI search
 
-**Outcome:** you know when and how to add channels beyond Meta and Google, and how to be found in Google search and in AI assistants.
+**Outcome:** you know when and how to add channels beyond Meta and Google. You also know how to be found in Google search and in AI helpers.
 
 **Related SOP:** [10 TikTok and emerging channels](../sops/10-tiktok-and-emerging-channels.md)
 
@@ -44,14 +44,14 @@
 
 **Expected result:** You have a bank of ad-ready videos.
 
-**Step 3.** Create a TikTok Business Center, an ad account, and install the TikTok pixel (it reports views, carts and sales) through the TikTok app in Shopify.
+**Step 3.** Make a TikTok Business Center and an ad account. Install the TikTok pixel through the TikTok app in Shopify (it reports views, carts and sales).
 
 **Expected result:** TikTok Events Manager shows Purchase events coming in.
 
 **Step 4.** Make a simple view in TikTok Ads Manager.
 
 1. Click **Custom columns**.
-2. Tick: spend, CPA (ad cost for one sale), add to cart, cost per add to cart, CTR, CPC (cost per click), 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.
+2. Tick: spend, CPA (ad cost for one sale), add to cart, cost per add to cart, CTR and CPC (cost per click). Also tick 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.
 3. Save it.
 
 **Expected result:** One saved view shows every number you need.
@@ -65,7 +65,7 @@
 
 **Expected result:** Your TikTok account matches your budget.
 
-**Step 2.** Choose campaign budget (TikTok shares money between ad groups) for steady running, or ad group budget when you need control over each test.
+**Step 2.** Choose campaign budget for steady running (TikTok shares money between ad groups). Choose ad group budget when you need control over each test.
 
 **Expected result:** Each campaign uses the budget type that suits its job.
 
@@ -82,7 +82,7 @@
 
 **Why this matters:** Spark ads run normal TikTok posts, yours or a creator's, as ads, keeping the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 19).
 
-**Step 1.** Ask the creator to generate an authorisation code in their TikTok settings (**Creator tools > Ad settings**) and send it to you.
+**Step 1.** Ask the creator to make an authorisation code in their TikTok settings (**Creator tools > Ad settings**). They send it to you.
 
 **Expected result:** You have a code for each post you want to run.
 
@@ -99,7 +99,7 @@
 
 **Why this matters:** TikTok ads tire fast, sometimes in 3 to 4 days, so they need closer watching than Meta. Early signs warn you before cost per sale gets worse.
 
-**Step 1.** Check TikTok every day or two and watch early warning signs: rising CPC, rising cost for each add to cart, and falling video watch rates.
+**Step 1.** Check TikTok every day or two. Watch for early warning signs: cost per click going up, cost per add to cart going up, and fewer people watching the videos.
 
 **Expected result:** You spot tired ads before CPA rises.
 
@@ -107,7 +107,7 @@
 
 **Expected result:** Spend moves to working ads.
 
-**Step 3.** If cost per sale rises after you turn off an earlier-step campaign (for example add to cart), turn it back on.
+**Step 3.** If cost per sale goes up after you turn off an earlier-step campaign (like add to cart), turn it back on.
 
 **Expected result:** TikTok gets the data it needs again.
 
@@ -120,7 +120,7 @@
 
 **Expected result:** Growth comes from new creative and campaigns, not just more budget.
 
-**Step 5.** Judge TikTok by your total MER (total ad spend as a share of total sales) on the Dashboard, starting at about 10% of your total ad budget.
+**Step 5.** Start TikTok at about 10% of your total ad budget. Judge it by your total MER on the Dashboard (total ad spend as a share of total sales).
 
 **Expected result:** You see TikTok's effect on the whole store.
 
@@ -146,7 +146,7 @@
 ## Lesson 12.6: TikTok Shop
 <!-- stage:attract -->
 
-**Why this matters:** TikTok Shop lets people buy without leaving TikTok, with automated campaigns that aim for total sales (GMV), affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
+**Why this matters:** TikTok Shop lets people buy without leaving TikTok. It has automatic campaigns that aim for total sales (GMV), plus affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
 
 **Step 1.** Work out your margin per order after TikTok Shop's commission and fees.
 
@@ -159,7 +159,7 @@
 ## Lesson 12.7: Pinterest
 <!-- stage:attract -->
 
-**Why this matters:** Pinterest pins keep getting found for months, much longer than social posts, and people plan purchases there well in advance. It rewards steady posting and early seasonal planning.
+**Why this matters:** Pinterest pins keep getting found for months, much longer than social posts. People plan what to buy there well ahead of time. It rewards steady posting and early seasonal planning.
 
 **Step 1.** Add fresh pins every week with search words in titles and descriptions, on boards by theme and season.
 
@@ -175,7 +175,7 @@
 
 <!-- do:calendar -->
 
-**Step 4.** Measure with a longer attribution window, counting sales after views and saves as well as clicks, and compare with your total MER (total ad spend as a share of total sales).
+**Step 4.** Measure over a longer time, and count sales after views and saves as well as clicks. Compare with your total MER (total ad spend as a share of total sales).
 
 **Expected result:** You judge Pinterest fairly for its slower decisions.
 
@@ -192,7 +192,7 @@
 
 **Expected result:** Each category has a list of target keywords.
 
-**Step 2.** Fix your pages: one main heading (H1) per page, clear subheadings (H2, H3), a page title and a meta description (the summary under your link in Google, about 150 to 160 characters) for each page, collection pages built around a keyword, links between your own pages and alt text on images.
+**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3), a page title and a meta description (the summary under your link in Google, about 150 to 160 characters). Build collection pages around a keyword, link between your own pages, and add alt text to images.
 
 **Expected result:** Every key page has a keyword-led title, meta description and one H1.
 
@@ -200,7 +200,7 @@
 
 **Expected result:** You publish at least one helpful article a month.
 
-**Step 4.** Check the technical side in Google Search Console: fast mobile pages, structured data (code telling Google price, rating and stock), a submitted sitemap, no broken links and no duplicate pages.
+**Step 4.** Check the technical side in Google Search Console. You want fast phone pages, structured data (code that tells Google price, rating and stock) and a sitemap sent in. Also no broken links and no copy pages.
 
 **Expected result:** Search Console shows no errors and your sitemap is indexed.
 
@@ -211,13 +211,13 @@
 ## Lesson 12.9: AI search and agentic commerce
 <!-- stage:attract -->
 
-**Why this matters:** More shoppers now ask AI assistants (like ChatGPT, Gemini or Perplexity) what to buy, and some assistants can shop for them (agentic commerce). Clear facts, reviews and clean product data decide whether they recommend you.
+**Why this matters:** More shoppers now ask AI helpers (like ChatGPT, Gemini or Perplexity) what to buy. Some helpers can even shop for them. Clear facts, reviews and clean product data decide whether they recommend you.
 
 **Step 1.** Make your brand facts the same everywhere (site, marketplaces, social bios) and grow your reviews.
 
 **Expected result:** AI assistants find consistent facts and plenty of proof.
 
-**Step 2.** Check your robots.txt lets trusted AI crawlers read your site, keep product data clean, and add FAQ sections and clear shipping and returns pages.
+**Step 2.** Check your robots.txt lets trusted AI tools read your site. Keep product data clean, and add FAQ sections and clear shipping and returns pages.
 
 **Expected result:** AI tools can read and quote your store accurately.
 

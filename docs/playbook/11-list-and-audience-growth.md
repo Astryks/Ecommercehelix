@@ -12,7 +12,7 @@
 >
 > **What it is:** Ways to collect more emails and followers you can reach for free.
 >
-> **Why it matters:** A bigger list makes every launch and sale cheaper, because you do not have to pay to reach them.
+> **Why it matters:** A bigger list makes every launch and sale cheaper. You do not have to pay to reach those people.
 >
 > **Do this:**
 >

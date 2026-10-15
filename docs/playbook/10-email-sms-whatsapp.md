@@ -1,6 +1,6 @@
 # Module 10: Email, SMS and messaging
 
-**Outcome:** automatic emails (flows) that earn money every day, a regular email schedule that does not wear out your list, and text and chat messages used where they help.
+**Outcome:** automatic emails (flows) that earn money every day, and a steady email plan that does not tire your list. Plus text and chat messages where they help.
 
 **Related SOPs:** [13 Email and SMS flows](../sops/13-email-sms-flows.md), [14 List growth and campaigns](../sops/14-list-growth-and-campaigns.md)
 
@@ -35,17 +35,17 @@
 ## Lesson 10.1: Sign-up forms
 <!-- stage:convert -->
 
-**Why this matters:** A sign-up form (often a pop-up) asks visitors for their email or phone number, and it feeds every flow and campaign you send. A good form signs up 3 to 10 of every 100 visitors. A weak one wastes your traffic.
+**Why this matters:** A sign-up form (often a pop-up) asks visitors for their email or phone number. It feeds every flow and campaign you send. A good form signs up 3 to 10 of every 100 visitors. A weak one wastes your traffic.
 
-**Step 1.** Pick one incentive: dollars off (for example $10 off) if your orders are big, percent off (10% off) if they are small, a free gift, early access or a competition entry.
+**Step 1.** Pick one reward. Dollars off ($10 off) works if your orders are big, and percent off (10% off) if they are small. Or try a free gift, early access or a prize draw.
 
 **Expected result:** Your form has one clear reason to sign up.
 
-**Step 2.** In your email app (Klaviyo, Omnisend or Shopify Email) build a multi-step form: first a one-click question ("What are you shopping for?"), then email, then phone number.
+**Step 2.** In your email app (Klaviyo, Omnisend or Shopify Email), build a form with steps. First a one-click question ("What are you shopping for?"), then email, then phone number.
 
 **Expected result:** The form asks an easy question first, which raises completion (micro-commitment).
 
-**Step 3.** Set the trigger to show after about 5 to 8 seconds or 30% scroll, plus exit intent on desktop (when the mouse moves to leave), and hide it from existing subscribers.
+**Step 3.** Show it after about 5 to 8 seconds or 30% scroll. On computers, also show it when the mouse moves to leave. Hide it from people who already signed up.
 
 **Expected result:** The form shows at the right moment and never to people already on the list.
 
@@ -110,7 +110,7 @@
 
 <!-- do:flow-post-purchase -->
 
-**Step 6.** Then add the extras one at a time: win-back, back in stock, price drop, replenishment, VIP, birthday, sunset (removing people who never open), review request and a cross-sell after the first purchase.
+**Step 6.** Then add the extras one at a time. Win-back, back in stock, price drop, time to reorder, VIP and birthday. Also a clean-up flow (removing people who never open), review request, and a "you may also like" email after the first order.
 
 **Expected result:** Your flow list grows month by month.
 
@@ -125,7 +125,7 @@
 
 **Expected result:** Your next four campaigns include at least one founder-style email.
 
-**Step 2.** Use what subscribers told you in forms (zero-party data, such as product interest, skin type or size) to personalise the content.
+**Step 2.** Use what people told you in forms to make emails fit them. That could be what they like, skin type or size.
 
 **Expected result:** Different subscribers see different product picks.
 
@@ -140,7 +140,7 @@
 
 **Why this matters:** A segment is a group of people on your list who share something. Sending to the right segment keeps emails out of spam folders and makes each message more relevant.
 
-**Step 1.** In your email app, create segments: engaged in the last 30, 60 and 90 days, buyers, repeat buyers and VIPs (your best customers).
+**Step 1.** In your email app, make groups: people who engaged in the last 30, 60 and 90 days, buyers, repeat buyers and VIPs (your best customers).
 
 **Expected result:** The segments show live counts.
 
@@ -155,15 +155,15 @@
 ## Lesson 10.5: Campaign cadence and ideas
 <!-- stage:grow -->
 
-**Why this matters:** A campaign email is a one-off email to your list, like a newsletter, and cadence means how often you send. Building up slowly keeps your list healthy while you learn what they like.
+**Why this matters:** A campaign email is a one-off email to your list, like a newsletter. Cadence means how often you send. Building up slowly keeps your list healthy while you learn what they like.
 
-**Step 1.** Start at 2 campaign emails a month, move to weekly after a month, then 2 to 4 a week if engagement holds.
+**Step 1.** Start with 2 campaign emails a month. Move to weekly after a month, then 2 to 4 a week if people keep opening.
 
 **Expected result:** You have a written send schedule.
 
 <!-- do:calendar -->
 
-**Step 2.** Fill the schedule from this list: new arrivals, how-to tips, customer stories, behind the scenes, founder notes, gift guides, myth busting, customer photos, seasonal moments, limited bundles and rare flash sales.
+**Step 2.** Fill the plan from this list: new arrivals, how-to tips, customer stories, behind the scenes and founder notes. Also gift guides, myth busting, customer photos, seasonal moments, limited bundles and rare flash sales.
 
 **Expected result:** You have a month of email ideas.
 
@@ -176,7 +176,7 @@
 
 **Expected result:** You have one line of numbers for flows and one for campaigns.
 
-**Step 2.** Find the weakest step: low opens means work on the subject line, low clicks means work on content and the button, clicks but few orders means work on the landing page.
+**Step 2.** Find the weakest step. Low opens: work on the subject line. Low clicks: work on the content and button. Clicks but few orders: work on the landing page.
 
 **Expected result:** You have one fix to make this month.
 
@@ -198,7 +198,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** The test has a written guess.
 
-**Step 2.** Change one thing only (subject line, send time, offer or layout) and split the list into two groups of at least a few thousand each if you can.
+**Step 2.** Change one thing only: subject line, send time, offer or layout. If you can, split the list into two groups of at least a few thousand each.
 
 **Expected result:** The test is fair and big enough to read.
 
@@ -211,11 +211,11 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Why this matters:** Deliverability means your emails reach the inbox, not spam. Without it, the best email in the world earns nothing. Most of it is one-time setup.
 
-**Step 1.** In your email app's domain settings, follow the guide to add SPF, DKIM and DMARC records (settings that prove your emails really come from you) at your domain host.
+**Step 1.** In your email app's domain settings, follow the guide to add SPF, DKIM and DMARC records at your domain host. These settings prove your emails really come from you.
 
 **Expected result:** The email app shows your sending domain as verified or authenticated.
 
-**Step 2.** On a new account, warm up slowly: each send goes to no more than about 1.5 times as many people as the last, engaged people first.
+**Step 2.** On a new account, start slowly. Send each email to no more than about 1.5 times as many people as the last one, engaged people first.
 
 **Expected result:** Sends grow steadily without bounce or spam spikes.
 
@@ -259,14 +259,14 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** Your sale plan has two SMS sends.
 
-**Step 3.** Register your sender name where the law requires it (for example in Australia), respect quiet hours and keep each text short with one link.
+**Step 3.** Register your sender name where the law says you must (for example in Australia). Respect quiet hours, and keep each text short with one link.
 
 **Expected result:** Texts arrive from your registered name, at sensible times, with one clear link.
 
 ## Lesson 10.11: WhatsApp and chat commerce
 <!-- stage:convert -->
 
-**Why this matters:** WhatsApp and similar chat apps work well where your customers already use them, especially for VIPs and expensive products people want to ask about first.
+**Why this matters:** WhatsApp and similar chat apps work well where your customers already use them. They are great for VIPs and for pricey products people want to ask about first.
 
 **Step 1.** Set up WhatsApp Business and only message people who opted in.
 
@@ -329,7 +329,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** Final-day urgency reaches everyone.
 
-**Step 5.** After the sale, send new buyers thanks, how-to tips, results and a small time-limited deal, and switch your abandonment flows back from sale versions.
+**Step 5.** After the sale, send new buyers thanks, how-to tips, results and a small deal that ends soon. Switch your cart flows back from their sale versions.
 
 **Expected result:** New buyers are looked after and flows are back to normal.
 

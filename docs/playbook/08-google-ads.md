@@ -1,6 +1,6 @@
 # Module 8: Google ads in practice
 
-**Outcome:** a clean Google setup that shows your products to people already searching for them, at a profit, and that you can look after once a week.
+**Outcome:** a clean Google setup that shows your products to people already searching for them, at a profit. You can look after it once a week.
 
 **Related SOP:** [09 Google Shopping, PMax and Search](../sops/09-google-shopping-pmax-search.md)
 
@@ -37,11 +37,11 @@
 
 **Why this matters:** A clean Google foundation means every dollar is tracked and nothing changes without you. Do this once before you spend money, tick each step, and recheck tracking monthly.
 
-**Step 1.** In Google Ads open **Admin > Access and security** and confirm you (not an agency) are an admin owner of the account.
+**Step 1.** In Google Ads, open **Admin > Access and security**. Check that you (not an agency) are an admin owner of the account.
 
 **Expected result:** Your own email is listed with Admin access. If an agency owns it, ask them in writing to transfer ownership to you.
 
-**Step 2.** In Shopify install the **Google & YouTube** app and connect your Google Ads account and Merchant Center (where Google keeps your product list, called a feed).
+**Step 2.** In Shopify, install the **Google & YouTube** app. Connect your Google Ads account and Merchant Center (where Google keeps your product list, called a feed).
 
 **Expected result:** The app shows both accounts connected and products syncing.
 
@@ -55,7 +55,7 @@
 
 **Watch out:** Check this monthly. Other actions such as page views sometimes become primary and inflate results.
 
-**Step 4.** In Shopify's **Google & YouTube** app, connect Google Analytics 4 (GA4), then in Google Ads open **Admin > Linked accounts** (sometimes **Product links**) and link GA4.
+**Step 4.** In Shopify's **Google & YouTube** app, connect Google Analytics 4 (GA4). Then in Google Ads, open **Admin > Linked accounts** (sometimes **Product links**) and link GA4.
 
 **Expected result:** GA4 shows purchases, and Google Ads lists GA4 as linked.
 
@@ -76,7 +76,7 @@
 
 **Why this matters:** Shopping ads are built from your product feed, so better product data means better ads and cheaper clicks. Most gains come from titles, images and fixing errors.
 
-**Step 1.** Rewrite product titles with search words first: brand, product type, then key feature (for example "Acme Linen Shirt, Men's, Relaxed Fit, Sand").
+**Step 1.** Rewrite product titles with search words first: brand, product type, then main feature. For example: "Acme Linen Shirt, Men's, Relaxed Fit, Sand".
 
 **Expected result:** Your top 20 products have search-first titles.
 
@@ -101,11 +101,11 @@
 
 **Why this matters:** The right Google setup depends on your size. Starting simple, then adding campaigns as you grow, keeps each campaign fed with enough data.
 
-**Step 1.** If you are small, run brand search plus one feed-only Performance Max (PMax: Google decides where to show your products across Search, Shopping, YouTube and Gmail) or Shopping campaign.
+**Step 1.** If you are small, run brand search plus one Shopping campaign or feed-only Performance Max. In Performance Max (PMax), Google decides where to show your products across Search, Shopping, YouTube and Gmail.
 
 **Expected result:** You have two campaigns: brand search and a product campaign.
 
-**Step 2.** In the PMax campaign, give it only your product feed (no extra videos or images, which is what feed-only means) and exclude your brand name under **Brand exclusions**.
+**Step 2.** In the PMax campaign, give it only your product feed, with no extra videos or images (that is what feed-only means). Leave out your brand name under **Brand exclusions**.
 
 **Expected result:** PMax spends on new searches, while brand search covers your name.
 
@@ -144,7 +144,7 @@
 
 **Expected result:** Each ad group is tightly themed.
 
-**Step 4.** Create a shared negative keyword list (words you never want to show for, like "free" or "jobs") in **Shared library > Negative keyword lists** and apply it to every campaign.
+**Step 4.** Make a shared list of negative keywords in **Shared library > Negative keyword lists**. These are words you never want to show for, like "free" or "jobs". Add the list to every campaign.
 
 **Expected result:** Wasted searches are blocked across the account.
 
@@ -153,7 +153,7 @@
 
 **Why this matters:** Search ads are short, so every line has to earn its place. Mixing benefit, offer, proof and urgency lets Google find the best combination.
 
-**Step 1.** Write up to 15 headlines mixing product plus benefit, the offer, proof (reviews, years in business), urgency and your brand, and pin 1 or 2 so they always show.
+**Step 1.** Write up to 15 headlines. Mix product plus benefit, the offer, proof (reviews, years in business), urgency and your brand. Pin 1 or 2 so they always show.
 
 **Expected result:** The ad strength meter shows "Good" or "Excellent".
 
@@ -176,7 +176,7 @@
 
 <!-- do:metrics -->
 
-**Step 2.** In the campaign's **Bidding** settings, set target ROAS above break-even with room for profit (for example 2.4 if break-even is 1.82).
+**Step 2.** In the campaign's **Bidding** settings, set target ROAS above break-even with room for profit. For example, 2.4 if break-even is 1.82.
 
 **Expected result:** Google bids to a target that leaves profit.
 
@@ -245,7 +245,7 @@
 
 **Expected result:** The campaign is live with proven creative.
 
-**Step 3.** Judge it by view-through results (people who saw the ad and bought later) and your total MER (total ad spend as a share of total sales) on the Dashboard.
+**Step 3.** Judge it by view-through results: people who saw the ad and bought later. Also check your total MER on the Dashboard (total ad spend as a share of total sales).
 
 **Expected result:** You judge it on the whole-store effect, not clicks alone.
 
@@ -278,7 +278,7 @@
 ## Lesson 8.11: AI-driven changes in 2026
 <!-- stage:attract -->
 
-**Why this matters:** In 2026 Google adds more AI features automatically: AI Max for Search and Shopping, AI-written ad text, final URL expansion (Google picks the landing page) and ads in AI Mode answers. They can help, but only if you check what they do.
+**Why this matters:** In 2026 Google turns on more AI features by itself. These include AI Max for Search and Shopping, AI-written ad text, Google picking the landing page, and ads in AI Mode answers. They can help, but only if you check what they do.
 
 **Step 1.** Open **Campaigns** and review any campaign Google upgraded automatically.
 
@@ -295,14 +295,14 @@
 ## Lesson 8.12: Launch your first Google campaign in 45 minutes
 <!-- stage:attract -->
 
-**Why this matters:** Google Ads tries to rush new owners into a guided "smart" campaign that spends money in places you cannot see. This lesson skips that and sets up the two campaigns most Shopify stores should start with: brand search (cheap, protects your name) and Performance Max fed by your products. Helix does not connect to Google Ads yet, so you follow these steps yourself.
+**Why this matters:** Google Ads tries to rush new owners into a guided "smart" campaign. It spends money in places you cannot see. This lesson skips that. It sets up the two campaigns most Shopify stores should start with: brand search (cheap, and it protects your name) and Performance Max fed by your products. Helix does not connect to Google Ads yet, so you follow these steps yourself.
 
 **Words you will see:** **Merchant Center** holds your product list (the **feed**). **Performance Max** (PMax) shows your products across Shopping, Search, YouTube and Gmail. **Conversion** means a purchase Google can count. **Impression share** is how often your ad shows when someone searches your name.
 
 **Step 1.** Make your Google Ads account without a campaign.
 
 1. Go to ads.google.com and click **Start now**.
-2. When it asks you to make a campaign, look for a small link near the bottom: **Switch to Expert Mode** or **Create an account without a campaign**.
+2. When it asks you to make a campaign, look for a small link near the bottom. It says **Switch to Expert Mode** or **Create an account without a campaign**.
 3. Click it.
 
 **Expected result:** You are creating an account, not a campaign.
@@ -375,11 +375,11 @@
 
 **Expected result:** A Performance Max campaign is connected to your products with a budget.
 
-**Step 11.** In the asset group, remove extra headlines, images, videos and sitelinks where Google lets you (click **Edit**, then the **x** next to each), and in campaign settings add your brand name under **Brand exclusions**. Click **Publish campaign**.
+**Step 11.** In the asset group, remove extra headlines, images, videos and sitelinks where Google lets you (click **Edit**, then the **x** next to each). In campaign settings, add your brand name under **Brand exclusions**. Click **Publish campaign**.
 
 **Expected result:** Performance Max runs mainly from your product feed and leaves brand searches to the brand campaign.
 
-**Step 12.** Leave both campaigns for 7 days, then compare spend, purchases and ROAS (sales for each $1 of ads) with your break-even ROAS from your profit setup.
+**Step 12.** Leave both campaigns for 7 days. Then compare spend, purchases and ROAS (sales for each $1 of ads) with your break-even ROAS from your profit setup.
 
 **Expected result:** You know whether each campaign is above or below break-even, and Lesson 8.8 shows what to change.
 
@@ -412,7 +412,7 @@
 
 **Expected result:** You know where to find wasted searches each week.
 
-**Watch out:** Google moves menus often. If you cannot find a page, use the search box at the top of Google Ads and type its name (for example "search terms").
+**Watch out:** Google moves menus often. If you cannot find a page, use the search box at the top of Google Ads. Type its name, for example "search terms".
 
 ## Self-check
 

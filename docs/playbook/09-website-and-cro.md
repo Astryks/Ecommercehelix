@@ -66,27 +66,27 @@
 
 **Why this matters:** Each page type has a short list of things shoppers expect. Missing items cost sales quietly. Above the fold means what people see before they scroll, and on mobile that space is tiny, so it must work hard.
 
-**Step 1.** Check your home page above the fold on your phone: a promo bar (for example "Free shipping over $80"), a simple menu, a banner with one message and a separate mobile image, one clear button, and a trust sign (star rating, customer count or press logo).
+**Step 1.** Check the top of your home page on your phone, before you scroll. You want a promo bar ("Free shipping over $80"), a simple menu, and a banner with one message and its own phone image. Add one clear button and a trust sign (star rating, customer count or press logo).
 
 **Expected result:** All five items are visible without scrolling on a phone.
 
-**Step 2.** Check below the fold on the home page: best sellers, categories, reasons to buy, reviews, founder story, press mentions and an email sign-up.
+**Step 2.** Check the lower part of the home page. Look for best sellers, categories, reasons to buy, reviews, your story, press and an email sign-up.
 
 **Expected result:** Each section is present, in roughly that order.
 
-**Step 3.** Check each product page above the fold: title, one line on what makes it different, star rating, price with an anchor (compare-at price or bundle value), an offer block ("Buy 2, save 10%"), size or colour picker, Add to cart, delivery estimate and trust badges (secure checkout, free returns).
+**Step 3.** Check the top of each product page. You want the title, one line on what makes it different, star rating and price with a compare-at price or bundle value. Add an offer ("Buy 2, save 10%"), size or colour picker, Add to cart, delivery estimate and trust badges (secure checkout, free returns).
 
 **Expected result:** All nine items show before scrolling on mobile.
 
-**Step 4.** Check below the fold on product pages: reasons to buy, how to use it, photo reviews, FAQs, a comparison, guarantees and "goes well with" products.
+**Step 4.** Check the lower part of product pages. Look for reasons to buy, how to use it, photo reviews, FAQs, a comparison, guarantees and "goes well with" products.
 
 **Expected result:** Shoppers who scroll find answers to every common doubt.
 
-**Step 5.** Check collection pages: multi-select filters with an easy reset, sort by best selling, badges (new, best seller, low stock) and quick add to cart.
+**Step 5.** Check collection pages. Look for filters you can combine with an easy reset, sort by best selling, badges (new, best seller, low stock) and quick add to cart.
 
 **Expected result:** Shoppers can narrow and buy from a collection in a few taps.
 
-**Step 6.** Check cart and checkout: a progress bar to free shipping or a gift, one upsell spot, express pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal), no surprise fees, and trust badges with policy links.
+**Step 6.** Check cart and checkout. You want a progress bar to free shipping or a gift, and one upsell spot. Add fast pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal), no surprise fees, and trust badges with policy links.
 
 **Expected result:** Checkout has no surprises and the fastest pay options.
 
@@ -95,7 +95,7 @@
 ## Lesson 9.3: Accessibility basics
 <!-- stage:convert -->
 
-**Why this matters:** Accessibility means everyone can use your store, including people with poor eyesight or who use a keyboard instead of a mouse. It is good for customers and often helps your Google ranking too.
+**Why this matters:** Accessibility means everyone can use your store. That includes people who cannot see well or who use a keyboard instead of a mouse. It is good for customers and often helps your Google ranking too.
 
 **Step 1.** Run a free contrast check (for example WebAIM's contrast checker) on your text and button colours.
 
@@ -126,11 +126,11 @@
 
 **Expected result:** Image files are smaller and pages load faster.
 
-**Step 3.** Remove apps and scripts you do not use, and lazy-load images and videos below the fold (they load only when people scroll to them).
+**Step 3.** Remove apps and scripts you do not use. Set images and videos lower on the page to load only when people scroll to them.
 
 **Expected result:** Fewer scripts run on each page.
 
-**Step 4.** Turn on bot protection (for example Shopify's bot settings or your CDN) to block bot traffic that skews reports and slows the site.
+**Step 4.** Turn on bot protection, like Shopify's bot settings or your CDN. It blocks fake visits that mess up reports and slow the site.
 
 **Expected result:** Sessions in your reports reflect real people.
 
@@ -178,7 +178,7 @@
 
 **Expected result:** You have chosen a page type that matches your ad.
 
-**Step 2.** Build it in a page builder app with sections in this order: hook headline, the problem, your solution, 3 to 5 reasons to buy, proof, the offer, FAQ, final button.
+**Step 2.** Build it in a page builder app with sections in this order: hook headline, the problem, your answer, 3 to 5 reasons to buy, proof, the offer, FAQ, final button.
 
 **Expected result:** The page is live with all eight sections.
 
@@ -199,9 +199,9 @@
 
 **Step 1.** Install a heatmap and session recording tool (for example Microsoft Clarity, free) and watch 20 recordings of mobile visitors.
 
-**Expected result:** You have noted rage clicks (repeated frustrated clicks), dead clicks (clicks on things that are not links) and how far people scroll.
+**Expected result:** You have noted rage clicks (many angry clicks), dead clicks (clicks on things that are not links) and how far people scroll.
 
-**Step 2.** In Shopify **Analytics > Reports > Conversion rate breakdown**, read the funnel: sessions, then added to cart, then reached checkout, then purchased.
+**Step 2.** In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the steps: sessions, added to cart, reached checkout, then bought.
 
 **Expected result:** You know which step loses the most people.
 
@@ -211,14 +211,14 @@
 
 **Expected result:** You know where your best visitors come from.
 
-**Step 4.** When conversion suddenly drops, check in this order: tracking, site errors, payment methods, stock, price changes, traffic source and competitor sales.
+**Step 4.** When conversion drops suddenly, check in this order: tracking, site errors and payment methods. Then stock, price changes, where visitors come from and rival sales.
 
 **Expected result:** You find the cause in minutes rather than days.
 
 ## Lesson 9.9: A/B testing
 <!-- stage:convert -->
 
-**Why this matters:** An A/B test shows two versions of a page to two halves of your visitors, to see which sells more. One change at a time, run to about 95% confidence, makes results trustworthy.
+**Why this matters:** An A/B test shows two versions of a page to two halves of your visitors. It shows which one sells more. One change at a time, run to about 95% confidence, makes results trustworthy.
 
 **Step 1.** Pick one thing to change, for example a cart drawer versus a cart page.
 
@@ -241,7 +241,7 @@
 
 **Why this matters:** AOV (average order value: sales divided by orders) decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if fewer people do not buy as a result.
 
-**Step 1.** Set tiers: free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.
+**Step 1.** Set levels: free shipping at one amount, a free gift at a higher amount, and a discount at a higher one again.
 
 **Expected result:** The cart shows shoppers what they unlock next.
 
@@ -262,7 +262,7 @@
 ## Lesson 9.11: Shipping psychology
 <!-- stage:convert -->
 
-**Why this matters:** How you handle shipping changes how much people buy. Surprise shipping costs at checkout are one of the top reasons people leave, while a well-placed free shipping amount makes many add one more item.
+**Why this matters:** How you handle shipping changes how much people buy. Surprise shipping costs at checkout are a top reason people leave. A free shipping amount set in the right place makes many people add one more item.
 
 **Step 1.** Set your free shipping amount.
 
@@ -303,7 +303,7 @@
 
 <!-- do:calendar -->
 
-**Step 2.** If you want to discount less often, run fewer sales, talk more about value, and keep the best offers for new customers only.
+**Step 2.** To discount less often, run fewer sales and talk more about value. Keep the best offers for new customers only.
 
 **Expected result:** Discounts become rarer without a sudden drop in sales.
 
@@ -335,7 +335,7 @@
 
 **Expected result:** Every search shows something useful.
 
-**Step 5.** Fill in structured product details (Shopify metafields) and, if relevant, set up wholesale prices behind a login and local currency for overseas (Module 15).
+**Step 5.** Fill in product details in Shopify metafields. If it fits your store, set up wholesale prices behind a login, and local currency for overseas (Module 15).
 
 **Expected result:** Filters work better, AI assistants can read your products, and special buyer groups are served.
 
@@ -344,7 +344,7 @@
 
 **Why this matters:** Apps and developers can speed you up or slow your store down for years. A few checks before you commit keep costs and speed under control.
 
-**Step 1.** Before adding any app, check its cost, how much it slows the site, its support and how hard it is to remove.
+**Step 1.** Before you add any app, check its cost and how much it slows the site. Also check its support and how hard it is to remove.
 
 **Expected result:** Each new app has passed four checks.
 
@@ -352,7 +352,7 @@
 
 **Expected result:** You hire on evidence.
 
-**Step 3.** Write a brief with the goal, a user story ("As a shopper, I want..."), the design, acceptance criteria (how you know it is done) and the deadline.
+**Step 3.** Write a brief with the goal and a user story ("As a shopper, I want..."). Add the design, how you know it is done, and the deadline.
 
 **Expected result:** The developer knows exactly what done looks like.
 
@@ -388,15 +388,15 @@
 
 **Why this matters:** A conversion rate that halves overnight is almost never because shoppers changed their minds. It is usually something broken, a change in who is visiting, or a tracking fault. Checking in the right order finds the cause in minutes instead of days.
 
-**Step 1.** Confirm the drop is real. Compare orders in Shopify (not ad platform numbers) for the last 3 days with the same days last week, and check sessions too.
+**Step 1.** Confirm the drop is real. Compare orders in Shopify (not ad platform numbers) for the last 3 days with the same days last week. Check sessions too.
 
 **Expected result:** You know whether orders really fell, or only reported conversions or sessions changed.
 
-**Step 2.** Buy something yourself on your phone and on a computer: add to cart, reach checkout, pay with a real card and a wallet (Apple Pay or Google Pay), then refund it.
+**Step 2.** Buy something yourself on your phone and on a computer. Add to cart, reach checkout and pay with a real card and a wallet (Apple Pay or Google Pay). Then refund it.
 
 **Expected result:** Every step works, or you have found the broken step (often a payment method, discount code or a new app).
 
-**Step 3.** Look at what changed in the last 7 days: theme edits, new or updated apps, prices, shipping rates, a sold-out best seller, or a new ad sending different visitors. Undo the most likely change first.
+**Step 3.** Look at what changed in the last 7 days. Think about theme edits, new or updated apps, prices and shipping rates. Also a sold-out best seller, or a new ad sending different visitors. Undo the most likely change first.
 
 **Expected result:** You have a short list of recent changes, and the most likely cause has been undone or fixed.
 
@@ -409,7 +409,7 @@
 ## Lesson 9.17: Your store gap check
 <!-- stage:convert -->
 
-**Why this matters:** A gap check compares your store with what buyers expect to see, so you fix the biggest gaps first instead of guessing.
+**Why this matters:** A gap check compares your store with what buyers expect to see. Then you fix the biggest gaps first instead of guessing.
 
 **Step 1.** Open **What to fix** in Helix and look at **Your store check**.
 
