@@ -10,7 +10,8 @@ import { getShopify } from "@/lib/shopify/service";
 import { getGoogleAds } from "@/lib/google-ads/service";
 import { getConnection } from "@/lib/meta/store";
 import { LostLink } from "@/components/dashboard/LostLink";
-import { connectShopifyCustomApp, importSheet } from "./actions";
+import { connectShopifyCustomApp, importSheet, unlinkSheetAction } from "./actions";
+import { getSheetLink } from "@/lib/sheets/sync";
 
 export const metadata = { title: "Connect your tools" };
 
@@ -20,7 +21,8 @@ const MSG: Record<string, [string, string]> = {
   shopify_shop: ["err", "That store address did not look right. Use yourstore.myshopify.com."],
   shopify_token: ["err", "That token did not look right. It starts with shpat_."],
   shopify_rejected: ["err", "Shopify did not accept that token. Check the store address and that the app can read orders."],
-  sheet: ["ok", "Your sheet is imported."],
+  sheet: ["ok", "Your sheet is imported. Helix will refresh it every morning."],
+  sheet_unlinked: ["ok", "Your sheet is unlinked. Days already imported stay."],
   sheet_url: ["err", "Paste the link to a Google Sheet (docs.google.com/spreadsheets/...)."],
   sheet_access: ["err", "Helix could not open that sheet. In Google Sheets press Share and pick “Anyone with the link can view”."],
   sheet_empty: ["err", "No rows came in. The sheet needs a date column (YYYY-MM-DD) and columns like revenue and orders."],
@@ -44,7 +46,7 @@ function Card({ title, status, children, connected }: { title: string; status: s
 export default async function ConnectTools({ searchParams }: PageProps<"/dashboard/connect">) {
   const sp = await searchParams;
   const u = await requireUser("/dashboard/connect");
-  const [acct, shop, ga, meta] = await Promise.all([getAccount(u.id), getShopify(u.id), getGoogleAds(u.id), getConnection(u.id)]);
+  const [acct, shop, ga, meta, sheet] = await Promise.all([getAccount(u.id), getShopify(u.id), getGoogleAds(u.id), getConnection(u.id), getSheetLink(u.id)]);
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const key = typeof sp.ok === "string" ? sp.ok : typeof sp.err === "string" ? sp.err : "";
   const flash = MSG[key];
@@ -93,12 +95,18 @@ export default async function ConnectTools({ searchParams }: PageProps<"/dashboa
           <p className="mt-1 text-sm text-slate-700">TikTok ad spend, every day. Until it is ready, add TikTok spend in your sheet, a CSV or by hand.</p>
           {tiktokOn && paid ? <a href="/api/tiktok/connect" className="btn-primary mt-3 text-sm"><Link2 className="h-4 w-4" aria-hidden /> Connect TikTok Ads</a> : <button disabled className="btn-ghost mt-3 cursor-not-allowed text-sm opacity-60">Connect TikTok Ads</button>}
         </Card>
-        <Card title="Google Sheets" status="Import any time">
+        <Card title="Google Sheets" status={sheet.url ? "Refreshes daily" : "Import any time"}>
           <p className="mt-1 text-sm text-slate-700">Already track your days in a sheet? Share it as “Anyone with the link can view” and paste the link. Columns: date, revenue, orders, sessions, adMeta, adGoogle, adTiktok, cogs, shipping, paymentFees.</p>
           <form action={importSheet} className="mt-3 flex gap-2">
             <input name="url" required type="url" placeholder="https://docs.google.com/spreadsheets/d/..." className="input flex-1 text-sm" aria-label="Google Sheet link" />
             <button className="btn-primary text-sm"><FileSpreadsheet className="h-4 w-4" aria-hidden /> Import</button>
           </form>
+          {sheet.url && (
+            <form action={unlinkSheetAction} className="mt-2 flex flex-wrap items-center gap-2 text-xs text-slate-600">
+              <span>Linked. Refreshes every morning{sheet.lastSyncAt ? `, last on ${sheet.lastSyncAt.slice(0, 10)}` : ""}{sheet.lastError ? " (last refresh failed: check the sheet is still shared)" : ""}.</span>
+              <button className="text-cyan-700 hover:underline">Unlink</button>
+            </form>
+          )}
         </Card>
         <Card title="CSV or by hand" status="Always works">
           <p className="mt-1 text-sm text-slate-700">No connection? Upload a CSV or type a day in. It takes about two minutes.</p>

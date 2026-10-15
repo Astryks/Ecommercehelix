@@ -2,10 +2,8 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { requireUser } from "@/lib/session";
-import { upsertDays } from "@/lib/repo";
-import { parseCsv } from "@/lib/scorecard";
 import { connectShopifyToken, syncShopify } from "@/lib/shopify/service";
-import { normaliseHeaders, sheetCsvUrl } from "@/lib/sheets/import";
+import { importSheetUrl, unlinkSheet } from "@/lib/sheets/sync";
 
 export async function connectShopifyCustomApp(form: FormData) {
   const u = await requireUser();
@@ -18,14 +16,15 @@ export async function connectShopifyCustomApp(form: FormData) {
 
 export async function importSheet(form: FormData) {
   const u = await requireUser();
-  const url = sheetCsvUrl(String(form.get("url") ?? ""));
-  if (!url) redirect("/dashboard/connect?err=sheet_url");
-  const res = await fetch(url, { cache: "no-store", redirect: "follow" }).catch(() => null);
-  const text = res?.ok ? await res.text() : "";
-  if (!text || text.length > 2_000_000 || /^\s*</.test(text)) redirect("/dashboard/connect?err=sheet_access");
-  const days = parseCsv(normaliseHeaders(text)).map((d) => ({ ...d, source: "csv" }));
-  if (!days.length) redirect("/dashboard/connect?err=sheet_empty");
-  await upsertDays(u.id, days);
+  const r = await importSheetUrl(u.id, String(form.get("url") ?? ""));
+  if (!r.ok) redirect(`/dashboard/connect?err=${r.error}`);
   revalidatePath("/dashboard", "layout");
-  redirect(`/dashboard/connect?ok=sheet&n=${days.length}`);
+  redirect(`/dashboard/connect?ok=sheet&n=${r.days}`);
+}
+
+export async function unlinkSheetAction() {
+  const u = await requireUser();
+  await unlinkSheet(u.id);
+  revalidatePath("/dashboard/connect");
+  redirect("/dashboard/connect?ok=sheet_unlinked");
 }
