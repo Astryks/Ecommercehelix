@@ -25,7 +25,7 @@ export function buildScorecardEmail(days: DayInput[], settings: Settings, monday
     "",
     a.contribution >= 0 ? "You kept money this week. Nice. Your next small step is waiting on Today." : "Costs were higher than sales this week. Open Numbers to see which day, then try the first step on Today.",
     "", `Open Helix: ${opts.baseUrl}/dashboard`,
-    "", "You get this email on Mondays. To stop it, reply and tell us, and we will switch it off.",
+    "", "You get this email on Mondays. Unsubscribe in one click from the link below, or in Settings, Emails.",
   ];
   return { subject: `Your week: ${money(a.contribution)} profit on ${money(a.netRevenue)} sales`, text: lines.join("\n") };
 }

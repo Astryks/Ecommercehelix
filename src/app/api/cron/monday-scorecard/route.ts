@@ -4,7 +4,10 @@ import { appUrl } from "@/lib/meta/config";
 import { logAudit } from "@/lib/meta/store";
 import { getDays, getSettings, listNudgeRecipients } from "@/lib/repo";
 import { buildScorecardEmail } from "@/lib/scorecard-email";
-import { mondayOf, sendPlainEmail } from "@/lib/community";
+import { mondayOf } from "@/lib/community";
+import { notify } from "@/lib/email/notify";
+import { scorecardHtmlEmail } from "@/lib/email/templates";
+import { getAccount } from "@/lib/repo";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 300;
@@ -20,8 +23,9 @@ export async function GET(req: NextRequest) {
     const [days, settings] = await Promise.all([getDays(u.userId), getSettings(u.userId)]);
     const mail = buildScorecardEmail(days, settings, monday, { name: u.name, baseUrl: appUrl(new URL(req.url).origin) });
     if (!mail || !u.email) { skipped++; continue; }
-    const ok = live ? await sendPlainEmail(u.email, mail.subject, mail.text) : false;
-    await logAudit(u.userId, { actor: "system", action: "email.scorecard", target: monday, outcome: live ? (ok ? "sent" : "failed") : "stub" });
+    // Branded email with one-click unsubscribe; respects the Monday scorecard preference; once per Monday.
+    const r = live ? await notify({ userId: u.userId, email: u.email, plan: (await getAccount(u.userId)).plan }, "scorecard", monday, (l) => scorecardHtmlEmail({ name: u.name, baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl }, mail.subject, mail.text)) : "stub";
+    await logAudit(u.userId, { actor: "system", action: "email.scorecard", target: monday, outcome: r });
     sent++;
   }
   return NextResponse.json({ live, sent, skipped });
