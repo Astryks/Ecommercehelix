@@ -23,7 +23,7 @@ export default function Terms() {
 
       <Sec title="Plans, prices and auto-renewal">
         <ul className="list-disc space-y-2 pl-6">
-          <li>Free costs nothing. Starter is A$29 a month and Growth is A$59 a month, in Australian dollars, charged in advance by Stripe. We are not registered for GST, so no GST is charged. Your bank may add its own foreign transaction or currency fees.</li>
+          <li>Free costs nothing. Starter is US$29 a month and Growth is US$59 a month, in US dollars, charged in advance by Stripe. We are not registered for GST, so no GST is charged. Your bank may add its own foreign transaction or currency fees.</li>
           <li><strong>Auto-renewal:</strong> a paid plan is a subscription. It renews automatically each month on the same date and your card is charged the plan price until you cancel.</li>
           <li>If a payment fails, Stripe will try again over the next few days. If it still fails, your account may move back to Free.</li>
           <li>Changing plans happens in <em>Manage billing</em> (the Stripe customer portal). Stripe adjusts the charge for the part of the month left (proration).</li>

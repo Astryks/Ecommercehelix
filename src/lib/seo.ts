@@ -48,9 +48,9 @@ export function softwareLd() {
     url: SITE_URL,
     publisher: { "@id": ORG_ID },
     offers: [
-      { "@type": "Offer", name: "Free", price: "0", priceCurrency: "AUD" },
-      { "@type": "Offer", name: "Starter", price: "29", priceCurrency: "AUD", description: "Per month" },
-      { "@type": "Offer", name: "Growth", price: "59", priceCurrency: "AUD", description: "Per month" },
+      { "@type": "Offer", name: "Free", price: "0", priceCurrency: "USD" },
+      { "@type": "Offer", name: "Starter", price: "29", priceCurrency: "USD", description: "Per month" },
+      { "@type": "Offer", name: "Growth", price: "59", priceCurrency: "USD", description: "Per month" },
     ],
   };
 }
@@ -67,7 +67,7 @@ export function serviceLd(s: { name: string; description: string; path: string; 
     description: s.description,
     url: abs(s.path),
     publisher: { "@id": ORG_ID },
-    offers: { "@type": "Offer", price: "0", priceCurrency: "AUD", name: "Free" },
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD", name: "Free" },
     audience: { "@type": "BusinessAudience", audienceType: "E-commerce business owners" },
   };
 }

@@ -110,7 +110,7 @@ export default function Home() {
             <h1 className="hero-h1 mt-5 text-5xl leading-[1.04] text-slate-900 sm:text-6xl lg:text-[4.25rem]">
               Grow your <span className="whitespace-nowrap">e-commerce</span> business <span className="grad-text">a little every day</span>
             </h1>
-            <p className="hero-lead lead mt-6 max-w-xl text-xl leading-8 text-slate-700">
+            <p className="hero-lead lead mt-10 max-w-xl text-xl leading-8 text-slate-700">
               Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can do the work for you when you approve. Small daily wins add up to a bigger, more profitable business.
             </p>
             <form action="/start" method="get" className="hero-form mt-8 flex max-w-xl flex-col gap-2 rounded-xl border border-slate-300 bg-white p-2 shadow-[0_1px_0_rgba(26,23,24,0.04)] sm:flex-row">

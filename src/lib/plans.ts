@@ -49,7 +49,7 @@ export const PLANS: Plan[] = [
     name: "Starter",
     price: 29,
     blurb: "Your growth plan, and Helix does the setup work it can.",
-    suits: "Stores from their first sales to about A$30k a month that want a clear weekly plan and run or plan to run Meta ads.",
+    suits: "Stores from their first sales to about US$30k a month that want a clear weekly plan and run or plan to run Meta ads.",
     highlight: true,
     features: [
       "Everything in Free",
@@ -83,7 +83,7 @@ export const PLANS: Plan[] = [
     name: "Growth",
     price: 59,
     blurb: "Grow, keep more customers, and run it like a business.",
-    suits: "Stores at about A$30k a month or more, or with a team or VA, focused on margin and repeat customers.",
+    suits: "Stores at about US$30k a month or more, or with a team or VA, focused on margin and repeat customers.",
     features: [
       "Everything in Starter",
       "The full course: Grow and Run goals (margin, returning customers, a $1M-a-year pace, scaling)",

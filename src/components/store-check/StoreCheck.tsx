@@ -62,7 +62,7 @@ export function StoreCheck({ runs, storeUrl, limit = 5, back = "/dashboard/insig
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold">Your store check</h2>
-          <p className="text-xs text-slate-500">{last.url} · checked {when(last.startedAt)} · plain page reads, no AI</p>
+          <p className="text-xs text-slate-500">{last.url} · checked {when(last.startedAt)} · plain page reads and plain rules</p>
         </div>
         {(canRecheck || !last.ok) && button(last.ok ? "Check again" : "Try again")}
       </div>

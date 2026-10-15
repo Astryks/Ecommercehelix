@@ -8,5 +8,5 @@ export function planForStatus(status: string, pricePlan: PlanId): PlanId {
   return KEEP.has(status) ? pricePlan : "free";
 }
 
-/** Prices are in Australian dollars (the Stripe account bills in AUD). */
-export const CURRENCY_LABEL = "A$";
+/** Prices are shown in US dollars. */
+export const CURRENCY_LABEL = "US$";

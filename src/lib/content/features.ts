@@ -119,7 +119,7 @@ export const FEATURES: Feature[] = [
     title: "E-commerce Store Audit & Conversion Rate Optimisation",
     description: "Paste your store link and Helix reads your home page and a product page, then lists the fixes most likely to make you money, quoting your own pages.",
     h1: "A store audit that turns into conversion fixes you can do today",
-    intro: "Paste your store link. Helix reads your home page, a product page and your cart with plain page reads, no AI, and lists the top fixes, quoting what it saw.",
+    intro: "Paste your store link. Helix reads your home page, a product page and your cart with plain page reads and plain rules you can see, and lists the top fixes, quoting what it saw.",
     sections: [
       { h2: "What the audit looks at", body: ["Page titles and descriptions, phone fit, page weight, product description length and photos, reviews near the price, shipping and returns messages, your free shipping amount against your typical price, express payments, email sign-up tools and tracking pixels seen in your page source."] },
       { h2: "From audit to action", body: ["Findings become tasks on your Today list, each with the reason and step-by-step instructions. A typical example: set a free-shipping amount a little above your average order."] },
