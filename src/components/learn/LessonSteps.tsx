@@ -49,7 +49,7 @@ function StepTips({ step, lesson }: { step: StepView; lesson: LessonView }) {
 }
 
 export function LessonSteps({ lesson, next = null }: { lesson: LessonView; slug?: string; next?: NextLesson }) {
-  const { done, loaded } = useLessonProgress();
+  const { done, loaded, syncError } = useLessonProgress();
   const [chosen, setChosen] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLElement>(null);
@@ -57,7 +57,9 @@ export function LessonSteps({ lesson, next = null }: { lesson: LessonView; slug?
   const isDone = (n: number) => done.has(stepKey(lesson.ref, n));
   const doneCount = lesson.steps.filter((s) => isDone(s.n)).length;
   const allDone = total > 0 && doneCount === total;
-  const firstOpen = loaded ? Math.max(0, lesson.steps.findIndex((s) => !isDone(s.n))) : 0;
+  // First open step; when every step is done, stay on the last one (not back to step 1).
+  const open1 = lesson.steps.findIndex((s) => !isDone(s.n));
+  const firstOpen = !loaded ? 0 : open1 >= 0 ? open1 : Math.max(0, total - 1);
   const cur = Math.min(chosen ?? firstOpen, Math.max(0, total - 1));
   const step = lesson.steps[cur];
   const last = cur === total - 1;
@@ -153,6 +155,7 @@ export function LessonSteps({ lesson, next = null }: { lesson: LessonView; slug?
             )}
           </div>
 
+          {syncError && <p className="mt-3 text-sm text-amber-800" role="status">We could not save your ticks to your account just now. They are saved on this device, and we will try again.</p>}
           {allDone && (
             <div className="mt-4 space-y-3" role="status" data-testid="lesson-done">
               <div className="helix-celebrate flex items-center gap-3 rounded-2xl bg-emerald-50 px-5 py-4 ring-1 ring-emerald-200">

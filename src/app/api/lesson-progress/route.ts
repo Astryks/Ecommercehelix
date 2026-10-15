@@ -2,6 +2,7 @@ import { type NextRequest } from "next/server";
 import { auth } from "@/auth";
 import { ensureUser, getLessonSteps, setLessonStep } from "@/lib/repo";
 import { STEP_KEY } from "@/lib/lesson-actions";
+import { createHash } from "node:crypto";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +16,9 @@ async function userId() {
 export async function GET() {
   const id = await userId();
   if (!id) return Response.json({ signedIn: false, done: [] });
-  return Response.json({ signedIn: true, done: await getLessonSteps(id) });
+  // A short hash (not the id) so each user gets their own local copy in the browser.
+  const user = createHash("sha256").update(String(id)).digest("hex").slice(0, 16);
+  return Response.json({ signedIn: true, user, done: await getLessonSteps(id) });
 }
 
 /** Body: { keys: string[], done: boolean }. Up to 50 step keys like "7.1#3" at once (so local progress can be merged on sign-in). */
