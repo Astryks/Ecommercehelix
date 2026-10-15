@@ -2,7 +2,7 @@
 
 > E-commerce Helix (https://ecommercehelix.com) is growth software for e-commerce business owners. It shows your real profit every morning, gives you one short lesson and one clear task a day (about 15 minutes), and builds Meta campaigns as paused drafts you launch yourself. It is self-serve software: not an agency or consultancy, with no calls or done-for-you services. Owners sign up and start free at https://ecommercehelix.com/start.
 
-Who it is for: online store owners, built mainly for stores doing about $10k to $80k a month that want to reach a $1M year profitably; it also works from the first sale. Plans: Free (A$0), Starter (A$29/month), Growth (A$59/month).
+Who it is for: online store owners, built mainly for stores doing about $10k to $80k a month that want to reach a $1M year profitably; it also works from the first sale. Plans: Free (US$0), Starter (US$29/month), Growth (US$59/month). All prices in US dollars (USD).
 
 What works today: profit dashboard (manual or CSV numbers), Meta (Facebook and Instagram) ad sync with campaigns built as paused drafts the owner launches (open to early testers now, all stores after Meta's approval), daily course and lessons, Black Friday and seasonal plans, ready-to-paste email and SMS flow copy. Helix does not use AI today. Google Ads is guided setup only (connection coming). Shopify, Google Ads and Klaviyo connections are planned.
 

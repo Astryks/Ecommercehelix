@@ -87,7 +87,7 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
             <form key={p.id} action="/api/checkout" method="post" className={`card flex flex-col p-6 ${current ? "ring-2 ring-cyan-500" : ""}`}>
               <input type="hidden" name="plan" value={p.id} />
               <h2 className="text-lg font-semibold">{p.name}</h2>
-              <p className="mt-1 text-3xl font-bold">{p.price === 0 ? "$0" : `${CURRENCY_LABEL}${p.price}`}<span className="text-sm font-medium text-slate-500">/mo</span></p>
+              <p className="mt-1 text-3xl font-bold">{`${CURRENCY_LABEL}${p.price}`}<span className="text-sm font-medium text-slate-500">/mo</span></p>
               <p className="mt-1 text-sm text-slate-600">{p.blurb}</p>
               <PlanDetails p={p} />
               <button disabled={current} className={`mt-6 ${current ? "btn-ghost" : "btn-primary"}`}>{current ? "Current plan" : p.price === 0 ? "Switch to Free" : billing.subscriptionId && billing.status !== "canceled" ? `Switch to ${p.name}` : `Upgrade to ${p.name}`}</button>
@@ -95,7 +95,7 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
           );
         })}
       </div>
-      <p className="mt-8 text-xs text-slate-500">Plan prices are in US dollars (USD). Moving to Free keeps your Meta connection and prep plans. Checkout: {stripe ? "Stripe" : "not configured (demo)"}. Paid plans renew automatically every month and your card is charged until you cancel. Cancel anytime, in one click, right here; you keep paid features to the end of the month you paid for. See our <a className="underline" href="/terms">Terms</a> and <a className="underline" href="/privacy">Privacy policy</a>.</p>
+      <p className="mt-8 text-xs text-slate-500">All prices in US dollars (USD). Moving to Free keeps your Meta connection and prep plans. Checkout: {stripe ? "Stripe" : "not configured (demo)"}. Paid plans renew automatically every month and your card is charged until you cancel. Cancel anytime, in one click, right here; you keep paid features to the end of the month you paid for. See our <a className="underline" href="/terms">Terms</a> and <a className="underline" href="/privacy">Privacy policy</a>.</p>
     </div>
   );
 }

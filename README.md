@@ -30,9 +30,9 @@ Small improvements to traffic, conversion, order value and margin multiply toget
 
 | Plan | Price | What you get |
 | --- | --- | --- |
-| Free | $0 | Profit dashboard (profit per order and month), daily numbers by hand or CSV, key metrics and marketing % guide, growth chart by day and week, the first course goals (profit dashboard, daily numbers, key numbers), every lesson to read, monthly site audit (top 3 fixes). |
-| Starter | $29/mo | Attract and Convert course goals, "Do it for me" with approval, Meta sync and paused-draft campaigns, seasonal and Black Friday prep plans with due dates, daily Insights and AI help, full dashboard history (month, year to date, 12 months). About $3 of AI usage included. |
-| Growth | $59/mo | The full course including Grow and Run goals (90-day plan, weekly meeting, playbooks, handing work to a team), Google Ads guided setup (connection coming soon), email and SMS flows set up after approval, weekly report. About $8 of AI usage included. |
+| Free | US$0 | Profit dashboard (profit per order and month), daily numbers by hand or CSV, key metrics and marketing % guide, growth chart by day and week, the first course goals (profit dashboard, daily numbers, key numbers), every lesson to read, monthly site audit (top 3 fixes). |
+| Starter | US$29/mo | Attract and Convert course goals, "Do it for me" with approval, Meta sync and paused-draft campaigns, seasonal and Black Friday prep plans with due dates, daily Insights and AI help, full dashboard history (month, year to date, 12 months). About $3 of AI usage included. |
+| Growth | US$59/mo | The full course including Grow and Run goals (90-day plan, weekly meeting, playbooks, handing work to a team), Google Ads guided setup (connection coming soon), email and SMS flows set up after approval, weekly report. About $8 of AI usage included. |
 | AI wallet | prepaid | Extra AI work billed at 2x provider cost. Stops at a $0 balance. Never auto-charges. |
 
 Ad spend always runs on your own ad accounts and your own card. Helix never resells media. Full unit economics: [docs/pricing.md](docs/pricing.md).

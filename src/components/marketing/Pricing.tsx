@@ -19,7 +19,7 @@ export function Pricing() {
               <h3 className="text-lg font-semibold">{p.name}</h3>
               <p className={`mt-1 text-sm ${p.highlight ? "text-slate-300" : "text-slate-600"}`}>{p.blurb}</p>
               <p className="mt-6 flex items-baseline gap-1">
-                <span className="font-display text-5xl font-semibold tracking-tight">{p.price === 0 ? "$0" : `US$${p.price}`}</span>
+                <span className="font-display text-5xl font-semibold tracking-tight">{`US$${p.price}`}</span>
                 <span className={p.highlight ? "text-slate-400" : "text-slate-500"}>/month</span>
               </p>
               <PlanDetails p={p} dark={!!p.highlight} />
@@ -33,7 +33,7 @@ export function Pricing() {
           ))}
         </div>
         <p className="mt-8 text-center text-lg font-semibold text-slate-900" data-testid="cancel-line">Cancel anytime, in one click. No lock-in.</p>
-        <p className="mt-3 text-sm text-slate-600">Prices in US dollars (USD). Paid plans are monthly subscriptions that renew automatically until you cancel. Cancel in Plan &amp; billing with one click; you keep paid features to the end of the month you paid for. See our <Link href="/terms" className="underline">Terms</Link>.</p>
+        <p className="mt-3 text-sm text-slate-600">All prices in US dollars (USD). Paid plans are monthly subscriptions that renew automatically until you cancel. Cancel in Plan &amp; billing with one click; you keep paid features to the end of the month you paid for. See our <Link href="/terms" className="underline">Terms</Link>.</p>
         <p className="mt-6 rounded-xl bg-slate-50 px-5 py-4 text-sm text-slate-700"><strong>Plain and honest.</strong> Helix is self-serve software. It guides you step by step, and the only things it builds in your accounts are ad campaigns as paused drafts (Meta today, Google Ads coming soon), and only after you press Approve in Helix. Nothing spends until you turn it on in the ad platform.</p>
         <div className="mt-4 grid gap-3 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-4">
           <p className="rounded-xl border border-slate-200 px-4 py-3"><strong className="text-slate-900">Official sign-in.</strong> You connect Meta, Shopify or Google on their own screens. Helix never sees your passwords.</p>
