@@ -11,10 +11,9 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 5. **Google Ads check-in:** once Google approves the developer token (https://console.cloud.google.com/google/ads-apis/overview?project=astryks), send it to me or set `GOOGLE_ADS_DEVELOPER_TOKEN` in Vercel Production, then connect your Google Ads account on /dashboard/connect and check the first sync.
 6. **GitHub Support request (old cached research commits):** ask GitHub Support to remove the old cached commits 79bd6e9, d93fb8b, ac984ea, 90a2d45 and d785342 from Astryks/Astryks PR #12. Ready text: `docs/github-support-pr12.md`; send it at https://support.github.com/contact ("Removing sensitive data").
 7. **Lesson videos** (when recorded): send the URLs and I add them (free YouTube picks per path step live in `src/lib/learn-path.json`).
-8. **Social v3:** say OK before the 50 new posts are scheduled.
-9. **Closed Facebook group for paying members:** the group is live and linked from Community. Check the join button once with a paid account, and remove members who cancel (by hand for now).
-10. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
-11. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
+8. **Closed Facebook group for paying members:** the group is live and linked from Community. Check the join button once with a paid account, and remove members who cancel (by hand for now).
+9. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
+10. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
 
 ## Independent coverage check (15 Oct 2026, late evening)
 - Re-checked every private research video and transcript one by one (1,115 + 386 = 1,501 items; private matrix kept outside the repo). Before: 1,110 covered, 23 partial, 3 gaps, 365 out of scope (intros, admin, partner listings, tool walkthroughs, coaching-only material). After: 1,136 covered, 0 partial, 0 gaps.
@@ -90,9 +89,9 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 
 **Social and community**
 - Old v1 Facebook scheduled posts: all 33 deleted.
-- Social v2 (`docs/social/v2`: schedule.csv, schedule.md, manifest.csv, contact sheet, statics, animated MP4s, all small enough for the repo; the source pack is also at `/workspace/reports/helix/social-v2` on the build box): post 1 published 15 Oct. 28 posts are scheduled daily at 19:00 Sydney on Instagram and Facebook through 12 Nov, with the time-sensitive Black Friday, Cyber Monday, Christmas and gift posts moved first. The remaining 21 (posts 26-28, 30-32, 37-50; 13 Nov to 2 Dec) get booked automatically once they fall inside Meta's 29-day scheduling limit.
+- Social v2 (`docs/social/v2`: schedule.csv, schedule.md, manifest.csv, contact sheet, statics, animated MP4s, all small enough for the repo; the source pack is also at `/workspace/reports/helix/social-v2` on the build box): post 1 published 15 Oct. 28 posts are scheduled daily at 19:00 Sydney on Instagram and Facebook through 12 Nov, with the time-sensitive Black Friday, Cyber Monday, Christmas and gift posts moved first. The remaining 21 (posts 26-28, 30-32, 37-50; 13 Nov to 2 Dec) are booked by Product's daily routine (10:17 AM Sydney), which books each post once it falls inside Meta's 29-day scheduling limit, at 19:00 Sydney on Instagram and Facebook.
 - Private Facebook group **E-commerce Helix Members**: https://www.facebook.com/groups/1313305624157403/ . Page is admin, membership questions set, cover added, 6 starter posts with the Welcome post pinned. `FACEBOOK_GROUP_URL` set in Vercel (Production and Preview). Assets in `docs/social/fb-group` (cover, posts.md, images).
-- Social v3 (`docs/social/v3`, 50 new posts, 17 animated): in progress. **Needs Sid's OK before anything is scheduled.**
+- Social v3 (`docs/social/v3`, 50 new posts, 17 animated): ready, no approval needed (Sid, 15 Oct). Product's daily routine books them after v2, starting 3 Dec, one a day at 19:00 Sydney on Instagram and Facebook.
 
 ## Simpler app, USD prices and the seasonal calendar (15 Oct 2026, Sydney)
 
@@ -405,7 +404,6 @@ Checked about 5:05 PM Sydney against production deploy dpl_GicRmVUwEaJzEQSK9akXJ
 | Meta connect with a real account | Needs Sid | Plus app review and business verification |
 | Crons | Works | meta-sync daily, site-audit (store re-check) daily and seasonal-nudges weekly in vercel.json. CRON_SECRET set; unauthenticated cron call returns 401 |
 | Store check | Works | 13 Oct 5:21 PM: signed in as the test user, ran onboarding with https://www.allbirds.com; /dashboard/insights showed 10 allbirds-specific findings (thin description, heavy pages, 50% markdown, no email sign-up tool; express pay and free shipping shown as strengths). No audit errors in runtime logs |
-| Legal pages | Needs Sid | Lawyer review |
 
 ## Stripe branding (13 Oct 2026)
 
