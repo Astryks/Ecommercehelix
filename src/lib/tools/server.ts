@@ -35,11 +35,14 @@ export async function saveInput(userId: string, kind: string, data: object) {
 
 /** Everything the planning tools show, computed fresh from synced data plus the few manual inputs. */
 export async function computeTools(userId: string, today = isoDay()) {
-  const [days, s, setup, stock, suppliers, products, acct, cashIn, storeIn, fcIn, meta, metaSnap, ga, gaSnap] = await Promise.all([
+  const [allDays, s, setup, stock, suppliers, products, acct, cashIn, storeIn, fcIn, meta, metaSnap, ga, gaSnap] = await Promise.all([
     getDays(userId), getSettings(userId), getProfitSetup(userId), getStock(userId), getSuppliers(userId), getProducts(userId), getAccount(userId),
     getInput<CashInputs>(userId, "cash", { startBalance: null, floor: 2000 }), getInput<StoreInputs>(userId, "store", { category: "other" }), getInput<ForecastInputs>(userId, "forecast", { yearGoal: null }),
     getConnection(userId), getSnapshot(userId), getGoogleAds(userId), getGoogleSnapshot(userId),
   ]);
+  // Until a store has its own numbers, the tools run on the example numbers (and say so), like the rest of Numbers.
+  const hasReal = allDays.some((d) => !d.example);
+  const days = hasReal ? allDays.filter((d) => !d.example) : allDays.map((d) => ({ ...d, example: false }));
   const fc = forecast(days, s, today, { yearGoal: fcIn.yearGoal });
   const buys = buyPlan(stock, suppliers, today, acct.country);
   const cash = cashIn.startBalance === null ? null : cashPlan(fc, buys, today, { startBalance: cashIn.startBalance, floor: cashIn.floor, fixedMonthly: s.fixedCostsMonthly });
@@ -60,7 +63,7 @@ export async function computeTools(userId: string, today = isoDay()) {
   };
   const breakEvenCpa = wf ? wf.beforeMarketing : null;
   const check = adCheck(days, s, today, sig, breakEvenCpa);
-  return { today, settings: s, forecast: fc, buys, cash, cashIn, customers, ncc, products: prod, targets: tg, bench, review, adCheck: check, example: days.some((d) => d.example), fcIn, storeIn };
+  return { today, settings: s, forecast: fc, buys, cash, cashIn, customers, ncc, products: prod, targets: tg, bench, review, adCheck: check, example: !hasReal && allDays.length > 0, fcIn, storeIn };
 }
 export type Tools = Awaited<ReturnType<typeof computeTools>>;
 
