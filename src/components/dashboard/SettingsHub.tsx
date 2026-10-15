@@ -3,7 +3,8 @@ import { Boxes, Briefcase, CalendarDays, CreditCard, FileText, Inbox, LifeBuoy, 
 
 const ITEMS = [
   { href: "/dashboard/approvals", label: "Waiting for your OK", note: "Things Helix prepared. Nothing happens until you approve.", icon: Inbox },
-  { href: "/dashboard/integrations", label: "Connections", note: "Shopify, Meta and Google.", icon: Link2 },
+  { href: "/dashboard/connect", label: "Connect your tools", note: "Shopify, Meta, Google, TikTok, Sheets or CSV.", icon: Link2 },
+  { href: "/dashboard/integrations", label: "Connection details", note: "Sync, accounts and activity log.", icon: Link2 },
   { href: "/dashboard/billing", label: "Plan and billing", note: "Your plan, card and invoices.", icon: CreditCard },
   { href: "/dashboard/campaigns", label: "Your ads", note: "Ad results and paused drafts.", icon: Megaphone },
   { href: "/dashboard/insights", label: "What to fix", note: "Your store check and fixes.", icon: Lightbulb },

@@ -30,6 +30,17 @@ export default async function NumbersPage({ searchParams }: PageProps<"/dashboar
         <h1 className="text-3xl font-bold tracking-tight">Numbers</h1>
         <p className="mt-1 text-slate-700">Your sales each day, and what you kept after costs.{example ? " These are example numbers until you add your own." : ""}</p>
       </header>
+      <section aria-label="Auto-fill" className="card flex flex-wrap items-center gap-2 p-4" data-testid="sync-bar">
+        <span className="text-sm font-semibold text-slate-900">Fills in by itself:</span>
+        {([["Shopify", Boolean(shop)], ["Meta", Boolean(meta)], ["Google", Boolean(ga?.customerId)], ["TikTok", false]] as [string, boolean][]).map(([n, on]) => (
+          <span key={n} className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${on ? "bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200" : "bg-slate-100 text-slate-500"}`}>{on ? "✓ " : ""}{n}</span>
+        ))}
+        {shop?.lastSyncAt && <span className="text-xs text-slate-500">Last sync {new Date(shop.lastSyncAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short", timeZone: "Australia/Sydney" })}</span>}
+        <span className="ml-auto flex gap-2">
+          <Link href="/dashboard/numbers/table" className="btn-ghost text-sm">Daily table</Link>
+          <Link href="/dashboard/connect" className="btn-primary text-sm">{shop && meta ? "Manage tools" : "Connect your tools"}</Link>
+        </span>
+      </section>
       <section aria-label="Last 7 days" className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[["Sales, last 7 days", money(wk.revenue)], ["Profit, last 7 days", money(wk.profit)], ["Orders", String(wk.orders)], ["Margin", `${wk.marginPct.toFixed(1)}%`]].map(([k, v]) => (
           <div key={k} className="card p-4"><p className="text-xs text-slate-600">{k}</p><p className="text-2xl font-bold tabular-nums text-slate-900">{v}</p></div>
@@ -57,7 +68,7 @@ export default async function NumbersPage({ searchParams }: PageProps<"/dashboar
         <p className="mt-1 text-sm text-slate-700">No connection yet? Type a day in, or upload a CSV. It takes about two minutes.</p>
         <div className="mt-3 flex flex-wrap gap-2">
           <Link href="/dashboard/scorecard" className="btn-ghost text-sm">Type in a day</Link>
-          <Link href="/dashboard/integrations" className="btn-ghost text-sm">Connect Shopify, Meta or Google</Link>
+          <Link href="/dashboard/connect" className="btn-ghost text-sm">Connect your tools</Link>
         </div>
       </section>
       <section className="card p-5">

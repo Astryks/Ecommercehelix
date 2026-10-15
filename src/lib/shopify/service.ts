@@ -3,7 +3,7 @@ import { decrypt, encrypt, loadKey } from "../crypto";
 import { hasDb, prisma } from "../db";
 import { setShopifyProducts, setShopifySales, setShopifyStock } from "../repo";
 import { logAudit } from "../meta/store";
-import { aggregateOrders, ensureUninstallWebhookWith, SHOPIFY_API_VERSION, SHOPIFY_SCOPES, shopifyMode, type ShopifyOrder } from "./config";
+import { aggregateOrders, normaliseShop, ensureUninstallWebhookWith, SHOPIFY_API_VERSION, SHOPIFY_SCOPES, shopifyMode, type ShopifyOrder } from "./config";
 
 type Actor = "user" | "cron" | "shopify";
 const aad = (userId: string) => `shopify:${userId}`;
@@ -219,4 +219,26 @@ export async function deleteShopifyData(userId: string, actor: Actor, reason: st
 export async function usersForShop(shop: string): Promise<string[]> {
   if (!hasDb) return [...mem.values()].filter((c) => c.shop === shop).map((c) => c.userId);
   return (await prisma.shopifyConnection.findMany({ where: { shop }, select: { userId: true } })).map((r) => r.userId);
+}
+
+/**
+ * Custom app route: the store owner creates a custom app in Shopify admin (read_orders, read_products,
+ * read_inventory) and pastes its Admin API access token. Checked with one read call, then stored encrypted.
+ */
+export async function connectShopifyToken(userId: string, shopInput: string, token: string): Promise<{ ok: boolean; error?: string }> {
+  const shop = normaliseShop(shopInput);
+  if (!shop) return { ok: false, error: "shop" };
+  if (!/^shpat_[A-Za-z0-9]{20,}$/.test(token.trim())) return { ok: false, error: "token" };
+  const res = await fetch(`https://${shop}/admin/api/${SHOPIFY_API_VERSION}/graphql.json`, { method: "POST", headers: { "content-type": "application/json", "x-shopify-access-token": token.trim() }, body: JSON.stringify({ query: "{ shop { name currencyCode } }" }), cache: "no-store" }).catch(() => null);
+  const j = res ? ((await res.json().catch(() => ({}))) as { data?: { shop?: { name: string; currencyCode: string } } }) : {};
+  if (!res?.ok || !j.data?.shop) {
+    await logAudit(userId, { actor: "user", action: "shopify.connect", target: shop, outcome: "error", httpStatus: res?.status, detail: { via: "custom-app" } });
+    return { ok: false, error: "rejected" };
+  }
+  const tokenEnc = encrypt(JSON.stringify({ access: token.trim() } satisfies Tokens), loadKey(), aad(userId));
+  const row = { shop, tokenEnc, scopes: SHOPIFY_SCOPES.join(","), status: "active", lastSyncError: null, shopName: j.data.shop.name, currency: j.data.shop.currencyCode };
+  if (!hasDb) mem.set(userId, { userId, ...row, scopes: SHOPIFY_SCOPES, productCount: 0, lastSyncAt: null });
+  else await prisma.shopifyConnection.upsert({ where: { userId }, create: { userId, ...row }, update: row });
+  await logAudit(userId, { actor: "user", action: "shopify.connect", target: shop, outcome: "ok", detail: { via: "custom-app" } });
+  return { ok: true };
 }
