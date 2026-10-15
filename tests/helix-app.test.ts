@@ -59,3 +59,23 @@ describe("monday scorecard email", () => {
     expect(m.text).toContain("up 200%");
   });
 });
+
+import { planToday } from "@/lib/today-tasks";
+describe("planToday", () => {
+  const t = (id: string, kind: TodayTask["kind"] = "day"): TodayTask => ({ id, title: id, why: "w", minutes: 10, guideHref: "/x", taskId: id, kind });
+  it("groups into Morning check, Main focus, Before you finish, 5 to 7 tasks, season tagged first in main", () => {
+    const p = planToday({ today: "2026-10-15", numbersMissingYesterday: true, season: [t("season-a", "season")], day: t("day-1"), insight: t("insight-x", "insight"), done: new Set(), hasAds: true, seasonTag: "Black Friday" });
+    expect(p.blocks.map((b) => b.title)).toEqual(["Morning check", "Main focus", "Before you finish"]);
+    expect(p.total).toBeGreaterThanOrEqual(5); expect(p.total).toBeLessThanOrEqual(7);
+    expect(p.blocks[1].tasks[0].tag).toBe("Black Friday");
+    expect(p.blocks[0].tasks[0].taskId).toBe("numbers-2026-10-15");
+  });
+  it("keeps done tasks with a tick and fills the bar", () => {
+    const p = planToday({ today: "2026-10-15", numbersMissingYesterday: false, season: [], day: t("day-1"), insight: null, done: new Set(["numbers-2026-10-15", "routine-win-2026-10-15"]) });
+    expect(p.done).toBe(2); expect(p.total).toBe(4); expect(p.pct).toBe(50);
+  });
+  it("never goes over the maximum", () => {
+    const p = planToday({ today: "2026-10-15", numbersMissingYesterday: true, season: [t("season-a", "season")], day: t("day-1"), insight: t("insight-x", "insight"), done: new Set(), hasAds: true }, 5);
+    expect(p.total).toBe(5);
+  });
+});

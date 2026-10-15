@@ -23,7 +23,7 @@ import { createPausedGoogleCampaign, getGoogleAds } from "@/lib/google-ads/servi
 import { campaignParams, draftNames, starterCopy } from "@/lib/meta/drafts";
 import { logAudit } from "@/lib/meta/store";
 
-const VALID_ID = /^(numbers-\d{4}-\d{2}-\d{2}|day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
+const VALID_ID = /^(routine-[a-z]+-\d{4}-\d{2}-\d{2}|numbers-\d{4}-\d{2}-\d{2}|day-\d{1,3}|start-\d{1,3}|insight-[a-z-]+|flow-[a-z-]+|build-[a-z-]+)$/;
 
 export async function markDone(form: FormData) {
   const u = await requireUser();

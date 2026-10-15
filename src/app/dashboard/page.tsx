@@ -45,7 +45,9 @@ import { MilestoneToast } from "@/components/dashboard/MilestoneToast";
 import { achievementsForUser } from "@/lib/achievements-server";
 import { nextToCelebrate } from "@/lib/achievements";
 import { mondayOf, seenAchievements } from "@/lib/community";
-import { pickTodayTasks, type TodayTask } from "@/lib/today-tasks";
+import { planToday, type TodayTask } from "@/lib/today-tasks";
+import { siteContent } from "@/lib/site-content";
+import { getShopify } from "@/lib/shopify/service";
 import { markMilestonesSeen, markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
@@ -110,9 +112,11 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const wf = setupRow ? waterfall(setupRow) : null;
   const recent = rawDays.filter((d) => !d.example && d.date >= addDays(today, -28));
   const dailyUnits = recent.length ? recent.reduce((a, d) => a + d.units, 0) / 28 : 0;
+  const rawSeason = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl });
   const seasonTasks: TodayTask[] = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl })
     .map((t) => ({ id: t.taskId, title: (t.catchUp ? "Catch up: " : "") + t.title, why: `${t.why} ${t.steps[0]}`, minutes: 15, guideHref: t.guideHref, taskId: t.taskId, kind: "season" as const }));
-  const todayTasks = pickTodayTasks({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done });
+  const hasAds = recent.some((d) => d.adMeta + d.adGoogle + d.adTiktok > 0);
+  const todayPlan = planToday({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done, hasAds, seasonTag: rawSeason[0]?.eventName, tip: (() => { const c = siteContent(today, acct.country); return { text: c.tip.text, href: c.tip.cta.href, label: c.tip.cta.label }; })() });
   const [earned, seen] = await Promise.all([achievementsForUser(u.id), seenAchievements(u.id)]);
   const celebrate = nextToCelebrate(earned, seen);
   const unseen = earned.filter((a) => !seen.has(a.key)).map((a) => a.key);
@@ -121,10 +125,17 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
     ...seasonTasks.slice(0, 1).map((t) => ({ label: t.title, href: t.guideHref, done: false })),
     { label: "Add your numbers each day (2 minutes)", href: "/dashboard/numbers", done: Boolean(yRow) },
   ];
+  const shopConn = await getShopify(u.id);
   const tasksBox = (
     <>
+      {!shopConn && (
+        <section className="mb-5 flex flex-wrap items-center gap-3 rounded-xl border border-[#5A50D6]/30 bg-[#5A50D6]/5 p-4" data-testid="connect-prompt">
+          <p className="flex-1 text-sm text-slate-800"><span className="font-hand text-lg text-[#5A50D6]">Save time every day.</span> Connect Shopify and your ad accounts, and your daily numbers fill in by themselves.</p>
+          <Link href="/dashboard/connect" className="btn-primary text-sm">Connect your tools</Link>
+        </section>
+      )}
       {celebrate && <MilestoneToast title={celebrate.title} note={celebrate.note} keys={unseen} markSeen={markMilestonesSeen} />}
-      <TodayTasks tasks={todayTasks} doneAction={markDone} doAction={doItForMe} />
+      <TodayTasks plan={todayPlan} doneAction={markDone} doAction={doItForMe} />
       <div className="mt-5"><WeekPlan items={weekItems} weekOf={prettyDay(mondayOf(today))} /></div>
     </>
   );
