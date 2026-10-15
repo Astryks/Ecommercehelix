@@ -12,6 +12,7 @@ export type NumbersDay = {
   adSpend: number;
   adMeta: number;
   adGoogle: number;
+  adTiktok: number;
   shipping: number;
   fees: number;
   other: number;
@@ -36,7 +37,7 @@ export function numbersDays(days: DayInput[], settings: Settings, lastDay: strin
     const date = addDays(lastDay, -k);
     const raw = by.get(date);
     if (!raw) {
-      out.push({ date, hasData: false, revenue: 0, orders: 0, cogs: 0, cogsEstimated: false, adSpend: 0, adMeta: 0, adGoogle: 0, shipping: 0, fees: 0, other: 0, profit: 0, marginPct: 0, roas: 0, merPct: 0, costPerOrder: 0, breakEvenRoas: 0, fromShopify: false });
+      out.push({ date, hasData: false, revenue: 0, orders: 0, cogs: 0, cogsEstimated: false, adSpend: 0, adMeta: 0, adGoogle: 0, adTiktok: 0, shipping: 0, fees: 0, other: 0, profit: 0, marginPct: 0, roas: 0, merPct: 0, costPerOrder: 0, breakEvenRoas: 0, fromShopify: false });
       continue;
     }
     const cogsEstimated = !raw.cogs && unitCost > 0 && raw.units > 0;
@@ -45,7 +46,7 @@ export function numbersDays(days: DayInput[], settings: Settings, lastDay: strin
     out.push({
       date, hasData: true,
       revenue: x.netRevenue, orders: d.orders, cogs: d.cogs, cogsEstimated,
-      adSpend: x.adSpend, adMeta: d.adMeta, adGoogle: d.adGoogle,
+      adSpend: x.adSpend, adMeta: d.adMeta, adGoogle: d.adGoogle, adTiktok: d.adTiktok,
       shipping: d.shipping, fees: d.paymentFees, other: d.otherMarketing,
       profit: x.contribution, marginPct: x.contributionPct,
       roas: x.adSpend ? x.netRevenue / x.adSpend : 0, merPct: x.merPct,

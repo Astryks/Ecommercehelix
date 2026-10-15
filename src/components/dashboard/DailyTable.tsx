@@ -1,16 +1,16 @@
 "use client";
-import { useRef, useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CalendarPlus, Check, FileDown, Link2, Loader2, Upload, X } from "lucide-react";
-import { SOURCE_LABEL, detectSource, guessMapping, parseTable, rollUp, type ImportDay, type Source, type Target } from "@/lib/csv-import";
+import { SOURCE_LABEL, detectSource, guessMapping, parseTable, rollUpReport, type ImportDay, type Source, type Target } from "@/lib/csv-import";
 
 type Raw = Record<string, number | string>;
 type Calc = { date: string; profit: number; roas: number; merPct: number; convPct: number; aov: number };
 type Actions = {
   addDay: (date: string) => Promise<{ ok: boolean; error?: string }>;
   saveCell: (date: string, field: string, value: number) => Promise<{ ok: boolean }>;
-  importDays: (rows: ImportDay[]) => Promise<{ ok: boolean; added: number; updated: number; error?: string }>;
+  importDays: (rows: ImportDay[]) => Promise<{ ok: boolean; added: number; updated: number; clearedExamples?: boolean; error?: string }>;
 };
 
 /** Raw inputs you can edit, then calculated columns (read-only). */
@@ -28,7 +28,11 @@ const fmtCalc = (k: keyof Calc, v: number) => (k === "profit" || k === "aov" ? m
 // Local date (not UTC), so "today" is right in every time zone.
 const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 
-function Cell({ date, field, value, isMoney, save }: { date: string; field: string; value: number; isMoney: boolean; save: Actions["saveCell"] }) {
+/** Saves still running, so leaving the page can warn instead of losing an edit. */
+let inFlight = 0;
+if (typeof window !== "undefined") window.addEventListener("beforeunload", (e) => { if (inFlight > 0) e.preventDefault(); });
+
+function Cell({ date, field, label, value, isMoney, save }: { date: string; field: string; label: string; value: number; isMoney: boolean; save: Actions["saveCell"] }) {
   const [v, setV] = useState(String(value || ""));
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const last = useRef(String(value || ""));
@@ -38,21 +42,28 @@ function Cell({ date, field, value, isMoney, save }: { date: string; field: stri
     if (v !== "" && !Number.isFinite(n)) { setState("error"); return; }
     setState("saving");
     let ok = false;
-    try { ok = (await save(date, field, n || 0)).ok; } catch { ok = false; }
+    inFlight++;
+    try { ok = (await save(date, field, n || 0)).ok; } catch { ok = false; } finally { inFlight--; }
     if (!ok) { setState("error"); return; } // keep last as is, so the next blur tries again
     last.current = v;
     setState("saved");
     setTimeout(() => setState("idle"), 1200);
   };
+  // Save even if the cell goes away before it loses focus (for example a refresh after another save).
+  const latest = useRef({ v, commit });
+  useEffect(() => { latest.current = { v, commit }; });
+  useEffect(() => () => { if (latest.current.v !== last.current) void latest.current.commit(); }, []);
   return (
     <td className="relative px-1 py-1">
-      <label className="sr-only" htmlFor={`${date}-${field}`}>{field} on {date}</label>
+      <label className="sr-only" htmlFor={`${date}-${field}`}>{label} on {date}</label>
       <span className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-slate-400">{isMoney ? "$" : ""}</span>
       <input id={`${date}-${field}`} inputMode="decimal" value={v} placeholder="0" onChange={(e) => setV(e.target.value.replace(/[^0-9.]/g, ""))} onBlur={commit}
         onKeyDown={(e) => { if (e.key === "Enter") (e.target as HTMLInputElement).blur(); }}
         className={`w-24 rounded-md border border-transparent bg-transparent py-1 pr-2 text-right tabular-nums hover:border-slate-300 focus:border-cyan-500 focus:bg-white focus:outline-none ${isMoney ? "pl-5" : "pl-2"} ${state === "saved" ? "bg-emerald-50" : ""} ${state === "error" ? "!border-rose-400 bg-rose-50" : ""}`}
         aria-invalid={state === "error" || undefined} title={state === "error" ? "Not saved. Check the number and try again." : undefined} />
       {state === "saving" && <Loader2 className="absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 animate-spin text-slate-400" aria-hidden />}
+      {state === "saved" && <Check className="absolute right-0 top-1/2 h-3 w-3 -translate-y-1/2 text-emerald-600" aria-hidden />}
+      <span className="sr-only" role="status">{state === "saving" ? "Saving" : state === "saved" ? "Saved" : state === "error" ? "Not saved" : ""}</span>
     </td>
   );
 }
@@ -74,7 +85,8 @@ function Importer({ onClose, run }: { onClose: () => void; run: Actions["importD
     setMap(guessMapping(t[0], source));
     setMsg("");
   };
-  const days = file ? rollUp(file.rows, map, file.source, us) : [];
+  const report = file ? rollUpReport(file.rows, map, file.source, us) : { days: [], skipped: [] };
+  const days = report.days;
   const cols = [...new Set(map.filter((m) => m && m !== "date"))].map((m) => (m === "orderId" ? "orders" : m));
   return (
     <section className="card space-y-4 p-5" aria-label="Upload CSV" data-testid="import-panel">
@@ -117,11 +129,21 @@ function Importer({ onClose, run }: { onClose: () => void; run: Actions["importD
               </div>
             ) : <p className="mt-1 text-sm text-rose-700">Pick which column holds the date.</p>}
           </div>
+          {map.includes("date") && report.skipped.length > 0 && (
+            <div className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900 ring-1 ring-amber-200" role="status" data-testid="import-skipped">
+              <p className="font-semibold">{report.skipped.length} {report.skipped.length === 1 ? "row" : "rows"} will be left out</p>
+              <ul className="mt-1 list-disc space-y-0.5 pl-5 text-xs">
+                {report.skipped.slice(0, 5).map((x) => <li key={x.line}>Row {x.line}: {x.reason}. ({x.text})</li>)}
+                {report.skipped.length > 5 && <li>and {report.skipped.length - 5} more</li>}
+              </ul>
+              <p className="mt-1 text-xs">Fix those rows in your file and upload it again, or import the rest now.</p>
+            </div>
+          )}
           <p className="text-xs text-slate-500">Helix shows money in USD. If your file is in another currency, convert it first (or set your store currency to USD) so profit adds up.</p>
           <div className="flex flex-wrap gap-2">
             <button disabled={pending || !days.length} className="btn-primary text-sm disabled:opacity-50" onClick={() => start(async () => {
               const r = await run(days);
-              setMsg(r.ok ? `Imported: ${r.added} new days, ${r.updated} updated.` : r.error ?? "Import failed.");
+              setMsg(r.ok ? `Imported: ${r.added} new days, ${r.updated} updated.${r.clearedExamples ? " The example numbers were removed, so you only see your own." : ""}` : r.error ?? "Import failed.");
               if (r.ok) { setFile(null); router.refresh(); }
             })}>{pending ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden /> : <Check className="h-4 w-4" aria-hidden />} Import {days.length} days</button>
             <button className="btn-ghost text-sm" onClick={() => setFile(null)}>Choose another file</button>
@@ -192,8 +214,8 @@ export function DailyTable({ raw, calc, actions }: { raw: Raw[]; calc: Calc[]; a
                 return (
                   <tr key={String(r.date)} className="border-t border-slate-100 bg-white">
                     <th scope="row" className="sticky left-0 z-10 whitespace-nowrap bg-white px-3 py-1.5 text-left font-medium text-slate-900 shadow-[1px_0_0_#dedcd4]">{String(r.date)}</th>
-                    {EDIT.map(([k, , m]) => <Cell key={`${k}-${Number(r[k]) || 0}`} date={String(r.date)} field={k} value={Number(r[k]) || 0} isMoney={m} save={actions.saveCell} />)}
-                    {CALC.map(([k], i) => <td key={k} className={`whitespace-nowrap bg-slate-50 px-3 py-1.5 text-slate-700 ${i === 0 ? "border-l border-slate-300 font-semibold " + ((c?.profit ?? 0) < 0 ? "text-rose-700" : "text-emerald-700") : ""}`}>{c ? fmtCalc(k, Number(c[k])) : "-"}</td>)}
+                    {EDIT.map(([k, h, m]) => <Cell key={`${k}-${Number(r[k]) || 0}`} date={String(r.date)} field={k} label={h} value={Number(r[k]) || 0} isMoney={m} save={actions.saveCell} />)}
+                    {CALC.map(([k], i) => <td key={k} className={`whitespace-nowrap bg-slate-50 px-3 py-1.5 text-slate-700 ${i === 0 ? "border-l border-slate-300 font-semibold " + ((c?.profit ?? 0) < 0 ? "text-rose-700" : "text-emerald-700") : ""}`}>{c && !(k === "convPct" && !Number(r.sessions)) ? fmtCalc(k, Number(c[k])) : "-"}</td>)}
                   </tr>
                 );
               })}

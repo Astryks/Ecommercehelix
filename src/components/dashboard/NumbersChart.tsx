@@ -54,7 +54,7 @@ function DayPanel({ d, shopify, meta, google }: { d: NumbersDay; shopify: boolea
     ["Sales", m2(d.revenue), d.fromShopify ? "from Shopify" : shopify ? undefined : "typed in"],
     ["Orders", String(d.orders)],
     ["Cost of goods", "-" + m2(d.cogs), d.cogsEstimated ? "your unit cost x units sold" : undefined],
-    ["Ad spend", "-" + m2(d.adSpend), [d.adMeta ? `Meta ${m2(d.adMeta)}` : "", d.adGoogle ? `Google ${m2(d.adGoogle)}` : ""].filter(Boolean).join(", ") || undefined],
+    ["Ad spend", "-" + m2(d.adSpend), [d.adMeta ? `Meta ${m2(d.adMeta)}` : "", d.adGoogle ? `Google ${m2(d.adGoogle)}` : "", d.adTiktok ? `TikTok ${m2(d.adTiktok)}` : ""].filter(Boolean).join(", ") || undefined],
     ["Shipping", "-" + m2(d.shipping)],
     ["Fees", "-" + m2(d.fees)],
     ["Other costs", "-" + m2(d.other)],
