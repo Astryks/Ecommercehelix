@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CheckCircle2, Circle, CircleDot, ListChecks, PlayCircle, Video } from "lucide-react";
+import { lessonStateFn } from "@/lib/lesson-done";
 import { requireUser } from "@/lib/session";
 import { getCompletions, getLessonSteps } from "@/lib/repo";
 import { listModules } from "@/lib/learn";
-import { lessonTaskId } from "@/lib/lesson-actions";
 import { STAGE_INFO } from "@/lib/stages";
 import { FIRST_AD_BEFORE, FIRST_AD_ORDER, PATH, pathStepById } from "@/lib/learn-path";
 
@@ -24,10 +24,10 @@ export default async function PathStepPage({ params }: { params: Promise<{ step:
   const u = await requireUser(`/dashboard/learn/path/${step}`);
   const [comps, steps] = await Promise.all([getCompletions(u.id), getLessonSteps(u.id)]);
   const done = new Set(comps.map((c) => c.taskId));
-  const started = new Set(steps.map((k) => k.split("#")[0]));
   const byRef = new Map(listModules().flatMap((m) => m.lessons.filter((l) => l.ref).map((l) => [l.ref!, { ...l, module: m }] as const)));
   const lessons = p.refs.map((r) => byRef.get(r)).filter((l) => l !== undefined);
-  const state = (ref: string) => (done.has(lessonTaskId(ref)) ? "done" : started.has(ref) ? "started" : "new");
+  const lessonState = lessonStateFn(done, steps);
+  const state = (ref: string) => lessonState(ref, byRef.get(ref)?.stepNs);
   const d = lessons.filter((l) => state(l.ref!) === "done").length;
   const next = lessons.find((l) => state(l.ref!) !== "done");
   const prev = PATH.find((x) => x.n === p.n - 1);

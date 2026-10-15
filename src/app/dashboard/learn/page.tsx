@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { CheckCircle2, ChevronDown, Circle, CircleDot, Clock, FileText, Lock, MapPin, PlayCircle, Sparkles } from "lucide-react";
+import { lessonStateFn } from "@/lib/lesson-done";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getLessonSteps } from "@/lib/repo";
 import { listModules } from "@/lib/learn";
-import { lessonTaskId } from "@/lib/lesson-actions";
 import { STAGE_INFO, STAGE_ORDER } from "@/lib/stages";
 import { PATH } from "@/lib/learn-path";
 import { siteContent } from "@/lib/site-content";
@@ -15,10 +15,11 @@ export default async function DashboardLearn() {
   const u = await requireUser("/dashboard/learn");
   const [comps, steps, acct] = await Promise.all([getCompletions(u.id), getLessonSteps(u.id), getAccount(u.id)]);
   const done = new Set(comps.map((c) => c.taskId));
-  const started = new Set(steps.map((k) => k.split("#")[0]));
   const featured = siteContent(isoDay(), acct.country).featuredLesson;
   const modules = listModules().filter((m) => m.lessons.some((l) => l.ref));
-  const state = (ref: string) => (done.has(lessonTaskId(ref)) ? "done" : started.has(ref) ? "started" : "new");
+  const stepNsOf = new Map(modules.flatMap((m) => m.lessons.filter((l) => l.ref).map((l) => [l.ref!, l.stepNs] as const)));
+  const lessonState = lessonStateFn(done, steps);
+  const state = (ref: string) => lessonState(ref, stepNsOf.get(ref));
   const mins = (m: (typeof modules)[number]) => Math.max(3, Math.round((m.steps / Math.max(1, m.lessons.filter((l) => l.ref).length)) * 2));
   const all = modules.flatMap((m) => m.lessons.filter((l) => l.ref).map((l) => ({ ...l, ref: l.ref!, module: m })));
   const doneCount = all.filter((l) => state(l.ref) === "done").length;

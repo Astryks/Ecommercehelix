@@ -14,7 +14,7 @@ export function slugify(text: string) {
   return text.toLowerCase().trim().replace(/<[^>]+>/g, "").replace(/[^\p{L}\p{N}\s-]/gu, "").replace(/\s/g, "-");
 }
 
-export type Lesson = { id: string; title: string; ref: string | null; stage: StageId };
+export type Lesson = { id: string; title: string; ref: string | null; stage: StageId; stepNs: number[] };
 export type Module = { slug: string; number: number; title: string; outcome: string; plain: string; stage: StageId; lessons: Lesson[]; steps: number };
 
 export function listModules(): Module[] {
@@ -28,9 +28,10 @@ export function listModules(): Module[] {
       const outcome = md.match(/\*\*Outcome:\*\*\s*(.+)/)?.[1] ?? "";
       const plain = md.match(/\*\*What it is:\*\*\s*(.+)/)?.[1] ?? outcome;
       const number = Number(f.slice(0, 2));
+      const parsed = new Map(parseModuleSections(md).filter((x): x is ParsedLesson => x.kind === "lesson").map((x) => [x.ref, x.steps.map((st) => st.n)]));
       const lessons = [...md.matchAll(/^## (.+)$/gm)].map((m): Lesson => {
         const ref = m[1].match(/^Lesson (\d+\.\d+):/)?.[1] ?? null;
-        return { id: slugify(m[1]), title: m[1], ref, stage: ref ? stageOfLesson(ref) : stageOfModule(number) };
+        return { id: slugify(m[1]), title: m[1], ref, stage: ref ? stageOfLesson(ref) : stageOfModule(number), stepNs: (ref && parsed.get(ref)) || [] };
       });
       return { slug: f.replace(/\.md$/, ""), number, title, outcome, plain, stage: stageOfModule(number), lessons, steps: (md.match(/^\*\*Step \d+\.\*\*/gm) ?? []).length };
     });

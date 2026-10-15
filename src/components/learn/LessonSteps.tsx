@@ -67,7 +67,7 @@ export function LessonSteps({ lesson, next = null }: { lesson: LessonView; slug?
     if (!step) return;
     if (!isDone(step.n)) toggleStep(stepKey(lesson.ref, step.n), true);
     if (!last) setChosen(cur + 1);
-    else setChosen(cur);
+    else setChosen(null); // finished: show the done view, not the last step again
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -101,13 +101,16 @@ export function LessonSteps({ lesson, next = null }: { lesson: LessonView; slug?
       {total > 0 && (
         <div className="mt-6" data-testid="lesson-stepper">
           <div className="flex items-center gap-3 text-xs font-semibold text-slate-600" aria-live="polite">
-            <span className="uppercase tracking-[0.14em] text-cyan-700">Step {cur + 1} of {total}</span>
+            <span className="uppercase tracking-[0.14em] text-cyan-700">{allDone && chosen === null ? "Lesson done" : `Step ${cur + 1} of ${total}`}</span>
             <div className="h-1 flex-1 overflow-hidden rounded-full bg-slate-200" aria-hidden>
               <div className="h-full rounded-full bg-emerald-500 transition-[width]" style={{ width: `${(doneCount / total) * 100}%` }} />
             </div>
             <span>{doneCount} of {total} done</span>
           </div>
-          {step && (
+          {allDone && chosen === null && (
+            <p className="mt-3 text-sm text-slate-700">You did every step. <button type="button" onClick={() => setChosen(0)} className="font-medium text-cyan-700 underline">Look at the steps again</button></p>
+          )}
+          {step && !(allDone && chosen === null) && (
             <div className={`mt-3 rounded-2xl border p-5 sm:p-6 ${isDone(step.n) ? "border-emerald-200 bg-emerald-50/40" : "border-slate-200 bg-white"}`}>
               <div className={`${PROSE} text-[17px] leading-7 text-slate-900`} dangerouslySetInnerHTML={{ __html: step.html }} />
               <div className="mt-4 rounded-xl bg-emerald-50 px-4 py-3 ring-1 ring-emerald-200">

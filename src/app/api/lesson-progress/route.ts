@@ -1,7 +1,8 @@
 import { type NextRequest } from "next/server";
 import { auth } from "@/auth";
-import { ensureUser, getLessonSteps, setLessonStep } from "@/lib/repo";
-import { STEP_KEY } from "@/lib/lesson-actions";
+import { completeTask, ensureUser, getLessonSteps, setLessonStep } from "@/lib/repo";
+import { STEP_KEY, lessonTaskId, stepKey } from "@/lib/lesson-actions";
+import { findLesson } from "@/lib/learn";
 import { createHash } from "node:crypto";
 
 export const dynamic = "force-dynamic";
@@ -29,5 +30,13 @@ export async function POST(req: NextRequest) {
   const keys = Array.isArray(body?.keys) ? body.keys.filter((k): k is string => typeof k === "string" && STEP_KEY.test(k)).slice(0, 50) : [];
   if (!keys.length) return Response.json({ ok: false }, { status: 400 });
   for (const k of keys) await setLessonStep(id, k, body?.done !== false);
+  // When every step of a lesson is ticked, count the lesson as done (Learn, Today and streaks use this).
+  if (body?.done !== false) {
+    const all = new Set(await getLessonSteps(id));
+    for (const ref of new Set(keys.map((k) => k.split("#")[0]))) {
+      const ns = findLesson(ref)?.steps.map((s) => s.n) ?? [];
+      if (ns.length && ns.every((n) => all.has(stepKey(ref, n)))) await completeTask(id, lessonTaskId(ref));
+    }
+  }
   return Response.json({ ok: true });
 }
