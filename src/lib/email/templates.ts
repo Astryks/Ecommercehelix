@@ -26,7 +26,7 @@ ${o.button ? `<p style="margin:22px 0"><a href="${esc(o.button.href)}" style="di
 ${(o.after ?? []).map(p).join("")}
 ${p("The Helix team")}
 </td></tr>
-<tr><td style="padding:16px 28px;border-top:1px solid #e5e3dc;font-size:12px;line-height:18px;color:#6b6760">${foot}<br>Astryks, NSW, Australia</td></tr>
+<tr><td style="padding:16px 28px;border-top:1px solid #e5e3dc;font-size:12px;line-height:18px;color:#6b6760">${foot}<br>E-commerce Helix</td></tr>
 </table></td></tr></table></body></html>`;
   const text = [hi(c.name), "", ...o.paras.flatMap((x) => [x, ""]), ...(o.list ?? []).map((l) => `- ${l}`), o.list?.length ? "" : null, o.button ? `${o.button.label}: ${o.button.href}` : null, "", ...(o.after ?? []).flatMap((x) => [x, ""]), "The Helix team", "", o.marketing ? `Unsubscribe: ${c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails"}` : "This is an account email about your Helix plan."]
     .filter((x) => x !== null).join("\n");
