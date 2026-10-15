@@ -5,6 +5,7 @@ import { getCardState, getProfitSetup, logEvent, saveCardState, saveProductName,
 import { getDeck } from "@/lib/cards";
 import { isoDay } from "@/lib/dates";
 import type { ProfitInputs } from "@/lib/profit-setup";
+import { readAmount } from "@/lib/amount";
 
 /** Remember where the user is, and count today's cards when they move forward. */
 export async function saveCardPos(deck: string, index: number, forward: boolean) {
@@ -26,13 +27,14 @@ const BLANK: ProfitInputs = { price: 0, productCost: 0, freightDuty: 0, packagin
 export async function saveSetupAnswers(values: Record<string, string>) {
   const u = await requireUser("/dashboard/cards");
   const name = String(values.productName ?? "").trim().slice(0, 120);
-  const price = Number(values.price) || 0;
+  const price = readAmount(values.price) ?? 0;
   const existing = await getProfitSetup(u.id);
   if (!existing && price <= 0) return; // nothing worth saving yet; avoids an empty setup
   const p: ProfitInputs = { ...BLANK, ...(existing ?? {}) };
   for (const k of NUM) {
-    if (values[k] === undefined || values[k] === "") continue;
-    const n = Math.max(0, Math.min(10_000_000, Number(values[k]) || 0));
+    const raw = readAmount(values[k]);
+    if (raw === null) continue; // blank or not a number: keep what was saved before
+    const n = Math.max(0, Math.min(10_000_000, raw));
     p[k] = k === "ordersPerMonth" ? Math.round(n) : n;
   }
   const clean = Object.fromEntries((Object.keys(BLANK) as (keyof ProfitInputs)[]).map((k) => [k, p[k]])) as ProfitInputs;

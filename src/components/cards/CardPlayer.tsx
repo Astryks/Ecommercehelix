@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 import { ArrowLeft, ArrowRight, HeartHandshake } from "lucide-react";
 import type { Card } from "@/lib/cards";
@@ -78,6 +79,7 @@ export function CardPlayer({ deckId, deckTitle, cards, start, lost = false, next
   const [typing, setTyping] = useState(true);
   const [pending, startT] = useTransition();
   const [moved, setMoved] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     if (onMove) return;
@@ -97,7 +99,14 @@ export function CardPlayer({ deckId, deckTitle, cards, start, lost = false, next
   const go = (to: number) => {
     const forward = to > i;
     if (to >= cards.length) {
-      if (nextHref) window.location.href = nextHref;
+      // Finish: save the last answers and position first, then move on.
+      startT(async () => {
+        try {
+          if (card.kind === "input" && onSetup) await onSetup(values);
+          if (onMove) await onMove(deckId, i, true);
+        } catch { /* still move on; the answers stay in this deck */ }
+        router.push(nextHref ?? "/dashboard");
+      });
       return;
     }
     if (to < 0) return;
@@ -171,7 +180,7 @@ export function CardPlayer({ deckId, deckTitle, cards, start, lost = false, next
       <div className="mt-5 flex items-center justify-between gap-3">
         <button type="button" onClick={() => go(i - 1)} disabled={i === 0} className="btn-ghost disabled:opacity-30"><ArrowLeft className="h-4 w-4" aria-hidden /> Back</button>
         <span className="text-sm text-slate-500">{i + 1} of {cards.length}{pending ? " · saving" : ""}</span>
-        <button type="button" onClick={() => go(i + 1)} disabled={i === cards.length - 1 && !nextHref} className="btn-primary disabled:opacity-30">{i === cards.length - 1 ? "Next deck" : "Next"} <ArrowRight className="h-4 w-4" aria-hidden /></button>
+        <button type="button" onClick={() => go(i + 1)} disabled={pending && i === cards.length - 1} className="btn-primary disabled:opacity-30">{i === cards.length - 1 ? (nextHref ? "Next deck" : "Finish") : "Next"} <ArrowRight className="h-4 w-4" aria-hidden /></button>
       </div>
       {lessonHref && <p className="mt-4 text-center text-sm"><Link href={lessonHref} className="text-cyan-700 underline">See the whole lesson on one page</Link></p>}
     </div>
