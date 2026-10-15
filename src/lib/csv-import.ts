@@ -70,14 +70,15 @@ export function guessMapping(headers: string[], source: Source): Target[] {
       if (h === "subtotal") t = "revenue";
       else if (h === "discount amount") t = "discounts";
       else if (h === "refunded amount") t = "refunds";
-      else if (h === "shipping") t = "shipping";
+      // "Shipping" here is what the customer paid, not your cost, so it is left unmapped.
     } else {
       if (/^gross sales|^sales$|^revenue$|^total sales$/.test(h)) t = "revenue";
       else if (/^orders$|^total orders|^orders count/.test(h)) t = "orders";
       else if (/^discounts?$/.test(h)) t = "discounts";
       else if (/^returns$|^refunds?$/.test(h)) t = "refunds";
       else if (/^sessions$|^visits$|^online store sessions/.test(h)) t = "sessions";
-      else if (/^shipping/.test(h)) t = "shipping";
+      // Shopify "Shipping charges" is what customers paid, not your cost, so it is not mapped.
+      else if (/^shipping/.test(h) && source !== "shopify-sales") t = "shipping";
       else if (/cost of goods|^cogs|product cost/.test(h)) t = "cogs";
       else if (/^units|net quantity|items sold/.test(h)) t = "units";
       else if (/meta|facebook/.test(h) && /spend|ads/.test(h)) t = "adMeta";
@@ -104,13 +105,26 @@ export function toYmd(v: string, usDates = false): string | null {
     return `${y}-${String(b).padStart(2, "0")}-${String(a).padStart(2, "0")}`;
   }
   const t = Date.parse(s);
-  return Number.isNaN(t) ? null : new Date(t).toISOString().slice(0, 10);
+  if (Number.isNaN(t)) return null;
+  // Read the date back in local time: toISOString() is UTC and can shift the day.
+  const d = new Date(t);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
 export const toNum = (v: string) => {
   const n = Number(String(v).replace(/[^0-9.\-]/g, ""));
   return Number.isFinite(n) ? n : 0;
 };
+
+/** Like toNum, but a blank or non-numeric cell gives null so it is skipped, not saved as 0. */
+export function parseNum(v: string): number | null {
+  const s = String(v ?? "").trim();
+  if (!/[0-9]/.test(s)) return null;
+  const neg = /^\(.*\)$/.test(s) || /^-|^\$-|-\$/.test(s);
+  const n = Number(s.replace(/[^0-9.]/g, ""));
+  if (!Number.isFinite(n)) return null;
+  return neg ? -n : n;
+}
 
 export type ImportDay = { date: string } & Partial<Record<Field, number>>;
 
@@ -133,7 +147,8 @@ export function rollUp(rows: string[][], mapping: Target[], source: Source, usDa
     }
     mapping.forEach((t, i) => {
       if (!t || t === "date" || t === "orderId") return;
-      const v = toNum(r[i] ?? "");
+      const v = parseNum(r[i] ?? "");
+      if (v === null) return;
       d[t] = Math.round(((d[t] ?? 0) + (t === "discounts" || t === "refunds" ? Math.abs(v) : v)) * 100) / 100;
     });
     byDate.set(date, d);
