@@ -128,20 +128,33 @@ export function parseNum(v: string): number | null {
 
 export type ImportDay = { date: string } & Partial<Record<Field, number>>;
 
+export type Skipped = { line: number; reason: string; text: string };
+
 /** Roll rows up by date with the chosen mapping. Orders exports count one order per order id. */
 export function rollUp(rows: string[][], mapping: Target[], source: Source, usDates = false): ImportDay[] {
+  return rollUpReport(rows, mapping, source, usDates).days;
+}
+
+/** Same as rollUp, plus the rows that were left out and why, so the preview can show them. Line 2 is the first data row. */
+export function rollUpReport(rows: string[][], mapping: Target[], source: Source, usDates = false): { days: ImportDay[]; skipped: Skipped[] } {
+  const skipped: Skipped[] = [];
   const di = mapping.indexOf("date");
-  if (di < 0) return [];
+  if (di < 0) return { days: [], skipped };
   const oi = mapping.indexOf("orderId");
   const byDate = new Map<string, ImportDay>();
   const seenOrders = new Set<string>();
-  for (const r of rows) {
-    const date = toYmd(r[di] ?? "", usDates);
-    if (!date) continue;
+  rows.forEach((r, idx) => {
+    const raw = (r[di] ?? "").trim();
+    const date = raw ? toYmd(raw, usDates) : null;
+    if (!date) {
+      // Skip totals rows quietly; flag everything else.
+      if (!/^(total|totals|summary)\b/i.test(raw) && !/^(total|totals)\b/i.test(r[0] ?? "")) skipped.push({ line: idx + 2, reason: raw ? `We could not read the date "${raw.slice(0, 30)}"` : "No date", text: r.join(", ").slice(0, 80) });
+      return;
+    }
     const d = byDate.get(date) ?? { date };
     if (oi >= 0) {
       const id = r[oi];
-      if (!id || seenOrders.has(id)) continue; // Shopify repeats an order on each line item row
+      if (!id || seenOrders.has(id)) return; // Shopify repeats an order on each line item row
       seenOrders.add(id);
       d.orders = (d.orders ?? 0) + 1;
     }
@@ -152,9 +165,9 @@ export function rollUp(rows: string[][], mapping: Target[], source: Source, usDa
       d[t] = Math.round(((d[t] ?? 0) + (t === "discounts" || t === "refunds" ? Math.abs(v) : v)) * 100) / 100;
     });
     byDate.set(date, d);
-  }
+  });
   void source;
-  return [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
+  return { days: [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date)), skipped };
 }
 
 /** The blank template users can fill in. */

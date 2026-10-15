@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { detectSource, guessMapping, parseTable, parseNum, rollUp, toYmd } from "@/lib/csv-import";
+import { detectSource, guessMapping, parseTable, parseNum, rollUp, rollUpReport, toYmd } from "@/lib/csv-import";
 
 const load = (f: string) => parseTable(readFileSync(`tests/fixtures/${f}`, "utf8"));
 
@@ -47,5 +47,12 @@ describe("csv import", () => {
     const h = ["Day", "Orders", "Gross sales", "Net sales", "Shipping charges"];
     expect(guessMapping(h, detectSource(h))).not.toContain("shipping");
     expect(guessMapping(["Day", "Shipping cost"], "generic")).toContain("shipping");
+  });
+  it("flags rows with no date or a date it cannot read, and skips totals quietly", () => {
+    const t = parseTable("Day,Orders,Gross sales\n2026-10-08,1,10\n,2,20\nsoon,3,30\nTotal,6,60\n");
+    const s = detectSource(["Day", "Orders", "Gross sales", "Net sales"]);
+    const r = rollUpReport(t.slice(1), guessMapping(t[0], s), s);
+    expect(r.days).toHaveLength(1);
+    expect(r.skipped.map((x) => [x.line, x.reason])).toEqual([[3, "No date"], [4, 'We could not read the date "soon"']]);
   });
 });
