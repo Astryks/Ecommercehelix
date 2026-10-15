@@ -230,3 +230,7 @@ a { text-underline-offset: 3px; }
   .hero-form { margin-top: 1rem; }
   .hero-trust { margin-top: 0.75rem; }
 }
+
+/* When a Numbers day panel is open, shrink the floating "I'm lost" button to an icon so it never covers the figures. */
+body:has([data-testid="day-panel"]) .lost-fab { padding: 0.625rem; gap: 0; }
+body:has([data-testid="day-panel"]) .lost-fab .lost-fab-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
