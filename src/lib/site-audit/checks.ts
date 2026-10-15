@@ -223,7 +223,7 @@ export function findingsFrom(f: Facts, i: Pick<AuditInput, "url">): Finding[] {
     if (!p.returnsMention && !f.trust.returnsPage) add({ id: "no-returns", severity: "medium", title: "No returns or guarantee message", quote: `We saw no returns, refund or guarantee text on ${name} or a returns link on your home page.`, fix: "Add a short, clear guarantee near the buy button and a returns page in your footer.", lesson: "9.2" });
     if (p.compareAt && p.price && p.compareAt > p.price) {
       const off = Math.round((1 - p.price / p.compareAt) * 100);
-      if (off >= 40) add({ id: "deep-discount", severity: "medium", title: "A deep markdown on a key product", quote: `${name} is ${p.price.toFixed(2)}, down from ${p.compareAt.toFixed(2)} (${off}% off).`, fix: "Check this still makes a profit after product, shipping, fees and ads. Use your profit dashboard before the next promotion.", lesson: "9.12" });
+      if (off >= 40) add({ id: "deep-discount", severity: "medium", title: "A deep markdown on a key product", quote: `${name} is ${price$(p.price)}, down from ${price$(p.compareAt)} (${off}% off).`, fix: "Check this still makes a profit after product, shipping, fees and ads. Use your profit dashboard before the next promotion.", lesson: "9.12" });
     }
     if (p.images > 30) add({ id: "many-images", severity: "low", title: "A lot of images on one product", quote: `${name} has ${p.images} images.`, fix: "Keep the best 6 to 10. Too many slows the page on phones.", lesson: "9.4" });
     else if (p.images < 3) add({ id: "few-images", severity: "medium", title: "Few product photos", quote: `${name} has ${p.images} image${p.images === 1 ? "" : "s"}.`, fix: "Aim for 5 to 8: product on white, in use, close-up detail, scale or sizing, and a customer photo.", lesson: "9.2" });
@@ -256,3 +256,6 @@ export function changesSince(prev: Finding[], now: Finding[]): { fixed: Finding[
   const n = new Set(now.filter((x) => x.severity !== "good").map((x) => x.id));
   return { fixed: prev.filter((x) => x.severity !== "good" && !n.has(x.id)), added: now.filter((x) => x.severity !== "good" && !p.has(x.id)) };
 }
+
+/** A store price as "$25.00". Shopify gives no currency here; $ is the usual sign for Helix stores. */
+function price$(n: number) { return `$${n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`; }
