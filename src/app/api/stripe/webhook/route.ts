@@ -6,6 +6,7 @@ import { claimEvent, findSub, releaseEvent, writeSub } from "@/lib/billing-store
 import { notify } from "@/lib/email/notify";
 import { cancelEmail, paymentFailedEmail, receiptEmail } from "@/lib/email/templates";
 import { planName } from "@/lib/plans";
+import { onSubscriptionChange } from "@/lib/fb-group/activation";
 
 export const dynamic = "force-dynamic";
 
@@ -22,6 +23,9 @@ async function applySub(sub: SubLike & { customer?: string | { id: string } | nu
   if (row?.subscriptionId && row.subscriptionId !== sub.id && ["active", "trialing", "past_due"].includes(row.status) && !["active", "trialing", "past_due"].includes(sub.status)) return "other-sub";
   const f = subFields(sub, (p, price) => planForPrice(p, process.env, price));
   await writeSub(userId, { ...f, customerId: idOf(sub.customer), subscriptionId: sub.id, lastEventAt: new Date(created * 1000) });
+  // Members Facebook group: join email and "to approve" when paid starts, "to remove" when it ends. Never blocks billing.
+  await onSubscriptionChange({ userId, email: row?.email, name: row?.name }, sub.id, row ? { plan: row.plan, status: row.status } : null, { plan: f.plan, status: f.status })
+    .catch((e) => console.error("fb group update failed", (e as Error).message));
   const nowCanceling = (f.cancelAtPeriodEnd && !row?.cancelAtPeriodEnd) || (sub.status === "canceled" && row?.status !== "canceled" && !row?.cancelAtPeriodEnd);
   if (nowCanceling && row?.email)
     await notify({ userId, email: row.email, plan: row.plan }, "cancel", sub.id, (l) => cancelEmail({ name: row.name, baseUrl: l.baseUrl }, { until: sub.status === "canceled" ? "today" : prettyDate(f.currentPeriodEnd) }));

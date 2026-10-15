@@ -52,6 +52,12 @@ export function eventEmail(c: Ctx, e: { name: string; daysTo: number; line: stri
     paras: [e.line, "Helix has added the right steps to your Today list, in the right order."], button: { label: e.lesson.label, href: e.lesson.href.startsWith("http") ? e.lesson.href : `${c.baseUrl}${e.lesson.href}` } });
 }
 
+export function communityJoinEmail(c: Ctx, groupUrl: string): Email {
+  return layout(c, { kind: "community", marketing: false, subject: "You're in: join the Helix members group", preheader: "A private group for store owners who are building.", title: "Join our community",
+    paras: ["Thanks for joining Helix. You can now join our private Facebook group for members.", "It is a friendly place to ask questions, share what works, share your numbers and cheer each other on.", "Tap the button, then press Join. We let new members in within a day."],
+    button: { label: "Join the members group", href: groupUrl } });
+}
+
 export function receiptEmail(c: Ctx, r: { amount: string; plan: string; date: string; invoiceUrl?: string | null }): Email {
   return layout(c, { kind: "receipt", marketing: false, subject: `Payment received: ${r.amount} for Helix ${r.plan}`, preheader: "Thanks. Your plan is active.", title: "Payment received",
     paras: [`We got your payment of ${r.amount} for the ${r.plan} plan on ${r.date}. Thank you.`, "Cancel anytime, in one click. No lock-in."],

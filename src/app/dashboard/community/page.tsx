@@ -1,3 +1,4 @@
+import { groupUrl } from "@/lib/fb-group/links";
 import { ExternalLink, Trophy, Users } from "lucide-react";
 import { requireUser } from "@/lib/session";
 import { getAccount } from "@/lib/repo";
@@ -17,7 +18,7 @@ export default async function CommunityPage() {
   const week = mondayOf(isoDay());
   const mod = isModerator(u.email);
   const [wins, mine, pending] = await Promise.all([approvedWins(week), myWins(u.id), mod ? pendingWins() : Promise.resolve([])]);
-  const group = process.env.FACEBOOK_GROUP_URL;
+  const group = groupUrl();
   return (
     <div className="mx-auto max-w-3xl space-y-5">
       <header>

@@ -4,6 +4,8 @@ import { getAccount, getBilling } from "@/lib/repo";
 import { CANCEL_LINE, CURRENCY_LABEL, billingView, prettyDate } from "@/lib/billing";
 import { cancelAtPeriodEnd, resumeSubscription } from "./actions";
 import { PLANS, planName } from "@/lib/plans";
+import { isActivePaid } from "@/lib/fb-group/state";
+import { groupUrl } from "@/lib/fb-group/links";
 import { stripe } from "@/lib/stripe";
 
 const NEED_FOR: Record<string, string> = {
@@ -27,6 +29,11 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
     <div className="mx-auto max-w-5xl">
       <h1 className="page-title">Plan &amp; billing</h1>
       <p className="page-lead">You are on <strong>{planName(acct.plan)}</strong>.</p>
+      {isActivePaid(acct.plan, billing.status) && groupUrl() && (
+        <p className="mt-lead rounded-xl bg-[#5A50D6]/10 p-4 text-sm text-slate-800" data-testid="group-link">
+          <strong>Members group:</strong> join our private Facebook group for members. <a href={groupUrl()!} target="_blank" rel="noopener noreferrer" className="font-semibold text-cyan-700 underline">Join the group</a>
+        </p>
+      )}
       {(() => {
         const view = billingView({ plan: acct.plan, status: billing.status, cancelAtPeriodEnd: billing.cancelAtPeriodEnd, subscriptionId: billing.subscriptionId });
         const until = prettyDate(billing.currentPeriodEnd);
