@@ -8,12 +8,11 @@ import { PLAN_RANK, planName, type PlanId } from "@/lib/plans";
 import { FindingRow } from "@/components/store-check/StoreCheck";
 import { UpgradePrompt } from "@/components/UpgradePrompt";
 
-/** The big "Step N today" button. */
+/** The big "do this today" button. No step number: earlier steps may already be done. */
 export function StepToday({ s }: { s: PlanState }) {
-  const n = s.plan.indexOf(s.current) + 1;
   return (
     <Link href={blockHref(s.current)} className="btn-primary w-full justify-center px-6 py-4 text-base sm:w-auto">
-      Step {n} today: {s.current.step1.charAt(0).toLowerCase() + s.current.step1.slice(1)} ({s.current.minutes} min) <ArrowRight className="h-4 w-4" aria-hidden />
+      Today: {s.current.step1.charAt(0).toLowerCase() + s.current.step1.slice(1)} ({s.current.minutes} min) <ArrowRight className="h-4 w-4" aria-hidden />
     </Link>
   );
 }
@@ -41,6 +40,9 @@ export function Timeline({ s, plan: userPlan }: { s: PlanState; plan: PlanId }) 
     </ol>
   );
 }
+
+/** The week you are on: the calendar week, or later if you finished steps early. Matches "you are here". */
+export const shownWeek = (s: PlanState) => Math.min(s.total, Math.max(s.week, s.current.weeks[0]));
 
 /** At most one upgrade prompt, at the moment it helps. */
 function PlanPrompt({ s, plan }: { s: PlanState; plan: PlanId }) {
@@ -76,7 +78,7 @@ export function PersonalPlan({ s, storeUrl, plan }: { s: PlanState; storeUrl: st
       </section>
       <section className="card p-6 sm:p-8">
         <h2 className="text-lg font-semibold">Your {s.total}-week plan</h2>
-        <p className="text-sm text-slate-600">Week {s.week} of {s.total}.{s.total > 12 ? " Stretched to fit 1 to 2 hours a week." : ""} One step at a time. You can redo the questions any time.</p>
+        <p className="text-sm text-slate-600">Week {shownWeek(s)} of {s.total}.{s.total > 12 ? " Stretched to fit 1 to 2 hours a week." : ""} One step at a time. You can redo the questions any time.</p>
         <Timeline s={s} plan={plan} />
         <PlanPrompt s={s} plan={plan} />
         <Link href="/start?step=2&restart=1" className="mt-3 inline-block text-xs text-slate-500 underline">Answer the questions again</Link>

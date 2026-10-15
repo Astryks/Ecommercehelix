@@ -91,7 +91,10 @@ export function diagnose(a: Answers): Diagnosis {
     b = "ready-to-scale";
     sentence = "Your numbers look healthy. The next step is to grow your best channel without losing profit.";
   }
-  if (crLow && b === "ready-to-scale") b = "not-converting";
+  if (crLow && b === "ready-to-scale") {
+    b = "not-converting";
+    sentence = `Most of your numbers look fine, but only ${label("cr", a.cr)} in 100 visitors buy. Fixing the site turns visits you already have into sales.`;
+  }
   const start: Record<BottleneckId, [string, Diagnosis["stage"]]> = {
     "profit-leak": ["key-numbers", "numbers"], "no-traffic": [smallRev && a.revenue === "none" ? "first-100-visits" : "1000-visits", "attract"],
     "not-converting": ["conversion-2-5", "convert"], "costly-ads": ["key-numbers", "numbers"], "small-orders": ["aov-plus-10", "convert"],

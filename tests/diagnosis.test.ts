@@ -23,3 +23,14 @@ describe("diagnosis", () => {
   });
   it("prefills goals", () => expect(goalsFromDiagnosis({ aov: "40-80" }, DEFAULT_GOALS.growing).aov).toBe(66));
 });
+
+import { diagnose as diagnose2 } from "@/lib/diagnosis";
+import { describe as describe2, expect as expect2, it as it2 } from "vitest";
+describe2("diagnosis copy", () => {
+  it2("low conversion never says the numbers look healthy", () => {
+    const d = diagnose2({ revenue: "5-20k", margin: "60+", visitors: "1-5k", cr: "1-2", aov: "80-150", repeat: "10-25" });
+    expect2(d.bottleneck).toBe("not-converting");
+    expect2(d.sentence).not.toMatch(/healthy/);
+    expect2(d.sentence).toMatch(/1 to 2 in 100/);
+  });
+});
