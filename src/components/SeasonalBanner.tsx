@@ -10,7 +10,7 @@ const countdown = (a: SeasonAlert) =>
 
 /** Public home page version: real date, links to the free prep plan. */
 /** Site-wide banner from the seasonal calendar (src/lib/season-calendar.ts). Same look as before. */
-export function CalendarStrip({ banner }: { banner: Banner }) {
+export function CalendarStrip({ banner }: { banner: Banner & { href?: string } }) {
   return (
     <div className="relative border-b border-cyan-200 bg-cyan-100 text-slate-950" data-banner={banner.key}>
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3">
@@ -19,7 +19,7 @@ export function CalendarStrip({ banner }: { banner: Banner }) {
           {banner.text}
           <span className="ml-2 whitespace-nowrap rounded-full bg-white/40 px-2 py-0.5 text-xs font-bold">{banner.badge}</span>
         </p>
-        <Link href="/start" className="inline-flex items-center gap-1.5 rounded-lg bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
+        <Link href={banner.href ?? "/start"} className="inline-flex items-center gap-1.5 rounded-lg bg-slate-950 px-3.5 py-2 text-sm font-semibold text-white hover:bg-slate-800">
           {banner.cta} <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
       </div>

@@ -54,7 +54,7 @@ describe("banner", () => {
     expect(bannerFor("2027-01-02", "US").badge).toBe("35 days to go");
   });
   it("shows a calm fallback in a quiet time", () => {
-    const b = bannerFor("2026-06-15", "AU");
+    const b = bannerFor("2026-07-20", "AU");
     expect(b.phase).toBe("quiet");
     expect(b.badge).toContain("Next:");
   });

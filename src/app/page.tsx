@@ -8,7 +8,7 @@ import { Pricing } from "@/components/marketing/Pricing";
 import { STRATEGIES } from "@/lib/seed/strategies";
 import { TRENDS } from "@/lib/seed/trends";
 import { CalendarStrip } from "@/components/SeasonalBanner";
-import { bannerFor } from "@/lib/season-calendar";
+import { siteContent } from "@/lib/site-content";
 import { BFCM_CRITICAL } from "@/lib/seasons";
 import { BfcmTimeline, bfcmStageIndex } from "@/components/BfcmPlan";
 import { GoalsLadder, VanityNote } from "@/components/GoalsLadder";
@@ -98,7 +98,8 @@ function MorningBrief() {
 }
 
 export default function Home() {
-  const banner = bannerFor(isoDay(), "US");
+  const content = siteContent(isoDay(), "US");
+  const banner = content.banner;
   return (
     <>
       <CalendarStrip banner={banner} />
@@ -112,8 +113,9 @@ export default function Home() {
               Grow your <span className="whitespace-nowrap">e-commerce</span> business <span className="grad-text">a little every day</span>
             </h1>
             <p className="hero-lead lead mt-10 max-w-xl text-xl leading-8 text-slate-700">
-              Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can do the work for you when you approve. Small daily wins add up to a bigger, more profitable business.
+              {content.heroLine}
             </p>
+            {content.heroExtra && <p className="hero-extra mt-3 max-w-xl text-base font-semibold text-[#5A50D6]" data-testid="hero-extra">{content.heroExtra}</p>}
             <form action="/start" method="get" className="hero-form mt-8 flex max-w-xl flex-col gap-2 rounded-xl border border-slate-300 bg-white p-2 shadow-[0_1px_0_rgba(26,23,24,0.04)] sm:flex-row">
               <label htmlFor="url" className="sr-only">Paste your store URL</label>
               <input id="url" name="url" type="text" required placeholder="Paste your store URL, e.g. yourstore.com" className="flex-1 rounded-lg bg-transparent px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 focus:outline-none" />
