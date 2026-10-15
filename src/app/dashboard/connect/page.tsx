@@ -56,8 +56,8 @@ export default async function ConnectTools({ searchParams }: PageProps<"/dashboa
     <div className="mx-auto max-w-4xl space-y-5" data-testid="connect-tools">
       <p className="text-sm"><Link href="/dashboard/settings" className="text-cyan-700 hover:underline">Settings</Link> / Connect your tools</p>
       <header>
-        <h1 className="text-3xl font-bold tracking-tight">Connect your tools</h1>
-        <p className="mt-1 text-slate-700">Connect once and your daily numbers fill in by themselves every morning, like a tracking sheet that keeps itself up to date.</p>
+        <h1 className="page-title">Connect your tools</h1>
+        <p className="page-lead">Connect once and your daily numbers fill in by themselves every morning, like a tracking sheet that keeps itself up to date.</p>
       </header>
       {flash && <p className={`rounded-xl border p-3 text-sm ${flash[0] === "ok" ? "border-emerald-200 bg-emerald-50 text-emerald-900" : "border-rose-200 bg-rose-50 text-rose-900"}`}>{flash[1]}{key === "sheet" && sp.n ? ` ${sp.n} days added.` : ""}</p>}
       <div className="grid gap-4 md:grid-cols-2">

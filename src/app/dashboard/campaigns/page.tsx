@@ -36,7 +36,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold tracking-tight">Your ads</h1>
+            <h1 className="page-title">Your ads</h1>
             {live ? (
               <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-emerald-800">Meta: live{conn?.mode === "mock" ? " (mock)" : ""}</span>
             ) : (

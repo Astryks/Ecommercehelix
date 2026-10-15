@@ -15,10 +15,10 @@ export default function GoalsGuide() {
   return (
     <>
       <SiteHeader dark={false} />
-      <main className="mx-auto w-full max-w-5xl px-5 py-14">
+      <main className="mx-auto w-full max-w-5xl px-5 pt-page pb-section">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700"><Link href="/learn" className="hover:underline">Learn</Link> · Goals</p>
-        <h1 className="mt-2 text-4xl font-bold tracking-tight">{GOALS_HEADLINE.title}</h1>
-        <p className="mt-3 max-w-3xl text-lg leading-8 text-slate-600">
+        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">{GOALS_HEADLINE.title}</h1>
+        <p className="mt-lead max-w-3xl text-lg leading-8 text-slate-600">
           {GOALS_HEADLINE.order} That is the order a customer meets your store: they see an ad, visit, add to cart, buy, and leave you some profit. Get each rung a little better and the last one grows. Here is what each number means and what good looks like.
         </p>
         <VanityNote className="mt-6" />

@@ -71,8 +71,8 @@ export default async function Metrics() {
     <div className="mx-auto max-w-7xl">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><Gauge className="h-7 w-7 text-cyan-600" aria-hidden /> Key metrics</h1>
-          <p className="mt-1 max-w-2xl text-slate-600">The 14 numbers that run your store, for the last 7 days, each with a good number to aim for. Every card says whether you fill it in, Helix works it out, or it fills itself once you connect a tool.{taxNote && <> Sales are shown without {taxNote}.</>}</p>
+          <h1 className="flex items-center gap-2 page-title"><Gauge className="h-7 w-7 text-cyan-600" aria-hidden /> Key metrics</h1>
+          <p className="page-lead">The 14 numbers that run your store, for the last 7 days, each with a good number to aim for. Every card says whether you fill it in, Helix works it out, or it fills itself once you connect a tool.{taxNote && <> Sales are shown without {taxNote}.</>}</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <Link href="/dashboard/scorecard#entry" className="btn-dark"><PencilLine className="h-4 w-4" aria-hidden /> Fill in today</Link>

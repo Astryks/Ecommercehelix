@@ -8,8 +8,8 @@ export default async function DashboardHelp({ searchParams }: PageProps<"/dashbo
   const about = typeof sp.about === "string" ? sp.about.slice(0, 120) : "";
   return (
     <div className="mx-auto max-w-3xl">
-      <h1 className="text-2xl font-semibold">Help</h1>
-      <p className="mt-2 text-slate-700">Where Helix cannot do a step for you, here is exactly how to do it. Still stuck? <Link className="underline" href="/dashboard/contact">Contact us</Link>. A real person replies, usually within one business day.</p>
+      <h1 className="page-title">Help</h1>
+      <p className="page-lead">Where Helix cannot do a step for you, here is exactly how to do it. Still stuck? <Link className="underline" href="/dashboard/contact">Contact us</Link>. A real person replies, usually within one business day.</p>
       <section className="card mt-6 p-5">
         <h2 className="font-semibold">I&apos;m lost</h2>
         <p className="mt-1 text-sm text-slate-600">Tell Helix where you are stuck and it points you to the next step.</p>

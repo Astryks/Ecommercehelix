@@ -17,8 +17,8 @@ export default async function CoursePage() {
   const totalDays = view.path.reduce((a, p) => a + p.days, 0);
   return (
     <div className="mx-auto max-w-5xl">
-      <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><Route className="h-7 w-7 text-cyan-600" aria-hidden /> The Helix Course</h1>
-      <p className="mt-1 max-w-2xl text-slate-600">One clear goal at a time. Each goal has a finish line you can measure and a few short tasks a day. Finish the day, the next one opens. Hit the finish line, the next goal opens. {doneCount} of {view.path.length} goals done, about {totalDays} days in total.</p>
+      <h1 className="flex items-center gap-2 page-title"><Route className="h-7 w-7 text-cyan-600" aria-hidden /> The Helix Course</h1>
+      <p className="page-lead">One clear goal at a time. Each goal has a finish line you can measure and a few short tasks a day. Finish the day, the next one opens. Hit the finish line, the next goal opens. {doneCount} of {view.path.length} goals done, about {totalDays} days in total.</p>
 
       <form action={setCourseTrack} className="mt-4 flex flex-wrap items-center gap-2 text-sm" aria-label="Your track">
         <span className="font-medium text-slate-700">Your track:</span>

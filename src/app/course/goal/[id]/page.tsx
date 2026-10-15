@@ -31,8 +31,8 @@ export default async function GoalPage({ params, searchParams }: { params: Promi
     <div className="mx-auto max-w-4xl">
       <Link href="/course" className="inline-flex items-center gap-1 text-sm text-cyan-700"><ArrowLeft className="h-4 w-4" aria-hidden /> The course path</Link>
       <p className="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">{PHASES[goal.phase].name} · Goal {item.n} of {view.path.length} · {days.length} days</p>
-      <h1 className="mt-1 text-3xl font-bold tracking-tight">{goal.title}</h1>
-      <p className="mt-2 text-slate-700"><strong>Finish line:</strong> {goal.finishLine}</p>
+      <h1 className="mt-1 page-title">{goal.title}</h1>
+      <p className="page-lead"><strong>Finish line:</strong> {goal.finishLine}</p>
       <p className="mt-1 text-slate-600"><strong>Why this matters:</strong> {goal.why}</p>
 
       {isCurrent && <GoalCard view={view} compact />}

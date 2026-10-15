@@ -21,8 +21,8 @@ export default async function CommunityPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-5">
       <header>
-        <h1 className="text-3xl font-bold tracking-tight">Community</h1>
-        <p className="mt-1 text-slate-700">Store owners growing a little every day, together.</p>
+        <h1 className="page-title">Community</h1>
+        <p className="page-lead">Store owners growing a little every day, together.</p>
       </header>
 
       <section className="card p-5">

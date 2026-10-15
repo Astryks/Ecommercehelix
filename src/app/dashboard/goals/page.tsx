@@ -13,8 +13,8 @@ export default async function GoalsPage({ searchParams }: PageProps<"/dashboard/
   const g = await goalsFor(u.id);
   return (
     <div className="mx-auto max-w-5xl">
-      <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><Target className="h-7 w-7 text-cyan-600" aria-hidden /> Monthly goals</h1>
-      <p className="mt-1 max-w-3xl text-slate-600">The numbers to aim at each month, in the order a customer meets them: from a visit to a sale, down to the money you keep. Each one is checked against your last 30 days. <Link href="/learn/goals" className="inline-flex items-center gap-1 text-cyan-700 underline"><BookOpen className="h-4 w-4" aria-hidden /> What each number means</Link></p>
+      <h1 className="flex items-center gap-2 page-title"><Target className="h-7 w-7 text-cyan-600" aria-hidden /> Monthly goals</h1>
+      <p className="page-lead">The numbers to aim at each month, in the order a customer meets them: from a visit to a sale, down to the money you keep. Each one is checked against your last 30 days. <Link href="/learn/goals" className="inline-flex items-center gap-1 text-cyan-700 underline"><BookOpen className="h-4 w-4" aria-hidden /> What each number means</Link></p>
       {sp.saved && <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">Goals saved. Today and the Dashboard now track these.</p>}
       {g.isDefault && <p className="mt-4 rounded-xl border border-cyan-200 bg-cyan-50 px-4 py-3 text-sm text-cyan-900">These are Helix&apos;s suggested starting goals for your track. Change them below to make them yours.</p>}
       {g.exampleDays > 0 && <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900"><strong>Example data.</strong> Some of the last 30 days are made-up example numbers until you add your own in <Link href="/dashboard/scorecard" className="underline">Your numbers</Link>.</p>}

@@ -12,8 +12,8 @@ const TONE: Record<string, string> = {
 export default function Trends() {
   return (
     <div className="mx-auto max-w-6xl">
-      <h1 className="text-3xl font-bold tracking-tight">Ad Trends</h1>
-      <p className="mt-1 text-slate-600">Week of {prettyDay(TRENDS[0].week)}. Curated platform changes, each with one thing to try. Seeded content; the weekly agent pipeline is stubbed.</p>
+      <h1 className="page-title">Ad Trends</h1>
+      <p className="page-lead">Week of {prettyDay(TRENDS[0].week)}. Curated platform changes, each with one thing to try. Seeded content; the weekly agent pipeline is stubbed.</p>
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         {TRENDS.map((t) => (
           <article key={t.id} className="card flex flex-col p-6">

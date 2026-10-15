@@ -23,8 +23,8 @@ export default async function ReviewPage({ searchParams }: PageProps<"/dashboard
   const acct = await getAccount(u.id);
   return (
     <div className="mx-auto max-w-2xl">
-      <h1 className="text-3xl font-bold tracking-tight">Review my store</h1>
-      <p className="mt-1 text-slate-700">Want a person to look at your store? Tell us what to look at. We reply by email, usually within a few business days.</p>
+      <h1 className="page-title">Review my store</h1>
+      <p className="page-lead">Want a person to look at your store? Tell us what to look at. We reply by email, usually within a few business days.</p>
       {sp.sent && <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">Sent. We will email you at {acct.email}.</p>}
       {sp.err === "limit" && <p className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">You have sent two requests this week. We will get to them soon.</p>}
       <form action={send} className="card mt-5 space-y-4 p-5">

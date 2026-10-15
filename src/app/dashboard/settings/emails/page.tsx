@@ -29,7 +29,7 @@ export default async function EmailSettings({ searchParams }: PageProps<"/dashbo
   return (
     <div className="mx-auto max-w-2xl space-y-4" data-testid="email-settings">
       <p className="text-sm"><Link href="/dashboard/settings" className="text-cyan-700 hover:underline">Settings</Link> / Emails</p>
-      <h1 className="text-3xl font-bold tracking-tight">Emails</h1>
+      <h1 className="page-title">Emails</h1>
       <p className="text-slate-700">Pick the emails you want. Every one of these has a one-click unsubscribe link too.</p>
       {sp.saved && <p className="rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">Saved.</p>}
       <form action={save} className="space-y-3">

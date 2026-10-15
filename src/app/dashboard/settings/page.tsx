@@ -22,8 +22,8 @@ export default async function Settings({ searchParams }: PageProps<"/dashboard/s
   });
   return (
     <div className="mx-auto max-w-4xl">
-      <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
-      <p className="mt-1 text-slate-600">All your tools live here. Pick one.</p>
+      <h1 className="page-title">Settings</h1>
+      <p className="page-lead">All your tools live here. Pick one.</p>
       <div className="mt-5"><SettingsHub pending={approvals.filter((a) => a.status === "pending").length} /></div>
       <form action={out} className="mt-4"><button className="text-sm text-slate-600 underline">Sign out ({acct.email})</button></form>
       <h2 id="profile" className="mt-10 text-xl font-semibold text-slate-900">Your track, country and tax</h2>

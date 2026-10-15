@@ -30,8 +30,8 @@ export default async function NumbersPage({ searchParams }: PageProps<"/dashboar
   return (
     <div className="mx-auto max-w-5xl space-y-5">
       <header>
-        <h1 className="text-3xl font-bold tracking-tight">Numbers</h1>
-        <p className="mt-1 text-slate-700">Your sales each day, and what you kept after costs.{example ? " These are example numbers until you add your own." : ""}</p>
+        <h1 className="page-title">Numbers</h1>
+        <p className="page-lead">Your sales each day, and what you kept after costs.{example ? " These are example numbers until you add your own." : ""}</p>
       </header>
       <section aria-label="Auto-fill" className="card flex flex-wrap items-center gap-2 p-4" data-testid="sync-bar">
         <span className="text-sm font-semibold text-slate-900">Fills in by itself:</span>

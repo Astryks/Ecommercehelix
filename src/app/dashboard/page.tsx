@@ -159,8 +159,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         {sp.welcome && <p className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">Welcome to Helix. Your plan is ready. Do one step a day and you&apos;re on track.</p>}
         <header>
           <p className="text-sm text-slate-500">{prettyDay(today)}</p>
-          <h1 className="text-3xl font-bold tracking-tight">Today</h1>
-          <p className="mt-1 text-slate-700">Here&apos;s what to do today. One step at a time.</p>
+          <h1 className="page-title">Today</h1>
+          <p className="page-lead">Here&apos;s what to do today. One step at a time.</p>
         </header>
         {tasksBox}
         <NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
@@ -206,8 +206,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <p className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">{prettyDay(today)}
             <Link href="/dashboard/settings" className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${T.id === "starting" ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : "bg-violet-50 text-violet-700 ring-violet-200"}`}>Track: {T.name} · change</Link>
           </p>
-          <h1 className="mt-1 text-3xl font-bold tracking-tight">Good to see you{u.name ? `, ${u.name}` : ""}</h1>
-          <p className="mt-1 text-slate-600">Update yesterday, see your profit, then do one small thing to grow it. About {totalMinutes + 1} minutes.</p>
+          <h1 className="mt-1 page-title">Good to see you{u.name ? `, ${u.name}` : ""}</h1>
+          <p className="page-lead">Update yesterday, see your profit, then do one small thing to grow it. About {totalMinutes + 1} minutes.</p>
         </div>
         <div className="flex gap-3">
           <div className="card flex items-center gap-3 px-4 py-3">

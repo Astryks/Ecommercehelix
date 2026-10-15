@@ -140,7 +140,7 @@ export default function Home() {
       </div>
 
       <main>
-        <section id="framework" aria-labelledby="framework-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+        <section id="framework" aria-labelledby="framework-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-section">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">The Helix framework</p>
             <h2 id="framework-title" className="mt-3 text-4xl text-slate-900 sm:text-6xl">Attract. Convert. <span className="grad-text">Grow.</span></h2>
@@ -149,7 +149,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="who" aria-labelledby="who-title" className="scroll-mt-10 border-t border-slate-200 bg-paper py-24">
+        <section id="who" aria-labelledby="who-title" className="scroll-mt-10 border-t border-slate-200 bg-paper py-section">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Who Helix is for</p>
             <h2 id="who-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Built for stores doing <span className="grad-text accent-pink">$10k to $30k a month</span> that want to reach $1M, profitably</h2>
@@ -158,7 +158,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="goals" aria-labelledby="goals-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+        <section id="goals" aria-labelledby="goals-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-section">
           <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             <div>
               <p className="eyebrow">What to aim at</p>
@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="profit" aria-labelledby="profit-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+        <section id="profit" aria-labelledby="profit-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-section">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">It is all about the bottom line</p>
             <h2 id="profit-title" className="mt-3 text-4xl text-slate-900 sm:text-6xl">
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="ads-fear" aria-labelledby="fear-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-24">
+        <section id="ads-fear" aria-labelledby="fear-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-section">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Nervous about ads?</p>
             <h2 id="fear-title" className="mt-3 max-w-4xl text-4xl text-slate-900 sm:text-5xl">Most owners are scared to advertise. <span className="grad-text accent-coral">Helix shows you how it really works.</span></h2>
@@ -221,7 +221,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="agencies" aria-labelledby="agency-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+        <section id="agencies" aria-labelledby="agency-title" className="scroll-mt-10 border-t border-slate-200 bg-white py-section">
           <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
               <p className="eyebrow flex items-center gap-2"><KeyRound className="h-3.5 w-3.5" aria-hidden /> Stay in control</p>
@@ -245,7 +245,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="bfcm" aria-labelledby="bfcm-title" className="helix-glow scroll-mt-10 py-24 text-white">
+        <section id="bfcm" aria-labelledby="bfcm-title" className="helix-glow scroll-mt-10 py-section text-white">
           <div className="mx-auto max-w-6xl px-5">
             <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300"><AlertTriangle className="h-3.5 w-3.5" aria-hidden /> Black Friday and Cyber Monday, all year</p>
             <h2 id="bfcm-title" className="mt-3 max-w-4xl text-4xl sm:text-5xl">{BFCM_CRITICAL.title}</h2>
@@ -256,7 +256,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how" className="scroll-mt-10 border-t border-slate-200 py-24">
+        <section id="how" className="scroll-mt-10 border-t border-slate-200 py-section">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">How it works</p>
             <h2 className="mt-3 text-3xl text-slate-900 sm:text-5xl">Check. One thing a day. Approve. Grow.</h2>
@@ -275,7 +275,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="strategies" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-24">
+        <section id="strategies" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-section">
           <div className="mx-auto max-w-6xl px-5">
             <p className="eyebrow">Growth strategies</p>
             <h2 className="mt-3 text-3xl text-slate-900 sm:text-5xl">One strategy at a time, explained simply</h2>
@@ -300,7 +300,7 @@ export default function Home() {
 
         <Pricing />
 
-        <section className="helix-glow py-24 text-white">
+        <section className="helix-glow py-section text-white">
           <div className="mx-auto max-w-6xl px-5">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
@@ -322,7 +322,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="explore" aria-labelledby="explore-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-24">
+        <section id="explore" aria-labelledby="explore-title" className="scroll-mt-10 border-t border-slate-200 bg-paper-2 py-section">
           <div className="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2">
             <div>
               <p className="eyebrow">What Helix does</p>
@@ -345,7 +345,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="faq" className="scroll-mt-10 py-24">
+        <section id="faq" className="scroll-mt-10 py-section">
           <div className="mx-auto max-w-3xl px-5">
             <h2 className="text-3xl text-slate-900 sm:text-5xl">FAQ</h2>
             <div className="mt-10 divide-y divide-slate-200 border-y border-slate-200">

@@ -16,11 +16,11 @@ export default function Guides() {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto w-full max-w-5xl px-5 py-14">
+      <main className="mx-auto w-full max-w-5xl px-5 pt-page pb-section">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }]} />
-        <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">E-commerce growth guides</h1>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">Plain-English answers to the questions store owners ask most. For step-by-step lessons, see <Link className="text-cyan-800 underline" href="/learn">the Helix Playbook</Link>.</p>
-        <ul className="mt-12 grid gap-6 md:grid-cols-2">
+        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">E-commerce growth guides</h1>
+        <p className="mt-lead max-w-2xl text-lg leading-8 text-slate-600">Plain-English answers to the questions store owners ask most. For step-by-step lessons, see <Link className="text-cyan-800 underline" href="/learn">the Helix Playbook</Link>.</p>
+        <ul className="mt-section grid gap-6 md:grid-cols-2">
           {ARTICLES.map((a) => (
             <li key={a.slug}>
               <Link href={`/guides/${a.slug}`} className="card flex h-full flex-col p-6 transition hover:-translate-y-0.5 hover:shadow-lg">

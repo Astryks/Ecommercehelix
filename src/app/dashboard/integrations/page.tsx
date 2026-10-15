@@ -59,8 +59,8 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
 
   return (
     <div className="mx-auto max-w-5xl">
-      <h1 className="text-3xl font-bold tracking-tight">Connections</h1>
-      <p className="mt-1 max-w-3xl text-slate-600">Connect your store and ad accounts so Helix can read your results every day and build new campaigns as paused drafts. Helix never turns on spend.</p>
+      <h1 className="page-title">Connections</h1>
+      <p className="page-lead">Connect your store and ad accounts so Helix can read your results every day and build new campaigns as paused drafts. Helix never turns on spend.</p>
       <div className="mt-4 grid gap-3 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700 sm:grid-cols-2 lg:grid-cols-4">
         <p><strong className="text-slate-900">Official sign-in.</strong> You connect on Shopify&apos;s, Google&apos;s or Meta&apos;s own screen. Helix never sees your password.</p>
         <p><strong className="text-slate-900">Encrypted tokens.</strong> Access tokens are encrypted (AES-256-GCM) before they are stored.</p>

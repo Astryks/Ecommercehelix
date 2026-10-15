@@ -25,8 +25,8 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
   const billing = await getBilling(u.id);
   return (
     <div className="mx-auto max-w-5xl">
-      <h1 className="text-3xl font-bold tracking-tight">Plan &amp; billing</h1>
-      <p className="mt-1 text-slate-600">You are on <strong>{planName(acct.plan)}</strong>.</p>
+      <h1 className="page-title">Plan &amp; billing</h1>
+      <p className="page-lead">You are on <strong>{planName(acct.plan)}</strong>.</p>
       {(() => {
         const view = billingView({ plan: acct.plan, status: billing.status, cancelAtPeriodEnd: billing.cancelAtPeriodEnd, subscriptionId: billing.subscriptionId });
         const until = prettyDate(billing.currentPeriodEnd);

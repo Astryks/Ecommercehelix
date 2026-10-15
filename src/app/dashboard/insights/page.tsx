@@ -36,7 +36,7 @@ export default async function Insights() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold tracking-tight">What to fix</h1>
+            <h1 className="page-title">What to fix</h1>
             {live.metaLive ? (
               <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-emerald-800">Meta: live data</span>
             ) : (

@@ -16,11 +16,11 @@ export default function Features() {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto w-full max-w-6xl px-5 py-14">
+      <main className="mx-auto w-full max-w-6xl px-5 pt-page pb-section">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Features", path: "/features" }]} />
-        <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">E-commerce growth tools for store owners</h1>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">Helix is self-serve software that guides you to grow your store yourself. It explains every step and only acts with your approval.</p>
-        <ul className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">E-commerce growth tools for store owners</h1>
+        <p className="mt-lead max-w-2xl text-lg leading-8 text-slate-600">Helix is self-serve software that guides you to grow your store yourself. It explains every step and only acts with your approval.</p>
+        <ul className="mt-section grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f) => (
             <li key={f.slug}>
               <Link href={`/features/${f.slug}`} className="card flex h-full flex-col p-6 transition hover:-translate-y-0.5 hover:shadow-lg">

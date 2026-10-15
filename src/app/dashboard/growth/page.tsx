@@ -80,8 +80,8 @@ export default async function Growth({ searchParams }: PageProps<"/dashboard/gro
     <div className="mx-auto max-w-7xl">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><TrendingUp className="h-7 w-7 text-cyan-600" aria-hidden /> Growth</h1>
-          <p className="mt-1 max-w-2xl text-slate-600">Watch revenue, costs and profit grow by day, week, month and year. Built from your daily numbers{conn ? " and your synced Meta ad spend" : ""}.{taxNote && <> Sales are shown without {taxNote}.</>}</p>
+          <h1 className="flex items-center gap-2 page-title"><TrendingUp className="h-7 w-7 text-cyan-600" aria-hidden /> Growth</h1>
+          <p className="page-lead">Watch revenue, costs and profit grow by day, week, month and year. Built from your daily numbers{conn ? " and your synced Meta ad spend" : ""}.{taxNote && <> Sales are shown without {taxNote}.</>}</p>
         </div>
         <nav aria-label="Period" className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold">
           {GRAINS.map((x) => (

@@ -10,8 +10,8 @@ export default async function Approvals() {
   const history = rows.filter((r) => r.status !== "pending");
   return (
     <div className="mx-auto max-w-4xl">
-      <h1 className="text-3xl font-bold tracking-tight">Waiting for your OK</h1>
-      <p className="mt-1 text-slate-600">Meta drafts Helix will build for you, and checklists to work through. Only Meta drafts change anything in your accounts, and only after you approve.</p>
+      <h1 className="page-title">Waiting for your OK</h1>
+      <p className="page-lead">Meta drafts Helix will build for you, and checklists to work through. Only Meta drafts change anything in your accounts, and only after you approve.</p>
       <section className="mt-8 space-y-4">
         {pending.length === 0 && (
           <div className="card p-8 text-center text-slate-600">

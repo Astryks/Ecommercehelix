@@ -6,7 +6,32 @@
  * (sampled from Sid's reference). Old palettes (slate, cyan, violet, indigo, sky) are remapped here so
  * every page picks up the same set. Text pairings meet WCAG AA on paper and white.
  */
+/*
+ * Spacing tokens. One scale for every page; phones get a slightly tighter version.
+ * Use them through Tailwind (mt-eyebrow, mt-lead, mt-lead-ul, mt-block, py-section, pt-page, p-card)
+ * or the shared components PageHero, PageHeader and Section in src/components/ui.
+ */
+:root {
+  --space-eyebrow: 0.75rem;        /* eyebrow to heading */
+  --space-lead: 1rem;              /* heading to tagline */
+  --space-lead-underlined: 1.75rem;/* heading with the marker underline to tagline */
+  --space-block: 1.5rem;           /* between blocks inside a section */
+  --space-section: 4rem;           /* between page sections */
+  --space-page: 2.5rem;            /* top of a page to its heading */
+  --space-card: 1.25rem;           /* inside a card */
+}
+@media (min-width: 640px) {
+  :root { --space-lead-underlined: 2.25rem; --space-block: 2rem; --space-section: 6rem; --space-page: 4rem; --space-card: 1.75rem; }
+}
+
 @theme inline {
+  --spacing-eyebrow: var(--space-eyebrow);
+  --spacing-lead: var(--space-lead);
+  --spacing-lead-ul: var(--space-lead-underlined);
+  --spacing-block: var(--space-block);
+  --spacing-section: var(--space-section);
+  --spacing-page: var(--space-page);
+  --spacing-card: var(--space-card);
   --font-sans: var(--font-body), ui-rounded, ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-marker), "Comic Sans MS", cursive;
   --font-hand: var(--font-hand-accent), "Comic Sans MS", cursive;
@@ -201,11 +226,20 @@ a { text-underline-offset: 3px; }
   opacity: 0; pointer-events: none; transition: opacity 120ms ease;
 }
 .gloss:hover::after, .gloss:focus::after { opacity: 1; }
+/* Hidden tooltips still widen the page on phones; only lay them out when shown. */
+.gloss:not(:hover, :focus)::after { display: none; }
 
 /* Course: a small, quiet celebration when a goal is finished */
 .celebrate .confetti { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, #5A50D6 2px, transparent 2.5px), radial-gradient(circle, #2f7359 2px, transparent 2.5px), radial-gradient(circle, #1A1718 1.5px, transparent 2px); background-size: 46px 46px, 62px 62px, 38px 38px; background-position: 0 0, 20px 14px, 9px 30px; opacity: 0; animation: helix-confetti 2.4s ease-out 1; }
 @keyframes helix-confetti { 0% { opacity: 0.9; transform: translateY(-24px); } 100% { opacity: 0; transform: translateY(24px); } }
 @media (prefers-reduced-motion: reduce) { .celebrate .confetti { animation: none; } }
+
+/* A tagline right under a heading with the marker underline gets more room, everywhere. */
+:where(h1, h2):has(> .grad-text) + :where(p, div) { margin-top: var(--space-lead-underlined); }
+
+/* Shared page heading styles (dashboard and simple public pages). */
+@utility page-title { @apply text-3xl font-bold tracking-tight text-slate-900; }
+@utility page-lead { @apply max-w-3xl text-slate-600; margin-top: var(--space-lead); }
 
 /* Room for the heavy underline so it never touches the next line. */
 :where(h1, h2, h3, p, blockquote):has(> .grad-text, > .scribble) { line-height: 1.38; }

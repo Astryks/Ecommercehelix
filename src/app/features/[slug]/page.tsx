@@ -28,10 +28,10 @@ export default async function FeaturePage({ params }: PageProps<"/features/[slug
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto w-full max-w-3xl px-5 py-14">
+      <main className="mx-auto w-full max-w-3xl px-5 pt-page pb-section">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Features", path: "/features" }, { name: f.name, path }]} />
-        <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{f.h1}</h1>
-        <p className="mt-5 text-lg leading-8 text-slate-600">{f.intro}</p>
+        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">{f.h1}</h1>
+        <p className="mt-lead text-lg leading-8 text-slate-600">{f.intro}</p>
         {f.sections.map((s) => (
           <section key={s.h2} className="mt-12">
             <h2 className="text-2xl font-semibold text-slate-900">{s.h2}</h2>

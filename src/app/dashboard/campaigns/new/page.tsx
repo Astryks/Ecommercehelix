@@ -27,8 +27,8 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
   return (
     <div className="mx-auto max-w-6xl">
       <Link href="/dashboard/campaigns" className="text-sm font-medium text-cyan-700 hover:underline">Your ads</Link>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight">Build a campaign</h1>
-      <p className="mt-1 max-w-3xl text-slate-600">Two ways to work. Either way, Helix never switches on spend: you press Launch.</p>
+      <h1 className="mt-2 page-title">Build a campaign</h1>
+      <p className="page-lead">Two ways to work. Either way, Helix never switches on spend: you press Launch.</p>
 
       <div className="mt-6 inline-flex rounded-xl bg-white p-1 ring-1 ring-slate-200" role="tablist" aria-label="Build mode">
         <Link role="tab" aria-selected={mode === "draft"} href="/dashboard/campaigns/new" className={`rounded-xl px-4 py-2 text-sm font-semibold ${mode === "draft" ? "bg-slate-900 text-white" : "text-slate-600"}`}>Draft &amp; you launch</Link>

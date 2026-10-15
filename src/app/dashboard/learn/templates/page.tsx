@@ -15,8 +15,8 @@ export default async function Templates() {
   return (
     <div className="mx-auto max-w-3xl">
       <p className="text-sm"><Link href="/dashboard/learn" className="text-cyan-700 hover:underline">Learn</Link> / Templates</p>
-      <h1 className="mt-1 text-3xl font-bold tracking-tight">Template library</h1>
-      <p className="mt-1 text-slate-700">Ready-to-use words. Copy one, swap the [brackets] for your details, and send.</p>
+      <h1 className="mt-1 page-title">Template library</h1>
+      <p className="page-lead">Ready-to-use words. Copy one, swap the [brackets] for your details, and send.</p>
       <div className="mt-5 space-y-4">
         {list.map((t) => (
           <section key={t.id} id={t.id} className="card p-5">

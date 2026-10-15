@@ -37,8 +37,8 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
     <div className="mx-auto max-w-5xl">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="flex items-center gap-2 text-3xl font-bold tracking-tight"><CalendarDays className="h-7 w-7 text-cyan-600" aria-hidden /> Calendar</h1>
-          <p className="mt-1 max-w-2xl text-slate-600">Every key sale and gifting date for the next 12 months, plus business admin dates like BAS, tax returns and security checks. Big dates come with a prep plan, and Helix warns you on Today before each one. Black Friday prep starts on 1 August, and each step is on its own date below.</p>
+          <h1 className="flex items-center gap-2 page-title"><CalendarDays className="h-7 w-7 text-cyan-600" aria-hidden /> Calendar</h1>
+          <p className="page-lead">Every key sale and gifting date for the next 12 months, plus business admin dates like BAS, tax returns and security checks. Big dates come with a prep plan, and Helix warns you on Today before each one. Black Friday prep starts on 1 August, and each step is on its own date below.</p>
         </div>
         <div className="flex rounded-xl border border-slate-200 bg-white p-1 text-sm font-semibold" role="tablist" aria-label="Country">
           {[...new Set([acct.country, "AU", "US"])].map((id) => ({ id, name: countryName(id) })).map((c) => (

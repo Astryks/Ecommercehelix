@@ -85,7 +85,7 @@ export default async function Scorecard() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold tracking-tight">Your numbers</h1>
+            <h1 className="page-title">Your numbers</h1>
             {hasExample && <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>}
           </div>
           <p className="mt-1 text-slate-600">One headline first. Tap &ldquo;Show more detail&rdquo; when you want the full picture. Showing <strong>{prettyDay(latest)}</strong>.{taxNote && <> Sales are shown without {taxNote} (<Link href="/dashboard/settings" className="text-cyan-700 underline">change</Link>).</>}</p>

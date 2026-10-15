@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Pricing() {
   return (
-    <section id="pricing" className="scroll-mt-10 border-t border-slate-200 bg-white py-24">
+    <section id="pricing" className="scroll-mt-10 border-t border-slate-200 bg-white py-section">
       <div className="mx-auto max-w-6xl px-5">
         <p className="eyebrow">Pricing</p>
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Less than one day of agency fees. Every month.</h2>

@@ -19,7 +19,7 @@ export default async function Report() {
   const nudge = top ? buildNudge(top, { name: u.name ?? "", planAdded, done, baseUrl: appUrl() }) : null;
   return (
     <div className="mx-auto max-w-4xl">
-      <h1 className="text-3xl font-bold tracking-tight">Weekly report</h1>
+      <h1 className="page-title">Weekly report</h1>
 
       {top && (
         <section aria-labelledby="coming-h" className="mt-6 overflow-hidden rounded-xl border border-orange-200 bg-white">

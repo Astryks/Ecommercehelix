@@ -12,10 +12,10 @@ export default function Words() {
   return (
     <>
       <SiteHeader dark={false} />
-      <main className="mx-auto w-full max-w-4xl px-5 py-14">
+      <main className="mx-auto w-full max-w-4xl px-5 pt-page pb-section">
         <Link href="/learn" className="text-sm font-medium text-cyan-700 hover:underline">All modules</Link>
-        <h1 className="mt-3 text-4xl font-bold tracking-tight">Words to know</h1>
-        <p className="mt-3 max-w-2xl text-slate-600">
+        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">Words to know</h1>
+        <p className="mt-lead max-w-2xl text-slate-600">
           Every tricky word in Helix, explained in one line. You do not need to learn them all. Come back here whenever a word is new.
         </p>
         <dl className="mt-10 divide-y divide-slate-200 rounded-xl border border-slate-200 bg-white">

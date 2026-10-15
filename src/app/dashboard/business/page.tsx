@@ -26,8 +26,8 @@ export default async function RunYourBusiness() {
   return (
     <div className="mx-auto max-w-6xl">
       <p className="eyebrow">Operations, money and admin</p>
-      <h1 className="mt-1 flex items-center gap-2 text-3xl font-bold tracking-tight"><Briefcase className="h-7 w-7 text-cyan-600" aria-hidden /> Run your business</h1>
-      <p className="mt-1 max-w-3xl text-slate-600">The 13 things store owners ask about most once orders start coming in: shipping, returns, payments, chargebacks, account safety, tax and books, team and money. Each card links to short lessons with plain steps you can follow wherever you sell.</p>
+      <h1 className="mt-1 flex items-center gap-2 page-title"><Briefcase className="h-7 w-7 text-cyan-600" aria-hidden /> Run your business</h1>
+      <p className="page-lead">The 13 things store owners ask about most once orders start coming in: shipping, returns, payments, chargebacks, account safety, tax and books, team and money. Each card links to short lessons with plain steps you can follow wherever you sell.</p>
       <p className="mt-3 max-w-3xl rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
         <strong>General information, not tax or legal advice.</strong> Check with a registered tax agent or accountant before you act. Rules change; every number below links to the official source.
       </p>
