@@ -467,6 +467,6 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 - Tools read Shopify (sales, products, stock and sales speed), Meta and Google Ads data already synced daily; pages always compute fresh.
 - **Manual only where no data exists:** bank balance + cash floor, optional yearly goal, store type, supplier lead times and stock not in Shopify.
 
-**Lessons readability:** every lesson now opens with "In short" (one sentence) and "Do this now" (your next undone step), above "Why this matters", and keeps the one-step-at-a-time cards. Check of all 30 modules: average sentence 13.6 words; 290 of 4,656 sentences are over 25 words. **Still open:** a hand rewrite of those long sentences (and the plain-words pass at a 10-year-old level) across all modules was not done in this pass.
+**Lessons readability:** every lesson now opens with "In short" (one sentence) and "Do this now" (your next undone step), above "Why this matters", and keeps the one-step-at-a-time cards. Check of all 30 modules: average sentence 13.6 words; 290 of 4,656 sentences are over 25 words. **Done (15 Oct, ~4:30 PM):** hand rewrite of every sentence over 22 words across all 30 modules (~550 rewritten), plus a plain-word pass. After: average 12.1 words, 20 sentences over 25 (mostly "Related" link lines and short lists), 308 over 20 (mostly 21 to 22 words). Commits a938222, 8747b35, 297784c, 0b1f77b.
 
 Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, WeeklyReview; EmailPrefs.alerts. No new env vars.
