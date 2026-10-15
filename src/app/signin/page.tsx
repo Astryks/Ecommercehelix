@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { signIn, authProviders } from "@/auth";
 import { Logo } from "@/components/Logo";
+import { PendingButton } from "@/components/PendingButton";
 
 export const metadata: Metadata = { title: "Sign in", robots: { index: false, follow: true } };
 
@@ -39,7 +40,7 @@ export default async function SignIn({ searchParams }: PageProps<"/signin">) {
             <form action={email} className="space-y-2">
               <label className="text-sm font-medium" htmlFor="m-email">Email me a magic link</label>
               <input id="m-email" name="email" type="email" required className="input" placeholder="you@store.com" />
-              <button className="btn-dark w-full">Send magic link</button>
+              <PendingButton className="btn-dark w-full disabled:opacity-70" pending="Sending your link...">Send magic link</PendingButton>
             </form>
           )}
           {authProviders.dev && (
