@@ -9,8 +9,9 @@ export function UpgradePrompt({ need, title, body, forKey, compact }: { need: Ex
       <p className="flex items-center gap-2 font-semibold text-[#1A1718]"><Sparkles className="h-4 w-4 text-[#5A50D6]" aria-hidden /> {title}</p>
       <p className="mt-1 text-sm text-slate-700">{body}</p>
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        <Link href={`/dashboard/billing?need=${need}&for=${forKey}`} className="btn-dark !px-3 !py-1.5 !text-sm">See the {planName(need)} plan</Link>
-        <span className="text-xs text-slate-500">Your profit dashboard, daily numbers and every lesson stay free.</span>
+        <a href={`/api/checkout?plan=${need}`} className="btn-dark !px-3 !py-1.5 !text-sm">Upgrade to {planName(need)}</a>
+        <Link href={`/dashboard/billing?need=${need}&for=${forKey}`} className="text-xs text-cyan-700 underline">Compare plans</Link>
+        <span className="text-xs text-slate-500">Cancel anytime, in one click. Your profit dashboard and lessons stay free.</span>
       </div>
     </div>
   );

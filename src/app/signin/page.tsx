@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Sign in", robots: { index: false, fo
 
 export default async function SignIn({ searchParams }: PageProps<"/signin">) {
   const sp = await searchParams;
-  const next = typeof sp.next === "string" && sp.next.startsWith("/") ? sp.next : "/dashboard";
+  const next = typeof sp.next === "string" && /^\/(?![/\\])/.test(sp.next) ? sp.next : "/dashboard"; // same-site paths only (no //host)
 
   async function dev(form: FormData) {
     "use server";
@@ -30,6 +30,7 @@ export default async function SignIn({ searchParams }: PageProps<"/signin">) {
         <Link href="/"><Logo /></Link>
         <h1 className="mt-8 text-2xl font-bold tracking-tight">Sign in to Helix</h1>
         <p className="mt-1 text-sm text-slate-600">Grow your e-commerce business a little every day.</p>
+        <p className="mt-1 text-xs font-semibold text-[#5A50D6]">Free to start. Paid plans: cancel anytime, in one click. No lock-in.</p>
         <div className="mt-6 space-y-4">
           {authProviders.google && (
             <form action={google}><button className="btn-ghost w-full">Continue with Google</button></form>

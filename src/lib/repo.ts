@@ -139,11 +139,11 @@ export async function setBillingStatusByCustomer(customerId: string, status: str
   await prisma.subscription.updateMany({ where: { stripeCustomerId: customerId }, data: { status } });
 }
 
-export type BillingInfo = { status: string; customerId: string | null; subscriptionId: string | null };
+export type BillingInfo = { status: string; customerId: string | null; subscriptionId: string | null; cancelAtPeriodEnd: boolean; currentPeriodEnd: string | null };
 export async function getBilling(userId: string): Promise<BillingInfo> {
-  if (!hasDb) return { status: "active", customerId: null, subscriptionId: null };
+  if (!hasDb) return { status: "active", customerId: null, subscriptionId: null, cancelAtPeriodEnd: false, currentPeriodEnd: null };
   const s = await prisma.subscription.findUnique({ where: { userId } });
-  return { status: s?.status ?? "active", customerId: s?.stripeCustomerId ?? null, subscriptionId: s?.stripeSubscriptionId ?? null };
+  return { status: s?.status ?? "active", customerId: s?.stripeCustomerId ?? null, subscriptionId: s?.stripeSubscriptionId ?? null, cancelAtPeriodEnd: s?.cancelAtPeriodEnd ?? false, currentPeriodEnd: s?.currentPeriodEnd?.toISOString() ?? null };
 }
 
 export async function setStore(userId: string, url: string) {

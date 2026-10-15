@@ -33,7 +33,7 @@ export default function Terms() {
 
       <Sec title="Cancelling">
         <ul className="list-disc space-y-2 pl-6">
-          <li>Cancel any time: open <Link className={a} href="/dashboard/billing">Plan &amp; billing</Link>, click <em>Manage billing</em>, then choose to cancel your subscription. You keep paid features until the end of the month you have paid for, and you are not charged again.</li>
+          <li><strong>Cancel anytime, in one click. No lock-in.</strong> Open <Link className={a} href="/dashboard/billing">Plan &amp; billing</Link>, press <em>Cancel anytime</em> and confirm. You can undo it with one click before your period ends. You keep paid features until the end of the month you have paid for, and you are not charged again.</li>
           <li>If you delete your account under Settings, your subscription is cancelled straight away and your data is deleted. You are not charged again.</li>
           <li>Your profit dashboard, daily numbers and lessons stay free after you cancel.</li>
         </ul>
