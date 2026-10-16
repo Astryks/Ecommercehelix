@@ -13,7 +13,8 @@ Generated: 2026-10-15 13:02 Australia/Sydney
 - Reorders: none (all date-sensitive posts land before their events)
 - Missing media: none (all 50 files exist)
 - Forbidden-term hits (banned source and coach names): none
-- Fact-check 16 Oct 2026: post 4 caption corrected to “From today (17 Oct) that’s 41 days” to match its scheduled date. Its image still shows “45 days”. Post 47 caption now says “during the busy season” (it posts 29 Nov, mid-BFCM); its image still says “before BFCM”.
+- Fact-check 16 Oct 2026: post 4 caption corrected to “From today (17 Oct) that’s 41 days” to match its scheduled date. Post 47 caption now says “during the busy season” (it posts 29 Nov, mid-BFCM).
+- 17 Oct 2026: images re-rendered to match. Post 4 video and still now show “41 days” (`animated/post04-bf-countdown.mp4`, also `samples/`), post 47 now says “especially during BFCM” (`static/post47-rest.png`). The copies already booked on Meta still show the old text and must be replaced with these files.
 
 ## Date-sensitive checks
 

@@ -99,7 +99,7 @@ D(24,'segment-buyers','teaching','split','Different people, different emails','B
  ["Not everyone on your list is the same.","People who bought want different emails from people still deciding.","Split your list into those two groups. It's the easiest win in email."],
  ['#emailsegmentation','#klaviyo','#emailmarketing'],swipe='browsers'),
 D(25,'win-back','teaching','steps','Haven\'t seen them in a while?','The win-back email','list',
- ['Step 1: Find buyers from 3+ months ago','Step 2: Send a friendly “we miss you”','Step 3: Show what\'s new','Step 4: Small thank-you offer (optional)'],
+ ['Step 1: Find subscribers who last bought 3+ months ago','Step 2: Send a friendly “we miss you”','Step 3: Show what\'s new','Step 4: Small thank-you offer (optional)'],
  ["Old customers already trust you. That makes them easier to win back than strangers.","Send a short, friendly email to subscribers who haven't bought in a few months.","Show what's new. A small offer is optional, not required."],
  ['#customerretention','#emailflows','#winback'],swipe='win-back'),
 D(26,'repeat-timing','teaching','note','Remind them at the right time','When do they run out?','text',
@@ -115,7 +115,7 @@ D(28,'checkout-addon','teaching','stat','One small add-on','A gentle upsell','ca
  ["One small, useful add-on at checkout can add up.","If 1 in 5 people add an $8 item, that's $1.60 more per order on average.","Pick something that truly goes with what they're buying."],
  ['#upsell','#aov','#checkoutoptimization'],note='Example numbers only.',swipe='upsell'),
 D(29,'honest-compare','teaching','note','Keep it honest','Real “was” prices only','pair',
- ["<b class='u'>Do:</b> show a “was” price only if you really sold it at that price.",
+ ["<b class='u'>Do:</b> show a “was” price only if you really charged it for a fair stretch, recently.",
   "<b class='u'>Don't:</b> invent a high price to make a sale look bigger. People can tell, and rules in many countries say no."],
  ["Crossed-out prices are powerful. That's why they need to be true.","Only show a “was” price if you really charged it for a fair stretch of time recently.","Honesty builds trust, and trust is what brings people back."],
  ['#pricingstrategy','#ethicalbusiness','#trustbuilding'],swipe='Real'),
@@ -132,7 +132,7 @@ D(32,'twelve-tabs','funny','meme','Monday, 9am','12 tabs open.\n0 things done.',
  ["Shopify, ads, email, supplier chat, three YouTube videos and a spreadsheet. Sound like you?","Close the tabs. Pick one job. Finish it.","Busy is not the same as done."],
  ['#productivity','#entrepreneurlife','#relatable'],swipe='done.'),
 D(33,'small-creators','teaching','steps','No big budget needed','Gift to small creators','list',
- ['Step 1: Find creators your buyers follow','Step 2: Offer a free product, no strings','Step 3: Let them say what they really think','Step 4: Thank them and share (with permission)'],
+ ['Step 1: Find creators your buyers follow','Step 2: Offer a free product, no strings','Step 3: Let them be honest, and say it was a gift','Step 4: Thank them and share (with permission)'],
  ["You don't need famous influencers.","Small creators with a loyal audience often get better results.","Gift a product and let them be honest. Ask them to say it was a gift, and ask before you reuse their content."],
  ['#influencermarketing','#microinfluencer','#creatormarketing'],swipe='small'),
 D(34,'repurpose','teaching','checklist','Make once, use many times','One photo, five posts','list',
@@ -191,12 +191,12 @@ D(47,'review-stress','funny','meme','One 3-star review','Me: rewrites my whole l
  "Breathe. One review is <b class='u'>one person's day</b>. Reply kindly, fix what's fair, and look for patterns, not single comments.",
  ["99 happy customers. One 3-star review. Guess which one we think about all night?","Reply kindly and fix what's fair.","Look for patterns across many reviews, not one bad day."],
  ['#customerreviews','#mindset','#relatable'],swipe='life'),
-D(48,'q1-plan','teaching','countdown','January is closer than it looks','Plan your quiet month now','list',
- ['Note your best-sellers from the rush','Plan a January email','Order stock for the new year','Book a few days off'],
- ["After the busy season, many stores go quiet in January.","Plan now: a January email, the right stock, and a few days off for you.","A quiet month with a plan is a calm month."],
- ['#businessplanning','#q1','#newyearplanning'],swipe='quiet'),
+D(48,'q1-plan','teaching','countdown','February is closer than it looks','Plan February now','list',
+ ['Note your best-sellers from the rush','Plan a February email','Reorder what sold out','Book a day off for you'],
+ ["After the busy season, many stores go quiet in January.","Use the quiet weeks to plan February: an email, the right stock, and a day off for you.","A month with a plan is a calmer month."],
+ ['#businessplanning','#q1','#smallbusinessplanning'],swipe='February'),
 D(49,'goals-weekly','teaching','checklist','Big goals, tiny steps','Turn a goal into this week','list',
- ['Goal: 100 orders a month','= about 25 a week','= about 4 a day','Today: one thing that gets 1 more'],
+ ['Goal: 100 orders a month','= about 25 a week','= 3 to 4 a day','Today: one thing that gets 1 more'],
  ["“100 orders a month” sounds huge.","Split it: about 25 a week, or 3 to 4 a day.","Then ask: what's one thing I can do today to get one more order?"],
  ['#goalsetting','#smallsteps','#growthmindset'],swipe='this week'),
 D(50,'still-here','funny','quote','A note to you','Still here? That\'s the skill.','text',
@@ -206,5 +206,6 @@ D(50,'still-here','funny','quote','A note to you','Still here? That\'s the skill
 ]
 LAY={p['n']:p['lay'] for p in POSTS}
 ANIM={2,5,8,10,13,18,21,22,27,32,36,41,43,47,48,49,50}
-TILE={48:('JAN','1','Fri')}
+# v3-48 posts on 19 Jan 2027 (v3 starts 3 Dec, one a day), so it counts to 1 Feb 2027 (a Monday), not 1 Jan.
+TILE={48:('FEB','1','Mon')}
 SWIPE={p['n']:p['swipe'] for p in POSTS if p['swipe']}
