@@ -1,6 +1,6 @@
 # STATUS
 
-_Last updated: 15 Oct 2026, about 9 PM (Sydney)._
+_Last updated: 17 Oct 2026, about 5 AM (Sydney)._
 
 ## Needs Sid (only these are left)
 
@@ -11,9 +11,18 @@ _Last updated: 15 Oct 2026, about 9 PM (Sydney)._
 5. **Google Ads check-in:** once Google approves the developer token (https://console.cloud.google.com/google/ads-apis/overview?project=astryks), send it to me or set `GOOGLE_ADS_DEVELOPER_TOKEN` in Vercel Production, then connect your Google Ads account on /dashboard/connect and check the first sync.
 6. **GitHub Support request (old cached research commits):** ask GitHub Support to remove the old cached commits 79bd6e9, d93fb8b, ac984ea, 90a2d45 and d785342 from Astryks/Astryks PR #12. Ready text: `docs/github-support-pr12.md`; send it at https://support.github.com/contact ("Removing sensitive data").
 7. **Lesson videos** (when recorded): send the URLs and I add them (free YouTube picks per path step live in `src/lib/learn-path.json`).
-8. **Closed Facebook group for paying members:** the group is live and linked from Community. Check the join button once with a paid account, and remove members who cancel (by hand for now).
+8. **Closed Facebook group for paying members:** set `FB_GROUP_URL` in Vercel (send the group link). After that, join emails go out automatically and the daily digest plus `/admin/community` list who to approve or remove (Facebook has no API, so the final tap is by hand). Also set `AUTH_SECRET` and `CRON_SECRET` if missing.
 9. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
 10. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
+
+## Teen course videos and next steps (17 Oct 2026)
+
+- **Course:** 22 chapters (Intro + lessons 01-95). Every video now opens with a hook and ends with a cliffhanger into the next one (`build/hooks.py`). Chapter openers follow "In this chapter we'll learn to X. Let's get started." then a simple real-world story.
+- **Look and voice:** cream-paper sketch style with stick figures, soft music only, no sound effects, fewer zooms (simple scene cuts). Narrator is Brad. Intro animation v5 approved; a more realistic Brad take (v6) is next.
+- **Voice runs locally** on Sid's Mac; no paid GPU spend without Sid's OK.
+- **Paused:** work stopped on 16 Oct when Grok Bot usage ran out; resumes when usage is added.
+- **Coverage:** 18 high-priority untranscribed videos picked for Sid to record (about 75 min); public research fills the rest.
+- **Also in progress (separate courses):** share market course (29 chapters, fact-checked) and a kids open-source AI course.
 
 ## Independent coverage check (15 Oct 2026, late evening)
 - Re-checked every private research video and transcript one by one (1,115 + 386 = 1,501 items; private matrix kept outside the repo). Before: 1,110 covered, 23 partial, 3 gaps, 365 out of scope (intros, admin, partner listings, tool walkthroughs, coaching-only material). After: 1,136 covered, 0 partial, 0 gaps.
