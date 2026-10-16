@@ -34,5 +34,7 @@ A complete, original course for online store owners. Each module has lessons wit
 | 26 | [Tax, GST, sales tax and duties](26-tax-gst-sales-tax-duties.md) | Grow | GST and BAS, US nexus, UK VAT, EU IOSS, Canada, duties and tariffs (general information, not advice) |
 | 27 | [Accounting, bookkeeping and tax time](27-accounting-bookkeeping-tax-time.md) | Grow | Accountants, clean payout entries, stock in your books, monthly close, EOFY and US tax season |
 | 28 | [Team, creators and money](28-team-creators-money.md) | Grow | First hire, assistants, paying creators and suppliers, funding offers, tool costs, wellbeing, Amazon |
+| 29 | [Customers, partners and the weekly rhythm](29-customers-partners-and-rhythm.md) | Grow | Customer words, referrals, partner brands, weekly numbers meeting, playbooks, 90-day plan |
+| 30 | [Seasonal sales, step by step](30-seasonal-sales-step-by-step.md) | Convert | Running a big sale from offer and stock to review |
 
 Start with Module 1, then follow the order Helix suggests for your stage in the [Compound Plan](../compound-daily-plan.md). In the app, the [day-by-day curriculum](../daily-curriculum.md) delivers this playbook as one lesson, one topic and one action per day.

@@ -5,7 +5,7 @@
    "contribution profit",
    "contribution"
   ],
-  "means": "What is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. This is the number Helix cares about most."
+  "means": "Usually means contribution profit: what is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. Net profit also takes off fixed costs."
  },
  {
   "term": "Revenue",
@@ -13,7 +13,7 @@
    "sales",
    "gross sales"
   ],
-  "means": "All the money customers paid. It looks good, but it is not what you keep."
+  "means": "The money customers paid for orders. Helix uses net sales: after discounts and refunds, without GST or VAT. It is not what you keep."
  },
  {
   "term": "Fixed costs",
@@ -87,7 +87,7 @@
   "aka": [
    "marketing efficiency ratio"
   ],
-  "means": "All ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales."
+  "means": "Helix shows it as all ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales. Many tools flip it to sales divided by ad spend, so 25% shows as 4x."
  },
  {
   "term": "Conversion rate",
@@ -124,7 +124,7 @@
  {
   "term": "Hook rate",
   "aka": [],
-  "means": "Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention."
+  "means": "Out of everyone who saw your video ad, the share who watched at least 3 seconds. Meta has no built-in column, so you add it as a custom metric."
  },
  {
   "term": "ThruPlay",
@@ -175,7 +175,7 @@
    "Spark ads",
    "Spark ad"
   ],
-  "means": "An ad that runs from a creator's own account, so people see their name instead of yours."
+  "means": "An ad that uses a creator's post or handle, so people see their name with yours. TikTok calls these Spark Ads."
  },
  {
   "term": "Campaign",
@@ -196,7 +196,7 @@
   "aka": [
    "learning"
   ],
-  "means": "The first days after you start or change an ad set, while Meta works out who to show it to. Results jump around, so wait."
+  "means": "The days after you start or make a big change to an ad set. Meta is still working out who to show it to. It usually ends after about 50 results in the week after that change."
  },
  {
   "term": "Pixel",
@@ -280,7 +280,7 @@
  {
   "term": "Brand search",
   "aka": [],
-  "means": "Ads that show when people search your brand name. Cheap and usually very profitable."
+  "means": "Ads that show when people search your brand name. Usually cheap and often very profitable."
  },
  {
   "term": "Product feed",
@@ -432,7 +432,7 @@
  {
   "term": "Attribution",
   "aka": [],
-  "means": "Deciding which ad or channel gets credit for a sale."
+  "means": "Deciding which ad or channel gets credit for a sale. Meta's default counts sales within 7 days of a click or 1 day of a view."
  },
  {
   "term": "Holdout test",
@@ -493,21 +493,21 @@
   "aka": [
    "goods and services tax"
   ],
-  "means": "Goods and services tax: a percentage set by each country (often 10% to 15%), added to most sales once you are registered."
+  "means": "Goods and services tax. Each country sets its own rate, such as 10% (Australia) or 15% (New Zealand). Registered businesses add it to most sales."
  },
  {
   "term": "BAS",
   "aka": [
    "business activity statement"
   ],
-  "means": "Business activity statement: the form some businesses lodge with their tax office to report and pay GST."
+  "means": "Business activity statement: the form GST-registered Australian businesses lodge with the ATO to report and pay GST."
  },
  {
   "term": "Sales tax",
   "aka": [
    "state sales tax"
   ],
-  "means": "In the US, a tax set by each state (and some cities) that the seller collects at checkout."
+  "means": "In the US, a tax set by most states (and many local areas) that the seller collects at checkout."
  },
  {
   "term": "Nexus",
@@ -565,7 +565,7 @@
    "chargebacks",
    "dispute"
   ],
-  "means": "When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale."
+  "means": "When a customer asks their bank to reverse a card payment. The money is taken back, and you can send evidence to dispute it."
  },
  {
   "term": "Card testing",
@@ -668,7 +668,7 @@
  {
   "term": "De minimis",
   "aka": [],
-  "means": "A value below which imported parcels skip duty or tax. The US ended its $800 de minimis for all countries in August 2025."
+  "means": "A value below which imported parcels skip duty or tax. The US suspended its $800 de minimis for all countries in August 2025."
  },
  {
   "term": "Stocktake",

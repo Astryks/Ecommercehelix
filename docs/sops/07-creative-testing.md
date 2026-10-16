@@ -12,11 +12,11 @@
 
 ## Principles
 
-- **Velocity wins.** Fewer than 1 in 20 ads becomes a big winner. More good tests means more winners.
+- **Velocity wins.** Only a small share of ads become big winners. More good tests means more winners.
 - **70/30.** About 70% of each batch iterates on proven concepts (new hook, new creator, new format of a winner). About 30% tries new ideas.
 - **One variable per batch.** Test hooks, or angles, or formats, not all at once. Keep products and price points similar inside a batch so results are comparable.
 - **Native beats polished.** Low-production, creator-style video and simple statics that look like normal posts usually beat studio ads.
-- **Revive old winners.** A winner from last season can work again unchanged.
+- **Revive old winners.** A winner from last season can often work again unchanged. Test it.
 
 ## Content pillars (Helix names)
 
@@ -33,7 +33,7 @@ Balance each month's ads across four pillars so you are not "playing the same no
 
 ## Hooks (first 0 to 3 seconds)
 
-Most viewers leave in the first quarter of a video. Win the first seconds:
+Many viewers scroll past within the first few seconds. Win those seconds:
 - Movement or a pattern break in frame one.
 - Call out the niche ("If you have curly hair...").
 - Read a one-star review, then answer it.
@@ -44,7 +44,7 @@ Most viewers leave in the first quarter of a video. Win the first seconds:
 ## Steps
 
 1. **Review last batch.** Grade each ad (Star, Steady, Passenger, Drain). Write one line on why winners won (hook, angle, creator, format).
-2. **Pick the variable** for the next batch based on what is weakest (hooks if thumb-stop rate is low, angles if click-through is low, offer if conversion is low).
+2. **Pick the variable** for the next batch based on what is weakest (hooks if hook rate is low, angles if click-through is low, offer if conversion is low).
 3. **Write briefs** (SOP 08) for 4 to 15 ads depending on spend.
 4. **Stage in the build campaign.** Name ads with the naming pattern so tests are easy to read later.
 5. **Launch** into the testing campaign or the campaign that needs a refresh.

@@ -22,7 +22,7 @@
  "steps": [
   {"say": "Pick one honest reason it might run out: a small batch, a preorder with a ship date, a short seasonal colour, or low stock.", "check": "You picked one you can stand behind.", "lost": "Pick one true reason it might run out."},
   {"say": "Write that reason in one sentence on the product page. For example: \"Batch 4 of 6: 300 made, ships 14 November\".", "check": "Shoppers can see why it might go.", "lost": "Write one honest sentence about why it might run out."},
-  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
+  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers. Regulators like the ACCC fine stores for them.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
  ]},
 "3.5": {"intro": "Shoppers worry about buying the wrong thing. Each worry you remove means more orders.",
  "steps": [
@@ -35,10 +35,10 @@
 "3.6": {"intro": "How a price looks changes how it feels. Try one small idea at a time.",
  "steps": [
   {"say": "Add a cost-per-use line under the price. For example \"Under $1 a day\" for a $29 monthly product.", "check": "The price feels smaller, but it's the same.", "lost": "Divide the price by days used. Write that under the price."},
-  {"say": "Try one higher price on one product for two weeks, for example $39 to $49.", "check": "You can compare sales and profit. Often sales barely change and you keep more.", "lost": "Raise one price. Check again in two weeks."},
+  {"say": "Try one higher price on one product for two weeks, for example $39 to $49.", "check": "You can compare sales and profit. Sometimes sales barely change and you keep more.", "lost": "Raise one price. Check again in two weeks."},
   {"say": "Show a bigger option, or the full bundle value, next to the single price.", "check": "The single price looks like better value.", "lost": "Put a bigger option next to your normal one."},
   {"say": "Add a middle option that makes your favourite option look like the obvious pick.", "check": "More shoppers choose your favourite option.", "lost": "Add a middle option. Watch what people pick."},
-  {"say": "Test free shipping against a lower price. Then turn on pay-in-parts (like Afterpay, Klarna or Shop Pay Installments) in **Settings > Payments** for pricier items.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
+  {"say": "Test free shipping against a lower price. Then turn on pay-in-parts (like Afterpay or Klarna) in **Settings > Payments** for pricier items. Shop Pay Installments is only for US, Canadian and UK stores.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
  ]},
 "3.7": {"intro": "Not every product deserves your ad money. A quick monthly check shows which ones do.",
  "steps": [
@@ -50,7 +50,7 @@
  "steps": [
   {"say": "Start an ideas list: customer requests, reviews, search terms, and things that go with your best sellers.", "check": "You have at least 5 ideas, each with a reason.", "lost": "Write three product ideas and why."},
   {"say": "Test your best idea cheaply: a waitlist page, a preorder, a small batch, or asking 5 creators.", "check": "You have real proof people want it, like sign-ups or preorders.", "lost": "Make a simple waitlist page for one idea."},
-  {"say": "Plan the launch (Module 13): build excitement, early access, a launch offer, and ads ready.", "check": "The launch has dates, an offer and ads before day one.", "lost": "Write a launch date and one launch offer."},
+  {"say": "Plan the launch (Lessons 13.2 and 13.3): build excitement, early access, a launch offer, and ads ready.", "check": "The launch has dates, an offer and ads before day one.", "lost": "Write a launch date and one launch offer."},
   {"say": "After 30 days, check the new product with the snapshot from Lesson 3.7.", "check": "It's in one of the four boxes, with a next step.", "lost": "Set a reminder for 30 days after launch."}
  ]},
 "3.9": {"intro": "Offers get old. Others copy them. A regular check keeps yours fresh.",

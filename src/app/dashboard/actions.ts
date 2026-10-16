@@ -255,7 +255,7 @@ async function seasonDoItForMe(userId: string, taskId: string) {
     const draft = { code: promoCode(ev, t.year), percent: safeDiscountPct(ctx), startsOn: s.start, endsOn: s.end };
     const { hasDb, prisma } = await import("@/lib/db");
     if (hasDb) await prisma.promoDraft.upsert({ where: { userId_eventKey: { userId, eventKey: `${t.eventKey}-${t.year}` } }, create: { userId, eventKey: `${t.eventKey}-${t.year}`, ...draft }, update: { ...draft, status: "draft" } });
-    detail = `Helix prepared this discount as a paused draft. It is not live and your store has not changed.\n\nCode: ${draft.code}\nValue: ${draft.percent}% off the order\nStarts: ${draft.startsOn}\nEnds: ${draft.endsOn}\n\nTo make it live, press Approve, then in Shopify: Discounts, Create discount, Amount off order. Type ${draft.code}, choose Percentage ${draft.percent}, set the start and end dates, and Save. Place a test order to check it.`;
+    detail = `Helix prepared this discount as a paused draft. It is not live and your store has not changed.\n\nCode: ${draft.code}\nValue: ${draft.percent}% off the order\nStarts: ${draft.startsOn}\nEnds: ${draft.endsOn}\n\nTo make it live, press Approve, then in Shopify: Discounts, Create discount, Amount off orders. Type ${draft.code}, choose Percentage ${draft.percent}, set the start and end dates, and Save. Place a test order to check it.`;
   }
   await createApproval(userId, { taskId, title: t.title, detail, estAiCost: 0 });
   await logAudit(userId, { actor: "user", action: "season.do_it_for_me", target: taskId, outcome: "ok" });

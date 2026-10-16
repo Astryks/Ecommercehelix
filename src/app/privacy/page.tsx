@@ -12,7 +12,7 @@ export default function Privacy() {
       <Sec title="What we collect">
         <ul className="list-disc space-y-2 pl-6">
           <li><strong>Sign-in details.</strong> Your email address. If you sign in with Google, also your name and profile photo from Google. Sign-in links are emailed through Resend.</li>
-          <li><strong>Your store link and store check results.</strong> If you give us your store link, Helix reads your public home page, one product page and robots.txt, and keeps the results and the fix list.</li>
+          <li><strong>Your store link and store check results.</strong> If you give us your store link, Helix reads your public home page, one product page, your public product list, cart endpoint and robots.txt. It keeps the results and the fix list.</li>
           <li><strong>Business numbers you enter.</strong> Daily sales, orders, ad spend, costs, prices, product and stock details, suppliers, goals and anything you upload by CSV.</li>
           <li><strong>Onboarding answers.</strong> Your country, revenue band and answers to the quick questions.</li>
           <li><strong>Progress.</strong> Lessons, cards and tasks you finish, plans, approvals and a log of actions in your account.</li>
@@ -20,6 +20,8 @@ export default function Privacy() {
           <li><strong>Shopify data, only if you connect Shopify.</strong> See below.</li>
           <li><strong>Google Ads data, only if you connect Google Ads.</strong> See below.</li>
           <li><strong>What you ask the AI helper.</strong> If you use an AI feature, the question you type or the data it summarises, and the answer. See below.</li>
+          <li><strong>Messages you send us.</strong> If you use the contact form: your name, email address, topic and message. If you are signed in, also your account ID and plan.</li>
+          <li><strong>Members group.</strong> On a paid plan, we keep a list of members to let into, or remove from, our private Facebook group. This holds your name, email address and plan status.</li>
           <li><strong>Community posts and requests.</strong> Wins you share on the Wins wall (with your first name), and store review requests you send us (your store link, your note and your email address, sent to our support inbox).</li>
           <li><strong>Billing status.</strong> Your plan and your Stripe customer and subscription IDs. We never see or store your card number.</li>
           <li><strong>Basic technical data.</strong> Our hosting provider processes IP addresses and request logs to deliver and protect the site.</li>
@@ -51,7 +53,7 @@ export default function Privacy() {
       </Sec>
 
       <Sec title="AI features">
-        <p>Some features can use AI to write short text: a plain-English summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. They only run when you press the button. Helix sends the request through the Vercel AI Gateway to the model provider (currently Google&apos;s Gemini models). We send only what the feature needs, such as your store link, store check findings, product name, plan and the question you typed. We do not send your email, name or tokens. Answers are cached so the same request is not sent twice, and each call is logged (feature, size and cost) to enforce monthly limits. We do not use your data to train AI models. If AI is off or a limit is reached, Helix shows its standard advice instead.</p>
+        <p>Some features can use AI to write short text: a plain-English summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. They only run when you press the button. Helix sends the request through the Vercel AI Gateway to the model provider (currently Google&apos;s Gemini models). We send only what the feature needs, such as your store link, store check findings, product name, plan and the question you typed. We do not send your email, name or tokens. Answers are cached so the same request is not sent twice, and each call is logged (feature, size and cost) to enforce monthly limits. We do not use your data to train AI models. The model provider handles each request under its own terms with Vercel. If AI is off or a limit is reached, Helix shows its standard advice instead.</p>
       </Sec>
 
       <Sec title="Why we use it (and our legal bases)">
@@ -60,7 +62,7 @@ export default function Privacy() {
           <li><strong>To bill paid plans</strong> and keep tax records. Basis: contract and legal obligation.</li>
           <li><strong>To keep Helix secure</strong> and prevent abuse. Basis: our legitimate interests in running a safe service.</li>
           <li><strong>To send sign-in links and service emails</strong> (such as receipts and important changes). Basis: contract.</li>
-          <li><strong>Marketing emails</strong>: only with your consent, which you can withdraw at any time.</li>
+          <li><strong>Product emails</strong> (daily steps, event reminders, alerts, the weekly scorecard and win-back emails). We send these to account holders. In Australia this relies on consent inferred from your account under the Spam Act 2003. Elsewhere it relies on our legitimate interests. Every one has a one-click unsubscribe, and you can switch each type off in Settings.</li>
         </ul>
       </Sec>
 
@@ -85,7 +87,7 @@ export default function Privacy() {
             <tbody className="divide-y divide-slate-200">
               <tr><td className="py-2 pr-4 font-semibold">Vercel</td><td className="py-2 pr-4">Website and app hosting</td><td className="py-2">United States and global edge network</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Neon</td><td className="py-2 pr-4">Database</td><td className="py-2">United States (AWS us-east-1)</td></tr>
-              <tr><td className="py-2 pr-4 font-semibold">Resend</td><td className="py-2 pr-4">Sign-in and service emails</td><td className="py-2">United States</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Resend</td><td className="py-2 pr-4">Sign-in, service and product emails, and contact form messages</td><td className="py-2">United States</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Stripe</td><td className="py-2 pr-4">Payments and subscriptions (card details go straight to Stripe)</td><td className="py-2">United States and other Stripe locations</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Meta</td><td className="py-2 pr-4">Only if you connect it: reading your ad results, creating paused drafts</td><td className="py-2">United States and other Meta locations</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Shopify</td><td className="py-2 pr-4">Only if you connect it: reading your orders, products and stock</td><td className="py-2">Canada, United States and other Shopify locations</td></tr>

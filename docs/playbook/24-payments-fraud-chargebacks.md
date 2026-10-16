@@ -22,7 +22,7 @@
 >
 > **Words to know:**
 >
-> - **Chargeback:** When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale.
+> - **Chargeback:** When a customer asks their bank to reverse a card payment. The money is taken back, and you can send evidence to dispute it.
 > - **Card testing:** When fraudsters use your checkout to try many stolen card numbers with small orders.
 > - **Payout:** The money your payment provider sends to your bank. It takes out its fees, refunds and any held amounts first.
 > - **Payment reserve:** Part of your sales that a payment provider holds back for a while. It covers refunds or chargebacks.
@@ -60,7 +60,7 @@
 
 **Expected result:** Your payment list is lean.
 
-**Watch out:** Outside the US: buy now pay later often lifts order value but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before promoting them.
+**Watch out:** Outside the US: buy now pay later often lifts order value. Its fee is often several times a card fee. US: Shop Pay Installments has its own fee, set per store. Compare it with your margin before promoting it.
 
 **Step 6.** Check each provider's fee page once a year.
 
@@ -71,7 +71,7 @@
 
 **Why this matters:** A payment provider can hold part of your money if it sees risk. For example: a new account, a sudden jump in sales, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
 
-**Step 1.** Read each provider's rules on holds and reserves once. A reserve is money held back for a while in case of refunds.
+**Step 1.** Read each provider's rules on holds and reserves once (see [Shopify: reserves](https://help.shopify.com/en/manual/payments/shopify-payments/payouts/reserves)). A reserve is money held back for a while in case of refunds.
 
 **Expected result:** You know what triggers a hold.
 
@@ -81,7 +81,7 @@
 
 **Step 3.** Add tracking to every order within a day.
 
-**Expected result:** Held money is released faster because orders show as delivered.
+**Expected result:** Slow fulfilment is a known risk signal, so fast tracking makes holds less likely.
 
 **Step 4.** Show honest delivery times and state pre-order ship dates clearly.
 
@@ -104,11 +104,11 @@
 ## Lesson 24.3: Chargebacks: how they work and how to answer
 <!-- stage:grow -->
 
-**Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away. You have a short time to prove the sale was fine.
+**Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The money and a chargeback fee are taken straight away. On Shopify Payments, the fee comes back if you win. You have a short time to prove the sale was fine.
 
 **Step 1.** Open the chargeback in Shopify and note the deadline to reply. It is usually 7 to 21 days on Shopify Payments (see [Shopify: responding to chargebacks](https://help.shopify.com/en/manual/payments/chargebacks/chargeback-process)).
 
-**Expected result:** You know your deadline. Customers usually have about 120 days to dispute.
+**Expected result:** You know your deadline. Customers usually have about 120 days to dispute, often counted from the expected delivery date.
 
 **Step 2.** Read the reason: "not received", "not as described" or "fraudulent".
 
@@ -124,19 +124,19 @@
 
 **Step 5.** For "fraudulent", prove the real cardholder ordered. Show matching billing and shipping address, past orders and opened tracking emails.
 
-**Expected result:** You have the strongest proof available. These are the hardest to win.
+**Expected result:** You have the strongest proof available. These are often the hardest to win.
 
 **Step 6.** Write a short, factual response with the strongest proof first and submit it.
 
 **Expected result:** The response is submitted before the deadline.
 
-**Step 7.** Contact the customer politely, because many disputes are confusion they can withdraw.
+**Step 7.** Contact the customer politely, because some disputes are confusion they can withdraw.
 
 **Expected result:** Some disputes are withdrawn.
 
-**Step 8.** Track your chargeback rate (disputes divided by orders) monthly (see [Shopify: resolving a chargeback](https://help.shopify.com/en/manual/payments/chargebacks/resolve-chargeback)).
+**Step 8.** Track your chargeback rate (disputes divided by orders) monthly (see [Shopify: resolving a chargeback](https://help.shopify.com/en/manual/payments/chargebacks/resolve-chargeback)). Disputes count even when you win.
 
-**Expected result:** You catch a rising rate before card networks penalise you.
+**Expected result:** You catch a rising rate before card networks penalise you. Mastercard flags merchants from 1.5% and 100 disputes a month. Visa's line is 1.5% and 1,500 disputes plus fraud reports in most regions (see [Shopify: monitoring programs](https://help.shopify.com/en/manual/payments/chargebacks/monitoring-programs)). Your provider may act sooner, so a common rule of thumb is to stay well under 1%.
 
 **Watch out:** For high-value orders, use signature on delivery. It is the strongest proof you can buy.
 
@@ -149,7 +149,7 @@
 
 **Expected result:** You can spot card testing.
 
-**Step 2.** Use your platform's protections: Shopify's fraud analysis and checkout bot protection (see [Shopify: preventing fraud](https://help.shopify.com/en/manual/payments/fraud-prevention/preventing-fraud) and [bot protection](https://help.shopify.com/en/manual/checkout-settings/bot-protection)).
+**Step 2.** Use Shopify's fraud analysis and the card testing protection built into Shopify Payments (see [Shopify: preventing fraud](https://help.shopify.com/en/manual/payments/fraud-prevention/preventing-fraud)). Checkout [bot protection](https://help.shopify.com/en/manual/checkout-settings/bot-protection) is for Shopify Plus flash sales only.
 
 **Expected result:** You know what Shopify already blocks.
 
@@ -161,9 +161,9 @@
 
 **Expected result:** You pay a refund instead of a chargeback.
 
-**Step 5.** Turn on 3D Secure where your provider allows, at least for high-risk orders. It is an extra bank check at payment.
+**Step 5.** Use 3D Secure where your provider allows it. Shopify Payments applies it only when the card's bank asks.
 
-**Expected result:** Risky payments get an extra check.
+**Expected result:** Risky payments get an extra check where your provider supports it. On Stripe, Radar rules can request it for risky payments.
 
 **Step 6.** If testing keeps happening, raise the minimum order or hide your cheapest product for a while.
 
@@ -184,7 +184,7 @@
 
 **Expected result:** Fewer full refunds.
 
-**Watch out:** Outside the US: refunds for faulty items are a legal right; goodwill is extra (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: state law and your published policy set the rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** Outside the US: in Australia, faulty items carry a legal right to repair, replacement or refund. Goodwill is extra (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: state law and your published policy set the rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 3.** Always refund to the original payment method.
 

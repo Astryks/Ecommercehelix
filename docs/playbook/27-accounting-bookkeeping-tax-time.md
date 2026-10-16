@@ -170,7 +170,7 @@
 
 **Expected result:** The year's records are in one place.
 
-**Watch out:** Keep most records for 5 years in some countries (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). Keep them at least 3 years in the US (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
+**Watch out:** Outside the US: keep most records for 5 years (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep them at least 3 years, and employment tax records 4 years (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
 
 ### Good to know
 
@@ -195,7 +195,7 @@
 
 **Expected result:** Stock and super are done.
 
-**Watch out:** From 1 July 2026, employers pay super with each payday. It must reach the fund within 7 business days (see [ATO: Payday Super](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/payday-super/about-payday-super)).
+**Watch out:** From 1 July 2026, employers pay super with each payday. It must reach the fund within 7 business days (see [ATO: Payday Super](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/about-payday-super)).
 
 **Step 3.** Before 30 June, gather receipts for big purchases and check which costs fall in this year.
 
@@ -205,7 +205,7 @@
 
 **Expected result:** Your accountant has everything.
 
-**Step 5.** Lodge the June quarter BAS by 28 July (later if lodged online or through an agent).
+**Step 5.** Lodge the June quarter BAS by 28 July. Lodging online may add two weeks, and agents may have later dates.
 
 **Expected result:** BAS is lodged.
 
@@ -232,17 +232,17 @@
 
 **Step 3.** By 31 January, send Form 1099-NEC to contractors you paid $2,000 or more in 2026. File it with the IRS too. The 2025 limit was $600 (see [IRS instructions](https://www.irs.gov/instructions/i1099mec)).
 
-**Expected result:** All 1099s are sent and filed.
+**Expected result:** All 1099s are sent and filed. Payment providers send a 1099-K once you pass $20,000 across more than 200 payments (see [IRS: 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k)).
 
 **Step 4.** By 15 March, file partnership and S corporation returns (next business day if a weekend).
 
 **Expected result:** Those returns are filed.
 
-**Step 5.** By 15 April, file personal and C corporation returns and pay the first estimated tax. Later payments usually fall in June, September and January.
+**Step 5.** By 15 April, file personal and C corporation returns and pay the first estimated tax. Later payments fall on 15 June, 15 September and 15 January (see [IRS: estimated taxes](https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes)).
 
 **Expected result:** Returns are filed and estimates are on the calendar.
 
-**Watch out:** Foreign-owned US companies have extra forms and different dates, so use a cross-border specialist (see [IRS Form 1120-F](https://www.irs.gov/instructions/i1120f)).
+**Watch out:** Foreign-owned US companies have extra forms, such as Form 5472, so use a cross-border specialist (see [IRS Form 5472](https://www.irs.gov/forms-pubs/about-form-5472)).
 
 <!-- do:calendar -->
 

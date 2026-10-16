@@ -209,7 +209,7 @@ GUIDES = [
  ("22", "## Lesson 22.9", "shopify-2-free-shipping", "Set a free shipping amount in Shopify", "Shopify: set up shipping rates", "https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates/setting-up-shipping-rates"),
  ("22", "## Lesson 22.10", "shopify-6-taxes", "Turn on tax settings in Shopify", "Shopify: taxes", "https://help.shopify.com/en/manual/taxes"),
  ("22", "## Lesson 22.11", "shopify-7-payments", "Turn on payments in Shopify", "Shopify Payments", "https://help.shopify.com/en/manual/payments/shopify-payments"),
- ("22", "## Lesson 22.14", "shopify-8-meta-tracking", "Connect Meta tracking from Shopify", "Shopify: Facebook and Instagram", "https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta"),
+ ("20", "## Lesson 20.1", "shopify-8-meta-tracking", "Connect Meta tracking from Shopify", "Shopify: Facebook and Instagram", "https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta"),
  ("22", "## Lesson 22.16", "shopify-9-test-order", "Place a test order in Shopify", "Shopify: test orders", "https://help.shopify.com/en/manual/checkout-settings/test-orders"),
 ]
 

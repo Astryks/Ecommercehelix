@@ -5,42 +5,42 @@
   {"say": "For each provider, divide total fees by the sales it handled. Example: $180 ÷ $9,000 = 2%.", "check": "You have a real fee rate per provider.", "lost": "Fees ÷ sales."},
   {"say": "Add hidden costs: currency conversion when you withdraw, fixed per-order fees on small orders, and fees kept on refunds.", "check": "Your fee rates include everything.", "lost": "Add the currency fee if you have one."},
   {"say": "Enter your blended fee rate (all fees ÷ all sales) in Helix as payment fees.", "check": "Helix profit uses your real fees.", "lost": "Enter one fee rate in Helix."},
-  {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Outside the US: buy now pay later often lifts order value, but its fee is several times a card fee. US: compare Shop Pay Installments fees with your margin before pushing them.", "lost": "Remove one rarely used, pricey method."},
+  {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Outside the US: buy now pay later often lifts order value, but its fee is often several times a card fee. US: Shop Pay Installments has its own fee, set per store. Compare it with your margin before pushing it.", "lost": "Remove one rarely used, pricey method."},
   {"say": "Check each provider's fee page once a year.", "check": "Fee rises never surprise you.", "lost": "Put a yearly reminder in your calendar."}
  ]},
 "24.2": {"intro": "A payment provider can hold some of your money if it sees risk. A hold in the busy season could stop you paying suppliers.",
  "steps": [
   {"say": "Read each provider's rules on holds and reserves (money held back for a while in case of refunds), once.", "check": "You know what causes a hold.", "lost": "Read Shopify Payments' hold rules."},
   {"say": "Before a big sale or launch, tell your providers the dates and expected sales.", "check": "A planned spike is less likely to cause a hold.", "lost": "Email your provider your sale dates."},
-  {"say": "Add tracking to every order within a day.", "check": "Held money is released faster because orders show as delivered.", "lost": "Add tracking to today's orders."},
+  {"say": "Add tracking to every order within a day.", "check": "Slow fulfilment is a known risk signal, so fast tracking makes holds less likely.", "lost": "Add tracking to today's orders."},
   {"say": "Show honest delivery times. State pre-order ship dates clearly.", "check": "Customers know when to expect orders.", "lost": "Add a ship date to pre-orders."},
   {"say": "Keep at least one month of costs in cash, and a second payment method ready to switch on.", "check": "A hold can't stop the business.", "lost": "Set up PayPal as a backup."},
   {"say": "If money is held, give the provider everything in one go.\n\n1. Ask exactly what they need (like tracking, invoices or ID).\n2. Send it all in one reply.\n3. Add a follow-up date to your Helix calendar.", "check": "The hold is sorted as fast as possible.", "careful": "Keep business details, bank account and ID up to date with every provider. Old details are a common cause of freezes.", "lost": "Ask what they need. Send it all at once."}
  ]},
-"24.3": {"intro": "A chargeback is when a customer asks their bank to reverse a card payment. The bank takes the money and a fee straight away. You have a short time to prove the sale was fine.",
+"24.3": {"intro": "A chargeback is when a customer asks their bank to reverse a card payment. The money and a chargeback fee are taken straight away. On Shopify Payments, the fee comes back if you win. You have a short time to prove the sale was fine.",
  "steps": [
-  {"say": "Open the chargeback in Shopify. Note the deadline, usually 7 to 21 days on Shopify Payments.", "check": "You know your deadline. Customers usually have about 120 days to dispute.", "lost": "Write down the deadline."},
+  {"say": "Open the chargeback in Shopify. Note the deadline, usually 7 to 21 days on Shopify Payments.", "check": "You know your deadline. Customers usually have about 120 days to dispute, often counted from the expected delivery date.", "lost": "Write down the deadline."},
   {"say": "Read the reason: \"not received\", \"not as described\" or \"fraudulent\".", "check": "You know what proof you need.", "lost": "Find the reason word."},
   {"say": "For \"not received\", gather tracking that shows delivery to the address given, plus any messages confirming details.", "check": "You have proof of delivery.", "lost": "Save the tracking page."},
   {"say": "For \"not as described\", gather your product page at the time, photos, your returns policy, and messages offering a fix.", "check": "You can show the product matched the listing.", "lost": "Save a copy of the product page."},
-  {"say": "For \"fraudulent\", gather proof the real cardholder ordered: matching billing and shipping address, past orders, and opened tracking emails.", "check": "You have the best proof available. These are the hardest to win.", "lost": "Check if billing and shipping match."},
+  {"say": "For \"fraudulent\", gather proof the real cardholder ordered: matching billing and shipping address, past orders, and opened tracking emails.", "check": "You have the best proof available. These are often the hardest to win.", "lost": "Check if billing and shipping match."},
   {"say": "Write a short, factual response with the strongest proof first. Submit it.", "check": "It's submitted before the deadline.", "lost": "Put your best proof first. Submit."},
-  {"say": "Contact the customer politely. Many disputes are confusion they can withdraw.", "check": "Some disputes are withdrawn.", "lost": "Send one kind message."},
-  {"say": "Track your chargeback rate (disputes ÷ orders) every month. Example: 2 ÷ 1,000 = 0.2%.", "check": "You catch a rising rate before card networks penalise you.", "careful": "For pricey orders, use signature on delivery. It's the strongest proof you can buy.", "lost": "Disputes ÷ orders, once a month."}
+  {"say": "Contact the customer politely. Some disputes are confusion they can withdraw.", "check": "Some disputes are withdrawn.", "lost": "Send one kind message."},
+  {"say": "Track your chargeback rate (disputes ÷ orders) every month. Example: 2 ÷ 1,000 = 0.2%.", "check": "You catch a rising rate before card networks penalise you. Disputes count even when you win. Aim to stay well under 1%.", "careful": "For pricey orders, use signature on delivery. It's the strongest proof you can buy.", "lost": "Disputes ÷ orders, once a month."}
  ]},
 "24.4": {"intro": "Card testing is when fraudsters use your checkout to try stolen card numbers, usually with lots of tiny orders on your cheapest product.",
  "steps": [
   {"say": "Learn the signs: bursts of small orders, the same cheap item, odd names or emails, lots of failed payments, or different addresses on one card.", "check": "You can spot card testing.", "lost": "Many tiny orders at once? That's a sign."},
-  {"say": "Use your platform's protections: Shopify's fraud analysis and checkout bot protection.", "check": "You know what Shopify already blocks.", "lost": "Turn on bot protection."},
+  {"say": "Use your platform's protections: Shopify's fraud analysis and its built-in card testing protection on Shopify Payments.", "check": "You know what Shopify already blocks. Checkout bot protection is for Shopify Plus flash sales only.", "lost": "Open an order and read its fraud analysis."},
   {"say": "Read the fraud risk level on every order before shipping. Hold high-risk orders while you contact the customer.", "check": "No high-risk order ships unchecked.", "lost": "Check the risk level before you ship."},
   {"say": "Cancel and refund any order that looks like fraud before shipping.", "check": "You pay a refund instead of a chargeback.", "lost": "Looks fake? Cancel and refund."},
-  {"say": "Turn on 3D Secure (an extra bank check at payment) where your provider allows, at least for high-risk orders.", "check": "Risky payments get an extra check.", "lost": "Turn on 3D Secure."},
+  {"say": "Use 3D Secure (an extra bank check at payment) where your provider allows it. Shopify Payments applies it only when the card's bank asks.", "check": "Risky payments get an extra check where your provider supports it. On Stripe, Radar rules can request it.", "lost": "Check if your provider lets you request 3D Secure."},
   {"say": "If testing keeps happening, raise the minimum order or hide your cheapest product for a while.", "check": "The attacks stop.", "careful": "Be careful with gift cards, and very large first orders going to parcel forwarding addresses.", "lost": "Hide your cheapest product for a week."}
  ]},
 "24.5": {"intro": "A fast, fair refund is cheaper than a dispute. A clear rule means you don't decide each case from scratch.",
  "steps": [
   {"say": "Write a one-page refund rule: when you refund in full, when you offer a part refund or credit, and who approves it.", "check": "Your team can handle any refund the way you would.", "lost": "Write when you give a full refund."},
-  {"say": "For small problems, offer a fix first: a part refund or store credit if the customer keeps the item.", "check": "Fewer full refunds.", "careful": "Outside the US: refunds for faulty items are a legal right. Goodwill is extra. US: state law and your published policy set the rules.", "lost": "Offer a part refund for a small problem."},
+  {"say": "For small problems, offer a fix first: a part refund or store credit if the customer keeps the item.", "check": "Fewer full refunds.", "careful": "Outside the US: in Australia, faulty items carry a legal right to repair, replacement or refund. Goodwill is extra. US: state law and your published policy set the rules.", "lost": "Offer a part refund for a small problem."},
   {"say": "Always refund to the original payment method.", "check": "No disputes from money sent another way.", "lost": "Refund to the same card."},
   {"say": "Write down every refund reason.", "check": "You can fix the cause.", "lost": "Write the reason for this refund."},
   {"say": "Enter refunds in Helix.", "check": "Profit stays true.", "lost": "Enter this week's refunds."}

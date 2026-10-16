@@ -1,6 +1,6 @@
 # SOP 11: Landing pages and site CRO
 
-> **In plain words.** Make more money from every visitor, which makes every ad cheaper. Fix things in this order: make the site clear, then convincing, then easy to buy from, then add ways to buy more.
+> **In plain words.** Make more money from every visitor, which makes every ad cheaper. Fix things in this order. Make the site clear, then convincing, then easy to buy from. Then add ways to buy more.
 
 **Purpose.** Raise revenue per visit so every channel becomes cheaper. Work in order: make the site clear, then convincing, then remove friction, then sell harder.
 
@@ -25,13 +25,13 @@ Avoid high-effort, low-impact work. A cheap theme tweak shipped this week usuall
 - [ ] Promo bar with the current offer or shipping promise.
 - [ ] Simple navigation, best sellers easy to reach. Visual menus on mobile.
 - [ ] Top banner with one message and one call to action. Separate 4:5 mobile image.
-- [ ] Email capture pop-up (timed, easy to close on mobile). Modal pop-ups typically capture 5 to 10% of visitors; footer forms capture a tiny fraction of that.
+- [ ] Email capture pop-up (timed, easy to close on mobile). Klaviyo treats a 3% submit rate as its general benchmark. Standard pop-ups often reach 3 to 8% of people who see them (see [Klaviyo: sign-up form best practices](https://www.klaviyo.com/blog/sign-up-form-best-practices)). Footer forms usually capture far fewer.
 
 **Product page (treat it as a landing page)**
 - [ ] One line under the title saying why this product is different.
 - [ ] Offer block above the fold (bundle, gift, free shipping threshold).
 - [ ] 3 to 5 reasons why, with icons or short lines.
-- [ ] Curated reviews with photos near the top, full reviews lower.
+- [ ] Curated reviews with photos near the top, all genuine reviews lower. Never hide or edit negative ones (SOP 16).
 - [ ] FAQ answering the top objections (sizing, materials, shipping time, returns, how to use).
 - [ ] Sticky add-to-cart on mobile.
 
@@ -43,13 +43,13 @@ Avoid high-effort, low-impact work. A cheap theme tweak shipped this week usuall
 **Cart and checkout**
 - [ ] Progress bar to free shipping or gift.
 - [ ] Express payment buttons.
-- [ ] No surprise costs at the last step.
+- [ ] No surprise costs at the last step. Extra costs (shipping, tax, fees) are the top reason shoppers abandon checkout (see [Baymard: cart abandonment](https://baymard.com/lists/cart-abandonment-rate)).
 
 ## Landing pages
 
 - The ad sells the click; the page sells the product.
 - One message per page, matching the ad that sends traffic.
-- Answer the key questions in order: what is it, why should I care, why trust you, why now, what if it doesn't work.
+- Answer the key questions in order. What is it? Why should I care? Why trust you? Why now? What if it doesn't work?
 - Formats that work: "N reasons why" listicle, comparison page, founder story, problem and solution, bundle builder.
 - Build fast (48 hours with a page builder), test against the product page.
 

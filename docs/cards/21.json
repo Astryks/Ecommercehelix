@@ -15,11 +15,11 @@
  "steps": [
   {"say": "Pick the posting rhythm in the lesson's table that fits your stage.", "check": "You have a weekly posting goal for each platform.", "lost": "Start with 3 posts a week."},
   {"say": "Batch it: film once a week, then schedule the whole week in Meta Business Suite or a scheduler.", "check": "A week of posts is scheduled in one sitting.", "lost": "Film 3 videos in one go."},
-  {"say": "Make every post good enough to be an ad later. Put most of the value in the first quarter of the video. Say key points twice.", "check": "Your best free posts can become ads, partnership ads or Spark ads.", "lost": "Put the best bit first."}
+  {"say": "Make every post good enough to be an ad later. Put most of the value in the first quarter of the video. Say key points twice.", "check": "Your best free posts can become ads, partnership ads or Spark ads. Spark ads are TikTok ads that run a real post.", "lost": "Put the best bit first."}
  ]},
 "21.5": {"intro": "Organic reach means people who see your posts without you paying. A few habits grow it.",
  "steps": [
-  {"say": "Use trial reels or test posts to show a reel to non-followers first. Check after 24 hours. Share winners with everyone.", "check": "You test hooks without cluttering your feed.", "lost": "Post one trial reel."},
+  {"say": "On Instagram, post a trial reel so non-followers see it first. Check results after 24 hours. Share winners with your followers.", "check": "You test hooks without cluttering your feed.", "lost": "Post one trial reel."},
   {"say": "Say your keywords out loud, and put them in on-screen text and captions (\"linen shirt for hot weather\").", "check": "Your posts show up in social search.", "lost": "Put one keyword in your caption."},
   {"say": "Remake the first three seconds of your best free posts with new hooks (Lesson 19.8). Post them again.", "check": "Proven posts get a second life.", "lost": "Give your best post a new opening."},
   {"say": "Make collab posts with creators and partner brands. Reply to every comment in the first hour.", "check": "You reach partners' audiences and get early likes and comments.", "lost": "Reply to every comment in the first hour."},
@@ -31,11 +31,11 @@
   {"say": "Ask happy customers to tag you. With permission, reshare their posts to Stories and save them to a highlight.", "check": "Customer posts fill a highlight.", "lost": "Reshare one tagged post."},
   {"say": "Keep shop ratings healthy where you sell through social shops. Reply to bad reviews publicly and kindly, then fix the problem privately.", "check": "Future customers see a calm, helpful reply.", "lost": "Reply kindly to one bad review."}
  ]},
-"21.8": {"intro": "Social shops let people buy without leaving the app. A few checks first stop bad scores and lost orders. See Lessons 12.6 and 12.10 too.",
+"21.8": {"intro": "Social shops let people browse your products inside the app. Since 2025, Facebook and Instagram shops send buyers to your website to pay. TikTok Shop keeps checkout in the app, but only in some countries. See Lessons 12.6 and 12.10 too.",
  "steps": [
   {"say": "Connect a clean catalog with one price per product and correct stock.", "check": "The shop catalog matches your store.", "lost": "Check your best seller's price matches."},
   {"say": "Write shipping times and returns clearly in the shop settings.", "check": "Buyers know what to expect, which protects your shop score.", "lost": "Add your shipping time."},
-  {"say": "Check which store features don't work in the in-app checkout (like thank-you page offers). Check seller fees. Make sure in-app orders flow into your store and email app.", "check": "In-app orders make money and land in your normal systems.", "lost": "Check the seller fees."}
+  {"say": "Check which store features don't work in TikTok Shop's in-app checkout (like thank-you page offers). Check seller fees. Make sure in-app orders flow into your store and email app.", "check": "In-app orders make money and land in your normal systems.", "lost": "Check the seller fees."}
  ]},
 "21.9": {"intro": "A profile that's out of date or doesn't match your ads loses buyers. Helix doesn't check your social profiles yet, so this is your own 10-minute check.",
  "steps": [

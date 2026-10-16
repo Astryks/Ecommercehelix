@@ -57,7 +57,7 @@ export const PLANS: Plan[] = [
       "A monthly re-check of your store with a fix list that quotes your pages",
       "Meta connected: daily ad spend and results synced into your profit (open to early testers now, all stores after Meta's approval)",
       "Meta campaigns built as paused drafts in your own account. You press Launch",
-      "Shopify connected: daily orders, sales, refunds, product costs and stock synced into your profit (coming soon)",
+      "Shopify connected: daily orders, sales, refunds, product costs and stock synced into your profit (read-only, new)",
       "Google Ads connected: daily spend and conversion value for ROAS by channel, and paused Search campaigns after you approve (coming soon)",
       "50 AI write-ups a month: store-check summaries, ad copy drafts and \"I'm lost\" help",
       "Black Friday and seasonal prep plans with due dates on Today",
@@ -66,7 +66,7 @@ export const PLANS: Plan[] = [
     doItForMe: [
       "Builds your Meta campaign, ad set and 3 ads as a paused draft in your own account. You add images and press Launch. Helix never spends or changes live budgets.",
       "Pulls your Meta spend and results into your profit dashboard every day.",
-      "Coming soon: pulls your Shopify sales and your Google Ads spend in every day, and builds a paused Google Search campaign after you approve.",
+      "Pulls your Shopify orders, sales and stock in every day once you connect it. Coming soon: your Google Ads spend, and a paused Google Search campaign after you approve.",
       "Builds your sale prep plan with due dates and calendar invites.",
       "Re-checks your store every month and lists exactly what changed.",
       "Everything else is a step-by-step checklist with the exact settings to use. Helix guides you, and you click.",

@@ -1,7 +1,7 @@
 {
 "5.1": {"intro": "These days, the ad itself picks who stops to look. So having lots of different ads matters a lot.",
  "steps": [
-  {"say": "Open Meta Ads Manager. Click the **Ads** tab. Count how many different ad ideas are live. Resized copies don't count.", "check": "You have a number. Fewer than 6 ideas usually means you need more ads.", "lost": "Count your live ads with different ideas. Write the number."},
+  {"say": "Open Meta Ads Manager. Click the **Ads** tab. Count how many different ad ideas are live. Resized copies don't count.", "check": "You have a number. As a rough guide, fewer than 6 ideas means you need more ads.", "lost": "Count your live ads with different ideas. Write the number."},
   {"say": "Check your main ad set for new people uses a wide audience: Advantage+ audience, or just country and age.", "check": "Your audience is wide, and your ads do the picking.", "lost": "Open your main ad set. Is the audience wide? Yes or no."},
   {"say": "Set a goal for new ads, like 4 to 8 new ads every two weeks.", "check": "You wrote down how many new ads you'll make.", "lost": "Write: \"4 new ads every two weeks.\""}
  ]},
@@ -40,7 +40,7 @@
  "steps": [
   {"say": "Write 3 different hooks for your next ad. Ideas: movement or a surprising first picture, calling out a group (\"For runners with flat feet...\"), the result first, a one-star review answered, or a curious question.", "check": "You have 3 hooks of different types.", "lost": "Write three different first lines."},
   {"say": "Make one version of the ad for each hook. Keep everything else the same.", "check": "You have 3 ads that only differ in the first 3 seconds.", "lost": "Same ad, three different starts."},
-  {"say": "After 7 days, compare hook rate in Ads Manager (3-second plays ÷ impressions).", "check": "You know your best hook. Above about 25% is good for most accounts.", "careful": "A bold line on a still picture can work too. Test pictures as well.", "lost": "After a week, see which start kept the most people."}
+  {"say": "After 7 days, compare hook rate in Ads Manager (3-second plays ÷ impressions). It's a custom metric (Lesson 6.11).", "check": "You know your best hook. A common rule of thumb: above about 25% is good.", "careful": "A bold line on a still picture can work too. Test pictures as well.", "lost": "After a week, see which start kept the most people."}
  ]},
 "5.8": {"intro": "A script framework is a proven order for the parts of an ad. It stops rambling.",
  "steps": [
@@ -87,7 +87,7 @@
   {"say": "Make picture templates in 4:5 (feed) and 9:16 (stories and reels). Keep text inside the safe zones.", "check": "Text is never covered by buttons.", "lost": "Make two sizes. Keep text away from the edges."},
   {"say": "In your phone editor, cut silences, add captions and a text hook, and export in each size.", "check": "Each video is ready in both sizes.", "lost": "Cut the quiet bits. Add captions. Export."},
   {"say": "Let AI help.\n\n1. Use an AI tool to resize your ad and make versions.\n2. Add an AI voice-over if you want.\n3. Label AI-made people and voices where the platform's rules say so.", "check": "More versions in less time, labelled where needed.", "careful": "Never fake reviews with AI.", "lost": "Use an AI tool to resize one ad."},
-  {"say": "Before launch, scroll to the creative options in the ad. Find the auto-enhance settings. Turn off any you don't want.", "check": "The ad shows exactly as you made it.", "lost": "Check auto-enhance settings before you publish."}
+  {"say": "Before launch, open **Advantage+ creative** in the ad and check **Enhancements** and **Advanced preview**. Turn off any you don't want.", "check": "The ad shows exactly as you made it.", "lost": "Check auto-enhance settings before you publish."}
  ]},
 "5.17": {"intro": "Big brands spend a lot on seasonal moments. Watching them gives you free ideas.",
  "steps": [

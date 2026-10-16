@@ -2,7 +2,7 @@
 
 > **In plain words.** Ask customers why they bought and what nearly stopped them. Use their words in your ads, pages and offers, and collect reviews, because proof makes every future sale cheaper.
 
-**Purpose.** Use the customer's own words to write offers, pages and ads that convert, and build the proof that lowers the cost of every future sale.
+**Purpose.** Use the customer's own words to write offers, pages and ads that convert. Build the proof that lowers the cost of every future sale.
 
 **Copilot triggers**
 - Onboarding (first-week task).
@@ -30,14 +30,14 @@
 ## Reviews engine
 
 - Ask at the right time (after delivery plus a few days of use), by email and SMS.
-- Ask for photos and video; offer a small thank-you where platform rules allow.
-- Reply to reviews, especially negative ones, quickly and kindly.
+- Ask for photos and video. Any thank-you must be the same for good and bad reviews, and disclosed. Never reward only positive reviews (see [ACCC: managing online reviews](https://www.accc.gov.au/business/advertising-promoting-your-business/managing-online-reviews) and [FTC: reviews rule Q&A](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers)).
+- Reply to reviews, especially negative ones, quickly and kindly. Never hide, edit or remove genuine negative reviews.
 - Feature the best reviews on product pages, in ads (Prove pillar) and in emails.
-- Ask happy customers for a Google review too, but follow platform rules (no incentivised Google reviews, no mass asking that triggers filters).
+- Ask customers for a Google review too. Google bans any incentive for reviews. It also bans asking only happy customers (see [Google: prohibited and restricted content](https://support.google.com/contributionpolicy/answer/7400114)).
 
 ## Competitor watch (15 minutes a week)
 
-- Check competitors' active ads in public ad libraries: new angles, offers, formats.
+- Check competitors' active ads in public ad libraries (Meta Ad Library, Google Ads Transparency Center): new angles, offers, formats.
 - Check their sale timing and offers.
 - Log ideas worth adapting (never copy).
 

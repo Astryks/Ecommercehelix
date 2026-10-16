@@ -14,24 +14,24 @@
   {"say": "Open a product page on your phone. Before scrolling, look for nine things: title, one line on what's different, star rating, price with a compare-at or bundle value, an offer (\"Buy 2, save 10%\"), size or colour picker, Add to cart, delivery estimate, and trust badges (secure checkout, free returns).", "check": "All nine show before scrolling on mobile.", "lost": "On one product page, check you can see the price and Add to cart without scrolling."},
   {"say": "Scroll the product page. Look for: reasons to buy, how to use it, photo reviews, FAQs, a comparison, guarantees and \"goes well with\" products.", "check": "Shoppers who scroll find an answer to every common worry.", "lost": "Add one FAQ to your best seller's page."},
   {"say": "Open a collection page. Look for filters you can tick more than one of (and reset easily), sort by best selling, badges (new, best seller, low stock) and quick add to cart.", "check": "Shoppers can narrow down and buy in a few taps.", "lost": "Set your collection to sort by best selling."},
-  {"say": "Check your cart and checkout: a progress bar to free shipping or a gift, one upsell spot, express pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal), no surprise fees, and trust badges with policy links.", "check": "Checkout has no surprises and has the fast pay buttons.", "careful": "If an optional add-on annoys people (like shipping protection ticked by default) and hurts sales, remove it.", "lost": "Check the express pay buttons show in your checkout."}
+  {"say": "Check your cart and checkout: a progress bar to free shipping or a gift, one upsell spot, express pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal), no surprise fees, and trust badges with policy links.", "check": "Checkout has no surprises and has the fast pay buttons.", "careful": "If an optional add-on annoys people (like shipping protection ticked by default) and hurts sales, remove it. And any compare-at (\"was\") price must be one you really charged recently.", "lost": "Check the express pay buttons show in your checkout."}
  ]},
-"9.3": {"intro": "Accessibility means everyone can use your store, even people who can't see well or only use a keyboard. It's kind, and it often helps on Google too.",
+"9.3": {"intro": "Accessibility means everyone can use your store, even people who can't see well or only use a keyboard. Some fixes, like alt text, also help search engines.",
  "steps": [
-  {"say": "Run a free contrast checker (like WebAIM's) on your text and button colours.", "check": "Body text and buttons pass at least the AA level.", "lost": "Check your main button colour in a contrast checker."},
+  {"say": "Run a free contrast checker (like WebAIM's) on your text and button colours.", "check": "Body text and buttons pass at least the AA level (4.5 to 1 contrast for normal text).", "lost": "Check your main button colour in a contrast checker."},
   {"say": "Add alt text (a short picture description for screen readers) to each product image. Find it in Shopify **Products > [product] > Media**.", "check": "Every image has a short, clear alt text.", "lost": "Add alt text to your best seller's main photo."},
   {"say": "Use only your keyboard. Press Tab to move from the home page all the way to checkout.", "check": "You can reach and use every link, button and form box.", "lost": "Press Tab on your home page. Can you reach the menu?"},
   {"say": "Check body text is at least 16px on mobile, every form box has a label, and videos have captions.", "check": "Text is easy to read, forms are labelled, videos have captions.", "lost": "Check one form has labels on every box."}
  ]},
-"9.4": {"intro": "Most shoppers use a phone. A slow page loses them before they see your stuff. Only big speed wins are worth chasing.",
+"9.4": {"intro": "Most shoppers use a phone. A slow page loses them before they see your stuff. Google checks speed with three Core Web Vitals.",
  "steps": [
   {"say": "Go to pagespeed.web.dev. Test your home page and one product page on mobile.", "check": "You have a load time and a list of the biggest problems.", "lost": "Test just your home page on mobile."},
   {"say": "Make your images and videos smaller (compress them). Aim for product images under about 300 KB.", "check": "Image files are smaller and pages load faster.", "lost": "Compress your biggest product photo."},
   {"say": "Remove apps and scripts you don't use. Set images and videos lower down to lazy-load (they load only when someone scrolls to them).", "check": "Fewer scripts run on each page.", "lost": "Delete one app you don't use."},
-  {"say": "Turn on bot protection (like Shopify's bot settings or your CDN). It blocks fake visitors that mess up reports and slow the site.", "check": "Visits in your reports are real people.", "careful": "Only chase fixes that save 1 to 2 seconds or more. Tiny gains aren't worth it.", "lost": "Find the bot protection setting and turn it on."},
-  {"say": "Before you upload new pictures, shrink them under about 300 KB. Keep videos short and compressed.", "check": "Your media files are small.", "lost": "Shrink the next photo before uploading."},
-  {"say": "Remove any apps and page sections you don't use.", "check": "Fewer scripts load.", "lost": "Remove one section you never use."},
-  {"say": "On your phone, using mobile data (not Wi-Fi), try to buy something. Fix anything hard to tap or read.", "check": "The product page loads in about 3 seconds and buying is easy.", "lost": "Turn off Wi-Fi. Open one product page. Count the seconds."}
+  {"say": "In Shopify, go to **Online Store > Preferences**. Make sure spam protection is on. It stops bots filling in your forms.", "check": "Fake sign-ups stop reaching your email list.", "lost": "Find Spam protection in Online Store > Preferences. Check it's on."},
+  {"say": "In Shopify, find the web performance reports under **Analytics > Reports**. They show the three Core Web Vitals for real visitors.", "check": "You know if you pass Google's \"good\" levels: main image shows in 2.5 seconds or less (LCP), taps react in 200 ms or less (INP), and the page barely jumps (CLS 0.1 or less).", "lost": "Open Analytics > Reports. Search for \"web performance\"."},
+  {"say": "After your fixes, test the same two pages on pagespeed.web.dev again.", "check": "You have a before and after result for each page.", "lost": "Test your home page again. Compare."},
+  {"say": "On your phone, using mobile data (not Wi-Fi), try to buy something. Fix anything hard to tap or read.", "check": "The main product image shows in about 2.5 seconds and buying is easy.", "careful": "Only chase fixes that save a second or more. Tiny gains aren't worth it.", "lost": "Turn off Wi-Fi. Open one product page. Count the seconds."}
  ]},
 "9.5": {"intro": "Copy means the words on your site. Clear, exact words in your customers' own language sell. Fuzzy words don't.",
  "steps": [
@@ -51,7 +51,7 @@
  "steps": [
   {"say": "Install a heatmap and recording tool (like Microsoft Clarity, which is free). Watch 20 recordings of phone visitors.", "check": "You've noted angry repeat clicks, clicks on things that aren't links, and how far people scroll.", "lost": "Install the tool. Watch just 5 recordings today."},
   {"say": "In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the path: visits, then added to cart, then reached checkout, then bought.", "check": "You know which step loses the most people.", "lost": "Find the step with the biggest drop."},
-  {"say": "In Google Analytics, check where visitors come from, which landing pages sell, and visits from AI assistants.", "check": "You know where your best visitors come from.", "lost": "Find your top traffic source."},
+  {"say": "In Google Analytics, check where visitors come from, which landing pages sell, and visits from AI assistants like chatgpt.com.", "check": "You know where your best visitors come from.", "lost": "Find your top traffic source."},
   {"say": "If sales suddenly drop, check in this order: tracking, site errors, payment methods, stock, price changes, traffic source, competitor sales.", "check": "You find the cause in minutes, not days.", "lost": "Start with tracking. Then go down the list."}
  ]},
 "9.9": {"intro": "An A/B test shows two versions to two halves of your visitors, to see which sells more. Change one thing at a time.",
@@ -61,14 +61,14 @@
   {"say": "Wait until the app shows about 95% confidence (also called significance).", "check": "You have a result you can trust.", "lost": "Don't stop early. Wait for about 95%."},
   {"say": "Write the test, the result and your decision in a test log.", "check": "Every test is written down, so wins add up and nothing gets retested by mistake.", "lost": "Write one line: what you tested and who won."}
  ]},
-"9.10": {"intro": "AOV is average order value: sales divided by orders. Bigger orders make every visitor worth more, as long as fewer people don't stop buying.",
+"9.10": {"intro": "AOV is average order value: sales divided by orders. Bigger orders make every visitor worth more, as long as just as many people still buy.",
  "steps": [
   {"say": "Set reward levels in the cart: free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.", "check": "The cart shows shoppers what they unlock next.", "lost": "Set just the free shipping amount first."},
   {"say": "Add a bundle, or a bundle builder (customers pick items for a set price).", "check": "At least one bundle is live on your best seller's page.", "lost": "Make one bundle with your best seller."},
   {"say": "Add \"goes well with\" ideas in the cart, and a one-click offer on the thank-you page after they pay.", "check": "Shoppers see one useful extra before and after paying.", "lost": "Add one \"goes well with\" item in the cart."},
   {"say": "Add \"buy 3, save 15%\" deals. For things people use up, add subscriptions with an easy skip.", "check": "Repeat and bulk buyers have a reason to buy more.", "careful": "Judge every idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.", "lost": "Add one \"buy 3, save 15%\" deal."}
  ]},
-"9.11": {"intro": "Surprise shipping costs make people leave. A smart free shipping amount makes many add one more thing.",
+"9.11": {"intro": "About 7 in 10 online carts are left behind. Extra costs like shipping are the top reason. A smart free shipping amount makes many add one more thing.",
  "steps": [
   {"say": "Set your free shipping amount.\n\n1. In Shopify **Analytics**, find your average order value (AOV).\n2. Multiply it by 1.25. Example: $60 × 1.25 = $75.\n3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.", "check": "A free shipping rate shows at your amount.", "lost": "Take your AOV. Times it by 1.25. That's your free shipping amount."},
   {"say": "Show delivery estimates on the product page and in the cart.", "check": "Shoppers know when it will arrive before checkout.", "lost": "Add a delivery estimate to one product page."},

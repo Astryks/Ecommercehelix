@@ -34,7 +34,7 @@
 ## Lesson 3.1: Five ways to make an offer stronger
 <!-- stage:convert -->
 
-**Why this matters:** Your offer is everything a customer gets. It is also every reason they have to buy now, not later. When ads and site are fine but sales are slow, the offer is usually the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
+**Why this matters:** Your offer is everything a customer gets. It is also every reason they have to buy now, not later. When ads and site are fine but sales are slow, the offer is often the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
 
 **Step 1.** Read the five levers in the table below: promise, belief, urgency, safety and easy yes. Score your main product from 1 to 5 on each.
 
@@ -86,7 +86,7 @@
 ## Lesson 3.3: Give people reasons to believe you
 <!-- stage:convert -->
 
-**Why this matters:** People do not buy until they believe the product will work for them. Each objection (a reason not to buy) that you answer with proof removes a barrier. Stores that answer objections on purpose often see large jumps in conversion from the same visitors.
+**Why this matters:** People do not buy until they believe the product will work for them. Each objection (a reason not to buy) that you answer with proof removes a barrier. Stores that answer objections on purpose can see conversion rise from the same visitors.
 
 **Step 1.** List 20 reasons someone might not buy, using support emails, reviews, return notes and questions from your team.
 
@@ -108,12 +108,12 @@
 
 ### Good to know
 
-**Example:** a store selling a high-priced item added a short home trial. Sales from the same visitors went up about three times, and returns stayed low.
+**Example:** for a high-priced item, a short home trial can answer the "what if it is wrong for me?" worry. Test it, and track both sales and returns.
 
 ## Lesson 3.4: Real scarcity
 <!-- stage:convert -->
 
-**Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law.
+**Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law. In Australia, the ACCC has fined stores for fake countdown timers (see [ACCC: Emma Sleep penalty](https://www.accc.gov.au/media-release/bedding-supplier-emma-sleep-to-pay-a-total-of-15m-in-penalties-for-misleading-statements-about-sale-prices)).
 
 **Step 1.** Pick one honest way to show scarcity that fits your product. For example: a small batch with a number, or a preorder with a clear ship date. Or a colour for a short time, or low-stock alerts.
 
@@ -134,7 +134,7 @@
 ## Lesson 3.5: Take the risk off the buyer
 <!-- stage:convert -->
 
-**Why this matters:** Shoppers worry about making a bad purchase. Every worry you remove turns more visits into orders. Generous, clear policies usually add more sales than they cost.
+**Why this matters:** Shoppers worry about making a bad purchase. Every worry you remove turns more visits into orders. Generous, clear policies often add more sales than they cost.
 
 **Step 1.** Turn on photo reviews in your review app. Email recent buyers and ask for a photo with their review.
 
@@ -169,9 +169,9 @@
 
 **Expected result:** The price feels smaller without changing it.
 
-**Step 2.** Test rounding up one price point (for example $39 to $49) on one product for two weeks.
+**Step 2.** Test the next price point up (for example $39 to $49) on one product for two weeks.
 
-**Expected result:** You can compare conversion and profit per order. Often conversion barely moves while you keep more money.
+**Expected result:** You can compare conversion and profit per order. Sometimes conversion barely moves while you keep more money.
 
 **Step 3.** Show an anchor: a premium option or the full bundle value next to the single price.
 
@@ -181,7 +181,7 @@
 
 **Expected result:** More shoppers pick your target option.
 
-**Step 5.** Test free shipping against a lower price. For pricier items, turn on buy now pay later (Afterpay, Klarna or Shop Pay Installments) in **Settings > Payments**.
+**Step 5.** Test free shipping against a lower price. For pricier items, turn on buy now pay later (such as Afterpay or Klarna) in **Settings > Payments**. Shop Pay Installments is only for US, Canadian and UK stores (see [Shopify: Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
 
 **Expected result:** You know which one your customers prefer, and shoppers can pay in parts.
 
@@ -204,7 +204,7 @@
 
 ### Good to know
 
-**2. Put each product into one of four boxes and act:**
+**Put each product into one of four boxes and act:**
 
 | Box | What to do |
 | --- | --- |
@@ -226,7 +226,7 @@
 
 **Expected result:** You have real demand evidence, such as waitlist sign-ups or preorders.
 
-**Step 3.** Launch with a plan from Module 13. Build excitement, give early access, prepare a launch offer and have ads ready.
+**Step 3.** Launch with a plan from Module 13 (Lessons 13.2 and 13.3). Build excitement, give early access, prepare a launch offer and have ads ready.
 
 **Expected result:** The launch has dates, an offer and ads ready before day one.
 
@@ -272,7 +272,7 @@
 
 **Expected result:** You know how many subscribers you have and why people leave.
 
-**Watch out:** Hiding the cancel button or making it hard to skip creates chargebacks and angry reviews. Make leaving easy and most people stay longer.
+**Watch out:** Hiding the cancel button or making it hard to skip creates chargebacks and angry reviews. Make leaving easy; trust keeps people longer.
 
 ## Lesson 3.11: Raise prices and lean less on discounts
 <!-- stage:grow -->
@@ -299,7 +299,7 @@
 
 **Expected result:** Fewer than one store-wide discount a month, and full-price sales go up.
 
-**Watch out:** Never put the price up and then "discount" it back down to the old price. Shoppers notice, and in many places it breaks the law.
+**Watch out:** Never put the price up and then "discount" it back down to the old price. Shoppers notice, and in many places it breaks the law. In Australia, a "was" price must be a real recent price (see [ACCC: two-price comparisons](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising)).
 
 ## Self-check
 

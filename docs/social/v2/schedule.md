@@ -13,7 +13,7 @@ Generated: 2026-10-15 13:02 Australia/Sydney
 - Reorders: none (all date-sensitive posts land before their events)
 - Missing media: none (all 50 files exist)
 - Forbidden-term hits (banned source and coach names): none
-- Soft note: post 4 caption still says “From today (13 Oct) that’s 45 days”; scheduled 2026-10-17 (still ~6 weeks before BF). Caption kept exactly as written.
+- Fact-check 16 Oct 2026: post 4 caption corrected to “From today (17 Oct) that’s 41 days” to match its scheduled date. Its image still shows “45 days”. Post 47 caption now says “during the busy season” (it posts 29 Nov, mid-BFCM); its image still says “before BFCM”.
 
 ## Date-sensitive checks
 
@@ -132,7 +132,7 @@ That's how Helix works: one clear step a day, so small progress actually adds up
 ### Instagram
 
 ```
-Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (13 Oct) that's 45 days, about 6 weeks.
+Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (17 Oct) that's 41 days, about 6 weeks.
 Sounds like plenty. It isn't, once you add reorder and shipping times. This week's checklist:
 ☐ Check stock and reorder best-sellers now
 ☐ Test ads before the holiday rush pushes costs up
@@ -146,7 +146,7 @@ One step a day gets you there. ecommercehelix.com
 ### Facebook
 
 ```
-Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (13 Oct) that's 45 days, about 6 weeks.
+Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (17 Oct) that's 41 days, about 6 weeks.
 Sounds like plenty. It isn't, once you add reorder and shipping times. This week's checklist:
 ☐ Check stock and reorder best-sellers now
 ☐ Test ads before the holiday rush pushes costs up
@@ -1309,7 +1309,7 @@ ecommercehelix.com
 ### Instagram
 
 ```
-Running a store is a lot. Decisions made exhausted tend to cost money. Build rest into your schedule, especially before the busy season.
+Running a store is a lot. Decisions made exhausted tend to cost money. Build rest into your schedule, especially during the busy season.
 
 Link in bio: ecommercehelix.com
 
@@ -1319,7 +1319,7 @@ Link in bio: ecommercehelix.com
 ### Facebook
 
 ```
-Running a store is a lot. Decisions made exhausted tend to cost money. Build rest into your schedule, especially before the busy season.
+Running a store is a lot. Decisions made exhausted tend to cost money. Build rest into your schedule, especially during the busy season.
 
 ecommercehelix.com
 

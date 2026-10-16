@@ -37,13 +37,13 @@ export default async function Report() {
             <Link href="/dashboard#season" className="btn-primary mt-4 inline-flex px-4 py-2 text-sm">{planAdded ? "Open your prep plan" : "Add the prep plan on Today"}</Link>
             {nudge && (
               <details className="mt-4 rounded-xl border border-slate-200 p-4">
-                <summary className="cursor-pointer font-medium text-slate-700">Preview the Monday reminder email (sending is switched off for now)</summary>
+                <summary className="cursor-pointer font-medium text-slate-700">Preview the Monday reminder email{process.env.NUDGES_LIVE === "1" ? "" : " (sending is switched off for now)"}</summary>
                 <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-500">Email subject</p>
                 <p className="font-medium">{nudge.email.subject}</p>
                 <pre className="mt-2 whitespace-pre-wrap rounded-lg bg-slate-50 p-3 font-sans text-[13px] leading-6">{nudge.email.text}</pre>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-500">Push notification</p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-500">Push notification (coming soon)</p>
                 <p><strong>{nudge.push.title}</strong>: {nudge.push.body}</p>
-                <p className="mt-2 text-xs text-slate-500">Sending is switched off in this preview. It turns on once email and push are connected.</p>
+                <p className="mt-2 text-xs text-slate-500">{process.env.NUDGES_LIVE === "1" ? "The email goes out on Mondays. Push reminders are not sent yet." : "Sending is switched off for now. Push reminders are not sent yet."}</p>
               </details>
             )}
           </div>

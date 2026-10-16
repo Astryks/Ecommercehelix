@@ -9,11 +9,11 @@
  "steps": [
   {"say": "Search your own tags and mentions on Instagram and TikTok. Find customers who already post about you.", "check": "You have a list of warm creator leads.", "lost": "Check who tagged you this month."},
   {"say": "Search for the problems your product solves (not your product name). Save creators you'd stop to watch.", "check": "Your list grows with creators who talk about that problem.", "lost": "Search one problem. Save 3 creators."},
-  {"say": "Use the Meta and TikTok creator marketplaces. Filter by audience location, size and category. Check who makes content for competitors.", "check": "You have 20 or more people to choose from.", "lost": "Find 5 creators in the marketplace."},
+  {"say": "Use Instagram's creator marketplace (in Meta Business Suite) and TikTok One (formerly TikTok Creator Marketplace). Filter by audience location, size and category. Check who makes content for competitors.", "check": "You have 20 or more people to choose from.", "lost": "Find 5 creators in the marketplace."},
   {"say": "Score each out of 10 on: comfortable on camera, speaks to your customer, natural style for the platform, real community in comments, posts often, and shares your values.", "check": "Each creator has a score.", "lost": "Score your top 3 out of 10."},
   {"say": "Shortlist creators who score 7 or more.", "check": "You have a short list to contact.", "careful": "Need paid videos fast? UGC marketplaces and agencies are a good backup.", "lost": "Keep only the 7s and up."}
  ]},
-"19.3": {"intro": "Good outreach is personal and offers product first. Creator videos often take 4 to 8 weeks, so start early.",
+"19.3": {"intro": "Good outreach is personal and offers product first. Creator videos can take several weeks, so start early.",
  "steps": [
   {"say": "Send a personal first message that mentions one of their videos by name (the lesson has a template).", "check": "Each message names something they made.", "lost": "Mention one video you liked."},
   {"say": "Offer product first, and money once their content works. Mention the affiliate offer in the first or second message.", "check": "Creators know there's ongoing money in it.", "lost": "Offer a free product first."},
@@ -25,27 +25,27 @@
  "steps": [
   {"say": "Agree the seven terms in the lesson's table for each creator: what they deliver, usage rights, exclusivity, partnership ad access, payment, changes, and disclosure.", "check": "Every term has an agreed answer.", "lost": "Agree what they deliver and what you pay."},
   {"say": "Expect to pay more for raw footage, several hooks, longer usage, exclusivity and partnership ad access.", "check": "Higher fees buy the extras you need.", "lost": "Only pay extra for what you'll really use."},
-  {"say": "Confirm the deal in writing, even just a short email.", "check": "You have written terms for every creator.", "lost": "Send one email that lists the deal."}
+  {"say": "Confirm the deal in writing, even just a short email.", "check": "You have written terms for every creator.", "lost": "Send one email that lists the deal.", "careful": "Paid or gifted posts must be clearly labelled as ads. That includes free product. Follow the FTC's disclosure guide in the US and the ACCC's guidance elsewhere."}
  ]},
 "19.5": {"intro": "An affiliate earns a commission on each sale they bring. If your own offers steal their sales, they stop posting.",
  "steps": [
   {"say": "Set up an example offer: 10% off for the creator's audience, and 15% commission on orders over $100 from new customers.", "check": "The offer is live in your affiliate app.", "lost": "Set 10% off and 15% commission."},
-  {"say": "Check the discount plus the commission stays well under your break-even CPA (Module 1). Example: on a $120 order, 10% off is $12, and 15% of the $108 paid is $16.20. Together that's $28.20.", "check": "Every affiliate sale still makes money.", "lost": "Discount + commission must be less than break-even CPA."},
+  {"say": "Check the discount plus the commission stays well under your break-even CPA (Lesson 1.5). Example: on a $120 order, 10% off is $12, and 15% of the $108 paid is $16.20. Together that's $28.20.", "check": "Every affiliate sale still makes money.", "lost": "Discount + commission must be less than break-even CPA."},
   {"say": "Fix clashes. If your pop-up gives 15% and their code gives 10%, match their code to your best public offer, or give creators something only they have (a bundle, gift or free express shipping).", "check": "Creator codes are always the best deal for their audience.", "lost": "Make the creator code as good as your pop-up."},
   {"say": "Give affiliates a content guide: product facts and top three problems solved, angles and hooks that work, a do and don't list, example videos, and how and when they get paid.", "check": "Affiliates can post without asking you questions.", "lost": "Write the top three problems your product solves."},
-  {"say": "Recruit in groups of 10 or more.", "check": "Ten small affiliates posting twice a month beat one big name posting once.", "lost": "Invite 10 at once."}
+  {"say": "Recruit in groups of 10 or more.", "check": "You have a group of small affiliates. Many small posters often beat one big name posting once.", "lost": "Invite 10 at once."}
  ]},
-"19.6": {"intro": "Partnership ads (whitelisting) run from a creator's account instead of yours. People see a familiar face. Meta reports lower cost per customer in normal sales campaigns, so it's worth a test, not a promise.",
+"19.6": {"intro": "Partnership ads (whitelisting) run from a creator's account instead of yours. People see a familiar face. Meta's own figures show lower average cost per purchase than standard ads. Worth a test, not a promise.",
  "steps": [
   {"say": "Ask the creator's permission in writing. Agree how long it lasts.", "check": "You have written permission with an end date.", "lost": "Email them asking for permission, with an end date."},
-  {"say": "Ask the creator to connect your ad account (Instagram **Settings > Business tools > Branded content**).", "check": "Their account shows in Ads Manager as an identity you can use.", "lost": "Send them the menu path."},
   {"say": "Choose content: posts that already did well for free, or new videos made for ads.", "check": "You've picked 2 to 5 creator posts.", "lost": "Pick their best post."},
+  {"say": "Ask the creator for a partnership ad code for each post. In Instagram, they open the post, tap the three dots, then **Partnership label & ads**, and turn on **Get partnership ad code**.", "check": "You can paste each code in Ads Manager and run the post as a partnership ad.", "lost": "Ask for the partnership ad code."},
   {"say": "Add them to your normal cold campaign as a new batch (not a new campaign). Make the brand clear in the first five seconds.", "check": "Partnership ads run alongside your other ads.", "lost": "Add one to your cold campaign."},
-  {"say": "Judge them like every other ad: cost per sale and hook rate (Lesson 6.12).", "check": "Creator ads earn their budget on the same rules.", "lost": "Check cost per sale."},
-  {"say": "Brief every creator on one page: goal, audience, key message, must say, must not say, 3 hook ideas, what they deliver, usage rights and deadline.", "check": "Each creator has a written brief before filming.", "lost": "Write the goal and the deadline."},
-  {"say": "Offer simple terms. Example: a 10% off code for their audience and 15% commission on new-customer sales.", "check": "Every creator has written terms.", "lost": "Offer 10% off and 15% commission."},
-  {"say": "With written permission, run the creator's video as a partnership ad from their account, inside your normal campaigns.", "check": "Partnership ads are live, often at a lower cost per new customer.", "lost": "Turn on one partnership ad."},
-  {"say": "Give affiliates (people paid per sale) a simple guide with product facts, angles that work and examples.", "check": "Affiliates have what they need to post without asking you.", "lost": "Send them a one-page guide."}
+  {"say": "Judge them like every other ad: cost per sale and hook rate (Lessons 6.11 and 6.12).", "check": "Creator ads earn their budget on the same rules.", "lost": "Check cost per sale."},
+  {"say": "Check every partnership ad shows the **Paid partnership** label with the creator's name.", "check": "Every ad is clearly disclosed.", "lost": "Look for the label on one ad."},
+  {"say": "Share results with the creator each month: what you spent, sales and the best hook.", "check": "The creator knows what works and makes more of it.", "lost": "Send them their best hook."},
+  {"say": "Before access ends, renew it in writing or pause their ads.", "check": "No ad runs past the agreed end date.", "lost": "Put the end date in your calendar."},
+  {"say": "Offer creators whose ads win an ongoing deal, such as a fee plus affiliate commission (Lesson 19.5).", "check": "Your best creators have a reason to keep making content.", "lost": "Offer your best creator a monthly deal."}
  ]},
 "19.7": {"intro": "A format is how a video tells its story: testimonial, demo, comparison and more. Healthy accounts run several at once.",
  "steps": [
@@ -57,7 +57,7 @@
   {"say": "Collect hook ideas from customer reviews, support emails, and competitors' one and two star reviews.", "check": "You have a hook bank of 10 or more ideas.", "lost": "Write 3 hooks from your reviews."},
   {"say": "Write a visual hook for your next video: movement, an odd object, a result, a face mid-reaction, or bold on-screen text.", "check": "The first frame grabs attention with the sound off.", "lost": "Start the video with the result."},
   {"say": "Write 3 spoken hooks of different types: bold statement, call out, curiosity, gossip, myth, one-star reply, price question, result first, opinion or surprising fact.", "check": "You have 3 openings to film.", "lost": "Write one bold statement hook."},
-  {"say": "After 7 days, check in Ads Manager: hook rate (3-second views ÷ impressions) and hold rate (views to 50%, or ThruPlays, ÷ 3-second views).", "check": "You know which opening works. Under 20% hook rate means the opening isn't working.", "lost": "3-second views ÷ impressions. Under 20%? Change the hook."}
+  {"say": "After 7 days, check in Ads Manager: hook rate (3-second views ÷ impressions) and hold rate (views to 50%, or ThruPlays, ÷ 3-second views).", "check": "You know which opening works. As a rule of thumb, a hook rate under 20% means the opening is weak.", "lost": "3-second views ÷ impressions. Under about 20%? Try a new hook."}
  ]},
 "19.9": {"intro": "A script turns a hook into a sale. A simple five-part shape, 20 to 45 seconds long, works for most products.",
  "steps": [
@@ -78,7 +78,7 @@
   {"say": "Add captions inside the safe zones. Add bold hook text on the first frame.", "check": "The video works with the sound off.", "lost": "Add captions."},
   {"say": "Put extra shots over the talking. Add quiet music with a licence that allows ads.", "check": "The video shows what's said, and the music is cleared.", "lost": "Add one product close-up over the talking."},
   {"say": "Export 9:16 (Reels, Stories, TikTok), 4:5 (feed) and 1:1 when needed.", "check": "You have every size.", "lost": "Export 9:16 first."},
-  {"say": "Make 3 to 5 hook versions of each winning video. Change only the first three seconds.", "check": "Winners get fresh openings to test.", "careful": "Label AI-made people or voices where required. Never fake reviews. Check auto-enhance settings before launch.", "lost": "Make one new opening for your best video."}
+  {"say": "Make 3 to 5 hook versions of each winning video. Change only the first three seconds.", "check": "Winners get fresh openings to test.", "careful": "Label AI-made people or voices where required. Never fake reviews. Check auto-enhance settings before launch. Trending songs in the apps are often not cleared for ads. Use Meta Sound Collection or TikTok's Commercial Music Library. Each covers its own platform only.", "lost": "Make one new opening for your best video."}
  ]},
 "19.12": {"intro": "A clear brief means videos you can use, not wasted product. Send a one-page brief before they film.",
  "steps": [

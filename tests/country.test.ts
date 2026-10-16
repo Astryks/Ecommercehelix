@@ -24,6 +24,8 @@ describe("countries", () => {
     expect(mothersDay("GB", 2027)).toBe("2027-03-07");
     expect(mothersDay("DE", 2027)).toBe("2027-05-09");
     expect(mothersDay("KE", 2027)).toBeNull();
+    expect(mothersDay("FR", 2027)).toBe("2027-05-30");
+    expect(mothersDay("FR", 2023)).toBe("2023-06-04"); // last Sunday of May was Pentecost
   });
   it("has no tax-date list outside AU and US", () => {
     expect(adminDates("2026-10-13", "DE")).toEqual([]);

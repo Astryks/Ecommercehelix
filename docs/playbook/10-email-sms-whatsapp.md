@@ -35,13 +35,13 @@
 ## Lesson 10.1: Sign-up forms
 <!-- stage:convert -->
 
-**Why this matters:** A sign-up form (often a pop-up) asks visitors for their email or phone number. It feeds every flow and campaign you send. A good form signs up 3 to 10 of every 100 visitors. A weak one wastes your traffic.
+**Why this matters:** A sign-up form (often a pop-up) asks visitors for their email or phone number. It feeds every flow and campaign you send. As a rule of thumb, a good form signs up 3 to 10 of every 100 people who see it. A weak one wastes your traffic.
 
 **Step 1.** Pick one reward. Dollars off ($10 off) works if your orders are big, and percent off (10% off) if they are small. Or try a free gift, early access or a prize draw.
 
 **Expected result:** Your form has one clear reason to sign up.
 
-**Step 2.** In your email app (Klaviyo, Omnisend or Shopify Email), build a form with steps. First a one-click question ("What are you shopping for?"), then email, then phone number.
+**Step 2.** In your email or form app (for example Klaviyo or Omnisend), build a form with steps. First a one-click question ("What are you shopping for?"), then email, then phone number.
 
 **Expected result:** The form asks an easy question first, which raises completion (micro-commitment).
 
@@ -60,7 +60,7 @@
 1. Open the form's report and find the sign-up rate.
 2. Change one thing (the offer, the headline or the timing) and wait another 2 weeks.
 
-**Expected result:** You are above 3 sign-ups per 100 visitors, or have a test running to get there. With a strong offer, 6 to 10 is possible.
+**Expected result:** Over 3 in 100 people who see the form sign up, or a test is running to get there. With a strong offer, 6 to 10 is possible (see [Klaviyo: sign-up form tips](https://www.klaviyo.com/blog/sign-up-form-best-practices)).
 
 **Step 6.** Put a sign-up form inside a page too, not only as a pop-up.
 
@@ -74,6 +74,8 @@
 8. Click **Save**.
 
 **Expected result:** The form shows inside the page, and a test sign-up appears in your email list within a minute.
+
+**Watch out:** Only send marketing to people who said yes. In Australia, the Spam Act needs consent, your business name and a working unsubscribe (see [ACMA: avoid sending spam](https://www.acma.gov.au/avoid-sending-spam)). In the UK and EU, a pre-ticked box is not consent (see [ICO: electronic mail marketing](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)).
 
 ## Lesson 10.2: The five core flows and extras
 <!-- stage:convert -->
@@ -152,6 +154,8 @@
 
 **Expected result:** Open rates rise and spam complaints fall.
 
+**Watch out:** Apple Mail opens emails automatically for many people, so opens alone overstate engagement. Build "engaged" segments on clicks, site visits and orders too (see [Klaviyo: Apple Mail privacy opens](https://help.klaviyo.com/hc/en-us/articles/4416803987739)).
+
 ## Lesson 10.5: Campaign cadence and ideas
 <!-- stage:grow -->
 
@@ -182,12 +186,12 @@
 
 ### Good to know
 
-A common guide (open rates are inflated by Apple Mail privacy, so trust clicks and sales more):
+A common guide. Open rates are inflated by Apple Mail privacy, so trust clicks and sales more. Click rates are Klaviyo's 2026 averages (see [Klaviyo: benchmarks](https://www.klaviyo.com/products/email-marketing/benchmarks)). Open rates are a rule of thumb.
 
 | | Open rate | Click rate | Other |
 | --- | --- | --- | --- |
-| Flows | Above 35% | Above 1% | Revenue per recipient going up |
-| Campaigns | About 35 to 40% | About 1.3% | Unsubscribes under 0.3% |
+| Flows | Above 30% | About 5.6% | Revenue per recipient going up |
+| Campaigns | Above 30% | About 1.7% | Unsubscribes under 0.3%, spam complaints under 0.1% |
 
 ## Lesson 10.7: How to run a fair email split test
 <!-- stage:convert -->
@@ -213,7 +217,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Step 1.** Open your email app's domain settings. Follow the guide to add SPF, DKIM and DMARC records at your domain host. These settings prove your emails really come from you.
 
-**Expected result:** The email app shows your sending domain as verified or authenticated.
+**Expected result:** The email app shows your sending domain as verified or authenticated. Gmail and Yahoo require SPF, DKIM and DMARC from bulk senders. Gmail counts 5,000 or more emails a day as bulk (see [Google: email sender guidelines](https://support.google.com/a/answer/81126)).
 
 **Step 2.** On a new account, start slowly. Send each email to no more than about 1.5 times as many people as the last one, engaged people first.
 
@@ -227,10 +231,14 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** You catch problems with one provider (for example only Outlook bouncing) early.
 
+**Watch out:** Gmail and Yahoo also need one-click unsubscribe in every marketing email. Keep spam complaints under 0.3%, and aim for under 0.1% (see [Yahoo: sender best practices](https://senders.yahooinc.com/best-practices/)). Most email apps add the one-click header for you.
+
+**Watch out:** Every marketing email needs a working unsubscribe and your business details. Australia's Spam Act says act on unsubscribes within 5 working days. The US CAN-SPAM Act says 10 business days and needs a postal address (see [FTC: CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)).
+
 ## Lesson 10.9: Platform costs
 <!-- stage:grow -->
 
-**Why this matters:** Email platforms often charge by the number of people (profiles) on your list. Cleaning the list saves money and improves deliverability at the same time.
+**Why this matters:** Email platforms often charge by the number of people (profiles) on your list. Klaviyo, for example, bills on active profiles, and suppressed profiles do not count (see [Klaviyo: how pricing works](https://www.klaviyo.com/platform/how-klaviyo-pricing-works)). Cleaning the list saves money and improves deliverability at the same time.
 
 **Step 1.** Suppress or remove people who have not opened or clicked in 180 days.
 
@@ -259,20 +267,24 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** Your sale plan has two SMS sends.
 
-**Step 3.** Register your sender name where the law says you must (in some countries). Respect quiet hours, and keep each text short with one link.
+**Step 3.** Finish your SMS app's sender registration before sending. Turn on its quiet hours setting, and keep each text short with one link.
 
-**Expected result:** Texts arrive from your registered name, at sensible times, with one clear link.
+**Expected result:** Texts arrive from your registered name or number, at sensible times, with one clear link.
+
+**Watch out:** In Australia, a text from a business name (sender ID) must be registered. Since 1 July 2026, unregistered names show as "Unverified" (see [ACMA: SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)). The Spam Act's consent and unsubscribe rules apply to texts too.
+
+**Watch out:** In the US, carriers block texts from numbers that are not registered (toll-free verification or 10DLC). Get clear written consent first, honour STOP replies, and send only 8am to 9pm local time. Some states, like Florida, are stricter (see [Klaviyo: SMS quiet hours](https://help.klaviyo.com/hc/en-us/articles/4408737146651) and [Klaviyo: toll-free verification](https://help.klaviyo.com/hc/en-us/articles/4415873897499)).
 
 ## Lesson 10.11: WhatsApp and chat commerce
 <!-- stage:convert -->
 
-**Why this matters:** WhatsApp and similar chat apps work well where your customers already use them. They are great for VIPs and for pricey products people want to ask about first.
+**Why this matters:** WhatsApp and similar chat apps work well where your customers already use them. They are great for VIPs and for pricey products people want to ask about first. The free WhatsApp Business app suits one-to-one chats. Promotions at scale need the WhatsApp Business Platform, usually through your email or SMS app.
 
 **Step 1.** Set up WhatsApp Business and only message people who opted in.
 
 **Expected result:** You have an opted-in WhatsApp list.
 
-**Step 2.** Get templates approved for marketing messages and set up quick replies for common questions.
+**Step 2.** Get templates (pre-approved message formats) approved for marketing messages and set up quick replies for common questions.
 
 **Expected result:** You can send approved promotions and answer common questions in one tap.
 
@@ -280,12 +292,16 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 
 **Expected result:** High-value customers can buy through a conversation.
 
+**Watch out:** Since 1 July 2025, Meta charges for each template message delivered. Marketing templates always cost money. Replies within 24 hours of a customer's message are free (see [Meta: WhatsApp pricing](https://developers.facebook.com/docs/whatsapp/pricing/)).
+
+**Watch out:** Since April 2025, Meta has paused marketing templates to US (+1) phone numbers. Check with your provider before planning US WhatsApp promotions.
+
 ## Lesson 10.12: Loyalty
 <!-- stage:grow -->
 
 **Why this matters:** A loyalty program rewards people who buy again. It only pays off when enough customers already come back, and it must be measured by repeat purchases, not points.
 
-**Step 1.** Check your repeat purchase rate in Shopify **Analytics > Reports > Customers over time**. Start a loyalty program only if more than about 15 to 20% of customers already buy again.
+**Step 1.** Check your repeat purchase rate in Shopify **Analytics > Reports > Customers over time**. As a rule of thumb, start loyalty only if over about 15 to 20% of customers already buy again.
 
 **Expected result:** You know whether loyalty is worth it yet.
 
@@ -336,7 +352,7 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 ## Lesson 10.14: Plain-text emails that feel personal
 <!-- stage:convert -->
 
-**Why this matters:** Designed emails look like ads. A short plain email looks like a note from a person. Plain emails often get more replies and land in the main inbox more often.
+**Why this matters:** Designed emails look like ads. A short plain email looks like a note from a person. Plain emails often get more replies and can land in the main inbox more often.
 
 **Step 1.** Pick one email in a flow to test. A good first choice is the second welcome email or the abandoned checkout email.
 

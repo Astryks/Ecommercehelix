@@ -111,12 +111,12 @@
 
 **Step 2.** If any answer is no, say no, hand it to someone else or schedule it for later.
 
-**Expected result:** Only true urgent, yours-to-do issues get your attention now.
+**Expected result:** Only truly urgent issues that are yours to do get your attention now.
 
 ## Lesson 16.6: Conflict resolution
 <!-- stage:grow -->
 
-**Why this matters:** Conflict handled well builds trust; avoided, it festers. Six steps keep it about the issue, not the person.
+**Why this matters:** Conflict handled well builds trust; avoided, it festers. Three steps keep it about the issue, not the person.
 
 **Step 1.** Name the issue clearly in one sentence, then listen fully without interrupting.
 
@@ -146,10 +146,10 @@
 ## Self-check
 
 1. What are the three interruption questions?
-2. What should you own when working with an agency?
+2. How long is one priority cycle, and how many priorities does it hold?
 
 <details><summary>Answers</summary>
 
 1. Can it be said in one sentence? Am I the right person? Does it need doing now?
-2. The ad accounts, data, ads (creative) and customer lists.
+2. Six weeks, with one or two priorities.
 </details>

@@ -33,7 +33,7 @@
 
 **Why this matters:** AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business. A project with your context turns generic answers into useful ones.
 
-**Step 1.** Create a project in your AI assistant (for example **Projects > New project**).
+**Step 1.** Create a project in your AI assistant. ChatGPT and Claude call it a **Project**. In Gemini, make a **Gem** and add your files.
 
 **Expected result:** You have an empty project for your store.
 
@@ -88,7 +88,7 @@
 ## Lesson 17.4: Safety rules
 <!-- stage:grow -->
 
-**Why this matters:** AI is powerful and fallible. Four rules keep you safe.
+**Why this matters:** AI is powerful and fallible. Three rules keep you safe.
 
 **Step 1.** Never paste passwords or access tokens into an AI chat.
 
@@ -105,15 +105,15 @@
 ## Lesson 17.5: How Helix applies this
 <!-- stage:grow -->
 
-**Why this matters:** Helix applies the same rules to itself. Maths is always exact, Helix does not use AI today, and nothing changes without your approval.
+**Why this matters:** Helix applies the same rules to itself. Maths uses fixed rules, AI only writes short text, and nothing changes without your approval.
 
 **Step 1.** Know that Helix uses fixed rules for all maths (profit, MER, break-even), so numbers are always exact.
 
 **Expected result:** You can trust every number on the Dashboard.
 
-**Step 2.** Know that Helix does not use AI today. If that changes, Helix will say exactly what the AI does and what it costs.
+**Step 2.** Know where Helix uses AI. It only writes short text when you press the button. That covers a store check summary, ad copy drafts and "I'm lost" answers. Each plan has a monthly AI allowance, and your data is never used to train AI models.
 
-**Expected result:** You know Helix's advice comes from plain rules you can check.
+**Expected result:** You know Helix's numbers and plan come from plain rules you can check. AI text is a draft you read first.
 
 **Step 3.** Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on. See the [product design doc](../product-design.md).
 

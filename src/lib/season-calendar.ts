@@ -62,6 +62,17 @@ export const LUNAR: Record<number, { lunarNewYear: string; ramadanStart: string;
 const lunar = (k: keyof (typeof LUNAR)[number]) => (y: number) => (LUNAR[y] ? LUNAR[y][k] : null);
 const one = (f: (y: number) => string | null) => (y: number) => { const d = f(y); return d ? { start: d, end: d } : null; };
 
+/**
+ * Amazon's mid-year deal days (Prime Day), which other big stores now run sales against.
+ * Known dates come from Amazon's announcements: 8 to 11 July 2025, 23 to 26 June 2026.
+ * Other years use the usual pattern (4 days from the 2nd Tuesday of July) until Amazon announces.
+ */
+export const DEAL_DAYS: Record<number, { start: string; end: string }> = {
+  2025: { start: "2025-07-08", end: "2025-07-11" },
+  2026: { start: "2026-06-23", end: "2026-06-26" },
+};
+const dealDays = (y: number) => DEAL_DAYS[y] ?? { start: nthWeekdayOf(y, 7, 2, 2), end: addDays(nthWeekdayOf(y, 7, 2, 2), 3) };
+
 export const CAL_EVENTS: CalEvent[] = [
   { key: "valentines", name: "Valentine's Day", regions: ["ALL"], span: one((y) => ymd(y, 2, 14)), bannerDays: 42, weight: 6 },
   { key: "lunar-new-year", name: "Lunar New Year", regions: ["ALL"], span: one(lunar("lunarNewYear")), bannerDays: 35, weight: 4 },
@@ -71,8 +82,8 @@ export const CAL_EVENTS: CalEvent[] = [
   { key: "mothers-day", name: "Mother's Day", regions: ["US"], span: one((y) => nthWeekdayOf(y, 5, 0, 2)), bannerDays: 42, weight: 6 },
   { key: "memorial-day", name: "Memorial Day", regions: ["US"], span: one((y) => lastWeekdayOf(y, 5, 1)), bannerDays: 21, weight: 3 },
   { key: "fathers-day", name: "Father's Day", regions: ["US"], span: one((y) => nthWeekdayOf(y, 6, 0, 3)), bannerDays: 42, weight: 5 },
-  { key: "eofy", name: "End of financial year sales", regions: ["ALL"], span: (y) => ({ start: ymd(y, 6, 20), end: ymd(y, 6, 30) }), bannerDays: 28, weight: 4 },
-  { key: "summer-deal-days", name: "Mid-July deal days", regions: ["ALL"], span: (y) => ({ start: nthWeekdayOf(y, 7, 2, 2), end: addDays(nthWeekdayOf(y, 7, 2, 2), 1) }), bannerDays: 21, weight: 4 },
+  { key: "eofy", name: "End of financial year sales (Australia)", regions: ["ALL"], span: (y) => ({ start: ymd(y, 6, 20), end: ymd(y, 6, 30) }), bannerDays: 28, weight: 4 },
+  { key: "summer-deal-days", name: "Mid-year deal days", regions: ["ALL"], span: dealDays, bannerDays: 21, weight: 4 },
   { key: "back-to-school", name: "Back to school", regions: ["US"], span: (y) => ({ start: ymd(y, 8, 1), end: ymd(y, 8, 21) }), bannerDays: 28, weight: 3 },
   { key: "july-fourth", name: "4th of July", regions: ["US"], span: one((y) => ymd(y, 7, 4)), bannerDays: 21, weight: 3 },
   { key: "labor-day", name: "Labor Day", regions: ["US"], span: one((y) => nthWeekdayOf(y, 9, 1, 1)), bannerDays: 21, weight: 3 },

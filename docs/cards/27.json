@@ -31,7 +31,7 @@
   {"say": "Fix all uncategorised lines.", "check": "Every line has a category.", "lost": "Fix 5 uncategorised lines."},
   {"say": "Compare profit and loss with last month and with Helix.", "check": "Changes make sense.", "lost": "Compare this month with last."},
   {"say": "Move tax money (GST or sales tax, plus an income tax estimate) into a separate savings account.", "check": "Tax is set aside.", "lost": "Move the GST amount to savings."},
-  {"say": "Save key reports into a folder for the year.", "check": "The year's records are in one place.", "careful": "Keep most records for 5 years in some countries, and at least 3 years in the US.", "lost": "Save your profit and loss report."}
+  {"say": "Save key reports into a folder for the year.", "check": "The year's records are in one place.", "careful": "Outside the US: keep most records for 5 years. US: keep them at least 3 years, and employment tax records 4 years.", "lost": "Save your profit and loss report."}
  ]},
 "27.5": {"intro": "Some financial years end on 30 June. Helix puts these steps on your calendar from May, so nothing is rushed.",
  "steps": [
@@ -39,15 +39,15 @@
   {"say": "Before 30 June, finish the year-end jobs.\n\n1. Count your stock (stocktake).\n2. Write off stock that will never sell.\n3. Make sure team super is paid on time.", "check": "Stock and super are done.", "careful": "From 1 July 2026, employers pay super with each payday, and it must reach the fund within 7 business days.", "lost": "Count your stock before 30 June."},
   {"say": "Before 30 June, gather receipts for big purchases. Check which costs fall in this year.", "check": "Deductions are documented.", "lost": "Find receipts for big purchases."},
   {"say": "In July, reconcile every account to 30 June. Send your accountant the year's reports.", "check": "Your accountant has everything.", "lost": "Send your accountant the reports."},
-  {"say": "Lodge the June quarter BAS by 28 July (later if lodged online or through an agent).", "check": "BAS is lodged.", "lost": "Put 28 July in your calendar."},
+  {"say": "Lodge the June quarter BAS by 28 July. Lodging online may add two weeks, and agents may have later dates.", "check": "BAS is lodged.", "lost": "Put 28 July in your calendar."},
   {"say": "Lodge your income tax return by 31 October yourself. Or be on a registered tax agent's client list before then, to lodge later.", "check": "Your return date is known and met.", "lost": "Using an agent? Join their list before 31 October."}
  ]},
 "27.6": {"intro": "Most US stores run on the calendar year. Helix puts these dates on your calendar for US stores.",
  "steps": [
   {"say": "In December, count stock. Check your sales tax registrations against each state's threshold.", "check": "Stock is counted and registrations are up to date.", "lost": "Count stock in December."},
   {"say": "Collect a Form W-9 from every contractor before you pay them.", "check": "You have a W-9 for each contractor.", "lost": "Ask each contractor for a W-9."},
-  {"say": "By 31 January, send Form 1099-NEC to contractors paid $2,000 or more in 2026, and file it with the IRS. (The 2025 limit was $600.)", "check": "All 1099s are sent and filed.", "lost": "Paid someone $2,000 or more? Send a 1099-NEC."},
+  {"say": "By 31 January, send Form 1099-NEC to contractors paid $2,000 or more in 2026, and file it with the IRS. (The 2025 limit was $600.)", "check": "All 1099s are sent and filed. Payment providers send a 1099-K once you pass $20,000 across more than 200 payments.", "lost": "Paid someone $2,000 or more? Send a 1099-NEC."},
   {"say": "By 15 March, file partnership and S corporation returns (next business day if it's a weekend).", "check": "Those returns are filed.", "lost": "Put 15 March in your calendar."},
-  {"say": "By 15 April, file individual and C corporation returns and pay the first estimated tax. Later estimates usually fall in June, September and January.", "check": "Returns are filed and estimates are in your calendar.", "careful": "Foreign-owned US companies have extra forms and different dates, so use a cross-border specialist.", "lost": "Put 15 April in your calendar."}
+  {"say": "By 15 April, file individual and C corporation returns and pay the first estimated tax. Later estimates fall on 15 June, 15 September and 15 January.", "check": "Returns are filed and estimates are in your calendar.", "careful": "Foreign-owned US companies have extra forms, such as Form 5472, so use a cross-border specialist.", "lost": "Put 15 April in your calendar."}
  ]}
 }
