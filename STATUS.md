@@ -27,6 +27,7 @@ _Last updated: 17 Oct 2026 (Sydney)._
 - **Course:** 22 chapters (Intro + lessons 01-95). Every video now opens with a hook and ends with a cliffhanger into the next one (`build/hooks.py`). Chapter openers follow "In this chapter we'll learn to X. Let's get started." then a simple real-world story.
 - **Look and voice:** cream-paper sketch style with stick figures, soft music only, no sound effects, fewer zooms (simple scene cuts). Narrator is Brad. Intro animation v5 approved; a more realistic Brad take (v6) is next.
 - **Voice runs locally** on Sid's Mac; no paid GPU spend without Sid's OK.
+- **17 Oct update:** the teen course is now the Intro plus 103 lessons (8 new, including 'Ad Ideas People Remember'), each with a 'Did you know?' retail founder-story card before the cliffhanger (104 checked facts). The videos need re-rendering and re-voicing. App lessons now total 309 (commit dcaa7d1).
 - **Paused:** work stopped on 16 Oct when Grok Bot usage ran out; resumes when usage is added.
 - **Coverage:** 18 high-priority untranscribed videos picked for Sid to record (about 75 min); public research fills the rest.
 - **Also in progress (separate courses):** share market course (29 chapters, fact-checked) and a kids open-source AI course.
