@@ -2,7 +2,7 @@
 "2.1": {"intro": "Something is holding your profit back. We'll find the one main thing. Just one.",
  "steps": [
   {"say": "Open the **Dashboard**. Pick **Month**. Write down four numbers: orders, net sales, MER and contribution margin.", "check": "You have four numbers.", "lost": "Open **Dashboard**, pick **Month**, copy four numbers."},
-  {"say": "Which one sounds like you?\n\n- **Not enough sales**\n- **Costs too high**\n- **Can't keep up with orders**", "check": "You picked one.", "lost": "Most stores pick **not enough sales**. If unsure, pick that."},
+  {"say": "Which one sounds like you?\n\n- **Not enough sales**\n- **Costs too high**\n- **Can't keep up with orders**", "check": "You picked one.", "lost": "Many stores pick **not enough sales**. If unsure, pick that."},
   {"say": "Write that one problem at the top of your notes. Keep it there until it's fixed.", "check": "You can check every change against it.", "lost": "Write your one problem at the top of your notes."}
  ]},
 "2.2": {"intro": "The same move can help one store and hurt another. First we find which group you're in.",
@@ -18,7 +18,7 @@
   {"say": "Set free shipping to start about 20% above your usual order. Charge for express. In Shopify: **Settings > Shipping and delivery**.", "check": "Customers pay for shipping, or add a bit more to get it free.", "lost": "Usual order × 1.2 = your free shipping amount. Set it in **Shipping and delivery**."},
   {"say": "Put the products you make the most on at the top of your home page and in your ads.", "check": "More sales come from products that leave more money.", "lost": "Move your most profitable product to the top of your home page."},
   {"say": "Try raising one best seller's price by 3% to 5% for two weeks.", "check": "You can compare sales and profit before and after.", "lost": "Raise one price a little. Watch for two weeks."},
-  {"say": "Make orders bigger and fees smaller.\n\n1. Add a bundle or a \"buy more, save more\" deal.\n2. In Shopify, add up last month's payment and app fees. Divide by sales.", "check": "Orders get bigger, and fees are under about 3% of sales.", "lost": "Add one bundle deal. Fees can wait."}
+  {"say": "Make orders bigger and fees smaller.\n\n1. Add a bundle or a \"buy more, save more\" deal.\n2. In Shopify, add up last month's payment and app fees. Divide by sales.", "check": "Orders get bigger. Fees sit near your card rate, and unused apps are gone.", "lost": "Add one bundle deal. Fees can wait."}
  ]},
 "2.4": {"intro": "Monthly bills stay the same however much you sell. Cut what you don't use. Then grow so they matter less.",
  "steps": [
@@ -32,7 +32,7 @@
   {"say": "Did something odd happen in the last 7 days? Best seller sold out, a quiet week after a sale, a competitor's sale, the season, tracking broke, or the site went down?", "check": "You found a reason, or ruled it out.", "lost": "Think: did anything strange happen this week? Yes or no."},
   {"say": "Find RPV (money per visit) on the Dashboard. $2.50 to $4 is healthy for many stores. Under $2 is hard. Under $1 makes ads very hard.", "check": "You know if each visit earns enough.", "careful": "Fashion stores often earn less per visit. Compare with your own last 90 days too.", "lost": "Find RPV. Is it over $2? Yes or no."},
   {"say": "RPV low? Check which half is weak: order size (AOV), or how many visitors buy (conversion rate). Fix the site or offer, not the ads.", "check": "You know which half to fix.", "lost": "Are orders small, or do few people buy? Pick one."},
-  {"say": "Each visit earns enough? Check clicks. In Meta Ads Manager, find **Outbound CTR**. Under 0.5% means the ad isn't grabbing people.", "check": "You know if the ad gets clicks.", "lost": "Find **Outbound CTR**. Is it under 0.5%?"},
+  {"say": "Each visit earns enough? Check clicks. In Meta Ads Manager, find **Outbound CTR**. Under about 0.5% usually means the ad isn't grabbing people.", "check": "You know if the ad gets clicks.", "lost": "Find **Outbound CTR**. Is it under 0.5%?"},
   {"say": "Compare cost per click with RPV. If a click costs more than a visit earns, those ads lose money.", "check": "You know if clicks are affordable.", "lost": "Is cost per click bigger than RPV? Then that ad loses money."},
   {"say": "Look at frequency (how often one person saw the ad in 7 days). Look for ads with lots of likes and clicks but no sales.", "check": "You found tired ads, or a page that doesn't match the ad.", "lost": "Find one ad with clicks but no sales. Write its name."}
  ]},
@@ -47,6 +47,6 @@
   {"say": "Next to each step, write the MER you expect. Make it a few points higher each time, like 28%, 31%, 34%.", "check": "Your plan expects each extra sale to cost a bit more.", "lost": "Add 3 points to MER for each step."},
   {"say": "Work out the sales you need to break even at each step. Need more than double your sales now? Stop. Fix costs first (Lessons 2.3 and 2.4).", "check": "You know the test is worth running.", "lost": "If you'd need to double sales, don't scale yet."},
   {"say": "Decide the most extra ad money you're okay losing. Write it down.", "check": "You have a limit that ends the test.", "lost": "Write one dollar limit."},
-  {"say": "Have 3 to 5 new ads ready. Move to your first spend step. Stay there 10 to 14 days.", "check": "MER often gets worse first, then settles. Settled? Go to the next step. Not settled? Go back one step.", "careful": "Raising budget more than about 20% at once restarts Meta's learning. For big jumps, add a new campaign.", "lost": "Have new ads ready. Raise spend to step one. Wait two weeks."}
+  {"say": "Have 3 to 5 new ads ready. Move to your first spend step. Stay there 10 to 14 days.", "check": "MER often gets worse first, then settles. Settled? Go to the next step. Not settled? Go back one step.", "careful": "A big budget jump can restart Meta's learning. Many people raise about 20% at a time. Test bigger jumps in a new campaign.", "lost": "Have new ads ready. Raise spend to step one. Wait two weeks."}
  ]}
 }

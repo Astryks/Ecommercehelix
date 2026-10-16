@@ -15,7 +15,7 @@ ROWS = 62  # two months of days
 
 cols = [
     ("Date", "in", "Type the date, for example 2026-10-13"),
-    ("Sales", "in", "Total sales for the day, before GST/VAT if you are registered"),
+    ("Sales", "in", "Net sales for the day (after discounts and returns, no shipping), before GST/VAT if you are registered"),
     ("Orders", "in", "How many orders"),
     ("Visits", "in", "Sessions from Shopify Analytics"),
     ("Meta ad spend", "in", "From Ads Manager, Amount spent"),

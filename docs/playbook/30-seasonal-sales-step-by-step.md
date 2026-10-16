@@ -68,7 +68,7 @@
 
 **Expected result:** Each creator has the product, a code and a date to post before the sale.
 
-**Watch out:** Never pay for a post you have not seen a sample of. Start with gifts and a share of sales.
+**Watch out:** Never pay for a post you have not seen a sample of. Start with gifts and a share of sales. Gifted and paid posts must be clearly labelled as ads (see [Lesson 28.3](28-team-creators-money.md#lesson-283-paying-creators-agreements-disclosure-and-tax)).
 
 ## Lesson 30.3: Set up a discount code in Shopify
 <!-- stage:convert -->
@@ -79,7 +79,7 @@
 
 **Expected result:** A box asks you to pick a discount type.
 
-**Step 2.** Pick **Amount off products** for a discount on some products, or **Amount off order** for the whole cart.
+**Step 2.** Pick **Amount off products** for a discount on some products, or **Amount off orders** for the whole cart.
 
 **Expected result:** The discount form opens.
 
@@ -91,7 +91,7 @@
 
 **Expected result:** The summary on the right says "15% off".
 
-**Step 5.** Under **Active dates**, set the start date and time, then tick **Set end date** and add the end. Use your store's time zone.
+**Step 5.** Under **Active dates**, set the start date and time, then press **Set end date** and add the end. Use your store's time zone.
 
 **Expected result:** The summary shows the start and end dates.
 
@@ -126,7 +126,7 @@
 
 **Expected result:** Three emails are scheduled in your email tool.
 
-**Watch out:** Do not change ads, prices or the store on the sale day itself. Make every change before, and test it.
+**Watch out:** Avoid big changes to prices or the store on the sale day itself. Make every change before, and test it.
 
 ## Lesson 30.5: Run the event: check your numbers each day
 <!-- stage:convert -->

@@ -1,6 +1,6 @@
 # SOP 04: Offer design
 
-> **In plain words.** An offer is the reason to buy now instead of later, like a bundle, a gift or free shipping over a set amount. A better offer helps every ad, email and page at once, as long as it still leaves profit.
+> **In plain words.** An offer is the reason to buy now instead of later. Examples are a bundle, a gift or free shipping over a set amount. A better offer helps every ad, email and page at once, as long as it still leaves profit.
 
 **Purpose.** Make the reason to buy now stronger than the reasons to wait. A better offer lifts conversion on every channel at once, so it is one of the highest-leverage fixes in the plan.
 
@@ -14,12 +14,12 @@
 ## Five ways to make an offer stronger
 
 1. **Promise.** What does the customer get, and who do they become? Write both the "move towards" outcome (look good, save time, feel confident) and the "move away from" pain (embarrassment, waste, discomfort). Add the change in how others see them.
-2. **Belief.** List every reason someone would not buy. Answer each one with evidence: demo, comparison, reviews, guarantee, expert or creator proof, founder story. Example from practice: adding a short home trial to a high-priced product can triple conversion while returns stay low.
+2. **Belief.** List every reason someone would not buy. Answer each one with evidence: demo, comparison, reviews, guarantee, expert or creator proof, founder story. For a high-priced product, a short home trial can lift conversion a lot while returns stay low. Test it.
 3. **Urgency (real only).** Limited production runs, preorders shipping within a few weeks, seasonal ranges, low-stock alerts to recent viewers and VIPs. Never fake timers or fake stock counts.
-4. **Safety.** Remove risk: easy returns (generous returns usually raise sales more than they cost), fast dispatch promise, visible support, sizing tools, reviews with photos, a real human behind the brand.
+4. **Safety.** Remove risk: easy returns, fast dispatch promise, visible support, sizing tools, reviews with photos, a real human behind the brand. Generous returns often raise sales more than they cost. Measure your return rate to check.
 5. **Easy yes.** Price and framing:
    - Cost-per-use framing ("less than a coffee a week").
-   - Prices just under a round number feel similar (a small rise from $69 to $75 often does not hurt conversion; test it).
+   - Small price rises within the same band often go unnoticed (for example $69 to $75). Test it.
    - Anchors and decoys: show a premium option so the core option looks sensible; show bundle savings next to single price.
    - Free shipping versus a lower price: test which your customers value more.
    - Buy-now-pay-later on higher prices.
@@ -36,7 +36,7 @@
 ## Decision rules
 
 - Prefer value-adds (gift, bundle, guarantee, faster shipping) over straight discounts.
-- For high AOV, dollar-off reads bigger than percent-off. For low AOV, percent-off often reads bigger. Test.
+- Above about $100, dollar-off usually reads bigger than percent-off. Below $100, percent-off often reads bigger. Test.
 - A gift with purchase should have high perceived value and low landed cost.
 - Never run more than 3 or 4 big store-wide discount events a year (SOP 15).
 - If returns exceed 15% after a risk-reversal change, check product quality and sizing before reverting.

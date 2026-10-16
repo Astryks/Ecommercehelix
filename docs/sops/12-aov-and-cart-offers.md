@@ -11,17 +11,17 @@
 
 ## Tools, in the order to try
 
-1. **Tiered cart offers.** For example: free shipping at a level just above current AOV, then a free gift at a higher level, then a discount at the top tier. For high AOV stores, use dollar-off tiers.
+1. **Tiered cart offers.** For example: free shipping just above current AOV, a gift higher up, and a discount at the top. For high AOV stores, use dollar-off tiers.
 2. **Gift with purchase.** High perceived value, low landed cost. Show it on every page (a small fly-in or banner), not just at checkout.
 3. **Bundles.** Starter kits, "complete the look", multi-packs. Name them and give them their own product page.
-4. **Post-purchase upsell.** One-click offer after payment for a complementary item. No risk to conversion.
+4. **Post-purchase upsell.** One-click offer after payment for a complementary item. The first order is already placed, so it cannot hurt conversion.
 5. **Cross-sell on product page and cart.** Two or three relevant add-ons only.
 6. **Quantity breaks** for consumables.
 
 ## Steps
 
 1. Pull AOV distribution: what share of orders are single-item? What is the median?
-2. Set the first tier about 15 to 25% above current median order value.
+2. Set the first tier about 20 to 30% above current AOV (about 1.25 times AOV, as in Lesson 9.11). Check it sits above the median order too.
 3. Check margin at each tier with the unit economics (SOP 02).
 4. Launch one change at a time and watch AOV, conversion rate and RPV for 2 weeks.
 5. Review tiers quarterly or when prices change.

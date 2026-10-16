@@ -63,7 +63,7 @@
 | Shipping | Rates from several carriers, and label printing | Early |
 | Payments in other currencies | Multi-currency bank accounts | When you sell overseas |
 | International tax | Duty and tax calculation | When you ship to other countries |
-| Loyalty | Points, VIP levels or cashback | When more than 15 to 20% of customers buy again |
+| Loyalty | Points, VIP levels or cashback | A common rule of thumb: when more than 15 to 20% of customers buy again |
 | Sending free product to creators | A creator search and gifting platform | Stage 1 |
 | Packaging | A sustainable packaging supplier | Early |
 

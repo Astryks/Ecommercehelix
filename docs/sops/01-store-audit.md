@@ -1,6 +1,6 @@
 # SOP 01: Store audit
 
-> **In plain words.** Helix looks at your store like a first-time shopper would. It gives you a score out of 100, a list of the 10 fixes most likely to make you money (each pointing at the exact page), and a plan for your first week.
+> **In plain words.** Helix looks at your store like a first-time shopper would. It gives you a score out of 100 and a plan for your first week. It also lists the 10 fixes most likely to make you money, each pointing at the exact page.
 
 **Purpose.** Turn a pasted store URL into a score, a ranked fix list and a first-week plan within a few minutes. The audit is the first impression of Helix, so it must be specific to the store, never generic.
 
@@ -28,7 +28,7 @@
    - Are the main objections answered (fit/size, quality, shipping time, returns, how to use)?
    - Is there an offer block (bundle, gift, free shipping threshold) near the add-to-cart button?
 4. **Friction check (what slows people down?).**
-   - Speed: estimated load time on mobile. Flag only issues worth 1 to 2+ seconds.
+   - Speed: estimated load time on mobile. Flag only issues worth 1 to 2+ seconds. Google rates a page "good" when its main content shows within 2.5 seconds (see [web.dev: Largest Contentful Paint](https://web.dev/articles/lcp)).
    - Policies visible and plain-language. Returns window stated.
    - Payment options shown (express wallets, buy now pay later where relevant).
    - Pop-ups: is there an email capture? Does it block the page on mobile in a bad way?
@@ -36,9 +36,9 @@
    - Cart tiers or free-shipping progress bar present?
    - Cross-sell or bundle on product page or cart?
    - Post-purchase upsell (only visible with Shopify connection)?
-6. **Retention check.** Pop-up present, email platform detected, review app detected, SMS opt-in, loyalty (only relevant above 15 to 20% repeat).
-7. **Tracking check.** Meta pixel, Google tag, conversions API signals detected. Flag duplicates.
-8. **Ads presence.** Look up the brand in public ad libraries where available. Count active ads and formats (video, static, carousel, creator).
+6. **Retention check.** Pop-up present, email platform detected, review app detected, SMS opt-in, loyalty. Loyalty is only worth it once the 12-month repeat purchase rate is above about 15%.
+7. **Tracking check.** Meta pixel and Google tag detected on the page. Flag duplicates. Server-side tracking (Meta Conversions API) cannot be seen from outside. Check it in Meta Events Manager once Meta is connected.
+8. **Ads presence.** Look up the brand in public ad libraries where available. Examples are the [Meta Ad Library](https://www.facebook.com/ads/library/) and [Google Ads Transparency Center](https://adstransparency.google.com/). Count active ads and formats (video, static, carousel, creator).
 9. **Score.** Score each area 0 to 100 and combine into the **Helix Score** (weights: Clarity 20, Compelling 25, Friction 15, Sell 15, Retention 15, Tracking 10).
 10. **Fix list.** Rank every issue by (expected impact x confidence) ÷ effort. Top 10 become the Site Fix List.
 11. **First-week plan.** Pick 7 days of daily-loop tasks from the fix list, the stage roadmap and connection setup.
@@ -61,6 +61,6 @@
 | Draft Shopify theme or content edits for preview (Growth, beta) | Approve or reject each edit |
 | Re-audit monthly and show the score change | Provide brand assets and photos |
 
-**Done when:** the user sees the score, the top 10 fixes with evidence, and a 7-day plan, and has picked "do it for me" or "I'll do it" on at least one task.
+**Done when:** the user sees the score, the top 10 fixes with evidence, and a 7-day plan. They have also picked "do it for me" or "I'll do it" on at least one task.
 
 **Related:** SOP 02 (scorecard), SOP 11 (CRO), SOP 13 (email flows).

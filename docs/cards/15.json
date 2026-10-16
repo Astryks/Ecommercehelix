@@ -1,9 +1,9 @@
 {
 "15.1": {"intro": "Selling to a country with no demand burns cash. A quick look at your own data shows where people already want your stuff.",
  "steps": [
-  {"say": "In Shopify, open **Analytics > Reports > Sales by billing country** and **Sessions by country**. List your top 5 countries outside home for the last 12 months.", "check": "You have a ranked list of countries with orders and visits.", "lost": "Open **Sales by billing country**. Write the top 5."},
+  {"say": "In Shopify, open **Analytics > Reports > Total sales by billing location** and **Sessions by location**. List your top 5 countries outside home for the last 12 months.", "check": "You have a ranked list of countries with orders and visits.", "lost": "Open **Total sales by billing location**. Write the top 5."},
   {"say": "Check how many people search for your type of product in each country (Google Keyword Planner, set to that country).", "check": "Each country has a monthly search number.", "lost": "Check search numbers for your top country."},
-  {"say": "Check if competitors already sell there, and where your social followers live (Instagram **Insights > Audience > Top locations**).", "check": "Each country has a note on competitors and followers.", "lost": "Open **Top locations** in Instagram."},
+  {"say": "Check if competitors already sell there, and where your social followers live (Instagram **Insights > Total followers > Top locations**).", "check": "Each country has a note on competitors and followers.", "lost": "Open **Top locations** in Instagram."},
   {"say": "Pick the country that already buys from you the most.", "check": "You have one first country to grow into.", "lost": "Circle the top country on your list."}
  ]},
 "15.2": {"intro": "Costs change in a new country. Shipping, duties, taxes and exchange rates can turn a winner into a loss.",
@@ -13,8 +13,8 @@
  ]},
 "15.3": {"intro": "Local prices in local money, rounded nicely, sell better than converted prices. Decide who pays duties up front.",
  "steps": [
-  {"say": "In Shopify **Settings > Markets > [country] > Products and pricing**, set local prices in local money, rounded to normal prices (like 49 euros, not 47.83).", "check": "Shoppers there see clean local prices.", "lost": "Round your best seller's price to a nice number."},
-  {"say": "Choose delivered duty paid (DDP: duties are included in your price) in your Markets or shipping app settings.", "check": "Customers get no surprise bill at the door. That usually sells better.", "lost": "Turn on DDP."}
+  {"say": "In Shopify **Markets > Catalogs**, set prices in local money for that market, rounded to normal prices (like 49 euros, not 47.83).", "check": "Shoppers there see clean local prices.", "lost": "Round your best seller's price to a nice number."},
+  {"say": "Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.", "check": "Customers get no surprise bill at the door. That usually sells better.", "lost": "Turn on DDP."}
  ]},
 "15.4": {"intro": "What sells at home may need small changes overseas.",
  "steps": [
@@ -29,7 +29,7 @@
  ]},
 "15.6": {"intro": "One store with Markets settings is simpler. Start there.",
  "steps": [
-  {"say": "Set up the new country in Shopify **Settings > Markets** on your current store.", "check": "The country is live as a market on your main store.", "lost": "Open **Settings > Markets**. Add the country."},
+  {"say": "Set up the new country in Shopify **Markets** on your current store.", "check": "The country is live as a market on your main store.", "lost": "Open **Markets**. Add the country."},
   {"say": "Only open a separate store if the products, prices, content or apps must be very different.", "check": "You run one store unless there's a clear reason not to.", "lost": "Keep one store for now."}
  ]},
 "15.7": {"intro": "Each country needs its own report. Otherwise a strong country can hide a weak one.",

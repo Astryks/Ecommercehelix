@@ -11,7 +11,7 @@ const hi = (name?: string) => (name?.trim() ? `Hi ${name.trim().split(/\s+/)[0]}
 function layout(c: Ctx, o: { kind: string; marketing: boolean; subject: string; preheader: string; title: string; paras: string[]; list?: string[]; button?: { label: string; href: string }; after?: string[] }): Email {
   const p = (t: string) => `<p style="margin:0 0 14px;font-size:16px;line-height:24px;color:#1A1718">${esc(t)}</p>`;
   const foot = o.marketing
-    ? `You get this because you have a Helix account. <a href="${esc(c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">Unsubscribe in one click</a> or <a href="${esc(c.prefsUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">choose your emails</a>.`
+    ? `You get this because you have a Helix account. <a href="${esc(c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">Unsubscribe in one click</a> or <a href="${esc(c.prefsUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">choose your emails</a>. Questions? <a href="${esc(c.baseUrl + "/contact")}" style="color:#5A50D6">Contact us</a>.`
     : "This is an account email about your Helix plan, so it is always sent.";
   const html = `<!doctype html><html><body style="margin:0;background:#F2F1EC;font-family:Nunito,Helvetica,Arial,sans-serif">
 <span style="display:none;max-height:0;overflow:hidden">${esc(o.preheader)}</span>
@@ -28,7 +28,7 @@ ${p("The Helix team")}
 </td></tr>
 <tr><td style="padding:16px 28px;border-top:1px solid #e5e3dc;font-size:12px;line-height:18px;color:#6b6760">${foot}<br>E-commerce Helix</td></tr>
 </table></td></tr></table></body></html>`;
-  const text = [hi(c.name), "", ...o.paras.flatMap((x) => [x, ""]), ...(o.list ?? []).map((l) => `- ${l}`), o.list?.length ? "" : null, o.button ? `${o.button.label}: ${o.button.href}` : null, "", ...(o.after ?? []).flatMap((x) => [x, ""]), "The Helix team", "", o.marketing ? `Unsubscribe: ${c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails"}` : "This is an account email about your Helix plan."]
+  const text = [hi(c.name), "", ...o.paras.flatMap((x) => [x, ""]), ...(o.list ?? []).map((l) => `- ${l}`), o.list?.length ? "" : null, o.button ? `${o.button.label}: ${o.button.href}` : null, "", ...(o.after ?? []).flatMap((x) => [x, ""]), "The Helix team", "", o.marketing ? `Unsubscribe: ${c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails"}\nContact us: ${c.baseUrl}/contact` : "This is an account email about your Helix plan."]
     .filter((x) => x !== null).join("\n");
   return { subject: o.subject, html, text, marketing: o.marketing, kind: o.kind };
 }
@@ -36,7 +36,7 @@ ${p("The Helix team")}
 export function welcomeEmail(c: Ctx): Email {
   return layout(c, { kind: "welcome", marketing: false, subject: "Welcome to Helix: your first small step", preheader: "One small step a day. Here is where to start.", title: "Welcome to Helix",
     paras: ["Thanks for joining. Helix shows your profit every day and gives you one small step to grow it.", "Here is how to start:"],
-    list: ["Open Today and do the first task (about 5 minutes).", "Connect Shopify, or type in yesterday's numbers.", "Stuck? Press I'm lost on any screen."],
+    list: ["Open Today and do the first task (about 5 minutes).", "Type in yesterday's numbers, or connect Shopify on a paid plan.", "Stuck? Press I'm lost on any screen."],
     button: { label: "Open Today", href: `${c.baseUrl}/dashboard` } });
 }
 
@@ -66,7 +66,7 @@ export function receiptEmail(c: Ctx, r: { amount: string; plan: string; date: st
 
 export function paymentFailedEmail(c: Ctx, r: { amount: string; updateUrl: string }): Email {
   return layout(c, { kind: "failed", marketing: false, subject: "Your Helix payment did not go through", preheader: "Update your card to keep your plan.", title: "Payment problem",
-    paras: [`We could not take your payment of ${r.amount}. This happens when a card expires or the bank says no.`, "You keep your plan for now. Stripe will try again over the next few days."],
+    paras: [`We could not take your payment of ${r.amount}. This happens when a card expires or the bank says no.`, "You keep your plan for now. Stripe will try the payment again automatically."],
     button: { label: "Update my card", href: r.updateUrl }, after: ["Questions? Just reply to this email."] });
 }
 

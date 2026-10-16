@@ -1,5 +1,5 @@
 {
- "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos verified via YouTube oEmbed on 15 Oct 2026 (re-checked 15 Oct evening after swaps).",
+ "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos verified via YouTube oEmbed on 15 Oct 2026 (re-checked 16 Oct 2026: all live, titles and channels match).",
  "steps": [
   {
    "n": 1,
@@ -304,7 +304,7 @@
      "url": "https://www.youtube.com/watch?v=mycqb92wJqk"
     },
     {
-     "title": "The New Type of Brand Financial Literacy",
+     "title": "The New Type of Brand Financial Literacy with Taylor Holiday",
      "channel": "Commerce Roundtable",
      "url": "https://www.youtube.com/watch?v=8ZCJwh6kSvs"
     }
@@ -434,12 +434,12 @@
    ],
    "videos": [
     {
-     "title": "Black Friday Starts Early: The 3-Week Email Strategy",
-     "channel": "The Unofficial Shopify Podcast | ethercycle",
+     "title": "Black Friday Starts Early: The 3-Week Email Strategy | The Unofficial Shopify Podcast",
+     "channel": "ethercycle",
      "url": "https://www.youtube.com/watch?v=TiWvFACTiCc"
     },
     {
-     "title": "Klaviyo Email and SMS: Build Better Omnichannel Campaigns",
+     "title": "Klaviyo Email and SMS: Build Better Omnichannel Campaigns | Klaviyo Academy",
      "channel": "Klaviyo",
      "url": "https://www.youtube.com/watch?v=mtsxKVtdv44"
     }

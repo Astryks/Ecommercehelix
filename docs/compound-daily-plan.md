@@ -32,7 +32,7 @@ Because the levers multiply, small gains on several levers at once beat a big ga
 | Ad spend | $9,000 | $9,900 (+10%) |
 | **Profit** | **$3,000 (10%)** | **$8,058 (20%)** |
 
-Three 10% improvements lift revenue by 33%. Profit goes up 2.7 times, because fixed costs do not grow with sales.
+Three 10% improvements lift revenue by 33%. Profit goes up 2.7 times. Fixed costs stay the same and ad spend grows only 10%.
 
 **The 1% rule of thumb.** If a habit makes the business 1% better each week, the gains compound to about 68% over a year (1.01^52). If small daily actions improve one lever by 1% every few days, you get about 1.35x in 30 compounding steps and about 2.45x in 90 (1.01^90). Real gains do not stack forever. A lever saturates once it reaches a healthy benchmark. That is why Helix keeps moving you to the **next weakest lever**, not the one you already fixed.
 
@@ -52,12 +52,12 @@ Do it at the same time every day, ideally before you open email or Slack. Helix 
 
 ### Step 1. Check the scorecard (3 minutes)
 
-Helix fills this in automatically once Shopify and your ad accounts are connected. Without connections you type five numbers.
+Helix fills this in once Shopify and Meta are connected (Google is coming soon). Without connections you type a few numbers: sales, orders and ad spend.
 
 **Checklist**
 - [ ] Yesterday's revenue, orders and sessions.
 - [ ] Yesterday's ad spend per channel (Meta, Google, TikTok, other).
-- [ ] Yesterday's estimated contribution profit (revenue minus variable costs minus ad spend minus the daily share of fixed costs).
+- [ ] Yesterday's estimated profit (revenue minus variable costs minus ad spend minus the daily share of fixed costs).
 - [ ] **MER%** (total ad spend ÷ total revenue) for the last 3 days and for the month to date, each against your target.
 - [ ] Revenue per visit (RPV), conversion rate (CR) and average order value (AOV) versus your 30-day average.
 - [ ] New-customer orders versus returning-customer orders.
@@ -85,7 +85,7 @@ Helix fills this in automatically once Shopify and your ad accounts are connecte
 
 Pick **one** from the list. Helix chooses for you based on the stance above.
 
-- [ ] **Scale:** raise budget by up to 20% on the campaign with the best cost per purchase that still has low frequency.
+- [ ] **Scale:** raise budget by up to 20% on the campaign with the best cost per purchase that still has low frequency. You make this change in Ads Manager.
 - [ ] **Cut:** turn off the ad that has spent at least your "bad" cost-per-purchase threshold with no purchase, or that has a bad cost per purchase **and** high frequency.
 - [ ] **Refresh:** if a campaign has no strong ads left and fewer than 30% of its original ads still perform, load a new batch from your build campaign.
 - [ ] **Launch a test:** put a new batch of 4 to 8 ads (testing one variable) live in your testing campaign.
@@ -96,7 +96,7 @@ Pick **one** from the list. Helix chooses for you based on the stance above.
 - Never move a campaign budget more than 20% in a day.
 - Never judge an ad before it has spent about 1 to 1.5 times your target cost per purchase (unless it is a very high-priced product. Then use early signals: click-through rate, cost per click, add-to-carts).
 - After a budget step-up, give the new level 10 to 14 days before you judge MER. It usually gets worse first.
-- Do not add ads to a campaign that is winning. Adding ads resets learning.
+- Do not add ads to a campaign that is winning. Adding ads can restart learning.
 
 ### Step 3. One site or conversion action (5 to 10 minutes)
 
@@ -137,9 +137,9 @@ TODAY · Tue 6 Oct                          Compound score 71 (+2)  🔥 9-day s
 Yesterday   Rev $1,240   Orders 14   Profit est. $186   MER 3d 28% | MTD 31%
 Stance: CAREFUL PUSH  (target MER 30%)
 -----------------------------------------------------------------------------
-1. [Ads · 5 min]  Raise "Cold · Broad" budget $120 -> $140/day
+1. [Ads · 5 min]  Raise "Cold · Broad" budget $120 -> $140/day in Ads Manager
    Why: best cost per purchase this week, frequency 1.3
-   [Do it for me]  [I'll do it]  [Skip]
+   [Open Ads Manager]  [Done]  [Skip]
 2. [Site · 10 min] Add 3 photo reviews above the fold on Linen Shirt
    Why: top landing page, RPV $1.90 vs $3.00 store average
    [Do it for me]  [I'll do it]  [Skip]
@@ -226,9 +226,9 @@ These are Helix defaults. They are starting points, not laws. Helix adjusts them
 
 | Metric | Healthy | Watch | Act now |
 | --- | --- | --- | --- |
-| Net profit % | 10 to 20%+ | 0 to 10% | Below 0% |
+| Net profit % | 10 to 20%+ | 5 to 10% | Below 5% |
 | MER% (ad spend ÷ revenue) | 20 to 35% | 35 to 45% | Above 45%, or above your computed target for 7+ days |
-| Variable cost ratio (product, shipping, packaging, fees ÷ revenue) | Under 40% | 40 to 50% | Above 50%. Above 60% makes paid ads close to impossible. |
+| Variable cost ratio (product, shipping, packaging, fees ÷ revenue) | 30 to 45% | 45 to 50% | Above 50%. Above 60% makes growing with paid ads very hard. |
 | Fixed cost ratio | 10 to 20% | 20 to 30% | Above 30% (but growth often fixes this) |
 | Shipping and fulfilment ÷ revenue | Under 10% | 10 to 15% | Above 15% |
 | Payment fees | About 2 to 3% | | Above 3.5% |
@@ -382,12 +382,12 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 
 | Step | You can always do it yourself | "Do it for me" (after you approve) | Plan |
 | --- | --- | --- | --- |
-| Scorecard | Type five numbers | Pull from Shopify, Meta, Google automatically | Free (manual), Starter+ (auto) |
-| Ad budget change | Guided steps in Ads Manager | Change budget within your spend cap | Starter (one platform), Growth (both) |
-| Turn off a draining ad | Guided steps | Pause it, with one-tap undo | Starter+ |
-| New ad batch | Brief and checklist | Draft ads from your assets into a paused staging campaign for your review | Starter+ |
-| Site fix | Step-by-step guide and copy | Draft theme or content change for preview (Shopify) | Growth (beta) |
-| Email | Template and copy | Draft email or flow in Klaviyo for your approval | Growth |
+| Scorecard | Type a few numbers | Pull from Shopify and Meta automatically (Google coming soon) | Free (manual), Starter+ (auto) |
+| Ad budget change | Guided steps in Ads Manager | Helix never changes live budgets. It shows the exact new budget and a link, and you make the change. | Starter+ |
+| Turn off a draining ad | Guided steps | Pause it after you approve, with one-tap undo | Starter+ |
+| New ad batch | Brief and checklist | Build a paused draft campaign with ads in your Meta account. You switch it on. | Starter+ |
+| Site fix | Step-by-step guide and copy | Store check with a fix list that quotes your pages. Helix does not edit your store. | Free (once), Starter+ (monthly) |
+| Email | Template and copy | Write full flow copy, ready to paste into Klaviyo or Shopify Email. Helix does not connect to them yet. | Growth |
 | Learning | Trends card | n/a | All plans |
 
-Every write action shows a preview, an estimated AI cost, the ad spend impact, and how to undo it. Nothing is published until you tap **Approve**.
+Every write action shows a preview first. Nothing happens until you tap **Approve**, and nothing spends until you switch it on.

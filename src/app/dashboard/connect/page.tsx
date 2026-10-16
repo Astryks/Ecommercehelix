@@ -72,8 +72,8 @@ export default async function ConnectTools({ searchParams }: PageProps<"/dashboa
                 </form>
               )}
               <details className="mt-3 text-sm">
-                <summary className="cursor-pointer font-medium text-slate-700">Or use a custom app token</summary>
-                <p className="mt-2 text-slate-600">In Shopify admin: Settings, Apps, Develop apps, Create an app. Allow read_orders, read_products and read_inventory, install it and copy the Admin API token.</p>
+                <summary className="cursor-pointer font-medium text-slate-700">Or use a custom app token (older stores)</summary>
+                <p className="mt-2 text-slate-600">Only for a custom app made in Shopify admin before 1 January 2026 (Settings, Apps, Develop apps). Shopify no longer lets you make new ones there, so most stores should use Connect above. The app needs read_orders, read_products and read_inventory; copy its Admin API token.</p>
                 <form action={connectShopifyCustomApp} className="mt-2 space-y-2">
                   <input name="shop" required placeholder="yourstore.myshopify.com" className="input w-full text-sm" aria-label="Store address" />
                   <input name="token" required type="password" autoComplete="off" placeholder="shpat_..." className="input w-full text-sm" aria-label="Admin API token" />

@@ -123,7 +123,7 @@ export default async function Stock() {
       {bf.daysTo >= 0 && bf.daysTo <= 150 && bfRows.length > 0 && (
         <section className="mt-6 rounded-xl border border-cyan-200 bg-cyan-50 p-5" aria-labelledby="bf-h">
           <h2 id="bf-h" className="flex items-center gap-2 text-xl"><CalendarClock className="h-5 w-5 text-cyan-700" aria-hidden /> Black Friday stock: {bf.daysTo} days to go ({pretty(bf.date)})</h2>
-          <p className="mt-1 max-w-3xl text-sm text-slate-700">Peak week often sells 2 to 4 times a normal week. The last safe order date allows for the supplier&apos;s lead time plus a week to receive, check and list the stock. This is the &ldquo;Order stock and gifts&rdquo; step of your <Link href="/dashboard" className="text-cyan-800 underline">Black Friday prep plan on Today</Link>.</p>
+          <p className="mt-1 max-w-3xl text-sm text-slate-700">Peak week can sell several times a normal week, so check last year&apos;s sales for that week. The last safe order date allows for the supplier&apos;s lead time plus a week to receive, check and list the stock. This is the &ldquo;Order stock and gifts&rdquo; step of your <Link href="/dashboard" className="text-cyan-800 underline">Black Friday prep plan on Today</Link>.</p>
           <ul className="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {bfRows.slice(0, 6).map(({ r, p }) => (
               <li key={r.id} className="rounded-lg border border-cyan-200 bg-white p-4 text-sm">
@@ -138,20 +138,20 @@ export default async function Stock() {
         </section>
       )}
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+      <div className="mt-6 grid gap-6 lg:grid-cols-2 [&>*]:min-w-0">
         <section className="card p-5" aria-labelledby="counts-h">
           <h2 id="counts-h" className="flex items-center gap-2 text-xl"><PackageCheck className="h-5 w-5 text-cyan-700" aria-hidden /> Update counts</h2>
           <p className="mt-1 text-sm text-slate-600">Once a week, type what is on the shelf, what is on the way and how many you sell a day.</p>
           <ul className="mt-4 divide-y divide-slate-100">
             {rows.map((r) => (
               <li key={r.id} className="py-2.5">
-                <form action={saveCounts} className="grid grid-cols-[1fr_repeat(3,5.5rem)_auto] items-end gap-2 text-sm">
+                <form action={saveCounts} className="grid grid-cols-3 items-end gap-2 text-sm sm:grid-cols-[1fr_repeat(3,5.5rem)_auto]">
                   <input type="hidden" name="id" value={r.id} />
-                  <span className="truncate pb-2 font-medium" title={r.name}>{r.name}</span>
+                  <span className="col-span-3 truncate font-medium sm:col-span-1 sm:pb-2" title={r.name}>{r.name}</span>
                   <label className="text-[11px] text-slate-500">On hand<input name="onHand" type="number" min="0" defaultValue={r.onHand} className="input mt-0.5 px-2 py-1.5" /></label>
                   <label className="text-[11px] text-slate-500">On order<input name="onOrder" type="number" min="0" defaultValue={r.onOrder} className="input mt-0.5 px-2 py-1.5" /></label>
                   <label className="text-[11px] text-slate-500">A day<input name="dailySales" type="number" min="0" step="0.1" defaultValue={r.dailySales} className="input mt-0.5 px-2 py-1.5" /></label>
-                  <button className="btn-ghost px-3 py-1.5 text-xs">Save</button>
+                  <button className="btn-ghost col-span-3 px-3 py-1.5 text-xs sm:col-span-1">Save</button>
                 </form>
               </li>
             ))}
@@ -187,7 +187,7 @@ export default async function Stock() {
         </section>
       </div>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-2">
+      <div className="mt-6 grid gap-6 lg:grid-cols-2 [&>*]:min-w-0">
         <details className="card p-5" open={!rows.length}>
           <summary className="flex cursor-pointer items-center gap-2 font-hand text-lg font-semibold"><Plus className="h-4 w-4 text-cyan-700" aria-hidden /> Add or update a product</summary>
           <form action={saveStockItem} className="mt-4 grid grid-cols-2 gap-3 text-sm">

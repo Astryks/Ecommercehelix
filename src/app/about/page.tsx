@@ -44,7 +44,7 @@ export default function About() {
             A business grows in a similar way. Find what works, write it down, and copy it reliably every day: the ad that sells, the email that brings customers back, the habit of checking your numbers each morning. Small things done well and repeated, so the growth builds on itself.
           </p>
           <p>
-            <strong>You are the owner.</strong> It is your business, your vision and your call. Helix is simply a tool that puts you in control: it shows you the numbers, lays out the next step and does the busy work when you ask. The point is not just a bigger store. It is more freedom with your time and your choices, more room to create beautiful products for the world, and a clearer path to bringing your vision to life.
+            <strong>You are the owner.</strong> It is your business, your vision and your call. Helix is simply a tool that puts you in control: it shows you the numbers, lays out the next step and prepares some of the busy work when you ask. The point is not just a bigger store. It is more freedom with your time and your choices, more room to create beautiful products for the world, and a clearer path to bringing your vision to life.
           </p>
           <p>
             <strong>The real secret?</strong> Surround yourself with people who are building. They don&apos;t need to make anything like your product, just share the same mindset of getting a little better every day. Help each other out, share what works, share your numbers, give honest feedback and push each other. Then watch your business and your friendships compound.
@@ -121,7 +121,7 @@ export default function About() {
 
         <Block title="A head of growth by your side">
           <p>
-            Helix guides, explains and does the work, but only with your approval. Every suggestion comes with the why. Every change waits in your approval queue. You learn as you go, and your business gets stronger because you understand it better.
+            Helix guides, explains and prepares some of the work, but only with your approval. Every suggestion comes with the why. Every change waits in your approval queue. You learn as you go, and your business gets stronger because you understand it better.
           </p>
         </Block>
 

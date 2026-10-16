@@ -1,22 +1,22 @@
 {
 "7.1": {"intro": "Ten minutes of setup stops the most expensive Meta problems. We'll do it one small step at a time.",
  "steps": [
-  {"say": "Go to business.facebook.com/settings. Click **Users > People**, then **Add**. Invite a second person you trust as an admin.", "check": "**People** shows two admins.", "careful": "With only one admin, if that person is locked out, you lose the account.", "lost": "Invite one trusted person as a second admin."},
+  {"say": "Go to business.facebook.com/settings. Click **Users > People**, then **Invite people**. Invite a second person you trust with **Full control** (Meta's name for admin).", "check": "**People** shows two people with full control.", "careful": "With only one admin, if that person is locked out, you lose the account.", "lost": "Invite one trusted person as a second admin."},
   {"say": "In Business Settings, open **Security Centre**. Turn on **Two-factor authentication** for everyone.", "check": "Two-factor is required for all admins.", "lost": "Turn on two-factor in **Security Centre**."},
-  {"say": "In **Security Centre**, click **Start verification**. Follow the steps with your business name, address and phone.", "check": "It shows \"In review\" or \"Verified\". No button? Skip and come back later.", "lost": "No verify button? That's okay. Skip this card."},
-  {"say": "Install the Facebook & Instagram app in Shopify.\n\n1. Click **Apps**.\n2. Search **Facebook & Instagram**.\n3. Click **Install**.\n4. Log in with Facebook.", "check": "The app shows your business, ad account, Page and pixel connected.", "lost": "Install the **Facebook & Instagram** app in Shopify."},
-  {"say": "In that app, open **Settings**, then **Data sharing**. Choose **Maximum**. This helps fewer sales go missing.", "check": "Data sharing says \"Maximum\".", "lost": "Set data sharing to **Maximum**."},
+  {"say": "In **Security Centre**, click **Start verification**. Enter your legal business name, address, phone and website.", "check": "It shows \"In review\" or \"Verified\". No button, or \"Ineligible\"? Skip and come back later.", "lost": "No verify button? That's okay. Skip this card."},
+  {"say": "Add the Facebook & Instagram sales channel in Shopify.\n\n1. Click **Settings**, then **Sales channels**.\n2. In the Shopify App Store, search **Facebook & Instagram** and add it.\n3. Click **Start set up**, then **Connect account**.\n4. Log in with Facebook, connect your things, click **Finish setup**.", "check": "It shows under **Sales channels**, with your business, ad account, Page and pixel connected.", "lost": "Add the **Facebook & Instagram** sales channel in Shopify."},
+  {"say": "Go to **Sales channels > Facebook & Instagram > Settings > Data sharing settings**. Check customer data sharing is on. Choose **Maximum**. This helps fewer sales go missing.", "check": "Data sharing says \"Maximum\".", "lost": "Set data sharing to **Maximum**."},
   {"say": "Open **Events Manager**. Click your pixel. Look at the **Purchase** row in **Overview**.", "check": "Purchase shows events from **Browser** and **Server**. Nothing yet? Place a small test order and check in an hour.", "lost": "Look for **Purchase** in Events Manager. See it? Great."},
-  {"say": "Set a spending limit.\n\n1. In Ads Manager, click the three-line menu.\n2. Click **Billing and payments**, then **Payment settings**.\n3. Find **Account spending limit**, click **Set limit**.\n4. Type the most you're happy to spend in total. Save.", "check": "The account stops at your limit, even if something goes wrong.", "lost": "Set an **Account spending limit**. Pick a number you're comfy with."},
+  {"say": "Set a spending limit.\n\n1. In Ads Manager, click the three-line menu.\n2. Click **Billing and payments**, then **Payment settings**.\n3. Find **Account spending limit**, click **Options**, then **Set limit**.\n4. Type the most you're happy to spend in total. Save.", "check": "The account stops at your limit, even if something goes wrong. It covers all-time spend and doesn't reset monthly.", "lost": "Set an **Account spending limit**. Pick a number you're comfy with."},
   {"say": "Make a \"Daily\" view.\n\n1. Click **Columns**, then **Customise columns**.\n2. Tick: Results, Cost per result, Amount spent, Purchase ROAS, CTR (link), Frequency.\n3. Tick **Save as preset**, name it \"Daily\".\n4. Click **Apply**.", "check": "**Columns > Daily** shows your daily numbers.", "lost": "Tick the six columns. Save as \"Daily\"."},
   {"say": "Add a weekly 5-minute reminder: look for campaigns you didn't make, or budgets that jumped.", "check": "The check is in your calendar. Find something odd? Turn it off, remove unknown people, contact Meta support, and tell your bank.", "lost": "Add a weekly calendar reminder."},
   {"say": "Later, with a few hundred visitors: **All tools > Audiences > Create audience > Custom audience > Website**. Make \"All visitors, last 30 days\". Then 180 days, and buyers.", "check": "They show \"Ready\" (can take a few hours).", "lost": "Not enough visitors yet? Skip this for now."}
  ]},
-"7.2": {"intro": "Meta has two ways to run sales ads: automatic (Advantage+) or manual. Start automatic.",
+"7.2": {"intro": "New sales campaigns start with Advantage+ on (automatic). Narrow the settings and it turns manual. Start automatic.",
  "steps": [
-  {"say": "In Ads Manager, click **+ Create**. Choose **Sales**, click **Continue**. Pick **Advantage+ sales campaign**, or leave the **Advantage+ on** switch on.", "check": "Your main campaign for new customers is Advantage+.", "lost": "**Create**, **Sales**, keep Advantage+ on."},
-  {"say": "Only for warm audiences or a controlled test: **+ Create > Sales > Continue**, then pick **Manual sales campaign**.", "check": "Warm and test campaigns are manual.", "lost": "No warm campaign yet? Skip this card."},
-  {"say": "In the ad, scroll to **Advantage+ creative**, click **Edit**. Turn off changes that alter how your ad looks.", "check": "The preview shows your ad as you made it.", "lost": "Turn off auto changes you don't like."}
+  {"say": "In Ads Manager, click **+ Create**. Choose **Sales**, click **Continue**, then **OK**. Check **Advantage+** at the top right says **On**.", "check": "Your main campaign for new customers is Advantage+.", "lost": "**Create**, **Sales**, keep Advantage+ on."},
+  {"say": "Only for warm audiences or a controlled test: **+ Create > Sales > Continue**, then set the audience or placements you need. Meta shows **Advantage+ off**.", "check": "Warm and test campaigns are manual.", "lost": "No warm campaign yet? Skip this card."},
+  {"say": "In the ad, go to **Ad creative** and open **Enhancements** (Advantage+ creative). Turn off changes that alter how your ad looks. Check **Advanced preview** too.", "check": "The preview shows your ad as you made it.", "lost": "Turn off auto changes you don't like."}
  ]},
 "7.3": {"intro": "The format is the shape of the ad. The right shape helps your message show.",
  "steps": [
@@ -34,7 +34,7 @@
  ]},
 "7.5": {"intro": "After you start or change an ad set, Meta needs days to learn. Some edits restart that.",
  "steps": [
-  {"say": "Before editing a live ad set, check if it restarts learning: adding ads, changing the audience, or a big budget change (more than about 20%).", "check": "You only make big edits on purpose.", "lost": "Big change? Pause and think first."},
+  {"say": "Before editing a live ad set, check if it restarts learning: adding or changing ads, changing the audience, event or bid strategy, pausing 7+ days, or a big budget change (a common guide is over 20%).", "check": "You only make big edits on purpose.", "lost": "Big change? Pause and think first."},
   {"say": "Start new tests as new campaigns instead of editing working ones.", "check": "Working campaigns keep what they learned.", "lost": "New test = new campaign."},
   {"say": "Judge on the last 7 days, not one day.", "check": "A weaker second week doesn't panic you.", "careful": "Copy winning ads instead of moving them, so each campaign keeps its learning.", "lost": "Look at 7 days, not today."}
  ]},
@@ -67,13 +67,13 @@
  "steps": [
   {"say": "Make 6 to 10 new ads before you start.", "check": "Fresh ads are ready.", "lost": "Have new ads ready first."},
   {"say": "Write down the most you're willing to lose.", "check": "You have a limit that ends the challenge.", "lost": "Write one dollar limit."},
-  {"say": "Each day: open the campaign (Advantage+) or ad set (manual), raise **Daily budget** by 10% to 20%, click **Publish**. Write today's spend and reach.", "check": "You can see if new spend finds new people.", "lost": "Raise budget a little. Write it down."},
+  {"say": "Open the campaign (campaign budget) or ad set (ad set budgets), raise **Daily budget** by 10% to 20%, click **Publish**. Write today's spend and reach.", "check": "You can see if new spend finds new people.", "lost": "Raise budget a little. Write it down."},
   {"say": "Stay at each new level for 10 to 14 days.", "check": "MER has time to settle.", "lost": "Wait about two weeks at each level."},
   {"say": "Read the result.\n\n- Spend grew much faster than reach? Add new ads, or remove some exclusions.\n- MER didn't settle? Go back one step and find out why.", "check": "You have a clear next action.", "lost": "Didn't settle? Step back one level."}
  ]},
-"7.11": {"intro": "Meta decides which ad gets credit for a sale. Its view isn't the full truth, so we double-check.",
+"7.11": {"intro": "Meta credits sales within 1 or 7 days of a link click, or 1 day of a view or other tap. That isn't the full truth, so we double-check.",
  "steps": [
-  {"say": "Click **Columns > Compare attribution settings**. Look at the incremental option if you have it. It tries to count only sales the ad truly caused.", "check": "You see how many sales are likely truly extra.", "lost": "Optional. Skip if you don't see it."},
+  {"say": "Click the **Columns** menu, then **Compare attribution models**. Tick **Incremental**, click **Apply**. It counts only sales Meta thinks the ad truly caused.", "check": "You see how many sales are likely truly extra.", "lost": "Optional. Skip if you don't see it."},
   {"say": "Each week, compare Meta's sales with your real Shopify sales and your MER.", "check": "You trust your store's numbers first.", "lost": "Shopify is the truth. Meta is a hint."},
   {"say": "When spend is big enough, run a holdout test (Lesson 20.9).", "check": "You know how many sales ads really cause.", "lost": "Small spend? Skip for now."}
  ]},
@@ -88,12 +88,12 @@
   {"say": "Pick a daily budget.\n\n- Selling under about $5,000 a month? $20 to $50 a day for two weeks.\n- Selling more? About 2 times your break-even cost per sale (on **Profit**), inside your guide from Lesson 1.9.", "check": "You have one daily budget, like $30.", "lost": "Just starting? Pick $20 a day."},
   {"say": "Get 3 to 5 ads ready: short videos or pictures of your best seller, each with a different first line, in 4:5 and 9:16.", "check": "3 to 5 files, plus one main text and one headline.", "lost": "Three pictures of your best seller. That's enough."},
   {"say": "Want Helix to build it? Click **Do it for me**, then skip to step 9. It's made switched off. Nothing spends until you turn it on.", "check": "A paused campaign appears in Ads Manager.", "lost": "Click **Do it for me**. Helix sets it up, switched off."},
-  {"say": "Building it yourself? Click **+ Create**, choose **Sales**, **Continue**, keep Advantage+ on, name it \"01-Sales-First\", click **Next**.", "check": "The campaign page is open with Sales as the goal.", "lost": "**Create**, **Sales**, **Next**."},
-  {"say": "Type your daily budget. Under **Conversion**, check your pixel is picked and the event is **Purchase**.", "check": "Budget and Purchase are set. If you see **Conversion location**, pick **Website**.", "lost": "Budget in, **Purchase** picked."},
+  {"say": "Building it yourself? Click **+ Create**, choose **Sales**, **Continue**, **OK**, check Advantage+ says **On**, name it \"01-Sales-First\", click **Next**.", "check": "The campaign page is open with Sales as the goal.", "lost": "**Create**, **Sales**, **Next**."},
+  {"say": "Type your daily budget. Under **Conversion**, check your pixel (or dataset) is picked and the event is **Purchase**.", "check": "Budget and Purchase are set. If you see **Conversion location**, pick **Website**.", "lost": "Budget in, **Purchase** picked."},
   {"say": "Leave the audience on Meta's suggestion and placements on **Advantage+ placements**. Click **Next**.", "check": "You're on the ad screen. Country box? Pick where you ship.", "lost": "Leave the defaults. Click **Next**."},
   {"say": "Add your ads.\n\n1. Click **Add media**, upload your files.\n2. Paste text into **Primary text**.\n3. Paste your headline.\n4. Paste your product link in **Website URL**.\n5. Check the phone preview.", "check": "Every ad shows the right picture, text and link.", "lost": "Upload, paste text, paste link. Check the preview."},
   {"say": "Go live. Built it yourself? Click **Publish**. Helix built it? Open it, check budget, ads and link, then turn its switch blue.", "check": "**Delivery** shows \"In review\", then \"Learning\".", "lost": "Check the link. Turn it on."},
-  {"say": "Leave it for 3 days. Then compare cost per purchase with your break-even cost per purchase.", "check": "You know which ads are under, near or over break-even.", "careful": "Edits in the first days restart learning. Only change something broken, like a wrong link.", "lost": "Wait 3 days. Then compare one number."}
+  {"say": "Leave it for 3 days. Then compare cost per purchase with your break-even cost per purchase.", "check": "You know which ads are under, near or over break-even.", "careful": "Big edits in the first days restart learning. Only change something broken, like a wrong link.", "lost": "Wait 3 days. Then compare one number."}
  ]},
 "7.14": {"intro": "Ads Manager looks busy, but you only use a few parts. Let's find them.",
  "steps": [
@@ -104,11 +104,11 @@
  ]},
 "7.15": {"intro": "Caps tell Meta the most you will pay. Try them only when a campaign is steady.",
  "steps": [
-  {"say": "Only try this when a campaign already has at least 50 sales a week and steady results. Check in Ads Manager on the **Campaigns** tab.", "check": "You know if the campaign is ready. If not, keep the default setting.", "lost": "Wait until you get 50 sales a week."},
+  {"say": "Only try this when a campaign already has at least 50 sales a week and steady results. Meta suggests 50 to 100 or more a week. Check on the **Campaigns** tab.", "check": "You know if the campaign is ready. If not, keep the default setting.", "lost": "Wait until you get 50 sales a week."},
   {"say": "Find your break-even cost per sale from Lesson 1.5. Write it down.", "check": "One number, for example $40.", "lost": "Find your break-even cost per sale."},
-  {"say": "Duplicate the campaign. In the copy, open the ad set and find **Performance goal > Cost per result goal** (Meta calls this a cost cap). Type a number a little under break-even, for example $36.", "check": "A test copy that tries to keep each sale under your number.", "lost": "Copy the campaign and type a number just under break-even."},
+  {"say": "Duplicate the campaign. In the copy, find **Bid strategy** (campaign if it uses campaign budget, else ad set). Choose **Cost per result goal** (once called a cost cap). Type a number a little under break-even, for example $36.", "check": "A test copy that aims to keep the average cost per sale near your number. Not guaranteed.", "lost": "Copy the campaign and type a number just under break-even."},
   {"say": "Set the budget a bit higher than normal. Caps often spend less than the budget, so a bigger budget gives Meta room.", "check": "The capped copy is not starved of money.", "lost": "Give the copy a bit more budget."},
   {"say": "Run both for 7 days. Compare total sales and cost per sale.", "check": "You know if the cap made you more profit. If it barely spent, raise the cap by 10% and try again.", "lost": "Wait 7 days and compare."},
-  {"say": "Optional: in **Ad account settings**, look for **Value rules**. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.", "check": "At most one rule, backed by your own numbers.", "lost": "Skip this unless your data proves it."}
+  {"say": "Optional: in **Advertising settings** (**All tools**), look for **Value rules**. Not every account has them. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.", "check": "At most one rule, backed by your own numbers.", "lost": "Skip this unless your data proves it."}
  ]}
 }

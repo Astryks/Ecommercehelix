@@ -26,7 +26,7 @@ export const toTaxMode = (v: unknown): SalesTaxMode => (v === "AU" || v === "NZ"
  * settings page asks the owner to choose.
  */
 export const DEFAULT_TAX: Record<string, { rate: number; name: "GST" | "VAT" }> = {
-  AU: { rate: 0.1, name: "GST" }, NZ: { rate: 0.15, name: "GST" }, SG: { rate: 0.09, name: "GST" }, IN: { rate: 0.18, name: "GST" }, MY: { rate: 0.1, name: "VAT" },
+  AU: { rate: 0.1, name: "GST" }, NZ: { rate: 0.15, name: "GST" }, SG: { rate: 0.09, name: "GST" }, IN: { rate: 0.18, name: "GST" },
   GB: { rate: 0.2, name: "VAT" }, IE: { rate: 0.23, name: "VAT" }, DE: { rate: 0.19, name: "VAT" }, FR: { rate: 0.2, name: "VAT" }, IT: { rate: 0.22, name: "VAT" },
   ES: { rate: 0.21, name: "VAT" }, PT: { rate: 0.23, name: "VAT" }, NL: { rate: 0.21, name: "VAT" }, BE: { rate: 0.21, name: "VAT" }, LU: { rate: 0.17, name: "VAT" },
   AT: { rate: 0.2, name: "VAT" }, CH: { rate: 0.081, name: "VAT" }, SE: { rate: 0.25, name: "VAT" }, DK: { rate: 0.25, name: "VAT" }, NO: { rate: 0.25, name: "VAT" },

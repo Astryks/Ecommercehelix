@@ -7,16 +7,16 @@
   {"say": "Save each account's backup codes offline, where a trusted person can reach them.", "check": "You can get back in if you lose your phone.", "lost": "Print your email backup codes."},
   {"say": "Make at least 2 trusted people full admins on Meta, Google and Shopify, each with their own login.", "check": "No one shares a login, and no single person can lock you out.", "lost": "Add one trusted admin on Meta."},
   {"say": "Every quarter, tidy who has access.\n\n1. Remove people who no longer work with you.\n2. Look over admin and partner lists for anyone you don't know.", "check": "The access check is on your Helix calendar.", "lost": "Remove one person who left."},
-  {"say": "Turn on login and spending alerts by email and phone.", "check": "You hear about strange activity within minutes.", "careful": "Report cybercrime in some countries at ReportCyber (cyber.gov.au) and in the US at the FBI's IC3 (ic3.gov).", "lost": "Turn on login alerts for Meta."}
+  {"say": "Turn on login and spending alerts by email and phone.", "check": "You hear about strange activity within minutes.", "careful": "In Australia, report cybercrime at ReportCyber (cyber.gov.au). In the US, use the FBI's IC3 (ic3.gov).", "lost": "Turn on login alerts for Meta."}
  ]},
 "25.2": {"intro": "Meta keeps your ad accounts, Pages, pixel and people in a business portfolio. Whoever owns it controls everything, so it must be you.",
  "steps": [
   {"say": "Make the business portfolio yourself, with your business email. Make yourself and one trusted person admins.", "check": "You own the portfolio and have a backup admin.", "lost": "Add one backup admin."},
-  {"say": "Do business verification when Meta asks. Use your legal name, address and documents exactly as registered.", "check": "The portfolio shows as verified. Missing a deadline can pause ads.", "lost": "Use your name exactly as registered."},
+  {"say": "Do business verification when Meta asks. Use your legal name, address and documents exactly as registered.", "check": "The portfolio shows as verified. Some features stay locked until you verify.", "lost": "Use your name exactly as registered."},
   {"say": "Make the ad account inside your own portfolio. Give agencies and freelancers partner access only.", "check": "The ad account lists your portfolio as owner.", "lost": "Check you're the owner."},
-  {"say": "Set an account spending limit a little above your planned monthly spend.", "check": "A thief can't spend more than the cap.", "lost": "Set a spending limit."},
+  {"say": "Set an account spending limit a little above your planned monthly spend. It counts total spend, so reset it each month.", "check": "Ads stop when the cap is reached. A hacker with admin access can change it, so lock logins too.", "lost": "Set a spending limit."},
   {"say": "Add a backup payment method.", "check": "A failed card doesn't restrict the account.", "lost": "Add a second card."},
-  {"say": "Check billing currency and time zone before your first ad.", "check": "Both are right. They can't be changed later without a new ad account.", "careful": "Outside the US: if GST registered, add your ABN in Meta billing so you're not charged GST, and check your card's international fee. US: use a business card, and call the card company before raising budgets.", "lost": "Check currency and time zone."},
+  {"say": "Check billing currency and time zone before your first ad.", "check": "Both are right. Changing either later closes the account and starts a new one.", "careful": "Outside the US: if GST registered, add your ABN in Meta billing so you're not charged GST, and check your card's international fee. US: use a business card, and call the card company before raising budgets.", "lost": "Check currency and time zone."},
   {"say": "Connect the ad account to Helix.", "check": "Helix pulls your Meta spend and results each day.", "lost": "Connect Meta in Helix."}
  ]},
 "25.3": {"intro": "Ad accounts get restricted for failed payments, policy flags, identity checks or odd activity. Most can be fixed if you stay calm and follow Meta's process.",
@@ -47,9 +47,9 @@
   {"say": "Ask for a monthly report showing spend, sales, profit and what they changed.", "check": "You understand every report.", "lost": "Ask for spend, sales and profit each month."},
   {"say": "To leave, give notice. Ask for a handover pack: campaign notes, audiences, creative files and any logins they set up.", "check": "You have everything to run ads yourself.", "lost": "Ask for the handover pack."},
   {"say": "On the last day, close everything off.\n\n1. Remove their access from every account.\n2. Change any shared passwords.\n3. Check billing so nothing still charges their card.", "check": "The agency has no access.", "lost": "Remove their access."},
-  {"say": "If the agency owns your ad account, ask in writing for a transfer. Or make a new account in your portfolio and share your pixel to it.", "check": "You run ads from an account you own. Old campaign history may stay behind, but pixel data is yours.", "lost": "Ask in writing for the account."},
+  {"say": "If the agency owns your ad account, it usually can't be moved to your portfolio. Make a new ad account in your portfolio and connect your own pixel.", "check": "You run ads from an account you own. Old campaign history stays behind, so ask for exports first.", "lost": "Make a new ad account you own."},
   {"say": "For your first month alone, change one thing at a time. Watch profit daily in Helix.", "check": "You see what each change does.", "lost": "One change at a time."},
-  {"say": "Check ad accounts, ads, customer lists and reports are in your name (Meta **Business Settings > Ad accounts**, Google **Admin > Access**).", "check": "You own every account and asset.", "lost": "Open **Business Settings > Ad accounts**."},
+  {"say": "Check ad accounts, ads, customer lists and reports are in your name (Meta **Business settings > Accounts > Ad accounts**, Google Ads **Admin > Access and security**).", "check": "You own every account and asset.", "lost": "Open **Business settings > Accounts > Ad accounts**."},
   {"say": "Ask your agency to report MER (all ad spend as a share of all sales) and contribution profit, not just ROAS (sales for each $1 of ads).", "check": "Agency reports show profit numbers.", "lost": "Ask for MER and profit."},
   {"say": "If you bring work in-house, start with the daily ad check (Lesson 7.6). Keep specialists for the gaps.", "check": "You run the daily check yourself.", "lost": "Do the daily ad check today."}
  ]},
@@ -57,7 +57,7 @@
  "steps": [
   {"say": "In your email tool's settings, set up SPF, DKIM and DMARC for your sending domain (three records that prove email is really from you).", "check": "The tool shows the domain as authenticated.", "lost": "Follow your email tool's domain guide."},
   {"say": "Send from your own domain, never a free email address.", "check": "Emails come from you@yourbrand.", "lost": "Use your brand email as sender."},
-  {"say": "Register your text sender details with your SMS provider before sending campaigns.", "check": "Texts show your business name, not \"Unverified\".", "careful": "Outside the US: since 1 July 2026, business name senders must be on the national SMS Sender ID Register, matching your business name, trademark or domain. US: standard numbers need carrier registration (10DLC), and toll-free numbers need verification.", "lost": "Ask your SMS provider how to register."},
+  {"say": "Register your text sender details with your SMS provider before sending campaigns.", "check": "Texts show your business name, not \"Unverified\".", "careful": "Outside the US: in Australia since 1 July 2026, unregistered sender names show as \"Unverified\". Register on the SMS Sender ID Register, using a name clearly linked to you, like your business name or trademark. US: standard numbers need carrier registration (10DLC), and toll-free numbers need verification.", "lost": "Ask your SMS provider how to register."},
   {"say": "Use the same sender name everywhere.", "check": "Customers recognise you in every inbox.", "lost": "Pick one sender name."}
  ]}
 }

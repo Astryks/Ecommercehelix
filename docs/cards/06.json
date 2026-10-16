@@ -8,7 +8,7 @@
 "6.2": {"intro": "Each campaign has one job. The job decides what you pick in Ads Manager.",
  "steps": [
   {"say": "Pick your campaign's job from the lesson table. For example: \"Find new buyers\".", "check": "One job is on the brief.", "lost": "Write: \"Find new buyers\"."},
-  {"say": "Make the campaign.\n\n1. In Ads Manager, click **Create**.\n2. Choose the goal for this job. For new buyers: **Sales**.\n3. Set what it aims for. For new buyers: **Purchase**.", "check": "The goal and event match the table.", "careful": "Aim for a step that happens at least about 25 to 50 times a week. Fewer, and results jump around.", "lost": "Click **Create**, choose **Sales**, then **Purchase**."}
+  {"say": "Make the campaign.\n\n1. In Ads Manager, click **+ Create**.\n2. Choose the goal for this job. For new buyers: **Sales**.\n3. In the ad set, set what it aims for. For new buyers: **Purchase**.", "check": "The goal and event match the table.", "careful": "Meta usually needs about 50 results a week to finish learning. Aim for a step that happens at least 25 to 50 times a week.", "lost": "Click **+ Create**, choose **Sales**, then **Purchase**."}
  ]},
 "6.3": {"intro": "Keep testing apart from winning, so new tests don't upset what works.",
  "steps": [
@@ -28,13 +28,13 @@
   {"say": "For strangers, start wide: Advantage+ audience, or just country and age. Only test interests after you have winning ads.", "check": "Your stranger ad sets have no stacked interests.", "lost": "Keep the audience wide."},
   {"say": "In **Audiences**, click **Create audience**, then **Custom audience**, for each:\n\n1. Site visitors, 30 and 180 days\n2. Product viewers\n3. Added to cart\n4. Started checkout\n5. Buyers, 180 days and all time\n6. People who engaged on Facebook or Instagram\n7. Your email list", "check": "All seven show \"Ready\".", "lost": "Make one audience: site visitors, 30 days. Do the rest later."},
   {"say": "Make a 3% to 5% lookalike from your buyers to test. (1% is closest to your buyers, 10% widest.)", "check": "A lookalike is ready for a test.", "lost": "Make a lookalike from buyers. Pick 3% to 5%."},
-  {"say": "In **Ad account settings > Audience segments**, set your engaged audience and existing customers.", "check": "Ads Manager can show how much spend reaches new people.", "lost": "Fill in **Audience segments** in settings."},
+  {"say": "In **Advertising settings > Audience segments** (**All tools**), set your engaged audience and existing customers.", "check": "Ads Manager can split results into new, engaged and existing customers, from the day you save.", "lost": "Fill in **Audience segments** in settings."},
   {"say": "Leave staff and existing customers out of stranger campaigns where it makes sense. Give each new country its own campaign when you can afford it.", "check": "Stranger spend goes to new people.", "lost": "Exclude your customers from stranger ads."}
  ]},
 "6.6": {"intro": "Budget decides how fast ads learn. A few rules stop the classic mistakes.",
  "steps": [
-  {"say": "Set each new campaign's daily budget to 2 to 3 times your target CPA. For a $30 target: $60 to $90 a day.", "check": "The campaign can get enough sales to learn.", "lost": "Target CPA × 2 = your daily budget."},
-  {"say": "When it's working, raise the budget by no more than 20% a day.", "check": "Learning doesn't reset.", "lost": "Small raises only: up to 20%."},
+  {"say": "As a rule of thumb, set each new campaign's daily budget to 2 to 3 times your target CPA. For a $30 target: $60 to $90 a day.", "check": "The campaign can get enough sales to learn.", "lost": "Target CPA × 2 = your daily budget."},
+  {"say": "When it's working, raise the budget by no more than about 20% a day. Big jumps can restart learning.", "check": "Learning doesn't reset.", "lost": "Small raises only: up to 20%."},
   {"say": "When raising stops working, add a new campaign instead.", "check": "You keep growing without breaking the first one.", "lost": "Stuck? Start a second campaign."},
   {"say": "Before big events, set spending limits on campaigns and ad sets.", "check": "Nothing can overspend during the sale.", "careful": "Judge by the week, not the day.", "lost": "Set a spending limit before a sale."}
  ]},
@@ -63,7 +63,7 @@
  ]},
 "6.11": {"intro": "Each number shows one step, from stopping the scroll to buying. Read them in order.",
  "steps": [
-  {"say": "Make a \"Creative\" view.\n\n1. Click **Columns**, then **Customise columns**.\n2. Tick: hook rate, hold rate, outbound CTR, CPM, cost per outbound click, add to cart, cost per purchase, ROAS, frequency and reach.\n3. Tick **Save as preset**, name it \"Creative\", click **Apply**.", "check": "You see all those numbers in one view.", "lost": "Add the columns. Save the view as \"Creative\"."},
+  {"say": "Make a \"Creative\" view.\n\n1. Click **Columns**, then **Customise columns**.\n2. Tick: 3-second video plays, ThruPlays, outbound CTR, CPM, cost per outbound click, add to cart, cost per purchase, ROAS, frequency and reach.\n3. Click **Create custom metric** to make hook rate and hold rate.\n4. Tick **Save as preset**, name it \"Creative\", click **Apply**.", "check": "You see all those numbers in one view.", "lost": "Add the columns. Save the view as \"Creative\"."},
   {"say": "Compare each ad's numbers with the ranges in the lesson table.", "check": "You know where each weak ad breaks.", "lost": "Find the first number that's outside its range."},
   {"say": "Match it to a likely cause:\n\n- Likes but costly sales: page or offer doesn't match the ad.\n- Low click rate across a batch: weak message or offer.\n- CPM rising while clicks hold: audience used up, or a busy season.", "check": "You have a likely cause, not just a symptom.", "lost": "Pick the cause that sounds closest."}
  ]},
@@ -77,7 +77,7 @@
  "steps": [
   {"say": "Read the campaign types in the lesson table. List which ones you run.", "check": "You know your Google setup.", "lost": "List your Google campaigns."},
   {"say": "Make sure a brand search campaign is running, so your ad shows first when people search your name.", "check": "Searching your brand shows your ad first.", "lost": "Check you have a brand search campaign on."},
-  {"say": "Give any new Google campaign about 2 weeks to learn and 4 weeks to judge, at $50 a day or more.", "check": "Each new campaign has a judge date in your calendar.", "lost": "Put a judge date 4 weeks away."}
+  {"say": "Give any new Google campaign about 2 weeks to learn. Judge it at 4 weeks, or 6 for Performance Max (Google's advice). Roughly $50 a day or more.", "check": "Each new campaign has a judge date in your calendar.", "lost": "Put a judge date 4 weeks away."}
  ]},
 "6.14": {"intro": "Sale campaigns behave differently. Build them separately so your normal ads stay safe.",
  "steps": [

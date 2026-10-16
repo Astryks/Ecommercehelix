@@ -23,9 +23,12 @@
  ]},
 "4.4": {"intro": "Content pillars are the 4 to 6 topics you always post about. They stop the blank-page feeling.",
  "steps": [
-  {"say": "Write your 4 to 6 topics. Ideas: product, tips, proof, community, offers, your story.", "check": "You have a list of topics.", "lost": "Pick four topics from the ideas list."},
+  {"say": "Write your 4 to 6 topics. Ideas: proof, teaching, story and community, product and offer.", "check": "You have a list of topics.", "lost": "Pick four topics from the ideas list."},
   {"say": "For each place you post, decide how much of each topic to use. Use the lesson table to start.", "check": "Each channel's mix adds up to 100%.", "lost": "Copy the lesson table's mix for now."},
-  {"say": "Plan one month of posts using that mix.", "check": "You have a month of ideas, each with a topic and a channel.", "lost": "Plan one week of posts first."}
+  {"say": "Plan one month of posts using that mix.", "check": "You have a month of ideas, each with a topic and a channel.", "lost": "Plan one week of posts first."},
+  {"say": "Write what goes in each topic. **Proof:** reviews, customer photos, press. **Teaching:** how to use, myths, care. **Story and community:** you, behind the scenes, customers. **Product and offer:** launches, restocks, bundles, sales.", "check": "Every topic has a short list of post types.", "lost": "Write two post ideas under each topic."},
+  {"say": "Check your month against a rough mix: 40% teaching and proof, 30% story and community, 30% product and offer.", "check": "Your plan follows the mix.", "lost": "Count your posts by topic. Roughly right is fine."},
+  {"say": "Fill gaps with ideas that never run out: reviews, comments, support questions (\"You asked, we answered\"), and a regular series.", "check": "You have more ideas than posting slots.", "lost": "Turn one customer question into a post."}
  ]},
 "4.5": {"intro": "A calendar shows what you'll post and when. Plan around your sales dates.",
  "steps": [
@@ -38,13 +41,13 @@
  "steps": [
   {"say": "Film 3 to 5 short videos in one or two sessions a week. Post them across the week.", "check": "You post 3 to 5 videos a week without filming every day.", "lost": "Film three short videos in one go."},
   {"say": "After 48 hours, check each post's watch time in the app's insights.", "check": "You know which 1 or 2 posts held attention best.", "lost": "Which video did people watch longest?"},
-  {"say": "Where the app has a trial or test post feature, use it to show a post to people who don't follow you.", "check": "You can try ideas on new people safely.", "lost": "Optional. Skip if your app doesn't have it."},
+  {"say": "Where the app has a test post feature, like Instagram trial reels, use it. It shows a post to people who don't follow you first.", "check": "You can try ideas on new people safely.", "lost": "Optional. Skip if your app doesn't have it."},
   {"say": "Reply to every comment in the first hour after posting.", "check": "Comments get quick answers.", "lost": "Reply to comments soon after you post."},
   {"say": "Add your best post to your ad ideas list.", "check": "Your next ad starts from an idea that worked.", "lost": "Write your best post's name on your ad list."}
  ]},
 "4.7": {"intro": "A community is customers who talk to you and each other. It works best when people buy again.",
  "steps": [
-  {"say": "Check how often customers buy again. In Shopify: **Analytics > Reports > Customers over time**. If people rarely rebuy, focus on reviews and creators instead and skip this lesson.", "check": "You know if community is worth it for you.", "lost": "Do people buy again? If rarely, skip this lesson. That's okay."},
+  {"say": "Check how often customers buy again. In Shopify: **Analytics > Reports > New vs returning customers**. If people rarely rebuy, focus on reviews and creators instead and skip this lesson.", "check": "You know if community is worth it for you.", "lost": "Do people buy again? If rarely, skip this lesson. That's okay."},
   {"say": "Give customers a place and a reason to talk: a private group, events, challenges, or sharing their photos.", "check": "You have one community space with a clear reason to join.", "lost": "Pick one place for customers to chat."},
   {"say": "Make customers the star of your posts, not the product.", "check": "At least one post a week stars a customer.", "lost": "Share one customer photo this week (with their yes)."},
   {"say": "Read their questions each week. Add new ones to your worries list from Lesson 3.3.", "check": "Your ideas and FAQ grow from real questions.", "lost": "Write down one new question each week."},
@@ -63,6 +66,6 @@
  "steps": [
   {"say": "Send free product to 20 or more creators who match your customer.", "check": "Product is on its way to lots of creators.", "lost": "Send product to five creators to start."},
   {"say": "Pay the best ones for usage rights (permission to use their video in your ads) for a set time, like 3 months.", "check": "You have signed permission to run their content as ads.", "lost": "Ask your best creator for permission to use their video in ads. Get it in writing."},
-  {"say": "Run their content as partnership ads, which show the creator's name. See Modules 5, 7 and 19.", "check": "The ads are live and you can compare them with your own ads.", "lost": "Turn one creator video into an ad."}
+  {"say": "Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand. See Modules 5, 7 and 19.", "check": "The ads are live and you can compare them with your own ads.", "lost": "Turn one creator video into an ad."}
  ]}
 }

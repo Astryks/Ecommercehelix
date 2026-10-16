@@ -105,7 +105,7 @@ export function metricCards(m: Metrics, p: Metrics | null, s: Settings): Card[] 
       key: "mer", label: "MER (ad spend ÷ revenue)", value: pct(m.merPct, 1), sub: `Target ${pct(s.targetMerPct)} · break-even ${pct(m.breakEvenMerPct)}`, flag: rateMer(m.merPct, s.targetMerPct, m.breakEvenMerPct),
       delta: d(m.merPct, p?.merPct), better: "down",
       info: {
-        what: "MER (marketing efficiency ratio) is the share of all your sales that went on ads. Unlike platform ROAS, it uses your real total sales, so no platform can overcount.",
+        what: "MER (marketing efficiency ratio) is the share of all your sales that went on ads. Helix shows it as a %: ad spend ÷ sales. Many tools show it the other way round, as sales ÷ ad spend (30% is about 3.3x). Unlike platform ROAS, it uses your real total sales, so no platform can overcount.",
         how: `All ad spend ${$(m.adSpend)} ÷ revenue ${$(m.netRevenue)} = ${pct(m.merPct, 1)}. The same thing as a blended ROAS of ${x2(m.blendedRoas)}.`,
         good: `Green at or under your target of ${pct(s.targetMerPct)} (set in Your numbers). Amber above target but under your break-even MER of ${pct(m.breakEvenMerPct)} (the point where ads eat all the margin left after product, shipping and fees). Red above that. Many growing stores sit between 20 and 35%. ${GUIDE}`,
       },
@@ -157,7 +157,7 @@ export function metricCards(m: Metrics, p: Metrics | null, s: Settings): Card[] 
       info: {
         what: "What the business actually made after everything, including fixed bills like rent, software, staff and your wage.",
         how: `Contribution profit ${$(m.contribution)} minus fixed costs for these ${m.calendarDays} days ${$(m.fixedCosts)} (your ${$(s.fixedCostsMonthly)} a month, shared out per day) = ${$(m.netProfit)}.`,
-        good: `Above $0 is green: the business pays for itself. Amber when the loss is under 5% of revenue, red beyond that. Many healthy online stores make 10 to 20% net. ${GUIDE}`,
+        good: `Above $0 is green: the business pays for itself. Amber when the loss is under 5% of revenue, red beyond that. Many owners aim for 10 to 20% net as a rule of thumb. ${GUIDE}`,
       },
     },
     {

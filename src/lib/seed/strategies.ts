@@ -7,7 +7,7 @@ export const STRATEGIES: Strategy[] = [
     what: "Two minutes each morning to add yesterday's numbers and see your profit.",
     why: "You cannot grow what you do not measure. Seeing profit every day stops small leaks becoming big ones.",
     how: ["Add yesterday's sales, orders and ad spend.", "Read the big profit number and the one-line note.", "Do one small task to improve it."],
-    helix: "Pulls your ad spend in automatically and tells you in plain words what changed.",
+    helix: "Pulls in your Shopify sales and Meta ad spend once connected, and tells you in plain words what changed.",
     watch: "Profit, every day", tone: "from-sky-500/15 to-indigo-500/10",
   },
   {
@@ -44,8 +44,8 @@ export const STRATEGIES: Strategy[] = [
   },
   {
     id: "bfcm", emoji: "🛍️", title: "Black Friday plan",
-    what: "A 12-week plan: target, offer, list building, build-up, sale days and a calm finish.",
-    why: "The biggest week of the year is won weeks before it starts, and a bad offer can wipe out your profit.",
+    what: "A plan that starts on 1 August: target, offer, list building, build-up, sale days and a calm finish.",
+    why: "For many stores, the biggest week of the year is won months before it starts, and a bad offer can wipe out your profit.",
     how: ["Set a profit target.", "Pick an offer that keeps your margin.", "Put emails and ads on a timeline."],
     helix: "Builds the timeline with due dates, checks the profit on each offer, and builds sale ads as paused Meta drafts.",
     watch: "Profit, compared with your target", tone: "from-violet-500/15 to-indigo-500/10",

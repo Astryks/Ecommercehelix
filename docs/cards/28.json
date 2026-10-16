@@ -6,7 +6,10 @@
   {"say": "Write the role as results. Example: \"every customer email answered within one business day\".", "check": "Success can be measured.", "lost": "Write one result for the role."},
   {"say": "Give shortlisted people a small paid trial task that matches the real work.", "check": "You see real work before hiring.", "lost": "Pay for one small test task."},
   {"say": "Agree terms in writing: hours or deliverables, rate, notice, confidentiality, and that their work belongs to you.", "check": "A signed agreement exists.", "lost": "Put the rate and hours in writing."},
-  {"say": "Check if the person is an employee or contractor, based on how the work really happens, not the label.", "check": "You know which rules apply.", "careful": "Outside the US: check the ATO's employee or contractor guide and Fair Work. Super is paid each payday from 1 July 2026. US: the IRS looks at control and independence (W-2 or 1099).", "lost": "Read the official employee or contractor guide."}
+  {"say": "Check if the person is an employee or contractor, based on how the work really happens, not the label.", "check": "You know which rules apply.", "careful": "Outside the US: check the ATO's employee or contractor guide and Fair Work. Super guarantee is 12% of eligible pay, paid each payday from 1 July 2026. Some contractors paid mainly for their labour also get super. US: the IRS looks at control and independence (W-2 or 1099).", "lost": "Read the official employee or contractor guide."},
+  {"say": "Write the SOPs (how the work is done) before you hand it over.", "check": "A new hire can follow written steps from day one.", "lost": "Write the steps for one task."},
+  {"say": "Plan 3 to 6 months ahead, and test candidates with a real paid work sample.", "check": "You hire on evidence, with time to train.", "lost": "Pick a month to start looking."},
+  {"say": "For senior hires, test before you commit.\n\n1. Write what they must achieve in 12 months.\n2. Call at least two references.\n3. Start with a paid trial project.", "check": "Senior hires have clear goals and have proven themselves.", "lost": "Write one 12-month goal for the role."}
  ]},
 "28.2": {"intro": "A remote assistant can be a great first hire, if the work is written down and access is safe.",
  "steps": [
@@ -23,7 +26,7 @@
   {"say": "Split every quote into parts: making the content, posting it, usage rights (using it in your ads, and for how long), exclusivity, and raw footage.", "check": "You know what each part costs.", "lost": "Ask: what's the price for usage rights?"},
   {"say": "Put it in writing: deliverables, dates, revisions, usage rights, payment date, and what happens if a post is late.", "check": "Every deal has a written agreement.", "lost": "Write the dates and the payment."},
   {"say": "Count gifting costs (product, shipping, your time) when you compare it with paid work.", "check": "You compare deals fairly.", "lost": "Add up product + shipping for one gift."},
-  {"say": "Make sure every paid or gifted post is clearly labelled as an ad.", "check": "All posts are disclosed.", "careful": "Outside the US: follow the ACCC's influencer guidance. GST registered creators add GST. US: follow the FTC's disclosure guide. Creators paid $2,000 or more in 2026 usually need a 1099-NEC (Lesson 27.6).", "lost": "Ask them to add \"ad\" to the post."},
+  {"say": "Make sure every paid or gifted post is clearly labelled as an ad.", "check": "All posts are disclosed.", "careful": "Outside the US: follow the ACCC's influencer advice. GST registered creators add GST. US: follow the FTC's disclosure guide. Creators paid $2,000 or more in 2026 usually need a 1099-NEC (Lesson 27.6).", "lost": "Ask them to add \"ad\" to the post."},
   {"say": "Pay on time and keep invoices.", "check": "Records are complete.", "lost": "Save the invoice."},
   {"say": "Track each creator's sales from their code or link, and how their content does as an ad.", "check": "You know which creators to book again.", "lost": "Check sales from one creator's code."}
  ]},
@@ -61,14 +64,17 @@
   {"say": "Write down your 3 biggest worries, and one small next step for each.", "check": "Each worry has an action.", "lost": "Write one worry and one small step."},
   {"say": "Protect sleep, movement, and at least one day a week away from the business.", "check": "One day off a week is in your calendar.", "lost": "Pick your day off."},
   {"say": "Talk to someone: a friend, a peer, a mentor or a professional. Don't wait for a crisis.", "check": "You have someone to call this week.", "lost": "Message one person today."},
-  {"say": "Hand off one draining task this month (Lesson 28.1).", "check": "One task is off your plate.", "lost": "Pick one task to hand off."}
+  {"say": "Hand off one draining task this month (Lesson 28.1).", "check": "One task is off your plate.", "lost": "Pick one task to hand off."},
+  {"say": "Judge results on the last 3 days and month to date, not one day.", "check": "One bad day does not change your plans.", "lost": "Look at the last 3 days, not today."},
+  {"say": "Keep a wins file of good results and kind customer messages, and keep your decision log.", "check": "You can see your progress and sensible choices when it gets hard.", "lost": "Save one kind customer message."},
+  {"say": "Talk to other founders regularly. In busy seasons, plan sleep and exercise like any other task.", "check": "You have support and protected recovery time.", "lost": "Message one founder this week."}
  ]},
 "28.8": {"intro": "Amazon can add sales, but it has its own fees, rules and competition. Decide with numbers.",
  "steps": [
   {"say": "Search Amazon for your product type. Note prices, review counts, and whether copies already exist.", "check": "You know the competition.", "careful": "Smaller Amazon marketplaces outside the US have less demand, so check demand first.", "lost": "Search Amazon for your product."},
   {"say": "Use Amazon's fee calculator to work out profit per unit: price minus referral fee, fulfilment fee, storage, ads and returns.", "check": "You know profit per unit after all fees.", "lost": "Put your best seller in the fee calculator."},
   {"say": "Choose how to sell: as a seller (you set prices and listings) or, if invited, as a wholesale supplier to Amazon.", "check": "You have a selling model.", "lost": "Most start as a seller."},
-  {"say": "Register your trademark and enrol in Amazon's brand registry before you list.", "check": "Your brand is protected.", "lost": "Register your trademark first."},
+  {"say": "Apply for your trademark and enrol in Amazon Brand Registry before you list. A pending trademark is often accepted.", "check": "Your brand is protected.", "lost": "Apply for your trademark first."},
   {"say": "List only your best seller first. Keep its stock separate.", "check": "Your own store never runs out.", "lost": "List one product."},
   {"say": "After 90 days, look at profit, the effect on your own store, and time spent.", "check": "You have a keep or stop decision. Marketplaces usually collect US sales tax for you (Lesson 26.3).", "lost": "Put a 90-day review in your calendar."}
  ]},

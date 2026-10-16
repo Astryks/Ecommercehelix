@@ -1,4 +1,6 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
+// The Stripe client is created when @/lib/stripe is first imported, so the test keys must exist before any import runs.
+vi.hoisted(() => { process.env.STRIPE_SECRET_KEY = "sk_test_dummy"; process.env.STRIPE_WEBHOOK_SECRET = "whsec_test_secret"; });
 import Stripe from "stripe";
 import { billingView, isStale, planForStatus, prorationFor, subFields } from "@/lib/billing";
 import { planForPrice, priceFor } from "@/lib/stripe";

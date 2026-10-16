@@ -22,7 +22,7 @@
  ]},
 "29.4": {"intro": "A friend's recommendation is the cheapest, most trusted way to win a customer. Most stores never ask.",
  "steps": [
-  {"say": "Choose a two-sided reward you can afford, like $15 off for the friend and $15 credit for the customer. Check it stays under your break-even cost per order (Lesson 1.5).", "check": "A reward both sides like that still makes a profit.", "lost": "Is $15 + $15 under your break-even? Then use it."},
+  {"say": "Choose a two-sided reward you can afford, like $15 off for the friend and $15 credit for the customer. Check it stays under your break-even CPA (Lesson 1.5).", "check": "A reward both sides like that still makes a profit.", "lost": "Is $15 + $15 under your break-even? Then use it."},
   {"say": "Install a referral app from the Shopify App Store (search \"referral\"), or use a unique discount code per customer.", "check": "Each customer can share a personal link or code.", "lost": "Search \"referral\" in the App Store."},
   {"say": "Ask at the happy moment: in the email the day after delivery, on the thank-you page, and inside the parcel with a printed card.", "check": "The ask shows in three places when people feel best about you.", "lost": "Add the ask to the thank-you page."},
   {"say": "Each month, check how many orders came from referral codes. Thank your top referrers personally.", "check": "You know your referral orders and your top five referrers.", "lost": "Thank your top referrer."}

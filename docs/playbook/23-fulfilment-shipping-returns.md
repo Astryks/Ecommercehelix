@@ -49,7 +49,7 @@
 
 **Expected result:** You have 3 quotes for the same workload.
 
-**Watch out:** Outside the US: most warehouses are in the biggest cities. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in 2 to 5 days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
+**Watch out:** Outside the US: most warehouses are in the biggest cities. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
 
 **Step 4.** Compare the full monthly bill, not just pick and pack. Include receiving, storage (per pallet, shelf or cubic metre) and packaging. Add monthly minimums, set-up, returns and busy-season extras.
 
@@ -108,11 +108,11 @@
 ## Lesson 23.3: Shipping rates, carriers and delays
 <!-- stage:grow -->
 
-**Why this matters:** Shipping is often your second biggest cost after the product itself. Know it before you set prices and free shipping rules, and have a plan for delays.
+**Why this matters:** Shipping is often one of your biggest costs after the product itself. Know it before you set prices and free shipping rules, and have a plan for delays.
 
 **Step 1.** Weigh and measure your 3 most common parcels.
 
-**Expected result:** You know the size and weight of each. Carriers charge by size as well as weight (cubic or dimensional weight), so smaller boxes can save money.
+**Expected result:** You know the size and weight of each. Carriers charge by size as well as weight (cubic or dimensional weight), so smaller boxes can save money. See [Australia Post: cubic weight](https://auspost.com.au/business/business-ideas/ecommerce-jargon-busters/what-is-cubic-weight) and [USPS: size and weight](https://faq.usps.com/articles/Knowledge/Parcel-Size-Weight-Fee-Standards).
 
 **Step 2.** Get rates from at least 2 carriers for your top delivery zones.
 
@@ -137,6 +137,8 @@
 **Step 6.** Write a plan for delivery problems. Have a second carrier you can switch to, an email you can send in minutes, and a store banner.
 
 **Expected result:** You can react to a postal delay the same day.
+
+**Watch out:** US: ship within the time you state, or 30 days if you state none. If you will be late, tell buyers and offer to cancel with a full refund (see [FTC: Mail Order Rule](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
 
 **Step 7.** Review carrier prices each time they announce a rise, and at least once a year.
 
@@ -163,7 +165,7 @@
 
 **Expected result:** Customers choose it; it is never pre-selected.
 
-**Watch out:** Outside the US: pre-selected extras can count as part of the headline price (see [ACCC: price displays](https://www.accc.gov.au/business/pricing/price-displays)). US: the [FTC](https://www.ftc.gov/business-guidance/advertising-marketing) treats hidden or pre-checked charges as a risk area.
+**Watch out:** Outside the US: pre-selected extras must be included in the total price you show (see [ACCC: price displays](https://www.accc.gov.au/consumers/pricing/price-displays)). US: the [FTC](https://www.ftc.gov/business-guidance/advertising-marketing) treats hidden or pre-checked charges as a risk area.
 
 **Step 5.** Record protection fees as income and resends as costs.
 
@@ -194,7 +196,7 @@
 
 **Expected result:** More returns become exchanges.
 
-**Watch out:** In many countries, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds" (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** Outside the US: in Australia, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds"; "no refunds for change of mind" is fine (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 5.** Make returns easy to start with a form or portal, checking the portal's price against your return volume.
 
@@ -215,7 +217,7 @@
 
 **Why this matters:** A spreadsheet works for a handful of products. It breaks when you have many variants, more than one location, or purchase orders in transit.
 
-**Step 1.** Start with the Helix [Suppliers and stock](/dashboard/stock) page. It shows reorder points, stock-out dates and order-by dates (see [Lesson 14.9](14-inventory-cash-planning.md)).
+**Step 1.** Start with the Helix [Suppliers and stock](/dashboard/stock) page. It shows reorder points, stock-out dates and order-by dates (see [Lesson 14.9](14-inventory-cash-planning.md#lesson-149-reorder-points-lead-times-and-stock-outs)).
 
 **Expected result:** Each product shows when to reorder.
 
@@ -250,9 +252,9 @@
 
 **Expected result:** Five saved replies, and the same answers on your site.
 
-**Step 3.** Bring email, chat and social messages into one shared inbox (Shopify Inbox or a help desk app). Switch on an automatic order tracking reply.
+**Step 3.** Bring email, chat and social messages into one shared inbox, usually a help desk app. Switch on an automatic order tracking reply.
 
-**Expected result:** Every message lands in one place, and "where is my order" gets an instant answer.
+**Expected result:** Every message lands in one place, and "where is my order" gets an instant answer. Shopify Inbox covers chat and social messages, not email.
 
 **Step 4.** Set a reply target, like within one business day. Check each week how many messages missed it.
 

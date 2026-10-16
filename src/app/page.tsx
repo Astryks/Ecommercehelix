@@ -24,7 +24,7 @@ import { ARTICLES } from "@/lib/content/guides";
 
 export const metadata = pageMeta({
   title: "E-commerce Growth Software: Grow Your Online Store Profitably",
-  description: "Built for stores doing $10k–$30k a month. E-commerce Helix helps you reach $1M, profitably: a daily profit dashboard, one clear growth task a day, Meta ads as paused drafts and email flows set up with your approval. Free to start.",
+  description: "Built for stores doing $10k–$30k a month. E-commerce Helix helps you reach $1M, profitably: a daily profit dashboard, one clear growth task a day, Meta ads as paused drafts and ready-to-paste email flows. Free to start.",
   path: "/",
 });
 
@@ -32,9 +32,9 @@ export const metadata = pageMeta({
 export const revalidate = 3600;
 
 const STEPS = [
-  { icon: Search, title: "Check", text: "Paste your store link. Helix checks your store, ads and emails and finds the fixes that will make you the most money." },
+  { icon: Search, title: "Check", text: "Paste your store link. Helix checks your home page, a product page and your cart, plus your Meta ads once connected. Then it ranks the fixes." },
   { icon: ListChecks, title: "One thing a day", text: "Each day you get one short lesson and one clear task, explained step by step. About 15 minutes." },
-  { icon: ClipboardCheck, title: "You approve", text: "Want Helix to do it for you? Tap the button. Helix prepares the work, and nothing changes until you say yes." },
+  { icon: ClipboardCheck, title: "You approve", text: "Some tasks Helix can prepare for you, like a Meta campaign built as a paused draft. Nothing goes live until you say yes." },
   { icon: TrendingUp, title: "Watch profit grow", text: "Add yesterday's numbers each morning and see your profit. Small daily wins add up fast." },
 ];
 
@@ -47,7 +47,7 @@ const PROFIT_POINTS = [
 const FEAR_POINTS = [
   { icon: ShieldAlert, title: "Why small tests fail", text: "Meta and Google need enough sales to learn who buys from you. A tiny budget, or switching ads off after three days, means they never get there. Helix tells you what a fair test costs at your prices before you spend a dollar." },
   { icon: Scale, title: "A safe limit on every dollar", text: "Helix works out your break-even cost per sale from your own numbers. You can see when an ad is making money, when to give it more and when to stop." },
-  { icon: GraduationCap, title: "Learn how it really works", text: "Short daily lessons and click-by-click drawings show you how campaigns, audiences and creative fit together. Helix can build campaigns as paused drafts, so nothing spends until you press go." },
+  { icon: GraduationCap, title: "Learn how it really works", text: "Short daily lessons with step-by-step instructions show you how campaigns, audiences and creative fit together. Helix can build Meta campaigns as paused drafts, so nothing spends until you press go." },
 ];
 
 const AGENCY_ROWS = [
@@ -90,7 +90,7 @@ function MorningBrief() {
         <div className="mt-5 rounded-lg bg-paper-2 p-4">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-700">Today, 15 minutes</p>
           <p className="mt-1 font-hand text-lg font-semibold leading-snug">Set a free-shipping amount a little above your average order</p>
-          <p className="mt-1 text-sm text-slate-600">Step by step, with a drawing of where to click. Or let Helix do it after you approve.</p>
+          <p className="mt-1 text-sm text-slate-600">Step by step, with the exact settings to use in Shopify.</p>
         </div>
       </div>
     </figure>
@@ -250,7 +250,7 @@ export default function Home() {
             <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300"><AlertTriangle className="h-3.5 w-3.5" aria-hidden /> Black Friday and Cyber Monday, all year</p>
             <h2 id="bfcm-title" className="mt-3 max-w-4xl text-4xl sm:text-5xl">{BFCM_CRITICAL.title}</h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-200"><strong className="font-semibold text-white">{BFCM_CRITICAL.lead}</strong> {BFCM_CRITICAL.body}</p>
-            <p className="mt-4 max-w-3xl text-slate-300">Helix starts your plan on 1 August, puts every step on Today and your calendar on the right date, and adds the whole plan in one click. The rest of the year, it nudges you to keep testing so you start the season ahead.</p>
+            <p className="mt-4 max-w-3xl text-slate-300">Helix starts your plan on 1 August. Add it in one click, and every step lands on Today and your calendar on the right date. The rest of the year, it nudges you to keep testing so you start the season ahead.</p>
             <div className="mt-10"><BfcmTimeline current={bfcmStageIndex(isoDay())} dark /></div>
             <Link href="/start" className="btn mt-10 border border-white/25 text-white hover:bg-white/10">Get the free Black Friday plan <ArrowRight className="h-4 w-4" aria-hidden /></Link>
           </div>

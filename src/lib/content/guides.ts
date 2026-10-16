@@ -75,7 +75,7 @@ A big discount can lift conversion rate and still lose money. Judge every change
 
 ## How Helix helps
 
-Helix audits your store, ads and emails, then turns the biggest conversion fixes into short daily tasks with step-by-step instructions. See the [store audit](/features/store-audit) and the [profit dashboard](/features/profit-dashboard).
+Helix checks your home page, a product page and your cart, then turns the biggest conversion fixes into short daily tasks with step-by-step instructions. See the [store audit](/features/store-audit) and the [profit dashboard](/features/profit-dashboard).
 `,
   },
   {
@@ -131,7 +131,7 @@ E-commerce Helix is self-serve software, not an agency or consultancy. It guides
   },
   {
     slug: "shopify-growth-checklist",
-    title: "Shopify Growth Checklist: 30 Steps to Grow Your Store",
+    title: "Shopify Growth Checklist: 31 Steps to Grow Your Store",
     description: "A practical Shopify growth checklist for store owners: setup, tracking, product pages, shipping, email, ads, retention and the weekly habits that compound.",
     h1: "The Shopify growth checklist",
     published: D, updated: D, features: ["daily-growth-plan", "meta-ads"],
@@ -196,7 +196,7 @@ See [the email flows every store needs](/guides/email-flows-every-store-needs).
 
 ## Let Helix order it for you
 
-The Helix [daily growth plan](/features/daily-growth-plan) turns this kind of checklist into one 15-minute task a day, with drawings of exactly where to click in Shopify.
+The Helix [daily growth plan](/features/daily-growth-plan) turns this kind of checklist into one 15-minute task a day, with step-by-step instructions for Shopify.
 `,
   },
   {
@@ -210,9 +210,9 @@ Cart abandonment is when a shopper adds something to their cart, or starts check
 
 ## Why shoppers leave
 
-The common reasons are well known across e-commerce:
+Large shopper surveys show the same reasons again and again (see [Baymard: cart abandonment research](https://baymard.com/lists/cart-abandonment-rate)):
 
-- **Surprise costs** at checkout, especially shipping, taxes or fees.
+- **Surprise costs** at checkout, especially shipping, taxes or fees. It is the top reason among shoppers who meant to buy.
 - **Being forced to create an account.**
 - **A long or confusing checkout**, especially on mobile.
 - **Missing payment options** they trust.
@@ -236,11 +236,11 @@ Repeat your returns policy, delivery times and a contact option near the checkou
 
 ## Fix 4: send reminders
 
-Reminder emails are the single most reliable way to recover abandoned carts. A good setup has three flows:
+Reminder emails are one of the most reliable ways to recover abandoned carts. A good setup has three flows:
 
 1. **Abandoned checkout:** the shopper reached checkout and gave an email but did not pay. Send the first reminder within a few hours.
 2. **Abandoned cart:** the shopper added to cart but did not reach checkout. Send to known subscribers.
-3. **Browse abandonment:** the shopper viewed a product more than once but did not add it.
+3. **Browse abandonment:** a known subscriber viewed a product, often more than once, but did not add it.
 
 Keep the first email friendly and helpful: show the product, answer common questions, and make it easy to return. **Hold back the discount.** Many people come back without one. If you use a discount at all, keep it for new customers, in the last email, and never bigger than your public offer.
 
@@ -443,7 +443,7 @@ Two or three emails. Remind, reassure (delivery, returns, reviews), then a final
 - [How to reduce cart abandonment](/guides/how-to-reduce-cart-abandonment)
 - [Shopify growth checklist](/guides/shopify-growth-checklist)
 
-Helix finds missing flows, drafts them in your brand voice and sets them up only after you approve. See [email automation](/features/email-automation).
+Helix lists the flows most stores need and writes each one out, ready to paste into your email platform. You switch them on yourself. See [email automation](/features/email-automation).
 `,
   },
   {
@@ -473,7 +473,7 @@ Doubling ad spend into a store that converts poorly doubles the waste. Work thro
 
 ## Step 3: build the retention base
 
-Set up the [core email flows](/guides/email-flows-every-store-needs) and grow your list. Returning customers cost far less to reach than new ones, and they make paid acquisition more forgiving.
+Set up the [core email flows](/guides/email-flows-every-store-needs) and grow your list. Returning customers usually cost far less to reach than new ones, and they make paid acquisition more forgiving.
 
 ## Step 4: make creative your main lever
 

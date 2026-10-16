@@ -23,10 +23,10 @@
 >
 > **Words to know:**
 >
-> - **Profit:** What is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. This is the number Helix cares about most.
-> - **Revenue:** All the money customers paid. It looks good, but it is not what you keep.
+> - **Profit:** Usually means contribution profit: what is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. Net profit also takes off fixed costs.
+> - **Revenue:** The money customers paid for orders. Helix uses net sales: after discounts and refunds, without GST or VAT. It is not what you keep.
 > - **Break-even ROAS:** The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
-> - **MER:** All ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales.
+> - **MER:** Helix shows it as all ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales. Many tools flip it to sales divided by ad spend, so 25% shows as 4x.
 >
 > All words are explained in the [glossary](../glossary.md).
 <!-- plain:end -->
@@ -47,7 +47,7 @@
 
 **Expected result:** You have one dollar figure for last month's net sales written in a note or on paper.
 
-**Watch out:** Use the figure without GST or VAT. That tax belongs to the government, not to you.
+**Watch out:** Use the figure without GST, VAT or sales tax. That tax belongs to the government, not to you. Shopify's Net sales already leaves tax out.
 
 **Step 2.** Add up last month's ad spend from every platform and write down the total. In Meta, go to **Ads Manager > Campaigns**, pick last month and read the **Amount spent** column. In Google Ads, read **Campaigns > Cost**.
 
@@ -66,11 +66,11 @@
 
 **Why this matters:** Cost drivers are your average costs, and they are what turn sales into profit. Get them roughly right once and every profit number in Helix becomes trustworthy. You set them up in about 30 minutes and check them every 3 months.
 
-**Step 1.** Work out your **product cost %**. In Shopify, go to **Analytics > Reports > Gross profit by product** (each product needs "Cost per item" filled in). Or take your top 10 sellers. Divide the landed cost of one unit (price paid plus freight and duty) by the selling price.
+**Step 1.** Work out your **product cost %**. If your plan has it, use **Analytics > Reports > Gross profit by product** (fill in "Cost per item" first). Or take your top 10 sellers. Divide each one's landed cost (price paid plus freight and duty) by its selling price.
 
-**Expected result:** You have one percentage, usually somewhere between 20% and 40% for most online stores.
+**Expected result:** You have one percentage. For many online stores it sits somewhere between 20% and 40%.
 
-**Watch out:** Use prices without GST or VAT, and include freight and duty, not just the factory price.
+**Watch out:** Use prices without GST, VAT or sales tax. Include freight and duty, not just the factory price.
 
 **Step 2.** Work out your **shipping and packing cost per order**. Take last month's bills from your carrier or warehouse (a 3PL is a company that stores and ships for you). Divide by the number of orders you shipped.
 
@@ -80,9 +80,9 @@
 
 **Expected result:** You have a second per-order figure, often $0.50 to $2.
 
-**Step 4.** Find your **payment fee %**. In Shopify, go to **Settings > Payments** and read the card rate. Or divide last month's total fees (on your payouts page) by sales.
+**Step 4.** Find your **payment fee %**. In Shopify, go to **Settings > Payments**, click **Manage** under Shopify Payments and read **Standard rates**. Or divide last month's total fees (on your payouts page) by sales.
 
-**Expected result:** You have a percentage, usually 1.75% to 3.5% depending on card mix and buy now pay later use.
+**Expected result:** You have a percentage, often about 2% to 3.5% once the 30 cent fee per order is counted. It depends on plan, country, card mix and buy now pay later (see [Shopify: payout fees and card rates](https://help.shopify.com/en/manual/payments/shopify-payments/getting-paid-with-shopify-payments/view-payouts/pay-periods-and-fees)).
 
 **Step 5.** List every **fixed cost** for one month. Include staff and helpers, a fair wage for yourself, software and apps, rent, insurance and accounting. Add loan interest and any marketing that is not ad spend (photo shoots, free product for creators, agency fees).
 
@@ -115,7 +115,7 @@
 **Common questions**
 
 1. **Is my own wage a cost?** Yes. Put a fair wage for yourself into fixed costs, even if you do not pay it yet. If you leave it out, the business will look healthier than it is.
-2. **Do I include GST or VAT?** No. Use sales and costs without the tax you collect and pass on to the government.
+2. **Do I include GST, VAT or sales tax?** No. Use sales and costs without the tax you collect and pass on to the government.
 3. **How do I handle returns?** Use sales after refunds (net revenue). If you get lots of returns, add a returns cost per order. That is the return postage plus any stock you have to throw away.
 4. **What about tariffs and duties on orders sent overseas?** Add them as a per-order cost for that country. Or keep a separate scorecard for each country.
 5. **I make my products myself.** Your product cost % includes materials and the labour for each unit. Production staff on a salary go in fixed costs.
@@ -270,7 +270,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Expected result:** You have one word for today's stance.
 
-**Step 3.** Do a 3-minute emergency check.
+**Step 3.** Do a quick emergency check.
 
 1. On your phone, open your store.
 2. Add a product to the cart and go to checkout. You don't need to pay.
@@ -290,11 +290,11 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Why this matters:** Most new owners look at sales and feel rich, then wonder where the money went. Sales is not what you keep. Once you can see every layer that comes off a sale, you know which lever to pull.
 
-**Sales** (also called **revenue**) is what customers pay you. In Helix it is shown without GST/VAT, because that money belongs to the tax office. From there, each cost takes a layer off:
+**Sales** (also called **revenue**) is what customers pay you. In Helix it is shown without GST, VAT or sales tax, because that money belongs to the tax office. From there, each cost takes a layer off:
 
 1. **Product cost (COGS):** making or buying the item.
 2. **Freight and duty:** getting it from the factory to you. Product cost plus freight and duty is your **landed cost**. Sales minus landed cost is **gross profit**, and as a share of sales it is **gross margin**.
-3. **Payment fees:** what Shopify Payments, PayPal or buy now pay later keep, usually about 1.75% plus 30 cents in some countries.
+3. **Payment fees:** what Shopify Payments, PayPal or buy now pay later keep. On Shopify's Basic plan, Australian stores pay 1.7% plus 30 cents on local cards. US stores pay 2.9% plus 30 cents. Overseas cards and other plans differ (see [Shopify: AU pricing](https://www.shopify.com/au/pricing) and [Shopify: US pricing](https://www.shopify.com/pricing)).
 4. **Packaging:** mailer, box, tissue and inserts.
 5. **Shipping to the customer:** the postage you pay. What is left now is **profit before marketing**, the money one order leaves to pay for ads and bills.
 6. **Marketing:** ads and other marketing. What is left now is **contribution**.
@@ -302,7 +302,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 ![Where a $60 sale goes](../../public/guides/helix-0-profit-waterfall.svg)
 
-**Worked example: a $60 product made overseas.** It costs $12 to make and $3 to ship in with duty. So the landed cost is $15 and you keep 75% after product cost. Payment fees take $1.35, packaging $1.50 and postage $9, leaving $33.15 before marketing. Ads cost $15 per order, leaving $18.15. Shopify, apps and other bills of $580 a month over 200 orders is $2.90 an order. Net profit is **$15.25 an order (25%)**, or about $3,050 a month. If ads crept up to $33 an order, every sale would lose money even though sales look the same.
+**Worked example: a $60 product made overseas.** It costs $12 to make and $3 to ship in with duty. So the landed cost is $15 and you keep 75% after product cost. Payment fees take about $1.35, packaging $1.50 and postage $9, leaving $33.15 before marketing. Ads cost $15 per order, leaving $18.15. Shopify, apps and other bills of $580 a month over 200 orders is $2.90 an order. Net profit is **$15.25 an order (25%)**, or about $3,050 a month. If ads crept up to $33 an order, every sale would lose money once bills are counted. Sales would look the same.
 
 **Step 1.** Write down one product and its price. Next to it, write a cost for each of the seven layers in this lesson. Guess if you have to. The layers are product, freight and duty, payment fees, packaging, shipping, marketing and fixed costs.
 
@@ -345,7 +345,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 **Why this matters:** Spend too little and the store never grows. Spend too much and every sale loses money. A share of sales gives you a sense check, and your own margin tells you the hard limit.
 
-**Your hard limit comes from your margin, not from a rule.** Take profit before marketing as a share of sales. That is your **break-even MER**: marketing at that share of sales leaves exactly zero. **Break-even ROAS** is 1 divided by it. In the $60 example, profit before marketing is $33.15, so break-even MER is 55% and break-even ROAS is 1.81. Your **break-even cost per purchase** is the same $33.15. If you pay more than that in ads to win one order, you lose money on it.
+**Your hard limit comes from your margin, not from a rule.** Take profit before marketing as a share of sales. That is your **break-even MER**: marketing at that share of sales leaves exactly zero. **Break-even ROAS** is 1 divided by it. In the $60 example, profit before marketing is $33.15, so break-even MER is 55% and break-even ROAS is 1.81. Your **break-even cost per purchase** (break-even CPA, as in Lesson 1.5) is the same $33.15. If you pay more than that in ads to win one order, you lose money on it.
 
 **Guides by stage (guides, not rules):**
 
@@ -362,8 +362,8 @@ High margin products can afford a higher share; low margin products cannot. Alwa
 **Step 2.** Choose your target MER (ads as a share of sales).
 
 1. Pick a number well below your break-even, for example break-even 55%, target 25%. The gap pays your fixed costs and your profit.
-2. In Helix, open **Settings**.
-3. Type it in **Target MER**.
+2. In Helix, open **Your numbers > Targets and fixed costs**.
+3. Type it in **Target MER (%)** and click **Save targets**.
 4. No sales yet? Write down a fixed daily test budget instead, for example $20 a day.
 
 **Expected result:** You have a target MER, or a fixed test budget, written down.
@@ -386,7 +386,7 @@ Working it out step by step:
 
 1. Variable costs = 1,800 x 0.306 (product cost + fees) + 30 x $10.20 (shipping + packing). That is $551 + $306 = $857. That is 48% of sales (VCR 48%).
 2. Contribution profit = 1,800 - 857 - 520 = $423.
-3. Fixed costs per day = $9,000 ÷ 30 = $300. Net profit is about $123, or 7% of sales.
+3. Fixed costs per day = $9,000 ÷ 30.4 = $296. Net profit is about $127, or 7% of sales.
 4. MER = 520 ÷ 1,800 = 29%. RPV = $2.00 per visit. AOV = $60.
 
 **What it shows:** MER (ads) looks fine. The real squeeze is VCR at 48%. Shipping costs $9 on a $60 order, which is 15% of every sale. The fix is cheaper shipping and bigger orders, not ads.
@@ -420,7 +420,7 @@ Working it out step by step:
 
 **Expected result:** The date shows like 2026-10-12.
 
-**Step 5.** Type yesterday's sales in **Sales**. Find it in Shopify: click **Analytics**, then look at **Total sales** for yesterday.
+**Step 5.** Type yesterday's sales in **Sales**. In Shopify **Analytics**, use **Net sales** for yesterday, not Total sales (that includes tax and shipping).
 
 **Expected result:** A number shows in the Sales box.
 

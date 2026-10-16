@@ -103,28 +103,28 @@
 | Get better terms from suppliers | Smaller deposits, production in stages, more time to pay, consignment (pay only when it sells) |
 | Pay for it later | Trade finance, supplier credit, inventory loans. Always compare the true cost. |
 | Lower the risk | Smaller first orders, preorders, extra safety stock only for A items |
-| Sell it faster | Promote products with too much cover, bundles, clearance with gentle tools (gifts, bundles) |
+| Sell it faster | Promote products with too much cover, bundles, free gifts, planned clearance (Lesson 14.10) |
 
 ## Lesson 14.4: Cash flow forecast
 <!-- stage:grow -->
 
-**Why this matters:** A cash flow forecast shows how much cash you will have each month. Profit is not the same as cash in the bank. Stock deposits can drain the account months before the sales arrive.
+**Why this matters:** A cash flow forecast shows how much cash you will have each week. Profit is not the same as cash in the bank. Stock deposits can drain the account months before the sales arrive.
 
-**Step 1.** Make a spreadsheet with one column per month for the next 3 to 12 months.
+**Step 1.** Make a spreadsheet with one column per week for the next 13 weeks. Add monthly columns beyond that for big stock buys.
 
 **Expected result:** You have a blank forecast.
 
-**Step 2.** For each month, add rows for starting cash, sales money and stock payments (deposits and balances). Add ad spend, fixed costs, tax and loan repayments too.
+**Step 2.** For each week, add rows for starting cash, sales money and stock payments (deposits and balances). Add ad spend, fixed costs, tax and loan repayments too.
 
-**Expected result:** Every month shows an ending cash balance.
+**Expected result:** Every week shows an ending cash balance, and you can see the lowest week.
 
 **Step 3.** Put aside a share of profit for tax each month (ask your accountant how much).
 
 **Expected result:** Tax money sits in a separate account.
 
-**Step 4.** Update the forecast on the first business day of each month.
+**Step 4.** Update the forecast at the start of each week.
 
-**Expected result:** A monthly reminder is set and the forecast stays current.
+**Expected result:** A weekly reminder is set and the forecast stays current.
 
 <!-- do:calendar -->
 
@@ -218,7 +218,7 @@
 
 **Expected result:** Your first order covers no more than 3 to 4 months of expected sales.
 
-**Watch out:** Cash tied up in slow stock is the most common way growing stores run out of money.
+**Watch out:** Cash tied up in slow stock is a common way growing stores run out of money.
 
 **Step 6.** Get prices on the same terms, for example FOB (price with goods loaded at the port). Work out landed cost: unit price plus freight, duty and other costs like packaging, inspection, bank fees and broker.
 
@@ -259,17 +259,17 @@
 
 **Step 4.** In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.
 
-**Expected result:** Helix shows the reorder point and a countdown to each stock-out. The reorder point is sales speed times lead time plus safety days.
+**Expected result:** Helix shows the reorder point and a countdown to each stock-out. The reorder point is sales speed times (lead time plus safety days).
 
 <!-- do:stock -->
 
-**Step 5.** When stock on hand plus on order drops to the reorder point, place an order. Order enough for the lead time, safety days and the next 1 to 3 months. Order at least the supplier's minimum.
+**Step 5.** When stock on hand plus on order drops to the reorder point, place an order. Order enough for the next 1 to 3 months of sales, and at least the supplier's minimum.
 
 **Expected result:** An alert shows on Today when it is time to order, and stock arrives before you run out.
 
 **Step 6.** For Black Friday and Christmas, work out the last safe order date. That is the event date, minus lead time, minus about a week to receive and list.
 
-**Expected result:** Peak stock is ordered in time. Peak week often sells 2 to 4 times a normal week.
+**Expected result:** Peak stock is ordered in time. Peak week can sell several times a normal week, so check last year.
 
 <!-- do:bfcm -->
 
@@ -333,7 +333,7 @@
 
 **Expected result:** Your next order matches real demand.
 
-**Watch out:** If a pre-order date slips, email buyers at once with the new date and an easy refund. Silence turns into chargebacks.
+**Watch out:** If a pre-order date slips, email buyers at once with the new date and an easy refund. Silence turns into chargebacks. US: ship by the date you state, or within 30 days if you state none. If you will be late, you must offer to cancel with a full refund (see [FTC: Mail Order Rule](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
 
 ## Self-check
 

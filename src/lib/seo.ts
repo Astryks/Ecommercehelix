@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const SITE_URL = "https://ecommercehelix.com";
 export const SITE_NAME = "E-commerce Helix";
 export const SITE_DESCRIPTION =
-  "E-commerce Helix is self-serve growth software for online store owners: a daily profit dashboard, one clear growth task a day, Meta ads built as paused drafts, and email flows drafted for your approval.";
+  "E-commerce Helix is self-serve growth software for online store owners: a daily profit dashboard, one clear growth task a day, Meta ads built as paused drafts, and ready-to-paste email flows.";
 
 export const OG_IMAGE = { url: "/opengraph-image", width: 1200, height: 630, alt: "E-commerce Helix: grow your e-commerce business a little every day" };
 

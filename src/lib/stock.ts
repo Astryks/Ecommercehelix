@@ -92,7 +92,7 @@ export const stockAlerts = (rows: StockRow[]) => rows.filter((r) => r.status ===
 
 /**
  * Black Friday stock check. The last safe order date is Black Friday minus the lead time
- * minus a week to receive, check and list the stock. Peak weeks often sell 2 to 4 times
+ * minus a week to receive, check and list the stock. Peak weeks can sell several times
  * a normal week, so we size the extra stock at 3 times a normal week for the BF/CM week.
  */
 export const BF_UPLIFT = 3;

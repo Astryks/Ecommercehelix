@@ -83,7 +83,7 @@
 | Recent posts | Something posted in the last 7 days. No gaps of months. |
 | Comments | Replied to within a day. Answer questions publicly so others see the answer. |
 | Facebook page | Same bio and link, a current cover image, reviews managed, and the page connected to your ad account. |
-| TikTok | Bio link turned on (not every account can yet), playlists for series, pinned videos. |
+| TikTok | Bio link turned on (personal accounts need 1,000 followers; business accounts often get it sooner), playlists for series, pinned videos. |
 
 ## Lesson 21.4: Posting cadence you can keep
 <!-- stage:attract -->
@@ -100,7 +100,7 @@
 
 **Step 3.** Make every post good enough to run as an ad later. Put most of the value in the first quarter of the video, and say key points twice.
 
-**Expected result:** Your best free posts can become ads, partnership ads or Spark ads.
+**Expected result:** Your best free posts can become ads, partnership ads or Spark ads. Spark ads are TikTok ads that run a real post.
 
 ### Good to know
 
@@ -115,7 +115,7 @@
 
 **Why this matters:** Organic reach means people who see your posts without you paying. Seven tactics grow it, from trial reels to replying fast.
 
-**Step 1.** Use trial reels or test posts to show a reel to non-followers first. Check after 24 hours and share winners with everyone.
+**Step 1.** On Instagram, post a trial reel so non-followers see it first. Check results after 24 hours and share winners with your followers.
 
 **Expected result:** You test hooks without cluttering your feed.
 
@@ -155,7 +155,7 @@
 ## Lesson 21.8: Social shops
 <!-- stage:attract -->
 
-**Why this matters:** Instagram, Facebook and TikTok shops let people buy without leaving the app. A few checks before you switch one on prevent bad scores and lost orders. See also Lessons 12.6 and 12.10.
+**Why this matters:** Social shops let people browse your products inside the app. Since 2025, Facebook and Instagram shops send buyers to your website to pay. TikTok Shop keeps checkout in the app, but only in some countries. See also Lessons 12.6 and 12.10.
 
 **Step 1.** Connect a clean catalog with one price per product and correct stock levels.
 
@@ -165,7 +165,7 @@
 
 **Expected result:** Buyers know what to expect, protecting your shop score.
 
-**Step 3.** Check which store features do not work in the in-app checkout, like thank-you page offers. Check seller fees, and make sure in-app orders reach your store and email tool.
+**Step 3.** Check which store features do not work in TikTok Shop's in-app checkout, like thank-you page offers. Check seller fees, and make sure in-app orders reach your store and email tool.
 
 **Expected result:** In-app orders are profitable and land in your normal systems.
 

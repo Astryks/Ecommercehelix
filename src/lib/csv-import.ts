@@ -48,7 +48,8 @@ export function detectSource(headers: string[]): Source {
   if (has("gross sales") && (has("net sales") || has("total sales"))) return "shopify-sales";
   if (has("amount spent") || has("reporting starts")) return "meta";
   if (has("cost") && (has("impr") || has("clicks")) && (has("day") || has("conv value"))) return "google";
-  if (has("cost") && has("by day") || has("total complete payment") || (has("cost") && has("tiktok"))) return "tiktok";
+  // TikTok renamed "Complete payment" to "Purchase"; old and new exports both work.
+  if (has("cost") && has("by day") || has("total complete payment") || has("total purchase value") || (has("cost") && has("tiktok"))) return "tiktok";
   return "generic";
 }
 

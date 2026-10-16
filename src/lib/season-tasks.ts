@@ -93,7 +93,7 @@ function stageTask(ev: CalEvent, year: number, stage: StageId, start: string, en
       why: "A code that is ready and tested means no rush on the day.",
       steps: [
         `Suggested code: ${code} for ${pct}% off, from ${start} to ${end}.`,
-        "In Shopify: Discounts, then Create discount, then Amount off order.",
+        "In Shopify: Discounts, then Create discount, then Amount off orders.",
         "Type the code, set Percentage, set the start and end dates, then Save.",
         "Place a test order to check it works.",
       ],

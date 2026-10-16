@@ -16,7 +16,7 @@ export function firstSentence(html: string, max = 160) {
 }
 
 export const PROSE =
-  "prose prose-slate max-w-none prose-a:text-cyan-700 prose-p:my-0 prose-table:text-sm prose-th:bg-slate-50 prose-th:px-3 prose-td:px-3 [&_details]:rounded-xl [&_details]:bg-slate-50 [&_details]:p-4 [&_summary]:cursor-pointer [&_summary]:font-medium [&_blockquote]:not-italic [&_blockquote]:rounded-xl [&_blockquote]:border-l-4 [&_blockquote]:border-emerald-400 [&_blockquote]:bg-emerald-50 [&_blockquote]:px-6 [&_blockquote]:py-2 [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none [&_.guide]:block [&_.guide_img]:my-2 [&_.guide_img]:rounded-xl [&_.guide_img]:border [&_.guide_img]:border-slate-200";
+  "prose prose-slate max-w-none prose-a:text-cyan-700 prose-p:my-0 prose-table:text-sm [&_table]:block [&_table]:max-w-full [&_table]:overflow-x-auto prose-th:bg-slate-50 prose-th:px-3 prose-td:px-3 [&_details]:rounded-xl [&_details]:bg-slate-50 [&_details]:p-4 [&_summary]:cursor-pointer [&_summary]:font-medium [&_blockquote]:not-italic [&_blockquote]:rounded-xl [&_blockquote]:border-l-4 [&_blockquote]:border-emerald-400 [&_blockquote]:bg-emerald-50 [&_blockquote]:px-6 [&_blockquote]:py-2 [&_blockquote_p]:before:content-none [&_blockquote_p]:after:content-none [&_.guide]:block [&_.guide_img]:my-2 [&_.guide_img]:rounded-xl [&_.guide_img]:border [&_.guide_img]:border-slate-200";
 
 export type NextLesson = { heading: string; href: string } | null;
 

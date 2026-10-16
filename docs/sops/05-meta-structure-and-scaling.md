@@ -1,13 +1,13 @@
 # SOP 05: Meta account structure and scaling
 
-> **In plain words.** Keep your Meta (Facebook and Instagram) ads simple: one campaign to find new customers, one to remind past visitors, and a place to test new ads. Raise budgets in small steps, only while sales stay profitable.
+> **In plain words.** Keep your Meta (Facebook and Instagram) ads simple. Run one campaign to find new customers and one to remind past visitors. Keep a place to test new ads. Raise budgets in small steps, only while sales stay profitable.
 
 **Purpose.** Give Meta a simple structure that separates new customers from warm audiences, gives creative room to be tested, and can be scaled in safe steps.
 
 **Copilot triggers**
 - Meta connected for the first time.
 - The account has more than 10 active campaigns, or campaigns with overlapping audiences.
-- Spend is scaling into a new bracket (under $500/day, $500 to $1,000, $1,000 to $3,000, over $3,000).
+- Daily spend moves into a new bracket in the "Starting structure by spend" table below.
 - The user asks "how should I set up my campaigns?" or "should I use Advantage+?".
 
 ## Funnel layers (Helix names)
@@ -19,39 +19,40 @@
 | **Warm** | Site visitors, social engagers, subscribers who have not bought | 20 to 30% | Up to about 4 for the engaged segment |
 | **Hot** | Cart and checkout abandoners, past buyers (repeat offers) | Small, often inside Warm | Up to 3 at ad level |
 
-Use Meta's audience segment settings (new, engaged, existing customers) so reporting shows the share of spend reaching each group.
+Set up Meta's audience segments (engaged audience and existing customers) under **Advertising settings > Audience segments** in Ads Manager. Reporting then shows the share of spend reaching new, engaged and existing people.
 
 ## Starting structure by spend
 
 | Daily Meta spend | Campaigns |
 | --- | --- |
-| Under $100 | 1 Cold (broad, Advantage+ sales or manual broad) + 1 Warm. Start around 70 to 80% Cold. |
-| $100 to $500 | Cold, Mixed, Warm, plus a paused **build campaign** for staging new ads |
-| $500 to $1,000 | Add a second Cold campaign with a different exclusion setting, or a separate testing campaign |
-| $1,000+ | Add campaigns per country or per major product line. Separate sale campaigns from evergreen ones during big events. |
+| Under $100 | 1 Cold (broad: a Sales campaign with Advantage+ left on, or a manual broad set-up) + 1 Warm. Start around 70 to 80% Cold. |
+| $100 to $500 | Cold, Mixed, Warm, a testing campaign, plus a paused **build campaign** for staging new ads |
+| $500 to $1,000 | Add a second Cold campaign with a different exclusion setting or a different automated setup |
+| $1,000 to $3,000 | Add campaigns per country or per major product line. Separate sale campaigns from evergreen ones during big events. |
+| $3,000+ | Add a set test budget, creator and partnership ad campaigns, catalogue video ads and more countries. |
 
 **Build campaign.** A campaign that always stays off. Build every new ad there first, then duplicate into the live campaigns that need it. This avoids rebuilding the same ad several times and keeps naming consistent.
 
 **Naming.** Use a fixed pattern so humans and Helix can read the account at a glance:
-`[Layer]-[Type]-[Audience]-[Exclusions]-[Offer or BAU]` for campaigns, and
-`[Batch]-[Concept]-[Format]-[Hook]-[Creator]` for ads.
+`[Number]-[Auto/Manual]-[Layer]-[Audience]-[Exclusions]-[BAU or Sale]` for campaigns, for example `03-Manual-Cold-Broad-Harsh-BAU`, and
+`[Batch]-[Concept]-[Pillar]-[Format]-[Hook]-[Creator]-[Date]` for ads.
 
 ## Steps (first build)
 
 1. Audit the current account: active campaigns, spend split, audiences, exclusions, frequency, learning status.
 2. Propose the target structure for the spend bracket. Show what stays, what merges, what pauses.
-3. Create audiences: website visitors (30/180 days), engagers, email list, purchasers (180 days, all time), and a 1% to 5% lookalike of purchasers if useful. Broad targeting is the default for Cold; test interests only after you have winning ads.
+3. Create audiences: website visitors (30/180 days), engagers, email list, purchasers (180 days, all time), and a 1% to 5% lookalike of purchasers if useful. Broad targeting (Advantage+ audience) is the default for Cold. With Advantage+ audience, lookalikes and interests act as suggestions, not hard limits. Test interests only after you have winning ads.
 4. Create a build campaign and load the best existing ads into it.
 5. Launch new campaigns with the best 4 to 8 proven ads each. Do not turn off the old structure the same day. Shift budget over 1 to 2 weeks in steps of no more than 20% a day.
 6. Set up saved columns (SOP 06).
 
 ## Scaling rules
 
-- **Vertical:** raise budget by up to 20% a day on a campaign that is performing. Larger jumps reset learning.
+- **Vertical:** raise budget by up to 20% a day on a campaign that is performing. Larger jumps are more likely to restart learning. The 20% figure is a common guide, not a published Meta rule.
 - **Horizontal:** start a new campaign or ad set (new audience, new country, star ads copied in) when vertical steps run out. New campaigns do not disturb existing ones.
-- **Hold period:** after a step-up, hold 10 to 14 days. MER often worsens at first and settles in most cases. If it does not settle, step back.
+- **Hold period:** in a scale test (SOP 03, Step 4), hold each spend level for 10 to 14 days. MER often worsens at first and settles in most cases. If it does not settle, step back.
 - **Reach check:** when scaling, compare spend growth to reach growth. If spend rose 50% but reach rose 20%, you are paying more to hit the same people. Add new creative or loosen targeting.
-- **Exclusions:** campaigns with tighter existing-customer exclusions often look worse on CPP but bring more new customers. When scaling for growth, favour them.
+- **Exclusions:** campaigns with tighter existing-customer exclusions often look worse on cost per purchase (CPP) but bring more new customers. When scaling for growth, favour them. Meta has retired the old existing-customer budget cap. Instead, exclude existing customers as a custom audience. Or give them their own ad set with a spend limit (see [Meta for Developers: Advantage+ campaign changes](https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/)).
 - **Multiple ad sets:** keep structure lean. More ad sets split the learning data.
 
 ## Who does what

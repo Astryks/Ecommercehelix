@@ -106,9 +106,9 @@
    "lesson": "New stores often price too low and then cannot afford ads. A simple check now saves months of selling at a loss.",
    "steps": [
     "Take your price and your cost per sale from yesterday.",
-    "Aim for a price of at least 3 times your product cost. Many small stores need this to cover ads and still make money.",
+    "A common rule of thumb is a price of at least 3 times your product cost. That leaves room for ads and profit.",
     "If you are below that, look at bundles, a higher-value version, or a cheaper supplier.",
-    "Write down the most you could pay in ads for one sale and still break even: price minus cost per sale."
+    "Write down the most you could pay in ads for one sale and still break even. That is price minus cost per sale."
    ],
    "minutes": 10,
    "area": "numbers",
@@ -133,7 +133,7 @@
     "Write one line: the result your customer gets, not the features.",
     "Add why it is different, in plain words. For example: 'Soft as cotton, dries in an hour.'",
     "Cut any word a 12-year-old would not understand.",
-    "Put the line at the top of your home page and under your product title."
+    "Save the line. You will put it on your home page and product page when you build them (Days 11 and 12)."
    ],
    "minutes": 10,
    "area": "site",
@@ -154,14 +154,14 @@
    "day": 6,
    "stage": 1,
    "stageName": "Check your product and offer",
-   "topic": "Take the risk off",
+   "topic": "Remove the risk",
    "title": "Make buying feel safe",
    "lesson": "A new store has no reputation yet. Clear returns, a simple guarantee and visible contact details make a stranger feel safe enough to buy.",
    "steps": [
     "Write your returns rule in one plain sentence, for example '30 days to change your mind'.",
-    "Add it near the Add to cart button and in your footer.",
-    "Show a real email address or chat button on every page.",
-    "If you can, add a guarantee in one line."
+    "If you can, add a guarantee in one line.",
+    "Plan a real email address or chat button for every page.",
+    "Save these lines. You will add them near Add to cart and in your footer when you build the store."
    ],
    "minutes": 10,
    "area": "site",
@@ -185,8 +185,8 @@
    "steps": [
     "List everyone who has bought or tried the product, including friends and family.",
     "Ask each one for a short honest review and, if possible, a photo.",
-    "Install a review app on your store if you do not have one.",
-    "Add the best 3 reviews near the top of your product page."
+    "Save each review and photo in one folder, with the person's permission to use it.",
+    "Star your best 3. You will add them to your product page on Day 13."
    ],
    "minutes": 15,
    "area": "site",
@@ -211,7 +211,7 @@
     "Write your one-line promise from Day 5 at the top of a page.",
     "List each product with its price, product cost and cost to send one order.",
     "Pick one launch country (for example, where you live) and a Shopify plan from the pricing page.",
-    "Gather your logo, 4 to 8 photos per product, your returns rule and your ABN (AU) or business details (US)."
+    "Gather your logo, 4 to 8 photos per product, your returns rule and your business details (an ABN in Australia)."
    ],
    "minutes": 15,
    "area": "learning",
@@ -231,10 +231,10 @@
    "stageName": "Set up your Shopify store",
    "topic": "Domain and email",
    "title": "Connect your own domain and email",
-   "lesson": "A store on its own web address looks more trustworthy than a free myshopify.com address, and emails from your domain are less likely to land in spam.",
+   "lesson": "A store on its own web address looks more trustworthy than a free myshopify.com address. Emails from your domain are also less likely to land in spam.",
    "steps": [
     "Buy a short domain that matches your brand in Shopify, or connect one you own.",
-    "Outside the US: a .com.au needs an ABN. US: a .com is the normal choice.",
+    "Australia: a .com.au needs an Australian connection, usually an ABN or ACN. US: a .com is the normal choice.",
     "Make your own domain the main one customers see.",
     "Set up hello@yourbrand (or similar) and send yourself a test email."
    ],
@@ -258,7 +258,7 @@
    "title": "Pick a free theme and set your brand basics",
    "lesson": "A fast, simple theme beats a fancy slow one. Setting colours and fonts once keeps every page looking the same.",
    "steps": [
-    "In Online Store, open Themes. Start with a free theme such as Dawn.",
+    "In Online Store, open Themes. Start with a free Shopify theme such as Horizon or Dawn.",
     "Duplicate the theme and make changes on the copy.",
     "In Theme settings, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.",
     "Preview on your phone before you publish."
@@ -300,7 +300,7 @@
    "sop": "11",
    "doIt": {
     "tier": "free",
-    "label": "Run a store check-up on your home page"
+    "label": "Run a store check on your home page"
    },
    "watch": "Conversion rate"
   },
@@ -393,7 +393,7 @@
    "steps": [
     "In Settings, open Shipping and delivery and set up your home country.",
     "Add a Standard and an Express rate from your real carrier costs.",
-    "Set free shipping over an amount about 1.3 times your average order.",
+    "Set free shipping over an amount about 1.2 to 1.4 times your average order (a common rule of thumb).",
     "Show delivery as a range, such as '3 to 6 business days', on the product page."
    ],
    "minutes": 15,
@@ -416,8 +416,8 @@
    "title": "Check your tax settings and turn on payments",
    "lesson": "Getting tax wrong is costly to fix later, and every missing payment option loses buyers. This is general information, not tax advice.",
    "steps": [
-    "Outside the US: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.",
-    "US: turn on sales tax only for states where you have registered.",
+    "Australia: you must register for GST once your GST turnover reaches $75,000 a year. If registered, add your ABN and include GST in prices.",
+    "US: register with a state before you collect its sales tax. Then turn on only those states in Shopify.",
     "Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.",
     "Set your statement name to your brand. Ask a registered tax agent or accountant if unsure."
    ],
@@ -443,7 +443,7 @@
    "steps": [
     "Create Refund, Privacy, Terms, Shipping and Contact pages from Shopify's templates.",
     "Rewrite them in plain words with your own delivery ranges and cut-off dates.",
-    "Outside the US: never write 'no refunds'. Customers always have rights for faulty items.",
+    "Australia, UK and EU: never write 'no refunds'. Customers always have rights for faulty items.",
     "Link every policy in the footer."
    ],
    "minutes": 15,
@@ -466,7 +466,7 @@
    "title": "Add your starter apps and email sign-up",
    "lesson": "Most visitors will not buy on the first visit. An email sign-up lets you invite them back for free. Keep apps few so the store stays fast.",
    "steps": [
-    "Install only the starter set: reviews, email, and the Facebook & Instagram and Google & YouTube apps.",
+    "Install only the starter set: reviews, email, and the Facebook and Google channels.",
     "Turn on a sign-up pop-up with a small reason to join.",
     "Write one welcome email: hello, your promise and your best seller.",
     "Sign up yourself to test it."
@@ -542,12 +542,12 @@
    "stageName": "Your first small test campaign",
    "topic": "Daily numbers",
    "title": "Start your 2-minute morning numbers",
-   "lesson": "Even with few sales, writing down yesterday's sales, orders and ad spend each morning builds the habit that later tells you what is working.",
+   "lesson": "Even with few sales, note yesterday's sales, orders and ad spend each morning. This habit later tells you what is working.",
    "steps": [
     "Go to Today and find the 'Update yesterday' box.",
-    "Type yesterday's sales and orders as your store shows them. Zero is fine. If your prices include GST, Helix takes it out for you (Settings).",
+    "Type yesterday's sales and orders as your store shows them. Zero is fine. If your prices include GST or VAT, Helix takes it out (Settings).",
     "Type any ad spend.",
-    "Press Save. Do this every morning from now on."
+    "Press Save and show my profit. Do this every morning from now on."
    ],
    "minutes": 5,
    "area": "numbers",
@@ -619,7 +619,7 @@
    "title": "Write the first line for each ad",
    "lesson": "The first 3 seconds and the first line decide if anyone watches. One clear line about the problem or result works best.",
    "steps": [
-    "For each video, write a first line that names the problem or the result, for example 'Tired of bottles that leak in your bag?'",
+    "For each video, write a first line that names the problem or the result. For example: 'Tired of bottles that leak in your bag?'",
     "Write a short main text: the promise, one proof point and the offer.",
     "Add a clear button such as 'Shop now'.",
     "Read each one out loud. Cut anything that sounds like an ad from a big company."
@@ -647,18 +647,18 @@
    "title": "Set up your first campaign, paused",
    "lesson": "Building the campaign paused lets you check everything calmly before any money is spent.",
    "steps": [
-    "In Ads Manager, create a Sales campaign.",
+    "In Ads Manager, create a Sales campaign. New to Ads Manager? Read Lesson 7.14 first.",
     "Set the daily budget from Day 22. Leave the audience broad (your country, adults).",
     "Add your 3 ads and link them to your best product page.",
-    "Leave it paused. Check the link, the pixel and the text, then save."
+    "Check the link, the pixel and the text. Switch the campaign off, then click Publish so it stays paused."
    ],
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-203-setting-up-a-meta-sales-campaign-step-by-step",
-    "label": "Setting up a Meta sales campaign step by step",
-    "ref": "20.3"
+    "slug": "07-meta-ads",
+    "anchor": "lesson-713-launch-your-first-meta-ad-in-30-minutes",
+    "label": "Launch your first Meta ad in 30 minutes",
+    "ref": "7.13"
    },
    "sop": "05",
    "doIt": {
@@ -675,7 +675,7 @@
    "title": "Launch the test and leave it alone",
    "lesson": "New campaigns go through a learning phase while Meta works out who to show them to. Changing things every day restarts it and wastes money.",
    "steps": [
-    "Press Launch on your paused campaign.",
+    "In Ads Manager, switch your paused campaign on.",
     "Do not change budgets or ads for 3 days unless an ad hits your stop rule.",
     "Keep doing your 2-minute morning numbers.",
     "Note each day's spend, clicks and any sales."

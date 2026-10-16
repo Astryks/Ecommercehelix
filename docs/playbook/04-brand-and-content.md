@@ -33,7 +33,7 @@
 ## Lesson 4.1: The brand core
 <!-- stage:attract -->
 
-**Why this matters:** Your brand core is a one-page summary of who you are. Everything you write and post comes from it. Brands without one end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
+**Why this matters:** Your brand core is a one-page summary of who you are. Everything you write and post comes from it. Brands without one often end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
 
 **Step 1.** Describe 2 or 3 types of customer. Note their goals, what bugs them and where they spend time online.
 
@@ -100,7 +100,7 @@
 ## Lesson 4.4: Content pillars by channel
 <!-- stage:attract -->
 
-**Why this matters:** Content pillars are the 4 to 6 topics you always post about. For example: product, teaching, proof, community, sales and your story. Each channel needs a different mix. Pillars stop you staring at a blank page.
+**Why this matters:** Content pillars are the 4 to 6 topics you always post about. A simple set is proof, teaching, story and community, and product and offer. Each channel needs a different mix. Pillars stop you staring at a blank page.
 
 **Step 1.** Write your own 4 to 6 pillars, starting from the examples above.
 
@@ -114,28 +114,28 @@
 
 **Expected result:** You have a month of post ideas, each tagged with a pillar and a channel.
 
-### Good to know
+**Step 4.** Write what goes in each pillar. **Proof:** reviews, customer photos, press, numbers. **Teaching:** how to use and choose, myths, care. **Story and community:** founder, behind the scenes, values, customers. **Product and offer:** launches, restocks, bundles, sales.
 
-**Each channel needs a different mix. Here is a starting point:**
+**Expected result:** Every pillar has a short list of post types.
 
-| Pillar | Instagram | TikTok | Email |
-| --- | --- | --- | --- |
-| Product | High | Low | Medium |
-| Education | Medium | Medium | Medium |
-| Community and story | Medium | High (this is where TikTok reach comes from) | Low |
-| Promotion | Low | Low | High (people subscribe to hear about offers first) |
-
-**Step 4.** Set your four pillars. **Proof:** reviews, customer photos, press, numbers. **Teaching:** how to use and choose, myths, care. **Story:** founder, behind the scenes, values. **Product and offer:** launches, restocks, bundles, sales.
-
-**Expected result:** You have four named pillars.
-
-**Step 5.** Plan next month at roughly 40% education and proof, 30% story and community, 30% product and offer.
+**Step 5.** Check next month's plan against a rough overall mix. A good start is 40% teaching and proof, 30% story and community, 30% product and offer.
 
 **Expected result:** Your plan follows the mix.
 
 **Step 6.** Fill gaps with ideas that never run out. Use reviews and comments, support questions ("You asked, we answered"), calm replies to negative comments, and a regular series.
 
 **Expected result:** You have more ideas than posting slots.
+
+### Good to know
+
+**Each channel needs a different mix. Here is a starting point:**
+
+| Pillar | Instagram | TikTok | Email |
+| --- | --- | --- | --- |
+| Proof | Medium | Medium | Medium |
+| Teaching | Medium | Medium | Medium |
+| Story and community | Medium | High (much TikTok reach comes from this) | Low |
+| Product and offer | Medium (show products, keep sales posts few) | Low | High (many people subscribe to hear about offers first) |
 
 ## Lesson 4.5: Communication calendar
 <!-- stage:attract -->
@@ -173,7 +173,7 @@
 
 **Expected result:** You know which 1 or 2 posts held attention best.
 
-**Step 3.** Use trial or test posts where the platform has them. That way a post reaches people who do not follow you.
+**Step 3.** Use test posts where the platform has them, such as Instagram trial reels. They show a post to non-followers first (see [Instagram: trial reels](https://creators.instagram.com/blog/instagram-trial-reels)).
 
 **Expected result:** You can try ideas on new people without risking your main feed.
 
@@ -190,7 +190,7 @@
 
 **Why this matters:** A community is a group of customers who talk to you and to each other. It brings repeat purchases, content ideas and early warnings about objections. It works best when people buy more than once.
 
-**Step 1.** Check your repeat purchase rate (Shopify: **Analytics > Reports > Customers over time**). If people rarely buy again in your category, put effort into reviews and creators instead and skip this lesson.
+**Step 1.** Check your repeat purchase rate (Shopify: **Analytics > Reports > New vs returning customers**). If people rarely buy again in your category, put effort into reviews and creators instead and skip this lesson.
 
 **Expected result:** You know whether community is worth it for your store.
 
@@ -254,7 +254,7 @@
 
 **Expected result:** You have signed rights to run their content as ads.
 
-**Step 3.** Run their content as partnership ads, which run from the creator's account so people see the creator's name. See Modules 5, 7 and 19.
+**Step 3.** Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand's name. See Modules 5, 7 and 19.
 
 **Expected result:** The ads are live and you can compare them with your own brand ads.
 

@@ -24,7 +24,7 @@
 >
 > - **Pixel:** A small piece of code on your store. It tells Meta when someone views, adds to cart or buys.
 > - **UTM:** Tags added to the end of a link. They tell your reports which ad or email a visitor came from.
-> - **Attribution:** Deciding which ad or channel gets credit for a sale.
+> - **Attribution:** Deciding which ad or channel gets credit for a sale. Meta's default counts sales within 7 days of a click or 1 day of a view.
 > - **Funnel:** The steps from seeing an ad to buying: visit, add to cart, checkout, order.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -37,53 +37,51 @@
 
 **Why this matters:** Bad data leads to bad decisions, and a broken pixel can make good ads look like failures. Check tracking once now, then every month. Your store's own reports are the truth; ad platforms are only for direction.
 
-**Step 1.** Open Meta Events Manager and Google Ads **Goals > Conversions**. Check that the pixel (or Google tag) and server events are connected through your store. Server events are the Conversions API on Meta and enhanced conversions on Google.
-
-**Expected result:** Both show purchases from browser and server.
-
-<!-- do:meta-connect -->
-
-**Step 2.** Make Purchase the only primary (main) conversion for sales campaigns, with add to cart and others as secondary.
-
-**Expected result:** Only Purchase is primary on each platform.
-
-**Step 3.** Place a real test order, check the value and currency arrive correctly in each platform, then refund it.
-
-**Expected result:** The test purchase shows the right amount and currency.
-
-**Step 4.** In Events Manager's event details, check deduplication is on. It stops one sale being counted twice, from browser and server.
-
-**Expected result:** Events Manager shows deduplicated purchase events.
-
-**Step 5.** Verify your domain (Meta **Business Settings > Brand safety > Domains**). Set up a cookie banner for the countries you sell to.
-
-**Expected result:** The domain shows Verified and the banner appears for visitors who need it.
-
-**Step 6.** Add UTM tags to every ad link, like `?utm_source=facebook`. Use the URL parameters field in each ad.
-
-**Expected result:** Google Analytics shows visits by channel and campaign.
-
-**Step 7.** Install the **Facebook & Instagram** app. Connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
+**Step 1.** Install the **Facebook & Instagram** app. Connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
 
 **Expected result:** The app shows all four connected.
 
 <!-- do:meta-connect -->
 
-**Step 8.** Set data sharing to **Maximum** to turn on server events.
+**Step 2.** Set data sharing to **Maximum** to turn on server events.
 
 **Expected result:** Sales reach Meta even when a browser blocks the pixel.
 
-**Step 9.** Install the **Google & YouTube** app and connect Merchant Center, Google Ads and GA4 (see [Shopify: Google](https://help.shopify.com/en/manual/online-sales-channels/google)).
+**Step 3.** Install the **Google & YouTube** app and connect Merchant Center, Google Ads and GA4 (see [Shopify: Google](https://help.shopify.com/en/manual/online-sales-channels/google)).
 
 **Expected result:** Google receives your products and purchases.
 
-**Step 10.** Check privacy and cookie settings in **Settings > Customer privacy** (see [Shopify: customer events](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/customer-events)).
+**Step 4.** Check privacy and cookie settings in **Settings > Customer privacy** (see [Shopify: customer events](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/customer-events)).
 
 **Expected result:** Consent is handled for your markets.
 
-**Step 11.** Place a test order (Lesson 22.16) and check Meta Events Manager and Google for the Purchase.
+**Step 5.** Open Meta Events Manager and Google Ads **Goals > Conversions**. Check that the pixel (or Google tag) and server events are connected through your store. Server events are the Conversions API on Meta and enhanced conversions on Google.
+
+**Expected result:** Both show purchases from browser and server.
+
+**Step 6.** Make Purchase the only primary (main) conversion for sales campaigns, with add to cart and others as secondary.
+
+**Expected result:** Only Purchase is primary on each platform.
+
+**Step 7.** In Events Manager's event details, check deduplication is on. It stops one sale being counted twice, from browser and server.
+
+**Expected result:** Events Manager shows deduplicated purchase events.
+
+**Step 8.** Verify your domain (Meta **Business Settings > Brand safety > Domains**). Set up a cookie banner for the countries you sell to.
+
+**Expected result:** The domain shows Verified and the banner appears for visitors who need it.
+
+**Step 9.** Add UTM tags (labels that tell reports where a visit came from) to every ad link, like `?utm_source=facebook`. Use the URL parameters field in each ad.
+
+**Expected result:** Google Analytics shows visits by channel and campaign.
+
+**Step 10.** Place a real test order (Lesson 22.16). Check Meta Events Manager and Google for the Purchase.
 
 **Expected result:** One test order shows as a Purchase in both Meta and Google.
+
+**Step 11.** Open that test order in each platform. Check the value and currency are right, then refund the order.
+
+**Expected result:** The test purchase shows the right amount and currency.
 
 ### Good to know
 
@@ -108,7 +106,7 @@
 - Product viewers, 30 days.
 - Added to cart, 14 days.
 - Checkout started, 7 days.
-- Buyers, 180 days. Buyers, all time.
+- Buyers, 180 days. Buyers, all time (upload your customer list, as website audiences stop at 180 days).
 - Instagram and Facebook engagers, 365 days.
 - People who watched half a video, 90 days.
 - Email subscribers (upload the list).
@@ -119,14 +117,16 @@
 
 **Expected result:** Three lookalike sizes are ready.
 
-**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Cap spend on past customers in automatic Sales campaigns at 10 to 20%.
+**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers.
 
 **Expected result:** Cold campaigns reach new people on purpose.
+
+**Watch out:** Meta removed the cap on spend for existing customers in automatic Sales campaigns. To keep past buyers out, exclude your customer audiences in the ad set instead.
 
 **Step 5.** On Google, give it signals and words to avoid.
 
 1. In **Audience manager**, upload your customer list as a customer match list.
-2. Make remarketing lists: visitors 30 days, visitors 540 days, cart abandoners, buyers.
+2. Make remarketing lists: visitors 30 days, visitors 540 days (Google's maximum), cart abandoners, buyers.
 3. In your Performance Max campaign, add these as audience signals.
 4. Make a negative keyword list with words like "jobs", "free", "DIY" and brands you will not bid on.
 
@@ -149,7 +149,7 @@
 | Layer | Who | Example targeting |
 | --- | --- | --- |
 | Cold | Never interacted with you | Broad, with harsh or light exclusions |
-| Mixed | Anyone; the platform decides | Automated Sales campaign with a cap on existing customers |
+| Mixed | Anyone; the platform decides | Advantage+ sales campaign, with spend on existing customers watched in reports |
 | Warm | Engaged but not bought | Visitors (180 days), engagers, video viewers, leaving out buyers |
 | Hot | Close to buying | Added to cart (14 days), started checkout (7 days), leaving out buyers from the last 7 days |
 | Existing customers | Bought before | Buyers, for launches and products people reorder |
@@ -246,7 +246,7 @@
 
 **Expected result:** In Google Ads, **Goals > Conversions > Summary** shows Purchase as Primary and "Recording conversions".
 
-**Step 2.** In Merchant Center (merchants.google.com), open **Products > Needs attention**. Fix each issue, starting with the products that sell most.
+**Step 2.** In Merchant Center (merchants.google.com), open **Products**, then the **Needs attention** tab. Fix each issue, starting with your best sellers.
 
 **Expected result:** Your best sellers show as approved, with no errors. Missing GTINs (barcodes) can be fixed in Shopify on each product's variant.
 
@@ -287,7 +287,7 @@
 
 **Expected result:** Performance Max is live and runs on your products, not your brand name. If you cannot remove every asset, leave the minimum Google requires.
 
-**Step 10.** After about 30 purchases in 30 days, add a target.
+**Step 10.** After about 30 purchases in 30 days (a common rule of thumb), add a target.
 
 1. Open the Performance Max campaign settings.
 2. Tick **Set a target return on ad spend**.
@@ -325,9 +325,9 @@
 
 **Why this matters:** TikTok campaigns work like Meta with a few differences. The purchase event has a different name, learning is jumpier, and sales often show up under other channels.
 
-**Step 1.** Create a campaign with the **Sales** objective (website conversions or TikTok Shop) and the pixel event **Complete payment**.
+**Step 1.** Create a campaign with the **Sales** objective and **Website** as the destination. Pick the pixel event **Purchase**.
 
-**Expected result:** The campaign optimises for purchases.
+**Expected result:** The campaign optimises for purchases. Older accounts may show the event as **Complete payment** (see [TikTok: Sales objective](https://ads.tiktok.com/help/article/sales-advertising-objective-tiktok)).
 
 **Step 2.** Use broad targeting with a budget big enough for several sales a day per ad group.
 
@@ -504,7 +504,7 @@ Spend
 ## Lesson 20.12: Common analysis mistakes
 <!-- stage:attract -->
 
-**Why this matters:** Most analysis mistakes come from judging too soon or comparing the wrong things. Checking for these six saves money.
+**Why this matters:** Most analysis mistakes come from judging too soon or comparing the wrong things. Checking for these four saves money.
 
 **Step 1.** Never judge an ad after one day or $10 of spend.
 
@@ -527,11 +527,11 @@ Spend
 
 **Why this matters:** Your store reports say what sold. Google Analytics 4 (GA4, Google's free website report tool) shows where visitors came from and where they left. That tells you which channel to grow and which page to fix.
 
-**Step 1.** Check GA4 is connected (Lesson 8.1). Open GA4 and go to **Reports > Acquisition > Traffic acquisition**.
+**Step 1.** Check GA4 is connected (Lesson 8.1). Open GA4 and go to **Reports > Life cycle > Acquisition > Traffic acquisition**.
 
 **Expected result:** A table of visits and sales by channel, like paid social, organic search and email.
 
-**Step 2.** Set the date to the last 30 days. Sort by **Key events** or **Purchases**.
+**Step 2.** Set the date to the last 30 days. Sort by **Key events** or **Total revenue**.
 
 **Expected result:** You can see which channels bring buyers, not just visitors.
 
@@ -539,7 +539,7 @@ Spend
 
 **Expected result:** Most visits sit in a named channel.
 
-**Step 4.** Go to **Reports > Monetization > Ecommerce purchases**, or the shopping behaviour report. Read how many people viewed a product, added to cart, started checkout and bought.
+**Step 4.** Go to **Reports > Life cycle > Monetization > Purchase journey**. Read how many people viewed a product, added to cart, started checkout and bought.
 
 **Expected result:** You can see the step where the most people leave.
 
@@ -547,7 +547,7 @@ Spend
 
 **Expected result:** One clear fix, picked from data instead of a guess.
 
-**Step 6.** Optional: in **Admin > Audiences**, make an audience of people who added to cart but did not buy in the last 30 days. Link it to Google Ads to show them reminder ads (Lesson 8.7).
+**Step 6.** Optional: open **Admin > Data display > Audiences**. Make an audience of 30-day cart adders who did not buy. Use it in Google Ads to show them reminder ads (Lesson 8.1).
 
 **Expected result:** A warm audience you can reach again.
 
