@@ -74,6 +74,14 @@ describe("seasonal nudges", async () => {
     const withPlan = buildNudge(bf, { planAdded: true, done: new Set([bf.tasks[0].taskId]), baseUrl: "" })!;
     expect(withPlan.push.body).toBe("Next: Start testing ad angles and creatives");
   });
+  it("is a marketing email: footer has the unsubscribe link and the postal address", () => {
+    const n = buildNudge(bf, { planAdded: false, done: new Set(), baseUrl: "https://x.test", unsubUrl: "https://x.test/api/email/unsubscribe?t=tok&k=event", postalAddress: "PO Box 1, Sydney NSW 2000" })!;
+    expect(n.email.text).toContain("Unsubscribe: https://x.test/api/email/unsubscribe?t=tok&k=event");
+    expect(n.email.text).toContain("E-commerce Helix, PO Box 1, Sydney NSW 2000");
+    const noAddr = buildNudge(bf, { planAdded: false, done: new Set(), baseUrl: "https://x.test", postalAddress: null })!;
+    expect(noAddr.email.text.endsWith("E-commerce Helix")).toBe(true);
+    expect(noAddr.email.text).toContain("Unsubscribe: https://x.test/dashboard/settings/emails");
+  });
   it("stays quiet once the plan is finished", () => {
     expect(buildNudge(bf, { planAdded: true, done: new Set(bf.tasks.map((t) => t.taskId)), baseUrl: "" })).toBeNull();
   });

@@ -65,7 +65,7 @@ _All Meta and Google writes create **paused** entities; there is no code path th
 
 ## Status of the scaffold (6 Oct 2026)
 
-Already built in the repo: marketing site, About, Learn, auth, Stripe, Today with the 64-day curriculum, Insights (rules engine on example signals), Approvals, Daily scorecard, Campaign tracker, Campaign builder, Email automation, Trends and Weekly report (seeded). The weeks above now mainly add the real connectors, crawler, LLM drafting and executors.
+Already built in the repo: marketing site, About, Learn, auth, Stripe, Today with the 66-day curriculum, Insights (rules engine on example signals), Approvals, Daily scorecard, Campaign tracker, Campaign builder, Email automation, Trends and Weekly report (seeded). The weeks above now mainly add the real connectors, crawler, LLM drafting and executors.
 
 ## Month 2
 

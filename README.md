@@ -42,7 +42,7 @@ Ad spend always runs on your own ad accounts and your own card. Helix never rese
 | Doc | What it covers |
 | --- | --- |
 | [docs/playbook/](docs/playbook/README.md) | **The Helix Playbook**: 28 modules of original lessons, checklists, examples and self-checks, organised into three stages: Attract, Convert, Grow ([stages.md](docs/playbook/stages.md)). Also served in the app at /learn. |
-| [docs/daily-curriculum.md](docs/daily-curriculum.md) | The Growing track: 64 days, one lesson, one topic, one action per day, ordered by store stage (generated). |
+| [docs/daily-curriculum.md](docs/daily-curriculum.md) | The Growing track: 66 days, one lesson, one topic, one action per day, ordered by store stage (generated). |
 | [docs/daily-curriculum-starting.md](docs/daily-curriculum-starting.md) | The Just starting track: 28 lighter days for new founders (product and offer, Shopify store setup step by step, first small test campaign) (generated). |
 | [docs/audit-engine.md](docs/audit-engine.md) | Proactive audits: schedules, crawler, PageSpeed, API pulls, cross-diagnosis rules, Insights. |
 | [docs/email-automation.md](docs/email-automation.md) | Nine email and SMS flows with draft copy; suggest, draft, approve, set up. |
@@ -100,7 +100,7 @@ Everything is written in plain words: short sentences, numbered steps, and a one
 
 **Goals ladder.** Nine monthly targets in funnel order, from site visits, CTR, add-to-cart and conversion rate, AOV, ROAS/MER and CPA to contribution margin and net profit (the goal), each tagged Attract, Convert or Grow with the same benchmarks as the Dashboard. Set in onboarding or `/dashboard/goals`, tracked against the last 30 days on Today and the Dashboard, explained at `/learn/goals` (`src/lib/goals.ts`).
 
-**Two tracks.** Onboarding (`/start`) asks for the store link, the track and the country. **Just starting** (new founders with little or no sales): 28 lighter days covering product and offer checks, a step-by-step Shopify store setup and a first small-budget test campaign. **Growing** (stores with regular sales): the 64-day programme covering profit tracking, scaling, retention and Black Friday. Switch any time in Settings (`/dashboard/settings`); progress on each track is kept.
+**Two tracks.** Onboarding (`/start`) asks for the store link, the track and the country. **Just starting** (new founders with little or no sales): 28 lighter days covering product and offer checks, a step-by-step Shopify store setup and a first small-budget test campaign. **Growing** (stores with regular sales): the 66-day programme covering profit tracking, scaling, retention and Black Friday. Switch any time in Settings (`/dashboard/settings`); progress on each track is kept.
 
 A Next.js 16 (App Router, TypeScript, Tailwind v4) app lives at the repo root and deploys to Vercel.
 
@@ -152,6 +152,7 @@ To go live, copy `.env.example` to `.env.local` and set:
 | `TOKEN_ENCRYPTION_KEY` | 32-byte key (`openssl rand -hex 32`) for AES-256-GCM token encryption |
 | `CRON_SECRET` | Protects the cron routes (daily Meta sync, Monday seasonal nudges) |
 | `NUDGES_LIVE` | `1` lets the seasonal nudge cron really send email (uses `AUTH_RESEND_KEY` and `EMAIL_FROM`). Otherwise it logs a stub |
+| `BUSINESS_POSTAL_ADDRESS` | Postal address shown in the footer of every marketing email (daily steps, sale dates, win-back, alerts, Monday scorecard, seasonal nudges). CAN-SPAM requires a valid physical postal address for US recipients; a PO box or private mailbox registered with the postal service is fine (https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business). One line, or lines joined with commas. If unset, no address is shown (none is invented) and the server logs a warning |
 | `META_MOCK` | `1` forces mock Meta data. Without a Meta app, mock mode is automatic outside production |
 
 Tests: `npm test` (paused-only guardrail, token encryption, Graph client retries, insights mapping, day ordering, seasonal dates and nudges, calendar by country, .ics export, tracks, dashboard periods, break-even maths and ratings).

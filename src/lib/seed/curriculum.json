@@ -18,27 +18,28 @@
   {
    "id": 4,
    "name": "Make ads that sell",
-   "range": "Days 27 to 46"
+   "range": "Days 27 to 48"
   },
   {
    "id": 5,
    "name": "Google and other channels",
-   "range": "Days 47 to 52"
+   "range": "Days 49 to 54"
   },
   {
    "id": 6,
    "name": "Sales, launches and busy season",
-   "range": "Days 53 to 58"
+   "range": "Days 55 to 60"
   },
   {
    "id": 7,
    "name": "Grow bigger, work smarter",
-   "range": "Days 59 to 64"
+   "range": "Days 61 to 66"
   }
  ],
  "days": [
   {
    "day": 1,
+   "id": 1,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Profit, not sales",
@@ -69,6 +70,7 @@
   },
   {
    "day": 2,
+   "id": 2,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Your daily numbers",
@@ -98,6 +100,7 @@
   },
   {
    "day": 3,
+   "id": 3,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Break-even",
@@ -124,6 +127,7 @@
   },
   {
    "day": 4,
+   "id": 4,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Find the bottleneck",
@@ -152,6 +156,7 @@
   },
   {
    "day": 5,
+   "id": 5,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Store check-up",
@@ -180,6 +185,7 @@
   },
   {
    "day": 6,
+   "id": 6,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Listen to customers",
@@ -209,6 +215,7 @@
   },
   {
    "day": 7,
+   "id": 7,
    "stage": 1,
    "stageName": "Know your numbers",
    "topic": "Weekly check-in",
@@ -234,6 +241,7 @@
   },
   {
    "day": 8,
+   "id": 8,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Speed",
@@ -262,6 +270,7 @@
   },
   {
    "day": 9,
+   "id": 9,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Reviews",
@@ -290,6 +299,7 @@
   },
   {
    "day": 10,
+   "id": 10,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Answer worries",
@@ -318,6 +328,7 @@
   },
   {
    "day": 11,
+   "id": 11,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Shipping",
@@ -346,6 +357,7 @@
   },
   {
    "day": 12,
+   "id": 12,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Checkout",
@@ -372,6 +384,7 @@
   },
   {
    "day": 13,
+   "id": 13,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Home page",
@@ -400,6 +413,7 @@
   },
   {
    "day": 14,
+   "id": 14,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Guarantee",
@@ -428,6 +442,7 @@
   },
   {
    "day": 15,
+   "id": 15,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Bundles",
@@ -456,6 +471,7 @@
   },
   {
    "day": 16,
+   "id": 16,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "Menu",
@@ -481,6 +497,7 @@
   },
   {
    "day": 17,
+   "id": 17,
    "stage": 2,
    "stageName": "Turn more visitors into buyers",
    "topic": "After checkout",
@@ -509,6 +526,7 @@
   },
   {
    "day": 18,
+   "id": 18,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Email sign-up",
@@ -537,6 +555,7 @@
   },
   {
    "day": 19,
+   "id": 19,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Welcome emails",
@@ -566,6 +585,7 @@
   },
   {
    "day": 20,
+   "id": 20,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Checkout reminders",
@@ -594,6 +614,7 @@
   },
   {
    "day": 21,
+   "id": 21,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Cart and browse reminders",
@@ -622,6 +643,7 @@
   },
   {
    "day": 22,
+   "id": 22,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "After the order",
@@ -650,6 +672,7 @@
   },
   {
    "day": 23,
+   "id": 23,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Repeat customers",
@@ -678,6 +701,7 @@
   },
   {
    "day": 24,
+   "id": 24,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Regular emails",
@@ -706,6 +730,7 @@
   },
   {
    "day": 25,
+   "id": 25,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Text messages",
@@ -731,6 +756,7 @@
   },
   {
    "day": 26,
+   "id": 26,
    "stage": 3,
    "stageName": "Get customers to come back",
    "topic": "Grow your list",
@@ -760,6 +786,7 @@
   },
   {
    "day": 27,
+   "id": 27,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Your brand",
@@ -788,6 +815,7 @@
   },
   {
    "day": 28,
+   "id": 28,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Social profile",
@@ -816,6 +844,7 @@
   },
   {
    "day": 29,
+   "id": 29,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Posting plan",
@@ -844,6 +873,7 @@
   },
   {
    "day": 30,
+   "id": 30,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Free reach",
@@ -869,6 +899,7 @@
   },
   {
    "day": 31,
+   "id": 31,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Ad ideas",
@@ -897,6 +928,7 @@
   },
   {
    "day": 32,
+   "id": 32,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Openings",
@@ -925,6 +957,7 @@
   },
   {
    "day": 33,
+   "id": 33,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Creators",
@@ -953,6 +986,7 @@
   },
   {
    "day": 34,
+   "id": 34,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Contact creators",
@@ -981,6 +1015,7 @@
   },
   {
    "day": 35,
+   "id": 35,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Creator brief",
@@ -1009,6 +1044,7 @@
   },
   {
    "day": 36,
+   "id": 36,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Video script",
@@ -1037,6 +1073,7 @@
   },
   {
    "day": 37,
+   "id": 37,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Film it",
@@ -1062,6 +1099,34 @@
   },
   {
    "day": 38,
+   "id": 65,
+   "stage": 4,
+   "stageName": "Make ads that sell",
+   "topic": "Ads Manager basics",
+   "title": "Find your way around Ads Manager",
+   "lesson": "Ads Manager looks busy, but you only use a handful of parts. Learn them once, before you check tracking, set up audiences and build a campaign in it. Already use it every week? Skim the map and mark this day done.",
+   "steps": [
+    "Open Ads Manager and check the ad account name at the top left is your store's account.",
+    "Set the date range at the top right to Last 7 days.",
+    "Click Columns and pick your Daily preset, or Performance if you have not made one yet.",
+    "Open the Campaigns tab, then click a campaign to see its three levels: campaign, ad set and ad. Do not change anything.",
+    "Find the Delivery column and the On/Off switch. Read what Learning and Learning limited mean in Lesson 7.14."
+   ],
+   "minutes": 10,
+   "area": "ads",
+   "learn": {
+    "slug": "07-meta-ads",
+    "anchor": "lesson-714-find-your-way-around-ads-manager",
+    "label": "Find your way around Ads Manager",
+    "ref": "7.14"
+   },
+   "sop": "05",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 39,
+   "id": 38,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Tracking",
@@ -1089,7 +1154,8 @@
    "watch": "Meta sales compared with your store's real sales"
   },
   {
-   "day": 39,
+   "day": 40,
+   "id": 39,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Audiences",
@@ -1117,7 +1183,8 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 40,
+   "day": 41,
+   "id": 40,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Plan the campaign",
@@ -1145,7 +1212,35 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 41,
+   "day": 42,
+   "id": 66,
+   "stage": 4,
+   "stageName": "Make ads that sell",
+   "topic": "Before you build",
+   "title": "Get your first campaign ready",
+   "lesson": "A first campaign stalls when the pieces are not ready. Today you check the pixel, write down the budget and get your ads ready, so tomorrow's build is quick. Already run Meta sales campaigns? Check Step 1 and mark this day done.",
+   "steps": [
+    "Open Events Manager (Ads Manager menu > All tools > Events Manager) and check your pixel shows Purchase events. If not, go back to the tracking day (Lesson 20.1).",
+    "Write down your daily budget from your campaign plan. New to ads? Use one you know you can afford for two weeks (Lesson 7.13, Step 2).",
+    "Get 3 to 5 ads ready: short videos or images of your best seller, each with a different opening line, in 4:5 and 9:16 sizes.",
+    "Write one main text and one headline you can reuse.",
+    "Read Lesson 7.13 Steps 5 to 9 once, so you know the screens you will see tomorrow."
+   ],
+   "minutes": 20,
+   "area": "ads",
+   "learn": {
+    "slug": "07-meta-ads",
+    "anchor": "lesson-713-launch-your-first-meta-ad-in-30-minutes",
+    "label": "Launch your first Meta ad in 30 minutes",
+    "ref": "7.13"
+   },
+   "sop": "05",
+   "doIt": null,
+   "watch": "Ad cost per sale (CPA) and profit"
+  },
+  {
+   "day": 43,
+   "id": 41,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Build the campaign",
@@ -1173,7 +1268,8 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 42,
+   "day": 44,
+   "id": 42,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Keep it simple",
@@ -1201,7 +1297,8 @@
    "watch": "Ad cost per sale (CPA)"
   },
   {
-   "day": 43,
+   "day": 45,
+   "id": 43,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Daily ad check",
@@ -1229,7 +1326,8 @@
    "watch": "Profit and ad cost per sale (CPA)"
   },
   {
-   "day": 44,
+   "day": 46,
+   "id": 44,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Find the leak",
@@ -1257,7 +1355,8 @@
    "watch": "Conversion rate"
   },
   {
-   "day": 45,
+   "day": 47,
+   "id": 45,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Creator ads",
@@ -1285,7 +1384,8 @@
    "watch": "Ad cost per sale (CPA)"
   },
   {
-   "day": 46,
+   "day": 48,
+   "id": 46,
    "stage": 4,
    "stageName": "Make ads that sell",
    "topic": "Weekly ad review",
@@ -1313,7 +1413,8 @@
    "watch": "Ad cost per sale (CPA)"
   },
   {
-   "day": 47,
+   "day": 49,
+   "id": 47,
    "stage": 5,
    "stageName": "Google and other channels",
    "topic": "Product titles",
@@ -1341,7 +1442,8 @@
    "watch": "Google sales and profit"
   },
   {
-   "day": 48,
+   "day": 50,
+   "id": 48,
    "stage": 5,
    "stageName": "Google and other channels",
    "topic": "Google setup",
@@ -1370,7 +1472,8 @@
    "watch": "Google sales and profit"
   },
   {
-   "day": 49,
+   "day": 51,
+   "id": 49,
    "stage": 5,
    "stageName": "Google and other channels",
    "topic": "Wasted searches",
@@ -1398,7 +1501,8 @@
    "watch": "Google ad spend and profit"
   },
   {
-   "day": 50,
+   "day": 52,
+   "id": 50,
    "stage": 5,
    "stageName": "Google and other channels",
    "topic": "TikTok",
@@ -1423,7 +1527,8 @@
    "watch": "Ad cost per sale (CPA) and profit"
   },
   {
-   "day": 51,
+   "day": 53,
+   "id": 51,
    "stage": 5,
    "stageName": "Google and other channels",
    "topic": "Google search basics",
@@ -1451,7 +1556,8 @@
    "watch": "Sessions from Google search"
   },
   {
-   "day": 52,
+   "day": 54,
+   "id": 52,
    "stage": 5,
    "stageName": "Google and other channels",
    "topic": "AI shopping",
@@ -1476,7 +1582,8 @@
    "watch": "Conversion rate"
   },
   {
-   "day": 53,
+   "day": 55,
+   "id": 53,
    "stage": 6,
    "stageName": "Sales, launches and busy season",
    "topic": "Sales calendar",
@@ -1504,7 +1611,8 @@
    "watch": "Profit during each promotion"
   },
   {
-   "day": 54,
+   "day": 56,
+   "id": 54,
    "stage": 6,
    "stageName": "Sales, launches and busy season",
    "topic": "Sale offers",
@@ -1532,7 +1640,8 @@
    "watch": "Profit during the sale"
   },
   {
-   "day": 55,
+   "day": 57,
+   "id": 55,
    "stage": 6,
    "stageName": "Sales, launches and busy season",
    "topic": "Black Friday",
@@ -1560,7 +1669,8 @@
    "watch": "Profit, compared with your target"
   },
   {
-   "day": 56,
+   "day": 58,
+   "id": 56,
    "stage": 6,
    "stageName": "Sales, launches and busy season",
    "topic": "Product launch",
@@ -1588,7 +1698,8 @@
    "watch": "Profit during the launch"
   },
   {
-   "day": 57,
+   "day": 59,
+   "id": 57,
    "stage": 6,
    "stageName": "Sales, launches and busy season",
    "topic": "Stock",
@@ -1616,7 +1727,8 @@
    "watch": "Profit at the top of your dashboard"
   },
   {
-   "day": 58,
+   "day": 60,
+   "id": 58,
    "stage": 6,
    "stageName": "Sales, launches and busy season",
    "topic": "Cash",
@@ -1641,7 +1753,8 @@
    "watch": "Profit at the top of your dashboard"
   },
   {
-   "day": 59,
+   "day": 61,
+   "id": 59,
    "stage": 7,
    "stageName": "Grow bigger, work smarter",
    "topic": "Grow a winner",
@@ -1670,7 +1783,8 @@
    "watch": "Profit and MER"
   },
   {
-   "day": 60,
+   "day": 62,
+   "id": 60,
    "stage": 7,
    "stageName": "Grow bigger, work smarter",
    "topic": "Test what works",
@@ -1695,7 +1809,8 @@
    "watch": "Total sales and profit"
   },
   {
-   "day": 61,
+   "day": 63,
+   "id": 61,
    "stage": 7,
    "stageName": "Grow bigger, work smarter",
    "topic": "New countries",
@@ -1720,7 +1835,8 @@
    "watch": "Profit at the top of your dashboard"
   },
   {
-   "day": 62,
+   "day": 64,
+   "id": 62,
    "stage": 7,
    "stageName": "Grow bigger, work smarter",
    "topic": "Hand it off",
@@ -1745,7 +1861,8 @@
    "watch": null
   },
   {
-   "day": 63,
+   "day": 65,
+   "id": 63,
    "stage": 7,
    "stageName": "Grow bigger, work smarter",
    "topic": "AI helpers",
@@ -1773,7 +1890,8 @@
    "watch": null
   },
   {
-   "day": 64,
+   "day": 66,
+   "id": 64,
    "stage": 7,
    "stageName": "Grow bigger, work smarter",
    "topic": "Your setup",

@@ -52,4 +52,12 @@ describe("day progress", () => {
     expect(p.lessonDoneToday).toBe(false);
     expect(p.current?.day).toBe(2);
   });
+
+  it("maps task ids back to days when they are not day-<day number> (Growing days keep their id when days are inserted)", () => {
+    const ids: Record<number, string> = { 1: "day-1", 2: "day-9", 3: "day-2", 4: "day-3" };
+    const p = dayProgress({ days: DAYS, doneIds: new Set(["day-1", "day-9"]), completedToday: ["day-9"], ahead: false, unlocked: () => true, taskId: (d) => ids[d] });
+    expect(p.nextDay?.day).toBe(3);
+    expect(p.lessonDoneToday).toBe(true);
+    expect(p.status(DAYS[1])).toBe("done");
+  });
 });

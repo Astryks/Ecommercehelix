@@ -66,7 +66,7 @@ export default function Terms() {
       </Sec>
 
       <Sec title="AI features">
-        <p>Some features use AI to write short text, only when you press the button: a summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. AI text can be wrong or incomplete. Check it before you rely on it or publish it; you are responsible for what you publish. Each plan has a monthly AI allowance; when it runs out you still get Helix&apos;s standard advice. We never use your data to train AI models.</p>
+        <p>Some features use AI to write short text, only when you press the button: a summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. AI text can be wrong or incomplete. Check it before you rely on it or publish it; you are responsible for what you publish. Each plan has a monthly AI allowance; when it runs out you still get Helix&apos;s standard advice. We never use your data to train AI models, and Helix only sends AI requests to providers that do not train on them (see the Privacy Policy).</p>
       </Sec>
 
       <Sec title="Community and the Wins wall">

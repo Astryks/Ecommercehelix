@@ -13,7 +13,7 @@ export const BANDS: Band[] = [
   { id: "growing", name: "Growing", range: "Toward a $1M year, profitably", monthly: "$10k to $30k a month",
     fit: "Best fit",
     focus: "The best fit for Helix. Find ads that pay for themselves, lift conversion and order value, grow your list and keep more of every sale on the way to $1M.",
-    track: "Growing track (64 days)" },
+    track: "Growing track (66 days)" },
   { id: "scaling", name: "Scaling", range: "On the way to a $1M year and beyond", monthly: "$30k to $80k+ a month",
     fit: "Good fit",
     focus: "Protect margin as spend grows, plan stock and Black Friday a year ahead, and hand work to a small team with clear numbers to hit.",

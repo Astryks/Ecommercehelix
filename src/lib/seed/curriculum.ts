@@ -6,6 +6,8 @@ export type Area = "numbers" | "ads" | "site" | "retention" | "learning";
 
 export type CurriculumDay = {
   day: number;
+  /** Growing track only: stable task id number. Progress is saved as "day-<id>", so inserting a day never shifts saved progress. */
+  id?: number;
   stage: number;
   stageName: string;
   topic: string;
@@ -30,7 +32,9 @@ export const DAYS = data.days as CurriculumDay[];
 /** Minimum plan to unlock each stage of the guided daily programme. Learn lessons stay free. */
 export const STAGE_TIER: Record<number, PlanId> = { 1: "free", 2: "free", 3: "starter", 4: "starter", 5: "starter", 6: "growth", 7: "growth" };
 
-export const dayTaskId = (d: number) => `day-${d}`;
+const GROWING_ID = new Map(DAYS.map((d) => [d.day, d.id ?? d.day]));
+/** Growing track task id for a day number, e.g. Day 38 (Find your way around Ads Manager) is "day-65". */
+export const dayTaskId = (d: number) => `day-${GROWING_ID.get(d) ?? d}`;
 /** Day 1, "Tell Helix your costs": done when the profit setup is saved. */
 export const COSTS_TASK = dayTaskId(1);
 

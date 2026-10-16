@@ -2,8 +2,11 @@
  * Helix emails: short, simple words, one button. Pure functions so they can be tested and previewed.
  * Marketing emails carry an unsubscribe link; transactional ones (receipts, payment problems, cancellation) do not need one.
  */
+import { postalAddress } from "./postal";
+
 export type Email = { subject: string; html: string; text: string; marketing: boolean; kind: string };
-export type Ctx = { name?: string; baseUrl: string; unsubUrl?: string; prefsUrl?: string };
+/** postalAddress: footer address for marketing emails; defaults to BUSINESS_POSTAL_ADDRESS (null shows none). */
+export type Ctx = { name?: string; baseUrl: string; unsubUrl?: string; prefsUrl?: string; postalAddress?: string | null };
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const hi = (name?: string) => (name?.trim() ? `Hi ${name.trim().split(/\s+/)[0]},` : "Hi,");
@@ -13,6 +16,7 @@ function layout(c: Ctx, o: { kind: string; marketing: boolean; subject: string; 
   const foot = o.marketing
     ? `You get this because you have a Helix account. <a href="${esc(c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">Unsubscribe in one click</a> or <a href="${esc(c.prefsUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">choose your emails</a>. Questions? <a href="${esc(c.baseUrl + "/contact")}" style="color:#5A50D6">Contact us</a>.`
     : "This is an account email about your Helix plan, so it is always sent.";
+  const addr = o.marketing ? (c.postalAddress !== undefined ? c.postalAddress : postalAddress()) : null;
   const html = `<!doctype html><html><body style="margin:0;background:#F2F1EC;font-family:Nunito,Helvetica,Arial,sans-serif">
 <span style="display:none;max-height:0;overflow:hidden">${esc(o.preheader)}</span>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F1EC;padding:24px 0"><tr><td align="center">
@@ -26,9 +30,9 @@ ${o.button ? `<p style="margin:22px 0"><a href="${esc(o.button.href)}" style="di
 ${(o.after ?? []).map(p).join("")}
 ${p("The Helix team")}
 </td></tr>
-<tr><td style="padding:16px 28px;border-top:1px solid #e5e3dc;font-size:12px;line-height:18px;color:#6b6760">${foot}<br>E-commerce Helix</td></tr>
+<tr><td style="padding:16px 28px;border-top:1px solid #e5e3dc;font-size:12px;line-height:18px;color:#6b6760">${foot}<br>E-commerce Helix${addr ? `<br>${esc(addr)}` : ""}</td></tr>
 </table></td></tr></table></body></html>`;
-  const text = [hi(c.name), "", ...o.paras.flatMap((x) => [x, ""]), ...(o.list ?? []).map((l) => `- ${l}`), o.list?.length ? "" : null, o.button ? `${o.button.label}: ${o.button.href}` : null, "", ...(o.after ?? []).flatMap((x) => [x, ""]), "The Helix team", "", o.marketing ? `Unsubscribe: ${c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails"}\nContact us: ${c.baseUrl}/contact` : "This is an account email about your Helix plan."]
+  const text = [hi(c.name), "", ...o.paras.flatMap((x) => [x, ""]), ...(o.list ?? []).map((l) => `- ${l}`), o.list?.length ? "" : null, o.button ? `${o.button.label}: ${o.button.href}` : null, "", ...(o.after ?? []).flatMap((x) => [x, ""]), "The Helix team", "", o.marketing ? `Unsubscribe: ${c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails"}\nContact us: ${c.baseUrl}/contact\nE-commerce Helix${addr ? `, ${addr}` : ""}` : "This is an account email about your Helix plan."]
     .filter((x) => x !== null).join("\n");
   return { subject: o.subject, html, text, marketing: o.marketing, kind: o.kind };
 }

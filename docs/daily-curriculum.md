@@ -53,7 +53,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 25 | Text messages | Decide if text messages suit your store | [10.10 SMS](playbook/10-email-sms-whatsapp.md#lesson-1010-sms) | 10 min | Guide |
 | 26 | Grow your list | Plan a giveaway with partner brands | [11.3 Running a competition](playbook/11-list-and-audience-growth.md#lesson-113-running-a-competition) | 20 min | Growth: Write the giveaway plan and partner messages |
 
-## Stage 4: Make ads that sell (Days 27 to 46)
+## Stage 4: Make ads that sell (Days 27 to 48)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
@@ -68,48 +68,50 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 35 | Creator brief | Write a one-page brief for creators | [19.12 The UGC brief](playbook/19-creators-ugc-and-video-ads.md#lesson-1912-the-ugc-brief) | 20 min | Starter: Fill in the brief for you |
 | 36 | Video script | Write one 30-second video ad | [19.9 Scripting](playbook/19-creators-ugc-and-video-ads.md#lesson-199-scripting) | 20 min | Starter: Write 3 script options for you |
 | 37 | Film it | Film and edit a video on your phone | [19.11 Editing for performance](playbook/19-creators-ugc-and-video-ads.md#lesson-1911-editing-for-performance) | 45 min | Guide |
-| 38 | Tracking | Check Meta is counting your sales correctly | [20.1 Before you launch: tracking you can trust](playbook/20-ad-analysis-audiences-and-setup.md#lesson-201-before-you-launch-tracking-you-can-trust) | 15 min | Starter: Check your tracking for you |
-| 39 | Audiences | Set up your audiences | [20.2 Setting up target audiences](playbook/20-ad-analysis-audiences-and-setup.md#lesson-202-setting-up-target-audiences) | 20 min | Starter: Create the audiences in your account (after you approve) |
-| 40 | Plan the campaign | Fill in a campaign plan | [6.16 The campaign brief template](playbook/06-defining-campaigns.md#lesson-616-the-campaign-brief-template) | 20 min | Starter: Fill in the plan with you |
-| 41 | Build the campaign | Build your first Meta sales campaign | [20.3 Setting up a Meta sales campaign step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-203-setting-up-a-meta-sales-campaign-step-by-step) | 30 min | Starter: Build it in your account as a paused draft. You switch it on |
-| 42 | Keep it simple | Match your ad account to your budget | [6.4 Account structure by spend](playbook/06-defining-campaigns.md#lesson-64-account-structure-by-spend) | 15 min | Starter: Suggest a simpler setup |
-| 43 | Daily ad check | Check your ads and stop the money-wasters | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Starter: Pause the money-wasters for you (after you approve) and tell you which budgets to raise |
-| 44 | Find the leak | Find where you are losing buyers | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Starter: Explain where you are losing buyers |
-| 45 | Creator ads | Run one ad from a creator's account | [19.6 Partnership ads (whitelisting)](playbook/19-creators-ugc-and-video-ads.md#lesson-196-partnership-ads-whitelisting) | 20 min | Starter: Add it to your campaign as a paused ad |
-| 46 | Weekly ad review | Do your weekly ad review | [5.11 Macro and micro iteration](playbook/05-creative-strategy.md#lesson-511-macro-and-micro-iteration) | 20 min | Starter: Make your weekly ad report |
+| 38 | Ads Manager basics | Find your way around Ads Manager | [7.14 Find your way around Ads Manager](playbook/07-meta-ads.md#lesson-714-find-your-way-around-ads-manager) | 10 min | Guide |
+| 39 | Tracking | Check Meta is counting your sales correctly | [20.1 Before you launch: tracking you can trust](playbook/20-ad-analysis-audiences-and-setup.md#lesson-201-before-you-launch-tracking-you-can-trust) | 15 min | Starter: Check your tracking for you |
+| 40 | Audiences | Set up your audiences | [20.2 Setting up target audiences](playbook/20-ad-analysis-audiences-and-setup.md#lesson-202-setting-up-target-audiences) | 20 min | Starter: Create the audiences in your account (after you approve) |
+| 41 | Plan the campaign | Fill in a campaign plan | [6.16 The campaign brief template](playbook/06-defining-campaigns.md#lesson-616-the-campaign-brief-template) | 20 min | Starter: Fill in the plan with you |
+| 42 | Before you build | Get your first campaign ready | [7.13 Launch your first Meta ad in 30 minutes](playbook/07-meta-ads.md#lesson-713-launch-your-first-meta-ad-in-30-minutes) | 20 min | Guide |
+| 43 | Build the campaign | Build your first Meta sales campaign | [20.3 Setting up a Meta sales campaign step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-203-setting-up-a-meta-sales-campaign-step-by-step) | 30 min | Starter: Build it in your account as a paused draft. You switch it on |
+| 44 | Keep it simple | Match your ad account to your budget | [6.4 Account structure by spend](playbook/06-defining-campaigns.md#lesson-64-account-structure-by-spend) | 15 min | Starter: Suggest a simpler setup |
+| 45 | Daily ad check | Check your ads and stop the money-wasters | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Starter: Pause the money-wasters for you (after you approve) and tell you which budgets to raise |
+| 46 | Find the leak | Find where you are losing buyers | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Starter: Explain where you are losing buyers |
+| 47 | Creator ads | Run one ad from a creator's account | [19.6 Partnership ads (whitelisting)](playbook/19-creators-ugc-and-video-ads.md#lesson-196-partnership-ads-whitelisting) | 20 min | Starter: Add it to your campaign as a paused ad |
+| 48 | Weekly ad review | Do your weekly ad review | [5.11 Macro and micro iteration](playbook/05-creative-strategy.md#lesson-511-macro-and-micro-iteration) | 20 min | Starter: Make your weekly ad report |
 
-## Stage 5: Google and other channels (Days 47 to 52)
-
-| Day | Topic | Today's action | Lesson | Time | Do it for me |
-| --- | --- | --- | --- | --- | --- |
-| 47 | Product titles | Rewrite titles for your top 10 products | [8.2 Product data](playbook/08-google-ads.md#lesson-82-product-data) | 25 min | Starter: Write new product titles for you to paste into Shopify |
-| 48 | Google setup | Set up brand search and a shopping campaign | [20.4 Setting up Google step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-204-setting-up-google-step-by-step) | 30 min | Starter: Write both campaign setups for you to copy into Google Ads |
-| 49 | Wasted searches | Block searches that waste money | [8.8 Weekly optimisation](playbook/08-google-ads.md#lesson-88-weekly-optimisation) | 10 min | Starter: Write a list of wasted searches for you to block |
-| 50 | TikTok | Decide if TikTok is right for you yet | [12.1 TikTok readiness](playbook/12-channels-tiktok-pinterest-seo.md#lesson-121-tiktok-readiness) | 15 min | Guide |
-| 51 | Google search basics | Fix the basics on your top pages | [12.8 SEO step by step](playbook/12-channels-tiktok-pinterest-seo.md#lesson-128-seo-step-by-step) | 25 min | Growth: Write titles and descriptions for you |
-| 52 | AI shopping | Get ready for AI shopping assistants | [12.9 AI search and agentic commerce](playbook/12-channels-tiktok-pinterest-seo.md#lesson-129-ai-search-and-agentic-commerce) | 15 min | Guide |
-
-## Stage 6: Sales, launches and busy season (Days 53 to 58)
+## Stage 5: Google and other channels (Days 49 to 54)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 53 | Sales calendar | Plan your next 90 days of promotions | [13.1 Your yearly sales calendar](playbook/13-promotions-and-sales.md#lesson-131-your-yearly-sales-calendar) | 20 min | Growth: Write your promotions calendar |
-| 54 | Sale offers | Design a sale offer that keeps your profit | [13.4 The big sale, step by step](playbook/13-promotions-and-sales.md#lesson-134-the-big-sale-step-by-step) | 20 min | Growth: Work out the profit on each offer |
-| 55 | Black Friday | Start your Black Friday plan | [6.14 Promotional and seasonal campaigns](playbook/06-defining-campaigns.md#lesson-614-promotional-and-seasonal-campaigns) | 30 min | Growth: Build your timeline |
-| 56 | Product launch | Plan your next product launch | [13.2 Launch phases](playbook/13-promotions-and-sales.md#lesson-132-launch-phases) | 20 min | Growth: Write the launch plan |
-| 57 | Stock | Do a weekly stock check | [14.2 A 10-minute weekly stock check](playbook/14-inventory-cash-planning.md#lesson-142-a-10-minute-weekly-stock-check) | 20 min | Growth: Make the stock check for you |
-| 58 | Cash | Make a 13-week cash plan | [14.4 Cash flow forecast](playbook/14-inventory-cash-planning.md#lesson-144-cash-flow-forecast) | 30 min | Guide |
+| 49 | Product titles | Rewrite titles for your top 10 products | [8.2 Product data](playbook/08-google-ads.md#lesson-82-product-data) | 25 min | Starter: Write new product titles for you to paste into Shopify |
+| 50 | Google setup | Set up brand search and a shopping campaign | [20.4 Setting up Google step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-204-setting-up-google-step-by-step) | 30 min | Starter: Write both campaign setups for you to copy into Google Ads |
+| 51 | Wasted searches | Block searches that waste money | [8.8 Weekly optimisation](playbook/08-google-ads.md#lesson-88-weekly-optimisation) | 10 min | Starter: Write a list of wasted searches for you to block |
+| 52 | TikTok | Decide if TikTok is right for you yet | [12.1 TikTok readiness](playbook/12-channels-tiktok-pinterest-seo.md#lesson-121-tiktok-readiness) | 15 min | Guide |
+| 53 | Google search basics | Fix the basics on your top pages | [12.8 SEO step by step](playbook/12-channels-tiktok-pinterest-seo.md#lesson-128-seo-step-by-step) | 25 min | Growth: Write titles and descriptions for you |
+| 54 | AI shopping | Get ready for AI shopping assistants | [12.9 AI search and agentic commerce](playbook/12-channels-tiktok-pinterest-seo.md#lesson-129-ai-search-and-agentic-commerce) | 15 min | Guide |
 
-## Stage 7: Grow bigger, work smarter (Days 59 to 64)
+## Stage 6: Sales, launches and busy season (Days 55 to 60)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 59 | Grow a winner | Spend more on a winning campaign, safely | [2.7 The scale test](playbook/02-diagnose-and-fix.md#lesson-27-the-scale-test) | 10 min | Growth: Tell you each budget step to make in Ads Manager |
-| 60 | Test what works | Turn one thing off to see what it really adds | [20.9 Attribution and incrementality](playbook/20-ad-analysis-audiences-and-setup.md#lesson-209-attribution-and-incrementality) | 15 min | Guide |
-| 61 | New countries | Check if selling in a second country makes sense | [15.1 Is there demand?](playbook/15-international-expansion.md#lesson-151-is-there-demand) | 20 min | Guide |
-| 62 | Hand it off | Hand one regular task to someone else | [28.1 Your first hire](playbook/28-team-creators-money.md#lesson-281-your-first-hire) | 20 min | Guide |
-| 63 | AI helpers | Give one weekly job to AI | [17.2 High-value uses](playbook/17-ai-for-operators.md#lesson-172-high-value-uses) | 20 min | Starter: Set this up as a weekly Helix job |
-| 64 | Your setup | Check your tools and choose your next focus | [18.2 Rules for adding a tool](playbook/18-tool-stack.md#lesson-182-rules-for-adding-a-tool) | 20 min | Guide |
+| 55 | Sales calendar | Plan your next 90 days of promotions | [13.1 Your yearly sales calendar](playbook/13-promotions-and-sales.md#lesson-131-your-yearly-sales-calendar) | 20 min | Growth: Write your promotions calendar |
+| 56 | Sale offers | Design a sale offer that keeps your profit | [13.4 The big sale, step by step](playbook/13-promotions-and-sales.md#lesson-134-the-big-sale-step-by-step) | 20 min | Growth: Work out the profit on each offer |
+| 57 | Black Friday | Start your Black Friday plan | [6.14 Promotional and seasonal campaigns](playbook/06-defining-campaigns.md#lesson-614-promotional-and-seasonal-campaigns) | 30 min | Growth: Build your timeline |
+| 58 | Product launch | Plan your next product launch | [13.2 Launch phases](playbook/13-promotions-and-sales.md#lesson-132-launch-phases) | 20 min | Growth: Write the launch plan |
+| 59 | Stock | Do a weekly stock check | [14.2 A 10-minute weekly stock check](playbook/14-inventory-cash-planning.md#lesson-142-a-10-minute-weekly-stock-check) | 20 min | Growth: Make the stock check for you |
+| 60 | Cash | Make a 13-week cash plan | [14.4 Cash flow forecast](playbook/14-inventory-cash-planning.md#lesson-144-cash-flow-forecast) | 30 min | Guide |
+
+## Stage 7: Grow bigger, work smarter (Days 61 to 66)
+
+| Day | Topic | Today's action | Lesson | Time | Do it for me |
+| --- | --- | --- | --- | --- | --- |
+| 61 | Grow a winner | Spend more on a winning campaign, safely | [2.7 The scale test](playbook/02-diagnose-and-fix.md#lesson-27-the-scale-test) | 10 min | Growth: Tell you each budget step to make in Ads Manager |
+| 62 | Test what works | Turn one thing off to see what it really adds | [20.9 Attribution and incrementality](playbook/20-ad-analysis-audiences-and-setup.md#lesson-209-attribution-and-incrementality) | 15 min | Guide |
+| 63 | New countries | Check if selling in a second country makes sense | [15.1 Is there demand?](playbook/15-international-expansion.md#lesson-151-is-there-demand) | 20 min | Guide |
+| 64 | Hand it off | Hand one regular task to someone else | [28.1 Your first hire](playbook/28-team-creators-money.md#lesson-281-your-first-hire) | 20 min | Guide |
+| 65 | AI helpers | Give one weekly job to AI | [17.2 High-value uses](playbook/17-ai-for-operators.md#lesson-172-high-value-uses) | 20 min | Starter: Set this up as a weekly Helix job |
+| 66 | Your setup | Check your tools and choose your next focus | [18.2 Rules for adding a tool](playbook/18-tool-stack.md#lesson-182-rules-for-adding-a-tool) | 20 min | Guide |
 
 ## Day detail
 
@@ -740,7 +742,25 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 38: Check Meta is counting your sales correctly
+### Day 38: Find your way around Ads Manager
+
+*Topic: Ads Manager basics · Stage 4 · 10 minutes · SOP 05*
+
+**Why it matters.** Ads Manager looks busy, but you only use a handful of parts. Learn them once, before you check tracking, set up audiences and build a campaign in it. Already use it every week? Skim the map and mark this day done.
+
+**How to do it.**
+
+1. Open Ads Manager and check the ad account name at the top left is your store's account.
+2. Set the date range at the top right to Last 7 days.
+3. Click Columns and pick your Daily preset, or Performance if you have not made one yet.
+4. Open the Campaigns tab, then click a campaign to see its three levels: campaign, ad set and ad. Do not change anything.
+5. Find the Delivery column and the On/Off switch. Read what Learning and Learning limited mean in Lesson 7.14.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
+
+### Day 39: Check Meta is counting your sales correctly
 
 *Topic: Tracking · Stage 4 · 15 minutes · SOP 05*
 
@@ -757,7 +777,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Meta sales compared with your store's real sales.
 
-### Day 39: Set up your audiences
+### Day 40: Set up your audiences
 
 *Topic: Audiences · Stage 4 · 20 minutes · SOP 05*
 
@@ -774,7 +794,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 40: Fill in a campaign plan
+### Day 41: Fill in a campaign plan
 
 *Topic: Plan the campaign · Stage 4 · 20 minutes · SOP 05*
 
@@ -791,7 +811,25 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 41: Build your first Meta sales campaign
+### Day 42: Get your first campaign ready
+
+*Topic: Before you build · Stage 4 · 20 minutes · SOP 05*
+
+**Why it matters.** A first campaign stalls when the pieces are not ready. Today you check the pixel, write down the budget and get your ads ready, so tomorrow's build is quick. Already run Meta sales campaigns? Check Step 1 and mark this day done.
+
+**How to do it.**
+
+1. Open Events Manager (Ads Manager menu > All tools > Events Manager) and check your pixel shows Purchase events. If not, go back to the tracking day (Lesson 20.1).
+2. Write down your daily budget from your campaign plan. New to ads? Use one you know you can afford for two weeks (Lesson 7.13, Step 2).
+3. Get 3 to 5 ads ready: short videos or images of your best seller, each with a different opening line, in 4:5 and 9:16 sizes.
+4. Write one main text and one headline you can reuse.
+5. Read Lesson 7.13 Steps 5 to 9 once, so you know the screens you will see tomorrow.
+
+**Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
+
+**See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
+
+### Day 43: Build your first Meta sales campaign
 
 *Topic: Build the campaign · Stage 4 · 30 minutes · SOP 05*
 
@@ -808,7 +846,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 42: Match your ad account to your budget
+### Day 44: Match your ad account to your budget
 
 *Topic: Keep it simple · Stage 4 · 15 minutes · SOP 05*
 
@@ -825,7 +863,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA).
 
-### Day 43: Check your ads and stop the money-wasters
+### Day 45: Check your ads and stop the money-wasters
 
 *Topic: Daily ad check · Stage 4 · 10 minutes · SOP 06*
 
@@ -842,7 +880,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit and ad cost per sale (CPA).
 
-### Day 44: Find where you are losing buyers
+### Day 46: Find where you are losing buyers
 
 *Topic: Find the leak · Stage 4 · 15 minutes · SOP 06*
 
@@ -859,7 +897,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 45: Run one ad from a creator's account
+### Day 47: Run one ad from a creator's account
 
 *Topic: Creator ads · Stage 4 · 20 minutes · SOP 08*
 
@@ -876,7 +914,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA).
 
-### Day 46: Do your weekly ad review
+### Day 48: Do your weekly ad review
 
 *Topic: Weekly ad review · Stage 4 · 20 minutes · SOP 07*
 
@@ -893,7 +931,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA).
 
-### Day 47: Rewrite titles for your top 10 products
+### Day 49: Rewrite titles for your top 10 products
 
 *Topic: Product titles · Stage 5 · 25 minutes · SOP 09*
 
@@ -910,7 +948,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Google sales and profit.
 
-### Day 48: Set up brand search and a shopping campaign
+### Day 50: Set up brand search and a shopping campaign
 
 *Topic: Google setup · Stage 5 · 30 minutes · SOP 09*
 
@@ -928,7 +966,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Google sales and profit.
 
-### Day 49: Block searches that waste money
+### Day 51: Block searches that waste money
 
 *Topic: Wasted searches · Stage 5 · 10 minutes · SOP 09*
 
@@ -945,7 +983,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Google ad spend and profit.
 
-### Day 50: Decide if TikTok is right for you yet
+### Day 52: Decide if TikTok is right for you yet
 
 *Topic: TikTok · Stage 5 · 15 minutes · SOP 10*
 
@@ -962,7 +1000,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Ad cost per sale (CPA) and profit.
 
-### Day 51: Fix the basics on your top pages
+### Day 53: Fix the basics on your top pages
 
 *Topic: Google search basics · Stage 5 · 25 minutes · SOP 10*
 
@@ -979,7 +1017,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Sessions from Google search.
 
-### Day 52: Get ready for AI shopping assistants
+### Day 54: Get ready for AI shopping assistants
 
 *Topic: AI shopping · Stage 5 · 15 minutes · SOP 10*
 
@@ -996,7 +1034,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
-### Day 53: Plan your next 90 days of promotions
+### Day 55: Plan your next 90 days of promotions
 
 *Topic: Sales calendar · Stage 6 · 20 minutes · SOP 15*
 
@@ -1013,7 +1051,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit during each promotion.
 
-### Day 54: Design a sale offer that keeps your profit
+### Day 56: Design a sale offer that keeps your profit
 
 *Topic: Sale offers · Stage 6 · 20 minutes · SOP 15*
 
@@ -1030,7 +1068,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit during the sale.
 
-### Day 55: Start your Black Friday plan
+### Day 57: Start your Black Friday plan
 
 *Topic: Black Friday · Stage 6 · 30 minutes · SOP 15*
 
@@ -1047,7 +1085,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit, compared with your target.
 
-### Day 56: Plan your next product launch
+### Day 58: Plan your next product launch
 
 *Topic: Product launch · Stage 6 · 20 minutes · SOP 15*
 
@@ -1064,7 +1102,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit during the launch.
 
-### Day 57: Do a weekly stock check
+### Day 59: Do a weekly stock check
 
 *Topic: Stock · Stage 6 · 20 minutes · SOP 17*
 
@@ -1081,7 +1119,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit at the top of your dashboard.
 
-### Day 58: Make a 13-week cash plan
+### Day 60: Make a 13-week cash plan
 
 *Topic: Cash · Stage 6 · 30 minutes · SOP 17*
 
@@ -1098,7 +1136,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit at the top of your dashboard.
 
-### Day 59: Spend more on a winning campaign, safely
+### Day 61: Spend more on a winning campaign, safely
 
 *Topic: Grow a winner · Stage 7 · 10 minutes · SOP 05*
 
@@ -1116,7 +1154,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit and MER.
 
-### Day 60: Turn one thing off to see what it really adds
+### Day 62: Turn one thing off to see what it really adds
 
 *Topic: Test what works · Stage 7 · 15 minutes · SOP 06*
 
@@ -1133,7 +1171,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Total sales and profit.
 
-### Day 61: Check if selling in a second country makes sense
+### Day 63: Check if selling in a second country makes sense
 
 *Topic: New countries · Stage 7 · 20 minutes · SOP 17*
 
@@ -1150,7 +1188,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Profit at the top of your dashboard.
 
-### Day 62: Hand one regular task to someone else
+### Day 64: Hand one regular task to someone else
 
 *Topic: Hand it off · Stage 7 · 20 minutes · SOP 18*
 
@@ -1165,7 +1203,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
-### Day 63: Give one weekly job to AI
+### Day 65: Give one weekly job to AI
 
 *Topic: AI helpers · Stage 7 · 20 minutes · SOP 18*
 
@@ -1180,7 +1218,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **Want me to do it for you?** Set this up as a weekly Helix job (Starter plan, after you approve).
 
-### Day 64: Check your tools and choose your next focus
+### Day 66: Check your tools and choose your next focus
 
 *Topic: Your setup · Stage 7 · 20 minutes · SOP 18*
 

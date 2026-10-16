@@ -2,7 +2,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 import { hasDb, prisma } from "../db";
 import { getAccount } from "../repo";
-import { AI_MODEL, AI_MONTHLY_CAP, aiAvailable, costUsd, gate, MAX_INPUT_CHARS, MAX_OUTPUT_TOKENS, monthlyBudgetUsd, monthStart, type AiKind } from "./config";
+import { AI_MODEL, AI_MONTHLY_CAP, aiAvailable, costUsd, gate, gatewayOptions, MAX_INPUT_CHARS, MAX_OUTPUT_TOKENS, monthlyBudgetUsd, monthStart, type AiKind } from "./config";
 
 export type AiResult = { text: string; source: "ai" | "cache" | "rules"; reason?: "off" | "budget" | "cap" | "error"; left?: number };
 
@@ -61,7 +61,7 @@ export async function aiText(userId: string, kind: AiKind, system: string, promp
       maxOutputTokens: MAX_OUTPUT_TOKENS,
       temperature: 0.4,
       abortSignal: AbortSignal.timeout(20_000),
-      providerOptions: { gateway: { user: userId, tags: [`feature:${kind}`] } },
+      providerOptions: { gateway: gatewayOptions(userId, kind) },
     });
     const text = r.text.trim();
     await log(userId, kind, { inputTokens: r.usage.inputTokens, outputTokens: r.usage.outputTokens, cached: false, ok: Boolean(text) });
