@@ -259,6 +259,16 @@
 
 **Watch out:** Judge every order-value idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.
 
+### Good to know
+
+Free-gift tiers:
+
+- Set the first gift level about 25 to 35% above your current order value. If orders average $60, try a gift at $80.
+- Pick a gift that costs you under about 10% of that level (under $8 at $80) but looks worth much more. A sample of something you want people to try next works well.
+- Add a second, bigger gift at a higher level, for example $120.
+- Shopify's **Buy X get Y** discount does not put the gift in the cart by itself. The shopper has to add it, or you use a free-gift app.
+- Order enough gift stock before the offer starts.
+
 ## Lesson 9.11: Shipping psychology
 <!-- stage:convert -->
 

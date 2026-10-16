@@ -1,6 +1,6 @@
 # STATUS
 
-_Last updated: 17 Oct 2026, about 5 AM (Sydney)._
+_Last updated: 17 Oct 2026 (Sydney)._
 
 ## Needs Sid (only these are left)
 
@@ -14,6 +14,13 @@ _Last updated: 17 Oct 2026, about 5 AM (Sydney)._
 8. **Closed Facebook group for paying members:** set `FB_GROUP_URL` in Vercel (send the group link). After that, join emails go out automatically and the daily digest plus `/admin/community` list who to approve or remove (Facebook has no API, so the final tap is by hand). Also set `AUTH_SECRET` and `CRON_SECRET` if missing.
 9. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
 10. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
+
+## Sale maths, list health and cash lessons (17 Oct 2026)
+- **5 new lessons (309 in total), in our own words, slotted into the guided path, each with a card deck and "I'm lost" lines:** 13.13 Work out your sale numbers before you pick the discount; 10.16 Wake up your quieter subscribers before a big sale; 10.17 Do your customers come back? Plan around it (Grow tag); 7.16 Catalog ads; 14.12 Count the days your cash is stuck. Lesson-count test now at least 309.
+- **Past-customer spend cap reworded** in 20.2, its card and the sale builder label: Meta has been changing this, so check Ads Manager (we could not confirm the change from an official Meta page, so we don't say it was removed). 13.6 now has a table of who each sale campaign leaves out.
+- **13.7 extended:** the post-sale dip (about 4 to 25% of the extra sales), wait 7 days before final numbers, and what to run next (2 new steps + cards).
+- **Small adds:** 10.1 sign-up reward and form rules; 9.10 free-gift tiers; 6.12 traffic-light colour rules; 20.5 which TikTok goal to use when; 8.2 put key words in the first 70 characters of feed titles.
+- stages.md regenerated (it was also behind on some earlier lessons).
 
 ## Teen course videos and next steps (17 Oct 2026)
 

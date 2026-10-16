@@ -46,7 +46,9 @@
  "steps": [
   {"say": "Turn normal campaigns back up in steps over a week. Not all at once.", "check": "Campaigns recover without a spending shock.", "lost": "Raise budgets a little each day."},
   {"say": "Check new buyers are getting your after-purchase emails.", "check": "New customers get thanks and how-to tips.", "lost": "Check your post-purchase flow is on."},
-  {"say": "Compare sales with your target, MER, new customers and stock left. Write down one thing to do better.", "check": "You have a short review with one improvement.", "lost": "Write one thing to do better next time."}
+  {"say": "Compare sales with your target, MER, new customers and stock left. Write down one thing to do better.", "check": "You have a short review with one improvement.", "lost": "Write one thing to do better next time."},
+  {"say": "Wait 7 days before final numbers. Ad apps keep adding late sales for about a week.", "check": "Your review uses numbers from 7 days after the sale.", "lost": "Wait a week, then review."},
+  {"say": "For the next 2 to 4 weeks, run no new discount. Show full-price news or best-seller stories, and nudge new buyers to a second order (Lesson 10.17).", "check": "A plan for the next few weeks with no discount.", "lost": "Post one full-price product story."}
  ]},
 "13.8": {"intro": "If a sale is behind plan, it's usually one of five things. Find it fast, then fix it without breaking trust.",
  "steps": [
@@ -81,5 +83,14 @@
   {"say": "Choose what's on sale: slow stock and last season's colours first. Best sellers only at a smaller discount, or not at all. Check each one's margin in your profit setup.", "check": "A product list where every line still makes money after marketing.", "lost": "Put your slowest product on sale first."},
   {"say": "Plan it in Helix Calendar: a teaser email 3 days before, a launch email and text, a middle-day reminder, a last-chance email, plus ads to past buyers and site visitors.", "check": "The sale and its messages are in your calendar with dates.", "lost": "Put the launch email in your calendar."},
   {"say": "When it ends, write down how it went.\n\n1. Record sales, profit, units cleared, and new versus returning customers.\n2. Write one thing to change next time.", "check": "You know if the sale made money and if you'd repeat it.", "careful": "More than four sales a year and customers start waiting for the next one. Keep sales planned, rare and with a clear reason.", "lost": "Write down the profit. Was it worth it?"}
+ ]},
+"13.13": {"intro": "A discount takes money from every order. Work out how many more orders you need, then pick an offer you can reach.",
+ "steps": [
+  {"say": "Open **Numbers** in Helix. Find your price and your profit on one order before ads.", "check": "Two numbers, like $60 price and $30 profit.", "lost": "Find your profit on one order."},
+  {"say": "Work out the real discount: the discount times the share of orders that use it. 20% off used by 70 of every 100 orders = 14%.", "check": "You know the real discount.", "lost": "Multiply the discount by how many people use it."},
+  {"say": "Divide normal profit by discounted profit. At 20% off a $60 item, $30 becomes $18. $30 ÷ $18 = 1.67.", "check": "You know you need about 1.67 times the orders.", "lost": "Normal profit ÷ sale profit."},
+  {"say": "Check your target against your list, your ad budget and your stock. Pick the smallest discount that hits it.", "check": "One offer you can actually reach.", "lost": "Pick the smallest discount that works."},
+  {"say": "Split the target: for example 35% launch days, 30% middle, 35% final days. Divide by the days in each part.", "check": "A target for every sale day.", "lost": "Write a sales number for each day."},
+  {"say": "Divide sale profit by sale price: $18 ÷ $48 = 37.5%. Keep ad spend under that share of sales. Check it daily.", "check": "One MER limit you check each day.", "careful": "Shopify shows MER the other way round. Helix 25% = Shopify 4.", "lost": "Keep ad spend under 37% of sales."}
  ]}
 }

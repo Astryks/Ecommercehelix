@@ -22,8 +22,8 @@
 >
 > **Words to know:**
 >
-> - **Pixel:** A small piece of code on your store. It tells Meta when someone views, adds to cart or buys.
-> - **UTM:** Tags added to the end of a link. They tell your reports which ad or email a visitor came from.
+> - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
+> - **UTM:** Tags added to the end of a link so your analytics can tell which ad or email a visitor came from.
 > - **Attribution:** Deciding which ad or channel gets credit for a sale.
 > - **Funnel:** The steps from seeing an ad to buying: visit, add to cart, checkout, order.
 >
@@ -87,12 +87,6 @@
 
 ### Good to know
 
-<!-- guide:shopify-8-meta-tracking -->
-![Connect Meta tracking from Shopify](../../public/guides/shopify-8-meta-tracking.svg)
-
-*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)
-<!-- /guide:shopify-8-meta-tracking -->
-
 ## Lesson 20.2: Setting up target audiences
 <!-- stage:attract -->
 
@@ -119,7 +113,7 @@
 
 **Expected result:** Three lookalike sizes are ready.
 
-**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Cap spend on past customers in automatic Sales campaigns at 10 to 20%.
+**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Meta has been changing how you limit spend on past customers in automatic Sales campaigns, so check Ads Manager. If you still see a setting for it, keep that spend to about 10 to 20%. If not, leave past buyers out of your cold campaigns and watch the **Audience segments** breakdown.
 
 **Expected result:** Cold campaigns reach new people on purpose.
 
@@ -149,7 +143,7 @@
 | Layer | Who | Example targeting |
 | --- | --- | --- |
 | Cold | Never interacted with you | Broad, with harsh or light exclusions |
-| Mixed | Anyone; the platform decides | Automated Sales campaign with a cap on existing customers |
+| Mixed | Anyone; the platform decides | Automated Sales campaign (Meta has been changing past-customer spend limits, so check Ads Manager) |
 | Warm | Engaged but not bought | Visitors (180 days), engagers, video viewers, leaving out buyers |
 | Hot | Close to buying | Added to cart (14 days), started checkout (7 days), leaving out buyers from the last 7 days |
 | Existing customers | Bought before | Buyers, for launches and products people reorder |
@@ -342,6 +336,19 @@
 **Expected result:** You judge TikTok on its whole-store effect.
 
 <!-- do:growth -->
+
+### Good to know
+
+Which TikTok goal to use when:
+
+| Goal | Use it when | Judge it by |
+| --- | --- | --- |
+| Complete payment (purchase) | You get enough sales for TikTok to learn, about 50 a week | Cost per sale and store MER |
+| Add to cart | Sales are too few for TikTok to learn yet. Move to purchase in a new ad group once sales build | Cost per add to cart and store MER |
+| Video views (6-second focused view) | You want cheap attention to retarget later | Cost per focused view, then sales from retargeting |
+| Traffic or view content | Only to fill audiences for retargeting | Cost per visit, never as your main sales campaign |
+
+Send value and currency with your purchase and add-to-cart events, so TikTok knows what each sale is worth.
 
 ## Lesson 20.6: The metric tree
 <!-- stage:attract -->

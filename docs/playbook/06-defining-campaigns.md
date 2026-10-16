@@ -14,7 +14,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 >
 > **What it is:** How to plan one ad campaign from start to finish.
 >
-> **Why it matters:** A plan with clear numbers tells you when to spend more, wait or stop. So you never guess.
+> **Why it matters:** A plan with clear numbers tells you when to spend more, wait or stop, so you never guess.
 >
 > **Do this:**
 >
@@ -360,6 +360,16 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 | **Hold (Wait)** | It is still learning, was edited recently, or results are mixed but getting better. | Make no changes for 3 days. |
 | **Refresh creative (New ads needed)** | No strong ads are left, frequency is high, or fewer than 30% of the batch still perform. | Launch a new batch from your list of ad ideas. |
 | **Kill (Stop)** | It has spent the "bad" amount (2 times the good CPA for its audience) with poor results or no purchases. | Turn it off today. |
+
+**Traffic-light colours:**
+
+| Colour | Rule | What to do |
+| --- | --- | --- |
+| Green | Cost per sale at or under your target | Spend more: add about 20% to the budget |
+| Amber | Up to 1.5 times your target, or still learning | Wait 3 days, change nothing |
+| Red | 2 times your target or more, or it has spent 2 times your target with no sale | Stop it today |
+
+Read the last 3 days and the last 7 days, always with the same attribution setting, so the colours compare fairly.
 
 ## Lesson 6.13: Google campaign definitions
 <!-- stage:attract -->

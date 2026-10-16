@@ -75,6 +75,16 @@
 
 **Expected result:** The form shows inside the page, and a test sign-up appears in your email list within a minute.
 
+### Good to know
+
+Sign-up reward and form rules:
+
+- **Count the cost.** A 15% code on a $60 order costs you $9, but only when someone buys. Work out what the reward costs for each new buyer, not each sign-up.
+- **Prize draws grow lists fast, but fewer of those people buy.** Check sales from those sign-ups before you run another.
+- **Match the form to the page.** Show a different form (or offer) on different pages, or to people from different ads. Most email apps can target by page address or ad link.
+- **Before a sale, swap the reward.** Two to three weeks before, change the form to "Get early access" so people join for the sale.
+- **Test one offer against another for 2 weeks.** Give each offer its own welcome email so everyone gets the code they were promised. Pick the winner by sales and profit, not just sign-ups.
+
 ## Lesson 10.2: The five core flows and extras
 <!-- stage:convert -->
 
@@ -390,6 +400,99 @@ A common guide (open rates are inflated by Apple Mail privacy, so trust clicks a
 **Expected result:** You know if the answers lift sales. Then use the same groups in sale emails (Lesson 10.4).
 
 **Watch out:** Ask only what you will use. Every extra question means fewer people finish the form.
+
+## Lesson 10.16: Wake up your quieter subscribers before a big sale
+<!-- stage:convert -->
+
+**Why this matters:** In a big sale you want to reach more of your list. But if you suddenly email people who have ignored you for months, inbox providers like Gmail can start sending all your emails to spam. Waking those people up slowly, a few weeks early, lets you reach more of them safely.
+
+**Step 1.** In your email app (for example Klaviyo or Omnisend), make four groups based on the last time someone opened or clicked one of your emails: the last 30 days, 60 days, 90 days and 180 days. Add people who joined in the last 15 days to the 30-day group, because they have not had time to open yet.
+
+**Expected result:** Four groups, each showing how many people are in it.
+
+**Step 2.** Make one more group called "sleeping": people who got at least 5 emails but have not opened or clicked anything in 180 days.
+
+**Expected result:** You know how many people on your list are asleep.
+
+**Step 3.** In normal weeks, send your emails to the 90-day group only (it includes the 30- and 60-day people).
+
+**Expected result:** Your usual emails go to people who actually read them.
+
+**Step 4.** Two to three weeks before the sale, send one or two friendly wake-up emails to people in the 180-day group who are not in the 90-day group. Keep them short, with one clear reason to click, like "Get early access to our sale".
+
+**Expected result:** Some quieter subscribers click and move back into your 90-day group.
+
+<!-- do:bfcm -->
+
+**Step 5.** Grow each send slowly. Make each send no more than about 1.5 times bigger than the one before. For example: 4,000 people, then 6,000, then 9,000.
+
+**Expected result:** Your sends get bigger step by step, not all at once.
+
+**Step 6.** Only on the biggest sale days, send to the whole 180-day group. After every send, check unsubscribes and spam complaints. If either jumps, go back to the smaller group for the next send.
+
+**Expected result:** Your biggest days reach the most people, and you stop growing at the first warning sign.
+
+**Step 7.** Turn on a goodbye flow for the sleeping group: two short emails over two weeks asking "Do you still want to hear from us?" with one button. Stop emailing anyone who does not click.
+
+**Expected result:** Sleeping subscribers either come back or leave your sends, and your list stays healthy.
+
+<!-- do:flow-win-back -->
+
+**Watch out:** Some phones and email apps mark emails as opened even when nobody read them. Clicks are the more honest sign that someone is awake.
+
+### Good to know
+
+| Group | When to email |
+| --- | --- |
+| Opened or clicked in 90 days | Every normal email |
+| Opened or clicked in 91 to 180 days | Wake-up emails before a sale, then the biggest sale days |
+| Sleeping (180+ days, 5+ emails, no opens or clicks) | Goodbye flow only |
+
+## Lesson 10.17: Do your customers come back? Plan around it
+<!-- stage:grow -->
+
+**Why this matters:** Some stores sell things people buy again and again, like coffee or skincare. Others sell things people buy once, like a sofa. How often your customers come back should change how much you pay for a new customer, how often you run sales and which emails you send.
+
+**Step 1.** In Shopify, open **Analytics > Reports** and find the customer cohort report. Write down two numbers: the share of customers who bought again within 12 months, and how many days it usually takes them to buy the second time.
+
+**Expected result:** Two numbers, for example "22% come back, usually after about 45 days".
+
+**Step 2.** Label your store. Under about 20% coming back is low repeat. Over about 30% is high repeat. In between is middle: use a bit of both plans below.
+
+**Expected result:** Your store has one label: low, middle or high repeat.
+
+**Step 3.** Set the most you will pay for a new customer. Low repeat: keep the ad cost of a new customer under the profit from their first order. High repeat: you may pay a bit more, up to first-order profit plus the profit you really get back from repeat orders in the next 12 months. Use your own numbers, not hopes.
+
+**Expected result:** One number for the most you will pay to win a new customer.
+
+<!-- do:numbers -->
+
+**Step 4.** Set your sale rhythm. Low repeat: run fewer, bigger events aimed at new buyers. High repeat: add early access for past buyers and small events just for your list.
+
+**Expected result:** Your sales calendar matches your store type.
+
+<!-- do:calendar -->
+
+**Step 5.** Time a reorder email. Send it a little before the usual time to the second order. For example, if people usually come back after 45 days, send a reminder on about day 38.
+
+**Expected result:** A reorder email is live in your post-purchase flow.
+
+<!-- do:flow-post-purchase -->
+
+**Step 6.** Pick three product pairs that are often bought together. In Shopify, open **Apps > Search & Discovery > Product recommendations** and add them as complementary products. Use the same pairs in a cross-sell email a week or two after delivery.
+
+**Expected result:** Three pairs show on product pages and in one follow-up email.
+
+**Watch out:** Customers won in a big sale often come back less than customers who paid full price. Check them as their own group before you plan around them.
+
+### Good to know
+
+| | Low repeat (under about 20%) | High repeat (over about 30%) |
+| --- | --- | --- |
+| Most you pay for a new customer | First-order profit | First-order profit plus proven repeat profit |
+| Sales | Fewer, bigger, for new buyers | VIP early access and small list-only events |
+| Key emails | Thank-you, how-to, reviews, gifts for friends | Reorder reminder timed to the usual gap |
+| Cross-sells | Accessories that go with the first buy | Refills, bundles and subscriptions |
 
 ## Self-check
 

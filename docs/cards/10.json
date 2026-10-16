@@ -93,5 +93,24 @@
   {"say": "In your welcome flow (Lesson 10.2), add a split based on the answer. Send each group an email with the 3 products that suit them best.", "check": "Each group gets product picks that fit them.", "lost": "Send each group the products that suit them."},
   {"say": "For people who did not answer, add a one-click question in the second welcome email. Make each answer a button that saves the answer.", "check": "More of your list has an answer.", "lost": "Ask again with buttons in email 2."},
   {"say": "After 30 days, compare clicks and sales from the matched emails with your old welcome emails (Lesson 10.6).", "check": "You know if the answers lift sales. Then use the same groups in sale emails (Lesson 10.4).", "lost": "Compare after 30 days."}
+ ]},
+"10.16": {"intro": "Emailing people who ignored you for months can land you in spam. Wake them up slowly before a big sale.",
+ "steps": [
+  {"say": "In your email app, make groups by last open or click: 30, 60, 90 and 180 days. Add people who joined in the last 15 days to the 30-day group.", "check": "Four groups with numbers in them.", "lost": "Make one group: opened or clicked in 90 days."},
+  {"say": "Make a sleeping group: got 5+ emails, no opens or clicks in 180 days.", "check": "You know how many are asleep.", "lost": "Find people who never open."},
+  {"say": "In normal weeks, email the 90-day group only.", "check": "Normal emails go to readers.", "lost": "Send to the 90-day group."},
+  {"say": "2 to 3 weeks before the sale, send 1 or 2 short wake-up emails to the 91 to 180 day people, with one reason to click.", "check": "Some come back into your 90-day group.", "lost": "Send one 'early access' email to quieter people."},
+  {"say": "Make each send no more than about 1.5 times bigger than the last: 4,000, then 6,000, then 9,000.", "check": "Sends grow step by step.", "lost": "Grow each send by half, not more."},
+  {"say": "Only on the biggest sale days, send to the whole 180-day group. Check unsubscribes and spam complaints after each send.", "check": "You go back to the smaller group if either jumps.", "lost": "Watch unsubscribes after each send."},
+  {"say": "Turn on a goodbye flow for sleeping people: two short emails asking if they still want to hear from you. Stop emailing anyone who doesn't click.", "check": "Your list stays healthy.", "careful": "Clicks are a more honest sign than opens.", "lost": "Send one 'still want our emails?' email."}
+ ]},
+"10.17": {"intro": "Some customers buy again and again. Some buy once. Plan your ads, sales and emails around which kind you have.",
+ "steps": [
+  {"say": "In Shopify, open **Analytics > Reports** and find the customer cohort report. Write the share who bought again in 12 months, and the usual days to the second order.", "check": "Two numbers, like 22% and 45 days.", "lost": "Find how many customers bought twice."},
+  {"say": "Under about 20% is low repeat. Over about 30% is high repeat. In between is middle.", "check": "Your store has a label.", "lost": "Pick low, middle or high."},
+  {"say": "Low repeat: pay no more for a new customer than their first-order profit. High repeat: you can add proven repeat profit from the next 12 months.", "check": "One 'most I'll pay' number.", "lost": "Use first-order profit as your limit."},
+  {"say": "Low repeat: fewer, bigger sales for new buyers. High repeat: early access for past buyers and small list-only events.", "check": "Your calendar fits your store.", "lost": "Plan one sale that fits your type."},
+  {"say": "Send a reorder email a little before the usual second order. 45 days usual? Send on day 38.", "check": "A reorder email is live.", "lost": "Add one reminder email."},
+  {"say": "Pick three products often bought together. Add them in **Apps > Search & Discovery > Product recommendations**, and in one follow-up email.", "check": "Three pairs show on product pages and in an email.", "lost": "Pick one pair that goes together."}
  ]}
 }

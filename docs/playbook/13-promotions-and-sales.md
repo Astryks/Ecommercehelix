@@ -185,10 +185,22 @@
 
 **Watch out:** Quiet days in the middle are normal. Do not panic and cut spend.
 
+### Good to know
+
+Who each sale campaign leaves out:
+
+| Campaign | Who sees it | Who is left out |
+| --- | --- | --- |
+| Copy of your best cold campaign | New people | Past buyers |
+| Cold with combined audiences | New people from your mixed interest and lookalike audiences | Past buyers and recent engagers |
+| Mixed (automatic) | Anyone; Meta decides | Nobody. Meta has been changing past-customer spend limits, so check Ads Manager |
+| Warm | Site visitors, engagers and video viewers (180 days) | Buyers |
+| Hot | Added to cart (14 days) or started checkout (7 days) | Buyers from the last 7 days |
+
 ## Lesson 13.7: After the sale
 <!-- stage:grow -->
 
-**Why this matters:** After a sale there is always a slow time. How you handle it decides how many new buyers you keep. A short review makes the next event better.
+**Why this matters:** After a sale there is always a slow time, because some people just bought earlier than they would have. Research on store sales puts the dip at roughly 4 to 25% of the extra sales the event brought in. How you handle it decides how many new buyers you keep. A short review makes the next event better.
 
 **Step 1.** Turn normal campaigns back up in steps over a week, not all at once.
 
@@ -205,6 +217,16 @@
 **Expected result:** You have a short review with one improvement for next time.
 
 <!-- do:growth -->
+
+**Step 4.** Wait 7 days after the sale ends before you write down final numbers. Ad apps keep adding late sales for about a week.
+
+**Expected result:** Your review uses numbers from 7 days after the sale, not the first morning.
+
+**Step 5.** Plan the next 2 to 4 weeks without a new discount. Show full-price news, like a new product or a best-seller story. Nudge new buyers towards a second order (Lesson 10.17).
+
+**Expected result:** A short plan for the weeks after the sale, with no discount in it.
+
+<!-- do:calendar -->
 
 ## Lesson 13.8: If the sale is failing
 <!-- stage:convert -->
@@ -323,6 +345,53 @@
 **Expected result:** You know whether the sale made money and whether to repeat it.
 
 **Watch out:** More than four sales a year and customers start waiting for the next one. Keep sales planned, rare and with a clear reason.
+
+## Lesson 13.13: Work out your sale numbers before you pick the discount
+<!-- stage:convert -->
+
+**Why this matters:** A discount takes money out of every order, not just the extra ones. If you know how much more you need to sell to stand still, you can pick a discount that still leaves you better off. Five minutes of maths now can save the whole sale.
+
+**Step 1.** Open **Numbers** in Helix and find your profit on one order before ads (Profit setup shows it). Write down the price and the profit.
+
+**Expected result:** Two numbers, for example "$60 price, $30 profit before ads".
+
+<!-- do:numbers -->
+
+**Step 2.** Work out the real discount. Not every buyer uses the code, so multiply the discount by the share of orders that use it. For example, 20% off used on 70 of every 100 orders is a real discount of 14% across all your sales.
+
+**Expected result:** You know the real discount for your offer, not just the number on the banner.
+
+**Step 3.** Work out how many more orders you need to break even. Take your normal profit per order and divide it by the profit on a discounted order. At 20% off, a $60 item sells for $48, so $30 profit becomes $18. $30 ÷ $18 = 1.67, so you need about 1.67 times your normal orders just to make the same money. Do this for two or three offers (see the table below).
+
+**Expected result:** Each offer you are thinking about has a "times as many orders" number.
+
+**Step 4.** Pick the offer you can actually reach. Check your sales target three ways: people on your list times how many usually buy in a sale, your ad budget divided by your usual cost per sale, and the stock you will have. Choose the smallest discount that hits the target.
+
+**Expected result:** One offer, with a sales target your list, ads and stock can all support.
+
+**Step 5.** Split the target into weeks and days. Give each part of the sale a share, for example 35% on the launch days, 30% in the middle and 35% on the final days. Divide each share by the number of days in that part.
+
+**Expected result:** A daily sales target for every sale day, written in your sale plan.
+
+<!-- do:goals -->
+
+**Step 6.** Work out your highest safe MER for the sale. In Helix, MER is all your ad spend as a share of all your sales. Divide the profit on a discounted order by the discounted price. In the example, $18 ÷ $48 = 37.5%, so ad spend above about 37% of sales loses money. Each sale day, check sales against the daily target and MER against this limit.
+
+**Expected result:** One MER limit for the sale, checked every day next to the daily target.
+
+**Watch out:** Shopify and some other apps show MER the other way round: sales divided by ad spend. Helix's 25% is the same as Shopify's 4. Use one version in your plan so you never mix them up.
+
+### Good to know
+
+Example for a $60 item with $30 profit before ads (everyone uses the code):
+
+| Offer | Sale price | Profit per order | Orders needed to stand still | Highest safe MER |
+| --- | --- | --- | --- | --- |
+| 10% off | $54 | $24 | 1.25 times | About 44% |
+| 20% off | $48 | $18 | 1.67 times | About 37% |
+| 30% off | $42 | $12 | 2.5 times | About 29% |
+
+A free gift or a bundle often costs you less than a big discount (Lesson 9.10).
 
 ## Self-check
 

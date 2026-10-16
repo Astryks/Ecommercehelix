@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **PMax:** A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign.
-> - **Product feed:** The list of your products, prices and photos. Google and Meta read it to make shopping ads.
+> - **Product feed:** The list of your products, prices and photos that Google and Meta read to make shopping ads.
 > - **Search terms:** The exact words people typed into Google before they saw or clicked your ad.
 > - **Negative keyword:** A word you tell Google never to show your ads for, to stop wasted clicks.
 >
@@ -76,7 +76,7 @@
 
 **Why this matters:** Shopping ads are built from your product feed. Better product data means better ads and cheaper clicks. Most gains come from titles, images and fixing errors.
 
-**Step 1.** Rewrite product titles with search words first: brand, product type, then main feature. For example: "Acme Linen Shirt, Men's, Relaxed Fit, Sand".
+**Step 1.** Rewrite product titles with search words first: brand, product type, then main feature. For example: "Acme Linen Shirt, Men's, Relaxed Fit, Sand". Put the most important words in the first 70 characters, because Google often shows only about 70.
 
 **Expected result:** Your top 20 products have search-first titles.
 

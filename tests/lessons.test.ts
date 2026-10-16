@@ -17,7 +17,7 @@ describe("step-format lessons", () => {
       const parsed = lessons.filter((x) => x.f === f).length;
       expect(parsed, f).toBe(headings);
     }
-    expect(lessons.length).toBeGreaterThanOrEqual(304);
+    expect(lessons.length).toBeGreaterThanOrEqual(309);
   });
 
   it("each lesson has a short why and numbered steps with an expected result", () => {
