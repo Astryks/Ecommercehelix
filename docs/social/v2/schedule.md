@@ -13,14 +13,15 @@ Generated: 2026-10-15 13:02 Australia/Sydney
 - Reorders: none (all date-sensitive posts land before their events)
 - Missing media: none (all 50 files exist)
 - Forbidden-term hits (banned source and coach names): none
-- Fact-check 16 Oct 2026: post 4 caption corrected to “From today (17 Oct) that’s 41 days” to match its scheduled date. Post 47 caption now says “during the busy season” (it posts 29 Nov, mid-BFCM).
-- 17 Oct 2026: images re-rendered to match. Post 4 video and still now show “41 days” (`animated/post04-bf-countdown.mp4`, also `samples/`), post 47 now says “especially during BFCM” (`static/post47-rest.png`). The copies already booked on Meta still show the old text and must be replaced with these files.
+- Fact-check 16 Oct 2026: post 47 caption now says “during the busy season” (it posts at the end of November, mid-BFCM). 17 Oct: its image now says “especially during BFCM” (`static/post47-rest.png`); if it is already booked on Meta, replace the image.
+- Correction 17 Oct 2026: post 4 was published on Facebook on Tue 13 Oct 2026 at 19:43 Sydney (checked on Meta by Sid), when “45 days” to Black Friday was correct. Its caption, image and video keep “45 days” and the row below shows the real date. The audit’s “should say 41” note was based on this file’s planned date (17 Oct) and was wrong.
+- Dates in this file are the original plan. The posts on Meta were later reordered (time-sensitive posts first, see STATUS.md), so check Meta for real dates.
 
 ## Date-sensitive checks
 
 | post_no | topic | scheduled | deadline | ok |
 |---:|---|---|---|:---:|
-| 4 | (about 6 weeks) to go. | 2026-10-17 19:00 | 2026-11-27 | yes |
+| 4 | (about 6 weeks) to go. | 2026-10-13 19:43 (published) | 2026-11-27 | yes |
 | 5 | Plan by margin, not just % off. | 2026-10-18 19:00 | 2026-11-27 | yes |
 | 6 | Test in October. Sell in November. | 2026-10-19 19:00 | 2026-10-31 | yes |
 | 33 | Plan your Cyber Monday | 2026-11-15 19:00 | 2026-11-30 | yes |
@@ -127,13 +128,13 @@ That's how Helix works: one clear step a day, so small progress actually adds up
 
 ## Order 4 — Post 4: (about 6 weeks) to go.
 
-- **When:** 2026-10-17 19:00 Australia/Sydney
+- **When:** published 2026-10-13 19:43 Australia/Sydney (planned 2026-10-17 19:00)
 - **Media:** `/workspace/reports/helix/social-v2/animated/post04-bf-countdown.mp4` (mp4)
 
 ### Instagram
 
 ```
-Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (17 Oct) that's 41 days, about 6 weeks.
+Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (13 Oct) that's 45 days, about 6 weeks.
 Sounds like plenty. It isn't, once you add reorder and shipping times. This week's checklist:
 ☐ Check stock and reorder best-sellers now
 ☐ Test ads before the holiday rush pushes costs up
@@ -147,7 +148,7 @@ One step a day gets you there. ecommercehelix.com
 ### Facebook
 
 ```
-Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (17 Oct) that's 41 days, about 6 weeks.
+Black Friday is Friday 27 November 2026. Cyber Monday is Monday 30 November. From today (13 Oct) that's 45 days, about 6 weeks.
 Sounds like plenty. It isn't, once you add reorder and shipping times. This week's checklist:
 ☐ Check stock and reorder best-sellers now
 ☐ Test ads before the holiday rush pushes costs up

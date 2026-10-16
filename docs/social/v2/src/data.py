@@ -10,7 +10,7 @@ dict(n=2,f='post02-profit-tip',cat='Tip',k='Quick maths, big difference',t='Prof
 dict(n=3,f='post03-step1',cat='Funny',k='Feeling stuck?',t='Start with\nstep 1.',kind='list',
      body=['✅ Step 1: do just this one','Step 2: tomorrow','Step 37: not your problem today'],note=''),
 dict(n=4,f='post04-bf-countdown',cat='Urgency',k='Black Friday: Fri 27 Nov 2026',t='(about 6 weeks) to go.',kind='list',
-     body=['Check stock & reorder now','Test ads before costs climb','Grow your email list','Plan offers by margin'],note='',tile=('','41','days')),
+     body=['Check stock & reorder now','Test ads before costs climb','Grow your email list','Plan offers by margin'],note='',tile=('','45','days')),
 dict(n=5,f='post05-margin-offers',cat='Tip',k='BFCM offer maths',t='Plan by margin,\nnot just % off.',kind='sides',
      body=[dict(rows=[('Price','$45.00'),('− Costs*','$38.00'),('− Fees 3%','$1.35')],res=('10% off','$5.65')),
            dict(rows=[('Price','$40.00'),('− Costs*','$38.00'),('− Fees 3%','$1.20')],res=('20% off','$0.80'))],
@@ -30,7 +30,7 @@ LAY={1:'meme',2:'stat',3:'steps',4:'countdown',5:'split',6:'note',7:'meme',8:'st
 36:'note',37:'checklist',38:'steps',39:'note',40:'steps',41:'stat',42:'quote',43:'split',44:'quote',45:'checklist',46:'quote',47:'split',
 48:'checklist',49:'quote',50:'steps',51:'split',52:'meme',53:'checklist',54:'meme',55:'note',56:'meme',57:'quote'}
 ANIM={1,4,5,33,34,35,52,53,54,55,56,57}
-TILE={4:('','41','days'),33:('NOV','30','Mon'),35:('DEC','25','Fri')}
+TILE={4:('','45','days'),33:('NOV','30','Mon'),35:('DEC','25','Fri')}
 # word in the headline that gets the marker swipe
 SWIPE={1:'profit.',2:'Profit',3:'1.',4:'weeks)',5:'margin,',6:'November.',7:'scans.',8:'ROAS',9:'margin',10:'2×',11:'big',12:'rate',13:'purchase',
 14:'AOV',15:'maths',16:'welcome',17:'cart',18:'Clear',19:'one',20:'3',21:'warm',22:'feed',23:'search',24:'6-point',25:'benefits',26:'phone',
