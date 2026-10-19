@@ -11,7 +11,7 @@ _Last updated: 17 Oct 2026 (Sydney)._
 5. **Google Ads check-in:** once Google approves the developer token (https://console.cloud.google.com/google/ads-apis/overview?project=astryks), send it to me or set `GOOGLE_ADS_DEVELOPER_TOKEN` in Vercel Production, then connect your Google Ads account on /dashboard/connect and check the first sync.
 6. **GitHub Support request (old cached research commits):** ask GitHub Support to remove the old cached commits 79bd6e9, d93fb8b, ac984ea, 90a2d45 and d785342 from Astryks/Astryks PR #12. Ready text: `docs/github-support-pr12.md`; send it at https://support.github.com/contact ("Removing sensitive data").
 7. **Lesson videos** (when recorded): send the URLs and I add them (free YouTube picks per path step live in `src/lib/learn-path.json`).
-8. **Closed Facebook group for paying members:** the group is live and linked from Community. Check the join button once with a paid account, and remove members who cancel (by hand for now).
+8. **Closed Facebook group for paying members:** set `FB_GROUP_URL` in Vercel (send the group link). After that, join emails go out automatically and the daily digest plus `/admin/community` list who to approve or remove (Facebook has no API, so the final tap is by hand). Also set `AUTH_SECRET` and `CRON_SECRET` if missing.
 9. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
 10. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
 11. **Postal address for marketing emails:** set `BUSINESS_POSTAL_ADDRESS` in Vercel Production (a PO box is fine, e.g. "PO Box 123, Sydney NSW 2000, Australia"), then redeploy. Until then marketing emails go out with no address and the logs warn.
@@ -84,6 +84,24 @@ Every factual claim in the 30 playbook modules, their card decks (`docs/cards`),
 **Checks:** `npm test` 331 passed, `tsc` clean, `npm run lint` 0 errors (5 old warnings), `npm run build` ok, `check_links.py` ok, all card JSON valid, originality check against the private research: 0 shared 8-word runs, 0 close paraphrases. Headless Chrome at 375px: 75 public pages and 316 signed-in pages crawled with no console errors, no broken links or anchors, no sideways scroll; demo sign-in, onboarding, Today quick update, card decks and the contact form fields checked (no message sent).
 
 **Could not verify (softened or left labelled):** Shopify US Basic price (US page did not load; third-party US$39), Meta pages that block fetching (partnership ad path, ad account moves, currency change), Click Frenzy 2026 dates, Klaviyo open rates, US sweepstakes bond rules, Neon region, "not registered for GST" (business fact).
+
+## Sale maths, list health and cash lessons (17 Oct 2026)
+- **5 new lessons (309 in total), in our own words, slotted into the guided path, each with a card deck and "I'm lost" lines:** 13.13 Work out your sale numbers before you pick the discount; 10.16 Wake up your quieter subscribers before a big sale; 10.17 Do your customers come back? Plan around it (Grow tag); 7.16 Catalog ads; 14.12 Count the days your cash is stuck. Lesson-count test now at least 309.
+- **Past-customer spend cap reworded** in 20.2, its card and the sale builder label: Meta has been changing this, so check Ads Manager (we could not confirm the change from an official Meta page, so we don't say it was removed). 13.6 now has a table of who each sale campaign leaves out.
+- **13.7 extended:** the post-sale dip (about 4 to 25% of the extra sales), wait 7 days before final numbers, and what to run next (2 new steps + cards).
+- **Small adds:** 10.1 sign-up reward and form rules; 9.10 free-gift tiers; 6.12 traffic-light colour rules; 20.5 which TikTok goal to use when; 8.2 put key words in the first 70 characters of feed titles.
+- stages.md regenerated (it was also behind on some earlier lessons).
+- **Merged with the fact-check audit (PR #1, 19 Oct):** 20.2 keeps the "check Ads Manager" wording above, and its Watch out and card now say Meta announced in 2025 it is retiring the old existing-customer budget cap (Meta for Developers source from the audit, as in SOP 05), so exclude customer audiences to keep past buyers out.
+
+## Teen course videos and next steps (17 Oct 2026)
+
+- **Course:** 22 chapters (Intro + lessons 01-95). Every video now opens with a hook and ends with a cliffhanger into the next one (`build/hooks.py`). Chapter openers follow "In this chapter we'll learn to X. Let's get started." then a simple real-world story.
+- **Look and voice:** cream-paper sketch style with stick figures, soft music only, no sound effects, fewer zooms (simple scene cuts). Narrator is Brad. Intro animation v5 approved; a more realistic Brad take (v6) is next.
+- **Voice runs locally** on Sid's Mac; no paid GPU spend without Sid's OK.
+- **17 Oct update:** the teen course is now the Intro plus 103 lessons (8 new, including 'Ad Ideas People Remember'), each with a 'Did you know?' retail founder-story card before the cliffhanger (104 checked facts). The videos need re-rendering and re-voicing. App lessons now total 309 (commit dcaa7d1).
+- **Paused:** work stopped on 16 Oct when Grok Bot usage ran out; resumes when usage is added.
+- **Coverage:** 18 high-priority untranscribed videos picked for Sid to record (about 75 min); public research fills the rest.
+- **Also in progress (separate courses):** share market course (29 chapters, fact-checked) and a kids open-source AI course.
 
 ## Independent coverage check (15 Oct 2026, late evening)
 - Re-checked every private research video and transcript one by one (1,115 + 386 = 1,501 items; private matrix kept outside the repo). Before: 1,110 covered, 23 partial, 3 gaps, 365 out of scope (intros, admin, partner listings, tool walkthroughs, coaching-only material). After: 1,136 covered, 0 partial, 0 gaps.

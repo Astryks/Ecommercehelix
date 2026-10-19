@@ -23,7 +23,7 @@
 > **Words to know:**
 >
 > - **Weeks of cover:** How many weeks your stock will last at the current sales speed.
-> - **Cash forecast:** A week-by-week list of money coming in and going out. It shows tight weeks early.
+> - **Cash forecast:** A week-by-week list of money coming in and going out, so you can see tight weeks early.
 >
 > All words are explained in the [glossary](../glossary.md).
 <!-- plain:end -->
@@ -334,6 +334,39 @@
 **Expected result:** Your next order matches real demand.
 
 **Watch out:** If a pre-order date slips, email buyers at once with the new date and an easy refund. Silence turns into chargebacks. US: ship by the date you state, or within 30 days if you state none. If you will be late, you must offer to cancel with a full refund (see [FTC: Mail Order Rule](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
+
+## Lesson 14.12: Count the days your cash is stuck
+<!-- stage:grow -->
+
+**Why this matters:** From the day you pay a supplier to the day a customer's money reaches your bank, your cash is stuck. The longer it is stuck, the more cash you need to grow. One simple number shows you how long, and what to fix first.
+
+**Step 1.** Find how many days your stock sits before it sells. In Shopify, open **Analytics > Reports > Inventory remaining per product**. Or divide the cost of all the stock you hold by the cost of the stock you sell in an average day. For example, $27,000 of stock ÷ $300 sold per day = 90 days.
+
+**Expected result:** One number: days stock sits (for example 90).
+
+**Step 2.** Find how many days it takes for customer money to reach your bank. Check your payouts page. Card payouts often take 2 to 3 days.
+
+**Expected result:** One number: days until you are paid (for example 3).
+
+**Step 3.** Find how many days your supplier gives you to pay. Look at your invoices. If you pay before the goods ship, this is 0.
+
+**Expected result:** One number: days to pay the supplier (for example 30).
+
+**Step 4.** Add them up: days stock sits + days until you are paid − days the supplier gives you. In the example: 90 + 3 − 30 = 63 days your cash is stuck.
+
+**Expected result:** One number for your store, written in your cash plan.
+
+**Step 5.** Pick one lever from Lesson 14.3 to cut 10 days. For example, order smaller amounts more often, ask for 30 more days to pay, take pre-orders, or clear slow stock (Lesson 14.10).
+
+**Expected result:** One action sent or done this week.
+
+**Step 6.** Check the number again every 3 months.
+
+**Expected result:** A reminder is set, and you can see if the number is going down.
+
+<!-- do:calendar -->
+
+**Watch out:** If you pay a deposit before goods are made, start counting from the day you paid the deposit, not the day the goods arrived. Deposits make your cash stuck for longer.
 
 ## Self-check
 

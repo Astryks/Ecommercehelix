@@ -110,5 +110,14 @@
   {"say": "Set the budget a bit higher than normal. Caps often spend less than the budget, so a bigger budget gives Meta room.", "check": "The capped copy is not starved of money.", "lost": "Give the copy a bit more budget."},
   {"say": "Run both for 7 days. Compare total sales and cost per sale.", "check": "You know if the cap made you more profit. If it barely spent, raise the cap by 10% and try again.", "lost": "Wait 7 days and compare."},
   {"say": "Optional: in **Advertising settings** (**All tools**), look for **Value rules**. Not every account has them. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.", "check": "At most one rule, backed by your own numbers.", "lost": "Skip this unless your data proves it."}
+ ]},
+"7.16": {"intro": "Catalog ads show each person the products they looked at. They work when your product list and pixel agree.",
+ "steps": [
+  {"say": "In Shopify, open the **Facebook & Instagram** app and connect your catalog. Check prices and stock in **Commerce Manager**.", "check": "Products match your store.", "lost": "Connect your catalog in the Shopify app."},
+  {"say": "In **Events Manager**, check how well your pixel matches your catalog. Aim for close to 100%. If low, reconnect through the Shopify app.", "check": "Pixel events point to catalog products.", "careful": "Don't add a second pixel.", "lost": "Look for the catalog match number."},
+  {"say": "Make 2 or 3 product sets: best sellers, one category, in stock only.", "check": "Sets are ready.", "lost": "Make one set: best sellers."},
+  {"say": "Make a **Sales** campaign with your catalog. Show it to people who viewed or added to cart in 14 days. Leave out buyers from the last 7 days. Use 10 to 20% of your Meta budget.", "check": "Almost-buyers see what they looked at.", "lost": "Show your catalog to people who added to cart."},
+  {"say": "Optional: test a broad catalog ad for new people with your best-seller set.", "check": "You know if it finds new buyers.", "lost": "Skip this for now."},
+  {"say": "Each week, fix product errors in Commerce Manager and hide sold-out items.", "check": "No errors in the catalog.", "lost": "Check for errors once a week."}
  ]}
 }

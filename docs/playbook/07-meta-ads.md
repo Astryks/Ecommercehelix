@@ -22,7 +22,7 @@
 >
 > **Words to know:**
 >
-> - **Pixel:** A small piece of code on your store. It tells Meta when someone views, adds to cart or buys.
+> - **Pixel:** A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
 > - **Advantage+:** Meta's automatic settings that let its system choose audience, placements or budget for you.
 > - **Learning phase:** The days after you start or make a big change to an ad set. Meta is still working out who to show it to. It usually ends after about 50 results in the week after that change.
 > - **CPA:** Cost per acquisition: how much ad money it took to get one sale.
@@ -564,6 +564,43 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 **Expected result:** At most one rule, backed by your own numbers.
 
 **Watch out:** A bid cap (a hard limit on each bid) is stricter than a cost per result goal. It can stop delivery completely. Leave bid caps for experienced accounts.
+
+## Lesson 7.16: Show the right product to the right person with catalog ads
+<!-- stage:attract -->
+
+**Why this matters:** Catalog ads (also called dynamic product ads) pick products from your store and show each person the ones they looked at or are likely to want. They work best when you have more than a handful of products. They only work well if your product list and your pixel agree on which product is which.
+
+**Step 1.** Sync your products. In Shopify, open the **Facebook & Instagram** app and connect your catalog. Then, in Meta **Commerce Manager**, check that your products, prices and stock look right.
+
+**Expected result:** Your products show in Commerce Manager with the same prices and stock as your store.
+
+**Step 2.** Check that your pixel matches the catalog. In **Events Manager**, open your catalog or data source and look for how well your pixel's product events match your catalog (Meta calls this catalog match). Aim for close to 100%. If it is low, reconnect through the Shopify app. Do not add a second pixel.
+
+**Expected result:** The pixel's views, add-to-carts and purchases point to products in your catalog.
+
+**Step 3.** Make two or three product sets in Commerce Manager, for example best sellers, one main category, and in-stock products only.
+
+**Expected result:** Product sets are ready to pick when you build the ad.
+
+**Step 4.** Build a catalog campaign for almost-buyers. Create a **Sales** campaign, turn on your catalog and pick a product set. Show it to people who viewed a product or added to cart in the last 14 days, and leave out people who bought in the last 7 days. Start with about 10 to 20% of your Meta budget.
+
+**Expected result:** People who looked but did not buy see the products they looked at.
+
+<!-- do:meta-draft -->
+
+**Step 5.** Optional: once that works, test a catalog ad for new people with broad targeting and your best-seller set.
+
+**Expected result:** You know if catalog ads also find new buyers for you.
+
+**Step 6.** Once a week, open Commerce Manager and fix any products with errors or wrong prices. Make sure sold-out products are hidden.
+
+**Expected result:** No errors, and nobody sees an ad for something they cannot buy.
+
+**Watch out:** If ads show the wrong price or a sold-out product, people click, get annoyed and leave. Keep the catalog clean before you add budget.
+
+### Good to know
+
+TikTok has catalog ads too. In TikTok Ads Manager, open **Assets > Catalog** to add products. You need at least 4 products that are in stock and approved before you can run them.
 
 ## Self-check
 
