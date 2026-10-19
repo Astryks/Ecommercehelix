@@ -1,4 +1,5 @@
 import { derive, sum, type DayInput, type Settings } from "./scorecard";
+import { TAX_INCLUSIVE_SOURCES } from "./tax";
 
 /** Plain-English daily profit summary and the quick-update estimates for the Today screen. */
 
@@ -37,7 +38,8 @@ export function quickMerge(existing: DayInput | undefined, date: string, q: { re
     paymentFees: est(base.paymentFees, q.revenue * ratios.fees),
     discounts: est(base.discounts, q.revenue * ratios.discounts),
     refunds: est(base.refunds, q.revenue * ratios.refunds),
-    source: existing?.source === "meta" || !existing ? "quick" : existing.source,
+    // Sales are typed here, so a day synced from order prices (tax included) becomes a typed day.
+    source: !existing || existing.source === "meta" || TAX_INCLUSIVE_SOURCES.has(existing.source ?? "") ? "quick" : existing.source,
     example: false,
   };
 }

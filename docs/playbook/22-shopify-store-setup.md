@@ -309,9 +309,9 @@
 
 **Watch out:** If you are not registered, do not charge GST and do not call invoices tax invoices.
 
-**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Leave it on (the default in GST and VAT countries) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
+**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Keep **Use my country's default** if you type or import Shopify's Gross sales, which already leaves tax out. Pick **Yes** only if every sales number you type includes tax. Pick **No** if you are not registered.
 
-**Expected result:** Helix divides sales by 1.1 before profit maths when needed. New Zealand (15%) and UK (20%) are there too.
+**Expected result:** Helix takes GST out of order totals synced from Shopify (for example $110 becomes $100) and uses Gross sales as typed. New Zealand (15%) and UK (20%) are there too.
 
 <!-- do:settings -->
 

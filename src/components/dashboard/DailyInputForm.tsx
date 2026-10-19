@@ -11,7 +11,7 @@ type Ratios = { cogs: number; shippingPerOrder: number; fees: number; fromHistor
 type Spec = { f: Field; label: string; where: string; example: string; int?: boolean; optional?: boolean; money?: boolean };
 
 const SHOPIFY: Spec[] = [
-  { f: "revenue", label: "Gross sales", where: "Shopify > Analytics > Reports > Total sales over time, Gross sales column (not Total sales, which adds shipping and tax). Gross sales leaves tax out, so pick \"before tax\" in Settings if you copy it", example: "2450", money: true },
+  { f: "revenue", label: "Gross sales", where: "Shopify > Analytics > Reports > Total sales over time, Gross sales column (not Total sales, which adds shipping and tax). Gross sales already leaves GST/VAT out, so Helix uses it as typed unless Settings say your typed sales include tax", example: "2450", money: true },
   { f: "orders", label: "Orders", where: "Same report, Orders column", example: "27", int: true },
   { f: "sessions", label: "Sessions", where: "Shopify > Analytics > Reports > Sessions over time", example: "1180", int: true },
   { f: "addToCarts", label: "Sessions with an add to cart", where: "Shopify > Analytics > Reports > Conversion over time", example: "80", int: true, optional: true },
@@ -119,7 +119,7 @@ export function DailyInputForm({ defaultDate, recent, settings, ratios, taxRate,
   );
 
   const results: { label: string; value: string; note?: string; tone?: "good" | "bad" }[] = [
-    { label: "Net revenue", value: money(preview.netRevenue), note: taxRate > 0 ? "after discounts, refunds and GST" : "after discounts and refunds" },
+    { label: "Net revenue", value: money(preview.netRevenue), note: taxRate > 0 ? "after discounts, refunds and GST/VAT" : "after discounts and refunds" },
     { label: "Conversion rate", value: num("sessions") ? pct(preview.cr) : "n/a", note: "good: 2.5%+", tone: num("sessions") ? (preview.cr >= 2.5 ? "good" : preview.cr < 1.5 ? "bad" : undefined) : undefined },
     { label: "Add-to-cart rate", value: num("addToCarts") ? pct(preview.atcRate) : "n/a", note: "good: 7%+" },
     { label: "AOV", value: num("orders") ? money(preview.aov, 2) : "n/a", note: "average order" },

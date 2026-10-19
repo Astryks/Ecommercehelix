@@ -65,7 +65,7 @@
 
 **Expected result:** Your BAS includes your credits.
 
-**Step 6.** In Helix **Settings**, keep **My prices include GST/VAT** on.
+**Step 6.** In Helix **Settings**, keep **My prices include GST/VAT** on **Use my country's default** (or Yes if the sales you type include GST).
 
 **Expected result:** Helix profit leaves GST out.
 
