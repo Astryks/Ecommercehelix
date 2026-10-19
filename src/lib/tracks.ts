@@ -41,7 +41,7 @@ export const TRACKS: Record<TrackId, Track> = {
       "Scale ads safely on Meta and Google while each sale stays profitable",
       "Bring customers back with email, SMS and better offers",
       "Plan Black Friday, Cyber Monday and the busy season",
-      "64 days, about 10 to 20 minutes a day",
+      "66 days, about 10 to 20 minutes a day",
     ],
     days: DAYS,
     stages: STAGES,

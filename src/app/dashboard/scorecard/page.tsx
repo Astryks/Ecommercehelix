@@ -221,7 +221,7 @@ export default async function Scorecard() {
         </section>
 
         <div className="space-y-6">
-          <section className="card p-5">
+          <section className="card scroll-mt-6 p-5" id="import">
             <h2 className="font-semibold">Import CSV</h2>
             <p className="text-sm text-slate-500">One row per day. Columns match the field names in the template.</p>
             <form action={importCsv} className="mt-3 space-y-3">

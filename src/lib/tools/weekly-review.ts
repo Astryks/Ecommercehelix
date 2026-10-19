@@ -32,7 +32,7 @@ export function mondayReview(days: DayInput[], s: Settings, monday: string): Rev
     mk("profit", "Profit after ads", has ? a.x.contribution : null, b.days ? b.x.contribution : null, Math.round(weekTarget * 0.15)),
     mk("orders", "Orders", has ? a.t.orders : null, b.days ? b.t.orders : null, null),
     mk("mer", "Ad spend as % of sales", has && a.x.netRevenue ? a.x.merPct : null, b.days && b.x.netRevenue ? b.x.merPct : null, s.targetMerPct, true),
-    mk("cr", "Conversion rate %", has && a.t.sessions ? a.x.cr : null, b.days && b.t.sessions ? b.x.cr : null, 2.5),
+    mk("cr", "Conversion rate %", has && a.t.sessions ? a.x.cr : null, b.days && b.t.sessions ? b.x.cr : null, 2),
   ];
   const worst = numbers.filter((n) => n.now !== null && n.bad).sort((x, y) => x.score - y.score)[0] ?? null;
   return { week: monday, numbers, worst, fixes: worst ? FIXES[worst.id] : [] };

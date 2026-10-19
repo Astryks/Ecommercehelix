@@ -31,9 +31,9 @@ export default async function EmailAutomation() {
       </header>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
-        <div className="card p-5"><p className="text-sm text-slate-500">Flows live</p><p className="mt-1 text-2xl font-bold">{live} of {FLOWS.length}</p></div>
-        <div className="card p-5"><p className="text-sm text-slate-500">Flow revenue, last 30 days</p><p className="mt-1 text-2xl font-bold">${revenue.toLocaleString("en-AU")}</p></div>
-        <div className="card p-5"><p className="text-sm text-slate-500">Biggest gap</p><p className="mt-1 text-lg font-bold">Abandoned cart + win-back</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Flows live (example)</p><p className="mt-1 text-2xl font-bold">{live} of {FLOWS.length}</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Flow revenue, last 30 days (example)</p><p className="mt-1 text-2xl font-bold">${revenue.toLocaleString("en-AU")}</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Biggest gap (example)</p><p className="mt-1 text-lg font-bold">Abandoned cart + win-back</p></div>
       </div>
 
       <div className="mt-6 space-y-4">

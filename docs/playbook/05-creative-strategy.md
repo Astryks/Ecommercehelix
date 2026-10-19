@@ -25,7 +25,7 @@
 > - **Creative:** The ad itself: the picture or video plus the words.
 > - **Hook:** The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
 > - **Angle:** The reason to buy that an ad focuses on, like saving time or looking good.
-> - **Hook rate:** Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention.
+> - **Hook rate:** Out of everyone who saw your video ad, the share who watched at least 3 seconds. Meta has no built-in column, so you add it as a custom metric.
 >
 > All words are explained in the [glossary](../glossary.md).
 <!-- plain:end -->
@@ -39,7 +39,7 @@
 
 **Step 1.** Open Meta Ads Manager and go to the **Ads** tab. Count how many different ads are live right now (different ideas, not just new sizes).
 
-**Expected result:** You have a count. Fewer than 6 live ideas usually means the account is short of creative.
+**Expected result:** You have a count. As a rough guide, fewer than 6 live ideas means the account is short of creative.
 
 **Step 2.** Check that your main ad set for new people uses a broad audience. That means Advantage+ audience, or just country and age, not a stack of interests.
 
@@ -158,7 +158,7 @@
 ## Lesson 5.7: Hooks (first 0 to 3 seconds)
 <!-- stage:attract -->
 
-**Why this matters:** The hook is the first line or first 3 seconds of an ad. Its only job is to stop the scroll. Most viewers leave in the first quarter of a video, so the hook matters most.
+**Why this matters:** The hook is the first line or first 3 seconds of an ad. Its only job is to stop the scroll. Many viewers scroll past within the first few seconds, so the hook matters most.
 
 **Step 1.** Write 3 hooks (the first 3 seconds) for your next ad, each a different type.
 
@@ -174,9 +174,9 @@
 
 **Expected result:** You have 3 ads that differ only in the first 3 seconds.
 
-**Step 3.** After 7 days, compare hook rate (3-second video plays divided by impressions) in Ads Manager.
+**Step 3.** After 7 days, compare hook rate (3-second video plays divided by impressions) in Ads Manager. It is a custom metric you make once (Lesson 6.11).
 
-**Expected result:** You know which hook stops the most people. Above about 25% is a good hook rate for most accounts.
+**Expected result:** You know which hook stops the most people. A common rule of thumb is that above about 25% is a good hook rate.
 
 **Watch out:** A bold headline on a still image can work as well as a clever video hook. Test statics too.
 
@@ -340,9 +340,9 @@
 
 **Step 4.** Before launch, check the automatic changes.
 
-1. In the ad, scroll to the creative options.
-2. Find the auto-enhance settings.
-3. Turn off any that change your ad in a way you do not want.
+1. In the ad, go to **Ad creative** and find **Advantage+ creative** (Meta's auto-enhance settings).
+2. Open **Enhancements**, and check **Advanced preview** too.
+3. Turn off any that change your ad in a way you do not want (Lesson 7.2).
 
 **Expected result:** The ad shows exactly as you designed it.
 
@@ -416,7 +416,7 @@
 ## Lesson 5.20: Tell a short story in an ad
 <!-- stage:attract -->
 
-**Why this matters:** People remember stories much better than lists of features. A tiny story with a problem, a turn and a happy ending keeps people watching. It also makes your product the hero without shouting.
+**Why this matters:** People often remember stories better than lists of features. A tiny story with a problem, a turn and a happy ending keeps people watching. It also makes your product the hero without shouting.
 
 **Step 1.** Pick one real moment from a customer review or your own life. It should show the problem your product fixes.
 

@@ -61,11 +61,7 @@
 
 **Expected result:** You know which rules apply.
 
-**Watch out:** Outside the US: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). From 1 July 2026, super is paid each payday. US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
-
-### Good to know
-
-> **General information, not tax or legal advice.** Check with a registered tax agent or accountant. Also check the official sources below.
+**Watch out:** Outside the US: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). Super guarantee is 12% of eligible pay (see [ATO: super guarantee](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee)). From 1 July 2026, super is paid each payday. Some contractors paid mainly for their labour also get super (see [ATO: super for contractors](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super/super-for-independent-contractors)). US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
 
 **Step 7.** Write the SOPs (how the work is done) before you hand it over.
 
@@ -82,6 +78,10 @@
 3. Start with a paid trial project.
 
 **Expected result:** Senior hires have clear goals and have proven themselves.
+
+### Good to know
+
+> **General information, not tax or legal advice.** Check with a registered tax agent or accountant. Also check the official sources above.
 
 ## Lesson 28.2: Working well with a virtual assistant
 <!-- stage:grow -->
@@ -139,7 +139,7 @@
 
 **Expected result:** All posts are disclosed.
 
-**Watch out:** Outside the US: see [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf); GST registered creators add GST. US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
+**Watch out:** Outside the US: see [ACCC: influencer endorsements](https://www.accc.gov.au/about-us/publications/social-media-influencer-testimonials-and-endorsements); GST registered creators add GST. US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
 
 **Step 5.** Pay on time and keep invoices.
 
@@ -217,7 +217,7 @@
 
 **Expected result:** There are no hidden traps.
 
-**Watch out:** Look at [business.gov.au grants](https://business.gov.au/grants-and-programs) and [SBA loans](https://www.sba.gov/funding-programs/loans) (US).
+**Watch out:** Look at [business.gov.au grants](https://business.gov.au/grants-and-programs) and [SBA loans](https://www.sba.gov/loans/) (US).
 
 ### Good to know
 
@@ -289,12 +289,6 @@
 
 **Expected result:** One task is off your plate.
 
-### Good to know
-
-**Support lines:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
-
-**US:** call or text 988 for the Suicide and Crisis Lifeline at any hour. See [988lifeline.org](https://988lifeline.org/).
-
 **Step 7.** Judge results on the last 3 days and month to date, not one day.
 
 **Expected result:** One bad day does not change your plans.
@@ -308,6 +302,12 @@
 **Step 9.** Talk to other founders regularly, and in busy seasons plan sleep and exercise like any other task.
 
 **Expected result:** You have support and protected recovery time.
+
+### Good to know
+
+**Support lines:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
+
+**US:** call or text 988 for the Suicide and Crisis Lifeline at any hour. See [988lifeline.org](https://988lifeline.org/).
 
 ## Lesson 28.8: Should you sell on Amazon?
 <!-- stage:grow -->
@@ -328,7 +328,7 @@
 
 **Expected result:** You have a selling model.
 
-**Step 4.** Register your trademark and enrol in Amazon's brand registry before you list.
+**Step 4.** Apply for your trademark and enrol in Amazon Brand Registry before you list. A pending trademark is often accepted.
 
 **Expected result:** Your brand is protected.
 

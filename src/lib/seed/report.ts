@@ -1,7 +1,7 @@
 /** Seeded weekly report (example data). */
 export const WEEKLY_REPORT = {
   week: "29 Sep to 5 Oct 2026",
-  headline: "Profit up 18% on last week. The new review block lifted product page conversion and two new hooks became Stars.",
+  headline: "Profit up 18% on last week. The new review block lifted product page conversion and two new hooks beat break-even.",
   scorecard: [
     { label: "Revenue", value: "$14,320", change: "+9%" },
     { label: "Contribution profit", value: "$3,410", change: "+18%" },
@@ -10,8 +10,8 @@ export const WEEKLY_REPORT = {
     { label: "New customers", value: "131", change: "+11%" },
   ],
   did: [
-    "Paused 6 Drain ads (approved Tue). About $70 a day moved to Star ads.",
-    "Raised Cold · Broad budget twice by 20% (approved Mon, Thu).",
+    "Flagged 6 ads above break-even. You paused them on Tuesday and moved about $70 a day to the best ads.",
+    "Suggested raising the Cold · Broad budget by 20%. You did it twice, on Monday and Thursday.",
     "Added photo reviews above the fold on Linen Shirt (you did it).",
     "Sent the Friday 'how to style' email: 1.6% click rate, $1,180 revenue.",
   ],

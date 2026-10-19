@@ -31,8 +31,9 @@ describe("site content engine", () => {
     expect(siteContent("2027-05-01").eventKey).toBe("mothers-day"); // 9 May 2027
     expect(featuredEvent("2026-06-25")?.event.key).toBe("eofy");
   });
-  it("mid-July deal days are the 2nd Tuesday of July", () => {
-    expect(featuredEvent("2026-07-14")?.event.key).toBe("summer-deal-days");
+  it("mid-year deal days use Amazon's announced dates, else the 2nd Tuesday of July", () => {
+    expect(CAL_EVENTS.find((e) => e.key === "summer-deal-days")?.span(2026)).toEqual({ start: "2026-06-23", end: "2026-06-26" }); // Prime Day 2026
+    expect(featuredEvent("2027-07-13")?.event.key).toBe("summer-deal-days");
   });
   it("tip rotates on Mondays and stays the same all week", () => {
     expect(weeklyTip("2026-03-02").key).toBe(weeklyTip("2026-03-08").key); // Mon..Sun

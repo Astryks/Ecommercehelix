@@ -24,7 +24,7 @@
 >
 > - **Creator:** A person who makes social content and can feature your product.
 > - **UGC:** Photos and videos made by real customers or creators instead of the brand.
-> - **Partnership ad:** An ad that runs from a creator's own account. People see their name instead of yours.
+> - **Partnership ad:** An ad that uses a creator's post or handle, so people see their name with yours. TikTok calls these Spark Ads.
 > - **Hook:** The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -73,7 +73,7 @@
 
 **Expected result:** Your list grows with problem-focused creators.
 
-**Step 3.** Use Meta and TikTok creator marketplaces. Filter by audience location, size and category. Check who makes content for rivals.
+**Step 3.** Use Instagram's creator marketplace (in Meta Business Suite) and TikTok One (formerly TikTok Creator Marketplace). Filter by audience location, size and category. Check who makes content for rivals.
 
 **Expected result:** You have 20 or more candidates.
 
@@ -90,7 +90,7 @@
 ## Lesson 19.3: Outreach and onboarding
 <!-- stage:attract -->
 
-**Why this matters:** Good outreach is personal, offers product first and makes the ongoing money clear early. Creator videos often take 4 to 8 weeks to arrive, so start early.
+**Why this matters:** Good outreach is personal, offers product first and makes the ongoing money clear early. Creator videos can take several weeks to arrive, so start early.
 
 **Step 1.** Send a personal first message that mentions a specific video of theirs (template below).
 
@@ -145,7 +145,7 @@
 | Partnership ad access | Permission to run ads from their account | Agreed in writing, for a set time |
 | Payment | A fee, product, commission, or a mix | Small creators often start with product plus a modest fee |
 | Changes | How many rounds of edits | 1 round |
-| Disclosure | A "Paid partnership" label or #ad | Always required by law |
+| Disclosure | A "Paid partnership" label plus #ad, easy to see | Required by law for paid or gifted posts (see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers) and [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf)) |
 
 ## Lesson 19.5: Affiliate programmes that do not cannibalise you
 <!-- stage:attract -->
@@ -156,7 +156,7 @@
 
 **Expected result:** The offer is live in your affiliate app.
 
-**Step 2.** Check the discount plus commission stays well under your break-even CPA (Module 1).
+**Step 2.** Check the discount plus commission stays well under your break-even CPA (Lesson 1.5).
 
 **Expected result:** Every affiliate sale still makes money.
 
@@ -172,24 +172,24 @@
 
 **Step 5.** Recruit in batches of 10 or more.
 
-**Expected result:** Ten small affiliates posting twice a month beat one big name posting once.
+**Expected result:** You have a group of small affiliates. Many small posters often beat one big name posting once.
 
 ## Lesson 19.6: Partnership ads (whitelisting)
 <!-- stage:attract -->
 
-**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account. They do not run from your brand page. People see a familiar person, not an ad. Meta reports a lower cost per customer when these ads sit inside normal sales campaigns. Treat that as a reason to test, not a promise.
+**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account. They do not run from your brand page. People see a familiar person, not an ad. Meta's own figures show lower average cost per purchase than standard ads. Treat that as a reason to test, not a promise.
 
 **Step 1.** Ask the creator's permission in writing and agree how long it lasts.
 
 **Expected result:** You have written permission with an end date.
 
-**Step 2.** Ask the creator to connect your ad account in Meta's partnership ad settings. On Instagram that is **Settings > Business tools > Branded content**.
-
-**Expected result:** Their account shows in Ads Manager as an identity you can use.
-
-**Step 3.** Choose content: posts that already did well for free, or new videos made for ads.
+**Step 2.** Choose content: posts that already did well for free, or new videos made for ads.
 
 **Expected result:** You have picked 2 to 5 creator posts.
+
+**Step 3.** Ask the creator for a partnership ad code for each post. In Instagram, they open the post, tap the three dots, then **Partnership label & ads**. Then they turn on **Get partnership ad code**.
+
+**Expected result:** You can paste each code in Ads Manager and run the post as a partnership ad.
 
 **Step 4.** Add them to your normal cold campaign as a new batch, not a separate campaign. Make the brand clear in the first five seconds.
 
@@ -197,27 +197,27 @@
 
 <!-- do:meta-draft -->
 
-**Step 5.** Judge them by the same rules as every other ad: cost per sale and hook rate (Lesson 6.12).
+**Step 5.** Judge them by the same rules as every other ad: cost per sale and hook rate (Lessons 6.11 and 6.12).
 
 **Expected result:** Creator ads earn their budget on the same terms.
 
-**Step 6.** Brief every creator on one page. Include the goal, audience, key message, must say, must not say, 3 hook ideas, deliverables, usage rights and deadline.
+**Step 6.** Check every partnership ad shows the **Paid partnership** label with the creator's name.
 
-**Expected result:** Each creator has a written brief before filming.
+**Expected result:** Every ad is clearly disclosed.
 
-**Step 7.** Offer simple terms, for example a 10% off code for their audience and 15% commission on new-customer sales.
+**Step 7.** Share results with the creator each month: what you spent, sales and the best hook.
 
-**Expected result:** Every creator has written terms.
+**Expected result:** The creator knows what works and makes more of it.
 
-**Step 8.** Get written permission. Then run the creator's video as a partnership ad from their account, inside your normal campaigns.
+**Step 8.** Before access ends, renew it in writing or pause their ads.
 
-**Expected result:** Partnership ads are live, often at a lower cost per new customer.
+**Expected result:** No ad runs past the agreed end date.
 
 <!-- do:meta-draft -->
 
-**Step 9.** Give affiliates (people paid per sale) a simple guide. Include product facts, angles that work and examples.
+**Step 9.** Offer creators whose ads win an ongoing deal, such as a fee plus affiliate commission (Lesson 19.5).
 
-**Expected result:** Affiliates have what they need to post without asking you.
+**Expected result:** Your best creators have a reason to keep making content.
 
 ## Lesson 19.7: Video ad formats
 <!-- stage:attract -->
@@ -269,7 +269,7 @@
 
 **Step 4.** After 7 days, check two numbers in Ads Manager. Hook rate is 3-second views divided by impressions. Hold rate is views to 50% (or ThruPlays) divided by 3-second views.
 
-**Expected result:** You know which opening works. Under 20% hook rate means the opening is not working.
+**Expected result:** You know which opening works. As a rule of thumb, a hook rate under 20% means the opening is weak.
 
 <!-- do:insights -->
 
@@ -350,7 +350,7 @@
 
 **Expected result:** Winners get fresh openings to test.
 
-**Watch out:** Label AI-made people or voices where required, never fake reviews, and check auto-enhance settings before launch.
+**Watch out:** Label AI-made people or voices where required, never fake reviews, and check auto-enhance settings before launch. Trending songs in the apps are often not cleared for ads. Use Meta Sound Collection or TikTok's [Commercial Music Library](https://ads.tiktok.com/help/article/commercial-music-library) instead. Each covers its own platform only.
 
 ## Lesson 19.12: The UGC brief
 <!-- stage:attract -->

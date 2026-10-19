@@ -48,9 +48,9 @@ export const LADDER: GoalStep[] = [
   { key: "ctrPct", bench: "1%+ solid · 1.2%+ strong", label: "Click-through rate (CTR)", short: "CTR", stage: "attract", better: "up", unit: "pct",
     plain: "Out of every 100 people who see your ad, how many click it.",
     good: "A common guide: 1% or more is solid and 1.2% or more is strong. Under 0.5% means the ad is not stopping people: try a new opening or a new message." },
-  { key: "atcPct", bench: "About 8%+", label: "Add-to-cart rate", short: "Add to cart", stage: "convert", better: "up", unit: "pct",
+  { key: "atcPct", bench: "About 6%+", label: "Add-to-cart rate", short: "Add to cart", stage: "convert", better: "up", unit: "pct",
     plain: "Out of every 100 visits, how many add something to the cart.",
-    good: "A common guide is around 8% or more. Lots of add-to-carts but few sales usually points at shipping costs or the checkout." },
+    good: "A common guide is around 6% or more, and many stores sit at 4 to 7%. Lots of add-to-carts but few sales usually points at shipping costs or the checkout." },
   { key: "crPct", bench: "2%+ solid · most stores 1 to 3%", label: "Conversion rate", short: "Conversion", stage: "convert", better: "up", unit: "pct",
     plain: "Out of every 100 visits, how many buy.",
     good: "A common guide: 2% or more is solid, and many stores sit between 1 and 3%. Small lifts here make every ad dollar work harder." },
@@ -58,7 +58,7 @@ export const LADDER: GoalStep[] = [
     plain: "How much a customer spends in one order, on average.",
     good: "No universal target. A higher AOV means you can afford to pay more to win each customer. Bundles, gifts and a free-shipping amount a little above your usual order help." },
   { key: "mer", bench: "MER 20 to 35% (ROAS about 2.9x to 5x)", label: "ROAS and MER", short: "MER", stage: "grow", better: "down", unit: "pct",
-    plain: "ROAS is sales per $1 of ads. MER is the share of all your sales that went on ads (the honest version, because no platform can overcount it).",
+    plain: "ROAS is sales per $1 of ads. MER is the share of all your sales that went on ads (the honest version, because no platform can overcount it). Helix shows MER as a %. Many tools show it as sales ÷ ad spend instead (30% is about 3.3x).",
     good: "Many growing stores keep MER between 20 and 35%, which is a blended ROAS of about 2.9x to 5x. Keep each platform's ROAS at least 20% above your break-even ROAS." },
   { key: "cpa", bench: "Below your break-even CPA", label: "Cost per acquisition (CPA)", short: "CPA", stage: "grow", better: "down", unit: "money",
     plain: "What you spend on ads, on average, for each order.",
@@ -66,9 +66,9 @@ export const LADDER: GoalStep[] = [
   { key: "contributionPct", bench: "15%+ healthy", label: "Contribution margin", short: "Contribution", stage: "grow", better: "up", unit: "pct",
     plain: "What is left of each $1 of sales after product, shipping, fees and ads. It pays your fixed bills and your profit.",
     good: "A common guide: 15% or more is healthy, 5 to 15% is thin, under 5% is risky." },
-  { key: "netProfit", bench: "Above $0 · healthy stores 10 to 20%", label: "Net profit", short: "Net profit", stage: "grow", better: "up", unit: "money",
+  { key: "netProfit", bench: "Above $0 · many aim for 10 to 20%", label: "Net profit", short: "Net profit", stage: "grow", better: "up", unit: "money",
     plain: "What the business actually made after everything, including rent, software, staff and your own wage.",
-    good: "Above $0 means the business pays for itself. Many healthy online stores make 10 to 20% net. This is the goal." },
+    good: "Above $0 means the business pays for itself. Many owners aim for 10 to 20% net as a rule of thumb. This is the goal." },
 ];
 
 export const GOAL_KEYS: (keyof Goals)[] = ["sessions", "ctrPct", "atcPct", "crPct", "aov", "cpa", "contributionPct", "netProfit"];

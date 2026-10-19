@@ -11,7 +11,7 @@ type Ratios = { cogs: number; shippingPerOrder: number; fees: number; fromHistor
 type Spec = { f: Field; label: string; where: string; example: string; int?: boolean; optional?: boolean; money?: boolean };
 
 const SHOPIFY: Spec[] = [
-  { f: "revenue", label: "Total sales", where: "Shopify > Analytics > Reports > Total sales over time", example: "2450", money: true },
+  { f: "revenue", label: "Gross sales", where: "Shopify > Analytics > Reports > Total sales over time, Gross sales column (not Total sales, which adds shipping and tax). Gross sales leaves tax out, so pick \"before tax\" in Settings if you copy it", example: "2450", money: true },
   { f: "orders", label: "Orders", where: "Same report, Orders column", example: "27", int: true },
   { f: "sessions", label: "Sessions", where: "Shopify > Analytics > Reports > Sessions over time", example: "1180", int: true },
   { f: "addToCarts", label: "Sessions with an add to cart", where: "Shopify > Analytics > Reports > Conversion over time", example: "80", int: true, optional: true },
@@ -27,10 +27,10 @@ const COSTS: Spec[] = [
   { f: "paymentFees", label: "Payment fees", where: "Shopify Payments payouts > Fees", example: "64", money: true, optional: true },
 ];
 const ADVANCED: Spec[] = [
-  { f: "discounts", label: "Discounts", where: "Total sales report, Discounts column", example: "140", money: true, optional: true },
-  { f: "refunds", label: "Refunds (returns)", where: "Total sales report, Returns column", example: "45", money: true, optional: true },
-  { f: "newCustomerOrders", label: "New-customer orders", where: "Reports > Customers over time > First-time", example: "16", int: true, optional: true },
-  { f: "newCustomerRevenue", label: "New-customer sales", where: "Reports > Sales by customer type", example: "1400", money: true, optional: true },
+  { f: "discounts", label: "Discounts", where: "Total sales over time report, Discounts column", example: "140", money: true, optional: true },
+  { f: "refunds", label: "Refunds (returns)", where: "Total sales over time report, Returns column", example: "45", money: true, optional: true },
+  { f: "newCustomerOrders", label: "New-customer orders", where: "Reports > New vs returning customers, New column", example: "16", int: true, optional: true },
+  { f: "newCustomerRevenue", label: "New-customer sales", where: "Reports > New vs returning customers, sales for new customers", example: "1400", money: true, optional: true },
   { f: "units", label: "Units sold", where: "Reports > Sales by product, Net quantity", example: "38", int: true, optional: true },
   { f: "adOther", label: "Other ad spend", where: "Pinterest, Snapchat and other ad accounts", example: "0", money: true, optional: true },
   { f: "otherMarketing", label: "Other marketing", where: "Creators, email tool, agency (per day)", example: "25", money: true, optional: true },
@@ -88,7 +88,7 @@ export function DailyInputForm({ defaultDate, recent, settings, ratios, taxRate,
   if (num("sessions") && num("orders") > num("sessions")) errors.push("Orders cannot be more than sessions. Check you copied yesterday's numbers.");
   if (num("sessions") && num("addToCarts") > num("sessions")) errors.push("Sessions with an add to cart cannot be more than sessions.");
   if (num("revenue") > 0 && !num("orders")) errors.push("Add the number of orders for those sales.");
-  if (num("orders") > 0 && !num("revenue")) errors.push("Add total sales for those orders.");
+  if (num("orders") > 0 && !num("revenue")) errors.push("Add gross sales for those orders.");
   const aov = num("orders") ? num("revenue") / num("orders") : 0;
   if (aov && (aov < 5 || aov > 2000)) warnings.push(`Average order of ${money(aov, 2)} looks unusual. Double-check sales and orders.`);
   if (num("cogs") > num("revenue") && num("revenue")) warnings.push("Product cost is more than sales. Is that right?");

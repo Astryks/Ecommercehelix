@@ -2,7 +2,7 @@ import { createHmac } from "node:crypto";
 import { describe, expect, it } from "vitest";
 import { aggregateOrders, normaliseShop, shopifyMode, verifyQueryHmac, verifyWebhookHmac } from "../src/lib/shopify/config";
 import { assertPaused, googleAdsMode, pausedCampaignOps, summarise } from "../src/lib/google-ads/config";
-import { AI_MONTHLY_CAP, aiAvailable, costUsd, gate, monthlyBudgetUsd } from "../src/lib/ai/config";
+import { AI_MONTHLY_CAP, aiAvailable, costUsd, gate, gatewayOptions, monthlyBudgetUsd } from "../src/lib/ai/config";
 import { auditFallback, helpFallback } from "../src/lib/ai/fallbacks";
 
 describe("shopify", () => {
@@ -67,6 +67,9 @@ describe("google ads", () => {
 });
 
 describe("ai layer", () => {
+  it("asks the gateway for providers that do not train on prompts (privacy, terms and FAQ rely on it)", () => {
+    expect(gatewayOptions("u1", "help")).toEqual({ user: "u1", tags: ["feature:help"], disallowPromptTraining: true });
+  });
   it("is off without gateway auth or with the kill switch", () => {
     expect(aiAvailable({})).toBe(false);
     expect(aiAvailable({ AI_GATEWAY_API_KEY: "x" })).toBe(true);

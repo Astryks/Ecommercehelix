@@ -78,13 +78,13 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Step 2.** Create the campaign for this job.
 
-1. In Ads Manager, click **Create**.
+1. In Ads Manager, click **+ Create**.
 2. Choose the goal listed for this job. For new buyers, that's **Sales**.
-3. Set what it aims for. For new buyers, that's **Purchase**.
+3. In the ad set, set the conversion event it aims for. For new buyers, that's **Purchase**.
 
 **Expected result:** The campaign's objective and conversion event match the table.
 
-**Watch out:** Aim for the deepest step that happens at least about 25 to 50 times a week per campaign. With fewer, the platform cannot learn and results jump around.
+**Watch out:** Meta's learning phase usually needs about 50 results a week. Aim for the deepest step that happens at least about 25 to 50 times a week per campaign. With fewer, results jump around (see [Meta: the learning phase](https://www.facebook.com/business/help/112167992830700)).
 
 <!-- do:meta-draft -->
 
@@ -137,7 +137,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Each audience temperature gets its planned share.
 
-**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget or ad set budget, or a cost cap (a hard limit on cost per purchase). Or how many people you leave out, or a 10 to 20% cap on spend to past buyers. Or landing page views for very cold tests.
+**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget or ad set budget, or a cost per result goal (an average cost per sale Meta aims for). Or how many people you leave out, or a 10 to 20% cap on spend to past buyers. Or landing page views for very cold tests.
 
 **Expected result:** You are running one setup test with a clear start and end date.
 
@@ -178,9 +178,9 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** A lookalike audience is ready for a test ad set.
 
-**Step 4.** In **Ad account settings > Audience segments**, set your engaged audience and existing customers.
+**Step 4.** In **Advertising settings > Audience segments** (under **All tools**), set your engaged audience and existing customers.
 
-**Expected result:** Ads Manager can report how much spend reaches new people.
+**Expected result:** Ads Manager can break down results into new, engaged and existing customers. It only counts from the day you save.
 
 **Step 5.** Leave staff and past buyers out of cold campaigns where it makes sense. Give each new country its own campaign once you can afford it.
 
@@ -191,11 +191,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Why this matters:** Budget decides how fast the platform learns and how much you can lose while it does. A few rules stop the classic mistakes of starving campaigns or resetting them.
 
-**Step 1.** Set each new campaign's daily budget to 2 to 3 times your target CPA. For a $30 target CPA, that is $60 to $90 a day.
+**Step 1.** As a rule of thumb, set each new campaign's daily budget to 2 to 3 times your target CPA. For a $30 target CPA, that is $60 to $90 a day.
 
 **Expected result:** The campaign can get enough purchases to learn.
 
-**Step 2.** When a campaign is working, raise its budget by no more than 20% a day.
+**Step 2.** When a campaign is working, raise its budget by no more than about 20% a day. Meta says big budget changes can restart learning, and 20% is a common guide.
 
 **Expected result:** Learning is not reset by budget jumps.
 
@@ -299,8 +299,9 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 **Step 1.** Make a "Creative" view in Ads Manager.
 
 1. Click **Columns**, then **Customise columns**.
-2. Tick: hook rate, hold rate, outbound CTR, CPM and cost per outbound click. Also tick add to cart, cost per purchase, ROAS, frequency and reach.
-3. Tick **Save as preset**, name it "Creative" and click **Apply**.
+2. Tick: 3-second video plays, ThruPlays, outbound CTR, CPM and cost per outbound click. Also tick add to cart, cost per purchase, ROAS, frequency and reach.
+3. Hook rate and hold rate are not built-in columns. Click **Create custom metric** and build each one with the formulas in the table below.
+4. Tick **Save as preset**, name it "Creative" and click **Apply**.
 
 **Expected result:** You see all the metrics in the table below in one view.
 
@@ -319,6 +320,8 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 <!-- do:insights -->
 
 ### Good to know
+
+The "what good looks like" ranges are common rules of thumb, not Meta figures. Your own past results are the best guide.
 
 | Metric | What it tells you | What good looks like |
 | --- | --- | --- |
@@ -384,7 +387,7 @@ Read the last 3 days and the last 7 days, always with the same attribution setti
 
 **Expected result:** Searches for your brand show your own ad first.
 
-**Step 3.** Give any new Google campaign about 2 weeks to learn and 4 weeks before you judge it. Spend $50 a day or more.
+**Step 3.** Give any new Google campaign about 2 weeks to learn before you change it. Judge it after 4 weeks, or 6 weeks for Performance Max, as Google advises (see [Google: Performance Max tips](https://support.google.com/google-ads/answer/11385582)). As a rough guide, spend $50 a day or more.
 
 **Expected result:** Each new campaign has a judge date in your calendar.
 
@@ -400,7 +403,7 @@ Read the last 3 days and the last 7 days, always with the same attribution setti
 | Non-brand search | Control over high-intent search words | At most 5 keywords per ad group. A shared list of blocked words (negative keywords). Up to 15 headlines. |
 | Competitor search | Reach people comparing you with competitors | Honest comparison ads. Watch costs closely. |
 | Demand Gen and YouTube | Visual ads to help people discover you | Judge with view-through results (people who saw the ad and bought later) |
-| Local | Visits to a physical shop | Only if you have a shop |
+| Performance Max with store goals | Visits to a physical shop | Only if you have a shop. This replaced Local campaigns ([Google: Local campaign upgrade](https://support.google.com/google-ads/answer/11576060)). |
 
 ## Lesson 6.14: Promotional and seasonal campaigns
 <!-- stage:attract -->

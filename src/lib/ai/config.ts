@@ -16,6 +16,18 @@ export const AI_MONTHLY_CAP: Record<PlanId, number> = { free: 3, starter: 50, gr
 
 export type AiKind = "audit" | "adcopy" | "help";
 
+/**
+ * AI Gateway routing options sent with every call (`providerOptions.gateway`).
+ * disallowPromptTraining: the gateway only routes to providers that do not train on prompts or answers,
+ * and fails the call (Helix then shows its standard advice) if none is available. Free on all gateway plans.
+ * For Gemini both gateway providers qualify: "google" (Gemini API, paid terms) and "vertex" (Vertex AI).
+ * https://vercel.com/docs/ai-gateway/security-and-compliance/disallow-prompt-training
+ * It is not enforced on BYOK keys, so do not add a free-tier Google AI Studio key as BYOK.
+ */
+export function gatewayOptions(userId: string, kind: AiKind) {
+  return { user: userId, tags: [`feature:${kind}`], disallowPromptTraining: true };
+}
+
 /** Global kill-switch: AI_DISABLED=1 turns AI off; AI_MONTHLY_BUDGET_USD (default 25) stops all calls once the month's logged spend reaches it. */
 export function aiAvailable(env: Record<string, string | undefined> = process.env): boolean {
   if (env.AI_DISABLED === "1") return false;

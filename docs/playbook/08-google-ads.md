@@ -55,13 +55,19 @@
 
 **Watch out:** Check this monthly. Other actions such as page views sometimes become primary and inflate results.
 
-**Step 4.** In Shopify's **Google & YouTube** app, connect Google Analytics 4 (GA4). Then in Google Ads, open **Admin > Linked accounts** (sometimes **Product links**) and link GA4.
+**Step 4.** Connect Google Analytics 4 (GA4) to Shopify and Google Ads.
 
-**Expected result:** GA4 shows purchases, and Google Ads lists GA4 as linked.
+1. In Shopify's **Google & YouTube** app, connect GA4.
+2. In Google Ads, click **Tools**, then **Data manager**, then **+ Connect product**.
+3. Choose **Google Analytics (GA4) & Firebase** and pick your GA4 property.
+
+**Expected result:** GA4 shows purchases, and Google Ads lists GA4 as linked (see [Google: link Google Ads and Analytics](https://support.google.com/google-ads/answer/7519537)).
 
 **Step 5.** In **Tools > Shared library > Audience manager**, build site visitors, buyers and your email list (customer match).
 
 **Expected result:** Three audiences show in Audience manager.
+
+**Watch out:** Google only accepts customer lists from accounts with a good policy and payment history. Some uses also need more ad spend (see [Google: Customer Match policy](https://support.google.com/adspolicy/answer/6299717)).
 
 **Step 6.** In Google Ads open **Recommendations**, click **Auto-apply** (top right) and untick every auto-applied recommendation.
 
@@ -92,16 +98,16 @@
 
 **Expected result:** Products can be grouped and bid on by label.
 
-**Step 5.** In Merchant Center open **Products > Diagnostics** and fix every error.
+**Step 5.** In Merchant Center open **Products**, then the **Needs attention** tab, and fix every issue.
 
-**Expected result:** The diagnostics page shows zero errors.
+**Expected result:** The **Needs attention** tab shows no errors.
 
 ## Lesson 8.3: Campaign structures
 <!-- stage:attract -->
 
 **Why this matters:** The right Google setup depends on your size. Starting simple, then adding campaigns as you grow, keeps each campaign fed with enough data.
 
-**Step 1.** If you are small, run brand search plus one Shopping campaign or feed-only Performance Max. In Performance Max (PMax), Google decides where to show your products across Search, Shopping, YouTube and Gmail.
+**Step 1.** If you are small, run brand search plus one Shopping campaign or feed-only Performance Max. In Performance Max (PMax), Google decides where to show your products across Search, Shopping, YouTube, Gmail and more.
 
 **Expected result:** You have two campaigns: brand search and a product campaign.
 
@@ -140,7 +146,7 @@
 
 **Expected result:** Each keyword has a volume and competition level.
 
-**Step 3.** Group keywords by theme into small ad groups of 5 keywords or fewer.
+**Step 3.** Group keywords by theme into small ad groups. A common rule of thumb is a handful of close keywords each.
 
 **Expected result:** Each ad group is tightly themed.
 
@@ -153,9 +159,11 @@
 
 **Why this matters:** Search ads are short, so every line has to earn its place. Mixing benefit, offer, proof and urgency lets Google find the best combination.
 
-**Step 1.** Write up to 15 headlines. Mix product plus benefit, the offer, proof (reviews, years in business), urgency and your brand. Pin 1 or 2 so they always show.
+**Step 1.** Write up to 15 headlines. Mix product plus benefit, the offer, proof (reviews, years in business), urgency and your brand. Pin 1 or 2 only if they must always show.
 
 **Expected result:** The ad strength meter shows "Good" or "Excellent".
+
+**Watch out:** Pinning lowers ad strength, so pin as little as you can (see [Google: ad strength](https://support.google.com/google-ads/answer/9921843)).
 
 **Step 2.** Write descriptions with reasons to buy, shipping and returns, and a call to action.
 
@@ -170,7 +178,7 @@
 
 **Why this matters:** Target ROAS tells Google how many dollars of sales you want for each $1 of ads. Set it from your break-even, not a guess, and change it gently.
 
-**Step 1.** Work out break-even ROAS: 1 divided by (1 minus VCR). With VCR at 45%, that is about 1.82.
+**Step 1.** Work out break-even ROAS: 1 divided by (1 minus VCR, your order costs as a share of sales). With VCR at 45%, that is about 1.82.
 
 **Expected result:** You have your break-even ROAS.
 
@@ -180,7 +188,7 @@
 
 **Expected result:** Google bids to a target that leaves profit.
 
-**Step 3.** Change targets in steps of about 10% at a time, and recheck results after each Google bidding update.
+**Step 3.** Change targets in small steps, about 10% at a time (a common rule of thumb). Wait a week or two before the next change.
 
 **Expected result:** Bidding stays stable while you tune it.
 
@@ -195,7 +203,7 @@
 
 **Step 2.** Open the campaign's **Customer acquisition** setting. Choose "Bid higher for new customers" or "Only bid for new customers".
 
-**Expected result:** The campaign favours new buyers.
+**Expected result:** The campaign favours new buyers. Bidding higher needs value-based bidding and a Purchase goal (see [Google: customer lifecycle goals](https://support.google.com/google-ads/answer/12080169)).
 
 **Watch out:** Accept a lower ROAS on new-customer campaigns only if those customers come back and buy again.
 
@@ -214,13 +222,15 @@
 
 **Step 2.** Check **Performance Max insights** for which products, searches and assets do well.
 
-**Expected result:** You know your top PMax products and themes.
+**Expected result:** You know your top Performance Max products and themes.
+
+**Watch out:** Performance Max now has its own search terms and channel reports. It also accepts negative keywords, so block junk there too (see [Google: more control in Performance Max](https://support.google.com/google-ads/answer/16451273)).
 
 **Step 3.** Look for campaigns marked "Limited by budget"; if they hit your target, raise the budget by about 20%.
 
 **Expected result:** Profitable campaigns are not held back.
 
-**Step 4.** Compare brand and non-brand spend, then fix any new errors in **Merchant Center > Diagnostics**.
+**Step 4.** Compare brand and non-brand spend. Then fix any new issues in Merchant Center under **Products > Needs attention**.
 
 **Expected result:** You know how much spend finds new searchers, and the feed is clean.
 
@@ -235,7 +245,7 @@
 ## Lesson 8.9: Demand Gen and YouTube
 <!-- stage:attract -->
 
-**Why this matters:** Demand Gen campaigns show short videos and images across YouTube, Discover (the Google app feed) and Gmail. Your best social videos often work here with little change.
+**Why this matters:** Demand Gen campaigns show videos and images on YouTube (including Shorts) and Discover (the Google app feed). They also show on Gmail and the Display Network (see [Google: about Demand Gen](https://support.google.com/google-ads/answer/13695777)). Your best social videos often work here with little change.
 
 **Step 1.** Export your 3 best social videos in both vertical and horizontal versions.
 
@@ -258,10 +268,10 @@
 
 **Step 1.** Tell Google a sale is coming.
 
-1. Click **Tools**, then **Budgets and bidding**, then **Seasonality adjustments** (Google may label it **Adjustments**, then **Seasonal**).
-2. Add a seasonality adjustment for the first 1 to 2 days of the sale.
+1. Click **Tools**, then **Budgets and bidding**, then **Adjustments**, then the **Seasonal** tab (older screens say **Seasonality adjustments**).
+2. Add a new adjustment and set its dates to cover the sale. It works best for short sales of 1 to 7 days.
 3. Set the expected conversion rate change to what you saw in past sales. Google's own example is +50% for a 3-day sale.
-4. Set the end date to the last day of the sale. Google goes back to normal by itself.
+4. Save it. When the dates end, Google goes back to normal by itself (see [Google: seasonality adjustments](https://support.google.com/google-ads/answer/10369906)).
 
 **Expected result:** The adjustment shows as scheduled for the sale dates.
 
@@ -278,7 +288,7 @@
 ## Lesson 8.11: AI-driven changes in 2026
 <!-- stage:attract -->
 
-**Why this matters:** In 2026 Google turns on more AI features by itself. These include AI Max for Search and Shopping, and AI-written ad text. Google may also pick the landing page and show ads in AI Mode answers. They can help, but only if you check what they do.
+**Why this matters:** In 2026 Google turns on more AI features by itself. These include AI Max for Search and Shopping, and AI-written ad text. Google may also pick the landing page and show ads in AI Mode answers. From September 2026, Google began moving some Search campaigns to AI Max automatically (see [Google: DSA upgrade to AI Max](https://blog.google/products/ads-commerce/dsa-upgrade-to-ai-max-2026/)). These features can help, but only if you check what they do.
 
 **Step 1.** Open **Campaigns** and review any campaign Google upgraded automatically.
 
@@ -309,7 +319,7 @@
 
 **Step 2.** Choose your country, time zone and currency carefully. Untick strategist calls and promo emails, then click **Submit** or **Continue**.
 
-**Expected result:** The account is created. Time zone and currency cannot be changed later, so double-check them first.
+**Expected result:** The account is created. Time zone and currency cannot be changed later, so double-check them first (see [Google: time zone and currency](https://support.google.com/google-ads/answer/9842104)).
 
 **Step 3.** Add a payment method under **Billing** (the menu on the left, or the tools icon on older screens).
 

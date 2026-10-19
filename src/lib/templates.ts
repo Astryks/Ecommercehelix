@@ -12,11 +12,11 @@ export const TEMPLATES: Template[] = [
   },
   {
     id: "sale-announcement", stage: "convert", title: "Sale email", when: "The day a sale starts.",
-    body: `Subject: It's on: [x]% off [what] until [day]\n\nHi [first name],\n\nOur [event] sale starts now. Take [x]% off [what] with code [CODE] until [day and time].\n\n[One line on your best seller and why people love it.]\n\n[Button: Shop the sale]\n\nWhen it ends, it ends.\n[store name]`,
+    body: `Subject: It's on: [x]% off [what] until [day]\n\nHi [first name],\n\nOur [event] sale starts now. Take [x]% off [what] with code [CODE] until [day and time].\n\n[One line on your best seller and why people love it.]\n\n[Button: Shop the sale]\n\nWhen it ends, it ends.\n[store name]\n\n[Footer: your business name, how to contact you and an unsubscribe link. Most email platforms add these.]`,
   },
   {
     id: "last-chance", stage: "convert", title: "Last-chance email", when: "The final day of a sale.",
-    body: `Subject: Last day for [x]% off\n\nHi [first name],\n\nA quick note: our sale ends tonight at [time].\n\nCode [CODE] still works until then.\n\n[Button: Shop before it ends]\n\n[store name]`,
+    body: `Subject: Last day for [x]% off\n\nHi [first name],\n\nA quick note: our sale ends tonight at [time].\n\nCode [CODE] still works until then.\n\n[Button: Shop before it ends]\n\n[store name]\n\n[Footer: your business name, how to contact you and an unsubscribe link. Most email platforms add these.]`,
   },
   {
     id: "announcement-bar", stage: "convert", title: "Announcement bar lines", when: "The thin strip at the top of your store.",
@@ -24,14 +24,14 @@ export const TEMPLATES: Template[] = [
   },
   {
     id: "welcome-email", stage: "grow", title: "Welcome email", when: "Sent right after someone joins your list.",
-    body: `Subject: Welcome to [store name]\n\nHi [first name],\n\nThanks for joining us. Here is what we are about: [one line].\n\nAs a thank-you, here is [x]% off your first order: [CODE].\n\n[Button: Start shopping]\n\nReply any time. A real person reads every email.\n[your name]`,
+    body: `Subject: Welcome to [store name]\n\nHi [first name],\n\nThanks for joining us. Here is what we are about: [one line].\n\nAs a thank-you, here is [x]% off your first order: [CODE].\n\n[Button: Start shopping]\n\nReply any time. A real person reads every email.\n[your name]\n\n[Footer: your business name, how to contact you and an unsubscribe link. Most email platforms add these.]`,
   },
   {
     id: "review-request", stage: "grow", title: "Ask for a review", when: "About 7 to 10 days after an order arrives.",
-    body: `Subject: How is your [product]?\n\nHi [first name],\n\nYour [product] should have arrived by now. Would you leave a short review? It takes a minute and helps other people choose.\n\n[Button: Leave a review]\n\nThank you,\n[store name]`,
+    body: `Subject: How is your [product]?\n\nHi [first name],\n\nYour [product] should have arrived by now. Would you leave a short review? It takes a minute and helps other people choose.\n\n[Button: Leave a review]\n\nThank you,\n[store name]\n\n[Footer: your business name, how to contact you and an unsubscribe link. Most email platforms add these.]`,
   },
   {
     id: "thank-you", stage: "grow", title: "Thank-you after a sale", when: "The week after a big sale ends.",
-    body: `Subject: Thank you\n\nHi [first name],\n\nThank you for being part of our [event] sale. It was our [biggest/busiest] week yet.\n\nYour order is on its way. If anything is not right, just reply and we will fix it.\n\n[store name]`,
+    body: `Subject: Thank you\n\nHi [first name],\n\nThank you for being part of our [event] sale. It was our [biggest/busiest] week yet.\n\nYour order is on its way. If anything is not right, just reply and we will fix it.\n\n[store name]\n\n[Footer: your business name, how to contact you and an unsubscribe link. Most email platforms add these.]`,
   },
 ];

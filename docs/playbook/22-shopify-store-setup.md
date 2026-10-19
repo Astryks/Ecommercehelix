@@ -25,8 +25,8 @@
 > - **Theme:** The design template for your Shopify store. It controls how every page looks.
 > - **Domain:** Your store's web address, like yourbrand.com.
 > - **Variant:** One option of a product, like a size or colour, with its own stock and price.
-> - **GST:** Goods and services tax. It is a percentage set by each country (often 10% to 15%), added to most sales once you register.
-> - **Sales tax:** In the US, a tax set by each state (and some cities). The seller collects it at checkout.
+> - **GST:** Goods and services tax. Each country sets its own rate, such as 10% (Australia) or 15% (New Zealand). Registered businesses add it to most sales.
+> - **Sales tax:** In the US, a tax set by most states (and many local areas) that the seller collects at checkout.
 > - **Test order:** A pretend order you place yourself to check payments, emails and tracking work.
 >
 > All words are explained in the [glossary](../glossary.md).
@@ -53,15 +53,15 @@
 
 **Expected result:** You have one launch country.
 
-**Step 4.** Pick the cheapest Shopify plan that has the features you need (check [Shopify pricing](https://www.shopify.com/pricing)).
+**Step 4.** Pick the cheapest Shopify plan that has the features you need. Most new stores start on Basic (check [Shopify pricing](https://www.shopify.com/pricing)).
 
-**Expected result:** You know your monthly platform cost.
+**Expected result:** You know your monthly platform cost. In October 2026, Basic was US$39 or A$56 a month, billed monthly.
 
 **Step 5.** Gather your logo, 4 to 8 photos per product and your returns rule. Also your ABN or EIN (US, if you have one) and a business bank account.
 
 **Expected result:** Everything you need to build is in one folder.
 
-**Watch out:** Outside the US: if you expect $75,000 or more in sales a year, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
+**Watch out:** Outside the US: the ATO's GST limit is $75,000 in sales a year. If you may reach it, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
 
 ## Lesson 22.2: Domain and email
 <!-- stage:convert -->
@@ -72,7 +72,7 @@
 
 **Expected result:** The domain shows as connected in Settings.
 
-**Watch out:** Outside the US: a .com.au needs an ABN, and many brands own both .com.au and .com. US: .com is the normal choice.
+**Watch out:** Outside the US: a .com.au needs a local business link, usually an ABN or ACN (see [auDA: .com.au](https://www.auda.org.au/au-domain-names/the-different-au-domain-names/com-au-domain-names/)). Many brands own both .com.au and .com. US: .com is the normal choice.
 
 **Step 2.** Set it as the primary domain so myshopify.com redirects to it.
 
@@ -91,7 +91,7 @@
 
 **Why this matters:** The theme is the design of your store. A fast, simple theme beats a fancy slow one. Always edit a copy, so you never break the live store.
 
-**Step 1.** In **Online Store > Themes**, start with a free Shopify theme such as Dawn (see [Shopify: themes](https://help.shopify.com/en/manual/online-store/themes)).
+**Step 1.** In **Online Store > Themes**, start with a free Shopify theme such as Horizon or Dawn (see [Shopify: themes](https://help.shopify.com/en/manual/online-store/themes)).
 
 **Expected result:** A fast, supported theme is installed.
 
@@ -184,7 +184,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: adding products](https://help.shopify.com/en/manual/products/add-update-products)
 <!-- /guide:shopify-4-add-product -->
 
-**Extra details on every page:** Shopify lets you add your own fields to products, called metafields. Use them for things like care steps, sizing or ingredients. Then your theme shows them in the same spot on every product page. Find them under **Settings**, then **Custom data**.
+**Extra details on every page:** Shopify lets you add your own fields to products, called metafields. Use them for things like care steps, sizing or ingredients. Then your theme shows them in the same spot on every product page. Find them under **Settings**, then **Metafields and metaobjects** (see [Shopify: metafields](https://help.shopify.com/en/manual/custom-data/metafields)).
 
 ## Lesson 22.6: Variants and inventory
 <!-- stage:convert -->
@@ -228,7 +228,7 @@
 
 **Expected result:** Your first products have real reviews.
 
-**Watch out:** Never write fake reviews or pay for positive ones. Both breach consumer law in most countries.
+**Watch out:** Never write fake reviews or pay for positive ones. Both breach consumer law in most countries (see [FTC: fake reviews rule](https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials)).
 
 **Step 4.** Reply to negative reviews politely and fix the problem.
 
@@ -266,7 +266,7 @@
 ## Lesson 22.9: Shipping zones, rates and a free-shipping amount
 <!-- stage:convert -->
 
-**Why this matters:** Surprise shipping costs are one of the main reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery ranges fix most of it.
+**Why this matters:** Surprise extra costs, like shipping, are the top reason people leave at checkout (see [Baymard: cart abandonment](https://baymard.com/lists/cart-abandonment-rate)). Simple rates, a free shipping amount and honest delivery ranges fix most of it.
 
 **Step 1.** In **Settings > Shipping and delivery**, create a zone for your home country.
 
@@ -276,7 +276,7 @@
 
 **Expected result:** Checkout shows two clear options.
 
-**Step 3.** Set free shipping at about 1.2 to 1.4 times your average order. Show it in the promo bar and near Add to cart ("Free shipping over $X").
+**Step 3.** A common rule of thumb is to set free shipping at 1.2 to 1.4 times your average order. Show it in the promo bar and near Add to cart ("Free shipping over $X").
 
 **Expected result:** Shoppers see how close they are to free shipping.
 
@@ -284,7 +284,7 @@
 
 **Expected result:** Checkout shows a clear price and delivery range.
 
-**Watch out:** Outside the US: compare the national post and couriers, and set a separate rate for remote areas if needed. US: compare USPS, UPS and FedEx in Shopify Shipping. Add international zones only once home works.
+**Watch out:** Outside the US: compare the national post and couriers, and set a separate rate for remote areas if needed. US: compare USPS, UPS, FedEx and DHL Express in Shopify Shipping. Add international zones only once home works.
 
 ### Good to know
 
@@ -297,13 +297,13 @@
 ## Lesson 22.10: Taxes: GST and sales tax basics
 <!-- stage:convert -->
 
-**Why this matters:** Tax set up wrong either costs you money or breaks the law. In many countries, you must register for GST once sales reach $75,000 a year. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
+**Why this matters:** Tax set up wrong either costs you money or breaks the law. Under the ATO's rules, you must register for GST once sales reach $75,000 a year. Other countries set their own limits. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
 
 **Step 1.** Outside the US: check your GST turnover (this month plus the last 11). Has it reached $75,000, or will it in the next 12 months? If so, register within 21 days (see [ATO: registering for GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst)).
 
 **Expected result:** You know whether you must register.
 
-**Step 2.** Once registered for GST: in Shopify, go to **Settings > Taxes and duties**. Turn on **Include sales tax in product price and shipping rate** (see [Shopify: taxes](https://help.shopify.com/en/manual/taxes/australia)).
+**Step 2.** Once registered for GST: in Shopify, go to **Settings > Taxes and duties**. Turn on **Include sales tax in product price and shipping rate** (see [Shopify: tax-inclusive prices](https://help.shopify.com/en/manual/taxes/include-exclude-taxes)).
 
 **Expected result:** Prices shown to local customers include GST.
 
@@ -340,13 +340,13 @@
 
 **Step 1.** In **Settings > Payments**, turn on Shopify Payments if available in your country (see [Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments)).
 
-**Expected result:** Cards are accepted with lower total fees.
+**Expected result:** Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).
 
 **Step 2.** Turn on Shop Pay, Apple Pay and Google Pay, and add PayPal (see [Shopify: PayPal](https://help.shopify.com/en/manual/payments/paypal)).
 
 **Expected result:** Checkout shows express buttons and PayPal.
 
-**Step 3.** Think about one buy now pay later option. Use Afterpay or Shop Pay Installments in the US (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
+**Step 3.** Think about one buy now pay later option. Afterpay works in many countries. Shop Pay Installments works in the US, Canada and the UK (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
 
 **Expected result:** Shoppers can pay in parts. Check the fee, which is higher than a card fee.
 
@@ -385,17 +385,13 @@
 
 **Expected result:** Your email marketing is compliant.
 
-### Good to know
-
-> **General information, not legal advice.**
-
 **Step 5.** Create a sale terms page listing exclusions and dates.
 
 **Expected result:** Shoppers can check sale rules in one click.
 
-**Step 6.** Write your returns policy in plain words and list shipping times for each region (Shopify **Settings > Policies**).
+**Step 6.** Add a short returns and delivery summary near Add to cart on product pages. Link it to the full policies.
 
-**Expected result:** Returns and shipping times are clear and linked in the footer.
+**Expected result:** Shoppers see returns and delivery times before checkout.
 
 **Step 7.** Make contact options easy to find and build a help centre with the top 10 questions.
 
@@ -404,6 +400,10 @@
 **Step 8.** Set up automatic answers for order status and common questions in your help desk or chat app.
 
 **Expected result:** "Where is my order?" gets an instant answer.
+
+### Good to know
+
+> **General information, not legal advice.**
 
 ## Lesson 22.13: Essential apps (and only those)
 <!-- stage:convert -->
@@ -431,7 +431,7 @@
 
 **Why this matters:** A test order proves that payments, emails, stock and tracking all work together. It is the last step before real customers.
 
-**Step 1.** Turn on test mode for Shopify Payments, or use the Bogus Gateway (see [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders)).
+**Step 1.** In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test gateway, called Bogus Gateway (see [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders)).
 
 **Expected result:** Checkout accepts test card numbers.
 
@@ -468,7 +468,7 @@
 
 **Expected result:** Every row is ticked.
 
-**Step 2.** Remove the store password in **Online Store > Preferences**.
+**Step 2.** Remove the store password: in **Online Store**, switch the store from **Private** to **Public** (see [Shopify: password page](https://help.shopify.com/en/manual/online-store/themes/password-page)). The first time, the button says **Launch store**.
 
 **Expected result:** Anyone can visit the store.
 

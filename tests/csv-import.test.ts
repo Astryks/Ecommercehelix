@@ -29,6 +29,17 @@ describe("csv import", () => {
     expect(rollUp(t.slice(1), guessMapping(t[0], s), s)[0]).toMatchObject({ date: "2026-10-15", orders: 3, revenue: 300 });
     expect(toYmd("10/15/2026")).toBe("2026-10-15");
   });
+  it("TikTok export with old or new purchase column names", () => {
+    for (const col of ["Total complete payment value", "Total purchase value"]) {
+      const t = parseTable(`By Day,Cost,${col}\n2026-10-01,40,120\n`);
+      const s = detectSource(t[0]);
+      expect(s).toBe("tiktok");
+      expect(rollUp(t.slice(1), guessMapping(t[0], s), s)[0]).toEqual({ date: "2026-10-01", adTiktok: 40, tiktokRevenue: 120 });
+    }
+  });
+  it("TikTok purchase-value header is detected without a date column named By Day", () => {
+    expect(detectSource(["Date", "Cost", "Total purchase value"])).toBe("tiktok");
+  });
   it("dates in words keep their day in any time zone", () => {
     expect(toYmd("Oct 11 2026")).toBe("2026-10-11");
     expect(toYmd("October 1, 2026")).toBe("2026-10-01");

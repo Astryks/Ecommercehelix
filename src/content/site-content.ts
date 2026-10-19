@@ -12,15 +12,15 @@ const SEASON = (anchor: string, label: string): ContentLink => ({ label, href: `
 const PROMO: ContentLink = { label: "Run a sale that still makes money", href: "/learn/13-promotions-and-sales" };
 
 export const EVENT_CONTENT: Record<string, EventContent> = {
-  bfcm: { hero: "Black Friday is the biggest week of the year. Helix gives you a simple plan, one step a day.", lesson: SEASON("", "Your Black Friday plan, step by step"), templates: ["creator-outreach", "sale-announcement", "last-chance"] },
-  christmas: { hero: "Christmas is coming. Helix tells you when to order stock, when to stop shipping and what to post.", lesson: SEASON("", "Get ready for Christmas"), templates: ["sale-announcement", "announcement-bar", "thank-you"] },
+  bfcm: { hero: "For many stores, Black Friday is the biggest week of the year. Helix gives you a simple plan, one step at a time.", lesson: SEASON("", "Your Black Friday plan, step by step"), templates: ["creator-outreach", "sale-announcement", "last-chance"] },
+  christmas: { hero: "Christmas is coming. Helix reminds you to check carrier cut-offs, build gift bundles and set up gift cards.", lesson: SEASON("", "Get ready for Christmas"), templates: ["sale-announcement", "announcement-bar", "thank-you"] },
   "boxing-day": { hero: "Boxing Day buyers want a deal. Plan one simple offer that still leaves you profit.", lesson: PROMO, templates: ["sale-announcement", "last-chance"] },
   "new-year": { hero: "New year, fresh start. Set three small goals for your store and Helix tracks them daily.", lesson: { label: "Set your monthly goals", href: "/dashboard/goals" }, templates: ["thank-you", "welcome-email"] },
   valentines: { hero: "Valentine's Day is a gift rush. Helix helps you pick a gift offer and the right cut-off date.", lesson: PROMO, templates: ["creator-outreach", "sale-announcement"] },
   "mothers-day": { hero: "Mother's Day is a big gift day. Start planning your offer and creator posts now.", lesson: PROMO, templates: ["creator-outreach", "gifting-note", "sale-announcement"] },
   "fathers-day": { hero: "Father's Day is coming. A simple gift guide and one email can bring in extra sales.", lesson: PROMO, templates: ["sale-announcement", "announcement-bar"] },
   eofy: { hero: "End of financial year: a good time for a clear-out sale and to tidy your numbers.", lesson: { label: "Get ready for tax time", href: "/learn/27-accounting-bookkeeping-tax-time" }, templates: ["sale-announcement", "last-chance"] },
-  "summer-deal-days": { hero: "Big online deal days are coming in July. Run your own small offer at the same time.", lesson: PROMO, templates: ["announcement-bar", "sale-announcement"] },
+  "summer-deal-days": { hero: "Big online deal days like Prime Day pull shoppers online. Run your own small offer at the same time.", lesson: PROMO, templates: ["announcement-bar", "sale-announcement"] },
   "back-to-school": { hero: "Back to school means busy parents shopping online. Make your store quick and clear.", lesson: { label: "Make your store easy to buy from", href: "/learn/09-website-and-cro" }, templates: ["announcement-bar", "welcome-email"] },
   halloween: { hero: "Halloween is close. A fun theme on your store and one post can lift sales.", lesson: SEASON("", "Dress your store for a season"), templates: ["announcement-bar"] },
   easter: { hero: "Easter long weekend: plan your shipping cut-off and a small treat offer.", lesson: PROMO, templates: ["announcement-bar", "sale-announcement"] },
@@ -57,4 +57,4 @@ export const TIPS: Tip[] = [
 /** Template highlights when no event is on, by week. */
 export const EVERGREEN_TEMPLATES = ["welcome-email", "review-request", "creator-outreach", "announcement-bar"];
 
-export const DEFAULT_HERO = "Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can do the work for you when you approve. Small daily wins add up to a bigger, more profitable business.";
+export const DEFAULT_HERO = "Helix shows you your profit every day, gives you one simple task to grow it, explains it step by step, and can prepare some of the work for you to approve. Small daily wins add up to a bigger, more profitable business.";

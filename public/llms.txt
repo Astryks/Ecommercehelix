@@ -4,14 +4,14 @@
 
 Who it is for: online store owners, built for stores doing $10k to $30k a month, to help them reach $1M profitably; it also works from the first sale. Plans: Free (US$0), Starter (US$29/month), Growth (US$59/month). All prices in US dollars (USD).
 
-What works today: profit dashboard (manual or CSV numbers), Meta (Facebook and Instagram) ad sync with campaigns built as paused drafts the owner launches (open to early testers now, all stores after Meta's approval), daily course and lessons, Black Friday and seasonal plans, ready-to-paste email and SMS flow copy. Helix does not use AI today. Google Ads is guided setup only (connection coming). Shopify, Google Ads and Klaviyo connections are planned.
+What works today: profit dashboard (manual, CSV, Google Sheet or synced numbers), Meta (Facebook and Instagram) ad sync with campaigns built as paused drafts the owner launches (open to early testers now, all stores after Meta's approval), daily course and lessons, Black Friday and seasonal plans, ready-to-paste email and SMS flow copy, Shopify connection on paid plans (read-only daily sync of orders, sales, product costs and stock). AI writes short text only when you press a button (store check summary, ad copy drafts, help answers), with a monthly allowance per plan. Google Ads is guided setup only (connection coming soon). TikTok and Klaviyo are not connected yet.
 
 ## Features
 - [Profit dashboard](https://ecommercehelix.com/features/profit-dashboard): daily profit, profit per order, break-even cost per sale
 - [Daily growth plan](https://ecommercehelix.com/features/daily-growth-plan): one task a day across Attract, Convert, Grow
 - [Meta ads](https://ecommercehelix.com/features/meta-ads): Facebook and Instagram ads as paused drafts
 - [Email automation](https://ecommercehelix.com/features/email-automation): ready-to-paste copy for welcome, abandoned cart and retention flows
-- [Black Friday plan](https://ecommercehelix.com/features/black-friday-plan): 12-week BFCM plan
+- [Black Friday plan](https://ecommercehelix.com/features/black-friday-plan): BFCM plan that starts on 1 August
 - [Store audit](https://ecommercehelix.com/features/store-audit): conversion rate optimisation tasks
 
 ## Guides

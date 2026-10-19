@@ -71,7 +71,7 @@
 
 **Expected result:** You hear about strange activity within minutes.
 
-**Watch out:** Report cybercrime in some countries at [ReportCyber](https://www.cyber.gov.au/report-and-recover/report) and in the US at the [FBI's IC3](https://www.ic3.gov/).
+**Watch out:** In Australia, report cybercrime at [ReportCyber](https://www.cyber.gov.au/submit-a-report). In the US, use the [FBI's IC3](https://www.ic3.gov/).
 
 ## Lesson 25.2: Set up your Meta business the safe way
 <!-- stage:grow -->
@@ -84,15 +84,15 @@
 
 **Step 2.** Complete business verification when Meta asks, using your legal name, address and documents exactly as registered.
 
-**Expected result:** The portfolio shows as verified. Missing a deadline can pause ads.
+**Expected result:** The portfolio shows as verified. Some features stay locked until you verify.
 
 **Step 3.** Create the ad account inside your own portfolio, giving agencies and freelancers partner access only.
 
 **Expected result:** The ad account lists your portfolio as owner.
 
-**Step 4.** Set an account spending limit a little above your planned monthly spend.
+**Step 4.** Set an account spending limit a little above your planned monthly spend. It counts total spend, so reset it each month.
 
-**Expected result:** A break-in cannot spend more than the cap.
+**Expected result:** Ads stop when the cap is reached. A hacker with admin access can change it, so lock logins too.
 
 **Step 5.** Add a backup payment method.
 
@@ -100,7 +100,7 @@
 
 **Step 6.** Check billing currency and time zone before your first ad.
 
-**Expected result:** Both are correct; they cannot be changed later without a new ad account.
+**Expected result:** Both are correct. Changing either later closes the account and starts a new one.
 
 **Watch out:** Outside the US: if you are registered for GST, add your ABN in Meta billing. Then you are not charged GST. Check your card's overseas fee too (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
 
@@ -215,9 +215,9 @@
 
 **Expected result:** The agency has no access.
 
-**Step 6.** If the agency owns your ad account, ask in writing for it to be moved to you. Or make a new account in your portfolio and share your pixel to it.
+**Step 6.** If the agency owns your ad account, it usually cannot be moved to your portfolio. Make a new ad account in your portfolio and connect your own pixel.
 
-**Expected result:** You run ads from an account you own. Past campaign history may stay behind, but pixel data is yours.
+**Expected result:** You run ads from an account you own. Past campaign history stays behind, so ask for exports first.
 
 **Step 7.** For your first month alone, change one thing at a time and watch profit daily in Helix.
 
@@ -225,7 +225,7 @@
 
 <!-- do:growth -->
 
-**Step 8.** Check that ad accounts, ads, customer lists and reports are in your name. Look in Meta **Business Settings > Ad accounts** and Google **Admin > Access**.
+**Step 8.** Check that ad accounts, ads, customer lists and reports are in your name. Look in Meta **Business settings > Accounts > Ad accounts** and Google Ads **Admin > Access and security**.
 
 **Expected result:** You own every account and asset.
 
@@ -254,7 +254,7 @@
 
 **Expected result:** Texts show your business name, not "Unverified".
 
-**Watch out:** Outside the US: since 1 July 2026, business names on texts must be on the national SMS Sender ID Register. The name must match your business name, trademark or domain (see [ACMA](https://www.acma.gov.au/sending-text-messages-your-business-or-organisation-name)). US: standard numbers need carrier registration (10DLC) and toll-free numbers need verification.
+**Watch out:** Outside the US: in Australia since 1 July 2026, unregistered sender names show as "Unverified". Register on the SMS Sender ID Register. The name must clearly link to you, for example your business name or trademark (see [ACMA](https://www.acma.gov.au/sending-text-messages-your-business-or-organisation-name)). US: standard numbers need carrier registration (10DLC) and toll-free numbers need verification.
 
 **Step 4.** Use the same sender name everywhere.
 

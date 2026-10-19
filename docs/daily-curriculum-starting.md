@@ -21,7 +21,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 3 | Your cost per sale | Work out what one sale really costs you | [1.2 Your cost drivers](playbook/01-daily-profit-foundations.md#lesson-12-your-cost-drivers) | 10 min | Free: Work out your cost per sale from your prices |
 | 4 | A price that leaves profit | Check your price leaves room for ads | [3.6 Pricing that is easy to accept](playbook/03-offer-and-product.md#lesson-36-pricing-that-is-easy-to-accept) | 10 min | Guide |
 | 5 | Your promise | Write your one-line promise | [3.2 Say clearly what the customer gets](playbook/03-offer-and-product.md#lesson-32-say-clearly-what-the-customer-gets) | 10 min | Starter: Draft 5 promise lines for you to choose from |
-| 6 | Take the risk off | Make buying feel safe | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Guide |
+| 6 | Remove the risk | Make buying feel safe | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Guide |
 | 7 | First proof | Collect your first reviews and photos | [3.3 Give people reasons to believe you](playbook/03-offer-and-product.md#lesson-33-give-people-reasons-to-believe-you) | 15 min | Guide |
 
 ## Stage 2: Set up your Shopify store (Days 8 to 20)
@@ -31,7 +31,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 8 | Plan the store | Plan your store before you build | [22.1 Plan before you build](playbook/22-shopify-store-setup.md#lesson-221-plan-before-you-build) | 15 min | Guide |
 | 9 | Domain and email | Connect your own domain and email | [22.2 Domain and email](playbook/22-shopify-store-setup.md#lesson-222-domain-and-email) | 15 min | Guide |
 | 10 | Theme | Pick a free theme and set your brand basics | [22.3 Choose and set up a theme](playbook/22-shopify-store-setup.md#lesson-223-choose-and-set-up-a-theme) | 15 min | Guide |
-| 11 | Home page | Build a home page that makes sense in 5 seconds | [22.4 Build the home page](playbook/22-shopify-store-setup.md#lesson-224-build-the-home-page) | 15 min | Free: Run a store check-up on your home page |
+| 11 | Home page | Build a home page that makes sense in 5 seconds | [22.4 Build the home page](playbook/22-shopify-store-setup.md#lesson-224-build-the-home-page) | 15 min | Free: Run a store check on your home page |
 | 12 | Product page | Set up your first product page | [22.5 Product pages: titles, photos and descriptions](playbook/22-shopify-store-setup.md#lesson-225-product-pages-titles-photos-and-descriptions) | 15 min | Starter: Draft product page copy for your top product |
 | 13 | Options, stock and reviews | Add variants, stock and a review app | [22.6 Variants and inventory](playbook/22-shopify-store-setup.md#lesson-226-variants-and-inventory) | 15 min | Guide |
 | 14 | Collections and menu | Group products and build your menu | [22.8 Collections, menus and search](playbook/22-shopify-store-setup.md#lesson-228-collections-menus-and-search) | 15 min | Guide |
@@ -50,7 +50,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 22 | Test budget | Set your test budget and your stop rule | [1.5 Your target MER and break-even numbers](playbook/01-daily-profit-foundations.md#lesson-15-your-target-mer-and-break-even-numbers) | 10 min | Guide |
 | 23 | Simple ads | Film 3 simple ads on your phone | [19.10 Shooting on a phone](playbook/19-creators-ugc-and-video-ads.md#lesson-1910-shooting-on-a-phone) | 15 min | Guide |
 | 24 | Words that stop the scroll | Write the first line for each ad | [5.7 Hooks (first 0 to 3 seconds)](playbook/05-creative-strategy.md#lesson-57-hooks-first-0-to-3-seconds) | 10 min | Starter: Draft 3 opening lines and ad text for each video |
-| 25 | Build the test | Set up your first campaign, paused | [20.3 Setting up a Meta sales campaign step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-203-setting-up-a-meta-sales-campaign-step-by-step) | 15 min | Starter: Build the test campaign as a paused draft in your account |
+| 25 | Build the test | Set up your first campaign, paused | [7.13 Launch your first Meta ad in 30 minutes](playbook/07-meta-ads.md#lesson-713-launch-your-first-meta-ad-in-30-minutes) | 15 min | Starter: Build the test campaign as a paused draft in your account |
 | 26 | Launch and wait | Launch the test and leave it alone | [7.5 The learning phase](playbook/07-meta-ads.md#lesson-75-the-learning-phase) | 5 min | Guide |
 | 27 | Read the results | Read what your test is telling you | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Guide |
 | 28 | Your next step | Decide what to do next | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Guide |
@@ -115,9 +115,9 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. Take your price and your cost per sale from yesterday.
-2. Aim for a price of at least 3 times your product cost. Many small stores need this to cover ads and still make money.
+2. A common rule of thumb is a price of at least 3 times your product cost. That leaves room for ads and profit.
 3. If you are below that, look at bundles, a higher-value version, or a cheaper supplier.
-4. Write down the most you could pay in ads for one sale and still break even: price minus cost per sale.
+4. Write down the most you could pay in ads for one sale and still break even. That is price minus cost per sale.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -134,7 +134,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 1. Write one line: the result your customer gets, not the features.
 2. Add why it is different, in plain words. For example: 'Soft as cotton, dries in an hour.'
 3. Cut any word a 12-year-old would not understand.
-4. Put the line at the top of your home page and under your product title.
+4. Save the line. You will put it on your home page and product page when you build them (Days 11 and 12).
 
 **Want me to do it for you?** Draft 5 promise lines for you to choose from (Starter plan, after you approve).
 
@@ -142,16 +142,16 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 ### Day 6: Make buying feel safe
 
-*Topic: Take the risk off · Stage 1 · 10 minutes · SOP 04*
+*Topic: Remove the risk · Stage 1 · 10 minutes · SOP 04*
 
 **Why it matters.** A new store has no reputation yet. Clear returns, a simple guarantee and visible contact details make a stranger feel safe enough to buy.
 
 **How to do it.**
 
 1. Write your returns rule in one plain sentence, for example '30 days to change your mind'.
-2. Add it near the Add to cart button and in your footer.
-3. Show a real email address or chat button on every page.
-4. If you can, add a guarantee in one line.
+2. If you can, add a guarantee in one line.
+3. Plan a real email address or chat button for every page.
+4. Save these lines. You will add them near Add to cart and in your footer when you build the store.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -167,8 +167,8 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. List everyone who has bought or tried the product, including friends and family.
 2. Ask each one for a short honest review and, if possible, a photo.
-3. Install a review app on your store if you do not have one.
-4. Add the best 3 reviews near the top of your product page.
+3. Save each review and photo in one folder, with the person's permission to use it.
+4. Star your best 3. You will add them to your product page on Day 13.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -185,7 +185,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 1. Write your one-line promise from Day 5 at the top of a page.
 2. List each product with its price, product cost and cost to send one order.
 3. Pick one launch country (for example, where you live) and a Shopify plan from the pricing page.
-4. Gather your logo, 4 to 8 photos per product, your returns rule and your ABN (AU) or business details (US).
+4. Gather your logo, 4 to 8 photos per product, your returns rule and your business details (an ABN in Australia).
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -193,12 +193,12 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 *Topic: Domain and email · Stage 2 · 15 minutes · SOP 11*
 
-**Why it matters.** A store on its own web address looks more trustworthy than a free myshopify.com address, and emails from your domain are less likely to land in spam.
+**Why it matters.** A store on its own web address looks more trustworthy than a free myshopify.com address. Emails from your domain are also less likely to land in spam.
 
 **How to do it.**
 
 1. Buy a short domain that matches your brand in Shopify, or connect one you own.
-2. Outside the US: a .com.au needs an ABN. US: a .com is the normal choice.
+2. Australia: a .com.au needs an Australian connection, usually an ABN or ACN. US: a .com is the normal choice.
 3. Make your own domain the main one customers see.
 4. Set up hello@yourbrand (or similar) and send yourself a test email.
 
@@ -214,7 +214,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. In Online Store, open Themes. Start with a free theme such as Dawn.
+1. In Online Store, open Themes. Start with a free Shopify theme such as Horizon or Dawn.
 2. Duplicate the theme and make changes on the copy.
 3. In Theme settings, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.
 4. Preview on your phone before you publish.
@@ -237,7 +237,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 4. Below it add best sellers, reasons to buy, reviews and how it works.
 5. Ask someone new to look for 5 seconds and say what you sell.
 
-**Want me to do it for you?** Run a store check-up on your home page (Free plan, after you approve).
+**Want me to do it for you?** Run a store check on your home page (Free plan, after you approve).
 
 **See the effect.** Update your numbers each morning. Over the next 7 days, watch: Conversion rate.
 
@@ -303,7 +303,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. In Settings, open Shipping and delivery and set up your home country.
 2. Add a Standard and an Express rate from your real carrier costs.
-3. Set free shipping over an amount about 1.3 times your average order.
+3. Set free shipping over an amount about 1.2 to 1.4 times your average order (a common rule of thumb).
 4. Show delivery as a range, such as '3 to 6 business days', on the product page.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
@@ -318,8 +318,8 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Outside the US: check if you need GST (register at $75,000 GST turnover). If registered, add your ABN and include GST in prices.
-2. US: turn on sales tax only for states where you have registered.
+1. Australia: you must register for GST once your GST turnover reaches $75,000 a year. If registered, add your ABN and include GST in prices.
+2. US: register with a state before you collect its sales tax. Then turn on only those states in Shopify.
 3. Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.
 4. Set your statement name to your brand. Ask a registered tax agent or accountant if unsure.
 
@@ -337,7 +337,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Create Refund, Privacy, Terms, Shipping and Contact pages from Shopify's templates.
 2. Rewrite them in plain words with your own delivery ranges and cut-off dates.
-3. Outside the US: never write 'no refunds'. Customers always have rights for faulty items.
+3. Australia, UK and EU: never write 'no refunds'. Customers always have rights for faulty items.
 4. Link every policy in the footer.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
@@ -399,14 +399,14 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 *Topic: Daily numbers · Stage 3 · 5 minutes · SOP 02*
 
-**Why it matters.** Even with few sales, writing down yesterday's sales, orders and ad spend each morning builds the habit that later tells you what is working.
+**Why it matters.** Even with few sales, note yesterday's sales, orders and ad spend each morning. This habit later tells you what is working.
 
 **How to do it.**
 
 1. Go to Today and find the 'Update yesterday' box.
-2. Type yesterday's sales and orders as your store shows them. Zero is fine. If your prices include GST, Helix takes it out for you (Settings).
+2. Type yesterday's sales and orders as your store shows them. Zero is fine. If your prices include GST or VAT, Helix takes it out (Settings).
 3. Type any ad spend.
-4. Press Save. Do this every morning from now on.
+4. Press Save and show my profit. Do this every morning from now on.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -454,7 +454,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. For each video, write a first line that names the problem or the result, for example 'Tired of bottles that leak in your bag?'
+1. For each video, write a first line that names the problem or the result. For example: 'Tired of bottles that leak in your bag?'
 2. Write a short main text: the promise, one proof point and the offer.
 3. Add a clear button such as 'Shop now'.
 4. Read each one out loud. Cut anything that sounds like an ad from a big company.
@@ -471,10 +471,10 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. In Ads Manager, create a Sales campaign.
+1. In Ads Manager, create a Sales campaign. New to Ads Manager? Read Lesson 7.14 first.
 2. Set the daily budget from Day 22. Leave the audience broad (your country, adults).
 3. Add your 3 ads and link them to your best product page.
-4. Leave it paused. Check the link, the pixel and the text, then save.
+4. Check the link, the pixel and the text. Switch the campaign off, then click Publish so it stays paused.
 
 **Want me to do it for you?** Build the test campaign as a paused draft in your account (Starter plan, after you approve).
 
@@ -488,7 +488,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Press Launch on your paused campaign.
+1. In Ads Manager, switch your paused campaign on.
 2. Do not change budgets or ads for 3 days unless an ad hits your stop rule.
 3. Keep doing your 2-minute morning numbers.
 4. Note each day's spend, clicks and any sales.

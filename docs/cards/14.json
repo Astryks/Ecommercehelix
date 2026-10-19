@@ -19,12 +19,12 @@
   {"say": "Read the five levers in the lesson's table. Pick the easiest one for this month.", "check": "You've chosen one lever.", "lost": "Pick \"pay later\". It's often the easiest."},
   {"say": "Take one action on it. Example: ask your supplier for 30-day terms on the balance.", "check": "You've sent the request or made the change.", "lost": "Send your supplier one email asking for 30 days."}
  ]},
-"14.4": {"intro": "A cash forecast shows how much money you'll have each month. Profit isn't the same as cash in the bank.",
+"14.4": {"intro": "A cash forecast shows how much money you'll have each week. Profit isn't the same as cash in the bank.",
  "steps": [
-  {"say": "Make a spreadsheet with one column per month for the next 3 to 12 months.", "check": "You have a blank forecast.", "lost": "Make a sheet with 3 month columns."},
-  {"say": "For each month, add rows: starting cash, sales income, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.", "check": "Every month shows an ending cash number.", "lost": "Starting cash + money in − money out = ending cash."},
+  {"say": "Make a spreadsheet with one column per week for the next 13 weeks. Add monthly columns after that for big stock buys.", "check": "You have a blank forecast.", "lost": "Make a sheet with 13 week columns."},
+  {"say": "For each week, add rows: starting cash, sales income, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.", "check": "Every week shows an ending cash number, and you can see the lowest week.", "lost": "Starting cash + money in − money out = ending cash."},
   {"say": "Put some profit aside for tax every month. Ask your accountant how much.", "check": "Tax money sits in a separate account.", "lost": "Open a separate tax savings account."},
-  {"say": "Update the forecast on the first business day of each month.", "check": "A monthly reminder is set, and the forecast stays fresh.", "lost": "Set a reminder for the 1st of each month."}
+  {"say": "Update the forecast at the start of each week.", "check": "A weekly reminder is set, and the forecast stays fresh.", "lost": "Set a reminder for every Monday."}
  ]},
 "14.5": {"intro": "Borrowing can speed you up or sink you. Only borrow when both checks pass.",
  "steps": [
@@ -51,7 +51,7 @@
   {"say": "Search supplier marketplaces, trade shows and industry lists. Ask other founders for introductions. Shortlist 3 to 5.", "check": "You have 3 to 5 options. Local makers cost more each but are quicker and have smaller minimums.", "lost": "Find 3 suppliers."},
   {"say": "Ask each for their business licence (check it covers your product) and a live video tour of the production line. Or pay an inspection company to visit.", "check": "You know if each is a factory (makes it) or a trading company (buys from factories), and both are checked.", "lost": "Ask for a live video tour."},
   {"say": "Order paid samples from at least 2 suppliers. Test them like a customer would for 1 to 2 weeks.", "check": "You have a winner, and can approve a signed \"golden sample\" that production must match.", "lost": "Order 2 samples. Use them for a week."},
-  {"say": "Ask what sets the MOQ (minimum order quantity). Lower it with fewer colours, a stock fabric, or a higher price per unit on the first run.", "check": "Your first order covers no more than 3 to 4 months of expected sales.", "careful": "Cash stuck in slow stock is the most common way growing stores run out of money.", "lost": "Ask: can I order fewer if I pick fewer colours?"},
+  {"say": "Ask what sets the MOQ (minimum order quantity). Lower it with fewer colours, a stock fabric, or a higher price per unit on the first run.", "check": "Your first order covers no more than 3 to 4 months of expected sales.", "careful": "Cash stuck in slow stock is a common way growing stores run out of money.", "lost": "Ask: can I order fewer if I pick fewer colours?"},
   {"say": "Get quotes on the same terms (like FOB: price with goods loaded at the port). Work out landed cost: unit price plus freight, duty and other costs (packaging, inspection, bank fees, broker).", "check": "Each supplier has a landed cost you can compare. Enter it as product cost in Helix.", "lost": "Unit price + freight + duty + extras = landed cost."},
   {"say": "Agree payment terms from your own written terms of trade. A common first deal is 30% deposit, 70% before shipping. Pay by bank transfer to an account in the company's name.", "check": "Terms are in writing. You confirm any change of bank details by phone.", "lost": "Bank details changed? Phone them to check."},
   {"say": "Write a quality checklist from the golden sample. Book an inspection before shipping for bigger orders. Count and spot-check every delivery with photos.", "check": "Problems are caught before you pay the balance or list the stock.", "lost": "Count every delivery. Take photos."},
@@ -63,8 +63,8 @@
   {"say": "Find the lead time: days from paying the deposit to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
   {"say": "Set safety days. Start with 14. Use more for long sea freight.", "check": "Each product has a buffer.", "lost": "Use 14."},
   {"say": "In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.", "check": "Helix shows the reorder point (sales speed × (lead time + safety days)) and a countdown to each sell-out. Example: 3 a day × (45 + 14) days = 177 units.", "lost": "Enter the three numbers for your best seller."},
-  {"say": "When on-hand plus on-order falls to the reorder point, order enough for the lead time, safety days and the next 1 to 3 months. Order at least the supplier's minimum.", "check": "An alert shows on Today when it's time to order, and stock arrives before you run out.", "lost": "Alert on Today? Place the order."},
-  {"say": "For Black Friday and Christmas, work out the last safe order date: event date, minus lead time, minus about a week to receive and list.", "check": "Peak stock is ordered in time. Peak week often sells 2 to 4 times a normal week.", "lost": "Event date − lead time − 1 week = order by."}
+  {"say": "At the reorder point (on-hand plus on-order), order the next 1 to 3 months of sales. Order at least the supplier's minimum.", "check": "An alert shows on Today when it's time to order, and stock arrives before you run out.", "lost": "Alert on Today? Place the order."},
+  {"say": "For Black Friday and Christmas, work out the last safe order date: event date, minus lead time, minus about a week to receive and list.", "check": "Peak stock is ordered in time. Peak week can sell several times a normal week, so check last year.", "lost": "Event date − lead time − 1 week = order by."}
  ]},
 "14.12": {"intro": "Your cash is stuck from the day you pay a supplier until a customer's money reaches you. Count the days.",
  "steps": [

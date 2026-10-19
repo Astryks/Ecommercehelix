@@ -1,6 +1,6 @@
 /**
- * General guides by store size and type. These are Helix's rules of thumb (the same ranges used on Key metrics),
- * NOT survey data or averages from other stores. Labelled as such everywhere they show.
+ * General guides by store size and type. These are Helix's rules of thumb, NOT survey data or averages from other stores.
+ * They are close to, but not identical with, the Key metrics bands. Labelled as rules of thumb everywhere they show.
  */
 export type Size = "starting" | "growing" | "scaling";
 export type Category = "fashion" | "beauty" | "home" | "food" | "other";
@@ -14,7 +14,7 @@ const BASE: Guide[] = [
   { id: "cr", name: "Conversion rate", unit: "%", low: 0.8, good: 1.4, great: 2.6, higherIsBetter: true, note: "Share of visits that buy." },
   { id: "aov", name: "Average order", unit: "$", low: 60, good: 100, great: 150, higherIsBetter: true, note: "Depends a lot on what you sell. Bundles lift it." },
   { id: "repeat", name: "Orders from returning buyers", unit: "%", low: 15, good: 25, great: 40, higherIsBetter: true, note: "Emails and a good product bring people back." },
-  { id: "mer", name: "Ad spend as % of sales (MER)", unit: "%", low: 35, good: 25, great: 15, higherIsBetter: false, note: "Lower is better, as long as sales grow." },
+  { id: "mer", name: "Ad spend as % of sales (MER)", unit: "%", low: 35, good: 25, great: 15, higherIsBetter: false, note: "Lower is better, as long as sales grow. Some tools show MER as sales ÷ ad spend instead (25% is 4x)." },
   { id: "contribution", name: "Profit after ads, before bills", unit: "%", low: 10, good: 20, great: 30, higherIsBetter: true, note: "What each sale leaves to pay your bills and you." },
   { id: "net", name: "Net profit", unit: "%", low: 0, good: 10, great: 15, higherIsBetter: true, note: "What is left after every cost." },
 ];

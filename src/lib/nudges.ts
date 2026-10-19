@@ -1,4 +1,5 @@
 import { prettyDay } from "./dates";
+import { postalAddress } from "./email/postal";
 import { nextTasks, type SeasonAlert } from "./seasons";
 
 /**
@@ -13,10 +14,20 @@ export type Nudge = {
   push: { title: string; body: string; url: string };
 };
 
-export function buildNudge(alert: SeasonAlert, opts: { name?: string; planAdded: boolean; done: Set<string>; baseUrl: string }): Nudge | null {
+/**
+ * The email is marketing, so its footer has the unsubscribe link (unsubUrl, from the user's "Big sale dates"
+ * preference token; falls back to the email settings page) and the postal address (BUSINESS_POSTAL_ADDRESS).
+ */
+export function buildNudge(alert: SeasonAlert, opts: { name?: string; planAdded: boolean; done: Set<string>; baseUrl: string; unsubUrl?: string; postalAddress?: string | null }): Nudge | null {
   const todo = nextTasks(alert, opts.done, 3);
   if (opts.planAdded && todo.length === 0) return null; // plan finished, stay quiet
   const url = `${opts.baseUrl}/dashboard#season`;
+  const addr = opts.postalAddress !== undefined ? opts.postalAddress : postalAddress();
+  const footer = [
+    "You get this because you have a Helix account and sale date emails are on.",
+    `Unsubscribe: ${opts.unsubUrl ?? `${opts.baseUrl}/dashboard/settings/emails`}`,
+    `E-commerce Helix${addr ? `, ${addr}` : ""}`,
+  ].join("\n");
   const hi = opts.name ? `Hi ${opts.name.split(" ")[0]},` : "Hi,";
   const lines = opts.planAdded
     ? ["Your next prep steps:", ...todo.map((t, i) => `${i + 1}. ${t.title} (${t.overdue ? "due now" : "due " + prettyDay(t.due)})`)]
@@ -25,7 +36,7 @@ export function buildNudge(alert: SeasonAlert, opts: { name?: string; planAdded:
     planKey: alert.key,
     email: {
       subject: alert.headline.split(":")[0].replace(/\.$/, "") + (alert.daysTo > 0 ? ` (${alert.daysTo} days to go)` : ""),
-      text: [hi, "", alert.headline, "", alert.why, "", ...lines, "", `Open Helix: ${url}`].join("\n"),
+      text: [hi, "", alert.headline, "", alert.why, "", ...lines, "", `Open Helix: ${url}`, "", footer].join("\n"),
     },
     push: {
       title: `${alert.name}: ${alert.daysTo > 0 ? alert.daysTo + " days to go" : "it's on"}`,
@@ -38,7 +49,7 @@ export function buildNudge(alert: SeasonAlert, opts: { name?: string; planAdded:
 export type Delivery = { email: "sent" | "stub" | "failed" | "skipped"; push: "stub" };
 
 /** Send a nudge. Email goes out only when NUDGES_LIVE=1 and AUTH_RESEND_KEY + EMAIL_FROM are set. Push is a stub. */
-export async function deliverNudge(to: string, n: Nudge): Promise<Delivery> {
+export async function deliverNudge(to: string, n: Nudge, unsubUrl?: string): Promise<Delivery> {
   const key = process.env.AUTH_RESEND_KEY;
   const from = process.env.EMAIL_FROM;
   let email: Delivery["email"] = "stub";
@@ -47,7 +58,10 @@ export async function deliverNudge(to: string, n: Nudge): Promise<Delivery> {
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from, to, subject: n.email.subject, text: n.email.text }),
+      body: JSON.stringify({
+        from, to, subject: n.email.subject, text: n.email.text,
+        ...(unsubUrl ? { headers: { "List-Unsubscribe": `<${unsubUrl}>, <mailto:support@astryks.com?subject=unsubscribe>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" } } : {}),
+      }),
     }).catch(() => null);
     email = res?.ok ? "sent" : "failed";
   } else {

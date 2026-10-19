@@ -24,15 +24,18 @@ def find(ref):
     title = m.group(1)
     return {"slug": f[:-3], "anchor": slugify(title), "label": title.split(": ", 1)[1], "ref": ref}
 
-def build(STAGES, D, json_name, md_name, title, intro):
+def build(STAGES, D, json_name, md_name, title, intro, stable_ids=False):
     stage_of = lambda day: next(s for s in STAGES if day <= s[2])
     out = []
     WATCH_DEFAULT = {"numbers": "Profit at the top of your dashboard", "site": "Conversion rate", "retention": "Email sales and profit", "ads": "Ad cost per sale (CPA) and profit", "learning": None}
-    for i, (_, topic, title, lesson, steps, minutes, area, ref, sop, doit, watch) in enumerate(D):
+    if stable_ids:  # task ids ("day-<id>") must be unique and set, so saved progress survives inserted days
+        ids = [d[0] for d in D]
+        assert all(isinstance(x, int) and x > 0 for x in ids) and len(set(ids)) == len(ids), "task ids must be unique positive numbers"
+    for i, (tid, topic, title, lesson, steps, minutes, area, ref, sop, doit, watch) in enumerate(D):
         day = i + 1
         s = stage_of(day)
         out.append({
-            "day": day, "stage": s[0], "stageName": s[1], "topic": topic, "title": title, "lesson": lesson,
+            "day": day, **({"id": tid} if stable_ids else {}), "stage": s[0], "stageName": s[1], "topic": topic, "title": title, "lesson": lesson,
             "steps": steps, "minutes": minutes, "area": area, "learn": find(ref), "sop": sop,
             "doIt": {"tier": doit[0], "label": doit[1]} if doit else None,
             "watch": watch or WATCH_DEFAULT[area],
@@ -71,7 +74,7 @@ def build(STAGES, D, json_name, md_name, title, intro):
 
 
 build(STAGES, D, "curriculum.json", "daily-curriculum.md", "# Daily curriculum: one lesson, one topic, one action",
-      "This is the **Growing** track, for stores that already make sales. New founders start with the [Just starting track](daily-curriculum-starting.md).")
+      "This is the **Growing** track, for stores that already make sales. New founders start with the [Just starting track](daily-curriculum-starting.md).", stable_ids=True)
 build(START.STAGES, START.D, "curriculum-starting.json", "daily-curriculum-starting.md", "# Daily curriculum: Just starting track",
       "For new founders with little or no sales yet. Lighter lessons (5 to 15 minutes) that check the product and offer, get the store basics right and run a first small test campaign. When regular sales come in, switch to the [Growing track](daily-curriculum.md) in Settings.")
 

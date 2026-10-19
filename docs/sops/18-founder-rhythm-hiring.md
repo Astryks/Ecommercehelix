@@ -2,7 +2,7 @@
 
 > **In plain words.** Spend your own time on the few things that grow the business. Hire people or agencies only for a clear, measurable result.
 
-**Purpose.** Protect the founder's time for the few things that grow the business, and add people (or agencies) only for clear outcomes.
+**Purpose.** Protect the founder's time for the few things that grow the business. Add people or agencies only for clear outcomes.
 
 **Copilot triggers**
 - Quarterly planning.
@@ -14,7 +14,7 @@
 
 1. Pick one or two big priorities for the next six weeks. Each must move a scorecard number.
 2. Block 8 to 12 hours a week for them in the calendar.
-3. Weekly planning block (Monday, 30 minutes): what moves the priority this week?
+3. Weekly planning block (Monday, 30 minutes): what moves the priority this week? Check progress every Friday.
 4. Work in focused sprints (25 or 45 minutes) with notifications off.
 5. Review at the end: done, not done, why, next cycle.
 
@@ -29,7 +29,7 @@ If any answer is no: say no, delegate, or put it on the list for later.
 
 ## Hiring
 
-- Hire for a specific outcome ("ship 10 new ads a week", "answer support within 4 hours"), not a vague title.
+- Hire for a specific outcome, not a vague title. For example: "ship 10 new ads a week" or "answer support within 4 hours".
 - Plan roles 3 to 6 months before they are needed.
 - Use a paid work-sample test that mirrors the real job. If nobody passes, do not hire.
 - Write the SOP before handing over the task. Helix can draft it from the playbooks.
@@ -37,13 +37,13 @@ If any answer is no: say no, delegate, or put it on the list for later.
 
 ## Agencies
 
-- Ask for access to the ad accounts (you should own them), a weekly report on MER and contribution profit, and a clear testing plan.
+- Own the ad accounts, pixel and data yourself, and give the agency partner access only (Lesson 25.5). Ask for a weekly report on MER and contribution profit, and a clear testing plan.
 - Red flags: reporting only platform ROAS, no creative testing cadence, long lock-in contracts, account ownership by the agency.
 - Helix can act as the oversight layer: it reads the accounts and checks the agency's work against these playbooks.
 
 ## Bad days
 
-Revenue swings day to day. Judge on 3-day and monthly numbers. Use the decision log to remember that bad weeks have passed before.
+Revenue swings day to day. Judge on 3-day and month-to-date numbers (SOP 02). Use the decision log to remember that bad weeks have passed before.
 
 ## Who does what
 

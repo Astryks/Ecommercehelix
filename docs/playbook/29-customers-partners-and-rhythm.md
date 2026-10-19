@@ -108,7 +108,7 @@
 
 **Why this matters:** A friend's recommendation is the cheapest, most trusted way to win a customer. Most stores never ask, or ask at the wrong time.
 
-**Step 1.** Choose a two-sided reward you can afford from your numbers. For example: $15 off for the friend and $15 credit for the customer. Check it stays under your break-even cost per order (Lesson 1.5).
+**Step 1.** Choose a two-sided reward you can afford from your numbers. For example: $15 off for the friend and $15 credit for the customer. Check it stays under your break-even CPA (Lesson 1.5).
 
 **Expected result:** A reward that both sides value and that still makes a profit.
 
@@ -376,3 +376,12 @@
 2. When is the best moment to ask a customer for a referral?
 3. What four parts make up the weekly story email?
 4. What makes a playbook good enough to hand over?
+
+<details><summary>Answers</summary>
+
+1. A leading number moves before sales do, so you can act early. A result number, like sales or profit, shows what already happened.
+2. At the happy moment: the day after delivery, on the thank-you page, or with a card in the parcel.
+3. A friendly subject, a short story from the week, the lesson in one line and one product that fits.
+4. Someone else can complete the task using only the playbook, without asking you.
+
+</details>

@@ -16,14 +16,14 @@
    - Landed product cost as a % of revenue (product, freight in, duties).
    - Fulfilment and shipping per order (3PL pick/pack plus postage, net of shipping charged).
    - Packaging per order.
-   - Payment fees (if unknown, use about 2.6% blended).
+   - Payment fees (if unknown, use about 2.6% blended). Rates vary by country and plan. For example, Shopify Payments Basic charges 2.9% + 30¢ online in the US. In Australia it is 1.7% + 30¢ for standard domestic cards (see [Shopify: pricing](https://www.shopify.com/pricing)). Use your own payout reports once you have them.
    - Other per-order costs (marketplace fees, inserts, gifts with purchase).
 2. **Fixed monthly costs:**
    - Staff and contractors (including the founder's pay if they take one).
    - Software and apps.
    - Rent, insurance, accounting, other overheads.
    - Fixed marketing that is not ad spend (photo shoots, creator gifting, agency retainers).
-3. Helix spreads fixed costs into a **daily allowance** (monthly total ÷ days in month).
+3. Helix spreads fixed costs into a **daily allowance** (monthly total ÷ 30.4, the average days in a month).
 4. **Backfill** the last 1 to 2 months of daily revenue, orders, sessions and ad spend from Shopify and ad platforms so trends are visible from day one.
 5. **Wholesale and other channels:** keep online retail separate. Allocate a fair share of fixed costs to wholesale so online numbers are not distorted.
 
@@ -46,7 +46,7 @@
 - **Fixed cost ratio (FCR)** = fixed costs ÷ revenue.
 - **Net profit %** = 100% - MER% - VCR - FCR.
 - **Revenue per visit (RPV)** = revenue ÷ sessions. Also conversion rate, AOV and cost per visit (ad spend ÷ sessions).
-- **New-customer cost** = ad spend ÷ new-customer orders.
+- **Blended CAC** (new-customer cost) = ad spend ÷ new-customer orders.
 - **Target MER%** = 100% - VCR - FCR - target net profit %.
 
 ## Decision rules

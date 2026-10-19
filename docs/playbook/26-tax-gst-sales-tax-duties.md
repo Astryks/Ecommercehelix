@@ -22,12 +22,12 @@
 >
 > **Words to know:**
 >
-> - **GST:** Goods and services tax. It is a percentage set by each country (often 10% to 15%), added to most sales once you register.
-> - **BAS:** Business activity statement: the form some businesses lodge with their tax office to report and pay GST.
+> - **GST:** Goods and services tax. Each country sets its own rate, such as 10% (Australia) or 15% (New Zealand). Registered businesses add it to most sales.
+> - **BAS:** Business activity statement: the form GST-registered Australian businesses lodge with the ATO to report and pay GST.
 > - **Nexus:** In the US, a link with a state, like a warehouse there or enough sales into it. It means you must collect that state's sales tax.
 > - **VAT:** Value added tax: the UK and EU version of GST, usually included in the shown price.
 > - **IOSS:** An EU scheme for parcels worth up to 150 euros. The seller charges EU VAT at checkout and pays it in one country.
-> - **De minimis:** A value below which imported parcels skip duty or tax. The US ended its $800 de minimis for all countries in August 2025.
+> - **De minimis:** A value below which imported parcels skip duty or tax. The US suspended its $800 de minimis for all countries in August 2025.
 > - **DDP:** Delivered duty paid: you pay the import taxes so the customer pays nothing extra on delivery.
 > - **Duties:** Taxes charged by a country on goods coming in from overseas.
 >
@@ -119,7 +119,7 @@
 
 **Expected result:** You have a list of physical nexus states.
 
-**Step 2.** Check each state's sales limit for economic nexus, often $100,000 a year. California and Texas use $500,000. New York uses over $500,000 plus over 100 sales (see [California CDTFA](https://cdtfa.ca.gov/industry/wayfair/) and [Streamlined Sales Tax](https://www.streamlinedsalestax.org/)).
+**Step 2.** Check each state's sales limit for economic nexus, often $100,000 a year. California and Texas use $500,000. New York uses over $500,000 plus over 100 sales. Many states have dropped their old 200-sales test, such as Illinois from 1 January 2026 (see [California CDTFA](https://cdtfa.ca.gov/industry/wayfair/) and [Streamlined Sales Tax](https://www.streamlinedsalestax.org/)).
 
 **Expected result:** You know each state's threshold.
 
@@ -158,11 +158,11 @@
 
 **Step 3.** EU: for parcels up to 150 euros, use IOSS (import one stop shop). You charge EU VAT at checkout and file in one country. Usually you use an EU agent (see [EU VAT One Stop Shop](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en)).
 
-**Expected result:** EU VAT is collected at checkout.
+**Expected result:** EU VAT is collected at checkout. From 1 July 2026, the EU also charges 3 euros duty per type of item in low-value parcels (see [European Commission](https://commission.europa.eu/news-and-media/news/ensuring-fairness-and-safety-eur3-customs-duty-low-value-parcels-2026-06-29_en)).
 
-**Step 4.** Canada: if taxable sales of goods to Canada pass C$30,000 in 12 months, register for GST/HST (see [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html)).
+**Step 4.** Canada: from overseas, the customer pays GST/HST and duty on delivery unless you ship DDP. With stock in a Canadian warehouse, register for GST/HST once those sales pass C$30,000 in 12 months (see [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html)).
 
-**Expected result:** You know whether you must register in Canada.
+**Expected result:** You know who pays Canadian tax and whether you must register.
 
 **Step 5.** Use Shopify Markets to show local prices and collect duties at checkout where available.
 
@@ -213,7 +213,7 @@
 
 **Expected result:** Paperwork is filed.
 
-**Watch out:** US: since 29 August 2025, the $800 de minimis rule is gone, so small parcels pay duty. Compare duty per parcel with shipping in bulk to a US warehouse (see [CBP](https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs)). Outside the US: imports over A$1,000 need a customs form. Trade deals can cut duty with a certificate of origin (see [ABF](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing)).
+**Watch out:** US: since 29 August 2025, the $800 de minimis rule is suspended, so small parcels pay duty. It stayed suspended after the February 2026 court ruling on tariffs. A US law ends it for good on 1 July 2027. Compare duty per parcel with shipping in bulk to a US warehouse (see [CBP](https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs)). Australia: imports over A$1,000 need a full import declaration. Trade deals can cut duty with a certificate of origin (see [ABF](https://www.abf.gov.au/importing-exporting-and-manufacturing/importing/how-to-import)).
 
 ### Good to know
 

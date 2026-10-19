@@ -46,7 +46,7 @@
 
 **Step 3.** Make a TikTok Business Center and an ad account. Install the TikTok pixel through the TikTok app in Shopify (it reports views, carts and sales).
 
-**Expected result:** TikTok Events Manager shows Purchase events coming in.
+**Expected result:** TikTok Events Manager shows Purchase events coming in. Older setups may call it Complete payment (see [TikTok: updated standard events](https://ads.tiktok.com/help/article/how-to-adopt-tiktoks-updated-standard-events)).
 
 **Step 4.** Make a simple view in TikTok Ads Manager.
 
@@ -74,7 +74,7 @@
 | Daily spend | Setup |
 | --- | --- |
 | About $100 | One purchase campaign, plus a small campaign aimed at an earlier step (view content or add to cart). The earlier step gives TikTok more data to learn from. |
-| About $200 | Add a catalog or shopping campaign. |
+| About $200 | Add a catalog ads campaign that shows products from your store's catalog. |
 | About $300 or more | Add a traffic campaign to a landing page, or a video-view campaign, for cheap reach. Test each creative style separately. |
 
 ## Lesson 12.3: Spark ads and creators
@@ -82,14 +82,14 @@
 
 **Why this matters:** Spark ads run normal TikTok posts as ads, yours or a creator's. They keep the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 19).
 
-**Step 1.** Ask the creator to make an authorisation code in their TikTok settings (**Creator tools > Ad settings**). They send it to you.
+**Step 1.** Ask the creator for an authorisation code for each post. On the post, they tap **...**, then **Ad settings**, turn on ad authorisation and generate a code.
 
-**Expected result:** You have a code for each post you want to run.
+**Expected result:** You have a code for each post you want to run. Each code works for one post only.
 
 **Step 2.** Run the creator's post as an ad.
 
 1. In TikTok Ads Manager, create an ad.
-2. Choose **Spark ad**.
+2. Choose to use a TikTok post (a Spark ad).
 3. Paste the code the creator sent you.
 
 **Expected result:** The creator's post runs as an ad with its likes and comments.
@@ -97,7 +97,7 @@
 ## Lesson 12.4: Optimising TikTok
 <!-- stage:attract -->
 
-**Why this matters:** TikTok ads tire fast, sometimes in 3 to 4 days, so they need closer watching than Meta. Early signs warn you before cost per sale gets worse.
+**Why this matters:** TikTok ads can tire within days, so they need closer watching than Meta. Early signs warn you before cost per sale gets worse.
 
 **Step 1.** Check TikTok every day or two. Watch for early warning signs. Cost per click goes up, cost per add to cart goes up, or fewer people watch the videos.
 
@@ -114,13 +114,13 @@
 **Step 4.** When things work, grow one move at a time.
 
 1. Make new hooks for your best ad.
-2. Try catalog or video shopping ads.
+2. Try catalog ads.
 3. Offer bundles to raise order size.
 4. Add a new campaign only after these.
 
 **Expected result:** Growth comes from new creative and campaigns, not just more budget.
 
-**Step 5.** Start TikTok at about 10% of your total ad budget. Judge it by your total MER on the Dashboard (total ad spend as a share of total sales).
+**Step 5.** Start TikTok at about 10% of your total ad budget (a rule of thumb). Judge it by your total MER on the Dashboard (total ad spend as a share of total sales).
 
 **Expected result:** You see TikTok's effect on the whole store.
 
@@ -146,7 +146,9 @@
 ## Lesson 12.6: TikTok Shop
 <!-- stage:attract -->
 
-**Why this matters:** TikTok Shop lets people buy without leaving TikTok. It has automatic campaigns that aim for total sales (GMV), plus affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
+**Why this matters:** TikTok Shop lets people buy without leaving TikTok. Its ads run as GMV Max campaigns, which aim for total sales (GMV). It also has affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
+
+**Watch out:** TikTok Shop runs in the US, UK, parts of Europe and Asia. It is not yet in Australia (October 2026). Since July 2025, GMV Max is the only TikTok Shop ad type (see [TikTok: GMV Max for Shop ads](https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads)).
 
 **Step 1.** Work out your margin per order after TikTok Shop's commission and fees.
 
@@ -165,9 +167,9 @@
 
 **Expected result:** Your pins show up in Pinterest search.
 
-**Step 2.** Connect your catalog and run catalog shopping ads, starting with a consideration campaign, then a conversion campaign.
+**Step 2.** Connect your catalog to run shopping ads, starting with the **Consideration** objective.
 
-**Expected result:** Pinterest ads show your products with prices.
+**Expected result:** Pinterest ads show your products with prices. Pinterest suggests moving to the **Sales** objective at about 50 conversions a week (see [Pinterest: Performance+](https://help.pinterest.com/en/business/article/performance-plus)).
 
 **Step 3.** Plan seasonal ads 2 to 3 months early.
 
@@ -192,9 +194,9 @@
 
 **Expected result:** Each category has a list of target keywords.
 
-**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3) and a page title. It also needs a meta description: the summary under your link in Google, about 150 to 160 characters. Build collection pages around a keyword, link between your own pages, and add alt text to images.
+**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3) and a page title. It also needs a meta description, the summary under your link in Google (about 150 to 160 characters). Build collection pages around a keyword, link between your own pages, and add alt text to images.
 
-**Expected result:** Every key page has a keyword-led title, meta description and one H1.
+**Expected result:** Every key page has a keyword-led title, meta description and one clear H1. Google sets no meta description limit, but longer ones get cut off (see [Google: control your snippets](https://developers.google.com/search/docs/appearance/snippet)).
 
 **Step 3.** Write helpful content that matches your keywords: buying guides, comparisons and how-tos.
 
@@ -202,7 +204,7 @@
 
 **Step 4.** Check the technical side in Google Search Console. You want fast phone pages, structured data (code that tells Google price, rating and stock) and a sitemap sent in. Also no broken links and no copy pages.
 
-**Expected result:** Search Console shows no errors and your sitemap is indexed.
+**Expected result:** Search Console shows your sitemap as "Success" and no page errors you can fix.
 
 **Step 5.** Get mentioned on other sites through press, partnerships and brand mentions.
 
@@ -232,7 +234,7 @@
 ## Lesson 12.10: Instagram shopping
 <!-- stage:attract -->
 
-**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since September 2025 every Meta shop sends buyers to your own website checkout. It is free once your catalog is connected.
+**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since late 2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
 
 **Step 1.** Set up your shop on Facebook and Instagram.
 
@@ -240,7 +242,7 @@
 2. Pick Shopify as your platform, then follow the **Set up your shop** checklist (catalog, shipping and your checkout link).
 3. Click **Publish shop**.
 
-**Expected result:** Commerce Manager shows your shop as in review. Approval can take up to 4 weeks.
+**Expected result:** Commerce Manager shows your shop as in review. Approval can take from a few days to a few weeks.
 
 **Step 2.** Turn on catalog sync from your store so prices and stock stay current.
 
@@ -263,7 +265,7 @@
 
 **Expected result:** A plan for your first 3 videos.
 
-**Step 3.** Write each title as the question or the result people want. Keep it under 60 characters.
+**Step 3.** Write each title as the question or the result people want. Keep it under about 60 characters, so it is not cut off.
 
 **Expected result:** 3 clear titles, like "How to Pick a Running Backpack (3 Easy Checks)".
 
@@ -294,6 +296,6 @@
 <details><summary>Answers</summary>
 
 1. About 10 to 15.
-2. About 150 to 160 characters.
+2. Google sets no limit, but about 150 to 160 characters avoids it being cut off.
 3. Clear site content, clean product data and reviews. Brand facts that are the same everywhere, and mentions on other sites.
 </details>

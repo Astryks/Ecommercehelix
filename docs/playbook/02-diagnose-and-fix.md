@@ -34,7 +34,7 @@
 ## Lesson 2.1: Three kinds of constraint
 <!-- stage:grow -->
 
-**Why this matters:** A constraint is the one thing limiting your profit right now. Fixing anything else first wastes time and money. Most stores are short of sales even when the owner thinks they have an "ads problem".
+**Why this matters:** A constraint is the one thing limiting your profit right now. Fixing anything else first wastes time and money. Many stores are short of sales even when the owner thinks they have an "ads problem".
 
 **Step 1.** Open the Dashboard on **Month**. Write down orders, net sales, MER and contribution margin (contribution profit divided by net sales).
 
@@ -92,7 +92,7 @@
 
 **Watch out:** Boxes that fit the product better often save more than a new carrier. Many carriers charge by size as well as weight.
 
-**Step 3.** Set free shipping at about 20% above your average order value. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
+**Step 3.** Set free shipping at about 20% above your average order value, a common starting point. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
 
 **Expected result:** New orders either pay for shipping or grow to qualify for free shipping.
 
@@ -109,7 +109,7 @@
 1. Add a bundle or a "buy more, save more" deal (see Module 9).
 2. In Shopify, look at payment and app fees for last month. Divide them by sales.
 
-**Expected result:** Average order value goes up and fees are under about 3% of sales.
+**Expected result:** Average order value goes up. Payment fees sit close to your card rate, and you have cut apps you do not use.
 
 ## Lesson 2.4: Fixing fixed costs
 <!-- stage:grow -->
@@ -143,7 +143,7 @@
 
 **Expected result:** You have either found a shock (fix it or wait it out) or ruled one out.
 
-**Step 2.** Look at RPV (revenue per visit: net sales divided by sessions) on the Dashboard. Many healthy stores sit at $2.50 to $4. Below $2 is hard work, and below $1 makes ads very hard to run at a profit.
+**Step 2.** Look at RPV (revenue per visit: net sales divided by sessions) on the Dashboard. A common rule of thumb: $2.50 to $4 is healthy. Below $2 is hard work, and below $1 makes ads very hard to run at a profit.
 
 **Expected result:** You know whether RPV is healthy.
 
@@ -158,7 +158,7 @@
 **Step 4.** If each visit earns enough, look at clicks next.
 
 1. In Meta Ads Manager, find the **Outbound CTR** column. CTR (click-through rate) is how many people out of 100 who see the ad click to your site.
-2. Below 0.5% means the message or the ad itself is weak.
+2. As a rough guide, below 0.5% means the message or the ad itself is weak.
 
 **Expected result:** You know whether the ad is getting clicks.
 
@@ -208,7 +208,7 @@
 
 **Expected result:** MER usually gets worse at first, then settles. If it settles, move to the next step; if not, go back one step and find out why.
 
-**Watch out:** Raising budget by more than about 20% at once restarts learning on Meta. Big jumps are better done by adding a new campaign.
+**Watch out:** A big budget jump can send a Meta ad set back into the learning phase. Many advertisers raise by about 20% at a time. For bigger jumps, test the new budget in a separate campaign (see [Meta: about the learning phase](https://www.facebook.com/business/help/112167992830700)).
 
 <!-- do:meta-draft -->
 
@@ -239,7 +239,7 @@ A store makes $50,000 a month. MER is 20%, VCR 40%, FCR 30%, and profit 10%.
 
 **Expected result:** One number: the cost of the extra orders. For example, an extra $600 for 10 extra orders is $60 each.
 
-**Step 4.** Compare that number with your break-even cost per order (Lesson 1.5). If it is higher, you are past your safe spend for now.
+**Step 4.** Compare that number with your break-even CPA, the most you can pay for one order (Lesson 1.5). If it is higher, you are past your safe spend for now.
 
 **Expected result:** You know if your next dollar makes or loses money.
 
@@ -251,7 +251,7 @@ A store makes $50,000 a month. MER is 20%, VCR 40%, FCR 30%, and profit 10%.
 
 ## Self-check
 
-1. Which kind of constraint is most common?
+1. Which kind of constraint do many stores have, even when they blame the ads?
 2. Name three fixes for high shipping cost.
 3. RPV is $3.20 and MER is high. Is it the site or the ads?
 4. Outbound CTR is 0.4%. What do you change?

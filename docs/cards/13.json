@@ -1,5 +1,5 @@
 {
-"13.1": {"intro": "A year of sales works best as a rhythm. Customers learn when to look, and you're never rushing. Deep discounts are only a last resort.",
+"13.1": {"intro": "A year of sales works best as a rhythm. Customers learn when to look, and you're never rushing. Deep discounts are only a last resort for slow stock.",
  "steps": [
   {"say": "Pick a regular day and time for new products. Example: the first Thursday of each month, 7pm. Put the next 6 in your calendar.", "check": "Your release dates are set and repeat monthly.", "lost": "Pick one day each month for new products."},
   {"say": "Add gift days and special moments (Mother's Day, Valentine's Day). Pick a chosen set of products, not a store-wide discount.", "check": "Each event has a product selection planned.", "lost": "Add Mother's Day with 5 gift picks."},
@@ -15,13 +15,13 @@
  ]},
 "13.3": {"intro": "How you set up a launch depends on your spend. Your email list and warm audiences should hear first.",
  "steps": [
-  {"say": "Choose where launch ads go.\n\n- Spend about $1,000 a day or more: make a separate launch campaign.\n- Spend less: add launch ads to your normal cold and warm campaigns.", "check": "Launch ads have a home that fits your budget.", "lost": "Under $1,000 a day? Add launch ads to your normal campaigns."},
+  {"say": "Choose where launch ads go (a rough rule of thumb).\n\n- Spend about $1,000 a day or more: make a separate launch campaign.\n- Spend less: add launch ads to your normal cold and warm campaigns.", "check": "Launch ads have a home that fits your budget.", "lost": "Under $1,000 a day? Add launch ads to your normal campaigns."},
   {"say": "Give warm audiences and your email list first access. Keep your always-on campaigns running.", "check": "Your best people hear first, and new customers keep coming.", "lost": "Don't switch off your normal campaigns."}
  ]},
-"13.4": {"intro": "A big sale is a project with several parts. Planning them in order makes the sale profitable.",
+"13.4": {"intro": "A big sale is a project with seven parts. Planning them in order makes the sale profitable.",
  "steps": [
   {"say": "Set a target: last year's sales for this event times your growth rate. Example: $20,000 × 1.2 = $24,000. Check it against list size, budget and stock.", "check": "You have a sales target you can actually support.", "lost": "Take last year's sale number. Times your growth."},
-  {"say": "Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale, and a VIP perk. Check margin at every level.", "check": "Every offer level still makes money.", "lost": "Pick one main offer. Check it still makes money."},
+  {"say": "Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale, and a VIP perk. Check margin at every level.", "check": "Every offer level still makes money.", "careful": "A \"was\" price must be one you really charged for a while just before the sale. Fake \"was\" prices break the law. In the EU, it must be your lowest price in the last 30 days.", "lost": "Pick one main offer. Check it still makes money."},
   {"say": "Pick a theme: a name, a look and a message that stand out.", "check": "The sale has a name and a look.", "lost": "Give your sale a name."},
   {"say": "Plan the ad budget for each day of each phase (hype, launch, middle, finish), and the split between normal and sale campaigns.", "check": "Every sale day has a planned budget.", "lost": "Write a budget for launch day."},
   {"say": "List the ads you need for each phase and audience (cold, warm, hot). Plan emails and texts too (Lesson 10.13).", "check": "Ads and messages are planned for every phase.", "lost": "List the ads for launch day."},
@@ -53,20 +53,20 @@
 "13.8": {"intro": "If a sale is behind plan, it's usually one of five things. Find it fast, then fix it without breaking trust.",
  "steps": [
   {"say": "Check the five causes: an offer weaker than competitors', an offer that's not clear in the first seconds of ads, a site problem, a list that's too small, or bad timing.", "check": "You've named the likely cause.", "lost": "Is your offer clear in the first second of your ad?"},
-  {"say": "Pick one rescue: add a free gift level, release something new, send a stronger email, or move budget to warm audiences.", "check": "A rescue is live within hours.", "careful": "Only extend the sale if it won't break trust. Customers notice fake \"last chances\".", "lost": "Add a free gift level."}
+  {"say": "Pick one rescue: add a free gift level, release something new, send a stronger email, or move budget to warm audiences.", "check": "A rescue is live within hours.", "careful": "Only extend the sale if it won't break trust. Customers notice fake \"last chances\", and stores have paid fines for countdown timers that reset.", "lost": "Add a free gift level."}
  ]},
 "13.9": {"intro": "Your sale plan grows with you. Start simple and add a bit each time.",
  "steps": [
   {"say": "Find your level: starter (one offer, simple schedule, sale versions of flows), seasoned (gift levels, hype phase, mid-sale release, separate sale campaigns) or advanced (daily budget plan, every channel planned, product sales targets).", "check": "You know your level.", "lost": "New to sales? You're a starter. That's fine."},
   {"say": "Add one thing from the next level to your next sale.", "check": "Each sale is a bit smarter than the last.", "lost": "Add just one new thing."}
  ]},
-"13.10": {"intro": "Plan the whole busy season, not one weekend. Black Friday is often won months before November. Helix adds the plan to your calendar from 1 August.",
+"13.10": {"intro": "Plan the whole busy season, not one weekend. In 2026, Black Friday is 27 November and Cyber Monday is 30 November. Helix adds the plan to your calendar from 1 August.",
  "steps": [
   {"say": "All year, test ad ideas and offers, and grow your list. Then you know what works before the busy season.", "check": "You have proven ads and a bigger list by August.", "lost": "Test one ad idea this month."},
   {"say": "Put the Black Friday stages in your Helix calendar.\n\n- August: review last year. Set targets. Test new ads.\n- September: order stock 10 to 12 weeks out. Lock the offer.\n- October: finish ads. Warm up audiences. Build email flows.\n- November: launch. Check numbers daily.\n- December and January: review and plan next year.", "check": "Every stage is in your calendar with dates.", "lost": "Find this month on the list. Do that part."},
   {"say": "Add gift campaigns with delivery cut-off dates (\"order by the 18th for Christmas\").", "check": "Shoppers know the last safe day to order.", "lost": "Add your Christmas order-by date to your site."},
-  {"say": "Plan for Boxing Day and the quiet weeks after (sometimes called the fifth quarter). Ad costs drop then, so new customers can be cheaper.", "check": "You have a plan for late December and January.", "lost": "Plan one January campaign."},
-  {"say": "Add end of financial year sales where they matter (June in some countries), and Valentine's, Mother's and Father's Day gift picks.", "check": "Your year has every key date planned.", "lost": "Add Mother's Day to your calendar."}
+  {"say": "Plan for Boxing Day and the quiet weeks after (sometimes called the fifth quarter). Ad costs often drop then, so new customers can be cheaper.", "check": "You have a plan for late December and January.", "lost": "Plan one January campaign."},
+  {"say": "Add end of financial year sales where they matter (30 June in Australia), and Valentine's, Mother's and Father's Day gift picks.", "check": "Your year has every key date planned.", "lost": "Add Mother's Day to your calendar."}
  ]},
 "13.11": {"intro": "Big sales use every channel at once. One missed setting can cost a day of sales. Tick this list a week before.",
  "steps": [
@@ -82,7 +82,7 @@
   {"say": "Pick a window at least 8 weeks away from your biggest sale. Choose a reason: clearing a season's stock, end of financial year, or your brand's birthday.", "check": "You have 3 to 5 days and a reason customers will believe.", "lost": "Pick 3 days and one reason."},
   {"say": "Choose what's on sale: slow stock and last season's colours first. Best sellers only at a smaller discount, or not at all. Check each one's margin in your profit setup.", "check": "A product list where every line still makes money after marketing.", "lost": "Put your slowest product on sale first."},
   {"say": "Plan it in Helix Calendar: a teaser email 3 days before, a launch email and text, a middle-day reminder, a last-chance email, plus ads to past buyers and site visitors.", "check": "The sale and its messages are in your calendar with dates.", "lost": "Put the launch email in your calendar."},
-  {"say": "When it ends, write down how it went.\n\n1. Record sales, profit, units cleared, and new versus returning customers.\n2. Write one thing to change next time.", "check": "You know if the sale made money and if you'd repeat it.", "careful": "More than four sales a year and customers start waiting for the next one. Keep sales planned, rare and with a clear reason.", "lost": "Write down the profit. Was it worth it?"}
+  {"say": "When it ends, write down how it went.\n\n1. Record sales, profit, units cleared, and new versus returning customers.\n2. Write one thing to change next time.", "check": "You know if the sale made money and if you'd repeat it.", "careful": "Count big and small sales together. The more often you run sales, the more customers wait for the next one. Keep them planned, rare and with a clear reason.", "lost": "Write down the profit. Was it worth it?"}
  ]},
 "13.13": {"intro": "A discount takes money from every order. Work out how many more orders you need, then pick an offer you can reach.",
  "steps": [

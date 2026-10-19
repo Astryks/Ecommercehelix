@@ -1,6 +1,7 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { cancelEmail, dailyTasksEmail, eventEmail, paymentFailedEmail, receiptEmail, welcomeEmail, winbackEmail, scorecardHtmlEmail } from "@/lib/email/templates";
 import { dueEmails, localHour } from "@/lib/email/schedule";
+import { postalAddress } from "@/lib/email/postal";
 
 const c = { name: "Jamie Lee", baseUrl: "https://ecommercehelix.com", unsubUrl: "https://ecommercehelix.com/api/email/unsubscribe?t=tok&k=daily" };
 
@@ -12,6 +13,19 @@ describe("email templates", () => {
     for (const e of [welcomeEmail(c), receiptEmail(c, { amount: "US$29.00", plan: "Starter", date: "Oct 15" }), paymentFailedEmail(c, { amount: "US$29.00", updateUrl: "https://pay" }), cancelEmail(c, { until: "November 15, 2026" })]) {
       expect(e.marketing).toBe(false); expect(e.html).not.toContain("unsubscribe?t="); expect(e.html).toContain("always sent");
     }
+  });
+  it("marketing footers carry the postal address from BUSINESS_POSTAL_ADDRESS, and none is invented when it is unset (CAN-SPAM)", () => {
+    const addr = "PO Box 123, Sydney NSW 2000, Australia";
+    for (const e of [dailyTasksEmail({ ...c, postalAddress: addr }, [], "Friday"), winbackEmail({ ...c, postalAddress: addr }), scorecardHtmlEmail({ ...c, postalAddress: addr }, "S", "Hi,\nSales: $1")]) {
+      expect(e.html).toContain(addr); expect(e.text).toContain(`E-commerce Helix, ${addr}`);
+    }
+    expect(receiptEmail({ ...c, postalAddress: addr }, { amount: "US$29.00", plan: "Starter", date: "Oct 15" }).html).not.toContain(addr);
+    const none = winbackEmail({ ...c, postalAddress: null });
+    expect(none.html).toContain("E-commerce Helix</td>"); expect(none.text.endsWith("E-commerce Helix")).toBe(true);
+    expect(postalAddress({ BUSINESS_POSTAL_ADDRESS: " PO Box 123\nSydney NSW 2000 " })).toBe("PO Box 123, Sydney NSW 2000");
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    expect(postalAddress({})).toBeNull(); expect(postalAddress({ BUSINESS_POSTAL_ADDRESS: "  " })).toBeNull();
+    expect(warn.mock.calls.length).toBeLessThanOrEqual(1); warn.mockRestore();
   });
   it("uses the first name, escapes HTML and keeps the key promises", () => {
     expect(welcomeEmail(c).text.startsWith("Hi Jamie,")).toBe(true);

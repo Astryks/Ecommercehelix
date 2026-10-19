@@ -33,7 +33,7 @@
 
 **Why this matters:** Expanding to a country with no demand burns cash on shipping, ads and setup. A quick check of your own data shows where people already want what you sell.
 
-**Step 1.** In Shopify, open **Analytics > Reports > Sales by billing country** and **Sessions by country**. List your top 5 countries outside home for the last 12 months.
+**Step 1.** In Shopify, open **Analytics > Reports > Total sales by billing location** and **Sessions by location**. List your top 5 countries outside home for the last 12 months.
 
 **Expected result:** You have a ranked list of countries with orders and visits.
 
@@ -41,7 +41,7 @@
 
 **Expected result:** Each country has a monthly search volume.
 
-**Step 3.** Check if rivals already sell there. See where your social followers come from (Instagram **Insights > Audience > Top locations**).
+**Step 3.** Check if rivals already sell there. See where your social followers come from (Instagram **Insights > Total followers > Top locations**).
 
 **Expected result:** Each country has a competition and audience note.
 
@@ -69,18 +69,18 @@
 
 **Why this matters:** Local prices in local currency, rounded to normal price points, sell better than converted prices. Deciding who pays duties up front avoids angry customers at the door.
 
-**Step 1.** In Shopify, go to **Settings > Markets > [country] > Products and pricing**. Set prices in local money, rounded to normal prices (49 euros, not 47.83).
+**Step 1.** In Shopify, open **Markets > Catalogs** to set prices in local money for that market. Round them to normal prices (49 euros, not 47.83).
 
 **Expected result:** Shoppers in that country see clean local prices.
 
-**Step 2.** Choose delivered duty paid (DDP: you include duties in the price) in your Markets or shipping app settings.
+**Step 2.** Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.
 
 **Expected result:** Customers pay no surprise bill at delivery, which usually sells better.
 
 ## Lesson 15.4: Product and promotion
 <!-- stage:grow -->
 
-**Why this matters:** What sells at home may need tweaks abroad. Five changes cover most of it.
+**Why this matters:** What sells at home may need tweaks abroad. Three changes cover most of it.
 
 **Step 1.** Convert sizing for the country (for example US versus European sizes) on size charts.
 
@@ -122,7 +122,7 @@
 
 **Why this matters:** One store with multi-market settings is simpler and is where to start. A separate store only makes sense when products, prices, content or apps need to be very different.
 
-**Step 1.** Set up the new country in Shopify **Settings > Markets** on your existing store.
+**Step 1.** Set up the new country in Shopify **Markets** on your existing store.
 
 **Expected result:** The country is live as a market on your main store.
 

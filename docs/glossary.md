@@ -13,9 +13,9 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Advantage+** (Advantage+ audience): Meta's automatic settings that let its system choose audience, placements or budget for you.
 - **Angle** (angles): The reason to buy that an ad focuses on, like saving time or looking good.
 - **AOV** (average order value): Average order value: total sales divided by number of orders.
-- **Attribution**: Deciding which ad or channel gets credit for a sale.
-- **BAS** (business activity statement): Business activity statement: the form some businesses lodge with their tax office to report and pay GST.
-- **Brand search**: Ads that show when people search your brand name. Cheap and usually very profitable.
+- **Attribution**: Deciding which ad or channel gets credit for a sale. Meta's default counts sales within 7 days of a click or 1 day of a view.
+- **BAS** (business activity statement): Business activity statement: the form GST-registered Australian businesses lodge with the ATO to report and pay GST.
+- **Brand search**: Ads that show when people search your brand name. Usually cheap and often very profitable.
 - **Break-even CPA**: The most you can pay in ads for one sale before that sale stops making money.
 - **Break-even ROAS**: The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
 - **Broad targeting** (broad): Letting Meta find buyers with few or no audience limits. Works best with strong ads.
@@ -26,7 +26,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Campaign email** (campaign emails): A one-off email you send to your list, like a new arrival announcement.
 - **Card testing**: When fraudsters use your checkout to try many stolen card numbers with small orders.
 - **Cash forecast**: A week-by-week list of money coming in and going out, so you can see tight weeks early.
-- **Chargeback** (chargebacks, dispute): When a customer asks their bank to reverse a card payment. The bank takes the money back until you prove the sale.
+- **Chargeback** (chargebacks, dispute): When a customer asks their bank to reverse a card payment. The money is taken back, and you can send evidence to dispute it.
 - **Clearing account** (clearing accounts): A holding account in your books where a payment provider's sales and fees sit until the payout lands in the bank.
 - **Cold audience** (cold, prospecting): People who have never heard of you.
 - **Contractor** (contractors): Someone who runs their own business and does work for you, rather than being your employee.
@@ -39,7 +39,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Custom audience** (custom audiences): A list Meta builds from your own data, like site visitors or customers.
 - **DAP** (delivered at place, DDU): Delivered at place: the customer pays any import taxes when the parcel arrives.
 - **DDP** (delivered duty paid): Delivered duty paid: you pay the import taxes so the customer pays nothing extra on delivery.
-- **De minimis**: A value below which imported parcels skip duty or tax. The US ended its $800 de minimis for all countries in August 2025.
+- **De minimis**: A value below which imported parcels skip duty or tax. The US suspended its $800 de minimis for all countries in August 2025.
 - **Domain** (domain name): Your store's web address, like yourbrand.com.
 - **Duties** (import duty, customs duty): Taxes charged by a country on goods coming in from overseas.
 - **Express wallets**: One-tap payment options like Apple Pay, Google Pay and Shop Pay.
@@ -48,29 +48,29 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Free shipping threshold** (threshold): The order amount where shipping becomes free, like 'Free shipping over $100'.
 - **Frequency**: How many times, on average, the same person saw your ad.
 - **Funnel**: The steps from seeing an ad to buying: visit, add to cart, checkout, order.
-- **GST** (goods and services tax): Goods and services tax: a percentage set by each country (often 10% to 15%), added to most sales once you are registered.
+- **GST** (goods and services tax): Goods and services tax. Each country sets its own rate, such as 10% (Australia) or 15% (New Zealand). Registered businesses add it to most sales.
 - **Guarantee** (risk reversal): A clear promise that removes the fear of a bad purchase, like a 30-day money-back promise.
 - **Holdout test** (holdout): Turning something off for a while (or in one area) to see how many sales it really adds.
 - **Hook** (hooks): The first line or first 3 seconds of an ad. Its only job is to make people stop scrolling.
-- **Hook rate**: Out of everyone who saw your video ad, the share who watched at least 3 seconds. It tells you if the opening grabs attention.
+- **Hook rate**: Out of everyone who saw your video ad, the share who watched at least 3 seconds. Meta has no built-in column, so you add it as a custom metric.
 - **Hot audience** (hot, retargeting): People close to buying: they added to cart or started checkout.
 - **IOSS** (Import One-Stop Shop): The EU scheme that lets a seller charge EU VAT at checkout on parcels worth up to 150 euros and pay it in one country.
 - **KPI** (KPIs): Key performance indicator: one of the few numbers you watch to know if things are working.
 - **Landed cost**: What one unit really costs once it reaches your warehouse: product, freight, duties and fees.
 - **Landing page**: The page someone lands on after clicking an ad.
 - **Lead time** (lead times): How long it takes from placing an order with your supplier to having stock ready to sell.
-- **Learning phase** (learning): The first days after you start or change an ad set, while Meta works out who to show it to. Results jump around, so wait.
+- **Learning phase** (learning): The days after you start or make a big change to an ad set. Meta is still working out who to show it to. It usually ends after about 50 results in the week after that change.
 - **Lookalike** (lookalike audience): People Meta thinks are similar to a list you give it, like your best customers.
 - **LTV** (lifetime value): How much a customer spends with you over time, not just on the first order.
 - **Margin** (gross margin): The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin.
-- **MER** (marketing efficiency ratio): All ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales.
+- **MER** (marketing efficiency ratio): Helix shows it as all ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales. Many tools flip it to sales divided by ad spend, so 25% shows as 4x.
 - **Meta description** (meta descriptions): The short summary under your page title in Google results.
 - **MOQ** (minimum order quantity): Minimum order quantity: the smallest order a supplier will accept.
 - **Negative keyword** (negatives, negative keywords): A word you tell Google never to show your ads for, to stop wasted clicks.
 - **Nexus** (economic nexus): In the US, a link with a state (like a warehouse there, or enough sales into it) that means you must collect its sales tax.
 - **Organic**: Unpaid: posts, search results and word of mouth that you do not pay to show.
 - **Partner access**: Letting an agency or freelancer use your ad account through their own business, while you keep ownership.
-- **Partnership ad** (partnership ads, Spark ads, Spark ad): An ad that runs from a creator's own account, so people see their name instead of yours.
+- **Partnership ad** (partnership ads, Spark ads, Spark ad): An ad that uses a creator's post or handle, so people see their name with yours. TikTok calls these Spark Ads.
 - **Payment reserve** (rolling reserve, payout hold): Part of your sales that a payment provider holds back for a while in case of refunds or chargebacks.
 - **Payout** (payouts): The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts.
 - **Pixel**: A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
@@ -79,16 +79,16 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Post-purchase offer** (upsell): A one-click extra offer shown right after someone buys.
 - **Product cost** (COGS, cost of goods): What one item costs you to make or buy, including freight to your warehouse.
 - **Product feed** (feed): The list of your products, prices and photos that Google and Meta read to make shopping ads.
-- **Profit** (contribution profit, contribution): What is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. This is the number Helix cares about most.
+- **Profit** (contribution profit, contribution): Usually means contribution profit: what is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. Net profit also takes off fixed costs.
 - **Reconciliation** (reconcile): Matching the money in your bank with the sales, fees and refunds in your books.
 - **Reorder point**: The stock level at which you should order more so you do not run out.
 - **Return rate**: The share of orders that customers send back.
-- **Revenue** (sales, gross sales): All the money customers paid. It looks good, but it is not what you keep.
+- **Revenue** (sales, gross sales): The money customers paid for orders. Helix uses net sales: after discounts and refunds, without GST or VAT. It is not what you keep.
 - **Revenue-based financing** (revenue based financing): A loan you repay as a share of your daily sales, so payments rise and fall with sales.
 - **Reverse charge**: A rule where the buyer, not the overseas seller, accounts for the GST on a business purchase, such as some ad bills.
 - **ROAS** (return on ad spend): Return on ad spend: how many dollars of sales you get for each $1 of ads. ROAS 3 means $3 of sales for $1 of ads.
 - **Safety stock** (safety days): Extra stock (or days of stock) you keep in case sales jump or a shipment is late.
-- **Sales tax** (state sales tax): In the US, a tax set by each state (and some cities) that the seller collects at checkout.
+- **Sales tax** (state sales tax): In the US, a tax set by most states (and many local areas) that the seller collects at checkout.
 - **Search terms** (search terms report): The exact words people typed into Google before they saw or clicked your ad.
 - **Segment** (segments): A smaller group of your list, like people who bought in the last 90 days.
 - **SEO** (search engine optimisation): Changes that help your store show up in Google without paying for ads.

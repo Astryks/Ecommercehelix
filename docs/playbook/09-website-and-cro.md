@@ -18,7 +18,7 @@
 >
 > 1. Make the top of each product page clear: what it is, price, reviews, add to cart.
 > 2. Remove anything that slows checkout and turn on express payment buttons.
-> 3. Set a free shipping amount a bit above your average order.
+> 3. Set a free shipping amount a bit above your average order (about 1.25 times).
 >
 > **Words to know:**
 >
@@ -92,14 +92,16 @@
 
 **Watch out:** If an optional add-on annoys people (for example shipping protection ticked by default) and hurts conversion, remove it.
 
+**Watch out:** A compare-at price is a "was" price. It must be a real price you charged recently, or it can break consumer law (Lesson 13.4).
+
 ## Lesson 9.3: Accessibility basics
 <!-- stage:convert -->
 
-**Why this matters:** Accessibility means everyone can use your store. That includes people who cannot see well or who use a keyboard instead of a mouse. It is good for customers and often helps your Google ranking too.
+**Why this matters:** Accessibility means everyone can use your store. That includes people who cannot see well or who use a keyboard instead of a mouse. Some fixes, like alt text, also help search engines understand your pages.
 
 **Step 1.** Run a free contrast check (for example WebAIM's contrast checker) on your text and button colours.
 
-**Expected result:** Body text and buttons pass at least the AA level.
+**Expected result:** Body text and buttons pass at least the AA level. For normal text that means a contrast ratio of 4.5 to 1 (see [WebAIM: contrast checker](https://webaim.org/resources/contrastchecker/)).
 
 **Step 2.** Add alt text to every product image in Shopify **Products > [product] > Media**. Alt text is a short description for screen readers.
 
@@ -116,7 +118,7 @@
 ## Lesson 9.4: Speed
 <!-- stage:convert -->
 
-**Why this matters:** Most shoppers use a phone, and a slow page loses them before they see what you sell. Only fixes that save a second or more are worth chasing.
+**Why this matters:** Most shoppers use a phone, and a slow page loses them before they see what you sell. Google measures speed with three Core Web Vitals, explained in Step 5.
 
 **Step 1.** Run your home page and a product page through PageSpeed Insights (pagespeed.web.dev) on mobile.
 
@@ -130,23 +132,23 @@
 
 **Expected result:** Fewer scripts run on each page.
 
-**Step 4.** Turn on bot protection, like Shopify's bot settings or your CDN. It blocks fake visits that mess up reports and slow the site.
+**Step 4.** Make sure spam protection is on in Shopify's **Online Store > Preferences**. It stops bots filling in your sign-up and contact forms.
 
-**Expected result:** Sessions in your reports reflect real people.
+**Expected result:** Fake sign-ups stop reaching your email list (see [Shopify: online store preferences](https://help.shopify.com/en/manual/online-store/setting-up/preferences)).
 
-**Watch out:** Only chase fixes that save 1 to 2 seconds or more. Tiny gains are not worth the effort.
+**Step 5.** In Shopify, find the web performance reports under **Analytics > Reports**. They show the three Core Web Vitals for real visitors.
 
-**Step 5.** Shrink images to under about 300 KB before upload, and keep videos short and compressed.
+**Expected result:** You know if your store passes Google's "good" levels. LCP (main image or text showing) is 2.5 seconds or less. INP (reaction to a tap) is 200 milliseconds or less. CLS (page jumping around) is 0.1 or less (see [Google: Web Vitals](https://web.dev/articles/vitals)).
 
-**Expected result:** Media files are small.
+**Step 6.** After your fixes, run the same two pages through PageSpeed Insights again.
 
-**Step 6.** Remove apps and sections you do not use.
-
-**Expected result:** Fewer scripts load.
+**Expected result:** You have a before and after result for each page.
 
 **Step 7.** On your phone, using mobile data, try to buy something and fix anything hard to tap or read.
 
-**Expected result:** The product page loads in about 3 seconds and buying is easy.
+**Expected result:** The main product image shows in about 2.5 seconds and buying is easy.
+
+**Watch out:** Only chase fixes that save a second or more. Tiny gains are not worth the effort.
 
 ## Lesson 9.5: Words that help people buy
 <!-- stage:convert -->
@@ -203,11 +205,11 @@
 
 **Step 2.** In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the steps: sessions, added to cart, reached checkout, then bought.
 
-**Expected result:** You know which step loses the most people.
+**Expected result:** You know which step loses the most people (see [Shopify: behaviour reports](https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports)).
 
 <!-- do:metrics -->
 
-**Step 3.** In Google Analytics, check traffic sources, landing pages that convert and visits from AI assistants.
+**Step 3.** In Google Analytics, check traffic sources, landing pages that convert and referrals from AI assistants like chatgpt.com.
 
 **Expected result:** You know where your best visitors come from.
 
@@ -239,7 +241,7 @@
 ## Lesson 9.10: Order value
 <!-- stage:convert -->
 
-**Why this matters:** AOV is average order value: sales divided by orders. It decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if fewer people do not buy as a result.
+**Why this matters:** AOV is average order value: sales divided by orders. It decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if just as many people still buy.
 
 **Step 1.** Set levels. Free shipping at one amount, a free gift at a higher amount, and a discount at a higher one again.
 
@@ -272,12 +274,12 @@ Free-gift tiers:
 ## Lesson 9.11: Shipping psychology
 <!-- stage:convert -->
 
-**Why this matters:** How you handle shipping changes how much people buy. Surprise shipping costs at checkout are a top reason people leave. A free shipping amount set in the right place makes many people add one more item.
+**Why this matters:** How you handle shipping changes how much people buy. About 7 in 10 online carts are abandoned. Extra costs like shipping, tax and fees are the top reason shoppers give (see [Baymard: cart abandonment](https://baymard.com/lists/cart-abandonment-rate)). A free shipping amount set in the right place makes many people add one more item.
 
 **Step 1.** Set your free shipping amount.
 
 1. In Shopify **Analytics**, find your average order value (AOV).
-2. Multiply it by 1.25. That's your free shipping amount.
+2. Multiply it by 1.25. That's your free shipping amount (a common rule of thumb).
 3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.
 
 **Expected result:** A free shipping rate appears at your chosen amount.
@@ -468,7 +470,7 @@ Free-gift tiers:
 
 **Step 6.** After 30 days, compare conversion for quiz takers with everyone else.
 
-**Expected result:** You know if the quiz earns its place. Quiz takers often buy at a higher rate.
+**Expected result:** You know if the quiz earns its place for your store.
 
 **Watch out:** Keep it short. Each extra question loses some people. Five questions is plenty.
 
@@ -509,7 +511,7 @@ Free-gift tiers:
 <details><summary>Answers</summary>
 
 1. Sessions, then add to cart, then reached checkout, then purchase.
-2. Just above your median order value (often about 1.2 to 1.3 times AOV).
+2. A bit above your average order value (AOV), about 1.25 times as a rule of thumb.
 3. Any three of: a free gift, bundles, early access for best customers, loyalty rewards.
-4. Tracking and site errors first, then payments, stock, prices and where traffic came from.
+4. Confirm the drop is real in Shopify orders and tracking, then test checkout and payments. Then check recent changes, stock, prices and traffic sources.
 </details>

@@ -20,7 +20,7 @@ export default async function DataDeletion({ searchParams }: PageProps<"/data-de
           <li>Optional: click <strong>Download my data</strong> to keep a copy.</li>
           <li>Under <strong>Delete my account</strong>, type DELETE and click the button.</li>
         </ol>
-        <p>Everything in your account is deleted from our database straight away. This also removes Helix&apos;s access to your Meta account and cancels any paid plan at Stripe immediately, so you are not charged again. Stripe keeps its own payment records as the law requires, and our providers&apos; backups roll off within their normal retention windows.</p>
+        <p>Everything in your account is deleted from our database straight away. This also removes Helix&apos;s access to your Meta account and cancels any paid plan at Stripe immediately, so you are not charged again. Your Shopify and Google Ads tokens are deleted too. To remove Helix fully, also uninstall it in Shopify and remove it under Third-party connections in your Google Account. Stripe keeps its own payment records as the law requires, and our providers&apos; backups roll off within their normal retention windows.</p>
       </Sec>
       <Sec title="Option 2: remove only your Meta data">
         <ol className="list-decimal space-y-2 pl-6">

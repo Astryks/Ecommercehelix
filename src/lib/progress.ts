@@ -21,10 +21,9 @@ export function dayProgress<D extends { day: number; stage: number }>(opts: {
   const { days, doneIds, completedToday, ahead, unlocked, taskId } = opts;
   const sorted = [...days].sort((a, b) => a.day - b.day);
   const nextDay = sorted.find((d) => !doneIds.has(taskId(d.day)));
-  const finishedTodayDays = completedToday
-    .map((id) => /^day-(\d+)$/.exec(id))
-    .filter((m): m is RegExpExecArray => Boolean(m))
-    .map((m) => Number(m[1]));
+  // Task ids are not always "day-<day number>" (Growing days keep their id when days are inserted), so map ids back to days.
+  const today = new Set(completedToday);
+  const finishedTodayDays = sorted.filter((d) => today.has(taskId(d.day))).map((d) => d.day);
   const lessonDoneToday = finishedTodayDays.some((n) => !nextDay || n < nextDay.day);
   const current = lessonDoneToday && !ahead ? undefined : nextDay;
   const status = (d: D): DayStatus => {

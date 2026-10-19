@@ -33,7 +33,7 @@
 ## Lesson 13.1: Your yearly sales calendar
 <!-- stage:convert -->
 
-**Why this matters:** A year of sales works best as a rhythm. Customers learn when to look, and you are never rushing. Four kinds of promotion cover the year, and only one of them needs deep discounts, as a last resort.
+**Why this matters:** A year of sales works best as a rhythm. Customers learn when to look, and you are never rushing. Four kinds of promotion cover the year. Deep discounts belong only to clearing slow stock, and only as a last resort.
 
 **Step 1.** Pick a regular day and time for new products, like the first Thursday of each month at 7pm. Put the next 6 on your calendar.
 
@@ -87,7 +87,7 @@
 
 **Step 1.** Choose where launch ads go.
 
-- Spend about $1,000 a day or more: make a separate launch campaign.
+- Spend about $1,000 a day or more (a rough rule of thumb): make a separate launch campaign.
 - Spend less: add launch ads to your normal cold and warm campaigns.
 
 **Expected result:** Launch ads have a home that fits your budget.
@@ -101,7 +101,7 @@
 ## Lesson 13.4: The big sale, step by step
 <!-- stage:convert -->
 
-**Why this matters:** A big sale is a project with eight parts, from the target to the shipping cut-offs. Planning each part in order is what makes a sale profitable and repeatable.
+**Why this matters:** A big sale is a project with seven parts, from the target to the shipping cut-offs. Planning each part in order is what makes a sale profitable and repeatable.
 
 **Step 1.** Set the target: last year's sales for this event times your growth rate. Check it against list size, budget and stock.
 
@@ -112,6 +112,8 @@
 **Step 2.** Build the offer: a main offer and free gift levels (spend $100, get a gift). Add something new mid-sale and a VIP extra. Check your margin at every level.
 
 **Expected result:** Every offer level still makes money.
+
+**Watch out:** A "was" or strike-through price must be one you really charged for a reasonable time just before the sale. Fake "was" prices break the law in Australia and the US (see [ACCC: two-price advertising](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising) and [FTC: deceptive pricing guides](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-233)). In the EU, the "was" price must be your lowest price in the 30 days before the sale.
 
 **Step 3.** Pick a theme: a name, a look and a message that stand out from competitors.
 
@@ -241,7 +243,7 @@ Who each sale campaign leaves out:
 
 **Expected result:** A rescue move is live within hours.
 
-**Watch out:** Extend the sale only if it will not damage trust. Customers notice fake "last chances".
+**Watch out:** Extend the sale only if it will not damage trust. Customers notice fake "last chances". Stores have paid ACCC penalties after their countdown timers reset past the "end" (see [ACCC: Black Friday penalties](https://www.accc.gov.au/media-release/james-lane-and-vuly-pay-penalties-for-allegedly-making-misleading-representations-during-last-year%E2%80%99s-black-friday-sales)).
 
 ## Lesson 13.9: Experience levels
 <!-- stage:convert -->
@@ -259,7 +261,7 @@ Who each sale campaign leaves out:
 ## Lesson 13.10: Key dates through the year
 <!-- stage:grow -->
 
-**Why this matters:** Plan the whole busy season, not one weekend. For many stores, Black Friday and Cyber Monday is the biggest time of the year. It is won months before November. Helix adds the staged plan to your calendar from 1 August.
+**Why this matters:** Plan the whole busy season, not one weekend. For many stores, Black Friday and Cyber Monday is the biggest time of the year. In 2026, Black Friday is 27 November and Cyber Monday is 30 November. It is won months before November. Helix adds the staged plan to your calendar from 1 August.
 
 **Step 1.** All year, test ad angles and offers and grow your list. Then you know what works before the busy season.
 
@@ -281,11 +283,11 @@ Who each sale campaign leaves out:
 
 **Expected result:** Shoppers know the last safe order date.
 
-**Step 4.** Plan for Boxing Day and the quiet weeks after. Ad costs drop then, so new customers can be cheaper.
+**Step 4.** Plan for Boxing Day and the quiet weeks after. Ad costs often drop then, so new customers can be cheaper.
 
 **Expected result:** You have a plan for late December and January.
 
-**Step 5.** Add end of financial year sales where they matter (June in some countries). Add gift picks for Valentine's, Mother's and Father's Day.
+**Step 5.** Add end of financial year sales where they matter (30 June in Australia). Add gift picks for Valentine's, Mother's and Father's Day.
 
 **Expected result:** Your year has every key date planned.
 
@@ -344,7 +346,7 @@ Who each sale campaign leaves out:
 
 **Expected result:** You know whether the sale made money and whether to repeat it.
 
-**Watch out:** More than four sales a year and customers start waiting for the next one. Keep sales planned, rare and with a clear reason.
+**Watch out:** Count big and small sales together. The more often you run them, the more customers wait for the next one. Keep sales planned, rare and with a clear reason.
 
 ## Lesson 13.13: Work out your sale numbers before you pick the discount
 <!-- stage:convert -->

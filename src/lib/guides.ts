@@ -1,4 +1,6 @@
 /** Step-by-step drawings in public/guides (made by scripts/build_guides.py). */
+import { DAYS } from "./seed/curriculum";
+
 export type Guide = { file: string; title: string; help?: { label: string; url: string } };
 
 const META_HELP = { label: "Meta: create a campaign", url: "https://www.facebook.com/business/help/1658289035439772" };
@@ -22,7 +24,7 @@ export const GUIDES: Record<string, Guide> = {
   "helix-1": { file: "helix-1-daily-update", title: "Update yesterday in Helix" },
 };
 
-/** Which drawings help on which curriculum day. */
+/** Which drawings help on which Growing day, keyed by the day's task id (curriculum.json "id"), so inserted days do not shift them. */
 const BY_DAY: Record<number, string[]> = {
   2: ["shopify-1", "helix-1"],
   11: ["shopify-2"],
@@ -44,6 +46,9 @@ const START_BY_DAY: Record<number, string[]> = {
   25: ["meta-1", "meta-2", "meta-3", "meta-4"],
 };
 
+const GROWING_ID = new Map(DAYS.map((d) => [d.day, d.id ?? d.day]));
+
 export function guidesForDay(day: number, track: "starting" | "growing" = "growing"): Guide[] {
-  return ((track === "starting" ? START_BY_DAY : BY_DAY)[day] ?? []).map((k) => GUIDES[k]);
+  const keys = track === "starting" ? START_BY_DAY[day] : BY_DAY[GROWING_ID.get(day) ?? day];
+  return (keys ?? []).map((k) => GUIDES[k]);
 }

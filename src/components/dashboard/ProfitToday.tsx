@@ -51,7 +51,7 @@ export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote
               <input name="adGoogle" type="number" min="0" step="0.01" inputMode="decimal" defaultValue={prefill.adGoogle || ""} placeholder="0" className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-lg font-semibold" /></label>
           </div>
           <button className="btn-primary mt-4 w-full text-base">Save and show my profit</button>
-          <p className="mt-2 text-xs leading-5 text-slate-500">Sales means the total before discounts and refunds, as shown in your store. Helix estimates product cost, shipping and fees from your recent days (about {estimatePct}% of sales). For exact costs, use <Link href="/dashboard/scorecard" className="underline">Your numbers</Link>.</p>
+          <p className="mt-2 text-xs leading-5 text-slate-500">Sales means gross sales: before discounts and refunds, without shipping (Shopify: Analytics &gt; Reports &gt; Total sales over time, Gross sales column).{taxNote && <> That column already leaves {taxNote} out, so if you copy it, pick &quot;before tax&quot; in <Link href="/dashboard/settings" className="underline">Settings</Link>.</>} Helix estimates product cost, shipping and fees from your recent days (about {estimatePct}% of sales). For exact costs, use <Link href="/dashboard/scorecard" className="underline">Your numbers</Link>.</p>
         </form>
       </div>
     </section>

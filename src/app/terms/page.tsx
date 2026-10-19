@@ -10,7 +10,7 @@ export default function Terms() {
   return (
     <LegalPage title="Terms of service" intro={`These terms are an agreement between you and ${OPERATOR} ("Helix", "we", "us"). By creating an account or using Helix you agree to them. Please read the billing part carefully: paid plans renew automatically every month until you cancel.`}>
       <Sec title="What Helix is">
-        <p>Helix is self-serve software for e-commerce store owners: lessons, a daily plan, a profit dashboard, a store check and, on paid plans, a Meta connection that reads your ad results and builds campaigns as paused drafts. There are no calls, no consulting and no done-for-you service.</p>
+        <p>Helix is self-serve software for e-commerce store owners: lessons, a daily plan, a profit dashboard, a store check and, on paid plans, connections to Shopify and Meta. Helix reads your results and builds Meta campaigns as paused drafts. There are no calls, no consulting and no done-for-you service.</p>
       </Sec>
 
       <Sec title="No guarantee of results, not advice">
@@ -25,7 +25,7 @@ export default function Terms() {
         <ul className="list-disc space-y-2 pl-6">
           <li>Free costs nothing. Starter is US$29 a month and Growth is US$59 a month, in US dollars, charged in advance by Stripe. We are not registered for GST, so no GST is charged. Prices are shown in US dollars. If your card is in another currency, your bank converts it and may add its own foreign transaction or currency fees. The price you see at Stripe Checkout before you pay is the price you are charged.</li>
           <li><strong>Auto-renewal:</strong> a paid plan is a subscription. It renews automatically each month on the same date and your card is charged the plan price until you cancel.</li>
-          <li>If a payment fails, Stripe will try again over the next few days. If it still fails, your account may move back to Free.</li>
+          <li>If a payment fails, Stripe will try again automatically. If it still fails, your account may move back to Free.</li>
           <li>Changing plans happens in <em>Manage billing</em> (the Stripe customer portal). Stripe adjusts the charge for the part of the month left (proration).</li>
           <li>If we change prices, we will email you at least 30 days before the new price applies to you, so you can cancel first.</li>
         </ul>
@@ -66,7 +66,7 @@ export default function Terms() {
       </Sec>
 
       <Sec title="AI features">
-        <p>Some features use AI to write short text, only when you press the button: a summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. AI text can be wrong or incomplete. Check it before you rely on it or publish it; you are responsible for what you publish. Each plan has a monthly AI allowance; when it runs out you still get Helix&apos;s standard advice. We never use your data to train AI models.</p>
+        <p>Some features use AI to write short text, only when you press the button: a summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. AI text can be wrong or incomplete. Check it before you rely on it or publish it; you are responsible for what you publish. Each plan has a monthly AI allowance; when it runs out you still get Helix&apos;s standard advice. We never use your data to train AI models, and Helix only sends AI requests to providers that do not train on them (see the Privacy Policy).</p>
       </Sec>
 
       <Sec title="Community and the Wins wall">
@@ -74,7 +74,7 @@ export default function Terms() {
       </Sec>
 
       <Sec title="Store reviews and emails">
-        <p>If you ask us to review your store, we give general feedback by email. It is not professional, legal, tax or financial advice and we do not promise results. Helix may email you a short weekly scorecard of your own numbers; you can ask us to stop at any time.</p>
+        <p>If you ask us to review your store, we give general feedback by email. It is not professional, legal, tax or financial advice and we do not promise results. Helix may email you daily steps, event reminders, alerts and a short weekly scorecard of your own numbers. You can unsubscribe from each one in one click or in Settings.</p>
       </Sec>
 
       <Sec title="Availability and changes">

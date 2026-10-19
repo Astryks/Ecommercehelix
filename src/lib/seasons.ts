@@ -447,7 +447,7 @@ export const CALENDAR_ONLY: CalendarOnly[] = [
   { key: "back-to-school-au", name: "Back to school", countries: ["AU"], kind: "seasonal", date: (y) => ymd(y, 1, 27),
     note: "School goes back from late January to early February, depending on the state. Shopping peaks in the 2 weeks before.", approx: "Varies by state" },
   { key: "easter", name: "Easter long weekend", countries: ["AU", "US"], kind: "seasonal", date: (y) => addDays(easterSunday(y), -2),
-    note: "Good Friday to Easter Monday. Good for gifting and treats. Check carrier closures and set shipping expectations." },
+    note: "Good Friday to Easter Monday in Australia; in the US, Easter Sunday is the main day. Good for gifting and treats. Check carrier closures and set shipping expectations." },
   { key: "memorial-day", name: "Memorial Day sales", countries: ["US"], kind: "sale", date: (y) => lastWeekday(y, 5, 1),
     note: "Last Monday of May. A big long-weekend sale and the unofficial start of summer." },
   { key: "july-4", name: "Fourth of July sales", countries: ["US"], kind: "sale", date: (y) => ymd(y, 7, 4),
@@ -461,7 +461,7 @@ export const CALENDAR_ONLY: CalendarOnly[] = [
   { key: "click-frenzy", name: "Click Frenzy", countries: ["AU"], kind: "sale", date: (y) => nthWeekday(y, 11, 2, 2),
     note: "A big online sale event, usually over 3 days in mid-November. Decide by late October if you join it or keep your offer for Black Friday.", approx: "Usually the 2nd week of November. Check the official dates" },
   { key: "singles-day", name: "Singles Day (11.11)", countries: ["AU", "US", "GLOBAL"], kind: "sale", date: (y) => ymd(y, 11, 11),
-    note: "The world's biggest online shopping day, started in China. Some stores run a one-day 11.11 offer as an early taste of Black Friday." },
+    note: "One of the world's biggest online shopping days, started in China. Some stores run a one-day 11.11 offer as an early taste of Black Friday." },
   { key: "thanksgiving", name: "Thanksgiving", countries: ["US"], kind: "seasonal", date: (y) => nthWeekday(y, 11, 4, 4),
     note: "Fourth Thursday of November. Black Friday starts the next day; many US stores open their sale on Thanksgiving." },
   { key: "cyber-monday", name: "Cyber Monday", countries: ["AU", "US", "GLOBAL"], kind: "sale", date: (y) => addDays(blackFriday(y), 3),
@@ -493,7 +493,12 @@ export type CalendarEntry = {
 export function mothersDay(country: Country, y: number): string | null {
   if (["GB", "IE", "IM", "JE", "GG"].includes(country)) return addDays(easterSunday(y), -21);
   if (["ES", "PT", "LT", "HU"].includes(country)) return nthWeekday(y, 5, 0, 1);
-  if (country === "FR" || country === "SE" || country === "DO") return lastWeekday(y, 5, 0);
+  if (country === "FR") {
+    // Last Sunday of May, moved to the first Sunday of June when it falls on Pentecost (Easter + 49 days).
+    const last = lastWeekday(y, 5, 0);
+    return last === addDays(easterSunday(y), 49) ? nthWeekday(y, 6, 0, 1) : last;
+  }
+  if (country === "SE" || country === "DO") return lastWeekday(y, 5, 0);
   if (country === "MX") return ymd(y, 5, 10);
   if (["AU", "US", "CA", "NZ", "DE", "IT", "JP", "NL", "BE", "CH", "AT", "DK", "FI", "BR", "ZA", "SG", "HK", "PH", "MY", "IN", "CN", "TW", "GR", "TR", "CL", "PE", "CO", "VE", "EC", "UY", "EE", "LV", "IS"].includes(country)) return nthWeekday(y, 5, 0, 2);
   return null;

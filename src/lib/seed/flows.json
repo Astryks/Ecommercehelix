@@ -6,7 +6,7 @@
     "goal": "Turn a new subscriber into a first-time buyer",
     "exitWhen": "Places an order",
     "discount": "Deliver the sign-up incentive in email 1. Never send a bigger code later in the flow.",
-    "benchmark": "Often 3 to 6% of store revenue once list growth is steady",
+    "benchmark": "Often one of the top-earning flows once list growth is steady",
     "tier": "growth",
     "example": { "status": "live", "revenue30d": 2140 },
     "emails": [
@@ -86,7 +86,7 @@
     "trigger": "Order delivered + 7 to 14 days (based on how long the product takes to show results)",
     "goal": "Collect reviews, photos and UGC",
     "exitWhen": "Leaves a review",
-    "discount": "Optional small reward for photo or video reviews (follow platform and local rules; never pay for positive reviews only).",
+    "discount": "Optional small reward for any honest photo or video review, disclosed on the review. Never tie a reward to a positive rating, and follow your review app's rules.",
     "benchmark": "Review volume feeds product page conversion and ad hooks",
     "tier": "growth",
     "example": { "status": "live", "revenue30d": 0 },

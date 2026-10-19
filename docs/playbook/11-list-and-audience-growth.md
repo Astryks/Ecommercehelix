@@ -67,6 +67,8 @@
 
 **Watch out:** Never offer a general gadget like a phone or a gift card.
 
+**Watch out:** On Facebook, a competition must not require or reward sharing or tagging friends (see [Meta: Pages, groups and events policies](https://www.facebook.com/policies_center/pages_groups_events)).
+
 ### Good to know
 
 | Type | How it works | Good | Not so good |
@@ -74,7 +76,7 @@
 | Sweepstakes | One big prize, drawn at the end | Cheap per entry, reaches lots of people | Many entrants are not keen buyers; purchases come later |
 | Instant win | Many small prizes; people find out right away if they won | Can run for months; people buy sooner | Needs more prizes, so each email costs more |
 | Collaboration giveaway | Several brands with similar customers share one prize pool | Each brand reaches the others' audiences | Takes coordination; audiences can be mixed |
-| Social competition | Like, follow and tag a friend to enter | Big boost in likes and reach | Adds little to your email list |
+| Social competition | Follow and comment to enter | Big boost in followers and reach | Adds little to your email list |
 
 ## Lesson 11.3: Running a competition
 <!-- stage:attract -->
@@ -85,9 +87,13 @@
 
 **Expected result:** You know the competition is legal where you run it.
 
+**Watch out:** In Australia, a game of chance may need a permit in NSW, SA, the ACT or the NT. It depends on the prize value (see [business.gov.au: marketing](https://business.gov.au/marketing-and-advertising/marketing)). In the US, New York and Florida need registration and a bond when prizes total over $5,000.
+
 **Step 2.** Build the entry form on a store page and as a pop-up.
 
 **Expected result:** People can enter on your site in two ways.
+
+**Watch out:** Say clearly on the entry form that entrants will get your emails. Consent hidden in the fine print does not count (see [ACMA: avoid sending spam](https://www.acma.gov.au/avoid-sending-spam)).
 
 **Step 3.** Make the content: a prize image, a short video and clear steps to enter.
 

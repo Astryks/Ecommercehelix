@@ -4,8 +4,8 @@
   {"say": "In Google Ads, open **Admin > Access and security**. Check that you are an admin owner.", "check": "Your email has Admin access. An agency owns it? Ask them in writing to give it to you.", "lost": "Check your email is listed as Admin."},
   {"say": "In Shopify, install the **Google & YouTube** app. Connect Google Ads and Merchant Center (where Google keeps your product list).", "check": "Both are connected and products are syncing.", "lost": "Install **Google & YouTube**. Connect both accounts."},
   {"say": "Make purchases the only thing that counts.\n\n1. Click **Goals > Conversions > Summary**.\n2. Make **Purchase** the only **Primary** action. Set others to **Secondary**.\n3. Turn on **Enhanced conversions**.", "check": "Only Purchase is Primary. Enhanced conversions say \"Active\".", "careful": "Check monthly. Other actions sometimes sneak back to Primary.", "lost": "Only **Purchase** should be Primary."},
-  {"say": "In the Shopify Google app, connect Google Analytics 4. Then in Google Ads, open **Admin > Linked accounts** and link GA4.", "check": "GA4 shows purchases and is linked.", "lost": "Link GA4 in **Linked accounts**."},
-  {"say": "In **Tools > Shared library > Audience manager**, make three audiences: site visitors, buyers, and your email list.", "check": "Three audiences show.", "lost": "Make one audience: site visitors."},
+  {"say": "Connect Google Analytics 4 (GA4).\n\n1. In the Shopify Google app, connect GA4.\n2. In Google Ads, click **Tools > Data manager > + Connect product**.\n3. Choose **Google Analytics (GA4) & Firebase**. Pick your property.", "check": "GA4 shows purchases and is linked.", "lost": "Link GA4 in **Tools > Data manager**."},
+  {"say": "In **Tools > Shared library > Audience manager**, make three audiences: site visitors, buyers, and your email list.", "check": "Three audiences show.", "careful": "Google only takes email lists from accounts with a good policy and payment record.", "lost": "Make one audience: site visitors."},
   {"say": "Open **Recommendations**. Click **Auto-apply**. Untick everything.", "check": "Google can't change campaigns without your click.", "lost": "Turn off **Auto-apply**."},
   {"say": "Rename each campaign with the pattern from Lesson 6.7. Click the name, then the pencil.", "check": "Every name shows number, type and job.", "lost": "Rename one campaign."}
  ]},
@@ -15,7 +15,7 @@
   {"say": "Use a clean main photo: just the product, plain background.", "check": "No text or logos on main photos.", "lost": "Swap one busy main photo for a clean one."},
   {"say": "Check feed prices and shipping match your site. Add barcode numbers (GTINs) if you have them.", "check": "Merchant Center shows no mismatches.", "lost": "Check one product's price matches your site."},
   {"say": "Add your own labels, like margin level, best seller or season.", "check": "Products can be grouped by label.", "lost": "Label your best sellers."},
-  {"say": "In Merchant Center, open **Products > Diagnostics**. Fix every error.", "check": "Zero errors.", "lost": "Fix one error today."}
+  {"say": "In Merchant Center, open **Products**, then the **Needs attention** tab. Fix every issue.", "check": "No errors left.", "lost": "Fix one error today."}
  ]},
 "8.3": {"intro": "Start Google simple. Add more campaigns as you grow.",
  "steps": [
@@ -28,34 +28,34 @@
  "steps": [
   {"say": "List buying words: \"buy\", \"best\", \"price\", or product type plus a feature, like \"linen shirt men\".", "check": "You have 20 to 50 keywords.", "lost": "Write ten search words a buyer would type."},
   {"say": "In **Tools > Keyword Planner**, check monthly searches and competition for each.", "check": "Each keyword has a number and a level.", "lost": "Check your top five in Keyword Planner."},
-  {"say": "Group keywords by theme. Five or fewer per ad group.", "check": "Each group is tightly themed.", "lost": "Put similar words together."},
+  {"say": "Group keywords by theme. Keep each ad group to a handful of close words.", "check": "Each group is tightly themed.", "lost": "Put similar words together."},
   {"say": "Make a shared negative list (words you never want, like \"free\" or \"jobs\") in **Shared library > Negative keyword lists**. Apply it to every campaign.", "check": "Wasted searches are blocked everywhere.", "lost": "Add \"free\" and \"jobs\" as negatives."}
  ]},
 "8.5": {"intro": "Search ads are short. Every line has to earn its spot.",
  "steps": [
-  {"say": "Write up to 15 headlines: product plus benefit, the offer, proof, urgency, your brand. Pin 1 or 2 so they always show.", "check": "Ad strength says \"Good\" or \"Excellent\".", "lost": "Write ten short headlines."},
+  {"say": "Write up to 15 headlines: product plus benefit, the offer, proof, urgency, your brand. Pin one only if it must always show.", "check": "Ad strength says \"Good\" or \"Excellent\".", "careful": "Pinning lowers ad strength. Pin as little as you can.", "lost": "Write ten short headlines."},
   {"say": "Write descriptions with reasons to buy, shipping and returns, and what to do next.", "check": "Each answers \"why here, why now\".", "lost": "Write two descriptions."},
   {"say": "Add extras: sitelinks to best collections, callouts like \"Free shipping\", lists of styles, and images.", "check": "Your ad takes more space.", "lost": "Add two sitelinks."}
  ]},
 "8.6": {"intro": "Target ROAS tells Google how much in sales you want for each $1 of ads. Base it on your break-even.",
  "steps": [
-  {"say": "Work out break-even ROAS: 1 ÷ (1 − VCR). With VCR at 45%, that's about 1.82.", "check": "You have your break-even ROAS.", "lost": "Use 1 ÷ (1 − VCR)."},
+  {"say": "Work out break-even ROAS: 1 ÷ (1 − VCR). VCR is order costs as a share of sales. With VCR at 45%, that's about 1.82.", "check": "You have your break-even ROAS.", "lost": "Use 1 ÷ (1 − VCR)."},
   {"say": "In the campaign's **Bidding**, set target ROAS above break-even with room for profit. Example: 2.4 if break-even is 1.82.", "check": "Google aims for a target that leaves profit.", "lost": "Set it a bit above break-even."},
-  {"say": "Change targets by about 10% at a time.", "check": "Bidding stays steady.", "lost": "Small changes only."}
+  {"say": "Change targets by about 10% at a time. Wait a week or two between changes.", "check": "Bidding stays steady.", "lost": "Small changes only."}
  ]},
 "8.7": {"intro": "New customers grow the store. Google can favour them.",
  "steps": [
   {"say": "Upload your customer list in **Audience manager > Your data segments**.", "check": "Google knows who already bought.", "lost": "Upload your customer list."},
-  {"say": "In the campaign's **Customer acquisition** setting, choose \"Bid higher for new customers\" or \"Only bid for new customers\".", "check": "The campaign favours new buyers.", "careful": "Only accept lower ROAS for new customers if they come back and buy again.", "lost": "Pick \"Bid higher for new customers\"."}
+  {"say": "In the campaign's **Customer acquisition** setting, choose \"Bid higher for new customers\" or \"Only bid for new customers\".", "check": "The campaign favours new buyers. Bidding higher needs value bidding and a Purchase goal.", "careful": "Only accept lower ROAS for new customers if they come back and buy again.", "lost": "Pick \"Bid higher for new customers\"."}
  ]},
 "8.8": {"intro": "Ten to twenty minutes once a week keeps Google profitable. Most waste hides in search terms.",
  "steps": [
   {"say": "Open **Insights and reports > Search terms**. Tick searches that cost money but never sell, click **Add as negative keyword**. Tick searches that sell, click **Add as keyword**.", "check": "Waste is blocked, winners are targeted.", "lost": "Block one wasteful search."},
-  {"say": "Check **Performance Max insights** for top products, searches and assets.", "check": "You know your top PMax products.", "lost": "Look at your top PMax product."},
+  {"say": "Check **Performance Max insights** for top products, searches and assets.", "check": "You know your top PMax products.", "careful": "PMax now has its own search terms report. You can block junk words there too.", "lost": "Look at your top PMax product."},
   {"say": "Find campaigns marked \"Limited by budget\". If they hit your target, raise the budget about 20%.", "check": "Good campaigns aren't held back.", "lost": "Hitting target and limited? Raise 20%."},
-  {"say": "Compare brand and non-brand spend. Fix new errors in **Merchant Center > Diagnostics**.", "check": "You know your non-brand spend, and the feed is clean.", "lost": "Fix any new feed errors."}
+  {"say": "Compare brand and non-brand spend. Fix new issues in Merchant Center under **Products > Needs attention**.", "check": "You know your non-brand spend, and the feed is clean.", "lost": "Fix any new feed errors."}
  ]},
-"8.9": {"intro": "Demand Gen shows short videos and pictures on YouTube, Discover and Gmail. Your best social videos often work there.",
+"8.9": {"intro": "Demand Gen shows videos and pictures on YouTube, Discover, Gmail and the Display Network. Your best social videos often work there.",
  "steps": [
   {"say": "Export your 3 best social videos in vertical and horizontal.", "check": "You have video files ready.", "lost": "Pick your best video. Export two shapes."},
   {"say": "Make a Demand Gen campaign with those videos, aimed at buyers, visitors and lookalikes.", "check": "The campaign is live.", "lost": "Make one Demand Gen campaign."},
@@ -63,7 +63,7 @@
  ]},
 "8.10": {"intro": "Big sales change shoppers overnight. Google needs a nudge to keep up.",
  "steps": [
-  {"say": "Tell Google a sale is coming.\n\n1. Click **Tools > Budgets and bidding > Seasonality adjustments**.\n2. Add one for the first 1 to 2 days of the sale.\n3. Set the expected change to what you saw in past sales.\n4. Set the end date.", "check": "It's scheduled for the sale dates.", "lost": "Add a seasonality adjustment for sale day one."},
+  {"say": "Tell Google a sale is coming.\n\n1. Click **Tools > Budgets and bidding > Adjustments**, then the **Seasonal** tab.\n2. Add one with dates that cover the sale. Best for sales of 1 to 7 days.\n3. Set the expected change to what you saw in past sales.\n4. Save. Google goes back to normal by itself.", "check": "It's scheduled for the sale dates.", "lost": "Add a seasonal adjustment for the sale dates."},
   {"say": "Add promotions and sale prices to your product feed.", "check": "Shopping ads show the sale price.", "lost": "Add sale prices to the feed."},
   {"say": "Raise budgets slowly in the week before.", "check": "Campaigns have enough money at the start.", "lost": "Raise budgets a little each day before."}
  ]},

@@ -1,7 +1,7 @@
 {
 "17.1": {"intro": "AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business.",
  "steps": [
-  {"say": "Make a project in your AI assistant (for example **Projects > New project**).", "check": "You have an empty project for your store.", "lost": "Click **New project**."},
+  {"say": "Make a project in your AI assistant. ChatGPT and Claude call it a **Project**. In Gemini, make a **Gem** and add your files.", "check": "You have an empty project for your store.", "lost": "Look for **New project** in the side menu."},
   {"say": "Upload your brand core (Module 4), customer profiles, offers, cost drivers (Module 1), how-you-do-things notes, and past winning ads and emails.", "check": "The project holds your business info.", "lost": "Upload your brand core first."},
   {"say": "Update the files whenever something changes.", "check": "Answers stay up to date with your business.", "lost": "Changed a price? Update the file."}
  ]},
@@ -24,10 +24,10 @@
   {"say": "Check every claim AI writes, especially health and before-and-after claims.", "check": "Nothing false goes out under your name.", "lost": "Read it. Is every claim true?"},
   {"say": "Label AI-made people and voices where rules need it. Report fakes of your content or face to the platform, with proof.", "check": "You follow the rules and protect your brand.", "lost": "Add an \"AI-made\" label where needed."}
  ]},
-"17.5": {"intro": "Helix follows the same rules. Maths is always exact, Helix doesn't use AI today, and nothing changes without your OK.",
+"17.5": {"intro": "Helix follows the same rules. Maths uses fixed rules, AI only writes short text, and nothing changes without your OK.",
  "steps": [
   {"say": "Helix uses fixed rules for all maths (profit, MER, break-even). So the numbers are always exact.", "check": "You can trust every number on the Dashboard.", "lost": "Helix maths is fixed rules, not guesses."},
-  {"say": "Helix doesn't use AI today. If that changes, Helix will say exactly what the AI does and what it costs.", "check": "You know Helix's advice comes from plain rules you can check.", "lost": "No AI in Helix today."},
+  {"say": "Helix only uses AI to write short text when you press the button: a store check summary, ad copy drafts and \"I'm lost\" answers. Each plan has a monthly allowance. Your data never trains AI models.", "check": "You know Helix's numbers and plan come from plain rules. AI text is a draft you read first.", "lost": "AI in Helix only writes drafts. The maths is fixed rules."},
   {"say": "Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on.", "check": "Every change in your accounts has your OK.", "lost": "Open **Waiting for your OK**."}
  ]}
 }

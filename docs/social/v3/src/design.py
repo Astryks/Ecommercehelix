@@ -1,6 +1,6 @@
-import re, html, random
+import re, html, random, os
 from data import TILE, SWIPE
-LOGO=open('/workspace/reports/helix/facebook/src/logo.svg').read()
+LOGO=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'logo.svg')).read()
 LOGO=re.sub(r'<rect[^>]*/>','',LOGO)
 # ---------------- colourways ----------------
 # bg, fg(body), hd(headline), ac(accent: kicker/numbers), sw(headline swipe), cd(card), ct(card text), ln(lines), dd(doodle), dd2(2nd doodle), hl(highlight on cards), note(sticky colour), lg(logo ink), lp(logo accent)

@@ -17,7 +17,7 @@ describe("goals ladder", () => {
     expect(step("contributionPct").good).toMatch(/15% or more is healthy/);
     expect(step("netProfit").good).toMatch(/10 to 20% net/);
     expect(step("ctrPct").good).toMatch(/Under 0\.5%/);
-    expect(step("atcPct").good).toMatch(/8%/);
+    expect(step("atcPct").good).toMatch(/6%/);
   });
   it("has suggested goals for each track that hang together", () => {
     for (const t of ["starting", "growing"] as const) {

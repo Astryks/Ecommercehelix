@@ -8,12 +8,12 @@
 "11.2": {"intro": "A competition (giveaway) can add thousands of subscribers fast. The prize decides if you get future buyers or just prize hunters.",
  "steps": [
   {"say": "Read the four competition types in the lesson's table. Pick one.", "check": "You've chosen a type.", "lost": "Pick the first type in the table."},
-  {"say": "Choose a prize only your kind of customer wants: your own products, or an experience linked to them.", "check": "The prize will attract future buyers, not prize hunters.", "careful": "Never offer a general gadget like a phone or a gift card.", "lost": "Make the prize a bundle of your own products."}
+  {"say": "Choose a prize only your kind of customer wants: your own products, or an experience linked to them.", "check": "The prize will attract future buyers, not prize hunters.", "careful": "Never offer a general gadget like a phone or a gift card. On Facebook, you can't make people share or tag friends to enter.", "lost": "Make the prize a bundle of your own products."}
  ]},
 "11.3": {"intro": "A good competition has seven parts, from rules to checking who buys. The follow-up emails matter most.",
  "steps": [
-  {"say": "Pick the type and prize. Check your local promotion rules (some places need a permit).", "check": "You know the competition is legal where you run it.", "lost": "Look up your local giveaway rules."},
-  {"say": "Build the entry form on a store page, and as a pop-up.", "check": "People can enter on your site two ways.", "lost": "Make the entry page first."},
+  {"say": "Pick the type and prize. Check your local promotion rules (some places need a permit).", "check": "You know the competition is legal where you run it.", "careful": "In Australia, some states need a permit, depending on prize value. In the US, New York and Florida need registration when prizes total over $5,000.", "lost": "Look up your local giveaway rules."},
+  {"say": "Build the entry form on a store page, and as a pop-up.", "check": "People can enter on your site two ways.", "careful": "Say clearly on the form that people who enter will get your emails. Consent hidden in fine print doesn't count.", "lost": "Make the entry page first."},
   {"say": "Make the content: a prize picture, a short video, and clear steps to enter.", "check": "The content is ready.", "lost": "Take one nice photo of the prize."},
   {"say": "Run ads to broad audiences with a Leads campaign, or a Sales campaign that sends people to the entry page.", "check": "Ads are live and entries are coming in.", "lost": "Start one Leads campaign."},
   {"say": "Set up a welcome flow for people who enter, with a small offer.", "check": "Every person who enters gets welcome emails.", "lost": "Turn on a welcome flow for entrants."},

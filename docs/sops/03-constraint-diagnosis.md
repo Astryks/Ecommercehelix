@@ -32,14 +32,14 @@ Throughput is the most common real constraint. Many owners think they have an ad
 
 1. **Temporary shock?** Check for a best seller out of stock, a recent sale (hangover), seasonality, a competitor sale, a tracking break, a site outage or a policy rejection. If yes, fix or wait. Do not rebuild.
 2. **Split traffic cost from revenue per visit.**
-   - RPV below the category benchmark (about $2.50 to $4 for most categories; fashion often lower): site or offer problem.
+   - RPV below the benchmark: site or offer problem. A common rule of thumb is $2.50 to $4 for many stores, with fashion often lower. Also compare with your own last 90 days.
    - RPV fine: ad problem.
 3. **If RPV is the problem, split CR from AOV.** There is no universal "good" conversion rate; there is only a good RPV for your price point.
    - Low AOV: bundles, cart tiers, post-purchase upsell (SOP 12).
    - Low CR on a high-priced product: risk reversal such as trials, samples, guarantees, finance options (SOP 04).
    - Low CR generally: clarity, proof, friction fixes (SOP 11).
 4. **If ads are the problem:**
-   - Outbound CTR below 0.5%: creative, message or offer in the ad (SOP 07, 08).
+   - Outbound CTR below 0.5% (a Helix rule of thumb): creative, message or offer in the ad (SOP 07, 08).
    - CTR healthy but cost per click high relative to RPV: CPMs are high. Check frequency, audience saturation, season.
    - Engaging ads with poor cost per purchase: the landing page does not deliver what the ad promised (SOP 11).
    - There is no universal cost-per-click benchmark. What matters is cost per click versus RPV.
@@ -51,7 +51,7 @@ Throughput is the most common real constraint. Many owners think they have an ad
 3. Find the breakeven revenue at which extra spend still makes money after variable and fixed costs.
 4. If breakeven requires more than doubling the business, fix the cost or conversion drivers first.
 5. Write down the maximum you are willing to lose on the test (the extra spend). That is the worst case.
-6. Prepare creative before scaling. A scale-up with tired ads usually fails.
+6. Prepare creative before scaling: have at least 3 to 5 new ads ready. A scale-up with tired ads usually fails. Hold each spend step for 10 to 14 days before the next (SOP 05).
 
 ## Who does what
 

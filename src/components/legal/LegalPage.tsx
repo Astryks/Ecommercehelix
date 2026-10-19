@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-export const LEGAL_UPDATED = "15 October 2026";
+export const LEGAL_UPDATED = "17 October 2026";
 
 export function Mail() {
   return <a className="text-cyan-700 underline" href="/contact">our contact page</a>;

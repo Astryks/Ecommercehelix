@@ -11,7 +11,7 @@
 
 ## Step 1. Business numbers first
 
-Before opening Ads Manager, read the scorecard stance (Push, Careful push, Hold, Defend) from the 3-day and month-to-date MER (see the Compound Plan, section 2). The stance sets how aggressive today's changes are.
+Before opening Ads Manager, read the scorecard stance (Push, Careful push, Hold, Defend) from the 3-day and month-to-date MER (see the [Compound Plan](../compound-daily-plan.md), section 2). The stance sets how aggressive today's changes are.
 
 | Stance | Budget | Optimisation |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ Only grade an ad once it has spent at least the good CPP threshold.
 - Good CPP = AOV x target MER x layer multiplier (Cold 2.0, Mixed 1.25, Warm 1.0, Hot 0.75).
 - Bad CPP = 2 x good CPP.
 - CPP window: last 4 days. Frequency window: last 7 days. (For long consideration products, widen both.)
-- Frequency lines (fine / high): Cold 1.4 / 1.8, Mixed 1.8 / 2.0, Warm 2.0 / 2.4, Hot 2.4 / 3.0.
+- Frequency lines per ad (fine / high): Cold 1.4 / 1.8, Mixed 1.8 / 2.0, Warm 2.0 / 2.4, Hot 2.4 / 3.0.
 
 | Grade | Rule | Action today |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Only grade an ad once it has spent at least the good CPP threshold.
 
 **High-reach ads:** an ad that reaches far more people before frequency hits 2 can be worth more than an ad with a slightly lower CPP. Favour reach when scaling.
 
-**A star that turns into a budget hog:** if a former star now has high frequency and middling CPP but still takes most of the spend, turn it off or move it to another campaign so budget flows to fresher ads.
+**A star that turns into a budget hog:** a former star may now have high frequency and middling CPP but still take most of the spend. Turn it off or move it to another campaign, so budget flows to fresher ads.
 
 ## Step 4. Campaign state: does it need new ads?
 
@@ -55,7 +55,7 @@ Only grade an ad once it has spent at least the good CPP threshold.
 | Shaky | No Star, Steady ads with rising frequency | Prepare a batch in the build campaign, add in 1 to 2 days. |
 | Dying | No Star and under 30% of the original batch still running | Add a batch now, or close the campaign. |
 
-Batch size by daily campaign spend: up to $100 is 4 to 8 ads; $100 to $500 is 8 to 12; over $500 is 12 to 15. Adding ads resets learning, so add them in one go, not one at a time.
+Batch size by daily campaign spend: up to $100 is 4 to 8 ads; $100 to $500 is 8 to 12; over $500 is 12 to 15. Adding ads to an ad set can restart learning, so add them in one go, not one at a time.
 
 ## Step 5. Weekly product fit snapshot
 
@@ -63,7 +63,7 @@ For each product, plot last month's ad spend against return. Products with high 
 
 ## Saved columns (set up once)
 
-Delivery, budget, amount spent, purchases, cost per purchase, purchase value, ROAS, reach, frequency, impressions, CPM, cost per 1,000 reached, AOV (custom: purchase value ÷ purchases), outbound CTR, outbound clicks, cost per outbound click, adds to cart, cost per add to cart.
+Delivery, budget, amount spent, purchases, cost per purchase, purchase value, purchase ROAS, reach, frequency, impressions, CPM, cost per 1,000 Accounts Center accounts reached, AOV (custom: purchase value ÷ purchases), hook rate (custom: 3-second video plays ÷ impressions), outbound CTR, outbound clicks, cost per outbound click, adds to cart, cost per add to cart.
 
 ## Who does what
 
