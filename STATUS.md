@@ -1,3 +1,33 @@
+# ▶ NEXT STEPS (updated 20 Oct 2026) — start here
+
+Work paused to save credits. Everything below is pending; nothing is half-done in the repo (the course-reorder work was stopped before any change).
+
+**1. Approved by Sid, not started (do in one branch, open a PR, review the preview before merging):**
+- **New lesson: SEO basics** (Attract): search intent → page type, keywords from Search Console / autocomplete / People also ask, titles and descriptions, URLs and handles, alt text, internal links, URL redirects when deleting or renaming, broken links and 404s, sitemap in Search Console, product FAQs, structured data via the theme (Rich Results Test), writing for AI search, a monthly routine. Official sources only (developers.google.com/search, Search Console help, help.shopify.com). Relate to 12.8 so nothing is duplicated.
+- **New lesson: Meta audience check** (Attract, next to 20.2): per-campaign Audience segments breakdown (new / engaged / existing), rules of thumb (~70%+ of cold spend on new people, new-audience frequency under ~2 over 7 days), a cause → fix table, and Meta's per-ad-set customer setting that replaces the retired existing-customer cap (verify its name on Meta's help centre first).
+- **Restore five brand examples** in the daily founder-story emails (genericised in PR #3): Spanx, Nike (Blue Ribbon Sports may be named as part of Nike's story), Gymshark, Glossier, Patagonia. Others stay generic. Update the branding rule: third-party brands may be named only as these success-story examples.
+- **Reorder the whole course Attract → Convert → Grow**, similar topics grouped (foundations first; Attract: brand/content, social, creative, creators, campaigns, Meta, ad analysis/audiences, Google, TikTok/Pinterest/SEO, list growth; Convert: Shopify setup, website/CRO, offer, email/SMS, promotions, seasonal sales; Grow: inventory/cash, payments, fulfilment, tax, accounting, account safety, international, team/money, founder rhythm, AI, tool stack, customers/partners). Renumber modules and lessons in order, but keep saved progress and every old ref working through `lesson-aliases.json` / `lesson-alias.ts` (add tests); update all references (cards, curricula, learn path, goals, SOPs, glossary, emails); regenerate generated files (stages.md only via its safe `--stages` mode; do not re-run `build_guides.py`). Write the old → new mapping before implementing.
+
+**2. Corrections found by the 20 Oct gap research (not yet made):**
+- Australia: card surcharges reported banned and interchange caps lowered from 1 Oct 2026. Verify with RBA/ACCC, then update 24.1, 22.11 and profit setup copy.
+- Free-shipping threshold disagrees: 9.11 (1.25× AOV), 2.3 (~20% above), Module 22 (1.2–1.4×). Pick one rule of thumb (about 20–30% above AOV) everywhere.
+- 9.10: a free gift should be something people value, not look like a sample.
+- 23.5 / 13.4: EU sellers: 14-day withdrawal (withdrawal button from 19 Jun 2026, verify on europa.eu) and "was" price = lowest in the last 30 days.
+
+**3. Optional new lessons from the gap research (Sid to choose; full reports on Sid's Mac in `~/Desktop/Helix research/gaps-2026-10-20/`, kept out of the repo like other research: P = public sources, T1 website/offer, T2 Meta/creative, T3 email/promotions/sales, T4 Google/SEO/Pinterest/TikTok/strategy, T5 transferable coaching-course ideas):**
+- High: product safety, labelling and recalls (AU 2-day rule, EU GPSR); privacy and cookie consent (AU reforms, Google consent signals, UK analytics change); Google AI Max readiness; creative variety (near-identical ads count as one); incremental attribution for warm campaigns; bot traffic check; change freeze and theme backup before peak; a customer's first 100 days; day-by-day sale send plan; hype phase and December after the shipping cut-off.
+- Medium: freebies instead of discount sign-ups; subscription law (ROSCA, California, UK/AU 2027); drip pricing; delivery updates; bold guarantees priced safely; pre-order timing; core range + drops; landed cost; instant-win and purchase-linked prize maths; gift thresholds; competitors on your brand name; brand-only Shopping; local inventory ads; tROAS from margin; Google budget planner; Pinterest structure and its 30-day attribution; delegation levels; splitting each payout; scorecard colours + monthly project review; trademarks; insurance; European Accessibility Act.
+- Do NOT adopt from transcripts: extending a sale after "last chance", "leaked" codes, prize draws with no free entry, charging more for instalments, emailing scraped addresses.
+
+**4. Owner decisions:**
+- Learn-path videos from creator/agency channels (Common Thread Collective, ThrillX, Dara Denney, Ben Heath, Define Digital Academy, Commerce Roundtable, ethercycle): keep, or replace with official channels only?
+- `#klaviyo` in two social captions (v2 welcome-email post, v3 email-segmentation post): change or keep.
+- `BUSINESS_POSTAL_ADDRESS` left unset by choice (CAN-SPAM risk for US recipients; options: PO box, or turn off / non-US-only marketing emails).
+- Email cost: Resend free plan covers ~90-100 active users (100/day cap); Pro US$20/month after that. Check usage in Resend.
+- Unverified: Click Frenzy 2026 date; Meta creator marketplace possibly renamed "Creator Marketing Hub"; add the second Ramadan of 2030 when creating a 2031 lunar entry.
+- Re-rendered social images: swap v2 #47 and v3 25, 29, 33, 48, 49 if already booked.
+- Stale branch `site-brands` (PR #3, merged) can be deleted.
+
 # STATUS
 
 _Last updated: 20 Oct 2026 (Sydney)._
