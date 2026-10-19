@@ -1,7 +1,7 @@
 {
 "24.1": {"intro": "Each way to pay has its own fee, payout speed and risk. The fee on the price page is rarely the whole cost.",
  "steps": [
-  {"say": "Download last month's payout reports from each provider (Shopify Payments, PayPal, buy now pay later).", "check": "You have one report per provider.", "lost": "Download your Shopify Payments report."},
+  {"say": "Download last month's payout reports from each provider (Shopify Payments, any wallet or buy now pay later provider).", "check": "You have one report per provider.", "lost": "Download your Shopify Payments report."},
   {"say": "For each provider, divide total fees by the sales it handled. Example: $180 ÷ $9,000 = 2%.", "check": "You have a real fee rate per provider.", "lost": "Fees ÷ sales."},
   {"say": "Add hidden costs: currency conversion when you withdraw, fixed per-order fees on small orders, and fees kept on refunds.", "check": "Your fee rates include everything.", "lost": "Add the currency fee if you have one."},
   {"say": "Enter your blended fee rate (all fees ÷ all sales) in Helix as payment fees.", "check": "Helix profit uses your real fees.", "lost": "Enter one fee rate in Helix."},
@@ -14,7 +14,7 @@
   {"say": "Before a big sale or launch, tell your providers the dates and expected sales.", "check": "A planned spike is less likely to cause a hold.", "lost": "Email your provider your sale dates."},
   {"say": "Add tracking to every order within a day.", "check": "Slow fulfilment is a known risk signal, so fast tracking makes holds less likely.", "lost": "Add tracking to today's orders."},
   {"say": "Show honest delivery times. State pre-order ship dates clearly.", "check": "Customers know when to expect orders.", "lost": "Add a ship date to pre-orders."},
-  {"say": "Keep at least one month of costs in cash, and a second payment method ready to switch on.", "check": "A hold can't stop the business.", "lost": "Set up PayPal as a backup."},
+  {"say": "Keep at least one month of costs in cash, and a second payment method ready to switch on.", "check": "A hold can't stop the business.", "lost": "Set up a second payment provider as a backup."},
   {"say": "If money is held, give the provider everything in one go.\n\n1. Ask exactly what they need (like tracking, invoices or ID).\n2. Send it all in one reply.\n3. Add a follow-up date to your Helix calendar.", "check": "The hold is sorted as fast as possible.", "careful": "Keep business details, bank account and ID up to date with every provider. Old details are a common cause of freezes.", "lost": "Ask what they need. Send it all at once."}
  ]},
 "24.3": {"intro": "A chargeback is when a customer asks their bank to reverse a card payment. The money and a chargeback fee are taken straight away. On Shopify Payments, the fee comes back if you win. You have a short time to prove the sale was fine.",
@@ -31,10 +31,10 @@
 "24.4": {"intro": "Card testing is when fraudsters use your checkout to try stolen card numbers, usually with lots of tiny orders on your cheapest product.",
  "steps": [
   {"say": "Learn the signs: bursts of small orders, the same cheap item, odd names or emails, lots of failed payments, or different addresses on one card.", "check": "You can spot card testing.", "lost": "Many tiny orders at once? That's a sign."},
-  {"say": "Use your platform's protections: Shopify's fraud analysis and its built-in card testing protection on Shopify Payments.", "check": "You know what Shopify already blocks. Checkout bot protection is for Shopify Plus flash sales only.", "lost": "Open an order and read its fraud analysis."},
+  {"say": "Use your platform's protections: Shopify's fraud analysis and its built-in card testing protection on Shopify Payments.", "check": "You know what Shopify already blocks. Checkout bot protection is only on Shopify Plus, mainly for flash sales.", "lost": "Open an order and read its fraud analysis."},
   {"say": "Read the fraud risk level on every order before shipping. Hold high-risk orders while you contact the customer.", "check": "No high-risk order ships unchecked.", "lost": "Check the risk level before you ship."},
   {"say": "Cancel and refund any order that looks like fraud before shipping.", "check": "You pay a refund instead of a chargeback.", "lost": "Looks fake? Cancel and refund."},
-  {"say": "Use 3D Secure (an extra bank check at payment) where your provider allows it. Shopify Payments applies it only when the card's bank asks.", "check": "Risky payments get an extra check where your provider supports it. On Stripe, Radar rules can request it.", "lost": "Check if your provider lets you request 3D Secure."},
+  {"say": "Use 3D Secure (an extra bank check at payment) where your provider allows it. Shopify Payments applies it only when the card's bank asks.", "check": "Risky payments get an extra check where your provider supports it. Some other providers let you set rules that request it.", "lost": "Check if your provider lets you request 3D Secure."},
   {"say": "If testing keeps happening, raise the minimum order or hide your cheapest product for a while.", "check": "The attacks stop.", "careful": "Be careful with gift cards, and very large first orders going to parcel forwarding addresses.", "lost": "Hide your cheapest product for a week."}
  ]},
 "24.5": {"intro": "A fast, fair refund is cheaper than a dispute. A clear rule means you don't decide each case from scratch.",

@@ -68,8 +68,8 @@
  ]},
 "14.12": {"intro": "Your cash is stuck from the day you pay a supplier until a customer's money reaches you. Count the days.",
  "steps": [
-  {"say": "Find how many days stock sits. Use **Analytics > Reports > Inventory remaining per product**, or stock cost ÷ cost sold per day. $27,000 ÷ $300 = 90.", "check": "One number, like 90.", "lost": "Stock cost divided by cost sold per day."},
-  {"say": "Check your payouts page. How many days until customer money reaches your bank? Often 2 to 3.", "check": "One number, like 3.", "lost": "Look at your payout dates."},
+  {"say": "Find how many days stock sits. Use the **Days of inventory remaining** column in **Analytics > Reports > Inventory remaining per product**, or stock cost ÷ cost sold per day. $27,000 ÷ $300 = 90.", "check": "One number, like 90.", "lost": "Stock cost divided by cost sold per day."},
+  {"say": "Check your payouts page. How many days until customer money reaches your bank? Often 2 to 3 business days.", "check": "One number, like 3.", "lost": "Look at your payout dates."},
   {"say": "Check your supplier invoices. How many days do you get to pay? Paid upfront = 0.", "check": "One number, like 30.", "lost": "Look at one invoice."},
   {"say": "Add them: 90 + 3 − 30 = 63 days.", "check": "Your number is in your cash plan.", "lost": "Stock days + payout days − supplier days."},
   {"say": "Pick one lever from Lesson 14.3 to cut 10 days: smaller orders more often, more days to pay, pre-orders or clearing slow stock.", "check": "One action done this week.", "lost": "Ask your supplier for 30 more days."},
