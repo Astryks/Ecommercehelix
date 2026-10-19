@@ -195,14 +195,14 @@ Who each sale campaign leaves out:
 | --- | --- | --- |
 | Copy of your best cold campaign | New people | Past buyers |
 | Cold with combined audiences | New people from your mixed interest and lookalike audiences | Past buyers and recent engagers |
-| Mixed (automatic) | Anyone; Meta decides | Nobody. Meta has been changing past-customer spend limits, so check Ads Manager |
+| Mixed (automatic) | Anyone; Meta decides | Nobody. Do not rely on the old past-customer spend cap: Meta announced in 2025 it is retiring it, so check Ads Manager |
 | Warm | Site visitors, engagers and video viewers (180 days) | Buyers |
 | Hot | Added to cart (14 days) or started checkout (7 days) | Buyers from the last 7 days |
 
 ## Lesson 13.7: After the sale
 <!-- stage:grow -->
 
-**Why this matters:** After a sale there is always a slow time, because some people just bought earlier than they would have. Research on store sales puts the dip at roughly 4 to 25% of the extra sales the event brought in. How you handle it decides how many new buyers you keep. A short review makes the next event better.
+**Why this matters:** After a sale there is always a slow time, because some people just bought earlier than they would have. As a rule of thumb, the dip takes back some of the extra sales, not all of them. How you handle it decides how many new buyers you keep. A short review makes the next event better.
 
 **Step 1.** Turn normal campaigns back up in steps over a week, not all at once.
 
@@ -381,7 +381,7 @@ Who each sale campaign leaves out:
 
 **Expected result:** One MER limit for the sale, checked every day next to the daily target.
 
-**Watch out:** Shopify and some other apps show MER the other way round: sales divided by ad spend. Helix's 25% is the same as Shopify's 4. Use one version in your plan so you never mix them up.
+**Watch out:** Many other tools show MER the other way round: sales divided by ad spend. Helix's 25% is the same as 4x in those tools. Use one version in your plan so you never mix them up.
 
 ### Good to know
 
