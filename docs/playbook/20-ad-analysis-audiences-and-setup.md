@@ -111,11 +111,11 @@
 
 **Expected result:** Three lookalike sizes are ready.
 
-**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Meta is retiring its old cap on spend to past customers, so check what Ads Manager shows for your account. To keep past buyers out of cold ads, exclude your customer audiences. Then watch the **Audience segments** breakdown.
+**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Meta announced in 2025 it is retiring its old past-customer spend cap, so check Ads Manager for your account. To keep past buyers out of cold ads, exclude your customer audiences. Then watch the **Audience segments** breakdown.
 
 **Expected result:** Cold campaigns reach new people on purpose.
 
-**Watch out:** Meta announced in 2025 that it is retiring the old existing-customer budget cap (see [Meta for Developers: Advantage+ campaign changes](https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/)). Don't plan around the cap. To keep past buyers out, exclude your customer audiences in the ad set instead.
+**Watch out:** Meta announced in 2025 it is retiring its old past-customer spend cap (see [Meta for Developers: Advantage+ campaign changes](https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/)). Don't plan around the cap. To keep past buyers out, exclude your customer audiences in the ad set instead.
 
 **Step 5.** On Google, give it signals and words to avoid.
 
@@ -143,7 +143,7 @@
 | Layer | Who | Example targeting |
 | --- | --- | --- |
 | Cold | Never interacted with you | Broad, with harsh or light exclusions |
-| Mixed | Anyone; the platform decides | Advantage+ sales campaign, with spend on existing customers watched in the **Audience segments** breakdown (Meta is retiring its old past-customer spend cap, so check Ads Manager) |
+| Mixed | Anyone; the platform decides | Advantage+ sales campaign, with spend on existing customers watched in the **Audience segments** breakdown (Meta announced in 2025 it is retiring its old past-customer spend cap, so check Ads Manager) |
 | Warm | Engaged but not bought | Visitors (180 days), engagers, video viewers, leaving out buyers |
 | Hot | Close to buying | Added to cart (14 days), started checkout (7 days), leaving out buyers from the last 7 days |
 | Existing customers | Bought before | Buyers, for launches and products people reorder |

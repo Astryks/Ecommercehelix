@@ -141,7 +141,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** You are running one setup test with a clear start and end date.
 
-**Watch out:** Leaving out more people (buyers, engagers and recent visitors) usually shows a worse cost per sale. But it finds more truly new customers. Meta is retiring its old cap on spend to past buyers, so check what Ads Manager shows for your account. To keep past buyers out, exclude your customer audiences.
+**Watch out:** Leaving out more people (buyers, engagers and recent visitors) usually shows a worse cost per sale. But it finds more truly new customers. Meta announced in 2025 it is retiring its old past-customer spend cap, so check Ads Manager for your account. To keep past buyers out, exclude your customer audiences.
 
 ### Good to know
 
