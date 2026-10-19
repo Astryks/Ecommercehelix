@@ -14,17 +14,17 @@
 <text x="230" y="100" font-size="18" font-weight="800" fill="#1A1718" text-anchor="start">Payments</text>
 <rect x="230" y="120" width="580" height="150" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
 <text x="250" y="150" font-size="15" font-weight="700" fill="#1A1718" text-anchor="start">Shopify Payments</text>
-<text x="250" y="174" font-size="13" font-weight="400" fill="#55514C" text-anchor="start">Cards · Shop Pay · Apple Pay · Google Pay</text>
+<text x="250" y="174" font-size="13" font-weight="400" fill="#55514C" text-anchor="start">Cards · Shop Pay · express wallets</text>
 <rect x="250" y="196" width="110" height="32" rx="6" fill="#008060" stroke="#008060" stroke-width="1"/>
 <text x="305.0" y="217.0" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">Activate</text>
 <text x="380" y="216" font-size="13" font-weight="600" fill="#1A1718" text-anchor="start">Statement name: YOURBRAND</text>
 <rect x="230" y="290" width="580" height="70" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
-<text x="250" y="330" font-size="15" font-weight="700" fill="#1A1718" text-anchor="start">PayPal</text>
+<text x="250" y="330" font-size="15" font-weight="700" fill="#1A1718" text-anchor="start">Other payment providers</text>
 <rect x="690" y="310" width="100" height="32" rx="6" fill="#fff" stroke="#C9C6BD" stroke-width="1"/>
 <text x="740.0" y="331.0" font-size="13" font-weight="600" fill="#1A1718" text-anchor="middle">Activate</text>
 <rect x="230" y="380" width="580" height="110" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
 <text x="250" y="410" font-size="15" font-weight="700" fill="#1A1718" text-anchor="start">Buy now, pay later</text>
-<text x="250" y="436" font-size="13" font-weight="400" fill="#55514C" text-anchor="start">AU: Afterpay app  ·  US: Shop Pay Installments</text>
+<text x="250" y="436" font-size="13" font-weight="400" fill="#55514C" text-anchor="start">AU: a pay later app  ·  US: Shop Pay Installments</text>
 <text x="250" y="460" font-size="12" font-weight="400" fill="#6B6760" text-anchor="start">Check the fee first. It is higher than a card fee.</text>
 <rect x="750" y="400" width="36" height="20" rx="10" fill="#008060" stroke="none" stroke-width="1"/>
 <circle cx="776" cy="410" r="7" fill="#fff"/>
@@ -66,7 +66,7 @@
 <text x="920" y="185" font-size="14" fill="#DEDCD4">Set the statement name to your</text>
 <text x="920" y="204" font-size="14" fill="#DEDCD4">brand.</text>
 <circle cx="896" cy="236" r="13" fill="#453CBF"/><text x="896" y="241" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">4</text>
-<text x="920" y="241" font-size="14" fill="#DEDCD4">Activate PayPal.</text>
+<text x="920" y="241" font-size="14" fill="#DEDCD4">Add another provider if needed.</text>
 <circle cx="896" cy="273" r="13" fill="#453CBF"/><text x="896" y="278" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">5</text>
 <text x="920" y="278" font-size="14" fill="#DEDCD4">Add one buy now, pay later option</text>
 <text x="920" y="297" font-size="14" fill="#DEDCD4">if the fee suits you.</text>

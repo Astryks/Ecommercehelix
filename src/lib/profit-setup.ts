@@ -31,7 +31,7 @@ export function waterfall(i: ProfitInputs) {
   const steps: Omit<Layer, "left">[] = [
     { key: "product", label: "Product cost (COGS)", cost: i.productCost, plain: "What it costs to make or buy one." },
     { key: "landed", label: "Freight and duty to your warehouse", cost: i.freightDuty, plain: "Shipping it from the factory, plus duty and customs. Product cost plus this is your landed cost." },
-    { key: "fees", label: "Payment fees", cost: fees, plain: "What Shopify Payments, PayPal or buy now pay later keep." },
+    { key: "fees", label: "Payment fees", cost: fees, plain: "What Shopify Payments, other payment providers or buy now pay later keep." },
     { key: "packaging", label: "Packaging", cost: i.packaging, plain: "Mailer, box, tissue and inserts." },
     { key: "shipping", label: "Shipping to the customer", cost: i.shipToCustomer, plain: "Postage you pay to send the order." },
     { key: "marketing", label: "Marketing", cost: i.marketingPerOrder, plain: "Ads and other marketing, per order." },

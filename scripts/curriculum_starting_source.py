@@ -127,7 +127,7 @@ D = [
   "Getting tax wrong is costly to fix later, and every missing payment option loses buyers. This is general information, not tax advice.",
   ["Australia: you must register for GST once your GST turnover reaches $75,000 a year. If registered, add your ABN and include GST in prices.",
    "US: register with a state before you collect its sales tax. Then turn on only those states in Shopify.",
-   "Activate Shopify Payments and Shop Pay, and turn on the express wallets (such as Google Pay) it offers. Add any other payment option your customers expect.",
+   "Activate Shopify Payments and Shop Pay, and turn on the express wallets it offers. Add any other payment option your customers expect.",
    "Set your statement name to your brand. Ask a registered tax agent or accountant if unsure."],
   15, "numbers", "22.10", "11", None, None),
  (17, "Policies", "Write your policies in plain words",

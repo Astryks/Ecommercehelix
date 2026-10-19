@@ -8,7 +8,7 @@ Helix watches for missing or under-performing flows (the `email-gap` rule in the
 2. **Suggest.** An insight in Today and Insights: "You have no abandoned checkout flow. Stores like yours often recover a meaningful share of checkouts with one." with the evidence (checkouts started, recovered, revenue).
 3. **Draft.** Helix writes each message (subject, preview, body, SMS text) using your brand core, best sellers, reviews and offer rules. It also sets timing, filters and exit conditions.
 4. **Approve.** You see the full flow in the approval queue: messages, timing, discount logic and estimated AI cost. Edit, approve or reject.
-5. **Set up.** On approval, Helix creates templates, segments and the flow in **Klaviyo** through its API (draft status first, then live after a final check). For **Shopify Email** and **Shopify Flow**, where creation by API is limited, Helix prepares the content and a guided click-by-click setup, and verifies it once live.
+5. **Set up.** On approval, Helix creates templates, segments and the flow in your email platform through its API (draft status first, then live after a final check). For **Shopify Email** and **Shopify Flow**, where creation by API is limited, Helix prepares the content and a guided click-by-click setup, and verifies it once live.
 6. **Watch.** Weekly: revenue per recipient, conversion, unsubscribe and spam rates. Helix suggests A/B tests on subject lines and timing.
 
 Guardrails: no message goes live without approval; discounts follow your offer rules (new customers only, never bigger than your public offer); SMS always carries opt-out and respects quiet hours; flows start in draft; everything is logged and reversible.
@@ -19,7 +19,7 @@ Status in the app: the Email automation page lists all flows with **example** st
 
 | Flow | Trigger | Goal | Example status |
 | --- | --- | --- | --- |
-| [Welcome series](#welcome-series) | Joins the email or SMS list (pop-up, footer, competition) | Turn a new subscriber into a first-time buyer | live |
+| [Welcome series](#welcome) | Joins the email or SMS list (pop-up, footer, competition) | Turn a new subscriber into a first-time buyer | live |
 | [Abandoned checkout](#abandoned-checkout) | Started checkout, no order within 1 hour | Recover high-intent shoppers | live |
 | [Abandoned cart](#abandoned-cart) | Added to cart, did not start checkout within 2 hours | Bring back shoppers who showed interest | not set up |
 | [Browse abandonment](#browse-abandonment) | Viewed a product twice or more in 24 hours, no add to cart (known subscriber) | Help undecided shoppers choose | not set up |
@@ -27,7 +27,7 @@ Status in the app: the Email automation page lists all flows with **example** st
 | [Review request](#review-request) | Order delivered + 7 to 14 days (based on how long the product takes to show results) | Collect reviews, photos and UGC | live |
 | [Replenishment](#replenishment) | Days since order reaches the typical usage period for a consumable (for example 25 days for a 30-day supply) | Win the reorder before they run out | not set up |
 | [Win-back](#win-back) | No order for 1.5 to 2x your typical repeat interval (for example 120 days) | Re-engage lapsed customers before they are gone | not set up |
-| [VIP and loyalty](#vip-and-loyalty) | Third order, or lifetime spend above your top 10% threshold | Recognise your best customers and keep them | not set up |
+| [VIP and loyalty](#vip) | Third order, or lifetime spend above your top 10% threshold | Recognise your best customers and keep them | not set up |
 
 <a id="welcome"></a>
 ### Welcome series
@@ -36,7 +36,7 @@ Status in the app: the Email automation page lists all flows with **example** st
 - **Goal:** Turn a new subscriber into a first-time buyer
 - **Exit when:** Places an order
 - **Discount rule:** Deliver the sign-up incentive in email 1. Never send a bigger code later in the flow.
-- **What good looks like:** Often 3 to 6% of store revenue once list growth is steady
+- **What good looks like:** Often one of the top-earning flows once list growth is steady
 - **Plan:** Growth
 
 | # | When | Channel | Subject | Preview | Draft body |
@@ -116,7 +116,7 @@ Status in the app: the Email automation page lists all flows with **example** st
 - **Trigger:** Order delivered + 7 to 14 days (based on how long the product takes to show results)
 - **Goal:** Collect reviews, photos and UGC
 - **Exit when:** Leaves a review
-- **Discount rule:** Optional small reward for photo or video reviews (follow platform and local rules; never pay for positive reviews only).
+- **Discount rule:** Optional small reward for any honest photo or video review, disclosed on the review. Never tie a reward to a positive rating, and follow your review app's rules.
 - **What good looks like:** Review volume feeds product page conversion and ad hooks
 - **Plan:** Growth
 

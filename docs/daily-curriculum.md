@@ -314,7 +314,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. Do a test order on your phone.
-2. Turn on Shop Pay and the express wallets (such as Google Pay) that Shopify Payments offers, if they are missing.
+2. Turn on Shop Pay and the express wallets that Shopify Payments offers, if they are missing.
 3. Turn on a buy now pay later option if it suits your products.
 4. Let people check out without an account.
 5. Show the delivery time before the last step.

@@ -25,7 +25,7 @@ Helix should feel like a great agency account manager: it knows your numbers, te
 4. **Helix Score** with six area scores and the top 3 findings with screenshots/evidence.
 5. Three quick questions: category, rough monthly revenue, main goal (more sales, more profit, less time).
 6. First-week plan (7 days, max 3 tasks a day).
-7. Optional connections, in order of value: Shopify, Meta, Google, Klaviyo. Each shows exactly what Helix will read and what it can never do without approval.
+7. Optional connections, in order of value: Shopify, Meta, Google, an email platform. Each shows exactly what Helix will read and what it can never do without approval.
 8. Cost drivers mini-wizard (SOP 02), skippable with smart defaults.
 
 ```
@@ -179,7 +179,7 @@ The agency-style view of everything Helix can take on, grouped by area, with sta
 |  [🔒] Shopify draft edits with preview   Growth plan (beta)       |
 |  RETENTION                                                        |
 |  [ ] Pop-up and welcome flow guide       available                |
-|  [🔒] Klaviyo flow drafts                Growth plan              |
+|  [🔒] Email flow drafts                  Growth plan              |
 |  PLANNING                                                         |
 |  [ ] 90-day promo calendar               in 2 weeks               |
 |  [🔒] Weekly agency report               Growth plan              |
@@ -207,16 +207,15 @@ A weekly-refreshed feed of what is working now on Meta, TikTok, Google and emerg
 
 | Trend | What to do | Source |
 | --- | --- | --- |
-| Partnership (creator) ads inside normal sales campaigns | Run 3 to 5 creator posts as ads from the creator's handle in evergreen and Q4 campaigns | Meta announcement via Storyboard18: https://www.storyboard18.com/digital/meta-launches-new-era-of-shopping-experiences-powered-by-ai-reels-creators-ws-l-94638.htm ; Q4 guidance: https://commonthreadco.com/blogs/coachs-corner/meta-holiday-insights-center-2026-q4-ecommerce |
+| Partnership (creator) ads inside normal sales campaigns | Run 3 to 5 creator posts as ads from the creator's handle in evergreen and Q4 campaigns | Meta announcement via Storyboard18: https://www.storyboard18.com/digital/meta-launches-new-era-of-shopping-experiences-powered-by-ai-reels-creators-ws-l-94638.htm |
 | Catalog product video on Reels | Turn existing videos into catalog templates so each product gets a video ad | https://www.adgully.com/post/14093/meta-launches-ai-powered-shopping-experiences-across-reels-and-creators |
-| Review Advantage+ creative auto-enhancements | Check which default AI enhancements (music, overlays, backgrounds) are on and turn off any that hurt your brand | https://leapbuzz.com/blog/meta-advantage-plus-creative-ai/ |
+| Review Advantage+ creative auto-enhancements | Check which default AI enhancements (music, overlays, backgrounds) are on and turn off any that hurt your brand | https://www.facebook.com/business/help/297506218282224 |
 | Reels trending ads around big moments | Event-based placements (for example Black Friday lineups) for brands with cultural tie-ins | https://www.thekeyword.co/news/meta-newfronts-2026-ad-products |
 | TikTok Shop runs on GMV-based automated campaigns | If you sell on TikTok Shop, feed it creator and affiliate videos; judge in-platform return as its own score | https://ads.tiktok.com/resources/help/article/about-product-gmv-max ; https://www.enrichlabs.ai/blog/tiktok-shop-ads-complete-guide-2026 |
 | TikTok Search ads and in-app checkout | Test search ads once TikTok creative is working | https://channelx.world/2026/10/tiktok-ai-powered-updates-for-advertisers-unveiled/ |
-| AI Max for Search and Shopping | Audit auto-upgraded campaigns, review AI-written copy and landing pages, add negatives | https://blog.google/products/ads-commerce/ai-max-for-shopping/ ; https://commonthreadco.com/blogs/coachs-corner/google-ads-changes-2026 |
-| PMax vs AI Max roles | Keep brand exclusions on PMax, keep brand search separate | https://roardigital.co.uk/insights/how-to-choose-between-ai-max-and-performance-max-in-2026/ |
-| ChatGPT product-feed and visual ads | Make sure product data is clean; test ads once in beta in your market | https://openai.com/index/new-chatgpt-ads-format-and-measurement/ ; https://www.geekseller.com/blog/openai-chatgpt-product-feed-ads-are-now-opening-to-more-sellers-via-ads-manager-beta/ |
-| Shopify products in AI shopping assistants | Check agentic storefront eligibility and product data quality | https://www.getcatalog.ai/blog/shopify-chatgpt-product-visibility |
+| AI Max for Search and Shopping | Audit auto-upgraded campaigns, review AI-written copy and landing pages, add negatives | https://blog.google/products/ads-commerce/ai-max-for-shopping/ |
+| PMax vs AI Max roles | Keep brand exclusions on PMax, keep brand search separate | https://support.google.com/google-ads/answer/14505308 |
+| Shopify products in AI shopping assistants | Check agentic storefront eligibility and product data quality | https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts |
 
 Trend claims and platform figures are the sources' own numbers. Helix shows the source and date on every card and never presents vendor stats as guarantees.
 
@@ -292,10 +291,10 @@ A side panel on every screen and a full-page view. It answers questions using th
 - Custom labels in Shopify or in a supplemental feed?
 
 *Email and SMS*
-- Is Klaviyo worth the price, or should I switch?
+- Is my email tool worth the price, or should I switch?
 - What pop-up opt-in rate is normal?
 - How do I handle abandoned-cart discounts during a sale?
-- My emails are not reaching Outlook or Gmail. What do I fix?
+- My emails are not reaching Gmail or Yahoo inboxes. What do I fix?
 - Do I need to register an SMS sender ID?
 
 *Sales and ops*
@@ -340,7 +339,7 @@ The goal is to reward the habit that grows the business, not app opens.
 
 ## 11. Settings, connections, team, wallet
 
-- **Connections:** Shopify, Meta, Google Ads and Merchant Center, Klaviyo (v1); TikTok, Pinterest later. Each connection page lists read scopes, write scopes, last sync, and a disconnect button.
+- **Connections:** Shopify, Meta, Google Ads and Merchant Center, an email platform (v1); TikTok, Pinterest later. Each connection page lists read scopes, write scopes, last sync, and a disconnect button.
 - **Guardrails page:** daily spend cap per platform, max budget change per day (default 20%), auto-approve rules, quiet hours, brand voice notes, banned claims.
 - **Team:** invite members with roles (owner, approver, viewer). Only owner/approver can approve spend changes.
 - **Billing:** plan, renewal, AI allowance used this month, wallet balance, top-up (prepaid only), usage history per action.
@@ -404,7 +403,7 @@ Core tables (simplified; all rows carry `id`, `created_at`, `updated_at`; tenant
 ```
                  ┌───────────────────────────────────────────────┐
   Cron / events  │  Sync workers (no LLM)                        │
- ───────────────▶│  Shopify, Meta, Google, Klaviyo read APIs     │
+ ───────────────▶│  Shopify, Meta, Google, email read APIs       │
                  └───────────────┬───────────────────────────────┘
                                  ▼
                  ┌───────────────────────────────────────────────┐

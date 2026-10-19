@@ -5,7 +5,7 @@ import { tableRows, toCsv } from "@/lib/numbers";
 
 export const dynamic = "force-dynamic";
 
-/** Download the daily tracking table as CSV (opens in Excel, Numbers or Google Sheets). */
+/** Download the daily tracking table as CSV (opens in any spreadsheet app). */
 export async function GET() {
   const u = await requireUser("/dashboard/numbers/table");
   const [days, settings, setup] = await Promise.all([getDays(u.id), getSettings(u.id), getProfitSetup(u.id)]);

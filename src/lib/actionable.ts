@@ -50,7 +50,7 @@ export function findActionable(id: string, signals: Signals = EXAMPLE_SIGNALS): 
       return {
         id,
         title: `Copy for the ${f.name.toLowerCase()} flow`,
-        detail: `Trigger: ${f.trigger}\nExit when: ${f.exitWhen}\nDiscount rule: ${f.discount}\n\nMessages:\n` + f.emails.map((e, i) => `${i + 1}. ${e.delay} · ${e.channel}${e.channel === "Email" ? ` · "${e.subject}"` : ""}\n   ${e.body}`).join("\n") + `\n\nHelix will give you this copy to paste into your email platform. Helix does not connect to Klaviyo or Shopify Email yet, so you build and switch on the flow yourself.`,
+        detail: `Trigger: ${f.trigger}\nExit when: ${f.exitWhen}\nDiscount rule: ${f.discount}\n\nMessages:\n` + f.emails.map((e, i) => `${i + 1}. ${e.delay} · ${e.channel}${e.channel === "Email" ? ` · "${e.subject}"` : ""}\n   ${e.body}`).join("\n") + `\n\nHelix will give you this copy to paste into your email platform. Helix does not connect to email tools yet, so you build and switch on the flow yourself.`,
         tier: f.tier,
         estAiCost: 0.02 * f.emails.length,
       };

@@ -16,7 +16,7 @@ Status in the app today: the Insights page and Today feed show **seeded example 
 | Shopify sales pull (orders, AOV, products, new vs returning, add-to-cart and checkout funnel) | Daily 5:00 local | Starter+ | Shopify Admin API + analytics |
 | Meta insights pull (campaign, ad set, ad: spend, impressions, reach, frequency, CPM, CTR, 3s views, ThruPlays, purchases, value) | Daily 5:30 local, intraday light check in peak | Starter+ | Meta Marketing API, Insights endpoint |
 | Google Ads pull (campaigns, search terms, Shopping products, conversions, value) | Daily 5:30 local | Starter+ (Growth for both platforms) | Google Ads API (GAQL) |
-| Email platform pull (flows live, flow revenue, list growth, campaign results) | Daily | Growth | Klaviyo API / Shopify Email |
+| Email platform pull (flows live, flow revenue, list growth, campaign results) | Daily | Growth | Email platform API |
 | Social presence audit (bio, link, highlights, pinned posts, cadence, proof, comment replies, ad consistency) | Weekly | All (public data); insights with account connection | Public profile fetch; Instagram Graph API, TikTok and Facebook Page APIs once connected |
 | Cross-diagnosis rules | After each pull | All with data | Rules engine |
 | Weekly report build | Monday 6:00 local | Growth | All of the above |
@@ -32,7 +32,7 @@ Jobs run from a queue (for example Vercel Cron triggering a worker, or a hosted 
    ├─ ShopifyPullJob ─> Admin API ──────────────────┤──> raw_snapshots (JSON, 90 days)
    ├─ MetaPullJob ───> Marketing API insights ──────┤
    ├─ GooglePullJob ─> Google Ads API ──────────────┤
-   └─ EmailPullJob ──> Klaviyo API ─────────────────┘
+   └─ EmailPullJob ──> Email API ───────────────────┘
                                   │
                          normaliser (per source)
                                   │
@@ -131,5 +131,5 @@ Rules run in code (free). The model is only called to phrase the top insights an
 3. Meta insights pull and the ad rules. Week 3 to 4.
 4. Cross-diagnosis rules that need both. Week 4.
 5. Google pull and search term rules. Week 5.
-6. Klaviyo pull and email gap rules. Week 6.
+6. Email platform pull and email gap rules. Week 6.
 7. Social presence audit (public profile checks first, account insights later). Week 6.

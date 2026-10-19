@@ -342,7 +342,7 @@
 
 **Expected result:** Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).
 
-**Step 2.** Turn on Shop Pay and the phone wallets Shopify offers, and add a popular online wallet as an extra option (see [Shopify: PayPal](https://help.shopify.com/en/manual/payments/paypal)).
+**Step 2.** Turn on Shop Pay and the phone wallets Shopify offers, and add another payment provider your customers trust as an extra option (see [Shopify: third-party payment providers](https://help.shopify.com/en/manual/payments/third-party-providers)).
 
 **Expected result:** Checkout shows express wallet buttons.
 

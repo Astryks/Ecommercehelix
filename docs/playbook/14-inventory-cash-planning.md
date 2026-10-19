@@ -249,7 +249,7 @@
 
 **Expected result:** You have units per day for each product.
 
-**Step 2.** Find the lead time: days from paying the deposit to stock ready to sell (making, shipping, customs, receiving).
+**Step 2.** Find the lead time: days from placing the order with your supplier (usually when you pay the deposit) to stock ready to sell (making, shipping, customs, receiving).
 
 **Expected result:** You have a lead time in days for each product.
 

@@ -60,7 +60,7 @@
 "14.9": {"intro": "Running out loses sales. Ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths.",
  "steps": [
   {"say": "Work out sales speed: average units a day over the last 4 to 8 weeks. Leave out sold-out days and big sale days.", "check": "You have units per day for each product.", "lost": "Units sold ÷ days = sales speed."},
-  {"say": "Find the lead time: days from paying the deposit to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
+  {"say": "Find the lead time: days from placing the order with your supplier (usually when you pay the deposit) to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
   {"say": "Set safety days. Start with 14. Use more for long sea freight.", "check": "Each product has a buffer.", "lost": "Use 14."},
   {"say": "In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.", "check": "Helix shows the reorder point (sales speed × (lead time + safety days)) and a countdown to each sell-out. Example: 3 a day × (45 + 14) days = 177 units.", "lost": "Enter the three numbers for your best seller."},
   {"say": "At the reorder point (on-hand plus on-order), order the next 1 to 3 months of sales. Order at least the supplier's minimum.", "check": "An alert shows on Today when it's time to order, and stock arrives before you run out.", "lost": "Alert on Today? Place the order."},

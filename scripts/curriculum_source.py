@@ -106,7 +106,7 @@ D = [
  (12, "Checkout", "Remove one thing that stops people paying",
   "People who add to cart but do not pay often hit a surprise. It may be a shipping cost, few ways to pay, or a forced account.",
   ["Do a test order on your phone.",
-   "Turn on Shop Pay and the express wallets (such as Google Pay) that Shopify Payments offers, if they are missing.",
+   "Turn on Shop Pay and the express wallets that Shopify Payments offers, if they are missing.",
    "Turn on a buy now pay later option if it suits your products.",
    "Let people check out without an account.",
    "Show the delivery time before the last step."],
