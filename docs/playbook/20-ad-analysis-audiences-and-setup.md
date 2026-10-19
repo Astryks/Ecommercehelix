@@ -37,9 +37,9 @@
 
 **Why this matters:** Bad data leads to bad decisions, and a broken pixel can make good ads look like failures. Check tracking once now, then every month. Your store's own reports are the truth; ad platforms are only for direction.
 
-**Step 1.** Install the **Facebook & Instagram** app. Connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
+**Step 1.** Add the **Facebook & Instagram** sales channel in Shopify. Connect your business account, ad account, page and pixel (see [Shopify: Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta)).
 
-**Expected result:** The app shows all four connected.
+**Expected result:** The sales channel shows all four connected.
 
 <!-- do:meta-connect -->
 
@@ -90,7 +90,7 @@
 
 **Why this matters:** Audiences tell each platform who already knows you. Then cold campaigns find new people and warm campaigns reach the right ones. Set them up once on Meta, Google and TikTok, then reuse them in every campaign.
 
-**Step 1.** On Meta, set audience groups for the whole account in **Ad account settings > Audience segments**. Add your engaged audience (visitors and social engagers) and existing customers (customer list or store link).
+**Step 1.** On Meta, set audience groups for the whole account in **Advertising settings > Audience segments** (under **All tools**). Add your engaged audience (visitors and social engagers) and existing customers (customer list or store link).
 
 **Expected result:** Reports show how much spend reaches brand-new people.
 
@@ -111,11 +111,11 @@
 
 **Expected result:** Three lookalike sizes are ready.
 
-**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Meta has been changing how you limit spend on past customers in automatic Sales campaigns, so check Ads Manager. If you still see a setting for it, keep that spend to about 10 to 20%. If not, leave past buyers out of your cold campaigns and watch the **Audience segments** breakdown.
+**Step 4.** Set cold targeting to broad: your country and age 18 to 65+. Pick all genders unless the product is clearly for one. Choose who to leave out of cold ads: nobody, recent buyers, or all buyers and engagers. Meta is retiring its old cap on spend to past customers, so check what Ads Manager shows for your account. To keep past buyers out of cold ads, exclude your customer audiences. Then watch the **Audience segments** breakdown.
 
 **Expected result:** Cold campaigns reach new people on purpose.
 
-**Watch out:** Meta announced in 2025 that it is retiring the old existing-customer budget cap (see [Meta for Developers: Advantage+ campaign changes](https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/)). To keep past buyers out, exclude your customer audiences in the ad set instead.
+**Watch out:** Meta announced in 2025 that it is retiring the old existing-customer budget cap (see [Meta for Developers: Advantage+ campaign changes](https://developers.facebook.com/blog/post/2025/06/03/advantage-plus-campaign-experience-for-sales-and-app/)). Don't plan around the cap. To keep past buyers out, exclude your customer audiences in the ad set instead.
 
 **Step 5.** On Google, give it signals and words to avoid.
 
@@ -143,7 +143,7 @@
 | Layer | Who | Example targeting |
 | --- | --- | --- |
 | Cold | Never interacted with you | Broad, with harsh or light exclusions |
-| Mixed | Anyone; the platform decides | Advantage+ sales campaign, with spend on existing customers watched in reports (Meta has been changing past-customer spend limits, so check Ads Manager) |
+| Mixed | Anyone; the platform decides | Advantage+ sales campaign, with spend on existing customers watched in the **Audience segments** breakdown (Meta is retiring its old past-customer spend cap, so check Ads Manager) |
 | Warm | Engaged but not bought | Visitors (180 days), engagers, video viewers, leaving out buyers |
 | Hot | Close to buying | Added to cart (14 days), started checkout (7 days), leaving out buyers from the last 7 days |
 | Existing customers | Bought before | Buyers, for launches and products people reorder |
@@ -161,7 +161,7 @@
 
 1. In Ads Manager, click **+ Create**.
 2. Choose **Sales** and click **Continue**.
-3. Pick **Advantage+ sales campaign** for new customers, or **Manual sales campaign** for a controlled test.
+3. Leave **Advantage+** on for new customers. For a controlled test, narrow the audience or placements later, and Meta shows **Advantage+ off** (Lesson 7.2).
 
 **Expected result:** A new Sales campaign is open.
 
@@ -343,7 +343,7 @@ Which TikTok goal to use when:
 
 | Goal | Use it when | Judge it by |
 | --- | --- | --- |
-| Complete payment (purchase) | You get enough sales for TikTok to learn, about 50 a week | Cost per sale and store MER |
+| Purchase (once called Complete payment) | You get enough sales for TikTok to learn, about 50 a week | Cost per sale and store MER |
 | Add to cart | Sales are too few for TikTok to learn yet. Move to purchase in a new ad group once sales build | Cost per add to cart and store MER |
 | Video views (6-second focused view) | You want cheap attention to retarget later | Cost per focused view, then sales from retargeting |
 | Traffic or view content | Only to fill audiences for retargeting | Cost per visit, never as your main sales campaign |
@@ -403,7 +403,7 @@ Spend
 | What you see | Likely cause | What to check and fix |
 | --- | --- | --- |
 | Good hook rate and CTR, but few visitors buy | The landing page or offer | Mobile page speed. Does the page match the ad? Is the offer clear at the top? Trust (reviews, guarantee). Mobile checkout. |
-| Lots of add to carts, but few finish checkout | Something in checkout puts people off | Surprise shipping cost, a slow or long checkout, missing payment options (Apple Pay, buy now pay later), forced account sign-up, unclear delivery time. |
+| Lots of add to carts, but few finish checkout | Something in checkout puts people off | Surprise shipping cost, a slow or long checkout, missing payment options (express wallets, buy now pay later), forced account sign-up, unclear delivery time. |
 | Visitors from other channels buy well, but ads get few clicks | The ad itself | New hooks, new angles, new formats. Check the offer is in the ad. |
 | Low hook rate, but OK CTR from people who watch | The first seconds | Re-cut the first 3 seconds. Test new visual and spoken hooks. |
 | Good hook rate, low hold rate | The middle of the video | Tighten the middle, show the product sooner, add proof. |

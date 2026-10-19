@@ -21,7 +21,7 @@
  "steps": [
   {"say": "Find your daily spend in the lesson table. Set up the campaigns it lists.", "check": "Your account fits your budget.", "lost": "Small budget? Fewer campaigns. That's the rule."},
   {"say": "Split your budget. Small: 70 to 80% strangers, 20 to 30% people who know you. Later: strangers 30 to 50%, mixed 30 to 40%, warm 20 to 30%.", "check": "Each audience gets its share.", "lost": "Start with most money on strangers."},
-  {"say": "When results are steady, test one other setup at a time, with a start and end date. The lesson lists options.", "check": "One setup test is running.", "careful": "Leaving out buyers and visitors makes cost per sale look worse, but finds more truly new customers.", "lost": "Only test one setting at a time."}
+  {"say": "When results are steady, test one other setup at a time, with a start and end date. The lesson lists options.", "check": "One setup test is running.", "careful": "Leaving out buyers and visitors makes cost per sale look worse, but finds more truly new customers. Don't set a past-buyer spend cap: Meta is retiring it. Exclude customer audiences instead.", "lost": "Only test one setting at a time."}
  ]},
 "6.5": {"intro": "Audiences are who sees your ads. Set them up once and reuse them.",
  "steps": [

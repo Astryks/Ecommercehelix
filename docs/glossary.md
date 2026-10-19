@@ -21,7 +21,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Broad targeting** (broad): Letting Meta find buyers with few or no audience limits. Works best with strong ads.
 - **Bundle** (bundles): Two or more products sold together, often with a small saving.
 - **Business portfolio** (Business Manager): Meta's home for your business assets: ad accounts, Pages, pixels and the people who can use them.
-- **Buy now pay later** (BNPL): Payment options like Afterpay or Klarna that let shoppers split the cost.
+- **Buy now pay later** (BNPL): Payment options that let shoppers split the cost into smaller payments.
 - **Campaign** (campaigns): The top level in an ad account. It holds the goal, like getting sales.
 - **Campaign email** (campaign emails): A one-off email you send to your list, like a new arrival announcement.
 - **Card testing**: When fraudsters use your checkout to try many stolen card numbers with small orders.
@@ -42,7 +42,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **De minimis**: A value below which imported parcels skip duty or tax. The US suspended its $800 de minimis for all countries in August 2025.
 - **Domain** (domain name): Your store's web address, like yourbrand.com.
 - **Duties** (import duty, customs duty): Taxes charged by a country on goods coming in from overseas.
-- **Express wallets**: One-tap payment options like Apple Pay, Google Pay and Shop Pay.
+- **Express wallets**: One-tap payment options, like Shop Pay or the wallet on a shopper's phone.
 - **Fixed costs**: Bills that stay the same each month, like rent, software, staff and your own wage.
 - **Flow** (flows, automation): An email or text series that sends by itself when something happens, like a new sign-up.
 - **Free shipping threshold** (threshold): The order amount where shipping becomes free, like 'Free shipping over $100'.

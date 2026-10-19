@@ -539,7 +539,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Why this matters:** By default, Meta spends your whole budget and tries to get the most sales. Caps and rules let you tell Meta the most you will pay, or which buyers are worth more to you. Used well, they protect profit. Used too early, they stop your ads from spending at all.
 
-**Step 1.** Only try this when a campaign already has at least 50 sales a week and steady results. Meta suggests 50 to 100 or more a week for these settings (see [Meta: bid strategies](https://www.facebook.com/business/help/1619591734742116)). Check in Ads Manager on the **Campaigns** tab.
+**Step 1.** Only try this when a campaign already has at least 50 sales a week and steady results. That is a rule of thumb: caps need plenty of data to work (see [Meta: bid strategies](https://www.facebook.com/business/help/1619591734742116)). Check in Ads Manager on the **Campaigns** tab.
 
 **Expected result:** You know if the campaign is ready. If not, keep the default setting.
 
@@ -568,13 +568,13 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 ## Lesson 7.16: Show the right product to the right person with catalog ads
 <!-- stage:attract -->
 
-**Why this matters:** Catalog ads (also called dynamic product ads) pick products from your store and show each person the ones they looked at or are likely to want. They work best when you have more than a handful of products. They only work well if your product list and your pixel agree on which product is which.
+**Why this matters:** Catalog ads pick products from your store. They show each person the ones they looked at or are likely to want. Meta calls them Advantage+ catalog ads (once called dynamic product ads). They work best when you have more than a handful of products. They only work well if your product list and your pixel agree on which product is which.
 
-**Step 1.** Sync your products. In Shopify, open the **Facebook & Instagram** app and connect your catalog. Then, in Meta **Commerce Manager**, check that your products, prices and stock look right.
+**Step 1.** Sync your products. In Shopify, open the **Facebook & Instagram** sales channel and connect your catalog. Then, in Meta **Commerce Manager**, check that your products, prices and stock look right.
 
 **Expected result:** Your products show in Commerce Manager with the same prices and stock as your store.
 
-**Step 2.** Check that your pixel matches the catalog. In **Events Manager**, open your catalog or data source and look for how well your pixel's product events match your catalog (Meta calls this catalog match). Aim for close to 100%. If it is low, reconnect through the Shopify app. Do not add a second pixel.
+**Step 2.** Check that your pixel matches the catalog. In **Commerce Manager**, open your catalog, then **Events**. Look at how well your pixel's product events match your catalog (the match rate). Aim for close to 100%. If it is low, reconnect through the **Facebook & Instagram** sales channel. Do not add a second pixel.
 
 **Expected result:** The pixel's views, add-to-carts and purchases point to products in your catalog.
 
@@ -582,7 +582,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Expected result:** Product sets are ready to pick when you build the ad.
 
-**Step 4.** Build a catalog campaign for almost-buyers. Create a **Sales** campaign, turn on your catalog and pick a product set. Show it to people who viewed a product or added to cart in the last 14 days, and leave out people who bought in the last 7 days. Start with about 10 to 20% of your Meta budget.
+**Step 4.** Build a catalog campaign for almost-buyers. Create a **Sales** campaign, turn on your catalog and pick a product set. Show it to people who viewed a product or added to cart in the last 14 days, and leave out people who bought in the last 7 days. As a rule of thumb, start with about 10 to 20% of your Meta budget.
 
 **Expected result:** People who looked but did not buy see the products they looked at.
 
@@ -600,7 +600,7 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 ### Good to know
 
-TikTok has catalog ads too. In TikTok Ads Manager, open **Assets > Catalog** to add products. You need at least 4 products that are in stock and approved before you can run them.
+TikTok has catalog ads too. In TikTok Ads Manager, open **Assets > Catalog** to add products. You need at least 4 products that are in stock, approved and active to run them (see [TikTok: create Catalog Ads](https://ads.tiktok.com/help/article/how-to-create-catalog-ads-for-the-website-conversions-objective)).
 
 ## Self-check
 

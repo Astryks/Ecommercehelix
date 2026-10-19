@@ -48,7 +48,7 @@ Three 10% improvements lift revenue by 33%. Profit goes up 2.7 times. Fixed cost
 
 ## 2. The daily loop (15 to 30 minutes)
 
-Do it at the same time every day, ideally before you open email or Slack. Helix shows it as the **Today** screen: one scorecard card and up to three tasks. On a light day there may be only one task. That is a good sign.
+Do it at the same time every day, ideally before you open email or messages. Helix shows it as the **Today** screen: one scorecard card and up to three tasks. On a light day there may be only one task. That is a good sign.
 
 ### Step 1. Check the scorecard (3 minutes)
 
@@ -146,7 +146,7 @@ Stance: CAREFUL PUSH  (target MER 30%)
 3. [Email · 5 min] Approve Friday's "back in stock" email
    [Preview]  [Approve]  [Edit]
 -----------------------------------------------------------------------------
-Learn: Partnership ads are lowering cost per purchase for apparel this month ->
+Learn: Test partnership ads in your next batch ->
 ```
 
 ---
@@ -387,7 +387,7 @@ Helix places you in a stage from the audit and your revenue. Each stage has thre
 | Turn off a draining ad | Guided steps | Pause it after you approve, with one-tap undo | Starter+ |
 | New ad batch | Brief and checklist | Build a paused draft campaign with ads in your Meta account. You switch it on. | Starter+ |
 | Site fix | Step-by-step guide and copy | Store check with a fix list that quotes your pages. Helix does not edit your store. | Free (once), Starter+ (monthly) |
-| Email | Template and copy | Write full flow copy, ready to paste into Klaviyo or Shopify Email. Helix does not connect to them yet. | Growth |
+| Email | Template and copy | Write full flow copy, ready to paste into your email tool or Shopify Email. Helix does not connect to them yet. | Growth |
 | Learning | Trends card | n/a | All plans |
 
 Every write action shows a preview first. Nothing happens until you tap **Approve**, and nothing spends until you switch it on.
