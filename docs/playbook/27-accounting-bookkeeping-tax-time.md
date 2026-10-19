@@ -63,7 +63,7 @@
 
 **Expected result:** Your structure still suits the business.
 
-**Watch out:** Outside the US: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)). If you live overseas and own a US company, get a cross-border expert.
+**Watch out:** Australia: check BAS agents and tax agents on the [Tax Practitioners Board register](https://www.tpb.gov.au/public-register). Common setups are sole trader, company and trust (see [business.gov.au](https://business.gov.au/planning/business-structures-and-types/business-structures)). US: look for a CPA or enrolled agent (see the [IRS directory](https://irs.treasury.gov/rpo/rpo.jsf)). If you live overseas and own a US company, get a cross-border expert.
 
 ### Good to know
 
@@ -74,7 +74,7 @@
 
 **Why this matters:** Copying every order into your accounting software creates thousands of lines that never match your bank. Recording each payout as one summary instead keeps your books clean and quick to check.
 
-**Step 1.** Use one accounting system, such as Xero or QuickBooks.
+**Step 1.** Use one accounting system (your accounting software) for everything.
 
 **Expected result:** All records live in one place.
 
@@ -82,7 +82,7 @@
 
 **Expected result:** Each payout is one tidy entry. Compare connectors on price and payment method support.
 
-**Step 3.** Make a clearing account (a holding account) for each payment provider. That means Shopify Payments, PayPal and each buy now pay later provider.
+**Step 3.** Make a clearing account (a holding account) for each payment provider. That means Shopify Payments, any other payment or wallet provider you use, and each buy now pay later provider.
 
 **Expected result:** Sales go in, payouts and fees come out, and the balance falls back towards zero.
 
@@ -98,7 +98,7 @@
 
 **Expected result:** The two agree, or you know why (usually missing costs or stock changes).
 
-**Watch out:** Outside the US: check GST codes, especially on overseas costs with no GST (see [ATO record keeping](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep sales tax in its own liability account, never in sales (see [IRS recordkeeping](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping)).
+**Watch out:** Australia: check GST codes, especially on overseas costs with no GST (see [ATO record keeping](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep sales tax in its own liability account, never in sales (see [IRS recordkeeping](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping)).
 
 <!-- do:growth -->
 
@@ -133,7 +133,7 @@
 
 **Expected result:** Periods compare fairly.
 
-**Watch out:** Outside the US: count stock on or near 30 June. Small businesses whose stock value changes by $5,000 or less may skip the formal step (see [ATO](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock)). US: count on or near 31 December or your year end (see [IRS Publication 538](https://www.irs.gov/publications/p538)).
+**Watch out:** Australia: count stock on or near 30 June. Small businesses whose stock value changes by $5,000 or less may skip the formal step (see [ATO](https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/income-and-deductions-for-business/accounting-for-trading-stock/valuing-trading-stock)). US: count on or near 31 December or your year end (see [IRS Publication 538](https://www.irs.gov/publications/p538)).
 
 ### Good to know
 
@@ -170,7 +170,7 @@
 
 **Expected result:** The year's records are in one place.
 
-**Watch out:** Outside the US: keep most records for 5 years (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep them at least 3 years, and employment tax records 4 years (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
+**Watch out:** Australia: keep most records for 5 years (see [ATO](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/record-keeping-for-business/overview-of-record-keeping-rules-for-business)). US: keep them at least 3 years, and employment tax records 4 years (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records)).
 
 ### Good to know
 
@@ -179,7 +179,7 @@
 ## Lesson 27.5: End of financial year
 <!-- stage:grow -->
 
-**Why this matters:** Some financial years end on 30 June. Helix puts these steps on your calendar from May so nothing is rushed.
+**Why this matters:** In Australia the financial year ends on 30 June. Helix puts these steps on your calendar from May so nothing is rushed.
 
 **Step 1.** In early May, book a planning chat with your accountant about expected profit and tax.
 

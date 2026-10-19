@@ -320,7 +320,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Australia: you must register for GST once your GST turnover reaches $75,000 a year. If registered, add your ABN and include GST in prices.
 2. US: register with a state before you collect its sales tax. Then turn on only those states in Shopify.
-3. Activate Shopify Payments, Shop Pay, Apple Pay and Google Pay. Add PayPal.
+3. Activate Shopify Payments and Shop Pay, and turn on the express wallets (such as Google Pay) it offers. Add any other payment option your customers expect.
 4. Set your statement name to your brand. Ask a registered tax agent or accountant if unsure.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.

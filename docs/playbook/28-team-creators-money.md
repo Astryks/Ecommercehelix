@@ -61,7 +61,7 @@
 
 **Expected result:** You know which rules apply.
 
-**Watch out:** Outside the US: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). Super guarantee is 12% of eligible pay (see [ATO: super guarantee](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee)). From 1 July 2026, super is paid each payday. Some contractors paid mainly for their labour also get super (see [ATO: super for contractors](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super/super-for-independent-contractors)). US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
+**Watch out:** Australia: see the ATO [employee or contractor guide](https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/employee-or-independent-contractor/difference-between-employees-and-independent-contractors) and [Fair Work](https://www.fairwork.gov.au/). Super guarantee is 12% of eligible pay (see [ATO: super guarantee](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee)). From 1 July 2026, super is paid each payday. Some contractors paid mainly for their labour also get super (see [ATO: super for contractors](https://www.ato.gov.au/businesses-and-organisations/super-for-employers/work-out-if-you-have-to-pay-super/super-for-independent-contractors)). US: the IRS looks at control and independence (W-2 or 1099) (see [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)).
 
 **Step 7.** Write the SOPs (how the work is done) before you hand it over.
 
@@ -139,7 +139,7 @@
 
 **Expected result:** All posts are disclosed.
 
-**Watch out:** Outside the US: see [ACCC: influencer endorsements](https://www.accc.gov.au/about-us/publications/social-media-influencer-testimonials-and-endorsements); GST registered creators add GST. US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
+**Watch out:** Australia: see [ACCC: influencer endorsements](https://www.accc.gov.au/about-us/publications/social-media-influencer-testimonials-and-endorsements); GST registered creators add GST. If a creator billing you as a business does not give you an ABN, you may have to withhold 47% of the payment (see [ATO: supplier not quoting an ABN](https://www.ato.gov.au/forms-and-instructions/statement-by-supplier-not-quoting-an-abn)). US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); get a Form W-9 before you pay; creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
 
 **Step 5.** Pay on time and keep invoices.
 
@@ -174,7 +174,7 @@
 
 **Expected result:** Bank details are verified by phone.
 
-**Watch out:** Never trust new bank details sent only by email. Report scams at [Scamwatch](https://www.scamwatch.gov.au/) or the [FTC](https://reportfraud.ftc.gov/) (US).
+**Watch out:** Never trust new bank details sent only by email. Report scams at [Scamwatch](https://www.scamwatch.gov.au/) (Australia) or the [FTC](https://reportfraud.ftc.gov/) (US).
 
 **Step 5.** If paying by card, check surcharges and your card's foreign transaction fee.
 
@@ -217,7 +217,7 @@
 
 **Expected result:** There are no hidden traps.
 
-**Watch out:** Look at [business.gov.au grants](https://business.gov.au/grants-and-programs) and [SBA loans](https://www.sba.gov/loans/) (US).
+**Watch out:** Look at [business.gov.au grants](https://business.gov.au/grants-and-programs) (Australia) and [SBA loans](https://www.sba.gov/loans/) (US).
 
 ### Good to know
 
@@ -305,9 +305,11 @@
 
 ### Good to know
 
-**Support lines:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
+**Australia:** Beyond Blue (1300 22 4636) and Lifeline (13 11 14) offer free support at any hour. Beyond Blue also runs free coaching for small business owners. The Small Business Debt Helpline (1800 413 828) helps with money worries. See [business.gov.au: mental health and wellbeing support](https://business.gov.au/risk-management/mental-health/mental-health-and-wellbeing-support-for-business).
 
 **US:** call or text 988 for the Suicide and Crisis Lifeline at any hour. See [988lifeline.org](https://988lifeline.org/).
+
+**UK:** call Samaritans free on 116 123 at any hour. See [samaritans.org](https://www.samaritans.org/).
 
 ## Lesson 28.8: Should you sell on Amazon?
 <!-- stage:grow -->
@@ -320,7 +322,7 @@
 
 **Watch out:** Smaller Amazon marketplaces outside the US have less demand, so check demand first.
 
-**Step 2.** Use Amazon's fee calculator to work out profit per unit. Take the price and subtract referral fee, shipping fee, storage, ads and returns.
+**Step 2.** Use Amazon's fee calculator to work out profit per unit. Take the price and subtract referral fee, fulfilment fee (if Amazon ships), storage, ads and returns.
 
 **Expected result:** You know profit per unit after all fees.
 
@@ -328,7 +330,7 @@
 
 **Expected result:** You have a selling model.
 
-**Step 4.** Apply for your trademark and enrol in Amazon Brand Registry before you list. A pending trademark is often accepted.
+**Step 4.** Apply for your trademark and enrol in Amazon Brand Registry before you list. Some countries accept a pending trademark, so check [Amazon's eligibility rules](https://brandservices.amazon.com/eligibility) for yours.
 
 **Expected result:** Your brand is protected.
 
@@ -345,7 +347,7 @@
 
 **Why this matters:** Shops that stock your product put it in front of people who never see your ads. Margins are lower per unit, but orders are bigger and there is no ad cost per sale. Done carefully, wholesale adds steady volume.
 
-**Step 1.** Work out your wholesale price: most shops expect to buy at about half the retail price. Check with your profit setup that landed cost, packaging and freight still leave a profit at that price.
+**Step 1.** Work out your wholesale price: a common rule of thumb is that shops expect to buy at about half the retail price. Check with your profit setup that landed cost, packaging and freight still leave a profit at that price.
 
 **Expected result:** A wholesale price for each product that still makes money. Or a list of products you cannot sell wholesale.
 
