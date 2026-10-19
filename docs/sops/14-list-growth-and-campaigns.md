@@ -12,7 +12,7 @@
 
 ## Pop-up and forms
 
-- Target a sign-up rate above 3%, and 6 to 10% with a strong offer. Klaviyo's general benchmark is 3% (see [Klaviyo: sign-up form best practices](https://www.klaviyo.com/blog/sign-up-form-best-practices)).
+- Rule of thumb: target a sign-up rate above 3%, and 6 to 10% with a strong offer.
 - Two to three fields at most, as a rule of thumb. Multi-step forms (a one-click question, then email, then phone) often lift sign-ups. Test them against a single step.
 - Ask one zero-party question ("What are you shopping for?") to personalise the welcome flow.
 - Offer options: dollar-off for high AOV, percent-off for low AOV, or a high-value free gift to protect margin. Early access or a quiz result also work.
@@ -21,7 +21,7 @@
 
 ## Other list builders
 
-- **Competitions and giveaways:** run them when ad costs are lower (before peak season) to collect future buyers cheaply. Collaborations with complementary brands widen reach. Watch email quality: low-intent sweepstakes entrants buy less. In Australia, games of chance may need a state or territory permit, depending on prize value (see [business.gov.au: legal obligations of marketing](https://business.gov.au/marketing/advertising/legal-obligations-of-marketing)). US sweepstakes rules vary by state.
+- **Competitions and giveaways:** run them when ad costs are lower (before peak season) to collect future buyers cheaply. Collaborations with complementary brands widen reach. Watch email quality: low-intent sweepstakes entrants buy less. In Australia, games of chance may need a state or territory permit, depending on prize value (see [business.gov.au: legal obligations of marketing](https://business.gov.au/marketing/advertising/legal-obligations-of-marketing)). US sweepstakes rules vary by state: New York and Florida need registration and a bond when prizes total over $5,000 (see [New York law](https://www.nysenate.gov/legislation/laws/GBS/369-E)).
 - **Lead ads** on Meta for list growth when CPMs are low.
 - **Hype pages** before launches and sales (SOP 15).
 - **Quizzes** for products with choice complexity.
@@ -56,6 +56,6 @@ Mix: product stories, education (Teach pillar), proof, founder notes, new arriva
 | Benchmark pop-up and list growth | Choose offers |
 | Draft pop-up copy and form steps | Approve and publish the form |
 | Draft weekly campaigns and a 4-week calendar | Approve each send |
-| Build segments as drafts (Growth) | Approve sending |
+| Suggest segment rules to set up in your email tool (Growth) | Build the segments and approve sending |
 
 **Related:** SOP 13, 15.

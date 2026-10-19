@@ -87,7 +87,7 @@
 
 **Expected result:** You know the competition is legal where you run it.
 
-**Watch out:** In Australia, a game of chance may need a permit in NSW, SA, the ACT or the NT. It depends on the prize value (see [business.gov.au: marketing](https://business.gov.au/marketing-and-advertising/marketing)). In the US, New York and Florida need registration and a bond when prizes total over $5,000.
+**Watch out:** In Australia, a game of chance may need a permit in NSW, SA, the ACT or the NT. It depends on the prize value (see [business.gov.au: marketing](https://business.gov.au/marketing-and-advertising/marketing)). In the US, New York and Florida need registration and a bond when prizes total over $5,000 (see [New York law](https://www.nysenate.gov/legislation/laws/GBS/369-E)).
 
 **Step 2.** Build the entry form on a store page and as a pop-up.
 
