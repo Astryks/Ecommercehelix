@@ -3,6 +3,7 @@ import { hasDb, prisma } from "../db";
 import { safeGet } from "./fetch";
 import { normaliseStoreUrl, robotsDisallows } from "./guard";
 import { collectFacts, findingsFrom, firstProductLink, type AuditInput, type Facts, type Finding, type ShopifyProduct } from "./checks";
+import { leaseHeld, releaseLease, takeLease } from "../limits";
 
 export type AuditRunRow = { id: string; url: string; startedAt: string; finishedAt: string | null; ok: boolean; findings: Finding[]; facts: Facts | null; error: string | null };
 
@@ -57,14 +58,15 @@ const toRow = (r: { id: string; url: string; startedAt: Date; finishedAt: Date |
   findings: (r.findings as Finding[]) ?? [], facts: (r.facts as Facts) ?? null, error: r.error,
 });
 
-/** Runs in progress on this server, so a double tap does not start two checks. */
-const running = new Map<string, number>();
-export const isCheckRunning = (userId: string, now = Date.now()) => (running.get(userId) ?? 0) > now - 2 * 60_000;
+/** One check at a time per user, across every server (a lease in the database). Expires after 2 minutes in case a server dies mid-check. */
+const LOCK_MS = 2 * 60_000;
+const lockKey = (userId: string) => `store-check:${userId}`;
+export const isCheckRunning = (userId: string) => leaseHeld(lockKey(userId)).catch(() => false);
 
-/** Run a check and store it. Never throws: a failed check is saved with a plain error. */
-export async function runAndSave(userId: string, url: string): Promise<AuditRunRow> {
-  running.set(userId, Date.now());
-  try { return await runAndSaveInner(userId, url); } finally { running.delete(userId); }
+/** Run a check and store it. Never throws: a failed check is saved with a plain error. Returns null if a check for this user is already running. */
+export async function runAndSave(userId: string, url: string): Promise<AuditRunRow | null> {
+  if (!(await takeLease(lockKey(userId), LOCK_MS).catch(() => true))) return null;
+  try { return await runAndSaveInner(userId, url); } finally { await releaseLease(lockKey(userId)); }
 }
 
 async function runAndSaveInner(userId: string, url: string): Promise<AuditRunRow> {

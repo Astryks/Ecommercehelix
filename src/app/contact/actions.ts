@@ -3,7 +3,8 @@ import { headers } from "next/headers";
 import { auth } from "@/auth";
 import { prisma, hasDb } from "@/lib/db";
 import { ensureUser } from "@/lib/repo";
-import { deliverContact, rateLimited, validateContact, type ContactResult } from "@/lib/contact";
+import { hashIp, overLimit } from "@/lib/limits";
+import { deliverContact, validateContact, type ContactResult } from "@/lib/contact";
 
 export async function sendContact(_prev: ContactResult | null, f: FormData): Promise<ContactResult> {
   const get = (k: string) => String(f.get(k) ?? "").trim();
@@ -14,7 +15,10 @@ export async function sendContact(_prev: ContactResult | null, f: FormData): Pro
   if (err) return { ok: false, error: err, values: input };
   const h = await headers();
   const ip = (h.get("x-forwarded-for") ?? "").split(",")[0].trim() || "unknown";
-  if (rateLimited(`ip:${ip}`) || rateLimited(`em:${input.email.toLowerCase()}`)) return { ok: false, error: "You have sent a few messages already. Please wait a few minutes and try again.", values: input };
+  // Lasting limit for everyone (works across servers): 5 messages per 10 minutes per hashed IP and per email.
+  const tenMin = 10 * 60_000;
+  const limited = (await overLimit(`contact:ip:${hashIp(ip)}`, 5, tenMin).catch(() => false)) || (await overLimit(`contact:em:${hashIp(input.email)}`, 5, tenMin).catch(() => false));
+  if (limited) return { ok: false, error: "You have sent a few messages already. Please wait a few minutes and try again.", values: input };
   let account: { id: string; plan: string } | undefined;
   const s = await auth().catch(() => null);
   if (s?.user?.id) {

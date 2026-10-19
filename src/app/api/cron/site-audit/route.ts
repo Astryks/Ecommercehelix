@@ -13,7 +13,7 @@ export async function GET(req: NextRequest) {
   let failed = 0;
   for (let i = 0; i < due.length; i += 5) {
     const batch = await Promise.all(due.slice(i, i + 5).map((d) => runAndSave(d.userId, d.url)));
-    for (const r of batch) r.ok ? ok++ : failed++;
+    for (const r of batch) if (r) r.ok ? ok++ : failed++;
   }
   return NextResponse.json({ checked: due.length, ok, failed });
 }

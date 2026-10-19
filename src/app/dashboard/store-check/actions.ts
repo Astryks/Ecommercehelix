@@ -17,10 +17,11 @@ export async function checkNow(form: FormData) {
   if (!acct.storeUrl) redirect("/dashboard/settings?need=store");
   const [last] = await auditRuns(u.id, 1);
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
-  const gate = checkGate({ last, paid, running: isCheckRunning(u.id) });
+  const gate = checkGate({ last, paid, running: await isCheckRunning(u.id) });
   if (gate === "upgrade") redirect("/dashboard/billing?need=starter&for=recheck");
   if (gate !== "ok") redirect(withParam(back, "checked", gate));
-  await runAndSave(u.id, acct.storeUrl!);
+  const run = await runAndSave(u.id, acct.storeUrl!);
+  if (!run) redirect(withParam(back, "checked", "running"));
   revalidatePath("/dashboard", "layout");
   redirect(back);
 }

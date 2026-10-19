@@ -17,17 +17,6 @@ export function validateContact(i: ContactInput): string | null {
   return null;
 }
 
-// Best-effort rate limit per key (IP and email): 5 per 10 minutes per server instance.
-const hits = new Map<string, number[]>();
-export function rateLimited(key: string, max = 5, windowMs = 10 * 60_000): boolean {
-  const now = Date.now();
-  const list = (hits.get(key) ?? []).filter((t) => now - t < windowMs);
-  if (list.length >= max) { hits.set(key, list); return true; }
-  list.push(now); hits.set(key, list);
-  if (hits.size > 5000) hits.clear();
-  return false;
-}
-
 /** The short "we got it" email. Pure, so it is tested: it never includes the message text. */
 export function confirmationEmail(i: ContactInput, replyTo: string) {
   return {

@@ -655,3 +655,18 @@ model WeeklyReview {
 
   @@unique([userId, week])
 }
+
+/// Lasting limits shared by every server. One row per hit; the key is never raw personal data (IPs are hashed).
+model RateHit {
+  id        String   @id @default(cuid())
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+}
+
+/// Short locks shared by every server, e.g. one store check at a time per user. Expired leases can be taken over.
+model Lease {
+  key   String   @id
+  until DateTime
+}
