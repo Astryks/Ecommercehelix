@@ -3,6 +3,7 @@ import { featuredEvent } from "../season-calendar";
 import { siteContent } from "../site-content";
 import { seasonTasksFor } from "../season-tasks";
 import { addDays, isoDay } from "../dates";
+import { sequenceIndex } from "./sequence";
 
 export const localHour = (now: Date, tz: string) => Number(new Intl.DateTimeFormat("en-GB", { timeZone: tz, hour: "2-digit", hourCycle: "h23" }).format(now));
 export const EVENT_LEADS = [28, 14, 7, 1, 0];
@@ -10,7 +11,7 @@ export const WINBACK_DAYS = 14;
 
 export type Due =
   | { kind: "welcome"; key: string }
-  | { kind: "daily"; key: string; date: string; tasks: { title: string; minutes: number }[] }
+  | { kind: "daily"; key: string; date: string; tasks: { title: string; minutes: number }[]; step: number }
   | { kind: "event"; key: string; name: string; daysTo: number; line: string; lesson: { label: string; href: string } }
   | { kind: "winback"; key: string };
 
@@ -31,7 +32,7 @@ export function dueEmails(p: Person, now: Date): Due[] {
       ...(season ? [{ title: season.title, minutes: 15 }] : [{ title: c.tip.text, minutes: 10 }]),
       { title: "Do your next lesson step", minutes: 10 },
       { title: "Write down one win", minutes: 2 },
-    ] });
+    ], step: sequenceIndex(isoDay(p.createdAt, p.timezone), date) });
     const hit = featuredEvent(date, p.country);
     if (hit && c.mode === "event" && EVENT_LEADS.includes(hit.daysTo))
       out.push({ kind: "event", key: `${hit.event.key}-${hit.year}-${hit.daysTo}`, name: hit.event.name, daysTo: hit.daysTo, line: c.heroExtra ?? c.banner.text, lesson: c.featuredLesson });

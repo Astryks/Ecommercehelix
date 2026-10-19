@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
       const r = await notify({ userId: u.id, email: u.email!, plan }, d.kind, d.key, (l) => {
         const c = { name: u.name ?? "", baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl };
         if (d.kind === "welcome") return welcomeEmail(c);
-        if (d.kind === "daily") return dailyTasksEmail(c, d.tasks, dayLabel(d.date));
+        if (d.kind === "daily") return dailyTasksEmail(c, d.tasks, dayLabel(d.date), d.step);
         if (d.kind === "event") return eventEmail(c, d);
         return winbackEmail(c);
       });

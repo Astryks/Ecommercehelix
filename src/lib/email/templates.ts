@@ -3,6 +3,7 @@
  * Marketing emails carry an unsubscribe link; transactional ones (receipts, payment problems, cancellation) do not need one.
  */
 import { postalAddress } from "./postal";
+import { SEQUENCE, lessonPath } from "./sequence";
 
 export type Email = { subject: string; html: string; text: string; marketing: boolean; kind: string };
 /** postalAddress: footer address for marketing emails; defaults to BUSINESS_POSTAL_ADDRESS (null shows none). */
@@ -44,7 +45,17 @@ export function welcomeEmail(c: Ctx): Email {
     button: { label: "Open Today", href: `${c.baseUrl}/dashboard` } });
 }
 
-export function dailyTasksEmail(c: Ctx, tasks: { title: string; minutes: number }[], dateLabel: string): Email {
+/**
+ * The daily email. With a sequence step it sends that day's email from SEQUENCE (one idea, one action, one lesson link);
+ * without one it falls back to the plain task list.
+ */
+export function dailyTasksEmail(c: Ctx, tasks: { title: string; minutes: number }[], dateLabel: string, step?: number): Email {
+  const s = step === undefined ? undefined : SEQUENCE[((step % SEQUENCE.length) + SEQUENCE.length) % SEQUENCE.length];
+  if (s) {
+    const extra = tasks.length ? [`Your Today list in Helix has ${tasks.length} more small steps waiting for ${dateLabel}.`] : [];
+    return layout(c, { kind: "daily", marketing: true, subject: s.subject, preheader: s.preview, title: s.title,
+      paras: [...s.paras, `Your one step today: ${s.action}`], button: { label: s.lesson.label, href: `${c.baseUrl}${lessonPath(s.lesson)}` }, after: extra });
+  }
   const total = tasks.reduce((a, t) => a + t.minutes, 0);
   return layout(c, { kind: "daily", marketing: true, subject: `Today in Helix: ${tasks.length} small steps (${total} min)`, preheader: tasks[0]?.title ?? "Your steps for today", title: `Your steps for ${dateLabel}`,
     paras: ["Here is your list for today. Do them in order. Small steps add up."], list: tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: "Start today's steps", href: `${c.baseUrl}/dashboard` } });
