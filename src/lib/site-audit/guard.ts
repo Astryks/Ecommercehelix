@@ -41,14 +41,53 @@ export function isPrivateIp(ip: string): boolean {
     return V4_BLOCKS.some(([base, bits]) => (n >>> (32 - bits)) === (v4ToInt(base) >>> (32 - bits)));
   }
   if (kind === 6) {
-    const x = ip.toLowerCase();
-    if (x === "::" || x === "::1") return true;
-    const mapped = x.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/);
-    if (mapped) return isPrivateIp(mapped[1]);
-    if (/^::ffff:/.test(x)) return true;
-    return /^(fc|fd|fe8|fe9|fea|feb|ff|2001:db8|64:ff9b)/.test(x);
+    const h = v6ToHextets(ip);
+    if (!h) return true;
+    const v4 = (a: number, b: number) => `${h[a] >> 8}.${h[a] & 255}.${h[b] >> 8}.${h[b] & 255}`;
+    if (h.every((x) => x === 0)) return true; // ::
+    if (h.slice(0, 7).every((x) => x === 0) && h[7] === 1) return true; // ::1
+    if (h.slice(0, 5).every((x) => x === 0) && (h[5] === 0 || h[5] === 0xffff)) return isPrivateIp(v4(6, 7)) || h[5] === 0; // ::a.b.c.d (deprecated, block) and ::ffff:a.b.c.d
+    if (h[0] === 0x64 && h[1] === 0xff9b) return true; // NAT64
+    if (h[0] === 0x2002) return isPrivateIp(v4(1, 2)); // 6to4 wraps an IPv4 address
+    if (h[0] === 0x2001 && h[1] === 0) return true; // Teredo
+    if (h[0] === 0x2001 && h[1] === 0xdb8) return true; // documentation
+    if (h[0] === 0x100 && h[1] === 0 && h[2] === 0 && h[3] === 0) return true; // discard
+    if ((h[0] & 0xfe00) === 0xfc00) return true; // unique local fc00::/7
+    if ((h[0] & 0xffc0) === 0xfe80 || (h[0] & 0xffc0) === 0xfec0) return true; // link-local, old site-local
+    if ((h[0] & 0xff00) === 0xff00) return true; // multicast
+    if ((h[0] & 0xe000) !== 0x2000) return true; // only global unicast 2000::/3 is public
+    return false;
   }
   return true;
+}
+
+/** Expand an IPv6 string (with optional zone and dotted tail) into 8 numbers. */
+function v6ToHextets(ip: string): number[] | null {
+  let x = ip.toLowerCase().replace(/%.*$/, "");
+  const dotted = x.match(/(\d+\.\d+\.\d+\.\d+)$/);
+  if (dotted) {
+    const n = v4ToInt(dotted[1]);
+    x = x.slice(0, -dotted[1].length) + `${(n >>> 16).toString(16)}:${(n & 0xffff).toString(16)}`;
+  }
+  const [a, b] = x.split("::");
+  const left = a ? a.split(":") : [];
+  const right = b !== undefined && b ? b.split(":") : [];
+  const fill = b === undefined ? 0 : 8 - left.length - right.length;
+  if (fill < 0) return null;
+  const parts = [...left, ...Array(fill).fill("0"), ...right].map((p) => parseInt(p, 16));
+  return parts.length === 8 && parts.every((p) => p >= 0 && p <= 0xffff) ? parts : null;
+}
+
+/** Follow a redirect Location only if the new URL passes the same checks (scheme, port, host). */
+export function resolveRedirect(location: string, from: URL): URL | null {
+  let next: URL;
+  try {
+    next = new URL(location, from);
+  } catch {
+    return null;
+  }
+  if (next.protocol !== "http:" && next.protocol !== "https:") return null;
+  return normaliseStoreUrl(next.toString());
 }
 
 /** Very small robots.txt reader: is `path` disallowed for all bots or for us? */
