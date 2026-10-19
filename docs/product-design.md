@@ -207,12 +207,11 @@ A weekly-refreshed feed of what is working now on Meta, TikTok, Google and emerg
 
 | Trend | What to do | Source |
 | --- | --- | --- |
-| Partnership (creator) ads inside normal sales campaigns | Run 3 to 5 creator posts as ads from the creator's handle in evergreen and Q4 campaigns | Meta announcement via Storyboard18: https://www.storyboard18.com/digital/meta-launches-new-era-of-shopping-experiences-powered-by-ai-reels-creators-ws-l-94638.htm |
-| Catalog product video on Reels | Turn existing videos into catalog templates so each product gets a video ad | https://www.adgully.com/post/14093/meta-launches-ai-powered-shopping-experiences-across-reels-and-creators |
+| Partnership (creator) ads inside normal sales campaigns | Run 3 to 5 creator posts as ads from the creator's handle in evergreen and Q4 campaigns | https://developers.facebook.com/docs/marketing-api/ad-creative/partnership-ads |
+| Catalog product video on Reels | Add a video to each top product so catalog ads show video | https://developers.facebook.com/documentation/ads-commerce/marketing-api/advantage-catalog-ads/allow-product-video |
 | Review Advantage+ creative auto-enhancements | Check which default AI enhancements (music, overlays, backgrounds) are on and turn off any that hurt your brand | https://www.facebook.com/business/help/297506218282224 |
-| Reels trending ads around big moments | Event-based placements (for example Black Friday lineups) for brands with cultural tie-ins | https://www.thekeyword.co/news/meta-newfronts-2026-ad-products |
-| TikTok Shop runs on GMV-based automated campaigns | If you sell on TikTok Shop, feed it creator and affiliate videos; judge in-platform return as its own score | https://ads.tiktok.com/resources/help/article/about-product-gmv-max ; https://www.enrichlabs.ai/blog/tiktok-shop-ads-complete-guide-2026 |
-| TikTok Search ads and in-app checkout | Test search ads once TikTok creative is working | https://channelx.world/2026/10/tiktok-ai-powered-updates-for-advertisers-unveiled/ |
+| TikTok Shop runs on GMV-based automated campaigns | If you sell on TikTok Shop, feed it creator and affiliate videos; judge in-platform return as its own score | https://ads.tiktok.com/resources/help/article/about-product-gmv-max |
+| TikTok search ads add keywords automatically | Test search ads once TikTok creative is working; check the search terms report weekly | https://ads.tiktok.com/help/article/about-automated-keywords-for-search-ads-campaigns |
 | AI Max for Search and Shopping | Audit auto-upgraded campaigns, review AI-written copy and landing pages, add negatives | https://blog.google/products/ads-commerce/ai-max-for-shopping/ |
 | PMax vs AI Max roles | Keep brand exclusions on PMax, keep brand search separate | https://support.google.com/google-ads/answer/14505308 |
 | Shopify products in AI shopping assistants | Check agentic storefront eligibility and product data quality | https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts |
@@ -227,7 +226,7 @@ Trend claims and platform figures are the sources' own numbers. Helix shows the 
 |  Suits: apparel, beauty, home · Stage 1+                      |
 |  Try it in 30 min: pick your best 3 creator posts, ask for    |
 |  ad permission, add them to your Cold campaign.               |
-|  Source: Meta (Storyboard18), 2026                            |
+|  Source: Meta for Developers, 2026                            |
 |  [ Adapt this for my store ]  [ Save ]  [ Not for me ]        |
 |--------------------------------------------------------------|
 |  📈 Hook of the week: "I tried the 1-star reviews so you..."  |

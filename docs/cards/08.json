@@ -11,7 +11,7 @@
  ]},
 "8.2": {"intro": "Shopping ads are built from your product list. Better product info means better, cheaper ads.",
  "steps": [
-  {"say": "Rewrite titles with search words first: brand, product type, key feature. Example: \"Acme Linen Shirt, Men's, Relaxed Fit, Sand\".", "check": "Your top 20 products have search-first titles.", "lost": "Rewrite your best seller's title first."},
+  {"say": "Rewrite titles with search words first: brand, product type, key feature. Example: \"Helix Linen Shirt, Men's, Relaxed Fit, Sand\".", "check": "Your top 20 products have search-first titles.", "lost": "Rewrite your best seller's title first."},
   {"say": "Use a clean main photo: just the product, plain background.", "check": "No text or logos on main photos.", "lost": "Swap one busy main photo for a clean one."},
   {"say": "Check feed prices and shipping match your site. Add barcode numbers (GTINs) if you have them.", "check": "Merchant Center shows no mismatches.", "lost": "Check one product's price matches your site."},
   {"say": "Add your own labels, like margin level, best seller or season.", "check": "Products can be grouped by label.", "lost": "Label your best sellers."},

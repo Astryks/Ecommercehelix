@@ -58,7 +58,7 @@
 ## Legal and practical checks
 
 - If some products are excluded, say so clearly in ads and on site.
-- Only show a "was" price you really charged for a reasonable time before the sale. Otherwise the saving can be misleading (see [ACCC: two-price comparisons](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising) and [FTC: former price comparisons](https://www.law.cornell.edu/cfr/text/16/233.1)).
+- Only show a "was" price you really charged for a reasonable time before the sale. Otherwise the saving can be misleading (see [ACCC: two-price comparisons](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising) and [FTC: former price comparisons](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-233/section-233.1)).
 - Show a clear refund and exchange policy for sale items before purchase. It can limit change-of-mind returns only.
 - In Australia, never say "no refunds on sale items". Faulty sale items still get a repair, replacement or refund (see [ACCC: consumers' rights and obligations](https://www.accc.gov.au/business/treating-customers-fairly/consumers-rights-obligations)).
 - Make sure discounted prices pass correctly to Google and Meta catalogs.

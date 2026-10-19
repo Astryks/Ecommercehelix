@@ -82,7 +82,7 @@
 
 **Why this matters:** Shopping ads are built from your product feed. Better product data means better ads and cheaper clicks. Most gains come from titles, images and fixing errors.
 
-**Step 1.** Rewrite product titles with search words first: brand, product type, then main feature. For example: "Acme Linen Shirt, Men's, Relaxed Fit, Sand". Put the most important words in the first 70 characters, because Google often shows only about 70.
+**Step 1.** Rewrite product titles with search words first: brand, product type, then main feature. For example: "Helix Linen Shirt, Men's, Relaxed Fit, Sand". Put the most important words in the first 70 characters, because Google often shows only about 70.
 
 **Expected result:** Your top 20 products have search-first titles.
 

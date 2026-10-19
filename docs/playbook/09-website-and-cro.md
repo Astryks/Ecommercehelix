@@ -101,7 +101,7 @@
 
 **Step 1.** Run your text and button colours through a free online contrast checker.
 
-**Expected result:** Body text and buttons pass at least the AA level. For normal text that means a contrast ratio of 4.5 to 1 (see [W3C: contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)).
+**Expected result:** Body text and buttons have strong contrast: at least WCAG AA, which is 4.5 to 1 for normal text (see [web.dev: colour and contrast](https://web.dev/articles/color-and-contrast-accessibility)).
 
 **Step 2.** Add alt text to every product image in Shopify **Products > [product] > Media**. Alt text is a short description for screen readers.
 

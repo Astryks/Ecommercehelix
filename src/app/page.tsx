@@ -65,7 +65,7 @@ function MorningBrief() {
     <figure className="card relative overflow-hidden p-0" aria-label="Example of the Helix morning view">
       <div className="flex items-center justify-between border-b border-slate-200 px-6 py-3">
         <span className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Your morning, in Helix</span>
-        <span className="text-xs text-slate-500">Example store</span>
+        <span className="text-xs text-slate-500">Example store: Helix Linen</span>
       </div>
       <div className="px-6 pb-6 pt-5">
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Profit yesterday</p>
