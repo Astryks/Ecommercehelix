@@ -77,3 +77,24 @@ describe("store check findings", () => {
     expect(d.added).toEqual([]);
   });
 });
+
+describe("store check SSRF guard (extra)", () => {
+  it("blocks IPv6 forms that wrap private IPv4", async () => {
+    const { isPrivateIp, normaliseStoreUrl, resolveRedirect } = await import("@/lib/site-audit/guard");
+    for (const ip of ["::7f00:1", "::127.0.0.1", "::ffff:7f00:1", "::ffff:10.0.0.1", "2002:7f00:1::", "2002:a9fe:a9fe::1", "fe80::1", "fe80::1%eth0", "fc00::1", "fd12::1", "fec0::1", "ff02::1", "2001::1", "64:ff9b::a00:1", "::", "::1", "2001:db8::1"]) {
+      expect(isPrivateIp(ip), ip).toBe(true);
+    }
+    for (const ip of ["2606:4700::1111", "8.8.8.8", "2002:808:808::"]) expect(isPrivateIp(ip), ip).toBe(false);
+    expect(normaliseStoreUrl("http://[::127.0.0.1]/")).toBeNull();
+    expect(normaliseStoreUrl("http://[::ffff:169.254.169.254]/")).toBeNull();
+    expect(normaliseStoreUrl("http://2130706433/")).toBeNull();
+    expect(normaliseStoreUrl("http://0x7f.1/")).toBeNull();
+    const from = new URL("https://shop.com/");
+    expect(resolveRedirect("file:///etc/passwd", from)).toBeNull();
+    expect(resolveRedirect("gopher://shop.com/", from)).toBeNull();
+    expect(resolveRedirect("http://169.254.169.254/latest/meta-data", from)).toBeNull();
+    expect(resolveRedirect("http://[fd00::1]/", from)).toBeNull();
+    expect(resolveRedirect("//localhost/", from)).toBeNull();
+    expect(resolveRedirect("/products", from)?.toString()).toBe("https://shop.com/products");
+  });
+});

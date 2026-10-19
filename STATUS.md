@@ -118,6 +118,10 @@ Every factual claim in the 30 playbook modules, their card decks (`docs/cards`),
 
 **Could not verify (softened or left labelled):** Shopify US Basic price (US page did not load; third-party US$39), Meta pages that block fetching (partnership ad path, ad account moves, currency change), Click Frenzy 2026 dates, Klaviyo open rates, US sweepstakes bond rules, Neon region, "not registered for GST" (business fact).
 
+## Store check safety and stages rebuild (20 Oct 2026)
+- **Store check address safety tightened:** the check now verifies the IP address at the moment it connects (so a site cannot pass the check and then switch its DNS to a private address), on every redirect hop. Redirects to non-http(s) schemes, odd ports, localhost or private, loopback and link-local addresses are refused. IPv6 forms that wrap a private IPv4 address (e.g. `::127.0.0.1`, 6to4, NAT64, Teredo) are now blocked too. New tests cover these.
+- **stages.md rebuild fixed:** `scripts/plain_layer.py` crashed on modules 29 and 30 (they have hand-written plain-words boxes). It now keeps those boxes, and `python3 scripts/plain_layer.py --stages` rebuilds only `docs/playbook/stages.md` without touching module files (a full run would undo recent hand edits in modules 9 to 28, so use `--stages`). stages.md was already up to date.
+
 ## Sale maths, list health and cash lessons (17 Oct 2026)
 - **5 new lessons (309 in total), in our own words, slotted into the guided path, each with a card deck and "I'm lost" lines:** 13.13 Work out your sale numbers before you pick the discount; 10.16 Wake up your quieter subscribers before a big sale; 10.17 Do your customers come back? Plan around it (Grow tag); 7.16 Catalog ads; 14.12 Count the days your cash is stuck. Lesson-count test now at least 309.
 - **Past-customer spend cap reworded** in 20.2, its card and the sale builder label. Now one wording everywhere (19 Oct): "Meta announced in 2025 it is retiring its old past-customer spend cap, so check Ads Manager" (Meta for Developers, 3 Jun 2025). 13.6 now has a table of who each sale campaign leaves out.

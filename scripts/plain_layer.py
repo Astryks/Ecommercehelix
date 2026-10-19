@@ -260,14 +260,18 @@ def main():
         n = int(f[:2])
         p = os.path.join(PB, f)
         md = open(p).read()
-        md = re.sub(r"\n?<!-- plain:start -->.*?<!-- plain:end -->\n?", "\n", md, flags=re.S)
+        # modules without a PLAIN entry (29, 30) keep their hand-written box
+        own_box = n in PLAIN
+        if own_box:
+            md = re.sub(r"\n?<!-- plain:start -->.*?<!-- plain:end -->\n?", "\n", md, flags=re.S)
         md = re.sub(r"\n?<!-- guide:([a-z0-9-]+) -->.*?<!-- /guide:\1 -->\n?", "\n", md, flags=re.S)
         md = re.sub(r"\n<!-- stage:[a-z]+ -->", "", md)
         md = re.sub(r"^(## Lesson (\d+\.\d+):.*)$", lambda m: m.group(1) + f"\n<!-- stage:{lesson_stage(m.group(2))} -->", md, flags=re.M)
         md = re.sub(r"\n{3,}", "\n\n", md)
         # plain box goes right before the first horizontal rule
-        i = md.index("\n---\n")
-        md = md[:i] + "\n\n" + plain_box(n) + "\n" + md[i:]
+        if own_box:
+            i = md.index("\n---\n")
+            md = md[:i] + "\n\n" + plain_box(n) + "\n" + md[i:]
         # guides go at the end of the named lesson (before the next ## heading)
         for heading in dict.fromkeys(g[1] for g in GUIDES if g[0] == f[:2]):
             blocks = "\n\n".join(guide_block(g) for g in GUIDES if g[0] == f[:2] and g[1] == heading)
@@ -277,7 +281,7 @@ def main():
             md = md[:nxt].rstrip("\n") + "\n\n" + blocks + "\n" + md[nxt:]
         open(p, "w").write(md)
     write_stages()
-    print("plain layer:", len(PLAIN), "modules,", len(GUIDES), "guide embeds")
+    print("plain layer:", len(PLAIN), "generated boxes,", len(GUIDES), "guide embeds")
 
 
 def write_stages():
@@ -304,4 +308,10 @@ def write_stages():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    # --stages: rebuild only stages.md (module files carry hand edits newer than PLAIN)
+    if "--stages" in sys.argv:
+        write_stages()
+        print("stages.md rebuilt")
+    else:
+        main()
