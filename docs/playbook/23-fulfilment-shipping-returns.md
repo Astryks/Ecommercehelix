@@ -49,7 +49,7 @@
 
 **Expected result:** You have 3 quotes for the same workload.
 
-**Watch out:** Outside the US: most warehouses are in the biggest cities. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
+**Watch out:** Outside the US: in Australia, most warehouses are in the biggest cities. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
 
 **Step 4.** Compare the full monthly bill, not just pick and pack. Include receiving, storage (per pallet, shelf or cubic metre) and packaging. Add monthly minimums, set-up, returns and busy-season extras.
 
@@ -112,13 +112,13 @@
 
 **Step 1.** Weigh and measure your 3 most common parcels.
 
-**Expected result:** You know the size and weight of each. Carriers charge by size as well as weight (cubic or dimensional weight), so smaller boxes can save money. See [Australia Post: cubic weight](https://auspost.com.au/business/business-ideas/ecommerce-jargon-busters/what-is-cubic-weight) and [USPS: size and weight](https://faq.usps.com/articles/Knowledge/Parcel-Size-Weight-Fee-Standards).
+**Expected result:** You know the size and weight of each. Carriers charge by size as well as weight (cubic or dimensional weight), so smaller boxes can save money. See [Australia Post: cubic weight](https://auspost.com.au/business/grow-your-business/business-ideas-blog/what-is-cubic-weight) and [USPS: size and weight](https://faq.usps.com/articles/Knowledge/Parcel-Size-Weight-Fee-Standards).
 
 **Step 2.** Get rates from at least 2 carriers for your top delivery zones.
 
 **Expected result:** You can compare prices side by side.
 
-**Watch out:** Outside the US: compare the national post with private couriers, especially over 1 kg and for WA and regional areas. US: compare USPS, UPS and FedEx; ground is often cheaper for heavy parcels and USPS for small light ones.
+**Watch out:** Outside the US: compare the national post with private couriers, especially over 1 kg (in Australia, also for WA and regional areas). US: compare the postal service with private carriers; ground services are often cheaper for heavy parcels and the postal service for small light ones.
 
 **Step 3.** Work out your average shipping cost per order from last month's bills. Enter it in Helix under shipping.
 
@@ -163,9 +163,9 @@
 
 **Step 4.** If you offer shipping protection, let buyers choose it. Leave it unticked, with the price shown (see [Shopify app store requirements](https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements)).
 
-**Expected result:** Customers choose it; it is never pre-selected.
+**Expected result:** Customers choose it; it is never pre-selected. Shopify's app rules ban apps from pre-selecting optional charges.
 
-**Watch out:** Outside the US: pre-selected extras must be included in the total price you show (see [ACCC: price displays](https://www.accc.gov.au/consumers/pricing/price-displays)). US: the [FTC](https://www.ftc.gov/business-guidance/advertising-marketing) treats hidden or pre-checked charges as a risk area.
+**Watch out:** Outside the US: in Australia, pre-selected extras must be included in the total price you show (see [ACCC: price displays](https://www.accc.gov.au/consumers/pricing/price-displays)). US: the [FTC](https://www.ftc.gov/business-guidance/advertising-marketing) treats hidden or pre-checked charges as a risk area.
 
 **Step 5.** Record protection fees as income and resends as costs.
 
@@ -196,7 +196,7 @@
 
 **Expected result:** More returns become exchanges.
 
-**Watch out:** Outside the US: in Australia, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds"; "no refunds for change of mind" is fine (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** Outside the US: in Australia, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds"; "no refunds for change of mind" is fine (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). UK and EU: online shoppers can usually cancel within 14 days of delivery without giving a reason, so "no change of mind refunds" does not work for them (see [GOV.UK](https://www.gov.uk/online-and-distance-selling-for-businesses) and [Your Europe](https://europa.eu/youreurope/citizens/consumers/shopping/returns/index_en.htm)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 5.** Make returns easy to start with a form or portal, checking the portal's price against your return volume.
 

@@ -102,7 +102,7 @@
 
 **Expected result:** Both are correct. Changing either later closes the account and starts a new one.
 
-**Watch out:** Outside the US: if you are registered for GST, add your ABN in Meta billing. Then you are not charged GST. Check your card's overseas fee too (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
+**Watch out:** Outside the US: in Australia, if you are registered for GST, add your ABN in Meta billing. Then you are not charged GST. Check your card's overseas fee too (see [ATO: imported services](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/australian-business-importing-goods-and-services)). US: use a business card and call the issuer before raising budgets.
 
 **Step 7.** Connect the ad account to Helix.
 

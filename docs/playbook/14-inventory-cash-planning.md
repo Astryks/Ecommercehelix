@@ -340,11 +340,11 @@
 
 **Why this matters:** From the day you pay a supplier to the day a customer's money reaches your bank, your cash is stuck. The longer it is stuck, the more cash you need to grow. One simple number shows you how long, and what to fix first.
 
-**Step 1.** Find how many days your stock sits before it sells. In Shopify, open **Analytics > Reports > Inventory remaining per product**. Or divide the cost of all the stock you hold by the cost of the stock you sell in an average day. For example, $27,000 of stock ÷ $300 sold per day = 90 days.
+**Step 1.** Find how many days your stock sits before it sells. In Shopify, open **Analytics > Reports > Inventory remaining per product** and read the **Days of inventory remaining** column (on plans that include reports). Or divide the cost of all the stock you hold by the cost of the stock you sell in an average day. For example, $27,000 of stock ÷ $300 sold per day = 90 days.
 
 **Expected result:** One number: days stock sits (for example 90).
 
-**Step 2.** Find how many days it takes for customer money to reach your bank. Check your payouts page. Card payouts often take 2 to 3 days.
+**Step 2.** Find how many days it takes for customer money to reach your bank. Check your payouts page. Card payouts often take 2 to 3 business days (see [Shopify: payout timing](https://help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing)).
 
 **Expected result:** One number: days until you are paid (for example 3).
 

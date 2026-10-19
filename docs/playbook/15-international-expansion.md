@@ -75,7 +75,7 @@
 
 **Step 2.** Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.
 
-**Expected result:** Customers pay no surprise bill at delivery, which usually sells better.
+**Expected result:** Customers pay no surprise bill at delivery, which usually sells better. Shopify charges a small fee on orders where it works out duties at checkout, and products need HS codes (see [Shopify: collecting duties](https://help.shopify.com/manual/markets/duties-and-import-taxes/charging-duties)).
 
 ## Lesson 15.4: Product and promotion
 <!-- stage:grow -->

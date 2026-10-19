@@ -14,7 +14,7 @@
 "15.3": {"intro": "Local prices in local money, rounded nicely, sell better than converted prices. Decide who pays duties up front.",
  "steps": [
   {"say": "In Shopify **Markets > Catalogs**, set prices in local money for that market, rounded to normal prices (like 49 euros, not 47.83).", "check": "Shoppers there see clean local prices.", "lost": "Round your best seller's price to a nice number."},
-  {"say": "Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.", "check": "Customers get no surprise bill at the door. That usually sells better.", "lost": "Turn on DDP."}
+  {"say": "Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.", "check": "Customers get no surprise bill at the door. That usually sells better. Shopify charges a small fee on orders where it works out duties, and products need HS codes.", "lost": "Turn on DDP."}
  ]},
 "15.4": {"intro": "What sells at home may need small changes overseas.",
  "steps": [
