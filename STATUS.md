@@ -145,6 +145,13 @@ Every factual claim in the 30 playbook modules, their card decks (`docs/cards`),
 - 321 items have no transcript or local video; they were judged from their titles only and are listed in the private report for a separate check.
 - **7 new lessons (304 in total), in our own words, slotted into the guided path:** 5.20 Tell a short story in an ad; 5.21 Borrow what is already popular; 5.22 Make simple ads with free apps; 7.15 Cost caps, bid caps and value rules (Grow tag); 10.15 Ask shoppers what they want, then use the answers; 12.11 Start a YouTube channel that keeps selling; 20.13 Read Google Analytics in 15 minutes. Each has a simple card deck with "I'm lost" lines. Lesson-count test now at least 304.
 
+## Leftovers (20 Oct 2026)
+
+- **Lasting limits across servers:** two new additive tables, applied to Neon before the push: `RateHit` (one row per hit, keyed by a hashed IP or hashed email, never the raw value) and `Lease` (short locks). The signed-out and signed-in contact form now allows 5 messages per 10 minutes per hashed IP and per email on every server; members also keep the 5-an-hour audit-log limit. The store check is one at a time per user across servers (2-minute lease, taken over if a server dies). Code in `src/lib/limits.ts`, tests in `tests/limits.test.ts`. The audit log could not be reused for signed-out visitors because every row needs a user.
+- Site-wide search keywords no longer include "e-commerce coach app".
+- J1 (Today's next card vs /dashboard/cards): not reproduced with a fresh demo account; both read the same `userCards()`.
+- Vercel production env (checked 20 Oct): `AUTH_SECRET`, `CRON_SECRET`, `FACEBOOK_GROUP_URL` present (used as the fallback for `FB_GROUP_URL`, which is not set). `WINS_MODERATORS` is missing, so /admin/community and the Wins wall have no owner yet.
+
 ## Spacing pass and members group workflow (16 Oct 2026)
 
 - **Spacing:** shared tokens in `src/app/globals.css` (`--space-eyebrow`, `--space-lead`, `--space-lead-underlined`, `--space-block`, `--space-section`, `--space-page`, `--space-card`; tighter on phones) used as Tailwind `mt-eyebrow`, `mt-lead`, `mt-lead-ul`, `mt-block`, `py-section`, `pt-page`, `p-card`, plus `page-title` / `page-lead` and `PageHero` / `PageHeader` in `src/components/ui`. Taglines under an underlined heading get more room everywhere. The repeated "About" eyebrow is gone. Lesson pages no longer scroll sideways on phones. Screenshots in `/workspace/reports/helix/spacing-1016/` on the build box.
