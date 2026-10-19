@@ -25,7 +25,7 @@ Avoid high-effort, low-impact work. A cheap theme tweak shipped this week usuall
 - [ ] Promo bar with the current offer or shipping promise.
 - [ ] Simple navigation, best sellers easy to reach. Visual menus on mobile.
 - [ ] Top banner with one message and one call to action. Separate 4:5 mobile image.
-- [ ] Email capture pop-up (timed, easy to close on mobile). Klaviyo treats a 3% submit rate as its general benchmark. Standard pop-ups often reach 3 to 8% of people who see them (see [Klaviyo: sign-up form best practices](https://www.klaviyo.com/blog/sign-up-form-best-practices)). Footer forms usually capture far fewer.
+- [ ] Email capture pop-up (timed, easy to close on mobile). As a rule of thumb, a pop-up that signs up about 3% of the people who see it is doing fine; good ones do better. Footer forms usually capture far fewer.
 
 **Product page (treat it as a landing page)**
 - [ ] One line under the title saying why this product is different.
@@ -43,7 +43,7 @@ Avoid high-effort, low-impact work. A cheap theme tweak shipped this week usuall
 **Cart and checkout**
 - [ ] Progress bar to free shipping or gift.
 - [ ] Express payment buttons.
-- [ ] No surprise costs at the last step. Extra costs (shipping, tax, fees) are the top reason shoppers abandon checkout (see [Baymard: cart abandonment](https://baymard.com/lists/cart-abandonment-rate)).
+- [ ] No surprise costs at the last step. Surprise extra costs (shipping, tax, fees) are one of the most common reasons shoppers abandon checkout.
 
 ## Landing pages
 
@@ -70,7 +70,7 @@ Avoid high-effort, low-impact work. A cheap theme tweak shipped this week usuall
 | Helix can do (with approval) | The user does |
 | --- | --- |
 | Rank fixes, write copy, reasons why, FAQs (no approval to draft) | Choose fixes |
-| Draft Shopify theme or content edits as a preview (Growth, beta) | Approve publish; Helix keeps the previous version for undo |
+| Write theme and page copy changes for you to paste (Helix reads your store but cannot edit it) | Make the change on a theme copy, then publish; keep the old copy for undo |
 | Draft landing page copy and structure | Build in their page builder, or approve Helix draft |
 | Track tests and call winners | Approve calling a test |
 

@@ -148,7 +148,7 @@
 
 **Why this matters:** TikTok Shop lets people buy without leaving TikTok. Its ads run as GMV Max campaigns, which aim for total sales (GMV). It also has affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
 
-**Watch out:** TikTok Shop runs in the US, UK, parts of Europe and Asia. It is not yet in Australia (October 2026). Since July 2025, GMV Max is the only TikTok Shop ad type (see [TikTok: GMV Max for Shop ads](https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads)).
+**Watch out:** TikTok Shop runs in the US, UK, and parts of Europe, Asia and Latin America. It is not yet in Australia (October 2026). Since July 2025, GMV Max is the only TikTok Shop ad type (see [TikTok: GMV Max for Shop ads](https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads)).
 
 **Step 1.** Work out your margin per order after TikTok Shop's commission and fees.
 
@@ -213,7 +213,7 @@
 ## Lesson 12.9: AI search and agentic commerce
 <!-- stage:attract -->
 
-**Why this matters:** More shoppers now ask AI helpers (like ChatGPT, Gemini or Perplexity) what to buy. Some helpers can even shop for them. Clear facts, reviews and clean product data decide whether they recommend you.
+**Why this matters:** More shoppers now ask AI helpers (AI chat assistants and AI search) what to buy. Some helpers can even shop for them. Clear facts, reviews and clean product data decide whether they recommend you.
 
 **Step 1.** Make your brand facts the same everywhere (site, marketplaces, social bios) and grow your reviews.
 
@@ -223,7 +223,7 @@
 
 **Expected result:** AI tools can read and quote your store accurately.
 
-**Step 3.** Keep your product feed connected so your store can show up inside AI shopping assistants.
+**Step 3.** Keep your product feed connected so your store can show up inside AI shopping assistants. Shopify lists eligible stores in AI chat apps by default under **Sales channels > Agentic** (see [Shopify: agentic storefronts](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts)).
 
 **Expected result:** Your products are eligible for AI shopping results.
 
@@ -234,19 +234,19 @@
 ## Lesson 12.10: Instagram shopping
 <!-- stage:attract -->
 
-**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since late 2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
+**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
 
 **Step 1.** Set up your shop on Facebook and Instagram.
 
-1. Open Meta Commerce Manager and click **Get started**.
-2. Pick Shopify as your platform, then follow the **Set up your shop** checklist (catalog, shipping and your checkout link).
-3. Click **Publish shop**.
+1. In Shopify, add the **Facebook & Instagram** sales channel from the Shopify App Store.
+2. Click **Connect account** and connect your Facebook Page, business portfolio, Instagram account and catalog.
+3. Accept the terms and click **Finish setup** (see [Shopify: set up Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta/setup)).
 
-**Expected result:** Commerce Manager shows your shop as in review. Approval can take from a few days to a few weeks.
+**Expected result:** Meta reviews your shop before it goes live. This can take a few days or longer.
 
 **Step 2.** Turn on catalog sync from your store so prices and stock stay current.
 
-**Expected result:** Catalog changes appear within a day.
+**Expected result:** Price and stock changes in Shopify flow to your Meta catalog by themselves.
 
 **Step 3.** Tag products in your posts and Reels.
 
@@ -265,7 +265,7 @@
 
 **Expected result:** A plan for your first 3 videos.
 
-**Step 3.** Write each title as the question or the result people want. Keep it under about 60 characters, so it is not cut off.
+**Step 3.** Write each title as the question or the result people want. Keep it under about 60 characters (a rule of thumb), so it is less likely to be cut off.
 
 **Expected result:** 3 clear titles, like "How to Pick a Running Backpack (3 Easy Checks)".
 

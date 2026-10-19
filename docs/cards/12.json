@@ -54,20 +54,20 @@
  "steps": [
   {"say": "Make your brand facts the same everywhere (site, marketplaces, social bios). Grow your reviews.", "check": "AI assistants find the same facts everywhere, and lots of proof.", "lost": "Make your bio match your site."},
   {"say": "Check your robots.txt lets trusted AI crawlers read your site. Keep product data clean. Add FAQ sections and clear shipping and returns pages.", "check": "AI tools can read and quote your store correctly.", "lost": "Add a clear shipping and returns page."},
-  {"say": "Keep your product feed connected, so your store can show up inside AI shopping assistants.", "check": "Your products can show in AI shopping results.", "lost": "Check your product feed is connected."},
+  {"say": "Keep your product feed connected, so your store can show up inside AI shopping assistants. Shopify lists eligible stores in AI chat apps by default (**Sales channels > Agentic**).", "check": "Your products can show in AI shopping results.", "lost": "Check your product feed is connected."},
   {"say": "Get talked about on forums, review sites and videos. Track AI assistant visits in Google Analytics (referral sources).", "check": "You know how many visits AI assistants send.", "lost": "Look for AI assistants in your referral sources."}
  ]},
-"12.10": {"intro": "Instagram shopping lets people tap a product in a post and go to it on your store. Since late 2025, Meta shops send buyers to your own website checkout. It's free once your catalog is connected.",
+"12.10": {"intro": "Instagram shopping lets people tap a product in a post and go to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It's free once your catalog is connected.",
  "steps": [
-  {"say": "Set up your shop on Facebook and Instagram.\n\n1. Open Meta Commerce Manager. Click **Get started**.\n2. Pick Shopify, then follow the **Set up your shop** checklist (catalog, shipping and your checkout link).\n3. Click **Publish shop**.", "check": "Commerce Manager shows your shop as in review. Approval can take from a few days to a few weeks.", "lost": "Open Commerce Manager. Click **Get started**."},
-  {"say": "Turn on catalog sync from your store, so prices and stock stay up to date.", "check": "Catalog changes show within a day.", "lost": "Turn on catalog sync."},
+  {"say": "Set up your shop on Facebook and Instagram.\n\n1. In Shopify, add the **Facebook & Instagram** sales channel.\n2. Click **Connect account**. Connect your Facebook Page, business portfolio, Instagram account and catalog.\n3. Accept the terms. Click **Finish setup**.", "check": "Meta reviews your shop before it goes live. This can take a few days or longer.", "lost": "In Shopify, add the **Facebook & Instagram** sales channel."},
+  {"say": "Turn on catalog sync from your store, so prices and stock stay up to date.", "check": "Price and stock changes flow to Meta by themselves.", "lost": "Turn on catalog sync."},
   {"say": "Tag products in your posts and Reels.", "check": "Shoppers can tap to see and buy.", "lost": "Tag one product in one post."}
  ]},
 "12.11": {"intro": "A helpful YouTube video can bring buyers for years.",
  "steps": [
   {"say": "List 10 questions your customers ask before they buy. Use reviews, emails and the search box in YouTube itself (type a word and read the suggestions).", "check": "10 questions real people search for, like \"how to choose a running backpack\".", "lost": "Write 10 questions customers ask."},
   {"say": "Pick the 3 questions that link best to your products. Each will be one video.", "check": "A plan for your first 3 videos.", "lost": "Pick 3."},
-  {"say": "Write each title as the question or the result people want. Keep it under about 60 characters, so it is not cut off.", "check": "3 clear titles, like \"How to Pick a Running Backpack (3 Easy Checks)\".", "lost": "Make each title the question."},
+  {"say": "Write each title as the question or the result people want. Keep it under about 60 characters (a rule of thumb), so it is less likely to be cut off.", "check": "3 clear titles, like \"How to Pick a Running Backpack (3 Easy Checks)\".", "lost": "Make each title the question."},
   {"say": "Film each video on your phone. Answer the question in the first 30 seconds, then show more detail. Show your product as one helpful example, not a hard sell.", "check": "3 videos of 4 to 10 minutes that teach something useful.", "lost": "Answer it in the first 30 seconds."},
   {"say": "Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.", "check": "Thumbnails you can read on a small phone screen.", "lost": "Big picture, 3 words or fewer."},
   {"say": "In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).", "check": "You can see sales from YouTube in your store reports.", "lost": "Add a tagged link to your product."},

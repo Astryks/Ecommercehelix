@@ -17,7 +17,7 @@ Good signs: people search for the category or problem, and the product has clear
 
 ## Structure (default)
 
-1. **Brand search:** a small campaign (often $20 to $30 a day) on your brand terms. Use target impression share or manual bidding. Expect a very low cost per sale and do not let it inflate your view of Google overall.
+1. **Brand search:** a small campaign on your brand terms (Lesson 8.12 starts at $5 to $10 a day; raise it if it is limited by budget). Use target impression share or manual bidding. Expect a very low cost per sale and do not let it inflate your view of Google overall.
 2. **Shopping or feed-only Performance Max:** non-brand prospecting with your brand left out. Use **Brand exclusions** in Performance Max, or brand negative keywords in Shopping. Group products by best sellers or by margin tier (custom labels), not by every collection.
 3. **Non-brand Search (optional):** high-intent terms you want control over. Helix defaults: up to 5 keywords per ad group (1 to 2 broad, the rest exact) and shared negative lists. Write up to 15 headlines (the most Google allows) and pin only 1 to 2. Do not over-segment.
 4. **Demand Gen or YouTube (Stage 2+):** short-form video discovery. Judge it with view-through and platform-comparable metrics, not last-click.
@@ -34,7 +34,7 @@ Good signs: people search for the category or problem, and the product has clear
 - Breakeven ROAS = 1 ÷ (1 - VCR). VCR is variable costs ÷ revenue (SOP 02), so 1 - VCR is the margin left. For example, VCR of 40% means 1 ÷ 0.6 = 1.67.
 - Target ROAS = breakeven adjusted for the profit you want to keep. New-customer campaigns can run nearer breakeven.
 - Levers are budget and target. Change one at a time, by modest steps.
-- For a short sale, set a seasonality adjustment covering the sale dates so bidding catches up. Find it under **Tools > Budgets and bidding > Adjustments**. Use the conversion rate lift you saw in past sales. Google's example is up to +50% for a 3-day sale. Keep it to 1 to 7 days and let it end on its own (see [Google: seasonality adjustments](https://support.google.com/google-ads/answer/10369906)).
+- For a short sale, set a seasonality adjustment covering the sale dates so bidding catches up. Find it under **Tools > Budgets and bidding > Adjustments**. Use the conversion rate lift you saw in past sales. Google's example is up to +50% for a 3-day sale. Go to the **Seasonal** tab and choose **Conversion rate**. Keep it to 1 to 7 days and let it end on its own (see [Google: seasonality adjustments](https://support.google.com/google-ads/answer/10369906)).
 
 ## Feed optimisation
 
@@ -63,8 +63,8 @@ AI Max for Search and AI Max for Shopping (beta) can rewrite ad text and product
 
 | Helix can do (with approval) | The user does |
 | --- | --- |
-| Read account, Merchant Center **Needs attention** issues, search terms (read-only) | Approve structure and targets |
-| Draft negatives lists and feed title rewrites (with approval); build new campaigns as paused drafts | Approve; launch new campaigns yourself |
+| Once Google Ads connects (coming soon): read campaign spend and conversion value (read-only) | Approve structure and targets; check Merchant Center **Needs attention** and search terms yourself |
+| Draft negative keyword lists and feed title rewrites for you to paste; once connected, create a paused Search campaign after you approve (coming soon) | Add keywords and ads; launch campaigns yourself |
 | Prepare budget and target ROAS changes with exact values | Make the change in Google Ads; own billing and verification |
 | Weekly Google summary in the report | Decide on new channels |
 
