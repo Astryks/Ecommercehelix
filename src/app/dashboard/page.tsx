@@ -15,7 +15,7 @@ import { BfcmTipStrip } from "@/components/BfcmPlan";
 import { GoalsLadder } from "@/components/GoalsLadder";
 import { goalsFor } from "@/lib/goals-server";
 import { costRatios, money, summarise } from "@/lib/today";
-import { taxLabel } from "@/lib/tax";
+import { taxLabel, typedTaxLabel } from "@/lib/tax";
 import { planState } from "@/lib/plan-state";
 import { BOTTLENECKS } from "@/lib/diagnosis";
 import { adminDueSoon } from "@/lib/business";
@@ -174,7 +174,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         </section>
         {profitSet && (
           <section aria-label="Your numbers">
-            <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
+            <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} typedTaxNote={typedTaxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
               prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
           </section>
         )}
@@ -254,7 +254,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
       )}
 
       <div className="mt-6">
-        <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
+        <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} typedTaxNote={typedTaxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
           prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
       </div>
 

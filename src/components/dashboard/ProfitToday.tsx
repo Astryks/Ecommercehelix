@@ -11,11 +11,13 @@ type Props = {
   estimatePct: number;
   /** e.g. "GST (10%)" when Helix strips tax from sales; empty otherwise. */
   taxNote?: string;
+  /** Tax the user said is inside the sales they type (empty when typed sales are before tax). */
+  typedTaxNote?: string;
   action: (form: FormData) => Promise<void>;
 };
 
 /** Big profit number, one plain-English line, and the one quick form to update yesterday. */
-export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote, action }: Props) {
+export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote, typedTaxNote, action }: Props) {
   const tone = { good: "text-emerald-600", ok: "text-slate-900", bad: "text-rose-600", empty: "text-slate-400" }[s.tone];
   const Icon = s.tone === "good" ? TrendingUp : s.tone === "bad" ? TrendingDown : null;
   return (
@@ -41,7 +43,7 @@ export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote
           <p className="font-semibold">Update yesterday <span className="font-normal text-slate-500">(1 minute)</span></p>
           <input type="hidden" name="date" value={date} />
           <div className="mt-3 grid grid-cols-2 gap-3">
-            <label className="text-sm"><span className="text-slate-600">Sales ($){taxNote && <span className="ml-1 text-xs text-slate-500">incl. {taxNote.split(" ")[0]}</span>}</span>
+            <label className="text-sm"><span className="text-slate-600">Sales ($){typedTaxNote && <span className="ml-1 text-xs text-slate-500">incl. {typedTaxNote.split(" ")[0]}</span>}</span>
               <input name="revenue" type="number" min="0" step="0.01" inputMode="decimal" defaultValue={prefill.revenue || ""} placeholder="0" className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-lg font-semibold" /></label>
             <label className="text-sm"><span className="text-slate-600">Orders</span>
               <input name="orders" type="number" min="0" step="1" inputMode="numeric" defaultValue={prefill.orders || ""} placeholder="0" className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-lg font-semibold" /></label>
@@ -51,7 +53,7 @@ export function ProfitToday({ s, date, prefill, metaSynced, estimatePct, taxNote
               <input name="adGoogle" type="number" min="0" step="0.01" inputMode="decimal" defaultValue={prefill.adGoogle || ""} placeholder="0" className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2.5 text-lg font-semibold" /></label>
           </div>
           <button className="btn-primary mt-4 w-full text-base">Save and show my profit</button>
-          <p className="mt-2 text-xs leading-5 text-slate-500">Sales means gross sales: before discounts and refunds, without shipping (Shopify: Analytics &gt; Reports &gt; Total sales over time, Gross sales column).{taxNote && <> That column already leaves {taxNote} out, so if you copy it, pick &quot;before tax&quot; in <Link href="/dashboard/settings" className="underline">Settings</Link>.</>} Helix estimates product cost, shipping and fees from your recent days (about {estimatePct}% of sales). For exact costs, use <Link href="/dashboard/scorecard" className="underline">Your numbers</Link>.</p>
+          <p className="mt-2 text-xs leading-5 text-slate-500">Sales means gross sales: before discounts and refunds, without shipping (Shopify: Analytics &gt; Reports &gt; Total sales over time, Gross sales column).{typedTaxNote ? <> Your <Link href="/dashboard/settings" className="underline">Settings</Link> say the sales you type include {typedTaxNote}, so Helix takes it out. Gross sales already leaves tax out, so if you copy it, choose &quot;Use my country&apos;s default&quot; or &quot;No&quot; there.</> : taxNote ? <> That column already leaves GST/VAT out, so Helix uses it as typed.</> : null} Helix estimates product cost, shipping and fees from your recent days (about {estimatePct}% of sales). For exact costs, use <Link href="/dashboard/scorecard" className="underline">Your numbers</Link>.</p>
         </form>
       </div>
     </section>

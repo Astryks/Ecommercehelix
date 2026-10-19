@@ -83,7 +83,7 @@
 | Recent posts | Something posted in the last 7 days. No gaps of months. |
 | Comments | Replied to within a day. Answer questions publicly so others see the answer. |
 | Facebook page | Same bio and link, a current cover image, reviews managed, and the page connected to your ad account. |
-| TikTok | Bio link turned on (personal accounts need 1,000 followers; business accounts often get it sooner), playlists for series, pinned videos. |
+| TikTok | Bio link turned on where your account allows it (often after about 1,000 followers, sometimes sooner for business accounts; if **Edit profile** has no website box, you do not qualify yet), playlists for series, pinned videos. |
 
 ## Lesson 21.4: Posting cadence you can keep
 <!-- stage:attract -->

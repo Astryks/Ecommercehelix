@@ -8,7 +8,7 @@ Helix watches for missing or under-performing flows (the `email-gap` rule in the
 2. **Suggest.** An insight in Today and Insights: "You have no abandoned checkout flow. Stores like yours often recover a meaningful share of checkouts with one." with the evidence (checkouts started, recovered, revenue).
 3. **Draft.** Helix writes each message (subject, preview, body, SMS text) using your brand core, best sellers, reviews and offer rules. It also sets timing, filters and exit conditions.
 4. **Approve.** You see the full flow in the approval queue: messages, timing, discount logic and estimated AI cost. Edit, approve or reject.
-5. **Set up.** On approval, Helix creates templates, segments and the flow in **Klaviyo** through its API (draft status first, then live after a final check). For **Shopify Email** and **Shopify Flow**, where creation by API is limited, Helix prepares the content and a guided click-by-click setup, and verifies it once live.
+5. **Set up.** On approval, Helix creates templates, segments and the flow in your email platform through its API (draft status first, then live after a final check). For **Shopify Email** and **Shopify Flow**, where creation by API is limited, Helix prepares the content and a guided click-by-click setup, and verifies it once live.
 6. **Watch.** Weekly: revenue per recipient, conversion, unsubscribe and spam rates. Helix suggests A/B tests on subject lines and timing.
 
 Guardrails: no message goes live without approval; discounts follow your offer rules (new customers only, never bigger than your public offer); SMS always carries opt-out and respects quiet hours; flows start in draft; everything is logged and reversible.

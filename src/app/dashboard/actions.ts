@@ -8,7 +8,7 @@ import {
   completeTask, createApproval, decideApproval, getAccount, getProfitSetup, getRawDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
 } from "@/lib/repo";
 import { seasonalAlerts, SEASON_TASK_ID, toCountry } from "@/lib/seasons";
-import { toTaxMode } from "@/lib/tax";
+import { TAX_INCLUSIVE_SOURCES, toTaxMode } from "@/lib/tax";
 import { BIZ_TASK_ID } from "@/lib/business";
 import { toTrack } from "@/lib/tracks";
 import { isoDay } from "@/lib/dates";
@@ -169,6 +169,8 @@ export async function saveDay(form: FormData) {
   if (blank.has("shipping") && !d.shipping) d.shipping = round(d.orders * r.shippingPerOrder);
   if (blank.has("paymentFees") && !d.paymentFees) d.paymentFees = round(d.revenue * r.fees);
   if (existing?.source === "meta" && blank.has("adMeta")) d.source = "meta";
+  // Sales left blank keep the synced (tax-included) order totals, so keep their source too.
+  if (existing && TAX_INCLUSIVE_SOURCES.has(existing.source ?? "") && blank.has("revenue")) d.source = existing.source;
   await upsertDays(u.id, [d]);
   await completeTask(u.id, await numbersHabitTask(u.id));
   revalidatePath("/dashboard", "layout");

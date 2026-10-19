@@ -34,7 +34,7 @@
   {"say": "RPV low? Check which half is weak: order size (AOV), or how many visitors buy (conversion rate). Fix the site or offer, not the ads.", "check": "You know which half to fix.", "lost": "Are orders small, or do few people buy? Pick one."},
   {"say": "Each visit earns enough? Check clicks. In Meta Ads Manager, find **Outbound CTR**. Under about 0.5% usually means the ad isn't grabbing people.", "check": "You know if the ad gets clicks.", "lost": "Find **Outbound CTR**. Is it under 0.5%?"},
   {"say": "Compare cost per click with RPV. If a click costs more than a visit earns, those ads lose money.", "check": "You know if clicks are affordable.", "lost": "Is cost per click bigger than RPV? Then that ad loses money."},
-  {"say": "Look at frequency (how often one person saw the ad in 7 days). Look for ads with lots of likes and clicks but no sales.", "check": "You found tired ads, or a page that doesn't match the ad.", "lost": "Find one ad with clicks but no sales. Write its name."}
+  {"say": "Look at frequency (how many times, on average, each person saw the ad over the dates you picked, like the last 7 days). Look for ads with lots of likes and clicks but no sales.", "check": "You found tired ads, or a page that doesn't match the ad.", "lost": "Find one ad with clicks but no sales. Write its name."}
  ]},
 "2.6": {"intro": "When lots of numbers look bad, don't fix them all. Fix the one worth the most money.",
  "steps": [

@@ -86,7 +86,7 @@
 
 **Expected result:** Shoppers can narrow and buy from a collection in a few taps.
 
-**Step 6.** Check cart and checkout. You want a progress bar to free shipping or a gift, and one upsell spot. Add fast pay buttons (Shop Pay, Apple Pay, Google Pay, PayPal), no surprise fees, and trust badges with policy links.
+**Step 6.** Check cart and checkout. You want a progress bar to free shipping or a gift, and one upsell spot. Add fast pay buttons (Shop Pay and the phone and online wallets Shopify offers), no surprise fees, and trust badges with policy links.
 
 **Expected result:** Checkout has no surprises and the fastest pay options.
 
@@ -99,9 +99,9 @@
 
 **Why this matters:** Accessibility means everyone can use your store. That includes people who cannot see well or who use a keyboard instead of a mouse. Some fixes, like alt text, also help search engines understand your pages.
 
-**Step 1.** Run a free contrast check (for example WebAIM's contrast checker) on your text and button colours.
+**Step 1.** Run your text and button colours through a free online contrast checker.
 
-**Expected result:** Body text and buttons pass at least the AA level. For normal text that means a contrast ratio of 4.5 to 1 (see [WebAIM: contrast checker](https://webaim.org/resources/contrastchecker/)).
+**Expected result:** Body text and buttons pass at least the AA level. For normal text that means a contrast ratio of 4.5 to 1 (see [W3C: contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)).
 
 **Step 2.** Add alt text to every product image in Shopify **Products > [product] > Media**. Alt text is a short description for screen readers.
 
@@ -111,7 +111,7 @@
 
 **Expected result:** You can reach and use every link, button and form field.
 
-**Step 4.** Check font sizes (at least 16px on phones). Every form field needs a label, and every video needs captions.
+**Step 4.** Check font sizes (at least 16px on phones is a common rule of thumb). Every form field needs a label, and every video needs captions.
 
 **Expected result:** Text is easy to read, forms are labelled and videos have captions.
 
@@ -132,11 +132,11 @@
 
 **Expected result:** Fewer scripts run on each page.
 
-**Step 4.** Make sure spam protection is on in Shopify's **Online Store > Preferences**. It stops bots filling in your sign-up and contact forms.
+**Step 4.** Make sure spam protection is on in Shopify's **Online Store > Preferences**. It turns on a bot check for contact forms and account sign-ups. Shopify turns it on by default.
 
-**Expected result:** Fake sign-ups stop reaching your email list (see [Shopify: online store preferences](https://help.shopify.com/en/manual/online-store/setting-up/preferences)).
+**Expected result:** Fewer fake sign-ups and spam messages reach you (see [Shopify: online store preferences](https://help.shopify.com/en/manual/online-store/setting-up/preferences)).
 
-**Step 5.** In Shopify, find the web performance reports under **Analytics > Reports**. They show the three Core Web Vitals for real visitors.
+**Step 5.** In Shopify, find the web performance reports under **Analytics > Reports** (type a colon ":" in the search box to list them). They show the three Core Web Vitals for real visitors.
 
 **Expected result:** You know if your store passes Google's "good" levels. LCP (main image or text showing) is 2.5 seconds or less. INP (reaction to a tap) is 200 milliseconds or less. CLS (page jumping around) is 0.1 or less (see [Google: Web Vitals](https://web.dev/articles/vitals)).
 
@@ -199,17 +199,17 @@
 
 **Why this matters:** Measuring shows you where shoppers get stuck. Heatmaps show behaviour, store reports show the funnel, and a fixed checklist finds the cause of sudden drops fast.
 
-**Step 1.** Install a heatmap and recording tool, like Microsoft Clarity (free). Watch 20 recordings of phone visitors.
+**Step 1.** Install a heatmap and recording tool (free ones exist). Watch 20 recordings of phone visitors.
 
 **Expected result:** You have noted rage clicks (many angry clicks) and dead clicks (clicks on things that are not links). You know how far people scroll.
 
-**Step 2.** In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the steps: sessions, added to cart, reached checkout, then bought.
+**Step 2.** In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the steps: sessions, added to cart, reached checkout, then completed checkout.
 
 **Expected result:** You know which step loses the most people (see [Shopify: behaviour reports](https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/behaviour-reports)).
 
 <!-- do:metrics -->
 
-**Step 3.** In Google Analytics, check traffic sources, landing pages that convert and referrals from AI assistants like chatgpt.com.
+**Step 3.** In Google Analytics, check traffic sources, landing pages that convert and referrals from AI assistant websites.
 
 **Expected result:** You know where your best visitors come from.
 
@@ -268,13 +268,13 @@ Free-gift tiers:
 - Set the first gift level about 25 to 35% above your current order value. If orders average $60, try a gift at $80.
 - Pick a gift that costs you under about 10% of that level (under $8 at $80) but looks worth much more. A sample of something you want people to try next works well.
 - Add a second, bigger gift at a higher level, for example $120.
-- Shopify's **Buy X get Y** discount does not put the gift in the cart by itself. The shopper has to add it, or you use a free-gift app.
+- Shopify's **Buy X get Y** discount never puts the gift in the cart by itself. The shopper has to add it, or you use a free-gift app (see [Shopify: Buy X get Y](https://help.shopify.com/en/manual/discounts/discount-types/buy-x-get-y)).
 - Order enough gift stock before the offer starts.
 
 ## Lesson 9.11: Shipping psychology
 <!-- stage:convert -->
 
-**Why this matters:** How you handle shipping changes how much people buy. About 7 in 10 online carts are abandoned. Extra costs like shipping, tax and fees are the top reason shoppers give (see [Baymard: cart abandonment](https://baymard.com/lists/cart-abandonment-rate)). A free shipping amount set in the right place makes many people add one more item.
+**Why this matters:** How you handle shipping changes how much people buy. A widely quoted rule of thumb is that about 7 in 10 online carts are abandoned. Surprise extra costs like shipping, tax and fees are one of the most common reasons shoppers give. A free shipping amount set in the right place makes many people add one more item.
 
 **Step 1.** Set your free shipping amount.
 
@@ -404,7 +404,7 @@ Free-gift tiers:
 
 **Expected result:** You know whether orders really fell, or only reported conversions or sessions changed.
 
-**Step 2.** Buy something yourself on your phone and on a computer. Add to cart, reach checkout and pay with a real card and a wallet (Apple Pay or Google Pay). Then refund it.
+**Step 2.** Buy something yourself on your phone and on a computer. Add to cart, reach checkout and pay with a real card and a phone wallet. Then refund it.
 
 **Expected result:** Every step works, or you found the broken one. It is often a payment method, discount code or new app.
 

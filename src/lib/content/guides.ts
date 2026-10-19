@@ -55,7 +55,7 @@ New visitors do not know you. Small signals add up: a real About page, a visible
 
 ## Remove friction from checkout
 
-- Offer the express wallets your customers use (for example Shop Pay, Apple Pay, Google Pay, PayPal).
+- Offer the express wallets your customers use (for example Shop Pay and the phone wallets Shopify Payments offers).
 - Allow guest checkout.
 - Show the full cost, including shipping, as early as possible.
 - Keep form fields to what you need.
@@ -210,9 +210,9 @@ Cart abandonment is when a shopper adds something to their cart, or starts check
 
 ## Why shoppers leave
 
-Large shopper surveys show the same reasons again and again (see [Baymard: cart abandonment research](https://baymard.com/lists/cart-abandonment-rate)):
+Shopper surveys show the same reasons again and again. As a rule of thumb:
 
-- **Surprise costs** at checkout, especially shipping, taxes or fees. It is the top reason among shoppers who meant to buy.
+- **Surprise costs** at checkout, especially shipping, taxes or fees. It is usually the top reason among shoppers who meant to buy.
 - **Being forced to create an account.**
 - **A long or confusing checkout**, especially on mobile.
 - **Missing payment options** they trust.
@@ -226,7 +226,7 @@ Put shipping costs and delivery times on product pages and in the cart, not only
 ## Fix 2: make checkout fast
 
 - Allow guest checkout.
-- Offer express wallets such as Shop Pay, Apple Pay, Google Pay and PayPal.
+- Offer Shop Pay and the express wallets your payment settings support.
 - Remove optional fields.
 - Test it yourself on a phone. If anything is slow or confusing for you, it is worse for a stranger.
 
@@ -311,7 +311,7 @@ Guides, size charts, care instructions and comparisons answer the questions peop
 
 ## 7. AI search
 
-AI assistants such as ChatGPT, Perplexity, Gemini and Copilot summarise web pages to answer questions. To be included, make your pages easy to read and quote: clear headings, direct answers near the top, honest facts, and structured data. Do not block their crawlers in robots.txt unless you mean to.
+AI assistants and AI search summarise web pages to answer questions. To be included, make your pages easy to read and quote: clear headings, direct answers near the top, honest facts, and structured data. Do not block their crawlers in robots.txt unless you mean to.
 
 ## 8. Be patient and consistent
 

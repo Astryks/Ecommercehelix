@@ -31,9 +31,9 @@
 ## Lesson 17.1: Set up AI helpers for daily work
 <!-- stage:grow -->
 
-**Why this matters:** AI assistants (like ChatGPT, Claude or Gemini) work much better when they know about your business. A project with your context turns generic answers into useful ones.
+**Why this matters:** AI assistants (chat AI tools) work much better when they know about your business. A project with your context turns generic answers into useful ones.
 
-**Step 1.** Create a project in your AI assistant. ChatGPT and Claude call it a **Project**. In Gemini, make a **Gem** and add your files.
+**Step 1.** Create a project in your AI assistant. Most chat AI tools have a project (or similar) space where you can add files and instructions. Before you upload anything, check the tool's data settings and turn off using your chats for training if you can.
 
 **Expected result:** You have an empty project for your store.
 
@@ -111,7 +111,7 @@
 
 **Expected result:** You can trust every number on the Dashboard.
 
-**Step 2.** Know where Helix uses AI. It only writes short text when you press the button. That covers a store check summary, ad copy drafts and "I'm lost" answers. Each plan has a monthly AI allowance, and your data is never used to train AI models.
+**Step 2.** Know where Helix uses AI. It only writes short text when you press the button. That covers a store check summary, ad copy drafts and "I'm lost" answers. Each plan has a monthly AI allowance. Helix sends these requests to Google's Gemini 2.5 Flash-Lite model through the Vercel AI Gateway, with prompt training turned off, so your data is not used to train AI models.
 
 **Expected result:** You know Helix's numbers and plan come from plain rules you can check. AI text is a draft you read first.
 

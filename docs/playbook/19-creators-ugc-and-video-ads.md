@@ -145,7 +145,7 @@
 | Partnership ad access | Permission to run ads from their account | Agreed in writing, for a set time |
 | Payment | A fee, product, commission, or a mix | Small creators often start with product plus a modest fee |
 | Changes | How many rounds of edits | 1 round |
-| Disclosure | A "Paid partnership" label plus #ad, easy to see | Required by law for paid or gifted posts (see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers) and [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf)) |
+| Disclosure | A "Paid partnership" label plus #ad, easy to see | Required by law for paid or gifted posts (see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers), [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf) and the UK [ASA influencers' guide](https://www.asa.org.uk/resource/influencers-guide.html)) |
 
 ## Lesson 19.5: Affiliate programmes that do not cannibalise you
 <!-- stage:attract -->
@@ -177,7 +177,7 @@
 ## Lesson 19.6: Partnership ads (whitelisting)
 <!-- stage:attract -->
 
-**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account. They do not run from your brand page. People see a familiar person, not an ad. Meta's own figures show lower average cost per purchase than standard ads. Treat that as a reason to test, not a promise.
+**Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account. They do not run from your brand page. People see a familiar person, not an ad. Meta reports they can lower cost per purchase when mixed in with your normal ads. Treat that as a reason to test, not a promise.
 
 **Step 1.** Ask the creator's permission in writing and agree how long it lasts.
 

@@ -208,7 +208,7 @@ model ScorecardDay {
   metaRevenue        Float   @default(0) // platform-attributed, for channel ROAS
   googleRevenue      Float   @default(0)
   tiktokRevenue      Float   @default(0)
-  source             String  @default("manual") // manual | csv | shopify | meta | google
+  source             String  @default("manual") // manual | quick | csv | csv-orders (orders export, tax-included prices) | shopify | meta | google
   example            Boolean @default(false)
   user               User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 

@@ -97,7 +97,7 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
       source: { kind: "manual", where: "Your Shopify bills (Settings > Billing) for shipping labels, or your carrier or 3PL invoice. Leave blank and Helix estimates it per order." }, learn: "/learn/23-fulfilment-shipping-returns",
     },
     {
-      id: "fees", name: "Payment fees", plain: "What Shopify Payments, PayPal and buy now pay later keep from each sale.", value: `${money(m.fees)} · ${pct(share(m.fees))}`, raw: share(m.fees),
+      id: "fees", name: "Payment fees", plain: "What Shopify Payments, other payment providers and buy now pay later keep from each sale.", value: `${money(m.fees)} · ${pct(share(m.fees))}`, raw: share(m.fees),
       good: "2% to 3% of revenue", tone: rev ? band(share(m.fees), 3, 4, false) : "none",
       source: { kind: "auto", how: "Helix estimates fees from your fee rate. Type the real number from your payout report if you have it." }, learn: "/learn/24-payments-fraud-chargebacks",
     },

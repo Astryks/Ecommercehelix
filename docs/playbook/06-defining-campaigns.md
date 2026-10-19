@@ -137,11 +137,11 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Each audience temperature gets its planned share.
 
-**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget or ad set budget, or a cost per result goal (an average cost per sale Meta aims for). Or how many people you leave out, or a 10 to 20% cap on spend to past buyers. Or landing page views for very cold tests.
+**Step 3.** Once results are steady, test one other setup at a time. Options: campaign budget or ad set budget, or a cost per result goal (an average cost per sale Meta aims for). Or how many people you leave out, like past buyers. Or landing page views for very cold tests.
 
 **Expected result:** You are running one setup test with a clear start and end date.
 
-**Watch out:** Leaving out more people (buyers, engagers and recent visitors) usually shows a worse cost per sale. But it finds more truly new customers.
+**Watch out:** Leaving out more people (buyers, engagers and recent visitors) usually shows a worse cost per sale. But it finds more truly new customers. Meta announced in 2025 it is retiring its old past-customer spend cap, so check Ads Manager for your account. To keep past buyers out, exclude your customer audiences.
 
 ### Good to know
 

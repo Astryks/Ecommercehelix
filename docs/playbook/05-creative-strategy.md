@@ -288,7 +288,7 @@
 ## Lesson 5.13: Reasons to buy now, without fake shortages
 <!-- stage:attract -->
 
-**Why this matters:** You can give people a reason to buy now without a discount, which protects your margin. There are six honest options.
+**Why this matters:** You can give people a reason to buy now without a discount, which protects your margin. There are several honest options.
 
 **Step 1.** Pick one reason to buy now for this month. For example: the season ("before summer"), an event or a limited bundle. Or a free gift for a set time, or a delivery cut-off ("order by Friday for Christmas").
 
@@ -391,7 +391,7 @@
 
 **Why this matters:** Good photos, clips and past ads get lost in phones and old folders. A tidy library means you make new ads faster. You also stop paying twice for the same kind of shoot.
 
-**Step 1.** Make one shared folder called "Creative library" in Google Drive or Dropbox. Inside it, make folders for Photos, Raw video, Finished ads and Reviews.
+**Step 1.** Make one shared folder called "Creative library" in your cloud storage. Inside it, make folders for Photos, Raw video, Finished ads and Reviews.
 
 **Expected result:** One place where every file goes.
 
@@ -470,7 +470,7 @@
 ## Lesson 5.22: Make simple ads with free apps
 <!-- stage:attract -->
 
-**Why this matters:** You do not need a designer to make good ads. A free design app (like Canva) and a free phone video editor (like CapCut) are enough for most small stores. Learning the basics once saves you money every week.
+**Why this matters:** You do not need a designer to make good ads. A free design app and a free phone video editor are enough for most small stores. Learning the basics once saves you money every week.
 
 **Step 1.** Open the design app. Make a new design in the size 1080 x 1350 (for feeds). Make a second one in 1080 x 1920 (for stories and reels).
 

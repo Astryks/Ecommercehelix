@@ -142,7 +142,7 @@
 
 **Expected result:** You have 20 to 50 candidate keywords.
 
-**Step 2.** In **Tools > Keyword Planner**, check monthly searches and competition for each.
+**Step 2.** In **Tools > Planning > Keyword Planner**, check monthly searches and competition for each.
 
 **Expected result:** Each keyword has a volume and competition level.
 
@@ -150,7 +150,7 @@
 
 **Expected result:** Each ad group is tightly themed.
 
-**Step 4.** Make a shared list of negative keywords in **Shared library > Negative keyword lists**. These are words you never want to show for, like "free" or "jobs". Add the list to every campaign.
+**Step 4.** Make a shared list of negative keywords in **Tools > Shared library > Exclusion lists**, on the **Negative keyword lists** tab. These are words you never want to show for, like "free" or "jobs". Click **Apply to campaigns** and add the list to every campaign (see [Google: negative keyword lists](https://support.google.com/google-ads/answer/7449003)).
 
 **Expected result:** Wasted searches are blocked across the account.
 
@@ -201,9 +201,9 @@
 
 **Expected result:** Google knows who has already bought.
 
-**Step 2.** Open the campaign's **Customer acquisition** setting. Choose "Bid higher for new customers" or "Only bid for new customers".
+**Step 2.** Open the campaign's **Customer acquisition** setting. Choose to bid higher for new customers than existing ones, or to only bid for new customers.
 
-**Expected result:** The campaign favours new buyers. Bidding higher needs value-based bidding and a Purchase goal (see [Google: customer lifecycle goals](https://support.google.com/google-ads/answer/12080169)).
+**Expected result:** The campaign favours new buyers. Bidding higher needs value-based bidding (target ROAS or maximise conversion value) and a Purchase goal (see [Google: customer lifecycle goals](https://support.google.com/google-ads/answer/12080169)).
 
 **Watch out:** Accept a lower ROAS on new-customer campaigns only if those customers come back and buy again.
 
@@ -270,7 +270,7 @@
 
 1. Click **Tools**, then **Budgets and bidding**, then **Adjustments**, then the **Seasonal** tab (older screens say **Seasonality adjustments**).
 2. Add a new adjustment and set its dates to cover the sale. It works best for short sales of 1 to 7 days.
-3. Set the expected conversion rate change to what you saw in past sales. Google's own example is +50% for a 3-day sale.
+3. Set the expected conversion rate change to what you saw in past sales. Google's own example is up to +50% for a 3-day sale.
 4. Save it. When the dates end, Google goes back to normal by itself (see [Google: seasonality adjustments](https://support.google.com/google-ads/answer/10369906)).
 
 **Expected result:** The adjustment shows as scheduled for the sale dates.

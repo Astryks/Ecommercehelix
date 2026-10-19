@@ -2,13 +2,13 @@
 
 > **In plain words.** Flows are emails and texts that send by themselves, like after someone joins your list or leaves a cart. Set them up once and they earn every day without more ad spend.
 
-**Purpose.** Build the automated messages that earn money every day without new ad spend. Across Klaviyo stores, flows earn nearly 41% of email revenue from about 5% of sends (see [Klaviyo: 2026 benchmarks](https://www.klaviyo.com/products/email-marketing/benchmarks)). Many healthy stores aim for 40 to 50%.
+**Purpose.** Build the automated messages that earn money every day without new ad spend. Flows are a small share of the emails you send but often earn a big share of email revenue. As a rule of thumb, many healthy stores aim for 40 to 50% of email revenue from flows.
 
 **Copilot triggers**
 - Email platform connected, or none detected during the audit.
 - Any core flow missing or performing below benchmark.
 - Friday retention day.
-- The user asks "which email flows do I need?" or "is Klaviyo worth it?".
+- The user asks "which email flows do I need?" or "is my email tool worth it?".
 
 ## The five core flows
 
@@ -27,7 +27,7 @@ The five core flows usually drive the large majority of flow revenue. Add win-ba
 - Welcome flow: a unique, expiring code if you offer one. Optionally escalate the offer once after about 2 weeks for non-buyers.
 - Use zero-party data from the pop-up (what they are shopping for) to personalise welcome emails.
 - Abandonment flows run about 7 days. Split new and returning customers: discounts to new customers only.
-- Turn off Smart Sending on time-critical flow emails, such as welcome email 1. Klaviyo leaves it on for most flow emails by default. Its 16-hour window can skip them (see [Klaviyo: Smart Sending](https://help.klaviyo.com/hc/en-us/articles/115002779311)).
+- Some email tools skip an email if the person got another one recently (often called smart sending or frequency limits). Turn this off on time-critical flow emails, such as welcome email 1.
 - Plain-text founder-style emails often get the highest clicks. Mix them in.
 - During sales, swap in sale-specific abandonment flows and turn evergreen discounts off, at the same scheduled time.
 
@@ -45,11 +45,11 @@ The five core flows usually drive the large majority of flow revenue. Add win-ba
 | Metric | Flows | Campaigns |
 | --- | --- | --- |
 | Open rate | Rule of thumb: above 30% | Rule of thumb: above 30% |
-| Click rate | About 5.6% average | About 1.7% average |
-| Placed order rate | About 13 times campaigns | Rule of thumb: 0.05%+ |
+| Click rate | Rule of thumb: about 5 to 6% | Rule of thumb: about 1.5 to 2% |
+| Placed order rate | Rule of thumb: many times campaigns | Rule of thumb: 0.05%+ |
 | Unsubscribe rate | | Rule of thumb: under 0.3% |
 
-Click rates are Klaviyo's 2026 averages (see [Klaviyo: 2026 benchmarks](https://www.klaviyo.com/products/email-marketing/benchmarks)). Rules of thumb are labelled. Open rates are inflated by privacy features. Use clicks and revenue per recipient as the truth.
+All rates here are rules of thumb. Open rates are inflated by privacy features. Use clicks and revenue per recipient as the truth.
 
 ## Deliverability
 
@@ -68,12 +68,12 @@ Click rates are Klaviyo's 2026 averages (see [Klaviyo: 2026 benchmarks](https://
 
 | Helix can do (with approval) | The user does |
 | --- | --- |
-| Audit flows and benchmarks (read-only) | Choose the platform and pay for it |
+| Compare the flow numbers you share with the benchmarks | Choose the platform and pay for it |
 | Draft flow structure, copy and subject lines | Approve copy and brand look |
-| Create flows in Klaviyo as drafts (Growth) | Approve going live |
-| Weekly flow report | Set discount policy |
+| Write full flow copy to paste into your email tool (Growth) | Build the flows and approve going live |
+| Suggest which flow to fix next | Set discount policy |
 
-Helix never turns a flow live or sends to a list without approval.
+Helix does not connect to email tools yet, so it never turns a flow live or sends to a list.
 
 **Email rules.** Every marketing email needs consent, your business name and a working unsubscribe. In Australia, honour unsubscribes within 5 working days (ACMA, above). In the US, honour them within 10 business days and include a postal address (see [FTC: CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)).
 

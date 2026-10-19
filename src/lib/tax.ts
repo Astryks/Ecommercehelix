@@ -2,18 +2,23 @@ import type { Country } from "./seasons";
 import type { DayInput, ProductLine } from "./scorecard";
 
 /**
- * "My prices include GST/VAT". When on, Helix takes the tax out of every sales number before
- * any profit maths, because GST and VAT you collect belong to the tax office, not to you.
+ * "My prices include GST/VAT". GST and VAT you collect belong to the tax office, not to you, so
+ * Helix takes the tax out of sales that include it before any profit maths.
  * Costs are left alone: type them without GST if you are registered (you claim it back).
+ *
+ * Which sales include tax: Shopify's Gross sales (what Helix asks you to type or import) already
+ * leaves tax out, but order prices (Shopify sync, the Subtotal column of an orders export) include
+ * it in a tax-inclusive store. So "auto" (the country default) strips tax only from days whose
+ * sales come from order prices. An explicit Yes strips every day; an explicit No strips none.
  */
 export type SalesTaxMode = "auto" | "AU" | "NZ" | "UK" | "none";
 
 export const TAX_OPTIONS: { id: SalesTaxMode; label: string; hint: string }[] = [
-  { id: "auto", label: "Use my country's default", hint: "For example 10% GST in some countries, New Zealand 15%, UK 20% VAT, Germany 19%. US and Canada: sales are entered before tax." },
-  { id: "AU", label: "Yes, GST (10%)", hint: "Helix divides sales by 1.10." },
-  { id: "NZ", label: "Yes, New Zealand GST (15%)", hint: "Helix divides sales by 1.15." },
-  { id: "UK", label: "Yes, UK VAT (20%)", hint: "Helix divides sales by 1.20." },
-  { id: "none", label: "No, my sales numbers are before tax", hint: "Pick this if you are not registered, or you copy Gross or Net sales from Shopify reports." },
+  { id: "auto", label: "Use my country's default", hint: "Where shop prices include tax (for example 10% GST, New Zealand 15%, UK 20% VAT, Germany 19%), Helix takes it out of sales synced from Shopify or imported from a Shopify orders export. Gross sales you type or import is used as entered, because it already leaves tax out. US and Canada: sales are before tax." },
+  { id: "AU", label: "Yes, GST (10%)", hint: "Every sales number I type or import includes GST. Helix divides sales by 1.10." },
+  { id: "NZ", label: "Yes, New Zealand GST (15%)", hint: "Every sales number I type or import includes GST. Helix divides sales by 1.15." },
+  { id: "UK", label: "Yes, UK VAT (20%)", hint: "Every sales number I type or import includes VAT. Helix divides sales by 1.20." },
+  { id: "none", label: "No, my sales numbers are before tax", hint: "Pick this if you are not registered for GST/VAT, or your prices do not include it." },
 ];
 
 const RATES: Record<Exclude<SalesTaxMode, "auto" | "none">, number> = { AU: 0.1, NZ: 0.15, UK: 0.2 };
@@ -55,6 +60,19 @@ export function taxRate(mode: SalesTaxMode, country: Country): number {
   return m === "country" ? DEFAULT_TAX[country].rate : RATES[m];
 }
 
+/** Day sources whose sales come from order prices, so they include GST/VAT in a tax-inclusive store. */
+export const TAX_INCLUSIVE_SOURCES: ReadonlySet<string> = new Set(["shopify", "csv-orders"]);
+
+/** Rate taken out of numbers you type or import from a sales report (Shopify Gross sales): only on an explicit Yes. */
+export function typedTaxRate(mode: SalesTaxMode, country: Country): number {
+  return mode === "auto" ? 0 : taxRate(mode, country);
+}
+
+/** Rate taken out of one day's sales, by where its sales came from. */
+export function dayTaxRate(mode: SalesTaxMode, country: Country, source?: string): number {
+  return source && TAX_INCLUSIVE_SOURCES.has(source) ? taxRate(mode, country) : typedTaxRate(mode, country);
+}
+
 /** Short label for notes, e.g. "GST (10%)" or "VAT (20%)". Empty when no tax is stripped. */
 export function taxLabel(mode: SalesTaxMode, country: Country): string {
   const m = effectiveTaxMode(mode, country);
@@ -62,6 +80,11 @@ export function taxLabel(mode: SalesTaxMode, country: Country): string {
   const name = m === "country" ? DEFAULT_TAX[country].name : m === "UK" ? "VAT" : "GST";
   const pct = Math.round(taxRate(mode, country) * 1000) / 10;
   return `${name} (${pct}%)`;
+}
+
+/** Label for the tax taken out of numbers you type (empty under "auto": typed Gross sales already leaves tax out). */
+export function typedTaxLabel(mode: SalesTaxMode, country: Country): string {
+  return mode === "auto" ? "" : taxLabel(mode, country);
 }
 
 const round2 = (n: number) => Math.round(n * 100) / 100;

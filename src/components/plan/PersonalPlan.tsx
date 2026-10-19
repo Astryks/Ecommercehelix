@@ -47,7 +47,7 @@ export const shownWeek = (s: PlanState) => Math.min(s.total, Math.max(s.week, s.
 /** At most one upgrade prompt, at the moment it helps. */
 function PlanPrompt({ s, plan }: { s: PlanState; plan: PlanId }) {
   if (s.diag.diagnosis.bottleneck === "leaky-bucket" && PLAN_RANK[plan] < PLAN_RANK.growth)
-    return <div className="mt-4"><UpgradePrompt compact need="growth" forKey="flows" title="Your biggest leak is repeat customers" body="Growth has all 9 email flows written and ready to paste into Klaviyo or Shopify Email." /></div>;
+    return <div className="mt-4"><UpgradePrompt compact need="growth" forKey="flows" title="Your biggest leak is repeat customers" body="Growth has all 9 email flows written and ready to paste into your email tool (for example Shopify Email)." /></div>;
   if (PLAN_RANK[plan] < PLAN_RANK.starter && s.plan.some((b) => b.tier !== "free"))
     return <div className="mt-4"><UpgradePrompt compact need="starter" forKey="plan" title={`Weeks ${s.plan[3].weeks[0]} to ${s.total} of your plan are on Starter`} body="Weeks 1 to 4 are free: profit, your numbers and your top store fixes. Starter adds the step-by-step sprints, a monthly store re-check and Meta drafts." /></div>;
   return null;

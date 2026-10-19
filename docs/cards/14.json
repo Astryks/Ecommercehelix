@@ -60,7 +60,7 @@
 "14.9": {"intro": "Running out loses sales. Ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths.",
  "steps": [
   {"say": "Work out sales speed: average units a day over the last 4 to 8 weeks. Leave out sold-out days and big sale days.", "check": "You have units per day for each product.", "lost": "Units sold ÷ days = sales speed."},
-  {"say": "Find the lead time: days from paying the deposit to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
+  {"say": "Find the lead time: days from placing the order with your supplier (usually when you pay the deposit) to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
   {"say": "Set safety days. Start with 14. Use more for long sea freight.", "check": "Each product has a buffer.", "lost": "Use 14."},
   {"say": "In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.", "check": "Helix shows the reorder point (sales speed × (lead time + safety days)) and a countdown to each sell-out. Example: 3 a day × (45 + 14) days = 177 units.", "lost": "Enter the three numbers for your best seller."},
   {"say": "At the reorder point (on-hand plus on-order), order the next 1 to 3 months of sales. Order at least the supplier's minimum.", "check": "An alert shows on Today when it's time to order, and stock arrives before you run out.", "lost": "Alert on Today? Place the order."},
@@ -68,8 +68,8 @@
  ]},
 "14.12": {"intro": "Your cash is stuck from the day you pay a supplier until a customer's money reaches you. Count the days.",
  "steps": [
-  {"say": "Find how many days stock sits. Use **Analytics > Reports > Inventory remaining per product**, or stock cost ÷ cost sold per day. $27,000 ÷ $300 = 90.", "check": "One number, like 90.", "lost": "Stock cost divided by cost sold per day."},
-  {"say": "Check your payouts page. How many days until customer money reaches your bank? Often 2 to 3.", "check": "One number, like 3.", "lost": "Look at your payout dates."},
+  {"say": "Find how many days stock sits. Use the **Days of inventory remaining** column in **Analytics > Reports > Inventory remaining per product**, or stock cost ÷ cost sold per day. $27,000 ÷ $300 = 90.", "check": "One number, like 90.", "lost": "Stock cost divided by cost sold per day."},
+  {"say": "Check your payouts page. How many days until customer money reaches your bank? Often 2 to 3 business days.", "check": "One number, like 3.", "lost": "Look at your payout dates."},
   {"say": "Check your supplier invoices. How many days do you get to pay? Paid upfront = 0.", "check": "One number, like 30.", "lost": "Look at one invoice."},
   {"say": "Add them: 90 + 3 − 30 = 63 days.", "check": "Your number is in your cash plan.", "lost": "Stock days + payout days − supplier days."},
   {"say": "Pick one lever from Lesson 14.3 to cut 10 days: smaller orders more often, more days to pay, pre-orders or clearing slow stock.", "check": "One action done this week.", "lost": "Ask your supplier for 30 more days."},

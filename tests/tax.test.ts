@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { dayExTax, effectiveTaxMode, exTax, productExTax, taxLabel, taxRate, toTaxMode } from "@/lib/tax";
+import { dayExTax, dayTaxRate, effectiveTaxMode, exTax, productExTax, taxLabel, taxRate, toTaxMode, typedTaxLabel, typedTaxRate } from "@/lib/tax";
+import { quickMerge, costRatios } from "@/lib/today";
 import { derive, exampleDays } from "@/lib/scorecard";
 
 describe("prices include GST/VAT", () => {
@@ -39,5 +40,32 @@ describe("prices include GST/VAT", () => {
   });
   it("strips product prices", () => {
     expect(productExTax({ date: "2026-10-06", sku: "A", name: "A", units: 1, price: 55, unitCost: 10 }, 0.1).price).toBe(50);
+  });
+  // Shopify's Gross sales report already leaves tax out (gross sales "does not include ... taxes"), so
+  // the country default must not take GST off numbers typed or imported from it a second time.
+  it("the country default never takes tax off typed Gross sales twice", () => {
+    expect(dayTaxRate("auto", "AU", "manual")).toBe(0);
+    expect(dayTaxRate("auto", "AU", "quick")).toBe(0);
+    expect(dayTaxRate("auto", "AU", "csv")).toBe(0);
+    expect(dayTaxRate("auto", "AU", undefined)).toBe(0);
+    expect(typedTaxRate("auto", "GB")).toBe(0);
+    expect(typedTaxLabel("auto", "AU")).toBe("");
+    const typed = { ...exampleDays("2026-10-06")[0], source: "manual", revenue: 1000 };
+    expect(dayExTax(typed, dayTaxRate("auto", "AU", typed.source)).revenue).toBe(1000);
+  });
+  it("the country default still takes tax off order prices (Shopify sync, orders export)", () => {
+    expect(dayTaxRate("auto", "AU", "shopify")).toBe(0.1);
+    expect(dayTaxRate("auto", "GB", "csv-orders")).toBe(0.2);
+    expect(dayTaxRate("auto", "US", "shopify")).toBe(0);
+  });
+  it("an explicit Yes strips every day, an explicit No strips none", () => {
+    expect(dayTaxRate("AU", "AU", "manual")).toBe(0.1);
+    expect(typedTaxLabel("AU", "AU")).toBe("GST (10%)");
+    expect(dayTaxRate("none", "AU", "shopify")).toBe(0);
+  });
+  it("typing sales over a synced day makes it a typed day", () => {
+    const synced = { ...exampleDays("2026-10-06")[0], source: "shopify", example: false };
+    const m = quickMerge(synced, synced.date, { revenue: 900, orders: 9, adMeta: 100, adGoogle: 0 }, costRatios([synced]));
+    expect(dayTaxRate("auto", "AU", m.source)).toBe(0);
   });
 });

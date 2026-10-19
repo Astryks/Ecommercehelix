@@ -54,7 +54,7 @@ export default async function CalendarPage({ searchParams }: PageProps<"/dashboa
         <span className="font-semibold text-slate-800">Add these dates to your own calendar:</span>
         <a href={`/api/calendar?country=${country}&download=1`} className="btn-ghost"><Download className="h-4 w-4" aria-hidden /> Download .ics</a>
         <a href={google} target="_blank" rel="noreferrer" className="btn-ghost"><ExternalLink className="h-4 w-4" aria-hidden /> Subscribe in Google Calendar</a>
-        <a href={webcal} className="btn-ghost"><BellRing className="h-4 w-4" aria-hidden /> Subscribe (Apple or Outlook)</a>
+        <a href={webcal} className="btn-ghost"><BellRing className="h-4 w-4" aria-hidden /> Subscribe in your calendar app</a>
         <p className="w-full text-xs text-slate-500">The .ics file works in any calendar app. Subscribing keeps dates up to date automatically, and needs Helix running on a public web address (it will not work from a local test copy). Each big date also gets a &quot;Start prep&quot; reminder.</p>
       </div>
 

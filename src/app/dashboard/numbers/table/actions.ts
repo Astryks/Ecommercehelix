@@ -4,6 +4,7 @@ import { requireUser } from "@/lib/session";
 import { clearExampleData, getRawDays, setDayField, upsertDays } from "@/lib/repo";
 import { NUM_FIELDS, sum, type DayInput } from "@/lib/scorecard";
 import type { ImportDay } from "@/lib/csv-import";
+import { SALES_FIELDS, TAX_INCLUSIVE_SOURCES } from "@/lib/tax";
 
 const YMD = /^\d{4}-\d{2}-\d{2}$/;
 type Field = (typeof NUM_FIELDS)[number];
@@ -27,13 +28,15 @@ export async function saveCell(date: string, field: string, value: number): Prom
   if (!YMD.test(date) || !isField(field)) return { ok: false };
   const days = await getRawDays(u.id);
   const cur = days.find((d) => d.date === date) ?? blank(date);
-  await setDayField(u.id, { ...cur, source: cur.source === "csv" ? "csv" : "manual" }, field, clamp(field, value));
+  // Imported days stay imported. A day synced from order prices keeps its source unless you retype a sales number.
+  const keep = cur.source === "csv" || (TAX_INCLUSIVE_SOURCES.has(cur.source ?? "") && !(SALES_FIELDS as readonly string[]).includes(field));
+  await setDayField(u.id, { ...cur, source: keep ? cur.source : "manual" }, field, clamp(field, value));
   revalidatePath("/dashboard", "layout");
   return { ok: true };
 }
 
 /** Merge imported days by date: only the mapped columns change, so nothing is duplicated or wiped. */
-export async function importDays(rows: ImportDay[]): Promise<{ ok: boolean; added: number; updated: number; clearedExamples?: boolean; error?: string }> {
+export async function importDays(rows: ImportDay[], opts?: { taxIncluded?: boolean }): Promise<{ ok: boolean; added: number; updated: number; clearedExamples?: boolean; error?: string }> {
   const u = await requireUser("/dashboard/numbers/table");
   const list = Array.isArray(rows) ? rows.filter((r) => r && YMD.test(r.date)).slice(0, 3000) : [];
   if (!list.length) return { ok: false, added: 0, updated: 0, error: "No rows with a date to import." };
@@ -46,7 +49,7 @@ export async function importDays(rows: ImportDay[]): Promise<{ ok: boolean; adde
   const out = list.map((r) => {
     const cur = existing.get(r.date);
     cur ? updated++ : added++;
-    const d = { ...(cur ?? blank(r.date)), source: "csv" } as DayInput;
+    const d = { ...(cur ?? blank(r.date)), source: opts?.taxIncluded ? "csv-orders" : "csv" } as DayInput;
     for (const [k, v] of Object.entries(r)) if (isField(k) && typeof v === "number") d[k] = clamp(k, v);
     return d;
   });

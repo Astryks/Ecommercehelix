@@ -7,12 +7,12 @@
 **Copilot triggers**
 - A new user pastes a URL during onboarding.
 - A user asks "what is wrong with my store?" or "where do I start?".
-- Monthly re-audit (paid plans) or after a theme change is detected.
+- Monthly re-check (paid plans).
 - RPV falls more than 20% below the 30-day average for 7 days.
 
 **Inputs**
 - Public pages: homepage, one collection page, the top 2 to 3 product pages, cart, policies (shipping, returns), about page.
-- Optional connections: Shopify (orders, sessions, products), Meta, Google, email platform.
+- Optional connections: Shopify (orders, products and stock, read-only), Meta, and Google Ads once it is live (coming soon).
 - Category guess (fashion, beauty, home, food, pets, high-ticket, other) for benchmarks.
 
 ## Steps
@@ -35,8 +35,8 @@
 5. **Sell check (is it pushing for more?).**
    - Cart tiers or free-shipping progress bar present?
    - Cross-sell or bundle on product page or cart?
-   - Post-purchase upsell (only visible with Shopify connection)?
-6. **Retention check.** Pop-up present, email platform detected, review app detected, SMS opt-in, loyalty. Loyalty is only worth it once the 12-month repeat purchase rate is above about 15%.
+   - Post-purchase upsell? This cannot be seen from outside, so ask the owner.
+6. **Retention check.** Pop-up present, email platform detected, review app detected, SMS opt-in, loyalty. As a rule of thumb, loyalty is only worth it once the 12-month repeat purchase rate is above about 15%.
 7. **Tracking check.** Meta pixel and Google tag detected on the page. Flag duplicates. Server-side tracking (Meta Conversions API) cannot be seen from outside. Check it in Meta Events Manager once Meta is connected.
 8. **Ads presence.** Look up the brand in public ad libraries where available. Examples are the [Meta Ad Library](https://www.facebook.com/ads/library/) and [Google Ads Transparency Center](https://adstransparency.google.com/). Count active ads and formats (video, static, carousel, creator).
 9. **Score.** Score each area 0 to 100 and combine into the **Helix Score** (weights: Clarity 20, Compelling 25, Friction 15, Sell 15, Retention 15, Tracking 10).
@@ -58,7 +58,7 @@
 | --- | --- |
 | Crawl, score and rank fixes (no approval needed: read-only) | Confirm category, margin and target market |
 | Draft copy for headlines, reasons-why, FAQ answers | Decide which fixes to accept |
-| Draft Shopify theme or content edits for preview (Growth, beta) | Approve or reject each edit |
+| Write copy and a list of page changes to paste (Helix never edits the store) | Make the edits they accept |
 | Re-audit monthly and show the score change | Provide brand assets and photos |
 
 **Done when:** the user sees the score, the top 10 fixes with evidence, and a 7-day plan. They have also picked "do it for me" or "I'll do it" on at least one task.

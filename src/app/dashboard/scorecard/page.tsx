@@ -4,7 +4,7 @@ import { requireUser } from "@/lib/session";
 import { getAccount, getDays, getProducts, getRawDays, getSettings } from "@/lib/repo";
 import { getConnection } from "@/lib/meta/store";
 import { costRatios } from "@/lib/today";
-import { taxRate } from "@/lib/tax";
+import { typedTaxLabel, typedTaxRate } from "@/lib/tax";
 import { DailyInputForm } from "@/components/dashboard/DailyInputForm";
 import { taxLabel } from "@/lib/tax";
 import { derive, flags, sum } from "@/lib/scorecard";
@@ -21,6 +21,7 @@ export default async function Scorecard() {
   const u = await requireUser("/dashboard/scorecard");
   const acct = await getAccount(u.id);
   const taxNote = taxLabel(acct.salesTaxMode, acct.country);
+  const typedTaxNote = typedTaxLabel(acct.salesTaxMode, acct.country);
   const [days, settings, products, rawDays, conn] = await Promise.all([getDays(u.id), getSettings(u.id), getProducts(u.id), getRawDays(u.id), getConnection(u.id)]);
   const ratios = costRatios(rawDays);
   const hasExample = days.some((d) => d.example) || products.some((p) => p.example);
@@ -214,9 +215,9 @@ export default async function Scorecard() {
             <h2 className="font-semibold">Fill in a day</h2>
             <Link href="/dashboard/metrics" className="text-xs font-medium text-cyan-700 underline">Which numbers do I need?</Link>
           </div>
-          <p className="text-sm text-slate-500">A few boxes from Shopify and your ad accounts. Helix works out the rest.{taxNote && <> Type sales as Shopify shows them; Helix takes out {taxNote}.</>}</p>
+          <p className="text-sm text-slate-500">A few boxes from Shopify and your ad accounts. Helix works out the rest.{typedTaxNote ? <> Your settings say the sales you type include {typedTaxNote}, so Helix takes it out.</> : <> Type Gross sales as Shopify shows it (it already leaves GST/VAT out).</>}</p>
           <div className="mt-4">
-            <DailyInputForm defaultDate={addDays(isoDay(), -1)} recent={rawDays.slice(-21)} settings={settings} ratios={ratios} taxRate={taxRate(acct.salesTaxMode, acct.country)} metaConnected={Boolean(conn)} />
+            <DailyInputForm defaultDate={addDays(isoDay(), -1)} recent={rawDays.slice(-21)} settings={settings} ratios={ratios} taxRate={typedTaxRate(acct.salesTaxMode, acct.country)} metaConnected={Boolean(conn)} />
           </div>
         </section>
 

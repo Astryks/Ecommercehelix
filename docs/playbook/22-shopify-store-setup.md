@@ -266,7 +266,7 @@
 ## Lesson 22.9: Shipping zones, rates and a free-shipping amount
 <!-- stage:convert -->
 
-**Why this matters:** Surprise extra costs, like shipping, are the top reason people leave at checkout (see [Baymard: cart abandonment](https://baymard.com/lists/cart-abandonment-rate)). Simple rates, a free shipping amount and honest delivery ranges fix most of it.
+**Why this matters:** Surprise extra costs, like shipping, are one of the most common reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery ranges fix most of it.
 
 **Step 1.** In **Settings > Shipping and delivery**, create a zone for your home country.
 
@@ -284,7 +284,7 @@
 
 **Expected result:** Checkout shows a clear price and delivery range.
 
-**Watch out:** Outside the US: compare the national post and couriers, and set a separate rate for remote areas if needed. US: compare USPS, UPS, FedEx and DHL Express in Shopify Shipping. Add international zones only once home works.
+**Watch out:** Outside the US: compare the national post and couriers, and set a separate rate for remote areas if needed. US: compare the carriers offered in Shopify Shipping. Add international zones only once home works.
 
 ### Good to know
 
@@ -309,9 +309,9 @@
 
 **Watch out:** If you are not registered, do not charge GST and do not call invoices tax invoices.
 
-**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Leave it on (the default) if you type totals with tax, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already without tax) or are not registered.
+**Step 3.** In Helix **Settings**, find **My prices include GST/VAT**. Keep **Use my country's default** if you type or import Shopify's Gross sales, which already leaves tax out. Pick **Yes** only if every sales number you type includes tax. Pick **No** if you are not registered.
 
-**Expected result:** Helix divides sales by 1.1 before profit maths when needed. New Zealand (15%) and UK (20%) are there too.
+**Expected result:** Helix takes GST out of order totals synced from Shopify (for example $110 becomes $100) and uses Gross sales as typed. New Zealand (15%) and UK (20%) are there too.
 
 <!-- do:settings -->
 
@@ -342,11 +342,11 @@
 
 **Expected result:** Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).
 
-**Step 2.** Turn on Shop Pay, Apple Pay and Google Pay, and add PayPal (see [Shopify: PayPal](https://help.shopify.com/en/manual/payments/paypal)).
+**Step 2.** Turn on Shop Pay and the phone wallets Shopify offers, and add another payment provider your customers trust as an extra option (see [Shopify: third-party payment providers](https://help.shopify.com/en/manual/payments/third-party-providers)).
 
-**Expected result:** Checkout shows express buttons and PayPal.
+**Expected result:** Checkout shows express wallet buttons.
 
-**Step 3.** Think about one buy now pay later option. Afterpay works in many countries. Shop Pay Installments works in the US, Canada and the UK (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
+**Step 3.** Think about one buy now pay later option. Several providers work in many countries. Shop Pay Installments works in the US, Canada and the UK (see [Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
 
 **Expected result:** Shoppers can pay in parts. Check the fee, which is higher than a card fee.
 
@@ -367,7 +367,7 @@
 
 **Why this matters:** Clear policies build trust and keep you within the law. Write them in plain words a 12-year-old could follow, and link them where buyers look.
 
-**Step 1.** Go to **Settings > Policies**. Make Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
+**Step 1.** Go to **Settings > Policies**. Make Return and refund, Privacy, Terms of service, Shipping and Contact information pages, starting from Shopify's templates (see [Shopify: store policies](https://help.shopify.com/en/manual/checkout-settings/refund-privacy-tos)).
 
 **Expected result:** All five policy pages exist.
 
@@ -410,7 +410,7 @@
 
 **Why this matters:** Every app can slow your store and adds a monthly cost. A small starter set covers almost everything a new store needs. See Module 18 for when to add more.
 
-**Step 1.** Install the starter set only. That is a reviews app, plus Shopify Email or Klaviyo. Add the Facebook & Instagram and Google & YouTube channels, and maybe an after-purchase offer app. Add subscriptions only if you sell refills.
+**Step 1.** Install the starter set only. That is a reviews app, plus Shopify Email or another email tool. Add the Facebook & Instagram and Google & YouTube channels, and maybe an after-purchase offer app. Add subscriptions only if you sell refills.
 
 **Expected result:** Your app list is short and every app has a job.
 
@@ -431,7 +431,7 @@
 
 **Why this matters:** A test order proves that payments, emails, stock and tracking all work together. It is the last step before real customers.
 
-**Step 1.** In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test gateway, called Bogus Gateway (see [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders)).
+**Step 1.** In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test payment gateway, which shows as Bogus Gateway (see [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders)).
 
 **Expected result:** Checkout accepts test card numbers.
 
@@ -489,11 +489,11 @@
 | Collections and menu | 4 to 5 menu links; filters on; search works |
 | Shipping | Home zone, clear rates, free-shipping amount shown |
 | Taxes | GST or state settings checked (with your accountant) |
-| Payments | Cards, Shop Pay, Apple Pay, PayPal; statement name set |
-| Policies | Refund, privacy, terms, shipping and contact linked in footer |
+| Payments | Cards, Shop Pay and express wallets; statement name set |
+| Policies | Return and refund, privacy, terms, shipping and contact linked in footer |
 | Apps | Only the starter set; speed checked after each |
 | Tracking | Test Purchase seen in Meta and Google |
-| Speed | Mobile pages load in about 3 seconds |
+| Speed | Main product image shows in about 2.5 seconds on a phone (Lesson 9.4) |
 | Password | Store password removed when you are ready to launch |
 
 ## Lesson 22.18: Sell to people near you

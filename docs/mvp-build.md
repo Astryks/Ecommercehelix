@@ -56,7 +56,7 @@ _All Meta and Google writes create **paused** entities; there is no code path th
 
 ## Week 6: Growth features, polish, beta
 
-- [ ] Klaviyo read plus draft flows and campaigns (approval to go live).
+- [ ] Email platform read plus draft flows and campaigns (approval to go live).
 - [ ] Weekly agency-style report (Tier 3).
 - [ ] Compound Score, streaks, milestones.
 - [ ] Admin margin dashboard.

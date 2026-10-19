@@ -58,31 +58,31 @@
   {"say": "Turn on Shopify's filters (size, colour, price, in stock) with multi-select. Add a second photo on hover and quick add if your theme allows.", "check": "Shoppers can narrow down and add from collections.", "lost": "Turn on the size filter."},
   {"say": "Search your store for your top 5 product words and one common misspelling.", "check": "Every search shows the right products.", "lost": "Search one product word."}
  ]},
-"22.9": {"intro": "Surprise extra costs, like shipping, are the top reason people leave at checkout. Simple rates, a free shipping amount and honest delivery times fix most of it.",
+"22.9": {"intro": "Surprise extra costs, like shipping, are one of the most common reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery times fix most of it.",
  "steps": [
   {"say": "In **Settings > Shipping and delivery**, make a zone for your home country.", "check": "A home country zone exists.", "lost": "Add your home country zone."},
   {"say": "Add Standard and Express rates priced from real carrier costs, or use calculated rates.", "check": "Checkout shows two clear options.", "lost": "Add a Standard rate."},
   {"say": "A common rule of thumb: set a free shipping amount 1.2 to 1.4 times your average order. Example: $50 average, so $60 to $70. Show it in the promo bar and near Add to cart (\"Free shipping over $X\").", "check": "Shoppers see how close they are to free shipping.", "lost": "Average order × 1.3 = free shipping amount."},
-  {"say": "Write delivery times as a range (\"arrives in 3 to 6 business days\").", "check": "Checkout shows a clear price and delivery range.", "careful": "Outside the US: compare the national post and couriers, and set a separate remote area rate if needed. US: compare USPS, UPS, FedEx and DHL Express in Shopify Shipping. Add overseas zones only once home works.", "lost": "Write \"3 to 6 business days\"."}
+  {"say": "Write delivery times as a range (\"arrives in 3 to 6 business days\").", "check": "Checkout shows a clear price and delivery range.", "careful": "Outside the US: compare the national post and couriers, and set a separate remote area rate if needed. US: compare the carriers offered in Shopify Shipping. Add overseas zones only once home works.", "lost": "Write \"3 to 6 business days\"."}
  ]},
 "22.10": {"intro": "Tax set up wrong costs money or breaks the law. Under the ATO's rules, you must register for GST once turnover reaches $75,000 a year. Other countries set their own limits. US: sales tax depends on nexus (a strong enough link to a state). Helix takes GST out of your sales before any profit maths.",
  "steps": [
   {"say": "Outside the US: check if your GST turnover (this month plus the previous 11) has reached $75,000, or will in the next 12 months. If so, register within 21 days (the ATO website explains how).", "check": "You know if you must register.", "lost": "Add up the last 12 months of sales. Is it $75,000 or more?"},
   {"say": "Once registered for GST: in Shopify **Settings > Taxes and duties**, turn on **Include sales tax in product price and shipping rate**.", "check": "Prices shown to local customers include GST.", "careful": "Not registered? Don't charge GST, and don't call invoices tax invoices.", "lost": "Not registered yet? Skip this card."},
-  {"say": "In Helix **Settings**, leave **My prices include GST/VAT** on (the default) if you type totals with tax in, like Shopify's Total sales. Switch it to No if you copy Gross or Net sales (already ex tax), or you're not registered.", "check": "Helix divides sales by 1.1 before profit maths when needed. Example: $110 becomes $100. New Zealand (15%) and UK (20%) are there too.", "lost": "Typing Total sales? Leave it on."},
+  {"say": "In Helix **Settings**, keep **My prices include GST/VAT** on **Use my country's default** if you type or import Shopify's Gross sales (it already leaves tax out). Pick Yes only if every sales number you type includes tax, or No if you're not registered.", "check": "Helix takes GST out of order totals synced from Shopify (example: $110 becomes $100) and uses Gross sales as typed. New Zealand (15%) and UK (20%) are there too.", "lost": "Typing Gross sales? Keep the default."},
   {"say": "US: list states where you have a physical presence (home state, warehouse). Check each state's economic nexus threshold, often $100,000 of sales a year.", "check": "You know where you owe sales tax.", "lost": "Start with your home state."},
   {"say": "US: register with each state before collecting. Then turn that state on in **Settings > Taxes and duties**.", "check": "Shopify collects tax only where you're registered, and tracks your progress to other thresholds.", "lost": "Register first. Then turn the state on."}
  ]},
 "22.11": {"intro": "Let people pay the way they like. Every extra step at checkout loses buyers.",
  "steps": [
   {"say": "In **Settings > Payments**, turn on Shopify Payments if it's available in your country.", "check": "Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).", "lost": "Turn on Shopify Payments."},
-  {"say": "Turn on Shop Pay, Apple Pay and Google Pay. Add PayPal.", "check": "Checkout shows express buttons and PayPal.", "lost": "Turn on Apple Pay."},
-  {"say": "Think about one buy now pay later option. Afterpay works in many countries. Shop Pay Installments works in the US, Canada and the UK.", "check": "Shoppers can pay in parts. Check the fee, which is higher than a card fee.", "lost": "Check the fee before you turn it on."},
+  {"say": "Turn on Shop Pay and the phone wallets Shopify offers. Add a popular online wallet as an extra option.", "check": "Checkout shows express wallet buttons.", "lost": "Turn on Shop Pay."},
+  {"say": "Think about one buy now pay later option. Several providers work in many countries. Shop Pay Installments works in the US, Canada and the UK.", "check": "Shoppers can pay in parts. Check the fee, which is higher than a card fee.", "lost": "Check the fee before you turn it on."},
   {"say": "Set your payout bank account, and a statement name that matches your brand.", "check": "Customers recognise the charge on their bank statement.", "lost": "Set the statement name to your brand."}
  ]},
 "22.12": {"intro": "Clear policies build trust and keep you within the law. Write them so a 12-year-old could follow them.",
  "steps": [
-  {"say": "In **Settings > Policies**, create Refund, Privacy, Terms of service, Shipping and Contact pages from Shopify's templates.", "check": "All five policy pages exist.", "lost": "Make the Refund policy first."},
+  {"say": "In **Settings > Policies**, create Return and refund, Privacy, Terms of service, Shipping and Contact information pages, starting from Shopify's templates.", "check": "All five policy pages exist.", "lost": "Make the Return and refund policy first."},
   {"say": "Rewrite each in plain words with your own cut-off dates and delivery ranges.", "check": "The policies sound like you and match what you really do.", "careful": "Outside the US: under consumer law, customers always have rights to repair, replacement or refund for faulty or not-as-described products. Never write \"no refunds\" or \"no refunds on sale items\". US: if you state a shipping time, the FTC mail order rule expects you to meet it, or ship within 30 days if you state none.", "lost": "Rewrite one policy in plain words."},
   {"say": "Link every policy in the footer and near checkout.", "check": "Every policy is one click away.", "lost": "Add policy links to the footer."},
   {"say": "Only email people who said yes. Every marketing email needs an unsubscribe link.", "check": "Your email marketing follows the rules.", "lost": "Check your emails have an unsubscribe link."},
@@ -93,14 +93,14 @@
  ]},
 "22.13": {"intro": "Every app can slow your store and costs money each month. A small starter set covers almost everything. Module 18 says when to add more.",
  "steps": [
-  {"say": "Install the starter set only: a reviews app, Shopify Email or Klaviyo, the Facebook & Instagram and Google & YouTube sales channels, and (optional) an after-purchase offer app. Add subscriptions only if you sell refills.", "check": "Your app list is short and every app has a job.", "lost": "Install a reviews app and an email app."},
+  {"say": "Install the starter set only: a reviews app, Shopify Email or another email tool, the Facebook & Instagram and Google & YouTube sales channels, and (optional) an after-purchase offer app. Add subscriptions only if you sell refills.", "check": "Your app list is short and every app has a job.", "lost": "Install a reviews app and an email app."},
   {"say": "Before installing anything else, check if your theme can already do it (badges, size charts and FAQs often are built in).", "check": "You skip apps for things you already have.", "lost": "Check your theme settings first."},
   {"say": "Install new apps on a theme copy. Test speed before and after.", "check": "No app slows the live store without you noticing.", "lost": "Test speed before and after."},
   {"say": "Remove apps you stop using. Check they left no code behind.", "check": "You can name what each app does and what it costs each month.", "lost": "Remove one app you don't use."}
  ]},
 "22.16": {"intro": "A test order proves payments, emails, stock and tracking all work together. It's the last step before real customers.",
  "steps": [
-  {"say": "In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test gateway, called Bogus Gateway.", "check": "Checkout accepts test card numbers.", "lost": "Turn on test mode."},
+  {"say": "In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test payment gateway, which shows as Bogus Gateway.", "check": "Checkout accepts test card numbers.", "lost": "Turn on test mode."},
   {"say": "Place an order on your phone like a customer would. Use a discount code if you have one.", "check": "The order goes through.", "lost": "Buy one thing on your phone."},
   {"say": "Check the confirmation email arrived, stock dropped by one, shipping and tax were right, and a Purchase showed in Meta and Google.", "check": "Every system recorded the order correctly.", "lost": "Check the confirmation email arrived."},
   {"say": "Refund or cancel the test order. Turn test mode off.", "check": "The store is back in live mode.", "lost": "Turn test mode off."},

@@ -9,7 +9,7 @@ import { isoDay, addDays } from "./dates";
 import { toTrack, type TrackId } from "./tracks";
 import { toCountry, type Country } from "./seasons";
 import type { Goals } from "./goals";
-import { dayExTax, productExTax, taxRate, toTaxMode, type SalesTaxMode } from "./tax";
+import { dayExTax, dayTaxRate, productExTax, toTaxMode, type SalesTaxMode } from "./tax";
 import { isDemoUserId, mayLinkByEmail } from "./demo-auth";
 import { exampleStock, exampleSuppliers, type StockItem, type Supplier } from "./stock";
 
@@ -262,20 +262,20 @@ export async function saveSettings(userId: string, s: Settings) {
   await prisma.scorecardSettings.upsert({ where: { userId }, create: { userId, ...s }, update: s });
 }
 
-/** GST/VAT rate to strip from this user's sales (0 when their numbers are before tax). */
-export async function salesTaxRate(userId: string): Promise<number> {
+/** GST/VAT rate to strip from one day's (or product line's) sales, by where its sales came from (see lib/tax). */
+export async function salesTaxRateFor(userId: string): Promise<(source?: string) => number> {
   if (!hasDb) {
     const a = mem.users.get(userId);
-    return a ? taxRate(a.salesTaxMode, a.country) : 0;
+    return (source) => (a ? dayTaxRate(a.salesTaxMode, a.country, source) : 0);
   }
   const u = await prisma.user.findUnique({ where: { id: userId }, select: { salesTaxMode: true, country: true } });
-  return u ? taxRate(toTaxMode(u.salesTaxMode), toCountry(u.country)) : 0;
+  return (source) => (u ? dayTaxRate(toTaxMode(u.salesTaxMode), toCountry(u.country), source) : 0);
 }
 
-/** Days as used by every report: sales have GST/VAT taken out when "My prices include GST/VAT" applies. */
+/** Days as used by every report: sales have GST/VAT taken out where "My prices include GST/VAT" applies to them. */
 export async function getDays(userId: string): Promise<DayInput[]> {
-  const [days, rate] = await Promise.all([getRawDays(userId), salesTaxRate(userId)]);
-  return rate > 0 ? days.map((d) => dayExTax(d, rate)) : days;
+  const [days, rateFor] = await Promise.all([getRawDays(userId), salesTaxRateFor(userId)]);
+  return days.map((d) => dayExTax(d, rateFor(d.source)));
 }
 
 /** Days exactly as typed or imported. Use this when editing and saving, so tax is never taken out twice. */
@@ -323,10 +323,10 @@ export async function clearExampleData(userId: string) {
 }
 
 export async function getProducts(userId: string): Promise<ProductLine[]> {
-  const rate = await salesTaxRate(userId);
-  if (!hasDb) return (mem.products.get(userId) ?? []).map((p) => productExTax(p, rate));
+  const rateFor = await salesTaxRateFor(userId);
+  if (!hasDb) return (mem.products.get(userId) ?? []).map((p) => productExTax(p, rateFor((p as ProductLine & { source?: string }).source)));
   const rows = await prisma.productSale.findMany({ where: { userId }, orderBy: { units: "desc" } });
-  return rows.map((r) => productExTax({ date: r.date, sku: r.sku, name: r.name, units: r.units, price: r.price, unitCost: r.unitCost, example: r.example }, rate));
+  return rows.map((r) => productExTax({ date: r.date, sku: r.sku, name: r.name, units: r.units, price: r.price, unitCost: r.unitCost, example: r.example }, rateFor(r.source)));
 }
 
 export async function addProductLine(userId: string, p: ProductLine) {

@@ -22,7 +22,7 @@ cols = [
     ("Google ad spend", "in", "From Google Ads, Cost"),
     ("Product cost", "in", "What the products in those orders cost you"),
     ("Shipping cost", "in", "What you paid to ship them"),
-    ("Payment fees", "in", "Shopify Payments, PayPal and so on"),
+    ("Payment fees", "in", "Shopify Payments and other payment providers"),
     ("Other costs", "in", "Anything else for the day (optional)"),
     ("Total ad spend", "calc", "Meta + Google"),
     ("Total costs", "calc", "Ads + product + shipping + fees + other"),
@@ -62,7 +62,7 @@ steps = [
     "AOV: average order value, how much one order is worth.",
     "MER: ad spend as a share of sales. Lower is better. Helix shows your safe limit in Profit.",
     "",
-    "Google Sheets: File > Import > Upload this file. Excel and Numbers open it directly.",
+    "Any spreadsheet app opens this file. In an online spreadsheet, use File > Import > Upload.",
 ]
 for i, t in enumerate(steps, 1):
     how.cell(row=i, column=1, value=t).font = Font(bold=(i == 1), size=14 if i == 1 else 12)
@@ -124,7 +124,7 @@ sm.column_dimensions["B"].width = 18
 OUT.mkdir(parents=True, exist_ok=True)
 wb.save(OUT / "helix-metrics-tracker.xlsx")
 
-# CSV version: same columns, formulas as text for row 2 (works when imported into Google Sheets).
+# CSV version: same columns, formulas as text for row 2 (works when imported into an online spreadsheet).
 import csv
 with open(OUT / "helix-metrics-tracker.csv", "w", newline="") as fh:
     w = csv.writer(fh)

@@ -25,7 +25,7 @@
  "steps": [
   {"say": "Agree the seven terms in the lesson's table for each creator: what they deliver, usage rights, exclusivity, partnership ad access, payment, changes, and disclosure.", "check": "Every term has an agreed answer.", "lost": "Agree what they deliver and what you pay."},
   {"say": "Expect to pay more for raw footage, several hooks, longer usage, exclusivity and partnership ad access.", "check": "Higher fees buy the extras you need.", "lost": "Only pay extra for what you'll really use."},
-  {"say": "Confirm the deal in writing, even just a short email.", "check": "You have written terms for every creator.", "lost": "Send one email that lists the deal.", "careful": "Paid or gifted posts must be clearly labelled as ads. That includes free product. Follow the FTC's disclosure guide in the US and the ACCC's guidance elsewhere."}
+  {"say": "Confirm the deal in writing, even just a short email.", "check": "You have written terms for every creator.", "lost": "Send one email that lists the deal.", "careful": "Paid or gifted posts must be clearly labelled as ads. That includes free product. Follow the FTC's guide in the US, the ACCC's guidance in Australia and the ASA's influencers' guide in the UK."}
  ]},
 "19.5": {"intro": "An affiliate earns a commission on each sale they bring. If your own offers steal their sales, they stop posting.",
  "steps": [
@@ -35,7 +35,7 @@
   {"say": "Give affiliates a content guide: product facts and top three problems solved, angles and hooks that work, a do and don't list, example videos, and how and when they get paid.", "check": "Affiliates can post without asking you questions.", "lost": "Write the top three problems your product solves."},
   {"say": "Recruit in groups of 10 or more.", "check": "You have a group of small affiliates. Many small posters often beat one big name posting once.", "lost": "Invite 10 at once."}
  ]},
-"19.6": {"intro": "Partnership ads (whitelisting) run from a creator's account instead of yours. People see a familiar face. Meta's own figures show lower average cost per purchase than standard ads. Worth a test, not a promise.",
+"19.6": {"intro": "Partnership ads (whitelisting) run from a creator's account instead of yours. People see a familiar face. Meta reports they can lower cost per purchase when mixed in with your normal ads. Worth a test, not a promise.",
  "steps": [
   {"say": "Ask the creator's permission in writing. Agree how long it lasts.", "check": "You have written permission with an end date.", "lost": "Email them asking for permission, with an end date."},
   {"say": "Choose content: posts that already did well for free, or new videos made for ads.", "check": "You've picked 2 to 5 creator posts.", "lost": "Pick their best post."},

@@ -166,7 +166,7 @@
 
 **Expected result:** You know whether clicks are affordable.
 
-**Step 6.** Check frequency: how often the same person saw the ad in 7 days. Look for ads with lots of likes and clicks but no sales.
+**Step 6.** Check frequency: how many times, on average, each person saw the ad over the dates you picked (for example the last 7 days). Look for ads with lots of likes and clicks but no sales.
 
 **Expected result:** You have found tired ads (high frequency). Or you found a page that does not match what the ad promised (clicks but no sales).
 

@@ -91,6 +91,6 @@
   {"say": "Divide normal profit by discounted profit. At 20% off a $60 item, $30 becomes $18. $30 ÷ $18 = 1.67.", "check": "You know you need about 1.67 times the orders.", "lost": "Normal profit ÷ sale profit."},
   {"say": "Check your target against your list, your ad budget and your stock. Pick the smallest discount that hits it.", "check": "One offer you can actually reach.", "lost": "Pick the smallest discount that works."},
   {"say": "Split the target: for example 35% launch days, 30% middle, 35% final days. Divide by the days in each part.", "check": "A target for every sale day.", "lost": "Write a sales number for each day."},
-  {"say": "Divide sale profit by sale price: $18 ÷ $48 = 37.5%. Keep ad spend under that share of sales. Check it daily.", "check": "One MER limit you check each day.", "careful": "Shopify shows MER the other way round. Helix 25% = Shopify 4.", "lost": "Keep ad spend under 37% of sales."}
+  {"say": "Divide sale profit by sale price: $18 ÷ $48 = 37.5%. Keep ad spend under that share of sales. Check it daily.", "check": "One MER limit you check each day.", "careful": "Many other tools show MER the other way round. Helix 25% = 4x there.", "lost": "Keep ad spend under 37% of sales."}
  ]}
 }

@@ -21,7 +21,7 @@
 
 ## Steps
 
-1. Collect raw text into the research log (Helix can pull reviews and tickets when connected).
+1. Collect raw text into the research log. Copy it in from your reviews app, inbox and comments (Helix does not connect to these).
 2. Tag each item: desire, fear, objection, use case, comparison, language worth reusing.
 3. Count tags monthly. The top objections feed the offer (SOP 04) and the product page FAQ (SOP 11).
 4. Pull 10 phrases customers use. Use them in hooks and headlines.
@@ -45,9 +45,9 @@
 
 | Helix can do (with approval where it writes) | The user does |
 | --- | --- |
-| Pull and tag reviews, tickets, survey answers (read-only) | Talk to customers |
-| Summarise top objections and phrases monthly | Decide what to act on |
-| Draft review request emails and replies | Approve sends and replies |
-| Draft post-purchase survey | Approve and install |
+| Give the tags and steps to sort reviews, tickets and survey answers (Lessons 3.3 and 4.2) | Talk to customers |
+| Show where those words go: offer, product page, ads (Modules 3 and 5) | Count tags monthly and decide what to act on |
+| Draft review request emails and replies to paste | Send them from their own tools |
+| Draft post-purchase survey questions | Add them to their survey app |
 
 **Related:** SOP 04, 07, 08, 11.

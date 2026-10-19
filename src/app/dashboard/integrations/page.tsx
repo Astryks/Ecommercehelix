@@ -209,7 +209,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
       </section>
 
       <section className="mt-6 grid gap-4 md:grid-cols-3">
-        {["Klaviyo", "Google Analytics", "TikTok Ads"].map((n) => (
+        {["Email platform", "Google Analytics", "TikTok Ads"].map((n) => (
           <div key={n} className="card p-5 text-sm"><p className="font-semibold">{n}</p><p className="mt-1 text-slate-500">Coming soon.</p></div>
         ))}
       </section>

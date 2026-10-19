@@ -38,7 +38,7 @@
 
 **Why this matters:** Each way to pay has its own fee, payout speed and risk. The fee on the price page is rarely the whole cost.
 
-**Step 1.** Download last month's payout reports from each provider (Shopify Payments, PayPal, buy now pay later).
+**Step 1.** Download last month's payout reports from each provider (Shopify Payments, any wallet or buy now pay later provider).
 
 **Expected result:** You have one report per provider.
 
@@ -56,7 +56,7 @@
 
 <!-- do:numbers -->
 
-**Step 5.** Keep the ways to pay that customers use. Drop any under about 2% of orders that costs much more than cards.
+**Step 5.** Keep the ways to pay that customers use. As a rule of thumb, drop any under about 2% of orders that costs much more than cards.
 
 **Expected result:** Your payment list is lean.
 
@@ -149,7 +149,7 @@
 
 **Expected result:** You can spot card testing.
 
-**Step 2.** Use Shopify's fraud analysis and the card testing protection built into Shopify Payments (see [Shopify: preventing fraud](https://help.shopify.com/en/manual/payments/fraud-prevention/preventing-fraud)). Checkout [bot protection](https://help.shopify.com/en/manual/checkout-settings/bot-protection) is for Shopify Plus flash sales only.
+**Step 2.** Use Shopify's fraud analysis and the card testing protection built into Shopify Payments (see [Shopify: preventing fraud](https://help.shopify.com/en/manual/payments/fraud-prevention/preventing-fraud)). Checkout [bot protection](https://help.shopify.com/en/manual/checkout-settings/bot-protection) is only on Shopify Plus, mainly for flash sales.
 
 **Expected result:** You know what Shopify already blocks.
 
@@ -163,7 +163,7 @@
 
 **Step 5.** Use 3D Secure where your provider allows it. Shopify Payments applies it only when the card's bank asks.
 
-**Expected result:** Risky payments get an extra check where your provider supports it. On Stripe, Radar rules can request it for risky payments.
+**Expected result:** Risky payments get an extra check where your provider supports it. Some other providers let you set rules that request it for risky payments.
 
 **Step 6.** If testing keeps happening, raise the minimum order or hide your cheapest product for a while.
 

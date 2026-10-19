@@ -10,7 +10,7 @@ type Calc = { date: string; profit: number; roas: number; merPct: number; convPc
 type Actions = {
   addDay: (date: string) => Promise<{ ok: boolean; error?: string }>;
   saveCell: (date: string, field: string, value: number) => Promise<{ ok: boolean }>;
-  importDays: (rows: ImportDay[]) => Promise<{ ok: boolean; added: number; updated: number; clearedExamples?: boolean; error?: string }>;
+  importDays: (rows: ImportDay[], opts?: { taxIncluded?: boolean }) => Promise<{ ok: boolean; added: number; updated: number; clearedExamples?: boolean; error?: string }>;
 };
 
 /** Raw inputs you can edit, then calculated columns (read-only). */
@@ -142,7 +142,8 @@ function Importer({ onClose, run }: { onClose: () => void; run: Actions["importD
           <p className="text-xs text-slate-500">Helix shows money in USD. If your file is in another currency, convert it first (or set your store currency to USD) so profit adds up.</p>
           <div className="flex flex-wrap gap-2">
             <button disabled={pending || !days.length} className="btn-primary text-sm disabled:opacity-50" onClick={() => start(async () => {
-              const r = await run(days);
+              // An orders export uses order prices (Subtotal), which include GST/VAT in a tax-inclusive store.
+              const r = await run(days, { taxIncluded: file?.source === "shopify-orders" });
               setMsg(r.ok ? `Imported: ${r.added} new days, ${r.updated} updated.${r.clearedExamples ? " The example numbers were removed, so you only see your own." : ""}` : r.error ?? "Import failed.");
               if (r.ok) { setFile(null); router.refresh(); }
             })}>{pending ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden /> : <Check className="h-4 w-4" aria-hidden />} Import {days.length} days</button>

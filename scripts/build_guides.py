@@ -533,15 +533,15 @@ for i, t in enumerate(["Settings", "  General", "  Payments", "  Checkout", "  T
 g.text(230, 100, "Payments", 18, 800)
 g.rect(230, 120, 580, 150, "#fff", "#e2e8f0", 10)
 g.text(250, 150, "Shopify Payments", 15, 700)
-g.text(250, 174, "Cards · Shop Pay · Apple Pay · Google Pay", 13, 400, "#475569")
+g.text(250, 174, "Cards · Shop Pay · express wallets", 13, 400, "#475569")
 g.button(250, 196, 110, "Activate")
 g.text(380, 216, "Statement name: YOURBRAND", 13, 600)
 g.rect(230, 290, 580, 70, "#fff", "#e2e8f0", 10)
-g.text(250, 330, "PayPal", 15, 700)
+g.text(250, 330, "Other payment providers", 15, 700)
 g.button(690, 310, 100, "Activate", False)
 g.rect(230, 380, 580, 110, "#fff", "#e2e8f0", 10)
 g.text(250, 410, "Buy now, pay later", 15, 700)
-g.text(250, 436, "AU: Afterpay app  ·  US: Shop Pay Installments", 13, 400, "#475569")
+g.text(250, 436, "AU: a pay later app  ·  US: Shop Pay Installments", 13, 400, "#475569")
 g.text(250, 460, "Check the fee first. It is higher than a card fee.", 12, 400, "#64748b")
 g.toggle(750, 400, True)
 g.rect(230, 510, 580, 100, "#fff", "#e2e8f0", 10)
@@ -557,7 +557,7 @@ save("shopify-7-payments", g, [
     "Open Settings, then Payments.",
     "Activate Shopify Payments for cards and express buttons.",
     "Set the statement name to your brand.",
-    "Activate PayPal.",
+    "Add another provider if needed.",
     "Add one buy now, pay later option if the fee suits you.",
     "Add your bank account for payouts."])
 

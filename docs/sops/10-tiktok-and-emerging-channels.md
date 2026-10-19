@@ -6,7 +6,7 @@
 
 **Copilot triggers**
 - The main channel is profitable and the user wants to grow beyond it.
-- The user asks about TikTok, ChatGPT ads or showing up in AI search.
+- The user asks about TikTok, ads in AI chat apps or showing up in AI search.
 - Quarterly channel review.
 
 ## Rule zero
@@ -29,7 +29,7 @@ New channels often start at around 10% of total ad budget. Judge them on their e
 
 ## TikTok Shop
 
-TikTok Shop only runs in some countries. It was not open to Australian shoppers as of 2026, so check your market first. Since July 2025, GMV Max is the only campaign type for TikTok Shop ads (see [TikTok: GMV Max migration](https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads)). It is automated and can use your own videos, Spark Ads posts and authorised affiliate videos (see [TikTok: About Product GMV Max](https://ads.tiktok.com/help/article/about-product-gmv-max)). Treat in-platform return as a channel score, not comparable to Meta or Google. Affiliates and creator content are the fuel. Decide first whether selling in-app fits your margin after commissions, fees and coupons.
+TikTok Shop only runs in some countries (the US, UK, and parts of Europe, Asia and Latin America). It was not open to Australian shoppers as of October 2026, so check your market first. Since July 2025, GMV Max is the only campaign type for TikTok Shop ads (see [TikTok: GMV Max migration](https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads)). It is automated and can use your own videos, Spark Ads posts and authorised affiliate videos (see [TikTok: About Product GMV Max](https://ads.tiktok.com/help/article/about-product-gmv-max)). Treat in-platform return as a channel score, not comparable to Meta or Google. Affiliates and creator content are the fuel. Decide first whether selling in-app fits your margin after commissions, fees and coupons.
 
 ## Pinterest
 
@@ -37,8 +37,8 @@ Strong for planned purchases (home, wedding, fashion, gifting). Search-like beha
 
 ## AI shopping surfaces and AI search
 
-- Shopping assistants and AI search now recommend products. Shopify's Agentic storefronts are on by default for eligible stores (**Sales channels > Agentic**). ChatGPT is open to all eligible stores. Copilot and Google AI Mode are in early access. Some channels need a US store (see [Shopify: Agentic storefronts](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts)).
-- Paid placements are opening up too. ChatGPT ads can now be built from a product feed, in beta (see [OpenAI: Create campaigns from product feeds](https://help.openai.com/en/articles/20001268-create-campaigns-from-product-feeds)).
+- Shopping assistants and AI search now recommend products. Shopify's Agentic storefronts are on by default for eligible stores (**Sales channels > Agentic**). They list your products in AI chat apps and Google's AI Mode and Gemini. Some send shoppers to your store's checkout; others can check out directly if you turn that on (see [Shopify: Agentic storefronts](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts)).
+- Paid placements are opening up too. Some AI chat apps now test ads built from a product feed. Google ads can also show in AI Overviews and AI Mode (SOP 09).
 - **Visibility basics:** clear product data (titles, attributes, prices, availability, return policy) and plain-language FAQs on product pages. Keep brand facts the same everywhere. Grow reviews, and let reputable AI crawlers read your site.
 - **Classic SEO still feeds this:** start with buying-intent keyword research. Use one main heading per page as good practice. Build a logical site structure and fast mobile pages.
 - Google sets no length limit for meta descriptions. About 150 to 160 characters is a common guide to avoid cut-offs (see [Google: snippets](https://developers.google.com/search/docs/appearance/snippet)).

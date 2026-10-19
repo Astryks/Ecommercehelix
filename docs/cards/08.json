@@ -27,9 +27,9 @@
 "8.4": {"intro": "Keywords are the search words you want to show for. Buying words bring buyers.",
  "steps": [
   {"say": "List buying words: \"buy\", \"best\", \"price\", or product type plus a feature, like \"linen shirt men\".", "check": "You have 20 to 50 keywords.", "lost": "Write ten search words a buyer would type."},
-  {"say": "In **Tools > Keyword Planner**, check monthly searches and competition for each.", "check": "Each keyword has a number and a level.", "lost": "Check your top five in Keyword Planner."},
+  {"say": "In **Tools > Planning > Keyword Planner**, check monthly searches and competition for each.", "check": "Each keyword has a number and a level.", "lost": "Check your top five in Keyword Planner."},
   {"say": "Group keywords by theme. Keep each ad group to a handful of close words.", "check": "Each group is tightly themed.", "lost": "Put similar words together."},
-  {"say": "Make a shared negative list (words you never want, like \"free\" or \"jobs\") in **Shared library > Negative keyword lists**. Apply it to every campaign.", "check": "Wasted searches are blocked everywhere.", "lost": "Add \"free\" and \"jobs\" as negatives."}
+  {"say": "Make a shared negative list (words you never want, like \"free\" or \"jobs\") in **Tools > Shared library > Exclusion lists** (the **Negative keyword lists** tab). Click **Apply to campaigns** and pick every campaign.", "check": "Wasted searches are blocked everywhere.", "lost": "Add \"free\" and \"jobs\" as negatives."}
  ]},
 "8.5": {"intro": "Search ads are short. Every line has to earn its spot.",
  "steps": [
@@ -46,7 +46,7 @@
 "8.7": {"intro": "New customers grow the store. Google can favour them.",
  "steps": [
   {"say": "Upload your customer list in **Audience manager > Your data segments**.", "check": "Google knows who already bought.", "lost": "Upload your customer list."},
-  {"say": "In the campaign's **Customer acquisition** setting, choose \"Bid higher for new customers\" or \"Only bid for new customers\".", "check": "The campaign favours new buyers. Bidding higher needs value bidding and a Purchase goal.", "careful": "Only accept lower ROAS for new customers if they come back and buy again.", "lost": "Pick \"Bid higher for new customers\"."}
+  {"say": "In the campaign's **Customer acquisition** setting, choose to bid higher for new customers than existing ones, or to only bid for new customers.", "check": "The campaign favours new buyers. Bidding higher needs value bidding (target ROAS or maximise conversion value) and a Purchase goal.", "careful": "Only accept lower ROAS for new customers if they come back and buy again.", "lost": "Pick bid higher for new customers."}
  ]},
 "8.8": {"intro": "Ten to twenty minutes once a week keeps Google profitable. Most waste hides in search terms.",
  "steps": [

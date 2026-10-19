@@ -14,7 +14,7 @@ All costs below are **estimates** in USD, based on list prices for hosted models
 | Guides ("I'll do it") | Yes | Yes | Yes |
 | Scorecard | Manual entry | Auto from Shopify + Meta (when connected) | Auto from Shopify + Meta; Google Ads guided setup (connection coming soon) |
 | Approval queue and bot actions | No | Yes, **Meta** (paused drafts you launch) | Yes, **Meta** now; Google connection coming soon |
-| Email and SMS flow drafts (Klaviyo) | Guides only | Guides only | Yes |
+| Email and SMS flow drafts (email platform) | Guides only | Guides only | Yes |
 | Weekly agency-style report | No | No | Yes |
 | Site edit drafts with preview (Shopify) | No | No | Yes (beta) |
 | Trends feed | Read only | Read + "adapt" | Read + "adapt" |
@@ -105,7 +105,7 @@ Typical AI use (with buffer): 30 plans $0.68, 120 chats $1.53, 15 deep chats $0.
 | Price | $59.00 |
 | Stripe (estimate) | -$2.42 |
 | AI allowance, fully used | -$8.00 |
-| Hosting and sync (heavier: two ad platforms plus Klaviyo) | -$1.50 |
+| Hosting and sync (heavier: two ad platforms plus an email platform) | -$1.50 |
 | Support allowance | -$2.50 |
 | **Contribution per Growth user** | **about $44.58 (76%)** |
 

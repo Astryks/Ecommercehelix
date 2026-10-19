@@ -65,7 +65,7 @@
 
 **Expected result:** Your BAS includes your credits.
 
-**Step 6.** In Helix **Settings**, keep **My prices include GST/VAT** on.
+**Step 6.** In Helix **Settings**, keep **My prices include GST/VAT** on **Use my country's default** (or Yes if the sales you type include GST).
 
 **Expected result:** Helix profit leaves GST out.
 
@@ -158,13 +158,13 @@
 
 **Step 3.** EU: for parcels up to 150 euros, use IOSS (import one stop shop). You charge EU VAT at checkout and file in one country. Usually you use an EU agent (see [EU VAT One Stop Shop](https://vat-one-stop-shop.ec.europa.eu/one-stop-shop_en)).
 
-**Expected result:** EU VAT is collected at checkout. From 1 July 2026, the EU also charges 3 euros duty per type of item in low-value parcels (see [European Commission](https://commission.europa.eu/news-and-media/news/ensuring-fairness-and-safety-eur3-customs-duty-low-value-parcels-2026-06-29_en)).
+**Expected result:** EU VAT is collected at checkout. From 1 July 2026, the EU also charges a temporary 3 euros duty per type of item in low-value parcels (see [European Commission](https://commission.europa.eu/news-and-media/news/ensuring-fairness-and-safety-eur3-customs-duty-low-value-parcels-2026-06-29_en)).
 
 **Step 4.** Canada: from overseas, the customer pays GST/HST and duty on delivery unless you ship DDP. With stock in a Canadian warehouse, register for GST/HST once those sales pass C$30,000 in 12 months (see [CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy-gsthst/find-out-need-register.html)).
 
 **Expected result:** You know who pays Canadian tax and whether you must register.
 
-**Step 5.** Use Shopify Markets to show local prices and collect duties at checkout where available.
+**Step 5.** Use Shopify Markets to show local prices. Collect duties at checkout in **Settings > Taxes and duties** where available (see [Shopify: collecting duties](https://help.shopify.com/manual/markets/duties-and-import-taxes/charging-duties)).
 
 **Expected result:** Shoppers see a full local price.
 

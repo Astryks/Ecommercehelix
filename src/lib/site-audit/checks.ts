@@ -102,6 +102,15 @@ const WALLETS: [string, RegExp][] = [
   ["Shop Pay", /shop-?pay|shopify-payment-button/i], ["Apple Pay", /apple.?pay/i], ["Google Pay", /google.?pay|gpay/i], ["PayPal", /paypal/i],
   ["Afterpay", /afterpay|clearpay/i], ["Klarna", /klarna/i], ["Zip", /\bzip(?:pay|money)?\b|zip\.co/i], ["Affirm", /affirm/i],
 ];
+/** Names apps by kind, not by vendor, in what we show the owner (Shop Pay is Shopify's own). */
+const BNPL = new Set(["Afterpay", "Klarna", "Zip", "Affirm"]);
+function walletText(found: string[]): string {
+  const parts: string[] = [];
+  if (found.includes("Shop Pay")) parts.push("Shop Pay");
+  if (found.some((w) => w !== "Shop Pay" && !BNPL.has(w))) parts.push(parts.length ? "other express wallets" : "express wallets");
+  if (found.some((w) => BNPL.has(w))) parts.push("buy now pay later");
+  return parts.join(", ").replace(/, ([^,]*)$/, " and $1");
+}
 const hits = (html: string, list: [string, RegExp][]) => list.filter(([, re]) => re.test(html)).map(([n]) => n);
 
 const money = (s?: string | null) => (s == null || s === "" ? null : Number.isFinite(Number(s)) ? Number(s) : null);
@@ -216,8 +225,8 @@ export function findingsFrom(f: Facts, i: Pick<AuditInput, "url">): Finding[] {
     const name = `"${cut(p.title, 60)}"`;
     if (p.words < 80) add({ id: "thin-description", severity: "high", title: "Your product description is thin", quote: `${name} has only ${p.words} words of description.`, fix: "Best sellers usually have 150+ words: who it's for, what it's made of, sizing or fit, care, and delivery. Answer the top 3 questions people ask you.", lesson: "9.5" });
     if (!p.rating && f.reviewApps.length === 0) add({ id: "no-reviews", severity: "high", title: "No reviews on your product page", quote: `We saw no review app or star rating on ${name}.`, fix: "Add a reviews app and ask your last 20 customers for a review. Show the stars near the price.", lesson: "9.2" });
-    else if (!p.reviewsBeforeBuy) add({ id: "reviews-low", severity: "medium", title: "Your reviews sit below the add to cart button", quote: `On ${name} the first rating we saw comes after the buy button${f.reviewApps.length ? ` (${f.reviewApps.join(", ")})` : ""}.`, fix: "Put a star rating and review count next to the price, so shoppers see proof before they decide.", lesson: "9.2" });
-    if (p.productLd && !p.rating && f.reviewApps.length) add({ id: "no-rating-schema", severity: "low", title: "Google can't see your star rating", quote: `${name} has product data for Google but no rating in it, although you use ${f.reviewApps.join(", ")}.`, fix: "Turn on rich snippets or structured data in your reviews app settings so stars can show in search results.", lesson: "9.2" });
+    else if (!p.reviewsBeforeBuy) add({ id: "reviews-low", severity: "medium", title: "Your reviews sit below the add to cart button", quote: `On ${name} the first rating we saw comes after the buy button.`, fix: "Put a star rating and review count next to the price, so shoppers see proof before they decide.", lesson: "9.2" });
+    if (p.productLd && !p.rating && f.reviewApps.length) add({ id: "no-rating-schema", severity: "low", title: "Google can't see your star rating", quote: `${name} has product data for Google but no rating in it, although you use a reviews app.`, fix: "Turn on rich snippets or structured data in your reviews app settings so stars can show in search results.", lesson: "9.2" });
     if (!p.productLd) add({ id: "no-product-ld", severity: "low", title: "Your product page has no product data for Google", quote: `We found no Product structured data on ${name}.`, fix: "Most current Shopify themes add this for you. If yours doesn't, ask your theme developer or use a free structured data app.", lesson: "9.2" });
     if (!p.shippingMention) add({ id: "pdp-no-shipping", severity: "high", title: "Shipping isn't mentioned on your product page", quote: `${name} doesn't mention shipping or delivery anywhere we could read.`, fix: "Surprise shipping costs are the top reason people leave at checkout. Add one line under the price: cost, free shipping amount and delivery time.", lesson: "9.11" });
     if (!p.returnsMention && !f.trust.returnsPage) add({ id: "no-returns", severity: "medium", title: "No returns or guarantee message", quote: `We saw no returns, refund or guarantee text on ${name} or a returns link on your home page.`, fix: "Add a short, clear guarantee near the buy button and a returns page in your footer.", lesson: "9.2" });
@@ -228,8 +237,8 @@ export function findingsFrom(f: Facts, i: Pick<AuditInput, "url">): Finding[] {
     if (p.images > 30) add({ id: "many-images", severity: "low", title: "A lot of images on one product", quote: `${name} has ${p.images} images.`, fix: "Keep the best 6 to 10. Too many slows the page on phones.", lesson: "9.4" });
     else if (p.images < 3) add({ id: "few-images", severity: "medium", title: "Few product photos", quote: `${name} has ${p.images} image${p.images === 1 ? "" : "s"}.`, fix: "Aim for 5 to 8: product on white, in use, close-up detail, scale or sizing, and a customer photo.", lesson: "9.2" });
     if (p.kb > 600) add({ id: "heavy-pdp", severity: "medium", title: "Your product page is heavy", quote: `The page for ${name} is ${p.kb} KB of HTML.`, fix: "Remove unused apps and widgets from product pages and test the speed on your phone.", lesson: "9.4" });
-    if (p.wallets.length === 0) add({ id: "no-wallets", severity: "medium", title: "No express payment or buy now pay later shown", quote: `We saw no Shop Pay, Apple Pay, PayPal or buy now pay later on ${name}.`, fix: "Turn on express checkout buttons in your payment settings. They cut typing on phones.", lesson: "9.2" });
-    else add({ id: "wallets-ok", severity: "good", title: "Express payments are shown", quote: `${name} shows ${p.wallets.join(", ")}.`, fix: "" });
+    if (p.wallets.length === 0) add({ id: "no-wallets", severity: "medium", title: "No express payment or buy now pay later shown", quote: `We saw no Shop Pay, express wallet or buy now pay later on ${name}.`, fix: "Turn on express checkout buttons in your payment settings. They cut typing on phones.", lesson: "9.2" });
+    else add({ id: "wallets-ok", severity: "good", title: "Express payments are shown", quote: `${name} shows ${walletText(p.wallets)}.`, fix: "" });
   } else if (!p) add({ id: "no-product", severity: "medium", title: "We couldn't open a product page", quote: `We couldn't find or open a product page from ${host}.`, fix: "Make sure your home page links to your best seller. Shoppers should reach a product in one tap." });
 
   if (thinHome) { /* skip */ } else if (f.shippingText) {
@@ -238,8 +247,8 @@ export function findingsFrom(f: Facts, i: Pick<AuditInput, "url">): Finding[] {
     else add({ id: "shipping-ok", severity: "good", title: "Free shipping is clear on your home page", quote: `"${cut(f.shippingText)}"`, fix: "" });
   } else add({ id: "no-shipping-msg", severity: "medium", title: "No free shipping message on your home page", quote: `We saw no free shipping or delivery message on ${host}'s home page.`, fix: "If you offer free shipping over an amount, say it in the announcement bar. If you don't, consider it, set a little above your average order.", lesson: "9.11" });
 
-  if (thinHome) { /* skip */ } else if (f.emailCapture.length === 0) add({ id: "no-capture", severity: "medium", title: "No email sign-up tool seen", quote: "We didn't see Klaviyo, Privy, Omnisend or another sign-up tool in your home page source.", fix: "Most visitors don't buy on the first visit. A sign-up offer lets you email them, and it's usually the cheapest sale you'll make.", lesson: "10.2" });
-  else add({ id: "capture-ok", severity: "good", title: "You collect emails", quote: `We saw ${f.emailCapture.join(", ")} on your home page.`, fix: "" });
+  if (thinHome) { /* skip */ } else if (f.emailCapture.length === 0) add({ id: "no-capture", severity: "medium", title: "No email sign-up tool seen", quote: "We didn't see an email sign-up form or tool in your home page source.", fix: "Most visitors don't buy on the first visit. A sign-up offer lets you email them, and it's usually the cheapest sale you'll make.", lesson: "10.2" });
+  else add({ id: "capture-ok", severity: "good", title: "You collect emails", quote: `We saw ${f.emailCapture.includes("Shopify Forms") ? "Shopify Forms" : "an email sign-up tool"} on your home page.`, fix: "" });
 
   if (!thinHome && !f.pixels.includes("Meta pixel")) add({ id: "no-meta-pixel", severity: f.pixels.includes("Google Tag Manager") ? "low" : "medium", title: "No Meta pixel seen in your page source", quote: f.pixels.length ? `We saw ${f.pixels.join(", ")}, but not the Meta pixel. It may load through Tag Manager or Shopify's Facebook app.` : "We saw no tracking pixels in your page source. They may load through an app.", fix: "If you run or plan to run Meta ads, check in Meta Events Manager that purchases are being tracked.", lesson: "20.9" });
   if (!thinHome && !f.trust.contact) add({ id: "no-contact", severity: "low", title: "No contact link on your home page", quote: `We found no link to a contact page on ${host}.`, fix: "Put a contact link in your footer. Being easy to reach builds trust.", lesson: "9.2" });

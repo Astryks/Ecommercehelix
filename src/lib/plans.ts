@@ -88,14 +88,14 @@ export const PLANS: Plan[] = [
       "Everything in Starter",
       "The full course: Grow and Run goals (margin, returning customers, a $1M-a-year pace, scaling)",
       "90-day plans, a weekly meeting agenda and handover playbooks for a team",
-      "Email flow blueprints: all 9 flows with full draft copy to paste into Klaviyo or Shopify Email",
+      "Email flow blueprints: all 9 flows with full draft copy to paste into your email tool (for example Shopify Email)",
       "Google Ads guided setup: Performance Max and Search, step by step",
       "150 AI write-ups a month",
       "Weekly report page: what is coming up and your next prep steps (a full personal weekly report is coming)",
     ],
     doItForMe: [
       "Everything Starter does for you.",
-      "Writes all 9 email flows (timing, discount rules and every message) ready for you to paste into your email platform. Helix does not connect to Klaviyo or Shopify Email yet.",
+      "Writes all 9 email flows (timing, discount rules and every message) ready for you to paste into your email platform. Helix does not connect to email tools yet.",
     ],
     week1: [
       "Day 1: margin and repeat-rate review",

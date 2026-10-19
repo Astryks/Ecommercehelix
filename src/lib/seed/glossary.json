@@ -329,14 +329,14 @@
  {
   "term": "Express wallets",
   "aka": [],
-  "means": "One-tap payment options like Apple Pay, Google Pay and Shop Pay."
+  "means": "One-tap payment options, like Shop Pay or the wallet on a shopper's phone."
  },
  {
   "term": "Buy now pay later",
   "aka": [
    "BNPL"
   ],
-  "means": "Payment options like Afterpay or Klarna that let shoppers split the cost."
+  "means": "Payment options that let shoppers split the cost into smaller payments."
  },
  {
   "term": "Free shipping threshold",

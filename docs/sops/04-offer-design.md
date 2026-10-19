@@ -14,12 +14,12 @@
 ## Five ways to make an offer stronger
 
 1. **Promise.** What does the customer get, and who do they become? Write both the "move towards" outcome (look good, save time, feel confident) and the "move away from" pain (embarrassment, waste, discomfort). Add the change in how others see them.
-2. **Belief.** List every reason someone would not buy. Answer each one with evidence: demo, comparison, reviews, guarantee, expert or creator proof, founder story. For a high-priced product, a short home trial can lift conversion a lot while returns stay low. Test it.
+2. **Belief.** List every reason someone would not buy. Answer each one with evidence: demo, comparison, reviews, guarantee, expert or creator proof, founder story. For a high-priced product, a short home trial can lift conversion. Test it, and track both sales and returns.
 3. **Urgency (real only).** Limited production runs, preorders shipping within a few weeks, seasonal ranges, low-stock alerts to recent viewers and VIPs. Never fake timers or fake stock counts.
 4. **Safety.** Remove risk: easy returns, fast dispatch promise, visible support, sizing tools, reviews with photos, a real human behind the brand. Generous returns often raise sales more than they cost. Measure your return rate to check.
 5. **Easy yes.** Price and framing:
    - Cost-per-use framing ("less than a coffee a week").
-   - Small price rises within the same band often go unnoticed (for example $69 to $75). Test it.
+   - Small price rises within the same band can go unnoticed (for example $69 to $75). Test it.
    - Anchors and decoys: show a premium option so the core option looks sensible; show bundle savings next to single price.
    - Free shipping versus a lower price: test which your customers value more.
    - Buy-now-pay-later on higher prices.
@@ -36,7 +36,7 @@
 ## Decision rules
 
 - Prefer value-adds (gift, bundle, guarantee, faster shipping) over straight discounts.
-- Above about $100, dollar-off usually reads bigger than percent-off. Below $100, percent-off often reads bigger. Test.
+- A common rule of thumb: above about $100, dollar-off reads bigger than percent-off. Below $100, percent-off often reads bigger. Test.
 - A gift with purchase should have high perceived value and low landed cost.
 - Never run more than 3 or 4 big store-wide discount events a year (SOP 15).
 - If returns exceed 15% after a risk-reversal change, check product quality and sizing before reverting.
@@ -45,10 +45,10 @@
 
 | Helix can do (with approval for any change) | The user does |
 | --- | --- |
-| Mine objections from reviews and tickets (read-only) | Decide which offers the business can honour |
+| Give the steps to list and group objections (Lesson 3.3) | Decide which offers the business can honour |
 | Draft offer copy, guarantee wording, bundle names | Approve price changes and policies |
-| Draft product page offer block for preview | Set up fulfilment for gifts and bundles |
-| Set up an A/B test via a supported testing app (Growth, beta) | Approve the test start |
+| Draft product page offer block copy to paste | Set up fulfilment for gifts and bundles |
+| Write the A/B test plan (what to change, what to measure, for how long) | Set up and start the test in their testing app |
 
 **Done when:** the weakest lever has a live test and a review date.
 
