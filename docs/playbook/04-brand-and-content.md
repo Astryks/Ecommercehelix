@@ -250,6 +250,8 @@
 
 **Expected result:** Product is on its way to a wide group of creators.
 
+**Watch out:** Ask creators to say clearly in their posts that the product was a gift. Ad and consumer rules expect it (see [FTC: disclosures for influencers](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers)).
+
 **Step 2.** Pay the best creators for usage rights for a set time, for example 3 months. Usage rights mean you may use their content in your ads.
 
 **Expected result:** You have signed rights to run their content as ads.

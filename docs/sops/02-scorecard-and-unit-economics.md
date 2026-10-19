@@ -16,7 +16,7 @@
    - Landed product cost as a % of revenue (product, freight in, duties).
    - Fulfilment and shipping per order (3PL pick/pack plus postage, net of shipping charged).
    - Packaging per order.
-   - Payment fees (if unknown, use about 2.6% blended). Rates vary by country and plan. For example, Shopify Payments Basic charges 2.9% + 30¢ online in the US. In Australia it is 1.7% + 30¢ for standard domestic cards (see [Shopify: pricing](https://www.shopify.com/pricing)). Use your own payout reports once you have them.
+   - Payment fees (if unknown, use about 2.6% blended). Rates vary by country and plan. For example, Shopify Payments Basic charges 2.9% + 30¢ online in the US. In Australia it is 1.7% + 30¢ for standard domestic cards (see [Shopify: US pricing](https://www.shopify.com/pricing) and [Shopify: AU pricing](https://www.shopify.com/au/pricing)). Use your own payout reports once you have them.
    - Other per-order costs (marketplace fees, inserts, gifts with purchase).
 2. **Fixed monthly costs:**
    - Staff and contractors (including the founder's pay if they take one).
@@ -61,10 +61,10 @@
 
 | Helix can do | The user does |
 | --- | --- |
-| Pull revenue, orders, sessions, spend daily (read-only connections, no approval needed after connect) | Enter cost drivers once, confirm them quarterly |
+| Pull Shopify orders, sales and refunds and Meta spend daily (read-only connections, no approval needed after connect). Sessions and other channels' spend are typed in or imported | Enter cost drivers once, confirm them quarterly |
 | Calculate ratios and target MER | Decide target net profit % |
 | Flag anomalies and tracking mismatches | Fix accounting categories with their bookkeeper |
-| Send a morning scorecard push or email | Read it daily |
+| Send a Monday scorecard email (push reminders are not sent yet) | Check Today each morning |
 
 **Done when:** the scorecard shows yesterday's estimated profit and a target MER the user agrees with.
 

@@ -64,7 +64,7 @@
 "1.10": {"intro": "A simple sheet can do the maths for you. You just type what happened.",
  "steps": [
   {"say": "Download the [Helix tracking sheet](/downloads/helix-metrics-tracker.xlsx) and save it on your Desktop.", "check": "You have a file called helix-metrics-tracker.xlsx.", "lost": "Click the link. Save the file."},
-  {"say": "Open it. Excel or Numbers: double-click it. Google Sheets: open a blank sheet, click **File**, **Import**, **Upload**, and pick the file.", "check": "You see a tab called **Start here**.", "lost": "Double-click the file to open it."},
+  {"say": "Open it. Spreadsheet app on your computer: double-click it. Online spreadsheet: open a blank sheet, click **File**, **Import**, **Upload**, and pick the file.", "check": "You see a tab called **Start here**.", "lost": "Double-click the file to open it."},
   {"say": "Click the **Daily** tab at the bottom.", "check": "You see yellow boxes (you type) and blue boxes (they work themselves out).", "lost": "Click **Daily** at the bottom."},
   {"say": "In the first yellow row, type yesterday's date in **Date**.", "check": "The date shows like 2026-10-12.", "lost": "Type yesterday's date."},
   {"say": "Type yesterday's sales in **Sales**. Find it in Shopify **Analytics** under **Net sales**. Total sales includes tax and shipping.", "check": "A number shows in Sales.", "lost": "Copy yesterday's sales into **Sales**."},

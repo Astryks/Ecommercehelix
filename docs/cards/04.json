@@ -64,7 +64,7 @@
  ]},
 "4.9": {"intro": "Creators can spread your brand fast. Send widely, then pay to run the best posts as ads.",
  "steps": [
-  {"say": "Send free product to 20 or more creators who match your customer.", "check": "Product is on its way to lots of creators.", "lost": "Send product to five creators to start."},
+  {"say": "Send free product to 20 or more creators who match your customer.", "check": "Product is on its way to lots of creators.", "careful": "Ask creators to say in their posts that it was a gift.", "lost": "Send product to five creators to start."},
   {"say": "Pay the best ones for usage rights (permission to use their video in your ads) for a set time, like 3 months.", "check": "You have signed permission to run their content as ads.", "lost": "Ask your best creator for permission to use their video in ads. Get it in writing."},
   {"say": "Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand. See Modules 5, 7 and 19.", "check": "The ads are live and you can compare them with your own ads.", "lost": "Turn one creator video into an ad."}
  ]}

@@ -109,7 +109,7 @@
 | Product cost % | What one item costs to land in your warehouse (the product, plus freight to you, plus import duties), divided by its selling price. Average it across what you sell. If your sales mix changes a lot, weight it by units sold in the last 90 days. |
 | Fulfilment and shipping per order | What your warehouse or 3PL (a company that packs and ships for you) charges to pick and pack, plus postage. Take away what customers pay you for shipping. |
 | Packaging per order | Box or mailer, tissue paper, inserts. |
-| Payment fees | What Shopify Payments, Stripe or PayPal charge. If you do not know, use 2.6%. Your payment reports show the real figure. |
+| Payment fees | What Shopify Payments and any other payment provider charge. If you do not know, use 2.6%. Your payment reports show the real figure. |
 | Other per-order costs | Marketplace commission, a free gift with each order, shipping protection you pay for, buy now pay later fees. |
 
 **Common questions**
@@ -294,7 +294,7 @@ Want to add every cost too? Use **Your numbers > Fill in a day** instead.
 
 1. **Product cost (COGS):** making or buying the item.
 2. **Freight and duty:** getting it from the factory to you. Product cost plus freight and duty is your **landed cost**. Sales minus landed cost is **gross profit**, and as a share of sales it is **gross margin**.
-3. **Payment fees:** what Shopify Payments, PayPal or buy now pay later keep. On Shopify's Basic plan, Australian stores pay 1.7% plus 30 cents on local cards. US stores pay 2.9% plus 30 cents. Overseas cards and other plans differ (see [Shopify: AU pricing](https://www.shopify.com/au/pricing) and [Shopify: US pricing](https://www.shopify.com/pricing)).
+3. **Payment fees:** what Shopify Payments, other payment providers or buy now pay later keep. On Shopify's Basic plan, Australian stores pay 1.7% plus 30 cents on local cards. US stores pay 2.9% plus 30 cents. Overseas cards and other plans differ (see [Shopify: AU pricing](https://www.shopify.com/au/pricing) and [Shopify: US pricing](https://www.shopify.com/pricing)).
 4. **Packaging:** mailer, box, tissue and inserts.
 5. **Shipping to the customer:** the postage you pay. What is left now is **profit before marketing**, the money one order leaves to pay for ads and bills.
 6. **Marketing:** ads and other marketing. What is left now is **contribution**.
@@ -405,8 +405,8 @@ Working it out step by step:
 
 **Step 2.** Open it in the app you like.
 
-- Excel or Numbers: double-click the file.
-- Google Sheets: go to sheets.google.com and open a blank sheet.
+- Spreadsheet app on your computer: double-click the file.
+- Online spreadsheet: open a blank sheet.
 - Click **File**, then **Import**.
 - Click **Upload** and pick the file.
 
@@ -439,7 +439,7 @@ Working it out step by step:
 
 1. Type what the products cost you in **Product cost**.
 2. Type what you paid to ship in **Shipping cost**.
-3. Type card and PayPal fees in **Payment fees**. Not sure of any number? Use the one from your Helix **Profit** page.
+3. Type card and other payment fees in **Payment fees**. Not sure of any number? Use the one from your Helix **Profit** page.
 
 **Expected result:** The blue **Profit** box fills in. Green means you made money. Red means you lost money.
 
