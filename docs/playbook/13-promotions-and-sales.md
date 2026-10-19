@@ -195,7 +195,7 @@ Who each sale campaign leaves out:
 | --- | --- | --- |
 | Copy of your best cold campaign | New people | Past buyers |
 | Cold with combined audiences | New people from your mixed interest and lookalike audiences | Past buyers and recent engagers |
-| Mixed (automatic) | Anyone; Meta decides | Nobody. Meta has been changing past-customer spend limits, so check Ads Manager |
+| Mixed (automatic) | Anyone; Meta decides | Nobody. Meta is retiring its old past-customer spend cap, so check Ads Manager |
 | Warm | Site visitors, engagers and video viewers (180 days) | Buyers |
 | Hot | Added to cart (14 days) or started checkout (7 days) | Buyers from the last 7 days |
 

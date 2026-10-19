@@ -35,7 +35,7 @@
 2. **Gift at scale:** small brands can send dozens of gifts a month. Many will not post, so track who does.
 3. **Pay the best:** offer a flat fee for ad-usage rights to the best performers.
 4. **Affiliate:** give the creator a code (for example 10% off for their audience) and a commission (for example 15%).
-5. **Partnership ads:** run creator posts as ads from the creator's handle. Meta's own studies report lower costs per purchase when these sit inside normal campaigns. See the Trends feed for current data.
+5. **Partnership ads:** run creator posts as ads from the creator's handle. Meta reports they can lower cost per purchase inside normal campaigns. Treat that as a reason to test. See the Trends feed for current data.
 6. **Reuse:** use creator Q&A and comments to find objections and answer them in new ads.
 
 ## Briefs from customer words
