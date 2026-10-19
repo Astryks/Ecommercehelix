@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
-  keywords: ["e-commerce growth app", "Shopify growth tool", "DIY e-commerce marketing", "e-commerce coach app", "alternative to hiring an e-commerce agency", "self-serve e-commerce growth software", "e-commerce profit dashboard", "daily growth plan for online stores"],
+  keywords: ["e-commerce growth app", "Shopify growth tool", "DIY e-commerce marketing", "alternative to hiring an e-commerce agency", "self-serve e-commerce growth software", "e-commerce profit dashboard", "daily growth plan for online stores"],
   alternates: { canonical: "/" },
   openGraph: { siteName: SITE_NAME, type: "website", locale: "en_AU", url: "/" },
   twitter: { card: "summary_large_image" },
