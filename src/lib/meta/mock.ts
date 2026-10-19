@@ -61,16 +61,16 @@ export const mockTransport: Transport = async (method: Method, url: string, body
   }
   if (path === "me/adaccounts")
     return ok({ data: [
-      { id: ACT[0], account_id: ACT[0].slice(4), name: "Linen Co. AU (mock)", currency: "AUD", timezone_name: "Australia/Sydney", account_status: 1 },
-      { id: ACT[1], account_id: ACT[1].slice(4), name: "Linen Co. US (mock)", currency: "USD", timezone_name: "America/Los_Angeles", account_status: 1 },
+      { id: ACT[0], account_id: ACT[0].slice(4), name: "Helix Linen AU (mock)", currency: "AUD", timezone_name: "Australia/Sydney", account_status: 1 },
+      { id: ACT[1], account_id: ACT[1].slice(4), name: "Helix Linen US (mock)", currency: "USD", timezone_name: "America/Los_Angeles", account_status: 1 },
     ] });
   if (path === "me/accounts")
-    return ok({ data: [{ id: "100000000000333", name: "Linen Co. (mock page)", instagram_business_account: { id: "17841400000000444", username: "linenco.mock" } }] });
+    return ok({ data: [{ id: "100000000000333", name: "Helix Linen (mock page)", instagram_business_account: { id: "17841400000000444", username: "helixlinen.mock" } }] });
 
   const m = path.match(/^(act_\d+)\/(\w+)$/);
   if (m && method === "GET") {
     const edge = m[2];
-    if (edge === "adspixels") return ok({ data: [{ id: "555000000000111", name: "Linen Co. Pixel (mock)", last_fired_time: new Date().toISOString() }] });
+    if (edge === "adspixels") return ok({ data: [{ id: "555000000000111", name: "Helix Linen Pixel (mock)", last_fired_time: new Date().toISOString() }] });
     if (edge === "campaigns")
       return ok({ data: META_ROWS.map((c, i) => ({
         id: campId(i), name: c.name, objective: "OUTCOME_SALES", status: c.status === "Paused" ? "PAUSED" : "ACTIVE",

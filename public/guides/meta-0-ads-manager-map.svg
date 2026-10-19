@@ -10,7 +10,7 @@
 <rect x="36" y="132" width="24" height="24" rx="6" fill="#DEDCD4"/>
 <rect x="36" y="180" width="24" height="24" rx="6" fill="#DEDCD4"/>
 <rect x="36" y="228" width="24" height="24" rx="6" fill="#DEDCD4"/>
-<rect x="96" y="76" width="220" height="30" rx="6" fill="#ECEBE5" stroke="#C9C6BD"/><text x="108" y="96" font-size="13" fill="#3A3634">Ad account: Your Store ▾</text>
+<rect x="96" y="76" width="220" height="30" rx="6" fill="#ECEBE5" stroke="#C9C6BD"/><text x="108" y="96" font-size="13" fill="#3A3634">Ad account: Helix Linen ▾</text>
 <rect x="620" y="76" width="220" height="30" rx="6" fill="#ECEBE5" stroke="#C9C6BD"/><text x="632" y="96" font-size="13" fill="#3A3634">Last 7 days ▾</text>
 <rect x="96" y="122" width="120" height="34" rx="6" fill="#1A1718" stroke="#C9C6BD"/><text x="110" y="144" font-size="14" font-weight="600" fill="#fff">Campaigns</text>
 <rect x="226" y="122" width="120" height="34" rx="6" fill="#fff" stroke="#C9C6BD"/><text x="240" y="144" font-size="14" font-weight="600" fill="#3A3634">Ad sets</text>

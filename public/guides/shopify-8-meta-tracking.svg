@@ -17,16 +17,16 @@
 <text x="230" y="100" font-size="18" font-weight="800" fill="#1A1718" text-anchor="start">Facebook &amp; Instagram &gt; Settings</text>
 <rect x="230" y="120" width="580" height="200" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
 <text x="250" y="152" font-size="13" font-weight="600" fill="#55514C" text-anchor="start">Business account</text>
-<text x="470" y="152" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Your Brand</text>
+<text x="470" y="152" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Helix Linen</text>
 <text x="760" y="152" font-size="15" font-weight="800" fill="#008060" text-anchor="start">✓</text>
 <text x="250" y="192" font-size="13" font-weight="600" fill="#55514C" text-anchor="start">Ad account</text>
-<text x="470" y="192" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Your Brand Ads</text>
+<text x="470" y="192" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Helix Linen Ads</text>
 <text x="760" y="192" font-size="15" font-weight="800" fill="#008060" text-anchor="start">✓</text>
 <text x="250" y="232" font-size="13" font-weight="600" fill="#55514C" text-anchor="start">Facebook Page</text>
-<text x="470" y="232" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Your Brand</text>
+<text x="470" y="232" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Helix Linen</text>
 <text x="760" y="232" font-size="15" font-weight="800" fill="#008060" text-anchor="start">✓</text>
 <text x="250" y="272" font-size="13" font-weight="600" fill="#55514C" text-anchor="start">Pixel (dataset)</text>
-<text x="470" y="272" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Your Brand Pixel</text>
+<text x="470" y="272" font-size="13" font-weight="700" fill="#1A1718" text-anchor="start">Helix Linen Pixel</text>
 <text x="760" y="272" font-size="15" font-weight="800" fill="#008060" text-anchor="start">✓</text>
 <rect x="230" y="340" width="580" height="150" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
 <text x="250" y="370" font-size="14" font-weight="700" fill="#1A1718" text-anchor="start">Customer data sharing</text>

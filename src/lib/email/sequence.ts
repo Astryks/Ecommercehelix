@@ -2,7 +2,7 @@
  * The daily email sequence: 30 different emails, one a day from sign-up, then it starts again.
  * Two kinds, mixed: practical lessons from the Helix Playbook, and short founder stories.
  * Each email teaches one idea, gives one small action for today and links to one real lesson.
- * Founder facts are sourced in docs/email-sequence-sources.md. Prices are in US dollars.
+ * Founder facts are sourced in docs/email-sequence-sources.md. Stories name no brands or people (owner rule, 20 Oct 2026). Prices are in US dollars.
  * Pure data, so tests check every link against docs/playbook.
  */
 
@@ -35,8 +35,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "01-daily-profit-foundations", heading: "Lesson 1.6: A 2-minute morning routine", label: "Learn the 2-minute routine" },
   },
   {
-    kind: "founder", subject: "She cut the feet off her pantyhose", preview: "How Sara Blakely turned US$5,000 into Spanx.", title: "Founder story: Sara Blakely",
-    paras: ["Sara Blakely sold fax machines door to door for seven years.", "One day she wanted to wear white pants, but nothing underneath looked right. So she grabbed scissors and cut the feet off her pantyhose. It worked.", "She started Spanx in 2000 with US$5,000 of her own savings and no business degree. Factories told her no for two years. She kept asking until one said yes.", "Later, her product sat in a quiet corner of a big store. So she put it next to the tills herself. It sold so well that the store let her keep doing it."],
+    kind: "founder", subject: "She cut the feet off her pantyhose", preview: "How US$5,000 of savings became a famous brand.", title: "Founder story: the pantyhose idea",
+    paras: ["One founder sold fax machines door to door for seven years.", "One day she wanted to wear white pants, but nothing underneath looked right. So she grabbed scissors and cut the feet off her pantyhose. It worked.", "She started her shapewear brand in 2000 with US$5,000 of her own savings and no business degree. Factories told her no for two years. She kept asking until one said yes.", "Later, her product sat in a quiet corner of a big store. So she put it next to the tills herself. It sold so well that the store let her keep doing it."],
     action: "Look at your products and ask: which one do people really want? Check last month's sales for each one.",
     lesson: { slug: "03-offer-and-product", heading: "Lesson 3.7: Check people really want your product", label: "Check what people really want" },
   },
@@ -53,8 +53,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "01-daily-profit-foundations", heading: "Lesson 1.5: Your target MER and break-even numbers", label: "Find your break-even line" },
   },
   {
-    kind: "founder", subject: "Shoes in the trunk of a car", preview: "Nike started with a handshake and US$500 each.", title: "Founder story: Phil Knight",
-    paras: ["Phil Knight was a runner. His coach was Bill Bowerman.", "In 1964 they shook hands, put in US$500 each and ordered 300 pairs of running shoes. They called the company Blue Ribbon Sports.", "Phil sold the shoes from the trunk of his green car. He went to the people he knew: runners. Years later, the company became Nike.", "He did not start big. He started close to home, with people who already cared."],
+    kind: "founder", subject: "Shoes in the trunk of a car", preview: "A famous shoe brand started with a handshake and US$500 each.", title: "Founder story: shoes from a car",
+    paras: ["A young runner and his coach had an idea.", "In 1964 they shook hands, put in US$500 each and ordered 300 pairs of running shoes.", "The runner sold the shoes from the trunk of his green car. He went to the people he knew: runners. Years later, it became a giant sports brand.", "He did not start big. He started close to home, with people who already cared."],
     action: "Think of one way people near you could buy from you this week, like free pickup.",
     lesson: { slug: "22-shopify-store-setup", heading: "Lesson 22.18: Sell to people near you", label: "Sell to people near you" },
   },
@@ -71,8 +71,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "22-shopify-store-setup", heading: "Lesson 22.5: Product pages: titles, photos and descriptions", label: "Fix your product page" },
   },
   {
-    kind: "founder", subject: "From pizza delivery to Gymshark", preview: "A sewing machine, a garage and a smart idea at a show.", title: "Founder story: Ben Francis",
-    paras: ["At 19, Ben Francis delivered pizzas for Pizza Hut. He used that money to help start Gymshark in his parents' garage.", "He and his friend Lewis bought a sewing machine and a screen printer. His mum sent him videos to teach him how to sew.", "In 2013 they took their clothes to a fitness show. They had no money for ads. So they gave free clothes to fitness YouTubers they looked up to.", "Those creators wore the clothes in their videos. Sales jumped from about US$450 a day to about US$45,000 a day."],
+    kind: "founder", subject: "From pizza delivery to a gym clothing brand", preview: "A sewing machine, a garage and a smart idea at a show.", title: "Founder story: the garage gym brand",
+    paras: ["At 19, one founder delivered pizzas. He used that money to help start a gym clothing brand in his parents' garage.", "He and a friend bought a sewing machine and a screen printer. His mum sent him videos to teach him how to sew.", "In 2013 they took their clothes to a fitness show. They had no money for ads. So they gave free clothes to fitness YouTubers they looked up to.", "Those creators wore the clothes in their videos. Sales jumped from about US$450 a day to about US$45,000 a day."],
     action: "Search Instagram or TikTok for people who already talk about the problem your product fixes. Save five.",
     lesson: { slug: "19-creators-ugc-and-video-ads", heading: "Lesson 19.2: Finding the right creators", label: "Find the right creators" },
   },
@@ -89,8 +89,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "05-creative-strategy", heading: "Lesson 5.7: Hooks (first 0 to 3 seconds)", label: "Write better hooks" },
   },
   {
-    kind: "founder", subject: "The sweaty T-shirt that started a company", preview: "Kevin Plank, his grandma's basement and 500 shirts.", title: "Founder story: Kevin Plank",
-    paras: ["Kevin Plank played football at college. He hated how his cotton shirts got heavy with sweat.", "So in 1996 he made a better shirt. He worked from his grandma's basement and paid a garment maker to make 500 of them.", "He put the shirts in the trunk of his car and drove from college to college. His first big sale was 200 shirts at US$12 each.", "That first year, Under Armour made US$17,000 in sales. It started with one clear problem and a good maker."],
+    kind: "founder", subject: "The sweaty T-shirt that started a company", preview: "A grandma's basement and 500 shirts.", title: "Founder story: the sweaty T-shirt",
+    paras: ["One founder played football at college. He hated how his cotton shirts got heavy with sweat.", "So in 1996 he made a better shirt. He worked from his grandma's basement and paid a garment maker to make 500 of them.", "He put the shirts in the trunk of his car and drove from college to college. His first big sale was 200 shirts at US$12 each.", "That first year, his sportswear brand made US$17,000 in sales. It started with one clear problem and a good maker."],
     action: "Write a short list of exactly what you want your product made from and what it should cost you.",
     lesson: { slug: "14-inventory-cash-planning", heading: "Lesson 14.8: Finding and vetting suppliers", label: "Find a good maker" },
   },
@@ -107,7 +107,7 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "29-customers-partners-and-rhythm", heading: "Lesson 29.2: Find the worry behind the purchase", label: "Find the hidden worry" },
   },
   {
-    kind: "founder", subject: "Why were glasses so expensive?", preview: "Four friends asked a simple question and built Warby Parker.", title: "Founder story: Warby Parker",
+    kind: "founder", subject: "Why were glasses so expensive?", preview: "Four friends asked a simple question and built a glasses brand.", title: "Founder story: fairly priced glasses",
     paras: ["Four friends at business school asked a simple question. Why can glasses cost over US$700?", "They first planned to sell glasses for US$45. But their costs doubled, so that price could not work.", "So they asked lots of people what felt fair. US$100 felt not too pricey, but still good quality. That became the price.", "They launched in February 2010. Within four weeks, 20,000 people were on a waiting list."],
     action: "Ask three people in your target market what price feels fair for your product, and write down their answers.",
     lesson: { slug: "03-offer-and-product", heading: "Lesson 3.6: Pricing that is easy to accept", label: "Price it so it feels fair" },
@@ -125,8 +125,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "09-website-and-cro", heading: "Lesson 9.11: Shipping psychology", label: "Set free shipping the smart way" },
   },
   {
-    kind: "founder", subject: "One pair bought, one pair given", preview: "How a sad fact became Bombas.", title: "Founder story: Bombas",
-    paras: ["David Heath and Randy Goldberg read a fact online. Socks are the most requested clothing item at homeless shelters.", "They could not stop thinking about it. They spent two years making a really comfy sock.", "Then they made a promise: for every pair bought, one pair is given away. Their first goal was 1 million pairs in 10 years. They did it in about two and a half years.", "Their reason for existing was clear, so people knew why to pick them."],
+    kind: "founder", subject: "One pair bought, one pair given", preview: "How a sad fact became a sock brand.", title: "Founder story: one pair given",
+    paras: ["Two friends read a fact online. Socks are the most requested clothing item at homeless shelters.", "They could not stop thinking about it. They spent two years making a really comfy sock.", "Then they made a promise: for every pair bought, one pair is given away. Their first goal was 1 million pairs in 10 years. They did it in about two and a half years.", "Their reason for existing was clear, so people knew why to pick them."],
     action: "Write your brand promise in one sentence: why should someone pick you?",
     lesson: { slug: "04-brand-and-content", heading: "Lesson 4.1: The brand core", label: "Write your brand promise" },
   },
@@ -143,8 +143,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "29-customers-partners-and-rhythm", heading: "Lesson 29.4: Ask happy customers to refer a friend", label: "Start getting referrals" },
   },
   {
-    kind: "founder", subject: "She built the audience first", preview: "Emily Weiss had readers before she had products.", title: "Founder story: Emily Weiss",
-    paras: ["In 2010, Emily Weiss started a beauty blog called Into The Gloss. She asked women about their beauty routines.", "The site became known for those interviews.", "In 2014, her team launched Glossier, a beauty brand inspired by the people who use it.", "When the products arrived, people were already listening."],
+    kind: "founder", subject: "She built the audience first", preview: "She had readers before she had products.", title: "Founder story: audience first",
+    paras: ["In 2010, one founder started a beauty blog. She asked women about their beauty routines.", "The site became known for those interviews.", "In 2014, her team launched a beauty brand inspired by the people who read it.", "When the products arrived, people were already listening."],
     action: "Check how many people are on your email list today, and set a small goal to grow it.",
     lesson: { slug: "11-list-and-audience-growth", heading: "Lesson 11.1: Why build the list", label: "Grow your own audience" },
   },
@@ -161,8 +161,8 @@ export const SEQUENCE: SequenceEmail[] = [
     lesson: { slug: "13-promotions-and-sales", heading: "Lesson 13.13: Work out your sale numbers before you pick the discount", label: "Do the sale maths" },
   },
   {
-    kind: "founder", subject: "Two spikes an hour, US$1.50 each", preview: "Yvon Chouinard, a car full of gear and very little money.", title: "Founder story: Yvon Chouinard",
-    paras: ["In 1957, Yvon Chouinard bought an old forge and taught himself to be a blacksmith. He set up in a chicken coop in his parents' backyard.", "He made steel spikes for rock climbers. He could make two an hour and sold them for US$1.50 each.", "He sold them from the back of his car. Money was tight. Some weeks he lived on 50 cents to a dollar a day.", "Years later, he started Patagonia. In the early days, every dollar counted."],
+    kind: "founder", subject: "Two spikes an hour, US$1.50 each", preview: "A car full of gear and very little money.", title: "Founder story: two spikes an hour",
+    paras: ["In 1957, a young climber bought an old forge and taught himself to be a blacksmith. He set up in a chicken coop in his parents' backyard.", "He made steel spikes for rock climbers. He could make two an hour and sold them for US$1.50 each.", "He sold them from the back of his car. Money was tight. Some weeks he lived on 50 cents to a dollar a day.", "Years later, he started a well-known outdoor clothing brand. In the early days, every dollar counted."],
     action: "Pick one way to free up cash this month, like asking a supplier if you can pay a bit later.",
     lesson: { slug: "14-inventory-cash-planning", heading: "Lesson 14.3: Five cash levers", label: "Free up your cash" },
   },

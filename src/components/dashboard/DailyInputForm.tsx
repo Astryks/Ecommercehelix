@@ -32,7 +32,7 @@ const ADVANCED: Spec[] = [
   { f: "newCustomerOrders", label: "New-customer orders", where: "Reports > New vs returning customers, New column", example: "16", int: true, optional: true },
   { f: "newCustomerRevenue", label: "New-customer sales", where: "Reports > New vs returning customers, sales for new customers", example: "1400", money: true, optional: true },
   { f: "units", label: "Units sold", where: "Reports > Sales by product, Net quantity", example: "38", int: true, optional: true },
-  { f: "adOther", label: "Other ad spend", where: "Pinterest, Snapchat and other ad accounts", example: "0", money: true, optional: true },
+  { f: "adOther", label: "Other ad spend", where: "Pinterest and other ad accounts", example: "0", money: true, optional: true },
   { f: "otherMarketing", label: "Other marketing", where: "Creators, email tool, agency (per day)", example: "25", money: true, optional: true },
   { f: "metaRevenue", label: "Meta-attributed sales", where: "Meta Ads Manager > Purchases conversion value", example: "900", money: true, optional: true },
   { f: "googleRevenue", label: "Google-attributed sales", where: "Google Ads > Conv. value", example: "320", money: true, optional: true },

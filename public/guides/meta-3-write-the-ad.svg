@@ -22,7 +22,7 @@
 <rect x="96" y="160" width="420" height="460" rx="10" fill="#fff" stroke="#DEDCD4" stroke-width="1"/>
 <text x="116" y="190" font-size="12" font-weight="600" fill="#55514C" text-anchor="start">Identity</text>
 <rect x="116" y="198" width="380" height="34" rx="6" fill="#fff" stroke="#C9C6BD" stroke-width="1"/>
-<text x="126" y="220.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">Your Facebook Page · Your Instagram</text>
+<text x="126" y="220.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">Helix Linen Page · @helixlinen</text>
 <text x="116" y="262" font-size="12" font-weight="600" fill="#55514C" text-anchor="start">Media</text>
 <rect x="116" y="270" width="380" height="70" rx="6" fill="#F7F6F2" stroke="#C9C6BD" stroke-width="1"/>
 <text x="306" y="312" font-size="13" font-weight="600" fill="#55514C" text-anchor="middle">+ Add video or image</text>
@@ -34,7 +34,7 @@
 <text x="126" y="458.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">See what customers love</text>
 <text x="116" y="488" font-size="12" font-weight="600" fill="#55514C" text-anchor="start">Website URL</text>
 <rect x="116" y="496" width="380" height="34" rx="6" fill="#fff" stroke="#C9C6BD" stroke-width="1"/>
-<text x="126" y="518.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">https://yourstore.com</text>
+<text x="126" y="518.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">https://helixlinen.example</text>
 <text x="116" y="548" font-size="12" font-weight="600" fill="#55514C" text-anchor="start">URL parameters</text>
 <rect x="116" y="556" width="380" height="34" rx="6" fill="#fff" stroke="#C9C6BD" stroke-width="1"/>
 <text x="126" y="578.0" font-size="13" font-weight="400" fill="#1A1718" text-anchor="start">utm_source=facebook&amp;...</text>

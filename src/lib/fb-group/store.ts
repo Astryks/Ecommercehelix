@@ -55,12 +55,12 @@ export function seedDemoGroup() {
   if (hasDb || mem.length) return;
   const day = (d: number) => new Date(Date.now() - d * 86_400_000).toISOString();
   const rows: [string, string, string, GroupEventKind[]][] = [
-    ["d1", "Maya Chen", "maya@petalandpine.com", ["activated"]],
-    ["d2", "Jordan Okafor", "jordan@okaforgoods.com", ["activated"]],
-    ["d3", "Priya Nair", "priya@saltandsage.co", ["activated"]],
-    ["d4", "Tom Becker", "tom@trailcoffee.com", ["activated", "approved", "deactivated"]],
-    ["d5", "Lena Ruiz", "lena@ruizceramics.com", ["activated", "approved", "deactivated"]],
-    ["d6", "Sam Patel", "sam@patelprints.com", ["activated", "approved"]],
+    ["d1", "Maya Chen", "maya@helixflowers.example", ["activated"]],
+    ["d2", "Jordan Okafor", "jordan@helixgoods.example", ["activated"]],
+    ["d3", "Priya Nair", "priya@helixspice.example", ["activated"]],
+    ["d4", "Tom Becker", "tom@helixcoffee.example", ["activated", "approved", "deactivated"]],
+    ["d5", "Lena Ruiz", "lena@helixceramics.example", ["activated", "approved", "deactivated"]],
+    ["d6", "Sam Patel", "sam@helixprints.example", ["activated", "approved"]],
   ];
   rows.forEach(([id, name, email, kinds], i) => { memPeople.set(id, { name, email }); kinds.forEach((k, j) => mem.push({ userId: id, kind: k, at: day(10 - i - j * 0.1) })); });
 }

@@ -19,6 +19,37 @@ _Last updated: 20 Oct 2026 (Sydney)._
 11b. **Content check (done 19 Oct):** the 6.12 past-buyer cap tip is gone; the cap now has one wording everywhere (see the second fact-check section below).
 12. **Replace re-rendered social images on Meta if those posts are already booked** (Instagram and Facebook). v2 post 47 (planned 29 Nov; the routine books it at the end of November): `docs/social/v2/static/post47-rest.png`. Check its real date on Meta. "Especially during BFCM" is right from 27 to 30 Nov; if it lands on 1 Dec or later, tell me. v3-25, 29, 33, 48 and 49 (planned 27 Dec, 31 Dec, 4 Jan, 19 Jan and 20 Jan) if Product's routine has already booked them. v3-48 and v3-49 are MP4s, and the v3-48 caption changed too (`docs/social/v3/manifest.csv`). v2 post 4 needs nothing (see the correction below).
 
+## Website brand sweep and Helix example names (20 Oct 2026)
+
+Owner asks: same no-third-party-brand rule on the website and app as the course; made-up example brands get a Helix name; non-profits named only as a source come out unless they set the rule or are a safety resource.
+
+**Third-party names removed or made generic**
+- Daily founder-story emails (`src/lib/email/sequence.ts`): the 8 stories no longer name brands or people (Spanx/Sara Blakely, Nike/Phil Knight/Bill Bowerman/Blue Ribbon Sports, Gymshark/Ben Francis/Pizza Hut, Under Armour/Kevin Plank, Warby Parker, Bombas/David Heath/Randy Goldberg, Glossier/Emily Weiss/Into The Gloss, Patagonia/Yvon Chouinard). Same facts, now "one founder", "a gym clothing brand" etc.; subjects, previews and titles stay unique. Sources stay in `docs/email-sequence-sources.md` (internal).
+- Trends feed (`src/lib/seed/trends.ts`): news-site sources Storyboard18, Adgully and ChannelX replaced by official pages (Meta for Developers: partnership ads; Meta for Developers: product videos in catalog ads; TikTok Ads help: automated keywords for search ads). Unverified figures (19% / 13%) and the in-app checkout claim dropped. `docs/product-design.md` table matched (also dropped thekeyword.co and enrichlabs.ai).
+- Daily form: "Pinterest, Snapchat and other ad accounts" -> "Pinterest and other ad accounts".
+- Learn path video titles (our copy): dropped "| The Unofficial Shopify Podcast" and "with Taylor Holiday".
+
+**Kept on purpose:** Stripe on billing, terms, privacy and support text (Helix's own payment processor / sub-processor); legal sub-processor lists; Helix's AI disclosure (Gemini via Vercel AI Gateway); vendor names in store-check detection regexes (never shown; the store check shows kinds of apps); crawler names in `robots.ts`; "Copilot triggers" in SOPs (Helix's own copilot); "Clarity" (a Helix Score area); "Canvas Cap" (a product); infrastructure names in engineering docs and `docs/pricing.md` (internal); test fixtures.
+
+**Non-profits**
+- Removed: W3C (Lesson 9.3 contrast step now says "at least WCAG AA, which is 4.5 to 1 for normal text" and links web.dev); Streamlined Sales Tax (Lesson 26.3 now cites the Illinois Department of Revenue bulletin FY 2026-12 for the dropped 200-sales test, next to California CDTFA); Cornell LII (3 links: 47 CFR 64.1200 in Lesson 10.10 and SOP 13, 16 CFR 233.1 in SOP 15, now ecfr.gov).
+- Kept: auDA (Lesson 22.2 states the .com.au eligibility rule auDA sets); Beyond Blue, Lifeline, Small Business Debt Helpline, 988 Suicide and Crisis Lifeline, Samaritans (founder wellbeing safety resources, Lesson 28.7).
+
+**Made-up names renamed to Helix names**
+- "Acme Linen Shirt, Men's, Relaxed Fit, Sand" -> "Helix Linen Shirt, ..." (Lesson 8.2 and card 08).
+- Meta mock accounts "Linen Co. AU/US (mock)", "Linen Co. (mock page)", "linenco.mock", "Linen Co. Pixel (mock)" -> "Helix Linen ..." (`src/lib/meta/mock.ts`).
+- Members group demo rows (`src/lib/fb-group/store.ts`): petalandpine.com, okaforgoods.com, saltandsage.co, trailcoffee.com, ruizceramics.com, patelprints.com -> helixflowers / helixgoods / helixspice / helixcoffee / helixceramics / helixprints `.example` (people's first names kept).
+- Store check title tip: "Brand: Linen bedding made in Portugal" -> "Helix Linen: Linen bedding made in Portugal".
+- Home page morning view label: "Example store" -> "Example store: Helix Linen".
+- Guide drawings (hand-edited SVG text, `build_guides.py` source updated but not re-run): "Ad account: Your Store", "Your Brand", "Your Brand Ads", "Your Brand Pixel", "My store pixel", "My store products", "Your Facebook Page · Your Instagram", "https://yourstore.com", "YOURBRAND" -> Helix Linen equivalents (helixlinen.example, @helixlinen, HELIX LINEN).
+- Not renamed: instruction placeholders "hello@yourbrand.com" and "[Brand]" in flow templates (they tell the owner to use their own brand), test fixtures ("Linen Co" in `tests/site-audit.test.ts`), people's names, places, generic products. No PNG images carried a made-up brand.
+
+**Owner items**
+- Learn path channels are creators or agencies, not official platform channels: Common Thread Collective, Arsh Sanwarwala | ThrillX, Dara Denney (2 videos), Ben Heath (2 videos), Aaron Young | Google Ads | Define Digital Academy, Commerce Roundtable, ethercycle. Official: Learn With Shopify (3 videos). Decide whether to keep, replace with official channels, or hide the channel name.
+- Social captions (not edited): `#klaviyo` in v2 `schedule.csv`/`schedule.md` and v3 `manifest.csv`/`src/data.py` (as before). No made-up brand names found in `docs/social`.
+
+**Checks:** `npm test` 49 files, 350 tests passed; `tsc` clean; `npm run lint` 0 errors (5 old warnings); `npm run build` ok; `check_links.py` ok; card JSON and guide SVGs parse.
+
 ## Second fact-check and no-third-party-branding pass (19 Oct 2026)
 
 Owner asks: fact check everything, keep the past-customer cap consistent, and no third-party branding in content (generic advice; platforms Helix teaches or connects to, government bodies and laws stay named). Six groups (A to F) checked the course, then one integration pass.
@@ -48,7 +79,7 @@ Owner asks: fact check everything, keep the past-customer cap consistent, and no
 - Calendar: when adding a 2031 lunar entry, Ramadan has a second start in 2030 (about late December), so add the second date then.
 - Click Frenzy date unverified; check the official site before the November nudge.
 - Meta creator marketplace may have been renamed "Creator Marketing Hub"; check Meta Business Help before relying on the old name.
-- Learn path: remaining videos come from creators and agencies (Common Thread Collective, ThrillX, Define Digital Academy, ethercycle and others). Decide whether channel names count as branding.
+- Learn path: remaining videos come from creators and agencies; see the channel list in the 20 Oct brand sweep section.
 
 ## Audit follow-ups fixed (17 Oct 2026, Sydney)
 

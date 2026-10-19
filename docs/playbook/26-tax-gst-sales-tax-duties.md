@@ -119,7 +119,7 @@
 
 **Expected result:** You have a list of physical nexus states.
 
-**Step 2.** Check each state's sales limit for economic nexus, often $100,000 a year. California and Texas use $500,000. New York uses over $500,000 plus over 100 sales. Many states have dropped their old 200-sales test, such as Illinois from 1 January 2026 (see [California CDTFA](https://cdtfa.ca.gov/industry/wayfair/) and [Streamlined Sales Tax](https://www.streamlinedsalestax.org/)).
+**Step 2.** Check each state's sales limit for economic nexus, often $100,000 a year. California and Texas use $500,000. New York uses over $500,000 plus over 100 sales. Many states have dropped their old 200-sales test, such as Illinois from 1 January 2026 (see [California CDTFA](https://cdtfa.ca.gov/industry/wayfair/) and [Illinois Department of Revenue](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)).
 
 **Expected result:** You know each state's threshold.
 

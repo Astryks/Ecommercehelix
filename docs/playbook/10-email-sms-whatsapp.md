@@ -283,7 +283,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Watch out:** In Australia, a text from a business name (sender ID) must be registered. Since 1 July 2026, unregistered names show as "Unverified" (see [ACMA: SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)). The Spam Act's consent and unsubscribe rules apply to texts too.
 
-**Watch out:** In the US, carriers block texts from numbers that are not registered (toll-free verification or 10DLC). Get clear written consent first, honour STOP replies, and send only 8am to 9pm local time. Some states, like Florida, are stricter (see [47 CFR 64.1200](https://www.law.cornell.edu/cfr/text/47/64.1200)).
+**Watch out:** In the US, carriers block texts from numbers that are not registered (toll-free verification or 10DLC). Get clear written consent first, honour STOP replies, and send only 8am to 9pm local time. Some states, like Florida, are stricter (see [47 CFR 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200)).
 
 ## Lesson 10.11: WhatsApp and chat commerce
 <!-- stage:convert -->
