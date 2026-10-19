@@ -314,8 +314,8 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. Do a test order on your phone.
-2. Turn on Apple Pay, Google Pay and Shop Pay if they are missing.
-3. Turn on buy now pay later (like Afterpay) if it suits your products.
+2. Turn on Shop Pay and the express wallets (such as Google Pay) that Shopify Payments offers, if they are missing.
+3. Turn on a buy now pay later option if it suits your products.
 4. Let people check out without an account.
 5. Show the delivery time before the last step.
 
@@ -435,7 +435,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Open Email automation in Helix.
 2. Read the welcome email drafts (Growth plan), or start from your email platform's template.
-3. Copy them into your email platform (Klaviyo or Shopify Email).
+3. Copy them into your email platform (for example Shopify Email).
 4. Check it is switched on in your email platform.
 5. Send yourself a test.
 

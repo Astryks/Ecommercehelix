@@ -365,8 +365,8 @@
    "lesson": "People who add to cart but do not pay often hit a surprise. It may be a shipping cost, few ways to pay, or a forced account.",
    "steps": [
     "Do a test order on your phone.",
-    "Turn on Apple Pay, Google Pay and Shop Pay if they are missing.",
-    "Turn on buy now pay later (like Afterpay) if it suits your products.",
+    "Turn on Shop Pay and the express wallets (such as Google Pay) that Shopify Payments offers, if they are missing.",
+    "Turn on a buy now pay later option if it suits your products.",
     "Let people check out without an account.",
     "Show the delivery time before the last step."
    ],
@@ -564,7 +564,7 @@
    "steps": [
     "Open Email automation in Helix.",
     "Read the welcome email drafts (Growth plan), or start from your email platform's template.",
-    "Copy them into your email platform (Klaviyo or Shopify Email).",
+    "Copy them into your email platform (for example Shopify Email).",
     "Check it is switched on in your email platform.",
     "Send yourself a test."
    ],
