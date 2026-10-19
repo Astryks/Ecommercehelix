@@ -113,7 +113,7 @@
 ## Lesson 3.4: Real scarcity
 <!-- stage:convert -->
 
-**Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law. In Australia, the ACCC has fined stores for fake countdown timers (see [ACCC: Emma Sleep penalty](https://www.accc.gov.au/media-release/bedding-supplier-emma-sleep-to-pay-a-total-of-15m-in-penalties-for-misleading-statements-about-sale-prices)).
+**Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law. In Australia, after ACCC action, the Federal Court ordered a bedding seller to pay $15 million in 2026. Part of it was for a sale countdown timer that kept resetting (see [ACCC: $15m penalty for misleading sale prices](https://www.accc.gov.au/media-release/bedding-supplier-emma-sleep-to-pay-a-total-of-15m-in-penalties-for-misleading-statements-about-sale-prices)).
 
 **Step 1.** Pick one honest way to show scarcity that fits your product. For example: a small batch with a number, or a preorder with a clear ship date. Or a colour for a short time, or low-stock alerts.
 
@@ -181,7 +181,7 @@
 
 **Expected result:** More shoppers pick your target option.
 
-**Step 5.** Test free shipping against a lower price. For pricier items, turn on buy now pay later (such as Afterpay or Klarna) in **Settings > Payments**. Shop Pay Installments is only for US, Canadian and UK stores (see [Shopify: Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
+**Step 5.** Test free shipping against a lower price. For pricier items, turn on a buy now pay later option in **Settings > Payments**. Shop Pay Installments is only for US, Canadian and UK stores (see [Shopify: Shop Pay Installments](https://help.shopify.com/en/manual/payments/shop-pay-installments)).
 
 **Expected result:** You know which one your customers prefer, and shoppers can pay in parts.
 

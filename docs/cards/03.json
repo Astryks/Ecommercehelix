@@ -22,7 +22,7 @@
  "steps": [
   {"say": "Pick one honest reason it might run out: a small batch, a preorder with a ship date, a short seasonal colour, or low stock.", "check": "You picked one you can stand behind.", "lost": "Pick one true reason it might run out."},
   {"say": "Write that reason in one sentence on the product page. For example: \"Batch 4 of 6: 300 made, ships 14 November\".", "check": "Shoppers can see why it might go.", "lost": "Write one honest sentence about why it might run out."},
-  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers. Regulators like the ACCC fine stores for them.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
+  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers. In Australia, a court ordered a $15 million penalty after ACCC action, partly over a countdown timer that kept resetting.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
  ]},
 "3.5": {"intro": "Shoppers worry about buying the wrong thing. Each worry you remove means more orders.",
  "steps": [
@@ -38,7 +38,7 @@
   {"say": "Try one higher price on one product for two weeks, for example $39 to $49.", "check": "You can compare sales and profit. Sometimes sales barely change and you keep more.", "lost": "Raise one price. Check again in two weeks."},
   {"say": "Show a bigger option, or the full bundle value, next to the single price.", "check": "The single price looks like better value.", "lost": "Put a bigger option next to your normal one."},
   {"say": "Add a middle option that makes your favourite option look like the obvious pick.", "check": "More shoppers choose your favourite option.", "lost": "Add a middle option. Watch what people pick."},
-  {"say": "Test free shipping against a lower price. Then turn on pay-in-parts (like Afterpay or Klarna) in **Settings > Payments** for pricier items. Shop Pay Installments is only for US, Canadian and UK stores.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
+  {"say": "Test free shipping against a lower price. Then turn on a pay-in-parts option in **Settings > Payments** for pricier items. Shop Pay Installments is only for US, Canadian and UK stores.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
  ]},
 "3.7": {"intro": "Not every product deserves your ad money. A quick monthly check shows which ones do.",
  "steps": [
