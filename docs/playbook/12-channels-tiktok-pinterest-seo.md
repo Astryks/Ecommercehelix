@@ -287,15 +287,83 @@
 
 **Watch out:** Results are slow. Most channels take months to grow. Judge it after 3 months, not 3 days.
 
+## Lesson 12.12: SEO basics
+<!-- stage:attract -->
+
+**Why this matters:** Search brings people who are already looking for what you sell, and you do not pay per click. Most of it comes down to a few basics done once and checked each month: the right page for each search, clear titles, tidy links and a sitemap Google can read. Lesson 12.8 then builds on this with keyword research, helpful articles and mentions on other sites.
+
+**Step 1.** Match each kind of search to the right kind of page. A search for a type of product ("linen shirt men") wants a collection page. A search for one exact item wants that product page. A question ("how to wash linen") wants a helpful article or an FAQ.
+
+**Expected result:** You have a short list of your main searches, each paired with one page on your store that answers it.
+
+**Step 2.** Find the words people really use, for free.
+
+1. In Google Search Console, open **Performance** and read the **Queries** list: the searches that already show your store (see [Search Console: Performance report](https://support.google.com/webmasters/answer/7576553)).
+2. Type your main product words into Google and note the suggestions that drop down as you type.
+3. Read the **People also ask** questions on the results page.
+
+**Expected result:** You have 5 to 10 real search phrases for each main collection and product.
+
+**Watch out:** Use the phrases where they read naturally. Repeating a word over and over does not help and reads badly (see [Google: SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)).
+
+**Step 3.** Write a clear title and description for each key page in its **Search engine listing** box in Shopify.
+
+**Expected result:** Your home page, main collections and best sellers each have a unique title under about 60 characters, with the main phrase near the start, and a description of about 150 to 160 characters that says what the page offers (see [Google: title links](https://developers.google.com/search/docs/appearance/title-link) and [Google: snippets](https://developers.google.com/search/docs/appearance/snippet)).
+
+**Step 4.** In the same **Search engine listing** box, set the URL handle to a few plain words, like /products/linen-shirt-sand.
+
+**Expected result:** Every handle is short and readable (see [Google: URL structure](https://developers.google.com/search/docs/crawling-indexing/url-structure)).
+
+**Watch out:** When you rename or delete a page, send the old address to the best new one, or you lose the visits it has earned. Tick **Create a URL redirect** when you change a handle, or add one in **Content > Menus > View URL redirects** (see [Shopify: URL redirects](https://help.shopify.com/en/manual/online-store/menus-and-links/url-redirect)).
+
+**Step 5.** Describe your images. Click each product image in Shopify, then **Edit alt text**, and write what the photo shows in a few words, like "sand linen shirt, front view".
+
+**Expected result:** Every product photo has alt text, which helps image search and people using screen readers (see [Google: images in search](https://developers.google.com/search/docs/appearance/google-images)).
+
+**Step 6.** Link your own pages together. Link from each collection to its best products, from each product to its collection and one related product, and from articles to the products they mention. Use words that say where the link goes, not "click here".
+
+**Expected result:** Every important page can be reached in a few clicks from the home page (see [Google: crawlable links](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)).
+
+**Step 7.** Send your sitemap to Google. Shopify makes one for you at yourdomain.com/sitemap.xml. In Search Console, open **Sitemaps**, type sitemap.xml and click **Submit**.
+
+**Expected result:** The Sitemaps report shows "Success" (see [Search Console: Sitemaps report](https://support.google.com/webmasters/answer/7451001)).
+
+**Step 8.** Fix broken links and missing pages. In Search Console, open **Pages** and look for pages marked "Not found (404)". Redirect each one to the closest live page, or fix the link that points to it.
+
+**Expected result:** No important page shows "Not found" (see [Search Console: Page indexing report](https://support.google.com/webmasters/answer/7440203)).
+
+**Step 9.** Add a short FAQ to your best product pages: the 3 to 5 questions customers ask before buying (size, care, delivery, returns), answered in plain words.
+
+**Expected result:** Each best seller answers its top buying questions on the page.
+
+**Step 10.** Check your product details show in Google. Most Shopify themes add structured data (code that tells Google the price, stock and rating) for you. Paste a product page address into Google's [Rich Results Test](https://search.google.com/test/rich-results). If it finds no product details, ask your theme's support or a developer to add them; do not paste code you do not understand.
+
+**Expected result:** The test finds valid product details on your product pages (see [Google: product structured data](https://developers.google.com/search/docs/appearance/structured-data/product)).
+
+**Step 11.** Write for people, which also helps AI search. Answer real questions clearly, keep facts like prices, sizes and delivery times the same everywhere, and say who made the page. Google's AI features use the same basics as normal search, so there is no special trick (see [Google: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)). Lesson 12.9 covers AI shopping helpers.
+
+**Expected result:** Your key pages answer real questions in plain words, with facts that match across your store.
+
+**Step 12.** Keep a 20-minute monthly routine.
+
+1. Search Console **Performance**: note clicks and the top 10 searches, and find pages shown often but rarely clicked. Rewrite their titles and descriptions.
+2. **Pages** report: fix any new "Not found" pages with a redirect.
+3. Add titles, descriptions and alt text to any new products and collections.
+4. Add or improve one FAQ or helpful article.
+
+**Expected result:** A short note each month with clicks, top searches and the fixes you made.
+
 ## Self-check
 
 1. How many ad-ready videos should you have before paying for TikTok ads?
 2. How long should a meta description be?
 3. What feeds AI assistant answers about your brand?
+4. You rename a product's URL handle. What must you do so you keep its search visits?
 
 <details><summary>Answers</summary>
 
 1. About 10 to 15.
 2. Google sets no limit, but about 150 to 160 characters avoids it being cut off.
 3. Clear site content, clean product data and reviews. Brand facts that are the same everywhere, and mentions on other sites.
+4. Add a URL redirect from the old address to the new one (tick Create a URL redirect, or add it in Content > Menus > View URL redirects).
 </details>

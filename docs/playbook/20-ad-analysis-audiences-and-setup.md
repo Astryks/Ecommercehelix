@@ -560,6 +560,57 @@ Spend
 
 **Watch out:** GA4 and your ad apps count sales in different ways, so numbers will not match. Use GA4 to compare channels and find leaks. Use your store for the real sales total.
 
+## Lesson 20.14: Meta audience check: is cold spend reaching new people?
+<!-- stage:attract -->
+
+**Why this matters:** A "cold" campaign is meant to find new buyers. Meta's delivery system often drifts towards people who already know you, because they buy more easily. The results look great while very few new customers arrive. A 10-minute check each week shows where the money really goes.
+
+**Step 1.** Make sure Meta knows who your audiences are. In **Advertising settings > Audience segments** (Lesson 20.2, Step 1), check that your engaged audience and existing customers are set and that the customer list is recent.
+
+**Expected result:** Both segments are set, and the customer list was updated in the last 30 days.
+
+**Step 2.** Open the breakdown. In Ads Manager, select one prospecting (cold) campaign and the last 7 days. Click **Breakdown**, then **Audience segments**.
+
+**Expected result:** You see spend, purchases and cost per purchase split into new audience, engaged audience and existing customers.
+
+**Step 3.** Work out the share of spend on new people: new audience spend divided by the campaign's total spend.
+
+**Expected result:** You have one percentage for each cold campaign.
+
+**Watch out:** A rule of thumb, not a Meta rule: aim for about 70% or more of cold spend on the new audience. Much lower means the campaign is mostly reselling to people who would likely have bought anyway.
+
+**Step 4.** Check how often new people see your ads. Add the **Frequency** column with the same breakdown and the last 7 days.
+
+**Expected result:** You know the frequency for the new audience.
+
+**Watch out:** A rule of thumb: keep new-audience frequency under about 2 over 7 days. Higher usually means the audience is too small or the ads are too few or too alike.
+
+**Step 5.** Find the cause and make one fix, using the table below.
+
+**Expected result:** One change is made and written in your test log with today's date.
+
+**Step 6.** In each cold ad set, exclude your customer audiences, so past buyers stay out on purpose.
+
+**Expected result:** Cold ad sets exclude past buyers. If you want to reach past buyers, they have their own ad set that includes only your customer audience, with a spending limit on that ad set. Meta announced in 2025 it is retiring its old past-customer spend cap, and its own guide now splits new and existing customers into separate ad sets this way (see [Meta for Developers: Advantage+ campaign experience](https://developers.facebook.com/documentation/ads-commerce/marketing-api/advantage-campaigns)).
+
+**Watch out:** Ads Manager names and screens change often. If the options look different in your account, search Meta Business Help Centre for "existing customers" before you change anything.
+
+**Step 7.** Repeat the check every week, and after any big change, for 3 weeks.
+
+**Expected result:** The new audience share and frequency move towards the rules of thumb, and the number of new customers in your store rises.
+
+<!-- do:meta-connect -->
+
+### Good to know
+
+| What you see | Likely cause | Fix |
+| --- | --- | --- |
+| New audience share under about 70% | Past buyers and engagers not excluded; the system finds them cheaper | Exclude customer audiences in cold ad sets (Step 6) and check the customer list is up to date |
+| New audience share fine, but few new customers in your store | Store reports count repeat buyers, or tracking is off | Compare new customers in Shopify with Meta's purchases (Lesson 20.1) |
+| New audience frequency above about 2 in 7 days | Audience too narrow, or too few ads | Go broad (Lesson 20.2, Step 4) and add new ad ideas (Lesson 19.13) |
+| Cost per purchase from new people far above target | The ad speaks to people who know you | Write for strangers: a clear problem, the product and proof (Lesson 5.5) |
+| Engaged audience takes most of the spend | Retargeting mixed into a cold campaign | Move retargeting to its own warm campaign (Lesson 6.4) |
+
 ## Self-check
 
 1. Hook rate 35%, CTR 1.6%, conversion rate 0.6%. Where is the problem?
@@ -567,6 +618,7 @@ Spend
 3. Platform ROAS is stable but MER is rising. What might be happening?
 4. Why start Google Performance Max as feed-only, with your brand excluded?
 5. Name four custom audiences to build on day one.
+6. In the Audience segments breakdown, a cold campaign spends 45% on new people. What does that tell you, and what is the first fix?
 
 <details><summary>Answers</summary>
 
@@ -575,5 +627,6 @@ Spend
 3. Retargeting or double-counting is taking credit while fewer new customers arrive. Move budget to cold, check the share of new customers, and run a holdout test.
 4. It behaves like Shopping (clearer data), and it stops Performance Max claiming cheap brand searches as its own wins.
 5. Any four of: visitors (30 and 180 days), product viewers, add to cart and started checkout. Or buyers, engagers, video viewers and email list.
+6. Most of the money is going to people who already know you (rule of thumb: aim for about 70% or more on new people). Exclude your customer audiences in the cold ad sets and check the customer list is up to date.
 
 </details>

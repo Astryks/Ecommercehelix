@@ -109,5 +109,15 @@
   {"say": "Go to **Reports > Life cycle > Monetization > Purchase journey**. Read how many people viewed a product, added to cart, started checkout and bought.", "check": "You can see the step where the most people leave.", "lost": "Find where most people leave."},
   {"say": "Fix that one step first. Product page leaks go to Lesson 9.2. Checkout leaks go to Lesson 9.16.", "check": "One clear fix, picked from data instead of a guess.", "lost": "Fix that one step."},
   {"say": "Optional: open **Admin > Data display > Audiences**. Make an audience of 30-day cart adders who did not buy. Use it in Google Ads for reminder ads (Lesson 8.1).", "check": "A warm audience you can reach again.", "lost": "Optional: make an audience of cart leavers."}
+ ]},
+"20.14": {"intro": "Cold campaigns should find new buyers. Meta often drifts to people who already know you. A 10-minute weekly check shows where the money goes.",
+ "steps": [
+  {"say": "In **Advertising settings > Audience segments**, check your engaged audience and existing customers are set, and the customer list is recent.", "check": "Both segments are set. The list is under 30 days old.", "lost": "Upload a fresh customer list."},
+  {"say": "In Ads Manager, pick one cold campaign and the last 7 days. Click **Breakdown**, then **Audience segments**.", "check": "Spend and purchases split into new, engaged and existing customers.", "lost": "Breakdown > Audience segments."},
+  {"say": "Divide new audience spend by total spend.", "check": "One percentage per cold campaign.", "careful": "Rule of thumb: aim for about 70% or more on new people.", "lost": "New spend ÷ total spend."},
+  {"say": "Add the **Frequency** column with the same breakdown.", "check": "You know how often new people see your ads.", "careful": "Rule of thumb: under about 2 over 7 days for new people.", "lost": "Add the Frequency column."},
+  {"say": "Find the cause in the lesson's table and make one fix. Write it in your test log with today's date.", "check": "One change made and logged.", "lost": "Make one fix only."},
+  {"say": "Meta is retiring its old past-customer spend cap. Exclude customer audiences in cold ad sets. Want to reach past buyers? Give them their own ad set with a spending limit.", "check": "Cold ad sets leave out past buyers.", "careful": "Screens change often. If yours look different, search Meta Business Help Centre for \"existing customers\".", "lost": "Exclude your buyers audience in cold ad sets."},
+  {"say": "Repeat the check every week, and after any big change, for 3 weeks.", "check": "New audience share and new customers in your store go up.", "lost": "Set a weekly reminder."}
  ]}
 }
