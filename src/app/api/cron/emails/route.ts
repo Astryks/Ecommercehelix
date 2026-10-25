@@ -1,8 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { hasDb, prisma } from "@/lib/db";
-import { dayLabel, dueEmails } from "@/lib/email/schedule";
+import { dueEmails } from "@/lib/email/schedule";
 import { notify } from "@/lib/email/notify";
-import { dailyTasksEmail, eventEmail, welcomeEmail, winbackEmail } from "@/lib/email/templates";
+import { dailyEmail, eventEmail, welcomeEmail, winbackEmail } from "@/lib/email/templates";
+import { composeDaily } from "@/lib/email/daily-mix";
+import { dailyFacts } from "@/lib/email/daily-facts";
 import type { PlanId } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
@@ -26,10 +28,11 @@ export async function GET(req: NextRequest) {
     const due = dueEmails({ createdAt: u.createdAt, isDemo: u.isDemo, country: u.country, timezone: u.emailPrefs?.timezone ?? "Australia/Sydney", status: u.subscription?.status ?? "active", subscriptionId: u.subscription?.stripeSubscriptionId ?? null, currentPeriodEnd: u.subscription?.currentPeriodEnd ?? null }, now);
     for (const d of due) {
       if (!live) { tally[`would-${d.kind}`] = (tally[`would-${d.kind}`] ?? 0) + 1; continue; }
-      const r = await notify({ userId: u.id, email: u.email!, plan }, d.kind, d.key, (l) => {
+      const r = await notify({ userId: u.id, email: u.email!, plan }, d.kind, d.key, async (l) => {
         const c = { name: u.name ?? "", baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl };
         if (d.kind === "welcome") return welcomeEmail(c);
-        if (d.kind === "daily") return dailyTasksEmail(c, d.tasks, dayLabel(d.date), d.step);
+        // Different every day: seeded by user and date; next lesson, goal and numbers loaded only for users who get it.
+        if (d.kind === "daily") return dailyEmail(c, composeDaily({ seed: u.id, date: d.date, season: d.season, facts: await dailyFacts(u.id, d.date) }));
         if (d.kind === "event") return eventEmail(c, d);
         return winbackEmail(c);
       });

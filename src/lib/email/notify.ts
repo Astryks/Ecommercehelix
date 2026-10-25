@@ -10,16 +10,17 @@ export const unsubLink = (token: string, kind: string) => `${baseUrl()}/api/emai
 
 /**
  * Send one email to one user, once per key. Marketing kinds respect preferences and carry one-click unsubscribe.
- * `build` gets the unsubscribe and preferences links so the footer matches the headers.
+ * `build` (sync or async, so per-user data loads only for users who get the email) gets the unsubscribe and preferences links so the footer matches the headers.
  */
-export async function notify(u: { userId: string; email: string; plan: PlanId }, kind: string, key: string, build: (links: { unsubUrl: string; prefsUrl: string; baseUrl: string }) => Email | null): Promise<"sent" | "skipped" | "failed" | "off"> {
+export async function notify(u: { userId: string; email: string; plan: PlanId }, kind: string, key: string, build: (links: { unsubUrl: string; prefsUrl: string; baseUrl: string }) => Email | null | Promise<Email | null>): Promise<"sent" | "skipped" | "failed" | "off"> {
   if (!u.email) return "skipped";
   const prefs = await getPrefs(u.userId);
   if (!allowed(prefs, u.plan, kind)) return "off";
   const links = { unsubUrl: unsubLink(prefs.unsubToken, kind), prefsUrl: `${baseUrl()}/dashboard/settings/emails`, baseUrl: baseUrl() };
-  const mail = build(links);
-  if (!mail) return "skipped";
+  // Claim first, so an email already sent today is not rebuilt (and its data not reloaded) on every hourly run.
   if (!(await claimSend(u.userId, kind, key))) return "skipped";
+  const mail = await (async () => build(links))().catch(() => null);
+  if (!mail) { await unclaimSend(u.userId, kind, key); return "skipped"; }
   const ok = await sendEmail(u.email, mail, mail.marketing ? links.unsubUrl : undefined);
   if (!ok) await unclaimSend(u.userId, kind, key);
   return ok ? "sent" : "failed";
