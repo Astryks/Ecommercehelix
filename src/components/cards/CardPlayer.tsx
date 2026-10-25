@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 import { ArrowLeft, ArrowRight, HeartHandshake } from "lucide-react";
 import type { Card } from "@/lib/cards";
+import { toStoredRef } from "@/lib/lesson-alias";
 
 export type SetupValues = Record<string, string>;
 type Props = {
@@ -22,7 +23,8 @@ type Props = {
   todayLeft?: number | null;
 };
 
-const LS = (deck: string) => `helix-cards-${deck}`;
+/** Saved under the lesson's permanent id (lesson-alias.ts), so a saved position survives renumbering. */
+const LS = (deck: string) => `helix-cards-${toStoredRef(deck)}`;
 const num = (s: string | undefined) => Math.max(0, Number(s) || 0);
 const $ = (n: number) => (n < 0 ? "-" : "") + "$" + Math.abs(n).toLocaleString("en-AU", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 

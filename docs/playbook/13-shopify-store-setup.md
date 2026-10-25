@@ -1,8 +1,8 @@
-# Module 22: Shopify store setup
+# Module 13: Shopify store setup
 
 **Outcome:** a Shopify store that is ready to take real orders. It has your own domain, a fast theme, and clear home and product pages. Shipping, taxes and payments work, and policies are plain. It has a small set of apps and tracking for your ads. And a test order went all the way through.
 
-**Related:** [Module 9 Website, conversion and order value](09-website-and-cro.md), [Module 18 Choosing your tool stack](18-tool-stack.md), [Module 7 Meta ads in practice](07-meta-ads.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md)
+**Related:** [Module 14 Website, conversion and order value](14-website-and-cro.md), [Module 29 Choosing your tool stack](29-tool-stack.md), [Module 8 Meta ads in practice](08-meta-ads.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md)
 
 
 <!-- plain:start -->
@@ -34,7 +34,7 @@
 
 ---
 
-## Lesson 22.1: Plan before you build
+## Lesson 13.1: Plan before you build
 <!-- stage:convert -->
 
 **Why this matters:** A store takes days to build and minutes to judge. Planning first means you build only what a buyer needs and know your numbers before the first sale. This takes about an hour.
@@ -61,9 +61,9 @@
 
 **Expected result:** Everything you need to build is in one folder.
 
-**Watch out:** Outside the US: the ATO's GST limit is $75,000 in sales a year. If you may reach it, read Lesson 22.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
+**Watch out:** Outside the US: the ATO's GST limit is $75,000 in sales a year. If you may reach it, read Lesson 13.10 before you set prices. US: your home state is where you are most likely to owe sales tax first.
 
-## Lesson 22.2: Domain and email
+## Lesson 13.2: Domain and email
 <!-- stage:convert -->
 
 **Why this matters:** Your domain is your web address. A store on its own domain looks more trustworthy than the free myshopify.com address. Emails from your own domain also land in inboxes more often.
@@ -86,7 +86,7 @@
 
 **Expected result:** It lands in your inbox, not spam.
 
-## Lesson 22.3: Choose and set up a theme
+## Lesson 13.3: Choose and set up a theme
 <!-- stage:convert -->
 
 **Why this matters:** The theme is the design of your store. A fast, simple theme beats a fancy slow one. Always edit a copy, so you never break the live store.
@@ -117,7 +117,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: themes](https://help.shopify.com/en/manual/online-store/themes)
 <!-- /guide:shopify-3-theme-editor -->
 
-## Lesson 22.4: Build the home page
+## Lesson 13.4: Build the home page
 <!-- stage:convert -->
 
 **Why this matters:** The home page should answer three questions in a few seconds. What is this? Is it for me? Why should I trust it? Build the top first, then the sections below in a proven order.
@@ -151,7 +151,7 @@
 
 **Expected result:** They can say what you sell.
 
-## Lesson 22.5: Product pages: titles, photos and descriptions
+## Lesson 13.5: Product pages: titles, photos and descriptions
 <!-- stage:convert -->
 
 **Why this matters:** Most buying decisions happen on the product page. Answer every worry before the buyer has to ask. Keep price, rating and Add to cart easy to see on a phone.
@@ -186,7 +186,7 @@
 
 **Extra details on every page:** Shopify lets you add your own fields to products, called metafields. Use them for things like care steps, sizing or ingredients. Then your theme shows them in the same spot on every product page. Find them under **Settings**, then **Metafields and metaobjects** (see [Shopify: metafields](https://help.shopify.com/en/manual/custom-data/metafields)).
 
-## Lesson 22.6: Variants and inventory
+## Lesson 13.6: Variants and inventory
 <!-- stage:convert -->
 
 **Why this matters:** Variants are the options of one product, like size or colour. Inventory is how many you have. Setting them up properly stops overselling and lets Helix work out profit and shipping correctly.
@@ -209,7 +209,7 @@
 
 <!-- do:stock -->
 
-## Lesson 22.7: Reviews
+## Lesson 13.7: Reviews
 <!-- stage:convert -->
 
 **Why this matters:** People trust other customers more than they trust you. A review app collects and shows reviews automatically, and honest replies to bad reviews build more trust than hiding them.
@@ -234,7 +234,7 @@
 
 **Expected result:** Shoppers see you handle problems well.
 
-## Lesson 22.8: Collections, menus and search
+## Lesson 13.8: Collections, menus and search
 <!-- stage:convert -->
 
 **Why this matters:** Collections are groups of products, and menus and search help people find them. A new visitor should reach any product in 3 taps or fewer.
@@ -263,7 +263,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: menus and links](https://help.shopify.com/en/manual/online-store/menus-and-links)
 <!-- /guide:shopify-5-menus -->
 
-## Lesson 22.9: Shipping zones, rates and a free-shipping amount
+## Lesson 13.9: Shipping zones, rates and a free-shipping amount
 <!-- stage:convert -->
 
 **Why this matters:** Surprise extra costs, like shipping, are one of the most common reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery ranges fix most of it.
@@ -294,7 +294,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: set up shipping rates](https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates/setting-up-shipping-rates)
 <!-- /guide:shopify-2-free-shipping -->
 
-## Lesson 22.10: Taxes: GST and sales tax basics
+## Lesson 13.10: Taxes: GST and sales tax basics
 <!-- stage:convert -->
 
 **Why this matters:** Tax set up wrong either costs you money or breaks the law. Under the ATO's rules, you must register for GST once sales reach $75,000 a year. Other countries set their own limits. In the US, sales tax depends on nexus: a strong enough link to a state. Helix strips GST from your sales before any profit maths.
@@ -333,7 +333,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: taxes](https://help.shopify.com/en/manual/taxes)
 <!-- /guide:shopify-6-taxes -->
 
-## Lesson 22.11: Payments
+## Lesson 13.11: Payments
 <!-- stage:convert -->
 
 **Why this matters:** Let people pay the way they like, because every extra step at checkout loses buyers. Express wallets and a recognisable statement name cut drop-offs and disputes.
@@ -364,7 +364,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify Payments](https://help.shopify.com/en/manual/payments/shopify-payments)
 <!-- /guide:shopify-7-payments -->
 
-## Lesson 22.12: Policies and legal pages
+## Lesson 13.12: Policies and legal pages
 <!-- stage:convert -->
 
 **Why this matters:** Clear policies build trust and keep you within the law. Write them in plain words a 12-year-old could follow, and link them where buyers look.
@@ -407,10 +407,10 @@
 
 > **General information, not legal advice.**
 
-## Lesson 22.13: Essential apps (and only those)
+## Lesson 13.13: Essential apps (and only those)
 <!-- stage:convert -->
 
-**Why this matters:** Every app can slow your store and adds a monthly cost. A small starter set covers almost everything a new store needs. See Module 18 for when to add more.
+**Why this matters:** Every app can slow your store and adds a monthly cost. A small starter set covers almost everything a new store needs. See Module 29 for when to add more.
 
 **Step 1.** Install the starter set only. That is a reviews app, plus Shopify Email or another email tool. Add the Facebook & Instagram and Google & YouTube channels, and maybe an after-purchase offer app. Add subscriptions only if you sell refills.
 
@@ -428,7 +428,7 @@
 
 **Expected result:** You can name what each app does and what it costs each month.
 
-## Lesson 22.16: Place test orders
+## Lesson 13.14: Place test orders
 <!-- stage:convert -->
 
 **Why this matters:** A test order proves that payments, emails, stock and tracking all work together. It is the last step before real customers.
@@ -461,7 +461,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: test orders](https://help.shopify.com/en/manual/checkout-settings/test-orders)
 <!-- /guide:shopify-9-test-order -->
 
-## Lesson 22.17: Pre-launch checklist
+## Lesson 13.15: Pre-launch checklist
 <!-- stage:convert -->
 
 **Why this matters:** Do one last checklist before you launch or turn on ads. It catches the small things that cost the first sales.
@@ -495,10 +495,10 @@
 | Policies | Return and refund, privacy, terms, shipping and contact linked in footer |
 | Apps | Only the starter set; speed checked after each |
 | Tracking | Test Purchase seen in Meta and Google |
-| Speed | Main product image shows in about 2.5 seconds on a phone (Lesson 9.4) |
+| Speed | Main product image shows in about 2.5 seconds on a phone (Lesson 14.4) |
 | Password | Store password removed when you are ready to launch |
 
-## Lesson 22.18: Sell to people near you
+## Lesson 13.16: Sell to people near you
 <!-- stage:convert -->
 
 **Why this matters:** Local shoppers can get your products the same day, with no shipping cost. Pickup and local delivery remove a big reason people leave the cart. Local ads can also reach people who walk past your door.

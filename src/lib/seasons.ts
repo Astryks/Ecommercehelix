@@ -93,23 +93,23 @@ export function daysBetween(from: string, to: string): number {
 export const blackFriday = (y: number) => addDays(nthWeekday(y, 11, 4, 4), 1);
 
 const L = (slug: string, anchor: string, label: string): Learn => ({ slug, anchor, label });
-const PROMO = "13-promotions-and-sales";
+const PROMO = "17-promotions-and-sales";
 const LEARN = {
-  bigSale: L(PROMO, "lesson-134-the-big-sale-step-by-step", "Lesson 13.4"),
-  hype: L(PROMO, "lesson-135-the-build-up-before-a-launch", "Lesson 13.5"),
-  running: L(PROMO, "lesson-136-running-the-sale", "Lesson 13.6"),
-  after: L(PROMO, "lesson-137-after-the-sale", "Lesson 13.7"),
-  keyDates: L(PROMO, "lesson-1310-key-dates-through-the-year", "Lesson 13.10"),
-  checklist: L(PROMO, "lesson-1311-cross-channel-checklist", "Lesson 13.11"),
-  rhythm: L(PROMO, "lesson-131-your-yearly-sales-calendar", "Lesson 13.1"),
-  stock: L("14-inventory-cash-planning", "lesson-142-a-10-minute-weekly-stock-check", "Lesson 14.2"),
-  cash: L("14-inventory-cash-planning", "lesson-144-cash-flow-forecast", "Lesson 14.4"),
-  seasonalAds: L("06-defining-campaigns", "lesson-614-promotional-and-seasonal-campaigns", "Lesson 6.14"),
-  brief: L("19-creators-ugc-and-video-ads", "lesson-1912-the-ugc-brief", "Lesson 19.12"),
-  list: L("11-list-and-audience-growth", "lesson-114-grow-your-list-before-big-sale-dates", "Lesson 11.4"),
-  saleEmails: L("10-email-sms-whatsapp", "lesson-1013-sale-email-and-sms-schedule", "Lesson 10.13"),
-  shipping: L("09-website-and-cro", "lesson-911-shipping-psychology", "Lesson 9.11"),
-  pricing: L("03-offer-and-product", "lesson-36-pricing-that-is-easy-to-accept", "Lesson 3.6"),
+  bigSale: L(PROMO, "lesson-174-the-big-sale-step-by-step", "Lesson 17.4"),
+  hype: L(PROMO, "lesson-175-the-build-up-before-a-launch", "Lesson 17.5"),
+  running: L(PROMO, "lesson-176-running-the-sale", "Lesson 17.6"),
+  after: L(PROMO, "lesson-177-after-the-sale", "Lesson 17.7"),
+  keyDates: L(PROMO, "lesson-1710-key-dates-through-the-year", "Lesson 17.10"),
+  checklist: L(PROMO, "lesson-1711-cross-channel-checklist", "Lesson 17.11"),
+  rhythm: L(PROMO, "lesson-171-your-yearly-sales-calendar", "Lesson 17.1"),
+  stock: L("19-inventory-cash-planning", "lesson-192-a-10-minute-weekly-stock-check", "Lesson 19.2"),
+  cash: L("19-inventory-cash-planning", "lesson-194-cash-flow-forecast", "Lesson 19.4"),
+  seasonalAds: L("07-defining-campaigns", "lesson-714-promotional-and-seasonal-campaigns", "Lesson 7.14"),
+  brief: L("06-creators-ugc-and-video-ads", "lesson-612-the-ugc-brief", "Lesson 6.12"),
+  list: L("12-list-and-audience-growth", "lesson-124-grow-your-list-before-big-sale-dates", "Lesson 12.4"),
+  saleEmails: L("16-email-sms-whatsapp", "lesson-1613-sale-email-and-sms-schedule", "Lesson 16.13"),
+  shipping: L("14-website-and-cro", "lesson-1410-shipping-psychology", "Lesson 14.10"),
+  pricing: L("15-offer-and-product", "lesson-156-pricing-that-is-easy-to-accept", "Lesson 15.6"),
 };
 
 /** A prep task's due date for an event on `date`. */

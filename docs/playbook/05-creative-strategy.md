@@ -62,7 +62,7 @@
 
 **Expected result:** You have a one-line test, for example "Prove pillar, durability angle, testing review-led hook vs demo hook".
 
-**Step 3.** **Brief:** write one page per concept (ad idea) using the template in Lesson 6.9.
+**Step 3.** **Brief:** write one page per concept (ad idea) using the template in Lesson 7.9.
 
 **Expected result:** Each concept has a brief anyone can produce from.
 
@@ -174,7 +174,7 @@
 
 **Expected result:** You have 3 ads that differ only in the first 3 seconds.
 
-**Step 3.** After 7 days, compare hook rate (3-second video plays divided by impressions) in Ads Manager. It is a custom metric you make once (Lesson 6.11).
+**Step 3.** After 7 days, compare hook rate (3-second video plays divided by impressions) in Ads Manager. It is a custom metric you make once (Lesson 7.11).
 
 **Expected result:** You know which hook stops the most people. A common rule of thumb is that above about 25% is a good hook rate.
 
@@ -315,7 +315,7 @@
 
 <!-- do:meta-draft -->
 
-## Lesson 5.16: Production tools
+## Lesson 5.15: Production tools
 <!-- stage:attract -->
 
 **Why this matters:** The right tools make production fast and keep ads looking right on every placement. A few settings checks before launch prevent ugly surprises.
@@ -342,11 +342,11 @@
 
 1. In the ad, go to **Ad creative** and find **Advantage+ creative** (Meta's auto-enhance settings).
 2. Open **Enhancements**, and check **Advanced preview** too.
-3. Turn off any that change your ad in a way you do not want (Lesson 7.2).
+3. Turn off any that change your ad in a way you do not want (Lesson 8.4).
 
 **Expected result:** The ad shows exactly as you designed it.
 
-## Lesson 5.17: Big brand moments
+## Lesson 5.16: Big brand moments
 <!-- stage:attract -->
 
 **Why this matters:** Large brands spend heavily on seasonal and cultural moments. Watching them gives you free ideas you can adapt to your size.
@@ -359,7 +359,7 @@
 
 **Expected result:** Your next batch includes one moment-led ad.
 
-## Lesson 5.18: One product, many kinds of buyer
+## Lesson 5.17: One product, many kinds of buyer
 <!-- stage:attract -->
 
 **Why this matters:** One product often solves different problems for different groups. A water bottle is for gym fans, hikers, office workers and parents. Ads made for each group feel personal. They also give the ad system more ways to find buyers.
@@ -368,7 +368,7 @@
 
 **Expected result:** A list of at least 5 groups, like "new mums" or "weekend campers".
 
-**Step 2.** For each group, write the one problem your product solves for them. Use their words if you can (Lesson 29.1).
+**Step 2.** For each group, write the one problem your product solves for them. Use their words if you can (Lesson 30.1).
 
 **Expected result:** Each group has its own problem in one line.
 
@@ -376,7 +376,7 @@
 
 **Expected result:** 3 ads that look and sound different from each other.
 
-**Step 4.** Run them side by side in your testing campaign (Lesson 6.10) for at least 7 days.
+**Step 4.** Run them side by side in your testing campaign (Lesson 7.10) for at least 7 days.
 
 **Expected result:** You learn which group buys most cheaply.
 
@@ -386,7 +386,7 @@
 
 **Watch out:** Changing only the colour or the words is not a new group. The person, the place and the problem should all change.
 
-## Lesson 5.19: Keep a creative library
+## Lesson 5.18: Keep a creative library
 <!-- stage:attract -->
 
 **Why this matters:** Good photos, clips and past ads get lost in phones and old folders. A tidy library means you make new ads faster. You also stop paying twice for the same kind of shoot.
@@ -399,7 +399,7 @@
 
 **Expected result:** You can find any file by searching its name.
 
-**Step 3.** Make a simple sheet with one row per finished ad. Add the ad name, the hook, the group it speaks to and its result (Lesson 6.7).
+**Step 3.** Make a simple sheet with one row per finished ad. Add the ad name, the hook, the group it speaks to and its result (Lesson 7.7).
 
 **Expected result:** A list that shows which ideas won and which lost.
 
@@ -411,9 +411,9 @@
 
 **Expected result:** New ads start from proven ideas, not a blank page.
 
-**Watch out:** Check your rights before you reuse creator content. Some deals only allow use for a set time (Lesson 19.4).
+**Watch out:** Check your rights before you reuse creator content. Some deals only allow use for a set time (Lesson 6.4).
 
-## Lesson 5.20: Tell a short story in an ad
+## Lesson 5.19: Tell a short story in an ad
 <!-- stage:attract -->
 
 **Why this matters:** People often remember stories better than lists of features. A tiny story with a problem, a turn and a happy ending keeps people watching. It also makes your product the hero without shouting.
@@ -434,13 +434,13 @@
 
 **Expected result:** A 20 to 40 second video that starts with the problem.
 
-**Step 5.** Run it next to your normal ads for one week. Compare how long people watch (hold rate) and cost per sale (Lesson 6.11).
+**Step 5.** Run it next to your normal ads for one week. Compare how long people watch (hold rate) and cost per sale (Lesson 7.11).
 
 **Expected result:** You know if stories work for your product, and you make 2 more if they do.
 
-**Watch out:** Keep it true. Use real customer words, with their permission (Lesson 29.1). A made-up story breaks trust fast.
+**Watch out:** Keep it true. Use real customer words, with their permission (Lesson 30.1). A made-up story breaks trust fast.
 
-## Lesson 5.21: Borrow what is already popular
+## Lesson 5.20: Borrow what is already popular
 <!-- stage:attract -->
 
 **Why this matters:** You do not have to invent every idea. Formats that are already popular on social media are proven to hold attention. Put your product inside them, speak to a small group of real fans, and give people a reason to wonder what happens next.
@@ -461,13 +461,13 @@
 
 **Expected result:** One new ad that feels made for that group and makes people want to keep watching.
 
-**Step 5.** Test it with your normal ads (Lesson 6.10). Keep the format if it wins, and try it with a second group next week.
+**Step 5.** Test it with your normal ads (Lesson 7.10). Keep the format if it wins, and try it with a second group next week.
 
 **Expected result:** A short list of formats and groups that work for your store.
 
 **Watch out:** Borrow the shape, never the words, music or footage of someone else's post. Check you have the rights to any sound you use.
 
-## Lesson 5.22: Make simple ads with free apps
+## Lesson 5.21: Make simple ads with free apps
 <!-- stage:attract -->
 
 **Why this matters:** You do not need a designer to make good ads. A free design app and a free phone video editor are enough for most small stores. Learning the basics once saves you money every week.
@@ -476,7 +476,7 @@
 
 **Expected result:** Two blank designs in the right sizes.
 
-**Step 2.** Add your logo, your brand colours and your fonts to the app's brand settings (Lesson 4.3).
+**Step 2.** Add your logo, your brand colours and your fonts to the app's brand settings (Lesson 3.3).
 
 **Expected result:** Every new design can use your brand look in one tap.
 

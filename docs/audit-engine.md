@@ -59,7 +59,7 @@ Design rules:
 
 ## 3. Site audit checklist (crawler + PageSpeed)
 
-The social presence audit uses the checklist in [Playbook Lesson 21.9](playbook/21-brand-and-social-presence.md#lesson-219-the-social-presence-audit-what-to-check).
+The social presence audit uses the checklist in [Playbook Lesson 4.7](playbook/04-brand-and-social-presence.md#lesson-47-the-social-presence-audit-what-to-check).
 
 | Check | How | Fires when |
 | --- | --- | --- |
@@ -78,26 +78,26 @@ The social presence audit uses the checklist in [Playbook Lesson 21.9](playbook/
 
 ## 4. Cross-diagnosis rules
 
-These combine site and ad signals to find the real cause. They mirror [Playbook Lesson 20.7](playbook/20-ad-analysis-audiences-and-setup.md).
+These combine site and ad signals to find the real cause. They mirror [Playbook Lesson 9.8](playbook/09-ad-analysis-audiences-and-setup.md).
 
 | Rule id | Condition (last 7 days unless stated) | Diagnosis | Suggested fix | Action |
 | --- | --- | --- | --- | --- |
-| `ad-good-site-bad` | Ad hook rate ≥ 25% and outbound CTR ≥ 1.2%, but landing page conversion rate < 50% of store average | Site or landing page problem | Mobile speed, message match, offer clarity above the fold, trust, mobile checkout | Do it for me: draft page fixes · Show me how: Module 9 |
+| `ad-good-site-bad` | Ad hook rate ≥ 25% and outbound CTR ≥ 1.2%, but landing page conversion rate < 50% of store average | Site or landing page problem | Mobile speed, message match, offer clarity above the fold, trust, mobile checkout | Do it for me: draft page fixes · Show me how: Module 14 |
 | `atc-high-checkout-low` | Add-to-cart rate ≥ store benchmark but checkout completion < 40% | Checkout friction | Show shipping cost early, add wallets and buy now pay later, remove forced account, show delivery dates | Do it for me: draft shipping message and checkout settings checklist |
 | `site-good-ctr-weak` | Site conversion rate ≥ benchmark on organic and email, Meta CTR < 0.8% across the account | Creative problem | New hooks and angles, test new formats, put the offer in the ad | Do it for me: write a creative brief |
 | `fatigue` | Frequency up ≥ 25% week on week and CPM up ≥ 15% while CTR falls | Creative fatigue or saturation | Load a new batch, broaden, check reach vs spend | Do it for me: draft batch brief |
-| `low-hook` | Hook rate < 20% on ads with ≥ 2,000 impressions | Weak opening | Re-cut first 3 seconds, test visual and verbal hooks | Show me how: Module 19 |
-| `good-hook-low-hold` | Hook rate ≥ 30%, hold rate < 25% | Weak body | Show product sooner, add proof, tighten | Show me how: Lesson 19.9 |
+| `low-hook` | Hook rate < 20% on ads with ≥ 2,000 impressions | Weak opening | Re-cut first 3 seconds, test visual and verbal hooks | Show me how: Module 6 |
+| `good-hook-low-hold` | Hook rate ≥ 30%, hold rate < 25% | Weak body | Show product sooner, add proof, tighten | Show me how: Lesson 6.9 |
 | `views-no-clicks` | ThruPlays high, outbound CTR < 0.5% | Missing or weak CTA | Clear CTA and offer in ad | Do it for me: draft new CTAs |
-| `mer-drift` | Platform ROAS stable, MER up ≥ 3 points over 14 days | Over-attribution, retargeting taking credit | Shift budget to cold, check new customer share | Show me how: Lesson 20.9 |
+| `mer-drift` | Platform ROAS stable, MER up ≥ 3 points over 14 days | Over-attribution, retargeting taking credit | Shift budget to cold, check new customer share | Show me how: Lesson 9.10 |
 | `mobile-gap` | Mobile CR < 50% of desktop CR | Mobile UX | Mobile speed, sticky add to cart, simplify | Do it for me: draft fixes |
 | `aov-levers` | AOV flat, no bundle or threshold detected | Missing AOV levers | Free shipping threshold about 20 to 30% above AOV, bundles, gift | Do it for me: set threshold message (approval) |
 | `google-brand-share` | Brand search > 40% of Google spend | Non-brand under-invested or brand overpaying | Feed titles, PMax with brand exclusion | Do it for me: feed title rewrite |
 | `search-term-waste` | Search terms with spend ≥ 1x target CPA and 0 conversions | Wasted spend | Add negatives | Do it for me: add negatives (approval) |
 | `email-gap` | Email revenue share < 15% of total, or a core flow missing | Retention gap | Turn on missing flows | Do it for me: draft the flow |
-| `stock-ads` | Ad spend on products with < 14 days of stock | Stockout risk | Shift budget, set back-in-stock flow | Show me how: Module 14 |
-| `social-profile-gaps` | Two or more of: bio without product keyword, broken or untracked link, no post in 14 days or under 2 posts a week, fewer than 3 highlights, no pinned posts, no proof in last 10 posts, unanswered questions over 48h | Profile losing trust from ad viewers | Rewrite bio, fix link with UTMs, add highlights, pin best posts, set cadence | Do it for me: draft bios, highlights plan and calendar · Show me how: Module 21 |
-| `ads-social-mismatch` | Offer or product in live ads not found in bio, pinned or last 9 posts | Inconsistent message | Mention offer in bio, pin a post, add a highlight | Show me how: Lesson 21.2 |
+| `stock-ads` | Ad spend on products with < 14 days of stock | Stockout risk | Shift budget, set back-in-stock flow | Show me how: Module 19 |
+| `social-profile-gaps` | Two or more of: bio without product keyword, broken or untracked link, no post in 14 days or under 2 posts a week, fewer than 3 highlights, no pinned posts, no proof in last 10 posts, unanswered questions over 48h | Profile losing trust from ad viewers | Rewrite bio, fix link with UTMs, add highlights, pin best posts, set cadence | Do it for me: draft bios, highlights plan and calendar · Show me how: Module 4 |
+| `ads-social-mismatch` | Offer or product in live ads not found in bio, pinned or last 9 posts | Inconsistent message | Mention offer in bio, pin a post, add a highlight | Show me how: Lesson 4.2 |
 | `peak-runway` | Within 10 weeks of Black Friday and no plan | Unprepared for peak | Start the peak plan | Do it for me: build timeline |
 
 ## 5. Insight object

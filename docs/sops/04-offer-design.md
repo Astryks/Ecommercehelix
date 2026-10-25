@@ -45,7 +45,7 @@
 
 | Helix can do (with approval for any change) | The user does |
 | --- | --- |
-| Give the steps to list and group objections (Lesson 3.3) | Decide which offers the business can honour |
+| Give the steps to list and group objections (Lesson 15.3) | Decide which offers the business can honour |
 | Draft offer copy, guarantee wording, bundle names | Approve price changes and policies |
 | Draft product page offer block copy to paste | Set up fulfilment for gifts and bundles |
 | Write the A/B test plan (what to change, what to measure, for how long) | Set up and start the test in their testing app |

@@ -1,8 +1,8 @@
-# Module 27: Accounting, bookkeeping and tax time
+# Module 23: Accounting, bookkeeping and tax time
 
 **Outcome:** you have the right helpers, and your store and your books agree each month. Your stock and product costs are recorded properly. Tax time, whenever your financial year ends, is a checklist, not a panic.
 
-**Related:** [Module 26 Tax, GST, sales tax and duties](26-tax-gst-sales-tax-duties.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md), [Module 24 Payments, fraud and chargebacks](24-payments-fraud-chargebacks.md)
+**Related:** [Module 22 Tax, GST, sales tax and duties](22-tax-gst-sales-tax-duties.md), [Module 19 Inventory, cash and the year plan](19-inventory-cash-planning.md), [Module 1 Daily profit foundations](01-daily-profit-foundations.md), [Module 20 Payments, fraud and chargebacks](20-payments-fraud-chargebacks.md)
 
 
 <!-- plain:start -->
@@ -34,7 +34,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant before you act. Your structure, state and situation change the answer.
 
-## Lesson 27.1: Choose your structure and your helpers
+## Lesson 23.1: Choose your structure and your helpers
 <!-- stage:grow -->
 
 **Why this matters:** Your business structure changes how you pay tax and what you are personally liable for. A good accountant pays for themselves, while a poor bookkeeper can cost you a year of clean-up.
@@ -69,7 +69,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 27.2: Connect your store to your books cleanly
+## Lesson 23.2: Connect your store to your books cleanly
 <!-- stage:grow -->
 
 **Why this matters:** Copying every order into your accounting software creates thousands of lines that never match your bank. Recording each payout as one summary instead keeps your books clean and quick to check.
@@ -106,7 +106,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 27.3: Cost of goods and stock in your books
+## Lesson 23.3: Cost of goods and stock in your books
 <!-- stage:grow -->
 
 **Why this matters:** Stock you hold is an asset (something you own), not an expense, until it sells. Getting this right is the biggest difference between your books' profit and your real profit.
@@ -139,7 +139,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 27.4: Records and the monthly close
+## Lesson 23.4: Records and the monthly close
 <!-- stage:grow -->
 
 **Why this matters:** A short monthly routine, called the monthly close, keeps tax time simple. It gives you numbers you can trust. Aim to finish within two weeks of month end.
@@ -176,7 +176,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 27.5: End of financial year
+## Lesson 23.5: End of financial year
 <!-- stage:grow -->
 
 **Why this matters:** In Australia the financial year ends on 30 June. Helix puts these steps on your calendar from May so nothing is rushed.
@@ -217,7 +217,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 27.6: Year end and tax season in the US
+## Lesson 23.6: Year end and tax season in the US
 <!-- stage:grow -->
 
 **Why this matters:** Most US stores run on the calendar year. Helix puts these dates on your calendar for US stores.

@@ -3,6 +3,7 @@ import { hasDb, prisma } from "../db";
 import { safeGet } from "./fetch";
 import { normaliseStoreUrl, robotsDisallows } from "./guard";
 import { collectFacts, findingsFrom, firstProductLink, type AuditInput, type Facts, type Finding, type ShopifyProduct } from "./checks";
+import { toCurrentRef, toStoredRef } from "../lesson-alias";
 import { leaseHeld, releaseLease, takeLease } from "../limits";
 
 export type AuditRunRow = { id: string; url: string; startedAt: string; finishedAt: string | null; ok: boolean; findings: Finding[]; facts: Facts | null; error: string | null };
@@ -55,7 +56,8 @@ export async function checkStore(rawUrl: string): Promise<{ url: string; facts: 
 
 const toRow = (r: { id: string; url: string; startedAt: Date; finishedAt: Date | null; ok: boolean; findings: unknown; facts: unknown; error: string | null }): AuditRunRow => ({
   id: r.id, url: r.url, startedAt: r.startedAt.toISOString(), finishedAt: r.finishedAt?.toISOString() ?? null, ok: r.ok,
-  findings: (r.findings as Finding[]) ?? [], facts: (r.facts as Facts) ?? null, error: r.error,
+  // Lesson refs are saved as permanent ids (lesson-alias.ts) so old runs still point at the right lesson.
+  findings: ((r.findings as Finding[]) ?? []).map((f) => (f.lesson ? { ...f, lesson: toCurrentRef(f.lesson) } : f)), facts: (r.facts as Facts) ?? null, error: r.error,
 });
 
 /** One check at a time per user, across every server (a lease in the database). Expires after 2 minutes in case a server dies mid-check. */
@@ -85,7 +87,7 @@ async function runAndSaveInner(userId: string, url: string): Promise<AuditRunRow
     return saved;
   }
   const created = await prisma.auditRun.create({
-    data: { userId, url: row.url, startedAt, finishedAt: new Date(), ok: row.ok, findings: row.findings as object[], facts: (row.facts ?? undefined) as object | undefined, error: row.error },
+    data: { userId, url: row.url, startedAt, finishedAt: new Date(), ok: row.ok, findings: row.findings.map((f) => (f.lesson ? { ...f, lesson: toStoredRef(f.lesson) } : f)) as object[], facts: (row.facts ?? undefined) as object | undefined, error: row.error },
   });
   return toRow(created);
 }

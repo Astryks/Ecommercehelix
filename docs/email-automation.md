@@ -1,6 +1,6 @@
 # Email and SMS automation: suggest, draft, approve, set up
 
-Helix watches for missing or under-performing flows (the `email-gap` rule in the [audit engine](audit-engine.md)), suggests the flow with the evidence, drafts the copy and the flow logic in your brand voice, and sets it up in your email platform **only after you approve**. Every flow can also be done by hand with the guide in [Playbook Module 10](playbook/10-email-sms-whatsapp.md).
+Helix watches for missing or under-performing flows (the `email-gap` rule in the [audit engine](audit-engine.md)), suggests the flow with the evidence, drafts the copy and the flow logic in your brand voice, and sets it up in your email platform **only after you approve**. Every flow can also be done by hand with the guide in [Playbook Module 16](playbook/16-email-sms-whatsapp.md).
 
 ## How it works
 

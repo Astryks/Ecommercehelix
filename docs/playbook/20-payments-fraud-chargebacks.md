@@ -1,8 +1,8 @@
-# Module 24: Payments, fraud and chargebacks
+# Module 20: Payments, fraud and chargebacks
 
 **Outcome:** you know what each way of paying really costs you, and you keep payouts flowing during big sales. You stop card-testing bots and risky orders before they ship. You answer chargebacks with the right proof on time.
 
-**Related:** [Module 22 Shopify store setup](22-shopify-store-setup.md), [Module 23 Fulfilment, shipping and returns](23-fulfilment-shipping-returns.md), [Module 25 Account safety, ad accounts and agencies](25-account-safety-agencies.md), [Module 27 Accounting, bookkeeping and tax time](27-accounting-bookkeeping-tax-time.md)
+**Related:** [Module 13 Shopify store setup](13-shopify-store-setup.md), [Module 21 Fulfilment, shipping and returns](21-fulfilment-shipping-returns.md), [Module 24 Account safety, ad accounts and agencies](24-account-safety-agencies.md), [Module 23 Accounting, bookkeeping and tax time](23-accounting-bookkeeping-tax-time.md)
 
 
 <!-- plain:start -->
@@ -33,7 +33,7 @@
 
 ---
 
-## Lesson 24.1: Your payment mix and what it really costs
+## Lesson 20.1: Your payment mix and what it really costs
 <!-- stage:grow -->
 
 **Why this matters:** Each way to pay has its own fee, payout speed and risk. The fee on the price page is rarely the whole cost.
@@ -68,7 +68,7 @@
 
 **Watch out:** Australia: since 1 October 2026 you cannot add a card surcharge to Visa, Mastercard or eftpos payments (debit, credit or prepaid), and American Express, UnionPay and PayPal have dropped surcharging too. The Reserve Bank also lowered the caps on the fees banks charge behind each card payment (interchange) on the same date. Build your payment fees into your prices instead, and ask your provider whether your rate has come down (see [RBA: card payment costs and surcharging FAQs](https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/)).
 
-## Lesson 24.2: Holds, reserves and frozen payouts
+## Lesson 20.2: Holds, reserves and frozen payouts
 <!-- stage:grow -->
 
 **Why this matters:** A payment provider can hold part of your money if it sees risk. For example: a new account, a sudden jump in sales, slow delivery or many disputes. A hold in peak season can leave you unable to pay suppliers.
@@ -103,7 +103,7 @@
 
 **Watch out:** Keep business details, bank account and ID up to date with every provider. Old details often cause freezes.
 
-## Lesson 24.3: Chargebacks: how they work and how to answer
+## Lesson 20.3: Chargebacks: how they work and how to answer
 <!-- stage:grow -->
 
 **Why this matters:** A chargeback is when a customer asks their bank to reverse a card payment. The money and a chargeback fee are taken straight away. On Shopify Payments, the fee comes back if you win. You have a short time to prove the sale was fine.
@@ -142,7 +142,7 @@
 
 **Watch out:** For high-value orders, use signature on delivery. It is the strongest proof you can buy.
 
-## Lesson 24.4: Stopping fraud and card testing
+## Lesson 20.4: Stopping fraud and card testing
 <!-- stage:grow -->
 
 **Why this matters:** Card testing is when crooks use your checkout to try stolen card numbers. They usually place many tiny orders on your cheapest product. Each one can turn into a chargeback and fees.
@@ -173,7 +173,7 @@
 
 **Watch out:** Be careful with gift cards and very large first orders going to parcel forwarding addresses.
 
-## Lesson 24.5: Refunds, partial refunds and goodwill
+## Lesson 20.5: Refunds, partial refunds and goodwill
 <!-- stage:grow -->
 
 **Why this matters:** A fast, fair refund is cheaper than a dispute. A clear rule saves you deciding each case from scratch.

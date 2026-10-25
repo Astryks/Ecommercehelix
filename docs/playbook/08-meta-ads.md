@@ -1,4 +1,4 @@
-# Module 7: Meta ads in practice
+# Module 8: Meta ads in practice
 
 **Outcome:** you can build and run a Meta (Facebook and Instagram) ad account in about 10 minutes a day. And you can spend more without breaking what works.
 
@@ -32,7 +32,43 @@
 
 ---
 
-## Lesson 7.1: Account setup checklist
+## Lesson 8.1: Find your way around Ads Manager
+<!-- stage:attract -->
+
+**Why this matters:** Ads Manager looks busy, but you only use a handful of parts. Once you know what each one is for, it stops being scary. It becomes a simple table you check for 5 minutes a day.
+
+![Find your way around Meta Ads Manager](../../public/guides/meta-0-ads-manager-map.svg)
+
+**The parts that matter:**
+
+1. **Ad account** (top left): make sure it shows your store's account.
+2. **Campaigns, Ad sets, Ads** tabs: three levels, from big (the goal) to small (what people see). Ticking a campaign filters the other tabs to it.
+3. **+ Create**: starts a new campaign.
+4. **Columns**: chooses which numbers the table shows. Save a "Daily" preset (Lesson 8.2).
+5. **On/Off switch**: blue means on and spending; grey means off.
+6. **Delivery**: **Active** means running. **Learning** means Meta is still working out who buys. **Learning limited** means too few results to finish learning. **In review** means Meta is checking the ad. It can also say **Off**, or **Rejected** (click it to see why).
+7. **Results** and **Cost per result**: for a Sales campaign, purchases and the cost of each purchase. **Amount spent** is what you paid. **ROAS** (return on ad spend) is sales divided by spend.
+8. **Date range** (top right): set it to **Last 7 days** for daily checks.
+
+**Step 1.** Open Ads Manager (adsmanager.facebook.com, or Meta Business Suite **> All tools > Ads Manager**). Check the ad account name at the top left.
+
+**Expected result:** You are in your store's ad account.
+
+**Step 2.** Set the date range at the top right to **Last 7 days**.
+
+**Expected result:** The table shows the last week.
+
+**Step 3.** Click **Columns** and choose your **Daily** preset (or **Performance** if you have not made one yet).
+
+**Expected result:** You see Results, Cost per result, Amount spent and ROAS.
+
+**Step 4.** Click the **Campaigns** tab, then click a campaign name to open it. Look at the three levels (campaign, ad set, ad), but do not change anything. Close it with **X** or **Close**.
+
+**Expected result:** You know where the budget, the audience and the ads live.
+
+**Watch out:** Your screen may look a little different, because Meta tests new layouts. Look for the same words: Create, Columns, Delivery, Results. If a menu is missing, try the three-line menu at the top left. Or search the help centre for its name.
+
+## Lesson 8.2: Account setup checklist
 <!-- stage:attract -->
 
 **Why this matters:** Ten minutes of setup before you spend money stops the most costly Meta problems. These are lost sales tracking, hacked accounts and spending that runs away. Do it once, one step at a time, and check it again every quarter.
@@ -113,325 +149,14 @@ This sends sales to Meta from the shopper's browser (the pixel) and from your st
 
 **Expected result:** The audiences show "Ready" (they can take a few hours to fill).
 
-## Lesson 7.2: Automated vs manual campaigns
-<!-- stage:attract -->
-
-**Why this matters:** Every new Sales campaign now starts with **Advantage+ on**. Meta then chooses who sees the ad, where, and how the budget is split. If you narrow the budget, audience or placements, that part shows **Advantage+ off**. The campaign is then manual. Start with Advantage+ on for new customers. Go manual only when you need control (see [Meta: create an Advantage+ campaign](https://www.facebook.com/business/help/830005979993164)).
-
-**Step 1.** Start a new sales campaign.
-
-1. In Ads Manager, click **+ Create**.
-2. Choose **Sales**, click **Continue**, then **OK**.
-3. Check that **Advantage+** at the top right reads **On**. Leave budget, audience and placements as Meta sets them.
-
-**Expected result:** Your main campaign for new customers is an Advantage+ sales campaign.
-
-<!-- do:meta-draft -->
-
-**Step 2.** Only for warm audiences or a test that needs control: repeat **+ Create > Sales > Continue**. Warm means people who visited or engaged. Set the audience or placements you need. Meta then shows **Advantage+ off** for that part.
-
-**Expected result:** Warm and test campaigns are manual, with the audience you chose.
-
-**Step 3.** At the ad level, open **Ad creative** and click **Set up creative** (or **Edit** by **Advantage+ creative**). Under **Enhancements**, switch off anything that changes how your ad looks, like added music. Some can only be switched off in **Advanced preview**, so check there too.
-
-**Expected result:** The preview on the right shows your ad as you designed it. See [Meta: turn off creative enhancements](https://www.facebook.com/business/help/1082295769403815).
-
-## Lesson 7.3: Ad formats
-<!-- stage:attract -->
-
-**Why this matters:** The format is the shape of the ad: video, image, carousel and more. Each format suits a different job, and the wrong one can hide a good message.
-
-**Step 1.** For each ad in your next batch, pick the format from the table below that fits its job. For most cold ads, that is a single video in 9:16 and 4:5.
-
-**Expected result:** Every brief names one format.
-
-**Step 2.** Make each ad in both 4:5 (feed) and 9:16 (Stories and Reels) sizes.
-
-**Expected result:** Each ad fits every placement without cropping.
-
-**Step 3.** Keep all text inside the safe zones. Then Reels and Stories will not cut it off or cover it with buttons.
-
-**Expected result:** Previewing the ad in Ads Manager shows no text hidden behind buttons.
-
-### Good to know
-
-| Format | Best for |
-| --- | --- |
-| Single video (9:16 tall and 4:5) | Most ads aimed at new people |
-| Single image (4:5) | Bold statements, offers, reviews |
-| Carousel (swipeable cards) | Several products, steps or reasons |
-| Advantage+ catalog ads (once called dynamic product ads) | Showing people products they looked at; big product ranges |
-| Collection | A shopping experience on mobile |
-| Partnership ads | A creator's post run as an ad, showing both your names |
-| Catalog ads with video | Product videos built from your product feed |
-
-Meta recommends 4:5 for Facebook Feed and 9:16 for Stories and Reels (see [Meta: aspect ratios by placement](https://www.facebook.com/business/help/682655495435254)).
-
-## Lesson 7.4: Launching
-<!-- stage:attract -->
-
-**Why this matters:** How you launch decides how fairly ads are tested and whether they keep their likes and comments. Build new ads in a switched-off campaign, copy them across with the same post, and switch them on together.
-
-**Step 1.** Make the new ads in your switched-off build campaign.
-
-1. In Ads Manager, open the build campaign (its On/Off switch is grey).
-2. Click the **Ads** tab.
-3. Click **+ Create** and make one new ad. Repeat for each ad.
-
-**Expected result:** The new ads sit in the paused build campaign, with "Off" under **Delivery**.
-
-<!-- do:meta-draft -->
-
-**Step 2.** Copy the new ads into your live campaign.
-
-1. Tick the new ads.
-2. Click **Duplicate**.
-3. Choose the live campaign and ad set.
-4. Click **Duplicate** again.
-
-**Expected result:** Copies of the ads appear in the live ad set, still switched off.
-
-**Step 3.** Open each copy and find the ad's **Ad setup** section. Choose **Use existing post** and pick the first ad's post, so likes and comments carry over.
-
-**Expected result:** Each copy shows the same post as the original. If you do not see **Use existing post**, the first ad is not published yet. Publish it in the build campaign first.
-
-**Step 4.** Tick all the new copies and switch them all on together. Then click **Publish** (bottom right) if Meta asks.
-
-**Expected result:** All the new ads start on the same day, with **Delivery** showing "In review", then "Learning" or "Active".
-
-**Step 5.** Leave them alone for 2 to 5 days before judging.
-
-**Expected result:** You judge on settled numbers, not early noise.
-
-**Watch out:** Only use ad scheduling for a specific reason, like a sale that starts at a set time.
-
-### Good to know
-
-<!-- guide:meta-1-create-sales-campaign -->
-![Start a Sales campaign in Meta Ads Manager](../../public/guides/meta-1-create-sales-campaign.svg)
-
-*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Meta: create a campaign in Ads Manager](https://www.facebook.com/business/help/1658289035439772)
-<!-- /guide:meta-1-create-sales-campaign -->
-
-<!-- guide:meta-2-budget-pixel-audience -->
-![Set budget, sales tracking and audience](../../public/guides/meta-2-budget-pixel-audience.svg)
-
-*Drawing, not a real screenshot. Labels on your screen may look a little different.*
-<!-- /guide:meta-2-budget-pixel-audience -->
-
-<!-- guide:meta-3-write-the-ad -->
-![Write the ad and add tracking](../../public/guides/meta-3-write-the-ad.svg)
-
-*Drawing, not a real screenshot. Labels on your screen may look a little different.*
-<!-- /guide:meta-3-write-the-ad -->
-
-<!-- guide:meta-4-review-helix-draft -->
-![Review a Helix draft and launch it](../../public/guides/meta-4-review-helix-draft.svg)
-
-*Drawing, not a real screenshot. Labels on your screen may look a little different.*
-<!-- /guide:meta-4-review-helix-draft -->
-
-## Lesson 7.5: The learning phase
-<!-- stage:attract -->
-
-**Why this matters:** The learning phase is the first days after you start or change an ad set. Meta is still working out who to show it to. It usually ends after about 50 results in the week after the last big edit. With fewer, **Delivery** shows "Learning limited". Results are unstable during learning. Knowing what resets it saves you from breaking good campaigns (see [Meta: the learning phase](https://www.facebook.com/business/help/112167992830700)).
-
-**Step 1.** Before you edit a live ad set, check if the edit restarts learning. These do: changing ads, audience, conversion event or bid strategy, or pausing 7+ days. So can a big budget change, often over 20% ([Meta: significant edits](https://www.facebook.com/business/help/316478108955072)).
-
-**Expected result:** You only make big edits on purpose.
-
-**Step 2.** Launch new tests as new campaigns rather than editing working ones.
-
-**Expected result:** Existing campaigns keep their learning, because new campaigns do not reset them.
-
-**Step 3.** Judge results on the last 7 days, not one day.
-
-**Expected result:** A great week one followed by a weaker week two does not panic you.
-
-**Watch out:** Do not keep moving winning ads into "the best campaign". Copy them instead, so each campaign keeps what it learned.
-
-## Lesson 7.6: Daily optimisation in 10 minutes
-<!-- stage:attract -->
-
-**Why this matters:** Ten minutes a day keeps Meta healthy. Five steps in the same order every day turn a confusing dashboard into one clear action. In Helix, **Your ads** shows the verdicts for you.
-
-**Step 1.** Set your stance from your scorecard: push, careful push, hold or defend (Lesson 1.6).
-
-**Expected result:** You have one word for today.
-
-<!-- do:numbers -->
-
-**Step 2.** In Ads Manager, set the date to **Last 7 days** and choose **Columns > Daily**. On the **Campaigns** tab, read each campaign's **Amount spent** and **Frequency** (how many times the same person saw your ads).
-
-**Expected result:** You know whether any campaign is overspending or tiring its audience.
-
-**Step 3.** Grade each ad. **Star:** great, keep it and give it more. **Steady:** fine, leave it. **Passenger:** little spend, little effect, leave it unless it starts spending. **Drain:** lots of spend, poor results, turn it off.
-
-**Expected result:** Every ad has a grade, and drains are switched off.
-
-**Step 4.** Label each campaign: winning, learning, shaky or dying.
-
-**Expected result:** Every campaign has a label.
-
-<!-- do:insights -->
-
-**Step 5.** Take one action and write it in your decision log. [SOP 06](../sops/06-meta-daily-optimisation.md) has the full detail and numbers.
-
-**Expected result:** One logged action a day, about 10 minutes in total.
-
-## Lesson 7.7: Reach potential
-<!-- stage:attract -->
-
-**Why this matters:** Reach potential is how many people an ad can reach. After that, the same people start seeing it twice. An ad with a tiny reach cannot grow, even if its cost per sale is great.
-
-**Step 1.** See which ads reach the most people.
-
-1. In Ads Manager, open the **Ads** tab.
-2. Set the date to **Last 7 days**.
-3. Click **Columns**, then **Customise columns**. Tick **Reach** and **Frequency** and click **Apply**.
-4. Click the **Reach** column header to sort.
-
-**Expected result:** You can see which ads reach many people and which reach few.
-
-**Step 2.** Mark ads with big reach and an OK cost per sale as growth candidates.
-
-**Expected result:** You have a short list of ads that can take more spend.
-
-**Step 3.** To spend more, pair your low-cost, low-reach ad with a high-reach ad in the same campaign.
-
-**Expected result:** The campaign can grow without frequency climbing fast.
-
-## Lesson 7.8: Managing expensive cold campaigns
-<!-- stage:attract -->
-
-**Why this matters:** Cold campaigns for new people always look costly. Meta misses many of the sales they cause, because people buy days later another way. Judging them wrongly leads to cutting the campaigns that feed the whole store.
-
-**Step 1.** Compare cold campaigns only with other cold campaigns, never with warm ones.
-
-**Expected result:** Your cold campaigns are ranked against each other.
-
-**Step 2.** Watch the share of orders from new customers each week.
-
-**Expected result:** You know whether cold spend is still bringing new buyers.
-
-**Step 3.** Judge cold spend by your total MER trend on the Dashboard. MER is total ad spend as a share of total sales.
-
-**Expected result:** You see the whole-store effect, not Meta's partial view.
-
-**Watch out:** Cut cold spend only when MER gets worse and orders from new customers fall.
-
-<!-- do:growth -->
-
-## Lesson 7.9: Metrics by funnel layer
-<!-- stage:attract -->
-
-**Why this matters:** The funnel layer is how well the audience knows you: cold, mixed, warm or hot. Each layer has its own numbers to watch and its own allowance for cost per sale.
-
-**Step 1.** Label each campaign with its layer using the naming pattern from Lesson 6.7.
-
-**Expected result:** Every campaign name shows Cold, Mixed, Warm or Hot.
-
-**Step 2.** Compare each campaign with the numbers in the table below for its layer. That includes how much it may pay for one sale (CPA).
-
-**Expected result:** You judge each campaign against the right benchmark.
-
-### Good to know
-
-| Layer | Who | Main numbers to watch |
-| --- | --- | --- |
-| Cold | Never heard of you | Reach, CPM, hook rate, outbound CTR, share of new customers, cost per sale compared with 2 times target |
-| Mixed | Cold and warm together | Cost per sale compared with 1.25 times target, frequency, share who engaged |
-| Warm | Visited or engaged | Cost per sale compared with target, frequency |
-| Hot | Added to cart or started checkout | Cost per sale compared with 0.75 times target, frequency |
-
-## Lesson 7.10: Scaling challenge
-<!-- stage:grow -->
-
-**Why this matters:** A scaling challenge is a planned 2 to 4 week push to spend more. If you have new ads ready and a loss limit set, even a failed test teaches you. It shows what is holding you back.
-
-**Step 1.** Prepare 6 to 10 new ads before you start.
-
-**Expected result:** Fresh ads are ready to add as frequency rises.
-
-**Step 2.** Write down the most you are willing to lose.
-
-**Expected result:** You have a dollar limit that ends the challenge.
-
-**Step 3.** Raise the budget a little.
-
-1. Click the campaign name (if it uses campaign budget) or the ad set name (if it uses ad set budgets).
-2. Raise **Daily budget** by 10 to 20%.
-3. Click **Publish**.
-4. Each day, write the spend and reach in your tracking sheet.
-
-**Expected result:** You can see whether new spend is finding new people.
-
-**Step 4.** Hold each new level for 10 to 14 days.
-
-**Expected result:** MER has time to settle at each level.
-
-**Step 5.** Read the result.
-
-- Spend grew much faster than reach? Add new ads, or remove some exclusions.
-- MER (total ad spend as a share of total sales) didn't settle? Go back one budget step and find out why.
-
-**Expected result:** You have a clear next action, whether the challenge worked or not.
-
-<!-- do:growth -->
-
-## Lesson 7.11: Attribution settings
-<!-- stage:attract -->
-
-**Why this matters:** Attribution is how a platform decides which ad gets credit for a sale. Meta's standard setting credits sales within 1 or 7 days of a link click. It also credits sales within 1 day of a view or of another tap on the ad. That is not the full truth, so you need a second check (see [Meta: attribution settings](https://www.facebook.com/business/help/460276478298895)).
-
-**Step 1.** In Ads Manager, click the **Columns** menu, then **Compare attribution models**. Tick **Incremental** and click **Apply**. It counts only sales Meta's model thinks the ad truly caused (see [Meta: incremental attribution results](https://www.facebook.com/business/help/1271619100603114)).
-
-**Expected result:** You can see how much of Meta's reported sales are likely extra sales.
-
-**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify. Also check your MER on the Dashboard (total ad spend as a share of total sales).
-
-**Expected result:** You trust the store's numbers first and Meta's second.
-
-<!-- do:growth -->
-
-**Step 3.** When you spend enough, run a holdout test, as in Lesson 20.9. You hide ads from a group and compare.
-
-**Expected result:** You have a measured answer to how many sales ads really cause.
-
-## Lesson 7.12: Troubleshooting
-<!-- stage:attract -->
-
-**Why this matters:** Meta throws up a handful of common problems, from ads that will not spend to strange labels. Each has a known fix.
-
-**Step 1.** Find your problem in the table below.
-
-**Expected result:** You have the matching fix.
-
-**Step 2.** Apply the fix and note it in your decision log with the date.
-
-**Expected result:** The problem is fixed, and you can find what you did if it comes back.
-
-### Good to know
-
-| Problem | What to check |
-| --- | --- |
-| Ads only spend part of the budget | Budget too low for the audience, billing problems, policy limits, the schedule |
-| Ads stuck "In review" | Review usually takes up to 24 hours. Check for policy or catalog errors. After 48 hours, copy the ad and try again. |
-| Meta adds a discount label you did not set | The ad's Advantage+ creative enhancements and offer settings. Turn off automatic offers. |
-| "Data restrictions applied" | Meta has put your store in a sensitive category. Ask for a review. |
-| Instagram sells worse than Facebook | Usually fine. Judge both together. Only remove a placement with strong proof. |
-| You reached the limit on ads | Archive dead ads. Combine ad sets. |
-| You want ads to run only at certain hours | Ad sets with either budget type can use **Delivery scheduling** ([Meta: schedule an ad set](https://www.facebook.com/business/help/1381935425400769)). Most stores do better leaving ads on all day. Test it only with clear proof that some hours lose money. |
-| You keep overspending in a sale | Set a spending limit on the campaign or the account before the sale starts. |
-
-## Lesson 7.13: Launch your first Meta ad in 30 minutes
+## Lesson 8.3: Launch your first Meta ad in 30 minutes
 <!-- stage:attract -->
 
 **Why this matters:** Most people stall on their first ad because Ads Manager has hundreds of settings. You need about eight of them. This lesson walks you through a simple first campaign. You make one Sales campaign, one ad set and 3 to 5 ads. You use a budget you already know you can afford. Or let Helix build it for you as a paused draft.
 
 **Words you will see:** a **campaign** holds the goal (Sales). An **ad set** holds the budget, who sees it and where. An **ad** is the video or image people see. The **pixel** tells Meta when someone buys. **Advantage+** means Meta makes some choices for you, which works well for most new stores.
 
-**Step 1.** Check your setup. Open Events Manager (Ads Manager menu **> All tools > Events Manager**). Your pixel should show **Purchase** events from your store. If it does not, do Lesson 7.1 steps 4 to 6 first.
+**Step 1.** Check your setup. Open Events Manager (Ads Manager menu **> All tools > Events Manager**). Your pixel should show **Purchase** events from your store. If it does not, do Lesson 8.2 steps 4 to 6 first.
 
 **Expected result:** You can see Purchase events, so Meta can learn who buys.
 
@@ -496,76 +221,63 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 
 **Expected result:** After 3 days you know if each ad is under, near or over break-even. Keep the best ones running.
 
-**Watch out:** Big edits in the first days restart Meta's learning (Lesson 7.5). Change nothing for 3 days unless something is broken, such as a wrong link.
+**Watch out:** Big edits in the first days restart Meta's learning (Lesson 8.8). Change nothing for 3 days unless something is broken, such as a wrong link.
 
-## Lesson 7.14: Find your way around Ads Manager
+## Lesson 8.4: Automated vs manual campaigns
 <!-- stage:attract -->
 
-**Why this matters:** Ads Manager looks busy, but you only use a handful of parts. Once you know what each one is for, it stops being scary. It becomes a simple table you check for 5 minutes a day.
+**Why this matters:** Every new Sales campaign now starts with **Advantage+ on**. Meta then chooses who sees the ad, where, and how the budget is split. If you narrow the budget, audience or placements, that part shows **Advantage+ off**. The campaign is then manual. Start with Advantage+ on for new customers. Go manual only when you need control (see [Meta: create an Advantage+ campaign](https://www.facebook.com/business/help/830005979993164)).
 
-![Find your way around Meta Ads Manager](../../public/guides/meta-0-ads-manager-map.svg)
+**Step 1.** Start a new sales campaign.
 
-**The parts that matter:**
+1. In Ads Manager, click **+ Create**.
+2. Choose **Sales**, click **Continue**, then **OK**.
+3. Check that **Advantage+** at the top right reads **On**. Leave budget, audience and placements as Meta sets them.
 
-1. **Ad account** (top left): make sure it shows your store's account.
-2. **Campaigns, Ad sets, Ads** tabs: three levels, from big (the goal) to small (what people see). Ticking a campaign filters the other tabs to it.
-3. **+ Create**: starts a new campaign.
-4. **Columns**: chooses which numbers the table shows. Save a "Daily" preset (Lesson 7.1).
-5. **On/Off switch**: blue means on and spending; grey means off.
-6. **Delivery**: **Active** means running. **Learning** means Meta is still working out who buys. **Learning limited** means too few results to finish learning. **In review** means Meta is checking the ad. It can also say **Off**, or **Rejected** (click it to see why).
-7. **Results** and **Cost per result**: for a Sales campaign, purchases and the cost of each purchase. **Amount spent** is what you paid. **ROAS** (return on ad spend) is sales divided by spend.
-8. **Date range** (top right): set it to **Last 7 days** for daily checks.
+**Expected result:** Your main campaign for new customers is an Advantage+ sales campaign.
 
-**Step 1.** Open Ads Manager (adsmanager.facebook.com, or Meta Business Suite **> All tools > Ads Manager**). Check the ad account name at the top left.
+<!-- do:meta-draft -->
 
-**Expected result:** You are in your store's ad account.
+**Step 2.** Only for warm audiences or a test that needs control: repeat **+ Create > Sales > Continue**. Warm means people who visited or engaged. Set the audience or placements you need. Meta then shows **Advantage+ off** for that part.
 
-**Step 2.** Set the date range at the top right to **Last 7 days**.
+**Expected result:** Warm and test campaigns are manual, with the audience you chose.
 
-**Expected result:** The table shows the last week.
+**Step 3.** At the ad level, open **Ad creative** and click **Set up creative** (or **Edit** by **Advantage+ creative**). Under **Enhancements**, switch off anything that changes how your ad looks, like added music. Some can only be switched off in **Advanced preview**, so check there too.
 
-**Step 3.** Click **Columns** and choose your **Daily** preset (or **Performance** if you have not made one yet).
+**Expected result:** The preview on the right shows your ad as you designed it. See [Meta: turn off creative enhancements](https://www.facebook.com/business/help/1082295769403815).
 
-**Expected result:** You see Results, Cost per result, Amount spent and ROAS.
+## Lesson 8.5: Ad formats
+<!-- stage:attract -->
 
-**Step 4.** Click the **Campaigns** tab, then click a campaign name to open it. Look at the three levels (campaign, ad set, ad), but do not change anything. Close it with **X** or **Close**.
+**Why this matters:** The format is the shape of the ad: video, image, carousel and more. Each format suits a different job, and the wrong one can hide a good message.
 
-**Expected result:** You know where the budget, the audience and the ads live.
+**Step 1.** For each ad in your next batch, pick the format from the table below that fits its job. For most cold ads, that is a single video in 9:16 and 4:5.
 
-**Watch out:** Your screen may look a little different, because Meta tests new layouts. Look for the same words: Create, Columns, Delivery, Results. If a menu is missing, try the three-line menu at the top left. Or search the help centre for its name.
+**Expected result:** Every brief names one format.
 
-## Lesson 7.15: Cost caps, bid caps and value rules
-<!-- stage:grow -->
+**Step 2.** Make each ad in both 4:5 (feed) and 9:16 (Stories and Reels) sizes.
 
-**Why this matters:** By default, Meta spends your whole budget and tries to get the most sales. Caps and rules let you tell Meta the most you will pay, or which buyers are worth more to you. Used well, they protect profit. Used too early, they stop your ads from spending at all.
+**Expected result:** Each ad fits every placement without cropping.
 
-**Step 1.** Only try this when a campaign already has at least 50 sales a week and steady results. That is a rule of thumb: caps need plenty of data to work (see [Meta: bid strategies](https://www.facebook.com/business/help/1619591734742116)). Check in Ads Manager on the **Campaigns** tab.
+**Step 3.** Keep all text inside the safe zones. Then Reels and Stories will not cut it off or cover it with buttons.
 
-**Expected result:** You know if the campaign is ready. If not, keep the default setting.
+**Expected result:** Previewing the ad in Ads Manager shows no text hidden behind buttons.
 
-**Step 2.** Find your break-even cost per sale from Lesson 1.5. Write it down.
+### Good to know
 
-**Expected result:** One number, for example $40.
+| Format | Best for |
+| --- | --- |
+| Single video (9:16 tall and 4:5) | Most ads aimed at new people |
+| Single image (4:5) | Bold statements, offers, reviews |
+| Carousel (swipeable cards) | Several products, steps or reasons |
+| Advantage+ catalog ads (once called dynamic product ads) | Showing people products they looked at; big product ranges |
+| Collection | A shopping experience on mobile |
+| Partnership ads | A creator's post run as an ad, showing both your names |
+| Catalog ads with video | Product videos built from your product feed |
 
-**Step 3.** Duplicate the campaign. In the copy, find **Bid strategy**: on the campaign if it uses campaign budget, otherwise on the ad set. Choose **Cost per result goal** (once called a cost cap). Type a number a little under break-even, for example $36.
+Meta recommends 4:5 for Facebook Feed and 9:16 for Stories and Reels (see [Meta: aspect ratios by placement](https://www.facebook.com/business/help/682655495435254)).
 
-**Expected result:** A test copy that aims to keep the average cost per sale near your number. Meta does not guarantee it.
-
-**Step 4.** Set the budget a bit higher than normal. Caps often spend less than the budget, so a bigger budget gives Meta room.
-
-**Expected result:** The capped copy is not starved of money.
-
-**Step 5.** Run both for 7 days. Compare total sales and cost per sale.
-
-**Expected result:** You know if the cap made you more profit. If it barely spent, raise the cap by 10% and try again.
-
-**Step 6.** Optional: in **Advertising settings** (under **All tools**), look for **Value rules**, if your account has them. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.
-
-**Expected result:** At most one rule, backed by your own numbers.
-
-**Watch out:** A bid cap (a hard limit on each bid) is stricter than a cost per result goal. It can stop delivery completely. Leave bid caps for experienced accounts.
-
-## Lesson 7.16: Show the right product to the right person with catalog ads
+## Lesson 8.6: Show the right product to the right person with catalog ads
 <!-- stage:attract -->
 
 **Why this matters:** Catalog ads pick products from your store. They show each person the ones they looked at or are likely to want. Meta calls them Advantage+ catalog ads (once called dynamic product ads). They work best when you have more than a handful of products. They only work well if your product list and your pixel agree on which product is which.
@@ -601,6 +313,294 @@ Helix makes the campaign, ad set and ads in your own ad account, switched off (p
 ### Good to know
 
 TikTok has catalog ads too. In TikTok Ads Manager, open **Assets > Catalog** to add products. You need at least 4 products that are in stock, approved and active to run them (see [TikTok: create Catalog Ads](https://ads.tiktok.com/help/article/how-to-create-catalog-ads-for-the-website-conversions-objective)).
+
+## Lesson 8.7: Launching
+<!-- stage:attract -->
+
+**Why this matters:** How you launch decides how fairly ads are tested and whether they keep their likes and comments. Build new ads in a switched-off campaign, copy them across with the same post, and switch them on together.
+
+**Step 1.** Make the new ads in your switched-off build campaign.
+
+1. In Ads Manager, open the build campaign (its On/Off switch is grey).
+2. Click the **Ads** tab.
+3. Click **+ Create** and make one new ad. Repeat for each ad.
+
+**Expected result:** The new ads sit in the paused build campaign, with "Off" under **Delivery**.
+
+<!-- do:meta-draft -->
+
+**Step 2.** Copy the new ads into your live campaign.
+
+1. Tick the new ads.
+2. Click **Duplicate**.
+3. Choose the live campaign and ad set.
+4. Click **Duplicate** again.
+
+**Expected result:** Copies of the ads appear in the live ad set, still switched off.
+
+**Step 3.** Open each copy and find the ad's **Ad setup** section. Choose **Use existing post** and pick the first ad's post, so likes and comments carry over.
+
+**Expected result:** Each copy shows the same post as the original. If you do not see **Use existing post**, the first ad is not published yet. Publish it in the build campaign first.
+
+**Step 4.** Tick all the new copies and switch them all on together. Then click **Publish** (bottom right) if Meta asks.
+
+**Expected result:** All the new ads start on the same day, with **Delivery** showing "In review", then "Learning" or "Active".
+
+**Step 5.** Leave them alone for 2 to 5 days before judging.
+
+**Expected result:** You judge on settled numbers, not early noise.
+
+**Watch out:** Only use ad scheduling for a specific reason, like a sale that starts at a set time.
+
+### Good to know
+
+<!-- guide:meta-1-create-sales-campaign -->
+![Start a Sales campaign in Meta Ads Manager](../../public/guides/meta-1-create-sales-campaign.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Meta: create a campaign in Ads Manager](https://www.facebook.com/business/help/1658289035439772)
+<!-- /guide:meta-1-create-sales-campaign -->
+
+<!-- guide:meta-2-budget-pixel-audience -->
+![Set budget, sales tracking and audience](../../public/guides/meta-2-budget-pixel-audience.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-2-budget-pixel-audience -->
+
+<!-- guide:meta-3-write-the-ad -->
+![Write the ad and add tracking](../../public/guides/meta-3-write-the-ad.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-3-write-the-ad -->
+
+<!-- guide:meta-4-review-helix-draft -->
+![Review a Helix draft and launch it](../../public/guides/meta-4-review-helix-draft.svg)
+
+*Drawing, not a real screenshot. Labels on your screen may look a little different.*
+<!-- /guide:meta-4-review-helix-draft -->
+
+## Lesson 8.8: The learning phase
+<!-- stage:attract -->
+
+**Why this matters:** The learning phase is the first days after you start or change an ad set. Meta is still working out who to show it to. It usually ends after about 50 results in the week after the last big edit. With fewer, **Delivery** shows "Learning limited". Results are unstable during learning. Knowing what resets it saves you from breaking good campaigns (see [Meta: the learning phase](https://www.facebook.com/business/help/112167992830700)).
+
+**Step 1.** Before you edit a live ad set, check if the edit restarts learning. These do: changing ads, audience, conversion event or bid strategy, or pausing 7+ days. So can a big budget change, often over 20% ([Meta: significant edits](https://www.facebook.com/business/help/316478108955072)).
+
+**Expected result:** You only make big edits on purpose.
+
+**Step 2.** Launch new tests as new campaigns rather than editing working ones.
+
+**Expected result:** Existing campaigns keep their learning, because new campaigns do not reset them.
+
+**Step 3.** Judge results on the last 7 days, not one day.
+
+**Expected result:** A great week one followed by a weaker week two does not panic you.
+
+**Watch out:** Do not keep moving winning ads into "the best campaign". Copy them instead, so each campaign keeps what it learned.
+
+## Lesson 8.9: Daily optimisation in 10 minutes
+<!-- stage:attract -->
+
+**Why this matters:** Ten minutes a day keeps Meta healthy. Five steps in the same order every day turn a confusing dashboard into one clear action. In Helix, **Your ads** shows the verdicts for you.
+
+**Step 1.** Set your stance from your scorecard: push, careful push, hold or defend (Lesson 1.6).
+
+**Expected result:** You have one word for today.
+
+<!-- do:numbers -->
+
+**Step 2.** In Ads Manager, set the date to **Last 7 days** and choose **Columns > Daily**. On the **Campaigns** tab, read each campaign's **Amount spent** and **Frequency** (how many times the same person saw your ads).
+
+**Expected result:** You know whether any campaign is overspending or tiring its audience.
+
+**Step 3.** Grade each ad. **Star:** great, keep it and give it more. **Steady:** fine, leave it. **Passenger:** little spend, little effect, leave it unless it starts spending. **Drain:** lots of spend, poor results, turn it off.
+
+**Expected result:** Every ad has a grade, and drains are switched off.
+
+**Step 4.** Label each campaign: winning, learning, shaky or dying.
+
+**Expected result:** Every campaign has a label.
+
+<!-- do:insights -->
+
+**Step 5.** Take one action and write it in your decision log. [SOP 06](../sops/06-meta-daily-optimisation.md) has the full detail and numbers.
+
+**Expected result:** One logged action a day, about 10 minutes in total.
+
+## Lesson 8.10: Reach potential
+<!-- stage:attract -->
+
+**Why this matters:** Reach potential is how many people an ad can reach. After that, the same people start seeing it twice. An ad with a tiny reach cannot grow, even if its cost per sale is great.
+
+**Step 1.** See which ads reach the most people.
+
+1. In Ads Manager, open the **Ads** tab.
+2. Set the date to **Last 7 days**.
+3. Click **Columns**, then **Customise columns**. Tick **Reach** and **Frequency** and click **Apply**.
+4. Click the **Reach** column header to sort.
+
+**Expected result:** You can see which ads reach many people and which reach few.
+
+**Step 2.** Mark ads with big reach and an OK cost per sale as growth candidates.
+
+**Expected result:** You have a short list of ads that can take more spend.
+
+**Step 3.** To spend more, pair your low-cost, low-reach ad with a high-reach ad in the same campaign.
+
+**Expected result:** The campaign can grow without frequency climbing fast.
+
+## Lesson 8.11: Managing expensive cold campaigns
+<!-- stage:attract -->
+
+**Why this matters:** Cold campaigns for new people always look costly. Meta misses many of the sales they cause, because people buy days later another way. Judging them wrongly leads to cutting the campaigns that feed the whole store.
+
+**Step 1.** Compare cold campaigns only with other cold campaigns, never with warm ones.
+
+**Expected result:** Your cold campaigns are ranked against each other.
+
+**Step 2.** Watch the share of orders from new customers each week.
+
+**Expected result:** You know whether cold spend is still bringing new buyers.
+
+**Step 3.** Judge cold spend by your total MER trend on the Dashboard. MER is total ad spend as a share of total sales.
+
+**Expected result:** You see the whole-store effect, not Meta's partial view.
+
+**Watch out:** Cut cold spend only when MER gets worse and orders from new customers fall.
+
+<!-- do:growth -->
+
+## Lesson 8.12: Metrics by funnel layer
+<!-- stage:attract -->
+
+**Why this matters:** The funnel layer is how well the audience knows you: cold, mixed, warm or hot. Each layer has its own numbers to watch and its own allowance for cost per sale.
+
+**Step 1.** Label each campaign with its layer using the naming pattern from Lesson 7.7.
+
+**Expected result:** Every campaign name shows Cold, Mixed, Warm or Hot.
+
+**Step 2.** Compare each campaign with the numbers in the table below for its layer. That includes how much it may pay for one sale (CPA).
+
+**Expected result:** You judge each campaign against the right benchmark.
+
+### Good to know
+
+| Layer | Who | Main numbers to watch |
+| --- | --- | --- |
+| Cold | Never heard of you | Reach, CPM, hook rate, outbound CTR, share of new customers, cost per sale compared with 2 times target |
+| Mixed | Cold and warm together | Cost per sale compared with 1.25 times target, frequency, share who engaged |
+| Warm | Visited or engaged | Cost per sale compared with target, frequency |
+| Hot | Added to cart or started checkout | Cost per sale compared with 0.75 times target, frequency |
+
+## Lesson 8.13: Scaling challenge
+<!-- stage:grow -->
+
+**Why this matters:** A scaling challenge is a planned 2 to 4 week push to spend more. If you have new ads ready and a loss limit set, even a failed test teaches you. It shows what is holding you back.
+
+**Step 1.** Prepare 6 to 10 new ads before you start.
+
+**Expected result:** Fresh ads are ready to add as frequency rises.
+
+**Step 2.** Write down the most you are willing to lose.
+
+**Expected result:** You have a dollar limit that ends the challenge.
+
+**Step 3.** Raise the budget a little.
+
+1. Click the campaign name (if it uses campaign budget) or the ad set name (if it uses ad set budgets).
+2. Raise **Daily budget** by 10 to 20%.
+3. Click **Publish**.
+4. Each day, write the spend and reach in your tracking sheet.
+
+**Expected result:** You can see whether new spend is finding new people.
+
+**Step 4.** Hold each new level for 10 to 14 days.
+
+**Expected result:** MER has time to settle at each level.
+
+**Step 5.** Read the result.
+
+- Spend grew much faster than reach? Add new ads, or remove some exclusions.
+- MER (total ad spend as a share of total sales) didn't settle? Go back one budget step and find out why.
+
+**Expected result:** You have a clear next action, whether the challenge worked or not.
+
+<!-- do:growth -->
+
+## Lesson 8.14: Cost caps, bid caps and value rules
+<!-- stage:grow -->
+
+**Why this matters:** By default, Meta spends your whole budget and tries to get the most sales. Caps and rules let you tell Meta the most you will pay, or which buyers are worth more to you. Used well, they protect profit. Used too early, they stop your ads from spending at all.
+
+**Step 1.** Only try this when a campaign already has at least 50 sales a week and steady results. That is a rule of thumb: caps need plenty of data to work (see [Meta: bid strategies](https://www.facebook.com/business/help/1619591734742116)). Check in Ads Manager on the **Campaigns** tab.
+
+**Expected result:** You know if the campaign is ready. If not, keep the default setting.
+
+**Step 2.** Find your break-even cost per sale from Lesson 1.5. Write it down.
+
+**Expected result:** One number, for example $40.
+
+**Step 3.** Duplicate the campaign. In the copy, find **Bid strategy**: on the campaign if it uses campaign budget, otherwise on the ad set. Choose **Cost per result goal** (once called a cost cap). Type a number a little under break-even, for example $36.
+
+**Expected result:** A test copy that aims to keep the average cost per sale near your number. Meta does not guarantee it.
+
+**Step 4.** Set the budget a bit higher than normal. Caps often spend less than the budget, so a bigger budget gives Meta room.
+
+**Expected result:** The capped copy is not starved of money.
+
+**Step 5.** Run both for 7 days. Compare total sales and cost per sale.
+
+**Expected result:** You know if the cap made you more profit. If it barely spent, raise the cap by 10% and try again.
+
+**Step 6.** Optional: in **Advertising settings** (under **All tools**), look for **Value rules**, if your account has them. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.
+
+**Expected result:** At most one rule, backed by your own numbers.
+
+**Watch out:** A bid cap (a hard limit on each bid) is stricter than a cost per result goal. It can stop delivery completely. Leave bid caps for experienced accounts.
+
+## Lesson 8.15: Attribution settings
+<!-- stage:attract -->
+
+**Why this matters:** Attribution is how a platform decides which ad gets credit for a sale. Meta's standard setting credits sales within 1 or 7 days of a link click. It also credits sales within 1 day of a view or of another tap on the ad. That is not the full truth, so you need a second check (see [Meta: attribution settings](https://www.facebook.com/business/help/460276478298895)).
+
+**Step 1.** In Ads Manager, click the **Columns** menu, then **Compare attribution models**. Tick **Incremental** and click **Apply**. It counts only sales Meta's model thinks the ad truly caused (see [Meta: incremental attribution results](https://www.facebook.com/business/help/1271619100603114)).
+
+**Expected result:** You can see how much of Meta's reported sales are likely extra sales.
+
+**Step 2.** Each week, compare Meta's reported sales with your real sales in Shopify. Also check your MER on the Dashboard (total ad spend as a share of total sales).
+
+**Expected result:** You trust the store's numbers first and Meta's second.
+
+<!-- do:growth -->
+
+**Step 3.** When you spend enough, run a holdout test, as in Lesson 9.10. You hide ads from a group and compare.
+
+**Expected result:** You have a measured answer to how many sales ads really cause.
+
+## Lesson 8.16: Troubleshooting
+<!-- stage:attract -->
+
+**Why this matters:** Meta throws up a handful of common problems, from ads that will not spend to strange labels. Each has a known fix.
+
+**Step 1.** Find your problem in the table below.
+
+**Expected result:** You have the matching fix.
+
+**Step 2.** Apply the fix and note it in your decision log with the date.
+
+**Expected result:** The problem is fixed, and you can find what you did if it comes back.
+
+### Good to know
+
+| Problem | What to check |
+| --- | --- |
+| Ads only spend part of the budget | Budget too low for the audience, billing problems, policy limits, the schedule |
+| Ads stuck "In review" | Review usually takes up to 24 hours. Check for policy or catalog errors. After 48 hours, copy the ad and try again. |
+| Meta adds a discount label you did not set | The ad's Advantage+ creative enhancements and offer settings. Turn off automatic offers. |
+| "Data restrictions applied" | Meta has put your store in a sensitive category. Ask for a review. |
+| Instagram sells worse than Facebook | Usually fine. Judge both together. Only remove a placement with strong proof. |
+| You reached the limit on ads | Archive dead ads. Combine ad sets. |
+| You want ads to run only at certain hours | Ad sets with either budget type can use **Delivery scheduling** ([Meta: schedule an ad set](https://www.facebook.com/business/help/1381935425400769)). Most stores do better leaving ads on all day. Test it only with clear proof that some hours lose money. |
+| You keep overspending in a sale | Set a spending limit on the campaign or the account before the sale starts. |
 
 ## Self-check
 

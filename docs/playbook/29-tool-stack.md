@@ -1,4 +1,4 @@
-# Module 18: Choosing your tool stack
+# Module 29: Choosing your tool stack
 
 **Outcome:** the right tools for where your store is today, without paying for apps you do not need.
 
@@ -27,7 +27,7 @@
 
 ---
 
-## Lesson 18.1: The stack by need and stage
+## Lesson 29.1: The stack by need and stage
 <!-- stage:grow -->
 
 **Why this matters:** The right tools depend on your stage. You may be just starting or have steady weekly sales (stage 1). Or you run several channels with real ad spend (stage 2). Buying tools too early slows your site and drains cash.
@@ -67,7 +67,7 @@
 | Sending free product to creators | A creator search and gifting platform | Stage 1 |
 | Packaging | A sustainable packaging supplier | Early |
 
-## Lesson 18.2: Rules for adding a tool
+## Lesson 29.2: Rules for adding a tool
 <!-- stage:grow -->
 
 **Why this matters:** Every app costs money and speed. Four steps make sure each one earns its place.

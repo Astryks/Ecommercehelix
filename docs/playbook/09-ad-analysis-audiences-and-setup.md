@@ -1,8 +1,8 @@
-# Module 20: Ad performance analysis, audiences and campaign setup
+# Module 9: Ad performance analysis, audiences and campaign setup
 
 **Outcome:** you can set up audiences and campaigns the right way on Meta, Google and TikTok. You can read your results and find the real cause of a problem. It may be the ad, the page, the offer or the checkout. Then you report it so it leads to a clear choice.
 
-**Related:** [Module 6 Defining campaigns](06-defining-campaigns.md), [Module 7 Meta ads](07-meta-ads.md), [Module 8 Google ads](08-google-ads.md), [Module 2 Diagnose and fix](02-diagnose-and-fix.md), [SOP 05](../sops/05-meta-structure-and-scaling.md), [SOP 06](../sops/06-meta-daily-optimisation.md), [SOP 09](../sops/09-google-shopping-pmax-search.md)
+**Related:** [Module 7 Defining campaigns](07-defining-campaigns.md), [Module 8 Meta ads](08-meta-ads.md), [Module 10 Google ads](10-google-ads.md), [Module 2 Diagnose and fix](02-diagnose-and-fix.md), [SOP 05](../sops/05-meta-structure-and-scaling.md), [SOP 06](../sops/06-meta-daily-optimisation.md), [SOP 09](../sops/09-google-shopping-pmax-search.md)
 
 
 <!-- plain:start -->
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 20.1: Before you launch: tracking you can trust
+## Lesson 9.1: Before you launch: tracking you can trust
 <!-- stage:attract -->
 
 **Why this matters:** Bad data leads to bad decisions, and a broken pixel can make good ads look like failures. Check tracking once now, then every month. Your store's own reports are the truth; ad platforms are only for direction.
@@ -75,7 +75,7 @@
 
 **Expected result:** Google Analytics shows visits by channel and campaign.
 
-**Step 10.** Place a real test order (Lesson 22.16). Check Meta Events Manager and Google for the Purchase.
+**Step 10.** Place a real test order (Lesson 13.14). Check Meta Events Manager and Google for the Purchase.
 
 **Expected result:** One test order shows as a Purchase in both Meta and Google.
 
@@ -85,7 +85,7 @@
 
 ### Good to know
 
-## Lesson 20.2: Setting up target audiences
+## Lesson 9.2: Setting up target audiences
 <!-- stage:attract -->
 
 **Why this matters:** Audiences tell each platform who already knows you. Then cold campaigns find new people and warm campaigns reach the right ones. Set them up once on Meta, Google and TikTok, then reuse them in every campaign.
@@ -148,12 +148,63 @@
 | Hot | Close to buying | Added to cart (14 days), started checkout (7 days), leaving out buyers from the last 7 days |
 | Existing customers | Bought before | Buyers, for launches and products people reorder |
 
-## Lesson 20.3: Setting up a Meta sales campaign step by step
+## Lesson 9.3: Meta audience check: is cold spend reaching new people?
 <!-- stage:attract -->
 
-**Why this matters:** Set up each Meta sales campaign the same careful way. Then every ad gets a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account. You check it and switch it on. New to Ads Manager? Do Lesson 7.14 first, and Lesson 7.13 for your very first ad.
+**Why this matters:** A "cold" campaign is meant to find new buyers. Meta's delivery system often drifts towards people who already know you, because they buy more easily. The results look great while very few new customers arrive. A 10-minute check each week shows where the money really goes.
 
-**Step 1.** Write the campaign brief first (Lesson 6.16). Include target cost per purchase, who it is for, daily budget and when you will stop it.
+**Step 1.** Make sure Meta knows who your audiences are. In **Advertising settings > Audience segments** (Lesson 9.2, Step 1), check that your engaged audience and existing customers are set and that the customer list is recent.
+
+**Expected result:** Both segments are set, and the customer list was updated in the last 30 days.
+
+**Step 2.** Open the breakdown. In Ads Manager, select one prospecting (cold) campaign and the last 7 days. Click **Breakdown**, then **Audience segments**.
+
+**Expected result:** You see spend, purchases and cost per purchase split into new audience, engaged audience and existing customers.
+
+**Step 3.** Work out the share of spend on new people: new audience spend divided by the campaign's total spend.
+
+**Expected result:** You have one percentage for each cold campaign.
+
+**Watch out:** A rule of thumb, not a Meta rule: aim for about 70% or more of cold spend on the new audience. Much lower means the campaign is mostly reselling to people who would likely have bought anyway.
+
+**Step 4.** Check how often new people see your ads. Add the **Frequency** column with the same breakdown and the last 7 days.
+
+**Expected result:** You know the frequency for the new audience.
+
+**Watch out:** A rule of thumb: keep new-audience frequency under about 2 over 7 days. Higher usually means the audience is too small or the ads are too few or too alike.
+
+**Step 5.** Find the cause and make one fix, using the table below.
+
+**Expected result:** One change is made and written in your test log with today's date.
+
+**Step 6.** In each cold ad set, exclude your customer audiences, so past buyers stay out on purpose.
+
+**Expected result:** Cold ad sets exclude past buyers. If you want to reach past buyers, they have their own ad set that includes only your customer audience, with a spending limit on that ad set. Meta announced in 2025 it is retiring its old past-customer spend cap, and its own guide now splits new and existing customers into separate ad sets this way (see [Meta for Developers: Advantage+ campaign experience](https://developers.facebook.com/documentation/ads-commerce/marketing-api/advantage-campaigns)).
+
+**Watch out:** Ads Manager names and screens change often. If the options look different in your account, search Meta Business Help Centre for "existing customers" before you change anything.
+
+**Step 7.** Repeat the check every week, and after any big change, for 3 weeks.
+
+**Expected result:** The new audience share and frequency move towards the rules of thumb, and the number of new customers in your store rises.
+
+<!-- do:meta-connect -->
+
+### Good to know
+
+| What you see | Likely cause | Fix |
+| --- | --- | --- |
+| New audience share under about 70% | Past buyers and engagers not excluded; the system finds them cheaper | Exclude customer audiences in cold ad sets (Step 6) and check the customer list is up to date |
+| New audience share fine, but few new customers in your store | Store reports count repeat buyers, or tracking is off | Compare new customers in Shopify with Meta's purchases (Lesson 9.1) |
+| New audience frequency above about 2 in 7 days | Audience too narrow, or too few ads | Go broad (Lesson 9.2, Step 4) and add new ad ideas (Lesson 6.13) |
+| Cost per purchase from new people far above target | The ad speaks to people who know you | Write for strangers: a clear problem, the product and proof (Lesson 5.5) |
+| Engaged audience takes most of the spend | Retargeting mixed into a cold campaign | Move retargeting to its own warm campaign (Lesson 7.4) |
+
+## Lesson 9.4: Setting up a Meta sales campaign step by step
+<!-- stage:attract -->
+
+**Why this matters:** Set up each Meta sales campaign the same careful way. Then every ad gets a fair test. Helix can build Steps 2 to 8 for you as a paused draft in your own account. You check it and switch it on. New to Ads Manager? Do Lesson 8.1 first, and Lesson 8.3 for your very first ad.
+
+**Step 1.** Write the campaign brief first (Lesson 7.16). Include target cost per purchase, who it is for, daily budget and when you will stop it.
 
 **Expected result:** The brief is finished before you open Ads Manager.
 
@@ -161,13 +212,13 @@
 
 1. In Ads Manager, click **+ Create**.
 2. Choose **Sales** and click **Continue**.
-3. Leave **Advantage+** on for new customers. For a controlled test, narrow the audience or placements later, and Meta shows **Advantage+ off** (Lesson 7.2).
+3. Leave **Advantage+** on for new customers. For a controlled test, narrow the audience or placements later, and Meta shows **Advantage+ off** (Lesson 8.4).
 
 **Expected result:** A new Sales campaign is open.
 
 <!-- do:meta-draft -->
 
-**Step 3.** Click the campaign name field and name it with your pattern, for example `03-Manual-Cold-Broad-TEST-B16` (Lesson 6.7).
+**Step 3.** Click the campaign name field and name it with your pattern, for example `03-Manual-Cold-Broad-TEST-B16` (Lesson 7.7).
 
 **Expected result:** The name shows the number, type, audience and test.
 
@@ -183,11 +234,11 @@
 
 **Expected result:** All your campaigns count sales the same way.
 
-**Step 7.** Set the audience as in Lesson 20.2 and leave **Advantage+ placements** on.
+**Step 7.** Set the audience as in Lesson 9.2 and leave **Advantage+ placements** on.
 
 **Expected result:** Audience and placements match the brief.
 
-**Step 8.** At the ad level, add 3 to 6 ads that test one thing. Each needs main text, a headline and a link with UTM tags (Lesson 20.1). Use **Duplicate** in the ad panel to make each extra ad.
+**Step 8.** At the ad level, add 3 to 6 ads that test one thing. Each needs main text, a headline and a link with UTM tags (Lesson 9.1). Use **Duplicate** in the ad panel to make each extra ad.
 
 **Expected result:** Each ad has text, headline and a tagged link.
 
@@ -229,14 +280,14 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.*
 <!-- /guide:meta-4-review-helix-draft -->
 
-## Lesson 20.4: Setting up Google step by step
+## Lesson 9.5: Setting up Google step by step
 <!-- stage:attract -->
 
-**Why this matters:** Google works best with three simple campaigns, built in this order. First **brand search**: your ad shows when people search your store's name. Then **Performance Max** fed by your product list, which shows your products across Shopping, Search, YouTube and Gmail. Later, **non-brand search** for the words that sell. Helix does not connect to Google Ads yet, so you build these yourself. For your very first campaign, Lesson 8.12 has the full beginner walk-through, including creating the account.
+**Why this matters:** Google works best with three simple campaigns, built in this order. First **brand search**: your ad shows when people search your store's name. Then **Performance Max** fed by your product list, which shows your products across Shopping, Search, YouTube and Gmail. Later, **non-brand search** for the words that sell. Helix does not connect to Google Ads yet, so you build these yourself. For your very first campaign, Lesson 10.4 has the full beginner walk-through, including creating the account.
 
 **Words you will see:** **Merchant Center** is where Google keeps your product list (the **feed**). A **keyword** is a search you want to show up for. **Match type** controls how closely a search must match: **exact** (that search or very close) and **phrase** (searches containing it). **ROAS** is sales divided by ad spend.
 
-**Step 1.** Do Lesson 8.1 first. The Shopify **Google & YouTube** app must be connected, with **Purchase** as your main conversion.
+**Step 1.** Do Lesson 10.2 first. The Shopify **Google & YouTube** app must be connected, with **Purchase** as your main conversion.
 
 **Expected result:** In Google Ads, **Goals > Conversions > Summary** shows Purchase as Primary and "Recording conversions".
 
@@ -314,7 +365,7 @@
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Google: add negative keywords](https://support.google.com/google-ads/answer/2453972)
 <!-- /guide:google-2-block-wasted-searches -->
 
-## Lesson 20.5: Setting up a TikTok campaign step by step
+## Lesson 9.6: Setting up a TikTok campaign step by step
 <!-- stage:attract -->
 
 **Why this matters:** TikTok campaigns work like Meta with a few differences. The purchase event has a different name, learning is jumpier, and sales often show up under other channels.
@@ -350,7 +401,7 @@ Which TikTok goal to use when:
 
 Send value and currency with your purchase and add-to-cart events, so TikTok knows what each sale is worth.
 
-## Lesson 20.6: The metric tree
+## Lesson 9.7: The metric tree
 <!-- stage:attract -->
 
 **Why this matters:** Sales from ads come from a chain of steps. It runs from showing the ad to the size of the order. Improve one link and everything below it moves, so finding the weak link is the fastest win.
@@ -379,7 +430,7 @@ Spend
                              └─ AOV (average order)      ← bundles, free shipping amount, upsells
 ```
 
-## Lesson 20.7: Cross-diagnosis: is it the ad, the page, the offer or the checkout?
+## Lesson 9.8: Cross-diagnosis: is it the ad, the page, the offer or the checkout?
 <!-- stage:attract -->
 
 **Why this matters:** When results drop, the cause can be the ad, the page, the offer or the checkout. This table maps each pattern of numbers to its likely cause and fix. Helix runs the same rules for you in **What to fix**.
@@ -409,13 +460,13 @@ Spend
 | Good hook rate, low hold rate | The middle of the video | Tighten the middle, show the product sooner, add proof. |
 | Frequency and CPM rising, CTR falling | People are tired of the ads, or the audience is used up | Launch a new batch of ads. Go broader. Check reach grows with spend. |
 | CPM jumps across all campaigns | The season, or more advertisers competing | Expect it in busy periods. Protect your margin and lean on email and SMS. |
-| Platform ROAS looks fine, but MER is getting worse | Platforms taking credit for sales they did not cause, often retargeting | Move budget to cold, check the share of new customers, run a holdout test (Lesson 20.9). |
+| Platform ROAS looks fine, but MER is getting worse | Platforms taking credit for sales they did not cause, often retargeting | Move budget to cold, check the share of new customers, run a holdout test (Lesson 9.10). |
 | Plenty of clicks, few landing page views | A slow page or broken tracking | Test page speed. Check the pixel fires when the page loads. |
 | Good conversion, small orders | Missing ways to raise order value | Free shipping amount, bundles, a free gift, an offer after purchase. |
 | Lots of views, few clicks | Weak call to action, or the wrong people | A clear call to action, the offer in the ad, a hook that attracts buyers not browsers. |
 | Lots of refunds after a campaign | The ad promised too much | Make claims match reality. Improve size or fit guidance. |
 
-## Lesson 20.8: Breakdowns that reveal problems
+## Lesson 9.9: Breakdowns that reveal problems
 <!-- stage:attract -->
 
 **Why this matters:** Breakdowns split your results by group in Ads Manager and reveal problems hidden in averages. Look at them weekly, not daily.
@@ -436,7 +487,7 @@ Spend
 
 **Expected result:** You know how much spend reaches new people and which countries deserve their own campaigns.
 
-## Lesson 20.9: Attribution and incrementality
+## Lesson 9.10: Attribution and incrementality
 <!-- stage:attract -->
 
 **Why this matters:** Every platform claims credit for the same sale. Incrementality means sales that would not have happened without the ad. Five rules keep you honest.
@@ -463,7 +514,7 @@ Spend
 
 **Expected result:** Customer answers sit next to your data.
 
-## Lesson 20.10: Your analysis rhythm
+## Lesson 9.11: Your analysis rhythm
 <!-- stage:grow -->
 
 **Why this matters:** Keep a fixed rhythm of daily, weekly, monthly and quarterly checks. Then nothing is missed or checked too often.
@@ -487,7 +538,7 @@ Spend
 | Monthly | 2 hours | MER and contribution profit against target, share of new customers, channel mix, test results, next month's plan. |
 | Every 3 months | Half a day | A holdout test, a review of your account setup, and the budget plan for the next busy season. |
 
-## Lesson 20.11: Reporting that leads to decisions
+## Lesson 9.12: Reporting that leads to decisions
 <!-- stage:grow -->
 
 **Why this matters:** A report is only useful if it leads to a decision. Four questions do that; dashboards with 40 numbers do not.
@@ -508,7 +559,7 @@ Spend
 
 **Watch out:** If a number would not change a decision, drop it.
 
-## Lesson 20.12: Common analysis mistakes
+## Lesson 9.13: Common analysis mistakes
 <!-- stage:attract -->
 
 **Why this matters:** Most analysis mistakes come from judging too soon or comparing the wrong things. Checking for these four saves money.
@@ -529,12 +580,12 @@ Spend
 
 **Expected result:** Campaigns finish learning and your numbers stay honest.
 
-## Lesson 20.13: Read Google Analytics in 15 minutes
+## Lesson 9.14: Read Google Analytics in 15 minutes
 <!-- stage:attract -->
 
 **Why this matters:** Your store reports say what sold. Google Analytics 4 (GA4, Google's free website report tool) shows where visitors came from and where they left. That tells you which channel to grow and which page to fix.
 
-**Step 1.** Check GA4 is connected (Lesson 8.1). Open GA4 and go to **Reports > Life cycle > Acquisition > Traffic acquisition**.
+**Step 1.** Check GA4 is connected (Lesson 10.2). Open GA4 and go to **Reports > Life cycle > Acquisition > Traffic acquisition**.
 
 **Expected result:** A table of visits and sales by channel, like paid social, organic search and email.
 
@@ -550,66 +601,15 @@ Spend
 
 **Expected result:** You can see the step where the most people leave.
 
-**Step 5.** Fix that one step first. Product page leaks go to Lesson 9.2. Checkout leaks go to Lesson 9.16.
+**Step 5.** Fix that one step first. Product page leaks go to Lesson 14.2. Checkout leaks go to Lesson 14.15.
 
 **Expected result:** One clear fix, picked from data instead of a guess.
 
-**Step 6.** Optional: open **Admin > Data display > Audiences**. Make an audience of 30-day cart adders who did not buy. Use it in Google Ads to show them reminder ads (Lesson 8.1).
+**Step 6.** Optional: open **Admin > Data display > Audiences**. Make an audience of 30-day cart adders who did not buy. Use it in Google Ads to show them reminder ads (Lesson 10.2).
 
 **Expected result:** A warm audience you can reach again.
 
 **Watch out:** GA4 and your ad apps count sales in different ways, so numbers will not match. Use GA4 to compare channels and find leaks. Use your store for the real sales total.
-
-## Lesson 20.14: Meta audience check: is cold spend reaching new people?
-<!-- stage:attract -->
-
-**Why this matters:** A "cold" campaign is meant to find new buyers. Meta's delivery system often drifts towards people who already know you, because they buy more easily. The results look great while very few new customers arrive. A 10-minute check each week shows where the money really goes.
-
-**Step 1.** Make sure Meta knows who your audiences are. In **Advertising settings > Audience segments** (Lesson 20.2, Step 1), check that your engaged audience and existing customers are set and that the customer list is recent.
-
-**Expected result:** Both segments are set, and the customer list was updated in the last 30 days.
-
-**Step 2.** Open the breakdown. In Ads Manager, select one prospecting (cold) campaign and the last 7 days. Click **Breakdown**, then **Audience segments**.
-
-**Expected result:** You see spend, purchases and cost per purchase split into new audience, engaged audience and existing customers.
-
-**Step 3.** Work out the share of spend on new people: new audience spend divided by the campaign's total spend.
-
-**Expected result:** You have one percentage for each cold campaign.
-
-**Watch out:** A rule of thumb, not a Meta rule: aim for about 70% or more of cold spend on the new audience. Much lower means the campaign is mostly reselling to people who would likely have bought anyway.
-
-**Step 4.** Check how often new people see your ads. Add the **Frequency** column with the same breakdown and the last 7 days.
-
-**Expected result:** You know the frequency for the new audience.
-
-**Watch out:** A rule of thumb: keep new-audience frequency under about 2 over 7 days. Higher usually means the audience is too small or the ads are too few or too alike.
-
-**Step 5.** Find the cause and make one fix, using the table below.
-
-**Expected result:** One change is made and written in your test log with today's date.
-
-**Step 6.** In each cold ad set, exclude your customer audiences, so past buyers stay out on purpose.
-
-**Expected result:** Cold ad sets exclude past buyers. If you want to reach past buyers, they have their own ad set that includes only your customer audience, with a spending limit on that ad set. Meta announced in 2025 it is retiring its old past-customer spend cap, and its own guide now splits new and existing customers into separate ad sets this way (see [Meta for Developers: Advantage+ campaign experience](https://developers.facebook.com/documentation/ads-commerce/marketing-api/advantage-campaigns)).
-
-**Watch out:** Ads Manager names and screens change often. If the options look different in your account, search Meta Business Help Centre for "existing customers" before you change anything.
-
-**Step 7.** Repeat the check every week, and after any big change, for 3 weeks.
-
-**Expected result:** The new audience share and frequency move towards the rules of thumb, and the number of new customers in your store rises.
-
-<!-- do:meta-connect -->
-
-### Good to know
-
-| What you see | Likely cause | Fix |
-| --- | --- | --- |
-| New audience share under about 70% | Past buyers and engagers not excluded; the system finds them cheaper | Exclude customer audiences in cold ad sets (Step 6) and check the customer list is up to date |
-| New audience share fine, but few new customers in your store | Store reports count repeat buyers, or tracking is off | Compare new customers in Shopify with Meta's purchases (Lesson 20.1) |
-| New audience frequency above about 2 in 7 days | Audience too narrow, or too few ads | Go broad (Lesson 20.2, Step 4) and add new ad ideas (Lesson 19.13) |
-| Cost per purchase from new people far above target | The ad speaks to people who know you | Write for strangers: a clear problem, the product and proof (Lesson 5.5) |
-| Engaged audience takes most of the spend | Retargeting mixed into a cold campaign | Move retargeting to its own warm campaign (Lesson 6.4) |
 
 ## Self-check
 

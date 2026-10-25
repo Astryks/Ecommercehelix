@@ -49,22 +49,22 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
     {
       id: "ctr", name: "CTR (click-through rate)", plain: "Share of people who saw your ad and clicked through to your store.", value: c.metaCtr !== null ? pct(c.metaCtr) : "Connect Meta", raw: c.metaCtr,
       good: "1% or more on cold Meta ads (1.2% or more is strong)", tone: c.metaCtr === null ? "none" : band(c.metaCtr, 1, 0.7),
-      source: meta("Until then, read Link CTR in Meta Ads Manager > Campaigns > Columns: Performance and clicks."), learn: "/learn/07-meta-ads",
+      source: meta("Until then, read Link CTR in Meta Ads Manager > Campaigns > Columns: Performance and clicks."), learn: "/learn/08-meta-ads",
     },
     {
       id: "atc", name: "Add-to-cart rate", plain: "Share of visits where someone added a product to the cart.", value: m.t.addToCarts ? pct(atc) : "Not filled in", raw: m.t.addToCarts ? atc : null,
       good: "About 6% or more of sessions", tone: m.t.addToCarts ? band(atc, 6, 4) : "none",
-      source: { kind: "manual", where: "Optional. Shopify admin > Analytics > Reports > Conversion rate over time > Sessions with cart additions." }, learn: "/learn/09-website-and-cro",
+      source: { kind: "manual", where: "Optional. Shopify admin > Analytics > Reports > Conversion rate over time > Sessions with cart additions." }, learn: "/learn/14-website-and-cro",
     },
     {
       id: "cr", name: "Conversion rate", plain: "Share of visits that become an order (orders divided by sessions).", value: pct(m.cr), raw: m.cr,
       good: "2% or more is solid (many stores sit between 1 and 3%)", tone: m.t.sessions ? band(m.cr, 2, 1) : "none",
-      source: { kind: "auto", how: "Helix works it out from your orders and sessions." }, learn: "/learn/09-website-and-cro",
+      source: { kind: "auto", how: "Helix works it out from your orders and sessions." }, learn: "/learn/14-website-and-cro",
     },
     {
       id: "aov", name: "AOV (average order value)", plain: "What the average order is worth (revenue divided by orders).", value: money(m.aov, 2), raw: m.aov,
       good: "At least 1.5 times your cost per order from ads", tone: m.aCpa ? band(m.aov / m.aCpa, 1.5, 1.1) : "none",
-      source: { kind: "auto", how: "Helix works it out from revenue and orders." }, learn: "/learn/03-offer-and-product",
+      source: { kind: "auto", how: "Helix works it out from revenue and orders." }, learn: "/learn/15-offer-and-product",
     },
     {
       id: "revenue", name: "Revenue", plain: "Sales after discounts and refunds, without GST or VAT.", value: money(rev), raw: rev,
@@ -74,7 +74,7 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
     {
       id: "adspend", name: "Ad spend", plain: "Everything you paid Meta, Google, TikTok and others for ads.", value: money(m.adSpend), raw: m.adSpend,
       good: `Inside your target MER of ${s.targetMerPct}%`, tone: rev ? band(m.merPct, s.targetMerPct, s.targetMerPct * 1.15, false) : "none",
-      source: meta(c.metaConnected ? "Meta spend fills in daily. Type Google and TikTok spend yourself (Google Ads > Campaigns > Cost; TikTok Ads Manager > Cost)." : "Until then type spend from Meta Ads Manager > Amount spent, Google Ads > Cost and TikTok Ads Manager > Cost."), learn: "/learn/06-defining-campaigns",
+      source: meta(c.metaConnected ? "Meta spend fills in daily. Type Google and TikTok spend yourself (Google Ads > Campaigns > Cost; TikTok Ads Manager > Cost)." : "Until then type spend from Meta Ads Manager > Amount spent, Google Ads > Cost and TikTok Ads Manager > Cost."), learn: "/learn/07-defining-campaigns",
     },
     {
       id: "roas", name: "ROAS and MER", plain: "ROAS (return on ad spend): sales from ads divided by ad spend. MER (marketing efficiency ratio): Helix shows it as all ad spend as a % of all revenue. Many tools show it the other way round, as sales ÷ ad spend (30% is about 3.3x).", value: `${x(m.blendedRoas)} · MER ${pct(m.merPct)}`, raw: m.blendedRoas,
@@ -89,17 +89,17 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
     {
       id: "cogs", name: "COGS (cost of goods sold)", plain: "What the products you sold cost you, landed (product, freight and duty).", value: `${money(m.cogs)} · ${pct(share(m.cogs))}`, raw: share(m.cogs),
       good: "35% of revenue or less", tone: rev ? band(share(m.cogs), 35, 45, false) : "none",
-      source: { kind: "manual", where: "Shopify admin > Analytics > Reports > Profit by product (needs Cost per item on each product; not on every Shopify plan). Leave blank and Helix estimates it from your recent days." }, learn: "/learn/03-offer-and-product",
+      source: { kind: "manual", where: "Shopify admin > Analytics > Reports > Profit by product (needs Cost per item on each product; not on every Shopify plan). Leave blank and Helix estimates it from your recent days." }, learn: "/learn/15-offer-and-product",
     },
     {
       id: "shipping", name: "Shipping and fulfilment", plain: "Postage, packaging and any warehouse fees for the orders you sent.", value: `${money(m.shipping)} · ${pct(share(m.shipping))}`, raw: share(m.shipping),
       good: "10% of revenue or less", tone: rev ? band(share(m.shipping), 10, 14, false) : "none",
-      source: { kind: "manual", where: "Your Shopify bills (Settings > Billing) for shipping labels, or your carrier or 3PL invoice. Leave blank and Helix estimates it per order." }, learn: "/learn/23-fulfilment-shipping-returns",
+      source: { kind: "manual", where: "Your Shopify bills (Settings > Billing) for shipping labels, or your carrier or 3PL invoice. Leave blank and Helix estimates it per order." }, learn: "/learn/21-fulfilment-shipping-returns",
     },
     {
       id: "fees", name: "Payment fees", plain: "What Shopify Payments, other payment providers and buy now pay later keep from each sale.", value: `${money(m.fees)} · ${pct(share(m.fees))}`, raw: share(m.fees),
       good: "2% to 3% of revenue", tone: rev ? band(share(m.fees), 3, 4, false) : "none",
-      source: { kind: "auto", how: "Helix estimates fees from your fee rate. Type the real number from your payout report if you have it." }, learn: "/learn/24-payments-fraud-chargebacks",
+      source: { kind: "auto", how: "Helix estimates fees from your fee rate. Type the real number from your payout report if you have it." }, learn: "/learn/20-payments-fraud-chargebacks",
     },
     {
       id: "contribution", name: "Contribution margin", plain: "What is left after product, shipping, fees and marketing, before fixed costs.", value: `${money(m.contribution)} · ${pct(m.contributionPct)}`, raw: m.contributionPct,

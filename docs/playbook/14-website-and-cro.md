@@ -1,4 +1,4 @@
-# Module 9: Your store: more sales per visit and bigger orders
+# Module 14: Your store: more sales per visit and bigger orders
 
 **Outcome:** a store that turns more visits into sales. It is clear, convincing, easy to buy from, and good at making orders bigger.
 
@@ -32,12 +32,12 @@
 
 ---
 
-## Lesson 9.1: The improvement system
+## Lesson 14.1: The improvement system
 <!-- stage:convert -->
 
 **Why this matters:** CRO (conversion rate optimisation) means getting more of your visitors to buy. A simple monthly loop beats random changes, because each fix is chosen for its likely payoff and then measured.
 
-**Step 1.** Score each key page against the checklists in Lesson 9.2 and list every gap.
+**Step 1.** Score each key page against the checklists in Lesson 14.2 and list every gap.
 
 **Expected result:** You have a list of missing items per page.
 
@@ -51,7 +51,7 @@
 
 **Expected result:** The quick wins are live. Pay for custom code only once an idea has proven it works.
 
-**Step 4.** Measure with heatmaps, session recordings, funnel reports and A/B tests (Lessons 9.8 and 9.9).
+**Step 4.** Measure with heatmaps, session recordings, funnel reports and A/B tests (Lessons 14.7 and 14.8).
 
 **Expected result:** Each change has a before and after number.
 
@@ -61,7 +61,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 9.2: Page checklists
+## Lesson 14.2: Page checklists
 <!-- stage:convert -->
 
 **Why this matters:** Each page type has a short list of things shoppers expect. Missing items cost sales quietly. Above the fold means what people see before they scroll. On a phone that space is tiny, so it must work hard.
@@ -92,9 +92,9 @@
 
 **Watch out:** If an optional add-on annoys people (for example shipping protection ticked by default) and hurts conversion, remove it.
 
-**Watch out:** A compare-at price is a "was" price. It must be a real price you charged recently, or it can break consumer law (Lesson 13.4).
+**Watch out:** A compare-at price is a "was" price. It must be a real price you charged recently, or it can break consumer law (Lesson 17.4).
 
-## Lesson 9.3: Accessibility basics
+## Lesson 14.3: Accessibility basics
 <!-- stage:convert -->
 
 **Why this matters:** Accessibility means everyone can use your store. That includes people who cannot see well or who use a keyboard instead of a mouse. Some fixes, like alt text, also help search engines understand your pages.
@@ -115,7 +115,7 @@
 
 **Expected result:** Text is easy to read, forms are labelled and videos have captions.
 
-## Lesson 9.4: Speed
+## Lesson 14.4: Speed
 <!-- stage:convert -->
 
 **Why this matters:** Most shoppers use a phone, and a slow page loses them before they see what you sell. Google measures speed with three Core Web Vitals, explained in Step 5.
@@ -150,7 +150,7 @@
 
 **Watch out:** Only chase fixes that save a second or more. Tiny gains are not worth the effort.
 
-## Lesson 9.5: Words that help people buy
+## Lesson 14.5: Words that help people buy
 <!-- stage:convert -->
 
 **Why this matters:** Copy means the words on your site. Specific words in your customers' own language sell; vague claims do not.
@@ -171,7 +171,7 @@
 
 **Expected result:** There is always a next step visible.
 
-## Lesson 9.7: Landing pages
+## Lesson 14.6: Landing pages
 <!-- stage:convert -->
 
 **Why this matters:** A landing page is a page built for one ad or one offer. Matching the page to the ad's message usually lifts conversion, and you can test one in 48 hours.
@@ -194,7 +194,7 @@
 
 **Expected result:** The winner becomes the default for that ad.
 
-## Lesson 9.8: Measurement
+## Lesson 14.7: Measurement
 <!-- stage:convert -->
 
 **Why this matters:** Measuring shows you where shoppers get stuck. Heatmaps show behaviour, store reports show the funnel, and a fixed checklist finds the cause of sudden drops fast.
@@ -217,7 +217,7 @@
 
 **Expected result:** You find the cause in minutes rather than days.
 
-## Lesson 9.9: A/B testing
+## Lesson 14.8: A/B testing
 <!-- stage:convert -->
 
 **Why this matters:** An A/B test shows two versions of a page to two halves of your visitors. It shows which one sells more. One change at a time, run to about 95% confidence, makes results trustworthy.
@@ -238,7 +238,7 @@
 
 **Expected result:** Every test is recorded so wins add up and nothing is retested by accident.
 
-## Lesson 9.10: Order value
+## Lesson 14.9: Order value
 <!-- stage:convert -->
 
 **Why this matters:** AOV is average order value: sales divided by orders. It decides how much you can pay to win each customer. Raising it makes every visitor worth more, but only if just as many people still buy.
@@ -271,7 +271,7 @@ Free-gift tiers:
 - Shopify's **Buy X get Y** discount never puts the gift in the cart by itself. The shopper has to add it, or you use a free-gift app (see [Shopify: Buy X get Y](https://help.shopify.com/en/manual/discounts/discount-types/buy-x-get-y)).
 - Order enough gift stock before the offer starts.
 
-## Lesson 9.11: Shipping psychology
+## Lesson 14.10: Shipping psychology
 <!-- stage:convert -->
 
 **Why this matters:** How you handle shipping changes how much people buy. A widely quoted rule of thumb is that about 7 in 10 online carts are abandoned. Surprise extra costs like shipping, tax and fees are one of the most common reasons shoppers give. A free shipping amount set in the right place makes many people add one more item.
@@ -304,7 +304,7 @@ Free-gift tiers:
 *Drawing, not a real screenshot. Labels on your screen may look a little different.* Official help: [Shopify: set up shipping rates](https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates/setting-up-shipping-rates)
 <!-- /guide:shopify-2-free-shipping -->
 
-## Lesson 9.12: Promotions without destroying margin
+## Lesson 14.11: Promotions without destroying margin
 <!-- stage:convert -->
 
 **Why this matters:** Margin is the share of each sale you keep, and big store-wide discounts eat it. There are better ways to give people a reason to buy.
@@ -319,7 +319,7 @@ Free-gift tiers:
 
 **Expected result:** Discounts become rarer without a sudden drop in sales.
 
-## Lesson 9.13: Special cases
+## Lesson 14.12: Special cases
 <!-- stage:convert -->
 
 **Why this matters:** Some stores have special needs: expensive products, preorders, video shopping, big catalogues, wholesale or overseas customers. Each has a few proven fixes.
@@ -347,11 +347,11 @@ Free-gift tiers:
 
 **Expected result:** Every search shows something useful.
 
-**Step 5.** Fill in product details in Shopify metafields. If it fits your store, set up wholesale prices behind a login, and local currency for overseas (Module 15).
+**Step 5.** Fill in product details in Shopify metafields. If it fits your store, set up wholesale prices behind a login, and local currency for overseas (Module 25).
 
 **Expected result:** Filters work better, AI assistants can read your products, and special buyer groups are served.
 
-## Lesson 9.14: Working with developers
+## Lesson 14.13: Working with developers
 <!-- stage:convert -->
 
 **Why this matters:** Apps and developers can speed you up or slow your store down for years. A few checks before you commit keep costs and speed under control.
@@ -370,7 +370,7 @@ Free-gift tiers:
 
 **Watch out:** Only change your whole theme when the current one blocks several important fixes.
 
-## Lesson 9.15: Category patterns from store audits
+## Lesson 14.14: Category patterns from store audits
 <!-- stage:convert -->
 
 **Why this matters:** Stores in the same category usually miss the same things. Checking your category's common gaps is a fast way to find quick wins.
@@ -379,7 +379,7 @@ Free-gift tiers:
 
 **Expected result:** You have the list of common gaps for your category.
 
-**Step 2.** Check your store for each gap. Add the ones you are missing to your CRO list (Lesson 9.1).
+**Step 2.** Check your store for each gap. Add the ones you are missing to your CRO list (Lesson 14.1).
 
 **Expected result:** Your improvement list includes the category's common fixes.
 
@@ -395,7 +395,7 @@ Free-gift tiers:
 | Food | What it tastes like, freshness, bundles, subscriptions |
 | Pets | Proof for specific pets, refills |
 
-## Lesson 9.16: When conversion suddenly drops: a 20-minute check
+## Lesson 14.15: When conversion suddenly drops: a 20-minute check
 <!-- stage:convert -->
 
 **Why this matters:** A conversion rate that halves overnight is almost never because shoppers changed their minds. It is usually something broken, a change in who is visiting, or a tracking fault. Checking in the right order finds the cause in minutes instead of days.
@@ -418,7 +418,7 @@ Free-gift tiers:
 
 **Watch out:** Do not cut ad spend in a panic before Step 2. If checkout is broken, every channel looks bad at once.
 
-## Lesson 9.17: Your store gap check
+## Lesson 14.16: Your store gap check
 <!-- stage:convert -->
 
 **Why this matters:** A gap check compares your store with what buyers expect to see. Then you fix the biggest gaps first instead of guessing.
@@ -443,7 +443,7 @@ Free-gift tiers:
 
 **Expected result:** The fix no longer shows in your list, or is ticked as done.
 
-## Lesson 9.18: A product-finder quiz
+## Lesson 14.17: A product-finder quiz
 <!-- stage:convert -->
 
 **Why this matters:** When you sell many products, shoppers can freeze. A short quiz asks a few questions and points them to the right one. Their answers also tell you what they want, so your emails can match.
@@ -474,7 +474,7 @@ Free-gift tiers:
 
 **Watch out:** Keep it short. Each extra question loses some people. Five questions is plenty.
 
-## Lesson 9.19: Video on product pages
+## Lesson 14.18: Video on product pages
 <!-- stage:convert -->
 
 **Why this matters:** Photos show what a product looks like. Video shows it working. A short clip of a real person using it answers questions that words cannot.
@@ -487,7 +487,7 @@ Free-gift tiers:
 
 **Expected result:** Shoppers see the product moving within one swipe.
 
-**Step 3.** Make sure the clips play muted and have captions. Keep each file small so the page stays fast (Lesson 9.4).
+**Step 3.** Make sure the clips play muted and have captions. Keep each file small so the page stays fast (Lesson 14.4).
 
 **Expected result:** The page loads as fast as before on a phone.
 
@@ -495,11 +495,11 @@ Free-gift tiers:
 
 **Expected result:** Shoppers can watch and add to cart without leaving the video.
 
-**Step 5.** Test for 2 weeks with and without the video (Lesson 9.9). Compare add-to-cart rate.
+**Step 5.** Test for 2 weeks with and without the video (Lesson 14.8). Compare add-to-cart rate.
 
 **Expected result:** You know if video helps this product, and you add it to the next best seller.
 
-**Watch out:** Ad clips that worked well often make great product page clips. Reuse them, but check your rights first (Lesson 19.4).
+**Watch out:** Ad clips that worked well often make great product page clips. Reuse them, but check your rights first (Lesson 6.4).
 
 ## Self-check
 

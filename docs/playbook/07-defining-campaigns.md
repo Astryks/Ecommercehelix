@@ -1,8 +1,8 @@
-# Module 6: Defining campaigns
+# Module 7: Defining campaigns
 
 **Outcome:** you can plan any ad campaign from scratch. First you set the numbers it must hit and choose the goal and setup. Then you pick the audience and budget, name it well and brief the ads. Last, you test fairly, read the results and decide: spend more, wait, make new ads, or stop.
 
-This module connects your plan to Ads Manager (the place where you build Meta ads). The [campaign brief template](#lesson-616-the-campaign-brief-template) is at the end. Helix fills it in with you when you press "New campaign" in Your ads.
+This module connects your plan to Ads Manager (the place where you build Meta ads). The [campaign brief template](#lesson-716-the-campaign-brief-template) is at the end. Helix fills it in with you when you press "New campaign" in Your ads.
 
 **Related SOPs:** [05 Meta structure](../sops/05-meta-structure-and-scaling.md), [06 Meta daily optimisation](../sops/06-meta-daily-optimisation.md), [07 Creative testing](../sops/07-creative-testing.md), [09 Google](../sops/09-google-shopping-pmax-search.md), [15 Promo calendar](../sops/15-promo-calendar-and-sales.md)
 
@@ -34,7 +34,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 ---
 
-## Lesson 6.1: Numbers first
+## Lesson 7.1: Numbers first
 <!-- stage:attract -->
 
 **Why this matters:** Learn the five numbers that say if an ad makes or loses money. Only then open Ads Manager. They come from Module 1 and Helix works them out from your daily numbers. With them, every later decision is a simple comparison.
@@ -67,7 +67,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 | Target blended CPA | What you aim to pay per sale, across all customers | AOV x target MER | $27 |
 | Allowance for cold campaigns | What a campaign aimed at new people may show per sale | Target CPA x 2 | $54 |
 
-## Lesson 6.2: Pick the job of the campaign
+## Lesson 7.2: Pick the job of the campaign
 <!-- stage:attract -->
 
 **Why this matters:** Each campaign has one job. The job decides the objective (the goal you pick in Ads Manager) and the action the platform hunts for. Pick the wrong one and the platform finds clickers instead of buyers.
@@ -99,7 +99,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 | Test ads cheaply on a new platform | Sales, aimed at an earlier step (view content, add to cart) when purchases are too few | The earlier step, then switch to purchase |
 | Show people products they looked at (catalog retargeting) | Sales with your product catalog | Purchase |
 
-## Lesson 6.3: Testing campaigns vs scaling campaigns
+## Lesson 7.3: Testing campaigns vs scaling campaigns
 <!-- stage:attract -->
 
 **Why this matters:** Keeping testing and winning separate stops new tests from upsetting what already works. Three kinds of campaign do the job: scaling, testing and build.
@@ -122,7 +122,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** The winner runs in scaling with its social proof intact.
 
-## Lesson 6.4: Account structure by spend
+## Lesson 7.4: Account structure by spend
 <!-- stage:attract -->
 
 **Why this matters:** Cold means people who do not know you. Warm means people who visited or engaged. Mixed means both. The right account structure depends on how much you spend a day. Too many campaigns for the budget starves each one of data.
@@ -153,7 +153,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 | $1,000 to $3,000 | Campaigns per country or product line. Separate sale campaigns during big events. |
 | $3,000 or more | A set test budget, creator and partnership ad campaigns, catalog video ads, more countries. |
 
-## Lesson 6.5: Audiences
+## Lesson 7.5: Audiences
 <!-- stage:attract -->
 
 **Why this matters:** The audience is who sees your ads. Today broad audiences with strong ads usually win, while custom audiences and lookalikes help with warm and test campaigns. Set them up once and reuse them.
@@ -186,7 +186,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Cold spend goes to new people, and countries are reported separately.
 
-## Lesson 6.6: Budgets
+## Lesson 7.6: Budgets
 <!-- stage:attract -->
 
 **Why this matters:** Budget decides how fast the platform learns and how much you can lose while it does. A few rules stop the classic mistakes of starving campaigns or resetting them.
@@ -211,7 +211,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Watch out:** Judge by the week, not the day. Daily budgets spend more on some days and less on others.
 
-## Lesson 6.7: Naming conventions
+## Lesson 7.7: Naming conventions
 <!-- stage:attract -->
 
 **Why this matters:** A naming convention is a fixed pattern for names. It lets you, your team and Helix read the account at a glance and compare results later. It takes five minutes to set up.
@@ -228,7 +228,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** Your history is easy to read and compare.
 
-## Lesson 6.8: Creative concepts, angles and hooks
+## Lesson 7.8: Creative concepts, angles and hooks
 <!-- stage:attract -->
 
 **Why this matters:** Four words describe every ad. Concept is the big idea. Angle is why it matters to one kind of person. Hook is the first 3 seconds. Then there is the format. Testing one of them per batch is what makes a test fair.
@@ -247,7 +247,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Watch out:** Each batch tests one thing. Keep products and prices similar within a batch.
 
-## Lesson 6.9: Writing the creative brief
+## Lesson 7.9: Writing the creative brief
 <!-- stage:attract -->
 
 **Why this matters:** A creative brief is a one-page set of instructions for each ad. It lets anyone, including a creator or an AI tool, produce an on-target ad without guessing.
@@ -264,7 +264,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 
 **Expected result:** The brief has all 11 parts and is ready to send.
 
-## Lesson 6.10: Testing methodology
+## Lesson 7.10: Testing methodology
 <!-- stage:attract -->
 
 **Why this matters:** Most ad tests never get enough visitors to be sure. So you need fair default rules instead. These keep tests the same each time and stop you calling winners too early.
@@ -291,7 +291,7 @@ This module connects your plan to Ads Manager (the place where you build Meta ad
 | Learning time | Do not edit for 3 to 7 days after launch |
 | Be careful with small numbers | Under about 10 purchases per ad, treat results as a hint, not proof |
 
-## Lesson 6.11: Reading metrics
+## Lesson 7.11: Reading metrics
 <!-- stage:attract -->
 
 **Why this matters:** Each metric tells you about one part of the journey, from stopping the scroll to buying. Reading them in order shows exactly where an ad breaks.
@@ -336,7 +336,7 @@ The "what good looks like" ranges are common rules of thumb, not Meta figures. Y
 | Frequency | How often the same people see it | Within the limit for its audience |
 | Reach growth versus spend growth | Are you reaching new people as you spend more? | Reach should grow about as fast as spend |
 
-## Lesson 6.12: Decision rules: scale, hold, refresh, kill
+## Lesson 7.12: Decision rules: scale, hold, refresh, kill
 <!-- stage:grow -->
 
 **Why this matters:** Four decisions cover every ad: scale, hold, refresh or kill. In Helix these show as **Spend more**, **Wait**, **New ads needed** and **Stop**. Using fixed rules removes emotion from the call.
@@ -374,7 +374,7 @@ The "what good looks like" ranges are common rules of thumb, not Meta figures. Y
 
 Read the last 3 days and the last 7 days, always with the same attribution setting, so the colours compare fairly.
 
-## Lesson 6.13: Google campaign definitions
+## Lesson 7.13: Google campaign definitions
 <!-- stage:attract -->
 
 **Why this matters:** Google campaigns each catch shoppers at a different moment, from searching your brand name to browsing YouTube. Knowing what each type is for stops you paying for the wrong clicks.
@@ -405,7 +405,7 @@ Read the last 3 days and the last 7 days, always with the same attribution setti
 | Demand Gen and YouTube | Visual ads to help people discover you | Judge with view-through results (people who saw the ad and bought later) |
 | Performance Max with store goals | Visits to a physical shop | Only if you have a shop. This replaced Local campaigns ([Google: Local campaign upgrade](https://support.google.com/google-ads/answer/11576060)). |
 
-## Lesson 6.14: Promotional and seasonal campaigns
+## Lesson 7.14: Promotional and seasonal campaigns
 <!-- stage:attract -->
 
 **Why this matters:** Sale campaigns behave differently from your everyday ones. Building them separately, with daily budgets planned and judged as a whole event, protects your normal campaigns and your margin.
@@ -449,7 +449,7 @@ Read the last 3 days and the last 7 days, always with the same attribution setti
 | Last 48 hours | Last-chance emails and texts, and ads that stress the deadline. |
 | After | Turn normal campaigns back up slowly. Welcome new buyers. Compare results with the target. |
 
-## Lesson 6.15: Common campaign mistakes
+## Lesson 7.15: Common campaign mistakes
 <!-- stage:attract -->
 
 **Why this matters:** Most wasted ad money comes from a handful of repeat mistakes. Checking for them takes two minutes.
@@ -470,7 +470,7 @@ Read the last 3 days and the last 7 days, always with the same attribution setti
 
 **Expected result:** You scale with fresh ads and judge on 7 days.
 
-## Lesson 6.16: The campaign brief template
+## Lesson 7.16: The campaign brief template
 <!-- stage:attract -->
 
 **Why this matters:** A campaign brief puts every decision on one page before you spend a dollar. Helix fills in the numbers from your scorecard when you press **New campaign** in **Your ads**.

@@ -38,7 +38,7 @@ The five core flows usually drive the large majority of flow revenue. Add win-ba
 - Checkout abandonment: one SMS after the second email.
 - Text only people who gave clear consent to SMS. Every message needs your business name and a free, working opt-out.
 - Australia: honour opt-outs within 5 working days (see [ACMA: avoid sending spam](https://www.acma.gov.au/avoid-sending-spam)). Register brand sender IDs on the SMS Sender ID Register. Since 1 July 2026, unregistered names show as "Unverified" (see [ACMA: SMS Sender ID Register](https://www.acma.gov.au/sms-sender-id-register)).
-- US: marketing texts need prior express written consent under the TCPA. Send only between 8am and 9pm in the recipient's time zone (see [47 CFR 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200)). Some states set tighter hours. Business text numbers also need carrier registration (10DLC) or toll-free verification (Lesson 25.6).
+- US: marketing texts need prior express written consent under the TCPA. Send only between 8am and 9pm in the recipient's time zone (see [47 CFR 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200)). Some states set tighter hours. Business text numbers also need carrier registration (10DLC) or toll-free verification (Lesson 24.6).
 
 ## Health benchmarks
 

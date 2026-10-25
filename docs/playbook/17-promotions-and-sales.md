@@ -1,4 +1,4 @@
-# Module 13: Promotions, launches and big sales
+# Module 17: Promotions, launches and big sales
 
 **Outcome:** a year of sales peaks that are planned, make a profit and are easy to repeat. Plus a step-by-step plan for every big sale, from setting the target to the weeks after.
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Lesson 13.1: Your yearly sales calendar
+## Lesson 17.1: Your yearly sales calendar
 <!-- stage:convert -->
 
 **Why this matters:** A year of sales works best as a rhythm. Customers learn when to look, and you are never rushing. Four kinds of promotion cover the year. Deep discounts belong only to clearing slow stock, and only as a last resort.
@@ -57,7 +57,7 @@
 
 <!-- do:stock -->
 
-## Lesson 13.2: Launch phases
+## Lesson 17.2: Launch phases
 <!-- stage:convert -->
 
 **Why this matters:** A launch has four phases, and each needs its own message. Skipping the build-up or the follow-up leaves most of the sales on the table.
@@ -80,7 +80,7 @@
 
 **Expected result:** Proof keeps sales going after the launch week.
 
-## Lesson 13.3: Launching a new product: how to build the campaigns
+## Lesson 17.3: Launching a new product: how to build the campaigns
 <!-- stage:convert -->
 
 **Why this matters:** How you structure a product drop depends on your spend. Either way, your warm audiences and email list should get first access while normal campaigns keep running.
@@ -98,7 +98,7 @@
 
 **Expected result:** Your best audiences hear first and your steady flow of new customers continues.
 
-## Lesson 13.4: The big sale, step by step
+## Lesson 17.4: The big sale, step by step
 <!-- stage:convert -->
 
 **Why this matters:** A big sale is a project with seven parts, from the target to the shipping cut-offs. Planning each part in order is what makes a sale profitable and repeatable.
@@ -123,7 +123,7 @@
 
 **Expected result:** Every sale day has a planned budget.
 
-**Step 5.** List the ads needed for each phase and audience (cold, warm, hot). Plan emails and texts too (Lesson 10.13).
+**Step 5.** List the ads needed for each phase and audience (cold, warm, hot). Plan emails and texts too (Lesson 16.13).
 
 **Expected result:** Creative and messages are planned for every phase.
 
@@ -137,7 +137,7 @@
 
 <!-- do:bfcm -->
 
-## Lesson 13.5: The build-up before a launch
+## Lesson 17.5: The build-up before a launch
 <!-- stage:convert -->
 
 **Why this matters:** The build-up builds excitement before the sale starts, so launch day begins with a crowd. Moving budget across slowly protects the campaigns that bring new customers every day.
@@ -156,7 +156,7 @@
 
 **Expected result:** Normal campaigns keep learning and bringing new customers.
 
-## Lesson 13.6: Running the sale
+## Lesson 17.6: Running the sale
 <!-- stage:convert -->
 
 **Why this matters:** Running the sale is a daily routine. You need the right campaigns, spending limits, a daily check and a strong finish. Judge the whole event, not single days.
@@ -199,7 +199,7 @@ Who each sale campaign leaves out:
 | Warm | Site visitors, engagers and video viewers (180 days) | Buyers |
 | Hot | Added to cart (14 days) or started checkout (7 days) | Buyers from the last 7 days |
 
-## Lesson 13.7: After the sale
+## Lesson 17.7: After the sale
 <!-- stage:grow -->
 
 **Why this matters:** After a sale there is always a slow time, because some people just bought earlier than they would have. As a rule of thumb, the dip takes back some of the extra sales, not all of them. How you handle it decides how many new buyers you keep. A short review makes the next event better.
@@ -224,13 +224,13 @@ Who each sale campaign leaves out:
 
 **Expected result:** Your review uses numbers from 7 days after the sale, not the first morning.
 
-**Step 5.** Plan the next 2 to 4 weeks without a new discount. Show full-price news, like a new product or a best-seller story. Nudge new buyers towards a second order (Lesson 10.17).
+**Step 5.** Plan the next 2 to 4 weeks without a new discount. Show full-price news, like a new product or a best-seller story. Nudge new buyers towards a second order (Lesson 16.17).
 
 **Expected result:** A short plan for the weeks after the sale, with no discount in it.
 
 <!-- do:calendar -->
 
-## Lesson 13.8: If the sale is failing
+## Lesson 17.8: If the sale is failing
 <!-- stage:convert -->
 
 **Why this matters:** When a sale is behind plan, the cause is usually one of five things. Find it fast, then use a rescue move that does not damage trust.
@@ -245,7 +245,7 @@ Who each sale campaign leaves out:
 
 **Watch out:** Extend the sale only if it will not damage trust. Customers notice fake "last chances". Stores have paid ACCC penalties after their countdown timers reset past the "end" (see [ACCC: Black Friday penalties](https://www.accc.gov.au/media-release/james-lane-and-vuly-pay-penalties-for-allegedly-making-misleading-representations-during-last-year%E2%80%99s-black-friday-sales)).
 
-## Lesson 13.9: Experience levels
+## Lesson 17.9: Experience levels
 <!-- stage:convert -->
 
 **Why this matters:** Your sale plan should grow with your experience. Starting simple and adding layers each time keeps sales profitable while you learn.
@@ -258,7 +258,7 @@ Who each sale campaign leaves out:
 
 **Expected result:** Each sale is a little more sophisticated than the last.
 
-## Lesson 13.10: Key dates through the year
+## Lesson 17.10: Key dates through the year
 <!-- stage:grow -->
 
 **Why this matters:** Plan the whole busy season, not one weekend. For many stores, Black Friday and Cyber Monday is the biggest time of the year. In 2026, Black Friday is 27 November and Cyber Monday is 30 November. It is won months before November. Helix adds the staged plan to your calendar from 1 August.
@@ -293,7 +293,7 @@ Who each sale campaign leaves out:
 
 <!-- do:calendar -->
 
-## Lesson 13.11: Cross-channel checklist
+## Lesson 17.11: Cross-channel checklist
 <!-- stage:convert -->
 
 **Why this matters:** Big sales use every channel at once, and one missed setting can cost a day of sales. Tick this list a week before launch.
@@ -322,7 +322,7 @@ Who each sale campaign leaves out:
 
 **Expected result:** The team can answer fast during the rush.
 
-## Lesson 13.12: A smaller sale between the big ones
+## Lesson 17.12: A smaller sale between the big ones
 <!-- stage:convert -->
 
 **Why this matters:** Relying on one big sale a year makes cash flow lumpy and leaves stock sitting for months. One or two smaller planned sales clear old stock and bring back past customers. Good times are the end of the financial year or the change of season. This way buyers do not learn to wait for discounts.
@@ -348,7 +348,7 @@ Who each sale campaign leaves out:
 
 **Watch out:** Count big and small sales together. The more often you run them, the more customers wait for the next one. Keep sales planned, rare and with a clear reason.
 
-## Lesson 13.13: Work out your sale numbers before you pick the discount
+## Lesson 17.13: Work out your sale numbers before you pick the discount
 <!-- stage:convert -->
 
 **Why this matters:** A discount takes money out of every order, not just the extra ones. If you know how much more you need to sell to stand still, you can pick a discount that still leaves you better off. Five minutes of maths now can save the whole sale.
@@ -393,7 +393,7 @@ Example for a $60 item with $30 profit before ads (everyone uses the code):
 | 20% off | $48 | $18 | 1.67 times | About 37% |
 | 30% off | $42 | $12 | 2.5 times | About 29% |
 
-A free gift or a bundle often costs you less than a big discount (Lesson 9.10).
+A free gift or a bundle often costs you less than a big discount (Lesson 14.9).
 
 ## Self-check
 

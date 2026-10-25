@@ -17,7 +17,7 @@ Good signs: people search for the category or problem, and the product has clear
 
 ## Structure (default)
 
-1. **Brand search:** a small campaign on your brand terms (Lesson 8.12 starts at $5 to $10 a day; raise it if it is limited by budget). Use target impression share or manual bidding. Expect a very low cost per sale and do not let it inflate your view of Google overall.
+1. **Brand search:** a small campaign on your brand terms (Lesson 10.4 starts at $5 to $10 a day; raise it if it is limited by budget). Use target impression share or manual bidding. Expect a very low cost per sale and do not let it inflate your view of Google overall.
 2. **Shopping or feed-only Performance Max:** non-brand prospecting with your brand left out. Use **Brand exclusions** in Performance Max, or brand negative keywords in Shopping. Group products by best sellers or by margin tier (custom labels), not by every collection.
 3. **Non-brand Search (optional):** high-intent terms you want control over. Helix defaults: up to 5 keywords per ad group (1 to 2 broad, the rest exact) and shared negative lists. Write up to 15 headlines (the most Google allows) and pin only 1 to 2. Do not over-segment.
 4. **Demand Gen or YouTube (Stage 2+):** short-form video discovery. Judge it with view-through and platform-comparable metrics, not last-click.

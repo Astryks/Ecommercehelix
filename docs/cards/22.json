@@ -1,123 +1,44 @@
 {
-"22.1": {"intro": "A store takes days to build and minutes to judge. Plan first, so you only build what buyers need. It takes about an hour.",
+"22.1": {"intro": "GST is 10% on most local sales once you're registered. The GST you collect belongs to the ATO (the tax office), not you. So put it aside.",
  "steps": [
-  {"say": "Write your one-line promise: who it's for and what they get.", "check": "You can say in one sentence what you sell and who it's for.", "lost": "Finish this: \"For ___ who want ___.\""},
-  {"say": "List your products with price, product cost, and what one order costs to send.", "check": "You know your cost per order for each product.", "lost": "Write it for your main product."},
-  {"say": "Choose one launch country (for example, where you live). Add more later.", "check": "You have one launch country.", "lost": "Pick your home country."},
-  {"say": "Pick the cheapest Shopify plan with the features you need. Most new stores start on Basic (check Shopify's pricing page).", "check": "You know your monthly platform cost. In October 2026, Basic was US$39 or A$56 a month, billed monthly.", "lost": "Start with Basic."},
-  {"say": "Collect your logo, 4 to 8 photos per product, your returns rule, your ABN or EIN (US, if you have one), and a business bank account.", "check": "Everything you need to build is in one folder.", "careful": "Outside the US: the ATO's GST limit is $75,000 in sales a year. Might you reach it? Read Lesson 22.10 before setting prices. US: your home state is where you're most likely to owe sales tax first.", "lost": "Make one folder. Put your logo in it."}
+  {"say": "Check your GST turnover (this month plus the previous 11). Register within 21 days of it reaching $75,000, or as soon as you expect to reach it in the next 12 months.", "check": "You know if you must register.", "lost": "Add up 12 months of sales. Is it $75,000 or more?"},
+  {"say": "Once registered, show prices to local customers with GST included, and issue tax invoices.", "check": "Checkout prices include GST.", "lost": "Not registered? Skip this card."},
+  {"say": "Open a separate bank account. Each week, move one eleventh of your GST-inclusive sales into it. Example: $1,100 in sales ÷ 11 = $100.", "check": "The GST bill is already saved when it's due.", "lost": "Sales ÷ 11. Move that amount."},
+  {"say": "Lodge your BAS (business activity statement) on time. Quarterly due dates are 28 October, 28 February, 28 April and 28 July.", "check": "The dates are in your calendar. Lodging online may add two weeks, except for the December quarter.", "lost": "Put the four dates in your calendar."},
+  {"say": "Claim GST credits on business costs that include GST, like local stock and services. Keep the tax invoices.", "check": "Your BAS includes your credits.", "lost": "Keep every tax invoice."},
+  {"say": "In Helix **Settings**, keep **My prices include GST/VAT** on **Use my country's default** (or Yes if the sales you type include GST).", "check": "Helix profit leaves GST out.", "careful": "New Zealand: exports are usually GST-free. But if low-value sales (NZ$1,000 or less) to NZ consumers pass NZ$60,000 in 12 months, you must register for NZ GST at 15%. Overseas sellers into GST countries often must register once local sales pass a threshold.", "lost": "Keep the default."}
  ]},
-"22.2": {"intro": "Your domain is your web address. Your own domain looks more trustworthy, and branded email reaches inboxes better.",
+"22.2": {"intro": "Lots of costs come from overseas: ads, apps, software and stock. GST works differently on each.",
  "steps": [
-  {"say": "In Shopify **Settings > Domains**, buy a short domain that matches your brand, or connect one you own.", "check": "The domain shows as connected in Settings.", "careful": "Outside the US: a .com.au needs a local business link, usually an ABN or ACN. Many brands own both .com.au and .com. US: .com is normal.", "lost": "Open **Settings > Domains**."},
-  {"say": "Set it as the primary domain, so myshopify.com sends people to it.", "check": "Typing your domain opens your store.", "lost": "Click **Set as primary**."},
-  {"say": "Set up a branded email like hello@yourbrand.com. Use it for support and as the sender in your email tool.", "check": "Customer emails come from your own domain.", "lost": "Make hello@ your address."},
-  {"say": "Send a test email to yourself.", "check": "It lands in your inbox, not spam.", "lost": "Send one test email."}
+  {"say": "If registered, give every overseas supplier of services and apps (ads, Shopify apps, software) your ABN, and say you're GST registered.", "check": "Their invoices no longer include GST.", "lost": "Add your ABN in your Meta billing settings."},
+  {"say": "If a supplier charged GST wrongly, ask them for a refund.", "check": "The wrong GST comes back. You generally don't owe reverse-charge GST on fully business purchases.", "lost": "Email them asking for the GST back."},
+  {"say": "Not registered? Don't say you are. Pay GST like any customer.", "check": "Your supplier records are correct.", "lost": "Not registered? Leave your ABN off."},
+  {"say": "For stock imports over A$1,000, pay GST and any duty at the border through your broker or forwarder. Keep the paperwork. Claim that GST on your BAS.", "check": "Import GST shows as a credit on your BAS.", "lost": "Keep the import paperwork."},
+  {"say": "Record stock cost without GST in your books and in Helix.", "check": "Your cost of goods is ex GST.", "careful": "US: there's no GST. Give suppliers a resale certificate so you don't pay sales tax on stock you resell, and check your state's use tax rules.", "lost": "Enter stock cost without GST."}
  ]},
-"22.3": {"intro": "The theme is your store's design. Fast and simple beats fancy and slow. Always edit a copy, so you never break the live store.",
+"22.3": {"intro": "The US has no national sales tax. Each state has its own rules. You collect a state's tax only once you have nexus there (a strong enough link to it).",
  "steps": [
-  {"say": "In **Online Store > Themes**, start with a free Shopify theme like Horizon or Dawn.", "check": "A fast, supported theme is installed.", "careful": "Only pay for a theme if it has a feature you truly need, and you've checked its speed on a phone.", "lost": "Use a free Shopify theme."},
-  {"say": "Click **Duplicate** on the theme. Make all changes on the copy.", "check": "You're working on a copy, not the live theme.", "lost": "Click **Duplicate**."},
-  {"say": "In **Customize > Theme settings**, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.", "check": "Your store uses no more than 2 fonts and 3 main colours.", "lost": "Upload your logo."},
-  {"say": "Plan menus for computer and phone separately. Phones get fewer, bigger links.", "check": "The mobile menu has 5 or fewer links.", "lost": "Keep 5 links on mobile."}
+  {"say": "List states where you have physical nexus: where you live, have staff, or store stock (including in a third-party warehouse).", "check": "You have a list of physical nexus states.", "lost": "Write your home state."},
+  {"say": "Check each state's economic nexus threshold. It's often $100,000 a year. California and Texas are $500,000. New York is over $500,000 plus over 100 sales. Many states, like Illinois from 2026, no longer count sales.", "check": "You know each state's threshold.", "lost": "Check your biggest state's threshold."},
+  {"say": "In Shopify **Settings > Taxes and duties**, watch how close you are to each threshold.", "check": "You see thresholds before you cross them.", "lost": "Open **Taxes and duties**."},
+  {"say": "Register with a state before collecting its tax. Then turn that state on in Shopify.", "check": "Shopify collects tax only where you're registered.", "lost": "Register first, then turn it on."},
+  {"say": "File and pay on the state's schedule (monthly, quarterly or yearly), including nil returns if asked.", "check": "Every filing is on time.", "careful": "Marketplaces like Amazon usually collect for you on their sales, but your own store is yours to handle. Non-US sellers face the same thresholds, even without a US company or warehouse.", "lost": "Put your filing dates in your calendar."}
  ]},
-"22.4": {"intro": "The home page answers three questions in seconds: what is this, is it for me, and can I trust it?",
+"22.4": {"intro": "Selling overseas means charging the customer's tax, or leaving them to pay it at the door. Surprise fees cause refused parcels and angry reviews.",
  "steps": [
-  {"say": "In the theme editor, add a promo bar with one short line, like your shipping offer or a guarantee.", "check": "The promo bar shows at the very top of every page.", "lost": "Add a promo bar: \"Free shipping over $X\"."},
-  {"say": "Set the header menu to your logo plus 4 to 5 links (like Shop, Bundles, Reviews, FAQ, About).", "check": "The header is simple and tidy.", "lost": "Keep 4 links."},
-  {"say": "Add a banner: a photo of the product in use, your promise in one line, and one button (\"Shop now\"). You can add a row of category tiles people swipe on mobile.", "check": "The top of the page says what you sell and gives one next step.", "lost": "Add one photo, one line, one button."},
-  {"say": "Below the banner, add these sections in order. Use **Add section** for each.\n\n1. 3 points on what makes you different.\n2. Best sellers with prices.\n3. Reasons to buy.\n4. Proof: rating, customer count, press.\n5. How it works, in 3 steps.\n6. Customer photos and reviews.\n7. Expert backing, if you have it.\n8. Email sign-up and a simple footer.", "check": "The home page has every section in order.", "lost": "Add best sellers first."},
-  {"say": "Show your home page on a phone to someone new for 5 seconds.", "check": "They can say what you sell.", "lost": "Ask one person: what do I sell?"}
+  {"say": "Decide who pays import tax and duty: you at checkout (DDP, delivered duty paid) or the customer on delivery (DAP, delivered at place).", "check": "You have one rule per country. DDP means more paperwork but smoother delivery.", "lost": "Pick DDP or DAP for one country."},
+  {"say": "UK: for parcels of £135 or less, register for UK VAT, charge it at checkout, and pay HMRC.", "check": "UK VAT is collected at checkout.", "lost": "Don't sell to the UK yet? Skip."},
+  {"say": "EU: for parcels up to 150 euros, use IOSS (import one stop shop) to charge EU VAT at checkout and file in one country, usually through an EU intermediary.", "check": "EU VAT is collected at checkout. From 1 July 2026, the EU also charges a temporary 3 euros duty per type of item in low-value parcels.", "lost": "Don't sell to the EU yet? Skip."},
+  {"say": "Canada: from overseas, the customer pays GST/HST and duty on delivery unless you ship DDP. With stock in a Canadian warehouse, register for GST/HST once those sales pass C$30,000 in 12 months.", "check": "You know who pays Canadian tax and if you must register.", "lost": "Do you hold stock in Canada? If not, pick DDP or DAP."},
+  {"say": "Use Shopify Markets to show local prices and collect duties at checkout where you can.", "check": "Shoppers see a full local price.", "lost": "Turn on local prices in Markets."},
+  {"say": "Work out profit per country again, with tax, duty and shipping (Lesson 25.2).", "check": "You know which countries make money.", "careful": "Goods from some countries may get lower UK duty under a free trade agreement. US goods may get lower Canada duty under the US-Mexico-Canada agreement, if origin rules are met.", "lost": "Work out profit for one country."}
  ]},
-"22.5": {"intro": "Most buying decisions happen on the product page. Answer every worry before they ask.",
+"22.5": {"intro": "Duties are taxes on imported goods. They depend on what the product is, where it was made, and its value. They change your landed cost.",
  "steps": [
-  {"say": "Write a short title: product name plus the main thing it does or is made of (\"Linen Shirt, Relaxed Fit\").", "check": "The title is clear and short.", "lost": "Name plus one feature."},
-  {"say": "Upload at least 4 square photos: plain background, in use, size or scale, and a close-up of the key detail.", "check": "The photos show what it looks like in real life.", "lost": "Add one photo of it being used."},
-  {"say": "Make sure price, star rating with review count, promise line and Add to cart sit near the top.", "check": "On a phone you see price, rating and Add to cart without scrolling.", "lost": "Check Add to cart shows without scrolling."},
-  {"say": "Write the description as short lines: the result first, then 3 to 5 key points, then what's included. Add a short FAQ under the button (sizing, materials, shipping time, returns, care).", "check": "Common questions are answered on the page.", "lost": "Add 3 FAQs under the button."},
-  {"say": "Turn on sticky Add to cart for mobile in theme settings. Fill in the search title and description in plain words.", "check": "The button stays visible as people scroll, and Google shows a clean listing.", "lost": "Turn on sticky Add to cart."}
- ]},
-"22.6": {"intro": "Variants are a product's options, like size or colour. Inventory is how many you have. Set them up right so you don't oversell.",
- "steps": [
-  {"say": "Add options (Size, Colour) to one product, instead of making separate products.", "check": "One product page shows every option.", "lost": "Add Size as an option."},
-  {"say": "Give each variant its own photo, price if different, SKU (your code for each version) and stock count.", "check": "Every variant is complete.", "lost": "Add a stock count to each variant."},
-  {"say": "Turn on **Track quantity** and choose to stop selling at zero. Taking preorders? Show a clear ship date.", "check": "Shopify stops selling when you run out.", "lost": "Tick **Track quantity**."},
-  {"say": "Fill in **Cost per item** and weight on every variant.", "check": "Helix can work out profit, and Shopify can work out shipping.", "lost": "Fill in **Cost per item** for your best seller."}
- ]},
-"22.7": {"intro": "People trust other customers more than you. A review app collects reviews for you. Honest replies to bad reviews build trust.",
- "steps": [
-  {"say": "Install one review app that collects photo reviews and sends a request email after delivery.", "check": "Review requests go out by themselves.", "lost": "Install one review app."},
-  {"say": "Show the star rating under the product title and near Add to cart. Add a photo review section lower on product pages and the home page.", "check": "Your rating shows near the top of every product page.", "lost": "Show stars under the title."},
-  {"say": "Ask early buyers, testers and friends who used the product for honest reviews.", "check": "Your first products have real reviews.", "careful": "Never write fake reviews or pay for good ones. Both break consumer law in most countries, including under the FTC's fake reviews rule in the US.", "lost": "Ask 3 real users for an honest review."},
-  {"say": "Reply to bad reviews politely, and fix the problem.", "check": "Shoppers see you handle problems well.", "lost": "Reply kindly to one review."}
- ]},
-"22.8": {"intro": "Collections are groups of products. A new visitor should reach any product in 3 taps or fewer.",
- "steps": [
-  {"say": "Make collections for Best sellers, New, and one per product type. Use automatic collections where you can.", "check": "Collections update themselves as products change.", "lost": "Make a Best sellers collection."},
-  {"say": "Build the main menu with 4 to 5 links, with deeper links in drop-downs.", "check": "Any product is 3 taps away.", "lost": "Add 4 links to the main menu."},
-  {"say": "Turn on Shopify's filters (size, colour, price, in stock) with multi-select. Add a second photo on hover and quick add if your theme allows.", "check": "Shoppers can narrow down and add from collections.", "lost": "Turn on the size filter."},
-  {"say": "Search your store for your top 5 product words and one common misspelling.", "check": "Every search shows the right products.", "lost": "Search one product word."}
- ]},
-"22.9": {"intro": "Surprise extra costs, like shipping, are one of the most common reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery times fix most of it.",
- "steps": [
-  {"say": "In **Settings > Shipping and delivery**, make a zone for your home country.", "check": "A home country zone exists.", "lost": "Add your home country zone."},
-  {"say": "Add Standard and Express rates priced from real carrier costs, or use calculated rates.", "check": "Checkout shows two clear options.", "lost": "Add a Standard rate."},
-  {"say": "A common rule of thumb: set a free shipping amount about 20 to 30% above your average order. Example: $50 average, so $60 to $65. Show it in the promo bar and near Add to cart (\"Free shipping over $X\").", "check": "Shoppers see how close they are to free shipping.", "lost": "Average order × 1.2 to 1.3 = free shipping amount."},
-  {"say": "Write delivery times as a range (\"arrives in 3 to 6 business days\").", "check": "Checkout shows a clear price and delivery range.", "careful": "Outside the US: compare the national post and couriers, and set a separate remote area rate if needed. US: compare the carriers offered in Shopify Shipping. Add overseas zones only once home works.", "lost": "Write \"3 to 6 business days\"."}
- ]},
-"22.10": {"intro": "Tax set up wrong costs money or breaks the law. Under the ATO's rules, you must register for GST once turnover reaches $75,000 a year. Other countries set their own limits. US: sales tax depends on nexus (a strong enough link to a state). Helix takes GST out of your sales before any profit maths.",
- "steps": [
-  {"say": "Outside the US: check if your GST turnover (this month plus the previous 11) has reached $75,000, or will in the next 12 months. If so, register within 21 days (the ATO website explains how).", "check": "You know if you must register.", "lost": "Add up the last 12 months of sales. Is it $75,000 or more?"},
-  {"say": "Once registered for GST: in Shopify **Settings > Taxes and duties**, turn on **Include sales tax in product price and shipping rate**.", "check": "Prices shown to local customers include GST.", "careful": "Not registered? Don't charge GST, and don't call invoices tax invoices.", "lost": "Not registered yet? Skip this card."},
-  {"say": "In Helix **Settings**, keep **My prices include GST/VAT** on **Use my country's default** if you type or import Shopify's Gross sales (it already leaves tax out). Pick Yes only if every sales number you type includes tax, or No if you're not registered.", "check": "Helix takes GST out of order totals synced from Shopify (example: $110 becomes $100) and uses Gross sales as typed. New Zealand (15%) and UK (20%) are there too.", "lost": "Typing Gross sales? Keep the default."},
-  {"say": "US: list states where you have a physical presence (home state, warehouse). Check each state's economic nexus threshold, often $100,000 of sales a year.", "check": "You know where you owe sales tax.", "lost": "Start with your home state."},
-  {"say": "US: register with each state before collecting. Then turn that state on in **Settings > Taxes and duties**.", "check": "Shopify collects tax only where you're registered, and tracks your progress to other thresholds.", "lost": "Register first. Then turn the state on."}
- ]},
-"22.11": {"intro": "Let people pay the way they like. Every extra step at checkout loses buyers.",
- "steps": [
-  {"say": "In **Settings > Payments**, turn on Shopify Payments if it's available in your country.", "check": "Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).", "lost": "Turn on Shopify Payments."},
-  {"say": "Turn on Shop Pay and the phone wallets Shopify offers. Add a popular online wallet as an extra option.", "check": "Checkout shows express wallet buttons.", "lost": "Turn on Shop Pay."},
-  {"say": "Think about one buy now pay later option. Several providers work in many countries. Shop Pay Installments works in the US, Canada and the UK.", "check": "Shoppers can pay in parts. Check the fee, which is higher than a card fee.", "lost": "Check the fee before you turn it on."},
-  {"say": "Set your payout bank account, and a statement name that matches your brand.", "check": "Customers recognise the charge on their bank statement.", "careful": "Australia: since 1 October 2026 you can't add a card surcharge at checkout. Include payment costs in your prices.", "lost": "Set the statement name to your brand."}
- ]},
-"22.12": {"intro": "Clear policies build trust and keep you within the law. Write them so a 12-year-old could follow them.",
- "steps": [
-  {"say": "In **Settings > Policies**, create Return and refund, Privacy, Terms of service, Shipping and Contact information pages, starting from Shopify's templates.", "check": "All five policy pages exist.", "lost": "Make the Return and refund policy first."},
-  {"say": "Rewrite each in plain words with your own cut-off dates and delivery ranges.", "check": "The policies sound like you and match what you really do.", "careful": "Outside the US: under consumer law, customers always have rights to repair, replacement or refund for faulty or not-as-described products. Never write \"no refunds\" or \"no refunds on sale items\". US: if you state a shipping time, the FTC mail order rule expects you to meet it, or ship within 30 days if you state none.", "lost": "Rewrite one policy in plain words."},
-  {"say": "Link every policy in the footer and near checkout.", "check": "Every policy is one click away.", "lost": "Add policy links to the footer."},
-  {"say": "Only email people who said yes. Every marketing email needs an unsubscribe link.", "check": "Your email marketing follows the rules.", "lost": "Check your emails have an unsubscribe link."},
-  {"say": "Make a sale terms page that lists exclusions and dates.", "check": "Shoppers can check sale rules in one click.", "lost": "List what the sale leaves out."},
-  {"say": "Add a short returns and delivery summary near Add to cart on product pages. Link it to the full policies.", "check": "Shoppers see returns and delivery times before checkout.", "lost": "Add one line: returns and delivery time."},
-  {"say": "Make contact options easy to find. Build a help centre with the top 10 questions.", "check": "Shoppers can find help without emailing you.", "lost": "Write your top 3 questions and answers."},
-  {"say": "Set up automatic answers for order status and common questions in your help desk or chat app.", "check": "\"Where is my order?\" gets an instant answer.", "careful": "General information, not legal advice.", "lost": "Turn on an order status reply."}
- ]},
-"22.13": {"intro": "Every app can slow your store and costs money each month. A small starter set covers almost everything. Module 18 says when to add more.",
- "steps": [
-  {"say": "Install the starter set only: a reviews app, Shopify Email or another email tool, the Facebook & Instagram and Google & YouTube sales channels, and (optional) an after-purchase offer app. Add subscriptions only if you sell refills.", "check": "Your app list is short and every app has a job.", "lost": "Install a reviews app and an email app."},
-  {"say": "Before installing anything else, check if your theme can already do it (badges, size charts and FAQs often are built in).", "check": "You skip apps for things you already have.", "lost": "Check your theme settings first."},
-  {"say": "Install new apps on a theme copy. Test speed before and after.", "check": "No app slows the live store without you noticing.", "lost": "Test speed before and after."},
-  {"say": "Remove apps you stop using. Check they left no code behind.", "check": "You can name what each app does and what it costs each month.", "lost": "Remove one app you don't use."}
- ]},
-"22.16": {"intro": "A test order proves payments, emails, stock and tracking all work together. It's the last step before real customers.",
- "steps": [
-  {"say": "In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test payment gateway, which shows as Bogus Gateway.", "check": "Checkout accepts test card numbers.", "lost": "Turn on test mode."},
-  {"say": "Place an order on your phone like a customer would. Use a discount code if you have one.", "check": "The order goes through.", "lost": "Buy one thing on your phone."},
-  {"say": "Check the confirmation email arrived, stock dropped by one, shipping and tax were right, and a Purchase showed in Meta and Google.", "check": "Every system recorded the order correctly.", "lost": "Check the confirmation email arrived."},
-  {"say": "Refund or cancel the test order. Turn test mode off.", "check": "The store is back in live mode.", "lost": "Turn test mode off."},
-  {"say": "Place one small real order with your own card. Refund it.", "check": "A real card payment went through and shows in your payouts.", "lost": "Buy one cheap thing with your card. Refund it."}
- ]},
-"22.17": {"intro": "One last checklist before you launch or turn on ads catches the small things.",
- "steps": [
-  {"say": "Go through every row of the lesson's table and tick it off.", "check": "Every row is ticked.", "lost": "Tick the first 5 rows."},
-  {"say": "Remove the store password: in **Online Store**, switch the store from **Private** to **Public**. The first time, the button says **Launch store**.", "check": "Anyone can visit the store.", "lost": "Open **Online Store**. Click **Private**, then **Public**."},
-  {"say": "Start your 2-minute morning numbers in Helix. Plan your first small test campaign.", "check": "Your first day of numbers is in, and a test campaign brief is started.", "lost": "Enter today's numbers in Helix."}
- ]},
-"22.18": {"intro": "Local shoppers can get your products the same day, with no shipping cost. Pickup and local delivery remove a big reason people leave the cart.",
- "steps": [
-  {"say": "In Shopify **Settings > Shipping and delivery**, turn on **Local pickup** if people can collect from you.", "check": "Pickup shows as a free option at checkout for nearby shoppers.", "lost": "Turn on **Local pickup**."},
-  {"say": "On the same page, set up **Local delivery** with a delivery area and a price. A small fee, or free over a set amount, works well.", "check": "Nearby shoppers see a local delivery option at checkout.", "lost": "Set one delivery area."},
-  {"say": "Add a line to your promo bar or home page, like \"Free pickup in [your suburb]\".", "check": "Local shoppers learn about it before checkout.", "lost": "Add one promo bar line."},
-  {"say": "If you have a shop front, claim your free Google Business Profile. Add opening hours, photos and a link to your store.", "check": "You show up on Google Maps for people searching near you.", "lost": "Claim your Google Business Profile."},
-  {"say": "Try a small local ad with a tight area around you, about $10 a day for 2 weeks. Use a Meta ad with a location set, or a Google campaign aimed at your area.", "check": "You know if local ads bring orders or visits at a cost you can afford.", "careful": "Only offer a delivery area you can really reach on time. One late local order hurts more than a slow parcel.", "lost": "Set a $10 a day local test."}
+  {"say": "Find the HS code (tariff code) for each product, with your forwarder or broker.", "check": "Every product has a code. A wrong code means a wrong duty.", "lost": "Ask your broker for your best seller's code."},
+  {"say": "Write down the country of origin for each product: where it was made, not where it ships from.", "check": "Every product has an origin.", "lost": "Where was your best seller made?"},
+  {"say": "Add duty, freight and broker fees to landed cost in Helix **Suppliers & stock**.", "check": "Product margins include duty.", "lost": "Add duty to your best seller."},
+  {"say": "When rates change, decide product by product.\n\n1. Work out the new margin for each product.\n2. For each one, pick one fix:\n\n- A higher price.\n- Cheaper shipping.\n- A new place to make it.\n- A lower margin for now.", "check": "You have a decision for each affected product.", "lost": "Pick one fix for your best seller."},
+  {"say": "Keep import paperwork as long as your tax records.", "check": "Paperwork is filed.", "careful": "US: since 29 August 2025 the $800 de minimis rule is suspended, so low-value parcels pay duty. It stayed suspended after the February 2026 tariff ruling, and a US law ends it on 1 July 2027. Compare per-parcel duty with bulk shipping to a US warehouse. Australia: imports over A$1,000 need a full import declaration, and free trade agreements can cut duty with a certificate of origin.", "lost": "Put import papers in one folder."}
  ]}
 }

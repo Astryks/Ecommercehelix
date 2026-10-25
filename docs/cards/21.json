@@ -1,46 +1,66 @@
 {
-"21.1": {"intro": "Lots of people who see an ad don't click. They tap your name to check you out first. A strong profile makes every ad dollar work harder, for free.",
+"21.1": {"intro": "Packing orders yourself is cheap at first, but later it eats your growing time. A 3PL is a warehouse company that stores and ships for you. It makes sense when packing takes more of your week than selling.",
  "steps": [
-  {"say": "Open your Instagram, TikTok and Facebook profiles on your phone like a stranger would (logged out, or in a private window).", "check": "You see each profile the way an ad viewer does.", "lost": "Open your Instagram in a private window."},
-  {"say": "Check each profile does three jobs: proves you're real, shows what you sell, and gives a clear next step.", "check": "You have a list of which job each profile misses.", "lost": "Is there a clear link to your shop? Yes or no."},
-  {"say": "Fix the biggest gap on each profile with the checklist in Lesson 21.2.", "check": "Every profile does all three jobs.", "lost": "Fix one gap on Instagram."}
+  {"say": "For one normal week, write down how many orders you sent and how many hours packing, labelling and drop-offs took.", "check": "You have orders per week and packing hours per week.", "lost": "Write two numbers: orders and hours."},
+  {"say": "Work out your cost per order today: packaging + labels + postage + your time at a fair hourly rate. Example: $1 + $0.50 + $9 + 10 minutes at $30 an hour ($5) = $15.50.", "check": "You have one true cost per order, including your time.", "lost": "Add up box, label, postage and your time."},
+  {"say": "Ask at least 3 warehouses to quote on the same sample month: orders per month, units per order, number of products, carton sizes, and pallets or shelves of stock.", "check": "You have 3 quotes for the same workload.", "careful": "Outside the US: in Australia, most warehouses are in the biggest cities, so ask about delivery times to Perth and regional areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can create sales tax duties there, so read Lesson 22.3 first.", "lost": "Ask 3 warehouses for a quote."},
+  {"say": "Compare the full monthly bill, not just pick and pack: receiving, storage (per pallet, shelf or cubic metre), packaging, monthly minimums, set-up, returns handling and peak surcharges.", "check": "You can see the real total for each quote.", "lost": "Add every fee for one quote."},
+  {"say": "Ask each warehouse for a sample invoice from a client about your size.", "check": "You can see fees the price sheet leaves out.", "lost": "Ask for one sample invoice."},
+  {"say": "Ask 3 service questions: the daily order cut-off time, the error rate they measure, and what they do when they make a mistake.", "check": "You know how reliable each warehouse is.", "lost": "Ask: what time is your daily cut-off?"},
+  {"say": "Check orders flow in from Shopify by themselves, and tracking flows back.", "check": "The warehouse connects to your store with no copying by hand.", "lost": "Ask: do you connect to Shopify?"}
  ]},
-"21.2": {"intro": "A profile is a mini landing page. The checklist makes sure it builds trust and matches your ads.",
+"21.2": {"intro": "Most warehouse moves go wrong in the handover week. A careful switch avoids the usual problems.",
  "steps": [
-  {"say": "Go through every row of the lesson's checklist on Instagram.", "check": "Each Instagram item is ticked or fixed.", "lost": "Check the first 3 rows."},
-  {"say": "Do the same checklist on TikTok and Facebook.", "check": "All three profiles pass.", "lost": "Do TikTok next."},
-  {"say": "Check the product, offer and look in your current ads also show on each profile (like \"free shipping this week\").", "check": "Ads and profiles tell the same story, so trust stays when people tap through.", "lost": "Put your ad's offer in your bio."}
+  {"say": "Give every product and variant its own SKU (your product code) and a barcode before anything ships (Module 13).", "check": "Every variant has a SKU and barcode.", "lost": "Give your best seller a SKU."},
+  {"say": "Send a delivery notice with each shipment, listing what's in each carton by SKU and quantity.", "check": "The warehouse knows what's coming and doesn't charge extra for unlabelled cartons.", "lost": "List what's in each box."},
+  {"say": "Ask the warehouse to count everything when it arrives and send you the count. Fix gaps before you switch.", "check": "Their count matches what you sent.", "lost": "Compare their count with yours."},
+  {"say": "Pick a quiet day to switch. Never the week before a sale.", "check": "Your switch date is away from any promotion.", "lost": "Pick a quiet week."},
+  {"say": "Place 3 test orders: one item, several items, and a remote address.", "check": "All 3 arrive and tracking reaches the customer.", "lost": "Place one test order."},
+  {"say": "For the first month, match stock every week.\n\n1. Put the warehouse stock report next to Shopify's **Inventory** page.\n2. Ask the warehouse about any gap bigger than a few units.", "check": "Stock numbers stay in step.", "careful": "Keep a little stock at home for the first month, so you can send replacements fast.", "lost": "Compare one product's count each week."},
+  {"say": "Write down who to call when something goes wrong, and how fast they promise to answer.", "check": "You have a named contact and response time.", "lost": "Save their phone number."}
  ]},
-"21.4": {"intro": "Posting often enough that you can keep it up beats posting a lot. Batching makes it easy.",
+"21.3": {"intro": "Shipping is often one of your biggest costs after the product. Know it before you set prices, and have a plan for delays.",
  "steps": [
-  {"say": "Pick the posting rhythm in the lesson's table that fits your stage.", "check": "You have a weekly posting goal for each platform.", "lost": "Start with 3 posts a week."},
-  {"say": "Batch it: film once a week, then schedule the whole week in Meta Business Suite or a scheduler.", "check": "A week of posts is scheduled in one sitting.", "lost": "Film 3 videos in one go."},
-  {"say": "Make every post good enough to be an ad later. Put most of the value in the first quarter of the video. Say key points twice.", "check": "Your best free posts can become ads, partnership ads or Spark ads. Spark ads are TikTok ads that run a real post.", "lost": "Put the best bit first."}
+  {"say": "Weigh and measure your 3 most common parcels.", "check": "You know the size and weight of each. Carriers charge by size as well as weight, so smaller boxes can save money.", "lost": "Weigh your most common parcel."},
+  {"say": "Get prices from at least 2 carriers for your top delivery areas.", "check": "You can compare prices side by side.", "careful": "Outside the US: compare the national post with private couriers, especially over 1 kg (in Australia, also for WA and regional areas). US: compare the postal service with private carriers. Ground services are often cheaper for heavy parcels, the postal service for small light ones.", "lost": "Get 2 quotes for your most common parcel."},
+  {"say": "Work out your average shipping cost per order from last month's invoices. Enter it in Helix under shipping.", "check": "Helix shows true profit including shipping.", "lost": "Total shipping ÷ orders. Enter it in Helix."},
+  {"say": "Choose a rule: free shipping over an amount, a flat rate, or real-time rates. Set any free shipping amount a little above your average order (Lesson 14.10).", "check": "You have one clear shipping rule.", "lost": "Pick free shipping over a bit more than your average order."},
+  {"say": "Show delivery times on product pages and at checkout.", "check": "Fewer \"where is my order\" emails.", "lost": "Add delivery times to one product page."},
+  {"say": "Write a delay plan: a second carrier you can switch to, an email you can send in minutes, and a store banner.", "check": "You can react to a postal delay the same day.", "careful": "US: ship within the time you state, or 30 days if you state none. If you will be late, tell buyers and offer to cancel with a full refund.", "lost": "Write the delay email now, ready to send."},
+  {"say": "Check carrier prices every time they announce a rise, and at least once a year.", "check": "Your shipping rates never fall behind your costs.", "lost": "Put a yearly reminder in your calendar."}
  ]},
-"21.5": {"intro": "Organic reach means people who see your posts without you paying. A few habits grow it.",
+"21.4": {"intro": "Some parcels go missing or arrive broken. Decide ahead who pays and how fast you fix it.",
  "steps": [
-  {"say": "On Instagram, post a trial reel so non-followers see it first. Check results after 24 hours. Share winners with your followers.", "check": "You test hooks without cluttering your feed.", "lost": "Post one trial reel."},
-  {"say": "Say your keywords out loud, and put them in on-screen text and captions (\"linen shirt for hot weather\").", "check": "Your posts show up in social search.", "lost": "Put one keyword in your caption."},
-  {"say": "Remake the first three seconds of your best free posts with new hooks (Lesson 19.8). Post them again.", "check": "Proven posts get a second life.", "lost": "Give your best post a new opening."},
-  {"say": "Make collab posts with creators and partner brands. Reply to every comment in the first hour.", "check": "You reach partners' audiences and get early likes and comments.", "lost": "Reply to every comment in the first hour."},
-  {"say": "Start a broadcast channel or close group for your biggest fans. Answer questions in forums where customers ask for ideas. Say who you are, and never spam.", "check": "Fans get early access, and new customers find you elsewhere too.", "lost": "Answer one forum question honestly."}
+  {"say": "Track lost and damaged parcels for one month: how many, what they cost, and which carrier.", "check": "You know the monthly cost of lost and damaged parcels.", "lost": "Write down each lost parcel this month."},
+  {"say": "Write a simple rule. Example: resend or refund once the carrier marks a parcel lost, or the customer sends a photo of damage.", "check": "Anyone on your team can handle a claim the same way.", "lost": "Write one sentence: when we resend."},
+  {"say": "Claim from the carrier when you can. Keep proof of value and photos of the packaging.", "check": "Some of the cost comes back.", "lost": "Keep photos of broken parcels."},
+  {"say": "If you offer shipping protection (a small fee that covers loss or damage), make it opt-in: unticked by default, with the price shown.", "check": "Customers choose it. It's never ticked for them.", "careful": "Outside the US: in Australia, pre-ticked extras must be included in the total price you show. US: the FTC treats hidden or pre-ticked charges as a risk area.", "lost": "Make sure the box starts unticked."},
+  {"say": "Record protection fees as income, and resends as costs.", "check": "You can see if protection pays for itself.", "lost": "Write fees in, resends out."},
+  {"say": "Improve the packaging for anything that breaks more than once.", "check": "Damage claims fall.", "lost": "Add padding to the item that breaks most."}
  ]},
-"21.6": {"intro": "Reviews, customer posts and kind replies turn curious visitors into buyers.",
+"21.5": {"intro": "Every return costs you twice: the refund and the handling. Aim for fewer returns and more exchanges, always within the law.",
  "steps": [
-  {"say": "Turn your best reviews into an Instagram highlight, a carousel, and a video where you read them out.", "check": "Reviews show on your profile.", "lost": "Make a highlight with 3 reviews."},
-  {"say": "Ask happy customers to tag you. With permission, reshare their posts to Stories and save them to a highlight.", "check": "Customer posts fill a highlight.", "lost": "Reshare one tagged post."},
-  {"say": "Keep shop ratings healthy where you sell through social shops. Reply to bad reviews publicly and kindly, then fix the problem privately.", "check": "Future customers see a calm, helpful reply.", "lost": "Reply kindly to one bad review."}
+  {"say": "Work out your return rate: returned orders ÷ orders for the last 3 months, by product. Example: 12 ÷ 300 = 4%.", "check": "You have a return rate for each product.", "lost": "Returns ÷ orders for your best seller."},
+  {"say": "Record a reason for every return (too small, too big, not as pictured, faulty, changed mind). Fix the top reason first.", "check": "You know your number one return reason.", "lost": "Write the reason for each return."},
+  {"say": "Stop returns early with a clear size guide, real photos, measurements, and reviews that talk about fit.", "check": "Product pages answer fit and look questions.", "lost": "Add measurements to one product."},
+  {"say": "Offer an exchange or store credit first. Keep a refund available where the law needs it.", "check": "More returns become exchanges.", "careful": "Outside the US: in Australia, customers have rights to repair, replacement or refund for faulty products, whatever your policy says. Never write \"no refunds\". \"No refunds for change of mind\" is fine. UK and EU: online shoppers can usually cancel within 14 days of delivery for any reason. EU: since 19 June 2026 your site also needs a clear \"withdraw from contract here\" option for those 14 days. US: honour the policy you publish. Some states have their own rules.", "lost": "Offer an exchange first."},
+  {"say": "Make returns easy to start, with a form or portal. Check the portal's price against how many returns you get.", "check": "Returns are simple and the tool pays for itself.", "lost": "Add a simple returns form."},
+  {"say": "Check returned items quickly. Put sellable stock back on sale.", "check": "Returned stock is sellable again within days.", "lost": "Check returns the day they arrive."},
+  {"say": "Enter refunds in Helix.", "check": "Your profit numbers include refunds.", "lost": "Enter this week's refunds."}
  ]},
-"21.8": {"intro": "Social shops let people browse your products inside the app. Since 2025, Facebook and Instagram shops send buyers to your website to pay. TikTok Shop keeps checkout in the app, but only in some countries. See Lessons 12.6 and 12.10 too.",
+"21.6": {"intro": "A spreadsheet works for a few products. It breaks with many variants, more than one location, or orders on the way.",
  "steps": [
-  {"say": "Connect a clean catalog with one price per product and correct stock.", "check": "The shop catalog matches your store.", "lost": "Check your best seller's price matches."},
-  {"say": "Write shipping times and returns clearly in the shop settings.", "check": "Buyers know what to expect, which protects your shop score.", "lost": "Add your shipping time."},
-  {"say": "Check which store features don't work in TikTok Shop's in-app checkout (like thank-you page offers). Check seller fees. Make sure in-app orders flow into your store and email app.", "check": "In-app orders make money and land in your normal systems.", "lost": "Check the seller fees."}
+  {"say": "Start with the Helix **Suppliers & stock** page for reorder points, sell-out dates and order-by dates (Lesson 19.9).", "check": "Each product shows when to reorder.", "lost": "Open **Suppliers & stock**."},
+  {"say": "Move to stock software when 2 or more are true: over about 100 variants, more than one warehouse, frequent stock mistakes, or hours each week on stock.", "check": "You know if you need software yet.", "lost": "Count how many are true for you."},
+  {"say": "Before you buy, list what you need: purchase orders, landed cost (product plus freight, duties and fees), several locations, bundles, and a link to your accounting.", "check": "You have a short list of needs.", "lost": "Write your top 3 needs."},
+  {"say": "Trial the tool with your own data. Check bundles and returns work.", "check": "The tool handles your real cases.", "lost": "Try it with one bundle."},
+  {"say": "Count all stock at least once a year (Lesson 23.3). Spot-check best sellers monthly.", "check": "There's one accurate place for stock numbers.", "lost": "Count your best seller this month."}
  ]},
-"21.9": {"intro": "A profile that's out of date or doesn't match your ads loses buyers. Helix doesn't check your social profiles yet, so this is your own 10-minute check.",
+"21.7": {"intro": "Most questions are the same few: where's my order, can I change size, how do I return this? Fast, friendly answers turn worried buyers into repeat buyers.",
  "steps": [
-  {"say": "Read the checks in the lesson's table.", "check": "You know what to look at.", "lost": "Read the first 3 checks."},
-  {"say": "Open your Instagram profile. Mark each row pass or fail.", "check": "You have a short list of rows that fail.", "lost": "Mark one row pass or fail."},
-  {"say": "Fix one failed item this week.", "check": "One less row fails when you check again next month.", "lost": "Fix just one."}
+  {"say": "Read your last 50 customer emails and messages. Group them by question. Count the top five.", "check": "You have your five most common questions, and how often each comes up.", "lost": "Read 10 messages. What's asked most?"},
+  {"say": "Write a saved reply for each of the five, in your own voice. Put the answers on your FAQ and order confirmation pages too.", "check": "Five saved replies, and the same answers on your site.", "lost": "Write one saved reply for \"where is my order?\""},
+  {"say": "Bring email, chat and social messages into one shared inbox, usually a help desk app. Turn on an automatic order tracking reply.", "check": "Every message lands in one place, and \"where is my order\" gets an instant answer. Shopify Inbox covers chat and social messages, not email.", "lost": "Turn on the automatic tracking reply."},
+  {"say": "Set a reply goal (like within one business day). Check each week how many messages missed it.", "check": "You know your reply time, and which questions take longest.", "careful": "Never argue in public replies. Move complaints to private messages fast, fix the problem, then thank the customer publicly.", "lost": "Aim to reply within one business day."}
  ]}
 }

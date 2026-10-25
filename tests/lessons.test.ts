@@ -42,12 +42,12 @@ describe("step-format lessons", () => {
     for (const { f, md } of modules) expect(/[\u2013\u2014]/.test(md), f).toBe(false);
   });
 
-  it("covers the Run your business modules 23 to 28", () => {
-    for (const n of [23, 24, 25, 26, 27, 28]) expect(lessons.some(({ l }) => l.ref.startsWith(`${n}.`)), String(n)).toBe(true);
+  it("covers the Run your business modules 20 to 24 and 26", () => {
+    for (const n of [20, 21, 22, 23, 24, 26]) expect(lessons.some(({ l }) => l.ref.startsWith(`${n}.`)), String(n)).toBe(true);
   });
 
   it("moves advice notices to the top of the lesson", () => {
-    const l = lessons.find(({ l }) => l.ref === "26.1")!.l;
+    const l = lessons.find(({ l }) => l.ref === "22.1")!.l;
     expect(l.notice).toMatch(/General information/);
     expect(l.extra).not.toMatch(/General information/);
   });
@@ -55,12 +55,14 @@ describe("step-format lessons", () => {
 
 describe("lesson actions and ids", () => {
   it("round-trips task ids", () => {
-    expect(lessonTaskId("7.1")).toBe("lesson-7-1");
-    expect(lessonTaskId("22.10", 3)).toBe("lesson-22-10-s3");
-    expect(parseLessonTaskId("lesson-22-10-s3")).toEqual({ ref: "22.10", step: 3 });
-    expect(parseLessonTaskId("lesson-7-1")).toEqual({ ref: "7.1", step: null });
+    // Task ids use the permanent (pre-reorder) id, so saved ticks stay on the same lesson.
+    expect(lessonTaskId("8.2")).toBe("lesson-7-1");
+    expect(lessonTaskId("11.8")).toBe("lesson-12-12");
+    expect(lessonTaskId("13.10", 3)).toBe("lesson-22-10-s3");
+    expect(parseLessonTaskId("lesson-22-10-s3")).toEqual({ ref: "13.10", step: 3 });
+    expect(parseLessonTaskId("lesson-7-1")).toEqual({ ref: "8.2", step: null });
     expect(parseLessonTaskId("lesson-x")).toBeNull();
-    expect(STEP_KEY.test(stepKey("7.1", 3))).toBe(true);
+    expect(STEP_KEY.test(stepKey("8.2", 3))).toBe(true);
   });
 
   it("maps keys to links, delegated actions or a request", () => {

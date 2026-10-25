@@ -16,31 +16,31 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Who it is for | Write who your product is for | [4.2 Customer profiles](playbook/04-brand-and-content.md#lesson-42-customer-profiles) | 10 min | Guide |
-| 2 | Is there demand? | Check that people already want it | [3.7 Check people really want your product](playbook/03-offer-and-product.md#lesson-37-check-people-really-want-your-product) | 15 min | Guide |
+| 1 | Who it is for | Write who your product is for | [3.2 Customer profiles](playbook/03-brand-and-content.md#lesson-32-customer-profiles) | 10 min | Guide |
+| 2 | Is there demand? | Check that people already want it | [15.7 Check people really want your product](playbook/15-offer-and-product.md#lesson-157-check-people-really-want-your-product) | 15 min | Guide |
 | 3 | Your cost per sale | Work out what one sale really costs you | [1.2 Your cost drivers](playbook/01-daily-profit-foundations.md#lesson-12-your-cost-drivers) | 10 min | Free: Work out your cost per sale from your prices |
-| 4 | A price that leaves profit | Check your price leaves room for ads | [3.6 Pricing that is easy to accept](playbook/03-offer-and-product.md#lesson-36-pricing-that-is-easy-to-accept) | 10 min | Guide |
-| 5 | Your promise | Write your one-line promise | [3.2 Say clearly what the customer gets](playbook/03-offer-and-product.md#lesson-32-say-clearly-what-the-customer-gets) | 10 min | Starter: Draft 5 promise lines for you to choose from |
-| 6 | Remove the risk | Make buying feel safe | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Guide |
-| 7 | First proof | Collect your first reviews and photos | [3.3 Give people reasons to believe you](playbook/03-offer-and-product.md#lesson-33-give-people-reasons-to-believe-you) | 15 min | Guide |
+| 4 | A price that leaves profit | Check your price leaves room for ads | [15.6 Pricing that is easy to accept](playbook/15-offer-and-product.md#lesson-156-pricing-that-is-easy-to-accept) | 10 min | Guide |
+| 5 | Your promise | Write your one-line promise | [15.2 Say clearly what the customer gets](playbook/15-offer-and-product.md#lesson-152-say-clearly-what-the-customer-gets) | 10 min | Starter: Draft 5 promise lines for you to choose from |
+| 6 | Remove the risk | Make buying feel safe | [15.5 Take the risk off the buyer](playbook/15-offer-and-product.md#lesson-155-take-the-risk-off-the-buyer) | 10 min | Guide |
+| 7 | First proof | Collect your first reviews and photos | [15.3 Give people reasons to believe you](playbook/15-offer-and-product.md#lesson-153-give-people-reasons-to-believe-you) | 15 min | Guide |
 
 ## Stage 2: Set up your Shopify store (Days 8 to 20)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 8 | Plan the store | Plan your store before you build | [22.1 Plan before you build](playbook/22-shopify-store-setup.md#lesson-221-plan-before-you-build) | 15 min | Guide |
-| 9 | Domain and email | Connect your own domain and email | [22.2 Domain and email](playbook/22-shopify-store-setup.md#lesson-222-domain-and-email) | 15 min | Guide |
-| 10 | Theme | Pick a free theme and set your brand basics | [22.3 Choose and set up a theme](playbook/22-shopify-store-setup.md#lesson-223-choose-and-set-up-a-theme) | 15 min | Guide |
-| 11 | Home page | Build a home page that makes sense in 5 seconds | [22.4 Build the home page](playbook/22-shopify-store-setup.md#lesson-224-build-the-home-page) | 15 min | Free: Run a store check on your home page |
-| 12 | Product page | Set up your first product page | [22.5 Product pages: titles, photos and descriptions](playbook/22-shopify-store-setup.md#lesson-225-product-pages-titles-photos-and-descriptions) | 15 min | Starter: Draft product page copy for your top product |
-| 13 | Options, stock and reviews | Add variants, stock and a review app | [22.6 Variants and inventory](playbook/22-shopify-store-setup.md#lesson-226-variants-and-inventory) | 15 min | Guide |
-| 14 | Collections and menu | Group products and build your menu | [22.8 Collections, menus and search](playbook/22-shopify-store-setup.md#lesson-228-collections-menus-and-search) | 15 min | Guide |
-| 15 | Shipping | Set shipping rates and a free-shipping amount | [22.9 Shipping zones, rates and a free-shipping amount](playbook/22-shopify-store-setup.md#lesson-229-shipping-zones-rates-and-a-free-shipping-amount) | 15 min | Guide |
-| 16 | Taxes and payments | Check your tax settings and turn on payments | [22.10 Taxes: GST and sales tax basics](playbook/22-shopify-store-setup.md#lesson-2210-taxes-gst-and-sales-tax-basics) | 15 min | Guide |
-| 17 | Policies | Write your policies in plain words | [22.12 Policies and legal pages](playbook/22-shopify-store-setup.md#lesson-2212-policies-and-legal-pages) | 15 min | Guide |
-| 18 | Apps and email | Add your starter apps and email sign-up | [22.13 Essential apps (and only those)](playbook/22-shopify-store-setup.md#lesson-2213-essential-apps-and-only-those) | 15 min | Starter: Draft your welcome email |
-| 19 | Tracking | Install the Meta pixel and Google tag | [20.1 Before you launch: tracking you can trust](playbook/20-ad-analysis-audiences-and-setup.md#lesson-201-before-you-launch-tracking-you-can-trust) | 15 min | Guide |
-| 20 | Test and launch check | Place a test order and tick the launch checklist | [22.16 Place test orders](playbook/22-shopify-store-setup.md#lesson-2216-place-test-orders) | 15 min | Guide |
+| 8 | Plan the store | Plan your store before you build | [13.1 Plan before you build](playbook/13-shopify-store-setup.md#lesson-131-plan-before-you-build) | 15 min | Guide |
+| 9 | Domain and email | Connect your own domain and email | [13.2 Domain and email](playbook/13-shopify-store-setup.md#lesson-132-domain-and-email) | 15 min | Guide |
+| 10 | Theme | Pick a free theme and set your brand basics | [13.3 Choose and set up a theme](playbook/13-shopify-store-setup.md#lesson-133-choose-and-set-up-a-theme) | 15 min | Guide |
+| 11 | Home page | Build a home page that makes sense in 5 seconds | [13.4 Build the home page](playbook/13-shopify-store-setup.md#lesson-134-build-the-home-page) | 15 min | Free: Run a store check on your home page |
+| 12 | Product page | Set up your first product page | [13.5 Product pages: titles, photos and descriptions](playbook/13-shopify-store-setup.md#lesson-135-product-pages-titles-photos-and-descriptions) | 15 min | Starter: Draft product page copy for your top product |
+| 13 | Options, stock and reviews | Add variants, stock and a review app | [13.6 Variants and inventory](playbook/13-shopify-store-setup.md#lesson-136-variants-and-inventory) | 15 min | Guide |
+| 14 | Collections and menu | Group products and build your menu | [13.8 Collections, menus and search](playbook/13-shopify-store-setup.md#lesson-138-collections-menus-and-search) | 15 min | Guide |
+| 15 | Shipping | Set shipping rates and a free-shipping amount | [13.9 Shipping zones, rates and a free-shipping amount](playbook/13-shopify-store-setup.md#lesson-139-shipping-zones-rates-and-a-free-shipping-amount) | 15 min | Guide |
+| 16 | Taxes and payments | Check your tax settings and turn on payments | [13.10 Taxes: GST and sales tax basics](playbook/13-shopify-store-setup.md#lesson-1310-taxes-gst-and-sales-tax-basics) | 15 min | Guide |
+| 17 | Policies | Write your policies in plain words | [13.12 Policies and legal pages](playbook/13-shopify-store-setup.md#lesson-1312-policies-and-legal-pages) | 15 min | Guide |
+| 18 | Apps and email | Add your starter apps and email sign-up | [13.13 Essential apps (and only those)](playbook/13-shopify-store-setup.md#lesson-1313-essential-apps-and-only-those) | 15 min | Starter: Draft your welcome email |
+| 19 | Tracking | Install the Meta pixel and Google tag | [9.1 Before you launch: tracking you can trust](playbook/09-ad-analysis-audiences-and-setup.md#lesson-91-before-you-launch-tracking-you-can-trust) | 15 min | Guide |
+| 20 | Test and launch check | Place a test order and tick the launch checklist | [13.14 Place test orders](playbook/13-shopify-store-setup.md#lesson-1314-place-test-orders) | 15 min | Guide |
 
 ## Stage 3: Your first small test campaign (Days 21 to 28)
 
@@ -48,12 +48,12 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | --- | --- | --- | --- | --- | --- |
 | 21 | Daily numbers | Start your 2-minute morning numbers | [1.6 A 2-minute morning routine](playbook/01-daily-profit-foundations.md#lesson-16-a-2-minute-morning-routine) | 5 min | Guide |
 | 22 | Test budget | Set your test budget and your stop rule | [1.5 Your target MER and break-even numbers](playbook/01-daily-profit-foundations.md#lesson-15-your-target-mer-and-break-even-numbers) | 10 min | Guide |
-| 23 | Simple ads | Film 3 simple ads on your phone | [19.10 Shooting on a phone](playbook/19-creators-ugc-and-video-ads.md#lesson-1910-shooting-on-a-phone) | 15 min | Guide |
+| 23 | Simple ads | Film 3 simple ads on your phone | [6.10 Shooting on a phone](playbook/06-creators-ugc-and-video-ads.md#lesson-610-shooting-on-a-phone) | 15 min | Guide |
 | 24 | Words that stop the scroll | Write the first line for each ad | [5.7 Hooks (first 0 to 3 seconds)](playbook/05-creative-strategy.md#lesson-57-hooks-first-0-to-3-seconds) | 10 min | Starter: Draft 3 opening lines and ad text for each video |
-| 25 | Build the test | Set up your first campaign, paused | [7.13 Launch your first Meta ad in 30 minutes](playbook/07-meta-ads.md#lesson-713-launch-your-first-meta-ad-in-30-minutes) | 15 min | Starter: Build the test campaign as a paused draft in your account |
-| 26 | Launch and wait | Launch the test and leave it alone | [7.5 The learning phase](playbook/07-meta-ads.md#lesson-75-the-learning-phase) | 5 min | Guide |
-| 27 | Read the results | Read what your test is telling you | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Guide |
-| 28 | Your next step | Decide what to do next | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Guide |
+| 25 | Build the test | Set up your first campaign, paused | [8.3 Launch your first Meta ad in 30 minutes](playbook/08-meta-ads.md#lesson-83-launch-your-first-meta-ad-in-30-minutes) | 15 min | Starter: Build the test campaign as a paused draft in your account |
+| 26 | Launch and wait | Launch the test and leave it alone | [8.8 The learning phase](playbook/08-meta-ads.md#lesson-88-the-learning-phase) | 5 min | Guide |
+| 27 | Read the results | Read what your test is telling you | [9.8 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/09-ad-analysis-audiences-and-setup.md#lesson-98-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Guide |
+| 28 | Your next step | Decide what to do next | [8.9 Daily optimisation in 10 minutes](playbook/08-meta-ads.md#lesson-89-daily-optimisation-in-10-minutes) | 10 min | Guide |
 
 ## Day detail
 
@@ -471,7 +471,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. In Ads Manager, create a Sales campaign. New to Ads Manager? Read Lesson 7.14 first.
+1. In Ads Manager, create a Sales campaign. New to Ads Manager? Read Lesson 8.1 first.
 2. Set the daily budget from Day 22. Leave the audience broad (your country, adults).
 3. Add your 3 ads and link them to your best product page.
 4. Check the link, the pixel and the text. Switch the campaign off, then click Publish so it stays paused.

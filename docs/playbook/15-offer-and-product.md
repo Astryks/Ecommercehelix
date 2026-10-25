@@ -1,4 +1,4 @@
-# Module 3: Offer and product
+# Module 15: Offer and product
 
 **Outcome:** a reason to buy now that beats every reason to wait. Plus a simple way to judge which products deserve your ad money.
 
@@ -31,7 +31,7 @@
 
 ---
 
-## Lesson 3.1: Five ways to make an offer stronger
+## Lesson 15.1: Five ways to make an offer stronger
 <!-- stage:convert -->
 
 **Why this matters:** Your offer is everything a customer gets. It is also every reason they have to buy now, not later. When ads and site are fine but sales are slow, the offer is often the gap. There are five levers you can pull, and you only need to strengthen the weakest one first.
@@ -40,7 +40,7 @@
 
 **Expected result:** You have five scores on one line. For example: "Promise 4, Belief 2, Urgency 3, Safety 4, Easy yes 3".
 
-**Step 2.** Circle the lowest score and open its lesson. Promise is 3.2, belief 3.3, urgency 3.4, safety 3.5 and easy yes 3.6.
+**Step 2.** Circle the lowest score and open its lesson. Promise is 15.2, belief 15.3, urgency 15.4, safety 15.5 and easy yes 15.6.
 
 **Expected result:** You know which single lever to work on this week.
 
@@ -54,7 +54,7 @@
 | **Safety** | What if it goes wrong? | Easy returns, trials, a guarantee, sizing help, support that is easy to reach, fast dispatch. |
 | **Easy yes** | Is it simple and fair? | How you present the price, bundles, a higher-priced option shown next to it, payment options, free shipping. |
 
-## Lesson 3.2: Say clearly what the customer gets
+## Lesson 15.2: Say clearly what the customer gets
 <!-- stage:convert -->
 
 **Why this matters:** The promise is the main result your product gives. If shoppers cannot repeat it back in one line, they will not buy. Reviews hold the exact words that sell.
@@ -83,7 +83,7 @@
 
 **Watch out:** Lead with the result, not the feature. "Sleep through the night" beats "Memory foam core".
 
-## Lesson 3.3: Give people reasons to believe you
+## Lesson 15.3: Give people reasons to believe you
 <!-- stage:convert -->
 
 **Why this matters:** People do not buy until they believe the product will work for them. Each objection (a reason not to buy) that you answer with proof removes a barrier. Stores that answer objections on purpose can see conversion rise from the same visitors.
@@ -110,7 +110,7 @@
 
 **Example:** for a high-priced item, a short home trial can answer the "what if it is wrong for me?" worry. Test it, and track both sales and returns.
 
-## Lesson 3.4: Real scarcity
+## Lesson 15.4: Real scarcity
 <!-- stage:convert -->
 
 **Why this matters:** Scarcity means there is a real reason the product may run out. That gives people a reason to act now. Honest scarcity builds trust; fake timers destroy it and can break consumer law. In Australia, after ACCC action, the Federal Court ordered a bedding seller to pay $15 million in 2026. Part of it was for a sale countdown timer that kept resetting (see [ACCC: $15m penalty for misleading sale prices](https://www.accc.gov.au/media-release/bedding-supplier-emma-sleep-to-pay-a-total-of-15m-in-penalties-for-misleading-statements-about-sale-prices)).
@@ -131,7 +131,7 @@
 
 <!-- do:flow-browse-abandonment -->
 
-## Lesson 3.5: Take the risk off the buyer
+## Lesson 15.5: Take the risk off the buyer
 <!-- stage:convert -->
 
 **Why this matters:** Shoppers worry about making a bad purchase. Every worry you remove turns more visits into orders. Generous, clear policies often add more sales than they cost.
@@ -160,7 +160,7 @@
 
 **Watch out:** After changing your returns policy, measure your return rate for 60 days to check it pays off.
 
-## Lesson 3.6: Pricing that is easy to accept
+## Lesson 15.6: Pricing that is easy to accept
 <!-- stage:convert -->
 
 **Why this matters:** How you show the price changes how people feel about it. Small framing changes can lift conversion or let you keep more per order. Test one idea at a time so you know what worked.
@@ -185,7 +185,7 @@
 
 **Expected result:** You know which one your customers prefer, and shoppers can pay in parts.
 
-## Lesson 3.7: Check people really want your product
+## Lesson 15.7: Check people really want your product
 <!-- stage:grow -->
 
 **Why this matters:** Not every product deserves your ad money. A monthly snapshot shows which ones to push, which to test more and which to stop. It takes about 20 minutes.
@@ -213,7 +213,7 @@
 | High spend, poor return | Fix the product page and offer, or cut the spend. |
 | Low spend, poor return | Let it sell without ads, or stop selling it. |
 
-## Lesson 3.8: A steady flow of new products
+## Lesson 15.8: A steady flow of new products
 <!-- stage:grow -->
 
 **Why this matters:** New products keep a store growing, but launching untested ideas ties up cash. A simple pipeline lets you test cheaply first and launch with a plan.
@@ -226,17 +226,17 @@
 
 **Expected result:** You have real demand evidence, such as waitlist sign-ups or preorders.
 
-**Step 3.** Launch with a plan from Module 13 (Lessons 13.2 and 13.3). Build excitement, give early access, prepare a launch offer and have ads ready.
+**Step 3.** Launch with a plan from Module 17 (Lessons 17.2 and 17.3). Build excitement, give early access, prepare a launch offer and have ads ready.
 
 **Expected result:** The launch has dates, an offer and ads ready before day one.
 
 <!-- do:calendar -->
 
-**Step 4.** Review the product after 30 days using the snapshot in Lesson 3.7.
+**Step 4.** Review the product after 30 days using the snapshot in Lesson 15.7.
 
 **Expected result:** The new product sits in one of the four boxes with a next step.
 
-## Lesson 3.9: Offers expire
+## Lesson 15.9: Offers expire
 <!-- stage:convert -->
 
 **Why this matters:** An offer that works today will not work forever. Competitors copy it, the market changes and customers get used to it. A regular review keeps it fresh.
@@ -247,11 +247,11 @@
 
 <!-- do:calendar -->
 
-**Step 2.** If conversion rate drops for 2 weeks and you cannot find another cause, check the offer right away. Use the five levers in Lesson 3.1.
+**Step 2.** If conversion rate drops for 2 weeks and you cannot find another cause, check the offer right away. Use the five levers in Lesson 15.1.
 
 **Expected result:** You have a fresh lever score and one change to test.
 
-## Lesson 3.10: Subscribe and save: repeat orders without asking
+## Lesson 15.10: Subscribe and save: repeat orders without asking
 <!-- stage:grow -->
 
 **Why this matters:** Some products get used up, like coffee, skincare, vitamins, pet food or cleaning refills. A subscription turns one sale into many and makes next month easier to predict. It suits products people reorder on a rhythm; it does not suit one-off purchases.
@@ -274,7 +274,7 @@
 
 **Watch out:** Hiding the cancel button or making it hard to skip creates chargebacks and angry reviews. Make leaving easy; trust keeps people longer.
 
-## Lesson 3.11: Raise prices and lean less on discounts
+## Lesson 15.11: Raise prices and lean less on discounts
 <!-- stage:grow -->
 
 **Why this matters:** Costs go up every year. If your prices never move, your profit quietly shrinks. Constant sales also teach shoppers to wait for a code. A small, well-explained price rise often makes more profit than a big sale.
@@ -295,7 +295,7 @@
 
 **Expected result:** Profit per order goes up. If conversion drops by more than the price rise, roll back part of it.
 
-**Step 5.** Count your sales last year. Plan fewer, bigger moments (Lesson 13.1). Between them, use free gifts or bundles instead of money off.
+**Step 5.** Count your sales last year. Plan fewer, bigger moments (Lesson 17.1). Between them, use free gifts or bundles instead of money off.
 
 **Expected result:** Fewer than one store-wide discount a month, and full-price sales go up.
 

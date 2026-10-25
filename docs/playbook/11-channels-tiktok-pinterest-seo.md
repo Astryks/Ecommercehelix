@@ -1,4 +1,4 @@
-# Module 12: TikTok, Pinterest, SEO and AI search
+# Module 11: TikTok, Pinterest, SEO and AI search
 
 **Outcome:** you know when and how to add channels beyond Meta and Google. You also know how to be found in Google search and in AI helpers.
 
@@ -31,7 +31,7 @@
 
 ---
 
-## Lesson 12.1: TikTok readiness
+## Lesson 11.1: TikTok readiness
 <!-- stage:attract -->
 
 **Why this matters:** TikTok can bring cheap attention. But only once you have videos that work there and tracking in place. Getting ready first stops you paying to learn what free posts could teach you. Only start TikTok ads once Meta and Google are profitable.
@@ -56,7 +56,7 @@
 
 **Expected result:** One saved view shows every number you need.
 
-## Lesson 12.2: Structures by spend
+## Lesson 11.2: Structures by spend
 <!-- stage:attract -->
 
 **Why this matters:** TikTok structures depend on spend, just like Meta. Too many campaigns on a small budget starves each one.
@@ -77,10 +77,10 @@
 | About $200 | Add a catalog ads campaign that shows products from your store's catalog. |
 | About $300 or more | Add a traffic campaign to a landing page, or a video-view campaign, for cheap reach. Test each creative style separately. |
 
-## Lesson 12.3: Spark ads and creators
+## Lesson 11.3: Spark ads and creators
 <!-- stage:attract -->
 
-**Why this matters:** Spark ads run normal TikTok posts as ads, yours or a creator's. They keep the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 19).
+**Why this matters:** Spark ads run normal TikTok posts as ads, yours or a creator's. They keep the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 6).
 
 **Step 1.** Ask the creator for an authorisation code for each post. On the post, they tap **...**, then **Ad settings**, turn on ad authorisation and generate a code.
 
@@ -94,7 +94,7 @@
 
 **Expected result:** The creator's post runs as an ad with its likes and comments.
 
-## Lesson 12.4: Optimising TikTok
+## Lesson 11.4: Optimising TikTok
 <!-- stage:attract -->
 
 **Why this matters:** TikTok ads can tire within days, so they need closer watching than Meta. Early signs warn you before cost per sale gets worse.
@@ -126,7 +126,7 @@
 
 <!-- do:growth -->
 
-## Lesson 12.5: TikTok search
+## Lesson 11.5: TikTok search
 <!-- stage:attract -->
 
 **Why this matters:** Many people use TikTok like a search engine. Saying and showing your keywords helps your videos get found for months.
@@ -143,7 +143,7 @@
 
 **Expected result:** You show up when people search those questions.
 
-## Lesson 12.6: TikTok Shop
+## Lesson 11.6: TikTok Shop
 <!-- stage:attract -->
 
 **Why this matters:** TikTok Shop lets people buy without leaving TikTok. Its ads run as GMV Max campaigns, which aim for total sales (GMV). It also has affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
@@ -158,7 +158,7 @@
 
 **Expected result:** Creators can sell your products from their videos.
 
-## Lesson 12.7: Pinterest
+## Lesson 11.7: Pinterest
 <!-- stage:attract -->
 
 **Why this matters:** Pinterest pins keep getting found for months, much longer than social posts. People plan what to buy there well ahead of time. It rewards steady posting and early seasonal planning.
@@ -181,116 +181,10 @@
 
 **Expected result:** You judge Pinterest fairly for its slower decisions.
 
-## Lesson 12.8: SEO step by step
+## Lesson 11.8: SEO basics
 <!-- stage:attract -->
 
-**Why this matters:** SEO (search engine optimisation) means getting found in Google without paying for ads. It takes months to build but keeps paying. Five steps cover most of it.
-
-**Step 1.** Find the words people search when they want to buy.
-
-1. List buying searches for each category, like "buy linen shirt" or "best linen shirt".
-2. In a keyword tool, look up how many people search each one. Also check how hard it is to rank.
-3. Keep about 10 per category.
-
-**Expected result:** Each category has a list of target keywords.
-
-**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3) and a page title. It also needs a meta description, the summary under your link in Google (about 150 to 160 characters). Build collection pages around a keyword, link between your own pages, and add alt text to images.
-
-**Expected result:** Every key page has a keyword-led title, meta description and one clear H1. Google sets no meta description limit, but longer ones get cut off (see [Google: control your snippets](https://developers.google.com/search/docs/appearance/snippet)).
-
-**Step 3.** Write helpful content that matches your keywords: buying guides, comparisons and how-tos.
-
-**Expected result:** You publish at least one helpful article a month.
-
-**Step 4.** Check the technical side in Google Search Console. You want fast phone pages, structured data (code that tells Google price, rating and stock) and a sitemap sent in. Also no broken links and no copy pages.
-
-**Expected result:** Search Console shows your sitemap as "Success" and no page errors you can fix.
-
-**Step 5.** Get mentioned on other sites through press, partnerships and brand mentions.
-
-**Expected result:** Other sites link to you.
-
-## Lesson 12.9: AI search and agentic commerce
-<!-- stage:attract -->
-
-**Why this matters:** More shoppers now ask AI helpers (AI chat assistants and AI search) what to buy. Some helpers can even shop for them. Clear facts, reviews and clean product data decide whether they recommend you.
-
-**Step 1.** Make your brand facts the same everywhere (site, marketplaces, social bios) and grow your reviews.
-
-**Expected result:** AI helpers find the same facts everywhere and plenty of proof.
-
-**Step 2.** Check your robots.txt lets trusted AI tools read your site. Keep product data clean, and add FAQ sections and clear shipping and returns pages.
-
-**Expected result:** AI tools can read and quote your store accurately.
-
-**Step 3.** Keep your product feed connected so your store can show up inside AI shopping assistants. Shopify lists eligible stores in AI chat apps by default under **Sales channels > Agentic** (see [Shopify: agentic storefronts](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts)).
-
-**Expected result:** Your products are eligible for AI shopping results.
-
-**Step 4.** Get talked about on forums, review sites and videos. Track visits from AI helpers in Google Analytics (referral sources).
-
-**Expected result:** You know how much traffic AI assistants send.
-
-## Lesson 12.10: Instagram shopping
-<!-- stage:attract -->
-
-**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
-
-**Step 1.** Set up your shop on Facebook and Instagram.
-
-1. In Shopify, add the **Facebook & Instagram** sales channel from the Shopify App Store.
-2. Click **Connect account** and connect your Facebook Page, business portfolio, Instagram account and catalog.
-3. Accept the terms and click **Finish setup** (see [Shopify: set up Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta/setup)).
-
-**Expected result:** Meta reviews your shop before it goes live. This can take a few days or longer.
-
-**Step 2.** Turn on catalog sync from your store so prices and stock stay current.
-
-**Expected result:** Price and stock changes in Shopify flow to your Meta catalog by themselves.
-
-**Step 3.** Tag products in your posts and Reels.
-
-**Expected result:** Shoppers can tap to see and buy products.
-
-## Lesson 12.11: Start a YouTube channel that keeps selling
-<!-- stage:attract -->
-
-**Why this matters:** A post on most apps fades in a day. A good YouTube video can be found in search for years. People who watch a full "how to" video already trust you before they visit your store.
-
-**Step 1.** List 10 questions your customers ask before they buy. Use reviews, emails and the search box in YouTube itself (type a word and read the suggestions).
-
-**Expected result:** 10 questions real people search for, like "how to choose a running backpack".
-
-**Step 2.** Pick the 3 questions that link best to your products. Each will be one video.
-
-**Expected result:** A plan for your first 3 videos.
-
-**Step 3.** Write each title as the question or the result people want. Keep it under about 60 characters (a rule of thumb), so it is less likely to be cut off.
-
-**Expected result:** 3 clear titles, like "How to Pick a Running Backpack (3 Easy Checks)".
-
-**Step 4.** Film each video on your phone. Answer the question in the first 30 seconds, then show more detail. Show your product as one helpful example, not a hard sell.
-
-**Expected result:** 3 videos of 4 to 10 minutes that teach something useful.
-
-**Step 5.** Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.
-
-**Expected result:** Thumbnails you can read on a small phone screen.
-
-**Step 6.** In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).
-
-**Expected result:** You can see sales from YouTube in your store reports.
-
-**Step 7.** Post one video every 2 weeks for 3 months. In **YouTube Studio > Analytics**, check which titles get the most clicks and the longest watching time.
-
-**Expected result:** You know which topics work, and you make more like them.
-
-**Watch out:** Results are slow. Most channels take months to grow. Judge it after 3 months, not 3 days.
-
-## Lesson 12.12: SEO basics
-<!-- stage:attract -->
-
-**Why this matters:** Search brings people who are already looking for what you sell, and you do not pay per click. Most of it comes down to a few basics done once and checked each month: the right page for each search, clear titles, tidy links and a sitemap Google can read. Lesson 12.8 then builds on this with keyword research, helpful articles and mentions on other sites.
+**Why this matters:** Search brings people who are already looking for what you sell, and you do not pay per click. Most of it comes down to a few basics done once and checked each month: the right page for each search, clear titles, tidy links and a sitemap Google can read. Lesson 11.9 then builds on this with keyword research, helpful articles and mentions on other sites.
 
 **Step 1.** Match each kind of search to the right kind of page. A search for a type of product ("linen shirt men") wants a collection page. A search for one exact item wants that product page. A question ("how to wash linen") wants a helpful article or an FAQ.
 
@@ -340,7 +234,7 @@
 
 **Expected result:** The test finds valid product details on your product pages (see [Google: product structured data](https://developers.google.com/search/docs/appearance/structured-data/product)).
 
-**Step 11.** Write for people, which also helps AI search. Answer real questions clearly, keep facts like prices, sizes and delivery times the same everywhere, and say who made the page. Google's AI features use the same basics as normal search, so there is no special trick (see [Google: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)). Lesson 12.9 covers AI shopping helpers.
+**Step 11.** Write for people, which also helps AI search. Answer real questions clearly, keep facts like prices, sizes and delivery times the same everywhere, and say who made the page. Google's AI features use the same basics as normal search, so there is no special trick (see [Google: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)). Lesson 11.10 covers AI shopping helpers.
 
 **Expected result:** Your key pages answer real questions in plain words, with facts that match across your store.
 
@@ -352,6 +246,112 @@
 4. Add or improve one FAQ or helpful article.
 
 **Expected result:** A short note each month with clicks, top searches and the fixes you made.
+
+## Lesson 11.9: SEO step by step
+<!-- stage:attract -->
+
+**Why this matters:** SEO (search engine optimisation) means getting found in Google without paying for ads. It takes months to build but keeps paying. Five steps cover most of it.
+
+**Step 1.** Find the words people search when they want to buy.
+
+1. List buying searches for each category, like "buy linen shirt" or "best linen shirt".
+2. In a keyword tool, look up how many people search each one. Also check how hard it is to rank.
+3. Keep about 10 per category.
+
+**Expected result:** Each category has a list of target keywords.
+
+**Step 2.** Fix your pages. Each page needs one main heading (H1), clear subheadings (H2, H3) and a page title. It also needs a meta description, the summary under your link in Google (about 150 to 160 characters). Build collection pages around a keyword, link between your own pages, and add alt text to images.
+
+**Expected result:** Every key page has a keyword-led title, meta description and one clear H1. Google sets no meta description limit, but longer ones get cut off (see [Google: control your snippets](https://developers.google.com/search/docs/appearance/snippet)).
+
+**Step 3.** Write helpful content that matches your keywords: buying guides, comparisons and how-tos.
+
+**Expected result:** You publish at least one helpful article a month.
+
+**Step 4.** Check the technical side in Google Search Console. You want fast phone pages, structured data (code that tells Google price, rating and stock) and a sitemap sent in. Also no broken links and no copy pages.
+
+**Expected result:** Search Console shows your sitemap as "Success" and no page errors you can fix.
+
+**Step 5.** Get mentioned on other sites through press, partnerships and brand mentions.
+
+**Expected result:** Other sites link to you.
+
+## Lesson 11.10: AI search and agentic commerce
+<!-- stage:attract -->
+
+**Why this matters:** More shoppers now ask AI helpers (AI chat assistants and AI search) what to buy. Some helpers can even shop for them. Clear facts, reviews and clean product data decide whether they recommend you.
+
+**Step 1.** Make your brand facts the same everywhere (site, marketplaces, social bios) and grow your reviews.
+
+**Expected result:** AI helpers find the same facts everywhere and plenty of proof.
+
+**Step 2.** Check your robots.txt lets trusted AI tools read your site. Keep product data clean, and add FAQ sections and clear shipping and returns pages.
+
+**Expected result:** AI tools can read and quote your store accurately.
+
+**Step 3.** Keep your product feed connected so your store can show up inside AI shopping assistants. Shopify lists eligible stores in AI chat apps by default under **Sales channels > Agentic** (see [Shopify: agentic storefronts](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts)).
+
+**Expected result:** Your products are eligible for AI shopping results.
+
+**Step 4.** Get talked about on forums, review sites and videos. Track visits from AI helpers in Google Analytics (referral sources).
+
+**Expected result:** You know how much traffic AI assistants send.
+
+## Lesson 11.11: Instagram shopping
+<!-- stage:attract -->
+
+**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
+
+**Step 1.** Set up your shop on Facebook and Instagram.
+
+1. In Shopify, add the **Facebook & Instagram** sales channel from the Shopify App Store.
+2. Click **Connect account** and connect your Facebook Page, business portfolio, Instagram account and catalog.
+3. Accept the terms and click **Finish setup** (see [Shopify: set up Facebook and Instagram](https://help.shopify.com/en/manual/online-sales-channels/facebook-instagram-by-meta/setup)).
+
+**Expected result:** Meta reviews your shop before it goes live. This can take a few days or longer.
+
+**Step 2.** Turn on catalog sync from your store so prices and stock stay current.
+
+**Expected result:** Price and stock changes in Shopify flow to your Meta catalog by themselves.
+
+**Step 3.** Tag products in your posts and Reels.
+
+**Expected result:** Shoppers can tap to see and buy products.
+
+## Lesson 11.12: Start a YouTube channel that keeps selling
+<!-- stage:attract -->
+
+**Why this matters:** A post on most apps fades in a day. A good YouTube video can be found in search for years. People who watch a full "how to" video already trust you before they visit your store.
+
+**Step 1.** List 10 questions your customers ask before they buy. Use reviews, emails and the search box in YouTube itself (type a word and read the suggestions).
+
+**Expected result:** 10 questions real people search for, like "how to choose a running backpack".
+
+**Step 2.** Pick the 3 questions that link best to your products. Each will be one video.
+
+**Expected result:** A plan for your first 3 videos.
+
+**Step 3.** Write each title as the question or the result people want. Keep it under about 60 characters (a rule of thumb), so it is less likely to be cut off.
+
+**Expected result:** 3 clear titles, like "How to Pick a Running Backpack (3 Easy Checks)".
+
+**Step 4.** Film each video on your phone. Answer the question in the first 30 seconds, then show more detail. Show your product as one helpful example, not a hard sell.
+
+**Expected result:** 3 videos of 4 to 10 minutes that teach something useful.
+
+**Step 5.** Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.
+
+**Expected result:** Thumbnails you can read on a small phone screen.
+
+**Step 6.** In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).
+
+**Expected result:** You can see sales from YouTube in your store reports.
+
+**Step 7.** Post one video every 2 weeks for 3 months. In **YouTube Studio > Analytics**, check which titles get the most clicks and the longest watching time.
+
+**Expected result:** You know which topics work, and you make more like them.
+
+**Watch out:** Results are slow. Most channels take months to grow. Judge it after 3 months, not 3 days.
 
 ## Self-check
 

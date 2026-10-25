@@ -1,123 +1,48 @@
 {
-"20.1": {"intro": "Bad data means bad choices. A broken pixel can make good ads look bad. Check tracking now, then every month. Your store's own reports are the truth.",
+"20.1": {"intro": "Each way to pay has its own fee, payout speed and risk. The fee on the price page is rarely the whole cost.",
  "steps": [
-  {"say": "Add the **Facebook & Instagram** sales channel in Shopify. Connect your business account, ad account, page and pixel.", "check": "The sales channel shows all four connected.", "lost": "Add **Facebook & Instagram**. Connect all four."},
-  {"say": "Set data sharing to **Maximum** to turn on server events.", "check": "Sales reach Meta even when a browser blocks the pixel.", "lost": "Choose **Maximum**."},
-  {"say": "Install the **Google & YouTube** app. Connect Merchant Center, Google Ads and GA4.", "check": "Google gets your products and purchases.", "lost": "Install **Google & YouTube**. Connect all three."},
-  {"say": "Check privacy and cookie settings in Shopify **Settings > Customer privacy**.", "check": "Consent is handled for your markets.", "lost": "Open **Customer privacy**. Check it's on."},
-  {"say": "In Meta Events Manager and Google Ads **Goals > Conversions**, check the pixel (or Google tag) and server events (Conversions API on Meta, enhanced conversions on Google) are connected through your store.", "check": "Both show purchases from browser and server.", "lost": "Open Events Manager. Do you see purchases?"},
-  {"say": "Make Purchase the only primary (main) conversion for sales campaigns. Set add to cart and others to secondary.", "check": "Only Purchase is primary on each platform.", "lost": "Only **Purchase** should be primary."},
-  {"say": "Check deduplication is on in Events Manager's event details. It stops one sale counting twice (browser and server).", "check": "Events Manager shows deduplicated purchase events.", "lost": "Look for \"deduplicated\" on the Purchase event."},
-  {"say": "Verify your domain (Meta **Business Settings > Brand safety > Domains**). Set up a cookie consent banner for the countries you sell to.", "check": "The domain shows Verified, and the banner shows for visitors who need it.", "lost": "Verify your domain in **Domains**."},
-  {"say": "Add UTM tags (labels on the end of a link, like `?utm_source=facebook`) to every ad link. Use the URL parameters box in each ad.", "check": "Google Analytics shows visits by channel and campaign.", "lost": "Add `?utm_source=facebook` to one ad link."},
-  {"say": "Place a real test order (Lesson 22.16). Check Meta Events Manager and Google for the Purchase.", "check": "One test order shows as a Purchase in both Meta and Google.", "lost": "Place one test order. Look for it in Meta."},
-  {"say": "Open that test order in each platform. Check the value and currency are right. Then refund it.", "check": "The test purchase shows the right amount and currency.", "lost": "Check the amount shows up. Refund it."}
+  {"say": "Download last month's payout reports from each provider (Shopify Payments, any wallet or buy now pay later provider).", "check": "You have one report per provider.", "lost": "Download your Shopify Payments report."},
+  {"say": "For each provider, divide total fees by the sales it handled. Example: $180 ÷ $9,000 = 2%.", "check": "You have a real fee rate per provider.", "lost": "Fees ÷ sales."},
+  {"say": "Add hidden costs: currency conversion when you withdraw, fixed per-order fees on small orders, and fees kept on refunds.", "check": "Your fee rates include everything.", "lost": "Add the currency fee if you have one."},
+  {"say": "Enter your blended fee rate (all fees ÷ all sales) in Helix as payment fees.", "check": "Helix profit uses your real fees.", "lost": "Enter one fee rate in Helix."},
+  {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Outside the US: buy now pay later often lifts order value, but its fee is often several times a card fee. US: Shop Pay Installments has its own fee, set per store. Compare it with your margin before pushing it.", "lost": "Remove one rarely used, pricey method."},
+  {"say": "Check each provider's fee page once a year.", "check": "Fee rises never surprise you.", "careful": "Australia: since 1 October 2026 you can't add a surcharge for paying by card. Build payment fees into your prices, and ask your provider if your rate has dropped.", "lost": "Put a yearly reminder in your calendar."}
  ]},
-"20.2": {"intro": "Audiences tell each platform who already knows you. Set them up once on Meta, Google and TikTok, then reuse them.",
+"20.2": {"intro": "A payment provider can hold some of your money if it sees risk. A hold in the busy season could stop you paying suppliers.",
  "steps": [
-  {"say": "On Meta, open **Advertising settings > Audience segments** (**All tools**). Set your engaged audience (visitors and social engagers) and existing customers (customer list or store connection).", "check": "Reports show how much spend reaches brand-new people.", "lost": "Upload your customer list as existing customers."},
-  {"say": "On Meta, click **Audiences**, then **Create audience**, then **Custom audience**, once for each:\n\n- Visitors, 30 days. Visitors, 180 days.\n- Product viewers, 30 days.\n- Added to cart, 14 days.\n- Checkout started, 7 days.\n- Buyers, 180 days. Buyers, all time (from your uploaded customer list).\n- Instagram and Facebook engagers, 365 days.\n- People who watched half a video, 90 days.\n- Email subscribers (upload the list).", "check": "Every custom audience shows \"Ready\".", "lost": "Make one: visitors, 30 days."},
-  {"say": "On Meta, build lookalikes of buyers or best customers at 1%, 3 to 5%, and 10%, for later tests.", "check": "Three lookalike sizes are ready.", "lost": "Make one 1% lookalike of buyers."},
-  {"say": "Set cold targeting to broad: your country, age 18 to 65+, all genders unless the product is clearly for one. Choose cold exclusions (none, light: recent buyers, or harsh: all buyers and engagers). Meta announced in 2025 it is retiring its old past-customer spend cap, so check Ads Manager for your account. To keep past buyers out of cold ads, exclude your customer audiences.", "check": "Cold campaigns reach new people on purpose.", "careful": "Don't set a past-customer spend cap. Meta announced in 2025 it is retiring it. Exclude your customer audiences instead.", "lost": "Set cold to broad: country and age only."},
-  {"say": "On Google, give it signals and words to avoid.\n\n1. In **Audience manager**, upload your customer list as a customer match list.\n2. Make remarketing lists: visitors 30 days, visitors 540 days (the most Google allows), cart abandoners, buyers.\n3. In your Performance Max campaign, add these as audience signals.\n4. Make a negative keyword list with words like \"jobs\", \"free\", \"DIY\" and brands you won't bid on.", "check": "Google has signals to guide it and words to avoid.", "lost": "Upload your customer list in **Audience manager**."},
-  {"say": "On TikTok, copy the same layers.\n\n1. Target broad: just country and age.\n2. Make custom audiences: visitors, video viewers, profile engagers, customer list.\n3. Run Spark ads so posts keep their likes and comments.", "check": "TikTok has the same audience layers as Meta.", "lost": "Make one TikTok audience: visitors."},
-  {"say": "Match each audience to its layer using the lesson's table.", "check": "Every audience is labelled cold, mixed, warm, hot or existing customers.", "lost": "Label your audiences cold or warm."}
+  {"say": "Read each provider's rules on holds and reserves (money held back for a while in case of refunds), once.", "check": "You know what causes a hold.", "lost": "Read Shopify Payments' hold rules."},
+  {"say": "Before a big sale or launch, tell your providers the dates and expected sales.", "check": "A planned spike is less likely to cause a hold.", "lost": "Email your provider your sale dates."},
+  {"say": "Add tracking to every order within a day.", "check": "Slow fulfilment is a known risk signal, so fast tracking makes holds less likely.", "lost": "Add tracking to today's orders."},
+  {"say": "Show honest delivery times. State pre-order ship dates clearly.", "check": "Customers know when to expect orders.", "lost": "Add a ship date to pre-orders."},
+  {"say": "Keep at least one month of costs in cash, and a second payment method ready to switch on.", "check": "A hold can't stop the business.", "lost": "Set up a second payment provider as a backup."},
+  {"say": "If money is held, give the provider everything in one go.\n\n1. Ask exactly what they need (like tracking, invoices or ID).\n2. Send it all in one reply.\n3. Add a follow-up date to your Helix calendar.", "check": "The hold is sorted as fast as possible.", "careful": "Keep business details, bank account and ID up to date with every provider. Old details are a common cause of freezes.", "lost": "Ask what they need. Send it all at once."}
  ]},
-"20.3": {"intro": "Set up every Meta sales campaign the same careful way, so each ad gets a fair test. Helix can build Steps 2 to 8 as a paused draft in your account for you to check and switch on. New to Ads Manager? Do Lesson 7.14 first.",
+"20.3": {"intro": "A chargeback is when a customer asks their bank to reverse a card payment. The money and a chargeback fee are taken straight away. On Shopify Payments, the fee comes back if you win. You have a short time to prove the sale was fine.",
  "steps": [
-  {"say": "Write the campaign brief first (Lesson 6.16): target cost per purchase, who it's for, daily budget, and when you'll stop it.", "check": "The brief is done before you open Ads Manager.", "lost": "Write your target cost per purchase."},
-  {"say": "Start the campaign.\n\n1. In Ads Manager, click **+ Create**.\n2. Choose **Sales**, click **Continue**.\n3. Leave **Advantage+** on for new customers. For a controlled test, narrow the audience or placements later (Lesson 7.2).", "check": "A new Sales campaign is open.", "lost": "Click **+ Create**. Choose **Sales**."},
-  {"say": "Click the campaign name box. Name it with your pattern, like `03-Manual-Cold-Broad-TEST-B16` (Lesson 6.7).", "check": "The name shows the number, type, audience and test.", "lost": "Type a name with a number first."},
-  {"say": "Set a daily budget of about 2 to 3 times your target cost per purchase. Example: $20 target, so $40 to $60 a day. It sits on the campaign for Advantage+, and on the ad set for manual tests.", "check": "The budget matches your brief.", "lost": "Target cost × 2 = your daily budget."},
-  {"say": "In the ad set, under **Conversion**, choose **Website**, your pixel, and the event **Purchase**.", "check": "The ad set is set to find purchases.", "lost": "Choose **Website** and **Purchase**."},
-  {"say": "Under **Attribution setting** (click **Show more options** if you can't see it), keep **7-day click, 1-day view**, or whatever your other campaigns use.", "check": "All your campaigns count sales the same way.", "lost": "Keep it the same as your other campaigns."},
-  {"say": "Set the audience like Lesson 20.2. Leave **Advantage+ placements** on.", "check": "Audience and placements match the brief.", "lost": "Leave **Advantage+ placements** on."},
-  {"say": "In the ad, add 3 to 6 ads that test one thing. Each needs main text, a headline, and a link with UTM tags (Lesson 20.1). Use **Duplicate** to make each extra ad.", "check": "Each ad has text, a headline and a tagged link.", "lost": "Make one ad. Click **Duplicate** for the next."},
-  {"say": "Stop Meta changing your ad.\n\n1. In each ad, open **Advantage+ creative**, then **Edit**.\n2. Switch off anything that changes your words or picture.\n3. Check the preview on the right for Feed, Stories and Reels.", "check": "Text sits inside the safe areas and each ad looks as designed.", "lost": "Open **Advantage+ creative**. Switch off the changes."},
-  {"say": "Click **Publish** (bottom right). Then don't touch it for 3 days unless something is broken.", "check": "**Delivery** shows \"In review\", then \"Learning\", and the campaign learns in peace.", "lost": "Click **Publish**. Leave it for 3 days."}
+  {"say": "Open the chargeback in Shopify. Note the deadline, usually 7 to 21 days on Shopify Payments.", "check": "You know your deadline. Customers usually have about 120 days to dispute, often counted from the expected delivery date.", "lost": "Write down the deadline."},
+  {"say": "Read the reason: \"not received\", \"not as described\" or \"fraudulent\".", "check": "You know what proof you need.", "lost": "Find the reason word."},
+  {"say": "For \"not received\", gather tracking that shows delivery to the address given, plus any messages confirming details.", "check": "You have proof of delivery.", "lost": "Save the tracking page."},
+  {"say": "For \"not as described\", gather your product page at the time, photos, your returns policy, and messages offering a fix.", "check": "You can show the product matched the listing.", "lost": "Save a copy of the product page."},
+  {"say": "For \"fraudulent\", gather proof the real cardholder ordered: matching billing and shipping address, past orders, and opened tracking emails.", "check": "You have the best proof available. These are often the hardest to win.", "lost": "Check if billing and shipping match."},
+  {"say": "Write a short, factual response with the strongest proof first. Submit it.", "check": "It's submitted before the deadline.", "lost": "Put your best proof first. Submit."},
+  {"say": "Contact the customer politely. Some disputes are confusion they can withdraw.", "check": "Some disputes are withdrawn.", "lost": "Send one kind message."},
+  {"say": "Track your chargeback rate (disputes ÷ orders) every month. Example: 2 ÷ 1,000 = 0.2%.", "check": "You catch a rising rate before card networks penalise you. Disputes count even when you win. Aim to stay well under 1%.", "careful": "For pricey orders, use signature on delivery. It's the strongest proof you can buy.", "lost": "Disputes ÷ orders, once a month."}
  ]},
-"20.4": {"intro": "Google works best with three simple campaigns, in order: brand search (your ad shows when people search your name), Performance Max fed by your product list, and later non-brand search. Helix doesn't connect to Google Ads yet, so you build these yourself. First time? Lesson 8.12 walks you through.",
+"20.4": {"intro": "Card testing is when fraudsters use your checkout to try stolen card numbers, usually with lots of tiny orders on your cheapest product.",
  "steps": [
-  {"say": "Do Lesson 8.1 first, so the Shopify **Google & YouTube** app is connected and **Purchase** is your primary conversion.", "check": "In Google Ads, **Goals > Conversions > Summary** shows Purchase as Primary and \"Recording conversions\".", "lost": "Check Purchase is Primary."},
-  {"say": "In Merchant Center (merchants.google.com), open **Products**, then the **Needs attention** tab. Fix each issue, starting with your best sellers.", "check": "Your best sellers are approved with no errors. Missing GTINs (barcodes) can be fixed in Shopify on each product's variant.", "lost": "Fix your best seller's issue first."},
-  {"say": "In Google Ads, click **+ Create** (or **+ New campaign** on the Campaigns page). Choose **Sales**, then **Search**. Name it \"01-Search-Brand\".", "check": "A new Search campaign is open on its settings page.", "lost": "Click **+ Create**, then **Sales**, then **Search**."},
-  {"say": "Under **Bidding**, choose **Target impression share**. Set **Anywhere on results page** to 90%, and **Maximum CPC bid limit** (the most you pay for one click) to $0.50 to $1. Set a daily budget of $5 to $10. Untick **Search partners** and **Display Network**.", "check": "The brand campaign has a $5 to $10 daily budget, Target impression share bidding with a capped cost per click, and runs on Search only.", "lost": "Set $5 a day. Untick the two networks."},
-  {"say": "In the ad group, add your store name and common misspellings as keywords: `[your brand]` (exact) and `\"your brand\"` (phrase).", "check": "The ad group has 2 to 6 brand keywords.", "lost": "Add your store name two ways."},
-  {"say": "Write one responsive search ad: up to 15 headlines and 4 descriptions about your store, best sellers and offer. Add 4 sitelinks (Best sellers, New in, Shipping, Reviews). Click **Publish campaign**.", "check": "The brand campaign is live and \"Eligible\". Searching your name shows your ad.", "lost": "Write 5 headlines. Click **Publish campaign**."},
-  {"say": "Start a Performance Max (PMax) campaign, Google's all-in-one campaign.\n\n1. Click **+ Create** again.\n2. Choose **Sales**, then **Performance Max**.\n3. Pick your Merchant Center account when asked.\n4. Name it \"02-PMax-Products\".", "check": "A new Performance Max campaign is connected to your product feed.", "lost": "Choose **Sales**, then **Performance Max**."},
-  {"say": "Set **Bidding** to **Conversion value** (Maximise conversion value), with no target ROAS for now. Set a daily budget from your marketing guide (Lesson 1.9).", "check": "The campaign has a budget and value bidding.", "lost": "Pick **Conversion value**. No target yet."},
-  {"say": "Keep it on your products, then publish.\n\n1. In the asset group, remove extra images, videos and text Google added, so it runs mainly from your product feed.\n2. In campaign settings, add your brand name under **Brand exclusions**.\n3. Click **Publish campaign**.", "check": "PMax is live and runs on your products, not your brand name. Can't remove every asset? Leave the minimum Google needs.", "lost": "Add your brand to **Brand exclusions**. Publish."},
-  {"say": "After about 30 purchases in 30 days (a rule of thumb), add a target.\n\n1. Open the PMax campaign settings.\n2. Tick **Set a target return on ad spend**.\n3. Type a target near your break-even ROAS. Helix shows it in **Profit**.", "check": "Bidding now aims at profitable sales.", "lost": "30 sales yet? Then add your break-even ROAS."},
-  {"say": "Once brand search and PMax are steady, add one Search campaign per product theme.\n\n1. Make a Search campaign for one theme, like \"linen sheets\".\n2. Add 5 to 15 keywords as \"phrase\" and [exact].\n3. Each week, open **Insights and reports**, then **Search terms**.\n4. Tick searches that never buy, click **Add as negative keyword**.", "check": "New searchers find you, and searches that never buy are blocked.", "careful": "Your screen may look a bit different, because Google changes its menus often. Look for the same words (Create, Campaigns, Bidding, Brand exclusions, Search terms), or use the search box at the top.", "lost": "Make one theme campaign with 5 keywords."}
+  {"say": "Learn the signs: bursts of small orders, the same cheap item, odd names or emails, lots of failed payments, or different addresses on one card.", "check": "You can spot card testing.", "lost": "Many tiny orders at once? That's a sign."},
+  {"say": "Use your platform's protections: Shopify's fraud analysis and its built-in card testing protection on Shopify Payments.", "check": "You know what Shopify already blocks. Checkout bot protection is only on Shopify Plus, mainly for flash sales.", "lost": "Open an order and read its fraud analysis."},
+  {"say": "Read the fraud risk level on every order before shipping. Hold high-risk orders while you contact the customer.", "check": "No high-risk order ships unchecked.", "lost": "Check the risk level before you ship."},
+  {"say": "Cancel and refund any order that looks like fraud before shipping.", "check": "You pay a refund instead of a chargeback.", "lost": "Looks fake? Cancel and refund."},
+  {"say": "Use 3D Secure (an extra bank check at payment) where your provider allows it. Shopify Payments applies it only when the card's bank asks.", "check": "Risky payments get an extra check where your provider supports it. Some other providers let you set rules that request it.", "lost": "Check if your provider lets you request 3D Secure."},
+  {"say": "If testing keeps happening, raise the minimum order or hide your cheapest product for a while.", "check": "The attacks stop.", "careful": "Be careful with gift cards, and very large first orders going to parcel forwarding addresses.", "lost": "Hide your cheapest product for a week."}
  ]},
-"20.5": {"intro": "TikTok campaigns work like Meta, with a few differences.",
+"20.5": {"intro": "A fast, fair refund is cheaper than a dispute. A clear rule means you don't decide each case from scratch.",
  "steps": [
-  {"say": "Make a campaign with the **Sales** objective and **Website** as the destination. Pick the pixel event **Purchase**.", "check": "The campaign aims for purchases. Older accounts may call it **Complete payment**.", "lost": "Pick **Sales** and **Purchase**."},
-  {"say": "Use broad targeting, with a budget big enough for several sales a day per ad group.", "check": "Each ad group can learn.", "lost": "Target broad. Enough budget for a few sales a day."},
-  {"say": "Add 3 to 5 natural-looking tall videos per ad group. Use Spark ads where you can.", "check": "Ads look like TikTok posts and keep their likes.", "lost": "Add 3 tall videos."},
-  {"say": "Give it a week. Then judge on total MER on the Dashboard (all ad spend as a share of all sales), as well as TikTok's own numbers.", "check": "You judge TikTok on the whole store.", "lost": "Wait a week. Check total MER."}
- ]},
-"20.6": {"intro": "Ad sales come from a chain of steps, from seeing the ad to the order size. Fix the weakest link and everything after it moves.",
- "steps": [
-  {"say": "Read the metric tree in the lesson from top to bottom. Write your current number next to each step.", "check": "You have a number for CPM, CTR, cost per click, landing page view rate, add to cart rate, checkout rate, purchase rate and AOV.", "lost": "Write down your CTR and add to cart rate."},
-  {"say": "Circle the step furthest below its usual level. Work on that one only.", "check": "You have one link to fix. Example: 20% better CTR with the same page means 20% more buyers for the same spend.", "lost": "Circle the worst number. Fix just that."}
- ]},
-"20.7": {"intro": "When results drop, it could be the ad, the page, the offer or the checkout. Helix checks the same rules for you in What to fix.",
- "steps": [
-  {"say": "In Helix, open **What to fix**. See which patterns it found in your numbers.", "check": "You see any matching insights with proof.", "lost": "Tap **What to fix**."},
-  {"say": "Nothing there? Find the row in the lesson's table that matches your numbers.", "check": "You have a likely cause and a fix.", "lost": "Find the row that looks like your numbers."},
-  {"say": "Make the fix. Check the same numbers again after 7 days.", "check": "You know if the guess was right.", "lost": "Fix it. Check again in 7 days."}
- ]},
-"20.8": {"intro": "Breakdowns split your results by group in Ads Manager. They show problems hidden in averages. Look weekly, not daily.",
- "steps": [
-  {"say": "In Ads Manager, click **Breakdown > By delivery > Placement**. Check if one placement (like Audience Network) spends a lot at a high cost per sale.", "check": "You know your best and worst placements.", "lost": "Click **Breakdown > By delivery > Placement**."},
-  {"say": "Break down by age and gender. If some groups never buy, change the ads before you narrow targeting.", "check": "You know who buys and who doesn't.", "lost": "Break down by age."},
-  {"say": "Break down by device and time. If phones sell far worse than computers, fix the mobile site. Note day-of-week patterns for launches and emails.", "check": "You know what devices and times work.", "lost": "Compare phones and computers."},
-  {"say": "Break down by country, and by new versus existing customers.", "check": "You know how much spend reaches new people, and which countries deserve their own campaigns.", "lost": "Break down by country."}
- ]},
-"20.9": {"intro": "Every platform claims credit for the same sale. Incrementality means sales that wouldn't have happened without the ad.",
- "steps": [
-  {"say": "Use MER (all ad spend ÷ all store sales) as your first number.", "check": "You judge ads by the store's real sales.", "lost": "Ad spend ÷ store sales = MER."},
-  {"say": "Use platform numbers for direction only, mainly to compare ads inside one platform.", "check": "You stop adding up platform claims.", "lost": "Use platform numbers to compare ads, nothing more."},
-  {"say": "Track new-customer CAC (ad spend ÷ new customers) every week. Example: $1,000 ÷ 25 = $40.", "check": "You know if growth is real.", "lost": "Ad spend ÷ new customers."},
-  {"say": "Run a holdout test: pause a channel or campaign in one region, or for one week. Watch total sales.", "check": "If sales don't drop, those ads weren't adding sales.", "lost": "Pause one campaign for a week. Watch total sales."},
-  {"say": "Add an after-purchase survey: \"Where did you first hear about us?\"", "check": "Customer answers sit next to your data.", "lost": "Add that one question after checkout."}
- ]},
-"20.10": {"intro": "A fixed rhythm of daily, weekly, monthly and quarterly checks means nothing is missed, and nothing is over-checked.",
- "steps": [
-  {"say": "Put the daily, weekly, monthly and quarterly checks from the lesson's table in your calendar.", "check": "Each check has a repeating slot.", "lost": "Add the daily check to your calendar."},
-  {"say": "Do today's daily check now.", "check": "The rhythm has started.", "lost": "Do the daily check. Just today's."}
- ]},
-"20.11": {"intro": "A report is only useful if it leads to a decision. Four questions do that.",
- "steps": [
-  {"say": "Start each report with what happened: sales, contribution profit and MER (all ad spend as a share of all sales) against target.", "check": "Three numbers open every report.", "lost": "Write sales, profit and MER."},
-  {"say": "Add why: the one or two biggest causes, with proof.", "check": "Every change has a reason.", "lost": "Write one reason."},
-  {"say": "Add what you did, and the next three actions, each with an owner and a date.", "check": "The report ends in decisions.", "careful": "If a number wouldn't change a decision, drop it.", "lost": "Write one next action with a date."}
- ]},
-"20.12": {"intro": "Most mistakes come from judging too soon, or comparing the wrong things.",
- "steps": [
-  {"say": "Never judge an ad after one day or $10 of spend.", "check": "Every ad gets its full test spend first.", "lost": "Wait for the full test spend."},
-  {"say": "Compare ROAS with your own break-even, not other stores or other seasons.", "check": "ROAS is always read against break-even.", "lost": "Is ROAS above your break-even? That's the question."},
-  {"say": "Don't turn off an ad set the platform calls \"bad\" while your MER is improving. Check what happens after the click before trusting CTR (how many in 100 people clicked).", "check": "Decisions follow store results.", "lost": "MER getting better? Leave it on."},
-  {"say": "Stop daily edits. Never trust the total of what each platform says it earned.", "check": "Campaigns finish learning and your numbers stay honest.", "lost": "No edits today."}
- ]},
-"20.13": {"intro": "Google Analytics shows where buyers come from and where people leave.",
- "steps": [
-  {"say": "Check GA4 is connected (Lesson 8.1). Open GA4 and go to **Reports > Life cycle > Acquisition > Traffic acquisition**.", "check": "A table of visits and sales by channel, like paid social, organic search and email.", "lost": "Open the traffic report."},
-  {"say": "Set the date to the last 30 days. Sort by **Key events** or **Total revenue**.", "check": "You can see which channels bring buyers, not just visitors.", "lost": "Look at the last 30 days of buyers."},
-  {"say": "Look for a big row called **Unassigned** or **(not set)**. If it is large, add tracking tags (UTMs) to your ads, emails and social links.", "check": "Most visits sit in a named channel.", "lost": "Big 'Unassigned' row? Tag your links."},
-  {"say": "Go to **Reports > Life cycle > Monetization > Purchase journey**. Read how many people viewed a product, added to cart, started checkout and bought.", "check": "You can see the step where the most people leave.", "lost": "Find where most people leave."},
-  {"say": "Fix that one step first. Product page leaks go to Lesson 9.2. Checkout leaks go to Lesson 9.16.", "check": "One clear fix, picked from data instead of a guess.", "lost": "Fix that one step."},
-  {"say": "Optional: open **Admin > Data display > Audiences**. Make an audience of 30-day cart adders who did not buy. Use it in Google Ads for reminder ads (Lesson 8.1).", "check": "A warm audience you can reach again.", "lost": "Optional: make an audience of cart leavers."}
- ]},
-"20.14": {"intro": "Cold campaigns should find new buyers. Meta often drifts to people who already know you. A 10-minute weekly check shows where the money goes.",
- "steps": [
-  {"say": "In **Advertising settings > Audience segments**, check your engaged audience and existing customers are set, and the customer list is recent.", "check": "Both segments are set. The list is under 30 days old.", "lost": "Upload a fresh customer list."},
-  {"say": "In Ads Manager, pick one cold campaign and the last 7 days. Click **Breakdown**, then **Audience segments**.", "check": "Spend and purchases split into new, engaged and existing customers.", "lost": "Breakdown > Audience segments."},
-  {"say": "Divide new audience spend by total spend.", "check": "One percentage per cold campaign.", "careful": "Rule of thumb: aim for about 70% or more on new people.", "lost": "New spend ÷ total spend."},
-  {"say": "Add the **Frequency** column with the same breakdown.", "check": "You know how often new people see your ads.", "careful": "Rule of thumb: under about 2 over 7 days for new people.", "lost": "Add the Frequency column."},
-  {"say": "Find the cause in the lesson's table and make one fix. Write it in your test log with today's date.", "check": "One change made and logged.", "lost": "Make one fix only."},
-  {"say": "Meta is retiring its old past-customer spend cap. Exclude customer audiences in cold ad sets. Want to reach past buyers? Give them their own ad set with a spending limit.", "check": "Cold ad sets leave out past buyers.", "careful": "Screens change often. If yours look different, search Meta Business Help Centre for \"existing customers\".", "lost": "Exclude your buyers audience in cold ad sets."},
-  {"say": "Repeat the check every week, and after any big change, for 3 weeks.", "check": "New audience share and new customers in your store go up.", "lost": "Set a weekly reminder."}
+  {"say": "Write a one-page refund rule: when you refund in full, when you offer a part refund or credit, and who approves it.", "check": "Your team can handle any refund the way you would.", "lost": "Write when you give a full refund."},
+  {"say": "For small problems, offer a fix first: a part refund or store credit if the customer keeps the item.", "check": "Fewer full refunds.", "careful": "Outside the US: in Australia, faulty items carry a legal right to repair, replacement or refund. Goodwill is extra. US: state law and your published policy set the rules.", "lost": "Offer a part refund for a small problem."},
+  {"say": "Always refund to the original payment method.", "check": "No disputes from money sent another way.", "lost": "Refund to the same card."},
+  {"say": "Write down every refund reason.", "check": "You can fix the cause.", "lost": "Write the reason for this refund."},
+  {"say": "Enter refunds in Helix.", "check": "Profit stays true.", "lost": "Enter this week's refunds."}
  ]}
 }

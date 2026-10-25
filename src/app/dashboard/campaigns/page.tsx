@@ -147,7 +147,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
           <h2 className="font-semibold">Plan your next campaign</h2>
           <p className="mt-2 text-sm leading-6 text-slate-600">Before you launch, define the job, audience, budget, creative concepts and kill rules. The Learn module walks you through it and ends with a fill-in brief.</p>
           <div className="mt-4 flex flex-wrap gap-2">
-            <Link href="/learn/06-defining-campaigns" className="btn-primary"><BookOpen className="h-4 w-4" aria-hidden /> Learn: Defining campaigns</Link>
+            <Link href="/learn/07-defining-campaigns" className="btn-primary"><BookOpen className="h-4 w-4" aria-hidden /> Learn: Defining campaigns</Link>
             <Link href="/dashboard/campaigns/new" className="btn-ghost">Open the campaign builder</Link>
           </div>
         </section>

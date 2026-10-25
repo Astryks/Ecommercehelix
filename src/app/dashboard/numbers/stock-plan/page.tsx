@@ -10,7 +10,7 @@ export default async function StockPlan() {
   const t = await computeTools(u.id);
   const due = t.buys.filter((b) => b.orderQty > 0);
   return (
-    <ToolPage title="Stock buy plan" intro="How many weeks your stock lasts, what to order and when, and how much cash each order needs." auto="every day from sales speed, lead times and big sale dates" example={t.example} lesson={{ label: "Never run out", href: "/learn/14-inventory-cash-planning" }}>
+    <ToolPage title="Stock buy plan" intro="How many weeks your stock lasts, what to order and when, and how much cash each order needs." auto="every day from sales speed, lead times and big sale dates" example={t.example} lesson={{ label: "Never run out", href: "/learn/19-inventory-cash-planning" }}>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3" data-testid="tool-stock">
         <Stat k="Orders to place" v={String(due.length)} />
         <Stat k="Cash needed" v={usd(due.reduce((a, b) => a + b.cash, 0))} note="Also counted in your cash plan" />

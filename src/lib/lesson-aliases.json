@@ -1,4 +1,347 @@
 {
+ "_note": "Lesson ids. Progress, task ids, card positions and store-check findings are saved under each lesson's permanent id: its number before the 26 Oct 2026 reorder (the two lessons added that day use 12.12 and 20.14). 'renumbered' maps a permanent id to the number shown now, 'modules' maps old module page slugs to new ones (redirected in next.config.ts), 'lessons' lists lessons merged into another lesson (permanent ids, with step moves) and 'anchors' maps old heading anchors to a permanent id. Read by src/lib/lesson-alias.ts.",
+ "renumbered": {
+  "1.1": "1.1",
+  "1.2": "1.2",
+  "1.3": "1.3",
+  "1.4": "1.4",
+  "1.5": "1.5",
+  "1.6": "1.6",
+  "1.7": "1.7",
+  "1.8": "1.8",
+  "1.9": "1.9",
+  "1.10": "1.10",
+  "2.1": "2.1",
+  "2.2": "2.2",
+  "2.3": "2.3",
+  "2.4": "2.4",
+  "2.5": "2.5",
+  "2.6": "2.6",
+  "2.7": "2.7",
+  "2.8": "2.8",
+  "4.1": "3.1",
+  "4.2": "3.2",
+  "4.3": "3.3",
+  "4.4": "3.4",
+  "4.5": "3.5",
+  "4.6": "3.6",
+  "4.7": "3.7",
+  "4.8": "3.8",
+  "4.9": "3.9",
+  "21.1": "4.1",
+  "21.2": "4.2",
+  "21.4": "4.3",
+  "21.5": "4.4",
+  "21.6": "4.5",
+  "21.8": "4.6",
+  "21.9": "4.7",
+  "5.1": "5.1",
+  "5.2": "5.2",
+  "5.3": "5.3",
+  "5.4": "5.4",
+  "5.5": "5.5",
+  "5.6": "5.6",
+  "5.7": "5.7",
+  "5.8": "5.8",
+  "5.9": "5.9",
+  "5.10": "5.10",
+  "5.11": "5.11",
+  "5.12": "5.12",
+  "5.13": "5.13",
+  "5.14": "5.14",
+  "5.16": "5.15",
+  "5.17": "5.16",
+  "5.18": "5.17",
+  "5.19": "5.18",
+  "5.20": "5.19",
+  "5.21": "5.20",
+  "5.22": "5.21",
+  "19.1": "6.1",
+  "19.2": "6.2",
+  "19.3": "6.3",
+  "19.4": "6.4",
+  "19.5": "6.5",
+  "19.6": "6.6",
+  "19.7": "6.7",
+  "19.8": "6.8",
+  "19.9": "6.9",
+  "19.10": "6.10",
+  "19.11": "6.11",
+  "19.12": "6.12",
+  "19.13": "6.13",
+  "6.1": "7.1",
+  "6.2": "7.2",
+  "6.3": "7.3",
+  "6.4": "7.4",
+  "6.5": "7.5",
+  "6.6": "7.6",
+  "6.7": "7.7",
+  "6.8": "7.8",
+  "6.9": "7.9",
+  "6.10": "7.10",
+  "6.11": "7.11",
+  "6.12": "7.12",
+  "6.13": "7.13",
+  "6.14": "7.14",
+  "6.15": "7.15",
+  "6.16": "7.16",
+  "7.14": "8.1",
+  "7.1": "8.2",
+  "7.13": "8.3",
+  "7.2": "8.4",
+  "7.3": "8.5",
+  "7.16": "8.6",
+  "7.4": "8.7",
+  "7.5": "8.8",
+  "7.6": "8.9",
+  "7.7": "8.10",
+  "7.8": "8.11",
+  "7.9": "8.12",
+  "7.10": "8.13",
+  "7.15": "8.14",
+  "7.11": "8.15",
+  "7.12": "8.16",
+  "20.1": "9.1",
+  "20.2": "9.2",
+  "20.14": "9.3",
+  "20.3": "9.4",
+  "20.4": "9.5",
+  "20.5": "9.6",
+  "20.6": "9.7",
+  "20.7": "9.8",
+  "20.8": "9.9",
+  "20.9": "9.10",
+  "20.10": "9.11",
+  "20.11": "9.12",
+  "20.12": "9.13",
+  "20.13": "9.14",
+  "8.13": "10.1",
+  "8.1": "10.2",
+  "8.2": "10.3",
+  "8.12": "10.4",
+  "8.3": "10.5",
+  "8.4": "10.6",
+  "8.5": "10.7",
+  "8.6": "10.8",
+  "8.7": "10.9",
+  "8.8": "10.10",
+  "8.9": "10.11",
+  "8.10": "10.12",
+  "8.11": "10.13",
+  "12.1": "11.1",
+  "12.2": "11.2",
+  "12.3": "11.3",
+  "12.4": "11.4",
+  "12.5": "11.5",
+  "12.6": "11.6",
+  "12.7": "11.7",
+  "12.12": "11.8",
+  "12.8": "11.9",
+  "12.9": "11.10",
+  "12.10": "11.11",
+  "12.11": "11.12",
+  "11.1": "12.1",
+  "11.2": "12.2",
+  "11.3": "12.3",
+  "11.4": "12.4",
+  "11.5": "12.5",
+  "22.1": "13.1",
+  "22.2": "13.2",
+  "22.3": "13.3",
+  "22.4": "13.4",
+  "22.5": "13.5",
+  "22.6": "13.6",
+  "22.7": "13.7",
+  "22.8": "13.8",
+  "22.9": "13.9",
+  "22.10": "13.10",
+  "22.11": "13.11",
+  "22.12": "13.12",
+  "22.13": "13.13",
+  "22.16": "13.14",
+  "22.17": "13.15",
+  "22.18": "13.16",
+  "9.1": "14.1",
+  "9.2": "14.2",
+  "9.3": "14.3",
+  "9.4": "14.4",
+  "9.5": "14.5",
+  "9.7": "14.6",
+  "9.8": "14.7",
+  "9.9": "14.8",
+  "9.10": "14.9",
+  "9.11": "14.10",
+  "9.12": "14.11",
+  "9.13": "14.12",
+  "9.14": "14.13",
+  "9.15": "14.14",
+  "9.16": "14.15",
+  "9.17": "14.16",
+  "9.18": "14.17",
+  "9.19": "14.18",
+  "3.1": "15.1",
+  "3.2": "15.2",
+  "3.3": "15.3",
+  "3.4": "15.4",
+  "3.5": "15.5",
+  "3.6": "15.6",
+  "3.7": "15.7",
+  "3.8": "15.8",
+  "3.9": "15.9",
+  "3.10": "15.10",
+  "3.11": "15.11",
+  "10.1": "16.1",
+  "10.2": "16.2",
+  "10.3": "16.3",
+  "10.4": "16.4",
+  "10.5": "16.5",
+  "10.6": "16.6",
+  "10.7": "16.7",
+  "10.8": "16.8",
+  "10.9": "16.9",
+  "10.10": "16.10",
+  "10.11": "16.11",
+  "10.12": "16.12",
+  "10.13": "16.13",
+  "10.14": "16.14",
+  "10.15": "16.15",
+  "10.16": "16.16",
+  "10.17": "16.17",
+  "13.1": "17.1",
+  "13.2": "17.2",
+  "13.3": "17.3",
+  "13.4": "17.4",
+  "13.5": "17.5",
+  "13.6": "17.6",
+  "13.7": "17.7",
+  "13.8": "17.8",
+  "13.9": "17.9",
+  "13.10": "17.10",
+  "13.11": "17.11",
+  "13.12": "17.12",
+  "13.13": "17.13",
+  "30.1": "18.1",
+  "30.2": "18.2",
+  "30.3": "18.3",
+  "30.4": "18.4",
+  "30.5": "18.5",
+  "30.6": "18.6",
+  "14.1": "19.1",
+  "14.2": "19.2",
+  "14.3": "19.3",
+  "14.4": "19.4",
+  "14.5": "19.5",
+  "14.6": "19.6",
+  "14.7": "19.7",
+  "14.8": "19.8",
+  "14.9": "19.9",
+  "14.10": "19.10",
+  "14.11": "19.11",
+  "14.12": "19.12",
+  "24.1": "20.1",
+  "24.2": "20.2",
+  "24.3": "20.3",
+  "24.4": "20.4",
+  "24.5": "20.5",
+  "23.1": "21.1",
+  "23.2": "21.2",
+  "23.3": "21.3",
+  "23.4": "21.4",
+  "23.5": "21.5",
+  "23.6": "21.6",
+  "23.7": "21.7",
+  "26.1": "22.1",
+  "26.2": "22.2",
+  "26.3": "22.3",
+  "26.4": "22.4",
+  "26.5": "22.5",
+  "27.1": "23.1",
+  "27.2": "23.2",
+  "27.3": "23.3",
+  "27.4": "23.4",
+  "27.5": "23.5",
+  "27.6": "23.6",
+  "25.1": "24.1",
+  "25.2": "24.2",
+  "25.3": "24.3",
+  "25.4": "24.4",
+  "25.5": "24.5",
+  "25.6": "24.6",
+  "15.1": "25.1",
+  "15.2": "25.2",
+  "15.3": "25.3",
+  "15.4": "25.4",
+  "15.5": "25.5",
+  "15.6": "25.6",
+  "15.7": "25.7",
+  "28.1": "26.1",
+  "28.2": "26.2",
+  "28.3": "26.3",
+  "28.4": "26.4",
+  "28.5": "26.5",
+  "28.6": "26.6",
+  "28.7": "26.7",
+  "28.8": "26.8",
+  "28.9": "26.9",
+  "16.1": "27.1",
+  "16.2": "27.2",
+  "16.3": "27.3",
+  "16.4": "27.4",
+  "16.6": "27.5",
+  "16.9": "27.6",
+  "17.1": "28.1",
+  "17.2": "28.2",
+  "17.3": "28.3",
+  "17.4": "28.4",
+  "17.5": "28.5",
+  "18.1": "29.1",
+  "18.2": "29.2",
+  "29.1": "30.1",
+  "29.2": "30.2",
+  "29.3": "30.3",
+  "29.4": "30.4",
+  "29.5": "30.5",
+  "29.6": "30.6",
+  "29.7": "30.7",
+  "29.8": "30.8",
+  "29.9": "30.9",
+  "29.10": "30.10",
+  "29.11": "30.11",
+  "29.12": "30.12",
+  "29.13": "30.13",
+  "29.14": "30.14",
+  "29.15": "30.15",
+  "29.16": "30.16"
+ },
+ "modules": {
+  "04-brand-and-content": "03-brand-and-content",
+  "21-brand-and-social-presence": "04-brand-and-social-presence",
+  "19-creators-ugc-and-video-ads": "06-creators-ugc-and-video-ads",
+  "06-defining-campaigns": "07-defining-campaigns",
+  "07-meta-ads": "08-meta-ads",
+  "20-ad-analysis-audiences-and-setup": "09-ad-analysis-audiences-and-setup",
+  "08-google-ads": "10-google-ads",
+  "12-channels-tiktok-pinterest-seo": "11-channels-tiktok-pinterest-seo",
+  "11-list-and-audience-growth": "12-list-and-audience-growth",
+  "22-shopify-store-setup": "13-shopify-store-setup",
+  "09-website-and-cro": "14-website-and-cro",
+  "03-offer-and-product": "15-offer-and-product",
+  "10-email-sms-whatsapp": "16-email-sms-whatsapp",
+  "13-promotions-and-sales": "17-promotions-and-sales",
+  "30-seasonal-sales-step-by-step": "18-seasonal-sales-step-by-step",
+  "14-inventory-cash-planning": "19-inventory-cash-planning",
+  "24-payments-fraud-chargebacks": "20-payments-fraud-chargebacks",
+  "23-fulfilment-shipping-returns": "21-fulfilment-shipping-returns",
+  "26-tax-gst-sales-tax-duties": "22-tax-gst-sales-tax-duties",
+  "27-accounting-bookkeeping-tax-time": "23-accounting-bookkeeping-tax-time",
+  "25-account-safety-agencies": "24-account-safety-agencies",
+  "15-international-expansion": "25-international-expansion",
+  "28-team-creators-money": "26-team-creators-money",
+  "16-founder-team-productivity": "27-founder-team-productivity",
+  "17-ai-for-operators": "28-ai-for-operators",
+  "18-tool-stack": "29-tool-stack",
+  "29-customers-partners-and-rhythm": "30-customers-partners-and-rhythm"
+ },
  "lessons": {
   "21.7": {
    "to": "4.7",
@@ -185,6 +528,843 @@
   },
   "lesson-133-launching-a-new-product-campaign-set-up": {
    "ref": "13.3"
+  },
+  "lesson-41-the-brand-core": {
+   "ref": "4.1"
+  },
+  "lesson-42-customer-profiles": {
+   "ref": "4.2"
+  },
+  "lesson-43-brand-guidelines": {
+   "ref": "4.3"
+  },
+  "lesson-44-content-pillars-by-channel": {
+   "ref": "4.4"
+  },
+  "lesson-45-communication-calendar": {
+   "ref": "4.5"
+  },
+  "lesson-46-organic-content-that-also-feeds-ads": {
+   "ref": "4.6"
+  },
+  "lesson-47-community": {
+   "ref": "4.7"
+  },
+  "lesson-48-personal-brand-and-pr": {
+   "ref": "4.8"
+  },
+  "lesson-49-boost-creator-posts-with-ad-spend": {
+   "ref": "4.9"
+  },
+  "lesson-211-why-your-profile-is-part-of-every-ad": {
+   "ref": "21.1"
+  },
+  "lesson-212-profile-checklist-instagram-tiktok-facebook": {
+   "ref": "21.2"
+  },
+  "lesson-214-posting-cadence-you-can-keep": {
+   "ref": "21.4"
+  },
+  "lesson-215-growing-organic-reach": {
+   "ref": "21.5"
+  },
+  "lesson-216-social-proof-and-reviews-on-social": {
+   "ref": "21.6"
+  },
+  "lesson-218-social-shops": {
+   "ref": "21.8"
+  },
+  "lesson-219-the-social-presence-audit-what-to-check": {
+   "ref": "21.9"
+  },
+  "lesson-516-production-tools": {
+   "ref": "5.16"
+  },
+  "lesson-517-big-brand-moments": {
+   "ref": "5.17"
+  },
+  "lesson-518-one-product-many-kinds-of-buyer": {
+   "ref": "5.18"
+  },
+  "lesson-519-keep-a-creative-library": {
+   "ref": "5.19"
+  },
+  "lesson-520-tell-a-short-story-in-an-ad": {
+   "ref": "5.20"
+  },
+  "lesson-521-borrow-what-is-already-popular": {
+   "ref": "5.21"
+  },
+  "lesson-522-make-simple-ads-with-free-apps": {
+   "ref": "5.22"
+  },
+  "lesson-191-why-other-peoples-faces-sell-your-product": {
+   "ref": "19.1"
+  },
+  "lesson-192-finding-the-right-creators": {
+   "ref": "19.2"
+  },
+  "lesson-193-outreach-and-onboarding": {
+   "ref": "19.3"
+  },
+  "lesson-194-deals-rates-and-usage-rights": {
+   "ref": "19.4"
+  },
+  "lesson-195-affiliate-programmes-that-do-not-cannibalise-you": {
+   "ref": "19.5"
+  },
+  "lesson-196-partnership-ads-whitelisting": {
+   "ref": "19.6"
+  },
+  "lesson-197-video-ad-formats": {
+   "ref": "19.7"
+  },
+  "lesson-198-hooks-that-win-the-first-three-seconds": {
+   "ref": "19.8"
+  },
+  "lesson-199-scripting": {
+   "ref": "19.9"
+  },
+  "lesson-1910-shooting-on-a-phone": {
+   "ref": "19.10"
+  },
+  "lesson-1911-editing-for-performance": {
+   "ref": "19.11"
+  },
+  "lesson-1912-the-ugc-brief": {
+   "ref": "19.12"
+  },
+  "lesson-1913-make-new-ads-every-week-on-a-schedule": {
+   "ref": "19.13"
+  },
+  "lesson-61-numbers-first": {
+   "ref": "6.1"
+  },
+  "lesson-62-pick-the-job-of-the-campaign": {
+   "ref": "6.2"
+  },
+  "lesson-63-testing-campaigns-vs-scaling-campaigns": {
+   "ref": "6.3"
+  },
+  "lesson-64-account-structure-by-spend": {
+   "ref": "6.4"
+  },
+  "lesson-65-audiences": {
+   "ref": "6.5"
+  },
+  "lesson-66-budgets": {
+   "ref": "6.6"
+  },
+  "lesson-67-naming-conventions": {
+   "ref": "6.7"
+  },
+  "lesson-68-creative-concepts-angles-and-hooks": {
+   "ref": "6.8"
+  },
+  "lesson-69-writing-the-creative-brief": {
+   "ref": "6.9"
+  },
+  "lesson-610-testing-methodology": {
+   "ref": "6.10"
+  },
+  "lesson-611-reading-metrics": {
+   "ref": "6.11"
+  },
+  "lesson-612-decision-rules-scale-hold-refresh-kill": {
+   "ref": "6.12"
+  },
+  "lesson-613-google-campaign-definitions": {
+   "ref": "6.13"
+  },
+  "lesson-614-promotional-and-seasonal-campaigns": {
+   "ref": "6.14"
+  },
+  "lesson-615-common-campaign-mistakes": {
+   "ref": "6.15"
+  },
+  "lesson-616-the-campaign-brief-template": {
+   "ref": "6.16"
+  },
+  "lesson-714-find-your-way-around-ads-manager": {
+   "ref": "7.14"
+  },
+  "lesson-71-account-setup-checklist": {
+   "ref": "7.1"
+  },
+  "lesson-713-launch-your-first-meta-ad-in-30-minutes": {
+   "ref": "7.13"
+  },
+  "lesson-72-automated-vs-manual-campaigns": {
+   "ref": "7.2"
+  },
+  "lesson-73-ad-formats": {
+   "ref": "7.3"
+  },
+  "lesson-716-show-the-right-product-to-the-right-person-with-catalog-ads": {
+   "ref": "7.16"
+  },
+  "lesson-74-launching": {
+   "ref": "7.4"
+  },
+  "lesson-75-the-learning-phase": {
+   "ref": "7.5"
+  },
+  "lesson-76-daily-optimisation-in-10-minutes": {
+   "ref": "7.6"
+  },
+  "lesson-77-reach-potential": {
+   "ref": "7.7"
+  },
+  "lesson-78-managing-expensive-cold-campaigns": {
+   "ref": "7.8"
+  },
+  "lesson-79-metrics-by-funnel-layer": {
+   "ref": "7.9"
+  },
+  "lesson-710-scaling-challenge": {
+   "ref": "7.10"
+  },
+  "lesson-715-cost-caps-bid-caps-and-value-rules": {
+   "ref": "7.15"
+  },
+  "lesson-711-attribution-settings": {
+   "ref": "7.11"
+  },
+  "lesson-712-troubleshooting": {
+   "ref": "7.12"
+  },
+  "lesson-201-before-you-launch-tracking-you-can-trust": {
+   "ref": "20.1"
+  },
+  "lesson-202-setting-up-target-audiences": {
+   "ref": "20.2"
+  },
+  "lesson-2014-meta-audience-check-is-cold-spend-reaching-new-people": {
+   "ref": "20.14"
+  },
+  "lesson-203-setting-up-a-meta-sales-campaign-step-by-step": {
+   "ref": "20.3"
+  },
+  "lesson-204-setting-up-google-step-by-step": {
+   "ref": "20.4"
+  },
+  "lesson-205-setting-up-a-tiktok-campaign-step-by-step": {
+   "ref": "20.5"
+  },
+  "lesson-206-the-metric-tree": {
+   "ref": "20.6"
+  },
+  "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout": {
+   "ref": "20.7"
+  },
+  "lesson-208-breakdowns-that-reveal-problems": {
+   "ref": "20.8"
+  },
+  "lesson-209-attribution-and-incrementality": {
+   "ref": "20.9"
+  },
+  "lesson-2010-your-analysis-rhythm": {
+   "ref": "20.10"
+  },
+  "lesson-2011-reporting-that-leads-to-decisions": {
+   "ref": "20.11"
+  },
+  "lesson-2012-common-analysis-mistakes": {
+   "ref": "20.12"
+  },
+  "lesson-2013-read-google-analytics-in-15-minutes": {
+   "ref": "20.13"
+  },
+  "lesson-813-find-your-way-around-google-ads": {
+   "ref": "8.13"
+  },
+  "lesson-81-foundations": {
+   "ref": "8.1"
+  },
+  "lesson-82-product-data": {
+   "ref": "8.2"
+  },
+  "lesson-812-launch-your-first-google-campaign-in-45-minutes": {
+   "ref": "8.12"
+  },
+  "lesson-83-campaign-structures": {
+   "ref": "8.3"
+  },
+  "lesson-84-keyword-research": {
+   "ref": "8.4"
+  },
+  "lesson-85-writing-search-ads": {
+   "ref": "8.5"
+  },
+  "lesson-86-target-roas": {
+   "ref": "8.6"
+  },
+  "lesson-87-new-customer-acquisition": {
+   "ref": "8.7"
+  },
+  "lesson-88-weekly-optimisation": {
+   "ref": "8.8"
+  },
+  "lesson-89-demand-gen-and-youtube": {
+   "ref": "8.9"
+  },
+  "lesson-810-seasonality-and-sales": {
+   "ref": "8.10"
+  },
+  "lesson-811-ai-driven-changes-in-2026": {
+   "ref": "8.11"
+  },
+  "lesson-121-tiktok-readiness": {
+   "ref": "12.1"
+  },
+  "lesson-122-structures-by-spend": {
+   "ref": "12.2"
+  },
+  "lesson-123-spark-ads-and-creators": {
+   "ref": "12.3"
+  },
+  "lesson-124-optimising-tiktok": {
+   "ref": "12.4"
+  },
+  "lesson-125-tiktok-search": {
+   "ref": "12.5"
+  },
+  "lesson-126-tiktok-shop": {
+   "ref": "12.6"
+  },
+  "lesson-127-pinterest": {
+   "ref": "12.7"
+  },
+  "lesson-1212-seo-basics": {
+   "ref": "12.12"
+  },
+  "lesson-128-seo-step-by-step": {
+   "ref": "12.8"
+  },
+  "lesson-129-ai-search-and-agentic-commerce": {
+   "ref": "12.9"
+  },
+  "lesson-1210-instagram-shopping": {
+   "ref": "12.10"
+  },
+  "lesson-1211-start-a-youtube-channel-that-keeps-selling": {
+   "ref": "12.11"
+  },
+  "lesson-111-why-build-the-list": {
+   "ref": "11.1"
+  },
+  "lesson-112-competition-types": {
+   "ref": "11.2"
+  },
+  "lesson-113-running-a-competition": {
+   "ref": "11.3"
+  },
+  "lesson-114-grow-your-list-before-big-sale-dates": {
+   "ref": "11.4"
+  },
+  "lesson-115-social-growth-tactics": {
+   "ref": "11.5"
+  },
+  "lesson-221-plan-before-you-build": {
+   "ref": "22.1"
+  },
+  "lesson-222-domain-and-email": {
+   "ref": "22.2"
+  },
+  "lesson-223-choose-and-set-up-a-theme": {
+   "ref": "22.3"
+  },
+  "lesson-224-build-the-home-page": {
+   "ref": "22.4"
+  },
+  "lesson-225-product-pages-titles-photos-and-descriptions": {
+   "ref": "22.5"
+  },
+  "lesson-226-variants-and-inventory": {
+   "ref": "22.6"
+  },
+  "lesson-227-reviews": {
+   "ref": "22.7"
+  },
+  "lesson-228-collections-menus-and-search": {
+   "ref": "22.8"
+  },
+  "lesson-229-shipping-zones-rates-and-a-free-shipping-amount": {
+   "ref": "22.9"
+  },
+  "lesson-2210-taxes-gst-and-sales-tax-basics": {
+   "ref": "22.10"
+  },
+  "lesson-2211-payments": {
+   "ref": "22.11"
+  },
+  "lesson-2212-policies-and-legal-pages": {
+   "ref": "22.12"
+  },
+  "lesson-2213-essential-apps-and-only-those": {
+   "ref": "22.13"
+  },
+  "lesson-2216-place-test-orders": {
+   "ref": "22.16"
+  },
+  "lesson-2217-pre-launch-checklist": {
+   "ref": "22.17"
+  },
+  "lesson-2218-sell-to-people-near-you": {
+   "ref": "22.18"
+  },
+  "lesson-91-the-improvement-system": {
+   "ref": "9.1"
+  },
+  "lesson-92-page-checklists": {
+   "ref": "9.2"
+  },
+  "lesson-93-accessibility-basics": {
+   "ref": "9.3"
+  },
+  "lesson-94-speed": {
+   "ref": "9.4"
+  },
+  "lesson-95-words-that-help-people-buy": {
+   "ref": "9.5"
+  },
+  "lesson-97-landing-pages": {
+   "ref": "9.7"
+  },
+  "lesson-98-measurement": {
+   "ref": "9.8"
+  },
+  "lesson-99-ab-testing": {
+   "ref": "9.9"
+  },
+  "lesson-910-order-value": {
+   "ref": "9.10"
+  },
+  "lesson-911-shipping-psychology": {
+   "ref": "9.11"
+  },
+  "lesson-912-promotions-without-destroying-margin": {
+   "ref": "9.12"
+  },
+  "lesson-913-special-cases": {
+   "ref": "9.13"
+  },
+  "lesson-914-working-with-developers": {
+   "ref": "9.14"
+  },
+  "lesson-915-category-patterns-from-store-audits": {
+   "ref": "9.15"
+  },
+  "lesson-916-when-conversion-suddenly-drops-a-20-minute-check": {
+   "ref": "9.16"
+  },
+  "lesson-917-your-store-gap-check": {
+   "ref": "9.17"
+  },
+  "lesson-918-a-product-finder-quiz": {
+   "ref": "9.18"
+  },
+  "lesson-919-video-on-product-pages": {
+   "ref": "9.19"
+  },
+  "lesson-31-five-ways-to-make-an-offer-stronger": {
+   "ref": "3.1"
+  },
+  "lesson-32-say-clearly-what-the-customer-gets": {
+   "ref": "3.2"
+  },
+  "lesson-33-give-people-reasons-to-believe-you": {
+   "ref": "3.3"
+  },
+  "lesson-34-real-scarcity": {
+   "ref": "3.4"
+  },
+  "lesson-35-take-the-risk-off-the-buyer": {
+   "ref": "3.5"
+  },
+  "lesson-36-pricing-that-is-easy-to-accept": {
+   "ref": "3.6"
+  },
+  "lesson-37-check-people-really-want-your-product": {
+   "ref": "3.7"
+  },
+  "lesson-38-a-steady-flow-of-new-products": {
+   "ref": "3.8"
+  },
+  "lesson-39-offers-expire": {
+   "ref": "3.9"
+  },
+  "lesson-310-subscribe-and-save-repeat-orders-without-asking": {
+   "ref": "3.10"
+  },
+  "lesson-311-raise-prices-and-lean-less-on-discounts": {
+   "ref": "3.11"
+  },
+  "lesson-101-sign-up-forms": {
+   "ref": "10.1"
+  },
+  "lesson-102-the-five-core-flows-and-extras": {
+   "ref": "10.2"
+  },
+  "lesson-103-writing-emails-that-get-clicks": {
+   "ref": "10.3"
+  },
+  "lesson-104-segments": {
+   "ref": "10.4"
+  },
+  "lesson-105-campaign-cadence-and-ideas": {
+   "ref": "10.5"
+  },
+  "lesson-106-reviewing-performance": {
+   "ref": "10.6"
+  },
+  "lesson-107-how-to-run-a-fair-email-split-test": {
+   "ref": "10.7"
+  },
+  "lesson-108-deliverability": {
+   "ref": "10.8"
+  },
+  "lesson-109-platform-costs": {
+   "ref": "10.9"
+  },
+  "lesson-1010-sms": {
+   "ref": "10.10"
+  },
+  "lesson-1011-whatsapp-and-chat-commerce": {
+   "ref": "10.11"
+  },
+  "lesson-1012-loyalty": {
+   "ref": "10.12"
+  },
+  "lesson-1013-sale-email-and-sms-schedule": {
+   "ref": "10.13"
+  },
+  "lesson-1014-plain-text-emails-that-feel-personal": {
+   "ref": "10.14"
+  },
+  "lesson-1015-ask-shoppers-what-they-want-then-use-the-answers": {
+   "ref": "10.15"
+  },
+  "lesson-1016-wake-up-your-quieter-subscribers-before-a-big-sale": {
+   "ref": "10.16"
+  },
+  "lesson-1017-do-your-customers-come-back-plan-around-it": {
+   "ref": "10.17"
+  },
+  "lesson-131-your-yearly-sales-calendar": {
+   "ref": "13.1"
+  },
+  "lesson-132-launch-phases": {
+   "ref": "13.2"
+  },
+  "lesson-133-launching-a-new-product-how-to-build-the-campaigns": {
+   "ref": "13.3"
+  },
+  "lesson-134-the-big-sale-step-by-step": {
+   "ref": "13.4"
+  },
+  "lesson-135-the-build-up-before-a-launch": {
+   "ref": "13.5"
+  },
+  "lesson-136-running-the-sale": {
+   "ref": "13.6"
+  },
+  "lesson-137-after-the-sale": {
+   "ref": "13.7"
+  },
+  "lesson-138-if-the-sale-is-failing": {
+   "ref": "13.8"
+  },
+  "lesson-139-experience-levels": {
+   "ref": "13.9"
+  },
+  "lesson-1310-key-dates-through-the-year": {
+   "ref": "13.10"
+  },
+  "lesson-1311-cross-channel-checklist": {
+   "ref": "13.11"
+  },
+  "lesson-1312-a-smaller-sale-between-the-big-ones": {
+   "ref": "13.12"
+  },
+  "lesson-1313-work-out-your-sale-numbers-before-you-pick-the-discount": {
+   "ref": "13.13"
+  },
+  "lesson-301-plan-your-offer-and-order-stock": {
+   "ref": "30.1"
+  },
+  "lesson-302-line-up-creators": {
+   "ref": "30.2"
+  },
+  "lesson-303-set-up-a-discount-code-in-shopify": {
+   "ref": "30.3"
+  },
+  "lesson-304-dress-your-store-warm-up-and-write-your-emails": {
+   "ref": "30.4"
+  },
+  "lesson-305-run-the-event-check-your-numbers-each-day": {
+   "ref": "30.5"
+  },
+  "lesson-306-review-the-results": {
+   "ref": "30.6"
+  },
+  "lesson-141-range-planning": {
+   "ref": "14.1"
+  },
+  "lesson-142-a-10-minute-weekly-stock-check": {
+   "ref": "14.2"
+  },
+  "lesson-143-five-cash-levers": {
+   "ref": "14.3"
+  },
+  "lesson-144-cash-flow-forecast": {
+   "ref": "14.4"
+  },
+  "lesson-145-should-you-borrow-weighing-up-a-loan": {
+   "ref": "14.5"
+  },
+  "lesson-146-money-mindset-and-finance-help": {
+   "ref": "14.6"
+  },
+  "lesson-147-the-year-plan": {
+   "ref": "14.7"
+  },
+  "lesson-148-finding-and-vetting-suppliers": {
+   "ref": "14.8"
+  },
+  "lesson-149-reorder-points-lead-times-and-stock-outs": {
+   "ref": "14.9"
+  },
+  "lesson-1410-clear-slow-stock-without-cheapening-your-brand": {
+   "ref": "14.10"
+  },
+  "lesson-1411-sold-out-pre-orders-and-back-in-stock-lists": {
+   "ref": "14.11"
+  },
+  "lesson-1412-count-the-days-your-cash-is-stuck": {
+   "ref": "14.12"
+  },
+  "lesson-241-your-payment-mix-and-what-it-really-costs": {
+   "ref": "24.1"
+  },
+  "lesson-242-holds-reserves-and-frozen-payouts": {
+   "ref": "24.2"
+  },
+  "lesson-243-chargebacks-how-they-work-and-how-to-answer": {
+   "ref": "24.3"
+  },
+  "lesson-244-stopping-fraud-and-card-testing": {
+   "ref": "24.4"
+  },
+  "lesson-245-refunds-partial-refunds-and-goodwill": {
+   "ref": "24.5"
+  },
+  "lesson-231-do-you-need-a-3pl-yet": {
+   "ref": "23.1"
+  },
+  "lesson-232-moving-to-a-3pl-without-losing-orders": {
+   "ref": "23.2"
+  },
+  "lesson-233-shipping-rates-carriers-and-delays": {
+   "ref": "23.3"
+  },
+  "lesson-234-shipping-protection-and-lost-or-damaged-parcels": {
+   "ref": "23.4"
+  },
+  "lesson-235-returns-and-exchanges-that-cost-less": {
+   "ref": "23.5"
+  },
+  "lesson-236-when-a-spreadsheet-stops-working-for-stock": {
+   "ref": "23.6"
+  },
+  "lesson-237-customer-service-that-keeps-customers": {
+   "ref": "23.7"
+  },
+  "lesson-261-gst-register-charge-and-lodge": {
+   "ref": "26.1"
+  },
+  "lesson-262-gst-on-what-you-buy-ads-apps-and-imports": {
+   "ref": "26.2"
+  },
+  "lesson-263-us-sales-tax-nexus-registering-and-filing": {
+   "ref": "26.3"
+  },
+  "lesson-264-selling-to-the-uk-eu-and-canada": {
+   "ref": "26.4"
+  },
+  "lesson-265-duties-tariffs-and-the-end-of-us-de-minimis": {
+   "ref": "26.5"
+  },
+  "lesson-271-choose-your-structure-and-your-helpers": {
+   "ref": "27.1"
+  },
+  "lesson-272-connect-your-store-to-your-books-cleanly": {
+   "ref": "27.2"
+  },
+  "lesson-273-cost-of-goods-and-stock-in-your-books": {
+   "ref": "27.3"
+  },
+  "lesson-274-records-and-the-monthly-close": {
+   "ref": "27.4"
+  },
+  "lesson-275-end-of-financial-year": {
+   "ref": "27.5"
+  },
+  "lesson-276-year-end-and-tax-season-in-the-us": {
+   "ref": "27.6"
+  },
+  "lesson-251-lock-down-every-account": {
+   "ref": "25.1"
+  },
+  "lesson-252-set-up-your-meta-business-the-safe-way": {
+   "ref": "25.2"
+  },
+  "lesson-253-when-your-ad-account-is-disabled-or-restricted": {
+   "ref": "25.3"
+  },
+  "lesson-254-hacked-the-first-hour": {
+   "ref": "25.4"
+  },
+  "lesson-255-working-with-agencies-and-leaving-one": {
+   "ref": "25.5"
+  },
+  "lesson-256-trusted-sender-names-for-texts-and-emails": {
+   "ref": "25.6"
+  },
+  "lesson-151-is-there-demand": {
+   "ref": "15.1"
+  },
+  "lesson-152-recalculate-unit-economics-per-country": {
+   "ref": "15.2"
+  },
+  "lesson-153-pricing": {
+   "ref": "15.3"
+  },
+  "lesson-154-product-and-promotion": {
+   "ref": "15.4"
+  },
+  "lesson-155-shipping-options-and-logistics": {
+   "ref": "15.5"
+  },
+  "lesson-156-one-store-or-an-expansion-store": {
+   "ref": "15.6"
+  },
+  "lesson-157-reporting-and-campaigns": {
+   "ref": "15.7"
+  },
+  "lesson-281-your-first-hire": {
+   "ref": "28.1"
+  },
+  "lesson-282-working-well-with-a-virtual-assistant": {
+   "ref": "28.2"
+  },
+  "lesson-283-paying-creators-agreements-disclosure-and-tax": {
+   "ref": "28.3"
+  },
+  "lesson-284-paying-overseas-suppliers-and-managing-currency": {
+   "ref": "28.4"
+  },
+  "lesson-285-funding-growth-comparing-financing-offers": {
+   "ref": "28.5"
+  },
+  "lesson-286-keep-tool-and-subscription-costs-in-check": {
+   "ref": "28.6"
+  },
+  "lesson-287-founder-load-stress-burnout-and-getting-help": {
+   "ref": "28.7"
+  },
+  "lesson-288-should-you-sell-on-amazon": {
+   "ref": "28.8"
+  },
+  "lesson-289-selling-to-shops-a-simple-wholesale-start": {
+   "ref": "28.9"
+  },
+  "lesson-161-personal-operating-basics": {
+   "ref": "16.1"
+  },
+  "lesson-162-plan-each-day-and-each-week": {
+   "ref": "16.2"
+  },
+  "lesson-163-a-few-priorities-at-a-time-in-short-planning-blocks": {
+   "ref": "16.3"
+  },
+  "lesson-164-interruption-filter": {
+   "ref": "16.4"
+  },
+  "lesson-166-conflict-resolution": {
+   "ref": "16.6"
+  },
+  "lesson-169-capital-and-exit-thinking": {
+   "ref": "16.9"
+  },
+  "lesson-171-set-up-ai-helpers-for-daily-work": {
+   "ref": "17.1"
+  },
+  "lesson-172-high-value-uses": {
+   "ref": "17.2"
+  },
+  "lesson-173-connectors-and-agents": {
+   "ref": "17.3"
+  },
+  "lesson-174-safety-rules": {
+   "ref": "17.4"
+  },
+  "lesson-175-how-helix-applies-this": {
+   "ref": "17.5"
+  },
+  "lesson-181-the-stack-by-need-and-stage": {
+   "ref": "18.1"
+  },
+  "lesson-182-rules-for-adding-a-tool": {
+   "ref": "18.2"
+  },
+  "lesson-291-collect-your-customers-own-words": {
+   "ref": "29.1"
+  },
+  "lesson-292-find-the-worry-behind-the-purchase": {
+   "ref": "29.2"
+  },
+  "lesson-293-turn-one-piece-of-content-into-ten": {
+   "ref": "29.3"
+  },
+  "lesson-294-ask-happy-customers-to-refer-a-friend": {
+   "ref": "29.4"
+  },
+  "lesson-295-team-up-with-brands-that-share-your-customer": {
+   "ref": "29.5"
+  },
+  "lesson-296-borrow-other-audiences-guest-spots-and-newsletter-swaps": {
+   "ref": "29.6"
+  },
+  "lesson-297-a-weekly-story-email": {
+   "ref": "29.7"
+  },
+  "lesson-298-answer-the-top-buying-questions-by-email": {
+   "ref": "29.8"
+  },
+  "lesson-299-choose-the-few-numbers-that-lead": {
+   "ref": "29.9"
+  },
+  "lesson-2910-run-a-30-minute-weekly-numbers-meeting": {
+   "ref": "29.10"
+  },
+  "lesson-2911-write-a-playbook-for-a-task-you-repeat": {
+   "ref": "29.11"
+  },
+  "lesson-2912-one-owner-for-every-job-and-number": {
+   "ref": "29.12"
+  },
+  "lesson-2913-your-90-day-plan-on-one-page": {
+   "ref": "29.13"
+  },
+  "lesson-2914-a-quarterly-reset": {
+   "ref": "29.14"
+  },
+  "lesson-2915-write-a-one-page-direction-for-the-business": {
+   "ref": "29.15"
+  },
+  "lesson-2916-keep-a-wins-file-for-hard-weeks": {
+   "ref": "29.16"
   }
  }
 }

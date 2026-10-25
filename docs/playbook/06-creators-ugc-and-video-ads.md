@@ -1,8 +1,8 @@
-# Module 19: Creators, UGC and video ads
+# Module 6: Creators, UGC and video ads
 
 **Outcome:** you can find and sign creators and run partnership ads (ads from a creator's own account). You can build an affiliate program that does not clash with your own offers. You can also make video ads that stop the scroll. You will learn to write hooks and scripts, pick formats, film and edit. You will also brief creators so they deliver what you need the first time.
 
-**Related:** [Module 5 Creative strategy](05-creative-strategy.md), [Module 6 Defining campaigns](06-defining-campaigns.md), [SOP 08 Creative briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md), [SOP 07 Creative testing](../sops/07-creative-testing.md)
+**Related:** [Module 5 Creative strategy](05-creative-strategy.md), [Module 7 Defining campaigns](07-defining-campaigns.md), [SOP 08 Creative briefs, UGC and creators](../sops/08-creative-briefs-ugc-creators.md), [SOP 07 Creative testing](../sops/07-creative-testing.md)
 
 
 <!-- plain:start -->
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 19.1: Why other people's faces sell your product
+## Lesson 6.1: Why other people's faces sell your product
 <!-- stage:attract -->
 
 **Why this matters:** People trust people more than brands. When someone like your customer explains why they switched, it feels more real than a brand praising itself. It also gives ad platforms the mix of ages, styles and reasons they need to find new buyers. UGC (user-generated content) means photos and videos made by customers or creators instead of the brand.
@@ -60,7 +60,7 @@
 | Influencer or partnership | A fee, commission, or both | Posts to their audience, plus permission to run ads from their account | Their audience is engaged and matches your customers |
 | Affiliate | Commission on each sale, and a discount code | Regular posts, often from many small creators | Products people buy again, with good margins |
 
-## Lesson 19.2: Finding the right creators
+## Lesson 6.2: Finding the right creators
 <!-- stage:attract -->
 
 **Why this matters:** Fit matters more than follower count. A creator with 4,000 engaged followers who already talks about your kind of product beats a 400,000-follower lifestyle account.
@@ -87,7 +87,7 @@
 
 **Watch out:** For paid-only videos at speed, UGC marketplaces and agencies are a good backup.
 
-## Lesson 19.3: Outreach and onboarding
+## Lesson 6.3: Outreach and onboarding
 <!-- stage:attract -->
 
 **Why this matters:** Good outreach is personal, offers product first and makes the ongoing money clear early. Creator videos can take several weeks to arrive, so start early.
@@ -118,7 +118,7 @@
 
 > Hi [name], I loved your video about [specific thing]. We make [product], built for people who [problem]. I think your audience would get a lot from it. Could I send you one to try, no strings attached? If you like it, we would love to talk about a paid collaboration and our affiliate program.
 
-## Lesson 19.4: Deals, rates and usage rights
+## Lesson 6.4: Deals, rates and usage rights
 <!-- stage:attract -->
 
 **Why this matters:** Clear terms prevent disputes and let you use content the way you planned. Seven terms cover every creator deal.
@@ -147,7 +147,7 @@
 | Changes | How many rounds of edits | 1 round |
 | Disclosure | A "Paid partnership" label plus #ad, easy to see | Required by law for paid or gifted posts (see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers), [ACCC influencer guidance](https://www.accc.gov.au/system/files/social-media-influencer-testimonials.pdf) and the UK [ASA influencers' guide](https://www.asa.org.uk/resource/influencers-guide.html)) |
 
-## Lesson 19.5: Affiliate programmes that do not cannibalise you
+## Lesson 6.5: Affiliate programmes that do not cannibalise you
 <!-- stage:attract -->
 
 **Why this matters:** An affiliate earns a commission on each sale they bring. Cannibalising means your own offers steal the sale from them, and when that happens creators stop posting.
@@ -174,7 +174,7 @@
 
 **Expected result:** You have a group of small affiliates. Many small posters often beat one big name posting once.
 
-## Lesson 19.6: Partnership ads (whitelisting)
+## Lesson 6.6: Partnership ads (whitelisting)
 <!-- stage:attract -->
 
 **Why this matters:** Partnership ads (also called whitelisting) are paid ads that run from a creator's account. They do not run from your brand page. People see a familiar person, not an ad. Meta reports they can lower cost per purchase when mixed in with your normal ads. Treat that as a reason to test, not a promise.
@@ -197,7 +197,7 @@
 
 <!-- do:meta-draft -->
 
-**Step 5.** Judge them by the same rules as every other ad: cost per sale and hook rate (Lessons 6.11 and 6.12).
+**Step 5.** Judge them by the same rules as every other ad: cost per sale and hook rate (Lessons 7.11 and 7.12).
 
 **Expected result:** Creator ads earn their budget on the same terms.
 
@@ -215,11 +215,11 @@
 
 <!-- do:meta-draft -->
 
-**Step 9.** Offer creators whose ads win an ongoing deal, such as a fee plus affiliate commission (Lesson 19.5).
+**Step 9.** Offer creators whose ads win an ongoing deal, such as a fee plus affiliate commission (Lesson 6.5).
 
 **Expected result:** Your best creators have a reason to keep making content.
 
-## Lesson 19.7: Video ad formats
+## Lesson 6.7: Video ad formats
 <!-- stage:attract -->
 
 **Why this matters:** The format is how a video tells its story: testimonial, demo, comparison and more. A healthy account has several formats live at once, matched to how well people know you.
@@ -250,7 +250,7 @@
 | Reaction or stitch | Replying to a comment or a one-star review | Answering objections |
 | Still image and carousel | An image with a bold claim, review or offer | Warm audiences, sales, catalog |
 
-## Lesson 19.8: Hooks that win the first three seconds
+## Lesson 6.8: Hooks that win the first three seconds
 <!-- stage:attract -->
 
 **Why this matters:** Every video has two hooks working together in the first 3 seconds. One is what you see (the visual hook). The other is the first sentence (the spoken hook). They do not have to say the same thing. Hooks are what you test most.
@@ -273,7 +273,7 @@
 
 <!-- do:insights -->
 
-## Lesson 19.9: Scripting
+## Lesson 6.9: Scripting
 <!-- stage:attract -->
 
 **Why this matters:** A script turns a hook into a sale. A simple five-part structure for 20 to 45 seconds works for most products, and rotating script ideas keeps ads fresh.
@@ -304,7 +304,7 @@
 | Answer a worry | 25 to 35 | Price, quality, fit or delivery |
 | Call to action | Last 3 to 5 | What to do, and why now |
 
-## Lesson 19.10: Shooting on a phone
+## Lesson 6.10: Shooting on a phone
 <!-- stage:attract -->
 
 **Why this matters:** A phone is enough to shoot ads that work. Light, sound and extra shots matter more than gear.
@@ -325,7 +325,7 @@
 
 **Expected result:** You have spare hooks and cutaway shots for editing.
 
-## Lesson 19.11: Editing for performance
+## Lesson 6.11: Editing for performance
 <!-- stage:attract -->
 
 **Why this matters:** Editing decides whether people watch past 3 seconds. Fast cuts, captions and several hook versions are what lift results.
@@ -352,7 +352,7 @@
 
 **Watch out:** Label AI-made people or voices where required, never fake reviews, and check auto-enhance settings before launch. Trending songs in the apps are often not cleared for ads. Use Meta Sound Collection or TikTok's [Commercial Music Library](https://ads.tiktok.com/help/article/commercial-music-library) instead. Each covers its own platform only.
 
-## Lesson 19.12: The UGC brief
+## Lesson 6.12: The UGC brief
 <!-- stage:attract -->
 
 **Why this matters:** A clear brief is the difference between videos you can use and wasted product. Send this one-page brief to every creator before they film.
@@ -400,7 +400,7 @@ Deadline: ______   Payment: ______   Disclosure: required
 Examples we love: [links]
 ```
 
-## Lesson 19.13: Make new ads every week, on a schedule
+## Lesson 6.13: Make new ads every week, on a schedule
 <!-- stage:attract -->
 
 **Why this matters:** A weekly ad-making habit is a steady weekly supply of new ads. Accounts that keep winning are the ones that never run out of fresh, well-briefed creative.

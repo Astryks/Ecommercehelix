@@ -26,7 +26,7 @@ US preorders must ship by the date you state, or within 30 days if you state non
 
 ## Cash
 
-- Keep a 13-week cash forecast, one column per week, updated weekly (Lesson 14.4). Add monthly columns beyond that for big stock buys.
+- Keep a 13-week cash forecast, one column per week, updated weekly (Lesson 19.4). Add monthly columns beyond that for big stock buys.
 - Rows: opening cash, sales money, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.
 - Set aside a share of profit for income tax each month. About 25% is a common starting point; confirm with an accountant.
 - Also move GST or sales tax you collect into a separate account. It is not yours to spend.

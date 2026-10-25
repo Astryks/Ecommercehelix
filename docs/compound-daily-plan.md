@@ -260,7 +260,7 @@ MER too high?
 
 ### 7.3 Ad decision rules (Meta defaults)
 
-Helix grades every ad that has spent enough to judge. It uses two numbers over the last 7 days (the window Helix reads from Meta): **cost per purchase (CPP)** and **frequency**. Before scaling, also check MER for the last 3 days and the month so far, as in Lesson 6.12.
+Helix grades every ad that has spent enough to judge. It uses two numbers over the last 7 days (the window Helix reads from Meta): **cost per purchase (CPP)** and **frequency**. Before scaling, also check MER for the last 3 days and the month so far, as in Lesson 7.12.
 
 - Good CPP threshold = AOV x target MER x layer multiplier.
 - Bad CPP threshold = 2 x good threshold.

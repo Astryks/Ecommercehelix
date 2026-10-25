@@ -1,4 +1,4 @@
-# Module 16: Founder rhythm, team and resilience
+# Module 27: Founder rhythm, team and resilience
 
 **Outcome:** your time goes to the few things that grow the business. The right people join at the right time. You also stay steady through bad weeks.
 
@@ -29,7 +29,7 @@
 
 ---
 
-## Lesson 16.1: Personal operating basics
+## Lesson 27.1: Personal operating basics
 <!-- stage:grow -->
 
 **Why this matters:** You are the most important part of the business. How you sleep, plan and handle messages decides the quality of every other decision. Seven basics protect your best hours.
@@ -58,11 +58,11 @@
 
 **Expected result:** You have a list of tasks to delegate.
 
-**Step 7.** Say no to anything that does not help this cycle's priorities (Lesson 16.3).
+**Step 7.** Say no to anything that does not help this cycle's priorities (Lesson 27.3).
 
 **Expected result:** Your week matches your priorities.
 
-## Lesson 16.2: Plan each day and each week
+## Lesson 27.2: Plan each day and each week
 <!-- stage:grow -->
 
 **Why this matters:** A small daily and weekly rhythm keeps you on top of the business. It takes under an hour a week. The Helix routine is built for exactly this.
@@ -81,7 +81,7 @@
 
 **Expected result:** A Friday review slot is in your calendar.
 
-## Lesson 16.3: A few priorities at a time, in short planning blocks
+## Lesson 27.3: A few priorities at a time, in short planning blocks
 <!-- stage:grow -->
 
 **Why this matters:** Working in short planning blocks stops you chasing everything at once. One or two priorities with real time behind them beat ten half-done projects.
@@ -100,7 +100,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 16.4: Interruption filter
+## Lesson 27.4: Interruption filter
 <!-- stage:grow -->
 
 **Why this matters:** Interruptions eat founder time. Three quick questions decide what deserves your attention now.
@@ -113,7 +113,7 @@
 
 **Expected result:** Only truly urgent issues that are yours to do get your attention now.
 
-## Lesson 16.6: Conflict resolution
+## Lesson 27.5: Conflict resolution
 <!-- stage:grow -->
 
 **Why this matters:** Conflict handled well builds trust; avoided, it festers. Three steps keep it about the issue, not the person.
@@ -130,7 +130,7 @@
 
 **Expected result:** There is a written agreement and a follow-up date.
 
-## Lesson 16.9: Capital and exit thinking
+## Lesson 27.6: Capital and exit thinking
 <!-- stage:grow -->
 
 **Why this matters:** There are five ways to fund growth, from reinvesting profit to selling shares. Running the business as if a buyer will check it one day keeps every option open.

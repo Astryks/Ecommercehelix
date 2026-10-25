@@ -59,7 +59,7 @@ export const HELP_GUIDES: HelpGuide[] = [
     title: "Google Ads",
     why: "Helix gives step-by-step Google Ads setup lessons. A Google Ads connection is on the way; until then, you click and Helix guides you.",
     steps: [
-      "Open Learn and go to the Google Ads lessons (module 20).",
+      "Open Learn and go to the Google Ads lessons (module 9).",
       "Follow each step in your own Google Ads account. Each step says exactly where to click.",
       "Add your daily Google ad spend in Update yesterday so it counts in your profit.",
     ],

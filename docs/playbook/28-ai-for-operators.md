@@ -1,4 +1,4 @@
-# Module 17: AI for e-commerce operators
+# Module 28: AI for e-commerce operators
 
 **Outcome:** you use AI tools to save hours each week, safely, without handing them the keys.
 
@@ -28,7 +28,7 @@
 
 ---
 
-## Lesson 17.1: Set up AI helpers for daily work
+## Lesson 28.1: Set up AI helpers for daily work
 <!-- stage:grow -->
 
 **Why this matters:** AI assistants (chat AI tools) work much better when they know about your business. A project with your context turns generic answers into useful ones.
@@ -37,7 +37,7 @@
 
 **Expected result:** You have an empty project for your store.
 
-**Step 2.** Upload your brand core (Module 4), customer profiles, offers and costs (Module 1). Add your SOPs and past winning ads and emails.
+**Step 2.** Upload your brand core (Module 3), customer profiles, offers and costs (Module 1). Add your SOPs and past winning ads and emails.
 
 **Expected result:** The project holds your business context.
 
@@ -45,7 +45,7 @@
 
 **Expected result:** Answers stay current with your business.
 
-## Lesson 17.2: High-value uses
+## Lesson 28.2: High-value uses
 <!-- stage:grow -->
 
 **Why this matters:** A handful of jobs save the most time with AI. Always read and edit what AI writes before you use it.
@@ -70,7 +70,7 @@
 
 **Expected result:** Routine questions are answered instantly.
 
-## Lesson 17.3: Connectors and agents
+## Lesson 28.3: Connectors and agents
 <!-- stage:grow -->
 
 **Why this matters:** Connectors let AI read your store, ad and email data, and agents can take steps for you. Any action that changes something must be approved by a person.
@@ -85,7 +85,7 @@
 
 **Expected result:** Nothing changes in your accounts without your click.
 
-## Lesson 17.4: Safety rules
+## Lesson 28.4: Safety rules
 <!-- stage:grow -->
 
 **Why this matters:** AI is powerful and fallible. Three rules keep you safe.
@@ -102,7 +102,7 @@
 
 **Expected result:** You follow the rules and protect your brand.
 
-## Lesson 17.5: How Helix applies this
+## Lesson 28.5: How Helix applies this
 <!-- stage:grow -->
 
 **Why this matters:** Helix applies the same rules to itself. Maths uses fixed rules, AI only writes short text, and nothing changes without your approval.

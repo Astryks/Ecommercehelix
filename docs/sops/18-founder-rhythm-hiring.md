@@ -37,7 +37,7 @@ If any answer is no: say no, delegate, or put it on the list for later.
 
 ## Agencies
 
-- Own the ad accounts, pixel and data yourself, and give the agency partner access only (Lesson 25.5). Ask for a weekly report on MER and contribution profit, and a clear testing plan.
+- Own the ad accounts, pixel and data yourself, and give the agency partner access only (Lesson 24.5). Ask for a weekly report on MER and contribution profit, and a clear testing plan.
 - Red flags: reporting only platform ROAS, no creative testing cadence, long lock-in contracts, account ownership by the agency.
 - Helix can act as the oversight layer: it reads the accounts and checks the agency's work against these playbooks.
 

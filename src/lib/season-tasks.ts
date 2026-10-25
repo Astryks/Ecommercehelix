@@ -22,14 +22,14 @@ export const STAGE_WINDOWS: Record<Exclude<StageId, "live" | "review">, Window> 
 export const REVIEW_DAYS = 7;
 const ORDER: StageId[] = ["plan", "creators", "codes", "dress", "live", "review"];
 
-const M = "30-seasonal-sales-step-by-step";
+const M = "18-seasonal-sales-step-by-step";
 const LESSON: Record<StageId, string> = {
-  plan: `/learn/${M}#lesson-301-plan-your-offer-and-order-stock`,
-  creators: `/learn/${M}#lesson-302-line-up-creators`,
-  codes: `/learn/${M}#lesson-303-set-up-a-discount-code-in-shopify`,
-  dress: `/learn/${M}#lesson-304-dress-your-store-warm-up-and-write-your-emails`,
-  live: `/learn/${M}#lesson-305-run-the-event-check-your-numbers-each-day`,
-  review: `/learn/${M}#lesson-306-review-the-results`,
+  plan: `/learn/${M}#lesson-181-plan-your-offer-and-order-stock`,
+  creators: `/learn/${M}#lesson-182-line-up-creators`,
+  codes: `/learn/${M}#lesson-183-set-up-a-discount-code-in-shopify`,
+  dress: `/learn/${M}#lesson-184-dress-your-store-warm-up-and-write-your-emails`,
+  live: `/learn/${M}#lesson-185-run-the-event-check-your-numbers-each-day`,
+  review: `/learn/${M}#lesson-186-review-the-results`,
 };
 
 /** What Helix knows about the store, used to make steps specific. All optional. */

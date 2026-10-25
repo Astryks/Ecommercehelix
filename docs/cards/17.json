@@ -1,33 +1,96 @@
 {
-"17.1": {"intro": "AI assistants (chat AI tools) work much better when they know about your business.",
+"17.1": {"intro": "A year of sales works best as a rhythm. Customers learn when to look, and you're never rushing. Deep discounts are only a last resort for slow stock.",
  "steps": [
-  {"say": "Make a project in your AI assistant. Most chat AI tools have a project (or similar) space for your files. First check its data settings and turn off training on your chats if you can.", "check": "You have an empty project for your store.", "lost": "Look for a projects or files option in the side menu."},
-  {"say": "Upload your brand core (Module 4), customer profiles, offers, cost drivers (Module 1), how-you-do-things notes, and past winning ads and emails.", "check": "The project holds your business info.", "lost": "Upload your brand core first."},
-  {"say": "Update the files whenever something changes.", "check": "Answers stay up to date with your business.", "lost": "Changed a price? Update the file."}
+  {"say": "Pick a regular day and time for new products. Example: the first Thursday of each month, 7pm. Put the next 6 in your calendar.", "check": "Your release dates are set and repeat monthly.", "lost": "Pick one day each month for new products."},
+  {"say": "Add gift days and special moments (Mother's Day, Valentine's Day). Pick a chosen set of products, not a store-wide discount.", "check": "Each event has a product selection planned.", "lost": "Add Mother's Day with 5 gift picks."},
+  {"say": "Choose 3 to 4 big sales for the year. Black Friday is usually the biggest.", "check": "Your big sales are in the calendar with dates.", "lost": "Put Black Friday in your calendar."},
+  {"say": "For slow stock, try gentle tools first: a free gift with purchase, bundles, VIP codes or gift cards.", "check": "Slow stock has a plan that avoids deep discounts.", "lost": "Bundle one slow product with a best seller."}
  ]},
-"17.2": {"intro": "A few jobs save the most time with AI. Always read and fix what AI writes before you use it.",
+"17.2": {"intro": "A launch has four parts. Each needs its own message.",
  "steps": [
-  {"say": "Use AI for ads: hooks, scripts, briefs, ad text versions, picture layouts, resizing, and finding which parts of your ads win.", "check": "Your next batch of ads is drafted faster.", "lost": "Ask AI for 10 hooks."},
-  {"say": "Use AI for email: campaign drafts, subject lines and flow emails.", "check": "Email drafts take minutes, not hours.", "lost": "Ask AI for 5 subject lines."},
-  {"say": "Use AI for the website: section text, FAQs, landing page drafts, page checks, and digging into exported data when sales drop.", "check": "Site words and checks are quicker.", "lost": "Ask AI to draft 5 FAQs."},
-  {"say": "Use AI for admin: ad account naming, search term reviews, support replies, invoice entry and stock reports.", "check": "Admin work shrinks.", "lost": "Ask AI to draft one support reply."},
-  {"say": "Set up an AI support helper for \"where is my order?\" and common questions. It must hand anything sensitive to a person.", "check": "Simple questions get answered instantly.", "lost": "Start with \"where is my order?\" only."}
+  {"say": "Before launch, tease the product. Open a waitlist and early-access sign-up.", "check": "People sign up before the product is out.", "lost": "Make a waitlist sign-up."},
+  {"say": "On launch day, let VIPs (best customers) in first, then everyone.", "check": "VIPs get a head start and feel looked after.", "lost": "Email VIPs first on launch day."},
+  {"say": "In the middle, release something new for 24 hours, like a new colour or a bundle.", "check": "The launch gets a second spike.", "lost": "Release one new colour for 24 hours."},
+  {"say": "After launch, share reviews, results and restock news.", "check": "Proof keeps sales going after launch week.", "lost": "Share one review after launch."}
  ]},
-"17.3": {"intro": "Connectors let AI read your data. Agents can take steps for you. Anything that changes something must be approved by a person.",
+"17.3": {"intro": "How you set up a launch depends on your spend. Your email list and warm audiences should hear first.",
  "steps": [
-  {"say": "Connect AI only through official integrations that follow platform rules.", "check": "AI can read your data without risking a policy flag.", "careful": "Unofficial automation tools on ad accounts can trigger policy flags or bans.", "lost": "Only use official connections."},
-  {"say": "Set every write action (anything that changes something) to need your approval.", "check": "Nothing changes in your accounts without your click.", "lost": "Turn on \"ask me first\"."}
+  {"say": "Choose where launch ads go (a rough rule of thumb).\n\n- Spend about $1,000 a day or more: make a separate launch campaign.\n- Spend less: add launch ads to your normal cold and warm campaigns.", "check": "Launch ads have a home that fits your budget.", "lost": "Under $1,000 a day? Add launch ads to your normal campaigns."},
+  {"say": "Give warm audiences and your email list first access. Keep your always-on campaigns running.", "check": "Your best people hear first, and new customers keep coming.", "lost": "Don't switch off your normal campaigns."}
  ]},
-"17.4": {"intro": "AI is powerful, but it makes mistakes. These rules keep you safe.",
+"17.4": {"intro": "A big sale is a project with seven parts. Planning them in order makes the sale profitable.",
  "steps": [
-  {"say": "Never paste passwords or access tokens into an AI chat.", "check": "Your logins stay private.", "lost": "No passwords in AI. Ever."},
-  {"say": "Check every claim AI writes, especially health and before-and-after claims.", "check": "Nothing false goes out under your name.", "lost": "Read it. Is every claim true?"},
-  {"say": "Label AI-made people and voices where rules need it. Report fakes of your content or face to the platform, with proof.", "check": "You follow the rules and protect your brand.", "lost": "Add an \"AI-made\" label where needed."}
+  {"say": "Set a target: last year's sales for this event times your growth rate. Example: $20,000 × 1.2 = $24,000. Check it against list size, budget and stock.", "check": "You have a sales target you can actually support.", "lost": "Take last year's sale number. Times your growth."},
+  {"say": "Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale, and a VIP perk. Check margin at every level.", "check": "Every offer level still makes money.", "careful": "A \"was\" price must be one you really charged for a while just before the sale. Fake \"was\" prices break the law. In the EU, it must be your lowest price in the last 30 days, counting earlier sale prices.", "lost": "Pick one main offer. Check it still makes money."},
+  {"say": "Pick a theme: a name, a look and a message that stand out.", "check": "The sale has a name and a look.", "lost": "Give your sale a name."},
+  {"say": "Plan the ad budget for each day of each phase (hype, launch, middle, finish), and the split between normal and sale campaigns.", "check": "Every sale day has a planned budget.", "lost": "Write a budget for launch day."},
+  {"say": "List the ads you need for each phase and audience (cold, warm, hot). Plan emails and texts too (Lesson 16.13).", "check": "Ads and messages are planned for every phase.", "lost": "List the ads for launch day."},
+  {"say": "Get the site ready: sale pages and banners, no site changes in the last 2 weeks (a code freeze), and every discount code tested.", "check": "The site is ready and steady before launch.", "lost": "Test every discount code."},
+  {"say": "Check stock, packing helpers, gift stock and shipping cut-off dates.", "check": "You can send out all the orders you plan to get.", "lost": "Check you have enough stock."}
  ]},
-"17.5": {"intro": "Helix follows the same rules. Maths uses fixed rules, AI only writes short text, and nothing changes without your OK.",
+"17.5": {"intro": "The build-up gets people excited before the sale. Then launch day starts with a crowd.",
  "steps": [
-  {"say": "Helix uses fixed rules for all maths (profit, MER, break-even). So the numbers are always exact.", "check": "You can trust every number on the Dashboard.", "lost": "Helix maths is fixed rules, not guesses."},
-  {"say": "Helix only uses AI to write short text when you press the button: a store check summary, ad copy drafts and \"I'm lost\" answers. Each plan has a monthly allowance. It runs on Gemini 2.5 Flash-Lite with prompt training turned off, so your data does not train AI models.", "check": "You know Helix's numbers and plan come from plain rules. AI text is a draft you read first.", "lost": "AI in Helix only writes drafts. The maths is fixed rules."},
-  {"say": "Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on.", "check": "Every change in your accounts has your OK.", "lost": "Open **Waiting for your OK**."}
+  {"say": "Run sign-up ads and teasers for 3 to 5 days before the sale.", "check": "Your early-access list grows each day.", "lost": "Run one sign-up ad for 3 days."},
+  {"say": "Track the cost per sign-up, and how many page visitors sign up.", "check": "You know what the hype costs.", "lost": "Divide ad spend by sign-ups."},
+  {"say": "Move budget from normal campaigns to the hype campaign slowly. Never cut normal campaigns to zero.", "check": "Normal campaigns keep learning and bringing new customers.", "lost": "Move a little budget, not all of it."}
+ ]},
+"17.6": {"intro": "Running the sale is a daily routine. Judge the whole event, not one day.",
+ "steps": [
+  {"say": "Set up sale campaigns: a copy of your best cold campaign, a cold campaign with combined audiences and exclusions, a mixed campaign with no exclusions, warm campaigns, and hot campaigns (add to cart and checkout).", "check": "All sale campaigns are built and paused before launch.", "lost": "Copy your best cold campaign. Pause it until launch."},
+  {"say": "Set spending limits on every sale campaign.", "check": "Nothing can overspend.", "lost": "Add a spending limit to each one."},
+  {"say": "Each day, check MER (all ad spend as a share of all sales) against your plan. Check stock, site speed and tired ads too.", "check": "You catch problems the same day.", "lost": "Check MER once a day."},
+  {"say": "In the middle, add a new offer, fresh ads, and an email with a new reason to buy.", "check": "The middle of the sale gets a boost.", "lost": "Send one email with something new."},
+  {"say": "Finish strong with last-chance ads, final emails and texts.", "check": "The last day has its own push.", "careful": "Quiet days in the middle are normal. Don't panic and cut spend.", "lost": "Send one last-chance email."}
+ ]},
+"17.7": {"intro": "After a sale there's always a slow patch. How you handle it decides how many new buyers you keep.",
+ "steps": [
+  {"say": "Turn normal campaigns back up in steps over a week. Not all at once.", "check": "Campaigns recover without a spending shock.", "lost": "Raise budgets a little each day."},
+  {"say": "Check new buyers are getting your after-purchase emails.", "check": "New customers get thanks and how-to tips.", "lost": "Check your post-purchase flow is on."},
+  {"say": "Compare sales with your target, MER, new customers and stock left. Write down one thing to do better.", "check": "You have a short review with one improvement.", "lost": "Write one thing to do better next time."},
+  {"say": "Wait 7 days before final numbers. Ad apps keep adding late sales for about a week.", "check": "Your review uses numbers from 7 days after the sale.", "lost": "Wait a week, then review."},
+  {"say": "For the next 2 to 4 weeks, run no new discount. Show full-price news or best-seller stories, and nudge new buyers to a second order (Lesson 16.17).", "check": "A plan for the next few weeks with no discount.", "lost": "Post one full-price product story."}
+ ]},
+"17.8": {"intro": "If a sale is behind plan, it's usually one of five things. Find it fast, then fix it without breaking trust.",
+ "steps": [
+  {"say": "Check the five causes: an offer weaker than competitors', an offer that's not clear in the first seconds of ads, a site problem, a list that's too small, or bad timing.", "check": "You've named the likely cause.", "lost": "Is your offer clear in the first second of your ad?"},
+  {"say": "Pick one rescue: add a free gift level, release something new, send a stronger email, or move budget to warm audiences.", "check": "A rescue is live within hours.", "careful": "Only extend the sale if it won't break trust. Customers notice fake \"last chances\", and stores have paid fines for countdown timers that reset.", "lost": "Add a free gift level."}
+ ]},
+"17.9": {"intro": "Your sale plan grows with you. Start simple and add a bit each time.",
+ "steps": [
+  {"say": "Find your level: starter (one offer, simple schedule, sale versions of flows), seasoned (gift levels, hype phase, mid-sale release, separate sale campaigns) or advanced (daily budget plan, every channel planned, product sales targets).", "check": "You know your level.", "lost": "New to sales? You're a starter. That's fine."},
+  {"say": "Add one thing from the next level to your next sale.", "check": "Each sale is a bit smarter than the last.", "lost": "Add just one new thing."}
+ ]},
+"17.10": {"intro": "Plan the whole busy season, not one weekend. In 2026, Black Friday is 27 November and Cyber Monday is 30 November. Helix adds the plan to your calendar from 1 August.",
+ "steps": [
+  {"say": "All year, test ad ideas and offers, and grow your list. Then you know what works before the busy season.", "check": "You have proven ads and a bigger list by August.", "lost": "Test one ad idea this month."},
+  {"say": "Put the Black Friday stages in your Helix calendar.\n\n- August: review last year. Set targets. Test new ads.\n- September: order stock 10 to 12 weeks out. Lock the offer.\n- October: finish ads. Warm up audiences. Build email flows.\n- November: launch. Check numbers daily.\n- December and January: review and plan next year.", "check": "Every stage is in your calendar with dates.", "lost": "Find this month on the list. Do that part."},
+  {"say": "Add gift campaigns with delivery cut-off dates (\"order by the 18th for Christmas\").", "check": "Shoppers know the last safe day to order.", "lost": "Add your Christmas order-by date to your site."},
+  {"say": "Plan for Boxing Day and the quiet weeks after (sometimes called the fifth quarter). Ad costs often drop then, so new customers can be cheaper.", "check": "You have a plan for late December and January.", "lost": "Plan one January campaign."},
+  {"say": "Add end of financial year sales where they matter (30 June in Australia), and Valentine's, Mother's and Father's Day gift picks.", "check": "Your year has every key date planned.", "lost": "Add Mother's Day to your calendar."}
+ ]},
+"17.11": {"intro": "Big sales use every channel at once. One missed setting can cost a day of sales. Tick this list a week before.",
+ "steps": [
+  {"say": "Check Meta and Google sale campaigns are built and switched off.", "check": "Campaigns are ready to switch on.", "lost": "Check your sale campaigns are built and off."},
+  {"say": "Check sale prices and promo pictures are in your product feed.", "check": "Shopping ads will show sale prices.", "lost": "Check one sale price in the feed."},
+  {"say": "Check emails and texts are scheduled, and flows switch to sale versions at the right time.", "check": "Messages go out by themselves.", "lost": "Check your launch email is scheduled."},
+  {"say": "Check free posts and creator posts are scheduled.", "check": "Social is ready.", "lost": "Schedule your launch post."},
+  {"say": "Test site banners, sale pages and discount rules with a real test order.", "check": "Discounts work properly at checkout.", "lost": "Place one test order with the discount."},
+  {"say": "Give customer service saved replies for common sale questions.", "check": "The team can answer fast during the rush.", "lost": "Write 3 saved replies."}
+ ]},
+"17.12": {"intro": "One big sale a year makes cash bumpy and leaves stock sitting. One or two smaller, planned sales clear old stock and bring old customers back.",
+ "steps": [
+  {"say": "Pick a window at least 8 weeks away from your biggest sale. Choose a reason: clearing a season's stock, end of financial year, or your brand's birthday.", "check": "You have 3 to 5 days and a reason customers will believe.", "lost": "Pick 3 days and one reason."},
+  {"say": "Choose what's on sale: slow stock and last season's colours first. Best sellers only at a smaller discount, or not at all. Check each one's margin in your profit setup.", "check": "A product list where every line still makes money after marketing.", "lost": "Put your slowest product on sale first."},
+  {"say": "Plan it in Helix Calendar: a teaser email 3 days before, a launch email and text, a middle-day reminder, a last-chance email, plus ads to past buyers and site visitors.", "check": "The sale and its messages are in your calendar with dates.", "lost": "Put the launch email in your calendar."},
+  {"say": "When it ends, write down how it went.\n\n1. Record sales, profit, units cleared, and new versus returning customers.\n2. Write one thing to change next time.", "check": "You know if the sale made money and if you'd repeat it.", "careful": "Count big and small sales together. The more often you run sales, the more customers wait for the next one. Keep them planned, rare and with a clear reason.", "lost": "Write down the profit. Was it worth it?"}
+ ]},
+"17.13": {"intro": "A discount takes money from every order. Work out how many more orders you need, then pick an offer you can reach.",
+ "steps": [
+  {"say": "Open **Numbers** in Helix. Find your price and your profit on one order before ads.", "check": "Two numbers, like $60 price and $30 profit.", "lost": "Find your profit on one order."},
+  {"say": "Work out the real discount: the discount times the share of orders that use it. 20% off used by 70 of every 100 orders = 14%.", "check": "You know the real discount.", "lost": "Multiply the discount by how many people use it."},
+  {"say": "Divide normal profit by discounted profit. At 20% off a $60 item, $30 becomes $18. $30 ÷ $18 = 1.67.", "check": "You know you need about 1.67 times the orders.", "lost": "Normal profit ÷ sale profit."},
+  {"say": "Check your target against your list, your ad budget and your stock. Pick the smallest discount that hits it.", "check": "One offer you can actually reach.", "lost": "Pick the smallest discount that works."},
+  {"say": "Split the target: for example 35% launch days, 30% middle, 35% final days. Divide by the days in each part.", "check": "A target for every sale day.", "lost": "Write a sales number for each day."},
+  {"say": "Divide sale profit by sale price: $18 ÷ $48 = 37.5%. Keep ad spend under that share of sales. Check it daily.", "check": "One MER limit you check each day.", "careful": "Many other tools show MER the other way round. Helix 25% = 4x there.", "lost": "Keep ad spend under 37% of sales."}
  ]}
 }

@@ -1,63 +1,40 @@
 {
-"25.1": {"intro": "One stolen password can cost more than a bad month. Thieves love ad accounts because they can spend your money fast. One hour of lock-down closes most doors.",
+"25.1": {"intro": "Selling to a country with no demand burns cash. A quick look at your own data shows where people already want your stuff.",
  "steps": [
-  {"say": "List every account the business needs: email and domain, Shopify, Meta, Google, TikTok, your email tool, payment providers, bank, and domain registrar.", "check": "You have one list of every account.", "lost": "Write down your 5 most important accounts."},
-  {"say": "Turn on two-factor login (a second check after your password) on each. Use an authenticator app or security key, not text messages.", "check": "Every account asks for a second check at login.", "careful": "Text message codes can be stolen by moving your number to another SIM.", "lost": "Turn on two-factor for your email first."},
-  {"say": "Keep a different long password for every account in a password manager.", "check": "No password is used twice.", "lost": "Install a password manager."},
-  {"say": "Save each account's backup codes offline, where a trusted person can reach them.", "check": "You can get back in if you lose your phone.", "lost": "Print your email backup codes."},
-  {"say": "Make at least 2 trusted people full admins on Meta, Google and Shopify, each with their own login.", "check": "No one shares a login, and no single person can lock you out.", "lost": "Add one trusted admin on Meta."},
-  {"say": "Every quarter, tidy who has access.\n\n1. Remove people who no longer work with you.\n2. Look over admin and partner lists for anyone you don't know.", "check": "The access check is on your Helix calendar.", "lost": "Remove one person who left."},
-  {"say": "Turn on login and spending alerts by email and phone.", "check": "You hear about strange activity within minutes.", "careful": "In Australia, report cybercrime at ReportCyber (cyber.gov.au). In the US, use the FBI's IC3 (ic3.gov).", "lost": "Turn on login alerts for Meta."}
+  {"say": "In Shopify, open **Analytics > Reports > Total sales by billing location** and **Sessions by location**. List your top 5 countries outside home for the last 12 months.", "check": "You have a ranked list of countries with orders and visits.", "lost": "Open **Total sales by billing location**. Write the top 5."},
+  {"say": "Check how many people search for your type of product in each country (Google Keyword Planner, set to that country).", "check": "Each country has a monthly search number.", "lost": "Check search numbers for your top country."},
+  {"say": "Check if competitors already sell there, and where your social followers live (Instagram **Insights > Total followers > Top locations**).", "check": "Each country has a note on competitors and followers.", "lost": "Open **Top locations** in Instagram."},
+  {"say": "Pick the country that already buys from you the most.", "check": "You have one first country to grow into.", "lost": "Circle the top country on your list."}
  ]},
-"25.2": {"intro": "Meta keeps your ad accounts, Pages, pixel and people in a business portfolio. Whoever owns it controls everything, so it must be you.",
+"25.2": {"intro": "Costs change in a new country. Shipping, duties, taxes and exchange rates can turn a winner into a loss.",
  "steps": [
-  {"say": "Make the business portfolio yourself, with your business email. Make yourself and one trusted person admins.", "check": "You own the portfolio and have a backup admin.", "lost": "Add one backup admin."},
-  {"say": "Do business verification when Meta asks. Use your legal name, address and documents exactly as registered.", "check": "The portfolio shows as verified. Some features stay locked until you verify.", "lost": "Use your name exactly as registered."},
-  {"say": "Make the ad account inside your own portfolio. Give agencies and freelancers partner access only.", "check": "The ad account lists your portfolio as owner.", "lost": "Check you're the owner."},
-  {"say": "Set an account spending limit a little above your planned monthly spend. It counts total spend, so reset it each month.", "check": "Ads stop when the cap is reached. A hacker with admin access can change it, so lock logins too.", "lost": "Set a spending limit."},
-  {"say": "Add a backup payment method.", "check": "A failed card doesn't restrict the account.", "lost": "Add a second card."},
-  {"say": "Check billing currency and time zone before your first ad.", "check": "Both are right. Changing either later closes the account and starts a new one.", "careful": "Outside the US: in Australia, if GST registered, add your ABN in Meta billing so you're not charged GST, and check your card's international fee. US: use a business card, and call the card company before raising budgets.", "lost": "Check currency and time zone."},
-  {"say": "Connect the ad account to Helix.", "check": "Helix pulls your Meta spend and results each day.", "lost": "Connect Meta in Helix."}
+  {"say": "Work out landed cost for the new country: product cost, plus shipping there, import duties, taxes and exchange rate effects.", "check": "You have a cost per order for the new country.", "lost": "Product cost + shipping + duty + tax = landed cost."},
+  {"say": "Make a separate set of cost drivers for that country (like Lesson 1.2), including duties and import fees per order.", "check": "The new country has its own break-even ROAS and CPA.", "lost": "Copy your cost drivers. Add duties."}
  ]},
-"25.3": {"intro": "Ad accounts get restricted for failed payments, policy flags, identity checks or odd activity. Most can be fixed if you stay calm and follow Meta's process.",
+"25.3": {"intro": "Local prices in local money, rounded nicely, sell better than converted prices. Decide who pays duties up front.",
  "steps": [
-  {"say": "Open **Account Quality** in Meta. Read the exact reason.", "check": "You know why the account is restricted.", "lost": "Open **Account Quality**."},
-  {"say": "If a payment failed, fix the payment method and pay any balance owed.", "check": "Billing shows nothing owing.", "lost": "Update your card."},
-  {"say": "If Meta asks for identity checks (photo ID or video selfie), do them in the official app or Help Centre only.", "check": "The check is sent through an official channel.", "careful": "Meta never asks for passwords or payment by direct message. Ignore fake \"Meta support\" messages.", "lost": "Only use the official app."},
-  {"say": "Request a review once, with a short, factual explanation. Then wait.", "check": "One review request is in progress.", "lost": "Ask for one review. Then wait."},
-  {"say": "Don't open new ad accounts or portfolios to get around it.", "check": "You avoid looking like you're dodging the rules.", "lost": "No new accounts."},
-  {"say": "While you wait, keep sales coming from email, Google and free posts.", "check": "Sales keep going while ads are paused.", "lost": "Send one email to your list."},
-  {"say": "Afterwards, write down the cause and fix it: backup payment, policy-safe ad words, landing pages that match the ad.", "check": "The same problem is unlikely to happen again.", "lost": "Write the cause in one line."}
+  {"say": "In Shopify **Markets > Catalogs**, set prices in local money for that market, rounded to normal prices (like 49 euros, not 47.83).", "check": "Shoppers there see clean local prices.", "lost": "Round your best seller's price to a nice number."},
+  {"say": "Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.", "check": "Customers get no surprise bill at the door. That usually sells better. Shopify charges a small fee on orders where it works out duties, and products need HS codes.", "lost": "Turn on DDP."}
  ]},
-"25.4": {"intro": "Speed matters. A hacked ad account can spend thousands in hours. Do these steps in order.",
+"25.4": {"intro": "What sells at home may need small changes overseas.",
  "steps": [
-  {"say": "Turn off every active campaign you didn't make. Then pause all campaigns.", "check": "Nothing is spending.", "lost": "Pause everything."},
-  {"say": "Remove unknown people and partners from your business portfolio and ad account.", "check": "Only people you know have access.", "lost": "Remove anyone you don't know."},
-  {"say": "Change your passwords (email first, then Meta). Sign out of all sessions.", "check": "The intruder is logged out.", "lost": "Change your email password first."},
-  {"say": "Call your bank. Block the card linked to the ad account and ask about disputing the fake charges.", "check": "No more money can leave, and a dispute is started.", "lost": "Call your bank now."},
-  {"say": "Report the hack at facebook.com/hacked.", "check": "Meta has a case open.", "lost": "Go to facebook.com/hacked."},
-  {"say": "Write a timeline with screenshots: when you noticed, what was spent, what you changed.", "check": "You have proof for Meta, the bank and police.", "lost": "Take screenshots of the spend."},
-  {"say": "Report the crime (see Lesson 25.1). Keep the reference number.", "check": "You have a reference for your bank and Meta.", "lost": "Save the reference number."},
-  {"say": "Once safe, add the protections in Lessons 25.1 and 25.2, especially a spending limit.", "check": "The account is locked down.", "careful": "If someone set up a fake store or ad in your name, tell customers and report the fake pages to Meta.", "lost": "Set a spending limit."}
+  {"say": "Change sizing for the country (like US versus European sizes) on your size charts.", "check": "Size charts show local sizes.", "lost": "Add local sizes to one size chart."},
+  {"say": "Choose which products show first for that country, based on its seasons and tastes.", "check": "That country's home page shows the right products.", "lost": "Is it summer or winter there? Show those products."},
+  {"say": "Add the country's key dates and holidays to your calendar. Adjust messages and spelling.", "check": "Sales and words fit the local market.", "lost": "Add one local holiday to your calendar."}
  ]},
-"25.5": {"intro": "An agency can save time. But your accounts, data and history must stay yours.",
+"25.5": {"intro": "How you ship overseas decides delivery time, cost and returns. There are three main ways.",
  "steps": [
-  {"say": "Before you sign, list what you must own: ad accounts, pixel and datasets, Shopify, domain, email tool and Google Ads. Give the agency partner or user access only.", "check": "Every account is owned by you.", "lost": "Check you own your ad account."},
-  {"say": "Put in the contract: you own all accounts, content and data, plus the notice period, handover steps and the reports you get.", "check": "The contract says you own everything.", "careful": "Say no to contracts that say the agency owns the ad account.", "lost": "Add one line: I own all accounts and data."},
-  {"say": "Ask for a monthly report showing spend, sales, profit and what they changed.", "check": "You understand every report.", "lost": "Ask for spend, sales and profit each month."},
-  {"say": "To leave, give notice. Ask for a handover pack: campaign notes, audiences, creative files and any logins they set up.", "check": "You have everything to run ads yourself.", "lost": "Ask for the handover pack."},
-  {"say": "On the last day, close everything off.\n\n1. Remove their access from every account.\n2. Change any shared passwords.\n3. Check billing so nothing still charges their card.", "check": "The agency has no access.", "lost": "Remove their access."},
-  {"say": "If the agency owns your ad account, it usually can't be moved to your portfolio. Make a new ad account in your portfolio and connect your own pixel.", "check": "You run ads from an account you own. Old campaign history stays behind, so ask for exports first.", "lost": "Make a new ad account you own."},
-  {"say": "For your first month alone, change one thing at a time. Watch profit daily in Helix.", "check": "You see what each change does.", "lost": "One change at a time."},
-  {"say": "Check ad accounts, ads, customer lists and reports are in your name (Meta **Business settings > Accounts > Ad accounts**, Google Ads **Admin > Access and security**).", "check": "You own every account and asset.", "lost": "Open **Business settings > Accounts > Ad accounts**."},
-  {"say": "Ask your agency to report MER (all ad spend as a share of all sales) and contribution profit, not just ROAS (sales for each $1 of ads).", "check": "Agency reports show profit numbers.", "lost": "Ask for MER and profit."},
-  {"say": "If you bring work in-house, start with the daily ad check (Lesson 7.6). Keep specialists for the gaps.", "check": "You run the daily check yourself.", "lost": "Do the daily ad check today."}
+  {"say": "Compare the three shipping options in the lesson's table for your first country.", "check": "You've picked ship from home, a local 3PL (warehouse company) or direct from the factory.", "lost": "Just starting? Ship from home."},
+  {"say": "Look up the country's duty threshold (orders below this value pay no duty) and the courier's fees per order for collecting duties and taxes.", "check": "You know the extra cost per order and added it to your cost drivers.", "lost": "Find the duty threshold for your country."}
  ]},
-"25.6": {"intro": "Phone networks and inboxes now check that messages really come from you. Unregistered senders get labelled or sent to spam.",
+"25.6": {"intro": "One store with Markets settings is simpler. Start there.",
  "steps": [
-  {"say": "In your email tool's settings, set up SPF, DKIM and DMARC for your sending domain (three records that prove email is really from you).", "check": "The tool shows the domain as authenticated.", "lost": "Follow your email tool's domain guide."},
-  {"say": "Send from your own domain, never a free email address.", "check": "Emails come from you@yourbrand.", "lost": "Use your brand email as sender."},
-  {"say": "Register your text sender details with your SMS provider before sending campaigns.", "check": "Texts show your business name, not \"Unverified\".", "careful": "Outside the US: in Australia since 1 July 2026, unregistered sender names show as \"Unverified\". Register on the SMS Sender ID Register, using a name clearly linked to you, like your business name or trademark. US: standard numbers need carrier registration (10DLC), and toll-free numbers need verification.", "lost": "Ask your SMS provider how to register."},
-  {"say": "Use the same sender name everywhere.", "check": "Customers recognise you in every inbox.", "lost": "Pick one sender name."}
+  {"say": "Set up the new country in Shopify **Markets** on your current store.", "check": "The country is live as a market on your main store.", "lost": "Open **Markets**. Add the country."},
+  {"say": "Only open a separate store if the products, prices, content or apps must be very different.", "check": "You run one store unless there's a clear reason not to.", "lost": "Keep one store for now."}
+ ]},
+"25.7": {"intro": "Each country needs its own report. Otherwise a strong country can hide a weak one.",
+ "steps": [
+  {"say": "Make a report showing MER by country (ad spend divided by sales, for each country).", "check": "You can see which countries make a profit.", "lost": "Ad spend ÷ sales for one country."},
+  {"say": "Either start a separate campaign per country once spend allows, or run one worldwide campaign to find demand, then give winning countries their own.", "check": "Each strong country has its own campaign and budget.", "lost": "Give your best country its own campaign."}
  ]}
 }

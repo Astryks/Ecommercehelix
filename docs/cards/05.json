@@ -9,7 +9,7 @@
  "steps": [
   {"say": "**Research** for 20 minutes: read reviews and comments, and look at other brands' ads in the Meta Ad Library (facebook.com/ads/library).", "check": "You have 3 to 5 notes.", "lost": "Read five reviews. Write three notes."},
   {"say": "**Plan**: pick the topic, the reason to buy, and the one thing you'll test.", "check": "You have a one-line test plan.", "lost": "Write: \"I'm testing ___ against ___.\""},
-  {"say": "**Brief**: write one page per ad idea, using the template in Lesson 6.9.", "check": "Each idea has a page anyone could make it from.", "lost": "Write a short page for one idea."},
+  {"say": "**Brief**: write one page per ad idea, using the template in Lesson 7.9.", "check": "Each idea has a page anyone could make it from.", "lost": "Write a short page for one idea."},
   {"say": "**Make** the ads: yourself, with creators, or with AI editing tools.", "check": "You have files in 4:5 and 9:16 sizes.", "lost": "Make one ad in two sizes: 4:5 and 9:16."},
   {"say": "**Launch** the new ads together on the same day.", "check": "They all start together, so it's fair.", "lost": "Turn on all new ads on one day."},
   {"say": "**Learn**: after 7 days, score each ad. Write one line on why each winner won.", "check": "Your next brief starts from what you learned.", "lost": "After a week, write why your best ad won."}
@@ -40,7 +40,7 @@
  "steps": [
   {"say": "Write 3 different hooks for your next ad. Ideas: movement or a surprising first picture, calling out a group (\"For runners with flat feet...\"), the result first, a one-star review answered, or a curious question.", "check": "You have 3 hooks of different types.", "lost": "Write three different first lines."},
   {"say": "Make one version of the ad for each hook. Keep everything else the same.", "check": "You have 3 ads that only differ in the first 3 seconds.", "lost": "Same ad, three different starts."},
-  {"say": "After 7 days, compare hook rate in Ads Manager (3-second plays ÷ impressions). It's a custom metric (Lesson 6.11).", "check": "You know your best hook. A common rule of thumb: above about 25% is good.", "careful": "A bold line on a still picture can work too. Test pictures as well.", "lost": "After a week, see which start kept the most people."}
+  {"say": "After 7 days, compare hook rate in Ads Manager (3-second plays ÷ impressions). It's a custom metric (Lesson 7.11).", "check": "You know your best hook. A common rule of thumb: above about 25% is good.", "careful": "A bold line on a still picture can work too. Test pictures as well.", "lost": "After a week, see which start kept the most people."}
  ]},
 "5.8": {"intro": "A script framework is a proven order for the parts of an ad. It stops rambling.",
  "steps": [
@@ -82,38 +82,38 @@
   {"say": "Make one ad for them: a comparison, reviews, an FAQ video, your guarantee, \"what you get\", or a creator talking about it.", "check": "You have one ad that answers doubts.", "lost": "Make one ad with three reviews."},
   {"say": "Show it to people who visited or engaged in the last 30 days.", "check": "Warm visitors see an ad that answers their doubts.", "lost": "Choose \"visited in the last 30 days\" as the audience."}
  ]},
-"5.16": {"intro": "Good tools make ads faster and keep them looking right everywhere.",
+"5.15": {"intro": "Good tools make ads faster and keep them looking right everywhere.",
  "steps": [
   {"say": "Make picture templates in 4:5 (feed) and 9:16 (stories and reels). Keep text inside the safe zones.", "check": "Text is never covered by buttons.", "lost": "Make two sizes. Keep text away from the edges."},
   {"say": "In your phone editor, cut silences, add captions and a text hook, and export in each size.", "check": "Each video is ready in both sizes.", "lost": "Cut the quiet bits. Add captions. Export."},
   {"say": "Let AI help.\n\n1. Use an AI tool to resize your ad and make versions.\n2. Add an AI voice-over if you want.\n3. Label AI-made people and voices where the platform's rules say so.", "check": "More versions in less time, labelled where needed.", "careful": "Never fake reviews with AI.", "lost": "Use an AI tool to resize one ad."},
   {"say": "Before launch, open **Advantage+ creative** in the ad and check **Enhancements** and **Advanced preview**. Turn off any you don't want.", "check": "The ad shows exactly as you made it.", "lost": "Check auto-enhance settings before you publish."}
  ]},
-"5.17": {"intro": "Big brands spend a lot on seasonal moments. Watching them gives you free ideas.",
+"5.16": {"intro": "Big brands spend a lot on seasonal moments. Watching them gives you free ideas.",
  "steps": [
   {"say": "Once a month, write down 3 campaigns big brands run around a season or moment.", "check": "You have a short list of ideas.", "lost": "Write one big-brand idea you liked."},
   {"say": "Make one smaller version: a trend format, a team-up with another small brand, or a playful take.", "check": "Your next batch has one moment-led ad.", "lost": "Make one ad inspired by it, in your own way."}
  ]},
-"5.20": {"intro": "A tiny true story keeps people watching. Your product is the hero.",
+"5.19": {"intro": "A tiny true story keeps people watching. Your product is the hero.",
  "steps": [
   {"say": "Pick one real moment from a customer review or your own life. It should show the problem your product fixes.", "check": "One sentence, like \"My hands cracked every winter, even with three creams.\"", "lost": "Think of one time the problem annoyed someone."},
   {"say": "Write the story in three short lines. Line 1: the problem. Line 2: the moment things changed (finding your product). Line 3: life now.", "check": "Three lines you can read out loud in under 20 seconds.", "lost": "Problem. Change. Now."},
   {"say": "Add a \"villain\" if there is one. The villain is the thing that caused the problem, like cheap glue, cold wind or a confusing old way of doing things.", "check": "The viewer knows what to be annoyed at, and your product beats it.", "lost": "What caused the problem? That is the villain."},
   {"say": "Film it as one person talking to the camera, or as a voice-over on clips of the product in use. Put the problem in the first 3 seconds (Lesson 5.7).", "check": "A 20 to 40 second video that starts with the problem.", "lost": "Say the problem first, then show the product."},
-  {"say": "Run it next to your normal ads for one week. Compare how long people watch (hold rate) and cost per sale (Lesson 6.11).", "check": "You know if stories work for your product, and you make 2 more if they do.", "lost": "Run it for a week and compare."}
+  {"say": "Run it next to your normal ads for one week. Compare how long people watch (hold rate) and cost per sale (Lesson 7.11).", "check": "You know if stories work for your product, and you make 2 more if they do.", "lost": "Run it for a week and compare."}
  ]},
-"5.21": {"intro": "Use popular shapes of posts, talk to one small group of fans, and make people curious.",
+"5.20": {"intro": "Use popular shapes of posts, talk to one small group of fans, and make people curious.",
  "steps": [
   {"say": "Spend 15 minutes scrolling TikTok or Instagram Reels. Save 5 posts that grabbed you, from any kind of account, not just stores.", "check": "A saved folder with 5 posts that hold attention.", "lost": "Scroll for 15 minutes and save 5 posts you liked."},
   {"say": "For each one, write down the format in a few words. For example: \"split screen, before and after\", \"list of 3 mistakes\" or \"reacting to a comment\".", "check": "5 formats you could copy without copying the content.", "lost": "Name the shape of each post in a few words."},
   {"say": "Pick one small group of people who love your kind of product. For example: night-shift nurses, new dog owners or people who camp in winter. Write the words they use and the jokes they share.", "check": "One group, with 5 of their own words or in-jokes.", "lost": "Pick one group of fans and write their words."},
   {"say": "Make one ad that uses a saved format, speaks to that group, and opens with a question or a surprise. For example, \"Nobody told me this about winter camping...\" Answer it later in the video.", "check": "One new ad that feels made for that group and makes people want to keep watching.", "lost": "Use one shape, talk to that group, start with a question."},
-  {"say": "Test it with your normal ads (Lesson 6.10). Keep the format if it wins, and try it with a second group next week.", "check": "A short list of formats and groups that work for your store.", "lost": "Test it like any other ad."}
+  {"say": "Test it with your normal ads (Lesson 7.10). Keep the format if it wins, and try it with a second group next week.", "check": "A short list of formats and groups that work for your store.", "lost": "Test it like any other ad."}
  ]},
-"5.22": {"intro": "Two free apps are enough to make good ads. Learn the basics once.",
+"5.21": {"intro": "Two free apps are enough to make good ads. Learn the basics once.",
  "steps": [
   {"say": "Open the design app. Make a new design in the size 1080 x 1350 (for feeds). Make a second one in 1080 x 1920 (for stories and reels).", "check": "Two blank designs in the right sizes.", "lost": "Make two blank designs: 1080 x 1350 and 1080 x 1920."},
-  {"say": "Add your logo, your brand colours and your fonts to the app's brand settings (Lesson 4.3).", "check": "Every new design can use your brand look in one tap.", "lost": "Add your logo and colours once."},
+  {"say": "Add your logo, your brand colours and your fonts to the app's brand settings (Lesson 3.3).", "check": "Every new design can use your brand look in one tap.", "lost": "Add your logo and colours once."},
   {"say": "Make one still ad: one product photo, one short headline (under 8 words) and one review star line. Keep the words away from the top and bottom edges, where buttons cover them.", "check": "A clean image ad that you can read in 2 seconds.", "lost": "One photo, a few words, some stars."},
   {"say": "Open the video app. Add 3 to 5 short clips of your product. Cut any slow or silent parts.", "check": "A video under 30 seconds with no dead moments.", "lost": "Put in 3 to 5 clips and cut the slow bits."},
   {"say": "Add captions with the auto-caption tool. Then add a text hook on the first second.", "check": "People who watch with the sound off still understand the ad.", "lost": "Tap auto-captions, then add a first line of text."},

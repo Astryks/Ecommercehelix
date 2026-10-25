@@ -61,19 +61,19 @@ describe("tracks", () => {
     expect(toTrack("starting")).toBe("starting");
     expect(toTrack("nonsense")).toBe("growing");
   });
-  it("Growing assigns Lessons 7.14 and 7.13 before 20.3, and existing days keep their saved task ids", () => {
+  it("Growing assigns Lessons 8.1 and 8.3 before 9.4, and existing days keep their saved task ids", () => {
     const G = TRACKS.growing;
     const at = (ref: string) => G.days.findIndex((d) => d.learn.ref === ref);
-    expect(at("7.14")).toBeGreaterThanOrEqual(0);
-    expect(at("7.13")).toBeGreaterThanOrEqual(0);
-    expect(at("7.14")).toBeLessThan(at("20.1"));
-    expect(at("7.13")).toBeLessThan(at("20.3"));
-    expect(G.taskId(G.days[at("20.3")].day)).toBe("day-41");
-    expect(G.taskId(G.days[at("7.14")].day)).toBe("day-65");
+    expect(at("8.1")).toBeGreaterThanOrEqual(0);
+    expect(at("8.3")).toBeGreaterThanOrEqual(0);
+    expect(at("8.1")).toBeLessThan(at("9.1"));
+    expect(at("8.3")).toBeLessThan(at("9.4"));
+    expect(G.taskId(G.days[at("9.4")].day)).toBe("day-41");
+    expect(G.taskId(G.days[at("8.1")].day)).toBe("day-65");
     expect(G.taskId(66)).toBe("day-64");
     const ids = G.days.map((d) => G.taskId(d.day));
     expect(new Set(ids).size).toBe(ids.length);
-    expect(dayByTaskId("day-41")?.day.learn.ref).toBe("20.3");
+    expect(dayByTaskId("day-41")?.day.learn.ref).toBe("9.4");
   });
   it("keeps progress separate per track", () => {
     expect(dayByTaskId("start-25")?.day.title).toBe("Set up your first campaign, paused");
@@ -86,7 +86,7 @@ describe("tracks", () => {
     expect(guidesForDay(2, "starting")).toHaveLength(0);
     expect(guidesForDay(16, "starting").map((g) => g.file)).toEqual(["shopify-6-taxes", "shopify-7-payments"]);
     expect(guidesForDay(2).map((g) => g.file)).toContain("shopify-1-yesterdays-numbers");
-    expect(guidesForDay(43).map((g) => g.file)).toContain("meta-1-create-sales-campaign"); // Lesson 20.3 day, after the inserted 7.14 and 7.13 days
+    expect(guidesForDay(43).map((g) => g.file)).toContain("meta-1-create-sales-campaign"); // Lesson 9.4 day, after the inserted 8.1 and 8.3 days
     expect(guidesForDay(51).map((g) => g.file)).toEqual(["google-2-block-wasted-searches"]);
   });
 });

@@ -20,98 +20,98 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | 2 | Your daily numbers | Add yesterday's numbers | [1.3 The daily scorecard](playbook/01-daily-profit-foundations.md#lesson-13-the-daily-scorecard) | 5 min | Starter: Pull yesterday's numbers in for you each morning |
 | 3 | Break-even | Find the most you can pay for a sale | [1.5 Your target MER and break-even numbers](playbook/01-daily-profit-foundations.md#lesson-15-your-target-mer-and-break-even-numbers) | 10 min | Guide |
 | 4 | Find the bottleneck | Find the one thing holding profit back | [2.2 The five situations](playbook/02-diagnose-and-fix.md#lesson-22-the-five-situations) | 15 min | Starter: Look at your numbers and tell you the bottleneck |
-| 5 | Store check-up | Pick your top 3 store fixes | [9.17 Your store gap check](playbook/09-website-and-cro.md#lesson-917-your-store-gap-check) | 10 min | Free: Run a fresh store check |
-| 6 | Listen to customers | Read 30 reviews and 10 customer emails | [4.2 Customer profiles](playbook/04-brand-and-content.md#lesson-42-customer-profiles) | 20 min | Starter: Read your reviews and pull out the themes |
-| 7 | Weekly check-in | Do your first weekly review | [16.2 Plan each day and each week](playbook/16-founder-team-productivity.md#lesson-162-plan-each-day-and-each-week) | 10 min | Guide |
+| 5 | Store check-up | Pick your top 3 store fixes | [14.16 Your store gap check](playbook/14-website-and-cro.md#lesson-1416-your-store-gap-check) | 10 min | Free: Run a fresh store check |
+| 6 | Listen to customers | Read 30 reviews and 10 customer emails | [3.2 Customer profiles](playbook/03-brand-and-content.md#lesson-32-customer-profiles) | 20 min | Starter: Read your reviews and pull out the themes |
+| 7 | Weekly check-in | Do your first weekly review | [27.2 Plan each day and each week](playbook/27-founder-team-productivity.md#lesson-272-plan-each-day-and-each-week) | 10 min | Guide |
 
 ## Stage 2: Turn more visitors into buyers (Days 8 to 17)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 8 | Speed | Fix the biggest speed problem on your phone | [9.4 Speed](playbook/09-website-and-cro.md#lesson-94-speed) | 20 min | Growth: Write a speed fix list for your developer |
-| 9 | Reviews | Put photo reviews near the price on your best seller | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 10 min | Growth: Lay out the review section for you |
-| 10 | Answer worries | Answer your top 3 worries on the product page | [3.3 Give people reasons to believe you](playbook/03-offer-and-product.md#lesson-33-give-people-reasons-to-believe-you) | 15 min | Starter: Write the answers for you |
-| 11 | Shipping | Set a free shipping amount that makes orders bigger | [9.11 Shipping psychology](playbook/09-website-and-cro.md#lesson-911-shipping-psychology) | 15 min | Growth: Write the free shipping message for you to add |
-| 12 | Checkout | Remove one thing that stops people paying | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 15 min | Guide |
-| 13 | Home page | Make the top of your home page say what you sell | [9.5 Words that help people buy](playbook/09-website-and-cro.md#lesson-95-words-that-help-people-buy) | 15 min | Starter: Write 3 headline options for you |
-| 14 | Guarantee | Write a guarantee you are proud of | [3.5 Take the risk off the buyer](playbook/03-offer-and-product.md#lesson-35-take-the-risk-off-the-buyer) | 10 min | Starter: Write your guarantee for you |
-| 15 | Bundles | Make one bundle that raises order size | [3.6 Pricing that is easy to accept](playbook/03-offer-and-product.md#lesson-36-pricing-that-is-easy-to-accept) | 20 min | Growth: Suggest bundles from your order history |
-| 16 | Menu | Tidy your menu and your best collection page | [9.2 Page checklists](playbook/09-website-and-cro.md#lesson-92-page-checklists) | 20 min | Guide |
-| 17 | After checkout | Add a one-click offer after people buy | [9.10 Order value](playbook/09-website-and-cro.md#lesson-910-order-value) | 15 min | Growth: Pick the offer and write it for you to set up |
+| 8 | Speed | Fix the biggest speed problem on your phone | [14.4 Speed](playbook/14-website-and-cro.md#lesson-144-speed) | 20 min | Growth: Write a speed fix list for your developer |
+| 9 | Reviews | Put photo reviews near the price on your best seller | [14.2 Page checklists](playbook/14-website-and-cro.md#lesson-142-page-checklists) | 10 min | Growth: Lay out the review section for you |
+| 10 | Answer worries | Answer your top 3 worries on the product page | [15.3 Give people reasons to believe you](playbook/15-offer-and-product.md#lesson-153-give-people-reasons-to-believe-you) | 15 min | Starter: Write the answers for you |
+| 11 | Shipping | Set a free shipping amount that makes orders bigger | [14.10 Shipping psychology](playbook/14-website-and-cro.md#lesson-1410-shipping-psychology) | 15 min | Growth: Write the free shipping message for you to add |
+| 12 | Checkout | Remove one thing that stops people paying | [14.2 Page checklists](playbook/14-website-and-cro.md#lesson-142-page-checklists) | 15 min | Guide |
+| 13 | Home page | Make the top of your home page say what you sell | [14.5 Words that help people buy](playbook/14-website-and-cro.md#lesson-145-words-that-help-people-buy) | 15 min | Starter: Write 3 headline options for you |
+| 14 | Guarantee | Write a guarantee you are proud of | [15.5 Take the risk off the buyer](playbook/15-offer-and-product.md#lesson-155-take-the-risk-off-the-buyer) | 10 min | Starter: Write your guarantee for you |
+| 15 | Bundles | Make one bundle that raises order size | [15.6 Pricing that is easy to accept](playbook/15-offer-and-product.md#lesson-156-pricing-that-is-easy-to-accept) | 20 min | Growth: Suggest bundles from your order history |
+| 16 | Menu | Tidy your menu and your best collection page | [14.2 Page checklists](playbook/14-website-and-cro.md#lesson-142-page-checklists) | 20 min | Guide |
+| 17 | After checkout | Add a one-click offer after people buy | [14.9 Order value](playbook/14-website-and-cro.md#lesson-149-order-value) | 15 min | Growth: Pick the offer and write it for you to set up |
 
 ## Stage 3: Get customers to come back (Days 18 to 26)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 18 | Email sign-up | Add a pop-up that gets 3 or more sign-ups per 100 visitors | [10.1 Sign-up forms](playbook/10-email-sms-whatsapp.md#lesson-101-sign-up-forms) | 20 min | Growth: Write the pop-up and choose the settings for you |
-| 19 | Welcome emails | Turn on your welcome emails | [10.2 The five core flows and extras](playbook/10-email-sms-whatsapp.md#lesson-102-the-five-core-flows-and-extras) | 20 min | Growth: Write your welcome emails, ready to paste |
-| 20 | Checkout reminders | Turn on checkout reminder emails | [10.2 The five core flows and extras](playbook/10-email-sms-whatsapp.md#lesson-102-the-five-core-flows-and-extras) | 15 min | Growth: Write your checkout reminders, ready to paste |
-| 21 | Cart and browse reminders | Add cart and browsing reminders | [10.2 The five core flows and extras](playbook/10-email-sms-whatsapp.md#lesson-102-the-five-core-flows-and-extras) | 15 min | Growth: Write both reminder series, ready to paste |
-| 22 | After the order | Set up thank-you and review emails | [10.2 The five core flows and extras](playbook/10-email-sms-whatsapp.md#lesson-102-the-five-core-flows-and-extras) | 15 min | Growth: Write both email series, ready to paste |
-| 23 | Repeat customers | Plan emails for lapsed, reorder and best customers | [10.12 Loyalty](playbook/10-email-sms-whatsapp.md#lesson-1012-loyalty) | 20 min | Growth: Write the series that fit, ready to paste |
-| 24 | Regular emails | Plan a steady email rhythm | [10.5 Campaign cadence and ideas](playbook/10-email-sms-whatsapp.md#lesson-105-campaign-cadence-and-ideas) | 20 min | Growth: Write next week's emails |
-| 25 | Text messages | Decide if text messages suit your store | [10.10 SMS](playbook/10-email-sms-whatsapp.md#lesson-1010-sms) | 10 min | Guide |
-| 26 | Grow your list | Plan a giveaway with partner brands | [11.3 Running a competition](playbook/11-list-and-audience-growth.md#lesson-113-running-a-competition) | 20 min | Growth: Write the giveaway plan and partner messages |
+| 18 | Email sign-up | Add a pop-up that gets 3 or more sign-ups per 100 visitors | [16.1 Sign-up forms](playbook/16-email-sms-whatsapp.md#lesson-161-sign-up-forms) | 20 min | Growth: Write the pop-up and choose the settings for you |
+| 19 | Welcome emails | Turn on your welcome emails | [16.2 The five core flows and extras](playbook/16-email-sms-whatsapp.md#lesson-162-the-five-core-flows-and-extras) | 20 min | Growth: Write your welcome emails, ready to paste |
+| 20 | Checkout reminders | Turn on checkout reminder emails | [16.2 The five core flows and extras](playbook/16-email-sms-whatsapp.md#lesson-162-the-five-core-flows-and-extras) | 15 min | Growth: Write your checkout reminders, ready to paste |
+| 21 | Cart and browse reminders | Add cart and browsing reminders | [16.2 The five core flows and extras](playbook/16-email-sms-whatsapp.md#lesson-162-the-five-core-flows-and-extras) | 15 min | Growth: Write both reminder series, ready to paste |
+| 22 | After the order | Set up thank-you and review emails | [16.2 The five core flows and extras](playbook/16-email-sms-whatsapp.md#lesson-162-the-five-core-flows-and-extras) | 15 min | Growth: Write both email series, ready to paste |
+| 23 | Repeat customers | Plan emails for lapsed, reorder and best customers | [16.12 Loyalty](playbook/16-email-sms-whatsapp.md#lesson-1612-loyalty) | 20 min | Growth: Write the series that fit, ready to paste |
+| 24 | Regular emails | Plan a steady email rhythm | [16.5 Campaign cadence and ideas](playbook/16-email-sms-whatsapp.md#lesson-165-campaign-cadence-and-ideas) | 20 min | Growth: Write next week's emails |
+| 25 | Text messages | Decide if text messages suit your store | [16.10 SMS](playbook/16-email-sms-whatsapp.md#lesson-1610-sms) | 10 min | Guide |
+| 26 | Grow your list | Plan a giveaway with partner brands | [12.3 Running a competition](playbook/12-list-and-audience-growth.md#lesson-123-running-a-competition) | 20 min | Growth: Write the giveaway plan and partner messages |
 
 ## Stage 4: Make ads that sell (Days 27 to 48)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 27 | Your brand | Write your brand on one page | [4.1 The brand core](playbook/04-brand-and-content.md#lesson-41-the-brand-core) | 20 min | Starter: Write a first draft from your website |
-| 28 | Social profile | Make your Instagram and TikTok profiles sell | [21.2 Profile checklist (Instagram, TikTok, Facebook)](playbook/21-brand-and-social-presence.md#lesson-212-profile-checklist-instagram-tiktok-facebook) | 20 min | Starter: Check your profiles and write your bio and highlights |
-| 29 | Posting plan | Pick a posting plan you can keep for 12 weeks | [21.4 Posting cadence you can keep](playbook/21-brand-and-social-presence.md#lesson-214-posting-cadence-you-can-keep) | 25 min | Starter: Write a 4-week posting calendar |
-| 30 | Free reach | Test new video openings on people who do not follow you | [21.5 Growing organic reach](playbook/21-brand-and-social-presence.md#lesson-215-growing-organic-reach) | 20 min | Guide |
+| 27 | Your brand | Write your brand on one page | [3.1 The brand core](playbook/03-brand-and-content.md#lesson-31-the-brand-core) | 20 min | Starter: Write a first draft from your website |
+| 28 | Social profile | Make your Instagram and TikTok profiles sell | [4.2 Profile checklist (Instagram, TikTok, Facebook)](playbook/04-brand-and-social-presence.md#lesson-42-profile-checklist-instagram-tiktok-facebook) | 20 min | Starter: Check your profiles and write your bio and highlights |
+| 29 | Posting plan | Pick a posting plan you can keep for 12 weeks | [4.3 Posting cadence you can keep](playbook/04-brand-and-social-presence.md#lesson-43-posting-cadence-you-can-keep) | 25 min | Starter: Write a 4-week posting calendar |
+| 30 | Free reach | Test new video openings on people who do not follow you | [4.4 Growing organic reach](playbook/04-brand-and-social-presence.md#lesson-44-growing-organic-reach) | 20 min | Guide |
 | 31 | Ad ideas | Write ad ideas for people at different stages | [5.5 How much your buyer already knows](playbook/05-creative-strategy.md#lesson-55-how-much-your-buyer-already-knows) | 20 min | Starter: Suggest ad ideas for each group |
-| 32 | Openings | Write 20 ad openings | [19.8 Hooks that win the first three seconds](playbook/19-creators-ugc-and-video-ads.md#lesson-198-hooks-that-win-the-first-three-seconds) | 20 min | Starter: Write 20 openings from your reviews |
-| 33 | Creators | Make a list of 10 creators | [19.2 Finding the right creators](playbook/19-creators-ugc-and-video-ads.md#lesson-192-finding-the-right-creators) | 20 min | Starter: Find creators that suit your store |
-| 34 | Contact creators | Message 5 creators with a product and commission offer | [19.5 Affiliate programmes that do not cannibalise you](playbook/19-creators-ugc-and-video-ads.md#lesson-195-affiliate-programmes-that-do-not-cannibalise-you) | 20 min | Starter: Write personal messages for you |
-| 35 | Creator brief | Write a one-page brief for creators | [19.12 The UGC brief](playbook/19-creators-ugc-and-video-ads.md#lesson-1912-the-ugc-brief) | 20 min | Starter: Fill in the brief for you |
-| 36 | Video script | Write one 30-second video ad | [19.9 Scripting](playbook/19-creators-ugc-and-video-ads.md#lesson-199-scripting) | 20 min | Starter: Write 3 script options for you |
-| 37 | Film it | Film and edit a video on your phone | [19.11 Editing for performance](playbook/19-creators-ugc-and-video-ads.md#lesson-1911-editing-for-performance) | 45 min | Guide |
-| 38 | Ads Manager basics | Find your way around Ads Manager | [7.14 Find your way around Ads Manager](playbook/07-meta-ads.md#lesson-714-find-your-way-around-ads-manager) | 10 min | Guide |
-| 39 | Tracking | Check Meta is counting your sales correctly | [20.1 Before you launch: tracking you can trust](playbook/20-ad-analysis-audiences-and-setup.md#lesson-201-before-you-launch-tracking-you-can-trust) | 15 min | Starter: Check your tracking for you |
-| 40 | Audiences | Set up your audiences | [20.2 Setting up target audiences](playbook/20-ad-analysis-audiences-and-setup.md#lesson-202-setting-up-target-audiences) | 20 min | Starter: Create the audiences in your account (after you approve) |
-| 41 | Plan the campaign | Fill in a campaign plan | [6.16 The campaign brief template](playbook/06-defining-campaigns.md#lesson-616-the-campaign-brief-template) | 20 min | Starter: Fill in the plan with you |
-| 42 | Before you build | Get your first campaign ready | [7.13 Launch your first Meta ad in 30 minutes](playbook/07-meta-ads.md#lesson-713-launch-your-first-meta-ad-in-30-minutes) | 20 min | Guide |
-| 43 | Build the campaign | Build your first Meta sales campaign | [20.3 Setting up a Meta sales campaign step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-203-setting-up-a-meta-sales-campaign-step-by-step) | 30 min | Starter: Build it in your account as a paused draft. You switch it on |
-| 44 | Keep it simple | Match your ad account to your budget | [6.4 Account structure by spend](playbook/06-defining-campaigns.md#lesson-64-account-structure-by-spend) | 15 min | Starter: Suggest a simpler setup |
-| 45 | Daily ad check | Check your ads and stop the money-wasters | [7.6 Daily optimisation in 10 minutes](playbook/07-meta-ads.md#lesson-76-daily-optimisation-in-10-minutes) | 10 min | Starter: Pause the money-wasters for you (after you approve) and tell you which budgets to raise |
-| 46 | Find the leak | Find where you are losing buyers | [20.7 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/20-ad-analysis-audiences-and-setup.md#lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Starter: Explain where you are losing buyers |
-| 47 | Creator ads | Run one ad from a creator's account | [19.6 Partnership ads (whitelisting)](playbook/19-creators-ugc-and-video-ads.md#lesson-196-partnership-ads-whitelisting) | 20 min | Starter: Add it to your campaign as a paused ad |
+| 32 | Openings | Write 20 ad openings | [6.8 Hooks that win the first three seconds](playbook/06-creators-ugc-and-video-ads.md#lesson-68-hooks-that-win-the-first-three-seconds) | 20 min | Starter: Write 20 openings from your reviews |
+| 33 | Creators | Make a list of 10 creators | [6.2 Finding the right creators](playbook/06-creators-ugc-and-video-ads.md#lesson-62-finding-the-right-creators) | 20 min | Starter: Find creators that suit your store |
+| 34 | Contact creators | Message 5 creators with a product and commission offer | [6.5 Affiliate programmes that do not cannibalise you](playbook/06-creators-ugc-and-video-ads.md#lesson-65-affiliate-programmes-that-do-not-cannibalise-you) | 20 min | Starter: Write personal messages for you |
+| 35 | Creator brief | Write a one-page brief for creators | [6.12 The UGC brief](playbook/06-creators-ugc-and-video-ads.md#lesson-612-the-ugc-brief) | 20 min | Starter: Fill in the brief for you |
+| 36 | Video script | Write one 30-second video ad | [6.9 Scripting](playbook/06-creators-ugc-and-video-ads.md#lesson-69-scripting) | 20 min | Starter: Write 3 script options for you |
+| 37 | Film it | Film and edit a video on your phone | [6.11 Editing for performance](playbook/06-creators-ugc-and-video-ads.md#lesson-611-editing-for-performance) | 45 min | Guide |
+| 38 | Ads Manager basics | Find your way around Ads Manager | [8.1 Find your way around Ads Manager](playbook/08-meta-ads.md#lesson-81-find-your-way-around-ads-manager) | 10 min | Guide |
+| 39 | Tracking | Check Meta is counting your sales correctly | [9.1 Before you launch: tracking you can trust](playbook/09-ad-analysis-audiences-and-setup.md#lesson-91-before-you-launch-tracking-you-can-trust) | 15 min | Starter: Check your tracking for you |
+| 40 | Audiences | Set up your audiences | [9.2 Setting up target audiences](playbook/09-ad-analysis-audiences-and-setup.md#lesson-92-setting-up-target-audiences) | 20 min | Starter: Create the audiences in your account (after you approve) |
+| 41 | Plan the campaign | Fill in a campaign plan | [7.16 The campaign brief template](playbook/07-defining-campaigns.md#lesson-716-the-campaign-brief-template) | 20 min | Starter: Fill in the plan with you |
+| 42 | Before you build | Get your first campaign ready | [8.3 Launch your first Meta ad in 30 minutes](playbook/08-meta-ads.md#lesson-83-launch-your-first-meta-ad-in-30-minutes) | 20 min | Guide |
+| 43 | Build the campaign | Build your first Meta sales campaign | [9.4 Setting up a Meta sales campaign step by step](playbook/09-ad-analysis-audiences-and-setup.md#lesson-94-setting-up-a-meta-sales-campaign-step-by-step) | 30 min | Starter: Build it in your account as a paused draft. You switch it on |
+| 44 | Keep it simple | Match your ad account to your budget | [7.4 Account structure by spend](playbook/07-defining-campaigns.md#lesson-74-account-structure-by-spend) | 15 min | Starter: Suggest a simpler setup |
+| 45 | Daily ad check | Check your ads and stop the money-wasters | [8.9 Daily optimisation in 10 minutes](playbook/08-meta-ads.md#lesson-89-daily-optimisation-in-10-minutes) | 10 min | Starter: Pause the money-wasters for you (after you approve) and tell you which budgets to raise |
+| 46 | Find the leak | Find where you are losing buyers | [9.8 Cross-diagnosis: is it the ad, the page, the offer or the checkout?](playbook/09-ad-analysis-audiences-and-setup.md#lesson-98-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout) | 15 min | Starter: Explain where you are losing buyers |
+| 47 | Creator ads | Run one ad from a creator's account | [6.6 Partnership ads (whitelisting)](playbook/06-creators-ugc-and-video-ads.md#lesson-66-partnership-ads-whitelisting) | 20 min | Starter: Add it to your campaign as a paused ad |
 | 48 | Weekly ad review | Do your weekly ad review | [5.11 Macro and micro iteration](playbook/05-creative-strategy.md#lesson-511-macro-and-micro-iteration) | 20 min | Starter: Make your weekly ad report |
 
 ## Stage 5: Google and other channels (Days 49 to 54)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 49 | Product titles | Rewrite titles for your top 10 products | [8.2 Product data](playbook/08-google-ads.md#lesson-82-product-data) | 25 min | Starter: Write new product titles for you to paste into Shopify |
-| 50 | Google setup | Set up brand search and a shopping campaign | [20.4 Setting up Google step by step](playbook/20-ad-analysis-audiences-and-setup.md#lesson-204-setting-up-google-step-by-step) | 30 min | Starter: Write both campaign setups for you to copy into Google Ads |
-| 51 | Wasted searches | Block searches that waste money | [8.8 Weekly optimisation](playbook/08-google-ads.md#lesson-88-weekly-optimisation) | 10 min | Starter: Write a list of wasted searches for you to block |
-| 52 | TikTok | Decide if TikTok is right for you yet | [12.1 TikTok readiness](playbook/12-channels-tiktok-pinterest-seo.md#lesson-121-tiktok-readiness) | 15 min | Guide |
-| 53 | Google search basics | Fix the basics on your top pages | [12.8 SEO step by step](playbook/12-channels-tiktok-pinterest-seo.md#lesson-128-seo-step-by-step) | 25 min | Growth: Write titles and descriptions for you |
-| 54 | AI shopping | Get ready for AI shopping assistants | [12.9 AI search and agentic commerce](playbook/12-channels-tiktok-pinterest-seo.md#lesson-129-ai-search-and-agentic-commerce) | 15 min | Guide |
+| 49 | Product titles | Rewrite titles for your top 10 products | [10.3 Product data](playbook/10-google-ads.md#lesson-103-product-data) | 25 min | Starter: Write new product titles for you to paste into Shopify |
+| 50 | Google setup | Set up brand search and a shopping campaign | [9.5 Setting up Google step by step](playbook/09-ad-analysis-audiences-and-setup.md#lesson-95-setting-up-google-step-by-step) | 30 min | Starter: Write both campaign setups for you to copy into Google Ads |
+| 51 | Wasted searches | Block searches that waste money | [10.10 Weekly optimisation](playbook/10-google-ads.md#lesson-1010-weekly-optimisation) | 10 min | Starter: Write a list of wasted searches for you to block |
+| 52 | TikTok | Decide if TikTok is right for you yet | [11.1 TikTok readiness](playbook/11-channels-tiktok-pinterest-seo.md#lesson-111-tiktok-readiness) | 15 min | Guide |
+| 53 | Google search basics | Fix the basics on your top pages | [11.9 SEO step by step](playbook/11-channels-tiktok-pinterest-seo.md#lesson-119-seo-step-by-step) | 25 min | Growth: Write titles and descriptions for you |
+| 54 | AI shopping | Get ready for AI shopping assistants | [11.10 AI search and agentic commerce](playbook/11-channels-tiktok-pinterest-seo.md#lesson-1110-ai-search-and-agentic-commerce) | 15 min | Guide |
 
 ## Stage 6: Sales, launches and busy season (Days 55 to 60)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
-| 55 | Sales calendar | Plan your next 90 days of promotions | [13.1 Your yearly sales calendar](playbook/13-promotions-and-sales.md#lesson-131-your-yearly-sales-calendar) | 20 min | Growth: Write your promotions calendar |
-| 56 | Sale offers | Design a sale offer that keeps your profit | [13.4 The big sale, step by step](playbook/13-promotions-and-sales.md#lesson-134-the-big-sale-step-by-step) | 20 min | Growth: Work out the profit on each offer |
-| 57 | Black Friday | Start your Black Friday plan | [6.14 Promotional and seasonal campaigns](playbook/06-defining-campaigns.md#lesson-614-promotional-and-seasonal-campaigns) | 30 min | Growth: Build your timeline |
-| 58 | Product launch | Plan your next product launch | [13.2 Launch phases](playbook/13-promotions-and-sales.md#lesson-132-launch-phases) | 20 min | Growth: Write the launch plan |
-| 59 | Stock | Do a weekly stock check | [14.2 A 10-minute weekly stock check](playbook/14-inventory-cash-planning.md#lesson-142-a-10-minute-weekly-stock-check) | 20 min | Growth: Make the stock check for you |
-| 60 | Cash | Make a 13-week cash plan | [14.4 Cash flow forecast](playbook/14-inventory-cash-planning.md#lesson-144-cash-flow-forecast) | 30 min | Guide |
+| 55 | Sales calendar | Plan your next 90 days of promotions | [17.1 Your yearly sales calendar](playbook/17-promotions-and-sales.md#lesson-171-your-yearly-sales-calendar) | 20 min | Growth: Write your promotions calendar |
+| 56 | Sale offers | Design a sale offer that keeps your profit | [17.4 The big sale, step by step](playbook/17-promotions-and-sales.md#lesson-174-the-big-sale-step-by-step) | 20 min | Growth: Work out the profit on each offer |
+| 57 | Black Friday | Start your Black Friday plan | [7.14 Promotional and seasonal campaigns](playbook/07-defining-campaigns.md#lesson-714-promotional-and-seasonal-campaigns) | 30 min | Growth: Build your timeline |
+| 58 | Product launch | Plan your next product launch | [17.2 Launch phases](playbook/17-promotions-and-sales.md#lesson-172-launch-phases) | 20 min | Growth: Write the launch plan |
+| 59 | Stock | Do a weekly stock check | [19.2 A 10-minute weekly stock check](playbook/19-inventory-cash-planning.md#lesson-192-a-10-minute-weekly-stock-check) | 20 min | Growth: Make the stock check for you |
+| 60 | Cash | Make a 13-week cash plan | [19.4 Cash flow forecast](playbook/19-inventory-cash-planning.md#lesson-194-cash-flow-forecast) | 30 min | Guide |
 
 ## Stage 7: Grow bigger, work smarter (Days 61 to 66)
 
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
 | 61 | Grow a winner | Spend more on a winning campaign, safely | [2.7 The scale test](playbook/02-diagnose-and-fix.md#lesson-27-the-scale-test) | 10 min | Growth: Tell you each budget step to make in Ads Manager |
-| 62 | Test what works | Turn one thing off to see what it really adds | [20.9 Attribution and incrementality](playbook/20-ad-analysis-audiences-and-setup.md#lesson-209-attribution-and-incrementality) | 15 min | Guide |
-| 63 | New countries | Check if selling in a second country makes sense | [15.1 Is there demand?](playbook/15-international-expansion.md#lesson-151-is-there-demand) | 20 min | Guide |
-| 64 | Hand it off | Hand one regular task to someone else | [28.1 Your first hire](playbook/28-team-creators-money.md#lesson-281-your-first-hire) | 20 min | Guide |
-| 65 | AI helpers | Give one weekly job to AI | [17.2 High-value uses](playbook/17-ai-for-operators.md#lesson-172-high-value-uses) | 20 min | Starter: Set this up as a weekly Helix job |
-| 66 | Your setup | Check your tools and choose your next focus | [18.2 Rules for adding a tool](playbook/18-tool-stack.md#lesson-182-rules-for-adding-a-tool) | 20 min | Guide |
+| 62 | Test what works | Turn one thing off to see what it really adds | [9.10 Attribution and incrementality](playbook/09-ad-analysis-audiences-and-setup.md#lesson-910-attribution-and-incrementality) | 15 min | Guide |
+| 63 | New countries | Check if selling in a second country makes sense | [25.1 Is there demand?](playbook/25-international-expansion.md#lesson-251-is-there-demand) | 20 min | Guide |
+| 64 | Hand it off | Hand one regular task to someone else | [26.1 Your first hire](playbook/26-team-creators-money.md#lesson-261-your-first-hire) | 20 min | Guide |
+| 65 | AI helpers | Give one weekly job to AI | [28.2 High-value uses](playbook/28-ai-for-operators.md#lesson-282-high-value-uses) | 20 min | Starter: Set this up as a weekly Helix job |
+| 66 | Your setup | Check your tools and choose your next focus | [29.2 Rules for adding a tool](playbook/29-tool-stack.md#lesson-292-rules-for-adding-a-tool) | 20 min | Guide |
 
 ## Day detail
 
@@ -555,7 +555,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Pick a prize your ideal customer wants. Not cash.
 2. Invite 2 to 4 brands that sell to the same people but do not compete with you.
-3. Check the promotion rules where you run it. Some places need a permit (Lesson 11.3).
+3. Check the promotion rules where you run it. Some places need a permit (Lesson 12.3).
 4. Ask for an email to enter. Do not make sharing or tagging friends on Facebook a way to enter. Meta's rules ban it.
 5. Plan a welcome offer for new people who enter.
 
@@ -601,7 +601,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Pick how often to post for your stage (Lesson 21.4).
+1. Pick how often to post for your stage (Lesson 4.3).
 2. Plan next week using four types of post: proof, tips, story and product.
 3. Film everything on one day.
 4. Schedule the posts.
@@ -699,7 +699,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Open the brief template in Lesson 19.12.
+1. Open the brief template in Lesson 6.12.
 2. Fill in the main message, proof points and anything they must not say.
 3. Add 3 openings for them to film separately.
 4. Send it to your creators.
@@ -754,7 +754,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 2. Set the date range at the top right to Last 7 days.
 3. Click Columns and pick your Daily preset, or Performance if you have not made one yet.
 4. Open the Campaigns tab, then click a campaign to see its three levels: campaign, ad set and ad. Do not change anything.
-5. Find the Delivery column and the On/Off switch. Read what Learning and Learning limited mean in Lesson 7.14.
+5. Find the Delivery column and the On/Off switch. Read what Learning and Learning limited mean in Lesson 8.1.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -819,11 +819,11 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Open Events Manager (Ads Manager menu > All tools > Events Manager) and check your pixel shows Purchase events. If not, go back to the tracking day (Lesson 20.1).
-2. Write down your daily budget from your campaign plan. New to ads? Use one you know you can afford for two weeks (Lesson 7.13, Step 2).
+1. Open Events Manager (Ads Manager menu > All tools > Events Manager) and check your pixel shows Purchase events. If not, go back to the tracking day (Lesson 9.1).
+2. Write down your daily budget from your campaign plan. New to ads? Use one you know you can afford for two weeks (Lesson 8.3, Step 2).
 3. Get 3 to 5 ads ready: short videos or images of your best seller, each with a different opening line, in 4:5 and 9:16 sizes.
 4. Write one main text and one headline you can reuse.
-5. Read Lesson 7.13 Steps 5 to 9 once, so you know the screens you will see tomorrow.
+5. Read Lesson 8.3 Steps 5 to 9 once, so you know the screens you will see tomorrow.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.
 
@@ -837,7 +837,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Create a Sales campaign. Name it with a clear pattern, like 01-Sales-Broad-Test (Lesson 6.7).
+1. Create a Sales campaign. Name it with a clear pattern, like 01-Sales-Broad-Test (Lesson 7.7).
 2. Set the daily budget at 2 to 3 times your target cost per sale.
 3. Add 3 to 6 ads that test one thing, like different openings.
 4. Check the preview, then click Publish yourself.
@@ -854,7 +854,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Find your daily spend in the table in Lesson 6.4.
+1. Find your daily spend in the table in Lesson 7.4.
 2. Compare it with how many campaigns you have running.
 3. Join together or pause the ones that do not fit.
 4. Rename campaigns to your naming pattern.
@@ -890,7 +890,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. Open What to fix in Helix.
 2. Read what Helix found.
-3. Match each finding to the table in Lesson 20.7.
+3. Match each finding to the table in Lesson 9.8.
 4. Pick one fix for this week.
 
 **Want me to do it for you?** Explain where you are losing buyers (Starter plan, after you approve).
@@ -956,7 +956,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Check the Shopify Google & YouTube app is connected, with Purchase as your main conversion (Lesson 20.4, Step 1).
+1. Check the Shopify Google & YouTube app is connected, with Purchase as your main conversion (Lesson 9.5, Step 1).
 2. Create or check a campaign for searches of your brand name.
 3. Create a Performance Max campaign that only uses your product list, with your brand name excluded.
 4. Start with the 'maximise conversion value' setting.
@@ -991,7 +991,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 **How to do it.**
 
-1. Go through the checklist in Lesson 12.1.
+1. Go through the checklist in Lesson 11.1.
 2. Post 3 videos (no ads) this week.
 3. Save your best creator videos to use as TikTok ads later.
 4. Decide: start now or next quarter.
@@ -1227,8 +1227,8 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. List your apps and what each costs per month.
-2. Cancel one you do not use (see the rules in Lesson 18.2).
-3. Pick your one focus for the next six weeks (Lesson 16.3).
+2. Cancel one you do not use (see the rules in Lesson 29.2).
+3. Pick your one focus for the next six weeks (Lesson 27.3).
 4. Come back tomorrow and keep your streak.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.

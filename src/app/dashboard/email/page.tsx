@@ -76,7 +76,7 @@ export default async function EmailAutomation() {
                       <button className="btn-dark">{canDo ? <Wand2 className="h-4 w-4" aria-hidden /> : <Lock className="h-4 w-4" aria-hidden />}{canDo ? "Draft and set up for me" : `Set up for me · ${planName(f.tier)}`}</button>
                     </form>
                   ))}
-                  <Link href="/learn/10-email-sms-whatsapp#lesson-102-the-five-core-flows-and-extras" className="btn-ghost"><BookOpen className="h-4 w-4 text-cyan-700" aria-hidden /> Show me how</Link>
+                  <Link href="/learn/16-email-sms-whatsapp#lesson-162-the-five-core-flows-and-extras" className="btn-ghost"><BookOpen className="h-4 w-4 text-cyan-700" aria-hidden /> Show me how</Link>
                   <span className="text-xs text-slate-500">{f.benchmark}</span>
                 </div>
               </div>

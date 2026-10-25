@@ -56,7 +56,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "People stop, watch and click, then leave. Every extra click you pay for is wasted until the page matches the ad and loads fast on mobile.",
       fix: ["Check the ad promise appears in the first screen of the landing page.", "Compress the big top images and remove unused apps to improve mobile speed.", "Add reviews and the guarantee near add to cart.", "Test the mobile checkout yourself."],
       doIt: { label: "Draft landing page fixes", tier: "growth", estAiCost: 0.06 },
-      learn: { slug: "20-ad-analysis-audiences-and-setup", anchor: "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout", label: "Cross-diagnosis" },
+      learn: { slug: "09-ad-analysis-audiences-and-setup", anchor: "lesson-98-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout", label: "Cross-diagnosis" },
       source: ["meta", "shopify", "pagespeed"], example,
     });
 
@@ -72,7 +72,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "These shoppers wanted the product. Usually a surprise shipping cost, few payment options or a forced account stops them.",
       fix: ["Show shipping cost or the free shipping threshold on product pages and in the cart.", "Turn on express wallets and buy now pay later.", "Allow guest checkout.", "Show estimated delivery dates."],
       doIt: { label: "Draft shipping message and checkout checklist", tier: "starter", estAiCost: 0.03 },
-      learn: { slug: "09-website-and-cro", anchor: "lesson-911-shipping-psychology", label: "Shipping psychology" },
+      learn: { slug: "14-website-and-cro", anchor: "lesson-1410-shipping-psychology", label: "Shipping psychology" },
       source: ["shopify", "crawler"], example,
     });
 
@@ -84,7 +84,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "The store is ready for more traffic. New hooks and angles are the fastest way to unlock it.",
       fix: ["Write new hooks from reviews.", "Test a new format.", "Put the offer in the ad."],
       doIt: { label: "Write a creative brief", tier: "starter", estAiCost: 0.04 },
-      learn: { slug: "19-creators-ugc-and-video-ads", anchor: "lesson-198-hooks-that-win-the-first-three-seconds", label: "Hooks" },
+      learn: { slug: "06-creators-ugc-and-video-ads", anchor: "lesson-68-hooks-that-win-the-first-three-seconds", label: "Hooks" },
       source: ["meta", "shopify"], example,
     });
 
@@ -102,7 +102,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "Rising frequency and CPM with falling CTR means costs will keep climbing until fresh creative goes in.",
       fix: ["Load a new batch of 4 to 8 ads on your best concept.", "Retire ads with falling CTR.", "Check reach is still growing with spend."],
       doIt: { label: "Draft the next creative batch brief", tier: "starter", estAiCost: 0.04 },
-      learn: { slug: "06-defining-campaigns", anchor: "lesson-612-decision-rules-scale-hold-refresh-kill", label: "Decision rules" },
+      learn: { slug: "07-defining-campaigns", anchor: "lesson-712-decision-rules-scale-hold-refresh-kill", label: "Decision rules" },
       source: ["meta"], example,
     });
 
@@ -113,7 +113,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       evidence: [{ label: "ThruPlay rate", value: pct(m.thruplayRate, 0) }, { label: "Outbound CTR", value: pct(m.ctr, 2) }],
       why: "Attention without action usually means a missing CTA or an offer that is not in the ad.",
       fix: ["End with a specific CTA and reason to act now.", "Show the offer on screen."],
-      learn: { slug: "19-creators-ugc-and-video-ads", anchor: "lesson-199-scripting", label: "Scripting" },
+      learn: { slug: "06-creators-ugc-and-video-ads", anchor: "lesson-69-scripting", label: "Scripting" },
       source: ["meta"], example,
     });
 
@@ -124,7 +124,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       evidence: [{ label: "Meta ROAS", value: `${m.roasPrev.toFixed(2)} → ${m.roasNow.toFixed(2)}` }, { label: "MER", value: `${pct(m.merPrev)} → ${pct(m.merNow)}` }],
       why: "Retargeting may be taking credit for sales that would have happened anyway, while fewer new customers arrive.",
       fix: ["Shift budget toward cold campaigns.", "Check new customer share.", "Plan a one-week holdout test."],
-      learn: { slug: "20-ad-analysis-audiences-and-setup", anchor: "lesson-209-attribution-and-incrementality", label: "Attribution" },
+      learn: { slug: "09-ad-analysis-audiences-and-setup", anchor: "lesson-910-attribution-and-incrementality", label: "Attribution" },
       source: ["meta", "shopify"], example,
     });
 
@@ -136,7 +136,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "Most of your traffic is mobile. Closing even part of this gap is often the biggest win available.",
       fix: ["Speed up the mobile product page.", "Add a sticky add-to-cart button.", "Shorten the page above the fold."],
       doIt: { label: "Draft mobile fixes", tier: "growth", estAiCost: 0.05 },
-      learn: { slug: "09-website-and-cro", anchor: "lesson-94-speed", label: "Speed" },
+      learn: { slug: "14-website-and-cro", anchor: "lesson-144-speed", label: "Speed" },
       source: ["shopify", "pagespeed"], example,
     });
 
@@ -148,7 +148,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "Flows run 24/7 and catch shoppers at their highest intent. Each one is set up once and keeps earning.",
       fix: ["Open Email automation.", "Review the drafts for the missing flows.", "Approve to set them up."],
       doIt: { label: "Draft and set up the missing flows", tier: "growth", estAiCost: 0.12 },
-      learn: { slug: "10-email-sms-whatsapp", anchor: "lesson-102-the-five-core-flows-and-extras", label: "Core flows" },
+      learn: { slug: "16-email-sms-whatsapp", anchor: "lesson-162-the-five-core-flows-and-extras", label: "Core flows" },
       source: ["klaviyo"], example,
     });
 
@@ -160,7 +160,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "Irrelevant searches drain budget from the ones that sell.",
       fix: ["Add these as negative keywords.", "Review search terms weekly."],
       doIt: { label: "Add negatives (with approval)", tier: "starter", estAiCost: 0.01 },
-      learn: { slug: "08-google-ads", anchor: "lesson-88-weekly-optimisation", label: "Weekly optimisation" },
+      learn: { slug: "10-google-ads", anchor: "lesson-1010-weekly-optimisation", label: "Weekly optimisation" },
       source: ["google"], example,
     });
 
@@ -186,7 +186,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "Many people tap your profile after seeing an ad. A stale or unclear profile loses them before they reach your store.",
       fix: ["Rewrite bios: what you sell, proof, reason to tap now.", "Fix links and add UTMs.", "Add Reviews, Best sellers and Shipping highlights.", "Pin your best product video, proof and brand story.", "Set a posting rhythm you can keep."],
       doIt: { label: "Draft bios, highlights plan and a 4-week calendar", tier: "starter", estAiCost: 0.04 },
-      learn: { slug: "21-brand-and-social-presence", anchor: "lesson-212-profile-checklist-instagram-tiktok-facebook", label: "Profile checklist" },
+      learn: { slug: "04-brand-and-social-presence", anchor: "lesson-42-profile-checklist-instagram-tiktok-facebook", label: "Profile checklist" },
       source: ["instagram", "tiktok", "facebook"], example,
     });
   if (!s.social.liveAdOfferOnProfile)
@@ -196,7 +196,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       evidence: [{ label: "Live ad offer", value: s.social.liveAdOffer }, { label: "On Instagram or TikTok profile", value: "Not found in bio, pinned posts or last 9 posts" }],
       why: "Shoppers who check you out after the ad expect to see the same offer. A mismatch lowers trust and conversion.",
       fix: ["Mention the offer in your bio line 3.", "Pin a post about it.", "Add it to a highlight while it runs."],
-      learn: { slug: "21-brand-and-social-presence", anchor: "lesson-212-profile-checklist-instagram-tiktok-facebook", label: "Consistency with ads" },
+      learn: { slug: "04-brand-and-social-presence", anchor: "lesson-42-profile-checklist-instagram-tiktok-facebook", label: "Consistency with ads" },
       source: ["meta", "instagram"], example,
     });
 
@@ -208,7 +208,7 @@ export function runRules(s: Signals, example = true): Insight[] {
       why: "Offer, creative, list size, stock and site speed are decided weeks before the sale. Starting now gives you time to do it well.",
       fix: ["Set a revenue target.", "Choose the offer.", "Check stock for best sellers.", "Book creative and email dates."],
       doIt: { label: "Build your Black Friday timeline", tier: "growth", estAiCost: 0.08 },
-      learn: { slug: "06-defining-campaigns", anchor: "lesson-614-promotional-and-seasonal-campaigns", label: "Promotional campaigns" },
+      learn: { slug: "07-defining-campaigns", anchor: "lesson-714-promotional-and-seasonal-campaigns", label: "Promotional campaigns" },
       source: ["calendar"], example,
     });
 

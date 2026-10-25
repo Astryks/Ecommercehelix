@@ -34,10 +34,10 @@
    "minutes": 10,
    "area": "learning",
    "learn": {
-    "slug": "04-brand-and-content",
-    "anchor": "lesson-42-customer-profiles",
+    "slug": "03-brand-and-content",
+    "anchor": "lesson-32-customer-profiles",
     "label": "Customer profiles",
-    "ref": "4.2"
+    "ref": "3.2"
    },
    "sop": "16",
    "doIt": null,
@@ -59,10 +59,10 @@
    "minutes": 15,
    "area": "learning",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-37-check-people-really-want-your-product",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-157-check-people-really-want-your-product",
     "label": "Check people really want your product",
-    "ref": "3.7"
+    "ref": "15.7"
    },
    "sop": "16",
    "doIt": null,
@@ -113,10 +113,10 @@
    "minutes": 10,
    "area": "numbers",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-36-pricing-that-is-easy-to-accept",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-156-pricing-that-is-easy-to-accept",
     "label": "Pricing that is easy to accept",
-    "ref": "3.6"
+    "ref": "15.6"
    },
    "sop": "04",
    "doIt": null,
@@ -138,10 +138,10 @@
    "minutes": 10,
    "area": "site",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-32-say-clearly-what-the-customer-gets",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-152-say-clearly-what-the-customer-gets",
     "label": "Say clearly what the customer gets",
-    "ref": "3.2"
+    "ref": "15.2"
    },
    "sop": "04",
    "doIt": {
@@ -166,10 +166,10 @@
    "minutes": 10,
    "area": "site",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-35-take-the-risk-off-the-buyer",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-155-take-the-risk-off-the-buyer",
     "label": "Take the risk off the buyer",
-    "ref": "3.5"
+    "ref": "15.5"
    },
    "sop": "04",
    "doIt": null,
@@ -191,10 +191,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-33-give-people-reasons-to-believe-you",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-153-give-people-reasons-to-believe-you",
     "label": "Give people reasons to believe you",
-    "ref": "3.3"
+    "ref": "15.3"
    },
    "sop": "16",
    "doIt": null,
@@ -216,10 +216,10 @@
    "minutes": 15,
    "area": "learning",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-221-plan-before-you-build",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-131-plan-before-you-build",
     "label": "Plan before you build",
-    "ref": "22.1"
+    "ref": "13.1"
    },
    "sop": "11",
    "doIt": null,
@@ -241,10 +241,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-222-domain-and-email",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-132-domain-and-email",
     "label": "Domain and email",
-    "ref": "22.2"
+    "ref": "13.2"
    },
    "sop": "11",
    "doIt": null,
@@ -266,10 +266,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-223-choose-and-set-up-a-theme",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-133-choose-and-set-up-a-theme",
     "label": "Choose and set up a theme",
-    "ref": "22.3"
+    "ref": "13.3"
    },
    "sop": "11",
    "doIt": null,
@@ -292,10 +292,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-224-build-the-home-page",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-134-build-the-home-page",
     "label": "Build the home page",
-    "ref": "22.4"
+    "ref": "13.4"
    },
    "sop": "11",
    "doIt": {
@@ -321,10 +321,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-225-product-pages-titles-photos-and-descriptions",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-135-product-pages-titles-photos-and-descriptions",
     "label": "Product pages: titles, photos and descriptions",
-    "ref": "22.5"
+    "ref": "13.5"
    },
    "sop": "11",
    "doIt": {
@@ -349,10 +349,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-226-variants-and-inventory",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-136-variants-and-inventory",
     "label": "Variants and inventory",
-    "ref": "22.6"
+    "ref": "13.6"
    },
    "sop": "16",
    "doIt": null,
@@ -374,10 +374,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-228-collections-menus-and-search",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-138-collections-menus-and-search",
     "label": "Collections, menus and search",
-    "ref": "22.8"
+    "ref": "13.8"
    },
    "sop": "11",
    "doIt": null,
@@ -399,10 +399,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-229-shipping-zones-rates-and-a-free-shipping-amount",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-139-shipping-zones-rates-and-a-free-shipping-amount",
     "label": "Shipping zones, rates and a free-shipping amount",
-    "ref": "22.9"
+    "ref": "13.9"
    },
    "sop": "11",
    "doIt": null,
@@ -424,10 +424,10 @@
    "minutes": 15,
    "area": "numbers",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-2210-taxes-gst-and-sales-tax-basics",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-1310-taxes-gst-and-sales-tax-basics",
     "label": "Taxes: GST and sales tax basics",
-    "ref": "22.10"
+    "ref": "13.10"
    },
    "sop": "11",
    "doIt": null,
@@ -449,10 +449,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-2212-policies-and-legal-pages",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-1312-policies-and-legal-pages",
     "label": "Policies and legal pages",
-    "ref": "22.12"
+    "ref": "13.12"
    },
    "sop": "11",
    "doIt": null,
@@ -474,10 +474,10 @@
    "minutes": 15,
    "area": "retention",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-2213-essential-apps-and-only-those",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-1313-essential-apps-and-only-those",
     "label": "Essential apps (and only those)",
-    "ref": "22.13"
+    "ref": "13.13"
    },
    "sop": "13",
    "doIt": {
@@ -502,10 +502,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-201-before-you-launch-tracking-you-can-trust",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-91-before-you-launch-tracking-you-can-trust",
     "label": "Before you launch: tracking you can trust",
-    "ref": "20.1"
+    "ref": "9.1"
    },
    "sop": "05",
    "doIt": null,
@@ -527,10 +527,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "22-shopify-store-setup",
-    "anchor": "lesson-2216-place-test-orders",
+    "slug": "13-shopify-store-setup",
+    "anchor": "lesson-1314-place-test-orders",
     "label": "Place test orders",
-    "ref": "22.16"
+    "ref": "13.14"
    },
    "sop": "11",
    "doIt": null,
@@ -602,10 +602,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-1910-shooting-on-a-phone",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-610-shooting-on-a-phone",
     "label": "Shooting on a phone",
-    "ref": "19.10"
+    "ref": "6.10"
    },
    "sop": "08",
    "doIt": null,
@@ -647,7 +647,7 @@
    "title": "Set up your first campaign, paused",
    "lesson": "Building the campaign paused lets you check everything calmly before any money is spent.",
    "steps": [
-    "In Ads Manager, create a Sales campaign. New to Ads Manager? Read Lesson 7.14 first.",
+    "In Ads Manager, create a Sales campaign. New to Ads Manager? Read Lesson 8.1 first.",
     "Set the daily budget from Day 22. Leave the audience broad (your country, adults).",
     "Add your 3 ads and link them to your best product page.",
     "Check the link, the pixel and the text. Switch the campaign off, then click Publish so it stays paused."
@@ -655,10 +655,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "07-meta-ads",
-    "anchor": "lesson-713-launch-your-first-meta-ad-in-30-minutes",
+    "slug": "08-meta-ads",
+    "anchor": "lesson-83-launch-your-first-meta-ad-in-30-minutes",
     "label": "Launch your first Meta ad in 30 minutes",
-    "ref": "7.13"
+    "ref": "8.3"
    },
    "sop": "05",
    "doIt": {
@@ -683,10 +683,10 @@
    "minutes": 5,
    "area": "ads",
    "learn": {
-    "slug": "07-meta-ads",
-    "anchor": "lesson-75-the-learning-phase",
+    "slug": "08-meta-ads",
+    "anchor": "lesson-88-the-learning-phase",
     "label": "The learning phase",
-    "ref": "7.5"
+    "ref": "8.8"
    },
    "sop": "06",
    "doIt": null,
@@ -708,10 +708,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-98-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout",
     "label": "Cross-diagnosis: is it the ad, the page, the offer or the checkout?",
-    "ref": "20.7"
+    "ref": "9.8"
    },
    "sop": "06",
    "doIt": null,
@@ -733,10 +733,10 @@
    "minutes": 10,
    "area": "learning",
    "learn": {
-    "slug": "07-meta-ads",
-    "anchor": "lesson-76-daily-optimisation-in-10-minutes",
+    "slug": "08-meta-ads",
+    "anchor": "lesson-89-daily-optimisation-in-10-minutes",
     "label": "Daily optimisation in 10 minutes",
-    "ref": "7.6"
+    "ref": "8.9"
    },
    "sop": "06",
    "doIt": null,

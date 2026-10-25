@@ -45,8 +45,8 @@
 
 | Helix can do (with approval where it writes) | The user does |
 | --- | --- |
-| Give the tags and steps to sort reviews, tickets and survey answers (Lessons 3.3 and 4.2) | Talk to customers |
-| Show where those words go: offer, product page, ads (Modules 3 and 5) | Count tags monthly and decide what to act on |
+| Give the tags and steps to sort reviews, tickets and survey answers (Lessons 15.3 and 3.2) | Talk to customers |
+| Show where those words go: offer, product page, ads (Modules 15 and 5) | Count tags monthly and decide what to act on |
 | Draft review request emails and replies to paste | Send them from their own tools |
 | Draft post-purchase survey questions | Add them to their survey app |
 

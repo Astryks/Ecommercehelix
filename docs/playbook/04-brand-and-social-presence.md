@@ -1,8 +1,8 @@
-# Module 21: Brand and social presence
+# Module 4: Brand and social presence
 
 **Outcome:** your Instagram, TikTok and Facebook profiles look like a brand people can trust and match what your ads promise. They turn curious ad viewers into followers, subscribers and buyers. You have a posting schedule you can keep and a simple way to reach more people for free.
 
-**Related:** [Module 4 Brand, content and community](04-brand-and-content.md), [Module 19 Creators, UGC and video ads](19-creators-ugc-and-video-ads.md), [Module 11 List and audience growth](11-list-and-audience-growth.md), [SOP 16 Customer research and reviews](../sops/16-customer-research-and-reviews.md)
+**Related:** [Module 3 Brand, content and community](03-brand-and-content.md), [Module 6 Creators, UGC and video ads](06-creators-ugc-and-video-ads.md), [Module 12 List and audience growth](12-list-and-audience-growth.md), [SOP 16 Customer research and reviews](../sops/16-customer-research-and-reviews.md)
 
 
 <!-- plain:start -->
@@ -30,7 +30,7 @@
 
 ---
 
-## Lesson 21.1: Why your profile is part of every ad
+## Lesson 4.1: Why your profile is part of every ad
 <!-- stage:attract -->
 
 **Why this matters:** Many people who see an ad do not click it. They tap your name to check you out first. If they find three old posts, no reviews and a broken link, they leave. A strong profile makes every ad dollar work harder, for free.
@@ -43,13 +43,13 @@
 
 **Expected result:** You have a list of which job each profile fails.
 
-**Step 3.** Fix the biggest gap on each profile using the checklist in Lesson 21.2.
+**Step 3.** Fix the biggest gap on each profile using the checklist in Lesson 4.2.
 
 **Expected result:** Every profile does all three jobs.
 
 <!-- do:insights -->
 
-## Lesson 21.2: Profile checklist (Instagram, TikTok, Facebook)
+## Lesson 4.2: Profile checklist (Instagram, TikTok, Facebook)
 <!-- stage:attract -->
 
 **Why this matters:** A profile is a mini landing page. Fourteen checks on each platform make sure it builds trust and matches what your ads promise.
@@ -85,7 +85,7 @@
 | Facebook page | Same bio and link, a current cover image, reviews managed, and the page connected to your ad account. |
 | TikTok | Bio link turned on where your account allows it (often after about 1,000 followers, sometimes sooner for business accounts; if **Edit profile** has no website box, you do not qualify yet), playlists for series, pinned videos. |
 
-## Lesson 21.4: Posting cadence you can keep
+## Lesson 4.3: Posting cadence you can keep
 <!-- stage:attract -->
 
 **Why this matters:** Cadence means how often you post. Being steady beats posting a lot, and batching makes it easy to keep up for 12 weeks.
@@ -110,7 +110,7 @@
 | Growing | 4 to 5 a week (mostly Reels) | 1 a day | 3 a week | Every day |
 | Established | Every day | 1 to 3 a day | Every day | Every day, plus a broadcast channel |
 
-## Lesson 21.5: Growing organic reach
+## Lesson 4.4: Growing organic reach
 <!-- stage:attract -->
 
 **Why this matters:** Organic reach means people who see your posts without you paying. Seven tactics grow it, from trial reels to replying fast.
@@ -123,7 +123,7 @@
 
 **Expected result:** Your posts show up in social search.
 
-**Step 3.** Remake the first three seconds of your best free posts with new hooks ([Lesson 19.8](19-creators-ugc-and-video-ads.md#lesson-198-hooks-that-win-the-first-three-seconds)) and post again.
+**Step 3.** Remake the first three seconds of your best free posts with new hooks ([Lesson 6.8](06-creators-ugc-and-video-ads.md#lesson-68-hooks-that-win-the-first-three-seconds)) and post again.
 
 **Expected result:** Proven posts get a second life.
 
@@ -135,7 +135,7 @@
 
 **Expected result:** Fans get early access and new customers find you off-platform.
 
-## Lesson 21.6: Social proof and reviews on social
+## Lesson 4.5: Social proof and reviews on social
 <!-- stage:convert -->
 
 **Why this matters:** Social proof on social media turns curious visitors into buyers. Reviews, customer posts and kind replies to complaints all count.
@@ -152,10 +152,10 @@
 
 **Expected result:** Future customers see a calm, helpful reply.
 
-## Lesson 21.8: Social shops
+## Lesson 4.6: Social shops
 <!-- stage:attract -->
 
-**Why this matters:** Social shops let people browse your products inside the app. Since 2025, Facebook and Instagram shops send buyers to your website to pay. TikTok Shop keeps checkout in the app, but only in some countries. See also Lessons 12.6 and 12.10.
+**Why this matters:** Social shops let people browse your products inside the app. Since 2025, Facebook and Instagram shops send buyers to your website to pay. TikTok Shop keeps checkout in the app, but only in some countries. See also Lessons 11.6 and 11.11.
 
 **Step 1.** Connect a clean catalog with one price per product and correct stock levels.
 
@@ -169,7 +169,7 @@
 
 **Expected result:** In-app orders are profitable and land in your normal systems.
 
-## Lesson 21.9: The social presence audit (what to check)
+## Lesson 4.7: The social presence audit (what to check)
 <!-- stage:attract -->
 
 **Why this matters:** Some buyers come to check out your profile. If it is out of date or does not match your ads, you lose them. Helix does not check your social profiles yet, so this table is your own 10-minute check.

@@ -1,4 +1,4 @@
-# Module 4: Brand, content and community
+# Module 3: Brand, content and community
 
 **Outcome:** a clear brand that people know. Plus a few post topics for each channel, and a plan to build a community and reach more people.
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Lesson 4.1: The brand core
+## Lesson 3.1: The brand core
 <!-- stage:attract -->
 
 **Why this matters:** Your brand core is a one-page summary of who you are. Everything you write and post comes from it. Brands without one often end up competing on price and discounts. Brands with one need fewer discounts, because trust does the selling.
@@ -55,7 +55,7 @@
 
 **Expected result:** A one-page brand core is saved where your team, freelancers and AI tools can read it.
 
-## Lesson 4.2: Customer profiles
+## Lesson 3.2: Customer profiles
 <!-- stage:attract -->
 
 **Why this matters:** A customer profile describes one type of buyer. Built from real customer words, it tells you what to say in ads, pages and emails. Built from guesses, it sends you the wrong way.
@@ -76,7 +76,7 @@
 
 **Expected result:** You know your real competitors and channels for this profile. Repeat for each profile.
 
-## Lesson 4.3: Brand guidelines
+## Lesson 3.3: Brand guidelines
 <!-- stage:attract -->
 
 **Why this matters:** Brand guidelines are a short guide anyone can follow: a freelancer, a creator or an AI tool. People recognise a brand after seeing it many times looking the same way. Guidelines make that happen without you checking everything.
@@ -97,7 +97,7 @@
 
 **Expected result:** The guide is finished and shared as one link or PDF.
 
-## Lesson 4.4: Content pillars by channel
+## Lesson 3.4: Content pillars by channel
 <!-- stage:attract -->
 
 **Why this matters:** Content pillars are the 4 to 6 topics you always post about. A simple set is proof, teaching, story and community, and product and offer. Each channel needs a different mix. Pillars stop you staring at a blank page.
@@ -137,7 +137,7 @@
 | Story and community | Medium | High (much TikTok reach comes from this) | Low |
 | Product and offer | Medium (show products, keep sales posts few) | Low | High (many people subscribe to hear about offers first) |
 
-## Lesson 4.5: Communication calendar
+## Lesson 3.5: Communication calendar
 <!-- stage:attract -->
 
 **Why this matters:** A communication calendar shows what you will post and send, and when. Planning around your sales dates means every post builds towards something.
@@ -160,7 +160,7 @@
 
 **Expected result:** You have a saved "yes" for every customer post you use.
 
-## Lesson 4.6: Organic content that also feeds ads
+## Lesson 3.6: Organic content that also feeds ads
 <!-- stage:attract -->
 
 **Why this matters:** Organic content means free posts, not paid ads. Good free posts are a free way to test ad ideas. Posts that hold attention usually make good ads.
@@ -185,7 +185,7 @@
 
 **Expected result:** Your next ad test starts from a proven idea.
 
-## Lesson 4.7: Community
+## Lesson 3.7: Community
 <!-- stage:attract -->
 
 **Why this matters:** A community is a group of customers who talk to you and to each other. It brings repeat purchases, content ideas and early warnings about objections. It works best when people buy more than once.
@@ -202,7 +202,7 @@
 
 **Expected result:** At least one post a week stars a customer.
 
-**Step 4.** Read their questions weekly and add new ones to your objection list (Lesson 3.3).
+**Step 4.** Read their questions weekly and add new ones to your objection list (Lesson 15.3).
 
 **Expected result:** Your content ideas and FAQ grow from real questions.
 
@@ -224,7 +224,7 @@
 
 **Expected result:** Customers see their voice changes things.
 
-## Lesson 4.8: Personal brand and PR
+## Lesson 3.8: Personal brand and PR
 <!-- stage:attract -->
 
 **Why this matters:** A visible founder builds trust and gives you endless content. Media coverage adds proof you can reuse in ads and on your site.
@@ -241,7 +241,7 @@
 
 **Expected result:** Press proof appears where shoppers decide.
 
-## Lesson 4.9: Boost creator posts with ad spend
+## Lesson 3.9: Boost creator posts with ad spend
 <!-- stage:attract -->
 
 **Why this matters:** Influencers (creators with an engaged audience) can spread your brand fast. The best results come from seeding widely, then paying the winners for usage rights and running their content as ads.
@@ -256,7 +256,7 @@
 
 **Expected result:** You have signed rights to run their content as ads.
 
-**Step 3.** Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand's name. See Modules 5, 7 and 19.
+**Step 3.** Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand's name. See Modules 5, 8 and 19.
 
 **Expected result:** The ads are live and you can compare them with your own brand ads.
 

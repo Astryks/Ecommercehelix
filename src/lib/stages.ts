@@ -38,7 +38,10 @@ const LESSONS = map.lessons as Record<string, StageId>;
 
 export const toStage = (v: unknown): StageId | null => (v === "attract" || v === "convert" || v === "grow" ? v : null);
 
-/** Primary stage of a playbook module (1 to 28). */
+/** Foundations: the modules everyone starts with (profit and diagnosis), shown first on /learn before Attract, Convert and Grow. Their lessons keep their own stage tags. */
+export const FOUNDATION_MODULES = [1, 2];
+
+/** Primary stage of a playbook module (1 to 30). */
 export function stageOfModule(n: number): StageId {
   return MODULES[String(n)] ?? "grow";
 }

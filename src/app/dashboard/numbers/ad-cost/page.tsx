@@ -10,7 +10,7 @@ export default async function AdCost() {
   const n = t.ncc;
   const max = Math.max(n.breakEven * 1.4, ...n.weeks.map((w) => w.pct ?? 0), 1);
   return (
-    <ToolPage title="New customer ad cost" intro="Ad spend as a share of sales from brand-new customers. It shows if your ads win new buyers at a profit." auto="every day from ad spend and new-customer sales" example={t.example} lesson={{ label: "Read your ad results", href: "/learn/20-ad-analysis-audiences-and-setup" }}>
+    <ToolPage title="New customer ad cost" intro="Ad spend as a share of sales from brand-new customers. It shows if your ads win new buyers at a profit." auto="every day from ad spend and new-customer sales" example={t.example} lesson={{ label: "Read your ad results", href: "/learn/09-ad-analysis-audiences-and-setup" }}>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3" data-testid="tool-ncc">
         <Stat k="Last 4 weeks" v={n.current === null ? "–" : `${n.current}%`} note={n.status === "good" ? "On target" : n.status === "watch" ? "Above target, still under break-even" : n.status === "fix" ? "Over break-even: new buyers cost more than they leave" : "No new-customer sales yet"} />
         <Stat k="Target" v={`${n.target}%`} note="Leaves a quarter of the margin as profit" />
