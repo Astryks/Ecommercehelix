@@ -112,7 +112,7 @@ Branch `course-reorder`. Full old → new lesson list: `src/lib/lesson-aliases.j
 
 **Generated files:** curricula and glossary (`build_curriculum.py`), `stages.md` (`plain_layer.py --stages` only), `course.md` (`build_course_doc.ts`); `plain_layer.py` keys and guide targets updated; `build_guides.py` not re-run (no lesson refs in it).
 
-**Checks (26 Oct 2026):** `npm ci` ok; `next typegen` ok; `tsc` clean; `npm run lint` 0 errors (same 5 old warnings); `npm test` 50 files, 360 tests passed; `npm run build` ok; `check_links.py` ok; all 29 card JSON files parse. Local production build: `/`, `/learn` (Start here, Attract, Convert, Grow), modules 1, 8, 9, 11, 13, 16, 22 and 30, new card decks 11.8 and 9.3 all 200; `/learn/07-meta-ads` and `/learn/22-shopify-store-setup` 308 to `08-meta-ads` and `13-shopify-store-setup`; `/learn/07-meta-ads/cards/7.14` 308 to `/learn/08-meta-ads/cards/8.1`; `/learn/07-meta-ads#lesson-714-find-your-way-around-ads-manager` lands on Lesson 8.1 in a browser.
+**Checks (26 Oct 2026):** `npm ci` ok; `next typegen` ok; `tsc` clean; `npm run lint` 0 errors (same 5 old warnings); `npm test` 51 files, 370 passed and 1 skipped (after merging the daily-email PR from main); `npm run build` ok; `check_links.py` ok; all 29 card JSON files parse. Local production build: `/`, `/learn` (Start here, Attract, Convert, Grow), modules 1, 8, 9, 11, 13, 16, 22 and 30, new card decks 11.8 and 9.3 all 200; `/learn/07-meta-ads` and `/learn/22-shopify-store-setup` 308 to `08-meta-ads` and `13-shopify-store-setup`; `/learn/07-meta-ads/cards/7.14` 308 to `/learn/08-meta-ads/cards/8.1`; `/learn/07-meta-ads#lesson-714-find-your-way-around-ads-manager` lands on Lesson 8.1 in a browser.
 
 ## Website brand sweep and Helix example names (20 Oct 2026)
 
