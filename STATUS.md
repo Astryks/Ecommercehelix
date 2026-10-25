@@ -53,6 +53,8 @@ _Last updated: 20 Oct 2026 (Sydney)._
 
 Owner asks: same no-third-party-brand rule on the website and app as the course; made-up example brands get a Helix name; non-profits named only as a source come out unless they set the rule or are a safety resource.
 
+**Branding rule (updated 26 Oct 2026):** third-party brands may be named only as founder success-story examples, and only these five, in the daily founder-story emails (`src/lib/email/sequence.ts`): Spanx (Sara Blakely), Nike (Phil Knight, Bill Bowerman, Blue Ribbon Sports as part of Nike's story), Gymshark (Ben Francis), Glossier (Emily Weiss, Into The Gloss) and Patagonia (Yvon Chouinard). The other three stories stay generic. Everything else below still applies.
+
 **Third-party names removed or made generic**
 - Daily founder-story emails (`src/lib/email/sequence.ts`): the 8 stories no longer name brands or people (Spanx/Sara Blakely, Nike/Phil Knight/Bill Bowerman/Blue Ribbon Sports, Gymshark/Ben Francis/Pizza Hut, Under Armour/Kevin Plank, Warby Parker, Bombas/David Heath/Randy Goldberg, Glossier/Emily Weiss/Into The Gloss, Patagonia/Yvon Chouinard). Same facts, now "one founder", "a gym clothing brand" etc.; subjects, previews and titles stay unique. Sources stay in `docs/email-sequence-sources.md` (internal).
 - Trends feed (`src/lib/seed/trends.ts`): news-site sources Storyboard18, Adgully and ChannelX replaced by official pages (Meta for Developers: partnership ads; Meta for Developers: product videos in catalog ads; TikTok Ads help: automated keywords for search ads). Unverified figures (19% / 13%) and the in-app checkout claim dropped. `docs/product-design.md` table matched (also dropped thekeyword.co and enrichlabs.ai).
