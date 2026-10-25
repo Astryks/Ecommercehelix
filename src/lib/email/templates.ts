@@ -4,6 +4,7 @@
  */
 import { postalAddress } from "./postal";
 import { SEQUENCE, lessonPath } from "./sequence";
+import type { DailyMix } from "./daily-mix";
 
 export type Email = { subject: string; html: string; text: string; marketing: boolean; kind: string };
 /** postalAddress: footer address for marketing emails; defaults to BUSINESS_POSTAL_ADDRESS (null shows none). */
@@ -59,6 +60,14 @@ export function dailyTasksEmail(c: Ctx, tasks: { title: string; minutes: number 
   const total = tasks.reduce((a, t) => a + t.minutes, 0);
   return layout(c, { kind: "daily", marketing: true, subject: `Today in Helix: ${tasks.length} small steps (${total} min)`, preheader: tasks[0]?.title ?? "Your steps for today", title: `Your steps for ${dateLabel}`,
     paras: ["Here is your list for today. Do them in order. Small steps add up."], list: tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: "Start today's steps", href: `${c.baseUrl}/dashboard` } });
+}
+
+/** The daily email, built by composeDaily (daily-mix.ts): a varied subject and opener, the user's goal and numbers when known, four steps, one idea and a button to the next lesson. */
+export function dailyEmail(c: Ctx, m: DailyMix): Email {
+  const href = m.button.href.startsWith("http") ? m.button.href : `${c.baseUrl}${m.button.href}`;
+  return layout(c, { kind: "daily", marketing: true, subject: m.subject, preheader: m.preheader, title: m.title,
+    paras: [m.opener, ...(m.goalLine ? [m.goalLine] : []), ...(m.numbersLine ? [m.numbersLine] : []), `Today's steps (about ${m.minutes} min):`],
+    list: m.tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: m.button.label, href }, after: [m.idea] });
 }
 
 export function eventEmail(c: Ctx, e: { name: string; daysTo: number; line: string; lesson: { label: string; href: string } }): Email {
