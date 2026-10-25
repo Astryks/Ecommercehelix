@@ -303,7 +303,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 
 1. In Settings, open Shipping and delivery and set up your home country.
 2. Add a Standard and an Express rate from your real carrier costs.
-3. Set free shipping over an amount about 1.2 to 1.4 times your average order (a common rule of thumb).
+3. Set free shipping over an amount about 20 to 30% above your average order (a common rule of thumb).
 4. Show delivery as a range, such as '3 to 6 business days', on the product page.
 
 **Want me to do it for you?** Not for this one. It is quick to do yourself and you learn the most by doing it.

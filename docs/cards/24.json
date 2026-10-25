@@ -6,7 +6,7 @@
   {"say": "Add hidden costs: currency conversion when you withdraw, fixed per-order fees on small orders, and fees kept on refunds.", "check": "Your fee rates include everything.", "lost": "Add the currency fee if you have one."},
   {"say": "Enter your blended fee rate (all fees ÷ all sales) in Helix as payment fees.", "check": "Helix profit uses your real fees.", "lost": "Enter one fee rate in Helix."},
   {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Outside the US: buy now pay later often lifts order value, but its fee is often several times a card fee. US: Shop Pay Installments has its own fee, set per store. Compare it with your margin before pushing it.", "lost": "Remove one rarely used, pricey method."},
-  {"say": "Check each provider's fee page once a year.", "check": "Fee rises never surprise you.", "lost": "Put a yearly reminder in your calendar."}
+  {"say": "Check each provider's fee page once a year.", "check": "Fee rises never surprise you.", "careful": "Australia: since 1 October 2026 you can't add a surcharge for paying by card. Build payment fees into your prices, and ask your provider if your rate has dropped.", "lost": "Put a yearly reminder in your calendar."}
  ]},
 "24.2": {"intro": "A payment provider can hold some of your money if it sees risk. A hold in the busy season could stop you paying suppliers.",
  "steps": [

@@ -21,7 +21,7 @@
 ## Steps
 
 1. Pull AOV distribution: what share of orders are single-item? What is the median?
-2. Set the first tier about 20 to 30% above current AOV (about 1.25 times AOV, as in Lesson 9.11). Check it sits above the median order too.
+2. Set the first tier about 20 to 30% above current AOV (1.2 to 1.3 times AOV, as in Lesson 9.11). Check it sits above the median order too.
 3. Check margin at each tier with the unit economics (SOP 02).
 4. Launch one change at a time and watch AOV, conversion rate and RPV for 2 weeks.
 5. Review tiers quarterly or when prices change.

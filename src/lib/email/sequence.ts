@@ -120,8 +120,8 @@ export const SEQUENCE: SequenceEmail[] = [
   },
   {
     kind: "lesson", subject: "Where should free shipping start?", preview: "A simple rule of thumb you can set today.", title: "Set your free shipping amount",
-    paras: ["About 7 in 10 online carts get left behind. Surprise costs, like shipping, are the top reason.", "A free shipping amount helps. Shoppers often add one more item to reach it.", "A common rule of thumb: take your average order value and multiply it by 1.25. That is your free shipping amount."],
-    action: "Find your average order value and multiply it by 1.25.",
+    paras: ["About 7 in 10 online carts get left behind. Surprise costs, like shipping, are the top reason.", "A free shipping amount helps. Shoppers often add one more item to reach it.", "A common rule of thumb: set it about 20 to 30% above your average order value. That is your free shipping amount."],
+    action: "Find your average order value and add 20 to 30%.",
     lesson: { slug: "09-website-and-cro", heading: "Lesson 9.11: Shipping psychology", label: "Set free shipping the smart way" },
   },
   {

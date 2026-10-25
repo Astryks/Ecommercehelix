@@ -297,7 +297,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 **How to do it.**
 
 1. Find your AOV (average order value) on Your numbers.
-2. Multiply it by 1.25. Round to a simple number. That is your free shipping amount.
+2. Multiply it by 1.2 to 1.3 (about 20 to 30% more). Round to a simple number. That is your free shipping amount.
 3. Show it in the bar at the top of your store and in the cart.
 4. Check you still make a profit on an order of that size.
 

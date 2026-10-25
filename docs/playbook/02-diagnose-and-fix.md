@@ -92,7 +92,7 @@
 
 **Watch out:** Boxes that fit the product better often save more than a new carrier. Many carriers charge by size as well as weight.
 
-**Step 3.** Set free shipping at about 20% above your average order value, a common starting point. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
+**Step 3.** Set free shipping about 20 to 30% above your average order value, a common rule of thumb. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
 
 **Expected result:** New orders either pay for shipping or grow to qualify for free shipping.
 

@@ -276,7 +276,7 @@
 
 **Expected result:** Checkout shows two clear options.
 
-**Step 3.** A common rule of thumb is to set free shipping at 1.2 to 1.4 times your average order. Show it in the promo bar and near Add to cart ("Free shipping over $X").
+**Step 3.** A common rule of thumb is to set free shipping about 20 to 30% above your average order (1.2 to 1.3 times). Show it in the promo bar and near Add to cart ("Free shipping over $X").
 
 **Expected result:** Shoppers see how close they are to free shipping.
 
@@ -353,6 +353,8 @@
 **Step 4.** Set your payout bank account and a statement name that matches your brand.
 
 **Expected result:** Customers recognise the charge on their bank statement.
+
+**Watch out:** Australia: since 1 October 2026 you cannot add a surcharge for paying by card (Visa, Mastercard, eftpos, American Express or PayPal). Do not add a card fee at checkout; include payment costs in your prices (see [RBA: card payment costs and surcharging FAQs](https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/)).
 
 ### Good to know
 

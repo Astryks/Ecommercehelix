@@ -91,7 +91,7 @@ These combine site and ad signals to find the real cause. They mirror [Playbook 
 | `views-no-clicks` | ThruPlays high, outbound CTR < 0.5% | Missing or weak CTA | Clear CTA and offer in ad | Do it for me: draft new CTAs |
 | `mer-drift` | Platform ROAS stable, MER up ≥ 3 points over 14 days | Over-attribution, retargeting taking credit | Shift budget to cold, check new customer share | Show me how: Lesson 20.9 |
 | `mobile-gap` | Mobile CR < 50% of desktop CR | Mobile UX | Mobile speed, sticky add to cart, simplify | Do it for me: draft fixes |
-| `aov-levers` | AOV flat, no bundle or threshold detected | Missing AOV levers | Free shipping threshold at about 1.3x AOV, bundles, gift | Do it for me: set threshold message (approval) |
+| `aov-levers` | AOV flat, no bundle or threshold detected | Missing AOV levers | Free shipping threshold about 20 to 30% above AOV, bundles, gift | Do it for me: set threshold message (approval) |
 | `google-brand-share` | Brand search > 40% of Google spend | Non-brand under-invested or brand overpaying | Feed titles, PMax with brand exclusion | Do it for me: feed title rewrite |
 | `search-term-waste` | Search terms with spend ≥ 1x target CPA and 0 conversions | Wasted spend | Add negatives | Do it for me: add negatives (approval) |
 | `email-gap` | Email revenue share < 15% of total, or a core flow missing | Retention gap | Turn on missing flows | Do it for me: draft the flow |

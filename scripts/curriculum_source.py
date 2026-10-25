@@ -99,7 +99,7 @@ D = [
  (11, "Shipping", "Set a free shipping amount that makes orders bigger",
   "If free shipping starts a little above your usual order, many people add one more item to reach it.",
   ["Find your AOV (average order value) on Your numbers.",
-   "Multiply it by 1.25. Round to a simple number. That is your free shipping amount.",
+   "Multiply it by 1.2 to 1.3 (about 20 to 30% more). Round to a simple number. That is your free shipping amount.",
    "Show it in the bar at the top of your store and in the cart.",
    "Check you still make a profit on an order of that size."],
   15, "site", "9.11", "12", ("growth", "Write the free shipping message for you to add"), "AOV (average order value)"),

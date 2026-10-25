@@ -63,14 +63,14 @@
  ]},
 "9.10": {"intro": "AOV is average order value: sales divided by orders. Bigger orders make every visitor worth more, as long as just as many people still buy.",
  "steps": [
-  {"say": "Set reward levels in the cart: free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.", "check": "The cart shows shoppers what they unlock next.", "lost": "Set just the free shipping amount first."},
+  {"say": "Set reward levels in the cart: free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.", "check": "The cart shows shoppers what they unlock next.", "careful": "Pick a gift people value and would happily buy, like a full-size product. A gift that looks like a sample feels cheap.", "lost": "Set just the free shipping amount first."},
   {"say": "Add a bundle, or a bundle builder (customers pick items for a set price).", "check": "At least one bundle is live on your best seller's page.", "lost": "Make one bundle with your best seller."},
   {"say": "Add \"goes well with\" ideas in the cart, and a one-click offer on the thank-you page after they pay.", "check": "Shoppers see one useful extra before and after paying.", "lost": "Add one \"goes well with\" item in the cart."},
   {"say": "Add \"buy 3, save 15%\" deals. For things people use up, add subscriptions with an easy skip.", "check": "Repeat and bulk buyers have a reason to buy more.", "careful": "Judge every idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.", "lost": "Add one \"buy 3, save 15%\" deal."}
  ]},
 "9.11": {"intro": "A widely quoted rule of thumb: about 7 in 10 online carts are left behind. Surprise extra costs like shipping are a common reason. A smart free shipping amount makes many add one more thing.",
  "steps": [
-  {"say": "Set your free shipping amount.\n\n1. In Shopify **Analytics**, find your average order value (AOV).\n2. Multiply it by 1.25. Example: $60 × 1.25 = $75.\n3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.", "check": "A free shipping rate shows at your amount.", "lost": "Take your AOV. Times it by 1.25. That's your free shipping amount."},
+  {"say": "Set your free shipping amount.\n\n1. In Shopify **Analytics**, find your average order value (AOV).\n2. Multiply it by 1.2 to 1.3 (about 20 to 30% more). Example: $60 average, so $72 to $78. Round to $75.\n3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.", "check": "A free shipping rate shows at your amount.", "lost": "Take your AOV. Add 20 to 30%. That's your free shipping amount."},
   {"say": "Show delivery estimates on the product page and in the cart.", "check": "Shoppers know when it will arrive before checkout.", "lost": "Add a delivery estimate to one product page."},
   {"say": "Add express shipping as a paid upgrade.", "check": "Shoppers in a hurry can pay to get it faster.", "lost": "Add one paid express option."},
   {"say": "Show shipping costs before checkout, in the cart or on the product page.", "check": "No one meets a surprise cost at checkout.", "lost": "Show the shipping cost in the cart."}

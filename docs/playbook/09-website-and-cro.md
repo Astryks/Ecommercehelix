@@ -18,7 +18,7 @@
 >
 > 1. Make the top of each product page clear: what it is, price, reviews, add to cart.
 > 2. Remove anything that slows checkout and turn on express payment buttons.
-> 3. Set a free shipping amount a bit above your average order (about 1.25 times).
+> 3. Set a free shipping amount about 20 to 30% above your average order (1.2 to 1.3 times).
 >
 > **Words to know:**
 >
@@ -265,8 +265,8 @@
 
 Free-gift tiers:
 
-- Set the first gift level about 25 to 35% above your current order value. If orders average $60, try a gift at $80.
-- Pick a gift that costs you under about 10% of that level (under $8 at $80) but looks worth much more. A sample of something you want people to try next works well.
+- Set the first gift level above your free shipping amount. If orders average $60 and free shipping starts at $75, try a gift at $90.
+- Pick a gift people value and would happily buy, like a full-size product or a useful add-on, not something that looks like a sample or a leftover. Keep its cost to you under about 10% of that level (under $9 at $90).
 - Add a second, bigger gift at a higher level, for example $120.
 - Shopify's **Buy X get Y** discount never puts the gift in the cart by itself. The shopper has to add it, or you use a free-gift app (see [Shopify: Buy X get Y](https://help.shopify.com/en/manual/discounts/discount-types/buy-x-get-y)).
 - Order enough gift stock before the offer starts.
@@ -279,7 +279,7 @@ Free-gift tiers:
 **Step 1.** Set your free shipping amount.
 
 1. In Shopify **Analytics**, find your average order value (AOV).
-2. Multiply it by 1.25. That's your free shipping amount (a common rule of thumb).
+2. Multiply it by 1.2 to 1.3 (about 20 to 30% more) and round to a simple number. That's your free shipping amount (a common rule of thumb).
 3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.
 
 **Expected result:** A free shipping rate appears at your chosen amount.
@@ -511,7 +511,7 @@ Free-gift tiers:
 <details><summary>Answers</summary>
 
 1. Sessions, then add to cart, then reached checkout, then purchase.
-2. A bit above your average order value (AOV), about 1.25 times as a rule of thumb.
+2. About 20 to 30% above your average order value (AOV), so 1.2 to 1.3 times, as a rule of thumb.
 3. Any three of: a free gift, bundles, early access for best customers, loyalty rewards.
 4. Confirm the drop is real in Shopify orders and tracking, then test checkout and payments. Then check recent changes, stock, prices and traffic sources.
 </details>

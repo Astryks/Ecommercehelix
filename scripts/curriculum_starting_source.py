@@ -120,7 +120,7 @@ D = [
   "Surprise shipping costs are one of the top reasons people leave at checkout. Clear rates and a free-shipping amount fix that and lift order size.",
   ["In Settings, open Shipping and delivery and set up your home country.",
    "Add a Standard and an Express rate from your real carrier costs.",
-   "Set free shipping over an amount about 1.2 to 1.4 times your average order (a common rule of thumb).",
+   "Set free shipping over an amount about 20 to 30% above your average order (a common rule of thumb).",
    "Show delivery as a range, such as '3 to 6 business days', on the product page."],
   15, "site", "22.9", "11", None, "Conversion rate"),
  (16, "Taxes and payments", "Check your tax settings and turn on payments",

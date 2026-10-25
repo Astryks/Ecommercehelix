@@ -62,7 +62,7 @@
  "steps": [
   {"say": "In **Settings > Shipping and delivery**, make a zone for your home country.", "check": "A home country zone exists.", "lost": "Add your home country zone."},
   {"say": "Add Standard and Express rates priced from real carrier costs, or use calculated rates.", "check": "Checkout shows two clear options.", "lost": "Add a Standard rate."},
-  {"say": "A common rule of thumb: set a free shipping amount 1.2 to 1.4 times your average order. Example: $50 average, so $60 to $70. Show it in the promo bar and near Add to cart (\"Free shipping over $X\").", "check": "Shoppers see how close they are to free shipping.", "lost": "Average order × 1.3 = free shipping amount."},
+  {"say": "A common rule of thumb: set a free shipping amount about 20 to 30% above your average order. Example: $50 average, so $60 to $65. Show it in the promo bar and near Add to cart (\"Free shipping over $X\").", "check": "Shoppers see how close they are to free shipping.", "lost": "Average order × 1.2 to 1.3 = free shipping amount."},
   {"say": "Write delivery times as a range (\"arrives in 3 to 6 business days\").", "check": "Checkout shows a clear price and delivery range.", "careful": "Outside the US: compare the national post and couriers, and set a separate remote area rate if needed. US: compare the carriers offered in Shopify Shipping. Add overseas zones only once home works.", "lost": "Write \"3 to 6 business days\"."}
  ]},
 "22.10": {"intro": "Tax set up wrong costs money or breaks the law. Under the ATO's rules, you must register for GST once turnover reaches $75,000 a year. Other countries set their own limits. US: sales tax depends on nexus (a strong enough link to a state). Helix takes GST out of your sales before any profit maths.",
@@ -78,7 +78,7 @@
   {"say": "In **Settings > Payments**, turn on Shopify Payments if it's available in your country.", "check": "Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).", "lost": "Turn on Shopify Payments."},
   {"say": "Turn on Shop Pay and the phone wallets Shopify offers. Add a popular online wallet as an extra option.", "check": "Checkout shows express wallet buttons.", "lost": "Turn on Shop Pay."},
   {"say": "Think about one buy now pay later option. Several providers work in many countries. Shop Pay Installments works in the US, Canada and the UK.", "check": "Shoppers can pay in parts. Check the fee, which is higher than a card fee.", "lost": "Check the fee before you turn it on."},
-  {"say": "Set your payout bank account, and a statement name that matches your brand.", "check": "Customers recognise the charge on their bank statement.", "lost": "Set the statement name to your brand."}
+  {"say": "Set your payout bank account, and a statement name that matches your brand.", "check": "Customers recognise the charge on their bank statement.", "careful": "Australia: since 1 October 2026 you can't add a card surcharge at checkout. Include payment costs in your prices.", "lost": "Set the statement name to your brand."}
  ]},
 "22.12": {"intro": "Clear policies build trust and keep you within the law. Write them so a 12-year-old could follow them.",
  "steps": [

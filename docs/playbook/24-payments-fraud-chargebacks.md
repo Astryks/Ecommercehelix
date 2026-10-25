@@ -66,6 +66,8 @@
 
 **Expected result:** Fee rises never surprise you.
 
+**Watch out:** Australia: since 1 October 2026 you cannot add a card surcharge to Visa, Mastercard or eftpos payments (debit, credit or prepaid), and American Express, UnionPay and PayPal have dropped surcharging too. The Reserve Bank also lowered the caps on the fees banks charge behind each card payment (interchange) on the same date. Build your payment fees into your prices instead, and ask your provider whether your rate has come down (see [RBA: card payment costs and surcharging FAQs](https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/)).
+
 ## Lesson 24.2: Holds, reserves and frozen payouts
 <!-- stage:grow -->
 

@@ -113,7 +113,7 @@
 
 **Expected result:** Every offer level still makes money.
 
-**Watch out:** A "was" or strike-through price must be one you really charged for a reasonable time just before the sale. Fake "was" prices break the law in Australia and the US (see [ACCC: two-price advertising](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising) and [FTC: deceptive pricing guides](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-233)). In the EU, the "was" price must be your lowest price in the 30 days before the sale.
+**Watch out:** A "was" or strike-through price must be one you really charged for a reasonable time just before the sale. Fake "was" prices break the law in Australia and the US (see [ACCC: two-price advertising](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising) and [FTC: deceptive pricing guides](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-233)). In the EU, the "was" price must be your lowest price in the 30 days before the sale, counting any earlier sale prices in those 30 days (see [EUR-Lex: guidance on Article 6a of the Price Indication Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=oj:JOC_2021_526_R_0002)).
 
 **Step 3.** Pick a theme: a name, a look and a message that stand out from competitors.
 
