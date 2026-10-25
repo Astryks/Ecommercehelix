@@ -1,25 +1,15 @@
-# ▶ NEXT STEPS (updated 26 Oct 2026) — start here
+# ▶ NEXT STEPS (updated 26 Oct 2026, evening) — start here
 
-**1. Approved work: done 26 Oct 2026** (see "Course reorder, SEO basics, Meta audience check, corrections" below):
-- Done: new lesson SEO basics (now 11.8, before SEO step by step) and Meta audience check (now 9.3, next to Setting up target audiences).
-- Done: five founder-story emails name their brands again (Spanx, Nike, Gymshark, Glossier, Patagonia); branding rule updated.
-- Done: whole course reordered Start here → Attract → Convert → Grow and renumbered; old refs, links and saved progress keep working.
+**Latest (26 Oct 2026):** Learn path videos now come from official channels only, and two new compliance lessons are live: 21.8 Product safety, labelling and recalls, and 13.17 Privacy and cookie consent (see "Official videos and two compliance lessons" below). Earlier the same day: course reorder (Start here → Attract → Convert → Grow), SEO basics (11.8), Meta audience check (9.3), founder-story emails and corrections.
 
-**2. Corrections: done 26 Oct 2026:** Australian card surcharge ban and lower interchange caps (RBA verified), one free-shipping rule of thumb (about 20 to 30% above AOV), 9.10 free gift (now 14.9), EU 14-day withdrawal plus withdrawal function (verified on europa.eu / EUR-Lex) and the 30-day "was" price rule.
+**Needs Sid:** the numbered list under "Needs Sid" below (Stripe test purchase, TikTok, Meta app review and Save choice, Google Ads token, GitHub Support, lesson videos, Facebook group, wins moderators, Search Console, Resend usage, re-rendered social images).
 
-**3. Optional new lessons from the gap research (Sid to choose; full reports on Sid's Mac in `~/Desktop/Helix research/gaps-2026-10-20/`, kept out of the repo like other research: P = public sources, T1 website/offer, T2 Meta/creative, T3 email/promotions/sales, T4 Google/SEO/Pinterest/TikTok/strategy, T5 transferable coaching-course ideas):**
-- High: product safety, labelling and recalls (AU 2-day rule, EU GPSR); privacy and cookie consent (AU reforms, Google consent signals, UK analytics change); Google AI Max readiness; creative variety (near-identical ads count as one); incremental attribution for warm campaigns; bot traffic check; change freeze and theme backup before peak; a customer's first 100 days; day-by-day sale send plan; hype phase and December after the shipping cut-off.
-- Medium: freebies instead of discount sign-ups; subscription law (ROSCA, California, UK/AU 2027); drip pricing; delivery updates; bold guarantees priced safely; pre-order timing; core range + drops; landed cost; instant-win and purchase-linked prize maths; gift thresholds; competitors on your brand name; brand-only Shopping; local inventory ads; tROAS from margin; Google budget planner; Pinterest structure and its 30-day attribution; delegation levels; splitting each payout; scorecard colours + monthly project review; trademarks; insurance; European Accessibility Act.
-- Do NOT adopt from transcripts: extending a sale after "last chance", "leaked" codes, prize draws with no free entry, charging more for instalments, emailing scraped addresses.
+**Still unverified:** Click Frenzy 2026 date; Meta creator marketplace possibly renamed "Creator Marketing Hub"; add the second Ramadan of 2030 when creating a 2031 lunar entry.
 
-**4. Owner decisions:**
-- Learn-path videos from creator/agency channels (Common Thread Collective, ThrillX, Dara Denney, Ben Heath, Define Digital Academy, Commerce Roundtable, ethercycle): keep, or replace with official channels only?
-- `#klaviyo` in two social captions (v2 welcome-email post, v3 email-segmentation post): change or keep.
-- `BUSINESS_POSTAL_ADDRESS` left unset by choice (CAN-SPAM risk for US recipients; options: PO box, or turn off / non-US-only marketing emails).
-- Email cost: Resend free plan covers ~90-100 active users (100/day cap); Pro US$20/month after that. Check usage in Resend.
-- Unverified: Click Frenzy 2026 date; Meta creator marketplace possibly renamed "Creator Marketing Hub"; add the second Ramadan of 2030 when creating a 2031 lunar entry.
-- Re-rendered social images: swap v2 #47 and v3 25, 29, 33, 48, 49 if already booked.
-- Done 26 Oct: stale branch `site-brands` deleted.
+**Ideas for later** (optional lessons from the gap research; Sid to choose. Full reports on Sid's Mac in `~/Desktop/Helix research/gaps-2026-10-20/`, kept out of the repo):
+- Higher value: Google AI Max readiness; creative variety (near-identical ads count as one); incremental attribution for warm campaigns; bot traffic check; change freeze and theme backup before peak; a customer's first 100 days; day-by-day sale send plan; hype phase and December after the shipping cut-off.
+- Also: freebies instead of discount sign-ups; subscription law (ROSCA, California, UK/AU 2027); drip pricing; delivery updates; bold guarantees priced safely; pre-order timing; core range + drops; landed cost; instant-win and purchase-linked prize maths; gift thresholds; competitors on your brand name; brand-only Shopping; local inventory ads; tROAS from margin; Google budget planner; Pinterest structure and its 30-day attribution; delegation levels; splitting each payout; scorecard colours + monthly project review; trademarks; insurance; European Accessibility Act.
+- Do not adopt: extending a sale after "last chance", "leaked" codes, prize draws with no free entry, charging more for instalments, emailing scraped addresses.
 
 ## Daily emails: different every day (26 Oct 2026)
 
@@ -32,7 +22,7 @@ Sid: "the daily emails are the same". The daily email is now built fresh per use
 
 # STATUS
 
-_Last updated: 26 Oct 2026 (Sydney)._
+_Last updated: 26 Oct 2026, evening (Sydney)._
 
 ## Needs Sid (only these are left)
 
@@ -46,10 +36,37 @@ _Last updated: 26 Oct 2026 (Sydney)._
 8. **Closed Facebook group for paying members:** set `FB_GROUP_URL` in Vercel (send the group link). After that, join emails go out automatically and the daily digest plus `/admin/community` list who to approve or remove (Facebook has no API, so the final tap is by hand). Also set `AUTH_SECRET` and `CRON_SECRET` if missing.
 9. **Wins wall moderators:** set `WINS_MODERATORS` (comma-separated emails) in Vercel so wins can be approved.
 10. **Search Console and Bing:** submit `https://ecommercehelix.com/sitemap.xml` (verification tag is already in the site).
-11. **Postal address for marketing emails (optional, owner decided 19 Oct not to add one for now):** `BUSINESS_POSTAL_ADDRESS` is unset, so marketing emails (daily steps, event reminders, weekly scorecard, alerts, win-back) go out with no address. CAN-SPAM asks for one on commercial email to US recipients (a PO box or virtual mailbox counts). If that changes: set it in Vercel Production and redeploy, or turn marketing emails off / non-US only. Whether the daily steps email counts as part of the service rather than marketing is a legal question, not assumed here.
-11a. **Email cost (Resend, checked 19 Oct 2026, resend.com/pricing):** Free = 3,000 a month and max 100 a day; Pro = US$20 a month for 50,000, no daily limit, US$0.90 per extra 1,000. About one email per user per day, so the free plan stops covering it at roughly 90-100 active users (sends over 100 a day fail). Check usage in the Resend dashboard.
-11b. **Content check (done 19 Oct):** the 6.12 past-buyer cap tip is gone; the cap now has one wording everywhere (see the second fact-check section below).
+11. **Email cost (Resend, checked 19 Oct 2026, resend.com/pricing):** Free = 3,000 a month and max 100 a day; Pro = US$20 a month for 50,000, no daily limit, US$0.90 per extra 1,000. About one email per user per day, so the free plan stops covering it at roughly 90-100 active users (sends over 100 a day fail). Check usage in the Resend dashboard.
 12. **Replace re-rendered social images on Meta if those posts are already booked** (Instagram and Facebook). v2 post 47 (planned 29 Nov; the routine books it at the end of November): `docs/social/v2/static/post47-rest.png`. Check its real date on Meta. "Especially during BFCM" is right from 27 to 30 Nov; if it lands on 1 Dec or later, tell me. v3-25, 29, 33, 48 and 49 (planned 27 Dec, 31 Dec, 4 Jan, 19 Jan and 20 Jan) if Product's routine has already booked them. v3-48 and v3-49 are MP4s, and the v3-48 caption changed too (`docs/social/v3/manifest.csv`). v2 post 4 needs nothing (see the correction below).
+
+## Official videos and two compliance lessons (26 Oct 2026, evening)
+
+Branch `cleanup-oct27`.
+
+**Learn path videos: official channels only** (`src/lib/learn-path.json`; each checked with YouTube oEmbed for title and channel, and embeddable):
+
+| Step | Was (channel) | Now (channel, id) |
+| --- | --- | --- |
+| Start here | Common Thread Collective | PRICING STRATEGY: How To Find The Ideal Price For A Product (Learn With Shopify, xQWUm_eHjGk) |
+| Store ready | Arsh Sanwarwala, ThrillX | How to Optimize Your Shopify Store for Higher Conversions (Learn With Shopify, kFWPkoOx_ao) |
+| Plan ads | Dara Denney | Unlock better performance by diversifying your ad creative (Meta for Business, NGIKjtQTcLM) |
+| Plan ads | Dara Denney | Hook hacking: How to grab attention in the first three seconds (Meta for Business, OHX1ctQn6NY) |
+| First ad | Ben Heath | The COMPLETE Meta Tutorial (Learn With Shopify, OE4WimLYVGE) |
+| First ad | Aaron Young, Define Digital Academy | Google Ads: How to use Shopping ads to reach more customers (Google Ads, mCj40f2QmHI) |
+| Read results | Ben Heath | Solving creative fatigue with strategies to refresh your ads (Meta for Business, -vZEjTgEX-0) |
+| Read results | Commerce Roundtable | Ecommerce Marketing Analytics: A Beginner's Guide to Data-Driven Success (Learn With Shopify, hXHym9wDnNo) |
+| Grow | ethercycle | How to prepare your Google Ads retail campaigns for holiday shopping (Google Ads, K-hcfC7rrVo) |
+
+The 3 existing Learn With Shopify videos stay (RWI59fC7Z48, KMrTD8KIB18, vNIcSMLyutc).
+
+**New lessons (Helix's own words, official sources only, general information not legal advice)**
+- **21.8 Product safety, labelling and recalls** (Grow, end of Fulfilment, shipping and returns; learn path after 21.7): Australian mandatory standards and bans (button and coin battery warnings), supplier proof, labels and listings, EU GPSR listing details and EU responsible person (applies since 13 Dec 2024), US CPSC certificates (Children's Product Certificate, eFiling since 8 Jul 2026), incident plan, recalls. Deadlines table: ACCC mandatory report within 2 days, recall notice within 2 days of recall action, EU accident notice without undue delay, CPSC report within 24 hours. Sources: productsafety.gov.au (when you must report, recall notification, button battery information standard, mandatory standards search), accc.gov.au (product safety responsibilities), EUR-Lex Regulation (EU) 2023/988 (Articles 9, 16, 19, 20, 52), cpsc.gov (duty to report, Children's Product Certificate).
+- **13.17 Privacy and cookie consent** (Convert, end of Shopify store setup; learn path right after 13.12 Policies, which it links to): data list, who the Privacy Act covers (over $3M turnover, plus some smaller businesses), privacy policy update incl. automated-decision wording from 10 Dec 2026, Shopify cookie banner (Settings > Customer privacy), EU/UK consent for non-essential cookies, UK "statistical purposes" exception for site analytics, Google consent mode and the EU user consent policy, yearly review. Sources: oaic.gov.au (small business, ADM transparency news 30 Sep 2026), ico.org.uk (storage and access exceptions), europa.eu Your Europe (cookies), support.google.com (consent mode, EEA consent mode updates), help.shopify.com (customer privacy settings). 13.12 and the 13.15 pre-launch table now point to 13.17.
+- Both: card decks, a self-check (new Self-check sections in modules 13 and 21), stage tags, learn path places. Permanent ids for saved progress: 22.19 → 13.17 and 23.8 → 21.8 (`lesson-aliases.json`; old saved 21.8 still reads as 4.6, tested). New glossary words: Cookie banner, Consent mode, Mandatory standard, Product recall, EU responsible person. Regenerated: glossary, curricula (unchanged), stages.md.
+
+**Checks (26 Oct 2026, evening):** `npm ci` ok; `next typegen` ok; `tsc` clean; `npm run lint` 0 errors (same 5 old warnings); `npm test` 51 files, 370 passed and 1 skipped (lesson-refs, alias and learn-path tests included); `npm run build` ok; `check_links.py` ok; all 29 card JSON files parse.
+
+**STATUS cleanup:** `#klaviyo` captions are fine (owner, 26 Oct), no postal address will be added (owner), learn path channel question resolved, branch deletion note removed; optional gap-research lessons kept as "Ideas for later" at the top.
 
 ## Course reorder, SEO basics, Meta audience check, corrections (26 Oct 2026)
 
@@ -141,10 +158,6 @@ Owner asks: same no-third-party-brand rule on the website and app as the course;
 - Guide drawings (hand-edited SVG text, `build_guides.py` source updated but not re-run): "Ad account: Your Store", "Your Brand", "Your Brand Ads", "Your Brand Pixel", "My store pixel", "My store products", "Your Facebook Page · Your Instagram", "https://yourstore.com", "YOURBRAND" -> Helix Linen equivalents (helixlinen.example, @helixlinen, HELIX LINEN).
 - Not renamed: instruction placeholders "hello@yourbrand.com" and "[Brand]" in flow templates (they tell the owner to use their own brand), test fixtures ("Linen Co" in `tests/site-audit.test.ts`), people's names, places, generic products. No PNG images carried a made-up brand.
 
-**Owner items**
-- Learn path channels are creators or agencies, not official platform channels: Common Thread Collective, Arsh Sanwarwala | ThrillX, Dara Denney (2 videos), Ben Heath (2 videos), Aaron Young | Google Ads | Define Digital Academy, Commerce Roundtable, ethercycle. Official: Learn With Shopify (3 videos). Decide whether to keep, replace with official channels, or hide the channel name.
-- Social captions (not edited): `#klaviyo` in v2 `schedule.csv`/`schedule.md` and v3 `manifest.csv`/`src/data.py` (as before). No made-up brand names found in `docs/social`.
-
 **Checks:** `npm test` 49 files, 350 tests passed; `tsc` clean; `npm run lint` 0 errors (5 old warnings); `npm run build` ok; `check_links.py` ok; card JSON and guide SVGs parse.
 
 ## Second fact-check and no-third-party-branding pass (19 Oct 2026)
@@ -172,11 +185,9 @@ Owner asks: fact check everything, keep the past-customer cap consistent, and no
 **Could not verify:** Shopify does not document gross sales for tax-inclusive stores in words (the fix relies on the "before taxes" definition and the Total sales formula); Click Frenzy 2026 date; whether Meta's creator marketplace is now called "Creator Marketing Hub"; three news-site trend sources (not official pages).
 
 **Owner items**
-- Social captions (owner-managed, not edited): `#klaviyo` in v2 `schedule.csv`/`schedule.md` (welcome email post) and v3 `manifest.csv`/`src/data.py` (email segmentation post). Remove before posting if not already booked.
 - Calendar: when adding a 2031 lunar entry, Ramadan has a second start in 2030 (about late December), so add the second date then.
 - Click Frenzy date unverified; check the official site before the November nudge.
 - Meta creator marketplace may have been renamed "Creator Marketing Hub"; check Meta Business Help before relying on the old name.
-- Learn path: remaining videos come from creators and agencies; see the channel list in the 20 Oct brand sweep section.
 
 ## Audit follow-ups fixed (17 Oct 2026, Sydney)
 
@@ -193,7 +204,7 @@ The follow-ups listed under "Needs Sid (from this audit)" below, fixed on the sa
   - v3-48 posts 19 Jan 2027 (v3 starts 3 Dec, one a day), so "January is closer than it looks" with a 1 Jan tile was out of date. Now "February is closer than it looks", "Plan February now", tile FEB 1 Mon (1 Feb 2027 is a Monday), list and caption updated. Alternative: move it to early December and restore the January text.
   - Contact sheets updated with the new thumbnails.
 - **AI no-training is now enforced, and the promise says exactly what is true.** Helix calls Gemini 2.5 Flash-Lite through the Vercel AI Gateway (not an AI Studio key and not a direct Vertex project). Every call now sets `providerOptions.gateway.disallowPromptTraining: true` (`gatewayOptions` in `src/lib/ai/config.ts`): the gateway only routes to providers that do not train on prompts and fails the call otherwise (Helix then shows its standard advice). It is free on all gateway plans (https://vercel.com/docs/ai-gateway/security-and-compliance/disallow-prompt-training). Both Gemini providers on the gateway qualify: Google (Gemini API paid terms: "Google doesn't use your prompts ... or responses to improve our products", prompts logged for a limited time for abuse checks and legal reasons, https://ai.google.dev/gemini-api/terms, last modified 28 Apr 2026) and Google Vertex AI. Unpaid AI Studio use may be used for training and human review (same terms), and the filter is not enforced on BYOK keys, so never add a free-tier key as BYOK. Stricter option, not turned on: zero data retention (per request free, team-wide $0.10 per 1,000 requests, Pro and Enterprise only, https://vercel.com/docs/ai-gateway/security-and-compliance/zdr). FAQ, Privacy (with both links) and Terms updated; `LEGAL_UPDATED` is 17 October 2026. Test added.
-- **CAN-SPAM postal address.** Every marketing email footer (HTML and text) shows `BUSINESS_POSTAL_ADDRESS` after "E-commerce Helix" (`src/lib/email/postal.ts`, `templates.ts`). Unset: nothing is shown and one warning is logged per server instance. Transactional emails are unchanged. Documented in README and `.env.example`. Source: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business.
+- **CAN-SPAM postal address.** Every marketing email footer (HTML and text) shows `BUSINESS_POSTAL_ADDRESS` after "E-commerce Helix" (`src/lib/email/postal.ts`, `templates.ts`). Unset: nothing is shown and one warning is logged per server instance. Transactional emails are unchanged. Documented in README and `.env.example`. `BUSINESS_POSTAL_ADDRESS` is intentionally not set (owner decision), so the footer shows no address. Source: https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business.
   - Also found: the live seasonal nudge emails (Mondays, `NUDGES_LIVE=1`) went to every user with no unsubscribe link and ignored email preferences. They now respect the "Big sale dates" preference, carry a one-click unsubscribe link and List-Unsubscribe headers, and the postal address (`src/lib/nudges.ts`, `api/cron/seasonal-nudges`).
 - **Growing track: Lessons 7.14 and 7.13 now come before 20.3.** New Day 38 "Find your way around Ads Manager" (7.14, before tracking, audiences and the build, which all happen in Ads Manager) and Day 42 "Get your first campaign ready" (7.13 Steps 1 to 3: pixel check, budget, 3 to 5 ads; the build itself is Day 43, Lesson 20.3). Each says experienced advertisers can skim and mark it done. The track is now 66 days (stage 4 is Days 27 to 48). Saved progress is kept: each Growing day now has a fixed task id in `curriculum.json` (`id`; the new days are `day-65` and `day-66`), `dayTaskId` maps day number to it, `progress.ts` maps ids back to days, and the drawings for a day are keyed by task id. Copy that said 64 days updated (track card, audience page, README, docs). Tests added.
 - Checks: `npm test` (47 files, 336 tests), `npm run lint` (0 errors; 5 old warnings in files not touched), `npm run build` passed.
@@ -202,10 +213,9 @@ The follow-ups listed under "Needs Sid (from this audit)" below, fixed on the sa
 
 Every factual claim in the 30 playbook modules, their card decks (`docs/cards`), the 18 SOPs, the daily curricula, the course goals, the site and app copy, legal pages, glossary, `llms.txt` and the social captions was checked against official sources. Wrong or out-of-date facts were fixed, unverifiable claims were softened to "rule of thumb" or removed, and no new statistics were invented. Lesson headings, refs and step counts are unchanged except where noted, so saved progress still counts.
 
-**Needs Sid (from this audit)** (17 Oct: social images, AI training, postal address and the Growing track order are fixed, see "Audit follow-ups fixed" above; what is left is items 11 and 12 at the top)
+**Needs Sid (from this audit)** (17 Oct: social images, AI training, postal address and the Growing track order are fixed, see "Audit follow-ups fixed" above; what is left is in "Needs Sid" at the top)
 - ~~**Social v2 post 4 (17 Oct 19:00):** "45 days" should say 41.~~ Wrong, corrected 17 Oct: post 4 was published on Facebook on Tue 13 Oct 2026 at 19:43 Sydney, when 45 days was right (13 Oct to 27 Nov). This note used the planned date in `schedule.csv` (17 Oct). Caption, image and video are back to "45 days".
 - **Other posts with text baked into images** (captions fixed in the repo, images not re-rendered): v2 #47 (29 Nov, "before BFCM" -> "during"), v3-25 (win-back "to subscribers"), v3-29 (a "was" price must be charged for a fair time recently), v3-33 (gifted creators should say it was a gift), v3-49 ("3 to 4 a day"), v3-48 (19 Jan "January is closer than it looks": move to early December or drop).
-- **CAN-SPAM postal address:** US law needs a valid postal address in marketing emails (https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business). The footer has a contact link only. A PO box would do.
 - **AI training claim:** the FAQ promises the AI never trains on user data. `src/lib/ai/service.ts` does not set the AI Gateway's no-training option. Consider `providerOptions.gateway` zero-data-retention / disallow prompt training.
 - **Country wording:** commit 6b2842c made lessons country-neutral ("Outside the US:"). Where a rule only applies in Australia (GST $75,000, BAS, .com.au, ACCC refunds, ReportCyber, SMS Sender ID Register, import declarations), the text now names Australia, because "outside the US" was factually wrong.
 - **Course logic, not changed:** the Growing track never assigns Lessons 7.13 and 7.14, which Lesson 20.3 asks you to do first.
