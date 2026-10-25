@@ -1,40 +1,116 @@
 {
-"16.1": {"intro": "You're the most important part of the business. How you sleep, plan and handle messages shapes every decision.",
+"16.1": {"intro": "A sign-up form asks visitors for their email or phone. It feeds every email you send. As a rule of thumb, a good one signs up 3 to 10 of every 100 people who see it.",
  "steps": [
-  {"say": "Set a fixed bedtime and wake time for weekdays. Protect them.", "check": "You sleep about the same hours every night.", "lost": "Pick one bedtime. Stick to it this week."},
-  {"say": "Each week, block your focus time in the calendar first. Fit meetings around it.", "check": "Your calendar has protected focus blocks.", "lost": "Block one 2-hour focus slot."},
-  {"say": "Check messages at set times (like 9am, 1pm, 4pm). Turn off notifications you don't need.", "check": "You're not pulled away all day.", "lost": "Turn off one noisy notification."},
-  {"say": "Give every meeting an agenda, one owner and a decision.", "check": "Meetings end with a decision, often early.", "lost": "Write 3 agenda points for your next meeting."},
-  {"say": "Work in blocks of 25 or 45 minutes on one thing at a time.", "check": "You finish deep tasks without switching.", "lost": "Set a 25-minute timer. Do one thing."},
-  {"say": "Work out what your hour is worth (like target yearly profit ÷ working hours). Example: $100,000 ÷ 2,000 hours = $50 an hour. Hand off work worth less.", "check": "You have a list of tasks to hand off.", "lost": "Write one task someone else could do."},
-  {"say": "Say no to anything that doesn't help this cycle's priorities (Lesson 16.3).", "check": "Your week matches your priorities.", "lost": "Say no to one thing this week."}
+  {"say": "Pick one reason to sign up: dollars off (like $10 off) if your orders are big, percent off (like 10% off) if they're small, a free gift, early access, or a competition entry.", "check": "Your form has one clear reason to sign up.", "lost": "Pick 10% off. You can change it later."},
+  {"say": "In your email or form app, build a form with steps: first an easy one-click question (\"What are you shopping for?\"), then email, then phone.", "check": "The form asks an easy question first. Small yeses lead to bigger ones.", "lost": "Make the first step one easy question."},
+  {"say": "Show the form after about 5 to 8 seconds or 30% scroll. On computers, also show it when the mouse moves to leave. Hide it from people already signed up.", "check": "It shows at the right time, and never to people already on your list.", "careful": "Game forms (spin to win) can get more sign-ups. Watch the cost of the discounts and the quality of the list.", "lost": "Set it to show after 5 seconds."},
+  {"say": "Sell to several regions? Add location rules so each region sees offers and text sign-ups that suit it.", "check": "Overseas visitors see an offer that makes sense for them.", "lost": "One country only? Skip this card."},
+  {"say": "After 2 weeks, check and improve.\n\n1. Open the form's report. Find the sign-up rate.\n2. Change one thing (the offer, headline or timing). Wait another 2 weeks.", "check": "Over 3 in 100 people who see the form sign up, or a test is running to get there. With a strong offer, 6 to 10 is possible.", "lost": "Look at the sign-up rate. Change one thing."},
+  {"say": "Put a form inside a page too, not just as a pop-up.\n\n1. In your email app, make a new **Embedded** form.\n2. Copy its form ID or code.\n3. In Shopify, click **Online Store**, then **Themes**, then **Customize**.\n4. Open the page you want (home or \"About\").\n5. Click **Add section** or **Add block**.\n6. Pick your email app's form block (or **Custom Liquid**).\n7. Paste the form ID or code.\n8. Click **Save**.", "check": "The form shows inside the page, and a test sign-up lands in your list within a minute.", "careful": "Only email people who said yes. In Australia you need consent, your business name and a working unsubscribe. In the UK and EU, a pre-ticked box is not consent.", "lost": "Make an **Embedded** form. Add it to your home page."}
  ]},
-"16.2": {"intro": "A small daily and weekly rhythm keeps you on top of things in under an hour a week. The Helix routine is made for this.",
+"16.2": {"intro": "A flow is a set of emails or texts that sends itself when someone does something. Five main flows earn money every day, even while you sleep.",
  "steps": [
-  {"say": "Every day, do the Helix routine (update yesterday, read your profit, do one task), plus one focus block on your top priority.", "check": "Each day ends with your numbers in and one priority moved forward.", "lost": "Update yesterday's numbers in Helix."},
-  {"say": "Every Monday, spend 30 minutes planning the week: priorities, calendar and what to hand off.", "check": "A Monday planning slot is in your calendar.", "lost": "Add a 30-minute Monday slot."},
-  {"say": "Every Friday, spend 15 minutes looking at what worked and what didn't.", "check": "A Friday review slot is in your calendar.", "lost": "Add a 15-minute Friday slot."}
+  {"say": "Set up the **Welcome** flow. It starts when someone joins your list.", "check": "New subscribers get your first email within minutes.", "lost": "Turn on Welcome. That's the first one."},
+  {"say": "Set up **Browse abandonment**. It starts when someone looks at a product but doesn't add it to cart.", "check": "Browsers get a reminder of what they looked at.", "lost": "Turn on Browse abandonment."},
+  {"say": "Set up **Cart abandonment**. It starts when someone adds to cart but doesn't start checkout.", "check": "They get a reminder within a few hours.", "lost": "Turn on Cart abandonment."},
+  {"say": "Set up **Checkout abandonment**. It starts when someone begins checkout but doesn't pay.", "check": "These keen shoppers get a reminder within about an hour.", "lost": "Turn on Checkout abandonment."},
+  {"say": "Set up **Post-purchase**. It starts when someone buys.", "check": "New buyers get a thank-you, how-to tips and an idea for something else.", "lost": "Turn on Post-purchase."},
+  {"say": "Then add extras, one at a time: win-back, back in stock, price drop, time to reorder, VIP, birthday, sunset (removing people who never open), review request, and a cross-sell after the first buy.", "check": "Your list of flows grows month by month.", "lost": "Add one extra flow this month."}
  ]},
-"16.3": {"intro": "One or two priorities with real time behind them beat ten half-done projects.",
+"16.3": {"intro": "Emails that get clicks feel personal and have one clear job.",
  "steps": [
-  {"say": "Pick 1 or 2 priorities for the next six weeks.", "check": "You have one or two written priorities.", "lost": "Write your one big priority."},
-  {"say": "Block 8 to 12 hours a week for them.", "check": "The hours are in your calendar.", "lost": "Block 2 hours a day, 4 days a week."},
-  {"say": "Check progress every Friday. At the end of six weeks, review and pick the next priorities.", "check": "You have a weekly check and a review date at week six.", "lost": "Put a review in your calendar 6 weeks from now."}
+  {"say": "Take turns: a plain email from the founder (pictures are fine), then a designed email.", "check": "Your next four emails include at least one founder-style email.", "lost": "Write one short, plain email from you."},
+  {"say": "Use what people told you in forms (like product interest, skin type or size) to pick what to show them.", "check": "Different people see different product picks.", "lost": "Use one answer, like size, to pick products."},
+  {"say": "Give each email one main button.", "check": "Every email has one obvious next step.", "careful": "Only use countdown timers for real deadlines. When time's up, show a message, not zeros.", "lost": "Keep one button. Remove the rest."}
  ]},
-"16.4": {"intro": "Interruptions eat your time. Three quick questions decide what needs you now.",
+"16.4": {"intro": "A segment is a group on your list who share something. Sending to the right group keeps you out of spam.",
  "steps": [
-  {"say": "When interrupted, ask: can it be explained in one sentence? Am I the right person? Does it need doing now?", "check": "You can answer the three questions in seconds.", "lost": "Ask: does this need me, right now?"},
-  {"say": "If any answer is no, say no, hand it to someone else, or schedule it for later.", "check": "Only truly urgent things that are yours get your attention now.", "lost": "Not urgent? Put it in your calendar for later."}
+  {"say": "In your email app, make segments: active in the last 30, 60 and 90 days, buyers, repeat buyers, and VIPs (your best customers).", "check": "The segments show live counts.", "lost": "Make one segment: active in the last 90 days."},
+  {"say": "Add window shoppers (looked lately, never bought), lapsed buyers (used to buy, stopped) and product-interest segments.", "check": "You can reach people at every stage.", "lost": "Make a window shoppers segment."},
+  {"say": "Send most campaign emails to the people active in the last 60 or 90 days.", "check": "More people open, and fewer mark you as spam.", "careful": "Some email apps open emails by themselves, so opens can lie. Count clicks, site visits and orders as \"active\" too.", "lost": "Send your next email to the 90-day active group."}
  ]},
-"16.6": {"intro": "Handling a disagreement well builds trust. Keep it about the issue, not the person.",
+"16.5": {"intro": "A campaign is a one-off email, like a newsletter. Start slow and build up.",
  "steps": [
-  {"say": "Name the issue in one sentence. Then listen fully without interrupting.", "check": "Both sides feel heard.", "lost": "Say the problem in one sentence. Then listen."},
-  {"say": "Separate facts from feelings. Agree on the result you both want.", "check": "You have a shared goal.", "lost": "Ask: what do we both want?"},
-  {"say": "Write down who will do what by when. Follow up to check it happened.", "check": "There's a written agreement and a follow-up date.", "lost": "Write one line: who, what, by when."}
+  {"say": "Start with 2 emails a month. After a month, go weekly. Then 2 to 4 a week if people still open and click.", "check": "You have a written send schedule.", "lost": "Plan 2 emails this month."},
+  {"say": "Fill your schedule from this list: new arrivals, how-to tips, customer stories, behind the scenes, founder notes, gift guides, myth busting, customer photos, seasonal moments, limited bundles, rare flash sales.", "check": "You have a month of email ideas.", "lost": "Pick two ideas from the list."}
  ]},
-"16.9": {"intro": "There are five ways to pay for growth. Running the business as if a buyer will check it one day keeps every door open.",
+"16.6": {"intro": "A monthly check shows where emails leak money. Fix the weakest step first.",
  "steps": [
-  {"say": "List your funding options: profit put back in, longer supplier terms, inventory finance (loans for stock), revenue-based funding (pay back a share of sales), or selling shares (including crowdfunding).", "check": "You know which options fit your stage.", "lost": "Start with profit put back in."},
-  {"say": "Keep clean numbers, written processes, and customer data you own.", "check": "The business would pass a buyer's or lender's check.", "lost": "Write down one process you do every week."}
+  {"say": "Open your email app's reports. Write down last month's flow and campaign numbers from the lesson's table.", "check": "You have one line of numbers for flows and one for campaigns.", "lost": "Write down opens and clicks for last month."},
+  {"say": "Find the weakest step. Low opens? Fix the subject line. Low clicks? Fix the content and button. Clicks but few orders? Fix the landing page.", "check": "You have one fix to make this month.", "lost": "Which is lowest: opens, clicks or orders? Fix that one."}
+ ]},
+"16.7": {"intro": "A fair split test shows what your list likes. One change, two big groups, one written guess.",
+ "steps": [
+  {"say": "Write your guess. Example: \"A question in the subject line gets more opens.\"", "check": "The test has a written guess.", "lost": "Write one sentence: what you think will win."},
+  {"say": "Change only one thing (subject, send time, offer or layout). Split the list into two groups of at least a few thousand each, if you can.", "check": "The test is fair and big enough to read.", "lost": "Change just the subject line."},
+  {"say": "Write down the result. Use the winner from now on.", "check": "Your test log grows and emails get better each month.", "lost": "Write who won. Use it next time."}
+ ]},
+"16.8": {"intro": "Deliverability means your emails land in the inbox, not spam. Most of it is set up once.",
+ "steps": [
+  {"say": "In your email app's domain settings, follow the guide to add SPF, DKIM and DMARC records at your domain host. They prove your emails really come from you.", "check": "The email app shows your sending domain as verified or authenticated. Gmail and Yahoo require this from bulk senders.", "lost": "Open your email app's domain settings. Follow its guide."},
+  {"say": "New account? Warm up slowly. Each send goes to no more than about 1.5 times as many people as the last, most active people first. Example: 1,000, then 1,500, then 2,250.", "check": "Sends grow steadily with no bounce or spam spikes.", "lost": "Send to your most active people first."},
+  {"say": "Remove bad addresses, like typos (gmial.com). Set up a sunset flow for people who never open.", "check": "Your list only has people you can reach who care.", "lost": "Search for \"gmial\" and remove those."},
+  {"say": "Each week, check bounce rates by email provider. Avoid ALL CAPS, lots of exclamation marks, and emails that are just one picture.", "check": "You spot trouble with one provider early (like bounces from only one provider's addresses).", "careful": "Gmail and Yahoo also need one-click unsubscribe and spam complaints under 0.3% (aim for under 0.1%). By law, act on unsubscribes fast: 5 working days in Australia, 10 business days in the US.", "lost": "Check bounces once this week."}
+ ]},
+"16.9": {"intro": "Email apps often charge by how many people are on your list. In many email apps, suppressed people don't count. Cleaning your list saves money and helps you reach inboxes.",
+ "steps": [
+  {"say": "Suppress or remove people who haven't opened or clicked in 180 days.", "check": "The number of people you pay for drops.", "lost": "Find people quiet for 180 days. Suppress them."},
+  {"say": "Archive old lists you don't send to anymore.", "check": "Only active lists are left.", "lost": "Archive one old list."},
+  {"say": "If each person on your list costs more than they're worth to you, compare two other email apps.", "check": "You know if you should stay or switch.", "lost": "Look at one other app's prices."}
+ ]},
+"16.10": {"intro": "Texts get read fast but cost more than email. Save them for big moments.",
+ "steps": [
+  {"say": "Add a text step to the welcome flow and the checkout reminder, for people who didn't act on the email.", "check": "Texts only go out where email didn't work.", "lost": "Add one text to the checkout reminder."},
+  {"say": "Use texts for sale launches and last chance messages.", "check": "Your sale plan has two texts.", "lost": "Plan one text for your next sale launch."},
+  {"say": "Finish your SMS app's sender registration before sending. Turn on its quiet hours setting. Keep each text short with one link.", "check": "Texts come from your registered name or number, at sensible times, with one link.", "careful": "Australia: a business name as sender must be registered, or texts show as \"Unverified\". US: numbers must be registered, you need written consent, and send only 8am to 9pm their time.", "lost": "Keep texts short, with one link."}
+ ]},
+"16.11": {"intro": "WhatsApp works well where your customers already use it, especially for VIPs and pricey products. Sending offers at scale needs the WhatsApp Business Platform, usually through your email or SMS app.",
+ "steps": [
+  {"say": "Set up WhatsApp Business. Only message people who said yes.", "check": "You have a WhatsApp list of people who opted in.", "lost": "Download WhatsApp Business."},
+  {"say": "Get your marketing message templates approved. Set up quick replies for common questions.", "check": "You can send approved offers and answer common questions in one tap.", "lost": "Make one quick reply."},
+  {"say": "Use chat for VIPs, launches and selling through conversation.", "check": "Big customers can buy just by chatting.", "careful": "Meta charges for each marketing message delivered. Since 1 October 2026, replies within 24 hours of a customer's message are free only for the first 1,000 a month. Marketing messages to US numbers are paused for now.", "lost": "Message one VIP about a launch."}
+ ]},
+"16.12": {"intro": "A loyalty program rewards people who buy again. It only pays when enough people already come back.",
+ "steps": [
+  {"say": "Check your repeat purchase rate in Shopify **Analytics > Reports > Customer cohort analysis**. A rule of thumb: start loyalty only if more than about 15 to 20% of customers already buy again.", "check": "You know if loyalty is worth it yet.", "lost": "Find your repeat rate. Is it over 15%?"},
+  {"say": "Pick rewards your margin can afford (points or cashback). Add VIP levels with early access.", "check": "The program is set up and the rewards are costed.", "lost": "Choose one reward you can afford."},
+  {"say": "Add referral rewards for customers who bring a friend.", "check": "Customers can share a referral link.", "lost": "Turn on referrals."},
+  {"say": "After 90 days, check how the repeat purchase rate changed.", "check": "You know if the program changed what people do.", "lost": "Put a 90-day reminder in your calendar."}
+ ]},
+"16.13": {"intro": "Big sales depend on email and texts. A fixed plan from tease to thank-you means every part gets a message, without spamming.",
+ "steps": [
+  {"say": "Before the sale, build an early-access list.\n\n1. Two weeks before, turn on an \"early access\" sign-up form.\n2. Each week, send one teaser email to that list.", "check": "Your early-access list is growing.", "lost": "Turn on an early-access form 2 weeks before."},
+  {"say": "On launch day, send one email and one text.", "check": "Your list hears about the sale first.", "lost": "Send one email on launch day."},
+  {"say": "In the middle of the sale, send a new reason to buy (a new product, a bundle or a gift).", "check": "The middle of the sale has fresh news.", "lost": "Send one email with a new bundle."},
+  {"say": "On the last day, send a last chance email and text.", "check": "Everyone hears it's ending.", "lost": "Send one \"last chance\" email."},
+  {"say": "After the sale, send new buyers thanks, how-to tips, results and a small time-limited deal. Switch your abandonment flows back from the sale versions.", "check": "New buyers are looked after and flows are back to normal.", "lost": "Switch your flows back to normal."}
+ ]},
+"16.15": {"intro": "Ask one question, save the answer and send each person products that fit them.",
+ "steps": [
+  {"say": "Pick one question that splits your customers into groups. For example: \"What is your skin type?\", \"Who are you shopping for?\" or \"Which size is your dog?\"", "check": "One question with 3 to 5 simple answers.", "lost": "Pick one easy question with a few answers."},
+  {"say": "Add the question to your sign-up form, as a second step after the email box (Lesson 16.1).", "check": "New subscribers can tap one answer in a second.", "lost": "Put it after the email box."},
+  {"say": "In your email app, check the answer saves to each person's profile. Most apps call this a custom field or profile property.", "check": "You can see the answer on a test profile.", "lost": "Check the answer saves."},
+  {"say": "In your welcome flow (Lesson 16.2), add a split based on the answer. Send each group an email with the 3 products that suit them best.", "check": "Each group gets product picks that fit them.", "lost": "Send each group the products that suit them."},
+  {"say": "For people who did not answer, add a one-click question in the second welcome email. Make each answer a button that saves the answer.", "check": "More of your list has an answer.", "lost": "Ask again with buttons in email 2."},
+  {"say": "After 30 days, compare clicks and sales from the matched emails with your old welcome emails (Lesson 16.6).", "check": "You know if the answers lift sales. Then use the same groups in sale emails (Lesson 16.4).", "lost": "Compare after 30 days."}
+ ]},
+"16.16": {"intro": "Emailing people who ignored you for months can land you in spam. Wake them up slowly before a big sale.",
+ "steps": [
+  {"say": "In your email app, make groups by last open or click: 30, 60, 90 and 180 days. Add people who joined in the last 15 days to the 30-day group.", "check": "Four groups with numbers in them.", "lost": "Make one group: opened or clicked in 90 days."},
+  {"say": "Make a sleeping group: got 5+ emails, no opens or clicks in 180 days.", "check": "You know how many are asleep.", "lost": "Find people who never open."},
+  {"say": "In normal weeks, email the 90-day group only.", "check": "Normal emails go to readers.", "lost": "Send to the 90-day group."},
+  {"say": "2 to 3 weeks before the sale, send 1 or 2 short wake-up emails to the 91 to 180 day people, with one reason to click.", "check": "Some come back into your 90-day group.", "lost": "Send one 'early access' email to quieter people."},
+  {"say": "Make each send no more than about 1.5 times bigger than the last: 4,000, then 6,000, then 9,000.", "check": "Sends grow step by step.", "lost": "Grow each send by half, not more."},
+  {"say": "Only on the biggest sale days, send to the whole 180-day group. Check unsubscribes and spam complaints after each send.", "check": "You go back to the smaller group if either jumps.", "lost": "Watch unsubscribes after each send."},
+  {"say": "Turn on a goodbye flow for sleeping people: two short emails asking if they still want to hear from you. Stop emailing anyone who doesn't click.", "check": "Your list stays healthy.", "careful": "Clicks are a more honest sign than opens.", "lost": "Send one 'still want our emails?' email."}
+ ]},
+"16.17": {"intro": "Some customers buy again and again. Some buy once. Plan your ads, sales and emails around which kind you have.",
+ "steps": [
+  {"say": "In Shopify, open **Analytics > Reports** and find the customer cohort report. Write the share who bought again in 12 months, and the usual days to the second order.", "check": "Two numbers, like 22% and 45 days.", "lost": "Find how many customers bought twice."},
+  {"say": "Under about 20% is low repeat. Over about 30% is high repeat. In between is middle.", "check": "Your store has a label.", "lost": "Pick low, middle or high."},
+  {"say": "Low repeat: pay no more for a new customer than their first-order profit. High repeat: you can add proven repeat profit from the next 12 months.", "check": "One 'most I'll pay' number.", "lost": "Use first-order profit as your limit."},
+  {"say": "Low repeat: fewer, bigger sales for new buyers. High repeat: early access for past buyers and small list-only events.", "check": "Your calendar fits your store.", "lost": "Plan one sale that fits your type."},
+  {"say": "Send a reorder email a little before the usual second order. 45 days usual? Send on day 38.", "check": "A reorder email is live.", "lost": "Add one reminder email."},
+  {"say": "Pick three products often bought together. Add them in **Apps > Search & Discovery > Product recommendations**, and in one follow-up email.", "check": "Three pairs show on product pages and in an email.", "lost": "Pick one pair that goes together."}
  ]}
 }

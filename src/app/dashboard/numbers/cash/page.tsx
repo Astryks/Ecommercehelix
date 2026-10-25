@@ -10,7 +10,7 @@ export default async function CashPage() {
   const t = await computeTools(u.id);
   const c = t.cash;
   return (
-    <ToolPage title="Cash plan" intro="See your bank balance 13 weeks ahead. Spot a tight week before it arrives." auto="every day from your forecast, stock orders, ads and bills" example={t.example} lesson={{ label: "Cash and stock planning", href: "/learn/14-inventory-cash-planning" }}>
+    <ToolPage title="Cash plan" intro="See your bank balance 13 weeks ahead. Spot a tight week before it arrives." auto="every day from your forecast, stock orders, ads and bills" example={t.example} lesson={{ label: "Cash and stock planning", href: "/learn/19-inventory-cash-planning" }}>
       <form action={saveCashInputs} className="card flex flex-wrap items-end gap-3 p-4" data-testid="tool-cash">
         <label className="text-sm"><span className="block font-semibold text-slate-900">Money in the bank today (USD)</span><input name="startBalance" defaultValue={t.cashIn.startBalance ?? ""} placeholder="e.g. 12000" className="input mt-1 w-48" inputMode="numeric" required /></label>
         <label className="text-sm"><span className="block font-semibold text-slate-900">Warn me below</span><input name="floor" defaultValue={t.cashIn.floor} className="input mt-1 w-36" inputMode="numeric" /></label>

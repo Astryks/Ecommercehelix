@@ -1,4 +1,4 @@
-# Module 12: TikTok, Pinterest, SEO and AI search
+# Module 11: TikTok, Pinterest, SEO and AI search
 
 **Outcome:** you know when and how to add channels beyond Meta and Google. You also know how to be found in Google search and in AI helpers.
 
@@ -31,7 +31,7 @@
 
 ---
 
-## Lesson 12.1: TikTok readiness
+## Lesson 11.1: TikTok readiness
 <!-- stage:attract -->
 
 **Why this matters:** TikTok can bring cheap attention. But only once you have videos that work there and tracking in place. Getting ready first stops you paying to learn what free posts could teach you. Only start TikTok ads once Meta and Google are profitable.
@@ -56,7 +56,7 @@
 
 **Expected result:** One saved view shows every number you need.
 
-## Lesson 12.2: Structures by spend
+## Lesson 11.2: Structures by spend
 <!-- stage:attract -->
 
 **Why this matters:** TikTok structures depend on spend, just like Meta. Too many campaigns on a small budget starves each one.
@@ -77,10 +77,10 @@
 | About $200 | Add a catalog ads campaign that shows products from your store's catalog. |
 | About $300 or more | Add a traffic campaign to a landing page, or a video-view campaign, for cheap reach. Test each creative style separately. |
 
-## Lesson 12.3: Spark ads and creators
+## Lesson 11.3: Spark ads and creators
 <!-- stage:attract -->
 
-**Why this matters:** Spark ads run normal TikTok posts as ads, yours or a creator's. They keep the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 19).
+**Why this matters:** Spark ads run normal TikTok posts as ads, yours or a creator's. They keep the post's likes and comments. Creator videos are the main fuel for TikTok ads (Module 6).
 
 **Step 1.** Ask the creator for an authorisation code for each post. On the post, they tap **...**, then **Ad settings**, turn on ad authorisation and generate a code.
 
@@ -94,7 +94,7 @@
 
 **Expected result:** The creator's post runs as an ad with its likes and comments.
 
-## Lesson 12.4: Optimising TikTok
+## Lesson 11.4: Optimising TikTok
 <!-- stage:attract -->
 
 **Why this matters:** TikTok ads can tire within days, so they need closer watching than Meta. Early signs warn you before cost per sale gets worse.
@@ -126,7 +126,7 @@
 
 <!-- do:growth -->
 
-## Lesson 12.5: TikTok search
+## Lesson 11.5: TikTok search
 <!-- stage:attract -->
 
 **Why this matters:** Many people use TikTok like a search engine. Saying and showing your keywords helps your videos get found for months.
@@ -143,7 +143,7 @@
 
 **Expected result:** You show up when people search those questions.
 
-## Lesson 12.6: TikTok Shop
+## Lesson 11.6: TikTok Shop
 <!-- stage:attract -->
 
 **Why this matters:** TikTok Shop lets people buy without leaving TikTok. Its ads run as GMV Max campaigns, which aim for total sales (GMV). It also has affiliate creators and live shopping. Commission and fees can eat margin, so check the maths first.
@@ -158,7 +158,7 @@
 
 **Expected result:** Creators can sell your products from their videos.
 
-## Lesson 12.7: Pinterest
+## Lesson 11.7: Pinterest
 <!-- stage:attract -->
 
 **Why this matters:** Pinterest pins keep getting found for months, much longer than social posts. People plan what to buy there well ahead of time. It rewards steady posting and early seasonal planning.
@@ -181,7 +181,73 @@
 
 **Expected result:** You judge Pinterest fairly for its slower decisions.
 
-## Lesson 12.8: SEO step by step
+## Lesson 11.8: SEO basics
+<!-- stage:attract -->
+
+**Why this matters:** Search brings people who are already looking for what you sell, and you do not pay per click. Most of it comes down to a few basics done once and checked each month: the right page for each search, clear titles, tidy links and a sitemap Google can read. Lesson 11.9 then builds on this with keyword research, helpful articles and mentions on other sites.
+
+**Step 1.** Match each kind of search to the right kind of page. A search for a type of product ("linen shirt men") wants a collection page. A search for one exact item wants that product page. A question ("how to wash linen") wants a helpful article or an FAQ.
+
+**Expected result:** You have a short list of your main searches, each paired with one page on your store that answers it.
+
+**Step 2.** Find the words people really use, for free.
+
+1. In Google Search Console, open **Performance** and read the **Queries** list: the searches that already show your store (see [Search Console: Performance report](https://support.google.com/webmasters/answer/7576553)).
+2. Type your main product words into Google and note the suggestions that drop down as you type.
+3. Read the **People also ask** questions on the results page.
+
+**Expected result:** You have 5 to 10 real search phrases for each main collection and product.
+
+**Watch out:** Use the phrases where they read naturally. Repeating a word over and over does not help and reads badly (see [Google: SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)).
+
+**Step 3.** Write a clear title and description for each key page in its **Search engine listing** box in Shopify.
+
+**Expected result:** Your home page, main collections and best sellers each have a unique title under about 60 characters, with the main phrase near the start, and a description of about 150 to 160 characters that says what the page offers (see [Google: title links](https://developers.google.com/search/docs/appearance/title-link) and [Google: snippets](https://developers.google.com/search/docs/appearance/snippet)).
+
+**Step 4.** In the same **Search engine listing** box, set the URL handle to a few plain words, like /products/linen-shirt-sand.
+
+**Expected result:** Every handle is short and readable (see [Google: URL structure](https://developers.google.com/search/docs/crawling-indexing/url-structure)).
+
+**Watch out:** When you rename or delete a page, send the old address to the best new one, or you lose the visits it has earned. Tick **Create a URL redirect** when you change a handle, or add one in **Content > Menus > View URL redirects** (see [Shopify: URL redirects](https://help.shopify.com/en/manual/online-store/menus-and-links/url-redirect)).
+
+**Step 5.** Describe your images. Click each product image in Shopify, then **Edit alt text**, and write what the photo shows in a few words, like "sand linen shirt, front view".
+
+**Expected result:** Every product photo has alt text, which helps image search and people using screen readers (see [Google: images in search](https://developers.google.com/search/docs/appearance/google-images)).
+
+**Step 6.** Link your own pages together. Link from each collection to its best products, from each product to its collection and one related product, and from articles to the products they mention. Use words that say where the link goes, not "click here".
+
+**Expected result:** Every important page can be reached in a few clicks from the home page (see [Google: crawlable links](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)).
+
+**Step 7.** Send your sitemap to Google. Shopify makes one for you at yourdomain.com/sitemap.xml. In Search Console, open **Sitemaps**, type sitemap.xml and click **Submit**.
+
+**Expected result:** The Sitemaps report shows "Success" (see [Search Console: Sitemaps report](https://support.google.com/webmasters/answer/7451001)).
+
+**Step 8.** Fix broken links and missing pages. In Search Console, open **Pages** and look for pages marked "Not found (404)". Redirect each one to the closest live page, or fix the link that points to it.
+
+**Expected result:** No important page shows "Not found" (see [Search Console: Page indexing report](https://support.google.com/webmasters/answer/7440203)).
+
+**Step 9.** Add a short FAQ to your best product pages: the 3 to 5 questions customers ask before buying (size, care, delivery, returns), answered in plain words.
+
+**Expected result:** Each best seller answers its top buying questions on the page.
+
+**Step 10.** Check your product details show in Google. Most Shopify themes add structured data (code that tells Google the price, stock and rating) for you. Paste a product page address into Google's [Rich Results Test](https://search.google.com/test/rich-results). If it finds no product details, ask your theme's support or a developer to add them; do not paste code you do not understand.
+
+**Expected result:** The test finds valid product details on your product pages (see [Google: product structured data](https://developers.google.com/search/docs/appearance/structured-data/product)).
+
+**Step 11.** Write for people, which also helps AI search. Answer real questions clearly, keep facts like prices, sizes and delivery times the same everywhere, and say who made the page. Google's AI features use the same basics as normal search, so there is no special trick (see [Google: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)). Lesson 11.10 covers AI shopping helpers.
+
+**Expected result:** Your key pages answer real questions in plain words, with facts that match across your store.
+
+**Step 12.** Keep a 20-minute monthly routine.
+
+1. Search Console **Performance**: note clicks and the top 10 searches, and find pages shown often but rarely clicked. Rewrite their titles and descriptions.
+2. **Pages** report: fix any new "Not found" pages with a redirect.
+3. Add titles, descriptions and alt text to any new products and collections.
+4. Add or improve one FAQ or helpful article.
+
+**Expected result:** A short note each month with clicks, top searches and the fixes you made.
+
+## Lesson 11.9: SEO step by step
 <!-- stage:attract -->
 
 **Why this matters:** SEO (search engine optimisation) means getting found in Google without paying for ads. It takes months to build but keeps paying. Five steps cover most of it.
@@ -210,7 +276,7 @@
 
 **Expected result:** Other sites link to you.
 
-## Lesson 12.9: AI search and agentic commerce
+## Lesson 11.10: AI search and agentic commerce
 <!-- stage:attract -->
 
 **Why this matters:** More shoppers now ask AI helpers (AI chat assistants and AI search) what to buy. Some helpers can even shop for them. Clear facts, reviews and clean product data decide whether they recommend you.
@@ -231,7 +297,7 @@
 
 **Expected result:** You know how much traffic AI assistants send.
 
-## Lesson 12.10: Instagram shopping
+## Lesson 11.11: Instagram shopping
 <!-- stage:attract -->
 
 **Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
@@ -252,7 +318,7 @@
 
 **Expected result:** Shoppers can tap to see and buy products.
 
-## Lesson 12.11: Start a YouTube channel that keeps selling
+## Lesson 11.12: Start a YouTube channel that keeps selling
 <!-- stage:attract -->
 
 **Why this matters:** A post on most apps fades in a day. A good YouTube video can be found in search for years. People who watch a full "how to" video already trust you before they visit your store.
@@ -292,10 +358,12 @@
 1. How many ad-ready videos should you have before paying for TikTok ads?
 2. How long should a meta description be?
 3. What feeds AI assistant answers about your brand?
+4. You rename a product's URL handle. What must you do so you keep its search visits?
 
 <details><summary>Answers</summary>
 
 1. About 10 to 15.
 2. Google sets no limit, but about 150 to 160 characters avoids it being cut off.
 3. Clear site content, clean product data and reviews. Brand facts that are the same everywhere, and mentions on other sites.
+4. Add a URL redirect from the old address to the new one (tick Create a URL redirect, or add it in Content > Menus > View URL redirects).
 </details>

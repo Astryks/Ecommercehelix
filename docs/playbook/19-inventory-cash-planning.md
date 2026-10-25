@@ -1,4 +1,4 @@
-# Module 14: Inventory, cash and the year plan
+# Module 19: Inventory, cash and the year plan
 
 **Outcome:** the right stock at the right time, and a cash plan you trust. Plus a plan for the year that ties sales, stock and marketing together.
 
@@ -30,7 +30,7 @@
 
 ---
 
-## Lesson 14.1: Range planning
+## Lesson 19.1: Range planning
 <!-- stage:grow -->
 
 **Why this matters:** Your range is the set of products you sell. Planning it on purpose puts your cash into styles that earn, and lets you test new ideas small before committing.
@@ -57,7 +57,7 @@
 
 **Expected result:** Each product has a forecast based on evidence.
 
-## Lesson 14.2: A 10-minute weekly stock check
+## Lesson 19.2: A 10-minute weekly stock check
 <!-- stage:grow -->
 
 **Why this matters:** A weekly stock check takes ten minutes. It stops two costly mistakes: selling out of a best seller, and sitting on stock that will not sell. [SOP 17](../sops/17-inventory-cash-planning.md) has the full steps.
@@ -82,7 +82,7 @@
 
 **Watch out:** Do not run ads hard on a product that is about to sell out.
 
-## Lesson 14.3: Five cash levers
+## Lesson 19.3: Five cash levers
 <!-- stage:grow -->
 
 **Why this matters:** Stock ties up cash, and cash is what lets you grow. Five levers free it up: buy cheaper, get better terms, pay later, lower the risk and sell faster.
@@ -103,9 +103,9 @@
 | Get better terms from suppliers | Smaller deposits, production in stages, more time to pay, consignment (pay only when it sells) |
 | Pay for it later | Trade finance, supplier credit, inventory loans. Always compare the true cost. |
 | Lower the risk | Smaller first orders, preorders, extra safety stock only for A items |
-| Sell it faster | Promote products with too much cover, bundles, free gifts, planned clearance (Lesson 14.10) |
+| Sell it faster | Promote products with too much cover, bundles, free gifts, planned clearance (Lesson 19.10) |
 
-## Lesson 14.4: Cash flow forecast
+## Lesson 19.4: Cash flow forecast
 <!-- stage:grow -->
 
 **Why this matters:** A cash flow forecast shows how much cash you will have each week. Profit is not the same as cash in the bank. Stock deposits can drain the account months before the sales arrive.
@@ -128,7 +128,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 14.5: Should you borrow? Weighing up a loan
+## Lesson 19.5: Should you borrow? Weighing up a loan
 <!-- stage:grow -->
 
 **Why this matters:** Debt can speed up growth or sink a store. Borrow only when both tests below are true.
@@ -143,7 +143,7 @@
 
 **Watch out:** Never borrow to cover losses.
 
-## Lesson 14.6: Money mindset and finance help
+## Lesson 19.6: Money mindset and finance help
 <!-- stage:grow -->
 
 **Why this matters:** Good money habits make the numbers easy to see and the business easy to run. Four habits cover most of it.
@@ -166,7 +166,7 @@
 
 **Expected result:** You know when outside finance help makes sense.
 
-## Lesson 14.7: The year plan
+## Lesson 19.7: The year plan
 <!-- stage:grow -->
 
 **Why this matters:** The year plan ties sales, stock and marketing together. Working backwards from monthly targets tells you what to buy and spend, and when.
@@ -193,7 +193,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 14.8: Finding and vetting suppliers
+## Lesson 19.8: Finding and vetting suppliers
 <!-- stage:grow -->
 
 **Why this matters:** A good supplier makes a good product on time at a fair price. They also tell you early when something goes wrong. Changing supplier mid-season is slow and risky, so vet carefully up front. Helix keeps suppliers, minimums, lead times and terms on the Suppliers & stock page.
@@ -240,7 +240,7 @@
 
 **Watch out:** Watch the exchange rate when paying in US dollars. A few cents can change your margin.
 
-## Lesson 14.9: Reorder points, lead times and stock-outs
+## Lesson 19.9: Reorder points, lead times and stock-outs
 <!-- stage:grow -->
 
 **Why this matters:** Running out of a best seller loses sales and pauses your ads. Ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths for every product.
@@ -277,7 +277,7 @@
 
 **Example:** you sell 2 shirts a day, lead time is 50 days and you keep 14 safety days. The reorder point is 2 x 64 = 128 shirts. With 140 on hand and none on order, you have about 6 days before you must order.
 
-## Lesson 14.10: Clear slow stock without cheapening your brand
+## Lesson 19.10: Clear slow stock without cheapening your brand
 <!-- stage:grow -->
 
 **Why this matters:** Stock that does not sell is cash stuck on a shelf. It also costs money to store. Clearing it in a planned way turns it back into cash, without training everyone to wait for discounts.
@@ -302,13 +302,13 @@
 
 **Expected result:** Cash back in the bank and space for products that sell.
 
-**Step 6.** Note why it was slow: wrong size, colour, timing or too big an order. Use that next time you order (Lesson 14.1).
+**Step 6.** Note why it was slow: wrong size, colour, timing or too big an order. Use that next time you order (Lesson 19.1).
 
 **Expected result:** Your next order is smaller for that kind of product.
 
 **Watch out:** If you clear stock every month, the real problem is ordering too much. Fix the buying, not the selling.
 
-## Lesson 14.11: Sold out? Pre-orders and back-in-stock lists
+## Lesson 19.11: Sold out? Pre-orders and back-in-stock lists
 <!-- stage:convert -->
 
 **Why this matters:** A sold-out page with no next step loses the sale forever. A back-in-stock alert or a pre-order keeps the shopper. It also tells you how much to order next.
@@ -329,13 +329,13 @@
 
 **Expected result:** You never hold money for stock that might not come.
 
-**Step 5.** Count sign-ups for each product. Add them to your next order size (Lesson 14.9).
+**Step 5.** Count sign-ups for each product. Add them to your next order size (Lesson 19.9).
 
 **Expected result:** Your next order matches real demand.
 
 **Watch out:** If a pre-order date slips, email buyers at once with the new date and an easy refund. Silence turns into chargebacks. US: ship by the date you state, or within 30 days if you state none. If you will be late, you must offer to cancel with a full refund (see [FTC: Mail Order Rule](https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule)).
 
-## Lesson 14.12: Count the days your cash is stuck
+## Lesson 19.12: Count the days your cash is stuck
 <!-- stage:grow -->
 
 **Why this matters:** From the day you pay a supplier to the day a customer's money reaches your bank, your cash is stuck. The longer it is stuck, the more cash you need to grow. One simple number shows you how long, and what to fix first.
@@ -356,7 +356,7 @@
 
 **Expected result:** One number for your store, written in your cash plan.
 
-**Step 5.** Pick one lever from Lesson 14.3 to cut 10 days. For example, order smaller amounts more often, ask for 30 more days to pay, take pre-orders, or clear slow stock (Lesson 14.10).
+**Step 5.** Pick one lever from Lesson 19.3 to cut 10 days. For example, order smaller amounts more often, ask for 30 more days to pay, take pre-orders, or clear slow stock (Lesson 19.10).
 
 **Expected result:** One action sent or done this week.
 

@@ -1,98 +1,123 @@
 {
-"8.1": {"intro": "A clean Google setup means every dollar is tracked and nothing changes without you. Let's do it once.",
+"8.1": {"intro": "Ads Manager looks busy, but you only use a few parts. Let's find them.",
  "steps": [
-  {"say": "In Google Ads, open **Admin > Access and security**. Check that you are an admin owner.", "check": "Your email has Admin access. An agency owns it? Ask them in writing to give it to you.", "lost": "Check your email is listed as Admin."},
-  {"say": "In Shopify, install the **Google & YouTube** app. Connect Google Ads and Merchant Center (where Google keeps your product list).", "check": "Both are connected and products are syncing.", "lost": "Install **Google & YouTube**. Connect both accounts."},
-  {"say": "Make purchases the only thing that counts.\n\n1. Click **Goals > Conversions > Summary**.\n2. Make **Purchase** the only **Primary** action. Set others to **Secondary**.\n3. Turn on **Enhanced conversions**.", "check": "Only Purchase is Primary. Enhanced conversions say \"Active\".", "careful": "Check monthly. Other actions sometimes sneak back to Primary.", "lost": "Only **Purchase** should be Primary."},
-  {"say": "Connect Google Analytics 4 (GA4).\n\n1. In the Shopify Google app, connect GA4.\n2. In Google Ads, click **Tools > Data manager > + Connect product**.\n3. Choose **Google Analytics (GA4) & Firebase**. Pick your property.", "check": "GA4 shows purchases and is linked.", "lost": "Link GA4 in **Tools > Data manager**."},
-  {"say": "In **Tools > Shared library > Audience manager**, make three audiences: site visitors, buyers, and your email list.", "check": "Three audiences show.", "careful": "Google only takes email lists from accounts with a good policy and payment record.", "lost": "Make one audience: site visitors."},
-  {"say": "Open **Recommendations**. Click **Auto-apply**. Untick everything.", "check": "Google can't change campaigns without your click.", "lost": "Turn off **Auto-apply**."},
-  {"say": "Rename each campaign with the pattern from Lesson 6.7. Click the name, then the pencil.", "check": "Every name shows number, type and job.", "lost": "Rename one campaign."}
+  {"say": "Open Ads Manager (adsmanager.facebook.com). Check the account name top left.", "check": "You're in your store's ad account.", "lost": "Open Ads Manager. Check the name."},
+  {"say": "Set the date at the top right to **Last 7 days**.", "check": "The table shows the last week.", "lost": "Pick **Last 7 days**."},
+  {"say": "Click **Columns**, choose **Daily** (or **Performance**).", "check": "You see Results, Cost per result, Amount spent and ROAS.", "lost": "Pick **Columns > Daily**."},
+  {"say": "Click **Campaigns**, then a campaign name. Look at the three levels (campaign, ad set, ad) without changing anything. Close it.", "check": "You know where budget, audience and ads live.", "careful": "Your screen may look a bit different. Look for the same words: Create, Columns, Delivery, Results.", "lost": "Just look. Don't change. Close it."}
  ]},
-"8.2": {"intro": "Shopping ads are built from your product list. Better product info means better, cheaper ads.",
+"8.2": {"intro": "Ten minutes of setup stops the most expensive Meta problems. We'll do it one small step at a time.",
  "steps": [
-  {"say": "Rewrite titles with search words first: brand, product type, key feature. Example: \"Helix Linen Shirt, Men's, Relaxed Fit, Sand\".", "check": "Your top 20 products have search-first titles.", "lost": "Rewrite your best seller's title first."},
-  {"say": "Use a clean main photo: just the product, plain background.", "check": "No text or logos on main photos.", "lost": "Swap one busy main photo for a clean one."},
-  {"say": "Check feed prices and shipping match your site. Add barcode numbers (GTINs) if you have them.", "check": "Merchant Center shows no mismatches.", "lost": "Check one product's price matches your site."},
-  {"say": "Add your own labels, like margin level, best seller or season.", "check": "Products can be grouped by label.", "lost": "Label your best sellers."},
-  {"say": "In Merchant Center, open **Products**, then the **Needs attention** tab. Fix every issue.", "check": "No errors left.", "lost": "Fix one error today."}
+  {"say": "Go to business.facebook.com/settings. Click **Users > People**, then **Invite people**. Invite a second person you trust with **Full control** (Meta's name for admin).", "check": "**People** shows two people with full control.", "careful": "With only one admin, if that person is locked out, you lose the account.", "lost": "Invite one trusted person as a second admin."},
+  {"say": "In Business Settings, open **Security Centre**. Turn on **Two-factor authentication** for everyone.", "check": "Two-factor is required for all admins.", "lost": "Turn on two-factor in **Security Centre**."},
+  {"say": "In **Security Centre**, click **Start verification**. Enter your legal business name, address, phone and website.", "check": "It shows \"In review\" or \"Verified\". No button, or \"Ineligible\"? Skip and come back later.", "lost": "No verify button? That's okay. Skip this card."},
+  {"say": "Add the Facebook & Instagram sales channel in Shopify.\n\n1. Click **Settings**, then **Sales channels**.\n2. In the Shopify App Store, search **Facebook & Instagram** and add it.\n3. Click **Start set up**, then **Connect account**.\n4. Log in with Facebook, connect your things, click **Finish setup**.", "check": "It shows under **Sales channels**, with your business, ad account, Page and pixel connected.", "lost": "Add the **Facebook & Instagram** sales channel in Shopify."},
+  {"say": "Go to **Sales channels > Facebook & Instagram > Settings > Data sharing settings**. Check customer data sharing is on. Choose **Maximum**. This helps fewer sales go missing.", "check": "Data sharing says \"Maximum\".", "lost": "Set data sharing to **Maximum**."},
+  {"say": "Open **Events Manager**. Click your pixel. Look at the **Purchase** row in **Overview**.", "check": "Purchase shows events from **Browser** and **Server**. Nothing yet? Place a small test order and check in an hour.", "lost": "Look for **Purchase** in Events Manager. See it? Great."},
+  {"say": "Set a spending limit.\n\n1. In Ads Manager, click the three-line menu.\n2. Click **Billing and payments**, then **Payment settings**.\n3. Find **Account spending limit**, click **Options**, then **Set limit**.\n4. Type the most you're happy to spend in total. Save.", "check": "The account stops at your limit, even if something goes wrong. It covers all-time spend and doesn't reset monthly.", "lost": "Set an **Account spending limit**. Pick a number you're comfy with."},
+  {"say": "Make a \"Daily\" view.\n\n1. Click **Columns**, then **Customise columns**.\n2. Tick: Results, Cost per result, Amount spent, Purchase ROAS, CTR (link), Frequency.\n3. Tick **Save as preset**, name it \"Daily\".\n4. Click **Apply**.", "check": "**Columns > Daily** shows your daily numbers.", "lost": "Tick the six columns. Save as \"Daily\"."},
+  {"say": "Add a weekly 5-minute reminder: look for campaigns you didn't make, or budgets that jumped.", "check": "The check is in your calendar. Find something odd? Turn it off, remove unknown people, contact Meta support, and tell your bank.", "lost": "Add a weekly calendar reminder."},
+  {"say": "Later, with a few hundred visitors: **All tools > Audiences > Create audience > Custom audience > Website**. Make \"All visitors, last 30 days\". Then 180 days, and buyers.", "check": "They show \"Ready\" (can take a few hours).", "lost": "Not enough visitors yet? Skip this for now."}
  ]},
-"8.3": {"intro": "Start Google simple. Add more campaigns as you grow.",
+"8.3": {"intro": "Your first ad needs only about eight settings. One campaign, 3 to 5 ads, a budget you're okay with. Or Helix can build it for you, switched off.",
  "steps": [
-  {"say": "Small store? Run two campaigns: brand search, plus one product campaign (a feed-only Performance Max, or Shopping).", "check": "You have brand search and one product campaign.", "lost": "Just two campaigns. That's it."},
-  {"say": "In Performance Max, give it only your product feed. Add your brand name under **Brand exclusions**.", "check": "PMax spends on new searches. Brand search covers your name.", "lost": "Add your brand to **Brand exclusions**."},
-  {"say": "As you grow, add search for your top search words, and split PMax by best sellers or margin.", "check": "Bigger accounts get more control.", "lost": "Small still? Skip this card."},
-  {"say": "Much bigger? Add new-customer campaigns, competitor search, Demand Gen, and one campaign per country.", "check": "Each campaign has one job.", "careful": "Standard Shopping gives more control over searches. Use it if PMax spends where you can't control.", "lost": "Not that big yet? Skip."}
+  {"say": "In Events Manager, check your pixel shows **Purchase** events. No? Do Lesson 8.2 steps 4 to 6 first.", "check": "You see Purchase events.", "lost": "See **Purchase** in Events Manager? Then carry on."},
+  {"say": "Pick a daily budget.\n\n- Selling under about $5,000 a month? $20 to $50 a day for two weeks.\n- Selling more? About 2 times your break-even cost per sale (on **Profit**), inside your guide from Lesson 1.9.", "check": "You have one daily budget, like $30.", "lost": "Just starting? Pick $20 a day."},
+  {"say": "Get 3 to 5 ads ready: short videos or pictures of your best seller, each with a different first line, in 4:5 and 9:16.", "check": "3 to 5 files, plus one main text and one headline.", "lost": "Three pictures of your best seller. That's enough."},
+  {"say": "Want Helix to build it? Click **Do it for me**, then skip to step 9. It's made switched off. Nothing spends until you turn it on.", "check": "A paused campaign appears in Ads Manager.", "lost": "Click **Do it for me**. Helix sets it up, switched off."},
+  {"say": "Building it yourself? Click **+ Create**, choose **Sales**, **Continue**, **OK**, check Advantage+ says **On**, name it \"01-Sales-First\", click **Next**.", "check": "The campaign page is open with Sales as the goal.", "lost": "**Create**, **Sales**, **Next**."},
+  {"say": "Type your daily budget. Under **Conversion**, check your pixel (or dataset) is picked and the event is **Purchase**.", "check": "Budget and Purchase are set. If you see **Conversion location**, pick **Website**.", "lost": "Budget in, **Purchase** picked."},
+  {"say": "Leave the audience on Meta's suggestion and placements on **Advantage+ placements**. Click **Next**.", "check": "You're on the ad screen. Country box? Pick where you ship.", "lost": "Leave the defaults. Click **Next**."},
+  {"say": "Add your ads.\n\n1. Click **Add media**, upload your files.\n2. Paste text into **Primary text**.\n3. Paste your headline.\n4. Paste your product link in **Website URL**.\n5. Check the phone preview.", "check": "Every ad shows the right picture, text and link.", "lost": "Upload, paste text, paste link. Check the preview."},
+  {"say": "Go live. Built it yourself? Click **Publish**. Helix built it? Open it, check budget, ads and link, then turn its switch blue.", "check": "**Delivery** shows \"In review\", then \"Learning\".", "lost": "Check the link. Turn it on."},
+  {"say": "Leave it for 3 days. Then compare cost per purchase with your break-even cost per purchase.", "check": "You know which ads are under, near or over break-even.", "careful": "Big edits in the first days restart learning. Only change something broken, like a wrong link.", "lost": "Wait 3 days. Then compare one number."}
  ]},
-"8.4": {"intro": "Keywords are the search words you want to show for. Buying words bring buyers.",
+"8.4": {"intro": "New sales campaigns start with Advantage+ on (automatic). Narrow the settings and it turns manual. Start automatic.",
  "steps": [
-  {"say": "List buying words: \"buy\", \"best\", \"price\", or product type plus a feature, like \"linen shirt men\".", "check": "You have 20 to 50 keywords.", "lost": "Write ten search words a buyer would type."},
-  {"say": "In **Tools > Planning > Keyword Planner**, check monthly searches and competition for each.", "check": "Each keyword has a number and a level.", "lost": "Check your top five in Keyword Planner."},
-  {"say": "Group keywords by theme. Keep each ad group to a handful of close words.", "check": "Each group is tightly themed.", "lost": "Put similar words together."},
-  {"say": "Make a shared negative list (words you never want, like \"free\" or \"jobs\") in **Tools > Shared library > Exclusion lists** (the **Negative keyword lists** tab). Click **Apply to campaigns** and pick every campaign.", "check": "Wasted searches are blocked everywhere.", "lost": "Add \"free\" and \"jobs\" as negatives."}
+  {"say": "In Ads Manager, click **+ Create**. Choose **Sales**, click **Continue**, then **OK**. Check **Advantage+** at the top right says **On**.", "check": "Your main campaign for new customers is Advantage+.", "lost": "**Create**, **Sales**, keep Advantage+ on."},
+  {"say": "Only for warm audiences or a controlled test: **+ Create > Sales > Continue**, then set the audience or placements you need. Meta shows **Advantage+ off**.", "check": "Warm and test campaigns are manual.", "lost": "No warm campaign yet? Skip this card."},
+  {"say": "In the ad, go to **Ad creative** and open **Enhancements** (Advantage+ creative). Turn off changes that alter how your ad looks. Check **Advanced preview** too.", "check": "The preview shows your ad as you made it.", "lost": "Turn off auto changes you don't like."}
  ]},
-"8.5": {"intro": "Search ads are short. Every line has to earn its spot.",
+"8.5": {"intro": "The format is the shape of the ad. The right shape helps your message show.",
  "steps": [
-  {"say": "Write up to 15 headlines: product plus benefit, the offer, proof, urgency, your brand. Pin one only if it must always show.", "check": "Ad strength says \"Good\" or \"Excellent\".", "careful": "Pinning lowers ad strength. Pin as little as you can.", "lost": "Write ten short headlines."},
-  {"say": "Write descriptions with reasons to buy, shipping and returns, and what to do next.", "check": "Each answers \"why here, why now\".", "lost": "Write two descriptions."},
-  {"say": "Add extras: sitelinks to best collections, callouts like \"Free shipping\", lists of styles, and images.", "check": "Your ad takes more space.", "lost": "Add two sitelinks."}
+  {"say": "For each ad, pick a format from the lesson table. For most stranger ads: a single video.", "check": "Every brief names one format.", "lost": "Not sure? Use a single video."},
+  {"say": "Make each ad in 4:5 (feed) and 9:16 (Stories and Reels).", "check": "Each ad fits everywhere without cropping.", "lost": "Make two sizes of each ad."},
+  {"say": "Keep text inside the safe zones so buttons don't cover it.", "check": "The preview shows no hidden text.", "lost": "Keep text away from edges."}
  ]},
-"8.6": {"intro": "Target ROAS tells Google how much in sales you want for each $1 of ads. Base it on your break-even.",
+"8.6": {"intro": "Catalog ads show each person the products they looked at. They work when your product list and pixel agree.",
  "steps": [
-  {"say": "Work out break-even ROAS: 1 ÷ (1 − VCR). VCR is order costs as a share of sales. With VCR at 45%, that's about 1.82.", "check": "You have your break-even ROAS.", "lost": "Use 1 ÷ (1 − VCR)."},
-  {"say": "In the campaign's **Bidding**, set target ROAS above break-even with room for profit. Example: 2.4 if break-even is 1.82.", "check": "Google aims for a target that leaves profit.", "lost": "Set it a bit above break-even."},
-  {"say": "Change targets by about 10% at a time. Wait a week or two between changes.", "check": "Bidding stays steady.", "lost": "Small changes only."}
+  {"say": "In Shopify, open the **Facebook & Instagram** sales channel and connect your catalog. Check prices and stock in **Commerce Manager**.", "check": "Products match your store.", "lost": "Connect your catalog in the Facebook & Instagram sales channel."},
+  {"say": "In **Commerce Manager**, open your catalog, then **Events**. Check the match rate between your pixel and catalog. Aim for close to 100%. If low, reconnect through the Facebook & Instagram sales channel.", "check": "Pixel events point to catalog products.", "careful": "Don't add a second pixel.", "lost": "Look for the match rate under **Events**."},
+  {"say": "Make 2 or 3 product sets: best sellers, one category, in stock only.", "check": "Sets are ready.", "lost": "Make one set: best sellers."},
+  {"say": "Make a **Sales** campaign with your catalog. Show it to people who viewed or added to cart in 14 days. Leave out buyers from the last 7 days. As a rule of thumb, use 10 to 20% of your Meta budget.", "check": "Almost-buyers see what they looked at.", "lost": "Show your catalog to people who added to cart."},
+  {"say": "Optional: test a broad catalog ad for new people with your best-seller set.", "check": "You know if it finds new buyers.", "lost": "Skip this for now."},
+  {"say": "Each week, fix product errors in Commerce Manager and hide sold-out items.", "check": "No errors in the catalog.", "lost": "Check for errors once a week."}
  ]},
-"8.7": {"intro": "New customers grow the store. Google can favour them.",
+"8.7": {"intro": "Build ads in a switched-off campaign, copy them over, and turn them on together. That keeps tests fair.",
  "steps": [
-  {"say": "Upload your customer list in **Audience manager > Your data segments**.", "check": "Google knows who already bought.", "lost": "Upload your customer list."},
-  {"say": "In the campaign's **Customer acquisition** setting, choose to bid higher for new customers than existing ones, or to only bid for new customers.", "check": "The campaign favours new buyers. Bidding higher needs value bidding (target ROAS or maximise conversion value) and a Purchase goal.", "careful": "Only accept lower ROAS for new customers if they come back and buy again.", "lost": "Pick bid higher for new customers."}
+  {"say": "Open your switched-off build campaign. Click **Ads**. Click **+ Create** and make each new ad.", "check": "New ads sit there with \"Off\" under **Delivery**.", "lost": "Make the ad in your paused campaign."},
+  {"say": "Tick the new ads. Click **Duplicate**. Choose your live campaign and ad set. Click **Duplicate** again.", "check": "Copies appear in the live ad set, still off.", "lost": "Tick, **Duplicate**, pick the live ad set."},
+  {"say": "Open each copy. In **Ad setup**, choose **Use existing post**. Pick the original's post.", "check": "Each copy shows the same post. Option missing? Publish the original first.", "lost": "Choose **Use existing post** on each copy."},
+  {"say": "Tick all the new copies. Turn them on together. Click **Publish** if asked.", "check": "They all start on the same day.", "lost": "Turn them all on at once."},
+  {"say": "Leave them alone for 2 to 5 days before judging.", "check": "You judge settled numbers.", "careful": "Only schedule ads for a clear reason, like a sale start time.", "lost": "Don't touch for a few days. That's the task."}
  ]},
-"8.8": {"intro": "Ten to twenty minutes once a week keeps Google profitable. Most waste hides in search terms.",
+"8.8": {"intro": "After you start or change an ad set, Meta needs days to learn. Some edits restart that.",
  "steps": [
-  {"say": "Open **Insights and reports > Search terms**. Tick searches that cost money but never sell, click **Add as negative keyword**. Tick searches that sell, click **Add as keyword**.", "check": "Waste is blocked, winners are targeted.", "lost": "Block one wasteful search."},
-  {"say": "Check **Performance Max insights** for top products, searches and assets.", "check": "You know your top PMax products.", "careful": "PMax now has its own search terms report. You can block junk words there too.", "lost": "Look at your top PMax product."},
-  {"say": "Find campaigns marked \"Limited by budget\". If they hit your target, raise the budget about 20%.", "check": "Good campaigns aren't held back.", "lost": "Hitting target and limited? Raise 20%."},
-  {"say": "Compare brand and non-brand spend. Fix new issues in Merchant Center under **Products > Needs attention**.", "check": "You know your non-brand spend, and the feed is clean.", "lost": "Fix any new feed errors."}
+  {"say": "Before editing a live ad set, check if it restarts learning: adding or changing ads, changing the audience, event or bid strategy, pausing 7+ days, or a big budget change (a common guide is over 20%).", "check": "You only make big edits on purpose.", "lost": "Big change? Pause and think first."},
+  {"say": "Start new tests as new campaigns instead of editing working ones.", "check": "Working campaigns keep what they learned.", "lost": "New test = new campaign."},
+  {"say": "Judge on the last 7 days, not one day.", "check": "A weaker second week doesn't panic you.", "careful": "Copy winning ads instead of moving them, so each campaign keeps its learning.", "lost": "Look at 7 days, not today."}
  ]},
-"8.9": {"intro": "Demand Gen shows videos and pictures on YouTube, Discover, Gmail and the Display Network. Your best social videos often work there.",
+"8.9": {"intro": "Ten minutes a day, same steps each time. **Your ads** in Helix shows the verdicts too.",
  "steps": [
-  {"say": "Export your 3 best social videos in vertical and horizontal.", "check": "You have video files ready.", "lost": "Pick your best video. Export two shapes."},
-  {"say": "Make a Demand Gen campaign with those videos, aimed at buyers, visitors and lookalikes.", "check": "The campaign is live.", "lost": "Make one Demand Gen campaign."},
-  {"say": "Judge it by people who saw it and bought later, and by your total MER.", "check": "You judge the whole-store effect.", "lost": "Look at total MER, not just clicks."}
+  {"say": "Pick today's word: push, careful push, hold or defend (Lesson 1.6).", "check": "You have one word.", "lost": "Not sure? Pick **hold**."},
+  {"say": "In Ads Manager, set **Last 7 days**, choose **Columns > Daily**. On **Campaigns**, read **Amount spent** and **Frequency**.", "check": "You know if any campaign overspends or tires people.", "lost": "Look at spend and frequency. Anything strange?"},
+  {"say": "Grade each ad: **Star** (give more), **Steady** (leave), **Passenger** (leave), **Drain** (lots of spend, poor results: turn off).", "check": "Drains are switched off.", "lost": "Find one drain. Turn it off."},
+  {"say": "Label each campaign: winning, learning, shaky or dying.", "check": "Every campaign has a label.", "lost": "One word per campaign."},
+  {"say": "Take one action. Write it in your notes.", "check": "One action, about 10 minutes total.", "lost": "Do one thing. Write it down."}
  ]},
-"8.10": {"intro": "Big sales change shoppers overnight. Google needs a nudge to keep up.",
+"8.10": {"intro": "Reach is how many people an ad can reach. An ad with tiny reach can't grow.",
  "steps": [
-  {"say": "Tell Google a sale is coming.\n\n1. Click **Tools > Budgets and bidding > Adjustments**, then the **Seasonal** tab.\n2. Add one with dates that cover the sale. Best for sales of 1 to 7 days.\n3. Set the expected change to what you saw in past sales.\n4. Save. Google goes back to normal by itself.", "check": "It's scheduled for the sale dates.", "lost": "Add a seasonal adjustment for the sale dates."},
-  {"say": "Add promotions and sale prices to your product feed.", "check": "Shopping ads show the sale price.", "lost": "Add sale prices to the feed."},
-  {"say": "Raise budgets slowly in the week before.", "check": "Campaigns have enough money at the start.", "lost": "Raise budgets a little each day before."}
+  {"say": "On the **Ads** tab, set **Last 7 days**. Add **Reach** and **Frequency** columns. Click the **Reach** header to sort.", "check": "You see which ads reach many people.", "lost": "Sort your ads by **Reach**."},
+  {"say": "Mark ads with big reach and an okay cost per sale. They can grow.", "check": "You have a short list of ads that can take more spend.", "lost": "Circle big-reach ads with okay costs."},
+  {"say": "To spend more, pair a cheap low-reach ad with a big-reach ad in the same campaign.", "check": "The campaign can grow without tiring people fast.", "lost": "Put a big-reach ad next to your cheap one."}
  ]},
-"8.11": {"intro": "Google keeps adding AI features automatically. They can help, if you check them.",
+"8.11": {"intro": "Ads to strangers always look expensive, because Meta misses sales they cause later. Judge them fairly.",
  "steps": [
-  {"say": "Open **Campaigns**. Look at any campaign Google upgraded automatically.", "check": "You know which use AI features.", "lost": "Find any upgraded campaign."},
-  {"say": "Read the AI-written ad text. Check every page it sends people to.", "check": "Ads say only what you're happy with.", "lost": "Read one AI ad. Fix anything wrong."},
-  {"say": "Check brand exclusions are still on. Check search terms and negatives twice a week.", "check": "AI doesn't spend on your brand or junk.", "lost": "Check brand exclusions are still there."}
+  {"say": "Only compare stranger campaigns with other stranger campaigns.", "check": "They're ranked against each other.", "lost": "Strangers vs strangers only."},
+  {"say": "Each week, check how many orders come from new customers.", "check": "You know if stranger ads still bring new buyers.", "lost": "Count new-customer orders this week."},
+  {"say": "Judge stranger spend by your total MER trend on the Dashboard.", "check": "You see the whole-store effect.", "careful": "Only cut stranger spend when MER gets worse and new-customer orders drop.", "lost": "Look at total MER, not just Meta."}
  ]},
-"8.12": {"intro": "Google tries to rush you into a \"smart\" campaign. We'll skip that and build two simple ones: brand search and Performance Max. Helix doesn't connect to Google Ads yet, so you'll click along.",
+"8.12": {"intro": "Some audiences don't know you, some do. Each has its own numbers to watch.",
  "steps": [
-  {"say": "Go to ads.google.com, click **Start now**. When it asks for a campaign, find the small link **Switch to Expert Mode** or **Create an account without a campaign**. Click it.", "check": "You're making an account, not a campaign.", "lost": "Look for the small link at the bottom."},
-  {"say": "Pick your country, time zone and currency carefully. Untick the strategist calls and promo emails. Click **Submit**.", "check": "The account is made.", "careful": "Time zone and currency can't change later. Double-check.", "lost": "Check time zone and currency. Then submit."},
-  {"say": "Add a payment method under **Billing**.", "check": "A card or bank account is saved.", "lost": "Add a card in **Billing**."},
-  {"say": "In Shopify, install **Google & YouTube**. Click **Get started**. Connect your Google account, Merchant Center and Google Ads. Skip any campaign it offers.", "check": "Green ticks for accounts, products syncing and conversion settings.", "lost": "Install the app. Connect everything. Skip campaigns."},
-  {"say": "In Google Ads: **Goals > Conversions > Summary**. **Edit goal** on Purchases, check it's **Primary**. Set page view and add to cart to **Secondary**. Save.", "check": "Only Purchase counts.", "lost": "Purchase = Primary. Others = Secondary."},
-  {"say": "Click **+ Create > Campaign**. Choose **Sales** with **Purchase**, then **Search**. Name it \"01-Search-Brand\".", "check": "A Search campaign is open.", "lost": "**Create**, **Sales**, **Search**."},
-  {"say": "Under **Bidding**, choose **Target impression share**. Set **Anywhere on results page** to 90%. Set **Maximum CPC bid limit** to $0.50 to $1.", "check": "Your ad shows for your name at a capped cost.", "lost": "90%, and a $1 max per click."},
-  {"say": "Under **Networks**, untick **Search partners** and **Display Network**. Add countries you ship to. In **Location options**, pick **Presence**.", "check": "It runs only on Google search, where you ship.", "lost": "Untick both networks. Add your countries."},
-  {"say": "Add your brand as keywords both ways: `[your brand]` and `\"your brand\"`, plus misspellings. Write one ad with 10 to 15 headlines and 4 descriptions. Budget $5 to $10 a day. Click **Publish campaign**.", "check": "Status is \"Eligible\" (maybe \"Under review\" for a few hours).", "lost": "Brand keywords, one ad, $5 a day, publish."},
-  {"say": "Click **+ Create > Campaign**. Choose **Sales**, then **Performance Max**. Pick your product feed. Under **Bidding**, choose **Conversion value** with no target yet. Set a daily budget inside your guide (Lesson 1.9).", "check": "PMax is connected to your products with a budget.", "lost": "**Create**, **Performance Max**, pick your feed, set budget."},
-  {"say": "In the asset group, remove extra headlines, images, videos and sitelinks where Google allows (**Edit**, then **x**). Add your brand under **Brand exclusions**. Click **Publish campaign**.", "check": "PMax runs mostly from your feed.", "lost": "Add brand exclusions. Publish."},
-  {"say": "Leave both for 7 days. Then compare spend, purchases and ROAS with your break-even ROAS.", "check": "You know if each is above or below break-even.", "careful": "Don't apply Google's recommendations without reading each one. Keep auto-apply off.", "lost": "Wait 7 days. Compare ROAS with break-even."}
+  {"say": "Label each campaign Cold, Mixed, Warm or Hot in its name (Lesson 7.7).", "check": "Every name shows its layer.", "lost": "Add Cold or Warm to each name."},
+  {"say": "Compare each campaign with the numbers for its layer in the lesson table.", "check": "Each is judged against the right yardstick.", "lost": "Compare cold with the cold row only."}
  ]},
-"8.13": {"intro": "Google Ads hides a lot behind menus. You only need a few screens.",
+"8.13": {"intro": "A scaling challenge is a planned 2 to 4 week push to spend more. Even if it fails, you learn.",
  "steps": [
-  {"say": "Open ads.google.com. Check the account name and ID at the top.", "check": "You're in the right account.", "lost": "Check the account name."},
-  {"say": "Click **Campaigns**. Set the date to **Last 7 days**.", "check": "You see last week.", "lost": "**Campaigns**, **Last 7 days**."},
-  {"say": "Click **Columns**. Add **Conv. value** and **Conv. value / cost**. Click **Apply**.", "check": "You see sales and ROAS per campaign.", "lost": "Add the two columns."},
-  {"say": "Click **Insights and reports > Search terms**.", "check": "You know where wasted searches are.", "careful": "Google moves menus often. Use the search box at the top and type the page name.", "lost": "Find **Search terms**. Just look."}
+  {"say": "Make 6 to 10 new ads before you start.", "check": "Fresh ads are ready.", "lost": "Have new ads ready first."},
+  {"say": "Write down the most you're willing to lose.", "check": "You have a limit that ends the challenge.", "lost": "Write one dollar limit."},
+  {"say": "Open the campaign (campaign budget) or ad set (ad set budgets), raise **Daily budget** by 10% to 20%, click **Publish**. Write today's spend and reach.", "check": "You can see if new spend finds new people.", "lost": "Raise budget a little. Write it down."},
+  {"say": "Stay at each new level for 10 to 14 days.", "check": "MER has time to settle.", "lost": "Wait about two weeks at each level."},
+  {"say": "Read the result.\n\n- Spend grew much faster than reach? Add new ads, or remove some exclusions.\n- MER didn't settle? Go back one step and find out why.", "check": "You have a clear next action.", "lost": "Didn't settle? Step back one level."}
+ ]},
+"8.14": {"intro": "Caps tell Meta the most you will pay. Try them only when a campaign is steady.",
+ "steps": [
+  {"say": "Only try this when a campaign already has at least 50 sales a week and steady results. That's a rule of thumb: caps need plenty of data. Check on the **Campaigns** tab.", "check": "You know if the campaign is ready. If not, keep the default setting.", "lost": "Wait until you get 50 sales a week."},
+  {"say": "Find your break-even cost per sale from Lesson 1.5. Write it down.", "check": "One number, for example $40.", "lost": "Find your break-even cost per sale."},
+  {"say": "Duplicate the campaign. In the copy, find **Bid strategy** (campaign if it uses campaign budget, else ad set). Choose **Cost per result goal** (once called a cost cap). Type a number a little under break-even, for example $36.", "check": "A test copy that aims to keep the average cost per sale near your number. Not guaranteed.", "lost": "Copy the campaign and type a number just under break-even."},
+  {"say": "Set the budget a bit higher than normal. Caps often spend less than the budget, so a bigger budget gives Meta room.", "check": "The capped copy is not starved of money.", "lost": "Give the copy a bit more budget."},
+  {"say": "Run both for 7 days. Compare total sales and cost per sale.", "check": "You know if the cap made you more profit. If it barely spent, raise the cap by 10% and try again.", "lost": "Wait 7 days and compare."},
+  {"say": "Optional: in **Advertising settings** (**All tools**), look for **Value rules**. Not every account has them. They tell Meta to bid more for groups worth more to you, like an age group with bigger orders. Add one rule only if your own sales data proves that group spends more.", "check": "At most one rule, backed by your own numbers.", "lost": "Skip this unless your data proves it."}
+ ]},
+"8.15": {"intro": "Meta credits sales within 1 or 7 days of a link click, or 1 day of a view or other tap. That isn't the full truth, so we double-check.",
+ "steps": [
+  {"say": "Click the **Columns** menu, then **Compare attribution models**. Tick **Incremental**, click **Apply**. It counts only sales Meta thinks the ad truly caused.", "check": "You see how many sales are likely truly extra.", "lost": "Optional. Skip if you don't see it."},
+  {"say": "Each week, compare Meta's sales with your real Shopify sales and your MER.", "check": "You trust your store's numbers first.", "lost": "Shopify is the truth. Meta is a hint."},
+  {"say": "When spend is big enough, run a holdout test (Lesson 9.10).", "check": "You know how many sales ads really cause.", "lost": "Small spend? Skip for now."}
+ ]},
+"8.16": {"intro": "Meta has a few common problems. Each one has a known fix.",
+ "steps": [
+  {"say": "Find your problem in the lesson table.", "check": "You have the matching fix.", "lost": "Find your problem's row."},
+  {"say": "Do the fix. Write it in your notes with the date.", "check": "It's fixed, and you'll know what you did if it comes back.", "lost": "Do the fix. Note the date."}
  ]}
 }

@@ -1,71 +1,46 @@
 {
-"4.1": {"intro": "Your brand core is one page about who you are. Everything you write comes from it.",
+"4.1": {"intro": "Lots of people who see an ad don't click. They tap your name to check you out first. A strong profile makes every ad dollar work harder, for free.",
  "steps": [
-  {"say": "Describe 2 or 3 types of customer. For each: what they want, what bugs them, and where they hang out online.", "check": "You have 2 or 3 short customer notes.", "lost": "Describe one customer in three lines."},
-  {"say": "Write one sentence: why should people choose you?", "check": "You have one promise sentence.", "lost": "Finish this: \"Choose us because ...\""},
-  {"say": "Pick three words for how you sound. Pick three words you never use.", "check": "You have a six-word voice guide.", "lost": "Three words you are. Three words you're not."},
-  {"say": "Write two or three values. Next to each, write one thing you really do that proves it.", "check": "Every value has proof.", "lost": "One value, and one thing you do that shows it."},
-  {"say": "Write your story in under 100 words: why your brand exists. Save all five answers on one page.", "check": "One brand page is saved where helpers and tools can read it.", "lost": "Write why you started, in a few lines. Save the page."}
+  {"say": "Open your Instagram, TikTok and Facebook profiles on your phone like a stranger would (logged out, or in a private window).", "check": "You see each profile the way an ad viewer does.", "lost": "Open your Instagram in a private window."},
+  {"say": "Check each profile does three jobs: proves you're real, shows what you sell, and gives a clear next step.", "check": "You have a list of which job each profile misses.", "lost": "Is there a clear link to your shop? Yes or no."},
+  {"say": "Fix the biggest gap on each profile with the checklist in Lesson 4.2.", "check": "Every profile does all three jobs.", "lost": "Fix one gap on Instagram."}
  ]},
-"4.2": {"intro": "A customer profile describes one type of buyer, using their real words. Real words beat guesses.",
+"4.2": {"intro": "A profile is a mini landing page. The checklist makes sure it builds trust and matches your ads.",
  "steps": [
-  {"say": "Collect 30 to 50 real customer quotes from reviews, a short survey and support emails.", "check": "You have one document of real quotes.", "lost": "Copy 10 customer quotes into one document."},
-  {"say": "For one profile, write their age range and life stage. Then write the job your product does for them.", "check": "The profile has a who and a why.", "lost": "Who are they? What problem do you solve for them?"},
-  {"say": "Add their top 3 worries and the exact words they use for the problem and the product.", "check": "You have phrases you can copy into ads.", "lost": "Write three worries in their words."},
-  {"say": "Add where they shop and what they compare you with. Then do the same for each profile.", "check": "You know your real competitors and channels.", "lost": "Write where they shop. One place is enough for now."}
+  {"say": "Go through every row of the lesson's checklist on Instagram.", "check": "Each Instagram item is ticked or fixed.", "lost": "Check the first 3 rows."},
+  {"say": "Do the same checklist on TikTok and Facebook.", "check": "All three profiles pass.", "lost": "Do TikTok next."},
+  {"say": "Check the product, offer and look in your current ads also show on each profile (like \"free shipping this week\").", "check": "Ads and profiles tell the same story, so trust stays when people tap through.", "lost": "Put your ad's offer in your bio."}
  ]},
-"4.3": {"intro": "Brand guidelines are a short guide anyone can follow, so everything looks like you.",
+"4.3": {"intro": "Posting often enough that you can keep it up beats posting a lot. Batching makes it easy.",
  "steps": [
-  {"say": "Add your logo versions and how much empty space to leave around them.", "check": "Each logo has a clear-space rule.", "lost": "Put your logo on a page. Note: leave space around it."},
-  {"say": "Add your colours with their hex codes (like #0B1F3A), and your fonts and sizes.", "check": "Anyone can match your colours and fonts.", "lost": "Write your main colour code and your font name."},
-  {"say": "Describe your photo and video style: light, framing and props. Add 3 example images.", "check": "A freelancer could shoot on-brand from this page.", "lost": "Add three photos you love the look of."},
-  {"say": "Add good and bad examples of your voice, and do's and don'ts for ads, emails and posts. Share it as one link or PDF.", "check": "The guide is done and shared.", "lost": "Add one good and one bad example. Share the link."}
+  {"say": "Pick the posting rhythm in the lesson's table that fits your stage.", "check": "You have a weekly posting goal for each platform.", "lost": "Start with 3 posts a week."},
+  {"say": "Batch it: film once a week, then schedule the whole week in Meta Business Suite or a scheduler.", "check": "A week of posts is scheduled in one sitting.", "lost": "Film 3 videos in one go."},
+  {"say": "Make every post good enough to be an ad later. Put most of the value in the first quarter of the video. Say key points twice.", "check": "Your best free posts can become ads, partnership ads or Spark ads. Spark ads are TikTok ads that run a real post.", "lost": "Put the best bit first."}
  ]},
-"4.4": {"intro": "Content pillars are the 4 to 6 topics you always post about. They stop the blank-page feeling.",
+"4.4": {"intro": "Organic reach means people who see your posts without you paying. A few habits grow it.",
  "steps": [
-  {"say": "Write your 4 to 6 topics. Ideas: proof, teaching, story and community, product and offer.", "check": "You have a list of topics.", "lost": "Pick four topics from the ideas list."},
-  {"say": "For each place you post, decide how much of each topic to use. Use the lesson table to start.", "check": "Each channel's mix adds up to 100%.", "lost": "Copy the lesson table's mix for now."},
-  {"say": "Plan one month of posts using that mix.", "check": "You have a month of ideas, each with a topic and a channel.", "lost": "Plan one week of posts first."},
-  {"say": "Write what goes in each topic. **Proof:** reviews, customer photos, press. **Teaching:** how to use, myths, care. **Story and community:** you, behind the scenes, customers. **Product and offer:** launches, restocks, bundles, sales.", "check": "Every topic has a short list of post types.", "lost": "Write two post ideas under each topic."},
-  {"say": "Check your month against a rough mix: 40% teaching and proof, 30% story and community, 30% product and offer.", "check": "Your plan follows the mix.", "lost": "Count your posts by topic. Roughly right is fine."},
-  {"say": "Fill gaps with ideas that never run out: reviews, comments, support questions (\"You asked, we answered\"), and a regular series.", "check": "You have more ideas than posting slots.", "lost": "Turn one customer question into a post."}
+  {"say": "On Instagram, post a trial reel so non-followers see it first. Check results after 24 hours. Share winners with your followers.", "check": "You test hooks without cluttering your feed.", "lost": "Post one trial reel."},
+  {"say": "Say your keywords out loud, and put them in on-screen text and captions (\"linen shirt for hot weather\").", "check": "Your posts show up in social search.", "lost": "Put one keyword in your caption."},
+  {"say": "Remake the first three seconds of your best free posts with new hooks (Lesson 6.8). Post them again.", "check": "Proven posts get a second life.", "lost": "Give your best post a new opening."},
+  {"say": "Make collab posts with creators and partner brands. Reply to every comment in the first hour.", "check": "You reach partners' audiences and get early likes and comments.", "lost": "Reply to every comment in the first hour."},
+  {"say": "Start a broadcast channel or close group for your biggest fans. Answer questions in forums where customers ask for ideas. Say who you are, and never spam.", "check": "Fans get early access, and new customers find you elsewhere too.", "lost": "Answer one forum question honestly."}
  ]},
-"4.5": {"intro": "A calendar shows what you'll post and when. Plan around your sales dates.",
+"4.5": {"intro": "Reviews, customer posts and kind replies turn curious visitors into buyers.",
  "steps": [
-  {"say": "Mark your big dates first: launches, sales, Mother's Day, Black Friday.", "check": "Your key dates are on the calendar.", "lost": "Write your next three big dates."},
-  {"say": "Add product stories and tips in the 2 weeks around each date.", "check": "Each sale has warm-up posts.", "lost": "Add two posts before your next sale."},
-  {"say": "Fill the gaps with community posts and happy-customer posts.", "check": "Every week has at least 3 posts planned.", "lost": "Add one customer post each week."},
-  {"say": "Before reposting a customer's photo or video, message them and get a written yes.", "check": "You have a saved yes for every customer post.", "lost": "Always ask first. Save their yes."}
+  {"say": "Turn your best reviews into an Instagram highlight, a carousel, and a video where you read them out.", "check": "Reviews show on your profile.", "lost": "Make a highlight with 3 reviews."},
+  {"say": "Ask happy customers to tag you. With permission, reshare their posts to Stories and save them to a highlight.", "check": "Customer posts fill a highlight.", "lost": "Reshare one tagged post."},
+  {"say": "Keep shop ratings healthy where you sell through social shops. Reply to bad reviews publicly and kindly, then fix the problem privately.", "check": "Future customers see a calm, helpful reply.", "lost": "Reply kindly to one bad review."}
  ]},
-"4.6": {"intro": "Free posts are a free way to test ad ideas. Posts people watch usually make good ads.",
+"4.6": {"intro": "Social shops let people browse your products inside the app. Since 2025, Facebook and Instagram shops send buyers to your website to pay. TikTok Shop keeps checkout in the app, but only in some countries. See Lessons 11.6 and 11.11 too.",
  "steps": [
-  {"say": "Film 3 to 5 short videos in one or two sessions a week. Post them across the week.", "check": "You post 3 to 5 videos a week without filming every day.", "lost": "Film three short videos in one go."},
-  {"say": "After 48 hours, check each post's watch time in the app's insights.", "check": "You know which 1 or 2 posts held attention best.", "lost": "Which video did people watch longest?"},
-  {"say": "Where the app has a test post feature, like Instagram trial reels, use it. It shows a post to people who don't follow you first.", "check": "You can try ideas on new people safely.", "lost": "Optional. Skip if your app doesn't have it."},
-  {"say": "Reply to every comment in the first hour after posting.", "check": "Comments get quick answers.", "lost": "Reply to comments soon after you post."},
-  {"say": "Add your best post to your ad ideas list.", "check": "Your next ad starts from an idea that worked.", "lost": "Write your best post's name on your ad list."}
+  {"say": "Connect a clean catalog with one price per product and correct stock.", "check": "The shop catalog matches your store.", "lost": "Check your best seller's price matches."},
+  {"say": "Write shipping times and returns clearly in the shop settings.", "check": "Buyers know what to expect, which protects your shop score.", "lost": "Add your shipping time."},
+  {"say": "Check which store features don't work in TikTok Shop's in-app checkout (like thank-you page offers). Check seller fees. Make sure in-app orders flow into your store and email app.", "check": "In-app orders make money and land in your normal systems.", "lost": "Check the seller fees."}
  ]},
-"4.7": {"intro": "A community is customers who talk to you and each other. It works best when people buy again.",
+"4.7": {"intro": "A profile that's out of date or doesn't match your ads loses buyers. Helix doesn't check your social profiles yet, so this is your own 10-minute check.",
  "steps": [
-  {"say": "Check how often customers buy again. In Shopify: **Analytics > Reports > New vs returning customers**. If people rarely rebuy, focus on reviews and creators instead and skip this lesson.", "check": "You know if community is worth it for you.", "lost": "Do people buy again? If rarely, skip this lesson. That's okay."},
-  {"say": "Give customers a place and a reason to talk: a private group, events, challenges, or sharing their photos.", "check": "You have one community space with a clear reason to join.", "lost": "Pick one place for customers to chat."},
-  {"say": "Make customers the star of your posts, not the product.", "check": "At least one post a week stars a customer.", "lost": "Share one customer photo this week (with their yes)."},
-  {"say": "Read their questions each week. Add new ones to your worries list from Lesson 3.3.", "check": "Your ideas and FAQ grow from real questions.", "lost": "Write down one new question each week."},
-  {"say": "Run a poll so customers help choose something: a colour, a name or a flavour.", "check": "Customers had a say.", "lost": "Post one poll."},
-  {"say": "Use real customers as the faces of a collection.", "check": "Real customers appear in your marketing.", "lost": "Ask one customer to be in a photo."},
-  {"say": "Run a small event or live session. Reward your biggest fans with early access, gifts or a VIP group.", "check": "Your keenest fans feel looked after.", "lost": "Send one thank-you gift to a big fan."},
-  {"say": "Share feedback you acted on. For example: \"You asked for bigger sizes. Here they are.\"", "check": "Customers see their voice matters.", "lost": "Post one \"you asked, we did it\" update."}
- ]},
-"4.8": {"intro": "When people see the person behind the brand, they trust it more. Press mentions add proof.",
- "steps": [
-  {"say": "Post one founder post a week: an opinion, behind the scenes, or a lesson you learned.", "check": "People see a real person every week.", "lost": "Post one behind-the-scenes photo this week."},
-  {"say": "Each month, pitch one story (not a product) to a journalist or podcast. For example, your journey or a trend.", "check": "You sent a pitch and wrote it down.", "lost": "Send one short pitch email this month."},
-  {"say": "When you get press, add their logo and a quote to your home page and ads.", "check": "Press proof shows where shoppers decide.", "lost": "Got press? Add the logo to your home page."}
- ]},
-"4.9": {"intro": "Creators can spread your brand fast. Send widely, then pay to run the best posts as ads.",
- "steps": [
-  {"say": "Send free product to 20 or more creators who match your customer.", "check": "Product is on its way to lots of creators.", "careful": "Ask creators to say in their posts that it was a gift.", "lost": "Send product to five creators to start."},
-  {"say": "Pay the best ones for usage rights (permission to use their video in your ads) for a set time, like 3 months.", "check": "You have signed permission to run their content as ads.", "lost": "Ask your best creator for permission to use their video in ads. Get it in writing."},
-  {"say": "Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand. See Modules 5, 7 and 19.", "check": "The ads are live and you can compare them with your own ads.", "lost": "Turn one creator video into an ad."}
+  {"say": "Read the checks in the lesson's table.", "check": "You know what to look at.", "lost": "Read the first 3 checks."},
+  {"say": "Open your Instagram profile. Mark each row pass or fail.", "check": "You have a short list of rows that fail.", "lost": "Mark one row pass or fail."},
+  {"say": "Fix one failed item this week.", "check": "One less row fails when you check again next month.", "lost": "Fix just one."}
  ]}
 }

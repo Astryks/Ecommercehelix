@@ -5,12 +5,15 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { listModules } from "@/lib/learn";
 import { StageTrio } from "@/components/StageTrio";
-import { STAGE_INFO, STAGE_ORDER, type StageId } from "@/lib/stages";
+import { FOUNDATION_MODULES, STAGE_INFO, STAGE_ORDER, type StageId } from "@/lib/stages";
 
 export const metadata: Metadata = pageMeta({ title: "The Helix Playbook: Free E-commerce Lessons", description: "Free step-by-step lessons on running a profitable online store: ads, conversion, email, profit and scaling, organised into Attract, Convert and Grow.", path: "/learn" });
 
 export default function Learn() {
-  const modules = listModules();
+  const all = listModules();
+  const foundations = all.filter((m) => FOUNDATION_MODULES.includes(m.number));
+  // The course runs in order: foundations first, then Attract, Convert, Grow.
+  const modules = all.filter((m) => !FOUNDATION_MODULES.includes(m.number));
   const lessonsOf = (m: (typeof modules)[number]) => m.lessons.filter((l) => l.ref);
   const counts = Object.fromEntries(STAGE_ORDER.map((id) => [id, {
     modules: modules.filter((m) => m.stage === id).length,
@@ -23,7 +26,7 @@ export default function Learn() {
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Learn</p>
         <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">The Helix <span className="grad-text">Playbook</span></h1>
         <p className="mt-lead max-w-2xl text-slate-600">
-          {modules.length} modules and {modules.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons ({modules.reduce((a, m) => a + m.steps, 0)} steps) on running a profitable online store. Every lesson is a short &ldquo;why this matters&rdquo;, then one instruction at a time with the result you should see and simple tips. Press <strong>Done, next step</strong> or tick the checklist; Helix remembers. Hover any dotted word for a plain meaning. Free for everyone.
+          {all.length} modules and {all.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons ({all.reduce((a, m) => a + m.steps, 0)} steps) on running a profitable online store. Every lesson is a short &ldquo;why this matters&rdquo;, then one instruction at a time with the result you should see and simple tips. Press <strong>Done, next step</strong> or tick the checklist; Helix remembers. Hover any dotted word for a plain meaning. Free for everyone.
         </p>
         <p className="mt-4">
           <Link href="/learn/words" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-cyan-800 hover:border-cyan-300">
@@ -35,8 +38,26 @@ export default function Learn() {
         </p>
         <section aria-labelledby="framework-h" className="mt-10">
           <h2 id="framework-h" className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">Three stages: Attract, Convert, Grow</h2>
-          <p className="mt-2 max-w-2xl text-slate-600">Every module and lesson sits in one stage. Bring the right people in, turn them into buyers, then keep more of every sale and scale it. Your daily plan moves between all three in the order your store needs.</p>
+          <p className="mt-2 max-w-2xl text-slate-600">The modules run in order: start with the two foundation modules, then Attract, Convert and Grow. Every module and lesson sits in one stage. Bring the right people in, turn them into buyers, then keep more of every sale and scale it. Your daily plan moves between all three in the order your store needs.</p>
           <div className="mt-5"><StageTrio counts={counts} hrefFor={(id) => `#${id}`} /></div>
+        </section>
+        <section id="start-here" aria-labelledby="start-here-h" className="mt-14 scroll-mt-6">
+          <div className="flex flex-wrap items-baseline gap-3 border-b border-slate-200 pb-3">
+            <h2 id="start-here-h" className="text-3xl text-slate-900">Start here</h2>
+            <p className="font-semibold text-slate-600">Know your profit and find what is holding it back.</p>
+          </div>
+          <ol className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {foundations.map((m) => (
+              <li key={m.slug}>
+                <Link href={`/learn/${m.slug}`} className="card flex h-full flex-col p-6 transition hover:-translate-y-0.5 hover:shadow-lg">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-cyan-700">Module {m.number}</span>
+                  <h3 className="mt-2 text-lg font-semibold">{m.title}</h3>
+                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-6 text-slate-600">{m.plain}</p>
+                  <p className="mt-4 text-xs text-slate-500">{lessonsOf(m).length} lessons</p>
+                </Link>
+              </li>
+            ))}
+          </ol>
         </section>
         {STAGE_ORDER.map((id) => {
           const st = STAGE_INFO[id];

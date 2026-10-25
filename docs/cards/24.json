@@ -1,48 +1,63 @@
 {
-"24.1": {"intro": "Each way to pay has its own fee, payout speed and risk. The fee on the price page is rarely the whole cost.",
+"24.1": {"intro": "One stolen password can cost more than a bad month. Thieves love ad accounts because they can spend your money fast. One hour of lock-down closes most doors.",
  "steps": [
-  {"say": "Download last month's payout reports from each provider (Shopify Payments, any wallet or buy now pay later provider).", "check": "You have one report per provider.", "lost": "Download your Shopify Payments report."},
-  {"say": "For each provider, divide total fees by the sales it handled. Example: $180 ÷ $9,000 = 2%.", "check": "You have a real fee rate per provider.", "lost": "Fees ÷ sales."},
-  {"say": "Add hidden costs: currency conversion when you withdraw, fixed per-order fees on small orders, and fees kept on refunds.", "check": "Your fee rates include everything.", "lost": "Add the currency fee if you have one."},
-  {"say": "Enter your blended fee rate (all fees ÷ all sales) in Helix as payment fees.", "check": "Helix profit uses your real fees.", "lost": "Enter one fee rate in Helix."},
-  {"say": "Keep the methods customers use. Drop any method under about 2% of orders that costs much more than cards.", "check": "Your payment list is lean.", "careful": "Outside the US: buy now pay later often lifts order value, but its fee is often several times a card fee. US: Shop Pay Installments has its own fee, set per store. Compare it with your margin before pushing it.", "lost": "Remove one rarely used, pricey method."},
-  {"say": "Check each provider's fee page once a year.", "check": "Fee rises never surprise you.", "lost": "Put a yearly reminder in your calendar."}
+  {"say": "List every account the business needs: email and domain, Shopify, Meta, Google, TikTok, your email tool, payment providers, bank, and domain registrar.", "check": "You have one list of every account.", "lost": "Write down your 5 most important accounts."},
+  {"say": "Turn on two-factor login (a second check after your password) on each. Use an authenticator app or security key, not text messages.", "check": "Every account asks for a second check at login.", "careful": "Text message codes can be stolen by moving your number to another SIM.", "lost": "Turn on two-factor for your email first."},
+  {"say": "Keep a different long password for every account in a password manager.", "check": "No password is used twice.", "lost": "Install a password manager."},
+  {"say": "Save each account's backup codes offline, where a trusted person can reach them.", "check": "You can get back in if you lose your phone.", "lost": "Print your email backup codes."},
+  {"say": "Make at least 2 trusted people full admins on Meta, Google and Shopify, each with their own login.", "check": "No one shares a login, and no single person can lock you out.", "lost": "Add one trusted admin on Meta."},
+  {"say": "Every quarter, tidy who has access.\n\n1. Remove people who no longer work with you.\n2. Look over admin and partner lists for anyone you don't know.", "check": "The access check is on your Helix calendar.", "lost": "Remove one person who left."},
+  {"say": "Turn on login and spending alerts by email and phone.", "check": "You hear about strange activity within minutes.", "careful": "In Australia, report cybercrime at ReportCyber (cyber.gov.au). In the US, use the FBI's IC3 (ic3.gov).", "lost": "Turn on login alerts for Meta."}
  ]},
-"24.2": {"intro": "A payment provider can hold some of your money if it sees risk. A hold in the busy season could stop you paying suppliers.",
+"24.2": {"intro": "Meta keeps your ad accounts, Pages, pixel and people in a business portfolio. Whoever owns it controls everything, so it must be you.",
  "steps": [
-  {"say": "Read each provider's rules on holds and reserves (money held back for a while in case of refunds), once.", "check": "You know what causes a hold.", "lost": "Read Shopify Payments' hold rules."},
-  {"say": "Before a big sale or launch, tell your providers the dates and expected sales.", "check": "A planned spike is less likely to cause a hold.", "lost": "Email your provider your sale dates."},
-  {"say": "Add tracking to every order within a day.", "check": "Slow fulfilment is a known risk signal, so fast tracking makes holds less likely.", "lost": "Add tracking to today's orders."},
-  {"say": "Show honest delivery times. State pre-order ship dates clearly.", "check": "Customers know when to expect orders.", "lost": "Add a ship date to pre-orders."},
-  {"say": "Keep at least one month of costs in cash, and a second payment method ready to switch on.", "check": "A hold can't stop the business.", "lost": "Set up a second payment provider as a backup."},
-  {"say": "If money is held, give the provider everything in one go.\n\n1. Ask exactly what they need (like tracking, invoices or ID).\n2. Send it all in one reply.\n3. Add a follow-up date to your Helix calendar.", "check": "The hold is sorted as fast as possible.", "careful": "Keep business details, bank account and ID up to date with every provider. Old details are a common cause of freezes.", "lost": "Ask what they need. Send it all at once."}
+  {"say": "Make the business portfolio yourself, with your business email. Make yourself and one trusted person admins.", "check": "You own the portfolio and have a backup admin.", "lost": "Add one backup admin."},
+  {"say": "Do business verification when Meta asks. Use your legal name, address and documents exactly as registered.", "check": "The portfolio shows as verified. Some features stay locked until you verify.", "lost": "Use your name exactly as registered."},
+  {"say": "Make the ad account inside your own portfolio. Give agencies and freelancers partner access only.", "check": "The ad account lists your portfolio as owner.", "lost": "Check you're the owner."},
+  {"say": "Set an account spending limit a little above your planned monthly spend. It counts total spend, so reset it each month.", "check": "Ads stop when the cap is reached. A hacker with admin access can change it, so lock logins too.", "lost": "Set a spending limit."},
+  {"say": "Add a backup payment method.", "check": "A failed card doesn't restrict the account.", "lost": "Add a second card."},
+  {"say": "Check billing currency and time zone before your first ad.", "check": "Both are right. Changing either later closes the account and starts a new one.", "careful": "Outside the US: in Australia, if GST registered, add your ABN in Meta billing so you're not charged GST, and check your card's international fee. US: use a business card, and call the card company before raising budgets.", "lost": "Check currency and time zone."},
+  {"say": "Connect the ad account to Helix.", "check": "Helix pulls your Meta spend and results each day.", "lost": "Connect Meta in Helix."}
  ]},
-"24.3": {"intro": "A chargeback is when a customer asks their bank to reverse a card payment. The money and a chargeback fee are taken straight away. On Shopify Payments, the fee comes back if you win. You have a short time to prove the sale was fine.",
+"24.3": {"intro": "Ad accounts get restricted for failed payments, policy flags, identity checks or odd activity. Most can be fixed if you stay calm and follow Meta's process.",
  "steps": [
-  {"say": "Open the chargeback in Shopify. Note the deadline, usually 7 to 21 days on Shopify Payments.", "check": "You know your deadline. Customers usually have about 120 days to dispute, often counted from the expected delivery date.", "lost": "Write down the deadline."},
-  {"say": "Read the reason: \"not received\", \"not as described\" or \"fraudulent\".", "check": "You know what proof you need.", "lost": "Find the reason word."},
-  {"say": "For \"not received\", gather tracking that shows delivery to the address given, plus any messages confirming details.", "check": "You have proof of delivery.", "lost": "Save the tracking page."},
-  {"say": "For \"not as described\", gather your product page at the time, photos, your returns policy, and messages offering a fix.", "check": "You can show the product matched the listing.", "lost": "Save a copy of the product page."},
-  {"say": "For \"fraudulent\", gather proof the real cardholder ordered: matching billing and shipping address, past orders, and opened tracking emails.", "check": "You have the best proof available. These are often the hardest to win.", "lost": "Check if billing and shipping match."},
-  {"say": "Write a short, factual response with the strongest proof first. Submit it.", "check": "It's submitted before the deadline.", "lost": "Put your best proof first. Submit."},
-  {"say": "Contact the customer politely. Some disputes are confusion they can withdraw.", "check": "Some disputes are withdrawn.", "lost": "Send one kind message."},
-  {"say": "Track your chargeback rate (disputes ÷ orders) every month. Example: 2 ÷ 1,000 = 0.2%.", "check": "You catch a rising rate before card networks penalise you. Disputes count even when you win. Aim to stay well under 1%.", "careful": "For pricey orders, use signature on delivery. It's the strongest proof you can buy.", "lost": "Disputes ÷ orders, once a month."}
+  {"say": "Open **Account Quality** in Meta. Read the exact reason.", "check": "You know why the account is restricted.", "lost": "Open **Account Quality**."},
+  {"say": "If a payment failed, fix the payment method and pay any balance owed.", "check": "Billing shows nothing owing.", "lost": "Update your card."},
+  {"say": "If Meta asks for identity checks (photo ID or video selfie), do them in the official app or Help Centre only.", "check": "The check is sent through an official channel.", "careful": "Meta never asks for passwords or payment by direct message. Ignore fake \"Meta support\" messages.", "lost": "Only use the official app."},
+  {"say": "Request a review once, with a short, factual explanation. Then wait.", "check": "One review request is in progress.", "lost": "Ask for one review. Then wait."},
+  {"say": "Don't open new ad accounts or portfolios to get around it.", "check": "You avoid looking like you're dodging the rules.", "lost": "No new accounts."},
+  {"say": "While you wait, keep sales coming from email, Google and free posts.", "check": "Sales keep going while ads are paused.", "lost": "Send one email to your list."},
+  {"say": "Afterwards, write down the cause and fix it: backup payment, policy-safe ad words, landing pages that match the ad.", "check": "The same problem is unlikely to happen again.", "lost": "Write the cause in one line."}
  ]},
-"24.4": {"intro": "Card testing is when fraudsters use your checkout to try stolen card numbers, usually with lots of tiny orders on your cheapest product.",
+"24.4": {"intro": "Speed matters. A hacked ad account can spend thousands in hours. Do these steps in order.",
  "steps": [
-  {"say": "Learn the signs: bursts of small orders, the same cheap item, odd names or emails, lots of failed payments, or different addresses on one card.", "check": "You can spot card testing.", "lost": "Many tiny orders at once? That's a sign."},
-  {"say": "Use your platform's protections: Shopify's fraud analysis and its built-in card testing protection on Shopify Payments.", "check": "You know what Shopify already blocks. Checkout bot protection is only on Shopify Plus, mainly for flash sales.", "lost": "Open an order and read its fraud analysis."},
-  {"say": "Read the fraud risk level on every order before shipping. Hold high-risk orders while you contact the customer.", "check": "No high-risk order ships unchecked.", "lost": "Check the risk level before you ship."},
-  {"say": "Cancel and refund any order that looks like fraud before shipping.", "check": "You pay a refund instead of a chargeback.", "lost": "Looks fake? Cancel and refund."},
-  {"say": "Use 3D Secure (an extra bank check at payment) where your provider allows it. Shopify Payments applies it only when the card's bank asks.", "check": "Risky payments get an extra check where your provider supports it. Some other providers let you set rules that request it.", "lost": "Check if your provider lets you request 3D Secure."},
-  {"say": "If testing keeps happening, raise the minimum order or hide your cheapest product for a while.", "check": "The attacks stop.", "careful": "Be careful with gift cards, and very large first orders going to parcel forwarding addresses.", "lost": "Hide your cheapest product for a week."}
+  {"say": "Turn off every active campaign you didn't make. Then pause all campaigns.", "check": "Nothing is spending.", "lost": "Pause everything."},
+  {"say": "Remove unknown people and partners from your business portfolio and ad account.", "check": "Only people you know have access.", "lost": "Remove anyone you don't know."},
+  {"say": "Change your passwords (email first, then Meta). Sign out of all sessions.", "check": "The intruder is logged out.", "lost": "Change your email password first."},
+  {"say": "Call your bank. Block the card linked to the ad account and ask about disputing the fake charges.", "check": "No more money can leave, and a dispute is started.", "lost": "Call your bank now."},
+  {"say": "Report the hack at facebook.com/hacked.", "check": "Meta has a case open.", "lost": "Go to facebook.com/hacked."},
+  {"say": "Write a timeline with screenshots: when you noticed, what was spent, what you changed.", "check": "You have proof for Meta, the bank and police.", "lost": "Take screenshots of the spend."},
+  {"say": "Report the crime (see Lesson 24.1). Keep the reference number.", "check": "You have a reference for your bank and Meta.", "lost": "Save the reference number."},
+  {"say": "Once safe, add the protections in Lessons 24.1 and 24.2, especially a spending limit.", "check": "The account is locked down.", "careful": "If someone set up a fake store or ad in your name, tell customers and report the fake pages to Meta.", "lost": "Set a spending limit."}
  ]},
-"24.5": {"intro": "A fast, fair refund is cheaper than a dispute. A clear rule means you don't decide each case from scratch.",
+"24.5": {"intro": "An agency can save time. But your accounts, data and history must stay yours.",
  "steps": [
-  {"say": "Write a one-page refund rule: when you refund in full, when you offer a part refund or credit, and who approves it.", "check": "Your team can handle any refund the way you would.", "lost": "Write when you give a full refund."},
-  {"say": "For small problems, offer a fix first: a part refund or store credit if the customer keeps the item.", "check": "Fewer full refunds.", "careful": "Outside the US: in Australia, faulty items carry a legal right to repair, replacement or refund. Goodwill is extra. US: state law and your published policy set the rules.", "lost": "Offer a part refund for a small problem."},
-  {"say": "Always refund to the original payment method.", "check": "No disputes from money sent another way.", "lost": "Refund to the same card."},
-  {"say": "Write down every refund reason.", "check": "You can fix the cause.", "lost": "Write the reason for this refund."},
-  {"say": "Enter refunds in Helix.", "check": "Profit stays true.", "lost": "Enter this week's refunds."}
+  {"say": "Before you sign, list what you must own: ad accounts, pixel and datasets, Shopify, domain, email tool and Google Ads. Give the agency partner or user access only.", "check": "Every account is owned by you.", "lost": "Check you own your ad account."},
+  {"say": "Put in the contract: you own all accounts, content and data, plus the notice period, handover steps and the reports you get.", "check": "The contract says you own everything.", "careful": "Say no to contracts that say the agency owns the ad account.", "lost": "Add one line: I own all accounts and data."},
+  {"say": "Ask for a monthly report showing spend, sales, profit and what they changed.", "check": "You understand every report.", "lost": "Ask for spend, sales and profit each month."},
+  {"say": "To leave, give notice. Ask for a handover pack: campaign notes, audiences, creative files and any logins they set up.", "check": "You have everything to run ads yourself.", "lost": "Ask for the handover pack."},
+  {"say": "On the last day, close everything off.\n\n1. Remove their access from every account.\n2. Change any shared passwords.\n3. Check billing so nothing still charges their card.", "check": "The agency has no access.", "lost": "Remove their access."},
+  {"say": "If the agency owns your ad account, it usually can't be moved to your portfolio. Make a new ad account in your portfolio and connect your own pixel.", "check": "You run ads from an account you own. Old campaign history stays behind, so ask for exports first.", "lost": "Make a new ad account you own."},
+  {"say": "For your first month alone, change one thing at a time. Watch profit daily in Helix.", "check": "You see what each change does.", "lost": "One change at a time."},
+  {"say": "Check ad accounts, ads, customer lists and reports are in your name (Meta **Business settings > Accounts > Ad accounts**, Google Ads **Admin > Access and security**).", "check": "You own every account and asset.", "lost": "Open **Business settings > Accounts > Ad accounts**."},
+  {"say": "Ask your agency to report MER (all ad spend as a share of all sales) and contribution profit, not just ROAS (sales for each $1 of ads).", "check": "Agency reports show profit numbers.", "lost": "Ask for MER and profit."},
+  {"say": "If you bring work in-house, start with the daily ad check (Lesson 8.9). Keep specialists for the gaps.", "check": "You run the daily check yourself.", "lost": "Do the daily ad check today."}
+ ]},
+"24.6": {"intro": "Phone networks and inboxes now check that messages really come from you. Unregistered senders get labelled or sent to spam.",
+ "steps": [
+  {"say": "In your email tool's settings, set up SPF, DKIM and DMARC for your sending domain (three records that prove email is really from you).", "check": "The tool shows the domain as authenticated.", "lost": "Follow your email tool's domain guide."},
+  {"say": "Send from your own domain, never a free email address.", "check": "Emails come from you@yourbrand.", "lost": "Use your brand email as sender."},
+  {"say": "Register your text sender details with your SMS provider before sending campaigns.", "check": "Texts show your business name, not \"Unverified\".", "careful": "Outside the US: in Australia since 1 July 2026, unregistered sender names show as \"Unverified\". Register on the SMS Sender ID Register, using a name clearly linked to you, like your business name or trademark. US: standard numbers need carrier registration (10DLC), and toll-free numbers need verification.", "lost": "Ask your SMS provider how to register."},
+  {"say": "Use the same sender name everywhere.", "check": "Customers recognise you in every inbox.", "lost": "Pick one sender name."}
  ]}
 }

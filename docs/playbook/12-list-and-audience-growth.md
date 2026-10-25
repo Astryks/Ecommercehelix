@@ -1,4 +1,4 @@
-# Module 11: List and audience growth
+# Module 12: List and audience growth
 
 **Outcome:** a growing audience you own (email, SMS and followers) that makes every launch and sale cheaper.
 
@@ -31,7 +31,7 @@
 
 ---
 
-## Lesson 11.1: Why build the list
+## Lesson 12.1: Why build the list
 <!-- stage:attract -->
 
 **Why this matters:** Your email and SMS list is an audience you own and can reach for free, any time. Each engaged subscriber earns a little every month. Collect emails when ads are cheap, and sell when ads are costly. It is one of the most reliable ways to grow.
@@ -52,7 +52,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 11.2: Competition types
+## Lesson 12.2: Competition types
 <!-- stage:attract -->
 
 **Why this matters:** A competition (giveaway) can add thousands of subscribers quickly. The type and the prize decide whether you get future buyers or prize hunters.
@@ -78,7 +78,7 @@
 | Collaboration giveaway | Several brands with similar customers share one prize pool | Each brand reaches the others' audiences | Takes coordination; audiences can be mixed |
 | Social competition | Follow and comment to enter | Big boost in followers and reach | Adds little to your email list |
 
-## Lesson 11.3: Running a competition
+## Lesson 12.3: Running a competition
 <!-- stage:attract -->
 
 **Why this matters:** Running a competition well is a seven-part job, from rules to measuring who buys. Skipping the follow-up flow wastes most of the value.
@@ -119,7 +119,7 @@
 
 **Expected result:** You know whether to run another one.
 
-## Lesson 11.4: Grow your list before big sale dates
+## Lesson 12.4: Grow your list before big sale dates
 <!-- stage:attract -->
 
 **Why this matters:** List growth pays off most just before big sales, when ads get expensive. Starting 6 to 10 weeks early fills the funnel while attention is still cheap.
@@ -134,7 +134,7 @@
 
 **Expected result:** Visitors can join an early-access list.
 
-## Lesson 11.5: Social growth tactics
+## Lesson 12.5: Social growth tactics
 <!-- stage:attract -->
 
 **Why this matters:** Social growth tactics add followers and customers alongside your list. Four simple moves cover most of it.

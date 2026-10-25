@@ -1,0 +1,109 @@
+{
+"30.1": {"intro": "People buy when they read their own thoughts. Words from your customers beat words from you, in ads, pages and emails.",
+ "steps": [
+  {"say": "Open a blank document called \"Customer words\". Copy in 30 phrases from your 5-star reviews, your 1 to 3-star reviews, customer emails, and any competitor reviews on Amazon or Google.", "check": "You have 30 real phrases, each with where it came from.", "lost": "Copy 5 phrases from your reviews."},
+  {"say": "Sort them under four headings: what annoyed them before, what they were afraid of, what they hoped for, and what surprised them after buying.", "check": "Each heading has at least five phrases.", "lost": "Make the four headings. Sort 5 phrases."},
+  {"say": "Send your last 50 customers a one-question email: \"What nearly stopped you buying?\" Add the answers to the document.", "check": "You have at least 10 new answers in their words.", "lost": "Send that one question to 10 customers."},
+  {"say": "Rewrite the first line of your best product page and one ad using a phrase from the list, word for word where you can.", "check": "One page and one ad now start with a real customer phrase.", "careful": "Don't tidy up the grammar. The rough, honest version is what makes it believable.", "lost": "Use one customer phrase as your ad's first line."}
+ ]},
+"30.2": {"intro": "Most stores talk about the obvious problem. The worry people feel but rarely say is what makes a message feel personal.",
+ "steps": [
+  {"say": "Write the obvious problem your product solves in one line. Example: \"my dog pulls on the lead\".", "check": "One plain line about the obvious problem.", "lost": "Finish this: \"My problem is ___.\""},
+  {"say": "Under it, write what the customer feels but doesn't post about. Use your customer words list (Lesson 30.1). Example: \"I dread walking him past other dogs because people stare\".", "check": "One to three hidden worries, each in a customer's voice.", "lost": "Write one hidden worry."},
+  {"say": "Write one thing they probably don't know yet that would change how they see it. Example: \"pulling is usually a harness fit issue, not a training issue\".", "check": "One surprising, true thing you can teach.", "lost": "Write one true surprise."},
+  {"say": "Turn each line into an ad hook or email subject line. Test the hidden worry against your current best hook.", "check": "A new hook is in a test next to your current winner.", "lost": "Make one hook from the hidden worry."}
+ ]},
+"30.3": {"intro": "Making new content every day wears owners out. One good piece, reshaped for each channel, gives you a week of posts.",
+ "steps": [
+  {"say": "Pick one piece that already did well: your best video, a popular post, or a customer story. Check your Instagram or TikTok insights for the top post of the last 90 days.", "check": "One proven piece is chosen.", "lost": "Find your top post from the last 90 days."},
+  {"say": "Write out its main points (or get a transcript from your phone or an AI tool). List five short ideas inside it.", "check": "Five separate ideas, each one sentence.", "lost": "Write 3 ideas from it."},
+  {"say": "Turn each idea into one format: a short video, a carousel, a story poll, an email section and an ad hook.", "check": "At least ten pieces from one starting point.", "lost": "Turn one idea into a carousel."},
+  {"say": "Put them in your posting calendar across the next two weeks, one channel at a time.", "check": "Two weeks of posts are scheduled.", "lost": "Schedule 3 of them."}
+ ]},
+"30.4": {"intro": "A friend's recommendation is the cheapest, most trusted way to win a customer. Most stores never ask.",
+ "steps": [
+  {"say": "Choose a two-sided reward you can afford, like $15 off for the friend and $15 credit for the customer. Check it stays under your break-even CPA (Lesson 1.5).", "check": "A reward both sides like that still makes a profit.", "lost": "Is $15 + $15 under your break-even? Then use it."},
+  {"say": "Install a referral app from the Shopify App Store (search \"referral\"), or use a unique discount code per customer.", "check": "Each customer can share a personal link or code.", "lost": "Search \"referral\" in the App Store."},
+  {"say": "Ask at the happy moment: in the email the day after delivery, on the thank-you page, and inside the parcel with a printed card.", "check": "The ask shows in three places when people feel best about you.", "lost": "Add the ask to the thank-you page."},
+  {"say": "Each month, check how many orders came from referral codes. Thank your top referrers personally.", "check": "You know your referral orders and your top five referrers.", "lost": "Thank your top referrer."}
+ ]},
+"30.5": {"intro": "A brand that sells something different to the same people can introduce you to thousands of warm buyers.",
+ "steps": [
+  {"say": "List 10 brands your customer also buys from that don't compete with you (for a baby clothes store: nappy bags, baby carriers, sleep coaches).", "check": "10 brands, each with a contact name or email.", "lost": "List 3 brands your customers love."},
+  {"say": "Pick one simple idea for each: a joint giveaway, a gift-with-purchase swap, a shared bundle, or an email swap where you feature each other.", "check": "One clear, easy idea per brand.", "lost": "Pick the email swap."},
+  {"say": "Send a short, friendly email: who you are, why your customers overlap, the idea, and what they get.", "check": "Ten partnership emails sent this week.", "lost": "Send one email today."},
+  {"say": "Run the first partnership that says yes. Track it with a unique code. Repeat with whoever does best.", "check": "One live partnership with tracked orders.", "careful": "Agree in writing who sends what, when, and how customer data is handled. Never share customer lists directly.", "lost": "Make a unique code for the partner."}
+ ]},
+"30.6": {"intro": "Podcasts, newsletters and local media need guests and stories. Being featured puts you in front of people who already trust the host.",
+ "steps": [
+  {"say": "Find five podcasts, newsletters or blogs your customers read. Search \"[your niche] podcast\" and check who your customers follow.", "check": "Five targets with the host's contact details.", "lost": "Find one podcast in your niche."},
+  {"say": "Write three story ideas only you can tell: why you started, a surprising thing you learned about your customers, and a useful tip.", "check": "Three ideas, two lines each.", "lost": "Write why you started, in two lines."},
+  {"say": "Pitch each host in under 120 words, with one idea and an offer for their audience.", "check": "Five pitches sent.", "lost": "Send one short pitch."},
+  {"say": "When featured, send listeners to a special page with the offer and a sign-up form.", "check": "You can count the sign-ups and sales from each feature.", "lost": "Make one page for listeners."}
+ ]},
+"30.7": {"intro": "Sale-only emails teach people to wait for discounts. A short weekly story email sells at full price.",
+ "steps": [
+  {"say": "Pick one fixed day and time for your weekly email.", "check": "A repeating slot is in your calendar.", "lost": "Pick Tuesday morning."},
+  {"say": "Write it in four parts: a subject that sounds like a friend, a short story from the week (a customer, a product choice, a mistake), the lesson in one line, and one product that fits.", "check": "A 150 to 250-word email in that order.", "lost": "Write one short story from this week."},
+  {"say": "Use a phrase from your customer words list (Lesson 30.1) in the subject or first line.", "check": "The email speaks in your customers' words.", "lost": "Put one customer phrase in the subject."},
+  {"say": "After four weeks, compare clicks and money per email with your sale emails.", "check": "You know what the weekly email earns.", "lost": "Put a 4-week reminder in your calendar."}
+ ]},
+"30.8": {"intro": "Most people who sign up don't buy straight away, because a question holds them back. Answer them one email at a time.",
+ "steps": [
+  {"say": "List the five questions you get asked most before people buy (sizing, delivery time, returns, how it compares, is it worth the price).", "check": "Five questions ranked by how often they come up.", "lost": "Write the question you get most."},
+  {"say": "Write one short email per question with a straight answer, proof (a review or photo), and a link to the best product.", "check": "Five emails drafted.", "lost": "Write one answer email."},
+  {"say": "Add them to your welcome flow after the first email, two days apart.", "check": "New subscribers get the answers before they lose interest.", "lost": "Add one email to your welcome flow."}
+ ]},
+"30.9": {"intro": "Sales and profit tell you what already happened. A few leading numbers warn you a week early, while you can still act.",
+ "steps": [
+  {"say": "Pick five to seven numbers: at least two results (net profit, revenue) and three leading ones (sessions, add-to-cart rate, conversion rate, cost per order, email sign-ups).", "check": "A short list of five to seven numbers.", "lost": "Pick profit, revenue, sessions, add-to-cart and sign-ups."},
+  {"say": "Fill in each number for the last four weeks, from Helix or your reports.", "check": "Four weeks of history for every number.", "lost": "Fill in last week first."},
+  {"say": "Set a target for each from that history. Aim a little above your average, not a guess.", "check": "Each number has a realistic target.", "lost": "Take the average. Add a little."},
+  {"say": "Drop any number you can't fill in within two minutes. Swap it for one you can.", "check": "Every number is quick to update each week.", "lost": "Too slow to find? Swap it."}
+ ]},
+"30.10": {"intro": "A weekly check-in gives you 52 chances a year to change course.",
+ "steps": [
+  {"say": "Book 30 minutes at the same time each week, even if it's just you.", "check": "A repeating meeting is in your calendar.", "lost": "Book 30 minutes every Monday."},
+  {"say": "Use the same order every time: wins (3 minutes), numbers green or red against target (5 minutes), the one red number to fix (15 minutes), and who does what by when (7 minutes). That's 30 minutes.", "check": "The meeting ends with one fix and a named owner.", "lost": "Wins, numbers, one fix, who does it."},
+  {"say": "Write the actions where everyone can see them. Start the next meeting by checking them.", "check": "Last week's actions are checked first.", "lost": "Write the actions in one shared note."}
+ ]},
+"30.11": {"intro": "If a task lives only in your head, it only happens when you do it. A written playbook lets someone else do it the same way.",
+ "steps": [
+  {"say": "Pick one task you do every week, like packing orders, answering returns or launching a product.", "check": "One task chosen.", "lost": "Pick packing orders."},
+  {"say": "Record your screen or phone while you do it. Talk through what you're doing and why.", "check": "A recording of the task, start to finish.", "lost": "Press record and do the task."},
+  {"say": "Turn it into numbered steps, each with what \"done\" looks like. Add links and screenshots.", "check": "A one-page playbook.", "lost": "Write the first 5 steps."},
+  {"say": "Ask someone else to follow it without help. Fix every place they got stuck.", "check": "Someone else finishes the task using only the playbook.", "lost": "Ask one person to try it."}
+ ]},
+"30.12": {"intro": "When everyone is responsible, nobody is. One owner per job and number makes it clear who acts.",
+ "steps": [
+  {"say": "List the main jobs in your store: marketing, customer service, stock and suppliers, the website, money and admin.", "check": "Five to eight jobs listed.", "lost": "List 5 jobs."},
+  {"say": "Write one owner next to each (even if it's you for most), and the number each owner watches.", "check": "Every job has one owner and one number.", "lost": "Write a name next to each job."},
+  {"say": "Circle the jobs where you're the owner but shouldn't be. These are your next hires or hand-offs (Lesson 26.1).", "check": "You know what to hand off first.", "lost": "Circle one job to hand off."}
+ ]},
+"30.13": {"intro": "A year is too far to plan in detail. A week is too short to change much. Ninety days is just right.",
+ "steps": [
+  {"say": "Write one goal for the next 90 days with a number and a date. Example: \"$8,000 net profit a month by 31 March\".", "check": "One goal you can measure.", "lost": "Write one number and one date."},
+  {"say": "Break it into three monthly checkpoints.", "check": "Three checkpoints, each with a number.", "lost": "Write next month's checkpoint."},
+  {"say": "List what could stop you, and one way around each.", "check": "A short list of blockers with a plan for each.", "lost": "Write one blocker and one fix."},
+  {"say": "Choose no more than three projects that move the goal. Put the first step of each in this week's tasks.", "check": "Three projects, each with a first step scheduled.", "lost": "Pick one project. Do its first step this week."}
+ ]},
+"30.14": {"intro": "Every 90 days, stepping back to see what worked stops you repeating last quarter's mistakes.",
+ "steps": [
+  {"say": "Block half a day at the end of each quarter.", "check": "The reset is in your calendar.", "lost": "Book half a day at quarter end."},
+  {"say": "Review the 90-day goal: hit or missed, by how much, and why.", "check": "A one-paragraph honest review.", "lost": "Hit or missed? Write why."},
+  {"say": "List what to start, stop and keep doing. Then write the next 90-day plan (Lesson 30.13).", "check": "A new one-page plan for next quarter.", "lost": "Write one start, one stop, one keep."}
+ ]},
+"30.15": {"intro": "When you know who you serve and what you stand for, daily choices get faster, and helpers make choices you agree with.",
+ "steps": [
+  {"say": "Write one sentence on who you serve and the change you make for them.", "check": "A one-sentence purpose.", "lost": "Finish this: \"We help ___ to ___.\""},
+  {"say": "Write three to five rules you run the business by, each with an example. Example: \"We answer every message the same day\".", "check": "Three to five rules with examples.", "lost": "Write one rule."},
+  {"say": "Write where you want the business to be in three years, in numbers (revenue, profit, team size), and one sentence on how life looks for you.", "check": "A three-year picture on one page.", "lost": "Write one number for three years from now."},
+  {"say": "Share it with anyone who helps you. Reread it at each quarterly reset.", "check": "Your helpers know the direction.", "lost": "Send it to one helper."}
+ ]},
+"30.16": {"intro": "Every owner has weeks where they feel lost. Proof of what you've already done is the fastest way back to clear thinking.",
+ "steps": [
+  {"say": "Make a note or folder called \"Wins\".", "check": "The file is on your phone.", "lost": "Make a note called Wins."},
+  {"say": "Add every kind review, record day, solved problem and thank-you message, the day it happens.", "check": "At least one new win a week.", "lost": "Add one kind review now."},
+  {"say": "On a hard day, read it for five minutes before you make any big decision.", "check": "You decide with a calm, clear head.", "lost": "Hard day? Read your Wins first."}
+ ]}
+}

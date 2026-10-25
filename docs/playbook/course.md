@@ -81,109 +81,109 @@ Each goal's tasks are the steps of the lessons listed, in order. Days follow a l
 
 **Finish line:** A real test order goes through checkout and lands in your inbox.  
 **Why this matters:** Every visitor you pay for is wasted if the store is slow, unclear or cannot take a payment.  
-**Lessons:** 22.1, 22.3, 22.5, 22.9, 22.11, 22.12, 22.16 · **Days:** 14 (1, 3, 4, 1, 5, 3, 4, 1, 3, 4, 1, 3, 1, 1 tasks, about 15, 25, 35, 10, 55, 35, 35, 10, 35, 55, 15, 20, 10, 10 min)
+**Lessons:** 13.1, 13.3, 13.5, 13.9, 13.11, 13.12, 13.14 · **Days:** 14 (1, 3, 4, 1, 5, 3, 4, 1, 3, 4, 1, 3, 1, 1 tasks, about 15, 25, 35, 10, 55, 35, 35, 10, 35, 55, 15, 20, 10, 10 min)
 
 ### Get your first 100 site visits a day
 
 **Finish line:** An average of 100 sessions a day over the last 7 days.  
 **Why this matters:** You need steady visitors before you can learn what makes people buy.  
-**Lessons:** 7.14, 7.1, 7.13, 4.2, 21.2, 29.3, 6.1, 6.2 · **Days:** 15 (1, 3, 4, 2, 4, 3, 4, 2, 3, 4, 1, 3, 1, 3, 2 tasks, about 5, 20, 40, 10, 45, 20, 45, 10, 35, 40, 5, 35, 10, 25, 20 min)
+**Lessons:** 8.1, 8.2, 8.3, 3.2, 4.2, 30.3, 7.1, 7.2 · **Days:** 15 (1, 3, 4, 2, 4, 3, 4, 2, 3, 4, 1, 3, 1, 3, 2 tasks, about 5, 20, 40, 10, 45, 20, 45, 10, 35, 40, 5, 35, 10, 25, 20 min)
 
 ### Get 1,000 site visits a day while ads stay profitable
 
 **Finish line:** 1,000 sessions a day on average over 7 days, with ad spend at or under your target MER.  
 **Why this matters:** More of the right visitors is the fastest lever, but only if each sale still makes money.  
-**Lessons:** 8.13, 8.12, 7.14, 7.13, 5.1, 5.7, 6.3, 6.12, 7.6, 19.12 · **Days:** 18 (1, 3, 4, 2, 5, 3, 4, 2, 3, 3, 2, 3, 1, 3, 4, 2, 5, 2 tasks, about 5, 30, 45, 20, 55, 25, 20, 25, 30, 20, 10, 35, 10, 35, 35, 15, 55, 25 min)
+**Lessons:** 10.1, 10.4, 8.1, 8.3, 5.1, 5.7, 7.3, 7.12, 8.9, 6.12 · **Days:** 18 (1, 3, 4, 2, 5, 3, 4, 2, 3, 3, 2, 3, 1, 3, 4, 2, 5, 2 tasks, about 5, 30, 45, 20, 55, 25, 20, 25, 30, 20, 10, 35, 10, 35, 35, 15, 55, 25 min)
 
 ### Add 500 people to your email list
 
 **Finish line:** 500 new subscribers since you started this goal (check your email tool).  
 **Why this matters:** Your list is the one audience you own. Every subscriber can buy again without paying for another ad.  
-**Lessons:** 10.1, 11.1, 11.3, 11.4 · **Days:** 7 (1, 3, 4, 1, 5, 2, 2 tasks, about 5, 35, 25, 10, 55, 25, 25 min)
+**Lessons:** 16.1, 12.1, 12.3, 12.4 · **Days:** 7 (1, 3, 4, 1, 5, 2, 2 tasks, about 5, 35, 25, 10, 55, 25, 25 min)
 
 ### Get your first 10 orders from referrals and partners
 
 **Finish line:** 10 orders came through a referral link, partner code or guest feature.  
 **Why this matters:** A friend's word or a trusted brand's mention often wins customers for far less than an ad costs.  
-**Lessons:** 29.4, 29.5, 29.6 · **Days:** 5 (1, 3, 4, 2, 2 tasks, about 5, 30, 40, 25, 15 min)
+**Lessons:** 30.4, 30.5, 30.6 · **Days:** 5 (1, 3, 4, 2, 2 tasks, about 5, 30, 40, 25, 15 min)
 
 ### Get add-to-cart above 8%
 
 **Finish line:** 8% or more of sessions add something to the cart, over 7 days.  
 **Why this matters:** If people do not add to cart, the product page is not convincing them. Fixing it lifts every channel at once.  
-**Lessons:** 29.1, 3.2, 9.1, 9.2, 9.5 · **Days:** 8 (1, 3, 4, 2, 5, 3, 4, 1 tasks, about 5, 45, 40, 20, 45, 15, 40, 10 min)
+**Lessons:** 30.1, 15.2, 14.1, 14.2, 14.5 · **Days:** 8 (1, 3, 4, 2, 5, 3, 4, 1 tasks, about 5, 45, 40, 20, 45, 15, 40, 10 min)
 
 ### Get your conversion rate to 2.5%
 
 **Finish line:** 2.5% or more of sessions become an order, over 7 days.  
 **Why this matters:** Going from 1.5% to 2.5% conversion brings about two thirds more sales from the same ad spend.  
-**Lessons:** 3.3, 3.5, 9.4, 22.12, 9.8, 9.16 · **Days:** 12 (1, 3, 4, 1, 5, 2, 4, 2, 2, 4, 2, 2 tasks, about 10, 35, 30, 20, 50, 15, 45, 25, 35, 35, 15, 20 min)
+**Lessons:** 15.3, 15.5, 14.4, 13.12, 14.7, 14.15 · **Days:** 12 (1, 3, 4, 1, 5, 2, 4, 2, 2, 4, 2, 2 tasks, about 10, 35, 30, 20, 45, 15, 45, 25, 35, 35, 15, 20 min)
 
 ### Switch on the five core email flows
 
 **Finish line:** Welcome, browse abandonment, cart abandonment, checkout abandonment and post-purchase flows are all live.  
 **Why this matters:** Flows sell while you sleep. Each one reaches a shopper at the moment they are most likely to buy.  
-**Lessons:** 10.2, 10.3, 29.8, 29.7 · **Days:** 6 (1, 3, 4, 1, 5, 2 tasks, about 15, 45, 40, 10, 55, 15 min)
+**Lessons:** 16.2, 16.3, 30.8, 30.7 · **Days:** 6 (1, 3, 4, 1, 5, 2 tasks, about 15, 45, 40, 10, 55, 15 min)
 
 ### Raise your average order by 10%
 
 **Finish line:** Average order value is 10% higher than when you started this goal, over 7 days.  
 **Why this matters:** A bigger order pays for the same ad click, so profit per order rises with no extra traffic.  
-**Lessons:** 9.10, 3.6, 9.12 · **Days:** 5 (1, 3, 4, 1, 2 tasks, about 10, 25, 35, 5, 20 min)
+**Lessons:** 14.9, 15.6, 14.11 · **Days:** 5 (1, 3, 4, 1, 2 tasks, about 10, 25, 35, 5, 20 min)
 
 ### Reach $10k a month in sales
 
 **Finish line:** $10,000 or more in sales over the last 30 days.  
 **Why this matters:** At $10k a month you have proof people want what you sell, and enough data to grow on purpose.  
-**Lessons:** 6.14, 13.1, 6.6, 3.8 · **Days:** 6 (1, 3, 4, 2, 5, 1 tasks, about 15, 30, 30, 20, 55, 10 min)
+**Lessons:** 7.14, 17.1, 7.6, 15.8 · **Days:** 6 (1, 3, 4, 2, 5, 1 tasks, about 15, 30, 30, 20, 55, 10 min)
 
 ### Get net profit margin to 10%
 
 **Finish line:** Net profit is 10% or more of sales over the last 30 days.  
 **Why this matters:** Ten cents of every dollar kept is what lets you survive a bad month and fund the next stage.  
-**Lessons:** 2.1, 2.3, 2.4, 2.5, 13.12 · **Days:** 9 (1, 2, 4, 2, 4, 3, 3, 2, 2 tasks, about 15, 25, 40, 15, 40, 25, 25, 10, 30 min)
+**Lessons:** 2.1, 2.3, 2.4, 2.5, 17.12 · **Days:** 9 (1, 2, 4, 2, 4, 3, 3, 2, 2 tasks, about 15, 25, 40, 15, 40, 25, 25, 10, 30 min)
 
 ### Get 25% of sales from returning customers
 
 **Finish line:** A quarter of sales over 30 days come from people who bought before.  
 **Why this matters:** You already paid to find returning customers, so their repeat orders are often your most profitable sales.  
-**Lessons:** 10.4, 10.12, 4.7, 3.10, 23.7 · **Days:** 8 (1, 2, 4, 2, 5, 3, 4, 2 tasks, about 10, 30, 30, 15, 45, 30, 45, 15 min)
+**Lessons:** 16.4, 16.12, 3.7, 15.10, 21.7 · **Days:** 8 (1, 2, 4, 2, 5, 3, 4, 2 tasks, about 10, 30, 30, 15, 45, 30, 45, 15 min)
 
 ### Reach a $1M-a-year pace with at least 10% profit
 
 **Finish line:** $84,000 in sales over 30 days (about $1M a year) and a net margin of 10% or more.  
 **Why this matters:** This is the jump from a busy shop to a real business that can pay a team and its owner.  
-**Lessons:** 2.7, 7.10, 8.6, 15.1, 28.9 · **Days:** 7 (1, 3, 4, 2, 5, 2, 4 tasks, about 20, 40, 55, 15, 40, 10, 55 min)
+**Lessons:** 2.7, 8.13, 10.8, 25.1, 26.9 · **Days:** 7 (1, 3, 4, 2, 5, 2, 4 tasks, about 20, 40, 55, 15, 40, 10, 55 min)
 
 ### Grow sales 20% month on month while ads stay profitable
 
 **Finish line:** Sales over the last 30 days are 20% higher than the 30 days before, with MER at or under target.  
 **Why this matters:** Scaling only counts if profit scales with it. This proves you can add spend without losing money.  
-**Lessons:** 2.7, 7.10, 15.2, 15.6 · **Days:** 5 (1, 3, 4, 2, 4 tasks, about 20, 40, 55, 15, 40 min)
+**Lessons:** 2.7, 8.13, 25.2, 25.6 · **Days:** 5 (1, 3, 4, 2, 4 tasks, about 20, 40, 55, 15, 40 min)
 
 ### Set your 90-day plan
 
 **Finish line:** One goal, three monthly checkpoints and up to three projects, written on one page.  
 **Why this matters:** A clear plan stops you chasing every idea, so the next 90 days add up to real progress.  
-**Lessons:** 29.15, 29.13, 29.9 · **Days:** 6 (2, 2, 3, 1, 2, 2 tasks, about 35, 30, 40, 5, 15, 20 min)
+**Lessons:** 30.15, 30.13, 30.9 · **Days:** 6 (2, 2, 3, 1, 2, 2 tasks, about 35, 30, 40, 5, 15, 20 min)
 
 ### Run a weekly numbers meeting
 
 **Finish line:** Four weekly meetings held, each ending with one fix and an owner.  
 **Why this matters:** Checking in every week gives you 52 chances a year to fix problems early.  
-**Lessons:** 29.10, 20.10, 29.12, 29.14 · **Days:** 5 (1, 2, 4, 1, 3 tasks, about 5, 25, 40, 10, 30 min)
+**Lessons:** 30.10, 9.11, 30.12, 30.14 · **Days:** 5 (1, 2, 4, 1, 3 tasks, about 5, 25, 40, 10, 30 min)
 
 ### Write playbooks for your three most repeated tasks
 
 **Finish line:** Three playbooks exist and someone else has followed each one without help.  
 **Why this matters:** Work that lives in your head only happens when you do it. Playbooks set you free.  
-**Lessons:** 29.11, 28.2 · **Days:** 5 (1, 3, 4, 2, 1 tasks, about 5, 35, 45, 20, 10 min)
+**Lessons:** 30.11, 26.2 · **Days:** 5 (1, 3, 4, 2, 1 tasks, about 5, 35, 45, 20, 10 min)
 
 ### Free up your first 10 hours a week
 
 **Finish line:** Someone else now does at least 10 hours a week of work you used to do.  
 **Why this matters:** Your time is the business's scarcest resource. Freeing it is how you work on growth, not just in it.  
-**Lessons:** 28.1, 16.4, 28.6, 29.16 · **Days:** 7 (1, 3, 4, 1, 5, 3, 3 tasks, about 5, 35, 40, 20, 55, 25, 35 min)
+**Lessons:** 26.1, 27.4, 26.6, 30.16 · **Days:** 7 (1, 3, 4, 1, 5, 3, 3 tasks, about 5, 35, 40, 20, 55, 25, 35 min)
 
 ## A sample day
 
@@ -195,11 +195,11 @@ Goal: Set up your profit dashboard, day 2:
 
 ## New lessons added for the course
 
-Module 29 (Customers, partners and the weekly rhythm) fills gaps the course needed: customer words, the worry behind the purchase, repurposing content, referrals, partner brands, guest spots, a weekly story email, buying-question emails, leading numbers, a weekly numbers meeting, playbooks, owners, a 90-day plan, a quarterly reset, a one-page direction and a wins file. Five are Attract, three Convert and eight Grow.
+Module 30 (Customers, partners and the weekly rhythm) fills gaps the course needed: customer words, the worry behind the purchase, repurposing content, referrals, partner brands, guest spots, a weekly story email, buying-question emails, leading numbers, a weekly numbers meeting, playbooks, owners, a 90-day plan, a quarterly reset, a one-page direction and a wins file. Five are Attract, three Convert and eight Grow.
 
-Later additions: Lessons 1.7 to 1.9 (sales, costs and profit in plain English; setting up the profit dashboard; how much to spend on marketing) power the first and third goals. Lessons 3.10 (subscribe and save), 9.16 (when conversion suddenly drops), 13.12 (a smaller sale between the big ones), 23.7 (customer service that keeps customers) and 28.9 (selling to shops) fill topics the course was missing and are tasks in the conversion, margin, returning customer and $1M-a-year goals.
+Later additions: Lessons 1.7 to 1.9 (sales, costs and profit in plain English; setting up the profit dashboard; how much to spend on marketing) power the first and third goals. Lessons 15.10 (subscribe and save), 14.15 (when conversion suddenly drops), 17.12 (a smaller sale between the big ones), 21.7 (customer service that keeps customers) and 26.9 (selling to shops) fill topics the course was missing and are tasks in the conversion, margin, returning customer and $1M-a-year goals.
 
-Lessons 7.14 (find your way around Ads Manager) and 7.13 (launch your first Meta ad in 30 minutes) open the first traffic goal. The 1,000-visits goal starts with 8.13 (find your way around Google Ads) and 8.12 (launch your first Google campaign), then the two Meta lessons. Lesson 1.10 (track your numbers in a spreadsheet) is part of the daily numbers goal.
+Lessons 8.1 (find your way around Ads Manager) and 8.3 (launch your first Meta ad in 30 minutes) open the first traffic goal. The 1,000-visits goal starts with 10.1 (find your way around Google Ads) and 10.4 (launch your first Google campaign), then the two Meta lessons. Lesson 1.10 (track your numbers in a spreadsheet) is part of the daily numbers goal.
 
 ## Where the code lives
 

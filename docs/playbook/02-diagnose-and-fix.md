@@ -92,7 +92,7 @@
 
 **Watch out:** Boxes that fit the product better often save more than a new carrier. Many carriers charge by size as well as weight.
 
-**Step 3.** Set free shipping at about 20% above your average order value, a common starting point. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
+**Step 3.** Set free shipping about 20 to 30% above your average order value, a common rule of thumb. Charge for express delivery (Shopify: **Settings > Shipping and delivery**).
 
 **Expected result:** New orders either pay for shipping or grow to qualify for free shipping.
 
@@ -106,7 +106,7 @@
 
 **Step 6.** Raise your order size and trim fees.
 
-1. Add a bundle or a "buy more, save more" deal (see Module 9).
+1. Add a bundle or a "buy more, save more" deal (see Module 14).
 2. In Shopify, look at payment and app fees for last month. Divide them by sales.
 
 **Expected result:** Average order value goes up. Payment fees sit close to your card rate, and you have cut apps you do not use.
@@ -151,7 +151,7 @@
 
 <!-- do:metrics -->
 
-**Step 3.** If RPV is low, split it in two. Check if AOV is low or if conversion rate (orders divided by sessions) is low. Then work on the site or offer (Modules 3 and 9), not the ads.
+**Step 3.** If RPV is low, split it in two. Check if AOV is low or if conversion rate (orders divided by sessions) is low. Then work on the site or offer (Modules 15 and 14), not the ads.
 
 **Expected result:** You have named the weak half of RPV.
 

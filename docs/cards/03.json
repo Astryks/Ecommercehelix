@@ -1,68 +1,71 @@
 {
-"3.1": {"intro": "Your offer is what people get, and why they should buy now. We'll find its weakest part.",
+"3.1": {"intro": "Your brand core is one page about who you are. Everything you write comes from it.",
  "steps": [
-  {"say": "Score your main product from 1 to 5 on each of these: **promise**, **belief**, **urgency**, **safety**, **easy yes**.", "check": "You have five scores on one line.", "lost": "Give each word a score from 1 to 5. Guess fast."},
-  {"say": "Circle the lowest score. Open its lesson: promise 3.2, belief 3.3, urgency 3.4, safety 3.5, easy yes 3.6.", "check": "You know the one thing to work on this week.", "lost": "Circle the smallest number. That's your job this week."}
+  {"say": "Describe 2 or 3 types of customer. For each: what they want, what bugs them, and where they hang out online.", "check": "You have 2 or 3 short customer notes.", "lost": "Describe one customer in three lines."},
+  {"say": "Write one sentence: why should people choose you?", "check": "You have one promise sentence.", "lost": "Finish this: \"Choose us because ...\""},
+  {"say": "Pick three words for how you sound. Pick three words you never use.", "check": "You have a six-word voice guide.", "lost": "Three words you are. Three words you're not."},
+  {"say": "Write two or three values. Next to each, write one thing you really do that proves it.", "check": "Every value has proof.", "lost": "One value, and one thing you do that shows it."},
+  {"say": "Write your story in under 100 words: why your brand exists. Save all five answers on one page.", "check": "One brand page is saved where helpers and tools can read it.", "lost": "Write why you started, in a few lines. Save the page."}
  ]},
-"3.2": {"intro": "People buy when they can say what they'll get in one line. Your reviews already have the words.",
+"3.2": {"intro": "A customer profile describes one type of buyer, using their real words. Real words beat guesses.",
  "steps": [
-  {"say": "Read your 20 newest 4 and 5 star reviews. Copy the words people use for what they got.", "check": "You have 5 to 10 phrases in customers' words.", "lost": "Read five good reviews. Copy your favourite phrases."},
-  {"say": "Write one sentence about the problem your product takes away. Use their words.", "check": "You have one problem sentence, like \"No more tangled cables in your bag\".", "lost": "Finish this: \"No more ...\""},
-  {"say": "Write one sentence about how others will see your customer after they buy.", "check": "You have a \"how others see me\" sentence.", "lost": "Finish this: \"People will think I'm ...\""},
-  {"say": "Make one promise line.\n\n1. Join your sentences into one line of 15 words or fewer.\n2. In Shopify, open **Products** and pick the product.\n3. Paste the line at the top of **Description**.\n4. Use the same line to start your next ad.", "check": "The same promise is on your product page and in an ad.", "careful": "Say the result, not the feature. \"Sleep through the night\" beats \"Memory foam core\".", "lost": "Write one short line about what people get. Put it at the top of your product page."}
+  {"say": "Collect 30 to 50 real customer quotes from reviews, a short survey and support emails.", "check": "You have one document of real quotes.", "lost": "Copy 10 customer quotes into one document."},
+  {"say": "For one profile, write their age range and life stage. Then write the job your product does for them.", "check": "The profile has a who and a why.", "lost": "Who are they? What problem do you solve for them?"},
+  {"say": "Add their top 3 worries and the exact words they use for the problem and the product.", "check": "You have phrases you can copy into ads.", "lost": "Write three worries in their words."},
+  {"say": "Add where they shop and what they compare you with. Then do the same for each profile.", "check": "You know your real competitors and channels.", "lost": "Write where they shop. One place is enough for now."}
  ]},
-"3.3": {"intro": "People don't buy until they believe it will work for them. Let's answer their worries with proof.",
+"3.3": {"intro": "Brand guidelines are a short guide anyone can follow, so everything looks like you.",
  "steps": [
-  {"say": "List 20 reasons someone might not buy. Look in support emails, reviews and return notes.", "check": "You have a list of 20 worries.", "lost": "Write five reasons people might not buy. Five is fine to start."},
-  {"say": "Sort them into six groups: price, quality, fit or size, trust, timing, and \"do I need it?\".", "check": "You can see which group is biggest.", "lost": "Put each worry in a group. Which group has the most?"},
-  {"say": "Next to each worry, write one proof: a review, a photo, a guarantee, a fact or a demo video.", "check": "Each worry has something you can show.", "lost": "Pick one worry. Find one review or photo that answers it."},
-  {"say": "Add the answers to your product page FAQ, your ads and your welcome emails. Start with the biggest group.", "check": "Top worries are answered in at least three places.", "lost": "Add one answer to your product page FAQ."}
+  {"say": "Add your logo versions and how much empty space to leave around them.", "check": "Each logo has a clear-space rule.", "lost": "Put your logo on a page. Note: leave space around it."},
+  {"say": "Add your colours with their hex codes (like #0B1F3A), and your fonts and sizes.", "check": "Anyone can match your colours and fonts.", "lost": "Write your main colour code and your font name."},
+  {"say": "Describe your photo and video style: light, framing and props. Add 3 example images.", "check": "A freelancer could shoot on-brand from this page.", "lost": "Add three photos you love the look of."},
+  {"say": "Add good and bad examples of your voice, and do's and don'ts for ads, emails and posts. Share it as one link or PDF.", "check": "The guide is done and shared.", "lost": "Add one good and one bad example. Share the link."}
  ]},
-"3.4": {"intro": "If there's a real reason something might run out, people act sooner. It must be true.",
+"3.4": {"intro": "Content pillars are the 4 to 6 topics you always post about. They stop the blank-page feeling.",
  "steps": [
-  {"say": "Pick one honest reason it might run out: a small batch, a preorder with a ship date, a short seasonal colour, or low stock.", "check": "You picked one you can stand behind.", "lost": "Pick one true reason it might run out."},
-  {"say": "Write that reason in one sentence on the product page. For example: \"Batch 4 of 6: 300 made, ships 14 November\".", "check": "Shoppers can see why it might go.", "lost": "Write one honest sentence about why it might run out."},
-  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers. In Australia, a court ordered a $15 million penalty after ACCC action, partly over a countdown timer that kept resetting.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
+  {"say": "Write your 4 to 6 topics. Ideas: proof, teaching, story and community, product and offer.", "check": "You have a list of topics.", "lost": "Pick four topics from the ideas list."},
+  {"say": "For each place you post, decide how much of each topic to use. Use the lesson table to start.", "check": "Each channel's mix adds up to 100%.", "lost": "Copy the lesson table's mix for now."},
+  {"say": "Plan one month of posts using that mix.", "check": "You have a month of ideas, each with a topic and a channel.", "lost": "Plan one week of posts first."},
+  {"say": "Write what goes in each topic. **Proof:** reviews, customer photos, press. **Teaching:** how to use, myths, care. **Story and community:** you, behind the scenes, customers. **Product and offer:** launches, restocks, bundles, sales.", "check": "Every topic has a short list of post types.", "lost": "Write two post ideas under each topic."},
+  {"say": "Check your month against a rough mix: 40% teaching and proof, 30% story and community, 30% product and offer.", "check": "Your plan follows the mix.", "lost": "Count your posts by topic. Roughly right is fine."},
+  {"say": "Fill gaps with ideas that never run out: reviews, comments, support questions (\"You asked, we answered\"), and a regular series.", "check": "You have more ideas than posting slots.", "lost": "Turn one customer question into a post."}
  ]},
-"3.5": {"intro": "Shoppers worry about buying the wrong thing. Each worry you remove means more orders.",
+"3.5": {"intro": "A calendar shows what you'll post and when. Plan around your sales dates.",
  "steps": [
-  {"say": "Turn on photo reviews in your review app. Email recent buyers and ask for a photo with their review.", "check": "Your best sellers show reviews with photos.", "lost": "Ask three happy customers for a photo review."},
-  {"say": "Add a size chart to every product where fit matters.", "check": "A size guide link sits above **Add to cart**.", "lost": "Add a size chart to your best seller. No sizes? Skip this card."},
-  {"say": "Turn on live chat for your opening hours. Shopify Inbox is free.", "check": "A chat bubble shows on your store, and messages reach your phone.", "lost": "Install Shopify Inbox. Turn it on."},
-  {"say": "Add a real face: a photo of you and two sentences on your About page.", "check": "Shoppers can see a real person.", "lost": "Add one photo of you to your About page."},
-  {"say": "Write a shipping promise you can keep, like \"Ships within 24 hours, Monday to Friday\". Add a clear returns policy. Show both near the price.", "check": "On a phone, you see shipping time and returns without scrolling.", "careful": "After changing returns, watch your return rate for 60 days to check it's worth it.", "lost": "Write one line: when it ships. Put it near the price."}
+  {"say": "Mark your big dates first: launches, sales, Mother's Day, Black Friday.", "check": "Your key dates are on the calendar.", "lost": "Write your next three big dates."},
+  {"say": "Add product stories and tips in the 2 weeks around each date.", "check": "Each sale has warm-up posts.", "lost": "Add two posts before your next sale."},
+  {"say": "Fill the gaps with community posts and happy-customer posts.", "check": "Every week has at least 3 posts planned.", "lost": "Add one customer post each week."},
+  {"say": "Before reposting a customer's photo or video, message them and get a written yes.", "check": "You have a saved yes for every customer post.", "lost": "Always ask first. Save their yes."}
  ]},
-"3.6": {"intro": "How a price looks changes how it feels. Try one small idea at a time.",
+"3.6": {"intro": "Free posts are a free way to test ad ideas. Posts people watch usually make good ads.",
  "steps": [
-  {"say": "Add a cost-per-use line under the price. For example \"Under $1 a day\" for a $29 monthly product.", "check": "The price feels smaller, but it's the same.", "lost": "Divide the price by days used. Write that under the price."},
-  {"say": "Try one higher price on one product for two weeks, for example $39 to $49.", "check": "You can compare sales and profit. Sometimes sales barely change and you keep more.", "lost": "Raise one price. Check again in two weeks."},
-  {"say": "Show a bigger option, or the full bundle value, next to the single price.", "check": "The single price looks like better value.", "lost": "Put a bigger option next to your normal one."},
-  {"say": "Add a middle option that makes your favourite option look like the obvious pick.", "check": "More shoppers choose your favourite option.", "lost": "Add a middle option. Watch what people pick."},
-  {"say": "Test free shipping against a lower price. Then turn on a pay-in-parts option in **Settings > Payments** for pricier items. Shop Pay Installments is only for US, Canadian and UK stores.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
+  {"say": "Film 3 to 5 short videos in one or two sessions a week. Post them across the week.", "check": "You post 3 to 5 videos a week without filming every day.", "lost": "Film three short videos in one go."},
+  {"say": "After 48 hours, check each post's watch time in the app's insights.", "check": "You know which 1 or 2 posts held attention best.", "lost": "Which video did people watch longest?"},
+  {"say": "Where the app has a test post feature, like Instagram trial reels, use it. It shows a post to people who don't follow you first.", "check": "You can try ideas on new people safely.", "lost": "Optional. Skip if your app doesn't have it."},
+  {"say": "Reply to every comment in the first hour after posting.", "check": "Comments get quick answers.", "lost": "Reply to comments soon after you post."},
+  {"say": "Add your best post to your ad ideas list.", "check": "Your next ad starts from an idea that worked.", "lost": "Write your best post's name on your ad list."}
  ]},
-"3.7": {"intro": "Not every product deserves your ad money. A quick monthly check shows which ones do.",
+"3.7": {"intro": "A community is customers who talk to you and each other. It works best when people buy again.",
  "steps": [
-  {"say": "For each product, write last month's ad spend, sales, return (sales ÷ ad spend), units sold and margin.", "check": "One row per product, five numbers each.", "lost": "Start with your top 3 products. Five numbers each."},
-  {"say": "Put each product in one of the four boxes in the lesson table. Do the action for that box.", "check": "Every product has a box and a next step.", "lost": "Is each product's return good or bad? Is spend high or low? That picks its box."},
-  {"say": "In your next weekly check, move ad money towards the \"good return\" products.", "check": "More of your spend goes to products that pay it back.", "lost": "Give a bit more ad money to your best-return product."}
+  {"say": "Check how often customers buy again. In Shopify: **Analytics > Reports > New vs returning customers**. If people rarely rebuy, focus on reviews and creators instead and skip this lesson.", "check": "You know if community is worth it for you.", "lost": "Do people buy again? If rarely, skip this lesson. That's okay."},
+  {"say": "Give customers a place and a reason to talk: a private group, events, challenges, or sharing their photos.", "check": "You have one community space with a clear reason to join.", "lost": "Pick one place for customers to chat."},
+  {"say": "Make customers the star of your posts, not the product.", "check": "At least one post a week stars a customer.", "lost": "Share one customer photo this week (with their yes)."},
+  {"say": "Read their questions each week. Add new ones to your worries list from Lesson 15.3.", "check": "Your ideas and FAQ grow from real questions.", "lost": "Write down one new question each week."},
+  {"say": "Run a poll so customers help choose something: a colour, a name or a flavour.", "check": "Customers had a say.", "lost": "Post one poll."},
+  {"say": "Use real customers as the faces of a collection.", "check": "Real customers appear in your marketing.", "lost": "Ask one customer to be in a photo."},
+  {"say": "Run a small event or live session. Reward your biggest fans with early access, gifts or a VIP group.", "check": "Your keenest fans feel looked after.", "lost": "Send one thank-you gift to a big fan."},
+  {"say": "Share feedback you acted on. For example: \"You asked for bigger sizes. Here they are.\"", "check": "Customers see their voice matters.", "lost": "Post one \"you asked, we did it\" update."}
  ]},
-"3.8": {"intro": "New products help you grow. Test them cheaply first so you don't lock up cash.",
+"3.8": {"intro": "When people see the person behind the brand, they trust it more. Press mentions add proof.",
  "steps": [
-  {"say": "Start an ideas list: customer requests, reviews, search terms, and things that go with your best sellers.", "check": "You have at least 5 ideas, each with a reason.", "lost": "Write three product ideas and why."},
-  {"say": "Test your best idea cheaply: a waitlist page, a preorder, a small batch, or asking 5 creators.", "check": "You have real proof people want it, like sign-ups or preorders.", "lost": "Make a simple waitlist page for one idea."},
-  {"say": "Plan the launch (Lessons 13.2 and 13.3): build excitement, early access, a launch offer, and ads ready.", "check": "The launch has dates, an offer and ads before day one.", "lost": "Write a launch date and one launch offer."},
-  {"say": "After 30 days, check the new product with the snapshot from Lesson 3.7.", "check": "It's in one of the four boxes, with a next step.", "lost": "Set a reminder for 30 days after launch."}
+  {"say": "Post one founder post a week: an opinion, behind the scenes, or a lesson you learned.", "check": "People see a real person every week.", "lost": "Post one behind-the-scenes photo this week."},
+  {"say": "Each month, pitch one story (not a product) to a journalist or podcast. For example, your journey or a trend.", "check": "You sent a pitch and wrote it down.", "lost": "Send one short pitch email this month."},
+  {"say": "When you get press, add their logo and a quote to your home page and ads.", "check": "Press proof shows where shoppers decide.", "lost": "Got press? Add the logo to your home page."}
  ]},
-"3.9": {"intro": "Offers get old. Others copy them. A regular check keeps yours fresh.",
+"3.9": {"intro": "Creators can spread your brand fast. Send widely, then pay to run the best posts as ads.",
  "steps": [
-  {"say": "Add a calendar reminder every 3 months: review my offer.", "check": "The next review date is in your calendar.", "lost": "Add one calendar reminder for 3 months from today."},
-  {"say": "If sales from visitors drop for 2 weeks and you can't find why, redo the five scores from Lesson 3.1.", "check": "You have fresh scores and one change to try.", "lost": "Sales slow for 2 weeks? Go back to Lesson 3.1."}
- ]},
-"3.10": {"intro": "If people use your product up, a subscription can turn one sale into many. It only suits things people reorder.",
- "steps": [
-  {"say": "Look at customers who bought twice. How many days between their orders, usually?", "check": "You know your reorder gap, like 30 or 60 days, or that repeats are too rare.", "lost": "Find two repeat customers. Count the days between orders."},
-  {"say": "Install a subscription app from the Shopify App Store. Offer one simple plan: a small saving (5% to 15%) or free shipping, every reorder gap, with easy skip and cancel.", "check": "The product page shows \"One-time purchase\" and \"Subscribe and save\".", "lost": "Install a subscription app. Make one simple plan."},
-  {"say": "Send an email offering the subscription a few days before the first order likely runs out.", "check": "New buyers get the offer right when they'd reorder.", "lost": "Add one subscription email after purchase."},
-  {"say": "Each month, check subscribers, cancels and the reasons. Fix the top reason.", "check": "You know how many subscribers you have and why people leave.", "careful": "Make cancelling and skipping easy. Hiding it causes chargebacks and angry reviews.", "lost": "Once a month, read why people cancelled. Fix the most common one."}
+  {"say": "Send free product to 20 or more creators who match your customer.", "check": "Product is on its way to lots of creators.", "careful": "Ask creators to say in their posts that it was a gift.", "lost": "Send product to five creators to start."},
+  {"say": "Pay the best ones for usage rights (permission to use their video in your ads) for a set time, like 3 months.", "check": "You have signed permission to run their content as ads.", "lost": "Ask your best creator for permission to use their video in ads. Get it in writing."},
+  {"say": "Run their content as partnership ads. These show the creator's name in the ad header, usually next to your brand. See Modules 5, 8 and 19.", "check": "The ads are live and you can compare them with your own ads.", "lost": "Turn one creator video into an ad."}
  ]}
 }

@@ -16,26 +16,26 @@ export type Topic = {
   title: string;
   icon: "truck" | "send" | "undo" | "boxes" | "card" | "shield-alert" | "lock" | "megaphone" | "receipt" | "landmark" | "globe" | "book" | "users";
   summary: string;
-  /** Lesson refs like "23.1"; the page resolves titles and anchors from the playbook. */
+  /** Lesson refs like "21.1"; the page resolves titles and anchors from the playbook. */
   lessons: string[];
   tool?: { href: string; label: string };
   tax?: boolean;
 };
 
 export const TOPICS: Topic[] = [
-  { id: "fulfilment", title: "Fulfilment and 3PLs", icon: "truck", summary: "When to stop packing yourself, how to compare warehouse quotes on the same month of orders, and how to move without losing orders.", lessons: ["23.1", "23.2"] },
-  { id: "shipping", title: "Shipping, carriers and delays", icon: "send", summary: "Know your shipping cost per order, pick a free shipping rule, keep a second carrier ready and handle lost or damaged parcels fairly.", lessons: ["23.3", "23.4"] },
-  { id: "returns", title: "Returns and exchanges", icon: "undo", summary: "Measure your return rate, fix the top reason, offer exchanges first and always meet consumer law.", lessons: ["23.5"] },
-  { id: "stock", title: "Stock systems", icon: "boxes", summary: "Reorder points and stock-out dates in Helix, and the signs it is time for inventory software.", lessons: ["23.6", "14.9"], tool: { href: "/dashboard/stock", label: "Open Suppliers & stock" } },
-  { id: "payments", title: "Payments, fees and payout holds", icon: "card", summary: "Your real blended fee rate, what buy now pay later costs, and how to avoid frozen payouts before a big sale.", lessons: ["24.1", "24.2", "24.5"] },
-  { id: "chargebacks", title: "Chargebacks and fraud", icon: "shield-alert", summary: "The deadlines, the evidence for each reason, and how to stop card-testing bots before they cost you.", lessons: ["24.3", "24.4"] },
-  { id: "security", title: "Account safety", icon: "lock", summary: "Two-factor sign-in on every account, two trusted admins, a spending limit, and the first hour after a hack.", lessons: ["25.1", "25.4", "25.6"] },
-  { id: "ad-accounts", title: "Ad accounts and agencies", icon: "megaphone", summary: "Own your business portfolio, get a disabled account reviewed the right way, and leave an agency with your data.", lessons: ["25.2", "25.3", "25.5"] },
-  { id: "gst", title: "GST and BAS", icon: "receipt", summary: "The $75,000 threshold, GST on ads and imports, BAS due dates, and New Zealand GST on low-value goods.", lessons: ["26.1", "26.2"], tax: true },
-  { id: "sales-tax", title: "US sales tax", icon: "landmark", summary: "Physical and economic nexus, the state thresholds, registering before you collect, and filing on time.", lessons: ["26.3"], tax: true },
-  { id: "abroad", title: "Selling abroad, VAT and duties", icon: "globe", summary: "UK VAT under £135, EU IOSS up to 150 euros, Canada GST/HST, tariff codes and the suspended US de minimis.", lessons: ["26.4", "26.5"], tax: true },
-  { id: "books", title: "Books, accountants and tax time", icon: "book", summary: "Registered helpers, clean payout entries, stock and product cost in your books, the monthly close and year-end steps.", lessons: ["27.1", "27.2", "27.3", "27.4", "27.5", "27.6"], tax: true },
-  { id: "team-money", title: "Team, creators and money", icon: "users", summary: "Your first hire, paying creators and suppliers safely, comparing funding offers, tool costs, Amazon and looking after yourself.", lessons: ["28.1", "28.2", "28.3", "28.4", "28.5", "28.6", "28.7", "28.8"] },
+  { id: "fulfilment", title: "Fulfilment and 3PLs", icon: "truck", summary: "When to stop packing yourself, how to compare warehouse quotes on the same month of orders, and how to move without losing orders.", lessons: ["21.1", "21.2"] },
+  { id: "shipping", title: "Shipping, carriers and delays", icon: "send", summary: "Know your shipping cost per order, pick a free shipping rule, keep a second carrier ready and handle lost or damaged parcels fairly.", lessons: ["21.3", "21.4"] },
+  { id: "returns", title: "Returns and exchanges", icon: "undo", summary: "Measure your return rate, fix the top reason, offer exchanges first and always meet consumer law.", lessons: ["21.5"] },
+  { id: "stock", title: "Stock systems", icon: "boxes", summary: "Reorder points and stock-out dates in Helix, and the signs it is time for inventory software.", lessons: ["21.6", "19.9"], tool: { href: "/dashboard/stock", label: "Open Suppliers & stock" } },
+  { id: "payments", title: "Payments, fees and payout holds", icon: "card", summary: "Your real blended fee rate, what buy now pay later costs, and how to avoid frozen payouts before a big sale.", lessons: ["20.1", "20.2", "20.5"] },
+  { id: "chargebacks", title: "Chargebacks and fraud", icon: "shield-alert", summary: "The deadlines, the evidence for each reason, and how to stop card-testing bots before they cost you.", lessons: ["20.3", "20.4"] },
+  { id: "security", title: "Account safety", icon: "lock", summary: "Two-factor sign-in on every account, two trusted admins, a spending limit, and the first hour after a hack.", lessons: ["24.1", "24.4", "24.6"] },
+  { id: "ad-accounts", title: "Ad accounts and agencies", icon: "megaphone", summary: "Own your business portfolio, get a disabled account reviewed the right way, and leave an agency with your data.", lessons: ["24.2", "24.3", "24.5"] },
+  { id: "gst", title: "GST and BAS", icon: "receipt", summary: "The $75,000 threshold, GST on ads and imports, BAS due dates, and New Zealand GST on low-value goods.", lessons: ["22.1", "22.2"], tax: true },
+  { id: "sales-tax", title: "US sales tax", icon: "landmark", summary: "Physical and economic nexus, the state thresholds, registering before you collect, and filing on time.", lessons: ["22.3"], tax: true },
+  { id: "abroad", title: "Selling abroad, VAT and duties", icon: "globe", summary: "UK VAT under £135, EU IOSS up to 150 euros, Canada GST/HST, tariff codes and the suspended US de minimis.", lessons: ["22.4", "22.5"], tax: true },
+  { id: "books", title: "Books, accountants and tax time", icon: "book", summary: "Registered helpers, clean payout entries, stock and product cost in your books, the monthly close and year-end steps.", lessons: ["23.1", "23.2", "23.3", "23.4", "23.5", "23.6"], tax: true },
+  { id: "team-money", title: "Team, creators and money", icon: "users", summary: "Your first hire, paying creators and suppliers safely, comparing funding offers, tool costs, Amazon and looking after yourself.", lessons: ["26.1", "26.2", "26.3", "26.4", "26.5", "26.6", "26.7", "26.8"] },
 ];
 
 export const THRESHOLDS_CHECKED = "2026-10-16";
@@ -65,7 +65,7 @@ export type AdminDate = {
   /** Show on Today this many days before the date. */
   remindDays: number;
   note: string;
-  /** Lesson ref, e.g. "26.1". */
+  /** Lesson ref, e.g. "22.1". */
   lesson: string;
 };
 
@@ -75,40 +75,40 @@ const WEEKEND = " If it falls on a weekend or public holiday, it moves to the ne
 
 export const ADMIN_DATES: AdminDate[] = [
   // Australia
-  { key: "bas-q1", name: "BAS due (July to September)", countries: ["AU"], date: (y) => ymd(y, 10, 28), remindDays: 28, lesson: "26.1",
+  { key: "bas-q1", name: "BAS due (July to September)", countries: ["AU"], date: (y) => ymd(y, 10, 28), remindDays: 28, lesson: "22.1",
     note: "Quarterly BAS and GST payment due. Lodging online may give you 2 more weeks; agents may have later dates." + WEEKEND },
-  { key: "bas-q2", name: "BAS due (October to December)", countries: ["AU"], date: (y) => ymd(y, 2, 28), remindDays: 28, lesson: "26.1",
+  { key: "bas-q2", name: "BAS due (October to December)", countries: ["AU"], date: (y) => ymd(y, 2, 28), remindDays: 28, lesson: "22.1",
     note: "Quarterly BAS and GST payment due. This quarter already includes extra time, so no online extension applies." + WEEKEND },
-  { key: "bas-q3", name: "BAS due (January to March)", countries: ["AU"], date: (y) => ymd(y, 4, 28), remindDays: 28, lesson: "26.1",
+  { key: "bas-q3", name: "BAS due (January to March)", countries: ["AU"], date: (y) => ymd(y, 4, 28), remindDays: 28, lesson: "22.1",
     note: "Quarterly BAS and GST payment due. Lodging online may give you 2 more weeks." + WEEKEND },
-  { key: "bas-q4", name: "BAS due (April to June)", countries: ["AU"], date: (y) => ymd(y, 7, 28), remindDays: 28, lesson: "26.1",
+  { key: "bas-q4", name: "BAS due (April to June)", countries: ["AU"], date: (y) => ymd(y, 7, 28), remindDays: 28, lesson: "22.1",
     note: "Quarterly BAS and GST payment due for the June quarter. Lodging online may give you 2 more weeks; agents may have later dates." + WEEKEND },
-  { key: "eofy-plan", name: "EOFY tax planning chat", countries: ["AU"], date: (y) => ymd(y, 5, 15), remindDays: 14, lesson: "27.5",
+  { key: "eofy-plan", name: "EOFY tax planning chat", countries: ["AU"], date: (y) => ymd(y, 5, 15), remindDays: 14, lesson: "23.5",
     note: "Book a chat with your accountant about expected profit and tax before 30 June." },
-  { key: "stocktake-au", name: "Stocktake and end of financial year", countries: ["AU"], date: (y) => ymd(y, 6, 30), remindDays: 30, lesson: "27.5",
+  { key: "stocktake-au", name: "Stocktake and end of financial year", countries: ["AU"], date: (y) => ymd(y, 6, 30), remindDays: 30, lesson: "23.5",
     note: "Count stock, write off dead stock, check super is paid and gather receipts before 30 June." },
-  { key: "tax-return-au", name: "Tax return due (if you lodge it yourself)", countries: ["AU"], date: (y) => ymd(y, 10, 31), remindDays: 30, lesson: "27.5",
+  { key: "tax-return-au", name: "Tax return due (if you lodge it yourself)", countries: ["AU"], date: (y) => ymd(y, 10, 31), remindDays: 30, lesson: "23.5",
     note: "Individuals and sole traders lodging their own return. A registered tax agent can often lodge later if you are on their list before 31 October." + WEEKEND },
   // United States
-  { key: "us-1099", name: "1099-NEC forms due", countries: ["US"], date: (y) => ymd(y, 1, 31), remindDays: 30, lesson: "27.6",
+  { key: "us-1099", name: "1099-NEC forms due", countries: ["US"], date: (y) => ymd(y, 1, 31), remindDays: 30, lesson: "23.6",
     note: "Send 1099-NEC to contractors you paid $2,000 or more last year (it was $600 for 2025 payments) and file with the IRS." + WEEKEND },
-  { key: "us-est-q4", name: "Estimated tax payment (4th)", countries: ["US"], date: (y) => ymd(y, 1, 15), remindDays: 14, lesson: "27.6",
+  { key: "us-est-q4", name: "Estimated tax payment (4th)", countries: ["US"], date: (y) => ymd(y, 1, 15), remindDays: 14, lesson: "23.6",
     note: "Last estimated tax payment for the previous year, if you pay estimates." + WEEKEND },
-  { key: "us-entity-return", name: "S corporation and partnership returns due", countries: ["US"], date: (y) => ymd(y, 3, 15), remindDays: 30, lesson: "27.6",
+  { key: "us-entity-return", name: "S corporation and partnership returns due", countries: ["US"], date: (y) => ymd(y, 3, 15), remindDays: 30, lesson: "23.6",
     note: "Forms 1120-S and 1065 for calendar-year businesses." + WEEKEND },
-  { key: "us-tax-day", name: "Tax day: returns and 1st estimated payment", countries: ["US"], date: (y) => ymd(y, 4, 15), remindDays: 30, lesson: "27.6",
+  { key: "us-tax-day", name: "Tax day: returns and 1st estimated payment", countries: ["US"], date: (y) => ymd(y, 4, 15), remindDays: 30, lesson: "23.6",
     note: "Individual returns (including sole proprietors) and C corporation returns, plus the first estimated payment for this year." + WEEKEND },
-  { key: "us-est-q2", name: "Estimated tax payment (2nd)", countries: ["US"], date: (y) => ymd(y, 6, 15), remindDays: 14, lesson: "27.6",
+  { key: "us-est-q2", name: "Estimated tax payment (2nd)", countries: ["US"], date: (y) => ymd(y, 6, 15), remindDays: 14, lesson: "23.6",
     note: "Second estimated tax payment, if you pay estimates." + WEEKEND },
-  { key: "us-sales-tax-mid", name: "Mid-year sales tax threshold check", countries: ["US"], date: (y) => ymd(y, 7, 1), remindDays: 7, lesson: "26.3",
+  { key: "us-sales-tax-mid", name: "Mid-year sales tax threshold check", countries: ["US"], date: (y) => ymd(y, 7, 1), remindDays: 7, lesson: "22.3",
     note: "Check your sales into each state against its economic nexus threshold, and register before you collect." },
-  { key: "us-est-q3", name: "Estimated tax payment (3rd)", countries: ["US"], date: (y) => ymd(y, 9, 15), remindDays: 14, lesson: "27.6",
+  { key: "us-est-q3", name: "Estimated tax payment (3rd)", countries: ["US"], date: (y) => ymd(y, 9, 15), remindDays: 14, lesson: "23.6",
     note: "Third estimated tax payment, if you pay estimates." + WEEKEND },
-  { key: "us-year-end", name: "Year-end stock count and sales tax review", countries: ["US"], date: (y) => ymd(y, 12, 31), remindDays: 30, lesson: "27.6",
+  { key: "us-year-end", name: "Year-end stock count and sales tax review", countries: ["US"], date: (y) => ymd(y, 12, 31), remindDays: 30, lesson: "23.6",
     note: "Count stock, review state sales tax registrations, and collect W-9s from contractors before January." },
   // Both
   ...[1, 4, 7, 10].map((m, i): AdminDate => ({
-    key: `security-q${i + 1}`, name: "Quarterly account security check", countries: ["AU", "US"], date: (y) => ymd(y, m, 1), remindDays: 7, lesson: "25.1",
+    key: `security-q${i + 1}`, name: "Quarterly account security check", countries: ["AU", "US"], date: (y) => ymd(y, m, 1), remindDays: 7, lesson: "24.1",
     note: "Check two-factor sign-in, remove old admins and partners, and confirm your ad account spending limit.",
   })),
 ];
@@ -148,13 +148,13 @@ export function calendarWithAdmin(today: string, country: Country, horizon = 365
   return [...upcomingEvents(today, country, horizon), ...bfcmPlanEntries(today, country, horizon), ...admin].sort((a, b) => a.date.localeCompare(b.date) || a.name.localeCompare(b.name));
 }
 
-/** "26.1" -> the playbook file slug for module 26. */
+/** "22.1" -> the playbook file slug for module 22. */
 export const MODULE_SLUGS: Record<number, string> = {
-  14: "14-inventory-cash-planning",
-  23: "23-fulfilment-shipping-returns",
-  24: "24-payments-fraud-chargebacks",
-  25: "25-account-safety-agencies",
-  26: "26-tax-gst-sales-tax-duties",
-  27: "27-accounting-bookkeeping-tax-time",
-  28: "28-team-creators-money",
+  19: "19-inventory-cash-planning",
+  20: "20-payments-fraud-chargebacks",
+  21: "21-fulfilment-shipping-returns",
+  22: "22-tax-gst-sales-tax-duties",
+  23: "23-accounting-bookkeeping-tax-time",
+  24: "24-account-safety-agencies",
+  26: "26-team-creators-money",
 };

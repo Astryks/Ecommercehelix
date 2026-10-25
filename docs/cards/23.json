@@ -1,66 +1,53 @@
 {
-"23.1": {"intro": "Packing orders yourself is cheap at first, but later it eats your growing time. A 3PL is a warehouse company that stores and ships for you. It makes sense when packing takes more of your week than selling.",
+"23.1": {"intro": "Your business structure changes how you pay tax and what you're personally on the hook for. A good accountant pays for themselves.",
  "steps": [
-  {"say": "For one normal week, write down how many orders you sent and how many hours packing, labelling and drop-offs took.", "check": "You have orders per week and packing hours per week.", "lost": "Write two numbers: orders and hours."},
-  {"say": "Work out your cost per order today: packaging + labels + postage + your time at a fair hourly rate. Example: $1 + $0.50 + $9 + 10 minutes at $30 an hour ($5) = $15.50.", "check": "You have one true cost per order, including your time.", "lost": "Add up box, label, postage and your time."},
-  {"say": "Ask at least 3 warehouses to quote on the same sample month: orders per month, units per order, number of products, carton sizes, and pallets or shelves of stock.", "check": "You have 3 quotes for the same workload.", "careful": "Outside the US: in Australia, most warehouses are in the biggest cities, so ask about delivery times to Perth and regional areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can create sales tax duties there, so read Lesson 26.3 first.", "lost": "Ask 3 warehouses for a quote."},
-  {"say": "Compare the full monthly bill, not just pick and pack: receiving, storage (per pallet, shelf or cubic metre), packaging, monthly minimums, set-up, returns handling and peak surcharges.", "check": "You can see the real total for each quote.", "lost": "Add every fee for one quote."},
-  {"say": "Ask each warehouse for a sample invoice from a client about your size.", "check": "You can see fees the price sheet leaves out.", "lost": "Ask for one sample invoice."},
-  {"say": "Ask 3 service questions: the daily order cut-off time, the error rate they measure, and what they do when they make a mistake.", "check": "You know how reliable each warehouse is.", "lost": "Ask: what time is your daily cut-off?"},
-  {"say": "Check orders flow in from Shopify by themselves, and tracking flows back.", "check": "The warehouse connects to your store with no copying by hand.", "lost": "Ask: do you connect to Shopify?"}
+  {"say": "Learn the two roles. A bookkeeper keeps records up to date weekly or monthly. An accountant or tax agent prepares returns, gives tax advice and helps you plan.", "check": "You know which helper does what.", "lost": "Bookkeeper = records. Accountant = tax."},
+  {"say": "Ask every candidate the same three questions.\n\n- How many online stores do you look after?\n- How do you handle Shopify payouts, stock and product cost?\n- What does the monthly fee include?", "check": "You can compare them on the same answers.", "lost": "Ask: how many online stores do you look after?"},
+  {"say": "Choose a fixed monthly fee, with a written list of what's included and what costs extra (like tax returns or catch-up work).", "check": "No surprise bills.", "lost": "Ask for the fee in writing."},
+  {"say": "Ask for read-only access to your books from day one, and a short monthly summary.", "check": "You can see your books any time.", "lost": "Ask for read-only access."},
+  {"say": "Review your structure with your accountant once profit is steady.", "check": "Your structure still suits the business.", "careful": "Australia: check BAS agents and tax agents on the Tax Practitioners Board register. Common structures are sole trader, company and trust. US: look for a CPA or enrolled agent. Non-residents owning a US company need a cross-border specialist.", "lost": "Book one chat when profit is steady."}
  ]},
-"23.2": {"intro": "Most warehouse moves go wrong in the handover week. A careful switch avoids the usual problems.",
+"23.2": {"intro": "Copying every order into your accounts makes thousands of lines that never match your bank. Record each payout as one summary instead.",
  "steps": [
-  {"say": "Give every product and variant its own SKU (your product code) and a barcode before anything ships (Module 22).", "check": "Every variant has a SKU and barcode.", "lost": "Give your best seller a SKU."},
-  {"say": "Send a delivery notice with each shipment, listing what's in each carton by SKU and quantity.", "check": "The warehouse knows what's coming and doesn't charge extra for unlabelled cartons.", "lost": "List what's in each box."},
-  {"say": "Ask the warehouse to count everything when it arrives and send you the count. Fix gaps before you switch.", "check": "Their count matches what you sent.", "lost": "Compare their count with yours."},
-  {"say": "Pick a quiet day to switch. Never the week before a sale.", "check": "Your switch date is away from any promotion.", "lost": "Pick a quiet week."},
-  {"say": "Place 3 test orders: one item, several items, and a remote address.", "check": "All 3 arrive and tracking reaches the customer.", "lost": "Place one test order."},
-  {"say": "For the first month, match stock every week.\n\n1. Put the warehouse stock report next to Shopify's **Inventory** page.\n2. Ask the warehouse about any gap bigger than a few units.", "check": "Stock numbers stay in step.", "careful": "Keep a little stock at home for the first month, so you can send replacements fast.", "lost": "Compare one product's count each week."},
-  {"say": "Write down who to call when something goes wrong, and how fast they promise to answer.", "check": "You have a named contact and response time.", "lost": "Save their phone number."}
+  {"say": "Use one accounting system (your accounting software) for everything.", "check": "All records live in one place.", "lost": "Pick one. Use only that."},
+  {"say": "Install a connector app that records each payout as one entry, split into sales, shipping charged, discounts, refunds, GST or sales tax, and fees.", "check": "Each payout is one tidy entry. Compare connectors on price and payment method support.", "lost": "Install one connector app."},
+  {"say": "Make a clearing account (a holding account) for each payment provider: Shopify Payments, any other payment or wallet provider, and each buy now pay later provider.", "check": "Sales go in, payouts and fees come out, and the balance falls back towards zero.", "lost": "Make one for Shopify Payments."},
+  {"say": "Record payment and buy now pay later fees as expenses, not as lower sales.", "check": "Your sales figure is the full amount.", "lost": "Fees go in expenses."},
+  {"say": "Reconcile (match to the bank) every bank line weekly.", "check": "Ten minutes a week, nothing left at year end.", "lost": "Match this week's bank lines."},
+  {"say": "Each month, compare your books' profit with Helix. Find the reason for any big gap.", "check": "The two agree, or you know why (usually missing costs or stock changes).", "careful": "Australia: check GST codes, especially on overseas costs with no GST. US: keep sales tax in its own liability account, never in sales.", "lost": "Compare one month's profit."}
  ]},
-"23.3": {"intro": "Shipping is often one of your biggest costs after the product. Know it before you set prices, and have a plan for delays.",
+"23.3": {"intro": "Stock you hold is something you own (an asset), not an expense, until it sells. Getting this right is the biggest gap between book profit and real profit.",
  "steps": [
-  {"say": "Weigh and measure your 3 most common parcels.", "check": "You know the size and weight of each. Carriers charge by size as well as weight, so smaller boxes can save money.", "lost": "Weigh your most common parcel."},
-  {"say": "Get prices from at least 2 carriers for your top delivery areas.", "check": "You can compare prices side by side.", "careful": "Outside the US: compare the national post with private couriers, especially over 1 kg (in Australia, also for WA and regional areas). US: compare the postal service with private carriers. Ground services are often cheaper for heavy parcels, the postal service for small light ones.", "lost": "Get 2 quotes for your most common parcel."},
-  {"say": "Work out your average shipping cost per order from last month's invoices. Enter it in Helix under shipping.", "check": "Helix shows true profit including shipping.", "lost": "Total shipping ÷ orders. Enter it in Helix."},
-  {"say": "Choose a rule: free shipping over an amount, a flat rate, or real-time rates. Set any free shipping amount a little above your average order (Lesson 9.11).", "check": "You have one clear shipping rule.", "lost": "Pick free shipping over a bit more than your average order."},
-  {"say": "Show delivery times on product pages and at checkout.", "check": "Fewer \"where is my order\" emails.", "lost": "Add delivery times to one product page."},
-  {"say": "Write a delay plan: a second carrier you can switch to, an email you can send in minutes, and a store banner.", "check": "You can react to a postal delay the same day.", "careful": "US: ship within the time you state, or 30 days if you state none. If you will be late, tell buyers and offer to cancel with a full refund.", "lost": "Write the delay email now, ready to send."},
-  {"say": "Check carrier prices every time they announce a rise, and at least once a year.", "check": "Your shipping rates never fall behind your costs.", "lost": "Put a yearly reminder in your calendar."}
+  {"say": "Record stock purchases at landed cost: product price plus freight, duty and broker fees, without claimable GST.", "check": "Stock values are complete and ex GST.", "lost": "Price + freight + duty + fees, no GST."},
+  {"say": "Each month or quarter, work out COGS (cost of goods sold): opening stock + purchases − closing stock. Example: $10,000 + $4,000 − $9,000 = $5,000.", "check": "You have COGS for the period.", "lost": "Start + bought − end = COGS."},
+  {"say": "Count all stock at least once a year (a stocktake). Adjust your books to match.", "check": "Books match the shelf.", "lost": "Book a stocktake day."},
+  {"say": "Write off damaged, lost or unsellable stock, with a note of why. Ask your accountant how to value slow stock.", "check": "Dead stock no longer counts as an asset.", "lost": "List the stock that will never sell."},
+  {"say": "Use the same method every year.", "check": "Years compare fairly.", "careful": "Australia: count on or near 30 June. Small businesses whose stock value changes by $5,000 or less may skip the formal adjustment. US: count on or near 31 December or your year end.", "lost": "Write down the method you use."}
  ]},
-"23.4": {"intro": "Some parcels go missing or arrive broken. Decide ahead who pays and how fast you fix it.",
+"23.4": {"intro": "A short monthly routine (the monthly close) keeps tax time easy and gives you numbers you can trust. Aim to finish within two weeks of month end.",
  "steps": [
-  {"say": "Track lost and damaged parcels for one month: how many, what they cost, and which carrier.", "check": "You know the monthly cost of lost and damaged parcels.", "lost": "Write down each lost parcel this month."},
-  {"say": "Write a simple rule. Example: resend or refund once the carrier marks a parcel lost, or the customer sends a photo of damage.", "check": "Anyone on your team can handle a claim the same way.", "lost": "Write one sentence: when we resend."},
-  {"say": "Claim from the carrier when you can. Keep proof of value and photos of the packaging.", "check": "Some of the cost comes back.", "lost": "Keep photos of broken parcels."},
-  {"say": "If you offer shipping protection (a small fee that covers loss or damage), make it opt-in: unticked by default, with the price shown.", "check": "Customers choose it. It's never ticked for them.", "careful": "Outside the US: in Australia, pre-ticked extras must be included in the total price you show. US: the FTC treats hidden or pre-ticked charges as a risk area.", "lost": "Make sure the box starts unticked."},
-  {"say": "Record protection fees as income, and resends as costs.", "check": "You can see if protection pays for itself.", "lost": "Write fees in, resends out."},
-  {"say": "Improve the packaging for anything that breaks more than once.", "check": "Damage claims fall.", "lost": "Add padding to the item that breaks most."}
+  {"say": "Reconcile all bank accounts, cards and payment clearing accounts.", "check": "Every balance matches.", "lost": "Match your main bank account."},
+  {"say": "Attach a receipt or invoice to every expense. Use a receipt app, or forward emails to your accounting software.", "check": "No expense is missing a receipt.", "lost": "Attach this week's receipts."},
+  {"say": "Fix all uncategorised lines.", "check": "Every line has a category.", "lost": "Fix 5 uncategorised lines."},
+  {"say": "Compare profit and loss with last month and with Helix.", "check": "Changes make sense.", "lost": "Compare this month with last."},
+  {"say": "Move tax money (GST or sales tax, plus an income tax estimate) into a separate savings account.", "check": "Tax is set aside.", "lost": "Move the GST amount to savings."},
+  {"say": "Save key reports into a folder for the year.", "check": "The year's records are in one place.", "careful": "Australia: keep most records for 5 years. US: keep them at least 3 years, and employment tax records 4 years.", "lost": "Save your profit and loss report."}
  ]},
-"23.5": {"intro": "Every return costs you twice: the refund and the handling. Aim for fewer returns and more exchanges, always within the law.",
+"23.5": {"intro": "In Australia the financial year ends on 30 June. Helix puts these steps on your calendar from May, so nothing is rushed.",
  "steps": [
-  {"say": "Work out your return rate: returned orders ÷ orders for the last 3 months, by product. Example: 12 ÷ 300 = 4%.", "check": "You have a return rate for each product.", "lost": "Returns ÷ orders for your best seller."},
-  {"say": "Record a reason for every return (too small, too big, not as pictured, faulty, changed mind). Fix the top reason first.", "check": "You know your number one return reason.", "lost": "Write the reason for each return."},
-  {"say": "Stop returns early with a clear size guide, real photos, measurements, and reviews that talk about fit.", "check": "Product pages answer fit and look questions.", "lost": "Add measurements to one product."},
-  {"say": "Offer an exchange or store credit first. Keep a refund available where the law needs it.", "check": "More returns become exchanges.", "careful": "Outside the US: in Australia, customers have rights to repair, replacement or refund for faulty products, whatever your policy says. Never write \"no refunds\". \"No refunds for change of mind\" is fine. UK and EU: online shoppers can usually cancel within 14 days of delivery for any reason. US: honour the policy you publish. Some states have their own rules.", "lost": "Offer an exchange first."},
-  {"say": "Make returns easy to start, with a form or portal. Check the portal's price against how many returns you get.", "check": "Returns are simple and the tool pays for itself.", "lost": "Add a simple returns form."},
-  {"say": "Check returned items quickly. Put sellable stock back on sale.", "check": "Returned stock is sellable again within days.", "lost": "Check returns the day they arrive."},
-  {"say": "Enter refunds in Helix.", "check": "Your profit numbers include refunds.", "lost": "Enter this week's refunds."}
+  {"say": "In early May, book a planning chat with your accountant about expected profit and tax.", "check": "The meeting is booked.", "lost": "Email your accountant to book a chat."},
+  {"say": "Before 30 June, finish the year-end jobs.\n\n1. Count your stock (stocktake).\n2. Write off stock that will never sell.\n3. Make sure team super is paid on time.", "check": "Stock and super are done.", "careful": "From 1 July 2026, employers pay super with each payday, and it must reach the fund within 7 business days.", "lost": "Count your stock before 30 June."},
+  {"say": "Before 30 June, gather receipts for big purchases. Check which costs fall in this year.", "check": "Deductions are documented.", "lost": "Find receipts for big purchases."},
+  {"say": "In July, reconcile every account to 30 June. Send your accountant the year's reports.", "check": "Your accountant has everything.", "lost": "Send your accountant the reports."},
+  {"say": "Lodge the June quarter BAS by 28 July. Lodging online may add two weeks, and agents may have later dates.", "check": "BAS is lodged.", "lost": "Put 28 July in your calendar."},
+  {"say": "Lodge your income tax return by 31 October yourself. Or be on a registered tax agent's client list before then, to lodge later.", "check": "Your return date is known and met.", "lost": "Using an agent? Join their list before 31 October."}
  ]},
-"23.6": {"intro": "A spreadsheet works for a few products. It breaks with many variants, more than one location, or orders on the way.",
+"23.6": {"intro": "Most US stores run on the calendar year. Helix puts these dates on your calendar for US stores.",
  "steps": [
-  {"say": "Start with the Helix **Suppliers & stock** page for reorder points, sell-out dates and order-by dates (Lesson 14.9).", "check": "Each product shows when to reorder.", "lost": "Open **Suppliers & stock**."},
-  {"say": "Move to stock software when 2 or more are true: over about 100 variants, more than one warehouse, frequent stock mistakes, or hours each week on stock.", "check": "You know if you need software yet.", "lost": "Count how many are true for you."},
-  {"say": "Before you buy, list what you need: purchase orders, landed cost (product plus freight, duties and fees), several locations, bundles, and a link to your accounting.", "check": "You have a short list of needs.", "lost": "Write your top 3 needs."},
-  {"say": "Trial the tool with your own data. Check bundles and returns work.", "check": "The tool handles your real cases.", "lost": "Try it with one bundle."},
-  {"say": "Count all stock at least once a year (Lesson 27.3). Spot-check best sellers monthly.", "check": "There's one accurate place for stock numbers.", "lost": "Count your best seller this month."}
- ]},
-"23.7": {"intro": "Most questions are the same few: where's my order, can I change size, how do I return this? Fast, friendly answers turn worried buyers into repeat buyers.",
- "steps": [
-  {"say": "Read your last 50 customer emails and messages. Group them by question. Count the top five.", "check": "You have your five most common questions, and how often each comes up.", "lost": "Read 10 messages. What's asked most?"},
-  {"say": "Write a saved reply for each of the five, in your own voice. Put the answers on your FAQ and order confirmation pages too.", "check": "Five saved replies, and the same answers on your site.", "lost": "Write one saved reply for \"where is my order?\""},
-  {"say": "Bring email, chat and social messages into one shared inbox, usually a help desk app. Turn on an automatic order tracking reply.", "check": "Every message lands in one place, and \"where is my order\" gets an instant answer. Shopify Inbox covers chat and social messages, not email.", "lost": "Turn on the automatic tracking reply."},
-  {"say": "Set a reply goal (like within one business day). Check each week how many messages missed it.", "check": "You know your reply time, and which questions take longest.", "careful": "Never argue in public replies. Move complaints to private messages fast, fix the problem, then thank the customer publicly.", "lost": "Aim to reply within one business day."}
+  {"say": "In December, count stock. Check your sales tax registrations against each state's threshold.", "check": "Stock is counted and registrations are up to date.", "lost": "Count stock in December."},
+  {"say": "Collect a Form W-9 from every contractor before you pay them.", "check": "You have a W-9 for each contractor.", "lost": "Ask each contractor for a W-9."},
+  {"say": "By 31 January, send Form 1099-NEC to contractors paid $2,000 or more in 2026, and file it with the IRS. (The 2025 limit was $600.)", "check": "All 1099s are sent and filed. Payment providers send a 1099-K once you pass $20,000 across more than 200 payments.", "lost": "Paid someone $2,000 or more? Send a 1099-NEC."},
+  {"say": "By 15 March, file partnership and S corporation returns (next business day if it's a weekend).", "check": "Those returns are filed.", "lost": "Put 15 March in your calendar."},
+  {"say": "By 15 April, file individual and C corporation returns and pay the first estimated tax. Later estimates fall on 15 June, 15 September and 15 January.", "check": "Returns are filed and estimates are in your calendar.", "careful": "Foreign-owned US companies have extra forms, such as Form 5472, so use a cross-border specialist.", "lost": "Put 15 April in your calendar."}
  ]}
 }

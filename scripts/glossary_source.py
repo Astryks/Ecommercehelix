@@ -107,5 +107,11 @@ G = [
  ("Usage rights", [], "Permission to use a creator's content in a stated place (such as paid ads) for a stated time."),
  ("Business portfolio", ["Business Manager"], "Meta's home for your business assets: ad accounts, Pages, pixels and the people who can use them."),
  ("Partner access", [], "Letting an agency or freelancer use your ad account through their own business, while you keep ownership."),
+ ("Search intent", [], "What a person searching wants: to browse a type of product, find one exact item, or get a question answered. Each needs a different kind of page."),
+ ("Alt text", [], "A short description of an image, read by search engines and by screen readers for people who cannot see it."),
+ ("URL redirect", ["redirect"], "A rule that sends visitors and search engines from an old web address to a new one, so old links keep working."),
+ ("Sitemap", ["sitemap.xml"], "A file listing the pages on your site so search engines can find them. Shopify makes one for you."),
+ ("Structured data", [], "Hidden code on a page that tells search engines facts like price, stock and rating, so they can show them in results."),
+ ("Audience segments", [], "Meta's split of your audience into new people, people who engaged with you, and existing customers, used in reports and settings."),
 
 ]

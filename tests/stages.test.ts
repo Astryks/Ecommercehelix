@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import map from "@/lib/stage-map.json";
-import { STAGE_INFO, STAGE_ORDER, TAGGED_MODULES, stageOfLesson, stageOfModule } from "@/lib/stages";
+import { FOUNDATION_MODULES, STAGE_INFO, STAGE_ORDER, TAGGED_MODULES, stageOfLesson, stageOfModule } from "@/lib/stages";
 import { DAYS, START_DAYS } from "@/lib/seed/curriculum";
 
 const PB = path.join(process.cwd(), "docs", "playbook");
@@ -15,9 +15,14 @@ describe("Attract, Convert, Grow", () => {
   it("tags every module, and each stage has modules", () => {
     expect(TAGGED_MODULES).toEqual(files.map((f) => Number(f.slice(0, 2))));
     for (const s of STAGE_ORDER) expect(TAGGED_MODULES.some((n) => stageOfModule(n) === s)).toBe(true);
-    expect(stageOfModule(7)).toBe("attract");
-    expect(stageOfModule(9)).toBe("convert");
-    expect(stageOfModule(26)).toBe("grow");
+    expect(stageOfModule(8)).toBe("attract");
+    expect(stageOfModule(14)).toBe("convert");
+    expect(stageOfModule(22)).toBe("grow");
+  });
+  it("runs in course order: foundations, then Attract, Convert, Grow", () => {
+    const order = TAGGED_MODULES.filter((n) => !FOUNDATION_MODULES.includes(n)).map(stageOfModule);
+    expect(FOUNDATION_MODULES).toEqual([1, 2]);
+    expect(order).toEqual([...order].sort((a, b) => STAGE_ORDER.indexOf(a) - STAGE_ORDER.indexOf(b)));
   });
   it("lesson overrides point at real lessons and differ from their module", () => {
     const all = files.map((f) => fs.readFileSync(path.join(PB, f), "utf8")).join("\n");
@@ -25,8 +30,8 @@ describe("Attract, Convert, Grow", () => {
       expect(all.includes(`## Lesson ${ref}:`), ref).toBe(true);
       expect(st, ref).not.toBe(stageOfModule(Number(ref.split(".")[0])));
     }
-    expect(stageOfLesson("7.10")).toBe("grow");
-    expect(stageOfLesson("7.4")).toBe("attract");
+    expect(stageOfLesson("8.13")).toBe("grow");
+    expect(stageOfLesson("8.7")).toBe("attract");
   });
   it("every lesson in the docs carries its stage tag", () => {
     for (const f of files) {

@@ -1,76 +1,34 @@
 {
-"12.1": {"intro": "TikTok can bring cheap attention, once you have videos that work there and tracking set up. Only start TikTok ads once Meta and Google make a profit.",
+"12.1": {"intro": "Your email and text list is an audience you own. You can reach it for free, any time. Collect emails when ads are cheap, sell when ads are pricey.",
  "steps": [
-  {"say": "Post free TikTok videos 3 to 5 times a week for a month. See what works for you.", "check": "You know which video styles get views and comments.", "lost": "Post one video today."},
-  {"say": "Save the 10 to 15 best videos that are good enough to be ads.", "check": "You have a bank of ad-ready videos.", "lost": "Save your top 3 videos in a folder."},
-  {"say": "Make a TikTok Business Center and an ad account. Install the TikTok pixel (it reports views, carts and sales) with the TikTok app in Shopify.", "check": "TikTok Events Manager shows Purchase events coming in. Older setups may say Complete payment.", "lost": "Install the TikTok app in Shopify."},
-  {"say": "Make a simple view in TikTok Ads Manager.\n\n1. Click **Custom columns**.\n2. Tick: spend, CPA (ad cost for one sale), add to cart, cost per add to cart, CTR, CPC (cost per click), 2-second and 6-second views, and 25%, 50%, 75% and 100% watched.\n3. Save it.", "check": "One saved view shows every number you need.", "lost": "Click **Custom columns**. Tick spend and CPA. Save."}
+  {"say": "In your email app, check how big your list is, and how many were active in the last 90 days.", "check": "You know how big your own audience is today.", "lost": "Find your list size. Write it down."},
+  {"say": "Set a list growth goal for the next quiet months. Example: +2,000 subscribers before October.", "check": "You have a written goal with a date.", "lost": "Write one number and one date."},
+  {"say": "Plan one list-building push (a better form, a competition, or lead ads) in a month when ads are cheap.", "check": "The push is in your calendar.", "lost": "Pick one month. Put \"list push\" in your calendar."}
  ]},
-"12.2": {"intro": "How you set up TikTok depends on how much you spend. Too many campaigns on a small budget starves each one.",
+"12.2": {"intro": "A competition (giveaway) can add thousands of subscribers fast. The prize decides if you get future buyers or just prize hunters.",
  "steps": [
-  {"say": "Find your daily spend in the lesson's table. Set up the campaigns listed for it.", "check": "Your TikTok account fits your budget.", "lost": "Find your spend row. Copy what it says."},
-  {"say": "Choose campaign budget (TikTok shares money between ad groups) for steady running. Choose ad group budget when you need control over each test.", "check": "Each campaign uses the budget type that suits its job.", "lost": "Steady? Campaign budget. Testing? Ad group budget."}
+  {"say": "Read the four competition types in the lesson's table. Pick one.", "check": "You've chosen a type.", "lost": "Pick the first type in the table."},
+  {"say": "Choose a prize only your kind of customer wants: your own products, or an experience linked to them.", "check": "The prize will attract future buyers, not prize hunters.", "careful": "Never offer a general gadget like a phone or a gift card. On Facebook, you can't make people share or tag friends to enter.", "lost": "Make the prize a bundle of your own products."}
  ]},
-"12.3": {"intro": "Spark ads run normal TikTok posts (yours or a creator's) as ads. They keep the post's likes and comments.",
+"12.3": {"intro": "A good competition has seven parts, from rules to checking who buys. The follow-up emails matter most.",
  "steps": [
-  {"say": "Ask the creator for a code for each post. On the post, they tap **...**, then **Ad settings**. They turn on ad authorisation and make a code.", "check": "You have a code for each post you want to run. One code works for one post.", "lost": "Ask the creator for their ad code."},
-  {"say": "Run the creator's post as an ad.\n\n1. In TikTok Ads Manager, create an ad.\n2. Choose to use a TikTok post (a Spark ad).\n3. Paste the code the creator sent.", "check": "The post runs as an ad with its likes and comments.", "lost": "Pick a TikTok post. Paste the code."}
+  {"say": "Pick the type and prize. Check your local promotion rules (some places need a permit).", "check": "You know the competition is legal where you run it.", "careful": "In Australia, some states need a permit, depending on prize value. In the US, New York and Florida need registration when prizes total over $5,000.", "lost": "Look up your local giveaway rules."},
+  {"say": "Build the entry form on a store page, and as a pop-up.", "check": "People can enter on your site two ways.", "careful": "Say clearly on the form that people who enter will get your emails. Consent hidden in fine print doesn't count.", "lost": "Make the entry page first."},
+  {"say": "Make the content: a prize picture, a short video, and clear steps to enter.", "check": "The content is ready.", "lost": "Take one nice photo of the prize."},
+  {"say": "Run ads to broad audiences with a Leads campaign, or a Sales campaign that sends people to the entry page.", "check": "Ads are live and entries are coming in.", "lost": "Start one Leads campaign."},
+  {"say": "Set up a welcome flow for people who enter, with a small offer.", "check": "Every person who enters gets welcome emails.", "lost": "Turn on a welcome flow for entrants."},
+  {"say": "After the draw, announce the winner. Send everyone else a \"sorry you didn't win\" offer.", "check": "Non-winners get a reason to buy.", "lost": "Send one \"sorry you didn't win\" email."},
+  {"say": "Measure the cost per email, and how many entrants buy within 90 days.", "check": "You know if you should run another one.", "lost": "Divide ad spend by new emails. That's cost per email."}
  ]},
-"12.4": {"intro": "TikTok ads can get tired within days. Watch for early signs.",
+"12.4": {"intro": "Growing your list pays off most just before big sales, when ads get pricey. Start 6 to 10 weeks early.",
  "steps": [
-  {"say": "Check TikTok every day or two. Watch for warning signs: rising cost per click, rising cost per add to cart, and falling watch rates.", "check": "You spot tired ads before the cost per sale rises.", "lost": "Check cost per click today."},
-  {"say": "Turn off ads that eat budget with a poor cost per sale.", "check": "Money moves to ads that work.", "lost": "Turn off your worst ad."},
-  {"say": "If cost per sale goes up after you turn off an earlier-step campaign (like add to cart), turn it back on.", "check": "TikTok gets the data it needs again.", "lost": "Costs went up? Turn it back on."},
-  {"say": "When things work, grow one move at a time.\n\n1. Make new hooks for your best ad.\n2. Try catalog ads.\n3. Offer bundles for bigger orders.\n4. Only then add a new campaign.", "check": "Growth comes from new videos and campaigns, not just more budget.", "lost": "Make one new hook for your best ad."},
-  {"say": "Judge TikTok by your total MER on the Dashboard (all ad spend as a share of all sales). Start TikTok at about 10% of your total ad budget (a rule of thumb).", "check": "You see TikTok's effect on the whole store.", "lost": "Look at total MER, not just TikTok numbers."}
+  {"say": "Find the date 6 to 10 weeks before your next big sale. Start a list-growth push then.", "check": "The start date is in your calendar.", "lost": "Count back 8 weeks from your sale. Mark it."},
+  {"say": "Build an excitement page that teases the sale, with an early-access sign-up.", "check": "Visitors can join an early-access list.", "lost": "Make one page with an early-access form."}
  ]},
-"12.5": {"intro": "Lots of people search on TikTok. Saying and showing your keywords helps videos get found for months.",
+"12.5": {"intro": "Four simple moves grow your followers and customers alongside your list.",
  "steps": [
-  {"say": "Say your main keyword in the first line of the voice-over.", "check": "TikTok can hear what the video is about.", "lost": "Say the keyword first."},
-  {"say": "Put the keyword in the on-screen text and the caption.", "check": "The keyword is in the sound, text and caption.", "lost": "Add the keyword to the caption."},
-  {"say": "Make videos that answer common questions about your type of product.", "check": "You show up when people search those questions.", "lost": "Answer one common question in a video."}
- ]},
-"12.6": {"intro": "TikTok Shop lets people buy inside TikTok. Its ads run as GMV Max campaigns. It is not in Australia yet. Its fees can eat your margin, so check the maths first.",
- "steps": [
-  {"say": "Work out what one order leaves you after TikTok Shop's commission and fees.", "check": "You know your profit per order on TikTok Shop.", "lost": "Take your profit per order. Minus TikTok's fees."},
-  {"say": "Still profitable? List your top 5 products and invite affiliate creators.", "check": "Creators can sell your products from their videos.", "lost": "List your best seller first."}
- ]},
-"12.7": {"intro": "Pinterest pins keep getting found for months. People plan buys there early.",
- "steps": [
-  {"say": "Add fresh pins every week. Put search words in titles and descriptions. Use boards by theme and season.", "check": "Your pins show up in Pinterest search.", "lost": "Add 3 pins with search words this week."},
-  {"say": "Connect your catalog. Run shopping ads, starting with the **Consideration** objective.", "check": "Pinterest ads show your products with prices. Move to **Sales** at about 50 conversions a week.", "lost": "Connect your catalog first."},
-  {"say": "Plan seasonal ads 2 to 3 months early.", "check": "Seasonal pins are live while people plan.", "lost": "Put seasonal pins in your calendar 3 months ahead."},
-  {"say": "Measure with a longer window. Count sales after views and saves, not just clicks. Compare with your total MER (all ad spend as a share of all sales).", "check": "You judge Pinterest fairly for its slower buyers.", "lost": "Use a longer attribution window."}
- ]},
-"12.8": {"intro": "SEO means getting found in Google without paying for ads. It takes months, but it keeps paying.",
- "steps": [
-  {"say": "Find the words people search when they want to buy.\n\n1. List buying searches for each category, like \"buy linen shirt\" or \"best linen shirt\".\n2. In a keyword tool, check how many people search each one and how hard it is to rank.\n3. Keep about 10 per category.", "check": "Each category has a list of target keywords.", "lost": "Write 5 buying searches for your main category."},
-  {"say": "Fix your pages: one main heading (H1) each, clear subheadings (H2, H3), a page title and a meta description (the summary under your link in Google; about 150 to 160 characters avoids cut-offs), collection pages built around a keyword, links between your pages, and alt text on images.", "check": "Every main page has a keyword title, a meta description and one H1.", "lost": "Write a meta description for your home page."},
-  {"say": "Write helpful content that matches your keywords: buying guides, comparisons and how-tos.", "check": "You publish at least one helpful article a month.", "lost": "Write one short how-to."},
-  {"say": "In Google Search Console, check: fast mobile pages, structured data (code that tells Google price, rating and stock), a submitted sitemap, no broken links, no duplicate pages.", "check": "Search Console shows your sitemap as \"Success\" and no page errors you can fix.", "lost": "Submit your sitemap in Search Console."},
-  {"say": "Get mentioned on other sites through press, partners and brand mentions.", "check": "Other sites link to you.", "lost": "Ask one partner to link to you."}
- ]},
-"12.9": {"intro": "More shoppers now ask AI assistants what to buy, and some can even shop for them. Clear facts and reviews help them pick you.",
- "steps": [
-  {"say": "Make your brand facts the same everywhere (site, marketplaces, social bios). Grow your reviews.", "check": "AI assistants find the same facts everywhere, and lots of proof.", "lost": "Make your bio match your site."},
-  {"say": "Check your robots.txt lets trusted AI crawlers read your site. Keep product data clean. Add FAQ sections and clear shipping and returns pages.", "check": "AI tools can read and quote your store correctly.", "lost": "Add a clear shipping and returns page."},
-  {"say": "Keep your product feed connected, so your store can show up inside AI shopping assistants. Shopify lists eligible stores in AI chat apps by default (**Sales channels > Agentic**).", "check": "Your products can show in AI shopping results.", "lost": "Check your product feed is connected."},
-  {"say": "Get talked about on forums, review sites and videos. Track AI assistant visits in Google Analytics (referral sources).", "check": "You know how many visits AI assistants send.", "lost": "Look for AI assistants in your referral sources."}
- ]},
-"12.10": {"intro": "Instagram shopping lets people tap a product in a post and go to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It's free once your catalog is connected.",
- "steps": [
-  {"say": "Set up your shop on Facebook and Instagram.\n\n1. In Shopify, add the **Facebook & Instagram** sales channel.\n2. Click **Connect account**. Connect your Facebook Page, business portfolio, Instagram account and catalog.\n3. Accept the terms. Click **Finish setup**.", "check": "Meta reviews your shop before it goes live. This can take a few days or longer.", "lost": "In Shopify, add the **Facebook & Instagram** sales channel."},
-  {"say": "Turn on catalog sync from your store, so prices and stock stay up to date.", "check": "Price and stock changes flow to Meta by themselves.", "lost": "Turn on catalog sync."},
-  {"say": "Tag products in your posts and Reels.", "check": "Shoppers can tap to see and buy.", "lost": "Tag one product in one post."}
- ]},
-"12.11": {"intro": "A helpful YouTube video can bring buyers for years.",
- "steps": [
-  {"say": "List 10 questions your customers ask before they buy. Use reviews, emails and the search box in YouTube itself (type a word and read the suggestions).", "check": "10 questions real people search for, like \"how to choose a running backpack\".", "lost": "Write 10 questions customers ask."},
-  {"say": "Pick the 3 questions that link best to your products. Each will be one video.", "check": "A plan for your first 3 videos.", "lost": "Pick 3."},
-  {"say": "Write each title as the question or the result people want. Keep it under about 60 characters (a rule of thumb), so it is less likely to be cut off.", "check": "3 clear titles, like \"How to Pick a Running Backpack (3 Easy Checks)\".", "lost": "Make each title the question."},
-  {"say": "Film each video on your phone. Answer the question in the first 30 seconds, then show more detail. Show your product as one helpful example, not a hard sell.", "check": "3 videos of 4 to 10 minutes that teach something useful.", "lost": "Answer it in the first 30 seconds."},
-  {"say": "Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.", "check": "Thumbnails you can read on a small phone screen.", "lost": "Big picture, 3 words or fewer."},
-  {"say": "In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).", "check": "You can see sales from YouTube in your store reports.", "lost": "Add a tagged link to your product."},
-  {"say": "Post one video every 2 weeks for 3 months. In **YouTube Studio > Analytics**, check which titles get the most clicks and the longest watching time.", "check": "You know which topics work, and you make more like them.", "lost": "Post every 2 weeks and check what works."}
+  {"say": "Put a small budget (like $5 to $10 a day) behind your best free Reels.", "check": "Your best free posts reach new people.", "lost": "Boost your best Reel for $5 a day."},
+  {"say": "Answer direct messages with helpful replies and product links.", "check": "Messages turn into sales.", "lost": "Reply to one message with a product link."},
+  {"say": "Turn on comment filters and blocked words. Team up with a brand whose products go well with yours.", "check": "Comments stay clean, and you reach a partner's audience.", "lost": "Turn on comment filters."}
  ]}
 }

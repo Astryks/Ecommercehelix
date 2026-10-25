@@ -1,18 +1,11 @@
-# ▶ NEXT STEPS (updated 20 Oct 2026) — start here
+# ▶ NEXT STEPS (updated 26 Oct 2026) — start here
 
-Work paused to save credits. Everything below is pending; nothing is half-done in the repo (the course-reorder work was stopped before any change).
+**1. Approved work: done 26 Oct 2026** (see "Course reorder, SEO basics, Meta audience check, corrections" below):
+- Done: new lesson SEO basics (now 11.8, before SEO step by step) and Meta audience check (now 9.3, next to Setting up target audiences).
+- Done: five founder-story emails name their brands again (Spanx, Nike, Gymshark, Glossier, Patagonia); branding rule updated.
+- Done: whole course reordered Start here → Attract → Convert → Grow and renumbered; old refs, links and saved progress keep working.
 
-**1. Approved by Sid, not started (do in one branch, open a PR, review the preview before merging):**
-- **New lesson: SEO basics** (Attract): search intent → page type, keywords from Search Console / autocomplete / People also ask, titles and descriptions, URLs and handles, alt text, internal links, URL redirects when deleting or renaming, broken links and 404s, sitemap in Search Console, product FAQs, structured data via the theme (Rich Results Test), writing for AI search, a monthly routine. Official sources only (developers.google.com/search, Search Console help, help.shopify.com). Relate to 12.8 so nothing is duplicated.
-- **New lesson: Meta audience check** (Attract, next to 20.2): per-campaign Audience segments breakdown (new / engaged / existing), rules of thumb (~70%+ of cold spend on new people, new-audience frequency under ~2 over 7 days), a cause → fix table, and Meta's per-ad-set customer setting that replaces the retired existing-customer cap (verify its name on Meta's help centre first).
-- **Restore five brand examples** in the daily founder-story emails (genericised in PR #3): Spanx, Nike (Blue Ribbon Sports may be named as part of Nike's story), Gymshark, Glossier, Patagonia. Others stay generic. Update the branding rule: third-party brands may be named only as these success-story examples.
-- **Reorder the whole course Attract → Convert → Grow**, similar topics grouped (foundations first; Attract: brand/content, social, creative, creators, campaigns, Meta, ad analysis/audiences, Google, TikTok/Pinterest/SEO, list growth; Convert: Shopify setup, website/CRO, offer, email/SMS, promotions, seasonal sales; Grow: inventory/cash, payments, fulfilment, tax, accounting, account safety, international, team/money, founder rhythm, AI, tool stack, customers/partners). Renumber modules and lessons in order, but keep saved progress and every old ref working through `lesson-aliases.json` / `lesson-alias.ts` (add tests); update all references (cards, curricula, learn path, goals, SOPs, glossary, emails); regenerate generated files (stages.md only via its safe `--stages` mode; do not re-run `build_guides.py`). Write the old → new mapping before implementing.
-
-**2. Corrections found by the 20 Oct gap research (not yet made):**
-- Australia: card surcharges reported banned and interchange caps lowered from 1 Oct 2026. Verify with RBA/ACCC, then update 24.1, 22.11 and profit setup copy.
-- Free-shipping threshold disagrees: 9.11 (1.25× AOV), 2.3 (~20% above), Module 22 (1.2–1.4×). Pick one rule of thumb (about 20–30% above AOV) everywhere.
-- 9.10: a free gift should be something people value, not look like a sample.
-- 23.5 / 13.4: EU sellers: 14-day withdrawal (withdrawal button from 19 Jun 2026, verify on europa.eu) and "was" price = lowest in the last 30 days.
+**2. Corrections: done 26 Oct 2026:** Australian card surcharge ban and lower interchange caps (RBA verified), one free-shipping rule of thumb (about 20 to 30% above AOV), 9.10 free gift (now 14.9), EU 14-day withdrawal plus withdrawal function (verified on europa.eu / EUR-Lex) and the 30-day "was" price rule.
 
 **3. Optional new lessons from the gap research (Sid to choose; full reports on Sid's Mac in `~/Desktop/Helix research/gaps-2026-10-20/`, kept out of the repo like other research: P = public sources, T1 website/offer, T2 Meta/creative, T3 email/promotions/sales, T4 Google/SEO/Pinterest/TikTok/strategy, T5 transferable coaching-course ideas):**
 - High: product safety, labelling and recalls (AU 2-day rule, EU GPSR); privacy and cookie consent (AU reforms, Google consent signals, UK analytics change); Google AI Max readiness; creative variety (near-identical ads count as one); incremental attribution for warm campaigns; bot traffic check; change freeze and theme backup before peak; a customer's first 100 days; day-by-day sale send plan; hype phase and December after the shipping cut-off.
@@ -26,7 +19,7 @@ Work paused to save credits. Everything below is pending; nothing is half-done i
 - Email cost: Resend free plan covers ~90-100 active users (100/day cap); Pro US$20/month after that. Check usage in Resend.
 - Unverified: Click Frenzy 2026 date; Meta creator marketplace possibly renamed "Creator Marketing Hub"; add the second Ramadan of 2030 when creating a 2031 lunar entry.
 - Re-rendered social images: swap v2 #47 and v3 25, 29, 33, 48, 49 if already booked.
-- Stale branch `site-brands` (PR #3, merged) can be deleted.
+- Done 26 Oct: stale branch `site-brands` deleted.
 
 ## Daily emails: different every day (26 Oct 2026)
 
@@ -39,7 +32,7 @@ Sid: "the daily emails are the same". The daily email is now built fresh per use
 
 # STATUS
 
-_Last updated: 20 Oct 2026 (Sydney)._
+_Last updated: 26 Oct 2026 (Sydney)._
 
 ## Needs Sid (only these are left)
 
@@ -58,12 +51,77 @@ _Last updated: 20 Oct 2026 (Sydney)._
 11b. **Content check (done 19 Oct):** the 6.12 past-buyer cap tip is gone; the cap now has one wording everywhere (see the second fact-check section below).
 12. **Replace re-rendered social images on Meta if those posts are already booked** (Instagram and Facebook). v2 post 47 (planned 29 Nov; the routine books it at the end of November): `docs/social/v2/static/post47-rest.png`. Check its real date on Meta. "Especially during BFCM" is right from 27 to 30 Nov; if it lands on 1 Dec or later, tell me. v3-25, 29, 33, 48 and 49 (planned 27 Dec, 31 Dec, 4 Jan, 19 Jan and 20 Jan) if Product's routine has already booked them. v3-48 and v3-49 are MP4s, and the v3-48 caption changed too (`docs/social/v3/manifest.csv`). v2 post 4 needs nothing (see the correction below).
 
+## Course reorder, SEO basics, Meta audience check, corrections (26 Oct 2026)
+
+Branch `course-reorder`. Full old → new lesson list: `src/lib/lesson-aliases.json` (`renumbered`), also written out before the change as an outline.
+
+**Corrections (each verified on the official source first)**
+- Australia, card surcharges and interchange: since 1 Oct 2026 Visa, Mastercard and eftpos have no-surcharge rules (debit, credit, prepaid) and American Express, UnionPay and PayPal dropped surcharging too; interchange caps fell the same day (debit 8c or 0.16%, consumer credit 0.3%; foreign cards 1.0% from 1 Apr 2027). Sources: RBA conclusions paper (FAQs, Impact and implementation, At a glance). The ACCC page returned 403 to our fetch, so the RBA FAQ is cited. Updated: 20.1 (was 24.1) Watch out and card, 13.11 (was 22.11) Watch out and card, Profit setup fee hint.
+- Free-shipping threshold: one rule of thumb, "about 20 to 30% above your average order value (1.2 to 1.3 times)", in 14.10 (was 9.11) and its plain box and self-check, 2.3, 13.9 (was 22.9), cards 02/14/13, both curricula, SOP 12, audit-engine doc, email sources doc and the free-shipping email. 14.9 (was 9.10) gift tier now sits above the free-shipping amount.
+- 14.9 (was 9.10): the free gift must be something people value and would buy, not something that looks like a sample (lesson and card).
+- EU: 21.5 (was 23.5) adds the online withdrawal function from 19 Jun 2026 ("withdraw from contract here", available for the whole 14 days, confirm by email; EUR-Lex Directive (EU) 2023/2673, application date confirmed on commission.europa.eu); 17.4 (was 13.4) "was" price = lowest price in the prior 30 days including earlier sale prices (EUR-Lex: Commission guidance on Article 6a of the Price Indication Directive). Cards matched.
+
+**New lessons (Helix's own words, official sources only)**
+- 11.8 SEO basics (Attract): search intent → page type, free keyword sources (Search Console Queries, autocomplete, People also ask), titles and descriptions, URL handles, redirects when renaming or deleting, alt text, internal links, sitemap, 404s, product FAQs, structured data via the theme (Rich Results Test), writing for AI search, a 20-minute monthly routine. 11.9 (SEO step by step) keeps keyword research, articles and mentions; 11.10 keeps AI shopping helpers. Sources: developers.google.com/search, Search Console help, help.shopify.com.
+- 9.3 Meta audience check (Attract): Audience segments breakdown, new-audience share (rule of thumb about 70%+ of cold spend), new-audience frequency under about 2 over 7 days, cause → fix table. The per-ad-set setting name could not be verified on Meta's help centre, so it is described generically: exclude customer audiences in cold ad sets and give past buyers their own ad set with a spending limit, as Meta for Developers' Advantage+ campaign guide describes after retiring the existing-customer cap.
+- Both have card decks, a self-check question, learn path places and stage tags. New glossary words: Search intent, Alt text, URL redirect, Sitemap, Structured data, Audience segments.
+
+**Founder stories:** Spanx, Nike (with Blue Ribbon Sports), Gymshark, Glossier and Patagonia stories restored in `src/lib/email/sequence.ts` (story text only; facts as in `docs/email-sequence-sources.md`). Warby Parker, Bombas and Under Armour stay generic.
+
+**New order** (modules → lessons; lesson numbers read in order; Meta and Google modules now start with the tour, account setup and first launch):
+
+| New | Was | Group | Module | Lessons |
+| --- | --- | --- | --- | --- |
+| 1 | 1 | Start here | Daily profit foundations | 10 |
+| 2 | 2 | Start here | Diagnose before you fix | 8 |
+| 3 | 4 | Attract | Brand, content and community | 9 |
+| 4 | 21 | Attract | Brand and social presence | 7 |
+| 5 | 5 | Attract | Creative strategy | 21 |
+| 6 | 19 | Attract | Creators, UGC and video ads | 13 |
+| 7 | 6 | Attract | Defining campaigns | 16 |
+| 8 | 7 | Attract | Meta ads in practice | 16 |
+| 9 | 20 | Attract | Ad performance analysis, audiences and campaign setup | 14 |
+| 10 | 8 | Attract | Google ads in practice | 13 |
+| 11 | 12 | Attract | TikTok, Pinterest, SEO and AI search | 12 |
+| 12 | 11 | Attract | List and audience growth | 5 |
+| 13 | 22 | Convert | Shopify store setup | 16 |
+| 14 | 9 | Convert | Your store: more sales per visit and bigger orders | 18 |
+| 15 | 3 | Convert | Offer and product | 11 |
+| 16 | 10 | Convert | Email, SMS and messaging | 17 |
+| 17 | 13 | Convert | Promotions, launches and big sales | 13 |
+| 18 | 30 | Convert | Seasonal sales, step by step | 6 |
+| 19 | 14 | Grow | Inventory, cash and the year plan | 12 |
+| 20 | 24 | Grow | Payments, fraud and chargebacks | 5 |
+| 21 | 23 | Grow | Fulfilment, shipping and returns | 7 |
+| 22 | 26 | Grow | Tax, GST, sales tax and duties | 5 |
+| 23 | 27 | Grow | Accounting, bookkeeping and tax time | 6 |
+| 24 | 25 | Grow | Account safety, ad accounts and agencies | 6 |
+| 25 | 15 | Grow | International expansion | 7 |
+| 26 | 28 | Grow | Team, creators and money | 9 |
+| 27 | 16 | Grow | Founder rhythm, team and resilience | 6 |
+| 28 | 17 | Grow | AI for e-commerce operators | 5 |
+| 29 | 18 | Grow | Choosing your tool stack | 2 |
+| 30 | 29 | Grow | Customers, partners and the weekly rhythm | 16 |
+
+**How old refs and progress keep working**
+- Saved data uses permanent ids: each lesson's number before this change (new lessons 12.12 and 20.14). `src/lib/lesson-alias.ts` converts at the edges: LessonProgress step keys (read and write in `repo.ts`), lesson and course task ids (`lessonTaskId`, `courseTaskId`, so existing TaskCompletion rows still match), the card player deck (CourseState.cardDeck and the browser position key) and store-check findings (AuditRun). No database change or migration was needed.
+- Browser progress moves once from `helix-lesson-steps` (old numbers) to `helix-lesson-steps-v2`. The API takes `v: 2` for current numbers; a page loaded before the deploy sends old numbers without it, which are stored as-is.
+- Old module URLs 308-redirect to the new slugs (`next.config.ts`, from `lesson-aliases.json` `modules`); old `#lesson-…` anchors jump to the same lesson (AnchorRedirect); old card links `/learn/<old>/cards/<old ref>` redirect in the cards page. Merged-lesson aliases still work.
+- Daily curricula keep their day order and task ids (only the lesson refs changed), so day progress is unchanged.
+- Tests: `tests/lesson-alias.test.ts` (old refs and step keys resolve to the same title and step, task ids round-trip, anchors and slugs), `tests/lesson-refs.test.ts` (numbers read in order; every "Lesson x.y", /learn link, anchor, goal, learn path, curriculum, business hub, store check, 12-week plan, stage map, card deck and email ref resolves).
+
+**Generated files:** curricula and glossary (`build_curriculum.py`), `stages.md` (`plain_layer.py --stages` only), `course.md` (`build_course_doc.ts`); `plain_layer.py` keys and guide targets updated; `build_guides.py` not re-run (no lesson refs in it).
+
+**Checks (26 Oct 2026):** `npm ci` ok; `next typegen` ok; `tsc` clean; `npm run lint` 0 errors (same 5 old warnings); `npm test` 51 files, 370 passed and 1 skipped (after merging the daily-email PR from main); `npm run build` ok; `check_links.py` ok; all 29 card JSON files parse. Local production build: `/`, `/learn` (Start here, Attract, Convert, Grow), modules 1, 8, 9, 11, 13, 16, 22 and 30, new card decks 11.8 and 9.3 all 200; `/learn/07-meta-ads` and `/learn/22-shopify-store-setup` 308 to `08-meta-ads` and `13-shopify-store-setup`; `/learn/07-meta-ads/cards/7.14` 308 to `/learn/08-meta-ads/cards/8.1`; `/learn/07-meta-ads#lesson-714-find-your-way-around-ads-manager` lands on Lesson 8.1 in a browser.
+
 ## Website brand sweep and Helix example names (20 Oct 2026)
 
 Owner asks: same no-third-party-brand rule on the website and app as the course; made-up example brands get a Helix name; non-profits named only as a source come out unless they set the rule or are a safety resource.
 
+**Branding rule (updated 26 Oct 2026):** third-party brands may be named only as founder success-story examples, and only these five, in the daily founder-story emails (`src/lib/email/sequence.ts`): Spanx (Sara Blakely), Nike (Phil Knight, Bill Bowerman, Blue Ribbon Sports as part of Nike's story), Gymshark (Ben Francis), Glossier (Emily Weiss, Into The Gloss) and Patagonia (Yvon Chouinard). The other three stories stay generic. Everything else below still applies.
+
 **Third-party names removed or made generic**
-- Daily founder-story emails (`src/lib/email/sequence.ts`): the 8 stories no longer name brands or people (Spanx/Sara Blakely, Nike/Phil Knight/Bill Bowerman/Blue Ribbon Sports, Gymshark/Ben Francis/Pizza Hut, Under Armour/Kevin Plank, Warby Parker, Bombas/David Heath/Randy Goldberg, Glossier/Emily Weiss/Into The Gloss, Patagonia/Yvon Chouinard). Same facts, now "one founder", "a gym clothing brand" etc.; subjects, previews and titles stay unique. Sources stay in `docs/email-sequence-sources.md` (internal).
+- Daily founder-story emails (`src/lib/email/sequence.ts`): the 8 stories no longer name brands or people (26 Oct 2026: five restored, see the branding rule above) (Spanx/Sara Blakely, Nike/Phil Knight/Bill Bowerman/Blue Ribbon Sports, Gymshark/Ben Francis/Pizza Hut, Under Armour/Kevin Plank, Warby Parker, Bombas/David Heath/Randy Goldberg, Glossier/Emily Weiss/Into The Gloss, Patagonia/Yvon Chouinard). Same facts, now "one founder", "a gym clothing brand" etc.; subjects, previews and titles stay unique. Sources stay in `docs/email-sequence-sources.md` (internal).
 - Trends feed (`src/lib/seed/trends.ts`): news-site sources Storyboard18, Adgully and ChannelX replaced by official pages (Meta for Developers: partnership ads; Meta for Developers: product videos in catalog ads; TikTok Ads help: automated keywords for search ads). Unverified figures (19% / 13%) and the in-app checkout claim dropped. `docs/product-design.md` table matched (also dropped thekeyword.co and enrichlabs.ai).
 - Daily form: "Pinterest, Snapchat and other ad accounts" -> "Pinterest and other ad accounts".
 - Learn path video titles (our copy): dropped "| The Unofficial Shopify Podcast" and "with Taylor Holiday".

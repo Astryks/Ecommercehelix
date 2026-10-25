@@ -1,40 +1,68 @@
 {
-"15.1": {"intro": "Selling to a country with no demand burns cash. A quick look at your own data shows where people already want your stuff.",
+"15.1": {"intro": "Your offer is what people get, and why they should buy now. We'll find its weakest part.",
  "steps": [
-  {"say": "In Shopify, open **Analytics > Reports > Total sales by billing location** and **Sessions by location**. List your top 5 countries outside home for the last 12 months.", "check": "You have a ranked list of countries with orders and visits.", "lost": "Open **Total sales by billing location**. Write the top 5."},
-  {"say": "Check how many people search for your type of product in each country (Google Keyword Planner, set to that country).", "check": "Each country has a monthly search number.", "lost": "Check search numbers for your top country."},
-  {"say": "Check if competitors already sell there, and where your social followers live (Instagram **Insights > Total followers > Top locations**).", "check": "Each country has a note on competitors and followers.", "lost": "Open **Top locations** in Instagram."},
-  {"say": "Pick the country that already buys from you the most.", "check": "You have one first country to grow into.", "lost": "Circle the top country on your list."}
+  {"say": "Score your main product from 1 to 5 on each of these: **promise**, **belief**, **urgency**, **safety**, **easy yes**.", "check": "You have five scores on one line.", "lost": "Give each word a score from 1 to 5. Guess fast."},
+  {"say": "Circle the lowest score. Open its lesson: promise 15.2, belief 15.3, urgency 15.4, safety 15.5, easy yes 15.6.", "check": "You know the one thing to work on this week.", "lost": "Circle the smallest number. That's your job this week."}
  ]},
-"15.2": {"intro": "Costs change in a new country. Shipping, duties, taxes and exchange rates can turn a winner into a loss.",
+"15.2": {"intro": "People buy when they can say what they'll get in one line. Your reviews already have the words.",
  "steps": [
-  {"say": "Work out landed cost for the new country: product cost, plus shipping there, import duties, taxes and exchange rate effects.", "check": "You have a cost per order for the new country.", "lost": "Product cost + shipping + duty + tax = landed cost."},
-  {"say": "Make a separate set of cost drivers for that country (like Lesson 1.2), including duties and import fees per order.", "check": "The new country has its own break-even ROAS and CPA.", "lost": "Copy your cost drivers. Add duties."}
+  {"say": "Read your 20 newest 4 and 5 star reviews. Copy the words people use for what they got.", "check": "You have 5 to 10 phrases in customers' words.", "lost": "Read five good reviews. Copy your favourite phrases."},
+  {"say": "Write one sentence about the problem your product takes away. Use their words.", "check": "You have one problem sentence, like \"No more tangled cables in your bag\".", "lost": "Finish this: \"No more ...\""},
+  {"say": "Write one sentence about how others will see your customer after they buy.", "check": "You have a \"how others see me\" sentence.", "lost": "Finish this: \"People will think I'm ...\""},
+  {"say": "Make one promise line.\n\n1. Join your sentences into one line of 15 words or fewer.\n2. In Shopify, open **Products** and pick the product.\n3. Paste the line at the top of **Description**.\n4. Use the same line to start your next ad.", "check": "The same promise is on your product page and in an ad.", "careful": "Say the result, not the feature. \"Sleep through the night\" beats \"Memory foam core\".", "lost": "Write one short line about what people get. Put it at the top of your product page."}
  ]},
-"15.3": {"intro": "Local prices in local money, rounded nicely, sell better than converted prices. Decide who pays duties up front.",
+"15.3": {"intro": "People don't buy until they believe it will work for them. Let's answer their worries with proof.",
  "steps": [
-  {"say": "In Shopify **Markets > Catalogs**, set prices in local money for that market, rounded to normal prices (like 49 euros, not 47.83).", "check": "Shoppers there see clean local prices.", "lost": "Round your best seller's price to a nice number."},
-  {"say": "Choose delivered duty paid (DDP: you charge duties at checkout) in **Settings > Taxes and duties** or your shipping app.", "check": "Customers get no surprise bill at the door. That usually sells better. Shopify charges a small fee on orders where it works out duties, and products need HS codes.", "lost": "Turn on DDP."}
+  {"say": "List 20 reasons someone might not buy. Look in support emails, reviews and return notes.", "check": "You have a list of 20 worries.", "lost": "Write five reasons people might not buy. Five is fine to start."},
+  {"say": "Sort them into six groups: price, quality, fit or size, trust, timing, and \"do I need it?\".", "check": "You can see which group is biggest.", "lost": "Put each worry in a group. Which group has the most?"},
+  {"say": "Next to each worry, write one proof: a review, a photo, a guarantee, a fact or a demo video.", "check": "Each worry has something you can show.", "lost": "Pick one worry. Find one review or photo that answers it."},
+  {"say": "Add the answers to your product page FAQ, your ads and your welcome emails. Start with the biggest group.", "check": "Top worries are answered in at least three places.", "lost": "Add one answer to your product page FAQ."}
  ]},
-"15.4": {"intro": "What sells at home may need small changes overseas.",
+"15.4": {"intro": "If there's a real reason something might run out, people act sooner. It must be true.",
  "steps": [
-  {"say": "Change sizing for the country (like US versus European sizes) on your size charts.", "check": "Size charts show local sizes.", "lost": "Add local sizes to one size chart."},
-  {"say": "Choose which products show first for that country, based on its seasons and tastes.", "check": "That country's home page shows the right products.", "lost": "Is it summer or winter there? Show those products."},
-  {"say": "Add the country's key dates and holidays to your calendar. Adjust messages and spelling.", "check": "Sales and words fit the local market.", "lost": "Add one local holiday to your calendar."}
+  {"say": "Pick one honest reason it might run out: a small batch, a preorder with a ship date, a short seasonal colour, or low stock.", "check": "You picked one you can stand behind.", "lost": "Pick one true reason it might run out."},
+  {"say": "Write that reason in one sentence on the product page. For example: \"Batch 4 of 6: 300 made, ships 14 November\".", "check": "Shoppers can see why it might go.", "lost": "Write one honest sentence about why it might run out."},
+  {"say": "Set up an email that goes out when stock drops below about 2 weeks of sales. Send it to people who looked at the product and to your best customers.", "check": "The email sends by itself when stock is low.", "careful": "Never use fake countdown timers or made-up stock numbers. In Australia, a court ordered a $15 million penalty after ACCC action, partly over a countdown timer that kept resetting.", "lost": "Set up a low-stock email in your email app. You can do it later too."}
  ]},
-"15.5": {"intro": "How you ship overseas decides delivery time, cost and returns. There are three main ways.",
+"15.5": {"intro": "Shoppers worry about buying the wrong thing. Each worry you remove means more orders.",
  "steps": [
-  {"say": "Compare the three shipping options in the lesson's table for your first country.", "check": "You've picked ship from home, a local 3PL (warehouse company) or direct from the factory.", "lost": "Just starting? Ship from home."},
-  {"say": "Look up the country's duty threshold (orders below this value pay no duty) and the courier's fees per order for collecting duties and taxes.", "check": "You know the extra cost per order and added it to your cost drivers.", "lost": "Find the duty threshold for your country."}
+  {"say": "Turn on photo reviews in your review app. Email recent buyers and ask for a photo with their review.", "check": "Your best sellers show reviews with photos.", "lost": "Ask three happy customers for a photo review."},
+  {"say": "Add a size chart to every product where fit matters.", "check": "A size guide link sits above **Add to cart**.", "lost": "Add a size chart to your best seller. No sizes? Skip this card."},
+  {"say": "Turn on live chat for your opening hours. Shopify Inbox is free.", "check": "A chat bubble shows on your store, and messages reach your phone.", "lost": "Install Shopify Inbox. Turn it on."},
+  {"say": "Add a real face: a photo of you and two sentences on your About page.", "check": "Shoppers can see a real person.", "lost": "Add one photo of you to your About page."},
+  {"say": "Write a shipping promise you can keep, like \"Ships within 24 hours, Monday to Friday\". Add a clear returns policy. Show both near the price.", "check": "On a phone, you see shipping time and returns without scrolling.", "careful": "After changing returns, watch your return rate for 60 days to check it's worth it.", "lost": "Write one line: when it ships. Put it near the price."}
  ]},
-"15.6": {"intro": "One store with Markets settings is simpler. Start there.",
+"15.6": {"intro": "How a price looks changes how it feels. Try one small idea at a time.",
  "steps": [
-  {"say": "Set up the new country in Shopify **Markets** on your current store.", "check": "The country is live as a market on your main store.", "lost": "Open **Markets**. Add the country."},
-  {"say": "Only open a separate store if the products, prices, content or apps must be very different.", "check": "You run one store unless there's a clear reason not to.", "lost": "Keep one store for now."}
+  {"say": "Add a cost-per-use line under the price. For example \"Under $1 a day\" for a $29 monthly product.", "check": "The price feels smaller, but it's the same.", "lost": "Divide the price by days used. Write that under the price."},
+  {"say": "Try one higher price on one product for two weeks, for example $39 to $49.", "check": "You can compare sales and profit. Sometimes sales barely change and you keep more.", "lost": "Raise one price. Check again in two weeks."},
+  {"say": "Show a bigger option, or the full bundle value, next to the single price.", "check": "The single price looks like better value.", "lost": "Put a bigger option next to your normal one."},
+  {"say": "Add a middle option that makes your favourite option look like the obvious pick.", "check": "More shoppers choose your favourite option.", "lost": "Add a middle option. Watch what people pick."},
+  {"say": "Test free shipping against a lower price. Then turn on a pay-in-parts option in **Settings > Payments** for pricier items. Shop Pay Installments is only for US, Canadian and UK stores.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
  ]},
-"15.7": {"intro": "Each country needs its own report. Otherwise a strong country can hide a weak one.",
+"15.7": {"intro": "Not every product deserves your ad money. A quick monthly check shows which ones do.",
  "steps": [
-  {"say": "Make a report showing MER by country (ad spend divided by sales, for each country).", "check": "You can see which countries make a profit.", "lost": "Ad spend ÷ sales for one country."},
-  {"say": "Either start a separate campaign per country once spend allows, or run one worldwide campaign to find demand, then give winning countries their own.", "check": "Each strong country has its own campaign and budget.", "lost": "Give your best country its own campaign."}
+  {"say": "For each product, write last month's ad spend, sales, return (sales ÷ ad spend), units sold and margin.", "check": "One row per product, five numbers each.", "lost": "Start with your top 3 products. Five numbers each."},
+  {"say": "Put each product in one of the four boxes in the lesson table. Do the action for that box.", "check": "Every product has a box and a next step.", "lost": "Is each product's return good or bad? Is spend high or low? That picks its box."},
+  {"say": "In your next weekly check, move ad money towards the \"good return\" products.", "check": "More of your spend goes to products that pay it back.", "lost": "Give a bit more ad money to your best-return product."}
+ ]},
+"15.8": {"intro": "New products help you grow. Test them cheaply first so you don't lock up cash.",
+ "steps": [
+  {"say": "Start an ideas list: customer requests, reviews, search terms, and things that go with your best sellers.", "check": "You have at least 5 ideas, each with a reason.", "lost": "Write three product ideas and why."},
+  {"say": "Test your best idea cheaply: a waitlist page, a preorder, a small batch, or asking 5 creators.", "check": "You have real proof people want it, like sign-ups or preorders.", "lost": "Make a simple waitlist page for one idea."},
+  {"say": "Plan the launch (Lessons 17.2 and 17.3): build excitement, early access, a launch offer, and ads ready.", "check": "The launch has dates, an offer and ads before day one.", "lost": "Write a launch date and one launch offer."},
+  {"say": "After 30 days, check the new product with the snapshot from Lesson 15.7.", "check": "It's in one of the four boxes, with a next step.", "lost": "Set a reminder for 30 days after launch."}
+ ]},
+"15.9": {"intro": "Offers get old. Others copy them. A regular check keeps yours fresh.",
+ "steps": [
+  {"say": "Add a calendar reminder every 3 months: review my offer.", "check": "The next review date is in your calendar.", "lost": "Add one calendar reminder for 3 months from today."},
+  {"say": "If sales from visitors drop for 2 weeks and you can't find why, redo the five scores from Lesson 15.1.", "check": "You have fresh scores and one change to try.", "lost": "Sales slow for 2 weeks? Go back to Lesson 15.1."}
+ ]},
+"15.10": {"intro": "If people use your product up, a subscription can turn one sale into many. It only suits things people reorder.",
+ "steps": [
+  {"say": "Look at customers who bought twice. How many days between their orders, usually?", "check": "You know your reorder gap, like 30 or 60 days, or that repeats are too rare.", "lost": "Find two repeat customers. Count the days between orders."},
+  {"say": "Install a subscription app from the Shopify App Store. Offer one simple plan: a small saving (5% to 15%) or free shipping, every reorder gap, with easy skip and cancel.", "check": "The product page shows \"One-time purchase\" and \"Subscribe and save\".", "lost": "Install a subscription app. Make one simple plan."},
+  {"say": "Send an email offering the subscription a few days before the first order likely runs out.", "check": "New buyers get the offer right when they'd reorder.", "lost": "Add one subscription email after purchase."},
+  {"say": "Each month, check subscribers, cancels and the reasons. Fix the top reason.", "check": "You know how many subscribers you have and why people leave.", "careful": "Make cancelling and skipping easy. Hiding it causes chargebacks and angry reviews.", "lost": "Once a month, read why people cancelled. Fix the most common one."}
  ]}
 }

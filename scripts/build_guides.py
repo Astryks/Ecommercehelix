@@ -374,7 +374,7 @@ save("helix-1-daily-update", g, [
     "Press Save.",
     "Read your profit and the one line that tells you what to do today."],
     "This is Helix itself. Your numbers stay private to your account.")
-# ---------- Shopify store setup (module 22) ----------
+# ---------- Shopify store setup (module 13) ----------
 SHOP = "#008060"
 
 

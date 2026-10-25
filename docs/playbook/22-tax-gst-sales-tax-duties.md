@@ -1,8 +1,8 @@
-# Module 26: Tax, GST, sales tax and duties
+# Module 22: Tax, GST, sales tax and duties
 
 **Outcome:** you know when you must register for GST or sales tax. You know how to keep tax money apart from your money. You know which dates matter. You also know how VAT, duties and tariffs change your prices when you sell or buy overseas.
 
-**Related:** [Module 22 Shopify store setup](22-shopify-store-setup.md), [Module 15 International expansion](15-international-expansion.md), [Module 27 Accounting, bookkeeping and tax time](27-accounting-bookkeeping-tax-time.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md)
+**Related:** [Module 13 Shopify store setup](13-shopify-store-setup.md), [Module 25 International expansion](25-international-expansion.md), [Module 23 Accounting, bookkeeping and tax time](23-accounting-bookkeeping-tax-time.md), [Module 19 Inventory, cash and the year plan](19-inventory-cash-planning.md)
 
 
 <!-- plain:start -->
@@ -38,7 +38,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant before you act. Rules change often and depend on your situation. Every lesson in this module links the official source so you can confirm the current rule.
 
-## Lesson 26.1: GST: register, charge and lodge
+## Lesson 22.1: GST: register, charge and lodge
 <!-- stage:grow -->
 
 **Why this matters:** GST (goods and services tax) is 10% on most local sales once you are registered. The money you collect is held for the ATO (the tax office), not earned by you, so set it aside.
@@ -77,7 +77,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 26.2: GST on what you buy: ads, apps and imports
+## Lesson 22.2: GST on what you buy: ads, apps and imports
 <!-- stage:grow -->
 
 **Why this matters:** Many costs come from overseas: ads, apps, software and stock. GST works differently on each, and getting it right stops you paying tax you could avoid or claim back.
@@ -110,7 +110,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 26.3: US sales tax: nexus, registering and filing
+## Lesson 22.3: US sales tax: nexus, registering and filing
 <!-- stage:grow -->
 
 **Why this matters:** The US has no national sales tax. Each state sets its own rules. You only collect a state's tax once you have nexus there (a strong enough link to that state).
@@ -143,7 +143,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 26.4: Selling to the UK, EU and Canada
+## Lesson 22.4: Selling to the UK, EU and Canada
 <!-- stage:grow -->
 
 **Why this matters:** Selling abroad means charging the customer's tax or leaving them to pay it on delivery. Surprise fees at the door cause refused parcels and angry reviews.
@@ -168,7 +168,7 @@
 
 **Expected result:** Shoppers see a full local price.
 
-**Step 6.** Recalculate profit per country with tax, duty and shipping (see [Lesson 15.2](15-international-expansion.md#lesson-152-recalculate-unit-economics-per-country)).
+**Step 6.** Recalculate profit per country with tax, duty and shipping (see [Lesson 25.2](25-international-expansion.md#lesson-252-recalculate-unit-economics-per-country)).
 
 **Expected result:** You know which countries make money.
 
@@ -178,7 +178,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 26.5: Duties, tariffs and the end of US de minimis
+## Lesson 22.5: Duties, tariffs and the end of US de minimis
 <!-- stage:grow -->
 
 **Why this matters:** Duties are taxes on imported goods. They depend on the tariff code (what the product is), where it was made and its value. They change your landed cost: product plus freight, duty and fees.

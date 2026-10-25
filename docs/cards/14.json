@@ -1,78 +1,117 @@
 {
-"14.1": {"intro": "Your range is all the products you sell. Planning it puts your cash into products that earn.",
+"14.1": {"intro": "Getting more visitors to buy is called CRO. A small monthly loop works better than random changes. Let's set it up.",
  "steps": [
-  {"say": "Choose the categories that earn the most and fit your brand. Use last year's sales and margin by category.", "check": "You have a short list of focus categories.", "lost": "Find your top earning category."},
-  {"say": "Track every style in one table: launch date, units sold, sell-through % (share of stock sold), margin, and whether you'll reorder.", "check": "Every style has a row you update monthly.", "lost": "Make a table with your top 5 products."},
-  {"say": "Order small first runs of new styles. Reorder winners quickly.", "check": "New styles are tested with little cash at risk.", "lost": "Order a small amount of the next new thing."},
-  {"say": "Write a range plan: styles per category, price points, and how many are new versus core (always in stock).", "check": "You have a one-page range plan.", "lost": "List your core products."},
-  {"say": "Forecast core products from their sales history. Forecast new ones from similar past launches.", "check": "Each product has a forecast based on proof.", "lost": "Forecast your best seller from last year."}
+  {"say": "Look at each main page. Use the checklists in Lesson 14.2. Write down every missing thing.", "check": "You have a list of gaps for each page.", "lost": "Check just your home page. Write down what's missing."},
+  {"say": "For each gap, ask: how much will it help, and how hard is it? Sort them into quick wins, small builds and big builds.", "check": "Quick wins are at the top of your list.", "lost": "Circle the easiest, most helpful fix."},
+  {"say": "Do the top quick wins first. Use your theme settings or an app.", "check": "The quick wins are live. Only pay for custom code once an idea has proven it works.", "lost": "Do one quick win with your theme settings."},
+  {"say": "Measure each change. Use heatmaps, recordings, funnel reports and A/B tests (Lessons 14.7 and 14.8).", "check": "Each change has a before number and an after number.", "lost": "Write down one number before and after your change."},
+  {"say": "Put a monthly reminder in your calendar to do this loop again.", "check": "The next review is in your calendar.", "lost": "Add one calendar reminder for next month."}
  ]},
-"14.2": {"intro": "A 10-minute weekly stock check stops two pricey mistakes: running out of a best seller, and stock that won't sell.",
+"14.2": {"intro": "Every page has a short list of things shoppers expect. Missing ones lose sales quietly. \"Above the fold\" means what you see before you scroll.",
  "steps": [
-  {"say": "In Helix, open **Suppliers & stock**. Update on-hand and on-order counts for each product.", "check": "Counts are up to date this week.", "lost": "Update the count for your best seller."},
-  {"say": "Read weeks of cover: stock divided by units sold per week. Example: 60 in stock ÷ 15 a week = 4 weeks.", "check": "You know how long each product will last.", "lost": "Stock ÷ weekly sales = weeks left."},
-  {"say": "Grade products A, B or C. A items are the few that make most of your sales, B the middle, C the slow ones.", "check": "Every product has a grade.", "lost": "Mark your top sellers as A."},
-  {"say": "Note reorder dates. Flag products with too little cover (about to sell out) or too much (cash stuck on shelves).", "check": "You have a short list to reorder and a short list to clear.", "careful": "Don't push ads hard on a product that's about to sell out.", "lost": "Flag anything with under 4 weeks left."}
+  {"say": "Open your home page on your phone. Without scrolling, look for five things: a promo bar (like \"Free shipping over $80\"), a simple menu, a banner with one message and its own mobile picture, one clear button, and a trust sign (stars, customer count or press logo).", "check": "All five show without scrolling on a phone.", "lost": "Open your home page on your phone. Is there one clear button?"},
+  {"say": "Now scroll the home page. Look for: best sellers, categories, reasons to buy, reviews, your founder story, press mentions and an email sign-up.", "check": "Each section is there, roughly in that order.", "lost": "Scroll down. Do you see reviews and an email sign-up?"},
+  {"say": "Open a product page on your phone. Before scrolling, look for nine things: title, one line on what's different, star rating, price with a compare-at or bundle value, an offer (\"Buy 2, save 10%\"), size or colour picker, Add to cart, delivery estimate, and trust badges (secure checkout, free returns).", "check": "All nine show before scrolling on mobile.", "lost": "On one product page, check you can see the price and Add to cart without scrolling."},
+  {"say": "Scroll the product page. Look for: reasons to buy, how to use it, photo reviews, FAQs, a comparison, guarantees and \"goes well with\" products.", "check": "Shoppers who scroll find an answer to every common worry.", "lost": "Add one FAQ to your best seller's page."},
+  {"say": "Open a collection page. Look for filters you can tick more than one of (and reset easily), sort by best selling, badges (new, best seller, low stock) and quick add to cart.", "check": "Shoppers can narrow down and buy in a few taps.", "lost": "Set your collection to sort by best selling."},
+  {"say": "Check your cart and checkout: a progress bar to free shipping or a gift, one upsell spot, express pay buttons (Shop Pay and the phone and online wallets Shopify offers), no surprise fees, and trust badges with policy links.", "check": "Checkout has no surprises and has the fast pay buttons.", "careful": "If an optional add-on annoys people (like shipping protection ticked by default) and hurts sales, remove it. And any compare-at (\"was\") price must be one you really charged recently.", "lost": "Check the express pay buttons show in your checkout."}
  ]},
-"14.3": {"intro": "Stock ties up cash, and cash lets you grow. Five levers free it up: buy cheaper, better terms, pay later, lower risk, sell faster.",
+"14.3": {"intro": "Accessibility means everyone can use your store, even people who can't see well or only use a keyboard. Some fixes, like alt text, also help search engines.",
  "steps": [
-  {"say": "Read the five levers in the lesson's table. Pick the easiest one for this month.", "check": "You've chosen one lever.", "lost": "Pick \"pay later\". It's often the easiest."},
-  {"say": "Take one action on it. Example: ask your supplier for 30-day terms on the balance.", "check": "You've sent the request or made the change.", "lost": "Send your supplier one email asking for 30 days."}
+  {"say": "Run your text and button colours through a free online contrast checker.", "check": "Body text and buttons pass at least the AA level (4.5 to 1 contrast for normal text).", "lost": "Check your main button colour in a contrast checker."},
+  {"say": "Add alt text (a short picture description for screen readers) to each product image. Find it in Shopify **Products > [product] > Media**.", "check": "Every image has a short, clear alt text.", "lost": "Add alt text to your best seller's main photo."},
+  {"say": "Use only your keyboard. Press Tab to move from the home page all the way to checkout.", "check": "You can reach and use every link, button and form box.", "lost": "Press Tab on your home page. Can you reach the menu?"},
+  {"say": "Check body text is at least 16px on mobile (a common rule of thumb), every form box has a label, and videos have captions.", "check": "Text is easy to read, forms are labelled, videos have captions.", "lost": "Check one form has labels on every box."}
  ]},
-"14.4": {"intro": "A cash forecast shows how much money you'll have each week. Profit isn't the same as cash in the bank.",
+"14.4": {"intro": "Most shoppers use a phone. A slow page loses them before they see your stuff. Google checks speed with three Core Web Vitals.",
  "steps": [
-  {"say": "Make a spreadsheet with one column per week for the next 13 weeks. Add monthly columns after that for big stock buys.", "check": "You have a blank forecast.", "lost": "Make a sheet with 13 week columns."},
-  {"say": "For each week, add rows: starting cash, sales income, stock payments (deposits and balances), ad spend, fixed costs, tax and loan repayments.", "check": "Every week shows an ending cash number, and you can see the lowest week.", "lost": "Starting cash + money in − money out = ending cash."},
-  {"say": "Put some profit aside for tax every month. Ask your accountant how much.", "check": "Tax money sits in a separate account.", "lost": "Open a separate tax savings account."},
-  {"say": "Update the forecast at the start of each week.", "check": "A weekly reminder is set, and the forecast stays fresh.", "lost": "Set a reminder for every Monday."}
+  {"say": "Go to pagespeed.web.dev. Test your home page and one product page on mobile.", "check": "You have a load time and a list of the biggest problems.", "lost": "Test just your home page on mobile."},
+  {"say": "Make your images and videos smaller (compress them). Aim for product images under about 300 KB.", "check": "Image files are smaller and pages load faster.", "lost": "Compress your biggest product photo."},
+  {"say": "Remove apps and scripts you don't use. Set images and videos lower down to lazy-load (they load only when someone scrolls to them).", "check": "Fewer scripts run on each page.", "lost": "Delete one app you don't use."},
+  {"say": "In Shopify, go to **Online Store > Preferences**. Make sure spam protection is on (Shopify turns it on by default). It adds a bot check to contact forms and account sign-ups.", "check": "Fewer fake sign-ups and spam messages reach you.", "lost": "Find Spam protection in Online Store > Preferences. Check it's on."},
+  {"say": "In Shopify, find the web performance reports under **Analytics > Reports**. They show the three Core Web Vitals for real visitors.", "check": "You know if you pass Google's \"good\" levels: main image shows in 2.5 seconds or less (LCP), taps react in 200 ms or less (INP), and the page barely jumps (CLS 0.1 or less).", "lost": "Open Analytics > Reports. Type a colon (:) in the search box."},
+  {"say": "After your fixes, test the same two pages on pagespeed.web.dev again.", "check": "You have a before and after result for each page.", "lost": "Test your home page again. Compare."},
+  {"say": "On your phone, using mobile data (not Wi-Fi), try to buy something. Fix anything hard to tap or read.", "check": "The main product image shows in about 2.5 seconds and buying is easy.", "careful": "Only chase fixes that save a second or more. Tiny gains aren't worth it.", "lost": "Turn off Wi-Fi. Open one product page. Count the seconds."}
  ]},
-"14.5": {"intro": "Borrowing can speed you up or sink you. Only borrow when both checks pass.",
+"14.5": {"intro": "Copy means the words on your site. Clear, exact words in your customers' own language sell. Fuzzy words don't.",
  "steps": [
-  {"say": "Check the money will clearly earn more than it costs. Example: stock for a product that already sells well.", "check": "You can name what the money will earn.", "lost": "Will it earn more than it costs? Yes or no."},
-  {"say": "Check your cash forecast shows you could still pay it back in a bad month.", "check": "Repayments fit even in your worst month.", "careful": "Never borrow to cover losses.", "lost": "Look at your worst month. Could you still pay?"}
+  {"say": "Rewrite the first line of each product description. Start with what the customer gets.", "check": "The first line says what changes for the customer.", "lost": "Rewrite the first line of your best seller."},
+  {"say": "Swap fuzzy claims for exact ones. Say \"dries in 2 hours\", not \"dries fast\". Borrow words from your reviews.", "check": "Every claim is exact and sounds like your customers.", "lost": "Find one fuzzy word. Make it exact."},
+  {"say": "Answer the top worries. Then break the text into short sentences, headings and bullet points.", "check": "The page is easy to skim on a phone.", "lost": "Turn one long paragraph into bullets."},
+  {"say": "End each section with a clear button that says what to do next.", "check": "There's always a next step showing.", "lost": "Add one button at the end of your page."}
  ]},
-"14.6": {"intro": "Good money habits make the numbers easy to see. Four habits do most of it.",
+"14.6": {"intro": "A landing page is made for one ad or one offer. When the page matches the ad, more people buy. You can test one in 48 hours.",
  "steps": [
-  {"say": "Open a separate business bank account if you don't have one. Move all business money in and out through it.", "check": "Personal and business money never mix.", "lost": "Open a business bank account."},
-  {"say": "Pay yourself a set amount on the same day each month.", "check": "Your wage is steady and counted in fixed costs.", "lost": "Pick one pay day each month."},
-  {"say": "Book 15 minutes a week to look at your numbers in Helix.", "check": "A weekly money check is in your calendar.", "lost": "Add a 15-minute weekly reminder."},
-  {"say": "Once sales are bigger, or before raising money, think about a part-time finance expert (a fractional CFO).", "check": "You know when outside money help makes sense.", "lost": "Still small? Skip this for now."}
+  {"say": "Pick one type: a \"5 reasons\" list, a comparison, a founder story, a bundle builder, or a sale collection page.", "check": "You've chosen a type that matches your ad.", "lost": "Pick the \"5 reasons\" list. It's the easiest."},
+  {"say": "Build it with a page builder app. Use this order: hook headline, the problem, your solution, 3 to 5 reasons to buy, proof, the offer, FAQ, final button.", "check": "The page is live with all eight parts.", "lost": "Write just the headline and the final button first."},
+  {"say": "Send half your ad visitors to the new page and half to your normal product page.", "check": "Both pages get about the same traffic from the same ads.", "lost": "Split the ad traffic 50/50."},
+  {"say": "Wait about 2 weeks. Keep the page that makes more money per visit.", "check": "The winner becomes the main page for that ad.", "lost": "After 2 weeks, keep the one with more money per visit."}
  ]},
-"14.7": {"intro": "The year plan ties sales, stock and marketing together. Work backwards from monthly targets.",
+"14.7": {"intro": "Measuring shows where shoppers get stuck. Then you fix the right thing.",
  "steps": [
-  {"say": "Find your growth rate. Compare the last 12 months of sales with the 12 months before (Dashboard, **Year** view). Example: $120,000 vs $100,000 is 20% growth.", "check": "You have a growth percentage.", "lost": "Open the **Year** view. Compare the two numbers."},
-  {"say": "Set a sales target for each month, including your big sales.", "check": "Twelve monthly targets are written down.", "lost": "Write next month's target first."},
-  {"say": "Work backwards from each month's target to the stock you need to buy and the ad budget.", "check": "Each month has a stock order and an ad budget.", "lost": "For next month, write the stock and ad budget."},
-  {"say": "Make a marketing calendar of launches, sales, events and themes. Review the plan every 6 months.", "check": "The calendar is filled and a 6-month review is booked.", "lost": "Book a review in 6 months."}
+  {"say": "Install a heatmap and recording tool (free ones exist). Watch 20 recordings of phone visitors.", "check": "You've noted angry repeat clicks, clicks on things that aren't links, and how far people scroll.", "lost": "Install the tool. Watch just 5 recordings today."},
+  {"say": "In Shopify, open **Analytics > Reports > Conversion rate breakdown**. Read the path: visits, then added to cart, then reached checkout, then completed checkout.", "check": "You know which step loses the most people.", "lost": "Find the step with the biggest drop."},
+  {"say": "In Google Analytics, check where visitors come from, which landing pages sell, and visits from AI assistant websites.", "check": "You know where your best visitors come from.", "lost": "Find your top traffic source."},
+  {"say": "If sales suddenly drop, check in this order: tracking, site errors, payment methods, stock, price changes, traffic source, competitor sales.", "check": "You find the cause in minutes, not days.", "lost": "Start with tracking. Then go down the list."}
  ]},
-"14.8": {"intro": "A good supplier makes a good product on time at a fair price, and tells you early about problems. Check carefully up front. Helix keeps supplier details on the Suppliers & stock page.",
+"14.8": {"intro": "An A/B test shows two versions to two halves of your visitors, to see which sells more. Change one thing at a time.",
  "steps": [
-  {"say": "Write a one-page spec: materials, size, finish, packaging, certifications, and the landed cost you want.", "check": "Every supplier can quote against the same spec.", "lost": "Write the materials and size on one page."},
-  {"say": "Search supplier marketplaces, trade shows and industry lists. Ask other founders for introductions. Shortlist 3 to 5.", "check": "You have 3 to 5 options. Local makers cost more each but are quicker and have smaller minimums.", "lost": "Find 3 suppliers."},
-  {"say": "Ask each for their business licence (check it covers your product) and a live video tour of the production line. Or pay an inspection company to visit.", "check": "You know if each is a factory (makes it) or a trading company (buys from factories), and both are checked.", "lost": "Ask for a live video tour."},
-  {"say": "Order paid samples from at least 2 suppliers. Test them like a customer would for 1 to 2 weeks.", "check": "You have a winner, and can approve a signed \"golden sample\" that production must match.", "lost": "Order 2 samples. Use them for a week."},
-  {"say": "Ask what sets the MOQ (minimum order quantity). Lower it with fewer colours, a stock fabric, or a higher price per unit on the first run.", "check": "Your first order covers no more than 3 to 4 months of expected sales.", "careful": "Cash stuck in slow stock is a common way growing stores run out of money.", "lost": "Ask: can I order fewer if I pick fewer colours?"},
-  {"say": "Get quotes on the same terms (like FOB: price with goods loaded at the port). Work out landed cost: unit price plus freight, duty and other costs (packaging, inspection, bank fees, broker).", "check": "Each supplier has a landed cost you can compare. Enter it as product cost in Helix.", "lost": "Unit price + freight + duty + extras = landed cost."},
-  {"say": "Agree payment terms from your own written terms of trade. A common first deal is 30% deposit, 70% before shipping. Pay by bank transfer to an account in the company's name.", "check": "Terms are in writing. You confirm any change of bank details by phone.", "lost": "Bank details changed? Phone them to check."},
-  {"say": "Write a quality checklist from the golden sample. Book an inspection before shipping for bigger orders. Count and spot-check every delivery with photos.", "check": "Problems are caught before you pay the balance or list the stock.", "lost": "Count every delivery. Take photos."},
-  {"say": "Share a code of conduct (fair pay, safe conditions, no forced or child labour) and your forecast. Review suppliers every year.", "check": "You have a written, long-term partnership.", "careful": "Watch the exchange rate when paying in US dollars. A few cents can change your margin.", "lost": "Send your supplier a code of conduct."}
+  {"say": "Pick one thing to change. For example, a cart drawer versus a cart page.", "check": "The test changes only one thing.", "lost": "Choose just one thing to test."},
+  {"say": "Set up the test in your testing app with a 50/50 split.", "check": "Each version gets half the visitors.", "lost": "Set the split to 50/50."},
+  {"say": "Wait until the app shows about 95% confidence (also called significance).", "check": "You have a result you can trust.", "lost": "Don't stop early. Wait for about 95%."},
+  {"say": "Write the test, the result and your decision in a test log.", "check": "Every test is written down, so wins add up and nothing gets retested by mistake.", "lost": "Write one line: what you tested and who won."}
  ]},
-"14.9": {"intro": "Running out loses sales. Ordering too much ties up cash. A reorder point tells you exactly when to order, and Helix does the maths.",
+"14.9": {"intro": "AOV is average order value: sales divided by orders. Bigger orders make every visitor worth more, as long as just as many people still buy.",
  "steps": [
-  {"say": "Work out sales speed: average units a day over the last 4 to 8 weeks. Leave out sold-out days and big sale days.", "check": "You have units per day for each product.", "lost": "Units sold ÷ days = sales speed."},
-  {"say": "Find the lead time: days from placing the order with your supplier (usually when you pay the deposit) to stock ready to sell (making, shipping, customs, receiving).", "check": "You have a lead time in days for each product.", "lost": "Count the days from deposit to stock on the shelf."},
-  {"say": "Set safety days. Start with 14. Use more for long sea freight.", "check": "Each product has a buffer.", "lost": "Use 14."},
-  {"say": "In Helix **Suppliers & stock**, enter sales speed, lead time and safety days for each product.", "check": "Helix shows the reorder point (sales speed × (lead time + safety days)) and a countdown to each sell-out. Example: 3 a day × (45 + 14) days = 177 units.", "lost": "Enter the three numbers for your best seller."},
-  {"say": "At the reorder point (on-hand plus on-order), order the next 1 to 3 months of sales. Order at least the supplier's minimum.", "check": "An alert shows on Today when it's time to order, and stock arrives before you run out.", "lost": "Alert on Today? Place the order."},
-  {"say": "For Black Friday and Christmas, work out the last safe order date: event date, minus lead time, minus about a week to receive and list.", "check": "Peak stock is ordered in time. Peak week can sell several times a normal week, so check last year.", "lost": "Event date − lead time − 1 week = order by."}
+  {"say": "Set reward levels in the cart: free shipping at one amount, a free gift at a higher amount, a discount at a higher one again.", "check": "The cart shows shoppers what they unlock next.", "careful": "Pick a gift people value and would happily buy, like a full-size product. A gift that looks like a sample feels cheap.", "lost": "Set just the free shipping amount first."},
+  {"say": "Add a bundle, or a bundle builder (customers pick items for a set price).", "check": "At least one bundle is live on your best seller's page.", "lost": "Make one bundle with your best seller."},
+  {"say": "Add \"goes well with\" ideas in the cart, and a one-click offer on the thank-you page after they pay.", "check": "Shoppers see one useful extra before and after paying.", "lost": "Add one \"goes well with\" item in the cart."},
+  {"say": "Add \"buy 3, save 15%\" deals. For things people use up, add subscriptions with an easy skip.", "check": "Repeat and bulk buyers have a reason to buy more.", "careful": "Judge every idea by RPV (revenue per visit), not just AOV. A bigger order is no good if fewer people buy.", "lost": "Add one \"buy 3, save 15%\" deal."}
  ]},
-"14.12": {"intro": "Your cash is stuck from the day you pay a supplier until a customer's money reaches you. Count the days.",
+"14.10": {"intro": "A widely quoted rule of thumb: about 7 in 10 online carts are left behind. Surprise extra costs like shipping are a common reason. A smart free shipping amount makes many add one more thing.",
  "steps": [
-  {"say": "Find how many days stock sits. Use the **Days of inventory remaining** column in **Analytics > Reports > Inventory remaining per product**, or stock cost ÷ cost sold per day. $27,000 ÷ $300 = 90.", "check": "One number, like 90.", "lost": "Stock cost divided by cost sold per day."},
-  {"say": "Check your payouts page. How many days until customer money reaches your bank? Often 2 to 3 business days.", "check": "One number, like 3.", "lost": "Look at your payout dates."},
-  {"say": "Check your supplier invoices. How many days do you get to pay? Paid upfront = 0.", "check": "One number, like 30.", "lost": "Look at one invoice."},
-  {"say": "Add them: 90 + 3 − 30 = 63 days.", "check": "Your number is in your cash plan.", "lost": "Stock days + payout days − supplier days."},
-  {"say": "Pick one lever from Lesson 14.3 to cut 10 days: smaller orders more often, more days to pay, pre-orders or clearing slow stock.", "check": "One action done this week.", "lost": "Ask your supplier for 30 more days."},
-  {"say": "Set a reminder to check again in 3 months.", "check": "The reminder is set.", "careful": "Paid a deposit? Count from the day you paid it.", "lost": "Add a reminder to your calendar."}
+  {"say": "Set your free shipping amount.\n\n1. In Shopify **Analytics**, find your average order value (AOV).\n2. Multiply it by 1.2 to 1.3 (about 20 to 30% more). Example: $60 average, so $72 to $78. Round to $75.\n3. Open **Settings**, then **Shipping and delivery**, and set free shipping from that amount.", "check": "A free shipping rate shows at your amount.", "lost": "Take your AOV. Add 20 to 30%. That's your free shipping amount."},
+  {"say": "Show delivery estimates on the product page and in the cart.", "check": "Shoppers know when it will arrive before checkout.", "lost": "Add a delivery estimate to one product page."},
+  {"say": "Add express shipping as a paid upgrade.", "check": "Shoppers in a hurry can pay to get it faster.", "lost": "Add one paid express option."},
+  {"say": "Show shipping costs before checkout, in the cart or on the product page.", "check": "No one meets a surprise cost at checkout.", "lost": "Show the shipping cost in the cart."}
+ ]},
+"14.11": {"intro": "Margin is the part of each sale you keep. Big store-wide discounts eat it. There are kinder ways to give people a reason to buy.",
+ "steps": [
+  {"say": "Next time, skip the store-wide discount. Use a free gift, a bundle, early access for best customers, or a loyalty reward.", "check": "Your next promotion protects your margin.", "lost": "Plan a free gift instead of a discount."},
+  {"say": "Want to discount less often? Run fewer sales, talk more about value, and keep the best offers for new customers only.", "check": "Discounts get rarer without a sudden drop in sales.", "lost": "Skip one sale this month."}
+ ]},
+"14.12": {"intro": "Some stores have special needs, like pricey products, preorders or big catalogues. Each has a few fixes that work.",
+ "steps": [
+  {"say": "For pricey products people think about for a while, give them what they need to decide:\n\n- A comparison table with other options.\n- Payment plans.\n- Samples, swatches or a quick call.\n- Ads to past visitors that run for 30 days or more.", "check": "Long decisions have the help they need.", "lost": "Add a payment plan option."},
+  {"say": "For preorders and made-to-order, show clear dispatch dates, offer a deposit option, and send progress updates.", "check": "Preorder buyers know exactly what to expect.", "lost": "Show the dispatch date on the preorder page."},
+  {"say": "Add shoppable videos, a \"wall of love\" review page, and review requests sent after people have used the product.", "check": "Proof and video show on product and home pages.", "lost": "Make a page with your best reviews."},
+  {"say": "Fix your site search. Add synonyms (other words for the same thing), push best sellers up, and never show a \"no results\" dead end.", "check": "Every search shows something useful.", "lost": "Search your store for a common word. Fix what's missing."},
+  {"say": "Fill in structured product details (Shopify metafields). If it fits you, add wholesale prices behind a login, and local currency for overseas (Module 25).", "check": "Filters work better, AI assistants can read your products, and special buyers are looked after.", "lost": "Fill in metafields for your best seller."}
+ ]},
+"14.13": {"intro": "Apps and developers can speed you up or slow you down for years. A few checks first keep cost and speed safe.",
+ "steps": [
+  {"say": "Before adding any app, check four things: cost, how much it slows the site, its support, and how hard it is to remove.", "check": "Each new app has passed all four checks.", "lost": "Check the cost and the speed hit first."},
+  {"say": "Get written price quotes for custom work. Pick a developer by their past work plus a small paid test job.", "check": "You hire based on proof.", "lost": "Ask for a written quote."},
+  {"say": "Write a brief: the goal, a user story (\"As a shopper, I want...\"), the design, how you'll know it's done, and the deadline.", "check": "The developer knows exactly what done looks like.", "careful": "Only change your whole theme when it blocks several important fixes.", "lost": "Write the goal and the deadline."}
+ ]},
+"14.14": {"intro": "Stores that sell similar things usually miss the same things. Checking your category's common gaps finds quick wins fast.",
+ "steps": [
+  {"say": "Find your category in the lesson's table.", "check": "You have the list of common gaps for your category.", "lost": "Find your category's row in the table."},
+  {"say": "Check your store for each gap. Add the missing ones to your fix list (Lesson 14.1).", "check": "Your fix list has your category's common fixes.", "lost": "Check one gap. Add it if it's missing."}
+ ]},
+"14.15": {"intro": "If sales halve overnight, it's almost never because shoppers changed their minds. Usually something broke. We'll check in the right order.",
+ "steps": [
+  {"say": "Check the drop is real. Compare Shopify orders (not ad numbers) for the last 3 days with the same days last week. Check visits too.", "check": "You know if orders really fell, or only the reports changed.", "lost": "Compare Shopify orders: last 3 days vs the same days last week."},
+  {"say": "Buy something yourself on your phone and a computer. Add to cart, go to checkout, pay with a real card and a phone wallet. Then refund it.", "check": "Every step works, or you found the broken one (often a payment method, discount code or new app).", "lost": "Try to buy one thing on your phone."},
+  {"say": "List what changed in the last 7 days: theme edits, new or updated apps, prices, shipping rates, a sold-out best seller, or a new ad. Undo the most likely one first.", "check": "You have a short list, and the most likely cause is undone or fixed.", "lost": "What changed this week? Undo that first."},
+  {"say": "In Shopify Analytics, split sales rate by device and by traffic source. A drop on one device points at the site. A drop from one source points at that traffic.", "check": "You know if it's the site, one device, or one traffic source.", "careful": "Don't cut ad spend in a panic before the test purchase. If checkout is broken, every channel looks bad at once.", "lost": "Check: is the drop on phones only, or everywhere?"}
+ ]},
+"14.16": {"intro": "A gap check compares your store with what buyers expect. Then you fix the biggest gap first, no guessing.",
+ "steps": [
+  {"say": "In Helix, open **What to fix**. Look at **Your store check**.", "check": "You see up to 5 fixes, each quoting something from your own store.", "lost": "Tap **What to fix**."},
+  {"say": "Pick only the top fix. Write it at the top of a note.", "check": "You have one fix to work on, not five.", "lost": "Write down the first fix. Just that one."},
+  {"say": "Open the lesson linked under that fix. Do its steps.", "check": "The fix is live on your store.", "lost": "Tap the lesson link under the fix."},
+  {"say": "On your phone, open the page you changed. Look over the whole page.", "check": "The change shows on a phone and nothing else moved or broke.", "lost": "Open the page on your phone and scroll it."},
+  {"say": "On Starter, wait for your monthly re-check. On Free, tick the fix done and move to the next one.", "check": "The fix is gone from your list, or ticked done.", "lost": "Tick it done."}
  ]}
 }

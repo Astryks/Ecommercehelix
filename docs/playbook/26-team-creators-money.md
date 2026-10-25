@@ -1,8 +1,8 @@
-# Module 28: Team, creators and money
+# Module 26: Team, creators and money
 
 **Outcome:** you hire the right first helper on the right terms and pay creators with clear agreements. You pay overseas suppliers without losing money to currency or scams. You compare loans by their true cost and keep tool bills in check. You look after yourself, and decide calmly if Amazon is worth adding.
 
-**Related:** [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 19 Creators, UGC and video ads](19-creators-ugc-and-video-ads.md), [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 18 Choosing your tool stack](18-tool-stack.md)
+**Related:** [Module 27 Founder rhythm, team and resilience](27-founder-team-productivity.md), [Module 6 Creators, UGC and video ads](06-creators-ugc-and-video-ads.md), [Module 19 Inventory, cash and the year plan](19-inventory-cash-planning.md), [Module 29 Choosing your tool stack](29-tool-stack.md)
 
 
 <!-- plain:start -->
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 28.1: Your first hire
+## Lesson 26.1: Your first hire
 <!-- stage:grow -->
 
 **Why this matters:** Your first hire should give you back hours. Pick work that does not need you.
@@ -83,7 +83,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant. Also check the official sources above.
 
-## Lesson 28.2: Working well with a virtual assistant
+## Lesson 26.2: Working well with a virtual assistant
 <!-- stage:grow -->
 
 **Why this matters:** A remote helper can be a great first hire. The work must be written down and access must be safe.
@@ -92,7 +92,7 @@
 
 **Expected result:** Every task has a checklist.
 
-**Step 2.** Give the assistant their own logins with only the access they need (see [Lesson 25.1](25-account-safety-agencies.md#lesson-251-lock-down-every-account)).
+**Step 2.** Give the assistant their own logins with only the access they need (see [Lesson 24.1](24-account-safety-agencies.md#lesson-241-lock-down-every-account)).
 
 **Expected result:** No password is shared.
 
@@ -118,10 +118,10 @@
 
 **Expected result:** Former staff have no access.
 
-## Lesson 28.3: Paying creators: agreements, disclosure and tax
+## Lesson 26.3: Paying creators: agreements, disclosure and tax
 <!-- stage:grow -->
 
-**Why this matters:** Creators are paid with free product, a flat fee, commission or a mix. Clear written terms prevent arguments later. For rates and usage, see [Lesson 19.4](19-creators-ugc-and-video-ads.md#lesson-194-deals-rates-and-usage-rights).
+**Why this matters:** Creators are paid with free product, a flat fee, commission or a mix. Clear written terms prevent arguments later. For rates and usage, see [Lesson 6.4](06-creators-ugc-and-video-ads.md#lesson-64-deals-rates-and-usage-rights).
 
 **Step 1.** Split every price into parts: making the content and posting it. Then usage rights: using it in your ads, and for how long. Add exclusivity and raw footage.
 
@@ -139,7 +139,7 @@
 
 **Expected result:** All posts are disclosed.
 
-**Watch out:** Australia: see [ACCC: influencer endorsements](https://www.accc.gov.au/about-us/publications/social-media-influencer-testimonials-and-endorsements); GST registered creators add GST. If a creator billing you as a business does not give you an ABN, you may have to withhold 47% of the payment (see [ATO: supplier not quoting an ABN](https://www.ato.gov.au/forms-and-instructions/statement-by-supplier-not-quoting-an-abn)). US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); get a Form W-9 before you pay; creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 27.6](27-accounting-bookkeeping-tax-time.md#lesson-276-year-end-and-tax-season-in-the-us)).
+**Watch out:** Australia: see [ACCC: influencer endorsements](https://www.accc.gov.au/about-us/publications/social-media-influencer-testimonials-and-endorsements); GST registered creators add GST. If a creator billing you as a business does not give you an ABN, you may have to withhold 47% of the payment (see [ATO: supplier not quoting an ABN](https://www.ato.gov.au/forms-and-instructions/statement-by-supplier-not-quoting-an-abn)). US: see [FTC Disclosures 101](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers); get a Form W-9 before you pay; creators paid $2,000 or more in 2026 usually need a 1099-NEC (see [Lesson 23.6](23-accounting-bookkeeping-tax-time.md#lesson-236-year-end-and-tax-season-in-the-us)).
 
 **Step 5.** Pay on time and keep invoices.
 
@@ -153,7 +153,7 @@
 
 > **General information, not tax or legal advice.** Check with a registered tax agent or accountant.
 
-## Lesson 28.4: Paying overseas suppliers and managing currency
+## Lesson 26.4: Paying overseas suppliers and managing currency
 <!-- stage:grow -->
 
 **Why this matters:** When you pay in another currency, the exchange rate margin can cost more than the bank fee. Invoice scams also target importers, so confirm before you pay.
@@ -166,7 +166,7 @@
 
 **Expected result:** You avoid a double conversion.
 
-**Step 3.** Agree payment terms in writing: the deposit and when the rest is paid. Say what happens if goods are late or faulty (see [Lesson 14.8](14-inventory-cash-planning.md#lesson-148-finding-and-vetting-suppliers)).
+**Step 3.** Agree payment terms in writing: the deposit and when the rest is paid. Say what happens if goods are late or faulty (see [Lesson 19.8](19-inventory-cash-planning.md#lesson-198-finding-and-vetting-suppliers)).
 
 **Expected result:** Terms are written down.
 
@@ -188,10 +188,10 @@
 
 > **General information, not financial advice.** Check with your accountant or bank.
 
-## Lesson 28.5: Funding growth: comparing financing offers
+## Lesson 26.5: Funding growth: comparing financing offers
 <!-- stage:grow -->
 
-**Why this matters:** Revenue-based loans, platform cash advances and bank loans can pay for stock of a proven product. But they make things worse when they pay for losses. See also [Lesson 14.5](14-inventory-cash-planning.md#lesson-145-should-you-borrow-weighing-up-a-loan).
+**Why this matters:** Revenue-based loans, platform cash advances and bank loans can pay for stock of a proven product. But they make things worse when they pay for losses. See also [Lesson 19.5](19-inventory-cash-planning.md#lesson-195-should-you-borrow-weighing-up-a-loan).
 
 **Step 1.** Write down exactly what you would buy and how it pays back. For example: more stock of a product that already sells at a profit.
 
@@ -223,7 +223,7 @@
 
 > **General information, not financial advice.** Check with your accountant before you borrow.
 
-## Lesson 28.6: Keep tool and subscription costs in check
+## Lesson 26.6: Keep tool and subscription costs in check
 <!-- stage:grow -->
 
 **Why this matters:** Apps and tools creep up quietly. Many charge by contacts, orders or users, so the bill grows with you even when the value does not.
@@ -238,7 +238,7 @@
 
 **Watch out:** Uninstall apps properly in Shopify; some leave code or keep billing.
 
-**Step 3.** Remove email and SMS contacts who have not opened or clicked for a long time. Send a last win-back message first (see [Module 10](10-email-sms-whatsapp.md)).
+**Step 3.** Remove email and SMS contacts who have not opened or clicked for a long time. Send a last win-back message first (see [Module 16](16-email-sms-whatsapp.md)).
 
 **Expected result:** Your contact-based bill drops.
 
@@ -258,7 +258,7 @@
 
 <!-- do:numbers -->
 
-## Lesson 28.7: Founder load: stress, burnout and getting help
+## Lesson 26.7: Founder load: stress, burnout and getting help
 <!-- stage:grow -->
 
 **Why this matters:** Running a store can be lonely, and money worries can keep you awake. Looking after yourself is part of running the business.
@@ -285,7 +285,7 @@
 
 **Expected result:** You have someone to call this week.
 
-**Step 6.** Hand off one draining task this month (see Lesson 28.1).
+**Step 6.** Hand off one draining task this month (see Lesson 26.1).
 
 **Expected result:** One task is off your plate.
 
@@ -311,7 +311,7 @@
 
 **UK:** call Samaritans free on 116 123 at any hour. See [samaritans.org](https://www.samaritans.org/).
 
-## Lesson 28.8: Should you sell on Amazon?
+## Lesson 26.8: Should you sell on Amazon?
 <!-- stage:grow -->
 
 **Why this matters:** Amazon can add sales, but it has its own fees, rules and competition. Decide with numbers, not fear of missing out.
@@ -340,9 +340,9 @@
 
 **Step 6.** After 90 days, review profit, the effect on your own store and time spent.
 
-**Expected result:** You have a keep or stop decision. Marketplaces usually collect US sales tax for you (see [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing)).
+**Expected result:** You have a keep or stop decision. Marketplaces usually collect US sales tax for you (see [Lesson 22.3](22-tax-gst-sales-tax-duties.md#lesson-223-us-sales-tax-nexus-registering-and-filing)).
 
-## Lesson 28.9: Selling to shops: a simple wholesale start
+## Lesson 26.9: Selling to shops: a simple wholesale start
 <!-- stage:grow -->
 
 **Why this matters:** Shops that stock your product put it in front of people who never see your ads. Margins are lower per unit, but orders are bigger and there is no ad cost per sale. Done carefully, wholesale adds steady volume.

@@ -8,11 +8,11 @@ export type Fix = { id: string; label: string; href: string };
 export type Review = { week: string; numbers: ReviewNumber[]; worst: ReviewNumber | null; fixes: Fix[] };
 
 const FIXES: Record<ReviewNumber["id"], Fix[]> = {
-  sales: [{ id: "email", label: "Send one email to your list this week", href: "/learn/10-email-sms-whatsapp" }, { id: "offer", label: "Make your best offer clearer on the home page", href: "/learn/03-offer-and-product" }],
+  sales: [{ id: "email", label: "Send one email to your list this week", href: "/learn/16-email-sms-whatsapp" }, { id: "offer", label: "Make your best offer clearer on the home page", href: "/learn/15-offer-and-product" }],
   profit: [{ id: "costs", label: "Check product and shipping costs in Profit setup", href: "/dashboard/profit" }, { id: "ads-cut", label: "Pause the ad with the highest cost per sale", href: "/dashboard/campaigns" }],
-  orders: [{ id: "new-ad", label: "Test one new ad idea", href: "/learn/05-creative-strategy" }, { id: "winback", label: "Email past buyers with a small thank-you offer", href: "/learn/10-email-sms-whatsapp" }],
-  mer: [{ id: "pause", label: "Pause ads that spend without sales", href: "/dashboard/campaigns" }, { id: "budget", label: "Lower daily budgets by a fifth until MER is back on target", href: "/learn/07-meta-ads" }],
-  cr: [{ id: "page", label: "Fix your best-selling product page", href: "/learn/09-website-and-cro" }, { id: "speed", label: "Run a store check for speed and trust", href: "/dashboard/store-check" }],
+  orders: [{ id: "new-ad", label: "Test one new ad idea", href: "/learn/05-creative-strategy" }, { id: "winback", label: "Email past buyers with a small thank-you offer", href: "/learn/16-email-sms-whatsapp" }],
+  mer: [{ id: "pause", label: "Pause ads that spend without sales", href: "/dashboard/campaigns" }, { id: "budget", label: "Lower daily budgets by a fifth until MER is back on target", href: "/learn/08-meta-ads" }],
+  cr: [{ id: "page", label: "Fix your best-selling product page", href: "/learn/14-website-and-cro" }, { id: "speed", label: "Run a store check for speed and trust", href: "/dashboard/store-check" }],
 };
 
 export function mondayReview(days: DayInput[], s: Settings, monday: string): Review {

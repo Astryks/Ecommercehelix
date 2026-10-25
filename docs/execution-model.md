@@ -8,7 +8,7 @@
 
 Helix builds the complete campaign and pushes it into the user's **own** Meta or Google account as **paused drafts** through the official APIs:
 
-- campaign structure and naming (per [Module 6](playbook/06-defining-campaigns.md) and [SOP 05](sops/05-meta-structure-and-scaling.md))
+- campaign structure and naming (per [Module 7](playbook/07-defining-campaigns.md) and [SOP 05](sops/05-meta-structure-and-scaling.md))
 - audiences and exclusions (custom audiences, lookalikes, customer lists, negatives)
 - a budget suggestion (written into the draft, based on target CPA and the user's spend cap)
 - ad copy (primary text, headlines, descriptions) and UTMs

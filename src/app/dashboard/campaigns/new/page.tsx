@@ -76,7 +76,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
                 </form>
               ))}
               {drafts[0]?.campaignId && <Link href="/dashboard/integrations" className="btn-ghost">Last draft: {drafts[0].status}, {drafts[0].adIds.length} paused ads</Link>}
-              <Link href="/learn/06-defining-campaigns#lesson-616-the-campaign-brief-template" className="btn-ghost"><BookOpen className="h-4 w-4 text-cyan-700" aria-hidden /> Campaign brief template</Link>
+              <Link href="/learn/07-defining-campaigns#lesson-716-the-campaign-brief-template" className="btn-ghost"><BookOpen className="h-4 w-4 text-cyan-700" aria-hidden /> Campaign brief template</Link>
             </div>
           </section>
           <aside className="space-y-6">
@@ -149,7 +149,7 @@ export default async function NewCampaign({ searchParams }: PageProps<"/dashboar
               </div>
             ))}
           </section>
-          <p className="text-sm text-slate-600">Full lessons: <Link className="text-cyan-700 underline" href="/learn/20-ad-analysis-audiences-and-setup#lesson-203-setting-up-a-meta-sales-campaign-step-by-step">Meta setup</Link> · <Link className="text-cyan-700 underline" href="/learn/20-ad-analysis-audiences-and-setup#lesson-204-setting-up-google-step-by-step">Google setup</Link> · <Link className="text-cyan-700 underline" href="/learn/06-defining-campaigns">Defining campaigns</Link></p>
+          <p className="text-sm text-slate-600">Full lessons: <Link className="text-cyan-700 underline" href="/learn/09-ad-analysis-audiences-and-setup#lesson-94-setting-up-a-meta-sales-campaign-step-by-step">Meta setup</Link> · <Link className="text-cyan-700 underline" href="/learn/09-ad-analysis-audiences-and-setup#lesson-95-setting-up-google-step-by-step">Google setup</Link> · <Link className="text-cyan-700 underline" href="/learn/07-defining-campaigns">Defining campaigns</Link></p>
         </div>
       )}
     </div>

@@ -171,10 +171,10 @@
    "minutes": 10,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-917-your-store-gap-check",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-1416-your-store-gap-check",
     "label": "Your store gap check",
-    "ref": "9.17"
+    "ref": "14.16"
    },
    "sop": "01",
    "doIt": {
@@ -201,10 +201,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "04-brand-and-content",
-    "anchor": "lesson-42-customer-profiles",
+    "slug": "03-brand-and-content",
+    "anchor": "lesson-32-customer-profiles",
     "label": "Customer profiles",
-    "ref": "4.2"
+    "ref": "3.2"
    },
    "sop": "16",
    "doIt": {
@@ -230,10 +230,10 @@
    "minutes": 10,
    "area": "learning",
    "learn": {
-    "slug": "16-founder-team-productivity",
-    "anchor": "lesson-162-plan-each-day-and-each-week",
+    "slug": "27-founder-team-productivity",
+    "anchor": "lesson-272-plan-each-day-and-each-week",
     "label": "Plan each day and each week",
-    "ref": "16.2"
+    "ref": "27.2"
    },
    "sop": "18",
    "doIt": null,
@@ -256,10 +256,10 @@
    "minutes": 20,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-94-speed",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-144-speed",
     "label": "Speed",
-    "ref": "9.4"
+    "ref": "14.4"
    },
    "sop": "11",
    "doIt": {
@@ -285,10 +285,10 @@
    "minutes": 10,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-92-page-checklists",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-142-page-checklists",
     "label": "Page checklists",
-    "ref": "9.2"
+    "ref": "14.2"
    },
    "sop": "11",
    "doIt": {
@@ -314,10 +314,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-33-give-people-reasons-to-believe-you",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-153-give-people-reasons-to-believe-you",
     "label": "Give people reasons to believe you",
-    "ref": "3.3"
+    "ref": "15.3"
    },
    "sop": "04",
    "doIt": {
@@ -336,17 +336,17 @@
    "lesson": "If free shipping starts a little above your usual order, many people add one more item to reach it.",
    "steps": [
     "Find your AOV (average order value) on Your numbers.",
-    "Multiply it by 1.25. Round to a simple number. That is your free shipping amount.",
+    "Multiply it by 1.2 to 1.3 (about 20 to 30% more). Round to a simple number. That is your free shipping amount.",
     "Show it in the bar at the top of your store and in the cart.",
     "Check you still make a profit on an order of that size."
    ],
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-911-shipping-psychology",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-1410-shipping-psychology",
     "label": "Shipping psychology",
-    "ref": "9.11"
+    "ref": "14.10"
    },
    "sop": "12",
    "doIt": {
@@ -373,10 +373,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-92-page-checklists",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-142-page-checklists",
     "label": "Page checklists",
-    "ref": "9.2"
+    "ref": "14.2"
    },
    "sop": "11",
    "doIt": null,
@@ -399,10 +399,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-95-words-that-help-people-buy",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-145-words-that-help-people-buy",
     "label": "Words that help people buy",
-    "ref": "9.5"
+    "ref": "14.5"
    },
    "sop": "11",
    "doIt": {
@@ -428,10 +428,10 @@
    "minutes": 10,
    "area": "site",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-35-take-the-risk-off-the-buyer",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-155-take-the-risk-off-the-buyer",
     "label": "Take the risk off the buyer",
-    "ref": "3.5"
+    "ref": "15.5"
    },
    "sop": "04",
    "doIt": {
@@ -457,10 +457,10 @@
    "minutes": 20,
    "area": "site",
    "learn": {
-    "slug": "03-offer-and-product",
-    "anchor": "lesson-36-pricing-that-is-easy-to-accept",
+    "slug": "15-offer-and-product",
+    "anchor": "lesson-156-pricing-that-is-easy-to-accept",
     "label": "Pricing that is easy to accept",
-    "ref": "3.6"
+    "ref": "15.6"
    },
    "sop": "12",
    "doIt": {
@@ -486,10 +486,10 @@
    "minutes": 20,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-92-page-checklists",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-142-page-checklists",
     "label": "Page checklists",
-    "ref": "9.2"
+    "ref": "14.2"
    },
    "sop": "11",
    "doIt": null,
@@ -512,10 +512,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "09-website-and-cro",
-    "anchor": "lesson-910-order-value",
+    "slug": "14-website-and-cro",
+    "anchor": "lesson-149-order-value",
     "label": "Order value",
-    "ref": "9.10"
+    "ref": "14.9"
    },
    "sop": "12",
    "doIt": {
@@ -541,10 +541,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-101-sign-up-forms",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-161-sign-up-forms",
     "label": "Sign-up forms",
-    "ref": "10.1"
+    "ref": "16.1"
    },
    "sop": "13",
    "doIt": {
@@ -571,10 +571,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-162-the-five-core-flows-and-extras",
     "label": "The five core flows and extras",
-    "ref": "10.2"
+    "ref": "16.2"
    },
    "sop": "13",
    "doIt": {
@@ -600,10 +600,10 @@
    "minutes": 15,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-162-the-five-core-flows-and-extras",
     "label": "The five core flows and extras",
-    "ref": "10.2"
+    "ref": "16.2"
    },
    "sop": "13",
    "doIt": {
@@ -629,10 +629,10 @@
    "minutes": 15,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-162-the-five-core-flows-and-extras",
     "label": "The five core flows and extras",
-    "ref": "10.2"
+    "ref": "16.2"
    },
    "sop": "13",
    "doIt": {
@@ -658,10 +658,10 @@
    "minutes": 15,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-102-the-five-core-flows-and-extras",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-162-the-five-core-flows-and-extras",
     "label": "The five core flows and extras",
-    "ref": "10.2"
+    "ref": "16.2"
    },
    "sop": "13",
    "doIt": {
@@ -687,10 +687,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-1012-loyalty",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-1612-loyalty",
     "label": "Loyalty",
-    "ref": "10.12"
+    "ref": "16.12"
    },
    "sop": "13",
    "doIt": {
@@ -716,10 +716,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-105-campaign-cadence-and-ideas",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-165-campaign-cadence-and-ideas",
     "label": "Campaign cadence and ideas",
-    "ref": "10.5"
+    "ref": "16.5"
    },
    "sop": "14",
    "doIt": {
@@ -745,10 +745,10 @@
    "minutes": 10,
    "area": "retention",
    "learn": {
-    "slug": "10-email-sms-whatsapp",
-    "anchor": "lesson-1010-sms",
+    "slug": "16-email-sms-whatsapp",
+    "anchor": "lesson-1610-sms",
     "label": "SMS",
-    "ref": "10.10"
+    "ref": "16.10"
    },
    "sop": "13",
    "doIt": null,
@@ -765,17 +765,17 @@
    "steps": [
     "Pick a prize your ideal customer wants. Not cash.",
     "Invite 2 to 4 brands that sell to the same people but do not compete with you.",
-    "Check the promotion rules where you run it. Some places need a permit (Lesson 11.3).",
+    "Check the promotion rules where you run it. Some places need a permit (Lesson 12.3).",
     "Ask for an email to enter. Do not make sharing or tagging friends on Facebook a way to enter. Meta's rules ban it.",
     "Plan a welcome offer for new people who enter."
    ],
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "11-list-and-audience-growth",
-    "anchor": "lesson-113-running-a-competition",
+    "slug": "12-list-and-audience-growth",
+    "anchor": "lesson-123-running-a-competition",
     "label": "Running a competition",
-    "ref": "11.3"
+    "ref": "12.3"
    },
    "sop": "14",
    "doIt": {
@@ -801,10 +801,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "04-brand-and-content",
-    "anchor": "lesson-41-the-brand-core",
+    "slug": "03-brand-and-content",
+    "anchor": "lesson-31-the-brand-core",
     "label": "The brand core",
-    "ref": "4.1"
+    "ref": "3.1"
    },
    "sop": "16",
    "doIt": {
@@ -830,10 +830,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "21-brand-and-social-presence",
-    "anchor": "lesson-212-profile-checklist-instagram-tiktok-facebook",
+    "slug": "04-brand-and-social-presence",
+    "anchor": "lesson-42-profile-checklist-instagram-tiktok-facebook",
     "label": "Profile checklist (Instagram, TikTok, Facebook)",
-    "ref": "21.2"
+    "ref": "4.2"
    },
    "sop": "16",
    "doIt": {
@@ -851,7 +851,7 @@
    "title": "Pick a posting plan you can keep for 12 weeks",
    "lesson": "Posting regularly beats posting a lot. A simple weekly plan keeps your profile alive and gives you tested ideas for ads.",
    "steps": [
-    "Pick how often to post for your stage (Lesson 21.4).",
+    "Pick how often to post for your stage (Lesson 4.3).",
     "Plan next week using four types of post: proof, tips, story and product.",
     "Film everything on one day.",
     "Schedule the posts."
@@ -859,10 +859,10 @@
    "minutes": 25,
    "area": "learning",
    "learn": {
-    "slug": "21-brand-and-social-presence",
-    "anchor": "lesson-214-posting-cadence-you-can-keep",
+    "slug": "04-brand-and-social-presence",
+    "anchor": "lesson-43-posting-cadence-you-can-keep",
     "label": "Posting cadence you can keep",
-    "ref": "21.4"
+    "ref": "4.3"
    },
    "sop": "16",
    "doIt": {
@@ -888,10 +888,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "21-brand-and-social-presence",
-    "anchor": "lesson-215-growing-organic-reach",
+    "slug": "04-brand-and-social-presence",
+    "anchor": "lesson-44-growing-organic-reach",
     "label": "Growing organic reach",
-    "ref": "21.5"
+    "ref": "4.4"
    },
    "sop": "16",
    "doIt": null,
@@ -943,10 +943,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-198-hooks-that-win-the-first-three-seconds",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-68-hooks-that-win-the-first-three-seconds",
     "label": "Hooks that win the first three seconds",
-    "ref": "19.8"
+    "ref": "6.8"
    },
    "sop": "07",
    "doIt": {
@@ -972,10 +972,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-192-finding-the-right-creators",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-62-finding-the-right-creators",
     "label": "Finding the right creators",
-    "ref": "19.2"
+    "ref": "6.2"
    },
    "sop": "08",
    "doIt": {
@@ -1001,10 +1001,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-195-affiliate-programmes-that-do-not-cannibalise-you",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-65-affiliate-programmes-that-do-not-cannibalise-you",
     "label": "Affiliate programmes that do not cannibalise you",
-    "ref": "19.5"
+    "ref": "6.5"
    },
    "sop": "08",
    "doIt": {
@@ -1022,7 +1022,7 @@
    "title": "Write a one-page brief for creators",
    "lesson": "A clear brief means you get videos you can use. Put the main message, proof, openings and what to deliver on one page.",
    "steps": [
-    "Open the brief template in Lesson 19.12.",
+    "Open the brief template in Lesson 6.12.",
     "Fill in the main message, proof points and anything they must not say.",
     "Add 3 openings for them to film separately.",
     "Send it to your creators."
@@ -1030,10 +1030,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-1912-the-ugc-brief",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-612-the-ugc-brief",
     "label": "The UGC brief",
-    "ref": "19.12"
+    "ref": "6.12"
    },
    "sop": "08",
    "doIt": {
@@ -1059,10 +1059,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-199-scripting",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-69-scripting",
     "label": "Scripting",
-    "ref": "19.9"
+    "ref": "6.9"
    },
    "sop": "07",
    "doIt": {
@@ -1088,10 +1088,10 @@
    "minutes": 45,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-1911-editing-for-performance",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-611-editing-for-performance",
     "label": "Editing for performance",
-    "ref": "19.11"
+    "ref": "6.11"
    },
    "sop": "07",
    "doIt": null,
@@ -1110,15 +1110,15 @@
     "Set the date range at the top right to Last 7 days.",
     "Click Columns and pick your Daily preset, or Performance if you have not made one yet.",
     "Open the Campaigns tab, then click a campaign to see its three levels: campaign, ad set and ad. Do not change anything.",
-    "Find the Delivery column and the On/Off switch. Read what Learning and Learning limited mean in Lesson 7.14."
+    "Find the Delivery column and the On/Off switch. Read what Learning and Learning limited mean in Lesson 8.1."
    ],
    "minutes": 10,
    "area": "ads",
    "learn": {
-    "slug": "07-meta-ads",
-    "anchor": "lesson-714-find-your-way-around-ads-manager",
+    "slug": "08-meta-ads",
+    "anchor": "lesson-81-find-your-way-around-ads-manager",
     "label": "Find your way around Ads Manager",
-    "ref": "7.14"
+    "ref": "8.1"
    },
    "sop": "05",
    "doIt": null,
@@ -1141,10 +1141,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-201-before-you-launch-tracking-you-can-trust",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-91-before-you-launch-tracking-you-can-trust",
     "label": "Before you launch: tracking you can trust",
-    "ref": "20.1"
+    "ref": "9.1"
    },
    "sop": "05",
    "doIt": {
@@ -1170,10 +1170,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-202-setting-up-target-audiences",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-92-setting-up-target-audiences",
     "label": "Setting up target audiences",
-    "ref": "20.2"
+    "ref": "9.2"
    },
    "sop": "05",
    "doIt": {
@@ -1199,10 +1199,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "06-defining-campaigns",
-    "anchor": "lesson-616-the-campaign-brief-template",
+    "slug": "07-defining-campaigns",
+    "anchor": "lesson-716-the-campaign-brief-template",
     "label": "The campaign brief template",
-    "ref": "6.16"
+    "ref": "7.16"
    },
    "sop": "05",
    "doIt": {
@@ -1220,19 +1220,19 @@
    "title": "Get your first campaign ready",
    "lesson": "A first campaign stalls when the pieces are not ready. Today you check the pixel, write down the budget and get your ads ready, so tomorrow's build is quick. Already run Meta sales campaigns? Check Step 1 and mark this day done.",
    "steps": [
-    "Open Events Manager (Ads Manager menu > All tools > Events Manager) and check your pixel shows Purchase events. If not, go back to the tracking day (Lesson 20.1).",
-    "Write down your daily budget from your campaign plan. New to ads? Use one you know you can afford for two weeks (Lesson 7.13, Step 2).",
+    "Open Events Manager (Ads Manager menu > All tools > Events Manager) and check your pixel shows Purchase events. If not, go back to the tracking day (Lesson 9.1).",
+    "Write down your daily budget from your campaign plan. New to ads? Use one you know you can afford for two weeks (Lesson 8.3, Step 2).",
     "Get 3 to 5 ads ready: short videos or images of your best seller, each with a different opening line, in 4:5 and 9:16 sizes.",
     "Write one main text and one headline you can reuse.",
-    "Read Lesson 7.13 Steps 5 to 9 once, so you know the screens you will see tomorrow."
+    "Read Lesson 8.3 Steps 5 to 9 once, so you know the screens you will see tomorrow."
    ],
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "07-meta-ads",
-    "anchor": "lesson-713-launch-your-first-meta-ad-in-30-minutes",
+    "slug": "08-meta-ads",
+    "anchor": "lesson-83-launch-your-first-meta-ad-in-30-minutes",
     "label": "Launch your first Meta ad in 30 minutes",
-    "ref": "7.13"
+    "ref": "8.3"
    },
    "sop": "05",
    "doIt": null,
@@ -1247,7 +1247,7 @@
    "title": "Build your first Meta sales campaign",
    "lesson": "Follow the steps carefully once. Then you can repeat them for every test. Helix can build it for you as a paused draft, and you switch it on.",
    "steps": [
-    "Create a Sales campaign. Name it with a clear pattern, like 01-Sales-Broad-Test (Lesson 6.7).",
+    "Create a Sales campaign. Name it with a clear pattern, like 01-Sales-Broad-Test (Lesson 7.7).",
     "Set the daily budget at 2 to 3 times your target cost per sale.",
     "Add 3 to 6 ads that test one thing, like different openings.",
     "Check the preview, then click Publish yourself."
@@ -1255,10 +1255,10 @@
    "minutes": 30,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-203-setting-up-a-meta-sales-campaign-step-by-step",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-94-setting-up-a-meta-sales-campaign-step-by-step",
     "label": "Setting up a Meta sales campaign step by step",
-    "ref": "20.3"
+    "ref": "9.4"
    },
    "sop": "05",
    "doIt": {
@@ -1276,7 +1276,7 @@
    "title": "Match your ad account to your budget",
    "lesson": "Small budgets need simple setups. Add more campaigns only as you spend more.",
    "steps": [
-    "Find your daily spend in the table in Lesson 6.4.",
+    "Find your daily spend in the table in Lesson 7.4.",
     "Compare it with how many campaigns you have running.",
     "Join together or pause the ones that do not fit.",
     "Rename campaigns to your naming pattern."
@@ -1284,10 +1284,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "06-defining-campaigns",
-    "anchor": "lesson-64-account-structure-by-spend",
+    "slug": "07-defining-campaigns",
+    "anchor": "lesson-74-account-structure-by-spend",
     "label": "Account structure by spend",
-    "ref": "6.4"
+    "ref": "7.4"
    },
    "sop": "05",
    "doIt": {
@@ -1313,10 +1313,10 @@
    "minutes": 10,
    "area": "ads",
    "learn": {
-    "slug": "07-meta-ads",
-    "anchor": "lesson-76-daily-optimisation-in-10-minutes",
+    "slug": "08-meta-ads",
+    "anchor": "lesson-89-daily-optimisation-in-10-minutes",
     "label": "Daily optimisation in 10 minutes",
-    "ref": "7.6"
+    "ref": "8.9"
    },
    "sop": "06",
    "doIt": {
@@ -1336,16 +1336,16 @@
    "steps": [
     "Open What to fix in Helix.",
     "Read what Helix found.",
-    "Match each finding to the table in Lesson 20.7.",
+    "Match each finding to the table in Lesson 9.8.",
     "Pick one fix for this week."
    ],
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-207-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-98-cross-diagnosis-is-it-the-ad-the-page-the-offer-or-the-checkout",
     "label": "Cross-diagnosis: is it the ad, the page, the offer or the checkout?",
-    "ref": "20.7"
+    "ref": "9.8"
    },
    "sop": "06",
    "doIt": {
@@ -1371,10 +1371,10 @@
    "minutes": 20,
    "area": "ads",
    "learn": {
-    "slug": "19-creators-ugc-and-video-ads",
-    "anchor": "lesson-196-partnership-ads-whitelisting",
+    "slug": "06-creators-ugc-and-video-ads",
+    "anchor": "lesson-66-partnership-ads-whitelisting",
     "label": "Partnership ads (whitelisting)",
-    "ref": "19.6"
+    "ref": "6.6"
    },
    "sop": "08",
    "doIt": {
@@ -1429,10 +1429,10 @@
    "minutes": 25,
    "area": "ads",
    "learn": {
-    "slug": "08-google-ads",
-    "anchor": "lesson-82-product-data",
+    "slug": "10-google-ads",
+    "anchor": "lesson-103-product-data",
     "label": "Product data",
-    "ref": "8.2"
+    "ref": "10.3"
    },
    "sop": "09",
    "doIt": {
@@ -1450,7 +1450,7 @@
    "title": "Set up brand search and a shopping campaign",
    "lesson": "Keep cheap searches for your brand name in their own campaign. Then let a shopping campaign find new customers, with your brand name left out.",
    "steps": [
-    "Check the Shopify Google & YouTube app is connected, with Purchase as your main conversion (Lesson 20.4, Step 1).",
+    "Check the Shopify Google & YouTube app is connected, with Purchase as your main conversion (Lesson 9.5, Step 1).",
     "Create or check a campaign for searches of your brand name.",
     "Create a Performance Max campaign that only uses your product list, with your brand name excluded.",
     "Start with the 'maximise conversion value' setting.",
@@ -1459,10 +1459,10 @@
    "minutes": 30,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-204-setting-up-google-step-by-step",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-95-setting-up-google-step-by-step",
     "label": "Setting up Google step by step",
-    "ref": "20.4"
+    "ref": "9.5"
    },
    "sop": "09",
    "doIt": {
@@ -1488,10 +1488,10 @@
    "minutes": 10,
    "area": "ads",
    "learn": {
-    "slug": "08-google-ads",
-    "anchor": "lesson-88-weekly-optimisation",
+    "slug": "10-google-ads",
+    "anchor": "lesson-1010-weekly-optimisation",
     "label": "Weekly optimisation",
-    "ref": "8.8"
+    "ref": "10.10"
    },
    "sop": "09",
    "doIt": {
@@ -1509,7 +1509,7 @@
    "title": "Decide if TikTok is right for you yet",
    "lesson": "TikTok rewards fun, natural videos and lots of them. Get ready before you spend money there.",
    "steps": [
-    "Go through the checklist in Lesson 12.1.",
+    "Go through the checklist in Lesson 11.1.",
     "Post 3 videos (no ads) this week.",
     "Save your best creator videos to use as TikTok ads later.",
     "Decide: start now or next quarter."
@@ -1517,10 +1517,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "12-channels-tiktok-pinterest-seo",
-    "anchor": "lesson-121-tiktok-readiness",
+    "slug": "11-channels-tiktok-pinterest-seo",
+    "anchor": "lesson-111-tiktok-readiness",
     "label": "TikTok readiness",
-    "ref": "12.1"
+    "ref": "11.1"
    },
    "sop": "10",
    "doIt": null,
@@ -1543,10 +1543,10 @@
    "minutes": 25,
    "area": "site",
    "learn": {
-    "slug": "12-channels-tiktok-pinterest-seo",
-    "anchor": "lesson-128-seo-step-by-step",
+    "slug": "11-channels-tiktok-pinterest-seo",
+    "anchor": "lesson-119-seo-step-by-step",
     "label": "SEO step by step",
-    "ref": "12.8"
+    "ref": "11.9"
    },
    "sop": "10",
    "doIt": {
@@ -1572,10 +1572,10 @@
    "minutes": 15,
    "area": "site",
    "learn": {
-    "slug": "12-channels-tiktok-pinterest-seo",
-    "anchor": "lesson-129-ai-search-and-agentic-commerce",
+    "slug": "11-channels-tiktok-pinterest-seo",
+    "anchor": "lesson-1110-ai-search-and-agentic-commerce",
     "label": "AI search and agentic commerce",
-    "ref": "12.9"
+    "ref": "11.10"
    },
    "sop": "10",
    "doIt": null,
@@ -1598,10 +1598,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "13-promotions-and-sales",
-    "anchor": "lesson-131-your-yearly-sales-calendar",
+    "slug": "17-promotions-and-sales",
+    "anchor": "lesson-171-your-yearly-sales-calendar",
     "label": "Your yearly sales calendar",
-    "ref": "13.1"
+    "ref": "17.1"
    },
    "sop": "15",
    "doIt": {
@@ -1627,10 +1627,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "13-promotions-and-sales",
-    "anchor": "lesson-134-the-big-sale-step-by-step",
+    "slug": "17-promotions-and-sales",
+    "anchor": "lesson-174-the-big-sale-step-by-step",
     "label": "The big sale, step by step",
-    "ref": "13.4"
+    "ref": "17.4"
    },
    "sop": "15",
    "doIt": {
@@ -1656,10 +1656,10 @@
    "minutes": 30,
    "area": "retention",
    "learn": {
-    "slug": "06-defining-campaigns",
-    "anchor": "lesson-614-promotional-and-seasonal-campaigns",
+    "slug": "07-defining-campaigns",
+    "anchor": "lesson-714-promotional-and-seasonal-campaigns",
     "label": "Promotional and seasonal campaigns",
-    "ref": "6.14"
+    "ref": "7.14"
    },
    "sop": "15",
    "doIt": {
@@ -1685,10 +1685,10 @@
    "minutes": 20,
    "area": "retention",
    "learn": {
-    "slug": "13-promotions-and-sales",
-    "anchor": "lesson-132-launch-phases",
+    "slug": "17-promotions-and-sales",
+    "anchor": "lesson-172-launch-phases",
     "label": "Launch phases",
-    "ref": "13.2"
+    "ref": "17.2"
    },
    "sop": "15",
    "doIt": {
@@ -1714,10 +1714,10 @@
    "minutes": 20,
    "area": "numbers",
    "learn": {
-    "slug": "14-inventory-cash-planning",
-    "anchor": "lesson-142-a-10-minute-weekly-stock-check",
+    "slug": "19-inventory-cash-planning",
+    "anchor": "lesson-192-a-10-minute-weekly-stock-check",
     "label": "A 10-minute weekly stock check",
-    "ref": "14.2"
+    "ref": "19.2"
    },
    "sop": "17",
    "doIt": {
@@ -1743,10 +1743,10 @@
    "minutes": 30,
    "area": "numbers",
    "learn": {
-    "slug": "14-inventory-cash-planning",
-    "anchor": "lesson-144-cash-flow-forecast",
+    "slug": "19-inventory-cash-planning",
+    "anchor": "lesson-194-cash-flow-forecast",
     "label": "Cash flow forecast",
-    "ref": "14.4"
+    "ref": "19.4"
    },
    "sop": "17",
    "doIt": null,
@@ -1799,10 +1799,10 @@
    "minutes": 15,
    "area": "ads",
    "learn": {
-    "slug": "20-ad-analysis-audiences-and-setup",
-    "anchor": "lesson-209-attribution-and-incrementality",
+    "slug": "09-ad-analysis-audiences-and-setup",
+    "anchor": "lesson-910-attribution-and-incrementality",
     "label": "Attribution and incrementality",
-    "ref": "20.9"
+    "ref": "9.10"
    },
    "sop": "06",
    "doIt": null,
@@ -1825,10 +1825,10 @@
    "minutes": 20,
    "area": "numbers",
    "learn": {
-    "slug": "15-international-expansion",
-    "anchor": "lesson-151-is-there-demand",
+    "slug": "25-international-expansion",
+    "anchor": "lesson-251-is-there-demand",
     "label": "Is there demand?",
-    "ref": "15.1"
+    "ref": "25.1"
    },
    "sop": "17",
    "doIt": null,
@@ -1851,10 +1851,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "28-team-creators-money",
-    "anchor": "lesson-281-your-first-hire",
+    "slug": "26-team-creators-money",
+    "anchor": "lesson-261-your-first-hire",
     "label": "Your first hire",
-    "ref": "28.1"
+    "ref": "26.1"
    },
    "sop": "18",
    "doIt": null,
@@ -1877,10 +1877,10 @@
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "17-ai-for-operators",
-    "anchor": "lesson-172-high-value-uses",
+    "slug": "28-ai-for-operators",
+    "anchor": "lesson-282-high-value-uses",
     "label": "High-value uses",
-    "ref": "17.2"
+    "ref": "28.2"
    },
    "sop": "18",
    "doIt": {
@@ -1899,17 +1899,17 @@
    "lesson": "Tools should save time, not add noise. Then pick your focus for the next six weeks and keep the daily habit going.",
    "steps": [
     "List your apps and what each costs per month.",
-    "Cancel one you do not use (see the rules in Lesson 18.2).",
-    "Pick your one focus for the next six weeks (Lesson 16.3).",
+    "Cancel one you do not use (see the rules in Lesson 29.2).",
+    "Pick your one focus for the next six weeks (Lesson 27.3).",
     "Come back tomorrow and keep your streak."
    ],
    "minutes": 20,
    "area": "learning",
    "learn": {
-    "slug": "18-tool-stack",
-    "anchor": "lesson-182-rules-for-adding-a-tool",
+    "slug": "29-tool-stack",
+    "anchor": "lesson-292-rules-for-adding-a-tool",
     "label": "Rules for adding a tool",
-    "ref": "18.2"
+    "ref": "29.2"
    },
    "sop": "18",
    "doIt": null,

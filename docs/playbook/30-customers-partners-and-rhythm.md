@@ -1,14 +1,14 @@
-# Module 29: Customers, partners and the weekly rhythm
+# Module 30: Customers, partners and the weekly rhythm
 
 **Outcome:** you write in your customers' own words and get new buyers through referrals, partner brands and other people's audiences. You send a weekly email people look forward to. You run the business on a few early-warning numbers and a short weekly meeting. You have written playbooks, clear owners and a 90-day plan.
 
-**Related:** [Module 4 Brand and content](04-brand-and-content.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md), [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 28 Team, creators and money](28-team-creators-money.md)
+**Related:** [Module 3 Brand and content](03-brand-and-content.md), [Module 16 Email, SMS and messaging](16-email-sms-whatsapp.md), [Module 27 Founder rhythm, team and resilience](27-founder-team-productivity.md), [Module 26 Team, creators and money](26-team-creators-money.md)
 
 
 <!-- plain:start -->
 > **In plain words**
 >
-> **Stage:** Mixed. Lessons 29.2 to 29.6 are Attract, 29.1, 29.7 and 29.8 are Convert, and 29.9 to 29.16 are Grow. See [Attract, Convert, Grow](stages.md).
+> **Stage:** Mixed. Lessons 30.2 to 30.6 are Attract, 30.1, 30.7 and 30.8 are Convert, and 30.9 to 30.16 are Grow. See [Attract, Convert, Grow](stages.md).
 >
 > **What it is:** The habits that grow a store without more ad spend. Customer words, referrals, partners, a weekly email, and a simple way to run the week.
 >
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 29.1: Collect your customers' own words
+## Lesson 30.1: Collect your customers' own words
 <!-- stage:convert -->
 
 **Why this matters:** People buy when they read their own thoughts back. Copy written in your customers' words beats copy written in yours, in ads, on product pages and in emails.
@@ -57,7 +57,7 @@
 
 **Watch out:** Do not tidy up the grammar. The rough, honest version is what makes it believable.
 
-## Lesson 29.2: Find the worry behind the purchase
+## Lesson 30.2: Find the worry behind the purchase
 <!-- stage:attract -->
 
 **Why this matters:** Most stores talk about the problem everyone already mentions. The worry people feel but rarely say makes a message feel personal and stops the scroll. It might be looking silly, wasting money or letting someone down.
@@ -66,7 +66,7 @@
 
 **Expected result:** One plain line describing the obvious problem.
 
-**Step 2.** Under it, write what the customer feels but does not post about. Use your customer words list (Lesson 29.1). For example: "I dread walking him past other dogs because people stare".
+**Step 2.** Under it, write what the customer feels but does not post about. Use your customer words list (Lesson 30.1). For example: "I dread walking him past other dogs because people stare".
 
 **Expected result:** One to three unspoken worries, each in a customer's voice.
 
@@ -80,7 +80,7 @@
 
 <!-- do:meta-draft -->
 
-## Lesson 29.3: Turn one piece of content into ten
+## Lesson 30.3: Turn one piece of content into ten
 <!-- stage:attract -->
 
 **Why this matters:** Making new content every day burns owners out. One good piece, cut and reshaped for each channel, gives you a week of posts, emails and ad ideas.
@@ -103,7 +103,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 29.4: Ask happy customers to refer a friend
+## Lesson 30.4: Ask happy customers to refer a friend
 <!-- stage:attract -->
 
 **Why this matters:** A friend's recommendation is the cheapest, most trusted way to win a customer. Most stores never ask, or ask at the wrong time.
@@ -126,7 +126,7 @@
 
 **Expected result:** You know your referral orders and your top five referrers.
 
-## Lesson 29.5: Team up with brands that share your customer
+## Lesson 30.5: Team up with brands that share your customer
 <!-- stage:attract -->
 
 **Why this matters:** Another brand that sells something different to the same people can help a lot. It can introduce you to thousands of warm buyers. It costs you only a good offer.
@@ -149,7 +149,7 @@
 
 **Watch out:** Agree in writing who sends what, when, and how customer data is handled. Never share customer lists directly.
 
-## Lesson 29.6: Borrow other audiences: guest spots and newsletter swaps
+## Lesson 30.6: Borrow other audiences: guest spots and newsletter swaps
 <!-- stage:attract -->
 
 **Why this matters:** Podcasts, newsletters and local media need guests and stories. Being featured puts you in front of an audience that already trusts the host.
@@ -170,7 +170,7 @@
 
 **Expected result:** You can count the sign-ups and sales from each feature.
 
-## Lesson 29.7: A weekly story email
+## Lesson 30.7: A weekly story email
 <!-- stage:convert -->
 
 **Why this matters:** Sale-only emails train people to wait for discounts. A short weekly email with a story, a useful idea and one product keeps your brand in mind. It sells at full price.
@@ -183,7 +183,7 @@
 
 **Expected result:** A 150 to 250-word email in that order.
 
-**Step 3.** Use a phrase from your customer words list (Lesson 29.1) in the subject or first line.
+**Step 3.** Use a phrase from your customer words list (Lesson 30.1) in the subject or first line.
 
 **Expected result:** The email speaks in your customers' words.
 
@@ -193,7 +193,7 @@
 
 <!-- do:email -->
 
-## Lesson 29.8: Answer the top buying questions by email
+## Lesson 30.8: Answer the top buying questions by email
 <!-- stage:convert -->
 
 **Why this matters:** Most people who sign up do not buy straight away because a question is holding them back. Answering those questions in a short email series removes the blockers one at a time.
@@ -212,7 +212,7 @@
 
 <!-- do:email -->
 
-## Lesson 29.9: Choose the few numbers that lead
+## Lesson 30.9: Choose the few numbers that lead
 <!-- stage:grow -->
 
 **Why this matters:** Sales and profit tell you what already happened. A few leading numbers warn you a week early, while you can still act.
@@ -235,7 +235,7 @@
 
 **Expected result:** Every number is quick to update each week.
 
-## Lesson 29.10: Run a 30-minute weekly numbers meeting
+## Lesson 30.10: Run a 30-minute weekly numbers meeting
 <!-- stage:grow -->
 
 **Why this matters:** Checking in every week gives you 52 chances a year to change course. Otherwise you find problems at the end of a quarter.
@@ -254,7 +254,7 @@
 
 <!-- do:growth -->
 
-## Lesson 29.11: Write a playbook for a task you repeat
+## Lesson 30.11: Write a playbook for a task you repeat
 <!-- stage:grow -->
 
 **Why this matters:** If a task lives only in your head, it only happens when you do it. A written playbook lets someone else do it the same way, and frees you.
@@ -275,7 +275,7 @@
 
 **Expected result:** Someone else completes the task using only the playbook.
 
-## Lesson 29.12: One owner for every job and number
+## Lesson 30.12: One owner for every job and number
 <!-- stage:grow -->
 
 **Why this matters:** When everyone is responsible, nobody is. Giving each job and each number one owner makes it clear who acts when something slips.
@@ -288,11 +288,11 @@
 
 **Expected result:** Every job has one owner and one number.
 
-**Step 3.** Circle the jobs where you are the owner but should not be. These are your next hires or hand-offs (Lesson 28.1).
+**Step 3.** Circle the jobs where you are the owner but should not be. These are your next hires or hand-offs (Lesson 26.1).
 
 **Expected result:** You know what to hand off first.
 
-## Lesson 29.13: Your 90-day plan on one page
+## Lesson 30.13: Your 90-day plan on one page
 <!-- stage:grow -->
 
 **Why this matters:** A year is too far ahead to plan in detail. A week is too short to change much. Ninety days is long enough for real progress and short enough to stay focused.
@@ -315,7 +315,7 @@
 
 <!-- do:goals -->
 
-## Lesson 29.14: A quarterly reset
+## Lesson 30.14: A quarterly reset
 <!-- stage:grow -->
 
 **Why this matters:** Every 90 days, stepping back to see what worked stops you repeating last quarter's mistakes.
@@ -328,11 +328,11 @@
 
 **Expected result:** A one-paragraph honest review.
 
-**Step 3.** List what to start, stop and keep doing, then write the next 90-day plan (Lesson 29.13).
+**Step 3.** List what to start, stop and keep doing, then write the next 90-day plan (Lesson 30.13).
 
 **Expected result:** A new one-page plan for the next quarter.
 
-## Lesson 29.15: Write a one-page direction for the business
+## Lesson 30.15: Write a one-page direction for the business
 <!-- stage:grow -->
 
 **Why this matters:** Know who you serve, what you stand for and what you will not do. Then daily choices get faster. New team members also make choices you agree with.
@@ -353,7 +353,7 @@
 
 **Expected result:** Your helpers know the direction.
 
-## Lesson 29.16: Keep a wins file for hard weeks
+## Lesson 30.16: Keep a wins file for hard weeks
 <!-- stage:grow -->
 
 **Why this matters:** Every owner has weeks where they feel like they do not know what they are doing. Proof of what you have already achieved is the fastest way back to clear thinking.

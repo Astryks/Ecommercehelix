@@ -55,7 +55,7 @@ export default async function Stock() {
       <header>
         <p className="eyebrow flex items-center gap-2"><Boxes className="h-4 w-4" aria-hidden /> Suppliers &amp; stock</p>
         <h1 className="mt-2 page-title">Never run out of your best sellers</h1>
-        <p className="page-lead">Helix works out when each product will run out, the latest day to reorder and how many to order, using your sales speed, your supplier&apos;s lead time and a few safety days. <Link className="text-cyan-700 underline" href="/learn/14-inventory-cash-planning#lesson-148-finding-and-vetting-suppliers">How to find and vet suppliers</Link></p>
+        <p className="page-lead">Helix works out when each product will run out, the latest day to reorder and how many to order, using your sales speed, your supplier&apos;s lead time and a few safety days. <Link className="text-cyan-700 underline" href="/learn/19-inventory-cash-planning#lesson-198-finding-and-vetting-suppliers">How to find and vet suppliers</Link></p>
       </header>
 
       {hasExamples && (
@@ -235,7 +235,7 @@ export default async function Stock() {
         </details>
       </div>
 
-      <p className="mt-6 flex items-start gap-2 text-xs text-slate-500"><AlertTriangle className="mt-0.5 h-3.5 w-3.5 flex-none" aria-hidden /> Lead time means from paying the deposit to stock being ready to sell in your warehouse: making, shipping, customs and receiving. Ask your supplier and freight forwarder for each part. <BookOpen className="ml-1 mt-0.5 h-3.5 w-3.5 flex-none" aria-hidden /> <Link className="underline" href="/learn/14-inventory-cash-planning#lesson-142-a-10-minute-weekly-stock-check">The weekly stock snapshot</Link></p>
+      <p className="mt-6 flex items-start gap-2 text-xs text-slate-500"><AlertTriangle className="mt-0.5 h-3.5 w-3.5 flex-none" aria-hidden /> Lead time means from paying the deposit to stock being ready to sell in your warehouse: making, shipping, customs and receiving. Ask your supplier and freight forwarder for each part. <BookOpen className="ml-1 mt-0.5 h-3.5 w-3.5 flex-none" aria-hidden /> <Link className="underline" href="/learn/19-inventory-cash-planning#lesson-192-a-10-minute-weekly-stock-check">The weekly stock snapshot</Link></p>
     </div>
   );
 }

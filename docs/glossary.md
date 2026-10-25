@@ -11,9 +11,11 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Ad set** (ad sets): The middle level in Meta. It holds who sees the ads, where, and often the budget.
 - **Add to cart rate** (ATC rate): Out of every 100 visits, how many add something to the cart.
 - **Advantage+** (Advantage+ audience): Meta's automatic settings that let its system choose audience, placements or budget for you.
+- **Alt text**: A short description of an image, read by search engines and by screen readers for people who cannot see it.
 - **Angle** (angles): The reason to buy that an ad focuses on, like saving time or looking good.
 - **AOV** (average order value): Average order value: total sales divided by number of orders.
 - **Attribution**: Deciding which ad or channel gets credit for a sale. Meta's default counts sales within 7 days of a click or 1 day of a view.
+- **Audience segments**: Meta's split of your audience into new people, people who engaged with you, and existing customers, used in reports and settings.
 - **BAS** (business activity statement): Business activity statement: the form GST-registered Australian businesses lodge with the ATO to report and pay GST.
 - **Brand search**: Ads that show when people search your brand name. Usually cheap and often very profitable.
 - **Break-even CPA**: The most you can pay in ads for one sale before that sale stops making money.
@@ -89,20 +91,24 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **ROAS** (return on ad spend): Return on ad spend: how many dollars of sales you get for each $1 of ads. ROAS 3 means $3 of sales for $1 of ads.
 - **Safety stock** (safety days): Extra stock (or days of stock) you keep in case sales jump or a shipment is late.
 - **Sales tax** (state sales tax): In the US, a tax set by most states (and many local areas) that the seller collects at checkout.
+- **Search intent**: What a person searching wants: to browse a type of product, find one exact item, or get a question answered. Each needs a different kind of page.
 - **Search terms** (search terms report): The exact words people typed into Google before they saw or clicked your ad.
 - **Segment** (segments): A smaller group of your list, like people who bought in the last 90 days.
 - **SEO** (search engine optimisation): Changes that help your store show up in Google without paying for ads.
 - **Server events** (Conversions API, CAPI): Sales sent to Meta straight from your store's server, so fewer sales go untracked.
 - **Session** (sessions): One visit to your store. One person can make several visits.
 - **Shipping protection** (shipping insurance): An optional fee at checkout that covers lost, stolen or damaged parcels.
+- **Sitemap** (sitemap.xml): A file listing the pages on your site so search engines can find them. Shopify makes one for you.
 - **SKU** (SKUs): Stock keeping unit: a short code you give each product option so you can track it.
 - **Stocktake** (stock take, inventory count): Counting every unit you hold, usually at the end of the financial year, so your books match the shelf.
+- **Structured data**: Hidden code on a page that tells search engines facts like price, stock and rating, so they can show them in results.
 - **Target CPA** (good CPA): The cost per sale you aim for so each sale still leaves you profit.
 - **Test order** (test orders): A pretend order you place yourself to check payments, emails and tracking work.
 - **Theme** (themes): The design template for your Shopify store. It controls how every page looks.
 - **ThruPlay** (thruplay rate): A video view of 15 seconds or more (or the whole video if it is shorter).
 - **Two-factor authentication** (2FA): A second check, like a code from an app, needed to log in. It stops most account takeovers.
 - **UGC** (user-generated content): Photos and videos made by real customers or creators instead of the brand.
+- **URL redirect** (redirect): A rule that sends visitors and search engines from an old web address to a new one, so old links keep working.
 - **Usage rights**: Permission to use a creator's content in a stated place (such as paid ads) for a stated time.
 - **UTM** (UTMs, UTM tags): Tags added to the end of a link so your analytics can tell which ad or email a visitor came from.
 - **Variable costs** (variable cost): Costs that grow with every order: product cost, shipping and payment fees.

@@ -1,8 +1,8 @@
-# Module 25: Account safety, ad accounts and agencies
+# Module 24: Account safety, ad accounts and agencies
 
 **Outcome:** every account that runs your business is locked down and owned by you. You will know what to do in the first hour of a hack. You will know how to get a blocked ad account reviewed. You will also know how to work with or leave an agency without losing your history.
 
-**Related:** [Module 7 Meta ads in practice](07-meta-ads.md), [Module 20 Ad analysis, audiences and campaign setup](20-ad-analysis-audiences-and-setup.md), [Module 16 Founder rhythm, team and resilience](16-founder-team-productivity.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md)
+**Related:** [Module 8 Meta ads in practice](08-meta-ads.md), [Module 9 Ad analysis, audiences and campaign setup](09-ad-analysis-audiences-and-setup.md), [Module 27 Founder rhythm, team and resilience](27-founder-team-productivity.md), [Module 16 Email, SMS and messaging](16-email-sms-whatsapp.md)
 
 
 <!-- plain:start -->
@@ -31,7 +31,7 @@
 
 ---
 
-## Lesson 25.1: Lock down every account
+## Lesson 24.1: Lock down every account
 <!-- stage:grow -->
 
 **Why this matters:** One stolen password can cost more than a bad month of sales. Thieves target ad accounts because they can spend your money fast. An hour of lock-down work closes most doors.
@@ -73,7 +73,7 @@
 
 **Watch out:** In Australia, report cybercrime at [ReportCyber](https://www.cyber.gov.au/submit-a-report). In the US, use the [FBI's IC3](https://www.ic3.gov/).
 
-## Lesson 25.2: Set up your Meta business the safe way
+## Lesson 24.2: Set up your Meta business the safe way
 <!-- stage:grow -->
 
 **Why this matters:** Meta keeps your ad accounts, Pages, pixel and people in a business portfolio (formerly Business Manager). Whoever owns the portfolio controls everything in it, so it must be you.
@@ -110,7 +110,7 @@
 
 <!-- do:meta-connect -->
 
-## Lesson 25.3: When your ad account is disabled or restricted
+## Lesson 24.3: When your ad account is disabled or restricted
 <!-- stage:grow -->
 
 **Why this matters:** Ad accounts get restricted for failed payments, policy flags, identity checks or unusual activity. Most cases can be fixed if you stay calm and follow Meta's process.
@@ -145,7 +145,7 @@
 
 **Expected result:** The same restriction is unlikely to happen again.
 
-## Lesson 25.4: Hacked: the first hour
+## Lesson 24.4: Hacked: the first hour
 <!-- stage:grow -->
 
 **Why this matters:** Speed matters. A hacked ad account can spend thousands in a few hours, so work through these steps in order.
@@ -174,17 +174,17 @@
 
 **Expected result:** You have evidence for Meta, the bank and police.
 
-**Step 7.** Report the crime (see Lesson 25.1) and keep the reference number.
+**Step 7.** Report the crime (see Lesson 24.1) and keep the reference number.
 
 **Expected result:** You have a reference for your bank and Meta.
 
-**Step 8.** Once safe, add the protections in Lessons 25.1 and 25.2, especially a spending limit.
+**Step 8.** Once safe, add the protections in Lessons 24.1 and 24.2, especially a spending limit.
 
 **Expected result:** The account is locked down.
 
 **Watch out:** If someone set up a fake store or ad in your name, tell your customers. Report the fake pages to Meta.
 
-## Lesson 25.5: Working with agencies, and leaving one
+## Lesson 24.5: Working with agencies, and leaving one
 <!-- stage:grow -->
 
 **Why this matters:** An agency can save time, but your accounts, data and history must stay yours.
@@ -233,11 +233,11 @@
 
 **Expected result:** Agency reports show profit numbers.
 
-**Step 10.** If you bring work in-house, start with the daily ad check (Lesson 7.6). Keep experts for the gaps.
+**Step 10.** If you bring work in-house, start with the daily ad check (Lesson 8.9). Keep experts for the gaps.
 
 **Expected result:** You run the daily check yourself.
 
-## Lesson 25.6: Trusted sender names for texts and emails
+## Lesson 24.6: Trusted sender names for texts and emails
 <!-- stage:grow -->
 
 **Why this matters:** Phone networks and inbox providers now check that messages really come from you. Unregistered senders get labelled or sent to spam.

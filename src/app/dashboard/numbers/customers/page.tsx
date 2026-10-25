@@ -9,7 +9,7 @@ export default async function Customers() {
   const t = await computeTools(u.id);
   const c = t.customers;
   return (
-    <ToolPage title="Customer value" intro="How often people buy again, and what one customer is worth to you over 12 months." auto="every day from new and returning orders" example={t.example} lesson={{ label: "Bring buyers back", href: "/learn/11-list-and-audience-growth" }}>
+    <ToolPage title="Customer value" intro="How often people buy again, and what one customer is worth to you over 12 months." auto="every day from new and returning orders" example={t.example} lesson={{ label: "Bring buyers back", href: "/learn/12-list-and-audience-growth" }}>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4" data-testid="tool-customers">
         <Stat k="Orders per customer (12 months)" v={c.ordersPerCustomer.toFixed(2)} />
         <Stat k="Customer value at 12 months" v={usd(c.value12m)} note="Sales from one customer" />

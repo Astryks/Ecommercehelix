@@ -4,7 +4,7 @@
  * Pure and client-safe so it can be unit tested.
  *
  * Lesson format:
- *   ## Lesson 7.1: Title
+ *   ## Lesson 8.2: Title
  *   <!-- stage:attract -->        (optional)
  *   <!-- do:KEY -->               (optional, lesson-level action)
  *   **Why this matters:** ...

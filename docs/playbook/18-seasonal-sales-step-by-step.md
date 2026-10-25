@@ -1,14 +1,14 @@
-# Module 30: Seasonal sales, step by step
+# Module 18: Seasonal sales, step by step
 
 **Outcome:** for any big date in the year, you know what to do at each point. You go one small step at a time. That means 10, 6, 3 and 2 weeks out, while the sale runs and the week after.
 
-**Related:** [Module 13 Promotions and sales](13-promotions-and-sales.md), [Module 10 Email, SMS and messaging](10-email-sms-whatsapp.md), [Module 14 Stock and cash](14-inventory-cash-planning.md)
+**Related:** [Module 17 Promotions and sales](17-promotions-and-sales.md), [Module 16 Email, SMS and messaging](16-email-sms-whatsapp.md), [Module 19 Stock and cash](19-inventory-cash-planning.md)
 
 
 <!-- plain:start -->
 > **In plain words**
 >
-> **Stage:** Mixed. Lesson 30.2 is Attract, 30.1, 30.3, 30.4 and 30.5 are Convert, and 30.6 is Grow. See [Attract, Convert, Grow](stages.md).
+> **Stage:** Mixed. Lesson 18.2 is Attract, 18.1, 18.3, 18.4 and 18.5 are Convert, and 18.6 is Grow. See [Attract, Convert, Grow](stages.md).
 >
 > **What it is:** A simple timeline for sale days like Black Friday, Christmas, Mother's Day or Diwali. Helix shows each step on Today at the right time.
 >
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 30.1: Plan your offer and order stock
+## Lesson 18.1: Plan your offer and order stock
 <!-- stage:convert -->
 
 **Why this matters:** Stock takes weeks to arrive, and an offer you rush is often one that loses money. Deciding early keeps you calm and keeps your profit.
@@ -51,7 +51,7 @@
 
 **Watch out:** Do not order on hope. Base the order on your own sales, then add a safe buffer.
 
-## Lesson 30.2: Line up creators
+## Lesson 18.2: Line up creators
 <!-- stage:attract -->
 
 **Why this matters:** People trust people. A creator showing your product to their followers before the sale warms up buyers who have never heard of you.
@@ -68,9 +68,9 @@
 
 **Expected result:** Each creator has the product, a code and a date to post before the sale.
 
-**Watch out:** Never pay for a post you have not seen a sample of. Start with gifts and a share of sales. Gifted and paid posts must be clearly labelled as ads (see [Lesson 28.3](28-team-creators-money.md#lesson-283-paying-creators-agreements-disclosure-and-tax)).
+**Watch out:** Never pay for a post you have not seen a sample of. Start with gifts and a share of sales. Gifted and paid posts must be clearly labelled as ads (see [Lesson 26.3](26-team-creators-money.md#lesson-263-paying-creators-agreements-disclosure-and-tax)).
 
-## Lesson 30.3: Set up a discount code in Shopify
+## Lesson 18.3: Set up a discount code in Shopify
 <!-- stage:convert -->
 
 **Why this matters:** Get a code ready, tested and set to start and stop by itself. Then there is no late-night rush on the big day.
@@ -101,7 +101,7 @@
 
 **Watch out:** If Helix prepared the code for you, it waits in Waiting for your OK. Helix never turns on a discount or changes your store without your approval.
 
-## Lesson 30.4: Dress your store, warm up and write your emails
+## Lesson 18.4: Dress your store, warm up and write your emails
 <!-- stage:convert -->
 
 **Why this matters:** Shoppers decide fast. Get the store ready for the day and write your emails. Then every visit has a clear path to buy.
@@ -128,7 +128,7 @@
 
 **Watch out:** Avoid big changes to prices or the store on the sale day itself. Make every change before, and test it.
 
-## Lesson 30.5: Run the event: check your numbers each day
+## Lesson 18.5: Run the event: check your numbers each day
 <!-- stage:convert -->
 
 **Why this matters:** During a sale small problems cost real money fast. A five-minute check each morning catches them early.
@@ -147,7 +147,7 @@
 
 **Watch out:** Is an ad below break-even two days in a row? Lower its budget a little in your ad account. Do not make big changes in a rush.
 
-## Lesson 30.6: Review the results
+## Lesson 18.6: Review the results
 <!-- stage:grow -->
 
 **Why this matters:** Write next year's plan the week after this one. You will still remember what happened.

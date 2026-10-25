@@ -1,96 +1,123 @@
 {
-"13.1": {"intro": "A year of sales works best as a rhythm. Customers learn when to look, and you're never rushing. Deep discounts are only a last resort for slow stock.",
+"13.1": {"intro": "A store takes days to build and minutes to judge. Plan first, so you only build what buyers need. It takes about an hour.",
  "steps": [
-  {"say": "Pick a regular day and time for new products. Example: the first Thursday of each month, 7pm. Put the next 6 in your calendar.", "check": "Your release dates are set and repeat monthly.", "lost": "Pick one day each month for new products."},
-  {"say": "Add gift days and special moments (Mother's Day, Valentine's Day). Pick a chosen set of products, not a store-wide discount.", "check": "Each event has a product selection planned.", "lost": "Add Mother's Day with 5 gift picks."},
-  {"say": "Choose 3 to 4 big sales for the year. Black Friday is usually the biggest.", "check": "Your big sales are in the calendar with dates.", "lost": "Put Black Friday in your calendar."},
-  {"say": "For slow stock, try gentle tools first: a free gift with purchase, bundles, VIP codes or gift cards.", "check": "Slow stock has a plan that avoids deep discounts.", "lost": "Bundle one slow product with a best seller."}
+  {"say": "Write your one-line promise: who it's for and what they get.", "check": "You can say in one sentence what you sell and who it's for.", "lost": "Finish this: \"For ___ who want ___.\""},
+  {"say": "List your products with price, product cost, and what one order costs to send.", "check": "You know your cost per order for each product.", "lost": "Write it for your main product."},
+  {"say": "Choose one launch country (for example, where you live). Add more later.", "check": "You have one launch country.", "lost": "Pick your home country."},
+  {"say": "Pick the cheapest Shopify plan with the features you need. Most new stores start on Basic (check Shopify's pricing page).", "check": "You know your monthly platform cost. In October 2026, Basic was US$39 or A$56 a month, billed monthly.", "lost": "Start with Basic."},
+  {"say": "Collect your logo, 4 to 8 photos per product, your returns rule, your ABN or EIN (US, if you have one), and a business bank account.", "check": "Everything you need to build is in one folder.", "careful": "Outside the US: the ATO's GST limit is $75,000 in sales a year. Might you reach it? Read Lesson 13.10 before setting prices. US: your home state is where you're most likely to owe sales tax first.", "lost": "Make one folder. Put your logo in it."}
  ]},
-"13.2": {"intro": "A launch has four parts. Each needs its own message.",
+"13.2": {"intro": "Your domain is your web address. Your own domain looks more trustworthy, and branded email reaches inboxes better.",
  "steps": [
-  {"say": "Before launch, tease the product. Open a waitlist and early-access sign-up.", "check": "People sign up before the product is out.", "lost": "Make a waitlist sign-up."},
-  {"say": "On launch day, let VIPs (best customers) in first, then everyone.", "check": "VIPs get a head start and feel looked after.", "lost": "Email VIPs first on launch day."},
-  {"say": "In the middle, release something new for 24 hours, like a new colour or a bundle.", "check": "The launch gets a second spike.", "lost": "Release one new colour for 24 hours."},
-  {"say": "After launch, share reviews, results and restock news.", "check": "Proof keeps sales going after launch week.", "lost": "Share one review after launch."}
+  {"say": "In Shopify **Settings > Domains**, buy a short domain that matches your brand, or connect one you own.", "check": "The domain shows as connected in Settings.", "careful": "Outside the US: a .com.au needs a local business link, usually an ABN or ACN. Many brands own both .com.au and .com. US: .com is normal.", "lost": "Open **Settings > Domains**."},
+  {"say": "Set it as the primary domain, so myshopify.com sends people to it.", "check": "Typing your domain opens your store.", "lost": "Click **Set as primary**."},
+  {"say": "Set up a branded email like hello@yourbrand.com. Use it for support and as the sender in your email tool.", "check": "Customer emails come from your own domain.", "lost": "Make hello@ your address."},
+  {"say": "Send a test email to yourself.", "check": "It lands in your inbox, not spam.", "lost": "Send one test email."}
  ]},
-"13.3": {"intro": "How you set up a launch depends on your spend. Your email list and warm audiences should hear first.",
+"13.3": {"intro": "The theme is your store's design. Fast and simple beats fancy and slow. Always edit a copy, so you never break the live store.",
  "steps": [
-  {"say": "Choose where launch ads go (a rough rule of thumb).\n\n- Spend about $1,000 a day or more: make a separate launch campaign.\n- Spend less: add launch ads to your normal cold and warm campaigns.", "check": "Launch ads have a home that fits your budget.", "lost": "Under $1,000 a day? Add launch ads to your normal campaigns."},
-  {"say": "Give warm audiences and your email list first access. Keep your always-on campaigns running.", "check": "Your best people hear first, and new customers keep coming.", "lost": "Don't switch off your normal campaigns."}
+  {"say": "In **Online Store > Themes**, start with a free Shopify theme like Horizon or Dawn.", "check": "A fast, supported theme is installed.", "careful": "Only pay for a theme if it has a feature you truly need, and you've checked its speed on a phone.", "lost": "Use a free Shopify theme."},
+  {"say": "Click **Duplicate** on the theme. Make all changes on the copy.", "check": "You're working on a copy, not the live theme.", "lost": "Click **Duplicate**."},
+  {"say": "In **Customize > Theme settings**, set your logo, 2 to 3 colours, 1 to 2 fonts and button style.", "check": "Your store uses no more than 2 fonts and 3 main colours.", "lost": "Upload your logo."},
+  {"say": "Plan menus for computer and phone separately. Phones get fewer, bigger links.", "check": "The mobile menu has 5 or fewer links.", "lost": "Keep 5 links on mobile."}
  ]},
-"13.4": {"intro": "A big sale is a project with seven parts. Planning them in order makes the sale profitable.",
+"13.4": {"intro": "The home page answers three questions in seconds: what is this, is it for me, and can I trust it?",
  "steps": [
-  {"say": "Set a target: last year's sales for this event times your growth rate. Example: $20,000 × 1.2 = $24,000. Check it against list size, budget and stock.", "check": "You have a sales target you can actually support.", "lost": "Take last year's sale number. Times your growth."},
-  {"say": "Build the offer: a main offer, free gift levels (spend $100, get a gift), something new mid-sale, and a VIP perk. Check margin at every level.", "check": "Every offer level still makes money.", "careful": "A \"was\" price must be one you really charged for a while just before the sale. Fake \"was\" prices break the law. In the EU, it must be your lowest price in the last 30 days.", "lost": "Pick one main offer. Check it still makes money."},
-  {"say": "Pick a theme: a name, a look and a message that stand out.", "check": "The sale has a name and a look.", "lost": "Give your sale a name."},
-  {"say": "Plan the ad budget for each day of each phase (hype, launch, middle, finish), and the split between normal and sale campaigns.", "check": "Every sale day has a planned budget.", "lost": "Write a budget for launch day."},
-  {"say": "List the ads you need for each phase and audience (cold, warm, hot). Plan emails and texts too (Lesson 10.13).", "check": "Ads and messages are planned for every phase.", "lost": "List the ads for launch day."},
-  {"say": "Get the site ready: sale pages and banners, no site changes in the last 2 weeks (a code freeze), and every discount code tested.", "check": "The site is ready and steady before launch.", "lost": "Test every discount code."},
-  {"say": "Check stock, packing helpers, gift stock and shipping cut-off dates.", "check": "You can send out all the orders you plan to get.", "lost": "Check you have enough stock."}
+  {"say": "In the theme editor, add a promo bar with one short line, like your shipping offer or a guarantee.", "check": "The promo bar shows at the very top of every page.", "lost": "Add a promo bar: \"Free shipping over $X\"."},
+  {"say": "Set the header menu to your logo plus 4 to 5 links (like Shop, Bundles, Reviews, FAQ, About).", "check": "The header is simple and tidy.", "lost": "Keep 4 links."},
+  {"say": "Add a banner: a photo of the product in use, your promise in one line, and one button (\"Shop now\"). You can add a row of category tiles people swipe on mobile.", "check": "The top of the page says what you sell and gives one next step.", "lost": "Add one photo, one line, one button."},
+  {"say": "Below the banner, add these sections in order. Use **Add section** for each.\n\n1. 3 points on what makes you different.\n2. Best sellers with prices.\n3. Reasons to buy.\n4. Proof: rating, customer count, press.\n5. How it works, in 3 steps.\n6. Customer photos and reviews.\n7. Expert backing, if you have it.\n8. Email sign-up and a simple footer.", "check": "The home page has every section in order.", "lost": "Add best sellers first."},
+  {"say": "Show your home page on a phone to someone new for 5 seconds.", "check": "They can say what you sell.", "lost": "Ask one person: what do I sell?"}
  ]},
-"13.5": {"intro": "The build-up gets people excited before the sale. Then launch day starts with a crowd.",
+"13.5": {"intro": "Most buying decisions happen on the product page. Answer every worry before they ask.",
  "steps": [
-  {"say": "Run sign-up ads and teasers for 3 to 5 days before the sale.", "check": "Your early-access list grows each day.", "lost": "Run one sign-up ad for 3 days."},
-  {"say": "Track the cost per sign-up, and how many page visitors sign up.", "check": "You know what the hype costs.", "lost": "Divide ad spend by sign-ups."},
-  {"say": "Move budget from normal campaigns to the hype campaign slowly. Never cut normal campaigns to zero.", "check": "Normal campaigns keep learning and bringing new customers.", "lost": "Move a little budget, not all of it."}
+  {"say": "Write a short title: product name plus the main thing it does or is made of (\"Linen Shirt, Relaxed Fit\").", "check": "The title is clear and short.", "lost": "Name plus one feature."},
+  {"say": "Upload at least 4 square photos: plain background, in use, size or scale, and a close-up of the key detail.", "check": "The photos show what it looks like in real life.", "lost": "Add one photo of it being used."},
+  {"say": "Make sure price, star rating with review count, promise line and Add to cart sit near the top.", "check": "On a phone you see price, rating and Add to cart without scrolling.", "lost": "Check Add to cart shows without scrolling."},
+  {"say": "Write the description as short lines: the result first, then 3 to 5 key points, then what's included. Add a short FAQ under the button (sizing, materials, shipping time, returns, care).", "check": "Common questions are answered on the page.", "lost": "Add 3 FAQs under the button."},
+  {"say": "Turn on sticky Add to cart for mobile in theme settings. Fill in the search title and description in plain words.", "check": "The button stays visible as people scroll, and Google shows a clean listing.", "lost": "Turn on sticky Add to cart."}
  ]},
-"13.6": {"intro": "Running the sale is a daily routine. Judge the whole event, not one day.",
+"13.6": {"intro": "Variants are a product's options, like size or colour. Inventory is how many you have. Set them up right so you don't oversell.",
  "steps": [
-  {"say": "Set up sale campaigns: a copy of your best cold campaign, a cold campaign with combined audiences and exclusions, a mixed campaign with no exclusions, warm campaigns, and hot campaigns (add to cart and checkout).", "check": "All sale campaigns are built and paused before launch.", "lost": "Copy your best cold campaign. Pause it until launch."},
-  {"say": "Set spending limits on every sale campaign.", "check": "Nothing can overspend.", "lost": "Add a spending limit to each one."},
-  {"say": "Each day, check MER (all ad spend as a share of all sales) against your plan. Check stock, site speed and tired ads too.", "check": "You catch problems the same day.", "lost": "Check MER once a day."},
-  {"say": "In the middle, add a new offer, fresh ads, and an email with a new reason to buy.", "check": "The middle of the sale gets a boost.", "lost": "Send one email with something new."},
-  {"say": "Finish strong with last-chance ads, final emails and texts.", "check": "The last day has its own push.", "careful": "Quiet days in the middle are normal. Don't panic and cut spend.", "lost": "Send one last-chance email."}
+  {"say": "Add options (Size, Colour) to one product, instead of making separate products.", "check": "One product page shows every option.", "lost": "Add Size as an option."},
+  {"say": "Give each variant its own photo, price if different, SKU (your code for each version) and stock count.", "check": "Every variant is complete.", "lost": "Add a stock count to each variant."},
+  {"say": "Turn on **Track quantity** and choose to stop selling at zero. Taking preorders? Show a clear ship date.", "check": "Shopify stops selling when you run out.", "lost": "Tick **Track quantity**."},
+  {"say": "Fill in **Cost per item** and weight on every variant.", "check": "Helix can work out profit, and Shopify can work out shipping.", "lost": "Fill in **Cost per item** for your best seller."}
  ]},
-"13.7": {"intro": "After a sale there's always a slow patch. How you handle it decides how many new buyers you keep.",
+"13.7": {"intro": "People trust other customers more than you. A review app collects reviews for you. Honest replies to bad reviews build trust.",
  "steps": [
-  {"say": "Turn normal campaigns back up in steps over a week. Not all at once.", "check": "Campaigns recover without a spending shock.", "lost": "Raise budgets a little each day."},
-  {"say": "Check new buyers are getting your after-purchase emails.", "check": "New customers get thanks and how-to tips.", "lost": "Check your post-purchase flow is on."},
-  {"say": "Compare sales with your target, MER, new customers and stock left. Write down one thing to do better.", "check": "You have a short review with one improvement.", "lost": "Write one thing to do better next time."},
-  {"say": "Wait 7 days before final numbers. Ad apps keep adding late sales for about a week.", "check": "Your review uses numbers from 7 days after the sale.", "lost": "Wait a week, then review."},
-  {"say": "For the next 2 to 4 weeks, run no new discount. Show full-price news or best-seller stories, and nudge new buyers to a second order (Lesson 10.17).", "check": "A plan for the next few weeks with no discount.", "lost": "Post one full-price product story."}
+  {"say": "Install one review app that collects photo reviews and sends a request email after delivery.", "check": "Review requests go out by themselves.", "lost": "Install one review app."},
+  {"say": "Show the star rating under the product title and near Add to cart. Add a photo review section lower on product pages and the home page.", "check": "Your rating shows near the top of every product page.", "lost": "Show stars under the title."},
+  {"say": "Ask early buyers, testers and friends who used the product for honest reviews.", "check": "Your first products have real reviews.", "careful": "Never write fake reviews or pay for good ones. Both break consumer law in most countries, including under the FTC's fake reviews rule in the US.", "lost": "Ask 3 real users for an honest review."},
+  {"say": "Reply to bad reviews politely, and fix the problem.", "check": "Shoppers see you handle problems well.", "lost": "Reply kindly to one review."}
  ]},
-"13.8": {"intro": "If a sale is behind plan, it's usually one of five things. Find it fast, then fix it without breaking trust.",
+"13.8": {"intro": "Collections are groups of products. A new visitor should reach any product in 3 taps or fewer.",
  "steps": [
-  {"say": "Check the five causes: an offer weaker than competitors', an offer that's not clear in the first seconds of ads, a site problem, a list that's too small, or bad timing.", "check": "You've named the likely cause.", "lost": "Is your offer clear in the first second of your ad?"},
-  {"say": "Pick one rescue: add a free gift level, release something new, send a stronger email, or move budget to warm audiences.", "check": "A rescue is live within hours.", "careful": "Only extend the sale if it won't break trust. Customers notice fake \"last chances\", and stores have paid fines for countdown timers that reset.", "lost": "Add a free gift level."}
+  {"say": "Make collections for Best sellers, New, and one per product type. Use automatic collections where you can.", "check": "Collections update themselves as products change.", "lost": "Make a Best sellers collection."},
+  {"say": "Build the main menu with 4 to 5 links, with deeper links in drop-downs.", "check": "Any product is 3 taps away.", "lost": "Add 4 links to the main menu."},
+  {"say": "Turn on Shopify's filters (size, colour, price, in stock) with multi-select. Add a second photo on hover and quick add if your theme allows.", "check": "Shoppers can narrow down and add from collections.", "lost": "Turn on the size filter."},
+  {"say": "Search your store for your top 5 product words and one common misspelling.", "check": "Every search shows the right products.", "lost": "Search one product word."}
  ]},
-"13.9": {"intro": "Your sale plan grows with you. Start simple and add a bit each time.",
+"13.9": {"intro": "Surprise extra costs, like shipping, are one of the most common reasons people leave at checkout. Simple rates, a free shipping amount and honest delivery times fix most of it.",
  "steps": [
-  {"say": "Find your level: starter (one offer, simple schedule, sale versions of flows), seasoned (gift levels, hype phase, mid-sale release, separate sale campaigns) or advanced (daily budget plan, every channel planned, product sales targets).", "check": "You know your level.", "lost": "New to sales? You're a starter. That's fine."},
-  {"say": "Add one thing from the next level to your next sale.", "check": "Each sale is a bit smarter than the last.", "lost": "Add just one new thing."}
+  {"say": "In **Settings > Shipping and delivery**, make a zone for your home country.", "check": "A home country zone exists.", "lost": "Add your home country zone."},
+  {"say": "Add Standard and Express rates priced from real carrier costs, or use calculated rates.", "check": "Checkout shows two clear options.", "lost": "Add a Standard rate."},
+  {"say": "A common rule of thumb: set a free shipping amount about 20 to 30% above your average order. Example: $50 average, so $60 to $65. Show it in the promo bar and near Add to cart (\"Free shipping over $X\").", "check": "Shoppers see how close they are to free shipping.", "lost": "Average order × 1.2 to 1.3 = free shipping amount."},
+  {"say": "Write delivery times as a range (\"arrives in 3 to 6 business days\").", "check": "Checkout shows a clear price and delivery range.", "careful": "Outside the US: compare the national post and couriers, and set a separate remote area rate if needed. US: compare the carriers offered in Shopify Shipping. Add overseas zones only once home works.", "lost": "Write \"3 to 6 business days\"."}
  ]},
-"13.10": {"intro": "Plan the whole busy season, not one weekend. In 2026, Black Friday is 27 November and Cyber Monday is 30 November. Helix adds the plan to your calendar from 1 August.",
+"13.10": {"intro": "Tax set up wrong costs money or breaks the law. Under the ATO's rules, you must register for GST once turnover reaches $75,000 a year. Other countries set their own limits. US: sales tax depends on nexus (a strong enough link to a state). Helix takes GST out of your sales before any profit maths.",
  "steps": [
-  {"say": "All year, test ad ideas and offers, and grow your list. Then you know what works before the busy season.", "check": "You have proven ads and a bigger list by August.", "lost": "Test one ad idea this month."},
-  {"say": "Put the Black Friday stages in your Helix calendar.\n\n- August: review last year. Set targets. Test new ads.\n- September: order stock 10 to 12 weeks out. Lock the offer.\n- October: finish ads. Warm up audiences. Build email flows.\n- November: launch. Check numbers daily.\n- December and January: review and plan next year.", "check": "Every stage is in your calendar with dates.", "lost": "Find this month on the list. Do that part."},
-  {"say": "Add gift campaigns with delivery cut-off dates (\"order by the 18th for Christmas\").", "check": "Shoppers know the last safe day to order.", "lost": "Add your Christmas order-by date to your site."},
-  {"say": "Plan for Boxing Day and the quiet weeks after (sometimes called the fifth quarter). Ad costs often drop then, so new customers can be cheaper.", "check": "You have a plan for late December and January.", "lost": "Plan one January campaign."},
-  {"say": "Add end of financial year sales where they matter (30 June in Australia), and Valentine's, Mother's and Father's Day gift picks.", "check": "Your year has every key date planned.", "lost": "Add Mother's Day to your calendar."}
+  {"say": "Outside the US: check if your GST turnover (this month plus the previous 11) has reached $75,000, or will in the next 12 months. If so, register within 21 days (the ATO website explains how).", "check": "You know if you must register.", "lost": "Add up the last 12 months of sales. Is it $75,000 or more?"},
+  {"say": "Once registered for GST: in Shopify **Settings > Taxes and duties**, turn on **Include sales tax in product price and shipping rate**.", "check": "Prices shown to local customers include GST.", "careful": "Not registered? Don't charge GST, and don't call invoices tax invoices.", "lost": "Not registered yet? Skip this card."},
+  {"say": "In Helix **Settings**, keep **My prices include GST/VAT** on **Use my country's default** if you type or import Shopify's Gross sales (it already leaves tax out). Pick Yes only if every sales number you type includes tax, or No if you're not registered.", "check": "Helix takes GST out of order totals synced from Shopify (example: $110 becomes $100) and uses Gross sales as typed. New Zealand (15%) and UK (20%) are there too.", "lost": "Typing Gross sales? Keep the default."},
+  {"say": "US: list states where you have a physical presence (home state, warehouse). Check each state's economic nexus threshold, often $100,000 of sales a year.", "check": "You know where you owe sales tax.", "lost": "Start with your home state."},
+  {"say": "US: register with each state before collecting. Then turn that state on in **Settings > Taxes and duties**.", "check": "Shopify collects tax only where you're registered, and tracks your progress to other thresholds.", "lost": "Register first. Then turn the state on."}
  ]},
-"13.11": {"intro": "Big sales use every channel at once. One missed setting can cost a day of sales. Tick this list a week before.",
+"13.11": {"intro": "Let people pay the way they like. Every extra step at checkout loses buyers.",
  "steps": [
-  {"say": "Check Meta and Google sale campaigns are built and switched off.", "check": "Campaigns are ready to switch on.", "lost": "Check your sale campaigns are built and off."},
-  {"say": "Check sale prices and promo pictures are in your product feed.", "check": "Shopping ads will show sale prices.", "lost": "Check one sale price in the feed."},
-  {"say": "Check emails and texts are scheduled, and flows switch to sale versions at the right time.", "check": "Messages go out by themselves.", "lost": "Check your launch email is scheduled."},
-  {"say": "Check free posts and creator posts are scheduled.", "check": "Social is ready.", "lost": "Schedule your launch post."},
-  {"say": "Test site banners, sale pages and discount rules with a real test order.", "check": "Discounts work properly at checkout.", "lost": "Place one test order with the discount."},
-  {"say": "Give customer service saved replies for common sale questions.", "check": "The team can answer fast during the rush.", "lost": "Write 3 saved replies."}
+  {"say": "In **Settings > Payments**, turn on Shopify Payments if it's available in your country.", "check": "Cards are accepted. You also avoid Shopify's extra fee for outside payment providers (2% on Basic).", "lost": "Turn on Shopify Payments."},
+  {"say": "Turn on Shop Pay and the phone wallets Shopify offers. Add a popular online wallet as an extra option.", "check": "Checkout shows express wallet buttons.", "lost": "Turn on Shop Pay."},
+  {"say": "Think about one buy now pay later option. Several providers work in many countries. Shop Pay Installments works in the US, Canada and the UK.", "check": "Shoppers can pay in parts. Check the fee, which is higher than a card fee.", "lost": "Check the fee before you turn it on."},
+  {"say": "Set your payout bank account, and a statement name that matches your brand.", "check": "Customers recognise the charge on their bank statement.", "careful": "Australia: since 1 October 2026 you can't add a card surcharge at checkout. Include payment costs in your prices.", "lost": "Set the statement name to your brand."}
  ]},
-"13.12": {"intro": "One big sale a year makes cash bumpy and leaves stock sitting. One or two smaller, planned sales clear old stock and bring old customers back.",
+"13.12": {"intro": "Clear policies build trust and keep you within the law. Write them so a 12-year-old could follow them.",
  "steps": [
-  {"say": "Pick a window at least 8 weeks away from your biggest sale. Choose a reason: clearing a season's stock, end of financial year, or your brand's birthday.", "check": "You have 3 to 5 days and a reason customers will believe.", "lost": "Pick 3 days and one reason."},
-  {"say": "Choose what's on sale: slow stock and last season's colours first. Best sellers only at a smaller discount, or not at all. Check each one's margin in your profit setup.", "check": "A product list where every line still makes money after marketing.", "lost": "Put your slowest product on sale first."},
-  {"say": "Plan it in Helix Calendar: a teaser email 3 days before, a launch email and text, a middle-day reminder, a last-chance email, plus ads to past buyers and site visitors.", "check": "The sale and its messages are in your calendar with dates.", "lost": "Put the launch email in your calendar."},
-  {"say": "When it ends, write down how it went.\n\n1. Record sales, profit, units cleared, and new versus returning customers.\n2. Write one thing to change next time.", "check": "You know if the sale made money and if you'd repeat it.", "careful": "Count big and small sales together. The more often you run sales, the more customers wait for the next one. Keep them planned, rare and with a clear reason.", "lost": "Write down the profit. Was it worth it?"}
+  {"say": "In **Settings > Policies**, create Return and refund, Privacy, Terms of service, Shipping and Contact information pages, starting from Shopify's templates.", "check": "All five policy pages exist.", "lost": "Make the Return and refund policy first."},
+  {"say": "Rewrite each in plain words with your own cut-off dates and delivery ranges.", "check": "The policies sound like you and match what you really do.", "careful": "Outside the US: under consumer law, customers always have rights to repair, replacement or refund for faulty or not-as-described products. Never write \"no refunds\" or \"no refunds on sale items\". US: if you state a shipping time, the FTC mail order rule expects you to meet it, or ship within 30 days if you state none.", "lost": "Rewrite one policy in plain words."},
+  {"say": "Link every policy in the footer and near checkout.", "check": "Every policy is one click away.", "lost": "Add policy links to the footer."},
+  {"say": "Only email people who said yes. Every marketing email needs an unsubscribe link.", "check": "Your email marketing follows the rules.", "lost": "Check your emails have an unsubscribe link."},
+  {"say": "Make a sale terms page that lists exclusions and dates.", "check": "Shoppers can check sale rules in one click.", "lost": "List what the sale leaves out."},
+  {"say": "Add a short returns and delivery summary near Add to cart on product pages. Link it to the full policies.", "check": "Shoppers see returns and delivery times before checkout.", "lost": "Add one line: returns and delivery time."},
+  {"say": "Make contact options easy to find. Build a help centre with the top 10 questions.", "check": "Shoppers can find help without emailing you.", "lost": "Write your top 3 questions and answers."},
+  {"say": "Set up automatic answers for order status and common questions in your help desk or chat app.", "check": "\"Where is my order?\" gets an instant answer.", "careful": "General information, not legal advice.", "lost": "Turn on an order status reply."}
  ]},
-"13.13": {"intro": "A discount takes money from every order. Work out how many more orders you need, then pick an offer you can reach.",
+"13.13": {"intro": "Every app can slow your store and costs money each month. A small starter set covers almost everything. Module 29 says when to add more.",
  "steps": [
-  {"say": "Open **Numbers** in Helix. Find your price and your profit on one order before ads.", "check": "Two numbers, like $60 price and $30 profit.", "lost": "Find your profit on one order."},
-  {"say": "Work out the real discount: the discount times the share of orders that use it. 20% off used by 70 of every 100 orders = 14%.", "check": "You know the real discount.", "lost": "Multiply the discount by how many people use it."},
-  {"say": "Divide normal profit by discounted profit. At 20% off a $60 item, $30 becomes $18. $30 ÷ $18 = 1.67.", "check": "You know you need about 1.67 times the orders.", "lost": "Normal profit ÷ sale profit."},
-  {"say": "Check your target against your list, your ad budget and your stock. Pick the smallest discount that hits it.", "check": "One offer you can actually reach.", "lost": "Pick the smallest discount that works."},
-  {"say": "Split the target: for example 35% launch days, 30% middle, 35% final days. Divide by the days in each part.", "check": "A target for every sale day.", "lost": "Write a sales number for each day."},
-  {"say": "Divide sale profit by sale price: $18 ÷ $48 = 37.5%. Keep ad spend under that share of sales. Check it daily.", "check": "One MER limit you check each day.", "careful": "Many other tools show MER the other way round. Helix 25% = 4x there.", "lost": "Keep ad spend under 37% of sales."}
+  {"say": "Install the starter set only: a reviews app, Shopify Email or another email tool, the Facebook & Instagram and Google & YouTube sales channels, and (optional) an after-purchase offer app. Add subscriptions only if you sell refills.", "check": "Your app list is short and every app has a job.", "lost": "Install a reviews app and an email app."},
+  {"say": "Before installing anything else, check if your theme can already do it (badges, size charts and FAQs often are built in).", "check": "You skip apps for things you already have.", "lost": "Check your theme settings first."},
+  {"say": "Install new apps on a theme copy. Test speed before and after.", "check": "No app slows the live store without you noticing.", "lost": "Test speed before and after."},
+  {"say": "Remove apps you stop using. Check they left no code behind.", "check": "You can name what each app does and what it costs each month.", "lost": "Remove one app you don't use."}
+ ]},
+"13.14": {"intro": "A test order proves payments, emails, stock and tracking all work together. It's the last step before real customers.",
+ "steps": [
+  {"say": "In **Settings > Payments**, turn on test mode for Shopify Payments. Or use Shopify's test payment gateway, which shows as Bogus Gateway.", "check": "Checkout accepts test card numbers.", "lost": "Turn on test mode."},
+  {"say": "Place an order on your phone like a customer would. Use a discount code if you have one.", "check": "The order goes through.", "lost": "Buy one thing on your phone."},
+  {"say": "Check the confirmation email arrived, stock dropped by one, shipping and tax were right, and a Purchase showed in Meta and Google.", "check": "Every system recorded the order correctly.", "lost": "Check the confirmation email arrived."},
+  {"say": "Refund or cancel the test order. Turn test mode off.", "check": "The store is back in live mode.", "lost": "Turn test mode off."},
+  {"say": "Place one small real order with your own card. Refund it.", "check": "A real card payment went through and shows in your payouts.", "lost": "Buy one cheap thing with your card. Refund it."}
+ ]},
+"13.15": {"intro": "One last checklist before you launch or turn on ads catches the small things.",
+ "steps": [
+  {"say": "Go through every row of the lesson's table and tick it off.", "check": "Every row is ticked.", "lost": "Tick the first 5 rows."},
+  {"say": "Remove the store password: in **Online Store**, switch the store from **Private** to **Public**. The first time, the button says **Launch store**.", "check": "Anyone can visit the store.", "lost": "Open **Online Store**. Click **Private**, then **Public**."},
+  {"say": "Start your 2-minute morning numbers in Helix. Plan your first small test campaign.", "check": "Your first day of numbers is in, and a test campaign brief is started.", "lost": "Enter today's numbers in Helix."}
+ ]},
+"13.16": {"intro": "Local shoppers can get your products the same day, with no shipping cost. Pickup and local delivery remove a big reason people leave the cart.",
+ "steps": [
+  {"say": "In Shopify **Settings > Shipping and delivery**, turn on **Local pickup** if people can collect from you.", "check": "Pickup shows as a free option at checkout for nearby shoppers.", "lost": "Turn on **Local pickup**."},
+  {"say": "On the same page, set up **Local delivery** with a delivery area and a price. A small fee, or free over a set amount, works well.", "check": "Nearby shoppers see a local delivery option at checkout.", "lost": "Set one delivery area."},
+  {"say": "Add a line to your promo bar or home page, like \"Free pickup in [your suburb]\".", "check": "Local shoppers learn about it before checkout.", "lost": "Add one promo bar line."},
+  {"say": "If you have a shop front, claim your free Google Business Profile. Add opening hours, photos and a link to your store.", "check": "You show up on Google Maps for people searching near you.", "lost": "Claim your Google Business Profile."},
+  {"say": "Try a small local ad with a tight area around you, about $10 a day for 2 weeks. Use a Meta ad with a location set, or a Google campaign aimed at your area.", "check": "You know if local ads bring orders or visits at a cost you can afford.", "careful": "Only offer a delivery area you can really reach on time. One late local order hurts more than a slow parcel.", "lost": "Set a $10 a day local test."}
  ]}
 }

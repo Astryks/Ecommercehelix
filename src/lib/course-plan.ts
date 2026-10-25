@@ -5,6 +5,8 @@
  * from the steps of existing lessons, so the course reuses the playbook rather
  * than repeating it. Pure and client-safe so it can be unit tested.
  */
+import { toStoredRef } from "./lesson-alias";
+
 export type CourseTrack = "starting" | "growing" | "scaling";
 export type Phase = "numbers" | "attract" | "convert" | "grow" | "run";
 
@@ -95,7 +97,7 @@ export const GOALS: GoalDef[] = [
     title: "Get your store ready to take orders",
     finishLine: "A real test order goes through checkout and lands in your inbox.",
     why: "Every visitor you pay for is wasted if the store is slow, unclear or cannot take a payment.",
-    lessons: ["22.1", "22.3", "22.5", "22.9", "22.11", "22.12", "22.16"],
+    lessons: ["13.1", "13.3", "13.5", "13.9", "13.11", "13.12", "13.14"],
     finish: { kind: "self", label: "Test order placed and received" },
   },
   // ---- Attract ----
@@ -104,7 +106,7 @@ export const GOALS: GoalDef[] = [
     title: "Get your first 100 site visits a day",
     finishLine: "An average of 100 sessions a day over the last 7 days.",
     why: "You need steady visitors before you can learn what makes people buy.",
-    lessons: ["7.14", "7.1", "7.13", "4.2", "21.2", "29.3", "6.1", "6.2"],
+    lessons: ["8.1", "8.2", "8.3", "3.2", "4.2", "30.3", "7.1", "7.2"],
     finish: { kind: "metric", label: "Sessions a day (7-day average)", unit: "count", target: 100, value: (c) => c.sessionsPerDay7, minDays: 5 },
   },
   {
@@ -112,7 +114,7 @@ export const GOALS: GoalDef[] = [
     title: "Get 1,000 site visits a day while ads stay profitable",
     finishLine: "1,000 sessions a day on average over 7 days, with ad spend at or under your target MER.",
     why: "More of the right visitors is the fastest lever, but only if each sale still makes money.",
-    lessons: ["8.13", "8.12", "7.14", "7.13", "5.1", "5.7", "6.3", "6.12", "7.6", "19.12"],
+    lessons: ["10.1", "10.4", "8.1", "8.3", "5.1", "5.7", "7.3", "7.12", "8.9", "6.12"],
     finish: { kind: "metric", label: "Sessions a day (7-day average)", unit: "count", target: 1000, value: (c) => c.sessionsPerDay7, extra: (c) => c.merPct30 <= c.targetMerPct, minDays: 5 },
   },
   {
@@ -120,7 +122,7 @@ export const GOALS: GoalDef[] = [
     title: "Add 500 people to your email list",
     finishLine: "500 new subscribers since you started this goal (check your email tool).",
     why: "Your list is the one audience you own. Every subscriber can buy again without paying for another ad.",
-    lessons: ["10.1", "11.1", "11.3", "11.4"],
+    lessons: ["16.1", "12.1", "12.3", "12.4"],
     finish: { kind: "self", label: "500 new subscribers" },
   },
   {
@@ -128,7 +130,7 @@ export const GOALS: GoalDef[] = [
     title: "Get your first 10 orders from referrals and partners",
     finishLine: "10 orders came through a referral link, partner code or guest feature.",
     why: "A friend's word or a trusted brand's mention often wins customers for far less than an ad costs.",
-    lessons: ["29.4", "29.5", "29.6"],
+    lessons: ["30.4", "30.5", "30.6"],
     finish: { kind: "self", label: "10 referral or partner orders" },
   },
   // ---- Convert ----
@@ -137,7 +139,7 @@ export const GOALS: GoalDef[] = [
     title: "Get add-to-cart above 8%",
     finishLine: "8% or more of sessions add something to the cart, over 7 days.",
     why: "If people do not add to cart, the product page is not convincing them. Fixing it lifts every channel at once.",
-    lessons: ["29.1", "3.2", "9.1", "9.2", "9.5"],
+    lessons: ["30.1", "15.2", "14.1", "14.2", "14.5"],
     finish: { kind: "metric", label: "Add-to-cart rate (7 days)", unit: "pct", target: 8, value: (c) => c.atcPct7, minDays: 5 },
   },
   {
@@ -145,7 +147,7 @@ export const GOALS: GoalDef[] = [
     title: "Get your conversion rate to 2.5%",
     finishLine: "2.5% or more of sessions become an order, over 7 days.",
     why: "Going from 1.5% to 2.5% conversion brings about two thirds more sales from the same ad spend.",
-    lessons: ["3.3", "3.5", "9.4", "22.12", "9.8", "9.16"],
+    lessons: ["15.3", "15.5", "14.4", "13.12", "14.7", "14.15"],
     finish: { kind: "metric", label: "Conversion rate (7 days)", unit: "pct", target: 2.5, value: (c) => c.crPct7, minDays: 5 },
   },
   {
@@ -153,7 +155,7 @@ export const GOALS: GoalDef[] = [
     title: "Switch on the five core email flows",
     finishLine: "Welcome, browse abandonment, cart abandonment, checkout abandonment and post-purchase flows are all live.",
     why: "Flows sell while you sleep. Each one reaches a shopper at the moment they are most likely to buy.",
-    lessons: ["10.2", "10.3", "29.8", "29.7"],
+    lessons: ["16.2", "16.3", "30.8", "30.7"],
     finish: { kind: "self", label: "Five flows live" },
   },
   {
@@ -161,7 +163,7 @@ export const GOALS: GoalDef[] = [
     title: "Raise your average order by 10%",
     finishLine: "Average order value is 10% higher than when you started this goal, over 7 days.",
     why: "A bigger order pays for the same ad click, so profit per order rises with no extra traffic.",
-    lessons: ["9.10", "3.6", "9.12"],
+    lessons: ["14.9", "15.6", "14.11"],
     finish: { kind: "metric", label: "Average order value (7 days)", unit: "money", target: (c) => Math.round(c.baselineAov * 1.1 * 100) / 100, value: (c) => c.aov7, minDays: 5 },
   },
   // ---- Grow ----
@@ -170,7 +172,7 @@ export const GOALS: GoalDef[] = [
     title: "Reach $10k a month in sales",
     finishLine: "$10,000 or more in sales over the last 30 days.",
     why: "At $10k a month you have proof people want what you sell, and enough data to grow on purpose.",
-    lessons: ["6.14", "13.1", "6.6", "3.8"],
+    lessons: ["7.14", "17.1", "7.6", "15.8"],
     finish: { kind: "metric", label: "Sales, last 30 days", unit: "money", target: 10_000, value: (c) => c.revenue30, minDays: 20 },
   },
   {
@@ -178,7 +180,7 @@ export const GOALS: GoalDef[] = [
     title: "Get net profit margin to 10%",
     finishLine: "Net profit is 10% or more of sales over the last 30 days.",
     why: "Ten cents of every dollar kept is what lets you survive a bad month and fund the next stage.",
-    lessons: ["2.1", "2.3", "2.4", "2.5", "13.12"],
+    lessons: ["2.1", "2.3", "2.4", "2.5", "17.12"],
     finish: { kind: "metric", label: "Net profit margin (30 days)", unit: "pct", target: 10, value: (c) => c.marginPct30, minDays: 20 },
   },
   {
@@ -186,7 +188,7 @@ export const GOALS: GoalDef[] = [
     title: "Get 25% of sales from returning customers",
     finishLine: "A quarter of sales over 30 days come from people who bought before.",
     why: "You already paid to find returning customers, so their repeat orders are often your most profitable sales.",
-    lessons: ["10.4", "10.12", "4.7", "3.10", "23.7"],
+    lessons: ["16.4", "16.12", "3.7", "15.10", "21.7"],
     finish: { kind: "metric", label: "Returning customer share (30 days)", unit: "pct", target: 25, value: (c) => c.returningPct30, minDays: 20 },
   },
   {
@@ -194,7 +196,7 @@ export const GOALS: GoalDef[] = [
     title: "Reach a $1M-a-year pace with at least 10% profit",
     finishLine: "$84,000 in sales over 30 days (about $1M a year) and a net margin of 10% or more.",
     why: "This is the jump from a busy shop to a real business that can pay a team and its owner.",
-    lessons: ["2.7", "7.10", "8.6", "15.1", "28.9"],
+    lessons: ["2.7", "8.13", "10.8", "25.1", "26.9"],
     finish: { kind: "metric", label: "Sales, last 30 days", unit: "money", target: 84_000, value: (c) => c.revenue30, extra: (c) => c.marginPct30 >= 10, minDays: 20 },
   },
   {
@@ -202,7 +204,7 @@ export const GOALS: GoalDef[] = [
     title: "Grow sales 20% month on month while ads stay profitable",
     finishLine: "Sales over the last 30 days are 20% higher than the 30 days before, with MER at or under target.",
     why: "Scaling only counts if profit scales with it. This proves you can add spend without losing money.",
-    lessons: ["2.7", "7.10", "15.2", "15.6"],
+    lessons: ["2.7", "8.13", "25.2", "25.6"],
     finish: { kind: "metric", label: "Sales growth vs previous 30 days", unit: "pct", target: 20, value: (c) => (c.revenuePrev30 ? ((c.revenue30 - c.revenuePrev30) / c.revenuePrev30) * 100 : null), extra: (c) => c.merPct30 <= c.targetMerPct, minDays: 25 },
   },
   // ---- Run the business ----
@@ -211,7 +213,7 @@ export const GOALS: GoalDef[] = [
     title: "Set your 90-day plan",
     finishLine: "One goal, three monthly checkpoints and up to three projects, written on one page.",
     why: "A clear plan stops you chasing every idea, so the next 90 days add up to real progress.",
-    lessons: ["29.15", "29.13", "29.9"],
+    lessons: ["30.15", "30.13", "30.9"],
     finish: { kind: "self", label: "Plan written and saved" },
     rhythm: [2, 3, 3, 2],
   },
@@ -220,7 +222,7 @@ export const GOALS: GoalDef[] = [
     title: "Run a weekly numbers meeting",
     finishLine: "Four weekly meetings held, each ending with one fix and an owner.",
     why: "Checking in every week gives you 52 chances a year to fix problems early.",
-    lessons: ["29.10", "20.10", "29.12", "29.14"],
+    lessons: ["30.10", "9.11", "30.12", "30.14"],
     finish: { kind: "self", label: "Four meetings held" },
   },
   {
@@ -228,7 +230,7 @@ export const GOALS: GoalDef[] = [
     title: "Write playbooks for your three most repeated tasks",
     finishLine: "Three playbooks exist and someone else has followed each one without help.",
     why: "Work that lives in your head only happens when you do it. Playbooks set you free.",
-    lessons: ["29.11", "28.2"],
+    lessons: ["30.11", "26.2"],
     finish: { kind: "self", label: "Three playbooks tested" },
   },
   {
@@ -236,7 +238,7 @@ export const GOALS: GoalDef[] = [
     title: "Free up your first 10 hours a week",
     finishLine: "Someone else now does at least 10 hours a week of work you used to do.",
     why: "Your time is the business's scarcest resource. Freeing it is how you work on growth, not just in it.",
-    lessons: ["28.1", "16.4", "28.6", "29.16"],
+    lessons: ["26.1", "27.4", "26.6", "30.16"],
     finish: { kind: "self", label: "10 hours a week freed up" },
   },
 ];
@@ -287,7 +289,8 @@ const firstSentence = (s: string) => {
   return m ? m[1] : t.length > 180 ? t.slice(0, 177).replace(/\s\S*$/, "") + "..." : t;
 };
 
-export const courseTaskId = (goalId: string, ref: string, n: number) => `course-${goalId}-${ref.replace(".", "-")}-s${n}`;
+/** Task id for one course step. Uses the lesson's permanent id (lesson-alias.ts), so saved ticks survive renumbering. */
+export const courseTaskId = (goalId: string, ref: string, n: number) => `course-${goalId}-${toStoredRef(ref).replace(".", "-")}-s${n}`;
 export const COURSE_TASK_ID = /^course-[a-z0-9-]+-\d{1,2}-\d{1,2}-s\d{1,2}$/;
 
 /** Split a goal's lesson steps into days, following its rhythm (1 to 5 tasks a day). */

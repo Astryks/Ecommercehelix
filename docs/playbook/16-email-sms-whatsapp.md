@@ -1,4 +1,4 @@
-# Module 10: Email, SMS and messaging
+# Module 16: Email, SMS and messaging
 
 **Outcome:** automatic emails (flows) that earn money every day, and a steady email plan that does not tire your list. Plus text and chat messages where they help.
 
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 10.1: Sign-up forms
+## Lesson 16.1: Sign-up forms
 <!-- stage:convert -->
 
 **Why this matters:** A sign-up form (often a pop-up) asks visitors for their email or phone number. It feeds every flow and campaign you send. As a rule of thumb, a good form signs up 3 to 10 of every 100 people who see it. A weak one wastes your traffic.
@@ -87,7 +87,7 @@ Sign-up reward and form rules:
 - **Before a sale, swap the reward.** Two to three weeks before, change the form to "Get early access" so people join for the sale.
 - **Test one offer against another for 2 weeks.** Give each offer its own welcome email so everyone gets the code they were promised. Pick the winner by sales and profit, not just sign-ups.
 
-## Lesson 10.2: The five core flows and extras
+## Lesson 16.2: The five core flows and extras
 <!-- stage:convert -->
 
 **Why this matters:** A flow is a series of emails or texts that sends itself when someone does something. Five core flows earn money every day without you lifting a finger. Timings are in [SOP 13](../sops/13-email-sms-flows.md).
@@ -128,7 +128,7 @@ Sign-up reward and form rules:
 
 <!-- do:flow-win-back -->
 
-## Lesson 10.3: Writing emails that get clicks
+## Lesson 16.3: Writing emails that get clicks
 <!-- stage:convert -->
 
 **Why this matters:** Emails that get clicks feel personal and have one clear job. Mixing plain founder emails with designed ones keeps your list interested.
@@ -147,7 +147,7 @@ Sign-up reward and form rules:
 
 **Watch out:** Use countdown timers only for real deadlines, and show a message (not zeros) when time is up.
 
-## Lesson 10.4: Segments
+## Lesson 16.4: Segments
 <!-- stage:grow -->
 
 **Why this matters:** A segment is a group of people on your list who share something. Sending to the right segment keeps emails out of spam folders and makes each message more useful.
@@ -166,7 +166,7 @@ Sign-up reward and form rules:
 
 **Watch out:** Some email apps open emails automatically to protect privacy, so opens alone overstate engagement. Build "engaged" segments on clicks, site visits and orders too.
 
-## Lesson 10.5: Campaign cadence and ideas
+## Lesson 16.5: Campaign cadence and ideas
 <!-- stage:grow -->
 
 **Why this matters:** A campaign email is a one-off email to your list, like a newsletter. Cadence means how often you send. Building up slowly keeps your list healthy while you learn what they like.
@@ -181,7 +181,7 @@ Sign-up reward and form rules:
 
 **Expected result:** You have a month of email ideas.
 
-## Lesson 10.6: Reviewing performance
+## Lesson 16.6: Reviewing performance
 <!-- stage:convert -->
 
 **Why this matters:** Monthly reviews show where emails leak money. Fixing the weakest step first gives the biggest gain for the least work.
@@ -196,14 +196,14 @@ Sign-up reward and form rules:
 
 ### Good to know
 
-A rule-of-thumb guide, not a promise. Some email apps open emails automatically for privacy, which inflates open rates, so trust clicks and sales more. The spam complaint line is Google's (Lesson 10.8).
+A rule-of-thumb guide, not a promise. Some email apps open emails automatically for privacy, which inflates open rates, so trust clicks and sales more. The spam complaint line is Google's (Lesson 16.8).
 
 | | Open rate | Click rate | Other |
 | --- | --- | --- | --- |
 | Flows | Above 30% | About 5 to 6% | Revenue per recipient going up |
 | Campaigns | Above 30% | About 1.5 to 2% | Unsubscribes under 0.3%, spam complaints under 0.1% |
 
-## Lesson 10.7: How to run a fair email split test
+## Lesson 16.7: How to run a fair email split test
 <!-- stage:convert -->
 
 **Why this matters:** Email A/B tests show what your list responds to. One change, two big enough groups and a written guess make results trustworthy.
@@ -220,7 +220,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** Your test log grows and your emails improve each month.
 
-## Lesson 10.8: Deliverability
+## Lesson 16.8: Deliverability
 <!-- stage:convert -->
 
 **Why this matters:** Deliverability means your emails reach the inbox, not spam. Without it, the best email in the world earns nothing. Most of it is one-time setup.
@@ -245,7 +245,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Watch out:** Every marketing email needs a working unsubscribe and your business details. Australia's Spam Act says act on unsubscribes within 5 working days. The US CAN-SPAM Act says 10 business days and needs a postal address (see [FTC: CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)).
 
-## Lesson 10.9: Platform costs
+## Lesson 16.9: Platform costs
 <!-- stage:grow -->
 
 **Why this matters:** Email platforms often charge by the number of people (profiles) on your list. Many tools bill on active profiles, and suppressed profiles often do not count. Check your tool's pricing page. Cleaning the list saves money and improves deliverability at the same time.
@@ -262,7 +262,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** You know whether to stay or switch.
 
-## Lesson 10.10: SMS
+## Lesson 16.10: SMS
 <!-- stage:convert -->
 
 **Why this matters:** Text messages get read fast but cost more than email. Used for big moments only, they earn well; used every day, they drive unsubscribes.
@@ -285,7 +285,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Watch out:** In the US, carriers block texts from numbers that are not registered (toll-free verification or 10DLC). Get clear written consent first, honour STOP replies, and send only 8am to 9pm local time. Some states, like Florida, are stricter (see [47 CFR 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200)).
 
-## Lesson 10.11: WhatsApp and chat commerce
+## Lesson 16.11: WhatsApp and chat commerce
 <!-- stage:convert -->
 
 **Why this matters:** WhatsApp and similar chat apps work well where your customers already use them. They are great for VIPs and for pricey products people want to ask about first. The free WhatsApp Business app suits one-to-one chats. Promotions at scale need the WhatsApp Business Platform, usually through your email or SMS app.
@@ -306,7 +306,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Watch out:** Since April 2025, Meta has paused marketing templates to US (+1) phone numbers. Check with your provider before planning US WhatsApp promotions.
 
-## Lesson 10.12: Loyalty
+## Lesson 16.12: Loyalty
 <!-- stage:grow -->
 
 **Why this matters:** A loyalty program rewards people who buy again. It only pays off when enough customers already come back, and it must be measured by repeat purchases, not points.
@@ -329,7 +329,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** You know whether the program changed behaviour.
 
-## Lesson 10.13: Sale email and SMS schedule
+## Lesson 16.13: Sale email and SMS schedule
 <!-- stage:convert -->
 
 **Why this matters:** Big sales live or die on email and SMS. A fixed schedule from tease to thank-you makes sure every phase gets a message, and nobody gets spammed.
@@ -359,7 +359,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** New buyers are looked after and flows are back to normal.
 
-## Lesson 10.14: Plain-text emails that feel personal
+## Lesson 16.14: Plain-text emails that feel personal
 <!-- stage:convert -->
 
 **Why this matters:** Designed emails look like ads. A short plain email looks like a note from a person. Plain emails often get more replies and can land in the main inbox more often.
@@ -380,13 +380,13 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** People can reply, and someone reads the replies.
 
-**Step 5.** Split test it against the designed version for 2 weeks (Lesson 10.7). Compare clicks and orders, not just opens.
+**Step 5.** Split test it against the designed version for 2 weeks (Lesson 16.7). Compare clicks and orders, not just opens.
 
 **Expected result:** You know which style wins for that email.
 
 **Watch out:** Plain does not mean messy. Short lines, no spelling mistakes, and one clear ask.
 
-## Lesson 10.15: Ask shoppers what they want, then use the answers
+## Lesson 16.15: Ask shoppers what they want, then use the answers
 <!-- stage:convert -->
 
 **Why this matters:** When a shopper tells you what they need, you can send them the right products instead of guessing. Answers given on purpose are more useful than clicks. They also make every email feel like it was written for that person.
@@ -395,7 +395,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** One question with 3 to 5 simple answers.
 
-**Step 2.** Add the question to your sign-up form, as a second step after the email box (Lesson 10.1).
+**Step 2.** Add the question to your sign-up form, as a second step after the email box (Lesson 16.1).
 
 **Expected result:** New subscribers can tap one answer in a second.
 
@@ -403,7 +403,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** You can see the answer on a test profile.
 
-**Step 4.** In your welcome flow (Lesson 10.2), add a split based on the answer. Send each group an email with the 3 products that suit them best.
+**Step 4.** In your welcome flow (Lesson 16.2), add a split based on the answer. Send each group an email with the 3 products that suit them best.
 
 **Expected result:** Each group gets product picks that fit them.
 
@@ -411,13 +411,13 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 
 **Expected result:** More of your list has an answer.
 
-**Step 6.** After 30 days, compare clicks and sales from the matched emails with your old welcome emails (Lesson 10.6).
+**Step 6.** After 30 days, compare clicks and sales from the matched emails with your old welcome emails (Lesson 16.6).
 
-**Expected result:** You know if the answers lift sales. Then use the same groups in sale emails (Lesson 10.4).
+**Expected result:** You know if the answers lift sales. Then use the same groups in sale emails (Lesson 16.4).
 
 **Watch out:** Ask only what you will use. Every extra question means fewer people finish the form.
 
-## Lesson 10.16: Wake up your quieter subscribers before a big sale
+## Lesson 16.16: Wake up your quieter subscribers before a big sale
 <!-- stage:convert -->
 
 **Why this matters:** In a big sale you want to reach more of your list. But if you suddenly email people who have ignored you for months, inbox providers like Gmail can start sending all your emails to spam. Waking those people up slowly, a few weeks early, lets you reach more of them safely.
@@ -464,7 +464,7 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 | Opened or clicked in 91 to 180 days | Wake-up emails before a sale, then the biggest sale days |
 | Sleeping (180+ days, 5+ emails, no opens or clicks) | Goodbye flow only |
 
-## Lesson 10.17: Do your customers come back? Plan around it
+## Lesson 16.17: Do your customers come back? Plan around it
 <!-- stage:grow -->
 
 **Why this matters:** Some stores sell things people buy again and again, like coffee or skincare. Others sell things people buy once, like a sofa. How often your customers come back should change how much you pay for a new customer, how often you run sales and which emails you send.

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { MODULE_SLUGS, toCurrentRef } from "@/lib/lesson-alias";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { getDeck } from "@/lib/cards";
@@ -15,6 +16,8 @@ export async function generateMetadata({ params }: PageProps<"/learn/[slug]/card
 /** Any lesson as a card deck, in the same player as the dashboard. Progress is kept on this device. */
 export default async function LessonCards({ params }: PageProps<"/learn/[slug]/cards/[ref]">) {
   const { slug, ref } = await params;
+  // A link from before the 26 Oct 2026 reorder: old module slug and old lesson number.
+  if (MODULE_SLUGS[slug]) permanentRedirect(`/learn/${MODULE_SLUGS[slug]}/cards/${toCurrentRef(ref)}`);
   const d = getDeck(ref);
   if (!d || d.slug !== slug) notFound();
   return (

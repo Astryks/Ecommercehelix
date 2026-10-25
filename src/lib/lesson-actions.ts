@@ -5,6 +5,8 @@
  *  - delegate: maps to an existing actionable (Meta paused draft, email flow) that goes to approvals.
  *  - request: anything else becomes a done-for-you request in "Waiting for your OK".
  */
+import { toCurrentRef, toStoredRef } from "./lesson-alias";
+
 export type LessonAction =
   | { kind: "link"; key: string; href: string; label: string }
   | { kind: "delegate"; key: string; actionableId: string; label: string }
@@ -37,14 +39,18 @@ export function lessonAction(key: string | null | undefined): LessonAction {
 
 export const KNOWN_ACTION_KEYS = [...Object.keys(LINKS), "meta-draft", ...FLOW_IDS.map((f) => `flow-${f}`)];
 
-/** Task ids for lessons and steps: lesson-7-1 and lesson-7-1-s3. */
+/**
+ * Task ids for lessons and steps: lesson-7-1 and lesson-7-1-s3. They use the lesson's permanent id
+ * (lesson-alias.ts), so a saved tick stays on the same lesson after renumbering: current Lesson 8.2
+ * is lesson-7-1. Pass and get back current refs.
+ */
 export const LESSON_TASK_ID = /^lesson-(\d{1,2})-(\d{1,2})(?:-s(\d{1,2}))?$/;
-export const lessonTaskId = (ref: string, step?: number) => `lesson-${ref.replace(".", "-")}${step ? `-s${step}` : ""}`;
+export const lessonTaskId = (ref: string, step?: number) => `lesson-${toStoredRef(ref).replace(".", "-")}${step ? `-s${step}` : ""}`;
 export function parseLessonTaskId(id: string): { ref: string; step: number | null } | null {
   const m = id.match(LESSON_TASK_ID);
-  return m ? { ref: `${Number(m[1])}.${Number(m[2])}`, step: m[3] ? Number(m[3]) : null } : null;
+  return m ? { ref: toCurrentRef(`${Number(m[1])}.${Number(m[2])}`), step: m[3] ? Number(m[3]) : null } : null;
 }
 
-/** Progress keys stored per user: "7.1#3" for step 3 of lesson 7.1. */
+/** Progress keys per user, with current refs: "8.2#3" for step 3 of lesson 8.2 (saved as "7.1#3", see lesson-alias.ts). */
 export const STEP_KEY = /^\d{1,2}\.\d{1,2}#\d{1,2}$/;
 export const stepKey = (ref: string, n: number) => `${ref}#${n}`;

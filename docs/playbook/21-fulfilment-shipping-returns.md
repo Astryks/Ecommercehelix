@@ -1,8 +1,8 @@
-# Module 23: Fulfilment, shipping and returns
+# Module 21: Fulfilment, shipping and returns
 
 **Outcome:** orders leave on time and you know shipping costs before you set prices. Delivery problems have a plan, and returns cost you less each month. You know when to hand packing to a warehouse partner and how to move without losing orders.
 
-**Related:** [Module 14 Inventory, cash and the year plan](14-inventory-cash-planning.md), [Module 22 Shopify store setup](22-shopify-store-setup.md), [Module 26 Tax, GST, sales tax and duties](26-tax-gst-sales-tax-duties.md), [Module 9 Website, conversion and order value](09-website-and-cro.md)
+**Related:** [Module 19 Inventory, cash and the year plan](19-inventory-cash-planning.md), [Module 13 Shopify store setup](13-shopify-store-setup.md), [Module 22 Tax, GST, sales tax and duties](22-tax-gst-sales-tax-duties.md), [Module 14 Website, conversion and order value](14-website-and-cro.md)
 
 
 <!-- plain:start -->
@@ -32,7 +32,7 @@
 
 ---
 
-## Lesson 23.1: Do you need a 3PL yet?
+## Lesson 21.1: Do you need a 3PL yet?
 <!-- stage:grow -->
 
 **Why this matters:** Packing orders yourself is cheap at first and expensive later, because your hours stop going into growth. A 3PL is a warehouse company that stores and ships for you. It makes sense when packing takes more of your week than selling does.
@@ -49,7 +49,7 @@
 
 **Expected result:** You have 3 quotes for the same workload.
 
-**Watch out:** Outside the US: in Australia, most warehouses are in the biggest cities. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can mean sales tax there, so read [Lesson 26.3](26-tax-gst-sales-tax-duties.md#lesson-263-us-sales-tax-nexus-registering-and-filing) first.
+**Watch out:** Outside the US: in Australia, most warehouses are in the biggest cities. Ask for delivery times to Perth and country areas. US: one central warehouse reaches most addresses in about 2 to 5 business days by ground. Stock held in a state can mean sales tax there, so read [Lesson 22.3](22-tax-gst-sales-tax-duties.md#lesson-223-us-sales-tax-nexus-registering-and-filing) first.
 
 **Step 4.** Compare the full monthly bill, not just pick and pack. Include receiving, storage (per pallet, shelf or cubic metre) and packaging. Add monthly minimums, set-up, returns and busy-season extras.
 
@@ -67,12 +67,12 @@
 
 **Expected result:** The warehouse connects to your store with no manual copying.
 
-## Lesson 23.2: Moving to a 3PL without losing orders
+## Lesson 21.2: Moving to a 3PL without losing orders
 <!-- stage:grow -->
 
 **Why this matters:** Most moves to a warehouse go wrong in the handover week. Stock counts do not match, barcodes are missing or orders get stuck between systems. A careful switch avoids all three.
 
-**Step 1.** Give every product and variant its own SKU (your product code) and a barcode. Do it before anything ships (see [Module 22](22-shopify-store-setup.md)).
+**Step 1.** Give every product and variant its own SKU (your product code) and a barcode. Do it before anything ships (see [Module 13](13-shopify-store-setup.md)).
 
 **Expected result:** Every variant has a SKU and barcode.
 
@@ -105,7 +105,7 @@
 
 **Expected result:** You have a named contact and response time.
 
-## Lesson 23.3: Shipping rates, carriers and delays
+## Lesson 21.3: Shipping rates, carriers and delays
 <!-- stage:grow -->
 
 **Why this matters:** Shipping is often one of your biggest costs after the product itself. Know it before you set prices and free shipping rules, and have a plan for delays.
@@ -126,7 +126,7 @@
 
 <!-- do:numbers -->
 
-**Step 4.** Choose a rule: free shipping over an amount, a flat rate, or live rates. Set any free shipping amount a little above your average order (see [Lesson 9.11](09-website-and-cro.md#lesson-911-shipping-psychology)).
+**Step 4.** Choose a rule: free shipping over an amount, a flat rate, or live rates. Set any free shipping amount a little above your average order (see [Lesson 14.10](14-website-and-cro.md#lesson-1410-shipping-psychology)).
 
 **Expected result:** You have one clear shipping rule.
 
@@ -144,7 +144,7 @@
 
 **Expected result:** Your shipping rates never fall behind your costs.
 
-## Lesson 23.4: Shipping protection and lost or damaged parcels
+## Lesson 21.4: Shipping protection and lost or damaged parcels
 <!-- stage:grow -->
 
 **Why this matters:** Some parcels will go missing or arrive broken. Decide early who pays and how fast you fix it. Also decide if you offer shipping protection: a small fee the buyer can choose that covers loss or damage.
@@ -175,7 +175,7 @@
 
 **Expected result:** Damage claims fall.
 
-## Lesson 23.5: Returns and exchanges that cost less
+## Lesson 21.5: Returns and exchanges that cost less
 <!-- stage:grow -->
 
 **Why this matters:** Every return costs you twice: the refund and the handling. The aim is fewer returns and more exchanges, while always meeting the law.
@@ -196,7 +196,7 @@
 
 **Expected result:** More returns become exchanges.
 
-**Watch out:** Outside the US: in Australia, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds"; "no refunds for change of mind" is fine (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). UK and EU: online shoppers can usually cancel within 14 days of delivery without giving a reason, so "no change of mind refunds" does not work for them (see [GOV.UK](https://www.gov.uk/online-and-distance-selling-for-businesses) and [Your Europe](https://europa.eu/youreurope/citizens/consumers/shopping/returns/index_en.htm)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
+**Watch out:** Outside the US: in Australia, customers can get a repair, replacement or refund for faulty products. That is true whatever your policy says. Never write "no refunds"; "no refunds for change of mind" is fine (see [ACCC](https://www.accc.gov.au/consumers/buying-products-and-services/consumer-rights-and-guarantees)). UK and EU: online shoppers can usually cancel within 14 days of delivery without giving a reason, so "no change of mind refunds" does not work for them (see [GOV.UK](https://www.gov.uk/online-and-distance-selling-for-businesses) and [Your Europe](https://europa.eu/youreurope/citizens/consumers/shopping/returns/index_en.htm)). EU: since 19 June 2026, if people buy on your website, you must also give them an online withdrawal function, labelled "withdraw from contract here" or something just as clear, that works for the whole 14 days. Confirm each withdrawal by email straight away (see [EUR-Lex: Directive (EU) 2023/2673](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023L2673)). US: honour the policy you publish; some states have their own rules (see the [FTC](https://www.ftc.gov/business-guidance)).
 
 **Step 5.** Make returns easy to start with a form or portal, checking the portal's price against your return volume.
 
@@ -212,12 +212,12 @@
 
 <!-- do:numbers -->
 
-## Lesson 23.6: When a spreadsheet stops working for stock
+## Lesson 21.6: When a spreadsheet stops working for stock
 <!-- stage:grow -->
 
 **Why this matters:** A spreadsheet works for a handful of products. It breaks when you have many variants, more than one location, or purchase orders in transit.
 
-**Step 1.** Start with the Helix [Suppliers and stock](/dashboard/stock) page. It shows reorder points, stock-out dates and order-by dates (see [Lesson 14.9](14-inventory-cash-planning.md#lesson-149-reorder-points-lead-times-and-stock-outs)).
+**Step 1.** Start with the Helix [Suppliers and stock](/dashboard/stock) page. It shows reorder points, stock-out dates and order-by dates (see [Lesson 19.9](19-inventory-cash-planning.md#lesson-199-reorder-points-lead-times-and-stock-outs)).
 
 **Expected result:** Each product shows when to reorder.
 
@@ -235,11 +235,11 @@
 
 **Expected result:** The tool handles your real cases.
 
-**Step 5.** Count all stock at least once a year (see [Lesson 27.3](27-accounting-bookkeeping-tax-time.md#lesson-273-cost-of-goods-and-stock-in-your-books)) and spot-check best sellers monthly.
+**Step 5.** Count all stock at least once a year (see [Lesson 23.3](23-accounting-bookkeeping-tax-time.md#lesson-233-cost-of-goods-and-stock-in-your-books)) and spot-check best sellers monthly.
 
 **Expected result:** There is one source of truth for stock and it is accurate.
 
-## Lesson 23.7: Customer service that keeps customers
+## Lesson 21.7: Customer service that keeps customers
 <!-- stage:grow -->
 
 **Why this matters:** Most questions are the same few. Where is my order? Can I change my size? How do I return this? Fast, friendly answers turn a worried buyer into a repeat buyer. Good automation takes most of the work off you.

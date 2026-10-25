@@ -1,4 +1,4 @@
-# Module 15: International expansion
+# Module 25: International expansion
 
 **Outcome:** a careful, profitable way to start selling in new countries.
 
@@ -28,7 +28,7 @@
 
 ---
 
-## Lesson 15.1: Is there demand?
+## Lesson 25.1: Is there demand?
 <!-- stage:grow -->
 
 **Why this matters:** Expanding to a country with no demand burns cash on shipping, ads and setup. A quick check of your own data shows where people already want what you sell.
@@ -49,7 +49,7 @@
 
 **Expected result:** You have one first country to expand to.
 
-## Lesson 15.2: Recalculate unit economics per country
+## Lesson 25.2: Recalculate unit economics per country
 <!-- stage:grow -->
 
 **Why this matters:** Unit economics means what each order earns after its costs. Those costs change in a new country. Shipping, duties, taxes and the exchange rate can turn a profitable product into a loss.
@@ -64,7 +64,7 @@
 
 <!-- do:numbers -->
 
-## Lesson 15.3: Pricing
+## Lesson 25.3: Pricing
 <!-- stage:grow -->
 
 **Why this matters:** Local prices in local currency, rounded to normal price points, sell better than converted prices. Deciding who pays duties up front avoids angry customers at the door.
@@ -77,7 +77,7 @@
 
 **Expected result:** Customers pay no surprise bill at delivery, which usually sells better. Shopify charges a small fee on orders where it works out duties at checkout, and products need HS codes (see [Shopify: collecting duties](https://help.shopify.com/manual/markets/duties-and-import-taxes/charging-duties)).
 
-## Lesson 15.4: Product and promotion
+## Lesson 25.4: Product and promotion
 <!-- stage:grow -->
 
 **Why this matters:** What sells at home may need tweaks abroad. Three changes cover most of it.
@@ -96,7 +96,7 @@
 
 <!-- do:calendar -->
 
-## Lesson 15.5: Shipping options and logistics
+## Lesson 25.5: Shipping options and logistics
 <!-- stage:grow -->
 
 **Why this matters:** How you ship overseas decides delivery time, cost and returns. There are three main options, each suiting a different stage.
@@ -117,7 +117,7 @@
 | A local 3PL (a warehouse in that country that packs and ships for you) | Once demand is proven. Delivery is faster and returns are easier. |
 | Shipping direct from the factory | Can be cheaper for some products. Check delivery times and quality. |
 
-## Lesson 15.6: One store or an expansion store?
+## Lesson 25.6: One store or an expansion store?
 <!-- stage:grow -->
 
 **Why this matters:** One store with multi-market settings is simpler and is where to start. A separate store only makes sense when products, prices, content or apps need to be very different.
@@ -130,7 +130,7 @@
 
 **Expected result:** You run one store unless there is a clear reason not to.
 
-## Lesson 15.7: Reporting and campaigns
+## Lesson 25.7: Reporting and campaigns
 <!-- stage:grow -->
 
 **Why this matters:** Each country needs its own report and, once spend allows, its own campaign. Otherwise one strong country hides a weak one.

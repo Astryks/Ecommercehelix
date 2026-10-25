@@ -32,7 +32,7 @@ Only grade an ad once it has spent at least the good CPP threshold.
 
 - Good CPP = AOV x target MER x layer multiplier (Cold 2.0, Mixed 1.25, Warm 1.0, Hot 0.75).
 - Bad CPP = 2 x good CPP.
-- CPP and frequency window: last 7 days (what Helix reads from Meta). Before scaling, also check MER for the last 3 days and the month so far (Lesson 6.12). (For long consideration products, widen the windows.)
+- CPP and frequency window: last 7 days (what Helix reads from Meta). Before scaling, also check MER for the last 3 days and the month so far (Lesson 7.12). (For long consideration products, widen the windows.)
 - Frequency lines per ad (fine / high): Cold 1.4 / 1.8, Mixed 1.8 / 2.0, Warm 2.0 / 2.4, Hot 2.4 / 3.0.
 
 | Grade | Rule | Action today |

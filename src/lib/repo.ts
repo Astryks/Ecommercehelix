@@ -1,5 +1,5 @@
 import "server-only";
-import { canonicalStepKeys } from "./lesson-alias";
+import { storedStepKeysFor, toCurrentStepKey, toCurrentStepKeys, toStoredStepKey, toCurrentRef, toStoredRef } from "./lesson-alias";
 import { toCourseTrack, type CourseState } from "./course-plan";
 import type { ProfitInputs } from "./profit-setup";
 import { hasDb, prisma } from "./db";
@@ -185,22 +185,27 @@ export function streakFrom(completions: Completion[], today = isoDay()): number 
 }
 
 // ---------- lesson step progress ----------
+// Saved under permanent lesson ids (see lesson-alias.ts); callers use current refs.
+/** Ticked steps as current keys ("8.1#3"), whatever id they were saved under. */
 export async function getLessonSteps(userId: string): Promise<string[]> {
-  if (!hasDb) return canonicalStepKeys([...(mem.lessonSteps.get(userId) ?? [])]);
+  if (!hasDb) return toCurrentStepKeys([...(mem.lessonSteps.get(userId) ?? [])]);
   const rows = await prisma.lessonProgress.findMany({ where: { userId }, select: { stepKey: true } });
-  return canonicalStepKeys(rows.map((r) => r.stepKey));
+  return toCurrentStepKeys(rows.map((r) => r.stepKey));
 }
 
-export async function setLessonStep(userId: string, stepKey: string, done: boolean) {
+/** Tick or untick a step. `stepKey` is a current key, or a saved (permanent) one when `stored` is true. */
+export async function setLessonStep(userId: string, stepKey: string, done: boolean, stored = false) {
+  const key = stored ? stepKey : toStoredStepKey(stepKey);
+  // Unticking clears every saved key that reads as this step (for example a merged lesson's old step).
+  const all = done ? [key] : [...new Set([key, ...storedStepKeysFor(stored ? toCurrentStepKeys([stepKey])[0] : stepKey)])];
   if (!hasDb) {
     const set = mem.lessonSteps.get(userId) ?? new Set<string>();
-    if (done) set.add(stepKey);
-    else set.delete(stepKey);
+    for (const k of all) { if (done) set.add(k); else set.delete(k); }
     mem.lessonSteps.set(userId, set);
     return;
   }
-  if (done) await prisma.lessonProgress.upsert({ where: { userId_stepKey: { userId, stepKey } }, create: { userId, stepKey }, update: {} });
-  else await prisma.lessonProgress.deleteMany({ where: { userId, stepKey } });
+  if (done) await prisma.lessonProgress.upsert({ where: { userId_stepKey: { userId, stepKey: key } }, create: { userId, stepKey: key }, update: {} });
+  else await prisma.lessonProgress.deleteMany({ where: { userId, stepKey: { in: all } } });
 }
 
 // ---------- approvals ----------
@@ -544,7 +549,7 @@ export async function getHistory(userId: string, since: string | null) {
   if (!hasDb) {
     const ev = (mem.events.get(userId) ?? []).filter((e) => !since || e.at >= since);
     const comps = (mem.completions.get(userId) ?? []).filter((c) => !since || c.completedOn >= since);
-    const steps = [...(mem.lessonSteps.get(userId) ?? [])].map((k) => ({ stepKey: k, at: new Date().toISOString() }));
+    const steps = [...(mem.lessonSteps.get(userId) ?? [])].map((k) => ({ stepKey: toCurrentStepKey(k), at: new Date().toISOString() }));
     return { joined: null as string | null, events: ev, completions: comps, steps };
   }
   const [u, ev, comps, steps] = await Promise.all([
@@ -557,7 +562,7 @@ export async function getHistory(userId: string, since: string | null) {
     joined: u?.createdAt.toISOString() ?? null,
     events: ev.map((e) => ({ kind: e.kind, ref: e.ref, at: e.at.toISOString() })),
     completions: comps,
-    steps: steps.map((s) => ({ stepKey: s.stepKey, at: s.doneAt.toISOString() })),
+    steps: steps.map((s) => ({ stepKey: toCurrentStepKey(s.stepKey), at: s.doneAt.toISOString() })),
   };
 }
 
@@ -622,14 +627,15 @@ const memCards = new Map<string, CardState>();
 const memNames = new Map<string, string>();
 
 export async function getCardState(userId: string): Promise<CardState> {
-  if (!hasDb) return memCards.get(userId) ?? { deck: "", index: 0, day: "", today: 0 };
+  // The deck is saved under the lesson's permanent id; "setup" and "" pass through.
+  if (!hasDb) { const m = memCards.get(userId); return m ? { ...m, deck: toCurrentRef(m.deck) } : { deck: "", index: 0, day: "", today: 0 }; }
   const r = await prisma.courseState.findUnique({ where: { userId }, select: { cardDeck: true, cardIndex: true, cardDay: true, cardsToday: true } });
-  return { deck: r?.cardDeck ?? "", index: r?.cardIndex ?? 0, day: r?.cardDay ?? "", today: r?.cardsToday ?? 0 };
+  return { deck: toCurrentRef(r?.cardDeck ?? ""), index: r?.cardIndex ?? 0, day: r?.cardDay ?? "", today: r?.cardsToday ?? 0 };
 }
 
 export async function saveCardState(userId: string, s: CardState) {
-  if (!hasDb) return void memCards.set(userId, { ...s });
-  const data = { cardDeck: s.deck, cardIndex: s.index, cardDay: s.day, cardsToday: s.today };
+  if (!hasDb) return void memCards.set(userId, { ...s, deck: toStoredRef(s.deck) });
+  const data = { cardDeck: toStoredRef(s.deck), cardIndex: s.index, cardDay: s.day, cardsToday: s.today };
   await prisma.courseState.upsert({ where: { userId }, create: { userId, ...data }, update: data });
 }
 

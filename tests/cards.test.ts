@@ -17,15 +17,15 @@ describe("card decks", () => {
     }
   });
   it("goal lessons come straight after setup", () => {
-    const o = deckOrder(["7.1"]);
-    if (getDeck("7.1")) expect(o[1]).toBe("7.1");
+    const o = deckOrder(["8.2"]);
+    if (getDeck("8.2")) expect(o[1]).toBe("8.2");
   });
   it("setup deck asks what you sell, then price", () => {
     expect(SETUP_DECK.cards[1].field).toBe("productName");
     expect(SETUP_DECK.cards[2].field).toBe("price");
   });
   it("splits a lesson into one card per step", () => {
-    const l = parseLesson("Lesson 9.9: Test", "**Why this matters:** It helps. More.\n\n**Step 1.** Do A.\n\n**Expected result:** A done.\n\n**Step 2.** Do B.\n\n**Expected result:** B done.")!;
+    const l = parseLesson("Lesson 14.8: Test", "**Why this matters:** It helps. More.\n\n**Step 1.** Do A.\n\n**Expected result:** A done.\n\n**Step 2.** Do B.\n\n**Expected result:** B done.")!;
     const d = lessonDeck(l, "09-x");
     expect(d.cards.map((c) => c.kind)).toEqual(["talk", "step", "step", "done"]);
     expect(d.cards[0].html).toContain("It helps.");

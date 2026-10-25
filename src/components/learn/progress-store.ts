@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { toCurrentStepKey } from "@/lib/lesson-alias";
 
 /**
  * Ticked lesson steps. Kept in localStorage and synced to the server for
@@ -8,8 +9,12 @@ import { useSyncExternalStore } from "react";
  * devices. Guest ticks are merged into the account once, then cleared, so the
  * next person who signs in on this browser does not get them. Each signed-in
  * user has their own local copy.
+ *
+ * Keys use current lesson numbers ("8.2#3"). Copies saved before the 26 Oct 2026 reorder
+ * ("helix-lesson-steps", old numbers) are moved over once and then removed.
  */
-const GUEST = "helix-lesson-steps";
+const GUEST = "helix-lesson-steps-v2";
+const OLD = "helix-lesson-steps";
 let key = GUEST;
 let done = new Set<string>();
 let signedIn = false;
@@ -28,6 +33,11 @@ function emit() {
 }
 
 const read = (k: string): string[] => { try { return JSON.parse(localStorage.getItem(k) ?? "[]") as string[]; } catch { return []; } };
+/** A local copy plus its pre-reorder copy (old numbers, converted). */
+const readWithOld = (k: string, old: string): string[] => [...read(k), ...migrateOld(read(old))];
+const drop = (k: string) => { try { localStorage.removeItem(k); } catch { /* ignore */ } };
+/** Pre-reorder keys (old lesson numbers) to current keys. Exported for tests. */
+export const migrateOld = (keys: string[]) => keys.filter((k) => typeof k === "string").map(toCurrentStepKey);
 function save() {
   try { localStorage.setItem(key, JSON.stringify([...done])); } catch { /* private mode */ }
 }
@@ -35,7 +45,7 @@ function save() {
 async function send(keys: string[], value: boolean): Promise<boolean> {
   let ok = true;
   for (let i = 0; i < keys.length; i += 50) {
-    const r = await fetch("/api/lesson-progress", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ keys: keys.slice(i, i + 50), done: value }) }).catch(() => null);
+    const r = await fetch("/api/lesson-progress", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ keys: keys.slice(i, i + 50), done: value, v: 2 }) }).catch(() => null);
     if (!r?.ok) ok = false;
   }
   return ok;
@@ -66,7 +76,8 @@ let started = false;
 function start() {
   if (started || typeof window === "undefined") return;
   started = true;
-  done = new Set(read(GUEST));
+  done = new Set(readWithOld(GUEST, OLD));
+  if (read(OLD).length) { save(); drop(OLD); }
   loaded = true;
   emit();
   fetch("/api/lesson-progress", { cache: "no-store" })
@@ -75,11 +86,14 @@ function start() {
       signedIn = r.signedIn;
       if (!r.signedIn) { early = new Map(); return emit(); }
       key = r.user ? `${GUEST}:${r.user}` : GUEST;
-      const m = mergeProgress(r.done, [...read(GUEST), ...(key === GUEST ? [] : read(key))], early);
+      const oldKey = r.user ? `${OLD}:${r.user}` : OLD;
+      const m = mergeProgress(r.done, [...readWithOld(GUEST, OLD), ...(key === GUEST ? [] : readWithOld(key, oldKey))], early);
       early = new Map();
       done = m.done;
-      if (key !== GUEST) { try { localStorage.removeItem(GUEST); } catch { /* ignore */ } }
+      if (key !== GUEST) drop(GUEST);
+      drop(OLD);
       save();
+      drop(oldKey);
       emit();
       for (const k of m.toAdd) unsent.set(k, true);
       for (const k of m.toRemove) unsent.set(k, false);
