@@ -31,8 +31,10 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Chargeback** (chargebacks, dispute): When a customer asks their bank to reverse a card payment. The money is taken back, and you can send evidence to dispute it.
 - **Clearing account** (clearing accounts): A holding account in your books where a payment provider's sales and fees sit until the payout lands in the bank.
 - **Cold audience** (cold, prospecting): People who have never heard of you.
+- **Consent mode**: Google's way of passing a visitor's cookie choice from your banner to Google tags, so they only use ad cookies after a yes.
 - **Contractor** (contractors): Someone who runs their own business and does work for you, rather than being your employee.
 - **Conversion rate** (CR): Out of every 100 visits, how many end in an order. 2% means 2 orders per 100 visits.
+- **Cookie banner** (cookie consent banner): A notice on your site that asks visitors to accept or refuse non-essential cookies, like those used for ads and tracking.
 - **CPA** (cost per acquisition, cost per sale, cost per purchase): Cost per acquisition: how much ad money it took to get one sale.
 - **CPM**: Cost to show your ad 1,000 times.
 - **Creative** (creatives): The ad itself: the picture or video plus the words.
@@ -44,6 +46,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **De minimis**: A value below which imported parcels skip duty or tax. The US suspended its $800 de minimis for all countries in August 2025.
 - **Domain** (domain name): Your store's web address, like yourbrand.com.
 - **Duties** (import duty, customs duty): Taxes charged by a country on goods coming in from overseas.
+- **EU responsible person**: A business based in the EU that is responsible for a product's safety when the maker is outside the EU. Its name and contact details go in the listing.
 - **Express wallets**: One-tap payment options, like Shop Pay or the wallet on a shopper's phone.
 - **Fixed costs**: Bills that stay the same each month, like rent, software, staff and your own wage.
 - **Flow** (flows, automation): An email or text series that sends by itself when something happens, like a new sign-up.
@@ -64,6 +67,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Learning phase** (learning): The days after you start or make a big change to an ad set. Meta is still working out who to show it to. It usually ends after about 50 results in the week after that change.
 - **Lookalike** (lookalike audience): People Meta thinks are similar to a list you give it, like your best customers.
 - **LTV** (lifetime value): How much a customer spends with you over time, not just on the first order.
+- **Mandatory standard** (mandatory standards): A safety rule a product must meet by law before it can be sold, such as the Australian rules for products with button batteries.
 - **Margin** (gross margin): The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin.
 - **MER** (marketing efficiency ratio): Helix shows it as all ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales. Many tools flip it to sales divided by ad spend, so 25% shows as 4x.
 - **Meta description** (meta descriptions): The short summary under your page title in Google results.
@@ -81,6 +85,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Post-purchase offer** (upsell): A one-click extra offer shown right after someone buys.
 - **Product cost** (COGS, cost of goods): What one item costs you to make or buy, including freight to your warehouse.
 - **Product feed** (feed): The list of your products, prices and photos that Google and Meta read to make shopping ads.
+- **Product recall**: Taking an unsafe product off sale and asking buyers to return it or stop using it, for a refund, repair or replacement.
 - **Profit** (contribution profit, contribution): Usually means contribution profit: what is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. Net profit also takes off fixed costs.
 - **Reconciliation** (reconcile): Matching the money in your bank with the sales, fees and refunds in your books.
 - **Reorder point**: The stock level at which you should order more so you do not run out.

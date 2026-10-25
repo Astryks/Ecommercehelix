@@ -261,3 +261,69 @@
 **Expected result:** You know your reply time and which questions still take the longest.
 
 **Watch out:** Never argue in public replies. Move complaints to private messages quickly, fix the problem, then thank the customer publicly.
+
+## Lesson 21.8: Product safety, labelling and recalls
+<!-- stage:grow -->
+
+**Why this matters:** Some products must meet safety rules before you can sell them, and a few are banned outright. If a product hurts someone, you have days, not weeks, to tell the regulator. Fines for unsafe or unlabelled products can be far bigger than the profit on them. A one-hour check per product, and a plan written before anything goes wrong, keeps you safe.
+
+**Step 1.** List every product and the countries you sell it in. For Australia, search the mandatory standards and bans on [ACCC Product Safety](https://www.productsafety.gov.au/business/search-mandatory-standards) for each product type.
+
+**Expected result:** Each product is marked "standard applies", "banned" or "nothing found", with the date you checked.
+
+**Watch out:** Take extra care with products that contain button or coin batteries, toys for young children, infant sleep products and furniture that can tip over. Sellers must meet mandatory standards and must not sell banned products, even if a supplier made them (see [ACCC: product safety responsibilities](https://www.accc.gov.au/business/selling-products-and-services/product-safety-responsibilities)). Products with button or coin batteries need warnings on the packaging and in the instructions (or a swing tag if unpackaged), and the ACCC recommends the same warning in your product listing (see [ACCC Product Safety: button and coin battery information standard](https://www.productsafety.gov.au/business/search-mandatory-standards/button-and-coin-batteries-mandatory-standards/products-containing-button-and-coin-batteries-mandatory-information-standard)). Not sure which standard applies? The ACCC suggests getting legal advice.
+
+**Step 2.** Ask your supplier for proof for every product that a standard covers: test reports against that standard, the labels and the instructions. Save them in one folder per product.
+
+**Expected result:** Each covered product has a test report, label and instructions on file before you sell it.
+
+**Step 3.** Check every label and listing. Warnings, age grading and instructions must match the product and be easy to read. Put the same safety warnings in the product description.
+
+**Expected result:** What the customer reads online matches what arrives in the box.
+
+**Step 4.** Selling to the EU? Add the details the General Product Safety Regulation (GPSR) asks for to every listing. It has applied since 13 December 2024.
+
+**Expected result:** Every EU listing clearly shows four things: the manufacturer's name, postal address and email address; if the manufacturer is outside the EU, the same details for the **EU responsible person**; a picture of the product, its type and any other identifier (such as a model or batch number); and any warnings or safety information, in a language the customer understands. If you cannot name an EU responsible person, pause EU sales of that product.
+
+**Watch out:** The GPSR says a product cannot be placed on the EU market unless an economic operator based in the EU is responsible for it. The product itself must also carry a type, batch or serial number and the manufacturer's contact details (see [EUR-Lex: Regulation (EU) 2023/988](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0988), Articles 9, 16 and 19).
+
+**Step 5.** Selling to the US? Check whether a Consumer Product Safety Commission (CPSC) rule covers your product. Children's products (made mainly for children 12 or under) covered by a children's product safety rule need testing by a CPSC-accepted lab and a written **Children's Product Certificate**. Other covered products use a General Certificate of Conformity.
+
+**Expected result:** Each covered product has its certificate and test reports on file, in English.
+
+**Watch out:** Since 8 July 2026, importers of most regulated consumer products must file certificate data electronically with US Customs (see [CPSC: Children's Product Certificate](https://www.cpsc.gov/Business--Manufacturing/Testing-Certification/Childrens-Product-Certificate)). If your supplier or freight forwarder is the importer, ask who files it.
+
+**Step 6.** Write a one-page incident plan. Any message that mentions an injury, burn, choking, rash or illness goes to one person the same day. That person checks the reporting deadlines in the table below and reports if needed.
+
+**Expected result:** A short plan with one owner, the deadlines and the report links.
+
+**Watch out:** In Australia, you must report to the ACCC within 2 days of becoming aware that a product you supplied caused, or may have caused, a death, serious injury or serious illness. This applies even if the product was misused in a way you could foresee, and it covers retailers, not just makers. If in doubt, report: a mandatory report is confidential and not an admission of liability (see [ACCC Product Safety: when you must report](https://www.productsafety.gov.au/business/make-a-mandatory-report/when-you-must-report-an-incident)).
+
+**Step 7.** If a product is unsafe, act straight away. Stop selling it (unpublish it or set stock to zero), tell the regulator, contact every buyer using your order emails, and offer a refund, repair or replacement. Keep a record of every step.
+
+**Expected result:** Nobody else can buy the product, buyers know what to do, and the regulator has been told on time.
+
+**Watch out:** In Australia, if you recall a product for safety reasons, tell the ACCC within 2 days of taking recall action (see [ACCC Product Safety: tell the ACCC of the recall](https://www.productsafety.gov.au/business/recall-an-unsafe-product/tell-the-accc-of-the-recall)). Sellers must give a refund or replacement for unsafe products and must not send the customer to the manufacturer.
+
+### Good to know
+
+| Where | Report what | Deadline | Where to report |
+| --- | --- | --- | --- |
+| Australia | A death, serious injury or serious illness a product caused or may have caused | Within 2 days of becoming aware | [ACCC Product Safety](https://www.productsafety.gov.au/business/make-a-mandatory-report/when-you-must-report-an-incident) |
+| Australia | A safety recall you start | Within 2 days of taking recall action | [Recall notification](https://www.productsafety.gov.au/business/recall-an-unsafe-product/tell-the-accc-of-the-recall) |
+| EU | An accident caused by a product (the manufacturer reports) | Without undue delay | Safety Business Gateway (GPSR Article 20) |
+| US | A possible defect or hazard, or a product that breaks a CPSC rule | Within 24 hours of having the information | [CPSC: duty to report](https://www.cpsc.gov/Business--Manufacturing/Recall-Guidance/Duty-to-Report-to-the-CPSC-Your-Rights-and-Responsibilities) |
+
+The CPSC's advice is "when in doubt, report", and a US report does not have to wait for an injury.
+
+> **General information, not legal advice.** Rules change and depend on the product. Check the official pages above, and ask a lawyer or a testing lab when a product is for children, uses batteries, or plugs in.
+
+## Self-check
+
+1. A customer emails on a Friday to say your night light's battery cover came off and their child needed treatment at hospital. You sell in Australia. What must you do, and by when?
+
+<details><summary>Answers</summary>
+
+1. Report it to the ACCC through the mandatory report form by Monday (2 days from becoming aware, moved to the next business day because the deadline falls on a weekend). Stop selling the product while you check it, and keep your notes. If you then recall it, tell the ACCC within 2 days of taking recall action.
+
+</details>

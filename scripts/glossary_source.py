@@ -113,5 +113,10 @@ G = [
  ("Sitemap", ["sitemap.xml"], "A file listing the pages on your site so search engines can find them. Shopify makes one for you."),
  ("Structured data", [], "Hidden code on a page that tells search engines facts like price, stock and rating, so they can show them in results."),
  ("Audience segments", [], "Meta's split of your audience into new people, people who engaged with you, and existing customers, used in reports and settings."),
+ ("Cookie banner", ["cookie consent banner"], "A notice on your site that asks visitors to accept or refuse non-essential cookies, like those used for ads and tracking."),
+ ("Consent mode", [], "Google's way of passing a visitor's cookie choice from your banner to Google tags, so they only use ad cookies after a yes."),
+ ("Mandatory standard", ["mandatory standards"], "A safety rule a product must meet by law before it can be sold, such as the Australian rules for products with button batteries."),
+ ("Product recall", [], "Taking an unsafe product off sale and asking buyers to return it or stop using it, for a refund, repair or replacement."),
+ ("EU responsible person", [], "A business based in the EU that is responsible for a product's safety when the maker is outside the EU. Its name and contact details go in the listing."),
 
 ]

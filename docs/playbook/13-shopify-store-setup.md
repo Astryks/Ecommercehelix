@@ -405,6 +405,8 @@
 
 ### Good to know
 
+Cookie banners, consent and keeping the privacy policy accurate: [Lesson 13.17](13-shopify-store-setup.md#lesson-1317-privacy-and-cookie-consent).
+
 > **General information, not legal advice.**
 
 ## Lesson 13.13: Essential apps (and only those)
@@ -493,6 +495,7 @@
 | Taxes | GST or state settings checked (with your accountant) |
 | Payments | Cards, Shop Pay and express wallets; statement name set |
 | Policies | Return and refund, privacy, terms, shipping and contact linked in footer |
+| Privacy | Cookie banner on for UK and EU visitors; privacy policy lists every app and pixel (Lesson 13.17) |
 | Apps | Only the starter set; speed checked after each |
 | Tracking | Test Purchase seen in Meta and Google |
 | Speed | Main product image shows in about 2.5 seconds on a phone (Lesson 14.4) |
@@ -525,3 +528,69 @@
 
 **Watch out:** Only offer a delivery area you can really reach on time. One late local order hurts more than a slow parcel.
 
+
+## Lesson 13.17: Privacy and cookie consent
+<!-- stage:convert -->
+
+**Why this matters:** Your store collects names, emails and addresses, and your ad pixels and analytics set cookies on every visit. Privacy laws decide what you must tell people and when you need their permission first. Google also needs consent signals for visitors from Europe, or you lose remarketing and some measurement there. [Lesson 13.12](13-shopify-store-setup.md#lesson-1312-policies-and-legal-pages) made your privacy policy page. This lesson makes it true and adds a cookie banner.
+
+**Step 1.** Write a short data list: what you collect (checkout details, email and SMS sign-ups, reviews, analytics), every pixel and app that receives customer data, and why you need each one.
+
+**Expected result:** One list of each kind of data, where it goes and why.
+
+**Step 2.** Check whether the Australian Privacy Act covers you. It covers businesses with an annual turnover of more than $3 million in any financial year since 2002.
+
+**Expected result:** You know whether the Australian Privacy Principles (APPs) apply to you. Not sure? Use the [OAIC privacy checklist for small business](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/organisations/small-business).
+
+**Watch out:** Some smaller businesses are covered whatever their turnover. Examples are a business that trades in personal information (buys or sells customer data), a health service provider, a business related to a covered business, or one that has opted in.
+
+**Step 3.** Update your privacy policy from the data list: what you collect, why, who you share it with (including services overseas), and how people can contact you to see or correct their details.
+
+**Expected result:** The policy matches your data list, with no apps or pixels missing.
+
+**Watch out:** From 10 December 2026, businesses covered by the Privacy Act must say in their privacy policy if a computer program uses personal information to make, or help make, decisions that could significantly affect a person's rights or interests. List the kinds of personal information used and the kinds of decisions. Automatic order cancellations or account blocks based on a fraud score may count (see [OAIC: transparency for automated decisions](https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making)).
+
+**Step 4.** In Shopify, go to **Settings > Customer privacy > Cookie banner**. Leave **Use automated settings** on. Shopify then shows the banner to visitors in the UK and EEA if you have active markets there. Set the colours and position, then preview it.
+
+**Expected result:** The banner shows to UK and EU visitors, and a **Cookie preferences** link lets customers change their choice later.
+
+**Watch out:** You need a published privacy policy before the banner works. Shopify's banner controls Shopify's own tools and Shopify Pixels. Pixels you added by hand or through apps may need a cookie banner app or custom code that honours the customer's choice (see [Shopify Help: customer privacy settings](https://help.shopify.com/en/manual/privacy-and-security/privacy/customer-privacy-settings/privacy-settings)).
+
+**Step 5.** Open your store in a private browser window and test the banner. Decline, then change your mind using the cookie preferences link.
+
+**Expected result:** Declining is as easy as accepting. Cookies for ads, tracking and (in the EU) analytics load only after a yes. Cookies the store needs to work, like the cart, login and security, do not need consent.
+
+**Watch out:** The UK now has a narrow "statistical purposes" exception: analytics used only to count visits and improve your own site can run without consent if you explain it clearly and give a simple, free way to object. It never covers ads or tracking people (see [ICO: what are the exceptions?](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-exceptions/)). The EU has no such exception, so EU analytics cookies still need consent (see [Your Europe: cookies on your website](https://europa.eu/youreurope/business/growing/digitalising/online-privacy/index_en.htm)).
+
+**Step 6.** If you run Google ads and get visitors from the EEA, make sure consent reaches Google. Google's EU user consent policy asks you to collect consent and pass it on through **consent mode**, including the `ad_user_data` and `ad_personalization` signals.
+
+**Expected result:** Your banner sends consent signals to Google, and remarketing and measurement keep working for EEA visitors who say yes.
+
+**Watch out:** Consent mode does not show a banner. It only passes on the choice your banner collects (see [Google Ads Help: about consent mode](https://support.google.com/google-ads/answer/10000067?hl=en) and [updates to consent mode for EEA traffic](https://support.google.com/google-ads/answer/13695607?hl=en)).
+
+**Step 7.** Every time you add an app or pixel, and once a year, update the data list, the privacy policy and the banner settings.
+
+**Expected result:** A yearly reminder is set, and the policy never falls behind your apps.
+
+### Good to know
+
+| Where | Main rule | What to do |
+| --- | --- | --- |
+| Australia | Privacy Act and APPs for covered businesses; automated-decision wording in privacy policies from 10 Dec 2026 | Steps 2 and 3 |
+| EU | Consent before non-essential cookies (ads, tracking, analytics) | Cookie banner (Steps 4 and 5) |
+| UK | Consent before non-essential cookies; narrow exception for site analytics with a way to object | Cookie banner (Steps 4 and 5) |
+| Google ads with EEA visitors | EU user consent policy and consent mode signals | Step 6 |
+
+Email consent and unsubscribe links are in [Lesson 13.12](13-shopify-store-setup.md#lesson-1312-policies-and-legal-pages), Step 4.
+
+> **General information, not legal advice.** Privacy rules depend on where you and your customers are. Check the official pages above, and ask a lawyer if you handle health information or sell customer data.
+
+## Self-check
+
+1. Your store is in Australia with $600,000 a year in sales, and you have just opened an EU market and run Google ads there. Which parts of this lesson apply?
+
+<details><summary>Answers</summary>
+
+1. You are probably not covered by the Privacy Act (turnover under $3 million), unless you trade in personal information or fit another exception, but you still need an accurate privacy policy because Shopify's cookie banner needs one. For EU visitors you need consent before ads, tracking and analytics cookies (Shopify's cookie banner), and Google needs consent mode signals for EEA traffic.
+
+</details>

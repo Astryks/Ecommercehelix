@@ -38,6 +38,11 @@ describe("26 Oct 2026 reorder: old lesson numbers still work", () => {
     expect(toCurrentRef("1.1")).toBe("1.1");
     expect(toCurrentRef("setup")).toBe("setup");
     expect(toStoredRef("8.1")).toBe("7.14");
+    // Lessons added after the reorder get new permanent ids, so old saved "21.8" (now 4.6) is untouched.
+    expect(toCurrentRef("22.19")).toBe("13.17"); // Privacy and cookie consent
+    expect(toCurrentRef("23.8")).toBe("21.8"); // Product safety, labelling and recalls
+    expect(toStoredRef("21.8")).toBe("23.8");
+    expect(toCurrentRef("21.8")).toBe("4.6");
   });
 
   it("keeps lessons merged before the reorder pointing at the right lesson and step", () => {
