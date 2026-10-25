@@ -119,5 +119,15 @@
   {"say": "Add a line to your promo bar or home page, like \"Free pickup in [your suburb]\".", "check": "Local shoppers learn about it before checkout.", "lost": "Add one promo bar line."},
   {"say": "If you have a shop front, claim your free Google Business Profile. Add opening hours, photos and a link to your store.", "check": "You show up on Google Maps for people searching near you.", "lost": "Claim your Google Business Profile."},
   {"say": "Try a small local ad with a tight area around you, about $10 a day for 2 weeks. Use a Meta ad with a location set, or a Google campaign aimed at your area.", "check": "You know if local ads bring orders or visits at a cost you can afford.", "careful": "Only offer a delivery area you can really reach on time. One late local order hurts more than a slow parcel.", "lost": "Set a $10 a day local test."}
+ ]},
+"13.17": {"intro": "Your store collects names, emails and addresses, and your pixels set cookies. Privacy laws say what to tell people and when to ask first. Let's make your privacy policy true and add a cookie banner.",
+ "steps": [
+  {"say": "Write a short data list: what you collect, every pixel and app that gets customer data, and why.", "check": "One list of each kind of data, where it goes and why.", "lost": "List your pixels first."},
+  {"say": "Check if the Australian Privacy Act covers you: over $3 million turnover, or some smaller businesses like those that buy or sell customer data.", "check": "You know if the privacy principles apply to you.", "lost": "Use the OAIC small business checklist."},
+  {"say": "Update your privacy policy from the data list (Lesson 13.12 made the page).", "check": "The policy matches your list, with no apps or pixels missing.", "careful": "From 10 Dec 2026: say if a computer program uses personal details to make big decisions about people, like auto-blocking accounts.", "lost": "Add any missing pixels to the policy."},
+  {"say": "In Shopify, go to **Settings > Customer privacy > Cookie banner**. Keep automated settings on, set colours and preview.", "check": "UK and EU visitors see the banner, and a Cookie preferences link works.", "careful": "Pixels added by hand or by apps may need a banner app that honours the choice.", "lost": "Turn on the cookie banner."},
+  {"say": "Check the banner: ad, tracking and EU analytics cookies load only after a yes. Saying no is as easy as yes.", "check": "In a private window you can decline easily, and preferences can be changed.", "careful": "UK only: simple site analytics can run without consent if you explain it and let people object.", "lost": "Test Decline in a private window."},
+  {"say": "Run Google ads with EEA visitors? Make sure your banner sends consent mode signals to Google.", "check": "Remarketing and measurement keep working for visitors who say yes.", "lost": "Check consent signals in Google Ads."},
+  {"say": "Each time you add an app or pixel, and once a year, update the list, the policy and the banner.", "check": "A yearly reminder is set.", "lost": "Set a yearly reminder."}
  ]}
 }

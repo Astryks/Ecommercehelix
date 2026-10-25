@@ -742,5 +742,34 @@
   "term": "Audience segments",
   "aka": [],
   "means": "Meta's split of your audience into new people, people who engaged with you, and existing customers, used in reports and settings."
+ },
+ {
+  "term": "Cookie banner",
+  "aka": [
+   "cookie consent banner"
+  ],
+  "means": "A notice on your site that asks visitors to accept or refuse non-essential cookies, like those used for ads and tracking."
+ },
+ {
+  "term": "Consent mode",
+  "aka": [],
+  "means": "Google's way of passing a visitor's cookie choice from your banner to Google tags, so they only use ad cookies after a yes."
+ },
+ {
+  "term": "Mandatory standard",
+  "aka": [
+   "mandatory standards"
+  ],
+  "means": "A safety rule a product must meet by law before it can be sold, such as the Australian rules for products with button batteries."
+ },
+ {
+  "term": "Product recall",
+  "aka": [],
+  "means": "Taking an unsafe product off sale and asking buyers to return it or stop using it, for a refund, repair or replacement."
+ },
+ {
+  "term": "EU responsible person",
+  "aka": [],
+  "means": "A business based in the EU that is responsible for a product's safety when the maker is outside the EU. Its name and contact details go in the listing."
  }
 ]

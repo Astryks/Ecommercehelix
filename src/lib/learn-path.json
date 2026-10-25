@@ -1,5 +1,5 @@
 {
- "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos verified via YouTube oEmbed on 15 Oct 2026 (re-checked 16 Oct 2026: all live, titles and channels match).",
+ "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos come from official platform channels only (Learn With Shopify, Meta for Business, Google Ads); each checked via YouTube oEmbed (title and channel) and embeddable on 26 Oct 2026.",
  "steps": [
   {
    "n": 1,
@@ -23,9 +23,9 @@
    ],
    "videos": [
     {
-     "title": "How to Build a Map to Profitable Growth",
-     "channel": "Common Thread Collective",
-     "url": "https://www.youtube.com/watch?v=vBSFVM6rg60"
+     "title": "PRICING STRATEGY: How To Find The Ideal Price For A Product",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=xQWUm_eHjGk"
     },
     {
      "title": "The OFFICIAL Shopify Tutorial For Beginners (Part 1)",
@@ -84,6 +84,7 @@
     "13.10",
     "13.11",
     "13.12",
+    "13.17",
     "13.13",
     "13.14",
     "13.15",
@@ -117,13 +118,14 @@
     "21.4",
     "21.5",
     "21.6",
-    "21.7"
+    "21.7",
+    "21.8"
    ],
    "videos": [
     {
-     "title": "The BEST Conversion Rate Optimization Tutorial for Ecommerce in 2025",
-     "channel": "Arsh Sanwarwala | ThrillX",
-     "url": "https://www.youtube.com/watch?v=eWWOJL1y8Qw"
+     "title": "How to Optimize Your Shopify Store for Higher Conversions",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=kFWPkoOx_ao"
     },
     {
      "title": "8 Ways to Increase Your Shopify Conversion Rates Today",
@@ -203,14 +205,14 @@
    ],
    "videos": [
     {
-     "title": "How to Make Meta Ads Creative (even if you are wildly unqualified)",
-     "channel": "Dara Denney",
-     "url": "https://www.youtube.com/watch?v=NsHk8o3jVvM"
+     "title": "Unlock better performance by diversifying your ad creative",
+     "channel": "Meta for Business",
+     "url": "https://www.youtube.com/watch?v=NGIKjtQTcLM"
     },
     {
-     "title": "The UGC Ad Formula That Converts in 2026",
-     "channel": "Dara Denney",
-     "url": "https://www.youtube.com/watch?v=yNTlVKvuX0o"
+     "title": "Hook hacking: How to grab attention in the first three seconds",
+     "channel": "Meta for Business",
+     "url": "https://www.youtube.com/watch?v=OHX1ctQn6NY"
     }
    ]
   },
@@ -247,14 +249,14 @@
    ],
    "videos": [
     {
-     "title": "The BEST Facebook Ads Tutorial for Beginners (Full Guide)",
-     "channel": "Ben Heath",
-     "url": "https://www.youtube.com/watch?v=BZrio_G_1Cs"
+     "title": "The COMPLETE Meta Tutorial (Meta Ads, Meta Business Suite, Meta AI, Facebook Ads & More!)",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=OE4WimLYVGE"
     },
     {
-     "title": "Google Ads Tutorial for Beginners [Updated for 2025]",
-     "channel": "Aaron Young | Google Ads | Define Digital Academy",
-     "url": "https://www.youtube.com/watch?v=16-dF2p0kKo"
+     "title": "Google Ads: How to use Shopping ads to reach more customers",
+     "channel": "Google Ads",
+     "url": "https://www.youtube.com/watch?v=mCj40f2QmHI"
     }
    ]
   },
@@ -295,14 +297,14 @@
    ],
    "videos": [
     {
-     "title": "How To Analyse Facebook Ads The RIGHT Way",
-     "channel": "Ben Heath",
-     "url": "https://www.youtube.com/watch?v=mycqb92wJqk"
+     "title": "Ecommerce Marketing Analytics: A Beginner's Guide to Data-Driven Success",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=hXHym9wDnNo"
     },
     {
-     "title": "The New Type of Brand Financial Literacy",
-     "channel": "Commerce Roundtable",
-     "url": "https://www.youtube.com/watch?v=8ZCJwh6kSvs"
+     "title": "Solving creative fatigue with strategies to refresh your ads",
+     "channel": "Meta for Business",
+     "url": "https://www.youtube.com/watch?v=-vZEjTgEX-0"
     }
    ]
   },
@@ -436,9 +438,9 @@
    ],
    "videos": [
     {
-     "title": "Black Friday Starts Early: The 3-Week Email Strategy",
-     "channel": "ethercycle",
-     "url": "https://www.youtube.com/watch?v=TiWvFACTiCc"
+     "title": "How to prepare your Google Ads retail campaigns for holiday shopping",
+     "channel": "Google Ads",
+     "url": "https://www.youtube.com/watch?v=K-hcfC7rrVo"
     }
    ]
   }
