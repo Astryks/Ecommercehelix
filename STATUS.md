@@ -21,6 +21,15 @@
 - Re-rendered social images: swap v2 #47 and v3 25, 29, 33, 48, 49 if already booked.
 - Done 26 Oct: stale branch `site-brands` deleted.
 
+## Daily emails: different every day (26 Oct 2026)
+
+Sid: "the daily emails are the same". The daily email is now built fresh per user and date (`src/lib/email/daily-mix.ts`, seeded hash, so the same user and day always match and nobody sees a repeat subject, opener or idea within 30 days):
+- **Subject and opener** from pools of 36 and 34, filled with the weekday, date, focus, step count and minutes (e.g. "Tuesday: your ads + 1 lesson step").
+- **Weekday themes** for the middle task: Monday plan, Tuesday ads (free-traffic tasks if the store has no ad spend), Wednesday store pages, Thursday customers, Friday stock and cash, weekend light. Each has 5-8 tasks that rotate week to week; sale-prep tasks (season tasks) take that slot every other day when due.
+- **Personal:** next lesson step by title with a button to it, current goal (day x of y) from `getCourse`, and yesterday's sales, orders, ad spend and MER against the 7 days before from real scorecard days (`daily-facts.ts`). Missing data is skipped, never guessed.
+- **Today's idea** rotates a story or lesson idea (the 30 sequence emails), a site tip and a glossary word. Win prompt and numbers-check wording rotate too.
+- Same window (6-9 AM local), keys, demo exclusion, unsubscribe headers and footer, Resend path and volume. `notify` now claims the send before building, so data loads once per user per day. Tests: `tests/email-daily-mix.test.ts` (`PREVIEW=1 npx vitest run tests/email-daily-mix.test.ts` prints 7 sample days). The old `dailyTasksEmail` stays for its tests but the cron no longer uses it.
+
 # STATUS
 
 _Last updated: 26 Oct 2026 (Sydney)._

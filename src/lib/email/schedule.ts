@@ -11,7 +11,7 @@ export const WINBACK_DAYS = 14;
 
 export type Due =
   | { kind: "welcome"; key: string }
-  | { kind: "daily"; key: string; date: string; tasks: { title: string; minutes: number }[]; step: number }
+  | { kind: "daily"; key: string; date: string; tasks: { title: string; minutes: number }[]; step: number; season: string | null }
   | { kind: "event"; key: string; name: string; daysTo: number; line: string; lesson: { label: string; href: string } }
   | { kind: "winback"; key: string };
 
@@ -32,7 +32,7 @@ export function dueEmails(p: Person, now: Date): Due[] {
       ...(season ? [{ title: season.title, minutes: 15 }] : [{ title: c.tip.text, minutes: 10 }]),
       { title: "Do your next lesson step", minutes: 10 },
       { title: "Write down one win", minutes: 2 },
-    ], step: sequenceIndex(isoDay(p.createdAt, p.timezone), date) });
+    ], step: sequenceIndex(isoDay(p.createdAt, p.timezone), date), season: season?.title ?? null });
     const hit = featuredEvent(date, p.country);
     if (hit && c.mode === "event" && EVENT_LEADS.includes(hit.daysTo))
       out.push({ kind: "event", key: `${hit.event.key}-${hit.year}-${hit.daysTo}`, name: hit.event.name, daysTo: hit.daysTo, line: c.heroExtra ?? c.banner.text, lesson: c.featuredLesson });
