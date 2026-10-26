@@ -92,8 +92,10 @@ async function llmCall(userId: string, { model, system, prompt, maxOutputTokens 
         maxOutputTokens,
         temperature: 0.3,
         abortSignal: AbortSignal.timeout(45_000),
-        providerOptions: { gateway: { user: userId, tags: ["feature:coach"], disallowPromptTraining: true } },
+        providerOptions: { anthropic: { thinking: { type: "disabled" } }, gateway: { user: userId, tags: ["feature:coach"], disallowPromptTraining: true } },
       });
+  // Empty text (e.g. output budget spent elsewhere) counts as a failure so the fallback model answers.
+  if (!r.text.trim()) throw new Error(`empty answer from ${model} (${r.finishReason})`);
   return { text: r.text, inputTokens: r.usage.inputTokens ?? 0, outputTokens: r.usage.outputTokens ?? 0, cachedTokens: r.usage.inputTokenDetails?.cacheReadTokens ?? 0 };
 }
 
