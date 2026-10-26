@@ -88,11 +88,11 @@
 ## Lesson 28.4: Safety rules
 <!-- stage:grow -->
 
-**Why this matters:** AI is powerful and fallible. Three rules keep you safe.
+**Why this matters:** AI is powerful and makes mistakes. A few rules keep you, your customers and your brand safe.
 
-**Step 1.** Never paste passwords or access tokens into an AI chat.
+**Step 1.** Never paste passwords, access tokens or card details into an AI chat. Do not paste customers' names, emails or addresses into a tool unless your plan with that tool says it keeps business data private.
 
-**Expected result:** Your credentials stay private.
+**Expected result:** Your logins and your customers' details stay private.
 
 **Step 2.** Check every claim AI writes, especially health and before-and-after claims.
 
@@ -102,22 +102,13 @@
 
 **Expected result:** You follow the rules and protect your brand.
 
-## Lesson 28.5: How Helix applies this
-<!-- stage:grow -->
+**Step 4.** Treat AI as a drafter, not a decider. Let it write and suggest, but you approve anything that spends money, changes an ad or goes to customers.
 
-**Why this matters:** Helix applies the same rules to itself. Maths uses fixed rules, AI only writes short text, and nothing changes without your approval.
+**Expected result:** No change reaches your accounts or customers without your OK.
 
-**Step 1.** Know that Helix uses fixed rules for all maths (profit, MER, break-even), so numbers are always exact.
+### Good to know
 
-**Expected result:** You can trust every number on the Dashboard.
-
-**Step 2.** Know where Helix uses AI. It only writes short text when you press the button. That covers a store check summary, ad copy drafts and "I'm lost" answers. Each plan has a monthly AI allowance. Helix sends these requests to Google's Gemini 2.5 Flash-Lite model through the Vercel AI Gateway, with prompt training turned off, so your data is not used to train AI models.
-
-**Expected result:** You know Helix's numbers and plan come from plain rules you can check. AI text is a draft you read first.
-
-**Step 3.** Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on. See the [product design doc](../product-design.md).
-
-**Expected result:** Every change in your accounts has your approval.
+Helix works the same way. Profit, MER and break-even are worked out with fixed formulas, not AI, so the same numbers always give the same answer. AI only writes text, like ad copy drafts, store check summaries and coach answers, and you read it first. New campaigns are made as paused drafts, and actions wait for you in **Waiting for your OK**.
 
 ## Self-check
 

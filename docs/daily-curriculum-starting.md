@@ -17,7 +17,7 @@ This file is generated from `scripts/curriculum_source.py` by `python3 scripts/b
 | Day | Topic | Today's action | Lesson | Time | Do it for me |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Who it is for | Write who your product is for | [3.2 Customer profiles](playbook/03-brand-and-content.md#lesson-32-customer-profiles) | 10 min | Guide |
-| 2 | Is there demand? | Check that people already want it | [15.7 Check people really want your product](playbook/15-offer-and-product.md#lesson-157-check-people-really-want-your-product) | 15 min | Guide |
+| 2 | Is there demand? | Check that people already want it | [15.12 Check people really want it before you go big](playbook/15-offer-and-product.md#lesson-1512-check-people-really-want-it-before-you-go-big) | 15 min | Guide |
 | 3 | Your cost per sale | Work out what one sale really costs you | [1.2 Your cost drivers](playbook/01-daily-profit-foundations.md#lesson-12-your-cost-drivers) | 10 min | Free: Work out your cost per sale from your prices |
 | 4 | A price that leaves profit | Check your price leaves room for ads | [15.6 Pricing that is easy to accept](playbook/15-offer-and-product.md#lesson-156-pricing-that-is-easy-to-accept) | 10 min | Guide |
 | 5 | Your promise | Write your one-line promise | [15.2 Say clearly what the customer gets](playbook/15-offer-and-product.md#lesson-152-say-clearly-what-the-customer-gets) | 10 min | Starter: Draft 5 promise lines for you to choose from |

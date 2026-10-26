@@ -122,7 +122,7 @@
 ## Lesson 12.4: Grow your list before big sale dates
 <!-- stage:attract -->
 
-**Why this matters:** List growth pays off most just before big sales, when ads get expensive. Starting 6 to 10 weeks early fills the funnel while attention is still cheap.
+**Why this matters:** List growth pays off most just before big sales, when ads get expensive. Every person who joins early can be reached free by email or SMS on sale day. Starting 6 to 10 weeks early fills the list while attention is still cheaper.
 
 **Step 1.** Mark the date 6 to 10 weeks before your next big sale and start a list-growth push then.
 
@@ -130,9 +130,27 @@
 
 <!-- do:bfcm -->
 
-**Step 2.** Build an excitement page teasing the sale with an early-access sign-up.
+**Step 2.** Build a simple page teasing the sale, with an early-access sign-up form.
 
 **Expected result:** Visitors can join an early-access list.
+
+**Step 3.** Give people a reason to join that does not cost you margin: early access (for example 24 hours before everyone else), first pick of limited stock or a small gift with their order.
+
+**Expected result:** The page says clearly what joining gets them.
+
+**Step 4.** Send people to the page: your social posts and bio link, a pop-up on your store, an email to past buyers, and a small ad aimed at sign-ups if your budget allows.
+
+**Expected result:** The page gets steady visits every week of the push.
+
+**Step 5.** Set up a welcome email that confirms their early access and when the sale starts.
+
+**Expected result:** Every new sign-up gets a confirmation straight away.
+
+**Step 6.** Set a sign-up goal, for example 300 new people, and check progress each week.
+
+**Expected result:** You know if the push is on track, and can add another source if it is behind.
+
+**Watch out:** Only add people who agreed to hear from you. Ticked boxes must not be pre-ticked, and every email needs an easy unsubscribe.
 
 ## Lesson 12.5: Social growth tactics
 <!-- stage:attract -->

@@ -87,11 +87,13 @@
   {"say": "List what could stop you, and one way around each.", "check": "A short list of blockers with a plan for each.", "lost": "Write one blocker and one fix."},
   {"say": "Choose no more than three projects that move the goal. Put the first step of each in this week's tasks.", "check": "Three projects, each with a first step scheduled.", "lost": "Pick one project. Do its first step this week."}
  ]},
-"30.14": {"intro": "Every 90 days, stepping back to see what worked stops you repeating last quarter's mistakes.",
+"30.14": {"intro": "Every 90 days, step back and reset.",
  "steps": [
-  {"say": "Block half a day at the end of each quarter.", "check": "The reset is in your calendar.", "lost": "Book half a day at quarter end."},
-  {"say": "Review the 90-day goal: hit or missed, by how much, and why.", "check": "A one-paragraph honest review.", "lost": "Hit or missed? Write why."},
-  {"say": "List what to start, stop and keep doing. Then write the next 90-day plan (Lesson 30.13).", "check": "A new one-page plan for next quarter.", "lost": "Write one start, one stop, one keep."}
+  {"say": "Block half a day at the end of each quarter.", "check": "The reset is in your calendar.", "lost": "Book it now."},
+  {"say": "Review the 90-day goal: hit or missed, and why.", "check": "You have an honest one-paragraph review.", "lost": "Write three sentences."},
+  {"say": "Compare key numbers with last quarter: sales, profit after ads, MER, returning share.", "check": "You see what moved.", "lost": "Open your Dashboard."},
+  {"say": "Cancel tools you did not use this quarter.", "check": "Monthly costs are lower or the same.", "lost": "Check your card statement for subscriptions."},
+  {"say": "List start, stop and keep, then write the next 90-day plan.", "check": "You have a new one-page plan.", "lost": "Start with one thing to stop."}
  ]},
 "30.15": {"intro": "When you know who you serve and what you stand for, daily choices get faster, and helpers make choices you agree with.",
  "steps": [

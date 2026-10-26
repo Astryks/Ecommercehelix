@@ -20,10 +20,14 @@
   {"say": "After the draw, announce the winner. Send everyone else a \"sorry you didn't win\" offer.", "check": "Non-winners get a reason to buy.", "lost": "Send one \"sorry you didn't win\" email."},
   {"say": "Measure the cost per email, and how many entrants buy within 90 days.", "check": "You know if you should run another one.", "lost": "Divide ad spend by new emails. That's cost per email."}
  ]},
-"12.4": {"intro": "Growing your list pays off most just before big sales, when ads get pricey. Start 6 to 10 weeks early.",
+"12.4": {"intro": "Grow your list 6 to 10 weeks before a big sale.",
  "steps": [
-  {"say": "Find the date 6 to 10 weeks before your next big sale. Start a list-growth push then.", "check": "The start date is in your calendar.", "lost": "Count back 8 weeks from your sale. Mark it."},
-  {"say": "Build an excitement page that teases the sale, with an early-access sign-up.", "check": "Visitors can join an early-access list.", "lost": "Make one page with an early-access form."}
+  {"say": "Mark the date 6 to 10 weeks before your next big sale.", "check": "The push start date is in your calendar.", "lost": "Count back 8 weeks from the sale."},
+  {"say": "Build a page teasing the sale, with an early-access sign-up form.", "check": "Visitors can join an early-access list.", "lost": "Copy your sale page and add a form."},
+  {"say": "Give a reason to join that keeps your margin: early access, first pick or a small gift.", "check": "The page says what joining gets them.", "lost": "Offer 24 hours early access."},
+  {"say": "Send people to the page from social, a site pop-up, past buyers and maybe a small ad.", "check": "The page gets steady visits.", "lost": "Put the link in your bio today."},
+  {"say": "Set up a welcome email confirming early access and the start date.", "check": "Every sign-up is confirmed straight away.", "lost": "Use your email tool's welcome flow."},
+  {"say": "Set a sign-up goal and check it weekly.", "check": "You know if the push is on track.", "lost": "Try a goal of 300 new people."}
  ]},
 "12.5": {"intro": "Four simple moves grow your followers and customers alongside your list.",
  "steps": [

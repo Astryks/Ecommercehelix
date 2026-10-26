@@ -1,5 +1,5 @@
 {
- "_note": "Lesson ids. Progress, task ids, card positions and store-check findings are saved under each lesson's permanent id: its number before the 26 Oct 2026 reorder (lessons added later get a new permanent id past the end of their old module: 12.12 and 20.14 with the reorder, then 22.19 (13.17) and 23.8 (21.8), then 3.12 (15.12), 10.18 (16.18), 5.23 (5.22), 12.13 (11.13) and 16.10 (27.7) on 27 Oct 2026, then 7.17 (8.17), 7.18 (8.18), 8.14 (10.14), 12.14 (11.14) and 12.15 (11.15) for the Channels 101 lessons). 'renumbered' maps a permanent id to the number shown now, 'modules' maps old module page slugs to new ones (redirected in next.config.ts), 'lessons' lists lessons merged into another lesson (permanent ids, with step moves) and 'anchors' maps old heading anchors to a permanent id. Read by src/lib/lesson-alias.ts.",
+ "_note": "Lesson ids. Progress, task ids, card positions and store-check findings are saved under each lesson's permanent id: its number before the 26 Oct 2026 reorder (lessons added later get a new permanent id past the end of their old module: 12.12 and 20.14 with the reorder, then 22.19 (13.17) and 23.8 (21.8), then 3.12 (15.12), 10.18 (16.18), 5.23 (5.22), 12.13 (11.13) and 16.10 (27.7) on 27 Oct 2026, then 7.17 (8.17), 7.18 (8.18), 8.14 (10.14), 12.14 (11.14) and 12.15 (11.15) for the Channels 101 lessons). 'renumbered' maps a permanent id to the number shown now, 'modules' maps old module page slugs to new ones (redirected in next.config.ts), 'lessons' lists lessons merged into another lesson (permanent ids, with step moves) and 'anchors' maps old heading anchors to a permanent id. Read by src/lib/lesson-alias.ts. 27 Oct 2026: lesson 28.5 (permanent 17.5, 'How Helix applies this') merged into 28.4; new lesson 19.13 has permanent id 14.13.",
  "renumbered": {
   "1.1": "1.1",
   "1.2": "1.2",
@@ -295,7 +295,6 @@
   "17.2": "28.2",
   "17.3": "28.3",
   "17.4": "28.4",
-  "17.5": "28.5",
   "18.1": "29.1",
   "18.2": "29.2",
   "29.1": "30.1",
@@ -323,7 +322,8 @@
   "7.18": "8.18",
   "8.14": "10.14",
   "12.14": "11.14",
-  "12.15": "11.15"
+  "12.15": "11.15",
+  "14.13": "19.13"
  },
  "modules": {
   "04-brand-and-content": "03-brand-and-content",
@@ -432,6 +432,14 @@
     "2": 6,
     "3": 7,
     "4": 8
+   }
+  },
+  "17.5": {
+   "to": "17.4",
+   "steps": {
+    "1": 1,
+    "2": 4,
+    "3": 4
    }
   }
  },
@@ -1377,6 +1385,18 @@
   },
   "lesson-2916-keep-a-wins-file-for-hard-weeks": {
    "ref": "29.16"
+  },
+  "lesson-157-check-people-really-want-your-product": {
+   "ref": "3.7"
+  },
+  "lesson-516-big-brand-moments": {
+   "ref": "5.17"
+  },
+  "lesson-179-experience-levels": {
+   "ref": "13.9"
+  },
+  "lesson-285-how-helix-applies-this": {
+   "ref": "17.4"
   }
  }
 }

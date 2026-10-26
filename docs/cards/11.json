@@ -24,11 +24,13 @@
   {"say": "When things work, grow one move at a time.\n\n1. Make new hooks for your best ad.\n2. Try catalog ads.\n3. Offer bundles for bigger orders.\n4. Only then add a new campaign.", "check": "Growth comes from new videos and campaigns, not just more budget.", "lost": "Make one new hook for your best ad."},
   {"say": "Judge TikTok by your total MER on the Dashboard (all ad spend as a share of all sales). Start TikTok at about 10% of your total ad budget (a rule of thumb).", "check": "You see TikTok's effect on the whole store.", "lost": "Look at total MER, not just TikTok numbers."}
  ]},
-"11.5": {"intro": "Lots of people search on TikTok. Saying and showing your keywords helps videos get found for months.",
+"11.5": {"intro": "People search on TikTok. Videos that answer a search keep getting found.",
  "steps": [
-  {"say": "Say your main keyword in the first line of the voice-over.", "check": "TikTok can hear what the video is about.", "lost": "Say the keyword first."},
-  {"say": "Put the keyword in the on-screen text and the caption.", "check": "The keyword is in the sound, text and caption.", "lost": "Add the keyword to the caption."},
-  {"say": "Make videos that answer common questions about your type of product.", "check": "You show up when people search those questions.", "lost": "Answer one common question in a video."}
+  {"say": "Type your product type into TikTok search and note the suggestions.", "check": "You have about 10 real search phrases.", "lost": "Write down what TikTok suggests as you type."},
+  {"say": "Pick one phrase per video and say it in the first sentence.", "check": "The video's topic is clear from line one.", "lost": "Open with the phrase, word for word."},
+  {"say": "Put the phrase in on-screen text and the caption, plus 3 to 5 matching hashtags.", "check": "The phrase is in sound, text and caption.", "lost": "Copy the phrase into the caption."},
+  {"say": "Answer the question properly and show your product doing the job.", "check": "A searcher gets a real answer.", "lost": "Get to the answer in the first few seconds."},
+  {"say": "After a week, check the video's traffic sources for search.", "check": "You know which phrases bring views.", "lost": "Open the video's analytics."}
  ]},
 "11.6": {"intro": "TikTok Shop lets people buy inside TikTok. Its ads run as GMV Max campaigns. It is not in Australia yet. Its fees can eat your margin, so check the maths first.",
  "steps": [

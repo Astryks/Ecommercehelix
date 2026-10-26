@@ -25,7 +25,7 @@
   {"say": "Write one line each: **feature** (what it has), **benefit** (what that does for them), **proof** (why believe it), **personality** (how buying from you feels), **offer** (the deal).", "check": "You have five lines.", "lost": "Write one line for each of the five words."},
   {"say": "For your next ad, pick one layer to lead with, and one or two to back it up.", "check": "The brief names a lead layer.", "careful": "During a sale, lead with the offer. Other times, lead with product and proof.", "lost": "Pick one layer to lead your next ad."}
  ]},
-"5.5": {"intro": "Some people have never heard of you. Some are ready to buy. Each needs a different ad.", 
+"5.5": {"intro": "Some people have never heard of you. Some are ready to buy. Each needs a different ad.",
  "steps": [
   {"say": "Read the five stages in the lesson table. Label each live ad with the stage it talks to.", "check": "Every ad has a stage.", "lost": "For each ad: is it for strangers, or for people who know you?"},
   {"say": "Check strangers see early-stage ads, and visitors see later-stage ads.", "check": "Each audience gets ads made for it.", "lost": "Strangers get intro ads. Visitors get \"ready to buy\" ads."},
@@ -89,10 +89,13 @@
   {"say": "Let AI help.\n\n1. Use an AI tool to resize your ad and make versions.\n2. Add an AI voice-over if you want.\n3. Label AI-made people and voices where the platform's rules say so.", "check": "More versions in less time, labelled where needed.", "careful": "Never fake reviews with AI.", "lost": "Use an AI tool to resize one ad."},
   {"say": "Before launch, open **Advantage+ creative** in the ad and check **Enhancements** and **Advanced preview**. Turn off any you don't want.", "check": "The ad shows exactly as you made it.", "lost": "Check auto-enhance settings before you publish."}
  ]},
-"5.16": {"intro": "Big brands spend a lot on seasonal moments. Watching them gives you free ideas.",
+"5.16": {"intro": "Big brands spend a lot on seasonal moments. Borrow the idea at your size.",
  "steps": [
-  {"say": "Once a month, write down 3 campaigns big brands run around a season or moment.", "check": "You have a short list of ideas.", "lost": "Write one big-brand idea you liked."},
-  {"say": "Make one smaller version: a trend format, a team-up with another small brand, or a playful take.", "check": "Your next batch has one moment-led ad.", "lost": "Make one ad inspired by it, in your own way."}
+  {"say": "List moments in the next 3 months your buyers care about.", "check": "You have 6 to 10 dates.", "lost": "Check the Helix **Calendar**."},
+  {"say": "Search 3 big brands in the Meta Ad Library and note how they use the next moment.", "check": "You have 3 ideas in your own words.", "lost": "Search one brand name to start."},
+  {"say": "Pick the one moment that fits your product best.", "check": "You have one moment and one idea.", "lost": "Skip moments unrelated to what you sell."},
+  {"say": "Make a small-brand version 2 to 3 weeks before the date.", "check": "One moment ad is ready in time.", "lost": "Start with a timely hook."},
+  {"say": "Test it with your normal ads and save it in your creative library.", "check": "You know if moment ads work for you.", "lost": "Add the date to its library name."}
  ]},
 "5.19": {"intro": "A tiny true story keeps people watching. Your product is the hero.",
  "steps": [

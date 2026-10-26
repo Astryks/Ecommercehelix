@@ -328,7 +328,17 @@
 
 **Expected result:** A one-paragraph honest review.
 
-**Step 3.** List what to start, stop and keep doing, then write the next 90-day plan (Lesson 30.13).
+**Step 3.** Compare the quarter's key numbers with the quarter before: sales, profit after ads, MER and the share of sales from returning customers.
+
+**Expected result:** You can see which numbers moved and which did not.
+
+<!-- do:numbers -->
+
+**Step 4.** Cancel tools, apps and subscriptions you did not use this quarter (Lesson 26.6).
+
+**Expected result:** Your monthly costs are lower or the same.
+
+**Step 5.** List what to start, stop and keep doing, then write the next 90-day plan (Lesson 30.13).
 
 **Expected result:** A new one-page plan for the next quarter.
 

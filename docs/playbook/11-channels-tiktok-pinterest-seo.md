@@ -129,19 +129,27 @@
 ## Lesson 11.5: TikTok search
 <!-- stage:attract -->
 
-**Why this matters:** Many people use TikTok like a search engine. Saying and showing your keywords helps your videos get found for months.
+**Why this matters:** Many people use TikTok like a search engine, typing things like "best gift for new dad" or "how to stop frizzy hair". Videos that clearly answer a search can keep being found for months, long after a normal post stops getting views.
 
-**Step 1.** Say your main keyword in the first line of the voice-over.
+**Step 1.** Type your product type into the TikTok search bar and write down the suggestions that appear as you type. Also note the "Others searched for" phrases shown on related videos, when TikTok shows them.
 
-**Expected result:** TikTok can hear what the video is about.
+**Expected result:** A list of about 10 real search phrases, in your buyers' own words.
 
-**Step 2.** Put the keyword in on-screen text and the caption.
+**Step 2.** Pick one phrase per video. Say it in the first sentence of the voice-over.
 
-**Expected result:** The keyword appears in sound, text and caption.
+**Expected result:** TikTok can hear what the video is about from the first line.
 
-**Step 3.** Make videos answering common questions about your product type.
+**Step 3.** Put the same phrase in the on-screen text and in the caption, as a normal sentence. Add 3 to 5 hashtags that match it.
 
-**Expected result:** You show up when people search those questions.
+**Expected result:** The phrase appears in sound, text and caption.
+
+**Step 4.** Answer the question properly, and show your product doing the job. Keep it short and get to the answer fast.
+
+**Expected result:** Someone who searched that phrase gets a real answer, not just an ad.
+
+**Step 5.** After a week, open the video's analytics and look at where views came from. Search is listed as its own traffic source.
+
+**Expected result:** You know which phrases bring search views. Make more videos for the phrases that work.
 
 ## Lesson 11.6: TikTok Shop
 <!-- stage:attract -->
@@ -300,7 +308,7 @@
 ## Lesson 11.11: Instagram shopping
 <!-- stage:attract -->
 
-**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since mid-2025, Meta shops send buyers to your own website checkout. It is free once your catalog is connected.
+**Why this matters:** Instagram shopping lets people tap a product in a post. It takes them straight to it on your store. Since September 2025, Facebook and Instagram shops send buyers to your own website to check out ([Meta help](https://www.facebook.com/business/help/1314349509894768)). It is free once your catalog is connected.
 
 **Step 1.** Set up your shop on Facebook and Instagram.
 

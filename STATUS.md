@@ -924,3 +924,8 @@ Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, We
 - Footers: no postal address (daily, alerts, scorecard, winback, seasonal nudges); one-click unsubscribe + preferences links kept.
 - Tests: tests/email-variety.test.ts (14-day simulation, nothing-new rule, reorder at most once). Sample: /workspace/reports/helix/email-variety-sample/index.html.
 - Open: seasonal-nudges cron (weekly) has no send-log and ignores prefs; removing the postal address conflicts with CAN-SPAM for US recipients.
+
+## Content QA 27 Oct 2026 (branch helix-content-quality-27oct)
+Changelog: reports/helix/content-qa-27oct.md (box path /workspace/reports/helix/). New 19.13 (permanent 14.13). 15.7 retitled and rewritten. 28.5 removed (merged into 28.4, stored 17.5→17.4). 7 thin lessons expanded, cards updated, 11.11 date fixed.
+**Re-embed after merge (spends about $0.05, needs DATABASE_URL + AI_GATEWAY_API_KEY):** `npx vite-node scripts/coach-embed.ts` (dry run), then `npx vite-node scripts/coach-embed.ts --yes`. Only changed chunks are paid for.
+**Follow-up:** Google Ads developer tokens were sunset 9 Sep 2026. Review the GOOGLE_ADS_DEVELOPER_TOKEN requirement in src/lib/google-ads/config.ts and the setup notes above.

@@ -20,14 +20,9 @@
  ]},
 "28.4": {"intro": "AI is powerful, but it makes mistakes. These rules keep you safe.",
  "steps": [
-  {"say": "Never paste passwords or access tokens into an AI chat.", "check": "Your logins stay private.", "lost": "No passwords in AI. Ever."},
+  {"say": "Never paste passwords, tokens or card details into AI. Keep customer details out unless the tool keeps business data private.", "check": "Your logins and customers stay private.", "lost": "No passwords in AI. Ever."},
   {"say": "Check every claim AI writes, especially health and before-and-after claims.", "check": "Nothing false goes out under your name.", "lost": "Read it. Is every claim true?"},
-  {"say": "Label AI-made people and voices where rules need it. Report fakes of your content or face to the platform, with proof.", "check": "You follow the rules and protect your brand.", "lost": "Add an \"AI-made\" label where needed."}
- ]},
-"28.5": {"intro": "Helix follows the same rules. Maths uses fixed rules, AI only writes short text, and nothing changes without your OK.",
- "steps": [
-  {"say": "Helix uses fixed rules for all maths (profit, MER, break-even). So the numbers are always exact.", "check": "You can trust every number on the Dashboard.", "lost": "Helix maths is fixed rules, not guesses."},
-  {"say": "Helix only uses AI to write short text when you press the button: a store check summary, ad copy drafts and \"I'm lost\" answers. Each plan has a monthly allowance. It runs on Gemini 2.5 Flash-Lite with prompt training turned off, so your data does not train AI models.", "check": "You know Helix's numbers and plan come from plain rules. AI text is a draft you read first.", "lost": "AI in Helix only writes drafts. The maths is fixed rules."},
-  {"say": "Approve or reject each action in **Waiting for your OK**. New campaigns are made as paused drafts that you switch on.", "check": "Every change in your accounts has your OK.", "lost": "Open **Waiting for your OK**."}
+  {"say": "Label AI-made people and voices where rules need it. Report fakes of your content or face to the platform, with proof.", "check": "You follow the rules and protect your brand.", "lost": "Add an \"AI-made\" label where needed."},
+  {"say": "Let AI draft. You approve anything that spends money, changes ads or reaches customers.", "check": "Nothing changes without your OK.", "lost": "Check **Waiting for your OK**."}
  ]}
 }

@@ -368,15 +368,50 @@
 
 **Watch out:** If you pay a deposit before goods are made, start counting from the day you paid the deposit, not the day the goods arrived. Deposits make your cash stuck for longer.
 
+## Lesson 19.13: Plan next month's sales and ad spend
+<!-- stage:grow -->
+
+**Why this matters:** Most owners decide ad spend day by day, so busy months run short of budget and quiet months waste it. A one-page plan for next month sets your expected sales, how much you will spend to get them, and whether you have the cash. It takes about 30 minutes, once a month.
+
+**Step 1.** Forecast next month's sales. Start from the same month last year, or the average of your last three months if you are new. Then adjust for anything you know: a sale, a launch, a holiday or a product that will be out of stock.
+
+**Expected result:** Three numbers: a low, a likely and a high sales forecast.
+
+**Step 2.** Split the likely number into new and returning customers, using the share from your last 90 days on the Dashboard.
+
+**Expected result:** You know how much must come from new buyers, which is the part ads have to pay for.
+
+<!-- do:numbers -->
+
+**Step 3.** Set the ad budget: likely sales times your target MER (Lesson 1.5). For example, $40,000 of likely sales at a 25% target MER gives a $10,000 budget.
+
+**Expected result:** One monthly ad budget that keeps you inside your target.
+
+**Step 4.** Spread the budget across the weeks. Put more into weeks with a sale or launch, and keep about 10% to 20% for testing new ads (Lesson 7.3).
+
+**Expected result:** A weekly budget you can set in each ad account.
+
+**Step 5.** Check the cash. Add up the ad budget and the stock you must buy for the forecast, and compare it with the cash you will have (Lesson 19.4).
+
+**Expected result:** You know the plan is affordable, or you have trimmed it before the month starts.
+
+**Step 6.** Each Monday, compare real sales and spend with the plan. If sales run well below plan for two weeks, bring spend down to match. Do not chase lost sales with extra spend.
+
+**Expected result:** Spend follows real results, and next month's forecast gets more accurate.
+
+**Watch out:** Your first forecasts will be rough. That is fine. Base them on your own numbers, not on hopes, and keep last month's plan next to this one so you can see how close you got.
+
 ## Self-check
 
 1. Name the five cash levers.
 2. When is borrowing reasonable?
 3. A product sells 3 a day, with a 40-day lead time and 14 safety days. What is its reorder point?
+4. Next month's likely sales are $40,000 and your target MER is 25%. What is the ad budget?
 
 <details><summary>Answers</summary>
 
 1. Get it cheaper, get better supplier terms, pay later, lower the risk, sell faster.
 2. When the money clearly earns more than it costs and you could make repayments in a bad month. Usually for stock that already sells well.
 3. 3 × (40 + 14) = 162 units.
+4. $40,000 × 25% = $10,000.
 </details>

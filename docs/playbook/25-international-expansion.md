@@ -139,11 +139,19 @@
 
 **Expected result:** You can see which countries are profitable.
 
-**Step 2.** You can start a separate campaign per country once you can afford it. Or run one worldwide campaign to find demand, then give winning countries their own campaigns.
+**Step 2.** Compare each country's MER with the break-even you worked out for that country (Lesson 25.2). Costs like shipping and duties differ, so the line differs too.
+
+**Expected result:** Each country is marked above or below its own line.
+
+**Step 3.** You can start a separate campaign per country once you can afford it. Or run one worldwide campaign to find demand, then give winning countries their own campaigns.
 
 **Expected result:** Each strong country has its own campaign and budget.
 
 <!-- do:meta-draft -->
+
+**Step 4.** Put the country code in every campaign name (Lesson 7.7), for example "US | Sales | Broad".
+
+**Expected result:** Reports can be filtered by country in seconds.
 
 ## Self-check
 

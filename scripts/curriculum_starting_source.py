@@ -26,7 +26,7 @@ D = [
    "Read 20 reviews of those competitors. Note what people love and what they complain about.",
    "Search TikTok or Instagram for the product type. Do people post about it?",
    "Give your idea a score from 1 to 5 for demand. Under 3? Look at how to make the product or offer more different."],
-  15, "learning", "15.7", "16", None, None),
+  15, "learning", "15.12", "16", None, None),
  (3, "Your cost per sale", "Work out what one sale really costs you",
   "A sale can lose money even at a good price. You need to know every cost that comes with one order before you set prices or spend on ads.",
   ["Write your product cost (what you pay the supplier for one unit).",

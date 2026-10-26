@@ -74,5 +74,14 @@
   {"say": "Add them: 90 + 3 − 30 = 63 days.", "check": "Your number is in your cash plan.", "lost": "Stock days + payout days − supplier days."},
   {"say": "Pick one lever from Lesson 19.3 to cut 10 days: smaller orders more often, more days to pay, pre-orders or clearing slow stock.", "check": "One action done this week.", "lost": "Ask your supplier for 30 more days."},
   {"say": "Set a reminder to check again in 3 months.", "check": "The reminder is set.", "careful": "Paid a deposit? Count from the day you paid it.", "lost": "Add a reminder to your calendar."}
+ ]},
+"19.13": {"intro": "Plan next month's sales, ad spend and cash on one page.",
+ "steps": [
+  {"say": "Forecast next month's sales: low, likely and high.", "check": "You have three sales numbers.", "lost": "Start from the same month last year."},
+  {"say": "Split the likely number into new and returning customers.", "check": "You know what ads must bring in.", "lost": "Use your last 90 days' share."},
+  {"say": "Set the ad budget: likely sales times your target MER.", "check": "You have one monthly ad budget.", "lost": "$40,000 × 25% = $10,000."},
+  {"say": "Spread it by week, with 10% to 20% for testing.", "check": "You have weekly budgets.", "lost": "Give sale weeks more."},
+  {"say": "Check you have the cash for ads and stock.", "check": "The plan is affordable.", "lost": "Compare it with your cash forecast."},
+  {"say": "Each Monday, compare real results with the plan.", "check": "Spend follows real results.", "lost": "Behind two weeks running? Spend less."}
  ]}
 }

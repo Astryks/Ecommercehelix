@@ -40,11 +40,13 @@
   {"say": "Add a middle option that makes your favourite option look like the obvious pick.", "check": "More shoppers choose your favourite option.", "lost": "Add a middle option. Watch what people pick."},
   {"say": "Test free shipping against a lower price. Then turn on a pay-in-parts option in **Settings > Payments** for pricier items. Shop Pay Installments is only for US, Canadian and UK stores.", "check": "You know what customers like better, and they can pay in parts.", "lost": "Turn on pay-in-parts in **Settings > Payments**."}
  ]},
-"15.7": {"intro": "Not every product deserves your ad money. A quick monthly check shows which ones do.",
+"15.7": {"intro": "Once a month, check which products earn their ad money.",
  "steps": [
-  {"say": "For each product, write last month's ad spend, sales, return (sales ÷ ad spend), units sold and margin.", "check": "One row per product, five numbers each.", "lost": "Start with your top 3 products. Five numbers each."},
-  {"say": "Put each product in one of the four boxes in the lesson table. Do the action for that box.", "check": "Every product has a box and a next step.", "lost": "Is each product's return good or bad? Is spend high or low? That picks its box."},
-  {"say": "In your next weekly check, move ad money towards the \"good return\" products.", "check": "More of your spend goes to products that pay it back.", "lost": "Give a bit more ad money to your best-return product."}
+  {"say": "In Shopify, open **Analytics > Reports** and pick **Total sales by product** for last month.", "check": "You see units and sales for each product.", "lost": "Search reports for \"by product\"."},
+  {"say": "Work out profit before ads for each product: price minus product, shipping, packaging and fees, times units sold.", "check": "Each product has a profit-before-ads number.", "lost": "Do your best seller first."},
+  {"say": "Add each product's ad spend and take it away. Note its return (sales divided by ad spend).", "check": "Each product shows profit after ads.", "lost": "Split shared campaigns by sales share."},
+  {"say": "Put each product in one of the four boxes and do that box's action.", "check": "Every product has a next step.", "lost": "Start with your top 5 products."},
+  {"say": "Move budget towards good-return products in your weekly review. Save the table.", "check": "More spend goes to products that pay it back.", "lost": "Save it as \"Product check\" with the month."}
  ]},
 "15.8": {"intro": "New products help you grow. Test them cheaply first so you don't lock up cash.",
  "steps": [

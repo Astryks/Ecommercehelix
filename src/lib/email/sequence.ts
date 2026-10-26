@@ -38,7 +38,7 @@ export const SEQUENCE: SequenceEmail[] = [
     kind: "founder", subject: "She cut the feet off her pantyhose", preview: "How Sara Blakely turned US$5,000 into Spanx.", title: "Founder story: Sara Blakely",
     paras: ["Sara Blakely sold fax machines door to door for seven years.", "One day she wanted to wear white pants, but nothing underneath looked right. So she grabbed scissors and cut the feet off her pantyhose. It worked.", "She started Spanx in 2000 with US$5,000 of her own savings and no business degree. Factories told her no for two years. She kept asking until one said yes.", "Later, her product sat in a quiet corner of a big store. So she put it next to the tills herself. It sold so well that the store let her keep doing it."],
     action: "Look at your products and ask: which one do people really want? Check last month's sales for each one.",
-    lesson: { slug: "15-offer-and-product", heading: "Lesson 15.7: Check people really want your product", label: "Check what people really want" },
+    lesson: { slug: "15-offer-and-product", heading: "Lesson 15.12: Check people really want it before you go big", label: "Check what people really want" },
   },
   {
     kind: "lesson", subject: "What does one order really cost you?", preview: "The product is only part of it.", title: "What one order costs",

@@ -55,10 +55,11 @@
   {"say": "Check the five causes: an offer weaker than competitors', an offer that's not clear in the first seconds of ads, a site problem, a list that's too small, or bad timing.", "check": "You've named the likely cause.", "lost": "Is your offer clear in the first second of your ad?"},
   {"say": "Pick one rescue: add a free gift level, release something new, send a stronger email, or move budget to warm audiences.", "check": "A rescue is live within hours.", "careful": "Only extend the sale if it won't break trust. Customers notice fake \"last chances\", and stores have paid fines for countdown timers that reset.", "lost": "Add a free gift level."}
  ]},
-"17.9": {"intro": "Your sale plan grows with you. Start simple and add a bit each time.",
+"17.9": {"intro": "Start simple and add one layer to each sale.",
  "steps": [
-  {"say": "Find your level: starter (one offer, simple schedule, sale versions of flows), seasoned (gift levels, hype phase, mid-sale release, separate sale campaigns) or advanced (daily budget plan, every channel planned, product sales targets).", "check": "You know your level.", "lost": "New to sales? You're a starter. That's fine."},
-  {"say": "Add one thing from the next level to your next sale.", "check": "Each sale is a bit smarter than the last.", "lost": "Add just one new thing."}
+  {"say": "Find your level in the table: Starter, Seasoned or Advanced.", "check": "You know your level.", "lost": "New to sales? You are Starter."},
+  {"say": "Add one thing from the next level to your next sale. Keep the rest the same.", "check": "Each sale is a bit more advanced.", "lost": "Pick just one new thing."},
+  {"say": "After the sale, note what you added and whether it paid off.", "check": "You know whether to keep it.", "lost": "Do it in your sale review."}
  ]},
 "17.10": {"intro": "Plan the whole busy season, not one weekend. In 2026, Black Friday is 27 November and Cyber Monday is 30 November. Helix adds the plan to your calendar from 1 August.",
  "steps": [

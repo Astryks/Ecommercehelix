@@ -60,7 +60,7 @@ Same theme each day in three formats: email teaser, Instagram hook, members' Fac
 | 54 | 2026-12-19 | grow | Scaling challenge (8.13) | Today: Scaling challenge |
 | 55 | 2026-12-20 | grow | Reporting that leads to decisions (9.12) | Today: Reporting that leads to decisions |
 | 56 | 2026-12-21 | grow | Target ROAS (10.8) | Today: Target ROAS |
-| 57 | 2026-12-22 | grow | Check people really want your product (15.7) | Today: Check people really want your product |
+| 57 | 2026-12-22 | grow | Which products to push: a monthly product check (15.7) | Today: Which products to push: a monthly product check |
 | 58 | 2026-12-23 | grow | Segments (16.4) | Today: Segments |
 | 59 | 2026-12-24 | grow | After the sale (17.7) | Today: After the sale |
 | 60 | 2026-12-25 | grow | Review the results (18.6) | Today: Review the results |

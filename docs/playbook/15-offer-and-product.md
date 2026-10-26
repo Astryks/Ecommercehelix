@@ -185,22 +185,32 @@
 
 **Expected result:** You know which one your customers prefer, and shoppers can pay in parts.
 
-## Lesson 15.7: Check people really want your product
+## Lesson 15.7: Which products to push: a monthly product check
 <!-- stage:grow -->
 
-**Why this matters:** Not every product deserves your ad money. A monthly snapshot shows which ones to push, which to test more and which to stop. It takes about 20 minutes.
+**Why this matters:** Not every product deserves your ad money. A healthy store total can hide one product that loses money on every order. A monthly check of profit per product shows which ones to push, which to test more and which to stop. It takes about 30 minutes.
 
-**Step 1.** For each product, write down last month's ad spend, sales, units sold and margin. Also write its return: sales divided by ad spend.
+**Step 1.** In Shopify, open **Analytics > Reports** and pick the sales by product report (called **Total sales by product**). Set the dates to last month.
 
-**Expected result:** You have one row per product with five numbers.
+**Expected result:** One row per product with units sold and net sales.
 
-**Step 2.** Put each product into one of the four boxes in the table below. Then do the action listed for that box.
+**Step 2.** For each product, work out the profit from one sale before ads: the price people really paid, minus product cost, the shipping you pay, packaging and payment fees (Lesson 1.2 lists them). Multiply by units sold.
+
+**Expected result:** A profit-before-ads number for each product. For example: sells for $50, costs $15 to make, $8 to ship and $1.50 in fees, so $25.50 each. 120 sold is $3,060.
+
+**Step 3.** Add last month's ad spend for each product. Use campaigns or ad sets that promote one product. For mixed or catalog campaigns, split the spend by each product's share of the sales they brought in. Then take ad spend away from profit before ads.
+
+**Expected result:** Each product has ad spend, profit after ads, and a return (sales divided by ad spend).
+
+**Step 4.** Put each product into one of the four boxes in the table below, then do the action for that box. "Good return" means profit after ads is above zero and the return beats your break-even ROAS (Lesson 1.5).
 
 **Expected result:** Every product has a box and a next step. For example: "low spend, good return: make new ads and give it more budget".
 
-**Step 3.** Move ad budget towards the "good return" boxes in your next weekly review.
+**Step 5.** Move ad budget towards the "good return" boxes in your next weekly review, and save the table so you can compare next month.
 
-**Expected result:** More of your spend goes to products that pay it back.
+**Expected result:** More of your spend goes to products that pay it back, and you can see the trend month to month.
+
+**Watch out:** A product that loses money on the first order can still be worth it if its buyers come back often. Only keep it for that reason if your repeat numbers prove it (Lesson 16.17).
 
 ### Good to know
 

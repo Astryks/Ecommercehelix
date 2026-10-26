@@ -245,18 +245,30 @@ Who each sale campaign leaves out:
 
 **Watch out:** Extend the sale only if it will not damage trust. Customers notice fake "last chances". Stores have paid ACCC penalties after their countdown timers reset past the "end" (see [ACCC: Black Friday penalties](https://www.accc.gov.au/media-release/james-lane-and-vuly-pay-penalties-for-allegedly-making-misleading-representations-during-last-year%E2%80%99s-black-friday-sales)).
 
-## Lesson 17.9: Experience levels
+## Lesson 17.9: Grow your sale plan one layer at a time
 <!-- stage:convert -->
 
-**Why this matters:** Your sale plan should grow with your experience. Starting simple and adding layers each time keeps sales profitable while you learn.
+**Why this matters:** Your sale plan should grow with your experience. Trying everything in your first sale spreads you thin and makes it hard to tell what worked. Starting simple and adding one layer each time keeps sales profitable while you learn.
 
-**Step 1.** Find your level. **Starter:** one offer, a simple plan, sale versions of flows. **Seasoned:** gift levels, a hype phase, a mid-sale release, separate sale campaigns. **Advanced:** a daily budget plan, every channel planned, sales targets per product.
+**Step 1.** Find your level in the table below.
 
 **Expected result:** You know your level.
 
-**Step 2.** Add one element from the next level to your next sale.
+**Step 2.** Add one thing from the next level to your next sale. Keep everything else the same as last time.
 
-**Expected result:** Each sale is a little more sophisticated than the last.
+**Expected result:** Each sale is a little more advanced than the last.
+
+**Step 3.** After the sale, write down what you added and whether it paid off (Lesson 17.7).
+
+**Expected result:** A short note that tells you whether to keep the new layer.
+
+### Good to know
+
+| Level | What your sale includes |
+| --- | --- |
+| Starter | One clear offer, a simple plan, sale versions of your main email flows. |
+| Seasoned | Gift levels, a build-up phase before the sale, a new product or offer released mid-sale, separate sale campaigns. |
+| Advanced | A day-by-day budget plan, every channel planned, sales targets per product. |
 
 ## Lesson 17.10: Key dates through the year
 <!-- stage:grow -->

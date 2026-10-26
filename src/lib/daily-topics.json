@@ -1211,20 +1211,24 @@
   },
   {
    "ref": "15.7",
-   "title": "Check people really want your product",
+   "title": "Which products to push: a monthly product check",
    "stage": "grow",
-   "why": "Not every product deserves your ad money. A monthly snapshot shows which ones to push, which to test more and which to stop. It takes about 20 minutes.",
+   "why": "Not every product deserves your ad money. A healthy store total can hide one product that loses money on every order. A monthly check of profit per product shows which ones to push, which to test more and which to stop. It takes about 30 minutes.",
    "steps": [
-    "For each product, write down last month's ad spend, sales, units sold and margin. Also write its return: sales divided by ad spend.",
-    "Put each product into one of the four boxes in the table below. Then do the action listed for that box.",
-    "Move ad budget towards the \"good return\" boxes in your next weekly review."
+    "In Shopify, open Analytics > Reports and pick the sales by product report (called Total sales by product). Set the dates to last month.",
+    "For each product, work out the profit from one sale before ads: the price people really paid, minus product cost, the shipping you pay, packaging and payment fees (Lesson 1.2 lists them). Multiply by units sold.",
+    "Add last month's ad spend for each product. Use campaigns or ad sets that promote one product. For mixed or catalog campaigns, split the spend by each product's share of the sales they brought in. Then take ad spend away from profit before ads.",
+    "Put each product into one of the four boxes in the table below, then do the action for that box. \"Good return\" means profit after ads is above zero and the return beats your break-even ROAS.",
+    "Move ad budget towards the \"good return\" boxes in your next weekly review, and save the table so you can compare next month."
    ],
    "results": [
-    "You have one row per product with five numbers.",
+    "One row per product with units sold and net sales.",
+    "A profit-before-ads number for each product. For example: sells for $50, costs $15 to make, $8 to ship and $1.50 in fees, so $25.50 each. 120 sold is $3,060.",
+    "Each product has ad spend, profit after ads, and a return (sales divided by ad spend).",
     "Every product has a box and a next step. For example: \"low spend, good return: make new ads and give it more budget\".",
-    "More of your spend goes to products that pay it back."
+    "More of your spend goes to products that pay it back, and you can see the trend month to month."
    ],
-   "href": "/learn/15-offer-and-product#lesson-157-check-people-really-want-your-product",
+   "href": "/learn/15-offer-and-product#lesson-157-which-products-to-push-a-monthly-product-check",
    "module": 15,
    "n": 57
   },

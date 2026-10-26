@@ -346,18 +346,34 @@
 
 **Expected result:** The ad shows exactly as you designed it.
 
-## Lesson 5.16: Big brand moments
+## Lesson 5.16: Borrow ideas from big brand moments
 <!-- stage:attract -->
 
-**Why this matters:** Large brands spend heavily on seasonal and cultural moments. Watching them gives you free ideas you can adapt to your size.
+**Why this matters:** Large brands spend heavily on seasonal and cultural moments, like Mother's Day, the first cold week or a big sports final. Their ads are free research. You can borrow the timing and the idea, at your size, without their budget.
 
-**Step 1.** Once a month, note 3 campaigns big brands run around a season or moment.
+**Step 1.** List the moments in the next three months that your buyers care about: public holidays, sale dates, school holidays, season changes, big sports or TV events.
 
-**Expected result:** You have a short list of ideas.
+**Expected result:** A list of 6 to 10 dates. The Helix **Calendar** already shows the main sale dates.
 
-**Step 2.** Make one fit your size. Try a trend format, a team-up with another small brand, or a playful take on a trend.
+<!-- do:calendar -->
 
-**Expected result:** Your next batch includes one moment-led ad.
+**Step 2.** Once a month, spend 20 minutes in the [Meta Ad Library](https://www.facebook.com/ads/library/). Search 3 big brands that sell to your kind of buyer and note how they use the next moment: the hook, the format and the offer.
+
+**Expected result:** 3 ideas written in your own words, with the brand names taken out.
+
+**Step 3.** Pick the one moment that fits your product best. Skip moments that have nothing to do with what you sell.
+
+**Expected result:** One moment and one idea for it.
+
+**Step 4.** Make a small-brand version 2 to 3 weeks before the date: a timely hook, a trending format or a team-up with another small brand.
+
+**Expected result:** Your next creative batch includes one moment-led ad, ready before the date.
+
+**Step 5.** Test it alongside your normal ads (Lesson 7.10) and save it in your creative library (Lesson 5.18) with the date, so you can reuse it next year.
+
+**Expected result:** You know if moment ads work for your store, and next year's version is half done.
+
+**Watch out:** Never use another brand's logo, footage or slogan. Many big events protect their names and logos, so say "the big game this weekend" rather than using the official event name or logo in your ads.
 
 ## Lesson 5.17: One product, many kinds of buyer
 <!-- stage:attract -->

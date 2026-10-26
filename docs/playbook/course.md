@@ -37,7 +37,7 @@ Goals follow the profit-first order. Every track starts the same way: **1. Set u
 | 4 | Get your store ready to take orders | A real test order goes through checkout and lands in your inbox. | 14 | Your numbers | Just starting | Free | You confirm |
 | 5 | Get your first 100 site visits a day | An average of 100 sessions a day over the last 7 days. | 15 | Attract | Just starting | Starter | Your numbers |
 | 6 | Get 1,000 site visits a day while ads stay profitable | 1,000 sessions a day on average over 7 days, with ad spend at or under your target MER. | 18 | Attract | Growing, Scaling | Starter | Your numbers |
-| 7 | Add 500 people to your email list | 500 new subscribers since you started this goal (check your email tool). | 7 | Attract | Just starting, Growing, Scaling | Starter | You confirm |
+| 7 | Add 500 people to your email list | 500 new subscribers since you started this goal (check your email tool). | 8 | Attract | Just starting, Growing, Scaling | Starter | You confirm |
 | 8 | Get your first 10 orders from referrals and partners | 10 orders came through a referral link, partner code or guest feature. | 5 | Attract | Just starting, Growing, Scaling | Starter | You confirm |
 | 9 | Get add-to-cart above 8% | 8% or more of sessions add something to the cart, over 7 days. | 8 | Convert | Just starting, Growing, Scaling | Starter | Your numbers |
 | 10 | Get your conversion rate to 2.5% | 2.5% or more of sessions become an order, over 7 days. | 12 | Convert | Just starting, Growing, Scaling | Starter | Your numbers |
@@ -99,7 +99,7 @@ Each goal's tasks are the steps of the lessons listed, in order. Days follow a l
 
 **Finish line:** 500 new subscribers since you started this goal (check your email tool).  
 **Why this matters:** Your list is the one audience you own. Every subscriber can buy again without paying for another ad.  
-**Lessons:** 16.1, 12.1, 12.3, 12.4 · **Days:** 7 (1, 3, 4, 1, 5, 2, 2 tasks, about 5, 35, 25, 10, 55, 25, 25 min)
+**Lessons:** 16.1, 12.1, 12.3, 12.4 · **Days:** 8 (1, 3, 4, 1, 5, 2, 4, 2 tasks, about 5, 35, 25, 10, 55, 25, 45, 20 min)
 
 ### Get your first 10 orders from referrals and partners
 
@@ -171,7 +171,7 @@ Each goal's tasks are the steps of the lessons listed, in order. Days follow a l
 
 **Finish line:** Four weekly meetings held, each ending with one fix and an owner.  
 **Why this matters:** Checking in every week gives you 52 chances a year to fix problems early.  
-**Lessons:** 30.10, 9.11, 30.12, 30.14 · **Days:** 5 (1, 2, 4, 1, 3 tasks, about 5, 25, 40, 10, 30 min)
+**Lessons:** 30.10, 9.11, 30.12, 30.14 · **Days:** 5 (1, 2, 4, 1, 5 tasks, about 5, 25, 40, 10, 50 min)
 
 ### Write playbooks for your three most repeated tasks
 

@@ -32,9 +32,11 @@
   {"say": "Set up the new country in Shopify **Markets** on your current store.", "check": "The country is live as a market on your main store.", "lost": "Open **Markets**. Add the country."},
   {"say": "Only open a separate store if the products, prices, content or apps must be very different.", "check": "You run one store unless there's a clear reason not to.", "lost": "Keep one store for now."}
  ]},
-"25.7": {"intro": "Each country needs its own report. Otherwise a strong country can hide a weak one.",
+"25.7": {"intro": "Each country needs its own report and, later, its own campaign.",
  "steps": [
-  {"say": "Make a report showing MER by country (ad spend divided by sales, for each country).", "check": "You can see which countries make a profit.", "lost": "Ad spend ÷ sales for one country."},
-  {"say": "Either start a separate campaign per country once spend allows, or run one worldwide campaign to find demand, then give winning countries their own.", "check": "Each strong country has its own campaign and budget.", "lost": "Give your best country its own campaign."}
+  {"say": "Build a report of MER by country.", "check": "You see which countries are profitable.", "lost": "Break your ad report down by country."},
+  {"say": "Compare each country's MER with its own break-even.", "check": "Each country is above or below its line.", "lost": "Use the break-even from Lesson 25.2."},
+  {"say": "Give strong countries their own campaign when you can afford it.", "check": "Each strong country has its own budget.", "lost": "Start with your best country."},
+  {"say": "Put the country code in every campaign name.", "check": "Reports filter by country fast.", "lost": "Try \"US | Sales | Broad\"."}
  ]}
 }
