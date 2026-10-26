@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { cancelEmail, dailyTasksEmail, eventEmail, paymentFailedEmail, receiptEmail, welcomeEmail, winbackEmail, scorecardHtmlEmail } from "@/lib/email/templates";
-import { dueEmails, localHour } from "@/lib/email/schedule";
+import { dueEmails, localHour, zoneFor } from "@/lib/email/schedule";
 import { postalAddress } from "@/lib/email/postal";
 
 const c = { name: "Jamie Lee", baseUrl: "https://ecommercehelix.com", unsubUrl: "https://ecommercehelix.com/api/email/unsubscribe?t=tok&k=daily" };
@@ -63,4 +63,12 @@ describe("email schedule", () => {
     expect(dueEmails({ ...base, createdAt: new Date("2026-10-15T00:00:00Z") }, new Date("2026-10-15T03:00:00Z")).some((x) => x.kind === "welcome")).toBe(true);
     expect(dueEmails({ ...base, isDemo: true }, new Date("2026-10-15T11:30:00Z"))).toEqual([]);
   });
+});
+
+it("zoneFor: saved zone wins; Sydney default falls back to the store's country", () => {
+  expect(zoneFor("Europe/London", "US")).toBe("Europe/London");
+  expect(zoneFor("Australia/Sydney", "US")).toBe("America/New_York");
+  expect(zoneFor(undefined, "GB")).toBe("Europe/London");
+  expect(zoneFor("Australia/Sydney", "AU")).toBe("Australia/Sydney");
+  expect(zoneFor(null, "ZZ")).toBe("Australia/Sydney");
 });

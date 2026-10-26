@@ -6,6 +6,12 @@ import { addDays, isoDay } from "../dates";
 import { sequenceIndex } from "./sequence";
 
 export const localHour = (now: Date, tz: string) => Number(new Intl.DateTimeFormat("en-GB", { timeZone: tz, hour: "2-digit", hourCycle: "h23" }).format(now));
+/** Default zone per country, used when the saved zone is still the Sydney default but the store is elsewhere (so a US store does not get its "morning" email mid-afternoon). */
+const COUNTRY_ZONE: Record<string, string> = { NZ: "Pacific/Auckland", US: "America/New_York", CA: "America/Toronto", GB: "Europe/London", UK: "Europe/London", IE: "Europe/Dublin", DE: "Europe/Berlin", FR: "Europe/Paris", NL: "Europe/Amsterdam", SG: "Asia/Singapore", IN: "Asia/Kolkata", AE: "Asia/Dubai" };
+export function zoneFor(saved: string | null | undefined, country: string): string {
+  if (saved && saved !== "Australia/Sydney") return saved;
+  return COUNTRY_ZONE[(country || "").toUpperCase()] ?? saved ?? "Australia/Sydney";
+}
 export const EVENT_LEADS = [28, 14, 7, 1, 0];
 export const WINBACK_DAYS = 14;
 
