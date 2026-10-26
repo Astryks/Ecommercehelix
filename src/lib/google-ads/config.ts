@@ -1,7 +1,23 @@
 /** Google Ads API settings. REST, version v25 (July 2026). */
 export const GOOGLE_ADS_VERSION = process.env.GOOGLE_ADS_API_VERSION || "v25";
 export const GOOGLE_ADS_BASE = `https://googleads.googleapis.com/${GOOGLE_ADS_VERSION}`;
-export const GOOGLE_ADS_SCOPES = ["https://www.googleapis.com/auth/adwords", "openid", "email"];
+export const GA4_SCOPE = "https://www.googleapis.com/auth/analytics.readonly";
+/** GA4 sessions sync is off unless GA4_SESSIONS=1. When on, the Google sign-in also asks for read-only Analytics. */
+export const ga4On = (env: Record<string, string | undefined> = process.env) => env.GA4_SESSIONS === "1" || env.GA4_SESSIONS === "true";
+export const GOOGLE_ADS_SCOPES = ["https://www.googleapis.com/auth/adwords", "openid", "email", ...(ga4On() ? [GA4_SCOPE] : [])];
+
+type Ga4Report = { rows?: { dimensionValues?: { value?: string }[]; metricValues?: { value?: string }[] }[] };
+/** GA4 runReport (dimension date YYYYMMDD, metric sessions) -> daily rows. */
+export function ga4Sessions(r: Ga4Report): { date: string; value: number }[] {
+  const out: { date: string; value: number }[] = [];
+  for (const row of r.rows ?? []) {
+    const d = row.dimensionValues?.[0]?.value ?? "";
+    if (!/^\d{8}$/.test(d)) continue;
+    out.push({ date: `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`, value: Math.max(0, Math.round(Number(row.metricValues?.[0]?.value ?? 0) || 0)) });
+  }
+  return out.sort((a, b) => a.date.localeCompare(b.date));
+}
+export const cleanPropertyId = (s: string) => s.replace(/^properties\//, "").replace(/[^0-9]/g, "");
 
 /** live: client id, secret and developer token are all set. off: the card shows "coming soon". */
 export function googleAdsMode(env: Record<string, string | undefined> = process.env): "live" | "off" {
@@ -68,4 +84,43 @@ export function pausedCampaignOps(customerId: string, name: string, dailyBudget:
 
 export function assertPaused(body: { operations: { create?: { status?: string } }[] }) {
   for (const op of body.operations) if (op.create && op.create.status !== "PAUSED") throw new Error("Blocked: Helix only creates paused campaigns.");
+}
+
+export type AdDraftInput = { keywords: string[]; headlines: string[]; descriptions: string[]; finalUrl: string | null; cpcBid?: number };
+
+/** Keywords and RSA copy from product names and the store name. Pure, so it can be tested. */
+export function draftAdInput(productNames: string[], storeName: string | null, finalUrl: string | null): AdDraftInput {
+  const clean = (s: string) => s.replace(/[^\p{L}\p{N} &'-]/gu, " ").replace(/\s+/g, " ").trim();
+  const names = [...new Set(productNames.map(clean).filter(Boolean))].slice(0, 5);
+  const keywords = [...new Set(names.flatMap((n) => [n.toLowerCase(), `buy ${n.toLowerCase()}`]))].filter((k) => k.length <= 80).slice(0, 10);
+  const cut = (s: string, n: number) => (s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, ""));
+  const brand = storeName ? clean(storeName) : "";
+  const headlines = [...new Set([...names.map((n) => cut(n, 30)), brand && cut(`Shop ${brand}`, 30), "Fast Shipping", "Shop Online Today", "Quality You Can Trust"].filter(Boolean) as string[])].slice(0, 15);
+  const descriptions = [cut(`${names[0] ?? "Our range"}${brand ? ` from ${brand}` : ""}. Order online today.`, 90), "Easy returns and friendly support. Shop the range now."];
+  const safeUrl = finalUrl && /^https:\/\//.test(finalUrl) ? finalUrl : null;
+  return { keywords, headlines, descriptions, finalUrl: safeUrl };
+}
+
+/**
+ * Ad group, keywords and a responsive search ad, all PAUSED, for a campaign Helix just created.
+ * The ad is only built when there is a final URL and at least 3 headlines (Google's minimum).
+ */
+export function pausedAdGroupOps(customerId: string, campaignResourceName: string, name: string, input: AdDraftInput) {
+  const adGroupRes = `customers/${customerId}/adGroups/-2`;
+  const ops: { adGroupOperation?: unknown; adGroupCriterionOperation?: unknown; adGroupAdOperation?: unknown }[] = [
+    { adGroupOperation: { create: { resourceName: adGroupRes, name: `${name} ad group`, campaign: campaignResourceName, status: "PAUSED", type: "SEARCH_STANDARD", cpcBidMicros: String(Math.round((input.cpcBid ?? 1) * 1_000_000)) } } },
+    ...input.keywords.map((text) => ({ adGroupCriterionOperation: { create: { adGroup: adGroupRes, status: "PAUSED", keyword: { text, matchType: "PHRASE" } } } })),
+  ];
+  if (input.finalUrl && input.headlines.length >= 3 && input.descriptions.length >= 2)
+    ops.push({ adGroupAdOperation: { create: { adGroup: adGroupRes, status: "PAUSED", ad: { finalUrls: [input.finalUrl], responsiveSearchAd: { headlines: input.headlines.map((text) => ({ text })), descriptions: input.descriptions.map((text) => ({ text })) } } } } });
+  return { mutateOperations: ops };
+}
+
+/** Guardrail for googleAds:mutate bodies: every created thing must be PAUSED. */
+export function assertAllPaused(body: { mutateOperations: Record<string, unknown>[] }) {
+  for (const op of body.mutateOperations)
+    for (const v of Object.values(op)) {
+      const c = (v as { create?: { status?: string } }).create;
+      if (c && c.status !== "PAUSED") throw new Error("Blocked: Helix only creates paused ad groups, keywords and ads.");
+    }
 }
