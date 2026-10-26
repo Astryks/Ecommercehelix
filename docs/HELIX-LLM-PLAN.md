@@ -1,6 +1,6 @@
 # Helix AI coach: LLM plan and costs
 
-Status: plan only. Nothing paid has been built or switched on. Prices were checked on the official pricing pages on **26 Oct 2026 (AEDT)**. Everything is in USD.
+Status (27 Oct 2026): MVP built on branch `helix-ai-coach` behind the `HELIX_COACH` flag (off in production). No paid calls made, embedding job not run yet; see STATUS.md "Not built yet / needs Sid". Original plan below. Prices were checked on the official pricing pages on **26 Oct 2026 (AEDT)**. Everything is in USD.
 
 ## 1. Architecture (phased)
 

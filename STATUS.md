@@ -1,5 +1,49 @@
 # ▶ NEXT STEPS (updated 26 Oct 2026, evening) — start here
 
+## 27 Oct 2026: Helix AI coach MVP (branch `helix-ai-coach`, NOT pushed, flag OFF)
+
+A pop-up coach ("Helix - Your business coach") sits at the bottom right of the dashboard. It is behind the `HELIX_COACH` flag. In production it also needs `HELIX_COACH_PROD=1`, so it is **off in prod**. No money has been spent and no paid API calls were made, because no gateway key is set on the box.
+
+**What's built (verified with mocked models and tests):**
+- **Three answer modes, each labelled.** *Your store* uses aggregated numbers only: plan, profit waterfall, 30-day totals and store-check findings, with no customer PII. *Helix course* uses RAG over the Helix course text (playbook, SOPs and cards, about 787 chunks), takes the top 6 and links to `/learn/...` lessons. *General* is used when the best score is under 0.55. It starts with "General advice (not from the Helix course):", gives no links and makes up no numbers.
+- **Retrieval.** Hybrid pgvector (cosine) plus Postgres full-text, scored 0.7/0.3. Until the embedding job runs, a free keyword (BM25) search is used, so the coach works without embeddings.
+- **Routing through the Vercel AI Gateway.**
+  - The fast model is `anthropic/claude-haiku-5.5`, the deep model is `anthropic/claude-sonnet-5`, and `google/gemini-3.8-flash` is the fallback if Claude errors. The ids are in `src/lib/coach/config.ts` and can be overridden with env vars (`COACH_MODEL_FAST/DEEP/FALLBACK/EMBED`).
+  - Deep is used for the Deep dive button, multi-step questions, context over 12k tokens, or a fast answer that fails the self-check.
+- **Guardrails, enforced on the server.**
+  - Monthly messages: Free 20 fast. Starter 300, of which 40 can be deep. Growth 800, of which 100 can be deep.
+  - Hard monthly spend cap across all users: `COACH_MONTHLY_BUDGET_USD`, default $50.
+  - Rate limit of 6 a minute. Logs are redacted (emails, phones, cards, addresses). Prompt training is turned off at the gateway.
+  - The system prompt forbids naming or imitating any outside course, coach or brand. Optional `COACH_BLOCKED_NAMES` (comma-separated, set in Vercel and never committed) strips listed names from answers.
+- **Helix voice.** The tone guide is in the system prompt. Every answer that has matching course material includes a "Helix tip" with a lesson link, including store answers.
+- **Memory.**
+  - Saved per user and kept across sessions, under: business, store, products, channels, goals, budget, decisions, tried and results.
+  - Notes are pulled out after each answer by a small fast-model call that does not count toward the user's limit.
+  - No customer PII is kept. Users can edit or delete any note, or delete everything, under "What Helix remembers" in the widget.
+- **Daily chat.** Each day starts a new visible chat, and memory carries over. The chat opens with the fixed greeting, then a personal line (yesterday's done or open task, the user's goal).
+- **Daily tasks.** One to three tasks a day, built from: yesterday's open task, a numbers flag, the next checklist lesson and the daily topic. Users can tick them off, and open tasks carry over to the next day. `coachTasksForEmail()` is ready, but it is not wired into the daily email yet.
+- **Database.** The migration is additive: `CoachChunk`, `CoachUsage`, `CoachMemory`, `CoachMessage`, `CoachTask`, plus the `vector` extension. It is in `prisma/schema.prisma` and `prisma/sql/2026-10-27-helix-coach.sql`.
+- **Tests.** `tests/coach.test.ts` has 29 tests covering routing, fallback, Gemini failover, self-check escalation, limits and caps, the flag, redaction, memory and daily tasks. The full suite passes: 406 passed, 2 skipped. `tsc` and `next build` are clean.
+
+**Costs (USD):**
+- **One-off embedding.**
+  - Helix course text in the repo: about 228k tokens, about **$0.05**. The exact figure is printed by `npx vite-node scripts/coach-embed.ts`, a dry run that sends nothing.
+  - Full 7.8M-token corpus from the plan: **$1.57**, or $0.78 by batch. It only applies if the Helix-reworded extra material is added through `COACH_EXTRA_DIR`. Never point that at raw transcripts.
+- **Monthly.**
+  - Typical message about $0.004, plus about $0.0003 for memory.
+  - Per user: about $0.74 typical, $0.19 light. Worst case at the plan caps: Starter $3.26, Growth $8.31.
+  - The hard cap defaults to $50 a month in total.
+
+### Not built yet / needs Sid
+1. **Approve spend and add a gateway key:** set `AI_GATEWAY_API_KEY` in Vercel (Preview first), then run a 2-3 message smoke test.
+2. **Apply the DB change:** run `npm run db:push` (or the SQL file) against Neon. It needs the `vector` extension, which Neon supports.
+3. **Run the embedding job:** `npx vite-node scripts/coach-embed.ts --yes` (about $0.05, or $1.57 with the full corpus).
+4. **Enable the flag:** `HELIX_COACH=1` on Preview. Production also needs `HELIX_COACH_PROD=1`.
+5. Optionally set `COACH_BLOCKED_NAMES` and `COACH_MONTHLY_BUDGET_USD` in Vercel.
+6. **Meta app review**, so live ad numbers can feed store answers.
+7. **Shopify scopes** (`read_orders`, `read_all_orders`) for richer store answers.
+8. Wire `coachTasksForEmail()` into the daily email cron (optional).
+
 ## 26 Oct 2026: daily topics, checklist quest, AI plan (branch `helix-daily-topics-quest`, NOT pushed)
 - Daily email topic teaser: 72-topic Attract→Convert→Grow calendar with no repeats per cycle (fcf43d1). Social calendar of 72 IG + 72 FB posts in `docs/social/daily/`, prepared only and not scheduled.
 - `/dashboard/learn/framework`: stage timeline, ticks, XP, badges, streak, plus "Next up" on Today (d85cb1e). Build OK, 376 tests pass.

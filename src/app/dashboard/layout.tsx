@@ -1,4 +1,6 @@
 import { LostButton } from "@/components/cards/LostButton";
+import { CoachWidget } from "@/components/dashboard/CoachWidget";
+import { coachEnabled } from "@/lib/coach/config";
 import { LegalLinks } from "@/components/legal/LegalLinks";
 import Link from "next/link";
 import { Settings as SettingsIcon } from "lucide-react";
@@ -54,6 +56,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
         <div className="min-w-0 flex-1 px-4 pb-28 pt-6 sm:px-8 lg:py-10">{children}</div>
       </div>
       <LostButton />
+      {coachEnabled() && <CoachWidget />}
       <BottomBar />
     </div>
   );
