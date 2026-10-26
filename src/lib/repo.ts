@@ -71,7 +71,12 @@ export async function ensureUser(id: string, email: string, name: string): Promi
   let user = await prisma.user.findUnique({ where: { id } });
   // Never link a demo session to an existing user by email (see src/lib/demo-auth.ts).
   if (!user && mayLinkByEmail(id, email)) user = await prisma.user.findUnique({ where: { email } });
-  if (!user) user = await prisma.user.create({ data: { id, email: email || null, name, isDemo: isDemoUserId(id) } });
+  // Parallel first-visit calls can race here: if another call created the user first, read it back.
+  if (!user)
+    user = await prisma.user.create({ data: { id, email: email || null, name, isDemo: isDemoUserId(id) } }).catch(async (e: { code?: string }) => {
+      if (e?.code !== "P2002") throw e;
+      return prisma.user.findUniqueOrThrow({ where: { id } });
+    });
   const sub = await prisma.subscription.findUnique({ where: { userId: user.id } });
   // Pages call this in parallel on a first visit; skipDuplicates means only the first call seeds.
   if (!sub && (await prisma.subscription.createMany({ data: [{ userId: user.id }], skipDuplicates: true })).count > 0) {
