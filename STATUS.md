@@ -924,3 +924,14 @@ Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, We
 - Footers: no postal address (daily, alerts, scorecard, winback, seasonal nudges); one-click unsubscribe + preferences links kept.
 - Tests: tests/email-variety.test.ts (14-day simulation, nothing-new rule, reorder at most once). Sample: /workspace/reports/helix/email-variety-sample/index.html.
 - Open: seasonal-nudges cron (weekly) has no send-log and ignores prefs; removing the postal address conflicts with CAN-SPAM for US recipients.
+
+## Daily scoreboard (branch helix-daily-scoreboard-27oct)
+- Today page top: "Did I grow yesterday?" (YES / NOT YET / NO / no data) vs usual same weekday and target; Sales/Costs/Profit in plain English; streak, target hits; quick entry for yesterday (keeps Shopify sales/orders); today's target with own goal; "My plan to grow today" (1-3 tasks from your numbers, uses markDone/TaskCompletion, ids `grow-<rule>-<date>`, no repeat within 6 days).
+- History: /dashboard/numbers/history (week/month/year, chart or table, YTD vs last year, last-year entry by month/week or CSV template, CSV export at /api/scoreboard/export).
+- Target: 60% average of last 4 same weekdays + 40% last-14-day average, times trend (last 14 vs previous 14, capped at ±10%); if last year's same day exists and ≥14 YoY pairs in last 28 days, blend 25% last-year×YoY growth (clamped 0.5-2x); ×1.05; rounded to $10. Needs 5 days with sales in the last 28, else no target. A custom goal always wins.
+- Paywall (server-side in loadScoreboard, actions, export route): Free = yesterday, today's target, current week. Paid = full history, YTD vs LY, last-year entry/import, exports.
+- Level hook for Road-to-$100M: `scoreboardProgress(userId)` in src/lib/scoreboard/server.ts returns { targetStreak, bestTargetStreak, targetHits, bests, lastYesterday, growTasksDone, xp } (xp = hits*10 + grow tasks*5 + personal bests*25). Not wired to Progress page (other branch).
+- Coach gets `scoreboardCoachLine`; daily email numbers line adds "Today's target: $X in sales." (subjects unchanged).
+- Storage: ToolInput kind "scoreboard" (goal + manual periods, totals only). No schema change, no SQL.
+- Screenshot-only flag SCOREBOARD_PREVIEW_PAID=true (non-production, demo users only) shows the paid view.
+- Shopify history beyond 60 days isn't pulled (would need read_all_orders, not requested); use last-year entry.

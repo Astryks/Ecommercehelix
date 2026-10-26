@@ -7,6 +7,8 @@ import { getRawDays, getSettings } from "../repo";
 import { NO_FACTS, type DailyFacts } from "./daily-mix";
 import { questForUser } from "../quest-server";
 import { PATH } from "../learn-path";
+import { targetFor, toScoreDay } from "../scoreboard/core";
+import { getScoreboardInput } from "../scoreboard/server";
 
 /**
  * What makes one user's daily email personal: the next lesson step and goal from the course (same logic as Today),
@@ -45,6 +47,7 @@ export async function dailyFacts(userId: string, date: string): Promise<DailyFac
         sales: x.netRevenue, orders: row.orders, adSpend: x.adSpend, merPct: x.merPct,
         avgSales: wk.dataDays >= 3 ? wk.netRevenue / wk.dataDays : null,
         avgMerPct: wk.dataDays >= 3 && wk.adSpend > 0 ? wk.merPct : null,
+        target: await getScoreboardInput(userId).then((i) => targetFor(real.filter((d) => d.date < date).map((d) => toScoreDay(d, settings)), date, i.dailyTarget).amount).catch(() => null),
       };
     }
   }

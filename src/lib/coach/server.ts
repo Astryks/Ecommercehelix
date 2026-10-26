@@ -1,4 +1,5 @@
 import "server-only";
+import { scoreboardCoachLine } from "../scoreboard/server";
 import { hasDb, prisma } from "../db";
 import { getAccount, getDays, getProfitSetup } from "../repo";
 import { auditRuns } from "../site-audit/run";
@@ -62,6 +63,8 @@ export async function storeSummary(userId: string): Promise<string | null> {
     const rev = s((d) => d.revenue), orders = s((d) => d.orders), ad = s((d) => d.adMeta + d.adGoogle + d.adTiktok + d.adOther), sess = s((d) => d.sessions);
     lines.push(`Numbers, last ${last.length} days to ${last[last.length - 1].date}: sales ${r0(rev)}, orders ${r0(orders)}, AOV ${orders ? r1(rev / orders) : "n/a"}, ad spend ${r0(ad)} (Meta ${r0(s((d) => d.adMeta))}, Google ${r0(s((d) => d.adGoogle))}, TikTok ${r0(s((d) => d.adTiktok))}), MER ${ad ? r1(rev / ad) : "n/a"}, refunds ${r0(s((d) => d.refunds))}, sessions ${r0(sess)}, conversion ${sess ? r1((orders / sess) * 100) + "%" : "n/a"}, new-customer orders ${r0(s((d) => d.newCustomerOrders))}, Meta-reported revenue ${r0(s((d) => d.metaRevenue))}.`);
   }
+  const sb = await scoreboardCoachLine(userId).catch(() => null);
+  if (sb) lines.push(sb);
   const run = runs[0];
   if (run?.findings?.length) {
     const bad = run.findings.filter((f) => f.severity !== "good").slice(0, 8);
