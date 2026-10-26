@@ -139,7 +139,7 @@ export function storeFacts(i: StoreSummaryInput): MemoryFact[] {
 
 /** First coach message after someone subscribes. */
 export function welcomeMessage(firstName: string, plan: string): string {
-  const name = firstName ? ` ${firstName}` : "";
+  const name = firstName ? `, ${firstName}` : "";
   return `Welcome to Helix ${plan}${name}! I'm your Helix coach. I know your numbers and the Helix course, and I'll remember what you tell me about your business.\n\nEach day I'll give you 1-3 short tasks here and in your daily email. Your first tasks are below. Ask me anything, any time.`;
 }
 
