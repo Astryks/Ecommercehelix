@@ -36,5 +36,15 @@
  "steps": [
   {"say": "List your funding options: profit put back in, longer supplier terms, inventory finance (loans for stock), revenue-based funding (pay back a share of sales), or selling shares (including crowdfunding).", "check": "You know which options fit your stage.", "lost": "Start with profit put back in."},
   {"say": "Keep clean numbers, written processes, and customer data you own.", "check": "The business would pass a buyer's or lender's check.", "lost": "Write down one process you do every week."}
+ ]},
+"27.7": {"intro": "Your energy runs the business. Protect it.",
+ "steps": [
+  {"say": "For one week, write down when you go to bed, when you wake and how you feel each morning, from 1 to 5.", "check": "You see your real sleep pattern, not the one you think you have.", "lost": "Just note your wake-up time."},
+  {"say": "Pick a fixed wake-up time for weekdays and weekends, and keep it within about 30 minutes.", "check": "You wake at about the same time every day.", "lost": "Pick a time you can keep on weekends."},
+  {"say": "Set a \"shop closed\" time each evening, at least an hour before bed, and turn off store and ad app alerts after it.", "check": "No sales or ad alerts after closing time.", "lost": "Mute alerts one hour before bed."},
+  {"say": "Get outside in daylight for 10 to 15 minutes within an hour of waking.", "check": "A short morning walk or coffee outside becomes part of your day.", "lost": "Have your first drink outside."},
+  {"say": "Block your best 90 minutes of the day for the hardest work, like planning, ads or new products, before email and messages.", "check": "Big jobs get your best energy instead of what is left over.", "lost": "Block 60 minutes, not 90."},
+  {"say": "Check your numbers once a day at a set time (your daily profit check), not every hour.", "check": "Fewer panicked changes and calmer decisions.", "lost": "Check once in the morning."},
+  {"say": "If you still feel tired most days after a month of steady sleep, see your doctor.", "check": "Ongoing tiredness gets checked by a professional.", "careful": "This is general wellbeing information, not medical advice.", "lost": "Book a check-up if unsure."}
  ]}
 }

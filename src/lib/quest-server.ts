@@ -11,7 +11,7 @@ export function questLessons(): QuestLesson[] {
   const byRef = new Map(mods.flatMap((m) => m.lessons.filter((l) => l.ref).map((l) => [l.ref!, { l, m }] as const)));
   return PATH.flatMap((p) => p.refs.flatMap((ref) => {
     const x = byRef.get(ref);
-    return x ? [{ ref, title: x.l.title.replace(/^Lesson [\d.]+:\s*/, ""), stage: x.l.stage, href: `/learn/${x.m.slug}#${x.l.id}`, stepId: p.id, stepTitle: p.title }] : [];
+    return x ? [{ ref, title: x.l.title.replace(/^Lesson [\d.]+:\s*/, ""), stage: x.l.stage, href: `/learn/${x.m.slug}#${x.l.id}`, stepId: p.id, stepTitle: p.title, ...(p.label && p.stage !== "start" ? { section: p.stage } : {}) }] : [];
   }));
 }
 

@@ -11,6 +11,8 @@ import { QUESTIONS } from "@/lib/diagnosis";
 import { saveQuestions, saveStoreStep } from "./actions";
 import { DemoAccountNotice } from "@/components/DemoAccountNotice";
 import { isDemoUserId } from "@/lib/demo-auth";
+import { StageStrip } from "@/components/StageStrip";
+import { questForUser } from "@/lib/quest-server";
 
 export const dynamic = "force-dynamic";
 
@@ -22,7 +24,7 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
   const s = await auth();
   if (!s?.user?.id) redirect("/signin?next=" + encodeURIComponent("/start" + (raw ? "?url=" + raw : "")));
   const id = await ensureUser(s.user.id, s.user.email ?? "", s.user.name ?? "");
-  const [acct, diag] = await Promise.all([getAccount(id), getDiagnosis(id)]);
+  const [acct, diag, qx] = await Promise.all([getAccount(id), getDiagnosis(id), questForUser(id)]);
   const prev = diag?.diagnosis.answers ?? {};
   return (
     <>
@@ -35,6 +37,7 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
               <li key={t} className={`rounded-full px-3 py-1 ${i + 1 === step ? "bg-slate-900 text-white" : i + 1 < step ? "bg-cyan-100 text-cyan-900" : "bg-white text-slate-500 ring-1 ring-slate-200"}`}>{i + 1}. {t}</li>
             ))}
           </ol>
+          <div className="mt-4"><StageStrip quest={qx.quest} /></div>
           {step === 1 ? (
             <>
               <h1 className="mt-4 text-3xl font-bold tracking-tight">Let&apos;s build your plan</h1>

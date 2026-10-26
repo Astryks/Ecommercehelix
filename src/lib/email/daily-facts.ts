@@ -5,6 +5,8 @@ import { derive } from "../scorecard";
 import { addDays } from "../dates";
 import { getRawDays, getSettings } from "../repo";
 import { NO_FACTS, type DailyFacts } from "./daily-mix";
+import { questForUser } from "../quest-server";
+import { PATH } from "../learn-path";
 
 /**
  * What makes one user's daily email personal: the next lesson step and goal from the course (same logic as Today),
@@ -13,6 +15,12 @@ import { NO_FACTS, type DailyFacts } from "./daily-mix";
 export async function dailyFacts(userId: string, date: string): Promise<DailyFacts> {
   const [course, raw, settings] = await Promise.all([getCourse(userId, date).catch(() => null), getRawDays(userId).catch(() => []), getSettings(userId).catch(() => null)]);
   const out: DailyFacts = { ...NO_FACTS };
+  // Stage of the next lesson in the guided path, so the daily topic can match where the user is.
+  try {
+    const { quest } = await questForUser(userId);
+    const step = quest.next ? PATH.find((p) => p.id === quest.next!.stepId) : undefined;
+    out.stage = step && step.stage !== "start" ? step.stage : quest.next ? null : "grow";
+  } catch { out.stage = null; }
 
   const cur = course?.current;
   if (cur) {

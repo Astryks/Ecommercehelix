@@ -40,6 +40,7 @@ import { seasonTasksFor } from "@/lib/season-tasks";
 import { bannerFor } from "@/lib/season-calendar";
 import { QuestNextUp } from "@/components/dashboard/QuestNextUp";
 import { questForUser } from "@/lib/quest-server";
+import { StageStrip } from "@/components/StageStrip";
 import { waterfall } from "@/lib/profit-setup";
 import { TodayTasks } from "@/components/dashboard/TodayTasks";
 import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
@@ -165,6 +166,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <h1 className="page-title">Today</h1>
           <p className="page-lead">Here&apos;s what to do today. One step at a time.</p>
         </header>
+        <StageStrip quest={qx.quest} />
         {tasksBox}
         <QuestNextUp q={qx.quest} streak={qx.streak} />
         <NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
@@ -198,6 +200,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
 
   return (
     <div className="mx-auto max-w-7xl">
+      <div className="mb-6"><StageStrip quest={qx.quest} /></div>
       <div className="mb-6">{tasksBox}</div>
       <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>
       <div className="mb-6"><NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>

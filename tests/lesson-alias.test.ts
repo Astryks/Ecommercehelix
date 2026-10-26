@@ -43,6 +43,12 @@ describe("26 Oct 2026 reorder: old lesson numbers still work", () => {
     expect(toCurrentRef("23.8")).toBe("21.8"); // Product safety, labelling and recalls
     expect(toStoredRef("21.8")).toBe("23.8");
     expect(toCurrentRef("21.8")).toBe("4.6");
+    // 27 Oct 2026 lessons: new permanent ids, old saved ids untouched.
+    for (const [stored, shown] of [["3.12", "15.12"], ["10.18", "16.18"], ["5.23", "5.22"], ["12.13", "11.13"], ["16.10", "27.7"]]) {
+      expect(toCurrentRef(stored)).toBe(shown);
+      expect(toStoredRef(shown)).toBe(stored);
+    }
+    expect(toCurrentRef("5.22")).toBe("5.21");
   });
 
   it("keeps lessons merged before the reorder pointing at the right lesson and step", () => {

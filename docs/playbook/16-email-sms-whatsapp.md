@@ -510,6 +510,41 @@ A rule-of-thumb guide, not a promise. Some email apps open emails automatically 
 | Key emails | Thank-you, how-to, reviews, gifts for friends | Reorder reminder timed to the usual gap |
 | Cross-sells | Accessories that go with the first buy | Refills, bundles and subscriptions |
 
+## Lesson 16.18: Turn unknown visitors into subscribers, with consent
+<!-- stage:convert -->
+
+**Why this matters:** Most visitors leave without buying, and you never learn who they were. You cannot (and should not) secretly find out who someone is. What you can do is give them a good reason to share their email or phone number by choice, then follow up with your welcome flow.
+
+**Step 1.** Pick one sign-up reason worth giving an email for, like a first-order gift, early access, a guide or a small discount you can afford.
+
+**Expected result:** One clear offer, checked against your margin.
+
+**Step 2.** Turn on a sign-up form or pop-up in your email app (like Shopify Email forms or Klaviyo) that shows after about 10 seconds or when someone goes to leave.
+
+**Expected result:** New visitors see your offer once, not on every page.
+
+**Step 3.** Set the form to ask only for an email first, with an easy-to-see close button on mobile.
+
+**Expected result:** The pop-up does not block shoppers or hurt your mobile sales.
+
+**Step 4.** Add a clear tick box or line saying what they will get and how often, with a link to your privacy policy. Leave SMS unticked by default.
+
+**Expected result:** Every sign-up has clear consent you can show if asked.
+
+**Step 5.** Connect the form to your welcome flow (Lesson 16.1) so the offer arrives within minutes.
+
+**Expected result:** New subscribers get their gift or code straight away.
+
+**Step 6.** Add a sign-up box in your footer and on your checkout for people who skip the pop-up.
+
+**Expected result:** People can join any time, not just from the pop-up.
+
+**Step 7.** After 2 weeks, check your sign-ups per 100 visitors (many stores see 2 to 5).
+
+**Expected result:** You know your sign-up rate and what lifts it.
+
+**Watch out:** Some apps claim they can name visitors who never signed up. Sending marketing to people who did not agree can break spam and privacy laws in Australia, the UK, the EU and parts of the US. Only email people who chose to join.
+
 ## Self-check
 
 1. What is a micro-commitment form?

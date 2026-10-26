@@ -6,7 +6,7 @@ import { requireUser } from "@/lib/session";
 import { getCompletions, getLessonSteps } from "@/lib/repo";
 import { listModules } from "@/lib/learn";
 import { STAGE_INFO } from "@/lib/stages";
-import { FIRST_AD_BEFORE, FIRST_AD_ORDER, PATH, pathStepById } from "@/lib/learn-path";
+import { CONVERT_BEFORE_ADS, FIRST_AD_BEFORE, FIRST_AD_ORDER, PATH, PATH_STAGE_NAME, pathStepById } from "@/lib/learn-path";
 
 export function generateStaticParams() {
   return PATH.map((p) => ({ step: p.id }));
@@ -35,9 +35,13 @@ export default async function PathStepPage({ params }: { params: Promise<{ step:
   return (
     <div className="mx-auto max-w-4xl">
       <Link href="/dashboard/learn" className="inline-flex items-center gap-1 text-sm text-slate-600 hover:underline"><ArrowLeft className="h-4 w-4" aria-hidden /> Back to your path</Link>
-      <p className="mt-3 font-display text-lg text-[#5A50D6]">Step {p.n} of {PATH.length}</p>
+      <p className="mt-3 flex flex-wrap items-center gap-2 font-display text-lg text-[#5A50D6]">Step {p.n} of {PATH.length}
+        <span className={`rounded-full px-2 py-0.5 font-sans text-xs font-semibold ring-1 ${p.stage === "start" ? "bg-violet-50 text-violet-800 ring-violet-200" : STAGE_INFO[p.stage].chip}`} data-testid="step-stage">{PATH_STAGE_NAME[p.stage]}</span>
+        {p.label && <span className="rounded-full bg-orange-50 px-2 py-0.5 font-sans text-xs font-semibold text-orange-800 ring-1 ring-orange-200">{p.label}</span>}
+      </p>
       <h1 className="font-serif text-4xl uppercase tracking-wide text-slate-900">{p.title}</h1>
       <p className="mt-1 max-w-2xl text-slate-700">{p.blurb}</p>
+      {p.label && <p className="mt-2 max-w-2xl rounded-xl border border-orange-200 bg-orange-50 p-3 text-sm text-orange-900" data-testid="convert-before-ads">{CONVERT_BEFORE_ADS} These lessons stay tagged Convert. You will build on them in the Convert steps later.</p>}
       <p className="mt-1 text-sm tabular-nums text-slate-600">{d} of {lessons.length} lessons done</p>
 
       {p.id === "first-ad" && (

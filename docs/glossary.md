@@ -38,6 +38,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **CPA** (cost per acquisition, cost per sale, cost per purchase): Cost per acquisition: how much ad money it took to get one sale.
 - **CPM**: Cost to show your ad 1,000 times.
 - **Creative** (creatives): The ad itself: the picture or video plus the words.
+- **Creative fatigue** (ad fatigue, tired ad): When an ad has been shown to the same people so often that fewer click and each sale costs more. Fix it with a genuinely new ad.
 - **Creator** (creators): A person who makes social content and can feature your product.
 - **CTR** (click-through rate, outbound CTR): Click-through rate: out of every 100 people who saw your ad, how many clicked.
 - **Custom audience** (custom audiences): A list Meta builds from your own data, like site visitors or customers.
@@ -81,11 +82,13 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Payout** (payouts): The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts.
 - **Pixel**: A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
 - **PMax** (Performance Max): A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign.
+- **Pop-up** (popup, sign-up form): A small box on your store that offers a reason to join your email list. People choose to sign up.
 - **Pop-up**: A box on your site that asks visitors for their email, often with a small reward.
 - **Post-purchase offer** (upsell): A one-click extra offer shown right after someone buys.
 - **Product cost** (COGS, cost of goods): What one item costs you to make or buy, including freight to your warehouse.
 - **Product feed** (feed): The list of your products, prices and photos that Google and Meta read to make shopping ads.
 - **Product recall**: Taking an unsafe product off sale and asking buyers to return it or stop using it, for a refund, repair or replacement.
+- **Product-market fit** (PMF): When a clear group of people buys your product, buys again or tells friends, without you pushing hard.
 - **Profit** (contribution profit, contribution): Usually means contribution profit: what is left from sales after product cost, shipping, payment fees, discounts, refunds and ads. Net profit also takes off fixed costs.
 - **Reconciliation** (reconcile): Matching the money in your bank with the sales, fees and refunds in your books.
 - **Reorder point**: The stock level at which you should order more so you do not run out.

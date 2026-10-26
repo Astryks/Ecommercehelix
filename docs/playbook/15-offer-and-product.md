@@ -301,6 +301,41 @@
 
 **Watch out:** Never put the price up and then "discount" it back down to the old price. Shoppers notice, and in many places it breaks the law. In Australia, a "was" price must be a real recent price (see [ACCC: two-price comparisons](https://www.accc.gov.au/publications/advertising-selling/advertising-and-selling-guide/pricing/two-price-comparison-advertising)).
 
+## Lesson 15.12: Check people really want it before you go big
+<!-- stage:convert -->
+
+**Why this matters:** The most expensive mistake is spending months and money on a product people do not want enough to buy. Product-market fit means a clear group of people buys it, buys it again or tells friends, without you pushing hard. You can test this cheaply before you order lots of stock.
+
+**Step 1.** Write one sentence: who it is for, the problem it solves and why it beats what they use now.
+
+**Expected result:** One clear sentence you could say to a stranger.
+
+**Step 2.** Find 3 to 5 places where those people already talk, like groups, forums or competitor reviews, and note the words they use for the problem.
+
+**Expected result:** A page of real customer words and complaints.
+
+**Step 3.** Look up 3 competitors selling something close. Note their price, reviews and what buyers praise or complain about.
+
+**Expected result:** You know if there is demand and a gap you can fill.
+
+**Step 4.** Make a simple product page with real photos or samples, a price and a pre-order or "notify me" button.
+
+**Expected result:** A page that can take interest or pre-orders before you hold big stock.
+
+**Step 5.** Send a small, fixed amount of traffic to it, like a $100 to $200 ad test or posts to your own audience.
+
+**Expected result:** At least a few hundred visitors from the right people.
+
+**Step 6.** Count the sign-ups or pre-orders per 100 visitors, and check your margin still works after ad costs (Lesson 1.2 shows your costs).
+
+**Expected result:** You know if people act, and if each sale would make money.
+
+**Step 7.** After the first buyers get it, ask them: "How would you feel if you could no longer buy this?" Count how many say "very disappointed".
+
+**Expected result:** A simple fit score. If around 4 in 10 or more are very disappointed, you likely have something. If not, change the offer before ordering more.
+
+**Watch out:** Friends and family saying "I'd buy that" is not proof. Only count money, pre-orders or email sign-ups from strangers.
+
 ## Self-check
 
 1. Which lever does a free returns policy belong to?

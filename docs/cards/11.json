@@ -87,5 +87,15 @@
   {"say": "Make a thumbnail for each video: one face or product, big and bright, with 3 words or fewer.", "check": "Thumbnails you can read on a small phone screen.", "lost": "Big picture, 3 words or fewer."},
   {"say": "In the description, put a link to the product page with a tracking tag (UTM, a label that tells your reports where a visit came from).", "check": "You can see sales from YouTube in your store reports.", "lost": "Add a tagged link to your product."},
   {"say": "Post one video every 2 weeks for 3 months. In **YouTube Studio > Analytics**, check which titles get the most clicks and the longest watching time.", "check": "You know which topics work, and you make more like them.", "lost": "Post every 2 weeks and check what works."}
+ ]},
+"11.13": {"intro": "Pinterest is a search engine for ideas. Use the words people type.",
+ "steps": [
+  {"say": "Change your Pinterest account to a free business account and claim your website in **Settings > Claimed accounts**.", "check": "Your pins show your logo and Pinterest gives you visitor numbers.", "lost": "A business account is free. Claiming the site can wait."},
+  {"say": "Type your main product into the Pinterest search bar and write down the suggested words that appear under it.", "check": "A list of 15 to 20 words and phrases real shoppers search for.", "lost": "Write down 5 suggestions to start."},
+  {"say": "Create 5 to 10 boards, each named with one of those search phrases, like \"Linen summer dresses\" rather than \"My faves\".", "check": "Every board has a clear, searchable name and a one-line description that uses the same words.", "lost": "Start with 3 boards."},
+  {"say": "For each product, make 2 to 3 tall pins (2:3, like 1000 x 1500 pixels) with a different photo or text on each.", "check": "Each product has a few fresh pins, not one copy pinned many times.", "lost": "Start with 1 pin for your best seller."},
+  {"say": "Write each pin title and description with a search phrase in plain words, and link the pin to the exact product page.", "check": "Clicks land on the product, not your home page.", "lost": "Copy your product name plus one search word."},
+  {"say": "Post a few fresh pins every week, and post seasonal pins 6 to 8 weeks before the season.", "check": "Your pins are already being found when people start planning.", "lost": "Post 3 pins a week."},
+  {"say": "Once a month, open **Analytics** and sort your pins by outbound clicks.", "check": "You know your top 5 pins, so your next pins can copy their style.", "lost": "Look at your single best pin."}
  ]}
 }

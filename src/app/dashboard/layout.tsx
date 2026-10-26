@@ -15,12 +15,14 @@ import { requireUser } from "@/lib/session";
 import { getAccount, listApprovals } from "@/lib/repo";
 import { planName } from "@/lib/plans";
 import { signOut } from "@/auth";
+import { StageStrip } from "@/components/StageStrip";
+import { questForUser } from "@/lib/quest-server";
 
 export const dynamic = "force-dynamic";
 
 export default async function DashboardLayout({ children }: LayoutProps<"/dashboard">) {
   const u = await requireUser();
-  const [acct, approvals] = await Promise.all([getAccount(u.id), listApprovals(u.id)]);
+  const [acct, approvals, qx] = await Promise.all([getAccount(u.id), listApprovals(u.id), questForUser(u.id)]);
   const pending = approvals.filter((a) => a.status === "pending").length;
   async function out() {
     "use server";
@@ -38,10 +40,12 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
             <SettingsIcon className="h-5 w-5" aria-hidden /> Settings{pending > 0 && <span className="rounded-full bg-cyan-400 px-1.5 text-xs font-bold text-slate-950">{pending}</span>}
           </Link>
         </header>
+        <div className="bg-ink px-4 pb-3 lg:hidden"><StageStrip quest={qx.quest} compact dark /></div>
         <aside className="hidden bg-ink px-4 lg:block lg:w-64 lg:flex-none">
           <div className="py-5 lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col">
           <Link href="/" className="block px-2"><Logo dark size={30} /></Link>
-          <nav className="mt-6 lg:flex-1" aria-label="Dashboard"><NavLinks pending={pending} /></nav>
+          <div className="mt-5"><StageStrip quest={qx.quest} compact dark /></div>
+          <nav className="mt-4 lg:flex-1" aria-label="Dashboard"><NavLinks pending={pending} /></nav>
           <div className="mt-4 hidden min-w-0 rounded-xl bg-white/5 p-4 text-sm text-slate-300 lg:block">
             <p className="truncate font-medium text-white" title={u.name || u.email || undefined}>{u.name || u.email}</p>
             {isDemoUserId(u.id) && <p className="mt-1 text-xs font-semibold text-amber-300">Demo account</p>}

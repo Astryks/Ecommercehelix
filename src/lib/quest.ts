@@ -6,7 +6,8 @@
  */
 import { STAGE_ORDER, type StageId } from "./stages";
 
-export type QuestLesson = { ref: string; title: string; stage: StageId; href: string; stepId: string; stepTitle: string };
+/** `section` (optional) puts a lesson in another stage section than its own tag, e.g. Convert basics done before ads sit in Attract. */
+export type QuestLesson = { ref: string; title: string; stage: StageId; href: string; stepId: string; stepTitle: string; section?: StageId };
 export type QuestItem = QuestLesson & { done: boolean; n: number };
 export type QuestGroup = { stepId: string; stepTitle: string; items: QuestItem[] };
 export type QuestSection = { id: "warmup" | StageId; items: QuestItem[]; groups: QuestGroup[]; done: number; total: number; pct: number; complete: boolean };
@@ -23,7 +24,7 @@ export function buildQuest(lessons: QuestLesson[], isDone: (ref: string) => bool
   const ids: QuestSection["id"][] = ["warmup", ...STAGE_ORDER];
   const items: QuestItem[] = lessons.map((l) => ({ ...l, done: isDone(l.ref), n: 0 }));
   const sections = ids.map((id): QuestSection => {
-    const its = items.filter((i) => (id === "warmup" ? i.stepId === WARMUP_STEP : i.stepId !== WARMUP_STEP && i.stage === id));
+    const its = items.filter((i) => (id === "warmup" ? i.stepId === WARMUP_STEP : i.stepId !== WARMUP_STEP && (i.section ?? i.stage) === id));
     const groups: QuestGroup[] = [];
     for (const i of its) {
       const g = groups.find((x) => x.stepId === i.stepId);

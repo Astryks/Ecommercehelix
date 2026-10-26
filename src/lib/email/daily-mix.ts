@@ -7,14 +7,16 @@
 import { GLOSSARY } from "../glossary";
 import { TIPS } from "@/content/site-content";
 import { SEQUENCE } from "./sequence";
-import { emailTopic, topicFor } from "../daily-topic";
+import { emailTopic, topicForStage } from "../daily-topic";
+import type { StageId } from "../stages";
 
 export type DailyLesson = { title: string; step: string; href: string; minutes: number };
 export type DailyGoal = { title: string; day: number; days: number };
 /** Yesterday against the 7 days before it, from real (not example) scorecard days. */
 export type DailyNumbers = { sales: number; orders: number; adSpend: number; merPct: number; avgSales: number | null; avgMerPct: number | null };
-export type DailyFacts = { lesson: DailyLesson | null; goal: DailyGoal | null; numbers: DailyNumbers | null; hasAnyNumbers: boolean; hasAds: boolean | null };
-export const NO_FACTS: DailyFacts = { lesson: null, goal: null, numbers: null, hasAnyNumbers: false, hasAds: null };
+/** `stage`: the stage of the user's next lesson in the guided path (null before Attract or when unknown). */
+export type DailyFacts = { lesson: DailyLesson | null; goal: DailyGoal | null; numbers: DailyNumbers | null; hasAnyNumbers: boolean; hasAds: boolean | null; stage?: StageId | null };
+export const NO_FACTS: DailyFacts = { lesson: null, goal: null, numbers: null, hasAnyNumbers: false, hasAds: null, stage: null };
 
 export type DailyInput = { seed: string; date: string; season?: string | null; facts?: DailyFacts };
 export type DailyTask = { title: string; minutes: number };
@@ -232,7 +234,7 @@ export function composeDaily(i: DailyInput): DailyMix {
   const fill = (t: string) => t.replace(/\{wd\}/g, wd).replace(/\{date\}/g, date).replace(/\{Focus\}/g, cap(theme.focus)).replace(/\{focus\}/g, theme.focus)
     .replace(/\{n\}/g, String(tasks.length)).replace(/\{min\}/g, String(minutes)).replace(/\{next\}/g, next);
 
-  const t = emailTopic(topicFor(i.date));
+  const t = emailTopic(topicForStage(i.date, f.stage ?? null));
   // Today's topic leads; the rotating story, tip or word stays as a short P.S.
   const idea = ideaFor(seed, day);
   return {

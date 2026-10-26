@@ -498,6 +498,37 @@
 
 **Watch out:** Only use music and stock clips the app says are allowed in ads. Some free sounds are for personal posts only.
 
+## Lesson 5.22: Spot tired ads and refresh them in time
+<!-- stage:attract -->
+
+**Why this matters:** Every ad wears out. The same people see it again and again, stop noticing it, and your cost per sale creeps up. If you catch it early, a fresh ad keeps sales steady. If you wait, you pay more for every order until you notice.
+
+**Step 1.** Open Ads Manager and show the **Frequency**, cost per purchase and click-through rate (CTR, the share of people who click) columns.
+
+**Expected result:** You can see how many times, on average, each person has seen each ad.
+
+**Step 2.** Write down each ad's cost per purchase and CTR for its first 7 days. This is its starting level.
+
+**Expected result:** Every live ad has a starting cost per purchase and CTR noted.
+
+**Step 3.** Once a week, compare each ad with its starting level. Mark it as tired when CTR has dropped by about a third and cost per purchase is clearly higher for 7 days in a row.
+
+**Expected result:** You know which ads are tired, based on a week of numbers, not one bad day.
+
+**Step 4.** Check frequency for the same ads. In cold campaigns, a frequency climbing past about 3 in a week while results fall is a strong sign people have seen it enough.
+
+**Expected result:** Tired ads are confirmed by both falling results and rising frequency.
+
+**Step 5.** Keep 2 to 3 new ads ready at all times, with a new hook, a new face or a new format, not just a new colour.
+
+**Expected result:** You can swap in a fresh ad the same day an old one tires.
+
+**Step 6.** Add the new ads next to the tired one, then turn the tired ad off once the new ones have spent about 2 times your break-even cost per purchase.
+
+**Expected result:** Results recover without restarting the whole campaign.
+
+**Watch out:** Near-identical ads count as the same ad to the platform. A real refresh changes the idea, the first 3 seconds or the person on screen.
+
 ## Self-check
 
 1. What share of your ads should be new versions of ideas that already work?

@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { hasDb, prisma } from "@/lib/db";
-import { dueEmails } from "@/lib/email/schedule";
+import { dueEmails, zoneFor } from "@/lib/email/schedule";
 import { notify } from "@/lib/email/notify";
 import { dailyEmail, eventEmail, welcomeEmail, winbackEmail } from "@/lib/email/templates";
 import { composeDaily } from "@/lib/email/daily-mix";
@@ -27,7 +27,7 @@ export async function GET(req: NextRequest) {
   const tally: Record<string, number> = {};
   for (const u of users) {
     const plan = (u.subscription?.plan ?? "FREE").toLowerCase() as PlanId;
-    const due = dueEmails({ createdAt: u.createdAt, isDemo: u.isDemo, country: u.country, timezone: u.emailPrefs?.timezone ?? "Australia/Sydney", status: u.subscription?.status ?? "active", subscriptionId: u.subscription?.stripeSubscriptionId ?? null, currentPeriodEnd: u.subscription?.currentPeriodEnd ?? null }, now);
+    const due = dueEmails({ createdAt: u.createdAt, isDemo: u.isDemo, country: u.country, timezone: zoneFor(u.emailPrefs?.timezone, u.country), status: u.subscription?.status ?? "active", subscriptionId: u.subscription?.stripeSubscriptionId ?? null, currentPeriodEnd: u.subscription?.currentPeriodEnd ?? null }, now);
     for (const d of due) {
       if (!live) { tally[`would-${d.kind}`] = (tally[`would-${d.kind}`] ?? 0) + 1; continue; }
       const r = await notify({ userId: u.id, email: u.email!, plan }, d.kind, d.key, async (l) => {

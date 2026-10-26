@@ -22,6 +22,29 @@ export function topicIndex(date: string): number {
 export const topicFor = (date: string): DailyTopic => TOPICS[topicIndex(date)];
 export const cycleDay = (date: string) => topicIndex(date) + 1;
 
+const STAGE_RANK: Record<StageId, number> = { attract: 0, convert: 1, grow: 2 };
+const addDay = (d: string, n: number) => new Date(Date.parse(d + "T12:00:00Z") + n * 864e5).toISOString().slice(0, 10);
+function stageTopic(date: string, stage: StageId | null | undefined): DailyTopic {
+  const base = topicFor(date);
+  if (!stage || STAGE_RANK[stage] <= STAGE_RANK[base.stage]) return base;
+  const pool = TOPICS.filter((t) => t.stage === stage);
+  if (!pool.length) return base;
+  const k = dayNo(date) - dayNo(TOPIC_EPOCH);
+  return pool[((k % pool.length) + pool.length) % pool.length];
+}
+/**
+ * The topic for one user: the shared topic, unless the user's next lesson is in a later stage
+ * (for example they are already on Grow while the shared cycle is on Attract); then a topic from
+ * their own stage. Never the same topic as yesterday for the same user.
+ */
+export function topicForStage(date: string, stage: StageId | null | undefined, yesterdayStage: StageId | null | undefined = stage): DailyTopic {
+  const t = stageTopic(date, stage);
+  const y = stageTopic(addDay(date, -1), yesterdayStage);
+  if (t.ref !== y.ref) return t;
+  const pool = TOPICS.filter((x) => x.stage === t.stage);
+  return pool[(pool.indexOf(t) + 1) % pool.length];
+}
+
 const lower1 = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
 const firstSentence = (s: string) => s.match(/^(.+?[.!?])(\s|$)/)?.[1] ?? s;
 const trim = (s: string, n: number) => (s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "...");
