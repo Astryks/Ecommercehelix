@@ -38,6 +38,8 @@ import { NextCardHero } from "@/components/cards/NextCardHero";
 import { userCards } from "@/lib/cards-user";
 import { seasonTasksFor } from "@/lib/season-tasks";
 import { bannerFor } from "@/lib/season-calendar";
+import { QuestNextUp } from "@/components/dashboard/QuestNextUp";
+import { questForUser } from "@/lib/quest-server";
 import { waterfall } from "@/lib/profit-setup";
 import { TodayTasks } from "@/components/dashboard/TodayTasks";
 import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
@@ -150,6 +152,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   );
 
   // Calm Today for people on a personal plan: progress, one step, and your numbers. Everything else is one tap away.
+  const qx = await questForUser(u.id);
   const st = diag && sp.full !== "1" ? await planState(u.id) : null;
   if (st) {
     const profitSet = Boolean(await getProfitSetup(u.id));
@@ -163,6 +166,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <p className="page-lead">Here&apos;s what to do today. One step at a time.</p>
         </header>
         {tasksBox}
+        <QuestNextUp q={qx.quest} streak={qx.streak} />
         <NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
@@ -195,6 +199,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   return (
     <div className="mx-auto max-w-7xl">
       <div className="mb-6">{tasksBox}</div>
+      <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>
       <div className="mb-6"><NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">

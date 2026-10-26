@@ -39,6 +39,7 @@ export default async function DashboardLearn() {
       <p className="mt-1 max-w-2xl text-slate-700">One path, step by step. Start at step 1 and go down. {doneCount} of {all.length} lessons done.</p>
       <p className="mt-3 flex flex-wrap gap-2">
         <Link href={featured.href} className="btn-ghost text-sm"><Sparkles className="h-4 w-4" aria-hidden /> This week: {featured.label}</Link>
+        <Link href="/dashboard/learn/framework" className="btn-primary text-sm" data-testid="framework-link">Attract, Convert, Grow checklist</Link>
         <Link href="/dashboard/learn/templates" className="btn-ghost text-sm"><FileText className="h-4 w-4" aria-hidden /> Template library</Link>
         <Link href="/learn/words" className="btn-ghost text-sm">Words to know</Link>
       </p>
