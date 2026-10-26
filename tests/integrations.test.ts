@@ -44,9 +44,10 @@ describe("shopify", () => {
 });
 
 describe("google ads", () => {
-  it("is off unless all three env vars are set", () => {
-    expect(googleAdsMode({ GOOGLE_ADS_CLIENT_ID: "a", GOOGLE_ADS_CLIENT_SECRET: "b" })).toBe("off");
+  it("is live with the OAuth client alone (developer tokens sunset 9 Sep 2026)", () => {
+    expect(googleAdsMode({ GOOGLE_ADS_CLIENT_ID: "a" })).toBe("off");
     expect(googleAdsMode({ GOOGLE_ADS_CLIENT_ID: "a", GOOGLE_ADS_CLIENT_SECRET: "b", GOOGLE_ADS_DEVELOPER_TOKEN: "c" })).toBe("live");
+    expect(googleAdsMode({ GOOGLE_ADS_CLIENT_ID: "a", GOOGLE_ADS_CLIENT_SECRET: "b" })).toBe("live");
   });
   it("summarises spend and ROAS", () => {
     const s = summarise([

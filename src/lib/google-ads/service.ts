@@ -78,7 +78,8 @@ async function accessToken(userId: string): Promise<string> {
 
 async function ads<T>(userId: string, actor: Actor, token: string, method: "GET" | "POST", path: string, body?: unknown, loginCustomerId?: string | null): Promise<T> {
   const t0 = Date.now();
-  const headers: Record<string, string> = { authorization: `Bearer ${token}`, "developer-token": process.env.GOOGLE_ADS_DEVELOPER_TOKEN!, "content-type": "application/json" };
+  const headers: Record<string, string> = { authorization: `Bearer ${token}`, "content-type": "application/json" };
+  if (process.env.GOOGLE_ADS_DEVELOPER_TOKEN) headers["developer-token"] = process.env.GOOGLE_ADS_DEVELOPER_TOKEN; // optional since 9 Sep 2026, ignored by Google
   if (loginCustomerId) headers["login-customer-id"] = loginCustomerId;
   const res = await fetch(`${GOOGLE_ADS_BASE}/${path}`, { method, headers, body: body ? JSON.stringify(body) : undefined, cache: "no-store" });
   const j = (await res.json().catch(() => ({}))) as T & { error?: { message?: string } };
