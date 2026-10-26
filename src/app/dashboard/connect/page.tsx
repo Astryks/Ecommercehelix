@@ -12,6 +12,7 @@ import { getConnection } from "@/lib/meta/store";
 import { LostLink } from "@/components/dashboard/LostLink";
 import { connectShopifyCustomApp, importSheet, unlinkSheetAction } from "./actions";
 import { getSheetLink } from "@/lib/sheets/sync";
+import { tiktokMode } from "@/lib/tiktok/config";
 
 export const metadata = { title: "Connect your tools" };
 
@@ -29,6 +30,10 @@ const MSG: Record<string, [string, string]> = {
   tiktok_not_configured: ["err", "TikTok Ads connect is not switched on yet. For now add TikTok spend in your sheet, a CSV or by hand."],
   tiktok_pending: ["ok", "TikTok sign-in worked. Daily TikTok spend sync is coming soon; add it by hand until then."],
   tiktok_state: ["err", "That TikTok sign-in expired. Please try again."],
+  tiktok_connected: ["ok", "TikTok Ads is connected. Spend for the last 30 days is in, and it refreshes every morning."],
+  tiktok_pick: ["ok", "TikTok Ads is connected. The first spend sync did not finish (or you have more than one ad account); it will retry every morning."],
+  tiktok_denied: ["err", "TikTok sign-in was cancelled."],
+  tiktok_exchange: ["err", "TikTok did not accept the sign-in. Please try again."],
 };
 
 function Card({ title, status, children, connected }: { title: string; status: string; connected?: boolean; children: React.ReactNode }) {
@@ -50,7 +55,7 @@ export default async function ConnectTools({ searchParams }: PageProps<"/dashboa
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const key = typeof sp.ok === "string" ? sp.ok : typeof sp.err === "string" ? sp.err : "";
   const flash = MSG[key];
-  const tiktokOn = Boolean(process.env.TIKTOK_APP_ID && process.env.TIKTOK_APP_SECRET);
+  const tiktokOn = tiktokMode() === "live";
   const upgrade = (f: string) => <Link href={`/dashboard/billing?need=starter&for=${f}`} className="btn-dark mt-3 text-sm"><Link2 className="h-4 w-4" aria-hidden /> Connect · Starter</Link>;
   return (
     <div className="mx-auto max-w-4xl space-y-5" data-testid="connect-tools">
@@ -91,7 +96,7 @@ export default async function ConnectTools({ searchParams }: PageProps<"/dashboa
           <p className="mt-1 text-sm text-slate-700">Google ad spend and sales, every day.</p>
           {ga ? <Link href="/dashboard/integrations" className="btn-ghost mt-3 text-sm">Manage Google Ads</Link> : !paid ? upgrade("google") : <a href="/api/google-ads/connect" className="btn-primary mt-3 text-sm"><Link2 className="h-4 w-4" aria-hidden /> Connect Google Ads</a>}
         </Card>
-        <Card title="TikTok Ads" status={tiktokOn ? "Sign-in ready, sync coming soon" : "Coming soon"}>
+        <Card title="TikTok Ads" status={tiktokOn ? "Daily spend sync" : "Coming soon"}>
           <p className="mt-1 text-sm text-slate-700">TikTok ad spend, every day. Until it is ready, add TikTok spend in your sheet, a CSV or by hand.</p>
           {tiktokOn && paid ? <a href="/api/tiktok/connect" className="btn-primary mt-3 text-sm"><Link2 className="h-4 w-4" aria-hidden /> Connect TikTok Ads</a> : <button disabled className="btn-ghost mt-3 cursor-not-allowed text-sm opacity-60">Connect TikTok Ads</button>}
         </Card>

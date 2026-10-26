@@ -1,22 +1,21 @@
-import { NextResponse, type NextRequest } from "next/server";
 import { randomBytes } from "node:crypto";
+import { NextResponse, type NextRequest } from "next/server";
 import { requireUser } from "@/lib/session";
+import { getAccount } from "@/lib/repo";
+import { PLAN_RANK } from "@/lib/plans";
 import { appUrl } from "@/lib/meta/config";
+import { tiktokAuthUrl, tiktokMode } from "@/lib/tiktok/config";
 
 export const dynamic = "force-dynamic";
 
-/** TikTok Ads sign-in. Needs TIKTOK_APP_ID and TIKTOK_APP_SECRET (TikTok for Business developer app). */
+/** Starts TikTok For Business auth. Off (redirects with tiktok=soon) unless TIKTOK_ADS=1 and the app keys are set. */
 export async function GET(req: NextRequest) {
-  await requireUser("/dashboard/connect");
-  const base = appUrl(req.nextUrl.origin);
-  const id = process.env.TIKTOK_APP_ID;
-  if (!id || !process.env.TIKTOK_APP_SECRET) return NextResponse.redirect(`${base}/dashboard/connect?err=tiktok_not_configured`);
-  const state = randomBytes(16).toString("hex");
-  const url = new URL("https://business-api.tiktok.com/portal/auth");
-  url.searchParams.set("app_id", id);
-  url.searchParams.set("state", state);
-  url.searchParams.set("redirect_uri", `${base}/api/tiktok/callback`);
-  const res = NextResponse.redirect(url.toString());
-  res.cookies.set("tt_state", state, { httpOnly: true, secure: true, sameSite: "lax", maxAge: 600, path: "/" });
+  const origin = appUrl(req.nextUrl.origin);
+  const u = await requireUser("/dashboard/connect");
+  if (tiktokMode() !== "live") return NextResponse.redirect(`${origin}/dashboard/connect?err=tiktok_not_configured`);
+  if (PLAN_RANK[(await getAccount(u.id)).plan] < PLAN_RANK.starter) return NextResponse.redirect(`${origin}/dashboard/billing?need=starter&for=tiktok`);
+  const state = randomBytes(24).toString("base64url");
+  const res = NextResponse.redirect(tiktokAuthUrl(process.env.TIKTOK_APP_ID!, `${origin}/api/tiktok/callback`, state));
+  res.cookies.set("helix_tt_state", state, { httpOnly: true, secure: process.env.NODE_ENV === "production", sameSite: "lax", path: "/api/tiktok", maxAge: 600 });
   return res;
 }

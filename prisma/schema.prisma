@@ -51,6 +51,8 @@ model User {
   googleAdsConnection GoogleAdsConnection?
   googleAdsSnapshot   GoogleAdsSnapshot?
   googleAdsDrafts     GoogleAdsDraft[]
+  tiktokConnection    TikTokConnection?
+  ga4Property         Ga4Property?
   aiUsage             AiUsage[]
   aiCache             AiCache[]
   wins                Win[]
@@ -669,4 +671,29 @@ model RateHit {
 model Lease {
   key   String   @id
   until DateTime
+}
+
+// TikTok Ads (additive, behind TIKTOK_ADS=1). Long-lived Marketing API token, encrypted. Daily spend sync only.
+model TikTokConnection {
+  userId        String    @id
+  advertiserId  String?
+  advertiserIds String    @default("") // comma list returned at connect
+  tokenEnc      String
+  status        String    @default("active") // active | error | expired
+  lastSyncAt    DateTime?
+  lastSyncError String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// GA4 sessions (additive, behind GA4_SESSIONS=1). Uses the Google connection's token with analytics.readonly.
+model Ga4Property {
+  userId        String    @id
+  propertyId    String // numeric GA4 property id
+  lastSyncAt    DateTime?
+  lastSyncError String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

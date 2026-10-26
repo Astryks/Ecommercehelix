@@ -726,3 +726,23 @@ export async function setGoogleSpend(userId: string, rows: { date: string; spend
     });
   }
 }
+
+/** Write one numeric column per day (TikTok spend, GA4 sessions). Upserts; leaves every other column alone. */
+export async function setChannelDays(userId: string, field: "adTiktok" | "sessions", source: string, rows: { date: string; value: number }[]) {
+  if (!hasDb) {
+    const list = mem.days.get(userId) ?? [];
+    for (const r of rows) {
+      const d = list.find((x) => x.date === r.date);
+      if (d) (d as Record<string, unknown>)[field] = r.value;
+      else {
+        const blank = { date: r.date, source, example: false } as DayInput;
+        for (const f of NUM_FIELDS) blank[f] = 0;
+        list.push({ ...blank, [field]: r.value });
+      }
+    }
+    mem.days.set(userId, list);
+    return;
+  }
+  for (const r of rows)
+    await prisma.scorecardDay.upsert({ where: { userId_date: { userId, date: r.date } }, create: { userId, date: r.date, source, [field]: r.value }, update: { [field]: r.value } });
+}
