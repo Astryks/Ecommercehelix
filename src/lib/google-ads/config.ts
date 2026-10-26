@@ -21,9 +21,9 @@ export function ga4Sessions(r: Ga4Report): { date: string; value: number }[] {
 }
 export const cleanPropertyId = (s: string) => s.replace(/^properties\//, "").replace(/[^0-9]/g, "");
 
-/** live: client id, secret and developer token are all set. off: the card shows "coming soon". */
+/** live: OAuth client id and secret are set. Developer tokens were sunset by Google on 9 Sep 2026 (access now follows the Cloud project), so none is needed. */
 export function googleAdsMode(env: Record<string, string | undefined> = process.env): "live" | "off" {
-  return env.GOOGLE_ADS_CLIENT_ID && env.GOOGLE_ADS_CLIENT_SECRET && env.GOOGLE_ADS_DEVELOPER_TOKEN ? "live" : "off";
+  return env.GOOGLE_ADS_CLIENT_ID && env.GOOGLE_ADS_CLIENT_SECRET ? "live" : "off";
 }
 
 export const cleanCustomerId = (s: string) => s.replace(/[^0-9]/g, "");
