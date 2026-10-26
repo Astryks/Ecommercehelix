@@ -29,9 +29,10 @@ describe("daily email: different every day", () => {
       expect(new Set(mixes.map((m) => m.tasks.map((t) => t.title).join("|"))).size).toBe(30);
     }
   });
-  it("differs between users on the same day", () => {
-    const subjects = new Set(Array.from({ length: 20 }, (_, i) => composeDaily({ seed: `user-${i}`, date: "2026-10-27" }).subject));
-    expect(subjects.size).toBeGreaterThan(10);
+  it("shares the day's topic subject across users but varies the opener", () => {
+    const mixes = Array.from({ length: 20 }, (_, i) => composeDaily({ seed: `user-${i}`, date: "2026-10-27" }));
+    expect(new Set(mixes.map((m) => m.subject)).size).toBe(1);
+    expect(new Set(mixes.map((m) => m.opener)).size).toBeGreaterThan(10);
   });
   it("follows the weekday theme and rotates the theme task week to week", () => {
     expect(composeDaily({ seed: "u", date: "2026-10-27" }).title).toBe("Tuesday: ads check");

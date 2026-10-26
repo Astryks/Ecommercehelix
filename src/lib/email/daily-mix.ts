@@ -7,6 +7,7 @@
 import { GLOSSARY } from "../glossary";
 import { TIPS } from "@/content/site-content";
 import { SEQUENCE } from "./sequence";
+import { emailTopic, topicFor } from "../daily-topic";
 
 export type DailyLesson = { title: string; step: string; href: string; minutes: number };
 export type DailyGoal = { title: string; day: number; days: number };
@@ -21,6 +22,8 @@ export type DailyMix = {
   subject: string; preheader: string; title: string; opener: string;
   goalLine: string | null; numbersLine: string | null;
   tasks: DailyTask[]; minutes: number; idea: string;
+  /** Today's topic (same for everyone, one per day from the topic calendar): intro, hook, takeaway, link. */
+  topic: { intro: string; hook: string; takeaway: string; teaserStep: string; label: string; href: string };
   button: { label: string; href: string };
 };
 
@@ -229,9 +232,12 @@ export function composeDaily(i: DailyInput): DailyMix {
   const fill = (t: string) => t.replace(/\{wd\}/g, wd).replace(/\{date\}/g, date).replace(/\{Focus\}/g, cap(theme.focus)).replace(/\{focus\}/g, theme.focus)
     .replace(/\{n\}/g, String(tasks.length)).replace(/\{min\}/g, String(minutes)).replace(/\{next\}/g, next);
 
+  const t = emailTopic(topicFor(i.date));
+  // Today's topic leads; the rotating story, tip or word stays as a short P.S.
   const idea = ideaFor(seed, day);
   return {
-    subject: fill(pick(SUBJECTS, seed, "subject", day)),
+    subject: t.subject,
+    topic: { intro: t.intro, hook: t.hook, takeaway: t.takeaway, teaserStep: t.teaserStep, label: t.button.label, href: t.button.href },
     opener: fill(pick(OPENERS, seed, "opener", day)),
     preheader: trimTo(f.lesson ? `Next up: ${f.lesson.title}. ${themeTask.title}.` : `${middle.title}.`, 110),
     title: `${wd}: ${theme.name}`,

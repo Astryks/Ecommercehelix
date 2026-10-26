@@ -64,10 +64,12 @@ export function dailyTasksEmail(c: Ctx, tasks: { title: string; minutes: number 
 
 /** The daily email, built by composeDaily (daily-mix.ts): a varied subject and opener, the user's goal and numbers when known, four steps, one idea and a button to the next lesson. */
 export function dailyEmail(c: Ctx, m: DailyMix): Email {
-  const href = m.button.href.startsWith("http") ? m.button.href : `${c.baseUrl}${m.button.href}`;
-  return layout(c, { kind: "daily", marketing: true, subject: m.subject, preheader: m.preheader, title: m.title,
-    paras: [m.opener, ...(m.goalLine ? [m.goalLine] : []), ...(m.numbersLine ? [m.numbersLine] : []), `Today's steps (about ${m.minutes} min):`],
-    list: m.tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: m.button.label, href }, after: [m.idea] });
+  const abs = (h: string) => (h.startsWith("http") ? h : `${c.baseUrl}${h}`);
+  // Today's topic is the teaser (different every day); the button opens the right lesson. Steps and numbers follow.
+  return layout(c, { kind: "daily", marketing: true, subject: m.subject, preheader: m.topic.hook, title: m.topic.intro,
+    paras: [m.topic.hook, m.topic.takeaway, m.topic.teaserStep, ...(m.goalLine ? [m.goalLine] : []), ...(m.numbersLine ? [m.numbersLine] : []), `Your steps today (about ${m.minutes} min):`],
+    list: m.tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: m.topic.label, href: abs(m.topic.href) },
+    after: [`Also: ${m.button.label}: ${abs(m.button.href)}`, `P.S. ${m.idea}`] });
 }
 
 export function eventEmail(c: Ctx, e: { name: string; daysTo: number; line: string; lesson: { label: string; href: string } }): Email {
