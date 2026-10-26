@@ -55,7 +55,8 @@ async function call(deps: CoachDeps, tier: Tier, prompt: string): Promise<LlmRes
   const req = { system: COACH_SYSTEM, prompt, maxOutputTokens: MAX_OUTPUT[tier] };
   try {
     return { ...(await deps.llm({ model: COACH_MODELS[tier], ...req })), model: COACH_MODELS[tier] };
-  } catch {
+  } catch (e) {
+    console.error("[coach] model failed, trying fallback", COACH_MODELS[tier], String((e as Error)?.message ?? e).slice(0, 300));
     return { ...(await deps.llm({ model: COACH_MODELS.fallback, ...req })), model: COACH_MODELS.fallback };
   }
 }
@@ -97,7 +98,8 @@ export async function runCoach(deps: CoachDeps, input: CoachInput): Promise<Coac
         why = "self-check";
       }
     }
-  } catch {
+  } catch (e) {
+    console.error("[coach] fallback failed too", String((e as Error)?.message ?? e).slice(0, 300));
     await deps.log({ tier, mode, why, model: COACH_MODELS[tier], inputTokens: 0, cachedTokens: 0, outputTokens: 0, costUsd: 0, topScore: hitsAll[0]?.score ?? 0, ok: false, question: redact(question).slice(0, 1000), answer: "" });
     return { ...base, text: LIMIT_TEXT.error, mode, modeLabel: MODE_LABEL[mode], limited: "error" };
   }
