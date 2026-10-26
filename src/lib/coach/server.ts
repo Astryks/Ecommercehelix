@@ -15,6 +15,7 @@ import { questForUser } from "../quest-server";
 import { topicFor } from "../daily-topic";
 import { priceOf } from "./config";
 import { redact } from "./prompt";
+import { klaviyoSummary } from "../klaviyo/service";
 
 let local: Chunk[] | null = null;
 const localChunks = () => (local ??= allChunks(process.cwd()));
@@ -65,6 +66,8 @@ export async function storeSummary(userId: string): Promise<string | null> {
     const bad = run.findings.filter((f) => f.severity !== "good").slice(0, 8);
     lines.push(`Store check ${run.startedAt.slice(0, 10)}: ${bad.length ? bad.map((f) => `[${f.severity}] ${f.title}`).join("; ") : "no issues found"}.`);
   }
+  const kl = await klaviyoSummary(userId).catch(() => null);
+  if (kl) lines.push(`Email (Klaviyo), last 30 days: email revenue ${r0(kl.revenue30)} (flows ${r0(kl.flowRevenue30)}, campaigns ${r0(kl.campaignRevenue30)}), sends ${r0(kl.sends30)}, open rate ${r1(kl.openRate * 100)}%, click rate ${r1(kl.clickRate * 100)}%, orders from email ${r0(kl.conversions30)}, main list ${kl.listSize} (${kl.listGrowth30 >= 0 ? "+" : ""}${kl.listGrowth30} this month). Flows: welcome ${kl.flows.welcome}, abandoned cart ${kl.flows.abandoned}, post-purchase ${kl.flows["post-purchase"]}.`);
   return lines.length > 1 ? lines.join("\n") : null;
 }
 
@@ -169,14 +172,14 @@ export async function openCoach(userId: string): Promise<CoachOpen> {
     const [{ quest }, flags] = await Promise.all([questForUser(userId).catch(() => ({ quest: null })), numberFlags(userId).catch(() => [])]);
     const topic = topicFor(day);
     const next = quest?.next ? { title: quest.next.title, href: quest.next.href, stage: quest.next.stage[0].toUpperCase() + quest.next.stage.slice(1) } : null;
-    await setTasks(userId, day, dailyTasks({ firstName, yesterdayOpen: yOpen, nextLesson: next, topic: topic ? { title: topic.title, href: topic.href } : null, flags, facts }));
+    await setTasks(userId, day, dailyTasks({ firstName, day, yesterday: yTasks, yesterdayOpen: yOpen, nextLesson: next, topic: topic ? { title: topic.title, href: topic.href } : null, flags, facts }));
     tasks = await getTasks(userId, day);
   }
   const greeting = dailyGreeting({ firstName, facts, yesterdayDone: yDone.map((t) => t.title), yesterdayOpen: yOpen.map((t) => t.title) });
   return { greeting, day, messages: msgs.map(({ id, role, text, meta }) => ({ id, role, text, meta })), tasks: tasks.map(({ id, title, href, why, done }) => ({ id, title, href, why, done })), facts };
 }
 
-/** For the daily email (optional, not wired into the cron yet): today's coach tasks as plain lines. */
+/** For the daily email: today's coach tasks as plain lines (same list as the coach window). */
 export async function coachTasksForEmail(userId: string): Promise<{ title: string; href: string }[]> {
   return (await openCoach(userId)).tasks.filter((t) => !t.done).map(({ title, href }) => ({ title, href }));
 }

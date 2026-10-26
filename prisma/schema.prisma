@@ -5,7 +5,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider   = "postgresql"
   url        = env("DATABASE_URL")
   extensions = [vector]
 }
@@ -71,6 +71,8 @@ model User {
   toolSnapshots       ToolSnapshot[]
   toolAlerts          ToolAlert[]
   weeklyReviews       WeeklyReview[]
+  klaviyoConnection   KlaviyoConnection?
+  klaviyoDays         KlaviyoDay[]
 }
 
 model Account {
@@ -121,19 +123,19 @@ model Store {
 }
 
 model Subscription {
-  id                   String   @id @default(cuid())
-  userId               String   @unique
-  plan                 Plan     @default(FREE)
-  status               String   @default("active")
+  id                   String    @id @default(cuid())
+  userId               String    @unique
+  plan                 Plan      @default(FREE)
+  status               String    @default("active")
   stripeCustomerId     String?
   stripeSubscriptionId String?
-  walletBalanceCents   Int      @default(0)
-  cancelAtPeriodEnd    Boolean  @default(false)
+  walletBalanceCents   Int       @default(0)
+  cancelAtPeriodEnd    Boolean   @default(false)
   currentPeriodEnd     DateTime?
   priceId              String?
   lastEventAt          DateTime? // created time of the newest Stripe event applied (ignores older, out-of-order events)
-  updatedAt            DateTime @updatedAt
-  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  updatedAt            DateTime  @updatedAt
+  user                 User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 // Task templates live in code (src/lib/seed/tasks.ts); this table mirrors them for analytics.
@@ -682,7 +684,7 @@ model Lease {
 // ---------- Helix AI coach (additive, 27 Oct 2026) ----------
 /// Retrieval chunks of the Helix-worded lesson library. Filled by scripts/coach-embed.ts. Embedding is pgvector, tsv is for keyword (BM25-style) search.
 model CoachChunk {
-  id        String                       @id // source:slug:ref:n
+  id        String                      @id // source:slug:ref:n
   source    String // playbook | sop | card | extra
   slug      String
   lessonRef String?
@@ -691,10 +693,10 @@ model CoachChunk {
   href      String // Helix lesson link that answers cite
   text      String
   hash      String // sha of title+text: re-embed only changed chunks
-  tokens    Int                          @default(0)
+  tokens    Int                         @default(0)
   embedding Unsupported("vector(768)")?
   tsv       Unsupported("tsvector")?
-  updatedAt DateTime                     @updatedAt
+  updatedAt DateTime                    @updatedAt
 
   @@index([slug])
 }
@@ -791,4 +793,39 @@ model Ga4Property {
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
   user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ---------- Klaviyo (behind KLAVIYO=1) ----------
+// The private API key is stored only as AES-256-GCM ciphertext. Helix keeps daily totals only: no profiles, no customer details.
+model KlaviyoConnection {
+  userId        String    @id
+  keyEnc        String
+  keyHint       String    @default("") // last 4 characters, to show which key is connected
+  accountName   String    @default("")
+  orderMetricId String?
+  status        String    @default("active") // active | error | revoked
+  summary       Json? // last-30-day totals and flow status from the latest sync
+  lastSyncAt    DateTime?
+  lastSyncError String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model KlaviyoDay {
+  id              String @id @default(cuid())
+  userId          String
+  date            String // YYYY-MM-DD
+  emailRevenue    Float  @default(0)
+  flowRevenue     Float  @default(0)
+  campaignRevenue Float  @default(0)
+  flowSends       Int    @default(0)
+  campaignSends   Int    @default(0)
+  opens           Int    @default(0)
+  clicks          Int    @default(0)
+  conversions     Int    @default(0)
+  listSize        Int    @default(0)
+  user            User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
 }

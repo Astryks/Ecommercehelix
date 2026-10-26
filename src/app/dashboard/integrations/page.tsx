@@ -8,6 +8,7 @@ import { getConnection, listAudit, listDrafts } from "@/lib/meta/store";
 import { listAssets } from "@/lib/meta/service";
 import { disconnectMetaAction, pickMetaAssets, syncMetaNow } from "./actions";
 import { GoogleAdsCard, MORE_MSG, ShopifyCard } from "./more";
+import { Ga4Card, KlaviyoCard, msgFrom, TikTokCard } from "./more2";
 
 const MSG: Record<string, [string, string]> = {
   connected: ["ok", "Meta is connected. Now pick your ad account, Page and pixel."],
@@ -68,6 +69,7 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
         <p><strong className="text-slate-900">Nothing spends without you.</strong> New campaigns are created paused, only after you press Approve in Helix.</p>
       </div>
 
+      {(() => { const m = msgFrom(sp); return m && <p className={`mt-4 rounded-xl px-4 py-2.5 text-sm ${m[0] === "ok" ? "border border-emerald-200 bg-emerald-50 text-emerald-900" : "border border-rose-200 bg-rose-50 text-rose-900"}`}>{m[1]}</p>; })()}
       {flash && (
         <p className={`mt-4 rounded-xl px-4 py-2.5 text-sm ${ALL_MSG[flash][0] === "ok" ? "border border-emerald-200 bg-emerald-50 text-emerald-900" : "border border-rose-200 bg-rose-50 text-rose-900"}`}>{ALL_MSG[flash][1]}</p>
       )}
@@ -208,11 +210,9 @@ export default async function Integrations({ searchParams }: PageProps<"/dashboa
         )}
       </section>
 
-      <section className="mt-6 grid gap-4 md:grid-cols-3">
-        {["Email platform", "Google Analytics", "TikTok Ads"].map((n) => (
-          <div key={n} className="card p-5 text-sm"><p className="font-semibold">{n}</p><p className="mt-1 text-slate-500">Coming soon.</p></div>
-        ))}
-      </section>
+      <KlaviyoCard userId={u.id} paid={paid} />
+      <TikTokCard userId={u.id} paid={paid} />
+      <Ga4Card userId={u.id} paid={paid} />
     </div>
   );
 }

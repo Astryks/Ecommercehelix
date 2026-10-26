@@ -6,6 +6,8 @@ import { dailyEmail, eventEmail, welcomeEmail, winbackEmail } from "@/lib/email/
 import { composeDaily } from "@/lib/email/daily-mix";
 import { dailyFacts } from "@/lib/email/daily-facts";
 import type { PlanId } from "@/lib/plans";
+import { coachLive } from "@/lib/coach/config";
+import { coachTasksForEmail } from "@/lib/coach/server";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 300;
@@ -32,7 +34,7 @@ export async function GET(req: NextRequest) {
         const c = { name: u.name ?? "", baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl };
         if (d.kind === "welcome") return welcomeEmail(c);
         // Different every day: seeded by user and date; next lesson, goal and numbers loaded only for users who get it.
-        if (d.kind === "daily") return dailyEmail(c, composeDaily({ seed: u.id, date: d.date, season: d.season, facts: await dailyFacts(u.id, d.date) }));
+        if (d.kind === "daily") return dailyEmail(c, composeDaily({ seed: u.id, date: d.date, season: d.season, facts: await dailyFacts(u.id, d.date) }), coachLive() && plan !== "free" ? await coachTasksForEmail(u.id).catch(() => []) : []);
         if (d.kind === "event") return eventEmail(c, d);
         return winbackEmail(c);
       });

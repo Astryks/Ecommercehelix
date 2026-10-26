@@ -27,6 +27,11 @@ export function CoachWidget() {
   const [pending, start] = useTransition();
   const end = useRef<HTMLDivElement>(null);
 
+  // ?coach=1 (from the welcome email) opens the coach straight away.
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("coach") === "1") queueMicrotask(() => setOpen(true));
+  }, []);
+
   useEffect(() => {
     if (!open || data) return;
     start(async () => {

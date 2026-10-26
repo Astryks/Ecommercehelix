@@ -6,7 +6,7 @@ import { COACH_SYSTEM, redact } from "@/lib/coach/prompt";
 import { runCoach, scrub, type CoachDeps } from "@/lib/coach/engine";
 import { allChunks } from "@/lib/coach/chunk";
 import { keywordSearch } from "@/lib/coach/keyword";
-import { cleanFact, dailyGreeting, dailyTasks, GREETING, mergeFacts, parseExtraction } from "@/lib/coach/memory";
+import { cleanFact, dailyGreeting, dailyTasks, GREETING, mergeFacts, parseExtraction, shouldWelcome, storeFacts, welcomeMessage } from "@/lib/coach/memory";
 
 const hit = (score: number, n = 1): Hit => ({ id: `h${n}`, text: "Price anchoring: show the compare-at price next to your offer.", title: `Lesson ${n}`, href: `/learn/convert#lesson-${n}`, score, tokens: 20 });
 const GOOD = "Helix tip: show a compare-at price next to your offer and test it for a week [L1]. Then check conversion rate against last week before changing anything else.";
@@ -190,10 +190,34 @@ describe("memory + daily", () => {
     const merged = mergeFacts([{ kind: "goals", key: "old", fact: "old goal" }], p.facts, p.forget);
     expect(merged.map((f) => f.key)).toEqual(["ads"]);
   });
-  it("daily tasks: max 3, yesterday's open task first", () => {
-    const t = dailyTasks({ firstName: "Sam", yesterdayOpen: [{ title: "Fix shipping page", href: "/learn/x" }], nextLesson: { title: "Write a welcome email", href: "/learn/y", stage: "convert" }, topic: { title: "Bundles", href: "/learn/z" }, flags: [{ title: "Refunds are up", href: "/dashboard" }], facts: [] });
+  it("daily tasks: 1-3, flags first, never yesterday's tasks", () => {
+    const t = dailyTasks({ firstName: "Sam", day: "2026-10-27", yesterday: [{ title: "Bundles", href: "/learn/z" }], yesterdayOpen: [{ title: "Fix shipping page", href: "/learn/x" }], nextLesson: { title: "Write a welcome email", href: "/learn/y", stage: "convert" }, topic: { title: "Bundles", href: "/learn/z" }, flags: [{ title: "Refunds are up", href: "/dashboard" }], facts: [] });
+    expect(t.length).toBeGreaterThanOrEqual(1);
     expect(t.length).toBeLessThanOrEqual(3);
-    expect(t[0].title).toMatch(/Fix shipping page/);
+    expect(t[0].title).toMatch(/Refunds/);
+    expect(t.some((x) => /Fix shipping|Bundles/.test(x.title))).toBe(false);
+  });
+  it("daily tasks: today's set never repeats yesterday's set", () => {
+    const base = { firstName: "", yesterdayOpen: [], nextLesson: null, topic: null, flags: [], facts: [] };
+    const d1 = dailyTasks({ ...base, day: "2026-10-27" });
+    const d2 = dailyTasks({ ...base, day: "2026-10-28", yesterday: d1 });
+    expect(d1.length).toBeGreaterThan(0);
+    expect(d2.length).toBeGreaterThan(0);
+    for (const t of d2) expect(d1.some((y) => y.href === t.href || y.title === t.title)).toBe(false);
+  });
+  it("store facts: totals only, no customer details", () => {
+    const f = storeFacts({ shopName: "Sunny Socks", productCount: 12, last30: { orders: 40, revenue: 2400, adSpend: 600, profit: 500 }, topProducts: ["Wool socks"], channels: ["Shopify", "Meta"], storeCheck: { score: 71, topIssue: "Add reviews" }, profit: { avgOrder: 60, margin: 0.55 }, email: { revenue30: 300, listGrowth30: 25, flowsOff: ["abandoned cart"] } });
+    expect(f.map((x) => x.key)).toEqual(expect.arrayContaining(["sync-shop", "sync-30d", "sync-top", "sync-channels", "sync-check", "sync-profit", "sync-email"]));
+    const all = f.map((x) => x.fact).join(" ");
+    expect(all).not.toMatch(/@|\+?\d{3}[ -]?\d{3}[ -]?\d{3}/);
+    expect(all).toMatch(/40 orders/);
+  });
+  it("welcome: only paid active/trialing subs", () => {
+    expect(shouldWelcome({ plan: "starter", status: "active" })).toBe(true);
+    expect(shouldWelcome({ plan: "growth", status: "trialing" })).toBe(true);
+    expect(shouldWelcome({ plan: "free", status: "active" })).toBe(false);
+    expect(shouldWelcome({ plan: "starter", status: "canceled" })).toBe(false);
+    expect(welcomeMessage("Sam", "Starter")).toMatch(/Sam/);
   });
   it("greeting starts with the fixed text then a personal line", () => {
     const g = dailyGreeting({ firstName: "Sam", facts: [{ kind: "goals", key: "g", fact: "Reach 100 orders a month" }], yesterdayDone: ["Fix shipping page"], yesterdayOpen: [] });

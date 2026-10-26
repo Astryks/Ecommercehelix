@@ -21,6 +21,7 @@ export async function saveProfit(form: FormData) {
   // Saving your costs finishes the Today task "Tell Helix your costs".
   await completeTask(u.id, COSTS_TASK).catch(() => null);
   if (first) await logEvent(u.id, "profit_setup");
+  await import("@/lib/coach/lifecycle").then((m) => m.learnStore(u.id)).catch(() => 0); // coach memory: profit setup
   if (form.get("useFixed")) {
     const s = await getSettings(u.id);
     await saveSettings(u.id, { ...s, fixedCostsMonthly: p.subscriptions + p.otherFixed });

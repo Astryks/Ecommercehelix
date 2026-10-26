@@ -7,6 +7,8 @@ import { notify } from "@/lib/email/notify";
 import { cancelEmail, paymentFailedEmail, receiptEmail } from "@/lib/email/templates";
 import { planName } from "@/lib/plans";
 import { onSubscriptionChange } from "@/lib/fb-group/activation";
+import { shouldWelcome } from "@/lib/coach/memory";
+import { coachEnabled } from "@/lib/coach/config";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +28,8 @@ async function applySub(sub: SubLike & { customer?: string | { id: string } | nu
   // Members Facebook group: join email and "to approve" when paid starts, "to remove" when it ends. Never blocks billing.
   await onSubscriptionChange({ userId, email: row?.email, name: row?.name }, sub.id, row ? { plan: row.plan, status: row.status } : null, { plan: f.plan, status: f.status })
     .catch((e) => console.error("fb group update failed", (e as Error).message));
+  // Coach welcome: first chat message + welcome email, once per subscription. Never blocks billing.
+  if (coachEnabled() && shouldWelcome(f)) await import("@/lib/coach/lifecycle").then((m) => m.coachWelcome(userId, sub.id, f.plan)).catch((e) => console.error("coach welcome failed", (e as Error).message));
   const nowCanceling = (f.cancelAtPeriodEnd && !row?.cancelAtPeriodEnd) || (sub.status === "canceled" && row?.status !== "canceled" && !row?.cancelAtPeriodEnd);
   if (nowCanceling && row?.email)
     await notify({ userId, email: row.email, plan: row.plan }, "cancel", sub.id, (l) => cancelEmail({ name: row.name, baseUrl: l.baseUrl }, { until: sub.status === "canceled" ? "today" : prettyDate(f.currentPeriodEnd) }));

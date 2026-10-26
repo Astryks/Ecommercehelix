@@ -20,12 +20,15 @@ export async function getFacts(userId: string): Promise<MemoryFact[]> {
   return rows.map((r) => ({ id: r.id, kind: r.kind as MemoryKind, key: r.key, fact: r.fact, updatedAt: r.updatedAt.toISOString() }));
 }
 
-export async function saveFacts(userId: string, add: MemoryFact[], forget: string[] = [], source: "chat" | "user" = "chat") {
+export async function saveFacts(userId: string, add: MemoryFact[], forget: string[] = [], source: "chat" | "user" | "sync" = "chat") {
   if (!hasDb) {
     mem.facts.set(userId, mergeFacts(mem.facts.get(userId) ?? [], add.map((f) => ({ ...f, id: f.id ?? rid() })), forget));
     return;
   }
   if (forget.length) await prisma.coachMemory.deleteMany({ where: { userId, key: { in: forget } } });
+  // Store sync never overwrites a fact the owner edited by hand.
+  const mine = source === "sync" ? new Set((await prisma.coachMemory.findMany({ where: { userId, source: "user" }, select: { kind: true, key: true } })).map((r) => `${r.kind}:${r.key}`)) : new Set<string>();
+  add = add.filter((f) => !mine.has(`${f.kind}:${f.key}`));
   for (const f of add) await prisma.coachMemory.upsert({ where: { userId_kind_key: { userId, kind: f.kind, key: f.key } }, create: { userId, kind: f.kind, key: f.key, fact: f.fact, source }, update: { fact: f.fact, source } });
   const extra = await prisma.coachMemory.findMany({ where: { userId }, orderBy: { updatedAt: "desc" }, skip: 60, select: { id: true } });
   if (extra.length) await prisma.coachMemory.deleteMany({ where: { id: { in: extra.map((e) => e.id) } } });

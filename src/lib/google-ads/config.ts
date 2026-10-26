@@ -2,9 +2,11 @@
 export const GOOGLE_ADS_VERSION = process.env.GOOGLE_ADS_API_VERSION || "v25";
 export const GOOGLE_ADS_BASE = `https://googleads.googleapis.com/${GOOGLE_ADS_VERSION}`;
 export const GA4_SCOPE = "https://www.googleapis.com/auth/analytics.readonly";
-/** GA4 sessions sync is off unless GA4_SESSIONS=1. When on, the Google sign-in also asks for read-only Analytics. */
+/** GA4 sessions sync is off unless GA4_SESSIONS=1. Read-only Analytics is asked for only in the optional "Connect GA4" step, never in the normal Google sign-in. */
 export const ga4On = (env: Record<string, string | undefined> = process.env) => env.GA4_SESSIONS === "1" || env.GA4_SESSIONS === "true";
-export const GOOGLE_ADS_SCOPES = ["https://www.googleapis.com/auth/adwords", "openid", "email", ...(ga4On() ? [GA4_SCOPE] : [])];
+export const GOOGLE_ADS_SCOPES = ["https://www.googleapis.com/auth/adwords", "openid", "email"];
+/** Scopes for the Google connect: Ads only, plus read-only Analytics when the user picked "Connect GA4" (and GA4 is on). */
+export const googleScopes = (wantGa4: boolean, env: Record<string, string | undefined> = process.env) => [...GOOGLE_ADS_SCOPES, ...(wantGa4 && ga4On(env) ? [GA4_SCOPE] : [])];
 
 type Ga4Report = { rows?: { dimensionValues?: { value?: string }[]; metricValues?: { value?: string }[] }[] };
 /** GA4 runReport (dimension date YYYYMMDD, metric sessions) -> daily rows. */

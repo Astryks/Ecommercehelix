@@ -68,7 +68,11 @@ export const isCheckRunning = (userId: string) => leaseHeld(lockKey(userId)).cat
 /** Run a check and store it. Never throws: a failed check is saved with a plain error. Returns null if a check for this user is already running. */
 export async function runAndSave(userId: string, url: string): Promise<AuditRunRow | null> {
   if (!(await takeLease(lockKey(userId), LOCK_MS).catch(() => true))) return null;
-  try { return await runAndSaveInner(userId, url); } finally { await releaseLease(lockKey(userId)); }
+  try {
+    const r = await runAndSaveInner(userId, url);
+    await import("../coach/lifecycle").then((m) => m.learnStore(userId)).catch(() => 0); // coach memory: store check result
+    return r;
+  } finally { await releaseLease(lockKey(userId)); }
 }
 
 async function runAndSaveInner(userId: string, url: string): Promise<AuditRunRow> {

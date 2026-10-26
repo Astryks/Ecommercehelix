@@ -17,6 +17,18 @@ const BATCH = 64;
 
 const approxTokens = (s: string) => Math.ceil(s.length / 4);
 
+/** Prisma over TCP by default; COACH_DB_HTTP=1 uses the Neon HTTPS driver (for machines where port 5432 is blocked). Same tagged-template API. */
+type Db = { $queryRaw<T>(s: TemplateStringsArray, ...v: unknown[]): Promise<T>; $executeRaw(s: TemplateStringsArray, ...v: unknown[]): Promise<unknown>; $disconnect(): Promise<void> };
+async function openDb(): Promise<Db> {
+  if (process.env.COACH_DB_HTTP === "1") {
+    const { neon } = await import("@neondatabase/serverless");
+    const sql = neon(process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL!);
+    return { $queryRaw: (s, ...v) => sql(s, ...v) as never, $executeRaw: (s, ...v) => sql(s, ...v), $disconnect: async () => {} };
+  }
+  const { PrismaClient } = await import("@prisma/client");
+  return new PrismaClient() as unknown as Db;
+}
+
 async function main() {
   const chunks = allChunks(root, process.env.COACH_EXTRA_DIR);
   const tokens = chunks.reduce((n, c) => n + approxTokens(c.title + "\n" + c.text), 0);
@@ -29,9 +41,8 @@ async function main() {
 
   if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is not set");
   if (!process.env.AI_GATEWAY_API_KEY && !process.env.VERCEL_OIDC_TOKEN) throw new Error("AI_GATEWAY_API_KEY is not set");
-  const { PrismaClient } = await import("@prisma/client");
   const { embedMany } = await import("ai");
-  const db = new PrismaClient();
+  const db = await openDb();
   try {
     const have = new Map((await db.$queryRaw<{ id: string; hash: string; e: boolean }[]>`SELECT "id","hash",("embedding" IS NOT NULL) AS e FROM "CoachChunk"`).map((r) => [r.id, r]));
     const todo: Chunk[] = chunks.filter((c) => { const h = have.get(c.id); return !h || h.hash !== c.hash || !h.e; });

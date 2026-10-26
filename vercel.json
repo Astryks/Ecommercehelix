@@ -30,6 +30,14 @@
       "schedule": "25 19 * * *"
     },
     {
+      "path": "/api/cron/klaviyo-sync",
+      "schedule": "35 19 * * *"
+    },
+    {
+      "path": "/api/cron/coach-learn",
+      "schedule": "50 19 * * *"
+    },
+    {
       "path": "/api/cron/monday-scorecard",
       "schedule": "0 21 * * 0"
     },

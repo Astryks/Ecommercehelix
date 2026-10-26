@@ -63,13 +63,21 @@ export function dailyTasksEmail(c: Ctx, tasks: { title: string; minutes: number 
 }
 
 /** The daily email, built by composeDaily (daily-mix.ts): a varied subject and opener, the user's goal and numbers when known, four steps, one idea and a button to the next lesson. */
-export function dailyEmail(c: Ctx, m: DailyMix): Email {
+export function dailyEmail(c: Ctx, m: DailyMix, coach: { title: string; href: string }[] = []): Email {
   const abs = (h: string) => (h.startsWith("http") ? h : `${c.baseUrl}${h}`);
   // Today's topic is the teaser (different every day); the button opens the right lesson. Steps and numbers follow.
   return layout(c, { kind: "daily", marketing: true, subject: m.subject, preheader: m.topic.hook, title: m.topic.intro,
     paras: [m.topic.hook, m.topic.takeaway, m.topic.teaserStep, ...(m.goalLine ? [m.goalLine] : []), ...(m.numbersLine ? [m.numbersLine] : []), `Your steps today (about ${m.minutes} min):`],
     list: m.tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: m.topic.label, href: abs(m.topic.href) },
-    after: [`Also: ${m.button.label}: ${abs(m.button.href)}`, `P.S. ${m.idea}`] });
+    after: [...(coach.length ? ["From your Helix coach today:", ...coach.slice(0, 3).map((t) => `- ${t.title}: ${abs(t.href)}`)] : []), `Also: ${m.button.label}: ${abs(m.button.href)}`, `P.S. ${m.idea}`] });
+}
+
+/** Sent once when someone starts Starter or Growth: introduces the coach and the first tasks. */
+export function coachWelcomeEmail(c: Ctx, plan: string, tasks: { title: string; href: string }[]): Email {
+  const abs = (h: string) => (h.startsWith("http") ? h : `${c.baseUrl}${h}`);
+  return layout(c, { kind: "coach-welcome", marketing: false, subject: `Welcome to Helix ${plan}: meet your coach`, preheader: "Your coach is ready, with your first tasks.", title: "Meet your Helix coach",
+    paras: [`Thanks for joining Helix ${plan}. Your plan now includes the Helix coach. It knows your numbers and the Helix course, and it remembers what you tell it about your business.`, "Every day it gives you 1-3 short tasks, in the app and in your daily email. Your first ones:"],
+    list: tasks.slice(0, 3).map((t) => `${t.title}: ${abs(t.href)}`), button: { label: "Open your coach", href: `${c.baseUrl}/dashboard?coach=1` } });
 }
 
 export function eventEmail(c: Ctx, e: { name: string; daysTo: number; line: string; lesson: { label: string; href: string } }): Email {

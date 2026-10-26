@@ -13,6 +13,8 @@ import { insightsFor } from "@/lib/signals";
 import Link from "next/link";
 import { InsightCard } from "@/components/dashboard/InsightCard";
 import { Flag } from "@/components/dashboard/Flag";
+import { klaviyoFixes, klaviyoOn } from "@/lib/klaviyo/config";
+import { klaviyoSummary } from "@/lib/klaviyo/service";
 
 const SCHEDULE = [
   ["Store check", "Once on Free, monthly on Starter and Growth"],
@@ -30,6 +32,8 @@ export default async function Insights() {
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const open = all.filter((i) => !done.has(`insight-${i.id}`));
   const resolved = all.length - open.length;
+  const kSum = klaviyoOn() && !demo ? await klaviyoSummary(u.id).catch(() => null) : null;
+  const kFixes = kSum ? klaviyoFixes(kSum) : [];
 
   return (
     <div className="mx-auto max-w-6xl">
@@ -46,6 +50,20 @@ export default async function Insights() {
           <p className="mt-1 max-w-3xl text-slate-600">Helix checks your store and your ads and tells you, in plain words, what is holding sales back: the ad, the page, the offer or the checkout. Fix the top one first. {open.length} open, {resolved} resolved. {live.signals.period}.{!live.metaLive && <> <Link className="text-cyan-700 underline" href="/dashboard/integrations">Connect Meta</Link> to use your own ad data.</>}</p>
         </div>
       </header>
+      {kFixes.length > 0 && (
+        <section className="card mt-6 p-6">
+          <h2 className="text-lg font-semibold">Email fixes from Klaviyo</h2>
+          <ul className="mt-3 space-y-3">
+            {kFixes.map((f) => (
+              <li key={f.id} className="rounded-xl bg-slate-50 p-4 text-sm">
+                <p className="font-semibold text-slate-900">{f.title}</p>
+                <p className="mt-1 text-slate-600">{f.why}</p>
+                <Link href={f.href} className="mt-1 inline-block text-cyan-700 underline">How to do it</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
         <div className="space-y-5">

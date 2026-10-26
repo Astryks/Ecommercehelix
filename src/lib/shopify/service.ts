@@ -189,6 +189,7 @@ export async function syncShopify(userId: string, actor: Actor = "user", days = 
     await setShopifyStock(userId, stock);
 
     await patch(userId, { status: "active", lastSyncAt: new Date(), lastSyncError: null, shopName: info.shop.name, currency: info.shop.currencyCode, productCount: info.productsCount?.count ?? 0 });
+    await import("../coach/lifecycle").then((m) => m.learnStore(userId)).catch(() => 0); // coach memory from store totals
     return { ok: true, orders: orders.length };
   } catch (e) {
     const msg = (e as Error).message.slice(0, 300);
@@ -262,5 +263,6 @@ export async function connectShopifyToken(userId: string, shopInput: string, tok
   if (!hasDb) mem.set(userId, { userId, ...row, scopes: SHOPIFY_SCOPES, productCount: 0, lastSyncAt: null });
   else await prisma.shopifyConnection.upsert({ where: { userId }, create: { userId, ...row }, update: row });
   await logAudit(userId, { actor: "user", action: "shopify.connect", target: shop, outcome: "ok", detail: { via: "custom-app" } });
+  await import("../coach/lifecycle").then((m) => m.learnStore(userId)).catch(() => 0);
   return { ok: true };
 }
