@@ -766,6 +766,8 @@ model CoachTask {
 
   @@unique([userId, day, key])
   @@index([userId, day])
+}
+
 // TikTok Ads (additive, behind TIKTOK_ADS=1). Long-lived Marketing API token, encrypted. Daily spend sync only.
 model TikTokConnection {
   userId        String    @id
