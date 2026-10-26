@@ -74,7 +74,7 @@ export function CoachWidget() {
           <header className="flex items-center justify-between rounded-t-2xl bg-[#1A1718] px-4 py-3 text-white pt-[max(0.75rem,env(safe-area-inset-top))]">
             <div className="flex items-center gap-2 font-semibold"><Sparkles className="h-4 w-4 text-[#B9B3FF]" aria-hidden /> Helix - Your business coach</div>
             <div className="flex items-center gap-1">
-              <button onClick={() => setView(view === "chat" ? "memory" : "chat")} className="rounded-lg p-1.5 hover:bg-white/10" aria-label={view === "chat" ? "What Helix remembers" : "Back to chat"} title={view === "chat" ? "What Helix remembers" : "Back to chat"}><Brain className="h-4 w-4" aria-hidden /></button>
+              <button onClick={() => { const next = view === "chat" ? "memory" : "chat"; setView(next); if (next === "memory") start(async () => setFacts((await coachOpen()).facts)); }} className="rounded-lg p-1.5 hover:bg-white/10" aria-label={view === "chat" ? "What Helix remembers" : "Back to chat"} title={view === "chat" ? "What Helix remembers" : "Back to chat"}><Brain className="h-4 w-4" aria-hidden /></button>
               <button onClick={() => setOpen(false)} className="rounded-lg p-1.5 hover:bg-white/10" aria-label="Close coach"><X className="h-5 w-5" aria-hidden /></button>
             </div>
           </header>
