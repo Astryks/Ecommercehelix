@@ -1,5 +1,5 @@
 {
- "_note": "Lesson ids. Progress, task ids, card positions and store-check findings are saved under each lesson's permanent id: its number before the 26 Oct 2026 reorder (lessons added later get a new permanent id past the end of their old module: 12.12 and 20.14 with the reorder, then 22.19 (13.17) and 23.8 (21.8), then 3.12 (15.12), 10.18 (16.18), 5.23 (5.22), 12.13 (11.13) and 16.10 (27.7) on 27 Oct 2026). 'renumbered' maps a permanent id to the number shown now, 'modules' maps old module page slugs to new ones (redirected in next.config.ts), 'lessons' lists lessons merged into another lesson (permanent ids, with step moves) and 'anchors' maps old heading anchors to a permanent id. Read by src/lib/lesson-alias.ts.",
+ "_note": "Lesson ids. Progress, task ids, card positions and store-check findings are saved under each lesson's permanent id: its number before the 26 Oct 2026 reorder (lessons added later get a new permanent id past the end of their old module: 12.12 and 20.14 with the reorder, then 22.19 (13.17) and 23.8 (21.8), then 3.12 (15.12), 10.18 (16.18), 5.23 (5.22), 12.13 (11.13) and 16.10 (27.7) on 27 Oct 2026, then 7.17 (8.17), 7.18 (8.18), 8.14 (10.14), 12.14 (11.14) and 12.15 (11.15) for the Channels 101 lessons). 'renumbered' maps a permanent id to the number shown now, 'modules' maps old module page slugs to new ones (redirected in next.config.ts), 'lessons' lists lessons merged into another lesson (permanent ids, with step moves) and 'anchors' maps old heading anchors to a permanent id. Read by src/lib/lesson-alias.ts.",
  "renumbered": {
   "1.1": "1.1",
   "1.2": "1.2",
@@ -318,7 +318,12 @@
   "10.18": "16.18",
   "5.23": "5.22",
   "12.13": "11.13",
-  "16.10": "27.7"
+  "16.10": "27.7",
+  "7.17": "8.17",
+  "7.18": "8.18",
+  "8.14": "10.14",
+  "12.14": "11.14",
+  "12.15": "11.15"
  },
  "modules": {
   "04-brand-and-content": "03-brand-and-content",

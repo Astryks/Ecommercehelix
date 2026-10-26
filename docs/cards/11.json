@@ -97,5 +97,27 @@
   {"say": "Write each pin title and description with a search phrase in plain words, and link the pin to the exact product page.", "check": "Clicks land on the product, not your home page.", "lost": "Copy your product name plus one search word."},
   {"say": "Post a few fresh pins every week, and post seasonal pins 6 to 8 weeks before the season.", "check": "Your pins are already being found when people start planning.", "lost": "Post 3 pins a week."},
   {"say": "Once a month, open **Analytics** and sort your pins by outbound clicks.", "check": "You know your top 5 pins, so your next pins can copy their style.", "lost": "Look at your single best pin."}
+ ]},
+"11.14": {"intro": "New to TikTok ads? We'll set up your first one together.",
+ "steps": [
+  {"say": "Learn the four ways. Organic means free videos you post.", "check": "You can say which of the four are free and which are paid.", "lost": "Learn the four ways."},
+  {"say": "Learn the content style. Good TikToks look like normal posts, not ads.", "check": "You know a simple phone video often beats a polished ad here.", "lost": "Learn the content style."},
+  {"say": "Start with free posts. Post 3 to 5 videos a week for a month before you pay for ads.", "check": "You know which 2 or 3 videos got the most views and comments.", "lost": "Start with free posts."},
+  {"say": "Before you start ads, tick off this list. You have a TikTok Ads Manager account (TikTok: set up an Ads Manager account).", "check": "Every box is ticked. Account reviews usually take under 24 hours.", "lost": "Before you start ads, tick off this list."},
+  {"say": "In TikTok Ads Manager, click Create with the Sales goal. Call it something like \"2026-11 Sales First\".", "check": "A new Sales campaign with a clear name is open. Menus change often, so look for the same words nearby.", "lost": "In TikTok Ads Manager, click Create with the Sales goal."},
+  {"say": "Set a daily budget you are happy to lose while learning, like $20 to $30 a day. Leave the audience on TikTok's suggestion.", "check": "The ad group shows a small daily budget and a broad audience.", "lost": "Set a daily budget you are happy to lose while learning, like $20 to $30 a day."},
+  {"say": "Pick your best free video as a Spark Ad. Add your product page link and a short call to action like Shop now.", "check": "The preview shows your real post with a button to your store.", "lost": "Pick your best free video as a Spark Ad."},
+  {"say": "Click Submit. Then leave it alone for 3 days.", "check": "The ad is approved and spending. You have not changed anything yet.", "lost": "Click Submit."},
+  {"say": "Stuck? Search YouTube for \"TikTok Ads Manager tutorial for beginners 2026\" or \"how to run Spark Ads 2026\".", "check": "You find a recent video that matches your screen.", "careful": "Take a screenshot of where you are stuck.", "lost": "Search YouTube, or screenshot it and ask the Helix coach."}
+ ]},
+"11.15": {"intro": "There are lots of other places to sell. We'll see which ones can wait.",
+ "steps": [
+  {"say": "Learn Pinterest. People use it like a search engine for ideas.", "check": "You know Pinterest suits products people plan for, like home, fashion, gifts and food.", "lost": "Learn Pinterest."},
+  {"say": "Learn SEO, which means showing up in Google for free. Google finds pages through links.", "check": "You know SEO is free but slow. Google says changes can take a few weeks to months to show.", "lost": "Learn SEO, which means showing up in Google for free."},
+  {"say": "Learn YouTube. It is the place for longer how-to, review and demo videos.", "check": "You know YouTube suits products that need showing or explaining.", "lost": "Learn YouTube."},
+  {"say": "Learn email and SMS. These are owned channels.", "check": "You know to start collecting emails from day one, before anything else on this list.", "lost": "Learn email and SMS."},
+  {"say": "Learn marketplaces. Amazon and Etsy already have shoppers, but they charge fees and own the customer.", "check": "You know a marketplace can add sales, but the buyer belongs to the marketplace, not you.", "lost": "Learn marketplaces."},
+  {"say": "Pick when to add each one. Use the list in More detail below.", "check": "You have one next channel written down, and a date to start it.", "lost": "Pick when to add each one."},
+  {"say": "Stuck? Search YouTube for \"Pinterest for business tutorial 2026\", \"Shopify SEO for beginners 2026\" or \"Pinterest Ads Manager tutorial 2026\".", "check": "You find a recent video that matches your screen.", "careful": "Take a screenshot of where you are stuck and ask the Helix coach or another AI assistant for the next step.", "lost": "Search YouTube, or screenshot it and ask the Helix coach."}
  ]}
 }

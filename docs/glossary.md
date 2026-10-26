@@ -17,6 +17,7 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Attribution**: Deciding which ad or channel gets credit for a sale. Meta's default counts sales within 7 days of a click or 1 day of a view.
 - **Audience segments**: Meta's split of your audience into new people, people who engaged with you, and existing customers, used in reports and settings.
 - **BAS** (business activity statement): Business activity statement: the form GST-registered Australian businesses lodge with the ATO to report and pay GST.
+- **Boosted post** (boost, boosted posts, boosting): A post you already shared that you pay to show to more people. Simpler than an ad made in Ads Manager, with fewer choices.
 - **Brand search**: Ads that show when people search your brand name. Usually cheap and often very profitable.
 - **Break-even CPA**: The most you can pay in ads for one sale before that sale stops making money.
 - **Break-even ROAS**: The ROAS where an order makes $0 profit after its costs. Below it, ads lose money.
@@ -71,16 +72,20 @@ Generated from `scripts/glossary_source.py` by `python3 scripts/build_curriculum
 - **Mandatory standard** (mandatory standards): A safety rule a product must meet by law before it can be sold, such as the Australian rules for products with button batteries.
 - **Margin** (gross margin): The share of each sale you keep after product cost. A $100 sale with $40 product cost is a 60% margin.
 - **MER** (marketing efficiency ratio): Helix shows it as all ad spend divided by all sales, as a percentage. MER 25% means $25 of ads for every $100 of sales. Many tools flip it to sales divided by ad spend, so 25% shows as 4x.
+- **Merchant Center** (Google Merchant Center): Google's free tool where you upload your product list so your products can show in Shopping results and ads.
 - **Meta description** (meta descriptions): The short summary under your page title in Google results.
 - **MOQ** (minimum order quantity): Minimum order quantity: the smallest order a supplier will accept.
 - **Negative keyword** (negatives, negative keywords): A word you tell Google never to show your ads for, to stop wasted clicks.
 - **Nexus** (economic nexus): In the US, a link with a state (like a warehouse there, or enough sales into it) that means you must collect its sales tax.
+- **Objective** (objectives, campaign objective): The goal you pick when you make a campaign, such as Sales or Traffic. It tells the ad system what result to look for.
 - **Organic**: Unpaid: posts, search results and word of mouth that you do not pay to show.
 - **Partner access**: Letting an agency or freelancer use your ad account through their own business, while you keep ownership.
 - **Partnership ad** (partnership ads, Spark ads, Spark ad): An ad that uses a creator's post or handle, so people see their name with yours. TikTok calls these Spark Ads.
 - **Payment reserve** (rolling reserve, payout hold): Part of your sales that a payment provider holds back for a while in case of refunds or chargebacks.
 - **Payout** (payouts): The money your payment provider sends to your bank, after taking its fees, refunds and any held amounts.
+- **Performance Max** (PMax): A Google campaign type that shows your ads across Search, Shopping, YouTube, Gmail and more from one campaign.
 - **Pixel**: A small piece of code on your store that tells Meta when someone views, adds to cart or buys.
+- **Placement** (placements): Where an ad shows, such as Feed, Stories, Reels or search results. Meta can pick placements for you.
 - **PMax** (Performance Max): A Google campaign type that shows your products across Search, Shopping, YouTube and more from one campaign.
 - **Pop-up** (popup, sign-up form): A small box on your store that offers a reason to join your email list. People choose to sign up.
 - **Pop-up**: A box on your site that asks visitors for their email, often with a small reward.

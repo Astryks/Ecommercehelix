@@ -6,7 +6,7 @@ import aliases from "./lesson-aliases.json";
  * The course was reordered on 26 Oct 2026 (Attract, Convert, Grow), which changed most lesson
  * numbers. Saved progress never moves: step ticks, task ids, the card player position and store
  * check findings are saved under each lesson's permanent id (its number before the reorder; lessons
- * added later use new ids past the end of their old module: 12.12, 20.14, 22.19, 23.8, then 3.12, 10.18, 5.23, 12.13 and 16.10). Screens, links and code use the number shown
+ * added later use new ids past the end of their old module: 12.12, 20.14, 22.19, 23.8, then 3.12, 10.18, 5.23, 12.13, 16.10, 7.17, 7.18, 8.14, 12.14 and 12.15). Screens, links and code use the number shown
  * now. Convert with toStoredRef / toCurrentRef at the edges where data is saved or read.
  *
  * Lessons merged into another lesson earlier (permanent ids) and renamed headings keep working too.

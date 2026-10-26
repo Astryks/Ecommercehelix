@@ -386,6 +386,122 @@
 
 **Expected result:** You know your top 5 pins, so your next pins can copy their style.
 
+## Lesson 11.14: TikTok 101 (start here if you have never used TikTok for selling)
+<!-- stage:attract -->
+
+**Why this matters:** TikTok is a scrolling app built on short, real-looking videos. You can sell there in four ways. Knowing them stops you paying for ads before you know what people like.
+
+**Step 1.** Learn the four ways. **Organic** means free videos you post. **TikTok Shop** lets people buy inside the app ([TikTok: sell on TikTok Shop](https://www.tiktok.com/business/en-US/tiktok-shop-seller)). **Ads Manager ads** are paid videos. **Spark Ads** pay to push a real post, yours or a creator's ([TikTok: about Spark Ads](https://ads.tiktok.com/help/article/spark-ads)).
+
+**Expected result:** You can say which of the four are free and which are paid.
+
+<details><summary>More detail: the four ways side by side</summary>
+
+| Way | Free or paid | Good for |
+|---|---|---|
+| Organic | Free | Learning what people like |
+| TikTok Shop | Free to list, fees on each sale | Buying without leaving the app |
+| Ads Manager ad | Paid | Sending people to your store |
+| Spark Ad | Paid | Pushing a post that already works. Likes and follows stay on the post |
+</details>
+
+**Step 2.** Learn the content style. Good TikToks look like normal posts, not ads. Film on a phone in 9:16. Show the product in the first 2 seconds. Use a person talking, a demo or a before-and-after.
+
+**Expected result:** You know a simple phone video often beats a polished ad here.
+
+**Step 3.** Start with free posts. Post 3 to 5 videos a week for a month before you pay for ads.
+
+**Expected result:** You know which 2 or 3 videos got the most views and comments.
+
+**Step 4.** Before you start ads, tick off this list. You have a TikTok Ads Manager account ([TikTok: set up an Ads Manager account](https://ads.tiktok.com/help/article/create-tiktok-ads-manager-account)). Your business details are added. The TikTok pixel is connected through the TikTok app in Shopify.
+
+**Expected result:** Every box is ticked. Account reviews usually take under 24 hours.
+
+<details><summary>More detail: account and payment</summary>
+
+- Sign up with email or phone, then add your country, industry, legal business name, time zone and currency.
+- Use your exact legal business name. A mismatch can stop the account being approved.
+- Add billing details and a payment method, then click **Go to Ads Manager**.
+</details>
+
+**Step 5.** In TikTok Ads Manager, click **Create** with the **Sales** goal. Call it something like "2026-11 Sales First".
+
+**Expected result:** A new Sales campaign with a clear name is open. Menus change often, so look for the same words nearby.
+
+**Step 6.** Set a daily budget you are happy to lose while learning, like $20 to $30 a day. Leave the audience on TikTok's suggestion.
+
+**Expected result:** The ad group shows a small daily budget and a broad audience.
+
+**Step 7.** Pick your best free video as a **Spark Ad**. Add your product page link and a short call to action like **Shop now**.
+
+**Expected result:** The preview shows your real post with a button to your store.
+
+**Step 8.** Click **Submit**. Then leave it alone for 3 days.
+
+**Expected result:** The ad is approved and spending. You have not changed anything yet.
+
+<details><summary>More detail: after you launch</summary>
+
+- **First 24 to 72 hours:** check it is approved and spending, and that the pixel records add-to-carts.
+- **Do not** change the budget or audience for 3 days.
+- **Common first-time mistakes:** making ads that look like TV ads, skipping free posts, a missing pixel, a too-narrow audience and stopping after one day.
+</details>
+
+**Step 9.** Stuck? Search YouTube for "TikTok Ads Manager tutorial for beginners 2026" or "how to run Spark Ads 2026". Pick videos from the last 6 months, because menus change.
+
+**Expected result:** You find a recent video that matches your screen.
+
+**Watch out:** Take a screenshot of where you are stuck. Ask the Helix coach or another AI assistant for the next click. **Next:** TikTok readiness and setup in Lesson 11.1.
+
+## Lesson 11.15: Other channels 101 (Pinterest, SEO, YouTube, email, SMS and marketplaces)
+<!-- stage:attract -->
+
+**Why this matters:** Meta, Google and TikTok are not the only places to be seen. Some channels are free but slow. Some you own, so no app can take them away. This lesson explains each one simply and says when to add it.
+
+**Step 1.** Learn Pinterest. People use it like a search engine for ideas. You save **Pins** (pictures with a link) to **boards** (themed folders). Clear titles with the words people search help them get found ([Pinterest: create a board](https://help.pinterest.com/en/business/article/create-a-board)).
+
+**Expected result:** You know Pinterest suits products people plan for, like home, fashion, gifts and food.
+
+**Step 2.** Learn SEO, which means showing up in Google for free. Google finds pages through links. Clear page titles, a short summary and good photos with alt text help it understand you ([Google: SEO starter guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)).
+
+**Expected result:** You know SEO is free but slow. Google says changes can take a few weeks to months to show.
+
+**Step 3.** Learn YouTube. It is the place for longer how-to, review and demo videos. Shorts are its 9:16 short videos. Paid YouTube ads run through Google Ads, for example Demand Gen (see Google 101, Lesson 10.14).
+
+**Expected result:** You know YouTube suits products that need showing or explaining.
+
+**Step 4.** Learn email and SMS. These are **owned** channels. Once someone signs up, you can reach them again without paying for each view.
+
+**Expected result:** You know to start collecting emails from day one, before anything else on this list.
+
+**Step 5.** Learn marketplaces. Amazon and Etsy already have shoppers, but they charge fees and own the customer. Etsy suits handmade, vintage and craft items. Amazon suits everyday products people search by name.
+
+**Expected result:** You know a marketplace can add sales, but the buyer belongs to the marketplace, not you.
+
+**Step 6.** Pick when to add each one. Use the list in **More detail** below. Add one new channel at a time.
+
+**Expected result:** You have one next channel written down, and a date to start it.
+
+<details><summary>More detail: when to add each channel</summary>
+
+| Channel | Add it when | Go next |
+|---|---|---|
+| Email and SMS | Day one: add a sign-up form | Module 16 |
+| SEO | Day one: write clear titles and descriptions | Lessons 11.8 and 11.9 |
+| Pinterest | Your product is visual and people plan for it | Lesson 11.13 |
+| YouTube | You have demo or how-to videos | Lesson 11.12 |
+| Pinterest ads | Free Pins get clicks and your main ads are profitable | Lesson 11.7 |
+| Amazon or Etsy | Your own store sells steadily and you can handle the fees and extra stock | Lesson 26.8 and their own seller help pages |
+
+**Pinterest ads, the short version:** in Pinterest Ads Manager, click **Create campaign**, pick a goal, set a budget, choose keywords and pick the Pins to promote ([Pinterest: create a campaign](https://help.pinterest.com/en/business/article/set-up-your-campaign)). Pinterest recommends at least 25 keywords per ad group ([Pinterest: keyword targeting](https://help.pinterest.com/en/business/article/keyword-targeting)).
+</details>
+
+**Step 7.** Stuck? Search YouTube for "Pinterest for business tutorial 2026", "Shopify SEO for beginners 2026" or "Pinterest Ads Manager tutorial 2026". Pick videos from the last 6 months, because menus change.
+
+**Expected result:** You find a recent video that matches your screen.
+
+**Watch out:** Take a screenshot of where you are stuck and ask the Helix coach or another AI assistant for the next step. **Next:** the full channel lessons in Module 11.
+
 ## Self-check
 
 1. How many ad-ready videos should you have before paying for TikTok ads?

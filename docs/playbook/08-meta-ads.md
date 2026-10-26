@@ -602,6 +602,142 @@ TikTok has catalog ads too. In TikTok Ads Manager, open **Assets > Catalog** to 
 | You want ads to run only at certain hours | Ad sets with either budget type can use **Delivery scheduling** ([Meta: schedule an ad set](https://www.facebook.com/business/help/1381935425400769)). Most stores do better leaving ads on all day. Test it only with clear proof that some hours lose money. |
 | You keep overspending in a sale | Set a spending limit on the campaign or the account before the sale starts. |
 
+## Lesson 8.17: Meta ads 101 (start here if you have never run an ad)
+<!-- stage:attract -->
+
+**Why this matters:** Meta ads are paid posts that show on Facebook, Instagram, Messenger, WhatsApp and Threads. You pay so people who do not follow you see your product. This lesson explains the basics in plain words, then walks you through your very first ad.
+
+**Step 1.** Learn where Meta ads can show. The main places are Feed, Stories, Reels, Explore, Marketplace and search results. Meta's name for these spots is **placements** (see [Meta: about ad placements](https://www.facebook.com/business/help/407108559393196)).
+
+**Expected result:** You know an ad can appear in many spots, and that adding more placements does not raise the price.
+
+<details><summary>More detail: the main placements</summary>
+
+- **Feed:** the main scrolling list on Facebook and Instagram.
+- **Stories:** full-screen vertical posts between friends' Stories.
+- **Reels:** full-screen short videos in the Reels tab.
+- **Explore:** the Instagram grid of suggested posts.
+- **Marketplace:** the Facebook buy-and-sell area.
+- **Search results:** next to Facebook, Marketplace and Instagram searches.
+
+Meta suggests **Advantage+ placements**, which lets it pick the spots for you.
+</details>
+
+**Step 2.** Learn the difference between a post and an ad. A post, Story or Reel you share for free is **organic**. Your followers see it. An ad is **paid**. Meta shows it to new people you choose or that Meta finds.
+
+**Expected result:** You can say which of your content is free and which is paid.
+
+<details><summary>More detail: posts vs Stories vs Reels vs ads</summary>
+
+| | What it is | What it is for | Size |
+|---|---|---|---|
+| Post | A photo or video on your profile | Show your products to followers | 4:5 tall photo |
+| Story | Full-screen, vertical | Quick updates, behind the scenes | 9:16 |
+| Reel | Full-screen short video | Get found by new people for free | 9:16 |
+| Ad | Any of the above, paid | Reach new buyers and get sales | 4:5 for Feed, 9:16 for Stories and Reels |
+
+Meta recommends 4:5 for Instagram Feed photos ([Meta Ads Guide: Instagram Feed image](https://www.facebook.com/business/ads-guide/update/image/instagram-feed)). It recommends 9:16 for Stories and Reels ([Stories](https://www.facebook.com/business/ads-guide/update/video/instagram-story), [Reels](https://www.facebook.com/business/ads-guide/update/video/instagram-reels)). Reels ads can run up to 15 minutes, but short videos of 15 to 30 seconds are easier to watch. Stories ads of 16 seconds or more may be split into several cards.
+</details>
+
+**Step 3.** Learn what a boosted post is. Boosting means paying to show a post you already made to more people. It is quick, but has fewer choices than an ad made in **Ads Manager** (see [Meta: boosted posts vs ads](https://www.facebook.com/business/help/317083072148603)).
+
+**Expected result:** You know to make your first sales ad in Ads Manager, not with the Boost button.
+
+**Step 4.** Learn the three layers of every Meta ad. The **campaign** holds your goal. The **ad set** holds the budget, schedule, audience and placements. The **ad** is what people see: the picture or video, the words and the link.
+
+**Expected result:** You can say what each layer controls: goal, then who and how much, then what they see.
+
+**Step 5.** Learn the six goals Meta calls **objectives**: Awareness, Traffic, Engagement, Leads, App promotion and Sales. For an online store, pick **Sales** (see [Meta: choose an ad objective](https://www.facebook.com/business/help/1438417719786914)).
+
+**Expected result:** You know Sales tells Meta to find people likely to buy.
+
+<details><summary>More detail: the six objectives in plain words</summary>
+
+- **Awareness:** get seen by as many people as possible.
+- **Traffic:** get clicks to your website.
+- **Engagement:** get likes, comments or messages.
+- **Leads:** get sign-ups, like an email list.
+- **App promotion:** get app downloads.
+- **Sales:** get people to buy. Best for a store.
+</details>
+
+**Step 6.** Before you start, tick off this list. Your store is live and you placed a test order. You have a Facebook Page, an Instagram account and a business portfolio (see [Meta: create a business portfolio](https://www.facebook.com/business/help/1710077379203657)). The pixel is connected and you have 3 ads ready.
+
+**Expected result:** Every box is ticked. If one is not, finish it first in the lessons linked below.
+
+<details><summary>More detail: how to connect the pixel and payment</summary>
+
+- **Pixel:** connect it through the Facebook & Instagram app in Shopify. It tells Meta when someone buys ([Shopify: Facebook data sharing](https://help.shopify.com/en/manual/promoting-marketing/analyze-marketing/meta-data-sharing)).
+- **Payment:** add a card in Ads Manager under billing. Then set an account spending limit as a safety net ([Meta: set an account spending limit](https://www.facebook.com/business/help/203321833042958)).
+- Full walk-through: Lesson 8.1 and Lesson 8.2.
+</details>
+
+**Step 7.** Open Ads Manager and click **Create**. Pick **Sales**. Name the campaign with a date and goal, like "2026-11 Sales First".
+
+**Expected result:** A new Sales campaign with a clear name is open. Menus move often, so if a button looks different, look for the same word nearby.
+
+**Step 8.** Set a daily budget you are happy to lose while you learn, like $20 a day. Leave the audience and placements on Meta's suggestions.
+
+**Expected result:** The ad set shows a small daily budget and **Advantage+** audience and placements.
+
+**Step 9.** Add your 3 ads. Use 1 video in 9:16 and 2 photos in 4:5. Write one short line about the main benefit. Paste your product page link.
+
+**Expected result:** The preview shows your ads with the right link and no cut-off text.
+
+**Step 10.** Click **Publish**. Then leave it alone for 3 days. Only check that money is being spent and that sales show up.
+
+**Expected result:** The ad is approved and spending. You have not changed anything yet.
+
+<details><summary>More detail: after you launch</summary>
+
+- **First 24 hours:** check the ad was approved and is spending.
+- **Day 2 to 3:** check clicks and add-to-carts are coming in.
+- **Do not** change the budget, audience or ads in the first 3 days. Each change makes Meta start learning again.
+- **Common first-time mistakes:** using Boost instead of Ads Manager, picking Traffic or Engagement instead of Sales, a missing pixel, too small an audience, and changing things every day.
+</details>
+
+**Step 11.** Stuck? Search YouTube for "Meta Ads Manager tutorial for beginners 2026" or "how to create a sales campaign in Meta Ads Manager". Pick videos from the last 6 months, because menus change.
+
+**Expected result:** You find a recent video that matches what you see on screen. If it does not match, try a newer one.
+
+**Watch out:** If you get stuck, take a screenshot of your screen. Ask the Helix coach or another AI assistant "what do I click next?" and share the screenshot. **Next:** set up your accounts properly in Module 08 (Lesson 8.1), then read your results in Module 09.
+
+## Lesson 8.18: Which channel first? A simple guide
+<!-- stage:attract -->
+
+**Why this matters:** Trying every channel at once spreads a small budget too thin. You learn nothing. Picking one first, based on your money, your product and your store, gets you real results faster.
+
+**Step 1.** Check your store is ready. You need a live store, a test order, clear product pages and tracking. If not, finish "Get your store ready first" before any ads.
+
+**Expected result:** You know if you can start paid ads now or should start with free posts and email.
+
+**Step 2.** Check your budget. Under about $20 a day, start with free posts, email and SEO. From about $20 to $50 a day, pick one paid channel. Over $50 a day, you can test a second one.
+
+**Expected result:** You know how many paid channels you can afford: none, one or two.
+
+**Step 3.** Match your product. Use the table in **More detail** below to find the channel that fits what you sell.
+
+**Expected result:** You have one first channel written down.
+
+<details><summary>More detail: which channel fits your product</summary>
+
+| Your product | Start with | Why |
+|---|---|---|
+| People already search for it by name | Google Search or Shopping | Buyers are looking right now |
+| Eye-catching, impulse or new | Meta (Instagram and Facebook) | You can show it to people who did not know they wanted it |
+| Fun to show on video, under about $50 | TikTok | Short real-looking videos sell it |
+| Home, fashion, gifts, food or anything people plan | Pinterest | People save ideas there to buy later |
+| Handmade or vintage | Etsy, plus your own store | Shoppers there want exactly that |
+
+Not sure? Start with Meta. It works for most new stores and has the most beginner help.
+</details>
+
+**Step 4.** Open the 101 for that channel and follow its first-ad steps: Lesson 8.17 (Meta), Lesson 10.14 (Google), Lesson 11.14 (TikTok) or Lesson 11.15 (other channels).
+
+**Expected result:** You are on the right lesson for your first channel.
+
+**Watch out:** Give one channel at least 2 to 4 weeks before you add another. **Next:** Know who you are selling to, then plan your ads.
+
 ## Self-check
 
 1. Name two edits that restart learning.

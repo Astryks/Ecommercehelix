@@ -23,9 +23,9 @@ export const pathStepById = (id: string) => PATH.find((s) => s.id === id);
 export const FIRST_AD_BEFORE = [
   "Your store is live and you placed a test order (step 2).",
   "You know your break-even ROAS and daily budget (step 1).",
-  "You have a Meta Business account, a Facebook Page and an Instagram account.",
+  "You have a Meta Business account, a Facebook Page and an Instagram account (step 3 shows how).",
   "A card is ready to pay for ads. Start with an amount you can afford to lose.",
-  "You have 3 ads ready: 1 video and 2 photos (step 4).",
+  "You have 3 ads ready: 1 video and 2 photos (step 5).",
 ];
 export const FIRST_AD_ORDER = [
   "Turn on tracking (pixel) and check it sees a purchase.",

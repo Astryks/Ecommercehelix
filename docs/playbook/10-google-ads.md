@@ -424,6 +424,80 @@
 
 **Expected result:** AI expansion does not spend on your brand or on junk searches.
 
+## Lesson 10.14: Google 101 (start here if you have never run a Google ad)
+<!-- stage:attract -->
+
+**Why this matters:** On Google, many people are already **searching** for what you sell. On Meta and TikTok, people are **scrolling** and you catch their eye. Google ads meet buyers at the moment they look. This lesson explains the main types, then walks you through your first one.
+
+**Step 1.** Learn the four main types. **Search** shows text ads on Google results. **Shopping** shows product photos with prices. **Performance Max** runs one campaign across all of Google. **Demand Gen** shows picture and video ads on YouTube, Discover and Gmail (see [Google Ads: choose a campaign type](https://support.google.com/google-ads/answer/2567043)).
+
+**Expected result:** You can name the four types and where each one shows.
+
+<details><summary>More detail: searching vs scrolling</summary>
+
+| Type | People are... | Good for |
+|---|---|---|
+| Search | Typing what they want | Catching ready buyers |
+| Shopping | Comparing products and prices | Stores with clear product photos |
+| Performance Max | Anywhere on Google | Letting Google find buyers across all places |
+| Demand Gen / YouTube | Watching and scrolling | Making new people want your product |
+
+Shopping needs a Google Merchant Center account with your products in it. Performance Max can use the same product data. Demand Gen covers YouTube, including Shorts, plus Discover, Gmail and the Display Network ([Google Ads: about Demand Gen](https://support.google.com/google-ads/answer/13695777)).
+</details>
+
+**Step 2.** Learn what a small store should start with. Start with **Shopping or Performance Max** using your product feed. Add a small **Search** campaign for your brand name and your main product words. Leave YouTube and Demand Gen until sales are steady.
+
+**Expected result:** You know your first Google campaign is about people already looking to buy.
+
+**Step 3.** Before you start, tick off this list. Your store is live. You have a Google account. Your products are in Google Merchant Center with no errors. The Google tag tracks purchases.
+
+**Expected result:** Every box is ticked. If not, the Google lessons in Module 10 show how.
+
+<details><summary>More detail: accounts, tag and payment</summary>
+
+- **Google Ads account:** sign up with your business name and website. You can skip the guided campaign and make the account first ([Google Ads: create an account](https://support.google.com/google-ads/answer/6366720)).
+- **Time zone:** pick it carefully. Reports and billing use it.
+- **Payment:** add a card, PayPal or bank. Google may hold a small temporary charge to check the card.
+- **Tag and feed:** connect them through the Google & YouTube app in Shopify. See Lessons 10.1 to 10.3.
+</details>
+
+**Step 4.** In Google Ads, open **New campaign**. Pick the **Sales** goal.
+
+**Expected result:** The campaign type screen opens. Menus change often, so look for the same words if the screen looks different.
+
+**Step 5.** Pick **Performance Max** (or **Shopping**) and link your Merchant Center account.
+
+**Expected result:** Your products show as linked to the new campaign.
+
+**Step 6.** Name it with a date and type, like "2026-11 Performance Max All Products". Set a daily budget you are happy to lose while learning, like $20 a day.
+
+**Expected result:** The campaign has a clear name and a small daily budget.
+
+**Step 7.** Pick **Maximise conversion value** for bidding. Leave the target return on ad spend empty for now.
+
+**Expected result:** Google will aim for the most sales value within your budget.
+
+**Step 8.** Add your best product photos, your logo, 5 short headlines and 2 descriptions. Check the final link goes to your store.
+
+**Expected result:** The ad strength shows Good or better and the preview looks right.
+
+**Step 9.** Click **Publish campaign**. Then leave it alone for 1 to 2 weeks while Google learns.
+
+**Expected result:** The campaign is live. You check daily that it spends, but you do not change it.
+
+<details><summary>More detail: after you launch</summary>
+
+- **First 24 to 72 hours:** check the campaign is approved and spending. Check Merchant Center has no new errors.
+- **Do not** change the budget or bidding in the first 2 weeks. Each change restarts learning.
+- **Common first-time mistakes:** leaving the guided setup on Smart or Display by accident, no purchase tracking, Merchant Center errors, too many changes too soon, and paying for clicks on your own brand only.
+</details>
+
+**Step 10.** Stuck? Search YouTube for "Google Ads tutorial for beginners 2026" or "Performance Max for Shopify setup 2026". Pick videos from the last 6 months, because menus change.
+
+**Expected result:** You find a recent video that matches your screen. If not, try a newer one.
+
+**Watch out:** Take a screenshot of where you are stuck. Ask the Helix coach or another AI assistant "what do I click next?" and share it. **Next:** the full Google setup in Module 10, starting with Lesson 10.1.
+
 ## Self-check
 
 1. How many main (primary) conversions should you have?

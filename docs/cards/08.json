@@ -119,5 +119,26 @@
  "steps": [
   {"say": "Find your problem in the lesson table.", "check": "You have the matching fix.", "lost": "Find your problem's row."},
   {"say": "Do the fix. Write it in your notes with the date.", "check": "It's fixed, and you'll know what you did if it comes back.", "lost": "Do the fix. Note the date."}
+ ]},
+"8.17": {"intro": "Never run an ad? That's fine. We'll set up your first Meta ad one click at a time.",
+ "steps": [
+  {"say": "Learn where Meta ads can show. The main places are Feed, Stories, Reels, Explore, Marketplace and search results.", "check": "You know an ad can appear in many spots, and that adding more placements does not raise the price.", "lost": "Learn where Meta ads can show."},
+  {"say": "Learn the difference between a post and an ad. A post, Story or Reel you share for free is organic.", "check": "You can say which of your content is free and which is paid.", "lost": "Learn the difference between a post and an ad."},
+  {"say": "Learn what a boosted post is. Boosting means paying to show a post you already made to more people.", "check": "You know to make your first sales ad in Ads Manager, not with the Boost button.", "lost": "Learn what a boosted post is."},
+  {"say": "Learn the three layers of every Meta ad. The campaign holds your goal.", "check": "You can say what each layer controls: goal, then who and how much, then what they see.", "lost": "Learn the three layers of every Meta ad."},
+  {"say": "Learn the six goals Meta calls objectives: Awareness, Traffic, Engagement, Leads, App promotion and Sales. For an online store, pick Sales (see Meta: choose an ad objective).", "check": "You know Sales tells Meta to find people likely to buy.", "lost": "Learn the six goals Meta calls objectives: Awareness, Traffic, Engagement, Leads, App promotion and Sales."},
+  {"say": "Before you start, tick off this list. Your store is live and you placed a test order.", "check": "Every box is ticked. If one is not, finish it first in the lessons linked below.", "lost": "Before you start, tick off this list."},
+  {"say": "Open Ads Manager and click Create. Pick Sales.", "check": "A new Sales campaign with a clear name is open. Menus move often, so if a button looks different, look for the same word nearby.", "lost": "Open Ads Manager and click Create."},
+  {"say": "Set a daily budget you are happy to lose while you learn, like $20 a day. Leave the audience and placements on Meta's suggestions.", "check": "The ad set shows a small daily budget and Advantage+ audience and placements.", "lost": "Set a daily budget you are happy to lose while you learn, like $20 a day."},
+  {"say": "Add your 3 ads. Use 1 video in 9:16 and 2 photos in 4:5.", "check": "The preview shows your ads with the right link and no cut-off text.", "lost": "Add your 3 ads."},
+  {"say": "Click Publish. Then leave it alone for 3 days.", "check": "The ad is approved and spending. You have not changed anything yet.", "lost": "Click Publish."},
+  {"say": "Stuck? Search YouTube for \"Meta Ads Manager tutorial for beginners 2026\" or \"how to create a sales campaign in Meta Ads Manager\".", "check": "You find a recent video that matches what you see on screen. If it does not match, try a newer one.", "careful": "If you get stuck, take a screenshot of your screen.", "lost": "Search YouTube, or screenshot it and ask the Helix coach."}
+ ]},
+"8.18": {"intro": "Not sure where to start? We'll pick one channel to begin with.",
+ "steps": [
+  {"say": "Check your store is ready. You need a live store, a test order, clear product pages and tracking.", "check": "You know if you can start paid ads now or should start with free posts and email.", "lost": "Check your store is ready."},
+  {"say": "Check your budget. Under about $20 a day, start with free posts, email and SEO.", "check": "You know how many paid channels you can afford: none, one or two.", "lost": "Check your budget."},
+  {"say": "Match your product. Use the table in More detail below to find the channel that fits what you sell.", "check": "You have one first channel written down.", "lost": "Match your product."},
+  {"say": "Open the 101 for that channel and follow its first-ad steps: Lesson 8.17 (Meta), Lesson 10.14 (Google), Lesson 11.14 (TikTok) or Lesson 11.15 (other channels).", "check": "You are on the right lesson for your first channel.", "careful": "Give one channel at least 2 to 4 weeks before you add another.", "lost": "Open the 101 for that channel and follow its first-ad steps: Lesson 8.17 (Meta), Lesson 10.14 (Google), Lesson 11.14 (TikTok) or Lesson 11.15 (other channels)."}
  ]}
 }

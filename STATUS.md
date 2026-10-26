@@ -1,5 +1,32 @@
 # ▶ NEXT STEPS (updated 27 Oct 2026, morning AEDT) — start here
 
+## CHANNELS 101 + BEGINNER ORDER (27 Oct 2026, branch `helix-101-27oct`)
+
+- New Learn path step 3 **"Channels 101: pick where to show up"** (`/dashboard/learn/path/channels-101`), right after "Get your store ready first". Five plain first-time lessons, each with its own card deck and a new permanent saved-progress id:
+
+| Shown | Lesson | Permanent id |
+|---|---|---|
+| 8.17 | Meta ads 101 (start here if you have never run an ad) | 7.17 |
+| 10.14 | Google 101 | 8.14 |
+| 11.14 | TikTok 101 | 12.14 |
+| 11.15 | Other channels 101 (Pinterest, SEO, YouTube, email, SMS, marketplaces) | 12.15 |
+| 8.18 | Which channel first? A simple guide | 7.18 |
+
+- Each 101: short numbered steps (one action, one recommended choice), "More detail" collapsed boxes, Before you start / After you launch, YouTube search phrases (no video links) and the screenshot-and-ask-the-coach tip. Facts cite official Meta, Google, TikTok and Pinterest help pages inline.
+- Glossary: Placement, Boosted post, Objective, Performance Max, Merchant Center.
+- **Coach embed NOT re-run:** `AI_GATEWAY_API_KEY` is not set in Vercel (checked by name) and not on the box, so per the brief it stopped. The new lessons are already in the corpus (dry run: 817 chunks); run `npx vite-node scripts/coach-embed.ts --yes` once credentials are available (changed chunks only, well under $0.01).
+- **Rollback:** previous prod deployment **dpl_BmsUhXvFej1RiBUCiQ2B87uJ6jur** (ecommercehelix-orr7drpsl) — `vercel promote ecommercehelix-orr7drpsl-astryks.vercel.app`.
+
+### Beginner order per stage (Learn path, framework checklist and stages.md all follow this; ids and progress unchanged)
+
+| Stage | Order |
+|---|---|
+| Attract | 2 Get your store ready first → 3 Channels 101 (pick a channel) → 4 Know who you are selling to → 5 Make your first ads (profile, content, creative, creators) → 6 Plan your campaign (numbers, job, audiences, structure, budget, naming, brief) → 7 Set up your first ad (launch) → 8 Read your results and improve → 9 Add more places to be seen |
+| Convert | Sharpen your offer → product pages and store (13, 14) → cart, checkout and payments (14, 20) → trust: shipping and returns (21) → email and SMS (16, 30.7, 30.8) → promotions and sales (17, 18) |
+| Grow | Metrics and retention (17.7, 18.6, 16.x) → profit and books (23.1–23.3, 19.3, 19.4, 19.12, 19.5) → scaling (8.13, 8.14, 25, 26.8, 26.9) → stock and cash (19.1, 19.2, 19.9, 19.10, 19.6, 19.7, 26.4, 26.5) → admin and team (22, 23.4–23.6, 26.6, 30.11–30.16, 26.1–26.3, 26.7, 27, 28, 24.3–24.6) |
+
+Note: in the app the store basics sit in Attract step 2 (before ads, as before); stages.md lists Convert with the offer first. "Plan your ads" was split into "Make your first ads" (new step id `make-ads`) and "Plan your campaign" (`plan-ads` kept).
+
 ## LIVE IN PRODUCTION (27 Oct 2026)
 
 - `main` = `helix-live-27oct` (includes `helix-audit-fixes-27oct`). Production deployment **dpl_Evq76KucQri6ujJamUbKhpL6LX9G** (ecommercehelix-of69h75fn), Ready, aliased to ecommercehelix.com.

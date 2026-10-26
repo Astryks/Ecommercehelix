@@ -122,4 +122,9 @@ G = [
  ("Product recall", [], "Taking an unsafe product off sale and asking buyers to return it or stop using it, for a refund, repair or replacement."),
  ("EU responsible person", [], "A business based in the EU that is responsible for a product's safety when the maker is outside the EU. Its name and contact details go in the listing."),
 
+ ("Placement", ["placements"], "Where an ad shows, such as Feed, Stories, Reels or search results. Meta can pick placements for you."),
+ ("Boosted post", ["boost", "boosted posts", "boosting"], "A post you already shared that you pay to show to more people. Simpler than an ad made in Ads Manager, with fewer choices."),
+ ("Objective", ["objectives", "campaign objective"], "The goal you pick when you make a campaign, such as Sales or Traffic. It tells the ad system what result to look for."),
+ ("Performance Max", ["PMax"], "A Google campaign type that shows your ads across Search, Shopping, YouTube, Gmail and more from one campaign."),
+ ("Merchant Center", ["Google Merchant Center"], "Google's free tool where you upload your product list so your products can show in Shopping results and ads."),
 ]

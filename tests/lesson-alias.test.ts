@@ -44,7 +44,7 @@ describe("26 Oct 2026 reorder: old lesson numbers still work", () => {
     expect(toStoredRef("21.8")).toBe("23.8");
     expect(toCurrentRef("21.8")).toBe("4.6");
     // 27 Oct 2026 lessons: new permanent ids, old saved ids untouched.
-    for (const [stored, shown] of [["3.12", "15.12"], ["10.18", "16.18"], ["5.23", "5.22"], ["12.13", "11.13"], ["16.10", "27.7"]]) {
+    for (const [stored, shown] of [["3.12", "15.12"], ["10.18", "16.18"], ["5.23", "5.22"], ["12.13", "11.13"], ["16.10", "27.7"], ["7.17", "8.17"], ["7.18", "8.18"], ["8.14", "10.14"], ["12.14", "11.14"], ["12.15", "11.15"]]) {
       expect(toCurrentRef(stored)).toBe(shown);
       expect(toStoredRef(shown)).toBe(stored);
     }

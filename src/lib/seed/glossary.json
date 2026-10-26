@@ -794,5 +794,43 @@
   "term": "EU responsible person",
   "aka": [],
   "means": "A business based in the EU that is responsible for a product's safety when the maker is outside the EU. Its name and contact details go in the listing."
+ },
+ {
+  "term": "Placement",
+  "aka": [
+   "placements"
+  ],
+  "means": "Where an ad shows, such as Feed, Stories, Reels or search results. Meta can pick placements for you."
+ },
+ {
+  "term": "Boosted post",
+  "aka": [
+   "boost",
+   "boosted posts",
+   "boosting"
+  ],
+  "means": "A post you already shared that you pay to show to more people. Simpler than an ad made in Ads Manager, with fewer choices."
+ },
+ {
+  "term": "Objective",
+  "aka": [
+   "objectives",
+   "campaign objective"
+  ],
+  "means": "The goal you pick when you make a campaign, such as Sales or Traffic. It tells the ad system what result to look for."
+ },
+ {
+  "term": "Performance Max",
+  "aka": [
+   "PMax"
+  ],
+  "means": "A Google campaign type that shows your ads across Search, Shopping, YouTube, Gmail and more from one campaign."
+ },
+ {
+  "term": "Merchant Center",
+  "aka": [
+   "Google Merchant Center"
+  ],
+  "means": "Google's free tool where you upload your product list so your products can show in Shopping results and ads."
  }
 ]
