@@ -46,6 +46,7 @@ describe("coach config + flag", () => {
   it("not live without a gateway key", () => {
     expect(coachLive({})).toBe(false);
     expect(coachLive({ AI_GATEWAY_API_KEY: "x" })).toBe(true);
+    expect(coachLive({ VERCEL: "1" })).toBe(true);
     expect(coachLive({ AI_GATEWAY_API_KEY: "x", AI_DISABLED: "1" })).toBe(false);
   });
   it("prices a typical fast message well under a cent", () => {

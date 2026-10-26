@@ -62,5 +62,6 @@ export function coachEnabled(env: Record<string, string | undefined> = process.e
 /** True when model calls can be made (gateway key or Vercel OIDC token present, AI not killed). */
 export function coachLive(env: Record<string, string | undefined> = process.env): boolean {
   if (env.AI_DISABLED === "1") return false;
-  return Boolean(env.AI_GATEWAY_API_KEY || env.VERCEL_OIDC_TOKEN);
+  // On Vercel the OIDC token arrives per request (header), not in env, so VERCEL=1 counts as live.
+  return Boolean(env.AI_GATEWAY_API_KEY || env.VERCEL_OIDC_TOKEN || env.VERCEL === "1");
 }
