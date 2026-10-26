@@ -29,7 +29,7 @@ describe("planning tools", () => {
   });
   it("cash plan flags the first week under the floor", () => {
     const f = forecast([], s, today);
-    const c = cashPlan(f, [{ sku: "A", name: "A", onHand: 0, dailySales: 5, weeksCover: 0, orderBy: "2026-10-20", status: "order-now", uplift: 1, upliftReason: null, orderQty: 1000, cash: 40000, landed: 40 }], today, { startBalance: 20000, floor: 5000, fixedMonthly: 3000 });
+    const c = cashPlan(f, [{ sku: "A", name: "A", onHand: 0, dailySales: 5, weeksCover: 0, daysCover: 0, orderBy: "2026-10-20", status: "order-now", uplift: 1, upliftReason: null, orderQty: 1000, cash: 40000, landed: 40 }], today, { startBalance: 20000, floor: 5000, fixedMonthly: 3000 });
     expect(c.weeks).toHaveLength(13);
     expect(c.firstLow?.start).toBe("2026-10-15");
     expect(c.weeks[0].stock).toBe(40000);

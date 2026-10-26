@@ -17,7 +17,7 @@ export default async function StockPlan() {
         <Stat k="Products tracked" v={String(t.buys.length)} />
       </div>
       {t.buys.length === 0 ? <p className="card p-5 text-slate-700">Add your products on <Link className="text-cyan-700 underline" href="/dashboard/stock">Suppliers and stock</Link> and this fills in.</p> :
-        <Table head={["Product", "On hand", "Sold a day", "Weeks left", "Order by", "Order", "Cash", "Why"]} rows={t.buys.map((b) => [b.name, b.onHand, b.dailySales, b.weeksCover ?? "–", b.orderBy ?? "–", b.orderQty || "–", b.cash ? usd(b.cash) : "–", b.upliftReason ?? (b.status === "ok" ? "Enough for now" : b.status === "no-sales" ? "No sales yet" : "Running low")])} highlight={(i) => (["out", "order-now"].includes(t.buys[i].status) ? "bg-rose-50" : t.buys[i].status === "order-soon" ? "bg-amber-50" : "")} />}
+        <Table head={["Product", "On hand", "Sold a day", "Days left", "Order by", "Order", "Cash", "Why"]} rows={t.buys.map((b) => [b.name, b.onHand, b.dailySales, b.daysCover ?? "–", b.orderBy ?? "–", b.orderQty || "–", b.cash ? usd(b.cash) : "–", b.upliftReason ?? (b.status === "ok" ? "Enough for now" : b.status === "no-sales" ? "No sales yet" : "Running low")])} highlight={(i) => (["out", "order-now"].includes(t.buys[i].status) ? "bg-rose-50" : t.buys[i].status === "order-soon" ? "bg-amber-50" : "")} />}
       <p className="text-xs text-slate-500">Sales speed updates from Shopify when connected; type it on Suppliers and stock otherwise.</p>
     </ToolPage>
   );

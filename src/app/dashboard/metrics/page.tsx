@@ -15,8 +15,8 @@ export const metadata = { title: "Key metrics" };
 
 const TONE: Record<Tone, { ring: string; dot: string; label: string }> = {
   green: { ring: "ring-emerald-200", dot: "bg-emerald-500", label: "Good" },
-  amber: { ring: "ring-amber-200", dot: "bg-amber-500", label: "Watch" },
-  red: { ring: "ring-rose-200", dot: "bg-rose-500", label: "Fix" },
+  amber: { ring: "ring-amber-200", dot: "bg-amber-500", label: "Okay" },
+  red: { ring: "ring-rose-200", dot: "bg-rose-500", label: "Needs work" },
   none: { ring: "ring-slate-200", dot: "bg-slate-300", label: "No data yet" },
 };
 

@@ -789,3 +789,7 @@ A new user's first load of /course and /dashboard returned 500. Parallel server 
 **Lessons readability:** every lesson now opens with "In short" (one sentence) and "Do this now" (your next undone step), above "Why this matters", and keeps the one-step-at-a-time cards. Check of all 30 modules: average sentence 13.6 words; 290 of 4,656 sentences are over 25 words. **Done (15 Oct, ~4:30 PM):** hand rewrite of every sentence over 22 words across all 30 modules (~550 rewritten), plus a plain-word pass. After: average 12.1 words, 20 sentences over 25 (mostly "Related" link lines and short lists), 308 over 20 (mostly 21 to 22 words). Commits a938222, 8747b35, 297784c, 0b1f77b.
 
 Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, WeeklyReview; EmailPrefs.alerts. No new env vars.
+
+## 2026-10-26 (AEDT) — deploy + metrics pass
+- Pushed 726bc58 to main. Prod deploy ecommercehelix-id7ck88rw is Ready. Live checks: / is 200, dashboard routes redirect to sign-in, and the email cron returns 401 without auth (nothing sent).
+- Metrics: added New customer CAC, Returning customer revenue, Refund rate and Cart abandonment rate tiles. Contribution now shows "You kept $X of every $100". Customers tool adds CAC, CAC payback and LTV:CAC. Stock plan shows Days left. Ratings are Good/Okay/Needs work. See docs/METRICS-AND-SOURCES.md.

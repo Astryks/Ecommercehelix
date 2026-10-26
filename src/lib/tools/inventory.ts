@@ -4,7 +4,7 @@ import type { Supplier } from "../stock";
 import { activeEvents } from "../season-calendar";
 import { addDays } from "../dates";
 
-export type BuyLine = { sku: string; name: string; onHand: number; dailySales: number; weeksCover: number | null; orderBy: string | null; status: string; uplift: number; upliftReason: string | null; orderQty: number; cash: number; landed: number };
+export type BuyLine = { sku: string; name: string; onHand: number; dailySales: number; weeksCover: number | null; daysCover: number | null; orderBy: string | null; status: string; uplift: number; upliftReason: string | null; orderQty: number; cash: number; landed: number };
 
 /** Big sale dates that land inside the lead time + cover window raise the order. */
 export function upliftFor(today: string, leadTime: number, country = "US"): { uplift: number; reason: string | null } {
@@ -26,6 +26,6 @@ export function buyPlan(items: StockItem[], suppliers: Supplier[], today: string
     const { uplift, reason } = upliftFor(today, row.leadTime, country);
     const qty = row.dailySales > 0 ? Math.max(row.supplier?.moq ?? 0, Math.ceil(row.suggestedQty * uplift)) : 0;
     const landed = landedCost(it);
-    return { sku: it.sku, name: it.name, onHand: it.onHand, dailySales: it.dailySales, weeksCover: it.dailySales > 0 ? Math.round((it.onHand / it.dailySales / 7) * 10) / 10 : null, orderBy: row.orderBy, status: row.status, uplift, upliftReason: reason, orderQty: row.status === "ok" || row.status === "no-sales" ? 0 : qty, cash: Math.round((row.status === "ok" || row.status === "no-sales" ? 0 : qty) * landed), landed };
+    return { sku: it.sku, name: it.name, onHand: it.onHand, dailySales: it.dailySales, daysCover: it.dailySales > 0 ? Math.floor(it.onHand / it.dailySales) : null, weeksCover: it.dailySales > 0 ? Math.round((it.onHand / it.dailySales / 7) * 10) / 10 : null, orderBy: row.orderBy, status: row.status, uplift, upliftReason: reason, orderQty: row.status === "ok" || row.status === "no-sales" ? 0 : qty, cash: Math.round((row.status === "ok" || row.status === "no-sales" ? 0 : qty) * landed), landed };
   }).sort((a, b) => (a.orderBy ?? "9").localeCompare(b.orderBy ?? "9"));
 }

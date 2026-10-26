@@ -40,6 +40,14 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
   const sessionsUp = prev?.t.sessions ? m.t.sessions >= prev.t.sessions : null;
   const pace = m.revenueTarget ? (rev / m.revenueTarget) * 100 : 0;
   const atc = m.t.sessions ? ((m.t.addToCarts ?? 0) / m.t.sessions) * 100 : 0;
+  // Extra numbers Helix works out from the same few basics (nothing new to type).
+  const kept100 = rev ? (m.contribution / rev) * 100 : 0;
+  const newOrders = m.t.newCustomerOrders;
+  const winCost = newOrders ? m.adSpend / newOrders : 0;
+  const firstOrderKeep = newOrders ? (Math.min(m.t.newCustomerRevenue, rev) / newOrders) * m.marginBeforeAds : 0;
+  const returningPct = rev ? Math.max(0, 100 - m.newSharePct) : 0;
+  const carts = m.t.addToCarts ?? 0;
+  const leftPct = carts ? Math.max(0, (1 - m.orders / carts) * 100) : 0;
   return [
     {
       id: "sessions", name: "Sessions", plain: "Visits to your store.", value: m.t.sessions.toLocaleString("en-AU"), raw: m.t.sessions,
@@ -102,7 +110,7 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
       source: { kind: "auto", how: "Helix estimates fees from your fee rate. Type the real number from your payout report if you have it." }, learn: "/learn/20-payments-fraud-chargebacks",
     },
     {
-      id: "contribution", name: "Contribution margin", plain: "What is left after product, shipping, fees and marketing, before fixed costs.", value: `${money(m.contribution)} · ${pct(m.contributionPct)}`, raw: m.contributionPct,
+      id: "contribution", name: "Contribution margin", plain: rev ? `What is left after product, shipping, fees and marketing, before fixed costs. You kept ${money(kept100)} of every $100 of sales.` : "What is left after product, shipping, fees and marketing, before fixed costs.", value: `${money(m.contribution)} · ${pct(m.contributionPct)}`, raw: m.contributionPct,
       good: "15% of revenue or more", tone: rev ? band(m.contributionPct, 15, 5) : "none",
       source: { kind: "auto", how: "Helix works it out from everything above." }, learn: "/learn/01-daily-profit-foundations",
     },
@@ -110,6 +118,26 @@ export function keyMetrics(m: Metrics, prev: Metrics | null, c: MetricsContext):
       id: "profit", name: "Net profit", plain: "What you keep after every cost, including your fixed costs (rent, software, wages).", value: `${money(m.netProfit)} · ${pct(share(m.netProfit))}`, raw: share(m.netProfit),
       good: "10% of revenue or more", tone: rev ? band(share(m.netProfit), 10, 0) : "none",
       source: { kind: "auto", how: `Helix works it out, spreading your ${money(s.fixedCostsMonthly)} monthly fixed costs evenly over each day.` }, learn: "/learn/01-daily-profit-foundations",
+    },
+    {
+      id: "newcac", name: "New customer CAC", plain: "CAC (customer acquisition cost): all your ad spend divided by first-time buyers.", value: newOrders ? money(winCost, 2) : "No new buyers yet", raw: newOrders ? winCost : null,
+      good: firstOrderKeep ? `Under ${money(firstOrderKeep, 2)}, what a first order leaves you before ads` : "Less than a first order leaves you before ads", tone: newOrders && firstOrderKeep ? band(winCost, firstOrderKeep * 0.75, firstOrderKeep, false) : "none",
+      source: { kind: "auto", how: "Helix works it out: ad spend ÷ new-customer orders." }, learn: "/learn/07-defining-campaigns",
+    },
+    {
+      id: "returning", name: "Returning customer revenue", plain: "Share of sales from people who have bought from you before.", value: rev ? pct(returningPct) : "No sales yet", raw: rev ? returningPct : null,
+      good: "20% or more and climbing (it depends on what you sell)", tone: rev && newOrders ? band(returningPct, 20, 10) : "none",
+      source: { kind: "auto", how: "Helix works it out: (sales − new-customer sales) ÷ sales." }, learn: "/learn/12-list-and-audience-growth",
+    },
+    {
+      id: "refunds", name: "Refund rate", plain: "Share of sales you paid back to customers.", value: m.grossRevenue ? `${money(m.refunds)} · ${pct(m.refundRatePct)}` : "No sales yet", raw: m.grossRevenue ? m.refundRatePct : null,
+      good: "5% of sales or less (clothing often runs higher)", tone: m.grossRevenue ? band(m.refundRatePct, 5, 10, false) : "none",
+      source: { kind: "auto", how: "Helix works it out: refunds ÷ gross sales." }, learn: "/learn/21-fulfilment-shipping-returns",
+    },
+    {
+      id: "abandon", name: "Cart abandonment rate", plain: "Share of carts that never became an order.", value: carts ? pct(leftPct) : "Not filled in", raw: carts ? leftPct : null,
+      good: "Under 70% (about 70% is the usual average)", tone: carts ? band(leftPct, 70, 80, false) : "none",
+      source: { kind: "auto", how: "Helix works it out from your add-to-cart number: 1 − orders ÷ sessions with an add to cart." }, learn: "/learn/14-website-and-cro",
     },
   ];
 }
