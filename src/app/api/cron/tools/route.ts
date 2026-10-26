@@ -4,6 +4,7 @@ import { refreshUser } from "@/lib/tools/server";
 import { notify } from "@/lib/email/notify";
 import { alertsEmail } from "@/lib/email/templates";
 import { isoDay } from "@/lib/dates";
+import { emailableAlerts } from "@/lib/email/cooldown";
 import type { PlanId } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
@@ -25,9 +26,17 @@ export async function GET(req: NextRequest) {
       const fresh = (await refreshUser(u.id, today)).filter((a) => a.kind !== "adcheck");
       refreshed++; opened += fresh.length;
       if (fresh.length && u.email && process.env.EMAILS_LIVE === "1") {
+        // Cooldown: an alert key emailed in the last 30 days is not emailed again (it still shows on Today).
+        const past = await prisma.emailSent.findMany({ where: { userId: u.id, kind: "alert-item", key: { in: fresh.map((a) => a.key) } }, select: { key: true, sentAt: true } });
+        const send = emailableAlerts(fresh, new Map(past.map((p) => [p.key, p.sentAt])), today);
+        if (!send.length) continue;
         const plan = (u.subscription?.plan ?? "FREE").toLowerCase() as PlanId;
-        const r = await notify({ userId: u.id, email: u.email, plan }, "alerts", `${today}-${fresh.map((a) => a.key).join(",")}`.slice(0, 180), (l) => alertsEmail({ name: u.name ?? "", baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl }, fresh));
-        if (r === "sent") { emailed++; await prisma.toolAlert.updateMany({ where: { userId: u.id, key: { in: fresh.map((a) => a.key) } }, data: { emailed: true } }); }
+        const r = await notify({ userId: u.id, email: u.email, plan }, "alerts", `${today}-${send.map((a) => a.key).join(",")}`.slice(0, 180), (l) => alertsEmail({ name: u.name ?? "", baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl }, send));
+        if (r === "sent") {
+          emailed++;
+          await prisma.toolAlert.updateMany({ where: { userId: u.id, key: { in: send.map((a) => a.key) } }, data: { emailed: true } });
+          for (const a of send) await prisma.emailSent.upsert({ where: { userId_kind_key: { userId: u.id, kind: "alert-item", key: a.key } }, create: { userId: u.id, kind: "alert-item", key: a.key }, update: { sentAt: new Date() } });
+        }
       }
     } catch (e) { failed++; console.error("tools cron", u.id, (e as Error).message); }
   }

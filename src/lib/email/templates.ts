@@ -2,7 +2,6 @@
  * Helix emails: short, simple words, one button. Pure functions so they can be tested and previewed.
  * Marketing emails carry an unsubscribe link; transactional ones (receipts, payment problems, cancellation) do not need one.
  */
-import { postalAddress } from "./postal";
 import { SEQUENCE, lessonPath } from "./sequence";
 import type { DailyMix } from "./daily-mix";
 
@@ -18,7 +17,8 @@ function layout(c: Ctx, o: { kind: string; marketing: boolean; subject: string; 
   const foot = o.marketing
     ? `You get this because you have a Helix account. <a href="${esc(c.unsubUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">Unsubscribe in one click</a> or <a href="${esc(c.prefsUrl ?? c.baseUrl + "/dashboard/settings/emails")}" style="color:#5A50D6">choose your emails</a>. Questions? <a href="${esc(c.baseUrl + "/contact")}" style="color:#5A50D6">Contact us</a>.`
     : "This is an account email about your Helix plan, so it is always sent.";
-  const addr = o.marketing ? (c.postalAddress !== undefined ? c.postalAddress : postalAddress()) : null;
+  // No postal address in the footer (founder decision, 27 Oct 2026); see STATUS.md for the CAN-SPAM note.
+  const addr: string | null = null;
   const html = `<!doctype html><html><body style="margin:0;background:#F2F1EC;font-family:Nunito,Helvetica,Arial,sans-serif">
 <span style="display:none;max-height:0;overflow:hidden">${esc(o.preheader)}</span>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F1EC;padding:24px 0"><tr><td align="center">

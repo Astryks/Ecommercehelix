@@ -14,10 +14,10 @@ describe("email templates", () => {
       expect(e.marketing).toBe(false); expect(e.html).not.toContain("unsubscribe?t="); expect(e.html).toContain("always sent");
     }
   });
-  it("marketing footers carry the postal address from BUSINESS_POSTAL_ADDRESS, and none is invented when it is unset (CAN-SPAM)", () => {
+  it("marketing footers never show a postal address, but keep one-click unsubscribe and preferences links", () => {
     const addr = "PO Box 123, Sydney NSW 2000, Australia";
     for (const e of [dailyTasksEmail({ ...c, postalAddress: addr }, [], "Friday"), winbackEmail({ ...c, postalAddress: addr }), scorecardHtmlEmail({ ...c, postalAddress: addr }, "S", "Hi,\nSales: $1")]) {
-      expect(e.html).toContain(addr); expect(e.text).toContain(`E-commerce Helix, ${addr}`);
+      expect(e.html).not.toContain(addr); expect(e.text).not.toContain(addr); expect(e.html).toContain("Unsubscribe in one click"); expect(e.html).toContain("choose your emails"); expect(e.text).toContain("Unsubscribe: ");
     }
     expect(receiptEmail({ ...c, postalAddress: addr }, { amount: "US$29.00", plan: "Starter", date: "Oct 15" }).html).not.toContain(addr);
     const none = winbackEmail({ ...c, postalAddress: null });

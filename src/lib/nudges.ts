@@ -1,5 +1,4 @@
 import { prettyDay } from "./dates";
-import { postalAddress } from "./email/postal";
 import { nextTasks, type SeasonAlert } from "./seasons";
 
 /**
@@ -16,13 +15,13 @@ export type Nudge = {
 
 /**
  * The email is marketing, so its footer has the unsubscribe link (unsubUrl, from the user's "Big sale dates"
- * preference token; falls back to the email settings page) and the postal address (BUSINESS_POSTAL_ADDRESS).
+ * preference token; falls back to the email settings page) (no postal address).
  */
 export function buildNudge(alert: SeasonAlert, opts: { name?: string; planAdded: boolean; done: Set<string>; baseUrl: string; unsubUrl?: string; postalAddress?: string | null }): Nudge | null {
   const todo = nextTasks(alert, opts.done, 3);
   if (opts.planAdded && todo.length === 0) return null; // plan finished, stay quiet
   const url = `${opts.baseUrl}/dashboard#season`;
-  const addr = opts.postalAddress !== undefined ? opts.postalAddress : postalAddress();
+  const addr: string | null = null; // no postal address in the footer (founder decision, 27 Oct 2026)
   const footer = [
     "You get this because you have a Helix account and sale date emails are on.",
     `Unsubscribe: ${opts.unsubUrl ?? `${opts.baseUrl}/dashboard/settings/emails`}`,

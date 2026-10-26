@@ -67,13 +67,16 @@ export async function computeTools(userId: string, today = isoDay()) {
 }
 export type Tools = Awaited<ReturnType<typeof computeTools>>;
 
+export const reorderKey = (sku: string) => `reorder-${sku}`;
 export type AlertDraft = { key: string; kind: string; title: string; why: string; href: string };
 /** Alerts from the numbers: low cash weeks, stock to reorder, products under break-even, monthly ad check fixes. */
 export function alertsFrom(t: Tools): AlertDraft[] {
   const out: AlertDraft[] = [];
   if (t.cash?.firstLow) out.push({ key: `cash-${t.cash.firstLow.start}`, kind: "cash", title: `Cash gets tight the week of ${t.cash.firstLow.start}`, why: `Your bank balance may drop under your $${t.cash.floor.toLocaleString("en-US")} floor. Plan now: move a stock order or trim ads.`, href: "/dashboard/numbers/cash" });
-  for (const b of t.buys.filter((x) => x.status === "order-now" || x.status === "out").slice(0, 3))
-    out.push({ key: `reorder-${b.sku}-${b.orderBy ?? t.today}`, kind: "reorder", title: `Reorder ${b.name}`, why: `${b.status === "out" ? "It is out of stock." : `Order by ${b.orderBy}.`} Suggested: ${b.orderQty} units (about $${b.cash.toLocaleString("en-US")}).${b.upliftReason ? ` ${b.upliftReason}.` : ""}`, href: "/dashboard/numbers/stock-plan" });
+  // Example stock rows (seeded so the page has something to show) never raise alerts. The key is per SKU, not per day:
+  // an overdue or out-of-stock item's orderBy is "today" every day, so a dated key opened (and emailed) a fresh alert daily.
+  for (const b of t.buys.filter((x) => !x.example && (x.status === "order-now" || x.status === "out")).slice(0, 3))
+    out.push({ key: reorderKey(b.sku), kind: "reorder", title: `Reorder ${b.name}`, why: `${b.status === "out" ? "It is out of stock." : `Order by ${b.orderBy}.`} Suggested: ${b.orderQty} units (about $${b.cash.toLocaleString("en-US")}).${b.upliftReason ? ` ${b.upliftReason}.` : ""}`, href: "/dashboard/numbers/stock-plan" });
   for (const p of t.products.filter((x) => x.flag === "loss" && x.units >= 3).slice(0, 2))
     out.push({ key: `product-${p.sku}-${t.today.slice(0, 7)}`, kind: "product", title: `${p.name} loses money on each sale`, why: `About $${Math.abs(p.profitPerUnit).toFixed(2)} lost per unit after costs and ads. Raise the price, cut costs or stop ads on it.`, href: "/dashboard/numbers/products" });
   for (const f of t.adCheck.fixes) out.push({ key: `adcheck-${t.adCheck.month}-${f.id}`, kind: "adcheck", title: f.title, why: "From this month's ad account check.", href: f.href });
@@ -89,9 +92,15 @@ export async function refreshUser(userId: string, today = isoDay()): Promise<Ale
   const drafts = t.example ? alertsFrom(t).filter((a) => a.kind === "adcheck") : alertsFrom(t);
   const keys = drafts.map((d) => d.key);
   await prisma.toolAlert.updateMany({ where: { userId, resolvedAt: null, key: { notIn: keys }, kind: { in: ["cash", "reorder", "product"] } }, data: { resolvedAt: new Date() } });
-  const existing = new Set((await prisma.toolAlert.findMany({ where: { userId, key: { in: keys } }, select: { key: true } })).map((r) => r.key));
-  const fresh = drafts.filter((d) => !existing.has(d.key));
-  if (fresh.length) await prisma.toolAlert.createMany({ data: fresh.map((d) => ({ userId, ...d, createdOn: today })), skipDuplicates: true });
+  const rows = await prisma.toolAlert.findMany({ where: { userId, key: { in: keys } }, select: { key: true, resolvedAt: true } });
+  const open = new Set(rows.filter((r) => !r.resolvedAt).map((r) => r.key));
+  const closed = new Set(rows.filter((r) => r.resolvedAt).map((r) => r.key));
+  const fresh = drafts.filter((d) => !open.has(d.key));
+  // A closed alert whose condition is true again (restocked, then low again) reopens; the email cooldown stops a flip-flop from emailing daily.
+  const reopen = fresh.filter((d) => closed.has(d.key));
+  for (const d of reopen) await prisma.toolAlert.updateMany({ where: { userId, key: d.key }, data: { resolvedAt: null, createdOn: today, title: d.title, why: d.why, emailed: false } });
+  const created = fresh.filter((d) => !closed.has(d.key));
+  if (created.length) await prisma.toolAlert.createMany({ data: created.map((d) => ({ userId, ...d, createdOn: today })), skipDuplicates: true });
   return fresh;
 }
 
