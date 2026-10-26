@@ -1,5 +1,11 @@
 # ▶ NEXT STEPS (updated 26 Oct 2026, evening) — start here
 
+## 26 Oct 2026: daily topics, checklist quest, AI plan (branch `helix-daily-topics-quest`, NOT pushed)
+- Daily email topic teaser: 72-topic Attract→Convert→Grow calendar with no repeats per cycle (fcf43d1). Social calendar of 72 IG + 72 FB posts in `docs/social/daily/`, prepared only and not scheduled.
+- `/dashboard/learn/framework`: stage timeline, ticks, XP, badges, streak, plus "Next up" on Today (d85cb1e). Build OK, 376 tests pass.
+- `docs/HELIX-LLM-PLAN.md`: RAG-first plan, costs and fair-use limits. Nothing paid is enabled.
+- To ship: Sid OKs, then push or merge to main (Vercel deploys prod).
+
 **Latest (26 Oct 2026):** Learn path videos now come from official channels only, and two new compliance lessons are live: 21.8 Product safety, labelling and recalls, and 13.17 Privacy and cookie consent (see "Official videos and two compliance lessons" below). Earlier the same day: course reorder (Start here → Attract → Convert → Grow), SEO basics (11.8), Meta audience check (9.3), founder-story emails and corrections.
 
 **Needs Sid:** the numbered list under "Needs Sid" below (Stripe test purchase, TikTok, Meta app review and Save choice, Google Ads token, GitHub Support, lesson videos, Facebook group, wins moderators, Search Console, Resend usage, re-rendered social images).
