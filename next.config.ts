@@ -3,7 +3,7 @@ import aliases from "./src/lib/lesson-aliases.json";
 
 const nextConfig: NextConfig = {
   // Learn pages read the playbook markdown from disk.
-  outputFileTracingIncludes: { "/learn/**": ["./docs/playbook/**/*"], "/dashboard/**": ["./docs/playbook/**/*"] },
+  outputFileTracingIncludes: { "/learn/**": ["./docs/playbook/**/*"], "/dashboard/**": ["./docs/playbook/**/*", "./docs/sops/**/*", "./docs/cards/**/*"] },
   async redirects() {
     return [
       { source: "/pricing", destination: "/#pricing", permanent: false },
