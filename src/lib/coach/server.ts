@@ -87,10 +87,8 @@ async function llmCall(userId: string, { model, system, prompt, maxOutputTokens 
   const r = await generateText({
         model,
         // The fixed system prompt is the cacheable prefix (Anthropic prompt cache via the gateway).
-        messages: [
-          { role: "system", content: system, providerOptions: { anthropic: { cacheControl: { type: "ephemeral" } } } },
-          { role: "user", content: prompt },
-        ],
+        instructions: { role: "system", content: system, providerOptions: { anthropic: { cacheControl: { type: "ephemeral" } } } },
+        prompt,
         maxOutputTokens,
         temperature: 0.3,
         abortSignal: AbortSignal.timeout(45_000),
