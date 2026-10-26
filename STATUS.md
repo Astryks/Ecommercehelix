@@ -15,6 +15,7 @@
 - Each 101: short numbered steps (one action, one recommended choice), "More detail" collapsed boxes, Before you start / After you launch, YouTube search phrases (no video links) and the screenshot-and-ask-the-coach tip. Facts cite official Meta, Google, TikTok and Pinterest help pages inline.
 - Glossary: Placement, Boosted post, Objective, Performance Max, Merchant Center.
 - **Coach embed NOT re-run:** `AI_GATEWAY_API_KEY` is not set in Vercel (checked by name) and not on the box, so per the brief it stopped. The new lessons are already in the corpus (dry run: 817 chunks); run `npx vite-node scripts/coach-embed.ts --yes` once credentials are available (changed chunks only, well under $0.01).
+- **Live:** `main` 62db4d4, production deployment **dpl_4bskKLej2A5ggGVpxayMPg9xDmze** (ecommercehelix-93er82feh), Ready, aliased to ecommercehelix.com. Public lesson pages show all five new lessons.
 - **Rollback:** previous prod deployment **dpl_BmsUhXvFej1RiBUCiQ2B87uJ6jur** (ecommercehelix-orr7drpsl) — `vercel promote ecommercehelix-orr7drpsl-astryks.vercel.app`.
 
 ### Beginner order per stage (Learn path, framework checklist and stages.md all follow this; ids and progress unchanged)
