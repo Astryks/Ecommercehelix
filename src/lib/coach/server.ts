@@ -1,4 +1,5 @@
 import "server-only";
+import { journeyCoachLine } from "../journey-server";
 import { hasDb, prisma } from "../db";
 import { getAccount, getDays, getProfitSetup } from "../repo";
 import { auditRuns } from "../site-audit/run";
@@ -103,7 +104,11 @@ async function llmCall(userId: string, { model, system, prompt, maxOutputTokens 
 export function realDeps(userId: string): CoachDeps {
   return {
     llm: (p) => llmCall(userId, p),
-    memory: async () => memoryText(await getFacts(userId)),
+    memory: async () => {
+      const [facts, road] = await Promise.all([getFacts(userId), journeyCoachLine(userId).catch(() => null)]);
+      const text = memoryText(facts);
+      return road ? [text, road].filter(Boolean).join("\n") : text;
+    },
     history: async () => {
       const m = (await getMessages(userId, today())).slice(-6);
       return m.length ? m.map((x) => `${x.role === "user" ? "Owner" : "Coach"}: ${x.text.slice(0, 400)}`).join("\n") : null;

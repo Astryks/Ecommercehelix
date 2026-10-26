@@ -15,7 +15,7 @@ export type DailyGoal = { title: string; day: number; days: number };
 /** Yesterday against the 7 days before it, from real (not example) scorecard days. */
 export type DailyNumbers = { sales: number; orders: number; adSpend: number; merPct: number; avgSales: number | null; avgMerPct: number | null };
 /** `stage`: the stage of the user's next lesson in the guided path (null before Attract or when unknown). */
-export type DailyFacts = { lesson: DailyLesson | null; goal: DailyGoal | null; numbers: DailyNumbers | null; hasAnyNumbers: boolean; hasAds: boolean | null; stage?: StageId | null };
+export type DailyFacts = { lesson: DailyLesson | null; goal: DailyGoal | null; numbers: DailyNumbers | null; hasAnyNumbers: boolean; hasAds: boolean | null; stage?: StageId | null; road?: { title: string; next: string | null } | null };
 export const NO_FACTS: DailyFacts = { lesson: null, goal: null, numbers: null, hasAnyNumbers: false, hasAds: null, stage: null };
 
 /** What this user was already sent (oldest first), so nothing repeats: kept in ToolInput kind "email-history". */
@@ -26,7 +26,7 @@ export type DailyInput = { seed: string; date: string; season?: string | null; f
 export type DailyTask = { title: string; minutes: number };
 export type DailyMix = {
   subject: string; preheader: string; title: string; opener: string;
-  goalLine: string | null; numbersLine: string | null;
+  goalLine: string | null; numbersLine: string | null; roadLine?: string | null;
   tasks: DailyTask[]; minutes: number; idea: string;
   /** Today's topic (same for everyone, one per day from the topic calendar): intro, hook, takeaway, link. */
   topic: { intro: string; hook: string; takeaway: string; teaserStep: string; label: string; href: string };
@@ -283,6 +283,7 @@ export function composeDaily(i: DailyInput): DailyMix | null {
     title: `${wd}: ${theme.name}`,
     goalLine: f.goal ? `You are working on: ${f.goal.title}${f.goal.days > 1 ? ` (day ${Math.min(f.goal.day, f.goal.days)} of ${f.goal.days})` : ""}.` : null,
     numbersLine: f.numbers ? numbersLine(f.numbers) : f.hasAnyNumbers ? "No numbers for yesterday yet. Add them in Numbers, it takes 2 minutes." : null,
+    roadLine: f.road ? `Road to $100M: you are at ${f.road.title}.${f.road.next ? ` Next stop: ${f.road.next}.` : ""}` : null,
     tasks, minutes, idea: idea?.text ?? "",
     button: f.lesson ? { label: trimTo(`Next lesson: ${f.lesson.title}`, 52), href: f.lesson.href } : { label: "Open Today", href: "/dashboard" },
   };

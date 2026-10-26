@@ -42,6 +42,8 @@ import { bannerFor } from "@/lib/season-calendar";
 import { QuestNextUp } from "@/components/dashboard/QuestNextUp";
 import { questForUser } from "@/lib/quest-server";
 import { StageStrip } from "@/components/StageStrip";
+import { RoadTeaser } from "@/components/journey/RoadSection";
+import { journeyPosition } from "@/lib/journey-server";
 import { waterfall } from "@/lib/profit-setup";
 import { TodayTasks } from "@/components/dashboard/TodayTasks";
 import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
@@ -154,7 +156,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   );
 
   // Calm Today for people on a personal plan: progress, one step, and your numbers. Everything else is one tap away.
-  const qx = await questForUser(u.id);
+  const [qx, road] = await Promise.all([questForUser(u.id), journeyPosition(u.id)]);
   const st = diag && sp.full !== "1" ? await planState(u.id) : null;
   if (st) {
     const profitSet = Boolean(await getProfitSetup(u.id));
@@ -170,6 +172,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <StageStrip quest={qx.quest} />
         {tasksBox}
         <QuestNextUp q={qx.quest} streak={qx.streak} />
+        <RoadTeaser level={road.pos.level} source={road.pos.source} />
         <NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
@@ -204,6 +207,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
       <div className="mb-6"><StageStrip quest={qx.quest} /></div>
       <div className="mb-6">{tasksBox}</div>
       <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>
+      <div className="mb-6"><RoadTeaser level={road.pos.level} source={road.pos.source} /></div>
       <div className="mb-6"><NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
