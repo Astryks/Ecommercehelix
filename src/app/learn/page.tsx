@@ -24,7 +24,7 @@ export default function Learn() {
       <SiteHeader dark={false} />
       <main className="mx-auto w-full max-w-6xl px-5 pt-page pb-section">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Learn</p>
-        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">The Helix <span className="grad-text">Playbook</span></h1>
+        <h1 className="mt-stack text-4xl text-slate-900 sm:text-5xl">The Helix <span className="grad-text">Playbook</span></h1>
         <p className="mt-lead max-w-2xl text-slate-600">
           {all.length} modules and {all.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons ({all.reduce((a, m) => a + m.steps, 0)} steps) on running a profitable online store. Every lesson is a short &ldquo;why this matters&rdquo;, then one instruction at a time with the result you should see and simple tips. Press <strong>Done, next step</strong> or tick the checklist; Helix remembers. Hover any dotted word for a plain meaning. Free for everyone.
         </p>

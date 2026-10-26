@@ -27,12 +27,12 @@ export function Timeline({ s, plan: userPlan }: { s: PlanState; plan: PlanId }) 
         const locked = PLAN_RANK[userPlan] < PLAN_RANK[b.tier];
         return (
           <li key={b.id} className={`flex gap-3 rounded-xl p-3 ${now ? "bg-cyan-50 ring-1 ring-cyan-200" : ""}`}>
-            <span className="mt-0.5">{done ? <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden /> : <Circle className={`h-5 w-5 ${now ? "text-cyan-600" : "text-slate-300"}`} aria-hidden />}</span>
-            <div className="text-sm">
+            <span className="mt-0.5 shrink-0">{done ? <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden /> : <Circle className={`h-5 w-5 ${now ? "text-cyan-600" : "text-slate-300"}`} aria-hidden />}</span>
+            <div className="min-w-0 flex-1 text-sm">
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Week {b.weeks[0]}{b.weeks[1] > b.weeks[0] ? ` to ${b.weeks[1]}` : ""}{now ? " · you are here" : ""}</p>
               <p className="font-semibold text-slate-900">{b.title}</p>
               <p className="text-slate-600">{b.what}</p>
-              {locked && <p className="mt-1 inline-flex items-center gap-1 text-xs text-slate-500"><Lock className="h-3 w-3" aria-hidden /> Full steps on {planName(b.tier)}. The lessons are free to read.</p>}
+              {locked && <p className="mt-1 flex items-start gap-1 text-xs text-slate-500"><Lock className="mt-0.5 h-3 w-3 shrink-0" aria-hidden /> <span className="min-w-0">Full steps on {planName(b.tier)}. The lessons are free to read.</span></p>}
             </div>
           </li>
         );
