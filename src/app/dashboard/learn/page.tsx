@@ -8,8 +8,6 @@ import { STAGE_INFO, STAGE_ORDER } from "@/lib/stages";
 import { PATH } from "@/lib/learn-path";
 import { siteContent } from "@/lib/site-content";
 import { isoDay } from "@/lib/dates";
-import { courseVideos } from "@/lib/course-videos";
-import { CourseVideos } from "@/components/learn/CourseVideos";
 
 export const metadata = { title: "Learn" };
 
@@ -58,8 +56,6 @@ export default async function DashboardLearn() {
           </p>
         </section>
       )}
-
-      <CourseVideos videos={courseVideos()} />
 
       <h2 className="mt-8 font-serif text-2xl uppercase tracking-wide text-slate-900">Your path</h2>
       <ol className="mt-3 grid gap-3" data-testid="learn-path">
