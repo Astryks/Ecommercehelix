@@ -67,7 +67,7 @@ export function dailyEmail(c: Ctx, m: DailyMix, coach: { title: string; href: st
   const abs = (h: string) => (h.startsWith("http") ? h : `${c.baseUrl}${h}`);
   // Today's topic is the teaser (different every day); the button opens the right lesson. Steps and numbers follow.
   return layout(c, { kind: "daily", marketing: true, subject: m.subject, preheader: m.topic.hook, title: m.topic.intro,
-    paras: [m.topic.hook, m.topic.takeaway, m.topic.teaserStep, ...(m.goalLine ? [m.goalLine] : []), ...(m.numbersLine ? [m.numbersLine] : []), `Your steps today (about ${m.minutes} min):`],
+    paras: [m.topic.hook, m.topic.takeaway, m.topic.teaserStep, ...(m.goalLine ? [m.goalLine] : []), ...(m.numbersLine ? [m.numbersLine] : []), ...(m.roadLine ? [m.roadLine] : []), `Your steps today (about ${m.minutes} min):`],
     list: m.tasks.map((t) => `${t.title} (${t.minutes} min)`), button: { label: m.topic.label, href: abs(m.topic.href) },
     after: [...(coach.length ? ["From your Helix coach today:", ...coach.slice(0, 3).map((t) => `- ${t.title}: ${abs(t.href)}`)] : []), `Also: ${m.button.label}: ${abs(m.button.href)}`, `P.S. ${m.idea}`] });
 }

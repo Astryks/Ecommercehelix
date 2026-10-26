@@ -11,6 +11,11 @@ import { lessonLink } from "@/lib/lesson-links";
 import { UpgradePrompt } from "@/components/UpgradePrompt";
 import { achievementsForUser } from "@/lib/achievements-server";
 import { LostLink } from "@/components/dashboard/LostLink";
+import { RoadSection } from "@/components/journey/RoadSection";
+import { journeyForUser } from "@/lib/journey-server";
+import { journeyView } from "@/lib/journey-view";
+import { MILESTONES } from "@/lib/journey";
+import { setRoadLevel } from "./actions";
 
 export const metadata = { title: "Your progress" };
 
@@ -26,6 +31,11 @@ export default async function ProgressPage() {
   const today = isoDay();
   const since = paid ? null : addDays(today, -30);
   const [h, raw, settings, earned] = await Promise.all([getHistory(u.id, since), getRawDays(u.id), getSettings(u.id), achievementsForUser(u.id)]);
+  const road = await journeyForUser(u.id);
+  const roadBadges = [
+    ...(road.pos.source === "numbers" ? MILESTONES.filter((m) => m.level <= road.pos.level).map((m) => ({ key: `road-${m.id}`, title: `Reached: ${m.title}`, note: m.when })) : []),
+    ...road.quest.badges.filter((b) => b.earned),
+  ];
   const days = timeline(h);
   const months = monthly(h);
   const dates = h.completions.map((c) => c.completedOn);
@@ -54,6 +64,8 @@ export default async function ProgressPage() {
       <p className="page-lead">Everything you have done in Helix: goals finished, tasks and lessons ticked, your streak and your profit over time. {paid ? "Your full history since you joined." : "Showing the last 30 days."}{h.joined && <> Member since {dayName(h.joined.slice(0, 10))}.</>}</p>
 
       {!paid && <div className="mt-4"><UpgradePrompt need="starter" forKey="history" compact title="See your whole journey" body="Free shows the last 30 days. Starter keeps your full history: every goal with its date, every month's recap and your profit trend since you joined." /></div>}
+
+      <RoadSection views={journeyView(acct.plan, paid)} level={road.pos.level} source={road.pos.source} progress={road.progress} last30={road.facts.last30Sales} xp={road.xp} streak={road.streak} badges={roadBadges} selfLevel={road.selfLevel} paid={paid} pick={setRoadLevel} />
 
       <section className="mt-5 grid gap-4 sm:grid-cols-4" aria-label="Summary">
         {[

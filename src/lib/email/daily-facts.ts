@@ -7,6 +7,8 @@ import { getRawDays, getSettings } from "../repo";
 import { NO_FACTS, type DailyFacts } from "./daily-mix";
 import { questForUser } from "../quest-server";
 import { PATH } from "../learn-path";
+import { journeyPosition } from "../journey-server";
+import { MILESTONES } from "../journey";
 
 /**
  * What makes one user's daily email personal: the next lesson step and goal from the course (same logic as Today),
@@ -21,6 +23,12 @@ export async function dailyFacts(userId: string, date: string): Promise<DailyFac
     const step = quest.next ? PATH.find((p) => p.id === quest.next!.stepId) : undefined;
     out.stage = step && step.stage !== "start" ? step.stage : quest.next ? null : "grow";
   } catch { out.stage = null; }
+
+  // Road to $100M: one line with the level (only when known).
+  try {
+    const { pos } = await journeyPosition(userId);
+    if (pos.level) out.road = { title: MILESTONES[pos.level - 1].title, next: MILESTONES[pos.level]?.title ?? null };
+  } catch { out.road = null; }
 
   const cur = course?.current;
   if (cur) {

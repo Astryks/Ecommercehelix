@@ -1,3 +1,12 @@
+## Road to $100M (branch helix-road-to-100m-27oct, 27 Oct 2026, not merged or deployed)
+
+- Progress page: a 7-level map (first sale, $1k, $10k a month, $1M, $10M, $50M, $100M a year) with XP, streak, badges and "You are here". Position comes from real daily numbers (last 30 days of sales); without numbers the member picks a level.
+- Each level: what changes, the 3 numbers to hit, the next 5 moves (linked lessons, paywall respected) and what the business often looks like. Free gets the whole map plus levels 1 and 2 in full; locked levels send only a teaser from the server. Starter and up get everything.
+- Today page: compact Road teaser. Coach gets one context line with the level. Daily email adds one Road line.
+- No schema change: the picked level is stored in ToolInput with kind "journey". No SQL to run.
+- Ranges are labelled typical ranges/estimates; sources are linked on each level (Shopify Help, Baymard).
+- Screenshots: /workspace/reports/helix/screens/journey/.
+
 # ▶ NEXT STEPS (updated 27 Oct 2026, morning AEDT) — start here
 
 ## CHANNELS 101 + BEGINNER ORDER (27 Oct 2026, branch `helix-101-27oct`)
