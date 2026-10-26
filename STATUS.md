@@ -856,3 +856,10 @@ Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, We
 ## 2026-10-26 (AEDT) — deploy + metrics pass
 - Pushed 726bc58 to main. Prod deploy ecommercehelix-id7ck88rw is Ready. Live checks: / is 200, dashboard routes redirect to sign-in, and the email cron returns 401 without auth (nothing sent).
 - Metrics: added New customer CAC, Returning customer revenue, Refund rate and Cart abandonment rate tiles. Contribution now shows "You kept $X of every $100". Customers tool adds CAC, CAC payback and LTV:CAC. Stock plan shows Days left. Ratings are Good/Okay/Needs work. See docs/METRICS-AND-SOURCES.md.
+
+## 27 Oct 2026 — coach lifecycle, Klaviyo, TikTok picker, opt-in GA4 (branch helix-live-27oct, not merged)
+- Done in code: coach welcome on subscribe (in-app + email, once per sub), 1-3 daily tasks that never repeat yesterday (coach window + daily email), store memory from totals only (connect, store check, profit, nightly cron `coach-learn`).
+- Klaviyo (KLAVIYO=1): encrypted private key, revoke deletes everything, nightly `klaviyo-sync` totals into summary, coach and What to fix; help page /dashboard/learn/klaviyo. SQL applied to prod Neon.
+- TikTok advertiser picker and GA4 property form on Integrations; "coming soon" when off. GA4 scope only via optional Connect GA4 (`/api/google-ads/connect?ga4=1`).
+- Preview flags set (branch helix-live-27oct): HELIX_COACH, KLAVIYO, TIKTOK_ADS, GA4_SESSIONS, SHOPIFY_ORDER_WEBHOOKS = 1.
+- BLOCKED: AI Gateway team is free tier (prepaid credits ~$5); free tier refuses the coach models and embedding model. Embed not run. Needs Sid: top up paid credits, or approve free-tier models. Main merge and prod coach flags held.
