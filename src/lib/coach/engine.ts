@@ -46,7 +46,7 @@ const LIMIT_TEXT = {
 
 /** Remove any blocked outside name from an answer (belt and braces; the system prompt already forbids them). */
 export function scrub(text: string, blocked: string[] = []): string {
-  let t = text;
+  let t = text.replace(/\s*\[MODE:[^\]]*\]/gi, "");
   for (const b of blocked.map((x) => x.trim()).filter((x) => x.length >= 3)) t = t.replace(new RegExp(b.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), "another source");
   return t;
 }
