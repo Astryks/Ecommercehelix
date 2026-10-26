@@ -124,6 +124,14 @@ describe("runCoach (mocked, no spend)", () => {
     expect(calls).toContain(COACH_MODELS.fallback);
     expect(a.model).toBe(COACH_MODELS.fallback);
   });
+  it("every model blocked: friendly error, no crash, logged as failed", async () => {
+    const logs: { ok: boolean }[] = [];
+    const { d } = deps({ llm: async () => { throw new Error("model blocked"); }, log: async (r: { ok: boolean }) => { logs.push(r); } });
+    const a = await runCoach(d, input());
+    expect(a.limited).toBe("error");
+    expect(a.text).toMatch(/could not answer just now/);
+    expect(logs.at(-1)?.ok).toBe(false);
+  });
   it("escalates to deep when the fast self-check fails", async () => {
     const calls: string[] = [];
     const { d } = deps({ llm: async ({ model }) => { calls.push(model); return { text: model === COACH_MODELS.fast ? "Not sure." : GOOD, inputTokens: 1, outputTokens: 1 }; } });
