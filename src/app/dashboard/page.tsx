@@ -57,6 +57,7 @@ import { getShopify } from "@/lib/shopify/service";
 import { computeTools, openAlerts, getReview, lastReview } from "@/lib/tools/server";
 import { MondayReview } from "@/components/tools/MondayReview";
 import { saveWeeklyReview } from "./numbers/tools/actions";
+import { ScoreboardHero } from "@/components/scoreboard/ScoreboardHero";
 import { markMilestonesSeen, markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
 
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
@@ -169,6 +170,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <h1 className="page-title">Today</h1>
           <p className="page-lead">Here&apos;s what to do today. One step at a time.</p>
         </header>
+        <ScoreboardHero userId={u.id} />
         <StageStrip quest={qx.quest} />
         {tasksBox}
         <QuestNextUp q={qx.quest} streak={qx.streak} />
@@ -204,6 +206,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
 
   return (
     <div className="mx-auto max-w-7xl">
+      <ScoreboardHero userId={u.id} />
       <div className="mb-6"><StageStrip quest={qx.quest} /></div>
       <div className="mb-6">{tasksBox}</div>
       <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>

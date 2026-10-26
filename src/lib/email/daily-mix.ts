@@ -13,7 +13,7 @@ import type { StageId } from "../stages";
 export type DailyLesson = { title: string; step: string; href: string; minutes: number };
 export type DailyGoal = { title: string; day: number; days: number };
 /** Yesterday against the 7 days before it, from real (not example) scorecard days. */
-export type DailyNumbers = { sales: number; orders: number; adSpend: number; merPct: number; avgSales: number | null; avgMerPct: number | null };
+export type DailyNumbers = { sales: number; orders: number; adSpend: number; merPct: number; avgSales: number | null; avgMerPct: number | null; target?: number | null };
 /** `stage`: the stage of the user's next lesson in the guided path (null before Attract or when unknown). */
 export type DailyFacts = { lesson: DailyLesson | null; goal: DailyGoal | null; numbers: DailyNumbers | null; hasAnyNumbers: boolean; hasAds: boolean | null; stage?: StageId | null; road?: { title: string; next: string | null } | null };
 export const NO_FACTS: DailyFacts = { lesson: null, goal: null, numbers: null, hasAnyNumbers: false, hasAds: null, stage: null };
@@ -207,7 +207,8 @@ export function numbersLine(x: DailyNumbers): string {
     return pct === 0 ? ", right on your 7-day average" : `, ${pct > 0 ? "up" : "down"} ${Math.abs(pct)}% on your 7-day average of ${money(x.avgSales)}`;
   })() : "";
   const ads = x.adSpend > 0 ? ` You spent ${money(x.adSpend)} on ads (MER ${x.merPct.toFixed(0)}%${x.avgMerPct !== null && x.avgMerPct > 0 ? `, ${x.avgMerPct.toFixed(0)}% over the week` : ""}).` : "";
-  return `Yesterday: ${money(x.sales)} in sales from ${x.orders} ${x.orders === 1 ? "order" : "orders"}${vs}.${ads}`;
+  const tgt = x.target && x.target > 0 ? ` Today's target: ${money(x.target)} in sales.` : "";
+  return `Yesterday: ${money(x.sales)} in sales from ${x.orders} ${x.orders === 1 ? "order" : "orders"}${vs}.${ads}${tgt}`;
 }
 
 /** Step through a pool from `step` and return the first item `ok` accepts, or null when the whole pool is used. */
