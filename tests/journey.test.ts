@@ -53,3 +53,44 @@ describe("Road to $100M", () => {
     for (const bad of ["skool", "$100m framework", "100m framework"]) expect(text).not.toContain(bad);
   });
 });
+
+import { spendFor, contributionBeforeAds, DEEP, BRAND_LESSONS, SPEND_INPUTS, SATURATION } from "@/lib/journey-content";
+
+describe("Road to $100M: deep content and spend model", () => {
+  it("every level has full deep content", () => {
+    for (const m of MILESTONES) {
+      const d = DEEP[m.level];
+      for (const k of ["takes", "economics", "cash", "hiring", "channels", "ecosystem", "mistakes"] as const) expect(d[k].length, `${m.level} ${k}`).toBeGreaterThan(0);
+      expect(d.timeline).toMatch(/range/i);
+    }
+  });
+  it("contribution before ads matches the worked example by hand", () => {
+    // 60 - 13.50 - 4 - 1.80 - 6 = 34.70
+    expect(contributionBeforeAds() * 60).toBeCloseTo(34.7, 5);
+  });
+  it("spend figures match hand calculations", () => {
+    const l4 = spendFor(4);
+    expect(l4.ads).toEqual([250_000, 400_000]);
+    expect(l4.stock).toEqual([37_500, 56_250]);
+    // profit low: 1M × (0.57833 − 0.40 − 0.12) = 58,333; high: 1M × (0.57833 − 0.25 − 0.08) = 248,333
+    expect(l4.profit).toEqual([58_333, 248_333]);
+    expect(spendFor(7).stock).toEqual([3_750_000, 5_625_000]);
+    expect(spendFor(3).stock).toEqual([4_500, 6_750]);
+    expect(spendFor(1).stock).toEqual([270, 675]);
+    for (const i of SPEND_INPUTS) { const s = spendFor(i.level); expect(s.ads[0]).toBeLessThanOrEqual(s.ads[1]); expect(s.profit[0]).toBeLessThanOrEqual(s.profit[1]); }
+  });
+  it("brand lessons and sources are linked", () => {
+    for (const b of BRAND_LESSONS) expect(b.sources.length).toBeGreaterThan(0);
+    expect(SATURATION.spot.length).toBeGreaterThan(2);
+  });
+  it("Free never receives deep content for locked levels", () => {
+    const v = journeyView("free", false);
+    expect(JSON.stringify(v.find((x) => x.level === 5))).not.toContain("What it really takes");
+    expect(JSON.stringify(v.filter((x) => x.level > 2))).not.toMatch(/"deep"|"spend"|"ecosystem"/);
+    expect(v.filter((x) => x.open).every((x) => "deep" in x && "spend" in x)).toBe(true);
+  });
+  it("never names outside courses or platforms", () => {
+    const text = JSON.stringify({ DEEP, BRAND_LESSONS }).toLowerCase();
+    for (const bad of ["skool", "$100m framework", "100m framework"]) expect(text).not.toContain(bad);
+  });
+});

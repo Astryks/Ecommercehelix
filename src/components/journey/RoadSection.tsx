@@ -4,6 +4,8 @@ import { ESTIMATE_NOTE, MILESTONES, FREE_LEVELS } from "@/lib/journey";
 import type { MilestoneView } from "@/lib/journey-view";
 import { UNLOCK_LABEL } from "@/lib/paywall/access";
 import { RoadMap } from "./RoadMap";
+import { LevelDeep, SourceLinks } from "./LevelDeep";
+import { BOOTSTRAP_NOTE, BRAND_LESSONS, CHANGE_ASSUMPTIONS, SATURATION, SPEND_FORMULA } from "@/lib/journey-content";
 
 type Props = {
   views: MilestoneView[];
@@ -89,6 +91,7 @@ export function RoadSection({ views, level, source, progress, last30, xp, streak
                     <h3 className="font-semibold text-slate-900">The next 5 moves</h3>
                     <ol className="mt-1 list-decimal space-y-1 pl-5">{v.moveLinks.map((x) => <li key={x.text}>{x.href ? <Link href={x.href} className="text-cyan-700 underline">{x.text}</Link> : x.text}{x.locked && <span className="ml-1 inline-flex items-center gap-0.5 text-[11px] text-slate-500"><Lock className="h-3 w-3" aria-hidden />Starter</span>}</li>)}</ol>
                   </div>
+                  <div className="lg:col-span-3"><LevelDeep d={v.deep} s={v.spend} /></div>
                   <div className="lg:col-span-3">
                     <h3 className="font-semibold text-slate-900">What the business often looks like</h3>
                     <dl className="mt-1 grid gap-x-4 gap-y-1 sm:grid-cols-2">{v.shape.map((s) => <div key={s.label}><dt className="inline font-medium">{s.label}: </dt><dd className="inline text-slate-700">{s.value}</dd></div>)}</dl>
@@ -99,7 +102,7 @@ export function RoadSection({ views, level, source, progress, last30, xp, streak
                 <div className="mt-3 text-sm text-slate-700" data-testid="road-teaser">
                   <p className="text-xs text-slate-500">{v.when}</p>
                   <p className="mt-1">{v.firstChange}</p>
-                  <p className="mt-2 text-slate-600">Inside: what changes, the 3 numbers to hit ({v.numberLabels.join(", ")}), the next 5 moves with lessons, and what the team and channels often look like.</p>
+                  <p className="mt-2 text-slate-600">Inside: what it really takes, a timeline range, what you spend on stock and ads, cash and hiring, channels and partners, mistakes to avoid, the 3 numbers to hit ({v.numberLabels.join(", ")}), the next 5 moves with lessons, and what the team and channels often look like.</p>
                   <Link href="/dashboard/billing?need=starter&for=road" className="btn-dark mt-3 inline-block !px-3 !py-1.5 !text-sm">{UNLOCK_LABEL}</Link>
                 </div>
               )}
@@ -107,6 +110,38 @@ export function RoadSection({ views, level, source, progress, last30, xp, streak
           );
         })}
       </div>
+      <details className="mt-4 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-800" data-testid="road-formula">
+        <summary className="cursor-pointer font-semibold text-slate-900">How these numbers are worked out</summary>
+        <ul className="mt-2 list-disc space-y-1 pl-5">{SPEND_FORMULA.map((x) => <li key={x}>{x}</li>)}</ul>
+        <p className="mt-2">{CHANGE_ASSUMPTIONS}</p>
+      </details>
+      <details className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-800" data-testid="road-saturation">
+        <summary className="cursor-pointer font-semibold text-slate-900">Ads get saturated: how to spot it and what to do</summary>
+        <p className="mt-2">{SATURATION.what}</p>
+        <div className="mt-2 grid gap-4 sm:grid-cols-2">
+          <div><h4 className="font-semibold">Warning signs</h4><ul className="mt-1 list-disc space-y-1 pl-5">{SATURATION.spot.map((x) => <li key={x}>{x}</li>)}</ul></div>
+          <div><h4 className="font-semibold">What to do</h4><ul className="mt-1 list-disc space-y-1 pl-5">{SATURATION.fix.map((x) => <li key={x}>{x}</li>)}</ul></div>
+        </div>
+      </details>
+      {paid && (
+        <details className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-800" data-testid="road-brands">
+          <summary className="cursor-pointer font-semibold text-slate-900">Learn from real brands</summary>
+          <p className="mt-1 text-xs text-slate-500">Only facts from the brands&apos; own pages, public filings or major press, linked under each one.</p>
+          <div className="mt-2 space-y-3">{BRAND_LESSONS.map((b) => (
+            <div key={b.brand}>
+              <h4 className="font-semibold">{b.brand}</h4>
+              <p><span className="font-medium">What they did:</span> {b.did}</p>
+              <p><span className="font-medium">What happened:</span> {b.happened}</p>
+              <p><span className="font-medium">The lesson for your store:</span> {b.lesson}</p>
+              <SourceLinks sources={b.sources} />
+            </div>
+          ))}</div>
+        </details>
+      )}
+      <details className="mt-3 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-800" data-testid="road-bootstrap">
+        <summary className="cursor-pointer font-semibold text-slate-900">{BOOTSTRAP_NOTE.title}</summary>
+        {BOOTSTRAP_NOTE.body.map((x) => <p key={x} className="mt-2">{x}</p>)}
+      </details>
       {!paid && <p className="mt-3 text-xs text-slate-500">Free shows the whole road and levels 1 to {FREE_LEVELS} in full. Starter opens every level.</p>}
     </section>
   );

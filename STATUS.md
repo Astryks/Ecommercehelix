@@ -1,3 +1,11 @@
+## Road to $100M content v2 (27 Oct 2026)
+- Branch: `helix-journey-content-27oct` (from main d2c3fb7). Not merged, not deployed.
+- New `src/lib/journey-content.ts`: per-level deep content for all 7 levels (what it takes, timeline range, worked unit economics, cash and stock, hiring order, channels, ecosystem/partners, ad saturation, mistakes, sources), a "what you spend" card per level from stated assumptions ($60 retail, $13.50 cost, $4 shipping, 3% fees, 10% leakage; ads 25-40% of sales at scale), formula in plain words, change-the-assumptions note, ads-saturation caveat, bootstrapping fit note, and three verified brand lessons (Gymshark, Casper, Allbirds) with sources.
+- Paywall unchanged: Free sees the map plus levels 1-2 in full; deep/spend data for locked levels is never sent to Free (tested). Brand lessons are paid-only.
+- New `LevelDeep.tsx`; `RoadSection.tsx`, `journey-view.ts`, `journey.ts` (MER wording, ad-spend ranges) updated. Tests added to `tests/journey.test.ts` (503 passing), lint 0 errors, build OK.
+- Screenshots: /workspace/reports/helix/screens/journey2/ (desktop and mobile, $10M and $100M levels, formula, brands).
+- Timelines, overhead %, partner %, creator costs are labelled Helix estimates.
+
 ## Road to $100M (branch helix-road-to-100m-27oct, 27 Oct 2026, not merged or deployed)
 
 - Progress page: a 7-level map (first sale, $1k, $10k a month, $1M, $10M, $50M, $100M a year) with XP, streak, badges and "You are here". Position comes from real daily numbers (last 30 days of sales); without numbers the member picks a level.
