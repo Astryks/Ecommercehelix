@@ -18,7 +18,11 @@ export type DailyNumbers = { sales: number; orders: number; adSpend: number; mer
 export type DailyFacts = { lesson: DailyLesson | null; goal: DailyGoal | null; numbers: DailyNumbers | null; hasAnyNumbers: boolean; hasAds: boolean | null; stage?: StageId | null };
 export const NO_FACTS: DailyFacts = { lesson: null, goal: null, numbers: null, hasAnyNumbers: false, hasAds: null, stage: null };
 
-export type DailyInput = { seed: string; date: string; season?: string | null; facts?: DailyFacts };
+/** What this user was already sent (oldest first), so nothing repeats: kept in ToolInput kind "email-history". */
+export type SentDay = { date: string; subject: string; tasks: string[]; idea: string; topic: string };
+export type DailyHistory = { days: SentDay[] };
+export const HISTORY_KEEP = 90;
+export type DailyInput = { seed: string; date: string; season?: string | null; facts?: DailyFacts; history?: DailyHistory };
 export type DailyTask = { title: string; minutes: number };
 export type DailyMix = {
   subject: string; preheader: string; title: string; opener: string;
@@ -206,7 +210,26 @@ export function numbersLine(x: DailyNumbers): string {
   return `Yesterday: ${money(x.sales)} in sales from ${x.orders} ${x.orders === 1 ? "order" : "orders"}${vs}.${ads}`;
 }
 
-export function composeDaily(i: DailyInput): DailyMix {
+/** Step through a pool from `step` and return the first item `ok` accepts, or null when the whole pool is used. */
+function pickFresh<T>(pool: readonly T[], seed: string, salt: string, step: number, ok: (x: T) => boolean): T | null {
+  for (let k = 0; k < pool.length; k++) { const x = pick(pool, seed, salt, step + k); if (ok(x)) return x; }
+  return null;
+}
+
+/**
+ * The daily email, or null when there is nothing new to say (then nothing is sent, rather than a repeat).
+ * With `history`: no subject, task, idea or topic that was already sent comes back; the next-lesson reminder
+ * comes back at most once a week while it stays open.
+ */
+export function composeDaily(i: DailyInput & { history?: undefined }): DailyMix;
+export function composeDaily(i: DailyInput): DailyMix | null;
+export function composeDaily(i: DailyInput): DailyMix | null {
+  const h = i.history?.days.filter((d) => d.date < i.date) ?? [];
+  const sentSubjects = new Set(h.map((d) => d.subject));
+  const sentTasks = new Set(h.flatMap((d) => d.tasks));
+  const recentTasks = new Set(h.filter((d) => dayNumber(i.date) - dayNumber(d.date) < 7).flatMap((d) => d.tasks));
+  const sentIdeas = new Set(h.map((d) => d.idea));
+  const sentTopics = new Set(h.map((d) => d.topic));
   const f = i.facts ?? NO_FACTS;
   const day = dayNumber(i.date);
   const dow = new Date(i.date + "T12:00:00Z").getUTCDay();
@@ -214,18 +237,19 @@ export function composeDaily(i: DailyInput): DailyMix {
   const theme = THEMES[themeId];
   const week = Math.floor((day + 4) / 7); // changes every Monday
   const seed = i.seed;
+  const newTask = (t: string) => !sentTasks.has(t);
 
   const themePool = themeId === "ads" && f.hasAds === false ? NO_ADS_TASKS : theme.tasks;
   const themeStep = themeId === "light" ? week * 2 + (dow === 0 ? 1 : 0) : week;
-  const themeTask = pick(themePool, seed, `theme-${themeId}-${f.hasAds === false ? "organic" : "ads"}`, themeStep);
+  const themeTask = pickFresh(themePool, seed, `theme-${themeId}-${f.hasAds === false ? "organic" : "ads"}`, themeStep, (t) => newTask(t.title));
   // Sale prep matters, but so does variety: on a busy season week it takes the theme slot every other day.
-  const middle = i.season && day % 2 === 0 ? { title: i.season, minutes: 15 } : themeTask;
-  const check = { title: pick(f.hasAnyNumbers ? CHECKS_WITH_DATA : CHECKS_NO_DATA, seed, f.hasAnyNumbers ? "check" : "check-new", day), minutes: 2 };
-  const lessonTask = f.lesson
-    ? { title: `Lesson step: ${trimTo(f.lesson.step.replace(/[.!]$/, ""), 110)} (${f.lesson.title})`, minutes: Math.max(3, Math.min(20, f.lesson.minutes)) }
-    : { title: "Do your next lesson step", minutes: 10 };
-  const win = { title: pick(WINS, seed, "win", day), minutes: 2 };
-  const tasks = [check, middle, lessonTask, win];
+  const seasonTask = i.season && day % 2 === 0 && newTask(i.season) ? { title: i.season, minutes: 15 } : null;
+  const middle = seasonTask ?? themeTask;
+  const checkTitle = pickFresh(f.hasAnyNumbers ? CHECKS_WITH_DATA : CHECKS_NO_DATA, seed, f.hasAnyNumbers ? "check" : "check-new", day, newTask);
+  const lessonTitle = f.lesson ? `Lesson step: ${trimTo(f.lesson.step.replace(/[.!]$/, ""), 110)} (${f.lesson.title})` : null;
+  const lessonTask = lessonTitle && !recentTasks.has(lessonTitle) ? { title: lessonTitle, minutes: Math.max(3, Math.min(20, f.lesson!.minutes)) } : null;
+  const winTitle = pickFresh(WINS, seed, "win", day, newTask);
+  const tasks = [checkTitle ? { title: checkTitle, minutes: 2 } : null, middle, lessonTask, winTitle ? { title: winTitle, minutes: 2 } : null].filter((t): t is DailyTask => Boolean(t));
   const minutes = tasks.reduce((a, t) => a + t.minutes, 0);
 
   const wd = new Date(i.date + "T12:00:00Z").toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
@@ -235,17 +259,37 @@ export function composeDaily(i: DailyInput): DailyMix {
     .replace(/\{n\}/g, String(tasks.length)).replace(/\{min\}/g, String(minutes)).replace(/\{next\}/g, next);
 
   const t = emailTopic(topicForStage(i.date, f.stage ?? null));
-  // Today's topic leads; the rotating story, tip or word stays as a short P.S.
-  const idea = ideaFor(seed, day);
+  // Today's topic leads; the rotating story, tip or word stays as a short P.S. Step on past anything already sent.
+  let idea: Idea | null = null;
+  for (let k = 0; k < 300 && !idea; k += 3) { const x = ideaFor(seed, day + k); if (!sentIdeas.has(x.text)) idea = x; }
+  const topicNew = !sentTopics.has(t.intro);
+  // Nothing new to say: no new topic, no new idea and no new task. Send nothing rather than repeat.
+  if (!topicNew && !idea && tasks.length === 0) return null;
+  if (tasks.length === 0 && !topicNew) return null;
+  // Subject: today's topic subject, unless it was used before; then a rotating subject that was never used.
+  // Shapes rotate so the inbox does not read "Today: ..." every morning.
+  const topicTitle = t.subject.replace(/^Today:\s*/, "");
+  const shapes = [t.subject, `${wd}'s lesson idea: ${topicTitle}`, `${topicTitle}, plus ${tasks.length} quick ${tasks.length === 1 ? "step" : "steps"}`, `${wd}: ${topicTitle.charAt(0).toLowerCase()}${topicTitle.slice(1)}`].map((x) => trimTo(x, 70));
+  const rotating = pickFresh(SUBJECTS.map(fill), seed, "subject", day, (x) => !sentSubjects.has(x));
+  const first = day % 5 === 4 && rotating ? rotating : shapes[((day % 4) + 4) % 4];
+  const subject = [first, ...shapes, rotating ?? ""].find((x) => x && !sentSubjects.has(x)) ?? `${wd} ${date}: ${t.intro}`;
+  if (sentSubjects.has(subject)) return null;
+  const pre = themeTask?.title ?? middle?.title ?? t.hook;
   return {
-    subject: t.subject,
+    subject,
     topic: { intro: t.intro, hook: t.hook, takeaway: t.takeaway, teaserStep: t.teaserStep, label: t.button.label, href: t.button.href },
     opener: fill(pick(OPENERS, seed, "opener", day)),
-    preheader: trimTo(f.lesson ? `Next up: ${f.lesson.title}. ${themeTask.title}.` : `${middle.title}.`, 110),
+    preheader: trimTo(f.lesson ? `Next up: ${f.lesson.title}. ${pre}.` : `${pre}.`, 110),
     title: `${wd}: ${theme.name}`,
     goalLine: f.goal ? `You are working on: ${f.goal.title}${f.goal.days > 1 ? ` (day ${Math.min(f.goal.day, f.goal.days)} of ${f.goal.days})` : ""}.` : null,
     numbersLine: f.numbers ? numbersLine(f.numbers) : f.hasAnyNumbers ? "No numbers for yesterday yet. Add them in Numbers, it takes 2 minutes." : null,
-    tasks, minutes, idea: idea.text,
+    tasks, minutes, idea: idea?.text ?? "",
     button: f.lesson ? { label: trimTo(`Next lesson: ${f.lesson.title}`, 52), href: f.lesson.href } : { label: "Open Today", href: "/dashboard" },
   };
+}
+
+/** Add a sent email to the history (keeps the last HISTORY_KEEP days). */
+export function recordSent(h: DailyHistory, date: string, m: DailyMix): DailyHistory {
+  const days = [...h.days.filter((d) => d.date !== date), { date, subject: m.subject, tasks: m.tasks.map((t) => t.title), idea: m.idea, topic: m.topic.intro }];
+  return { days: days.sort((a, b) => a.date.localeCompare(b.date)).slice(-HISTORY_KEEP) };
 }

@@ -3,7 +3,8 @@ import { hasDb, prisma } from "@/lib/db";
 import { dueEmails, zoneFor } from "@/lib/email/schedule";
 import { notify } from "@/lib/email/notify";
 import { dailyEmail, eventEmail, welcomeEmail, winbackEmail } from "@/lib/email/templates";
-import { composeDaily } from "@/lib/email/daily-mix";
+import { composeDaily, recordSent, type DailyHistory, type DailyMix } from "@/lib/email/daily-mix";
+import { getInput, saveInput } from "@/lib/tools/server";
 import { dailyFacts } from "@/lib/email/daily-facts";
 import type { PlanId } from "@/lib/plans";
 import { coachLive } from "@/lib/coach/config";
@@ -30,14 +31,26 @@ export async function GET(req: NextRequest) {
     const due = dueEmails({ createdAt: u.createdAt, isDemo: u.isDemo, country: u.country, timezone: zoneFor(u.emailPrefs?.timezone, u.country), status: u.subscription?.status ?? "active", subscriptionId: u.subscription?.stripeSubscriptionId ?? null, currentPeriodEnd: u.subscription?.currentPeriodEnd ?? null }, now);
     for (const d of due) {
       if (!live) { tally[`would-${d.kind}`] = (tally[`would-${d.kind}`] ?? 0) + 1; continue; }
+      let sentMix: DailyMix | null = null;
+      let history: DailyHistory = { days: [] };
       const r = await notify({ userId: u.id, email: u.email!, plan }, d.kind, d.key, async (l) => {
         const c = { name: u.name ?? "", baseUrl: l.baseUrl, unsubUrl: l.unsubUrl, prefsUrl: l.prefsUrl };
         if (d.kind === "welcome") return welcomeEmail(c);
         // Different every day: seeded by user and date; next lesson, goal and numbers loaded only for users who get it.
-        if (d.kind === "daily") return dailyEmail(c, composeDaily({ seed: u.id, date: d.date, season: d.season, facts: await dailyFacts(u.id, d.date) }), coachLive() && plan !== "free" ? await coachTasksForEmail(u.id).catch(() => []) : []);
+        if (d.kind === "daily") {
+          // Never repeat: the user's sent history rules out old subjects, tasks and ideas; null means nothing new, so nothing is sent.
+          history = await getInput<DailyHistory>(u.id, "email-history", { days: [] });
+          const mix = composeDaily({ seed: u.id, date: d.date, season: d.season, facts: await dailyFacts(u.id, d.date), history });
+          if (!mix) return null;
+          const sent = new Set(history.days.flatMap((x) => x.tasks));
+          const coach = (coachLive() && plan !== "free" ? await coachTasksForEmail(u.id).catch(() => []) : []).filter((t) => !sent.has(t.title)).slice(0, 3);
+          sentMix = { ...mix, tasks: [...mix.tasks, ...coach.map((t) => ({ title: t.title, minutes: 0 }))] };
+          return dailyEmail(c, mix, coach);
+        }
         if (d.kind === "event") return eventEmail(c, d);
         return winbackEmail(c);
       });
+      if (r === "sent" && d.kind === "daily" && sentMix) await saveInput(u.id, "email-history", recordSent(history, d.date, sentMix)).catch(() => {});
       tally[`${d.kind}-${r}`] = (tally[`${d.kind}-${r}`] ?? 0) + 1;
     }
   }
