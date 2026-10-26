@@ -3,7 +3,10 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, CheckCircle2, Circle, CircleDot, ListChecks, PlayCircle, Video } from "lucide-react";
 import { lessonStateFn } from "@/lib/lesson-done";
 import { requireUser } from "@/lib/session";
-import { getCompletions, getLessonSteps } from "@/lib/repo";
+import { getAccount, getCompletions, getLessonSteps } from "@/lib/repo";
+import { Lock } from "lucide-react";
+import { canReadLesson, hasFullLearn, unlockHref, UNLOCK_LABEL } from "@/lib/paywall/access";
+import { teaserFor } from "@/lib/paywall/teaser";
 import { listModules } from "@/lib/learn";
 import { STAGE_INFO } from "@/lib/stages";
 import { CONVERT_BEFORE_ADS, FIRST_AD_BEFORE, FIRST_AD_ORDER, PATH, PATH_STAGE_NAME, pathStepById } from "@/lib/learn-path";
@@ -22,7 +25,9 @@ export default async function PathStepPage({ params }: { params: Promise<{ step:
   const p = pathStepById(step);
   if (!p) notFound();
   const u = await requireUser(`/dashboard/learn/path/${step}`);
-  const [comps, steps] = await Promise.all([getCompletions(u.id), getLessonSteps(u.id)]);
+  const [comps, steps, acct] = await Promise.all([getCompletions(u.id), getLessonSteps(u.id), getAccount(u.id)]);
+  const full = hasFullLearn(acct.plan);
+  const open = (ref: string) => canReadLesson(acct.plan, ref);
   const done = new Set(comps.map((c) => c.taskId));
   const byRef = new Map(listModules().flatMap((m) => m.lessons.filter((l) => l.ref).map((l) => [l.ref!, { ...l, module: m }] as const)));
   const lessons = p.refs.map((r) => byRef.get(r)).filter((l) => l !== undefined);
@@ -66,18 +71,27 @@ export default async function PathStepPage({ params }: { params: Promise<{ step:
         <p className="mt-6"><Link href={`/learn/${next.module.slug}#${next.id}`} className="btn-primary"><PlayCircle className="h-4 w-4" aria-hidden /> {d === 0 ? "Start with lesson 1" : "Next lesson"}: {next.title.replace(/^Lesson [\d.]+:\s*/, "")}</Link></p>
       )}
 
+      {!full && lessons.some((l) => !open(l.ref!)) && (
+        <p className="mt-6 flex flex-wrap items-center gap-3 rounded-xl border border-[#5A50D6]/30 bg-[#5A50D6]/5 p-3 text-sm text-slate-800" data-testid="paywall-banner">
+          <Lock className="h-4 w-4 text-[#5A50D6]" aria-hidden /> Lessons with a lock open with Starter. You can see what each one covers now.
+          <Link href={unlockHref(true)} className="btn-primary text-sm">{UNLOCK_LABEL}</Link>
+        </p>
+      )}
       <ol className="mt-6 space-y-2" data-testid="step-lessons">
         {lessons.map((l, i) => {
           const st = state(l.ref!);
-          const Icon = st === "done" ? CheckCircle2 : st === "started" ? CircleDot : Circle;
+          const locked = !open(l.ref!);
+          const Icon = st === "done" ? CheckCircle2 : st === "started" ? CircleDot : locked ? Lock : Circle;
+          const tz = locked ? teaserFor(l.ref!) : null;
           return (
             <li key={l.ref}>
               <Link href={`/learn/${l.module.slug}#${l.id}`} className={`flex items-start gap-3 rounded-xl border bg-white p-3 hover:ring-2 hover:ring-[#5A50D6]/30 ${l === next ? "border-[#5A50D6]" : "border-slate-200"}`}>
-                <span className="w-7 flex-none text-right font-semibold tabular-nums text-slate-500">{i + 1}.</span>
-                <Icon className={`mt-0.5 h-5 w-5 flex-none ${st === "done" ? "text-emerald-600" : st === "started" ? "text-[#5A50D6]" : "text-slate-300"}`} aria-label={st === "done" ? "Done" : st === "started" ? "Started" : "Not started"} />
+                {!full && !locked && <span className="sr-only">Free lesson</span>}<span className="w-7 flex-none text-right font-semibold tabular-nums text-slate-500">{i + 1}.</span>
+                <Icon className={`mt-0.5 h-5 w-5 flex-none ${st === "done" ? "text-emerald-600" : st === "started" ? "text-[#5A50D6]" : "text-slate-300"}`} aria-label={st === "done" ? "Done" : st === "started" ? "Started" : locked ? "Locked: opens with Starter" : "Not started"} />
                 <span className="min-w-0 flex-1">
                   <span className="block font-semibold text-slate-900">{l.title.replace(/^Lesson [\d.]+:\s*/, "")}</span>
-                  <span className="text-xs text-slate-500">From: {l.module.title}</span>
+                  <span className="text-xs text-slate-500">From: {l.module.title}{tz ? ` · about ${tz.minutes} min · Starter` : ""}</span>
+                  {tz && <span className="mt-1 block text-sm text-slate-600" data-testid="lesson-teaser">{tz.summary[0]}</span>}
                 </span>
                 <span className={`flex-none rounded-full px-1.5 text-[10px] font-semibold ring-1 ${STAGE_INFO[l.stage].chip}`}>{STAGE_INFO[l.stage].name}</span>
               </Link>

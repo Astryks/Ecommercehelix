@@ -1,4 +1,5 @@
 "use server";
+import { canReadLesson } from "@/lib/paywall/access";
 import { resolveAlert } from "@/lib/tools/server";
 
 import { revalidatePath } from "next/cache";
@@ -61,6 +62,8 @@ export async function doItForMe(form: FormData) {
   if (SEASON_TASK_ID.test(seasonId) && /-(plan|creators|codes|dress|live|review)$/.test(seasonId)) await seasonDoItForMe(u.id, seasonId);
   const { signals } = await signalsFor(u.id);
   const taskId = String(form.get("taskId"));
+  const lessonRef = LESSON_TASK_ID.test(taskId) ? parseLessonTaskId(taskId)?.ref : null;
+  if (lessonRef && !canReadLesson((await getAccount(u.id)).plan, lessonRef)) redirect("/dashboard/billing?need=starter&for=lesson");
   const item = LESSON_TASK_ID.test(taskId) ? lessonActionable(taskId, signals) : findActionable(taskId, signals);
   if (!item) return;
   const acct = await getAccount(u.id);

@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { requireUser } from "@/lib/session";
 import { getDeck } from "@/lib/cards";
 import { setupValues, userCards } from "@/lib/cards-user";
-import { saveCardState } from "@/lib/repo";
+import { getAccount, saveCardState } from "@/lib/repo";
+import { canOpenDeck, unlockHref } from "@/lib/paywall/access";
+import { teaserFor } from "@/lib/paywall/teaser";
+import { LockedLesson } from "@/components/paywall/LockedLesson";
 import { isoDay } from "@/lib/dates";
 import { CardPlayer } from "@/components/cards/CardPlayer";
 import { saveCardPos, saveSetupAnswers } from "./actions";
@@ -21,6 +24,11 @@ export default async function CardsPage({ searchParams }: PageProps<"/dashboard/
     const id = restart ? "setup" : want!;
     await saveCardState(u.id, { ...uc.state, deck: id, index: 0, day: uc.state.day || isoDay() });
     uc = await userCards(u.id);
+  }
+  const plan = (await getAccount(u.id)).plan;
+  if (!canOpenDeck(plan, uc.deck.id)) {
+    const t = teaserFor(uc.deck.id);
+    return <div className="mx-auto max-w-3xl py-4">{t ? <LockedLesson t={t} unlockHref={unlockHref(true)} /> : <p>This lesson opens with Starter.</p>}</div>;
   }
   const setup = uc.deck.id === "setup" ? await setupValues(u.id) : undefined;
   return (

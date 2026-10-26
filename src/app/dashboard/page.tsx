@@ -35,6 +35,7 @@ import { PLAN_RANK, planName } from "@/lib/plans";
 import { addDays, isoDay, prettyDay } from "@/lib/dates";
 import { InsightCard } from "@/components/dashboard/InsightCard";
 import { NextCardHero } from "@/components/cards/NextCardHero";
+import { canOpenDeck } from "@/lib/paywall/access";
 import { userCards } from "@/lib/cards-user";
 import { seasonTasksFor } from "@/lib/season-tasks";
 import { bannerFor } from "@/lib/season-calendar";
@@ -169,7 +170,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <StageStrip quest={qx.quest} />
         {tasksBox}
         <QuestNextUp q={qx.quest} streak={qx.streak} />
-        <NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
+        <NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
             <span className="font-semibold text-slate-800">Your plan: week {st.week} of {st.total}</span>
@@ -203,7 +204,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
       <div className="mb-6"><StageStrip quest={qx.quest} /></div>
       <div className="mb-6">{tasksBox}</div>
       <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>
-      <div className="mb-6"><NextCardHero uc={uc} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
+      <div className="mb-6"><NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
           Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Start with your profit dashboard, then Day 1 below. Your store check is in What to fix.

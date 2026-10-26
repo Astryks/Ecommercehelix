@@ -16,6 +16,7 @@ import { topicFor } from "../daily-topic";
 import { priceOf } from "./config";
 import { redact } from "./prompt";
 import { klaviyoSummary } from "../klaviyo/service";
+import { gateCoachHit } from "../paywall/access";
 
 let local: Chunk[] | null = null;
 const localChunks = () => (local ??= allChunks(process.cwd()));
@@ -116,7 +117,11 @@ export function realDeps(userId: string): CoachDeps {
       if (x.facts.length || x.forget.length) await saveFacts(userId, x.facts, x.forget);
       if (hasDb) await prisma.coachUsage.create({ data: { userId, tier: "memory", mode: "memory", why: "default", model: COACH_MODELS.fast, inputTokens: r.inputTokens, outputTokens: r.outputTokens, costUsd: priceOf(COACH_MODELS.fast, r.inputTokens, r.outputTokens), ok: true, question: "", answer: x.facts.map((f) => f.key).join(",").slice(0, 400) } });
     },
-    retrieve: (q) => retrieve(q, userId),
+    // Paywall: Free users get a short taste of locked lessons only, never the full text.
+    retrieve: async (q) => {
+      const [hits, acct] = await Promise.all([retrieve(q, userId), getAccount(userId)]);
+      return hits.map((h) => gateCoachHit(acct.plan, h));
+    },
     storeSummary: () => storeSummary(userId),
     usage: () => usage(userId),
     async log(row) {

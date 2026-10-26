@@ -909,3 +909,11 @@ Schema (additive, applied to Neon first): ToolInput, ToolSnapshot, ToolAlert, We
 - TikTok advertiser picker and GA4 property form on Integrations; "coming soon" when off. GA4 scope only via optional Connect GA4 (`/api/google-ads/connect?ga4=1`).
 - Preview flags set (branch helix-live-27oct): HELIX_COACH, KLAVIYO, TIKTOK_ADS, GA4_SESSIONS, SHOPIFY_ORDER_WEBHOOKS = 1.
 - BLOCKED: AI Gateway team is free tier (prepaid credits ~$5); free tier refuses the coach models and embedding model. Embed not run. Needs Sid: top up paid credits, or approve free-tier models. Main merge and prod coach flags held.
+
+## Learn paywall (27 Oct 2026, branch helix-learn-paywall-27oct)
+
+- Free (and signed-out) users get 16 full lessons: all 10 Start here profit basics (1.1–1.10, these power the Free plan's course goals), plus a first lesson in each stage: 13.1 Plan before you build (start of Attract), 8.17 Meta ads 101, 8.18 Which channel first, 30.1 Collect your customers' own words, 15.1 Five ways to make an offer stronger, 17.7 After the sale.
+- Every other lesson shows a teaser: title, about-how-long, 2–3 "what you'll learn" bullets taken from the lesson's "why" (never the steps), and an "Unlock with Starter" button (/dashboard/billing when signed in, /#pricing when not).
+- Starter and Growth (incl. trialing and past_due, which keep their plan via planForStatus) see everything. Canceled/unpaid fall back to Free.
+- Enforced on the server: /learn module pages (now dynamic), card decks (/learn/.../cards and /dashboard/cards), Today card preview, "Do it for me" lesson tasks, Learn path pages, and the AI coach (locked lessons give one short insight + unlock pointer only).
+- To change which lessons are free, edit ONE file: `src/lib/paywall/free-lessons.ts` (FREE_LESSONS list of lesson refs). Tests in `tests/paywall.test.ts` check the refs exist.

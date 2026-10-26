@@ -33,7 +33,7 @@ export const PLANS: Plan[] = [
       "Growth chart by day and week",
       "Your first course goals: profit dashboard, daily numbers, key numbers",
       "A one-off store check of your home page and a product page, with fixes that quote your pages",
-      "Every lesson in the Learn library to read",
+      "Free Learn lessons: the Start here profit basics and a first lesson in each stage, plus a preview of every other lesson",
       "Ad Trends feed",
       "3 AI answers a month: store-check summary, ad copy drafts and \"I'm lost\" help (standard advice after that)",
     ],
@@ -53,6 +53,7 @@ export const PLANS: Plan[] = [
     highlight: true,
     features: [
       "Everything in Free",
+      "The full Learn library: every lesson, card deck and checklist unlocked",
       "Course goals for Attract and Convert: traffic, email list, add to cart, conversion, order value",
       "A monthly re-check of your store with a fix list that quotes your pages",
       "Meta connected: daily ad spend and results synced into your profit (open to early testers now, all stores after Meta's approval)",

@@ -9,10 +9,14 @@ import { LessonSteps, PROSE } from "@/components/learn/LessonSteps";
 import { termsIn } from "@/lib/glossary";
 import { AnchorRedirect } from "@/components/learn/AnchorRedirect";
 import { oldAnchorLinks } from "@/lib/lesson-links";
+import { learnViewer } from "@/lib/paywall/viewer";
+import { canReadLesson, unlockHref } from "@/lib/paywall/access";
+import { teaserFor } from "@/lib/paywall/teaser";
+import { LockedLesson } from "@/components/paywall/LockedLesson";
+import { Lock } from "lucide-react";
 
-export function generateStaticParams() {
-  return listModules().map((m) => ({ slug: m.slug }));
-}
+// Per-visitor: free lessons in full, the rest as teasers (checked on the server for every request).
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: PageProps<"/learn/[slug]">): Promise<Metadata> {
   const { slug } = await params;
@@ -25,6 +29,11 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
   const { slug } = await params;
   const mod = renderLessonPage(slug);
   if (!mod) notFound();
+  const viewer = await learnViewer();
+  const canRead = (ref: string) => canReadLesson(viewer.plan, ref);
+  const unlock = unlockHref(viewer.signedIn);
+  // Notes between lessons are course content too: only the module intro stays open to everyone.
+  const firstHtml = mod.sections.findIndex((s) => s.kind === "html");
   const modules = listModules();
   const idx = modules.findIndex((m) => m.slug === slug);
   const meta = modules[idx];
@@ -49,7 +58,7 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
           <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-slate-500">In this module</p>
           <ul className="mt-2 space-y-1.5 text-sm">
             {meta.lessons.map((l) => (
-              <li key={l.id}><a href={`#${l.id}`} className="text-slate-600 hover:text-slate-900">{l.title}</a></li>
+              <li key={l.id}><a href={`#${l.id}`} className="inline-flex items-start gap-1 text-slate-600 hover:text-slate-900">{l.ref && !canRead(l.ref) && <Lock className="mt-1 h-3 w-3 flex-none" aria-label="Locked" />}{l.title}</a></li>
             ))}
           </ul>
         </aside>
@@ -63,7 +72,9 @@ export default async function LearnModule({ params }: PageProps<"/learn/[slug]">
           </div>
           <div className="mt-6">
             {mod.sections.map((s, i) =>
-              s.kind === "lesson" ? (
+              s.kind === "lesson" && !canRead(s.lesson.ref) ? (
+                teaserFor(s.lesson.ref) ? <LockedLesson key={s.lesson.id} id={s.lesson.id} t={teaserFor(s.lesson.ref)!} unlockHref={unlock} /> : null
+              ) : s.kind === "html" && !viewer.full && i !== firstHtml ? null : s.kind === "lesson" ? (
                 <LessonSteps key={s.lesson.id} lesson={s.lesson} slug={slug} next={nextFor(s.lesson.id)} />
               ) : (
                 <article

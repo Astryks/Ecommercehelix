@@ -8,6 +8,8 @@ import { STAGE_INFO, STAGE_ORDER } from "@/lib/stages";
 import { PATH, PATH_STAGE_NAME } from "@/lib/learn-path";
 import { siteContent } from "@/lib/site-content";
 import { isoDay } from "@/lib/dates";
+import { canReadLesson, hasFullLearn, unlockHref, UNLOCK_LABEL } from "@/lib/paywall/access";
+import { FREE_LESSONS } from "@/lib/paywall/free-lessons";
 
 export const metadata = { title: "Learn" };
 
@@ -32,6 +34,8 @@ export default async function DashboardLearn() {
   const nextStep = next ? path.find((g) => g.lessons.includes(next)) : undefined;
   const timeline = path.map((g) => ({ key: g.p.id, label: `Step ${g.p.n}: ${g.p.title}`, lessons: g.lessons }));
   const curIdx = timeline.findIndex((g) => g.lessons.some((l) => l.ref === next?.ref));
+  const full = hasFullLearn(acct.plan);
+  const open = (ref: string) => canReadLesson(acct.plan, ref);
   const short = (t: string) => t.replace(/^Lesson [\d.]+:\s*/, "");
   return (
     <div className="mx-auto max-w-6xl">
@@ -43,6 +47,14 @@ export default async function DashboardLearn() {
         <Link href="/dashboard/learn/templates" className="btn-ghost text-sm"><FileText className="h-4 w-4" aria-hidden /> Template library</Link>
         <Link href="/learn/words" className="btn-ghost text-sm">Words to know</Link>
       </p>
+
+      {!full && (
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5" data-testid="paywall-banner">
+          <h2 className="flex items-center gap-2 font-display text-xl text-slate-900"><Lock className="h-5 w-5 text-[#5A50D6]" aria-hidden /> You are on Free: {FREE_LESSONS.length} lessons are open</h2>
+          <p className="mt-1 text-sm text-slate-700">You can see the whole path below. Lessons with a lock show what you will learn; Starter opens all {all.length} lessons straight away.</p>
+          <p className="mt-3"><Link href={unlockHref(true)} className="btn-primary text-sm" data-testid="unlock-cta"><Sparkles className="h-4 w-4" aria-hidden /> {UNLOCK_LABEL}</Link></p>
+        </section>
+      )}
 
       {next && nextStep && (
         <section aria-labelledby="next-h" className="mt-6 rounded-2xl border-2 border-[#5A50D6] bg-[#5A50D6]/5 p-5" data-testid="next-lesson">
@@ -83,6 +95,7 @@ export default async function DashboardLearn() {
                     {here && <span className="inline-flex items-center gap-1 rounded-full bg-[#5A50D6] px-2 py-0.5 text-[10px] font-semibold text-white"><MapPin className="h-3 w-3" aria-hidden /> You are here</span>}
                   </span>
                   <span className="mt-0.5 block text-sm text-slate-600">{g.p.blurb}</span>
+                  {!full && <span className="mt-1 flex items-center gap-1 text-xs text-slate-500" data-testid="step-lock-count"><Lock className="h-3 w-3" aria-hidden /> {g.lessons.filter((l) => open(l.ref)).length ? `${g.lessons.filter((l) => open(l.ref)).length} free, ${g.lessons.filter((l) => !open(l.ref)).length} with Starter` : "Opens with Starter"}</span>}
                   {tags.length > 1 && <span className="mt-1 block text-[11px] text-slate-500">Lessons tagged: {tags.map((s) => STAGE_INFO[s].name).join(", ")}</span>}
                   <span className="mt-2 flex items-center gap-2">
                     <span className="h-1.5 w-full max-w-xs overflow-hidden rounded-full bg-slate-200" aria-hidden><span className="block h-full bg-emerald-500" style={{ width: `${(d / Math.max(1, g.lessons.length)) * 100}%` }} /></span>
@@ -116,7 +129,7 @@ export default async function DashboardLearn() {
                   {g.lessons.map((l) => {
                     const st = state(l.ref);
                     const here = l.ref === next?.ref;
-                    const Icon = st === "done" ? CheckCircle2 : st === "started" ? CircleDot : locked ? Lock : Circle;
+                    const Icon = st === "done" ? CheckCircle2 : st === "started" ? CircleDot : locked || !open(l.ref) ? Lock : Circle;
                     return (
                       <li key={l.ref}>
                         <Link href={`/learn/${l.module.slug}#${l.id}`} aria-label={`Lesson ${num.get(l.ref)}: ${short(l.title)}, ${st === "done" ? "done" : st === "started" ? "started" : "not started"}`} className={`flex items-start gap-2 rounded-lg px-2 py-1 text-sm hover:underline ${here ? "bg-[#5A50D6]/10 font-semibold text-slate-900" : locked ? "text-slate-500" : "text-slate-800"}`} aria-current={here ? "step" : undefined}>
