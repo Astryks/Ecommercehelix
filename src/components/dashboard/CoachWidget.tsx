@@ -44,7 +44,7 @@ export function CoachWidget() {
       }));
     });
   }, [open, data]);
-  useEffect(() => end.current?.scrollIntoView({ block: "end" }), [lines, pending, open]);
+  useEffect(() => { end.current?.scrollIntoView({ block: "end" }); }, [lines, pending, open]);
 
   function ask(deep: boolean) {
     const text = q.trim();
