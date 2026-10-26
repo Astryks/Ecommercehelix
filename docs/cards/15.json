@@ -64,5 +64,15 @@
   {"say": "Install a subscription app from the Shopify App Store. Offer one simple plan: a small saving (5% to 15%) or free shipping, every reorder gap, with easy skip and cancel.", "check": "The product page shows \"One-time purchase\" and \"Subscribe and save\".", "lost": "Install a subscription app. Make one simple plan."},
   {"say": "Send an email offering the subscription a few days before the first order likely runs out.", "check": "New buyers get the offer right when they'd reorder.", "lost": "Add one subscription email after purchase."},
   {"say": "Each month, check subscribers, cancels and the reasons. Fix the top reason.", "check": "You know how many subscribers you have and why people leave.", "careful": "Make cancelling and skipping easy. Hiding it causes chargebacks and angry reviews.", "lost": "Once a month, read why people cancelled. Fix the most common one."}
+ ]},
+"15.12": {"intro": "Prove strangers will pay before you buy lots of stock.",
+ "steps": [
+  {"say": "Write one sentence: who it is for, the problem it solves and why it beats what they use now.", "check": "One clear sentence you could say to a stranger.", "lost": "Fill in: For ___ who ___, this ___."},
+  {"say": "Find 3 to 5 places where those people already talk, like groups, forums or competitor reviews, and note the words they use for the problem.", "check": "A page of real customer words and complaints.", "lost": "Read 20 reviews of a similar product."},
+  {"say": "Look up 3 competitors selling something close. Note their price, reviews and what buyers praise or complain about.", "check": "You know if there is demand and a gap you can fill.", "lost": "Look at one competitor."},
+  {"say": "Make a simple product page with real photos or samples, a price and a pre-order or \"notify me\" button.", "check": "A page that can take interest or pre-orders before you hold big stock.", "lost": "A 'notify me' page is enough."},
+  {"say": "Send a small, fixed amount of traffic to it, like a $100 to $200 ad test or posts to your own audience.", "check": "At least a few hundred visitors from the right people.", "lost": "Share it with your own followers first."},
+  {"say": "Count the sign-ups or pre-orders per 100 visitors, and check your margin still works after ad costs (Lesson 1.2 shows your costs).", "check": "You know if people act, and if each sale would make money.", "lost": "Count sign-ups only."},
+  {"say": "After the first buyers get it, ask them: \"How would you feel if you could no longer buy this?\" Count how many say \"very disappointed\".", "check": "A simple fit score. If around 4 in 10 or more are very disappointed, you likely have something. If not, change the offer before ordering more.", "careful": "Friends and family saying \"I'd buy that\" is not proof. Only count money, pre-orders or email sign-ups from strangers.", "lost": "Ask your first 5 buyers."}
  ]}
 }

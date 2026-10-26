@@ -1,5 +1,13 @@
 # ▶ NEXT STEPS (updated 26 Oct 2026, evening) — start here
 
+## 27 Oct 2026: stage-ordered Learn path, "You are here" strip, 5 new lessons (branch `helix-audit-fixes-27oct`, pushed, NOT merged, NOT deployed)
+- Learn path now runs Start here, then Attract (steps 2-7), Convert (8-9), Grow (10). Each step has a `stage` and shows it. Step ids kept (`store-ready`, `customer-and-offer`, `plan-ads`, `first-ad`, `read-results`, `grow`) plus new `know-your-customer`, `more-channels`, `email-and-promos`. Lesson refs and saved progress unchanged.
+- Step 2 "Get your store ready first" sits in Attract and is labelled "Convert basics you do before ads". Its lessons stay tagged Convert in `stage-map.json`; the quest puts them in the Attract section only because they come before ads. The rule is explained on the step, the strip and the Attract, Convert, Grow page.
+- Attract lessons that sat under Grow (11.x, 12.x, 10.11-10.13, 8.6, 18.2, 30.3-30.6) are now in "Add more places to be seen". Convert lessons (16.x, 17.x, 18.x, 19.11, 30.7, 30.8) are now in "Email, SMS and promotions".
+- "You are here" strip (`src/components/StageStrip.tsx`) on Today, /start, the plan page and the nav (sidebar and mobile header). It links to /dashboard/learn/framework.
+- 5 new lessons in Helix wording, each with cards, aliases, stages.md and a place in the path: 15.12 product validation and fit (permanent id 3.12), 16.18 visitors to subscribers with consent (10.18), 5.22 tired ads (5.23), 11.13 organic Pinterest (12.13), 27.7 founder energy and sleep (16.10). New glossary terms: Creative fatigue, Product-market fit, Pop-up. The coach corpus (on `helix-live-27oct`) reads docs/playbook and docs/cards, so it picks these up once both branches are merged and the embed is re-run.
+- Daily email topic follows the user's stage: if their next lesson is in a later stage than the shared topic, they get a topic from their own stage, never the same as yesterday (`topicForStage`, tests/daily-topic-stage.test.ts).
+
 ## 26 Oct 2026: daily topics, checklist quest, AI plan (branch `helix-daily-topics-quest`, NOT pushed)
 - Daily email topic teaser: 72-topic Attract→Convert→Grow calendar with no repeats per cycle (fcf43d1). Social calendar of 72 IG + 72 FB posts in `docs/social/daily/`, prepared only and not scheduled.
 - `/dashboard/learn/framework`: stage timeline, ticks, XP, badges, streak, plus "Next up" on Today (d85cb1e). Build OK, 376 tests pass.
@@ -32,6 +40,7 @@ _Last updated: 26 Oct 2026, evening (Sydney)._
 
 ## Needs Sid (only these are left)
 
+0. **`BUSINESS_POSTAL_ADDRESS` (needs Sid, 27 Oct 2026).** Marketing emails show no postal address in the footer while this is unset. US anti-spam rules (CAN-SPAM) ask for a valid postal address in commercial email; a PO box or registered mail service is fine. Send me the address to use, or set it in Vercel Production yourself. Also merge `helix-audit-fixes-27oct` when happy and confirm `EMAILS_LIVE=1`.
 1. **Stripe: one real purchase + refund (5 minutes).** Setup is done (15 Oct 2026, live mode). Left for you: buy Starter (US$29) on the live site with your own card, open Plan and billing > Manage, cancel, check access stays until the period end, then refund in Stripe. Also set branding by hand (Stripe does not allow it via the API on your own account): Dashboard > Settings > Branding: name "E-commerce Helix", logo option B, colour #5A50D6, accent #1A1718.
 2. **TikTok (paused by Sid).** When ready: create the app at https://business-api.tiktok.com/portal, redirect URL `https://ecommercehelix.com/api/tiktok/callback`, then set `TIKTOK_APP_ID` and `TIKTOK_APP_SECRET` in Vercel. Spend sync is built after that (small additive table).
 3. **Meta app review** (so people who are not testers can connect Meta): Business Verification in Meta Business Settings > Security Centre, then App Review for `ads_read`, `ads_management`, `business_management`, `pages_read_engagement` with the screen recording described in `docs/meta-setup.md`.

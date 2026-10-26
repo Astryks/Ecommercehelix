@@ -1,9 +1,10 @@
 {
- "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos come from official platform channels only (Learn With Shopify, Meta for Business, Google Ads); each checked via YouTube oEmbed (title and channel) and embeddable on 26 Oct 2026.",
+ "_note": "Guided Learn path. Order of lessons by ref. Every lesson ref appears exactly once. Refs never change, so progress (keyed by ref) carries over. Videos come from official platform channels only (Learn With Shopify, Meta for Business, Google Ads); each checked via YouTube oEmbed (title and channel) and embeddable on 26 Oct 2026. Steps run in stage order (Attract, Convert, Grow) after Start here. Step 2 sits in Attract but holds Convert lessons: store basics you do before any ad. Each lesson keeps its own stage tag.",
  "steps": [
   {
    "n": 1,
    "id": "start-here",
+   "stage": "start",
    "title": "Start here",
    "blurb": "Do these first after you sign in. Connect your store, set your numbers and learn your break-even.",
    "refs": [
@@ -36,41 +37,11 @@
   },
   {
    "n": 2,
-   "id": "customer-and-offer",
-   "title": "Know your customer and your offer",
-   "blurb": "Find who buys, what they want, and a price that leaves you money.",
-   "refs": [
-    "30.1",
-    "30.2",
-    "3.2",
-    "3.1",
-    "15.1",
-    "15.2",
-    "15.3",
-    "15.4",
-    "15.5",
-    "15.6",
-    "15.7",
-    "15.8",
-    "15.9",
-    "15.10",
-    "15.11",
-    "19.8",
-    "3.3"
-   ],
-   "videos": [
-    {
-     "title": "How To Find And Validate WINNING PRODUCTS: The 16 Step Product Research Guide",
-     "channel": "Learn With Shopify",
-     "url": "https://www.youtube.com/watch?v=KMrTD8KIB18"
-    }
-   ]
-  },
-  {
-   "n": 3,
    "id": "store-ready",
-   "title": "Get your store ready to sell",
-   "blurb": "Fix your store before you pay for ads, so visitors turn into buyers.",
+   "stage": "attract",
+   "label": "Convert basics you do before ads",
+   "title": "Get your store ready first",
+   "blurb": "Store layout and checkout are Convert jobs, but do them before your first ad. Paying to send people to a store that is not ready wastes money.",
    "refs": [
     "13.1",
     "13.2",
@@ -119,7 +90,9 @@
     "21.5",
     "21.6",
     "21.7",
-    "21.8"
+    "21.8",
+    "5.14",
+    "4.5"
    ],
    "videos": [
     {
@@ -135,8 +108,29 @@
    ]
   },
   {
+   "n": 3,
+   "id": "know-your-customer",
+   "stage": "attract",
+   "title": "Know who you are selling to",
+   "blurb": "Work out who buys and what makes them stop scrolling, so your ads reach the right people.",
+   "refs": [
+    "30.2",
+    "3.2",
+    "3.1",
+    "3.3"
+   ],
+   "videos": [
+    {
+     "title": "How To Find And Validate WINNING PRODUCTS: The 16 Step Product Research Guide",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=KMrTD8KIB18"
+    }
+   ]
+  },
+  {
    "n": 4,
    "id": "plan-ads",
+   "stage": "attract",
    "title": "Plan your ads",
    "blurb": "Pick who to reach, how to set up campaigns, how much to spend and what ads to make.",
    "refs": [
@@ -168,13 +162,13 @@
     "5.11",
     "5.12",
     "5.13",
-    "5.14",
     "5.17",
     "5.18",
     "5.19",
     "5.20",
     "5.15",
     "5.21",
+    "5.22",
     "5.16",
     "6.1",
     "6.2",
@@ -199,7 +193,6 @@
     "4.2",
     "4.3",
     "4.4",
-    "4.5",
     "4.6",
     "4.7"
    ],
@@ -219,6 +212,7 @@
   {
    "n": 5,
    "id": "first-ad",
+   "stage": "attract",
    "title": "Set up your first ad",
    "blurb": "The exact steps, in order, from tracking to your first live ad.",
    "refs": [
@@ -263,6 +257,7 @@
   {
    "n": 6,
    "id": "read-results",
+   "stage": "attract",
    "title": "Read your results and improve",
    "blurb": "Learn ROAS, MER and CPA, then fix what is not working.",
    "refs": [
@@ -310,53 +305,17 @@
   },
   {
    "n": 7,
-   "id": "grow",
-   "title": "Grow",
-   "blurb": "Email, bigger orders, repeat buyers, big sale days like Black Friday, scaling and running the business.",
+   "id": "more-channels",
+   "stage": "attract",
+   "title": "Add more places to be seen",
+   "blurb": "Google, TikTok, Pinterest, YouTube, search and partners, once your first ads work.",
    "refs": [
-    "16.1",
-    "16.2",
-    "16.3",
-    "16.14",
-    "16.15",
-    "16.16",
-    "16.4",
-    "16.5",
-    "16.6",
-    "16.7",
-    "16.8",
-    "16.9",
-    "16.10",
-    "16.11",
-    "16.12",
-    "16.17",
-    "16.13",
     "12.1",
     "12.2",
     "12.3",
     "12.4",
     "12.5",
-    "17.1",
-    "17.2",
-    "17.3",
-    "17.4",
-    "17.5",
-    "17.6",
-    "17.7",
-    "17.8",
-    "17.9",
-    "17.10",
-    "17.11",
-    "17.12",
-    "17.13",
-    "18.1",
     "18.2",
-    "18.3",
-    "18.4",
-    "18.5",
-    "18.6",
-    "8.13",
-    "8.14",
     "8.6",
     "10.11",
     "10.12",
@@ -370,12 +329,119 @@
     "11.10",
     "11.11",
     "11.12",
+    "11.13",
     "30.3",
     "30.4",
     "30.5",
-    "30.6",
+    "30.6"
+   ],
+   "videos": [
+    {
+     "title": "Google Ads: How to use Shopping ads to reach more customers",
+     "channel": "Google Ads",
+     "url": "https://www.youtube.com/watch?v=mCj40f2QmHI"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "id": "customer-and-offer",
+   "stage": "convert",
+   "title": "Sharpen your offer",
+   "blurb": "Check people really want it, then set an offer and price that turns visits into sales and leaves you money.",
+   "refs": [
+    "30.1",
+    "15.1",
+    "15.2",
+    "15.3",
+    "15.4",
+    "15.5",
+    "15.6",
+    "15.9",
+    "15.12",
+    "15.7",
+    "15.8",
+    "15.10",
+    "15.11",
+    "19.8"
+   ],
+   "videos": [
+    {
+     "title": "How To Find And Validate WINNING PRODUCTS: The 16 Step Product Research Guide",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=KMrTD8KIB18"
+    },
+    {
+     "title": "PRICING STRATEGY: How To Find The Ideal Price For A Product",
+     "channel": "Learn With Shopify",
+     "url": "https://www.youtube.com/watch?v=xQWUm_eHjGk"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "id": "email-and-promos",
+   "stage": "convert",
+   "title": "Email, SMS and promotions",
+   "blurb": "Turn visitors into subscribers with consent, then win the sale with email, SMS and well-planned promotions.",
+   "refs": [
+    "16.1",
+    "16.2",
+    "16.3",
+    "16.14",
+    "16.15",
+    "16.16",
+    "16.6",
+    "16.7",
+    "16.8",
+    "16.10",
+    "16.11",
+    "16.13",
+    "17.1",
+    "17.2",
+    "17.3",
+    "17.4",
+    "17.5",
+    "17.6",
+    "17.8",
+    "17.9",
+    "17.11",
+    "17.12",
+    "17.13",
+    "18.1",
+    "18.3",
+    "18.4",
+    "18.5",
     "30.7",
     "30.8",
+    "19.11",
+    "16.18"
+   ],
+   "videos": [
+    {
+     "title": "How to prepare your Google Ads retail campaigns for holiday shopping",
+     "channel": "Google Ads",
+     "url": "https://www.youtube.com/watch?v=K-hcfC7rrVo"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "id": "grow",
+   "stage": "grow",
+   "title": "Grow",
+   "blurb": "Profit, stock, repeat buyers, scaling and running the business, including looking after yourself.",
+   "refs": [
+    "16.4",
+    "16.5",
+    "16.9",
+    "16.12",
+    "16.17",
+    "17.7",
+    "17.10",
+    "18.6",
+    "8.13",
+    "8.14",
     "30.11",
     "30.12",
     "30.13",
@@ -398,7 +464,6 @@
     "19.7",
     "19.9",
     "19.10",
-    "19.11",
     "19.12",
     "22.1",
     "22.2",
@@ -426,6 +491,7 @@
     "27.4",
     "27.5",
     "27.6",
+    "27.7",
     "28.1",
     "28.2",
     "28.3",

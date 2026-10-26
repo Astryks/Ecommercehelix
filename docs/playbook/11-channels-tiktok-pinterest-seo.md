@@ -353,6 +353,39 @@
 
 **Watch out:** Results are slow. Most channels take months to grow. Judge it after 3 months, not 3 days.
 
+## Lesson 11.13: Organic Pinterest: boards and keywords
+<!-- stage:attract -->
+
+**Why this matters:** Pinterest works like a search engine for ideas. A good pin can bring visitors for months without paying for ads. The key is using the words people type, and keeping your boards tidy so Pinterest knows what you sell.
+
+**Step 1.** Change your Pinterest account to a free business account and claim your website in **Settings > Claimed accounts**.
+
+**Expected result:** Your pins show your logo and Pinterest gives you visitor numbers.
+
+**Step 2.** Type your main product into the Pinterest search bar and write down the suggested words that appear under it.
+
+**Expected result:** A list of 15 to 20 words and phrases real shoppers search for.
+
+**Step 3.** Create 5 to 10 boards, each named with one of those search phrases, like "Linen summer dresses" rather than "My faves".
+
+**Expected result:** Every board has a clear, searchable name and a one-line description that uses the same words.
+
+**Step 4.** For each product, make 2 to 3 tall pins (2:3, like 1000 x 1500 pixels) with a different photo or text on each.
+
+**Expected result:** Each product has a few fresh pins, not one copy pinned many times.
+
+**Step 5.** Write each pin title and description with a search phrase in plain words, and link the pin to the exact product page.
+
+**Expected result:** Clicks land on the product, not your home page.
+
+**Step 6.** Post a few fresh pins every week, and post seasonal pins 6 to 8 weeks before the season.
+
+**Expected result:** Your pins are already being found when people start planning.
+
+**Step 7.** Once a month, open **Analytics** and sort your pins by outbound clicks.
+
+**Expected result:** You know your top 5 pins, so your next pins can copy their style.
+
 ## Self-check
 
 1. How many ad-ready videos should you have before paying for TikTok ads?

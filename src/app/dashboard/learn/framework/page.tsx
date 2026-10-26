@@ -5,6 +5,7 @@ import { questForUser } from "@/lib/quest-server";
 import { sectionName, XP_PER_LESSON, type QuestSection } from "@/lib/quest";
 import { STAGE_INFO } from "@/lib/stages";
 import { toggleTopic } from "./actions";
+import { CONVERT_BEFORE_ADS } from "@/lib/learn-path";
 
 export const metadata = { title: "Attract, Convert, Grow checklist" };
 
@@ -17,6 +18,8 @@ export default async function FrameworkPage() {
     <div className="mx-auto max-w-5xl">
       <h1 className="page-title">Attract, Convert, Grow</h1>
       <p className="page-lead">Your whole course as one checklist. Tick a topic when you have done it. Each tick is {XP_PER_LESSON} XP; finishing a stage earns a badge and a bonus.</p>
+
+      <p className="mt-3 rounded-xl border border-orange-200 bg-orange-50 p-3 text-sm text-orange-900" data-testid="convert-before-ads"><strong>Convert basics come before ads.</strong> {CONVERT_BEFORE_ADS} So Attract starts with &quot;Get your store ready first&quot;: those lessons stay tagged Convert, but you do them before your first ad.</p>
 
       <section className="mt-5 grid gap-4 sm:grid-cols-4" aria-label="Your progress" data-testid="quest-summary">
         <div className="card p-4"><p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Overall</p><p className="mt-1 font-display text-3xl font-semibold text-[#1A1718]">{q.pct}%</p>

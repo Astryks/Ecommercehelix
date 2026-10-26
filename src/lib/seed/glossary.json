@@ -122,6 +122,29 @@
   "means": "How many times, on average, the same person saw your ad."
  },
  {
+  "term": "Creative fatigue",
+  "aka": [
+   "ad fatigue",
+   "tired ad"
+  ],
+  "means": "When an ad has been shown to the same people so often that fewer click and each sale costs more. Fix it with a genuinely new ad."
+ },
+ {
+  "term": "Product-market fit",
+  "aka": [
+   "PMF"
+  ],
+  "means": "When a clear group of people buys your product, buys again or tells friends, without you pushing hard."
+ },
+ {
+  "term": "Pop-up",
+  "aka": [
+   "popup",
+   "sign-up form"
+  ],
+  "means": "A small box on your store that offers a reason to join your email list. People choose to sign up."
+ },
+ {
   "term": "Hook rate",
   "aka": [],
   "means": "Out of everyone who saw your video ad, the share who watched at least 3 seconds. Meta has no built-in column, so you add it as a custom metric."

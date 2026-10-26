@@ -112,5 +112,15 @@
   {"say": "Low repeat: fewer, bigger sales for new buyers. High repeat: early access for past buyers and small list-only events.", "check": "Your calendar fits your store.", "lost": "Plan one sale that fits your type."},
   {"say": "Send a reorder email a little before the usual second order. 45 days usual? Send on day 38.", "check": "A reorder email is live.", "lost": "Add one reminder email."},
   {"say": "Pick three products often bought together. Add them in **Apps > Search & Discovery > Product recommendations**, and in one follow-up email.", "check": "Three pairs show on product pages and in an email.", "lost": "Pick one pair that goes together."}
+ ]},
+"16.18": {"intro": "Give visitors a good reason to join your list, by choice.",
+ "steps": [
+  {"say": "Pick one sign-up reason worth giving an email for, like a first-order gift, early access, a guide or a small discount you can afford.", "check": "One clear offer, checked against your margin.", "lost": "Free shipping on the first order works for most stores."},
+  {"say": "Turn on a sign-up form or pop-up in your email app (like Shopify Email forms or Klaviyo) that shows after about 10 seconds or when someone goes to leave.", "check": "New visitors see your offer once, not on every page.", "lost": "Use your email app's default pop-up."},
+  {"say": "Set the form to ask only for an email first, with an easy-to-see close button on mobile.", "check": "The pop-up does not block shoppers or hurt your mobile sales.", "lost": "Ask for the email only."},
+  {"say": "Add a clear tick box or line saying what they will get and how often, with a link to your privacy policy. Leave SMS unticked by default.", "check": "Every sign-up has clear consent you can show if asked.", "lost": "Use your email app's built-in consent text."},
+  {"say": "Connect the form to your welcome flow (Lesson 16.1) so the offer arrives within minutes.", "check": "New subscribers get their gift or code straight away.", "lost": "Send the code in the first welcome email."},
+  {"say": "Add a sign-up box in your footer and on your checkout for people who skip the pop-up.", "check": "People can join any time, not just from the pop-up.", "lost": "A footer box is enough."},
+  {"say": "After 2 weeks, check your sign-ups per 100 visitors (many stores see 2 to 5).", "check": "You know your sign-up rate and what lifts it.", "careful": "Some apps claim they can name visitors who never signed up. Sending marketing to people who did not agree can break spam and privacy laws in Australia, the UK, the EU and parts of the US. Only email people who chose to join.", "lost": "Just write down this number."}
  ]}
 }

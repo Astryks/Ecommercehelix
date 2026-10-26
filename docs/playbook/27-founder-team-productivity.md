@@ -143,6 +143,41 @@
 
 **Expected result:** The business would pass a buyer's or lender's check.
 
+## Lesson 27.7: Your energy and sleep are part of the business
+<!-- stage:grow -->
+
+**Why this matters:** When you are the business, your energy is its engine. Tired founders make slower decisions, react to every number and miss the big things. Better sleep and a steady day are not a luxury. They are how you keep going for years.
+
+**Step 1.** For one week, write down when you go to bed, when you wake and how you feel each morning, from 1 to 5.
+
+**Expected result:** You see your real sleep pattern, not the one you think you have.
+
+**Step 2.** Pick a fixed wake-up time for weekdays and weekends, and keep it within about 30 minutes.
+
+**Expected result:** You wake at about the same time every day.
+
+**Step 3.** Set a "shop closed" time each evening, at least an hour before bed, and turn off store and ad app alerts after it.
+
+**Expected result:** No sales or ad alerts after closing time.
+
+**Step 4.** Get outside in daylight for 10 to 15 minutes within an hour of waking.
+
+**Expected result:** A short morning walk or coffee outside becomes part of your day.
+
+**Step 5.** Block your best 90 minutes of the day for the hardest work, like planning, ads or new products, before email and messages.
+
+**Expected result:** Big jobs get your best energy instead of what is left over.
+
+**Step 6.** Check your numbers once a day at a set time (your daily profit check), not every hour.
+
+**Expected result:** Fewer panicked changes and calmer decisions.
+
+**Step 7.** If you still feel tired most days after a month of steady sleep, see your doctor.
+
+**Expected result:** Ongoing tiredness gets checked by a professional.
+
+**Watch out:** This is general wellbeing information, not medical advice.
+
 ## Self-check
 
 1. What are the three interruption questions?

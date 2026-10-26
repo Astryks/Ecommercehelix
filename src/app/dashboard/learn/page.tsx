@@ -5,7 +5,7 @@ import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, getLessonSteps } from "@/lib/repo";
 import { listModules } from "@/lib/learn";
 import { STAGE_INFO, STAGE_ORDER } from "@/lib/stages";
-import { PATH } from "@/lib/learn-path";
+import { PATH, PATH_STAGE_NAME } from "@/lib/learn-path";
 import { siteContent } from "@/lib/site-content";
 import { isoDay } from "@/lib/dates";
 
@@ -59,21 +59,31 @@ export default async function DashboardLearn() {
 
       <h2 className="mt-8 font-serif text-2xl uppercase tracking-wide text-slate-900">Your path</h2>
       <ol className="mt-3 grid gap-3" data-testid="learn-path">
-        {path.map((g) => {
+        {path.map((g, gi) => {
           const d = g.lessons.filter((l) => state(l.ref) === "done").length;
+          const newStage = gi === 0 || path[gi - 1].p.stage !== g.p.stage;
+          const stChip = g.p.stage === "start" ? "bg-violet-50 text-violet-800 ring-violet-200" : STAGE_INFO[g.p.stage].chip;
           const here = g === nextStep;
           const tags = STAGE_ORDER.filter((s) => g.lessons.some((l) => l.stage === s));
           return (
             <li key={g.p.id}>
+              {newStage && g.p.stage !== "start" && (
+                <h3 className="mb-2 mt-3 flex flex-wrap items-baseline gap-2" data-testid={`path-stage-${g.p.stage}`}>
+                  <span className={`rounded-full px-2.5 py-0.5 text-sm font-bold ring-1 ${stChip}`}>{STAGE_INFO[g.p.stage].step}. {PATH_STAGE_NAME[g.p.stage]}</span>
+                  <span className="text-sm text-slate-600">{STAGE_INFO[g.p.stage].tagline}</span>
+                </h3>
+              )}
               <Link href={`/dashboard/learn/path/${g.p.id}`} aria-label={`Step ${g.p.n}: ${g.p.title}. ${d} of ${g.lessons.length} lessons done${here ? ". You are here" : ""}`} className={`flex items-start gap-4 rounded-2xl border bg-white p-4 hover:ring-2 hover:ring-[#5A50D6]/30 ${here ? "border-[#5A50D6]" : "border-slate-200"}`}>
                 <span className={`grid h-10 w-10 flex-none place-items-center rounded-full text-lg font-bold ${d === g.lessons.length ? "bg-emerald-500 text-white" : here ? "bg-[#5A50D6] text-white" : "bg-slate-100 text-slate-700"}`}>{d === g.lessons.length ? <CheckCircle2 className="h-5 w-5" aria-label="Done" /> : g.p.n}</span>
                 <span className="min-w-0 flex-1">
                   <span className="flex flex-wrap items-baseline gap-2">
                     <span className="text-lg font-semibold text-slate-900">{g.p.title}</span>
-                    {tags.map((s) => <span key={s} className={`rounded-full px-1.5 py-0 text-[10px] font-semibold ring-1 ${STAGE_INFO[s].chip}`}>{STAGE_INFO[s].name}</span>)}
+                    <span className={`rounded-full px-1.5 py-0 text-[10px] font-semibold ring-1 ${stChip}`} data-testid="step-stage">{PATH_STAGE_NAME[g.p.stage]}</span>
+                    {g.p.label && <span className="rounded-full bg-orange-50 px-1.5 py-0 text-[10px] font-semibold text-orange-800 ring-1 ring-orange-200">{g.p.label}</span>}
                     {here && <span className="inline-flex items-center gap-1 rounded-full bg-[#5A50D6] px-2 py-0.5 text-[10px] font-semibold text-white"><MapPin className="h-3 w-3" aria-hidden /> You are here</span>}
                   </span>
                   <span className="mt-0.5 block text-sm text-slate-600">{g.p.blurb}</span>
+                  {tags.length > 1 && <span className="mt-1 block text-[11px] text-slate-500">Lessons tagged: {tags.map((s) => STAGE_INFO[s].name).join(", ")}</span>}
                   <span className="mt-2 flex items-center gap-2">
                     <span className="h-1.5 w-full max-w-xs overflow-hidden rounded-full bg-slate-200" aria-hidden><span className="block h-full bg-emerald-500" style={{ width: `${(d / Math.max(1, g.lessons.length)) * 100}%` }} /></span>
                     <span className="text-xs tabular-nums text-slate-600">{d} of {g.lessons.length} done</span>
