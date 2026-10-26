@@ -5,6 +5,10 @@
  */
 import { isIP } from "node:net";
 
+/** Cloud metadata and local-only names, blocked by name as well as by IP. */
+const BLOCKED_NAMES = new Set(["localhost", "metadata", "metadata.google.internal", "instance-data", "instance-data.ec2.internal", "metadata.azure.com", "kubernetes.default", "kubernetes.default.svc"]);
+const BLOCKED_SUFFIXES = [".localhost", ".local", ".internal", ".intranet", ".lan", ".home.arpa", ".corp", ".svc", ".cluster.local"];
+
 export function normaliseStoreUrl(input: string): URL | null {
   const raw = input.trim();
   if (!raw) return null;
@@ -16,9 +20,11 @@ export function normaliseStoreUrl(input: string): URL | null {
   }
   if (u.protocol !== "http:" && u.protocol !== "https:") return null;
   if (u.username || u.password) return null;
-  if (u.port && u.port !== "80" && u.port !== "443") return null;
-  const host = u.hostname.toLowerCase().replace(/^\[|\]$/g, "");
-  if (!host || host === "localhost" || host.endsWith(".localhost") || host.endsWith(".local") || host.endsWith(".internal")) return null;
+  // Only the default port for the scheme (URL drops it, so any explicit port left here is non-default).
+  if (u.port) return null;
+  // A trailing dot ("localhost.", "metadata.google.internal.") is the same name to DNS, so strip it before the name checks.
+  const host = u.hostname.toLowerCase().replace(/^\[|\]$/g, "").replace(/\.+$/, "");
+  if (!host || BLOCKED_NAMES.has(host) || BLOCKED_SUFFIXES.some((s) => host.endsWith(s))) return null;
   if (isIP(host)) {
     if (isPrivateIp(host)) return null;
   } else if (!host.includes(".")) return null;
