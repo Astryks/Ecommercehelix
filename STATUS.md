@@ -1,6 +1,17 @@
-# ▶ NEXT STEPS (updated 26 Oct 2026, evening) — start here
+# ▶ NEXT STEPS (updated 27 Oct 2026, morning AEDT) — start here
 
-## 27 Oct 2026: Helix AI coach MVP (branch `helix-ai-coach`, NOT pushed, flag OFF)
+## LIVE IN PRODUCTION (27 Oct 2026)
+
+- `main` = `helix-live-27oct` (includes `helix-audit-fixes-27oct`). Production deployment **dpl_Evq76KucQri6ujJamUbKhpL6LX9G** (ecommercehelix-of69h75fn), Ready, aliased to ecommercehelix.com.
+- **Rollback:** previous prod deployment **dpl_CWqNvy2rkMuEBnj82pcGGaRX1ofE** (ecommercehelix-4kjjefvcx) — `vercel promote ecommercehelix-4kjjefvcx-astryks.vercel.app` or Vercel → Deployments → Promote.
+- Production flags set to 1: `HELIX_COACH`, `HELIX_COACH_PROD`, `KLAVIYO`, `TIKTOK_ADS`, `GA4_SESSIONS`, `SHOPIFY_ORDER_WEBHOOKS`. TikTok/GA4/Shopify webhooks show "Coming soon" until their keys exist.
+- `BUSINESS_POSTAL_ADDRESS` intentionally NOT set (owner decision).
+- Coach embeddings: 797 chunks (incl. the 5 new Learn-path lessons), via AI Gateway (OIDC). MIN_SCORE 0.5; thinking disabled; empty answer → fallback model.
+- Test spend total ≈ $0.07 (embeds ≈ $0.046, coach calls $0.023 per CoachUsage). Demo test users (`demo-*`) and their rows deleted.
+- Tests: 468 passed, 2 skipped.
+
+## Helix AI coach (history; now LIVE — see above)
+
 
 A pop-up coach ("Helix - Your business coach") sits at the bottom right of the dashboard. It is behind the `HELIX_COACH` flag. In production it also needs `HELIX_COACH_PROD=1`, so it is **off in prod**. No money has been spent and no paid API calls were made, because no gateway key is set on the box.
 
