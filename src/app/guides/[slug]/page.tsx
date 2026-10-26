@@ -33,7 +33,7 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
       <main className="mx-auto w-full max-w-3xl px-5 pt-page pb-section">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Guides", path: "/guides" }, { name: a.h1, path }]} />
         <article>
-          <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">{a.h1}</h1>
+          <h1 className="mt-stack text-4xl text-slate-900 sm:text-5xl">{a.h1}</h1>
           <p className="mt-3 text-sm text-slate-500">Updated <time dateTime={a.updated}>{new Date(a.updated).toLocaleDateString("en-AU", { day: "numeric", month: "long", year: "numeric" })}</time> · E-commerce Helix</p>
           <div className="prose prose-slate mt-8 max-w-none prose-a:text-cyan-800" dangerouslySetInnerHTML={{ __html: html }} />
         </article>

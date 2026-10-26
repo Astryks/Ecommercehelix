@@ -113,3 +113,18 @@ export async function ensureUninstallWebhookWith(gql: Gql, uri = UNINSTALL_WEBHO
     return { ok: false, created: false, error: (e as Error).message.slice(0, 300) };
   }
 }
+
+/** Same as ensureUninstallWebhookWith for any topic (used for order webhooks behind SHOPIFY_ORDER_WEBHOOKS). */
+export async function ensureWebhookTopicWith(gql: Gql, topic: string, uri = UNINSTALL_WEBHOOK_URI): Promise<{ ok: boolean; created: boolean; error?: string }> {
+  try {
+    const q = `query HelixWebhooksT { webhookSubscriptions(first: 25, topics: [${topic.replace(/[^A-Z_]/g, "")}]) { nodes { id uri } } }`;
+    const list = await gql<{ webhookSubscriptions: { nodes: { id: string; uri: string }[] } }>(q);
+    if (list.webhookSubscriptions.nodes.some((n) => n.uri === uri)) return { ok: true, created: false };
+    const r = await gql<{ webhookSubscriptionCreate: { webhookSubscription: { id: string } | null; userErrors: { message: string }[] } }>(WEBHOOK_CREATE_M, { topic, webhookSubscription: { uri } });
+    const errs = r.webhookSubscriptionCreate.userErrors;
+    if (errs.length && !errs.every((e) => /already been taken|already exists/i.test(e.message))) return { ok: false, created: false, error: errs.map((e) => e.message).join("; ").slice(0, 300) };
+    return { ok: true, created: !errs.length };
+  } catch (e) {
+    return { ok: false, created: false, error: (e as Error).message.slice(0, 300) };
+  }
+}

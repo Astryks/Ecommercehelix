@@ -2,7 +2,7 @@ import "server-only";
 import { lookup } from "node:dns";
 import http from "node:http";
 import https from "node:https";
-import type { LookupFunction } from "node:net";
+import { isIP, type LookupFunction } from "node:net";
 import { isPrivateIp, normaliseStoreUrl, resolveRedirect } from "./guard";
 
 export const UA = "Mozilla/5.0 (compatible; HelixStoreCheck/1.0; +https://ecommercehelix.com)";
@@ -37,6 +37,9 @@ type Raw = { status: number; location: string | null; contentType: string; body:
 
 function request(url: URL, signal: AbortSignal, max: number): Promise<Raw> {
   return new Promise((resolve, reject) => {
+    // Node skips the lookup hook for IP literals, so check those here too (defence in depth; normaliseStoreUrl already blocks them).
+    const literal = url.hostname.replace(/^\[|\]$/g, "");
+    if (isIP(literal) && blocked(literal)) return reject(new Error(BLOCKED));
     const mod = url.protocol === "https:" ? https : http;
     const req = mod.request(url, { method: "GET", lookup: guardedLookup, signal, agent: false, headers: { "user-agent": UA, accept: "text/html,application/json;q=0.9,*/*;q=0.5", "accept-encoding": "identity" } }, (res) => {
       const status = res.statusCode ?? 0;

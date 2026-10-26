@@ -22,7 +22,7 @@ export default function Faq() {
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl px-5 pt-page pb-section">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "FAQ", path: "/faq" }]} />
-        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">Frequently asked questions</h1>
+        <h1 className="mt-stack text-4xl text-slate-900 sm:text-5xl">Frequently asked questions</h1>
         <h2 className="mt-12 text-2xl font-semibold text-slate-900">About Helix</h2>
         <dl className="mt-4 space-y-6">
           {HOME_FAQ.map((f) => <div key={f.q}><dt className="font-semibold text-slate-900">{f.q}</dt><dd className="mt-2 leading-7 text-slate-700">{f.a}</dd></div>)}

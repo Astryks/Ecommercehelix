@@ -226,6 +226,8 @@ STAGE_TEXT = {
 
 
 def module_stage(n):
+    if str(n) not in SMAP["modules"]:
+        sys.exit(f"plain_layer: module {n} has no stage in src/lib/stage-map.json (add it under \"modules\")")
     return SMAP["modules"][str(n)]
 
 
@@ -293,7 +295,8 @@ def write_stages():
     lessons = []
     for f in files:
         md = open(os.path.join(PB, f)).read()
-        title = re.search(r"^# Module \d+: (.+)$", md, flags=re.M).group(1)
+        tm = re.search(r"^# Module \d+: (.+)$", md, flags=re.M)
+        title = tm.group(1) if tm else re.sub(r"^\d\d-|\.md$", "", f).replace("-", " ").capitalize()
         for m in re.finditer(r"^## (Lesson (\d+\.\d+): .+)$", md, flags=re.M):
             lessons.append((f, title, m.group(1), m.group(2)))
     for sid, (name, tag) in STAGE_TEXT.items():
@@ -313,5 +316,7 @@ if __name__ == "__main__":
     if "--stages" in sys.argv:
         write_stages()
         print("stages.md rebuilt")
+    elif "--all" in sys.argv:
+        main()  # rewrites the plain-words boxes in every module file
     else:
-        main()
+        sys.exit("usage: plain_layer.py --stages (stages.md only, safe) | --all (also rewrites module boxes; overwrites hand edits)")

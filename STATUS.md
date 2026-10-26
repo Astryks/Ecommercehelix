@@ -44,6 +44,25 @@ A pop-up coach ("Helix - Your business coach") sits at the bottom right of the d
 7. **Shopify scopes** (`read_orders`, `read_all_orders`) for richer store answers.
 8. Wire `coachTasksForEmail()` into the daily email cron (optional).
 
+## Not built yet / needs Sid (27 Oct 2026, branch `helix-fixes-27oct`)
+
+Code for everything below is either built behind a flag or lives in another repo. Each item needs Sid (an approval, a key, a spend, or a click).
+
+- **Meta app review:** Advanced Access for `ads_read`/`ads_management` so non-test users can connect. Submit in the Meta developer console.
+- **Google Ads developer token:** Basic access needed before any real account can sync or get the paused draft (campaign + budget + PAUSED ad group, phrase keywords and a responsive search ad, built 27 Oct). Set `GOOGLE_ADS_DEVELOPER_TOKEN`.
+- **GA4 sessions (built 27 Oct, off):** set `GA4_SESSIONS=1`; the Google sign-in then also asks for `analytics.readonly`, which may need Google OAuth verification. Users must reconnect and save a property id (`setGa4Property`; no settings form yet). Runs inside the daily google-ads-sync cron.
+- **TikTok app approval (built 27 Oct, off):** TikTok For Business app with Reporting scope. Then set `TIKTOK_ADS=1`, `TIKTOK_APP_ID`, `TIKTOK_APP_SECRET`, run `docs/sql/2026-10-27-tiktok-ga4.sql` (or `npm run db:push`; additive only), and add the redirect `https://ecommercehelix.com/api/tiktok/callback`. Connect at `/api/tiktok/connect`; daily spend sync at `/api/cron/tiktok-sync` (19:25 UTC). No Integrations card yet; picking between several advertisers has `pickTikTokAdvertiser` but no UI.
+- **Shopify `read_all_orders`:** request in the Partner dashboard (needs a reason). Until then sync stays at 60 days.
+- **Shopify order webhooks (built 27 Oct, off):** set `SHOPIFY_ORDER_WEBHOOKS=1`. Topics orders/create, updated, paid, cancelled and refunds/create are registered on the next connect or sync; each event triggers a 3-day re-sync (HMAC checked, deduped by webhook id, throttled to one sync per 2 minutes per store). The daily cron stays.
+- **Course video storage:** about 14 GB of videos are not in git. Upload steps and costs are in `docs/course-videos.md` (Vercel Blob suggested; needs Sid's OK for the storage and bandwidth cost). Then set `COURSE_VIDEO_BASE_URL`.
+- **Stripe test purchase and refund:** one live-mode test buy and refund of Starter to prove checkout, webhooks and cancellation end to end.
+- **Vercel env vars:** add the new flags above on Production when ready (`SHOPIFY_ORDER_WEBHOOKS`, `TIKTOK_ADS`, `TIKTOK_APP_ID`, `TIKTOK_APP_SECRET`, `GA4_SESSIONS`, `COURSE_VIDEO_BASE_URL`) plus any still missing (`GOOGLE_ADS_DEVELOPER_TOKEN`).
+- **Becky site:** turn on "Enforce HTTPS" in the HTML host settings.
+- **Firebase and Orca migrations:** live in other repos, not this one.
+- **Klaviyo:** not built. Owner chose ready-to-paste flow copy and removed the Klaviyo brand; an API sync needs a decision and a private API key.
+
+**Fixed 27 Oct:** text one word per line across the app (Tailwind theme token `--spacing-block` generated `.inline-block{inline-size:24-32px}`; renamed to `--spacing-stack`, regression test added), plan card clipping hardening (`min-w-0`/`shrink-0`), store-check SSRF gaps (internal hostnames, non-default ports, IP literals, 31 tests), `plain_layer.py` crash and accidental overwrite, Today "card x of y" now opens exactly that deck, Learn page video slot.
+
 ## 26 Oct 2026: daily topics, checklist quest, AI plan (branch `helix-daily-topics-quest`, NOT pushed)
 - Daily email topic teaser: 72-topic Attract→Convert→Grow calendar with no repeats per cycle (fcf43d1). Social calendar of 72 IG + 72 FB posts in `docs/social/daily/`, prepared only and not scheduled.
 - `/dashboard/learn/framework`: stage timeline, ticks, XP, badges, streak, plus "Next up" on Today (d85cb1e). Build OK, 376 tests pass.
@@ -450,7 +469,7 @@ Every factual claim in the 30 playbook modules, their card decks (`docs/cards`),
 - Copy: plans (Shopify and Google marked coming soon, AI allowances), pricing security panel, Connections security panel, terms, privacy (Shopify, Google Ads, Vercel AI Gateway and the model provider added as processors).
 - Schema (additive, applied to Neon before push): tables ShopifyConnection, GoogleAdsConnection, GoogleAdsSnapshot, GoogleAdsDraft, AiUsage, AiCache; column ProductSale.source.
 
-**Not done / next:** Shopify order webhooks for near-real-time sync (daily cron only); `read_all_orders` for more than 60 days; Google Ads ad groups, keywords and ads in the paused draft (campaign + budget only); GA4 sessions; Klaviyo.
+**Not done / next:** see "Not built yet / needs Sid" at the top (27 Oct: order webhooks, Google ad groups/keywords/ads, GA4 and TikTok built behind flags).
 
 ## Launch-readiness audit (13 Oct 2026, evening Sydney)
 

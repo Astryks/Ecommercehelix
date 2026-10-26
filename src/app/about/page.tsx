@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMeta({ title: "About E-commerce Helix: Why
 function Block({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-section first:mt-0">
-      <div className="rule-accent" /><h2 className="mt-block text-3xl text-slate-900">{title}</h2>
+      <div className="rule-accent" /><h2 className="mt-stack text-3xl text-slate-900">{title}</h2>
       <div className="mt-lead space-y-4 text-lg leading-8 text-slate-700">{children}</div>
     </section>
   );
@@ -32,7 +32,7 @@ export default function About() {
           <p className="lead text-2xl text-slate-700">Grow your e-commerce business a little every day</p>
         </div>
       </div>
-      <main className="mx-auto max-w-3xl px-5 pb-section pt-block">
+      <main className="mx-auto max-w-3xl px-5 pb-section pt-stack">
         <Block title="Why the name">
           <p>
             Helix comes from the double helix: two spiral strands, like a twisted ladder, wound around each other inside almost every cell of your body. That spiral is DNA, the instruction manual for growth.

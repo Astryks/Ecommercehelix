@@ -1,10 +1,11 @@
 import "server-only";
 import { decrypt, encrypt, loadKey } from "../crypto";
 import { hasDb, prisma } from "../db";
-import { getDays, getSettings, setGoogleSpend } from "../repo";
+import { setChannelDays, getDays, getProductName, getProducts, getSettings, setGoogleSpend } from "../repo";
+import { getShopify } from "../shopify/service";
 import { targetsFrom } from "../targets";
 import { logAudit } from "../meta/store";
-import { assertPaused, cleanCustomerId, GOOGLE_ADS_BASE, googleAdsMode, pausedCampaignOps, summarise, type GaRow, type GaSnapshot } from "./config";
+import { cleanPropertyId, ga4On, ga4Sessions, GA4_SCOPE, assertAllPaused, assertPaused, cleanCustomerId, draftAdInput, pausedAdGroupOps, GOOGLE_ADS_BASE, googleAdsMode, pausedCampaignOps, summarise, type GaRow, type GaSnapshot } from "./config";
 
 type Actor = "user" | "cron";
 const aad = (userId: string) => `google-ads:${userId}`;
@@ -153,8 +154,50 @@ export async function getGoogleSnapshot(userId: string): Promise<GaSnapshot | nu
   return r ? (JSON.parse(r.data) as GaSnapshot) : null;
 }
 
+/** Save the GA4 property id to pull sessions from (GA4_SESSIONS=1 only). */
+export async function setGa4Property(userId: string, property: string) {
+  if (!ga4On()) throw new Error("GA4 sessions sync is off (GA4_SESSIONS).");
+  if (!hasDb) throw new Error("GA4 needs the database (not available in demo mode).");
+  const propertyId = cleanPropertyId(property);
+  if (!propertyId) throw new Error("Enter the numeric GA4 property id (Admin > Property details).");
+  await prisma.ga4Property.upsert({ where: { userId }, create: { userId, propertyId }, update: { propertyId, lastSyncError: null } });
+}
+
+/** Daily GA4 sessions (last 30 days) into ScorecardDay.sessions, using the Google connection's token. */
+export async function syncGa4Sessions(userId: string, actor: Actor = "user"): Promise<{ ok: boolean; error?: string }> {
+  if (!ga4On() || googleAdsMode() !== "live") return { ok: false, error: "not configured" };
+  if (!hasDb) return { ok: false, error: "no database" };
+  const p = await prisma.ga4Property.findUnique({ where: { userId } });
+  if (!p) return { ok: false, error: "No GA4 property set." };
+  const conn = await prisma.googleAdsConnection.findUnique({ where: { userId }, select: { scopes: true } });
+  const fail = async (msg: string) => {
+    await prisma.ga4Property.update({ where: { userId }, data: { lastSyncError: msg.slice(0, 300) } });
+    await logAudit(userId, { actor, action: "ga4.sync", target: p.propertyId, outcome: "error", detail: { message: msg.slice(0, 300) } });
+    return { ok: false, error: msg };
+  };
+  if (!conn) return fail("Google is not connected.");
+  if (!conn.scopes.includes(GA4_SCOPE)) return fail("Reconnect Google to allow read-only Analytics access.");
+  try {
+    const token = await accessToken(userId);
+    const res = await fetch(`https://analyticsdata.googleapis.com/v1beta/properties/${p.propertyId}:runReport`, {
+      method: "POST",
+      headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+      body: JSON.stringify({ dateRanges: [{ startDate: "30daysAgo", endDate: "today" }], dimensions: [{ name: "date" }], metrics: [{ name: "sessions" }], limit: 100 }),
+      cache: "no-store",
+    });
+    const j = await res.json().catch(() => ({}));
+    if (!res.ok) return fail(`GA4 error ${res.status}: ${JSON.stringify((j as { error?: unknown }).error ?? "").slice(0, 200)}`);
+    await setChannelDays(userId, "sessions", "ga4", ga4Sessions(j));
+    await prisma.ga4Property.update({ where: { userId }, data: { lastSyncAt: new Date(), lastSyncError: null } });
+    return { ok: true };
+  } catch (e) {
+    return fail((e as Error).message);
+  }
+}
+
 export async function syncAllGoogleAds(deadlineMs = 240_000) {
   if (!hasDb || googleAdsMode() !== "live") return [];
+  if (ga4On()) for (const g of await prisma.ga4Property.findMany({ select: { userId: true } })) await syncGa4Sessions(g.userId, "cron").catch(() => {});
   const start = Date.now();
   const rows = await prisma.googleAdsConnection.findMany({ where: { status: { not: "expired" }, customerId: { not: null } }, select: { userId: true } });
   const out: { userId: string; ok: boolean }[] = [];
@@ -165,7 +208,7 @@ export async function syncAllGoogleAds(deadlineMs = 240_000) {
   return out;
 }
 
-/** After the owner approves in Helix: create a budget and a PAUSED Search campaign. Ad groups, keywords and ads are left for the owner to add in Google Ads. */
+/** After the owner approves in Helix: create a budget and a PAUSED Search campaign. Then a PAUSED ad group, phrase keywords and a responsive search ad from the user's product names. */
 export async function createPausedGoogleCampaign(userId: string, approvalId: string) {
   const conn = await getGoogleAds(userId);
   const save = async (d: { status: string; campaignId?: string | null; budgetId?: string | null; error?: string | null }) => {
@@ -183,7 +226,21 @@ export async function createPausedGoogleCampaign(userId: string, approvalId: str
     const body = ops.campaign(b.results[0].resourceName);
     assertPaused(body);
     const c = await ads<{ results: { resourceName: string }[] }>(userId, "user", token, "POST", `customers/${conn.customerId}/campaigns:mutate`, body, conn.loginCustomerId);
-    await save({ status: "created", campaignId: c.results[0].resourceName.split("/").pop(), budgetId: b.results[0].resourceName.split("/").pop() });
+    // Ad group, keywords and a responsive search ad, all PAUSED. A failure here keeps the paused campaign and reports the error.
+    let adErr: string | null = null;
+    try {
+      const shop = await getShopify(userId).catch(() => null);
+      const products = [...new Set((await getProducts(userId)).map((p) => p.name))];
+      const input = draftAdInput(products.length ? products : [await getProductName(userId)].filter(Boolean), shop?.shopName ?? null, shop ? `https://${shop.shop}` : null);
+      if (input.keywords.length) {
+        const g = pausedAdGroupOps(conn.customerId, c.results[0].resourceName, name, input);
+        assertAllPaused(g);
+        await ads(userId, "user", token, "POST", `customers/${conn.customerId}/googleAds:mutate`, g, conn.loginCustomerId);
+      } else adErr = "No product names yet, so no keywords were added. Add them in Google Ads.";
+    } catch (e) {
+      adErr = `Campaign created, but ad group/keywords/ad failed: ${(e as Error).message.slice(0, 250)}`;
+    }
+    await save({ status: "created", campaignId: c.results[0].resourceName.split("/").pop(), budgetId: b.results[0].resourceName.split("/").pop(), error: adErr });
   } catch (e) {
     await save({ status: "failed", error: (e as Error).message.slice(0, 300) });
   }

@@ -8,7 +8,7 @@
  */
 /*
  * Spacing tokens. One scale for every page; phones get a slightly tighter version.
- * Use them through Tailwind (mt-eyebrow, mt-lead, mt-lead-ul, mt-block, py-section, pt-page, p-card)
+ * Use them through Tailwind (mt-eyebrow, mt-lead, mt-lead-ul, mt-stack, py-section, pt-page, p-card)
  * or the shared components PageHero, PageHeader and Section in src/components/ui.
  */
 :root {
@@ -28,7 +28,7 @@
   --spacing-eyebrow: var(--space-eyebrow);
   --spacing-lead: var(--space-lead);
   --spacing-lead-ul: var(--space-lead-underlined);
-  --spacing-block: var(--space-block);
+  --spacing-stack: var(--space-block); /* not "block": Tailwind would turn the class "inline-block" into inline-size: var(--spacing-block) */
   --spacing-section: var(--space-section);
   --spacing-page: var(--space-page);
   --spacing-card: var(--space-card);

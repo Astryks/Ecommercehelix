@@ -18,7 +18,7 @@ export default function Features() {
       <SiteHeader />
       <main className="mx-auto w-full max-w-6xl px-5 pt-page pb-section">
         <Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Features", path: "/features" }]} />
-        <h1 className="mt-block text-4xl text-slate-900 sm:text-5xl">E-commerce growth tools for store owners</h1>
+        <h1 className="mt-stack text-4xl text-slate-900 sm:text-5xl">E-commerce growth tools for store owners</h1>
         <p className="mt-lead max-w-2xl text-lg leading-8 text-slate-600">Helix is self-serve software that guides you to grow your store yourself. It explains every step and only acts with your approval.</p>
         <ul className="mt-section grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f) => (

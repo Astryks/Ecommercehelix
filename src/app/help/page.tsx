@@ -17,7 +17,7 @@ export default function HelpPage() {
       <main className="mx-auto w-full max-w-3xl px-5 pt-page pb-section">
         <h1 className="text-4xl text-slate-900 sm:text-5xl">Help and support</h1>
         <p className="mt-lead text-lg leading-8 text-slate-600">Some steps need your own accounts, so you do them and Helix shows you how. Each guide below is a few short steps. Still stuck? <Link className="underline" href="/contact">Contact us</Link> and a real person will reply, usually within one business day.</p>
-        <div className="mt-block"><HelpGuides /></div>
+        <div className="mt-stack"><HelpGuides /></div>
       </main>
       <SiteFooter />
     </div>

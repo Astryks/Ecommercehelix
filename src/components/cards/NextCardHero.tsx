@@ -15,7 +15,8 @@ export function NextCardHero({ uc, setup = null }: { uc: UserCards; setup?: "bui
       <p className="mt-1 text-sm text-slate-600">{label} · card {uc.index + 1} of {uc.deck.cards.length}</p>
       <h2 id="next-card-title" className="mt-3 font-hand text-3xl text-[#5A50D6]">{card.title}</h2>
       {preview && <p className="mt-2 text-[17px] text-[#1A1718]">{preview}{preview.length >= 180 ? "…" : ""}</p>}
-      <Link href="/dashboard/cards" className="btn-primary mt-5 px-5 py-3">{uc.index === 0 && uc.fresh ? "Start" : "Open my card"} <ArrowRight className="h-4 w-4" aria-hidden /></Link>
+      {/* Link to the exact deck shown here, so the player can never open a different deck than the "card x of y" line names (QA: "card 1 of 10" vs a 4-card deck). */}
+      <Link href={`/dashboard/cards?deck=${encodeURIComponent(uc.deck.id)}`} className="btn-primary mt-5 px-5 py-3">{uc.index === 0 && uc.fresh ? "Start" : "Open my card"} <ArrowRight className="h-4 w-4" aria-hidden /></Link>
       {setup && (
         <p className="mt-4 text-sm text-slate-600">
           Optional, any time: <Link href={setup === "build" ? "/start" : "/start?step=2"} className="font-semibold text-cyan-700 underline">answer a few questions</Link> so Helix can find what is holding your store back. About 2 minutes.

@@ -34,14 +34,14 @@ export default async function AdminCommunity({ searchParams }: { searchParams: P
   const fb = (p: GroupPerson) => (!g ? null : p.status === "approve" ? approveUrl(g) : p.status === "remove" ? removeUrl(g, p.name) : g);
   const meta = TABS.find((t) => t.id === tab)!;
   return (
-    <main className="mx-auto w-full max-w-4xl px-4 pb-section pt-block sm:px-6">
+    <main className="mx-auto w-full max-w-4xl px-4 pb-section pt-stack sm:px-6">
       <p className="text-sm"><Link href="/dashboard" className="text-cyan-700 hover:underline">Dashboard</Link> / Members group</p>
-      <div className="mt-block">
+      <div className="mt-stack">
         <PageHeader title="Members group" lead="Who to let into the private Facebook group, and who to take out." actions={g ? <a href={g} target="_blank" rel="noopener noreferrer" className="btn-ghost text-sm">Open the group <ExternalLink className="h-4 w-4" aria-hidden /></a> : undefined} />
       </div>
-      {!g && <p className="mt-block rounded-xl bg-amber-50 p-card text-sm text-amber-900 ring-1 ring-amber-200">The group link (FB_GROUP_URL) is not set, so new members do not get a join email yet.</p>}
+      {!g && <p className="mt-stack rounded-xl bg-amber-50 p-card text-sm text-amber-900 ring-1 ring-amber-200">The group link (FB_GROUP_URL) is not set, so new members do not get a join email yet.</p>}
 
-      <nav className="mt-block flex gap-2 overflow-x-auto" aria-label="Lists">
+      <nav className="mt-stack flex gap-2 overflow-x-auto" aria-label="Lists">
         {TABS.map((t) => {
           const n = all.filter((p) => inTab(p, t.id)).length;
           const on = t.id === tab;
@@ -61,7 +61,7 @@ export default async function AdminCommunity({ searchParams }: { searchParams: P
         <button className="btn-ghost text-sm"><Search className="h-4 w-4" aria-hidden /> Search</button>
       </form>
 
-      <section className="card mt-block p-card" aria-label={meta.label}>
+      <section className="card mt-stack p-card" aria-label={meta.label}>
         <p className="text-sm text-slate-600">{meta.help}</p>
         {rows.length === 0 ? <p className="mt-lead text-sm text-slate-600">Nobody here{q ? " for that search" : " right now"}.</p> : (
           <form action={markDone}>
