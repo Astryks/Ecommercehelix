@@ -3,7 +3,8 @@ import { decrypt, encrypt, loadKey } from "../crypto";
 import { hasDb, prisma } from "../db";
 import { setShopifyProducts, setShopifySales, setShopifyStock } from "../repo";
 import { logAudit } from "../meta/store";
-import { aggregateOrders, normaliseShop, ensureUninstallWebhookWith, SHOPIFY_API_VERSION, SHOPIFY_SCOPES, shopifyMode, type ShopifyOrder } from "./config";
+import { ORDER_TOPICS_GQL, orderWebhooksOn } from "./order-webhooks";
+import { ensureWebhookTopicWith, aggregateOrders, normaliseShop, ensureUninstallWebhookWith, SHOPIFY_API_VERSION, SHOPIFY_SCOPES, shopifyMode, type ShopifyOrder } from "./config";
 
 type Actor = "user" | "cron" | "shopify";
 const aad = (userId: string) => `shopify:${userId}`;
@@ -110,6 +111,13 @@ export async function ensureUninstallWebhook(userId: string, actor: Actor = "use
     const token = await accessToken(userId, conn.shop);
     const r = await ensureUninstallWebhookWith(<T,>(q: string, v?: Record<string, unknown>) => gql<T>(userId, conn.shop, token, actor, q, v));
     if (r.created || !r.ok) await logAudit(userId, { actor, action: "shopify.webhook", target: conn.shop, outcome: r.ok ? "ok" : "error", detail: r.ok ? { topic: "APP_UNINSTALLED" } : { message: r.error } });
+    if (orderWebhooksOn()) {
+      const g = <T,>(q: string, v?: Record<string, unknown>) => gql<T>(userId, conn.shop, token, actor, q, v);
+      for (const topic of ORDER_TOPICS_GQL) {
+        const o = await ensureWebhookTopicWith(g, topic);
+        if (o.created || !o.ok) await logAudit(userId, { actor, action: "shopify.webhook", target: conn.shop, outcome: o.ok ? "ok" : "error", detail: o.ok ? { topic } : { topic, message: o.error } });
+      }
+    }
     return r;
   } catch (e) {
     const message = (e as Error).message.slice(0, 300);

@@ -1,7 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { logAudit } from "@/lib/meta/store";
 import { normaliseShop, verifyWebhookHmac } from "@/lib/shopify/config";
-import { deleteShopifyData, usersForShop } from "@/lib/shopify/service";
+import { deleteShopifyData, getShopify, syncShopify, usersForShop } from "@/lib/shopify/service";
+import { isOrderTopic, orderWebhooksOn, SeenIds, shouldResync } from "@/lib/shopify/order-webhooks";
+
+const seen = new SeenIds();
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +17,7 @@ export async function POST(req: NextRequest) {
   const raw = await req.text();
   if (!secret || !verifyWebhookHmac(raw, req.headers.get("x-shopify-hmac-sha256"), secret)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   const topic = req.headers.get("x-shopify-topic") ?? "";
+  if (!seen.first(req.headers.get("x-shopify-webhook-id"))) return NextResponse.json({ ok: true, duplicate: true });
   let body: { shop_domain?: string; myshopify_domain?: string; domain?: string; customer?: { id?: number }; orders_requested?: number[]; orders_to_redact?: number[]; data_request?: { id?: number } } = {};
   try {
     body = JSON.parse(raw);
@@ -22,6 +26,15 @@ export async function POST(req: NextRequest) {
   }
   const shop = normaliseShop(req.headers.get("x-shopify-shop-domain") ?? body.shop_domain ?? body.myshopify_domain ?? body.domain);
   const users = shop ? await usersForShop(shop) : [];
+  if (isOrderTopic(topic)) {
+    // Off by default; the daily cron still syncs. Acknowledge so Shopify doesn't retry.
+    if (!orderWebhooksOn()) return NextResponse.json({ ok: true, ignored: "SHOPIFY_ORDER_WEBHOOKS is off" });
+    for (const userId of users) {
+      const conn = await getShopify(userId);
+      if (conn && shouldResync(conn.lastSyncAt)) await syncShopify(userId, "shopify", 3);
+    }
+    return NextResponse.json({ ok: true });
+  }
   for (const userId of users) {
     if (topic === "app/uninstalled") await deleteShopifyData(userId, "shopify", "app/uninstalled");
     else if (topic === "shop/redact") await deleteShopifyData(userId, "shopify", "shop/redact", true);
