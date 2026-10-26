@@ -33,7 +33,7 @@ export function priceOf(model: string, inTok: number, outTok: number, cachedTok 
 
 /** Retrieval and routing thresholds (from docs/HELIX-LLM-PLAN.md). */
 export const TOP_K = 6;
-export const MIN_SCORE = 0.55;
+export const MIN_SCORE = 0.5; // tuned on Preview 27 Oct: off-topic ~0.41, real course questions 0.53+
 export const DEEP_CONTEXT_TOKENS = 12_000;
 export const MAX_CONTEXT_TOKENS = 30_000;
 export const MAX_QUESTION_CHARS = 1_000;
