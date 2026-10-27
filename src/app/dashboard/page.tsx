@@ -42,8 +42,9 @@ import { bannerFor } from "@/lib/season-calendar";
 import { QuestNextUp } from "@/components/dashboard/QuestNextUp";
 import { questForUser } from "@/lib/quest-server";
 import { StageStrip } from "@/components/StageStrip";
-import { RoadTeaser } from "@/components/journey/RoadSection";
-import { journeyPosition } from "@/lib/journey-server";
+import { journeyForUser } from "@/lib/journey-server";
+import { RoadGameStrip } from "@/components/simple/RoadGameStrip";
+import { MoreInfo } from "@/components/simple/TextAlert";
 import { waterfall } from "@/lib/profit-setup";
 import { TodayTasks } from "@/components/dashboard/TodayTasks";
 import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
@@ -157,7 +158,15 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   );
 
   // Calm Today for people on a personal plan: progress, one step, and your numbers. Everything else is one tap away.
-  const [qx, road] = await Promise.all([questForUser(u.id), journeyPosition(u.id)]);
+  const [qx, road] = await Promise.all([questForUser(u.id), journeyForUser(u.id)]);
+  const intro = (
+    <header data-testid="today-intro">
+      <p className="text-sm text-slate-500">{prettyDay(today)}</p>
+      <h1 className="page-title">Today</h1>
+      <p className="mt-2 text-lg text-slate-700">Hi! Here&apos;s what we&apos;ll do today: 3 small steps. First we look at your numbers, then we see if you grew, then we pick what to do.</p>
+    </header>
+  );
+  const strip = <RoadGameStrip level={road.pos.level} xp={road.xp} progress={road.progress} />;
   const st = diag && sp.full !== "1" ? await planState(u.id) : null;
   if (st) {
     const profitSet = Boolean(await getProfitSetup(u.id));
@@ -165,16 +174,14 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
     return (
       <div className="mx-auto max-w-3xl space-y-5">
         {sp.welcome && <p className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">Welcome to Helix. Your plan is ready. Do one step a day and you&apos;re on track.</p>}
-        <header>
-          <p className="text-sm text-slate-500">{prettyDay(today)}</p>
-          <h1 className="page-title">Today</h1>
-          <p className="page-lead">Here&apos;s what to do today. One step at a time.</p>
-        </header>
+        {intro}
         <ScoreboardHero userId={u.id} />
+        {strip}
+        <MoreInfo label="Want to see more? (your lessons, plan and extras)" testId="today-more">
+          <div className="space-y-5 pt-1">
         <StageStrip quest={qx.quest} />
         {tasksBox}
         <QuestNextUp q={qx.quest} streak={qx.streak} />
-        <RoadTeaser level={road.pos.level} source={road.pos.source} />
         <NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
         <section className="card p-6">
           <div className="flex items-baseline justify-between text-sm">
@@ -200,17 +207,24 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           );
         })()}
         <Link href="/dashboard?full=1" className="block text-center text-xs text-slate-500 hover:underline">Show everything on Today</Link>
+          </div>
+        </MoreInfo>
       </div>
     );
   }
 
   return (
     <div className="mx-auto max-w-7xl">
-      <ScoreboardHero userId={u.id} />
+      <div className="mx-auto mb-6 max-w-3xl space-y-5">
+        {intro}
+        <ScoreboardHero userId={u.id} />
+        {strip}
+      </div>
+      <MoreInfo label="Want to see more? (your lessons, plan and extras)" testId="today-more" className="mx-auto max-w-7xl">
+      <div className="pt-2">
       <div className="mb-6"><StageStrip quest={qx.quest} /></div>
       <div className="mb-6">{tasksBox}</div>
       <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>
-      <div className="mb-6"><RoadTeaser level={road.pos.level} source={road.pos.source} /></div>
       <div className="mb-6"><NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
       {sp.welcome && (
         <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
@@ -222,7 +236,7 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
           <p className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">{prettyDay(today)}
             <Link href="/dashboard/settings" className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${T.id === "starting" ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : "bg-violet-50 text-violet-700 ring-violet-200"}`}>Track: {T.name} · change</Link>
           </p>
-          <h1 className="mt-1 page-title">Good to see you{u.name ? `, ${u.name}` : ""}</h1>
+          <h2 className="mt-1 text-2xl font-bold text-slate-900">Good to see you{u.name ? `, ${u.name}` : ""}</h2>
           <p className="page-lead">Update yesterday, see your profit, then do one small thing to grow it. About {totalMinutes + 1} minutes.</p>
         </div>
         <div className="flex gap-3">
@@ -506,6 +520,8 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
         <p className="mt-1 text-sm text-slate-600">Tell Helix where you are stuck and it points you to the next step.</p>
         <div className="mt-3"><AiBox action={aiHelp} label="Help me" question placeholder="e.g. I don't know where to start with ads" /></div>
       </section>
+      </div>
+      </MoreInfo>
     </div>
   );
 }

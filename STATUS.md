@@ -959,3 +959,11 @@ Changelog: reports/helix/content-qa-27oct.md (box path /workspace/reports/helix/
 - Storage: ToolInput kind "scoreboard" (goal + manual periods, totals only). No schema change, no SQL.
 - Screenshot-only flag SCOREBOARD_PREVIEW_PAID=true (non-production, demo users only) shows the paid view.
 - Shopify history beyond 60 days isn't pulled (would need read_all_orders, not requested); use last-year entry.
+
+## Simple guided mode (branch helix-simple-guide-27oct, 27 Oct 2026)
+- Today is now 3 guided steps (Where do you stand? / Did you grow? / What's your plan today?), plus a "Your road to $100M" strip. Everything else is inside "Want to see more?".
+- Simple chart (Sales/Profit by Days/Weeks/Months). On Free only days are shown; weeks and months are locked, and that data is not sent to the browser.
+- New: PageGuide (what is this page + what next), TextAlert ("Overwhelming text alert!" summary with the full text in a collapsed dropdown), MoreInfo.
+- Learn and /learn: a gamified "Your Path" timeline (stages, badges, XP, streak, Next step). Locked lessons are teasers that link to the unlock page.
+- Mobile: "I'm lost" sits bottom-left and the coach bottom-right.
+- Tests: tests/simple-guide.test.ts.

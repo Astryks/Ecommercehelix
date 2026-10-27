@@ -10,3 +10,11 @@ export async function requireUser(next = "/dashboard") {
   const id = await ensureUser(s.user.id, s.user.email ?? "", s.user.name ?? "");
   return { id, email: s.user.email ?? "", name: s.user.name ?? "" };
 }
+
+/** Returns the signed-in user, or null for visitors (no redirect). */
+export async function optionalUser() {
+  const s = await auth();
+  if (!s?.user?.id) return null;
+  const id = await ensureUser(s.user.id, s.user.email ?? "", s.user.name ?? "");
+  return { id, email: s.user.email ?? "", name: s.user.name ?? "" };
+}

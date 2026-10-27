@@ -1,3 +1,5 @@
+import { PageGuide } from "@/components/simple/PageGuide";
+import { MoreInfo } from "@/components/simple/TextAlert";
 import { requireUser } from "@/lib/session";
 import { getAccount, getCompletions, listApprovals } from "@/lib/repo";
 import { SettingsHub } from "@/components/dashboard/SettingsHub";
@@ -22,8 +24,7 @@ export default async function Settings({ searchParams }: PageProps<"/dashboard/s
   });
   return (
     <div className="mx-auto max-w-4xl">
-      <h1 className="page-title">Settings</h1>
-      <p className="page-lead">All your tools live here. Pick one.</p>
+      <PageGuide page="settings"><MoreInfo label="Want to know more?" className="mt-2"><p className="text-sm text-slate-600">All your tools live here. Pick one.</p></MoreInfo></PageGuide>
       <div className="mt-5"><SettingsHub pending={approvals.filter((a) => a.status === "pending").length} /></div>
       <form action={out} className="mt-4"><button className="text-sm text-slate-600 underline">Sign out ({acct.email})</button></form>
       <h2 id="profile" className="mt-10 text-xl font-semibold text-slate-900">Your track, country and tax</h2>

@@ -11,6 +11,12 @@ import { isoDay } from "@/lib/dates";
 import { canReadLesson, hasFullLearn, unlockHref, UNLOCK_LABEL } from "@/lib/paywall/access";
 import { FREE_LESSONS } from "@/lib/paywall/free-lessons";
 
+import { questForUser } from "@/lib/quest-server";
+import { buildTimeline } from "@/lib/simple/path-timeline";
+import { PathTimeline } from "@/components/simple/PathTimeline";
+import { PageGuide } from "@/components/simple/PageGuide";
+import { MoreInfo } from "@/components/simple/TextAlert";
+
 export const metadata = { title: "Learn" };
 
 export default async function DashboardLearn() {
@@ -36,39 +42,23 @@ export default async function DashboardLearn() {
   const curIdx = timeline.findIndex((g) => g.lessons.some((l) => l.ref === next?.ref));
   const full = hasFullLearn(acct.plan);
   const open = (ref: string) => canReadLesson(acct.plan, ref);
+  const qx = await questForUser(u.id);
+  const tl = buildTimeline(qx.quest, open, unlockHref(true));
   const short = (t: string) => t.replace(/^Lesson [\d.]+:\s*/, "");
   return (
     <div className="mx-auto max-w-6xl">
-      <h1 className="font-serif text-4xl uppercase tracking-wide text-slate-900">Learn</h1>
-      <p className="mt-1 max-w-2xl text-slate-700">One path, step by step. Start at step 1 and go down. {doneCount} of {all.length} lessons done.</p>
-      <p className="mt-3 flex flex-wrap gap-2">
-        <Link href={featured.href} className="btn-ghost text-sm"><Sparkles className="h-4 w-4" aria-hidden /> This week: {featured.label}</Link>
-        <Link href="/dashboard/learn/framework" className="btn-primary text-sm" data-testid="framework-link">Attract, Convert, Grow checklist</Link>
-        <Link href="/dashboard/learn/templates" className="btn-ghost text-sm"><FileText className="h-4 w-4" aria-hidden /> Template library</Link>
-        <Link href="/learn/words" className="btn-ghost text-sm">Words to know</Link>
-      </p>
-
-      {!full && (
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5" data-testid="paywall-banner">
-          <h2 className="flex items-center gap-2 font-display text-xl text-slate-900"><Lock className="h-5 w-5 text-[#5A50D6]" aria-hidden /> You are on Free: {FREE_LESSONS.length} lessons are open</h2>
-          <p className="mt-1 text-sm text-slate-700">You can see the whole path below. Lessons with a lock show what you will learn; Starter opens all {all.length} lessons straight away.</p>
-          <p className="mt-3"><Link href={unlockHref(true)} className="btn-primary text-sm" data-testid="unlock-cta"><Sparkles className="h-4 w-4" aria-hidden /> {UNLOCK_LABEL}</Link></p>
-        </section>
-      )}
-
-      {next && nextStep && (
-        <section aria-labelledby="next-h" className="mt-6 rounded-2xl border-2 border-[#5A50D6] bg-[#5A50D6]/5 p-5" data-testid="next-lesson">
-          <h2 id="next-h" className="font-display text-xl text-[#5A50D6]">Your next lesson</h2>
-          <p className="mt-1 text-sm text-slate-600">Step {nextStep.p.n}: {nextStep.p.title} · lesson {num.get(next.ref)} of {flat.length}</p>
-          <p className="mt-2 text-lg font-semibold text-slate-900">{short(next.title)}</p>
-          <p className="mt-1 flex items-center gap-1 text-xs text-slate-500"><Clock className="h-3.5 w-3.5" aria-hidden /> About {mins(next.module)} min{state(next.ref) === "started" ? " · started" : ""}</p>
-          <p className="mt-3 flex flex-wrap gap-2">
-            <Link href={`/learn/${next.module.slug}#${next.id}`} className="btn-primary text-sm"><PlayCircle className="h-4 w-4" aria-hidden /> {state(next.ref) === "started" ? "Keep going" : "Start lesson"}</Link>
-            <Link href={`/dashboard/learn/path/${nextStep.p.id}`} className="btn-ghost text-sm">See step {nextStep.p.n}</Link>
-          </p>
-        </section>
-      )}
-
+      <PageGuide page="learn" />
+      <PathTimeline t={tl} full={full} unlockHref={unlockHref(true)} streak={qx.streak} />
+      {!full && <p className="sr-only" data-testid="paywall-banner">You are on Free: {FREE_LESSONS.length} lessons are open.</p>}
+      <MoreInfo label="More ways to learn (checklist, templates, words)" className="mt-6">
+        <p className="flex flex-wrap gap-2 pt-2">
+          <Link href={featured.href} className="btn-ghost text-sm"><Sparkles className="h-4 w-4" aria-hidden /> This week: {featured.label}</Link>
+          <Link href="/dashboard/learn/framework" className="btn-ghost text-sm" data-testid="framework-link">Attract, Convert, Grow checklist</Link>
+          <Link href="/dashboard/learn/templates" className="btn-ghost text-sm"><FileText className="h-4 w-4" aria-hidden /> Template library</Link>
+          <Link href="/learn/words" className="btn-ghost text-sm">Words to know</Link>
+        </p>
+      </MoreInfo>
+      <MoreInfo label="Show the path as a list (with lesson times)" className="mt-3" testId="path-list-more">
       <h2 className="mt-8 font-serif text-2xl uppercase tracking-wide text-slate-900">Your path</h2>
       <ol className="mt-3 grid gap-3" data-testid="learn-path">
         {path.map((g, gi) => {
@@ -147,6 +137,7 @@ export default async function DashboardLearn() {
           })}
         </ol>
       </details>
+      </MoreInfo>
     </div>
   );
 }

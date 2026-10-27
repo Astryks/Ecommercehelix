@@ -4,12 +4,26 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { listModules } from "@/lib/learn";
+import { optionalUser } from "@/lib/session";
+import { getAccount } from "@/lib/repo";
+import { questForUser, questLessons } from "@/lib/quest-server";
+import { buildQuest } from "@/lib/quest";
+import { buildTimeline } from "@/lib/simple/path-timeline";
+import { PathTimeline } from "@/components/simple/PathTimeline";
+import { MoreInfo } from "@/components/simple/TextAlert";
+import { GUIDES } from "@/lib/simple/page-guides";
+import { canReadLesson, hasFullLearn, unlockHref } from "@/lib/paywall/access";
 import { StageTrio } from "@/components/StageTrio";
 import { FOUNDATION_MODULES, STAGE_INFO, STAGE_ORDER, type StageId } from "@/lib/stages";
 
 export const metadata: Metadata = pageMeta({ title: "The Helix Playbook: E-commerce Lessons", description: "Step-by-step lessons on running a profitable online store: ads, conversion, email, profit and scaling, organised into Attract, Convert and Grow.", path: "/learn" });
 
-export default function Learn() {
+export default async function Learn() {
+  const u = await optionalUser();
+  const plan = u ? (await getAccount(u.id)).plan : "free";
+  const qx = u ? await questForUser(u.id) : { quest: buildQuest(questLessons(), () => false), streak: 0 };
+  const unlock = unlockHref(Boolean(u));
+  const tl = buildTimeline(qx.quest, (ref) => canReadLesson(plan, ref), unlock);
   const all = listModules();
   const foundations = all.filter((m) => FOUNDATION_MODULES.includes(m.number));
   // The course runs in order: foundations first, then Attract, Convert, Grow.
@@ -25,9 +39,11 @@ export default function Learn() {
       <main className="mx-auto w-full max-w-6xl px-5 pt-page pb-section">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Learn</p>
         <h1 className="mt-stack text-4xl text-slate-900 sm:text-5xl">The Helix <span className="grad-text">Playbook</span></h1>
-        <p className="mt-lead max-w-2xl text-slate-600">
+        <p className="mt-lead max-w-2xl text-lg text-slate-700" data-testid="page-guide">{GUIDES.courses.what}</p>
+        <div className="mt-6" data-testid="courses-timeline"><PathTimeline t={tl} full={hasFullLearn(plan)} signedIn={Boolean(u)} unlockHref={unlock} streak={u ? qx.streak : undefined} /></div>
+        <MoreInfo label="How the lessons work" className="mt-6"><p className="max-w-2xl pt-2 text-sm text-slate-600">
           {all.length} modules and {all.reduce((a, m) => a + m.lessons.filter((l) => l.title.startsWith("Lesson")).length, 0)} lessons ({all.reduce((a, m) => a + m.steps, 0)} steps) on running a profitable online store. Every lesson is a short &ldquo;why this matters&rdquo;, then one instruction at a time with the result you should see and simple tips. Press <strong>Done, next step</strong> or tick the checklist; Helix remembers. Hover any dotted word for a plain meaning. Start with the free lessons; every other lesson shows a short preview and unlocks in full with Starter.
-        </p>
+        </p></MoreInfo>
         <p className="mt-4">
           <Link href="/learn/words" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-cyan-800 hover:border-cyan-300">
             New to this? Start with the words to know (one line each)

@@ -1,3 +1,5 @@
+import { PageGuide } from "@/components/simple/PageGuide";
+import { MoreInfo } from "@/components/simple/TextAlert";
 import Link from "next/link";
 import { requireUser } from "@/lib/session";
 import { getDays, getProfitSetup, getSettings } from "@/lib/repo";
@@ -30,8 +32,7 @@ export default async function NumbersPage({ searchParams }: PageProps<"/dashboar
   return (
     <div className="mx-auto max-w-5xl space-y-5">
       <header>
-        <h1 className="page-title">Numbers</h1>
-        <p className="page-lead">Your sales each day, and what you kept after costs.{example ? " These are example numbers until you add your own." : ""}</p>
+        <PageGuide page="numbers"><MoreInfo label="Want to know more?" className="mt-2"><p className="text-sm text-slate-600">Your sales each day, and what you kept after costs.{example ? " These are example numbers until you add your own." : ""}</p></MoreInfo></PageGuide>
       </header>
       <section aria-label="Auto-fill" className="card flex flex-wrap items-center gap-2 p-4" data-testid="sync-bar">
         <span className="text-sm font-semibold text-slate-900">Fills in by itself:</span>

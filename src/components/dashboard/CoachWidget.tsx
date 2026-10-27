@@ -65,7 +65,7 @@ export function CoachWidget() {
   return (
     <>
       {!open && (
-        <button onClick={() => setOpen(true)} className="fixed bottom-36 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-[#5A50D6] px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-[#4a41c0] lg:bottom-20 lg:right-5" aria-label="Open Helix, your business coach">
+        <button onClick={() => setOpen(true)} className="fixed bottom-20 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-[#5A50D6] px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-[#4a41c0] lg:bottom-20 lg:right-5" aria-label="Open Helix, your business coach">
           <MessageCircle className="h-5 w-5" aria-hidden /> Coach
         </button>
       )}

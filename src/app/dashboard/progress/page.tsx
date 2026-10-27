@@ -1,3 +1,5 @@
+import { PageGuide } from "@/components/simple/PageGuide";
+import { MoreInfo } from "@/components/simple/TextAlert";
 import Link from "next/link";
 import { Flag, Flame, History, ListChecks, Trophy } from "lucide-react";
 import { requireUser } from "@/lib/session";
@@ -60,8 +62,7 @@ export default async function ProgressPage() {
 
   return (
     <div className="mx-auto max-w-5xl">
-      <h1 className="flex items-center gap-2 page-title"><History className="h-7 w-7 text-[#5A50D6]" aria-hidden /> Your progress</h1>
-      <p className="page-lead">Everything you have done in Helix: goals finished, tasks and lessons ticked, your streak and your profit over time. {paid ? "Your full history since you joined." : "Showing the last 30 days."}{h.joined && <> Member since {dayName(h.joined.slice(0, 10))}.</>}</p>
+      <PageGuide page="progress"><MoreInfo label="Want to know more?" className="mt-2"><p className="text-sm text-slate-600">Everything you have done in Helix: goals finished, tasks and lessons ticked, your streak and your profit over time. {paid ? "Your full history since you joined." : "Showing the last 30 days."}{h.joined && <> Member since {dayName(h.joined.slice(0, 10))}.</>}</p></MoreInfo></PageGuide>
 
       {!paid && <div className="mt-4"><UpgradePrompt need="starter" forKey="history" compact title="See your whole journey" body="Free shows the last 30 days. Starter keeps your full history: every goal with its date, every month's recap and your profit trend since you joined." /></div>}
 

@@ -1,3 +1,4 @@
+import { TextAlert } from "@/components/simple/TextAlert";
 import Link from "next/link";
 import { Flame, Lock, Map as MapIcon, Star, Trophy } from "lucide-react";
 import { ESTIMATE_NOTE, MILESTONES, FREE_LEVELS } from "@/lib/journey";
@@ -77,7 +78,8 @@ export function RoadSection({ views, level, source, progress, last30, xp, streak
                 {!v.open && <Lock className="mt-1 h-4 w-4 flex-none text-slate-400" aria-label="Starter" />}
               </summary>
               {v.open ? (
-                <div className="mt-3 grid gap-4 text-sm text-slate-800 lg:grid-cols-3">
+                <TextAlert seed={v.id} className="mt-3" summary={`at this level you watch 3 numbers: ${v.numbers.map((n) => n.label.toLowerCase()).join(", ")}.`}>
+                <div className="grid gap-4 text-sm text-slate-800 lg:grid-cols-3">
                   <div>
                     <h3 className="font-semibold text-slate-900">What changes at this level</h3>
                     <p className="mt-1 text-xs text-slate-500">{v.when}</p>
@@ -98,6 +100,7 @@ export function RoadSection({ views, level, source, progress, last30, xp, streak
                     <p className="mt-2 text-xs text-slate-500">{ESTIMATE_NOTE}{v.sources?.length ? <> Sources: {v.sources.map((s, i) => <span key={s.url}>{i ? "; " : ""}<a href={s.url} className="underline" target="_blank" rel="noreferrer">{s.label}</a></span>)}.</> : null}</p>
                   </div>
                 </div>
+                </TextAlert>
               ) : (
                 <div className="mt-3 text-sm text-slate-700" data-testid="road-teaser">
                   <p className="text-xs text-slate-500">{v.when}</p>

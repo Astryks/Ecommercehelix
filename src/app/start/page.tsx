@@ -1,3 +1,5 @@
+import { GUIDES } from "@/lib/simple/page-guides";
+import { TextAlert } from "@/components/simple/TextAlert";
 import { LegalLinks } from "@/components/legal/LegalLinks";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -41,7 +43,7 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
           {step === 1 ? (
             <>
               <h1 className="mt-4 text-3xl font-bold tracking-tight">Let&apos;s build your plan</h1>
-              <p className="mt-2 text-slate-600">About 2 minutes. Then Helix checks your store and shows you what to do first.</p>
+              <p className="mt-2 text-slate-700" data-testid="page-guide">{GUIDES.onboarding.what} It takes about 2 minutes.</p>
               <form action={saveStoreStep} className="card mt-6 space-y-8 p-6 sm:p-8">
                 <div>
                   <label htmlFor="url" className="text-sm font-semibold text-slate-900">Your store link</label>
@@ -55,7 +57,7 @@ export default async function Start({ searchParams }: PageProps<"/start">) {
           ) : (
             <>
               <h1 className="mt-4 text-3xl font-bold tracking-tight">10 quick questions</h1>
-              <p className="mt-2 text-slate-600">Tap the closest answer. &quot;Not sure&quot; is always fine. We use this to find the one thing holding you back.</p>
+              <TextAlert summary="tap the answer that feels closest. There are no wrong answers." className="mt-3"><p className="text-sm text-slate-700">Tap the closest answer. &quot;Not sure&quot; is always fine. We use this to find the one thing holding you back, so your plan starts with what helps most.</p></TextAlert>
               <form action={saveQuestions} className="card mt-6 space-y-7 p-6 sm:p-8">
                 {diag && <input type="hidden" name="restart" value={sp.restart === "1" ? "1" : "0"} />}
                 {QUESTIONS.map((q, n) => (

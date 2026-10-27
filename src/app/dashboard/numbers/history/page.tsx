@@ -1,3 +1,5 @@
+import { PageGuide } from "@/components/simple/PageGuide";
+import { MoreInfo, TextAlert } from "@/components/simple/TextAlert";
 import Link from "next/link";
 import { requireUser } from "@/lib/session";
 import { loadScoreboard } from "@/lib/scoreboard/server";
@@ -17,8 +19,15 @@ export default async function HistoryPage() {
   return (
     <div className="mx-auto max-w-5xl space-y-5">
       <header>
-        <h1 className="page-title">History</h1>
-        <p className="page-lead">Week by week, month by month and year by year: sales, costs, profit, margin, orders, ad spend and ROAS.{s.example ? " These are example numbers (demo) until you add your own." : ""}</p>
+        <PageGuide page="history"><MoreInfo label="Want to know more?" className="mt-2"><p className="text-sm text-slate-600">Week by week, month by month and year by year: sales, costs, profit, margin, orders, ad spend and ROAS.{s.example ? " These are example numbers (demo) until you add your own." : ""}</p></MoreInfo></PageGuide>
+        <TextAlert summary="ROAS, CAC and MER are just three ways of asking: is my ad money coming back to me?" className="mb-6">
+          <ul className="list-disc space-y-1 pl-5 text-sm text-slate-700">
+            <li><strong>ROAS</strong> (return on ad spend): sales from ads divided by what the ads cost. 3 means every $1 on ads brought back $3 of sales.</li>
+            <li><strong>CAC</strong> (customer acquisition cost): what you spend to get one new customer.</li>
+            <li><strong>MER</strong> (marketing efficiency ratio): all your sales divided by all your ad spend, from every channel together.</li>
+            <li><strong>Margin</strong>: the part of each sale you keep after costs, shown as a percent.</li>
+          </ul>
+        </TextAlert>
       </header>
 
       <section className="card p-5" data-testid="ytd">
