@@ -94,3 +94,15 @@ describe("Road to $100M: deep content and spend model", () => {
     for (const bad of ["skool", "$100m framework", "100m framework"]) expect(text).not.toContain(bad);
   });
 });
+
+import { DEEP as DEEP_G, GIFTING, DISCLOSE } from "@/lib/journey-content";
+describe("influencer gifting guidance", () => {
+  it("appears in the ecosystem for levels 1-3 with a disclosure reminder", () => {
+    for (const l of [1, 2, 3]) {
+      expect(DEEP_G[l].ecosystem).toContain(GIFTING);
+      expect(DEEP_G[l].ecosystem.join(" ")).toMatch(/#ad|labelled/);
+    }
+    expect(GIFTING).toMatch(/free/);
+    expect(DISCLOSE).toMatch(/#ad/);
+  });
+});

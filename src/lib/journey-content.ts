@@ -200,6 +200,12 @@ export type Deep = {
   sources: Src[];
 };
 
+/** Gifting guidance for the early levels (first sale, $1k, $10k a month). */
+export const GIFTING =
+  "Gift your product: message the creators you like on Instagram (or TikTok, YouTube, wherever they are) and offer to send it free. Think of it as an investment to win your first customers, or at least get the word out. You can't build a big brand on your own. There's a whole ecosystem of people who help each other grow, so be open to everything.";
+export const DISCLOSE =
+  "Reminder: gifted or paid posts should be labelled, for example #ad or the paid partnership tag (general info, not legal advice).";
+
 export const DEEP: Record<number, Deep> = {
   1: {
     takes: [
@@ -220,6 +226,8 @@ export const DEEP: Record<number, Deep> = {
     ecosystem: [
       "Content: post on Instagram (and short video on Reels or TikTok) 3 to 5 times a week: how it's made, the product in use, you explaining why it exists.",
       "Creators: gift product to 5 to 10 small creators whose followers match your buyer. No payment, no pressure to post.",
+      GIFTING,
+      DISCLOSE,
       "Suppliers: ask for samples, the minimum order and the lead time in writing. A good supplier is your first partner.",
     ],
     adWall: "Not yet. At this stage the problem is usually the offer, not the ads.",
@@ -245,6 +253,8 @@ export const DEEP: Record<number, Deep> = {
     ecosystem: [
       "Content: daily stories, 3 to 5 posts a week. Reshare every customer photo (with permission).",
       "Creators: keep gifting. Give anyone who posts a personal discount code so you can track sales.",
+      GIFTING,
+      DISCLOSE,
       "Community: reply to every comment and DM. Ask buyers what nearly stopped them buying.",
     ],
     adWall: "Rare at this level. If an ad stops working, try a new hook before raising budget.",
@@ -273,6 +283,7 @@ export const DEEP: Record<number, Deep> = {
       "Content: post daily (one short video a day is a strong habit), batch-filmed once a week.",
       "Creators: pay a few UGC (user-generated content) creators for videos you can use as ads. Prices vary widely; a Helix estimate for small creators is $100 to $500 per video.",
       "Affiliates: give your best customers and creators a code and a commission on each sale (commonly 10% to 20% of sales, an estimate). Track every code.",
+      GIFTING,
       "Disclosure: paid or gifted posts must be clearly labelled as ads. See the FTC guide and your local rules.",
     ],
     adWall: "The first wall often shows here: one winning ad fades after a few weeks. A steady flow of new creative is the fix.",
