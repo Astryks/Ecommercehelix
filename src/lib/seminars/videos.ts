@@ -4,6 +4,7 @@ export type SeminarVideo = { file: string; durationSec: number };
 
 export const seminarVideos: Record<string, SeminarVideo> = {
   "emails-that-close": { file: "Helix-Seminar-01-emails-that-close.mp4", durationSec: 1182.4 },
+  "print-files-deal-brand": { file: "Helix-Seminar-02-print-files-deal-brand.mp4", durationSec: 1165.1 },
 };
 
 export function getSeminarVideo(id: string): SeminarVideo | undefined {
