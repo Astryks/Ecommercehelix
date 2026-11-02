@@ -829,3 +829,18 @@ model KlaviyoDay {
 
   @@unique([userId, date])
 }
+
+// Daily Seminars: one row per paid $1 seminar (Stripe Checkout, one-off payment). Additive; see docs/sql/2026-11-02-seminars.sql.
+model SeminarPurchase {
+  id              String   @id @default(cuid())
+  userId          String?
+  email           String?
+  seminarId       String
+  stripeSessionId String   @unique
+  amountCents     Int
+  livemode        Boolean  @default(false)
+  createdAt       DateTime @default(now())
+
+  @@index([userId])
+  @@index([email])
+}

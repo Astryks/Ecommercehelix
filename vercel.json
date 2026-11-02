@@ -148,6 +148,14 @@
     {
       "path": "/api/cron/community-digest",
       "schedule": "0 22 * * *"
+    },
+    {
+      "path": "/api/cron/seminar-switch?tz=aedt",
+      "schedule": "1 13 * * *"
+    },
+    {
+      "path": "/api/cron/seminar-switch?tz=aest",
+      "schedule": "1 14 * * *"
     }
   ]
 }

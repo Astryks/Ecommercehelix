@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/terms", 0.3),
     page("/data-deletion", 0.3),
     page("/learn", 0.7),
+    page("/seminars", 0.6),
     page("/learn/words", 0.5),
     page("/learn/goals", 0.5),
     ...listModules().map((m) => page(`/learn/${m.slug}`, 0.5)),

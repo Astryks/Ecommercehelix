@@ -959,3 +959,10 @@ Changelog: reports/helix/content-qa-27oct.md (box path /workspace/reports/helix/
 - Storage: ToolInput kind "scoreboard" (goal + manual periods, totals only). No schema change, no SQL.
 - Screenshot-only flag SCOREBOARD_PREVIEW_PAID=true (non-production, demo users only) shows the paid view.
 - Shopify history beyond 60 days isn't pulled (would need read_all_orders, not requested); use last-year entry.
+
+## Daily Seminars (branch helix-daily-seminars-02nov, 2 Nov 2026)
+- 46 episodes (30 core + 16 event/remix), 19 min each, all 40 course chapters covered: src/lib/seminars/curriculum.ts
+- Rotation: src/lib/seminars/rotation.ts (epoch 2026-11-02 Sydney; first pass by stage/order; later cycles seeded shuffle, no repeats within 14 days across cycle boundary; calendar events override every 4th day from 21 days before). Tests: tests/seminars.test.ts, tests/seminar-pass.test.ts.
+- $1 purchase: /api/seminars/checkout|confirm|webhook, Stripe TEST keys only (live refused unless SEMINARS_LIVE=1). Cron /api/cron/seminar-switch (00:01 Sydney, AEDT+AEST).
+- SQL NOT applied: docs/sql/2026-11-02-seminars.sql. Videos NOT produced: docs/daily-seminars-production.md.
+- Not merged, not on production.

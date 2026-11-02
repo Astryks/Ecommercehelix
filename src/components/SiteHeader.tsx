@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Logo } from "./Logo";
 
-const LINKS: [string, string][] = [["/#how", "How it works"], ["/features", "Features"], ["/guides", "Guides"], ["/#pricing", "Pricing"], ["/learn", "Learn"], ["/about", "About"], ["/contact", "Contact"]];
+const LINKS: [string, string][] = [["/#how", "How it works"], ["/features", "Features"], ["/guides", "Guides"], ["/#pricing", "Pricing"], ["/learn", "Learn"], ["/seminars", "Daily Seminar"], ["/about", "About"], ["/contact", "Contact"]];
 
 export function SiteHeader({ dark = false }: { dark?: boolean }) {
   const link = dark ? "text-slate-300 hover:text-white" : "text-slate-600 hover:text-slate-900";
