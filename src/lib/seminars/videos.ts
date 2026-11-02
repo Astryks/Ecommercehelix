@@ -8,6 +8,7 @@ export const seminarVideos: Record<string, SeminarVideo> = {
   "makers-fabric-sizes": { file: "Helix-Seminar-03-makers-fabric-sizes.mp4", durationSec: 1180.9 },
   "store-and-first-sale": { file: "Helix-Seminar-04-store-and-first-sale.mp4", durationSec: 1187.2 },
   "true-cost-per-unit": { file: "Helix-Seminar-05-true-cost-per-unit.mp4", durationSec: 1225.9 },
+  "first-90-days": { file: "Helix-Seminar-06-first-90-days.mp4", durationSec: 1146.9 },
 };
 
 export function getSeminarVideo(id: string): SeminarVideo | undefined {
