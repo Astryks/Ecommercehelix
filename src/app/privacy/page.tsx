@@ -19,6 +19,7 @@ export default function Privacy() {
           <li><strong>Meta data, only if you connect Meta.</strong> See below.</li>
           <li><strong>Shopify data, only if you connect Shopify.</strong> See below.</li>
           <li><strong>Google Ads data, only if you connect Google Ads.</strong> See below.</li>
+          <li><strong>Klaviyo email totals, only if you connect Klaviyo.</strong> See below.</li>
           <li><strong>What you ask the AI helper.</strong> If you use an AI feature, the question you type or the data it summarises, and the answer. See below.</li>
           <li><strong>Messages you send us.</strong> If you use the contact form: your name, email address, topic and message. If you are signed in, also your account ID and plan.</li>
           <li><strong>Members group.</strong> On a paid plan, we keep a list of members to let into, or remove from, our private Facebook group. This holds your name, email address and plan status.</li>
@@ -52,8 +53,14 @@ export default function Privacy() {
         <p><strong>Google API Services User Data Policy.</strong> Helix&apos;s use and transfer of information received from Google APIs follows the <a className={a} href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We use it only to sign you in and to show you your own ad results and build drafts you asked for, never for advertising, never sell it, never use it to train AI models, and do not let people read it except with your permission, for security, or where the law requires.</p>
       </Sec>
 
+      <Sec title="Klaviyo data">
+        <p>If you choose to connect Klaviyo, you paste a private API key that you create in Klaviyo with read-only access to Accounts, Campaigns, Flows, Lists and Metrics (everything else stays at &quot;No access&quot;). Once a day, Helix uses it to read totals only: your Klaviyo account name, the names and on/off status of your flows, the size of your lists, and email sends, opens, clicks, orders and revenue from flows and campaigns. Helix never reads or stores subscriber profiles, email addresses or any other customer details.</p>
+        <p>Helix stores your account name, the last 4 characters of the key (so you can see which key is connected), daily email totals and a 30-day summary. These totals feed your email results, &quot;What to fix&quot; and the Helix coach. The key is encrypted (AES-256-GCM) before it is stored. Disconnect any time under Connections: Helix deletes the stored key and every Klaviyo total straight away. You can also delete the key in Klaviyo; Helix then stops syncing. Deleting your Helix account deletes all Klaviyo data too.</p>
+      </Sec>
+
       <Sec title="AI features">
         <p>Some features can use AI to write short text: a plain-English summary of your store check, ad copy drafts and answers to &quot;I&apos;m lost&quot; questions. They only run when you press the button. Helix sends the request through the Vercel AI Gateway to the model provider (currently Google&apos;s Gemini models). We send only what the feature needs, such as your store link, store check findings, product name, plan and the question you typed. We do not send your email, name or tokens. Answers are cached so the same request is not sent twice, and each call is logged (feature, size and cost) to enforce monthly limits. We do not use your data to train AI models. Helix turns on the AI Gateway&apos;s &quot;disallow prompt training&quot; option, so requests only go to providers that do not use prompts or answers to train models; if none is available the request is not sent (<a className={a} href="https://vercel.com/docs/ai-gateway/security-and-compliance/disallow-prompt-training">Vercel</a>). For Gemini the gateway uses Google Vertex AI or the Gemini API on Google&apos;s paid terms, under which Google does not use prompts or answers to improve its products but keeps them for a limited time to detect abuse and for legal reasons (<a className={a} href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>). The model provider handles each request under its own terms with Vercel. If AI is off or a limit is reached, Helix shows its standard advice instead.</p>
+        <p><strong>Helix coach.</strong> The coach in your dashboard answers the questions you type. Each answer uses the lessons that match your question, today&apos;s earlier messages, short notes the coach keeps about your business, and, for questions about your store, totals only (such as sales, orders, ad spend, margin and store check results). It never sends customer names, emails, addresses or order rows, and we remove emails, phone numbers, card numbers and street addresses from what you type before it is sent or saved. The coach runs on Anthropic&apos;s Claude models through the Vercel AI Gateway, with Google&apos;s Gemini as a backup if Claude is unavailable, with the same &quot;disallow prompt training&quot; option. Anthropic&apos;s commercial terms do not allow it to train models on these requests (<a className={a} href="https://www.anthropic.com/legal/commercial-terms">Anthropic commercial terms</a>). The chat window starts fresh each day; earlier messages stay in your account until you delete it. You can see, edit or delete the coach&apos;s notes about your business in the coach window at any time, and deleting your account deletes them. Each message is logged with the redacted question and answer, the model, size and cost, to enforce plan limits and a monthly spending cap and to check answer quality.</p>
       </Sec>
 
       <Sec title="Why we use it (and our legal bases)">
@@ -92,6 +99,8 @@ export default function Privacy() {
               <tr><td className="py-2 pr-4 font-semibold">Meta</td><td className="py-2 pr-4">Only if you connect it: reading your ad results, creating paused drafts</td><td className="py-2">United States and other Meta locations</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Shopify</td><td className="py-2 pr-4">Only if you connect it: reading your orders, products and stock</td><td className="py-2">Canada, United States and other Shopify locations</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Google</td><td className="py-2 pr-4">Only if you use Google sign-in or connect Google Ads (reading ad results, creating paused campaigns). Also the AI model provider behind the AI features</td><td className="py-2">United States and other Google locations</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Klaviyo</td><td className="py-2 pr-4">Only if you connect it: reading your email totals (never subscriber profiles)</td><td className="py-2">United States</td></tr>
+              <tr><td className="py-2 pr-4 font-semibold">Anthropic</td><td className="py-2 pr-4">Only when you use the Helix coach: the AI model provider behind coach answers</td><td className="py-2">United States</td></tr>
               <tr><td className="py-2 pr-4 font-semibold">Vercel AI Gateway</td><td className="py-2 pr-4">Only when you use an AI feature: routes the request to the AI model provider</td><td className="py-2">United States and global edge network</td></tr>
             </tbody>
           </table>
@@ -107,6 +116,7 @@ export default function Privacy() {
           <li><strong>Account data</strong>: while your account is open. When you delete your account, it is deleted from our database straight away.</li>
           <li><strong>Meta data</strong>: until you disconnect Meta or delete your account. The token expires by itself after about 60 days.</li>
           <li><strong>Shopify and Google Ads data</strong>: until you disconnect, uninstall or delete your account.</li>
+          <li><strong>Klaviyo key and email totals</strong>: until you disconnect Klaviyo or delete your account.</li>
           <li><strong>AI answers and usage logs</strong>: until you delete your account.</li>
           <li><strong>Wins and store review requests</strong>: until you delete your account or ask us to remove them. Copies of review emails stay in our support inbox for up to 2 years.</li>
           <li><strong>Billing records</strong>: Stripe keeps its own payment records for as long as the law requires.</li>
@@ -115,7 +125,7 @@ export default function Privacy() {
       </Sec>
 
       <Sec title="Keeping it safe">
-        <p>All traffic uses HTTPS. Meta, Shopify and Google tokens are encrypted. No system is perfectly secure; if a data breach is likely to cause you serious harm, we will tell you and the OAIC as the Notifiable Data Breaches scheme requires (and EEA/UK regulators where the GDPR requires).</p>
+        <p>All traffic uses HTTPS. Meta, Shopify and Google tokens and Klaviyo keys are encrypted. No system is perfectly secure; if a data breach is likely to cause you serious harm, we will tell you and the OAIC as the Notifiable Data Breaches scheme requires (and EEA/UK regulators where the GDPR requires).</p>
       </Sec>
 
       <Sec title="Your rights">
