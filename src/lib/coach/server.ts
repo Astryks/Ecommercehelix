@@ -97,7 +97,9 @@ async function llmCall(userId: string, { model, system, prompt, maxOutputTokens 
         maxOutputTokens,
         temperature: 0.3,
         abortSignal: AbortSignal.timeout(45_000),
-        providerOptions: { anthropic: { thinking: { type: "disabled" } }, gateway: { user: userId, tags: ["feature:coach"], disallowPromptTraining: true } },
+        // Gemini 3.x (fallback) thinks by default and spent ~90% of a 700-token budget on reasoning in a 9 Nov 2026 test, cutting answers short.
+        // "low" removed the reasoning tokens (MINIMAL is not supported by gemini-3.8-flash).
+        providerOptions: { anthropic: { thinking: { type: "disabled" } }, google: { thinkingConfig: { thinkingLevel: "low" } }, gateway: { user: userId, tags: ["feature:coach"], disallowPromptTraining: true } },
       });
   // Empty text (e.g. output budget spent elsewhere) counts as a failure so the fallback model answers.
   if (!r.text.trim()) throw new Error(`empty answer from ${model} (${r.finishReason})`);
