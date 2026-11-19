@@ -110,6 +110,15 @@ export type DecisionContext = {
   autoPausedToday: number;
   /** Days of stock left on the campaign's hero product, if known. */
   stockDaysLeft: number | null;
+  /**
+   * Per-campaign stock, when the campaign can be matched to a product
+   * (finishing step): campaign id -> days of stock left on that
+   * campaign's product, or null when the campaign's SKU is unknown.
+   * When present for a campaign it overrides stockDaysLeft for it.
+   */
+  stockDaysByCampaign?: Map<string, number | null>;
+  /** Matched product label per campaign id, for the block message. */
+  stockLabelByCampaign?: Map<string, string>;
   /** Last successful ad pull, ISO timestamp. Null = never synced. */
   lastSyncAt: string | null;
   /** "now", ISO timestamp — passed in so tests are deterministic. */
@@ -119,6 +128,35 @@ export type DecisionContext = {
 };
 
 const money = (n: number) => `$${Math.round(n).toLocaleString("en-AU")}`;
+
+/**
+ * Match a campaign to a stocked product, by SKU or product name inside the
+ * campaign name. Normalised (lowercase, non-alphanumerics stripped); the
+ * longest match wins so "Linen Shirt" beats a short SKU fragment. Returns
+ * null when nothing matches — the campaign's SKU is genuinely unknown and
+ * the stock block stays unknown (null), never assumed.
+ * Pure function, so the campaigns page and the morning brief share it.
+ */
+export function matchCampaignStock(
+  campaignName: string,
+  rows: { sku: string; name: string; daysLeft: number | null }[],
+): { sku: string; name: string; daysLeft: number | null } | null {
+  const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const hay = norm(campaignName);
+  if (!hay) return null;
+  let best: { sku: string; name: string; daysLeft: number | null } | null = null;
+  let bestLen = 0;
+  for (const r of rows) {
+    for (const needle of [r.sku, r.name]) {
+      const n = norm(needle);
+      if (n.length >= 3 && hay.includes(n) && n.length > bestLen) {
+        best = r;
+        bestLen = n.length;
+      }
+    }
+  }
+  return best;
+}
 const isStale = (lastSyncAt: string | null, now: string) =>
   !lastSyncAt || Date.parse(now) - Date.parse(lastSyncAt) > 24 * 3600 * 1000;
 
@@ -200,7 +238,11 @@ export function evaluateCampaign(c: Campaign, t: Targets, ctx: DecisionContext):
 
   if (rec.rec === "Scale") {
     const newBudget = Math.round(c.budget * (1 + s.maxScalePct / 100));
-    const stockBlocked = ctx.stockDaysLeft !== null && ctx.stockDaysLeft < SCALE_MIN_STOCK_DAYS;
+    // Per-campaign stock when the campaign matches a product; otherwise
+    // the hero-product figure passed in ctx.stockDaysLeft (null = unknown).
+    const stockForCampaign = ctx.stockDaysByCampaign?.has(c.id) ? ctx.stockDaysByCampaign.get(c.id) ?? null : ctx.stockDaysLeft;
+    const stockLabel = ctx.stockLabelByCampaign?.get(c.id);
+    const stockBlocked = stockForCampaign !== null && stockForCampaign < SCALE_MIN_STOCK_DAYS;
     const capBlocked =
       s.mode === "autonomous" && (s.dailySpendCap <= 0 || ctx.spendToday + (newBudget - c.budget) > s.dailySpendCap);
     const blockedBy = stockBlocked ? "stock-low" : capBlocked ? "daily-cap" : null;
@@ -216,7 +258,7 @@ export function evaluateCampaign(c: Campaign, t: Targets, ctx: DecisionContext):
         `Scale ${c.name} ${money(c.budget)} → ${money(newBudget)}/day`,
         `Proposed budget: ${money(c.budget)} → ${money(newBudget)}/day (+${s.maxScalePct}%). CPA ${m.cpa === null ? "—" : money(m.cpa)} vs break-even ${money(ctx.breakEvenCpa)}; ROAS ${m.roas.toFixed(2)}x.\n\n` +
           (stockBlocked
-            ? `Blocked: the hero product has ${ctx.stockDaysLeft} days of stock left (under ${SCALE_MIN_STOCK_DAYS}). Reorder first — scaling an ad for a product about to sell out wastes the spend.`
+            ? `Blocked: ${stockLabel ? `${stockLabel} has` : "the hero product has"} ${stockForCampaign} days of stock left (under ${SCALE_MIN_STOCK_DAYS}). Reorder first — scaling an ad for a product about to sell out wastes the spend.`
             : capBlocked
               ? `Blocked: this step would take today's spend over your daily cap of ${money(s.dailySpendCap)}. Raise the cap or wait until tomorrow.`
               : s.mode === "autonomous"

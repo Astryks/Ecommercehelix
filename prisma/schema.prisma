@@ -829,6 +829,15 @@ model CoachTask {
 }
 
 // TikTok Ads (additive, behind TIKTOK_ADS=1). Long-lived Marketing API token, encrypted. Daily spend sync only.
+// TikTok campaign rows (finishing step): last-30-day campaign totals from
+// the AUCTION_CAMPAIGN report. Stored as JSON like GoogleAdsSnapshot.
+model TikTokSnapshot {
+  userId   String   @id
+  data     String
+  syncedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
 model TikTokConnection {
   userId        String    @id
   advertiserId  String?

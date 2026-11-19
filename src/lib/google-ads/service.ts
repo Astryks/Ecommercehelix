@@ -5,7 +5,7 @@ import { setChannelDays, getDays, getProductName, getProducts, getSettings, setG
 import { getShopify } from "../shopify/service";
 import { targetsFrom } from "../targets";
 import { logAudit } from "../meta/store";
-import { cleanPropertyId, ga4On, ga4Sessions, GA4_SCOPE, assertAllPaused, assertPaused, cleanCustomerId, draftAdInput, pausedAdGroupOps, GOOGLE_ADS_BASE, googleAdsMode, pausedCampaignOps, summarise, type GaRow, type GaSnapshot } from "./config";
+import { cleanPropertyId, ga4On, ga4Sessions, GA4_SCOPE, assertAllPaused, assertPaused, cleanCustomerId, draftAdInput, pausedAdGroupOps, GOOGLE_ADS_BASE, googleAdsMode, pausedCampaignOps, summarise, summariseSearchTerms, type GaRow, type GaSearchTermRow, type GaSnapshot } from "./config";
 
 type Actor = "user" | "cron";
 const aad = (userId: string) => `google-ads:${userId}`;
@@ -131,6 +131,23 @@ export async function syncGoogleAds(userId: string, actor: Actor = "user"): Prom
       pageToken = r.nextPageToken;
     }
     const snap = summarise(rows, conn.currency);
+    // Search terms (finishing step): best-effort second query — a failed
+    // pull leaves searchTermsSynced false and the rule stays suppressed.
+    try {
+      const termRows: GaSearchTermRow[] = [];
+      let termPage: string | undefined;
+      for (let i = 0; i < 5; i++) {
+        const r = await ads<{ results?: GaSearchTermRow[]; nextPageToken?: string }>(userId, actor, token, "POST", `customers/${conn.customerId}/googleAds:search`, { query: "SELECT search_term_view.search_term, metrics.cost_micros, metrics.conversions FROM search_term_view WHERE segments.date DURING LAST_30_DAYS", ...(termPage ? { pageToken: termPage } : {}) }, conn.loginCustomerId);
+        termRows.push(...(r.results ?? []));
+        if (!r.nextPageToken) break;
+        termPage = r.nextPageToken;
+      }
+      snap.searchTerms = summariseSearchTerms(termRows);
+      snap.searchTermsSynced = true;
+    } catch {
+      snap.searchTerms = [];
+      snap.searchTermsSynced = false;
+    }
     await setGoogleSpend(userId, snap.daily);
     if (!hasDb) {
       const m = mem.get(userId);

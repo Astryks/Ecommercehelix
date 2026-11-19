@@ -30,7 +30,8 @@ export const cleanCustomerId = (s: string) => s.replace(/[^0-9]/g, "");
 
 export type GaRow = { campaign: { id: string; name: string; status: string }; segments: { date: string }; metrics: { costMicros?: string; conversions?: number; conversionsValue?: number; clicks?: string; impressions?: string } };
 export type GaCampaign = { id: string; name: string; status: string; spend: number; conversions: number; value: number; clicks: number; impressions: number; roas: number | null };
-export type GaSnapshot = { currency: string | null; from: string; to: string; campaigns: GaCampaign[]; daily: { date: string; spend: number; revenue: number }[]; totals: { spend: number; value: number; conversions: number; roas: number | null } };
+export type GaSearchTerm = { term: string; spend: number; conversions: number };
+export type GaSnapshot = { currency: string | null; from: string; to: string; campaigns: GaCampaign[]; daily: { date: string; spend: number; revenue: number }[]; totals: { spend: number; value: number; conversions: number; roas: number | null }; searchTerms?: GaSearchTerm[]; searchTermsSynced?: boolean };
 
 const r2 = (n: number) => Math.round(n * 100) / 100;
 
@@ -57,6 +58,22 @@ export function summarise(rows: GaRow[], currency: string | null): GaSnapshot {
   const daily = [...days.values()].map((d) => ({ date: d.date, spend: r2(d.spend), revenue: r2(d.revenue) })).sort((a, b) => a.date.localeCompare(b.date));
   const spend = campaigns.reduce((a, c) => a + c.spend, 0), value = campaigns.reduce((a, c) => a + c.value, 0);
   return { currency, from: daily[0]?.date ?? "", to: daily.at(-1)?.date ?? "", campaigns, daily, totals: { spend: r2(spend), value: r2(value), conversions: r2(campaigns.reduce((a, c) => a + c.conversions, 0)), roas: spend > 0 ? r2(value / spend) : null } };
+}
+
+export type GaSearchTermRow = { searchTermView: { searchTerm: string }; metrics: { costMicros?: string; conversions?: number } };
+
+/** Rows from a GAQL search_term_view report into wasted-spend terms. Pure. */
+export function summariseSearchTerms(rows: GaSearchTermRow[]): GaSearchTerm[] {
+  const m = new Map<string, GaSearchTerm>();
+  for (const r of rows) {
+    const term = (r.searchTermView?.searchTerm ?? "").trim();
+    if (!term) continue;
+    const t = m.get(term) ?? { term, spend: 0, conversions: 0 };
+    t.spend += Number(r.metrics.costMicros ?? 0) / 1e6;
+    t.conversions += Number(r.metrics.conversions ?? 0);
+    m.set(term, t);
+  }
+  return [...m.values()].map((t) => ({ ...t, spend: r2(t.spend) })).sort((a, b) => b.spend - a.spend);
 }
 
 /**

@@ -2,14 +2,16 @@ import Link from "next/link";
 import { BookOpen, FileText, RefreshCw } from "lucide-react";
 import { EXAMPLE_CAMPAIGNS, metrics, recommend, type Campaign, type Recommendation } from "@/lib/campaigns";
 import { requireUser } from "@/lib/session";
-import { getDays, getSettings } from "@/lib/repo";
+import { getDays, getSettings, getStock, getSuppliers } from "@/lib/repo";
+import { stockRows } from "@/lib/stock";
 import { targetsFrom } from "@/lib/targets";
 import { getConnection, getSnapshot } from "@/lib/meta/store";
 import { getGoogleSnapshot } from "@/lib/google-ads/service";
+import { getTikTokSnapshot } from "@/lib/tiktok/service";
 import { inferLayer, inferStage } from "@/lib/meta/insights";
 import { isDemoUserId } from "@/lib/demo-auth";
 import { getAgentSettings } from "@/lib/agent/settings";
-import { evaluateCampaigns } from "@/lib/agent/autonomy";
+import { evaluateCampaigns, matchCampaignStock } from "@/lib/agent/autonomy";
 import { proposeAdDecision } from "../actions";
 
 /** Google snapshot campaigns (last 30 days) into tracker rows. No hook rate or frequency: Google does not report them, so they show as n/a. */
@@ -20,6 +22,17 @@ function googleRows(snap: Awaited<ReturnType<typeof getGoogleSnapshot>>): Campai
     objective: "Sales", layer: inferLayer(c.name), budget: 0, spend: c.spend, purchases: c.conversions, revenue: c.value,
     impressions: c.impressions, clicks: c.clicks, threeSecViews: 0, frequency: 0, daysSinceEdit: 30,
     status: c.status === "ENABLED" ? "Active" as const : "Paused" as const, testStage: inferStage(c.name),
+  }));
+}
+
+/** TikTok snapshot campaigns (last 30 days) into tracker rows. */
+function tiktokRows(snap: Awaited<ReturnType<typeof getTikTokSnapshot>>): Campaign[] {
+  if (!snap) return [];
+  return snap.campaigns.map((c) => ({
+    id: `tiktok-${c.id}`, externalId: c.id, source: "live" as const, channel: "TikTok" as const, name: c.name,
+    objective: "Sales", layer: inferLayer(c.name), budget: 0, spend: c.spend, purchases: c.conversions, revenue: 0,
+    impressions: c.impressions, clicks: c.clicks, threeSecViews: 0, frequency: 0, daysSinceEdit: 30,
+    status: "Active" as const, testStage: inferStage(c.name),
   }));
 }
 
@@ -39,22 +52,35 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
   const channel = typeof sp.channel === "string" ? sp.channel : "All";
   const u = await requireUser("/dashboard/campaigns");
   const demo = isDemoUserId(u.id);
-  const [days, settings, snap, conn, gaSnap, agent] = await Promise.all([getDays(u.id), getSettings(u.id), getSnapshot(u.id), getConnection(u.id), getGoogleSnapshot(u.id).catch(() => null), getAgentSettings(u.id)]);
+  const [days, settings, snap, conn, gaSnap, ttSnap, agent, stock, suppliers] = await Promise.all([getDays(u.id), getSettings(u.id), getSnapshot(u.id), getConnection(u.id), getGoogleSnapshot(u.id).catch(() => null), getTikTokSnapshot(u.id).catch(() => null), getAgentSettings(u.id), getStock(u.id), getSuppliers(u.id)]);
   const t = targetsFrom(days, settings);
-  const live = Boolean(snap) || googleRows(gaSnap).length > 0;
+  const live = Boolean(snap) || googleRows(gaSnap).length > 0 || tiktokRows(ttSnap).length > 0;
   // Live rows come from connected accounts when synced. Example rows exist for demo users only;
   // a real user with nothing connected sees "Not connected yet" instead of made-up campaigns.
-  const source = live ? [...(snap?.campaigns ?? []), ...googleRows(gaSnap)] : demo ? EXAMPLE_CAMPAIGNS : [];
+  const source = live ? [...(snap?.campaigns ?? []), ...googleRows(gaSnap), ...tiktokRows(ttSnap)] : demo ? EXAMPLE_CAMPAIGNS : [];
   const rows = source.filter((c) => channel === "All" || c.channel === channel).map((c) => ({ c, m: metrics(c), r: recommend(c, t) }));
   // Step 3 autonomy ladder: one decision per campaign from the same numbers.
   // Break-even CPA comes from the store's own costs (AOV × what is kept before ads).
-  // Stock days are not known per campaign here, so the stock block is applied
-  // where the SKU is known (Today / Stock); spend-today is the 7-day daily average.
+  // Per-campaign stock (finishing step): a campaign whose name contains a
+  // stocked SKU or product name gets that product's days-left; campaigns
+  // with no match keep null (unknown) and fall back to the hero figure.
+  const sRows = stockRows(stock, suppliers, new Date().toISOString().slice(0, 10));
+  const stockDaysByCampaign = new Map<string, number | null>();
+  const stockLabelByCampaign = new Map<string, string>();
+  for (const c of source) {
+    const match = matchCampaignStock(c.name, sRows);
+    if (match) {
+      stockDaysByCampaign.set(c.id, match.daysLeft);
+      stockLabelByCampaign.set(c.id, `${match.name} (${match.sku})`);
+    }
+  }
   const decisions = new Map(evaluateCampaigns(source, t, {
     settings: agent,
     breakEvenCpa: t.aov * (1 - t.vcrPct / 100),
     autoPausedToday: 0,
-    stockDaysLeft: null,
+    stockDaysLeft: null, // unknown unless a campaign matches a product above
+    stockDaysByCampaign,
+    stockLabelByCampaign,
     lastSyncAt: snap?.syncedAt ?? null,
     now: new Date().toISOString(),
     spendToday: source.reduce((a, c) => a + c.spend, 0) / 7,
@@ -84,7 +110,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
         <div className="flex flex-wrap gap-2">
           <Link href="/dashboard/integrations" className="btn-ghost text-xs"><RefreshCw className="h-3.5 w-3.5" aria-hidden /> {conn ? "Meta connected" : "Connect Meta"}</Link>
           <Link href="/dashboard/integrations" className="btn-ghost text-xs">Connect Google Ads</Link>
-          <button disabled title="TikTok campaign rows are not synced yet — only daily spend is pulled" className="btn-ghost text-xs">Connect TikTok</button>
+          <Link href="/dashboard/integrations" className="btn-ghost text-xs">Connect TikTok</Link>
           <Link href="/dashboard/campaigns/new" className="btn-dark text-xs"><FileText className="h-3.5 w-3.5" aria-hidden /> New campaign</Link>
         </div>
       </header>
@@ -177,7 +203,7 @@ export default async function Campaigns({ searchParams }: PageProps<"/dashboard/
         </table>
         <p className="border-t border-slate-100 px-5 py-3 text-xs text-slate-500">
           {live
-            ? `Live rows from your connected accounts${snap ? ` — Meta last 7 days, synced ${new Date(snap.syncedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })}` : ""}${gaSnap ? ` · Google last 30 days${snap ? "" : `, synced ${new Date(gaSnap.to).toLocaleDateString("en-AU")}`}` : ""}. TikTok rows are not synced yet — only daily spend is pulled.`
+            ? `Live rows from your connected accounts${snap ? ` — Meta last 7 days, synced ${new Date(snap.syncedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })}` : ""}${gaSnap ? ` · Google last 30 days${snap ? "" : `, synced ${new Date(gaSnap.to).toLocaleDateString("en-AU")}`}` : ""}${ttSnap ? ` · TikTok last 30 days` : ""}.`
             : "EXAMPLE DATA: these campaigns are made up to show how the tracker works. Connect Meta to see your own."}
         </p>
       </section>

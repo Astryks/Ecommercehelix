@@ -12,13 +12,15 @@
 
 ---
 
-## Build status (Step 5, 19 Nov 2026)
+## Build status (Step 5 + finishing step, 19 Nov 2026)
 
 All five steps are built and committed locally on branch `helix-agent-pivot` — **nothing has been pushed to GitHub and nothing is deployed**. Step 1: one agent-led Today screen, coach on by default, Store Brain, approvals (`492b8bb`). Step 2: real syncs feed Today/Insights, example data demo-only (`488c1a6`). Step 3: job-by-job agent — ads ladder, morning QA/scorecard, stock/cash, email flows, video/social (`130f17d`). Step 4: pricing wallet + weekly-expiring credits, margin guards (`3e5cbd8`). Step 5: verification + this handover (see `docs/pivot/step-5-handover.md`).
 
-Verification: vitest **630 passed / 5 failed / 2 skipped** (clean-tree baseline 514 passed / same 5 failures — the 5 are pre-existing `@prisma/client` missing, not regressions; +116 new tests). `tsc --noEmit` **86 errors, identical to the clean tree**. ESLint on all 50 changed files: **0 errors**. Touched suites re-run: **159 passed / 0 failed**.
+**Finishing step (19 Nov 2026, local commit — not yet pushed):** hand-written Prisma migrations for the pricing wallet + TikTok snapshot (`prisma/migrations/20261119183000_pricing-wallet/`, `.../20261119183001_tiktok-snapshot/`); PAYG aligned to 500 credits (decision made, see below); checkout/pixel health wired into the morning QA; per-campaign stock blocking; PageSpeed pull (key-gated); weekly social-presence pull (Instagram/Facebook via Meta Graph; TikTok profile needs Login Kit); TikTok campaign rows + Google search-term rows; admin all-orgs margin view behind `HELIX_ADMIN_EMAILS`; a real ffmpeg slideshow MP4 renderer from the video brief (verified: 12s / 57KB MP4). Full handover at the top of `STATUS.md`.
 
-**Still unverified:** no `next build` / `next dev` / DB smoke test has ever run on this branch — the sandbox could not install Prisma (`npm install` fails `ECONNRESET`, `prisma generate` fails missing `@prisma/engines`). First render/DB check must happen on a real machine or a Vercel deploy, after `npx prisma migrate dev --name pricing-wallet` (no migration file exists yet for `WalletLedger` / `CreditBucket` / `UsageEvent`). Stripe top-up/PAYG round-trip is wired but untested live. **One decision still open before launch:** $10 wallet top-up = 500 credits vs $10 PAYG pack = 100 credits (5x difference — see handover §7).
+Verification: vitest **672 passed / 5 failed / 2 skipped** (clean-tree baseline 630 passed / same 5 failures — the 5 are pre-existing `@prisma/client` missing, not regressions; +42 new tests in the finishing step). `tsc --noEmit` **86 errors, identical to the clean tree**. ESLint on all 50 changed files: **0 errors** (Step 5; re-check before deploy).
+
+**Still unverified:** no `next build` / `next dev` / DB smoke test has ever run on this branch — the sandbox could not install Prisma (`npm install` fails `ECONNRESET`, `prisma generate` fails missing `@prisma/engines`). First render/DB check must happen on a real machine or a Vercel deploy, after `npx prisma migrate deploy` (the two migration files above now exist). Stripe top-up/PAYG round-trip is wired but untested live. **PAYG decision now made:** $10 PAYG pack = 500 credits, same as a $10 wallet top-up (margin at cap $4.41 / 44%); reversible in one constant (`PAYG_PACK` in `src/lib/pricing/costs.ts`).
 
 ---
 

@@ -51,6 +51,16 @@ export async function checkStore(rawUrl: string): Promise<{ url: string; facts: 
 
   const input: AuditInput = { url: homeRes.url, home: homeRes, products, product, cartStatus, skipped };
   const facts = collectFacts(input);
+  // PageSpeed (finishing step): only when a free API key is set; without
+  // one the facts keep speed: null and the rules treat speed as unknown.
+  // A failed pull is recorded as a skipped check, never as a fake score.
+  const psKey = process.env.PAGESPEED_API_KEY;
+  if (psKey) {
+    const { fetchPageSpeed } = await import("../pagespeed");
+    const speed = await fetchPageSpeed(homeRes.url, psKey).catch(() => null);
+    if (speed) facts.speed = speed;
+    else skipped.push("pagespeed (pull failed)");
+  } else skipped.push("pagespeed (no PAGESPEED_API_KEY)");
   return { url: homeRes.url, facts, findings: findingsFrom(facts, input) };
 }
 

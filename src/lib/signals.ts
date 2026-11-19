@@ -1,16 +1,18 @@
 import "server-only";
 import { EXAMPLE_SIGNALS, runRules, type Insight, type Signals } from "./audit";
 import { emptyCoverage, insightsFromSignals, type SyncCoverage } from "./signal-coverage";
-import { getDays, getSeasonPlans } from "./repo";
+import { getDays, getSeasonPlans, getSettings } from "./repo";
 import { getSnapshot } from "./meta/store";
 import { getGoogleSnapshot } from "./google-ads/service";
 import { klaviyoOn } from "./klaviyo/config";
 import { klaviyoSummary } from "./klaviyo/service";
 import { auditRuns } from "./site-audit/run";
+import { getSocialPresence } from "./social-presence";
 import { blackFriday } from "./seasons";
 import { addDays, isoDay } from "./dates";
 import { isDemoUserId } from "./demo-auth";
 import { derive, sum, type DayInput } from "./scorecard";
+import { targetsFrom } from "./targets";
 
 export type LiveSignals = {
   insights: Insight[];
@@ -36,13 +38,15 @@ export async function signalsFor(userId: string): Promise<{ signals: Signals; me
   if (isDemoUserId(userId)) return { signals: EXAMPLE_SIGNALS, metaLive: false, coverage: emptyCoverage(), demo: true };
 
   const today = isoDay();
-  const [days, snap, gaSnap, kSum, runs, plans] = await Promise.all([
+  const [days, snap, gaSnap, kSum, runs, plans, settings, presence] = await Promise.all([
     getDays(userId),
     getSnapshot(userId),
     getGoogleSnapshot(userId).catch(() => null),
     klaviyoOn() ? klaviyoSummary(userId).catch(() => null) : Promise.resolve(null),
     auditRuns(userId, 1).catch(() => []),
     getSeasonPlans(userId).catch(() => []),
+    getSettings(userId).catch(() => null),
+    getSocialPresence(userId).catch(() => null),
   ]);
 
   const realDays = days.filter((d) => !d.example);
@@ -66,6 +70,7 @@ export async function signalsFor(userId: string): Promise<{ signals: Signals; me
   const siteRun = runs.find((r) => r.ok && r.facts);
   const siteLive = Boolean(siteRun?.facts);
 
+  const facts = siteRun?.facts ?? null;
   const coverage: SyncCoverage = {
     ...emptyCoverage(),
     funnel: funnelLive,
@@ -73,15 +78,14 @@ export async function signalsFor(userId: string): Promise<{ signals: Signals; me
     google: googleLive,
     email: emailLive,
     site: siteLive,
-    social: false, // no social API is pulled yet
+    social: Boolean(presence), // weekly Graph pull (finishing step); TikTok profile still needs Login Kit
     peak: true, // calendar-computable
     checkout: false, // Shopify sync pulls orders, not checkouts
     device: false, // scorecard days carry no mobile/desktop split
-    searchTerms: false, // Google sync pulls campaign totals, not search terms
-    speed: false, // site check is plain fetches; no PageSpeed API
+    searchTerms: Boolean(gaSnap?.searchTermsSynced), // Google search-term pull (finishing step)
+    speed: Boolean(facts?.speed), // PageSpeed pull, key-gated (finishing step)
   };
 
-  const facts = siteRun?.facts ?? null;
   const revenue30 = sum(realDays.filter((d) => d.date >= addDays(today, -30)));
   const net30 = revenue30.revenue - revenue30.discounts - revenue30.refunds;
   const gaSpend = gaSnap ? gaSnap.campaigns.reduce((s, c) => s + c.spend, 0) : 0;
@@ -97,8 +101,8 @@ export async function signalsFor(userId: string): Promise<{ signals: Signals; me
       ? `Your data, last 7 days to ${addDays(today, -1)}`
       : "No synced data yet — connect Shopify or Meta, or add yesterday's numbers on the Scorecard.",
     site: {
-      mobileSpeedScore: 100, // placeholder only: no PageSpeed data, evidence is stripped (see signal-coverage.ts)
-      lcpSeconds: 1,
+      mobileSpeedScore: facts?.speed?.score ?? 100, // real when a PageSpeed pull ran; evidence is stripped when it did not (see signal-coverage.ts)
+      lcpSeconds: facts?.speed?.lcpSeconds ?? 1,
       hasPopup: (facts?.emailCapture.length ?? 0) > 0,
       reviewsAboveFold: facts?.product?.reviewsBeforeBuy ?? false,
       shippingInfoOnPdp: Boolean(facts?.shippingText),
@@ -131,18 +135,26 @@ export async function signalsFor(userId: string): Promise<{ signals: Signals; me
       : { ...EXAMPLE_SIGNALS.meta, hookRate: 0, ctr: 0, lpCr: 0, storeCr, freqNow: 0, freqPrev: 0, cpmNow: 0, cpmPrev: 0, ctrNow: 0, ctrPrev: 0, roasNow: 0, roasPrev: 0, merNow: 0, merPrev: 0, thruplayRate: 0 },
     google: {
       brandSharePct: gaSpend > 0 ? (gaBrandSpend / gaSpend) * 100 : 0,
-      wastedTerms: [], // search terms are not pulled yet
-      targetCpa: 0,
+      // Wasted = spent >= 1x break-even CPA with 0 conversions (audit.ts rule).
+      // Break-even CPA = AOV x what is kept before ads, from the store's own costs.
+      wastedTerms: (() => {
+        const tg = settings ? targetsFrom(days, settings) : null;
+        const beCpa = tg ? tg.aov * (1 - tg.vcrPct / 100) : 0;
+        return (gaSnap?.searchTerms ?? []).filter((t) => beCpa > 0 && t.spend >= beCpa && t.conversions === 0).map((t) => ({ term: t.term, spend: t.spend }));
+      })(),
+      targetCpa: settings ? Math.round(targetsFrom(days, settings).aov * (1 - targetsFrom(days, settings).vcrPct / 100) * 100) / 100 : 0,
     },
     email: {
       revenueSharePct: kSum && net30 > 0 ? (kSum.revenue30 / net30) * 100 : 0,
       missingFlows: kSum ? kSum.flowsOff : [],
     },
-    social: {
-      profiles: [], // no social API is pulled yet
-      liveAdOfferOnProfile: true, // neutral: mismatch rule stays suppressed
-      liveAdOffer: "",
-    },
+    social: presence
+      ? { profiles: presence.profiles, liveAdOfferOnProfile: presence.liveAdOfferOnProfile, liveAdOffer: presence.liveAdOffer }
+      : {
+          profiles: [], // no social pull yet
+          liveAdOfferOnProfile: true, // neutral: mismatch rule stays suppressed
+          liveAdOffer: "",
+        },
     daysToBlackFriday: daysToBf,
     hasPeakPlan: plans.some((p) => /^black-friday-\d{4}$/.test(p.planKey)),
   };

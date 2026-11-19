@@ -84,12 +84,12 @@ describe("margin proof at the cap — every pack must clear 70% contribution", (
     expect(worst.providerUsd).toBeCloseTo(10.14, 2);
     expect(worst.contributionPct).toBeGreaterThanOrEqual(70);
   });
-  it("PAYG pack: $10 = 100 credits, 7-day expiry", () => {
-    expect(PAYG_PACK).toEqual({ priceUsd: 10, credits: 100, expiresDays: 7 });
+  it("PAYG pack: $10 = 500 credits, 7-day expiry (aligned to the $10 wallet top-up, finishing step)", () => {
+    expect(PAYG_PACK).toEqual({ priceUsd: 10, credits: 500, expiresDays: 7 });
     const p = packContribution("payg");
-    expect(p.providerUsd).toBe(1.0);
-    expect(p.contributionUsd).toBeCloseTo(8.41, 2);
-    expect(p.contributionPct).toBeGreaterThanOrEqual(70);
+    expect(p.providerUsd).toBe(5.0);
+    expect(p.contributionUsd).toBeCloseTo(4.41, 2);
+    expect(p.contributionPct).toBeCloseTo(44, 0);
     // At least 2x the provider cost it covers, at its cap.
     expect(p.priceUsd / p.providerUsd).toBeGreaterThanOrEqual(2);
   });

@@ -13,7 +13,25 @@ export function tiktokAuthUrl(appId: string, redirectUri: string, state: string)
   return u.toString();
 }
 
-export type TtReportRow = { dimensions?: { stat_time_day?: string }; metrics?: { spend?: string } };
+export type TtReportRow = { dimensions?: { stat_time_day?: string; campaign_id?: string; campaign_name?: string }; metrics?: { spend?: string; impressions?: string; clicks?: string; conversion?: string } };
+
+export type TtCampaign = { id: string; name: string; spend: number; impressions: number; clicks: number; conversions: number };
+
+/** Rows from an AUCTION_CAMPAIGN report into campaign totals. Pure. */
+export function tiktokCampaignRows(rows: TtReportRow[]): TtCampaign[] {
+  const m = new Map<string, TtCampaign>();
+  for (const r of rows) {
+    const id = r.dimensions?.campaign_id ?? "";
+    if (!id) continue;
+    const c = m.get(id) ?? { id, name: r.dimensions?.campaign_name ?? id, spend: 0, impressions: 0, clicks: 0, conversions: 0 };
+    c.spend += Number(r.metrics?.spend ?? 0) || 0;
+    c.impressions += Number(r.metrics?.impressions ?? 0) || 0;
+    c.clicks += Number(r.metrics?.clicks ?? 0) || 0;
+    c.conversions += Number(r.metrics?.conversion ?? 0) || 0;
+    m.set(id, c);
+  }
+  return [...m.values()].map((c) => ({ ...c, spend: Math.round(c.spend * 100) / 100 })).sort((a, b) => b.spend - a.spend);
+}
 
 /** Daily spend rows from a report/integrated/get response. */
 export function tiktokDailySpend(rows: TtReportRow[]): { date: string; value: number }[] {

@@ -1,3 +1,301 @@
+# ▶ AGENT-LED PIVOT — HANDOVER (19 Nov 2026, finishing step)
+
+Read this first. Everything below (from "Road to $100M content v2") is the
+older history. This section is the complete handover for the pivot: what it
+is, why, what was built, what was verified, and exactly what still needs Sid.
+
+## The pivot in one sentence
+
+Helix stops being a course + dashboard the owner must visit, and becomes a
+morning agent that has already checked the store, done the maths in code,
+drafted the next profitable step as a paused draft, and waits for one tap.
+The course becomes training data for the agent; the owner logs in daily to
+approve work, not to learn how to do it.
+
+## Why (diagnosis, from the 19 Nov 2026 audit of this repo)
+
+- 323 lessons across 30 playbook modules, 46 dashboard pages, 21 goals,
+  94 curriculum days, 5 competing "what do I do today?" systems (Today
+  tasks, Coach daily tasks, curriculum day, course goal, Learn Path step),
+  3 navigation systems that disagree, 18 metrics, 11 calculator tools.
+  Owners get lost; they do not know what to do next.
+- The "Claude agent" (Coach, `src/lib/coach/`) was a floating chat widget
+  only: it could answer questions from RAG over the playbook, but could not
+  build a campaign, pause/scale an ad, send email, check stock, or run a
+  morning briefing. No tool/function calling anywhere in the repo.
+- Stub-vs-real gap: Insights fed the 17 audit rules with `EXAMPLE_SIGNALS`,
+  every new account was seeded with 730 days of example scorecard data, the
+  campaigns page showed made-up Google/TikTok rows, Shopify stock sync only
+  updated SKUs already tracked, Klaviyo "sending" was copy-to-paste.
+  Demo/example data must always be labelled as such and never shown to real
+  users as real. Unknown is null, never assumed ok or broken.
+- Guardrails were already good and were NOT weakened: `meta/guardrail.ts`
+  allows only PAUSED campaign/ad set/ad creation, creating creatives, pausing
+  an existing object, and disconnect. Helix never spends or changes live
+  budgets; every money move needs an approval card with reason, evidence and
+  one-tap undo (7-day window).
+- Memory was already built and is the strongest pivot asset: Prisma
+  `CoachMemory`, max 60 facts, 9 kinds (business, store, products, channels,
+  goals, budget, decisions, tried, results); owner can view/edit/delete all.
+  Store Brain = that memory + unit economics + winners/losers + an
+  append-only decisions log, shown on Today.
+
+## Fast-grower lessons (research, 19 Nov 2026 — all ARR figures are
+## company-reported run-rate / contracted ARR, NOT audited GAAP revenue)
+
+- Lovable $100M ARR in ~8 months, Cursor $100M → $2B in ~13 months, Sierra
+  $100M → $400M in ~11 months, Legora $1M → $100M in <18 months, Clay
+  ~6 years to $1M then ~2 years to $100M, ElevenLabs ~20 months to $100M.
+  What transfers: credits pricing (Lovable, ElevenLabs), usage-based with
+  caps (Cursor), paid design partners + supervisor-agent checks (Sierra),
+  reverse demos on the prospect's real data + agencies/operators as
+  distribution (Clay). What does NOT transfer: Sierra outcome/profit-share
+  pricing, Triple Whale's GMV escalator / 12-month lock-in, Cursor's flat
+  unlimited agent runs (reportedly negative gross margin on heavy users).
+- Helena (Enrich Labs) ran a public Shopify experiment: $10,242 sales /
+  156 orders in 56 days, lost money overall. Lesson: Helix should optimise
+  stores that already have winners, NOT go product-hunting. Helena's loop
+  (7am storefront QA, 7:30am fixes, 8am scorecard = Shopify revenue ÷ Meta
+  spend; kill rule $50/day × 3 days (~$150), kill on 0 orders or ROAS <0.7)
+  is copied into the agent's kill rule.
+- Dashboard churn: dashboards charge a fixed daily cost for an occasional,
+  usually "nothing changed" payoff; 60–70% of Shopify app churn is decided
+  in the first 90 days, most in week 1. Owners return daily only for
+  agent-done overnight work to approve, one money number, one completable
+  task, and exceptions.
+
+## Product shape (built in Steps 1–3)
+
+- 3 screens: Today (one scorecard strip, at most 3 rule-based tasks, one
+  learning card, Store Brain panel), Work (approvals — Approve / Edit / Skip),
+  Ask (Coach chat, now ON by default; kill switch `HELIX_COACH=0`).
+- Autonomy ladder, default propose-only: L1 propose → L2 assisted (auto-pause
+  with caps) → L3 autonomous (only after 30 days of L2 with revert rate <5%
+  and a daily cap set). Scale blocked when the winner has <14 days of stock;
+  stale feed (>24h) → "data unreliable — do not scale". Settings at
+  `/dashboard/settings/agent` (mode, cap, max scale ≤20%, auto-pauses/day,
+  never-pause list, discount ceiling, per-channel auto-post, never-post list).
+- Morning briefing: 7am QA walk (dead checkout, broken pixel, spend with zero
+  orders, revenue/sessions down >40% vs same weekday last week, CPA above
+  break-even for 3 days, hero out of stock, refund spike >5%) then 8am
+  deterministic scorecard. The 21-field `DayInput` is gone except where a
+  channel is unconnected (manual entry survives only there).
+- Email: all 9 flows (welcome, abandoned checkout/cart, browse, post-purchase,
+  review, replenishment, win-back, VIP) as draft-first approval payloads;
+  Klaviyo stays drafts-only, no sending. Video/social: draft-only assembly
+  (3 variants, 9:16, hook in first 3 seconds), auto-post off by default,
+  per-channel opt-in, price/promo posts always need approval.
+
+## Pricing (Steps 4 + finishing step) — never lose money
+
+- One unified credit pool: coach messages (20/300/800, deep 0/40/100) and AI
+  write-ups (3/50/150) now draw from the same credits (1 credit = $0.01
+  provider cost). Free 60 credits/month hard cap ($0.60), Starter 60/week,
+  Growth 180/week + 1-week grace, inside $3.00/$8.00 monthly ceilings.
+  Count ceilings are exactly unchanged; both global kill-switches ($50 coach,
+  $25 generic AI) are kept as a second layer. One user-visible change: the
+  two counters used to be independent — maxing both was theoretically free;
+  now heavy use of one leaves less for the other. Stated on Billing and in
+  `docs/pivot/step-4-pricing.md` §1.
+- Wallet: prepaid at 2× provider cost ($10/$25/$50 top-ups); Stripe Checkout
+  one-off sessions, webhook credits the wallet only on confirmed
+  `checkout.session.completed` (deduped via `claimEvent`); auto top-up off by
+  default; refunds of unused balance only.
+- **PAYG DECIDED in the finishing step (19 Nov 2026), option (b): the $10
+  PAYG pack is now 500 credits, expiring in 7 days — the same as a $10 wallet
+  top-up.** It used to buy 100 credits ($1.00 of provider cost) while a $10
+  wallet top-up bought $5.00 — a 5× worse value for the same $10, and Billing
+  already said the wallet was better value. Margin at cap: $10 − $0.59 Stripe
+  − $5.00 provider = $4.41 (44%). Reversible in one constant (`PAYG_PACK`
+  in `src/lib/pricing/costs.ts`). Billing copy updated to say so.
+- 10 never-lose guarantees enforced in `src/lib/pricing/cost-guard.ts`:
+  pre-flight estimate, reserve-then-charge, bucket order (free cap →
+  allowance oldest-first → wallet), hard caps (deep 10/day, audits 3/hour,
+  trend adapts 4/day), free downgrade (Tier 1 at 45/60 credits, rules-only at
+  60), no silent upgrades, caching, abuse controls, daily margin dashboard,
+  refund-safe. Margins at cap: Starter 78%/75%, Growth 76%/72%, PAYG 44%,
+  add-on (+$29/mo, +120/week) 77%. Wallet top-ups are 44–47% by design
+  (2× markup minus Stripe fee).
+- Admin margin view: the all-orgs view is live behind `HELIX_ADMIN_EMAILS`
+  (comma-separated owner emails in Vercel); until it is set, the margin page
+  shows only the viewer's own org. See "Cannot do here" for the exact step.
+
+## Model choice
+
+Claude Sonnet 5.5 as default, on LangGraph (model-agnostic), Haiku for cheap
+tasks, Opus only for escalations; tools via official Shopify/Meta/Google/
+Klaviyo MCP servers; Store Brain as memory. Fallback order: GPT-5.4, then
+Gemini 3 Pro/Flash (note the >200k-token price cliff), then Kimi K2 / Qwen
+open-weight via Bedrock/OpenRouter. Repo today still routes through the
+Vercel AI Gateway with model IDs as strings (no direct Anthropic/OpenAI/
+Google SDK in package.json); the Coach default is `anthropic/claude-sonnet-5`
+(deep) / `anthropic/claude-haiku-5.5` (fast), fallback
+`google/gemini-3.8-flash`. Model prices/benchmarks are Nov 2026
+secondary/vendor-reported — re-verify on provider pages before budgeting.
+
+## What was built, step by step (branch `helix-agent-pivot`)
+
+- Step 1 (`492b8bb`, 11 files): Today rewritten (~470 → ~190 lines), Coach on
+  by default, approvals with money effect + AI cost, Store Brain panel,
+  stance maths (Push / Careful push / Hold / Defend).
+- Step 2 (`488c1a6`, 10 files): sync inventory — real signals only, example
+  data demo-only, `signal-coverage.ts` per-rule gating, crons aligned
+  (Shopify 05:00, Meta/Google 05:30 Sydney). `docs/pivot/step-2-sync-inventory.md`.
+- Step 3 (`130f17d`, 20 files): job-by-job agent — autonomy ladder, morning
+  briefing, stock/cash plan, email flows, video/social drafts.
+  `docs/pivot/step-3-jobs.md`.
+- Step 4 (`3e5cbd8`, 20 files): pricing wallet + weekly-expiring credits,
+  10 guarantees, margin dashboard. `docs/pivot/step-4-pricing.md`.
+- Step 5 (`7821a59`): verification + handover. `docs/pivot/step-5-handover.md`.
+- Full-scope doc: `docs/pivot/ecommerce-helix-full-scope.md` (also
+  `ecommerce-helix-full-scope` file artifact) + web artifact
+  "Ecommerce Helix Pivot Plan" (slug `ecommerce-helix-pivot-plan`).
+- **Finishing step (19 Nov 2026, this commit — see `git log`):**
+  1. Prisma migrations hand-written (no DB in sandbox): 
+     `prisma/migrations/20261119183000_pricing-wallet/migration.sql`
+     (WalletLedger, CreditBucket, UsageEvent) and
+     `prisma/migrations/20261119183001_tiktok-snapshot/migration.sql`
+     (TikTokSnapshot). Checked by `tests/pricing-migration.test.ts`
+     (schema → SQL column/type/FK/index match). Still needs
+     `npx prisma migrate deploy` against real Postgres.
+  2. PAYG aligned to 500 credits (see Pricing above).
+  3. Checkout/pixel health wired: `healthFromFacts()` in
+     `src/lib/site-audit/checks.ts` (cart `/cart.js` error = dead checkout;
+     Meta pixel in page source = pixel ok; Tag Manager / unreadable page =
+     unknown, never assumed), morning cron loads the latest audit run
+     (older than 30 days = unknown). `tests/site-health.test.ts`.
+  4. Per-campaign stock blocking: `matchCampaignStock()` in
+     `src/lib/agent/autonomy.ts` matches campaign names to SKUs/products
+     (longest match wins); the campaigns page passes per-campaign stock days
+     and the Scale branch blocks on the matched product. Unmatched campaigns
+     stay unblocked (unknown), never blocked on the wrong product's stock.
+  5. PageSpeed pull: `src/lib/pagespeed.ts` (pure parse + key-gated fetch,
+     20s timeout, null on any failure), wired into `checkStore()` when
+     `PAGESPEED_API_KEY` is set; `signals.ts` uses real score/LCP and
+     `coverage.speed` only when a pull ran. `tests/pagespeed.test.ts`.
+  6. Social presence pull: `src/lib/social-presence.ts` + pure mappers in
+     `src/lib/social-profile.ts` — weekly Graph pull (Sundays 06:00 UTC,
+     `/api/cron/social-presence`) of Instagram business accounts (bio, link,
+     last-10 media, proof) and Facebook pages via the owner's Meta token;
+     feeds the social-profile-gaps / ads-social-mismatch rules. Graph cannot
+     report highlights/pinned posts or unanswered questions — those are
+     rule-neutral (3 / 1 / 0), never invented. TikTok profile data is NOT
+     pulled (see "Cannot do here").
+  7. TikTok campaign rows + Google search terms: `syncTikTok` now also pulls
+     `AUCTION_CAMPAIGN` reporting into a new `TikTokSnapshot` table; the
+     campaigns page renders live TikTok rows. `syncGoogleAds` now also pulls
+     `search_term_view` GAQL into the snapshot; `signals.ts` computes wasted
+     terms (spend ≥ 1× the store's own break-even CPA, 0 conversions) and
+     `coverage.searchTerms` only when the pull ran.
+  8. Admin margin view: `src/lib/pricing/admin.ts` (`HELIX_ADMIN_EMAILS`)
+     + `allOrgsUsageEvents()` in `src/lib/pricing/server.ts`; the margin page
+     shows the all-stores tables only for admins.
+  9. Rendered video (smallest honest thing): `src/lib/agent/video-render.ts`
+     renders a brief's variant to a real 720×1280 MP4 slideshow with ffmpeg
+     (one card per script sentence, 3s each, hook on screen; verified:
+     `scripts/render-video.ts --product "Linen Shirt" --price 89 --out
+     /tmp/helix-video-v1.mp4` produced a 12s / 57KB MP4). No voiceover, no
+     motion, no product footage — that still needs a template renderer + TTS
+     (see "Cannot do here"). `tests/agent-video-render.test.ts`.
+  10. Verification (19 Nov 2026): vitest **672 passed, 5 failed, 2 skipped**
+      (679 total, 83 files) vs clean-tree baseline 630 passed, 5 failed —
+      +42 new tests, same 5 pre-existing failures (`tests/fb-group.test.ts`,
+      `tests/limits.test.ts`, `tests/payments.test.ts` — all fail at
+      `src/lib/db.ts:1`, `Cannot find package '@prisma/client'`).
+      `npx tsc --noEmit` **86 errors, identical to the clean-tree baseline**
+      (verified by count; the finishing step introduced 5 new errors and
+      fixed all 5 — `facts` used before declaration, social-presence
+      re-export). ESLint on touched files: clean (Step 5; re-check before
+      deploy). Two test failures during the work were fixed in the code, not
+      the tests (scale approval card didn't state the proposed budget; video
+      block message casing); two test expectations were updated for the
+      decided PAYG change (100 → 500 credits).
+
+## GitHub push (19 Nov 2026)
+
+- Branch `helix-agent-pivot`, pushed as ONE snapshot commit `7689cc2e`
+  (57 files, Steps 1–5). The 6 local step commits were squashed by the
+  GitHub snapshot-push route — the code is identical, the per-step history
+  lives only locally. The finishing-step commit(s) are local only and have
+  NOT been pushed yet; push them the same way (or as a bundle from a Mac to
+  preserve all commits). Sync record:
+  `~/workspace/ecommercehelix.muse-github-snapshot-sync.json`.
+- Next: open a pull request from `helix-agent-pivot` into `main`, or deploy
+  a preview of the branch to Vercel first to see Today live against a real
+  database — the one check that could not be done in the sandbox.
+
+## What was NOT verified (sandbox limits — do not claim otherwise)
+
+- No `next build` / `next dev` / live render: `npm install` fails
+  (ECONNRESET) and Prisma client cannot be generated here
+  (`@prisma/engines` postinstall fails). Tests are the verification route.
+- No DB-backed path was exercised: no migration has ever run against a real
+  Postgres; no live Stripe, Meta, Google, Shopify, TikTok or Klaviyo call
+  was made. `.env` does not exist in the sandbox; `.env.example` holds key
+  names only. No credentials, tokens or secrets are in this repo or in any
+  commit.
+
+## Cannot do here — exact steps (in order)
+
+1. **Live render + DB verification (do this first).** On a machine (or
+   Vercel deploy) with the repo: `npm install`, `npx prisma generate`,
+   set `DATABASE_URL`, then `npx prisma migrate deploy` (runs both new
+   migrations), then `npm run dev` and open Today with a real store
+   connected. This is the only way to see the pivot live.
+2. **`CRON_SECRET`** in Vercel (Settings → Environment Variables) — every
+   cron route 401s without it (morning brief, syncs, social presence).
+3. **AI Gateway key + embedding job.** Set `AI_GATEWAY_API_KEY` in Vercel,
+   then `npx vite-node scripts/coach-embed.ts --yes` (re-embeds changed
+   chunks only). Without it the Coach RAG is stale and the new lessons are
+   not in the corpus.
+4. **Meta app review.** Advanced Access for `ads_read` / `ads_management` +
+   business verification, then set `META_PUBLIC=1` in Vercel. Until then
+   only app testers can connect Meta. (Meta sync, social presence pull and
+   the ad autonomy ladder all depend on this.)
+5. **Google Ads OAuth.** Create OAuth client id + secret in Google Cloud,
+   set `GOOGLE_ADS_CLIENT_ID` / `GOOGLE_ADS_CLIENT_SECRET` in Vercel.
+   (Search-term pull and campaign rows depend on this.)
+6. **Shopify `read_all_orders` + app credentials.** Request
+   `read_all_orders` in the Partner dashboard (order history is otherwise
+   capped at 60 days); set `SHOPIFY_API_KEY` / `SHOPIFY_API_SECRET` in
+   Vercel. (Custom-app token path works without this.)
+7. **TikTok approval.** TikTok app approval, then set `TIKTOK_ADS=1` +
+   `TIKTOK_APP_ID` / `TIKTOK_APP_SECRET` in Vercel. (Campaign rows depend
+   on this. TikTok *profile* data needs a separate TikTok Login Kit OAuth
+   app with `user.info.basic` + `video.list` scopes — not built; the
+   social rules simply have no TikTok profile until then.)
+8. **Klaviyo keys.** Set `KLAVIYO=1` in Vercel; each owner then pastes
+   their own `pk_…` key in Integrations. (Email-gap rule + flow drafts.)
+9. **PageSpeed Insights API key (optional, free).** Google Cloud Console →
+   enable the PageSpeed Insights API → create a key → set
+   `PAGESPEED_API_KEY` in Vercel. Without it, speed stays unknown and the
+   `mobile-gap` rule stays suppressed — never invented.
+10. **Admin margin view.** Set `HELIX_ADMIN_EMAILS=sid@example.com` (your
+    email, comma-separated if more) in Vercel, then redeploy. Until then
+    the margin page shows only the viewer's own org.
+11. **Live Stripe test + webhook round-trip.** Make a $10 wallet top-up
+    and a $10 PAYG purchase in test mode, confirm the wallet/credits land,
+    then refund both. Confirms the webhook credits only on confirmed
+    payment (and that PAYG now grants 500 credits).
+12. **Course video storage (~14 GB).** Vercel Blob + set
+    `COURSE_VIDEO_BASE_URL`. (Pre-existing, unrelated to the pivot.)
+13. **Template renderer + TTS (video).** The slideshow renderer is real
+    but has no voiceover, motion or product footage. To close it properly:
+    pick a template video service (e.g. Creatomate, Placid, or a Remotion
+    deployment) + a TTS voice (ElevenLabs), wire `buildVideoBrief` output
+    into it, and keep the same supervisor checks + approval gate. Do not
+    present briefs as videos.
+14. **GA4 (optional).** Set `GA4_SESSIONS=1`; owner grants
+    `analytics.readonly` and saves their property id. Otherwise sessions
+    stay 0 and conversion rate can't be computed.
+15. **Still open from earlier work (not the pivot):** the 106% vs 2.5x
+    fund-return conflict needs Sid's confirmation; Dodge & Cox and
+    Hamilton Lane applications remain unapplied (sign-in only he can
+    complete — he has said not to ask him to sign in, so leave them);
+    the 4/39 Robey Street, Maroubra enquiry is still unsent with no price
+    guide; the Mons Avenue enquiry is retired ($3,000,000 guide).
+
+---
 ## Road to $100M content v2 (27 Oct 2026)
 - Branch: `helix-journey-content-27oct` (from main d2c3fb7). Not merged, not deployed.
 - New `src/lib/journey-content.ts`: per-level deep content for all 7 levels (what it takes, timeline range, worked unit economics, cash and stock, hiring order, channels, ecosystem/partners, ad saturation, mistakes, sources), a "what you spend" card per level from stated assumptions ($60 retail, $13.50 cost, $4 shipping, 3% fees, 10% leakage; ads 25-40% of sales at scale), formula in plain words, change-the-assumptions note, ads-saturation caveat, bootstrapping fit note, and three verified brand lessons (Gymshark, Casper, Allbirds) with sources.

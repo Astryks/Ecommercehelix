@@ -123,8 +123,15 @@ export const WEEKLY_GRANTS = {
   growth: { creditsPerWeek: 180, graceWeeks: 1 },
 } as const;
 
-/** PAYG pack: $10 = 100 credits, expiring 7 days after purchase. */
-export const PAYG_PACK = { priceUsd: 10, credits: 100, expiresDays: 7 } as const;
+/**
+ * PAYG pack: $10 = 500 credits, expiring 7 days after purchase.
+ * Aligned to the $10 wallet top-up in the finishing step (19 Nov 2026):
+ * a top-up buys $5.00 of provider cost = 500 credits, so a PAYG pack at
+ * 100 credits was 5x worse value for the same $10. Same price, same
+ * credits now — PAYG is the expiring, use-it-or-lose-it way to buy them.
+ * Margin at cap: $10 − $0.59 Stripe − $5.00 provider = $4.41 (44%).
+ */
+export const PAYG_PACK = { priceUsd: 10, credits: 500, expiresDays: 7 } as const;
 /** Optional agent add-on: +$29/month for +120 credits/week. */
 export const AGENT_ADD_ON = { priceUsd: 29, extraCreditsPerWeek: 120 } as const;
 

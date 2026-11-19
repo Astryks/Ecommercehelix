@@ -156,11 +156,11 @@ describe("weekly expiry + Growth grace", () => {
   });
   it("PAYG buckets expire 7 days after purchase, no grace", () => {
     const b = paygBucket(new Date("2026-11-19T00:00:00.000Z"));
-    expect(b.credits).toBe(100);
+    expect(b.credits).toBe(500); // finishing step: PAYG aligned to the $10 wallet top-up (was 100)
     expect(b.expiresAt).toBe("2026-11-26T00:00:00.000Z");
     const { kept, lapsedCredits } = expireBuckets([b], "growth", new Date("2026-11-27T00:00:00.000Z"));
     expect(kept).toEqual([]);
-    expect(lapsedCredits).toBe(100);
+    expect(lapsedCredits).toBe(500); // PAYG pack is 500 credits now
   });
   it("weeks run Monday to Sunday", () => {
     expect(mondayOfWeek(new Date("2026-11-19T10:00:00.000Z"))).toBe("2026-11-16"); // Thursday

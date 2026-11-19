@@ -58,7 +58,7 @@ export async function topUpWalletAction(form: FormData) {
   redirect("/dashboard/billing?topup=demo");
 }
 
-/** Buy a PAYG pack ($10 = 100 credits, 7-day expiry) from the wallet balance, or by card via Stripe Checkout. */
+/** Buy a PAYG pack ($10 = 500 credits, 7-day expiry) from the wallet balance, or by card via Stripe Checkout. */
 export async function buyPaygAction(form: FormData) {
   const u = await requireUser();
   const payFrom = String(form.get("payFrom") ?? "wallet");

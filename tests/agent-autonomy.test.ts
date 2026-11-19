@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { evaluateCampaign, evaluateCampaigns, autonomousGate, parseAgentSettings, DEFAULT_AGENT_SETTINGS, KILL_TEST_SPEND } from "@/lib/agent/autonomy";
+import { evaluateCampaign, evaluateCampaigns, autonomousGate, parseAgentSettings, matchCampaignStock, DEFAULT_AGENT_SETTINGS, KILL_TEST_SPEND } from "@/lib/agent/autonomy";
 import type { Campaign, Targets } from "@/lib/campaigns";
 
 const T: Targets = { aov: 92, targetMerPct: 30, vcrPct: 40 }; // break-even CPA $55.20
@@ -120,5 +120,34 @@ describe("parseAgentSettings", () => {
   });
   it("rejects an unknown mode", () => {
     expect(parseAgentSettings({ mode: "yolo" as never }).mode).toBe("propose");
+  });
+});
+
+describe("per-campaign stock blocking (finishing step)", () => {
+  it("matches a campaign to a product by SKU or name in the campaign name", () => {
+    const rows = [
+      { sku: "LIN-SHIRT-01", name: "Linen Shirt", daysLeft: 5 },
+      { sku: "WOOL-02", name: "Wool Scarf", daysLeft: 40 },
+    ];
+    expect(matchCampaignStock("Cold · Linen Shirt — Broad", rows)?.sku).toBe("LIN-SHIRT-01");
+    expect(matchCampaignStock("LIN-SHIRT-01 retargeting", rows)?.name).toBe("Linen Shirt");
+    expect(matchCampaignStock("Cold · Broad", rows)).toBeNull();
+    expect(matchCampaignStock("Wool Scarf + Linen Shirt launch", rows)?.name).toBe("Linen Shirt"); // longest match wins
+  });
+
+  it("blocks scaling only for the campaign whose product is low on stock", () => {
+    const byCampaign = new Map([["c1", 5]]);
+    const labels = new Map([["c1", "Linen Shirt (LIN-SHIRT-01)"]]);
+    const low = evaluateCampaign(camp({ id: "c1", name: "Linen Shirt — Cold" }), T, ctx({ stockDaysLeft: null, stockDaysByCampaign: byCampaign, stockLabelByCampaign: labels }));
+    expect(low.blockedBy).toBe("stock-low");
+    expect(low.approval.detail).toContain("Linen Shirt (LIN-SHIRT-01) has 5 days of stock left");
+    const other = evaluateCampaign(camp({ id: "c2", name: "Wool Scarf — Cold" }), T, ctx({ stockDaysLeft: null, stockDaysByCampaign: byCampaign, stockLabelByCampaign: labels }));
+    expect(other.blockedBy).toBeNull();
+    expect(other.action).toBe("scale");
+  });
+
+  it("unknown SKU stays unknown — no stock block is invented", () => {
+    const d = evaluateCampaign(camp(), T, ctx({ stockDaysLeft: null }));
+    expect(d.blockedBy).toBeNull();
   });
 });

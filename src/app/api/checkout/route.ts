@@ -18,7 +18,7 @@ const PLANS: PlanId[] = ["free", "starter", "growth"];
 async function handle(req: Request, plan: PlanId) {
   const base = (process.env.NEXT_PUBLIC_APP_URL ?? new URL(req.url).origin).replace(/\/$/, "");
   const back = (q: string) => NextResponse.redirect(new URL(`/dashboard/billing?${q}`, base), 303);
-  // Step 4: wallet top-ups ($10/$25/$50) and PAYG packs ($10 = 100 credits)
+  // Step 4: wallet top-ups ($10/$25/$50) and PAYG packs ($10 = 500 credits)
   // go through Stripe Checkout as one-off payments. Without Stripe (demo
   // mode) the credit is recorded as demo credit, labelled as such — never
   // presented as a real charge. The webhook credits the wallet on payment.
@@ -52,7 +52,7 @@ async function handle(req: Request, plan: PlanId) {
             price_data: {
               currency: "usd",
               unit_amount: amount * 100,
-              product_data: { name: kind === "payg" ? "Helix PAYG credits (100 credits, 7 days)" : `Helix AI wallet top-up $${amount}` },
+              product_data: { name: kind === "payg" ? "Helix PAYG credits (500 credits, 7 days)" : `Helix AI wallet top-up $${amount}` },
             },
             quantity: 1,
           },

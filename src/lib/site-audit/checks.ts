@@ -59,6 +59,14 @@ export type Facts = {
     wallets: string[];
   };
   trust: { contact: boolean; about: boolean; returnsPage: boolean };
+  /** /cart.js answered 200 (true), errored (false), or was not checked (null). */
+  cartOk: boolean | null;
+  /**
+   * PageSpeed Insights (mobile) from the last check, when a
+   * PAGESPEED_API_KEY was set. Null = no pull (no key, or the pull failed)
+   * — the audit rules treat speed as unknown, never invented.
+   */
+  speed: { score: number | null; lcpSeconds: number | null; fetchedAt: string } | null;
   /** Words of readable text on the home page. Very low means a script-only page or a bot check. */
   homeWords: number;
 };
@@ -198,8 +206,31 @@ export function collectFacts(i: AuditInput): Facts {
     medianPrice: median(prices),
     product,
     homeWords: homeText.split(" ").filter(Boolean).length,
+    cartOk: i.cartStatus === null ? null : i.cartStatus < 400,
+    speed: null, // filled in by checkStore() after the PageSpeed pull, if keyed
     trust: { contact: /href=["'][^"']*contact/i.test(home), about: /href=["'][^"']*(?:about|our-story)/i.test(home), returnsPage: /href=["'][^"']*(?:refund|return)/i.test(home) },
   };
+}
+
+/**
+ * Checkout / pixel health from the latest site check, for the 7am QA walk.
+ * Conservative by design — unknown is null, never assumed ok or broken:
+ * - checkoutOk false only when /cart.js errored (the store's cart endpoint
+ *   is down); true only when the cart answered AND a product page opened.
+ * - pixelOk true only when the Meta pixel is in the page source; false
+ *   only when a readable home page has NO tracking pixel at all (Meta
+ *   cannot see purchases); null when tracking may load via Tag Manager
+ *   or a Shopify app, which the source cannot prove either way.
+ */
+export function healthFromFacts(f: Facts | null): { checkoutOk: boolean | null; pixelOk: boolean | null } {
+  if (!f) return { checkoutOk: null, pixelOk: null };
+  const checkoutOk = f.cartOk === false ? false : f.cartOk === true && f.product !== null ? true : null;
+  const pixelOk = f.pixels.includes("Meta pixel")
+    ? true
+    : f.pixels.length === 0 && f.homeWords >= 60
+      ? false
+      : null;
+  return { checkoutOk, pixelOk };
 }
 
 const RANK: Record<Severity, number> = { high: 0, medium: 1, low: 2, good: 3 };

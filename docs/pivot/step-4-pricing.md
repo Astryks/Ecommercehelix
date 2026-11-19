@@ -47,7 +47,7 @@ of $8.00. The unspendable remainder is the margin cushion.
 
 | File | Change |
 |---|---|
-| `costs.ts` (new) | The cost table: per-action buffered provider cost × 100 = credits, to 1 decimal (charged exactly, not rounded up per action, so the typical months in `docs/pricing.md` §4 still fit). Stripe fee: 2.9% + $0.30 on one-off payments, + 0.7% Billing on subscriptions — the doc's own tables disagree on this point ($0.59 on a $10 top-up vs $1.34 on a $29 subscription) and the split above is what reconciles them. Weekly grants, PAYG pack ($10 = 100 credits, 7 days), agent add-on (+$29/mo, +120/week), and the margin-proof functions. |
+| `costs.ts` (new) | The cost table: per-action buffered provider cost × 100 = credits, to 1 decimal (charged exactly, not rounded up per action, so the typical months in `docs/pricing.md` §4 still fit). Stripe fee: 2.9% + $0.30 on one-off payments, + 0.7% Billing on subscriptions — the doc's own tables disagree on this point ($0.59 on a $10 top-up vs $1.34 on a $29 subscription) and the split above is what reconciles them. Weekly grants, PAYG pack ($10 = 500 credits, 7 days — aligned to the wallet top-up in the finishing step), agent add-on (+$29/mo, +120/week), and the margin-proof functions. |
 | `cost-guard.ts` (new) | Pure enforcement of guarantees 1–9: pre-flight estimate, reserve-then-charge (hold in the ledger, real cost charged, rest released), bucket order (free cap → allowance → wallet), hard caps (deep chats 10/day, audits 3/hour/org, trend adapts 4/day), weekly expiry + Growth grace, Monday–Sunday weeks, downgrade-before-stopping (free only: Tier 1 at 45 credits spent, rules-only at 60), no-silent-upgrades check, abuse predicates (disposable email, unverified email, second free store per domain, anonymous audit without captcha), margin aggregation + the 80%-in-the-first-half alert. |
 | `allowance.ts` (new) | `UNIFIED_ALLOWANCE`: the mapping above, count ceilings, effective-monthly maths, and the plain-words unification note shown on Billing. |
 | `store.ts` (new) | Pricing state, persisted as a ToolInput row (kind `"pricing"`) with an in-memory map in demo mode — the established Step 2/3 pattern. Wallet ledger (topup/hold/charge/release/refund/payg, capped at 200 entries), credit buckets, usage events (capped at 500), monthly/daily rollover, idempotent weekly grants, top-ups ($10/$25/$50 only), PAYG purchase from wallet or card, refunds of unused balance only, auto top-up (off by default, opt-in, monthly ceiling), approval coverage marks. |
@@ -96,7 +96,7 @@ state by task id.
 - **Billing page:** AI allowance section — progress bar (credits used of
   the monthly cap), weekly grant + buckets with expiry dates, counts left
   (write-ups / coach / deep), wallet balance, top-up ($10/$25/$50),
-  PAYG pack ($10 = 100 credits, wallet or card), auto top-up form (opt-in,
+  PAYG pack ($10 = 500 credits, wallet or card), auto top-up form (opt-in,
   ceiling), recent AI use, unification note, margin alert banner.
   Tier prices and the plan cards are untouched.
 - **Billing actions (`billing/actions.ts`):** `topUpWalletAction`,
@@ -124,7 +124,7 @@ generic chat at $0.013 provider for 1.3 credits).
 |---|---|---|---|---|
 | Starter weekly (60/wk) | $29/mo | $2.60 nominal / $3.38 worst | $22.56 / $21.78 | 78% / 75% |
 | Growth weekly (180/wk) | $59/mo | $7.80 nominal / $10.14 worst | $44.78 / $42.44 | 76% / 72% |
-| PAYG $10 = 100 credits | $10 | $1.00 | $8.41 | 84% |
+| PAYG $10 = 500 credits | $10 | $5.00 | $4.41 | 44% |
 | Agent add-on +120/wk | +$29/mo | $5.20 | $22.46 | 77% |
 | Wallet top-up $10 / $25 / $50 | — | $5.00 / $12.50 / $25.00 | $4.41 / $11.47 / $23.25 | 44% / 46% / 47% |
 
@@ -191,18 +191,16 @@ against the $0.60 hard cap, unchanged.
 | `tests/pricing-*.test.ts` (new, 4 files) | 60 tests |
 | `docs/pivot/step-4-pricing.md` (this file) | Record |
 
-## 7. Open decision for Sid — PAYG vs wallet value gap (flagged, not hidden)
+## 7. Decision — PAYG vs wallet value gap (DECIDED in the finishing step, 19 Nov 2026)
 
 A $10 wallet top-up buys $5.00 of provider cost (500 credits at 2x). A
-$10 PAYG pack buys 100 credits ($1.00 of provider cost) — 5x less for the
-same $10, because the pack is priced at $0.10/credit. Both clear the
-margin tests (PAYG 84%), and the pack's premium is the small-pack,
-7-day-expiry price — but a customer who compares the two will notice.
-Before launch, pick one: (a) keep it and say so on Billing (the page
-already says "the wallet top-up is better value"), (b) align PAYG to 500
-credits for $10, or (c) price PAYG at $0.02/credit ($10 = 500 credits is
-the same as (b)). The code prices PAYG from one constant (`PAYG_PACK`),
-so the change is one line plus the Billing copy.
+$10 PAYG pack used to buy 100 credits ($1.00 of provider cost) — 5x less
+for the same $10. Option (b) was implemented: **PAYG is now $10 = 500
+credits, 7-day expiry**, same as the wallet top-up. The only difference
+left is expiry: PAYG credits lapse after 7 days, wallet credit does not.
+Margin at cap is now $10 − $0.59 Stripe − $5.00 provider = **$4.41
+(44%)**, identical to a $10 wallet top-up. Reversible in one constant
+(`PAYG_PACK` in `src/lib/pricing/costs.ts`) plus the Billing copy.
 
 ## 8. What remains blocked for Step 5
 

@@ -4,6 +4,8 @@ import { getDays, getSettings, getStock, getSuppliers, listApprovals, createAppr
 import { getSnapshot } from "@/lib/meta/store";
 import { getGoogleSnapshot } from "@/lib/google-ads/service";
 import { qaWalk, scorecardBrief } from "@/lib/agent/morning";
+import { auditRuns } from "@/lib/site-audit/run";
+import { healthFromFacts } from "@/lib/site-audit/checks";
 import { stockRows } from "@/lib/stock";
 import { logAudit } from "@/lib/meta/store";
 
@@ -27,10 +29,16 @@ export async function GET(req: NextRequest) {
   const now = new Date().toISOString();
   let users = 0, exceptions = 0, cards = 0, boring = 0;
   for (const u of await listNudgeRecipients()) {
-    const [days, settings, stock, suppliers, snap, gaSnap, approvals] = await Promise.all([
+    const [days, settings, stock, suppliers, snap, gaSnap, approvals, runs] = await Promise.all([
       getDays(u.userId), getSettings(u.userId), getStock(u.userId), getSuppliers(u.userId),
       getSnapshot(u.userId), getGoogleSnapshot(u.userId).catch(() => null), listApprovals(u.userId),
+      // Latest site check: checkout/pixel health for the QA walk. A check
+      // older than 30 days is treated as unknown, never as ok.
+      auditRuns(u.userId, 1).catch(() => []),
     ]);
+    const latestRun = runs[0];
+    const freshCheck = latestRun?.ok && latestRun.facts && Date.parse(now) - Date.parse(latestRun.finishedAt ?? latestRun.startedAt) < 30 * 86_400_000;
+    const health = freshCheck ? healthFromFacts(latestRun.facts) : { checkoutOk: null, pixelOk: null };
     const real = days.filter((d) => !d.example);
     if (!real.length) continue;
     users++;
@@ -44,7 +52,7 @@ export async function GET(req: NextRequest) {
       days: real, settings, yesterday, sameWeekdayLastWeek: lastWeek,
       heroStockDaysLeft: hero?.daysLeft ?? null,
       refundRatePct7d: net7 > 0 ? (refunds7 / net7) * 100 : null,
-      checkoutOk: null, pixelOk: null, // site-check health is not wired into this cron yet — unknown, never assumed ok
+      checkoutOk: health.checkoutOk, pixelOk: health.pixelOk, // from the latest site check (<=30 days); null = unknown, never assumed ok
       lastSyncAt: { shopify: null, meta: snap?.syncedAt ?? null, google: gaSnap ? gaSnap.to : null, tiktok: null },
       now,
     });

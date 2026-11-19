@@ -11,7 +11,8 @@ import { runRules, type Insight, type Signals } from "./audit";
  * - checkout: checkout completion — Shopify sync pulls orders, not checkouts.
  * - device: mobile vs desktop conversion split — scorecard days carry no device split.
  * - searchTerms: Google search-term rows — the Google sync pulls campaign totals only.
- * - speed: PageSpeed score / LCP — the site check is plain fetches, no PageSpeed API.
+ * - speed: PageSpeed score / LCP — pulled by the site check when
+ *   PAGESPEED_API_KEY is set (finishing step); without a key it stays uncovered.
  * - social: social presence — no social API is pulled.
  */
 export type SyncCoverage = {
@@ -25,7 +26,7 @@ export type SyncCoverage = {
   checkout: boolean; // checkout completion — not collected yet
   device: boolean; // mobile/desktop split — not collected yet
   searchTerms: boolean; // Google search terms — not pulled yet
-  speed: boolean; // PageSpeed score/LCP — no PageSpeed API yet
+  speed: boolean; // PageSpeed score/LCP — pulled when PAGESPEED_API_KEY is set
 };
 
 export const emptyCoverage = (): SyncCoverage => ({

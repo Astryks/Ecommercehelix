@@ -196,7 +196,7 @@ export function topUpWallet(
 }
 
 /**
- * Buy a PAYG pack: $10 = 100 credits, expiring 7 days after purchase.
+ * Buy a PAYG pack: $10 = 500 credits, expiring 7 days after purchase.
  * Pay from the wallet (deducts $10 of balance) or by card — card purchases
  * need Stripe, so without it the purchase is refused, never faked.
  */

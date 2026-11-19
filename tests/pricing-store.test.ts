@@ -84,7 +84,7 @@ describe("wallet — prepaid only, balance never below zero", () => {
   });
 });
 
-describe("PAYG packs — $10 = 100 credits, 7-day expiry", () => {
+describe("PAYG packs — $10 = 500 credits, 7-day expiry", () => {
   it("buys from the wallet balance", () => {
     const funded = topUpWallet(state(), 10, { demo: true });
     if ("error" in funded) throw new Error("unexpected");
@@ -92,7 +92,7 @@ describe("PAYG packs — $10 = 100 credits, 7-day expiry", () => {
     expect("error" in bought).toBe(false);
     if (!("error" in bought)) {
       expect(bought.state.walletBalanceUsd).toBe(0);
-      expect(bought.bucket.remaining).toBe(100);
+      expect(bought.bucket.remaining).toBe(500);
       expect(bought.bucket.expiresAt).toBe("2026-11-26T08:00:00.000Z");
     }
   });
@@ -102,7 +102,7 @@ describe("PAYG packs — $10 = 100 credits, 7-day expiry", () => {
   });
   it("a card-paid pack is granted without a wallet deduction (webhook path)", () => {
     const { state: next, bucket } = grantPaygPack(state(), "cs_test_123");
-    expect(bucket.remaining).toBe(100);
+    expect(bucket.remaining).toBe(500);
     expect(next.walletBalanceUsd).toBe(0);
     expect(next.ledger[0].ref).toBe("cs_test_123");
   });

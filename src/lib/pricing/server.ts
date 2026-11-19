@@ -11,6 +11,7 @@ import { UNIFIED_ALLOWANCE, UNIFICATION_NOTE, countsLeft } from "./allowance";
 import { marginAlert, marginBy, type UsageEvent } from "./cost-guard";
 import { PLAN_ECONOMICS } from "./costs";
 import { ensureWeeklyGrant, getPricingState, pricingSummary, type PricingState } from "./store";
+import { hasDb, prisma } from "../db";
 
 export type PricingView = {
   plan: PlanId;
@@ -62,7 +63,23 @@ export type MarginView = {
   alertOrgs: string[];
 };
 
-/** Margin dashboard data for one org's events (the all-orgs view needs an admin role — not built in Step 4). */
+/**
+ * All usage events across orgs, for the admin margin view (finishing step).
+ * Reads every ToolInput row of kind "pricing". In-memory/demo mode there is
+ * no cross-user store, so it returns [] and the admin view says so.
+ */
+export async function allOrgsUsageEvents(): Promise<UsageEvent[]> {
+  if (!hasDb) return [];
+  const rows = await prisma.toolInput.findMany({ where: { kind: "pricing" }, select: { data: true } });
+  const events: UsageEvent[] = [];
+  for (const r of rows) {
+    const state = r.data as Partial<PricingState> | null;
+    for (const e of state?.usageEvents ?? []) events.push(e);
+  }
+  return events;
+}
+
+/** Margin dashboard data for one org's events (all-orgs: see allOrgsUsageEvents). */
 export function marginView(events: UsageEvent[], planPrices: Record<PlanId, number>, now = new Date()): MarginView {
   const byPlan = marginBy(events, "plan", planPrices);
   const byFeature = marginBy(events, "feature", planPrices);

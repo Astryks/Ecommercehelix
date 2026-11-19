@@ -98,7 +98,7 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
       {sp.topup === "demo" && <p className="mt-4 rounded-xl bg-amber-50 p-3 text-sm text-amber-900">Demo credit added — no real charge. Stripe is not connected in demo mode.</p>}
       {sp.topup === "1" && <p className="mt-4 rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">Payment received. Your wallet is topped up.</p>}
       {sp.payg === "demo" && <p className="mt-4 rounded-xl bg-amber-50 p-3 text-sm text-amber-900">Demo PAYG pack added — no real charge. Stripe is not connected in demo mode.</p>}
-      {sp.payg === "1" && <p className="mt-4 rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">PAYG pack added: 100 credits, expiring in 7 days.</p>}
+      {sp.payg === "1" && <p className="mt-4 rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">PAYG pack added: 500 credits, expiring in 7 days.</p>}
       {sp.payg === "nofunds" && <p className="mt-4 rounded-xl bg-amber-50 p-3 text-sm text-amber-900">The wallet does not have $10 for a PAYG pack. Top up first, or pay by card.</p>}
       {sp.payg === "nostripe" && <p className="mt-4 rounded-xl bg-amber-50 p-3 text-sm text-amber-900">Card payments are not set up yet (Stripe is not connected). Top up the wallet instead.</p>}
       {sp.autotopup === "1" && <p className="mt-4 rounded-xl bg-emerald-50 p-3 text-sm text-emerald-900">Auto top-up preference saved.</p>}
@@ -149,8 +149,8 @@ export default async function Billing({ searchParams }: PageProps<"/dashboard/bi
             </div>
           </div>
           <div className="rounded-xl border border-slate-200 p-4">
-            <h3 className="text-sm font-semibold text-slate-700">PAYG credits — $10 for 100 credits</h3>
-            <p className="mt-1 text-xs text-slate-500">Expiring 7 days after purchase. Unspent credits lapse. Best for a busy week, not for regular use — the wallet top-up is better value.</p>
+            <h3 className="text-sm font-semibold text-slate-700">PAYG credits — $10 for 500 credits</h3>
+            <p className="mt-1 text-xs text-slate-500">Expiring 7 days after purchase. Unspent credits lapse. Same 500 credits as a $10 wallet top-up — the difference is expiry: PAYG is for a busy week, the wallet never expires.</p>
             <div className="mt-3 flex flex-wrap gap-2">
               <form action={buyPaygAction}>
                 <input type="hidden" name="payFrom" value="wallet" />

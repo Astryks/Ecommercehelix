@@ -363,7 +363,7 @@ export function nextWeeklyBucket(p: {
   return { id: `wk-${p.weekKey}`, kind: "weekly", credits, remaining: credits, grantedAt: new Date().toISOString(), expiresAt };
 }
 
-/** PAYG bucket: $10 = 100 credits, expiring 7 days after purchase. */
+/** PAYG bucket: $10 = 500 credits, expiring 7 days after purchase (aligned to the $10 wallet top-up, finishing step). */
 export function paygBucket(purchasedAt = new Date()): CreditBucket {
   return {
     id: `payg-${purchasedAt.getTime()}`,
