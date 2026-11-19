@@ -91,3 +91,35 @@ export function summarise(days: DayInput[], yesterday: string, s: Settings): Tod
   }
   return { hasDay: true, profit: p, sales: x.netRevenue, orders: y.orders, adSpend: x.adSpend, costPerSale: x.aCpa, avgProfit: avg, meaning, tone };
 }
+
+export type Stance = "Push" | "Careful push" | "Hold" | "Defend" | "Not enough data";
+
+/** MER% (ad spend ÷ net revenue) for a set of days; null when there is no ad spend or no revenue to judge. */
+export function merPctFor(days: DayInput[]): number | null {
+  const t = sum(days.filter((d) => !d.example));
+  const net = t.revenue - t.discounts - t.refunds;
+  const ad = t.adMeta + t.adGoogle + t.adTiktok + t.adOther;
+  if (ad <= 0 || net <= 0) return null;
+  return (ad / net) * 100;
+}
+
+export type StanceResult = { stance: Stance; mer3: number | null; merMtd: number | null; targetMerPct: number };
+
+/**
+ * Agent stance from the pivot's daily loop (compound-daily-plan): MER on target
+ * means at or under the target MER. 3-day MER on + month-to-date on = Push;
+ * 3-day on / MTD off = Careful push; 3-day off / MTD on = Hold; both off = Defend.
+ * Needs at least one day with ad spend in each window, otherwise "Not enough data".
+ */
+export function stanceFor(days: DayInput[], today: string, targetMerPct: number): StanceResult {
+  const past = days.filter((d) => d.date < today).sort((a, b) => a.date.localeCompare(b.date));
+  const last3 = past.slice(-3);
+  const mtd = past.filter((d) => d.date.slice(0, 7) === today.slice(0, 7));
+  const mer3 = merPctFor(last3);
+  const merMtd = merPctFor(mtd);
+  if (mer3 === null || merMtd === null) return { stance: "Not enough data", mer3, merMtd, targetMerPct };
+  const on3 = mer3 <= targetMerPct;
+  const onMtd = merMtd <= targetMerPct;
+  const stance: Stance = on3 && onMtd ? "Push" : on3 ? "Careful push" : onMtd ? "Hold" : "Defend";
+  return { stance, mer3, merMtd, targetMerPct };
+}

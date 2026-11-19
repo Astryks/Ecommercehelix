@@ -37,11 +37,12 @@ describe("coach config + flag", () => {
     expect(COACH_LIMITS.starter).toEqual({ total: 300, deep: 40 });
     expect(COACH_LIMITS.growth).toEqual({ total: 800, deep: 100 });
   });
-  it("flag is off by default and off in production unless the prod flag is set", () => {
-    expect(coachEnabled({})).toBe(false);
-    expect(coachEnabled({ HELIX_COACH: "1", NODE_ENV: "development" })).toBe(true);
-    expect(coachEnabled({ HELIX_COACH: "1", VERCEL_ENV: "production", NODE_ENV: "production" })).toBe(false);
-    expect(coachEnabled({ HELIX_COACH: "1", HELIX_COACH_PROD: "1", VERCEL_ENV: "production", NODE_ENV: "production" })).toBe(true);
+  it("flag is on by default, with HELIX_COACH=0 as the kill switch", () => {
+    expect(coachEnabled({})).toBe(true);
+    expect(coachEnabled({ HELIX_COACH: "1" })).toBe(true);
+    expect(coachEnabled({ HELIX_COACH: "0" })).toBe(false);
+    expect(coachEnabled({ VERCEL_ENV: "production" })).toBe(true);
+    expect(coachEnabled({ HELIX_COACH: "0", VERCEL_ENV: "production" })).toBe(false);
   });
   it("not live without a gateway key", () => {
     expect(coachLive({})).toBe(false);

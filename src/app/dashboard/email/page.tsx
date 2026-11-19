@@ -1,18 +1,27 @@
 import Link from "next/link";
 import { BookOpen, Lock, Mail, MessageSquare, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getAccount, listApprovals } from "@/lib/repo";
+import { getAccount, getDays, listApprovals } from "@/lib/repo";
 import { FLOWS } from "@/lib/seed/flows";
 import { PLAN_RANK, planName } from "@/lib/plans";
 import { doItForMe } from "../actions";
+import { flowStatuses } from "@/lib/agent/email-flows";
+import { klaviyoSummary } from "@/lib/klaviyo/service";
+import { klaviyoOn } from "@/lib/klaviyo/config";
 
 export default async function EmailAutomation() {
   const u = await requireUser("/dashboard/email");
-  const [acct, approvals] = await Promise.all([getAccount(u.id), listApprovals(u.id)]);
+  const [acct, approvals, days] = await Promise.all([getAccount(u.id), listApprovals(u.id), getDays(u.id)]);
   const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
   const approved = new Set(approvals.filter((a) => a.status === "approved").map((a) => a.taskId));
-  const live = FLOWS.filter((f) => f.example.status === "live" || approved.has(`flow-${f.id}`)).length;
-  const revenue = FLOWS.reduce((a, f) => a + f.example.revenue30d, 0);
+  // Step 3: real Klaviyo status when connected; example numbers stay example-labelled for everyone else.
+  const klaviyo = klaviyoOn() ? await klaviyoSummary(u.id).catch(() => null) : null;
+  const recent = days.filter((d) => !d.example).slice(-30);
+  const hasRepeatBuyers = recent.some((d) => (d.newCustomerRevenue ?? 0) < (d.revenue - d.discounts - d.refunds));
+  const statuses = flowStatuses({ klaviyo, hasRepeatBuyers, approvedFlowIds: [...approved].map((t) => t.replace(/^flow-/, "")) });
+  const byId = new Map(statuses.map((s) => [s.flow.id, s]));
+  const live = statuses.filter((s) => s.status === "live").length;
+  const revenue = klaviyo ? klaviyo.flowRevenue30 : FLOWS.reduce((a, f) => a + f.example.revenue30d, 0);
 
   return (
     <div className="mx-auto max-w-6xl">
@@ -20,9 +29,9 @@ export default async function EmailAutomation() {
         <div>
           <div className="flex items-center gap-2">
             <h1 className="page-title">Email automation</h1>
-            <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-amber-800">Example data</span>
+            <span className={`rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wide ${klaviyo ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-800"}`}>{klaviyo ? "Klaviyo connected — live data" : "Example data"}</span>
           </div>
-          <p className="mt-1 max-w-3xl text-slate-600">Every flow most stores need, with timing, discount rules and full copy to paste into your email tool (for example Shopify Email). Helix does not connect to email tools yet.</p>
+          <p className="mt-1 max-w-3xl text-slate-600">Every flow most stores need, with timing, discount rules and full copy to paste into your email tool (for example Shopify Email). {klaviyo ? "Flows are created in Klaviyo in draft status first and go live only after your final check. Helix never sends email on its own." : "Klaviyo is not connected, so Helix gives you copy + timing to paste — labelled as such, never presented as a live flow."}</p>
         </div>
         <div className="flex gap-2">
                     <button disabled title="Coming soon" className="btn-ghost text-xs">Connect Shopify Email</button>
@@ -30,24 +39,26 @@ export default async function EmailAutomation() {
       </header>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
-        <div className="card p-5"><p className="text-sm text-slate-500">Flows live (example)</p><p className="mt-1 text-2xl font-bold">{live} of {FLOWS.length}</p></div>
-        <div className="card p-5"><p className="text-sm text-slate-500">Flow revenue, last 30 days (example)</p><p className="mt-1 text-2xl font-bold">${revenue.toLocaleString("en-AU")}</p></div>
-        <div className="card p-5"><p className="text-sm text-slate-500">Biggest gap (example)</p><p className="mt-1 text-lg font-bold">Abandoned cart + win-back</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Flows live{klaviyo ? "" : " (example)"}</p><p className="mt-1 text-2xl font-bold">{live} of {FLOWS.length}</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Flow revenue, last 30 days{klaviyo ? " (Klaviyo)" : " (example)"}</p><p className="mt-1 text-2xl font-bold">${revenue.toLocaleString("en-AU")}</p></div>
+        <div className="card p-5"><p className="text-sm text-slate-500">Biggest gap{klaviyo ? "" : " (example)"}</p><p className="mt-1 text-lg font-bold">{statuses.filter((s) => s.status !== "live" && s.eligible).slice(0, 2).map((s) => s.flow.name).join(" + ") || "None — all flows live"}</p></div>
       </div>
 
       <div className="mt-6 space-y-4">
         {FLOWS.map((f) => {
           const id = `flow-${f.id}`;
-          const isLive = f.example.status === "live" || approved.has(id);
+          const st = byId.get(f.id);
+          const isLive = st?.status === "live";
+          const isDraft = st?.status === "draft";
           const canDo = PLAN_RANK[acct.plan] >= PLAN_RANK[f.tier];
           return (
             <details key={f.id} className="card group p-0" open={f.id === "abandoned-cart"}>
               <summary className="flex cursor-pointer list-none flex-wrap items-center gap-3 p-5 marker:hidden">
-                <span className={`h-2.5 w-2.5 rounded-full ${isLive ? "bg-emerald-500" : "bg-slate-300"}`} aria-hidden />
+                <span className={`h-2.5 w-2.5 rounded-full ${isLive ? "bg-emerald-500" : isDraft ? "bg-amber-500" : "bg-slate-300"}`} aria-hidden />
                 <span className="font-semibold">{f.name}</span>
-                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ring-1 ${isLive ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : "bg-slate-100 text-slate-600 ring-slate-200"}`}>{isLive ? "Live" : "Not set up"}</span>
+                <span className={`rounded-full px-2 py-0.5 text-xs font-medium ring-1 ${isLive ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : isDraft ? "bg-amber-50 text-amber-700 ring-amber-200" : "bg-slate-100 text-slate-600 ring-slate-200"}`}>{isLive ? "Live" : isDraft ? "Draft — final check needed" : "Not set up"}</span>
                 <span className="text-xs text-slate-500">{f.emails.length} messages · {f.trigger}</span>
-                <span className="ml-auto text-sm font-semibold text-slate-700">{f.example.revenue30d ? `$${f.example.revenue30d.toLocaleString("en-AU")} / 30d` : ""}</span>
+                <span className="ml-auto text-sm font-semibold text-slate-700">{klaviyo ? "" : f.example.revenue30d ? `$${f.example.revenue30d.toLocaleString("en-AU")} / 30d (example)` : ""}</span>
               </summary>
               <div className="border-t border-slate-100 p-5">
                 <div className="grid gap-3 text-sm sm:grid-cols-3">
@@ -55,6 +66,9 @@ export default async function EmailAutomation() {
                   <p><span className="font-semibold">Exit when:</span> {f.exitWhen}</p>
                   <p><span className="font-semibold">Discount rule:</span> {f.discount}</p>
                 </div>
+                <p className="mt-2 text-xs text-slate-500">
+                  {st && !st.eligible ? st.eligibilityReason : st?.setupMode === "klaviyo-draft" ? "Set up: draft in Klaviyo first, live only after your final check." : "Set up: copy + timing to paste into your email tool — not a live flow until you build it."}
+                </p>
                 <ol className="mt-4 space-y-3">
                   {f.emails.map((e, i) => (
                     <li key={i} className="flex gap-3 rounded-xl bg-slate-50 p-3">

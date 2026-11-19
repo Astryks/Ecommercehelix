@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Boxes, Briefcase, CalendarDays, CreditCard, FileText, Inbox, LifeBuoy, Lightbulb, Link2, Mail, Megaphone, Route, Sparkles, Store } from "lucide-react";
+import { Boxes, Briefcase, CalendarDays, CreditCard, FileText, Inbox, LifeBuoy, Lightbulb, Link2, Mail, Megaphone, Route, ShieldCheck, Sparkles, Store } from "lucide-react";
 
 const ITEMS = [
   { href: "/dashboard/approvals", label: "Waiting for your OK", note: "Things Helix prepared. Nothing happens until you approve.", icon: Inbox },
+  { href: "/dashboard/settings/agent", label: "Agent guardrails", note: "How much Helix may do alone: propose-only, assisted, autonomous. Daily cap, never-pause list, auto-post.", icon: ShieldCheck },
   { href: "/dashboard/connect", label: "Connect your tools", note: "Shopify, Meta, Google, TikTok, Sheets or CSV.", icon: Link2 },
   { href: "/dashboard/integrations", label: "Connection details", note: "Sync, accounts and activity log.", icon: Link2 },
   { href: "/dashboard/billing", label: "Plan and billing", note: "Your plan, card and invoices. Cancel anytime.", icon: CreditCard },

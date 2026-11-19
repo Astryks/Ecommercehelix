@@ -45,6 +45,16 @@ export function isDemoUserId(id: string | null | undefined): boolean {
   return typeof id === "string" && id.startsWith(DEMO_ID_PREFIX);
 }
 
+/**
+ * Step 2 of the agent pivot: example scorecard days, products and stock are
+ * seeded for demo users only, so a real store never sees made-up numbers
+ * presented as its own data. A real user starts empty and sees
+ * "Not connected yet" until a sync or a manual entry lands.
+ */
+export function seedExampleFor(userId: string | null | undefined): boolean {
+  return isDemoUserId(userId);
+}
+
 export function isDemoEmail(email: string | null | undefined): boolean {
   return typeof email === "string" && email.toLowerCase().endsWith("@" + DEMO_EMAIL_DOMAIN);
 }

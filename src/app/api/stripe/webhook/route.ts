@@ -60,6 +60,25 @@ export async function POST(req: Request) {
           // The plan comes from the real subscription and price, never from checkout metadata.
           const sub = await stripe.subscriptions.retrieve(subId);
           result = await applySub(sub as unknown as SubLike, event.created, userId);
+        } else if (cs.mode === "payment" && userId && (cs.metadata?.kind === "topup" || cs.metadata?.kind === "payg")) {
+          // Step 4: wallet top-up / PAYG pack. Credit is granted ONLY here,
+          // after Stripe confirms the payment — never at checkout time.
+          // claimEvent() above dedupes webhook retries, so a replayed event
+          // cannot credit twice.
+          const amount = Number(cs.metadata?.amountUsd ?? 0);
+          const pricingStore = await import("@/lib/pricing/store");
+          const state = await pricingStore.getPricingState(userId);
+          if (cs.metadata?.kind === "topup" && [10, 25, 50].includes(amount)) {
+            const r = pricingStore.topUpWallet(state, amount as 10 | 25 | 50, { demo: false, ref: cs.id });
+            if (!("error" in r)) {
+              await pricingStore.savePricingState(userId, r.state);
+              result = "ok";
+            } else result = "topup-error";
+          } else if (cs.metadata?.kind === "payg" && amount === 10) {
+            const r = pricingStore.grantPaygPack(state, cs.id);
+            await pricingStore.savePricingState(userId, r.state);
+            result = "ok";
+          }
         }
         break;
       }

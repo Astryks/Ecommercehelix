@@ -19,7 +19,7 @@ import { klaviyoSummary } from "@/lib/klaviyo/service";
 const SCHEDULE = [
   ["Store check", "Once on Free, monthly on Starter and Growth"],
   ["Meta ad results", "Daily, when Meta is connected"],
-  ["Shopify, Google Ads, email, social", "Not connected yet"],
+  ["Shopify, Google Ads, email, social", "Daily, when connected"],
 ];
 
 export default async function Insights() {
@@ -32,6 +32,8 @@ export default async function Insights() {
   const paid = PLAN_RANK[acct.plan] >= PLAN_RANK.starter;
   const open = all.filter((i) => !done.has(`insight-${i.id}`));
   const resolved = all.length - open.length;
+  // A real user with no synced data has nothing checked yet — that is not "all clear".
+  const nothingChecked = !demo && open.length === 0 && !live.coverage.funnel && !live.coverage.meta && !live.coverage.google && !live.coverage.email && !live.coverage.site;
   const kSum = klaviyoOn() && !demo ? await klaviyoSummary(u.id).catch(() => null) : null;
   const kFixes = kSum ? klaviyoFixes(kSum) : [];
 
@@ -78,7 +80,17 @@ export default async function Insights() {
           {!demo && <h2 className="pt-2 text-lg font-semibold">Ads and funnel {live.metaLive ? "" : "(example data until Meta is connected)"}</h2>}
           {(paid ? open : open.slice(0, 3)).map((ins) => <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} />)}
           {!paid && demo && open.length > 3 && <UpgradePrompt need="starter" forKey="dfm" title={`${open.length - 3} more fixes found`} body="Free shows your top 3 fixes. Starter shows every fix, with a step-by-step checklist for each." />}
-          {open.length === 0 && <div className="card p-8 text-center text-slate-600">All clear. Helix will raise new insights after the next audit.</div>}
+          {open.length === 0 && !nothingChecked && <div className="card p-8 text-center text-slate-600">All clear. Helix will raise new insights after the next audit.</div>}
+          {nothingChecked && (
+            <div className="card p-8 text-center text-slate-600">
+              <p className="font-semibold text-slate-900">Nothing checked yet</p>
+              <p className="mx-auto mt-1 max-w-md text-sm">Helix has no synced numbers to audit — it will not guess from example data. Connect Shopify or Meta, or add yesterday&apos;s numbers on the Scorecard, and the checks run on your real store.</p>
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
+                <Link href="/dashboard/integrations" className="btn-dark text-xs">Connect Shopify or Meta</Link>
+                <Link href="/dashboard/scorecard" className="btn-ghost text-xs">Add numbers by hand</Link>
+              </div>
+            </div>
+          )}
         </div>
         <aside className="space-y-6">
           {demo && <section className="card p-5">
@@ -92,7 +104,7 @@ export default async function Insights() {
               ))}
             </ul>
           </section>}
-          <section className="card p-5">
+          {demo && <section className="card p-5">
             <h2 className="font-semibold">Social presence checklist (example)</h2>
             <ul className="mt-3 space-y-2.5">
               {SOCIAL_CHECKLIST_EXAMPLE.map((c) => (
@@ -102,7 +114,7 @@ export default async function Insights() {
                 </li>
               ))}
             </ul>
-          </section>
+          </section>}
           <section className="card p-5">
             <h2 className="flex items-center gap-2 font-semibold"><CalendarClock className="h-4 w-4 text-cyan-700" aria-hidden /> What Helix checks, and when</h2>
             <ul className="mt-3 space-y-2 text-sm">

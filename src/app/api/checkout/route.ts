@@ -18,6 +18,55 @@ const PLANS: PlanId[] = ["free", "starter", "growth"];
 async function handle(req: Request, plan: PlanId) {
   const base = (process.env.NEXT_PUBLIC_APP_URL ?? new URL(req.url).origin).replace(/\/$/, "");
   const back = (q: string) => NextResponse.redirect(new URL(`/dashboard/billing?${q}`, base), 303);
+  // Step 4: wallet top-ups ($10/$25/$50) and PAYG packs ($10 = 100 credits)
+  // go through Stripe Checkout as one-off payments. Without Stripe (demo
+  // mode) the credit is recorded as demo credit, labelled as such — never
+  // presented as a real charge. The webhook credits the wallet on payment.
+  const url = new URL(req.url);
+  if (url.searchParams.has("topup") || url.searchParams.has("payg")) {
+    const kind = url.searchParams.has("payg") ? ("payg" as const) : ("topup" as const);
+    const amount = kind === "payg" ? 10 : Number(url.searchParams.get("topup"));
+    if (![10, 25, 50].includes(amount)) return NextResponse.json({ error: "bad top-up amount" }, { status: 400 });
+    const s = await auth();
+    if (!s?.user?.id) return NextResponse.redirect(new URL(`/signin?next=${encodeURIComponent(req.url)}`, base), 303);
+    const userId = await ensureUser(s.user.id, s.user.email ?? "", s.user.name ?? "");
+    const billing = await getBilling(userId);
+    const pricingStore = await import("@/lib/pricing/store");
+    if (!stripe) {
+      const state = await pricingStore.getPricingState(userId);
+      if (kind === "topup") {
+        const r = pricingStore.topUpWallet(state, amount as 10 | 25 | 50, { demo: true });
+        if ("error" in r) return NextResponse.json({ error: r.error }, { status: 400 });
+        await pricingStore.savePricingState(userId, r.state);
+      } else {
+        const r = pricingStore.grantPaygPack(state, `demo-${Date.now()}`);
+        await pricingStore.savePricingState(userId, r.state);
+      }
+      return back(kind === "payg" ? "payg=demo" : "topup=demo");
+    }
+    const session = await stripe.checkout.sessions.create(
+      {
+        mode: "payment",
+        line_items: [
+          {
+            price_data: {
+              currency: "usd",
+              unit_amount: amount * 100,
+              product_data: { name: kind === "payg" ? "Helix PAYG credits (100 credits, 7 days)" : `Helix AI wallet top-up $${amount}` },
+            },
+            quantity: 1,
+          },
+        ],
+        client_reference_id: userId,
+        ...(billing.customerId ? { customer: billing.customerId } : { customer_email: s.user.email ?? undefined }),
+        metadata: { userId, kind, amountUsd: String(amount) },
+        success_url: `${base}/dashboard/billing?${kind === "payg" ? "payg=1" : "topup=1"}`,
+        cancel_url: `${base}/dashboard/billing?canceled=1`,
+      },
+      { idempotencyKey: `topup-${userId}-${kind}-${amount}-${Math.floor(Date.now() / 60000)}` },
+    );
+    return NextResponse.redirect(session.url!, 303);
+  }
   if (!PLANS.includes(plan)) return NextResponse.json({ error: "bad plan" }, { status: 400 });
   const s = await auth();
   if (!s?.user?.id) return NextResponse.redirect(new URL(`/signin?next=${encodeURIComponent(`/api/checkout?plan=${plan}`)}`, base), 303);

@@ -145,7 +145,46 @@ export function realDeps(userId: string): CoachDeps {
 export async function askCoach(userId: string, question: string, deepDive: boolean): Promise<CoachAnswer> {
   const acct = await getAccount(userId);
   const deps = realDeps(userId);
+  // Step 4: unified credit pool. Reserve the dearest tier the question could
+  // need (deep); settle the tier actually used afterwards. If even a fast
+  // message cannot be covered, the coach says so instead of answering —
+  // the count ceilings in limitGate() still apply inside runCoach.
+  const pricingStore = await import("@/lib/pricing/store");
+  let pricing = await pricingStore.loadPricingState(userId, acct.plan);
+  const pre = pricingStore.authorize(pricing, { action: deepDive ? "coach-deep" : "coach-fast", feature: "coach", plan: acct.plan });
+  if (!("reservation" in pre)) {
+    return {
+      text: "You have used this month's coach messages on your plan. They reset on the 1st, or upgrade for more.",
+      mode: "general",
+      modeLabel: "General",
+      tier: null,
+      why: null,
+      model: null,
+      links: [],
+      left: 0,
+      deepLeft: 0,
+      limited: "cap",
+    };
+  }
+  pricing = pre.state;
+  const reservation = pre.reservation;
+  await pricingStore.savePricingState(userId, pricing);
   const a = await runCoach(deps, { question, deepDive, plan: acct.plan, live: coachLive(), budgetUsd: coachBudgetUsd() });
+  // Settle the tier actually used; a limited answer settles $0 (hold released).
+  // Memory extraction is a system cost (0 credits) and is not charged here.
+  const tierAction = a.limited ? null : a.tier === "deep" ? ("coach-deep" as const) : ("coach-fast" as const);
+  const { ACTION_COSTS } = await import("@/lib/pricing/costs");
+  let settled = pricingStore.settleReservation(pricing, reservation, tierAction ? ACTION_COSTS[tierAction].providerUsd : 0, {
+    userId,
+    orgId: userId,
+    plan: acct.plan,
+    feature: "coach",
+  });
+  if (!a.limited) {
+    settled = pricingStore.recordCount(settled, "coachTotal");
+    if (a.tier === "deep") settled = pricingStore.recordCount(settled, "coachDeep");
+  }
+  await pricingStore.savePricingState(userId, settled);
   if (!a.limited || a.limited === "deep-cap") {
     await addMessage(userId, today(), "user", redact(question).slice(0, 1000));
     await addMessage(userId, today(), "coach", a.text.slice(0, 4000), { mode: a.mode, modeLabel: a.modeLabel, tier: a.tier, links: a.links });

@@ -10,7 +10,7 @@ import { toTrack, type TrackId } from "./tracks";
 import { toCountry, type Country } from "./seasons";
 import type { Goals } from "./goals";
 import { dayExTax, dayTaxRate, productExTax, toTaxMode, type SalesTaxMode } from "./tax";
-import { isDemoUserId, mayLinkByEmail } from "./demo-auth";
+import { isDemoUserId, mayLinkByEmail, seedExampleFor } from "./demo-auth";
 import { exampleStock, exampleSuppliers, type StockItem, type Supplier } from "./stock";
 
 /**
@@ -58,13 +58,15 @@ export const DEFAULT_SETTINGS: Settings = { monthlyRevenueTarget: 60000, targetM
 const toPlan = (p: string): PlanId => (p.toLowerCase() as PlanId) ?? "free";
 const toEnum = (p: PlanId) => p.toUpperCase() as "FREE" | "STARTER" | "GROWTH";
 
-/** Ensure the user exists (and has example scorecard data). Returns the canonical user id. */
+/** Ensure the user exists. Example scorecard data is seeded for demo users only (see seedExampleFor); a real user starts empty. Returns the canonical user id. */
 export async function ensureUser(id: string, email: string, name: string): Promise<string> {
   if (!hasDb) {
     if (!mem.users.has(id)) {
       mem.users.set(id, { userId: id, email, name, plan: "free", storeUrl: null, walletCents: 0, track: "growing", country: "AU", salesTaxMode: "auto", onboarded: false });
-      mem.days.set(id, exampleDays(isoDay()));
-      mem.products.set(id, exampleProducts(isoDay()));
+      if (seedExampleFor(id)) {
+        mem.days.set(id, exampleDays(isoDay()));
+        mem.products.set(id, exampleProducts(isoDay()));
+      }
     }
     return id;
   }
@@ -78,8 +80,8 @@ export async function ensureUser(id: string, email: string, name: string): Promi
       return prisma.user.findUniqueOrThrow({ where: { id } });
     });
   const sub = await prisma.subscription.findUnique({ where: { userId: user.id } });
-  // Pages call this in parallel on a first visit; skipDuplicates means only the first call seeds.
-  if (!sub && (await prisma.subscription.createMany({ data: [{ userId: user.id }], skipDuplicates: true })).count > 0) {
+  // Pages call this in parallel on a first visit; skipDuplicates means only the first call creates the row.
+  if (!sub && (await prisma.subscription.createMany({ data: [{ userId: user.id }], skipDuplicates: true })).count > 0 && seedExampleFor(user.id)) {
     await prisma.scorecardDay.createMany({ data: exampleDays(isoDay()).map((d) => ({ ...d, userId: user!.id })), skipDuplicates: true });
     await prisma.productSale.createMany({ data: exampleProducts(isoDay()).map((p) => ({ ...p, userId: user!.id })) });
   }
@@ -247,6 +249,21 @@ export async function decideApproval(userId: string, id: string, status: "approv
   return row.taskId;
 }
 
+export async function updateApproval(userId: string, id: string, detail: string): Promise<boolean> {
+  const clean = detail.trim().slice(0, 4000);
+  if (!clean) return false;
+  if (!hasDb) {
+    const row = (mem.approvals.get(userId) ?? []).find((x) => x.id === id);
+    if (!row || row.status !== "pending") return false;
+    row.detail = clean;
+    return true;
+  }
+  const row = await prisma.approval.findFirst({ where: { id, userId } });
+  if (!row || row.status !== "pending") return false;
+  await prisma.approval.update({ where: { id }, data: { detail: clean } });
+  return true;
+}
+
 // ---------- monthly goals ladder ----------
 /** The user's monthly goals, or null when they have not set any (callers fall back to track defaults). */
 export async function getGoals(userId: string): Promise<Goals | null> {
@@ -405,8 +422,9 @@ export async function listNudgeRecipients(): Promise<{ userId: string; email: st
 const supplierOut = (r: { id: string; name: string; contact: string; country: string; kind: string; moq: number; leadTimeDays: number; paymentTerms: string; notes: string; example: boolean }): Supplier =>
   ({ ...r, kind: (["factory", "trading"].includes(r.kind) ? r.kind : "unknown") as Supplier["kind"] });
 
-/** Example suppliers and stock are added once, so a new account can see how the page works. */
+/** Example suppliers and stock are added once, for demo users only, so a new account can see how the page works. Real users get stock items from the Shopify sync (setShopifyStock creates them). */
 async function seedStock(userId: string) {
+  if (!seedExampleFor(userId)) return;
   if (!hasDb) {
     if (!mem.suppliers.has(userId)) {
       mem.suppliers.set(userId, exampleSuppliers());
@@ -696,12 +714,32 @@ export async function setShopifyProducts(userId: string, dates: string[], lines:
 }
 
 /** Update on-hand counts for stock items the user already tracks, matched by SKU. */
+/** Write synced Shopify stock into the stock list. Creates an item for any SKU
+ * the user does not track yet (name defaults to the SKU; the owner can rename
+ * it), and updates on-hand / daily sales for SKUs already tracked. Idempotent:
+ * re-running a sync for the same SKUs overwrites the same rows. */
 export async function setShopifyStock(userId: string, rows: { sku: string; onHand: number; unitCost: number; dailySales: number }[]) {
-  if (!hasDb || rows.length === 0) return;
-  const items = await prisma.stockItem.findMany({ where: { userId, sku: { in: rows.map((r) => r.sku) } }, select: { id: true, sku: true, unitCost: true } });
-  for (const it of items) {
-    const r = rows.find((x) => x.sku === it.sku)!;
-    await prisma.stockItem.update({ where: { id: it.id }, data: { onHand: r.onHand, dailySales: r.dailySales, ...(it.unitCost === 0 && r.unitCost > 0 ? { unitCost: r.unitCost } : {}) } });
+  if (rows.length === 0) return;
+  if (!hasDb) {
+    const list = mem.stock.get(userId) ?? [];
+    for (const r of rows) {
+      const at = list.findIndex((x) => x.sku === r.sku);
+      if (at >= 0) {
+        list[at] = { ...list[at], onHand: r.onHand, dailySales: r.dailySales, unitCost: list[at].unitCost === 0 && r.unitCost > 0 ? r.unitCost : list[at].unitCost, example: false };
+      } else {
+        list.push({ id: `st-${Date.now().toString(36)}-${list.length}`, sku: r.sku, name: r.sku, supplierId: null, unitCost: r.unitCost, freightPerUnit: 0, dutyPct: 0, otherPerUnit: 0, onHand: r.onHand, onOrder: 0, dailySales: r.dailySales, leadTimeDays: null, safetyDays: 14, example: false });
+      }
+    }
+    mem.stock.set(userId, list);
+    return;
+  }
+  for (const r of rows) {
+    const it = await prisma.stockItem.findUnique({ where: { userId_sku: { userId, sku: r.sku } }, select: { id: true, unitCost: true } });
+    if (it) {
+      await prisma.stockItem.update({ where: { id: it.id }, data: { onHand: r.onHand, dailySales: r.dailySales, ...(it.unitCost === 0 && r.unitCost > 0 ? { unitCost: r.unitCost } : {}) } });
+    } else {
+      await prisma.stockItem.create({ data: { userId, sku: r.sku, name: r.sku, supplierId: null, unitCost: r.unitCost, freightPerUnit: 0, dutyPct: 0, otherPerUnit: 0, onHand: r.onHand, onOrder: 0, dailySales: r.dailySales, leadTimeDays: null, safetyDays: 14, example: false } });
+    }
   }
 }
 

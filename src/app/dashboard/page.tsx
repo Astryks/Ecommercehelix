@@ -1,84 +1,55 @@
 import Link from "next/link";
-import { AiBox } from "@/components/AiBox";
-import { aiHelp } from "./ai-actions";
-import { GrowthLinks } from "@/components/dashboard/GrowthLinks";
-import { getCourse } from "@/lib/course";
-import { Celebration } from "@/components/course/GoalCard";
-import { changeOf, comparison, plainLine, totalsFor } from "@/lib/growth";
-import { ArrowRight, BarChart3, BookOpen, Boxes, Briefcase, CalendarDays, Check, CheckCircle2, Clock, Flame, GraduationCap, Lock, Sparkles, Wand2 } from "lucide-react";
 import { requireUser } from "@/lib/session";
-import { getProfitSetup, getDiagnosis, getAccount, getCompletions, getDays, getRawDays, getSeasonPlans, getSettings, getStock, getSuppliers, listApprovals, streakFrom } from "@/lib/repo";
-import { stockAlerts, stockRows } from "@/lib/stock";
-import { nextTasks, bfcmTip, countdownText, seasonalAlerts, upcomingEvents, countryName } from "@/lib/seasons";
-import { SeasonalAlertCard } from "@/components/SeasonalBanner";
-import { BfcmTipStrip } from "@/components/BfcmPlan";
-import { GoalsLadder } from "@/components/GoalsLadder";
-import { goalsFor } from "@/lib/goals-server";
-import { costRatios, money, summarise } from "@/lib/today";
-import { taxLabel, typedTaxLabel } from "@/lib/tax";
-import { planState } from "@/lib/plan-state";
-import { BOTTLENECKS } from "@/lib/diagnosis";
-import { adminDueSoon } from "@/lib/business";
-import { lessonLink } from "@/lib/lesson-links";
-import { STAGE_INFO, stageOfLesson } from "@/lib/stages";
-import { StageChip } from "@/components/StageTrio";
-import { termsIn } from "@/lib/glossary";
-import { guidesForDay } from "@/lib/guides";
-import { ProfitToday } from "@/components/dashboard/ProfitToday";
-import { getSnapshot } from "@/lib/meta/store";
-import { AREA_STYLE } from "@/lib/seed/curriculum";
+import { getAccount, getCompletions, getDays, getProfitSetup, getRawDays, getSettings, listApprovals } from "@/lib/repo";
 import { track } from "@/lib/tracks";
-import { metricsFor, periodRanges } from "@/lib/analytics";
-import { insightsFor } from "@/lib/signals";
 import { dayProgress } from "@/lib/progress";
-import { PLAN_RANK, planName } from "@/lib/plans";
+import { costRatios, summarise, stanceFor } from "@/lib/today";
+import { PLAN_RANK } from "@/lib/plans";
 import { addDays, isoDay, prettyDay } from "@/lib/dates";
-import { InsightCard } from "@/components/dashboard/InsightCard";
-import { NextCardHero } from "@/components/cards/NextCardHero";
-import { canOpenDeck } from "@/lib/paywall/access";
-import { userCards } from "@/lib/cards-user";
 import { seasonTasksFor } from "@/lib/season-tasks";
-import { bannerFor } from "@/lib/season-calendar";
-import { QuestNextUp } from "@/components/dashboard/QuestNextUp";
-import { questForUser } from "@/lib/quest-server";
-import { StageStrip } from "@/components/StageStrip";
-import { RoadTeaser } from "@/components/journey/RoadSection";
-import { journeyPosition } from "@/lib/journey-server";
 import { waterfall } from "@/lib/profit-setup";
-import { TodayTasks } from "@/components/dashboard/TodayTasks";
-import { WeekPlan, type WeekItem } from "@/components/dashboard/WeekPlan";
-import { MilestoneToast } from "@/components/dashboard/MilestoneToast";
-import { achievementsForUser } from "@/lib/achievements-server";
-import { nextToCelebrate } from "@/lib/achievements";
-import { mondayOf, seenAchievements } from "@/lib/community";
-import { planToday, type TodayTask } from "@/lib/today-tasks";
-import { siteContent } from "@/lib/site-content";
+import { pickTodayTasks, type TodayTask } from "@/lib/today-tasks";
+import { insightsFor } from "@/lib/signals";
+import { topicFor } from "@/lib/daily-topic";
+import { openCoach } from "@/lib/coach/server";
+import { AgentScorecard } from "@/components/dashboard/AgentScorecard";
+import { AgentTasks } from "@/components/dashboard/AgentTasks";
+import { StoreBrainPanel } from "@/components/dashboard/StoreBrainPanel";
+import { ProfitToday } from "@/components/dashboard/ProfitToday";
 import { getShopify } from "@/lib/shopify/service";
-import { computeTools, openAlerts, getReview, lastReview } from "@/lib/tools/server";
-import { MondayReview } from "@/components/tools/MondayReview";
-import { saveWeeklyReview } from "./numbers/tools/actions";
-import { ScoreboardHero } from "@/components/scoreboard/ScoreboardHero";
-import { markMilestonesSeen, markDone, doItForMe, quickUpdate, addPrepPlan } from "./actions";
+import { markDone, doItForMe, quickUpdate } from "./actions";
 
+/**
+ * Today, agent-led (pivot Step 1): one scorecard strip with stance, at most 3
+ * rule-based tasks, one learning card, the coach's greeting + tasks, and the
+ * Store Brain. The other "what do I do today?" systems (curriculum roadmap,
+ * quests, weekly plan, Monday review, seasonal alerts) live on their own
+ * routes — linked under "More" below — and no longer compete on this screen.
+ * Tasks come from the existing rule-based pickTodayTasks / diagnosis, never a
+ * new LLM call. Do-it-for-me routes into /dashboard/approvals as a paused
+ * draft or checklist; nothing here changes a live budget.
+ */
 export default async function Today({ searchParams }: PageProps<"/dashboard">) {
   const sp = await searchParams;
   const u = await requireUser();
-  const [acct, completions, approvals, live, days, settings, snap, plans, stockItems, suppliers, diag] = await Promise.all([getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getSnapshot(u.id), getSeasonPlans(u.id), getStock(u.id), getSuppliers(u.id), getDiagnosis(u.id)]);
-  const [rawDays, goalData, course, uc] = await Promise.all([getRawDays(u.id), goalsFor(u.id), getCourse(u.id), userCards(u.id)]);
+  const [acct, completions, approvals, live, days, settings, rawDays, setupRow] = await Promise.all([
+    getAccount(u.id), getCompletions(u.id), listApprovals(u.id), insightsFor(u.id), getDays(u.id), getSettings(u.id), getRawDays(u.id), getProfitSetup(u.id),
+  ]);
   const today = isoDay();
-  const stockAlertRows = stockAlerts(stockRows(stockItems, suppliers, today));
-  const adminSoon = adminDueSoon(today, acct.country, new Set(completions.map((c) => c.taskId)));
   const yesterday = addDays(today, -1);
+  const done = new Set(completions.map((c) => c.taskId));
+  const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
+  const pendingCount = approvals.filter((a) => a.status === "pending").length;
+
   const summary = summarise(days, yesterday, settings);
+  const stance = stanceFor(days, today, settings.targetMerPct);
   const yRow = rawDays.find((d) => d.date === yesterday);
   const r = costRatios(rawDays);
   const estimatePct = Math.round((r.cogs + r.fees + r.discounts + r.refunds) * 100);
-  const done = new Set(completions.map((c) => c.taskId));
-  const pending = new Set(approvals.filter((a) => a.status === "pending").map((a) => a.taskId));
-  const T = track(acct.track);
-  const { days: DAYS, stages: STAGES, stageTier: STAGE_TIER, taskId: dayTaskId } = T;
-  const unlocked = (stage: number) => PLAN_RANK[acct.plan] >= PLAN_RANK[STAGE_TIER[stage]];
 
+  const T = track(acct.track);
+  const { days: DAYS, stageTier: STAGE_TIER, taskId: dayTaskId } = T;
+  const unlocked = (stage: number) => PLAN_RANK[acct.plan] >= PLAN_RANK[STAGE_TIER[stage]];
   const prog = dayProgress({
     days: DAYS,
     doneIds: done,
@@ -87,425 +58,102 @@ export default async function Today({ searchParams }: PageProps<"/dashboard">) {
     unlocked,
     taskId: dayTaskId,
   });
-  const nextDay = prog.nextDay;
   const current = prog.current ?? null;
   const currentLocked = current ? !unlocked(current.stage) : false;
   const insights = live.insights.filter((i) => !done.has(`insight-${i.id}`)).slice(0, 2);
-
-  const streak = streakFrom(completions);
-  const daysDone = DAYS.filter((d) => done.has(dayTaskId(d.day))).length;
-  const score = Math.min(100, 40 + 3 * completions.length + 2 * streak);
-  const totalMinutes = (current?.minutes ?? 0) + insights.length * 10;
-
-  const status = prog.status;
-  // Seasonal alerts from the real date: the most urgent one, plus any other active plan the user added.
-  const alerts = seasonalAlerts(today, acct.country);
-  const upcoming = upcomingEvents(today, acct.country, 200).slice(0, 6);
-  const wk = periodRanges("week", days.at(-1)?.date ?? yesterday);
-  const w = metricsFor(days, wk.cur, settings);
-  const wPrev = metricsFor(days, wk.prev, settings);
-  const wChange = wPrev.contribution ? Math.round(((w.contribution - wPrev.contribution) / Math.abs(wPrev.contribution)) * 100) : null;
-  const gCmp = days.length ? comparison("week", days[days.length - 1].date) : null;
-  const gNow = gCmp ? totalsFor(days, gCmp.cur, settings) : null;
-  const gPrev = gCmp ? totalsFor(days, gCmp.prev, settings) : null;
-  const growthLine = gCmp && gNow && gPrev && gPrev.dataDays ? plainLine("Net profit", changeOf(gNow.profit, gPrev.profit), gCmp.vsWord) : undefined;
-  const planKeys = new Set(plans.map((p) => p.planKey));
-  // Black Friday stays on Today from 1 August even when another date is closer: it is the big one.
-  const shownAlerts = alerts.filter((a, i) => i === 0 || planKeys.has(a.key) || (a.eventKey === "black-friday" && !a.reviewing));
-  const otherAlerts = alerts.filter((a) => !shownAlerts.includes(a) && !a.reviewing);
-  const tip = bfcmTip(today);
-  const currentStage = nextDay?.stage ?? STAGES.length;
-  const dayTask: TodayTask | null = current && !currentLocked ? { id: "day", title: current.title, why: current.steps[0] ?? current.topic, minutes: current.minutes, guideHref: `/learn/${current.learn.slug}#${current.learn.anchor}`, taskId: dayTaskId(current.day), kind: "day" } : null;
+  const dayTask: TodayTask | null = current && !currentLocked
+    ? { id: "day", title: current.title, why: current.steps[0] ?? current.topic, minutes: current.minutes, guideHref: `/learn/${current.learn.slug}#${current.learn.anchor}`, taskId: dayTaskId(current.day), kind: "day" }
+    : null;
   const ins0 = insights[0];
-  const insightTask: TodayTask | null = ins0 ? { id: "insight", title: ins0.title, why: ins0.why, minutes: 10, guideHref: `/learn/${ins0.learn.slug}${ins0.learn.anchor ? `#${ins0.learn.anchor}` : ""}`, taskId: `insight-${ins0.id}`, kind: "insight" } : null;
-  const setupRow = await getProfitSetup(u.id);
+  const insightTask: TodayTask | null = ins0
+    ? { id: "insight", title: ins0.title, why: ins0.why, minutes: 10, guideHref: `/learn/${ins0.learn.slug}${ins0.learn.anchor ? `#${ins0.learn.anchor}` : ""}`, taskId: `insight-${ins0.id}`, kind: "insight" }
+    : null;
   const wf = setupRow ? waterfall(setupRow) : null;
   const recent = rawDays.filter((d) => !d.example && d.date >= addDays(today, -28));
   const dailyUnits = recent.length ? recent.reduce((a, d) => a + d.units, 0) / 28 : 0;
-  const rawSeason = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl });
   const seasonTasks: TodayTask[] = seasonTasksFor(today, acct.country, done, { profitPerOrder: wf?.beforeMarketing, price: setupRow?.price, dailyUnits, storeUrl: acct.storeUrl })
     .map((t) => ({ id: t.taskId, title: (t.catchUp ? "Catch up: " : "") + t.title, why: `${t.why} ${t.steps[0]}`, minutes: 15, guideHref: t.guideHref, taskId: t.taskId, kind: "season" as const }));
-  const tools = await computeTools(u.id, today);
-  const week = mondayOf(today);
-  const [toolAlerts, reviewRow, prevReview] = await Promise.all([openAlerts(u.id), getReview(u.id, week), lastReview(u.id, week)]);
-  const dow = new Date(today + "T12:00:00Z").getUTCDay();
-  const showReview = dow >= 1 && dow <= 3 && (!reviewRow || dow === 1);
-  const hasAds = recent.some((d) => d.adMeta + d.adGoogle + d.adTiktok > 0);
-  const todayPlan = planToday({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done, hasAds, seasonTag: rawSeason[0]?.eventName, alerts: toolAlerts.slice(0, 3), review: showReview ? { saved: Boolean(reviewRow), worst: tools.review.worst?.name ?? null } : undefined, tip: (() => { const c = siteContent(today, acct.country); return { text: c.tip.text, href: c.tip.cta.href, label: c.tip.cta.label }; })() });
-  const [earned, seen] = await Promise.all([achievementsForUser(u.id), seenAchievements(u.id)]);
-  const celebrate = nextToCelebrate(earned, seen);
-  const unseen = earned.filter((a) => !seen.has(a.key)).map((a) => a.key);
-  const weekItems: WeekItem[] = [
-    ...DAYS.filter((d) => unlocked(d.stage) && !done.has(dayTaskId(d.day))).slice(0, 4).map((d) => ({ label: d.title, href: `/learn/${d.learn.slug}#${d.learn.anchor}`, done: false })),
-    ...seasonTasks.slice(0, 1).map((t) => ({ label: t.title, href: t.guideHref, done: false })),
-    { label: "Add your numbers each day (2 minutes)", href: "/dashboard/numbers", done: Boolean(yRow) },
-  ];
+  const tasks = pickTodayTasks({ today, numbersMissingYesterday: !yRow, season: seasonTasks, day: dayTask, insight: insightTask, done });
+
+  // Coach greeting + daily tasks + memory, rule-based (no model call). If the
+  // coach store is unavailable, Today still renders — the widget stays usable.
+  const coach = await openCoach(u.id).catch(() => null);
+  const topic = topicFor(today);
+  const learning = current && !currentLocked
+    ? { title: current.title, why: current.lesson, minutes: current.minutes, href: `/learn/${current.learn.slug}#${current.learn.anchor}`, label: "Read the lesson" }
+    : { title: topic.title, why: topic.why, minutes: 5, href: topic.href, label: "Read the lesson" };
+
   const shopConn = await getShopify(u.id);
-  const tasksBox = (
-    <>
+
+  return (
+    <div className="mx-auto max-w-3xl space-y-5">
+      <header>
+        <p className="text-sm text-slate-500">{prettyDay(today)}</p>
+        <h1 className="page-title">Today</h1>
+        <p className="page-lead">Your coach has checked the store. Here is the one number, the next steps, and what is waiting for your OK.</p>
+      </header>
+
+      {pendingCount > 0 && (
+        <p className="rounded-xl border border-violet-200 bg-violet-50 p-4 text-sm text-violet-900">
+          <strong>{pendingCount} thing{pendingCount === 1 ? "" : "s"} waiting for your OK.</strong>{" "}
+          <Link href="/dashboard/approvals" className="font-semibold underline">Review and approve</Link> — nothing goes live until you do.
+        </p>
+      )}
+
       {!shopConn && (
-        <section className="mb-5 flex flex-wrap items-center gap-3 rounded-xl border border-[#5A50D6]/30 bg-[#5A50D6]/5 p-4" data-testid="connect-prompt">
+        <section className="flex flex-wrap items-center gap-3 rounded-xl border border-[#5A50D6]/30 bg-[#5A50D6]/5 p-4" data-testid="connect-prompt">
           <p className="flex-1 text-sm text-slate-800"><span className="font-hand text-lg text-[#5A50D6]">Save time every day.</span> Connect Shopify and your ad accounts, and your daily numbers fill in by themselves.</p>
           <Link href="/dashboard/connect" className="btn-primary text-sm">Connect your tools</Link>
         </section>
       )}
-      {celebrate && <MilestoneToast title={celebrate.title} note={celebrate.note} keys={unseen} markSeen={markMilestonesSeen} />}
-      {showReview && <div className="mb-5"><MondayReview r={tools.review} saved={reviewRow ? { fixText: reviewRow.fixText } : null} lastFix={prevReview?.fixText ?? null} action={saveWeeklyReview} /></div>}
-      <TodayTasks plan={todayPlan} doneAction={markDone} doAction={doItForMe} />
-      <div className="mt-5"><WeekPlan items={weekItems} weekOf={prettyDay(mondayOf(today))} /></div>
-    </>
-  );
 
-  // Calm Today for people on a personal plan: progress, one step, and your numbers. Everything else is one tap away.
-  const [qx, road] = await Promise.all([questForUser(u.id), journeyPosition(u.id)]);
-  const st = diag && sp.full !== "1" ? await planState(u.id) : null;
-  if (st) {
-    const profitSet = Boolean(await getProfitSetup(u.id));
-    const pct = Math.round(((st.plan.indexOf(st.current)) / st.plan.length) * 100);
-    return (
-      <div className="mx-auto max-w-3xl space-y-5">
-        {sp.welcome && <p className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">Welcome to Helix. Your plan is ready. Do one step a day and you&apos;re on track.</p>}
-        <header>
-          <p className="text-sm text-slate-500">{prettyDay(today)}</p>
-          <h1 className="page-title">Today</h1>
-          <p className="page-lead">Here&apos;s what to do today. One step at a time.</p>
-        </header>
-        <ScoreboardHero userId={u.id} />
-        <StageStrip quest={qx.quest} />
-        {tasksBox}
-        <QuestNextUp q={qx.quest} streak={qx.streak} />
-        <RoadTeaser level={road.pos.level} source={road.pos.source} />
-        <NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} />
-        <section className="card p-6">
-          <div className="flex items-baseline justify-between text-sm">
-            <span className="font-semibold text-slate-800">Your plan: week {st.week} of {st.total}</span>
-            <Link href="/dashboard/plan" className="text-cyan-700 hover:underline">See the plan</Link>
-          </div>
-          <div className="mt-2 h-2 rounded-full bg-slate-100" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}><div className="h-2 rounded-full bg-cyan-500" style={{ width: `${Math.max(4, pct)}%` }} /></div>
-          <p className="mt-2 text-xs text-slate-500">Focus: {BOTTLENECKS[st.diag.diagnosis.bottleneck].goalLabel}</p>
-        </section>
-        {profitSet && (
-          <section aria-label="Your numbers">
-            <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} typedTaxNote={typedTaxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
-              prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
-          </section>
-        )}
-        {(() => {
-          const bn = bannerFor(today, acct.country);
-          return (
-            <p className="rounded-xl bg-amber-50 p-4 text-sm text-amber-900" data-banner={bn.key}>
-              <strong>{bn.text}</strong> <span className="whitespace-nowrap font-semibold">({bn.badge})</span>{" "}
-              <Link href="/dashboard/calendar" className="underline">See the calendar</Link>
-            </p>
-          );
-        })()}
-        <Link href="/dashboard?full=1" className="block text-center text-xs text-slate-500 hover:underline">Show everything on Today</Link>
-      </div>
-    );
-  }
+      <AgentScorecard s={summary} date={yesterday} stance={stance} />
 
-  return (
-    <div className="mx-auto max-w-7xl">
-      <ScoreboardHero userId={u.id} />
-      <div className="mb-6"><StageStrip quest={qx.quest} /></div>
-      <div className="mb-6">{tasksBox}</div>
-      <div className="mb-6"><QuestNextUp q={qx.quest} streak={qx.streak} /></div>
-      <div className="mb-6"><RoadTeaser level={road.pos.level} source={road.pos.source} /></div>
-      <div className="mb-6"><NextCardHero uc={uc} locked={!canOpenDeck(acct.plan, uc.deck.id)} setup={!acct.onboarded ? "build" : !diag ? "plan" : null} /></div>
-      {sp.welcome && (
-        <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
-          Welcome to Helix{acct.storeUrl ? ` for ${acct.storeUrl}` : ""}. Start with your profit dashboard, then Day 1 below. Your store check is in What to fix.
-        </div>
-      )}
-      <header className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <p className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-500">{prettyDay(today)}
-            <Link href="/dashboard/settings" className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ring-1 ${T.id === "starting" ? "bg-emerald-50 text-emerald-700 ring-emerald-200" : "bg-violet-50 text-violet-700 ring-violet-200"}`}>Track: {T.name} · change</Link>
-          </p>
-          <h1 className="mt-1 page-title">Good to see you{u.name ? `, ${u.name}` : ""}</h1>
-          <p className="page-lead">Update yesterday, see your profit, then do one small thing to grow it. About {totalMinutes + 1} minutes.</p>
-        </div>
-        <div className="flex gap-3">
-          <div className="card flex items-center gap-3 px-4 py-3">
-            <Flame className="h-6 w-6 text-orange-500" aria-hidden />
-            <div><p className="text-xs text-slate-500">Streak</p><p className="text-xl font-bold">{streak} day{streak === 1 ? "" : "s"}</p></div>
-          </div>
-          <div className="card flex items-center gap-3 px-4 py-3">
-            <svg viewBox="0 0 36 36" className="h-11 w-11 -rotate-90" aria-hidden>
-              <circle cx="18" cy="18" r="15.5" fill="none" stroke="#DEDCD4" strokeWidth="4" />
-              <circle cx="18" cy="18" r="15.5" fill="none" stroke="url(#cs)" strokeWidth="4" strokeLinecap="round" strokeDasharray={`${(score / 100) * 97.4} 97.4`} />
-              <defs><linearGradient id="cs"><stop offset="0" stopColor="#448b6f" /><stop offset="1" stopColor="#5A50D6" /></linearGradient></defs>
-            </svg>
-            <div><p className="text-xs text-slate-500">Compound score</p><p className="text-xl font-bold">{score}<span className="text-sm font-medium text-slate-400">/100</span></p></div>
-          </div>
-        </div>
-      </header>
-
-      <Celebration view={course} />
-
-      {shownAlerts.map((a, i) => (
-        <div key={a.key} className="mt-6">
-          <SeasonalAlertCard alert={a} others={i === shownAlerts.length - 1 ? otherAlerts : []} planAdded={planKeys.has(a.key)} done={done} addAction={addPrepPlan} doneAction={markDone} />
-        </div>
-      ))}
-
-      {tip && <div className="mt-6"><BfcmTipStrip tip={tip} /></div>}
-
-      {upcoming.length > 0 && (
-        <section aria-labelledby="upcoming-h" className="mt-6">
-          <div className="flex items-baseline justify-between">
-            <h2 id="upcoming-h" className="flex items-center gap-2 text-sm font-semibold text-slate-700"><CalendarDays className="h-4 w-4" aria-hidden /> Upcoming key dates ({countryName(acct.country)})</h2>
-            <Link href="/dashboard/calendar" className="text-sm font-medium text-cyan-700 hover:underline">Full calendar</Link>
-          </div>
-          <ol className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-            {upcoming.map((e) => (
-              <li key={e.key} className="card px-3 py-2.5">
-                <p className="truncate text-sm font-semibold text-slate-900" title={e.name}>{e.name}</p>
-                <p className="text-xs text-slate-500">{prettyDay(e.date)}{e.approx ? " (approx.)" : ""}</p>
-                <p className={`mt-1 text-xs font-bold ${e.daysTo <= 14 ? "text-rose-600" : e.daysTo <= 60 ? "text-orange-600" : "text-slate-600"}`}>{countdownText(e.daysTo)}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-      )}
-
-      <div className="mt-6">
-        <ProfitToday s={summary} date={yesterday} metaSynced={Boolean(snap && yRow && yRow.adMeta > 0)} estimatePct={estimatePct} taxNote={taxLabel(acct.salesTaxMode, acct.country)} typedTaxNote={typedTaxLabel(acct.salesTaxMode, acct.country)} action={quickUpdate}
+      <section aria-label="Update yesterday">
+        <ProfitToday s={summary} date={yesterday} metaSynced={false} estimatePct={estimatePct} action={quickUpdate}
           prefill={{ revenue: yRow?.revenue ?? 0, orders: yRow?.orders ?? 0, adMeta: yRow?.adMeta ?? 0, adGoogle: yRow?.adGoogle ?? 0 }} />
-      </div>
-
-      <Link href="/dashboard/analytics" className="card mt-4 flex flex-wrap items-center justify-between gap-4 p-4 transition hover:ring-2 hover:ring-cyan-200">
-        <span className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-cyan-700"><BarChart3 className="h-5 w-5" aria-hidden /></span>
-          <span>
-            <span className="block font-semibold text-slate-900">Your Dashboard: last 7 days</span>
-            <span className="block text-sm text-slate-600">
-              Revenue {money(w.netRevenue)} · profit {money(w.contribution)}{wChange !== null ? ` (${wChange >= 0 ? "up" : "down"} ${Math.abs(wChange)}% on the week before)` : ""} · MER {w.merPct.toFixed(1)}%
-            </span>
-          </span>
-        </span>
-        <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See weekly, monthly and yearly charts <ArrowRight className="h-4 w-4" aria-hidden /></span>
-      </Link>
-
-      <GrowthLinks profitLine={growthLine} />
-
-      <section aria-labelledby="goals-h" className="card mt-4 p-4">
-        <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h2 id="goals-h" className="font-semibold text-slate-900">Your monthly goals, last 30 days</h2>
-          <Link href="/dashboard/goals" className="text-sm font-medium text-cyan-700 hover:underline">{goalData.isDefault ? "Set your goals" : "See or change your goals"}</Link>
-        </div>
-        <p className="mt-0.5 text-xs text-slate-500">From visits down to net profit. Revenue is the vanity number; profit is the goal.</p>
-        <div className="mt-3"><GoalsLadder variant="track" compact goals={goalData.goals} merPct={goalData.merPct} actuals={goalData.actuals} /></div>
       </section>
 
-
-      {stockAlertRows.length > 0 && (
-        <Link href="/dashboard/stock" className="card mt-4 flex flex-wrap items-center justify-between gap-4 border-l-4 border-l-rose-500 p-4 transition hover:ring-2 hover:ring-cyan-200">
-          <span className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-rose-700"><Boxes className="h-5 w-5" aria-hidden /></span>
-            <span>
-              <span className="block font-semibold text-slate-900">Stock: {stockAlertRows.length} product{stockAlertRows.length === 1 ? "" : "s"} to reorder{stockItems.some((i) => i.example) ? " (example data)" : ""}</span>
-              <span className="block text-sm text-slate-600">
-                {stockAlertRows.slice(0, 2).map((r) => r.status === "out" ? `${r.name} is out of stock` : r.daysUntilOrder !== null && r.daysUntilOrder <= 0 ? `${r.name}: order today (${r.daysLeft} days of stock left)` : `${r.name}: order within ${r.daysUntilOrder} days`).join(" · ")}
-              </span>
-            </span>
-          </span>
-          <span className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-700">See reorder dates <ArrowRight className="h-4 w-4" aria-hidden /></span>
-        </Link>
-      )}
-
-      {adminSoon.length > 0 && (
-        <section aria-labelledby="admin-h" className="card mt-4 border-l-4 border-l-slate-700 p-4">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <h2 id="admin-h" className="flex items-center gap-2 font-semibold text-slate-900"><Briefcase className="h-5 w-5 text-slate-700" aria-hidden /> Business admin coming up</h2>
-            <Link href="/dashboard/business" className="text-sm font-semibold text-cyan-700 hover:underline">Run your business <ArrowRight className="inline h-4 w-4" aria-hidden /></Link>
-          </div>
-          <ul className="mt-2 divide-y divide-slate-100">
-            {adminSoon.map((a) => {
-              const l = lessonLink(a.lesson);
-              return (
-                <li key={a.key} className="flex flex-wrap items-center gap-3 py-2.5">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-sm font-semibold text-slate-900">{a.name} <span className={`ml-1 font-bold ${a.daysTo <= 14 ? "text-rose-600" : "text-orange-600"}`}>{countdownText(a.daysTo)}</span> <span className="font-normal text-slate-500">· {prettyDay(a.date)}</span></p>
-                    <p className="text-xs text-slate-600">{a.note} {l && <Link href={l.href} className="font-semibold text-cyan-700 underline">How to do it</Link>}</p>
-                  </div>
-                  <form action={markDone}><input type="hidden" name="taskId" value={a.taskId} /><button className="btn-ghost text-xs">Mark done</button></form>
+      {coach && (
+        <section aria-labelledby="coach-h" className="card p-5 sm:p-6" data-testid="coach-greeting">
+          <h2 id="coach-h" className="text-sm font-semibold uppercase tracking-wide text-slate-500">Your coach</h2>
+          <p className="mt-2 whitespace-pre-line text-sm leading-6 text-slate-700">{coach.greeting}</p>
+          {coach.tasks.length > 0 && (
+            <ul className="mt-3 space-y-1.5 text-sm">
+              {coach.tasks.map((t) => (
+                <li key={t.id}>
+                  <Link href={t.href} className={`font-medium underline-offset-2 hover:underline ${t.done ? "text-slate-400 line-through" : "text-slate-900"}`}>{t.title}</Link>
+                  <span className="block text-xs text-slate-500">{t.why}</span>
                 </li>
-              );
-            })}
-          </ul>
-          <p className="mt-1 text-[11px] text-slate-500">General information, not tax or legal advice. Check with a registered tax agent or accountant.</p>
+              ))}
+            </ul>
+          )}
         </section>
       )}
 
-      <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,1fr)_330px]">
-        <section aria-labelledby="today-h" className="space-y-5">
-          <h2 id="today-h" className="sr-only">Today</h2>
+      <AgentTasks tasks={tasks} done={done} doneAction={markDone} doAction={doItForMe} pending={pending} />
 
-          {current ? (
-            <article className="card overflow-hidden">
-              <div className="helix-glow px-6 py-5 text-white">
-                <div className="flex flex-wrap items-center gap-2 text-xs">
-                  <span className="rounded-full bg-white/15 px-2.5 py-1 font-bold">Day {current.day} of {DAYS.length}</span>
-                  <span className="text-slate-300">Stage {current.stage}: {current.stageName}</span>
-                  <span className="flex items-center gap-1 text-slate-300"><Clock className="h-3.5 w-3.5" aria-hidden /> {current.minutes} min</span>
-                  <span className="ml-auto"><StageChip id={stageOfLesson(current.learn.ref)} withTagline /></span>
-                </div>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-300">Today&apos;s topic: {current.topic}</p>
-                <h3 className="mt-1 text-2xl font-bold tracking-tight">{current.title}</h3>
-              </div>
-              <div className="p-6">
-                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500"><GraduationCap className="h-4 w-4" aria-hidden /> Why it matters</p>
-                <p className="mt-2 text-base leading-7 text-slate-700">{current.lesson}</p>
-                <p className="mt-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
-                  How to do it <span className={`rounded-full px-2 py-0.5 normal-case ring-1 ${AREA_STYLE[current.area].chip}`}>{AREA_STYLE[current.area].label}</span>
-                </p>
-                <ol className="mt-2 space-y-2.5">
-                  {current.steps.map((s, i) => (
-                    <li key={s} className="flex gap-3 text-[15px] leading-6 text-slate-800">
-                      <span className="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">{i + 1}</span>{s}
-                    </li>
-                  ))}
-                </ol>
-                {guidesForDay(current.day, T.id).length > 0 && (
-                  <details className="mt-5 rounded-xl border border-slate-200 p-4 text-sm" open={guidesForDay(current.day, T.id).length === 1}>
-                    <summary className="cursor-pointer font-semibold text-slate-700">Show me where to click ({guidesForDay(current.day, T.id).length} drawing{guidesForDay(current.day, T.id).length === 1 ? "" : "s"})</summary>
-                    <div className="mt-3 space-y-5">
-                      {guidesForDay(current.day, T.id).map((g, i) => (
-                        <figure key={g.file}>
-                          <a href={`/guides/${g.file}.svg`} target="_blank" rel="noreferrer">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={`/guides/${g.file}.svg`} alt={g.title} width={1200} height={700} loading="lazy" className="w-full rounded-lg border border-slate-200" />
-                          </a>
-                          <figcaption className="mt-1.5 text-xs text-slate-500">
-                            Step {i + 1}: {g.title}. A drawing, not a real screenshot; your screen may look a little different.
-                            {g.help && <> Official help: <a href={g.help.url} target="_blank" rel="noreferrer" className="text-cyan-700 underline">{g.help.label}</a></>}
-                          </figcaption>
-                        </figure>
-                      ))}
-                    </div>
-                  </details>
-                )}
-                {current.watch && (
-                  <p className="mt-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
-                    <strong>See the effect:</strong> keep updating yesterday&apos;s numbers each morning. Over the next 7 days, watch <strong>{current.watch}</strong>.
-                  </p>
-                )}
-                {(() => {
-                  const words = termsIn(`${current.title} ${current.lesson} ${current.steps.join(" ")}`, 4);
-                  return words.length ? (
-                    <details className="mt-4 rounded-xl bg-slate-50 px-4 py-3 text-sm">
-                      <summary className="cursor-pointer font-semibold text-slate-700">Words to know ({words.map((w) => w.term).join(", ")})</summary>
-                      <dl className="mt-2 space-y-1.5">{words.map((w) => <div key={w.term}><dt className="inline font-semibold">{w.term}: </dt><dd className="inline text-slate-600">{w.means}</dd></div>)}</dl>
-                    </details>
-                  ) : null;
-                })()}
-                <Link href={`/learn/${current.learn.slug}#${current.learn.anchor}`} className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-cyan-700 hover:underline">
-                  <BookOpen className="h-4 w-4" aria-hidden /> Want more detail? Read the lesson: {current.learn.label}
-                </Link>
-                {currentLocked ? (
-                  <div className="mt-5 rounded-xl bg-violet-50 p-4 text-sm text-violet-900">
-                    Stage {current.stage} of the guided programme is part of the {planName(STAGE_TIER[current.stage])} plan. The lesson stays free in Learn.
-                  </div>
-                ) : (
-                  <div className="mt-5 border-t border-slate-100 pt-5">
-                    {current.doIt && <p className="mb-3 text-sm text-slate-700"><strong>Want a checklist for this?</strong> {current.doIt.label}.</p>}
-                    <div className="flex flex-wrap items-center gap-3">
-                    {current.doIt ? (
-                      pending.has(dayTaskId(current.day)) ? (
-                        <Link href="/dashboard/approvals" className="btn-ghost"><Sparkles className="h-4 w-4 text-violet-600" aria-hidden /> Waiting for your approval</Link>
-                      ) : (
-                        <form action={doItForMe}>
-                          <input type="hidden" name="taskId" value={dayTaskId(current.day)} />
-                          <button className="btn-dark">
-                            {PLAN_RANK[acct.plan] >= PLAN_RANK[current.doIt.tier] ? <Wand2 className="h-4 w-4" aria-hidden /> : <Lock className="h-4 w-4" aria-hidden />}
-                            Yes, do it for me{PLAN_RANK[acct.plan] >= PLAN_RANK[current.doIt.tier] ? "" : ` · ${planName(current.doIt.tier)}`}
-                          </button>
-                        </form>
-                      )
-                    ) : (
-                      <span className="text-xs text-slate-500">This one is quick to do yourself. You learn the most by doing it.</span>
-                    )}
-                    <form action={markDone}>
-                      <input type="hidden" name="taskId" value={dayTaskId(current.day)} />
-                      <button className="btn-ghost"><Check className="h-4 w-4 text-emerald-600" aria-hidden /> {current.doIt ? "I did it myself" : "Mark done"}</button>
-                    </form>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </article>
-          ) : (
-            <article className="card p-6">
-              <p className="flex items-center gap-2 text-sm font-semibold text-emerald-700"><CheckCircle2 className="h-5 w-5" aria-hidden /> {nextDay ? "Today's lesson is done. Small steps, compounding." : `You finished the ${T.name} track.`}</p>
-              {!nextDay && T.id === "starting" && (
-                <p className="mt-2 text-sm text-slate-600">Getting regular sales now? Switch to the <strong>Growing</strong> track for profit tracking, scaling, retention and Black Friday. <Link className="text-cyan-700 underline" href="/dashboard/settings">Switch in Settings</Link></p>
-              )}
-              {nextDay && (
-                <p className="mt-2 text-sm text-slate-600">
-                  Tomorrow: <strong>Day {nextDay.day}: {nextDay.title}</strong>. <Link className="text-cyan-700 underline" href="/dashboard?ahead=1">Start it now instead</Link>
-                </p>
-              )}
-            </article>
-          )}
-
-          {insights.map((ins) => (
-            <InsightCard key={ins.id} ins={ins} plan={acct.plan} pending={pending.has(`insight-${ins.id}`)} compact />
-          ))}
-          <Link href="/dashboard/insights" className="block text-center text-sm font-medium text-cyan-700 hover:underline">See all insights from your latest audit</Link>
-        </section>
-
-        <aside aria-labelledby="road-h" className="xl:sticky xl:top-8 xl:self-start">
-          <div className="card p-5">
-            <div className="flex items-baseline justify-between">
-              <h2 id="road-h" className="font-semibold">{T.id === "starting" ? "Just starting roadmap" : "Your growth roadmap"}</h2>
-              <span className="text-xs text-slate-500">{daysDone}/{DAYS.length} days</span>
-            </div>
-            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-100"><div className="h-full bg-cyan-500" style={{ width: `${(daysDone / DAYS.length) * 100}%` }} /></div>
-            <ol className="mt-5 space-y-5">
-              {STAGES.map((st) => {
-                const days = DAYS.filter((d) => d.stage === st.id);
-                const stDone = days.every((d) => done.has(dayTaskId(d.day)));
-                const locked = !unlocked(st.id);
-                const expanded = st.id === currentStage;
-                return (
-                  <li key={st.id}>
-                    <p className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-wide text-slate-400">
-                      <span>Stage {st.id} · {st.range}</span>
-                      <span className={stDone ? "text-emerald-600" : locked ? "" : expanded ? "text-cyan-600" : ""}>{stDone ? "done" : locked ? `${planName(STAGE_TIER[st.id])} plan` : expanded ? "in progress" : "next"}</span>
-                    </p>
-                    <p className={`text-sm font-semibold ${locked ? "text-slate-400" : "text-slate-900"}`}>{locked && <Lock className="mr-1 inline h-3 w-3" aria-hidden />}{st.name}</p>
-                    {expanded && (
-                      <ol className="relative mt-3 space-y-3 before:absolute before:bottom-2 before:left-[11px] before:top-2 before:w-0.5 before:bg-slate-200">
-                        {days.map((d) => {
-                          const s = status(d);
-                          return (
-                            <li key={d.day} className="relative flex gap-3">
-                              <span className={`relative z-10 flex h-6 w-6 flex-none items-center justify-center rounded-full text-[10px] font-bold ring-4 ring-white ${
-                                s === "done" ? "bg-emerald-500 text-white" : s === "today" || s === "tomorrow" ? "bg-cyan-500 text-white" : s === "locked" ? "bg-slate-200 text-slate-500" : "border border-slate-300 bg-white text-slate-500"}`}>
-                                {s === "done" ? <Check className="h-3.5 w-3.5" aria-hidden /> : s === "locked" ? <Lock className="h-3 w-3" aria-hidden /> : d.day}
-                              </span>
-                              <div className={s === "locked" ? "opacity-60" : ""}>
-                                <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Day {d.day} · <span className={s === "today" || s === "tomorrow" ? "text-cyan-600" : s === "done" ? "text-emerald-600" : ""}>{s === "today" ? "today" : s === "tomorrow" ? "up next (tomorrow)" : s}</span> · <span className={STAGE_INFO[stageOfLesson(d.learn.ref)].ink}>{STAGE_INFO[stageOfLesson(d.learn.ref)].name}</span></p>
-                                <p className="text-sm leading-5 text-slate-800">{d.title}</p>
-                              </div>
-                            </li>
-                          );
-                        })}
-                      </ol>
-                    )}
-                  </li>
-                );
-              })}
-            </ol>
-          </div>
-        </aside>
-      </div>
-      <section aria-labelledby="lost-h" className="card mt-6 p-5">
-        <h2 id="lost-h" className="font-semibold">I&apos;m lost</h2>
-        <p className="mt-1 text-sm text-slate-600">Tell Helix where you are stuck and it points you to the next step.</p>
-        <div className="mt-3"><AiBox action={aiHelp} label="Help me" question placeholder="e.g. I don't know where to start with ads" /></div>
+      <section aria-labelledby="learn-h" className="card p-5 sm:p-6" data-testid="learning-card">
+        <h2 id="learn-h" className="text-sm font-semibold uppercase tracking-wide text-slate-500">One thing to learn · {learning.minutes} min</h2>
+        <p className="mt-2 text-lg font-semibold text-slate-900">{learning.title}</p>
+        <p className="mt-1 text-sm leading-6 text-slate-700">{learning.why}</p>
+        <Link href={learning.href} className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-cyan-700 hover:underline">{learning.label} →</Link>
       </section>
+
+      <StoreBrainPanel initialFacts={coach?.facts ?? []} />
+
+      <nav aria-label="More" className="card p-4 text-sm">
+        <p className="font-semibold text-slate-700">More, when you want it</p>
+        <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+          <Link href="/dashboard/learn" className="text-cyan-700 underline">Full course</Link>
+          <Link href="/dashboard/insights" className="text-cyan-700 underline">Insights</Link>
+          <Link href="/dashboard/goals" className="text-cyan-700 underline">Goals</Link>
+          <Link href="/dashboard/plan" className="text-cyan-700 underline">Your plan</Link>
+          <Link href="/dashboard/stock" className="text-cyan-700 underline">Stock</Link>
+          <Link href="/dashboard/calendar" className="text-cyan-700 underline">Calendar</Link>
+          <Link href="/dashboard/approvals" className="text-cyan-700 underline">Waiting for your OK</Link>
+        </p>
+      </nav>
     </div>
   );
 }

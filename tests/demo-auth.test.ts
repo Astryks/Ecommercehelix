@@ -6,6 +6,7 @@ import {
   isDemoEmail,
   isDemoUserId,
   mayLinkByEmail,
+  seedExampleFor,
 } from "@/lib/demo-auth";
 
 describe("demo login identities", () => {
@@ -43,6 +44,12 @@ describe("demo login identities", () => {
     // The old demo id format is not a demo id and has no special rights either way.
     expect(mayLinkByEmail("ckz1abc", "owner@realstore.com")).toBe(true);
     expect(mayLinkByEmail("ckz1abc", "")).toBe(false);
+  });
+
+  it("seeds example data for demo users only — real stores start empty", () => {
+    expect(seedExampleFor(createDemoIdentity("Sid").id)).toBe(true);
+    expect(seedExampleFor("cuid123")).toBe(false);
+    expect(seedExampleFor(null)).toBe(false);
   });
 });
 

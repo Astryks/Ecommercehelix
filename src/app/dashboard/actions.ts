@@ -6,7 +6,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { requireUser } from "@/lib/session";
 import {
-  completeTask, createApproval, decideApproval, getAccount, getProfitSetup, getRawDays, saveSettings, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
+  completeTask, createApproval, decideApproval, getAccount, getDays, getProfitSetup, getRawDays, getSettings, listApprovals, saveSettings, updateApproval, upsertDays, clearExampleData, addProductLine, addSeasonPlan, saveProfile,
 } from "@/lib/repo";
 import { seasonalAlerts, SEASON_TASK_ID, toCountry } from "@/lib/seasons";
 import { TAX_INCLUSIVE_SOURCES, toTaxMode } from "@/lib/tax";
@@ -69,6 +69,26 @@ export async function doItForMe(form: FormData) {
   const acct = await getAccount(u.id);
   if (PLAN_RANK[acct.plan] < PLAN_RANK[item.tier]) redirect("/dashboard/billing?need=" + item.tier + "&for=" + (item.id === "build-meta-campaign" ? "meta-draft" : item.id.startsWith("flow-") ? "flows" : "dfm"));
   let detail = item.detail;
+  if (item.id.startsWith("flow-")) {
+    // Step 3: the approval card carries the full flow copy + timing, the
+    // discount logic, and the honest setup mode — Klaviyo draft when
+    // connected, copy-to-paste (labelled) when not. Klaviyo stays drafts-only.
+    const { flowApproval, FLOW_IDS } = await import("@/lib/agent/email-flows");
+    const { klaviyoSummary } = await import("@/lib/klaviyo/service");
+    const { klaviyoOn } = await import("@/lib/klaviyo/config");
+    const flowId = item.id.replace(/^flow-/, "");
+    if (FLOW_IDS.includes(flowId)) {
+      const { FLOWS } = await import("@/lib/seed/flows");
+      const flow = FLOWS.find((f) => f.id === flowId)!;
+      const klaviyo = klaviyoOn() ? await klaviyoSummary(u.id).catch(() => null) : null;
+      const days = await getDays(u.id);
+      const recent = days.filter((d) => !d.example).slice(-30);
+      const hasRepeatBuyers = recent.some((d) => (d.newCustomerRevenue ?? 0) < (d.revenue - d.discounts - d.refunds));
+      const approvals = await listApprovals(u.id);
+      const ap = flowApproval(flow, { klaviyo, hasRepeatBuyers, approvedFlowIds: approvals.filter((a) => a.status === "approved").map((a) => a.taskId.replace(/^flow-/, "")) });
+      detail = ap.detail;
+    }
+  }
   if (item.id === "build-meta-campaign") {
     const { input, missing } = await draftInputFor(u.id);
     if (!input) redirect("/dashboard/integrations?need=" + encodeURIComponent(missing.join(",")));
@@ -87,6 +107,28 @@ export async function doItForMe(form: FormData) {
     if (!g?.customerId) redirect("/dashboard/integrations?need=google_account");
     detail = detail.replace("your own Google Ads account", `Google Ads account ${g.customerName ?? g.customerId}`);
   }
+  // Step 4: the approval card's AI cost is charged NOW, when the draft is
+  // prepared (reserve-then-charge). If the unified pool cannot cover it, the
+  // card is not created and the owner is told why + what it would cost —
+  // the executor in decide() below refuses uncovered approvals the same way.
+  const pricingStore = await import("@/lib/pricing/store");
+  const acctForPricing = await getAccount(u.id);
+  let pricingState = await pricingStore.loadPricingState(u.id, acctForPricing.plan);
+  const auth = pricingStore.authorize(pricingState, {
+    action: "approval-card",
+    feature: item.id.startsWith("flow-") ? "email-flow" : "approval",
+    plan: acctForPricing.plan,
+    providerUsdOverride: item.estAiCost,
+  });
+  if (!("reservation" in auth)) redirect("/dashboard/billing?uncovered=1");
+  pricingState = pricingStore.settleReservation(pricingState, auth.reservation, item.estAiCost, {
+    userId: u.id,
+    orgId: u.id,
+    plan: acctForPricing.plan,
+    feature: item.id.startsWith("flow-") ? "email-flow" : "approval",
+  });
+  pricingState = pricingStore.markApprovalCovered(pricingState, item.id, auth.reservation.creditsReserved);
+  await pricingStore.savePricingState(u.id, pricingState);
   await createApproval(u.id, { taskId: item.id, title: item.title, detail, estAiCost: item.estAiCost });
   revalidatePath("/dashboard", "layout");
   redirect("/dashboard/approvals");
@@ -120,10 +162,46 @@ function lessonActionable(taskId: string, signals: Parameters<typeof findActiona
   };
 }
 
+export async function editApproval(form: FormData) {
+  const u = await requireUser();
+  await updateApproval(u.id, String(form.get("id")), String(form.get("detail") ?? ""));
+  revalidatePath("/dashboard/approvals");
+}
+
 export async function decide(form: FormData) {
   const u = await requireUser();
   const status = form.get("decision") === "approve" ? "approved" : "rejected";
   const id = String(form.get("id"));
+  // Step 4 (executor guard): an approval whose AI cost was never covered
+  // cannot run. Approvals created by doItForMe / proposeAdDecision are
+  // covered at creation; older ones are covered here, on first execution.
+  // Execution itself costs $0 of AI (no LLM) — this only settles the
+  // drafting cost. If it cannot be covered, the approval stays pending.
+  if (status === "approved") {
+    const row = (await listApprovals(u.id)).find((a) => a.id === id);
+    if (row && row.estAiCost > 0) {
+      const pricingStore = await import("@/lib/pricing/store");
+      const acct = await getAccount(u.id);
+      let pricingState = await pricingStore.loadPricingState(u.id, acct.plan);
+      if (!pricingStore.isApprovalCovered(pricingState, row.taskId)) {
+        const auth = pricingStore.authorize(pricingState, {
+          action: "approval-card",
+          feature: "approval",
+          plan: acct.plan,
+          providerUsdOverride: row.estAiCost,
+        });
+        if (!("reservation" in auth)) redirect("/dashboard/approvals?unpaid=1");
+        pricingState = pricingStore.settleReservation(pricingState, auth.reservation, row.estAiCost, {
+          userId: u.id,
+          orgId: u.id,
+          plan: acct.plan,
+          feature: "approval",
+        });
+        pricingState = pricingStore.markApprovalCovered(pricingState, row.taskId, auth.reservation.creditsReserved);
+        await pricingStore.savePricingState(u.id, pricingState);
+      }
+    }
+  }
   const taskId = await decideApproval(u.id, id, status);
   if (taskId) await logAudit(u.id, { actor: "user", action: `approval.${status}`, target: taskId, outcome: "ok" });
   if (status === "approved" && taskId) {
@@ -137,6 +215,96 @@ export async function decide(form: FormData) {
     await completeTask(u.id, taskId);
   }
   revalidatePath("/dashboard", "layout");
+}
+
+/** Step 3: turn an agent ad decision on the campaigns page into an approval card. The decision is re-evaluated server-side from live data — never trusted from the form. */
+export async function proposeAdDecision(form: FormData) {
+  const u = await requireUser();
+  const campaignId = String(form.get("campaignId"));
+  const { getSnapshot } = await import("@/lib/meta/store");
+  const { getGoogleSnapshot } = await import("@/lib/google-ads/service");
+  const { evaluateCampaign } = await import("@/lib/agent/autonomy");
+  const { getAgentSettings } = await import("@/lib/agent/settings");
+  const { targetsFrom } = await import("@/lib/targets");
+  const { inferLayer, inferStage } = await import("@/lib/meta/insights");
+  const [days, settings, snap, gaSnap, agent] = await Promise.all([
+    getDays(u.id), getSettings(u.id), getSnapshot(u.id),
+    getGoogleSnapshot(u.id).catch(() => null), getAgentSettings(u.id),
+  ]);
+  // Rebuild the same live rows the campaigns page shows (Meta snapshot + Google snapshot).
+  const metaRows = (snap?.campaigns ?? []).map((c) => ({ ...c, source: "live" as const }));
+  const googleRows = (gaSnap?.campaigns ?? []).map((c) => ({
+    id: `google-${c.id}`, externalId: c.id, source: "live" as const, channel: "Google" as const, name: c.name,
+    objective: "Sales", layer: inferLayer(c.name), budget: 0, spend: c.spend, purchases: c.conversions, revenue: c.value,
+    impressions: c.impressions, clicks: c.clicks, threeSecViews: 0, frequency: 0, daysSinceEdit: 30,
+    status: c.status === "ENABLED" ? "Active" as const : "Paused" as const, testStage: inferStage(c.name),
+  }));
+  const campaign = [...metaRows, ...googleRows].find((c) => c.id === campaignId);
+  if (!campaign) return;
+  const t = targetsFrom(days, settings);
+  const decision = evaluateCampaign(campaign, t, {
+    settings: agent,
+    breakEvenCpa: t.aov * (1 - t.vcrPct / 100),
+    autoPausedToday: 0,
+    stockDaysLeft: null, // SKU not known per campaign here; the stock block applies where the SKU is known
+    lastSyncAt: snap?.syncedAt ?? null,
+    now: new Date().toISOString(),
+    spendToday: 0,
+  });
+  // Step 4: cover the card's AI cost before creating it; refuse with a
+  // plain-words redirect if the unified pool cannot cover $0.006.
+  const pricingStore = await import("@/lib/pricing/store");
+  const acctForPricing = await getAccount(u.id);
+  let pricingState = await pricingStore.loadPricingState(u.id, acctForPricing.plan);
+  const auth = pricingStore.authorize(pricingState, {
+    action: "approval-card",
+    feature: "ad-decision",
+    plan: acctForPricing.plan,
+    providerUsdOverride: decision.approval.estAiCost,
+  });
+  if (!("reservation" in auth)) redirect("/dashboard/billing?uncovered=1");
+  pricingState = pricingStore.settleReservation(pricingState, auth.reservation, decision.approval.estAiCost, {
+    userId: u.id,
+    orgId: u.id,
+    plan: acctForPricing.plan,
+    feature: "ad-decision",
+  });
+  pricingState = pricingStore.markApprovalCovered(pricingState, `ad-${decision.action}-${campaign.id}`, auth.reservation.creditsReserved);
+  await pricingStore.savePricingState(u.id, pricingState);
+  await createApproval(u.id, {
+    taskId: `ad-${decision.action}-${campaign.id}`,
+    title: decision.approval.title,
+    detail: `${decision.reason}\n\n${decision.approval.detail}\n\nEvidence:\n${decision.evidence.map((e) => `- ${e.label}: ${e.value}${e.benchmark ? ` (${e.benchmark})` : ""}`).join("\n")}\n\nUndo: ${decision.revert.note}`,
+    estAiCost: decision.approval.estAiCost,
+  });
+  revalidatePath("/dashboard", "layout");
+  redirect("/dashboard/approvals");
+}
+
+export async function saveAgentSettingsAction(form: FormData) {
+  const u = await requireUser();
+  const { saveAgentSettings } = await import("@/lib/agent/settings");
+  const { logAudit } = await import("@/lib/meta/store");
+  const n = (k: string, d: number) => Number(form.get(k)) || d;
+  const lines = (k: string) => String(form.get(k) ?? "").split(/[\n,]+/).map((x) => x.trim()).filter(Boolean);
+  await saveAgentSettings(u.id, {
+    mode: (["propose", "assisted", "autonomous"] as const).includes(String(form.get("mode")) as never) ? (String(form.get("mode")) as "propose" | "assisted" | "autonomous") : "propose",
+    dailySpendCap: Math.max(0, n("dailySpendCap", 0)),
+    maxScalePct: Math.min(20, Math.max(5, n("maxScalePct", 20))),
+    autoPausePerDayCap: Math.min(10, Math.max(0, n("autoPausePerDayCap", 3))),
+    maxConcurrentTests: Math.min(6, Math.max(1, n("maxConcurrentTests", 4))),
+    discountCeilingPct: Math.min(50, Math.max(0, n("discountCeilingPct", 20))),
+    neverPause: lines("neverPause"),
+    neverPost: lines("neverPost"),
+    autoPost: {
+      instagram: { enabled: form.get("autoPost-instagram") === "on", perDayCap: 1 },
+      tiktok: { enabled: form.get("autoPost-tiktok") === "on", perDayCap: 1 },
+      pinterest: { enabled: form.get("autoPost-pinterest") === "on", perDayCap: 1 },
+      youtube: { enabled: form.get("autoPost-youtube") === "on", perDayCap: 1 },
+    },
+  });
+  await logAudit(u.id, { actor: "user", action: "agent.guardrails_saved", target: "settings/agent", outcome: "ok" });
+  revalidatePath("/dashboard/settings/agent");
 }
 
 export async function saveScorecardSettings(form: FormData) {

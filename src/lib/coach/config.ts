@@ -52,11 +52,9 @@ export function coachBudgetUsd(env: Record<string, string | undefined> = process
   return env.COACH_MONTHLY_BUDGET_USD && Number.isFinite(n) && n >= 0 ? n : 50;
 }
 
-/** Feature flag. Off unless HELIX_COACH=1 (and never on in production without HELIX_COACH_PROD=1 as a second, explicit switch). */
+/** Feature flag. On by default (agent-led pivot, Step 1). Kill switch: HELIX_COACH=0 turns the coach off everywhere. */
 export function coachEnabled(env: Record<string, string | undefined> = process.env): boolean {
-  if (env.HELIX_COACH !== "1") return false;
-  if (env.VERCEL_ENV === "production" && env.HELIX_COACH_PROD !== "1") return false;
-  return true;
+  return env.HELIX_COACH !== "0";
 }
 
 /** True when model calls can be made (gateway key or Vercel OIDC token present, AI not killed). */

@@ -60,7 +60,7 @@ export default async function Stock() {
 
       {hasExamples && (
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-          <p><strong>Example data.</strong> These suppliers and products are made up so you can see how the page works. Add your own below. Shopify stock and sales sync is coming; until then you type sales per day yourself.</p>
+          <p><strong>Example data.</strong> These suppliers and products are made up so you can see how the page works. Add your own below. Shopify stock and sales sync fills this in automatically once connected; until then you type sales per day yourself. Helix never orders stock — this list is prepared for your approval.</p>
           <form action={clearStockExamples}><button className="btn-ghost py-1.5 text-xs">Clear the examples</button></form>
         </div>
       )}

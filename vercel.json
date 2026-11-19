@@ -3,7 +3,7 @@
   "crons": [
     {
       "path": "/api/cron/meta-sync",
-      "schedule": "0 19 * * *"
+      "schedule": "30 18 * * *"
     },
     {
       "path": "/api/cron/seasonal-nudges",
@@ -15,7 +15,7 @@
     },
     {
       "path": "/api/cron/shopify-sync",
-      "schedule": "30 18 * * *"
+      "schedule": "0 18 * * *"
     },
     {
       "path": "/api/cron/sheets-sync",
@@ -23,15 +23,15 @@
     },
     {
       "path": "/api/cron/google-ads-sync",
-      "schedule": "15 19 * * *"
+      "schedule": "30 18 * * *"
     },
     {
       "path": "/api/cron/tiktok-sync",
-      "schedule": "25 19 * * *"
+      "schedule": "45 18 * * *"
     },
     {
       "path": "/api/cron/klaviyo-sync",
-      "schedule": "35 19 * * *"
+      "schedule": "0 19 * * *"
     },
     {
       "path": "/api/cron/coach-learn",
@@ -140,6 +140,10 @@
     {
       "path": "/api/cron/emails?slot=23",
       "schedule": "0 23 * * *"
+    },
+    {
+      "path": "/api/cron/morning-brief",
+      "schedule": "0 20 * * *"
     },
     {
       "path": "/api/cron/tools",

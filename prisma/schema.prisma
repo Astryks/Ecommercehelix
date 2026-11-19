@@ -57,6 +57,9 @@ model User {
   ga4Property         Ga4Property?
   aiUsage             AiUsage[]
   aiCache             AiCache[]
+  walletLedger        WalletLedger[]
+  creditBuckets       CreditBucket[]
+  usageEvents         UsageEvent[]
   coachUsage          CoachUsage[]
   coachMemory         CoachMemory[]
   coachMessages       CoachMessage[]
@@ -522,6 +525,61 @@ model AiCache {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
+}
+
+// ---------- Step 4: pricing wallet + weekly-expiring credits ----------
+// The runtime stores the same shape as a ToolInput row (kind "pricing") when
+// a database is present; these tables are the durable shape for production.
+// Run `npx prisma generate` + a migration on a machine with registry access
+// (the sandbox cannot generate the client). Balances are in USD, credits are
+// 1 credit = $0.01 provider cost (docs/pricing.md, Step 4).
+model WalletLedger {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String // topup | hold | charge | release | refund | payg
+  amountUsd Float // + in, - out
+  credits   Float    @default(0)
+  ref       String? // reservation id, bucket id, or Stripe event id
+  demo      Boolean  @default(false) // demo credit — never a real charge
+  note      String?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+model CreditBucket {
+  id        String   @id @default(cuid())
+  userId    String
+  kind      String // weekly | payg | addon
+  credits   Float
+  remaining Float
+  grace     Boolean  @default(false) // Growth 1-week grace bucket
+  grantedAt DateTime @default(now())
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, expiresAt])
+}
+
+/// Unified usage log: every settled AI action, from either counter (coach or
+/// write-ups), lands here — this is what the daily margin dashboard reads.
+model UsageEvent {
+  id          String   @id @default(cuid())
+  userId      String
+  orgId       String
+  plan        String // free | starter | growth
+  feature     String // chat | ad-batch | coach | ...
+  action      String // AiActionId, see src/lib/pricing/costs.ts
+  credits     Float
+  providerUsd Float
+  billedUsd   Float // 0 from allowance, 2x provider from wallet
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([orgId, createdAt])
+  @@index([plan, createdAt])
 }
 
 /// Weekly Wins wall: members share a small win; it shows only after a moderator approves it.
