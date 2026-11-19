@@ -40,6 +40,90 @@ approve work, not to learn how to do it.
   Store Brain = that memory + unit economics + winners/losers + an
   append-only decisions log, shown on Today.
 
+## Websites to follow — the examples, with what to copy and what not to
+## (research, 19 Nov 2026 — all ARR figures are company-reported run-rate /
+## contracted ARR, NOT audited GAAP revenue; "do not quote as fact" where noted)
+
+- **Lovable — lovable.dev** — $100M ARR in ~8 months from launch; ~$500M
+  run-rate Jun 2026 (company-reported). Sells an outcome (a working web app
+  from a prompt), not features. Credits pricing: Pro $25/mo. **Copy:** a
+  credit ceiling that bites mid-build, at the moment of value; publish
+  milestones as content; make the output shareable so each user advertises
+  you. **Do not copy:** a store's output (a paused draft, a profit number)
+  is private — there is no public billboard loop for Helix.
+- **Cursor (Anysphere) — cursor.com** — $100M Jan 2025 → $2B Feb 2026.
+  Pro $20/mo usage-based. **Copy:** meet the owner inside the tools they
+  already live in (Shopify/Meta); a measurable first-session win; bottom-up
+  (one owner → their VA/team). **Do not copy:** flat unlimited agent runs —
+  reportedly negative gross margin on heavy users; and its Jun 2025 metering
+  switch caused surprise bills, an apology and refunds — change metering
+  transparently or trust collapses.
+- **Sierra — sierra.ai** — $100M Nov 2025 → ~$400M Oct 2026 (Sacra
+  estimate). Outcome pricing ~$1.50/resolution (third-party estimate).
+  **Copy:** paid design partners (wanted 4, got 6 — all paying — before
+  launch); supervisor agents monitoring the first agent in real time;
+  simulate/rehearse before live; outcome pricing as a *principle*.
+  **Do not copy:** outcome/profit-share pricing and $150k+ contracts — a
+  $10k/mo store will not sign one, and Helix cannot afford bespoke
+  sales-engineering per customer.
+- **Legora (ex-Leya) — legora.com** — $1M → $100M in <18 months (company
+  press release, 2 Apr 2026). **Copy:** embed inside 3–5 real stores for
+  weeks (the design-partner lab model at Helix scale: a shared Slack,
+  watching the owner work); pilot with a named, measured conversion to paid;
+  a workspace where work happens, not a report. **Do not copy:** $30k
+  minimums and firmwide mandates — nobody can order a Shopify owner to use
+  Helix.
+- **Clay — clay.com** — ~6 years to the first $1M, then ~2 years to $100M
+  (Dec 2025). **Copy (the most copyable GTM in the research):** be in the
+  rooms where the ICP complains and help with no demo; reverse demos (the
+  prospect shares *their* screen with *their* data, you guide them to a
+  solved problem in 30 min); support in public (community) so every
+  question becomes content; agencies/operators as distribution — they run
+  many stores and publish the workflows. **Do not copy:** staying broad for
+  6 years — the wilderness to $1M is the warning.
+- **ElevenLabs — elevenlabs.io** — ~20 months to $100M. **Copy:** the
+  7-rung credit ladder (Free–$990) where each rung unlocks a *commercial
+  capability*, not just more credits; treat every feature ship as its own
+  launch. Helix's ladder shape (§ Pricing) follows this.
+- **Coframe — coframe.com** — no ARR disclosed; $35M total funding, Series
+  A announced 9 Nov 2026; company-claimed $300M+ incremental customer
+  revenue. **Copy (the closest product-shape analogue):** snippet-speed
+  onboarding + a 3-day first win; measure against revenue/profit per
+  visitor, never clicks; agree the measure and guardrails up front; human
+  approves before launch. **Do not copy:** enterprise A/B testing — a
+  $10k/mo store has ~5–15k sessions/month, so most tests are inconclusive
+  for weeks; use Coframe's own rule ("a result without enough evidence
+  stays inconclusive") and default to creative/offer/email tests.
+- **Helena (Enrich Labs) — enrichlabs.ai/helena-ai-marketer** — the
+  closest analogue overall: same customer, same stack, daily loop, human
+  approves money moves. Pricing $39 (200 credits) / $99 (700) / $199
+  (2,000), credits reset monthly. **Copy:** the 7am storefront QA, 7:30am
+  fixes, 8am scorecard (Shopify revenue ÷ Meta spend), kill rule $50/day ×
+  3 days (~$150), kill on 0 orders or ROAS <0.7. **Do not copy:** its public
+  Shopify experiment (Project FSD) made $11,532 / 170 orders to 21 Sep 2026,
+  tested 26 products, found 1 winner — and **lost money overall**. Helix
+  optimises stores that already have winners, it does not go
+  product-hunting. Also do not copy monthly-reset credits (they punish a
+  store whose best week is week 4) — Helix credits expire weekly instead.
+  Note: **enrich.so is a separate data-enrichment company, not Helena.**
+- **Triple Whale / Moby — triplewhale.com** — ~$21.6M ARR (Latka 2025
+  estimate). Foundation $219/mo, Automate $749/mo on a GMV grid, 12-month
+  commitments. **Copy:** "Ask every time" → "Let Moby decide" as an earned
+  ladder with written guardrails (spend caps, MER bands, max daily change
+  ~20%, never-pause lists); plain-language automation rules the owner
+  writes. **Do not copy:** GMV-based pricing (fees rise with topline
+  whether or not margins do), 12-month lock-in, $749/mo — Helix must be the
+  *cheap* execution layer.
+- **Ecommerce Equation — ecommerceequation.com.au** — founder is **Jay
+  Wright** (not Nick Shackelford). Attract–Convert–Operate coaching +
+  community, 4,000+ brands claimed, price on application only. **Copy:**
+  the Attract–Convert–Operate skeleton (Helix's Attract–Convert–Grow)
+  delivered by software instead of coaching hours; a peer group at the same
+  revenue stage as a retention asset; explicit qualification ("not for
+  beginners") keeps the churn story clean. **Do not copy:** high-ticket,
+  human-heavy economics (1,000 hrs/month of coaching cannot be sold for
+  $29/mo) or application-only pricing — Helix is self-serve.
+
 ## Fast-grower lessons (research, 19 Nov 2026 — all ARR figures are
 ## company-reported run-rate / contracted ARR, NOT audited GAAP revenue)
 
@@ -52,8 +136,8 @@ approve work, not to learn how to do it.
   distribution (Clay). What does NOT transfer: Sierra outcome/profit-share
   pricing, Triple Whale's GMV escalator / 12-month lock-in, Cursor's flat
   unlimited agent runs (reportedly negative gross margin on heavy users).
-- Helena (Enrich Labs) ran a public Shopify experiment: $10,242 sales /
-  156 orders in 56 days, lost money overall. Lesson: Helix should optimise
+- Helena (Enrich Labs) ran a public Shopify experiment: $11,532 sales /
+  170 orders to 21 Sep 2026, lost money overall. Lesson: Helix should optimise
   stores that already have winners, NOT go product-hunting. Helena's loop
   (7am storefront QA, 7:30am fixes, 8am scorecard = Shopify revenue ÷ Meta
   spend; kill rule $50/day × 3 days (~$150), kill on 0 orders or ROAS <0.7)
@@ -63,6 +147,10 @@ approve work, not to learn how to do it.
   in the first 90 days, most in week 1. Owners return daily only for
   agent-done overnight work to approve, one money number, one completable
   task, and exceptions.
+- Full comparison table with dates, pricing and per-company "copy / do not
+  copy" detail lives in `docs/pivot/ecommerce-helix-full-scope.md` §9
+  (and the underlying research in
+  `research_notes/ecommercehelix-pivot-research-20261119-0530/report.md`).
 
 ## Product shape (built in Steps 1–3)
 
